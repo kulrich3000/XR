@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Brahim_Hi_Condition()
 
 FUNC VOID Info_Mod_Brahim_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_00"); //Hey, Fremder, brauchst du eine Karte? Ich hab eine für dich im Angebot.
-	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_01"); //Handgezeichnet auf Jungfernpergament. So was findest du nirgendwo anders.
-	AI_Output(hero, self, "Info_Mod_Brahim_Hi_15_02"); //Du handelst also auch mit ehemaligen Sträflingen?
-	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_03"); //Klar doch. Du willst gar nicht wissen, wem ich schon Karten verkauft hab.
+	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_00"); //Hej, obcy, potrzebujesz karty? Mam dla ciebie.
+	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_01"); //Recznie rysowana na pergaminie dziewicy. Nigdzie indziej nie znajdziesz nic podobnego.
+	AI_Output(hero, self, "Info_Mod_Brahim_Hi_15_02"); //Tak wiec masz do czynienia równiez z bylymi skazanymi?
+	AI_Output(self, hero, "Info_Mod_Brahim_Hi_07_03"); //Oczywiscie tak sie dzieje. Nie chcesz wiedziec, do kogo juz sprzedalem bilety.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Brahim verkauft Karten.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Brahim sprzedaje bilety.");
 };
 
 INSTANCE Info_Mod_Brahim_ThorbenLehrling (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Brahim_ThorbenLehrling (C_INFO)
 	information	= Info_Mod_Brahim_ThorbenLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Thorben und ich benötigen deine Hilfe.";
+	description	= "Thorben i ja potrzebujemy waszej pomocy.";
 };
 
 FUNC INT Info_Mod_Brahim_ThorbenLehrling_Condition()
@@ -46,13 +46,13 @@ FUNC INT Info_Mod_Brahim_ThorbenLehrling_Condition()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_00"); //Thorben und ich benötigen deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling_07_01"); //Wo drückt der Schuh?
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_02"); //Wir brauchen die Zeichnung von einem Festtisch. Thorben sagt, du schuldest ihm noch was.
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling_07_03"); //Unglücklicherweise ja. (seufzt) Also gut, ich werd mich nachher darum kümmern. Morgen kannst du sie abholen.
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_04"); //Dann bis morgen.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_00"); //Thorben i ja potrzebujemy waszej pomocy.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling_07_01"); //Gdzie jest zacisk buta?
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_02"); //Potrzebujemy rysowania stolu partyjnego. Thorben mówi, ze jest mu on winien.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling_07_03"); //Niestety, tak. Wlasciwie, zajme sie tym pózniej. Jutro mozna ja odebrac.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling_15_04"); //Do zobaczenia jutro, wiec.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_TWO, "Brahim hat zugestimmt. Er braucht jedoch einen Tag für die Zeichnung.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_TWO, "Brahim zgodzil sie. Pewnego dnia potrzebuje jednak na rysunek.");
 
 	Mod_Thorben_Brahim = Wld_GetDay();
 };
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Brahim_ThorbenLehrling2 (C_INFO)
 	information	= Info_Mod_Brahim_ThorbenLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du fertig?";
+	description	= "Czy jestes gotowy?";
 };
 
 FUNC INT Info_Mod_Brahim_ThorbenLehrling2_Condition()
@@ -79,12 +79,12 @@ FUNC INT Info_Mod_Brahim_ThorbenLehrling2_Condition()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling2_15_00"); //Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling2_07_01"); //Darauf kannst du dich verlassen. Nimm schon.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling2_15_00"); //Czy jestes gotowy?
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling2_07_01"); //Mozna na tym polegac. Wez to pod uwage.
 
 	B_GiveInvItems	(self, hero, ItWr_Zeichnung_Tisch, 1);
 
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling2_15_02"); //Vielen Dank.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling2_15_02"); //Dziekuje bardzo.
 };
 
 INSTANCE Info_Mod_Brahim_ThorbenLehrling3 (C_INFO)
@@ -95,7 +95,7 @@ INSTANCE Info_Mod_Brahim_ThorbenLehrling3 (C_INFO)
 	information	= Info_Mod_Brahim_ThorbenLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte gern noch eine weitere Zeichnung.";
+	description	= "Lubie kolejny rysunek.";
 };
 
 FUNC INT Info_Mod_Brahim_ThorbenLehrling3_Condition()
@@ -109,30 +109,30 @@ FUNC INT Info_Mod_Brahim_ThorbenLehrling3_Condition()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_00"); //Ich hätte gern noch eine weitere Zeichnung.
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_01"); //Oh nein! Diesmal gibt's die aber nicht umsonst.
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_02"); //Wie viel?
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_03"); //50 Goldstücke.
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_04"); //Fertige mir die Skizze.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_00"); //Lubie kolejny rysunek.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_01"); //Och, nie! Tym razem nie bedzie za darmo.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_02"); //Ile?
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_03"); //50 sztuk zlota.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_04"); //Zrób mi szkic.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_05"); //Und was soll ich skizzieren?
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_06"); //Ein kleines ... äh ...
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_07_05"); //I co powinienem szkicowac?
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_15_06"); //Troche.... uh.....
 
 	Info_ClearChoices	(Info_Mod_Brahim_ThorbenLehrling3);
 
-	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Irgendwas Dekoratives. Denk dir was aus.", Info_Mod_Brahim_ThorbenLehrling3_C);
-	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Einen Bierkrug.", Info_Mod_Brahim_ThorbenLehrling3_B);
-	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Ein verziertes Schmuckkästchen.", Info_Mod_Brahim_ThorbenLehrling3_A);
+	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Cos dekoracyjnego. Pomysl o czyms.", Info_Mod_Brahim_ThorbenLehrling3_C);
+	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Dzbanek z piwem.", Info_Mod_Brahim_ThorbenLehrling3_B);
+	Info_AddChoice	(Info_Mod_Brahim_ThorbenLehrling3, "Udekorowane pudelko na bizuterie.", Info_Mod_Brahim_ThorbenLehrling3_A);
 };
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_D()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_D_07_00"); //Alles klar ... Hast dich unter den Frauen umgesehen oder was?
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_D_15_01"); //Thorben liegt im Koma. Ich will ihn etwas aufmuntern, wenn er aufwacht.
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_D_07_02"); //Mann, Scheiße! Thorben? Ich werd mir besonders Mühe geben.
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_D_15_03"); //Danke. Man sieht sich.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_D_07_00"); //Wszystko w porzadku.... Rozejrzyjcie sie miedzy kobietami i co?
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_D_15_01"); //Thorben jest w spiaczce. Chce go nieco rozweselic, gdy sie obudzi.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling3_D_07_02"); //Czlowiek, gównocz! Torben? Zamierzam podjac szczególny wysilek.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_D_15_03"); //Dzieki. Do zobaczenia dookola.
 
 	Info_ClearChoices	(Info_Mod_Brahim_ThorbenLehrling3);
 
@@ -141,7 +141,7 @@ FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_D()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_C()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_C_15_00"); //Irgendwas Dekoratives. Denk dir was aus.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_C_15_00"); //Cos dekoracyjnego. Pomysl o czyms.
 
 	Mod_Thorben_Present = 3;
 
@@ -150,7 +150,7 @@ FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_C()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_B_15_00"); //Einen Bierkrug.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_B_15_00"); //Dzbanek z piwem.
 
 	Mod_Thorben_Present = 2;
 
@@ -159,7 +159,7 @@ FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_B()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_A_15_00"); //Ein verziertes Schmuckkästchen.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling3_A_15_00"); //Udekorowane pudelko na bizuterie.
 
 	Mod_Thorben_Present = 1;
 
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Brahim_ThorbenLehrling4 (C_INFO)
 	information	= Info_Mod_Brahim_ThorbenLehrling4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich würde gern die Zeichnung abholen.";
+	description	= "Chcialbym podniesc rysunek.";
 };
 
 FUNC INT Info_Mod_Brahim_ThorbenLehrling4_Condition()
@@ -188,8 +188,8 @@ FUNC INT Info_Mod_Brahim_ThorbenLehrling4_Condition()
 
 FUNC VOID Info_Mod_Brahim_ThorbenLehrling4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_00"); //Ich würde gern die Zeichnung abholen.
-	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_01"); //Kein Problem, hier ist sie.
+	AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_00"); //Chcialbym podniesc rysunek.
+	AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_01"); //Nie ma tu problemu.
 
 	if (Mod_Thorben_Present == 1)
 	{
@@ -207,14 +207,14 @@ FUNC VOID Info_Mod_Brahim_ThorbenLehrling4_Info()
 	if (Mod_Thorben_Present == 1)
 	|| (Mod_Thorben_Present == 2)
 	{
-		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_02"); //Danke, sieht gut aus. Ich mach mich mal an die Arbeit.
+		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_02"); //Dzieki temu dobrze wyglada. Jestem gonna dostac sie do pracy.
 	}
 	else if (Mod_Thorben_Present == 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_03"); //Du hast eine verdammte Stadtkarte skizziert?
-		AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_04"); //Na und? Das kann ich am besten, darin bin ich ausgebildet.
-		AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_05"); //Und man kann sie sich wunderbar in die Wohnung hängen.
-		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_06"); //Schon gut. Bis dann.
+		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_03"); //Rysowales mape?
+		AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_04"); //Co wiec? To wlasnie robie najlepiej, to jest to, do czego jestem szkolony.
+		AI_Output(self, hero, "Info_Mod_Brahim_ThorbenLehrling4_07_05"); //Mozna je zawiesic w mieszkaniu.
+		AI_Output(hero, self, "Info_Mod_Brahim_ThorbenLehrling4_15_06"); //Wszystkie sluszne, wszystkie sluszne. Do zobaczenia dookola.
 	};
 };
 
@@ -226,7 +226,7 @@ INSTANCE Info_Mod_Brahim_Bilder (C_INFO)
 	information	= Info_Mod_Brahim_Bilder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, du hättest Interesse an Gemälden.";
+	description	= "Slysze, ze interesuja Cie obrazy.";
 };
 
 FUNC INT Info_Mod_Brahim_Bilder_Condition()
@@ -241,31 +241,31 @@ FUNC INT Info_Mod_Brahim_Bilder_Condition()
 
 FUNC VOID Info_Mod_Brahim_Bilder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_15_00"); //Ich habe gehört, du hättest Interesse an Gemälden.
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_07_01"); //Kommt darauf an, von wem die Werke stammen.
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_15_00"); //Slysze, ze interesuja Cie obrazy.
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_07_01"); //Zalezy od tego, kto tworzyl prace.
 
 	Info_ClearChoices	(Info_Mod_Brahim_Bilder);
 
-	Info_AddChoice	(Info_Mod_Brahim_Bilder, "Ich weiß nicht, wer die Dinger gemalt hat.", Info_Mod_Brahim_Bilder_B);
-	Info_AddChoice	(Info_Mod_Brahim_Bilder, "Die Bilder stammen von Johannes Port.", Info_Mod_Brahim_Bilder_A);
+	Info_AddChoice	(Info_Mod_Brahim_Bilder, "Nie wiem, kto ich narysowal.", Info_Mod_Brahim_Bilder_B);
+	Info_AddChoice	(Info_Mod_Brahim_Bilder, "Zdjecia zrobil Johannes Port.", Info_Mod_Brahim_Bilder_A);
 };
 
 FUNC VOID Info_Mod_Brahim_Bilder_C()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_00"); //Er war auf dem Schiff, das vor kurzem hier gesunken ist. Seine Ausrüstung befand sich noch im Wrack.
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_01"); //Du meinst, Johannes Port ist tot?
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_02"); //Er ist verschollen.
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_03"); //Aha ... Na ja, die Bilder sind nicht so der große Wurf. Ich will sie nicht haben.
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_00"); //Byl na statku, który ostatnio zatonal. Jego sprzet znajdowal sie jeszcze w wraku.
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_01"); //Oznacza Pan, ze Johannes Port nie zyje?
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_02"); //Brakuje go.
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_03"); //Aha.... Cóz, zdjecia nie sa duzym ujeciem. Nie chce jej.
 
 	B_GiveInvItems	(self, hero, ItMi_PortsKoffer, 1);
 
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_04"); //Wie?! Und was soll ich jetzt damit anfangen?
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_05"); //(überlegt) Ich hätte da eine Idee: Du forschst nach, ob Port noch lebt. Wäre ja unfair, wenn du seine Sachen verkaufst, obwohl er noch unter uns weilt.
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_06"); //Bring ihn her, er hätte bestimmt eine Dusche und ein Stück Fleisch nötig. Den Rest würden wir später klären, aber in der Schuld so einer Person zu stehen, könnte nicht schaden ...
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_C_15_04"); //Jak? A co mam z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_05"); //Mam pomysl: Szukasz, czy Port jeszcze zyje. Nie byloby niesprawiedliwe, gdybys sprzedal swoje rzeczy, kiedy jeszcze jest z nami.
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_C_07_06"); //Zabierz go tutaj, prawdopodobnie bedzie potrzebowal prysznica i kawalka miesa. Pózniej rozliczylismy reszte, ale nie zaszkodziloby byc w dludze takiej osoby....
 
 	Info_ClearChoices	(Info_Mod_Brahim_Bilder);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Leider kann Brahim mit den Gemälden nichts anfangen, aber er meint, es sei eine gute Idee, nach Port zu suchen. Also, wenn das Schiff an der gleichen Stelle gesunken ist, wo es jetzt noch liegt: Wohin hätte man sich retten können?");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Niestety Brahim nie wie nic o malarstwie, ale uwaza, ze warto szukac portu. Jesli wiec statek zatonal w tym samym miejscu, gdzie jest teraz: Gdzie mozna bylo sie uratowac?");
 
 	Wld_InsertNpc	(Mod_4027_NONE_Port_NW,	"BIGFARM");
 
@@ -274,23 +274,23 @@ FUNC VOID Info_Mod_Brahim_Bilder_C()
 
 FUNC VOID Info_Mod_Brahim_Bilder_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_B_15_00"); //Ich weiß nicht, wer die Dinger gemalt hat.
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_01"); //Dann lass mal schauen.
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_B_15_00"); //Nie wiem, kto ich narysowal.
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_01"); //Przyjrzyjmy sie wiec.
 
 	B_GiveInvItems	(hero, self, ItMi_PortsKoffer, 1);
 
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_02"); //(misstrauisch) Port? Wie kommst du an seine Gemälde?
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_02"); //Port? Jak dostales jego obrazy?
 
 	Info_Mod_Brahim_Bilder_C();
 };
 
 FUNC VOID Info_Mod_Brahim_Bilder_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_A_15_00"); //Die Bilder stammen von Johannes Port.
+	AI_Output(hero, self, "Info_Mod_Brahim_Bilder_A_15_00"); //Zdjecia zrobil Johannes Port.
 
 	B_GiveInvItems	(hero, self, ItMi_PortsKoffer, 1);
 
-	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_02"); //(misstrauisch) Port? Wie kommst du an seine Gemälde?
+	AI_Output(self, hero, "Info_Mod_Brahim_Bilder_B_07_02"); //Port? Jak dostales jego obrazy?
 
 	Info_Mod_Brahim_Bilder_C();
 };
@@ -303,7 +303,7 @@ INSTANCE Info_Mod_Brahim_PortSuchenWo (C_INFO)
 	information	= Info_Mod_Brahim_PortSuchenWo_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wo soll ich suchen?";
+	description	= "Gdzie powinienem patrzec?";
 };
 
 FUNC INT Info_Mod_Brahim_PortSuchenWo_Condition()
@@ -317,8 +317,8 @@ FUNC INT Info_Mod_Brahim_PortSuchenWo_Condition()
 
 FUNC VOID Info_Mod_Brahim_PortSuchenWo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_PortSuchenWo_15_00"); //Wo soll ich suchen?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortSuchenWo_07_01"); //Na, ich würde in der Nähe des Schiffswracks anfangen.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortSuchenWo_15_00"); //Gdzie powinienem patrzec?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortSuchenWo_07_01"); //Cóz, zaczynam zaczynac w poblizu wraku statku.
 };
 
 INSTANCE Info_Mod_Brahim_PortDabei (C_INFO)
@@ -329,7 +329,7 @@ INSTANCE Info_Mod_Brahim_PortDabei (C_INFO)
 	information	= Info_Mod_Brahim_PortDabei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Johannes Port gefunden.";
+	description	= "Znalazlem Johannes Port.";
 };
 
 FUNC INT Info_Mod_Brahim_PortDabei_Condition()
@@ -344,15 +344,15 @@ FUNC INT Info_Mod_Brahim_PortDabei_Condition()
 
 FUNC VOID Info_Mod_Brahim_PortDabei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_00"); //Ich habe Johannes Port gefunden.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_01"); //Sehr schön, sehr schön.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_02"); //Was passiert nun als nächstes?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_03"); //Lass ihn sich erst einmal ausruhen. Ich überlasse ihm bis morgen früh mein Haus.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_04"); //Wenn er dann ausgeschlafen und gesättigt ist, können wir uns unterhalten.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_05"); //Dann komme ich morgen wieder.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_06"); //Ja. Einen schönen Tag noch.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_00"); //Znalazlem Johannes Port.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_01"); //Bardzo ladny, bardzo ladny.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_02"); //Co dzieje sie pózniej?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_03"); //Pozwól mu odpoczac na chwile obecna. Zostawie go do rana.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_04"); //Kiedy jest dobrze wypoczety i zadowolony, mozemy porozmawiac.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortDabei_15_05"); //Wtedy wróce jutro.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortDabei_07_06"); //Tak. Milego dnia.
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Port ruht sich bei Brahim aus. Ich soll am nächsten Tag wiederkommen.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Odpoczynek portu z Brahimem. Chca, abym wrócil nastepnego dnia.");
 
 	B_StartOtherRoutine	(Mod_4027_NONE_Port_NW,	"ATBRAHIM");
 	B_StartOtherRoutine	(self, "PORTDA");
@@ -383,22 +383,22 @@ FUNC INT Info_Mod_Brahim_PortTot_Condition()
 
 FUNC VOID Info_Mod_Brahim_PortTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_00"); //(aufgeregt) Das kann nicht sein!
-	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_01"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_02"); //Er wurde ermordet! In meinem Haus! Ich kann es nicht fassen!
-	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_03"); //Port? Port ist tot? (Pause) Was machen wir jetzt?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_04"); //Ich weiß es nicht! Ich muss es sofort der Stadtwache melden, aber du ... du bist in Gefahr. Jemand hat Port umgebracht, und das bestimmt nicht aus Spaß.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_05"); //Nein, er muss etwas gewollt haben. Und du hast Ports Schatz geborgen. Vielleicht hat es etwas damit zu tun.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_06"); //Ich an deiner Stelle würde ihn schnellstmöglich loswerden wollen.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_07"); //Und wie soll ich ihn loswerden?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_08"); //Verkauf ihn. (hastig) Nicht an mich, das ist ja klar, ich will ihn nicht haben.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_09"); //Aber ich kenne da einen komischen Kauz, der dir den Koffer sicher abnehmen würde. Er liebt die Einsamkeit und exotischen Kram. Kuno ist sein Name.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_10"); //Wo finde ich diesen einsamen Händler?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_11"); //Er hat seine Hütte auf einem Teich direkt neben Pass zum Minental errichtet. Pass auf dich auf, wenn du zu ihm gehst.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_12"); //Mach ich doch immer.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_00"); //(agitowane) To nie moze byc!
+	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_02"); //Zostal zamordowany! W moim domu! Nie moge w to uwierzyc!
+	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_03"); //Port? Martwy port? Co robimy teraz?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_04"); //Nie wiem! Musze zglosic to natychmiast do Straznika Miasta, ale ty.... jestes w niebezpieczenstwie. Ktos zabil Port i to nie dla zabawy.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_05"); //Nie, on musial cos chciec. A ty uratowales skarb Port. Moze ma z tym cos wspólnego.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_06"); //Chce go jak najszybciej pozbyc sie, gdybym byl panem.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_07"); //Jak mam go pozbyc sie?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_08"); //Sprzedaj go. Nie do mnie, oczywiscie nie chce go.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_09"); //Ale znam dziwnego kolege, który chcialby zabrac Twoja walizke. Kocha samotnosc i egzotyczne rzeczy. Kuno jest jego imieniem.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_10"); //Gdzie moge znalezc tego samotnego kupca?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortTot_07_11"); //Swoja chate zbudowal na stawie obok Minentalowej przeleczy. Dbaj o siebie, kiedy do niego idziesz.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortTot_15_12"); //Zawsze to robie.
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Port wurde in der Nacht ermordet. Verdammt! Das ganze nimmt groteske Züge an ...");
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim meint, ich sei in Gefahr und solle meinen Koffer möglichst schnell verkaufen. Ein Händler in einer Hütte auf einem See neben dem Pass zum Minental soll mir da helfen können.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Port zostal zamordowany tej nocy. Damn to! Calosc przybiera groteskowe cechy.....");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim uwaza, ze jestem w niebezpieczenstwie i powinienem jak najszybciej sprzedac walizke. Handlowiec w chacie na jeziorze w poblizu Minental Pass powinien byc w stanie pomóc mi tam.");
 
 	B_StartOtherRoutine	(self, "START");
 
@@ -428,68 +428,68 @@ FUNC INT Info_Mod_Brahim_Flora_Condition()
 
 FUNC VOID Info_Mod_Brahim_Flora_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_07_00"); //(überrascht) Oha, wer kommt denn da?
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_07_00"); //Uh-huh, kto przyjdzie?
 
 	B_StartOtherRoutine	(Mod_548_NONE_Canthar_NW, "WAITFORPLAYER");
 
 	Info_ClearChoices	(Info_Mod_Brahim_Flora);
 
-	Info_AddChoice	(Info_Mod_Brahim_Flora, "Was hast du mit den Morden zu tun?", Info_Mod_Brahim_Flora_B);
-	Info_AddChoice	(Info_Mod_Brahim_Flora, "Das Spiel ist aus, Brahim.", Info_Mod_Brahim_Flora_A);
+	Info_AddChoice	(Info_Mod_Brahim_Flora, "Co miales do czynienia z zabójstwami?", Info_Mod_Brahim_Flora_B);
+	Info_AddChoice	(Info_Mod_Brahim_Flora, "Game's over, Brahim.", Info_Mod_Brahim_Flora_A);
 };
 
 FUNC VOID Info_Mod_Brahim_Flora_E()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_00"); //(eingeschüchtert) Ist ja schon gut! Wenn du mich laufen lässt, erzähle ich alles.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_01"); //Aber ich versichere, dass ich nichts mit den Morden zu tun habe. Und den Betrügereien. Ich bin nur eine arme Hilfskraft, die nach Belieben benutzt wird.
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_E_15_02"); //Schieß los.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_03"); //Es gibt in der Diebesgilde einen, der zusätzlich zu den normalen Geschäften noch Dreck am Stecken hat. Canthar ist es.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_04"); //Durch seine Geldsucht hat er sich an jeder Menge gewinnbringender Aktionen beteiligt. Er ist bereit, für seinen Profit über Leichen zu gehen.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_05"); //Es hat zwar nicht den Anschein, aber er gehört zu den mächtigsten Personen in ganz Khorinis. Ich habe keine Ahnung, wer alles zu ihm gehört.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_06"); //Ich hatte nach einem geplatzten Geschäft Schulden und habe mich an ihn gewandt... dass es ein Fehler war, merkte ich schon bald darauf.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_07"); //Immer wieder sollte ich die Drecksarbeit für ihn erledigen, und wenn ich nicht wollte, drohte er mit Schlägern.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_08"); //Ich weiß nicht, wieso Port sterben musste, aber es schien Canthar sehr dringend zu sein. Nicht nur wegen des Koffers, den du gefunden hast; ich hatte das Gefühl, dass er sich vor Port fürchtete ...
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_E_15_09"); //Sieht so aus, als müsste ich mir Canthar mal vorknöpfen.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_10"); //Es ist zwar lebensmüde, aber es wird der einzige Weg sein! Er muss etliche der Wachen auf seiner Seite haben, denen kann man also nicht trauen ... ein einzelner Kämpfer wird da größere Chancen haben!
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_00"); //To prawda! Jesli pozwolisz mi odejsc, to powiem wam wszystko.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_01"); //Ale zapewniam panstwa, nie mam nic wspólnego z morderstwami. I oszustwa. Jestem slabym pomocnikiem, którego uzywa sie do woli.
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_E_15_02"); //Idz do przodu, strzelaj.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_03"); //Jest jeden w gildii zlodziei, którzy oprócz zwyklych sklepów maja brud na rekach. Kantar jest.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_04"); //Poprzez uzaleznienie od pieniedzy uczestniczyl w wielu dochodowych dzialaniach. Chetnie przejmuje trupy dla zysku.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_05"); //Nie wydaje sie, aby tak bylo, ale on jest jednym z najpotezniejszych ludzi w Khorinis. Nie mam pojecia, kto do niego nalezy.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_06"); //Po upadlym biznesie bylem zadluzony i zwrócil sie do niego...... Wkrótce zdalem sobie sprawe, ze to blad.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_07"); //Wielokrotnie mialem robic dla niego brudna robote, a jesli nie chcialem tego robic, to zagrazal mu bandytami.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_08"); //Nie wiem, dlaczego Port musial umrzec, ale dla Canthara bylo to bardzo pilne. Nie tylko z powodu znalezionej walizki; Mialem wrazenie, ze boi sie Port.....
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_E_15_09"); //Wyglada to tak jak ja jestem gonna, wiec musze spojrzec na Canthar.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_E_07_10"); //To rzecz zagrazajaca zyciu, ale to jedyna droga! Musi on miec po swojej stronie kilku strazników, wiec nie mozna im ufac.... pojedynczy wojownik bedzie mial wieksze szanse!
 
 	Info_ClearChoices	(Info_Mod_Brahim_Flora);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Canthar scheint der Drahtzieher hinter den Morden zu sein. Allerdings muss ich ihn mir alleine zur Brust nehmen, weil er höchstwahrscheinlich viele der Wachen bestochen hat. Brahim habe ich laufen lassen; er hat mir versichert, mit dem Töten nichts zu tun und gegen seinen Willen gehandelt zu haben.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Kantar wydaje sie byc mastermina morderstw. Musze jednak zabrac go sam na klatke piersiowa, poniewaz najprawdopodobniej przekupil wielu strazników. Pozwalam Brahimowi odejsc; zapewnil mnie, ze nie ma nic wspólnego z zabijaniem i dzialal wbrew jego woli.");
 
 	Moe_KnowsPort = 9;
 };
 
 FUNC VOID Info_Mod_Brahim_Flora_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_B_15_00"); //Was hast du mit den Morden zu tun?
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_B_07_01"); //Ich? Gar nichts, ehrlich!
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_B_15_00"); //Co miales do czynienia z zabójstwami?
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_B_07_01"); //Ja? Nic, naprawde nic!
 
 	Info_ClearChoices	(Info_Mod_Brahim_Flora);
 
-	Info_AddChoice	(Info_Mod_Brahim_Flora, "Vielleicht hilft ja eine Tracht Prügel deinem Gedächtnis (...)", Info_Mod_Brahim_Flora_D);
-	Info_AddChoice	(Info_Mod_Brahim_Flora, "Muss ich erst anfangen zu drohen?", Info_Mod_Brahim_Flora_C);
+	Info_AddChoice	(Info_Mod_Brahim_Flora, "Byc moze bijace bicie wspomoze Twoja pamiec (.... )", Info_Mod_Brahim_Flora_D);
+	Info_AddChoice	(Info_Mod_Brahim_Flora, "Czy musze zaczac grozic?", Info_Mod_Brahim_Flora_C);
 };
 
 FUNC VOID Info_Mod_Brahim_Flora_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_A_15_00"); //Das Spiel ist aus, Brahim.
-	AI_Output(self, hero, "Info_Mod_Brahim_Flora_B_07_02"); //Welches Spiel denn? Ich spiele nie.
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_A_15_00"); //Game's over, Brahim.
+	AI_Output(self, hero, "Info_Mod_Brahim_Flora_B_07_02"); //Jaka gra? Nigdy nie gram.
 
 	Info_ClearChoices	(Info_Mod_Brahim_Flora);
 
-	Info_AddChoice	(Info_Mod_Brahim_Flora, "Was hast du mit den Morden zu tun?", Info_Mod_Brahim_Flora_B);
+	Info_AddChoice	(Info_Mod_Brahim_Flora, "Co miales do czynienia z zabójstwami?", Info_Mod_Brahim_Flora_B);
 };
 
 FUNC VOID Info_Mod_Brahim_Flora_D()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_D_15_00"); //Vielleicht hilft ja eine Tracht Prügel deinem Gedächtnis auf die Sprünge...
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_D_15_00"); //Byc moze bicie pomoze ci zapamietac pamiec.....
 
 	Info_Mod_Brahim_Flora_E();
 };
 
 FUNC VOID Info_Mod_Brahim_Flora_C()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_Flora_C_15_00"); //Muss ich erst anfangen zu drohen?
+	AI_Output(hero, self, "Info_Mod_Brahim_Flora_C_15_00"); //Czy musze zaczac grozic?
 
 	Info_Mod_Brahim_Flora_E();
 };
@@ -515,17 +515,17 @@ FUNC INT Info_Mod_Brahim_Canthar_Condition()
 
 FUNC VOID Info_Mod_Brahim_Canthar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_00"); //Du lebst! Und diesmal bin ich froh darüber.
-	AI_Output(hero, self, "Info_Mod_Brahim_Canthar_15_01"); //Einen Sieg habe ich nicht davongetragen. Nur einen Waffenstillstand.
-	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_02"); //Du hast Schlimmeres verhindert. Mann, hatte ich Angst um mein Leben. Hier, das soll dir gehören.
+	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_00"); //Jestes zywy! I tym razem ciesze sie z tego.
+	AI_Output(hero, self, "Info_Mod_Brahim_Canthar_15_01"); //Nie wygralem zwyciestwa. Po prostu rozejm.
+	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_02"); //Gorzej zapobiegles. Czlowiek, balem sie zycia. W tym przypadku to powinna byc Twoja.
 
 	CreateInvItems	(hero, ItMi_Gold, 100);
 	CreateInvItems	(hero, ItWr_Map_Newworld, 1);
 
-	B_ShowGivenThings	("100 Gold und Karte erhalten");
+	B_ShowGivenThings	("100 Zloto i karta otrzymana");
 
-	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_03"); //Sei trotzdem vorsichtig. Es ist noch nicht vorbei.
-	AI_Output(hero, self, "Info_Mod_Brahim_Canthar_15_04"); //Ja, das werde ich sein. Man sieht sich.
+	AI_Output(self, hero, "Info_Mod_Brahim_Canthar_07_03"); //Badz jednak ostrozny. To jeszcze nie koniec.
+	AI_Output(hero, self, "Info_Mod_Brahim_Canthar_15_04"); //Tak, to bedzie ja. Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Brahim_PortGekillt (C_INFO)
@@ -536,7 +536,7 @@ INSTANCE Info_Mod_Brahim_PortGekillt (C_INFO)
 	information	= Info_Mod_Brahim_PortGekillt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Johannes Port gefunden. Er ist tot.";
+	description	= "Znalazlem Johannes Port. On nie zyje.";
 };
 
 FUNC INT Info_Mod_Brahim_PortGekillt_Condition()
@@ -551,10 +551,10 @@ FUNC INT Info_Mod_Brahim_PortGekillt_Condition()
 
 FUNC VOID Info_Mod_Brahim_PortGekillt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_00"); //Ich habe Johannes Port gefunden. Er ist tot.
-	AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_07_01"); //Das ist bedauerlich, aber damit steigt auch der Wert an seinen Werken. Ich bin geneigt, dir seinen Koffer abzukaufen.
-	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_02"); //Wie viel würdest du mir für den Koffer geben?
-	AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_07_04"); //Hmm, 200 Goldstücke und weitere 100 dafür, dass du dir die Mühe gemacht hast, nach ihm zu suchen. Einverstanden?
+	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_00"); //Znalazlem Johannes Port. On nie zyje.
+	AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_07_01"); //To godne pozalowania, ale zwieksza to równiez wartosc jego dziel. Jestem sklonny kupic od Ciebie jego walizke.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_02"); //Ile dalibyscie mi Panstwo w tej sprawie?
+	AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_07_04"); //Hmm, 200 sztuk zlota i kolejne 100 za wysilek szukania go. Uzgodniony?
 
 	CreateInvItems	(self, ItMi_Gold, 400);
 
@@ -568,12 +568,12 @@ FUNC VOID Info_Mod_Brahim_PortGekillt_Info()
 
 		B_RaiseHandelsgeschick (2);
 
-		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Akzeptieren.", Info_Mod_Brahim_PortGekillt_Ok_300);
-		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Feilschen.", Info_Mod_Brahim_PortGekillt_Feilschen_300);
+		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Zaakceptowac.", Info_Mod_Brahim_PortGekillt_Ok_300);
+		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Zegluga.", Info_Mod_Brahim_PortGekillt_Feilschen_300);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_05"); //Ja.
+		AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_15_05"); //Tak.
 	
 		B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 	};
@@ -581,7 +581,7 @@ FUNC VOID Info_Mod_Brahim_PortGekillt_Info()
 
 FUNC VOID Info_Mod_Brahim_PortGekillt_Ok_300()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_Ok_300_15_00"); //Gib mir das Gold.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_Ok_300_15_00"); //Daj mi zloto.
 	
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
@@ -590,11 +590,11 @@ FUNC VOID Info_Mod_Brahim_PortGekillt_Ok_300()
 
 FUNC VOID Info_Mod_Brahim_PortGekillt_Feilschen_300()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_Feilschen_300_15_00"); //Das ist zu wenig.
+	AI_Output(hero, self, "Info_Mod_Brahim_PortGekillt_Feilschen_300_15_00"); //To nie wystarczy.
 	
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_Feilschen_300_13_01"); //Na gut, hier hast du 350 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Brahim_PortGekillt_Feilschen_300_13_01"); //Dobrze, oto 350 zlotych monet.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 350);
 
@@ -606,11 +606,11 @@ FUNC VOID Info_Mod_Brahim_PortGekillt_Feilschen_300()
 	}
 	else
 	{
-		AI_Output(self, hero, "Inf_Mod_Brahim_PortGekillt_Feilschen_300_13_02"); //Ich geb dir aber nur 300 Goldmünzen.
+		AI_Output(self, hero, "Inf_Mod_Brahim_PortGekillt_Feilschen_300_13_02"); //Daje tylko 300 zlotych monet.
 
 		Info_ClearChoices	(Info_Mod_Brahim_PortGekillt);
 		
-		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Akzeptieren.", Info_Mod_Brahim_PortGekillt_Ok_300);
+		Info_AddChoice	(Info_Mod_Brahim_PortGekillt, "Zaakceptowac.", Info_Mod_Brahim_PortGekillt_Ok_300);
 	};
 };
 
@@ -622,7 +622,7 @@ INSTANCE Info_Mod_Brahim_WoMoe (C_INFO)
 	information	= Info_Mod_Brahim_WoMoe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Moe in letzter Zeit gesehen?";
+	description	= "Widziales ostatnio Moe?";
 };
 
 FUNC INT Info_Mod_Brahim_WoMoe_Condition()
@@ -636,12 +636,12 @@ FUNC INT Info_Mod_Brahim_WoMoe_Condition()
 
 FUNC VOID Info_Mod_Brahim_WoMoe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_00"); //Hast du Moe in letzter Zeit gesehen?
-	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_01"); //Moe? Mhh ... Nein, ich kann mich nicht erinnern. Ist er nicht da, wo er sein sollte?
-	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_02"); //Dann hätte ich wohl kaum gefragt.
-	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_03"); //Stimmt. Machst du dir Sorgen?
-	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_04"); //Das weiß ich noch nicht.
-	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_05"); //Das klingt ja erfreulich ... Sag mir Bescheid, wenn du ihn gefunden hast.
+	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_00"); //Widziales ostatnio Moe?
+	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_01"); //Mam? Mhhhh..... Nie, nie pamietam. Czyz nie jest tam, gdzie powinien byc?
+	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_02"); //Wtedy bym nie zapytal.
+	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_03"); //To prawda. Martwisz sie?
+	AI_Output(hero, self, "Info_Mod_Brahim_WoMoe_15_04"); //Jeszcze nie wiem.
+	AI_Output(self, hero, "Info_Mod_Brahim_WoMoe_07_05"); //Cóz, to brzmi jak zabawa.... Daj mi znac, kiedy go znajdziesz.
 };
 
 INSTANCE Info_Mod_Brahim_MoeTot (C_INFO)
@@ -652,7 +652,7 @@ INSTANCE Info_Mod_Brahim_MoeTot (C_INFO)
 	information	= Info_Mod_Brahim_MoeTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Moe ist ermordet worden.";
+	description	= "Moe's zostal zamordowany.";
 };
 
 FUNC INT Info_Mod_Brahim_MoeTot_Condition()
@@ -666,14 +666,14 @@ FUNC INT Info_Mod_Brahim_MoeTot_Condition()
 
 FUNC VOID Info_Mod_Brahim_MoeTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_00"); //Moe ist ermordet worden.
-	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_01"); //WAS?! Scheiße, Mann! Hast du's schon gemeldet?
-	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_02"); //Das werde ich auf meine Weise klären.
-	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_03"); //(stöhnt) Also wieder Blut und Gemetzel ...
-	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_04"); //Kommt drauf an, wie sehr Canthar sich wehrt.
-	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_05"); //Canthar war's? Bei Innos, ich hoffe, du kommst da lebend wieder raus.
-	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_06"); //Notfalls muss ich halt laden. Nachladen. Die Armbrust.
-	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_07"); //Hä? Ach, egal. Viel Glück jedenfalls bei deiner Unternehmung.
+	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_00"); //Moe's zostal zamordowany.
+	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_01"); //WAS?! Szal, czlowiek! Zglosiles to jeszcze?
+	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_02"); //Uporzadkuje to na swój sposób.
+	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_03"); //Wiec znowu krew i ubój....
+	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_04"); //W zaleznosci od tego, jak twarda jest walka Canthar.
+	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_05"); //Czy kantar to zrobil? Mam nadzieje, ze w Innosie wydostaniecie sie z niego zywcem.
+	AI_Output(hero, self, "Info_Mod_Brahim_MoeTot_15_06"); //W razie potrzeby musze naliczyc oplate. Reload. kusza.
+	AI_Output(self, hero, "Info_Mod_Brahim_MoeTot_07_07"); //Hu? Och, nigdy nie przeszkadza. Zycze powodzenia w tym przedsiewzieciu i tak.
 };
 
 INSTANCE Info_Mod_Brahim_HartImNehmen (C_INFO)
@@ -684,7 +684,7 @@ INSTANCE Info_Mod_Brahim_HartImNehmen (C_INFO)
 	information	= Info_Mod_Brahim_HartImNehmen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist wohl hart im Nehmen?";
+	description	= "Jestes twardym facetem, huh?";
 };
 
 FUNC INT Info_Mod_Brahim_HartImNehmen_Condition()
@@ -697,12 +697,12 @@ FUNC INT Info_Mod_Brahim_HartImNehmen_Condition()
 
 FUNC VOID Info_Mod_Brahim_HartImNehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brahim_HartImNehmen_15_00"); //Du bist wohl hart im Nehmen?
-	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_01"); //Die üppigen Zeiten sind vorbei. Da muss man schon sehen, wo man bleibt.
-	AI_Output(hero, self, "Info_Mod_Brahim_HartImNehmen_15_02"); //Auch mit einem Monopol auf Jungfernpergamentzeichnungen?
-	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_03"); //Mach dich nur lustig.
-	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_04"); //Seitdem die ersten Papiermühlen aufgetaucht sind, kann ich mein teures Pergament kaum noch an den Mann bringen.
-	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_05"); //Na, wer lieber auf Lumpen als auf Tierhaut liest, dem ist auch nicht mehr zu helfen.
+	AI_Output(hero, self, "Info_Mod_Brahim_HartImNehmen_15_00"); //Jestes twardym facetem, huh?
+	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_01"); //Bogate dni juz minely. Musisz zobaczyc, gdzie jestes.
+	AI_Output(hero, self, "Info_Mod_Brahim_HartImNehmen_15_02"); //Nawet z monopolem na dziewicze rysunki pergaminowe?
+	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_03"); //Baw mnie.
+	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_04"); //Od czasu pojawienia sie pierwszych papierni nie moge przyniesc mezczyznie mojego kosztownego pergaminu.
+	AI_Output(self, hero, "Info_Mod_Brahim_HartImNehmen_07_05"); //Cóz, kazdemu, kto woli czytac na szmatach, a nie na skórze zwierzat, nie mozna juz pomóc.
 };
 
 INSTANCE Info_Mod_Brahim_Rasend (C_INFO)
@@ -726,9 +726,9 @@ FUNC INT Info_Mod_Brahim_Rasend_Condition()
 
 FUNC VOID Info_Mod_Brahim_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brahim_Rasend_07_00"); //Bei Beliars stinkenden Socken, war das etwa ein Dämon?!
-	AI_Output(hero, self, "Info_Mod_Brahim_Rasend_15_01"); //Kann man so sagen.
-	AI_Output(self, hero, "Info_Mod_Brahim_Rasend_07_02"); //Da hab ich ja noch mal Glück gehabt!
+	AI_Output(self, hero, "Info_Mod_Brahim_Rasend_07_00"); //Czy z trzeszczacymi skarpetkami Beliara byl to demon?
+	AI_Output(hero, self, "Info_Mod_Brahim_Rasend_15_01"); //Mozna to powiedziec.
+	AI_Output(self, hero, "Info_Mod_Brahim_Rasend_07_02"); //Znowu mialem szczescie!
 };
 
 INSTANCE Info_Mod_Brahim_Trade (C_INFO)
@@ -756,7 +756,7 @@ FUNC VOID Info_Mod_Brahim_Trade_Info()
 	Backup_Questitems();
 
 	B_GiveTradeInv (self);
-	AI_Output(hero, self, "Info_Mod_Brahim_Trade_15_00"); //Dann zeig mal her ...
+	AI_Output(hero, self, "Info_Mod_Brahim_Trade_15_00"); //Cóz, pozwole sobie zobaczyc....
 };
 
 INSTANCE Info_Mod_Brahim_Pickpocket (C_INFO)

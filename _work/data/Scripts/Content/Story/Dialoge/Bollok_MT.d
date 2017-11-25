@@ -15,29 +15,29 @@ FUNC INT Info_Mod_Bollok_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Bollok_MT_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_00"); //(überrascht) Ich erkennen dich ... du seien Mensch der tapfer gekämpft in Mine.
-	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_15_01"); //Ahh, du bist es. Wie ich sehe bist du nicht mehr länger Sklave in der Alten Mine.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_02"); //Nein, seien weggelaufen in Minental ... haben getroffen Brüder nach viele Jahren.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_03"); //(bedrückt) Hmm, und hatte gehofft dir nicht zu begegnen.
-	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_15_04"); //Was, wieso?
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_05"); //Du seien Feind der Orks und meines neuen Meisters.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_06"); //Pflicht verlangen, dass ich dich versuchen muss zu töten ... auch, wenn nicht wollen.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_07"); //Du haben gekämpft mit Ehre und mir gezeigt, dass du nicht böse, wie andere Menschen.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_00"); //(zdziwiony) Rozpoznaje Ciebie.... jestes czlowiekiem dzielnie walczacym w moim kraju.
+	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_15_01"); //Ach, to ty. Widze, ze nie jestes juz niewolnikiem w Starej Kopalni.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_02"); //Nie, uciekac w Minentalu.... spotkali sie z bracmi po wielu latach.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_03"); //Hmm i nie moglismy sie z Toba spotkac.
+	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_15_04"); //Co, dlaczego?
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_05"); //Jestes wrogiem orków i moim nowym mistrzem.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_06"); //Mam obowiazek domagac sie, aby cie zabic.... nawet jesli nie chcesz.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_18_07"); //Walczyles z honorem i pokazales mi, ze nie jestes zly jak inni ludzie.
 
 	self.guild = GIL_ORC;
 	Npc_SetTrueGuild (self, GIL_ORC);
 
 	Info_ClearChoices	(Info_Mod_Bollok_MT_Hi);
 
-	Info_AddChoice	(Info_Mod_Bollok_MT_Hi, "Dann lass es uns zu Ende bringen.", Info_Mod_Bollok_MT_Hi_B);
-	Info_AddChoice	(Info_Mod_Bollok_MT_Hi, "Du kannst dich auch anders entscheiden.", Info_Mod_Bollok_MT_Hi_A);
+	Info_AddChoice	(Info_Mod_Bollok_MT_Hi, "Na koniec.", Info_Mod_Bollok_MT_Hi_B);
+	Info_AddChoice	(Info_Mod_Bollok_MT_Hi, "Mozna postanowic inaczej.", Info_Mod_Bollok_MT_Hi_A);
 };
 
 FUNC VOID Info_Mod_Bollok_MT_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_B_15_00"); //Dann lass es uns zu Ende bringen. Möge der bessere Krieger gewinnen.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_B_18_01"); //Froh bin, dass du Unveränderliches mutig ins Auge blickst und akzeptierst.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_B_18_02"); //Werden dich mit Ehre eines Kriegers bestatten, falls töten.
+	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_B_15_00"); //Na koniec. Niech wygra lepszy wojownik.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_B_18_01"); //Chwalic, ze odwaznie twarz i akceptowac niezmienne rzeczy.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_B_18_02"); //Bedzie pochowac cie z zaszczytem wojownika, jesli zabije.
 
 	Info_ClearChoices	(Info_Mod_Bollok_MT_Hi);
 
@@ -48,9 +48,9 @@ FUNC VOID Info_Mod_Bollok_MT_Hi_B()
 
 FUNC VOID Info_Mod_Bollok_MT_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_A_15_00"); //Du kannst dich auch anders entscheiden. Du musst das nicht tun.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_A_18_01"); //Tut mir Leid ... müssen meine Pflicht tun.
-	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_A_18_02"); //Werden für deine Seele beten.
+	AI_Output(hero, self, "Info_Mod_Bollok_MT_Hi_A_15_00"); //Mozna postanowic inaczej. Nie musisz tego robic.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_A_18_01"); //Przykro mi.... musza wykonywac mój obowiazek.
+	AI_Output(self, hero, "Info_Mod_Bollok_MT_Hi_A_18_02"); //Módlcie sie za wasza dusze.
 
 	Info_ClearChoices	(Info_Mod_Bollok_MT_Hi);
 

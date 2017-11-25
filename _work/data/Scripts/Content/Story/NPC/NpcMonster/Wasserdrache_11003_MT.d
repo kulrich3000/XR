@@ -1,6 +1,6 @@
 INSTANCE Wasserdrache_11003_MT	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Seeungeheuer";
+	name	=	"morski potwór";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

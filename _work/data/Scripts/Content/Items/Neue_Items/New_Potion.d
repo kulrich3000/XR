@@ -12,7 +12,7 @@ INSTANCE ItFo_Potion_Elixier_Zange(C_Item)
 	on_state[0]		=	UseZangenElixier;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Minecrawlersekret";
+	description			= "Sekretarz Minecrawler";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= 1;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
@@ -37,7 +37,7 @@ INSTANCE ItFo_Potion_Elixier_Egg(C_Item)
 	on_state[0]		=	UseEggElixier;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Starkes Minecrawlersekret";
+	description			= "Silna sekrecja miotacza mineralów";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= 3;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 200;
 };
@@ -62,7 +62,7 @@ INSTANCE ItPo_KalomsTrank(C_Item)
 	on_state[0]		=	UseKalomsTrank;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Trank von Dexter";
+	description			= "Potion Dextera";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 200;
 };
 
@@ -85,7 +85,7 @@ INSTANCE ItFo_Potion_Blutfliege(C_Item)
 	on_state[0]		=	UseBlutfliegeElixier;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Blutfliegensekret";
+	description			= "sekretarz krwi i muchy";
 	TEXT[1]				= NAME_Bonus_Hp;			COUNT[1]	= 15;
 	TEXT[5]				= NAME_Value;				COUNT[5]	= value;
 };
@@ -114,9 +114,9 @@ INSTANCE NeorasTrankVonMilten(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Neoras Trank";
+	description		= 	"Potion Neory Neory";
 	
-	TEXT[1]			= 	"Wirkung: ???";				
+	TEXT[1]			= 	"Efekt:?";				
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -138,9 +138,9 @@ INSTANCE ItPo_MiguelForDar (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION";
 
-	description		= 	"Miguels Trank für Dar";
+	description		= 	"Eliksir Migula dla Dar";
 	
-	TEXT[1]			= 	"Wirkung: ???";				
+	TEXT[1]			= 	"Efekt:?";				
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -160,7 +160,7 @@ INSTANCE ItPo_Feldraeubertrank(C_Item)
 	on_state[0]		=	UseFeldraeubertrank;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Dragomirs Feldräuberaroma";
+	description			= "Dragomir polowy drapieznik aromat drapieznika";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 200;
 };
 
@@ -181,8 +181,8 @@ INSTANCE ItPo_Tiergift (C_Item)
 	visual 			=	"XR_TIERGIFTFLASCHE_1.3DS";
 	material 		=	MAT_GLAS;
 
-	description			= "Tiergift";
-	TEXT[1]				= "kann zum Vergiften von Pfeilen und Waffen genutzt werden";
+	description			= "trucizna";
+	TEXT[1]				= "mozna stosowac do trujacych strzal i broni";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 	
 	inv_roty = 360;
@@ -200,8 +200,8 @@ INSTANCE ItPo_Pflanzengift (C_Item)
 	visual 			=	"XR_Giftflasche_1.3DS";
 	material 		=	MAT_GLAS;
 
-	description			= "Pflanzengift";
-	TEXT[1]				= "kann zum Vergiften von Pfeilen und Waffen genutzt werden";
+	description			= "srodek chwastobójczy";
+	TEXT[1]				= "mozna stosowac do trujacych strzal i broni";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 	
 	inv_roty = 360;

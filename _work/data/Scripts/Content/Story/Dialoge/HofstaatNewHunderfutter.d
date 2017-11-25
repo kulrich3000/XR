@@ -18,16 +18,16 @@ FUNC INT Info_Mod_HofstaatNewHundefutter_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatNewHundefutter_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_00"); //Da geht er hin ... eine Zierde seiner Zunft ... Ich werde wohl niemals auch nur annähernd so kross und saftig werden wie er ...
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_01"); //Du bist sein Nachfolger?
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_02"); //Jaja ... aber kein besonders guter.
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_03"); //Vielleicht kann ich dir ja helfen?
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_04"); //Du willst mir helfen? Bist du Koch oder was?
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_05"); //Ich hab schon das eine oder andere Vieh geschlachtet.
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_06"); //Du bist Metzger?! Bitte hilf mir! Bitte, bitte, bitte, bitte!! Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_07"); //Als Erstes kompletter Freudenspender-Entzug. Das macht dein Fleisch zäh.
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_08"); //Freudenspender ... ja, natürlich ... Fleisch locker ... klar ... Das mach ich! Vielen Dank, Herr Metzgermeister!
-	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_09"); //Gern geschehen.
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_00"); //Tam idzie.... zdobienie gildii.... Prawdopodobnie nigdy nie bede tak chrupiacy i soczysty jak on....
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_01"); //Jestes jego nastepca?
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_02"); //Tak, tak, tak..... ale nie bardzo dobry.
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_03"); //Moze moge ci pomóc?
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_04"); //Chcesz mi pomóc? Jestes kucharzem lub kims innym?
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_05"); //Ubralem juz jedno lub dwa bydlo.
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_06"); //Jestes rzeznikiem! Prosze mi pomóc! Prosze, prosze, prosze, prosze, prosze! Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_07"); //Pierwsze calkowite wycofanie dawcy przyjemnosci. Sprawia, ze mieso jest twarde.
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_06_08"); //Przyjemnosc dla dawcy..... tak, oczywiscie...... Poluzowac mieso.... oczywiscie.... To wlasnie robie! Dziekuje bardzo, panie Rzezniku!
+	AI_Output(self, hero, "Info_Mod_HofstaatNewHundefutter_Hi_15_09"); //Witamy.
 
 	Mod_SL_PartFluffy_Day = Wld_GetDay();
 

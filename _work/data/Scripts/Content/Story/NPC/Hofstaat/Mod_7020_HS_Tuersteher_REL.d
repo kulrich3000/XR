@@ -1,7 +1,7 @@
 instance Mod_7020_HS_Tuersteher_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Türsteher";	
+	name 		= "derkacz";	
 	guild 		= GIL_OUT;
 	id 			= 7020;
 	voice 		= 29;

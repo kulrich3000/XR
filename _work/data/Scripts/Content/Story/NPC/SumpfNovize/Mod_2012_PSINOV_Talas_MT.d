@@ -1,7 +1,7 @@
 instance Mod_2012_PSINOV_Talas_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Talas";
+	name 		=		"talie";
 	Npctype 	=		NPCTYPE_Main;
 	guild 		=	    GIL_OUT;
 	level 		=	    4;

@@ -115,7 +115,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 				B_RaiseFightTalent(hero, NPC_TALENT_2H, 1);
 
-				AI_PrintScreen	("+1 Zweihand durch Praxiserfahrung", -1, YPOS_ItemGiven+5, FONT_ScreenSmall, 2);
+				AI_PrintScreen	("1 Dwuosobowe doswiadczenie praktyczne", -1, YPOS_ItemGiven+5, FONT_ScreenSmall, 2);
 
 				Mod_Zweihand_Praxis -= Mod_Zweihand_Praxis_Next;
 				Mod_Zweihand_Praxis_Next += 50;
@@ -126,7 +126,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 				B_RaiseFightTalent(hero, NPC_TALENT_1H, 1);
 
-				AI_PrintScreen	("+1 Einhand durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+				AI_PrintScreen	("1 z jednej strony doswiadczenie praktyczne", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 				Mod_Einhand_Praxis -= Mod_Einhand_Praxis_Next;
 				Mod_Einhand_Praxis_Next += 50;
@@ -137,7 +137,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 				B_RaiseFightTalent(hero, NPC_TALENT_BOW, 1);
 
-				AI_PrintScreen	("+1 Bogen durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+				AI_PrintScreen	("1 arkusz doswiadczenia praktycznego", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 				Mod_Bogen_Praxis -= Mod_Bogen_Praxis_Next;
 				Mod_Bogen_Praxis_Next += 50;
@@ -148,7 +148,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 				B_RaiseFightTalent(hero, NPC_TALENT_CROSSBOW, 1);
 
-				AI_PrintScreen	("+1 Armbrust durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+				AI_PrintScreen	("1 Krzyzówka z doswiadczeniem praktycznym", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 				Mod_Armbrust_Praxis -= Mod_Armbrust_Praxis_Next;
 				Mod_Armbrust_Praxis_Next += 50;
@@ -161,7 +161,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 		hero.attribute[ATR_DEXTERITY] += 1;
 
-		AI_PrintScreen	("+1 Geschick durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("1 Umiejetnosci dzieki doswiadczeniu praktycznym", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		Mod_Geschick_Praxis -= Mod_Geschick_Praxis_Next;
 		Mod_Geschick_Praxis_Next += 50;
@@ -170,7 +170,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 		hero.attribute[ATR_STRENGTH] += 1;
 
-		AI_PrintScreen	("+1 Stärke durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("1 Sila poprzez doswiadczenie praktyczne", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		Mod_Staerke_Praxis -= Mod_Staerke_Praxis_Next;
 		Mod_Staerke_Praxis_Next += 50;
@@ -179,7 +179,7 @@ FUNC VOID B_Praxiserfahrung(var C_NPC oth, var C_NPC slf)
 
 		hero.attribute[ATR_MANA_MAX] += 2;
 
-		AI_PrintScreen	("+2 Mana durch Praxiserfahrung", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("2 Mana dzieki praktycznemu doswiadczeniu", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		Mod_Mana_Praxis -= Mod_Mana_Praxis_Next;
 		Mod_Mana_Praxis_Next += 50;

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Ramirez_Hi_Condition()
 
 FUNC VOID Info_Mod_Ramirez_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_Hi_14_00"); //Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Ramirez_Hi_14_00"); //Co Pan tutaj robi?
 };
 
 INSTANCE Info_Mod_Ramirez_Dieb (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Ramirez_Dieb (C_INFO)
 	information	= Info_Mod_Ramirez_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Diebeszeichen zeigen)";
+	description	= "(Pokaz znak zlodziejstwa)";
 };
 
 FUNC INT Info_Mod_Ramirez_Dieb_Condition()
@@ -41,11 +41,11 @@ FUNC VOID Info_Mod_Ramirez_Dieb_Info()
 {
 	AI_PlayAni (hero, "T_YES");
 
-	AI_Output(self, hero, "Info_Mod_Ramirez_Dieb_14_00"); //Du gehörst also zu uns.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Dieb_14_01"); //Ich kann dir beibringen, wie du Schlösser knackst.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Dieb_14_00"); //Wiec jestes z nami.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Dieb_14_01"); //Potrafie nauczyc sie wybierac zamki.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ramirez kann mir beibringen Schlösser zu knacken.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Ramirez moze nauczyc mnie wybierac sluzy.");
 };
 
 INSTANCE Info_Mod_Ramirez_Cassia (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Ramirez_Cassia (C_INFO)
 	information	= Info_Mod_Ramirez_Cassia_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum traust du mir nicht?";
+	description	= "Dlaczego mi nie ufasz?";
 };
 
 FUNC INT Info_Mod_Ramirez_Cassia_Condition()
@@ -70,21 +70,21 @@ FUNC INT Info_Mod_Ramirez_Cassia_Condition()
 
 FUNC VOID Info_Mod_Ramirez_Cassia_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_00"); //Warum traust du mir nicht?
-	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_01"); //Da muss man dich nur ansehen und sich vorstellen, dass du die Kaserne knacken willst.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_02"); //Kann ich mich irgendwie beweisen?
-	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_03"); //Du könntest Attilas Job übernehmen, nur für eine kurze Zeit, um den größten Unruhestifter aufzusuchen.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_04"); //Aber dann kommst du mit in die Kaserne.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_05"); //Wenn du es schaffst, eine Bande im Hafenviertel zu erledigen und mir den Ring von ihrem Anführer zu bringen, werde ich mitkommen.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_06"); //Und wo treiben die sich rum?
-	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_07"); //Überall, du musst sie erst finden.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_00"); //Dlaczego mi nie ufasz?
+	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_01"); //Wystarczy spojrzec i wyobrazic sobie, ze chcesz zlamac koszary.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_02"); //Czy moge sie w jakikolwiek sposób udowodnic?
+	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_03"); //Móglbys na chwile podjac prace w Attyli, aby spotkac sie z najwiekszym sprawca problemów.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_04"); //Ale potem przychodzisz ze mna do koszar.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_05"); //Jesli uda ci sie zdjac gang na nabrzezu i przyniesc mi pierscionek od ich przywódcy, przyjde z wami.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Cassia_15_06"); //A gdzie sie zabieraja?
+	AI_Output(self, hero, "Info_Mod_Ramirez_Cassia_14_07"); //Wszedzie trzeba ja znalezc jako pierwsza.
 
 	Wld_InsertNpc	(Mod_1891_NONE_Bandenchef_NW,	"BIGFARM");
 	Wld_InsertNpc	(Mod_1892_NONE_Bandenmitglied1_NW,	"BIGFARM");
 
 	Log_CreateTopic	(TOPIC_MOD_RAMIREZ_BANDE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_RAMIREZ_BANDE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_DIEB_ATTILA, TOPIC_MOD_RAMIREZ_BANDE, "Damit Ramirez mich in die Kaserne begleitet soll ich eine Bande im Hafenviertel ausrotten und ihm den Ring von ihrem Anführer bringen.", "Ramirez will, dass ich eine Bande im Hafenviertel beseitige. Als Beweis soll ich ihm den Ring von ihrem Anführer bringen.");
+	B_LogEntry_More	(TOPIC_MOD_DIEB_ATTILA, TOPIC_MOD_RAMIREZ_BANDE, "Zeby Ramirez towarzyszyl mi do koszar, zgladze gang w dzielnicy portowej i przywieze mu pierscionek od jego przywódcy.", "Ramirez chce, abym zdjal gang w doku. Dowodem na to jest to, ze mam go zabrac z ringu od ich przywódcy.");
 };
 
 INSTANCE Info_Mod_Ramirez_Bandenchef (C_INFO)
@@ -95,7 +95,7 @@ INSTANCE Info_Mod_Ramirez_Bandenchef (C_INFO)
 	information	= Info_Mod_Ramirez_Bandenchef_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du den Ring vom Bandenchef.";
+	description	= "Oto pierscien od lidera gangu.";
 };
 
 FUNC INT Info_Mod_Ramirez_Bandenchef_Condition()
@@ -110,21 +110,21 @@ FUNC INT Info_Mod_Ramirez_Bandenchef_Condition()
 
 FUNC VOID Info_Mod_Ramirez_Bandenchef_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_Bandenchef_15_00"); //Hier hast du den Ring vom Bandenchef.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Bandenchef_15_00"); //Oto pierscien od lidera gangu.
 
 	B_GiveInvItems	(hero, self, ItRi_Bandenchef, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_01"); //Tatsächlich, hätte ich dir nicht zugetraut.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_02"); //Hab eben noch mit dem Gedanken gespielt, dass du schon tot bist.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Bandenchef_15_03"); //Also traust du mir jetzt und wirst mich in die Kaserne begleiten?
-	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_04"); //Ja, ich hab dir mein Wort gegeben. Sag aber vorher noch Cassia Bescheid.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_01"); //Tak naprawde nie sadzilabym, zebys to potrafil.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_02"); //Bawilem sie po prostu mysl, ze jestes juz martwy.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Bandenchef_15_03"); //Wiec ufasz mi teraz i jestes gonna mnie do baraków?
+	AI_Output(self, hero, "Info_Mod_Ramirez_Bandenchef_14_04"); //Tak, dalem ci moje slowo. Po prostu pozwól Cassii poznac najpierw.
 
 	B_GivePlayerXP	(250);
 
 	B_StartOtherRoutine	(Mod_1892_NONE_Bandenmitglied1_NW, "TOT");
 
 	B_SetTopicStatus	(TOPIC_MOD_RAMIREZ_BANDE, LOG_SUCCESS);
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ich habe Ramirez überzeugt. Ich soll aber noch Cassia bescheid geben, bevor wir aufbrechen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Przekonalem Ramirez. Zanim wyjedziemy, powinienem poinformowac Cassie.");
 
 	B_Göttergefallen(3, 1);
 };
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Ramirez_ZuAndre (C_INFO)
 	information	= Info_Mod_Ramirez_ZuAndre_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Cassia weiß Bescheid, lass uns gehen.";
+	description	= "Cassia wie, odejdzmy.";
 };
 
 FUNC INT Info_Mod_Ramirez_ZuAndre_Condition()
@@ -150,10 +150,10 @@ FUNC INT Info_Mod_Ramirez_ZuAndre_Condition()
 
 FUNC VOID Info_Mod_Ramirez_ZuAndre_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_ZuAndre_15_00"); //Cassia weiß Bescheid, lass uns gehen.
-	AI_Output(self, hero, "Info_Mod_Ramirez_ZuAndre_14_01"); //Gut, geh voraus, ich folge dir.
+	AI_Output(hero, self, "Info_Mod_Ramirez_ZuAndre_15_00"); //Cassia wie, odejdzmy.
+	AI_Output(self, hero, "Info_Mod_Ramirez_ZuAndre_14_01"); //Wszystko na wskros, ide dalej, pójde za Toba.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez folgt mir und ich werde jetzt mal in der Kaserne vorbei schauen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez podaza za mna i zatrzymam sie przy koszarach.");
 
 	AI_StopProcessInfos	(self);
 
@@ -168,7 +168,7 @@ INSTANCE Info_Mod_Ramirez_Flucht (C_INFO)
 	information	= Info_Mod_Ramirez_Flucht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier bin ich.";
+	description	= "Oto jestem.";
 };
 
 FUNC INT Info_Mod_Ramirez_Flucht_Condition()
@@ -181,15 +181,15 @@ FUNC INT Info_Mod_Ramirez_Flucht_Condition()
 
 FUNC VOID Info_Mod_Ramirez_Flucht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_00"); //Hier bin ich.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_01"); //Na endlich, ich dachte schon, du lässt uns hier für immer drinnen.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_02"); //Geht leise raus, der Weg ist frei.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_03"); //Wir treffen uns bei Cassia. Ach nochwas: Wenn du grade dabei bist, raube noch die Truhe bei Lord Andre aus.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_04"); //Ich hab mitbekommen, dass angeblich das gesamte Gold in seiner Truhe ist.
-	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_05"); //Aber dann ist Schluss.
-	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_06"); //Dann haben wir es ihnen richtig heimgezahlt.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_00"); //Oto jestem.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_01"); //W koncu myslalem, ze zostawiles nas tutaj na zawsze.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_02"); //Jedz spokojnie, droga jest czysta.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_03"); //Spotkaj mnie w Kassia. Jeszcze jedna rzecz: gdy jestes przy nim, rabuj klatke piersiowa Pana Andre' a.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_04"); //Zauwazylem, ze w jego klatce piersiowej ma byc cale zloto.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Flucht_15_05"); //Ale to juz koniec.
+	AI_Output(self, hero, "Info_Mod_Ramirez_Flucht_14_06"); //Potem zaplacilismy im naprawde.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez und Attila sind frei. Ich soll aber noch Lord Andres Truhe plündern.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez i Attila sa wolne. Ale mam jeszcze grabic klatke piersiowa Pana Andresa.");
 
 	AI_StopProcessInfos	(self);
 
@@ -220,13 +220,13 @@ FUNC INT Info_Mod_Ramirez_WelcomeBack_Condition()
 
 FUNC VOID Info_Mod_Ramirez_WelcomeBack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_WelcomeBack_14_00"); //Da ist unser Befreier. Am besten du gehst nochmal zu Lord Andre und erzählst ihm irgendein Märchen über unsere Flucht und gibst die Sache als Miliz auf.
-	AI_Output(hero, self, "Info_Mod_Ramirez_WelcomeBack_15_01"); //Und was soll ich ihm erzählen?
-	AI_Output(self, hero, "Info_Mod_Ramirez_WelcomeBack_14_02"); //Denk dir was aus.
+	AI_Output(self, hero, "Info_Mod_Ramirez_WelcomeBack_14_00"); //Jest nasz dostawca. Najlepiej mówiac, wrócisz do Pana Andre' a i opowiedz mu bajke o naszej ucieczce i poddaj sie jako milicja.
+	AI_Output(hero, self, "Info_Mod_Ramirez_WelcomeBack_15_01"); //I co mam mu powiedziec?
+	AI_Output(self, hero, "Info_Mod_Ramirez_WelcomeBack_14_02"); //Pomysl o czyms.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 5000);
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez und Attila sind frei. Ich soll aber noch Lord Andre's Truhe plündern.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez i Attila sa wolne. Ale ja jeszcze bede pladrowal klatke piersiowa Pana Andre' a.");
 
 	AI_StopProcessInfos	(self);
 
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Ramirez_AndreFertig (C_INFO)
 	information	= Info_Mod_Ramirez_AndreFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe mit Lord Andre ...";
+	description	= "Mówilem do Pana Andre' a - mówilem";
 };
 
 FUNC INT Info_Mod_Ramirez_AndreFertig_Condition()
@@ -257,13 +257,13 @@ FUNC INT Info_Mod_Ramirez_AndreFertig_Condition()
 
 FUNC VOID Info_Mod_Ramirez_AndreFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_00"); //Ich habe mit Lord Andre gesprochen und er hat mir meine Geschichte abgekauft.
-	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_01"); //Sehr gut, alles nimmt ein gutes Ende. Attila ist wieder frei, Meldor wird nicht mehr gestört und die Miliz wurde um einiges ärmer.
-	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_02"); //Dann hast du noch bei vielen anderen Kleinigkeiten geholfen. Ich glaube wir wären ohne dich nie so weit gekommen.
-	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_03"); //Jetzt übertreibst du es aber.
-	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_04"); //Du hast mir bewiesen, dass du einer der besten Diebe in unseren Reihen bist!
-	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_05"); //Ich geh am besten jetzt und schau mir mal an, was die Anderen so treiben.
-	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_06"); //Gut, schau aber ab und zu mal hier unten vorbei.
+	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_00"); //Rozmawialem z Panem Andre, a on kupil moja historie.
+	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_01"); //Bardzo dobrze, wszystko zbliza sie do szczesliwego konca. Attyla jest znowu wolna, Meldor nie jest juz zaklócany, a milicja stala sie o wiele ubozsza.
+	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_02"); //Wtedy pomagales z wieloma innymi drobnymi rzeczami. Mysle, ze bez Ciebie nie osiagnelibysmy tak duzo.
+	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_03"); //Teraz to przeszkadza.
+	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_04"); //Udowodniles mi, ze jestes jednym z najlepszych zlodziei w naszych szeregach!
+	AI_Output(hero, self, "Info_Mod_Ramirez_AndreFertig_15_05"); //Lepiej teraz idz i zobacz, co inni sa w stanie zrobic.
+	AI_Output(self, hero, "Info_Mod_Ramirez_AndreFertig_14_06"); //Wszystko w prawo, ale zatrzymaj sie tutaj raz na chwile.
 
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_ATTILA, LOG_SUCCESS);
 
@@ -282,12 +282,12 @@ INSTANCE Info_Mod_Ramirez_Lernen (C_INFO)
 	information	= Info_Mod_Ramirez_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schlösser knacken lernen (10 LP)";
+	description	= "Nauczyc sie lamania zamków (10 dlugopisów)";
 };
 
 FUNC INT Info_Mod_Ramirez_Lernen_Condition()
 {
-	Info_Mod_Ramirez_Lernen.description = B_BuildLearnString("Schlösser knacken lernen", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
+	Info_Mod_Ramirez_Lernen.description = B_BuildLearnString("Nauczyc sie wybierac zamki", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Ramirez_Dieb))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
@@ -298,11 +298,11 @@ FUNC INT Info_Mod_Ramirez_Lernen_Condition()
 
 FUNC VOID Info_Mod_Ramirez_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ramirez_Lernen_15_00"); //Bring mir bei wie man Schlösser knackt.
+	AI_Output(hero, self, "Info_Mod_Ramirez_Lernen_15_00"); //Naucz mnie, jak wybierac zamki.
 
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK))
 	{
-		AI_Output (self, hero, "Info_Mod_Ramirez_Lernen_14_01"); //Wenn du ein Schloss knacken willst solltest du auf jedenfall genug Dietriche dabei haben. Außerdem solltest du ziemlich geschickt sein.
+		AI_Output (self, hero, "Info_Mod_Ramirez_Lernen_14_01"); //Jesli chcesz wybrac zamek, powinienes miec przy sobie wystarczajaca ilosc szafek. Poza tym powinienes byc calkiem madry.
 	};
 };
 
@@ -441,7 +441,7 @@ FUNC VOID Info_Mod_Ramirez_EXIT_Info()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Ramirez_Dieb))
 	{
-		AI_Output(self, hero, "Info_Mod_Ramirez_EXIT_14_00"); //Komm uns nicht mit leeren Händen nach Hause!
+		AI_Output(self, hero, "Info_Mod_Ramirez_EXIT_14_00"); //Nie wracaj do domu z pustymi rekami!
 	};
 
 	AI_StopProcessInfos	(self);

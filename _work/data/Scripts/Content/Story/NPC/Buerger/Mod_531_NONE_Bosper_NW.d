@@ -1,7 +1,7 @@
 INSTANCE Mod_531_NONE_Bosper_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bosper";
+	name 		= "meczet";
 	guild 		= GIL_pal;
 	id 			= 531;
 	voice 		= 11;

@@ -21,18 +21,18 @@ FUNC INT Info_Mod_Serra_Hi_Condition()
 
 FUNC VOID Info_Mod_Serra_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_00"); //Hallo Fremder. Du musst von weit herkommen, ich habe dich hier noch niemals gesehen.
-	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_01"); //Ja, mein Herkunftsort liegt tatsächlich ein ganzes Stück weg.
-	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_02"); //Du hast bestimmt viele Abenteuer bestritten und unzählige Monster erschlagen ... so etwas sieht man einem stattlichen Kerl wie dir an.
-	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_03"); //Ja, ist schon was dran.
-	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_04"); //Hmm, weißt du, ich habe gerade ein schweres Paket bei mir.
-	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_05"); //Wenn du es für mich trägst und mich zu meinem Haus begleitest, würde ich dich auch für diese gute Tat entlohnen.
-	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_06"); //Ok, mal sehen, was sich machen lässt.
-	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_07"); //Hier. Es ist auch nicht weit.
+	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_00"); //Witaj nieznajomego. Musiales pokonac dluga droge, nigdy nie widzialem cie tutaj.
+	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_01"); //Tak, moje miejsce pochodzenia jest naprawde odlegle.
+	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_02"); //Musiales przezyc wiele przygód i zabic niezliczone potwory...... wiesz, ze taka rzecz wyglada jak przystojny facet.
+	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_03"); //Tak, to dobry argument.
+	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_04"); //Hmm, wiesz, mam juz ciezki pakiet.
+	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_05"); //Jesli nosisz go dla mnie i towarzyszylbys mi w domu, ja równiez nagrodzilbym cie za ten dobry uczynek.
+	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_06"); //Dobrze, zobaczmy, co mozemy zrobic.
+	AI_Output(self, hero, "Info_Mod_Serra_Hi_17_07"); //Tutaj. Równiez niedaleko.
 
 	B_GiveInvItems	(self, hero, ItMi_SeraPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_08"); //(zu sich selbst) Hmm, so schwer ist das Paket ja gar nicht.
+	AI_Output(hero, self, "Info_Mod_Serra_Hi_15_08"); //(do siebie) Hmm, opakowanie nie jest ciezkie.
 
 	AI_StopProcessInfos	(hero);
 
@@ -41,7 +41,7 @@ FUNC VOID Info_Mod_Serra_Hi_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_UNSCHULDIG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_UNSCHULDIG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Serra hat mich darum gebeten ihr Paket nach hause zu tragen. Dazu muss ich ihr einfach folgen.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Serra poprosila mnie o przeniesienie jej paczki do domu. Musze tylko isc za nia.");
 };
 
 INSTANCE Info_Mod_Serra_AtHome (C_INFO)
@@ -66,21 +66,21 @@ FUNC INT Info_Mod_Serra_AtHome_Condition()
 
 FUNC VOID Info_Mod_Serra_AtHome_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_00"); //Da sind wir schon. Vielen Dank für deine selbstlose Tat, mir das Paket zu tragen.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_00"); //Juz tam jestesmy. Dziekuje za bezinteresowny akt niesienia przesylki.
 
 	B_GiveInvItems	(hero, self, ItMi_SeraPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_01"); //Du bist ein toller Mann. Hier hast du einige Goldmünzen zur Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_01"); //Jestes wielkim czlowiekiem. Oto kilka zlotych monet na nagrode.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Serra_AtHome_15_02"); //Danke.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_03"); //Ach, wenn doch nur alle Menschen so gut und großherzig wären, wie du.
-	AI_Output(hero, self, "Info_Mod_Serra_AtHome_15_04"); //Wieso?
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_05"); //Ach, da gibt es diesen Mann, Alvar heißt er. Ein unmöglicher Mensch, ein Rüpel und Rohling.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_06"); //Er lässt mich einfach nicht in Frieden ... sogar mehrmals belästigt hat er mich.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_07"); //Zum Dorfschamanen traue ich mich jedoch nicht zu gehen, um sein Verhalten anzuklagen.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_08"); //Alvar würde sich furchtbar an mir rächen.
+	AI_Output(hero, self, "Info_Mod_Serra_AtHome_15_02"); //Dzieki.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_03"); //Och, gdyby tylko wszyscy ludzie byli tak dobrzy i hojni jak ty.
+	AI_Output(hero, self, "Info_Mod_Serra_AtHome_15_04"); //Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_05"); //Och, jest ten mezczyzna, jego imie to Alvar. Niemozliwy czlowiek, zastraszony i brutalny.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_06"); //Po prostu nie zostawi mnie w spokoju.... Nekal mnie nawet kilkakrotnie.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_07"); //Nie mam odwagi isc do szamana, aby oskarzac go o swoje zachowanie.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome_17_08"); //Alvar wzial na mnie straszliwa zemste.
 
 	B_GivePlayerXP	(50);
 
@@ -107,18 +107,18 @@ FUNC INT Info_Mod_Serra_AtHome2_Condition()
 
 FUNC VOID Info_Mod_Serra_AtHome2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_00"); //Vielen Dank. Dann könnten wir uns endlich wieder sicher fühlen.
-	AI_Output(hero, self, "Info_Mod_Serra_AtHome2_15_01"); //Was kann ich tun? Ihn züchtigen?
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_02"); //Nein, das würde doch nichts helfen. Dann könnte er noch schlimmer werden aus Rache.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_03"); //Es müsste etwas sein, das ihn vor der Gerichtsbarkeit bloßstellt und verhindert, dass er jemals wieder einer Frau im Dorf etwas antun kann.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_04"); //Ja, wenn du uns sein Tagebuch bringen könntest.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_05"); //Vielleicht hat er dort etwas über seine Missetaten festgehalten. Dann könnte man ihn überführen.
-	AI_Output(hero, self, "Info_Mod_Serra_AtHome2_15_06"); //Sein Tagebuch ... das ließe sich einrichten.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_07"); //(überschwänglich) Vielen Dank, du weißt gar nicht, wie sehr du uns damit hilfst.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_08"); //Du müsstest es irgendwo bei ihm auf dem Tisch finden.
-	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_09"); //Viel Glück. Wir stehen damit tief in deiner Schuld.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_00"); //Dziekuje bardzo. Wtedy wreszcie znów moglibysmy czuc sie bezpiecznie.
+	AI_Output(hero, self, "Info_Mod_Serra_AtHome2_15_01"); //Co moge zrobic? Stresowac go?
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_02"); //Nie, to by nie zrobilo nic dobrego. Potem mógl sie pogarszac za zemste.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_03"); //To powinno byc cos, co wstydzi go w sadzie i zapobiegnie mu kiedykolwiek krzywdzic kobiete w wiosce ponownie.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_04"); //Tak, jesli móglbys przyniesc nam swój pamietnik.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_05"); //Moze zachowal tam cos o swoich zlych czynach. Potem mógl zostac skazany.
+	AI_Output(hero, self, "Info_Mod_Serra_AtHome2_15_06"); //Jego pamietnik.... mozna by to ustalic.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_07"); //Nie wiesz, jak bardzo nam w tym pomagasz.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_08"); //Powinienes go znalezc gdzies na jego biurku.
+	AI_Output(self, hero, "Info_Mod_Serra_AtHome2_17_09"); //Zycze powodzenia. Jestesmy Wam gleboko zadluzeni.
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Serra und Malfama werden offensichtlich von einem Mann namens Alvar bedroht und bedrängt. Ich soll ihnen sein Tagebuch beschaffen. Vielleicht hat er seine Missetaten darin festgehalten.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Serra i Malfama sa oczywiscie zastraszane i przesladowane przez czlowieka o nazwisku Alvar. Ja powinienem cie dostac jego pamietnik. Moze zachowal w nim swoje zle czyny.");
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_7560_OUT_Malfama_EIS, "START");
@@ -148,15 +148,15 @@ FUNC INT Info_Mod_Serra_AlvarTagebuch_Condition()
 
 FUNC VOID Info_Mod_Serra_AlvarTagebuch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_00"); //Du bist wieder da! Hast du das Tagebuch, mein Held?
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarTagebuch_15_01"); //Ja, hier ist es. Auf den ersten Blick konnte ich keine Straftaten finden, die er festgehalten hätte.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_00"); //Wracasz! Masz pamietnik, mój bohater?
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarTagebuch_15_01"); //Tak, tak. Na pierwszy rzut oka nie moglem znalezc zadnych zbrodni, które on aresztowal.
 
 	B_GiveInvItems	(hero, self, ItWr_AlvarTagebuch, 1);
 
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_02"); //Toll, du bist der größte. Zeig doch mal her.
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_03"); //Es wird bestimmt etwas zu finden sein. Man muss es nur gewissenhaft durchlesen.
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarTagebuch_15_04"); //In Ordnung. Viel Glück.
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_05"); //Ja, dein selbstloses Handeln soll allen anderen Vorbild sein.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_02"); //Swietnie, jestes najwiekszy. Pozwole sobie to zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_03"); //Musi byc cos do znalezienia. Wystarczy tylko uwaznie przeczytac.
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarTagebuch_15_04"); //Wszystkie sluszne, wszystkie sluszne. Zycze powodzenia.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarTagebuch_17_05"); //Tak, wasze bezinteresowne dzialania powinny byc przykladem dla wszystkich innych.
 
 	Mod_SeraHatBuch = Wld_GetDay();
 };
@@ -181,24 +181,24 @@ FUNC INT Info_Mod_Serra_AlvarDead_Condition()
 
 FUNC VOID Info_Mod_Serra_AlvarDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_00"); //Ahh, da ist ja mein Held.
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_15_01"); //Was hat das mit Alvar zu bedeuten?
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_02"); //(heuchlerisch) Was? Ach, du meinst den schrecklichen Zwischenfall. Ja, der Arme. Das hat er nicht verdient.
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_15_03"); //Was sollen diese Spielchen, was habt ihr damit zu tun?
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_04"); //(unschuldig) Nichts, gar nichts. Es waren die Schneegeister ... er war einfach zu unvorsichtig.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_00"); //Ahh, jest mój bohater.
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_15_01"); //Jaka jest relacja z firma Alvar?
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_02"); //Hipokrytyczny. Co? Och, masz na mysli straszny incydent. Tak, rzecz biedna. Nie zasluguje na to.
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_15_03"); //Co grasz, co masz z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_17_04"); //(winni) Nic, nic. Byly to duchy sniegu..... byl po prostu zbyt niedbaly.
 
 	Info_ClearChoices	(Info_Mod_Serra_AlvarDead);
 
-	Info_AddChoice	(Info_Mod_Serra_AlvarDead, "Ihr wisst ganz genau, was geschehen ist.", Info_Mod_Serra_AlvarDead_B);
-	Info_AddChoice	(Info_Mod_Serra_AlvarDead, "Verstehe.", Info_Mod_Serra_AlvarDead_A);
+	Info_AddChoice	(Info_Mod_Serra_AlvarDead, "Wiesz dokladnie, co sie stalo.", Info_Mod_Serra_AlvarDead_B);
+	Info_AddChoice	(Info_Mod_Serra_AlvarDead, "Widze.", Info_Mod_Serra_AlvarDead_A);
 };
 
 FUNC VOID Info_Mod_Serra_AlvarDead_B()
 {
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_B_15_00"); //Ihr wisst ganz genau, was geschehen ist. Und es wird nicht ungesühnt bleiben.
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_01"); //(trügerisch) Ich weiß nicht, was du meinst.
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_02"); //Du warst es doch, der sein Tagebuch entwendet hat. Es gibt Zeugen.
-	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_03"); //Also solltest du besser aufpassen, wen du beschuldigst. Du könntest sonst Unmut im Dorf heraufbeschwören.
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_B_15_00"); //Wiesz dokladnie, co sie stalo. I to nie pozostanie bezkarne.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_01"); //Nie wiem, co masz na mysli.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_02"); //To ty ukradles jego pamietnik. Sa swiadkowie.
+	AI_Output(self, hero, "Info_Mod_Serra_AlvarDead_B_17_03"); //Wiec lepiej byc ostroznym, kto wini. Jesli tego nie zrobisz, mozesz wywolac niezadowolenie we wsi.
 
 	Info_ClearChoices	(Info_Mod_Serra_AlvarDead);
 
@@ -207,7 +207,7 @@ FUNC VOID Info_Mod_Serra_AlvarDead_B()
 
 FUNC VOID Info_Mod_Serra_AlvarDead_A()
 {
-	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_A_15_00"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Serra_AlvarDead_A_15_00"); //Widze.
 
 	Info_ClearChoices	(Info_Mod_Serra_AlvarDead);
 
@@ -235,16 +235,16 @@ FUNC INT Info_Mod_Serra_Traenenkristall_Condition()
 
 FUNC VOID Info_Mod_Serra_Traenenkristall_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_00"); //Was, du hier? Knatus, halte ihn auf!
-	AI_Output(hero, self, "Info_Mod_Serra_Traenenkristall_15_01"); //Einen Augenblick. Jetzt soll der Kristall seine Macht zeigen. Was hast du mit Thys vor?
-	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_02"); //Ich und Malfama haben Thys mit einem Schadenszauber belegt um vorzutäuschen, er sei krank.
-	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_03"); //Und jetzt werden wir ihn vergiften, um endgültig die Macht über dieses armselige Dorf zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_04"); //Die Bewohner sind auf alle unsere Intrigen hereingefallen und fressen uns ja aus der Hand, wie dumme Esel.
-	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_05"); //Knatus, den Idioten, haben wir sogar so weit abgerichtet, dass er bereit ist, dich zu töten ...
+	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_00"); //Co pan tutaj? Knatus, zatrzymaj go!
+	AI_Output(hero, self, "Info_Mod_Serra_Traenenkristall_15_01"); //Teraz poczekaj minute. Teraz niech krysztal pokaze swoja moc. Co robisz z Thysem?
+	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_02"); //Ja i Malfama rzucili obrazenia na Thysa, aby udawac, ze jest chory.
+	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_03"); //A teraz zamierzamy go zatruc, by wreszcie przejac wladze nad ta nieszczesliwa wioska.
+	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_04"); //Mieszkancy upadli dla wszystkich naszych intryg i jedza nas z rak jak glupi osly.
+	AI_Output(self, hero, "Info_Mod_Serra_Traenenkristall_17_05"); //Knatus, idiota, ubralismy go nawet do tego stopnia, ze jest gotów zabic cie......
 
 	AI_TurnToNpc	(hero, Mod_7564_OUT_Knatus_EIS);
 
-	AI_Output(hero, self, "Info_Mod_Serra_Traenenkristall_15_06"); //Hörst du Knatus, was sie über dich zu sagen haben?
+	AI_Output(hero, self, "Info_Mod_Serra_Traenenkristall_15_06"); //Slyszysz, co Knatus ma do powiedzenia o Tobie?
 
 	AI_StopProcessInfos	(hero);
 };

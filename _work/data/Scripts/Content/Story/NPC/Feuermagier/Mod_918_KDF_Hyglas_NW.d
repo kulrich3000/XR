@@ -1,7 +1,7 @@
 INSTANCE Mod_918_KDF_Hyglas_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hyglas";
+	name 		= "szklanki";
 	guild 		= GIL_VLK;
 	id 			= 918;
 	voice 		= 14;

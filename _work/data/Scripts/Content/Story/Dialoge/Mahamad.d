@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mahamad_Hi (C_INFO)
 	information	= Info_Mod_Mahamad_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei Beliar! Ich bin aber gefragt hier.";
+	description	= "Beliar! Jestem tu zapytany.";
 };
 
 FUNC INT Info_Mod_Mahamad_Hi_Condition()
@@ -19,28 +19,28 @@ FUNC INT Info_Mod_Mahamad_Hi_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_00"); //Bei Beliar! Ich bin aber gefragt hier.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_01"); //Zu recht, wie mir scheint. Scheinst fähiger zu sein, als die anderen Gauner.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_02"); //Ich fühle mich auch schon wie ein Obergauner. Du brauchst mich?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_03"); //Eigentlich nicht. Aber du brauchst mich und meine Stimme.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_04"); //Wohl wahr. Was muss ich dafür tun?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_05"); //Von einem Magier wird eine gewisse geistige Reife und Intelligenz erwartet.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_06"); //Meine Aufgabe ist es, zu testen, ob bei dir zumindest Ansätze vorhanden sind, damit du diese Anforderungen erreichen kannst.
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_07"); //Ich denke mal, ich bin nicht auf den Kopf gefallen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_08"); //Das werden wir sehen. Du wirst einige Rätsel lösen und Fragen beantworten müssen. Kannst du eigentlich lesen?
-	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_09"); //Das will ich meinen. Wir können anfangen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_10"); //Nun gut. Hier hast du vier Zettel. Finde die Antworten und komme zu mir.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_00"); //Beliar! Jestem tu zapytany.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_01"); //Wydaje mi sie to calkiem slusznie. Wyglada to lepiej niz inni oszustowie.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_02"); //Czuje sie juz jak oszust. Potrzebujesz mnie?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_03"); //Wlasciwie nie. Potrzebujesz jednak mnie i mojego glosu.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_04"); //To wystarczy. Co musze zrobic?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_05"); //Oczekuje sie, ze magik bedzie mial pewna dojrzalosc umyslowa i inteligencje.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_06"); //Moja praca polega na sprawdzeniu, czy sa dostepne przynajmniej pewne podejscia, aby spelnic te wymagania.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_07"); //Chyba nie upadlem na glowe.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_08"); //Zobaczymy to. Bedziesz musial rozwiazac kilka zagadek i odpowiedziec na pytania. Czy potrafisz przeczytac?
+	AI_Output(hero, self, "Info_Mod_Mahamad_Hi_15_09"); //Tak wlasnie rozumiem. Dobrze jest pojechac.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Hi_01_10"); //Bardzo dobrze. Oto cztery karteczki papieru. Znalezc odpowiedzi i przyjsc do mnie.
 
 	CreateInvItems	(hero, ItWr_MahamadRaetsel1, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel2, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel3, 1);
 	CreateInvItems	(hero, ItWr_MahamadRaetsel4, 1);
 
-	B_ShowGivenThings	("4 Zettel erhalten");
+	B_ShowGivenThings	("4 karty odebrane");
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_SCHLAUFUCHS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_SCHLAUFUCHS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_SCHLAUFUCHS, "Mahamad will meine Intelligenz auf die Probe stellen. Dazu hat er mir vier Zettel mit Rätsel gegeben.");
+	B_LogEntry	(TOPIC_MOD_ASS_SCHLAUFUCHS, "Mahamad chce sprawdzic moja inteligencje. Dal mi cztery kartki papieru z zagadka.");
 };
 
 INSTANCE Info_Mod_Mahamad_Schlaufuchs (C_INFO)
@@ -51,7 +51,7 @@ INSTANCE Info_Mod_Mahamad_Schlaufuchs (C_INFO)
 	information	= Info_Mod_Mahamad_Schlaufuchs_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du kannst mich testen.";
+	description	= "Mozecie mnie panstwo przetestowac.";
 };
 
 FUNC INT Info_Mod_Mahamad_Schlaufuchs_Condition()
@@ -65,34 +65,34 @@ FUNC INT Info_Mod_Mahamad_Schlaufuchs_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_00"); //Du kannst mich testen.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_01"); //Du hast alles gut verstanden?
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_02"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_03"); //Dann möchte ich wissen, wieviel der Spitzenwein kostet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_00"); //Mozecie mnie panstwo przetestowac.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_01"); //Masz juz wszystko zorientowane?
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_15_02"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_01_03"); //Wtedy chcialbym wiedziec, ile kosztuje wino najwyzszej jakosci.
 
 	Mod_ASS_MahamadRaetsel_Niete = 0;
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 200 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_C);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 175 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_B);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich habe 150 Gold gerechnet.", Info_Mod_Mahamad_Schlaufuchs_A);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Liczylem 200 zlota.", Info_Mod_Mahamad_Schlaufuchs_C);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Liczylem 175 zlota.", Info_Mod_Mahamad_Schlaufuchs_B);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Liczylem 150 zlota.", Info_Mod_Mahamad_Schlaufuchs_A);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_D()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_D_01_00"); //Und wieviele Dreiecke hast du gezählt?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_D_01_00"); //I ile trójkatów policzyles?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 35 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_G);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 25 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_F);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Ich denke, es sind 20 Dreiecke.", Info_Mod_Mahamad_Schlaufuchs_E);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Mysle, ze to 35 trójkatów.", Info_Mod_Mahamad_Schlaufuchs_G);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Mysle, ze to 25 trójkatów.", Info_Mod_Mahamad_Schlaufuchs_F);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Mysle, ze jest 20 trójkatów.", Info_Mod_Mahamad_Schlaufuchs_E);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_C()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_C_15_00"); //Ich habe 200 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_C_15_00"); //Liczylem 200 zlota.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -101,7 +101,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_C()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_B_15_00"); //Ich habe 175 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_B_15_00"); //Liczylem 175 zlota.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -110,43 +110,43 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_B()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_A_15_00"); //Ich habe 150 Gold gerechnet.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_A_15_00"); //Liczylem 150 zlota.
 
 	Info_Mod_Mahamad_Schlaufuchs_D();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_H()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_H_01_00"); //Aha. Was ist mit den Zahlenreihen?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_H_01_00"); //Uh-huh. A co z seria liczb?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 7 4 und unten 14 16 raus.", Info_Mod_Mahamad_Schlaufuchs_K);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 6 3 und unten 15 17 raus.", Info_Mod_Mahamad_Schlaufuchs_J);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "War etwas schwierig. Ich hab für oben 5 2 und unten 17 19 raus.", Info_Mod_Mahamad_Schlaufuchs_I);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "To bylo troche trudne. Dostalem 7-4 pietra i 14-16 na dole.", Info_Mod_Mahamad_Schlaufuchs_K);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "To bylo troche trudne. Dostalem szesc trzydziesci szesc trzydziestu szesc pieter na górze i pietnascie siedemnascie na dole.", Info_Mod_Mahamad_Schlaufuchs_J);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "To bylo troche trudne. Dostalem 5 2 pietra i 17 19 na dole.", Info_Mod_Mahamad_Schlaufuchs_I);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_M()
 {
-	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_M_01_00"); //Und die letzte Aufgabe. Wie lange reicht die Medizin?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_M_01_00"); //I ostatnie zadanie. Jak dlugo leki trwaja?
 
 	Info_ClearChoices	(Info_Mod_Mahamad_Schlaufuchs);
 
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 Stunde.", Info_Mod_Mahamad_Schlaufuchs_P);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "2 Stunden.", Info_Mod_Mahamad_Schlaufuchs_O);
-	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 1/2 Stunden.", Info_Mod_Mahamad_Schlaufuchs_N);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 godzina.", Info_Mod_Mahamad_Schlaufuchs_P);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "Dwie godziny.", Info_Mod_Mahamad_Schlaufuchs_O);
+	Info_AddChoice	(Info_Mod_Mahamad_Schlaufuchs, "1 1 1/2 godziny.", Info_Mod_Mahamad_Schlaufuchs_N);
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_G()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_G_15_00"); //Ich denke, es sind 35 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_G_15_00"); //Mysle, ze to 35 trójkatów.
 
 	Info_Mod_Mahamad_Schlaufuchs_H();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_F()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_F_15_00"); //Ich denke, es sind 25 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_F_15_00"); //Mysle, ze to 25 trójkatów.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -155,7 +155,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_F()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_E()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_E_15_00"); //Ich denke, es sind 20 Dreiecke.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_E_15_00"); //Mysle, ze jest 20 trójkatów.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -166,17 +166,17 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_L()
 {
 	if (Mod_ASS_MahamadRaetsel_Niete >= 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_00"); //Deine Antworten waren nicht schlecht, aber es reicht wohl nicht. Lerne, lese die Bücher, bereite dich weiter vor. Die meisten Novizen hier haben das gleiche Problem.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_00"); //Panskie odpowiedzi nie byly zle, ale mysle, ze to nie wystarczy. Naucz sie, przeczytaj ksiazki, przygotuj sie. Wiekszosc nowicjuszy ma tutaj ten sam problem.
 	}
 	else if (Mod_ASS_MahamadRaetsel_Niete >= 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_01"); //Du überrascht mich wirklich. Dieses Ergebnis habe ich dir nicht zugetraut. Ich muss sagen, du bist auf dem besten Weg nach oben. Ich will dir noch eine Chance geben.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_01"); //Naprawde mnie zaskoczylas. Nie sadzilem, zebys mial taki rezultat. Musze powiedziec, ze jestes na dobrej drodze. Chce dac panstwu kolejna szanse.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_02"); //Perfekt! Alles richtig. Macht richtig Spaß mit dir. Meine Stimme ist dir sicher.
-		AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_L_15_03"); //Und wie geht's weiter?
-		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_04"); //Ich glaube, Mirza hat noch was für dich.
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_02"); //Doskonaly! To wszystko jest w porzadku. To jest z Toba bardzo przyjemna zabawa. Jestescie pewni mojego glosu.
+		AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_L_15_03"); //Co wiec dzieje sie pózniej?
+		AI_Output(self, hero, "Info_Mod_Mahamad_Schlaufuchs_L_01_04"); //Mysle, ze Mirza ma dla Ciebie cos innego.
 
 		B_GivePlayerXP	(250);
 
@@ -190,7 +190,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_L()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_K()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_K_15_00"); //War etwas schwierig. Ich hab für oben 7 4 und unten 14 16 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_K_15_00"); //To bylo troche trudne. Dostalem 7-4 pietra i 14-16 na dole.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -199,14 +199,14 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_K()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_J()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_J_15_00"); //War etwas schwierig. Ich hab für oben 6 3 und unten 15 17 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_J_15_00"); //To bylo troche trudne. Dostalem szesc trzydziesci szesc trzydziestu szesc pieter na górze i pietnascie siedemnascie na dole.
 
 	Info_Mod_Mahamad_Schlaufuchs_M();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_I()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_I_15_00"); //War etwas schwierig. Ich hab für oben 5 2 und unten 17 19 raus.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_I_15_00"); //To bylo troche trudne. Dostalem 5 2 pietra i 17 19 na dole.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -215,14 +215,14 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_I()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_P()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_P_15_00"); //1 Stunde.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_P_15_00"); //1 godzina.
 
 	Info_Mod_Mahamad_Schlaufuchs_L();
 };
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_O()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_O_15_00"); //2 Stunden.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_O_15_00"); //Dwie godziny.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -231,7 +231,7 @@ FUNC VOID Info_Mod_Mahamad_Schlaufuchs_O()
 
 FUNC VOID Info_Mod_Mahamad_Schlaufuchs_N()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_N_15_00"); //1 1/2 Stunden.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Schlaufuchs_N_15_00"); //1 1 1/2 godziny.
 
 	Mod_ASS_MahamadRaetsel_Niete += 1;
 
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Mahamad_Blutkelch (C_INFO)
 	information	= Info_Mod_Mahamad_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Kais erzählt mir, dass du einen Teil einer Botschaft hast. Kann ich mal haben?";
+	description	= "Witaj! Kais mówi mi, ze masz czesc wiadomosci. Czy moge go miec?";
 };
 
 FUNC INT Info_Mod_Mahamad_Blutkelch_Condition()
@@ -259,12 +259,12 @@ FUNC INT Info_Mod_Mahamad_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Mahamad_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_00"); //Hallo! Kais erzählt mir, dass du einen Teil einer Botschaft hast. Kann ich mal haben?
-	AI_Output(self, hero, "Info_Mod_Mahamad_Blutkelch_01_01"); //Hier, ich komme damit nicht klar. Aber Vorsicht! Ist ein altes Pergament.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_00"); //Witaj! Kais mówi mi, ze masz czesc wiadomosci. Czy moge go miec?
+	AI_Output(self, hero, "Info_Mod_Mahamad_Blutkelch_01_01"); //Tutaj nie moge sobie z tym poradzic. Ale badz ostrozny! To stary pergamin.
 
 	B_GiveInvItems	(self, hero, ItWr_BlutkelchZettel2, 1);
 
-	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_02"); //Ich pass auf.
+	AI_Output(hero, self, "Info_Mod_Mahamad_Blutkelch_15_02"); //Bede uwazny.
 
 	if (Npc_HasItems(hero, ItWr_BlutkelchZettel1) == 1)
 	&& (Npc_HasItems(hero, ItWr_BlutkelchZettel2) == 1)
@@ -272,7 +272,7 @@ FUNC VOID Info_Mod_Mahamad_Blutkelch_Info()
 	{
 		Log_CreateTopic	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_ASS_LASTBLUTKELCH, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Habe von Kais, Mahamad und Norek jeweils ein Teil eines alten Pergaments erhalten und soll die Botschaft entziffern. Amir hat sie ins Lager gebracht. Mal sehen ...");
+		B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Otrzymal kawalek starozytnego pergaminu z Kais, Mahamad i Norek do rozszyfrowania wiadomosci. Amir zabral ich do obozu. Zobaczmy jak.....");
 	};
 };
 

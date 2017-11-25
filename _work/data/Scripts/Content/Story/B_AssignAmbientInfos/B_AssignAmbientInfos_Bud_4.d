@@ -24,8 +24,8 @@ FUNC INT Info_Bud_4_EXIT_Condition()
 
 FUNC VOID Info_Bud_4_EXIT_Info()
 {	
-	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_00"); //Danke. Mach's gut.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_01"); //Halt die Ohren steif, Junge.
+	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_00"); //Dzieki. Teraz nalezy zachowac ostroznosc.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_01"); //Chlopiec trzymaj podbródek.
 	AI_StopProcessInfos	(self);
 };
 
@@ -39,7 +39,7 @@ INSTANCE Info_Bud_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_4_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muß ich tun, um in diesem Lager aufgenommen zu werden?";
+	description = "Co musze zrobic, aby dostac sie do tego obozu?";
 };                       
 
 FUNC INT Info_Bud_4_EinerVonEuchWerden_Condition()
@@ -54,10 +54,10 @@ FUNC INT Info_Bud_4_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_4_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_01"); //Was muss ich tun, um in diesem Lager aufgenommen zu werden?
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_04"); //Als Schatten oder Gardist meinst du? Das wird nicht leicht, Junge. Du wirst einige Prüfungen bestehen müssen, bevor der alte Thorus dich Thorus vorstellt.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_02"); //Und du musst dich mit den Leuten hier gut stellen. Aber solange du nicht zum Lager gehörst, nimmt dich keiner ernst.
-	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_03"); //Wenn ich du wäre, würde ich mich bei den Schatten umhören. Unter ihnen findest du noch am ehesten einen, der dir hilft. Natürlich nur für eine Gegenleistung.
+	AI_Output(hero,self,"Info_Bud_4_EinerVonEuchWerden_15_01"); //Co musze zrobic, aby zostac dopuszczonym do tego obozu?
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_04"); //Masz na mysli jako cien czy straznik? To nie jest latwe, dziecko. Musisz zdac kilka testów zanim stary Thorus wprowadzi Cie do Thorusa.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_02"); //I trzeba byc dobrym z ludzmi tutaj. Ale tak dlugo, jak nie jestes czescia obozu, nikt cie nie traktuje powaznie.
+	AI_Output(self,hero,"Info_Bud_4_EinerVonEuchWerden_04_03"); //Gdybym byl panem, zapytalbym w cieniu. Znajdziesz wsród nich osobe, która Ci pomoze. Oczywiscie, w zamian.
 };
 
 // *************************************************************************
@@ -70,7 +70,7 @@ INSTANCE Info_Bud_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_4_WichtigePersonen_Condition;
 	information	= Info_Bud_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Gibt es hier Leute, die ich kennen sollte?";
+	description = "Czy sa tutaj ludzie, których powinienem wiedziec?";
 };                       
 
 FUNC INT Info_Bud_4_WichtigePersonen_Condition()
@@ -80,9 +80,9 @@ FUNC INT Info_Bud_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_4_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_WichtigePersonen_15_00"); //Gibt es hier Leute, die ich kennen sollte?
-	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_01"); //Als Neuer solltest du's dir nicht mit Gravo verscherzen. Er ist zwar nur ein Buddler, aber er hat Beziehungen bis zu den Erzbaronen.
-	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_02"); //Wenn du mal ein Problem mit Thorus' Leuten hast, kann er dir helfen dich freizukaufen.
+	AI_Output(hero,self,"Info_Bud_4_WichtigePersonen_15_00"); //Czy sa tutaj ludzie, których powinienem wiedziec?
+	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_01"); //Jako nowy facet nie powinienes sie balaganu z Gravo. Jest tylko kopaczem, ale ma polaczenia z arcybaronami.
+	AI_Output(self,hero,"Info_Bud_4_WichtigePersonen_04_02"); //Jesli kiedykolwiek masz problem z ludzmi Thorusa, on pomoze Ci go kupic.
 };
 
 // *************************************************************************
@@ -95,7 +95,7 @@ INSTANCE Info_Bud_4_DasLager(C_INFO)
 	condition	= Info_Bud_4_DasLager_Condition;
 	information	= Info_Bud_4_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "Jakie sa interesujace miejsca?";
 };                       
 
 FUNC INT Info_Bud_4_DasLager_Condition()
@@ -110,9 +110,9 @@ FUNC INT Info_Bud_4_DasLager_Condition()
 
 FUNC VOID Info_Bud_4_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
-	AI_Output(self,hero,"Info_Bud_4_DasLager_04_01"); //Du solltest dich am Eingangsplatz zwischen Nordtor und Burgtor rumtreiben.
-	AI_Output(self,hero,"Info_Bud_4_DasLager_04_02"); //Wenn du Glück hast, gibt Thorus dir 'ne Aufgabe - dann kannst du dich bewähren. Ist bestimmt nicht schlecht, zu Thorus' Leuten zu gehören.
+	AI_Output(hero,self,"Info_Bud_4_DasLager_15_00"); //Jakie sa interesujace miejsca?
+	AI_Output(self,hero,"Info_Bud_4_DasLager_04_01"); //Nalezy wisiec wokól strefy wejscia miedzy brama pólnocna a brama zamkowa.
+	AI_Output(self,hero,"Info_Bud_4_DasLager_04_02"); //Jesli masz szczescie, Thorus da ci zadanie - wtedy mozesz sie udowodnic. Z pewnoscia nie jest zle byc jednym z ludzi Thorusa.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ INSTANCE Info_Bud_4_DieLage(C_INFO) // E1
 	condition	= Info_Bud_4_DieLage_Condition;
 	information	= Info_Bud_4_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar?";
+	description = "Kazdy ma racje?";
 };                       
 
 FUNC INT Info_Bud_4_DieLage_Condition()
@@ -135,8 +135,8 @@ FUNC INT Info_Bud_4_DieLage_Condition()
 
 FUNC VOID Info_Bud_4_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_4_DieLage_15_00"); //Alles klar?
-	AI_Output(self,hero,"Info_Bud_4_DieLage_04_01"); //So klar wie vor 20 Jahren. Und seitdem hat sich hier nicht viel verändert.
+	AI_Output(hero,self,"Info_Bud_4_DieLage_15_00"); //Kazdy ma racje?
+	AI_Output(self,hero,"Info_Bud_4_DieLage_04_01"); //Tak samo jasne jak 20 lat temu. Od tamtej pory nie zaszlo wiele zmian.
 };
 
 INSTANCE Info_Mod_BUD_4_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 instance Mod_1173_STT_Fingers_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 			=		"Fingers";
+	name 			=		"palce";
 	npctype			=		npctype_main;
 	guild 			=		GIL_out;
 	level 			=		7;

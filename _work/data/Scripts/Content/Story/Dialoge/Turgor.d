@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Turgor_Hi (C_INFO)
 	information	= Info_Mod_Turgor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Turgor_Hi_Condition()
@@ -18,22 +18,22 @@ FUNC VOID Info_Mod_Turgor_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_01"); //Das wüsste ich auch ganz gern!
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_02"); //"Geh nach Relendel", haben sie gesagt, "dort hast du einen freien Markt für Sumpfkraut."
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_03"); //Jaahah, aber sie haben nicht verraten, dass es hier was viel Besseres gibt!
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_04"); //Etwas, das das ganze beschissene Sumpfkraut unnötig macht!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_01"); //Chce to równiez wiedziec!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_02"); //"Przejdz do Relendel.", haben sie gesagt, "tam istnieje wolny rynek zbytu dla bagna."
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_03"); //Tak, ale oni mi nie mówili, ze tam jest cos lepszego!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_27_04"); //Cos, co sprawia, ze ??cala pieluszka chwastów niepotrzebne!
 
 	Info_ClearChoices	(Info_Mod_Turgor_Hi);
 
-	Info_AddChoice	(Info_Mod_Turgor_Hi, "(reden lassen und weggehen)", Info_Mod_Turgor_Hi_B);
-	Info_AddChoice	(Info_Mod_Turgor_Hi, "Wer sind 'sie'?", Info_Mod_Turgor_Hi_A);
+	Info_AddChoice	(Info_Mod_Turgor_Hi, "(pozwól im rozmawiac i odchodzic)", Info_Mod_Turgor_Hi_B);
+	Info_AddChoice	(Info_Mod_Turgor_Hi, "Kim sa oni?", Info_Mod_Turgor_Hi_A);
 };
 
 FUNC VOID Info_Mod_Turgor_Hi_B()
 {
 	AI_TurnAway	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_B_27_00"); //Und erst die Leute hier ... He, was soll das werden?!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_B_27_00"); //I tylko ludzie tutaj...... Hej, co ty robisz?
 
 	Info_ClearChoices	(Info_Mod_Turgor_Hi);
 
@@ -42,18 +42,18 @@ FUNC VOID Info_Mod_Turgor_Hi_B()
 
 FUNC VOID Info_Mod_Turgor_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_00"); //Wer sind "sie"?
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_01"); //Wo komme ich wohl her, hä?
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_02"); //Die alten Säcke von Gurus wollten mich wohl loswerden.
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_03"); //Sollen sie doch in ihrem Sumpf vermodern!
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_04"); //Ich werde ihnen nicht den Gefallen tun und zurückkehren.
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_05"); //Aber hier isses auch nicht viel besser. Die Gurus sind wenigstens ausgeglichen!
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_06"); //In Khorata gehen sich alle gegenseitig auf die Nerven, meckern rum, sind unzufrieden ...
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_07"); //So kann man nicht normal miteinander umgehen.
-	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_08"); //Fällt dir was auf?
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_09"); //(Pause) Oh, Scheiße. (betroffen) Jaah, tut mir Leid.
-	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_10"); //Können wir dann "normal miteinander umgehen"?
-	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_11"); //'Türlich. Haste Fragen oder wie?
+	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_00"); //Wer sind "ona"?
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_01"); //Skad jestem, huh?
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_02"); //Stare worki Guru prawdopodobnie chcialy mnie pozbyc.
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_03"); //Niech gnija w bagnie!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_04"); //Nie zrobie im laski i wróce.
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_05"); //Nie jest to jednak duzo lepiej. Guru sa przynajmniej wywazone!
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_06"); //W Khoracie kazdy dostaje na siebie nawzajem nerwy, jeki, sa niezadowoleni......
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_07"); //Nie jest to zaden sposób, aby normalnie sobie nawzajem radzic.
+	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_08"); //Zauwazyc cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_09"); //(Pauza) Oh, gówno. (healthy) Tak, przepraszam.
+	AI_Output(hero, self, "Info_Mod_Turgor_Hi_A_15_10"); //Können wir dann "normalnie obchodzic sie nawzajem"?
+	AI_Output(self, hero, "Info_Mod_Turgor_Hi_A_27_11"); //"Oczywiscie. Masz pytania lub w jaki sposób?
 
 	Info_ClearChoices	(Info_Mod_Turgor_Hi);
 };
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Turgor_WieLaeufts (C_INFO)
 	information	= Info_Mod_Turgor_WieLaeufts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_Turgor_WieLaeufts_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Mod_Turgor_WieLaeufts_Condition()
 
 FUNC VOID Info_Mod_Turgor_WieLaeufts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turgor_WieLaeufts_15_00"); //Wie läuft's?
-	AI_Output(self, hero, "Info_Mod_Turgor_WieLaeufts_27_01"); //Haha, witzig. Das Sumpfkraut wächst, aber niemand will's haben. Kann's höchstens noch selbst rauchen.
+	AI_Output(hero, self, "Info_Mod_Turgor_WieLaeufts_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Turgor_WieLaeufts_27_01"); //Haha, smieszny. Bagno rosnie, ale nikt nie chce. Moge palic tylko samemu.
 };
 
 INSTANCE Info_Mod_Turgor_Freudenspender (C_INFO)
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Turgor_Freudenspender (C_INFO)
 	information	= Info_Mod_Turgor_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hätte hier Freudenspender für dich.";
+	description 	= "Cieszylabym sie, ze moge Cie tutaj zobaczyc.";
 };                       
 
 FUNC INT Info_Mod_Turgor_Freudenspender_Condition()
@@ -106,10 +106,10 @@ FUNC INT Info_Mod_Turgor_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Turgor_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Turgor_Freudenspender_15_00"); //Ich hätte hier Freudenspender für dich.
-	AI_Output(self, hero, "Info_Mod_Turgor_Freudenspender_27_01"); //Meine Fresse, du willst mich jetzt auch noch ruinieren?! Was passiert denn mit meinem Kraut?
-	AI_Output(hero, self, "Info_Mod_Turgor_Freudenspender_15_02"); //Also nicht?
-	AI_Output(self, hero, "Info_Mod_Turgor_Freudenspender_27_03"); //Scheiße, gib her. (brummelt) Ist einfach viel besser als 'n beschissener Stängel.
+	AI_Output(hero, self, "Info_Mod_Turgor_Freudenspender_15_00"); //Cieszylabym sie, ze moge Cie tutaj zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Turgor_Freudenspender_27_01"); //Zamknij sie, chcesz mnie teraz zrujnowac! Co sie dzieje z moim ziolem?
+	AI_Output(hero, self, "Info_Mod_Turgor_Freudenspender_15_02"); //Nie?
+	AI_Output(self, hero, "Info_Mod_Turgor_Freudenspender_27_03"); //Pospiesz sie, daj mi to. Znacznie lepiej niz pieluszka.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

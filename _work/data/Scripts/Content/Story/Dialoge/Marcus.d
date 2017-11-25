@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Marcus_UntoteOrks (C_INFO)
 	information	= Info_Mod_Marcus_UntoteOrks_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst mich zu Melchior bringen.";
+	description	= "Chce, zebys mnie zabral do Melchior.";
 };
 
 FUNC INT Info_Mod_Marcus_UntoteOrks_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Marcus_UntoteOrks_Condition()
 
 FUNC VOID Info_Mod_Marcus_UntoteOrks_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_00"); //Du sollst mich zu Melchior bringen und seinen Posten übernehmen.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_01"); //Willingham schickt dich, oder? Ich bring dich dorthin, aber vorher musst du mir bei einer Kleinigkeit helfen.
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_02"); //Was springt für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_03"); //Sagen wir 150 Gold. Einverstanden?
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_04"); //Gut, ich werde dir helfen, aber wenn ich glaube, dass ich mehr verdient habe, dann müssen wir neu verhandeln.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_05"); //Damit kann ich leben.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_00"); //Chce, zebys mnie zawiózl do Melchior i przejal jego stanowisko.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_01"); //Czyz nie wyslales? Zabiore cie tam, ale najpierw powinienem pomóc mi w odrobinie czegos.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_02"); //Co to dla mnie jest?
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_03"); //Powiedzmy na przyklad 150 zlota. Uzgodniony?
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks_15_04"); //Dobrze, pomoze wam, ale jesli mysle, ze zasluguje na wiecej, bedziemy musieli renegocjowac.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks_07_05"); //Moge z tym zyc.
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_MARCUS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_MARCUS, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_EIS_UNTOTEORKS, TOPIC_MOD_EIS_MARCUS, "Bevor mich Marcus zu Melchior führt soll ich ihm noch bei einer Kleinigkeit helfen.", "Bevor mich Marcus zu Melchior führt soll ich ihm noch bei einer Kleinigkeit helfen. Er wird mich dorthin führen.");
+	B_LogEntry_More	(TOPIC_MOD_EIS_UNTOTEORKS, TOPIC_MOD_EIS_MARCUS, "Zanim Marcus poprowadzi mnie do Melchior, powinienem mu pomóc.", "Zanim Marcus poprowadzi mnie do Melchior, powinienem mu pomóc. On mnie tam poprowadzi.");
 
 	AI_StopProcessInfos	(self);
 
@@ -59,15 +59,15 @@ FUNC INT Info_Mod_Marcus_UntoteOrks2_Condition()
 
 FUNC VOID Info_Mod_Marcus_UntoteOrks2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_00"); //Was für eine Kleinigkeit soll denn das gewesen sein? Wer war der Kerl?
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_01"); //Ich musste dich hier herbringen. Ich hatte ein, zwei Geschäfte mit den Banditen.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_02"); //Und als du Aslan getötet hast, wollte der Rest der Bande deinen Kopf.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_03"); //Aber ich wusste nicht, dass er auch noch diese Bestien auf uns hetzt.
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_04"); //Und du wusstest nicht, dass sie dich auch töten wollten.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_05"); //Ich werde das wieder gut machen. Ich hoffe, du erzählst Willingham nichts davon.
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_06"); //Ich sehe die Sache als vergessen an, aber falls du mir nochmal Banditen oder Orks auf den Hals hetzt, endest du so wie sie.
-	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_07"); //Nun bring mich aber endlich zu Melchior.
-	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_08"); //Folge mir, sein Posten ist nicht mehr weit weg.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_00"); //Co to bylo male? Kim byl ten facet?
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_01"); //Musialem pana tu przywiezc. Mialem jedna lub dwie sprawy z bandytami.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_02"); //A kiedy zabiles Aslana, reszta gangu chciala Twojej glowy.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_03"); //Ale nie wiedzialem, ze posyla te bestie po nas.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_04"); //I nie wiedziales, ze oni tez chca cie zabic.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_05"); //Zrobie to dla Ciebie. Mam nadzieje, ze nie powiesz o tym Willinghamowi.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_06"); //Mysle, ze o tym zapomniano, ale jesli popedzisz mnie ponownie z bandytami lub orkiestrami, skonczysz jak one.
+	AI_Output(hero, self, "Info_Mod_Marcus_UntoteOrks2_15_07"); //Teraz zabierz mnie do Melchior.
+	AI_Output(self, hero, "Info_Mod_Marcus_UntoteOrks2_07_08"); //Podazaj za mna, jego stanowisko jest niedaleko.
 
 	B_SetTopicStatus	(TOPIC_MOD_EIS_MARCUS, LOG_SUCCESS);
 
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Marcus_Heiltrank (C_INFO)
 	information	= Info_Mod_Marcus_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Marcus_Heiltrank_Condition()
@@ -108,31 +108,31 @@ FUNC VOID Info_Mod_Marcus_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Essenz der Heilung", Info_Mod_Marcus_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Istota uzdrawiania", Info_Mod_Marcus_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Elixier der Heilung", Info_Mod_Marcus_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Marcus_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Extrakt der Heilung", Info_Mod_Marcus_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Marcus_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Essenz der Heilung", Info_Mod_Marcus_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Istota uzdrawiania", Info_Mod_Marcus_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Trank der leichten Heilung", Info_Mod_Marcus_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Marcus_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Leichter Heiltrank", Info_Mod_Marcus_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Marcus_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Marcus_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Marcus_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Marcus_Heiltrank_Health_05);
 	};
 };
 

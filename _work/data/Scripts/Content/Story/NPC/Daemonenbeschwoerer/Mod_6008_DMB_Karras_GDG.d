@@ -1,7 +1,7 @@
 INSTANCE Mod_6008_DMB_Karras_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Karras";
+	name 		= "karawany";
 	guild 		= GIL_OUT;
 	id 			= 6008;
 	voice 		= 36;

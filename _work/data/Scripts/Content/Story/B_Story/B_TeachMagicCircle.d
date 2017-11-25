@@ -14,7 +14,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ falscher Parameter ------
 	if (circle < 1) || (circle > 6)
 	{
-		Print ("*** ERROR: Wrong Parameter ***");
+		Print ("BLEDNOSC: Zly parametr ***");
 		return FALSE;
 	};
 	
@@ -52,7 +52,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Die mir zugängliche magischen Runen sind in Kreise eingeteilt. Einen Spruch mit einem höheren Kreis als ich gemeistert habe, kann ich nicht verwenden."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"Dostepne dla mnie magiczne runy dziela sie na kregi. Nie moge uzyc powiedzenia z wyzszym kólkiem niz ja opanowalem."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
@@ -64,7 +64,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 16)
 		{
 			PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 1. Kreises sind: Licht, Energie stehlen, leichte Wunden heilen und Wolf rufen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 1. Kregi to: Swiatlo, kradziez energii, gojace sie lekkie rany i wolajace wilka.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 6)
@@ -72,13 +72,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 1. Kreises sind: Licht, Feuerpfeil und leichte Wunden heilen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 1. Kregi to: swiatlo, strzalka ognia i lekkie rany goja sie.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 1. Kreises sind: Licht, Blitz, Eispfeil und leichte Wunden heilen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 1. Kregi to: swiatlo, piorun, strzalka lodowa i lekkie rany goja sie.");
 			return TRUE;
 		};
 	};
@@ -93,7 +93,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 16)
 		{
 			PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 2. Kreises sind: Goblinskelett erschaffen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 2. Kregi to: utworzony szkielet Goblina.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 6)
@@ -101,13 +101,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 2. Kreises sind: Feuerball.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 2. Kola to: Fireball.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 2. Kreises sind: Eisball und Eislanze.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 2. Kregi to: Pilka lodowa i lanca lodowa.");
 			return TRUE;
 		};
 	};
@@ -119,20 +119,20 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 3. Kreises sind: mittlere Wunden heilen, Skelett erschaffen, Wächter erschaffen und Beliars Zorn.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 3. Kregi to: leczyc srednie rany, tworzyc szkielet, tworzyc opiekunów i gniew Beliara.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 7)
 		|| (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 3. Kreises sind: mittlere Wunden heilen und Kleiner Feuersturm.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 3. Kregi to: srednio zabliznione rany i mala burza pozarowa.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 3. Kreises sind: mittlere Wunden heilen, Kugelblitz, Geysir, Unwetter und Eisblock.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 3. Kregi to: gojenie sie srednich ran, uderzenie pocisku, gejzer, burza i blokada lodowa.");
 			return TRUE;
 		};
 	};
@@ -144,20 +144,20 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		|| (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 4. Kreises sind: Golem erschaffen, Untote vernichten und Zombie erschaffen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 4. Kregi to: stworzyc Golem, zniszczyc nieumarle i stworzyc zombie.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 7)
 		|| (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 4. Kreises sind: Untote vernichten und Grosser Feuerball.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 4. Kregi to: Zniszczenie nieumarlych i Big Fireball.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 4. Kreises sind: Blitzschlag und Wasserfaust.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Przyslowia 4. Kregi to: uderzenie pioruna i piesc wody.");
 			return TRUE;
 		};
 	};
@@ -168,19 +168,19 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		if (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 5. Kreises sind: Schrei der Toten, Dämon beschwören und schwere Wunden heilen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 5. Kregi to: krzyk zmarlych, wzywanie demonów i gojenie ciezkich ran.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 5. Kreises sind: Grosser Feuersturm und schwere Wunden heilen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 5. Kregi to: Duze burze pozarowe i ciezkie rany goja sie.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 5. Kreises sind: Eiswelle und schwere Wunden heilen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 5. Kregi to: fala lodowa i ciezkie rany goja sie.");
 			return TRUE;
 		};
 	};
@@ -191,19 +191,19 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		if (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 6. Kreises sind: Todeshauch und Armee der Finsternis.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 6. Kregi to: Oddech smierci i wojna ciemnosci.");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 8)
 		{
 			PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 6. Kreises sind: Feuerregen, Monster schrumpfen und Heiliges Geschoss.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 6. Kregi to: deszcz ognia, potwory kurcza sie, pocisk swiety.");
 			return TRUE;
 		}
 		else
 		{
 			PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"Die Sprüche des 6. Kreises sind: Eisregen und Monster schrumpfen.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"Mówienia 6. Kregi to: Lodowy deszcz i potwory kurcza sie.");
 			return TRUE;
 		};
 	};

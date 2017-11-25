@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Bloodwyn_Hi_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Hi_04_00"); //Du? Ich habe gedacht, du wärst tot. Leg dich bloß nicht mit mir an, sonst werde ich dich töten.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Hi_15_01"); //Bleib ruhig, ich bin nicht hier um Ärger zu machen.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Hi_04_02"); //Das hoff ich auch für dich.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Hi_04_00"); //Czy? Myslalem, ze jestes martwy. Nie balaganujcie sie ze mna, ani nie zabiore Was.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Hi_15_01"); //Pozostancie spokojni, nie jestem tu po to, by robic klopoty.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Hi_04_02"); //Mam nadzieje, ze równiez dla Ciebie.
 };
 
 INSTANCE Info_Mod_Bloodwyn_Dieb (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Bloodwyn_Dieb (C_INFO)
 	information	= Info_Mod_Bloodwyn_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei den Erzbaronen wird gestohlen ...";
+	description	= "Barony rudy sa kradzione.....";
 };
 
 FUNC INT Info_Mod_Bloodwyn_Dieb_Condition()
@@ -43,16 +43,16 @@ FUNC INT Info_Mod_Bloodwyn_Dieb_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dieb_15_00"); //Bei den Erzbaronen wird gestohlen und es würde mich nicht wundern, wenn du deine Finger im Spiel hättest.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dieb_04_01"); //Ich dachte schon, du wärst gekommen, um mir wieder Geld zu spenden. Nein, ich habe nichts damit zu tun.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dieb_15_02"); //Ich kann mir nicht helfen, aber ich glaube dir nicht.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dieb_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "Freunden" für dich zu organisieren.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dieb_15_00"); //Rudne barony sa kradzione i nie zdziwilbym sie, gdybys mial palce w grze.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dieb_04_01"); //Myslalem, ze przyjdzie Pan ponownie dac mi pieniadze. Nie, nie mialem z tym nic wspólnego.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dieb_15_02"); //Nie moge sobie pomóc, ale nie wierze.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dieb_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "laski" für dich zu organisieren.
 
 	Mod_PDV_Bloodwyn_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Bloodwyn hat sich nicht anmerken lassen, dass er etwas weiß, aber ich glaube ihm nicht.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Krew nie pozwolila mu na to, ze nic nie wie, ale ja mu nie wierze.");
 };
 
 INSTANCE Info_Mod_Bloodwyn_Frage (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Bloodwyn_Frage (C_INFO)
 	information	= Info_Mod_Bloodwyn_Frage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du eine Ahnung ...";
+	description	= "Masz pomysl na to, aby....";
 };
 
 FUNC INT Info_Mod_Bloodwyn_Frage_Condition()
@@ -78,16 +78,16 @@ FUNC INT Info_Mod_Bloodwyn_Frage_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_Frage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Frage_15_00"); //Hast du eine Ahnung, wer für die Diebstähle bei den Erzbaronen verantwortlich ist?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Frage_04_01"); //Ich dachte schon, du wärst gekommen, um mir wieder Geld zu spenden. Nein, und ich will es auch nicht wissen.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Frage_15_02"); //Ich kann mir nicht helfen, aber ich glaube dir nicht.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Frage_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "Freunden" für dich zu organisieren.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Frage_15_00"); //Czy masz pomysl, kto jest odpowiedzialny za kradzieze przy baronach?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Frage_04_01"); //Myslalem, ze przyjdzie Pan ponownie dac mi pieniadze. Nie, a ja nie chce wiedziec.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Frage_15_02"); //Nie moge sobie pomóc, ale nie wierze.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Frage_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "laski" für dich zu organisieren.
 
 	Mod_PDV_Bloodwyn_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Bloodwyn hat sich nicht anmerken lassen, dass er etwas weiß, aber ich glaube ihm nicht.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Krew nie pozwolila mu na to, ze nic nie wie, ale ja mu nie wierze.");
 };
 
 INSTANCE Info_Mod_Bloodwyn_Dealer (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Bloodwyn_Dealer (C_INFO)
 	information	= Info_Mod_Bloodwyn_Dealer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wüsstest du ...";
+	description	= "Czy wiesz, ze....";
 };
 
 FUNC INT Info_Mod_Bloodwyn_Dealer_Condition()
@@ -113,16 +113,16 @@ FUNC INT Info_Mod_Bloodwyn_Dealer_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_Dealer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dealer_15_00"); //Wüsstest du, woher ich heiße Ware bekomme?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dealer_04_01"); //Ich dachte schon, du wärst gekommen, um mir wieder Geld zu spenden. Nein, das weiß ich nicht.
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dealer_15_02"); //Ich kann mir nicht helfen, aber ich glaube dir nicht.
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dealer_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "Freunden" für dich zu organisieren.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dealer_15_00"); //Czy wiesz, gdzie moge dostac gorace rzeczy?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dealer_04_01"); //Myslalem, ze przyjdzie Pan ponownie dac mi pieniadze. Nie, nie wiem o tym.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_Dealer_15_02"); //Nie moge sobie pomóc, ale nie wierze.
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_Dealer_04_03"); //Dein Problem, Freund. Und jetzt verschwinde, bevor ich auf die Idee kommen könnte, ein Treffen mit ein paar "laski" für dich zu organisieren.
 
 	Mod_PDV_Bloodwyn_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Bloodwyn hat sich nicht anmerken lassen, dass er etwas weiß, aber ich glaube ihm nicht.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Krew nie pozwolila mu na to, ze nic nie wie, ale ja mu nie wierze.");
 };
 
 INSTANCE Info_Mod_Bloodwyn_WieGehts (C_INFO)
@@ -133,7 +133,7 @@ INSTANCE Info_Mod_Bloodwyn_WieGehts (C_INFO)
 	information	= Info_Mod_Bloodwyn_WieGehts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ist es dir ergangen?";
+	description	= "Jak Pan/Pani byl/a?";
 };
 
 FUNC INT Info_Mod_Bloodwyn_WieGehts_Condition()
@@ -143,8 +143,8 @@ FUNC INT Info_Mod_Bloodwyn_WieGehts_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_WieGehts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_WieGehts_15_00"); //Wie ist es dir ergangen?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_WieGehts_04_01"); //Verpiss dich.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_WieGehts_15_00"); //Jak Pan/Pani byl/a?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_WieGehts_04_01"); //Wyciagnij sie stad z fug.
 
 	AI_StopProcessInfos	(self);
 };
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Bloodwyn_AL (C_INFO)
 	information	= Info_Mod_Bloodwyn_AL_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was macht das Alte Lager?";
+	description	= "Jak wyglada stary obóz?";
 };
 
 FUNC INT Info_Mod_Bloodwyn_AL_Condition()
@@ -167,8 +167,8 @@ FUNC INT Info_Mod_Bloodwyn_AL_Condition()
 
 FUNC VOID Info_Mod_Bloodwyn_AL_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bloodwyn_AL_15_00"); //Was macht das Alte Lager?
-	AI_Output(self, hero, "Info_Mod_Bloodwyn_AL_04_01"); //Hau bloß ab.
+	AI_Output(hero, self, "Info_Mod_Bloodwyn_AL_15_00"); //Jak wyglada stary obóz?
+	AI_Output(self, hero, "Info_Mod_Bloodwyn_AL_04_01"); //Wyciagnij sie stad z fug.
 
 	AI_StopProcessInfos	(self);
 };

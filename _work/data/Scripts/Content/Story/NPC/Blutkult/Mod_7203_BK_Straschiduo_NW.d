@@ -1,7 +1,7 @@
 instance Mod_7203_BK_Straschiduo_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Straschiduo";
+	name 		=		"strachiduo";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_OUT;
 	level 		=		60;

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Bodo_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Bodo_MT_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bodo_MT_Hi_36_00"); //Ich habe dich schon erwartet. An mir kommst du nicht vorbei, das schwöre ich.
+	AI_Output(self, hero, "Info_Mod_Bodo_MT_Hi_36_00"); //Oczekiwalem Ciebie. Nie mozesz mnie minac, przysiegam.
 
 	AI_UnequipArmor	(self);
 
@@ -29,6 +29,6 @@ FUNC VOID Info_Mod_Bodo_MT_Hi_Info()
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Alissandro_Hagen))
 	{
-		B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Im Minental hat mich Bodo angegriffen.");
+		B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Bodo zaatakowal mnie w Minentalu.");
 	};
 };

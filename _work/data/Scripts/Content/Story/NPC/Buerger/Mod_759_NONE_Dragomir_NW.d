@@ -1,7 +1,7 @@
 INSTANCE Mod_759_NONE_Dragomir_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dragomir";
+	name 		= "dragomir";
 	guild 		= GIL_NONE;
 	id 			= 759;
 	voice 		= 12;

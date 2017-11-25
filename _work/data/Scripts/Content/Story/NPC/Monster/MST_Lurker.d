@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Lurker(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Lurker";
+	name							=	"czarownik";
 	guild							=	GIL_LURKER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_LURKER;
 	level							=	12;
@@ -127,7 +127,7 @@ INSTANCE Lurker_Young	(Mst_Default_Lurker)
 {
 	level = 8;
 
-	name = "Junger Lurker";
+	name = "Mlody Lurkerker";
 	
 	//----- Attributes ----
 	attribute	[ATR_STRENGTH]		=	40;
@@ -164,7 +164,7 @@ INSTANCE Lurker01	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Swamp	(Mst_Default_Lurker)
 {
-	name	=	"Sumpflurker";
+	name	=	"bagno";
 
 	B_SetVisuals_Lurker_Swamp();
 	Npc_SetToFistMode(self);
@@ -172,7 +172,7 @@ INSTANCE Lurker_Swamp	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Wiese	(Mst_Default_Lurker)
 {
-	name	=	"Wiesenlurker";
+	name	=	"skorpion lakowy";
 
 	B_SetVisuals_Lurker_Wiese();
 	Npc_SetToFistMode(self);
@@ -180,7 +180,7 @@ INSTANCE Lurker_Wiese	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Strand	(Mst_Default_Lurker)
 {
-	name	=	"Strandlurker";
+	name	=	"piasek";
 
 	B_SetVisuals_Lurker_Strand();
 	Npc_SetToFistMode(self);
@@ -188,7 +188,7 @@ INSTANCE Lurker_Strand	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Höhle	(Mst_Default_Lurker)
 {
-	name	=	"Höhlenlurker";
+	name	=	"jaskinia";
 
 	B_SetVisuals_Lurker_Höhle();
 	Npc_SetToFistMode(self);
@@ -196,7 +196,7 @@ INSTANCE Lurker_Höhle	(Mst_Default_Lurker)
 
 INSTANCE Lurker_Wald	(Mst_Default_Lurker)
 {
-	name	=	"Waldlurker";
+	name	=	"woodkarze";
 
 	B_SetVisuals_Lurker_Wald();
 	Npc_SetToFistMode(self);

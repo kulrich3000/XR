@@ -1,7 +1,7 @@
 instance Mod_1043_VLK_Arbeiter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Arbeiter"; 
+	name 		= "robotnicy"; 
 	guild 		= GIL_PAL;
 	id 			= 1043;
 	voice 		= 1;

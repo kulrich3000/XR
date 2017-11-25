@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Gomez_Hi_Condition()
 
 FUNC VOID Info_Mod_Gomez_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_00"); //He, Bürschchen. Ganz langsam, sonst bist du tot.
-	AI_Output(hero, self, "Info_Mod_Gomez_Hi_15_01"); //Gomez?!
-	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_02"); //Ganz recht. Was hast du hier zu suchen?
-	AI_Output(hero, self, "Info_Mod_Gomez_Hi_15_03"); //Äh... Ich will zu einem gewissen Andokai.
-	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_04"); //Das passt ja gut. Genau zu dem werde ich dich nämlich jetzt auch bringen.
+	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_00"); //Hej, buster. Wez to latwo, bo w przeciwnym razie bedziesz martwy.
+	AI_Output(hero, self, "Info_Mod_Gomez_Hi_15_01"); //Zapraszamy!
+	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_02"); //Calkiem tak. Co Pan tutaj robi?
+	AI_Output(hero, self, "Info_Mod_Gomez_Hi_15_03"); //Uh.... Chce zobaczyc pewnego Andokai.
+	AI_Output(self, hero, "Info_Mod_Gomez_Hi_10_04"); //To dobre dopasowanie. Przyczyna tego jest to, do czego teraz cie zabieram.
 
 	AI_StopProcessInfos	(self);
 
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Gomez_Belagerung (C_INFO)
 	information	= Info_Mod_Gomez_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Gomez_Belagerung_Condition()
@@ -47,18 +47,18 @@ FUNC INT Info_Mod_Gomez_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Gomez_Belagerung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_00"); //Hast du was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_01"); //Hmmm ... nichts, was von Belang sein könnte!
-	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_02"); //Was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_03"); //Im Wald vor der Festung sind einige untote Novizen und Magier. Sie verhindern, dass wir die Haupttruppen der Garde Innos' auf dem Plateau erwischen können.
-	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_04"); //Ich will, dass du diese Typen tötest, damit wir endlich zurückschlagen können.
-	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_05"); //Dann werde ich gleich gehen!
-	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_06"); //Töte aber alle Feinde!
-	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_07"); //Ich werde keinen außer Acht lassen.
+	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_00"); //Masz dla mnie cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_01"); //Hmmmmm..... nic, co mogloby miec znaczenie!
+	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_02"); //Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_03"); //W lesie przed twierdza znajduja sie zmarli nowicjusze i magowie. Uniemozliwiaja nam one zlapanie na plaskowyzu glównych oddzialów Innosa.
+	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_04"); //Chce, zebys zabil tych facetów, abysmy wreszcie mogli walczyc z powrotem.
+	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_05"); //Wkrótce wyjde!
+	AI_Output(self, hero, "Info_Mod_Gomez_Belagerung_10_06"); //Zabijaj wszystkich wrogów!
+	AI_Output(hero, self, "Info_Mod_Gomez_Belagerung_15_07"); //Nie zignoruje nikogo.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_DURCHBRUCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_DURCHBRUCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_DURCHBRUCH, "Gomez will, dass ich die untoten Novizen und Magier im Wald vor der Festung erledige.");
+	B_LogEntry	(TOPIC_MOD_BEL_DURCHBRUCH, "Gomez chce, abym wykonywal nieumarlych nowicjuszy i magów w lesie przed twierdza.");
 };
 
 INSTANCE Info_Mod_Gomez_Durchbruch (C_INFO)
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Gomez_Durchbruch (C_INFO)
 	information	= Info_Mod_Gomez_Durchbruch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Feind ist geschwächt.";
+	description	= "Wróg zostaje oslabiony.";
 };
 
 FUNC INT Info_Mod_Gomez_Durchbruch_Condition()
@@ -95,12 +95,12 @@ FUNC INT Info_Mod_Gomez_Durchbruch_Condition()
 
 FUNC VOID Info_Mod_Gomez_Durchbruch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Durchbruch_15_00"); //Der Feind ist geschwächt.
-	AI_Output(self, hero, "Info_Mod_Gomez_Durchbruch_10_01"); //Das hast du gut gemacht. Somit können wir einen Gegenangriff vornehmen. Ich werde Raven davon berichten!
+	AI_Output(hero, self, "Info_Mod_Gomez_Durchbruch_15_00"); //Wróg zostaje oslabiony.
+	AI_Output(self, hero, "Info_Mod_Gomez_Durchbruch_10_01"); //Wykonal pan dobra prace. Mozemy wiec kontratakowac. Powiem Ravenowi o tym!
 
 	B_GivePlayerXP	(600);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_DURCHBRUCH, TOPIC_MOD_BEL_BELAGERUNG, "Ich habe Gomez berichtet, dass die Belagerung zurückgeschlagen wurde.", "Ich habe Gomez geholfen und die Belagerung durchbrochen. Er wird nun Raven Bescheid geben.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_DURCHBRUCH, TOPIC_MOD_BEL_BELAGERUNG, "Powiedzialem Gomezowi, ze oblezenie zostalo cofniete.", "Pomagalem Gomezowi i przelamalem oblezenie. Przekaze teraz Ravenowi.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_DURCHBRUCH, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_Gomez_TruheMage (C_INFO)
 	information	= Info_Mod_Gomez_TruheMage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Scar schickt mich.";
+	description	= "Scar wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Gomez_TruheMage_Condition()
@@ -127,15 +127,15 @@ FUNC INT Info_Mod_Gomez_TruheMage_Condition()
 
 FUNC VOID Info_Mod_Gomez_TruheMage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_00"); //Scar schickt mich.
-	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_01"); //Was ist denn los?
-	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_02"); //Er will neue Waffen herstellen lassen, jedoch ist die Bauanleitung dafür in einer magischen Truhe verschlossen. Die Truhe befindet sich oben auf dem Turm der Feste.
-	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_03"); //Dafür brauchst du einen magischen Dietrich. Er kann einen solchen Bann brechen.
-	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_04"); //Woher bekomme ich so einen Dietrich?
-	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_05"); //Wende dich an Eduard. Er soll dir einen speziellen Dietrich anfertigen, dem ich dann die nötige Kraft verleihen werde.
-	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_06"); //(seufzt) Warum geht das nicht einfacher?
+	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_00"); //Scar wyslal mnie.
+	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_01"); //Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_02"); //Chce produkowac nowa bron, ale instrukcje budowlane sa zamkniete w magicznej klatce piersiowej. Skrzynia znajduje sie na wiezy twierdzy.
+	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_03"); //Potrzebujesz magicznego wyboru zamka. Potrafi zlamac taki zaklecie.
+	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_04"); //Gdzie mam zamek?
+	AI_Output(self, hero, "Info_Mod_Gomez_TruheMage_10_05"); //Zwróc sie do Eduarda. On uczyni cie specjalna dietricha, która dam ci niezbedna sile.
+	AI_Output(hero, self, "Info_Mod_Gomez_TruheMage_15_06"); //Dlaczego nie moze byc to latwiejsze?
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Gomez hat mich zu Eduard geschickt. Der soll mir einen magischen Dietrich herstellen, welchem Gomez dann die nötige Kraft verleihen wird.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Gomez wyslal mnie do Eduarda. Chce, aby uczynil mnie magicznym dietrichiem, którego Gomez da mi sile, której potrzebuje.");
 };
 
 INSTANCE Info_Mod_Gomez_HabDietrich (C_INFO)
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Gomez_HabDietrich (C_INFO)
 	information	= Info_Mod_Gomez_HabDietrich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist der Dietrich.";
+	description	= "Tutaj znajduje sie blokada.";
 };
 
 FUNC INT Info_Mod_Gomez_HabDietrich_Condition()
@@ -160,21 +160,21 @@ FUNC INT Info_Mod_Gomez_HabDietrich_Condition()
 
 FUNC VOID Info_Mod_Gomez_HabDietrich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_HabDietrich_15_00"); //Hier ist der Dietrich.
+	AI_Output(hero, self, "Info_Mod_Gomez_HabDietrich_15_00"); //Tutaj znajduje sie blokada.
 
 	B_GiveInvItems	(hero, self, ItKe_Lockpick_Mage_Unloaded, 1);
 
-	AI_Output(self, hero, "Info_Mod_Gomez_HabDietrich_10_01"); //Gut, Moment.
+	AI_Output(self, hero, "Info_Mod_Gomez_HabDietrich_10_01"); //Wszystkie prawa, trzymac sie.
 
 	AI_PlayAni	(self,"T_PRACTICEMAGIC5");
 
-	AI_Output(self, hero, "Info_Mod_Gomez_HabDietrich_10_02"); //Hier hast du den Dietrich.
+	AI_Output(self, hero, "Info_Mod_Gomez_HabDietrich_10_02"); //Tutaj znajduje sie blokada.
 
 	B_GiveInvItems	(self, hero, ItKe_Lockpick_Mage, 1);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Der Dietrich ist magisch aufgeladen und ich kann jetzt die Truhe knacken.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Blokada jest magicznie naladowana i teraz moge zlamac klatke piersiowa.");
 };
 
 INSTANCE Info_Mod_Gomez_Jagd01 (C_INFO)
@@ -198,36 +198,36 @@ FUNC INT Info_Mod_Gomez_Jagd01_Condition()
 
 FUNC VOID Info_Mod_Gomez_Jagd01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_00"); //Da bist du ja mal wieder.
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_15_01"); //Hast du auf mich gewartet?
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_02"); //Ich wollte dich zu einem kleinen Jagdausflug einladen.
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_15_03"); //Und wieso gerade mich?
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_04"); //Na ja ... Zum besseren Kennenlernen. Damit ich mal sehen kann, was du so draufhast.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_00"); //Tam znów pan jest.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_15_01"); //Czekaliscie na mnie?
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_02"); //Chcialem Panstwa zaprosic na mala wycieczke mysliwska.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_15_03"); //I dlaczego ja?
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_10_04"); //.... Dla lepszego znajomego. Widze wiec, co masz.
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd01);
 
-	Info_AddChoice	(Info_Mod_Gomez_Jagd01, "Vielleicht ein andermal. Ich habe gerade keine Zeit.", Info_Mod_Gomez_Jagd01_B);
-	Info_AddChoice	(Info_Mod_Gomez_Jagd01, "Gern.", Info_Mod_Gomez_Jagd01_A);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd01, "Moze innym razem. Nie mam teraz czasu.", Info_Mod_Gomez_Jagd01_B);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd01, "Wyraznie.", Info_Mod_Gomez_Jagd01_A);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_B_15_00"); //Vielleicht ein andermal. Ich habe gerade keine Zeit.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_B_10_01"); //Sehr schade.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_B_15_00"); //Moze innym razem. Nie mam teraz czasu.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_B_10_01"); //To jest zbyt zle.
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd01);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_A_15_00"); //Gern.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_01"); //Außerhalb der Festung, hinter dem dichten Wald, befindet sich ein riesiges Plateau.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_02"); //Dort findet man immer genug Beute.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_03"); //Sag Bescheid, wenn wir uns auf den Weg machen können.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd01_A_15_00"); //Wyraznie.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_01"); //Na zewnatrz twierdzy, za gestym lasem, znajduje sie ogromny plaskowyz.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_02"); //Zawsze znajdziesz tam mnóstwo butów.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd01_A_10_03"); //Daj mi znac, kiedy jestesmy na naszej drodze.
 
 	Log_CreateTopic	(TOPIC_MOD_GOMEZHORN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GOMEZHORN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GOMEZHORN, "Gomez hat mich zu einer Jagd eingeladen - da konnte ich nicht nein sagen.");
+	B_LogEntry	(TOPIC_MOD_GOMEZHORN, "Gomez zaprosil mnie na polowanie - nie moglem powiedziec 'nie'.");
 	
 	Mod_GomezHorn = 1;
 
@@ -242,7 +242,7 @@ INSTANCE Info_Mod_Gomez_Jagd02 (C_INFO)
 	information	= Info_Mod_Gomez_Jagd02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir können aufbrechen.";
+	description	= "Mozemy opuscic teraz.";
 };
 
 FUNC INT Info_Mod_Gomez_Jagd02_Condition()
@@ -256,7 +256,7 @@ FUNC INT Info_Mod_Gomez_Jagd02_Condition()
 
 FUNC VOID Info_Mod_Gomez_Jagd02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd02_15_00"); //Wir können aufbrechen.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd02_15_00"); //Mozemy opuscic teraz.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Wld_SendTrigger	("AUSENTORBURG");
@@ -287,39 +287,39 @@ FUNC INT Info_Mod_Gomez_Jagd03_Condition()
 
 FUNC VOID Info_Mod_Gomez_Jagd03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_00"); //Jetzt sind wir zwei schön alleine.
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_15_01"); //Auweia...
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_02"); //Es geht um meine Zeit in der Kolonie. Andokai und Xardas haben mir viel davon erzählt, dass ich ein einfacher Buddler im Alten Lager war.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_03"); //Aber ich glaub ihnen nicht. Ich ein Buddler und Arschkriecher? Niemals!
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_04"); //Die beiden verheimlichen mir doch was.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_05"); //Ich habe mitgekriegt, dass du ebenfalls in der Kolonie warst. Also - kanntest du mich schon aus Koloniezeiten?
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_00"); //Teraz wszyscy jestesmy razem.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_15_01"); //A....
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_02"); //Chodzi o mój czas spedzony w kolonii. Andokai i Xardas powiedzieli mi duzo o tym, ze bylem prostym Buddlerem w starym obozie.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_03"); //Ale ja im nie wierze. Ja kopaczka i as-kisser? Nigdy nigdy!
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_04"); //Ukrywali przed mna cos.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_10_05"); //Zauwazylem, ze byles równiez w tej kolonii. Czy znaliscie mnie wiec z czasów kolonii?
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
 
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Nein. Ich habe dich nie getroffen.", Info_Mod_Gomez_Jagd03_B);
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Ja.", Info_Mod_Gomez_Jagd03_A);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Nie. Nigdy cie nie spotkalem.", Info_Mod_Gomez_Jagd03_B);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Tak.", Info_Mod_Gomez_Jagd03_A);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_C()
 {
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_00"); //(ruhig) Na dann, du scheinst mir auch nicht großartig weiterhelfen zu können. Wir sollten uns lieber auf die Jagd konzentrieren, nicht wahr?
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_C_15_01"); //Du sagst es.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_02"); //Was meinst du dazu, wenn wir daraus einen kleinen Wettkampf machen?
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_C_15_03"); //Nur zu.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_04"); //Also, hör zu: Wir beide starten von hier. Jeder hat fünf Minuten Zeit, möglichst viele Hasen zu erlegen.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_05"); //Wer nach Ablauf der Zeit die meisten Hasen getötet hat, ist der Sieger.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_00"); //(Cichutko) No cichy, nie wydaje mi sie wiec, zebys tez bardzo mi pomagal. Powinnismy skupic sie na polowaniu, czyz nie powinnismy?
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_C_15_01"); //Mówisz to.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_02"); //Co mówi pan, ze organizujemy ten konkurs?
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_C_15_03"); //Przejdz do przodu.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_04"); //Sluchajmy wiec, oboje zaczynamy stad. Kazdy ma piec minut na zabicie jak najwiekszej liczby królików.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_C_10_05"); //Zwyciezca jest ten, kto po tym czasie zabil najwiecej królików.
 
-	B_LogEntry	(TOPIC_MOD_GOMEZHORN, "Ich habe einem Wettkampf mit Gomez zugestimmt: Wer es in fünf Minuten schafft, mehr Hasen zu erlegen, ist der Sieger.");
+	B_LogEntry	(TOPIC_MOD_GOMEZHORN, "Zgodzilem sie wziac udzial w zawodach z Gomezem: Jesli uda Ci sie zabic wiecej królików w ciagu pieciu minut, to jestes zwyciezca.");
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
 
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Ich bin bereit.", Info_Mod_Gomez_Jagd03_G);
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Was ist die Belohnung?", Info_Mod_Gomez_Jagd03_F);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Jestem gotowy.", Info_Mod_Gomez_Jagd03_G);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Czym jest nagroda?", Info_Mod_Gomez_Jagd03_F);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_G()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_G_15_00"); //Ich bin bereit.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_G_15_00"); //Jestem gotowy.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
@@ -527,37 +527,37 @@ FUNC VOID Info_Mod_Gomez_Jagd03_G()
 
 FUNC VOID Info_Mod_Gomez_Jagd03_F()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_F_15_00"); //Was ist die Belohnung?
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_F_10_01"); //Hier geht es nur im die Ehre.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_F_15_00"); //Czym jest nagroda?
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_F_10_01"); //To tylko zaszczyt.
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_B_15_00"); //Nein. Ich habe dich nie getroffen.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_B_10_01"); //Wie bedauerlich. Ich werde weitere Nachforschungen betreiben müssen.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_B_15_00"); //Nie. Nigdy cie nie spotkalem.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_B_10_01"); //Jak niefortunnie. Musze zrobic wiecej badan.
 
 	Info_Mod_Gomez_Jagd03_C();
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_A_10_01"); //(atmet tief durch) Dann erzähl mal.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_A_15_00"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_A_10_01"); //Potem opowiedz mi o tym.
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
 
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Du warst jahrelang der mächtigste Mann der Kuppel.", Info_Mod_Gomez_Jagd03_E);
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Xardas und Andokai haben Recht - du warst nur ein Buddler.", Info_Mod_Gomez_Jagd03_D);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Jestes najpotezniejszym czlowiekiem w kopule od lat.", Info_Mod_Gomez_Jagd03_E);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Xardas i Andokai maja racje - byles tylko Buddlerem.", Info_Mod_Gomez_Jagd03_D);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_E()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_E_15_00"); //Du warst jahrelang der mächtigste Mann der Kuppel.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_01"); //Der hat gesessen. Wie konnte es dann so weit kommen?
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_E_15_02"); //Äh ... Das weiß ich auch nicht so genau. Außer dass du gestürzt wurdest.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_03"); //Das ist ja interessant zu erfahren. Da werden noch einige Nachforschungen notwendig sein.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_04"); //Übrigens, falls du noch jagen gehen willst: Tu dir keinen Zwang an. Die Wiesen sind voll mit Getier.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_05"); //Ich habe jetzt keine Zeit mehr dafür.
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_E_15_00"); //Jestes najpotezniejszym czlowiekiem w kopule od lat.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_01"); //Zrobil czas. Wiec jak to bylo za daleko?
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_E_15_02"); //Uh.... Tak naprawde nie wiem. Z wyjatkiem tego, ze zostales obalony.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_03"); //To ciekawe do poznania. Konieczne beda dalsze badania.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_04"); //Nawiasem mówiac, jesli nadal chcesz polowac, nie zmuszaj sie do tego. Laki sa pelne zwierzat.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_E_10_05"); //Nie mam teraz na to czasu.
 
 	B_SetTopicStatus	(TOPIC_MOD_GOMEZHORN, LOG_SUCCESS);
 
@@ -570,9 +570,9 @@ FUNC VOID Info_Mod_Gomez_Jagd03_E()
 
 FUNC VOID Info_Mod_Gomez_Jagd03_D()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_D_15_00"); //Xardas und Andokai haben Recht - du warst nur ein Buddler.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_D_10_01"); //(wütend) Und ich glaube es trotzdem nicht. Vielleicht hatte ich Aktivitäten, von denen du nichts mitbekommen hast.
-	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_D_10_02"); //Aber ich war nicht nur ein stinknormaler Buddler!
+	AI_Output(hero, self, "Info_Mod_Gomez_Jagd03_D_15_00"); //Xardas i Andokai maja racje - byles tylko Buddlerem.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_D_10_01"); //I nadal w to nie wierze. Moze mialem jakies zajecia, których nawet nie zauwazyles.
+	AI_Output(self, hero, "Info_Mod_Gomez_Jagd03_D_10_02"); //Ale nie bylem zwyklym Buddlerkiem!
 
 	Info_Mod_Gomez_Jagd03_C();
 };
@@ -603,17 +603,17 @@ FUNC VOID Info_Mod_Gomez_Jagd04_Info()
 
 	if (Mod_Gomez_HasenKiller >= Mod_Gomez_HasenKiller2)
 	{
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_00"); //(stichelt) Na, wer ist jetzt der Beste?
-		AI_Output(hero, self, "Info_Mod_Gomez_Jagd04_15_01"); //Du hast nur Glück gehabt.
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_02"); //(höhnisch) Ja, glaub das nur. Aber ich weiß es besser.
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_03"); //Ich gehe jetzt wieder zurück in die Festung und genehmige mir ein kühles Bier.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_00"); //Kto jest teraz najlepszy?
+		AI_Output(hero, self, "Info_Mod_Gomez_Jagd04_15_01"); //Po prostu miales szczescie.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_02"); //Tak, wierzcie. Ale wiem lepiej.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_03"); //Wracam do twierdzy i mam zimne piwo.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_04"); //Heute war das Jagdglück nicht auf meiner Seite.
-		AI_Output(hero, self, "Info_Mod_Gomez_Jagd04_15_05"); //Muss wohl so sein.
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_06"); //Ich werde mir schon was einfallen lassen bis zum nächsten Mal.
-		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_07"); //Aber jetzt gehe ich erst mal wieder zurück in die Festung und genehmige mir ein kühles Bier.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_04"); //Dzis nie mialem szczescia do polowania.
+		AI_Output(hero, self, "Info_Mod_Gomez_Jagd04_15_05"); //Musi tak byc.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_06"); //Do nastepnego razu pomysle o czyms.
+		AI_Output(self, hero, "Info_Mod_Gomez_Jagd04_10_07"); //Ale teraz wracam do twierdzy i mam zimne piwo.
 
 		B_GivePlayerXP	(250);
 	};
@@ -633,7 +633,7 @@ INSTANCE Info_Mod_Gomez_DuHier (C_INFO)
 	information	= Info_Mod_Gomez_DuHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hier? Wie bist du hierher gekommen?";
+	description	= "Ty tutaj? Jak sie tu dostales?";
 };
 
 FUNC INT Info_Mod_Gomez_DuHier_Condition()
@@ -643,18 +643,18 @@ FUNC INT Info_Mod_Gomez_DuHier_Condition()
 
 FUNC VOID Info_Mod_Gomez_DuHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_DuHier_15_00"); //Du hier? Wie bist du hierher gekommen?
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_01"); //Willst du die ganze Geschichte wissen? Die ist ziemlich kompliziert.
-	AI_Output(hero, self, "Info_Mod_Gomez_DuHier_15_02"); //Klar!
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_03"); //Sie beginnt noch in Myrtana, in meiner Zeit als Diplomat König Rhobars.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_04"); //Alles hat damit angefangen, dass der König meine Zusammenarbeit mit den Orks aufgedeckt hat, bei denen ich mir ein kleines Zubrot verdient hatte.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_05"); //Oh ja, das war ein Spaß - um die enttäuschte Fresse des alten Sacks zu sehen, hat es sich schon gelohnt.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_06"); //Zur Strafe wurde ich natürlich in die Barriere geworfen, wie es damals üblich war.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_07"); //Zu anderen Zeiten hätte mich der Strick erwartet, aber das Erz war dem König wichtiger als mein Tod.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_08"); //Und wie wir alle wussten, war die Barriere nicht dafür errichtet worden, jemals wieder aufgehoben zu werden, deshalb konnten alle Verbrecher ruhigen Gewissens reingesteckt werden.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_09"); //An die Zeit in der Kuppel kann ich mich kaum erinnern.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_10"); //Ich weiß noch, dass am Fuße des Bergs mit der Austauschstelle ein kleines Lager errichtet worden war, wo sich die anderen Gefangenen aufhielten.
-	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_11"); //Scheint eine harte Zeit gewesen zu sein - zu Bewusstsein gekommen bin ich erst wieder hier, unter Xardas' Augen.
+	AI_Output(hero, self, "Info_Mod_Gomez_DuHier_15_00"); //Ty tutaj? Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_01"); //Chcesz poznac cala historie? To dosc skomplikowane.
+	AI_Output(hero, self, "Info_Mod_Gomez_DuHier_15_02"); //Jasne!
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_03"); //Zaczyna sie w Myrtanie, w moim czasie jako dyplomata króla Rhobara.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_04"); //Wszystko zaczelo sie od odkrycia przez króla mojej wspólpracy z orkami, gdzie zarobilem troche dodatkowego chleba.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_05"); //O tak, to byla zabawa - zeby zobaczyc rozczarowana twarz starego worka, warto bylo.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_06"); //Jako kara, zostalem oczywiscie wrzucony do zapory, jak to bylo zwyczajowo w tamtym czasie.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_07"); //Innego razu lina by mnie oczekiwala, ale ruda byla dla króla wazniejsza niz moja smierc.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_08"); //I jak wszyscy wiedzielismy, bariera nie zostala na zawsze zbudowana, aby mogla zostac ponownie zniesiona, dzieki czemu wszyscy przestepcy mogliby byc wrzuceni do srodka z czystym sumieniem.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_09"); //Trudno mi zapamietac czas w kopule.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_10"); //Pamietam, ze u podnóza góry zostal zalozony maly obóz z punktem wymiany, w którym znajdowali sie inni wiezniowie.
+	AI_Output(self, hero, "Info_Mod_Gomez_DuHier_10_11"); //To byl trudny czas - po raz pierwszy przyszedlem tutaj do swiadomosci, pod oczami Xardasa.
 };
 
 INSTANCE Info_Mod_Gomez_Angebot (C_INFO)
@@ -680,16 +680,16 @@ FUNC VOID Info_Mod_Gomez_Angebot_Info()
 {
 	AI_UnequipWeapons	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_00"); //Hey, was willst du?
-	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_01"); //Ich komme vom Alten Lager und will Raven ein Angebot machen.
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_02"); //Altes Lager? Wieso versetzt mir das wieder einen Stich? Verdammt, wenn ich mich bloß erinnern könnte, was war, bevor mich dieser alte Hexer zusammen mit Raven zu den Dämonenrittern geholt hat ...
-	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_03"); //Glaub mir, es ist besser, wenn du dich nicht erinnerst.
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_04"); //Jetzt wo ich darüber nachdenke, glaube ich, dass ich auch deine Fresse schon mal gesehen habe und jetzt wo ich sie wieder sehe, habe ich so das Bedürfnis, meine Axt darin zu versenken.
-	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_05"); //Es ist wohl besser, wenn du mich jetzt vorbeilässt, ich übermittle ein Anliegen der Erzbarone an Raven.
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_06"); //Erzbarone sagst du? Auch das habe ich schon gehört. Mit der Zeit kommen meine Erinnerungen ziemlich vage wieder. Die ersten Tage im Minental ... dann regierte ich ein Lager und Raven mit mir ...
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_07"); //Da war noch ein anderes Lager, gegen das wir kämpften. Dann schlug mich jemand nieder und ich wachte ohne Erinnerungen bei Xardas auf. Wenn ich diesen Hund in die Finger kriege, der mich damals ...
-	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_08"); //(nervös) Also, ich muss jetzt zu Raven, ich ...
-	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_09"); //(wütend) Nirgends musst du hin! Es war ein Fehler, mir noch mal unter die Augen zu treten! An dich habe ich mein Lager und mein Gedächtnis verloren, dafür verlierst du jetzt deinen Kopf!
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_00"); //Hej, czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_01"); //Jestem z Starego Obozu i chce, aby oferta Raven byla dla mnie bardzo atrakcyjna.
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_02"); //Stary obóz? Dlaczego to znów mi sie ukluwa? Damn, gdybym po prostu pamietal, co bylo przed tym starym czarownica i Ravenem przyprowadzili mnie do Rycerzy Demonicznych.....
+	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_03"); //Uwierzcie mi, lepiej, jesli nie pamietasz.
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_04"); //Teraz, gdy mysle o tym, wydaje mi sie, ze widzialem twarz, a teraz, kiedy znów ja widze, czuje potrzebe zanurzenia w niej siekiery.
+	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_05"); //Mysle, ze lepiej, jesli pozwolisz mi przejsc obok, wysylam prosbe z Arcybarów do Ravena.
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_06"); //Powiedziales, ze Er Barone? To tez slyszalem. Z czasem moje wspomnienia powracaja dosc niejasne. Pierwsze dni w Minentalu.... wtedy prowadzilem obóz, a Raven rzadzil ze mna.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_07"); //Byl jeszcze jeden obóz, z którym walczylismy. Potem ktos mnie przewrócil i obudzilem sie z Xardasem bez wspomnien. Jesli moge dostac rece na ten pies, który jest....
+	AI_Output(hero, self, "Info_Mod_Gomez_Angebot_15_08"); //Nerwowy) No cóz, musze isc teraz do Raven' s, I....
+	AI_Output(self, hero, "Info_Mod_Gomez_Angebot_10_09"); //Nigdzie nie trzeba isc! Ponowne spojrzenie w oko bylo bledem! Stracilem dla ciebie mój obóz i pamiec, ale teraz tracisz glowe!
 
 	AI_StopProcessInfos	(self);
 
@@ -719,7 +719,7 @@ FUNC VOID Info_Mod_Gomez_AtAL_Info()
 {
 	AI_TurnToNpc	(self, Mod_7066_DMR_Daemonenritter_MT);
 
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL_10_00"); //Jemand, den ich mir anhören möchte, und jetzt halt deinen Mund, wenn ich dir nicht die Zunge rausschneiden soll.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL_10_00"); //Ktos, kogo chce uslyszec, a teraz zamknal sie, jesli nie chcesz, abym wyciela jezyk.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -745,7 +745,7 @@ FUNC INT Info_Mod_Gomez_AtAL2_Condition()
 
 FUNC VOID Info_Mod_Gomez_AtAL2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_10_00"); //Also, junger Krieger, sag, was du zu sagen hast und mögen dir die Götter gnädig sein, wenn es nicht wirklich wichtig ist.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_10_00"); //Tak wiec, mlody wojownik, powiedz co masz do powiedzenia i pozwól bogom miec milosierdzie na ciebie, jesli nie jest to naprawde wazne.
 };
 
 INSTANCE Info_Mod_Gomez_AtAL2_A (C_INFO)
@@ -756,7 +756,7 @@ INSTANCE Info_Mod_Gomez_AtAL2_A (C_INFO)
 	information	= Info_Mod_Gomez_AtAL2_A_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Wachposten außerhalb des Lagers werden angegriffen.";
+	description	= "Strazników poza obozem atakuje sie.";
 };
 
 FUNC INT Info_Mod_Gomez_AtAL2_A_Condition()
@@ -770,8 +770,8 @@ FUNC INT Info_Mod_Gomez_AtAL2_A_Condition()
 
 FUNC VOID Info_Mod_Gomez_AtAL2_A_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_A_15_00"); //Die Wachposten außerhalb des Lagers werden angegriffen. Wir brauchen dich persönlich.
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_A_10_01"); //wenn diese Versager nicht alleine damit fertig werden, ist es ihre Schuld ... solange im Lager niemand angreift kann mir das egal sein. Noch was?
+	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_A_15_00"); //Strazników poza obozem atakuje sie. Potrzebujemy Cie osobiscie.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_A_10_01"); //jesli ci przegrani nie sa w stanie poradzic sobie z tym sami, to ich wina.... dopóki nikt nie zaatakuje w obozie, nie obchodzi mnie to. Co jeszcze innego?
 };
 
 INSTANCE Info_Mod_Gomez_AtAL2_B (C_INFO)
@@ -782,7 +782,7 @@ INSTANCE Info_Mod_Gomez_AtAL2_B (C_INFO)
 	information	= Info_Mod_Gomez_AtAL2_B_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Auf einem der Hochsitze außerhalb des Lagers spielt einer unserer Leute verrückt und schießt auf sie.";
+	description	= "Na jednym z wysokich siedzisk poza obozem, jeden z naszych ludzi szalal i strzelal do nich.";
 };
 
 FUNC INT Info_Mod_Gomez_AtAL2_B_Condition()
@@ -795,10 +795,10 @@ FUNC INT Info_Mod_Gomez_AtAL2_B_Condition()
 
 FUNC VOID Info_Mod_Gomez_AtAL2_B_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_B_15_00"); //Auf einem der Hochsitze außerhalb des Lagers spielt einer unserer Leute verrückt und schießt auf sie. Er ist zu stark für uns, wir brauchen dich persönlich.
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_B_10_01"); //Ein Verräter? Das macht mir Sorgen. Ich denke, ich sollte mich um den Kerl kümmern bevor er noch Verluste innerhalb des Lagers verursacht.
+	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_B_15_00"); //Na jednym z wysokich siedzisk poza obozem, jeden z naszych ludzi szalal i strzelal do nich. On jest dla nas zbyt silny, potrzebujemy Cie osobiscie.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_B_10_01"); //zdrajca? To mnie martwi. Mysle, ze powinienem zadbac o tego faceta, zanim spowoduje on straty w obozie.
 
-	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Gomez verlässt das Lager ... nun wüssen wir ihn erledigen!");
+	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Gomez opuszcza obóz..... Teraz wiedzielismy, ze on nie zyje!");
 
 	AI_StopProcessInfos	(self);
 
@@ -822,7 +822,7 @@ INSTANCE Info_Mod_Gomez_AtAL2_C (C_INFO)
 	information	= Info_Mod_Gomez_AtAL2_C_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alissandro will verhandeln.";
+	description	= "Alissandro chce negocjowac.";
 };
 
 FUNC INT Info_Mod_Gomez_AtAL2_C_Condition()
@@ -836,8 +836,8 @@ FUNC INT Info_Mod_Gomez_AtAL2_C_Condition()
 
 FUNC VOID Info_Mod_Gomez_AtAL2_C_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_C_15_00"); //Alissandro will verhandeln. Allerdings besteht er darauf dich persönlich und ohne bewaffnete Begleitung zu sehen.
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_C_10_01"); //Hält der alte Bastard mich für dumm? Das stinkt nach einer Falle. Verhandlungen werden nach meinen Bedingungen geführt.
+	AI_Output(hero, self, "Info_Mod_Gomez_AtAL2_C_15_00"); //Alissandro chce negocjowac. Nalega jednak, aby widziec cie osobiscie i bez uzbrojonej eskorty.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL2_C_10_01"); //Czy ten stary bastard mysle, ze jestem glupi? Zapach niczym pulapka. Negocjacje prowadzone sa na moich warunkach.
 };
 
 INSTANCE Info_Mod_Gomez_AtAL3 (C_INFO)
@@ -863,8 +863,8 @@ FUNC VOID Info_Mod_Gomez_AtAL3_Info()
 {
 	AI_TurnToNpc	(self, Mod_520_DMR_Raven_MT);
 
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL3_10_00"); //Was sollte das? Ihr wollt mir das Lager wieder nehmen? Du hast mir nicht's zu befehlen, Raven.
-	AI_Output(self, hero, "Info_Mod_Gomez_AtAL3_10_01"); //Früher war ich es, der dir die Befehle gab, und nur weil du Xardas in den Arsch kriechst, hast du nicht das Recht, solche Dinge zu bestimmen.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL3_10_00"); //O co to bylo chodzilo? Chcesz odebrac mój obóz? Nie musisz mnie zamawiac, Raven.
+	AI_Output(self, hero, "Info_Mod_Gomez_AtAL3_10_01"); //Kiedys bylem tym, który wydal ci zamówienia i tylko dlatego, ze ssales do Xardas, nie masz prawa decydowac o takich sprawach.
 	
 	AI_StopProcessInfos	(self);
 };

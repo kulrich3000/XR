@@ -2,7 +2,7 @@ instance Mod_7721_OUT_Rank_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Rank";
+	name =							"szczebel";
 	Npctype =				Npctype_Main;
 	guild =							GIL_OUT;      
 	level =							3;

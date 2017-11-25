@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis1	(C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den ersten Kreis der Magie.";
+	description	= "Naucz mnie pierwszego kola magii.";
 };
 FUNC INT Info_Mod_Karras_GDG_Kreis1_Condition()
 {	
@@ -23,12 +23,12 @@ FUNC INT Info_Mod_Karras_GDG_Kreis1_Condition()
 };
 FUNC VOID Info_Mod_Karras_GDG_Kreis1_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis1_15_00"); //Lehre mich den ersten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis1_15_00"); //Naucz mnie pierwszego kola magii.
 	
 	if B_TeachMagicCircle (self, hero, 1)
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis1_36_01"); //Der erste Kreis erlaubt es dir, Runen, die du erschaffen hast, anzuwenden.
-		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis1_36_02"); //Du kannst jetzt die Formeln der Zaubersprüche lernen, um deine eigenen Runen herzustellen.
+		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis1_36_01"); //Pierwsze kolo pozwala na uzycie utworzonych przez Ciebie run.
+		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis1_36_02"); //Mozesz teraz nauczyc sie formul zaklec, aby tworzyc wlasne runy.
 
 		Mod_MagieKreis = 1;
 	};
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis2		(C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den zweiten Kreis der Magie.";
+	description	= "Naucz mnie drugiego kola magii.";
 };
 FUNC INT Info_Mod_Karras_GDG_Kreis2_Condition ()
 {	
@@ -60,20 +60,20 @@ FUNC INT Info_Mod_Karras_GDG_Kreis2_Condition ()
 };
 FUNC VOID Info_Mod_Karras_GDG_Kreis2_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis2_15_00"); //Lehre mich den zweiten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis2_15_00"); //Naucz mnie drugiego kola magii.
 	
 	if (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self, hero, 2)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis2_36_01"); //Tritt nun in den zweiten Kreis und lerne, noch mächtigere Zauber zu wirken.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis2_36_01"); //Wejdz do drugiego kola i naucz sie rzucac jeszcze mocniejsze czary.
 
 			Mod_MagieKreis = 2;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis2_36_02"); //Die Zeit ist noch nicht gekommen.
+		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis2_36_02"); //Nadszedl jeszcze czas.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis3		(C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den dritten Kreis der Magie.";
+	description	= "Naucz mnie trzeciego kola magii.";
 };
 FUNC INT Info_Mod_Karras_GDG_Kreis3_Condition ()
 {	
@@ -100,20 +100,20 @@ FUNC INT Info_Mod_Karras_GDG_Kreis3_Condition ()
 };
 FUNC VOID Info_Mod_Karras_GDG_Kreis3_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis3_15_00"); //Lehre mich den dritten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis3_15_00"); //Naucz mnie trzeciego kola magii.
 	
 	if (Kapitel >= 3)
 	{
 		if B_TeachMagicCircle (self, hero, 3)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis3_36_01"); //Ja, die Zeit ist gekommen. Tritt ein in den dritten Kreis der Magie. Neue Zauber erwarten dich.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis3_36_01"); //Tak, nadszedl czas. Wprowadz trzecie kolo magii. Czekaja na Ciebie nowe zaklecia.
 
 			Mod_MagieKreis = 3;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis3_36_02"); //Es ist noch nicht an der Zeit für dich, den dritten Kreis zu lernen.
+		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis3_36_02"); //Nie nadszedl jeszcze czas, aby nauczyc sie trzeciego kola.
 	};
 };		
 
@@ -125,7 +125,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis4 (C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den vierten Kreis der Magie lernen.";
+	description	= "Chce poznac czwarte kolo magii.";
 };
 
 FUNC INT Info_Mod_Karras_GDG_Kreis4_Condition()
@@ -139,20 +139,20 @@ FUNC INT Info_Mod_Karras_GDG_Kreis4_Condition()
 };
 FUNC VOID Info_Mod_Karras_GDG_Kreis4_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis4_15_00"); //Ich will den vierten Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis4_15_00"); //Chce poznac czwarte kolo magii.
 	
 	if (Kapitel >= 4)
 	{
 		if B_TeachMagicCircle (self,hero, 4)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis4_36_01"); //Gut. Alle Zeichen sind erfüllt. Tritt nun ein in den vierten Kreis, auf dass dir die Macht der neuen Zauber inne ist.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis4_36_01"); //Dobre. Wszystkie znaki sa wypelnione. Teraz wejdz w czwarte kolo, abys mial moc nowych zaklec.
 
 			Mod_MagieKreis = 4;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis4_36_02"); //Noch ist es nicht soweit.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis4_36_02"); //Jeszcze nie.
 	};
 };
 
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis5 (C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den fünften Kreis der Magie lernen.";
+	description	= "Chce poznac piate kolo magii.";
 };
 
 FUNC INT Info_Mod_Karras_GDG_Kreis5_Condition()
@@ -178,20 +178,20 @@ FUNC INT Info_Mod_Karras_GDG_Kreis5_Condition()
 
 FUNC VOID Info_Mod_Karras_GDG_Kreis5_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis5_15_00"); //Ich will den fünften Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis5_15_00"); //Chce poznac piate kolo magii.
 	
 	if (Kapitel >= 5)
 	{
 		if B_TeachMagicCircle (self,hero, 5)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis5_36_01"); //Dann tritt nun ein in den fünften Kreis der Magie. Du wirst nun mächtigere Zauber als je zuvor beherrschen.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis5_36_01"); //Nastepnie dolacz do piatego kola magii. Teraz opanujesz mocniejsze czary niz kiedykolwiek wczesniej.
 
 			Mod_MagieKreis = 5;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis5_36_02"); //Die Zeit ist noch nicht reif dafür.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis5_36_02"); //Nadszedl jeszcze czas.
 	};
 };
 
@@ -203,7 +203,7 @@ INSTANCE Info_Mod_Karras_GDG_Kreis6	(C_INFO)
 	information	= Info_Mod_Karras_GDG_Kreis6_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den letzten Kreis der Magie.";
+	description	= "Naucz mnie ostatniego kola magii.";
 };
 
 FUNC INT Info_Mod_Karras_GDG_Kreis6_Condition()
@@ -217,23 +217,23 @@ FUNC INT Info_Mod_Karras_GDG_Kreis6_Condition()
 
 FUNC VOID Info_Mod_Karras_GDG_Kreis6_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis6_15_00"); //Lehre mich den letzten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_GDG_Kreis6_15_00"); //Naucz mnie ostatniego kola magii.
 	
 	if (Kapitel >= 6)
 	{
 		if B_TeachMagicCircle (self,hero, 6)  
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_01"); //Viel Zeit ist vergangen, seit du den Bund mit Beliar eingegangen bist. Viel ist geschehen und wir finden keine Ruhe.
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_02"); //Du bist der Erwählte Beliars. Und als solcher wirst du alle Kraft brauchen, um deine Kämpfe zu bestehen.
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_03"); //Ich weihe dich nun, Erwählter. Du trittst ein in den sechsten Kreis.
-			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_04"); //Die Zauberformeln des letzten Kreises kannst du nun von Andokai lernen, wenn du es wünscht.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_01"); //Minelo wiele czasu od zawarcia przymierza z Beliarem. Wiele sie wydarzylo i nie znajdujemy pokoju.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_02"); //Jestes wybranym Beliarem. W ten sposób bedziesz potrzebowal calej sily, aby przetrwac swoje walki.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_03"); //Poswiecam pana teraz, prosze pania wybrac. Wprowadzasz szóste kolo.
+			AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_04"); //Mozesz teraz nauczyc sie zaklec ostatniego kola z Andokai, jesli chcesz.
 
 			Mod_MagieKreis = 6;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_05"); //Noch ist es nicht an der Zeit dafür. Wenn du ein Stück weiter auf dem Weg gegangen bist, den Beliar dir zeigt, dann werde ich dich unterweisen.
+		AI_Output (self, hero, "Info_Mod_Karras_GDG_Kreis6_36_05"); //To jeszcze nie czas. Jesli poszedles troche dalej po drodze Beliar cie pokaze, a ja cie poucze.
 	};
 };
 

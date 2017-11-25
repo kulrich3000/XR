@@ -18,20 +18,20 @@ FUNC INT Info_Mod_Makanius_Hi_Condition()
 
 FUNC VOID Info_Mod_Makanius_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_00"); //Endlich bist du aufgewacht. Du kannst froh sein, dass du noch lebst.
-	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_01"); //Wer bist du und was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_02"); //Ich bin Makanius, ein Heilungsmagier. Du hattest Glück. Als du vom Turm gestürzt bist, sind wir gerade ins Lager gekommen. Wir konnte deinen Sturz bremsen und deine Wunden heilen.
-	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_03"); //Ich muss dringend Thorus sprechen. Ich habe ihm Wichtiges zu berichten.
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_04"); //Das ist momentan nicht möglich. Thorus wurde von seinem Verwalter Bartholo gerufen. Anscheinend haben sich einige Buddler aufgelehnt.
-	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_05"); //(aufgebracht) Wo sind sie hingegangen?
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_06"); //Sie sind zu der Molerathöhle nahe der Brücke gegangen. Anscheinend haben sich die Buddler dort versammelt.
-	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_07"); //Ich muss da sofort hin., Bartholo ist ein Verräter.
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_08"); //Was? Ich werde mitkommen. Alleine wird es dir in deiner Verfassung kaum möglich sein, dich einem Kampf zu stellen.
-	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_09"); //Folge mir, ich bring dich zur Höhle.
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_00"); //W koncu sie pan obudzil. Masz szczescie zyc.
+	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_01"); //Kim jestes i co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_02"); //Jestem Makaniusem, magikiem uzdrawiajacym. Miales szczescie. Kiedy spadles z wiezy, wlasnie weszlismy do obozu. Mozemy spowolnic Twój upadek i zaleczyc Twoje rany.
+	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_03"); //Musze pilnie zobaczyc Thorusa. Musze mu powiedziec wazne rzeczy.
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_04"); //Obecnie nie jest to mozliwe. Thorus zostal wezwany przez jego meza Bartholo. Widocznie niektórzy buddysci zbuntowali sie.
+	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_05"); //Gdzie sie udali?
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_06"); //Udali sie do Molerathöhle kolo mostu. Widocznie zgromadzili sie tam Buddlerzy.
+	AI_Output(hero, self, "Info_Mod_Makanius_Hi_15_07"); //Musze to osiagnac juz teraz. Bartholo jest zdrajca.
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_08"); //Co? Pójde z Toba. W twoim stanie samotnie, nie bedziesz w stanie stawic czola walce.
+	AI_Output(self, hero, "Info_Mod_Makanius_Hi_07_09"); //Podazaj za mna, zabiore cie do jaskini.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Der Heilungsmagier Makanius hat mir das Leben gerettet. Er hat mir auch berichtet, dass Bartholo Thorus zur Molerathöhle nahe der Brücke gelockt hat. Ich muss sofort dorthin und Thorus warnen.");
+	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Uzdrawiajacy magik Makanius uratowal mi zycie. Powiedzial mi równiez, ze Bartholo Thorus zwabil Thorusa do Molerathöhle w poblizu mostu. Musze tam od razu pojechac i ostrzec Thorusa.");
 
 	hero.flags = 0;
 
@@ -61,7 +61,7 @@ FUNC INT Info_Mod_Makanius_Falle_Condition()
 
 FUNC VOID Info_Mod_Makanius_Falle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_Falle_07_00"); //Das sieht nicht gut aus.
+	AI_Output(self, hero, "Info_Mod_Makanius_Falle_07_00"); //Nie wyglada to dobrze.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 
@@ -95,7 +95,7 @@ FUNC INT Info_Mod_Makanius_ThorusTot_Condition()
 
 FUNC VOID Info_Mod_Makanius_ThorusTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_ThorusTot_07_00"); //Für Thorus konnte ich nichts mehr tun, doch Alissandro scheint noch zu leben.
+	AI_Output(self, hero, "Info_Mod_Makanius_ThorusTot_07_00"); //Nie moglem nic zrobic dla Thorusa, ale Alissandro wydaje mi sie byc zywy.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
@@ -125,7 +125,7 @@ FUNC INT Info_Mod_Makanius_AL_Condition()
 
 FUNC VOID Info_Mod_Makanius_AL_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_AL_07_00"); //Ich werde zum Lager zurück gehen und vorgeben, mich Bartholo anzuschließen. Die anderen Heilungsmagier werden mir sicher folgen.
+	AI_Output(self, hero, "Info_Mod_Makanius_AL_07_00"); //Wróce do obozu i udaje, ze dolacze do Bartholo. Inne magowie uzdrawiajacy z pewnoscia beda mnie nasladowac.
 	
 	AI_StopProcessInfos	(self);
 
@@ -154,8 +154,8 @@ FUNC INT Info_Mod_Makanius_KillMission_Condition()
 
 FUNC VOID Info_Mod_Makanius_KillMission_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_KillMission_07_00"); //Schön dich zu sehen. Leider kannst du dich im Lager nicht frei bewegen, weswegen du nur im Haus der Magier sicher bist.
-	AI_Output(self, hero, "Info_Mod_Makanius_KillMission_07_01"); //Wir können dir bei deinem Auftrag nicht helfen. Für Fragen wendest du dich an Jackal, er hält bei uns Wache.
+	AI_Output(self, hero, "Info_Mod_Makanius_KillMission_07_00"); //Dobrze jest cie zobaczyc. Niestety, nie mozesz poruszac sie swobodnie w obozie, dlatego jestes bezpieczny tylko w Domu Magika.
+	AI_Output(self, hero, "Info_Mod_Makanius_KillMission_07_01"); //Nie mozemy Ci pomóc w wykonaniu zadania. Jesli masz jakies pytania, skontaktuj sie z Jackalem, on czuwa nad nami.
 	
 	B_StartOtherRoutine	(self, "ALTESLAGER");
 };
@@ -180,7 +180,7 @@ FUNC INT Info_Mod_Makanius_Eroberung_04_Condition()
 
 FUNC VOID Info_Mod_Makanius_Eroberung_04_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_Eroberung_04_07_00"); //Wenn ihr im inneren Teil seid, gebe ich das Zeichen dafür, dass die Tore von den Spionen im alten Lager geöffnet werden.
+	AI_Output(self, hero, "Info_Mod_Makanius_Eroberung_04_07_00"); //Jesli znajdziecie sie w wewnetrznej czesci, to zasygnalizuje, ze bramy zostana otwarte przez szpiegów w starym obozie.
 
 	AI_StopProcessInfos	(self);
 };
@@ -205,7 +205,7 @@ FUNC INT Info_Mod_Makanius_Eroberung_09_Condition()
 
 FUNC VOID Info_Mod_Makanius_Eroberung_09_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_Eroberung_09_07_00"); //Einige von uns begleiten und unterstützen euch, während die anderen der königlichen Garde und den Banditen helfen.
+	AI_Output(self, hero, "Info_Mod_Makanius_Eroberung_09_07_00"); //Jedni z nas towarzysza i wspieraja cie, inni pomagaja straznikom królewskim i bandytom.
 
 	AI_StopProcessInfos	(self);
 };
@@ -230,9 +230,9 @@ FUNC INT Info_Mod_Makanius_BartholosFlucht_Condition()
 
 FUNC VOID Info_Mod_Makanius_BartholosFlucht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_BartholosFlucht_07_00"); //Bartholo ist in die Kerker gelaufen. Wir müssen ihm folgen.
+	AI_Output(self, hero, "Info_Mod_Makanius_BartholosFlucht_07_00"); //Bartholo udal sie do lochów. Musimy podazac za nim.
 	
-	B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Makanius sagt, Bartholo floh in die Kerker. Wir müssen ihn verfolgen.");
+	B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Makanius mówi, ze Bartholo uciekl do lochów. Musimy go sledzic.");
 
 	AI_StopProcessInfos	(self);
 
@@ -260,22 +260,22 @@ FUNC INT Info_Mod_Makanius_Lockvogel_Condition()
 
 FUNC VOID Info_Mod_Makanius_Lockvogel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_07_00"); //(nervös) Oh, du bist da ...
-	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_15_01"); //Was soll dieser unsichere Tonfall? Alissandro meinte, du hättest einen Plan.
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_07_02"); //Ja, allerdings ... Er ist nur ziemlich unangenehm.
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_07_00"); //Och, tam jestes....
+	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_15_01"); //Jaki jest ten niepewny ton glosu? Alissandro powiedzial, ze ma pan plan.
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_07_02"); //Tak, rzeczywiscie..... To tylko troche niewygodne.
 
 	Info_ClearChoices	(Info_Mod_Makanius_Lockvogel);
 
-	Info_AddChoice	(Info_Mod_Makanius_Lockvogel, "Wie lautet er?", Info_Mod_Makanius_Lockvogel_B);
-	Info_AddChoice	(Info_Mod_Makanius_Lockvogel, "Für dich oder für mich?", Info_Mod_Makanius_Lockvogel_A);
+	Info_AddChoice	(Info_Mod_Makanius_Lockvogel, "Co tak sie nazywa?", Info_Mod_Makanius_Lockvogel_B);
+	Info_AddChoice	(Info_Mod_Makanius_Lockvogel, "Dla Ciebie lub dla mnie?", Info_Mod_Makanius_Lockvogel_A);
 };
 
 FUNC VOID Info_Mod_Makanius_Lockvogel_C()
 {
-	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_C_15_00"); //Gut, dann machen wir das.
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_C_07_01"); //Jetzt sofort?
-	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_C_15_02"); //(ärgerlich) Wann sonst? Mach schon!
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_C_07_03"); //Muss das unbedingt ...
+	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_C_15_00"); //Wlasciwie, zróbmy to dobrze.
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_C_07_01"); //Wlasnie teraz?
+	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_C_15_02"); //(nie denerwujace) Kiedy jeszcze? Chodzcie dalej, odejdzmy!
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_C_07_03"); //Musi to byc absolutnie....
 
 	AI_DrawWeapon	(hero);
 
@@ -286,18 +286,18 @@ FUNC VOID Info_Mod_Makanius_Lockvogel_C()
 
 FUNC VOID Info_Mod_Makanius_Lockvogel_B()
 {
-	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_B_15_00"); //Wie lautet er?
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_B_07_01"); //Greif mich an an, dadurch lockst du einen der Wächter ins Haus. Schlag ihn nieder und nimm seine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_B_15_00"); //Co tak sie nazywa?
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_B_07_01"); //Atakuj mnie, wiec wabisz jednego z strazników do domu. Hit go i wziac jego zbroje.
 
-	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Ich soll Makarius angreifen, den Wächter vor dem Magierhaus somit anlocken, ihn töten und die Rüstung abnehmen.");
+	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Mam zaatakowac Makariusa, wabic straznika przed domem maga, zabic go i zdjac zbroje.");
 
 	Info_Mod_Makanius_Lockvogel_C();
 };
 
 FUNC VOID Info_Mod_Makanius_Lockvogel_A()
 {
-	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_A_15_00"); //Für dich oder für mich?
-	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_A_07_01"); //Für mich. Du kannst, was das angeht, unbesorgt sein.
+	AI_Output(hero, self, "Info_Mod_Makanius_Lockvogel_A_15_00"); //Dla Ciebie lub dla mnie?
+	AI_Output(self, hero, "Info_Mod_Makanius_Lockvogel_A_07_01"); //Dla mnie. Nie musisz sie tym martwic.
 
 	Info_Mod_Makanius_Lockvogel_B();
 };
@@ -310,7 +310,7 @@ INSTANCE Info_Mod_Makanius_Armor (C_INFO)
 	information	= Info_Mod_Makanius_Armor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das hätten wir.";
+	description	= "Wlasnie to otrzymalismy.";
 };
 
 FUNC INT Info_Mod_Makanius_Armor_Condition()
@@ -324,17 +324,17 @@ FUNC INT Info_Mod_Makanius_Armor_Condition()
 
 FUNC VOID Info_Mod_Makanius_Armor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_00"); //Das hätten wir.
-	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_01"); //Musstest du so fest zuschlagen?
-	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_02"); //Bist du nun ein Heilmagier oder nicht?
-	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_03"); //Sicher bin ich das. Wir kommen also zum nächsten Teil des Planes. Geh in das Haus der Erzbarone und triff dich mit Gomez.
-	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_04"); //Lock ihn vor das Lager ... dann können unsere Leute ihn fertig machen.
-	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_05"); //Ein Haufen Kämpfer für einen Mann? Ist das nicht etwas übertrieben?
-	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_06"); //Gomez ist jetzt mit Beliar im Bunde Und nicht nur mehr ein starker Kämpfer sondern auch ein mächtiger Magier.
-	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_07"); //Er ist nicht mehr der gierige Erzbaron als den du ihn schonmal besiegt hast.
-	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_08"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_00"); //Wlasnie to otrzymalismy.
+	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_01"); //Musiales tak ciezko uderzyc?
+	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_02"); //Czy jestes magiem uzdrawiajacym, czy nie?
+	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_03"); //Oczywiscie jestem. Wiec przechodzimy do nastepnej czesci planu. Wejdz do domu Er Barons i zobacz Gomeza.
+	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_04"); //Zabierz go przed obóz..... wtedy nasi ludzie moga go zabrac.
+	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_05"); //Gromada bojowników dla czlowieka? Czy nie jest to zbyt wygórowane?
+	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_06"); //Gomez jest teraz w lidze z Beliarem i nie tylko silnym wojownikiem, ale równiez poteznym magikiem.
+	AI_Output(self, hero, "Info_Mod_Makanius_Armor_07_07"); //To nie jest chciwy baron, który go wczesniej pobiles.
+	AI_Output(hero, self, "Info_Mod_Makanius_Armor_15_08"); //Widze.
 
-	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Ich habe die Rüstung. Nun muss ich Gomez dazu überreden das Lager zu verlassen ... wenn er noch immer so stur ist wie damals könnte das interessant werden.");
+	B_LogEntry	(TOPIC_MOD_AL_LOCKVOGEL, "Mam zbroje. Teraz musze przekonac Gomeza, aby opuscil obóz.... Wiecej Jesli jest tak uparty jak wtedy, moze byc to interesujace.");
 
 	AI_StopProcessInfos	(self);
 	

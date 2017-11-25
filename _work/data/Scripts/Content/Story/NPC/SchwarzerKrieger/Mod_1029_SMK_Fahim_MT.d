@@ -1,7 +1,7 @@
 instance Mod_1029_SMK_Fahim_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fahim";	
+	name 		= "ahim";	
 	guild 		= GIL_KDF;  
 	id 			= 1029;
 	voice 		= 10;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rengaru_Hi (C_INFO)
 	information	= Info_Mod_Rengaru_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Rengaru_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Rengaru_Hi_Condition()
 FUNC VOID Info_Mod_Rengaru_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Rengaru_Hi_07_01"); //Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Rengaru_Hi_07_01"); //Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Rengaru_Dieb (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Rengaru_Dieb (C_INFO)
 	information	= Info_Mod_Rengaru_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Diebeszeichen zeigen)";
+	description	= "(Pokaz znak zlodziejstwa)";
 };
 
 FUNC INT Info_Mod_Rengaru_Dieb_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Rengaru_Dieb_Condition()
 FUNC VOID Info_Mod_Rengaru_Dieb_Info()
 {
 	AI_PlayAni (hero, "T_YES");
-	AI_Output(self, hero, "Info_Mod_Rengaru_Dieb_07_00"); //Du gehörst also zu uns? Gut, ich kann dir Akrobatik beibringen.
+	AI_Output(self, hero, "Info_Mod_Rengaru_Dieb_07_00"); //Wiec jestes z nami? Cóz, moge nauczyc cie akrobatyki.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Rengaru kann mir Akrobatik beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Rengaru moze nauczyc mnie akrobatyki.");
 };
 
 INSTANCE Info_Mod_Rengaru_Milizangriff (C_INFO)
@@ -71,19 +71,19 @@ FUNC INT Info_Mod_Rengaru_Milizangriff_Condition()
 
 FUNC VOID Info_Mod_Rengaru_Milizangriff_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_00"); //Wir suchen dich schon überall.
-	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_01"); //Was ist passiert.
-	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_02"); //Die Miliz ist in die Kanalisation eingedrungen.
-	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_03"); //Warum sucht ihr dann mich?
-	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_04"); //Attila ist im Knast und ich hab gehört, du hast eine ganze Bande ausgeschaltet.
-	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_05"); //Ich sehe, ich hab keine andere Möglichkeit.
+	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_00"); //Szukalismy dla Ciebie wszystkiego.
+	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_02"); //Milicja wdarla sie do kanalizacji.
+	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_03"); //Dlaczego wiec szukasz mnie?
+	AI_Output(self, hero, "Info_Mod_Rengaru_Milizangriff_07_04"); //Attyla w wiezieniu, a ja slyszalem, ze wyjela pani caly gang.
+	AI_Output(hero, self, "Info_Mod_Rengaru_Milizangriff_15_05"); //Widze, ze nie mam innej mozliwosci.
 
 	Wld_InsertNpc	(Mod_1893_MIL_Miliz_NW,	"NW_CITY_KANAL_16");
 	Wld_InsertNpc	(Mod_1894_MIL_Miliz_NW,	"NW_CITY_KANAL_16");
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_MILIZANGRIFF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_MILIZANGRIFF, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_MILIZANGRIFF, "Rengaru hat mir gesagt, dass die Miliz in die Kanalisation eingedrungen ist. Ich muss sie ausschalten.");
+	B_LogEntry	(TOPIC_MOD_DIEB_MILIZANGRIFF, "Rengaru powiedzial mi, ze milicja wlamala sie do kanalów. Musze je wyjac.");
 };
 
 INSTANCE Info_Mod_Rengaru_Lernen (C_INFO)
@@ -94,12 +94,12 @@ INSTANCE Info_Mod_Rengaru_Lernen (C_INFO)
 	information	= Info_Mod_Rengaru_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Akrobatik lernen (5 LP)";
+	description	= "Akrobatyka uczenia sie (5 LP)";
 };
 
 FUNC INT Info_Mod_Rengaru_Lernen_Condition()
 {
-	Info_Mod_Rengaru_Lernen.description = B_BuildLearnString("Akrobatik lernen", B_GetLearnCostTalent(hero, NPC_TALENT_ACROBAT, 1));
+	Info_Mod_Rengaru_Lernen.description = B_BuildLearnString("Akrobatyka uczenia sie", B_GetLearnCostTalent(hero, NPC_TALENT_ACROBAT, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Rengaru_Dieb))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_ACROBAT) == FALSE)
@@ -110,13 +110,13 @@ FUNC INT Info_Mod_Rengaru_Lernen_Condition()
 
 FUNC VOID Info_Mod_Rengaru_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rengaru_Lernen_15_00"); //Bring mir Akrobatik bei.
+	AI_Output(hero, self, "Info_Mod_Rengaru_Lernen_15_00"); //Naucz mnie akrobatyki.
 
 	if (B_TeachThiefTalent (self, hero, NPC_TALENT_ACROBAT))
 	{
-		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_01"); //Wenn du deinen Körper beherrschst, bist du in der Lage viel weiter zu springen.
-		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_02"); //Du lernst dich richtig abzurollen und aus dem Fall heraus richtig zu landen. Aber denk daran, du bist nicht unsterblich!
-		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_03"); //Auch im Kampf ist Akrobatik sehr hilfreich. Du kannst deinen Abstand zum Gegner sehr schnell verändern. Viel Glück!
+		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_01"); //Jesli kontrolujesz swoje cialo, bedziesz mógl przeskoczyc znacznie dalej.
+		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_02"); //Nauczysz sie sam sie nawijac i ladujesz prawidlowo od jesieni. Pamietaj jednak, ze nie jestes niesmiertelny!
+		AI_Output(self, hero, "Info_Mod_Rengaru_Lernen_07_03"); //Równiez w walce z akrobatyka jest bardzo pomocne. Mozesz szybko zmienic dystans do przeciwnika. Powodzenia!
 	};
 };
 
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Rengaru_Flugblaetter (C_INFO)
 	information	= Info_Mod_Rengaru_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Rengaru_Flugblaetter_Condition()
@@ -145,15 +145,15 @@ FUNC INT Info_Mod_Rengaru_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Rengaru_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rengaru_Flugblaetter_15_00"); //Ich hab hier ein Flugblatt für dich.
+	AI_Output(hero, self, "Info_Mod_Rengaru_Flugblaetter_15_00"); //Mam dla Ciebie ulotke.
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Rengaru_Flugblaetter_07_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Rengaru_Flugblaetter_07_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Rengaru_Flugblaetter_07_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Rengaru_Flugblaetter_07_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

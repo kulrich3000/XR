@@ -1,7 +1,7 @@
 INSTANCE Mod_525_SLD_Lee_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lee";
+	name 		= "osada";
 	guild 		= GIL_MIL;
 	id 			= 525;
 	voice 		= 4;																		//NPC_FLAG_IMMORTAL oder 0

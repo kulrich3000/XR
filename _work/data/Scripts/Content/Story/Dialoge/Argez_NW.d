@@ -15,53 +15,53 @@ FUNC INT Info_Mod_Argez_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_37_00"); //Ah, ein neues Gesicht. Mit wem habe ich die Ehre?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_37_00"); //Ah, nowa twarz. Kogo mam zaszczyt przyznac?
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Hi);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Das geht dich nichts an.", Info_Mod_Argez_NW_Hi_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Mit einem ehemaligen Gefangenen des Minentals.", Info_Mod_Argez_NW_Hi_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Zaden z Panstwa dzialalnosci.", Info_Mod_Argez_NW_Hi_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Z bylym wiezniem Doliny Kopalni.", Info_Mod_Argez_NW_Hi_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_00"); //Gestatten, mein Name ist Argez.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_01"); //Du siehst nicht gerade zufrieden aus.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_02"); //Oh, das ist eine längere Geschichte, aber sie endete bei den Stadttoren von Khorinis.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_03"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_04"); //Dort steht ein unsicherer Paladin, der sich durch Härte zu profilieren versucht. Er verwehrte mir den Zugang zur Stadt.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_05"); //Und wieso lässt er dich nicht rein?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_06"); //Er fürchtete mich, wie er auch dich fürchten würde. Ich denke, es hängt mit dem Fall der Barriere und den entflohenen Häftlingen zusammen.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_00"); //Prosze mi wybaczyc, nazywam sie Argez.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_01"); //Nie wygladasz na szczesliwy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_02"); //Ach, to dluzsza historia, ale konczyla sie u bramhorynów.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_03"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_04"); //Istnieje niepewny paladyn, który próbuje odróznic sie przez twardosc. Odmawial mi dostepu do miasta.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_C_15_05"); //Dlaczego nie wpusci Cie?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_C_37_06"); //Obawial sie mnie, bo on cie obawial. Mysle, ze jest to zwiazane z upadkiem zapory i uciekinierami.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Hi);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Kann ich dir helfen, in die Stadt zu kommen?", Info_Mod_Argez_NW_Hi_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Wo kommst du überhaupt her?", Info_Mod_Argez_NW_Hi_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Czy moge pomóc Ci dostac sie do miasta?", Info_Mod_Argez_NW_Hi_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "Gdzie jestes?", Info_Mod_Argez_NW_Hi_D);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_B_15_00"); //Das geht dich nichts an.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_B_37_01"); //Du hast Recht, ich hätte mich zuerst vorstellen sollen.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_B_15_00"); //Zaden z Panstwa dzialalnosci.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_B_37_01"); //Masz racje, najpierw powinienem byl sie przedstawic.
 
 	Info_Mod_Argez_NW_Hi_C();
 };
 
 FUNC VOID Info_Mod_Argez_NW_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_A_15_00"); //Mit einem ehemaligen Gefangenen des Minentals.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_A_37_01"); //Sieh an, ein weiterer Ausgestoßener.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_A_15_00"); //Z bylym wiezniem Doliny Kopalni.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_A_37_01"); //No cóz, jeszcze inny parias.
 
 	Info_Mod_Argez_NW_Hi_C();
 };
 
 FUNC VOID Info_Mod_Argez_NW_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_E_15_00"); //Kann ich dir helfen, in die Stadt zu kommen?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_01"); //Ich bezweifle, dass der genannte Paladin mit sich sprechen lassen wird. Garond ist sein Name.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_02"); //Solltest du es aber tatsächlich schaffen, biete ich dir im Gegenzug an, mein Wissen mit dir zu teilen.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_E_15_03"); //Was weißt du denn so?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_04"); //Mehr, als ich wissen dürfte.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_E_15_00"); //Czy moge pomóc Ci dostac sie do miasta?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_01"); //Watpie, czy wspomniany przeze mnie paladyn, przemówi do panstwa. Garond jest jego imieniem.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_02"); //Ale jesli sie to uda, proponuje podzielic sie z wami moja wiedza.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_E_15_03"); //Co wiesz?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_E_37_04"); //Wiecej niz powinienem wiedziec.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Urnol1))
 	{
@@ -69,7 +69,7 @@ FUNC VOID Info_Mod_Argez_NW_Hi_E()
 		B_SetTopicStatus	(TOPIC_MOD_ARGEZ, LOG_RUNNING);
 	};
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Vor den Toren von Khorinis bin ich mit einem Ausgestoßenen ins Gespräch gekommen. Seine Vergangenheit scheint verworren, er versprach mir allerdings Informationen für den Fall, dass Garond ihn in die Stadt lässt. Der Paladin könnte sich jedoch als schwerer Brocken erweisen.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Poza brama Khorinisa rozmawialem z outcastem. Jego przeszlosc wydaje sie mylaca, ale obiecal mi informacje na wypadek gdyby Garond wpuscil go do miasta. Paladyn moze jednak okazac sie trudnym kawalkiem.");
 
 	Mod_Argez_Choice += 1;
 
@@ -81,9 +81,9 @@ FUNC VOID Info_Mod_Argez_NW_Hi_E()
 
 FUNC VOID Info_Mod_Argez_NW_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_D_15_00"); //Wo kommst du überhaupt her?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_D_37_01"); //Das weiß ich nicht. Diese Information ist ein Teil der eben erwähnten längeren Geschichte.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_D_37_02"); //Ich möchte nicht unhöflich erscheinen, aber zum jetzigen Zeitpunkt sehe ich mich nicht in der Lage, deine Frage umfassend zu beantworten.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Hi_D_15_00"); //Gdzie jestes?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_D_37_01"); //Nie wiem o tym. Informacje te sa czescia dluzszej historii, o której wlasnie wspomniano.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Hi_D_37_02"); //Nie chce wydawac sie niegrzeczny, ale na tym etapie nie jestem w stanie udzielic wyczerpujacej odpowiedzi na panstwa pytanie.
 
 	Mod_Argez_Choice += 1;
 
@@ -101,7 +101,7 @@ INSTANCE Info_Mod_Argez_NW_Follow (C_INFO)
 	information	= Info_Mod_Argez_NW_Follow_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen Weg gefunden, dich in die Stadt zu bringen.";
+	description	= "Znalazlem sposób, aby dostac sie do miasta.";
 };
 
 FUNC INT Info_Mod_Argez_NW_Follow_Condition()
@@ -114,11 +114,11 @@ FUNC INT Info_Mod_Argez_NW_Follow_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Follow_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Follow_15_00"); //Ich habe einen Weg gefunden, dich in die Stadt zu bringen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_01"); //Ich hatte gehofft, dass du das sagen würdest.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Follow_15_02"); //Wir können das nördliche Stadttor passieren. Lord Andre hat mir versichert, dass es dort keine Probleme geben wird. Ich werde dich führen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_03"); //Oh, ich weiß, wo das Tor ist. Aber wir sollten am besten zusammen dort auftauchen, bevor es zu Missverständnissen kommt.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_04"); //Du darfst dabei gern voran laufen.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Follow_15_00"); //Znalazlem sposób, aby dostac sie do miasta.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_01"); //Mialem nadzieje, ze pan to powie.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Follow_15_02"); //Mozemy przejsc obok pólnocnej bramy miasta. Pan Andre zapewnil mnie, ze nie bedzie tam zadnych problemów. Poprowadze pana.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_03"); //Ach, wiem, gdzie jest brama. Ale najlepsza rzecza, jaka mozemy zrobic, jest pokazanie sie razem, zanim pojawia sie jakiekolwiek nieporozumienia.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Follow_37_04"); //Zapraszamy do dalszej pracy.
 
 	self.aivar[AIV_Partymember] = TRUE;
 
@@ -150,13 +150,13 @@ FUNC INT Info_Mod_Argez_NW_Zombie_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Zombie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_00"); //(schockiert) War ich es, der diesen tödlichen Schuss abgegeben hat?
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie_15_01"); //Ich sehe hier niemanden, der sonst dafür verantwortlich sein könnte.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_02"); //In mir scheint etwas zu schlummern ... Wenn ich mich doch nur erinnern könnte!
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_03"); //Und woher kam so plötzlich dieser Zombie?
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie_15_04"); //Vielleicht hat er mit diesem schwarzen Wanderer zu tun, der vor kurzem hier vorbeigekommen sein muss?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_05"); //Möglich, auch wenn mir kein solcher schwarzer Wanderer aufgefallen ist.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_06"); //Lass uns weiter zur Stadt gehen, ich brauche jetzt ein wenig Zeit zum Nachdenken.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_00"); //Czy to byl mój strzal smiertelny?
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie_15_01"); //Nie widze tu nikogo innego, kto móglby byc odpowiedzialny.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_02"); //Wyglada na to, ze jest we mnie cos brzydkiego...... Jezeli tylko pamietam!
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_03"); //A skad tak nagle wzielo sie to zombie?
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie_15_04"); //Moze ma on cos wspólnego z tym czarnym wedrowcem, który musial przyjechac tu ostatnio?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_05"); //Byc moze, nawet jesli nie zauwazylem takiego czarnego wedrowcy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie_37_06"); //Przejdzmy do miasta, potrzebuje troche czasu, by pomyslec.
 
 	hero.protection[PROT_MAGIC] = Mod_Save_HeroArmor_Argez;
 
@@ -184,18 +184,18 @@ FUNC INT Info_Mod_Argez_NW_InCity_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_InCity_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_00"); //Endlich hinter diesen Mauern. Ich bin dir zu größtem Dank verpflichtet.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_01"); //Was wirst du nun tun?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_02"); //Ich werde nach Hinweisen auf meine Herkunft suchen. Diese Stadt ist groß - ich bin zuversichtlich, dass mich jemand hier kennt.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_03"); //Als Erstes werde ich mich allerdings ausruhen.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_04"); //Du hattest mir etwas versprochen ...
-	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_05"); //Und das werde ich auch einhalten. Such mich morgen auf, und ich werde dir mit Rat und Tat zur Seite stehen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_06"); //Vermutlich werde ich den größten Teil des Tages in der Nähe des Marktplatzes hier verbringen.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_07"); //Alles klar. Bis morgen.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_00"); //W koncu, za tymi murami. Jestem panstwu gleboko zadluzony.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_01"); //Co zamierzasz teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_02"); //Szukam wskazówek do swoich korzeni. To miasto jest duze - jestem pewien, ze ktos mnie tutaj zna.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_03"); //Przede wszystkim jednak spoczne.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_04"); //Obiecales mi cos....
+	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_05"); //I bede sie do tego trzymac. Przyjdzcie do mnie jutro, a ja udziele Wam rad i pomocy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_InCity_37_06"); //Prawdopodobnie wiekszosc dnia spedze tu w poblizu rynku.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_InCity_15_07"); //Wszystko jasne. Do zobaczenia jutro.
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Ich habe Argez in die Stadt geführt. Jetzt bin ich auf seine Geschichte gespannt ...");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Wyprowadzilem Argeza do miasta. Teraz czekam na jego opowiesc....");
 
 	Mod_Argez_Day = Wld_GetDay();
 
@@ -214,7 +214,7 @@ INSTANCE Info_Mod_Argez_NW_Zombie2 (C_INFO)
 	information	= Info_Mod_Argez_NW_Zombie2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du weißt wirklich nicht, wie du diesen Zauber vollbracht hast?";
+	description	= "Naprawde nie wiesz, jak to zaklecie zrobiles?";
 };
 
 FUNC INT Info_Mod_Argez_NW_Zombie2_Condition()
@@ -227,10 +227,10 @@ FUNC INT Info_Mod_Argez_NW_Zombie2_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Zombie2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie2_15_00"); //Du weißt wirklich nicht, wie du diesen Zauber vollbracht hast?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_01"); //Als sich der Zombie uns zuwandte, spürte ich, wie etwas in mir hochstieg.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_02"); //Dieser Spruch entfesselte sich ganz automatisch, ohne mein willentliches Zutun.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_03"); //Warum ich einen solchen Spruch kenne, kann ich dir nicht sagen. Es beruhigt mich auch nicht gerade, von so einer unkontrollierten Kraft in mir zu wissen.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Zombie2_15_00"); //Naprawde nie wiesz, jak to zaklecie zrobiles?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_01"); //Kiedy zombie zwrócilo sie do nas, poczulem cos w sobie wznoszacego sie.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_02"); //To powiedzenie rozpetalo sie calkowicie automatycznie, bez mojej celowej pomocy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Zombie2_37_03"); //Dlaczego znam takie powiedzenie, nie moge ci powiedziec. Nie upewnia mnie tez, ze wiem o takiej niekontrolowanej we mnie wladzy.
 };
 
 INSTANCE Info_Mod_Argez_NW_ZuSaturas (C_INFO)
@@ -241,7 +241,7 @@ INSTANCE Info_Mod_Argez_NW_ZuSaturas (C_INFO)
 	information	= Info_Mod_Argez_NW_ZuSaturas_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Saturas wünscht ein Gespräch mit dir.";
+	description	= "Saturas zyczy sobie rozmowy z Toba.";
 };
 
 FUNC INT Info_Mod_Argez_NW_ZuSaturas_Condition()
@@ -254,15 +254,15 @@ FUNC INT Info_Mod_Argez_NW_ZuSaturas_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_ZuSaturas_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_00"); //Saturas wünscht ein Gespräch mit dir.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_01"); //Der oberste Wassermagier? Was will er von mir?
-	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_02"); //Es geht um den Zauber, mit dem du den Zombie vernichtet hast.
-	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_03"); //Vielleicht kann Saturas dir auch helfen, etwas über deine Vergangenheit herauszufinden.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_04"); //Einen Versuch ist es wert, auch wenn ich deinem Unterton entnehme, dass ihr euch vor dem fürchtet, was ihr über mich zu erfahren versucht.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_05"); //Mein Aufenthalt in der Stadt wird mit dem Gang zu Saturas sein Ende finden.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_06"); //Es scheint, als würde mich hier niemand kennen. Meine Wurzeln müssen woanders liegen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_07"); //Lass uns also nachsehen, ob Saturas mir etwas Neues zu sagen hat.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_08"); //Kennst du vielleicht eine Abkürzung zur Ausgrabungsstätte? Einen Teleporter oder so?
+	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_00"); //Saturas zyczy sobie rozmowy z Toba.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_01"); //Najwyzszy mag? Czego ode mnie chce?
+	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_02"); //Chodzi o zaklecie, którego uzyles do zniszczenia zombie.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_ZuSaturas_15_03"); //Moze równiez Saturas pomoze Ci dowiedziec sie wiecej o swojej przeszlosci.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_04"); //Warto spróbowac, nawet jesli z Waszego podtekstu moge powiedziec, ze obawiasz sie tego, co próbujecie o mnie poznac.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_05"); //Mój pobyt w miescie zakonczy sie wizyta w Saturach.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_06"); //Wydaje mi sie, ze nikt mnie nie zna. Moje korzenie musza byc gdzie indziej.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_07"); //Zobaczmy wiec, czy Saturas ma cos nowego do powiedzenia.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_ZuSaturas_37_08"); //Moze znasz skrót do strony kopania? Teleporter czy cos?
 };
 
 INSTANCE Info_Mod_Argez_NW_LosZuSaturas (C_INFO)
@@ -273,7 +273,7 @@ INSTANCE Info_Mod_Argez_NW_LosZuSaturas (C_INFO)
 	information	= Info_Mod_Argez_NW_LosZuSaturas_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns aufbrechen.";
+	description	= "Idzmy dalej.";
 };
 
 FUNC INT Info_Mod_Argez_NW_LosZuSaturas_Condition()
@@ -286,10 +286,10 @@ FUNC INT Info_Mod_Argez_NW_LosZuSaturas_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_LosZuSaturas_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_LosZuSaturas_15_00"); //Lass uns aufbrechen. Saturas hat mit einen Teleportzauber gegeben, der uns den weiten Weg ersparen wird.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_LosZuSaturas_15_00"); //Idzmy dalej. Saturas dala nam zaklecie teleportowe, które uratuje nam dluga droge.
 	AI_Output(self, hero, "DEFAULT"); //
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Ich muss Argez nun zu Saturas bringen. Mit dem Teleport von Saturas wird das ja kein Problem.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Musze zabrac Argeza do Saturasa. W przypadku teleportu Saturas nie bedzie to problem.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -302,7 +302,7 @@ INSTANCE Info_Mod_Argez_NW_Infos (C_INFO)
 	information	= Info_Mod_Argez_NW_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sind das für Informationen, die du mir geben kannst?";
+	description	= "Jakie informacje mozesz mi przekazac?";
 };
 
 FUNC INT Info_Mod_Argez_NW_Infos_Condition()
@@ -316,9 +316,9 @@ FUNC INT Info_Mod_Argez_NW_Infos_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Infos_15_00"); //Was sind das für Informationen, die du mir geben kannst?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Infos_37_01"); //Du bist noch neu hier. Ich kenne mich mit den unterschiedlichen Gruppierungen aus.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Infos_37_02"); //Wenn du dich einer Gilde anschließen willst, kann ich dir behilflich sein.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Infos_15_00"); //Jakie informacje mozesz mi przekazac?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Infos_37_01"); //Tutaj jestes nowy. Wiem o róznych grupach.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Infos_37_02"); //Jesli chcecie dolaczyc do cechu, moge wam pomóc.
 };
 
 INSTANCE Info_Mod_Argez_NW_Gilden (C_INFO)
@@ -329,7 +329,7 @@ INSTANCE Info_Mod_Argez_NW_Gilden (C_INFO)
 	information	= Info_Mod_Argez_NW_Gilden_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gib mir Informationen zu einer der Gilden.";
+	description	= "Podaj mi informacje na temat jednego z cechów.";
 };
 
 FUNC INT Info_Mod_Argez_NW_Gilden_Condition()
@@ -343,18 +343,18 @@ FUNC INT Info_Mod_Argez_NW_Gilden_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_15_00"); //Gib mir Informationen zu einer der Gilden.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_37_01"); //Welche weckt dein Interesse?
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_15_00"); //Podaj mi informacje na temat jednego z cechów.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_37_01"); //Które wzbudza Twoje zainteresowanie?
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_BACK()
@@ -364,104 +364,104 @@ FUNC VOID Info_Mod_Argez_NW_Gilden_BACK()
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_E()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_E_15_00"); //Erzähl mir was über die Feuernovizen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_01"); //Die Anhänger Innos' haben ihr eigenes Kloster auf der Insel.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_02"); //Das Leben eines Feuernovizen soll nicht einfach sein; die Magier fordern ein asketisches Leben und völlige Hingabe zu Innos.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_03"); //Ihre Führung besteht aus einem Triumvirat, aus dem Pyrokar noch einmal als oberster Kopf heraussticht.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_04"); //Diese drei werden dich eingehend prüfen, wenn du dich entscheidest, dass ein Leben in Innos' Diensten das Richtige für dich ist.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_E_15_00"); //Powiedz mi o nowicjuszach ognia.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_01"); //Nasladowcy Innosów maja na wyspie swój wlasny klasztor.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_02"); //Zycie nowicjusza ognia nie jest latwe; magowie domagaja sie ascetycznego zycia i calkowitego oddania Innosowi.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_03"); //Ich przywództwo sklada sie z triumwiratu, z którego Pyrokar po raz kolejny wyróznia sie na czele.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_E_37_04"); //Trójka ta sprawdzi Cie dokladnie, kiedy zdecydujesz, ze mieszkanie w Innosie jest wlasnie dla Ciebie.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_D()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_D_15_00"); //Erzähl mir was über die Miliz.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_01"); //Die Miliz übernimmt in Khorinis die Funktion der Stadtwache.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_02"); //Sie sorgt mehr oder weniger dafür, dass hier alles mit rechten Dingen zugeht.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_03"); //Ihren Anführer Lord Andre durftest du ja schon kennen lernen. Er achtet sehr auf die Disziplin und Kampfkraft seiner Truppe.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_04"); //Zu diesem Zweck veranstaltet er regelmäßig Turniere mit den neuen Anwärtern.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_05"); //Wenn du dort bestehen willst, solltest du schon ein einigermaßen erfahrener Kämpfer sein.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_D_15_00"); //Powiedz mi o milicji.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_01"); //Milicja przejmuje funkcje straznika miejskiego w Khorinis.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_02"); //Jest mniej lub bardziej odpowiedzialna za zapewnienie, ze wszystko tutaj idzie wlasciwie.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_03"); //Spotkales juz ich przywódce, Lord Andre. Dbal o dyscypline i sile walki swoich zolnierzy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_04"); //W tym celu regularnie organizuje turnieje z nowymi kandydatami.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_D_37_05"); //Jesli chcesz tam pozostac, powinienes byc dosc doswiadczonym wojownikiem.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_C()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_C_15_00"); //Erzähl mir was über die Schwarzen Novizen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_01"); //Von denen hört man hier nicht allzu viel.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_02"); //Zu den Schwarzen Novizen fühlen sich eher die Nonkonformisten der Gesellschaft hingezogen - Beliar verspricht zwar keine Popularität, dafür aber mächtige Zauber.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_03"); //Außerdem haben sie eines der strengsten Aufnahmeverfahren. Nur wer sich in unzähligen Prüfungen beweist, wird als Novize zugelassen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_04"); //Allerdings haben sie auch ein äußerst praktisches Fortbewegungsmittel installiert - die Beliarschreine sind gleichzeitig Teleportationsplattformen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_05"); //Du musst sie einzeln anschließen, um sie nutzen zu können.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_06"); //Gerüchten zufolge soll in der abgesperrten Kanalisation der Stadt ein solcher Schrein stehen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_07"); //Er stammt noch aus früheren Zeiten, als Beliaranhänger dort unten dunkle Rituale abhielten.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_08"); //Wobei ... von dem, was man so hört, scheint die Kanalisation noch nicht ganz verlassen zu sein.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_C_15_00"); //Powiedz mi o czarnych nowinkach.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_01"); //Tutaj nie slyszy sie zbyt wiele o nich.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_02"); //Nienkonformisci spoleczenstwa bardziej przyciagaja do Czarnych Nowicjuszy - Beliar nie obiecuje popularnosci, lecz potezna magie.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_03"); //Maja one równiez jedna z najsurowszych procedur przyjmowania. Tylko ci, którzy udowodnia sie w niezliczonych próbach, zostana przyjeci jako nowicjusze.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_04"); //Zainstalowano jednak równiez niezwykle praktyczny srodek transportu - sanktuaria w Beliarze sa jednoczesnie platformami teleportacyjnymi.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_05"); //Aby z nich korzystac, trzeba je laczyc jeden po drugim.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_06"); //Plotka glosi, ze podobno taka swiatynia znajduje sie w zamknietej sieci kanalizacyjnej miasta.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_07"); //Pochodzi ono z czasów wczesniejszych, kiedy to beliaranscy wyznawcy urzadzali tam ciemne rytualy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_C_37_08"); //Gdzie..... Z tego, co slyszymy, kanalizacja nie wydaje sie byc calkowicie opuszczona.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_B()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_B_15_00"); //Erzähl mir was über die Söldner.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_01"); //Einige von ihnen halten sich derzeit auf dem Hof des Großbauern Onar auf. Dort wollen sie neue Mitglieder anwerben.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_02"); //Die meisten befinden sich jedoch im Minental, in ihrem Lager von der Koloniezeit, das sie das Neue Lager nennen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_03"); //Es soll aber auch hier in der Nähe von Khorinis noch Söldnerlager geben.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_04"); //Du solltest immer die Augen offen halten, dann wirst du ihnen früher oder später über den Weg laufen.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_B_15_00"); //Powiedz mi o najemnikach.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_01"); //Czesc z nich jest obecnie w gospodarstwie wielkiego rolnika Onar. Chca tam rekrutowac nowych czlonków.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_02"); //Wiekszosc z nich jest jednak w Minentalu, w obozie z czasów kolonii, który nazywaja Nowym Obozem.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_03"); //Ale i w tym przypadku przypuszcza sie, ze w poblizuhorinis sa obozy dla najemników.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_B_37_04"); //Zawsze powinienes miec oczy otwarte, wtedy predzej czy pózniej natkniesz sie na nie.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 FUNC VOID Info_Mod_Argez_NW_Gilden_A()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_A_15_00"); //Erzähl mir was über die Wassernovizen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_01"); //Die Wassernovizen dienen im Kreis des Wassers.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_02"); //Soweit ich es mitbekomme, ist die Hauptaufgabe des Kreises des Wassers die Informationsbeschaffung.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_03"); //Während die Wassermagier über ihren uralten Rätseln hocken, um in Adanos' Sinn das Gleichgewicht der Welt zu bewahren, halten die Novizen Augen und Ohren offen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_04"); //Die meisten ihrer Anhänger findest du deshalb auch in Khorinis.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_05"); //Momentan beschäftigen sie sich mit einer Reihe von Vermisstenmeldungen.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_06"); //Wenn dich das Thema interessiert, dürfte Vatras am Tempelplatz der richtige Ansprechpartner für dich sein.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Gilden_A_15_00"); //Powiedz mi o nowicjuszach wody.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_01"); //Nowicjusze wody sluza w kregu wody.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_02"); //Z tego co widze, glównym zadaniem kola wody jest zbieranie informacji.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_03"); //Podczas gdy magowie wody przybijaja nad starozytne zagadki, aby utrzymac równowage swiata w umysle Adanosa, nowicjusze trzymaja oczy i uszy otwarte.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_04"); //Dlatego tez wiekszosc ich zwolenników mozna znalezc w Khorinis.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_05"); //Obecnie maja do czynienia z szeregiem zgloszen osób zaginionych.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Gilden_A_37_06"); //Jesli jestes zainteresowany tematem, Vatras na Tempelplatz jest prawdopodobnie wlasciwym dla Ciebie kontaktem.
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Gilden);
 
 	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, DIALOG_BACK, Info_Mod_Argez_NW_Gilden_BACK);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Feuernovizen.", Info_Mod_Argez_NW_Gilden_E);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Miliz.", Info_Mod_Argez_NW_Gilden_D);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Schwarzen Novizen.", Info_Mod_Argez_NW_Gilden_C);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Söldner.", Info_Mod_Argez_NW_Gilden_B);
-	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Erzähl mir was über die Wassernovizen.", Info_Mod_Argez_NW_Gilden_A);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach ognia.", Info_Mod_Argez_NW_Gilden_E);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o milicji.", Info_Mod_Argez_NW_Gilden_D);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o czarnych nowinkach.", Info_Mod_Argez_NW_Gilden_C);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o najemnikach.", Info_Mod_Argez_NW_Gilden_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Gilden, "Powiedz mi o nowicjuszach wody.", Info_Mod_Argez_NW_Gilden_A);
 };
 
 INSTANCE Info_Mod_Argez_NW_Geschichte (C_INFO)
@@ -472,7 +472,7 @@ INSTANCE Info_Mod_Argez_NW_Geschichte (C_INFO)
 	information	= Info_Mod_Argez_NW_Geschichte_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir deine Geschichte!";
+	description	= "Powiedz mi swoja historie!";
 };
 
 FUNC INT Info_Mod_Argez_NW_Geschichte_Condition()
@@ -485,16 +485,16 @@ FUNC INT Info_Mod_Argez_NW_Geschichte_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Geschichte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Geschichte_15_00"); //Erzähl mir deine Geschichte!
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_01"); //Ich kann mich nicht an meine Vergangenheit erinnern.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_02"); //Es gibt ... Erinnerungsfetzen, die durch bestimmte Ereignisse ausgelöst werden, aber sie sind nie eindeutig genug.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_03"); //Vor ein paar Monaten wachte ich in zerlumpter Kleidung in einer Höhle in den Bergen auf.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_04"); //Vermutlich war ich überfallen, bewusstlos geschlagen und zum Sterben liegen gelassen worden.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_05"); //Zuerst irrte ich orientierungslos umher. Nach einigen Tagen stieß ich auf einen der umliegenden Bauernhöfe und verdingte mich fortan als Knecht.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_06"); //Ich beobachtete viel und fragte die Händler aus, die am Hof rasteten.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_07"); //So erfuhr ich vom aktuellen Geschehen, und auch mein Wissen um die Gilden stammt aus diesen Monaten.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_08"); //Die Suche nach meiner Vergangenheit ließ mir jedoch keine Ruhe, und so verließ ich den Hof irgendwann und schlug mich zur Stadt durch.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_09"); //Den Rest der Geschichte kennst du.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Geschichte_15_00"); //Powiedz mi swoja historie!
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_01"); //Nie pamietam swojej przeszlosci.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_02"); //Jest --- Fragmenty wspomnien wywolywane przez pewne wydarzenia, ale nigdy nie sa wystarczajaco jasne.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_03"); //Kilka miesiecy temu obudzilem sie w szmatowych ubraniach w jaskini w górach.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_04"); //Zapewne zostalem zaatakowany, zapukal nieswiadomy i zostawilem na smierc.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_05"); //Poczatkowo bladzilem sie po zdezorientowanych. Po kilku dniach znalazlem jedno z okolicznych gospodarstw i zostalem zajety.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_06"); //Wiele obserwowalem i pytalem kupców, którzy odpoczeli na dziedzincu.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_07"); //Tak dowiedzialem sie o biezacych wydarzeniach, a moja wiedza o cechach pochodzi z tamtych miesiecy.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_08"); //Ale poszukiwanie mojej przeszlosci nie zostawilo mnie samotnie, wiec w pewnym momencie opuscilem podwórko i przedostalem sie do miasta.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Geschichte_37_09"); //Reszta historii, która znasz.
 };
 
 INSTANCE Info_Mod_Argez_NW_Tattoo (C_INFO)
@@ -505,7 +505,7 @@ INSTANCE Info_Mod_Argez_NW_Tattoo (C_INFO)
 	information	= Info_Mod_Argez_NW_Tattoo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das für eine Tätowierung in deinem Gesicht?";
+	description	= "Co to jest tatuaz na twarzy?";
 };
 
 FUNC INT Info_Mod_Argez_NW_Tattoo_Condition()
@@ -518,11 +518,11 @@ FUNC INT Info_Mod_Argez_NW_Tattoo_Condition()
 
 FUNC VOID Info_Mod_Argez_NW_Tattoo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_NW_Tattoo_15_00"); //Was ist das für eine Tätowierung in deinem Gesicht?
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_01"); //Ich konnte sie bisher nicht genau betrachten, da ich sie nur in Wasserspiegelungen gesehen habe.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_02"); //Den einzigen Anhaltspunkt, den sie mir gibt, ist das Sumpflager im Minental. Dort sind Tätowierungen sehr verbreitet.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_03"); //Allerdings gab es wohl keine Möglichkeit, der Barriere zu entrinnen, und ich bin außerhalb von ihr aufgewacht.
-	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_04"); //Folglich kann ich kaum mit dem Sumpflager in Kontakt gestanden haben.
+	AI_Output(hero, self, "Info_Mod_Argez_NW_Tattoo_15_00"); //Co to jest tatuaz na twarzy?
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_01"); //Nie moglem na nie spojrzec, poniewaz widzialem je tylko w odbiciach wody.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_02"); //Jedyna wskazówka, która mi daje, jest obóz bagienny w Minental. Tatuaze sa tam bardzo czesto spotykane.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_03"); //Prawdopodobnie jednak nie bylo mozliwosci wyjscia z bariery i obudzilem sie poza nia.
+	AI_Output(self, hero, "Info_Mod_Argez_NW_Tattoo_37_04"); //Nie moglem wiec byc w kontakcie z obozem bagiennym.
 };
 
 INSTANCE Info_Mod_Argez_NW_EXIT (C_INFO)

@@ -1,7 +1,7 @@
 instance Mod_7510_OUT_Raeuber_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Räuber"; 
+	name 		= "bandyta"; 
 	guild 		= GIL_OUT;
 	id 			= 7510;
 	voice 		= 8;

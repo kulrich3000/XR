@@ -13,7 +13,7 @@ INSTANCE Info_Mod_Schwarzmagier_PAT_Heiltrank (C_INFO)
 
 	important	= 0;
 
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 
 };
 
@@ -50,7 +50,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Essenz der Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Istota uzdrawiania", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_04);
 
 	};
 
@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Elixier der Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_03);
 
 	};
 
@@ -66,7 +66,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Extrakt der Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_02);
 
 	};
 
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Essenz der Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Istota uzdrawiania", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_01);
 
 	};
 
@@ -82,7 +82,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Trank der leichten Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_07);
 
 	};
 
@@ -90,7 +90,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Leichter Heiltrank", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_06);
 
 	};
 
@@ -98,7 +98,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_05);
 
 	};
 

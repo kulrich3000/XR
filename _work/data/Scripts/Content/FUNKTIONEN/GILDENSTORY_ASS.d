@@ -9,7 +9,7 @@ FUNC VOID GILDENSTORY_ASS ()
 		{
 			Mod_ASS_Jack = 3;
 
-			B_LogEntry	(TOPIC_MOD_ASS_JACK, "So das wäre erledigt. Masut wird zufrieden sein.");
+			B_LogEntry	(TOPIC_MOD_ASS_JACK, "Cóz, tak sie stalo. Masut bedzie zadowolony.");
 		};
 
 		// Der Blutkelch
@@ -32,7 +32,7 @@ FUNC VOID GILDENSTORY_ASS ()
 		{
 			Mod_ASS_MirzaAmulett = 1;
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_MirzaAmulett_15_00"); //Hoppla. Da ist ja das Ding. Der muss hungrig gewesen sein.
+			AI_Output(hero, NULL, "Info_Mod_Hero_MirzaAmulett_15_00"); //Opy. Jest cos. On musial byc glodny.
 		};
 
 		if (Mod_ASS_Assassinengold == 2)
@@ -120,7 +120,7 @@ FUNC VOID GILDENSTORY_ASS ()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_ASS_AtVerratHoehle_15_00"); //Hier hat sich wohl jemand häuslich eingerichtet. Wenn ich nur wüsste, wer ...
+			AI_Output(hero, NULL, "Info_Mod_Hero_ASS_AtVerratHoehle_15_00"); //Wyglada jak czyjs dom ustawiony tutaj. Jesli wiedzialem tylko kogo....
 		};
 
 		if (Mod_ASS_NaimBlutkelch == 0)
@@ -129,7 +129,7 @@ FUNC VOID GILDENSTORY_ASS ()
 		{
 			AI_PlayAni	(hero, "T_PLUNDER");
 
-			B_ShowGivenThings	("Blutkelch erhalten");
+			B_ShowGivenThings	("odebrac filizanke");
 
 			CreateInvItems	(hero, ItMi_Bloodcup_Richter, 1);
 
@@ -247,9 +247,9 @@ FUNC VOID GILDENSTORY_ASS ()
 		{
 			Mod_ASS_Blutkelch3 = 6;
 
-			B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Ich habe den 3. Blutkelch. Sollte unverzüglich zu Norek gehen. Und den Brocken verwahren. Er scheint wertvoll zu sein. Nur schade um die anderen ...");
+			B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Dostalem trzecia pozycje. Goblet. Nalezy natychmiast udac sie do Noreka. I zachowac bryle. Wydaje sie ona cenna. Szkoda tylko dla innych....");
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_LastBlutkelch_15_00"); //Ah, endlich. Der Blutkelch. Norek kann zufrieden sein.
+			AI_Output(hero, NULL, "Info_Mod_Hero_LastBlutkelch_15_00"); //Ah, w koncu. Calyx. Norek moze byc zadowolony.
 		};
 
 		// Assassinengold
@@ -267,7 +267,7 @@ FUNC VOID GILDENSTORY_ASS ()
 		{
 			Mod_ASS_Assassinengold = 2;
 
-			B_LogEntry	(TOPIC_MOD_ASS_ASSASSINENGOLD, "Das sollte wohl reichen. Jetzt zurück zu Norek ...");
+			B_LogEntry	(TOPIC_MOD_ASS_ASSASSINENGOLD, "To powinno to nastapic. Teraz wrócmy do Norek.....");
 		};
 
 		// Der Zeremoniendolch
@@ -280,9 +280,9 @@ FUNC VOID GILDENSTORY_ASS ()
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_ASS_Zeremoniendolch_15_00"); //Verdammt! Wieder nichts. Muss ich jetzt ganz Jharkendar absuchen? Hmm ... vielleicht kann mir der Eremit im Tal helfen ...
+				AI_Output(hero, NULL, "Info_Mod_Hero_ASS_Zeremoniendolch_15_00"); //Damn to! Ponownie, nic. Czy teraz musze szukac wszystkich Jharkendara? Hmm..... Moze pustelnik w dolinie mi pomoze.....
 
-				B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Im Adanostempel habe ich umsonst gesucht. Ich werde mal mit dem Eremit im Tal reden, bevor ich ganz Jharkendar absuchen muss.");
+				B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Szukalem niczego w swiatyni adano. Jestem gonna porozmawiac z pustelnikiem w dól doliny, zanim musze sprawdzic wszystkie Jharkendend.");
 
 				Mod_ASS_DolchMonolog = TRUE;
 			};

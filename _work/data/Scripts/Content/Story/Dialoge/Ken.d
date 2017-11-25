@@ -20,15 +20,15 @@ FUNC INT Info_Mod_Ken_Eisgebiet_Condition()
 
 FUNC VOID Info_Mod_Ken_Eisgebiet_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_00"); //Ich habe gehört, dass du dich um Einlass bemühst. Du suchst nach Gelato, habe ich Recht?
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_01"); //Stimmt. Ferco meinte, du weißt wo es liegt.
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_02"); //Ich weiß zwar, wo es liegt, aber das hilft dir nicht weiter, wenn du nicht weißt, wie man dorthin gelangt.
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_03"); //Es existiert ein Teleportzauber dahin, aber er ist schwierig zu finden.
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_04"); //Wo finde ich diesen Zauber?
-	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_05"); //Im Sumpf. Du wirst schon erwartet. Ich kann dir nicht mehr verraten, aber ein Rat noch: Hüte dich vor dem Eremiten.
-	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_06"); //Danke für die Information. Ich werde mich dort umsehen.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_00"); //Slysze, ze próbujesz sie dostac. Szukasz zelato, prawda?
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_01"); //To prawda. Ferco powiedzial, ze wiesz gdzie to jest.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_02"); //Wiem, gdzie jest, ale to nie pomoze, jesli nie wiesz, jak sie tam dostac.
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_03"); //Jest tam zaklecie teleportowe, ale trudno je znalezc.
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_04"); //Gdzie moge znalezc te magie?
+	AI_Output(self, hero, "Info_Mod_Ken_Eisgebiet_03_05"); //Na bagnie. Oczekujesz. Nie moge ci powiedziec wiecej, ale mam tylko jedna rade: wystrzegaj sie pustelnika.
+	AI_Output(hero, self, "Info_Mod_Ken_Eisgebiet_15_06"); //Dziekujemy za informacje. Rozejrze sie dookola.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ken sagte, ich werde im Sumpf erwartet. Ich sollte mich mal dort umsehen. Außerdem soll ich mich vor dem Eremiten hüten.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ken powiedzial, ze spodziewam sie na bagnie. Powinienem sie rozejrzec. Poza tym czuwam nad pustelnikiem.");
 
 	B_StartOtherRoutine	(Mod_2012_PSINOV_Talas_MT, "ATGATE");
 

@@ -1,6 +1,6 @@
 INSTANCE ItMw_Geisterschwert (C_Item) 
 {	
-	name 				=	"Geisterschwert";
+	name 				=	"miecz spirytusowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -23,7 +23,7 @@ INSTANCE ItMw_Geisterschwert (C_Item)
 
 INSTANCE ItMw_BloodySword (C_Item)
 {	
-	name 				=	"Blutiges Schwert";
+	name 				=	"Krwawy miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

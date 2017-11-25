@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Omid_Urs (C_INFO)
 	information	= Info_Mod_Omid_Urs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Koch. Ich habe hier was Nettes für deine Küche.";
+	description	= "Witaj, Koch. Dostalem tu cos milego do Twojej kuchni.";
 };
 
 FUNC INT Info_Mod_Omid_Urs_Condition()
@@ -20,24 +20,24 @@ FUNC INT Info_Mod_Omid_Urs_Condition()
 
 FUNC VOID Info_Mod_Omid_Urs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Omid_Urs_15_00"); //Hallo Koch. Ich habe hier was Nettes für deine Küche. Diese lodernde Pfanne.
-	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_01"); //(überrascht) Hä, wie?
-	AI_Output(hero, self, "Info_Mod_Omid_Urs_15_02"); //Hier, schau.
+	AI_Output(hero, self, "Info_Mod_Omid_Urs_15_00"); //Witaj, Koch. Dostalem tu cos milego do Twojej kuchni. Ta pachnaca patelnia.
+	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_01"); //(zdziwiony) Huh?
+	AI_Output(hero, self, "Info_Mod_Omid_Urs_15_02"); //Tutaj spójrz.
 
 	B_GiveInvItems	(hero, self, ItMi_MagischePfanne, 1);
 
-	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_03"); //Die Pfanne ... heiß? Kann es wirklich sein ...?
+	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_03"); //.... goraco? Czy naprawde moze to byc....?
 
 	B_UseItem	(self, ItMi_MagischePfanne);
 
-	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_04"); //(verblüfft) Tatsächlich. Hätte nicht geglaubt, dass Urs das wirklich hinbekommt. Alle Achtung.
-	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_05"); //Das wird mir die Arbeit um einiges Erleichtern und den Gaumen der Erzbarone erfreuen. Hier, nimm, 500 Goldmünzen. Das ist sie mir Wert.
+	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_04"); //(upadek) Naprawde. Nie sadzilem, ze Urs naprawde to sobie poradzi. Uwaga, slusznie.
+	AI_Output(self, hero, "Info_Mod_Omid_Urs_02_05"); //To ulatwi mi prace i zachwyci podniebienie baronów rudy. Tutaj, wez 500 zlotych monet. Jest to dla mnie warte.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_URS_HUND, "Omid hat seine Pfanne und ich 500 Münzen.");
+	B_LogEntry	(TOPIC_MOD_URS_HUND, "Omid ma swoja patelnie i mam 500 monet.");
 };
 
 INSTANCE Info_Mod_Omid_Pickpocket (C_INFO)

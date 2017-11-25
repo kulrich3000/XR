@@ -1,7 +1,7 @@
 instance Mod_541_NONE_Till_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Till";
+	name 		= "glina zwalowa";
 	guild 		= GIL_OUT;
 	id 			= 541;
 	voice 		= 3;

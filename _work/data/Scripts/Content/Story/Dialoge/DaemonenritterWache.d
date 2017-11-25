@@ -25,12 +25,12 @@ FUNC INT Info_Mod_DaemonenritterWache_Hi_Condition()
 
 FUNC VOID Info_Mod_DaemonenritterWache_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_00"); //Halt! Was willst du von Gomez?
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_01"); //Ich habe eine wichtige Nachricht für ihn.
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_02"); //Eine Nachricht kann nicht so wichtig sein, als das ich sie mir nicht anhören kann, um zu entscheiden, wie wichtig sie ist.
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_03"); //Die Nachricht ist nur für Gomez persönlich bestimmt.
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_04"); //Das kann jeder sagen. Wer bist du überhaupt?
-	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_05"); //Ich bin ...
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_00"); //Zatrzymaj sie! Czego chcesz z Gomezem?
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_01"); //Mam dla niego wazne przeslanie.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_02"); //Przeslanie nie moze byc tak wazne, jak nie potrafie go posluchac i zdecydowac, jak wazne jest.
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_03"); //Oredzie jest przeznaczone tylko dla samego Gomeza.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Hi_12_04"); //Kazdy moze to powiedziec. Kim tak czy owak jestes?
+	AI_Output(hero, self, "Info_Mod_DaemonenritterWache_Hi_15_05"); //Jestem.....
 
 	B_StartOtherRoutine	(Mod_517_DMR_Gomez_MT, "INAL");
 
@@ -60,7 +60,7 @@ FUNC VOID Info_Mod_DaemonenritterWache_Ok_Info()
 {
 	AI_TurnToNpc	(self, Mod_517_DMR_Gomez_MT);
 
-	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Ok_12_00"); //Ja, Herr.
+	AI_Output(self, hero, "Info_Mod_DaemonenritterWache_Ok_12_00"); //Tak, panie posle.
 
 	AI_StopProcessInfos	(self);
 };

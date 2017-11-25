@@ -1,7 +1,7 @@
 INSTANCE Mod_7293_OUT_Brody_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brody";
+	name 		= "broj";
 	guild 		= GIL_OUT;
 	id 			= 7293;
 	voice 		= 9;

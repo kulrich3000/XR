@@ -29,7 +29,7 @@ func int Info_Mod_Assassinenkrieger_FirstWarn_Condition()
 
 func void Info_Mod_Assassinenkrieger_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_FirstWarn_13_00"); //HALT! Du bist noch nicht befugt, den hinteren Bereich des Lagers zu betreten.
+	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_FirstWarn_13_00"); //HALT! Nie jestes jeszcze upowazniony do wejscia na teren obozu.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Assassinenkrieger_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -62,7 +62,7 @@ FUNC INT Info_Mod_Assassinenkrieger_SecondWarn_Condition()
 
 func void Info_Mod_Assassinenkrieger_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_SecondWarn_13_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_SecondWarn_13_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Assassinenkrieger_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -100,7 +100,7 @@ func void Info_Mod_Assassinenkrieger_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_Attack_13_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Assassinenkrieger_Attack_13_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

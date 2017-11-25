@@ -1,7 +1,7 @@
 instance Mod_1981_Kolam_FI (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Kolam";
+	name 		=		"cola";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_DMT;
 	level 		=		20;

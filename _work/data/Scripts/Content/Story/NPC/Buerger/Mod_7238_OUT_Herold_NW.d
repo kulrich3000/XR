@@ -1,7 +1,7 @@
 instance Mod_7238_OUT_Herold_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Herold";
+	name 		= "zwiastun";
 	guild 		= GIL_PAL;
 	id 			= 7238;
 	voice 		= 4;

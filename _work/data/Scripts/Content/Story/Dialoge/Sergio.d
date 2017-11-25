@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sergio_Dragon (C_INFO)
 	information	= Info_Mod_Sergio_Dragon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du denn hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Sergio_Dragon_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Sergio_Dragon_Condition()
 
 FUNC VOID Info_Mod_Sergio_Dragon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sergio_Dragon_15_00"); //Was machst du denn hier? Bist du nicht der Paladin aus dem Kloster?
-	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_01"); //(in sein Schicksal ergeben) Ja, der bin ich. Ich bin hier, um meine Ehre wiederzugewinnen.
-	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_02"); //Bei dem Angriff der Dämonen auf das Kloster, zog ich mich mit den anderen in die inneren Räumlichkeiten zurück, anstatt weiter gegen die Bestien zu kämpfen.
-	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_03"); //Hier habe ich nun diese abscheulichen Geschöpfe ausfindig gemacht und sammle nun Kraft im Gebet, bevor ich gegen sie in den Kampf ziehe.
-	AI_Output(hero, self, "Info_Mod_Sergio_Dragon_15_04"); //Auch ich sinne auf die Vernichtung dieser Geschöpfe. Ich treffe aber noch Vorbereitungen, um den Erfolg dieser Mission zu gewährleisten.
-	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_05"); //(hoffnungsvoll) Wirklich? Wenn es so weit ist, wird es mir eine Ehre sein, an deiner Seite zu kämpfen. Für Innos!
+	AI_Output(hero, self, "Info_Mod_Sergio_Dragon_15_00"); //Co Pan tutaj robi? Czyz nie jestes paladyna z klasztoru?
+	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_01"); //Tak, jestem nim. Jestem tutaj, aby odzyskac mój zaszczyt.
+	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_02"); //Kiedy demony zaatakowaly klasztor, wycofalem sie wraz z innymi do wewnetrznych pomieszczen, zamiast kontynuowac walke z bestiami.
+	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_03"); //Oto teraz odkrylem te straszliwe stworzenia i teraz nabieram sily w modlitwie, zanim przystapilem do walki z nimi.
+	AI_Output(hero, self, "Info_Mod_Sergio_Dragon_15_04"); //Ja równiez mysle o zniszczeniu tych stworzen. Nadal jednak przygotowuje sie do zapewnienia powodzenia tej misji.
+	AI_Output(self, hero, "Info_Mod_Sergio_Dragon_04_05"); //Szczerze? Kiedy nadejdzie odpowiedni moment, bedzie to zaszczyt walczyc razem z Toba. Dla Innosów!
 
 	AI_StopProcessInfos	(self);
 };
@@ -49,8 +49,8 @@ FUNC INT Info_Mod_Sergio_FeuerGegenEis_Condition()
 
 FUNC VOID Info_Mod_Sergio_FeuerGegenEis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sergio_FeuerGegenEis_04_00"); //Verdammt, es waren einfach zu viele. Ich habe versagt und die Novizen nicht vor ihrem Verderben bewahrt.
-	AI_Output(self, hero, "Info_Mod_Sergio_FeuerGegenEis_04_01"); //(zischt und setzt sich) Ahh, mein Bein.
+	AI_Output(self, hero, "Info_Mod_Sergio_FeuerGegenEis_04_00"); //Damn, bylo ich zbyt wiele. Nie udalo mi sie i nie uratowalem nowicjuszy od ich zniszczenia.
+	AI_Output(self, hero, "Info_Mod_Sergio_FeuerGegenEis_04_01"); //Ah, moja noga.
 
 	AI_StopProcessInfos	(self);
 

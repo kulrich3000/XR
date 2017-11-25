@@ -1,7 +1,7 @@
 instance Mod_7351_OUT_Ranck_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ranck";
+	name 		= "zjelczaly";
 	guild 		= GIL_OUT;
 	id 			= 7351;
 	voice 		= 12;

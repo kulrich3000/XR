@@ -1,7 +1,7 @@
 instance Mod_773_NONE_Sagitta_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sagitta";
+	name 		= "sagitta";
 	guild 		= GIL_NONE;
 	id 			= 773;
 	voice 		= 26;

@@ -114,7 +114,7 @@ FUNC VOID B_CheckAllTeleports(var int unlock)
 			
 			Spine_UnlockAchievement(SPINE_ACHIEVEMENT_31);
 
-			B_LogEntry	(TOPIC_MOD_BELIAR_SCHREINE, "Ich habe alle Schreine aktiviert. Mal schauen, was meine Belohnung sein wird.");
+			B_LogEntry	(TOPIC_MOD_BELIAR_SCHREINE, "Uaktywnilem wszystkie swiatynie. Zobaczmy, jaka bedzie moja nagroda.");
 
 			newXP += 1500;
 		};
@@ -186,7 +186,7 @@ INSTANCE PC_PrayIdol_SpezielleRune (C_INFO)
 	information	= PC_PrayIdol_SpezielleRune_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Rune aufladen";
+	description	= "Ladowanie czerwieni";
 };
 
 FUNC INT PC_PrayIdol_SpezielleRune_Condition()
@@ -219,7 +219,7 @@ INSTANCE PC_PrayIdol_SteinEinfuegen (C_INFO)
 	information	= PC_PrayIdol_SteinEinfuegen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Stein einfügen)";
+	description	= "(wstawic kamien)";
 };
 
 FUNC INT PC_PrayIdol_SteinEinfuegen_Condition()
@@ -240,7 +240,7 @@ FUNC VOID PC_PrayIdol_SteinEinfuegen_Info()
 	hero.attribute[ATR_MANA] -= 5;
 	hero.attribute[ATR_MANA_MAX] -= 5;
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Ich habe den Beliarschrein repariert.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Naprawilem bialoruska kapliczke.");
 };
 
 INSTANCE PC_PrayIdol_TeleportPlusBibliothek (C_INFO)
@@ -251,7 +251,7 @@ INSTANCE PC_PrayIdol_TeleportPlusBibliothek (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusBibliothek_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusBibliothek_Condition()
@@ -278,7 +278,7 @@ INSTANCE PC_PrayIdol_TeleportPlusCity (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusCity_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusCity_Condition()
@@ -305,7 +305,7 @@ INSTANCE PC_PrayIdol_TeleportPlusOldmine (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusOldmine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusOldmine_Condition()
@@ -332,7 +332,7 @@ INSTANCE PC_PrayIdol_TeleportPlusOldDementower (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusOldDementower_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusOldDementower_Condition()
@@ -359,7 +359,7 @@ INSTANCE PC_PrayIdol_TeleportPlusBanditenlager (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusBanditenlager_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusBanditenlager_Condition()
@@ -386,7 +386,7 @@ INSTANCE PC_PrayIdol_TeleportPlusBergfestung (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusBergfestung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusBergfestung_Condition()
@@ -413,7 +413,7 @@ INSTANCE PC_PrayIdol_TeleportPlusOrkstadt (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusOrkstadt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusOrkstadt_Condition()
@@ -440,7 +440,7 @@ INSTANCE PC_PrayIdol_TeleportPlusCanyon (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusCanyon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusCanyon_Condition()
@@ -467,7 +467,7 @@ INSTANCE PC_PrayIdol_TeleportPlusStrand (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusStrand_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusStrand_Condition()
@@ -494,7 +494,7 @@ INSTANCE PC_PrayIdol_TeleportPlusEremit (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusEremit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusEremit_Condition()
@@ -521,7 +521,7 @@ INSTANCE PC_PrayIdol_TeleportPlusEisgebiet (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusEisgebiet_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusEisgebiet_Condition()
@@ -548,7 +548,7 @@ INSTANCE PC_PrayIdol_TeleportPlusKanalisation (C_INFO)
 	information	= PC_PrayIdol_TeleportPlusKanalisation_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Teleport-System einfügen";
+	description	= "Wstawianie do systemu teleportowego";
 };
 
 FUNC INT PC_PrayIdol_TeleportPlusKanalisation_Condition()
@@ -575,7 +575,7 @@ INSTANCE PC_PrayIdol_Teleport (C_INFO)
 	information	= PC_PrayIdol_Teleport_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teleport zu ...";
+	description	= "Teleport do.....";
 };
 
 FUNC INT PC_PrayIdol_Teleport_Condition()
@@ -606,64 +606,64 @@ FUNC VOID PC_PrayIdol_Teleport_Info()
 
 	if (Mod_BeliarStatue_Eisgebiet_Dabei == TRUE)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem Eisgebiet", PC_PrayIdol_Teleport_Eisgebiet);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... obszar lodowiska", PC_PrayIdol_Teleport_Eisgebiet);
 	};
 
 	if (Mod_BeliarStatue_City_Dabei == TRUE)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Stadt", PC_PrayIdol_Teleport_City);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... miasta", PC_PrayIdol_Teleport_City);
 	};
 
 	if (Mod_BeliarStatue_Kanalisation_Dabei == TRUE)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Spendenhöhle", PC_PrayIdol_Teleport_Kanalisation);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... jaskini oddania", PC_PrayIdol_Teleport_Kanalisation);
 	};
 
-	Info_AddChoice	(PC_PrayIdol_Teleport, "... Xardas", PC_PrayIdol_Teleport_Xardas);
+	Info_AddChoice	(PC_PrayIdol_Teleport, "... kardany", PC_PrayIdol_Teleport_Xardas);
 
 	if (Mod_BeliarStatue_Krieger_Dabei == TRUE)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Beliarfestung", PC_PrayIdol_Teleport_Krieger);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... twierdza Beliar", PC_PrayIdol_Teleport_Krieger);
 	};
 
 	if (Mod_BeliarStatue_Bibliothek_Dabei == TRUE)
 	&& ((Kapitel < 5)
 	|| (Mod_BeliarBibScene == 4))
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Bibliothek", PC_PrayIdol_Teleport_Bibliothek);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... biblioteka", PC_PrayIdol_Teleport_Bibliothek);
 	};
 		
 	if (Mod_BeliarStatue_Banditenlager_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem Banditenlager", PC_PrayIdol_Teleport_Banditenlager);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... obóz bandyta", PC_PrayIdol_Teleport_Banditenlager);
 	};	
 	if (Mod_BeliarStatue_Bergfestung_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Bergfestung", PC_PrayIdol_Teleport_Bergfestung);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... twierdza górska", PC_PrayIdol_Teleport_Bergfestung);
 	};
 	if (Mod_BeliarStatue_Orkstadt_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der Orkstadt", PC_PrayIdol_Teleport_Orkstadt);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... Miasto Ork", PC_PrayIdol_Teleport_Orkstadt);
 	};
 	if (Mod_BeliarStatue_Oldmine_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... der alten Mine", PC_PrayIdol_Teleport_Oldmine);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... starej kopalni", PC_PrayIdol_Teleport_Oldmine);
 	};
 	if (Mod_BeliarStatue_Canyon_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem Canyon", PC_PrayIdol_Teleport_Canyon);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... kanion", PC_PrayIdol_Teleport_Canyon);
 	};
 	if (Mod_BeliarStatue_Strand_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem Piratenstrand", PC_PrayIdol_Teleport_Strand);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... piracka plaza", PC_PrayIdol_Teleport_Strand);
 	};
 	if (Mod_BeliarStatue_Eremit_Dabei == 1)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem Eremit", PC_PrayIdol_Teleport_Eremit);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... pustelnik", PC_PrayIdol_Teleport_Eremit);
 	};
 	if (Mod_BeliarStatue_OldDementower_Dabei == TRUE)
 	{
-		Info_AddChoice	(PC_PrayIdol_Teleport, "... dem alten Dämonenturm", PC_PrayIdol_Teleport_OldDementower);
+		Info_AddChoice	(PC_PrayIdol_Teleport, "... stara demoniczna wieza", PC_PrayIdol_Teleport_OldDementower);
 	};
 };
 

@@ -1,6 +1,6 @@
 INSTANCE ITAR_PAL_H3 (C_Item)
 {
-	name 					=	"Paladinrüstung";
+	name 					=	"rusztowanie paladynowe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

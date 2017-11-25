@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Baecker_August (C_INFO)
 	information	= Info_Mod_Baecker_August_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast Fladenbrot? (10 Gold)";
+	description	= "Masz chleb pita? (10) Zloto";
 };
 
 FUNC INT Info_Mod_Baecker_August_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Baecker_August_Condition()
 
 FUNC VOID Info_Mod_Baecker_August_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Baecker_August_15_00"); //Du hast Fladenbrot?
-	AI_Output(self, hero, "Info_Mod_Baecker_August_01_01"); //Gewiss. Eine Spezialität meines Hauses.
+	AI_Output(hero, self, "Info_Mod_Baecker_August_15_00"); //Masz chleb pita?
+	AI_Output(self, hero, "Info_Mod_Baecker_August_01_01"); //Oczywiscie. Specjalnosc mojego domu.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 10);
 
 	CreateInvItems	(hero, ItFo_Fladenbrot, 1);
 
-	B_ShowGivenThings	("10 Gold gegeben und Fladenbrot erhalten");
+	B_ShowGivenThings	("10 Zloto udzielone i uzyskane chleb plaski");
 
-	B_LogEntry	(TOPIC_MOD_JG_AUGUST, "Ich hab das Fladenbrot vom Bäcker.");
+	B_LogEntry	(TOPIC_MOD_JG_AUGUST, "Dostalem chleb piekarski.");
 };
 
 INSTANCE Info_Mod_Baecker_Pickpocket (C_INFO)

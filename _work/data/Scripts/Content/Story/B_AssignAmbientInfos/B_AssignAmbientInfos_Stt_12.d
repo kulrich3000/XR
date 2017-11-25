@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich würde mich gerne den Schatten anschliessen.";
+	description = "Chcialbym dolaczyc do cienia.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -52,11 +52,11 @@ FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Ich würde mich gerne den Schatten anschließen.
-	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_01"); //So? Dann solltest du wissen, dass Thorus kein Versagen duldet. Wenn du einer von uns werden willst, musst du für ihn durchs Feuer gehen!
-	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Nur die Hälfte derer, die es versucht haben, sind aufgenommen worden.
-	AI_Output(hero,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Was ist mit dem Rest passiert?
-	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Vermutlich sitzen die im Neuen Lager und fressen Reis. He he he.
+	AI_Output(hero,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Chcialbym przylaczyc sie do cienia.
+	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Lubie to? Wtedy powinienes wiedziec, ze Thorus nie bedzie tolerowal bledów. Jesli chcesz byc jednym z nas, musisz dla niego przejsc przez ogien!
+	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Tylko polowa tych, którzy próbowali, zostala przyjeta.
+	AI_Output(hero,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Co sie stalo z reszta?
+	AI_Output(self,hero,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Prawdopodobnie siedzac w Nowym Obozie, jedzac ryz. Hey hey hey hey hey hey hey hey.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist hier der Boss?";
+	description = "Kim jest szef?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Stt_12_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,hero,"Info_Stt_12_WichtigePersonen_12_01"); //Thorus ist unser Boss.
+	AI_Output(hero,self,"Info_Stt_12_WichtigePersonen_15_00"); //Kim jest szef?
+	AI_Output(self,hero,"Info_Stt_12_WichtigePersonen_12_01"); //Thorus jest naszym szefem.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Stt_12_DasLager(C_INFO)
 	condition	= Info_Stt_12_DasLager_Condition;
 	information	= Info_Stt_12_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will wissen, was es hier im Lager alles gibt.";
+	description = "Chce wiedziec, co jest dostepne w obozie.";
 };                       
 
 FUNC INT Info_Stt_12_DasLager_Condition()
@@ -103,8 +103,8 @@ FUNC INT Info_Stt_12_DasLager_Condition()
 
 FUNC VOID Info_Stt_12_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Stt_12_DasLager_15_00"); //Ich will wissen, was es hier im Lager alles gibt.
-	AI_Output(self,hero,"Info_Stt_12_DasLager_12_01"); //Frag am besten die Buddler. Die haben sowieso den ganzen Tag nichts zu tun.
+	AI_Output(hero,self,"Info_Stt_12_DasLager_15_00"); //Chce wiedziec, co jest dostepne w obozie.
+	AI_Output(self,hero,"Info_Stt_12_DasLager_12_01"); //Dlaczego nie pytasz Buddlerów? Nie maja nic do zrobienia przez caly dzien.
 };
 
 // *************************************************************************
@@ -117,7 +117,7 @@ INSTANCE Info_Stt_12_DieLage(C_INFO) // E1
 	condition	= Info_Stt_12_DieLage_Condition;
 	information	= Info_Stt_12_DieLage_Info;
 	permanent	= 1;
-	description = "Na, wie steht's?";
+	description = "Jaki jest wynik?";
 };                       
 
 FUNC INT Info_Stt_12_DieLage_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_Stt_12_DieLage_Condition()
 
 FUNC VOID Info_Stt_12_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Stt_12_DieLage_15_00"); //Na, wie steht's?
-	AI_Output(self,hero,"Info_Stt_12_DieLage_12_01"); //Was genau willst du von mir?
+	AI_Output(hero,self,"Info_Stt_12_DieLage_15_00"); //Jaki jest wynik?
+	AI_Output(self,hero,"Info_Stt_12_DieLage_12_01"); //Czego dokladnie od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_STT_12_Pickpocket (C_INFO)

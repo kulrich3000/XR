@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_1_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_1_Mine_Condition;
 	information	= Info_OM_BUD_1_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Opowiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT Info_OM_BUD_1_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_1_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_1_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_01"); //In Höhlen wachsen Pilze und Kraut. Das Zeug ist ganz gut verträglich. Macht aber nicht so satt wie ein anständiges Stück Fleisch.
-	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_02"); //Die Crawler sind auch ungenießbar. Was für ein Mist.
+	AI_Output(other,self,"Info_OM_BUD_1_Mine_15_00"); //Opowiedz mi o mojej kopalni.
+	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_01"); //W jaskiniach rosna grzyby i kapusta. To jest dosc dobrze tolerowane. Ale nie napelniaj go jak kawalek przyzwoitego miesa.
+	AI_Output(self,other,"Info_OM_BUD_1_Mine_01_02"); //Gasienice sa równiez niejadalne. Cóz za balagan.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_1_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_1_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Kto ma w tym cos do powiedzenia?";
 };                       
 
 FUNC INT Info_OM_BUD_1_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_WichtigePersonen_15_00"); //Wer hat hier was zu Sagen?
-	AI_Output(self,other,"Info_OM_BUD_1_WichtigePersonen_01_01"); //Kurgan ist der Chef der Mine. Er organisiert die Arbeit und den Warenaustausch mit dem Lager. Wenn du also irgendwas willst, wende dich an ihn.
+	AI_Output(other,self,"Info_OM_BUD_1_WichtigePersonen_15_00"); //Kto ma w tym cos do powiedzenia?
+	AI_Output(self,other,"Info_OM_BUD_1_WichtigePersonen_01_01"); //Kurgan jest szefem kopalni. Organizuje prace i wymiane towarów z magazynem. Wiec jesli chcesz cos, po prostu skontaktuj sie z nim.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_1_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_1_DieLage_Condition;
 	information	= Info_OM_BUD_1_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_OM_BUD_1_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_OM_BUD_1_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_1_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_1_DieLage_01_01"); //Viel Arbeit, wenig Ruhe. Also stell deine Fragen schnell. Ich hab' zu tun.
+	AI_Output(other,self,"Info_OM_BUD_1_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,other,"Info_OM_BUD_1_DieLage_01_01"); //Duza ilosc pracy, maly odpoczynek. Dlatego szybko zadawaj pytania. Jestem zajety.
 };
 
 INSTANCE Info_Mod_OM_BUD_1_Pickpocket (C_INFO)

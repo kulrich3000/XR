@@ -1,7 +1,7 @@
 INSTANCE Mod_514_DMB_Karras_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Karras";
+	name 		= "karawany";
 	guild 		= GIL_KDF;
 	id 			= 514;
 	voice 		= 36;

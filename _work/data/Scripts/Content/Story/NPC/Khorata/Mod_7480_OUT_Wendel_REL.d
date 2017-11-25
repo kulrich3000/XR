@@ -1,7 +1,7 @@
 instance Mod_7480_OUT_Wendel_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wendel"; 
+	name 		= "spirala"; 
 	guild 		= GIL_OUT;
 	id 			= 7480;
 	voice 		= 1;

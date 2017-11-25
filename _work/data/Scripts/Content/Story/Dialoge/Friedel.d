@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Friedel_Hi (C_INFO)
 	information	= Info_Mod_Friedel_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Friedel_Hi_Condition()
@@ -18,15 +18,15 @@ FUNC VOID Info_Mod_Friedel_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Friedel_Hi_01_00"); //Ich bin Friedel und unterrichte die jungen Männer im Kampf.
+	AI_Output(self, hero, "Info_Mod_Friedel_Hi_01_00"); //Jestem Friedel, ucze mlodych mezczyzn jak walczyc.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Friedel_Hi_15_01"); //Kannst du auch mir etwas beibringen?
-		AI_Output(self, hero, "Info_Mod_Friedel_Hi_01_02"); //Solange du unerfahren bist, werde ich dir sicher den einen oder anderen Kniff zeigen können.
+		AI_Output(hero, self, "Info_Mod_Friedel_Hi_15_01"); //Czy mozesz mnie czegos nauczyc?
+		AI_Output(self, hero, "Info_Mod_Friedel_Hi_01_02"); //Tak dlugo, jak dlugo jestescie niedoswiadczeni, bede w stanie pokazac wam jedna lub dwie sztuczki.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORATA, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Friedel kann mir den Umgang mit Einhändern zeigen und mir helfen, stärker zu werden.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_KHORATA, "Friedel moze pokazac mi, jak radzic sobie z ludzmi jednej reki i pomóc mi wzmocnic sie.");
 	};
 };
 
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Friedel_Wettstreit (C_INFO)
 	information	= Info_Mod_Friedel_Wettstreit_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin wegen der Rattenjagd hier.";
+	description	= "Jestem tutaj na polowanie na szczury.";
 };
 
 FUNC INT Info_Mod_Friedel_Wettstreit_Condition()
@@ -53,38 +53,38 @@ FUNC INT Info_Mod_Friedel_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Friedel_Wettstreit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_15_00"); //Ich bin wegen der Rattenjagd hier.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_01"); //Schön! Damit hätten wir einen dritten Teilnehmer.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_02"); //Die anderen beiden werden meine Lehrlinge sein, die bei der Rattenjagd ihre Abschlussprüfung ablegen.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_03"); //Können wir dann starten?
-	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_15_04"); //Ich würde gern die Regeln kennen.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_05"); //Das lässt sich einrichten!
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_06"); //Hier am Seeufer wimmelt es immer von Ratten.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_07"); //Die Teilnehmer starten gleichzeitig und müssen alle Ratten um den See herum töten.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_08"); //Wer dabei am erfolgreichsten ist, gewinnt und erhält einen Geldpreis.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_09"); //Wenn du bereit bist, können wir beginnen.
+	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_15_00"); //Jestem tutaj na polowanie na szczury.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_01"); //Nicei! To daloby nam trzeci uczestnik.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_02"); //Pozostale dwie osoby beda moimi praktykantami, którzy zdaja ostatnie egzaminy z polowania na szczury.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_03"); //Czy mozemy zatem wystartowac?
+	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_15_04"); //Chcialbym poznac zasady.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_05"); //Mozna to zaaranzowac!
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_06"); //Nad jeziorem zawsze sa szczury.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_07"); //Uczestnicy zaczynaja w tym samym czasie i musza zabic wszystkie szczury wokól jeziora.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_08"); //Kto odnosi najwieksze sukcesy, ten wygrywa i otrzymuje nagrode pieniezna.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_01_09"); //Kiedy bedziesz gotowy, mozemy zaczac.
 
 	Info_ClearChoices	(Info_Mod_Friedel_Wettstreit);
 
-	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "Ich komme gleich wieder.", Info_Mod_Friedel_Wettstreit_B);
-	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "Ich bin bereit.", Info_Mod_Friedel_Wettstreit_A);
+	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "Bede z powrotem.", Info_Mod_Friedel_Wettstreit_B);
+	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "Jestem gotowy.", Info_Mod_Friedel_Wettstreit_A);
 };
 
 FUNC VOID Info_Mod_Friedel_Wettstreit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_B_15_00"); //Ich komme gleich wieder.
+	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_B_15_00"); //Bede z powrotem.
 
 	Info_ClearChoices	(Info_Mod_Friedel_Wettstreit);
 };
 
 FUNC VOID Info_Mod_Friedel_Wettstreit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_A_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_A_01_01"); //Dann verlier keine Zeit!
+	AI_Output(hero, self, "Info_Mod_Friedel_Wettstreit_A_15_00"); //Jestem gotowy.
+	AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit_A_01_01"); //Nie trac wiec czasu!
 
 	Mod_REL_Wettstreit = 2;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Ich muss nun möglichst viele Ratten am Seeufer töten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Musze zabic jak najwiecej szczurów na brzegu jeziora.");
 
 	Info_ClearChoices	(Info_Mod_Friedel_Wettstreit);
 
@@ -158,8 +158,8 @@ FUNC VOID Info_Mod_Friedel_Wettstreit2_Info()
 	if (Mod_REL_Wettstreit_Hero > Mod_REL_Wettstreit_Tyrus)
 	&& (Mod_REL_Wettstreit_Hero > Mod_REL_Wettstreit_Davon)
 	{
-		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_00"); //Alle Achtung, gegen dich hätte sogar ich es schwer gehabt.
-		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_01"); //Dafür sollst du belohnt werden.
+		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_00"); //Z calym szacunkiem, nawet gdybym mial z wami trudny czas.
+		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_01"); //Zostaniesz za to wynagrodzony.
 
 		B_GivePlayerXP	(50);
 
@@ -169,11 +169,11 @@ FUNC VOID Info_Mod_Friedel_Wettstreit2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_02"); //Heute hat es nicht gereicht.
+		AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_02"); //Dzis nie wystarczylo.
 
 		if (Mod_REL_Wettstreit_Verloren == 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_03"); //Aber da wir dieses Jahr so viele Ratten haben, können wir morgen noch einen Wettstreit veranstalten. Vielleicht bist du dann erfolgreicher.
+			AI_Output(self, hero, "Info_Mod_Friedel_Wettstreit2_01_03"); //Ale poniewaz w tym roku mamy tak wiele szczurów, jutro bedziemy mogli rywalizowac. Moze to sprawi, ze odniesiesz wiekszy sukces.
 
 			Mod_REL_Wettstreit_Tag = Wld_GetDay();
 
@@ -213,17 +213,17 @@ FUNC INT Info_Mod_Friedel_Buerger_Condition()
 
 FUNC VOID Info_Mod_Friedel_Buerger_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_00"); //Ein neuer in unseren Reihen. Hier hast du das Startkapital.
+	AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_00"); //Nowy w naszych szeregach. Oto kapital poczatkowy.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Friedel_Buerger_15_01"); //Das ist aber wenig.
+		AI_Output(hero, self, "Info_Mod_Friedel_Buerger_15_01"); //To niewiele.
 
 		if (self.aivar[AIV_Verhandlung] == TRUE)
 		{
-			AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_02"); //Da hast du schon Recht. Aber das hier muss reichen!
+			AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_02"); //Ma pani racje. Ale trzeba to zrobic!
 
 			B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -231,7 +231,7 @@ FUNC VOID Info_Mod_Friedel_Buerger_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_03"); //Das soll auch nicht für den Rest deines Lebens reichen! Geh arbeiten!
+			AI_Output(self, hero, "Info_Mod_Friedel_Buerger_01_03"); //To nie wystarczy do konca zycia! Idz do pracy!
 		};
 	};
 };
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Friedel_Unruhen (C_INFO)
 	information	= Info_Mod_Friedel_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Wir wollen die Bergleute aufmischen. Komm mit.";
+	description 	= "Bijmy górników. Przyjedz ze mna.";
 };                       
 
 FUNC INT Info_Mod_Friedel_Unruhen_Condition()
@@ -258,8 +258,8 @@ FUNC INT Info_Mod_Friedel_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Friedel_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Unruhen_15_00"); //Wir wollen die Bergleute aufmischen. Komm mit.
-	AI_Output(self, hero, "Info_Mod_Friedel_Unruhen_01_01"); //Na schön, auch wenn es so nicht richtig ist.
+	AI_Output(hero, self, "Info_Mod_Friedel_Unruhen_15_00"); //Bijmy górników. Przyjedz ze mna.
+	AI_Output(self, hero, "Info_Mod_Friedel_Unruhen_01_01"); //Wszystko w porzadku, nawet jesli nie ma racji.
 
 	AI_StopProcessInfos	(self);
 
@@ -276,7 +276,7 @@ INSTANCE Info_Mod_Friedel_Freudenspender (C_INFO)
 	information	= Info_Mod_Friedel_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Willst du Freudenspender?";
+	description 	= "Chcesz dac przyjemnosc?";
 };                       
 
 FUNC INT Info_Mod_Friedel_Freudenspender_Condition()
@@ -291,8 +291,8 @@ FUNC INT Info_Mod_Friedel_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Friedel_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Freudenspender_15_00"); //Willst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Friedel_Freudenspender_01_01"); //Sag mal, willst du mich verarschen? Nein, will ich nicht!
+	AI_Output(hero, self, "Info_Mod_Friedel_Freudenspender_15_00"); //Chcesz dac przyjemnosc?
+	AI_Output(self, hero, "Info_Mod_Friedel_Freudenspender_01_01"); //Czy kochasz mnie? Nie, nie chce!
 };
 
 INSTANCE Info_Mod_Friedel_Lernen (C_INFO)
@@ -303,7 +303,7 @@ INSTANCE Info_Mod_Friedel_Lernen (C_INFO)
 	information	= Info_Mod_Friedel_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Friedel_Lernen_Condition()
@@ -317,14 +317,14 @@ FUNC INT Info_Mod_Friedel_Lernen_Condition()
 
 FUNC VOID Info_Mod_Friedel_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Friedel_Lernen_15_00"); //Ich will lernen.
-	AI_Output(self, hero, "Info_Mod_Friedel_Lernen_01_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Friedel_Lernen_15_00"); //Chce sie uczyc.
+	AI_Output(self, hero, "Info_Mod_Friedel_Lernen_01_01"); //Czego chcesz sie nauczyc?
 
 	Info_ClearChoices	(Info_Mod_Friedel_Lernen);
 
 	Info_AddChoice	(Info_Mod_Friedel_Lernen, DIALOG_BACK, Info_Mod_Friedel_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Einhandkampf)", Info_Mod_Friedel_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Stärke)", Info_Mod_Friedel_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(walka jednoreczna)", Info_Mod_Friedel_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(wytrzymalosc)", Info_Mod_Friedel_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Friedel_Lernen_BACK()
@@ -346,8 +346,8 @@ FUNC VOID Info_Mod_Friedel_Lernen_Einhand_BACK()
 	Info_ClearChoices	(Info_Mod_Friedel_Lernen);
 
 	Info_AddChoice	(Info_Mod_Friedel_Lernen, DIALOG_BACK, Info_Mod_Friedel_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Einhandkampf)", Info_Mod_Friedel_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Stärke)", Info_Mod_Friedel_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(walka jednoreczna)", Info_Mod_Friedel_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(wytrzymalosc)", Info_Mod_Friedel_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Friedel_Lernen_Einhand_5()
@@ -388,8 +388,8 @@ FUNC VOID Info_Mod_Friedel_Lernen_Staerke_BACK()
 	Info_ClearChoices	(Info_Mod_Friedel_Lernen);
 
 	Info_AddChoice	(Info_Mod_Friedel_Lernen, DIALOG_BACK, Info_Mod_Friedel_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Einhandkampf)", Info_Mod_Friedel_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(Stärke)", Info_Mod_Friedel_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(walka jednoreczna)", Info_Mod_Friedel_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Friedel_Lernen, "(wytrzymalosc)", Info_Mod_Friedel_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Friedel_Lernen_Staerke_5()

@@ -1,7 +1,7 @@
 instance Mod_1987_PSIGUR_Guru_FI (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Fanatischer Guru";
+	name 		=		"Fanatyczny Guru";
 	Npctype 	=		NPCTYPE_Main;
 	guild 		=		GIL_DMT;
 	level 		=		28;

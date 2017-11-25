@@ -1,7 +1,7 @@
 instance Mod_799_BAU_Thekla_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Thekla";
+	name 		= "barylka";
 	guild 		= GIL_NONE;
 	id 			= 799;
 	voice 		= 17;

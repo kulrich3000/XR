@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sly_Hi (C_INFO)
 	information	= Info_Mod_Sly_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast auch nichts zu tun, oder?";
+	description	= "Czy nie masz nic innego do zrobienia?";
 };
 
 FUNC INT Info_Mod_Sly_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Sly_Hi_Condition()
 
 FUNC VOID Info_Mod_Sly_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Hi_15_00"); //Du hast auch nichts zu tun, oder?
-	AI_Output(self, hero, "Info_Mod_Sly_Hi_31_01"); //(angetrunken) Bleib mal ganz ruhig, Bruder. Warum setzt du dich nicht dazu und hast ein bisschen Spaß mit uns?
+	AI_Output(hero, self, "Info_Mod_Sly_Hi_15_00"); //Czy nie masz nic innego do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Sly_Hi_31_01"); //Wystarczy wziac to latwo, brodzac. Dlaczego nie siedzisz i baw sie z nami?
 };
 
 INSTANCE Info_Mod_Sly_WasPassiert (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Sly_WasPassiert (C_INFO)
 	information	= Info_Mod_Sly_WasPassiert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist denn nur aus euch geworden?";
+	description	= "Co sie z Toba stalo?";
 };
 
 FUNC INT Info_Mod_Sly_WasPassiert_Condition()
@@ -41,9 +41,9 @@ FUNC INT Info_Mod_Sly_WasPassiert_Condition()
 
 FUNC VOID Info_Mod_Sly_WasPassiert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_WasPassiert_15_00"); //Was ist denn nur aus euch geworden?
-	AI_Output(self, hero, "Info_Mod_Sly_WasPassiert_31_01"); //Nichts weiter ... denk ich. Solange Cutter uns nicht zur Arbeit auf den Feldern einteilt, können wir auch nichts machen.
-	AI_Output(self, hero, "Info_Mod_Sly_WasPassiert_31_02"); //Na gut, ab und zu geht mal jemand jagen. Aber das lag mir eh noch nie, und ich will nicht als Wolfsfutter enden.
+	AI_Output(hero, self, "Info_Mod_Sly_WasPassiert_15_00"); //Co sie z Toba stalo?
+	AI_Output(self, hero, "Info_Mod_Sly_WasPassiert_31_01"); //Nic wiecej.... Mysle. Tak dlugo, jak dlugo Cutter nie zmusza nas do pracy na polu, nie mozemy nic zrobic.
+	AI_Output(self, hero, "Info_Mod_Sly_WasPassiert_31_02"); //Wszystko od czasu do czasu, czyjas poluje. Nigdy nie bylem w stanie tego zrobic i nie chce, aby skonczylo sie to jako karma dla wilków.
 };
 
 INSTANCE Info_Mod_Sly_LagerLeerer (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Sly_LagerLeerer (C_INFO)
 	information	= Info_Mod_Sly_LagerLeerer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist es hier im Lager leerer geworden?";
+	description	= "Czy jest pusta w magazynie?";
 };
 
 FUNC INT Info_Mod_Sly_LagerLeerer_Condition()
@@ -67,12 +67,12 @@ FUNC INT Info_Mod_Sly_LagerLeerer_Condition()
 
 FUNC VOID Info_Mod_Sly_LagerLeerer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_LagerLeerer_15_00"); //Ist es hier im Lager leerer geworden?
-	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_01"); //Ein bisschen schon. Bei den meisten weiß man nicht, was aus ihnen geworden ist.
-	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_02"); //Manche wollten zum Jagen losziehen und sind nie wiedergekommen.
-	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_03"); //Entweder hat's die armen Schweine erwischt, oder die Dreckskerle haben sich abgesetzt.
-	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_04"); //Seit kurzem dürfen wir deshalb ohne Genehmigung das Lager nicht mehr verlassen.
-	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_05"); //Na ja, wer wirklich raus will, lässt sich von dem Verbot natürlich nicht behindern.
+	AI_Output(hero, self, "Info_Mod_Sly_LagerLeerer_15_00"); //Czy jest pusta w magazynie?
+	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_01"); //Troche troche, tak. Wiekszosc ludzi nie wie, co sie z nimi stalo.
+	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_02"); //Niektórzy z nich chcieli polowac i nigdy juz nie wrócili.
+	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_03"); //Albo biedne dranie zostalo uderzone, albo laty wyszly z drogi.
+	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_04"); //Dlatego nie wolno nam opuscic obozu bez zezwolenia.
+	AI_Output(self, hero, "Info_Mod_Sly_LagerLeerer_31_05"); //Oczywiscie, jesli naprawde chcesz sie wydostac, nie mozesz byc utrudniony przez zakaz.
 };
 
 INSTANCE Info_Mod_Sly_Arena (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Sly_Arena (C_INFO)
 	information	= Info_Mod_Sly_Arena_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit der Arena? Willst du dich dort nicht messen?";
+	description	= "A co z arena? Nie chcesz tam konkurowac?";
 };
 
 FUNC INT Info_Mod_Sly_Arena_Condition()
@@ -96,11 +96,11 @@ FUNC INT Info_Mod_Sly_Arena_Condition()
 
 FUNC VOID Info_Mod_Sly_Arena_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Arena_15_00"); //Was ist mit der Arena? Willst du dich dort nicht messen?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_01"); //Die Arena wär schon was für mich ... immer wenn Kämpfe sind, stelle ich mir vor, ich wäre an der Stelle einer der Kämpfer.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_02"); //Aber ich bin nur ein einfacher Schatten und hatte schon seit langem kein Schwert mehr in der Hand.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_03"); //Früher war ich mal gut, zählte zu den Besten im Lager. Aber jetzt?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_04"); //So was wie mich verputzen die in der Arena zum Frühstück.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena_15_00"); //A co z arena? Nie chcesz tam konkurowac?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_01"); //Hala bylaby dla mnie czyms wiecej...... Za kazdym razem, gdy sa walki, wyobrazam sobie, ze jestem jednym z bojowników.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_02"); //Ale jestem po prostu zwyklym cieniem i od dawna nie mialem w reku miecza.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_03"); //Kiedys bylem dobry, bylem jednym z najlepszych w obozie. Ale teraz?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena_31_04"); //Tak jak ja, sprzataja arene na sniadanie.
 };
 
 INSTANCE Info_Mod_Sly_Arena2 (C_INFO)
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Sly_Arena2 (C_INFO)
 	information	= Info_Mod_Sly_Arena2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie wär's, wenn ich dich trainiere?";
+	description	= "Jak trenowac?";
 };
 
 FUNC INT Info_Mod_Sly_Arena2_Condition()
@@ -124,16 +124,16 @@ FUNC INT Info_Mod_Sly_Arena2_Condition()
 
 FUNC VOID Info_Mod_Sly_Arena2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Arena2_15_00"); //Wie wär's, wenn ich dich trainiere?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_01"); //(abschätzend) Du siehst schon aus, als hättest du was auf dem Kasten. Meinetwegen.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_02"); //Wenn ich an der Arena erfolgreich bin, wirst du am Gewinn beteiligt.
-	AI_Output(hero, self, "Info_Mod_Sly_Arena2_15_03"); //Schön. Wann willst du anfangen?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_04"); //Lass mich erst mal ganz nüchtern werden. Morgen Früh können wir uns, äh, auf dem Rasenstück zwischen dem kleinen Tümpel da vorn und dem Marktplatz treffen.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_05"); //Dort sollte genügend Platz sein.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena2_15_00"); //Jak trenowac?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_01"); //Wyglada na to, ze masz cos w pudelku. Nie obchodze sie z nim.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_02"); //Jesli na arenie odniose sukces, bedziesz czescia zysków.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena2_15_03"); //Grzywna. Kiedy chcesz zaczac?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_04"); //Niech mi bedzie najpierw wszystko trzezwe. Jutro rano rano mozemy sie spotkac na trawniku miedzy stawem a targowiskiem.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena2_31_05"); //Musi byc wystarczajaco duzo miejsca.
 
 	Log_CreateTopic	(TOPIC_MOD_SLY_ARENA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLY_ARENA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Ich habe mit Sly ausgemacht, dass wir uns morgens auf dem Rasenstück zwischen Tümpel und Marktplatz treffen, damit ich ihn für die Arena trainieren kann.");
+	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Zgodzilem sie z Sly' em, ze rano spotkamy sie na trawniku miedzy stawem a targowiskiem, bym mógl go przeszkolic na arene.");
 
 	Mod_Sly_Arena_Tag = Wld_GetDay();
 };
@@ -159,12 +159,12 @@ FUNC INT Info_Mod_Sly_Arena3_Condition()
 
 FUNC VOID Info_Mod_Sly_Arena3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_00"); //Na, komm endlich. Ich bin schon ganz heiß! Wie wollen wir anfangen?
-	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_01"); //Wenn ich mir dich so anschaue, mit Konditionstraining. Ein gemütlicher Lauf um die Burg wird dir ganz gut tun.
-	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_02"); //Ich komme lieber mit, damit du nicht schummelst.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_03"); //(jammert) Laufen? Ich dachte, wir perfektionieren meinen Schwertkampf?
-	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_04"); //Damit du einen Schlag tun kannst und dann außer Puste bist? Los, auf die Beine!
-	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_05"); //Na schön, wenn's sein muss ...
+	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_00"); //Chodzcie, przyjdzcie. Jestem juz goracy! Jak zaczac?
+	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_01"); //Kiedy patrze na Ciebie tak, z kondycjonowaniem. Piekny spacer po zamku zrobi dobrze.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_02"); //Lepiej pójde z toba, zebys nie oszukiwal.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_03"); //Chodzic? Myslalem, ze doskonalimy moja miecze?
+	AI_Output(hero, self, "Info_Mod_Sly_Arena3_15_04"); //Wiec mozesz zrobic ciotke, a potem zadyszke? Wejdz na nogi!
+	AI_Output(self, hero, "Info_Mod_Sly_Arena3_31_05"); //Wszystko w porzadku, jesli musze....
 
 	AI_StopProcessInfos	(self);
 
@@ -193,16 +193,16 @@ FUNC INT Info_Mod_Sly_Arena4_Condition()
 
 FUNC VOID Info_Mod_Sly_Arena4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_00"); //(nach Luft ringend) Ah, ich sterbe!
-	AI_Output(hero, self, "Info_Mod_Sly_Arena4_15_01"); //Vorher müssen wir uns noch duellieren. Hast du eine Waffe?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_02"); //(keuchend) Ja, ja, alles dabei. Hab auch was für dich, damit du mir nicht allzu sehr weh tust.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_00"); //Ach, umieram!
+	AI_Output(hero, self, "Info_Mod_Sly_Arena4_15_01"); //Wczesniej musimy sie pojedynkowac. Masz pistolet?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_02"); //Tak, tak, tak, tak, tak, tak, wszystko. Dostales cos dla siebie, wiec nie ranilas mnie zbytnio.
 
 	B_GiveInvItems	(self, hero, ItMw_Schlagstock, 1);
 
 	EquipWeapon	(hero, ItMw_Schlagstock);
 
-	AI_Output(hero, self, "Info_Mod_Sly_Arena4_15_03"); //Dann zeig mal, was du noch so drauf hast.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_04"); //Ok.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena4_15_03"); //Zobaczmy, co jeszcze dostales.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena4_31_04"); //Okay.
 
 	AI_StopProcessInfos	(self);
 
@@ -217,7 +217,7 @@ INSTANCE Info_Mod_Sly_Arena5 (C_INFO)
 	information	= Info_Mod_Sly_Arena5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das war doch schon mal ganz ordentlich.";
+	description	= "To bylo dosc schludne.";
 };
 
 FUNC INT Info_Mod_Sly_Arena5_Condition()
@@ -230,43 +230,43 @@ FUNC INT Info_Mod_Sly_Arena5_Condition()
 
 FUNC VOID Info_Mod_Sly_Arena5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Arena5_15_00"); //Das war doch schon mal ganz ordentlich. Kommt das Gefühl langsam wieder?
-	AI_Output(self, hero, "Info_Mod_Sly_Arena5_31_01"); //(ächzt) Wenn du mit Gefühlen die Schmerzen meinst, dann auf jeden Fall.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena5_31_02"); //Hast du noch irgendwelche Tipps für mich?
+	AI_Output(hero, self, "Info_Mod_Sly_Arena5_15_00"); //To bylo dosc schludne. Czy uczucie powoli powraca?
+	AI_Output(self, hero, "Info_Mod_Sly_Arena5_31_01"); //Jesli przez uczucia masz na mysli ból, to zdecydowanie jest to ból.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena5_31_02"); //Masz dla mnie wiecej wskazówek?
 
 	Info_ClearChoices	(Info_Mod_Sly_Arena5);
 
-	Info_AddChoice	(Info_Mod_Sly_Arena5, "Nö, passt schon.", Info_Mod_Sly_Arena5_B);
-	Info_AddChoice	(Info_Mod_Sly_Arena5, "Kämpfe weniger offensiv. Die Defensive liegt dir mehr.", Info_Mod_Sly_Arena5_A);
+	Info_AddChoice	(Info_Mod_Sly_Arena5, "Nah, to grzywna.", Info_Mod_Sly_Arena5_B);
+	Info_AddChoice	(Info_Mod_Sly_Arena5, "Walczyc mniej obrazliwie. Jestes bardziej defensywny.", Info_Mod_Sly_Arena5_A);
 };
 
 FUNC VOID Info_Mod_Sly_Arena5_C()
 {
-	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_00"); //Gut. Vielen Dank für deine Hilfe. Ich glaube, ich hab's langsam wieder raus. Ich werd Scatty mal Bescheid sagen, dass er mich auf die Liste setzen soll.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_01"); //Wenn ich gewinnen sollte, kriegst du die Hälfte meiner Bezahlung.
-	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_02"); //Jetzt werde ich noch ein wenig üben.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_00"); //Dobre. Dziekuje za pomoc. Mysle, ze to robie. Jestem gonna powiedziec Scatty' emu, aby umiescil mnie na liscie.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_01"); //Jesli wygrasz, otrzymasz polowe mojej wyplaty.
+	AI_Output(self, hero, "Info_Mod_Sly_Arena5_C_31_02"); //Teraz bede cwiczyc troche wiecej.
 
 	Info_ClearChoices	(Info_Mod_Sly_Arena5);
 
-	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Sly will sich nun bei Scatty für Arenakämpfe bewerben. Ich sollte also demnächst mal bei ihm vorbeischauen und fragen, wann Sly kämpft. Sollte Sly gewinnen, hat er mir die Hälfte seiner Bezahlung versprochen.");
+	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Sly chce teraz ubiegac sie o Scatty na arenie walki. Powinienem wiec zatrzymac sie przy jego miejscu i zapytac go kiedy Sly bedzie walczyl. Jesli Sly wygra, obiecal mi polowe swojego wynagrodzenia.");
 
 	B_StartOtherRoutine	(self, "ATARENA");
 };
 
 FUNC VOID Info_Mod_Sly_Arena5_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Arena5_B_15_00"); //Nö, passt schon.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena5_B_15_00"); //Nah, to grzywna.
 
-	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Ich habe Sly in einem Schnellprogramm auf die Kämpfe in der Arena vorbereitet. Das muss jetzt reichen, um bestehen zu können.");
+	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Przygotowalem Sly' a w szybkim programie do walki na arenie. To wszystko, czego potrzeba, aby przetrwac.");
 
 	Info_Mod_Sly_Arena5_C();
 };
 
 FUNC VOID Info_Mod_Sly_Arena5_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_Arena5_A_15_00"); //Kämpfe weniger offensiv. Die Defensive liegt dir mehr.
+	AI_Output(hero, self, "Info_Mod_Sly_Arena5_A_15_00"); //Walczyc mniej obrazliwie. Jestes bardziej defensywny.
 
-	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Ich habe Sly in einem Schnellprogramm auf die Kämpfe in der Arena vorbereitet und ihm noch einen Vorschlag mitgegeben.");
+	B_LogEntry	(TOPIC_MOD_SLY_ARENA, "Przygotowalem Sly' a w szybkim programie walki na arenie i dalem mu sugestie.");
 
 	Mod_Sly_Tipp = 1;
 
@@ -296,21 +296,21 @@ FUNC VOID Info_Mod_Sly_Arena6_Info()
 {
 	if (Mod_Sly_Arena == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_00"); //Schade, ich hätte diesen Karanto fast besiegt. Das schreit nach einer Revanche!
-		AI_Output(hero, self, "Info_Mod_Sly_Arena6_15_01"); //Du bleibst also dabei?
-		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_02"); //Na klar! Der soll sich nur warm anziehen!
+		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_00"); //Szkoda, ze prawie pobilem to caranto. To wymaga zemsty!
+		AI_Output(hero, self, "Info_Mod_Sly_Arena6_15_01"); //Wiec trzymasz sie tego wszystkiego?
+		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_02"); //Oczywiscie! Wystarczy go ubrac!
 
 		B_GivePlayerXP	(50);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_03"); //Mann, ohne deinen Hinweis mit der Defensive hätte ich Gor Karanto nicht geknackt. Knapp, aber verdient, würde ich sagen.
-		AI_Output(hero, self, "Info_Mod_Sly_Arena6_15_04"); //Glückwunsch.
-		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_05"); //Hier hast du deinen Anteil.
+		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_03"); //Czlowiek, bez twojej defensywnej rady, nie zlamalbym Gora Karanto. Powiedzialbym, ze jest to szczelne, ale zasluzone.
+		AI_Output(hero, self, "Info_Mod_Sly_Arena6_15_04"); //Gratulacje.
+		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_05"); //Oto Twój udzial.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
-		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_06"); //Ich fiebere schon meinen nächsten Duell entgegen.
+		AI_Output(self, hero, "Info_Mod_Sly_Arena6_31_06"); //Z niecierpliwoscia czekam na kolejny pojedynek.
 
 		B_GivePlayerXP	(100);
 	};
@@ -328,7 +328,7 @@ INSTANCE Info_Mod_Sly_SLDSpy (C_INFO)
 	information	= Info_Mod_Sly_SLDSpy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, was gibt’s Neues im Lager?";
+	description	= "Witaj, co nowego w obozie?";
 };
 
 FUNC INT Info_Mod_Sly_SLDSpy_Condition()
@@ -343,22 +343,22 @@ FUNC INT Info_Mod_Sly_SLDSpy_Condition()
 
 FUNC VOID Info_Mod_Sly_SLDSpy_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sly_SLDSpy_15_00"); //Hallo, was gibt’s Neues im Lager?
-	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_01"); //Warum fragst du?
-	AI_Output(hero, self, "Info_Mod_Sly_SLDSpy_15_02"); //Ich war einige Zeit im Sumpflager und habe dort alles ausgekundschaftet. Hier hast du einen Stängel.
+	AI_Output(hero, self, "Info_Mod_Sly_SLDSpy_15_00"); //Witaj, co nowego w obozie?
+	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_01"); //Dlaczego pytasz?
+	AI_Output(hero, self, "Info_Mod_Sly_SLDSpy_15_02"); //Spedzilem troche czasu na obozie bagiennym i zastrzelilem tam wszystko. Oto lodyga.
 
-	B_ShowGivenThings	("Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("Podane mokradlo");
 
 	CreateInvItems	(self, ItMi_Joint, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_03"); //Ahh, ein frischer harziger Stängel.
+	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_03"); //Ahh, swiezy ped zywiczny.
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_04"); //Ach ja, wegen der Neuigkeiten. Hab gehört, dass die Gardisten in den nächsten Tagen was Großes planen.
-	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_05"); //Irgendeinen Angriff in der Morgendämmerung, hieß es. Bin schon mächtig gespannt ...
+	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_04"); //Tak, owszem, o nowinkach. Slyszalem, jak straznicy planuja cos wielkiego na najblizsze kilka dni.
+	AI_Output(self, hero, "Info_Mod_Sly_SLDSpy_31_05"); //Powiedzieli cos w rodzaju ataku o swicie. Jestem bardzo ciekawy.....
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Sly meinte, die Gardisten würden demnächst in der Morgendämmerung einen großen Angriff planen.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Sly pomyslalem, ze straznicy beda planowac duzy atak o swicie.");
 };
 
 INSTANCE Info_Mod_Sly_Pickpocket (C_INFO)

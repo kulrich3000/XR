@@ -1,7 +1,7 @@
 instance Mod_7540_OUT_Penner_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Penner";
+	name 		= "wlóczegi";
 	guild 		= GIL_OUT;
 	id 			= 7540;
 	voice 		= 27;

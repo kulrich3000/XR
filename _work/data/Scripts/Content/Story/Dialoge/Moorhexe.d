@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Moorhexe_Hi_Condition()
 
 FUNC VOID Info_Mod_Moorhexe_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_00"); //Was, ein lebender Mensch in dem verfluchten Moor, und er vermag mich zu sehen?!
-	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_01"); //So scheint es ...
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_02"); //Was in Beliars Namen hast du hier verloren? Was willst du?
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_03"); //Ganz bestimmt nicht die Schätze des Sumpfes, sonst hättest du verblendet von Gier dein Leben in einem morastigen Tümpel gelassen.
-	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_04"); //Ich bin auf der Suche nach einem Gegenstand, den ein Magier vermutlich dir überlassen hat.
-	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_05"); //Was?! Den Kamm von Lich?! Bei meiner Hexenehre habe ich geschworen, ihn zu verteidigen. Nie wirst du ihn bekommen.
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_00"); //Co to jest zywa osoba w chuliganskim bagnie i widzi mnie!
+	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_01"); //Wydaje sie wiec, ze......
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_02"); //Co w imieniu Beliara Pan tutaj robi? Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_03"); //Z pewnoscia nie skarby bagna, w przeciwnym razie zostalbys oslepiony przez chciwosc i zostawilbys swoje zycie w blotnistym stawie.
+	AI_Output(hero, self, "Info_Mod_Moorhexe_Hi_15_04"); //Szukam przedmiotu, który prawdopodobnie dal Ci magik.
+	AI_Output(self, hero, "Info_Mod_Moorhexe_Hi_17_05"); //Co? Grzebien swiatla? Na swoja czesc przysiegam, ze bede go bronil. Nigdy go nie dostaniesz.
 
 	AI_StopProcessInfos	(self);
 

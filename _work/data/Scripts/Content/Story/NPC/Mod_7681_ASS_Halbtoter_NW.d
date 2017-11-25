@@ -1,7 +1,7 @@
 INSTANCE Mod_7681_ASS_Halbtoter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Halbtoter"; 
+	name 		= "polówka"; 
 	guild 		= GIL_OUT;
 	id 			= 7681;
 	voice 		= 13;

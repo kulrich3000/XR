@@ -1,7 +1,7 @@
 instance Mod_956_SRF_Lennar_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lennar";
+	name 		= "lennar";
 	guild 		= GIL_NONE;
 	id 			= 956;
 	voice 		= 1;

@@ -1,7 +1,7 @@
 instance Mod_537_NONE_Lehmar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lehmar"; 
+	name 		= "gliniany"; 
 	guild 		= GIL_pal;
 	id 			= 537;
 	voice 		= 9;

@@ -1,7 +1,7 @@
 instance Mod_7704_OUT_Jesper_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jesper"; 
+	name 		= "esper"; 
 	guild 		= GIL_OUT;
 	id 			= 7704;
 	voice 		= 36;

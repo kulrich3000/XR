@@ -1,7 +1,7 @@
 instance Mod_7725_OUT_Irmgard_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Irmgard";	//Halvors Frau
+	name 		= "Irmard";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7725;
 	voice 		= 17;

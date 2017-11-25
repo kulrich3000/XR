@@ -18,7 +18,7 @@ INSTANCE PC_Kessel_Blutkult (C_INFO)
 	information	= PC_Kessel_Blutkult_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Dämoneneintopf: 1x Dämonenherz + 2x Feuerzunge + 2x Zombiefleisch + 3x Fliegenpilz + 4x Blut";
+	description	= "Gulasz demoniczny: 1x serce demonowe + 2x jezyk ognia + 2x miazsz zombie + 3x muchomor + 4x krew + 4x krew.";
 };
 
 FUNC INT PC_Kessel_Blutkult_Condition()
@@ -58,7 +58,7 @@ INSTANCE PC_Kessel_Fangheuschreckensuppe (C_INFO)
 	information	= PC_Kessel_Fangheuschreckensuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fangheuschreckensuppe: 1x Fangheuschreckenkopf, 2x Wasser, 1x Fisch";
+	description	= "Polów zupy konopiarki: 1x glówka mantronowa, 2x woda, 1x ryby.";
 };
 
 FUNC INT PC_Kessel_Fangheuschreckensuppe_Condition()
@@ -95,7 +95,7 @@ INSTANCE PC_Kessel_Fangheuschreckensuppe_Max (C_INFO)
 	information	= PC_Kessel_Fangheuschreckensuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fangheuschreckensuppen";
+	description	= "Maks. zupy mantis";
 };
 
 FUNC INT PC_Kessel_Fangheuschreckensuppe_Max_Condition()
@@ -149,7 +149,7 @@ INSTANCE PC_Kessel_Fischragout (C_INFO)
 	information	= PC_Kessel_Fischragout_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fischragout: 2x Fisch, 1x Waldbeere";
+	description	= "Ryby ragout: 2x ryby, 1x lesne jagody.";
 };
 
 FUNC INT PC_Kessel_Fischragout_Condition()
@@ -184,7 +184,7 @@ INSTANCE PC_Kessel_Fischragout_Max (C_INFO)
 	information	= PC_Kessel_Fischragout_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fischragout";
+	description	= "Maks. gulasz rybny";
 };
 
 FUNC INT PC_Kessel_Fischragout_Max_Condition()
@@ -230,7 +230,7 @@ INSTANCE PC_Kessel_Fischsuppe (C_INFO)
 	information	= PC_Kessel_Fischsuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fischsuppe: 1x Fisch";
+	description	= "Zupa rybna: 1x ryby";
 };
 
 FUNC INT PC_Kessel_Fischsuppe_Condition()
@@ -263,7 +263,7 @@ INSTANCE PC_Kessel_Fischsuppe_Max (C_INFO)
 	information	= PC_Kessel_Fischsuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fischsuppen";
+	description	= "Maks. zupy rybne";
 };
 
 FUNC INT PC_Kessel_Fischsuppe_Max_Condition()
@@ -299,7 +299,7 @@ INSTANCE PC_Kessel_Fleischeintopf (C_INFO)
 	information	= PC_Kessel_Fleischeintopf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fleischeintopf: 2x rohes Fleisch, 1x Waldbeere, 1x Feldrübe";
+	description	= "Gulasz miesny: 2x surowe mieso, 1x dzikie jagody, 1x rzepa.";
 };
 
 FUNC INT PC_Kessel_Fleischeintopf_Condition()
@@ -336,7 +336,7 @@ INSTANCE PC_Kessel_Fleischeintopf_Max (C_INFO)
 	information	= PC_Kessel_Fleischeintopf_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fleischeintöpfe";
+	description	= "Maks. wulkany";
 };
 
 FUNC INT PC_Kessel_Fleischeintopf_Max_Condition()
@@ -390,7 +390,7 @@ INSTANCE PC_Kessel_Fleischwanzenragout (C_INFO)
 	information	= PC_Kessel_Fleischwanzenragout_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Fleischwanzenragout: 2x Dunkelpilz, 1x Wanzenfleisch";
+	description	= "Grzybek miesny ragout: 2x grzyby ciemne, 1 x mieso pluskwy";
 };
 
 FUNC INT PC_Kessel_Fleischwanzenragout_Condition()
@@ -425,7 +425,7 @@ INSTANCE PC_Kessel_Fleischwanzenragout_Max (C_INFO)
 	information	= PC_Kessel_Fleischwanzenragout_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Fleischwanzenragouts";
+	description	= "Maks. Meatugragouty";
 };
 
 FUNC INT PC_Kessel_Fleischwanzenragout_Max_Condition()
@@ -471,7 +471,7 @@ INSTANCE PC_Kessel_Pilzsuppe (C_INFO)
 	information	= PC_Kessel_Pilzsuppe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Pilzsuppe: 2x Dunkelpilz, 1x Buddlerfleisch";
+	description	= "Zupa grzybowa: 2 x ciemny grzybek, 1 x mieso Buddlera.";
 };
 
 FUNC INT PC_Kessel_Pilzsuppe_Condition()
@@ -506,7 +506,7 @@ INSTANCE PC_Kessel_Pilzsuppe_Max (C_INFO)
 	information	= PC_Kessel_Pilzsuppe_Max_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Max. Pilzsuppen";
+	description	= "Maks. Zupy grzybowe";
 };
 
 FUNC INT PC_Kessel_Pilzsuppe_Max_Condition()

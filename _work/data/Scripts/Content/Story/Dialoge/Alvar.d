@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Alvar_Hi_Condition()
 
 FUNC VOID Info_Mod_Alvar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvar_Hi_01_00"); //Jetzt nicht. Ich bin beschäftigt.
+	AI_Output(self, hero, "Info_Mod_Alvar_Hi_01_00"); //Nie teraz, nie. Jestem zajety.
 
 	AI_StopProcessInfos	(self);
 };
@@ -44,10 +44,10 @@ FUNC INT Info_Mod_Alvar_Unbekannt_Condition()
 
 FUNC VOID Info_Mod_Alvar_Unbekannt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_00"); //Das war in aller letzter Sekunde. Bist du verletzt?
-	AI_Output(hero, self, "Info_Mod_Alvar_Unbekannt_15_01"); //Nein, ich glaube nicht. Nur etwas benommen. Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_02"); //Das soll im Augenblick keine Rolle spielen. Du hast du den Kristall? Dann Eile zurück ins Dorf.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_03"); //Die Erisschwestern führen Übles im Schilde ... Thys ist in Gefahr. Die Zeit drängt.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_00"); //To byla ostatnia minuta. Czy masz racje?
+	AI_Output(hero, self, "Info_Mod_Alvar_Unbekannt_15_01"); //Nie, nie sadze, ze tak nie jest. Tylko troche zawroty glowy. Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_02"); //Nie chce, aby mialo to znaczenie wlasnie teraz. Dostales krysztal? Pózniej spiesz sie z powrotem do wioski.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt_01_03"); //Siostry Eris nie sa dobre.... Cos jest w niebezpieczenstwie. Czas jest nacisniety.
 
 	AI_StopProcessInfos	(self);
 
@@ -57,7 +57,7 @@ FUNC VOID Info_Mod_Alvar_Unbekannt_Info()
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "ch habe den Kristall. Die Begegnung mit einer Hexe hätte mir dabei fast das Leben gekostet. Nur diesem Unbekannten verdanke ich mein leibliches Wohl. Jetzt aber nichts wie zurück ins Dorf. Die Erisschwestern wollen Thys ans Leder.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Mam krysztal. Spotkanie z czarownica prawie mnie kosztowalo. Moje fizyczne samopoczucie zawdzieczam temu obcemu. Wrócmy teraz do wioski. Siostry Eris chca Thysa na skórze.");
 
 	B_StartOtherRoutine	(Mod_7564_OUT_Knatus_EIS, "ALVAR");
 	B_StartOtherRoutine	(Mod_7560_OUT_Malfama_EIS, "ALVAR");
@@ -123,15 +123,15 @@ FUNC INT Info_Mod_Alvar_Unbekannt3_Condition()
 
 FUNC VOID Info_Mod_Alvar_Unbekannt3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_00"); //Nicht ganz. Es war eine Eisleiche, die ich von einem alten Friedhof geborgen hatte.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_01"); //Ich habe sie in meine Rüstung gekleidet, um meinen Tod vorzutäuschen. Es ging leider nicht anders.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_02"); //Nur so konnte ich unbehelligt handeln und verhindern, dass unser Dorf den Erisschwestern zum Opfer fällt.
-	AI_Output(hero, self, "Info_Mod_Alvar_Unbekannt3_15_03"); //Und das war ja auch in aller letzter Sekunde.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_04"); //Ja, und ohne dein Zutun wäre wohl trotzdem alles verloren gewesen.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_05"); //Ich hatte ihr Wesen erkannt, in alten Schriften und Büchern Bestätigung erhalten.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_06"); //Nur hatten die beiden leider schon zu viel Macht und Einfluss entwickelt, ich fand kein Gehör unter den Dorfbewohnern.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_07"); //Stattdessen erkannten die Erisschwestern die Gefahr, die ich für sie darstellte und schafften es das Dorf gegen mich aufzubringen.
-	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_08"); //Meines Lebens konnte ich mich auch nicht mehr sicher fühlen ... aber der ganze Alptraum ist nun endlich vorbei.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_00"); //Nie do konca. Byla to góra lodowa, która ocalilem ze starego cmentarza.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_01"); //Obronilem ja w zbroi, zeby podrobic swoja smierc. Nie bylo innej drogi.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_02"); //Byl to jedyny sposób, w jaki moglem dzialac bez zaklócen i nie dopuscic do tego, by nasza wioska padla ofiara siostry Eris.
+	AI_Output(hero, self, "Info_Mod_Alvar_Unbekannt3_15_03"); //I to równiez w ostatniej sekundzie.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_04"); //Tak, i bez waszej pomocy wszystko i tak zostaloby utracone.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_05"); //Znalazlem ich istote i otrzymalem potwierdzenie w starozytnych pismach i ksiazkach.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_06"); //Niestety, oboje rozwineli juz zbyt duza wladze i wplywy, ale nie moglem znalezc slyszenia wsród mieszkanców wsi.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_07"); //Zamiast tego, Siostry Eris dostrzegly dla nich niebezpieczenstwo, jakie stwarzalem i zdolaly odwrócic wioske przeciwko mnie.
+	AI_Output(self, hero, "Info_Mod_Alvar_Unbekannt3_01_08"); //Równiez w zyciu nie moglem czuc sie bezpiecznie..... ale caly koszmar sie ostatecznie skonczyl.
 
 	AI_StopProcessInfos	(self);
 };

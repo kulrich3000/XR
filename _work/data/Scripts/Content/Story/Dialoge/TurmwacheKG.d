@@ -6,7 +6,7 @@ INSTANCE Info_Mod_TurmwacheKG_Trollholz (C_INFO)
 	information	= Info_Mod_TurmwacheKG_Trollholz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du zufällig noch ein Keilerfell übrig?";
+	description	= "Czy zdarzylo ci sie miec pozostawiona futro z dzika?";
 };
 
 FUNC INT Info_Mod_TurmwacheKG_Trollholz_Condition()
@@ -20,13 +20,13 @@ FUNC INT Info_Mod_TurmwacheKG_Trollholz_Condition()
 
 FUNC VOID Info_Mod_TurmwacheKG_Trollholz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_TurmwacheKG_Trollholz_15_00"); //Hast du zufällig noch ein Keilerfell übrig?
-	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_01"); //Ja, ist allerdings schon ziemlich ausgefranst.
-	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_02"); //Hier du kannst es haben, Wolfsfelle halten sowieso besser warm.
+	AI_Output(hero, self, "Info_Mod_TurmwacheKG_Trollholz_15_00"); //Czy zdarzylo ci sie miec pozostawiona futro z dzika?
+	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_01"); //Ale tak, to jest ladnie pachnace.
+	AI_Output(self, hero, "Info_Mod_TurmwacheKG_Trollholz_03_02"); //Tutaj mozna go miec, tak czy owak lepiej ogrzewac skóre wilka.
 
 	B_GiveInvItems	(self, hero, ItAt_Addon_KeilerFur, 1);
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Ich hab das Keilerfell. Auf zu Cathran.");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Dostalem futro z dzika. Polecamy do Kathranu.");
 };
 
 INSTANCE Info_Mod_TurmwacheKG_EXIT (C_INFO)

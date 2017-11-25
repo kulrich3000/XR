@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ethan_Hi (C_INFO)
 	information	= Info_Mod_Ethan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Ethan_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Ethan_Hi_Condition()
 FUNC VOID Info_Mod_Ethan_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Ethan_Hi_13_01"); //Ich bin Ethan, oberster Hüter in der Gemeinschaft des Wassers. Ich führe und leite die Wasserkrieger.
+	AI_Output(self, hero, "Info_Mod_Ethan_Hi_13_01"); //Jestem Etanem, najwyzszym straznikiem srodowiska wodnego. Prowadze i kieruje wojownikami wodnymi.
 };
 
 INSTANCE Info_Mod_Ethan_Irdorath (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Ethan_Irdorath (C_INFO)
 	information	= Info_Mod_Ethan_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Weg zur Vernichtung des üblen Xeres wird mich mit dem Schiff auch zu einer Insel führen.";
+	description	= "Droga do zniszczenia zlych Xeres poprowadzi mnie statkiem na wyspe.";
 };
 
 FUNC INT Info_Mod_Ethan_Irdorath_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Ethan_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Ethan_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath_15_00"); //Der Weg zur Vernichtung des üblen Xeres wird mich mit dem Schiff auch zu einer Insel führen.
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath_15_01"); //Ich bin jedoch auf die Unterstützung kampfstarker und mutiger Begleiter angewiesen.
-	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath_13_02"); //Dann hast du gut daran getan dich an mich zu wenden.
-	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath_13_03"); //Die Bannung dieses Unholdes hat höchsten Vorrang und ich werde dir mit Eis und Schwert zur Seite stehen um meinen Teil dazu beizutragen.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath_15_00"); //Droga do zniszczenia zlych Xeres poprowadzi mnie statkiem na wyspe.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath_15_01"); //Jestem jednak uzalezniony od wsparcia silnych i odwaznych towarzyszy.
+	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath_13_02"); //Wtedy dobrze sie skontaktowales.
+	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath_13_03"); //Wygnanie tego przyjaciela ma najwyzszy priorytet i pomoze wam z lodem i mieczem wykonac swoja czesc.
 };
 
 INSTANCE Info_Mod_Ethan_Irdorath2 (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Ethan_Irdorath2 (C_INFO)
 	information	= Info_Mod_Ethan_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann freut es mich, einen Kämpfer für das Gleichgewicht in unseren Reihen zu wissen.";
+	description	= "Wtedy ciesze sie, ze moge poznac zawodnika walczacego o równowage w naszych szeregach.";
 };
 
 FUNC INT Info_Mod_Ethan_Irdorath2_Condition()
@@ -70,11 +70,11 @@ FUNC INT Info_Mod_Ethan_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Ethan_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath2_15_00"); //Dann freut es mich, einen Kämpfer für das Gleichgewicht in unseren Reihen zu wissen.
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath2_15_01"); //Der Treffpunkt für unsere Exkursion ist der Hafen von Khorinis.
-	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath2_13_02"); //Dann werde ich mich gleich auf den Weg machen.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath2_15_00"); //Wtedy ciesze sie, ze moge poznac zawodnika walczacego o równowage w naszych szeregach.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath2_15_01"); //Miejscem spotkania naszej wycieczki jest port Khorinis.
+	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath2_13_02"); //Wtedy bede mial racje po drodze.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "So, mit Ethan weiß ich jetzt einen starken Kämpfer an Bord.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Teraz z Ethanem znam silnego wojownika na pokladzie.");
 
 	B_GivePlayerXP	(100);
 
@@ -95,7 +95,7 @@ INSTANCE Info_Mod_Ethan_Irdorath3 (C_INFO)
 	information	= Info_Mod_Ethan_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Ethan_Irdorath3_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Mod_Ethan_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Ethan_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath3_13_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath3_13_01"); //Zbyt zle. Wróce wtedy. Wiesz, gdzie mnie znalezc, jesli kiedykolwiek zostanie jakies miejsce.
 
 	Mod_EthanDabei = 0;
 
@@ -132,7 +132,7 @@ INSTANCE Info_Mod_Ethan_Irdorath4 (C_INFO)
 	information	= Info_Mod_Ethan_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "Moge dac ci przejazdzke.";
 };
 
 FUNC INT Info_Mod_Ethan_Irdorath4_Condition()
@@ -147,8 +147,8 @@ FUNC INT Info_Mod_Ethan_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Ethan_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath4_13_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Ethan_Irdorath4_15_00"); //Moge dac ci przejazdzke. Na statku znajduje sie pomieszczenie.
+	AI_Output(self, hero, "Info_Mod_Ethan_Irdorath4_13_01"); //Bardzo dobrze, wróce do portu.
 
 	Mod_EthanDabei = 1;
 
@@ -179,39 +179,39 @@ FUNC INT Info_Mod_Ethan_DungeonSounds_01_Condition()
 
 FUNC VOID Info_Mod_Ethan_DungeonSounds_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_00"); //Du hast bewiesen, dass du sowohl über Kampfkraft, als auch über Verstand verfügst.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_01"); //Nun, ich hätte da so ein Anliegen, bei welchem du mir vielleicht behilflich sein könntest ...
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_15_02"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_03"); //Tja, ich habe die Angewohnheit abends immer zum Training rauszugehen.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_04"); //Vor einigen Tagen habe ich nun in der Nähe einer Höhle trainiert, als ich merkwürdige Geräusche vernahm. Ich nährte mich der Höhle, und dann ...
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_15_05"); //Ja, was geschah?
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_06"); //Ähhm ... dann bin ich am nächsten morgen in der Höhle aufgewacht.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_07"); //Ich habe es noch an den anderen Abenden wiederholt, um der Quelle der Geräusche auf die Spur zu kommen, aber jedes Mal geschah das gleiche.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_08"); //Das ganze war mir etwas peinlich, nun ja, als ob ich nach Gespenstern jagen würde, daher habe ich mich auch noch an niemand anderen damit gewandt.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_09"); //Könntest du vielleicht abends an die Höhle an der Pyramide kommen, um mich bei meinen, ähh, Nachforschungen zu unterstützen?
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_00"); //Udowodniles, ze masz zarówno moc walki, jak i mózgi.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_01"); //No cóz, mam prosbe, abyscie mogli mi panstwo pomóc w....
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_15_02"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_03"); //No cóz, mam zwyczaj trenowac wieczorem.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_04"); //Kilka dni temu trenowalem w poblizu jaskini, kiedy slyszalem dziwne odglosy. Ja nakarmilem jaskinie, a potem.....
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_15_05"); //Tak, co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_06"); //Um.... Obudzilem sie nastepnego ranka w jaskini.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_07"); //Powtórzylem to w inne wieczory, aby odtworzyc zródlo dzwieku, ale to samo wydarzylo sie za kazdym razem.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_08"); //Bylem troche zawstydzony, jakbym gonil duchy, wiec nie prosilem nikogo innego o pomoc.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_13_09"); //Czy móglbys przyjsc do jaskini piramidy noca, aby pomóc mi w moim, uh, badaniu?
 
 	Info_ClearChoices	(Info_Mod_Ethan_DungeonSounds_01);
 
-	Info_AddChoice	(Info_Mod_Ethan_DungeonSounds_01, "Also wirklich, ich habe besseres zu tun.", Info_Mod_Ethan_DungeonSounds_01_B);
-	Info_AddChoice	(Info_Mod_Ethan_DungeonSounds_01, "Selbstverständlich. Dem müssen wir auf den Grund gehen.", Info_Mod_Ethan_DungeonSounds_01_A);
+	Info_AddChoice	(Info_Mod_Ethan_DungeonSounds_01, "Naprawde, mam jeszcze lepsze rzeczy do zrobienia.", Info_Mod_Ethan_DungeonSounds_01_B);
+	Info_AddChoice	(Info_Mod_Ethan_DungeonSounds_01, "Oczywiscie oczywiscie. Musimy dotrzec do dna.", Info_Mod_Ethan_DungeonSounds_01_A);
 };
 
 FUNC VOID Info_Mod_Ethan_DungeonSounds_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_B_15_00"); //Also wirklich, ich habe besseres zu tun, als der Ursache plötzlicher Schläfrigkeit auf den Grund zu gehen.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_B_13_01"); //Ahhm, ja, vielleicht hast du recht.
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_B_15_00"); //Naprawde mam wiec lepsze rzeczy do zrobienia niz dostac sie na dno przyczyny naglego sennosci.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_B_13_01"); //Ahhm, tak, byc moze masz racje.
 	
 	Info_ClearChoices	(Info_Mod_Ethan_DungeonSounds_01);
 };
 
 FUNC VOID Info_Mod_Ethan_DungeonSounds_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_A_15_00"); //Selbstverständlich. Dem müssen wir auf den Grund gehen.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_A_13_01"); //In Ordnung. Ich werde dann abends vor der Höhle auf dich warten.
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_01_A_15_00"); //Oczywiscie oczywiscie. Musimy dotrzec do dna.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_01_A_13_01"); //Wszystkie sluszne, wszystkie sluszne. Czekam na Ciebie w nocy poza jaskinia.
 
 	Log_CreateTopic	(TOPIC_MOD_ADANOS_ETHAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_ETHAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ADANOS_ETHAN, "Ethan vernimmt abends immer sonderbare Geräusche aus der Höhle bei der Pyramide, schläft jedoch immer ein, sobald er sich ihnen nährt. Ich soll ihm dabei helfen, der Ursache auf den Grund zu gehen. Er wird abends vor der Höhle auf mich warten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_ETHAN, "Ethan zawsze slyszy wieczorem dziwne dzwieki z jaskini w poblizu piramidy, ale zasypia kiedy tylko je karmi. Mam mu pomóc w zbadaniu sprawy. W nocy czeka na mnie poza jaskinia.");
 
 	Mod_WM_EthanQuest = 1;
 	
@@ -245,9 +245,9 @@ FUNC INT Info_Mod_Ethan_DungeonSounds_02_Condition()
 
 FUNC VOID Info_Mod_Ethan_DungeonSounds_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_02_13_00"); //Da bist du ja. Vernimmst du auch die Geräusche?
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_02_15_01"); //Ja, tatsächlich ...
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_02_13_02"); //In Ordnung. Ich gehe hinein und du bleibst draußen um zu sehen, was geschieht.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_02_13_00"); //Och, tam jestescie. Slyszysz odglosy?
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_02_15_01"); //Tak, wlasciwie.....
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_02_13_02"); //Wszystkie sluszne, wszystkie sluszne. Wejde do srodka, a Ty pozostaniesz na zewnatrz, aby zobaczyc, co sie dzieje.
 
 	AI_StopProcessInfos	(self);
 
@@ -280,18 +280,18 @@ FUNC INT Info_Mod_Ethan_DungeonSounds_03_Condition()
 
 FUNC VOID Info_Mod_Ethan_DungeonSounds_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_00"); //Und, was ist vorgefallen?
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_03_15_01"); //Kleine Gestalten liefen mit Spitzhacken durch die Höhle und haben die Felsen bearbeitet.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_02"); //Kleine Gestalten mit Spitzhacken? Hmm, hört sich nach Minenzwergen an.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_03"); //Nichts was für uns eine Gefahr darstellen könnte, sonst wären wir ja auch nicht mehr am Leben.
-	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_03_15_04"); //Minenzwerge?
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_05"); //Ach, Geschöpfe die in Ruhe, ungestört nachts Mineralien abbauen wollen. Damit wäre dieses Rätsel gelöst.
-	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_06"); //Hab Dank für deine Unterstützung. Hier, nimm dieses Gold und die Spruchrolle als Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_00"); //Cóz, co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_03_15_01"); //Male postacie przechodzily przez jaskinie z pikseksami i pracowaly na skalach.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_02"); //Male cyfry z pikseksami? Hmm, brzmi jak bitwa minowa.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_03"); //Nic, co nie stanowiloby dla nas zagrozenia, w przeciwnym razie bysmy nie zyli.
+	AI_Output(hero, self, "Info_Mod_Ethan_DungeonSounds_03_15_04"); //Krasnoludki kopalniane?
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_05"); //Ach, stworzenia, które chca wydobywac mineraly w nocy w ciszy i spokoju. To rozwiazuje te tajemnice.
+	AI_Output(self, hero, "Info_Mod_Ethan_DungeonSounds_03_13_06"); //Dziekujemy za wsparcie. Tutaj wez to zloto i zwój jako nagrode.
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
 	CreateInvItems	(hero, ItSc_IceRAin, 1);
 
-	B_ShowGivenThings	("300 Gold und Spruchrolle erhalten");
+	B_ShowGivenThings	("300 Zloto i zwoje odebrane");
 
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_ETHAN, LOG_SUCCESS);
 
@@ -325,17 +325,17 @@ FUNC INT Info_Mod_Ethan_Befoerderung_Condition()
 
 FUNC VOID Info_Mod_Ethan_Befoerderung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_00"); //Wie ich vernommen habe kommst du zu mir, um in den Kreis der Wasserkrieger aufgenommen zu werden.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_01"); //Es freut mich einen tatkräftigen Mann wie dich in unseren Reihen zu wissen.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_02"); //So, aber nun zu allererst, leiste das Zeugnis zur Verbundenheit mit dem Wasser und sprich die Worte des Eides:
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_03"); //Ich schwöre bei den Mächten der Götter ... und bei der Kraft des heiligen Wassers ...
-	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_04"); //Ich schwöre bei den Mächten der Götter ... und bei der Kraft des heiligen Wassers ...
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_05"); //... dass mein Wissen und Handeln von nun an und auf ewig mit dem Wasser verbunden sei ...
-	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_06"); //... dass mein Wissen und Handeln von nun an und auf ewig mit dem Wasser verbunden sei ...
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_07"); //... bis ich einkehre in Beliars Reich und der Quell des Lebens versiegt.
-	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_08"); //... bis ich einkehre in Beliars Reich und der Quell des Lebens versiegt.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_09"); //Es ist getan. Von nun an wirst du als Krieger des Wassers unserer Gemeinschaft dienen und dem Willen Adanos folgen.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_10"); //Hier, ich übergebe dir deine Rüstung des Wassers und das Schwert eines Kriegers.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_00"); //Rozumiem, ze przychodzicie do mnie, aby dolaczyc do Wodnych Wojowników.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_01"); //Ciesze sie, ze w naszych szeregach mam tak energicznego czlowieka jak Ty.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_02"); //Tak wiec, ale przede wszystkim, dac swiadectwo komunii z woda i powiedziec slowa przysiegi:
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_03"); //Przysiegam mocami bogów.... i moc swietej wody......
+	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_04"); //Przysiegam mocami bogów.... i moc swietej wody......
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_05"); //... ze moja wiedza i dzialania beda polaczone z woda od teraz i na zawsze....
+	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_06"); //... ze moja wiedza i dzialania beda polaczone z woda od teraz i na zawsze....
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_07"); //... i fontanna zycia.
+	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_15_08"); //... i fontanna zycia.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_09"); //To sie dzieje. Od teraz bedziecie sluzyc jako wojownik wód naszej spolecznosci i bedziecie podazac za wola Adano.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_10"); //Tutaj daje wam pancerz wodny i miecz wojownika.
 
 	CreateInvItems	(self, ItAr_WKR_H, 1);
 	B_GiveInvItems	(self, hero, ItAr_WKR_H, 1);
@@ -352,11 +352,11 @@ FUNC VOID Info_Mod_Ethan_Befoerderung_Info()
 		CreateInvItems	(hero, ItMw_AdanosSchwert, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_11"); //Darüber hinaus wird dich diese Rune der Eisklinge im Nahkampf unterstützen.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_11"); //Oprócz tego ta krag lodowcowy pomoze Ci w walce wrecz.
 
 	B_GiveInvItems	(self, hero, ItRu_Eisklinge, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_12"); //Möge Adanos dir allzeit bei deinen Prüfungen beistehen und dich auch weiterhin den Weg des Gleichgewichtes verfolgen lassen.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_13_12"); //Niech Adanos zawsze pomaga w tobie w twoich próbach i pozwala ci nadal podazac sciezka równowagi.
 
 	Snd_Play ("LEVELUP");
 	
@@ -388,19 +388,19 @@ FUNC INT Info_Mod_Ethan_Befoerderung_2_Condition()
 
 FUNC VOID Info_Mod_Ethan_Befoerderung_2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_00"); //Ahh, da bist du ja. Ich habe bereits von deinem Verdienst gehört und kann Saturas Willen nur voll unterstützen.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_01"); //So richte ich die Frage an dich: Fühlst du dich dazu bereit, als Hüter des Wassers Adanos zu dienen?
-	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_2_15_02"); //Ja, mein Wunsch ist es Hüter des Wassers zu werden.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_03"); //Dann nimm diese Rüstung und den Segen Adanos.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_00"); //Ach, tam jestescie. Uslyszalem juz o waszych zaslugach i moge tylko w pelni poprzec wole Satry.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_01"); //Wiec zadaje panu nastepujace pytanie: Czy czujesz sie gotów sluzyc jako straznik wody Adano?
+	AI_Output(hero, self, "Info_Mod_Ethan_Befoerderung_2_15_02"); //Tak, chce zostac straznikiem wody.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_03"); //Nastepnie wez te zbroje i blogoslawienstwo Adano.
 
 	CreateInvItems	(hero, ItAr_Hueter, 1);
-	B_ShowGivenThings	("Hüterrüstung erhalten");
+	B_ShowGivenThings	("Zbroja straznicza");
 
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Hueter);
 
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_04"); //Du wirst auch feststellen, dass du deine Rune der Eisklinge nun noch wirkungsvoller einsetzen kannst.
-	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_05"); //Möge das Gleichgewicht durch dein Wirken auch weiterhin Bestand haben.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_04"); //Mozna równiez zobaczyc, ze teraz jeszcze efektywniej uzywac Rune of the Ice Blade.
+	AI_Output(self, hero, "Info_Mod_Ethan_Befoerderung_2_13_05"); //Niech w twojej pracy zachowa sie równowaga.
 
 	Snd_Play ("LEVELUP");
 	
@@ -544,7 +544,7 @@ FUNC INT Info_Mod_Ethan_EXIT_Condition()
 
 FUNC VOID Info_Mod_Ethan_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ethan_EXIT_13_00"); //Für den Kampf um das Gleichgewicht!
+	AI_Output(self, hero, "Info_Mod_Ethan_EXIT_13_00"); //Walka o równowage!
 
 	AI_StopProcessInfos	(self);
 };

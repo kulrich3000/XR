@@ -1,7 +1,7 @@
 instance Mod_794_SLD_Raoul_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Raoul"; 
+	name 		= "Raul"; 
 	guild 		= GIL_MIL;
 	id 			= 794;
 	voice 		= 1;

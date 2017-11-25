@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Owen_Hi (C_INFO)
 	information	= Info_Mod_Owen_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Owen_Hi_Condition()
@@ -18,9 +18,9 @@ FUNC VOID Info_Mod_Owen_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Owen_Hi_31_00"); //Eigentlich heiße ich Owen. Wenn du jemanden hörst, der mich Schildkrötenrammler nennt - achte einfach nicht drauf. Das ... da war ich sehr betrunken, klar?
-	AI_Output(hero, self, "Info_Mod_Owen_Hi_15_01"); //Ich verstehe, Schi... Owen.
-	AI_Output(self, hero, "Info_Mod_Owen_Hi_31_02"); //(freudlos) Haha.
+	AI_Output(self, hero, "Info_Mod_Owen_Hi_31_00"); //Wlasciwie moim imieniem jest Owen. Jesli ktos slyszy, ze ktos nazywa mnie ubijakiem zólwi, nie zwracaj uwagi. .... Bylem bardzo pijany, mialem racje?
+	AI_Output(hero, self, "Info_Mod_Owen_Hi_15_01"); //Rozumiem, ze Shi-- Owen.
+	AI_Output(self, hero, "Info_Mod_Owen_Hi_31_02"); //Ha-ha.
 };
 
 INSTANCE Info_Mod_Owen_WarumPirat (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Owen_WarumPirat (C_INFO)
 	information	= Info_Mod_Owen_WarumPirat_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie bist du zu den Piraten gekommen?";
+	description	= "Jak dotarles do piratów?";
 };
 
 FUNC INT Info_Mod_Owen_WarumPirat_Condition()
@@ -41,11 +41,11 @@ FUNC INT Info_Mod_Owen_WarumPirat_Condition()
 
 FUNC VOID Info_Mod_Owen_WarumPirat_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Owen_WarumPirat_15_00"); //Wie bist du zu den Piraten gekommen?
-	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_01"); //Eigentlich war es andersrum: Die Piraten sind zu mir gekommen. (lacht)
-	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_02"); //Ich war Obermaat in der myrthanischen Marine, bis unser Schiff eines Tages von Greg und seinen Jungs angegriffen wurde.
-	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_03"); //Nachdem sie uns überwältigt hatten, stellten sie uns vor die Wahl - also die, die nicht eh schon tot waren: Gefangenschaft oder Überlaufen.
-	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_04"); //Schwierig zu erraten, wofür ich mich entscheiden habe, was? (lacht)
+	AI_Output(hero, self, "Info_Mod_Owen_WarumPirat_15_00"); //Jak dotarles do piratów?
+	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_01"); //Wlasciwie bylo odwrotnie: przyszli do mnie piraci. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_02"); //Bylem glównym przyjacielem w Myrthan Navy do pewnego dnia Greg i jego chlopcy zaatakowali nasz statek.
+	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_03"); //Po tym, jak nas ogarneli, dali nam wybór - tym, którzy jeszcze nie umarli: niewoli lub kleski.
+	AI_Output(self, hero, "Info_Mod_Owen_WarumPirat_31_04"); //Trudno odgadnac co wybralem, huh? (smiertelnicy)
 };
 
 INSTANCE Info_Mod_Owen_Auftrag (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Owen_Auftrag (C_INFO)
 	information	= Info_Mod_Owen_Auftrag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich dir helfen?";
+	description	= "Czy moge Ci pomóc?";
 };
 
 FUNC INT Info_Mod_Owen_Auftrag_Condition()
@@ -70,22 +70,22 @@ FUNC INT Info_Mod_Owen_Auftrag_Condition()
 
 FUNC VOID Info_Mod_Owen_Auftrag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_00"); //Kann ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_01"); //Ja, das kannst du tatsächlich.
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_02"); //Geh zu dem Alchemisten in Khorinis. Er wird dir einen Beutel mit einer Essenz geben.
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_03"); //Darin befindet sich konzentriertes Vitamin C.
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_04"); //Als wir das letzte Mal auf Schatzsuche gingen, mussten wir das Ganze absagen, weil die Hälfte der Mannschaft Skorbut hatte!
-	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_05"); //Gib mir das Geld und ich hol dein Vitamin C.
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_06"); //Hier, 400 Goldstücke.
+	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_00"); //Czy moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_01"); //Tak, tak, wlasciwie mozna.
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_02"); //Przejdz do alchemika w Khorinis. Daje Ci on worek esencji.
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_03"); //Zawiera skoncentrowana witamine C.
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_04"); //Ostatnim razem, kiedy wyszlismy na polowanie na skarb, musielismy odwolac, bo polowa ekipy miala szkorbut!
+	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_05"); //Daj mi pieniadze, a ja otrzymam Twoja witamine C.
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_06"); //Tutaj 400 sztuk zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
-	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_07"); //Wenn er mehr verlangt, haut er dich übern Tisch!
-	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_08"); //Ich werd's mir merken.
+	AI_Output(self, hero, "Info_Mod_Owen_Auftrag_31_07"); //Jesli bedzie prosil o wiecej, przewróci Cie na stól!
+	AI_Output(hero, self, "Info_Mod_Owen_Auftrag_15_08"); //Bede o tym pamietac.
 
 	Log_CreateTopic	(TOPIC_MOD_OWEN_SKORBUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_OWEN_SKORBUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_OWEN_SKORBUT, "Owen hat mir 400 Goldmünzen gegeben. Dafür soll ich in der Stadt beim Alchemisten einen Beutel Vitamin C kaufen.");
+	B_LogEntry	(TOPIC_MOD_OWEN_SKORBUT, "Owen dal mi 400 zlotych monet. Od alchemika w miescie powinienem kupic worek witaminy C.");
 };
 
 INSTANCE Info_Mod_Owen_VitaminC (C_INFO)
@@ -96,7 +96,7 @@ INSTANCE Info_Mod_Owen_VitaminC (C_INFO)
 	information	= Info_Mod_Owen_VitaminC_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Beutel.";
+	description	= "Dostalem torbe.";
 };
 
 FUNC INT Info_Mod_Owen_VitaminC_Condition()
@@ -110,11 +110,11 @@ FUNC INT Info_Mod_Owen_VitaminC_Condition()
 
 FUNC VOID Info_Mod_Owen_VitaminC_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Owen_VitaminC_15_00"); //Ich hab den Beutel.
+	AI_Output(hero, self, "Info_Mod_Owen_VitaminC_15_00"); //Dostalem torbe.
 
 	B_GiveInvItems	(hero, self, ItFo_Addon_VitaminC, 1);
 
-	AI_Output(self, hero, "Info_Mod_Owen_VitaminC_31_01"); //Damit dürften wir diesmal keine Probleme bekommen. Gut gemacht.
+	AI_Output(self, hero, "Info_Mod_Owen_VitaminC_31_01"); //Tym razem nie powinnismy miec z tym zadnych problemów. Dobrze wykonane.
 
 	Mod_PiratenVorbereitungen += 1;
 
@@ -122,7 +122,7 @@ FUNC VOID Info_Mod_Owen_VitaminC_Info()
 
 	B_Göttergefallen(2, 1);
 
-	B_LogEntry_More	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, TOPIC_MOD_OWEN_SKORBUT, "Gegen Skorbut haben Owen und ich uns abgesichert.", "Diese Schatzsuche sollte sicher sein vor einem Skorbut-Befall.");
+	B_LogEntry_More	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, TOPIC_MOD_OWEN_SKORBUT, "Scurvy' ego objeli Owen i I.", "Polowanie to powinno byc bezpieczne przed atakiem szkorbutów.");
 	B_SetTopicStatus	(TOPIC_MOD_OWEN_SKORBUT, LOG_SUCCESS);
 };
 
@@ -134,7 +134,7 @@ INSTANCE Info_Mod_Owen_Befreiung (C_INFO)
 	information	= Info_Mod_Owen_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Owen, steh auf, es ist vorbei!";
+	description	= "Owen, wstajcie, to juz koniec!";
 };
 
 FUNC INT Info_Mod_Owen_Befreiung_Condition()
@@ -147,23 +147,23 @@ FUNC INT Info_Mod_Owen_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Owen_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_00"); //Owen, steh auf, es ist vorbei!
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_01"); //(stöhnt) Argh, ich danke dir. Mann, ich dachte, diese Räuber würden mich noch töten.
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_02"); //Was ist denn passiert?
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_03"); //Als ich auf Wache bei Gregs Hütte war, bin ich zu weit zum Massiv gekommen. Auf einmal griffen mich aus der Dunkelheit etliche dieser Banditen an.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_04"); //Ich konnte zwar einige töten, doch es waren einfach zu viele. Sie schlugen mich nieder und verschleppten mich nach hier oben.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_05"); //Ich wurde gefoltert. Sie wollten wissen, was Greg als nächstes vorhat. Sie arbeiten anscheinend für diese komische Garde.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_06"); //Ich dachte, dass ich es nicht mehr schaffe, aber dann bist du aufgetaucht und hast mich gerettet.
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_07"); //Keine Ursache, leider habe ich dir etwas Schlimmes zu berichten.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_08"); //(erschrocken) Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_09"); //Alligator Jack. Bill erzählte mir, dass er vor mir aufgebrochen ist, um dich zu suchen.
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_10"); //Leider fiel er den Banditen zum Opfer. Ich fand seine Leiche und mehrere tote Banditen etwas weiter entfernt von hier.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_11"); //(murmelt) Alligator Jack ... tot ... kann ... nicht ... sein ...
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_12"); //Komm, ich bringe dich zu Bill. Er wird sich um dich kümmern.
-	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_13"); //Ja. Gehen wir zu Bill.
-	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_14"); //Folge mir.
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_00"); //Owen, wstajcie, to juz koniec!
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_01"); //(groans) Argh, dziekuje. Czlowiek, myslalem, ze ci zbójcy mnie zabili.
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_02"); //Co sie stalo z pieklem?
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_03"); //Kiedy pelnilem sluzbe straznicza w kabinie Greg' a, za daleko do masywu. Nagle niektórzy z tych bandytów zaatakowali mnie z ciemnosci.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_04"); //Móglbym niektórych zabic, ale bylo ich zbyt wiele. Uderzyli mnie w dól i przeciagneli mnie tutaj.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_05"); //Bylem torturowany. Chcieli wiedziec, co Greg zamierza dalej zrobic. Wydaje sie, ze pracuje pan dla tej dziwnej strazy.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_06"); //Myslalem, ze nie moge juz tego zrobic, ale potem sie pojawiles i uratowales mnie.
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_07"); //Nie martw sie, mam cos zlego do powiedzenia.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_08"); //Co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_09"); //Alligator Jack. Bill powiedzial mi, ze zostawil mnie przed mna, zeby cie szukac.
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_10"); //Niestety, padl on ofiara bandytów. Znalazlem jego cialo i kilku zmarlych bandytów, troche dalej od niego.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_11"); //(mumbles) Alligator Jack..... martwy..... moga..... nie...... byc..........
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_12"); //Chodz, zabiore cie do Billa. O to zatroszczy sie on o Ciebie.
+	AI_Output(self, hero, "Info_Mod_Owen_Befreiung_03_13"); //Tak. Zobaczmy projekt ustawy.
+	AI_Output(hero, self, "Info_Mod_Owen_Befreiung_15_14"); //Podazaj za mna, idz za mna.
 	
-	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Ich habe Owen gefunden und bringe ihn nun zurück zu Bill.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Znalazlem Owena i zabieram go teraz z powrotem do Billa.");
 
 	B_GivePlayerXP	(250);
 
@@ -192,10 +192,10 @@ FUNC INT Info_Mod_Owen_Beerdigung_Condition()
 
 FUNC VOID Info_Mod_Owen_Beerdigung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Owen_Beerdigung_15_00"); //Hey, da bist du ja wieder. Du hast es tatsächlich geschafft.
-	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_01"); //Ja, es war ein Spießrutenlauf, wie ich ihn in meinem Leben noch nie zurücklegen musste.
-	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_02"); //Ein magisches Geschoss nach dem nächsten, dem ich ausweichen musste.
-	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_03"); //Aber gerade als mir langsam die Puste auszugehen drohte, lösten sich die untoten Bastarde mit einem Knall in Schall und Rauch auf.
+	AI_Output(hero, self, "Info_Mod_Owen_Beerdigung_15_00"); //Hej, znów jestes. Tak naprawde to pan zrobil.
+	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_01"); //Tak, to byl rekawiczka, tak jak nigdy wczesniej nie musialem go wlozyc w swoje zycie.
+	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_02"); //Jeden magiczny pocisk za drugim, którego musialem unikac.
+	AI_Output(self, hero, "Info_Mod_Owen_Beerdigung_03_03"); //Ale tak jak powoli grozilem, ze skonczylo mi sie oddychanie, nieumarle dranie rozplynelo sie z hukiem dzwieku i dymu.
 
 	AI_StopProcessInfos	(self);
 };

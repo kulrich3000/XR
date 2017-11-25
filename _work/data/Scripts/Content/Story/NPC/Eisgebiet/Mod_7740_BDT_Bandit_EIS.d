@@ -1,7 +1,7 @@
 INSTANCE Mod_7740_BDT_Bandit_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bandit";
+	name 		= "bandyta";
 	guild 		= GIL_STRF;
 	id 			= 7740;
 	voice 		= 4;

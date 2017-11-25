@@ -1,7 +1,7 @@
 INSTANCE Mod_921_KDF_Marduk_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Marduk";
+	name 		= "mardunek";
 	guild 		= GIL_VLK;
 	id 			= 921;
 	voice 		= 32;

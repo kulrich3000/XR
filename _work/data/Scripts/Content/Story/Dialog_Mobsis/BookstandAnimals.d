@@ -31,27 +31,27 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Polowanie i zdobycze"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Kazde zwierze i posiadanie wlasnych trofeów, co zwieksza slawe i bogactwo doswiadczonego mysliwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ein erfahrener Jäger weiß um die Trophäen seiner Beute und kennt die verschiedenen Methoden sie auszunehmen.");
+					Doc_PrintLines	( nDocID,  0, "Doswiadczony mysliwy zna trofea swojej ofiary i wie jak je wypatroszyc.");
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Zähne reißen"						);
-					Doc_PrintLines	( nDocID,  0, "Die Zähne, sind die Waffe von vielen Tieren und Wesen. Wer darum weiß, wie er sie seiner Beute fachkundig entreißt, findet bei Wölfen, Snappern, Schattenläufern, Sumpfhaien und Trollen seine Beute."						);
+					Doc_PrintLine	( nDocID,  0, "zaciskac swoje zeby"						);
+					Doc_PrintLines	( nDocID,  0, "Zeby sa bronia wielu zwierzat i istot. Kazdy, kto wie jak ich zlapac z ofiary, znajdzie swoja ofiare w wilkach, ludziach, rekinach i trollach."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Felle abziehen"						);
-					Doc_PrintLines	( nDocID,  1, "Ein Talent das der erfahrene Jäger oft zu nutzen weiß - gibt es doch viele Tiere, deren Körper von einem Fell geschützt ist. Schafe, Wölfe und Schattenläufer um nur einige zu benennen."						); 
-					Doc_PrintLines	( nDocID,  1, "Ein Jäger, der dieses Talent beherrscht, kann auch die Häute von Sumphaien und Lurkern abziehen.  "						);
+					Doc_PrintLine	( nDocID,  1, "Zdjac skóry"						);
+					Doc_PrintLines	( nDocID,  1, "Talent, który doswiadczony mysliwy czesto potrafi wykorzystac - jest wiele zwierzat, których cialo jest chronione futrem. Owce, wilki i biegacze cieni to tylko niektóre z nich."						); 
+					Doc_PrintLines	( nDocID,  1, "Lowca, który opanuje ten talent, moze równiez obierac skórki Sumphai i Lurker.  "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Krallen brechen"						);
-					Doc_PrintLines	( nDocID,  1, "Eine Kunst, die bei Waranen aller Art, Snappern, Lurkern und Schattenläufern eingesetzt werden kann.  "						);
+					Doc_PrintLine	( nDocID,  1, "zlamac pazury"						);
+					Doc_PrintLines	( nDocID,  1, "Sztuka, która nadaje sie do uzytku na wszelkiego rodzaju monitorach, slimakach, cieniach i cieniach.  "						);
 					Doc_Show		( nDocID );
 					
 					if (Animals_1_permanent == FALSE)
@@ -80,26 +80,26 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Polowanie i zdobycze"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Kazde zwierze i posiadanie wlasnych trofeów, co zwieksza slawe i bogactwo doswiadczonego mysliwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Die Blutfliegen"			);
+					Doc_PrintLine	( nDocID,  0, "Krew muchy"			);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Um diese fliegenden Teufel auszunehmen, bedarf es zwei besonderer Künste."					); 
-					Doc_PrintLines	( nDocID,  0, "Zum einen können ihnen die Flügel abgetrennt, zum anderen kann der Stachel entrissen werden." );
-					Doc_PrintLines	( nDocID,  0, "Beide Künste sollte der erfahrene Jäger einsetzen, um sich die Trophäen anzueignen."	);
+					Doc_PrintLines	( nDocID,  0, "Do wypatroszenia owych diablów potrzebne sa dwie specjalne sztuki."					); 
+					Doc_PrintLines	( nDocID,  0, "Z jednej strony mozna odciac skrzydla, a z drugiej strony mozna oderwac zadlo." );
+					Doc_PrintLines	( nDocID,  0, "Doswiadczony mysliwy powinien wykorzystac obydwie sztuki do zdobycia trofeów."	);
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Feldräuber und Minecrawler greifen mit Zangen an. Vor allem die Zangen der Minecrawler"						);
-					Doc_PrintLines	( nDocID,  1, "gelten als besonders wertvoll, weil sie ein Sekret enthalten, das magische Kräfte steigert."						);
-					Doc_PrintLines	( nDocID,  1, "Allerdings sollte es mit Vorsicht genossen werden, da der menschliche Körper mit der Zeit nicht mehr darauf reagiert."						);   
-					Doc_PrintLines	( nDocID,  1, "Ebenfalls sehr begehrt sind die Platten der Minecrawler. Aus ihnen lassen sich Rüstungen herstellen. "						);
+					Doc_PrintLines	( nDocID,  1, "Zlodzieje polowi i minecrawlerzy atakuja szczypcami. Zwlaszcza szczypce miotel mineralów"						);
+					Doc_PrintLines	( nDocID,  1, "sa uwazane za szczególnie cenne, poniewaz zawieraja wydzieline zwiekszajaca moc magiczna."						);
+					Doc_PrintLines	( nDocID,  1, "Nalezy jednak cieszyc sie nim z ostroznoscia, poniewaz organizm ludzki nie reaguje na niego z czasem."						);   
+					Doc_PrintLines	( nDocID,  1, "Bardzo popularne sa równiez plyty Minecrawler. Z nich mozna wykonac pancerz. "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, " "						);
 					Doc_Show		( nDocID );
@@ -131,25 +131,25 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Jagd und Beute"					);
+					Doc_PrintLine	( nDocID,  0, "Polowanie i zdobycze"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren."						);
+					Doc_PrintLines	( nDocID,  0, "Kazde zwierze i posiadanie wlasnych trofeów, co zwieksza slawe i bogactwo doswiadczonego mysliwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Der Feuerwaran"						);
-					Doc_PrintLines	( nDocID,  0, "Dieses besondere Wesen zählt zur Gattung der Warane, allerdings ist es in der Lage Feuer zu speien, das jeden der sich ihm auf ein paar Schritt nähert, unweigerlich tötet."						);
-					Doc_PrintLines	( nDocID,  0, "Nur wer sich gegen Feuer zu schützen vermag, kann sich im Kampf mit diesen Wesen messen und ihm die kostbare Zunge entreissen."	);		
+					Doc_PrintLine	( nDocID,  0, "Monitor pozarowy"						);
+					Doc_PrintLines	( nDocID,  0, "Ta wyjatkowa istota nalezy do rodzaju jaszczurek monitorujacych, ale potrafi oddychac ogniem, co nieuchronnie zabija kazdego kto zblizy sie do niej w kilku krokach."						);
+					Doc_PrintLines	( nDocID,  0, "Tylko ci, którzy sa w stanie uchronic sie przed ogniem, moga z nimi konkurowac i wylapac z nich swoje cenne jezyki."	);		
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Der Schattenläufer"		);
+					Doc_PrintLine	( nDocID,  1, "Petrel cienia"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Der Schattenläufer ist ein uralter Einzelgänger der versteckt in Wäldern lebt."						); 
-					Doc_PrintLines	( nDocID,  1, "Es gibt nur noch wenige Exemplare, so das er für den Menschen keine Gefahr mehr darstellt, solange er nicht seine Jagdrevier kreuzt."						);
-					Doc_PrintLines	( nDocID,  1, "Der Kopf des Schattenläufers wird von einem Horn gekrönt, das als wertvolle Trophäe gilt. Ein Jäger muss die Kunst lernen, das Horn richtig zu brechen,"						);
-					Doc_PrintLines	( nDocID,  1, "damit er diese Trophäe bekommt."						);
+					Doc_PrintLines	( nDocID,  1, "The Shadow Creeper jest starozytnym samotnikiem, który zyje w lesie."						); 
+					Doc_PrintLines	( nDocID,  1, "Pozostalo tylko kilka okazów, wiec nie stanowi on juz zagrozenia dla ludzi, dopóki nie przekroczy swoich terenów lowieckich."						);
+					Doc_PrintLines	( nDocID,  1, "Glowa Bieguna Cienia jest zwienczona rogiem, który uwazany jest za cenne trofeum. Lowca musi nauczyc sie sztuki wlasciwego przelamywania rogu,"						);
+					Doc_PrintLines	( nDocID,  1, "aby zdobyc to trofeum."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 							

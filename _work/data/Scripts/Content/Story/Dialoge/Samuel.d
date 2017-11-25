@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Samuel_Hi (C_INFO)
 	information	= Info_Mod_Samuel_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Samuel_Hi_Condition()
@@ -18,16 +18,16 @@ FUNC VOID Info_Mod_Samuel_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Samuel_Hi_14_01"); //Ich bin Samuel. Nimm erstmal nen ordentlichen Schluck Grog.
+	AI_Output(self, hero, "Info_Mod_Samuel_Hi_14_01"); //Jestem Samuel. Wez dobry lyk grog.
 	
 	B_GiveInvItems	(self, hero, ItFo_Addon_Grog, 1);
 
 	B_UseItem	(hero, ItFo_Addon_Grog);
 
-	AI_Output(self, hero, "Info_Mod_Samuel_Hi_14_02"); //Wenn du mehr willst, dann geh zu Skip, ich bring mein Zeug meistens zu ihm. Ich hab nicht viel, aber wenn du willst, kann ich dir auch etwas verkaufen.
+	AI_Output(self, hero, "Info_Mod_Samuel_Hi_14_02"); //Jesli chcesz wiecej, przejdz do Skip, zazwyczaj zabieram mu swoje rzeczy. Nie mam wiele, ale jesli chcesz, moge ci cos sprzedac.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Samuel hat ein wenig Grog, den er mir verkaufen könnte.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Samuel dostal grog, który mógl mi sprzedac.");
 };
 
 INSTANCE Info_Mod_Samuel_Auftrag (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Samuel_Auftrag (C_INFO)
 	information	= Info_Mod_Samuel_Auftrag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg schickt mich";
+	description	= "Greg wysyla mnie";
 };
 
 FUNC INT Info_Mod_Samuel_Auftrag_Condition()
@@ -52,18 +52,18 @@ FUNC INT Info_Mod_Samuel_Auftrag_Condition()
 
 FUNC VOID Info_Mod_Samuel_Auftrag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_Auftrag_15_00"); //Greg schickt mich. Ich soll mich nützlich machen, weil er in See stechen will.
-	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_01"); //Sehr gut, ich brauch jemanden der mir die Zutaten für nen ordentlichen Rum beschafft.
-	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_02"); //Bring mir 10 Gläser Melasse und 20 Flaschen Wasser.
+	AI_Output(hero, self, "Info_Mod_Samuel_Auftrag_15_00"); //Greg mnie wyslal. Mam sie przydac, bo on chce ustawiac zagle.
+	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_01"); //Bardzo dobrze, potrzebuje kogos, kto pozyskalby mi skladniki na przyzwoity rum.
+	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_02"); //Przynies mi 10 szklanek melasy i 20 butelek wody.
 	AI_Output(hero, self, "Info_Mod_Samuel_Auftrag_15_03"); //Lasse?
-	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_04"); //Melasse! Sowas ähnliches wie Honig.
-	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_05"); //Daraus lässt sich ein anständiger rum brauen, sag ich dir!
-	AI_Output(hero, self, "Info_Mod_Samuel_Auftrag_15_06"); //Und woher krieg ich Melasse?
-	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_07"); //Aus der Stadt. Entweder am Markt oder im Hafenviertel.
+	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_04"); //Melasy! Jak miód.
+	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_05"); //To jest przyzwoite, powiadam wam!
+	AI_Output(hero, self, "Info_Mod_Samuel_Auftrag_15_06"); //A skad pochodzi melasa?
+	AI_Output(self, hero, "Info_Mod_Samuel_Auftrag_14_07"); //Z miasta. Zarówno na rynku, jak i w dzielnicy portowej.
 
 	Log_CreateTopic	(TOPIC_MOD_SAMUEL_RUM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SAMUEL_RUM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "Ich soll in der Stadt Khorinis 10 Gläser Melasse und 20 Flaschen Wasser für Samuel besorgen.");
+	B_LogEntry	(TOPIC_MOD_SAMUEL_RUM, "W miescie Khorini mam dostac 10 szklanek melasy i 20 butelek wody dla Samuela.");
 };
 
 INSTANCE Info_Mod_Samuel_HabZeug (C_INFO)
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_Samuel_HabZeug (C_INFO)
 	information	= Info_Mod_Samuel_HabZeug_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab das Zeug.";
+	description	= "Dostalem rzeczy.";
 };
 
 FUNC INT Info_Mod_Samuel_HabZeug_Condition()
@@ -89,15 +89,15 @@ FUNC INT Info_Mod_Samuel_HabZeug_Condition()
 
 FUNC VOID Info_Mod_Samuel_HabZeug_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_HabZeug_15_00"); //Ich hab das Zeug.
+	AI_Output(hero, self, "Info_Mod_Samuel_HabZeug_15_00"); //Dostalem rzeczy.
 
 	Npc_RemoveInvItems	(hero, ItFo_Water, 20);
 	Npc_RemoveInvItems	(hero, ItFo_Melasse, 20);
 
-	B_ShowGivenThings	("20 Wasser und 20 Melasse gegeben");
+	B_ShowGivenThings	("20 wody i 20 dodanych melas");
 
-	AI_Output(self, hero, "Info_Mod_Samuel_HabZeug_14_01"); //Gut, dann haben wir unseren Rumvorrat gesichert.
-	AI_Output(self, hero, "Info_Mod_Samuel_HabZeug_14_02"); //Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Samuel_HabZeug_14_01"); //No cóz, wtedy zabezpieczylismy nasza dostawe rumu.
+	AI_Output(self, hero, "Info_Mod_Samuel_HabZeug_14_02"); //Oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
@@ -109,7 +109,7 @@ FUNC VOID Info_Mod_Samuel_HabZeug_Info()
 
 	B_SetTopicStatus	(TOPIC_MOD_SAMUEL_RUM, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Ich habe Samuel geholfen den Rumvorrat zu sichern.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Pomagalem Samuelowi zabezpieczyc dostawy rumu.");
 };
 
 INSTANCE Info_Mod_Samuel_SkipFleisch (C_INFO)
@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Samuel_SkipFleisch (C_INFO)
 	information	= Info_Mod_Samuel_SkipFleisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Hab hier 'nen Haufen Fleisch.";
+	description	= "Witaj! Tutaj dostal stos miesa.";
 };
 
 FUNC INT Info_Mod_Samuel_SkipFleisch_Condition()
@@ -134,15 +134,15 @@ FUNC INT Info_Mod_Samuel_SkipFleisch_Condition()
 
 FUNC VOID Info_Mod_Samuel_SkipFleisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch_15_00"); //Hallo! Hab hier 'nen Haufen Fleisch. Du sollst es pökeln. Und dich beeilen.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch_15_00"); //Witaj! Tutaj dostal stos miesa. Chce, zeby pan go solil. I spiesz sie.
 
 	B_GiveInvItems	(hero, self, ItFo_MuttonRaw, 30);
 
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch_14_01"); //Pökeln? Will Greg auslaufen?
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch_15_02"); //Gewiss. Er hat da eine Schatzkarte ...
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch_14_03"); //Das ist mal was Neues. Morgen ist das Fleisch fertig.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch_14_01"); //Solenie? Próbuje sie skonczyc z Gregiem?
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch_15_02"); //Oczywiscie. Ma mape skarbów.....
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch_14_03"); //Jest to cos nowego. Jutro mieso bedzie gotowe.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Samuel wird das Fleisch morgen fertig haben. Ich sollte mich solange um die anderen kümmern ...");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Samuel bedzie mial jutro gotowe mieso. Tak dlugo, jak dlugo bede dbal o innych....");
 
 	Mod_PIR_Samuel_Poekelfleisch = Wld_GetDay();
 };
@@ -155,7 +155,7 @@ INSTANCE Info_Mod_Samuel_SkipFleisch2 (C_INFO)
 	information	= Info_Mod_Samuel_SkipFleisch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du fertig?";
+	description	= "Czy jestes gotowy?";
 };
 
 FUNC INT Info_Mod_Samuel_SkipFleisch2_Condition()
@@ -169,16 +169,16 @@ FUNC INT Info_Mod_Samuel_SkipFleisch2_Condition()
 
 FUNC VOID Info_Mod_Samuel_SkipFleisch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_00"); //Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_01"); //Leider nicht. Mir ist das Salz ausgegangen.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_02"); //Und wo kriegst du neues her?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_03"); //Das ist das Problem. Sonst hab ich es hinten in der Höhle geschlagen.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_04"); //Aber da nisten seit kurzem Minecrawler drin. Da bringt mich keiner mehr rein.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_05"); //Dann muss ich mich wohl um das Salz kümmern.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_06"); //So ist es. Ich brauche mindest dreis Brocken.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_07"); //Immer auf die Kleinen ...
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_00"); //Czy jestes gotowy?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_01"); //Niestety nie. Jestem z soli.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_02"); //A gdzie dostajesz nowe?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_03"); //To jest problem. Kiedys uderzalem ja w tyl jaskini.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_04"); //Ostatnio jednak w nim zagniezdzaja sie minecrawlery. Nikt mnie juz tam nie zaprowadzi.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_05"); //Wtedy chyba bede musial zadbac o sól.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch2_14_06"); //Tak wlasnie jest. Potrzebuje co najmniej trzech bulek.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch2_15_07"); //Zawsze na malych....
 
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Leider ist Samuel mit dem Fleisch noch nicht fertig, da ihm das Salz ausgegangen ist. In der Höhle am Nordstrand ist eine Salzader, doch dort sind seit kurzem einige Minecrawler. Aber ich habe wohl keine Wahl ...");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Niestety Samuel nie jest wykonczony miesem, bo zabraklo mu soli. W jaskini przy pólnocnej plazy znajduje sie zyla solna, ale ostatnio jest tam kilka minecrawlerów. Ale nie mam wyboru....");
 
 	Wld_InsertNpc	(Minecrawler,	"ADW_PIRATECAMP_CAVE3_04");
 	Wld_InsertNpc	(Minecrawler,	"ADW_PIRATECAMP_CAVE3_04");
@@ -193,7 +193,7 @@ INSTANCE Info_Mod_Samuel_SkipFleisch3 (C_INFO)
 	information	= Info_Mod_Samuel_SkipFleisch3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, dein Salz.";
+	description	= "Oto Twoja sól.";
 };
 
 FUNC INT Info_Mod_Samuel_SkipFleisch3_Condition()
@@ -207,18 +207,18 @@ FUNC INT Info_Mod_Samuel_SkipFleisch3_Condition()
 
 FUNC VOID Info_Mod_Samuel_SkipFleisch3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_00"); //Hier, dein Salz.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_00"); //Oto Twoja sól.
 
 	B_GiveInvItems	(hero, self, ItMi_Salznugget, 3);
 
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_01"); //Die paar Crawler hättest du aber selbst ...
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_02"); //Wo denkst du hin? Ich bin Gelehrter, kein Schlächter.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_03"); //Also gut. Wann kann ich ...
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_04"); //Das Fleisch muss über Nacht reifen.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_05"); //Also morgen?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_06"); //Genau.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_01"); //Niewiele gasienic masz samotnie....
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_02"); //O czym myslisz? Jestem naukowcem, a nie rzeznikiem.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_03"); //A zatem wszystko w porzadku. Kiedy moge....
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_04"); //Mieso musi dojrzewac przez noc.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch3_15_05"); //Jutro wiec?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch3_14_06"); //Dokladnie.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Morgen sollte das Fleisch dann fertig sein.");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Jutro mieso powinno byc gotowe.");
 
 	Mod_PIR_Samuel_Poekelfleisch = Wld_GetDay();
 };
@@ -244,15 +244,15 @@ FUNC INT Info_Mod_Samuel_SkipFleisch4_Condition()
 
 FUNC VOID Info_Mod_Samuel_SkipFleisch4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch4_14_00"); //Du kommst genau richtig. Das Fleisch ist fertig.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch4_14_00"); //Jestes na czasie. Mieso jest gotowe.
 
 	B_GiveInvItems	(self, hero, ItFo_Poekelfleisch_Skip, 30);
 
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch4_15_01"); //Ich kann's also Skip bringen?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch4_14_02"); //Ja. Sag ihm, er soll's noch zum Trocknen auslegen oder -hängen.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch4_15_03"); //Mach ich.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch4_15_01"); //Wiec moge dostac go do Skipu.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipFleisch4_14_02"); //Tak. Powiedz mu, aby ja polozyc lub powiesic do wyschniecia.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipFleisch4_15_03"); //Wlasciwie, bede.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Ich hab das gepökelte Fleisch. Jetzt auf zu Skip ...");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Dostalem solone mieso. Teraz przejdz do Skipu....");
 };
 
 INSTANCE Info_Mod_Samuel_Kompass (C_INFO)
@@ -263,7 +263,7 @@ INSTANCE Info_Mod_Samuel_Kompass (C_INFO)
 	information	= Info_Mod_Samuel_Kompass_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg glaubt, du hast einlge Eisspruchrollen. Kann ich die haben?";
+	description	= "Greg uwaza, ze masz kilka rolek lodowych. Czy moge to osiagnac?";
 };
 
 FUNC INT Info_Mod_Samuel_Kompass_Condition()
@@ -276,16 +276,16 @@ FUNC INT Info_Mod_Samuel_Kompass_Condition()
 
 FUNC VOID Info_Mod_Samuel_Kompass_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_00"); //Greg glaubt, du hast einlge Eisspruchrollen. Kann ich die haben?
-	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_01"); //Hm ... Ungern. Ich brauch manchmal Eis für meine Tränke.
-	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_02"); //UndSkip kommt öfters und holt sich welches. Er meint, Rum auf Eis schmecke besser als ohne.
-	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_03"); //Ich muss rüber zum anderen Strand, da sind wahrscheinlich Feuerwarane. Da kann ich die Rollen gut gebrauchen.
-	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_04"); //Ich besorg dir auch später wieder welche. Versprochen.
-	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_05"); //Nun gut. Hier hast du drei Stück.
+	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_00"); //Greg uwaza, ze masz kilka rolek lodowych. Czy moge to osiagnac?
+	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_01"); //Hm.... Ungern. Czasami potrzebuje lodów do moich eliksirów.
+	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_02"); //AndSkip przychodzi czesto i dostaje troche. Mysli, ze rum lepiej smakuje na lodzie niz rum na skalach.
+	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_03"); //Dostalem sie na druga plaze, jest prawdopodobnie monitor ognia. Moglem uzywac kólek.
+	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_04"); //Pózniej otrzymam Cie troche pózniej. Obiecuje.
+	AI_Output(self, hero, "Info_Mod_Samuel_Kompass_14_05"); //Bardzo dobrze. Oto trzy z nich.
 
 	B_GiveInvItems	(self, hero, ItSc_IceCube, 3);
 
-	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_06"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Samuel_Kompass_15_06"); //Dzieki.
 };
 
 INSTANCE Info_Mod_Samuel_SkipToDead (C_INFO)
@@ -296,7 +296,7 @@ INSTANCE Info_Mod_Samuel_SkipToDead (C_INFO)
 	information	= Info_Mod_Samuel_SkipToDead_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Samuel, du musst mir unbedingt helfen.";
+	description	= "Samuel, naprawde potrzebuje pana, aby mi pomóc.";
 };
 
 FUNC INT Info_Mod_Samuel_SkipToDead_Condition()
@@ -310,31 +310,31 @@ FUNC INT Info_Mod_Samuel_SkipToDead_Condition()
 
 FUNC VOID Info_Mod_Samuel_SkipToDead_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_00"); //Samuel, du musst mir unbedingt helfen.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_01"); //Was ist denn los?
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_02"); //Skip wurde während des großen Kampfes schwer verwundet und wird ohne die richtige Medizin sicher bald sterben.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_03"); //Was hat er denn?
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_04"); //Er wurde von einem Feuerball getroffen.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_05"); //Da gibt es tatsächlich einen Trank dagegen. Er nennt sich "Adanos Wohltat".
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_06"); //In den alten Schriften hier in Jharkendar habe ich einst das Rezept dazu gefunden.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_07"); //Kannst du mir diesen Trank geben.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_08"); //Leider konnte ich ihn nie brauen, weil ich die Zutaten dafür nicht hatte.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_09"); //Was für Zutaten brauchst du denn?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_10"); //Insgesamt sind es drei wichtige Sachen, die ich benötige.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_11"); //Welche sind das?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_12"); //Zuerst brauche ich eine Rune der leichten Wundheilung. Ein Stück des Runensteins ist notwendig für die Wirkung des Trankes.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_13"); //Wo finde ich eine solche Rune?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_14"); //Frag mal diesen Myxir, vielleicht hat er eine.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_15"); //Was brauchst du noch?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_16"); //Als Zweites benötige ich eine Trollkirsche.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_17"); //Wo kann ich eine Trollkirsche bekommen?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_18"); //Am südlichen Strand müsste ein Troll rumlungern. In den Exkrementen der Trolle kannst du solche Früchte finden.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_19"); //Und als Letztes?
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_20"); //Es fehlen noch ein paar Kräuter. Ein Kronstöckl, vier Heilpflanzen und fünf Feuernesseln.
-	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_21"); //Die findest du eigentlich überall, nur beim Kronstöckl musst du etwas suchen.
-	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_22"); //Gut, ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_00"); //Samuel, naprawde potrzebuje pana, aby mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_01"); //Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_02"); //Pominiecie zostalo ciezko ranne podczas wielkiej walki i na pewno wkrótce umrze bez odpowiedniego lekarstwa.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_03"); //Co sie z nim dzieje?
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_04"); //Zostal uderzony przez strazaka.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_05"); //Da gibt es tatsächlich einen Trank dagegen. Er nennt sich "Blogoslawienstwo Adano".
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_06"); //W starych pismach tutaj w Jharkendarzu znalazlem kiedys przepis na to.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_07"); //Czy mozesz dac mi ten eliksir?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_08"); //Niestety, nigdy nie moglem go warzyc, poniewaz nie mialem skladników.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_09"); //Jakie skladniki sa potrzebne?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_10"); //W sumie sa trzy wazne rzeczy, których potrzebuje.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_11"); //Które z nich sa?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_12"); //Po pierwsze, potrzebuje runa lekkiej gojenia sie ran. Do uzyskania efektu eliksiru potrzebny jest kawalek kamienia runowego.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_13"); //Gdzie moge znalezc taka rune?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_14"); //Zapytaj, ze Myxir, moze on go dostanie.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_15"); //Czego jeszcze potrzebujesz?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_16"); //Po drugie, potrzebuje wisnia trollowa.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_17"); //Gdzie moge dostac wisnie trollowa?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_18"); //Dookola poludniowej plazy powinien wisiec troll. Takie owoce mozna znalezc w odchodach trollów.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_19"); //A ostatni?
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_20"); //Brakuje kilku ziól. Jeden Kronstöckl, cztery rosliny lecznicze i piec pokrzyw.
+	AI_Output(self, hero, "Info_Mod_Samuel_SkipToDead_14_21"); //Znajdziesz je wszedzie, poza Kronstöckl trzeba cos szukac.
+	AI_Output(hero, self, "Info_Mod_Samuel_SkipToDead_15_22"); //Dobrze, od razu bede w drodze.
 
-	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Samuel kennt das Rezept für einen Heiltrank, der Skip retten kann, doch die Liste mit benötigten Zutaten ist lang. Neben einer Rune der leichten Wundheilung, die ich mit etwas Glück bei Myxir bekommen kann, brauche ich auch noch eine Trollkirsche, die in den Exkrementen von Trollen zu finden sein soll, einen Kronstöckl, vier Heilpflanzen und fünf Feuernesseln. Ein Troll soll sich zur Zeit beim südlichen Strand befinden, den Rest muss ich wohl suchen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Samuel zna recepture na eliksir leczniczy, który moze zaoszczedzic Skip, ale lista skladników jest dluga. Oprócz rundy lekkiego gojenia sie ran, która moge dostac z odrobina szczescia na Myxirie, potrzebuje tez wisni trollowej, która ma znalezc sie w odchodach trollów, kiju koronowego, czterech roslin leczniczych i pieciu pokrzyw. Mówi sie, ze troll jest w poblizu poludniowej plazy, reszte musze szukac.");
 
 	B_TeachPlayerTalentAlchemy (self, hero, POTION_AdanosWohltat);
 
@@ -353,7 +353,7 @@ INSTANCE Info_Mod_Samuel_AdanosWohltat (C_INFO)
 	information	= Info_Mod_Samuel_AdanosWohltat_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Sachen.";
+	description	= "Mam wszystko.";
 };
 
 FUNC INT Info_Mod_Samuel_AdanosWohltat_Condition()
@@ -372,9 +372,9 @@ FUNC INT Info_Mod_Samuel_AdanosWohltat_Condition()
 
 FUNC VOID Info_Mod_Samuel_AdanosWohltat_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat_15_00"); //Ich habe alle Sachen, die du benötgst, gefunden.
+	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat_15_00"); //Znalazlem wszystkie potrzebne mi rzeczy.
 
-	B_ShowGivenThings	("Gegenstände gegeben");
+	B_ShowGivenThings	("przedmioty");
 
 	Npc_RemoveInvItems	(hero, ItRu_LightHeal, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Trollkirsche, 1);
@@ -382,10 +382,10 @@ FUNC VOID Info_Mod_Samuel_AdanosWohltat_Info()
 	Npc_RemoveInvItems	(hero, ItPl_Mana_Herb_01, 5);
 	Npc_RemoveInvItems	(hero, ItPl_Health_Herb_01, 4);
 
-	AI_Output(self, hero, "Info_Mod_Samuel_AdanosWohltat_14_01"); //Sehr gut. Ich habe bis morgen sicher den Trank fertig. Komme dann wieder.
-	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat_15_02"); //Ok.
+	AI_Output(self, hero, "Info_Mod_Samuel_AdanosWohltat_14_01"); //Bardzo dobry. Do jutra mam gotowa eliksir. Bede z powrotem.
+	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat_15_02"); //Okay.
 	
-	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Ich habe Samuel die Zutaten gebracht. Bis morgen wird er den Trank fertig haben.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Przywiózlem skladniki do Samuela. Do jutra bedzie mial gotowy eliksir.");
 
 	Mod_SamuelSkipsTrank = Wld_GetDay();
 
@@ -400,7 +400,7 @@ INSTANCE Info_Mod_Samuel_AdanosWohltat2 (C_INFO)
 	information	= Info_Mod_Samuel_AdanosWohltat2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und?";
+	description	= "A co?";
 };
 
 FUNC INT Info_Mod_Samuel_AdanosWohltat2_Condition()
@@ -414,14 +414,14 @@ FUNC INT Info_Mod_Samuel_AdanosWohltat2_Condition()
 
 FUNC VOID Info_Mod_Samuel_AdanosWohltat2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat2_15_00"); //Und?
-	AI_Output(self, hero, "Info_Mod_Samuel_AdanosWohltat2_14_01"); //Es hat lange gedauert, aber hier ist der Trank. Bring' ihn schleunigst zu Skip.
+	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat2_15_00"); //A co?
+	AI_Output(self, hero, "Info_Mod_Samuel_AdanosWohltat2_14_01"); //Zajelo to duzo czasu, ale oto eliksir. Natychmiast zabierz go do Skoku.
 
 	B_GiveInvItems	(self, hero, ItPo_AdanosWohltat, 1);
 
-	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat2_15_02"); //Verstanden.
+	AI_Output(hero, self, "Info_Mod_Samuel_AdanosWohltat2_15_02"); //Zrozumiale.
 	
-	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Samuel hat mir den Trank gegeben. Jetzt sollte ich schnell zu Skip.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Samuel dal mi eliksir. Teraz powinienem dotrzec do Skipu.");
 
 	B_GivePlayerXP	(100);
 };

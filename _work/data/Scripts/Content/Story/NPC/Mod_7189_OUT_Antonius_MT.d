@@ -1,7 +1,7 @@
 instance Mod_7189_OUT_Antonius_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Antonius"; 
+	name 		= "Antonia"; 
 	guild 		= GIL_OUT;
 	id 			= 7189;
 	voice 		= 6;

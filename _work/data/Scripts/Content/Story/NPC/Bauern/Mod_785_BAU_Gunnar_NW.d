@@ -1,7 +1,7 @@
 instance Mod_785_BAU_Gunnar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gunnar";
+	name 		= "strzelanina";
 	guild 		= GIL_NONE;
 	id 			= 785;
 	voice 		= 10;

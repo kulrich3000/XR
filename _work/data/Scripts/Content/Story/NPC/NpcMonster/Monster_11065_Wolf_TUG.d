@@ -1,7 +1,7 @@
 INSTANCE Monster_11065_Wolf_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wolf";	
+	name 		= "nóz";	
 	guild 		= GIL_WOLF;
 	id 			= 11065;
 	voice 		= 6;

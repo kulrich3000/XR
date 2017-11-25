@@ -15,53 +15,53 @@ FUNC INT Info_Mod_Allievo_Hi_Condition()
 
 FUNC VOID Info_Mod_Allievo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_13_00"); //(kühn) Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_13_00"); //Czego od mnie oczekujesz?
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Falsche Frage. Was wollt ihr von mir?", Info_Mod_Allievo_Hi_B);
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Bist du etwa ganz allein?", Info_Mod_Allievo_Hi_A);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Nieprawidlowe pytanie. Czego od mnie oczekujesz?", Info_Mod_Allievo_Hi_B);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Czy jestes sam?", Info_Mod_Allievo_Hi_A);
 };
 
 FUNC VOID Info_Mod_Allievo_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_B_15_00"); //Falsche Frage. Was wollt ihr von mir?
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_B_13_01"); //(erkennend) Ahh... Mein Meister versprach mir, dass ich mit dir machen könnte, was ich wollte.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_B_13_02"); //Unglücklicherweise bin ich gerade allein ...
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_B_15_00"); //Nieprawidlowe pytanie. Czego od mnie oczekujesz?
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_B_13_01"); //(ponowne laczenie) Ahhhh..... Mój mistrz obiecal mi, ze moge zrobic to, co chce z wami zrobic.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_B_13_02"); //Niestety, teraz jestem sam....
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Wer ist denn normalerweise sonst noch hier?", Info_Mod_Allievo_Hi_D);
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Was für ein begrüßenswerter Zufall, dass du allein bist. Jetzt bist du fällig!", Info_Mod_Allievo_Hi_C);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Kto inny jest tu zazwyczaj?", Info_Mod_Allievo_Hi_D);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Cóz za zbieg okolicznosci, ze jestes sam. Teraz Twoja kolej!", Info_Mod_Allievo_Hi_C);
 };
 
 FUNC VOID Info_Mod_Allievo_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_A_15_00"); //Bist du etwa ganz allein?
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_A_13_01"); //Jetzt vielleicht schon, aber jeden Moment kommen meine Freunde zurück. Wart's nur ab!
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_A_15_00"); //Czy jestes sam?
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_A_13_01"); //Byc moze teraz, ale moi przyjaciele wróca w kazdej chwili. Czekacie i zobaczycie!
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Wer ist denn normalerweise sonst noch hier?", Info_Mod_Allievo_Hi_D);
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Was für ein begrüßenswerter Zufall, dass du allein bist. Jetzt bist du fällig!", Info_Mod_Allievo_Hi_C);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Kto inny jest tu zazwyczaj?", Info_Mod_Allievo_Hi_D);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Cóz za zbieg okolicznosci, ze jestes sam. Teraz Twoja kolej!", Info_Mod_Allievo_Hi_C);
 };
 
 FUNC VOID Info_Mod_Allievo_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_D_15_00"); //Wer ist denn normalerweise sonst noch hier?
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_01"); //(redselig) Der Bruno, unser stiernackiger Tagedieb, und der gerissene Grima. Beides ausgezeichnete Leute.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_02"); //Äh ... (Nachdenkpause) Sie sind gerade unterwegs, aber es wird noch gaaanz lange dauern, bis sie wieder hier sind.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_03"); //Bis dahin sollte ich ein paar Pflanzen sammeln gehen, naja, du weißt schon, Heilkräuter und so einen Kram, was man halt so gebrauchen kann. (langgezogenes, mühsames Lachen)
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_D_15_00"); //Kto inny jest tu zazwyczaj?
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_01"); //Bruno, nasz zalobny zlodziej i sprytna Grima. Obydwaj znakomici ludzie.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_02"); //Uh.... Oni sa w drodze, ale to juz dawno przed powrotem.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_D_13_03"); //Do tego czasu powinienem isc i zbierac niektóre rosliny, dobrze, wiesz, lecznicze ziola i rzeczy, które mozna uzyc. (dlugi, zmudny smiech)
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Wenn du schon so gern redest: Erzähl mir etwas über Canthar.", Info_Mod_Allievo_Hi_F);
-	Info_AddChoice	(Info_Mod_Allievo_Hi, "Genug! Du wirst für Canthar' Taten leiden!", Info_Mod_Allievo_Hi_E);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Jesli lubisz mówic, powiedz mi o Canthar.", Info_Mod_Allievo_Hi_F);
+	Info_AddChoice	(Info_Mod_Allievo_Hi, "Wystarczy! Bedziesz cierpiec za dzialania Canthara!", Info_Mod_Allievo_Hi_E);
 };
 
 FUNC VOID Info_Mod_Allievo_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_C_15_00"); //Was für ein begrüßenswerter Zufall, dass du allein bist. Jetzt bist du fällig!
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_C_15_00"); //Cóz za zbieg okolicznosci, ze jestes sam. Teraz Twoja kolej!
 	AI_Output(self, hero, "DEFAULT"); //
 	
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
@@ -71,11 +71,11 @@ FUNC VOID Info_Mod_Allievo_Hi_C()
 
 FUNC VOID Info_Mod_Allievo_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_F_15_00"); //Wenn du schon so gern redest: Erzähl mir etwas über Canthar.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_01"); //Wo soll ich anfangen? Also, er spricht im Schlaf. Deshalb weiß ich, dass er auf Sonja steht.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_02"); //Und er behauptet manchmal, sein Ziel sei es, die Weltherrschaft zu erringen.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_03"); //Aber das glaube ich nicht, was soll man schließlich damit? Ist doch nur zusätzlicher Ärger.
-	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_04"); //Äh ... (laut) Bruno, Grima, fasst ihn!
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_F_15_00"); //Jesli lubisz mówic, powiedz mi o Canthar.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_01"); //Gdzie mam zaczac? No cóz, on mówi we snie. Dlatego tez wiem, ze lubi Sonje.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_02"); //Czasami twierdzi, ze jego celem jest zdobycie dominacji nad swiatem.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_03"); //Ale nie sadze, co jest tego sensem? To tylko dodatkowy problem.
+	AI_Output(self, hero, "Info_Mod_Allievo_Hi_F_13_04"); //Uh.... Bruno, Grima, chwycic go!
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 
@@ -91,7 +91,7 @@ FUNC VOID Info_Mod_Allievo_Hi_F()
 
 FUNC VOID Info_Mod_Allievo_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Allievo_Hi_E_15_00"); //Genug! Du wirst für Canthars Taten leiden!
+	AI_Output(hero, self, "Info_Mod_Allievo_Hi_E_15_00"); //Wystarczy! Bedziesz cierpiec za dzialania Canthara!
 
 	Info_ClearChoices	(Info_Mod_Allievo_Hi);
 

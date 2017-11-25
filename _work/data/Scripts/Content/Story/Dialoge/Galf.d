@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Galf_Hi (C_INFO)
 	information	= Info_Mod_Galf_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey. Wer bist du?";
+	description	= "Hej. Kim jestes?";
 };
 
 FUNC INT Info_Mod_Galf_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Galf_Hi_Condition()
 
 FUNC VOID Info_Mod_Galf_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_00"); //Hey. Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_01"); //Ahhhhhh! Ich bin Galf! Hau mich nicht!
-	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_02"); //Was hast du hier zu suchen?
-	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_03"); //Gaaarnichts! Ich will nur weg!
-	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_04"); //Du gehst nigendwohin bevor du mir nicht erklärt hast, was hier los ist!
-	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_05"); //Ich ... AAAAHHHH!
+	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_00"); //Hej. Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_01"); //Ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhh! Jestem polkniety! Nie uderzaj mnie!
+	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_02"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_03"); //Gaaa nic! Chce tylko isc!
+	AI_Output(hero, self, "Info_Mod_Galf_Hi_15_04"); //Nie idziesz nigdzie, dopóki nie wyjasnisz mi, co sie dzieje!
+	AI_Output(self, hero, "Info_Mod_Galf_Hi_09_05"); //l-- AAAAHHHH!
 
 	AI_StopProcessInfos	(self);
 };

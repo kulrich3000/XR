@@ -21,22 +21,22 @@ FUNC INT Info_Mod_Landstreicher2_Hi_Condition()
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_07_00"); //He, du. Lass besser 100 Münzen rüberwachsen, wenn du keine auf's Maul willst.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_07_00"); //Hej, Ty. Lepiej pozwól, aby 100 monet rozroslo sie, jesli nie chcesz ich na ustach.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 
-	Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Vergiss es, von mir bekommst du keinen Groschen.", Info_Mod_Landstreicher2_Hi_B);
+	Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Zapomne, nie daje ci czasu.", Info_Mod_Landstreicher2_Hi_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Ich will keinen Ärger. Hier hast du 100 Münzen.", Info_Mod_Landstreicher2_Hi_A);
+		Info_AddChoice	(Info_Mod_Landstreicher2_Hi, "Nie chce zadnych klopotów. Tutaj jest 100 monet.", Info_Mod_Landstreicher2_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_B_15_00"); //Vergiss es, von mir bekommst du keinen Groschen.
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_B_07_01"); //Dann muss ich das Gold aus dir herausprügeln.
+	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_B_15_00"); //Zapomne, nie daje ci czasu.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_B_07_01"); //Wtedy bede musial wybic z ciebie zloto.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 	
@@ -50,11 +50,11 @@ FUNC VOID Info_Mod_Landstreicher2_Hi_B()
 
 FUNC VOID Info_Mod_Landstreicher2_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_A_15_00"); //Ich will keinen Ärger. Hier hast du 100 Münzen.
+	AI_Output(hero, self, "Info_Mod_Landstreicher2_Hi_A_15_00"); //Nie chce zadnych klopotów. Tutaj jest 100 monet.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_A_07_01"); //Genau. Du weißt was gut für dich ist.
+	AI_Output(self, hero, "Info_Mod_Landstreicher2_Hi_A_07_01"); //Dokladnie. Wiesz, co jest dla Ciebie dobre.
 
 	Info_ClearChoices	(Info_Mod_Landstreicher2_Hi);
 

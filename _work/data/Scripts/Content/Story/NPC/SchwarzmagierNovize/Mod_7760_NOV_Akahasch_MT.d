@@ -1,7 +1,7 @@
 INSTANCE Mod_7760_NOV_Akahasch_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Akahasch";
+	name 		= "kkaash";
 	guild 		= GIL_KDF;
 	id 			= 7760;
 	voice 		= 24;

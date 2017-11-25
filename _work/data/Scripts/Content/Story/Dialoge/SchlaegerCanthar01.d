@@ -19,7 +19,7 @@ FUNC INT Info_Mod_SchlaegerCanthar01_HiVorher_Condition()
 
 FUNC VOID Info_Mod_SchlaegerCanthar01_HiVorher_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar01_HiVorher_11_00"); //Verpiss dich!
+	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar01_HiVorher_11_00"); //Wyciagnij z tego fuge!
 
 	AI_StopProcessInfos	(self);
 };
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_SchlaegerCanthar01_Hi (C_INFO)
 	information	= Info_Mod_SchlaegerCanthar01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's so?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_SchlaegerCanthar01_Hi_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_SchlaegerCanthar01_Hi_Condition()
 
 FUNC VOID Info_Mod_SchlaegerCanthar01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar01_Hi_15_00"); //Wie geht's so?
-	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar01_Hi_11_01"); //Könnte schlechter sein. Mal ein harter Arbeitstag und mal pures Entspannen ...
+	AI_Output(hero, self, "Info_Mod_SchlaegerCanthar01_Hi_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_SchlaegerCanthar01_Hi_11_01"); //Moze byc gorzej. Czasami ciezki dzien pracy i czasami czysty odpoczynek.....
 };
 
 INSTANCE Info_Mod_SchlaegerCanthar01_EXIT (C_INFO)

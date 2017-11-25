@@ -1,7 +1,7 @@
 instance Mod_7050_ZOM_Nick_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nick";
+	name 		= "Pick";
 	guild 		= GIL_OUT;
 	id 			= 7050;
 	voice 		= 4;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Berta_Hi (C_INFO)
 	information	= Info_Mod_Berta_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ist das Befinden?";
+	description	= "Jaki jest stan zdrowia?";
 };
 
 FUNC INT Info_Mod_Berta_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Berta_Hi_Condition()
 
 FUNC VOID Info_Mod_Berta_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Berta_Hi_15_00"); //Wie ist das Befinden?
-	AI_Output(self, hero, "Info_Mod_Berta_Hi_16_01"); //(betrunken) Das Bier läss auf sich wartn.
+	AI_Output(hero, self, "Info_Mod_Berta_Hi_15_00"); //Jaki jest stan zdrowia?
+	AI_Output(self, hero, "Info_Mod_Berta_Hi_16_01"); //Piwo jest latwe do picia.
 };
 
 INSTANCE Info_Mod_Berta_Pickpocket (C_INFO)

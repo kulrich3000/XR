@@ -1,7 +1,7 @@
 INSTANCE Schattenlord_877_Urnol	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Schattenlord Urnol";
+	name							=	"Wladca cienia Urnol";
 	guild							=	GIL_DMT;
 	id			= 	877;
 	voice			=	14;

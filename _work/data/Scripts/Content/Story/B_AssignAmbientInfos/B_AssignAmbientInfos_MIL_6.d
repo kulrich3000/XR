@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_6_JOIN(C_INFO)
 	condition	= DIA_MIL_6_JOIN_Condition;
 	information	= DIA_MIL_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muß ich tun, um mich der Miliz anzuschließen?";
+	description = "Co musze zrobic, aby dolaczyc do milicji?";
 };                       
 
 FUNC INT DIA_MIL_6_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_JOIN_15_00"); //Was muss ich tun, um mich der Miliz anzuschließen?
-	AI_Output (self, hero, "DIA_MIL_6_JOIN_06_01"); //Geh zu Lord Andre und rede mit ihm. Er kümmert sich um die Neulinge.
+	AI_Output (hero, self, "DIA_MIL_6_JOIN_15_00"); //Co musze zrobic, aby dolaczyc do milicji?
+	AI_Output (self, hero, "DIA_MIL_6_JOIN_06_01"); //Idz do Pana Andre i porozmawiaj z nim. Opiekuje sie nowicjuszami.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_MIL_6_PEOPLE(C_INFO)
 	condition	= DIA_MIL_6_PEOPLE_Condition;
 	information	= DIA_MIL_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir etwas über die Paladine.";
+	description = "Powiedz mi o paladynie.";
 };                       
 
 FUNC INT DIA_MIL_6_PEOPLE_Condition()
@@ -68,10 +68,10 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_PEOPLE_15_00"); //Erzähl mir etwas über die Paladine.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_01"); //Sie kontrollieren die ganze Stadt. Vor allem das obere Viertel wird streng überwacht.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_02"); //Sie lassen da niemanden mehr rein. Außer die Bürger der Stadt und die Miliz natürlich.
-	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_03"); //Es gibt auch noch einige Paladine am Hafen, die das Schiff bewachen. Aber die sind alles andere als gesprächig.
+	AI_Output (hero, self, "DIA_MIL_6_PEOPLE_15_00"); //Powiedz mi o paladynie.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_01"); //Oni kontroluja cale miasto. Zwlaszcza górny kwartal jest scisle monitorowany.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_02"); //Nikogo juz tam nie wolno wpuszczac. Oczywiscie z wyjatkiem mieszczan i milicji.
+	AI_Output (self, hero, "DIA_MIL_6_PEOPLE_06_03"); //W porcie znajduja sie równiez paladynki, które strzega statku. Ale to nic innego, jak tylko rozmowa.
 };
 
 // *************************************************************************
@@ -83,7 +83,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt es über diese Stadt zu wissen?";
+	description = "Co wiesz o tym miescie?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -93,11 +93,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_MIL_6_LOCATION_15_00"); //Was gibt es über diese Stadt zu wissen?
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_01"); //Die Paladine haben die Kontrolle über die ganze Stadt. Die gesamte Miliz untersteht ihnen.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_02"); //Der Kommandant der Miliz ist Lord Andre, er übt auch gleichzeitig das Amt des Richters aus.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_03"); //Wenn du jemals mit dem Gesetz in Konflikt geraten solltest, wirst du dich vor ihm rechtfertigen müssen.
-	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_04"); //Aber er ist recht gnädig, nach allem, was man hört. Die meisten Fälle lässt er mit einer Geldstrafe davonkommen.
+	AI_Output (hero, self, "DIA_MIL_6_LOCATION_15_00"); //Co wiesz o tym miescie?
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_01"); //Paladynowie kontroluja cale miasto. Cala milicja jest im podporzadkowana.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_02"); //Dowódca milicji jest Pan Andre, który jest równiez sedzia.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_03"); //Jesli kiedykolwiek wejdziesz w konflikt z prawem, bedziesz musial uzasadnic sie wobec niego.
+	AI_Output (self, hero, "DIA_MIL_6_LOCATION_06_04"); //Ale jest bardzo laskawy, przez wszystkie relacje. W wiekszosci przypadków ucieka przed grzywna.
 	
 };
 

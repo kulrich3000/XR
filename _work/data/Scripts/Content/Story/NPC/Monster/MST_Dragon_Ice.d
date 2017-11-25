@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Ice(C_Npc)			
 {
 	//----- Monster ----
-	name							= "Eisdrache";
+	name							= "smok lodowy";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_ICE;
 	level							= 600;
@@ -78,7 +78,7 @@ func void B_SetVisuals_Dragon_Ice()
 
 INSTANCE Dragon_Ice	(Mst_Default_Dragon_Ice)
 {
-	name	=	"Finkregh";
+	name	=	"receptura";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Ice();
 
@@ -88,7 +88,7 @@ INSTANCE Dragon_Ice	(Mst_Default_Dragon_Ice)
 
 INSTANCE Summoned_DragonIce (Mst_Default_Dragon_Ice)
 {
-	name							= "Beschworener Eisdrache";
+	name							= "Wezwanie smok lodowy";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_ICEDRAGON;
 	level							= 0;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Roman_Hi (C_INFO)
 	information	= Info_Mod_Roman_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_Roman_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Roman_Hi_Condition()
 
 FUNC VOID Info_Mod_Roman_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Roman_Hi_15_00"); //Wie läuft's?
-	AI_Output(self, hero, "Info_Mod_Roman_Hi_08_01"); //(unfreundlich) Du weißt wohl nicht, was hier abgeht, hä? Bleib mir vom Leib! (hustet)
+	AI_Output(hero, self, "Info_Mod_Roman_Hi_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Roman_Hi_08_01"); //Nie wiesz, co sie dzieje, czy ty? Badzcie z dala od mnie! (kaszel)
 };
 
 INSTANCE Info_Mod_Roman_Endres (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Roman_Endres (C_INFO)
 	information	= Info_Mod_Roman_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was denkst du über Endres?";
+	description	= "Co sadzisz o Endresach?";
 };
 
 FUNC INT Info_Mod_Roman_Endres_Condition()
@@ -42,20 +42,20 @@ FUNC INT Info_Mod_Roman_Endres_Condition()
 
 FUNC VOID Info_Mod_Roman_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Roman_Endres_15_00"); //Was denkst du über Endres?
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_08_01"); //(zieht die Luft scharf ein) Sein Vater war ein räudiger Hund, denke ich.
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_08_02"); //Und seine Mutter eine dreckige ... (leichter Hustenanfall)
+	AI_Output(hero, self, "Info_Mod_Roman_Endres_15_00"); //Co sadzisz o Endresach?
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_08_01"); //Mysle, ze jego ojciec byl czlowieczym psem.
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_08_02"); //A jego matka brudna mama.... (niewielkie pasowanie kaszlu)
 
 	Info_ClearChoices	(Info_Mod_Roman_Endres);
 
-	Info_AddChoice	(Info_Mod_Roman_Endres, "Endres ist tot.", Info_Mod_Roman_Endres_B);
-	Info_AddChoice	(Info_Mod_Roman_Endres, "Wieso kannst du Endres nicht leiden?", Info_Mod_Roman_Endres_A);
+	Info_AddChoice	(Info_Mod_Roman_Endres, "Koniec jest martwy.", Info_Mod_Roman_Endres_B);
+	Info_AddChoice	(Info_Mod_Roman_Endres, "Dlaczego nie lubisz Endres?", Info_Mod_Roman_Endres_A);
 };
 
 FUNC VOID Info_Mod_Roman_Endres_C()
 {
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_C_08_00"); //Bevor du wieder Luft holst, um mich weiter auszufragen: Ich muss wieder an die Arbeit.
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_C_08_01"); //'Ne Lohnkürzung wegen Faulheit muss ich nicht auch noch haben.
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_C_08_00"); //Zanim znowu odetchniecie, aby zadawac mi pytania, musze powrócic do pracy.
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_C_08_01"); //Nie musze placic za lenistwo.
 
 	Info_ClearChoices	(Info_Mod_Roman_Endres);
 };
@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_Roman_Endres_B()
 	AI_Output(hero, self, "Info_Mod_Roman_Endres_B_15_02"); //Jemand übernimmt also die Leitung des Projekts?
 	AI_Output(self, hero, "Info_Mod_Roman_Endres_B_08_03"); //Muss wohl. Hab' ich davon 'ne Ahnung? (hustet)
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Der Bergarbeiter Roman ist nicht gut auf Endres zu sprechen. Und wer hat nun bei dem Projekt das Ruder in der Hand?");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Górnik Roman nie jest bardzo dobry w Endres. A kto odpowiada za projekt?");
 
 	Mod_Roman_Endres_02 = 1;
 
@@ -79,11 +79,11 @@ FUNC VOID Info_Mod_Roman_Endres_B()
 
 FUNC VOID Info_Mod_Roman_Endres_A()
 {
-	AI_Output(hero, self, "Info_Mod_Roman_Endres_A_15_00"); //Wieso kannst du Endres nicht leiden?
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_01"); //Das will ich dir mal erklären. Der Kerl meinte, wir schuften für einen Hungerlohn, damit er sein Erz für wasweißich zusammenkriegt.
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_02"); //Und als wir das nicht wollten, geht der einfach zu Anselm und boxt sein Anliegen durch! (hustet)
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_03"); //Alle Arbeitslosen und Sä ... song ... helfer, die er auftreiben konnte, müssen jetzt hier ihr Leben verkürzen.
-	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_04"); //Die Arbeit schlägt auf die Lunge, Junge, ich sag's dir.
+	AI_Output(hero, self, "Info_Mod_Roman_Endres_A_15_00"); //Dlaczego nie lubisz Endres?
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_01"); //Pozwole sobie to panstwu wyjasnic. Gosc powiedzial, ze pracujemy dla placy glodowej, aby zebrac razem rude za cos.
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_02"); //A kiedy nie chcielismy tego zrobic, on po prostu idzie do Anselm i walczy z jego sprawa! (kaszel)
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_03"); //Wszyscy bezrobotni i s.... spiew Znalezieni przez niego pomocnicy musza teraz skrócic swoje zycie.
+	AI_Output(self, hero, "Info_Mod_Roman_Endres_A_08_04"); //Praca uderza w pluca, dziecko, mówie ci.
 
 	Mod_Roman_Endres_01 = 1;
 

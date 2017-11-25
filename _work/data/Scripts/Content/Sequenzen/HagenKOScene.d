@@ -19,17 +19,17 @@ FUNC VOID HagenKOScene()
 		AI_TurnToNpc	(Mod_1241_RIT_Torwache_NW, Mod_592_PAL_Hagen_NW);
 		AI_TurnToNpc	(Mod_1242_RIT_Torwache_NW, Mod_592_PAL_Hagen_NW);*/
 
-		AI_Output(Mod_585_RIT_Ingmar_NW, NULL, "Info_Mod_HagenKOScene_06_00"); //Was ist passiert?
+		AI_Output(Mod_585_RIT_Ingmar_NW, NULL, "Info_Mod_HagenKOScene_06_00"); //Co sie dzieje?
 	};
 
 	if (Mod_HagenKOScene_Counter == 7)
 	{
-		AI_Output(Mod_1242_RIT_Torwache_NW, NULL, "Info_Mod_HagenKOScene_12_01"); //Holt einen Heiler!
+		AI_Output(Mod_1242_RIT_Torwache_NW, NULL, "Info_Mod_HagenKOScene_12_01"); //Zdobadz uzdrowiciela!
 	};
 
 	if (Mod_HagenKOScene_Counter == 12)
 	{
-		AI_Output(Mod_1241_RIT_Torwache_NW, NULL, "Info_Mod_HagenKOScene_04_02"); //Er braucht dringend einen Aderlass!
+		AI_Output(Mod_1241_RIT_Torwache_NW, NULL, "Info_Mod_HagenKOScene_04_02"); //rozpaczliwie potrzebuje krwiolecia!
 
 		B_StartOtherRoutine	(Mod_559_PAL_Albrecht_NW, "HAGENKO");
 	};

@@ -1,6 +1,6 @@
 INSTANCE GeistDesAusgleichs_11070_EIS	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Geist des Ausgleichs";
+	name	=	"Duch rekompensaty";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

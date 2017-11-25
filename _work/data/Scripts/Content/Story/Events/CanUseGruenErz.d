@@ -16,7 +16,7 @@ FUNC INT CANUSEGRUENERZ()
 
 				Log_CreateTopic	(TOPIC_MOD_ASS_STAHLHACKE, LOG_MISSION);
 				B_SetTopicStatus	(TOPIC_MOD_ASS_STAHLHACKE, LOG_RUNNING);
-				B_LogEntry	(TOPIC_MOD_ASS_STAHLHACKE, "Habe ein neues Erz entdeckt. Beinhart. Meine Hacke tut's nicht. Ich muss mal mit einem Schmied reden.");
+				B_LogEntry	(TOPIC_MOD_ASS_STAHLHACKE, "Znaleziono nowa rude. Noga twarda. Moje motyczki nie. Musze porozmawiac z kowalem.");
 			};
 
 			return FALSE;
@@ -30,7 +30,7 @@ FUNC INT CANUSEGRUENERZ()
 	}
 	else
 	{
-		PrintScreen	("Kann ich jetzt noch nichts mit anfangen!", -1, -1, FONT_SCREEN, 2);
+		PrintScreen	("Nie moge zaczac teraz!", -1, -1, FONT_SCREEN, 2);
 
 		//AI_UseMob	(hero, "ORE", -1);
 

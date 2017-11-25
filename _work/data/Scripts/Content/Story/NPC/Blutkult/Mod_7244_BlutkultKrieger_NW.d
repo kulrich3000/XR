@@ -1,7 +1,7 @@
 instance Mod_7244_BlutkultKrieger_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Blutkult Krieger";
+	name 		=		"Kultowy wojownik krwi";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_DMT;
 	level 		=		60;

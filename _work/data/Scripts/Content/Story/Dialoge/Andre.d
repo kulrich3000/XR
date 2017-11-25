@@ -18,9 +18,9 @@ FUNC INT Info_Mod_Andre_Argez_Condition()
 
 FUNC VOID Info_Mod_Andre_Argez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Argez_08_00"); //(streng) So, jetzt reicht es, mein Freund. Du kommst mit in die Kaserne, und dort haben wir erst mal etwas zu besprechen.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez_08_00"); //To juz wystarczy, mój przyjaciel. Przyjezdzacie ze mna do koszar, a my mamy o czym porozmawiac.
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Ich soll Lord Andre in die Kaserne folgen.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Chce nasladowac Pana Andre' a do koszar.");
 
 	AI_StopProcessInfos	(self);
 
@@ -48,17 +48,17 @@ FUNC INT Info_Mod_Andre_Argez2_Condition()
 
 FUNC VOID Info_Mod_Andre_Argez2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_00"); //So, so. Neu in der Stadt und gleich Ärger am Hals.
-	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_01"); //Das ist nicht meine Schuld.
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_02"); //Ich weiß. Garond ist etwas ... übereifrig bei seiner neuen Aufgabe. Aber er wird sich schon noch daran gewöhnen.
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_03"); //Nur - wenn du ein Anliegen hast, ist er die falsche Adresse. Ich habe mitbekommen, dass du jemanden in die Stadt bringen wolltest. Ist das richtig?
-	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_04"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_05"); //Hat er irgendetwas in der Stadt verbrochen, weshalb er verbannt hätte werden können?
-	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_06"); //Er hatte gar keine Gelegenheit dazu, soweit ich weiß.
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_07"); //Na schön. Ich schlage vor, du führst deinen Freund durch das andere Stadttor beim Marktplatz. Ich werde veranlassen, dass ihr nicht aufgehalten werdet.
-	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_08"); //Aber lasst euch nicht bei Garond blicken. Er würde wahrscheinlich ... ungehalten reagieren.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_00"); //Tam tam. Nowe w miescie i w klopotach.
+	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_01"); //To nie moja wina.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_02"); //Wiem. Garond jest czyms..... nadgorliwy w nowym zadaniu. Ale on sie do tego przyzwyczai.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_03"); //Tylko - jesli masz jakies watpliwosci, jest to niewlasciwy adres. Zauwazylem, ze miales kogos zabrac do miasta. Czy to prawda?
+	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_04"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_05"); //Czy popelnil w miescie jakakolwiek zbrodnie, dlatego mógl zostac wygnany?
+	AI_Output(hero, self, "Info_Mod_Andre_Argez2_15_06"); //Z tego, co wiem, nie mial zadnych szans.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_07"); //A zatem wszystko w porzadku. Sugeruje poprowadzic przyjaciela przez druga brame miasta przy rynku. Upewnie sie, ze nie zatrzymacie sie panstwo.
+	AI_Output(self, hero, "Info_Mod_Andre_Argez2_08_08"); //Ale nie pokazuj sie w Garond' s. Prawdopodobnie.... niecierpliwie reagowac.
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Lord Andre hat empfohlen, dass ich Argez zu dem nördlicheren der beiden Stadttore führe, um Garond aus dem Weg zu gehen.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Pan Andre zalecil, ze poprowadze Argeza do bardziej wysunietej na pólnoc bramy miasta, aby uniknac Garonda.");
 };
 
 INSTANCE Info_Mod_Andre_Hi (C_INFO)
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Andre_Hi (C_INFO)
 	information	= Info_Mod_Andre_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Andre_Hi_Condition()
@@ -83,8 +83,8 @@ FUNC INT Info_Mod_Andre_Hi_Condition()
 FUNC VOID Info_Mod_Andre_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Andre_Hi_08_01"); //Ich bin Lord Andre, Befehlshaber der Miliz und Stellvertretender Anführer der Paladine.
-	AI_Output(self, hero, "Info_Mod_Andre_Hi_08_02"); //Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Andre_Hi_08_01"); //Jestem Panem Andrem, dowódca milicji i zastepca przywódcy paladynów.
+	AI_Output(self, hero, "Info_Mod_Andre_Hi_08_02"); //Co moge dla Ciebie zrobic?
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Andre_Alvares (C_INFO)
 	information	= Info_Mod_Andre_Alvares_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was muss ich tun damit du Alvares freilässt?";
+	description	= "Co musze zrobic, aby sklonic Cie do wydania Alvares?";
 };
 
 FUNC INT Info_Mod_Andre_Alvares_Condition()
@@ -111,8 +111,8 @@ FUNC INT Info_Mod_Andre_Alvares_Condition()
 
 FUNC VOID Info_Mod_Andre_Alvares_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Alvares_15_00"); //Was muss ich tun damit du Alvares freilässt?
-	AI_Output(self, hero, "Info_Mod_Andre_Alvares_08_01"); //Er hat sich mit einer unserer Milizen geschlagen. Dafür sitzt er die nächsten Tage erstmal.
+	AI_Output(hero, self, "Info_Mod_Andre_Alvares_15_00"); //Co musze zrobic, aby sklonic Cie do wydania Alvares?
+	AI_Output(self, hero, "Info_Mod_Andre_Alvares_08_01"); //Walczyl z jedna z naszych milicji. Ale bedzie siedzial przez kilka nastepnych dni.
 };
 
 INSTANCE Info_Mod_Andre_AlvaresSchneller (C_INFO)
@@ -123,7 +123,7 @@ INSTANCE Info_Mod_Andre_AlvaresSchneller (C_INFO)
 	information	= Info_Mod_Andre_AlvaresSchneller_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es keine Möglichkeit ihn schneller freizulassen?";
+	description	= "Czy nie ma sposobu na szybsze jego wydanie?";
 };
 
 FUNC INT Info_Mod_Andre_AlvaresSchneller_Condition()
@@ -136,21 +136,21 @@ FUNC INT Info_Mod_Andre_AlvaresSchneller_Condition()
 
 FUNC VOID Info_Mod_Andre_AlvaresSchneller_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_AlvaresSchneller_15_00"); //Gibt es keine Möglichkeit ihn schneller freizulassen?
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_01"); //Du könntest seine Strafe bezahlen.
-	AI_Output(hero, self, "Info_Mod_Andre_AlvaresSchneller_15_02"); //Wieviel kostet es?
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_03"); //Nach seinen Missetaten? Das wird nicht billig. Entrichte 500 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_04"); //Außerdem musst du noch einen anderen Straftäter der Gerichtsbarkeit unsere Stadt überführen.
+	AI_Output(hero, self, "Info_Mod_Andre_AlvaresSchneller_15_00"); //Czy nie ma sposobu na szybsze jego wydanie?
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_01"); //Mozesz zaplacic jego grzywne.
+	AI_Output(hero, self, "Info_Mod_Andre_AlvaresSchneller_15_02"); //Ile to kosztuje?
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_03"); //Po swoich wykroczeniach? Nie bedzie tani. Ubij 500 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_04"); //Poza tym do naszego miasta trzeba przywiezc jeszcze jednego zbrodnie.
 
 	if (Mod_AlvaresAndre_Taeter == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_07"); //Wenn ich mich recht erinnere, hast du das ja bereits getan.
+		AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_07"); //Jesli dobrze pamietam, to juz to zrobiles.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_05"); //Oder bezwinge die Banditen, die irgendwo in der Nähe von Akil’s Hof im Wald ihr Lager haben und bringe mir ihre Waffen.
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_06"); //Oft genug haben sie fahrende Händler überfallen.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_05"); //Albo pokonac bandytów, którzy maja swój obóz gdzies w poblizu gospodarstwa Akila w lesie i przyniesc mi swoja bron.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresSchneller_08_06"); //Czesto rabuja podrózujacych dealerów.
 
-	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Alvarez könnte ein viel versprechender Söldneranwärter sein. Damit Andre ihn jedoch aus dem Gefängnis entlässt, muss ich nicht nur 500 Goldmünzen zahlen, sondern auch einen anderen Straftäter bei Andre melden oder drei Banditen in der Nähe von Akil’s Hof unschädlich machen und ihm ihre Waffen bringen.");
+	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Alvarez moze byc bardzo obiecujacym kandydatem najemnikiem. Aby jednak Andre wyprowadzil go z wiezienia, musze nie tylko zaplacic 500 monet zlota, ale musze równiez zglosic innego przestepce do Andre' a lub zniszczyc trzech bandytów w poblizu sadu Akila i przyniesc mu swoja bron.");
 
 	Wld_InsertNpc	(Mod_7217_BDT_Bandit_NW, "FARM2");
 	Wld_InsertNpc	(Mod_7218_BDT_Bandit_NW, "FARM2");
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Andre_AlvaresBanditen (C_INFO)
 	information	= Info_Mod_Andre_AlvaresBanditen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Banditen werden keinen Ärger mehr anrichten.";
+	description	= "Bandyci nie spowoduja juz wiecej klopotów.";
 };
 
 FUNC INT Info_Mod_Andre_AlvaresBanditen_Condition()
@@ -182,13 +182,13 @@ FUNC INT Info_Mod_Andre_AlvaresBanditen_Condition()
 
 FUNC VOID Info_Mod_Andre_AlvaresBanditen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_AlvaresBanditen_15_00"); //Die Banditen werden keinen Ärger mehr anrichten.
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresBanditen_08_01"); //Sehr gut. Und ihre Waffen?
-	AI_Output(hero, self, "Info_Mod_Andre_AlvaresBanditen_15_02"); //Hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Andre_AlvaresBanditen_15_00"); //Bandyci nie spowoduja juz wiecej klopotów.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresBanditen_08_01"); //Bardzo dobry. A ich bron?
+	AI_Output(hero, self, "Info_Mod_Andre_AlvaresBanditen_15_02"); //Oto one.
 
 	B_GiveInvItems	(hero, self, ItMw_Banditenschwert_Andre, 3);
 
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresBanditen_08_03"); //Ausgezeichnet. Damit wird die Umgebung der Stadt ein großes Stück sicherer.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresBanditen_08_03"); //Doskonaly. Dzieki temu otoczenie miasta jest znacznie bezpieczniejsze.
 
 	B_GivePlayerXP	(50);
 };
@@ -201,7 +201,7 @@ INSTANCE Info_Mod_Andre_AlvaresGeld (C_INFO)
 	information	= Info_Mod_Andre_AlvaresGeld_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass Alvares frei (500 Gold geben)";
+	description	= "Let Alvares go free (500 zlota)";
 };
 
 FUNC INT Info_Mod_Andre_AlvaresGeld_Condition()
@@ -217,13 +217,13 @@ FUNC INT Info_Mod_Andre_AlvaresGeld_Condition()
 
 FUNC VOID Info_Mod_Andre_AlvaresGeld_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_AlvaresGeld_15_00"); //Lass Alvares frei.
+	AI_Output(hero, self, "Info_Mod_Andre_AlvaresGeld_15_00"); //Zwolnic Alvares.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Andre_AlvaresGeld_08_01"); //Gut, du kannst ihn mitnehmen.
+	AI_Output(self, hero, "Info_Mod_Andre_AlvaresGeld_08_01"); //No cóz, mozesz go zabrac razem z toba.
 
-	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Ich habe das Gold für Alvares bezahlt und ich kann ihn jetzt mitnehmen.");
+	B_LogEntry	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Za Alvares zaplacilem zloto i moge go teraz zabrac.");
 
 	B_Göttergefallen(1, 1);
 
@@ -238,7 +238,7 @@ INSTANCE Info_Mod_Andre_Miliz (C_INFO)
 	information	= Info_Mod_Andre_Miliz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mich der Miliz anschließen.";
+	description	= "Chce dolaczyc do milicji.";
 };
 
 FUNC INT Info_Mod_Andre_Miliz_Condition()
@@ -252,15 +252,15 @@ FUNC INT Info_Mod_Andre_Miliz_Condition()
 
 FUNC VOID Info_Mod_Andre_Miliz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Miliz_15_00"); //Ich will mich der Miliz anschließen.
-	AI_Output(self, hero, "Info_Mod_Andre_Miliz_08_01"); //Wir nehmen nur die besten auf. Wir veranstalten heute ein Turnier und der Sieger wird bei der Miliz aufgenommen.
-	AI_Output(self, hero, "Info_Mod_Andre_Miliz_08_02"); //Du hast Glück, dass noch ein Platz frei ist.
+	AI_Output(hero, self, "Info_Mod_Andre_Miliz_15_00"); //Chce dolaczyc do milicji.
+	AI_Output(self, hero, "Info_Mod_Andre_Miliz_08_01"); //Zapisujemy tylko to, co najlepsze. Dzis organizujemy turniej, a zwyciezca zostanie przyjety przez milicje.
+	AI_Output(self, hero, "Info_Mod_Andre_Miliz_08_02"); //Masz szczescie, ze jest tam miejsce na jeszcze jedno.
 
 	Mod_MilizTurnier	=	0;
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZTURNIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MILIZTURNIER, "Wenn ich mich der Miliz anschließen will, dann muss ich das Turnier gewinnen.", "Wenn ich mich der Miliz anschließen will, dann muss ich das Turnier gewinnen.");
+	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MILIZTURNIER, "Jesli chce dolaczyc do milicji, musze wygrac turniej.", "Jesli chce dolaczyc do milicji, musze wygrac turniej.");
 };
 
 INSTANCE Info_Mod_Andre_Kristall (C_INFO)
@@ -271,7 +271,7 @@ INSTANCE Info_Mod_Andre_Kristall (C_INFO)
 	information	= Info_Mod_Andre_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lothar schickt mich (Kristall geben)";
+	description	= "Lothar wysyla mi (wystarczy krysztal)";
 };
 
 FUNC INT Info_Mod_Andre_Kristall_Condition()
@@ -286,17 +286,17 @@ FUNC INT Info_Mod_Andre_Kristall_Condition()
 
 FUNC VOID Info_Mod_Andre_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kristall_15_00"); //Lothar schickt mich. Ich soll dir den Kristall bringen.
+	AI_Output(hero, self, "Info_Mod_Andre_Kristall_15_00"); //Lothar wyslal mnie. Mam przyniesc krysztal.
 	
 	B_GiveInvItems	(hero, self, Mod_PaladinKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kristall_08_01"); //Wo hast du den Kristall her?
-	AI_Output(hero, self, "Info_Mod_Andre_Kristall_15_02"); //Ich habe ihn den Dieben abgenommen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kristall_08_03"); //Sehr gut. Wenn du willst, kannst du nun der Miliz beitreten.
+	AI_Output(self, hero, "Info_Mod_Andre_Kristall_08_01"); //Gdzie dostaniesz krysztal?
+	AI_Output(hero, self, "Info_Mod_Andre_Kristall_15_02"); //Zdjalem zlodziej.
+	AI_Output(self, hero, "Info_Mod_Andre_Kristall_08_03"); //Bardzo dobry. Jesli chcesz, mozesz teraz dolaczyc do milicji.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_SÖLDNER, "Lord Andre ist bereit mich bei der Miliz aufzunehmen.", "Ich hab den Kristall Lord Andre gegeben. Torlof wird das sicherlich nicht sehr gefallen.");
+	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_SÖLDNER, "Pan Andre jest gotów przyjac mnie do milicji.", "Udzielilem krysztalu Panu Andre' owi. Torlof nie spodoba sie zbytnio.");
 
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_FAILED);
 
@@ -311,7 +311,7 @@ INSTANCE Info_Mod_Andre_TurnierSinbad (C_INFO)
 	information	= Info_Mod_Andre_TurnierSinbad_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe von einem Turnier gehört ...";
+	description	= "Slyszalem o turnieju....";
 };
 
 FUNC INT Info_Mod_Andre_TurnierSinbad_Condition()
@@ -325,8 +325,8 @@ FUNC INT Info_Mod_Andre_TurnierSinbad_Condition()
 
 FUNC VOID Info_Mod_Andre_TurnierSinbad_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_TurnierSinbad_15_00"); //Ich habe von einem Turnier gehört ...
-	AI_Output(self, hero, "Info_Mod_Andre_TurnierSinbad_08_01"); //Das stimmt. Ein Platz ist noch frei, falls du teilnehmen willst.
+	AI_Output(hero, self, "Info_Mod_Andre_TurnierSinbad_15_00"); //Slyszalem o turnieju....
+	AI_Output(self, hero, "Info_Mod_Andre_TurnierSinbad_08_01"); //To prawda. Jeden fotel jest nadal dostepny, jesli chcesz wziac udzial.
 
 	Mod_MilizTurnier = 0;
 };
@@ -339,7 +339,7 @@ INSTANCE Info_Mod_Andre_Regeln (C_INFO)
 	information	= Info_Mod_Andre_Regeln_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie sind die Regeln für das Turnier?";
+	description	= "Jakie sa zasady turnieju?";
 };
 
 FUNC INT Info_Mod_Andre_Regeln_Condition()
@@ -353,8 +353,8 @@ FUNC INT Info_Mod_Andre_Regeln_Condition()
 
 FUNC VOID Info_Mod_Andre_Regeln_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Regeln_15_00"); //Wie sind die Regeln für das Turnier?
-	AI_Output(self, hero, "Info_Mod_Andre_Regeln_08_01"); //Magie und Fernkampf sind im Turnier nicht erlaubt, weil du nicht töten darfst.
+	AI_Output(hero, self, "Info_Mod_Andre_Regeln_15_00"); //Jakie sa zasady turnieju?
+	AI_Output(self, hero, "Info_Mod_Andre_Regeln_08_01"); //Czary i walki na odleglosc nie sa dozwolone w turnieju, poniewaz nie wolno Ci zabijac.
 };
 
 INSTANCE Info_Mod_Andre_Turnier1 (C_INFO)
@@ -365,7 +365,7 @@ INSTANCE Info_Mod_Andre_Turnier1 (C_INFO)
 	information	= Info_Mod_Andre_Turnier1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer ist mein erster Gegner?";
+	description	= "Kim jest mój pierwszy przeciwnik?";
 };
 
 FUNC INT Info_Mod_Andre_Turnier1_Condition()
@@ -380,8 +380,8 @@ FUNC INT Info_Mod_Andre_Turnier1_Condition()
 
 FUNC VOID Info_Mod_Andre_Turnier1_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Turnier1_15_00"); //Wer ist mein erster Gegner?
-	AI_Output(self, hero, "Info_Mod_Andre_Turnier1_08_01"); //Er heißt Till. Er müsste jeden Augenblick hier eintreffen.
+	AI_Output(hero, self, "Info_Mod_Andre_Turnier1_15_00"); //Kim jest mój pierwszy przeciwnik?
+	AI_Output(self, hero, "Info_Mod_Andre_Turnier1_08_01"); //Nazwisko: Do smierci. Powinien byc tu w kazdej chwili.
 
 	B_StartOtherRoutine	(Mod_541_NONE_Till_NW, "TURNIER");
 	B_StartOtherRoutine	(Mod_1176_MIL_Miliz_NW, "KAMPF");
@@ -393,7 +393,7 @@ FUNC VOID Info_Mod_Andre_Turnier1_Info()
 
 	if (Assassinen_Dabei == 0)
 	{
-		B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Mein erster Gegner beim Turnier ist Till.");
+		B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Mój pierwszy przeciwnik na turnieju to Till.");
 	};
 };
 
@@ -405,7 +405,7 @@ INSTANCE Info_Mod_Andre_Turnier2 (C_INFO)
 	information	= Info_Mod_Andre_Turnier2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gegen Till gekämpft.";
+	description	= "Walczylem do konca.";
 };
 
 FUNC INT Info_Mod_Andre_Turnier2_Condition()
@@ -418,12 +418,12 @@ FUNC INT Info_Mod_Andre_Turnier2_Condition()
 
 FUNC VOID Info_Mod_Andre_Turnier2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Turnier2_15_00"); //Ich habe gegen Till gekämpft.
+	AI_Output(hero, self, "Info_Mod_Andre_Turnier2_15_00"); //Walczylem do konca.
 
 	if (Mod_MilizTurnier	==	2)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_01"); //Du hast ihn besiegt. Damit bist du in der nächsten Runde.
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_02"); //Dein nächster Gegner ist Alrik.
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_01"); //Bity go pan. Teraz jestes w kolejnej rundzie.
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_02"); //Nastepnym przeciwnikiem jest Alrik.
 
 		AI_Teleport	(Mod_547_NONE_Alrik_NW, "NW_CITY_HABOUR_KASERN_11");
 		B_StartOtherRoutine	(Mod_547_NONE_Alrik_NW,	"TURNIER");
@@ -436,7 +436,7 @@ FUNC VOID Info_Mod_Andre_Turnier2_Info()
 
 		if (Assassinen_Dabei == 0)
 		{
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Mein zweiter Gegner ist beim Turnier ist Alrik.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Mój drugi przeciwnik w turnieju to Alrik.");
 		};
 
 		Mod_MilizTurnier	=	4;
@@ -447,8 +447,8 @@ FUNC VOID Info_Mod_Andre_Turnier2_Info()
 	}
 	else if (Mod_MilizTurnier	==	3)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_03"); //Du hast verloren. Damit bist du aus dem Turnier ausgeschieden.
-		AI_Output(hero, self, "Info_Mod_Andre_Turnier2_15_04"); //Gibt es noch eine andere Möglichkeit mich der Miliz anzuschließen?
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_03"); //Straciles. Teraz jestes juz poza turniejem.
+		AI_Output(hero, self, "Info_Mod_Andre_Turnier2_15_04"); //Czy jest inny sposób na dolaczenie do milicji?
 
 		Mod_AndreTurnier = 2;
 
@@ -456,22 +456,22 @@ FUNC VOID Info_Mod_Andre_Turnier2_Info()
 		
 		if (Mod_MilizErnst	<=	25)
 		{
-			AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_05"); //Wenn du dich wirklich der Miliz anschließen willst, dann geh mal zu Mortis. Du findest ihn in der Kasernen-Schmiede.
+			AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_05"); //Jesli naprawde chcesz dolaczyc do milicji, idz na hipoteze. Znajdziesz go w baraku kuzni.
 
 			Mod_MilizTurnier	=	9;
 
 			if (Assassinen_Dabei == 0)
 			{
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Wenn ich mich trotz der Niederlage im Turnier der Miliz anschließen will, dann soll ich mal zu Mortis gehen.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Jesli chce dolaczyc do milicji mimo porazki w turnieju, powinienem udac sie do Mortisa.");
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_06"); //Du hast gegen einen Bauer verloren. Jemanden wie dich können wir nicht bei der Miliz gebrauchen.
+			AI_Output(self, hero, "Info_Mod_Andre_Turnier2_08_06"); //Straciles do chlopa. Nie mozemy uzyc kogos takiego jak Ty w milicji.
 
 			if (Assassinen_Dabei == 0)
 			{
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Lord Andre wird mich wegen meiner Niederlage gegen Till nicht in der Miliz aufnehmen.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Pan Andre nie pozwoli mi przylaczyc sie do milicji z powodu mojej kleski przeciwko Tillowi.");
 			};
 		};
 	};
@@ -485,7 +485,7 @@ INSTANCE Info_Mod_Andre_Turnier3 (C_INFO)
 	information	= Info_Mod_Andre_Turnier3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gegen Alrik gekämpft.";
+	description	= "Walczylem przeciwko Alrikowi.";
 };
 
 FUNC INT Info_Mod_Andre_Turnier3_Condition()
@@ -498,16 +498,16 @@ FUNC INT Info_Mod_Andre_Turnier3_Condition()
 
 FUNC VOID Info_Mod_Andre_Turnier3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Turnier3_15_00"); //Ich habe gegen Alrik gekämpft.
+	AI_Output(hero, self, "Info_Mod_Andre_Turnier3_15_00"); //Walczylem przeciwko Alrikowi.
 
 	if (Mod_MilizTurnier	==	6)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_01"); //Glückwunsch, du hast ihn besiegt. Damit hast du jetzt du nur noch einen Kampf.
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_06"); //Dein nächster Gegner ist Gidan. Viel Glück!
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_01"); //Gratuluje, bijecie go. Teraz pozostalo ci tylko jedna walka.
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_06"); //Nastepnym przeciwnikiem jest Gidan. Powodzenia!
 		
 		if (Assassinen_Dabei == 0)
 		{
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe auch Alrik besiegt. Lord Andre sagt, dass ich jetzt nur noch einen Kampf vor mir habe.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ja równiez pobilem Alrika. Pan Andre mówi, ze mam przed soba tylko jedna walke.");
 		};
 
 		B_StartOtherRoutine	(Mod_1176_MIL_Miliz_NW, "KAMPF");
@@ -523,8 +523,8 @@ FUNC VOID Info_Mod_Andre_Turnier3_Info()
 	}
 	else if (Mod_MilizTurnier	==	7)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_02"); //Du hast verloren. Damit bist du aus dem Turnier ausgeschieden.
-		AI_Output(hero, self, "Info_Mod_Andre_Turnier3_15_03"); //Gibt es noch eine andere Möglichkeit mich der Miliz anzuschließen?
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_02"); //Straciles. Teraz jestes juz poza turniejem.
+		AI_Output(hero, self, "Info_Mod_Andre_Turnier3_15_03"); //Czy jest inny sposób na dolaczenie do milicji?
 
 		Mod_AndreTurnier = 2;
 
@@ -532,22 +532,22 @@ FUNC VOID Info_Mod_Andre_Turnier3_Info()
 		
 		if (Mod_MilizErnst	<=	50)
 		{
-			AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_04"); //Wenn du dich wirklich der Miliz anschließen willst, dann geh mal zu Mortis. Du findest ihn in der Kasernen-Schmiede.
+			AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_04"); //Jesli naprawde chcesz dolaczyc do milicji, idz na hipoteze. Znajdziesz go w baraku kuzni.
 
 			Mod_MilizTurnier	=	9;
 
 			if (Assassinen_Dabei == 0)
 			{
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Wenn ich mich trotz der Niederlage im Turnier der Miliz anschließen will, dann soll ich mal zu Mortis gehen.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Jesli chce dolaczyc do milicji mimo porazki w turnieju, powinienem udac sie do Mortisa.");
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_05"); //Du hast verloren und hast dir dadurch die Chance verbaut bei der Miliz mitzumachen.
+			AI_Output(self, hero, "Info_Mod_Andre_Turnier3_08_05"); //Straciles i przegapiles szanse dolaczenia do milicji.
 
 			if (Assassinen_Dabei == 0)
 			{
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Durch meine Niederlage gegen Alrik hab ich mir den Weg zur Miliz verbaut.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Z powodu przegranej z Alrikiem, zablokowalem sobie droge do milicji.");
 			};
 		};
 	};
@@ -561,7 +561,7 @@ INSTANCE Info_Mod_Andre_Turnier4 (C_INFO)
 	information	= Info_Mod_Andre_Turnier4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gegen Gidan gekämpft.";
+	description	= "Walczylem przeciwko Gidanowi.";
 };
 
 FUNC INT Info_Mod_Andre_Turnier4_Condition()
@@ -574,24 +574,24 @@ FUNC INT Info_Mod_Andre_Turnier4_Condition()
 
 FUNC VOID Info_Mod_Andre_Turnier4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_00"); //Ich habe gegen Gidan gekämpft.
+	AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_00"); //Walczylem przeciwko Gidanowi.
 
 	if (Mod_MilizTurnier	==	11)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_01"); //Glückwunsch, du hast ihn besiegt. Damit hast du dir eine Aufnahme bei der Miliz verdient.
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_01"); //Gratuluje, bijecie go. Zarobiles sobie miejsce w milicji.
 
 		if (Mod_Gilde == 0)
 		{		
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe auch Gidan besiegt. Lord Andre sagt, dass ich mich jetzt der Miliz anschließen kann.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ja równiez pobilem Gidana. Pan Andre mówi, ze moge teraz dolaczyc do milicji.");
 		}
 		else
 		{
-			AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_06"); //Ich gehöre schon zu einer anderen Gruppe. Das war nur Training für mich.
-			AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_07"); //Du bist ein erstaunlicher Kerl. Schade, ich könnte dich gut gebrauchen.
+			AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_06"); //Naleze juz do innej grupy. To bylo dla mnie tylko trening.
+			AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_07"); //Jestes niesamowitym facetem. Szkoda, ze moglabym cie uzyc.
 
 			if (Npc_KnowsInfo(hero, Info_Mod_Sinbad_Hi))
 			{
-				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_08"); //Aber diese Urkunde nimmst du doch.
+				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_08"); //Ale wezmiesz ten dokument.
 
 				B_GiveInvItems	(self, hero, ItWr_TurnierUrkunde, 1);
 			};
@@ -612,11 +612,11 @@ FUNC VOID Info_Mod_Andre_Turnier4_Info()
 	}
 	else if (Mod_MilizTurnier	==	12)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_02"); //Du hast verloren. Damit bist du aus dem Turnier ausgeschieden.
+		AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_02"); //Straciles. Teraz jestes juz poza turniejem.
 
 		if (Assassinen_Dabei == 0)
 		{
-			AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_03"); //Gibt es noch eine andere Möglichkeit mich der Miliz anzuschließen?
+			AI_Output(hero, self, "Info_Mod_Andre_Turnier4_15_03"); //Czy jest inny sposób na dolaczenie do milicji?
 
 			Mod_AndreTurnier = 2;
 
@@ -624,17 +624,17 @@ FUNC VOID Info_Mod_Andre_Turnier4_Info()
 		
 			if (Mod_MilizErnst	<=	75)
 			{
-				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_04"); //Wenn du dich wirklich der Miliz anschließen willst, dann geh mal zu Mortis. Du findest ihn in der Kasernen-Schmiede.
+				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_04"); //Jesli naprawde chcesz dolaczyc do milicji, idz na hipoteze. Znajdziesz go w baraku kuzni.
 
 				Mod_MilizTurnier	=	9;
 
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Wenn ich mich trotz der Niederlage im Turnier der Miliz anschließen will, dann soll ich mal zu Mortis gehen.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Jesli chce dolaczyc do milicji mimo porazki w turnieju, powinienem udac sie do Mortisa.");
 			}
 			else
 			{
-				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_05"); //Du hast verloren und hast dir dadurch die Chance verbaut bei der Miliz mitzumachen.
+				AI_Output(self, hero, "Info_Mod_Andre_Turnier4_08_05"); //Straciles i przegapiles szanse dolaczenia do milicji.
 
-				B_LogEntry	(TOPIC_MOD_MILIZ, "Durch meine Niederlage gegen Gidan hab ich mir den Weg zur Miliz verbaut.");
+				B_LogEntry	(TOPIC_MOD_MILIZ, "Z powodu przegranej z Gidanem, zablokowalem sobie droge do milicji.");
 			};
 		};
 	};
@@ -648,7 +648,7 @@ INSTANCE Info_Mod_Andre_Aufnahme (C_INFO)
 	information	= Info_Mod_Andre_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin bereit mich der Miliz anzuschließen.";
+	description	= "Jestem gotów dolaczyc do milicji.";
 };
 
 FUNC INT Info_Mod_Andre_Aufnahme_Condition()
@@ -664,47 +664,47 @@ FUNC INT Info_Mod_Andre_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Andre_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_15_00"); //Ich bin bereit mich der Miliz anzuschließen.
+	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_15_00"); //Jestem gotów dolaczyc do milicji.
 	
 	if (hero.level	>=	5)
 	&& (Diebe_Dabei == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_01"); //Du bist bereit dich der Miliz anzuschließen.
-		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_02"); //Doch wenn du einmal die Rüstung unserer Soldaten trägst, dann gibt es kein zurück mehr.
+		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_01"); //Jestescie gotowi dolaczyc do milicji.
+		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_02"); //Ale gdy tylko nosisz zbroje naszych zolnierzy, nie ma juz odwrotu.
 		
 		if (Mod_HatPlayerNeutraleKlamotten())
 		{
 			if (Mod_Gottstatus <= 8)
 			{
-				AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_05"); //Du solltest allerdings vorher noch ein paar Taten zu Gunsten von Innos vollbringen.
+				AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_05"); //Nalezy jednak najpierw zrobic kilka rzeczy na korzysc Innosa.
 			}
 			else
 			{
 				Info_ClearChoices	(Info_Mod_Andre_Aufnahme);
 
-				Info_AddChoice	(Info_Mod_Andre_Aufnahme, "Ich habs mir anders überlegt.", Info_Mod_Andre_Aufnahme_Nein);
-				Info_AddChoice	(Info_Mod_Andre_Aufnahme, "Ich will mich euch anschließen.", Info_Mod_Andre_Aufnahme_Ja);
+				Info_AddChoice	(Info_Mod_Andre_Aufnahme, "Zmienilam zdanie.", Info_Mod_Andre_Aufnahme_Nein);
+				Info_AddChoice	(Info_Mod_Andre_Aufnahme, "Chce do Panstwa dolaczyc.", Info_Mod_Andre_Aufnahme_Ja);
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_04"); //Du solltest dir vorher aber noch eine neutrale Rüstung besorgen.
+			AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_04"); //Najpierw powinienes zdobyc neutralna zbroje.
 		};
 	}
 	else if (Diebe_Dabei == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_06"); //Wie ich hörte sollst du dich mit dem Gesindel im Hafenviertel herumtreiben. So jemanden können wir nicht bei der Miliz gebrauchen.
+		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_06"); //Slysze, ze masz sie zatrzymac z zlobieniem w doku. Nie mozemy miec takiej osoby w milicji.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_03"); //Du solltest lieber noch etwas Erfahrung sammeln.
+		AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_08_03"); //Lepiej zdobyc wiecej doswiadczenia.
 	};
 };
 
 FUNC VOID Info_Mod_Andre_Aufnahme_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Nein_15_00"); //Ich hab's mir anders überlegt.
-	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Nein_08_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Nein_15_00"); //Zmienilam zdanie.
+	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Nein_08_01"); //Cokolwiek mówisz.
 
 	Info_ClearChoices	(Info_Mod_Andre_Aufnahme);
 };
@@ -721,8 +721,8 @@ FUNC VOID Info_Mod_Andre_Aufnahme_Ja()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_55);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_57);
 	
-	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Ja_15_00"); //Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_01"); //Gut. Hier ist deine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Ja_15_00"); //Chce do Panstwa dolaczyc.
+	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_01"); //Dobre. Oto Twoja zbroja.
 
 	CreateInvItems	(self, ITAR_MIL_L, 1);
 	B_GiveInvItems	(self, hero, ITAR_MIL_L, 1);
@@ -730,11 +730,11 @@ FUNC VOID Info_Mod_Andre_Aufnahme_Ja()
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Mil_L);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_02"); //Pass aber auf, wo du dich damit sehen lässt, die Söldner und die Beliaranhänger werden nicht zögern dich zu töten.
-	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Ja_15_03"); //Wie steht's mit einer Waffe?
-	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_04"); //Die Milizen haben bei uns Schwerter. Geh auf den Marktplatz, da werden welche verkauft.
+	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_02"); //Obserwuj tam, gdzie dajesz sie widziec, najemnicy i wyznawcy Beliaranu nie zawahaja sie cie zabic.
+	AI_Output(hero, self, "Info_Mod_Andre_Aufnahme_Ja_15_03"); //A co z pistoletem?
+	AI_Output(self, hero, "Info_Mod_Andre_Aufnahme_Ja_08_04"); //Milicja ma z nami miecze. Idz na targowisko, sprzedadza troche.
 
-	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_Miliz, "Ich bin jetzt ein Mitglied der Miliz.", "Ich bin jetzt ein Mitglied der Miliz.");
+	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_Miliz, "Jestem teraz czlonkiem milicji.", "Jestem teraz czlonkiem milicji.");
 	B_SetTopicStatus	(TOPIC_MOD_Miliz, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_SUCCESS);
 
@@ -773,7 +773,7 @@ INSTANCE Info_Mod_Andre_Sinbad01 (C_INFO)
 	information	= Info_Mod_Andre_Sinbad01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kennst du mich noch?";
+	description	= "Pamietasz mnie?";
 };
 
 FUNC INT Info_Mod_Andre_Sinbad01_Condition()
@@ -789,12 +789,12 @@ FUNC INT Info_Mod_Andre_Sinbad01_Condition()
 
 FUNC VOID Info_Mod_Andre_Sinbad01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_00"); //Kennst du mich noch?
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_01"); //Natürlich. Du hast den Wettkampf gewonnen.
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_02"); //Genau. Nun hätte ich gerne so was wie eine Urkunde.
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_03"); //Hab ich dir die nicht gegeben.
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_04"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_05"); //Steht dir natürlich zu. Bitte sehr.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_00"); //Pamietasz mnie?
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_01"); //Oczywiscie tak jest. Zwyciezyles w konkursie.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_02"); //Dokladnie. Teraz chcialbym miec cos w rodzaju czynu.
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_03"); //Nie dalem ci ich.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad01_15_04"); //Nie.
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad01_08_05"); //Oczywiscie masz do tego prawo. Tutaj jestes.
 
 	B_GiveInvItems	(self, hero, ItWr_TurnierUrkunde, 1);
 };
@@ -807,7 +807,7 @@ INSTANCE Info_Mod_Andre_Sinbad02 (C_INFO)
 	information	= Info_Mod_Andre_Sinbad02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will noch mal zum Turnier antreten.";
+	description	= "Chce wrócic do turnieju.";
 };
 
 FUNC INT Info_Mod_Andre_Sinbad02_Condition()
@@ -823,14 +823,14 @@ FUNC INT Info_Mod_Andre_Sinbad02_Condition()
 
 FUNC VOID Info_Mod_Andre_Sinbad02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_00"); //Ich will noch mal zum Turnier antreten.
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_01"); //Du hast doch schon verloren. Gidan ist Turniersieger. Allerdings ist der abgehauen.
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_02"); //(interressiert) Und das heißt?
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_03"); //Man sagt, er hat sich besoffen und sich dann mit dem Schattenläufer im Tal am Osttor angelegt. Jedenfalls ist er nicht wieder aufgetaucht.
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_04"); //(eifrig) Dann ist der Platz wieder frei?
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_05"); //Im Prinzip ja. Also gut: Du gehst runter und schaust nach, was da los ist.
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_06"); //Ist Gidan tot, hast du den Schattenläufer als Gegner. Wenn du den besiegst, kannst du den Pokal behalten.
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_07"); //Bin schon weg.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_00"); //Chce wrócic do turnieju.
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_01"); //Zgubiles juz sie. Gidan jest zwyciezca turnieju. On jednak ucieka.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_02"); //Co to oznacza?
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_03"); //Mówi sie, ze byl pijany, a nastepnie chwycil za cien biegacza w dolinie przy wschodniej bramie. Zreszta nie pojawil sie.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_04"); //Wtedy miejsce jest ponownie wolne?
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_05"); //Zasadniczo tak. W prawo, idziesz na dól i widzisz, co sie dzieje.
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad02_08_06"); //Jesli Gidan jest martwy, masz Bieguna Cienia jako przeciwnika. Jesli go pokonasz, mozesz zachowac trofeum.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad02_15_07"); //Juz nie jestem.
 
 	B_KillNpc	(Mod_1723_MIL_Gidan_NW);
 };
@@ -843,7 +843,7 @@ INSTANCE Info_Mod_Andre_Sinbad03 (C_INFO)
 	information	= Info_Mod_Andre_Sinbad03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gidan ist Vergangenheit und der Schattenläufer Geschichte.";
+	description	= "Gidan minal, a biegacz cieni jest historia.";
 };
 
 FUNC INT Info_Mod_Andre_Sinbad03_Condition()
@@ -857,9 +857,9 @@ FUNC INT Info_Mod_Andre_Sinbad03_Condition()
 
 FUNC VOID Info_Mod_Andre_Sinbad03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad03_15_00"); //Gidan ist Vergangenheit und der Schattenläufer Geschichte. Hier, der Pokal.
-	AI_Output(self, hero, "Info_Mod_Andre_Sinbad03_08_01"); //Saubere Arbeit. Kannst ihn behalten. Und wenn du uns beitreten willst ...
-	AI_Output(hero, self, "Info_Mod_Andre_Sinbad03_15_02"); //Werde es mir überlegen. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad03_15_00"); //Gidan minal, a biegacz cieni jest historia. Oto trofeum.
+	AI_Output(self, hero, "Info_Mod_Andre_Sinbad03_08_01"); //Czysta praca. Mozesz ja zachowac. A jesli chcesz do nas dolaczyc.....
+	AI_Output(hero, self, "Info_Mod_Andre_Sinbad03_15_02"); //Zastanowie sie nad tym. Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Andre_Auftrag (C_INFO)
@@ -882,16 +882,16 @@ FUNC INT Info_Mod_Andre_Auftrag_Condition()
 
 FUNC VOID Info_Mod_Andre_Auftrag_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_00"); //Gut, dass du kommst, es gibt jede Menge zu tun!
-	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_01"); //Ach ja? Was denn?
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_02"); //Nun zum Einen ist ein Wissenschaftler aus der Oberstadt verschwunden, vermutlich entführt worden.
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_03"); //Zum Andren scheinen die alten fanatischen Sektenspinner irgendwas zu planen. Und zu allem Überfluss wurde auch die letzte Karawane, die Richtung Kloster unterwegs war, von seltsamen Golems überfallen.
-	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_04"); //Wow, ziemlich viel auf einmal.
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_05"); //Ja, deswegen arbeitest du auch nicht alleine daran.
-	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_06"); //Was meinst du mit "nicht alleine"?
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_07"); //Gidan wird die Karawanen überwachen.
-	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_08"); //Na gut ... dann kümmere ich mich um die Sekte und den Erfinder.
-	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_09"); //Gut, sag Bescheid, wenn du etwas herausfindest.
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_00"); //Dobrze, ze jestes tutaj, jest wiele do zrobienia!
+	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_01"); //Ach, tak? Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_02"); //Po pierwsze, z górnego miasta zniknal naukowiec, prawdopodobnie porwany.
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_03"); //Z drugiej strony, stare fanatyczne kultowe blystki zdaja sie cos planowac. Co gorsza, ostatni karawana w drodze do klasztoru zostala zaatakowana przez dziwne golemy.
+	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_04"); //Oby, dosc duzo na raz.
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_05"); //Tak, dlatego nie pracujesz sam.
+	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_06"); //Was meinst du mit "nie sam"?
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_07"); //Gidan bedzie nadzorowal przyczepy kempingowe.
+	AI_Output(hero, self, "Info_Mod_Andre_Auftrag_15_08"); //Wszystko w porzadku.... Wtedy zatroszcze sie o sekte i wynalazce.
+	AI_Output(self, hero, "Info_Mod_Andre_Auftrag_08_09"); //No cóz, daj mi znac, czy cos znajdziesz.
 
 	Wld_InsertNpc	(Mod_1745_PSIGUR_Guru_NW, "BIGFARM");
 	Wld_InsertNpc	(Mod_7392_PSITPL_Templer_NW, "BIGFARM");
@@ -915,7 +915,7 @@ FUNC VOID Info_Mod_Andre_Auftrag_Info()
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_wISSENSCHAFTLER, LOG_RUNNING);
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_SEKTENSPINNER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_SEKTENSPINNER, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, TOPIC_MOD_MILIZ_SEKTENSPINNER, "Ich muss herausfinden, was es mit dem Verschwinden des Erfinders auf sich hat.", "Irgendetwas stimmt mit den Sektenspinnern nicht. Ich sollte im Minental mal mit Cor Angar sprechen.");
+	B_LogEntry_More	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, TOPIC_MOD_MILIZ_SEKTENSPINNER, "Musze sie dowiedziec na czym polega znikniecie wynalazcy.", "Jest cos zlego w kultowych pajakach. Powinienem porozmawiac z Cor Angar w Minentalu.");
 
 	B_StartOtherRoutine	(Mod_1723_MIL_Gidan_NW,	"TOT");
 
@@ -930,7 +930,7 @@ INSTANCE Info_Mod_Andre_WoErfinder (C_INFO)
 	information	= Info_Mod_Andre_WoErfinder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo gibt es Hinweise zum Erfinder?";
+	description	= "Gdzie moge znalezc informacje o wynalazcy?";
 };
 
 FUNC INT Info_Mod_Andre_WoErfinder_Condition()
@@ -943,11 +943,11 @@ FUNC INT Info_Mod_Andre_WoErfinder_Condition()
 
 FUNC VOID Info_Mod_Andre_WoErfinder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_WoErfinder_15_00"); //Wo gibt es Hinweise zum Erfinder?
-	AI_Output(self, hero, "Info_Mod_Andre_WoErfinder_08_01"); //Sieh dich am besten in seinem Haus um. Geh ins obere Viertel und durch den Torbogen in Richtung des Händlers Salandril.
-	AI_Output(self, hero, "Info_Mod_Andre_WoErfinder_08_02"); //Dort auf der linken Seite das Haus gehört dem Erfinder.
+	AI_Output(hero, self, "Info_Mod_Andre_WoErfinder_15_00"); //Gdzie moge znalezc informacje o wynalazcy?
+	AI_Output(self, hero, "Info_Mod_Andre_WoErfinder_08_01"); //Rozejrzyj sie po jego domu. Przejdz do górnej czesci dzielnicy i przez szose w kierunku kupca Salandril.
+	AI_Output(self, hero, "Info_Mod_Andre_WoErfinder_08_02"); //Tam po lewej stronie dom nalezy do wynalazcy.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Ich sollte mich im Haus des Erfinders umsehen. Ich finde es im oberen Viertel auf dem Weg zu Salandril auf der linken Seite nach dem Torbogen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Powinienem rozejrzec sie po domu wynalazcy. Znajduje ja w górnej dzielnicy w drodze do Salandril po lewej stronie po luku.");
 
 };
 
@@ -959,7 +959,7 @@ INSTANCE Info_Mod_Andre_WoFanatiker (C_INFO)
 	information	= Info_Mod_Andre_WoFanatiker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo gibt es Hinweise zu den Sektenspinnern?";
+	description	= "Gdzie moge znalezc informacje na temat kultowych blystek?";
 };
 
 FUNC INT Info_Mod_Andre_WoFanatiker_Condition()
@@ -972,10 +972,10 @@ FUNC INT Info_Mod_Andre_WoFanatiker_Condition()
 
 FUNC VOID Info_Mod_Andre_WoFanatiker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_WoFanatiker_15_00"); //Wo gibt es Hinweise zu den Sektenspinnern?
-	AI_Output(self, hero, "Info_Mod_Andre_WoFanatiker_08_01"); //Hör dich am besten im Sumpflager im Minental um. Oder bei deinem Freund, von dem mir Gidan erzählt hat, diesem Lester.
+	AI_Output(hero, self, "Info_Mod_Andre_WoFanatiker_15_00"); //Gdzie moge znalezc informacje na temat kultowych blystek?
+	AI_Output(self, hero, "Info_Mod_Andre_WoFanatiker_08_01"); //Dlaczego nie idziesz do obozu bagiennego w Minental? Albo u twojego przyjaciela, o którym Gidan mi opowiedzial, ze Lester.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Lord Andre meint ich sollte mich im Sumpflager oder bei Lester umhören, um etwas über die fanatischen Sektenspinner zu erfahren.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Pan Andre uwaza, ze powinienem udac sie do obozu na bagnie lub do Lester' s, aby dowiedziec sie wiecej o fanatycznych blystkach kultowych.");
 
 };
 
@@ -987,7 +987,7 @@ INSTANCE Info_Mod_Andre_Erfahrung_Erfinder (C_INFO)
 	information	= Info_Mod_Andre_Erfahrung_Erfinder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab etwas über den Erfinder herausgefunden!";
+	description	= "Dowiedzialem sie o wynalazcy!";
 };
 
 FUNC INT Info_Mod_Andre_Erfahrung_Erfinder_Condition()
@@ -1000,12 +1000,12 @@ FUNC INT Info_Mod_Andre_Erfahrung_Erfinder_Condition()
 
 FUNC VOID Info_Mod_Andre_Erfahrung_Erfinder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_00"); //Ich hab etwas über den Erfinder herausgefunden!
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Erfinder_08_01"); //Gut, berichte.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_02"); //Der Erfinder wurde auf Anweisung eines gewissen Cor Kolam entführt. Dieser will mit seiner Hilfe den Schläfer wiedererwecken.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_03"); //Der Statthalter Larius, der Händler Lutero und die Miliz Lawrence scheinen alle mit ihm zusammengearbeitet zu haben.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_04"); //Ich habe sie getötet, als sie versucht haben mich zu töten. Außerdem habe ich noch eine Pergamenthälfte gefunden.
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Erfinder_08_05"); //Das sind wichtige Informationen.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_00"); //Dowiedzialem sie o wynalazcy!
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Erfinder_08_01"); //Wszystkie sluszne, zglosic.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_02"); //Wynalazca zostal porwany na rozkaz pewnego Cor Kolama. Z jego pomoca chce zmartwychwstac sypialnia.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_03"); //Gubernator Larius, handlarz Lutero i milicja Lawrence' a zdaja sie wspólpracowac z nim.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Erfinder_15_04"); //Zabilem ich, kiedy próbowali mnie zabic. Znalazlem tez kolejna polowe pergaminu.
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Erfinder_08_05"); //To sa wazne informacje.
 
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, LOG_SUCCESS);
 
@@ -1022,7 +1022,7 @@ INSTANCE Info_Mod_Andre_Erfahrung_Fanatiker (C_INFO)
 	information	= Info_Mod_Andre_Erfahrung_Fanatiker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab etwas über die Fanatiker herausgefunden!";
+	description	= "Dowiedzialem sie o fanatykach!";
 };
 
 FUNC INT Info_Mod_Andre_Erfahrung_Fanatiker_Condition()
@@ -1036,14 +1036,14 @@ FUNC INT Info_Mod_Andre_Erfahrung_Fanatiker_Condition()
 
 FUNC VOID Info_Mod_Andre_Erfahrung_Fanatiker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_00"); //Ich hab etwas über die Fanatiker herausgefunden!
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Fanatiker_08_01"); //Gut, berichte.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_02"); //In der Gegend um Khorinis befinden sich mehrere Gruppen von ehemaligen Sektenmitgliedern.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_03"); //Diese scheinen zu versuchen, den Schläfer wiederzuerwecken. Eine dieser Gruppen hat den Leuchtturm in Besitz genommen, die andere auf der Südseite der Stadt habe ich vernichtet.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_04"); //Ich habe dort eine Pergamenthälfte gefunden.
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Fanatiker_08_05"); //Hm, wir müssen aufpassen ...
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_00"); //Dowiedzialem sie o fanatykach!
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Fanatiker_08_01"); //Wszystkie sluszne, zglosic.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_02"); //W okolicach Khorinis znajduje sie kilka grup bylych czlonków kultowych.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_03"); //Wyglada na to, ze próbuja ponownie obudzic sypialnie. Jedna z tych grup objela w posiadanie latarnie morska, druga zas po poludniowej stronie miasta zniszczylam.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_Fanatiker_15_04"); //Znalazlem tam pól pergaminu.
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_Fanatiker_08_05"); //Hm, musimy byc ostrozni....
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Ich sollte versuchen die zwei Pergamenthälften zusammenzusetzen. Vielleicht kann Xardas mir dabei helfen...");
+	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Powinienem spróbowac polaczyc dwie polówki pergaminu. Moze Xardas moze mi w tym pomóc.....");
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_SEKTENSPINNER, LOG_SUCCESS);
 
 	B_GivePlayerXP	(500);
@@ -1059,7 +1059,7 @@ INSTANCE Info_Mod_Andre_Erfahrung (C_INFO)
 	information	= Info_Mod_Andre_Erfahrung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das war erstmal alles, was ich herausfinden konnte.";
+	description	= "To wszystko, czego moglem sie dowiedziec teraz.";
 };
 
 FUNC INT Info_Mod_Andre_Erfahrung_Condition()
@@ -1073,18 +1073,18 @@ FUNC INT Info_Mod_Andre_Erfahrung_Condition()
 
 FUNC VOID Info_Mod_Andre_Erfahrung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_00"); //Das war erstmal alles, was ich herausfinden konnte.
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_01"); //Nun, das hört sich nicht gut an. Gidan ist noch nicht zurückgekehrt, dass heißt wir müssen warten, bis er zurück ist, bevor wir mehr wissen.
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_02"); //Du gehst solange ins Minental. Dort hatten wir eine Mine im Orkgebiet in der Nähe des Turms. Doch sie wurde vor kurzem überfallen. Du musst sie befreien!
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_03"); //Von wem wurde die Mine überfallen?
-	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_04"); //Unseren Berichten nach von Banditen. Wollen sich vermutlich etwas bereichern, magisches Erz ist zurzeit verdammt teuer.
-	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_05"); //Ich mach mich sofort auf den Weg!
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_00"); //To wszystko, czego moglem sie dowiedziec teraz.
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_01"); //No cóz, to nie brzmi dobrze. Gidan jeszcze nie wrócil, co oznacza, ze musimy czekac az wróci do domu, zanim dowiemy sie wiecej.
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_02"); //Pójdziesz do Minental tak dlugo, jak chcesz. Tam mielismy kopalnie w okolicy orksu kolo wiezy. Ale ostatnio zostala zaatakowana. Musisz ja uwolnic!
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_03"); //Kto ukradl kopalnie?
+	AI_Output(self, hero, "Info_Mod_Andre_Erfahrung_08_04"); //Wedlug naszych raportów, przez bandytów. Prawdopodobnie chcac zarobic fortune, magiczna ruda jest dzis dosc zmudna i kosztowna.
+	AI_Output(hero, self, "Info_Mod_Andre_Erfahrung_15_05"); //Bede w drodze od razu!
 
 	B_GivePlayerXP	(500);
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_MINE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_MINE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MILIZ_MINE, "In einer Mine der Paladine im Minental im Orkgebiet nahe Xardas' Turm gab es einen Banditenüberfall. Ich sollte mich mal um diese Banditen kümmern.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_MINE, "W kopalni Paladin w dolinie Minentalnej niedaleko wiezy Xardas doszlo do nalotu bandytów. Powinienem zadbac o tych bandytów.");
 
 	B_Göttergefallen(1, 1);
 };
@@ -1097,7 +1097,7 @@ INSTANCE Info_Mod_Andre_Banditen (C_INFO)
 	information	= Info_Mod_Andre_Banditen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Mine ist befreit.";
+	description	= "Kopalnia jest wolna.";
 };
 
 FUNC INT Info_Mod_Andre_Banditen_Condition()
@@ -1110,8 +1110,8 @@ FUNC INT Info_Mod_Andre_Banditen_Condition()
 
 FUNC VOID Info_Mod_Andre_Banditen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Banditen_15_00"); //Die Mine ist befreit. Es waren Schläferanhänger, die sie besetzt hatten.
-	AI_Output(self, hero, "Info_Mod_Andre_Banditen_08_01"); //Verdammt! Die haben wohl überall ihre Finger im Spiel.
+	AI_Output(hero, self, "Info_Mod_Andre_Banditen_15_00"); //Kopalnia jest wolna. Okupowali ich przyczepy sypialne.
+	AI_Output(self, hero, "Info_Mod_Andre_Banditen_08_01"); //Damn to! Musza miec palce we wszystkim.
 
 	B_GivePlayerXP	(1000);
 
@@ -1128,7 +1128,7 @@ INSTANCE Info_Mod_Andre_GidanBack (C_INFO)
 	information	= Info_Mod_Andre_GidanBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ist Gidan schon zurück?";
+	description	= "Czy Gidan jeszcze wrócil?";
 };
 
 FUNC INT Info_Mod_Andre_GidanBack_Condition()
@@ -1142,22 +1142,22 @@ FUNC INT Info_Mod_Andre_GidanBack_Condition()
 
 FUNC VOID Info_Mod_Andre_GidanBack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_00"); //Ist Gidan schon zurück?
+	AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_00"); //Czy Gidan jeszcze wrócil?
 
 	if (Kapitel < 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_01"); //Nein, noch nicht. Komm später wieder.
+		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_01"); //Nie, jeszcze nie. Wróc do domu pózniej.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_02"); //Ja, allerdings ist er schon wieder weg!
-		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_03"); //Wohin?
-		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_04"); //Eines unserer Überwachungslager wurde angegriffen ...
-		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_05"); //Überwachungslager?
-		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_06"); //Ja. Die haben wir eingerichtet um die Karawanen zu überwachen, die vom Kloster zur Stadt kommen. Kurz bevor du kamst erreichte uns ein Bote der gesagt hat, dass wir angegriffen wurden.
-		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_07"); //Wo ist dieses Lager?
-		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_08"); //Unter der Brücke auf dem Weg zur Taverne.
-		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_09"); //Gut, ich mach mich sofort auf den Weg.
+		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_02"); //Tak, ale on odszedl znowu!
+		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_03"); //Gdzie?
+		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_04"); //Jeden z naszych obozów dozoru zostal zaatakowany.....
+		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_05"); //Obóz koncentracyjny?
+		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_06"); //Tak. Konfigurujemy ja tak, aby monitorowac karawany z klasztoru do miasta. Tuz przed wejsciem do nas dotarl poslannik, który powiedzial, ze zostalismy zaatakowani.
+		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_07"); //Gdzie znajduje sie ten magazyn?
+		AI_Output(self, hero, "Info_Mod_Andre_GidanBack_08_08"); //Pod mostem w drodze do tawerny.
+		AI_Output(hero, self, "Info_Mod_Andre_GidanBack_15_09"); //Dobrze, od razu bede w drodze.
 
 		AI_StopProcessInfos	(self);
 
@@ -1170,7 +1170,7 @@ FUNC VOID Info_Mod_Andre_GidanBack_Info()
 
 		Log_CreateTopic	(TOPIC_MOD_MILIZ_GIDAN, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_MILIZ_GIDAN, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Gidan ist in einem Überwachungslager der Miliz in der Nähe der Taverne unter einer Brücke, welches Überfallen wurde. Ich sollte zu ihm gehen und sehen, was er herausgefunden hat.");		
+		B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Gidan znajduje sie w obozie dozorowania milicji w poblizu tawerny pod mostem, który zostal napadniety. Powinienem isc do niego i zobaczyc, co sie dowiedzial.");		
 	};
 };
 
@@ -1182,7 +1182,7 @@ INSTANCE Info_Mod_Andre_FIFinished (C_INFO)
 	information	= Info_Mod_Andre_FIFinished_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Rätsel um die Sekte gelüftet und den Erfinder zerschlagen.";
+	description	= "Rozwiazywalem tajemnice sekty i rozbilem wynalazce.";
 };
 
 FUNC INT Info_Mod_Andre_FIFinished_Condition()
@@ -1195,23 +1195,23 @@ FUNC INT Info_Mod_Andre_FIFinished_Condition()
 
 FUNC VOID Info_Mod_Andre_FIFinished_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_00"); //Ich habe das Rätsel um die Sekte gelüftet und den Erfinder zerschlagen.
-	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_01"); //Du hast WAS? Das sollte doch umgekehrt geschehen.
-	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_02"); //Das war so: Der Erfinder wurde nicht entführt, sondern diente nur als Köder für mich.
-	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_03"); //Cor Kalom's Bruder Cor Kolam hatte einen Roboter gebaut, der wie der Schläfer aussah, und hat damit die Sektenanhänger zu seinen Gefolgsleuten gemacht.
-	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_04"); //Er faselte von der perfekten Maschine und ich dachte natürlich, dass dies der Schläfer-Bot sei. Doch nachdem ich ihn vernichtet hatte, hat er die eigentliche Wunderwaffe gezeigt.
-	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_05"); //Als er diese auf mich hetzen wollte kam jedoch Gidan und hat die beiden mit in die Tiefe gerissen. Er hat sich für die Gerechtigkeit geopfert.
-	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_06"); //So war das ... Naja du hast dir jedenfalls eine Belohnung verdient.
-	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_07"); //Ich ernenne dich hiermit zum Ritter. Hier ist deine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_00"); //Rozwiazywalem tajemnice sekty i rozbilem wynalazce.
+	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_01"); //Co dostales? Mialo to byc odwrotnie.
+	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_02"); //To bylo tak: wynalazca nie zostal porwany, a uzyty tylko jako przyneta dla mnie.
+	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_03"); //Brat Cor Kalom' a, Cor Kolam, zbudowal robota, który wygladal jak sypialnia, czyniac wyznawców kultów nasladowcami.
+	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_04"); //Pogladal on na idealna maszyne i oczywiscie myslalem, ze to byl bot sypialny. Ale po tym jak go zniszczylem, pokazal prawdziwy cud.
+	AI_Output(hero, self, "Info_Mod_Andre_FIFinished_15_05"); //Kiedy jednak próbowal mnie ulozyc na mnie, przyszedl Gidan i zabral ich z nim. Ofiarowal sie za sprawiedliwosc.
+	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_06"); //Tak bylo.... Cóz, w kazdym razie zarobiles sobie nagrode.
+	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_07"); //Niniejszym oswiadczam, ze jestes rycerzem. Oto Twoja zbroja.
 
 	CreateInvItems	(hero, ItAr_Pal_M, 1);
 
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Pal_M);
 
-	B_ShowGivenThings	("Ritterrüstung erhalten");
+	B_ShowGivenThings	("uzyskac zbroje rycerska");
 
-	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_08"); //Zur Zeit ist alles ruhig, Wenn's wieder was zu tun gibt erfährst du es hier.
+	AI_Output(self, hero, "Info_Mod_Andre_FIFinished_08_08"); //W tej chwili wszystko jest spokojne, jesli jest jeszcze cos do zrobienia, dowiesz sie tutaj.
 
 	B_GivePlayerXP	(2000);
 
@@ -1230,7 +1230,7 @@ INSTANCE Info_Mod_Andre_RLMord (C_INFO)
 	information	= Info_Mod_Andre_RLMord_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, gibt’s was zu tun?";
+	description	= "Cóz, czy jest cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Andre_RLMord_Condition()
@@ -1245,36 +1245,36 @@ FUNC VOID Info_Mod_Andre_RLMord_Info()
 {
 	if (!Npc_KnowsInfo(hero, Info_Mod_Neron_Hi))
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_RLMord_15_00"); //Na, gibt’s was zu tun?
+		AI_Output(hero, self, "Info_Mod_Andre_RLMord_15_00"); //Cóz, czy jest cos do zrobienia?
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_RLMord_15_01"); //Neron schickt mich.
+		AI_Output(hero, self, "Info_Mod_Andre_RLMord_15_01"); //Neron mnie wyslal.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Andre_RLMord_08_02"); //Gut, dass du das bist! Im Hafenviertel ist die Hölle los. Ein Milize, Jason, wurde umgebracht!
+	AI_Output(self, hero, "Info_Mod_Andre_RLMord_08_02"); //Dobrze, ze to Ty! Pekniecie piekla w doku. Zginela milicja Jason!
 
 	B_StartOtherRoutine	(Mod_1260_RIT_Neron_NW, "START");
 
 	Log_CreateTopic	(TOPIC_MOD_PAL_RL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PAL_RL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der Milizsoldat Jason wurde im Hafenviertel ermordet.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Zolnierz milicji Jason zostal zamordowany w dzielnicy portowej.");
 
 	Info_ClearChoices	(Info_Mod_Andre_RLMord);
 
-	Info_AddChoice	(Info_Mod_Andre_RLMord, "Wo?", Info_Mod_Andre_RLMord_C);
-	Info_AddChoice	(Info_Mod_Andre_RLMord, "Von wem?", Info_Mod_Andre_RLMord_B);
-	Info_AddChoice	(Info_Mod_Andre_RLMord, "Wie?", Info_Mod_Andre_RLMord_A);
+	Info_AddChoice	(Info_Mod_Andre_RLMord, "Gdzie?", Info_Mod_Andre_RLMord_C);
+	Info_AddChoice	(Info_Mod_Andre_RLMord, "Po kogo?", Info_Mod_Andre_RLMord_B);
+	Info_AddChoice	(Info_Mod_Andre_RLMord, "Jak?", Info_Mod_Andre_RLMord_A);
 };
 
 FUNC VOID Info_Mod_Andre_RLMord_C()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_RLMord_C_15_00"); //Wo?
-	AI_Output(self, hero, "Info_Mod_Andre_RLMord_C_08_01"); //In der roten Laterne.
-	AI_Output(hero, self, "Info_Mod_Andre_RLMord_C_15_02"); //Er war im Bordell? Dienstlich?
-	AI_Output(self, hero, "Info_Mod_Andre_RLMord_C_08_03"); //Wohl kaum. Er war nackt ...
+	AI_Output(hero, self, "Info_Mod_Andre_RLMord_C_15_00"); //Gdzie?
+	AI_Output(self, hero, "Info_Mod_Andre_RLMord_C_08_01"); //Na czerwonej latarni.
+	AI_Output(hero, self, "Info_Mod_Andre_RLMord_C_15_02"); //Byl w domu publicznym? Biznes?
+	AI_Output(self, hero, "Info_Mod_Andre_RLMord_C_08_03"); //Nie sadze. Byl nagi.....
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der Mord wurde in der Roten Laterne ausgeführt.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Zabójstwo mialo miejsce w Czerwonym Lancecie.");
 
 	Mod_PAL_RLChoices += 1;
 
@@ -1286,8 +1286,8 @@ FUNC VOID Info_Mod_Andre_RLMord_C()
 
 FUNC VOID Info_Mod_Andre_RLMord_B()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_RLMord_B_15_00"); //Von wem?
-	AI_Output(self, hero, "Info_Mod_Andre_RLMord_B_08_01"); //Wenn wir das wüssten würde dieser Mistkerl schon hängen!
+	AI_Output(hero, self, "Info_Mod_Andre_RLMord_B_15_00"); //Po kogo?
+	AI_Output(self, hero, "Info_Mod_Andre_RLMord_B_08_01"); //Gdybysmy wiedzieli, ze wisi ten syn suki!
 
 	Mod_PAL_RLChoices += 1;
 
@@ -1299,8 +1299,8 @@ FUNC VOID Info_Mod_Andre_RLMord_B()
 
 FUNC VOID Info_Mod_Andre_RLMord_A()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_RLMord_A_15_00"); //Wie?
-	AI_Output(self, hero, "Info_Mod_Andre_RLMord_A_08_01"); //Erstochen.
+	AI_Output(hero, self, "Info_Mod_Andre_RLMord_A_15_00"); //Jak?
+	AI_Output(self, hero, "Info_Mod_Andre_RLMord_A_08_01"); //Stabbed.
 
 	Mod_PAL_RLChoices += 1;
 
@@ -1330,15 +1330,15 @@ FUNC INT Info_Mod_Andre_Giselle_Condition()
 
 FUNC VOID Info_Mod_Andre_Giselle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_00"); //Gute Arbeit, Soldat. Du hast’s nicht nur in den Muskeln sondern auch im Kopf! Jason wird auf dem Friedhof beigesetzt, wir erweisen ihm die letzte Ehre.
-	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_01"); //Hier hast du deinen Sold. Ich hoffe wir steuern jetzt auf ruhigere Zeiten zu ...
+	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_00"); //Dobra praca, zolnierz. Masz go nie tylko w miesniach, ale takze w glowie! Jason zostanie pochowany na cmentarzu, oddamy mu szacunek.
+	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_01"); //Oto Twoja wyplata. Mam nadzieje, ze teraz zmierzamy ku ciszy.....
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 2000);
 
-	AI_Output(hero, self, "Info_Mod_Andre_Giselle_15_02"); //Was ist mit der "Dunklen Gestalt"?
-	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_03"); //Wir fahnden verdeckt nach ihr. Das letzte, was wir brauchen, ist eine Massenpanik.
-	AI_Output(hero, self, "Info_Mod_Andre_Giselle_15_04"); //Habt ihr schon was rausgefunden?
-	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_05"); //Nein, bisher noch nicht.
+	AI_Output(hero, self, "Info_Mod_Andre_Giselle_15_02"); //Was ist mit der "Ciemna cyfra"?
+	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_03"); //Szukamy dla niej tajnosci. Ostatnia rzecza, której potrzebujemy, jest masowa panika.
+	AI_Output(hero, self, "Info_Mod_Andre_Giselle_15_04"); //Czy cos jeszcze znalazles?
+	AI_Output(self, hero, "Info_Mod_Andre_Giselle_08_05"); //Nie, jeszcze nie.
 
 	B_StartOtherRoutine	(Mod_744_MIL_Pablo_NW, "START");
 	B_StartOtherRoutine	(Mod_7234_OUT_Giselle_NW, "KNAST");
@@ -1346,7 +1346,7 @@ FUNC VOID Info_Mod_Andre_Giselle_Info()
 
 	B_GivePlayerXP	(2000);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der Fall sollte abgeschlossen sein, jetzt wird nur noch verdeckt nach der dunkle Gestalt gefahndet, um eine Massenpanik zu verhindern.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Sprawa powinna byc zamknieta, teraz trwa tylko ukryte poszukiwanie ciemnej figury, aby zapobiec masowej panice.");
 
 	Mod_PAL_MISH_Day = Wld_GetDay();
 };
@@ -1372,16 +1372,16 @@ FUNC INT Info_Mod_Andre_Bernd_Condition()
 
 FUNC VOID Info_Mod_Andre_Bernd_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Bernd_08_00"); //Gut, dass du gerade kommst. Ich hab grad eine Meldung wegen häuslicher Gewalt entgegengenommen.
-	AI_Output(self, hero, "Info_Mod_Andre_Bernd_08_01"); //Bernd, ein Säufer aus dem Hafenviertel, hat wiedermal einen über den Durst getrunken und lässt seinen Kater gerade an seiner Frau aus, geh da bitte mal hin und „beruhige“ ihn.
-	AI_Output(hero, self, "Info_Mod_Andre_Bernd_15_02"); //Wird erledigt.
+	AI_Output(self, hero, "Info_Mod_Andre_Bernd_08_00"); //Ciesze sie, ze wlasnie przyszliscie. Wlasnie otrzymalem raport o przemocy domowej.
+	AI_Output(self, hero, "Info_Mod_Andre_Bernd_08_01"); //Bernd, pijak z dzielnicy portowej, po raz kolejny wypil pijanego o pragnieniu i zostawia swój grobat zaraz na zonie, prosze idz tam i "spokojny" go.
+	AI_Output(hero, self, "Info_Mod_Andre_Bernd_15_02"); //To juz wszystko.
 
 	B_StartOtherRoutine	(Mod_1062_VLK_Bernd_NW, "GEKILLT");
 	B_StartOtherRoutine	(Mod_1064_VLK_Jana_NW, "BERND");
 
 	B_KillNpc	(Mod_1062_VLK_Bernd_NW);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Bernd, ein Säufer aus dem Hafenviertel, soll seine Frau schlagen. Ich soll ihn beruhigen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Bernd, pijak z dzielnicy portowej, ma pobic zone. Chce, abym go uspokoil.");
 };
 
 INSTANCE Info_Mod_Andre_Jana (C_INFO)
@@ -1392,7 +1392,7 @@ INSTANCE Info_Mod_Andre_Jana (C_INFO)
 	information	= Info_Mod_Andre_Jana_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bernd ist beruhigt.";
+	description	= "Bernd jest pewny.";
 };
 
 FUNC INT Info_Mod_Andre_Jana_Condition()
@@ -1405,17 +1405,17 @@ FUNC INT Info_Mod_Andre_Jana_Condition()
 
 FUNC VOID Info_Mod_Andre_Jana_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_00"); //Bernd ist beruhigt.
-	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_01"); //So? Das ging aber schnell.
-	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_02"); //Ja, und dazu noch dauerhaft. Er ist tot.
-	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_03"); //Ach verflucht, du kannst doch nicht jeden dahergelaufenen Säufer erschlagen, nur weil du dir den Papierkram sparen willst!
-	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_04"); //Ich war‘s nicht, sondern ein "dunkler Typ in einer Milizrüstung".
-	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_05"); //Du meinst doch nicht etwa ...
-	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_06"); //Doch. Wir haben es hier mit einem Serienmörder zu tun, der ganz nebenbei Jason's Rüstung trägt.
-	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_07"); //Dann müssen wir wohl an die Öffentlichkeit treten ...
-	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_08"); //Ich werde hier alles vorbereiten, geh du inzwischen bitte kurz zum Marktplatz, da ist ein Spinner, vermutlich ein alter Guru aus dem Sektenlager, der die Leute vor dem Ende der Welt warnt und dabei ziemlich indiskret ist. Schmeiß ihn aus der Stadt.
+	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_00"); //Bernd jest pewny.
+	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_01"); //Lubie to? To bylo szybkie.
+	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_02"); //Tak, a takze trwale. On nie zyje.
+	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_03"); //Damn to, nie mozna zabic kazdego pijaka, który uciekl tylko dlatego, ze chcesz uratowac sie od papierkowej roboty!
+	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_04"); //Ich war‘s nicht, sondern ein "ciemny facet w milicji pancernej".
+	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_05"); //Nie masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Andre_Jana_15_06"); //Tak, tak. Mamy do czynienia z seryjnym zabójca w pancerzu Jasona.
+	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_07"); //Wtedy chyba bedziemy musieli pójsc na jaw....
+	AI_Output(self, hero, "Info_Mod_Andre_Jana_08_08"); //Przygotuje tu wszystko, prosze w miedzyczasie udac sie na targowisko, jest dziwak, chyba stary guru z obozu kultowego, który ostrzega ludzi przed koncem swiata i jest dosc dyskretny. Wyprowadzic go z miasta.
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Lord Andre meint, dass wir an die Öffentlichkeit gehen müssen. Während er alles vorbereitet soll ich einen verrückten Guru, der auf dem Marktplatz das Ende der Welt prophezeit, aus der Stadt schmeißen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Pan Andre oznacza, ze musimy pójsc publicznie. Kiedy wszystko przygotowuje, wypuszcze na rynek zwariowanego guru, który prorokuje koniec swiata.");
 
 	Wld_InsertNpc	(Mod_7236_GUR_Guru_NW, "MARKT");
 };
@@ -1428,7 +1428,7 @@ INSTANCE Info_Mod_Andre_HeroBot (C_INFO)
 	information	= Info_Mod_Andre_HeroBot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich weiß jetzt, wer unser Serienkiller ist.";
+	description	= "Wiem, kim jest teraz nasz seryjny zabójca.";
 };
 
 FUNC INT Info_Mod_Andre_HeroBot_Condition()
@@ -1441,24 +1441,24 @@ FUNC INT Info_Mod_Andre_HeroBot_Condition()
 
 FUNC VOID Info_Mod_Andre_HeroBot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_00"); //Ich weiß jetzt, wer unser Serienkiller ist.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_01"); //Du weißt es? Wer?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_02"); //Kolam's Kampfroboter.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_03"); //Was? Wie kommst du darauf?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_04"); //Ich hab ihn gesehen. Er hat den Verrückten am Marktplatz umgehauen.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_05"); //Ich nehm an ich muss mir keine Gedanken darüber machen, wie er noch funktionieren kann oder warum er bis jetzt nur Verbrecher abgestochen hat, weil du ihn erledigt hast ... richtig?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_06"); //Falsch. Ich hab versucht, ihn zu erledigen, allerdings hat Kolam bei dem Gerät ganze Arbeit geleistet. Ich konnte ihn kaum anritzen, dafür hab ich mit jedem Schlag Energie verloren.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_07"); //Warum stehst du dann noch hier?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_08"); //Der Roboter hat mich nicht angegriffen. Er faselte irgendwas von "Bedrohen von sowieso ist als Straftat anzusehen" oder was weiß ich und hat sich wegteleportiert.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_09"); //"Bedrohen als Strafttat anzusehen" ... das kommt mir merkwürdig bekannt vor. Hat der Roboter sonst noch was gesagt?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_10"); //Ja ... zu Jana hat er irgendwas davon gefaselt, dass "ein guter Milize stets die Schwachen schützt" ...
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_11"); //Das kommt mir alles so vertraut vor. Woher kenne ich das bloß? Hat der Roboter vielleicht nochwas gesagt?
-	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_12"); //Nicht, dass ich wüsste.
-	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_13"); //Damit hast du einen neuen Auftrag. Finde noch was raus. Ich versuch inzwischen eine Massenpanik zu verhindern! Und beeil dich gefälligst.
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_00"); //Wiem, kim jest teraz nasz seryjny zabójca.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_01"); //Wiesz? Kto?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_02"); //Robot bojowy Kolam.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_03"); //Co? Co sprawia, ze myslisz o tym?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_04"); //Widzialam go. Na targowisko wybil szalonego faceta.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_05"); //Przypuszczam, ze nie musze sie martwic o to, jak to jeszcze moze dzialac, ani dlaczego jest on jak dotad tylko kluc przestepcami, poniewaz to zrobiles...... Oto prawda?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_06"); //Nieprawidlowe. Próbowalem go zabic, ale Kolam swietnie sie spisal z urzadzeniem. Móglbym go ledwie porysowac, ale za kazdym razem stracilem energie.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_07"); //Dlaczego wiec stoisz tutaj?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_08"); //Der Roboter hat mich nicht angegriffen. Er faselte irgendwas von "Zagrozenie w kazdym razie nalezy uznac za przestepstwo." oder was weiß ich und hat sich wegteleportiert.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_09"); //"Zagrozenie, które nalezy uznac za przestepstwo kryminalne" ... das kommt mir merkwürdig bekannt vor. Hat der Roboter sonst noch was gesagt?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_10"); //Ja ... zu Jana hat er irgendwas davon gefaselt, dass "dobra milicja zawsze chroni slabe strony" ...
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_11"); //Wszystko wydaje sie tak znajome. Skad to wiem? Czy robot powiedzial cos wiecej?
+	AI_Output(hero, self, "Info_Mod_Andre_HeroBot_15_12"); //Nie wiem o tym.
+	AI_Output(self, hero, "Info_Mod_Andre_HeroBot_08_13"); //To nowe zadanie dla Ciebie. Dowiedz sie, co jeszcze. Próbuje powstrzymac masowa panike! I spieszyc sie, czy pan?
 
 	B_GivePlayerXP	(500);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Die Sprüche des Roboters kommen Lord Andre sehr bekannt vor, er kann sie jedoch noch nicht einordnen. Ich soll nun einen weiteren Spruch von ihm herausfinden. Ich sollte also mal mit Giselle im Gefängnis reden.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Mówienia robota sa bardzo znane lorda Andre' owi, ale nie moze on jeszcze je sklasyfikowac. Chce, abym dowiedzial sie od niego innej linii. Powinienem wiec porozmawiac z Giselle w wiezieniu.");
 };
 
 INSTANCE Info_Mod_Andre_Kerze (C_INFO)
@@ -1481,23 +1481,23 @@ FUNC INT Info_Mod_Andre_Kerze_Condition()
 
 FUNC VOID Info_Mod_Andre_Kerze_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_00"); //Wird auch Zeit, dass du kommst, irgendwas ist durchgesicktert, hier ist die Hölle los.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_01"); //Wir haben eine Ausgangssperre verhängt, aber das beeindruckt hier niemanden.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_02"); //Wir müssen dieses Problem augenblicklich lösen! Ich hoffe du weißt wie.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_03"); //Ich habe mit Giselle gesprochen. Laut ihrer Aussage hat der Roboter etwas gesagt wie "Milizen ist es in ihrer Vorbildw ..."
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_04"); //(setzt in den Satz des Helden ein) "... es in ihrer Vorbildwirkung nicht erlaubt unlautere Taten auszuüben". Natürlich! Das sind alles Grundregeln der Milizenschule.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_05"); //Milizenschule?
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_06"); //Der bist du entgangen will du das Turnier gewonnen hast, schon vergessen? Kolam muss den Roboter falsch Programmiert haben.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_07"); //Er hat nicht nur deinen Kampfstil aufgenommen sondern du hast vermutlich auch irgendeine Maxime der Miliz auf ihn übertragen. Und jetzt zerschlägt er Verbrechen und Unrecht.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_08"); //Warum sollten wir dann etwas dagegen tun?
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_09"); //Sieh dir an was das bringt! Der Roboter geht über Leichen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_10"); //Und wenn wir uns nicht bald etwas einfallen lassen, wie wir ihn erledigen können dann wird das jeder tun, weil die Straßen mit den leblosen Körpern der Verbrecher gepflastert sein werden!
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_11"); //Wir müssen ihn vernichten, ruf die gesamten Milizen zusammen, wir werden ihn offen angreifen.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_12"); //Zum einen: Wie willst du ihn finden, außerdem kann er sich Teleportieren.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_13"); //Und zum andren: Wie willst du ihn verletzen? Ich hab dir doch gesagt, dass der Roboter unverwüstlich ist!
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_14"); //Der ist aus massivem Magischem Erz! Gegen den könnten wir nicht mal antreten wenn wir Erz-Schwerter hätten.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_15"); //Dann müssen wir ihn eben in eine Falle locken. Zuerst erledigen wir das mit dem finden, dann mit dem Zerstören.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_16"); //Warte kurz ... ich hab hier noch irgendwo alte Steckbriefe, die dürften uns nützlich sein.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_00"); //Najwyzszy czas, zebys przyszedl, cos wycieklo, pieklo peka tu luzno.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_01"); //Nakladalismy godzine powszednia, ale to nie robi na nas wrazenia.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_02"); //Musimy natychmiast rozwiazac ten problem! Mam nadzieje, ze wiecie jak.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_03"); //Ich habe mit Giselle gesprochen. Laut ihrer Aussage hat der Roboter etwas gesagt wie "To sa milicje w ich wzorcu...."
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_04"); //(setzt in den Satz des Helden ein) "... ich modelowy efekt nie pozwala na praktykowanie nieuczciwych praktyk". Natürlich! Das sind alles Grundregeln der Milizenschule.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_05"); //Szkola milicyjna?
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_06"); //To on, którego uciekles przed Toba, chcesz wygrac turniej, pamietaj? Kolam musial zaprogramowac robota nieprawidlowo.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_07"); //Nie tylko nagral twój styl walki, ale pewnie przyjales na nim jakas maksyme milicji. A teraz rozbija zbrodnie i niesprawiedliwosc.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_08"); //Dlaczego wiec mielibysmy cos z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_09"); //Zobacz, co robi! Robot porusza sie po trupach.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_10"); //A jesli nie wymyslimy sposobu na szybkie doprowadzenie tego do skutku, kazdy zrobi to, poniewaz ulice beda wybrukowane bezzyciowymi cialami przestepców!
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_11"); //Musimy go zniszczyc, wspólnie wezwac wszystkie milicje, bedziemy go atakowac otwarcie.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_12"); //Jeden: Jak chcesz go znalezc i moze on teleportowac.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_13"); //Jak mu zaszkodzisz? Powiedzialem ci, ze robot jest niezniszczalny!
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_14"); //Wykonana jest z poteznej magicznej rudy! Nie moglismy go nawet walczyc, gdybysmy mieli miecze lukowe.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_15"); //Wtedy bedziemy musieli go po prostu zlapac w pulapke. Najpierw znajdujemy sie, a nastepnie niszczymy.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_16"); //Poczekaj chwile.... Mam tu gdzies jakies stare profile, które nam sie przydadza.
 
 	AI_GotoWp	(self, "WP_ANDRE_STECKBRIEFE");
 
@@ -1507,11 +1507,11 @@ FUNC VOID Info_Mod_Andre_Kerze_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_17"); //Die sind von einem alten Fall. Der Gesuchte ist immer in einem bunten Kostüm mit Schachkragen aufgetreten. Das machen wir uns jetzt zunutze.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_18"); //Ich werde dafür sorgen, dass jeder Wache einer gebracht wird. Sie sollen sie überall herumzeigen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_19"); //Währenddessen sagst du dem Herold am Marktplatzt er soll die Leute vor einem gefährlichen Irren warnen, der in buntem Kostüm mit Schachkragen rumläuft und letzte Nacht im vier Milizsoldaten erstach während sie schliefen.
-	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_20"); //Das wird die Panik aber nur noch verstärken.
-	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_21"); //Lass das meine Sorge sein. Beeil dich.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_17"); //Oni pochodza z dawnej sprawy. Zadany zawsze pojawial sie w kolorowym kostiumie z kolnierzem szachowym. Wykorzystajmy to teraz.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_18"); //Doloze wszelkich staran, aby kazdy straznik dostal jeden. Chce, zebyscie je pokazywali.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_19"); //W miedzyczasie powiesz heraldowi na targowisku, aby ostrzec ludzi przed niebezpiecznymi szalenczymi spacerami po kolorowych kostiumach z kolnierzykami szachownicowymi, a wczoraj wieczorem klujac ich w czterech zolnierzach milicji podczas snu.
+	AI_Output(hero, self, "Info_Mod_Andre_Kerze_15_20"); //Ale to tylko poglebi panike.
+	AI_Output(self, hero, "Info_Mod_Andre_Kerze_08_21"); //Prosze pozwolic mi sie tym martwic. Chodz, spiesz sie.
 
 	B_GivePlayerXP	(1000);
 
@@ -1519,7 +1519,7 @@ FUNC VOID Info_Mod_Andre_Kerze_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_PAL_BOT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PAL_BOT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PAL_BOT, "Lord Andre hat einen Plan, wie wir den Roboter vernichten können. Er wird Steckbriefe an die Wachen verteilen lassen. Währenddessen soll ich dem Herold sagen, dass er vor einem Mörder in buntem Kostüm mit Schachkragen warnen soll, der letzte Nacht vier Milizsoldaten getötet haben soll.");
+	B_LogEntry	(TOPIC_MOD_PAL_BOT, "Lord Andre ma plan zniszczenia robota. Bedzie on mial nakaz zatrzymania przekazany straznikom. Tymczasem mam powiedziec zwiastunowi, aby ostrzec zabójce w kolorowym kostiumie z kolnierzem szachowym, który rzekomo zabil wczoraj wieczorem czterech zolnierzy milicji.");
 
 	B_Göttergefallen(1, 2);
 };
@@ -1544,29 +1544,29 @@ FUNC INT Info_Mod_Andre_Herold_Condition()
 
 FUNC VOID Info_Mod_Andre_Herold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_00"); //Sehr gut. Ich habe inzwischen alle Vorbereitungen getroffen. Hier, nimm das.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_00"); //Bardzo dobry. Podjalem wszystkie przygotowania. Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItPo_Speed_Andre, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_01"); //Und das musst du anziehen.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_01"); //I to wlasnie musisz nosic.
 
 	CreateInvItems	(hero, ItAr_Gangster, 1);
 
-	B_ShowGivenThings	("Kostüm erhalten");
+	B_ShowGivenThings	("Zdobadz swój strój");
 
-	AI_Output(hero, self, "Info_Mod_Andre_Herold_15_02"); //Was soll ich damit?
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_03"); //Wir haben nur eine Chance diesen Roboter zur Strecke zu bringen, wir müssen ihn einschmelzen.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_04"); //Dazu müssen wir ihn in den Hochofen in Khorata locken, das ist der einzige Platz, der heiß genug ist, magisches Erz zu schmelzen und von dem er sich nicht wegteleportieren kann.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_05"); //Die Wände sind ja auch aus magischem Erz, da kommt keine Magie durch. Du wirst den Lockvogel spielen.
-	AI_Output(hero, self, "Info_Mod_Andre_Herold_15_06"); //Ich soll in den Hochofen? Mir wäre ein Plan lieber, bei dem ich nicht geröstet werde.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_07"); //Lass das meine Sorge sein. Zieh jetzt das Kostüm an und trink den Trank.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_08"); //Dann läufst du auf dem schnellsten Wege nach Khorata und direkt in den Hochofen. Ich werde mich unterdessen dorthin teleportieren und alles vorbereiten.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_09"); //Der Ofen wird ausgeschalten sein wenn du reinläufst und ich werde einen Ausweg für dich vorbereiten.
-	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_10"); //Los jetzt, lauf mit dem Kostüm einige Runden durch die Stadt bis dich der Roboter erwischt, er wird dich dann verfolgen. Wir sehen uns in Khorata.
+	AI_Output(hero, self, "Info_Mod_Andre_Herold_15_02"); //Co mam z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_03"); //Mamy tylko jedna szanse polowac na ten robot, musimy go stopic.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_04"); //W tym celu musimy go wabic do wielkiego pieca w Khoracie, jedynego miejsca, które jest na tyle gorace, ze moze stopic magiczna rude i z którego nie moze sie teleportowac.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_05"); //Sciany sa równiez wykonane z magicznej rudy, nie ma magii. Bedziesz wabikiem.
+	AI_Output(hero, self, "Info_Mod_Andre_Herold_15_06"); //Chcesz, abym poszedl do wielkiego pieca? Mialem raczej plan, zeby nie palic.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_07"); //Prosze pozwolic mi sie tym martwic. Teraz naniesc kostium i napic sie eliksiru.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_08"); //Nastepnie biegna Panstwo do Khoraty i bezposrednio do wielkiego pieca. W miedzyczasie bede tam teleportowal i przygotowywal wszystko.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_09"); //Piec zostanie wylaczony po wejsciu, a ja przygotuje dla Ciebie wyjscie.
+	AI_Output(self, hero, "Info_Mod_Andre_Herold_08_10"); //Idz dalej, biegnij po miescie z kostiumem, az robot cie zlapie, przyjedzie po tobie. Do zobaczenia w Khorata.
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_PAL_BOT, "Ich habe von Lord Andre einen Geschwindigkeitstrank und ein Kostüm bekommen. Das Kostüm soll ich anziehen und damit den Roboter auf mich hetzen. Wenn er mich verfolgt, so soll ich den schnellsten Weg nach Khorata nehmen und dort direkt in den Hochofen laufen. Lord Andre wird derzeit dort einen Ausgang für mich bereithalten.");
+	B_LogEntry	(TOPIC_MOD_PAL_BOT, "Dostalem od Pana Andre' a eliksir predkosci i kostium. Mam na sobie nosic kostium i nosic na mnie robota. Jesli podaza za mna, powinienem jak najszybciej dotrzec do Khoraty i wsiasc bezposrednio do wielkiego pieca. Pan Andre trzyma w tej chwili tam wyjscie dla mnie.");
 };
 
 INSTANCE Info_Mod_Andre_Ramirez (C_INFO)
@@ -1589,28 +1589,28 @@ FUNC INT Info_Mod_Andre_Ramirez_Condition()
 
 FUNC VOID Info_Mod_Andre_Ramirez_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_00"); //Was führt dich zu mir?
-	AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_01"); //Ich habe einen Dieb dabei erwischt, wie er einen unschuldigen Bürger dieser Stadt bestehlen wollte.
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_02"); //Innos sei Dank, es gibt noch Gerechtigkeit. Moment, das ist doch Ramirez, der Anführer der Diebesbande.
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_03"); //Wie konntest du ihn fangen?
-	AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_04"); //Als er sich gerade umgedreht hat konnte ich ihn von hinten überwältigen.
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_05"); //Ich sehe Innos' Feuer in deinem Herzen, du hast mich überzeugt.
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_06"); //Einen wie dich können wir hier gut gebrauchen. Das ist schon der zweite Schwerverbrecher, den wir jetzt haben. Der andere heißt Attila und ist ein Mörder.
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_07"); //Wenn wir so weitermachen, können die Bürger bald unbesorgt schlafen.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_00"); //Co cie do mnie sprowadza?
+	AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_01"); //Zlapalem zlodziej próbujacy ukrasc niewinnego mieszkanca tego miasta.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_02"); //Dziekuje Innosowi, jest jeszcze sprawiedliwosc. Odczekaj minute, to Ramirez, lider gangu zlodziei.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_03"); //Jak móglbys go zlapac?
+	AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_04"); //Kiedy on wlasnie sie przewrócil, moglem go z tylu obezwladnic.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_05"); //Widze ogien Innosa w twoim sercu, przekonales mnie.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_06"); //Moglibysmy uzyc takiego faceta jak ty. To juz drugie zdarzenie. Druga osoba nazywa sie Attila i jest morderca.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_07"); //Jesli bedziemy nadal tak postepowac, obywatele wkrótce beda mogli spac spokojnie.
 
 	if (Mod_Gilde < 1)
 	|| (Mod_Gilde > 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_08"); //Gehöre ich nun zur Miliz?
-		AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_09"); //Bei dir lässt sich eine Ausnahme machen, aber prahle nicht damit rum, sonst werden wir beide Probleme bekommen.
-		AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_10"); //Verstehe.
-		AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_11"); //Gut, hier ist deine Rüstung.
+		AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_08"); //Czy jestem teraz czlonkiem milicji?
+		AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_09"); //Mozesz zrobic wyjatek, ale nie chwalic sie tym, bo oboje bedziemy miec problemy.
+		AI_Output(hero, self, "Info_Mod_Andre_Ramirez_15_10"); //Widze.
+		AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_11"); //Dobrze, oto twoja zbroja.
 
 		CreateInvItems	(self, ItAr_Mil_L, 1);
 		B_GiveInvItems	(self, hero, ItAr_Mil_L, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_12"); //Hier hast du noch das Kopfgeld für Ramirez.
+	AI_Output(self, hero, "Info_Mod_Andre_Ramirez_08_12"); //Oto Twoja laska dla Ramirez.
 
 	CreateInvItems	(self, ItMi_Gold, 1000);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
@@ -1620,7 +1620,7 @@ FUNC VOID Info_Mod_Andre_Ramirez_Info()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Lord Andre denkt, ich hätte Ramirez festgenommen. Ich bin jetzt Mitglied der Miliz. Mal sehen, ob alles so klappt, wie Cassia es geplant hat.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Lord Andre mysli, ze aresztowalem Ramireza. Jestem teraz czlonkiem milicji. Zobaczmy, czy wszystko dziala tak, jak zaplanowala Cassia.");
 };
 
 INSTANCE Info_Mod_Andre_Keller (C_INFO)
@@ -1631,7 +1631,7 @@ INSTANCE Info_Mod_Andre_Keller (C_INFO)
 	information	= Info_Mod_Andre_Keller_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es was zu tun?";
+	description	= "Cokolwiek zrobic?";
 };
 
 FUNC INT Info_Mod_Andre_Keller_Condition()
@@ -1644,15 +1644,15 @@ FUNC INT Info_Mod_Andre_Keller_Condition()
 
 FUNC VOID Info_Mod_Andre_Keller_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Keller_15_00"); //Gibt es was zu tun?
-	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_01"); //Du kommst genau richtig. Einer der Händler hat mir über seltsame Dinge im schlafendem Geldsack berichtet.
-	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_02"); //Nachts sollen aus der Kellertür mehrere merkwürdige Gestalten rausgekommen sein.
-	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_03"); //Geh dieser Sache auf den Grund.
-	AI_Output(hero, self, "Info_Mod_Andre_Keller_15_04"); //Werde ich machen.
+	AI_Output(hero, self, "Info_Mod_Andre_Keller_15_00"); //Cokolwiek zrobic?
+	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_01"); //Jestes na czasie. Jeden z dealerów opowiedzial mi o dziwnych rzeczach w moim spiworze.
+	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_02"); //W nocy z piwnicy wychodzi kilka dziwnych stworzen.
+	AI_Output(self, hero, "Info_Mod_Andre_Keller_08_03"); //Udac sie na dno.
+	AI_Output(hero, self, "Info_Mod_Andre_Keller_15_04"); //Zrobie to.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_ANDRE_HANNA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_ANDRE_HANNA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_HANNA, "Ein Händler scheint gesehen zu haben, wie nachts einige Diebe aus Hanna's Keller gekommen sind. Lord Andre will, dass ich der Sache auf den Grund gehe. Ich sollte mal mit Hanna reden.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_HANNA, "Z piwnicy Hanny najwyrazniej w nocy zlodziei wyszli kupcy. Pan Andre chce, abym dotarl do dna. Powinienem porozmawiac z Hanna.");
 };
 
 INSTANCE Info_Mod_Andre_Hanna (C_INFO)
@@ -1663,7 +1663,7 @@ INSTANCE Info_Mod_Andre_Hanna (C_INFO)
 	information	= Info_Mod_Andre_Hanna_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war im Keller vom schlafendem Geldsack.";
+	description	= "Bylem w piwnicy spiacego worka na pieniadze.";
 };
 
 FUNC INT Info_Mod_Andre_Hanna_Condition()
@@ -1676,16 +1676,16 @@ FUNC INT Info_Mod_Andre_Hanna_Condition()
 
 FUNC VOID Info_Mod_Andre_Hanna_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_00"); //Ich war im Keller vom schlafendem Geldsack.
-	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_01"); //Und was hast du gefunden?
-	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_02"); //In dem dunklen Loch gabs nur Ratten, sonst nichts.
-	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_03"); //Da hat wahrscheinlich der Händler geträumt.
-	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_04"); //Das hat er sicherlich.
-	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_05"); //Gut, hier ist dein Sold.
+	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_00"); //Bylem w piwnicy spiacego worka na pieniadze.
+	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_01"); //A co znalazles?
+	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_02"); //W ciemnej dziurze byly tylko szczury, nic wiecej.
+	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_03"); //Prawdopodobnie wlasnie tam kupiec marzyl.
+	AI_Output(hero, self, "Info_Mod_Andre_Hanna_15_04"); //Z pewnoscia to zrobil.
+	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_05"); //Wszystko w porzadku, oto twoje wynagrodzenie.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_06"); //Komm später wieder, momentan ist alles ruhig.
+	AI_Output(self, hero, "Info_Mod_Andre_Hanna_08_06"); //Pózniej wróc do domu, na razie wszystko jest cicho.
 
 	B_GivePlayerXP	(200);
 
@@ -1702,7 +1702,7 @@ INSTANCE Info_Mod_Andre_NewsMilizDead (C_INFO)
 	information	= Info_Mod_Andre_NewsMilizDead_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist in der Zwischenzeit etwas passiert?";
+	description	= "Czy w miedzyczasie cos sie wydarzylo?";
 };
 
 FUNC INT Info_Mod_Andre_NewsMilizDead_Condition()
@@ -1717,18 +1717,18 @@ FUNC INT Info_Mod_Andre_NewsMilizDead_Condition()
 
 FUNC VOID Info_Mod_Andre_NewsMilizDead_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_00"); //Ist in der Zwischenzeit etwas passiert?
-	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_01"); //Wie es nicht anders kommen konnte vermissen wir zwei Milizen, die seit geraumer Zeit nicht mehr hier sind.
-	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_02"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_03"); //Mortis, unser Schmied, hat uns berichtet, dass Meldor wahrscheinlich irgendein Sumpfkrautgeschäft abzuschließen versucht.
-	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_04"); //Kann ich mich nicht dieser Sache annehmen?
-	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_05"); //Wie es aussieht bist du wohl der Einzige hier. Nun gut, geh und halt die Augen offen nach den zwei Anderen.
+	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_00"); //Czy w miedzyczasie cos sie wydarzylo?
+	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_01"); //Poniewaz nie moglo byc inaczej, tesknimy za dwiema milicjami, które nie byly tu od jakiegos czasu.
+	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_02"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_03"); //Mortis, nasz kowal, powiedzial nam, ze prawdopodobnie Meldor próbuje zamknac jakis biznes chwastów.
+	AI_Output(hero, self, "Info_Mod_Andre_NewsMilizDead_15_04"); //Czy nie moge sie tym zajac?
+	AI_Output(self, hero, "Info_Mod_Andre_NewsMilizDead_08_05"); //Wyglada na to, ze jestes tutaj jedynym. W porzadku, oczy pozostana otwarte dla pozostalych dwóch.
 
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_MILIZANGRIFF, LOG_SUCCESS);
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_ANDRE_MELDOR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_ANDRE_MELDOR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_MELDOR, "Mortis hat Lord Andre etwas von einem Krauthandel von Meldor erzählt. Ich sollte Meldor warnen und eine Lüge erfinden, um ihn zu schützen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_MELDOR, "Mortis powiedzial Lorda Andre' o handlu kapusta w Meldorze. Powinienem ostrzec Meldora i wymyslic klamstwo, aby go chronic.");
 
 	B_Göttergefallen(3, 1);
 };
@@ -1741,7 +1741,7 @@ INSTANCE Info_Mod_Andre_Meldor (C_INFO)
 	information	= Info_Mod_Andre_Meldor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab Meldor beobachtet und durchsucht, war ein falscher Alarm.";
+	description	= "Ogladalem Meldora i przeszukiwalem go, to byl falszywy alarm.";
 };
 
 FUNC INT Info_Mod_Andre_Meldor_Condition()
@@ -1755,16 +1755,16 @@ FUNC INT Info_Mod_Andre_Meldor_Condition()
 
 FUNC VOID Info_Mod_Andre_Meldor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Meldor_15_00"); //Ich hab Meldor beobachtet und durchsucht, war ein falscher Alarm.
-	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_01"); //Wie das letzte Mal. Mortis wird auch immer unverlässlicher.
-	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_02"); //Was soll's hier ist dein Sold.
+	AI_Output(hero, self, "Info_Mod_Andre_Meldor_15_00"); //Ogladalem Meldora i przeszukiwalem go, to byl falszywy alarm.
+	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_01"); //Jak ostatni raz. Mortis równiez staje sie coraz bardziej nierzetelny.
+	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_02"); //Jaka jest twoja zaplata za pieklo?
 
 	CreateInvItems	(self, ItMi_Gold, 200);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
-	AI_Output(hero, self, "Info_Mod_Andre_Meldor_15_03"); //Kann ich auch mal eine etwas ruhigere Stelle bekommen, vielleicht die Gefangenen bewachen?
-	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_04"); //Warum nicht, du hast schon einiges geleistet.
-	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_05"); //Ich werde es der Wache sagen, morgen kannst du dann die Gefangenen bewachen.
+	AI_Output(hero, self, "Info_Mod_Andre_Meldor_15_03"); //Czy moge znalezc cichsze miejsce, moze strzezyc wiezniów?
+	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_04"); //Dlaczego nie, wykonales wiele pracy.
+	AI_Output(self, hero, "Info_Mod_Andre_Meldor_08_05"); //Mówie straznikowi, jutro bedziesz mógl pilnowac wiezniów.
 
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_ANDRE_MELDOR, LOG_SUCCESS);
 
@@ -1795,16 +1795,16 @@ FUNC INT Info_Mod_Andre_RamirezAttilaFlucht_Condition()
 
 FUNC VOID Info_Mod_Andre_RamirezAttilaFlucht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_00"); //Wo warst du? Wo sind die Diebe? Wo ist das gesamte Gold aus meiner Truhe?
-	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_01"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_02"); //Du bist genauso unzuverlässlich wie die anderen zwei, die noch immer nicht da sind. Ich warte auf eine gute Erklärung.
-	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_03"); //Ramirez und Attila haben mich reingelegt. Als sie draußen waren hat Ramirez die Truhe geknackt und ich hab gegen Attila gekämpft.
-	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_04"); //Danach bin ich ihnen hinter gerannt und hab sie verloren.
-	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_05"); //Wie konnte das alles passieren?
-	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_06"); //Ich Weiß nicht, es ging so schnell. Sie sind geflohen und haben sich bei Mortis bedankt!
-	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_07"); //Bei Mortis? Hat er ihnen etwa geholfen?
-	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_08"); //Vielleicht solltest du seine Schmiede genauer anschauen.
-	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_09"); //Ich werde das sofort in Auftrag geben. Komm morgen wieder.
+	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_00"); //Gdzie byles/as? Gdzie sa zlodzieje? Gdzie jest cale zloto z mojej klatki piersiowej?
+	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_01"); //l--
+	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_02"); //Jestes tak niewiarygodny jak pozostale dwie osoby, które jeszcze nie przyszly. Czekam na dobre wyjasnienie.
+	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_03"); //Ramirez i Attyla zorganizowali mnie. Kiedy byli na zewnatrz, Ramirez zlamal tulów i walczylem z Attyla.
+	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_04"); //Potem biegnalem za nimi i stracilem je.
+	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_05"); //Jak to wszystko moglo sie zdarzyc?
+	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_06"); //Nie wiem, to sie stalo tak szybko. Uciekli i podziekowali Mortisowi!
+	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_07"); //Z hipoteka? Pomógl im pomóc?
+	AI_Output(hero, self, "Info_Mod_Andre_RamirezAttilaFlucht_15_08"); //Moze warto przyjrzec sie blizej jego kuzni.
+	AI_Output(self, hero, "Info_Mod_Andre_RamirezAttilaFlucht_08_09"); //I jestem gonna porzadku to teraz. Wróc jutro.
 
 	Mod_Andre_WaitForKnast = Wld_GetDay();
 };
@@ -1831,23 +1831,23 @@ FUNC INT Info_Mod_Andre_MortisBadGuy_Condition()
 
 FUNC VOID Info_Mod_Andre_MortisBadGuy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_00"); //Du hattest Recht, Mortis hatte ein Sumpfkrautpäcken in seiner Truhe versteckt. Er hat uns wahrscheinlich alle auf eine falsche Spur geführt.
-	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_01"); //Wir werden zum größten Gespött der Stadt. Zwei Schwerverbrecher sind uns entwischt, einer unserer eigenen Leute hat uns verraten und das gesamte Gold der Miliz ist verschwunden.
-	AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_02"); //Da kann man nichts mehr ändern.
-	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_03"); //Was hast du nun vor? Dich als Gefängiswache werde ich niemals wieder nehmen.
+	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_00"); //Masz racje, Mortis mial bagazowa torebke na kapuste ukryta w klatce piersiowej. Prawdopodobnie postawil nas wszystkich na niewlasciwym torze.
+	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_01"); //Bedziemy najwiekszym posmiewiskiem w miescie. Dwóch zbrodniarzy ucieklo przed nami, jeden z naszych wlasnych ludzi nas zdradzil, a cale zloto milicji zniknelo.
+	AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_02"); //Nie ma nic, co mozesz z tym zrobic.
+	AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_03"); //Co zamierzasz teraz zrobic? Nigdy nie zabiore Cie z powrotem do wiezienia jako straznika.
 	
 	if (Mod_Gilde < 1)
 	|| (Mod_Gilde > 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_04"); //Ich wollte Bekannt geben, dass ich aus der Stadt reisen will. Deshalb lege ich meinen Milizjob nieder.
-		AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_05"); //Bist du dir da auch wirklich sicher?
-		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_06"); //Ich habe mich schon entschieden.
-		AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_07"); //Nun gut, vergiss nie, dass du hier herzlich Willkommen bist, wenn du wieder von neu anfangen willst.
-		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_08"); //Ich werde es mir merken.
+		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_04"); //Chcialem oglosic, ze chcialem opuscic miasto. Dlatego wlasnie oddaje prace milicji.
+		AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_05"); //Czy jestes o tym naprawde pewien?
+		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_06"); //Zrobilem juz swój umysl.
+		AI_Output(self, hero, "Info_Mod_Andre_MortisBadGuy_08_07"); //Cóz, nigdy nie zapomnij, ze jestes mile widziany, jesli chcesz zaczac.
+		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_08"); //Bede o tym pamietac.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_09"); //Ich werde jetzt meinen anderen Aufgaben nachgehen.
+		AI_Output(hero, self, "Info_Mod_Andre_MortisBadGuy_15_09"); //Bede teraz wykonywal swoje inne prace.
 	};
 
 	var C_Item itm;
@@ -1877,7 +1877,7 @@ INSTANCE Info_Mod_Andre_Rangar (C_INFO)
 	information	= Info_Mod_Andre_Rangar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt Gerüchte über eine Miliz.";
+	description	= "Sa pogloski o milicji.";
 };
 
 FUNC INT Info_Mod_Andre_Rangar_Condition()
@@ -1896,29 +1896,29 @@ FUNC INT Info_Mod_Andre_Rangar_Condition()
 
 FUNC VOID Info_Mod_Andre_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_00"); //Es gibt Gerüchte über eine Miliz.
-	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_01"); //Über wen?
-	AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_02"); //Rangar. Die Bürger erzählen sich da die verschiedensten Sachen.
+	AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_00"); //Sa pogloski o milicji.
+	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_01"); //Co do kogo?
+	AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_02"); //Rangar. Obywatele mówia sobie nawzajem wiele róznych rzeczy.
 
 	if (Mob_HasItems("RANGARSTRUHE", ItMi_HerbPaket) > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_03"); //Außerdem hab ich gesehen, wie er ein Paket Sumpfkraut in seine Truhe gelegt hat.
+		AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_03"); //Poza tym widzialem go, jak w jego pien wkladal paczke bagna.
 
 		B_GivePlayerXP	(150);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_04"); //Außerdem hab ich gesehen, wie er Sumpfkrautstängel in seine Truhe getan hat.
+		AI_Output(hero, self, "Info_Mod_Andre_Rangar_15_04"); //Poza tym widzialem, jak w jego klatke piersiowa wkladal bagniste lodygi.
 
 		B_GivePlayerXP	(100);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_05"); //Ich werde das sofort überprüfen lassen. Danke, dass du mich benachrichtigt hast.
-	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_06"); //Hier ist eine kleine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_05"); //Natychmiast to sprawdze. Dziekuje za powiadomienie mnie.
+	AI_Output(self, hero, "Info_Mod_Andre_Rangar_08_06"); //Oto mala nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Lord Andre wird der Sache mit Rangar nachgehen. Ich sollte jetzt Den bescheid geben.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Pan Andre przeanalizuje sprawe wraz z Rangarem. Powinienem mu do tej pory powiedziec.");
 };
 
 INSTANCE Info_Mod_Andre_Ole (C_INFO)
@@ -1929,7 +1929,7 @@ INSTANCE Info_Mod_Andre_Ole (C_INFO)
 	information	= Info_Mod_Andre_Ole_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir diesen Brief von Ole von der königlichen Garde geben.";
+	description	= "Chce Ci przekazac ten list od Olego Gwardii Królewskiej.";
 };
 
 FUNC INT Info_Mod_Andre_Ole_Condition()
@@ -1944,19 +1944,19 @@ FUNC INT Info_Mod_Andre_Ole_Condition()
 
 FUNC VOID Info_Mod_Andre_Ole_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Ole_15_00"); //Ich soll dir diesen Brief von Ole von der königlichen Garde geben.
+	AI_Output(hero, self, "Info_Mod_Andre_Ole_15_00"); //Chce Ci przekazac ten list od Olego Gwardii Królewskiej.
 
 	B_GiveInvItems	(hero, self, ItWr_OleForAndre, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_01"); //In Ordnung, lass mal sehen.
+	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_01"); //Wszystko w porzadku, zobaczmy.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_02"); //Sag Ole, solange er mir kein Erz garantieren kann, bekommt er auch keine Paladine als zusätzliche Männer zur Verfügung gestellt.
-	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_03"); //Er soll mir mindestens Fünfzig Erzbrocken bringen, als Beweis dass er wieder Erz abbaut, dann können wir über zusätzliche Leute reden.
-	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_04"); //Geh und sag ihm das.
+	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_02"); //Tell Ole, dopóki nie moze mi zagwarantowac rudy, nie dostaje zadnych paladynów jako dodatkowych mezczyzn.
+	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_03"); //Powinien przyniesc mi co najmniej piecdziesiat kawalków rudy, jako dowód na to, ze znowu wydobywa rude, wtedy mozemy mówic o dodatkowych ludziach.
+	AI_Output(self, hero, "Info_Mod_Andre_Ole_08_04"); //Idz i powiedz mu to.
 
-	B_LogEntry	(TOPIC_MOD_KG_OLEBRIEF, "Lord Andre scheint keine Verstärkung zur Garde schicken zu wollen, solange es keine Garantien für Erz gibt. Das wird Ole sicher nicht gefallen.");
+	B_LogEntry	(TOPIC_MOD_KG_OLEBRIEF, "Lord Andre nie chce wysylac zbrojen do straznika, dopóki nie bedzie gwarancji na rude. Jestem pewien, ze Ole nie spodoba sie.");
 };
 
 INSTANCE Info_Mod_Andre_Knast (C_INFO)
@@ -1979,18 +1979,18 @@ FUNC INT Info_Mod_Andre_Knast_Condition()
 
 FUNC VOID Info_Mod_Andre_Knast_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_08_00"); //Du wurdest von einem angesehen Bürger als Verbrecher angezeigt. Was hast du zu dieser Anschuldigung zu sagen?
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_08_00"); //Zostales zgloszony jako zbrodni przez szanowanego obywatela. Co masz do powiedzenia na temat tego oskarzenia?
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Gibt es irgendwelche Beweise gegen mich?", Info_Mod_Andre_Knast_C);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich bin kein Verbrecher.", Info_Mod_Andre_Knast_B);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Dieser Bürger ist ein Betrüger.", Info_Mod_Andre_Knast_A);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Czy sa jakies dowody przeciwko mnie?", Info_Mod_Andre_Knast_C);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Nie jestem przestepca.", Info_Mod_Andre_Knast_B);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Ten obywatel jest zdradzajacy.", Info_Mod_Andre_Knast_A);
 };
 
 FUNC VOID Info_Mod_Andre_Knast_Ok ()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_Ok_08_00"); //Ich werde das nachprüfen. Danke für deine Antworten.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_Ok_08_00"); //Sprawdze to. Dziekuje za odpowiedzi.
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
@@ -2001,62 +2001,62 @@ FUNC VOID Info_Mod_Andre_Knast_Ok ()
 
 FUNC VOID Info_Mod_Andre_Knast_C ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_15_00"); //Gibt es irgendwelche Beweise gegen mich?
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_C_08_01"); //Es ist nicht schwer eine Bestätigung dafür zu bekommen, dass du aus der Strafkolonie stammst, und die Mitglieder des Alten Lagers sind noch immer alles andere als seriöse Geschäftsleute, somit bist du nachweislich Mitglied einer kriminellen Vereinigung.
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_15_00"); //Czy sa jakies dowody przeciwko mnie?
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_C_08_01"); //Nietrudno jest uzyskac potwierdzenie, ze jestes z kolonii karnej, a czlonkowie Starego Obozu nadal sa jedynie powaznymi biznesmenami, wiec jestes weryfikowalnym czlonkiem organizacji przestepczej.
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich wurde von Alissandro, einem Bekannten von Lord Hagen, geschickt.", Info_Mod_Andre_Knast_C_B);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo trägt die Waffe eines Dämonenritters.", Info_Mod_Andre_Knast_C_A);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Wyslal mnie Alissandro, znajomy Pana Hagena.", Info_Mod_Andre_Knast_C_B);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo nosi bron demonicznego rycerza.", Info_Mod_Andre_Knast_C_A);
 };
 
 FUNC VOID Info_Mod_Andre_Knast_C_B ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_B_15_00"); //Ich wurde von Alissandro, einem Bekannten von Lord Hagen, geschickt.
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_B_15_00"); //Wyslal mnie Alissandro, znajomy Pana Hagena.
 	
 	Info_Mod_Andre_Knast_Ok();
 };
 
 FUNC VOID Info_Mod_Andre_Knast_C_A ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_A_15_00"); //Bodo trägt die Waffe eines Dämonenritters.
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_C_A_15_00"); //Bodo nosi bron demonicznego rycerza.
 	
 	Info_Mod_Andre_Knast_Ok();
 };
 
 FUNC VOID Info_Mod_Andre_Knast_B ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_B_15_00"); //Ich bin kein Verbrecher.
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_B_08_01"); //Hast du dafür irgendwelche Beweise oder sind diese Behauptungen aus der Luft gegriffen?
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_B_15_00"); //Nie jestem przestepca.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_B_08_01"); //Czy posiadasz jakies dowody na to, czy tez zarzuty te sa przenoszone droga powietrzna?
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich bin allerdings kein Verbrecher, Im Gegensatz zu Bodo.", Info_Mod_Andre_Knast_AB_C);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich wurde von Alissandro, einem Bekannten von Lord Hagen, geschickt.", Info_Mod_Andre_Knast_C_B);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo trägt die Waffe eines Dämonenritters.", Info_Mod_Andre_Knast_C_A);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Nie jestem jednak przestepca, w przeciwienstwie do Bodo.", Info_Mod_Andre_Knast_AB_C);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Wyslal mnie Alissandro, znajomy Pana Hagena.", Info_Mod_Andre_Knast_C_B);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo nosi bron demonicznego rycerza.", Info_Mod_Andre_Knast_C_A);
 };
 
 FUNC VOID Info_Mod_Andre_Knast_A ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_A_15_00"); //Dieser Bürger ist ein Betrüger.
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_A_08_01"); //Hast du dafür irgendwelche Beweise oder sind diese Behauptungen aus der Luft gegriffen?
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_A_15_00"); //Ten obywatel jest zdradzajacy.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_A_08_01"); //Czy posiadasz jakies dowody na to, czy tez zarzuty te sa przenoszone droga powietrzna?
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich bin allerdings kein Verbrecher, Im Gegensatz zu Bodo.", Info_Mod_Andre_Knast_AB_C);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich wurde von Alissandro, einem Bekannten von Lord Hagen, geschickt.", Info_Mod_Andre_Knast_C_B);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo trägt die Waffe eines Dämonenritters.", Info_Mod_Andre_Knast_C_A);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Nie jestem jednak przestepca, w przeciwienstwie do Bodo.", Info_Mod_Andre_Knast_AB_C);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Wyslal mnie Alissandro, znajomy Pana Hagena.", Info_Mod_Andre_Knast_C_B);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo nosi bron demonicznego rycerza.", Info_Mod_Andre_Knast_C_A);
 };
 
 FUNC VOID Info_Mod_Andre_Knast_AB_C ()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Knast_AB_C_15_00"); //Ich bin allerdings kein Verbrecher, Im Gegensatz zu Bodo.
-	AI_Output(self, hero, "Info_Mod_Andre_Knast_AB_C_08_01"); //Kannst du das beweisen?
+	AI_Output(hero, self, "Info_Mod_Andre_Knast_AB_C_15_00"); //Nie jestem jednak przestepca, w przeciwienstwie do Bodo.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast_AB_C_08_01"); //Czy moze pan to udowodnic?
 	
 	Info_ClearChoices	(Info_Mod_Andre_Knast);
 
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Ich wurde von Alissandro, einem Bekannten von Lord Hagen, geschickt.", Info_Mod_Andre_Knast_C_B);
-	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo trägt die Waffe eines Dämonenritters.", Info_Mod_Andre_Knast_C_A);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Wyslal mnie Alissandro, znajomy Pana Hagena.", Info_Mod_Andre_Knast_C_B);
+	Info_AddChoice	(Info_Mod_Andre_Knast, "Bodo nosi bron demonicznego rycerza.", Info_Mod_Andre_Knast_C_A);
 };
 
 INSTANCE Info_Mod_Andre_Knast2 (C_INFO)
@@ -2080,15 +2080,15 @@ FUNC INT Info_Mod_Andre_Knast2_Condition()
 
 FUNC VOID Info_Mod_Andre_Knast2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Knast2_08_00"); //Wir haben deine Aussagen überprüft und sie scheinen korrekt zu sein. Ich entschuldige mich für die Umstände die wir dir bereitet haben.
-	AI_Output(self, hero, "Info_Mod_Andre_Knast2_08_01"); //Lord Hagen wird dich empfangen, weiterhin weise ich dich daraufhin dass der Bürger Bodo die Stadt verlassen hat.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast2_08_00"); //Sprawdzilismy wasze wypowiedzi i wydaja sie one poprawne. Przepraszam za spowodowane przez nas niedogodnosci.
+	AI_Output(self, hero, "Info_Mod_Andre_Knast2_08_01"); //Pan Hagen przyjmie cie i chcialbym zauwazyc, ze obywatel Bodo opuscil miasto.
 
 	if (Wld_IsMobAvailable(self,"LEVER"))
 	{
 		AI_UseMob (self, "LEVER", 1);
 	};
 
-	B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Ich habe ihm alles erzählt und wurde wieder freigelassen. Lord Hagen empfängt mich nun.");
+	B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Powiedzialem mu wszystko i zostalem zwolniony. Pan Hagen zobaczy mnie teraz.");
 
 	B_StartOtherRoutine	(Mod_516_SNOV_Bodo_NW, "TOT");
 
@@ -2103,7 +2103,7 @@ INSTANCE Info_Mod_Andre_Steinmonster (C_INFO)
 	information	= Info_Mod_Andre_Steinmonster_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind die fünfzig Erzbrocken als Beweis.";
+	description	= "Oto piecdziesiat kawalków rudy do udowodnienia.";
 };
 
 FUNC INT Info_Mod_Andre_Steinmonster_Condition()
@@ -2117,17 +2117,17 @@ FUNC INT Info_Mod_Andre_Steinmonster_Condition()
 
 FUNC VOID Info_Mod_Andre_Steinmonster_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster_15_00"); //Hier sind die fünfzig Erzbrocken als Beweis. Wie sieht es jetzt aus mit der Verstärkung?
+	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster_15_00"); //Oto piecdziesiat kawalków rudy do udowodnienia. A co z kopia zapasowa teraz?
 
 	B_GiveInvItems	(hero, self, ItMi_ErzPaketAndre, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_01"); //Ah, sehr schön. Nun gut, ich glaube, es lohnt sich in die Mine zu investieren.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_02"); //Vor kurzem ist der Paladin Trent von den Südlichen Inseln bei uns angekommen. Ich denke, er ist genau der richtige für den Job.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_03"); //Leider hat er sich bisher noch nicht bei mir gemeldet. Du solltest als erstes im Hafenviertel nach ihm suchen.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_04"); //Bring ihn danach erst einmal zu mir, ich werde dann alles weitere mit ihm klären.
-	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster_15_05"); //Na schön, dann werd ich mal nach ihm suchen.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_01"); //Ach, bardzo milo. Mysle, ze warto zainwestowac w kopalnie.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_02"); //Niedawno przybyl Paladin Trent z Wysp Poludniowych. Mysle, ze ma racje do pracy.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_03"); //Niestety, nie skontaktowal sie jeszcze ze mna. Powinienes go najpierw szukac na nabrzezu.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster_08_04"); //Przynies go do mnie po tym, ja to z nim zalatwie.
+	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster_15_05"); //W porzadku, bede szukal go.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Der Paladin Trent soll mir in der Mine helfen, jedoch ist er noch nicht bei Lord Andre aufgetaucht. Ich sollte mich im Hafenviertel bei den anderen Paladinen umsehen.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Paladin Trent ma mi pomóc w mojej kopalni, ale jeszcze nie pokazal sie Panu Androwi. Powiedziano mi, ze powinienem szukac innych paladynów na nabrzezu.");
 };
 
 INSTANCE Info_Mod_Andre_Steinmonster2 (C_INFO)
@@ -2150,14 +2150,14 @@ FUNC INT Info_Mod_Andre_Steinmonster2_Condition()
 
 FUNC VOID Info_Mod_Andre_Steinmonster2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_00"); //Und, hast du ihn gefunden?
-	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_01"); //Gefunden habe ich ihn, allerdings ist er schon ins Minental aufgebrochen.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_02"); //Wie? Ich verstehe nicht richtig, er sollte sich doch zuerst bei mir melden.
-	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_03"); //Anscheinend wollte er lieber handeln als reden.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_04"); //Was fällt ihm ein, den Befehl eines Vorgesetzten zu missachten? Er soll sich unverzüglich bei mir melden, ansonsten bin ich gezwungen in zu degradieren.
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_05"); //Ich weiß, dass er viele Auszeichnungen in Myrtana bekommen hat, aber so kann er sich mir gegenüber nicht verhalten.
-	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_06"); //Glaubst du nicht, dass du ein wenig überreagierst?
-	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_07"); //Keineswegs. Er hat sich nach meinen Regeln zu richten. Und nun geh und überbring ihm das.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_00"); //No cóz, czy go znalazles?
+	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_01"); //Znalazlem go, ale on juz wyjechal do Minentala.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_02"); //Jak? Nie rozumiem, mial sie najpierw skontaktowac ze mna.
+	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_03"); //Najwyrazniej chcial raczej dzialac niz mówic.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_04"); //Co przychodzi mu do glowy, aby nie wypelniac rozkazu przelozonego? Powiedz mu natychmiast skontaktowac sie ze mna, w przeciwnym razie jestem zmuszony go zdemotowac.
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_05"); //Wiem, ze otrzymal on wiele nagród w Myrtanie, ale nie moze sie zachowywac wobec mnie.
+	AI_Output(hero, self, "Info_Mod_Andre_Steinmonster2_15_06"); //Nie sadzisz, ze troche za bardzo reagujesz?
+	AI_Output(self, hero, "Info_Mod_Andre_Steinmonster2_08_07"); //W ogóle nie. Musi przestrzegac moich zasad. Teraz udaj sie do niego i dostarcz go.
 };
 
 INSTANCE Info_Mod_Andre_Trent (C_INFO)
@@ -2180,23 +2180,23 @@ FUNC INT Info_Mod_Andre_Trent_Condition()
 
 FUNC VOID Info_Mod_Andre_Trent_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_00"); //Was hast du dir eigentlich dabei gedacht, aus einem meiner Paladine ein psychisches Wrack zu machen?
-	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_01"); //Er wurde durch schwarzes Erz verflucht, wie hätte man das denn wissen können?
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_02"); //Indem man bei mir eine Vorbesprechung macht!
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_03"); //Aber gut, ihr habt ja die Mine zum Laufen gebracht, und du bist bei dieser Mission nicht mir, sondern Hymir zugeteilt gewesen.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_04"); //Der Paladin Trent allerdings muss mit den Konsequenzen leben.
-	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_05"); //Was sollen das für Konsequenzen sein?
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_06"); //Nun ja, ich habe volle Befehlsgewalt über ihn, und deswegen führt er jetzt einen Spionagetrupp im Minental an, um herauszufinden, was der nächste Schritt der Orks ist.
-	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_07"); //Und wo genau sollen sie spionieren?
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_08"); //In der Nähe des alten Kastells, am großen See, wo der alte Turm des Dämonenbeschwörers ist. Dort scheinen die Orks eine Art Ritualstätte gebaut zu haben.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_09"); //Wenn du willst kannst du sie unterstützen. Damit kannst du auch mein Vertrauen wiedergewinnen.
-	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_10"); //Wenn es sein muss.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_00"); //Co myslales o przeksztalceniu jednej z paladynów w wrak psychiczny?
+	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_01"); //Zostal przeklety czarna ruda, jak ktos mógl wiedziec?
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_02"); //Poprzez wstepne spotkanie ze mna!
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_03"); //Ale cóz, dostales moja kopalnie do pracy i nie zostales przydzielony do mnie na te misje, ale do Hymira.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_04"); //Paladyn Trent musi jednak poniesc konsekwencje.
+	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_05"); //Jakie sa konsekwencje?
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_06"); //No cóz, ja mam nad nim pelne polecenie i dlatego prowadzi teraz w Minentalu szpiegostwo, aby dowiedziec sie, co to jest nastepny ruch Orków.
+	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_07"); //A gdzie dokladnie maja szpiegowac?
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_08"); //W poblizu starego fortu, nad duzym jeziorem, nad którym znajduje sie stara wieza demoniczna. Orkiestry zdaja sie budowac tam swego rodzaju miejsce rytualu.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent_08_09"); //Jesli chcesz, mozesz je poprzec. Równiez dzieki temu mozna odzyskac moje zaufanie.
+	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_10"); //Jezeli musze.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_11"); //(zu sich selbst) Sich bei mir beschweren, aber ein psychisches Wrack mitten ins Orkgebiet schicken ...
+	AI_Output(hero, self, "Info_Mod_Andre_Trent_15_11"); //(samo siebie) Complain do mnie, ale wyslij wrak psychiczny na srodek rejonu orka.....
 
-	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Ich sollte Trent bei seiner Spionagemission im Minental unterstützen. Er müsste irgendwo in der Nähe des alten Kastells bei Xardas' altem Turm sein.");
+	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Mialem pomagac Trentowi z jego szpiegowska misja w Minentalu. Powinien byc gdzies w poblizu starego fortu na starej wiezy Xardasa.");
 };
 
 INSTANCE Info_Mod_Andre_Trent2 (C_INFO)
@@ -2219,18 +2219,18 @@ FUNC INT Info_Mod_Andre_Trent2_Condition()
 
 FUNC VOID Info_Mod_Andre_Trent2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_00"); //Ist jetzt schon ein paar Tage her, was gibt es denn Neues von den Orks.
-	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_01"); //Die Orks in der Höhle sind tot. Sie wurden von einem Schamanen angeführt, der einige fiese Sachen drauf hatte.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_02"); //Das klingt doch gut, wenn der Job erledigt ist. Wo sind dann die anderen?
-	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_03"); //Sie sind alle tot! Drei von ihnen waren schon tot, als ich ankam, der Rest wurde durch die Magie des Schamanen getötet.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_04"); //Und was ist mit dem Paladin?
-	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_05"); //Er war während des ganzen Kampfes nicht bei der Sache und hat im richtigen Moment nicht aufgepasst. Er hätte sich vielleicht erst mal erholen sollen.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_06"); //Nun, trotz alledem ist es einen gute Nachricht, die Orks tot zu wissen.
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_07"); //Hier, 500 Goldmünzen sollten dich der Verluste entschädigen.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_00"); //Minelo juz kilka dni, wiec co nowego z orków?
+	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_01"); //Orki w jaskini sa martwe. Prowadzil ich szaman z jakims nieprzyjemnym rzeczownikiem.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_02"); //Brzmi to dobrze, gdy zadanie zostalo wykonane. Gdzie sa inni?
+	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_03"); //Oni wszyscy umarli! Trzech z nich juz nie zylo, a reszta zostala zabita magia szamana.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_04"); //A co z Paladyniem?
+	AI_Output(hero, self, "Info_Mod_Andre_Trent2_15_05"); //Nie byl tam przez caly czas walki i nie zwracal uwagi w odpowiednim momencie. Moze najpierw powinien byl odzyskac zdrowie.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_06"); //Cóz, mimo wszystko, to dobra wiadomosc, ze orki nie zyja.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_07"); //Tutaj 500 zlotych monet mialo zrekompensowac Ci straty.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_08"); //Wir werden bald mit unseren Leute die verlassene Mine übernehmen, aber natürlich erhältst du weiterhin deinen Anteil.
+	AI_Output(self, hero, "Info_Mod_Andre_Trent2_08_08"); //Wkrótce przejmiemy opuszczona kopalnie wraz z naszymi narodami, ale oczywiscie nadal otrzymasz swój udzial.
 
 	B_GivePlayerXP	(500);
 };
@@ -2255,16 +2255,16 @@ FUNC INT Info_Mod_Andre_Mario_Condition()
 
 FUNC VOID Info_Mod_Andre_Mario_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_00"); //Wir müssen uns mal ernsthaft über deine Rolle bei Marios Verschwinden unterhalten.
-	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_01"); //Was soll ich denn darüber wissen?
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_02"); //Du warst einer seiner engsten Vertrauten. Hat er dir irgendwas erzählt, bevor er geflohen ist?
-	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_03"); //Nein, ich kann mich nicht erinnern.
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_04"); //Er hat einen Triebtäter aus dem Gefängnis befreit und konnte dann unbemerkt entwischen.
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_05"); //Keine Wache der Miliz in der ganzen Stadt kann sich erinnern, ihn gesehen zu haben.
-	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_06"); //Dann hat er vielleicht einen geheimen Weg genommen? Mit einem Boot hinaus aufs Meer?
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_07"); //Ich weiß es nicht. Aber ich werde diesen Weg nun verstärkt kontrollieren.
-	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_08"); //War's das dann?
-	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_09"); //Ja, hau schon ab.
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_00"); //Musimy powaznie porozmawiac o waszej roli w zniknieciu Mario.
+	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_01"); //Co chcesz, abym o tym wiedzial?
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_02"); //Byles jednym z jego najblizszych powierników. Czy powiedzial ci cos przed ucieczka?
+	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_03"); //Nie, nie pamietam.
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_04"); //Uwolnil przestepce od wiezienia, a nastepnie uciekl niezauwazony.
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_05"); //Zaden straznik milicji w calym miescie nie pamieta jego obecnosci.
+	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_06"); //Moze wiec poszedl tajemnicza sciezka? Lódz na morzu?
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_07"); //Nie wiem, panie posle. Ale teraz wzmocnie swoja kontrole nad ta droga.
+	AI_Output(hero, self, "Info_Mod_Andre_Mario_15_08"); //Czy to zatem jest?
+	AI_Output(self, hero, "Info_Mod_Andre_Mario_08_09"); //Tak, wyjdz stad.
 };
 
 INSTANCE Info_Mod_Andre_TomKraut (C_INFO)
@@ -2275,7 +2275,7 @@ INSTANCE Info_Mod_Andre_TomKraut (C_INFO)
 	information	= Info_Mod_Andre_TomKraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich wollte Tom freikaufen.";
+	description	= "Chcialem kupic Tomka.";
 };
 
 FUNC INT Info_Mod_Andre_TomKraut_Condition()
@@ -2288,13 +2288,13 @@ FUNC INT Info_Mod_Andre_TomKraut_Condition()
 
 FUNC VOID Info_Mod_Andre_TomKraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut_15_00"); //Ich wollte Tom freikaufen.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_01"); //Diesen Verbrecher freikaufen? So leicht ist das in diesem Fall nicht zu regeln.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_02"); //Es gab schon zuvor einige Indizien, dass er in das Sumpfkrautgeschäft innerhalb unserer Stadtmauern verstrickt ist ... aber eben nicht genug, um ihn dingfest zu machen.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_03"); //Die Sumpfkrautpflanzen, die er hier einschmuggeln wollte, sind nun endlich der handfeste Beweis seiner Verwicklungen ins kriminelle Milieu.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_04"); //Er wird hier seine Strafe absitzen, bis er schwarz wird. Und nun behellige mich nicht weiter damit.
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut_15_00"); //Chcialem kupic Tomka.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_01"); //Kup ten przestepca? W tym przypadku nie jest tak latwo sobie poradzic.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_02"); //Byly juz pewne dowody na to, ze jest zaangazowany w chwasty w obrebie naszych murów miejskich..... ale nie wystarczy, aby go aresztowac.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_03"); //Rosliny chwastów, które chcial przemycac tutaj, sa wreszcie namacalnym dowodem jego zaangazowania w dzialalnosc przestepcza.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut_08_04"); //Swoja kare odbierze tutaj, dopóki nie stanie sie czarny. I teraz juz wiecej mnie nie martwcie.
 
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Nun, dass sieht nicht gut aus. Andre ist fest entschlossen Tom im Gefängnis zu lassen. Ich sollte ihm die Situation erklären ...");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Cóz, to nie wyglada dobrze. Andre jest zdecydowany trzymac Tomka w wiezieniu. Powinienem mu wyjasnic sytuacje......");
 };
 
 INSTANCE Info_Mod_Andre_TomKraut2 (C_INFO)
@@ -2320,15 +2320,15 @@ FUNC INT Info_Mod_Andre_TomKraut2_Condition()
 
 FUNC VOID Info_Mod_Andre_TomKraut2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_00"); //He, was machst du wieder hier?
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_01"); //Ich zweifele an Toms Schuld.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_02"); //(verärgert) Ich glaube wirklich, ich muss dich vorerst dieser Räumlichkeiten verweisen.
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_03"); //Tom meinte, er habe nur irgendwelches Unkraut gesammelt, dass Sumpfkraut ähnlich sehe.
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_04"); //Er sei dann aber so eingeschüchtert gewesen, dass er sich nicht getraut habe es zu sagen.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_05"); //(um Fassung ringend) Das ... das ist ja wirklich die Höhe.
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_06"); //Ich meine das ernst ... vielleicht könnte ja eine Kräuterkundiger ...
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_07"); //(die Wut unterdrückend) In Ordnung. Ich werde jemanden holen.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_08"); //Aber ich will dir schon sagen: Das wird ein Nachspiel haben. Und jetzt raus hier!
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_00"); //Hej, co ty tu robisz?
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_01"); //Watpie w wine Tomka.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_02"); //Naprawde sadze, ze na razie musze pana wyrzucic z tych przeslanek.
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_03"); //Tomek powiedzial, ze wlasnie zbiera kilka chwastów, które wygladaja jak chwast bagienny.
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_04"); //Byl jednak tak zastraszony, ze nie odwazyl sie to powiedziec.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_05"); //(wrestling over) The.... to jest wysokosc.
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut2_15_06"); //Jestem powazny..... Moze zielarz móglby ci powiedziec.....
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_07"); //(dostarczajace zlosc) Wszystkie sluszne. Dostane kogos.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut2_08_08"); //Chce jednak panstwu powiedziec, ze pojawia sie reperkusje. Teraz wyjdz z tego miejsca!
 
 	AI_StopProcessInfos	(self);
 
@@ -2337,10 +2337,10 @@ FUNC VOID Info_Mod_Andre_TomKraut2_Info()
 
 FUNC VOID Info_Mod_Andre_TomKraut5()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut5_15_00"); //Dann kommt Tom jetzt frei?
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut5_08_01"); //Ja, ja, bald. Nur noch einige Formalitäten ... und etwas mit den Torwachen zu klären ...
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut5_15_00"); //Wiec Tomek wychodzi teraz?
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut5_08_01"); //Tak, tak, tak, wkrótce. Pozostalo tylko kilka formalnosci...... i uporzadkowac cos z bramistrzami.....
 
-	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Tom sollte bald wieder auf freiem Fuß sein.");
+	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Tomek powinien wkrótce wyjsc.");
 
 	B_GivePlayerXP	(400);
 
@@ -2369,8 +2369,8 @@ FUNC INT Info_Mod_Andre_TomKraut3_Condition()
 
 FUNC VOID Info_Mod_Andre_TomKraut3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut3_08_00"); //(verlegen) Ähhm ... es scheint, als habe es hier ein unglückliches Missverständnis gegeben.
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut3_08_01"); //Das vermeintliche Sumpfkraut ... es war tatsächlich nur gewöhnliches Unkraut.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut3_08_00"); //(laying) Uh........ wydaje sie, ze doszlo tu do niefortunnego nieporozumienia.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut3_08_01"); //Rzekomy chwast marshowy..... byl to wlasciwie zwykly chwast.
 
 	Info_Mod_Andre_TomKraut5();
 
@@ -2400,7 +2400,7 @@ FUNC INT Info_Mod_Andre_TomKraut4_Condition()
 
 FUNC VOID Info_Mod_Andre_TomKraut4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_00"); //(zu sich selbst) Hmm, merkwürdig, das mit den Torwachen ... ich sollte man schauen, ob da auch wirklich Kraut in der Truhe ist.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_00"); //Sam w sobie Hmm, dziwny, ten z brama.... Powinienem zobaczyc, czy w klatce piersiowej jest jakies ziolo.
 
 	AI_UseMob	(self, "CHESTBIG", 1);
 	AI_UseMob	(self, "CHESTBIG", -1);
@@ -2409,9 +2409,9 @@ FUNC VOID Info_Mod_Andre_TomKraut4_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_01"); //(zu sich selbst) So was aber auch ... kein Kraut.
-	AI_Output(hero, self, "Info_Mod_Andre_TomKraut4_15_02"); //Dann ist Tom also unschuldig?
-	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_03"); //(überrascht) Ähhm ... ja ... es scheint ganz so, als hätte es da wohl einige Missverständnisse gegeben.
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_01"); //(sama w sobie) Ale cos takiego tez...... brak ziól.
+	AI_Output(hero, self, "Info_Mod_Andre_TomKraut4_15_02"); //Wiec niewinny Toma?
+	AI_Output(self, hero, "Info_Mod_Andre_TomKraut4_08_03"); //(z zaskoczeniem) Um..... tak wydaje sie, ze doszlo do pewnych nieporozumien.
 
 	Info_Mod_Andre_TomKraut5();
 
@@ -2426,7 +2426,7 @@ INSTANCE Info_Mod_Andre_HaradLehrling (C_INFO)
 	information	= Info_Mod_Andre_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein Anliegen wegen Harad vorzutragen.";
+	description	= "Mam prosbe o wystapienie w sprawie Harada.";
 };
 
 FUNC INT Info_Mod_Andre_HaradLehrling_Condition()
@@ -2440,12 +2440,12 @@ FUNC INT Info_Mod_Andre_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Andre_HaradLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling_15_00"); //Ich habe ein Anliegen wegen Harad vorzutragen.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_01"); //Dann sprich!
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling_15_02"); //Harad soll freikommen. Er hat kein Verbrechen begangen.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_03"); //Wenn dem nur so wäre!
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_04"); //Wir können es uns nicht leisten, dass unser einziger Schmied in der Stadt unsere Konkurrenten beliefert. Das ist nicht schön, aber nicht zu ändern.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_05"); //Und da er sich nicht einsichtig zeigt, müssen wir ihn wenigstens davon abhalten, uns weiter zu schaden.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling_15_00"); //Mam prosbe o wystapienie w sprawie Harada.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_01"); //Potem mówcie!
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling_15_02"); //Powiedz Haradowi, aby wyszedl na wolnosc. Nie popelnil zadnego przestepstwa.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_03"); //Gdyby tylko tak bylo!
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_04"); //Nie mozemy sobie pozwolic na to, aby nasz jedyny kowal w miescie zaopatrywal naszych konkurentów. To nie jest ladne, ale nie mozna tego zmienic.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling_08_05"); //A poniewaz on nie wykazuje zrozumienia, musimy mu przynajmniej zapobiec dalszemu szkodzeniu nam.
 };
 
 INSTANCE Info_Mod_Andre_HaradLehrling2 (C_INFO)
@@ -2456,7 +2456,7 @@ INSTANCE Info_Mod_Andre_HaradLehrling2 (C_INFO)
 	information	= Info_Mod_Andre_HaradLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wenn er wieder für die Paladine schmieden würde... dann würdet ihr ihn freilassen?";
+	description	= "Gdyby znowu za paladynów wykuwal.... Czy go uwolnilbys?";
 };
 
 FUNC INT Info_Mod_Andre_HaradLehrling2_Condition()
@@ -2469,13 +2469,13 @@ FUNC INT Info_Mod_Andre_HaradLehrling2_Condition()
 
 FUNC VOID Info_Mod_Andre_HaradLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling2_15_00"); //Wenn er wieder für die Paladine schmieden würde... dann würdet ihr ihn freilassen?
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_01"); //Wenn er es versprechen würde, müsste man darüber nachdenken.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_02"); //Immerhin brauchen wir dringend neuen Waffennachschub.
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling2_15_03"); //Ich werde mal sehen, was sich machen lässt.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_04"); //Viel Glück.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling2_15_00"); //Gdyby znowu za paladynów wykuwal.... Czy go uwolnilbys?
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_01"); //Jesli obiecal, trzeba by sie nad tym zastanowic.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_02"); //W koncu pilnie potrzebujemy nowych dostaw broni.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling2_15_03"); //Zobacze, co moge zrobic.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling2_08_04"); //Zycze powodzenia.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Ich muss Harad davon überzeugen, für die Paladine zu arbeiten. Nur dann lassen sie ihn frei.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Musze przekonac Harada do pracy dla Paladynów. Tylko wtedy go zwolnia.");
 };
 
 INSTANCE Info_Mod_Andre_HaradLehrling3 (C_INFO)
@@ -2486,7 +2486,7 @@ INSTANCE Info_Mod_Andre_HaradLehrling3 (C_INFO)
 	information	= Info_Mod_Andre_HaradLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe mich von Harad losgesagt und bin jetzt selbstständig.";
+	description	= "Oderwalem sie od Harada i teraz pracuje na wlasny rachunek.";
 };
 
 FUNC INT Info_Mod_Andre_HaradLehrling3_Condition()
@@ -2499,12 +2499,12 @@ FUNC INT Info_Mod_Andre_HaradLehrling3_Condition()
 
 FUNC VOID Info_Mod_Andre_HaradLehrling3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling3_15_00"); //Ich habe mich von Harad losgesagt und bin jetzt selbstständig.
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling3_15_01"); //Kann ich der Miliz und den Paladinen behilflich sein?
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_02"); //Das ist eine gute Nachricht. Ja, tatsächlich, wir haben momentan enormen Bedarf.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_03"); //Die Schwerter der Milizionäre und Paladine könnten fast sämtlich gegen neuere getauscht werden.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_04"); //Ich beauftrage dich hiermit mit der Anfertigung von sieben Edlen Schwertern, fünf Edlen Langschwertern und drei Rubinklingen.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_05"); //Die Waffen kannst du mir bringen, sobald sie fertig sind.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling3_15_00"); //Oderwalem sie od Harada i teraz pracuje na wlasny rachunek.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling3_15_01"); //Czy moge pomóc milicji i paladynom?
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_02"); //To dobra wiadomosc. Tak, tak naprawde wlasnie teraz mamy ogromne potrzeby.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_03"); //Miecze milicjantów i paladynów mozna bylo prawie wszystkie wymieniac na nowsze.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_04"); //Niniejszym powierzam Panu wykonanie siedmiu szlachetnych mieczy, pieciu szlachetnych szlachetnych dlugopisów i trzech rubinowych ostrzy.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_08_05"); //Mozesz przywiezc mi bron zaraz po jej przygotowaniu.
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_SUCCESS);
 };
@@ -2517,7 +2517,7 @@ INSTANCE Info_Mod_Andre_HaradLehrling4 (C_INFO)
 	information	= Info_Mod_Andre_HaradLehrling4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, die Waffenlieferung.";
+	description	= "Tu dostawa ramion.";
 };
 
 FUNC INT Info_Mod_Andre_HaradLehrling4_Condition()
@@ -2629,20 +2629,20 @@ FUNC INT Info_Mod_Andre_HaradLehrling4_Condition()
 
 FUNC VOID Info_Mod_Andre_HaradLehrling4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling4_15_00"); //Hier, die Waffenlieferung.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling4_15_00"); //Tu dostawa ramion.
 
-	B_ShowGivenThings	("7 Edle Schwerter, 5 Edle Langschwerter und 3 Rubinklingen gegeben");
+	B_ShowGivenThings	("7 szlachetnych mieczy, 5 szlachetnych szlachetnych mieczy i 3 rubinowe ostrza.");
 
 	Npc_RemoveInvItems	(hero, ItMw_Schwert1, 7);
 	Npc_RemoveInvItems	(hero, ItMw_Schwert4, 5);
 	Npc_RemoveInvItems	(hero, ItMw_Rubinklinge, 3);
 
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_01"); //Saubere Arbeit. Deine Fertigkeiten sind beeindruckend.
-	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling4_15_02"); //Gibt es noch mehr zu tun?
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_03"); //Gerade nicht. Sollte sich etwas ergeben, werde ich dir aber wieder Bescheid geben.
-	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_04"); //Danke noch mal für deine Zusammenarbeit.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_01"); //Czysta praca. Twoje umiejetnosci robia wrazenie.
+	AI_Output(hero, self, "Info_Mod_Andre_HaradLehrling4_15_02"); //Czy jest jeszcze cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_03"); //Nie teraz. Jesli cos sie pojawi, to powiem ci jeszcze raz.
+	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_08_04"); //Jeszcze raz dziekuje za wspólprace.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Lord Andre gab mir den Auftrag, sieben Edle Schwerter, fünf Edle Langschwerter und drei Rubinklingen zu schmieden. An die Arbeit!");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Pan Andre polecil mi, abym wykul siedem szlachetnych mieczy, piec szlachetnych lingwistów i trzy rubinowe ostrza. Do pracy!");
 
 	B_GivePlayerXP	(1000);
 
@@ -2657,7 +2657,7 @@ INSTANCE Info_Mod_Andre_Kompass (C_INFO)
 	information	= Info_Mod_Andre_Kompass_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe diesen goldenen Kompass gefunden.";
+	description	= "Znalazlem ten zloty kompas.";
 };
 
 FUNC INT Info_Mod_Andre_Kompass_Condition()
@@ -2670,14 +2670,14 @@ FUNC INT Info_Mod_Andre_Kompass_Condition()
 
 FUNC VOID Info_Mod_Andre_Kompass_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kompass_15_00"); //Ich habe diesen goldenen Kompass gefunden.
+	AI_Output(hero, self, "Info_Mod_Andre_Kompass_15_00"); //Znalazlem ten zloty kompas.
 
 	B_GiveInvItems	(hero, self, ItMi_GoldKompass, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_01"); //Zeig mal ... Das ist er, der Kompass der Esmeralda. Vortrefflich! Hmm, und der Dieb?
-	AI_Output(hero, self, "Info_Mod_Andre_Kompass_15_02"); //Er hat mit seinem Leben dafür bezahlt.
-	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_03"); //Damit wurde diese Tat gesühnt. Du hast dir das Kopfgeld, sowie die Belohnung für die Wiederbeschaffung des Kompasses verdient.
-	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_04"); //Darüber hinaus möchte ich dir im Namen der Paladine danken. Du bist ein Vorbild für jeden Bürger dieser Stadt.
+	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_01"); //Pozwólcie mi widziec..... To jest kompas Esmeraldy. Doskonaly! Hmm, i zlodziej?
+	AI_Output(hero, self, "Info_Mod_Andre_Kompass_15_02"); //Placil za to zyciem.
+	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_03"); //To byla kara za ten czyn. Zarobiles nagrode i nagrode za odzyskanie kompasu.
+	AI_Output(self, hero, "Info_Mod_Andre_Kompass_08_04"); //W imieniu Paladynów chcialbym panstwu równiez podziekowac. Jestes wzorem do nasladowania dla kazdego obywatela tego miasta.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 600);
 
@@ -2713,17 +2713,17 @@ FUNC INT Info_Mod_Andre_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Andre_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Andre_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Andre_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Andre_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Andre_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Andre_LastPetzCounter);
 		
@@ -2738,42 +2738,42 @@ FUNC VOID Info_Mod_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Andre_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Andre_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Andre_LastPetzCrime == CRIME_THEFT)
 		|| ( (Andre_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Andre_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Andre_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Andre_Schulden			= 0;
 			Andre_LastPetzCounter 	= 0;
@@ -2781,9 +2781,9 @@ FUNC VOID Info_Mod_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Andre_Schulden);
-			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Andre_PMSchulden_08_14"); //Co to jest?
 		};
 	};
 	
@@ -2792,27 +2792,27 @@ FUNC VOID Info_Mod_Andre_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Andre_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Andre_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Andre_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Andre_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Andre_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Ile to znów bylo?",Info_Mod_Andre_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Andre_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Andre_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Andre_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Andre_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Andre_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Andre_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Andre_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Andre_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Andre_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Andre_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Andre_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Andre_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Andre_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Andre_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Andre_PMSchulden,"Ile to znów bylo?",Info_Mod_Andre_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Andre_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Andre_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Andre_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Andre_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Andre_PETZMASTER_PayNow);
 	};
 };
 
@@ -2841,13 +2841,13 @@ FUNC VOID Info_Mod_Andre_PETZMASTER_Info()
 	// ------ SC hat mit Andre noch nicht gesprochen ------
 	if (B_GetAivar(self, AIV_TalkedToPlayer) == FALSE)
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_00"); //Du musst der Neue sein, der hier in der Stadt Ärger gemacht hat.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_00"); //Musisz byc nowym facetem, który spowodowal klopoty w tym miescie.
 	};	
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -2855,43 +2855,43 @@ FUNC VOID Info_Mod_Andre_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_04"); //Die Wachen haben Befehl, jeden Mörder auf der Stelle zu richten.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_05"); //Und auch die meisten Bürger werden einen Mörder in der Stadt nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen. Wir sind im Krieg und wir brauchen jeden Mann.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_04"); //Straznicy maja rozkaz osadzania kazdego mordercy na miejscu.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_05"); //Wiekszosc mieszkanców nie toleruje zabójcy w miescie!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_06"); //Nie interesuje mnie to, ze moge panstwa umiescic na szubienicy. Jestesmy na wojnie i potrzebujemy kazdego czlowieka, którego mozemy dostac.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_07"); //Ale nie bedzie latwo sprawic, by ludzie znów byli laskawi.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_08"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_09"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_10"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_11"); //Ich werde so ein Verhalten in der Stadt nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_11"); //Nie bede tolerowal takich zachowan w miescie!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_12"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_13"); //Wenn du dich mit dem Gesindel im Hafen herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_14"); //Aber wenn du Bürger oder Soldaten des Königs angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_13"); //Jesli walczysz z riffem w porcie, to jest jedna rzecz....
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_14"); //Ale jesli zaatakujecie obywateli lub zolnierzy króla, bede musial cie pociagnac do odpowiedzialnosci.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_15"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_16"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_17"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -2899,14 +2899,14 @@ FUNC VOID Info_Mod_Andre_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_18"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_19"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_08_20"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Andre_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_15_21"); //Ile?
 	
 	if (Andre_Schulden > 1000)	{	Andre_Schulden = 1000;	};
 		
@@ -2914,18 +2914,18 @@ FUNC VOID Info_Mod_Andre_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Andre_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Andre_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Andre_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Andre_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Andre_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Andre_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Andre_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Andre_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Andre_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Andre_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Andre_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Andre_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Andre_Schulden);
-	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayNow_08_01"); //Gut! Ich werde dafür sorgen, dass es jeder in der Stadt erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayNow_08_01"); //Dobrze! Doloze wszelkich staran, aby wszyscy w miescie dowiedzieli sie o tym - wiec Twoja reputacja zostanie w rozsadny sposób przywrócona.
 
 	B_GrantAbsolution (LOC_CITY);
 	
@@ -2939,9 +2939,9 @@ func void Info_Mod_Andre_PETZMASTER_PayNow()
 
 func void Info_Mod_Andre_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayLater_08_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayLater_08_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Andre_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayLater_08_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Andre_PETZMASTER_PayLater_08_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Andre_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Andre_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -2957,7 +2957,7 @@ INSTANCE Info_Mod_Andre_Kopfgeld (C_INFO)
 	information	= Info_Mod_Andre_Kopfgeld_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will Kopfgeld für einen Verbrecher kassieren.";
+	description	= "Chce zbierac pieniadze dla przestepcy.";
 };
 
 FUNC INT Info_Mod_Andre_Kopfgeld_Condition()
@@ -2970,57 +2970,57 @@ FUNC INT Info_Mod_Andre_Kopfgeld_Condition()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_15_00"); //Ich will Kopfgeld für einen Verbrecher kassieren.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_15_00"); //Chce zbierac pieniadze dla przestepcy.
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
 
-	Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Zurück.", Info_Mod_Andre_Kopfgeld_Zurueck);
+	Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Z powrotem.", Info_Mod_Andre_Kopfgeld_Zurueck);
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Tom_Hi))
 	&& (Mod_Tom_Boese	==	TRUE)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Tom versucht einen Freund vor einem Miliztrupp zu warnen.", Info_Mod_Andre_Kopfgeld_Tom);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Tomek próbuje ostrzec przyjaciela przed oddzialem milicji.", Info_Mod_Andre_Kopfgeld_Tom);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Nagur_Hi))
 	&& (Nagur_KillAkahasch == TRUE)
 	&& (!Npc_IsDead(Mod_4016_NOV_Akahasch_NW))
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Nagur will den Novizen Akahasch tot sehen.", Info_Mod_Andre_Kopfgeld_Nagur);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Nagur chce, aby nowicjusz Akahash zmarl.", Info_Mod_Andre_Kopfgeld_Nagur);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Meldor_Hilfe))
 	&& (Npc_HasItems(hero, ItMi_HerbPaket) >= 1)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Meldor_PaketSicher))
 	&& (Mob_HasItems("CHEST_ANDRE_WAREHOUSE_PACKET", ItMi_HerbPaket) == 0)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Meldor hat Sumpfkraut, welches er illegal verkauft.", Info_Mod_Andre_Kopfgeld_Meldor);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Meldor ma bagno, które sprzedaje nielegalnie.", Info_Mod_Andre_Kopfgeld_Meldor);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Diego_HabBeweise))
 	&& (Npc_HasItems(hero, ItWr_AL_GebrandtDokumente) == 1)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Gerbrandt, Valentino, Cornelius und Fernando haben Dreck am Stecken.", Info_Mod_Andre_Kopfgeld_Gerbrandt);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Gerbrandt, Valentino, Cornelius i Fernando sa brudne.", Info_Mod_Andre_Kopfgeld_Gerbrandt);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Kardif_KnowsRukhar))
 	&& (Npc_HasItems(hero, ItWr_Rukhar_Wacholder) == 1)
 	&& (Mod_KnowsRukharWacholder == 5)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Kardif hat Rukhar beauftragt eine Lieferung Wacholder von Coragon zu stehlen.", Info_Mod_Andre_Kopfgeld_Kardif);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Kardif nakazal Rukharowi krasc ladunek jalowca z Coragon.", Info_Mod_Andre_Kopfgeld_Kardif);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Den_Problem))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Andre_Rangar))
 	&& (Mod_DenVerpfiffen == 0)
 	&& (Mod_Den_Problem == 1)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Den will Rangar in Verruf bringen.", Info_Mod_Andre_Kopfgeld_Den);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Próbuje zdyskredytowac Rangara.", Info_Mod_Andre_Kopfgeld_Den);
 	};
 	if (Mod_WilfriedsQuest == 7)
 	&& (Npc_HasItems(hero, ItWr_WilfriedsListe) == 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 500)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Der Bürger Wilfried war ein Betrüger.", Info_Mod_Andre_Kopfgeld_Wilfried);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Obywatel Wilfried byl zdradzajacy.", Info_Mod_Andre_Kopfgeld_Wilfried);
 	};
 	if (Nagur_KillAkahasch == 6)
 	{
-		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Kardif hat Nagur und seiner Bande dabei geholfen mir eine Falle zu stellen.", Info_Mod_Andre_Kopfgeld_Kardif2);
+		Info_AddChoice	(Info_Mod_Andre_Kopfgeld, "Cardif pomógl Nagurowi i jego gangowi postawic mi pulapke.", Info_Mod_Andre_Kopfgeld_Kardif2);
 	};
 };
 
@@ -3031,8 +3031,8 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Zurueck()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Tom()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Tom_15_00"); //Tom versucht einen Freund vor einem Miliztrupp zu warnen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Tom_08_01"); //Gut, dass du mir bescheid gesagt hast. Hier hast du deine Belohnung.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Tom_15_00"); //Tomek próbuje ostrzec przyjaciela przed oddzialem milicji.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Tom_08_01"); //Ciesze sie, ze powiedziales mi. Oto Twoja nagroda.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 100);
 
@@ -3044,7 +3044,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Tom()
 
 	Mod_Tom_Boese = FALSE;
 
-	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Ich hab Tom bei Lord Andre verpfiffen.");
+	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Ratuje Tomasza do Pana Andre' a.");
 	B_SetTopicStatus	(TOPIC_MOD_TOMSFREUND, LOG_FAILED);
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
@@ -3056,8 +3056,8 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Tom()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Nagur()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Nagur_15_00"); //Nagur will den Novizen Akahasch tot sehen und hat einen Auftragsmörder geschickt.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Nagur_08_01"); //Das werden wir zu verhindern wissen. Danke für deine Hilfe.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Nagur_15_00"); //Nagur chce, aby nowicjusz Akahash zmarl i wyslal morderce kontraktowego.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Nagur_08_01"); //Wiemy, jak temu zapobiec. Dziekujemy za pomoc.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 100);
 
@@ -3067,7 +3067,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Nagur()
 
 	B_StartOtherRoutine	(Mod_743_NONE_Nagur_NW, "GEFANGEN");
 
-	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Ich hab Nagur bei Lord Andre verpfiffen.");
+	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Rzucilem sie w góre do Pana Andre' a.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AUFNAHME, LOG_FAILED);
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
@@ -3081,13 +3081,13 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Nagur()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Meldor()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Meldor_15_00"); //Meldor hat Sumpfkraut, welches er illegal verkauft.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Meldor_08_01"); //Hast du dafür auch Beweise?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Meldor_15_02"); //Dieses Paket Sumpfkraut sollte ich für ihn verschwinden lassen.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Meldor_15_00"); //Meldor ma bagno, które sprzedaje nielegalnie.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Meldor_08_01"); //Masz jakies dowody?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Meldor_15_02"); //Chcial, zebym zniknal ten pakiet chwastów bagiennych.
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Meldor_08_03"); //Das ist ausreichend. Hier hast du deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Meldor_08_03"); //To wystarczy. Oto Twoja nagroda.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 100);
 
@@ -3099,7 +3099,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Meldor()
 
 	B_StartOtherRoutine	(Mod_597_NONE_Meldor_NW, "GEFANGEN");
 
-	B_LogEntry	(TOPIC_MOD_MELDOR_PAKET, "Ich hab Meldor bei Lord Andre verpfiffen.");
+	B_LogEntry	(TOPIC_MOD_MELDOR_PAKET, "Wypedzilem Meldora do Pana Andre' a.");
 	B_SetTopicStatus	(TOPIC_MOD_MELDOR_PAKET, LOG_FAILED);
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
@@ -3111,13 +3111,13 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Meldor()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Gerbrandt()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Gerbrandt_15_00"); //Gerbrandt, Valentino, Cornelius und Fernando haben Dreck am Stecken. Beweise habe ich dabei.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Gerbrandt_15_00"); //Gerbrandt, Valentino, Cornelius i Fernando sa brudne. Przynioslem dowód.
 
 	B_GiveInvItems	(hero, self, ItWr_AL_GebrandtDokumente, 1);
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Gerbrandt_08_01"); //Gut, wir werden sie sofort festnehmen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Gerbrandt_08_02"); //Hier hast du deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Gerbrandt_08_01"); //Tak naprawde natychmiast je zatrzymamy.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Gerbrandt_08_02"); //Oto Twoja nagroda.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 300);
 
@@ -3135,7 +3135,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Gerbrandt()
 
 	B_StartOtherRoutine	(Mod_754_NONE_Valentino_NW, "GEFANGEN");
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Lord Andre hat alle Mitglieder der Bande festnehmen lassen. Nun sollte ich mich mit Diego unterhalten.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Pan Andre aresztowal wszystkich czlonków gangu. Teraz powinienem porozmawiac z Diego.");
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
 
@@ -3150,15 +3150,15 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Gerbrandt()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Kardif()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif_15_00"); //Kardif hat Rukhar beauftragt eine Lieferung Wacholder von Coragon zu stehlen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif_08_01"); //Hast du für diese Anschuldigung auch einen Beweis?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif_15_02"); //Hier, dieses Schreiben hatte Rukhar bei sich.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif_15_00"); //Kardif nakazal Rukharowi krasc ladunek jalowca z Coragon.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif_08_01"); //Czy posiadasz dowód oskarzenia?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif_15_02"); //Tutaj Rukhar mial z nim ten list.
 
 	B_GiveInvItems	(hero, self, ItWr_Rukhar_Wacholder, 1);
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif_08_03"); //Gut, wir werden die Verhaftung veranlassen. Hier hast du das Kopfgeld.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif_08_03"); //To prawda, zrobimy aresztowanie. Oto Twoja laska.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 100);
 
@@ -3168,7 +3168,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Kardif()
 
 	B_StartOtherRoutine	(Mod_590_NONE_Kardif_NW, "GEFANGEN");
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Kardif sitzt jetzt im Knast. Jetzt sollte ich zu Coragon gehen und ihm davon berichten.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Wiezienie w areszcie Cardifa. Teraz powinienem udac sie do Coragon i powiedziec mu o tym.");
 
 	Mod_KnowsRukharWacholder = 6;
 
@@ -3181,19 +3181,19 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Kardif()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Kardif2()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_00"); //Kardif hat Nagur und seiner Bande dabei geholfen mir eine Falle zu stellen.
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_01"); //Nagur hatte schon den Novizen Akahasch auf dem Gewissen und ich konnte mich nur mit Mühe meines Lebens erwehren.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_02"); //Was?! Wo ist dieser Verbrecher jetzt?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_03"); //Nagur hat sich mit dem Falschen angelegt. Er wird keinen Ärger mehr machen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_04"); //Da bin ich erleichtert. Ich hatte doch geahnt, dass es keine gute Idee war ihn laufen zu lassen ... aber die Gesetze der Stadt haben es nun mal verlangt, nachdem er seine Strafe verbüßt hatte.
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_05"); //Kardif scheint außerdem mit Schmugglern gemeinsame Sache zu machen, die ihre Sachen in den Kisten und Fässern im Hafenviertel verstecken.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_06"); //So ist das also. Ich werde meine Männer sofort alle Kisten durchsuchen lassen. Und dieser delinquente Kardif wird seine gerechte Strafe bekommen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_07"); //Jedenfalls hast du dabei geholfen, dem Verbrechen in dieser Stadt einen empfindlichen Schlag zu verpassen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_08"); //Dir steht damit eine größere Belohnung aus unserer Stadtkasse zu.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_00"); //Cardif pomógl Nagurowi i jego gangowi postawic mi pulapke.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_01"); //Nagur mial juz nowicjusza Akahascha na sumieniu i moglem tylko z trudem oprzec sie mojemu zyciu.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_02"); //Co? Gdzie jest teraz przestepca?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_03"); //Nagur balagan z niewlasciwego faceta. Nie bedzie on juz wiecej sprawial klopotów.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_04"); //To sprawia, ze czuje sie lepiej. Mialem przeczucie, ze nie byl to dobry pomysl, zeby go wypuscic..... po odbyciu kary.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Kardif2_15_05"); //Kardif wspólpracuje równiez z przemytnikami, którzy ukrywaja swoje rzeczy w skrzyniach i beczkach w dzielnicy portowej.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_06"); //Tak wlasnie jest. Moi mezczyzni natychmiast przeszukaja wszystkie pola. Ten przestepca kardio otrzyma sprawiedliwa kare.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_07"); //W kazdym razie pomógles w tym miescie powaznie uderzac w zbrodnie.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_08"); //Masz prawo do wiekszej nagrody z naszego miejskiego skarbu.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_09"); //Innos begleite dich auf deinen weiteren Wegen.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Kardif2_08_09"); //Innos bedzie Ci towarzyszyc w kolejnych krokach.
 
 	AI_Teleport	(Mod_590_NONE_Kardif_NW, "NW_CITY_HABOUR_KASERN_HALVOR");
 
@@ -3210,11 +3210,11 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Kardif2()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Den()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Den_15_00"); //Den will Rangar in Verruf bringen. Er scheint eifersüchtig auf ihn zu sein.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_01"); //Den von der Miliz?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Den_15_02"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_03"); //So ein Verhalten kann ich bei der Miliz nicht dulden. Ich werde ihn rauswerfen.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_04"); //Hier ist eine kleine Belohnung für dich.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Den_15_00"); //Próbuje zdyskredytowac Rangara. On wydaje mu sie zazdrosny.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_01"); //Gosc milicji?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Den_15_02"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_03"); //Nie toleruje takich zachowan w milicji. Wyrzuce go.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Den_08_04"); //Oto mala nagroda dla Ciebie.
 
 	B_GiveInvITems	(self, hero, ItMi_Gold, 50);
 
@@ -3230,7 +3230,7 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Den()
 	CreateInvItems	(Mod_969_MIL_Den_NW, ItAr_Bau_L, 1);
 	AI_EquipBestArmor	(Mod_969_MIL_Den_NW);
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ich hab Den bei Lord Andre verpfiffen.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Rzucilem go Panu Andre' owi.");
 	B_SetTopicStatus	(TOPIC_MOD_DENSPROBLEM, LOG_FAILED);
 
 	Info_ClearChoices	(Info_Mod_Andre_Kopfgeld);
@@ -3244,22 +3244,22 @@ FUNC VOID Info_Mod_Andre_Kopfgeld_Den()
 
 FUNC VOID Info_Mod_Andre_Kopfgeld_Wilfried()
 {
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_00"); //Der Bürger Wilfried war ein Betrüger.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_01"); //War?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_02"); //Ich habe ihn zur Strecke gebracht. Es war Notwehr.
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_03"); //Hast du Beweise?
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_04"); //Ja, die habe ich.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_00"); //Obywatel Wilfried byl zdradzajacy.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_01"); //Czy?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_02"); //Puscilem go w dól. To byla samoobrona.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_03"); //Masz dowody?
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_04"); //Tak, ja to mam.
 
 	Npc_RemoveInvItems	(hero, ItWr_WilfriedsListe, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 500);
 
-	B_ShowGivenThings("Liste und 500 Gold gegeben");
+	B_ShowGivenThings("Wykaz przekazanych zlota i 500 sztuk");
 
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_05"); //(unmotiviert) Glückwunsch. Das hast du ganz toll gemacht.
-	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_06"); //Bekomme ich noch eine Belohnung?
-	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_07"); //Nicht von mir. Aber frag' doch die Geschädigten.
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_05"); //(niezmotywowane) Gratulacje. Wykonal pan wspaniala prace.
+	AI_Output(hero, self, "Info_Mod_Andre_Kopfgeld_Wilfried_15_06"); //Czy dostaje kolejna nagrode?
+	AI_Output(self, hero, "Info_Mod_Andre_Kopfgeld_Wilfried_08_07"); //Nie ode mnie. Zapytaj jednak ofiary.
 
 	B_GivePlayerXP	(300);
 

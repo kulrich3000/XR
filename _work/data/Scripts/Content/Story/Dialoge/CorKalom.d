@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Kalom_Hi_Condition()
 
 FUNC VOID Info_Mod_Kalom_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_00"); //Wen haben wir denn hier?
+	AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_00"); //Kto tu mamy?
 
 	if (HeroIstKeinZombie == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_01"); //Der verwesende Leichnam des ungläubigen Narren, der die großen Pläne meines Meisters vereitelt hat, ist zum Untotendasein erwacht.
-		AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_02"); //Verrotte du nur, es wird mir lange genug Ablenkung und Genugtuung verschaffen, während ich auf die Wiederkehr meines Meisters warte.
+		AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_01"); //Rozpadajace sie zwloki niewierzacego glupca, który pokrzyzowal wielkie plany mojego Mistrza, obudzily sie do bycia nieumarlym.
+		AI_Output(self, hero, "Info_Mod_Kalom_Hi_12_02"); //Po prostu gnije, to da mi wystarczajaco duzo rozproszenia i satysfakcji, gdy czekam na powrót mojego Mistrza.
 	};
 };
 
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Kalom_LeckMich (C_INFO)
 	information	= Info_Mod_Kalom_LeckMich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da kannst du lange warten, du ektoplasmatischer Unrat.";
+	description	= "Mozesz dlugo czekac, ektoplazmatyczny brud.";
 };
 
 FUNC INT Info_Mod_Kalom_LeckMich_Condition()
@@ -45,12 +45,12 @@ FUNC INT Info_Mod_Kalom_LeckMich_Condition()
 
 FUNC VOID Info_Mod_Kalom_LeckMich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kalom_LeckMich_15_00"); //Da kannst du lange warten, du ektoplasmatischer Unrat.
-	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_01"); //Was, wie ...?! Dein Geist hat die verwesende Hülle nicht verlassen?! Wie ist das möglich ...?
-	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_02"); //Nun denn, auch das wird nichts an deinem Schicksal ändern. (lacht)
-	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_03"); //Der Ausgang ist durch tonnenschwere Felsbrocken versperrt, die Brücke eingestürzt und nach vielen Jahren wird von dir nichts mehr übrig sein außer Staub.
-	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_04"); //Und ich kann keinerlei magische Befähigung in dir spüren, die dir dazu verhelfen könnte, diesen heiligen Ort zu verlassen.
-	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_05"); //Du bist nun ein einfacher Zombie. An dem Anblick deiner verfaulenden Eingeweide werde ich mich laben.
+	AI_Output(hero, self, "Info_Mod_Kalom_LeckMich_15_00"); //Mozesz dlugo czekac, ektoplazmatyczny brud.
+	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_01"); //Cóz, jak....? Twój duch nie zostawil rozkladajacej sie skorupy? Jak to jest mozliwe?
+	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_02"); //Cóz, to nie zmieni twojego przeznaczenia. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_03"); //Wyjscie jest zablokowane ogromnymi glazami, most zawalil sie i po wielu latach nic nie pozostanie po Tobie poza pylem.
+	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_04"); //I nie czuje w tobie zadnej magicznej predyspozycji, która pomoglaby ci opuscic to swiete miejsce.
+	AI_Output(self, hero, "Info_Mod_Kalom_LeckMich_12_05"); //Jestes teraz prostym zombie. Na widok waszych gnijacych wnetrznosci bede orzezwiajacy.
 
 	AI_StopProcessInfos	(self);
 };
@@ -77,11 +77,11 @@ FUNC INT Info_Mod_Kalom_KeinZombie_Condition()
 
 FUNC VOID Info_Mod_Kalom_KeinZombie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_00"); //Was, wie ist das möglich?! Du weilst wieder unter den Lebenden. Aber ...
-	AI_Output(hero, self, "Info_Mod_Kalom_KeinZombie_15_01"); //Enttäuscht? Ist deine Rechnung nicht ganz aufgegangen?
-	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_02"); //Das können wir gleich wieder ändern. Du Narr! Und du kommst tatsächlich wieder hierher.
-	AI_Output(hero, self, "Info_Mod_Kalom_KeinZombie_15_03"); //Warum nicht? Du bist doch nur ein Geist.
-	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_04"); //(lacht) Genau, nur ein Geist. Spüre die Macht, die mir der Schläfer verliehen hat.
+	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_00"); //Co to jest mozliwe? Wróciles wsród zyjacych. Ale....
+	AI_Output(hero, self, "Info_Mod_Kalom_KeinZombie_15_01"); //Rozstapiony? Czy twój rachunek nie zostal Ci wystawiony?
+	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_02"); //Mozemy to od razu naprawic. Zludzasz! Wracasz tutaj.
+	AI_Output(hero, self, "Info_Mod_Kalom_KeinZombie_15_03"); //Dlaczego nie? Jestes po prostu duchem.
+	AI_Output(self, hero, "Info_Mod_Kalom_KeinZombie_12_04"); //Dokladnie, tylko duch. Poczuj moc, jaka otrzymalam od sypialni.
 
 	AI_StopProcessInfos	(self);
 
@@ -110,7 +110,7 @@ FUNC INT Info_Mod_Kalom_LebtNoch01_Condition()
 
 FUNC VOID Info_Mod_Kalom_LebtNoch01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch01_12_00"); //Was! Du lebst immer noch?
+	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch01_12_00"); //Cóz! Ty wciaz zyjesz?
 
 	AI_StopProcessInfos	(self);
 
@@ -137,7 +137,7 @@ FUNC INT Info_Mod_Kalom_LebtNoch02_Condition()
 
 FUNC VOID Info_Mod_Kalom_LebtNoch02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch02_12_00"); //Du schon wieder.
+	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch02_12_00"); //To znów Ty.
 
 	AI_StopProcessInfos	(self);
 
@@ -164,7 +164,7 @@ FUNC INT Info_Mod_Kalom_LebtNoch03_Condition()
 
 FUNC VOID Info_Mod_Kalom_LebtNoch03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch03_12_00"); //Wie lästig. Wird man dich denn gar nicht mehr los?
+	AI_Output(self, hero, "Info_Mod_Kalom_LebtNoch03_12_00"); //Jakze denerwujace. Nie pozbyjcie sie cie?
 
 	AI_StopProcessInfos	(self);
 
@@ -189,7 +189,7 @@ FUNC INT Info_Mod_Kalom_EXIT_Condition()
 
 FUNC VOID Info_Mod_Kalom_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kalom_EXIT_12_00"); //Dir hängt da ein wenig Fleisch vom Arm. (lacht)
+	AI_Output(self, hero, "Info_Mod_Kalom_EXIT_12_00"); //Na ramieniu jest troche miesa. (smiertelnicy)
 
 	AI_StopProcessInfos	(self);
 };

@@ -1,7 +1,7 @@
 instance Mod_7192_VLK_Buergerin_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "aufgebrachte Frau";	
+	name 		= "kobieta";	
 	guild 		= GIL_PAL;
 	id 			= 7192;
 	voice 		= 16;

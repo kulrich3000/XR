@@ -1,7 +1,7 @@
 instance Mod_7519_OUT_Tyrus_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Tyrus"; 
+	name 		= "tyrus"; 
 	guild 		= GIL_OUT;
 	id 			= 7519;
 	voice 		= 37;

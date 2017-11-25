@@ -1,7 +1,7 @@
 instance Mod_1957_VMG_Thorge_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Thorge";
+	name 		= "hora";
 	guild 		= GIL_out;
 	id 			= 1957;
 	voice 		= 13;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gritta_Hi (C_INFO)
 	information	= Info_Mod_Gritta_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Gritta_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Gritta_Hi_Condition()
 FUNC VOID Info_Mod_Gritta_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gritta_Hi_16_01"); //Ich bin Gritta.
+	AI_Output(self, hero, "Info_Mod_Gritta_Hi_16_01"); //Jestem Gritta.
 };
 
 INSTANCE Info_Mod_Gritta_ThorbenLehrling (C_INFO)
@@ -40,17 +40,17 @@ FUNC INT Info_Mod_Gritta_ThorbenLehrling_Condition()
 
 FUNC VOID Info_Mod_Gritta_ThorbenLehrling_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_00"); //Du willst zu Thorben, oder?
-	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_01"); //Ja ... Stimmt was nicht?
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_02"); //Er ... Es sieht schlimm aus. Der Arzt meint, es sei ein Schlaganfall gewesen und dass er wieder aufwachen wird.
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_03"); //Aber wie viel von seinem Gedächtnis verloren geht, weiß niemand.
-	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_04"); //Das tut mir leid. Kann ich irgendetwas für ihn tun?
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_05"); //Du bist sein Lehrling, nicht wahr? Er würde sich bestimmt über ein kleines selbstgefertigtes Geschenk freuen, oh ja.
-	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_06"); //Ich werde mir etwas einfallen lassen. Mach's gut.
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_00"); //Chcesz zobaczyc Thorben, czy nie?
+	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_01"); //Tak..... Czy jest cos zlego?
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_02"); //On.... Wyglada to zle. Lekarz uwaza, ze to byl udar i obudzi sie.
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_03"); //Nikt jednak nie wie, ile pamieci traci.
+	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_04"); //Przykro mi to slyszec. Czy jest cos, co moge dla niego zrobic?
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling_16_05"); //Jestes jego uczniem, czy nie? Jestem pewien, ze bedzie wdzieczny za maly domowy prezent.
+	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling_15_06"); //Pomysle o czyms. Teraz nalezy zachowac ostroznosc.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "Thorben hat es voll erwischt. Seine Nichte meint, er würde sich über ein selbstgefertigtes Geschenk freuen. Nun ja, ein wenig kitschig ist es schon, aber wenn es hilft ... Ich sollte noch ein Mal Brahim nach einer Zeichnung fragen. Selbst wenn er sie nicht selbst machen will, so kann er mich doch vielleicht weiterleiten.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "Thorben mocno go uderzyl. Jego siostrzenica mysli, ze bylby szczesliwy, gdyby otrzymal prezent. Cóz, to troche kiczowate, ale jesli pomaga..... Powinienem jeszcze raz poprosic Brahima o rysunek. Nawet jesli nie chce robic tego sam, moze mnie przekazac.");
 };
 
 INSTANCE Info_Mod_Gritta_ThorbenLehrling2 (C_INFO)
@@ -73,9 +73,9 @@ FUNC INT Info_Mod_Gritta_ThorbenLehrling2_Condition()
 
 FUNC VOID Info_Mod_Gritta_ThorbenLehrling2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling2_16_00"); //Du hast ein Geschenk für meinen Onkel?
-	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling2_15_01"); //Ja. Ist er denn bei Bewusstsein?
-	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling2_16_02"); //Seit letzter Nacht. Es geht ihm schon wieder besser, und er scheint sich an alles zu erinnern. Bring ihm ruhig dein Geschenk.
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling2_16_00"); //Masz prezent dla wujka?
+	AI_Output(hero, self, "Info_Mod_Gritta_ThorbenLehrling2_15_01"); //Tak. Czy jest swiadomy?
+	AI_Output(self, hero, "Info_Mod_Gritta_ThorbenLehrling2_16_02"); //Od ostatniej nocy. Juz teraz czuje sie lepiej i wydaje mu sie, ze wszystko pamieta. Przynies mu swój prezent.
 };
 
 INSTANCE Info_Mod_Gritta_Shakir (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Gritta_Shakir (C_INFO)
 	information	= Info_Mod_Gritta_Shakir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Innos zum Gruß. Wie geht es dir?";
+	description	= "Innos, powitanie. Jak sie czujesz?";
 };
 
 FUNC INT Info_Mod_Gritta_Shakir_Condition()
@@ -99,20 +99,20 @@ FUNC INT Info_Mod_Gritta_Shakir_Condition()
 
 FUNC VOID Info_Mod_Gritta_Shakir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_00"); //Innos zum Gruß. Wie geht es dir?
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_01"); //Schlecht. Wer fragt das?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_02"); //Ein Freier.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_03"); //Du willst mich heiraten? Wieso?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_04"); //Das nicht. Man sagt, du stehst auf schöne Kleider.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_05"); //Das will ich meinen. Hast du welche?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_06"); //Nein. Aber ich könnte dir eines besorgen. Feinster Stoff, eleganter Schnitt, beste Qualität.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_07"); //Nur her damit! Was willst du dafür?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_08"); //Nur eine Gefälligkeit. Ein guter Freund von mir möchte mal mit einer Frau zusammensein.
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_09"); //Er hat eine gemütliche Unterkunft draussen vor der Stadt ...
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_10"); //Verstehe. Wann bekomme ich das Teil?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_11"); //Mein Freund wird es dir geben.
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_00"); //Innos, powitanie. Jak sie czujesz?
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_01"); //Zle. Kto o to pyta?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_02"); //Zwyciezca.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_03"); //Chcesz mnie poslubic? Dlaczego?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_04"); //Nie ten jeden. Mówia, ze lubisz piekne ubrania.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_05"); //Tak wlasnie rozumiem. Masz jakies?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_06"); //Nie. Móglbym cie jednak przekonac. Drobna tkanina, elegancki krój, najlepsza jakosc.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_07"); //Daj mi ja! Czego oczekujesz?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_08"); //Po prostu uprzejmosc. Mój dobry przyjaciel chce byc z kobieta.
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_09"); //Ma przytulne zakwaterowanie poza miastem....
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir_16_10"); //Widze. Kiedy dostaje kawalek?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir_15_11"); //Mój przyjaciel ci ja przekaze.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Ich konnte Gritta 'engagieren'. Muss ihr ein Kleid vom Schneider in Khorata besorgen und es Shakir geben.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Móglbym 'wynajac' Gritte. Dostala ja sukienke od krawca w Khoracie i dala do Shakiru.");
 };
 
 INSTANCE Info_Mod_Gritta_Shakir2 (C_INFO)
@@ -123,7 +123,7 @@ INSTANCE Info_Mod_Gritta_Shakir2 (C_INFO)
 	information	= Info_Mod_Gritta_Shakir2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Ich habe bekommen, was du wolltest.";
+	description	= "Witaj! Dostalem to, czego chciales.";
 };
 
 FUNC INT Info_Mod_Gritta_Shakir2_Condition()
@@ -137,11 +137,11 @@ FUNC INT Info_Mod_Gritta_Shakir2_Condition()
 
 FUNC VOID Info_Mod_Gritta_Shakir2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_00"); //Hallo! Ich habe bekommen, was du wolltest.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir2_16_01"); //Ein neues Kleid?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_02"); //Gewiss. Haute couture vom schwulen Versage.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir2_16_03"); //Ja und? Diese Leute haben wenigstens Geschmack.
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_04"); //Wie du meinst. Lass uns gehen.
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_00"); //Witaj! Dostalem to, czego chciales.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir2_16_01"); //Nowy strój?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_02"); //Oczywiscie. Haute couture z porazki gejów.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir2_16_03"); //Tak, i? Przynajmniej ci ludzie maja dobry smak.
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir2_15_04"); //Cokolwiek mówisz. Idzmy dalej.
 
 	Mod_ASS_Gritta = 1;
 
@@ -149,7 +149,7 @@ FUNC VOID Info_Mod_Gritta_Shakir2_Info()
 
 	B_StartOtherRoutine	(self, "FOLLOWTOSHAKIR");
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Werde sie zur Höhle bringen und Shakir Bescheid sagen.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Zabrac ja do jaskini i powiedziec Shakir.");
 };
 
 INSTANCE Info_Mod_Gritta_Shakir3 (C_INFO)
@@ -173,12 +173,12 @@ FUNC INT Info_Mod_Gritta_Shakir3_Condition()
 
 FUNC VOID Info_Mod_Gritta_Shakir3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_00"); //Das nennst du gemütliche Unterkunft?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_01"); //Nun ja. Jedenfalls seid ihr hier ungestört. Schön warm ist es auch.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_02"); //Und wo ist dein guter Freund?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_03"); //Ich sag ihm Bescheid. Er heißt Shakir. Schenk dir inzwischen etwas Wein ein, wenn du möchtest.
-	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_04"); //Und mein Kleid?
-	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_05"); //Wird er mitbringen.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_00"); //Zadzwonisz do tego komfortowego zakwaterowania?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_01"); //No cóz, tak. W kazdym razie nie przeszkadza Ci to. To równiez ladne i cieple.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_02"); //A gdzie jest Twój dobry przyjaciel?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_03"); //Daje mu znac. Nazywa sie Shakir. W miedzyczasie, jesli tylko zechcesz, wlac troche wina.
+	AI_Output(self, hero, "Info_Mod_Gritta_Shakir3_16_04"); //A mój strój?
+	AI_Output(hero, self, "Info_Mod_Gritta_Shakir3_15_05"); //Przyniesie.
 
 	AI_StopProcessInfos	(self);
 
@@ -193,7 +193,7 @@ INSTANCE Info_Mod_Gritta_Flugblaetter (C_INFO)
 	information	= Info_Mod_Gritta_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Gritta_Flugblaetter_Condition()
@@ -214,7 +214,7 @@ FUNC VOID Info_Mod_Gritta_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Gritta_Flugblaetter_16_01"); //(affektiert) Hmm, schöne Kleider hat Matteo aber glaube ich nicht.
+	AI_Output(self, hero, "Info_Mod_Gritta_Flugblaetter_16_01"); //(skutki) Hmm, Matteo ma piekne ubrania, ale nie sadze.
 
 	Mod_Flugblaetter += 1;
 };

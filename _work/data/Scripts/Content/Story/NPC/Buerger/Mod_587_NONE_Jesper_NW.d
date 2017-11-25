@@ -1,7 +1,7 @@
 instance Mod_587_NONE_Jesper_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jesper"; 
+	name 		= "esper"; 
 	guild 		= GIL_OUT;
 	id 			= 587;
 	voice 		= 36;

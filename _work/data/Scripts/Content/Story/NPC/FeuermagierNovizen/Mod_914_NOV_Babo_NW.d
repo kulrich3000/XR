@@ -1,7 +1,7 @@
 INSTANCE Mod_914_NOV_Babo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Babo";
+	name 		= "niemowle";
 	guild 		= GIL_VLK;
 	id 			= 914;
 	voice 		= 36;

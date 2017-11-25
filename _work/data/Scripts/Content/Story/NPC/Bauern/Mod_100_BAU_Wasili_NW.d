@@ -1,7 +1,7 @@
 instance Mod_100_BAU_Wasili_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wasili";
+	name 		= "wasili";
 	guild 		= GIL_NONE;
 	id 			= 100;
 	voice 		= 1;

@@ -53,7 +53,7 @@ INSTANCE PC_Angeln_Hacken (C_INFO)
 	information	= PC_Angeln_Hacken_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Die Angel auswerfen";
+	description	= "Wyrzucanie wedki rybackiej";
 };
 
 FUNC INT PC_Angeln_Hacken_Condition()
@@ -74,36 +74,36 @@ FUNC VOID PC_Angeln_Hacken_Info()
 		if (AngelRandom < 15)
 		{
 			CreateInvItems	(hero, ItFo_Fish, 1);
-			PrintScreen	("1 Fisch geangelt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 zlowiona ryba!", -1, -1, FONT_ScreenSmall, 2);
 		}
 		else if (AngelRandom < 30)
 		{
 			CreateInvItems	(hero, ItPl_Weed, 1);
-			PrintScreen	("1 Unkraut geangelt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 chwast polawiany!", -1, -1, FONT_ScreenSmall, 2);
 		}
 		else if (AngelRandom < 45)
 		{
 			CreateInvItems	(hero, ItMi_Addon_Shell_01, 1);
-			PrintScreen	("1 Klappmuschel geangelt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 skorupa zlowiona!", -1, -1, FONT_ScreenSmall, 2);
 		}
 		else if (AngelRandom < 60)
 		{
 			CreateInvItems	(hero, ItMi_Addon_Shell_02, 1);
-			PrintScreen	("1 Hornmuschel geangelt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 skorupa rogowa polawiana!", -1, -1, FONT_ScreenSmall, 2);
 		}
 		else if (AngelRandom < 75)
 		{
 			CreateInvItems	(hero, ItFo_SmellyFish, 1);
-			PrintScreen	("1 Fisch geangelt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 zlowiona ryba!", -1, -1, FONT_ScreenSmall, 2);
 		}
 		else
 		{
-			PrintScreen	("Nicht angebissen!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("Nie ukaszony!", -1, -1, FONT_ScreenSmall, 2);
 		};
 	}
 	else
 	{
-		PrintScreen ("Hier scheint nichts mehr zu beißen.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("Nic juz tu juz nie ugryzc.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 		return;
 	};

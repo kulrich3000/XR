@@ -1,7 +1,7 @@
 instance Mod_1875_GRD_Botschafter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Botschafter";
+	name 		= "ambasador";
 	guild 		= GIL_OUT;
 	id 			= 1875;
 	voice 		= 13;

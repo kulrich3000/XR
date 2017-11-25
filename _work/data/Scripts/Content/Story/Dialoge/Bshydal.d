@@ -17,22 +17,22 @@ FUNC VOID Info_Mod_Bshydal_Hi_Info()
 {
 	AI_TurnToNpc	(self, GardeInnos_4099_Josephina);
 
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_00"); //Narren, ich habe euch doch nur zu meinem Werkzeug gemacht.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_01"); //Ihr wart so blind vor fanatischem Eifer, dass ich euch nach meinem Willen lenken konnte, ohne dass ihr es merktet.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_02"); //Hahaha. Die Macht, die ich euch verliehen habe, nehme ich nun wieder in mich auf ... und zudem den Rest eurer Stärke.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_00"); //Fools, zrobilem tylko moje narzedzie.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_01"); //Byles tak niewidomy z fanatycznym zapalem, ze moglem cie prowadzic zgodnie z moja wola, bez zauwazania.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_02"); //Hahahaha. Udzielona wam moc, ja teraz znowu podejme sie..... i reszte sily.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_03"); //Was?! Wie bist du hier hereingekommen? Nunja, das spielt jetzt auch keine Rolle mehr.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_04"); //In der Truhe direkt hier befindet sich das Artefakt, das Schwert Innos.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_05"); //Buahaha, wir werden Beliar verbannen und durch die Erschütterung des Gleichgewichtes so mächtig werden, dass nicht mal Innos uns mehr etwas anhaben kann.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_03"); //Co? Jak sie tu dostales? No cóz, to teraz nie ma znaczenia.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_04"); //W klatce piersiowej tuz obok znajduje sie artefakt, miecz Innos.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_02_05"); //Buahahaha, wypedzimy Beliara i staniemy sie tak potezni, wstrzasajac równowaga, ze nawet Innos nie moze juz nas dotykac.
 
 	B_SetTopicStatus	(TOPIC_MOD_BEL_GARDEINNOS, LOG_SUCCESS);
 
 	Info_ClearChoices	(Info_Mod_Bshydal_Hi);
 
-	Info_AddChoice	(Info_Mod_Bshydal_Hi, "Mach nur, du hast das Rennen gewonnen und dir das Schwert verdient.", Info_Mod_Bshydal_Hi_B);
-	Info_AddChoice	(Info_Mod_Bshydal_Hi, "Nein, das dürft ihr nicht.", Info_Mod_Bshydal_Hi_A);
+	Info_AddChoice	(Info_Mod_Bshydal_Hi, "Idz dalej, wygrales wyscig i zarobiles miecz.", Info_Mod_Bshydal_Hi_B);
+	Info_AddChoice	(Info_Mod_Bshydal_Hi, "Nie, nie mozesz tego zrobic.", Info_Mod_Bshydal_Hi_A);
 };
 
 FUNC VOID Info_Mod_Bshydal_Hi_C()
@@ -40,17 +40,17 @@ FUNC VOID Info_Mod_Bshydal_Hi_C()
 	AI_UseMob (self, "CHEST", 1);
 	AI_UseMob (self, "CHEST", -1);
 
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_00"); //(erschrocken) Wie, was ... nein ... das kann nicht sein.
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_01"); //Hä, was ist jetzt los?
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_02"); //Es ... es ist unmöglich, die Aufzeichnungen, es hat alles gestimmt. (wütend) Betrug, Täuschung, Verrat!
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_03"); //Ohh, scheinbar hat er nicht das gefunden, was er erhoffte.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_04"); //(außer sich) Verflucht, es darf nicht sein. Nein, nein, arrrrghhh ...
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_05"); //Der scheint jetzt aber mächtig angefressen.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_00"); //(nastraszony) Jak, co.... bez nie moze tak byc.
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_01"); //Huh, co sie teraz dzieje?
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_02"); //To.... prowadzenie dokumentacji jest niemozliwe, to wszystko bylo prawda. Oszustwo, oszustwo, zdrada!
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_03"); //Oh, najwyrazniej nie znalazl tego, na co mial nadzieje.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_04"); //Damn to nie moze byc. Nie, nie, nie, przylot....
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_C_15_05"); //Wyglada na to, ze jest teraz bardzo podekscytowany.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_06"); //(wahnsinnig) Ja, du warst es, du musst es gewesen sein, du hast es geraubt.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_07"); //Ich werde dich in tausend Stücke hacken und das Schwert an mich nehmen (durchgeknallt) und dann ... ja, (schreit) werde ich die Welt beherrschen. Stirb!
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_06"); //Tak, to ty byles, to byc moze byles, ukradles to.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_C_02_07"); //Bede ciete na tysiac kawalków i wziac miecz na mnie (buckling), a nastepnie....... Tak, bede rzadzil swiatem. Die!
 	
 	Info_ClearChoices	(Info_Mod_Bshydal_Hi);
 
@@ -61,20 +61,20 @@ FUNC VOID Info_Mod_Bshydal_Hi_C()
 
 FUNC VOID Info_Mod_Bshydal_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_B_15_00"); //Mach nur, du hast das Rennen gewonnen und dir das Schwert verdient.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_B_02_01"); //(irritiert) Wie ... ähh, was?
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_B_15_02"); //Ja, es war ein langes und zähes Ringen um das Schwert, das du für dich entschieden hast. Du bist also auch der würdige Träger des Schwertes.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_B_02_03"); //Was soll das werden ...? Egal. (grimmig) Ich nehme jetzt die Waffe an mich. (mit gezwungenem und knappem Lachen) Haha.
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_B_15_00"); //Idz dalej, wygrales wyscig i zarobiles miecz.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_B_02_01"); //(irytowany) Jak..... cóz, co?
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_B_15_02"); //Tak, to byla dluga i wytrwala walka o wybrany miecz. Wiec jestes równiez godnym okazicielem miecza.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_B_02_03"); //Co robisz....? Cokolwiek. Zabieram teraz bron. (z wymuszonym i golym smiechem) Haha.
 	
 	Info_Mod_Bshydal_Hi_C();
 };
 
 FUNC VOID Info_Mod_Bshydal_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_A_15_00"); //Nein, das dürft ihr nicht. Ihr würdet der Welt damit unvorstellbaren Schaden zufügen.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_A_02_01"); //Hahaha, dein Gejammer wird mich bestimmt nicht aufhalten.
-	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_A_02_02"); //Dafür wirst du dir Ehre haben, als Erster durch die Waffe zu sterben ... noch vor deinem Meister.
-	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_A_15_03"); //Neeein ...
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_A_15_00"); //Nie, nie mozesz tego zrobic. Czynilbys niewyobrazalne szkody dla swiata.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_A_02_01"); //Hahahaha, twoje zawodzenie mnie nie powstrzyma.
+	AI_Output(self, hero, "Info_Mod_Bshydal_Hi_A_02_02"); //W zamian bedziesz mial zaszczyt byc pierwszym, który umrze przez bron.... Wiecej przed swoim mistrzem.
+	AI_Output(hero, self, "Info_Mod_Bshydal_Hi_A_15_03"); //Nope.....
 	
 	Info_Mod_Bshydal_Hi_C();
 };
@@ -96,10 +96,10 @@ FUNC INT Info_Mod_Bshydal_NichtTot_Condition()
 
 FUNC VOID Info_Mod_Bshydal_NichtTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bshydal_NichtTot_02_00"); //Hehehe ...
-	AI_Output(hero, self, "Info_Mod_Bshydal_NichtTot_15_01"); //Wie, was, ich habe dich doch gerade ...
-	AI_Output(self, hero, "Info_Mod_Bshydal_NichtTot_02_02"); //Erschlagen? Narr, ich trage die Macht der Garde Innos’ in mir. Damit bin ich nun fast unsterblich.
-	AI_Output(hero, self, "Info_Mod_Bshydal_NichtTot_15_03"); //Diese Stärke und Macht ... überwältigend. Arrghhhh.
+	AI_Output(self, hero, "Info_Mod_Bshydal_NichtTot_02_00"); //....
+	AI_Output(hero, self, "Info_Mod_Bshydal_NichtTot_15_01"); //Lubie to, co cie spotkalem - - co ci sie podobalo?
+	AI_Output(self, hero, "Info_Mod_Bshydal_NichtTot_02_02"); //Hit go? Fool, mam we mnie moc Inno's Guard. To czyni mnie prawie niesmiertelnym.
+	AI_Output(hero, self, "Info_Mod_Bshydal_NichtTot_15_03"); //Ta sila i moc.... przytlaczajace. Arrghhhhhhh.
 
 	AI_StopProcessInfos	(self);
 

@@ -56,7 +56,7 @@ func void Spell_Cast_Telekinese()
 
 		B_GivePlayerXP	(100);
 
-		B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "Das sollte ihm eine Lehre sein.");
+		B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "To powinno go nauczyc.");
 	};
 
 	self.aivar[AIV_SelectSpell] += 1;

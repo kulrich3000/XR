@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rukhar_Hi (C_INFO)
 	information	= Info_Mod_Rukhar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Rukhar_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Rukhar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Rukhar_Hi_12_01"); //Ich bin Rukhar.
+	AI_Output(self, hero, "Info_Mod_Rukhar_Hi_12_01"); //Jestem Rukhar.
 };
 
 INSTANCE Info_Mod_Rukhar_WacholderDieb (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Rukhar_WacholderDieb (C_INFO)
 	information	= Info_Mod_Rukhar_WacholderDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein paar Fragen zu dem Wachholderdiebstahl bei Coragon!";
+	description	= "Mam kilka pytan dotyczacych mlodszego zlodzieja w Coragon!";
 };
 
 FUNC INT Info_Mod_Rukhar_WacholderDieb_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Rukhar_WacholderDieb_Condition()
 
 FUNC VOID Info_Mod_Rukhar_WacholderDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_00"); //Ich habe ein paar Fragen zu dem Wachholderdiebstahl bei Coragon!
-	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_01"); //Was? Wer hat dir das gesteckt? Ich hatte keine Wahl!
-	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_02"); //Ist ja schon gut, gib mir einfach den Wacholder.
-	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_03"); //Ich habe ihn nicht mehr. Aber ich gebe dir diese Notiz, sie wird dir helfen.
+	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_00"); //Mam kilka pytan dotyczacych mlodszego zlodzieja w Coragon!
+	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_01"); //Co? Kto wkladasz to do kieszeni? Nie mialem wyboru!
+	AI_Output(hero, self, "Info_Mod_Rukhar_WacholderDieb_15_02"); //To wszystko jest w porzadku, po prostu daj mi jalowca.
+	AI_Output(self, hero, "Info_Mod_Rukhar_WacholderDieb_12_03"); //Juz tego nie mam. Ale przekaze ci te notatke, to ci pomoze.
 
 	B_GiveInvItems	(self, hero, ItWr_Rukhar_Wacholder, 1);
 

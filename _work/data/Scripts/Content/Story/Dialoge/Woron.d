@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Woron_Hey_Condition()
 
 FUNC VOID Info_Mod_Woron_Hey_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Woron_Hey_06_00"); //Neu hier?
-	AI_Output(hero, self, "Info_Mod_Woron_Hey_15_01"); //Sieht so aus ...
-	AI_Output(self, hero, "Info_Mod_Woron_Hey_06_02"); //Nun, wenn du Waldläufer bist, kann ich dir einige unserer Waffen verkaufen.
+	AI_Output(self, hero, "Info_Mod_Woron_Hey_06_00"); //Nowa?
+	AI_Output(hero, self, "Info_Mod_Woron_Hey_15_01"); //Wyglada to tak....
+	AI_Output(self, hero, "Info_Mod_Woron_Hey_06_02"); //No cóz, jesli jestes Ranger, moge ci sprzedac troche naszej broni.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_WALDIS, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_WALDIS, "Woron wird mir Waffen verkaufen, sobald ich Waldläufer bin.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_WALDIS, "Jak tylko bede Ranger, Voron sprzeda mi bron.");
 };
 
 INSTANCE Info_Mod_Woron_Trade (C_INFO)

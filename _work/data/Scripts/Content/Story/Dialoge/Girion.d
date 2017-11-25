@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Girion_Hi (C_INFO)
 	information	= Info_Mod_Girion_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Girion_Hi_Condition()
@@ -20,11 +20,11 @@ FUNC VOID Info_Mod_Girion_Hi_Info()
 
 	if (Kapitel < 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Girion_Hi_08_01"); //Ich bin Girion, Ritter der Stadt.
+		AI_Output(self, hero, "Info_Mod_Girion_Hi_08_01"); //Jestem Girionem, rycerzem miasta.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Girion_Hi_08_02"); //Ich bin der Söldner Girion.
+		AI_Output(self, hero, "Info_Mod_Girion_Hi_08_02"); //Jestem najemniczka.
 	};
 };
 

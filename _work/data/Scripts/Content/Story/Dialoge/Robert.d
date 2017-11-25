@@ -20,15 +20,15 @@ FUNC INT Info_Mod_Robert_Andre_Condition()
 
 FUNC VOID Info_Mod_Robert_Andre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_00"); //Ah, du bist's. Hier, das solls'te abhol'n.
+	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_00"); //Ach, to ty. Tutaj podniesmy to.
 
 	B_GiveInvItems	(self, hero, ItBe_Kettenhemd, 1);
 
 	B_Say	(hero, self, "$WASISTDAS");
 
-	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_01"); //'n Kettenhemd. Das is' 'n Meisterwerk! Hatte noch nie so gutes Material im Ofen, geschweige denn unterm Hammer.
-	AI_Output(hero, self, "Info_Mod_Robert_Andre_15_02"); //Ich verstehe nicht.
-	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_03"); //Andre hat es in Auftrag gegeben. Hat gesagt, ich soll alles bereit machen für 'ne große Ladung magisches Erz und daraus 'n Kettenhemd schmieden. Du würdest es dann abholen.
+	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_01"); //Powloka poczty lancuchowej. To arcydzielo! Nigdy nie mial tak dobrego materialu w piecu, a tym bardziej pod mlotkiem.
+	AI_Output(hero, self, "Info_Mod_Robert_Andre_15_02"); //Nie rozumiem.
+	AI_Output(self, hero, "Info_Mod_Robert_Andre_05_03"); //Andre dostal zamówienie. Powinienem przygotowac sie na wielki ladunek magicznej rudy i zrobic z niej poczte lancuchowa. Wziawszy to pod uwage.
 };
 
 INSTANCE Info_Mod_Robert_Plagenquest (C_INFO)
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Robert_Plagenquest (C_INFO)
 	information	= Info_Mod_Robert_Plagenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Sachen, die ihr für die chemische Keule braucht.";
+	description	= "Dostalem wszystkie rzeczy potrzebne do tego klubu chemicznego.";
 };
 
 FUNC INT Info_Mod_Robert_Plagenquest_Condition()
@@ -60,11 +60,11 @@ FUNC INT Info_Mod_Robert_Plagenquest_Condition()
 
 FUNC VOID Info_Mod_Robert_Plagenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Plagenquest_15_00"); //Ich habe alle Sachen, die ihr für die chemische Keule braucht.
+	AI_Output(hero, self, "Info_Mod_Robert_Plagenquest_15_00"); //Dostalem wszystkie rzeczy potrzebne do tego klubu chemicznego.
 
-	B_ShowGivenThings	("Diverse Items gegeben");
+	B_ShowGivenThings	("Rózne podane pozycje");
 
-	AI_Output(self, hero, "Info_Mod_Robert_Plagenquest_05_01"); //Hey, gut man, dann leg ich mal los. Komm in paar Stunden wieder wieder.
+	AI_Output(self, hero, "Info_Mod_Robert_Plagenquest_05_01"); //Hej, dobry czlowiek, zaczynam. Wróc za kilka godzin.
 
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 8);
 	Npc_RemoveInvItems	(hero, ItMi_HolyWater, 2);
@@ -73,7 +73,7 @@ FUNC VOID Info_Mod_Robert_Plagenquest_Info()
 	Npc_RemoveInvItems	(hero, ItAt_LurkerSkin, 1);
 	Npc_RemoveInvItems	(hero, ItMi_StarkerTabak, 2);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Ich habe dem Schmied alles für die Keule gegeben und kann sie in einigen Stunden abholen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Dalem kowalowi wszystko do klubu i moge go odebrac w ciagu kilku godzin.");
 
 	B_GivePlayerXP	(150);
 
@@ -101,11 +101,11 @@ FUNC INT Info_Mod_Robert_Plagenquest_02_Condition()
 
 FUNC VOID Info_Mod_Robert_Plagenquest_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Robert_Plagenquest_02_05_00"); //Jo, gut man, habe das hübsche Stück fertig gemacht. Jetzt musst du nur noch zum Schrein Innos watscheln und die Weihe vollziehen.
+	AI_Output(self, hero, "Info_Mod_Robert_Plagenquest_02_05_00"); //Jo, dobry czlowiek, skonczylem ten ladny kawalek. Teraz wszystko, co musisz zrobic, to wpasc do swiatyni Innos i dokonac poswiecenia.
 
 	B_GiveInvItems	(self, hero, ItMw_Chemo_Unloaded, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Ich habe die Keule. Jetzt muss ich sie nur noch an einem Schrein Innos weihen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Dostalem klub. Teraz wszystko, co musze zrobic, to poswiecic je w sanktuarium Innos.");
 
 	B_GivePlayerXP	(200);
 };
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Robert_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Robert_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du Nägel?";
+	description	= "Sprzedajesz paznokcie?";
 };
 
 FUNC INT Info_Mod_Robert_Nagelnachschub_Condition()
@@ -131,16 +131,16 @@ FUNC INT Info_Mod_Robert_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Robert_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_00"); //Verkaufst du Nägel?
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_01"); //Nö. Die brauche ich schon selbst.
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_02"); //Kannst du denn keine herstellen?
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_03"); //Kann ich schon ... aber nicht ohne Auftrag.
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_04"); //Dann erteile ich dir den Auftrag, Nägel herzustellen.
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_05"); //Dafür benötige ich einen Eisenrohling, den ich einschmelzen kann ... und 'ne Flasche Grog als Bezahlung.
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_06"); //Wie viele Nägel kannst du fertigen?
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_07"); //Ich habe noch 'nen Haufen Arbeit vor mir. Ich fülle dir ein Paket randvoll, das muss reichen.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_00"); //Sprzedajesz paznokcie?
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_01"); //Nope. Ja sam tego potrzebuje.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_02"); //Czy nie mozesz ich wykonac?
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_03"); //Czy moge....? ale nie bez misji.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_04"); //Wtedy podam Ci zamówienie na paznokcie.
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_05"); //Do tego potrzebny jest mi zelazny slepy nablyszczacz, który moge rozpuscic..... i butelke grog jako zaplaty.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub_15_06"); //Ile paznokci mozesz zrobic?
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub_05_07"); //Mam duzo pracy do wykonania. Napelnie Cie paczka pelna, co bedzie trzeba zrobic.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Robert fertigt mir ein Paket voller Nägel an, wenn ich ihm einen Rohling und eine Flasche Grog bringe.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Robert robi z mnie paczke paznokci, kiedy przynose mu puste paznokcie i butelke grogu.");
 };
 
 INSTANCE Info_Mod_Robert_Nagelnachschub2 (C_INFO)
@@ -151,7 +151,7 @@ INSTANCE Info_Mod_Robert_Nagelnachschub2 (C_INFO)
 	information	= Info_Mod_Robert_Nagelnachschub2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du einen Rohling und den Grog.";
+	description	= "Oto pustka i grog.";
 };
 
 FUNC INT Info_Mod_Robert_Nagelnachschub2_Condition()
@@ -166,16 +166,16 @@ FUNC INT Info_Mod_Robert_Nagelnachschub2_Condition()
 
 FUNC VOID Info_Mod_Robert_Nagelnachschub2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub2_15_00"); //Hier hast du einen Rohling und den Grog.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub2_15_00"); //Oto pustka i grog.
 
 	Npc_RemoveInvItems	(hero, ItMiSwordraw, 1);
 	Npc_RemoveInvItems	(hero, ItFo_Addon_Grog, 1);
 
-	B_ShowGivenThings	("Grog und Rohstahl gegeben");
+	B_ShowGivenThings	("groty i stal surowa");
 
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub2_05_01"); //Na gut, ich mach mich an die Arbeit. Komm morgen wieder vorbei.
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub2_05_01"); //Dobrze, dostac sie do pracy. Wróc jutro.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Robert braucht einen Tag, um die Nägel herzustellen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Robert potrzebuje jednego dnia, aby zrobic paznokcie.");
 
 	Mod_REL_Nagelnachschub_Tag = Wld_GetDay();
 };
@@ -188,7 +188,7 @@ INSTANCE Info_Mod_Robert_Nagelnachschub3 (C_INFO)
 	information	= Info_Mod_Robert_Nagelnachschub3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du fertig?";
+	description	= "Czy jestes gotowy?";
 };
 
 FUNC INT Info_Mod_Robert_Nagelnachschub3_Condition()
@@ -202,12 +202,12 @@ FUNC INT Info_Mod_Robert_Nagelnachschub3_Condition()
 
 FUNC VOID Info_Mod_Robert_Nagelnachschub3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub3_15_00"); //Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub3_05_01"); //Hätte ich noch Kunden, wenn ich meine Termine nicht einhalten würde? Natürlich bin ich fertig.
+	AI_Output(hero, self, "Info_Mod_Robert_Nagelnachschub3_15_00"); //Czy jestes gotowy?
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub3_05_01"); //Czy nadal mam klientów, jesli nie dotrzymam terminów? Oczywiscie mam juz za soba.
 
 	B_GiveInvItems	(self, hero, ItMi_Nagelpaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub3_05_02"); //Und nun stör mich nicht weiter.
+	AI_Output(self, hero, "Info_Mod_Robert_Nagelnachschub3_05_02"); //Teraz juz nie przeszkadza mi.
 
 	B_GivePlayerXP	(50);
 };
@@ -220,7 +220,7 @@ INSTANCE Info_Mod_Robert_Dietriche (C_INFO)
 	information	= Info_Mod_Robert_Dietriche_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich komme von Thorben und möchte Dietriche in Auftrag geben.";
+	description	= "Pochodze z Thorben i chcialbym zamówic firme Dietriche.";
 };
 
 FUNC INT Info_Mod_Robert_Dietriche_Condition()
@@ -233,39 +233,39 @@ FUNC INT Info_Mod_Robert_Dietriche_Condition()
 
 FUNC VOID Info_Mod_Robert_Dietriche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_15_00"); //Ich komme von Thorben und möchte Dietriche in Auftrag geben.
-	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_05_01"); //Hast du den Rohstahl und 100 Goldmünzen?
+	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_15_00"); //Pochodze z Thorben i chcialbym zamówic firme Dietriche.
+	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_05_01"); //Czy masz surowe monety stalowe i 100 zlotych?
 
 	Info_ClearChoices	(Info_Mod_Robert_Dietriche);
 
-	Info_AddChoice	(Info_Mod_Robert_Dietriche, "Nein.", Info_Mod_Robert_Dietriche_B);
+	Info_AddChoice	(Info_Mod_Robert_Dietriche, "Nie.", Info_Mod_Robert_Dietriche_B);
 
 	if (Npc_HasItems(hero, ItMiSwordRaw) >= 5)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Robert_Dietriche, "Ja.", Info_Mod_Robert_Dietriche_A);
+		Info_AddChoice	(Info_Mod_Robert_Dietriche, "Tak.", Info_Mod_Robert_Dietriche_A);
 	};
 };
 
 FUNC VOID Info_Mod_Robert_Dietriche_B()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_B_15_00"); //Nein.
+	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_B_15_00"); //Nie.
 
 	Info_ClearChoices	(Info_Mod_Robert_Dietriche);
 };
 
 FUNC VOID Info_Mod_Robert_Dietriche_A()
 {
-	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_A_15_00"); //Ja.
+	AI_Output(hero, self, "Info_Mod_Robert_Dietriche_A_15_00"); //Tak.
 
 	Npc_RemoveInvItems	(hero, ItMiSwordRaw, 5);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 100);
 
-	B_ShowGivenThings	("100 Gold und 5 Rohstahl gegeben");
+	B_ShowGivenThings	("100 zlota i 5 zlota z dodatkiem stali surowej");
 
-	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_01"); //Es wird ein Weilchen dauern, bis ich fertig bin.
-	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_02"); //Ich werde die Dietriche dann einem Händler aus Khorinis mitgeben, und der wird sie an Thorben liefern.
-	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_03"); //Du musst also auf niemanden warten.
+	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_01"); //Wykonanie tego zadania zajelo mi troche czasu.
+	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_02"); //Nastepnie przekaze je dealerowi z Khorinis i dostarczy je do Thorben.
+	AI_Output(self, hero, "Info_Mod_Robert_Dietriche_A_05_03"); //Nie musisz na nikogo czekac.
 
 	Mod_Thorben_Dietriche = 3;
 

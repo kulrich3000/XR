@@ -1,7 +1,7 @@
 instance Mod_7012_HS_Typ_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Typ";
+	name 		= "typ";
 	guild 		= GIL_OUT;
 	id 			= 7012;
 	voice 		= 6;

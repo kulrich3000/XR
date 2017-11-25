@@ -2,7 +2,7 @@ instance Mod_1579_SLD_Soeldner_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Torwache";
+	name =					"bramka";
 	Npctype =				NPCTYPE_MAIN;
 	guild =					GIL_mil;       
 	level =					18;

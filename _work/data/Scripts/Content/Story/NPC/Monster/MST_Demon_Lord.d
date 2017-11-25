@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DemonLord(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Dämonenlord";
+	name							= "demon";
 	guild							= GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= ID_DEMON_LORD;
 	level							= 150;
@@ -84,7 +84,7 @@ INSTANCE DemonLord	(Mst_Default_DemonLord)
 
 INSTANCE DemonLord_Xeres	(Mst_Default_DemonLord)
 {
-	name		= "Xeres";
+	name		= "Xeze";
 
 	attribute	[ATR_STRENGTH]		= 400;
 	attribute	[ATR_HITPOINTS_MAX]	= 1000;
@@ -96,7 +96,7 @@ INSTANCE DemonLord_Xeres	(Mst_Default_DemonLord)
 
 INSTANCE DemonHigh	(Mst_Default_DemonLord)
 {
-	name	=	"Hoher Dämon";
+	name	=	"Wysokie Demonston";
 
 	level	=	200;
 
@@ -106,7 +106,7 @@ INSTANCE DemonHigh	(Mst_Default_DemonLord)
 
 INSTANCE DemonHigh_Randolph	(Mst_Default_DemonLord)
 {
-	name	=	"Hoher Dämon";
+	name	=	"Wysokie Demonston";
 
 	level	=	200;
 

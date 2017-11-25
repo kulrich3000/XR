@@ -1,7 +1,7 @@
 INSTANCE Mod_7444_SLD_Gorn_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gorn";
+	name 		= "hejnal";
 	guild 		= GIL_OUT;
 	id 			= 7444;
 	voice 		= 12;

@@ -1,6 +1,6 @@
 INSTANCE ItAt_Crawlerqueen(C_Item)
 {	
-	name 					=	"Minecrawler Ei";
+	name 					=	"Jajka do tralowania Minecrawler";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -11,17 +11,17 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Diese Eier wurden von einer";
-	TEXT[1]					=	"Minecrawler-Königin gelegt.";
-	TEXT[2]					=	"Sie enthalten ein viel stärkeres Sekret";
-	TEXT[3]					=	"als die Zangen der normalen Minecrawler.";
-	TEXT[4]					=	"Das Sekret lässt sich an Alchemietischen abfüllen.";
+	TEXT[0]					=	"Jaja te zebrano";
+	TEXT[1]					=	"Królowa Minecrawler.";
+	TEXT[2]					=	"Zawieraja duzo silniejsza sekrecje";
+	TEXT[3]					=	"niz szczypce zwyklych maszyn do mineralizacji.";
+	TEXT[4]					=	"wydzieline mozna butelkowac na stolach alchemicznych.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
 INSTANCE Mehlsack(C_Item)
 {	
-	name 					=	"Mehlsack";
+	name 					=	"woreczek z maki";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -38,7 +38,7 @@ INSTANCE Mehlsack(C_Item)
 
 INSTANCE Pfeilspitze(C_Item)
 {	
-	name 					=	"Pfeilspitze";
+	name 					=	"strzala";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -55,7 +55,7 @@ INSTANCE Pfeilspitze(C_Item)
 
 INSTANCE SchmetterPfeilspitze(C_Item)
 {	
-	name 					=	"Schmetterpfeilspitze";
+	name 					=	"strzalka motylkowa";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -72,7 +72,7 @@ INSTANCE SchmetterPfeilspitze(C_Item)
 
 INSTANCE Pfeilspitze_GoldErz(C_Item)
 {	
-	name 					=	"Pfeilspitze mit Gold-Erz-Legierung";
+	name 					=	"Strzalka z ruda zlota stopu rudy zlota";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -89,7 +89,7 @@ INSTANCE Pfeilspitze_GoldErz(C_Item)
 
 INSTANCE Pfeilspitze_GoldErzBlut(C_Item)
 {	
-	name 					=	"Pfeilspitze mit Gold-Erz-Blut-Legierung";
+	name 					=	"Strzalka z rudo-krewetowym stopem zlota";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -106,7 +106,7 @@ INSTANCE Pfeilspitze_GoldErzBlut(C_Item)
 
 INSTANCE Bolzenspitze(C_Item)
 {	
-	name 					=	"Bolzenspitze";
+	name 					=	"koncówka sruby";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -123,7 +123,7 @@ INSTANCE Bolzenspitze(C_Item)
 
 INSTANCE SchmetterBolzenspitze(C_Item)
 {	
-	name 					=	"Schmetterbolzenspitze";
+	name 					=	"Koncówka sruby motylkowej";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -140,7 +140,7 @@ INSTANCE SchmetterBolzenspitze(C_Item)
 
 INSTANCE Bolzenspitze_GoldErz(C_Item)
 {	
-	name 					=	"Bolzenspitze mit Gold-Erz-Legierung";
+	name 					=	"Koncówka sruby z ruda zlota stopu zlota";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -157,7 +157,7 @@ INSTANCE Bolzenspitze_GoldErz(C_Item)
 
 INSTANCE Bolzenspitze_GoldErzBlut(C_Item)
 {	
-	name 					=	"Bolzenspitze mit Gold-Erz-Blut-Legierung";
+	name 					=	"Koncówka bolca z rudo-krewetkowym stopem zlota";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -174,7 +174,7 @@ INSTANCE Bolzenspitze_GoldErzBlut(C_Item)
 
 INSTANCE Pfeilstab(C_Item)
 {	
-	name 					=	"Pfeilschaft";
+	name 					=	"wal strzalki";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	

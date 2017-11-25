@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Cavalorn_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Cavalorn_AW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_00"); //Moment. Ich habe eine Nachricht für dich.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_AW_Hi_15_01"); //Ich höre ...
-	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_02"); //Wenn du in die Stadt kommst, sollst du am Tempelplatz vorbei schauen.
-	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_03"); //Da steht ein Kerl, der will dich unbedingt sprechen.
-	AI_Output(hero, self, "Info_Mod_Cavalorn_AW_Hi_15_04"); //Wenn's sonst nichts ist.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_00"); //Trzymac wlaczony, trzymac wcisniety. Mam dla Panstwa wiadomosc.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_AW_Hi_15_01"); //Slysze.....
+	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_02"); //Kiedy przyjedziesz do miasta, przejdziesz przez plac swiatyni.
+	AI_Output(self, hero, "Info_Mod_Cavalorn_AW_Hi_36_03"); //Tam stoi facet, który chce cie zobaczyc.
+	AI_Output(hero, self, "Info_Mod_Cavalorn_AW_Hi_15_04"); //Jesli to nic innego.
 
 	B_StartOtherRoutine	(self, "TOT");
 };

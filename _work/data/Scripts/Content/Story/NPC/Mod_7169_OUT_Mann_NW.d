@@ -1,7 +1,7 @@
 instance Mod_7169_OUT_Mann_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mann";
+	name 		= "wspólpracownik";
 	guild 		= GIL_OUT;
 	id 			= 7169;
 	voice 		= 3;

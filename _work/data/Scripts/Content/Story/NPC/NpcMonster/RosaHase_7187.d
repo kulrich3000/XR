@@ -1,6 +1,6 @@
 INSTANCE RosaHase_7187	(Mst_Default_Rabbit)
 {
-	name	=	"Rosa Hase";
+	name	=	"Królik rózowy";
 	
 	guild							=	GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MEATBUG;

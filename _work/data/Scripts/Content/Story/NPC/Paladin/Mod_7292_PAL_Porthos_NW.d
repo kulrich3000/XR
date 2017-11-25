@@ -1,7 +1,7 @@
 instance Mod_7292_PAL_Porthos_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Porthos";
+	name 		= "bulaje";
 	guild 		= GIL_pal;
 	id 			= 7292;
 	voice 		= 3;

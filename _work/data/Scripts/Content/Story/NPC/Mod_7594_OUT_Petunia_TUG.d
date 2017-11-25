@@ -1,6 +1,6 @@
 INSTANCE Mod_7594_OUT_Petunia_TUG (Npc_Default)
 {
-	name 		= "Petunia";
+	name 		= "petunia";
 	guild 		= GIL_OUT;
 	id 		= 7594;
 	voice 		= 16;

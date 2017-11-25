@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBauer_05_Hi (C_INFO)
 	information	= Info_Mod_HSBauer_05_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was ist das hier für 'ne Gegend?";
+	description	= "Czym jest ta okolica?";
 };
 
 FUNC INT Info_Mod_HSBauer_05_Hi_Condition()
@@ -16,47 +16,47 @@ FUNC INT Info_Mod_HSBauer_05_Hi_Condition()
 
 FUNC VOID Info_Mod_HSBauer_05_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_15_00"); //Was ist das hier für 'ne Gegend?
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_01"); //Maaan ... du siehst das alles viel zu eng, m'kay?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_15_00"); //Czym jest ta okolica?
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_01"); //Maaan.... Widzisz to wszystko za ciasno, m' kay?
 	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_15_02"); //...?
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_03"); //Weißt du, ich war auch mal so wie du, m'kay?
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_04"); //Ich dachte wir sind alle nur ein Individuum auf dieser Welt ... aber in Wahrheit sind wir alle riesengroße Individuen, m'kay?
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_05"); //Verstehst du die Message, die ich dir so rüberbringen will?
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_03"); //Wiesz, bylem taki jak kiedys, m kay?
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_04"); //Myslalem, ze na tym swiecie jestesmy tylko jednostka.... Ale prawda jest taka, ze wszyscy jestesmy ogromnymi jednostkami, m' kay?
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_05_05"); //Czy zrozumiales/as wiadomosc, która staram sie Ci przekazac?
 
 	Info_ClearChoices	(Info_Mod_HSBauer_05_Hi);
 
-	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "Aber wenn wir alle ein riesengroßes Individuum sind, woran misst du diese Große?", Info_Mod_HSBauer_05_Hi_C);
-	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "Ja ... ist klar.", Info_Mod_HSBauer_05_Hi_B);
-	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "So spät ist es schon?", Info_Mod_HSBauer_05_Hi_A);
+	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "Ale jesli wszyscy jestesmy ogromna jednostka, co mierzysz ta wielkoscia?", Info_Mod_HSBauer_05_Hi_C);
+	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "Tak..... jest jasne.", Info_Mod_HSBauer_05_Hi_B);
+	Info_AddChoice	(Info_Mod_HSBauer_05_Hi, "To juz pózno?", Info_Mod_HSBauer_05_Hi_A);
 };
 
 FUNC VOID Info_Mod_HSBauer_05_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_00"); //Aber wenn wir alle ein riesengroßes Individuum sind, woran misst du diese Große?
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_01"); //Du brauchst einen Maßstab, um etwas groß zu nennen, und wir können nicht alle große Individuen sein, da wir gegenseitig der Maßstab für uns selbst sind.
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_02"); //Also muss „riesengroß“ relativ auf den Durchschnitt sein, wodurch es aber so sein muss, dass der Großteil durchschnittliche Individuen sind und es ein paar große und dafür auch ein paar kleine gibt.
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_C_05_03"); //Aber ... äh ... wir sind alle ein riesengroßes Individuum, verstehst du?
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_04"); //Nun du kannst auch nicht Individuum sagen, da wir unsere gesamte Welt nicht aus der Sicht des Individualismus ansehen dürfen.
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_05"); //Abgesehen von dem inneren Drang des Menschen, in einer Gruppe Schutz und Geborgenheit zu suchen, liegt es auch in unserer Natur, wie Tiere Rudel zu bilden.
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_06"); //Letzten Endes bist auch du in einem solchen Rudel, und in einem „Rudel“ geht es nicht um das Individuum sondern um das Wohl der Gesamtheit.
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_C_05_07"); //Darüber muss ich jetzt ein wenig nachdenken, mein Freund ... m'kay?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_00"); //Ale jesli wszyscy jestesmy ogromna jednostka, co mierzysz ta wielkoscia?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_01"); //Potrzebujesz miernika, aby nazywac cos wielkiego, a my nie wszyscy mozemy byc duzymi indywidualistami, poniewaz my sami jestesmy miernikiem dla siebie.
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_02"); //Tak wiec "ogromne" musi byc w stosunku do sredniej, co oznacza, ze wiekszosc z nich to przecietne osobniki i jest kilka duzych i kilka malych.
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_C_05_03"); //Ale.... uh..... My wszyscy jestesmy ogromna jednostka, wiesz?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_04"); //Cóz, nie da sie powiedziec tego, co indywidualne, bo z perspektywy indywidualizmu nie mozemy patrzec na caly nasz swiat.
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_05"); //Oprócz wewnetrznej sklonnosci czlowieka do szukania ochrony i bezpieczenstwa w grupie, w naturze jest równiez formowanie paczek zwierzat.
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_C_15_06"); //W koncu Ty tez jestes w takim zestawie, a w "paczce" nie chodzi o jednostke, ale o dobre samopoczucie calosci.
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_C_05_07"); //Musze teraz pomyslec o tym, mój przyjaciel..... Czy moze kay?
 
 	Info_ClearChoices	(Info_Mod_HSBauer_05_Hi);
 };
 
 FUNC VOID Info_Mod_HSBauer_05_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_B_15_00"); //Ja ... ist klar.
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_B_05_01"); //Schön, mein Freund. Du hast die Message, m'kay?
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_B_15_02"); //M'kay!
-	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_B_05_03"); //M'kay ...
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_B_15_00"); //Tak..... jest jasne.
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_B_05_01"); //Dobrze, mój przyjaciel. Dostales wiadomosc, m' kay?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_B_15_02"); //O kay!
+	AI_Output(self, hero, "Info_Mod_HSBauer_05_Hi_B_05_03"); //M' kay....
 
 	Info_ClearChoices	(Info_Mod_HSBauer_05_Hi);
 };
 
 FUNC VOID Info_Mod_HSBauer_05_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_A_15_00"); //So spät ist es schon?
+	AI_Output(hero, self, "Info_Mod_HSBauer_05_Hi_A_15_00"); //To juz pózno?
 
 	Info_ClearChoices	(Info_Mod_HSBauer_05_Hi);
 };

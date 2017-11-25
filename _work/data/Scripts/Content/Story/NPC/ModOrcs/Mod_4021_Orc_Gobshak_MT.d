@@ -1,7 +1,7 @@
 INSTANCE Mod_4021_Orc_Gobshak_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Gobshak";
+	name							=	"gobsak";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	4021;
 	voice							=	18;

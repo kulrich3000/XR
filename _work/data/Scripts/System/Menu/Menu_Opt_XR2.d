@@ -42,8 +42,8 @@ INSTANCE MENUITEM_XR2_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR2_BLOODSPLATS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Blutspritzer";
-	text[1]		= 	"Blutspritzer (an/aus)"; // Kommentar
+	text[0]		=	"krew rozlana";
+	text[1]		= 	"Rozproszenie krwi (wlaczanie/wylaczanie)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*-1;
 	dimx		=	3000;	dimy		=	750;
@@ -57,7 +57,7 @@ instance MENUITEM_XR2_BLOODSPLATS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"an|aus";
+	text[0]		= 	"off";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*-1 + MENU_CHOICE_YPLUS;
@@ -78,8 +78,8 @@ instance MENUITEM_XR2_BLOODSPLATS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR2_RESPAWN(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Respawn";
-	text[1]		= 	"Respawn (an/aus)"; // Kommentar
+	text[0]		=	"oddech";
+	text[1]		= 	"Wlaczanie/wylaczanie oddechów"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -93,7 +93,7 @@ instance MENUITEM_XR2_RESPAWN_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"an|aus";
+	text[0]		= 	"off";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -111,7 +111,7 @@ instance MENUITEM_XR2_RESPAWN_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR2_LAST(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Vorherige";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_02_START_Y + MENU_CREDITS_02_DY*8;
 	dimx		=	4096;		dimy		=	800;
@@ -125,7 +125,7 @@ INSTANCE MENUITEM_XR2_LAST(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR2_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y+500;
 	dimx		=	6192;		dimy		=	MENU_DY;

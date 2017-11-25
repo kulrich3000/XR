@@ -406,7 +406,7 @@ Wld_InsertNpc (Wolf_RELENDEL,"FP_ROAM_Relendel_WOLF_52");
 INSTANCE Scavenger_RELENDEL	(Mst_Default_Scavenger)
 {
 	//----- Monster ----
-	name							=	"Alter Scavenger";
+	name							=	"Stare padlinozerca";
 	guild							=	GIL_SCAVENGER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SCAVENGER;
 	
@@ -449,7 +449,7 @@ INSTANCE Scavenger_RELENDEL	(Mst_Default_Scavenger)
 INSTANCE Molerat_RELENDEL	(Mst_Default_Molerat)
 {
 	//----- Monster ----
-	name							=	"Alter Molerat";
+	name							=	"Wiekowy melinian";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MOLERAT;
 	level							=	5;
@@ -485,7 +485,7 @@ INSTANCE Molerat_RELENDEL	(Mst_Default_Molerat)
 INSTANCE Lurker_RELENDEL	(Mst_Default_Lurker)
 {
 	//----- Monster ----
-	name							=	"Lurker";
+	name							=	"czarownik";
 	guild							=	GIL_LURKER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_LURKER;
 	level							=	12;
@@ -518,7 +518,7 @@ INSTANCE Lurker_RELENDEL	(Mst_Default_Lurker)
 INSTANCE Troll_Black_RELENEDL	(Mst_Default_Troll_Black)
 {
 	//----- Monster ----
-	name							=	"Vigor";
+	name							=	"energia";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_BLACK;
 	level							=	200; //40
@@ -551,7 +551,7 @@ INSTANCE Troll_Black_RELENEDL	(Mst_Default_Troll_Black)
 INSTANCE Wolf_RELENDEL	(Mst_Default_Wolf)
 {
 	//----- Monster ----
-	name							=	"Leitwolf";
+	name							=	"prowadzacy";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	level							=	6;

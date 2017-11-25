@@ -1,7 +1,7 @@
 instance Mod_1260_RIT_Neron_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Neron";
+	name 		= "bezwon";
 	guild 		= GIL_PAL;
 	id 			= 1260;
 	voice 		= 4;

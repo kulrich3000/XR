@@ -1,7 +1,7 @@
 INSTANCE Mod_936_PIR_Matt_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Matt";
+	name 		= "pospolity";
 	guild 		= GIL_NONE;
 	id 			= 936;
 	voice 		= 10;

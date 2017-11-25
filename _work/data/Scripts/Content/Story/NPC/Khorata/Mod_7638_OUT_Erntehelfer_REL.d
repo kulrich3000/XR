@@ -1,7 +1,7 @@
 instance Mod_7638_OUT_Erntehelfer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Erntehelfer"; 
+	name 		= "zency"; 
 	guild 		= GIL_OUT;
 	id 			= 7638;
 	voice 		= 6;

@@ -2,7 +2,7 @@ instance Mod_1113_GRD_Fletcher_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Fletcher";
+	name 		=	"Nosze";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		=	15;

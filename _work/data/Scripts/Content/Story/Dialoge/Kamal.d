@@ -12,12 +12,12 @@ FUNC VOID B_Say_KamalGift()
 	AI_Output(hero, self, "Info_Mod_Kamal_Gift_15_09"); //Er sagt 600 Gold.
 	AI_Output(self, hero, "Info_Mod_Kamal_Gift_11_10"); //Sind wir hier auf dem Basar? 750.
 
-	B_ShowGivenThings	("750 Gold gegeben und Gift erhalten");
+	B_ShowGivenThings	("750 darowane zloto i otrzymana trucizna");
 
 	CreateInvItems	(hero, ItPo_KamalGift, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 750);
 
-	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Ich hab das Gift. Jetzt nichts wie los zum Richter.");
+	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Dostalem trucizne. Idzmy teraz do sedziego.");
 };
 
 INSTANCE Info_Mod_Kamal_Hi (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Kamal_Hi (C_INFO)
 	information	= Info_Mod_Kamal_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist Kamal, der Alchemist?";
+	description	= "Jestes Kamal, alchemik?";
 };
 
 FUNC INT Info_Mod_Kamal_Hi_Condition()
@@ -42,9 +42,9 @@ FUNC INT Info_Mod_Kamal_Hi_Condition()
 
 FUNC VOID Info_Mod_Kamal_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kamal_Hi_15_00"); //Du bist Kamal, der Alchemist?
-	AI_Output(self, hero, "Info_Mod_Kamal_Hi_11_01"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Kamal_Hi_15_02"); //Einer, der eine Bitte hat ...
+	AI_Output(hero, self, "Info_Mod_Kamal_Hi_15_00"); //Jestes Kamal, alchemik?
+	AI_Output(self, hero, "Info_Mod_Kamal_Hi_11_01"); //Mówi kto kogo?
+	AI_Output(hero, self, "Info_Mod_Kamal_Hi_15_02"); //Osoba, która ma prosbe....
 
 	B_Say_KamalGift();
 };
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Kamal_Blutkelch (C_INFO)
 	information	= Info_Mod_Kamal_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Er schon wieder.";
+	description	= "On znowu.";
 };
 
 FUNC INT Info_Mod_Kamal_Blutkelch_Condition()
@@ -71,9 +71,9 @@ FUNC INT Info_Mod_Kamal_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Kamal_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kamal_Blutkelch_15_00"); //Er schon wieder.
-	AI_Output(self, hero, "Info_Mod_Kamal_Blutkelch_11_01"); //Aha. Der Kräutermann. Hast du noch welche?
-	AI_Output(hero, self, "Info_Mod_Kamal_Blutkelch_15_02"); //Das nicht. Aber eine Bitte hat er ...
+	AI_Output(hero, self, "Info_Mod_Kamal_Blutkelch_15_00"); //On znowu.
+	AI_Output(self, hero, "Info_Mod_Kamal_Blutkelch_11_01"); //Uh-huh. Ziolo mezczyzna. Masz jeszcze jakies?
+	AI_Output(hero, self, "Info_Mod_Kamal_Blutkelch_15_02"); //Nie ten jeden. Ale ma jeden wniosek....
 
 	B_Say_KamalGift();
 };
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Kamal_Zutaten (C_INFO)
 	information	= Info_Mod_Kamal_Zutaten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe du bist Kamal, der Alchemist?";
+	description	= "Widze, ze jestes Kamal, alchemik?";
 };
 
 FUNC INT Info_Mod_Kamal_Zutaten_Condition()
@@ -99,24 +99,24 @@ FUNC INT Info_Mod_Kamal_Zutaten_Condition()
 
 FUNC VOID Info_Mod_Kamal_Zutaten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_00"); //Ich sehe du bist Kamal, der Alchemist?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_01"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_02"); //Einer, der dir zur Hand gehen will ...
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_03"); //Und warum will er das?
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_04"); //Er möchte Magier werden wie du.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_05"); //Und mich arbeitslos machen?
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_06"); //Nein, nein. Er würde lieber eure Zauber lernen. Dafür muss er erst mal Punkte sammeln bei den Magiern.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_07"); //Wohl wahr. Er kann mir einen Gefallen tun.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_08"); //Was liegt an?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_09"); //Mir gehen die Ingredienzien aus.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_10"); //Die was?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_11"); //Zutaten für meine Gifte. Ich brauche Fliegenstachel, Höllenpilze und ein paar Fliegenpilze. Jeweils fünf sollten genügen.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_12"); //Wo findet er das?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_13"); //Was weiß ich. Bin noch nicht lange auf der Insel. Kenne mich nicht aus. Vielleicht wissen die Jäger etwas. Nun mache er hin.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_00"); //Widze, ze jestes Kamal, alchemik?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_01"); //Mówi kto kogo?
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_02"); //Kto chce dac ci reke.....
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_03"); //I dlaczego tego chce?
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_04"); //Chce byc jak ty magikiem.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_05"); //A ja jestem bezrobotny?
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_06"); //Nie, nie, nie, nie, nie. Wolal raczej uczyc sie swoich zaklec. W tym celu musi zebrac punkty z magami.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_07"); //To wystarczy. On moze mi zrobic laske.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_08"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_09"); //Brakuje mi skladników.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_10"); //Co?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_11"); //Skladniki dla moich trucizn. Potrzebuje kolców muchówek, grzybów piekielnych i niektórych muchówek. Kazda z nich powinna wystarczyc po piec.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten_15_12"); //Gdzie on to widzi?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten_11_13"); //Skad powinienem wiedziec? Nie bylem na wyspie od dawna. Nie wiem kim jestem. Moze mysliwi cos wiedza. Teraz on idzie.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_KAMAL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_KAMAL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_KAMAL, "Ich will Novize werden. Dazu soll ich Zutaten für Kamal besorgen. Jeweils 5 Blutfliegenstachel, Fliegenpilze und Höllenpilze. Hm ... bei wem kann ich Stachel ziehen lernen? Die Pilze finde ich im Minental.");
+	B_LogEntry	(TOPIC_MOD_ASS_KAMAL, "Chce byc nowicjuszem. Mam otrzymac dla Kamala kilka skladników. 5 szpików, muchówek i grzybów piekielnych. Hm.... z kim moge nauczyc sie ciagnac kolce? Grzyby znajduja sie w Minental.");
 };
 
 INSTANCE Info_Mod_Kamal_Zutaten2 (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Kamal_Zutaten2 (C_INFO)
 	information	= Info_Mod_Kamal_Zutaten2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Er ist zurück.";
+	description	= "On jest z powrotem.";
 };
 
 FUNC INT Info_Mod_Kamal_Zutaten2_Condition()
@@ -143,27 +143,27 @@ FUNC INT Info_Mod_Kamal_Zutaten2_Condition()
 
 FUNC VOID Info_Mod_Kamal_Zutaten2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_00"); //Er ist zurück.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_01"); //Wer?
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_02"); //Der mit den Pilzen und so.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_03"); //Ach der. Kann ich sehen?
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_04"); //Hier, fünf Stachel und hier fünf Höllenpilze. Und da noch fünf Fliegenpilze. Sind sehr selten auf Khorinis.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_00"); //On jest z powrotem.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_01"); //Kto?
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_02"); //Ten z grzybami i wszystkimi.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_03"); //Ach, ten jeden. Czy widze?
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_04"); //Tutaj piec zadlaczy i piec piekielnych grzybów. Istnieje piec muchówek. Bardzo rzadkie nahorynie.
 
 	Npc_RemoveInvItems	(hero, ItAt_Sting, 5);
 	Npc_RemoveInvItems	(hero, ItPl_Mushroom_03, 5);
 	Npc_RemoveInvItems	(hero, ItFo_Plants_Mushroom_01, 5);
 
-	B_ShowGivenThings	("5 Stachel, 5 Fliegenpilze und 5 Höllenpilze gegeben");
+	B_ShowGivenThings	("5 grzbietów, 5 muchówek i 5 grzybów piekielnych.");
 
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_05"); //Weitere Fliegenpilze, die gefunden werden, können gebracht werden. Es winkt gutes Gold.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_06"); //Wem?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_07"); //Dem Finder natürlich.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_08"); //Natürlich. Kennst du jemanden, dem er auch zur Hand gehen kann?
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_09"); //Dem Malek. Er jammert immer, er habe nicht genug Mana.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_10"); //Kannst du ihm denn nicht helfen.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_11"); //Nein. Ich versteh mich nur auf Gifte.
-	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_12"); //Aha. Er geht dann mal. Und vergiss nicht, ihm deine Stimme zu geben.
-	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_13"); //Er kann sich drauf verlassen.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_05"); //Mozna wprowadzic inne znalezione muchówki. To jest dobre zloto.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_06"); //Do kogo?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_07"); //Oczywiscie Finder.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_08"); //Oczywiscie tak jest. Czy znasz kogokolwiek, komu moze pomóc?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_09"); //Malek. Zawsze narzeka, ze nie ma wystarczajacej ilosci maniku.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_10"); //Nie mozesz mu pomóc?
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_11"); //Nie. Rozumiem tylko trucizny.
+	AI_Output(hero, self, "Info_Mod_Kamal_Zutaten2_15_12"); //Uh-huh. On jest gonna. I nie zapomnij mu dac swój glos.
+	AI_Output(self, hero, "Info_Mod_Kamal_Zutaten2_11_13"); //Moze na tym liczyc.
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_KAMAL, LOG_SUCCESS);
 
@@ -214,7 +214,7 @@ INSTANCE Info_Mod_Kamal_Lehrer (C_INFO)
 	information	= Info_Mod_Kamal_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich könnte paar magische Sachen brauchen.";
+	description	= "Móglbym uzyc jakichs magicznych rzeczy.";
 };
 
 FUNC INT Info_Mod_Kamal_Lehrer_Condition()
@@ -227,10 +227,10 @@ FUNC INT Info_Mod_Kamal_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Kamal_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kamal_Lehrer_15_00"); //Ich könnte paar magische Sachen brauchen.
-	AI_Output(self, hero, "Info_Mod_Kamal_Lehrer_11_01"); //Bin Alchemist, kein Händler. Aber ich könnte dir beibringen, wie man Gifte braut.
-	AI_Output(self, hero, "Info_Mod_Kamal_Lehrer_11_02"); //Wenn du was kaufen willst, musst du zu Mufid gehen.
-	AI_Output(hero, self, "Info_Mod_Kamal_Lehrer_15_03"); //Danke für den Tip.
+	AI_Output(hero, self, "Info_Mod_Kamal_Lehrer_15_00"); //Móglbym uzyc jakichs magicznych rzeczy.
+	AI_Output(self, hero, "Info_Mod_Kamal_Lehrer_11_01"); //Jestem alchemikiem, a nie dealerem. Moge jednak nauczyc sie jak warzyc trucizny.
+	AI_Output(self, hero, "Info_Mod_Kamal_Lehrer_11_02"); //Jesli chcesz cos kupic, musisz udac sie do Mufid' s.
+	AI_Output(hero, self, "Info_Mod_Kamal_Lehrer_15_03"); //Dziekujemy za koncówke.
 };
 
 INSTANCE Info_Mod_Kamal_Fliegenpilze (C_INFO)
@@ -241,7 +241,7 @@ INSTANCE Info_Mod_Kamal_Fliegenpilze (C_INFO)
 	information	= Info_Mod_Kamal_Fliegenpilze_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Er hat frische Fliegenpilze.";
+	description	= "Ma swieza agaryke muchowa.";
 };
 
 FUNC INT Info_Mod_Kamal_Fliegenpilze_Condition()
@@ -259,11 +259,11 @@ FUNC VOID Info_Mod_Kamal_Fliegenpilze_Info()
 
 	KamalPilze = Npc_HasItems(hero, ItPl_Mushroom_03);
 
-	AI_Output(hero, self, "Info_Mod_Kamal_Fliegenpilze_15_00"); //Er hat frische Fliegenpilze.
+	AI_Output(hero, self, "Info_Mod_Kamal_Fliegenpilze_15_00"); //Ma swieza agaryke muchowa.
 
 	B_GiveInvItems	(hero, self, ItPl_Mushroom_03, KamalPilze);
 
-	AI_Output(self, hero, "Info_Mod_Kamal_Fliegenpilze_11_01"); //Und hier hat er seinen Lohn.
+	AI_Output(self, hero, "Info_Mod_Kamal_Fliegenpilze_11_01"); //Oto jego nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, KamalPilze*50);
 
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Kamal_Lernen (C_INFO)
 	information	= Info_Mod_Kamal_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir etwas über die Alchemie bei.";
+	description	= "Naucz mnie alchemii.";
 };
 
 FUNC INT Info_Mod_Kamal_Lernen_Condition()
@@ -302,42 +302,42 @@ FUNC VOID Info_Mod_Kamal_Lernen_Info()
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_07] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Trank der leichten Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Kamal_Lernen_Health_07);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Napój lekkiego leczenia", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Kamal_Lernen_Health_07);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Leichter Heiltrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Kamal_Lernen_Health_06);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Lekki eliksir leczniczy", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Kamal_Lernen_Health_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Trank der schnellen Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Kamal_Lernen_Health_05);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Napoje szybko lecznicze", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Kamal_Lernen_Health_05);
 	};	
 	
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Trank des leichten Mana", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Kamal_Lernen_Mana_06);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Pic lekka mane", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Kamal_Lernen_Mana_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Leichte Manatrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Kamal_Lernen_Mana_05);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Eliksir lekki", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Kamal_Lernen_Mana_05);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Trank der Geschwindigkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Kamal_Lernen_Speed);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Szybkosc", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Kamal_Lernen_Speed);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_GiftNeutralisierer] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Trank der temporären Giftimmunität", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_GiftNeutralisierer)), Info_Mod_Kamal_Lernen_GiftNeutralisierer);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Zanieczyszczenia wywolane tymczasowa odpornoscia toksyczna", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_GiftNeutralisierer)), Info_Mod_Kamal_Lernen_GiftNeutralisierer);
 	};                                                                                                                                                                            
 	if (PLAYER_TALENT_ALCHEMY[POTION_Gift] == FALSE)
 	{                                                                                                                                                                                     
-		Info_AddChoice (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Mischgift", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Gift)), Info_Mod_Kamal_Lernen_Gift);               
+		Info_AddChoice (Info_Mod_Kamal_Lernen, B_BuildLearnString ("trucizna mieszana", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Gift)), Info_Mod_Kamal_Lernen_Gift);               
 	};
 };
 FUNC VOID Info_Mod_Kamal_Lernen_BACK()

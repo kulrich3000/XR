@@ -41,12 +41,12 @@ instance ItRi_RingGewandtheit(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Rechter Ring des Gewandtheit";
+	description				= "Pierscien prawy Zrecznosc";
 	
 	TEXT[2]					= NAME_Bonus_DEX;
 	COUNT[2]				= 10;
 
-	TEXT[4]			= "Set: Gewandtheit des Schützen";
+	TEXT[4]			= "Zestaw: Zrecznosc strzelajacego";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -90,12 +90,12 @@ instance ItRi_RingAusdauer(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Linker Ring des Ausdauer";
+	description				= "Lewy pierscien z lewej strony wytrzymalosciowy";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= 10;
 
-	TEXT[4]			= "Set: Gewandtheit des Schützen";
+	TEXT[4]			= "Zestaw: Zrecznosc strzelajacego";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;

@@ -2,7 +2,7 @@ instance Mod_1105_EBR_Arto_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Arto";
+	name 		=	"art";
 	npctype 	= 	npctype_main;
    	guild 		=	GIL_OUT;
 	level 		=	80;

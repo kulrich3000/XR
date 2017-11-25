@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Gorn_Hi_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_00"); //Ich glaub’s ja nicht ... du?! Dich kann auch wirklich kein Monster oder Erzdämon erledigen ...
-	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_01"); //Freut mich auch dich zu sehen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_02"); //Mann ... da werden einige Erinnerungen wach. Was wir alles zusammen erlebt haben.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_03"); //Es ist, als wäre es erst gestern gewesen, wo wir die Gardisten mit einem Arschtritt aus unserer Mine vertrieben haben.
-	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_04"); //Oder gemeinsam den fetten Troll in der Klosterfestung erledigt haben.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_05"); //Klar, wie könnte ich das fette Biest vergessen. Und schon wieder bist du zur rechten Zeit am rechten Ort.
-	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_06"); //Wieso?
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_07"); //Nun, ich hatte mir gerade vorgenommen die verfluchte Festung da oben einzunehmen. Viele Schätze soll es da zu holen geben, aber eben auch voller untoter Mistkerle.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_08"); //Hartes Stück Arbeit, dachte ich mir. Bis du gekommen bist. Mit dir sollte es ein Spaziergang werden.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_00"); //Nie wierze w to...... Ty! Zaden potwór ani demon archipelag nie moze cie zabic.....
+	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_01"); //Milosc, by cie zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_02"); //Czlowiek.... niektóre wspomnienia ozywaja. To, co wspólnie przezylismy.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_03"); //To tak jak to bylo wczoraj, ze kopalismy strazników z naszej kopniaka.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_04"); //Albo razem zabili tlusta trolle w twierdzy klasztornej.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_05"); //Oczywiscie, jak moge zapomniec o tluszczowej suce? I znów jestes we wlasciwym miejscu i we wlasciwym czasie.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hi_15_06"); //Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_07"); //No cóz, wlasnie mialem zabrac tam przekleta twierdze. Nie powinno byc mnóstwo skarbów, aby pobierac, ale takze wiele nieumarlych dranie.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hi_12_08"); //Ciezka praca, myslalam sama sobie. Az do czasu przybycia. To mial byc spacer z wami.
 };
 
 INSTANCE Info_Mod_Gorn_GotoCastlemine (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Gorn_GotoCastlemine (C_INFO)
 	information	= Info_Mod_Gorn_GotoCastlemine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na dann lass uns den Untoten mal einen Besuch abzustatten.";
+	description	= "No cóz, odwiedzajmy nieumarlych.";
 };
 
 FUNC INT Info_Mod_Gorn_GotoCastlemine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mod_Gorn_GotoCastlemine_Condition()
 
 FUNC VOID Info_Mod_Gorn_GotoCastlemine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_GotoCastlemine_15_00"); //Na dann lass uns den Untoten mal einen Besuch abstatten.
-	AI_Output(self, hero, "Info_Mod_Gorn_GotoCastlemine_12_01"); //Nichts anderes hatte ich von dir erwartet. Dann zeigen wir es diesen Bastarden mal.
+	AI_Output(hero, self, "Info_Mod_Gorn_GotoCastlemine_15_00"); //No cóz, odwiedzajmy nieumarlych.
+	AI_Output(self, hero, "Info_Mod_Gorn_GotoCastlemine_12_01"); //Nie spodziewalem sie od Ciebie nic mniej. Pokazmy te dranie.
 
 	AI_StopProcessInfos	(self);
 
@@ -78,18 +78,18 @@ FUNC INT Info_Mod_Gorn_AtCastlemine_Condition()
 
 FUNC VOID Info_Mod_Gorn_AtCastlemine_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_00"); //So, das war es also. Ein paar Goldmünzen sind zusammengekommen, aber doch nicht ganz so viel, wie ich erhofft hatte.
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_01"); //Und die Mine scheint auch verschüttet zu sein. Zu holen gibt es hier auf jeden Fall nichts mehr.
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_02"); //War aber trotzdem ein Riesenspaß mit dir mal wieder unterwegs zu sein ... und Grund genug mich mit den anderen Jungs zu treffen, um einige Dinge zu besprechen.
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_03"); //Kannst du mir einen Gefallen tun?
-	AI_Output(hero, self, "Info_Mod_Gorn_AtCastlemine_15_04"); //Klar, worum geht's?
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_05"); //Sag Diego, Milten und Lester bescheid, dass wir uns in Taverne 'Zur Toten Harpie' treffen.
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_06"); //Da du auch einer von uns geworden bist, kannst du natürlich auch kommen.
-	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_07"); //Und solltest jemals Hilfe brauchen, kannst du zu uns kommen, dann werden wir versuchen, dir zu helfen.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_00"); //Tak wiec tak wlasnie jest. Kilka zlotych monet zebralo sie razem, ale nie az tak wiele, na co mialem nadzieje.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_01"); //I wydaje sie, ze kopalnia tez jest pochowana. W kazdym razie nie ma nic wiecej do dostania sie tutaj.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_02"); //Ale to bylo jeszcze duzo zabawy byc znowu na drodze z toba...... i powód wystarczajacy, aby spotkac sie z innymi facetami i przedyskutowac niektóre rzeczy.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_03"); //Czy moze mnie pan laska?
+	AI_Output(hero, self, "Info_Mod_Gorn_AtCastlemine_15_04"); //Oczywiscie, o co chodzi?
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_05"); //Powiedz Diego, Milten i Lester, ze spotkamy sie w tawernie Dead Harpie.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_06"); //Odkad stales sie jednym z nas, równiez mozesz przyjechac.
+	AI_Output(self, hero, "Info_Mod_Gorn_AtCastlemine_12_07"); //A jesli kiedykolwiek potrzebujesz pomocy, mozesz przyjsc do nas, wtedy postaramy sie Ci pomóc.
 	
 	Log_CreateTopic	(TOPIC_MOD_TREFFEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TREFFEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TREFFEN, "Gorn bat mich Diego, Milten und Lester zu sagen, dass sie sich in der Taverne 'Zur Toten Harpie' treffen wollen");
+	B_LogEntry	(TOPIC_MOD_TREFFEN, "Gorn poprosil mnie, abym powiedzial Diego, Miltenowi i Lesterowi, ze chca sie spotkac w tawernie 'Zur Toten Harpie'.");
 
 	AI_StopProcessInfos	(self);
 
@@ -121,15 +121,15 @@ FUNC INT Info_Mod_Gorn_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Gorn_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_00"); //Hey, wieder auf der Suche nach Abenteuern?
-	AI_Output(hero, self, "Info_Mod_Gorn_Daemonisch_15_01"); //Nein, eigentlich wollte ich mich nur mal ein bisschen umhören, was es so in letzter Zeit an Außergewöhnlichem bei euch gab.
-	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_02"); //Ach, Pepe ist mit paar Söldner in den Wald gegangen um Wölfe zujagen und ist dann durchgedreht und abgehauen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_03"); //Lares kann dir mehr darüber erzählen. Jedenfalls fressen die Jungs aus dem Wald seit dem für drei.
-	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_04"); //Thekla kommt kaum mit dem Kochen nach und ist schon außer sich.
-	AI_Output(hero, self, "Info_Mod_Gorn_Daemonisch_15_05"); //Dann gibt es bei euch ja immer Grund zur Unterhaltung. Nun denn, bis bald.
-	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_06"); //Mach's gut.
+	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_00"); //Hej, znów szukaj przygody?
+	AI_Output(hero, self, "Info_Mod_Gorn_Daemonisch_15_01"); //Nie, tak naprawde chcialem tylko troche zapytac o niezwykle rzeczy, które ostatnio sie zdarzaja.
+	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_02"); //Och, Pepe wszedl z kilkoma najemnikami do lasu, aby polowac na wilki, a nastepnie szalony i odszedl.
+	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_03"); //Lares moze opowiedziec ci o tym wiecej. Zreszta chlopcy z lasu od tamtego czasu jedza trzy osoby.
+	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_04"); //Thekla prawie nigdy nie podaza za gotowaniem i jest juz szalona.
+	AI_Output(hero, self, "Info_Mod_Gorn_Daemonisch_15_05"); //Potem zawsze jest powód do rozmowy. Cóz, do zobaczenia wkrótce.
+	AI_Output(self, hero, "Info_Mod_Gorn_Daemonisch_12_06"); //Teraz nalezy zachowac ostroznosc.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Gorn berichtete mir, dass Lares Söldner zum Wölfejagen mit Pepe in den Wald geschickt hatte, wobei Pepe durchgedreht sei. Entsprechende Söldner sollen seit dem Thekla die Haare vom Kopf fressen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Gorn powiedzial mi, ze Lares wyslal najemnika, aby scigal wilki z Pepe' em w lesie, gdzie byl szalony. Odpowiedni najemnicy maja zjadac wlosy z glowy od czasów Thekli.");
 };
 
 INSTANCE Info_Mod_Gorn_Irdorath (C_INFO)
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Gorn_Irdorath (C_INFO)
 	information	= Info_Mod_Gorn_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich werde mit dem Schiff im Hafen zu einer Insel aufbrechen müssen (...)";
+	description	= "Bede musial udac sie statkiem do portu na wyspe (...). )";
 };
 
 FUNC INT Info_Mod_Gorn_Irdorath_Condition()
@@ -154,14 +154,14 @@ FUNC INT Info_Mod_Gorn_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Gorn_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath_15_00"); //Ich werde mit dem Schiff im Hafen zu einer Insel aufbrechen müssen, um Xeres’ Vernichtung einen Schritt näher zu kommen.
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath_15_01"); //Fällt dir jemand ein, den ich für die Mannschaft rekrutieren könnte?
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_02"); //Ein Trip zu einer Insel? Man, du bist immer für eine Überraschung gut ...
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_03"); //Tja, der Orkjäger Cord wäre bestimmt dabei.
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_04"); //Trainiert ja den ganzen Tag wie ein Verrückter und würde sich die Chance auf so ein Abenteuer bestimmt nicht entgehen lassen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_05"); //Und dann vielleicht noch Bennet, da es bestimmt nicht schlecht wäre, einen Schmied mit an Bord zu haben, wenn man ein paar scharfe Klingen braucht.
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath_15_00"); //Bede musial zawiezc statek na wyspe w porcie, aby zblizyc sie o krok do zniszczenia Xeres.
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath_15_01"); //Czy myslisz o kimkolwiek, kogo moge zatrudnic dla zalogi?
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_02"); //Podróz na wyspe? Czlowiek, jestes zawsze dobry na niespodzianke....
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_03"); //No cóz, na pewno bedzie tam pas Orcfighter Cord.
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_04"); //Trener trenuje jak szalenca przez caly dzien i z pewnoscia nie stracilby szansy na taka przygode.
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath_12_05"); //A potem jest Bennet, bo nie byloby zle miec na pokladzie kowala, gdyby trzeba bylo miec ostre ostrza.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Gorn nannte mir Orkjäger Cord und Schmied Bennet als potentielle Begleiter.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Gorn dal mi Orkjäger Cord i Schmied Bennet jako potencjalnych towarzyszy.");
 };
 
 INSTANCE Info_Mod_Gorn_Irdorath2 (C_INFO)
@@ -172,7 +172,7 @@ INSTANCE Info_Mod_Gorn_Irdorath2 (C_INFO)
 	information	= Info_Mod_Gorn_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und du wirst es dir bestimmt auch nicht nehmen lassen mitzukommen ...";
+	description	= "I na pewno nie pozwolisz, zebys równiez przyjechal......";
 };
 
 FUNC INT Info_Mod_Gorn_Irdorath2_Condition()
@@ -186,12 +186,12 @@ FUNC INT Info_Mod_Gorn_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Gorn_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath2_15_00"); //Und du wirst es dir bestimmt auch nicht nehmen lassen mitzukommen ...
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath2_12_01"); //Du sagst es. Bei einen abenteuerlichen Trip wie diesen sage ich bestimmt nicht nein ...
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath2_15_02"); //Dann freut es mich dich an Bord willkommen zu heißen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath2_12_03"); //Ich mach mich sofort auf den Weg zum Hafen.
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath2_15_00"); //I na pewno nie pozwolisz, zebys równiez przyjechal......
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath2_12_01"); //Mówisz to. W tak pelna przygód podróz, nie bede mówil nie....
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath2_15_02"); //Ciesze sie, ze moge powitac Panstwa na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath2_12_03"); //Bede od razu w drodze do portu.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Ausgezeichnet, Gorn wird für mich die Axt schwingen, wenn wir zur Insel segeln.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Doskonale, Gorn bedzie dla mnie kolysal siekiere, kiedy poplyniemy na wyspe.");
 
 	B_GivePlayerXP	(150);
 
@@ -212,7 +212,7 @@ INSTANCE Info_Mod_Gorn_Irdorath3 (C_INFO)
 	information	= Info_Mod_Gorn_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Gorn_Irdorath3_Condition()
@@ -230,8 +230,8 @@ FUNC INT Info_Mod_Gorn_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Gorn_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath3_12_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath3_12_01"); //Zbyt zle. Wróce wtedy. Wiesz, gdzie mnie znalezc, jesli kiedykolwiek zostanie jakies miejsce.
 
 	Mod_GornDabei = 0;
 
@@ -250,7 +250,7 @@ INSTANCE Info_Mod_Gorn_Irdorath4 (C_INFO)
 	information	= Info_Mod_Gorn_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "Moge dac ci przejazdzke.";
 };
 
 FUNC INT Info_Mod_Gorn_Irdorath4_Condition()
@@ -266,8 +266,8 @@ FUNC INT Info_Mod_Gorn_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Gorn_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath4_12_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Gorn_Irdorath4_15_00"); //Moge dac ci przejazdzke. Na statku znajduje sie pomieszczenie.
+	AI_Output(self, hero, "Info_Mod_Gorn_Irdorath4_12_01"); //Bardzo dobrze, wróce do portu.
 
 	Mod_GornDabei = 1;
 
@@ -314,92 +314,92 @@ FUNC VOID Info_Mod_Gorn_Treffen_Info()
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_00"); //Schön, dass ihr alle gekommen seid. Ich fand die Zeit reif für ein neues Treffen. Wie ist es euch ergangen?
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_00"); //To milo, ze wszyscy przyjezdzacie. Myslalem, ze nadszedl czas na kolejne spotkanie. Jak Pan/Pani byl/a?
 
 	TRIA_Next(Lester);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_01"); //Die letzten Wochen habe ich einsam in einer Höhle verbracht. Nur unser Freund hier kam mich besuchen. Mir ist nach etwas Neuem zumute.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_01"); //Ostatnie kilka tygodni spedzilem sam w jaskini. Przyszedl do mnie tylko nasz przyjaciel. Czuje sie jak cos nowego.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_02"); //Ich fühle mich bei den Feuermagiern wohl. Allerdings gibt es nicht viele Möglichkeiten, den Klostermauern zu entkommen, deshalb bin ich schlecht informiert über alles, was sich außerhalb abspielt.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_02"); //Czuje sie komfortowo z magikami ognia. Nie ma jednak wielu sposobów na ucieczke od murów klasztoru, wiec nie jestem dobrze poinformowany o wszystkim, co dzieje sie na zewnatrz.
 
 	TRIA_Next(Diego);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_03"); //Es mehren sich die Vorzeichen, dass uns allen Schlimmes bevorsteht.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_03"); //Coraz wiecej jest oznak, ze wszyscy mamy do czynienia z najgorszymi.
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_04"); //(lacht) Seit wann versuchst du dich als Prophet, Diego?
-	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_05"); //Er könnte recht haben. Auch Xardas ist beunruhigt. Mit dem Tod des Schläfers haben wir nicht alles Unheil aus der Welt geschafft.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_04"); //(smiech) Od kiedy próbujesz byc prorokiem, Diego?
+	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_05"); //Moze ma racje. Martwi sie równiez Xardas. Wraz ze smiercia spiacego nie wyeliminowalismy calego nieszczescia.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_06"); //Was erwartet uns?
-	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_07"); //Das liegt noch im Dunkeln. Aber es wird sich schon früh genug zeigen.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_06"); //Co nas czeka?
+	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_07"); //Nadal jest ciemno. Ale pojawi sie dosc szybko.
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_08"); //Es soll nur kommen! Ich kann mir nichts vorstellen, dem wir nicht gewachsen sind.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_08"); //Niech przyjdzie! Nie wyobrazam sobie niczego, czego nie jestesmy w stanie osiagnac.
 
 	TRIA_Next(Diego);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_09"); //Um deine Vorstellungskraft war es noch nie so gut bestellt ...
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_09"); //Twoja wyobraznia nigdy nie byla lepsza....
 
 	TRIA_Next(Lester);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_10"); //Das klingt tatsächlich nicht, als wäre uns unsere verdiente Ruhe vergönnt.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_10"); //W rzeczywistosci nie brzmi to tak, jakbysmy otrzymali spokój i cisze, na która zaslugujemy.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_11"); //(zum Helden) Gib's zu, du steckst doch schon wieder mittendrin.
-	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_12"); //Sieht ganz danach aus. Ich habe wohl mehr Feinde als beabsichtigt.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_11"); //Przyznaj sie do tego, ze znów jestes posrodku.
+	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_12"); //Wyglada to tak. Mysle, ze mam wiecej wrogów niz zamierzalem.
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_13"); //Du weißt hoffentlich, dass du das nicht allein durchstehen musst. Auf uns kannst du zählen, und wenn wir alle dabei draufgehen sollten.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_13"); //Wiesz, mam nadzieje, ze nie musisz przechodzic przez to samo. Mozesz na nas liczyc, jesli wszyscy umrzemy.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_14"); //So drastisch hättest du es nicht ausdrücken müssen.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_14"); //Nie powinienes byl tak drastycznie to ujac.
 
 	TRIA_Next(Lester);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_15"); //Und bis es so weit ist?
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_15"); //A do tego czasu?
 
 	TRIA_Next(Diego);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_16"); //Wir warten ab und halten die Augen offen.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_16"); //Czekamy i zobaczymy.
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_17"); //Und die Axt bereit.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_17"); //A siekiera gotowa.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_18"); //Und die Zauber frisch im Gedächtnis.
-	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_19"); //Ich bin gerührt. Sollen wir unsere Freundschaft jetzt noch feierlich mit einem Eid beschwören oder so?
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_18"); //I magiczna swiezosc w pamieci.
+	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_19"); //Zostalem dotkniety. Czy mamy jeszcze uroczyscie przysiegac nasza przyjazn z przysiega lub czyms?
 
 	TRIA_Next(Diego);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_20"); //(lacht) Lass mal gut sein. Ich hasse Verträge, auch mit meinen besten Freunden.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_11_20"); //(smiech) Pozwólcie mu odejsc. Nienawidze umów, nawet z moimi najlepszymi przyjaciólmi.
 
 	TRIA_Next(Lester);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_21"); //Dann verbleiben wir so: Wenn wir Hilfe brauchen, sind wir füreinander da.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_13_21"); //Wtedy pozostaniemy tacy: Kiedy potrzebujemy pomocy, jestesmy dla siebie nawzajem.
 
 	TRIA_Next(Gorn);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_22"); //Aye.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_12_22"); //Oko.
 
 	TRIA_Next(Milten);
 	
-	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_23"); //Klar. Gern. Und wenn sich unsere Gefahr offen zeigt, wüsste ich gern Bescheid. Im Kloster erfährt man nicht als Erstes, was in der Welt vor sich geht.
-	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_24"); //In Ordnung. (Pause) Ja, äh, dann macht es mal gut, fürs Erste. Man sieht sich und so.
+	AI_Output(self, hero, "Info_Mod_Gorn_Treffen_03_23"); //Pewne. Wyraznie. A jesli nasze niebezpieczenstwo jest otwarte, chcialbym wiedziec. Klasztor nie jest pierwszym miejscem na swiecie, które wie, co sie dzieje.
+	AI_Output(hero, self, "Info_Mod_Gorn_Treffen_15_24"); //Wszystkie sluszne, wszystkie sluszne. (pauza) Teah, uh, wez to latwo wtedy, na razie. Do zobaczenia dookola.
 
 	TRIA_Finish();
 
-	B_LogEntry	(TOPIC_MOD_TREFFEN, "Das Treffen ist vorbei und folgende Sachen haben sich ergeben: Diego bleibt in Khorinis, Lester geht wahrscheinlich bald zurück ins Minental, Milten bleibt im Kloster und Gorn geht zurück zu Lares auf Onars Hof.");
+	B_LogEntry	(TOPIC_MOD_TREFFEN, "Spotkanie sie zakonczylo i zakonczyly sie nastepujace rzeczy: Diego zostaje w Khorinis, Lester prawdopodobnie wraca do Minentala, Milten zatrzymuje sie w klasztorze, a Gorn wraca do Lares na farmie Onar.");
 
 	B_GivePlayerXP	(400);
 
@@ -434,9 +434,9 @@ FUNC INT Info_Mod_Gorn_Hexen_04_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hexen_04_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_00"); //Ohh man, diese schrecklichen Ungetüme auf dem Plateau, da wagen wir uns lieber nicht heran.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_01"); //Die Untoten auf Sekobs sind zwar auch nicht ohne, aber doch zu schaffen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_02"); //Lares zögert aber noch etwas, wartet auf den richtigen Augenblick zum Angriff ...
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_00"); //Och, czlowiek, te straszliwe potwory na plaskowyzu, raczej nie odwazylibysmy sie.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_01"); //Nieumarli na Sekobach moze nie byc bez nich, ale nadal moga byc tworzone.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_04_12_02"); //Lares waha sie, ale cos innego, czeka na wlasciwy moment do ataku......
 };
 
 INSTANCE Info_Mod_Gorn_Hexen (C_INFO)
@@ -461,20 +461,20 @@ FUNC INT Info_Mod_Gorn_Hexen_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hexen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_12_00"); //Hey, die Untoten bei Sekobs Hof haben sich zerstreut. Jetzt könnten wir sie aufmischen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_12_01"); //Wenn du mitmachst müsste unsere Schlagkraft ausreichen.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_12_00"); //Hej, nieumarli na dworze Sekoba rozproszyli sie. Teraz moglibysmy je pokonac.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_12_01"); //Jesli sie z tym zgadzasz, to nasz potencjal powinien wystarczyc.
 	
 	Info_ClearChoices	(Info_Mod_Gorn_Hexen);
 
-	Info_AddChoice	(Info_Mod_Gorn_Hexen, "Nein, ich habe gerade wichtigeres zu tun.", Info_Mod_Gorn_Hexen_B);
-	Info_AddChoice	(Info_Mod_Gorn_Hexen, "Klar, ich bin dabei.", Info_Mod_Gorn_Hexen_A);
+	Info_AddChoice	(Info_Mod_Gorn_Hexen, "Nie, teraz mam wazniejsze rzeczy do zrobienia.", Info_Mod_Gorn_Hexen_B);
+	Info_AddChoice	(Info_Mod_Gorn_Hexen, "Jasne, ze jestem.", Info_Mod_Gorn_Hexen_A);
 };
 
 FUNC VOID Info_Mod_Gorn_Hexen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hexen_B_15_00"); //Nein, ich habe gerade wichtigeres zu tun.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_B_12_01"); //Hmm, schade, hätte ich nicht gedacht, dass du dir das entgehen lassen willst.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_B_12_02"); //Dann müssen wir eben noch etwas mit dem Angriff warten, bis wir Verstärkung bekommen.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hexen_B_15_00"); //Nie, teraz mam wazniejsze rzeczy do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_B_12_01"); //Hmm, zbyt zle nie sadzilem, zebys tego nie chcial przeoczyc.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_B_12_02"); //Wtedy bedziemy musieli po prostu troche dluzej czekac, zanim dostaniemy wzmocnienia.
 
 	Info_ClearChoices	(Info_Mod_Gorn_Hexen);
 	
@@ -483,9 +483,9 @@ FUNC VOID Info_Mod_Gorn_Hexen_B()
 
 FUNC VOID Info_Mod_Gorn_Hexen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hexen_A_15_00"); //Klar, ich bin dabei.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_A_12_01"); //Sehr gut, ich habe auch nichts anderes von dir erwartet. Dann kann es ja losgehen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_A_12_02"); //Wir sammeln uns dann an der Kreuzung. Wie in alten Zeiten.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hexen_A_15_00"); //Jasne, ze jestem.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_A_12_01"); //Bardzo dobrze, nie spodziewalem sie od Ciebie niczego wiecej. No cóz, tutaj idziemy.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_A_12_02"); //Spotkamy sie na rozdrozu. Jak za dawnych czasów.
 
 	Mod_WM_GornAttack = 1;
 
@@ -533,7 +533,7 @@ FUNC INT Info_Mod_Gorn_Hexen_02_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hexen_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_02_12_00"); //Auf geht’s, treten wir diesen Untoten in den Hintern.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_02_12_00"); //Chodzmy dalej, kopnijmy tylek tego nieumarlego czlowieka.
 	
 	Mod_WM_GornAttack = 2;
 
@@ -595,7 +595,7 @@ FUNC INT Info_Mod_Gorn_Hexen_03_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hexen_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_03_12_00"); //Na also, denen haben wir es gezeigt. War mir ein Vergnügen mal wieder an deiner Seite gekämpft zu haben.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hexen_03_12_00"); //No cóz, pokazalismy je. To byla przyjemnosc ponownie walczyc po panskiej stronie.
 
 	B_GivePlayerXP	(200);
 	
@@ -656,8 +656,8 @@ FUNC INT Info_Mod_Gorn_BalrogGigantTot_Condition()
 
 FUNC VOID Info_Mod_Gorn_BalrogGigantTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_BalrogGigantTot_12_00"); //Hey, ich habe gehört, die Monster und Riesen auf dem Plateau sind weg ... und irgendwie glaube ich, dass du nicht ganz unbeteiligt daran warst.
-	AI_Output(self, hero, "Info_Mod_Gorn_BalrogGigantTot_12_01"); //Tolle Leistung. Ich wäre gerne mit von der Party gewesen, als du diesen Ungetümen den Hintern versohlt hast.
+	AI_Output(self, hero, "Info_Mod_Gorn_BalrogGigantTot_12_00"); //Hej, slysze, ze potwory i giganci na plaskowyzu zniknely.... i mysle, ze w jakis sposób byl pan zaangazowany.
+	AI_Output(self, hero, "Info_Mod_Gorn_BalrogGigantTot_12_01"); //Doskonale osiagi. Chcialbym byc na imprezie, kiedy biliscie te potwory.
 };
 
 INSTANCE Info_Mod_Gorn_Drachen (C_INFO)
@@ -680,10 +680,10 @@ FUNC INT Info_Mod_Gorn_Drachen_Condition()
 
 FUNC VOID Info_Mod_Gorn_Drachen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_00"); //Man, ohh man. Da glaubt man im Minental allen Herausforderungen getrotzt zu haben, die es auf der Welt gibt und dann stehen diese Riesenechsen vor der Tür.
-	AI_Output(hero, self, "Info_Mod_Gorn_Drachen_15_01"); //Nun, ohne neue Herausforderungen würde doch alles eintönig und sinnlos.
-	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_02"); //Wie immer unerschütterlich vor jeder noch so großen Aufgabe. Ja, da hast du wohl Recht.
-	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_03"); //Und ich bin mir auch sicher, dass sich wieder eine Gelegenheit finden wird gemeinsam ein Abenteuer zu bestreiten. Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_00"); //Czlowiek, oh, czlowiek. W Minentalu wierzy sie, ze sprostalo to wszystkim wyzwaniom, które istnieja na swiecie, a potem te olbrzymie jaszczurki sa na progu.
+	AI_Output(hero, self, "Info_Mod_Gorn_Drachen_15_01"); //No cóz, bez nowych wyzwan wszystko byloby monotonne i bezsensowne.
+	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_02"); //Jak zawsze przed jakimikolwiek wielkimi zadaniami. Tak, chyba masz racje.
+	AI_Output(self, hero, "Info_Mod_Gorn_Drachen_12_03"); //Jestem równiez pewien, ze bedzie kolejna okazja do wspólnej przygody. Dbaj o siebie.
 
 	AI_StopProcessInfos	(self);
 };
@@ -696,7 +696,7 @@ INSTANCE Info_Mod_Gorn_Knucker (C_INFO)
 	information	= Info_Mod_Gorn_Knucker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, du warst nicht mit von der Party?";
+	description	= "No cóz, nie byles na imprezie?";
 };
 
 FUNC INT Info_Mod_Gorn_Knucker_Condition()
@@ -709,22 +709,22 @@ FUNC INT Info_Mod_Gorn_Knucker_Condition()
 
 FUNC VOID Info_Mod_Gorn_Knucker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_00"); //Na, du warst nicht mit von der Party? Es ist doch sonst nicht deine Art, dich vor einem Schlagabtausch zu drücken.
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_01"); //Ach, du hast gut reden. Ich und Cord wurden dazu verdonnert am Rande des Waldes Wache zu schieben, seit dem einige Schafe draufgegangen sind und zwei Bauern verschwanden.
-	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_02"); //Tote Schafe, verschwundene Bauern? Klingt für mich, als müsstest du dir hier wegen junger Wölfe und fortgelaufener Bauern die Beine in den Bauch stehen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_03"); //Ja, wenn Wölfe dazu in der Lage sind den Schafen ihr Blut, bis auf den letzten Tropfen auszusaugen, dann schon.
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_04"); //Genauso wie die Bauern, die Nachts wie in Trance in den Wald gingen und verschwanden ...
-	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_05"); //Hmm, das hört sich natürlich schon etwas mysteriöser an. Wäre das nicht mal wieder eine Gelegenheit für ein Abenteuer, was wir zusammen bestreiten könnten?
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_06"); //Du meinst in den Wald gehen und nachsehen? Ich weiß nicht. Immerhin müsste ich meinen Posten dafür verlassen ...
-	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_07"); //Ach komm, wegen der fünf Minuten, die wir den Wald erkunden ...
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_08"); //Und wenn irgendwelche der dämonischen Viecher, die sich hier zurzeit herumtreiben während dessen angreifen? Nein, so geht das wirklich nicht.
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_09"); //(überlegt) Hmm, aber ab nächsten Abend werde ich abgelöst. Dann können wir loslegen und den Wald unsicher machen.
-	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_10"); //Ok, ich werde dich dann abholen. Dann wirst du dich dann hoffentlich nicht mehr drücken.
-	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_11"); //Worauf du dich verlassen kannst.
+	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_00"); //No cóz, nie byles na imprezie? Nie jest to zwykle twój sposób na unikniecie wymiany ciosów.
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_01"); //Och, jestes dobrym mówca. Ja i Kordowi kazano czuwac na skraju lasu, poniewaz czesc owiec zmarla, a dwóch chlopów zniknelo.
+	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_02"); //Martwe owce, zaginione chlopi? Brzmi to dla mnie jak mlode wilki i uciekajacy chlopi sprawiaja, ze stajesz w zoladku.
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_03"); //Tak, jesli wilki sa w stanie ssac krew owcza do ostatniej kropli, to sa.
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_04"); //Tak jak chlopi, którzy noca weszli do lasu jak w transie i znikneli......
+	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_05"); //Hmm, oczywiscie brzmi to nieco bardziej tajemniczo. Czy nie bylaby to kolejna okazja do wspólnej przygody?
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_06"); //Masz na mysli, idzcie do lasu i zobaczycie? Nie wiem o tym. Przynajmniej musialabym opuscic stanowisko na to stanowisko....
+	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_07"); //Chodzcie, bo piec minut spedzamy na zwiedzaniu lasu.....
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_08"); //A czy któres z demonicznych stworzen, które wisza tu dzis atakuja? Nie, to naprawde nie dziala tak.
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_09"); //Hmm, ale nastepnego wieczoru z ulga. Potem mozemy zaczac dzialac i sprawic, ze las stanie sie niepewny.
+	AI_Output(hero, self, "Info_Mod_Gorn_Knucker_15_10"); //Dobrze, zabiore cie wtedy. Miejmy nadzieje, ze nie bedziesz juz dluzej sciskal.
+	AI_Output(self, hero, "Info_Mod_Gorn_Knucker_12_11"); //Na co mozesz liczyc.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_GORN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_GORN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_GORN, "Gorn wurde zum Wachehalten vorm Wald verdammt, da Schafe das Leben verloren, Bauern dort verschwanden. Abends will ich mit ihm erkunden, was dort vor sich geht.");
+	B_LogEntry	(TOPIC_MOD_NL_GORN, "Gorn zostal skazany na strzezenie lasu, poniewaz owce stracily zycie, a rolnicy zagineli. Wieczorem chce wraz z nim zbadac, co sie tam dzieje.");
 };
 
 INSTANCE Info_Mod_Gorn_WaldSpaziergang (C_INFO)
@@ -748,9 +748,9 @@ FUNC INT Info_Mod_Gorn_WaldSpaziergang_Condition()
 
 FUNC VOID Info_Mod_Gorn_WaldSpaziergang_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldSpaziergang_12_00"); //Da bist du ja. Wollen wir dann mal losziehen?
-	AI_Output(hero, self, "Info_Mod_Gorn_WaldSpaziergang_15_01"); //Ja, lass uns nicht noch mehr Zeit vergeuden.
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldSpaziergang_12_02"); //Na dann, folge mir.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldSpaziergang_12_00"); //Och, tam jestescie. Czy mamy wiec isc?
+	AI_Output(hero, self, "Info_Mod_Gorn_WaldSpaziergang_15_01"); //Tak, nie tracmy juz czasu.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldSpaziergang_12_02"); //Wszystko w porzadku, podazaj za mna.
 
 	AI_StopProcessInfos	(self);
 
@@ -785,8 +785,8 @@ FUNC INT Info_Mod_Gorn_NichtsLosImWald_Condition()
 
 FUNC VOID Info_Mod_Gorn_NichtsLosImWald_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_NichtsLosImWald_12_00"); //Na, besonders viel war hier noch nicht los, außer den paar Viechern.
-	AI_Output(self, hero, "Info_Mod_Gorn_NichtsLosImWald_12_01"); //Wir sollten mal bei der Krypta vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Gorn_NichtsLosImWald_12_00"); //Cóz, nie dzialo sie tu wiele, poza kilkoma istotami.
+	AI_Output(self, hero, "Info_Mod_Gorn_NichtsLosImWald_12_01"); //W pewnym momencie powinnismy zatrzymac sie przy krypcie.
 
 	AI_StopProcessInfos	(self);
 
@@ -825,8 +825,8 @@ FUNC INT Info_Mod_Gorn_VorKrypta_Condition()
 
 FUNC VOID Info_Mod_Gorn_VorKrypta_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_VorKrypta_12_00"); //Meine Fresse, siehst du auch diese ganzen Untoten auf dem Friedhof der Krypta? Vielleicht haben die ja was mit dem Verschwinden der Bauern zu tun.
-	AI_Output(self, hero, "Info_Mod_Gorn_VorKrypta_12_01"); //Na dann los, lass uns die aufmischen.
+	AI_Output(self, hero, "Info_Mod_Gorn_VorKrypta_12_00"); //Mój tylek, czy widzisz to wszystko na cmentarzu krypty? Moze maja cos wspólnego z zniknieciem chlopów.
+	AI_Output(self, hero, "Info_Mod_Gorn_VorKrypta_12_01"); //Chodzmy dalej, przyjmijmy sie.
 
 	AI_StopProcessInfos	(self);
 
@@ -853,8 +853,8 @@ FUNC INT Info_Mod_Gorn_Hel_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_Hel_12_00"); //Verdammt, wo ist sie hin?
-	AI_Output(hero, self, "Info_Mod_Gorn_Hel_15_01"); //Vielleicht hat sie sich in der Krypta verkrochen. Lass und runtergehen.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hel_12_00"); //Gdzie poszla pieklo?
+	AI_Output(hero, self, "Info_Mod_Gorn_Hel_15_01"); //Moze ona jest wskrzeszona w krypcie. Zejdzmy na dól.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -883,12 +883,12 @@ FUNC INT Info_Mod_Gorn_WaldFertig_Condition()
 
 FUNC VOID Info_Mod_Gorn_WaldFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_00"); //(außer Atem) Boah, die war vielleicht ein hartes Biest. Gegen die ist sogar Thekla sanft wie ein Lamm.
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_01"); //Naja, so schnell werde ich nicht mehr über die Kampfeskünste von Frauen lachen.
-	AI_Output(hero, self, "Info_Mod_Gorn_WaldFertig_15_02"); //Nun, auf jeden Fall dürften wir in dieser Blut dürstenden Dämonin die Ursache für die Vorkommnisse gefunden haben.
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_03"); //Und ich kann nun endlich wieder anderen Dingen nachgehen, als den ganzen Tag untätig vor der Kapelle herumzustehen. Hey, ich bin dir was schuldig.
-	AI_Output(hero, self, "Info_Mod_Gorn_WaldFertig_15_04"); //Ach, lass gut sein. (vergnügt) Mal wieder ein Abenteuer mit dir zu bestreiten und einigen Dämonen und Untoten in den Hintern treten zu können war mir Lohn genug.
-	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_05"); //Na dann, bis zum nächsten Mal. Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_00"); //(z wyjatkiem oddechu) Boah, mogla byc twarda bestia. Nawet Thekla jest wobec nich lagodna jak jagniecina.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_01"); //No cóz, nie bede sie smiac z takich postów sztuk walki kobiet.
+	AI_Output(hero, self, "Info_Mod_Gorn_WaldFertig_15_02"); //Cóz, w kazdym razie byc moze znalezlismy przyczyne wydarzen w tej krwiozerczej demonice.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_03"); //A teraz moge wreszcie przez caly dzien nie stac bezczynnie przed kaplica. Hej, zawdzieczam ci jeden.
+	AI_Output(hero, self, "Info_Mod_Gorn_WaldFertig_15_04"); //Och, pozwólcie mu odejsc. (joofully) Mozliwosc zrobienia kolejnej przygody z wami i kopania niektórych demonów i nieumarlych w tylku byla dla mnie wystarczajaca nagroda.
+	AI_Output(self, hero, "Info_Mod_Gorn_WaldFertig_12_05"); //Cóz, zobaczcie nastepnym razem. Dbaj o siebie.
 
 	AI_StopProcessInfos	(self);
 
@@ -931,10 +931,10 @@ FUNC INT Info_Mod_Gorn_ZweihandAlsEinhand_Condition()
 
 FUNC VOID Info_Mod_Gorn_ZweihandAlsEinhand_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_00"); //Wie ich sehe, benutzt du Zweihänder immer noch mit beiden Händen, Kumpel.
-	AI_Output(hero, self, "Info_Mod_Gorn_ZweihandAlsEinhand_15_01"); //Ja. Was ist daran falsch?
-	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_02"); //Für einen normalen Krieger ist es unmöglich, aber so starke Kerle wie du und ich können Zweihänder wie Einhänder führen.
-	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_03"); //Wenn du Lust und Zeit hast, zeig ich dir, wie's geht.
+	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_00"); //Widze, ze nadal uzywasz dwóch rak z oburacz, z dwojgiem.
+	AI_Output(hero, self, "Info_Mod_Gorn_ZweihandAlsEinhand_15_01"); //Tak. Co jest z tym nie tak?
+	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_02"); //Niemozliwe dla zwyklego wojownika, ale tak silnych jak ty i ja mozemy prowadzic dwie rece jak mezczyzni jednej reki.
+	AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand_12_03"); //Jesli bedziesz mial ochote, pokaze ci jak to zrobic.
 };
 
 INSTANCE Info_Mod_Gorn_ZweihandAlsEinhand2 (C_INFO)
@@ -951,11 +951,11 @@ FUNC INT Info_Mod_Gorn_ZweihandAlsEinhand2_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Gorn_ZweihandAlsEinhand2.description = "Zeig mir, wie ich Zweihänder als Einhänder benutzen kann. (500 Gold)";
+		Info_Mod_Gorn_ZweihandAlsEinhand2.description = "Pokaz mi, jak uzywac ludzi dwurecznych jako ludzi jednej reki. (500 zloto)";
 	}
 	else
 	{
-		Info_Mod_Gorn_ZweihandAlsEinhand2.description = "Zeig mir, wie ich Zweihänder als Einhänder benutzen kann. (5 LP)";
+		Info_Mod_Gorn_ZweihandAlsEinhand2.description = "Pokaz mi, jak uzywac ludzi dwurecznych jako ludzi jednej reki. (5 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Gorn_ZweihandAlsEinhand))
@@ -967,18 +967,18 @@ FUNC INT Info_Mod_Gorn_ZweihandAlsEinhand2_Condition()
 
 FUNC VOID Info_Mod_Gorn_ZweihandAlsEinhand2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_ZweihandAlsEinhand2_15_00"); //Zeig mir, wie ich Zweihänder als Einhänder benutzen kann.
+	AI_Output(hero, self, "Info_Mod_Gorn_ZweihandAlsEinhand2_15_00"); //Pokaz mi, jak uzywac ludzi dwurecznych jako ludzi jednej reki.
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 500))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 5))
 	{
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_01"); //Das Wichtigste ist, dass das Gefühl von Einhändern und Zweihändern unterschiedlich ist.
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_02"); //Der Schwerpunkt der Waffe ist bei Zweihändern weiter von deinem Körper entfernt.
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_03"); //Deswegen solltest du darauf aufpassen, den Arm nie vollständig durchzustrecken, denn dann wird das Gewicht der Waffe zu groß.
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_04"); //Winkle den Arm leicht an, und du solltest keine Probleme haben.
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_05"); //Worauf wartest du noch? Ich will dich üben sehen!
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_01"); //Najwazniejsze jest to, ze uczucie jednej i dwóch rak jest inne.
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_02"); //Srodek ciezkosci broni znajduje sie dalej od ciala w trybie dwurecznym.
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_03"); //Dlatego powinienes uwazac, aby nie rozciagac calej reki, poniewaz wtedy ciezar broni bedzie zbyt duzy.
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_04"); //Niewiele machnij reka i nie masz zadnych problemów.
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_05"); //Na co czekasz? Chce widziec jak praktykujecie!
 
 		ZweihandAlsEinhand_Perk = TRUE;
 
@@ -1002,7 +1002,7 @@ FUNC VOID Info_Mod_Gorn_ZweihandAlsEinhand2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_06"); //Komm wieder, wenn du bereit bist.
+		AI_Output(self, hero, "Info_Mod_Gorn_ZweihandAlsEinhand2_12_06"); //Wróc do domu, gdy bedziesz gotowy.
 	};
 };
 
@@ -1014,7 +1014,7 @@ INSTANCE Info_Mod_Gorn_Standfest (C_INFO)
 	information	= Info_Mod_Gorn_Standfest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, wie ich verhindern kann, dass bestimmte Gegner mich durch die Luft werfen?";
+	description	= "Czy wiesz, jak moge zapobiec rzucaniu mnie przez powietrze przez niektórych wrogów?";
 };
 
 FUNC INT Info_Mod_Gorn_Standfest_Condition()
@@ -1029,8 +1029,8 @@ FUNC INT Info_Mod_Gorn_Standfest_Condition()
 
 FUNC VOID Info_Mod_Gorn_Standfest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Standfest_15_00"); //Weißt du, wie ich verhindern kann, dass bestimmte Gegner mich durch die Luft werfen?
-	AI_Output(self, hero, "Info_Mod_Gorn_Standfest_12_01"); //Da gibt es schon einen Weg. Hast du etwas Zeit?
+	AI_Output(hero, self, "Info_Mod_Gorn_Standfest_15_00"); //Czy wiesz, jak moge zapobiec rzucaniu mnie przez powietrze przez niektórych wrogów?
+	AI_Output(self, hero, "Info_Mod_Gorn_Standfest_12_01"); //Jest droga. Masz troche czasu?
 };
 
 INSTANCE Info_Mod_Gorn_Standfest2 (C_INFO)
@@ -1047,11 +1047,11 @@ FUNC INT Info_Mod_Gorn_Standfest2_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Gorn_Standfest2.description = "Wie kann ich standfester werden? (500 Gold)";
+		Info_Mod_Gorn_Standfest2.description = "Jak moge stac sie bardziej stabilny? (500 zloto)";
 	}
 	else
 	{
-		Info_Mod_Gorn_Standfest2.description = "Wie kann ich standfester werden? (5 LP)";
+		Info_Mod_Gorn_Standfest2.description = "Jak moge stac sie bardziej stabilny? (5 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Gorn_Standfest))
@@ -1063,19 +1063,19 @@ FUNC INT Info_Mod_Gorn_Standfest2_Condition()
 
 FUNC VOID Info_Mod_Gorn_Standfest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Standfest2_15_00"); //Wie kann ich standfester werden?
+	AI_Output(hero, self, "Info_Mod_Gorn_Standfest2_15_00"); //Jak moge stac sie bardziej stabilny?
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 500))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 5))
 	{
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_01"); //Am Ende zählt nur die richtige Mischung aus Stärke und Geschicklichkeit.
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_02"); //Wenn du siehst, dass einer der Gegner zu einem mächtigen Schlag ausholt, bereitest du dich vor.
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_03"); //Kurz bevor er dich erwischt, machst du dich klein und verlegst deinen Körperschwerpunkt Richtung Boden.
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_04"); //Wenn du dann noch deine gesamte Kraft gegen den Schlag stellst, wird er zwar immer noch schmerzhaft, aber du segelst nicht mehrere Meter durch die Luft.
-		AI_Output(hero, self, "Info_Mod_Gorn_Standfest2_15_05"); //Ich denke, ich hab's verstanden. Danke.
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_06"); //Gern geschehen.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_01"); //W koncu liczy sie tylko odpowiednia mieszanka sily i umiejetnosci.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_02"); //Kiedy widzisz, ze jeden z przeciwników przygotowuje sie na potezny cios, przygotujesz sie.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_03"); //Tuz przed tym, zanim cie zatrzyma, zrób sie malym i przesun srodek ciezkosci ciala w kierunku ziemi.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_04"); //Jesli wtedy wlozysz cala swoja moc pod cios, bedzie to jeszcze bolesne, ale nie bedziesz zeglowal przez powietrze na odleglosc kilku metrów.
+		AI_Output(hero, self, "Info_Mod_Gorn_Standfest2_15_05"); //Mysle, ze ja dostaje. Dzieki.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_06"); //Witamy.
 
 		Standfest_Perk = TRUE;
 
@@ -1090,7 +1090,7 @@ FUNC VOID Info_Mod_Gorn_Standfest2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_07"); //Komm wieder, wenn du bereit bist.
+		AI_Output(self, hero, "Info_Mod_Gorn_Standfest2_12_07"); //Wróc do domu, gdy bedziesz gotowy.
 	};
 };
 
@@ -1104,7 +1104,7 @@ INSTANCE Info_Mod_Gorn_Hilfe (C_INFO)
 	information	= Info_Mod_Gorn_Hilfe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich brauche deine Hilfe";
+	description	= "Potrzebujesz pomocy";
 };
 
 FUNC INT Info_Mod_Gorn_Hilfe_Condition()
@@ -1117,8 +1117,8 @@ FUNC INT Info_Mod_Gorn_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Gorn_Hilfe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_15_00"); //Ich brauche deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_12_01"); //Wobei?
+	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_15_00"); //Potrzebuje panstwa pomocy.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_12_01"); //Z czym?
 
 	Info_ClearChoices	(Info_Mod_Gorn_Hilfe);
 
@@ -1128,18 +1128,18 @@ FUNC VOID Info_Mod_Gorn_Hilfe_Info()
 	&& (Mod_MinecrawlerEi >= 0)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Constantino_Stimme))
 	{
-		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Weißt du, woher ich starkes Minecrawler-Sekret bekomme?", Info_Mod_Gorn_Hilfe_MinecrawlerSekret);
+		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Wiesz, gdzie moge uzyskac silna wydzieline Minecrawler' a?", Info_Mod_Gorn_Hilfe_MinecrawlerSekret);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_NeueAufgabe))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Alvares_Knast))
 	{
-		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Ich soll einen Söldneranwärter finden.", Info_Mod_Gorn_Hilfe_Alvares);
+		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Mam znalezc najemnika.", Info_Mod_Gorn_Hilfe_Alvares);
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Torlof_Kristall))
 	&& (!Mod_Gorn_Help_Paladine)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Ich muss irgendetwas in der Stadt finden (...)", Info_Mod_Gorn_Hilfe_Kristall);
+		Info_AddChoice	(Info_Mod_Gorn_Hilfe, "Musze znalezc cos w miescie. )", Info_Mod_Gorn_Hilfe_Kristall);
 	};
 };
 
@@ -1150,34 +1150,34 @@ FUNC VOID Info_Mod_Gorn_Hilfe_BACK()
 
 FUNC VOID Info_Mod_Gorn_Hilfe_Kristall()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_Kristall_15_00"); //Ich muss irgendetwas in der Stadt finden, womit sich die Paladine erpressen lassen. Informationen, Artefakte ... was auch immer.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_01"); //Hmm, lass mich überlegen. Viel fällt mir auf die Schnelle auch nicht ein ... aber warte mal.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_02"); //Ich habe mal Lee über einen Paladin sprechen hören, den er von früher kannte. Der fette Lothar im oberen Viertel soll ein ziemlicher Schluckspecht sein.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_03"); //Er bläst sich gerne auf, nimmt es jedoch mit der Disziplin nicht so eng ...
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_04"); //Bei ihm könntest du vielleicht etwas erfahren.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_Kristall_15_00"); //Musze znalezc cos w miescie, aby szantazowac paladynów. Informacje, artefakty..... cokolwiek.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_01"); //Hmm, prosze pozwolic mi pomyslec. W pospiechu tez nie moge sobie wiele pomyslec..... ale czekac minute.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_02"); //Slyszalem, jak Lee mówil o znanym mu wczesniej paladynie. Tlusty Lothar w górnej czesci jest uwazany za dosc polkniety.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_03"); //Lubi nadymac sie, ale nie jest tak bliski dyscypliny.....
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Kristall_12_04"); //Moze ci cos powiedziec.
 
-	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "Von Gorn konnte ich erfahren, dass Paladin Lothar im oberen Viertel eine schwäche für Alkohol und eine große Klappe hat.");
+	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "Dowiedzialem sie od Gorna, ze Paladin Lothar ma slabosc na alkohol i duze usta w górnej cwiartce.");
 	
 	Mod_Gorn_Help_Paladine = TRUE;
 };
 
 FUNC VOID Info_Mod_Gorn_Hilfe_MinecrawlerSekret()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_15_00"); //Weißt du, woher ich starkes Minecrawler-Sekret bekomme?
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_01"); //Lester hat mir mal erzählt, dass in den Eiern der Minecrawler ein stärkeres Sekret ist als in den Zangen.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_02"); //Ich hatte zwei Minecrawlereier aus der Freien Mine, als wir sie zusammen von den Gardisten befreit haben, aber ich hab sie Milten gegeben.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_03"); //Ich konnte mit den Eiern nichts anfangen, aber er als Magier kann sie sicher gebrauchen. Geh mal zu ihm und frag ihn, vielleicht hat er sie ja noch.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_15_00"); //Wiesz, gdzie moge uzyskac silna wydzieline Minecrawler' a?
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_01"); //Pewnego razu wczoraj powiedzialem, ze w jajkach miotacza miotacza jest silniejsza wydzielina niz w szczypcach.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_02"); //Mialem z wolnej kopalni dwie jajka mikolajkowe, kiedy uwolnilismy je od strazników, ale podalem je Miltenowi.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_MinecrawlerSekret_12_03"); //Nie moglem obchodzic sie z jajkami, ale jestem pewien, ze mógl uzyc ich jako maga. Idz do niego i zapytaj go, moze jeszcze go ma.
 
 	Mod_MinecrawlerEi = 2;
 	
-	B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Starkes Minecrawler-Sekret bekomme ich aus einem Minecrawlerei. Gorn sagte mir, dass er Milten zwei Minecrawlereier gegeben hat.");
+	B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Mocna tajemnice miotacza otrzymuje z warsztatu miotacza. Gorn powiedzial mi, ze dal Miltenowi dwa minecrawlery.");
 };
 
 FUNC VOID Info_Mod_Gorn_Hilfe_Alvares()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_Alvares_15_00"); //Ich soll einen Söldneranwärter finden.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Alvares_12_01"); //Einen Söldneranwärter ... hmm, auf den Bauernhöfen wird es wohl kaum einen qualifizierten Kämpfer geben.
-	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Alvares_12_02"); //Am ehesten solche, die schon von den Stadtwachen wegen ihrer Taten einkassiert wurden.
+	AI_Output(hero, self, "Info_Mod_Gorn_Hilfe_Alvares_15_00"); //Mam znalezc najemnika.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Alvares_12_01"); //Kandydat najemnika..... hmm, na farmach nie bedzie wykwalifikowanego wojownika.
+	AI_Output(self, hero, "Info_Mod_Gorn_Hilfe_Alvares_12_02"); //Prawdopodobnie najprawdopodobniej ci, którzy za swoje czyny zostali juz aresztowani przez strazników miejskich.
 };
 
 INSTANCE Info_Mod_Gorn_Pickpocket (C_INFO)
@@ -1313,7 +1313,7 @@ FUNC INT Info_Mod_Gorn_EXIT_Condition()
 
 FUNC VOID Info_Mod_Gorn_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_EXIT_12_00"); //Mögest du nie deinen Meister finden!
+	AI_Output(self, hero, "Info_Mod_Gorn_EXIT_12_00"); //Niech nigdy nie znajdziecie swego mistrza!
 
 	AI_StopProcessInfos	(self);
 };

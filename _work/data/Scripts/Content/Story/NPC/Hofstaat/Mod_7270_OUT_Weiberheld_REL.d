@@ -1,7 +1,7 @@
 instance Mod_7270_OUT_Weiberheld_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Weiberheld";
+	name 		= "Królewski bohater kobiety";
 	guild 		= GIL_OUT;
 	id 			= 7270;
 	voice 		= 27;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bones_IR_Hi (C_INFO)
 	information	= Info_Mod_Bones_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Bones.";
+	description	= "Witaj, kosci.";
 };
 
 FUNC INT Info_Mod_Bones_IR_Hi_Condition()
@@ -16,23 +16,23 @@ FUNC INT Info_Mod_Bones_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Bones_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_00"); //Hallo Bones.
+	AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_00"); //Witaj, kosci.
 
 	if (Mod_VelayaDabei > 0)
 	|| (Mod_CassiaDabei > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_01"); //Wieso schaust du so zerknirscht.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_02"); //Ähhm, ach, ne, nicht so wichtig ...
-		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_03"); //Du hattest doch die schöne Frau an Bord, die du wolltest.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_04"); //(ausweichend) Ähh ... die war nicht mein Typ ... genau.
+		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_01"); //Dlaczego wygladasz tak skromnie?
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_02"); //Um, oh, nie, nie, nie tak wazne....
+		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_03"); //Miales piekna kobiete, której chciales na pokladzie.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_04"); //(ujednolicone) Uh....... ona nie byla moim typem..... Dokladnie.
 	}
 	else if (Mod_SagittaDabei > 0)
 	|| (Mod_UrielaDabei > 0)
 	{
-		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_05"); //Ohh, du siehst aber gar nicht gut aus ...
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_06"); //Ach, sei bloß ruhig.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_07"); //Erst ist das einzige Weib an Bord eine alte Kräutertante und dann komme ich nicht mal dazu ihr zu zeigen, was für ein Kerl ich bin, weil meine Verdauung auf einmal verrückt spielt.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_08"); //Erst jetzt geht es mir langsam besser ...
+		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_05"); //Och, nie wygladasz tak dobrze....
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_06"); //Och, tylko sie zamknal.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_07"); //Najpierw jedyna kobieta na pokladzie to stara ciotka ziolowa, a potem nie moge nawet dostac sie, aby pokazac jej, czym jestem, poniewaz moje trawienie nagle szaleje.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_08"); //Dopiero teraz zaczynam sie czuc lepiej.....
 	};
 };
 
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Bones_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Bones_IR_GehtLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Bones_IR_GehtLos_Condition()
@@ -62,7 +62,7 @@ FUNC VOID Info_Mod_Bones_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Bones_IR_GehtLos_01_00"); //Was?! Nach dieser üblen Seereise?! Vergiss es! Ich setze keinen Fuß auf die Insel ...
+	AI_Output(self, hero, "Info_Mod_Bones_IR_GehtLos_01_00"); //Co? Po tym zlego rejsu! Zapomnij o tym! Nie stawiam nogi na wyspie.....
 
 	AI_StopProcessInfos	(self);
 };

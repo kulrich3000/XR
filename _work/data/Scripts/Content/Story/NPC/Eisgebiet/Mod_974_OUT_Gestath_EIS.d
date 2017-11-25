@@ -1,7 +1,7 @@
 INSTANCE Mod_974_OUT_Gestath_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gestath";
+	name 		= "gestat";
 	guild 		= GIL_OUT;
 	id 			= 974;
 	voice 		= 9;

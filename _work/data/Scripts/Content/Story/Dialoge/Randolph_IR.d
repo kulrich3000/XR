@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Randolph_IR_Hi (C_INFO)
 	information	= Info_Mod_Randolph_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du für ein gequältes Gesicht?";
+	description	= "Co robisz dla torturowanej twarzy?";
 };
 
 FUNC INT Info_Mod_Randolph_IR_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Randolph_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Randolph_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Randolph_IR_Hi_15_00"); //Was machst du für ein gequältes Gesicht?
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hi_06_01"); //Ich ... ich spüre eine große, finstere Macht ganz in der Nähe. Das dämonische in mir wird dadurch förmlich hervorgerufen.
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hi_06_02"); //Lange kann ich es nicht mehr unterdrücken.
-	AI_Output(hero, self, "Info_Mod_Randolph_IR_Hi_15_03"); //Nun, etwas dämonische Schlagkräftigkeit wird bestimmt nicht von Nachteil sein.
+	AI_Output(hero, self, "Info_Mod_Randolph_IR_Hi_15_00"); //Co robisz dla torturowanej twarzy?
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hi_06_01"); //l-- W poblizu czuje wielka, mroczna sile. Przyczyna tego jest we mnie demoniczny we mnie.
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hi_06_02"); //Przez dlugi czas nie moge tego wytlumic.
+	AI_Output(hero, self, "Info_Mod_Randolph_IR_Hi_15_03"); //No cóz, pewna demoniczna sila na pewno nie bedzie wada.
 
 	AI_StopProcessInfos	(self);
 };
@@ -44,7 +44,7 @@ FUNC INT Info_Mod_Randolph_IR_IstDemon_Condition()
 
 FUNC VOID Info_Mod_Randolph_IR_IstDemon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_IstDemon_06_00"); //Ach, verdammt, jetzt ist es geschehen. Hoffentlich haben wir das hier schnell erledigt.
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_IstDemon_06_00"); //Ach, przepraszam, teraz to sie udaje. Miejmy nadzieje, ze udalo nam sie to zrobic szybko.
 
 	AI_StopProcessInfos	(self);
 };
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Randolph_IR_Hebel (C_INFO)
 	information	= Info_Mod_Randolph_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Randolph_IR_Hebel_Condition()
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Randolph_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hebel_06_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_Hebel_06_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -103,7 +103,7 @@ FUNC INT Info_Mod_Randolph_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Randolph_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_Ambient01_06_00"); //Ich spüre viele üble Geschöpfe in der großen Halle vor uns, darunter auch Dämonen. Wir kommen dem Ziel immer näher.
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_Ambient01_06_00"); //Czuje wiele zlych stworzen w przedniej wielkiej hali, w tym demony. Zblizamy sie do celu.
 
 	AI_StopProcessInfos	(self);
 };
@@ -116,7 +116,7 @@ INSTANCE Info_Mod_Randolph_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Randolph_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Randolph_IR_GehtLos_Condition()
@@ -135,7 +135,7 @@ FUNC VOID Info_Mod_Randolph_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_GehtLos_06_00"); //Ja, nichts wie los. Ich kann es kaum erwarten aus dieser schuppigen Dämonenhaut wieder herauszukommen ... für immer.
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_GehtLos_06_00"); //Tak, ruszajmy. Nie moge sie doczekac, az znowu wydostanie sie z tej lydki demona.... na zawsze.
 
 	Mod_IR_Dabei += 1;
 
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Randolph_IR_GehBack (C_INFO)
 	information	= Info_Mod_Randolph_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Randolph_IR_GehBack_Condition()
@@ -171,7 +171,7 @@ FUNC VOID Info_Mod_Randolph_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Randolph_IR_GehBack_06_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Randolph_IR_GehBack_06_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -190,7 +190,7 @@ INSTANCE Info_Mod_Randolph_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Randolph_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Randolph_IR_Heiltrank_Condition()
@@ -211,37 +211,37 @@ FUNC VOID Info_Mod_Randolph_IR_Heiltrank_Info()
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Randolph_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 3)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Elixier)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Randolph_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Extrakt)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Randolph_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_Essenz)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Randolph_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Randolph_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_06)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Randolph_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Randolph_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	&& (self.attribute[ATR_HITPOINTS] <= self.attribute[ATR_HITPOINTS_MAX]-HP_05)
 	{
-		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Randolph_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Randolph_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Randolph_IR_Heiltrank_Health_05);
 	};
 };
 

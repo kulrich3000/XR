@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Raeuber03_Hi_Condition()
 FUNC VOID Info_Mod_Raeuber03_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Raeuber03_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Hi_06_01"); //Zieh Leine!
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Hi_06_01"); //Zgubic sie!
 };
 
 INSTANCE Info_Mod_Raeuber03_Frauenkleider (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Raeuber03_Frauenkleider (C_INFO)
 	information	= Info_Mod_Raeuber03_Frauenkleider_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, dass Melvin verrückt ist?";
+	description	= "Wiesz, ze Melvin jest zwariowany?";
 };
 
 FUNC INT Info_Mod_Raeuber03_Frauenkleider_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Raeuber03_Frauenkleider_Condition()
 
 FUNC VOID Info_Mod_Raeuber03_Frauenkleider_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_00"); //Weißt du, dass Melvin verrückt ist?
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_01"); //Wegen seinem Kleid? Ich find's eigentlich ganz gut.
-	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_02"); //Du weißt aber, dass Kleider normalerweise von Frauen getragen werden?
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_03"); //Laber nich! Das würd ja bedeuten ...
-	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_04"); //Du solltest ihn sofort davon abbringen.
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_05"); //Und wie!
+	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_00"); //Wiesz, ze Melvin jest zwariowany?
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_01"); //Z powodu jego ubioru? Mysle, ze to wlasciwie calkiem dobrze.
+	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_02"); //Wiesz, jak kobiety zazwyczaj nosza sukienki?
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_03"); //Nie ukrywaj! Oznaczaloby to, ze tak.....
+	AI_Output(hero, self, "Info_Mod_Raeuber03_Frauenkleider_15_04"); //Powinienes go teraz zatrzymac.
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_05"); //I jak!
 
 	AI_StandUp	(self);
 
@@ -55,7 +55,7 @@ FUNC VOID Info_Mod_Raeuber03_Frauenkleider_Info()
 
 	AI_TurnToNpc	(self, Mod_7505_BDT_Melvin_REL);
 
-	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_06"); //Normalerweise tragen Frauen Kleider!
+	AI_Output(self, hero, "Info_Mod_Raeuber03_Frauenkleider_06_06"); //Zwykle kobiety nosza sukienki!
 
 	Mod_REL_Frauenkleider03 = 1;
 
@@ -63,7 +63,7 @@ FUNC VOID Info_Mod_Raeuber03_Frauenkleider_Info()
 	&& (Mod_REL_Frauenkleider02 == 1)
 	&& (Mod_REL_Frauenkleider03 == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Nun sollte Melvin weichgeklopft sein.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Teraz nalezy zmiekczyc Melvin.");
 	};
 
 	AI_StopProcessInfos	(self);

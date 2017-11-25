@@ -1,7 +1,7 @@
 instance Mil_305_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Engor"; 	
+	name 		= "Anglik"; 	
 	guild 		= GIL_PAL;
 	id 			= 305;
 	voice 		= 3;

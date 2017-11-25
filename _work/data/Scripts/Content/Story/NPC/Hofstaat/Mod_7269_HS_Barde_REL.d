@@ -1,7 +1,7 @@
 instance Mod_7269_HS_Barde_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Barde"; 
+	name 		= "mineral"; 
 	guild 		= GIL_OUT;
 	id 			= 7269;
 	voice 		= 31;

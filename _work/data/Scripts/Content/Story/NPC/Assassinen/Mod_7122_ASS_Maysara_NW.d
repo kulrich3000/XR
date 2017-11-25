@@ -1,7 +1,7 @@
 INSTANCE Mod_7122_ASS_Maysara_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Maysara"; 
+	name 		= "Majaara"; 
 	guild 		= GIL_OUT;
 	id 			= 7122;
 	voice 		= 6;

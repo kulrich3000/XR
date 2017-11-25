@@ -1,7 +1,7 @@
 instance Mod_1739_KDF_Ordenspriester_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ordensalchemist";	
+	name 		= "monastyczny chemik";	
 	guild 		= GIL_vlk;
 	id 			= 1739;
 	voice 		= 6;

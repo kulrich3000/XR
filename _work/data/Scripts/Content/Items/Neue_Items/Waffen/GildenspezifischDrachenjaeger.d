@@ -1,7 +1,7 @@
 // Drachenschneide
 INSTANCE ItMw_Drachenschneide (C_Item) 
 {	
-	name 				=	"Drachenschneide";
+	name 				=	"nóz latawcowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -27,7 +27,7 @@ INSTANCE ItMw_Drachenschneide (C_Item)
 };
 INSTANCE ItMw_Drachenschneide_Geschaerft (C_Item) 
 {	
-	name 				=	"Drachenschneide (geschärft)";
+	name 				=	"Dragon's Edge (wyostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -56,7 +56,7 @@ INSTANCE ItMw_Drachenschneide_Geschaerft (C_Item)
 
 INSTANCE ItMw_Drachentoeter (C_Item)
 {	
-	name 				=	"Drachentöter";  
+	name 				=	"wazka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -80,7 +80,7 @@ INSTANCE ItMw_Drachentoeter (C_Item)
 };
 INSTANCE ItMw_Drachentoeter_Geschaerft (C_Item)
 {	
-	name 				=	"Drachentöter (geschärft)";  
+	name 				=	"Dragon Slayer (otwarty)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -105,7 +105,7 @@ INSTANCE ItMw_Drachentoeter_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_04 (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter";
+	name 				=	"Rudy murarz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -134,7 +134,7 @@ INSTANCE ItMw_1H_Special_04 (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter (geschärft)";
+	name 				=	"Rude Dragon Smoczylayer (otwarty)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -163,7 +163,7 @@ INSTANCE ItMw_1H_Special_04_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_04  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter";
+	name 				=	"Wielka ruda smoków";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -191,7 +191,7 @@ INSTANCE ItMw_2H_Special_04  (C_Item)
 
 INSTANCE ItMw_2H_Special_04_Geschaerft  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter (geschärft)";
+	name 				=	"Duzy rozgrzewacz rudy smoków (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -219,7 +219,7 @@ INSTANCE ItMw_2H_Special_04_Geschaerft  (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher";
+	name 				=	"Ruda Dragonighter";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -248,7 +248,7 @@ INSTANCE ItMw_1H_Special_04_Dex (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher(geschärft)";
+	name 				=	"Ruda Mlysk Smokowy (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -279,7 +279,7 @@ INSTANCE ItMw_1H_Special_04_Dex_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter des Wasserhiebes";
+	name 				=	"Warstwa smokowa Smocza z woda.";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -310,7 +310,7 @@ INSTANCE ItMw_1H_Special_04_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter des Wasserhiebes (geschärft)";
+	name 				=	"Smoczaca zabrudzona woda Smuga (Smoczy) - ostrzona.";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -341,7 +341,7 @@ INSTANCE ItMw_1H_Special_04_Wasser_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_04_Wasser  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter des Wasserhiebes";
+	name 				=	"Wielka ruda Smocza Dragonslayer Slashera Wodnego.";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -371,7 +371,7 @@ INSTANCE ItMw_2H_Special_04_Wasser  (C_Item)
 
 INSTANCE ItMw_2H_Special_04_Wasser_Geschaerft  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter des Wasserhiebes (geschärft)";
+	name 				=	"Duzy zmiekczacz rudy smoków wody (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -401,7 +401,7 @@ INSTANCE ItMw_2H_Special_04_Wasser_Geschaerft  (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher des Wasserhiebes";
+	name 				=	"RZY Smoczy Mlynek wodny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -432,7 +432,7 @@ INSTANCE ItMw_1H_Special_04_Dex_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher des Wasserhiebes (geschärft)";
+	name 				=	"Dragonfighter's Ore Punch of the Water Slash (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -465,7 +465,7 @@ INSTANCE ItMw_1H_Special_04_Dex_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter des Versengens";
+	name 				=	"Spalenie rudy smokalayera";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -496,7 +496,7 @@ INSTANCE ItMw_1H_Special_04_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachentöter des Versengens (geschärft)";
+	name 				=	"Rude Smoczy Mlynek Smoka do Sluchu (ostrozny)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -527,7 +527,7 @@ INSTANCE ItMw_1H_Special_04_Feuer_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_04_Feuer  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter des Versengens";
+	name 				=	"Wspanialy morderca smoków z uniesieniem.";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -557,7 +557,7 @@ INSTANCE ItMw_2H_Special_04_Feuer  (C_Item)
 
 INSTANCE ItMw_2H_Special_04_Feuer_Geschaerft  (C_Item) 
 {	
-	name 				=	"Großer Erz-Drachentöter des Versengens (geschärft)";
+	name 				=	"Duzy morderca smoków rudy (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -587,7 +587,7 @@ INSTANCE ItMw_2H_Special_04_Feuer_Geschaerft  (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher des Versengens";
+	name 				=	"Ruda Smok Fighter Smoczy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -618,7 +618,7 @@ INSTANCE ItMw_1H_Special_04_Dex_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_04_Dex_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Drachenstecher des Versengens (geschärft)";
+	name 				=	"Scorching Kite Engraver (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

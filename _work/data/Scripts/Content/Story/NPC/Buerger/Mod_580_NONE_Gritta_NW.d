@@ -1,7 +1,7 @@
 instance Mod_580_NONE_Gritta_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gritta";	
+	name 		= "grys";	
 	guild 		= GIL_NONE;
 	id 			= 580;
 	voice 		= 16;

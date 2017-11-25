@@ -1,7 +1,7 @@
 INSTANCE Mod_9004_KDW_Merdarion_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Merdarion";
+	name 		= "meryl";
 	guild 		= GIL_NOV; 
 	id 			= 9004;
 	voice 		= 6;

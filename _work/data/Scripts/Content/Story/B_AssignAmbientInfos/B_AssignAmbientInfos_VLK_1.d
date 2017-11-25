@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_1_JOIN(C_INFO)
 	condition	= DIA_VLK_1_JOIN_Condition;
 	information	= DIA_VLK_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Wie kann ich Bürger dieser Stadt werden?";
+	description = "Jak moge zostac obywatelem tego miasta?";
 };                       
 
 FUNC INT DIA_VLK_1_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_JOIN_15_00"); //Wie kann ich Bürger dieser Stadt werden?
-	AI_Output (self, hero, "DIA_VLK_1_JOIN_01_01"); //Such dir 'ne ordentliche Arbeit! Jeder, der hier in Khorinis einer festen Beschäftigung nachgeht, zählt zu den Bürgern der Stadt.
+	AI_Output (hero, self, "DIA_VLK_1_JOIN_15_00"); //Jak moge zostac obywatelem tego miasta?
+	AI_Output (self, hero, "DIA_VLK_1_JOIN_01_01"); //Uzyskaj sobie przyzwoita prace! Kazdy, kto ma stala prace w Khorinis jest obywatelem miasta.
 };
 
 INSTANCE DIA_VLK_1_Skinner(C_INFO)
@@ -53,7 +53,7 @@ INSTANCE DIA_VLK_1_Skinner(C_INFO)
 	condition	= DIA_VLK_1_Skinner_Condition;
 	information	= DIA_VLK_1_Skinner_Info;
 	permanent	= TRUE;
-	description = "Ich habe hier etwas, was die Stimmung zu heben vermag.";
+	description = "Mam tu cos do podzwigniecia.";
 };                       
 
 FUNC INT DIA_VLK_1_Skinner_Condition()
@@ -70,28 +70,28 @@ FUNC INT DIA_VLK_1_Skinner_Condition()
 
 FUNC VOID DIA_VLK_1_Skinner_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_Skinner_15_00"); //Ich habe hier etwas, was die Stimmung zu heben vermag.
-	AI_Output (self, hero, "DIA_VLK_1_Skinner_06_01"); //Ahh, dieser herrliche Duft. Wirkt intensiver als das, was man hier sonst so bekommt am Hafen. Wie viel soll der Spaß den kosten?
+	AI_Output (hero, self, "DIA_VLK_1_Skinner_15_00"); //Mam tu cos do podzwigniecia.
+	AI_Output (self, hero, "DIA_VLK_1_Skinner_06_01"); //Ahh, ten piekny zapach. Bardziej intensywne niz to, co zwykle docierasz do portu. Ile kosztuje to radosci?
 
 	Mod_SkinnerQuest = 2;
 
 	Info_ClearChoices	(DIA_VLK_1_Skinner);
 
-	Info_AddChoice	(DIA_VLK_1_Skinner, "40 Gold.", DIA_VLK_1_Skinner_C);
-	Info_AddChoice	(DIA_VLK_1_Skinner, "30 Gold.", DIA_VLK_1_Skinner_B);
-	Info_AddChoice	(DIA_VLK_1_Skinner, "20 Gold.", DIA_VLK_1_Skinner_A);
+	Info_AddChoice	(DIA_VLK_1_Skinner, "40 zlota.", DIA_VLK_1_Skinner_C);
+	Info_AddChoice	(DIA_VLK_1_Skinner, "Trzydziesci zlota.", DIA_VLK_1_Skinner_B);
+	Info_AddChoice	(DIA_VLK_1_Skinner, "20 zlota.", DIA_VLK_1_Skinner_A);
 };
 
 FUNC VOID DIA_VLK_1_Skinner_D()
 {	
-	AI_Output (self, hero, "DIA_VLK_1_Skinner_D_06_00"); //Und auch noch so günstig. Ich nehme alles, was du hast.
+	AI_Output (self, hero, "DIA_VLK_1_Skinner_D_06_00"); //Bez wzgledu na to, jak tanie. Zabiore wszystko, co dostales.
 
 	Info_ClearChoices	(DIA_VLK_1_Skinner);
 };
 
 FUNC VOID DIA_VLK_1_Skinner_C()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_Skinner_C_15_00"); //40 Gold.
+	AI_Output (hero, self, "DIA_VLK_1_Skinner_C_15_00"); //40 zlota.
 
 	DIA_VLK_1_Skinner_D();
 
@@ -102,14 +102,14 @@ FUNC VOID DIA_VLK_1_Skinner_C()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_1_Skinner);
 };
 
 FUNC VOID DIA_VLK_1_Skinner_B()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_Skinner_B_15_00"); //30 Gold.
+	AI_Output (hero, self, "DIA_VLK_1_Skinner_B_15_00"); //Trzydziesci zlota.
 
 	DIA_VLK_1_Skinner_D();
 
@@ -120,14 +120,14 @@ FUNC VOID DIA_VLK_1_Skinner_B()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_1_Skinner);
 };
 
 FUNC VOID DIA_VLK_1_Skinner_A()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_Skinner_A_15_00"); //20 Gold.
+	AI_Output (hero, self, "DIA_VLK_1_Skinner_A_15_00"); //20 zlota.
 
 	DIA_VLK_1_Skinner_D();
 
@@ -138,7 +138,7 @@ FUNC VOID DIA_VLK_1_Skinner_A()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_1_Skinner);
 };
@@ -149,7 +149,7 @@ INSTANCE Info_VLK_1_Flugblaetter (C_INFO) // E1
 	condition	= Info_VLK_1_Flugblaetter_Condition;
 	information	= Info_VLK_1_Flugblaetter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "Mam dla Ciebie ulotke.";
 };                       
 
 FUNC INT Info_VLK_1_Flugblaetter_Condition()
@@ -169,11 +169,11 @@ FUNC VOID Info_VLK_1_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_1_Flugblaetter_01_01"); //Lass sehen ...
+	AI_Output(self, hero, "Info_Mod_VLK_1_Flugblaetter_01_01"); //Pozwólcie mi widziec....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_VLK_1_Flugblaetter_01_02"); //Ahh Matteo. Bei dem kaufe ich sowieso schon täglich ein.
+	AI_Output(self, hero, "Info_Mod_VLK_1_Flugblaetter_01_02"); //Ahhh Matteo. Kupuje u niego codziennie.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -186,7 +186,7 @@ INSTANCE Info_VLK_1_Rangar (C_INFO) // E1
 	condition	= Info_VLK_1_Rangar_Condition;
 	information	= Info_VLK_1_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Czy wiedziales juz, ze....";
 };                       
 
 FUNC INT Info_VLK_1_Rangar_Condition()
@@ -205,14 +205,14 @@ FUNC INT Info_VLK_1_Rangar_Condition()
 
 FUNC VOID Info_VLK_1_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_1_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_1_Rangar_01_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_1_Rangar_15_02"); //Mit einem von Bromors Mädchen!
-	AI_Output(self, hero, "Info_Mod_VLK_1_Rangar_01_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_1_Rangar_15_00"); //Czy wiedziales, ze Rangar ma romans?
+	AI_Output(self, hero, "Info_Mod_VLK_1_Rangar_01_01"); //Naprawde? Z kim?
+	AI_Output(hero, self, "Info_Mod_VLK_1_Rangar_15_02"); //Z jedna z dziewczyn Bromora!
+	AI_Output(self, hero, "Info_Mod_VLK_1_Rangar_01_03"); //Czy jestes pewien tego? Bede musial od razu isc dalej.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Wokól krazy plotka, wiec Den bedzie zadowolony.");
 };
 
 // *************************************************************************
@@ -224,7 +224,7 @@ INSTANCE DIA_VLK_1_PEOPLE(C_INFO)
 	condition	= DIA_VLK_1_PEOPLE_Condition;
 	information	= DIA_VLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind hier die wichtigen Persönlichkeiten?";
+	description = "Kim sa tutaj wazne osobowosci?";
 };                       
 
 FUNC INT DIA_VLK_1_PEOPLE_Condition()
@@ -234,11 +234,11 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_PEOPLE_15_00"); //Wer sind hier die wichtigen Persönlichkeiten?
-	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_01"); //Lord Hagen hat die Kontrolle über die Stadt. Statthalter ist jedoch Larius.
-	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_02"); //Dann gibt es noch einen Richter. Natürlich hat Lord Hagen auch die Rechte dieser beiden.
-	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre ist die rechte Hand von Lord Hagen.
-	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_04"); //Jeder, der sich hier in der Stadt etwas zu schulden kommen lässt, muss sich vor ihm verantworten.
+	AI_Output (hero, self, "DIA_VLK_1_PEOPLE_15_00"); //Kim sa tutaj wazne osobowosci?
+	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_01"); //Lord Hagen ma kontrole nad miastem. Gubernatorem jest jednak Larius.
+	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_02"); //Jest jeszcze inny sedzia. Oczywiscie Lord Hagen ma równiez prawa tych dwóch osób.
+	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_03"); //Pan Andre jest prawa reka Pana Hagena.
+	AI_Output (self, hero, "DIA_VLK_1_PEOPLE_01_04"); //Kazdy, kto jest winny czegokolwiek w miescie, musi mu odpowiedziec.
 };
 
 // *************************************************************************
@@ -250,7 +250,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt es interessantes in dieser Stadt?";
+	description = "Co jest interesujace w tym miescie?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -260,10 +260,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_1_LOCATION_15_00"); //Was gibt es Interessantes in dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_01"); //Hier kannst du fast alles kaufen, was du dir vorstellen kannst. Entweder bei den Händlern am Marktplatz oder in der Unterstadt.
-	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_02"); //Aber fast alles, was du hier kaufen kannst, kostet auch ne Kleinigkeit.
-	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_03"); //Wenn du nicht viel Geld hast, kann dir vielleicht Lehmar, der Geldverleiher, weiterhelfen. Sein Haus ist am Anfang des Hafenviertels, wenn du von der Unterstadt kommst.
+	AI_Output (hero, self, "DIA_VLK_1_LOCATION_15_00"); //Co jest interesujace w tym miescie?
+	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_01"); //Tutaj mozna kupic prawie wszystko, co mozna sobie wyobrazic. Zarówno od kupców na rynku, jak i w dolnym miescie.
+	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_02"); //Ale prawie wszystko co mozna tu kupic kosztuje troche.
+	AI_Output (self, hero, "DIA_VLK_1_LOCATION_01_03"); //Jesli nie masz duzo pieniedzy, byc moze Lehmar, pozyczkodawca moze Ci pomóc. Jego dom jest na poczatku dzielnicy portowej, kiedy pochodzi sie z dolnego miasta.
 };
 
 INSTANCE Info_Mod_VLK_1_Pickpocket (C_INFO)

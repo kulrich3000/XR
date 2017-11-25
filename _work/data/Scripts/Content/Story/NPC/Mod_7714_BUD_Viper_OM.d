@@ -2,7 +2,7 @@ instance Mod_7714_BUD_Viper_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Viper";
+	name =							"zmija";
 	npctype =						npctype_MAIN;
 	guild =							GIL_OUT;      
 	level =							3;

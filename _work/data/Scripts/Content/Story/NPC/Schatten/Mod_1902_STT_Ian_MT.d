@@ -1,7 +1,7 @@
 instance Mod_1902_STT_Ian_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Ian";
+	name 		=		"lanca";
 	npctype 	=	  	NPCTYPE_MAIN;
 	guild 		=		GIL_OUT;
 	level 		=		13;

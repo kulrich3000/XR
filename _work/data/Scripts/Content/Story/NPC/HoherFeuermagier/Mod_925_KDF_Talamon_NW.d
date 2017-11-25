@@ -1,7 +1,7 @@
 INSTANCE Mod_925_KDF_Talamon_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Talamon";
+	name 		= "talamon";
 	guild 		= GIL_VLK;
 	id 			= 925;
 	voice 		= 38;

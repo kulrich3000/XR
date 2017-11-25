@@ -1,7 +1,7 @@
 instance Mod_7652_OUT_Fremder_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fremder"; 
+	name 		= "kosmitka"; 
 	guild 		= GIL_STRF;
 	id 			= 7652;
 	voice 		= 13;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cornelius_Hi (C_INFO)
 	information	= Info_Mod_Cornelius_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Cornelius_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Cornelius_Hi_Condition()
 FUNC VOID Info_Mod_Cornelius_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Cornelius_Hi_13_01"); //Ich bin Cornelius, der stellvertretende Statthalter von Khorinis. Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Hi_13_01"); //Jestem Corneliusem, zastepca gubernatora Khorinisa. Co moge dla Ciebie zrobic?
 };
 
 INSTANCE Info_Mod_Cornelius_Morgahard (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Cornelius_Morgahard (C_INFO)
 	information	= Info_Mod_Cornelius_Morgahard_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mit dir über Morgahard sprechen.";
+	description	= "Chce z panstwem porozmawiac o Morgaharddzie.";
 };
 
 FUNC INT Info_Mod_Cornelius_Morgahard_Condition()
@@ -42,16 +42,16 @@ FUNC INT Info_Mod_Cornelius_Morgahard_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Morgahard_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_00"); //Ich will mit dir über Morgahard sprechen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_01"); //(nervös) Was ist mit ihm?
-	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_02"); //Ich glaube, das Verbrechen, aufgrund dessen er in die Kolonie geworfen wurde, hat er nicht begangen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_03"); //(verlegen) Nun, naja, das mag schon sein, allerdings ist es nun schon zu spät, er war schon in der Kolonie.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_04"); //Das weiß ich, aber trotzdem will ich, dass er offiziell als unschuldig gilt.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_05"); //Ich ... ich habe Beweise für seine Unschuld. Allerdings würden sie mich umbringen, wenn ich sie dir geben würde.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_06"); //Wer würde dich umbringen?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_07"); //Ich will mich mit dir heute Nacht auf dem leeren Marktplatz treffen. Dort können wir ungefährdet reden.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_00"); //Chce z panstwem porozmawiac o Morgaharddzie.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_01"); //Nerwowy) A co z nim?
+	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_02"); //Nie sadze, ze popelnil zbrodnie, która spowodowala wrzucenie go do kolonii.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_03"); //No cóz, moze to prawda, ale teraz jest juz za pózno, byl juz w kolonii.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_04"); //Wiem to, ale nadal chce, aby byl on oficjalnie niewinny.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_05"); //l-- Mam dowód jego niewinnosci. Zabija mnie jednak, gdybym ci to dal.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Morgahard_15_06"); //Kto Cie zabije?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Morgahard_13_07"); //Chce dzis wieczorem spotkac sie z Panstwem na pustym rynku. Tam mozemy rozmawiac bezpiecznie.
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Cornelius kann nicht offen sprechen. Er will sich heute Nacht am Marktplatz mit mir treffen.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Korneliusz nie moze mówic szczerze. Dzis wieczorem chce mnie spotkac na targowisku.");
 
 	B_StartOtherRoutine	(self, "MARKT");
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Cornelius_AtMarkt (C_INFO)
 	information	= Info_Mod_Cornelius_AtMarkt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Also, sag mir was du weißt.";
+	description	= "Powiedz mi wiec, co wiesz.";
 };
 
 FUNC INT Info_Mod_Cornelius_AtMarkt_Condition()
@@ -78,18 +78,18 @@ FUNC INT Info_Mod_Cornelius_AtMarkt_Condition()
 
 FUNC VOID Info_Mod_Cornelius_AtMarkt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_AtMarkt_15_00"); //Also, sag mir, was du weißt.
-	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_01"); //Nun, es gibt eine geheime Gruppe aus reichen Bürgern in der Stadt, die ziemlich viel Macht hat.
-	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_02"); //Morgahard war ihnen ein Dorn im Auge, da er sich ihnen nicht anschließen wollte und gegen sie gearbeitet hat.
-	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_03"); //Also haben sie ihm ein Verbrechen angedichtet und ihn in die Kolonie verbannen lassen.
-	AI_Output(hero, self, "Info_Mod_Cornelius_AtMarkt_15_04"); //Wer sind die Mitglieder dieser Gruppe?
-	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_05"); //Ich kenne nur einen, und das ist Gerbrandt.
+	AI_Output(hero, self, "Info_Mod_Cornelius_AtMarkt_15_00"); //Powiedz mi wiec, co wiesz.
+	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_01"); //Cóz, w miescie jest tajemnicza grupa zamoznych mieszkanców, którzy maja dosc duzo wladzy.
+	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_02"); //Morgahard byl ciernia u ich boku, poniewaz nie chcial sie do nich przylaczyc i pracowal przeciwko nim.
+	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_03"); //Wiec oni sprowadzili go z zbrodnia i wyslali do kolonii.
+	AI_Output(hero, self, "Info_Mod_Cornelius_AtMarkt_15_04"); //Kim sa czlonkowie tej grupy?
+	AI_Output(self, hero, "Info_Mod_Cornelius_AtMarkt_13_05"); //Znam tylko jedna osobe i to jest Gerbrandt.
 
 	AI_StopProcessInfos	(self);
 
 	AI_PlayAniBS (self, "T_DEAD", BS_LIE);
 
-	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Cornelius konnte mir gerade noch sagen, dass Gerbrandt in der Sache mit drin hängt, danach ist er aber tot zusammengebrochen.");
+	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Korneliusz mógl mi tylko powiedziec, ze Gerbrandt byl zaangazowany w te sprawe, ale potem zawalil sie.");
 };
 
 INSTANCE Info_Mod_Cornelius_Ambient (C_INFO)
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Cornelius_Ambient (C_INFO)
 	information	= Info_Mod_Cornelius_Ambient_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gefällt dir dein Amt als stellvertretender Statthalter?";
+	description	= "Lubisz stanowisko zastepcy dyrektora?";
 };
 
 FUNC INT Info_Mod_Cornelius_Ambient_Condition()
@@ -113,12 +113,12 @@ FUNC INT Info_Mod_Cornelius_Ambient_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Ambient_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient_15_00"); //Gefällt dir dein Amt als stellvertretender Statthalter?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_01"); //Dieser Titel ist doch eine einzige Verhöhnung!
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_02"); //Ich warte nur darauf, dass sie mich offiziell als zweiten Aushilfsboten für Lord Hagen anstellen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_03"); //Denn nichts anderes bin ich. Larius hat ein Wehwehchen? Ich muss es den Lords mitteilen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_04"); //Lord Hagen hat einen Befehl? Auf zu Larius!
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_05"); //Als ob die die zwei Zimmer nicht selbst laufen könnten!
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient_15_00"); //Lubisz stanowisko zastepcy dyrektora?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_01"); //Ten tytul to kpina!
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_02"); //Czekam tylko na nich, aby oficjalnie zatrudnili mnie jako druga pokuszenie dla lorda Hagena.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_03"); //Bo to wszystko, czym jestem. Larius ma troche dolegliwosci? Musze powiedziec panom.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_04"); //Lord Hagen ma zamówienie? Do Lariusa!
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient_13_05"); //Jakze nie mogli sami chodzic po obu pokojach!
 };
 
 INSTANCE Info_Mod_Cornelius_Ambient01 (C_INFO)
@@ -129,7 +129,7 @@ INSTANCE Info_Mod_Cornelius_Ambient01 (C_INFO)
 	information	= Info_Mod_Cornelius_Ambient01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Dann bekommst du doch bestimmt viel mit von dem, was passiert.";
+	description	= "Jestem pewien, ze wiele z tego, co sie wydarzy.";
 };
 
 FUNC INT Info_Mod_Cornelius_Ambient01_Condition()
@@ -143,44 +143,44 @@ FUNC INT Info_Mod_Cornelius_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Ambient01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_15_00"); //Dann bekommst du doch bestimmt viel mit von dem, was passiert.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_13_01"); //Alles vertrauliche Informationen.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_15_00"); //Jestem pewien, ze wiele z tego, co sie wydarzy.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_13_01"); //Wszystkie informacje poufne.
 
 	Info_ClearChoices	(Info_Mod_Cornelius_Ambient01);
 
-	Info_AddChoice	(Info_Mod_Cornelius_Ambient01, "Ich habe einen gut gefüllten Geldbeutel.", Info_Mod_Cornelius_Ambient01_B);
-	Info_AddChoice	(Info_Mod_Cornelius_Ambient01, "Ich könnte dir helfen, deine Position zu verbessern.", Info_Mod_Cornelius_Ambient01_A);
+	Info_AddChoice	(Info_Mod_Cornelius_Ambient01, "Mam dobrze wypelniona torebke.", Info_Mod_Cornelius_Ambient01_B);
+	Info_AddChoice	(Info_Mod_Cornelius_Ambient01, "Moge pomóc Panu poprawic panskie stanowisko.", Info_Mod_Cornelius_Ambient01_A);
 };
 
 FUNC VOID Info_Mod_Cornelius_Ambient01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_B_15_00"); //Ich habe einen gut gefüllten Geldbeutel.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_B_13_01"); //Das wird dir leider nichts bringen, ich habe auch meine Ehre.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_B_15_00"); //Mam dobrze wypelniona torebke.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_B_13_01"); //Nie zrobi ci nic dobrego, mam mój zaszczyt.
 
 	Info_ClearChoices	(Info_Mod_Cornelius_Ambient01);
 };
 
 FUNC VOID Info_Mod_Cornelius_Ambient01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_00"); //Ich könnte dir helfen, deine Position zu verbessern.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_A_13_01"); //(misstrauisch) Inwiefern?
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_00"); //Moge pomóc Panu poprawic panskie stanowisko.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_A_13_01"); //W jakim stopniu?
 
 	// Wenn man Lord Hagen geholfen hat
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Hagen_Hi))
 	{
-		AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_02"); //Meine Beziehungen zu den Lords sind gut.
-		AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_A_13_03"); //In dem Fall ... hilf du mir zuerst, dann werde ich dir bereitwillig antworten.
+		AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_02"); //Moja relacja z panami jest dobra.
+		AI_Output(self, hero, "Info_Mod_Cornelius_Ambient01_A_13_03"); //W takim przypadku.... pomozesz mi najpierw, a potem z przyjemnoscia odpowiem.
 
 		Mod_Cornelius_Overtalk = 1;
 
 		Log_CreateTopic	(TOPIC_MOD_CORNELIUS_HELP, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_mOD_CORNELIUS_HELP, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_CORNELIUS_HELP, "Durch seine Botendienste ist Cornelius, der stellvertretende Statthalter, im Besitz wertvoller Informationen über die Lage in Khorinis. Damit er anfängt zu reden, will er allerdings vorher von seinen nervenden Aufgaben entbunden werden. Ich sollte mit Lord Hagen darüber sprechen.");
+		B_LogEntry	(TOPIC_MOD_CORNELIUS_HELP, "Zastepca gubernatora, Cornelius, dzieki swoim sluzbom poslanniczym, posiada cenne informacje na temat sytuacji w Khorinis. Aby jednak zaczac mówic, najpierw chce zostac zwolniony z klopotliwych obowiazków. Powinienem o tym porozmawiac z Lorda Hagenem.");
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_04"); //Da fällt mir im Moment auch nichts ein.
+		AI_Output(hero, self, "Info_Mod_Cornelius_Ambient01_A_15_04"); //W tej chwili nic nie moge sobie wyobrazic.
 	};
 
 	Info_ClearChoices	(Info_Mod_Cornelius_Ambient01);
@@ -208,9 +208,9 @@ FUNC INT Info_Mod_Cornelius_Ambient02_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Ambient02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient02_13_00"); //Und, was hast du erreichen können?
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient02_15_01"); //Sieht doch so aus, als könnte ich dir nicht helfen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient02_13_02"); //(ironisch) Na, super! Aber glaub ja nicht, dass wir so ins Geschäft kommen.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient02_13_00"); //Co udalo sie panu osiagnac?
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient02_15_01"); //Wyglada na to, ze nie moge Ci pomóc.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient02_13_02"); //Cóz, swietnie! Nie mysl jednak, ze tak wlasnie postepujemy.
 };
 
 INSTANCE Info_Mod_Cornelius_Ambient03 (C_INFO)
@@ -235,17 +235,17 @@ FUNC INT Info_Mod_Cornelius_Ambient03_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Ambient03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_00"); //Und, was hast du erreichen können?
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_01"); //Du bist ab jetzt Wirtschaftsminister. Zufrieden?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_02"); //Aber hallo! Keine schlechte Aufgabe, und endlich entkomme ich den skeptischen Blicken Lord Hagens.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_03"); //Stell bloß keine Dummheiten an, ich müsste dafür gerade stehen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_04"); //(heuchlerisch) Würde mir nie im Traum einfallen.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_05"); //Was ist mit der Gegenleistung?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_06"); //Den pikanten Neuigkeiten?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_07"); //Von meinen Quellen weiß ich, dass Lord Hagen nicht mehr das volle Vertrauen des Königs genießt.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_08"); //Er soll schon eine Delegation entsandt haben, die im richtigen Moment zuschlagen und Lord Hagen entmachten soll.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_09"); //Dann wird's hier jedenfalls nicht langweilig.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_10"); //Worauf du einen lassen kannst.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_00"); //Co udalo sie panu osiagnac?
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_01"); //Od teraz jest pan ministrem gospodarki. Zadowolony?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_02"); //Ale powitanie! Nie jest to zle zadanie i w koncu moge uciec od sceptycznych oczu Pana Hagena.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_03"); //Nie czyn niczego glupiego, na to musze odpowiedziec.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_04"); //Nigdy bym o tym nie marzyl.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_05"); //A co z powrotem?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_06"); //Pikantne wiesci?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_07"); //Z moich zródel wiem, ze Lord Hagen nie ma juz pelnego zaufania Króla.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_08"); //Mówi sie, ze wyslal juz delegacje do strajku we wlasciwym momencie i pozbawil Pana Hagena wladzy.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient03_15_09"); //Wtedy i tak nie bedzie sie tu nudzic.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient03_13_10"); //Zalózcie swój tylek.
 
 	B_GivePlayerXP	(50);
 
@@ -281,16 +281,16 @@ FUNC INT Info_Mod_Cornelius_Ambient04_Condition()
 
 FUNC VOID Info_Mod_Cornelius_Ambient04_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_00"); //Stehen geblieben! Hier kommt gerade keiner rein!
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_01"); //Was ist denn hier passiert?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_02"); //Lord Hagen steht unter Arrest! Ich werde seine Herrschaft nicht länger dulden.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_03"); //Und was hast du jetzt vor?
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_04"); //Der gute Herr verschanzt sich dort drin mit einer letzten Schar Getreuer. Die Bande wird jetzt ausgehungert, bis sie sich ergibt.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_05"); //Hast du mich also doch enttäuscht.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_06"); //Sonst wäre ich wohl kaum an mein Ziel gekommen. Und jetzt verschwinde, ich brauche dich nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_07"); //So einfach wirst du mich jetzt aber nicht los ...
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_08"); //Du willst also lieber starrköpfig untergehen? Meinetwegen.
-	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_09"); //(ruft) Zieht die Waffen, Männer, hier wird Blut vergossen!
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_00"); //Zamrozic! Nikt nie przychodzi tu juz teraz!
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_01"); //Co wydarzylo sie tutaj w piekle?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_02"); //Lord Hagen jest w areszcie! Nie bede juz dluzej tolerowal jego panowania.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_03"); //Wiec co teraz robisz?
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_04"); //Dobry dzentelmen kryje sie tam z ostatnim zespolem lojalistów. Teraz gang bedzie umartwiony na smierc glodowa, az do momentu poddania sie.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_05"); //Wiec zawiódles mnie w koncu.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_06"); //W przeciwnym razie nie udaloby mi sie dotrzec do celu podrózy. Teraz wyjde stad, nie potrzebuje cie wiecej.
+	AI_Output(hero, self, "Info_Mod_Cornelius_Ambient04_15_07"); //Nie da sie mnie tak latwo sie mnie teraz pozbyc......
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_08"); //Wolisz wiec uparcie isc pod góre? Nie obchodze sie z nim.
+	AI_Output(self, hero, "Info_Mod_Cornelius_Ambient04_13_09"); //(skrzydlo) Narysuj rece, mezczyzn, krew tu jest przelana!
 
 	AI_StopProcessInfos	(self);
 

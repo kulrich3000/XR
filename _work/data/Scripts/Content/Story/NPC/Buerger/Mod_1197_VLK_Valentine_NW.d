@@ -1,7 +1,7 @@
 instance Mod_1197_VLK_Valentine_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Valentine";	
+	name 		= "walentyna";	
 	guild 		= GIL_pal;
 	id 			= 1197;
 	voice 		= 16;

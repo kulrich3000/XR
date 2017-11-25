@@ -18,15 +18,15 @@ FUNC INT Info_Mod_AlterWaldMann_Hi_Condition()
 
 FUNC VOID Info_Mod_AlterWaldMann_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_00"); //Ahh, hallo, dich habe ich hier noch nie gesehen ... du musst aus den Wäldern Khorinis stammen.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_01"); //Ist es da auch mittlerweile so unruhig geworden, wie hier?
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_02"); //Keine Ruhe hat man vor Wilderern und Banditen mehr, vor Leuten, die rücksichtslos den Wald roden und plündern ...
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_03"); //Hmm, es trifft sich gut, dass du hier erschienen bist.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_04"); //Du könntest hier über diesen Waldabschnitt wachen, während ich wieder einen anderen Platz aufsuchen muss, an welchem sich Störenfriede breit gemacht haben.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_05"); //Für alle Fälle werde ich dir einen Teil meiner Macht überlassen, auf dass du jeden Wilderer und Strolch davonjagen kannst
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_06"); //Es sollte auch nicht allzu lange dauern, bis ich die Sache erledigt habe und hierhin zurückkomme. Viel Glück.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_00"); //Ahh, hello, nigdy nie widzialem cie tutaj.... Musisz pochodzic z lasów Khorini.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_01"); //Czy stalo sie tak niepokojace, jak tutaj?
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_02"); //Nie ma spokoju od klusowników i bandytów, od ludzi bezlitosnie czystych i pladrujacych las.... Wiecej
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_03"); //Cóz, to dobrze, ze pokazales sie tutaj.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_04"); //Mozna bylo przygladac sie tej czesci lasu, a ja musialem isc do innego miejsca, gdzie szerzyli sie wrogowie.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_05"); //W kazdym razie zostawie wam czesc mojej mocy, abyscie mogli gonic wszystkich klusowników i wlóczegi.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Hi_11_06"); //Nie powinienem zbyt dlugo czekac, zeby to zrobic i wrócic tutaj. Zycze powodzenia.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Der alte Mann des Waldes will, dass ich den umliegenden Wald von Wilderern säubere, bis er zurück ist. Zu diesem Zweck hat er mir einen Teil seiner Macht überlassen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Stary czlowiek z lasu chce, abym oczyszczal otaczajacy go las klusowników, az wróci. W tym celu dal mi swoja moc.");
 
 	AI_StopProcessInfos	(self);
 
@@ -71,17 +71,17 @@ FUNC INT Info_Mod_AlterWaldMann_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_AlterWaldMann_Aufgabe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_00"); //Ahh, ich merke, du hast ganze Arbeit geleistet.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_01"); //Hier hast du einer Wurzel zur Belohnung, welche dich stärken wird ...
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_00"); //Ach, widze, ze wykonales duzo pracy.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_01"); //Tutaj masz korzen jako nagrode, która Cie wzmocni.....
 
 	CreateInvItems	(self, ItPl_Strength_Herb_01, 1);
 
 	AI_DropItem	(self, ItPl_Strength_Herb_01);
 
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_02"); //Ich muss nun etwas weiter nach Norden gehen. Wir ich erfahren habe, wollen die gierigen Menschen dort eine weitere Mine eröffnen.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_03"); //Das darf unter keinen Umständen geschehen.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_02"); //Teraz musze isc dalej na pólnoc. Jak dowiedzialem sie, chciwi ludzie chca otworzyc kolejna kopalnie.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_Aufgabe_11_03"); //W zadnym wypadku nie moze sie to zdarzyc.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Der alte Mann des Waldes will etwas weiter in den Norden, um die Errichtung einer Mine zu verhindern.");
+	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Stary czlowiek z lasu chce isc dalej na pólnoc, aby zapobiec budowie kopalni.");
 
 	AI_StopProcessInfos	(self);
 
@@ -112,15 +112,15 @@ FUNC INT Info_Mod_AlterWaldMann_AtMine_Condition()
 
 FUNC VOID Info_Mod_AlterWaldMann_AtMine_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_00"); //Siehst du, was die Menschen mit dem Wald machen?
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_01"); //Fällen die Bäume, zerstören die Vegetation, nur um sich mit noch mehr Gold und Erz zu bereichern.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_02"); //Wenn die ihr Ziel erreichen und die Mine erschließen werden viele Bäume sterben müssen, um ihnen als Balken und Brennholz in den Öfen zu dienen ...
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_03"); //Hmm, ich habe da einen Einfall, bei welchem du mir helfen musst. Die Baumstämme der Balken sind noch frisch und voller Leben ...
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_04"); //Damit ich jedoch mein Vorhaben umsetzen kann, musst du die Menschen eine Weile ablenken.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_05"); //Leider scheinen ihre Rüstungen sehr stark zu sein und es wird dir kaum gelingen, sie mit Bissen zu durchdringen.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_06"); //Sei also auf der Hut und pass auf, dass sie dir mit ihren Schwertern nicht zu nahe kommen.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_00"); //Widzisz, co ludzie robia dla lasu?
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_01"); //Po opadnieciu drzew niszczono roslinnosc, aby wzbogacic sie o wiecej zlota i rudy.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_02"); //Po dotarciu do miejsca przeznaczenia i otwarciu kopalni, wiele drzew bedzie musialo umrzec jako belki i drewno opalowe w piecach.... Wiecej
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_03"); //Hmm, mam pomysl, z którym musisz mi pomóc. Pnie drzew w belkach sa jeszcze swieze i pelne zycia.....
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_04"); //Aby jednak zrealizowac mój plan, trzeba na jakis czas rozpraszac ludzi.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_05"); //Niestety, ich zbroja wydaje sie byc bardzo mocna i nie bedziecie mogli przeniknac ich z kesem.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine_11_06"); //Uwazaj wiec i upewnij sie, ze nie zblizaja sie zbyt blisko Ciebie swoimi mieczami.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Der alte Mann des waldes scheint einen Plan zu haben, der mit den frischen Balken, welche die Mine stützen, zu tun hat. Damit er jedoch seine Pläne verwirklichen kann, werde ich die Leute eine Weile ablenken müssen. Der Versuch ihnen mit Bissen zu Leibe zu rücken wird jedoch nicht glücken, da ihre Rüstungen zu dick sind. Ich werde also schnell und vorsichtig sein müssen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Stary czlowiek z lasu wydaje sie miec plan zwiazany ze swieza belka podtrzymujaca kopalnie. Aby jednak zrealizowac jego plany, bede musial na jakis czas rozpraszac ludzi. Próba wtlaczania ich do ciala nie powiedzie sie, bo ich zbroja jest zbyt gruba. Tak wiec bede musial byc szybki i ostrozny.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -148,11 +148,11 @@ FUNC INT Info_Mod_AlterWaldMann_AtMine2_Condition()
 
 FUNC VOID Info_Mod_AlterWaldMann_AtMine2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_00"); //Du hast dem Wald einen guten Dienst geleistet.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_01"); //Ich habe die frischen Balken zu neuem Wachstum anregen können, sodass sie jetzt als große stabile Bäume zu Zugang zur Mine verstellen.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_02"); //Die Menschen werden nun denken es ginge nicht mit rechten Dingen zu und hoffentlich ihr Vorhaben beenden.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_03"); //Da du diesmal soviel Geschick bewiesen hat, soll eine Beere deine Gewandtheit noch steigern. Ahh, ich habe gerade keine bei mir.
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_04"); //Dann werde mich jetzt zu meiner Kammer der Schätze und Reichtümer begeben und dir deine Belohnung holen.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_00"); //Dobrze sluzysz lasowi.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_01"); //Udalo mi sie pobudzic swieze belki do nowego wzrostu, dzieki czemu staly sie one teraz duzymi drzewami stalymi, aby dostac sie do kopalni.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_02"); //Ludzie beda teraz myslec, ze nie jest to sluszne i miejmy nadzieje, ze zakoncza swój projekt.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_03"); //Poniewaz pokazales juz tym razem tyle umiejetnosci, jagoda powinna jeszcze bardziej zwiekszyc Twoja zwinnosc. Ach, nie mam teraz nic na sobie.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine2_11_04"); //Wtedy pójde teraz do mojej izby skarbów i bogactw i otrzymam wasza nagrode.
 
 	AI_StopProcessInfos	(self);
 
@@ -186,7 +186,7 @@ FUNC INT Info_Mod_AlterWaldMann_AtMine3_Condition()
 
 FUNC VOID Info_Mod_AlterWaldMann_AtMine3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine3_11_00"); //Hier bitte. Ich muss nun weiter, um wieder woanders nach dem Rechten zu sehen. Viel Glück noch. Vielleicht kreuzen sich unsere Wege bald wieder.
+	AI_Output(self, hero, "Info_Mod_AlterWaldMann_AtMine3_11_00"); //Tutaj jestes. Musze teraz przejsc dalej, aby spojrzec gdzie indziej. Zycze powodzenia. Byc moze wkrótce nasze sciezki znowu beda sie krzyzowac.
 
 	CreateInvItems	(self, ItPl_Dex_Herb_01, 1);
 
@@ -198,7 +198,7 @@ FUNC VOID Info_Mod_AlterWaldMann_AtMine3_Info()
 
 	AI_Teleport	(self, "TOT");
 
-	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Aha, also ein Mechanismus am Stein, welcher zu seinen Schätzen führt.");
+	B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Uh-huh, mechanizm na kamieniu, który prowadzi do jego skarbów.");
 
 	Wld_SendTrigger	("EVT_WALDMANNVERSTECKK_TRIGGERLIST");
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raven_IR_Hi (C_INFO)
 	information	= Info_Mod_Raven_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, war die Seereise nicht ein Erlebnis für alle Sinne?";
+	description	= "I czy podróz nie byla doswiadczeniem dla wszystkich zmyslów?";
 };
 
 FUNC INT Info_Mod_Raven_IR_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Raven_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Raven_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_IR_Hi_15_00"); //Und, war die Seereise nicht ein Erlebnis für alle Sinne?
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_01"); //Was, willst du mich verspotten?!
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_02"); //Die einzigen Erlebnisse hatte mein Magen, und zwar die ganze Fahrt über.
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_03"); //Und jetzt geh mir aus den Augen.
+	AI_Output(hero, self, "Info_Mod_Raven_IR_Hi_15_00"); //I czy podróz nie byla doswiadczeniem dla wszystkich zmyslów?
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_01"); //Co mnie szydzisz?
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_02"); //Jedynym doswiadczeniem, które przezylem byl mój zoladek, cala podróz.
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_03"); //Teraz wyjdz z oczu.
 };
 
 INSTANCE Info_Mod_Raven_IR_GehtLos (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Raven_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Raven_IR_GehtLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Raven_IR_GehtLos_Condition()
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Raven_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Raven_IR_GehtLos_10_00"); //Nein! Xardas mag mich vielleicht dazu angewiesen haben mitzukommen. Von mitkämpfen war aber keine Rede.
+	AI_Output(self, hero, "Info_Mod_Raven_IR_GehtLos_10_00"); //Nie! Byc moze ksardas polecil mi przyjsc. Nie bylo jednak mowy o walkach.
 
 	AI_StopProcessInfos	(self);
 };

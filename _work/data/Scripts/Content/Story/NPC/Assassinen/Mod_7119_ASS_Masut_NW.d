@@ -1,7 +1,7 @@
 INSTANCE Mod_7119_ASS_Masut_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Masut"; 
+	name 		= "oplata"; 
 	guild 		= GIL_OUT;
 	id 			= 7119;
 	voice 		= 13;

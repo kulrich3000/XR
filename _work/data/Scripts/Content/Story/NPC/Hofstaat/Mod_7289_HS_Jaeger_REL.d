@@ -1,7 +1,7 @@
 INSTANCE Mod_7289_HS_Jaeger_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Jäger";
+	name 		= "Royal Royal Huntera";
 	guild 		= GIL_OUT;
 	id 			= 7289;
 	voice 		= 9;

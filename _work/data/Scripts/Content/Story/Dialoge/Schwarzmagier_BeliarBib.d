@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Schwarzmagier_BeliarBib_Hi_Condition()
 
 FUNC VOID Info_Mod_Schwarzmagier_BeliarBib_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Hi_03_00"); //Mit dir fühle ich mich wenigstens etwas sicherer. Aber bitte geh vor!
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Hi_03_00"); //Przynajmniej sprawisz, ze czuje sie troche bezpieczniej. Prosze jednak ruszyc naprzód!
 
 	AI_StopProcessInfos	(self);
 
@@ -47,8 +47,8 @@ FUNC INT Info_Mod_Schwarzmagier_BeliarBib_Erledigt_Condition()
 
 FUNC VOID Info_Mod_Schwarzmagier_BeliarBib_Erledigt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Erledigt_03_00"); //Bei Beliars geheiligtem Gesäß! Das ist ja gerade noch mal gut gegangen!
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Erledigt_03_01"); //Ich bleibe lieber gleich hier, bevor Andokai wieder wütend wird.
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Erledigt_03_00"); //Swiete posladki Beliara! To bylo po prostu w porzadku!
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_BeliarBib_Erledigt_03_01"); //Lepiej bym sie tu zatrzymal, zanim Andokai znów sie zlosci.
 
 	B_GivePlayerXP	(100);
 

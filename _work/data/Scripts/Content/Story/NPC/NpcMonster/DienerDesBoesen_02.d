@@ -1,7 +1,7 @@
 INSTANCE DienerDesBoesen_02	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Diener des Bösen";
+	name							=	"Sluga zlego";
 	guild							=	GIL_DEMON;
 	id			= 	7197;
 	voice			=	14;

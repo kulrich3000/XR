@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schoeppe_02_Hi (C_INFO)
 	information	= Info_Mod_Schoeppe_02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_Schoeppe_02_Hi_Condition()
@@ -16,9 +16,9 @@ FUNC INT Info_Mod_Schoeppe_02_Hi_Condition()
 
 FUNC VOID Info_Mod_Schoeppe_02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schoeppe_02_Hi_15_00"); //Wie geht's?
-	AI_Output(self, hero, "Info_Mod_Schoeppe_02_Hi_06_01"); //Ein bisschen langweilig ist es gerade. Würde gern mal wieder jemanden foltern.
-	AI_Output(self, hero, "Info_Mod_Schoeppe_02_Hi_06_02"); //Die haben doch alle was ausgefressen, und nur mit der Folter bekommt man es aus ihnen heraus!
+	AI_Output(hero, self, "Info_Mod_Schoeppe_02_Hi_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Schoeppe_02_Hi_06_01"); //Teraz to juz troche nudne. Jeszcze raz chcialbym kogos torturowac.
+	AI_Output(self, hero, "Info_Mod_Schoeppe_02_Hi_06_02"); //Wszyscy jedli cos, a tylko z torturami mozna wyciagnac to z nich!
 };
 
 INSTANCE Info_Mod_Schoeppe_02_Pickpocket (C_INFO)

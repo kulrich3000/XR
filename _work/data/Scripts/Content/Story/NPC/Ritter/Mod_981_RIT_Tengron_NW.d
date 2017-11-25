@@ -1,7 +1,7 @@
 instance Mod_981_RIT_Tengron_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Tengron";
+	name 		= "tengron";
 	guild 		= GIL_PAL;
 	id 			= 981;
 	voice 		= 7;

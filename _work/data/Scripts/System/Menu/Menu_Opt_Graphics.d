@@ -31,7 +31,7 @@ INSTANCE MENU_OPT_GRAPHICS(C_MENU_DEF)
 
 INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"GRAFIK EINSTELLUNGEN";
+	text[0]		=	"USTAWIENIA GRAFICZNE";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -49,8 +49,8 @@ INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Textur Details";
-	text[1]		= 	"Detailstufe der Texturen."; // Kommentar
+	text[0]		=	"Szczególy tekstury";
+	text[1]		= 	"Poziom szczególowosci tekstur."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -84,8 +84,8 @@ INSTANCE MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Modell Details";
-	text[1]		= 	"Detailstufe von Objekten."; // Kommentar
+	text[0]		=	"Szczególy modelu";
+	text[1]		= 	"Poziom szczególowosci obiektów."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -121,8 +121,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Sichtweite";
-	text[1]		= "Regelung der Sichtweite in Prozent."; // Kommentar
+	text[0]		= "dostrzegalnosc";
+	text[1]		= "Dostosowanie widocznosci w procentach."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -153,8 +153,8 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Sichtweite Obj";
-	text[1]		= "Regelung der Objekt Sichtweite in Prozent"; // Kommentar
+	text[0]		= "Widocznosc Obj.";
+	text[1]		= "Kontrola widocznosci obiektu w procentach"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -190,8 +190,8 @@ INSTANCE MENUITEM_VOB_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Himmeleffekte";
-	text[1]		= 	"Himmeleffekte an- bzw. abschalten."; // Kommentar
+	text[0]		=	"boskie skutki";
+	text[1]		= 	"Niebieski wplyw odpowiednio na i poza wylaczyc."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -205,7 +205,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"nein|ja";
+	text[0]		= 	"nie taniec";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -223,7 +223,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y + 300;
 	dimx		=	6192;		dimy		=	MENU_DY;

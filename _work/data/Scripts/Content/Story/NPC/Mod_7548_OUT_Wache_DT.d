@@ -1,7 +1,7 @@
 instance Mod_7548_OUT_Wache_DT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wache"; 
+	name 		= "wartownik"; 
 	guild 		= GIL_STRF;
 	id 			= 7548;
 	voice 		= 1;

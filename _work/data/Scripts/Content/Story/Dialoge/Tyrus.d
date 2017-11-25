@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Tyrus_Hi_Condition()
 
 FUNC VOID Info_Mod_Tyrus_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyrus_Hi_15_00"); //Na.
-	AI_Output(self, hero, "Info_Mod_Tyrus_Hi_37_01"); //(mürrisch) Ist was?
+	AI_Output(hero, self, "Info_Mod_Tyrus_Hi_15_00"); //Na, j. j.
+	AI_Output(self, hero, "Info_Mod_Tyrus_Hi_37_01"); //Czy jest cos zlego?
 };
 
 INSTANCE Info_Mod_Tyrus_AboutYou (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Tyrus_AboutYou (C_INFO)
 	information	= Info_Mod_Tyrus_AboutYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir was über dich.";
+	description	= "Powiedz mi o sobie.";
 };
 
 FUNC INT Info_Mod_Tyrus_AboutYou_Condition()
@@ -41,9 +41,9 @@ FUNC INT Info_Mod_Tyrus_AboutYou_Condition()
 
 FUNC VOID Info_Mod_Tyrus_AboutYou_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyrus_AboutYou_15_00"); //Erzähl mir was über dich.
-	AI_Output(self, hero, "Info_Mod_Tyrus_AboutYou_37_01"); //Da gibt es nicht viel zu sagen. Ich bin ein Schüler von Friedel, und der Unterricht ist hart genug, dass ich kaum zu etwas anderem komme.
-	AI_Output(self, hero, "Info_Mod_Tyrus_AboutYou_37_02"); //Kriechen, Krabbeln, Kraulen ... Pah! Wer braucht das schon?
+	AI_Output(hero, self, "Info_Mod_Tyrus_AboutYou_15_00"); //Powiedz mi o sobie.
+	AI_Output(self, hero, "Info_Mod_Tyrus_AboutYou_37_01"); //Nie ma wiele do powiedzenia. Jestem uczniem Friedela i lekcje sa na tyle trudne, ze prawie nie przychodze do niczego innego.
+	AI_Output(self, hero, "Info_Mod_Tyrus_AboutYou_37_02"); //Czolganie, pelzanie, pelzanie, pelzanie..... Pah! Kto tak czy owak tego potrzebuje?
 };
 
 INSTANCE Info_Mod_Tyrus_Wettstreit (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Tyrus_Wettstreit (C_INFO)
 	information	= Info_Mod_Tyrus_Wettstreit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sagst du nun?";
+	description	= "Co teraz mówisz?";
 };
 
 FUNC INT Info_Mod_Tyrus_Wettstreit_Condition()
@@ -70,8 +70,8 @@ FUNC INT Info_Mod_Tyrus_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Tyrus_Wettstreit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyrus_Wettstreit_15_00"); //Was sagst du nun?
-	AI_Output(self, hero, "Info_Mod_Tyrus_Wettstreit_37_01"); //Fühlst dich jetzt wohl ganz toll, hä? Und ich darf weiter bei Friedel rumgammeln ...
+	AI_Output(hero, self, "Info_Mod_Tyrus_Wettstreit_15_00"); //Co teraz mówisz?
+	AI_Output(self, hero, "Info_Mod_Tyrus_Wettstreit_37_01"); //Czuje sie swietnie teraz, huh? No i pozwole sobie spedzac czas z Friedelem....
 };
 
 INSTANCE Info_Mod_Tyrus_Freudenspender (C_INFO)
@@ -82,7 +82,7 @@ INSTANCE Info_Mod_Tyrus_Freudenspender (C_INFO)
 	information	= Info_Mod_Tyrus_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hätte da bei Interesse Freudenspender für dich ...";
+	description 	= "Jesli jestescie zainteresowani, chcialbym dac Wam przysmak....";
 };                       
 
 FUNC INT Info_Mod_Tyrus_Freudenspender_Condition()
@@ -97,8 +97,8 @@ FUNC INT Info_Mod_Tyrus_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Tyrus_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyrus_Freudenspender_15_00"); //Ich hätte da bei Interesse Freudenspender für dich ...
-	AI_Output(self, hero, "Info_Mod_Tyrus_Freudenspender_37_01"); //Schön für dich. Steck's dir meinetwegen in den Arsch.
+	AI_Output(hero, self, "Info_Mod_Tyrus_Freudenspender_15_00"); //Jesli jestescie zainteresowani, chcialbym dac Wam przysmak....
+	AI_Output(self, hero, "Info_Mod_Tyrus_Freudenspender_37_01"); //Dobre dla Ciebie. Stick to twój tylek przez mnie.
 };
 
 INSTANCE Info_Mod_Tyrus_Pickpocket (C_INFO)

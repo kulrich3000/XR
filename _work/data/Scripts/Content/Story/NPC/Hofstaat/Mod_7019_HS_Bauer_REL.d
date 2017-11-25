@@ -1,7 +1,7 @@
 instance Mod_7019_HS_Bauer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bauer"; 
+	name 		= "chlop"; 
 	guild 		= GIL_OUT;
 	id 			= 7019;
 	voice 		= 9;

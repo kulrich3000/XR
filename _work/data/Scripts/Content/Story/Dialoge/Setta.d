@@ -15,42 +15,42 @@ FUNC INT Info_Mod_Setta_Hi_Condition()
 
 FUNC VOID Info_Mod_Setta_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_00"); //Hey!
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_00"); //Hej!
 
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_01"); //Mein Name ist Setta. Ich wohne hier seit ein paar Jahren, wohne ich.
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_15_02"); //Wie bist du hier hergekommen?
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_03"); //Ich weiß es nicht mehr genau. Wo kommst du denn her, kommst du?
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_01"); //Nazywam sie Setta. Mieszkam tu od kilku lat, mieszkam tutaj.
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_15_02"); //Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_16_03"); //Nie pamietam dokladnie. Skad pochodzisz, skad jestes?
 
 	Info_ClearChoices	(Info_Mod_Setta_Hi);
 
-	Info_AddChoice	(Info_Mod_Setta_Hi, "Ich komme aus dem Minental. Schon mal davon gehört?", Info_Mod_Setta_Hi_B);
-	Info_AddChoice	(Info_Mod_Setta_Hi, "Ich bin von oben hereingeflogen.", Info_Mod_Setta_Hi_A);
+	Info_AddChoice	(Info_Mod_Setta_Hi, "Jestem z Minentala. Slyszales o tym kiedys?", Info_Mod_Setta_Hi_B);
+	Info_AddChoice	(Info_Mod_Setta_Hi, "Ulecialem z góry.", Info_Mod_Setta_Hi_A);
 };
 
 FUNC VOID Info_Mod_Setta_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_00"); //Ich komme aus dem Minental. Schon mal davon gehört?
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_01"); //Das habe ich tatsächlich, habe ich. Wenn ich mich recht entsinne, komme ich auch da her, komme ich. Ist denn die ... Barriere noch da?
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_02"); //Nein, sie ist weg. Und daran war ich nicht ganz unbeteiligt.
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_03"); //(staunt) Wow, ein richtiger Held. In meiner bescheidenen Hütte. Was kann ich für dich tun, kann ich?
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_04"); //Wie komme ich wieder weg von hier?
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_05"); //Das kann ich dir nicht sagen, kann ich nicht, ich weiß es nämlich selbst nicht. Sonst wäre ich wohl nicht mehr hier.
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_06"); //Hast du gar keine Idee?
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_07"); //Hm, jetzt wo du es sagst. Frag doch mal den alten Buff. Er lebt in einem Zelt den Weg runter, lebt er.
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_08"); //Danke für die Information.
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_09"); //Keine Ursache, hihi.
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_00"); //Jestem z Minentala. Slyszales o tym kiedys?
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_01"); //Tak naprawde mam. Jesli dobrze pamietam, to równiez skad pochodze. Czy....? Bariera wciaz istnieje?
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_02"); //Nie, odeszla. I nie bylam calkowicie zaangazowana.
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_03"); //Wow, prawdziwy bohater. W mojej pokornej kabinie. Co moge zrobic dla Ciebie, czy moge zrobic?
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_04"); //Jak sie z tego wyprowadzic?
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_05"); //Nie moge ci powiedziec, ze nie potrafie, bo sam nie znam sie. W przeciwnym razie prawdopodobnie bym tu nie byl.
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_06"); //Nie masz zadnych pomyslów?
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_07"); //Hm, teraz to mówisz. Dlaczego nie pytasz starego Buffa? Zyje w namiocie, zyje.
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_B_15_08"); //Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_B_16_09"); //Jestes mile widziany, hihi.
 
 	Info_ClearChoices	(Info_Mod_Setta_Hi);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich bin in einem merkwürdigen Tal gelandet, aus der es kein Entkommen zu geben scheint. Merkwürdigerweise habe ich den Aufladestein noch. Vielleicht bringt er mich hier raus. Die Einsiedlerin Setta gab mir den Rat, mich mit dem alten Buff in Verbindung zu setzen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Wyladowalem w dziwnej dolinie, z której zdaje sie nie byc ucieczki. Co ciekawe, wciaz mam kamien ladowania. Moze mnie tu wyprowadzi. Pustelniczka Setta poradzila mi skontaktowac sie ze starym Buffem.");
 };
 
 FUNC VOID Info_Mod_Setta_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Setta_Hi_A_15_00"); //Ich bin von oben hereingeflogen.
-	AI_Output(self, hero, "Info_Mod_Setta_Hi_A_16_01"); //Oh, wie ein Vogel? Ich liebe Vögel, liebe ich. Aber verarschen kann ich mich alleine, kann ich. Ich bin nicht so tatterig, wie ich aussehe.
+	AI_Output(hero, self, "Info_Mod_Setta_Hi_A_15_00"); //Ulecialem z góry.
+	AI_Output(self, hero, "Info_Mod_Setta_Hi_A_16_01"); //Ach, jak ptak? Uwielbiam ptaki, kocham ptaki. Potrafie jednak wkrecac sie sam, moge. Nie jestem tak wstrzasniety, jak wygladam.
 
 	Info_Mod_Setta_Hi_B();
 };

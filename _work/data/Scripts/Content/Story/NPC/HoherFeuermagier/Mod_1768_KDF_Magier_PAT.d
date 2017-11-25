@@ -1,7 +1,7 @@
 instance Mod_1768_KDF_Magier_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ordenspriester";
+	name 		= "zakonnik";
 	guild 		= GIL_VLK;
 	id 			= 1768;
 	voice 		= 13;

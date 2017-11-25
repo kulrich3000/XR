@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bandenmitglied1_Hi (C_INFO)
 	information	= Info_Mod_Bandenmitglied1_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Bandenmitglied1_Hi_Condition()
@@ -19,11 +19,11 @@ FUNC INT Info_Mod_Bandenmitglied1_Hi_Condition()
 
 FUNC VOID Info_Mod_Bandenmitglied1_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_00"); //Was macht du hier?
-	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Hi_06_01"); //Was geht dich das an?
-	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_02"); //Wo ist dein Chef?
-	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Hi_06_03"); //Ich glaube nicht, dass ich es dir sagen werde.
-	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_04"); //Dann muss ich es aus dir rausprügeln.
+	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Hi_06_01"); //Jaki jest Twój biznes?
+	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_02"); //Gdzie jest twój szef?
+	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Hi_06_03"); //Nie sadze, ze to ci sie nie podoba.
+	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Hi_15_04"); //Wtedy bede musial ja pokonac.
 
 	AI_StopProcessInfos	(self);
 
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Bandenmitglied1_Umgehauen (C_INFO)
 	information	= Info_Mod_Bandenmitglied1_Umgehauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was nun?";
+	description	= "Co teraz?";
 };
 
 FUNC INT Info_Mod_Bandenmitglied1_Umgehauen_Condition()
@@ -52,12 +52,12 @@ FUNC INT Info_Mod_Bandenmitglied1_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Bandenmitglied1_Umgehauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Umgehauen_15_00"); //Was nun?
-	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Umgehauen_06_01"); //Ich sage dir alles, aber lass mich laufen.
-	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Umgehauen_06_02"); //Mein Chef ist zur Roten Laterne gegangen. Du wirst ihn allerdings nur nachts dort antreffen.
-	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Umgehauen_15_03"); //Siehst du, geht doch.
+	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Umgehauen_15_00"); //Co teraz?
+	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Umgehauen_06_01"); //Powiem ci wszystko, ale pozwole mi odejsc.
+	AI_Output(self, hero, "Info_Mod_Bandenmitglied1_Umgehauen_06_02"); //Mój szef poszedl do czerwonej latarni. Spotkasz go jednak tylko w nocy.
+	AI_Output(hero, self, "Info_Mod_Bandenmitglied1_Umgehauen_15_03"); //Zobacz, dokad idziesz.
 
-	B_LogEntry	(TOPIC_MOD_RAMIREZ_BANDE, "Ein Bandenmitglied hat mir verraten, dass der Bandenchef nachts bei der Roten Laterne zu finden ist.");
+	B_LogEntry	(TOPIC_MOD_RAMIREZ_BANDE, "Pewien czlonek gangu powiedzial mi, ze przywódca gangu mozna znalezc noca przy czerwonej latarni.");
 
 	AI_StopProcessInfos	(self);
 };

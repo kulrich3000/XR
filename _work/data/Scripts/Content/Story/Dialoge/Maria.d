@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Maria_Unheil (C_INFO)
 	information	= Info_Mod_Maria_Unheil_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich hörte, dass es dir nicht so gut geht.";
+	description	= "Slyszalem, ze nie czujesz sie tak dobrze.";
 };
 
 FUNC INT Info_Mod_Maria_Unheil_Condition()
@@ -23,39 +23,39 @@ FUNC INT Info_Mod_Maria_Unheil_Condition()
 
 FUNC VOID Info_Mod_Maria_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maria_Unheil_15_00"); //Ich hörte, dass es dir nicht so gut geht.
-	AI_Output(self, hero, "Info_Mod_Maria_Unheil_17_01"); //Ach, es ist wirklich schlimm. Dieses beklemmende Gefühl, die Schwäche und diese dunklen Visionen. Und nichts scheint zu helfen.
-	AI_Output(self, hero, "Info_Mod_Maria_Unheil_17_02"); //Wenn sich nicht meine neue Magd so aufopferungsvoll um mich kümmern würde, wüsste ich nicht, was ich täte.
+	AI_Output(hero, self, "Info_Mod_Maria_Unheil_15_00"); //Slyszalem, ze nie czujesz sie tak dobrze.
+	AI_Output(self, hero, "Info_Mod_Maria_Unheil_17_01"); //Ach, to bardzo zle. To uczucie opresyjne, ta slabosc i te mroczne wizje. I nic nie wydaje sie pomocne.
+	AI_Output(self, hero, "Info_Mod_Maria_Unheil_17_02"); //Gdyby moja nowa pokojówka nie troszczyla sie o mnie tak oddana, nie wiedzialabym, co robie.
 
 	Info_ClearChoices	(Info_Mod_Maria_Unheil);
 
 	if (Npc_HasItems(hero, ItPo_Health_01) > 0)
 	|| (Npc_HasItems(hero, ItPo_HealBesessenheit) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Maria_Unheil, "Vielleicht kann dir dieser Trank helfen.", Info_Mod_Maria_Unheil_B);
+		Info_AddChoice	(Info_Mod_Maria_Unheil, "Moze ten eliksir moze Ci pomoze.", Info_Mod_Maria_Unheil_B);
 	};
-	Info_AddChoice	(Info_Mod_Maria_Unheil, "Das tut mir Leid. Ich wünsche dir gute Besserung.", Info_Mod_Maria_Unheil_A);
+	Info_AddChoice	(Info_Mod_Maria_Unheil, "Przykro mi to slyszec. Zycze panu powodzenia.", Info_Mod_Maria_Unheil_A);
 };
 
 FUNC VOID Info_Mod_Maria_Unheil_B()
 {
-	AI_Output(hero, self, "Info_Mod_Maria_Unheil_B_15_00"); //Vielleicht kann dir dieser Trank helfen.
+	AI_Output(hero, self, "Info_Mod_Maria_Unheil_B_15_00"); //Moze ten eliksir moze Ci pomoze.
 	
 	Info_ClearChoices	(Info_Mod_Maria_Unheil);
 
 	if (Npc_HasItems(hero, ItPo_HealBesessenheit) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Maria_Unheil, "Heilung von Besessenheit", Info_Mod_Maria_Unheil_D);
+		Info_AddChoice	(Info_Mod_Maria_Unheil, "Uzdrowienie obsesji", Info_Mod_Maria_Unheil_D);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Maria_Unheil, "Essenz der Heilung", Info_Mod_Maria_Unheil_C);
+		Info_AddChoice	(Info_Mod_Maria_Unheil, "Istota uzdrawiania", Info_Mod_Maria_Unheil_C);
 	};
 };
 
 FUNC VOID Info_Mod_Maria_Unheil_A()
 {
-	AI_Output(hero, self, "Info_Mod_Maria_Unheil_A_15_00"); //Das tut mir Leid. Ich wünsche dir gute Besserung.
+	AI_Output(hero, self, "Info_Mod_Maria_Unheil_A_15_00"); //Przykro mi to slyszec. Zycze panu powodzenia.
 	
 	Info_ClearChoices	(Info_Mod_Maria_Unheil);
 };
@@ -66,8 +66,8 @@ FUNC VOID Info_Mod_Maria_Unheil_D()
 
 	B_UseItem	(self, ItPo_HealBesessenheit);
 
-	AI_Output(self, hero, "Info_Mod_Maria_Unheil_D_17_00"); //Was ist geschehen? Ich spüre wie meine Kräfte zurückkehren, mein Geist klar wird.
-	AI_Output(self, hero, "Info_Mod_Maria_Unheil_D_17_01"); //Wie soll ich dir nur danken ... Geh zu Onar. Er soll dich mit 400 Goldmünzen entlohnen.
+	AI_Output(self, hero, "Info_Mod_Maria_Unheil_D_17_00"); //Co sie stalo? Czuje, ze moje sily powracaja, mój duch staje sie jasny.
+	AI_Output(self, hero, "Info_Mod_Maria_Unheil_D_17_01"); //Jak moge wam podziekowac.... Przejdz do Onar. Powiedz mu, ze zaplaci 400 zlotych monet.
 
 	Mod_WM_MariaGeheilt = 1;
 	
@@ -80,7 +80,7 @@ FUNC VOID Info_Mod_Maria_Unheil_C()
 
 	B_UseItem	(self, ItPo_Health_01);
 
-	AI_Output(self, hero, "Info_Mod_Maria_Unheil_C_17_00"); //Ach, ich danke dir, aber auch das scheint nicht zu helfen.
+	AI_Output(self, hero, "Info_Mod_Maria_Unheil_C_17_00"); //Och, dziekuje, ale to tez nie pomaga.
 	
 	Info_ClearChoices	(Info_Mod_Maria_Unheil);
 };
@@ -93,7 +93,7 @@ INSTANCE Info_Mod_Maria_BelohnungOnar (C_INFO)
 	information	= Info_Mod_Maria_BelohnungOnar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei Onar. Er hat mir nur 200 Goldmünzen gegeben.";
+	description	= "Bylem z Onar. Dal mi tylko 200 zlotych monet.";
 };
 
 FUNC INT Info_Mod_Maria_BelohnungOnar_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mod_Maria_BelohnungOnar_Condition()
 
 FUNC VOID Info_Mod_Maria_BelohnungOnar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maria_BelohnungOnar_15_00"); //Ich war bei Onar. Er hat mir nur 200 Goldmünzen gegeben.
-	AI_Output(self, hero, "Info_Mod_Maria_BelohnungOnar_17_01"); //Ach, dieser alte Geizkragen. Hmm,… geh zu Wasili. Er soll dir die restlichen Goldmünzen geben.
+	AI_Output(hero, self, "Info_Mod_Maria_BelohnungOnar_15_00"); //Bylem z Onar. Dal mi tylko 200 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Maria_BelohnungOnar_17_01"); //Ach, ten stary tani lyzwiarz. No cóz.... idz do Wasili. Powiedz mu, aby dal ci reszte zlotych monet.
 };
 
 INSTANCE Info_Mod_Maria_BelohnungWasili (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Maria_BelohnungWasili (C_INFO)
 	information	= Info_Mod_Maria_BelohnungWasili_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wasili hat mir nur 100 Goldmünzen gegeben.";
+	description	= "Wasili dal mi tylko 100 zlotych monet.";
 };
 
 FUNC INT Info_Mod_Maria_BelohnungWasili_Condition()
@@ -131,12 +131,12 @@ FUNC INT Info_Mod_Maria_BelohnungWasili_Condition()
 
 FUNC VOID Info_Mod_Maria_BelohnungWasili_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maria_BelohnungWasili_15_00"); //Wasili hat mir nur 100 Goldmünzen gegeben.
-	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_01"); //Ohh, hmm ... dann bleibt mir nicht anderes übrig. Geschieht ihm auch ganz recht dem alten Schwein.
-	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_02"); //Denkt wohl ich wüsste nichts von seinen Geschichten mit den Mägden und Bäuerinnen ...
-	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_03"); //Wenn du unter Onars Matratze schaust, wirst du bestimmt mehr als genug finden. Aber dass es bloß unter uns bleibt ...
+	AI_Output(hero, self, "Info_Mod_Maria_BelohnungWasili_15_00"); //Wasili dal mi tylko 100 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_01"); //Ohh, hmm..... Nie mam innego wyboru. Sluzy mu dobrze dla starej swini.
+	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_02"); //Chyba nic nie wiem o jego historiach z pokojówkami i chlopami....
+	AI_Output(self, hero, "Info_Mod_Maria_BelohnungWasili_17_03"); //Jesli spojrzysz pod materac Onar' s, z pewnoscia znajdziesz wiecej niz wystarczy. Ale tylko po to, aby utrzymac ja miedzy nami....
 
-	MOBNAME_XR_ONARSVERSTECK = "Onars Versteck";
+	MOBNAME_XR_ONARSVERSTECK = "Ukrywanie sie Onara";
 };
 
 INSTANCE Info_Mod_Maria_Pickpocket (C_INFO)

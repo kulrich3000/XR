@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Wasili_BelohnungMaria (C_INFO)
 	information	= Info_Mod_Wasili_BelohnungMaria_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Maria meinte, du solltest mir noch 200 Goldmünzen geben.";
+	description	= "Maria powiedziala, ze powinienem dac mi kolejne 200 zlotych monet.";
 };
 
 FUNC INT Info_Mod_Wasili_BelohnungMaria_Condition()
@@ -19,9 +19,9 @@ FUNC INT Info_Mod_Wasili_BelohnungMaria_Condition()
 
 FUNC VOID Info_Mod_Wasili_BelohnungMaria_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wasili_BelohnungMaria_15_00"); //Maria meinte, du solltest mir noch 200 Goldmünzen geben.
-	AI_Output(self, hero, "Info_Mod_Wasili_BelohnungMaria_01_01"); //Was?! Und wenn Onar davon erfährt? Dann wird mich nicht mal Maria vor seinem Zorn schützten können.
-	AI_Output(self, hero, "Info_Mod_Wasili_BelohnungMaria_01_02"); //100 Goldmünzen. Mehr kann ich dir nicht geben.
+	AI_Output(hero, self, "Info_Mod_Wasili_BelohnungMaria_15_00"); //Maria powiedziala, ze powinienem dac mi kolejne 200 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Wasili_BelohnungMaria_01_01"); //Co? Co zrobic, jesli Onar dowie sie? Wtedy nawet Maria nie uchroni mnie przed gniewem.
+	AI_Output(self, hero, "Info_Mod_Wasili_BelohnungMaria_01_02"); //100 zlotych monet. To wszystko, co moge ci dac.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -51,22 +51,22 @@ FUNC INT Info_Mod_Wasili_Verbannt_01_Condition()
 
 FUNC VOID Info_Mod_Wasili_Verbannt_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_00"); //(lallend) Verdammmte Scheiße. Vom Hof hat er mich geschmissen.
-	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_15_01"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_02"); //(vorwurfsvoll) Dieser Mistkerl Onar hat mich vom Hof geworfen, weil ich dir das Gold gegeben habe.
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_03"); //Jetzt kann ich nichts anderes machen, als hier beim Feldräuberdreck herumzusetzen und zu saufen.
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_04"); //Und wenn Thekla mir nicht hin und wieder was zu Essen vorbeibringen würde, müsste ich elendig vor Hunger krepieren.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_00"); //(odpryskiwanie) Pieklo do fermentacji. Wyrzucil mnie z podwórka.
+	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_02"); //Ten syn z suki Onar wyrzucil mnie z podwórka, bo ja ci oddalem zloto.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_03"); //Teraz nie moge nic innego zrobic, jak tylko usiasc przy napadzie i pic.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_01_04"); //A gdyby Thekla nie przynosila mi co jakis czas jedzenia, umieralbym z glodu.
 
 	Info_ClearChoices	(Info_Mod_Wasili_Verbannt_01);
 
-	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "Interessiert mich nicht.", Info_Mod_Wasili_Verbannt_01_B);
-	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "Was lässt sich da machen?", Info_Mod_Wasili_Verbannt_01_A);
+	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "Nie jestem zainteresowany.", Info_Mod_Wasili_Verbannt_01_B);
+	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "Co mozna zrobic?", Info_Mod_Wasili_Verbannt_01_A);
 };
 
 FUNC VOID Info_Mod_Wasili_Verbannt_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_B_15_00"); //Interessiert mich nicht.
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_B_01_01"); //Es interessiert dich nicht?! Wegen dir bin ich hier gelandet, du verdammter Bastard. Ich muss dir wohl die Fresse polieren.
+	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_B_15_00"); //Nie jestem zainteresowany.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_B_01_01"); //Nie zalezy Ci na tym? Przyjechales mnie tutaj, pierdolisz dranie. Jestem gonna, musze ci ubic twarz.
 	
 	Info_ClearChoices	(Info_Mod_Wasili_Verbannt_01);
 
@@ -77,9 +77,9 @@ FUNC VOID Info_Mod_Wasili_Verbannt_01_B()
 
 FUNC VOID Info_Mod_Wasili_Verbannt_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_A_15_00"); //Was lässt sich da machen?
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_A_01_01"); //Was sich machen lässt? Diesem Onar ordentlich in den Arsch treten sollte man.
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_A_01_02"); //Dem würde ich eine ordentliche Portion von diesem Feldräuberdreck in seinen Schnaps mischen, wenn ich könnte.
+	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_01_A_15_00"); //Co mozna zrobic?
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_A_01_01"); //Co mozna zrobic? Powinienes dobrze kopnac ten paleczek onar's ass.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_01_A_01_02"); //Gdybym mógl wlozyc porcje tego zlodziejskiego rozboju do jego gorzalki.
 	
 	Mod_WM_WasiliQuest = 3;
 
@@ -87,7 +87,7 @@ FUNC VOID Info_Mod_Wasili_Verbannt_01_A()
 
 	Log_CreateTopic	(TOPIC_MOD_ADANOS_WASILI, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_WASILI, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Onar hat Wasili vom Hof verbannt, weil er mir damals das Geld geben hatte. Jemand sollte mit Onar sprechen, damit Wasili wieder zurück kann.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Onar wyrzucil Wasili z sadu, poniewaz dal mi pieniadze. Ktos powinien porozmawiac z Onar, aby Wasili mógl wrócic.");
 
 	Info_ClearChoices	(Info_Mod_Wasili_Verbannt_01);
 };
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Wasili_Verbannt_02 (C_INFO)
 	information	= Info_Mod_Wasili_Verbannt_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich habe etwas zu Essen von Thekla für dich.";
+	description	= "Tutaj mam dla Ciebie jedzenie Thekli.";
 };
 
 FUNC INT Info_Mod_Wasili_Verbannt_02_Condition()
@@ -114,11 +114,11 @@ FUNC INT Info_Mod_Wasili_Verbannt_02_Condition()
 
 FUNC VOID Info_Mod_Wasili_Verbannt_02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_02_15_00"); //Hier, ich habe etwas zu Essen von Thekla für dich.
+	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_02_15_00"); //Tutaj mam dla Ciebie jedzenie Thekli.
 
 	B_GiveInvItems	(hero, self, ItMi_EsspaketWasili, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_02_01_01"); //(lallend) Hab vielen Dank. Ich sterbe schon vor Hunger.
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_02_01_01"); //Dziekuje bardzo. Smierc gloduje.
 
 	B_GivePlayerXP	(100);
 };
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Wasili_Verbannt_03 (C_INFO)
 	information	= Info_Mod_Wasili_Verbannt_03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Onar’s Schnaps.";
+	description	= "Dostalem gorzalke Onara.";
 };
 
 FUNC INT Info_Mod_Wasili_Verbannt_03_Condition()
@@ -145,21 +145,21 @@ FUNC INT Info_Mod_Wasili_Verbannt_03_Condition()
 
 FUNC VOID Info_Mod_Wasili_Verbannt_03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_03_15_00"); //Ich habe Onar’s Schnaps.
+	AI_Output(hero, self, "Info_Mod_Wasili_Verbannt_03_15_00"); //Dostalem gorzalke Onara.
 
 	B_GiveInvItems	(hero, self, ItFo_OnarsSchnaps, 1);
 
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_03_01_01"); //Ha, dann mal her damit. Zuerst der Feldräuberdreck und dann ...
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_03_01_01"); //Ha, pomyslmy o tym. Najpierw zabrudzenia polne, a nastepnie.....
 
 	AI_PlayAni (self, "T_PLUNDER");
 	AI_PlayAni (self,"T_STAND_2_PEE");
 	AI_PlayAni (self,"T_PEE_2_STAND");
 
-	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_03_01_02"); //So, dass dürfte dem alten Schwein ordentlich auf den Magen schlagen. (lacht betrunken)
+	AI_Output(self, hero, "Info_Mod_Wasili_Verbannt_03_01_02"); //Wiec to powinno naprawde dostac stary zoladek swini. (smiertelnicy pijani)
 
 	B_GiveInvItems	(self, hero, ItFo_OnarsSchnaps2, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Wasili hat Onar’s Schnaps präpariert. Jetzt muss ich ihn nur noch dorthin zurückbringen, woher ich ihn geholt habe.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Wasili przygotowywala nalewke Onar. Teraz musze tylko zabrac go z powrotem tam, gdzie go dostalem.");
 };
 
 INSTANCE Info_Mod_Wasili_Pickpocket (C_INFO)

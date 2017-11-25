@@ -1,7 +1,7 @@
 instance Mod_7174_DEM_Randolph_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Halbinfernalischer Randolph";
+	name 		= "Randolph Pólniwersalny Randolph";
 	guild 		= GIL_DMT;
 	id 			= 7174;
 	voice 		= 6;

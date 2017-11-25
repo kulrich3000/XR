@@ -2,7 +2,7 @@ instance Mod_7800_SMK_Alberto_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Alberto";
+	name 		=	"alberto";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		= 	50;		// wegen XP!

@@ -18,11 +18,11 @@ FUNC INT Info_Mod_UndeadOrkShamane_OGY_Hi_Condition()
 
 FUNC VOID Info_Mod_UndeadOrkShamane_OGY_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_UndeadOrkShamane_OGY_Hi_15_00"); //Wurmzerfressener Unhold. Lange genug hast du dich durch feige Flucht meinem Zugriff entzogen. Nun mache ich dir ein für alle mal den Garaus.
-	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_OGY_Hi_18_01"); //In die Ecke getrieben magst du mich haben, doch wirst du nicht meine Barriere überschreiten können.
-	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_OGY_Hi_18_02"); //Und hüten solltest du dich zu versuchen mir oder meinen Dienern Schaden zuzufügen, da ich die Geiseln hier sonst alle hinschlachten lassen werde.
+	AI_Output(hero, self, "Info_Mod_UndeadOrkShamane_OGY_Hi_15_00"); //Milosnik morfologii. Dlugie, omijales mój dostep uciekajac tchórzliwie. Teraz jestem gonna cie raz na zawsze zabic.
+	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_OGY_Hi_18_01"); //Byc moze mnie zaroczylas, ale nie bedziesz mógl przekroczyc mojej bariery.
+	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_OGY_Hi_18_02"); //I prosze wystrzegac sie prób skrzywdzenia mnie lub moich pracowników, poniewaz w przeciwnym razie bedziemy tu mordowac zakladników.
 
-	B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Na toll. Jetzt habe ich den verwesenden Schamanen endlich gestellt und nun verhindern seine Barriere und die Geiseln, dass ich ihn endlich erledigen kann und das Buch bekomme. Bei so viel schwarzer Magie sollte ich entweder einen kundigen Magier um Rat fragen, oder gleich kompromisslos mit allen mir zur Verfügung stehenden Mitteln durchgreifen. Man kann ja nie wissen ...");
+	B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Och, wielki. Teraz umiescilem w koncu rozkladajacego sie szamana, a teraz jego bariera i zakladnicy uniemozliwiaja mi w koncu ukonczenie go i zdobycie ksiazki. Przy takiej czarnej magii powinienem albo zasiegnac porady eksperta, albo powinienem podjac bezkompromisowe dzialania wszelkimi srodkami, jakimi dysponuje. Nigdy nie znasz......");
 
 	AI_StopProcessInfos	(self);
 

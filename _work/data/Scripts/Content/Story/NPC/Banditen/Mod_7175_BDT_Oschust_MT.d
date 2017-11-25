@@ -1,7 +1,7 @@
 INSTANCE Mod_7175_BDT_Oschust_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Oschust";
+	name 		= "kaszel";
 	if (Mod_AlbertTransforms == 0)
 	{
 		guild 		= GIL_OUT;

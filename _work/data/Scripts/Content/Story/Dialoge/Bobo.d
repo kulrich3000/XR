@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bobo_Unheil (C_INFO)
 	information	= Info_Mod_Bobo_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Irgendwelche besonderen Vorkommnisse und Auffälligkeiten in letzter Zeit?";
+	description	= "Jakies szczególne incydenty i anomalie w ostatnim czasie?";
 };
 
 FUNC INT Info_Mod_Bobo_Unheil_Condition()
@@ -20,18 +20,18 @@ FUNC INT Info_Mod_Bobo_Unheil_Condition()
 
 FUNC VOID Info_Mod_Bobo_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bobo_Unheil_15_00"); //Irgendwelche besonderen Vorkommnisse und Auffälligkeiten in letzter Zeit?
-	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_01"); //Du bist mir gut. Alle spielen verrückt, seit dem diese Ungetüme auf den Bauernhöfen ihr Unwesen treiben.
-	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_02"); //Dazu noch dieses Rudel schwarzer Wölfe, welches sich immer wieder nachts  in der Nähe unseres Hofes im Wald herumtreibt. Das kann schon manchem ordentlich zusetzen.
-	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_03"); //Vorallem die Frauen auf dem Hof leiden darunter. Maria ist ziemlich krank geworden – die ganzen Sorgen wahrscheinlich – und Elena geht jeden Abend, wenn es dunkel wird wohl zu Cord, um vermutlich Schutz zu suchen.
-	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_04"); //Er ist ja ein zäher Kämpfer. Naja, wo soll das ganze nur enden ...
+	AI_Output(hero, self, "Info_Mod_Bobo_Unheil_15_00"); //Jakies szczególne incydenty i anomalie w ostatnim czasie?
+	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_01"); //Jestes dla mnie dobry. Wszyscy oszaleli, poniewaz te potwory uczynily z siebie balagan na farmach.
+	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_02"); //Na dodatek ciagle owa paczka czarnych wilków, która zawsze wisi noca w lasach kolo naszej farmy. To moze dodac wiele rzeczy do wielu ludzi.
+	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_03"); //Szczególnie cierpia na tym kobiety w gospodarstwie. Maria dosc zachorowala - prawdopodobnie wszystkie obawy - i Elena wychodzi co noc, gdy zapadnie najprawdopodobniej ciemno na Korde, by prawdopodobnie szukac schronienia.
+	AI_Output(self, hero, "Info_Mod_Bobo_Unheil_13_04"); //Jest ciezkim wojownikiem. Cóz, gdzie ma sie to skonczyc....
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Von Bobo erfuhr ich, dass ein Rudel schwarzer Wölfe nachts seit einiger Zeit in der Nähe des Hofes sein Unwesen treibt.");
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Elena sucht nachts immer Schutz bei Cord.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Bobo powiedzial mi, ze stado czarnych wilków juz od jakiegos czasu mieszka w poblizu farmy.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Elena zawsze opiekuje sie Cordem w nocy.");
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Gunnar_Unheil))
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Maria ist seit einigen Tagen stark erkrankt.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Maria jest ciezko chora juz od kilku dni.");
 	};
 
 	Mod_HinweiseDerBauernZuHexen += 1;

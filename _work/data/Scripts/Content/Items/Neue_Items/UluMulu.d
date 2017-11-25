@@ -1,6 +1,6 @@
 INSTANCE UluMulu(C_Item)
 {	
-	name 			=	"Ulu-Mulu";
+	name 			=	"Ulu-Mulusz";
 
 	mainflag 		=	ITEM_KAT_NF;
 	flags 			=	ITEM_2HD_AXE|ITEM_MISSION;	
@@ -22,9 +22,9 @@ INSTANCE UluMulu(C_Item)
 	on_unequip	=	UnEquip_UluMulu;
 
 	description		=	name;
-	TEXT[0]			=	"Das Ulu-Mulu ist ein Zeichen großer Stärke und";
-	TEXT[1]			=	"Würde. Der Träger dieser Standarte hat vor";
-	TEXT[2]			=	"Orks nichts zu befürchten!";
+	TEXT[0]			=	"Ulu-Mulu jest znakiem ogromnej sily i sily.";
+	TEXT[1]			=	"Godnosc. Oczekuje sie, ze uzytkownik niniejszego standardu";
+	TEXT[2]			=	"Nie ma czego sie obawiac!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

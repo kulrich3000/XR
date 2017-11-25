@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ruprecht_Hi (C_INFO)
 	information	= Info_Mod_Ruprecht_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Ruprecht_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Ruprecht_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Hi_13_00"); //Mein Name ist Ruprecht. Ich ziehe von meinem Ersparten durch die Länder und lerne fremde Kulturen kennen. Die Wirtshauskultur, vor allem.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Hi_13_00"); //Nazywam sie Ruprecht. Korzystam z oszczednosci w róznych krajach i poznaje obca kulture. Kultura pubowa, zwlaszcza.
 };
 
 INSTANCE Info_Mod_Ruprecht_FrueherGemacht (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Ruprecht_FrueherGemacht (C_INFO)
 	information	= Info_Mod_Ruprecht_FrueherGemacht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du früher gemacht?";
+	description	= "Co robiles wczesniej?";
 };
 
 FUNC INT Info_Mod_Ruprecht_FrueherGemacht_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Ruprecht_FrueherGemacht_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_FrueherGemacht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruprecht_FrueherGemacht_15_00"); //Was hast du früher gemacht?
-	AI_Output(self, hero, "Info_Mod_Ruprecht_FrueherGemacht_13_01"); //(wortkarg) Ich war lange im Krieg.
+	AI_Output(hero, self, "Info_Mod_Ruprecht_FrueherGemacht_15_00"); //Co robiles wczesniej?
+	AI_Output(self, hero, "Info_Mod_Ruprecht_FrueherGemacht_13_01"); //Dlugo bylem w wojnie.
 };
 
 INSTANCE Info_Mod_Ruprecht_Truhe (C_INFO)
@@ -66,26 +66,26 @@ FUNC INT Info_Mod_Ruprecht_Truhe_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_Truhe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_00"); //Warte mal einen Augenblick. Was hast du gerade da oben gesucht?
-	AI_Output(hero, self, "Info_Mod_Ruprecht_Truhe_15_01"); //Nichts Besonderes.
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_02"); //Dann zeig mal her.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_00"); //Trzymac przez sekunde. Co wlasnie tam byles?
+	AI_Output(hero, self, "Info_Mod_Ruprecht_Truhe_15_01"); //Nic szczególnego.
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_02"); //Cóz, pozwole sobie to zobaczyc.
 
 	if (Npc_HasItems(hero, ItRi_Ruprecht) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_03"); //So, du wolltest also meinen Ring stehlen.
+		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_03"); //Próbowales wiec ukrasc mój pierscien.
 
 		B_GiveInvItems	(hero, self, ItRi_Ruprecht, 1);
 
 		if (Kapitel < 3)
 		{
-			AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_04"); //Mal sehen, was Anselm dazu sagen wird, wenn ich es ihm erzähle.
+			AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_04"); //Zobaczmy, co powie Anselm, kiedy mu opowie.
 		};
 
 		Mod_LeonhardRuprecht = 3;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_05"); //Tut mir Leid, dass ich so unfreundlich war, aber du wärst nicht der Erste, der hinter meinen Besitztümern her ist.
+		AI_Output(self, hero, "Info_Mod_Ruprecht_Truhe_13_05"); //Przykro mi, ze bylem tak nieprzyjazny, ale nie bylbym pierwszym, który przyszedlbys po moich posiadlosciach.
 	};
 };
 
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Ruprecht_Freudenspender (C_INFO)
 	information	= Info_Mod_Ruprecht_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich hab' hier Freudenspender ...";
+	description 	= "Mam tu zachwyty....";
 };                       
 
 FUNC INT Info_Mod_Ruprecht_Freudenspender_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Mod_Ruprecht_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Ruprecht_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruprecht_Freudenspender_15_00"); //Ich hab' hier Freudenspender ...
-	AI_Output(self, hero, "Info_Mod_Ruprecht_Freudenspender_13_01"); //Danke, aber ich möchte nichts.
+	AI_Output(hero, self, "Info_Mod_Ruprecht_Freudenspender_15_00"); //Mam tu zachwyty....
+	AI_Output(self, hero, "Info_Mod_Ruprecht_Freudenspender_13_01"); //Dziekuje, ale niczego nie chce.
 };
 
 INSTANCE Info_Mod_Ruprecht_Pickpocket (C_INFO)

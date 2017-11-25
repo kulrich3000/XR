@@ -1,7 +1,7 @@
 INSTANCE Sumpfhai_11023_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sumpfhai";
+	name 		= "rekin bagienny";
 	guild 		= GIL_SWAMPSHARK;
 	id 			= 11023;
 	voice 		= 18;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Nefarius_Hi (C_INFO)
 	information	= Info_Mod_Nefarius_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Saturas hat mich geschickt.";
+	description	= "Szatan wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Nefarius_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Nefarius_Hi_Condition()
 
 FUNC VOID Info_Mod_Nefarius_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_Hi_15_00"); //Saturas hat mich geschickt. Gibt es Fortschritte bei der Übersetzung der Inschriften?
-	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_01"); //Fortschritte schon, aber wir sind noch weit davon entfernt, etwas zu verstehen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_02"); //Niemand von uns kennt diese Sprache. Ich versuche, die Bedeutung der Zeichen zu verstehen. Dies funktioniert jedoch nur mit vielen Vergleichen und Vermutungen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_03"); //Es kann also noch dauern, bis wir erste Ergebnisse vorweisen können.
+	AI_Output(hero, self, "Info_Mod_Nefarius_Hi_15_00"); //Szatan wyslal mnie. Czy nastapil postep w tlumaczeniu napisów?
+	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_01"); //Poczyniono postepy, ale nadal jestesmy dalecy od zrozumienia czegos.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_02"); //Nikt z nas nie zna tego jezyka. Staram sie zrozumiec znaczenie znaków. Dziala to jednak tylko przy wielu porównaniach i zalozeniach.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Hi_05_03"); //Tak wiec pokazanie pierwszych wyników moze potrwac jeszcze troche czasu.
 };
 
 INSTANCE Info_Mod_Nefarius_Saturas (C_INFO)
@@ -43,11 +43,11 @@ FUNC INT Info_Mod_Nefarius_Saturas_Condition()
 
 FUNC VOID Info_Mod_Nefarius_Saturas_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_00"); //Ich hab etwas neues herausgefunden. Es scheint einen Ring zu geben der in eine kleine Öffnung in der Wand neben dem Portal passt.
-	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_01"); //Den Inschriften Zufolge wurde dieser Ring zur Sicherheit in vier gleiche Teile geteilt und in allen vier Himmelrichtungen versteckt.
-	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_02"); //Bevor du dich auf die Suche machst solltest du noch mit Merdarion reden.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_00"); //Dowiedzialem sie czegos nowego. Wydaje sie, ze jest pierscien, który pasuje do malego otworu w scianie obok portalu.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_01"); //Zgodnie z napisami, dla bezpieczenstwa pierscien ten zostal podzielony na cztery równe czesci i ukryty we wszystkich czterech kierunkach.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Saturas_05_02"); //Przed rozpoczeciem wyszukiwania nalezy porozmawiac z Merdarion.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius erzählt etwas von einem Ring, der das Portal öffnen könnte. Dieser Ring wurde jedoch scheinbar geteilt und in allen vier Himmelrichtungen versteckt. Ich soll vorher nochmal mit Merdarion sprechen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius mówi cos o pierscieniu, który móglby otworzyc portal. Pierscien ten byl jednak najwyrazniej podzielony i ukryty we wszystkich czterech kierunkach. Najpierw powinienem porozmawiac z Merdarionem.");
 };
 
 INSTANCE Info_Mod_Nefarius_PortalDicht (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Nefarius_PortalDicht (C_INFO)
 	information	= Info_Mod_Nefarius_PortalDicht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das sind aber keine sehr genauen Angaben.";
+	description	= "Nie sa to jednak szczególy bardzo precyzyjne.";
 };
 
 FUNC INT Info_Mod_Nefarius_PortalDicht_Condition()
@@ -71,17 +71,17 @@ FUNC INT Info_Mod_Nefarius_PortalDicht_Condition()
 
 FUNC VOID Info_Mod_Nefarius_PortalDicht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_PortalDicht_15_00"); //Das sind aber keine sehr genauen Angaben.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_01"); //Nun, hier steht eine Geschichte geschrieben. Demnach hat ein Gott mit Namen Radanos vor langer Zeit im alten Tal, genannt Jharkendar, geherrscht.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_02"); //Er war gütig und weise und schien mit den Bewohnern spirituell viel enger verbunden, als wir es von den drei Gottheiten heute kennen.
-	AI_Output(hero, self, "Info_Mod_Nefarius_PortalDicht_15_03"); //Ein anderer Gott? Erzähl weiter ...
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_04"); //Nun, es schien eine Art von Unheil oder Konflikt gegeben zu haben. Näheres konnte ich auch nicht erfahren.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_05"); //Auf jeden Fall scheint ganz plötzlich die Präsenz dieses Gottes zu enden ... und mit dieser Katastrophe beinahe auch alles Leben in Jharkendar ausgelöscht.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_06"); //Scheinbar sind nur vier der Erbauer entkommen und haben das Portal verschlossen. Sie wollten aus ihren Fehlern der Vergangenheit lernen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_07"); //Den Schlüssel haben sie zerbrochen und geschworen, sich niemals wieder zu begegnen, um die Vergangenheit für immer zu begraben.
-	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_08"); //Dann sind sie in verschiedene Richtungen aufgebrochen, damit die Stücke des Schlüssel voneinander getrennt sind.
+	AI_Output(hero, self, "Info_Mod_Nefarius_PortalDicht_15_00"); //Nie sa to jednak szczególy bardzo precyzyjne.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_01"); //No cóz, tutaj jest napisana historia. W zwiazku z tym w dawnej dolinie, dawno temu zwanej Jharkendarem, rzadzil bóg Radano.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_02"); //On byl dobroczynny i madry i wydawal sie byc o wiele blizej duchowo powiazany z mieszkancami, niz wiemy to dzisiaj od trzech bóstw.
+	AI_Output(hero, self, "Info_Mod_Nefarius_PortalDicht_15_03"); //Jeszcze inny bóg? Idz dalej.....
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_04"); //Cóz, wydawalo sie, ze mamy do czynienia z jakas katastrofa lub konfliktem. Nie moglem uzyskac dalszych informacji.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_05"); //W kazdym razie, obecnosc tego Boga nagle wydaje sie konczyc.... a wraz z ta katastrofa niemal cale zycie w Jharkendarze zostalo wymazane.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_06"); //Najwyrazniej tylko czterech budowniczych ucieklo i zamknelo portal. Chcieli uczyc sie na bledach z przeszlosci.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_07"); //Oni zlamali klucz i slubowali, ze nigdy wiecej nie spotkaja sie, aby pogrzebac przeszlosc na zawsze.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PortalDicht_05_08"); //Nastepnie sa one lamane w róznych kierunkach, tak aby kawalki klucza byly od siebie oddzielone.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Nach einer Katastrophe in Jharkendar sind lediglich vier der Erbauer entkommen. Diese haben den Schlüssel zerbrochen und jeder ist mit einem Teil in eine andere Richtung gegangen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Po katastrofie w Jharkendarzu ucieklo tylko czterech budowniczych. Zlamali klucz i kazdy z nich poszedl w innym kierunku z jedna czescia.");
 };
 
 INSTANCE Info_Mod_Nefarius_VierErbauer (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Nefarius_VierErbauer (C_INFO)
 	information	= Info_Mod_Nefarius_VierErbauer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Steht in den Schriften denn noch irgendwas (...)";
+	description	= "Czy jest cokolwiek innego w pismach (....)? )";
 };
 
 FUNC INT Info_Mod_Nefarius_VierErbauer_Condition()
@@ -105,34 +105,34 @@ FUNC INT Info_Mod_Nefarius_VierErbauer_Condition()
 
 FUNC VOID Info_Mod_Nefarius_VierErbauer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_00"); //Steht in den Schriften denn noch irgendwas über die genauen Orte, zu denen die Erbauer gegangen sind?
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_01"); //Nichts genaues. Außerdem musst du bedenken, dass sich das Gebiet hier in den letzten Jahrhunderten auch verändert haben kann.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_02"); //Ich will dir jedoch so viel sagen, wie mir möglich ist.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_03"); //Einer der Erbauer, ein Priester, wollte in den Westen aufbrechen, um sich dort eine Residenz zu erschaffen und die Weisheit vom Ur-Adanos zu predigen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_04"); //Leider steht hier nicht, was aus ihm geworden ist. Vielleicht solltest du dich mal in Khorinis umhören. Vielleicht kann der Statthalter in seinen alten Büchern darüber etwas in Erfahrung bringen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_05"); //Ein anderer ist in den Süden gegangen. Er wollte dort sein Glück in den Minen suchen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_06"); //Den Schriften nach war er allerdings nur ein Mitglieder der Kaste der Heiler.
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_07"); //Und was heißt das?
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_08"); //Nun, zur damaligen Zeit gab es noch keine Handels- und Transportroute zwischen dem Minental und Khorinis.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_09"); //Daher dürften dort jede Menge gefährliche Monster unterwegs gewesen sein. Ich glaube kaum, dass ein Heiler da sehr weit gekommen ist.
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_10"); //Klingt einleuchtend.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_11"); //Ein weiterer Erbauer, ein Krieger, wollte sich auf Khorinis niederlassen, eine Familie gründen und in Frieden leben.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_12"); //Sein Name war Onar. Vielleicht hat gibt es ja eine Verbindung zum Großbauer ...
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_13"); //Ich werde mir das mal ansehen.
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_14"); //Der letzte der Überlebenden war ein Totenwächter, der wohl irgendwo im Norden von Khorinis zu finden sein muss.
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_15"); //Zumindest das, was von ihm übrig ist ...
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_16"); //Natürlich, es wäre erstaunlich, wenn er selber noch Leben würde. (lacht)
-	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_17"); //Schau dich mal im Norden von Khorinis um, vielleicht findest du dort einen Ort, der einem Totenwächter würdig ist.
-	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_18"); //Gut, ich mach mich dann mal auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_00"); //Czy jest cos wiecej w pismach o dokladnych miejscach, do których wybrali sie budowniczowie?
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_01"); //Nic szczególnego. Nalezy równiez pamietac, ze obszar ten mógl sie zmienic w ciagu ostatnich kilku stuleci.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_02"); //Chce jednak panstwu powiedziec jak najwiecej.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_03"); //Jeden z budowniczych, kaplan, chcial wyjechac na Zachód, aby stworzyc rezydencje i glosic madrosc starozytnego Adanosa.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_04"); //Niestety, nie mówi, co sie z nim stalo. Byc moze powinienes zapytac whorynie. Moze dyrektor moze cos o tym dowie sie w swoich starych ksiazkach.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_05"); //Ktos inny poszedl na poludnie. Poszedl tam szukac szczescia w kopalniach.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_06"); //Jednak wedlug pism swietych byl on tylko czlonkiem kasty uzdrowicieli.
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_07"); //Co to oznacza?
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_08"); //Cóz, nie bylo wówczas szlaku handlowego i komunikacyjnego miedzy Minentalem a Khorinisem.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_09"); //Wiec musialo tam byc duzo niebezpiecznych potworów. Nie wydaje mi sie, zeby jakis uzdrowiciel posunal sie bardzo daleko.
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_10"); //Brzmi rozsadnie.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_11"); //Inny budowniczy, wojownik, chcial osiedlic sie w Khorinis, zalozyc rodzine i zyc w pokoju.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_12"); //Nazywal sie Onar. Byc moze jest polaczenie z duzym budowniczym.....
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_13"); //Patrze na to z bliska.
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_14"); //Ostatnim z ocalalych byl zabójczy straznik, który musial zostac znaleziony gdzies na pólnocy Khorinis.
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_15"); //Przynajmniej co mu pozostalo.....
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_16"); //Oczywiscie zdumiewajace byloby, gdyby on sam nadal zyl. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Nefarius_VierErbauer_05_17"); //Spójrzcie na pólnoc od Khorinis, byc moze znajdziecie Panstwo miejsce godne smiercionosnego straznika.
+	AI_Output(hero, self, "Info_Mod_Nefarius_VierErbauer_15_18"); //Dobrze, bede na drodze.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Einer der Erbauer ist in den Westen gegangen, um sich dort eine Residenz zu erschaffen. Ich sollte mich in Khorinis nach der Geschichte des Stammvaters erkundigen. Der Statthalter von Khorinis könnte mir dabei behilflich sein.");
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Ein Heiler ist in den Süden aufgebrochen. Nefarius denkt allerdings, dass er nicht allzu weit gekommen ist, da damals der Pass ins Minental sicher noch von gefährlichen Monstern besiedelt wurde.");
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Onar, ein Mitglied der Krieger-Kaste, hat sich auf Khorinis niedergelassen und eine Familie gegründet. Der Name gleicht dem des heutigen Grossbauern. Vielleicht gibt es da eine Verbindung?");
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Der letzte Überlebende, ein Totenwächter, hat sich in den Norden aufgemacht. Ich soll mich dort mal umsehen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Jeden z budowniczych udal sie na Zachód, aby stworzyc tam rezydencje. Mialem zapytac w Khorinis o historie przodka. Gubernator Khorinis moze mi w tym pomóc.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Na poludnie zostawiono uzdrowiciela. Nefarius uwaza jednak, ze nie dotarl za daleko, poniewaz w tym czasie przelecz górska do Minentalu byla na pewno zaludniona niebezpiecznymi potworami.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Onar, czlonek kasty Warrior, osiedlil sie w Khorinis i zalozyl rodzine. Nazwa ta przypomina nazwe dzisiejszego wielkiego rolnika. Moze jest jakies polaczenie?");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Ostatni ocalaly, Gwardia Dead Guard, prowadzil na pólnoc. Spodziewam sie rozejrzec.");
 
 	Wld_InsertItem	(ItMi_Ornament_Totenwaechter,	"FP_ITEM_ORNAMENT_TOTENWAECHTER");
 
-	Mob_CreateItems	("ONARSAHNENTRUHE", ItMi_Ornament_Krieger, 1);
+	Mob_CreateItems	("ONAR KREMOWA KLATKA PIERSIOWA", ItMi_Ornament_Krieger, 1);
 
 	B_StartOtherRoutine	(Mod_763_NONE_Gaan_NW, "ORNAMENT");
 };
@@ -145,7 +145,7 @@ INSTANCE Info_Mod_Nefarius_PriesterOrnament (C_INFO)
 	information	= Info_Mod_Nefarius_PriesterOrnament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab Bruchstück des Priesters.";
+	description	= "Mam fragment kaplana.";
 };
 
 FUNC INT Info_Mod_Nefarius_PriesterOrnament_Condition()
@@ -159,17 +159,17 @@ FUNC INT Info_Mod_Nefarius_PriesterOrnament_Condition()
 
 FUNC VOID Info_Mod_Nefarius_PriesterOrnament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_PriesterOrnament_15_00"); //Ich hab Bruchstück des Priesters. Es war in Relendel in der Stadt Khorata.
+	AI_Output(hero, self, "Info_Mod_Nefarius_PriesterOrnament_15_00"); //Mam fragment kaplana. Bylo to w Relendel w miescie Khorata.
 	
 	B_GiveInvItems	(hero, self, ItMi_Ornament_Priester, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_PriesterOrnament_05_01"); //In Khorata? Nun ja, jetzt haben wir es ja. Hier ist deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Nefarius_PriesterOrnament_05_01"); //W Khoracie? No cóz, teraz to juz mamy. Oto Twoja nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Ich habe Nefarius das Stück des Priesters gegeben.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Dalem Nefariusowi spektakl kaplana.");
 };
 
 INSTANCE Info_Mod_Nefarius_HeilerOrnament (C_INFO)
@@ -180,7 +180,7 @@ INSTANCE Info_Mod_Nefarius_HeilerOrnament (C_INFO)
 	information	= Info_Mod_Nefarius_HeilerOrnament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Ornamentstück des Heilers.";
+	description	= "Mam ornament uzdrowiciela.";
 };
 
 FUNC INT Info_Mod_Nefarius_HeilerOrnament_Condition()
@@ -194,17 +194,17 @@ FUNC INT Info_Mod_Nefarius_HeilerOrnament_Condition()
 
 FUNC VOID Info_Mod_Nefarius_HeilerOrnament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_HeilerOrnament_15_00"); //Ich habe das Ornamentstück des Heilers.
+	AI_Output(hero, self, "Info_Mod_Nefarius_HeilerOrnament_15_00"); //Mam ornament uzdrowiciela.
 	
 	B_GiveInvItems	(hero, self, ItMi_Ornament_Heiler, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_HeilerOrnament_05_01"); //Sehr gut. Hier hast du eine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Nefarius_HeilerOrnament_05_01"); //Bardzo dobry. Oto nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Ich habe Nefarius das Stück des Heilers gegeben.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Kawalek uzdrowiciela dalem Nefariusa.");
 };
 
 INSTANCE Info_Mod_Nefarius_KriegerOrnament (C_INFO)
@@ -215,7 +215,7 @@ INSTANCE Info_Mod_Nefarius_KriegerOrnament (C_INFO)
 	information	= Info_Mod_Nefarius_KriegerOrnament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist das Stück des Kriegers.";
+	description	= "Oto dzielo wojownika.";
 };
 
 FUNC INT Info_Mod_Nefarius_KriegerOrnament_Condition()
@@ -229,20 +229,20 @@ FUNC INT Info_Mod_Nefarius_KriegerOrnament_Condition()
 
 FUNC VOID Info_Mod_Nefarius_KriegerOrnament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_KriegerOrnament_15_00"); //Hier ist das Stück des Kriegers.
+	AI_Output(hero, self, "Info_Mod_Nefarius_KriegerOrnament_15_00"); //Oto dzielo wojownika.
 	
 	B_GiveInvItems	(hero, self, ItMi_Ornament_Krieger, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_01"); //Schön, wo hast du es gefunden?
-	AI_Output(hero, self, "Info_Mod_Nefarius_KriegerOrnament_15_02"); //Es war in einer Truhe von Onar, dem Grossbauern.
-	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_03"); //Ah ja, also waren die beiden tatsächlich verwandt.
-	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_04"); //Hier ist deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_01"); //No cóz, gdzie ja znalezliscie?
+	AI_Output(hero, self, "Info_Mod_Nefarius_KriegerOrnament_15_02"); //Byl to wielki rolnik w piersiach Onar.
+	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_03"); //Ah tak, wiec obie te kwestie byly w rzeczywistosci powiazane.
+	AI_Output(self, hero, "Info_Mod_Nefarius_KriegerOrnament_05_04"); //Oto Twoja nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Ich habe Nefarius das Stück des Kriegers gegeben.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Dalem Nefariusowi kawalek wojownika.");
 };
 
 INSTANCE Info_Mod_Nefarius_TotenwaechterOrnament (C_INFO)
@@ -253,7 +253,7 @@ INSTANCE Info_Mod_Nefarius_TotenwaechterOrnament (C_INFO)
 	information	= Info_Mod_Nefarius_TotenwaechterOrnament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Ornamentstück des Totenwächters gefunden.";
+	description	= "Znalazlem ornament ochroniarza.";
 };
 
 FUNC INT Info_Mod_Nefarius_TotenwaechterOrnament_Condition()
@@ -267,20 +267,20 @@ FUNC INT Info_Mod_Nefarius_TotenwaechterOrnament_Condition()
 
 FUNC VOID Info_Mod_Nefarius_TotenwaechterOrnament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_TotenwaechterOrnament_15_00"); //Ich habe das Ornamentstück des Totenwächters gefunden.
+	AI_Output(hero, self, "Info_Mod_Nefarius_TotenwaechterOrnament_15_00"); //Znalazlem ornament ochroniarza.
 	
 	B_GiveInvItems	(hero, self, ItMi_Ornament_Totenwaechter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_01"); //Und welcher Ort war des Totenwächters würdig?
-	AI_Output(hero, self, "Info_Mod_Nefarius_TotenwaechterOrnament_15_02"); //Der Steinkreis in der Nähe des schwarzen Trolls.
-	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_03"); //Der Sonnenkreis also, interessant.
-	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_04"); //Sehr gut. Hier ist eine kleine Belohnung für dich.
+	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_01"); //I które miejsce bylo godne ochroniarzy?
+	AI_Output(hero, self, "Info_Mod_Nefarius_TotenwaechterOrnament_15_02"); //Kamienne kolo w poblizu czarnego trolla.
+	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_03"); //Tak wiec krag sloneczny, ciekawy.
+	AI_Output(self, hero, "Info_Mod_Nefarius_TotenwaechterOrnament_05_04"); //Bardzo dobry. Oto mala nagroda dla Ciebie.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Ich habe Nefarius das Stück des Totenwächters gegeben.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Dalem Nefariusowi gre ochroniarza.");
 };
 
 INSTANCE Info_Mod_Nefarius_Komplett (C_INFO)
@@ -291,7 +291,7 @@ INSTANCE Info_Mod_Nefarius_Komplett (C_INFO)
 	information	= Info_Mod_Nefarius_Komplett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was passiert jetzt?";
+	description	= "Co dzieje sie teraz?";
 };
 
 FUNC INT Info_Mod_Nefarius_Komplett_Condition()
@@ -307,13 +307,13 @@ FUNC INT Info_Mod_Nefarius_Komplett_Condition()
 
 FUNC VOID Info_Mod_Nefarius_Komplett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_Komplett_15_00"); //Was passiert jetzt?
-	AI_Output(self, hero, "Info_Mod_Nefarius_Komplett_05_01"); //Nun, ich werde die Teile jetzt zusammensetzen. Es wird allerdings ein wenig dauern.
-	AI_Output(self, hero, "Info_Mod_Nefarius_Komplett_05_02"); //Geh solange mal zu Riordian, ich glaube, er wollte dir etwas zeigen.
+	AI_Output(hero, self, "Info_Mod_Nefarius_Komplett_15_00"); //Co dzieje sie teraz?
+	AI_Output(self, hero, "Info_Mod_Nefarius_Komplett_05_01"); //No cóz, teraz poskladam kawalki razem. Czas jednak minie.
+	AI_Output(self, hero, "Info_Mod_Nefarius_Komplett_05_02"); //Mysle, ze chcial cos wam pokazac.
 
 	Mod_OrnamentNefarius = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius wird die Teile nun zusammensetzen. Ich soll wieder kommen, wenn ich bei Riordian war.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius zlozy teraz czesci. Chca, abym wrócil, gdy jestem z Riordianem.");
 };
 
 INSTANCE Info_Mod_Nefarius_NTag (C_INFO)
@@ -324,7 +324,7 @@ INSTANCE Info_Mod_Nefarius_NTag (C_INFO)
 	information	= Info_Mod_Nefarius_NTag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du fertig?";
+	description	= "Czy jestes gotowy?";
 };
 
 FUNC INT Info_Mod_Nefarius_NTag_Condition()
@@ -337,14 +337,14 @@ FUNC INT Info_Mod_Nefarius_NTag_Condition()
 
 FUNC VOID Info_Mod_Nefarius_NTag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nefarius_NTag_15_00"); //Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Nefarius_NTag_05_01"); //Ja, hier ist der Ring.
+	AI_Output(hero, self, "Info_Mod_Nefarius_NTag_15_00"); //Czy jestes gotowy?
+	AI_Output(self, hero, "Info_Mod_Nefarius_NTag_05_01"); //Tak, oto pierscien.
 
 	B_GiveInvItems	(self, hero, ItMi_PortalRing_Addon, 1);
 
-	AI_Output(self, hero, "Info_Mod_Nefarius_NTag_05_02"); //Setze ihn in die vorgesehen Öffnung und durchschreite dann das Portal. Wir werden dir dann folgen. Du kannst dich solange ein wenig umsehen.
+	AI_Output(self, hero, "Info_Mod_Nefarius_NTag_05_02"); //Umiesc go w dostarczonym otworze i przejdz przez portal. Bedziemy Cie sledzic. Mozesz rozejrzec sie przez chwile.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius hat mir den Ring gegeben. Ich soll den Ring nun einsetzen und dann das Portal durchschreiten. Die anderen werden mir dann folgen.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Nefarius dal mi pierscionek. Musze wlozyc pierscien i przejsc przez portal. Inni pójda za mna.");
 	B_SetTopicStatus	(TOPIC_MOD_PORTAL, LOG_SUCCESS);
 }; 
 
@@ -356,7 +356,7 @@ instance Info_Mod_Nefarius_Runen	(C_INFO)
 	information	= Info_Mod_Nefarius_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterweise mich (Runen erschaffen)";
+	description	= "Naucz mnie (tworzac runy)";
 };
 
 func int Info_Mod_Nefarius_Runen_Condition ()
@@ -374,7 +374,7 @@ func void Info_Mod_Nefarius_Runen_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "Info_Mod_Nefarius_Runen_15_00"); //Unterweise mich.
+	AI_Output (other, self, "Info_Mod_Nefarius_Runen_15_00"); //Naucz mnie.
 	
 	Info_ClearChoices 	(Info_Mod_Nefarius_Runen);
 	Info_AddChoice		(Info_Mod_Nefarius_Runen, DIALOG_BACK, Info_Mod_Nefarius_Runen_BACK);
@@ -480,7 +480,7 @@ func void Info_Mod_Nefarius_Runen_Info ()
 
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "Info_Mod_Nefarius_Runen_14_01"); //Es gibt nichts mehr, das ich dir beibringen könnte.
+		AI_Output (self, other, "Info_Mod_Nefarius_Runen_14_01"); //Nic wiecej nie moge cie nauczyc.
 	};
 };
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raven_GDG_Lernen (C_INFO)
 	information	= Info_Mod_Raven_GDG_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Raven_GDG_Lernen_Condition()
@@ -21,14 +21,14 @@ FUNC INT Info_Mod_Raven_GDG_Lernen_Condition()
 
 FUNC VOID Info_Mod_Raven_GDG_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_GDG_Lernen_15_00"); //Ich will lernen.
-	AI_Output(self, hero, "Info_Mod_Raven_GDG_Lernen_10_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Raven_GDG_Lernen_15_00"); //Chce sie uczyc.
+	AI_Output(self, hero, "Info_Mod_Raven_GDG_Lernen_10_01"); //Czego chcesz sie nauczyc?
 
 	Info_ClearChoices	(Info_Mod_Raven_GDG_Lernen);
 
 	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, DIALOG_BACK, Info_Mod_Raven_GDG_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Zweihandkampf)", Info_Mod_Raven_GDG_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Stärke)", Info_Mod_Raven_GDG_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(walka dwureczna)", Info_Mod_Raven_GDG_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(wytrzymalosc)", Info_Mod_Raven_GDG_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Raven_GDG_Lernen_BACK()
@@ -50,8 +50,8 @@ FUNC VOID Info_Mod_Raven_GDG_Lernen_Zweihand_BACK()
 	Info_ClearChoices	(Info_Mod_Raven_GDG_Lernen);
 
 	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, DIALOG_BACK, Info_Mod_Raven_GDG_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Zweihandkampf)", Info_Mod_Raven_GDG_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Stärke)", Info_Mod_Raven_GDG_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(walka dwureczna)", Info_Mod_Raven_GDG_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(wytrzymalosc)", Info_Mod_Raven_GDG_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Raven_GDG_Lernen_Zweihand_5()
@@ -92,8 +92,8 @@ FUNC VOID Info_Mod_Raven_GDG_Lernen_Staerke_BACK()
 	Info_ClearChoices	(Info_Mod_Raven_GDG_Lernen);
 
 	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, DIALOG_BACK, Info_Mod_Raven_GDG_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Zweihandkampf)", Info_Mod_Raven_GDG_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(Stärke)", Info_Mod_Raven_GDG_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(walka dwureczna)", Info_Mod_Raven_GDG_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Raven_GDG_Lernen, "(wytrzymalosc)", Info_Mod_Raven_GDG_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Raven_GDG_Lernen_Staerke_5()

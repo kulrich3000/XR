@@ -1,7 +1,7 @@
 instance Mod_7731_OUT_Wache_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wache";	
+	name 		= "wartownik";	
 	guild 		= GIL_OUT;	
 	id 			= 7731;
 	voice 		= 10;

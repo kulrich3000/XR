@@ -1,7 +1,7 @@
 instance Mod_7423_OUT_Ursula_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ursula";
+	name 		= "Urszula";
 	guild 		= GIL_OUT;
 	id 			= 7423;
 	voice 		= 17;

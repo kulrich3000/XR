@@ -2,7 +2,7 @@ instance Mod_7798_SMK_Drake_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Drake";
+	name 		=	"drapak";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		= 	50;		// wegen XP!

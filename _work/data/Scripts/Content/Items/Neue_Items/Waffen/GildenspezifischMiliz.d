@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Milizschwert (C_Item)
 {	
-	name 				=	"Schwert der Miliz";
+	name 				=	"milicja";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_Milizschwert (C_Item)
 };
 INSTANCE ItMw_Milizschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Schwert der Miliz (geschärft)";
+	name 				=	"Miecz milicyjny (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

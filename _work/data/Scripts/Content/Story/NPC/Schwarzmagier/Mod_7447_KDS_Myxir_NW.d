@@ -1,7 +1,7 @@
 INSTANCE Mod_7447_KDS_Myxir_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Myxir";
+	name 		= "mikser";
 	guild 		= GIL_OUT; 
 	id 			= 7447;
 	voice 		= 28;

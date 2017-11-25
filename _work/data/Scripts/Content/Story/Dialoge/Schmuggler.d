@@ -18,12 +18,12 @@ FUNC INT Info_Mod_Schmuggler_Hi_Condition()
 
 FUNC VOID Info_Mod_Schmuggler_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_00"); //Ahh, da bist du ja. Du hast deine Sache gut gemacht.
-	AI_Output(hero, self, "Info_Mod_Schmuggler_Hi_15_01"); //Wo ist Nagur?
-	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_02"); //Der ruht auf dem Boden des Meeres und wird keinen Ärger mehr machen.
-	AI_Output(hero, self, "Info_Mod_Schmuggler_Hi_15_03"); //Und mein Gold?
-	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_04"); //Hier, viel Spaß damit.
-	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_05"); //Außerdem kannst du bei mir in Zukunft besondere Sachen bekommen ... (grinst) du hast nämlich bewiesen, dass du weißt, wie man Geschäfte macht.
+	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_00"); //Ach, tam jestescie. Wykonal pan dobra prace.
+	AI_Output(hero, self, "Info_Mod_Schmuggler_Hi_15_01"); //Gdzie jest Nagur?
+	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_02"); //Opiera sie on na dnie morza i nie powoduje zadnych problemów.
+	AI_Output(hero, self, "Info_Mod_Schmuggler_Hi_15_03"); //A moje zloto?
+	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_04"); //Tutaj dobrze sie bawic.
+	AI_Output(self, hero, "Info_Mod_Schmuggler_Hi_09_05"); //Poza tym w przyszlosci mozesz odebrac mi specjalne rzeczy.... Udowodniles, ze wiesz jak prowadzic biznes.
 
 	B_GivePlayerXP	(150);
 

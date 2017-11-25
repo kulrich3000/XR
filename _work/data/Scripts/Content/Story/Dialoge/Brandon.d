@@ -18,22 +18,22 @@ FUNC INT Info_Mod_Brandon_Hi_Condition()
 
 FUNC VOID Info_Mod_Brandon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_00"); //Hey, was machst du hier?
-	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_01"); //Ich will zu Greg.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_02"); //Soso zu Greg also? Und was willst du beim Käpt'n?
-	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_03"); //Ich will Pirat werden.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_04"); //Du willst Pirat werden? Mit deinen mickrigen Ärmchen?
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_05"); //Ich mach dir 'n Vorschlag. Du erlegst 'n größeren Strandwaran, der in der Nähe des Lagers rumstreunt.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_06"); //Er macht 'n paar der Waschweiber Angst. (lacht)
-	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_07"); //Waschweiber? Ich sehe hier aber gar keine Frauen.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_08"); //(lacht hämisch) Die Waschweiber sind die "Jungs" aus Henrys Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_09"); //Aber die wirst du noch früh genug sehen, Jungchen.
-	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_10"); //Wenn ich mich richtig erinnere, dann solltest du noch 'n Waran erledigen.
-	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_11"); //Ich geh ja schon ...
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_00"); //Hej, co tu robisz?
+	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_01"); //Chce Greg.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_02"); //A wiec co z Gregem? A czego chcesz z kapitanem?
+	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_03"); //Chce byc piratem.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_04"); //Chcesz byc piratem? Z puszystymi ramionami?
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_05"); //Przedstawie Ci propozycje. Strzelasz do wiekszego monitora plazowego wedrujacego po obozie.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_06"); //Przeraza niektóre z pioracych sie dziewczynek. (smiertelnicy)
+	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_07"); //Pranie dziewczyny? Nie widze tu zadnych kobiet.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_08"); //(lacht hämisch) Die Waschweiber sind die "chlopcy" aus Henrys Entertrupp.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_09"); //Ale zobaczysz je dosc szybko, kozleta.
+	AI_Output(self, hero, "Info_Mod_Brandon_Hi_04_10"); //Jesli dobrze pamietam, powinienes zabic kolejny monitor.
+	AI_Output(hero, self, "Info_Mod_Brandon_Hi_15_11"); //Bede.....
 
 	Log_CreateTopic	(TOPIC_MOD_BRANDON_WARAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BRANDON_WARAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BRANDON_WARAN, "Ich soll für Brandon einen großen Strandwaran töten.");
+	B_LogEntry	(TOPIC_MOD_BRANDON_WARAN, "Mam zabic duzy monitor plazowy dla Brandon.");
 };
 
 INSTANCE Info_Mod_Brandon_Waran (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Brandon_Waran (C_INFO)
 	information	= Info_Mod_Brandon_Waran_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Waran ist tot.";
+	description	= "Monitor jest wylaczony.";
 };
 
 FUNC INT Info_Mod_Brandon_Waran_Condition()
@@ -58,11 +58,11 @@ FUNC INT Info_Mod_Brandon_Waran_Condition()
 
 FUNC VOID Info_Mod_Brandon_Waran_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brandon_Waran_15_00"); //Der Waran ist tot.
-	AI_Output(self, hero, "Info_Mod_Brandon_Waran_04_01"); //Gut so. Damit dürften die Waschweiber zufrieden sein.
-	AI_Output(self, hero, "Info_Mod_Brandon_Waran_04_02"); //Jetzt geh zu Greg.
+	AI_Output(hero, self, "Info_Mod_Brandon_Waran_15_00"); //Monitor jest wylaczony.
+	AI_Output(self, hero, "Info_Mod_Brandon_Waran_04_01"); //I tak wlasnie idziesz. Kobiety piorace sie powinny byc z tego zadowolone.
+	AI_Output(self, hero, "Info_Mod_Brandon_Waran_04_02"); //Teraz zobacz Greg.
 
-	B_LogEntry	(TOPIC_MOD_BRANDON_WARAN, "Ich kann jetzt endlich zu Greg.");
+	B_LogEntry	(TOPIC_MOD_BRANDON_WARAN, "W koncu moge dotrzec do Greg.");
 	B_SetTopicStatus	(TOPIC_MOD_BRANDON_WARAN, LOG_SUCCESS);
 
 	B_Göttergefallen(2, 1);
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Brandon_Schatzsuche (C_INFO)
 	information	= Info_Mod_Brandon_Schatzsuche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst so froh aus.";
+	description	= "Wygladasz na szczesliwy.";
 };
 
 FUNC INT Info_Mod_Brandon_Schatzsuche_Condition()
@@ -92,30 +92,30 @@ FUNC INT Info_Mod_Brandon_Schatzsuche_Condition()
 
 FUNC VOID Info_Mod_Brandon_Schatzsuche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_00"); //Du siehst so froh aus.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_01"); //Bin ich auch. Hab mitgekriegt, dass Greg auslaufen will. Endlich passiert hier was.
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_02"); //Stimmt. Und ich soll bei den Vorbereitungen helfen.
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_03"); //Kann ich dich da unterstützen?
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_04"); //Aber ja ... Aber das bleibt unter uns!
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_05"); //Wo drückt der Stiefel?
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_06"); //'ne ganz komische Sache.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_07"); //Bin neulich in den Felsen über dem Ausweichlager rumgeklettert. Nur so aus Neugier.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_08"); //Plötzlich ein Riesengekreische über mir.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_09"); //Zwei seltsame Wesen, sahen aus wie kleine Menschen, aber mit Flügel und mächtigen Krallen.
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_10"); //Die kenne ich. Das sind Harpien.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_11"); //Jedenfalls haben die mich angegriffen.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_12"); //Ich hatte nur mein kleines Beil dabei und konnte nicht gegen die ankommen.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_13"); //Ich bin also geflüchtet und hab dabei meinen Enterhaken verloren.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_14"); //Und den werden wir vielleicht brauchen, wenn wir auslaufen.
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_15"); //Kann schon sein. Ich soll dir also das Teil zurückbringen.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_16"); //Du sagst es. Mir sind die Viecher nicht geheuer.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_17"); //Es soll dein Schaden nicht sein.
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_18"); //Aha. Du bist abergläubig.
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_19"); //Sind wir Piraten das nicht alle?
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_00"); //Wygladasz na szczesliwy.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_01"); //Ja równiez jestem. Zauwazylem, ze Greg próbowal uciekac. Cos wreszcie sie dzieje.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_02"); //To prawda. I mam pomagac w przygotowaniach.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_03"); //Czy moge Cie tam poprzec?
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_04"); //Ale tak..... Ale jest to miedzy nami!
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_05"); //Jaki jest nacisk na but?
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_06"); //To zabawna rzecz.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_07"); //Poplynac pewnego dnia w skalach nad alternatywnym obozem. Z ciekawosci.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_08"); //Nagle straszny palasz o mnie.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_09"); //Dwie dziwne istoty wygladaly jak mali ludzie, ale z skrzydlami i potezna pazura.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_10"); //Znam je wszystkie. To sa harfy.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_11"); //Zreszta atakowali mnie.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_12"); //Po prostu mialem przy sobie siekiewke i nie moglem ich pokonac.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_13"); //Wiec ucieklem i stracilem chwytajacy hak.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_14"); //I moze nam to byc potrzebne, kiedy sie skonczy.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_15"); //Nie wiem, moze tak jest. Wiec powinienem ci to cos oddac.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_16"); //Mówisz to. Nie lubie stworzen.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_17"); //To nie powinno byc twoim uszkodzeniem.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche_15_18"); //Uh-huh. Jestes przesadny.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche_04_19"); //Czy nie pirujemy wszystkich?
 
 	Log_CreateTopic	(TOPIC_MOD_PIR_ENTERHAKEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PIR_ENTERHAKEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PIR_ENTERHAKEN, "Ich muss Brandons Enterhaken in den Felsen über dem Ausweichlager finden und zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_PIR_ENTERHAKEN, "Musze znalezc chwytajacy hak Brandona w skale nad obozem zastepczym i przywiezc go z powrotem.");
 
 	Wld_InsertItem	(ItMi_Enterhaken, "FP_ITEM_ENTERHAKEN");
 
@@ -133,7 +133,7 @@ INSTANCE Info_Mod_Brandon_Schatzsuche2 (C_INFO)
 	information	= Info_Mod_Brandon_Schatzsuche2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich hab deinen Haken.";
+	description	= "Tutaj dostalem twój hak.";
 };
 
 FUNC INT Info_Mod_Brandon_Schatzsuche2_Condition()
@@ -147,16 +147,16 @@ FUNC INT Info_Mod_Brandon_Schatzsuche2_Condition()
 
 FUNC VOID Info_Mod_Brandon_Schatzsuche2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche2_15_00"); //Hier, ich hab deinen Haken.
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche2_15_00"); //Tutaj dostalem twój hak.
 
 	B_GiveInvItems	(hero, self, ItMi_Enterhaken, 1);
 
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche2_04_01"); //Adanosseidank! Hier hast du 300 Gold.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche2_04_01"); //Dziekuje, Adanos! Oto 300 zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche2_04_02"); //Und kein Wort zu den Anderen!
-	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche2_15_03"); //Hab verstanden. Bis dann.
+	AI_Output(self, hero, "Info_Mod_Brandon_Schatzsuche2_04_02"); //I nie slowa do innych!
+	AI_Output(hero, self, "Info_Mod_Brandon_Schatzsuche2_15_03"); //Rozumiem. Do zobaczenia dookola.
 
 	B_SetTopicStatus	(TOPIC_MOD_PIR_ENTERHAKEN, LOG_SUCCESS);
 
@@ -189,17 +189,17 @@ FUNC INT Info_Mod_Brandon_Befreiung_Condition()
 FUNC VOID Info_Mod_Brandon_Befreiung_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_01"); //(genervt) Was willst du von mir?
-	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_02"); //Sag mal, was ist denn mit dir los?
-	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_03"); //Ich habe seit drei Wochen keinen Alkohol mehr getrunken. Ich werde noch wahnsinnig, Mann!
-	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_04"); //Wie kann ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_05"); //Besorg mir Alkohol. 20 Flaschen Grog sollten erstmal reichen.
-	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_06"); //Ok, ich geh dann mal.
-	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_07"); //Beeil dich.
+	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_01"); //Czego od mnie oczekujesz?
+	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_02"); //Co jest z Toba?
+	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_03"); //W ciagu trzech tygodni nie mialem napoju. Bede szalony, czlowiek!
+	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_04"); //Jak moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_05"); //Pozwól mi troche gorzej. Wystarczy 20 butelek grotu.
+	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung_15_06"); //Dobrze, pójde.
+	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung_04_07"); //Chodz, spiesz sie.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRBRANDON, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBRANDON, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRBRANDON, "Der Pirat Brandon hat seit drei Wochen keinen Alkohol mehr getrunken. Ich soll ihm 20 Flaschen Grog besorgen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRBRANDON, "Pirat Brandon w ciagu trzech tygodni nie wypil alkoholu. Chce odebrac mu 20 butelek grogu.");
 };
 
 INSTANCE Info_Mod_Brandon_Befreiung2 (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Brandon_Befreiung2 (C_INFO)
 	information	= Info_Mod_Brandon_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du den versprochenen Alkohol.";
+	description	= "Oto gorzalka, która mi obiecales.";
 };
 
 FUNC INT Info_Mod_Brandon_Befreiung2_Condition()
@@ -224,16 +224,16 @@ FUNC INT Info_Mod_Brandon_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Brandon_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung2_15_00"); //Hier hast du den versprochenen Alkohol.
+	AI_Output(hero, self, "Info_Mod_Brandon_Befreiung2_15_00"); //Oto gorzalka, która mi obiecales.
 
 	B_GiveInvItems	(hero, self, ItFo_Addon_Grog, 20);
 	B_UseItem	(self, ItFo_Addon_Grog);
 
-	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung2_04_01"); //Danke Mann. Du bist mein Lebensretter. Nimm das.
+	AI_Output(self, hero, "Info_Mod_Brandon_Befreiung2_04_01"); //Dzieki, czlowiek. Ocaliles moje zycie. Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBRANDON, TOPIC_MOD_BEL_PIRATENLAGER, "Brandon's Leben habe ich gerettet.", "Ich habe Brandon das Leben gerettet.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBRANDON, TOPIC_MOD_BEL_PIRATENLAGER, "Uratowalem Brandonowi zycie.", "Uratowalem Brandonowi zycie.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBRANDON, LOG_SUCCESS);
 
 	B_GivePlayerXP	(185);
@@ -249,7 +249,7 @@ INSTANCE Info_Mod_Brandon_Lehrer (C_INFO)
 	information	= Info_Mod_Brandon_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Brandon_Lehrer_Condition()
@@ -266,10 +266,10 @@ FUNC VOID Info_Mod_Brandon_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Brandon_Lehrer_04_00"); //Ich kann dir helfen stärker zu werden.
+	AI_Output(self, hero, "Info_Mod_Brandon_Lehrer_04_00"); //Moge pomóc wam wzmocnic sie.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Brandon kann dafür sorgen, dass ich stärker werde.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Marka moze mnie wzmocnic.");
 };
 
 INSTANCE Info_Mod_Brandon_Lernen(C_INFO)
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Brandon_Lernen(C_INFO)
 	information	= Info_Mod_Brandon_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description 	= "Ich will stärker werden!";
+	description 	= "Chce byc silniejszy!";
 };   
                     
 FUNC INT Info_Mod_Brandon_Lernen_Condition()
@@ -295,7 +295,7 @@ FUNC INT Info_Mod_Brandon_Lernen_Condition()
 
 func VOID Info_Mod_Brandon_Lernen_Info()
 {	
-	AI_Output (hero, self, "Info_Mod_Brandon_Lernen_15_00"); //Bring mir was bei!
+	AI_Output (hero, self, "Info_Mod_Brandon_Lernen_15_00"); //Naucz mnie czegos!
 	
 	Info_ClearChoices (Info_Mod_Brandon_Lernen);
 

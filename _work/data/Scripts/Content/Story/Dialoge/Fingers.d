@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Fingers_Hi (C_INFO)
 	information	= Info_Mod_Fingers_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, was kann ich bei dir bekommen?";
+	description	= "Witam, co moge od Ciebie otrzymac?";
 };
 
 FUNC INT Info_Mod_Fingers_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Fingers_Hi_Condition()
 
 FUNC VOID Info_Mod_Fingers_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Hi_15_00"); //Hallo, was kann ich bei dir bekommen?
-	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_01"); //Bekommen? Ne, ich kann dir vielmehr zeigen, wie du dir selbst was holst ... aus den Taschen und Wohnungen deiner Mitmenschen.
-	AI_Output(hero, self, "Info_Mod_Fingers_Hi_15_02"); //Hört sich nützlich an.
-	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_03"); //Ahh, jemand der die Tugenden zu schätzen weiß. Sehr gut.
-	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_04"); //Fürs erste kann ich dir zeigen, wie  du schleichen kannst.
-	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_05"); //Falls du mehr lernen willst, müsstest du allerdings eine Kleinigkeit für mich erledigen ...
+	AI_Output(hero, self, "Info_Mod_Fingers_Hi_15_00"); //Witam, co moge od Ciebie otrzymac?
+	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_01"); //Czy to zrobiles? Nie, potrafie pokazac ci, jak cos sobie zdobyc.... z kieszeni i domów Twoich bliznich.
+	AI_Output(hero, self, "Info_Mod_Fingers_Hi_15_02"); //Dzwieki przydatne dla mnie.
+	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_03"); //Ahh, ktos, kto ceni cnoty. Bardzo dobry.
+	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_04"); //Na razie moge pokazac wam, jak sie wymykac.
+	AI_Output(self, hero, "Info_Mod_Fingers_Hi_05_05"); //Jesli chcesz dowiedziec sie wiecej, musisz zrobic dla mnie mala rzecz....
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_OLDCAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_OLDCAMP, "Fingers kann mir wieder diverse Diebestalente beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_OLDCAMP, "Palce moga nauczyc mnie ponownie róznych talentów kradziezy.");
 };
 
 INSTANCE Info_Mod_Fingers_Nek (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Fingers_Nek (C_INFO)
 	information	= Info_Mod_Fingers_Nek_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Worum geht’s?";
+	description	= "Co o tym chodzi?";
 };
 
 FUNC INT Info_Mod_Fingers_Nek_Condition()
@@ -48,21 +48,21 @@ FUNC INT Info_Mod_Fingers_Nek_Condition()
 
 FUNC VOID Info_Mod_Fingers_Nek_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_00"); //Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_01"); //Nun, der Schatten Sly hat etwas in seinem Besitz, was ich gerne hätte ... ein Amulett.
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_02"); //Und ich soll es dir jetzt besorgen.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_03"); //Genau. Er sollte es irgendwo in seiner Hütte versteckt haben. Das ist die erste Hütte mit einem Vordach, wenn du vom Haupttor aus nach rechts gehst.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_04"); //Auf leisen Sohlen solltest du ohne Probleme unbemerkt hineinkommen und es an dich nehmen können.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_05"); //Das Amulett hat mal einem Gardisten namens Nek gehört und sein Name ist hinten eingraviert ...
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_06"); //(halblaut) Stimmt, dass habe ich damals seinem Leichnam abgenommen ...
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_07"); //... zumindest glauben einige Einfallspinsel, dass ER es nach SICH benannt hat.
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_08"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_09"); //Nichts, vergiss es. Bring mir das Amulett, und ich werde dir noch mehr beibringen.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_10"); //Vielleicht springt auch die eine oder andere Münze dabei für dich heraus ...
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_00"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_01"); //Cóz, cien Sly ma w swoim posiadaniu cos, co chcialbym miec..... amulet.
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_02"); //I mam to teraz dostac dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_03"); //Dokladnie. Powinien byl ukryc ja gdzies w swojej kabinie. Jest to pierwsza chata z baldachimem, gdy skrecamy w prawo od bramy glównej.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_04"); //Na miekkich podeszwach powinienes byc w stanie wejsc w niezauwazalny sposób i wziac go bez zadnych problemów.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_05"); //Amulet nalezal kiedys do straznika imieniem Nek, a jego nazwisko jest wygrawerowane na plecach......
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_06"); //To prawda, wtedy zdjalem jego cialo z powrotem....
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_07"); //... przynajmniej niektóre fantazyjne szczoteczki wierza, ze HE nazwal ja po sobie.
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek_15_08"); //Co?
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_09"); //Nic, zapomnij. Przynies mi amulet i naucze cie wiecej.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek_05_10"); //Moze jedna lub druga moneta wyjdzie dla Ciebie....
 
 	Log_CreateTopic	(TOPIC_MOD_FINGERS_NEK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FINGERS_NEK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Der Schatten Fingers will mich das Diebeshandwerk lehren, wenn ich ihm ein Amulett aus Slys Hütte besorge. Slys Hütte ist die erste mit Vordach, wenn ich vom Haupttor aus nach rechts gehe.");
+	B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Cien Palca chce mnie nauczyc rzemiosla zlodziei, kiedy dostaje go amulet z chaty Sly' ego. Kabina Sly' a jest pierwsza z baldachimem, kiedy skrecam w prawo od bramy glównej.");
 
 	Wld_InsertItem	(ItAm_Nek,	"FP_ITEM_NEKSTISCH");
 	Wld_InsertItem	(ItFo_Bread,	"FP_ITEM_NEKSTISCH");
@@ -76,7 +76,7 @@ INSTANCE Info_Mod_Fingers_Nek2 (C_INFO)
 	information	= Info_Mod_Fingers_Nek2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Amulett gefunden.";
+	description	= "Znalazlem amulet.";
 };
 
 FUNC INT Info_Mod_Fingers_Nek2_Condition()
@@ -90,12 +90,12 @@ FUNC INT Info_Mod_Fingers_Nek2_Condition()
 
 FUNC VOID Info_Mod_Fingers_Nek2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek2_15_00"); //Ich habe das Amulett gefunden.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_01"); //Ausgezeichnet, nichts anderes habe ich erwartet.
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek2_15_02"); //Hier, nimm.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_03"); //(Zögerlich) Ähh, nein lass mal ... ich habe da einen besseren Einfall.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_04"); //Du gibst mir 200 Goldmünzen und ich sage dir den Namen des Mannes, der das Amulett möchte.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_05"); //Von ihm bekommst du dann 350 Goldmünzen ... also immer noch 150 Münzen Gewinn für dich ... neben den Diebestalenten, die ich dir beibringen kann.
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek2_15_00"); //Znalazlem amulet.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_01"); //Doskonale, nie spodziewalem sie niczego wiecej.
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek2_15_02"); //Wez to tutaj.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_03"); //(Hesitly) Uh, nie, nie, nie --- Mam lepszy pomysl.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_04"); //Dajesz mi 200 zlotych monet, a ja opowiem ci nazwisko mezczyzny, który chce amuletu.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek2_05_05"); //Daje Ci 350 zlotych monet.... W ten sposób wygrywa dla Ciebie 150 monet.... Moge cie nauczyc.
 
 	B_GivePlayerXP	(300);
 };
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Fingers_Nek3 (C_INFO)
 	information	= Info_Mod_Fingers_Nek3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ok, hier ist das Gold.";
+	description	= "Okay, tutaj zloto.";
 };
 
 FUNC INT Info_Mod_Fingers_Nek3_Condition()
@@ -122,11 +122,11 @@ FUNC INT Info_Mod_Fingers_Nek3_Condition()
 
 FUNC VOID Info_Mod_Fingers_Nek3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek3_15_00"); //Ok, hier ist das Gold.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek3_05_01"); //Gut, es ist Sancho. Er steht direkt vor dem Lager der Banditen.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek3_05_02"); //Sag ihm einfach, dass du Neks Amulett hast und die Sache ist perfekt. Alles klar?
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek3_15_00"); //Okay, tutaj zloto.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek3_05_01"); //Dobrze, to Sancho. Stoi tuz przed obozem bandytów.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek3_05_02"); //Po prostu powiedz mu, ze masz nek's amulet i jest doskonaly. Kazdy ma racje?
 
-	B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Ich habe Fingers 200 Goldmünzen für den Namen des Mannes gegeben, der dass Amulett haben möchte. Es ist Sancho, den ich vor dem Lager der Banditen antreffe. Ich hoffe, Fingers hat mich nicht reingelegt.");
+	B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Dalem Fingersowi 200 zlotych monet na nazwisko mezczyzny, który chce miec ten amulet. To Sancho spotykam sie przed obozem bandytów. Mam nadzieje, ze Fingers mnie nie zalozyl.");
 };
 
 INSTANCE Info_Mod_Fingers_Nek4 (C_INFO)
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Fingers_Nek4 (C_INFO)
 	information	= Info_Mod_Fingers_Nek4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer sagt mir denn, dass du mich nicht übers Ohr haust?";
+	description	= "Kto mówi, ze nie oszukujesz mnie?";
 };
 
 FUNC INT Info_Mod_Fingers_Nek4_Condition()
@@ -151,9 +151,9 @@ FUNC INT Info_Mod_Fingers_Nek4_Condition()
 
 FUNC VOID Info_Mod_Fingers_Nek4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Nek4_15_00"); //Wer sagt mir denn, dass du mich nicht übers Ohr haust?
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek4_05_01"); //Nun, wenn du nicht willst, kannst du ja versuchen das Amulett für paar Münzen einem anderen Händler zu verkaufen.
-	AI_Output(self, hero, "Info_Mod_Fingers_Nek4_05_02"); //Aber glaub bloß nicht, dass du mehr als 10 Goldstücke dafür bekommst.
+	AI_Output(hero, self, "Info_Mod_Fingers_Nek4_15_00"); //Kto mówi, ze nie oszukujesz mnie?
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek4_05_01"); //Cóz, jesli nie chcesz, mozesz spróbowac sprzedac amulet za kilka monet innemu kupcowi.
+	AI_Output(self, hero, "Info_Mod_Fingers_Nek4_05_02"); //Nie mysl jednak, ze mozesz dostac wiecej niz 10 sztuk zlota.
 };
 
 INSTANCE Info_Mod_Fingers_SLDSpy (C_INFO)
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Fingers_SLDSpy (C_INFO)
 	information	= Info_Mod_Fingers_SLDSpy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es Neues und Wissenswertes zu hören?";
+	description	= "Co nowego i co ciekawego do uslyszec?";
 };
 
 FUNC INT Info_Mod_Fingers_SLDSpy_Condition()
@@ -179,10 +179,10 @@ FUNC INT Info_Mod_Fingers_SLDSpy_Condition()
 
 FUNC VOID Info_Mod_Fingers_SLDSpy_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_SLDSpy_15_00"); //Was gibt es Neues und Wissenswertes zu hören?
-	AI_Output(self, hero, "Info_Mod_Fingers_SLDSpy_05_01"); //Nun, für geschickte Diebe wird sich im Morgengrauen in den nächsten Tagen Gelegenheit auf leichte Beute finden, wenn viele Gardisten ausgerückt sind.
+	AI_Output(hero, self, "Info_Mod_Fingers_SLDSpy_15_00"); //Co nowego i co ciekawego do uslyszec?
+	AI_Output(self, hero, "Info_Mod_Fingers_SLDSpy_05_01"); //No cóz, dla zlodziei umiejetnych, jezeli wielu strazników sie wyprowadzi, bedzie latwa ofiara o swicie w ciagu najblizszych kilku dni.
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Fingers meinte, dass die Gardisten demnächst im Morgengrauen in großer Zahl ausrücken werden.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Palce powiedzialy, ze straznicy wkrótce o swicie beda sie wyprowadzac w duzych ilosciach.");
 };
 
 INSTANCE Info_Mod_Fingers_Kap4 (C_INFO)
@@ -205,23 +205,23 @@ FUNC INT Info_Mod_Fingers_Kap4_Condition()
 
 FUNC VOID Info_Mod_Fingers_Kap4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_00"); //Sieh an ... ein Besucher.
-	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_01"); //Fingers?
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_02"); //Überrascht mich zu sehen?
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_03"); //Nun, es hätte tatsächlich nicht viel gefehlt und die Orks hätte mich zu Frikassee verarbeitet.
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_04"); //Aber ich habe einen kühlen Kopf bewahrt, als der Tumult mit den Orks im Lager losging und bin erst mal untergetaucht.
-	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_05"); //Untergetaucht?
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_06"); //Ja ... in einem Fass ... und das einen ganzen Tag, ehe ich mich nachts aus dem Lager schleichen konnte.
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_07"); //War ganz schön unbequem da drin ... glaub mir.
-	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_08"); //Und warum bist du jetzt hier?
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_09"); //Nun, ich hatte schon vor dem Fall des Alten Lagers meine Kontakte zu den Banditen ... und ich bin ein Mann mit Tugenden, die sie zu schätzen wissen, wenn du verstehst.
-	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_10"); //Ich denke schon. Na ja, ich muss weiter. Pass auf dich auf.
-	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_11"); //Immer doch. Bis dann.
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_00"); //No cóz, no cóz.... odwiedzajacego.
+	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_01"); //Palce?
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_02"); //Zaskoczony, ze widze?
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_03"); //No cóz, naprawde nie zabraklo by bylo zbyt wiele, a orki uczynilyby mnie orkami Frikassee.
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_04"); //Ale gdy zawirowania rozpoczely sie z orkami w obozie, trzymalem chlodna glowe i ukrywalem sie.
+	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_05"); //W ukryciu?
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_06"); //Tak..... w beczce.... zanim w nocy udalo mi sie wymknac z obozu.
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_07"); //Bylo to dosc niewygodne.... Wierzcie mi.
+	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_08"); //A dlaczego jestes tutaj?
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_09"); //No cóz, mialem kontakty z bandytami przed upadkiem starego obozu... Wiecej A ja jestem czlowiekiem cnót, które doceniaja, jesli zrozumiecie.
+	AI_Output(hero, self, "Info_Mod_Fingers_Kap4_15_10"); //Mysle, ze tak, tak. Cóz, musze isc dalej. Dbaj o siebie.
+	AI_Output(self, hero, "Info_Mod_Fingers_Kap4_05_11"); //Zawsze to robie. Do zobaczenia dookola.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fisk_NW_Hi))
 	&& (Mod_Fisk_LeiseHoffnung == 0)
 	{
-		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Fingers hat seinen Platz bei den Banditen gefunden. Es scheint ihm dort ganz gut zu gehen.");
+		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Fingers znalazl swoje miejsce wsród bandytów. Wyglada na to, ze robi tam wszystko.");
 	};
 };
 
@@ -233,7 +233,7 @@ INSTANCE Info_Mod_Fingers_Lernen (C_INFO)
 	information	= Info_Mod_Fingers_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Naucz mnie czegos.";
 };
 
 FUNC INT Info_Mod_Fingers_Lernen_Condition()
@@ -246,8 +246,8 @@ FUNC INT Info_Mod_Fingers_Lernen_Condition()
 
 FUNC VOID Info_Mod_Fingers_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fingers_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Fingers_Lernen_05_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Fingers_Lernen_15_00"); //Naucz mnie czegos.
+	AI_Output(self, hero, "Info_Mod_Fingers_Lernen_05_01"); //Czego chcesz sie nauczyc?
 
 	Info_ClearChoices	(Info_Mod_Fingers_Lernen);
 
@@ -256,21 +256,21 @@ FUNC VOID Info_Mod_Fingers_Lernen_Info()
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKPOCKET) == FALSE)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Fingers_Nek2))
 	{
-		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("Taschendiebstahl", B_GetLearnCostTalent(hero, NPC_TALENT_PICKPOCKET, 1)), Info_Mod_Fingers_Lernen_Pickpocket);
+		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("kompletacja kieszonkowa", B_GetLearnCostTalent(hero, NPC_TALENT_PICKPOCKET, 1)), Info_Mod_Fingers_Lernen_Pickpocket);
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Fingers_Nek2))
 	{
-		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("Schlösser knacken", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1)), Info_Mod_Fingers_Lernen_Picklock);
+		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("sluzy chwytaki", B_GetLearnCostTalent(hero, NPC_TALENT_PICKLOCK, 1)), Info_Mod_Fingers_Lernen_Picklock);
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("Schleichen", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Fingers_Lernen_Sneak);
+		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("bijatyka", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Fingers_Lernen_Sneak);
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_ACROBAT) == FALSE)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Fingers_Nek2))
 	{
-		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("Akrobatik", B_GetLearnCostTalent(hero, NPC_TALENT_ACROBAT, 1)), Info_Mod_Fingers_Lernen_Acrobat);
+		Info_AddChoice		(Info_Mod_Fingers_Lernen, B_BuildLearnString("akrobatyka", B_GetLearnCostTalent(hero, NPC_TALENT_ACROBAT, 1)), Info_Mod_Fingers_Lernen_Acrobat);
 	};
 	if (Mod_Schwierigkeit != 4)
 	{
@@ -301,13 +301,13 @@ FUNC VOID Info_Mod_Fingers_Lernen_Sneak()
 
 FUNC VOID Info_Mod_Fingers_Lernen_Acrobat()
 {
-	AI_Output(hero, self, "Info_Mod_Buster_Lernen_15_00"); //Bring mir Akrobatik bei.
+	AI_Output(hero, self, "Info_Mod_Buster_Lernen_15_00"); //Naucz mnie akrobatyki.
 
 	if (B_TeachThiefTalent (self, hero, NPC_TALENT_ACROBAT))
 	{
-		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_01"); //Wenn du deinen Körper beherrschst, bist du in der Lage viel weiter zu springen.
-		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_02"); //Du lernst dich richtig abzurollen und aus dem Fall heraus richtig zu landen. Aber denk daran, du bist nicht unsterblich!
-		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_03"); //Auch im Kampf ist Akrobatik sehr hilfreich. Du kannst deinen Abstand zum Gegner sehr schnell verändern. Viel Glück!
+		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_01"); //Jesli kontrolujesz swoje cialo, bedziesz mógl przeskoczyc znacznie dalej.
+		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_02"); //Nauczysz sie sam sie nawijac i ladujesz prawidlowo od jesieni. Pamietaj jednak, ze nie jestes niesmiertelny!
+		AI_Output(self, hero, "Info_Mod_Fingers_Lernen_Acrobat_05_03"); //Równiez w walce z akrobatyka jest bardzo pomocne. Mozesz szybko zmienic dystans do przeciwnika. Powodzenia!
 	};
 };
 

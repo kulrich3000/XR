@@ -6,7 +6,7 @@ INSTANCE Info_Mod_BesessenerNovize_Hi (C_INFO)
 	information	= Info_Mod_BesessenerNovize_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hab' ich dich, Dämon!";
+	description	= "Gotcha, demon!";
 };
 
 FUNC INT Info_Mod_BesessenerNovize_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_BesessenerNovize_Hi_Condition()
 
 FUNC VOID Info_Mod_BesessenerNovize_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_BesessenerNovize_Hi_15_00"); //Hab' ich dich, Dämon!
-	AI_Output(self, hero, "Info_Mod_BesessenerNovize_Hi_11_01"); //Du kommst zu spät, kleiner Mensch. Ich werde alle Diener Beliars töten und meinen Meistern einen großen Dienst erweisen!
-	AI_Output(hero, self, "Info_Mod_BesessenerNovize_Hi_15_02"); //Lass uns lieber zur Sache kommen!
+	AI_Output(hero, self, "Info_Mod_BesessenerNovize_Hi_15_00"); //Gotcha, demon!
+	AI_Output(self, hero, "Info_Mod_BesessenerNovize_Hi_11_01"); //Jestes spózniony, maluch. Zabije wszystkich slugi Beliarsa i wykonam wspaniala przysluge!
+	AI_Output(hero, self, "Info_Mod_BesessenerNovize_Hi_15_02"); //Przycinajmy sie do poscigu!
 
 	AI_DrawWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_BesessenerNovize_Hi_11_03"); //Ganz wie du willst.
+	AI_Output(self, hero, "Info_Mod_BesessenerNovize_Hi_11_03"); //Dopasuj sie do siebie.
 
-	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Der Dämon ist ein besessener Novize. Ich muss ihn töten.");
+	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Demon jest nowicjuszem z obsesja. Musze go zabic.");
 
 	AI_StopProcessInfos	(self);
 

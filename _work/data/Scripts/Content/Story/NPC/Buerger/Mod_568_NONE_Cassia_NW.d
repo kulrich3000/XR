@@ -1,7 +1,7 @@
 instance Mod_568_NONE_Cassia_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cassia"; 
+	name 		= "Kassia"; 
 	guild 		= GIL_OUT;
 	id 			= 568;
 	voice 		= 16;

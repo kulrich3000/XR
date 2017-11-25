@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1h_Vlk_Dagger (C_Item)
 {	
-	name 				=	"Dolch";  
+	name 				=	"sztylet";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -27,7 +27,7 @@ INSTANCE ItMw_1h_Vlk_Dagger (C_Item)
 };
 INSTANCE ItMw_1h_Vlk_Dagger_Geschaerft (C_Item)
 {	
-	name 				=	"Dolch (geschärft)";  
+	name 				=	"Sztylet ostrzony";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -53,7 +53,7 @@ INSTANCE ItMw_1h_Vlk_Dagger_Geschaerft (C_Item)
 
 INSTANCE ItMw_1h_Vlk_Dagger_Blut (C_Item)
 {	
-	name 				=	"Dolch, der das Blut von 4 Königen getrunken hat";  
+	name 				=	"Sztylet, który wypil krew czterech królów";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -81,7 +81,7 @@ INSTANCE ItMw_1h_Vlk_Dagger_Blut (C_Item)
 
 INSTANCE ItMw_Avaquar (C_Item)
 {
-	name 				=	"Avaquar";
+	name 				=	"avaquar";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -106,7 +106,7 @@ INSTANCE ItMw_Avaquar (C_Item)
 };
 INSTANCE ItMw_Avaquar_Geschaerft (C_Item)
 {
-	name 				=	"Avaquar (geschärft)";
+	name 				=	"Avaquar (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -134,7 +134,7 @@ INSTANCE ItMw_Avaquar_Geschaerft (C_Item)
 
 INSTANCE ItMw_Assassinenschwert (C_Item)
 {	
-	name 				=	"Assassinenschwert";
+	name 				=	"Zabójca miecza";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -159,7 +159,7 @@ INSTANCE ItMw_Assassinenschwert (C_Item)
 
 INSTANCE ItMw_Assassinenschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Assassinenschwert (geschärft)";
+	name 				=	"Zabójca: miecz ostrzalowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -184,7 +184,7 @@ INSTANCE ItMw_Assassinenschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Assassinenkralle (C_Item)
 {	
-	name 				=	"Assassinenkralle";
+	name 				=	"Crakekein Assassin's Crake";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -209,7 +209,7 @@ INSTANCE ItMw_Assassinenkralle (C_Item)
 
 INSTANCE ItMw_Assassinenkralle_Geschaerft (C_Item)
 {	
-	name 				=	"Assassinenkralle (geschärft)";
+	name 				=	"Ostrza mordercy (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -259,7 +259,7 @@ INSTANCE ItMw_Katana (C_Item)
 
 INSTANCE ItMw_Katana_Geschaerft (C_Item)
 {	
-	name 				=	"Katana (geschärft)";
+	name 				=	"Katana (utwardzona)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -284,7 +284,7 @@ INSTANCE ItMw_Katana_Geschaerft (C_Item)
 
 instance ItRw_Assassinenbogen (C_Item)
 {
-	name 				=	"Assassinenbogen";
+	name 				=	"Zabójca";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -311,7 +311,7 @@ instance ItRw_Assassinenbogen (C_Item)
 
 INSTANCE ItRw_Todesbogen (C_Item)
 {
-	name 				=	"Todesbogen";
+	name 				=	"zguba";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -337,7 +337,7 @@ INSTANCE ItRw_Todesbogen (C_Item)
 
 INSTANCE ItRw_Runenbogen (C_Item)
 {
-	name 				=	"Runenbogen";
+	name 				=	"luk spustowy";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -363,7 +363,7 @@ INSTANCE ItRw_Runenbogen (C_Item)
 
 INSTANCE ItMw_BeliarDolch (C_Item)
 {	
-	name 				=	"Beliars Dolch";  
+	name 				=	"Beliars Dagger";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

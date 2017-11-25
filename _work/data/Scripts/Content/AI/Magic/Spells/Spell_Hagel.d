@@ -60,7 +60,7 @@ func void Spell_Cast_Hagel()
 			Mod_WM_HexenHagel = 2;
 		};
 
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Ich habe die Spruchrolle angewendet.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Uzywalem przewijania.");
 	};
 
 	B_PrismaAdd(SPL_Damage_Hagel);

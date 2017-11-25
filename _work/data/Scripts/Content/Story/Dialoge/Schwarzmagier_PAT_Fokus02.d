@@ -19,18 +19,18 @@ FUNC INT Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_Condition()
 
 FUNC VOID Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_03_00"); //Ein Roter ... ganz schön mutig. Was treibt dich hierher?
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_03_00"); //Czerwony.... To cie odwazne. Co przynosi ci tutaj?
 
 	Info_ClearChoices	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi);
 
-	Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi, "Ich brauch diesen Fokus und werde ihn jetzt nehmen.", Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B);
-	Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi, "Auf dem Weg durch die Kristallhöhle bin ich auf einen riesigen Schatz gestoßen.", Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A);
+	Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi, "Potrzebuje takiego skupienia, a teraz jestem gonna.", Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B);
+	Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi, "W drodze przez krysztalowa jaskinie natrafilem na ogromny skarb.", Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A);
 };
 
 FUNC VOID Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B_15_00"); //Ich brauch diesen Fokus und werde ihn jetzt nehmen.
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B_03_01"); //Nur über meine Leiche. Komm bei, Rothaut.
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B_15_00"); //Potrzebuje takiego skupienia, a teraz jestem gonna.
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B_03_01"); //Nad martwym cialem. Przyjedzcie, Redskin.
 
 	Info_ClearChoices	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi);
 
@@ -43,11 +43,11 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_B()
 
 FUNC VOID Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_00"); //Auf dem Weg durch die Kristallhöhle bin ich auf einen riesigen Schatz gestoßen.
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_01"); //Der ist aber mit irgend einem schwarzen Zauber belegt. Ich komm da einfach nicht dran.
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_02"); //Jetzt dachte ich, du könntest mir dabei helfen und wir machen dann Halbe/Halbe ...
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_03_03"); //Das hört sich erst mal gut an. Wo geht's lang?
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_04"); //Folge mir. Ich bring dich hin.
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_00"); //W drodze przez krysztalowa jaskinie natrafilem na ogromny skarb.
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_01"); //Jest pokryty czarna magia. Nie moge do niego dotrzec.
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_02"); //Teraz pomyslalem, ze móglbys mi to pomóc, a my pójdziemy polówka/walkami....
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_03_03"); //Brzmi to jak dobry pomysl na chwile obecna. W jaki sposób?
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_Hi_A_15_04"); //Podazaj za mna, idz za mna. Zabiore cie tam.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Schwarzmagier_PAT_Fokus02_Hi);
@@ -79,14 +79,14 @@ FUNC INT Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_Condition()
 
 FUNC VOID Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_15_00"); //Siehst du den Gang da drüben? Da drin ist dieser Zauber und der Schatz.
-	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_03_01"); //Ich schau dann mal.
+	AI_Output(hero, self, "Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_15_00"); //Zobaczcie tam ten korytarz? Tam jest ten zaklecie i skarb.
+	AI_Output(self, hero, "Info_Mod_Schwarzmagier_PAT_Fokus02_AtHoehle_03_01"); //Zobacze.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "HOEHLE");
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Den hab ich aber schön verarscht, listig, wie ich bin ...");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Wkrecilem go calkiem dobrze, sprytnie tak, jak jestem.....");
 
 	Mod_PAT_Focus_02 = 1;
 };

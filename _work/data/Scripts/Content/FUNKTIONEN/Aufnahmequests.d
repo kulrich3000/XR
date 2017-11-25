@@ -163,7 +163,7 @@ FUNC VOID Aufnahmequests ()
 
 			if (Mod_VermisstenCounter == 5)
 			{
-				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_00"); //Wo bist du, Liebling?
+				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_00"); //Gdzie jestes, darling?
 			};
 
 			if (Mod_VermisstenCounter == 10)
@@ -175,35 +175,35 @@ FUNC VOID Aufnahmequests ()
 			{
 				AI_TurnToNpc	(Mod_1000_DMR_Kurgan_NW, Mod_573_NONE_Elvrich_NW);
 
-				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_01"); //Hier bin ich ...
+				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_01"); //Oto jestem.....
 			};
 
 			if (Mod_VermisstenCounter == 17)
 			{
 				AI_TurnToNpc	(Mod_573_NONE_Elvrich_NW, Mod_1000_DMR_Kurgan_NW);
 
-				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_02"); //Aber du bist nicht ...
+				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_02"); //Ale nie jestes.....
 			};
 
 			if (Mod_VermisstenCounter == 22)
 			{
 				AI_TurnToNpc	(Mod_1000_DMR_Kurgan_NW, Mod_573_NONE_Elvrich_NW);
 
-				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_03"); //... deine Freundin? Ganz recht.
+				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_03"); //... twoja dziewczyna? Calkiem tak.
 			};
 
 			if (Mod_VermisstenCounter == 27)
 			{
 				AI_TurnToNpc	(Mod_573_NONE_Elvrich_NW, Mod_1000_DMR_Kurgan_NW);
 
-				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_04"); //Was willst du hier?
+				AI_Output(Mod_573_NONE_Elvrich_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_24_04"); //Co Pan tutaj robi?
 			};
 
 			if (Mod_VermisstenCounter == 32)
 			{
 				AI_TurnToNpc	(Mod_1000_DMR_Kurgan_NW, Mod_573_NONE_Elvrich_NW);
 
-				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_05"); //Ich will nur dich. (lacht)
+				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_05"); //Po prostu chce, zeby pan to zrobil. (smiertelnicy)
 			};
 
 			if (Mod_VermisstenCounter == 37)
@@ -215,7 +215,7 @@ FUNC VOID Aufnahmequests ()
 			{
 				AI_TurnToNpc	(Mod_1000_DMR_Kurgan_NW, Mod_573_NONE_Elvrich_NW);
 
-				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_06"); //Und weg hier, bevor diese trotteligen Einwohner was bemerken.
+				AI_Output(Mod_1000_DMR_Kurgan_NW, NULL, "Info_Mod_Elvrich_Entfuehrung_01_06"); //I wyrzuc z niego pieklo, zanim te szarpniecia cokolwiek zauwaza.
 			};
 
 			if (Mod_VermisstenCounter == 42)
@@ -229,7 +229,7 @@ FUNC VOID Aufnahmequests ()
 				AI_Teleport	(Mod_1000_DMR_Kurgan_NW, "TOT");
 				AI_Teleport	(Mod_573_NONE_Elvrich_NW, "TOT");
 
-				B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ein Dämonenritter hat Elvrich entführt. Das wird Vatras reichen.");
+				B_LogEntry	(TOPIC_MOD_VERMISSTE, "Rycerz demoniczny porwal Elwicza. To zrobi Vatrase.");
 
 				Mod_VermisstenQuest = 2;
 
@@ -309,12 +309,12 @@ FUNC VOID Aufnahmequests ()
 				AI_TurnToNpc	(Mod_7399_DMR_Daemonenritter_OM, Mod_1031_DMR_Kurgan_OM);
 				AI_TurnToNpc	(Mod_1031_DMR_Kurgan_OM, Mod_7399_DMR_Daemonenritter_OM);
 
-				AI_Output(Mod_7399_DMR_Daemonenritter_OM, NULL, "Info_Mod_DMRGateGuard_Flucht_13_00"); //Der Gefangene ist verschwunden. Muss durch den Ausgang ins Minental getürmt sein.
+				AI_Output(Mod_7399_DMR_Daemonenritter_OM, NULL, "Info_Mod_DMRGateGuard_Flucht_13_00"); //Wiezien zaginal. Musza byc popedzeni przez wyjscie do Minental.
 			};
 
 			if (Mod_WM_KurganAlarm_Counter == 7)
 			{
-				AI_Output(Mod_1031_DMR_Kurgan_OM, NULL, "Info_Mod_DMRGateGuard_Flucht_01_01"); //Was?! Das hat ja noch gefehlt. Finde diese Nervensäge und bringt ihn zu den "anderen" nach unten. Du verstehst, was ich meine.
+				AI_Output(Mod_1031_DMR_Kurgan_OM, NULL, "Info_Mod_DMRGateGuard_Flucht_01_01"); //Was?! Das hat ja noch gefehlt. Finde diese Nervensäge und bringt ihn zu den "nastepny" nach unten. Du verstehst, was ich meine.
 			};
 
 			if (Mod_WM_KurganAlarm_Counter == 12)
@@ -322,7 +322,7 @@ FUNC VOID Aufnahmequests ()
 				B_StartOtherRoutine	(Mod_7399_DMR_Daemonenritter_OM, "START");
 				B_StartOtherRoutine	(Mod_1031_DMR_Kurgan_OM, "START");
 
-				B_LogEntry	(TOPIC_MOD_VERMISSTE, "Aha. Irgendeiner ihrer Gefangenen ist durch den Ausgang ins Minental getürmt. Die anderen könnten sich noch irgendwo weiter unten in der Mine befinden.");
+				B_LogEntry	(TOPIC_MOD_VERMISSTE, "Uh-huh. Czesc z nich wbiegla przez wyjscie do Minentala. Inni mogliby byc gdzies dalej w dól kopalni.");
 
 				Mod_WM_KurganAlarm = 3;
 

@@ -1,7 +1,7 @@
 instance Mod_100000_OUT_Brunhild_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brunhild";	
+	name 		= "bruncheon";	
 	guild 		= GIL_OUT;
 	id 			= 100000;
 	voice 		= 17;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ulf_Hi (C_INFO)
 	information	= Info_Mod_Ulf_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Ulf_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Ulf_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ulf_Hi_28_01"); //Ich bin Ulf, meine Aufgabe ist es, den Wein des Klosters hier in der Stadt zu verkaufen.
+	AI_Output(self, hero, "Info_Mod_Ulf_Hi_28_01"); //Jestem Ulfem, moim zadaniem jest sprzedaz wina klasztornego tutaj w miescie.
 };
 
 INSTANCE Info_Mod_Ulf_WieGehts (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Ulf_WieGehts (C_INFO)
 	information	= Info_Mod_Ulf_WieGehts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gehts so?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_Ulf_WieGehts_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Ulf_WieGehts_Condition()
 
 FUNC VOID Info_Mod_Ulf_WieGehts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_00"); //Wie gehts so?
-	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_01"); //Ich mache mir sorgen um Akahasch.
-	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_02"); //Wer ist Akahasch?
-	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_03"); //Er ist auch ein Novize des Klosters, der mir eine Lieferung Wein bringen sollte, doch er ist noch nicht hier angekommen.
-	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_04"); //Kannst du mir sagen, wenn du ihn findest?
-	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_05"); //Ok.
+	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_01"); //Martwie sie o acahash.
+	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_02"); //Kim jest Akahasch?
+	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_03"); //Jest tez nowicjuszem klasztoru, który mial przyniesc mi ladunek wina, ale jeszcze tu nie przybyl.
+	AI_Output(self, hero, "Info_Mod_Ulf_WieGehts_28_04"); //Czy mozesz mi powiedziec, kiedy go znajdziesz?
+	AI_Output(hero, self, "Info_Mod_Ulf_WieGehts_15_05"); //Okay.
 };
 
 INSTANCE Info_Mod_Ulf_AkahaschTot (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Ulf_AkahaschTot (C_INFO)
 	information	= Info_Mod_Ulf_AkahaschTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Akahasch gefunden.";
+	description	= "Znalazlem Akahascha.";
 };
 
 FUNC INT Info_Mod_Ulf_AkahaschTot_Condition()
@@ -74,23 +74,23 @@ FUNC INT Info_Mod_Ulf_AkahaschTot_Condition()
 
 FUNC VOID Info_Mod_Ulf_AkahaschTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_00"); //Ich habe Akahasch gefunden.
-	AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_01"); //Wo ist er?
+	AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_00"); //Znalazlem Akahascha.
+	AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_01"); //Gdzie jest?
 
 	if (Npc_IsDead(Mod_4016_NOV_Akahasch_NW))
 	{
-		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_02"); //Er ist tot.
-		AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_03"); //Bei Innos, ist das wahr? Was ist passiert?
-		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_04"); //Ich bin in der nähe des Leuchtturms über seine Leiche gestolpert. Das hier hatte er bei sich.
+		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_02"); //On nie zyje.
+		AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_03"); //Czy z Innosem to prawda? Co sie dzieje?
+		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_04"); //Potrzasnalem nad jego cialem w poblizu latarni morskiej. Mial to na sobie.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_05"); //Er ist wieder im Kloster. Hier ist der Wein von ihm.
+		AI_Output(hero, self, "Info_Mod_Ulf_AkahaschTot_15_05"); //Wraca do klasztoru. Oto jego wino.
 	};
 
 	B_GiveInvItems	(hero, self, ItMi_Weinlieferung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_06"); //Wenigstens der Wein ist gerettet. Nimm das als Dank für deine Mühen.
+	AI_Output(self, hero, "Info_Mod_Ulf_AkahaschTot_28_06"); //Przynajmniej wino jest zapisywane. Wezmy to jako podziekowanie za wasze wysilki.
 
 	B_GivePlayerXP	(100);
 

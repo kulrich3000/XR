@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_3_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich mich diesem Lager anschliessen?";
+	description = "Jak dolaczyc do tego obozu?";
 };                       
 
 FUNC INT Info_PsiNov_3_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_PsiNov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_PsiNov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschließen?
-	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_01"); //Das ist ganz einfach. Du musst einfach loslassen, Mann.
-	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_02"); //Sprich mit den Gurus, sie werden dich leiten!
+	AI_Output(hero,self,"Info_PsiNov_3_EinerVonEuchWerden_15_00"); //Jak dolaczyc do tego obozu?
+	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_01"); //To bardzo proste. Po prostu dostales puscic czlowieka.
+	AI_Output(self,hero,"Info_PsiNov_3_EinerVonEuchWerden_03_02"); //Porozmawiaj z guru, oni cie poprowadza!
 };
 
 INSTANCE Info_PsiNov_3_Sumpfkrautruestung (C_INFO) // E1
@@ -81,7 +81,7 @@ FUNC INT Info_PsiNov_3_Sumpfkrautruestung_Condition()
 
 FUNC VOID Info_PsiNov_3_Sumpfkrautruestung_Info()
 {
-	AI_Output(self,hero,"Info_PsiNov_3_Sumpfkrautruestung_03_00"); //Man, das riecht ja wie ein ganzes Feld voll Sumpfkraut.
+	AI_Output(self,hero,"Info_PsiNov_3_Sumpfkrautruestung_03_00"); //Czlowiek, to pachnie jak cale pole ambrozji.
 };
 
 // *************************************************************************
@@ -94,7 +94,7 @@ INSTANCE Info_PsiNov_3_WichtigePersonen(C_INFO)
 	condition	= Info_PsiNov_3_WichtigePersonen_Condition;
 	information	= Info_PsiNov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist hier der Boss?";
+	description = "Kim jest szef?";
 };                       
 
 FUNC INT Info_PsiNov_3_WichtigePersonen_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_PsiNov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_PsiNov_3_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,hero,"Info_PsiNov_3_WichtigePersonen_03_01"); //Cor Cadar und Cor Angar!
+	AI_Output(hero,self,"Info_PsiNov_3_WichtigePersonen_15_00"); //Kim jest szef?
+	AI_Output(self,hero,"Info_PsiNov_3_WichtigePersonen_03_01"); //Cor Cadar i Cor Angar!
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_PsiNov_3_DasLager(C_INFO)
 	condition	= Info_PsiNov_3_DasLager_Condition;
 	information	= Info_PsiNov_3_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "Jakie sa interesujace miejsca?";
 };                       
 
 FUNC INT Info_PsiNov_3_DasLager_Condition()
@@ -128,9 +128,9 @@ FUNC INT Info_PsiNov_3_DasLager_Condition()
 
 FUNC VOID Info_PsiNov_3_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
-	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_01"); //Es gibt Fortuno, er verteilt freies Sumpfkraut für alle Anhänger der Sekte.
-	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_02"); //Du findest ihn unter Cor Kaloms altem Alchemielabor.
+	AI_Output(hero,self,"Info_PsiNov_3_DasLager_15_00"); //Jakie sa interesujace miejsca?
+	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_01"); //Jest tam Fortuno, on rozdaje wolna chwast bagnista dla wszystkich wyznawców sekty.
+	AI_Output(self,hero,"Info_PsiNov_3_DasLager_03_02"); //Mozna go znalezc w starym laboratorium alchemicznym w Cor Kalom.
 };
 
 // *************************************************************************
@@ -143,7 +143,7 @@ INSTANCE Info_PsiNov_3_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_3_DieLage_Condition;
 	information	= Info_PsiNov_3_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "Jaki jest wynik?";
 };                       
 
 FUNC INT Info_PsiNov_3_DieLage_Condition()
@@ -153,8 +153,8 @@ FUNC INT Info_PsiNov_3_DieLage_Condition()
 
 FUNC VOID Info_PsiNov_3_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_3_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_PsiNov_3_DieLage_03_01"); //Ich bin total high, Mann!
+	AI_Output(hero,self,"Info_PsiNov_3_DieLage_15_00"); //Jaki jest wynik?
+	AI_Output(self,hero,"Info_PsiNov_3_DieLage_03_01"); //Jestem calkowicie wysoki, czlowiek!
 };
 
 INSTANCE Info_Mod_PsiNov_3_Pickpocket (C_INFO)

@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Wedge_Hi_Condition()
 
 FUNC VOID Info_Mod_Wedge_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_00"); //Sieh an, ein neues Gesicht. Aber warte ... habe ich dich nicht damals vor dem Fall der Barriere schon im neuen Lager gesehen?
-	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_01"); //Ja, das stimmt. Du scheinst ein gutes Gedächtnis zu haben.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_02"); //Nun, etwas Köpfchen ist nicht gerade von Nachteil, wenn man nicht als Moorleiche enden will.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_03"); //Denn die beste Art zu einer zu werden, ist es sich im Moor zu verlaufen.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_04"); //Es bedarf eben mehr, als nur leiser Sohlen, um nicht gleich beim ersten Beutezug als Kadaver zu enden.
-	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_05"); //Naja, wenn es drauf ankommt, sollte man sicher auch die Beine in die Hand nehmen können ... leise Sohlen hin oder her.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_06"); //Das eine muss aber das andere nicht ausschließen.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_07"); //Wenn man erst einmal gelernt hat, wie man richtig auftreten muss, kann man auch beim Laufen fast genauso leise sein, als würde man Schleichen.
-	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_08"); //Hört sich nützlich an.
-	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_09"); //Ja, es ist beleibe nicht von Nachteil. Wer die leisen Sohlen beherrscht, lebt besser ... und länger.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_00"); //Spójrzmy na to, nowe oblicze. Ale poczekaj.... przed upadkiem zapory, czy nie widzialem cie w nowym obozie?
+	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_01"); //Tak, to prawda. Wyglada na to, ze ma pan dobra pamiec.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_02"); //No cóz, nie szkodzi to, ze nie chce sie skonczyc jako cialo bagienne.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_03"); //Poniewaz najlepszym sposobem, aby sie nim stac jest zagubienie sie w moczarze.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_04"); //To trwa wiecej niz tylko ciche podeszwy, aby nie skonczyly sie jak tusze na pierwszym nalocie.
+	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_05"); //No cóz, gdy przychodzi do tego, ze z pewnoscia trzeba umiec wziac nogi w reke.... miekkie podeszwy do tylu i do przodu.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_06"); //Ale jeden nie musi wykluczac drugiego.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_07"); //Kiedy juz nauczysz sie, jak dobrze dzialac, mozesz byc prawie tak spokojny podczas biegania, jak gdybys wykradal sie.
+	AI_Output(hero, self, "Info_Mod_Wedge_Hi_15_08"); //Dzwieki przydatne dla mnie.
+	AI_Output(self, hero, "Info_Mod_Wedge_Hi_05_09"); //Tak, to nie jest wada. Ci, którzy opanuja ciche podeszwy, zyja lepiej.... i dluzej.
 };
 
 INSTANCE Info_Mod_Wedge_Lehrer (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Wedge_Lehrer (C_INFO)
 	information	= Info_Mod_Wedge_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir beibringen leise zu laufen?";
+	description	= "Czy mozesz nauczyc mnie chodzic cicho?";
 };
 
 FUNC INT Info_Mod_Wedge_Lehrer_Condition()
@@ -48,17 +48,17 @@ FUNC INT Info_Mod_Wedge_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Wedge_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wedge_Lehrer_15_00"); //Kannst du mir beibringen leise zu laufen?
-	AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_01"); //Na ich weiß nicht ... kannst du überhaupt vernünftig schleichen?
-	AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_02"); //Mit einem Trampel, der die Füße eines Golems hat, werde ich erst gar nicht meine kostbare Zeit verschwenden.
+	AI_Output(hero, self, "Info_Mod_Wedge_Lehrer_15_00"); //Czy mozesz nauczyc mnie chodzic cicho?
+	AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_01"); //No cóz, nie wiem.... Czy mozna nawet wymazac sie racjonalnie?
+	AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_02"); //Nie zmarnuje cennego czasu z trampolina, która ma nogi golema.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_03"); //Apropos kostbar und Zeit ... wenn es dir wirklich ernst ist, wirst du bestimmt 300 Münzen locker machen können.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_03"); //Mówienie o drogocennosci i czasie.... Jesli jestes naprawde powazny, mozesz poluzowac do 300 monet.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_04"); //Apropos kostbar und Zeit ... wenn es dir wirklich ernst ist, wirst du bestimmt 1800 Münzen locker machen können.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lehrer_05_04"); //Mówienie o drogocennosci i czasie.... Jesli jestes naprawde powazny, mozesz poluzowac 1800 monet.
 	};
 };
 
@@ -77,11 +77,11 @@ FUNC INT Info_Mod_Wedge_Lernen_Condition()
 {
 	if (Mod_Schwierigkeit != 4)
 	{
-		Info_Mod_Wedge_Lernen.description = "Leises Laufen (15 LP, 300 Gold, erfordert Schleichen)";
+		Info_Mod_Wedge_Lernen.description = "Cichy bieg (15 MP, 300 zl, wymaga pelzania)";
 	}
 	else
 	{
-		Info_Mod_Wedge_Lernen.description = "Leises Laufen (1800 Gold, erfordert Schleichen)";
+		Info_Mod_Wedge_Lernen.description = "Cichy bieg (1800 zl, wymaga pelzania)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Wedge_Lehrer))
@@ -96,18 +96,18 @@ FUNC VOID Info_Mod_Wedge_Lernen_Info()
 	if (Mod_Schwierigkeit != 4)
 	&& (hero.lp < 15)
 	{
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_00"); //Sammele erst einmal die nötige Erfahrung, Grünschnabel.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_00"); //Zbierz niezbedne doswiadczenie, Greenbill.
 	}
 	else if ((Mod_Schwierigkeit != 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) < 300))
 	|| ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) < 1800))
 	{
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_01"); //Und das Gold?! Umsonst ist der Tod ...
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_01"); //I zloto? Nie ma bowiem mowy o smierci....
 	}
 	else if (Npc_GetTalentSkill(hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_02"); //Anfänger, lern erst mal vernünftig zu schleichen. Mit deinen Schritten übertönst du jeden Troll.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_02"); //Poczatkujacy, ucza sie jak dosc dobrze przeslizgiwac sie. Za pomoca swoich kroków zagluszales kazdy troll.
 	}
 	else
 	{
@@ -122,14 +122,14 @@ FUNC VOID Info_Mod_Wedge_Lernen_Info()
 			B_GiveInvItems	(hero, self, ItMi_Gold, 1800);
 		};
 
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_03"); //Gut, ein Würdiger will lernen seinen Fuß leise und doch Geschwind aufzusetzen.
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_04"); //Du musst darauf achten, sanft mit der Ferse aufzusetzen und den Fuß gleichmäßig abzurollen.
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_05"); //Weiches Schuhwerk ist auch nicht von Nachteil. Ich zeige es dir.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_03"); //Godny czlowieka chce nauczyc sie, jak spokojnie i szybko postawic noge.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_04"); //Musisz sie upewnic, ze delikatnie nakladasz piete i równomiernie zwijasz stope.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_05"); //Miekkie buty równiez nie sa wada. Prosze pozwolic mi pokazac.
 
 		AI_PlayAni	(self, "T_PLUNDER");
 
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_06"); //So, jetzt solltest du nicht mehr so viel Lärm beim Laufen machen.
-		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_07"); //Viel Spaß mit deiner neuen Fertigkeit.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_06"); //Wiec teraz nie powinienes szumic podczas biegania.
+		AI_Output(self, hero, "Info_Mod_Wedge_Lernen_05_07"); //Baw sie z nowymi umiejetnosciami.
 
 		LeisenLaufen_Perk = TRUE;
 	};

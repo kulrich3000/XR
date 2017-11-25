@@ -43,32 +43,32 @@ FUNC VOID XW_Kap6_Scene05()
 
 	if (Mod_XW_Kap6_Scene05_Counter == 13)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_00"); //(stutzt) Leprechaun? Leprechaun?
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_00"); //Leprechaun? Leprechaun?
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 19)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_15_01"); //Absicht oder Versehen?
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_15_01"); //Cel lub wypadek?
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 25)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_02"); //Wie konnte er aus dem Gefängnis kommen, in das ich ihn gesteckt hatte?
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_02"); //Jak wydostal sie z wiezienia, do którego go wsadzilem?
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 31)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_15_03"); //Du hast deinen eigenen Diener eingesperrt?
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_15_03"); //Zablokowales/as swojego sluge?
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 37)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_04"); //Er war verantwortlich dafür, dass du fliehen konntest. Das musste bestraft werden.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_04"); //Byl on odpowiedzialny za umozliwienie ucieczki. Trzeba bylo to ukarac.
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 43)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_05"); //Aber auch ich habe meine milde Seite. Ich hätte ihn schon nach 50 Jahren wieder herausgelassen ... wenn er dann noch gelebt hätte.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene05_14_05"); //Ale mam tez swoja poblazliwa strone. Wyszedlbym go po 50 latach.... czy jeszcze zyl.
 	};
 
 	if (Mod_XW_Kap6_Scene05_Counter == 49)

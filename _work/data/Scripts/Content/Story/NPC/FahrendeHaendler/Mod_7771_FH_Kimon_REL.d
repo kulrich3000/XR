@@ -1,7 +1,7 @@
 instance Mod_7771_FH_Kimon_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kimon";
+	name 		= "kimon";
 	guild 		= GIL_OUT;
 	id 			= 7771;
 	voice 		= 34;

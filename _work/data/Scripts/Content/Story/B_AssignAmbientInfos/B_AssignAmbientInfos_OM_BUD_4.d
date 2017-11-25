@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_4_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_4_Mine_Condition;
 	information	= Info_OM_BUD_4_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Opowiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT Info_OM_BUD_4_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_4_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_4_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_01"); //Eine Spitzhacke und Schweiß. Das brauchst du hier drin.
-	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_02"); //Aber, wenn du längst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
+	AI_Output(other,self,"Info_OM_BUD_4_Mine_15_00"); //Opowiedz mi o mojej kopalni.
+	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_01"); //Piknik i pot. Potrzebujesz tego tutaj.
+	AI_Output(self,other,"Info_OM_BUD_4_Mine_01_02"); //Ale jesli jestes juz dawno, wciaz jestem gonna rozbijac rude z tej góry. To moja praca. To jest moje zycie.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_4_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_4_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Kto ma w tym cos do powiedzenia?";
 };                       
 
 FUNC INT Info_OM_BUD_4_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_4_WichtigePersonen_01_01"); //Kurgan und ein paar andere Beliar-Anhänger haben vor ein paar Wochen die Mine übernommen. Seitdem kommen wir hier nicht mehr raus.
+	AI_Output(other,self,"Info_OM_BUD_4_WichtigePersonen_15_00"); //Kto ma cos do powiedzenia?
+	AI_Output(self,other,"Info_OM_BUD_4_WichtigePersonen_01_01"); //Kurgan i inni zwolennicy Beliara przejeli kopalnie kilka tygodni temu. Od tego czasu nie udalo nam sie wydostac z tego miejsca.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_4_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_4_DieLage_Condition;
 	information	= Info_OM_BUD_4_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_OM_BUD_4_DieLage_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_OM_BUD_4_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_4_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_4_DieLage_01_01"); //Früher war alles besser.
+	AI_Output(other,self,"Info_OM_BUD_4_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,other,"Info_OM_BUD_4_DieLage_01_01"); //Wszystko bylo kiedys lepsze.
 };
 
 INSTANCE Info_Mod_OM_BUD_4_Pickpocket (C_INFO)

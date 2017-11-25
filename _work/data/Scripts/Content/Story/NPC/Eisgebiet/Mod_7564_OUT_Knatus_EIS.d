@@ -1,7 +1,7 @@
 INSTANCE Mod_7564_OUT_Knatus_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Knatus"; 	
+	name 		= "przelacznik"; 	
 	guild 		= GIL_OUT;
 	id 			= 7564;
 	voice 		= 3;																

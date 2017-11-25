@@ -1,6 +1,6 @@
 INSTANCE Packet_Lise (C_Item)
 {
-	name 				=	"ein volles Warenpaket";
+	name 				=	"pelny pakiet towarów";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;
@@ -11,11 +11,11 @@ INSTANCE Packet_Lise (C_Item)
 	scemename			=	"MAPSEALED";
 	material 			=	MAT_LEATHER;
 	on_state[0]			=       Use_Packet_Lise;
-	description			= 	"das Warenpaket eines Händlers";
-	text[0]                         =       "Eine Packung, die wohl einem Händler";
-	text[1]                         =       "geraubt wurde. Ich fand sie direkt";
-	text[2]                         =       "unter dem Osttor der Stadt.";
-	text[3]                         =       "Soll ich es zurückgeben oder behalten...?";
+	description			= 	"opakowanie towarowe detalisty";
+	text[0]                         =       "Opakowanie, które musialo zostac sprzedane sprzedawcy detalicznemu";
+	text[1]                         =       "zostal okradany. Znalazly je bezposrednio";
+	text[2]                         =       "pod wschodnia brama miasta.";
+	text[3]                         =       "Czy powinienem ja oddac lub zachowac?";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -30,7 +30,7 @@ INSTANCE Packet_Lise (C_Item)
 
 INSTANCE Mod_RumPaket (C_Item)
 {
-	name 				=	"Rumpaket";
+	name 				=	"pakiet podstawowy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;
@@ -39,13 +39,13 @@ INSTANCE Mod_RumPaket (C_Item)
 
 	visual 				=	"ItMi_Packet.3ds";
 	material 			=	MAT_LEATHER;
-	description			= 	"ein Paket voller Rum";
+	description			= 	"paczke rumu";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE Mod_GrogPaket (C_Item)
 {
-	name 				=	"Grogpaket";
+	name 				=	"szamot";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;
@@ -54,13 +54,13 @@ INSTANCE Mod_GrogPaket (C_Item)
 
 	visual 				=	"ItMi_Packet.3ds";
 	material 			=	MAT_LEATHER;
-	description			= 	"ein Paket voller Grog";
+	description			= 	"pakiet srodków ostroznosci";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE Mod_KleinodPaket (C_Item)
 {
-	name 				=	"Kleinodpaket";
+	name 				=	"maly";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;
@@ -69,13 +69,13 @@ INSTANCE Mod_KleinodPaket (C_Item)
 
 	visual 				=	"ItMi_Packet.3ds";
 	material 			=	MAT_LEATHER;
-	description			= 	"ein Paket voller Kleinod";
+	description			= 	"pakiet bizuteria";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItMi_Pat_Trank (C_Item)
 {
-	name 				=	"Paket voller Tränke";
+	name 				=	"Pakiet pelen eliksirów";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;
@@ -89,7 +89,7 @@ INSTANCE ItMi_Pat_Trank (C_Item)
 
 INSTANCE ItMi_Pat_Nahrung (C_Item)
 {
-	name 				=	"Paket mit Nahrung";
+	name 				=	"Pakowanie z zywnoscia";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION |ITEM_MULTI;

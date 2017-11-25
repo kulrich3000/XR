@@ -1,7 +1,7 @@
 instance Mod_7805_BlutkultKrieger_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Blutkult-Krieger";
+	name 		=		"wojownik kultywator krwi";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_STRF;
 	level 		=		60;

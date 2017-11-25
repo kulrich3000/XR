@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Darrion_Hi_Condition()
 
 FUNC VOID Info_Mod_Darrion_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Darrion_Hi_11_00"); //Willkommen in meiner Schmiede.
-	AI_Output(self, hero, "Info_Mod_Darrion_Hi_11_01"); //Wenn du ein Schwert brauchst, kannst du es bei mir bekommen.
+	AI_Output(self, hero, "Info_Mod_Darrion_Hi_11_00"); //Witam w mojej kuzni.
+	AI_Output(self, hero, "Info_Mod_Darrion_Hi_11_01"); //Jesli potrzebujesz miecza, mozesz go ode mnie zdobyc.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PSICAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Darrion verkauft Waffen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Darrion sprzedaje bron.");
 };
 
 INSTANCE Info_Mod_Darrion_Urs (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Darrion_Urs (C_INFO)
 	information	= Info_Mod_Darrion_Urs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schmied, hier dein gesegneter Stahl.";
+	description	= "Kowal, oto Twoja blogoslawiona stal.";
 };
 
 FUNC INT Info_Mod_Darrion_Urs_Condition()
@@ -45,13 +45,13 @@ FUNC INT Info_Mod_Darrion_Urs_Condition()
 
 FUNC VOID Info_Mod_Darrion_Urs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Urs_15_00"); //Schmied, hier dein gesegneter Stahl.
+	AI_Output(hero, self, "Info_Mod_Darrion_Urs_15_00"); //Kowal, oto Twoja blogoslawiona stal.
 
 	B_GiveInvItems	(hero, self, ItMi_ErzpaketDarrion, 1);
 
 	Npc_RemoveInvItems	(self, ItMi_ErzpaketDarrion, 1);
 
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_01"); //(skeptisch) Wirklich? Na, das will ich erst mal die Probe stellen.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_01"); //Sceptycznie) Naprawde? Cóz, spróbuje to najpierw.
 
 	AI_UseMob	(self, "FIRE", 1);
 
@@ -82,15 +82,15 @@ FUNC VOID Info_Mod_Darrion_Urs_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_02"); //So die Klinge wäre dann schon mal geschafft. Ich bringe sie jetzt Gor Na Ran.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_03"); //Er soll sie an den besessenen Pflanzen ausprobieren, die Zurzeit wie Unkraut aus dem Boden schießen.
-	AI_Output(hero, self, "Info_Mod_Darrion_Urs_15_04"); //Besessene Pflanzen?
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_05"); //Nunja, ein kleines Experiment, das außer Kontrolle geriet.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_06"); //Die Baals hatten versucht die Sumpfkrauternte zu steigern, indem sie das Kraut magisch beeinflussten ... mit Zaubern, die Beschwörungen nicht unähnlich sind.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_07"); //Leider nahm das ganze unkontrollierte, dämonische Auswüchse an.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_08"); //Das besessene Kraut ist äußerst aggressiv und hartnäckig. Kaum hat man mit Mühe eine Pflanze erledigt, schießt schon wo anders eine neue empor.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_09"); //Sollte der Stahl tatsächlich die Fähigkeit in sich bergen, Dämonisches zu bannen, wird er den Templern ihre Aufgabe um einiges erleichtern.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_10"); //Und nun folge mir.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_02"); //Wiec ostrze bedzie zrobione. Zabieram go teraz do Gor Na Ran.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_03"); //Pozwól mu wypróbowac je na obsesyjnych roslinach, które obecnie strzelaja z ziemi jak chwasty.
+	AI_Output(hero, self, "Info_Mod_Darrion_Urs_15_04"); //Posiadane rosliny?
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_05"); //Cóz, maly eksperyment, który wyszedl z reki.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_06"); //Baals próbowal zwiekszyc zniwa bagna poprzez magiczne oddzialywanie na ziolo..... z zakleciami rózniacymi sie od zaklec.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_07"); //Niestety, cala rzecz zabrala niekontrolowane, demoniczne ekscesy.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_08"); //Posiadane ziele jest niezwykle agresywne i trwale. Jak tylko z trudem skonczysz zaklad, zaczynasz strzelac do nowego zakladu gdzie indziej.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_09"); //Jezeli stal rzeczywiscie bedzie miala mozliwosc zakazania demonicznych sil, znacznie ulatwi to zadanie templariuszy.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs_11_10"); //Teraz podazaj za mna.
 
 	AI_StopProcessInfos	(self);
 
@@ -117,29 +117,29 @@ FUNC INT Info_Mod_Darrion_Urs2_Condition()
 
 FUNC VOID Info_Mod_Darrion_Urs2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_00"); //Gut, diese beeindruckende Demonstration des Stahles soll mir genügen. Er ist jeden Krautstängel in diesem Paket hier Wert.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_00"); //Cóz, ta imponujaca demonstracja stali jest dla mnie wystarczajaca. W tym pakiecie oplaca sie kazdy galazka kapusty.
 
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_01"); //Ach, nimm diese Stängel hier noch als Bonus ... was zu rauchen für unterwegs.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_01"); //Ach, wezcie te lodygi tutaj jako bonus.... po drodze.
 
 	CreateInvItems	(hero, ItMi_Addon_Joint_02, 3);
 	CreateInvItems	(hero, ItMi_Traumruf, 3);
 
-	B_ShowGivenThings	("3 Schwarzer Weiser und 3 Traumruf erhalten");
+	B_ShowGivenThings	("3 Czarni Medrcy i 3 Marzenia Otrzymane Wezwanie");
 
-	AI_Output(hero, self, "Info_Mod_Darrion_Urs2_15_02"); //Danke. Ich hoffe, ihr habt etwas aus der Sache gelernt.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_03"); //Selbstverständlich. So was machen wir nie wieder. Es muss bessere Wege geben, die Krauternte zu steigern.
-	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_04"); //Einige unserer Jungs sind gerade auf ganz Khorinis unterwegs und erproben das Wachstum der Pflanzen auf magisch beeinflussten Böden.
+	AI_Output(hero, self, "Info_Mod_Darrion_Urs2_15_02"); //Dzieki. Mam nadzieje, ze czegos sie z tego nauczyles.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_03"); //Oczywiscie oczywiscie. Nigdy juz tego nie zrobimy. Musza istniec lepsze sposoby na zwiekszenie zbiorów ziól.
+	AI_Output(self, hero, "Info_Mod_Darrion_Urs2_11_04"); //Niektórzy z naszych chlopców sa obecnie na drodze w calym Khorinis i testuja wzrost roslin na glebach pod wplywem magicznych wplywów.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Darrion_Urs2_15_05"); //(zu sich selbst) Na ja, so meinte ich das eigentlich nicht. Aber was soll’s.
+	AI_Output(hero, self, "Info_Mod_Darrion_Urs2_15_05"); //(wlasnie do siebie) No cóz, to nie jest dokladnie to, co mialem na mysli. Ale co to za pieklo.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_URS_HUND, "So, das Krautpaket aus dem Sumpflager hätte ich.");
+	B_LogEntry	(TOPIC_MOD_URS_HUND, "No cóz, mam paczke chwastów z obozu bagiennego.");
 
 	AI_StopProcessInfos	(self);
 
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Darrion_Hueterklinge (C_INFO)
 	information	= Info_Mod_Darrion_Hueterklinge_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schmiede mir eine Hüterklinge!";
+	description	= "Zrób mi ostrze straznika!";
 };
 
 FUNC INT Info_Mod_Darrion_Hueterklinge_Condition()
@@ -168,8 +168,8 @@ FUNC INT Info_Mod_Darrion_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_Darrion_Hueterklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Hueterklinge_15_00"); //Schmiede mir eine Hüterklinge!
-	AI_Output(self, hero, "Info_Mod_Darrion_Hueterklinge_13_01"); //Hast du alle Zutaten?
+	AI_Output(hero, self, "Info_Mod_Darrion_Hueterklinge_15_00"); //Zrób mi ostrze straznika!
+	AI_Output(self, hero, "Info_Mod_Darrion_Hueterklinge_13_01"); //Masz wszystkie skladniki?
 
 	Info_ClearChoices	(Info_Mod_Darrion_Hueterklinge);
 
@@ -182,14 +182,14 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_Info()
 		&& (Npc_HasItems(hero, ItMw_1H_VLK_Dagger) >= 1)
 		&& (Npc_HasItems(hero, ItFo_MuttonRaw) >= 1)
 		{
-			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(falsche Zutaten geben)", Info_Mod_Darrion_Hueterklinge_B2);
+			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(wybrac niewlasciwe skladniki)", Info_Mod_Darrion_Hueterklinge_B2);
 		};
 		if (Npc_HasItems(hero, ItMi_Nugget) >= 8)
 		&& (Npc_HasItems(hero, ItPl_Health_Herb_01_Reisfresser) >= 6)
 		&& (Npc_HasItems(hero, ItMw_1H_VLK_Dagger_Blut) >= 1)
 		&& (Npc_HasItems(hero, ItFo_MuttonRaw_Scav) >= 1)
 		{
-			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(richtige Zutaten geben)", Info_Mod_Darrion_Hueterklinge_A2);
+			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(dodac wlasciwe skladniki)", Info_Mod_Darrion_Hueterklinge_A2);
 		};
 	}
 	else
@@ -199,14 +199,14 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_Info()
 		&& (Npc_HasItems(hero, ItAt_SkeletonBone) >= 1)
 		&& (Npc_HasItems(hero, ItAt_Teeth) >= 1)
 		{
-			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(falsche Zutaten geben)", Info_Mod_Darrion_Hueterklinge_B1);
+			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(wybrac niewlasciwe skladniki)", Info_Mod_Darrion_Hueterklinge_B1);
 		};
 		if (Npc_HasItems(hero, ItMi_Nugget) >= 4)
 		&& (Npc_HasItems(hero, ItMi_Orkstatuette_Stonehenge) >= 1)
 		&& (Npc_HasItems(hero, ItAt_SkeletonBone_Herrscher) >= 1)
 		&& (Npc_HasItems(hero, ItAt_Teeth_Wolf) >= 1)
 		{
-			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(richtige Zutaten geben)", Info_Mod_Darrion_Hueterklinge_A1);
+			Info_AddChoice	(Info_Mod_Darrion_Hueterklinge, "(dodac wlasciwe skladniki)", Info_Mod_Darrion_Hueterklinge_A1);
 		};
 	};
 };
@@ -254,7 +254,7 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_B2()
 
 	B_GiveInvItems	(self, hero, ItMw_FalscheHueterklinge_2H, 1);
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich habe mir von Darrion eine falsche Hüterklinge schmieden lassen. Ich sollte jetzt mal bei Cor Angar vorstellig werden.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Mialem Darrion sfalszowac falszywe ostrze straznika dla mnie. Mam pójsc do Cor Angar i przedstawic sie.");
 
 	Mod_TPL_Hueterklinge = 2;
 
@@ -299,7 +299,7 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_A2()
 
 	B_GiveInvItems	(self, hero, ItMw_Hueterklinge_2H, 1);
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich habe mir von Darrion eine Hüterklinge schmieden lassen. Ich sollte jetzt mal bei Cor Angar vorstellig werden.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Darrion podrobil mi ostrze straznika. Mam pójsc do Cor Angar i przedstawic sie.");
 
 	Mod_TPL_Hueterklinge = 3;
 
@@ -344,7 +344,7 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_B1()
 
 	B_GiveInvItems	(self, hero, ItMw_FalscheHueterklinge_1H, 1);
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich habe mir von Darrion eine falsche Hüterklinge schmieden lassen. Ich sollte jetzt mal bei Cor Angar vorstellig werden.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Mialem Darrion sfalszowac falszywe ostrze straznika dla mnie. Mam pójsc do Cor Angar i przedstawic sie.");
 
 	Mod_TPL_Hueterklinge = 2;
 
@@ -389,7 +389,7 @@ FUNC VOID Info_Mod_Darrion_Hueterklinge_A1()
 
 	B_GiveInvItems	(self, hero, ItMw_Hueterklinge_1H, 1);
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Ich habe mir von Darrion eine Hüterklinge schmieden lassen. Ich sollte jetzt mal bei Cor Angar vorstellig werden.");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Darrion podrobil mi ostrze straznika. Mam pójsc do Cor Angar i przedstawic sie.");
 
 	Mod_TPL_Hueterklinge = 3;
 
@@ -404,7 +404,7 @@ INSTANCE Info_Mod_Darrion_Sumpfmensch (C_INFO)
 	information	= Info_Mod_Darrion_Sumpfmensch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fortuno hat mir erzählt, du hast den heulenden Sumpfmenschen gesehen.";
+	description	= "Fortuno powiedzial mi, ze zobaczyliscie wydzielajace sie bagna.";
 };
 
 FUNC INT Info_Mod_Darrion_Sumpfmensch_Condition()
@@ -417,13 +417,13 @@ FUNC INT Info_Mod_Darrion_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_15_00"); //Fortuno hat mir erzählt, du hast den heulenden Sumpfmenschen gesehen.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_01"); //Ja, das habe ich, und es hätte mich beinahe das Leben gekostet! Ich weiß nicht, welchem Gott ich danken soll, aber dass ich noch lebe grenzt an ein Wunder.
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_15_02"); //Wo hast du ihn getroffen?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_03"); //Tief im Sumpf. Ich habe dort früher spezielles Sumpfkraut gepflanzt, das an den Randgebieten einfach nicht gedeiht.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_04"); //Als ich vor einigen Wochen dort nach dem Rechten sehen wollte, stand plötzlich diese Kreatur vor mir. Ich hab mir fast in die Hosen geschissen!
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_05"); //Da hab sogar ich alter Seebär mich gefühlt, wie ein kleines Mädchen!
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_06"); //Ich  hab's den andren gesagt und ich sag's dir: Wenn du diesem Monster jemals begegnen solltest, nimm die Beine in die Hand und renn!
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_15_00"); //Fortuno powiedzial mi, ze zobaczyliscie wydzielajace sie bagna.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_01"); //Tak, zrobilem, a kosztowalo mnie to prawie cale moje zycie! Nie wiem, któremu Bogu dziekuje, ale to, ze wciaz zyje, graniczy z cudem.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_15_02"); //Gdzie go spotkales/as?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_03"); //Gleboko w bagnie. Kiedys uprawialem tam specjalne chwasty torfowiskowe, które po prostu nie rozwijaja sie na obszarach peryferyjnych.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_04"); //Kilka tygodni temu, kiedy chcialem zobaczyc, co tam bylo, to stworzenie nagle stanelo przed mna. Prawie grzebie moje spodnie!
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_05"); //Nawet czulem sie jak dziewczynka!
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_11_06"); //Powiedzialem innym i powiem wam:"Jesli kiedykolwiek natkniesz sie na tego potwora, wlóz nogi do dloni i biegnij!
 
 	B_StartOtherRoutine	(Mod_951_PSINOV_Fortuno_MT, "START");
 	B_StartOtherRoutine	(Mod_1339_PSINOV_Novize_MT, "START");
@@ -434,25 +434,25 @@ FUNC VOID Info_Mod_Darrion_Sumpfmensch_Info()
 
 	Info_ClearChoices	(Info_Mod_Darrion_Sumpfmensch);
 
-	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Wo im Sumpf hast du dein Sumpfkraut gefplanzt?", Info_Mod_Darrion_Sumpfmensch_C);
-	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Du bist früher zur See gefahren?", Info_Mod_Darrion_Sumpfmensch_B);
-	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Was für spezielles Sumpfkraut hast du da gepflanzt?", Info_Mod_Darrion_Sumpfmensch_A);
+	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Gdzie w bagnie zasadziles swoje bagienne chwasty?", Info_Mod_Darrion_Sumpfmensch_C);
+	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Poszedles na morze wczesniej?", Info_Mod_Darrion_Sumpfmensch_B);
+	Info_AddChoice	(Info_Mod_Darrion_Sumpfmensch, "Jakie specjalne torfowisko zasadziles tam?", Info_Mod_Darrion_Sumpfmensch_A);
 };
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch_C()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_C_15_00"); //Wo im Sumpf hast du dein Sumpfkraut gefplanzt?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_C_11_01"); //Irgendwo weit drinnen, aber komm ja nicht auf die Idee da zu suchen, Junge, ich sag's nochmals: das Wesen ist gefährlich, das reißt dir den Arsch auf!
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_C_15_00"); //Gdzie w bagnie zasadziles swoje bagienne chwasty?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_C_11_01"); //Gdzies daleko w srodku, ale nie wpadam na pomysl szukania tego, chlopiec, powiem jeszcze raz: stworzenie jest niebezpieczne, to gonna rozerwac tylek!
 };
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch_B()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_B_15_00"); //Du bist früher zur See gefahren?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_01"); //Ich war früher Pirat, Junge! Und was für einer!
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_B_15_02"); //Warum hast du die Piraten verlassen?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_03"); //Ach, ich hatte das Piratendasein satt, Junge.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_04"); //Und hier? Hier stampf ich tagsüber etwas Kraut, damit die Muskeln nicht rosten, rauch ein bisschen Sumpfkraut und lass mir den restlichen Tag die Sonne auf den Bauch scheinen.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_05"); //Und jetzt lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_B_15_00"); //Poszedles na morze wczesniej?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_01"); //Kiedys bylem piratem, chlopcem! I co za facet!
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_B_15_02"); //Dlaczego opusciles piratów?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_03"); //Bylem zmeczony, ze jestem piratem, chlopcem.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_04"); //A tu? W tym miejscu w ciagu dnia troche sie rozbijam, zeby moje miesnie nie zardzewialy, nie palily troche ziól bagiennych, a slonce swiecilo na brzuchu przez reszte dnia.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_B_11_05"); //Teraz zostaw mnie sam na sam.
 
 	Info_ClearChoices	(Info_Mod_Darrion_Sumpfmensch);
 
@@ -463,9 +463,9 @@ FUNC VOID Info_Mod_Darrion_Sumpfmensch_B()
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_A_15_00"); //Was für spezielles Sumpfkraut hast du da gepflanzt?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_A_11_01"); //Das war ganz was Feines, das hab ich aus dem großen Sumpf der ein bisschen von der Piratenbucht entfernt liegt ausgegraben und mitgebracht.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_A_11_02"); //Musste ein paar ziemlich hässliche Viecher umhaun' um da dran zu kommen.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch_A_15_00"); //Jakie specjalne torfowisko zasadziles tam?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_A_11_01"); //To bylo bardzo ladne, wykopalem ja z duzego bagna, które jest nieco oddalone od zatoki piratów i przywiozlem ja ze mna.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch_A_11_02"); //Musial straszyc kilka brzydkich bestii, aby dostac sie do niego.
 };
 
 INSTANCE Info_Mod_Darrion_Sumpfmensch2 (C_INFO)
@@ -490,14 +490,14 @@ FUNC VOID Info_Mod_Darrion_Sumpfmensch2_Info()
 {
 	AI_TurnAway(self, hero);
 	
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_00"); //(zu sich selbst) Kann es sein, dass er...? Nein nein nein, vollkommen ausgeschlossen, ganz unmöglich!!! Er würde nie... aber was wenn doch? Kann es sein, dass er...?
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch2_15_01"); //Warum so nervös?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_00"); //(jemu samemu) Czy moze to byc to, ze on....? Nie moze byc absolutnie niemozliwe! On nigdy nie chcialby Ale co jesli tak jest? Czy moze byc tak, ze on....?
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch2_15_01"); //Dlaczego tak zdenerwowany?
 	
 	AI_TurnToNpc(self, hero);
 	
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_02"); //Was?! Achso, äh... nervös? Wie kommst du den darauf? (Gezwungenes Lachen)
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch2_15_03"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_04"); //Was los ist? Was soll los sein? (Gezwungenes Lachen) Garnichts, garnichts, aber mir fällt gerade ein, dass ich den Tee noch am Feuer stehen habe, ich sollte mich besser beeilen!
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_02"); //Co? Cóz, uh...... denerwujacy? Co sprawia, ze myslisz o tym? wymuszony smiech
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch2_15_03"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch2_11_04"); //Co sie dzieje? Co sie dzieje? (Wymuszony smiech) Nic, nic, nic, ale po prostu pamietam, ze wciaz mam herbate pod ogniem, lepiej sie spiesze!
 	
 	AI_StopProcessInfos(self);
 
@@ -512,7 +512,7 @@ INSTANCE Info_Mod_Darrion_Sumpfmensch3 (C_INFO)
 	information	= Info_Mod_Darrion_Sumpfmensch3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na. Ausgeschlafen?";
+	description	= "Na, j. j. Spózniona?";
 };
 
 FUNC INT Info_Mod_Darrion_Sumpfmensch3_Condition()
@@ -525,26 +525,26 @@ FUNC INT Info_Mod_Darrion_Sumpfmensch3_Condition()
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_00"); //Na. Ausgeschlafen?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_01"); //Ich habe gehört, du warst bei den Piraten...
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_02"); //Ja. Und bei denen habe ich so einige interessante Sachen erfahren.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_03"); //Da ich meinen alten Schlüssel nirgendwo mehr finde, hast du wohl ziemlich viel erfahren, wie?
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_04"); //Genug auf jeden Fall. Ich weiß, dass du nur hierhergekommen bist, um einen guten Platz für dein Kraut zu finden.
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_05"); //Und ich vermute mal, die Blätter auf die du es abgesehen hast waren nicht das einzige, das aus der Pflanze gewachsen ist, stimmt's?
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_06"); //(seufzt tief) Ja, du hast Recht. Der heulende Sumpfmensch ist in Wirklichkeit ein Sumpfgolem. Er ist an der Pflanze getrieben.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_07"); //Zuerst habe ich ihn nur für eine seltsame Wurzel gehalten, irgendwann stand plötzlich der kleine Golem vor mir und sah mich mit großen, angsterfüllten Augen an.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_08"); //Ich weiß, ich hätte das Biest direkt abschlachten sollen, aber ich hab's nicht über mein salzwassergetränktes Herz gebracht.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_09"); //Ich hab den Kleinen laufen lassen, aber er ist mir im Sumpf nicht mehr von der Seite gewichen. Irgendwann hab ich mich damit abgefunden.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_10"); //Es mag seltsam klingen, aber wir haben wohl so etwas wie Freundschaft geschlossen.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_11"); //Ich wusste, dass die Templer diesen Golem bei erstem Kontakt niedermetzeln würden, also habe ich allen die Geschichte vom heulenden Sumpfmenschen erzählt, um sie vom Sumpf fern zu halten.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_12"); //Aber dann hat er plötzlich begonnen, Leute anzugreifen. Als ich in den Sumpf wollte, um zu sehen was mit ihm los ist, hat er mich einfach umgehauen... und wie ich gehört habe, hast du dann das gleiche mit ihm gemacht.
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_13"); //Da wär ich mir nicht sicher. Ich war auch bei dem Eremiten, der dir das Buch übersetzt hat.
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_14"); //Er hat mich gebeten, dir mitzuteilen, dass die Pflanze in irgendeinem Zusammenhang mit fünf Sumpfriesen stehen soll.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_15"); //Du glaubst... das heißt... das heißt es gibt mehr Golems als nur meinen?!
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_16"); //Genau das wird es wohl heißen. Und vermutlich waren es die anderen vier, die die Leute und dich angegriffen haben.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_17"); //Fünf Sumpfriesen... einen davon hast du schon platt gemacht und einer ist harmlos. Dann bleiben noch drei Stück übrig. Die werd' ich erledigen!
-	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_18"); //Ich komme mit dir.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_19"); //Ich schulde dir was.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_00"); //Na, j. j. Spózniona?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_01"); //Slyszalem, jak byles z piratami....
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_02"); //Tak. Nauczylem sie od nich kilku ciekawych rzeczy.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_03"); //Poniewaz nigdzie indziej nie moge znalezc mojego starego klucza, przypuszczam, ze wiele sie nauczyles, czy masz?
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_04"); //W kazdym razie wystarczy. Wiem, ze przyjechales tutaj tylko po to, aby znalezc dobre miejsce dla Twojego ziola.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_05"); //I przypuszczam, ze lisci, które byles po tym, jak nie byly jedynym, który wyrósl z rosliny, czy one?
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_06"); //Tak, masz racje. Bagnogolem jest wlasciwie golemem bagiennym. Kieruje nim fabryka.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_07"); //Poczatkowo myslalem, ze to tylko dziwny korzen, ale w pewnym momencie golem stal przed mna i patrzyl na mnie duzymi, bojazliwymi oczami.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_08"); //Wiem, ze powinienem byl bezposrednio zabic bestie, ale nie polozylem jej nad moim sercem nasyconym slona woda.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_09"); //Puscilem chlopaka, ale nie odszedl ode mnie w bagnie. Ostatecznie sie z tym pogodzilem.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_10"); //Moze to wydawac sie dziwne, ale mysle, ze nawiazalismy jakas przyjazn.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_11"); //Wiedzialam, ze templariusze zabijaja tego Golema przy pierwszym kontakcie, wiec opowiedzialam im cala historie wylewania ludzi z bagna, aby ich trzymac z dala od bagna.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_12"); //Ale potem nagle zaczal atakowac ludzi. Kiedy chcialem isc na bagno, zeby zobaczyc, co sie z nim dzieje, po prostu mnie przewrócil..... i slysze, ze pan zrobil to samo.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_13"); //Nie bylbym tego pewien. Bylem tez z pustelnikiem, który tlumaczyl ci ksiazke.
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_14"); //Poprosil mnie, abym powiedzial, ze roslina powinna byc w jakis sposób zwiazana z piecioma gigantami bagiennymi.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_15"); //Wierzysz, ze.... co oznacza...... Czyli jest wiecej golemów niz tylko moje?
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_16"); //To wlasnie ma to oznaczac. I to chyba ci czterej, którzy zaatakowali ludzi i ciebie.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_17"); //Piec olbrzymiów bagiennych.... jeden z nich juz sie splaszczyles i jeden z nich jest nieszkodliwy. Pozostaly trzy kawalki. Dostane je!
+	AI_Output(hero, self, "Info_Mod_Darrion_Sumpfmensch3_15_18"); //Przychodze z wami.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch3_11_19"); //Jestem Panstwu to winien.
 	
 	AI_StopProcessInfos(self);
 
@@ -575,8 +575,8 @@ FUNC INT Info_Mod_Darrion_Sumpfmensch4_Condition()
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch4_11_00"); //Das hier ist die Pflanze. Wir sollten uns wohl trennen. Geh du weiter geradeaus, ich werde die Umgebung hier erkunden.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch4_11_01"); //Ist gut.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch4_11_00"); //Jest to roslina. Byc moze powinnismy sie rozpasc. Pójdziesz prosto, poznam okolice.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch4_11_01"); //Wszystkie sluszne, wszystkie sluszne.
 	
 	AI_StopProcessInfos(self);
 	
@@ -603,8 +603,8 @@ FUNC INT Info_Mod_Darrion_Sumpfmensch5_Condition()
 
 FUNC VOID Info_Mod_Darrion_Sumpfmensch5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch5_11_00"); //Danke. ich stehe tief in deiner Schuld. (Roger heult) Darrion lacht. Ja und Roger natürlich auch.
-	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch5_11_01"); //Hier. Es ist nicht viel, aber lass es mich dir zum Zeichen meiner Dankbarkeit geben. Es ist der Tabak aus dem letzten Blatt der Golempflanze. Vielleicht kannst du ja was damit anfangen.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch5_11_00"); //Dzieki. Jestem Wam gleboko zawdzieczam. (Roger howls) Darrion smieje sie. Tak, i oczywiscie Roger.
+	AI_Output(self, hero, "Info_Mod_Darrion_Sumpfmensch5_11_01"); //Tutaj. Nie jest wiele, ale prosze pozwolic mi dac ci to jako wyraz mojej wdziecznosci. Jest to tyton z ostatniego liscia rosliny Golem. Moze mozna cos z tym zrobic.
 	
 	B_GiveInvItems(self, hero, ItMi_SumpfTabak, 1);
 	

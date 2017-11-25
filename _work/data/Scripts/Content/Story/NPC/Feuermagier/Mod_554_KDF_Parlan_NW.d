@@ -1,7 +1,7 @@
 INSTANCE Mod_554_KDF_Parlan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Parlan";
+	name 		= "parlan";
 	guild 		= GIL_VLK;
 	id 		= 554;
 	voice 		= 5;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatHaendler01_Hi (C_INFO)
 	information	= Info_Mod_HofstaatHaendler01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gehört dieser Laden dir?";
+	description	= "Czy to jest Twoje miejsce?";
 };
 
 FUNC INT Info_Mod_HofstaatHaendler01_Hi_Condition()
@@ -20,9 +20,9 @@ FUNC INT Info_Mod_HofstaatHaendler01_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatHaendler01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_00"); //Gehört dieser Laden dir?
-	AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_01"); //Ja.
-	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_02"); //Gib ihn mir.
+	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_00"); //Czy to jest Twoje miejsce?
+	AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_01"); //Tak.
+	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_02"); //Daj mi ja.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
@@ -36,11 +36,11 @@ FUNC VOID Info_Mod_HofstaatHaendler01_Hi_Info()
 
 		Mod_HS_DarfZuKing = 1;
 
-		B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Ich habe jetzt das Haus eines Händlers. Ich sollte nun am Türsteher vorbei kommen.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Teraz mam dom handlowca. Mialam przejsc obok bouncera.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_04"); //Nein, lieber nicht.
+		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_04"); //Nie, raczej nie.
 	};
 };
 

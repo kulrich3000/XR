@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Ghorim_Hi_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ghorim_Hi_02_00"); //Du lebst noch? Danke nochmal, dass du mir damals geholfen hast.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Hi_02_00"); //Ty wciaz zyjesz? Jeszcze raz dziekuje za pomoc w powrocie.
 };
 
 INSTANCE Info_Mod_Ghorim_Sumpfmensch (C_INFO)
@@ -41,17 +41,17 @@ FUNC INT Info_Mod_Ghorim_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ghorim_Sumpfmensch_02_00"); //Pssst. Es geht gleich los! Willst du dich auch setzen?
+	AI_Output(self, hero, "Info_Mod_Ghorim_Sumpfmensch_02_00"); //Shh. Shh. To juz zaczynamy! Chcesz tez usiasc?
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
-	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Nein.", Info_Mod_Ghorim_Sumpfmensch_B);
-	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Ja.", Info_Mod_Ghorim_Sumpfmensch_A);
+	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Nie.", Info_Mod_Ghorim_Sumpfmensch_B);
+	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Tak.", Info_Mod_Ghorim_Sumpfmensch_A);
 };
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_B_15_00"); //Nein.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_B_15_00"); //Nie.
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
@@ -60,7 +60,7 @@ FUNC VOID Info_Mod_Ghorim_Sumpfmensch_B()
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_A_15_00"); //Ja.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Sumpfmensch_A_15_00"); //Tak.
 
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Ghorim_Woher (C_INFO)
 	information	= Info_Mod_Ghorim_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie kommst du eigentlich in dieses Lager?";
+	description	= "Jak dostales sie do tego obozu?";
 };
 
 FUNC INT Info_Mod_Ghorim_Woher_Condition()
@@ -88,10 +88,10 @@ FUNC INT Info_Mod_Ghorim_Woher_Condition()
 
 FUNC VOID Info_Mod_Ghorim_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ghorim_Woher_15_00"); //Wie kommst du eigentlich in dieses Lager?
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_01"); //Nachdem ich in Khorinis erfolglos mein Wirtshaus geführt habe, musste ich wegen Goldmangel den Wein mit Wasser verdünnen.
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_02"); //Als das rauskam haben sie mich in die Kolonie geworfen.
-	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_03"); //Ich war erst Buddler, hab mich dann aber doch der Bruderschaft angeschlossen, da das Leben hier wesentlich angenehmer ist.
+	AI_Output(hero, self, "Info_Mod_Ghorim_Woher_15_00"); //Jak dostales sie do tego obozu?
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_01"); //Po tym jak bezskutecznie prowadzilem swoja karczme w Khorinis, musialem rozrzedzic wino woda z powodu braku zlota.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_02"); //Kiedy to wyszlo, rzucili mnie w kolonie.
+	AI_Output(self, hero, "Info_Mod_Ghorim_Woher_02_03"); //Bylam najpierw Buddlerka, ale potem dolaczylam do Bractwa, bo zycie tutaj jest duzo przyjemniejsze.
 };
 
 INSTANCE Info_Mod_Ghorim_Pickpocket (C_INFO)

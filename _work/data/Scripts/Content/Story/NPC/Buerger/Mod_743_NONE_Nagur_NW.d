@@ -1,7 +1,7 @@
 instance Mod_743_NONE_Nagur_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nagur"; 
+	name 		= "Nagier"; 
 	guild 		= GIL_OUT;
 	id 			= 743;
 	voice 		= 37;

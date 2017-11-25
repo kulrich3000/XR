@@ -1,7 +1,7 @@
 INSTANCE Mod_7124_ASS_Anwaerter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Anwärter"; 
+	name 		= "aspirant"; 
 	guild 		= GIL_OUT;
 	id 			= 7124;
 	voice 		= 13;

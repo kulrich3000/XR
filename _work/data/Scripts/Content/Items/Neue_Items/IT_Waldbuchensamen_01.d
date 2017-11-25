@@ -1,6 +1,6 @@
 instance ItFo_Plants_Bloodwood_01 (C_ITEM)
 {	
-	name 					=	"Waldbuchensamen";
+	name 					=	"Nasiona buka lesnego";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MULTI;	
@@ -27,7 +27,7 @@ instance ItFo_Plants_Bloodwood_01 (C_ITEM)
 		
 instance ItMi_SojaSchote (C_ITEM)
 {	
-	name 					=	"So-Ja-Schote";
+	name 					=	"To Tak Tak Tak Tak";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MULTI;	

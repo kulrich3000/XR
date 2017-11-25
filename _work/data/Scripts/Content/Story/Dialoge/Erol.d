@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Erol_Haendler (C_INFO)
 	information	= Info_Mod_Erol_Haendler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier steht ja alles voll mit Krimskrams.";
+	description	= "To miejsce jest pelne szalenstwa.";
 };
 
 FUNC INT Info_Mod_Erol_Haendler_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Erol_Haendler_Condition()
 
 FUNC VOID Info_Mod_Erol_Haendler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Haendler_15_00"); //Hier steht ja alles voll mit Krimskrams.
-	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_01"); //Ja, da sammelt sich im Laufe des Lebens einiges an.
-	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_02"); //Sind ein paar echte Antiquitäten dabei.
-	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_03"); //Willst du vielleicht was davon kaufen?
+	AI_Output(hero, self, "Info_Mod_Erol_Haendler_15_00"); //To miejsce jest pelne szalenstwa.
+	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_01"); //Tak, dzieje sie duzo w ciagu zycia.
+	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_02"); //Kilka prawdziwych antyków.
+	AI_Output(self, hero, "Info_Mod_Erol_Haendler_10_03"); //Chcesz to kupic?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OHNELAGER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_OHNELAGER, "Der Händler Erol verkauft Antiquitäten.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_OHNELAGER, "Dealer Erol sprzedaje antyki.");
 };
 
 INSTANCE Info_Mod_Erol_DunklerPilger (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Erol_DunklerPilger (C_INFO)
 	information	= Info_Mod_Erol_DunklerPilger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du zufällig in letzter Zeit einen dunklen Pilger gesehen?";
+	description	= "Widziales ostatnio mrocznego pielgrzyma, przez jakakolwiek szanse?";
 };
 
 FUNC INT Info_Mod_Erol_DunklerPilger_Condition()
@@ -47,12 +47,12 @@ FUNC INT Info_Mod_Erol_DunklerPilger_Condition()
 
 FUNC VOID Info_Mod_Erol_DunklerPilger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_DunklerPilger_15_00"); //Hast du zufällig in letzter Zeit einen dunklen Pilger vorbeikommen sehen?
-	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_01"); //(überrascht) Ja, allerdings. Dass du jetzt danach fragst ... erst vor kurzer Zeit.
-	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_02"); //Ich hatte gerade im Halbschlaf gedöst, als plötzlich dunkle Visionen, erschreckende Bilder meinem Geist heimsuchten, mich aus Schlaf rissen.
-	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_03"); //Ich könnte nicht mehr genau sagen, was es war, aber als ich nach draußen trat, sah ich diese dunkle Gestalt an meiner Hütte vorüberschreiten, plötzlich ihre Richtung ändernd, und im Wald verschwinden, dort, wo der alte Friedhof liegt.
-	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_04"); //Überaus unheimlich ... selbst für einen alten Haudegen wie mich. Es durchzuckt mich jetzt noch, wenn ich daran denke ...
-	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_05"); //Komm doch noch mal vorbei, wenn du den Typ gefunden hast. Vielleicht kannst du mir auch einen Gefallen tun.
+	AI_Output(hero, self, "Info_Mod_Erol_DunklerPilger_15_00"); //Czy ostatnio widziales mrocznego pielgrzyma?
+	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_01"); //(zdziwiony) Tak, rzeczywiscie. Ze pytasz o to teraz.... dopiero niedawno.
+	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_02"); //Kiedy nagle ciemne wizje, przerazajace obrazy nawiedzaly mój umysl, wyrwalem mnie ze snu, po prostu zasnalem w pólspieniu.
+	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_03"); //Nie moglem dokladnie powiedziec, co to bylo, ale kiedy wyszedlem na zewnatrz, zobaczylem te ciemna figure przechodzaca obok chaty, nagle zmieniajac kierunek i znikajac w las, gdzie znajduje sie stary cmentarz.
+	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_04"); //Wyjatkowo pelzanie..... nawet na taki stary konik jak ja. Ciagle mnie okruszy, kiedy mysle o tym.....
+	AI_Output(self, hero, "Info_Mod_Erol_DunklerPilger_10_05"); //Dlaczego nie wrócisz, gdy znajdziesz faceta? Moze mozecie mi zrobic laske.
 
 	B_GivePlayerXP	(100);
 
@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_Erol_DunklerPilger_Info()
 	B_StartOtherRoutine	(Mod_7036_NONE_Pilger_NW, "GRAVEYARD");
 	AI_Teleport	(Mod_7036_NONE_Pilger_NW, "NW_FARM4_WOOD_MONSTER_MORE_03");
 
-	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Ich bin dem Pilger dicht auf den Fersen. Erol - sehr beunruhigt über die Gestalt - hat sie erst vor kurzem in den Wald Richtung Friedhof entschwinden sehen, nur wenige Meter entfernt.");
+	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Mam racje na pietach pielgrzyma. Erol, bardzo zaniepokojony postacia, dopiero niedawno zobaczyla, ze znika w lesie w kierunku cmentarza, zaledwie kilka metrów dalej.");
 };
 
 INSTANCE Info_Mod_Erol_Blutkelch (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Erol_Blutkelch (C_INFO)
 	information	= Info_Mod_Erol_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "He, du.";
+	description	= "Hej, Ty.";
 };
 
 FUNC INT Info_Mod_Erol_Blutkelch_Condition()
@@ -85,27 +85,27 @@ FUNC INT Info_Mod_Erol_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Erol_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_00"); //He, du.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_01"); //Ja, was gibt's?
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_02"); //Du bist meine letzte Rettung. Ich suche dringend einen sogenannten Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_03"); //Ein schönes Teil. Reich verziert und trefflich gearbeitet. Selten so was gesehen.
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_04"); //Dann hast du diesen Kelch?
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_05"); //Hatte, mein Lieber, hatte.
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_06"); //Dann hast du ihn verkauft? An wen?
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_07"); //Nein, nicht verkauft. Eines Abends wurde ich heimtückisch niedergeschlagen und beraubt.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_08"); //Als ich aufwachte, stellte ich fest, dass unter anderem dieser Kelch verschwunden war.
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_09"); //Weißt du, wer das war?
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_10"); //Nein, aber ich habe einen Verdacht. In letzter Zeit schleichen hier nachts vermummte Gestalten durch die Gegend.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_11"); //Einmal konnte ich einen näher beobachten. Hab aber niemanden erkannt. Dunkle Rüstung und Sehschlitze in den Hauben.
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_12"); //Hmm ...
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_13"); //Dann hab ich einmal oben in der Gobblinhöhle ein grünes Licht gesehen.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_00"); //Hej, Ty.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_01"); //Tak, co jest?
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_02"); //Jestes moja ostatecznoscia. Pilnie szukam tak zwanego kubka krwi.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_03"); //Mila praca. Bogato zdobiony i przepiekny. Rzadko sie o tym przekonywali.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_04"); //Wtedy masz ten puchar?
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_05"); //Mój drogi, mialem.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_06"); //Wtedy sprzedales go? Do kogo?
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_07"); //Nie, nie, nie sprzedane. Pewnej nocy zostalem podstepnie przewrócony i okradany.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_08"); //Kiedy sie obudzilem, zdalem sobie sprawe, ze miedzy innymi ten puchar zniknal.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_09"); //Czy wiesz, kim to bylo?
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_10"); //Nie, ale mam przeczucie. Ostatnio w nocy, w nocy, okradaja sie tu zakapturzone figury.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_11"); //Pewnego razu moglem zobaczyc jedna z nich. Nikogo nie rozpoznalem. Ciemne pancerz i szczeliny w kapturach.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_12"); //Hmm.....
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_13"); //Potem zobaczylem zielone swiatlo w jaskini gobblin.
 	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_14"); //Aha!
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_15"); //Du glaubst mir nicht?
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_16"); //Doch, doch. Ich werde der Sache nachgehen. Ich brauche diesen Kelch unbedingt.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_17"); //Und ich hätte gern wenigstens mein goldenes Schwert zurück.
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_18"); //Ich tue, was ich kann. Bis später.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_15"); //Nie uwierzysz mi?
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_16"); //Tak, tak, tak, tak, tak. Zajme sie nim. Naprawde potrzebny mi ten puchar.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch_10_17"); //I chcialbym przynajmniej zwrócic mój zloty miecz.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch_15_18"); //Postaram sie robic, co moge. Do zobaczenia pózniej.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Offensichtlich hat sich einer meiner Brüder schon um den Blutkelch gekümmert, aber er hat den Besitzer nicht erschlagen. Hmm ... ist da vielleicht was faul? Ich muss unbedingt Azhar fragen.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Oczywiscie, jeden z moich braci juz troszczyl sie o kielich krwi, ale nie zabil wlasciciela. Hmm..... jest cos zlego? Musze zapytac Azhar.");
 };
 
 INSTANCE Info_Mod_Erol_Blutkelch2 (C_INFO)
@@ -116,7 +116,7 @@ INSTANCE Info_Mod_Erol_Blutkelch2 (C_INFO)
 	information	= Info_Mod_Erol_Blutkelch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab was für dich.";
+	description	= "Dostalem cos dla Ciebie.";
 };
 
 FUNC INT Info_Mod_Erol_Blutkelch2_Condition()
@@ -130,20 +130,20 @@ FUNC INT Info_Mod_Erol_Blutkelch2_Condition()
 
 FUNC VOID Info_Mod_Erol_Blutkelch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_00"); //Ich hab was für dich.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_01"); //Mein Schwert etwa?
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_02"); //Ja, hier.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_00"); //Dostalem cos dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_01"); //Mój miecz lub co?
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_02"); //Tak, tutaj.
 
 	B_GiveInvItems	(hero, self, ItMw_2H_Eminem_Goldschwert_01_Erol, 1);
 
 	AI_EquipBestMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_03"); //Tausend Dank, Fremder. Das ist mir 1000 Gold wert.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_03"); //Dziekuje bardzo, nieznajomym. Jest to dla mnie warte tysiaca zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_04"); //Dann sind wir beide zufrieden. Mach's gut.
-	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_05"); //Du auch.
+	AI_Output(hero, self, "Info_Mod_Erol_Blutkelch2_15_04"); //Wtedy obaj jestesmy zadowoleni. Teraz nalezy zachowac ostroznosc.
+	AI_Output(self, hero, "Info_Mod_Erol_Blutkelch2_10_05"); //Ty równiez ty.
 
 	B_GivePlayerXP	(250);
 };
@@ -169,18 +169,18 @@ FUNC INT Info_Mod_Erol_Fahrender_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_00"); //Gut, dass wir uns treffen.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_01"); //Wenn du meinst. Was gibt's?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_02"); //Nun, ich habe mir vorgenommen, wieder auf Reisen zu gehen.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_03"); //Die Höfe, Tavernen und Bauern zu beliefern, Aufträge anzunehmen und so.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_04"); //Lohnt sich das denn?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_05"); //Sicher. Hab ich früher schon gemacht.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_06"); //Dann haben mich aber Wegelagerer unter der Brücke überfallen und total ausgeraubt.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_07"); //Und dann hatte ich beschlossen, bei meiner Hütte zu bleiben.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_08"); //Wo du nichts verdienst ...
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_09"); //Genau. Und von nichts kann man nicht leben. Kaum einer hält bei mir und will was. Ich ziehe wieder los.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_10"); //Viel Erfolg: Und pass auf. Die Gegend ist nicht gerade sicherer geworden, seit die Barriere gefallen ist.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_11"); //Das hab ich auch schon gemerkt.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_00"); //Dobrze jest sie z Toba spotkac.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_01"); //Jesli tak powiesz. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_02"); //Cóz, postanowilem ponownie podrózowac.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_03"); //Zaopatrzenie gospodarstw rolnych, tawern i rolników, przyjmowanie zamówien itp.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_04"); //Czy jest to warte?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_05"); //Pewne. Zrobilem to juz wczesniej.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_06"); //Ale wtedy wyczynowcy zaatakowali mnie pod mostem i okradzili.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_07"); //I wtedy postanowilem zostac w kabinie.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_08"); //Gdzie nie zaslugujesz na nic....
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_09"); //Dokladnie. I nie mozna zyc na niczym. Malo kto przychodzi do mnie i czegos chce. Znowu sie ruszam.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender_15_10"); //Dobre szczescie: I uwazajcie. Obszar ten nie stal sie bezpieczniejszy od upadku bariery.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender_10_11"); //Zauwazylem to równiez.
 
 	B_StartOtherRoutine	(self, "FAHRENDER");
 
@@ -195,7 +195,7 @@ INSTANCE Info_Mod_Erol_Fahrender2 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender2_Condition()
@@ -209,16 +209,16 @@ FUNC INT Info_Mod_Erol_Fahrender2_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_00"); //Wie läuft's?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_01"); //Kann nicht klagen. Hab schon einiges Gold im Beutel und einen größeren Auftrag.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_02"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_03"); //Ich hab in der Stadt einen der Feuermagier getroffen.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_04"); //Denen ihre Anführer sind an einem Teil interessiert, das im Minental zu finden sein soll.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_05"); //Nun kenn ich mich da gar nicht aus.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_06"); //Als ich auf die Insel kam, gab's die Barriere schon. Kannst du mir vielleicht helfen?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_07"); //Ich denke schon. Im Hafenviertel ist ein Händler, der Karten verkauft. Der sollte was für dich haben.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_08"); //Danke für den Tip. Ich denke, wir sind quitt.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_09"); //So muss es sein. Viel Erfolg.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_01"); //Nie moze narzekac. Zloto w torebce i wiekszy porzadek.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_02"); //Tak?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_03"); //Spotkalem jednego z magów ognia w miescie.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_04"); //Ci z ich przywódców sa zainteresowani czescia, która mozna znalezc w Minental.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_05"); //Teraz nic o tym nie wiem.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_06"); //Kiedy dotarlem na wyspe, byla bariera. Moze mozesz mi pomóc?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_07"); //Mysle, ze tak, tak. Na nabrzezu znajduje sie sklep sprzedajacy bilety. Powinien miec cos dla siebie.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender2_10_08"); //Dziekujemy za koncówke. Mysle, ze jestesmy równi.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender2_15_09"); //Tak musi byc. Powodzenia.
 
 	Mod_Erol_Unterwegs_Day = Wld_GetDay();
 };
@@ -231,7 +231,7 @@ INSTANCE Info_Mod_Erol_Fahrender3 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie war's im Minental?";
+	description	= "Jak wygladal Minental?";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender3_Condition()
@@ -245,10 +245,10 @@ FUNC INT Info_Mod_Erol_Fahrender3_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender3_15_00"); //Wie war's im Minental?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_01"); //Wie soll ich das wissen?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_02"); //Dieser Brahim hat mir zwar eine Karte verkauft, aber dann stoppt mich eine Wache der Paladine. Haben mich für Gold und gute Worte nicht durchgelassen.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_03"); //Also bin ich wieder umgekehrt und nun bin ich hier ...
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender3_15_00"); //Jak wygladal Minental?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_01"); //Skad powinienem wiedziec?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_02"); //Ten Brahim sprzedal mi bilet, ale wtedy zatrzymuje mnie straznik Paladyn. Nie pozwoliliby mi przepuscic zlota i dobrych slów.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender3_10_03"); //Wiec wrócilem i teraz jestem tutaj.....
 };
 
 INSTANCE Info_Mod_Erol_Fahrender4 (C_INFO)
@@ -259,7 +259,7 @@ INSTANCE Info_Mod_Erol_Fahrender4 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Pass sollte wieder offen sein.";
+	description	= "Przepustka powinna byc ponownie otwarta.";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender4_Condition()
@@ -273,32 +273,32 @@ FUNC INT Info_Mod_Erol_Fahrender4_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_00"); //Der Pass sollte wieder offen sein. Ich habe für Lord Hagen die Lage gepeilt im Minental und konnte ihn beruhigen.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_01"); //Darauf wollte er die Wache wieder abziehen. Das Sollte mittlerweile geschehen sein. Probier's doch noch mal.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_02"); //(verlegen) Aber ich komme auch mit dieser Karte nicht klar. War ja noch nie dort.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_03"); //Dann gib den Auftrag halt zurück.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_04"); //Schon. Aber vielleicht würdest du ...
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_05"); //Hatte ich mir fast gedacht. Was muss ich dazu wissen?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_06"); //Da soll das Alte Lager sein und da drin eine Kapelle der Feuermagier. Da kann ich mehr erfahren. Du, nicht ich ...
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_00"); //Przepustka powinna byc ponownie otwarta. Sprawdzilem sytuacje w Minentalu dla Lord Hagen i bylem w stanie go uspokoic.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_01"); //Potem próbowal znów pociagnac straznika. To powinno sie stalo do tej pory. Dlaczego nie spróbujesz tego ponownie?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_02"); //Ale nie potrafie równiez poradzic sobie z ta mapa. Nigdy wczesniej tam nie bylo.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_03"); //Nastepnie zwróc zamówienie.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_04"); //Tak jest. Ale moze jednak Ty nie?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_15_05"); //To wlasnie pomyslalem. Co musze wiedziec?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_10_06"); //Tam ma byc Stary Obóz, a tam jest kaplica Strazaków. Moge sie o tym dowiedziec wiecej. Ty, a nie ja......
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender4);
 
-	Info_AddChoice	(Info_Mod_Erol_Fahrender4, "Dazu hab ich keine Zeit. Bin selber in einer wichtigen Sache unterwegs.", Info_Mod_Erol_Fahrender4_B);
-	Info_AddChoice	(Info_Mod_Erol_Fahrender4, "Na gut. Ich schau dann mal. Aber ich machs nicht umsonst.", Info_Mod_Erol_Fahrender4_A);
+	Info_AddChoice	(Info_Mod_Erol_Fahrender4, "Nie mam na to czasu. Jestem sam w waznej sprawie.", Info_Mod_Erol_Fahrender4_B);
+	Info_AddChoice	(Info_Mod_Erol_Fahrender4, "Wszystkie sluszne, wszystkie sluszne. Zobacze. Ale nie robie tego za nic.", Info_Mod_Erol_Fahrender4_A);
 };
 
 FUNC VOID Info_Mod_Erol_Fahrender4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_B_15_00"); //Dazu hab ich keine Zeit. Bin selber in einer wichtigen Sache unterwegs.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_B_10_01"); //Schade. Dann gebe ich die Sache besser wieder zurück.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_B_15_00"); //Nie mam na to czasu. Jestem sam w waznej sprawie.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_B_10_01"); //Zbyt zle. Wtedy lepiej bym ja oddala.
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender4);
 };
 
 FUNC VOID Info_Mod_Erol_Fahrender4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_A_15_00"); //Na gut. Ich schau dann mal. Aber ich machs nicht umsonst.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_A_10_01"); //Es wird dein Schaden nicht sei. Versprochen.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender4_A_15_00"); //Wszystkie sluszne, wszystkie sluszne. Zobacze. Ale nie robie tego za nic.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender4_A_10_01"); //To nie bedzie twoje obrazenia. Obiecuje.
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender4);
 
@@ -306,7 +306,7 @@ FUNC VOID Info_Mod_Erol_Fahrender4_A()
 
 	Log_CreateTopic	(TOPIC_MOD_EROL_FEUERMAGIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EROL_FEUERMAGIER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Ich soll für Erol im Minental ein 'Teil' suchen, an dem die Feuermagier interessiert sind. In der Kapelle der Feuermagier im Alten Lager gibt es nähere Hinweise.");
+	B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Dla Erola w Minentalu musze znalezc 'czesc', która zainteresowani sa strazacy. W kaplicy magików strazy pozarnej na Starym Obozie jest wiecej informacji.");
 };
 
 INSTANCE Info_Mod_Erol_Fahrender5 (C_INFO)
@@ -330,17 +330,17 @@ FUNC INT Info_Mod_Erol_Fahrender5_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_00"); //Und, hast du das Teil gefunden?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_01"); //Gewiss, aber mir ist schleierhaft, wie die Magier dir diesen Auftrag andienen konnten.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_02"); //Du hättest es niemals gefunden, selbst wenn du im Minental gewesen wärst.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_00"); //Czy znalazles to, co znalazles?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_01"); //Oczywiscie, ale dla mnie tajemnica jest to, jak magicy mogli dac ci te misje.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_02"); //Nigdy by tego nie znalazles, nawet gdybys byl w Minentalu.
 
 	B_GiveInvItems	(hero, self, ItAr_GewandDerMacht, 1);
 
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_03"); //So schwierig war es?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_04"); //Das kannst du laut sagen. Und kaum bezahlen.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_05"); //Bei Innos! Was kriegst du?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_06"); //Erst mal abwarten, was der Rat rausrückt. Nicht unter 2000 Gold hergeben.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_07"); //Ich weiß Bescheid. Bis später.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_03"); //Czy bylo to trudne?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_04"); //Mozna to powiedziec jeszcze raz. I prawie nie placic.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_05"); //W Innosie! Co otrzymasz?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender5_15_06"); //Poczekajmy i zobaczmy, co mówi rada. Nie wolno oddawac mniej niz 2000 zlota.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender5_10_07"); //Wiem o tym. Do zobaczenia pózniej.
 
 	B_SetTopicStatus	(TOPIC_MOD_EROL_FEUERMAGIER, LOG_SUCCESS);
 
@@ -359,7 +359,7 @@ INSTANCE Info_Mod_Erol_Fahrender6 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So sieht man sich wieder.";
+	description	= "Spotykamy sie wiec ponownie.";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender6_Condition()
@@ -373,15 +373,15 @@ FUNC INT Info_Mod_Erol_Fahrender6_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_00"); //So sieht man sich wieder. Und, waren die Magier zufrieden mit der Kutte?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_01"); //Das kannst du glauben! Hocherfreut warn sie. Aber geheimnisvoll haben sie auch getan.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_02"); //Jedenfalls haben sie mich reichlicht belohnt.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_03"); //Das heißt?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_04"); //2500 Gold hat Pyrokar rausgerückt. Hier 2000 für dich. Da hast ja die Arbeit gemacht.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_00"); //Spotykamy sie wiec ponownie. Czy magowie byli zadowoleni z szaty?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_01"); //Lepiej w to wierzysz! Chce Cie ostrzec. Ale tez tajemniczo.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_02"); //W kazdym razie obficie mnie nagradzali.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_03"); //Co to znaczy?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender6_10_04"); //2500 zlota dostal Pyrokar. Oto rok 2000. Tam wlasnie wykonales swoja prace.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 2000);
 
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_05"); //Das ist fair. Bis andermal.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender6_15_05"); //To wystarczy. Do zobaczenia za jakis czas.
 
 	Mod_Erol_Unterwegs_Day = Wld_GetDay();
 };
@@ -408,27 +408,27 @@ FUNC INT Info_Mod_Erol_Fahrender7_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_00"); //Die Welt ist klein.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_01"); //Die Insel allemal. Alles klar?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_02"); //Nicht so arg ...
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_03"); //Wo klemmt's denn diesmal?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_04"); //Der Wassermagier in der Stadt hat mich gebeten, Cavalorn, einen der Leute, die in der Ausgrabungsstelle sind, zu ihm zu schicken.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_05"); //Und wo ist da das Problem?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_06"); //Da ist ein Typ an der Baustelle, der lässt mich nicht in den Tempel.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_07"); //Dann besorg dir doch von Vatras einen Passierschein oder so was.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_08"); //Da hab ich schon dran gedacht. Aber der hat nix zum Schreiben.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_00"); //Maly swiat.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_01"); //Wyspa raz na zawsze. Kazdy ma racje?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_02"); //Nie tak zle....
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_03"); //Gdzie tym razem jest balagan?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_04"); //Czarownik wodny w miescie poprosil mnie, abym wyslal do niego Cavalorn, jednego z ludzi znajdujacych sie w miejscu wykopalisk.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_05"); //I jaki jest problem?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_06"); //Na placu budowy jest facet, który nie wpusci mnie do swiatyni.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_15_07"); //Uzyskaj pozwolenie lub cos od Vatrasa.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_10_08"); //Pomyslalem o tym. Ale nie ma o czym pisac.
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender7);
 
-	Info_AddChoice	(Info_Mod_Erol_Fahrender7, "Ich gehe mit dir und rede mal mit diesem Lance.", Info_Mod_Erol_Fahrender7_B);
-	Info_AddChoice	(Info_Mod_Erol_Fahrender7, "Dann sag ihm, dass du das nicht erledigen kannst. Basta.", Info_Mod_Erol_Fahrender7_A);
+	Info_AddChoice	(Info_Mod_Erol_Fahrender7, "Pójde z toba i porozmawiam z ta lanca.", Info_Mod_Erol_Fahrender7_B);
+	Info_AddChoice	(Info_Mod_Erol_Fahrender7, "Nastepnie powiedz mu, ze nie mozesz tego zrobic. Tak wlasnie jest.", Info_Mod_Erol_Fahrender7_A);
 };
 
 FUNC VOID Info_Mod_Erol_Fahrender7_B()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_B_15_00"); //Ich gehe mit dir und rede mal mit diesem Lance.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_B_10_01"); //Das würdest du tun?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_B_15_02"); //Wenn ich´s doch sage.  Lass uns gehen.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_B_15_00"); //Pójde z toba i porozmawiam z ta lanca.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_B_10_01"); //Czy móglbys to zrobic?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_B_15_02"); //Jesli tak powiem. Idzmy dalej.
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender7);
 
@@ -440,15 +440,15 @@ FUNC VOID Info_Mod_Erol_Fahrender7_B()
 
 	Log_CreateTopic	(TOPIC_MOD_EROL_LANCE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EROL_LANCE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EROL_LANCE, "Ich werde Erol zum Portaltempel begleiten, weil Lance ihn nicht reinlässt.");
+	B_LogEntry	(TOPIC_MOD_EROL_LANCE, "Jestem gonna zabrac Erola do swiatyni, poniewaz Lance nie wpusci go do swiatyni.");
 };
 
 FUNC VOID Info_Mod_Erol_Fahrender7_A()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_00"); //Dann sag ihm, dass du das nicht erledigen kannst. Basta.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_01"); //Oder hau diesem Lance kräftig eins auf die Nase
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_A_10_02"); //Ich mache mir nicht gern Feinde. Ist abträglich für´s Geschäft.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_03"); //Du musst wissen, was du tust ...
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_00"); //Nastepnie powiedz mu, ze nie mozesz tego zrobic. Tak wlasnie jest.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_01"); //Lub policz, ze nosance' a w twarzy.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender7_A_10_02"); //Nie lubie robic wrogów. To jest szkodliwe dla biznesu?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender7_A_15_03"); //Musisz wiedziec, co robisz....
 
 	Info_ClearChoices	(Info_Mod_Erol_Fahrender7);
 };
@@ -461,7 +461,7 @@ INSTANCE Info_Mod_Erol_Fahrender8 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender8_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, das war's dann. Ich mach mich fort.";
+	description	= "Wszystko w porzadku, to wszystko. Wyjezdzam.";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender8_Condition()
@@ -474,8 +474,8 @@ FUNC INT Info_Mod_Erol_Fahrender8_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender8_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender8_15_00"); //So, das war's dann. Ich gehe jetzt.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender8_10_01"); //Danke erst mal.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender8_15_00"); //Wszystko w porzadku, to wszystko. Wyjezdzam teraz.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender8_10_01"); //Na poczatek dziekuje.
 
 	AI_StopProcessInfos	(self);
 
@@ -494,7 +494,7 @@ INSTANCE Info_Mod_Erol_Fahrender9 (C_INFO)
 	information	= Info_Mod_Erol_Fahrender9_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, hat es geklappt?";
+	description	= "No cóz, czy to zadzialalo?";
 };
 
 FUNC INT Info_Mod_Erol_Fahrender9_Condition()
@@ -508,12 +508,12 @@ FUNC INT Info_Mod_Erol_Fahrender9_Condition()
 
 FUNC VOID Info_Mod_Erol_Fahrender9_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_00"); //Na, hat es geklappt?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_01"); //Jo. Aber was hat es mit dem leuchtenden Tor auf sich, wollte mir keiner verraten.
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_02"); //Dann sag ich dir auch nichts. Und?
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_03"); //Was und?
-	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_04"); //Du schuldest mir was.
-	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_05"); //Ach so. Hier, 300 Gold kann ich dir geben.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_00"); //No cóz, czy to zadzialalo?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_01"); //Jo Jo. Ale co to jest z blyszczaca brama, nikt nie chcial mi powiedziec.
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_02"); //Wtedy nic wam nie powiem. A co?
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_03"); //Co i co?
+	AI_Output(hero, self, "Info_Mod_Erol_Fahrender9_15_04"); //Jestescie mi to winni.
+	AI_Output(self, hero, "Info_Mod_Erol_Fahrender9_10_05"); //Och, widze. Tutaj moge dac ci 300 zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
@@ -532,7 +532,7 @@ INSTANCE Info_Mod_Erol_Soeldner (C_INFO)
 	information	= Info_Mod_Erol_Soeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gehörst du zu den Söldnern?";
+	description	= "Czy jestes z najemnikami?";
 };
 
 FUNC INT Info_Mod_Erol_Soeldner_Condition()
@@ -545,9 +545,9 @@ FUNC INT Info_Mod_Erol_Soeldner_Condition()
 
 FUNC VOID Info_Mod_Erol_Soeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Soeldner_15_00"); //Gehörst du zu den Söldnern?
-	AI_Output(self, hero, "Info_Mod_Erol_Soeldner_10_01"); //Adanos bewahre! Mit solchen jungen Kerlen könnte ich nicht mehr konkurrieren.
-	AI_Output(self, hero, "Info_Mod_Erol_Soeldner_10_02"); //Aber Geschäfte mache ich gern mit ihnen, und dafür haben sie meine kleine Hütte im Auge und passen auf, dass nichts passiert.
+	AI_Output(hero, self, "Info_Mod_Erol_Soeldner_15_00"); //Czy jestes z najemnikami?
+	AI_Output(self, hero, "Info_Mod_Erol_Soeldner_10_01"); //Zapisz Adanos! Nie moglem juz konkurowac z tymi mlodymi chlopakami.
+	AI_Output(self, hero, "Info_Mod_Erol_Soeldner_10_02"); //Ale lubie robic z nimi interesy i dlatego maja na mysli moja mala chatke i upewniac sie, ze nic sie nie dzieje.
 };
 
 INSTANCE Info_Mod_Erol_Muenzen (C_INFO)
@@ -558,7 +558,7 @@ INSTANCE Info_Mod_Erol_Muenzen (C_INFO)
 	information	= Info_Mod_Erol_Muenzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du eine Kleinigkeit zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Erol_Muenzen_Condition()
@@ -571,10 +571,10 @@ FUNC INT Info_Mod_Erol_Muenzen_Condition()
 
 FUNC VOID Info_Mod_Erol_Muenzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Muenzen_15_00"); //Hast du eine Kleinigkeit zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_01"); //Durchaus. Ich bin immer an alten Münzen interessiert.
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_02"); //Wenn du mir welche bringst, gebe ich dir ein bisschen Gold, bei vielen Münzen gibt's einen kleinen Bonus.
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_03"); //Wär das nichts?
+	AI_Output(hero, self, "Info_Mod_Erol_Muenzen_15_00"); //Masz dla mnie cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_01"); //Calkiem dosyc. Zawsze interesuja mnie stare monety.
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_02"); //Jesli przynosisz mi troche, dam ci troche zlota, z wieloma monetami, jest troche bonusu.
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen_10_03"); //Czyz nie byloby to cos takiego?
 };
 
 INSTANCE Info_Mod_Erol_Muenzen2 (C_INFO)
@@ -585,7 +585,7 @@ INSTANCE Info_Mod_Erol_Muenzen2 (C_INFO)
 	information	= Info_Mod_Erol_Muenzen2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe alte Münzen für dich ...";
+	description	= "Dostalem dla Ciebie kilka starych monet.....";
 };
 
 FUNC INT Info_Mod_Erol_Muenzen2_Condition()
@@ -599,21 +599,21 @@ FUNC INT Info_Mod_Erol_Muenzen2_Condition()
 
 FUNC VOID Info_Mod_Erol_Muenzen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erol_Muenzen2_15_00"); //Ich habe alte Münzen für dich ...
+	AI_Output(hero, self, "Info_Mod_Erol_Muenzen2_15_00"); //Dostalem dla Ciebie kilka starych monet.....
 
 	Info_ClearChoices	(Info_Mod_Erol_Muenzen2);
 
 	if (Npc_HasItems(hero, ItMi_OldCoin) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "Hundert Münzen geben.", Info_Mod_Erol_Muenzen2_C);
+		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "sto monet.", Info_Mod_Erol_Muenzen2_C);
 	};
 	if (Npc_HasItems(hero, ItMi_OldCoin) >= 10)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "Zehn Münzen geben.", Info_Mod_Erol_Muenzen2_B);
+		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "Dajcie dziesiec monet.", Info_Mod_Erol_Muenzen2_B);
 	};
 	if (Npc_HasItems(hero, ItMi_OldCoin) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "Eine Münze geben.", Info_Mod_Erol_Muenzen2_A);
+		Info_AddChoice	(Info_Mod_Erol_Muenzen2, "Podaj monete.", Info_Mod_Erol_Muenzen2_A);
 	};
 };
 
@@ -623,8 +623,8 @@ FUNC VOID Info_Mod_Erol_Muenzen2_C()
 
 	Npc_RemoveInvItems	(self, ItMi_OldCoin, 100);
 
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_C_10_00"); //Du machst mich ja zum Krösus! Wohin soll ich nur damit? (lacht)
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_C_10_01"); //Immer her damit, du hast dir eine Belohnung verdient.
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_C_10_00"); //Zrobiles mnie! Gdzie i dokad zmierzam? (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_C_10_01"); //Daj mi ja, zarobiles sobie nagrode.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 450);
 
@@ -641,7 +641,7 @@ FUNC VOID Info_Mod_Erol_Muenzen2_B()
 
 	Npc_RemoveInvItems	(self, ItMi_OldCoin, 10);
 
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_B_10_00"); //Das ist eine ordentliche Menge. Dafür gibt's auch mehr Gold.
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_B_10_00"); //To sluszna kwota. Jest za to wiecej zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 35);
 
@@ -656,7 +656,7 @@ FUNC VOID Info_Mod_Erol_Muenzen2_A()
 
 	Npc_RemoveInvItems	(self, ItMi_OldCoin, 1);
 
-	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_A_10_00"); //Danke. Weiter so!
+	AI_Output(self, hero, "Info_Mod_Erol_Muenzen2_A_10_00"); //Dzieki. Postaraj sie isc!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 3);
 
@@ -673,7 +673,7 @@ INSTANCE Info_Mod_Erol_Heiltrank (C_INFO)
 	information	= Info_Mod_Erol_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Erol_Heiltrank_Condition()
@@ -692,31 +692,31 @@ FUNC VOID Info_Mod_Erol_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Essenz der Heilung", Info_Mod_Erol_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Istota uzdrawiania", Info_Mod_Erol_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Elixier der Heilung", Info_Mod_Erol_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Erol_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Extrakt der Heilung", Info_Mod_Erol_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Erol_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Essenz der Heilung", Info_Mod_Erol_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Istota uzdrawiania", Info_Mod_Erol_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Trank der leichten Heilung", Info_Mod_Erol_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Erol_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Leichter Heiltrank", Info_Mod_Erol_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Erol_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Erol_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Erol_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Erol_Heiltrank_Health_05);
 	};
 };
 

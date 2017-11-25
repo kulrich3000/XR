@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Minecrawler(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Minecrawler";
+	name							=	"mini gasienica";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLER;
 	level							=	12;
@@ -86,7 +86,7 @@ INSTANCE Minecrawler	(Mst_Default_Minecrawler)
 
 INSTANCE KristallMinecrawler	(Mst_Default_Minecrawler)
 {
-	name	=	"Kristallcrawler";
+	name	=	"krysztal gasienica";
 	
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	90;
@@ -113,7 +113,7 @@ INSTANCE KristallMinecrawler	(Mst_Default_Minecrawler)
 
 INSTANCE Kristallcrawler	(Mst_Default_Minecrawler)
 {
-        name			=	"Kristallcrawler";
+        name			=	"krysztal gasienica";
 	
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	90;

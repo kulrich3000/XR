@@ -1,7 +1,7 @@
 instance Mod_957_BDT_Logan_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Logan";
+	name 		= "logan";
 	guild 		= GIL_OUT;
 	id 			= 957;
 	voice 		= 10;

@@ -1,7 +1,7 @@
 instance Mod_7460_RIT_Cedric_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cedric";
+	name 		= "cedryzm";
 	guild 		= GIL_OUT;
 	id 			= 7460;
 	voice 		= 12;

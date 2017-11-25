@@ -1,7 +1,7 @@
 INSTANCE Mod_6010_KDW_Vatras_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vatras"; 
+	name 		= "patrole"; 
 	guild 		= GIL_NONE;
 	id 			= 6010;
 	voice 		= 5;

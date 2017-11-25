@@ -17,19 +17,19 @@ FUNC VOID Info_Mod_Snaf_Hi_Info()
 {
 	if (Mod_Import_Snaf == LOG_SUCCESS)
 	{
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_00"); //Hey, ich kenne dich doch. Du hast mir doch mal die Zutaten für mein Fleischwanzenragout gebracht.
-		AI_Output(hero, self, "Info_Mod_Snaf_Hi_15_01"); //Ja ...
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_02"); //Ich muss mich nochmal bei dir dafür bedanken. Ich habe mit dem Fleischwanzenragout gut verdient.
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_03"); //Als Dank werde ich dir ein paar meiner neuen Waren verkaufen. Natürlich habe ich auch Fleischwanzenragout.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_00"); //Hej, znam cie. Przyniesliscie mi raz skladniki na mój ragout z pluskwy.
+		AI_Output(hero, self, "Info_Mod_Snaf_Hi_15_01"); //Tak.....
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_02"); //Musze jeszcze raz za to podziekowac. Dobrze utrzymywalem sie z pierozka miesnego.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_03"); //W zamian sprzedam Ci czesc mojego nowego towaru. Oczywiscie mam tez ragout na pluskwy miesne.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_04"); //Hey, Neuer. Wenn du Hunger hast, kannst du bei mir vorbeischauen, ich hab da ein paar echte Spezialitäten im Angebot.
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_05"); //Unter anderem mein berühmtes Fleischwanzenragout.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_04"); //Hej, nowy facet. Jesli jestes glodny, mozesz upuscic sie za moim miejscem, mam dla ciebie kilka prawdziwych specjalów.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_05"); //Miedzy innymi mój slynny ragout z pluskwy.
 	};
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OLDCAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_OLDCAMP, "Snaf verkauft mir verschiedene Lebensmittel. Und natürlich auch Fleischwanzenragout.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_OLDCAMP, "Snaf sprzedaje mi rózne artykuly spozywcze. I oczywiscie równiez ragout z pluskwy miesnej.");
 };
 
 INSTANCE Info_Mod_Snaf_WoherZutaten (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Snaf_WoherZutaten (C_INFO)
 	information	= Info_Mod_Snaf_WoherZutaten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher bekommst du denn noch die ganzen Zutaten?";
+	description	= "Skad pochodza wszystkie skladniki?";
 };
 
 FUNC INT Info_Mod_Snaf_WoherZutaten_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mod_Snaf_WoherZutaten_Condition()
 
 FUNC VOID Info_Mod_Snaf_WoherZutaten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Snaf_WoherZutaten_15_00"); //Woher bekommst du denn noch die ganzen Zutaten?
-	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_01"); //Fleischwanzen gibt's immer genug. Außerdem bringen die Jäger genug Grünfutter mit von ihren Jagden.
-	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_02"); //Und sonst ... was man so findet. Manchmal ist es besser, nicht zu viel drüber nachzudenken, was drin ist.
+	AI_Output(hero, self, "Info_Mod_Snaf_WoherZutaten_15_00"); //Skad pochodza wszystkie skladniki?
+	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_01"); //Zawsze jest mnóstwo robaków miesnych. Ponadto mysliwi dostarczaja wystarczajaca ilosc zielonki z polowan.
+	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_02"); //I inaczej..... co mozna znalezc. Czasami lepiej nie myslec za duzo o tym, co jest w srodku.
 };
 
 INSTANCE Info_Mod_Snaf_Lagermusik (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Snaf_Lagermusik (C_INFO)
 	information	= Info_Mod_Snaf_Lagermusik_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hältst du von Lagermusik?";
+	description	= "Co sadzisz o muzyce obozowej?";
 };
 
 FUNC INT Info_Mod_Snaf_Lagermusik_Condition()
@@ -76,12 +76,12 @@ FUNC INT Info_Mod_Snaf_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Snaf_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_00"); //Was hältst du von Lagermusik?
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_01"); //(wollüstig) Oh, du weißt ja gar nicht, wie ich so etwas vermisse.
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_02"); //Abends am Marktplatz zusammenkommen, einer schlägt die Saiten, einer die Trommel, und alle singen was Melancholisches vom heiteren Leben am Hof des Königs.
-	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_03"); //Gravo will eine ganze Gruppe aufbauen. Willst du teilnehmen?
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_04"); //Er will richtig auftreten? Nee, dazu fehlt mir die Zeit. Ich kann doch meinen Kochtopf nicht außer Acht lassen.
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_05"); //Aber er kann sich sicher sein, wer der erste Besucher seiner Auftritte sein wird!
+	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_00"); //Co sadzisz o muzyce obozowej?
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_01"); //O, nie wiesz, jak mi tesknie za takim czyms.
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_02"); //Jeden z nich bije smyczki, jeden beben, a kazdy spiewa cos melancholijnego o pogodnym zyciu na dworze króla.
+	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_03"); //Gravo chce zbudowac cala grupe. Chcesz wziac udzial?
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_04"); //Chce wlasciwie dzialac? Nah, nie mam na to czasu. Nie moge pominac mojego garnka do gotowania.
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_05"); //Ale moze byc pewien, kto bedzie pierwszym gosciem jego wystepów!
 };
 
 INSTANCE Info_Mod_Snaf_Trade (C_INFO)

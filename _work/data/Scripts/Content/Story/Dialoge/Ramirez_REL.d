@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Ramirez_REL_InHaus_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_InHaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_00"); //Das nenn ich doch mal ein gemütliches Zuhause, oder?
-	AI_Output(hero, self, "Info_Mod_Ramirez_REL_InHaus_15_01"); //Sieht ok aus.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_02"); //Das will ich meinen. Hmm, was uns jetzt noch fehlt ist die passende Verpflegung.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_03"); //Ich hoffe, dass Attila bald zurückkommt von seinem Erkundungsgang ... ahh, da hör ich ihn schon die Treppe herunterkommen.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_00"); //To jest to, co nazywam wygodnym domem, czyz nie?
+	AI_Output(hero, self, "Info_Mod_Ramirez_REL_InHaus_15_01"); //Wyglada dobrze.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_02"); //Tak wlasnie rozumiem. Hmm, brakuje odpowiedniego pokarmu.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_InHaus_14_03"); //Mam nadzieje, ze Attyla wkrótce wróci z jego poszukiwan.... Slysze, jak slysze go schodami.
 
 	AI_StopProcessInfos	(self);
 
@@ -49,15 +49,15 @@ FUNC INT Info_Mod_Ramirez_REL_Lagerhaus_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Lagerhaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_00"); //Gut gemacht. Damit sollte sich sicher was anfangen lassen.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_01"); //(zum Helden) Wie wäre es, wenn du dich dorthin begibst und versuchst einen prall gefüllten Sack aus dem Lager mitzunehmen.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_02"); //Pass aber auf, dass dich die Wachen nicht dabei erwischen.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_03"); //Vielleicht wirst du dich auch im Lager verstecken müssen, bis sie abends endlich weg sind.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_04"); //Dir fällt schon was ein.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_00"); //Dobrze wykonane. Jestem pewien, ze to powinno miec sens.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_01"); //(bohater) Jak pójsc tam i spróbowac zabrac z soba z obozem pelny worek.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_02"); //Upewnij sie, ze oslony cie nie zlapia.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_03"); //Moze bedziesz musial sie ukryc w obozie, dopóki nie przejda w nocy.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus_14_04"); //Pomysl o czyms.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_LAGERHAUS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_LAGERHAUS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_LAGERHAUS, "In Khorata werden täglich von morgens bis abends Vorräte in einem Lagerhaus verstaut. Ich soll versuchen, mir einen großen Sack voll davon unter den Nagel zu reißen. Ich muss nur aufpassen, dass mich die beiden Wachen nicht erwischen. Vielleicht habe ich ja auch eine Chance, sobald sie abends das Lager verlassen haben ...");
+	B_LogEntry	(TOPIC_MOD_DIEB_LAGERHAUS, "W Khorata zapasy sa przechowywane w magazynie codziennie od rana do nocy. Spodziewam sie, ze spróbuje przybic duza torbe z nia pelna. Musze tylko upewnic sie, ze dwaj straznicy mnie nie zlapia. Byc moze mam szanse jak tylko opuszcza obóz w nocy....");
 
 	Wld_InsertItem	(ItMi_Fresssack, "FP_ITEM_JIM_DROGEN");
 	Wld_InsertItem	(ItMi_Kiste, "FP_ITEM_LAGERKISTE");
@@ -84,14 +84,14 @@ FUNC INT Info_Mod_Ramirez_REL_Lagerhaus2_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Lagerhaus2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_00"); //Was ist das? Ich rieche Schinken, Käse, Brot ...
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_01"); //Ahh, sehr schön, du warst im Lager, wie ich sehe.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_02"); //Und ich hatte schon befürchtet, ich müsste auf den Markt gehen um mir etwas zu kaufen.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_00"); //Co to jest? Zapacham szynke, ser, chleb,....
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_01"); //Ahh, bardzo milo, byles w obozie, widze.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_02"); //I balem sie, ze musze isc na rynek, zeby cos kupic.
 
 	B_GiveInvItems	(hero, self, ItMi_Fresssack, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_03"); //Lass sehen ... ja, das reicht mindestens für die nächsten 4 Wochen. Gute Arbeit.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_04"); //Hier hast du etwas Gold ... und paar Fressalien aus dem Sack.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_03"); //Pozwólcie mi widziec.... co najmniej przez nastepne cztery tygodnie. Dobra praca.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Lagerhaus2_14_04"); //Oto troche zlota.... i troche jedzenia z worka.
 
 	CreateInvItems	(hero, ItMi_Gold, 150);
 	CreateInvItems	(hero, ItFo_Bacon, 1);
@@ -101,7 +101,7 @@ FUNC VOID Info_Mod_Ramirez_REL_Lagerhaus2_Info()
 	CreateInvItems	(hero, ItFo_Apple, 5);
 	CreateInvItems	(hero, ItFo_Bread, 2);
 
-	B_ShowGivenThings	("150 Gold, 1 Schinken, 3 Käse, 2 Wein, 3 Bier, 5 Äpfel und 2 Brote erhalten");
+	B_ShowGivenThings	("150 zlota, 1 szynka, 3 sery, 2 wina, 3 piwo, 5 jablek i 2 pieczywo zakonserwowane.");
 
 	B_GivePlayerXP	(400);
 
@@ -132,7 +132,7 @@ FUNC INT Info_Mod_Ramirez_REL_Glorie_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie_14_00"); //Ahh, da bist du ja. Dann kann es also losgehen. Folge mir.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie_14_00"); //Ach, tam jestescie. Wiec dobrze jest pojechac. Podazaj za mna, idz za mna.
 
 	AI_StopProcessInfos	(self);
 
@@ -162,8 +162,8 @@ FUNC INT Info_Mod_Ramirez_REL_Glorie2_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Glorie2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie2_14_00"); //(verärgert) Du kommst viel zu spät. Jetzt lohnt es sich gar nicht erst anzufangen.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie2_14_01"); //Wir müssen es auf morgen verschieben ... du Arsch.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie2_14_00"); //Jestes za pózno. Nie warto teraz zaczynac.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie2_14_01"); //Musimy ja odlozyc na jutro.... Wiecej twórz otwór.
 
 	Mod_Dieb_Haus_Day = Wld_GetDay();
 
@@ -191,8 +191,8 @@ FUNC INT Info_Mod_Ramirez_REL_Glorie3_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Glorie3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie3_14_00"); //Also gut. Das was jetzt kommt, dient allein der Mission.
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie3_14_01"); //Sobald ich sein Interesse erregt habe, solltest du dir das Kleid schnappen können.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie3_14_00"); //A zatem wszystko w porzadku. To, co teraz przychodzi, jest jedynym celem misji.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie3_14_01"); //Jak tylko go zainteresuje, powinienes byc w stanie zlapac te sukienke.
 
 	AI_StopProcessInfos	(self);
 
@@ -226,11 +226,11 @@ FUNC VOID Info_Mod_Ramirez_REL_Glorie4_Info()
 {
 	if (Mod_Diebe_WandGehackt == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie4_14_00"); //Da bist du endlich. Während du mit deinem Arsch im Bett lagst, haben wir die Wand durchbrochen und einen Tunnel freigelegt.
+		AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie4_14_00"); //Tutaj jestes nareszcie. Kiedy byles w lózku z tylkiem, zlamalismy sciane i odkrylismy tunel.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie4_14_01"); //Super, wir sind durch. Gute Arbeit Jungs. Scheinbar geht es da tatsächlich weiter.
+		AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie4_14_01"); //Wspaniale, przechodzimy. Dobra praca, chlopcy. Wyglada na to, ze to naprawde postep.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -256,7 +256,7 @@ FUNC INT Info_Mod_Ramirez_REL_Glorie5_Condition()
 
 FUNC VOID Info_Mod_Ramirez_REL_Glorie5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie5_14_00"); //In Ordnung ... die drei Pfund Gold in meinen Taschen reichen auch fürs erste.
+	AI_Output(self, hero, "Info_Mod_Ramirez_REL_Glorie5_14_00"); //Wszystko w porzadku.... trzy funty zlota w kieszeniach wystarcza mi na razie.
 
 	AI_StopProcessInfos	(self);
 

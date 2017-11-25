@@ -2,7 +2,7 @@ instance Mod_1269_SLD_Blade_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Blade";
+	name =					"brzeszczot";
 	Npctype =				NPCTYPE_main;
 	guild =					GIL_mil;       
 	level =					18;

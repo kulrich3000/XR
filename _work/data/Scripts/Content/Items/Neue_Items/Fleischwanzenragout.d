@@ -1,6 +1,6 @@
 INSTANCE ItFo_Fleischwanzenragout (C_Item)
 {
-	name 				=	"Fleischwanzenragout";
+	name 				=	"Targout miesny";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -13,7 +13,7 @@ INSTANCE ItFo_Fleischwanzenragout (C_Item)
 	on_state[0]			=	Use_FWRagout;
 
 	description			= 	name;
-	TEXT[0]				= 	"Leckeres Fleischwanzenragout";
+	TEXT[0]				= 	"Pyszny ragout z pluskwy miesnej";
 	TEXT[1]				= 	NAME_Bonus_HP; COUNT[1] = 25;
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -44,7 +44,7 @@ INSTANCE ItFo_Fleischwanzenragout (C_Item)
 
 INSTANCE ItFo_Pilzsuppe (C_Item)
 {
-	name 				=	"Pilzsuppe";
+	name 				=	"zupa grzybowa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -87,7 +87,7 @@ INSTANCE ItFo_Pilzsuppe (C_Item)
 
 INSTANCE ItFo_Fangheuschreckensuppe (C_Item)
 {
-	name 				=	"Fangheuschreckensuppe";
+	name 				=	"zupa mantis";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

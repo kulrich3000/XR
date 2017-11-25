@@ -1,7 +1,7 @@
 instance Mod_2007_GUR_BaalOrun_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Baal Orun";
+	name 		=		"Orun Baal Orun";
 	Npctype 	=		NPCTYPE_Main;
 	guild 		=		GIL_OUT;
 	level 		=		28;

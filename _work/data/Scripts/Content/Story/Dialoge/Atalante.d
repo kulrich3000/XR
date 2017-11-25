@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Atalante_Hi_Condition()
 
 FUNC VOID Info_Mod_Atalante_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Atalante_Hi_16_00"); //(hechelnd) Ich werde Euch zerfetzen!
-	AI_Output(hero, self, "Info_Mod_Atalante_Hi_15_01"); //Ganz ruhig, ich will dir nichts tun.
-	AI_Output(self, hero, "Info_Mod_Atalante_Hi_16_02"); //(knurrt bedrohlich)
+	AI_Output(self, hero, "Info_Mod_Atalante_Hi_16_00"); //Rozerwam cie!
+	AI_Output(hero, self, "Info_Mod_Atalante_Hi_15_01"); //Relaks, nie chce Ci krzywdzic.
+	AI_Output(self, hero, "Info_Mod_Atalante_Hi_16_02"); //(grunty grozace)
 };
 
 INSTANCE Info_Mod_Atalante_Bosper (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Atalante_Bosper (C_INFO)
 	information	= Info_Mod_Atalante_Bosper_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir eine Nachricht von Bosper bringen.";
+	description	= "Przynosze Ci wiadomosc od Bosper.";
 };
 
 FUNC INT Info_Mod_Atalante_Bosper_Condition()
@@ -41,17 +41,17 @@ FUNC INT Info_Mod_Atalante_Bosper_Condition()
 
 FUNC VOID Info_Mod_Atalante_Bosper_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_00"); //Ich soll dir eine Nachricht von Bosper bringen.
-	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_01"); //(heult auf) Ich will nichts davon hören! Schick ihn her, und ich werde mich seiner annehmen.
-	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_02"); //Er will dir verzeihen.
-	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_03"); //Verzeihen?! Auf seinen Knien soll er angekrochen kommen und um Vergebung flehen!
-	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_04"); //Was hat Bosper dir denn getan?
-	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_05"); //Hör auf, diesen Namen zu nennen! Er hat nur Leid über mein Leben gebracht.
-	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_06"); //Meinst du nicht, dass man darüber reden kann?
-	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_07"); //Nein, ich brauche nicht mehr zu reden. Was mir nicht gefällt, wird getötet und gefressen.
-	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_08"); //Und du gefällst mir nicht, neugieriger Mensch. Du wühlst in Sachen, die dich nichts angehen!
+	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_00"); //Przynosze Ci wiadomosc od Bosper.
+	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_01"); //Nie chce o tym slyszec! Wyslij go tutaj, a ja zajme sie nim.
+	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_02"); //On chce ci przebaczyc.
+	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_03"); //Wybaczcie mi! Na kolanach bedzie czolgal sie i blagal o przebaczenie!
+	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_04"); //Co Bosper zrobil dla Ciebie?
+	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_05"); //Przestan dzwonic do tej nazwy! Przynosil mi tylko cierpienie.
+	AI_Output(hero, self, "Info_Mod_Atalante_Bosper_15_06"); //Czy nie sadzisz, ze mozesz o tym porozmawiac?
+	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_07"); //Nie, nie musze juz mówic. Wszystko, czego nie lubie, zostanie zabite i zjedzone.
+	AI_Output(self, hero, "Info_Mod_Atalante_Bosper_16_08"); //I nie lubie ciebie, woski czlowiek. Szukasz rzeczy, które nie sa Twoim biznesem!
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Es ist mir nicht gelungen, vernünftig mit Atalante zu sprechen. Sie griff mich an, und so blieb mir nichts anderes übrig, als sie zu töten. Ich sollte Bosper die traurige Nachricht überbringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Nie udalo mi sie rozsadnie porozmawiac z Atalante. Zaatakowala mnie, wiec nie mialem innego wyboru niz ja zabic. Powiedziano mi, ze przyniesli mi smutna wiadomosc do Bosper.");
 
 	AI_StopProcessInfos	(self);
 

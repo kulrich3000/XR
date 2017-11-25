@@ -43,42 +43,42 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	};
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Um eine Waffe zu schmiede, brauche ich zunächst ein Stück Rohstahl. An einem Schmiedefeuer muss ich den Stahl erhitzen und anschließend an einem Amboss in die gewünschte Form bringen. Für hochwertigere Waffe benötigt man häufig noch Substanzen, welche der Waffe besondere Eigenschaften verleihen.");
+	B_LogEntry (TOPIC_TalentSmith,"Do podkuwania pistoletu potrzebuje najpierw kawalka surowej stali. Musze podgrzac stal kuznia, a nastepnie przeniesc ja na kowadelko do pozadanego ksztaltu. Do broni wyzszej jakosci potrzebne sa czesto substancje, które nadaja bron specjalnym wlasciwosciom.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Für ein einfaches Schwert benötige ich keine weiteren Zutaten.");};
+	B_LogEntry (TOPIC_TalentSmith,"Do zwyklego miecza nie potrzebuje zadnych innych skladników.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 1 Erz hinzugebe, kann ich mir ein ´ERZ-LANGSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 1 o rude, to moge dla siebie stworzyc ERZ-LONGWERT?");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir einen ´ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 2 rude, to moge ja podrobic?");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 2 Erz hinzugebe, kann ich mir ein ´ERZ-BASTARDSCHWERT´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 2 rude, to dla siebie sam moge zrobic ERZ BASTARDSWERT?");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 3 Erz hinzugebe, kann ich mir einen ´SCHWEREN ERZ-ZWEIHÄNDER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 3 rudy, to moge wykuc HEAVY ORE DWA RECZNE?");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 20 Erz hinzugebe, kann ich mir eine ´ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 20 rudy, to czy moge zrobic rekawice?");};
 	if (waffe == WEAPON_1H_Special_03_Dex)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 20 Erz hinzugebe, kann ich mir einen ´ERZ-SCHLACHTSTECHER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 20 rudy, to moge stworzyc ERZ-SLAUGHTER?");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 30 Erz hinzugebe, kann ich mir eine ´SCHWERE ERZ-SCHLACHTKLINGE´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 30 rudy, to moge wykuc HEAVY BATTLE BLADE.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 60 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 60 rudy i 5 krwi smoka, to dla siebie sam moge wykuc ERZ-DRACHENT ÖTER?");};
 	if (waffe == WEAPON_1H_Special_04_Dex)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04_Dex] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 60 Erz und 5 Drachenblut hinzugebe, kann ich mir einen ´ERZ-DRACHENSTECHER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 60 rudy i 5 krwi smoka, to moge dla siebie wykuc ERZ-DRACHENSTECHER?");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Wenn ich 80 Erz und 7 Drachenblut hinzugebe, kann ich mir einen ´GROßEN ERZ-DRACHENTÖTER´ schmieden.");};
+	B_LogEntry (TOPIC_TalentSmith,"Jesli dodam 80 rudy i 7 krwi smoka, to moge wykuc DUZY KILLER.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt ein edles Schwert schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"Moge teraz wykuc szlachetny miecz."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt auch ein edles Langschwert schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"Moge teraz równiez stworzyc szlachetne slowo dlugograjace."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Ich kann jetzt sogar eine Rubinklinge schmieden."); };
+	B_LogEntry (TOPIC_TalentSmith,"Moge nawet teraz nawet wykuc rubinowe ostrze."); };
 	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;
-	B_LogEntry (TOPIC_TalentSmith,"Harad hat mir beigebracht, 'El Bastardo' zu schmieden - eine der besten Einhandwaffen, die es gibt!"); };
+	B_LogEntry (TOPIC_TalentSmith,"Harad nauczyl mnie, zebym wykupila 'El Bastardo' - jedna z najlepszych broni jednorecznych!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

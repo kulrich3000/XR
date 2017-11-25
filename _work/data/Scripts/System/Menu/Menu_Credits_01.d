@@ -35,7 +35,7 @@ const int MENU_CREDITS_01_START_Y	= 2000;
 
 INSTANCE MENUITEM_CREDITS_01_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"MATERIAL - SEITE 1";
+	text[0]		=	"MATERIAL - STRONA 1 - MATERIAL - STRONA 1";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -49,7 +49,7 @@ INSTANCE MENUITEM_CREDITS_01_ADELMO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Adelmo";
-	text[1]		= "für Tugettso";  // Kommentar
+	text[1]		= "w przypadku Tugettso";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*0;
@@ -67,7 +67,7 @@ INSTANCE MENUITEM_CREDITS_01_ALEXX(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "AlexX";
-	text[1]		= "für den Hasen aus 'The Den'";  // Kommentar
+	text[1]		= "królik z 'The Den'.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*1;
@@ -85,7 +85,7 @@ INSTANCE MENUITEM_CREDITS_01_BLACKNAPALM(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "BlackNapalm";
-	text[1]		= "für die Heilknospe";  // Kommentar
+	text[1]		= "dla leczniczego buds";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*2;
@@ -103,7 +103,7 @@ instance MENUITEM_CREDITS_01_CEEX(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"CeeX";
-	text[1]		=	"für die Rüstungen und einige Items und Waffen aus 'Dunkle Brut'";  // Kommentar
+	text[1]		=	"zbroja oraz niektóre przedmioty i bron od Czarnego Bruta";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*3;
@@ -119,8 +119,8 @@ instance MENUITEM_CREDITS_01_CEEX(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_CROSSHEAD(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Crosshead";
-	text[1]		= "für einige Rüstungstexturen";  // Kommentar
+	text[0]		= "trawers";
+	text[1]		= "dla niektórych tekstur pancerza";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*4;
@@ -138,7 +138,7 @@ INSTANCE MENUITEM_CREDITS_01_ELVEON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "elveon";
-	text[1]		= "für seinen Texturenpatch";  // Kommentar
+	text[1]		= "za jego teksture latka";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*5;
@@ -156,7 +156,7 @@ INSTANCE MENUITEM_CREDITS_01_FIZZBAN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Fizzban";
-	text[1]		= "für seinen Scriptpatch";  // Kommentar
+	text[1]		= "za jego skryptowy poprawka do scenariusza";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*6;
@@ -174,7 +174,7 @@ INSTANCE MENUITEM_CREDITS_01_FREDDY(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Freddy";
-	text[1]		= "für die Wassertropfen aus Khorana, den Wald-Scavenger und seinen G1 Texturenpatch";  // Kommentar
+	text[1]		= "kropelki wody z Khorany, wylesniarka lesna i jej plaster tekstury G1";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*0;
@@ -192,7 +192,7 @@ INSTANCE MENUITEM_CREDITS_01_GARRIKLORAN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Garrik Loran";
-	text[1]		= "für einige Gegenstände aus 'Trails of Darkness'";  // Kommentar
+	text[1]		= "dla niektórych przedmiotów z Sciezki ciemnosci.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*1;
@@ -209,8 +209,8 @@ INSTANCE MENUITEM_CREDITS_01_GARRIKLORAN(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_GOLDENAGE (C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Golden Age";
-	text[1]		= "für die Edelpilz-Textur und den Sarg";  // Kommentar
+	text[0]		= "Zloty wiek";
+	text[1]		= "szlachetna konsystencja grzybów i trumny";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*2;
@@ -227,8 +227,8 @@ INSTANCE MENUITEM_CREDITS_01_GOLDENAGE (C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_GOTHIC2005(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Gothic2005";
-	text[1]		= "für sein Pflanzenwirkungssystem";  // Kommentar
+	text[0]		= "Gotycki2005 r.";
+	text[1]		= "dla systemu efektów roslinnych";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*3;
@@ -245,8 +245,8 @@ INSTANCE MENUITEM_CREDITS_01_GOTHIC2005(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_GOTHICFAN359(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "gothicfan359";
-	text[1]		= "für den Paladinkristall";  // Kommentar
+	text[0]		= "gotyk 3599";
+	text[1]		= "dla krysztalu paladynskiego";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*4;
@@ -263,8 +263,8 @@ INSTANCE MENUITEM_CREDITS_01_GOTHICFAN359(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_GOTHIC_MODER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "gothic-moder";
-	text[1]		= "für ein paar Gebäude aus der MDB";  // Kommentar
+	text[0]		= "nowoczesny";
+	text[1]		= "dla kilku budynków nalezacych do MDB";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*5;
@@ -281,8 +281,8 @@ INSTANCE MENUITEM_CREDITS_01_GOTHIC_MODER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_HAGELNACHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Hagelnacht";
-	text[1]		= "für seine Fliegenpilz-Textur und die Quest von Liselotte";  // Kommentar
+	text[0]		= "gradobicie w nocy";
+	text[1]		= "ma muszkatolowa agaryczna konsystencje i poszukiwania Liselotte.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*6;
@@ -299,7 +299,7 @@ INSTANCE MENUITEM_CREDITS_01_HAGELNACHT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*8;
 	dimx		=	8192;		dimy		=	800;
@@ -313,7 +313,7 @@ INSTANCE MENUITEM_CREDITS_01_BACK(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_01_NEXT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Nächste";
+	text[0]		=	"najblizszy";
 	// Position und Dimension
 	posx		=	4096;		posy		=	MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*8;
 	dimx		=	4096;		dimy		=	800;

@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)			
 {
-	name							= "Feuerdrache";
+	name							= "smok ognia";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_FIRE;
 	level							= 500;
@@ -75,7 +75,7 @@ func void B_SetVisuals_Dragon_Fire()
 
 INSTANCE Dragon_Fire	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Feomathar";
+	name				=	"okucie";
 	B_SetVisuals_Dragon_Fire();
 
 	Npc_SetToFistMode(self);
@@ -95,7 +95,7 @@ INSTANCE Dragon_Fire_Island	(Mst_Default_Dragon_Fire)
 
 INSTANCE Wyver	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Wyver";
+	name				=	"wytrwaly";
 
 	level	= 100;
 
@@ -110,7 +110,7 @@ INSTANCE Wyver	(Mst_Default_Dragon_Fire)
 
 INSTANCE Kleindrache	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Kleindrache";
+	name				=	"smok";
 
 	flags = 2;
 
@@ -148,7 +148,7 @@ INSTANCE Kleindrache	(Mst_Default_Dragon_Fire)
 
 INSTANCE Summoned_DragonFire (Mst_Default_Dragon_Fire)
 {
-	name							= "Beschworener Feuerdrache";
+	name							= "Powolanie Ogniem Smoka Ogniowego";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_FIREDRAGON;
 	level							= 0;

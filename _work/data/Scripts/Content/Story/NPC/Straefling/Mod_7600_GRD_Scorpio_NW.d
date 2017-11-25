@@ -2,7 +2,7 @@ instance Mod_7600_GRD_Scorpio_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Scorpio";
+	name 		=	"skorpion";
 	npctype		=	npctype_main;
 	guild 		=	GIL_STRF;
 	level 		=	15;

@@ -1,7 +1,7 @@
 instance Mod_903_BAU_Ehnim_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ehnim";
+	name 		= "ennim";
 	guild 		= GIL_NONE;
 	id 			= 903;
 	voice 		= 12;

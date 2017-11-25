@@ -1,7 +1,7 @@
 INSTANCE Mod_536_NONE_Thorben_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Thorben";
+	name 		= "kolec";
 	guild 		= GIL_PAL;
 	id 			= 536;
 	voice 		= 6;

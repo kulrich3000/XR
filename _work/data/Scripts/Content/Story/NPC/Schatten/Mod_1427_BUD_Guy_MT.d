@@ -2,7 +2,7 @@ instance Mod_1427_BUD_Guy_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Guy";
+	name =							"czlowiek";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							2;

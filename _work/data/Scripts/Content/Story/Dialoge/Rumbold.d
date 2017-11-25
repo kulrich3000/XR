@@ -41,7 +41,7 @@ FUNC INT DIA_Rumbold_Attack_Condition()
 
 func void DIA_Rumbold_Attack_Info()
 {	
-	AI_Output (self, other,"DIA_Rumbold_Attack_10_00"); //Weg da, Dieb!
+	AI_Output (self, other,"DIA_Rumbold_Attack_10_00"); //Uciec, zlodziej!
 	AI_StopProcessInfos	(self);	
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
 };
@@ -77,7 +77,7 @@ func int Info_Mod_Rumbold_FirstWarn_Condition()
 
 func void Info_Mod_Rumbold_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Rumbold_FirstWarn_10_00"); //HALT! Du darfst nicht ins Lager.
+	AI_Output (self, hero,"Info_Mod_Rumbold_FirstWarn_10_00"); //HALT! Nie mozesz jechac do obozu.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Rumbold_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -110,7 +110,7 @@ FUNC INT Info_Mod_Rumbold_SecondWarn_Condition()
 
 func void Info_Mod_Rumbold_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Rumbold_SecondWarn_10_00"); //Hey, hörst du schlecht? Dur darfst da nicht rein.
+	AI_Output (self, hero,"Info_Mod_Rumbold_SecondWarn_10_00"); //Hej, slyszysz zle? Nie mozna tam wejsc.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Rumbold_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -148,7 +148,7 @@ func void Info_Mod_Rumbold_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Rumbold_Attack_10_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Rumbold_Attack_10_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

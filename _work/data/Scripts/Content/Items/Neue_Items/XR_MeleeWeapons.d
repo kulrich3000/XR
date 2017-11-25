@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_quantarie_XR_06 (C_Item)
 {
-	name 				=	"Schwert 06";
+	name 				=	"Miecz 06";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -28,7 +28,7 @@ INSTANCE ItMw_quantarie_XR_06 (C_Item)
 
 INSTANCE ItMw_quantarie_XR_06_Geschaerft (C_Item)
 {
-	name 				=	"Schwert 06 (geschärft)";
+	name 				=	"Miecz 06 (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -54,7 +54,7 @@ INSTANCE ItMw_quantarie_XR_06_Geschaerft (C_Item)
 
 INSTANCE ItMw_quantarie_XR_07 (C_Item)
 {
-	name 				=	"Schwert 07";
+	name 				=	"Sweter 07";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -80,7 +80,7 @@ INSTANCE ItMw_quantarie_XR_07 (C_Item)
 
 INSTANCE ItMw_quantarie_XR_07_Geschaerft (C_Item)
 {
-	name 				=	"Schwert 07 (geschärft)";
+	name 				=	"Miecz 07 (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -108,7 +108,7 @@ INSTANCE ItMw_quantarie_XR_07_Geschaerft (C_Item)
 
 INSTANCE ItMw_quantarie_XR_08 (C_Item)
 {
-	name 				=	"Schwert 08";
+	name 				=	"Miecz 08";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -134,7 +134,7 @@ INSTANCE ItMw_quantarie_XR_08 (C_Item)
 
 INSTANCE ItMw_quantarie_XR_08_Geschaerft (C_Item)
 {
-	name 				=	"Schwert 08 (geschärft)";
+	name 				=	"Miecz 08 (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -162,7 +162,7 @@ INSTANCE ItMw_quantarie_XR_08_Geschaerft (C_Item)
 
 INSTANCE ItMw_Daemonenjaegerschwert (C_Item)
 {
-	name 				=	"Dämonenjägerschwert";
+	name 				=	"demoniczny mysliwy miecz lowca";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -193,7 +193,7 @@ INSTANCE ItMw_Daemonenjaegerschwert (C_Item)
 
 INSTANCE ItMw_Daemonenjaegerschwert_Geschaerft (C_Item)
 {
-	name 				=	"Dämonenjägerschwert (geschärft)";
+	name 				=	"Demon Hunter Sword (miecz mysliwski ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -238,7 +238,7 @@ FUNC VOID UnEquip_Daemonenjaegerschwert()
 
 INSTANCE ItMw_Opferschwert (C_Item)
 {
-	name 				=	"Opferschwert";
+	name 				=	"ofiarny miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -269,7 +269,7 @@ INSTANCE ItMw_Opferschwert (C_Item)
 
 INSTANCE ItMw_Opferschwert_Geschaerft (C_Item)
 {
-	name 				=	"Opferschwert (geschärft)";
+	name 				=	"Miecz ofiarny (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -314,7 +314,7 @@ FUNC VOID UnEquip_Opferschwert()
 
 INSTANCE ItMw_Zweiklinge (C_Item)
 {
-	name 				=	"Zweiklinge";
+	name 				=	"podwójny brzeszczot";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -340,7 +340,7 @@ INSTANCE ItMw_Zweiklinge (C_Item)
 
 INSTANCE ItMw_Zweiklinge_Geschaerft (C_Item)
 {
-	name 				=	"Zweiklinge (geschärft)";
+	name 				=	"Podwójne ostrze (wyostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;

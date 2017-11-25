@@ -1,7 +1,7 @@
 instance Mod_109_MIL_Rick_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rick";	
+	name 		= "rik";	
 	guild 		= GIL_PAL;  
 	id 			= 109;
 	voice 		= 10;

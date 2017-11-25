@@ -1,7 +1,7 @@
 INSTANCE Mod_7329_HS_Raufbold_HAL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Ritter von und zu Raufbold"; 
+	name 		= "Rycerz królewski od i do Raufold"; 
 	guild 		= GIL_OUT;
 	id 			= 7329;
 	voice 		= 13;

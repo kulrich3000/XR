@@ -1,7 +1,7 @@
 instance Mod_7021_GUR_CorKalom_OT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Cor Kalom";
+	name 		=		"Korn Kalom";
 	Npctype 	=		NPCTYPE_Main;
 	guild 		=		GIL_DMT;
 	level 		=		28;

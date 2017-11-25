@@ -1,7 +1,7 @@
 instance Mod_7649_OUT_Urs_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Urs";
+	name 		= "rs";
 	guild 		= GIL_OUT;
 	id 			= 7649;
 	voice 		= 12;

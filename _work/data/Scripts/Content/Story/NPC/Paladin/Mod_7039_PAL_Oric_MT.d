@@ -1,7 +1,7 @@
 instance Mod_7039_PAL_Oric_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Oric";
+	name 		= "ordynacja";
 	guild 		= GIL_PAL;
 	id 			= 7039;
 	voice 		= 11;

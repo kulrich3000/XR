@@ -1,7 +1,7 @@
 INSTANCE Mod_941_PIR_Angus_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Angus";
+	name 		= "aniol";
 	guild 		= GIL_NONE;
 	id 			= 941;
 	voice 		= 6;

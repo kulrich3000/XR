@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Aerwak_Hi (C_INFO)
 	information	= Info_Mod_Aerwak_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht’s?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_Aerwak_Hi_Condition()
@@ -16,21 +16,21 @@ FUNC INT Info_Mod_Aerwak_Hi_Condition()
 
 FUNC VOID Info_Mod_Aerwak_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_15_00"); //Wie geht’s?
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_01_01"); //Ach ne, nicht schon wieder so einer.
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_15_02"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_01_03"); //Einer von euch Fremden. Nur Probleme macht eures Gleichen hier im Dorf. Euch Pack sollte man gar nicht erst hier rein lassen.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_01_01"); //O nie, nie inny raz jeszcze tak.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_15_02"); //Co myslisz?
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_01_03"); //Jeden z Was obcy. To tylko problem dla rówiesnika w wiosce. Nie powinno sie nawet pozwolic, zebyscie sie tu zapakowali.
 
 	Info_ClearChoices	(Info_Mod_Aerwak_Hi);
 
-	Info_AddChoice	(Info_Mod_Aerwak_Hi, "Du riskierst eine ganz schön dicke Lippe, mein Freundchen.", Info_Mod_Aerwak_Hi_B);
-	Info_AddChoice	(Info_Mod_Aerwak_Hi, "Was ist dein Problem?", Info_Mod_Aerwak_Hi_A);
+	Info_AddChoice	(Info_Mod_Aerwak_Hi, "Zaryzykujesz sobie dosc duza warge, mój przyjaciel.", Info_Mod_Aerwak_Hi_B);
+	Info_AddChoice	(Info_Mod_Aerwak_Hi, "Jaki jest twój problem?", Info_Mod_Aerwak_Hi_A);
 };
 
 FUNC VOID Info_Mod_Aerwak_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_B_15_00"); //Du riskierst eine ganz schön dicke Lippe, mein Freundchen.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_B_01_01"); //Dicke Lippe?! Die hast du gleich!
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_B_15_00"); //Zaryzykujesz sobie dosc duza warge, mój przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_B_01_01"); //Czy masz wiecej wargi? Jestes prawie tam!
 
 	Info_ClearChoices	(Info_Mod_Aerwak_Hi);
 
@@ -43,18 +43,18 @@ FUNC VOID Info_Mod_Aerwak_Hi_B()
 
 FUNC VOID Info_Mod_Aerwak_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_00"); //Was ist dein Problem?
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_01"); //Ihr Fremden seid mein Problem. Und ich bin nicht der einzige, der das so sieht.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_02"); //Kaum seid ihr hier, steckt ihr überall eure Nase hinein, betretet fremde Häuser, als ob sie euer Eigentum wären ... und ... (überlegt) und ...
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_03"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_04"); //Ähhm ... ja, genau ... es gibt nur noch schlechten Fisch zu kaufen.
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_05"); //Was kann ich denn für den Fisch?
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_06"); //Du nicht direkt, aber du bist ja auch so einer wie der Gestath.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_07"); //Seitdem der hier sein Jagdgeschäft aufgemacht hat und alle als Jäger für sich ackern lässt, ist nur noch Anglar als Fischhändler geblieben ... der kann es sich also leisten, uns alten Fisch zu verkaufen.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_08"); //Eivar hat seinen Fischstand dicht gemacht, um wie viele andere das große Geld bei Gestath zu machen, oder irgendwelchen unnützen Schnickschnack von ihm zu erhandeln. So ein Idiot.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_09"); //Und Aldaro kann nicht angeln, weil er krank ist.
-	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_10"); //Und daran bin ich vermutlich auch Schuld ...
-	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_11"); //Ach, mach, dass du wegkommst.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_00"); //Jaki jest twój problem?
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_01"); //Wy obcy jestescie moim problemem. I nie jestem jedynym, który tak to widzi.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_02"); //Gdy tylko tu jestes, wszedzie trzymasz nos, wchodzisz do zagranicznych domów, jak gdyby byly twoja wlasnoscia.... oraz..... i... (badania rozwazane) oraz......
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_03"); //Tak?
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_04"); //Um.... tak, dokladnie..... do kupienia pozostaly tylko zle ryby.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_05"); //Co moge zrobic dla ryb?
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_06"); //Nie jestes bezposredni, ale jestes jak Gestath.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_07"); //Od kiedy otworzyl tu swój zaklad lowiecki i pozwolil wszystkim polowac dla siebie, tylko Anglar pozostal jako rybak.... wiec moze sobie pozwolic na sprzedanie nam starej ryby.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_08"); //Eivar zamknal swoje stoisko z rybami, aby zarobic jak wiele innych pieniedzy na Gestath, lub zdobyc od niego bezuzyteczne knick-knack. Co to jest idiota.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_09"); //A Aldaro nie moze lowic ryb, poniewaz jest chory.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Hi_A_15_10"); //I to prawdopodobnie równiez moja wina....
+	AI_Output(self, hero, "Info_Mod_Aerwak_Hi_A_01_11"); //Och, wyrzuc z niego pieklo.
 
 	Info_ClearChoices	(Info_Mod_Aerwak_Hi);
 
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Aerwak_Aldaro (C_INFO)
 	information	= Info_Mod_Aerwak_Aldaro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aldaro ist wieder gesund.";
+	description	= "Aldaro znów jest dobrze.";
 };
 
 FUNC INT Info_Mod_Aerwak_Aldaro_Condition()
@@ -84,12 +84,12 @@ FUNC INT Info_Mod_Aerwak_Aldaro_Condition()
 
 FUNC VOID Info_Mod_Aerwak_Aldaro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_00"); //Aldaro ist wieder gesund.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_01"); //Schön für ihn ... musst du mich deshalb so blöd von der Seite anquatschen, Fremder?
-	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_02"); //Du hattest dich doch über Anglars Fische beschwert ...
-	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_03"); //Hä, ja und?
-	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_04"); //Anglar wird wieder angeln gehen.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_05"); //Hä ... (gleichgültig) ach ja ... das ist toll ... (abfällig) War das alles? Dann kannst du wieder gehen.
+	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_00"); //Aldaro znów jest dobrze.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_01"); //Dobre dla niego.... Czy dlatego musisz rozmawiac ze mna z boku, obcy?
+	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_02"); //Narzekaliscie na rybe Anglara....
+	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_03"); //Huh, tak, i?
+	AI_Output(hero, self, "Info_Mod_Aerwak_Aldaro_15_04"); //Jaszczurka znów bedzie lowil ryby.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Aldaro_01_05"); //uh-huh. Oh, tak...... to wspaniale.... Czy to wszystko? Wtedy mozesz wrócic.
 
 	B_GivePlayerXP	(200);
 };
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Aerwak_Eivar (C_INFO)
 	information	= Info_Mod_Aerwak_Eivar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Eivar gefunden. Er ist einem Raubtier zum Opfer gefallen.";
+	description	= "Znalazlem Eivara. Zostal on ofiara drapieznika.";
 };
 
 FUNC INT Info_Mod_Aerwak_Eivar_Condition()
@@ -117,11 +117,11 @@ FUNC INT Info_Mod_Aerwak_Eivar_Condition()
 
 FUNC VOID Info_Mod_Aerwak_Eivar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aerwak_Eivar_15_00"); //Ich habe Eivar gefunden. Er ist einem Raubtier zum Opfer gefallen.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_01"); //Was?! Dann ... (sich aufbauschend) dann habt ihr Fremden seinen Tod zu verantworten ... (wütend pathetisch) den Tod ... meines liebsten Bruders unserer Dorfgemeinschaft!
-	AI_Output(hero, self, "Info_Mod_Aerwak_Eivar_15_02"); //He, vor kurzem hast du ihn aber noch als Idioten bezeichnet!
-	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_03"); //(stammelnd) Ähhm ... nein ... das habe ich so nie gesagt ... (wieder sich aggressiv aufbauend) Jedenfalls habe ich von Beginn an gewusst, dass man eures gleichen niemals hätte ins Dorf hinein lassen sollen.
-	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_04"); //Ich werde dir dreckigen Fremden die Lektion erteilen, die dir zusteht!
+	AI_Output(hero, self, "Info_Mod_Aerwak_Eivar_15_00"); //Znalazlem Eivara. Zostal on ofiara drapieznika.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_01"); //Co? Wtedy..... (zwiedzajacy) wtedy obce osoby musza odpowiedziec na jego smierc...... (irate zalosna) smierc...... mego najblizszego brata naszej spolecznosci wiejskiej!
+	AI_Output(hero, self, "Info_Mod_Aerwak_Eivar_15_02"); //Hej, po prostu zadzwoniles do niego idiota!
+	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_03"); //(rozmycie) Um..... bez Nigdy nie powiedzialem tego.... (agresywna odbudowa) W kazdym razie od samego poczatku wiedzialem, ze nigdy nie powinni byli wpuscic waszego do wioski.
+	AI_Output(self, hero, "Info_Mod_Aerwak_Eivar_01_04"); //Naucze Cie brudnych obcych lekcji, na która zaslugujesz!
 
 	AI_StopProcessInfos	(self);
 

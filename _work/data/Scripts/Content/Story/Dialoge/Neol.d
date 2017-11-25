@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Neol_Hi (C_INFO)
 	information	= Info_Mod_Neol_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst aus wie jemand, der gut einen wegstecken kann.";
+	description	= "Wygladasz jak ktos, kto jest dobry odkladajac ja na pózniej.";
 };
 
 FUNC INT Info_Mod_Neol_Hi_Condition()
@@ -16,47 +16,47 @@ FUNC INT Info_Mod_Neol_Hi_Condition()
 
 FUNC VOID Info_Mod_Neol_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Hi_15_00"); //Du siehst aus wie jemand, der gut einen wegstecken kann.
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_01_01"); //Das kannst du aber laut sagen! Du siehst allerdings nicht so aus, als würdest du viel vertragen.
+	AI_Output(hero, self, "Info_Mod_Neol_Hi_15_00"); //Wygladasz jak ktos, kto jest dobry odkladajac ja na pózniej.
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_01_01"); //Mozesz to powiedziec jeszcze raz! Nie wydaje Ci sie jednak, ze mozesz wiele zabrac.
 
 	Info_ClearChoices	(Info_Mod_Neol_Hi);
 
-	Info_AddChoice	(Info_Mod_Neol_Hi, "Da hast du Recht. Ich glaube, ich gehe besser.", Info_Mod_Neol_Hi_B);
-	Info_AddChoice	(Info_Mod_Neol_Hi, "Willst du es drauf ankommen lassen?", Info_Mod_Neol_Hi_A);
+	Info_AddChoice	(Info_Mod_Neol_Hi, "Ma pani racje. Mysle, ze lepiej bym poszedl.", Info_Mod_Neol_Hi_B);
+	Info_AddChoice	(Info_Mod_Neol_Hi, "Chcesz skorzystac z szansy?", Info_Mod_Neol_Hi_A);
 };
 
 FUNC VOID Info_Mod_Neol_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Hi_B_15_00"); //Da hast du Recht. Ich glaube, ich gehe besser.
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_B_01_01"); //Hehe, das ist auch besser für dich.
+	AI_Output(hero, self, "Info_Mod_Neol_Hi_B_15_00"); //Ma pani racje. Mysle, ze lepiej bym poszedl.
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_B_01_01"); //Hej, to lepiej takze dla Ciebie.
 
 	Info_ClearChoices	(Info_Mod_Neol_Hi);
 };
 
 FUNC VOID Info_Mod_Neol_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Hi_A_15_00"); //Willst du es drauf ankommen lassen?
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_A_01_01"); //Worauf du einen lassen kannst, Bürschchen. (lacht)
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_A_01_02"); //Ich wette mit dir, dass du mich nicht unter den Tisch trinken kannst!
+	AI_Output(hero, self, "Info_Mod_Neol_Hi_A_15_00"); //Chcesz skorzystac z szansy?
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_A_01_01"); //Mozesz postawic swoje tylek, buster. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_A_01_02"); //Zakladam, ze nie mozesz mnie pic pod stolem!
 
 	Info_ClearChoices	(Info_Mod_Neol_Hi);
 
-	Info_AddChoice	(Info_Mod_Neol_Hi, "Nein danke, aus Glücksspielen halte ich mich lieber raus.", Info_Mod_Neol_Hi_D);
-	Info_AddChoice	(Info_Mod_Neol_Hi, "(Stärke) Ich bin dabei. Her mit dem Bier!", Info_Mod_Neol_Hi_C);
+	Info_AddChoice	(Info_Mod_Neol_Hi, "Nie, dziekuje, ja wolalabym nie grac.", Info_Mod_Neol_Hi_D);
+	Info_AddChoice	(Info_Mod_Neol_Hi, "(Silny) Jestem. Daj mi piwo!", Info_Mod_Neol_Hi_C);
 };
 
 FUNC VOID Info_Mod_Neol_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Hi_D_15_00"); //Nein danke, aus Glücksspielen halte ich mich lieber raus.
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_D_01_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Neol_Hi_D_15_00"); //Nie, dziekuje, ja wolalabym nie grac.
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_D_01_01"); //Cokolwiek mówisz.
 
 	Info_ClearChoices	(Info_Mod_Neol_Hi);
 };
 
 FUNC VOID Info_Mod_Neol_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_00"); //Ich bin dabei. Her mit dem Bier!
-	AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_01"); //Hier. Möge der Bessere gewinnen!
+	AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_00"); //Jestem. Daj mi piwo!
+	AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_01"); //Tutaj. Niech zwyciezy lepszy czlowiek!
 
 	B_GiveInvItems	(self, hero, ItFo_Beer, 1);
 	CreateInvItems	(self, ItFo_Beer, 10);
@@ -66,8 +66,8 @@ FUNC VOID Info_Mod_Neol_Hi_C()
 
 	if (hero.attribute[ATR_STRENGTH] >= 20)
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_02"); //Das war ja gar nichts.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_03"); //Du hast Recht, Bürschchen. Hier ist die nächste Flasche.
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_02"); //To nie bylo nic.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_03"); //Masz racje, maluczki. Oto kolejna butelka.
 
 		B_GiveInvItems	(self, hero, ItFo_Beer, 1);
 		CreateInvItems	(self, ItFo_Beer, 10);
@@ -78,8 +78,8 @@ FUNC VOID Info_Mod_Neol_Hi_C()
 
 	if (hero.attribute[ATR_STRENGTH] >= 40)
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_04"); //Mmh, lecker. Davon hätte ich gerne noch eins.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_05"); //Du hast Recht, Bürschchen. Hier ist die nächste Flasche.
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_04"); //Mmh, Yummy. Chcialbym jeszcze jeden.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_05"); //Masz racje, maluczki. Oto kolejna butelka.
 
 		B_GiveInvItems	(self, hero, ItFo_Beer, 1);
 		CreateInvItems	(self, ItFo_Beer, 10);
@@ -90,8 +90,8 @@ FUNC VOID Info_Mod_Neol_Hi_C()
 
 	if (hero.attribute[ATR_STRENGTH] >= 50)
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_06"); //Eins geht noch.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_07"); //Jaa ... eins geht immer noch! Hier!
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_06"); //Jest jedna rzecz, która moge zrobic.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_07"); //Tak..... Wciaz dziala! Tutaj!
 
 		B_GiveInvItems	(self, hero, ItFo_Beer, 1);
 		CreateInvItems	(self, ItFo_Beer, 10);
@@ -102,9 +102,9 @@ FUNC VOID Info_Mod_Neol_Hi_C()
 
 	if (hero.attribute[ATR_STRENGTH] >= 60)
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_08"); //War das schon alles?
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_09"); //Puh! Mir wird ein bisschen schwummrig. Aber diese Flasche schaff ... schaff ich wohl noch.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_10"); //Hier, noch eine für dich.
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_08"); //Czy to wszystko, co dostales?
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_09"); //na kólkach! Mam troche zawrotów glowy. Ale ta butelka moze.... Mysle, ze moge sobie poradzic.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_10"); //Oto kolejna dla Ciebie.
 
 		B_GiveInvItems	(self, hero, ItFo_Beer, 1);
 		CreateInvItems	(self, ItFo_Beer, 10);
@@ -115,21 +115,21 @@ FUNC VOID Info_Mod_Neol_Hi_C()
 
 	if (hero.attribute[ATR_STRENGTH] >= 70)
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_11"); //Ich stehe noch!
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_12"); //Ich hab dich escht unnerschätzt, Bürschsch ... bür ... mein Freund.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_13"); //Hier, die Flasche geht aufsch Haus!
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_11"); //Ciagle stoje!
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_12"); //Nie docenilam cie tak bardzo, buster..... burzuazja mój przyjaciel.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_13"); //Tutaj butelka idzie na góre!
 
 		CreateInvItems	(hero, ItMi_Gold, 50);
 		CreateInvItems	(hero, ItFo_Beer, 1);
 
-		B_ShowGivenThings	("50 Gold und ein Bier erhalten");
+		B_ShowGivenThings	("50 zlota i piwo otrzymane");
 
 		B_GivePlayerXP	(50);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_14"); //Puh, mehr vertrage ich nicht.
-		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_15"); //Ich bin enttäuscht, Bürschchen.
+		AI_Output(hero, self, "Info_Mod_Neol_Hi_C_15_14"); //Phew, to wszystko, co moge wziac.
+		AI_Output(self, hero, "Info_Mod_Neol_Hi_C_01_15"); //Jestem rozczarowany, brudny.
 	};
 
 	Info_ClearChoices	(Info_Mod_Neol_Hi);
@@ -143,7 +143,7 @@ INSTANCE Info_Mod_Neol_Faice01 (C_INFO)
 	information	= Info_Mod_Neol_Faice01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist in letzter Zeit irgendetwas Verdächtiges passiert?";
+	description	= "Czy ostatnio wydarzylo sie cos podejrzanego?";
 };
 
 FUNC INT Info_Mod_Neol_Faice01_Condition()
@@ -157,8 +157,8 @@ FUNC INT Info_Mod_Neol_Faice01_Condition()
 
 FUNC VOID Info_Mod_Neol_Faice01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Faice01_15_00"); //Ist in letzter Zeit irgendetwas Verdächtiges passiert?
-	AI_Output(self, hero, "Info_Mod_Neol_Faice01_01_01"); //Nicht, dass ich wüsste. Rede mal mit den anderen.
+	AI_Output(hero, self, "Info_Mod_Neol_Faice01_15_00"); //Czy ostatnio wydarzylo sie cos podejrzanego?
+	AI_Output(self, hero, "Info_Mod_Neol_Faice01_01_01"); //Nie wiem o tym. Porozmawiaj z innymi.
 };
 
 INSTANCE Info_Mod_Neol_Faice02 (C_INFO)
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Neol_Faice02 (C_INFO)
 	information	= Info_Mod_Neol_Faice02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir etwas über die Vergiftung der Spruchrolle von Faice zu Ohren gekommen?";
+	description	= "Czy slyszales cos o zatruciu roli Faice' a?";
 };
 
 FUNC INT Info_Mod_Neol_Faice02_Condition()
@@ -183,8 +183,8 @@ FUNC INT Info_Mod_Neol_Faice02_Condition()
 
 FUNC VOID Info_Mod_Neol_Faice02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Faice02_15_00"); //Ist dir etwas über die Vergiftung der Spruchrolle von Faice zu Ohren gekommen?
-	AI_Output(self, hero, "Info_Mod_Neol_Faice02_01_01"); //Nein, nichts Neues.
+	AI_Output(hero, self, "Info_Mod_Neol_Faice02_15_00"); //Czy slyszales cos o zatruciu roli Faice' a?
+	AI_Output(self, hero, "Info_Mod_Neol_Faice02_01_01"); //Nie, nic nowego.
 };
 
 INSTANCE Info_Mod_Neol_Faice03 (C_INFO)
@@ -195,7 +195,7 @@ INSTANCE Info_Mod_Neol_Faice03 (C_INFO)
 	information	= Info_Mod_Neol_Faice03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es sonst noch etwas, das du loswerden möchtest?";
+	description	= "Czy jest jeszcze cos innego, czego chcesz sie pozbyc?";
 };
 
 FUNC INT Info_Mod_Neol_Faice03_Condition()
@@ -209,8 +209,8 @@ FUNC INT Info_Mod_Neol_Faice03_Condition()
 
 FUNC VOID Info_Mod_Neol_Faice03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neol_Faice03_15_00"); //Gibt es sonst noch etwas, das du loswerden möchtest?
-	AI_Output(self, hero, "Info_Mod_Neol_Faice03_01_01"); //Sprich mal mit Furt. Er könnte vielleicht mehr wissen.
+	AI_Output(hero, self, "Info_Mod_Neol_Faice03_15_00"); //Czy jest jeszcze cos innego, czego chcesz sie pozbyc?
+	AI_Output(self, hero, "Info_Mod_Neol_Faice03_01_01"); //Porozmawiaj z Furtem. Moze wiedziec wiecej.
 };
 
 INSTANCE Info_Mod_Neol_Pickpocket (C_INFO)

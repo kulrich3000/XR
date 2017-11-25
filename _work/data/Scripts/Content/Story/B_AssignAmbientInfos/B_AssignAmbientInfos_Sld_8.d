@@ -24,7 +24,7 @@ FUNC INT Info_Sld_8_EXIT_Condition()
 
 FUNC VOID Info_Sld_8_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_SLD_8_EXIT_08_00"); //Stirb uns nicht weg!
+	AI_Output(self, hero, "DIA_SLD_8_EXIT_08_00"); //Nie umieraj na nas!
 
 	AI_StopProcessInfos	(self);
 };
@@ -39,7 +39,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Könnt ihr noch einen guten Mann brauchen?";
+	description = "Czy mozesz uzyc innego dobrego mezczyzny?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee wird keine Leute bei den Söldnern zulassen, die nicht schon 'ne Zeit lang hier waren und Erfahrung gesammelt haben.
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Wenn du hier im Lager bleiben willst, musst du dich zuerst mit Lares in Khorinis rumschlagen.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Czy mozesz uzyc innego dobrego mezczyzny?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee's not gonna niech którys z najemników, który nie byl tu przez jakis czas i zdobyl doswiadczenie.
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Jesli chcesz zostac w obozie, musisz najpierw zajac sie Laresem w Khorinis.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Sld_8_WichtigePersonen_Condition()
@@ -77,9 +77,9 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Wir Söldner folgen alle Lee. Die meisten hier sind einfach Männer, die im Alten Lager nicht bleiben konnten oder wollten.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_02"); //Hier kocht jeder sein eigenes Süppchen. Die Jungs sind sich nur in einem einig: Wir sammeln hier das ganze Erz aus der Mine. Damit können wir später den König ganz schön unter Druck setzen.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Wszyscy najemnicy podazaja za Lee. Wiekszosc mezczyzn to po prostu mezczyzni, którzy nie mogli lub nie chcieli pozostac w starym obozie.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_02"); //Tutaj kazdy gotuje wlasna zupe. Chlopcy zgodzili sie tylko co do jednej rzeczy: jestesmy tu, aby zebrac cala rude z kopalni. Potem mozemy wywierac presje na króla.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager erzählen?";
+	description = "Co mozesz mi powiedziec o tym obozie?";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -105,11 +105,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Pass auf dich auf, während du hier bist. Im Lager sind 'ne Menge Halsabschneider unterwegs.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Es gibt 'ne Reihe ungeschriebener Gesetze hier. Erstens: Nur die Söldner kommen in den Bereich der Magier.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Zweitens: Wer versucht, an den Erzhaufen ranzukommen, ist ein toter Mann. Drittens: Ich würde nicht versuchen, in die Kneipe auf dem See zu gehen.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Die gehört nämlich den ehemaligen Banditen und die sehen es nicht gerne, wenn grüne Jungs wie du da aufkreuzen.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Co mozesz mi powiedziec o tym obozie?
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Ogladaj swoje plecy, gdy jestes tutaj. W obozie jest wiele kutroli.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Istnieje tu szereg niepisanych praw. Po pierwsze, tylko najemnicy wchodza w sfere magów.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Po drugie, kazdy, kto próbuje dostac sie na halde rudy, jest martwy. Po trzecie, nie próbowalabym isc do pubu nad jezioro.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //To nalezy do bylych bandytów i nie podoba im sie, kiedy zieleni, tacy jak ty, pojawiaja sie.
 };
 
 // *************************************************************************
@@ -122,7 +122,7 @@ INSTANCE Info_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Sld_8_DieLage_Condition;
 	information	= Info_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_Sld_8_DieLage_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Wie immer - wir passen auf, dass keiner dem Erz zu nahe kommt.
+	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Jak zawsze - dbamy o to, aby nikt nie znalazl sie zbyt blisko rudy.
 };
 
 INSTANCE Info_Mod_SLD_8_Pickpocket (C_INFO)

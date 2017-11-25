@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBauer_02_Hi (C_INFO)
 	information	= Info_Mod_HSBauer_02_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Na, wie geht's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_HSBauer_02_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_HSBauer_02_Hi_Condition()
 
 FUNC VOID Info_Mod_HSBauer_02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_02_Hi_15_00"); //Na, wie geht's?
-	AI_Output(self, hero, "Info_Mod_HSBauer_02_Hi_05_01"); //Ich und meine kleinen Zwergenfreunde spielen eine Runde Poker.
-	AI_Output(hero, self, "Info_Mod_HSBauer_02_Hi_15_02"); //Und ... wer gewinnt?
-	AI_Output(self, hero, "Info_Mod_HSBauer_02_Hi_05_03"); //Der mächtige Alien-Zwerg. Er blufft am besten ...
+	AI_Output(hero, self, "Info_Mod_HSBauer_02_Hi_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_HSBauer_02_Hi_05_01"); //Ja i moi przyjaciele z karlowatymi przyjaciólkami gramy w pokera.
+	AI_Output(hero, self, "Info_Mod_HSBauer_02_Hi_15_02"); //I.... Kto wygrywa?
+	AI_Output(self, hero, "Info_Mod_HSBauer_02_Hi_05_03"); //Potezny kosmicki karzel. Jest on najlepszym blefem - jest najlepszy.
 };
 
 INSTANCE Info_Mod_HSBauer_02_Pickpocket (C_INFO)

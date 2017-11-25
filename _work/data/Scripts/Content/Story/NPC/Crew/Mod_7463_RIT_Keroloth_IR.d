@@ -1,7 +1,7 @@
 instance Mod_7463_RIT_Keroloth_IR  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Keroloth";
+	name 		= "Kerolit";
 	guild 		= GIL_OUT;
 	id 			= 7463;
 	voice 		= 7;

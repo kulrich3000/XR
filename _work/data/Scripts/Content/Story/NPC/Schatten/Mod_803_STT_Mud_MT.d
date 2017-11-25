@@ -2,7 +2,7 @@ instance Mod_803_STT_Mud_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Mud";
+	name =							"bloto";
 	npctype =						npctype_main;
 	guild =							GIL_OUT;      
 	level =							0;

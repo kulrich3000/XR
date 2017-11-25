@@ -1,7 +1,7 @@
 INSTANCE Mod_7452_SLD_Cord_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cord";
+	name 		= "przewód";
 	guild 		= GIL_OUT;
 	id 			= 7452;
 	voice 		= 14;

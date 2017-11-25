@@ -2,7 +2,7 @@ instance Mod_1087_BAU_Jeremiah_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Jeremiah";
+	name 		=	"Jeremiasz";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_MIL;      
 	level 		=	7;

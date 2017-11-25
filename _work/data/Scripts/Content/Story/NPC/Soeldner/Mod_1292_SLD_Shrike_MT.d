@@ -2,7 +2,7 @@ instance Mod_1292_SLD_Shrike_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Shrike";
+	name =					"gasior";
 	Npctype =				Npctype_Main;
 	guild =					GIL_mil;      
 	level =					6;

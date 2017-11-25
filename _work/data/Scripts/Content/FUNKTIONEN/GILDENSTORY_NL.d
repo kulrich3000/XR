@@ -14,7 +14,7 @@ FUNC VOID GILDENSTORY_NL ()
 		{
 			Mod_SLD_Shrike = 2;
 
-			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Verdammt, wo ist Shrike? Jetzt darf ich noch mal zu Patrick laufen.");
+			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Gdzie pieklo jest Shrike? Teraz znów moge chodzic do Patricka.");
 		};
 
 		// Jagd mit Fester
@@ -41,9 +41,9 @@ FUNC VOID GILDENSTORY_NL ()
 		{
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_SLDSpy_15_00"); //Das sollte an Informationen reichen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_SLDSpy_15_00"); //To powinna byc wystarczajaca ilosc informacji.
 
-			B_LogEntry	(TOPIC_MOD_SLD_SPY, "Ok, das ergibt schon ein klares Bild und sollte reichen. Jetzt sollte ich alsbald Bericht erstatten.");
+			B_LogEntry	(TOPIC_MOD_SLD_SPY, "Okay, to da Ci jasny obraz i powinienes to zrobic. Teraz powinienem jak najszybciej zlozyc sprawozdanie.");
 
 			Mod_SLD_Spy = 1;
 		};
@@ -87,7 +87,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			B_KillNpc	(Mod_796_SLD_Sentenza_MT);
 
-			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "Das muss der Schlüssel sein. Tja, der Söldner hat es nicht ganz geschafft den Schlüssel zu seinem Bestimmungsort zu bringen.");
+			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "To musi byc kluczem. No cóz, najemnikowi nie udalo sie sprowadzic klucza do celu.");
 		};
 
 		if (Mod_SLD_Wettstreit == 2)
@@ -95,7 +95,7 @@ FUNC VOID GILDENSTORY_NL ()
 		{
 			Mod_SLD_Wettstreit = 3;
 
-			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "So, das muss wohl der gesamte Inhalt der Truhe gewesen. Jetzt zu Lee damit.");
+			B_LogEntry	(TOPIC_MOD_SLD_ORKJAEGER, "Cóz, to musiala byc cala zawartosc klatki piersiowej. Teraz do Lee z nim.");
 		};
 
 		// Ein Ort ewiger Ruhe
@@ -176,7 +176,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			B_SetAttitude	(Mod_7246_SLD_Orkjaeger_MT, ATT_HOSTILE);
 
-			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Verdammt. Was für ein übler Zauber ist das schon wieder?! Mit viel Unterstützung von den beiden kann ich wohl nicht rechnen.");
+			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Damn go. Jaki jest to czar zla? Nie moge liczyc na duze poparcie tych dwóch osób.");
 		};
 
 		// Untoten Shamanen im Sumpf spawnen
@@ -272,7 +272,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			Npc_ClearAIQueue	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_UDOS_WaitDay_15_00"); //Ächz, das war zu viel. Ich sollte mich erst mal eine Runde schlafen legen und dann weitersehen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_UDOS_WaitDay_15_00"); //Uh, to bylo za duzo. Najpierw powinienem zasnac i zobaczyc, co sie dzieje.
 		};
 	};
 
@@ -386,7 +386,7 @@ FUNC VOID GILDENSTORY_NL ()
 			B_KillNpc	(UndeadOrcWarrior_Geiselwache_05);
 			B_KillNpc	(UndeadOrcWarrior_Geiselwache_06);
 
-			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Die Barriere ist weg und die Geiseln frei. Jetzt gibt es nicht mehr, was den untoten Unrat vor mir schützt.");
+			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Bariera zniknela, a zakladnicy sa darmowi. Nieumarly brud przed mna nie ma juz nic do ochrony.");
 		};
 
 		if (Mod_NL_UOS == 6)
@@ -408,7 +408,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 				Wld_SendTrigger	("EVT_OGY_BARRIERE");
 
-				B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Tja, das lief nicht ganz so gut, die Geiseln sind hinüber. Hoffentlich erfährt niemand etwas von meinem Patzer.");
+				B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "No cóz, to nie poszlo za dobrze, zakladnicy znikneli. Mam nadzieje, ze nikt nie dowie sie o moim podstepie.");
 			};
 		};
 
@@ -419,7 +419,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			Wld_SendTrigger	("EVT_OGY_BARRIERE");
 
-			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Die Barriere ist weg und die Geiseln frei. Jetzt kann ich mir endlich das Buch vom Schamanen holen.");
+			B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Bariera zniknela, a zakladnicy sa darmowi. Teraz moge wreszcie dostac szamanska ksiazke.");
 		};
 
 		// Gebunden und verborgen
@@ -431,7 +431,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			Log_CreateTopic	(TOPIC_MOD_NL_SIEGELBUCH, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_NL_SIEGELBUCH, LOG_RUNNING);
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Hmm, ein weiteres Buch. Scheinbar hatte dieser untote Fleischklops eine Vorliebe für bizarre Literatur.");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Hmm, kolejna ksiazka. Najwyrazniej ten nieumarly bochenek miesa mial zamilowanie do dziwacznej literatury.");
 		};
 
 		// Untoter Shamane nicht mehr immortal
@@ -503,7 +503,7 @@ FUNC VOID GILDENSTORY_NL ()
 	{
 		if (Mod_NL_Siegelbuch >= 2)
 		{
-			MOBNAME_XR_STEINKREISMITTE = "Steinkreismitte";
+			MOBNAME_XR_STEINKREISMITTE = "kolo kamienne";
 		};
 
 		// Kerker und Drachen
@@ -545,7 +545,7 @@ FUNC VOID GILDENSTORY_NL ()
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_LichDungeon_15_00"); //Und, habt ihr den Finsterling erwischt und erledigt?
+				AI_Output(hero, NULL, "Info_Mod_Hero_LichDungeon_15_00"); //Wiec czy chlopaki dostaliscie te ponura i dokonczyliscie?
 			};
 
 			if (Mod_NL_PalasLich == 5)
@@ -571,7 +571,7 @@ FUNC VOID GILDENSTORY_NL ()
 
 			Wld_SendTrigger	("LICHDUNGEON");
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_LichDungeon_15_01"); //Der wäre perdu.
+			AI_Output(hero, NULL, "Info_Mod_Hero_LichDungeon_15_01"); //Byloby to w porzadku.
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Lich_Unbesiegbar))
@@ -617,7 +617,7 @@ FUNC VOID GILDENSTORY_NL ()
 		&& (Npc_KnowsInfo(hero, Info_Mod_Lich_Unbesiegbar))
 		&& (Mod_NL_Dragon_KnowsLich == 0)
 		{
-			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Aha, der untote Magier in seinem Kerker.");
+			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Aha, nieumarly magik w swoim lochu.");
 
 			Mod_NL_Dragon_KnowsLich = 1;
 		};
@@ -625,7 +625,7 @@ FUNC VOID GILDENSTORY_NL ()
 		if (Npc_KnowsInfo(hero, Info_Mod_Dragon_KlosterErfolg))
 		&& (Mod_NL_Dragon_KnowsBook == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Gegenstand der Leben birgt? Klar, der Gegenstand, an welchen der untote Magier seine Lebenskraft gebunden hat.");
+			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "przedmiot zycia? Oczywiste jest, ze przedmiot, którym magik zawiazal swoja sile zyciowa.");
 
 			Mod_NL_Dragon_KnowsBook = 2;
 		};
@@ -638,9 +638,9 @@ FUNC VOID GILDENSTORY_NL ()
 
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_DragonLich_Land_15_00"); //Hmm, aber im Lande des Korns der Mutter ein Moor und seine Bewohnerin, dich sich dem Mächtigen verbirgt und vermutlich den Gegenstand bei sich hat. Nun, bleibt mir wohl nichts anderes übrig, als Xardas erneut um Rat zu Fragen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_DragonLich_Land_15_00"); //Hmm, ale w krainie zboza matki moczar i jego mieszkaniec, ukrywajac cie przed poteznymi i prawdopodobnie niosac przedmiot z toba. No cóz, nie mam innego wyjscia niz poprosic Xardasa o rade.
 
-			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Hmm, aber im Lande des Korns der Mutter ein Moor und seine Bewohnerin, dich sich dem Mächtigen verbirgt und vermutlich den Gegenstand bei sich hat.");
+			B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Hmm, ale w krainie zboza matki moczar i jego mieszkaniec, ukrywajac cie przed poteznymi i prawdopodobnie niosac przedmiot z toba.");
 			B_SetTopicStatus	(TOPIC_MOD_NL_DRAGON, LOG_SUCCESS);
 		};
 
@@ -651,7 +651,7 @@ FUNC VOID GILDENSTORY_NL ()
 		{
 			Mod_NL_HeroHasStab = 1;
 
-			B_LogEntry	(TOPIC_MOD_NL_STAB, "Ich habe den Stab.");
+			B_LogEntry	(TOPIC_MOD_NL_STAB, "Mam personel.");
 		};
 
 		if (Mod_NL_HasKamm == 2)
@@ -870,7 +870,7 @@ FUNC VOID GILDENSTORY_NL ()
 				Wld_InsertNpc	(Mod_7295_OUT_Moorhexe_REL,	"REL_MOOR_131");
 			} else if (Mod_Moorhexe_Hint == FALSE) {
 				Mod_Moorhexe_Hint = TRUE;
-				B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Ich spüre eine Präsenz an diesem Ort, allerdings kann ich nichts sehen. Ich sollte mich jetzt verwandeln.");
+				B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Czuje obecnosc w tym miejscu, ale nic nie widze. Zwracam sie teraz.");
 			};
 		};
 
@@ -879,7 +879,7 @@ FUNC VOID GILDENSTORY_NL ()
 		{
 			Mod_NL_HasKamm = 1;
 
-			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "So was. Hier und da etwas magisches Erz eingearbeitet, aber sonst ein schlichter Kamm. Nie wäre jemand auf den Gedanken gekommen, dieser Gegenstand könnte die Lebenskraft des Untoten in sich bergen. Nun brauche ich ihn nur noch zu vernichten. Das Feuer eines Schmiedeofens dürfte diesen Zweck erfüllen.");
+			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Cos takiego. Tu i tam jakas magiczna ruda, ale inaczej prosty grzebien. Nikt by nigdy nie pomyslal, ze ten przedmiot moze utrzymac sile zyciowa nieumarlych. Teraz musze tylko go zniszczyc. Pozar pieca kuzniczego powinien spelniac ten cel.");
 		};
 
 		if ((Mod_NL_Grimbald == 3)

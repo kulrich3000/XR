@@ -1,7 +1,7 @@
 instance Mod_7391_OUT_Henker_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Henker"; 
+	name 		= "kat"; 
 	guild 		= GIL_OUT;
 	id 			= 7391;
 	voice 		= 5;

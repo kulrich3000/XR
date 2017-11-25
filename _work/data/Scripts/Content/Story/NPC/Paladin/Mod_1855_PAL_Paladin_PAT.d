@@ -1,7 +1,7 @@
 instance Mod_1855_PAL_Paladin_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hauptmann";
+	name 		= "kapitan";
 	guild 		= GIL_pal;
 	id 			= 1855;
 	voice 		= 13;

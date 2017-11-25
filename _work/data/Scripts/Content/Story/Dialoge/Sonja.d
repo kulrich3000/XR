@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sonja_Hi (C_INFO)
 	information	= Info_Mod_Sonja_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Arbeitest du hier?";
+	description	= "Czy pracujesz tutaj?";
 };
 
 FUNC INT Info_Mod_Sonja_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Sonja_Hi_Condition()
 
 FUNC VOID Info_Mod_Sonja_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Hi_15_00"); //Arbeitest du hier?
-	AI_Output(self, hero, "Info_Mod_Sonja_Hi_16_01"); //Na, wonach sieht's denn aus? Kann ich dich irgendwie ... zufrieden stellen?
+	AI_Output(hero, self, "Info_Mod_Sonja_Hi_15_00"); //Czy pracujesz tutaj?
+	AI_Output(self, hero, "Info_Mod_Sonja_Hi_16_01"); //Jak to wyglada? Czy jest jakas droga, która moge cie zdobyc? aby Cie zadowolic?
 };
 
 INSTANCE Info_Mod_Sonja_News (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Sonja_News (C_INFO)
 	information	= Info_Mod_Sonja_News_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bekommst doch hier sicher auch einiges an Neuigkeiten mit.";
+	description	= "Jestem pewien, ze znajdziesz tutaj kilka nowosci.";
 };
 
 FUNC INT Info_Mod_Sonja_News_Condition()
@@ -41,14 +41,14 @@ FUNC INT Info_Mod_Sonja_News_Condition()
 
 FUNC VOID Info_Mod_Sonja_News_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_News_15_00"); //Du bekommst doch hier sicher auch einiges an Neuigkeiten mit.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_01"); //In den Armen einer gefühlvollen Frau wird jeder schweigsame Mann zum geschwätzigen Knaben.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_02"); //Ja, ich kenne mich von Matteos Heirat bis zu Constantinos geheimen Vorlieben aus.
-	AI_Output(hero, self, "Info_Mod_Sonja_News_15_03"); //Und was hörst du so von deinen Kunden?
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_04"); //Ich höre viel Ungewissheit und Verzweiflung wegen des Falls der Barriere.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_05"); //Einige meiner Kunden fürchten, dass sich die „wilden und ungehobelten Barbaren“ aus der Kolonie über ihre Besitztümer hermachen.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_06"); //Andererseits beschweren sich auch viele über die strenge Kontrolle durch die Paladine.
-	AI_Output(self, hero, "Info_Mod_Sonja_News_16_07"); //Aber die meisten krächzen mir nur ins Ohr, wie gut ich denn wäre. (lacht)
+	AI_Output(hero, self, "Info_Mod_Sonja_News_15_00"); //Jestem pewien, ze znajdziesz tutaj kilka nowosci.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_01"); //W ramionach emocjonalnej kobiety kazdy cichy mezczyzna staje sie gadajacym chlopcem.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_02"); //z malzenstwa Matteo do sekretnych gustów Konstantynina.
+	AI_Output(hero, self, "Info_Mod_Sonja_News_15_03"); //A co slyszysz od swoich klientów?
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_04"); //Slysze wiele niepewnosci i rozpaczy na temat upadku bariery.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_05"); //Niektórzy z moich klientów obawiaja sie, ze "dzikie i niegrzeczne barbarzyncy" z kolonii przychodza przeciwko ich dobytkowi.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_06"); //Z drugiej strony, wielu narzeka na scisla kontrole paladynów.
+	AI_Output(self, hero, "Info_Mod_Sonja_News_16_07"); //Ale wiekszosc z nich po prostu zgryzla mi w uchu, jak dobrze by sie czulem. (smiertelnicy)
 };
 
 INSTANCE Info_Mod_Sonja_Sex (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Sonja_Sex (C_INFO)
 	information	= Info_Mod_Sonja_Sex_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich würde gern deine Dienste in Anspruch nehmen.";
+	description	= "Chcialbym skorzystac z Panstwa uslug.";
 };
 
 FUNC INT Info_Mod_Sonja_Sex_Condition()
@@ -73,29 +73,29 @@ FUNC INT Info_Mod_Sonja_Sex_Condition()
 
 FUNC VOID Info_Mod_Sonja_Sex_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_15_00"); //Ich würde gern deine Dienste in Anspruch nehmen.
-	AI_Output(self, hero, "Info_Mod_Sonja_Sex_16_01"); //Für 100 Goldstücke gehöre ich die ganze Nacht dir, Süßer. Eine ganze aufregende Nacht.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_15_00"); //Chcialbym skorzystac z Panstwa uslug.
+	AI_Output(self, hero, "Info_Mod_Sonja_Sex_16_01"); //Jestem ci przez cala noc za 100 kawalków zlota, slodyczy. Cala emocjonujaca noc.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Sex);
 
-	Info_AddChoice	(Info_Mod_Sonja_Sex, "Vielleicht später.", Info_Mod_Sonja_Sex_B);
+	Info_AddChoice	(Info_Mod_Sonja_Sex, "Moze pózniej.", Info_Mod_Sonja_Sex_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Sonja_Sex, "Lass uns nach oben gehen. (100 Gold)", Info_Mod_Sonja_Sex_A);
+		Info_AddChoice	(Info_Mod_Sonja_Sex, "Wejdzmy na góre. (100 zloto)", Info_Mod_Sonja_Sex_A);
 	};
 };
 
 FUNC VOID Info_Mod_Sonja_Sex_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_B_15_00"); //Vielleicht später.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_B_15_00"); //Moze pózniej.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Sex);
 };
 
 FUNC VOID Info_Mod_Sonja_Sex_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Sex_A_15_00"); //Lass uns nach oben gehen.
+	AI_Output(hero, self, "Info_Mod_Sonja_Sex_A_15_00"); //Wejdzmy na góre.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
@@ -129,7 +129,7 @@ FUNC INT Info_Mod_Sonja_SexLos_Condition()
 
 FUNC VOID Info_Mod_Sonja_SexLos_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_SexLos_16_00"); //Entspann dich, Süßer.
+	AI_Output(self, hero, "Info_Mod_Sonja_SexLos_16_00"); //Relaks, slodycz.
 
 	PlayVideo ("LOVESCENE.BIK");
 
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Sonja_SexLos_Info()
 
 	B_StartOtherRoutine	(self, "START");
 	
-	Spine_OverallSaveSetInt("SonjaSex", 1);
+	Spine_OverallSaveSetInt("Sonjaex", 1);
 	CheckSexAchievement();
 };
 
@@ -163,11 +163,11 @@ FUNC INT Info_Mod_Sonja_Bartok_Condition()
 
 FUNC VOID Info_Mod_Sonja_Bartok_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_00"); //Hey du! Ich hab gesehen, wie du von Bartok verprügelt wurdest. Vielleicht kann ich dir helfen.
-	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_01"); //Wie willst du mir helfen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_02"); //Nun ja, ich könnte zu Bartok gehen und ein wenig Zeit mit ihm verbringen und dann dafür sorgen, dass er auf dich hört.
-	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_03"); //Und was soll ich dafür machen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_04"); //Noch nichts, aber ich werde schon noch auf dich zurückkommen.
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_00"); //Hej! Widzialam, jak Bartok pobil cie. Moze moge wam pomóc.
+	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_01"); //Jak mi pomozesz?
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_02"); //No cóz, moglem pójsc do Bartoka i spedzic z nim troche czasu i upewnic sie, ze on cie slucha.
+	AI_Output(hero, self, "Info_Mod_Sonja_Bartok_15_03"); //A co mam z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Sonja_Bartok_16_04"); //Jeszcze nic, ale wróce do Ciebie.
 
 	Npc_ExchangeRoutine	(self, "BARTOK");
 
@@ -196,48 +196,48 @@ FUNC INT Info_Mod_Sonja_Freier_Condition()
 
 FUNC VOID Info_Mod_Sonja_Freier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_00"); //Erinnerst du dich an dein kleines Versprechen, Süßer?
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_15_01"); //Ich schulde dir noch einen Gefallen.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_02"); //Nun ist der Zeitpunkt, da ich darauf zurückkommen muss.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_00"); //Pamietaj swoja mala obietnice, slodycz?
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_15_01"); //Zawdzieczam ci jeszcze jedna laske.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_16_02"); //Teraz nadszedl czas, abym wrócil do tego tematu.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 
-	Info_AddChoice	(Info_Mod_Sonja_Freier, "Das interessiert mich nicht.", Info_Mod_Sonja_Freier_B);
-	Info_AddChoice	(Info_Mod_Sonja_Freier, "Was gibt es zu tun?", Info_Mod_Sonja_Freier_A);
+	Info_AddChoice	(Info_Mod_Sonja_Freier, "Nie obchodzi mnie to.", Info_Mod_Sonja_Freier_B);
+	Info_AddChoice	(Info_Mod_Sonja_Freier, "Co nalezy zrobic?", Info_Mod_Sonja_Freier_A);
 };
 
 FUNC VOID Info_Mod_Sonja_Freier_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_B_15_00"); //Das interessiert mich nicht.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_B_16_01"); //(gekränkt) Ich hatte gehofft, dass ich mich auf dich verlassen kann.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_B_15_00"); //Nie obchodzi mnie to.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_B_16_01"); //Mialem nadzieje, ze moge na Was liczyc.
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 };
 
 FUNC VOID Info_Mod_Sonja_Freier_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_00"); //Was gibt es zu tun?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_01"); //Einer meiner häufigsten Freier ist schon seit einer ganzen Weile nicht mehr aufgekreuzt.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_02"); //Ich habe nichts davon gehört, dass ihm etwas zugestoßen ist, also muss es andere Gründe geben, warum er mich nicht mehr besucht.
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_03"); //Wer ist dieser Freier?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_04"); //Das darf ich dir nicht sagen. Berufsgeheimnis.
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_05"); //Und warum siehst du dann nicht selbst nach ihm?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_06"); //Weil er im Oberen Viertel wohnt, Dummchen. Dort habe ich keinen Zutritt.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_00"); //Co nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_01"); //Jeden z moich najczestszych klientów nie pojawil sie za chwile.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_02"); //Nie slyszalem niczego o niczym go nie slyszalem, wiec musza istniec inne powody, dla których juz nie odwiedza mnie.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_03"); //Kim jest ten milosnik?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_04"); //Nie moge ci to powiedziec. Tajemnica sluzbowa.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_05"); //Dlaczego wiec nie widzisz go sam?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_06"); //Bo mieszka w górnej dzielnicy, glupi. Nie mam tam dostepu.
 
 	if (Mil_305_Torwache.aivar[AIV_Passgate] == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_07"); //Aber du bist so ein aufstrebender junger Mann, du wirst sicher bald Gelegenheit haben.
+		AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_07"); //Ale jestes tak ambitnym mlodym czlowiekiem, jestem pewien, ze wkrótce bedziesz mial szanse.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_08"); //Also soll ich jetzt wohl das ganze Obere Viertel nach deinem Freier absuchen?
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_09"); //Ich kann dir noch verraten, dass es sich nicht um einen der Paladine oder Milizionäre handelt. Da sollte die Auswahl doch nicht mehr allzu groß sein.
-	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_10"); //Wenn du ihn gefunden hast, bitte ihn, dass er mal wieder bei mir vorbeischauen soll.
+	AI_Output(hero, self, "Info_Mod_Sonja_Freier_A_15_08"); //Wiec teraz powinienem przeszukac cala górna dzielnice?
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_09"); //Nadal moge panstwu powiedziec, ze nie nalezy to do paladynów ani milicji. Wybór nie powinien byc juz zbyt duzy.
+	AI_Output(self, hero, "Info_Mod_Sonja_Freier_A_16_10"); //Jesli go znalazles, popros go, aby zatrzymal sie przy moim domu.
 
 	Mod_Sonja_Freier = 1;
 
 	Log_createTopic	(TOPIC_MOD_SONJA_FREIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SONJA_FREIER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SONJA_FREIER, "Ein Kunde von Sonja besucht sie schon seit einiger Zeit nicht mehr. Sie will mir seinen Namen nicht nennen, aber er wohnt im Oberen Viertel und gehört weder zur Miliz noch zu den Paladinen.");
+	B_LogEntry	(TOPIC_MOD_SONJA_FREIER, "Od jakiegos czasu nie odwiedzil jej klient Sonja. Nie chce mi powiedziec swojego imienia, ale on mieszka w górnej czesci i nie nalezy ani do milicji, ani do paladynów.");
 
 	Info_ClearChoices	(Info_Mod_Sonja_Freier);
 };
@@ -250,7 +250,7 @@ INSTANCE Info_Mod_Sonja_Freier2 (C_INFO)
 	information	= Info_Mod_Sonja_Freier2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fernando hatte Stress mit seiner Frau.";
+	description	= "Fernando mial klopoty z zona.";
 };
 
 FUNC INT Info_Mod_Sonja_Freier2_Condition()

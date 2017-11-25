@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lester_REL_Hi (C_INFO)
 	information	= Info_Mod_Lester_REL_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hier?";
+	description	= "Ty tutaj?";
 };
 
 FUNC INT Info_Mod_Lester_REL_Hi_Condition()
@@ -16,17 +16,17 @@ FUNC INT Info_Mod_Lester_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_00"); //Du hier?
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_01"); //(bekifft) Bist du schon einmal zugedröhnt mit dieser Lore gefahren? Ich sag dir, das ist ein Erlebnis, das du nicht so schnell vergessen wirst.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_02"); //Ich glaube, ich fahr direkt noch mal zurück und wieder hin.
-	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_03"); //Schön und gut, aber weshalb bist du eigentlich hier?
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_04"); //Hast du schon mal von Khorata gehört?
-	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_05"); //Nicht wirklich.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_06"); //Von allem, was ich gehört habe, ist die Stadt nah dran am Paradies.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_07"); //Jeder, der will, wird reingelassen und darf dort sein gemütliches Leben führen.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_08"); //Die Stadtverwaltung besteht aus einem einzigen Mann, der nur darauf achtet, dass das Chaos nicht überhandnimmt.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_09"); //In dem nahen Hofstaat wird etwas gewonnen, das sich Freudenspender nennt, und viel effektiver sein soll als Sumpfkraut.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_10"); //Das kann ich mir fast nicht vorstellen, aber ausprobieren schadet ja nicht.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_00"); //Ty tutaj?
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_01"); //Czy kiedykolwiek wczesniej byles na tym samochodzie ciezarowym? Mówie ci, to doswiadczenie, którego nie zapomnisz.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_02"); //Mysle, ze jestem znowu gonna od razu.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_03"); //Dobrze i dobrze, ale dlaczego tu jestescie?
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_04"); //Czy slyszales kiedys o Khoracie?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_Hi_15_05"); //Nie tak naprawde.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_06"); //Z tego wszystkiego co slyszalem, miasto jest blisko raju.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_07"); //Kazdy, kto chce, moze prowadzic wygodne zycie.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_08"); //Rada miejska sklada sie z jednego czlowieka, który dba tylko o to, by chaos nie wydostal sie z rak.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_09"); //W pobliskim gospodarstwie uzyskuje sie cos, co nazywa sie dawca radosci i mówi sie, ze jest znacznie skuteczniejsze niz rdestnica bagienna.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Hi_13_10"); //Trudno mi to sobie wyobrazic, ale próbujac tego nie rani.
 };
 
 INSTANCE Info_Mod_Lester_REL_VonWem (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Lester_REL_VonWem (C_INFO)
 	information	= Info_Mod_Lester_REL_VonWem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Von wem hast du das gehört?";
+	description	= "Kto o tym slyszales?";
 };
 
 FUNC INT Info_Mod_Lester_REL_VonWem_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_Mod_Lester_REL_VonWem_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_VonWem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_VonWem_15_00"); //Von wem hast du das gehört?
-	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_01"); //Ich hab's auf dem Marktplatz von Khorinis aufgeschnappt. Ich glaube, Baltram hat davon erzählt.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_02"); //Der Bekanntheitsgrad von Khorata ist allerdings erstaunlich gering.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_03"); //Es scheint niemand das Bedürfnis zu haben, die Vorteile an die große Glocke zu hängen. Kann mir nur recht sein.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_VonWem_15_00"); //Kto o tym slyszales?
+	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_01"); //Wzialem go na targowisko w Khorinis. Mysle, ze Baltram mi o tym opowiedzial.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_02"); //Poziom swiadomosci Khoraty jest jednak zaskakujaco niski.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_VonWem_13_03"); //Nikt nie wydaje sie miec potrzeby chwalic sie korzysciami. To mi sie podoba.
 };
 
 INSTANCE Info_Mod_Lester_REL_Zusammen (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Lester_REL_Zusammen (C_INFO)
 	information	= Info_Mod_Lester_REL_Zusammen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns zusammen gehen.";
+	description	= "Idzmy razem.";
 };
 
 FUNC INT Info_Mod_Lester_REL_Zusammen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mod_Lester_REL_Zusammen_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_Zusammen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_Zusammen_15_00"); //Lass uns zusammen gehen.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Zusammen_13_01"); //Ein andermal. Ich will erst noch unbedingt ein paar Fahrten mit dieser Lore unternehmen ...
+	AI_Output(hero, self, "Info_Mod_Lester_REL_Zusammen_15_00"); //Idzmy razem.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Zusammen_13_01"); //Innym razem. Naprawde chce zrobic kilka wycieczek ta ciezarówka najpierw....
 };
 
 INSTANCE Info_Mod_Lester_REL_Gefallen (C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Lester_REL_Gefallen (C_INFO)
 	information	= Info_Mod_Lester_REL_Gefallen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällt es dir hier?";
+	description	= "Jak Ci sie to podoba?";
 };
 
 FUNC INT Info_Mod_Lester_REL_Gefallen_Condition()
@@ -104,10 +104,10 @@ FUNC INT Info_Mod_Lester_REL_Gefallen_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_Gefallen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_Gefallen_15_00"); //Wie gefällt es dir hier?
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_01"); //Der Freudenspender haut einen wirklich um. (lacht) Verflucht gutes Zeug. Aber Khorata ...
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_02"); //Ich hatte gedacht, eine freie Stadt vorzufinden, aber Khorata wird von Missgunst und Willkür regiert.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_03"); //Das größte Problem an jeder Gemeinschaft ist und bleibt der Mensch.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_Gefallen_15_00"); //Jak Ci sie to podoba?
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_01"); //Dawca radosci naprawde cie zabija. (smiech) Fucking good stuff. Ale Khorata....
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_02"); //Myslalem, ze znajde wolne miasto, ale Khorata rzadzi sie niechecia i arbitralnoscia.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_Gefallen_13_03"); //Najwiekszym problemem w kazdej wspólnocie jest i pozostaje istota ludzka.
 };
 
 INSTANCE Info_Mod_Lester_REL_FindeOrt (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Lester_REL_FindeOrt (C_INFO)
 	information	= Info_Mod_Lester_REL_FindeOrt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich finde mich hier kaum zurecht.";
+	description	= "Trudno mi znalezc sie tutaj.";
 };
 
 FUNC INT Info_Mod_Lester_REL_FindeOrt_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Mod_Lester_REL_FindeOrt_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_15_00"); //Ich finde mich hier kaum zurecht.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_13_01"); //Was genau findest du nicht?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_15_00"); //Trudno mi znalezc sie tutaj.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_13_01"); //Co dokladnie nie mozna znalezc?
 
 	Info_ClearChoices	(Info_Mod_Lester_REL_FindeOrt);
 
@@ -141,30 +141,30 @@ FUNC VOID Info_Mod_Lester_REL_FindeOrt_Info()
 
 	if (Mod_Wendel_FettNehmer == 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Ich suche einen Troll.", Info_Mod_Lester_REL_FindeOrt_D);	
+		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Szukam trollu.", Info_Mod_Lester_REL_FindeOrt_D);	
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Heiler_Endres))
 	{
-		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Ich suche die Mine.", Info_Mod_Lester_REL_FindeOrt_C);	
+		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Szukam kopalni.", Info_Mod_Lester_REL_FindeOrt_C);	
 	};
 	if (Mod_REL_Frauenkleider >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Ich suche Banditen in Relendel.", Info_Mod_Lester_REL_FindeOrt_B);	
+		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Szukam bandytów w Relendel.", Info_Mod_Lester_REL_FindeOrt_B);	
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Anselm_Landvermessung))
 	{
-		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Ich suche Vincent.", Info_Mod_Lester_REL_FindeOrt_A);	
+		Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Szukam Vincenta.", Info_Mod_Lester_REL_FindeOrt_A);	
 	};
 };
 
 FUNC VOID B_Lester_Say_Alleine()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_Alleine_15_00"); //Das schaffe ich schon allein.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_Alleine_15_00"); //Sam sobie poradze.
 };
 
 FUNC VOID B_Lester_Say_Zusammen()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_Zusammen_15_00"); //Zeig mir den Weg.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_Zusammen_15_00"); //Pokaz mi droge.
 	AI_Output(self, hero, "DEFAULT"); //
 };
 
@@ -175,15 +175,15 @@ FUNC VOID Info_Mod_Lester_REL_FindeOrt_BACK()
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_D()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_D_15_00"); //Ich suche einen Troll.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_01"); //(lacht) Normalerweise sucht man eher eine Möglichkeit, ihm aus dem Weg zu gehen.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_02"); //Aber ich habe von einem Händler des Hofstaats gehört, dass ein Troll den Pass dorthin unsicher machen soll.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_03"); //Brauchst du meine Hilfe?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_D_15_00"); //Szukam trollu.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_01"); //(smiech) Zwykle szukasz sposobu na unikniecie go.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_02"); //Ale slyszalem jednak od sprzedawcy sadu, ze trolla ma sprawic, by paszport tam byl niebezpieczny.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_D_13_03"); //Potrzebujesz mojej pomocy?
 
 	Info_ClearChoices	(Info_Mod_Lester_REL_FindeOrt);
 
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Das schaffe ich schon allein.", Info_Mod_Lester_REL_FindeOrt_D2);
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Zeig mir den Weg.", Info_Mod_Lester_REL_FindeOrt_D1);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Sam sobie poradze.", Info_Mod_Lester_REL_FindeOrt_D2);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Pokaz mi droge.", Info_Mod_Lester_REL_FindeOrt_D1);
 };
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_D2()
@@ -210,13 +210,13 @@ FUNC VOID Info_Mod_Lester_REL_FindeOrt_D1()
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_C()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_C_15_00"); //Ich suche die Mine.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_C_13_01"); //Kein Problem, die Mine ist von der Stadt aus ausgeschildert. Soll ich dich begleiten?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_C_15_00"); //Szukam kopalni.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_C_13_01"); //Nie ma problemu, kopalnia jest oznakowana z miasta. Chcielibym isc z Toba?
 
 	Info_ClearChoices	(Info_Mod_Lester_REL_FindeOrt);
 
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Das schaffe ich schon allein.", Info_Mod_Lester_REL_FindeOrt_C2);
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Zeig mir den Weg.", Info_Mod_Lester_REL_FindeOrt_C1);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Sam sobie poradze.", Info_Mod_Lester_REL_FindeOrt_C2);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Pokaz mi droge.", Info_Mod_Lester_REL_FindeOrt_C1);
 };
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_C2()
@@ -243,14 +243,14 @@ FUNC VOID Info_Mod_Lester_REL_FindeOrt_C1()
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_B_15_00"); //Ich suche Banditen in Relendel.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_B_13_01"); //Der Bauer Erhard hat sich schon häufiger beschwert, dass Banditen in der Nähe seines Bauernhofes seien.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_B_13_02"); //Sie sollten nicht allzu schwierig zu finden sein. Sollen wir zusammen suchen gehen?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_B_15_00"); //Szukam bandytów w Relendel.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_B_13_01"); //Rolnik Erhard czesto skarzyl sie, ze w poblizu jego gospodarstwa sa bandyci.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_B_13_02"); //Nie powinny byc zbyt trudne do znalezienia. Czy bedziemy razem szukac?
 
 	Info_ClearChoices	(Info_Mod_Lester_REL_FindeOrt);
 
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Das schaffe ich schon allein.", Info_Mod_Lester_REL_FindeOrt_B2);
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Zeig mir den Weg.", Info_Mod_Lester_REL_FindeOrt_B1);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Sam sobie poradze.", Info_Mod_Lester_REL_FindeOrt_B2);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Pokaz mi droge.", Info_Mod_Lester_REL_FindeOrt_B1);
 };
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_B2()
@@ -277,15 +277,15 @@ FUNC VOID Info_Mod_Lester_REL_FindeOrt_B1()
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_A_15_00"); //Ich suche Vincent.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_01"); //Ja, über Vincent habe ich auch schon einiges gehört.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_02"); //Er soll sein Zelt irgendwo westlich des großen Sees in Relendel aufgeschlagen haben.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_03"); //Wenn du willst, können wir zusammen nachschauen.
+	AI_Output(hero, self, "Info_Mod_Lester_REL_FindeOrt_A_15_00"); //Szukam Vincenta.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_01"); //Tak, wiele slyszalem o Vincencie.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_02"); //Mówi sie, ze rozbil swój namiot gdzies na zachód od duzego jeziora w Relendel.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_FindeOrt_A_13_03"); //Jesli chcesz, mozemy spojrzec razem.
 
 	Info_ClearChoices	(Info_Mod_Lester_REL_FindeOrt);
 
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Das schaffe ich schon allein.", Info_Mod_Lester_REL_FindeOrt_A2);
-	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Zeig mir den Weg.", Info_Mod_Lester_REL_FindeOrt_A1);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Sam sobie poradze.", Info_Mod_Lester_REL_FindeOrt_A2);
+	Info_AddChoice	(Info_Mod_Lester_REL_FindeOrt, "Pokaz mi droge.", Info_Mod_Lester_REL_FindeOrt_A1);
 };
 
 FUNC VOID Info_Mod_Lester_REL_FindeOrt_A2()
@@ -332,9 +332,9 @@ FUNC INT Info_Mod_Lester_REL_AtTroll_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_AtTroll_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll_13_00"); //Na, wenn das mal kein Brocken ist. Bist du sicher, dass du den fällen willst?
-	AI_Output(hero, self, "Info_Mod_Lester_REL_AtTroll_15_01"); //Wofür sind wir sonst den weiten Weg gelaufen?
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll_13_02"); //Na schön. Zu zweit packen wir ihn.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll_13_00"); //No cóz, jesli to nie jest smietnik. Czy jestes pewien, ze chcesz ja porabac?
+	AI_Output(hero, self, "Info_Mod_Lester_REL_AtTroll_15_01"); //Po co jeszcze poszlismy ta droga?
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll_13_02"); //A zatem wszystko w porzadku. My go zlapalismy.
 
 	AI_StopProcessInfos	(self);
 };
@@ -361,7 +361,7 @@ FUNC INT Info_Mod_Lester_REL_AtTroll2_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_AtTroll2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll2_13_00"); //Das wäre geschafft.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtTroll2_13_00"); //To oklad.
 
 	AI_StopProcessInfos	(self);
 
@@ -394,7 +394,7 @@ FUNC INT Info_Mod_Lester_REL_AtMine_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_AtMine_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtMine_13_00"); //Hier ist der Eingang der Mine. Viel Spaß dort drinnen.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtMine_13_00"); //To jest wlasnie wejscie do kopalni. Baw sie baw tam.
 
 	AI_StopProcessInfos	(self);
 
@@ -427,7 +427,7 @@ FUNC INT Info_Mod_Lester_REL_AtMelvin_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_AtMelvin_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtMelvin_13_00"); //Da vorn sehe ich ein Lager mit mehreren Zelten. Das sollten die Banditen sein, die du suchst.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtMelvin_13_00"); //Tam widze obóz z kilkoma namiotami. To powinni byc bandyci, których szukasz.
 
 	AI_StopProcessInfos	(self);
 
@@ -460,8 +460,8 @@ FUNC INT Info_Mod_Lester_REL_AtVincent_Condition()
 
 FUNC VOID Info_Mod_Lester_REL_AtVincent_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtVincent_13_00"); //Hier ist der große See, von dem ich gesprochen habe. Auf der gegenüberliegenden Seite solltest du Vincent finden.
-	AI_Output(self, hero, "Info_Mod_Lester_REL_AtVincent_13_01"); //Ich kehre jetzt zurück in die Stadt. Die Rennerei ist zu viel für mich.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtVincent_13_00"); //Oto wielkie jezioro, o którym mówilem. Po przeciwnej stronie powinien znalezc sie Vincent.
+	AI_Output(self, hero, "Info_Mod_Lester_REL_AtVincent_13_01"); //Wracam teraz do miasta. Dla mnie bieg jest zbyt wiele.
 
 	AI_StopProcessInfos	(self);
 

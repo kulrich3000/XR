@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sabitsch_Hi (C_INFO)
 	information	= Info_Mod_Sabitsch_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich habe gehört du kämpfst in der Arena?";
+	description	= "Witam, slysze, ze walczysz na arenie?";
 };
 
 FUNC INT Info_Mod_Sabitsch_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Sabitsch_Hi_Condition()
 
 FUNC VOID Info_Mod_Sabitsch_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Hi_15_00"); //Hallo, ich habe gehört du kämpfst in der Arena?
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Hi_04_01"); //(leicht despektierlich) Wenn der Einsatz stimmt. Ich will ja auch etwas daran verdienen, wenn schon meine Axt an den Köpfen meiner Gegner schartig wird und von ihrem Blut rosten soll.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Hi_15_00"); //Witam, slysze, ze walczysz na arenie?
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Hi_04_01"); //(nieco lekcewazace) Jesli stawka jest sluszna. Chce tez zarobic troche pieniedzy, jesli moja siekiera zostanie podbita na glowy moich przeciwników i powinna rdzewiec z ich krwi.
 };
 
 INSTANCE Info_Mod_Sabitsch_Arenakampf (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Sabitsch_Arenakampf (C_INFO)
 	information	= Info_Mod_Sabitsch_Arenakampf_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will gegen dich kämpfen.";
+	description	= "Chce cie walczyc.";
 };
 
 FUNC INT Info_Mod_Sabitsch_Arenakampf_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_Mod_Sabitsch_Arenakampf_Condition()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_15_00"); //Ich will gegen dich kämpfen.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_04_01"); //Wie hoch ist der Einsatz?
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_15_00"); //Chce cie walczyc.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_04_01"); //Jaka jest stawka?
 
 	Info_ClearChoices	(Info_Mod_Sabitsch_Arenakampf);
 
@@ -55,35 +55,35 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_Info()
 	{
 		if (Mod_SabitschRingTalk == FALSE)
 		{
-			Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Kann ich auch etwas anderes als Wetteinsatz hergeben?", Info_Mod_Sabitsch_Arenakampf_E);
+			Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Czy moge postawic cos innego niz zaklad?", Info_Mod_Sabitsch_Arenakampf_E);
 		}
 		else
 		{
 			if (Npc_HasItems(hero, ItRi_SkinnersRing_Gold) == 1)
 			{
-				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Goldglänzender Orkring.", Info_Mod_Sabitsch_Arenakampf_G);
+				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Zloty polysk.", Info_Mod_Sabitsch_Arenakampf_G);
 			};
 			if (Npc_HasItems(hero, ItMi_GoldRing) >= 1)
 			{
-				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "1 Goldring.", Info_Mod_Sabitsch_Arenakampf_F);
+				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "1 zloty pierscien.", Info_Mod_Sabitsch_Arenakampf_F);
 			};
 			if (Npc_HasItems(hero, ItMi_SilverRing) >= 2)
 			{
-				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "2 Silberringe.", Info_Mod_Sabitsch_Arenakampf_D);
+				Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "2 srebrne pierscienie.", Info_Mod_Sabitsch_Arenakampf_D);
 			};
 		};
 	};
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "200 Gold.", Info_Mod_Sabitsch_Arenakampf_C);
+		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "200 zlota.", Info_Mod_Sabitsch_Arenakampf_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "100 Gold.", Info_Mod_Sabitsch_Arenakampf_B);
+		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "100 zlota.", Info_Mod_Sabitsch_Arenakampf_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "50 Gold.", Info_Mod_Sabitsch_Arenakampf_A);
+	Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "50 zlota.", Info_Mod_Sabitsch_Arenakampf_A);
 };
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_BACK()
@@ -93,8 +93,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_BACK()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_E()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_E_15_00"); //Kann ich auch etwas anderes als Wetteinsatz hergeben? Wie wäre es mit einigen wertvollen Schmuckstücken?
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_E_04_01"); //Aber sicher doch, ich wollte meine Sammlung mal wieder um einige Ringe erweitern. Müssen jedoch schon ein goldener oder zwei silberne Ringe sein.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_E_15_00"); //Czy moge postawic cos innego niz zaklad? A co z cenna bizuteria?
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_E_04_01"); //Oczywiscie chcialem dodac kilka pierscieni do mojej kolekcji. Musi to byc jednak jeden zloty lub dwa srebrne pierscienie.
 
 	Mod_SabitschRingTalk = TRUE;
 
@@ -102,22 +102,22 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_E()
 
 	if (Npc_HasItems(hero, ItRi_SkinnersRing_Gold) == 1)
 	{
-		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Goldglänzender Orkring.", Info_Mod_Sabitsch_Arenakampf_G);
+		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "Zloty polysk.", Info_Mod_Sabitsch_Arenakampf_G);
 	};
 	if (Npc_HasItems(hero, ItMi_GoldRing) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "1 Goldring.", Info_Mod_Sabitsch_Arenakampf_F);
+		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "1 zloty pierscien.", Info_Mod_Sabitsch_Arenakampf_F);
 	};
 	if (Npc_HasItems(hero, ItMi_SilverRing) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "2 Silberringe.", Info_Mod_Sabitsch_Arenakampf_D);
+		Info_AddChoice	(Info_Mod_Sabitsch_Arenakampf, "2 srebrne pierscienie.", Info_Mod_Sabitsch_Arenakampf_D);
 	};
 };
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_G()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_G_15_00"); //Ein goldener Ring.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_G_04_01"); //Dieses schöne Stück werde ich mir sofort anlegen, da du es ohnehin nicht mehr in die Hände bekommen wirst.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_G_15_00"); //Zloty pierscien.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_G_04_01"); //Umieszcze ten piekny kawalek natychmiast na sobie, bo i tak sie go nie zatrzymacie.
 
 	B_GiveInvItems	(hero, self, ItRi_SkinnersRing_Gold, 1);
 
@@ -133,8 +133,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_G()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_F()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_F_15_00"); //Ein Goldring.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //Das hör ich gerne. Wir können sofort anfangen.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_F_15_00"); //Zloty pierscien.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //To wlasnie lubie slyszec. Mozemy zaczac dzialac od razu.
 
 	B_GiveInvItems	(hero, self, ItMi_GoldRing, 1);
 
@@ -149,8 +149,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_F()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_D()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_D_15_00"); //Zwei Silberringe.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //Das hör ich gerne. Wir können sofort anfangen.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_D_15_00"); //Dwa srebrne pierscienie.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //To wlasnie lubie slyszec. Mozemy zaczac dzialac od razu.
 
 	B_GiveInvItems	(hero, self, ItMi_SilverRing, 2);
 
@@ -165,8 +165,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_D()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_C()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_C_15_00"); //200 Gold.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //Das hör ich gerne. Wir können sofort anfangen.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_C_15_00"); //200 zlota.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_C_04_01"); //To wlasnie lubie slyszec. Mozemy zaczac dzialac od razu.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
@@ -181,8 +181,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_C()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_B_15_00"); //100 Gold.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_B_04_01"); //Zwar etwas wenig, aber manchmal muss man eben seine Ansprüche herunterschrauben.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_B_15_00"); //100 zlota.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_B_04_01"); //Nie troche troche, ale czasami musisz obnizyc swoje oczekiwania.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
@@ -197,8 +197,8 @@ FUNC VOID Info_Mod_Sabitsch_Arenakampf_B()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_A_15_00"); //50 Gold.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_A_04_01"); //Was?! Dafür hole ich doch nicht mal meine Axt hervor.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_Arenakampf_A_15_00"); //50 zlota.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf_A_04_01"); //Co? Nawet nie zdejmuje za to siekiery.
 
 	Info_ClearChoices	(Info_Mod_Sabitsch_Arenakampf);
 
@@ -226,7 +226,7 @@ FUNC INT Info_Mod_Sabitsch_Arenakampf2_Condition()
 
 FUNC VOID Info_Mod_Sabitsch_Arenakampf2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf2_04_00"); //Dann komm mal her!
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Arenakampf2_04_00"); //Przyjdzcie wiec!
 
 	if (Mod_SabitschHatteRing == TRUE)
 	{
@@ -276,19 +276,19 @@ FUNC VOID Info_Mod_Sabitsch_Umgehauen_Info()
 		{
 			if (Mod_SabitschHatteRing == TRUE)
 			{
-				AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_00"); //(wütend) Das ist nicht möglich, ich konnte meine Waffe nicht ziehen. Dahinter steckt doch bestimmt üble Zauberei.
-				AI_Output(hero, self, "Info_Mod_Sabitsch_Umgehauen_15_01"); //Man soll den Mund besser nicht zu voll nehmen.
+				AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_00"); //Nie jest to mozliwe, nie moglem wyciagnac pistoletu. Za tym musi kryc sie jakas paskudna magia.
+				AI_Output(hero, self, "Info_Mod_Sabitsch_Umgehauen_15_01"); //Lepiej nie zatykac ust.
 			};
 
-			AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_02"); //Ach, lass mich in Ruhe.
+			AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_02"); //Och, zostaw mnie samemu.
 
-			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Sabitsch hat in der Arena ordentlich Federn lassen müssen. Ich habe das Amulett und sollte es jetzt Dexter bringen.");
+			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Sabitsch musial zostawic duzo piór w arenie. Mam amulet i do tej pory powinienem go przekazac Dexterowi.");
 
 			Mod_SabitschArenaLooser = TRUE;
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_03"); //Bist wohl doch nur ein Großmaul.
+			AI_Output(self, hero, "Info_Mod_Sabitsch_Umgehauen_04_03"); //Jestes po prostu duza usta.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -321,7 +321,7 @@ FUNC INT Info_Mod_Sabitsch_Diebstahl_Condition()
 
 FUNC VOID Info_Mod_Sabitsch_Diebstahl_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sabitsch_Diebstahl_04_00"); //Mein Amulett, wo ist es? Na warte, dreckiger Dieb.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_Diebstahl_04_00"); //Gdzie jest mój amulet? Czekaj, brudny zlodziej.
 
 	Mod_SabitschAmulettGeklaut = 2;
 
@@ -338,7 +338,7 @@ INSTANCE Info_Mod_Sabitsch_HabDeinAmulett (C_INFO)
 	information	= Info_Mod_Sabitsch_HabDeinAmulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, möchtest du dein Amulett wiederhaben?";
+	description	= "Hej, chcesz cofnac amulet?";
 };
 
 FUNC INT Info_Mod_Sabitsch_HabDeinAmulett_Condition()
@@ -352,36 +352,36 @@ FUNC INT Info_Mod_Sabitsch_HabDeinAmulett_Condition()
 
 FUNC VOID Info_Mod_Sabitsch_HabDeinAmulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_HabDeinAmulett_15_00"); //Hey, möchtest du dein Amulett wiederhaben?
+	AI_Output(hero, self, "Info_Mod_Sabitsch_HabDeinAmulett_15_00"); //Hej, chcesz cofnac amulet?
 
 	AI_ReadyMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_04_01"); //Was, du hast mein Amulett?! Du willst mich wohl verspotten. Her damit!
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_04_01"); //Co masz mój amulet? Drwisz mnie. Daj mi to!
 
 	Info_ClearChoices	(Info_Mod_Sabitsch_HabDeinAmulett);
 
-	Info_AddChoice	(Info_Mod_Sabitsch_HabDeinAmulett, "Klar, hier hast du es.", Info_Mod_Sabitsch_HabDeinAmulett_B);
-	Info_AddChoice	(Info_Mod_Sabitsch_HabDeinAmulett, "Hol es dir doch.", Info_Mod_Sabitsch_HabDeinAmulett_A);
+	Info_AddChoice	(Info_Mod_Sabitsch_HabDeinAmulett, "Jasne, ze tu idziesz.", Info_Mod_Sabitsch_HabDeinAmulett_B);
+	Info_AddChoice	(Info_Mod_Sabitsch_HabDeinAmulett, "Dlaczego nie dostajesz tego?", Info_Mod_Sabitsch_HabDeinAmulett_A);
 };
 
 FUNC VOID Info_Mod_Sabitsch_HabDeinAmulett_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sabitsch_HabDeinAmulett_B_15_00"); //Klar, hier hast du es.
+	AI_Output(hero, self, "Info_Mod_Sabitsch_HabDeinAmulett_B_15_00"); //Jasne, ze tu idziesz.
 
 	B_GiveInvItems	(hero, self, ItAm_MegaAmulett, 1);
 
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_01"); //(überrascht) Ähh, was? Du gibst es mir einfach so, ohne Kampf? Das geht doch nicht.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_02"); //Wäre nicht gut für meinen Ruf und gegen meine Prinzipien.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_03"); //Aber warte, ich werde dich zumindest noch ein paar Sachen über den Nahkampf lehren.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_04"); //Also, je nachdem, ob du die Waffe auf der rechten, oder linken Seiten schwingst, musst du die Ferse auf der selben Seite anheben und mit dem Körper nach vorne gehen.
-	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_05"); //Das bringt mehr Wucht in den Schlag. Verstanden? Ok. Damit wäre die Sache im Reinen.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_01"); //(zdziwiony) Uh, co? Po prostu dasz mi ja bez walki? Nie mozesz tego zrobic.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_02"); //Nie byloby dobrze dla mojej reputacji i wbrew moim zasadom.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_03"); //Ale poczekaj, co najmniej naucze cie kilku innych rzeczy na temat walki wrecz.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_04"); //Wiec w zaleznosci od tego, czy wahasz bron po prawej czy lewej stronie, musisz podnosic piete po tej samej stronie i poruszac sie wraz z cialem do przodu.
+	AI_Output(self, hero, "Info_Mod_Sabitsch_HabDeinAmulett_B_04_05"); //Daje to wieksza sile uderzeniu. Zrozumiec? Okay. To rozstrzyga sprawe.
 
 	B_GivePlayerXP	(200);
 
 	B_RaiseFightTalent	(hero, NPC_TALENT_1H, 2);
 	B_RaiseFightTalent	(hero, NPC_TALENT_2H, 2);
 
-	PrintScreen	("+2% Einhand und Zweihand", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("2% z jedna i dwiema rekami 2", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(Info_Mod_Sabitsch_HabDeinAmulett);
 };

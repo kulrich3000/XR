@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Pock_Hi_Condition()
 
 FUNC VOID Info_Mod_Pock_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pock_Hi_04_00"); //Hey, ich habe gehört, dass du Leftys Angebot abgeschlagen hast, uns Bauern zu verprügeln.
-	AI_Output(self, hero, "Info_Mod_Pock_Hi_04_01"); //Hier, nimm diesen Schlüssel. Ich habe ihn mal im Morast des Reisfeldes gefunden. Der muss dem Reislord, oder einem seiner Schläger aus der Tasche gefallen sein.
+	AI_Output(self, hero, "Info_Mod_Pock_Hi_04_00"); //Hej, slyszalem, ze odrzuciles propozycje Lefty' ego, aby uderzyc w nas chlopów.
+	AI_Output(self, hero, "Info_Mod_Pock_Hi_04_01"); //Tutaj wez ten klucz. Znalazlem go kiedys na blocie pola ryzowego. Musial wypadnac z kieszeni pana ryzu lub jednej z jego wiosel.
 
 	B_GiveInvItems	(self, hero, ItKe_ReislordVonPock, 1);
 

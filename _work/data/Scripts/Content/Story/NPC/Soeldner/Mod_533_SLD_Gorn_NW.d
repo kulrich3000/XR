@@ -1,7 +1,7 @@
 INSTANCE Mod_533_SLD_Gorn_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gorn";
+	name 		= "hejnal";
 	guild 		= GIL_OUT;
 	id 			= 533;
 	voice 		= 12;

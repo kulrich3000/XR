@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Sendak_Hi_Condition()
 
 FUNC VOID Info_Mod_Sendak_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_00"); //Da bist du ja. Du hast noch etwas, was uns gehört.
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_01"); //Gib mir das Gold, das du Aslan abgenommen hast, und ich werde den Orks sagen, dass sie dich schnell töten sollen.
-	AI_Output(hero, self, "Info_Mod_Sendak_Hi_15_02"); //Das Gold hab ich leider schon für Hochprozentiges ausgegeben, aber wenn du bei mir noch etwas findest, gehört es dir.
-	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_03"); //Wie du willst. Suppe aus menschlichen Gedärmen essen diese Untoten am liebsten.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_00"); //Och, tam jestescie. Masz jeszcze cos innego, co nalezy do nas.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_01"); //Daj mi zloto, które wziales od Aslana, a orkiestry powiedza, ze szybko cie zabija.
+	AI_Output(hero, self, "Info_Mod_Sendak_Hi_15_02"); //Niestety, juz wydalem zloto na rzeczy o wysokiej odpornosci, ale jesli znajdziesz cos innego u mnie, to jest to twoje.
+	AI_Output(self, hero, "Info_Mod_Sendak_Hi_03_03"); //Dopasuj sie do siebie. Zupa z jelit ludzkich jest tym co ci nieumarli wola jesc.
 
 	AI_StopProcessInfos	(self);
 

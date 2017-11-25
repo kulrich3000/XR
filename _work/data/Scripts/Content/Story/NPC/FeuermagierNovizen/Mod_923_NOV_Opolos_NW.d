@@ -1,7 +1,7 @@
 INSTANCE Mod_923_NOV_Opolos_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Opolos";
+	name 		= "opolo";
 	guild 		= GIL_VLK;
 	id 			= 923;
 	voice 		= 31;

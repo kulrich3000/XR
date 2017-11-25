@@ -1,7 +1,7 @@
 instance Mod_7541_OUT_PennerVater_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vater";
+	name 		= "tatus";
 	guild 		= GIL_OUT;
 	id 			= 7541;
 	voice 		= 3;

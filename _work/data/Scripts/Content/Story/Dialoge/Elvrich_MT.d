@@ -15,28 +15,28 @@ FUNC INT Info_Mod_Elvrich_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Elvrich_MT_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_00"); //Hey, du hier?
-	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_01"); //Das Gleiche wollte ich auch gerade sagen. Was hat dich hierher verschlagen?
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_02"); //Nun, das ist eine lange Geschichte ... die aber schnell erzählt ist.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_03"); //Wie ich dir ja damals berichtet hatte, bin ich zum Hafenviertel, um meine Freundin zu treffen.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_04"); //Da tauchte dieser miese Dämonenkrieger auf und teleportierte mich in eines ihrer Lager.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_05"); //Man steckte mich in ihre Mine, wo ich bis zum Tod schuften sollte, wie die anderen armen Schweine, die sie aus der Stadt entführt hatten und die jetzt in einem verlassenen Stollen verrotten.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_06"); //Da ich keine Lust hatte, genauso zu enden, habe ich die Verwirrung bei einem Einsturz zur Flucht genutzt.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_07"); //Ich setzte mich in dieses Lager hier ab, von welchem ein Dämonenkrieger zwischen den Zügen am Sumpfkrautstängel immer so viel geschwärmt hat ... und ich habe es nicht bereut.
-	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_08"); //So, so.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_09"); //Ja, seitdem ich hier bin, habe ich erst den wahren Wert des Lebens erkannt.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_10"); //Es gibt immer genug Sumpfkraut zum Entspannen, und ich werde wegen meiner Kenntnisse in der Zimmerei respektiert und geschätzt.
-	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_11"); //Und deine Freundin?
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_12"); //Was?! Bleib mir mit dieser Hexe bloß weg ...
-	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_13"); //Ok, wenn du meinst, obwohl sie ja für deine Entführung eigentlich nichts kann.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_14"); //Nein, du verstehst nicht ganz. Dieses Miststück war es, das uns Kerle um den Verstand brachte und uns an die Dämonenkrieger verriet.
-	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_15"); //Ach so. Das macht die Abneigung natürlich nachvollziehbarer.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_16"); //Wie dem auch sei, so hat alles ein gutes Ende für mich genommen.
-	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_17"); //Ich werde weiter Schränke zimmern, die Stängel qualmen und mein Leben genießen. Was will man mehr ...
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_00"); //Hej, ty tutaj?
+	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_01"); //Mialem powiedziec to samo. Co przynosi ci tutaj?
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_02"); //No cóz, to dluga historia.... ale to jest szybko powiedziane.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_03"); //Jak ci wtedy powiedzialem, poszedlem na nabrzeze, aby spotkac moja dziewczyne.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_04"); //Potem pojawil sie ten zarloczny wojownik demoniczny i teleportowal mnie do jednego z ich obozów.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_05"); //Umiescili mnie w swojej kopalni, gdzie mialem pracowac do smierci, podobnie jak inne biedne dranie, które porwaly ich z miasta i które teraz gnija w opuszczonym tunelu.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_06"); //Skoro nie chcialem w ten sposób wyladowac, wykorzystalem zamieszanie w zawaleniu sie do ucieczki.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_07"); //Usiadlem tutaj w tym obozie, skad demoniczny wojownik zawsze tak bardzo szaleje miedzy pociagami na bagnistej lodydze...... a ja tego nie zaluje.
+	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_08"); //Tam tam.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_09"); //Tak, poniewaz jestem tutaj, zdalem sobie sprawe z prawdziwej wartosci zycia.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_10"); //Zawsze jest wystarczajaco duzo ziól bagiennych, aby sie zrelaksowac, a ja jestem szanowany i ceniony za moja wiedze o stolarstwie.
+	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_11"); //A Twoja dziewczyna?
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_12"); //Co? Pozostancie z dala od mnie z ta czarownica....
+	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_13"); //Dobrze, jesli uwazasz, ze nie moze nic zrobic dla porwania.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_14"); //Nie, nie rozumiesz. Ta suczka sprawila, ze stracilismy umysly chlopaków i zdradzili nas wojownikom demonicznym.
+	AI_Output(hero, self, "Info_Mod_Elvrich_MT_Hi_15_15"); //Och, widze. To oczywiscie sprawia, ze niechec staje sie bardziej zrozumiala.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_16"); //Tak czy inaczej, wszystko dobieglo mi konca.
+	AI_Output(self, hero, "Info_Mod_Elvrich_MT_Hi_24_17"); //Bede nadal robic szafy, palic szypulki i cieszyc sie zyciem. Co wiecej, chcesz.....
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Vatras_RealInfos))
 	{
-		B_LogEntry	(TOPIC_MOD_VERMISSTE, "Okay, damit wäre also das Schicksal der Entführten geklärt und ich kann Vatras Bericht erstatten.");
+		B_LogEntry	(TOPIC_MOD_VERMISSTE, "Dobrze, zeby losy uprowadzanych ludzi rozstrzygnely i moge zglosic Vatrze.");
 	};
 
 	Mod_WM_ElvrichImSumpf = 4;

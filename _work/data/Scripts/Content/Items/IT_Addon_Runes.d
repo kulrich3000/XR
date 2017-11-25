@@ -215,7 +215,7 @@ INSTANCE ItRu_Spucke	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_BLUE";
 
-	description			=	"Spucke";
+	description			=	"mierzeja";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;		
 	COUNT	[0]			=	mag_circle;

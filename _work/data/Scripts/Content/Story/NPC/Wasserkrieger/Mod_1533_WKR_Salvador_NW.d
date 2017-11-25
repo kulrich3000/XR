@@ -1,7 +1,7 @@
 instance Mod_1533_WKR_Salvador_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Salvador";	
+	name 		= "Salwador";	
 	guild 		= GIL_nov;
 	id 			= 1533;
 	voice 		= 4;

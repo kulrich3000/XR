@@ -1,7 +1,7 @@
 instance Mod_7307_UntoterNovize_AW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Novize";
+	name 		=		"Niezniszczony Nowicjusz";
 	Npctype 		=		Npctype_UNTOTERNOVIZE;
 	guild 		=		GIL_STRF;
 	level 		=		20;

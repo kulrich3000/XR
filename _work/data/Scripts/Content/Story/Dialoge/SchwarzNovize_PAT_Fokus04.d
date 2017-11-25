@@ -18,19 +18,19 @@ FUNC INT Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_Condition()
 
 FUNC VOID Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_11_00"); //Was soll das? Du dürftest gar nicht hier sein.
+	AI_Output(self, hero, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_11_00"); //Co robisz? Nie powinienes byc tutaj.
 
 	Info_ClearChoices	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi);
 
-	Info_AddChoice	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi, "Ich brauche diesen Fokus, geh mal zur Seite.", Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B);
-	Info_AddChoice	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi, "Ich komme nur zufällig vorbei. Wollte sehen, was es hier so gibt.", Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_A);
+	Info_AddChoice	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi, "Potrzebuje skupienia, odsuniecia sie na bok.", Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B);
+	Info_AddChoice	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi, "Przechodze obok. Chcielibysmy zobaczyc, co sie tu dzieje.", Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_A);
 };
 
 FUNC VOID Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_15_00"); //Ich brauche diesen Fokus, geh mal zur Seite.
-	AI_Output(self, hero, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_11_01"); //Also ich weiß nicht. Ich glaube, ich muss dich aufhalten.
-	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_15_02"); //Dann komm doch!
+	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_15_00"); //Potrzebuje skupienia, odsuniecia sie na bok.
+	AI_Output(self, hero, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_11_01"); //No cóz, nie wiem. Mysle, ze musze pana zatrzymac.
+	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B_15_02"); //Chodzcie wiec dalej!
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi);
@@ -42,14 +42,14 @@ FUNC VOID Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_B()
 	self.guild = GIL_KDF;
 	Npc_SetTrueGuild	(self, GIL_KDF);
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Mit der Wahrheit kommt man manchmal weiter. Erstaunlich eigentlich ...");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Czasami mozna posuwac sie naprzód z prawda. Wspanialy, wlasciwie....");
 
 	Mod_PAT_Focus_04 = 1;
 };
 
 FUNC VOID Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_A_15_00"); //Ich komme nur zufällig vorbei. Wollte sehen, was es hier so gibt.
+	AI_Output(hero, self, "Info_Mod_SchwarzNovize_PAT_Fokus04_Hi_A_15_00"); //Przechodze obok. Chcielibysmy zobaczyc, co sie tu dzieje.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_SchwarzNovize_PAT_Fokus04_Hi);

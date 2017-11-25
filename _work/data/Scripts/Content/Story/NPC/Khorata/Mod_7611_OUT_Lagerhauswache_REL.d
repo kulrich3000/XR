@@ -1,7 +1,7 @@
 INSTANCE Mod_7611_OUT_Lagerhauswache_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lagerhauswache"; 
+	name 		= "wartownik"; 
 	guild 		= GIL_OUT;
 	id 			= 7611;
 	voice 		= 28;

@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Alchemist01_Hi_Condition()
 
 FUNC VOID Info_Mod_Alchemist01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_00"); //He, dich habe ich hier noch nie gesehen, Bruder. Bist du gerade von draußen reingekommen?
-	AI_Output(hero, self, "Info_Mod_Alchemist01_Hi_15_01"); //Ja, das bin ich.
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_02"); //Hast du zufällig einige Kräuter bei dir?
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_03"); //Durch die Belagerung herrscht hier nämlich Mangel an allem und es sind vor allem die Tränke, die uns zu dieser schweren Stunde Kraft geben den Angriffen des Feindes zu widerstehen.
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_04"); //Nur gehen uns eben langsam die Zutaten für diese aus.
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_05"); //Wenn du mir also eine Hand voll verschiedener Kräuter besorgen könntest -  sagen wir mal von jedem ein dutzend Stück – wären wir zumindest von dieser Sorge für die nächsten Wochen befreit.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_00"); //Hej, nigdy nie widzialem Cie tutaj, bracie. Czy wlasnie przyjechales z zewnatrz?
+	AI_Output(hero, self, "Info_Mod_Alchemist01_Hi_15_01"); //Tak, to ja.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_02"); //Czy masz wokól siebie jakies ziola?
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_03"); //Ze wzgledu na oblezenie brakuje tu wszystkiego i to przede wszystkim eliksiry daja nam sile do opierania sie atakom nieprzyjaciela w tym trudnym czasie.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_04"); //Ale dla nich zabraklo nam skladników.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Hi_06_05"); //Wiec gdybyscie mogli mnie dostac garstke róznych ziól - powiedzmy po kilkanascie - bylibysmy przynajmniej wolni od tego zmartwienia przez kilka nastepnych tygodni.
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Der Ordenalchemist bat mich, ihm von verschiedenen Kräutern je 1 Dutzend zu bringen.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Monastyczny chemik poprosil mnie, abym przyniósl mu po 1 tuzina ziól.");
 };
 
 INSTANCE Info_Mod_Alchemist01_MangelQuest (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Alchemist01_MangelQuest (C_INFO)
 	information	= Info_Mod_Alchemist01_MangelQuest_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe Kräuter für dich.";
+	description	= "Dostalem dla Ciebie troche ziól.";
 };
 
 FUNC INT Info_Mod_Alchemist01_MangelQuest_Condition()
@@ -51,7 +51,7 @@ FUNC VOID Info_Mod_Alchemist01_MangelQuest_Choices()
 {
 	Info_ClearChoices	(Info_Mod_Alchemist01_MangelQuest);
 
-	Info_AddChoice	(Info_Mod_Alchemist01_MangelQuest, "Zurück", Info_Mod_Alchemist01_MangelQuest_BACK);
+	Info_AddChoice	(Info_Mod_Alchemist01_MangelQuest, "Poprzedni", Info_Mod_Alchemist01_MangelQuest_BACK);
 
 	if (Mod_Pat_Winterrute == 0)
 	&& (Npc_HasItems(hero, ItPl_Winterrute) >= 12)
@@ -97,7 +97,7 @@ FUNC VOID Info_Mod_Alchemist01_MangelQuest_Choices()
 
 FUNC VOID Info_Mod_Alchemist01_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alchemist01_MangelQuest_15_00"); //Ich habe Kräuter für dich.
+	AI_Output(hero, self, "Info_Mod_Alchemist01_MangelQuest_15_00"); //Dostalem dla Ciebie troche ziól.
 	
 	Info_Mod_Alchemist01_MangelQuest_Choices();
 };
@@ -109,12 +109,12 @@ FUNC VOID Info_Mod_Alchemist01_MangelQuest_BACK()
 
 FUNC VOID Info_Mod_Alchemist01_MangelQuest_Fertig()
 {
-	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_00"); //Bei Innos, du musst Stunden damit zugebracht haben die ganzen Kräuter zu sammeln. Damit hat sich das mit dem Mangel an Zutaten erst mal erübrigt.
-	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_01"); //Hier, diese Tränke werden dir bei deinen weiteren Reisen sicher von Nutzen sein.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_00"); //W Innosie musisz spedzic wiele godzin, zbierajac wszystkie ziola. Oznacza to, ze brak skladników nie jest juz konieczny.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_01"); //Te eliksiry z pewnoscia przydadza sie w przyszlych podrózach.
 
-	B_ShowGivenThings	("Elixier des Lebens, 2 Gegengifte und Trank der Genesung erhalten");
+	B_ShowGivenThings	("Eliksir zycia, 2 leki przeciwzapalne i eliksir regeneracji zachowany");
 
-	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_02"); //Innos behüte dich.
+	AI_Output(self, hero, "Info_Mod_Alchemist01_MangelQuest_Fertig_06_02"); //Innos zapewnia Ci bezpieczenstwo.
 
 	CreateInvItems	(hero, ItPo_Perm_Health, 1);
 	CreateInvItems	(hero, ItPo_Gegengift, 2);
@@ -122,7 +122,7 @@ FUNC VOID Info_Mod_Alchemist01_MangelQuest_Fertig()
 
 	B_GivePlayerXP	(500);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Der Ordensalchemist ist mit Kräutern versorgt.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Ziolami zaopatruje sie religijna apteke.");
 
 	B_StopMangel();
 
@@ -281,7 +281,7 @@ INSTANCE Info_Mod_Alchemist01_Fake (C_INFO)
 	information	= Info_Mod_Alchemist01_Fake_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier ein seltsamer Magier gewesen?";
+	description	= "Czy byl tu jakis dziwny mag?";
 };
 
 FUNC INT Info_Mod_Alchemist01_Fake_Condition()
@@ -295,10 +295,10 @@ FUNC INT Info_Mod_Alchemist01_Fake_Condition()
 
 FUNC VOID Info_Mod_Alchemist01_Fake_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alchemist01_Fake_15_00"); //Ist hier ein seltsamer Magier gewesen?
-	AI_Output(self, hero, "Info_Mod_Alchemist01_Fake_06_01"); //Ein Magier war eben noch hier. Er hat gesagt, er wolle zu den Übungsräumen.
+	AI_Output(hero, self, "Info_Mod_Alchemist01_Fake_15_00"); //Czy byl tu jakis dziwny mag?
+	AI_Output(self, hero, "Info_Mod_Alchemist01_Fake_06_01"); //Wlasnie tutaj byl magik. Powiedzial, ze idzie do gabinetów treningowych.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Scheint so als wäre er vom Alchemielabor aus Richtung Übrungsräume geflohen.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Wyglada jak uciekl z laboratorium alchemicznego do pokojów wypoczynkowych.");
 };
 
 INSTANCE Info_Mod_Alchemist01_EXIT (C_INFO)

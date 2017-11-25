@@ -1,7 +1,7 @@
 instance Mod_949_SRF_Finn_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Finn";
+	name 		= "Finlandia";
 	guild 		= GIL_NONE;
 	id 			= 949;
 	voice 		= 7;

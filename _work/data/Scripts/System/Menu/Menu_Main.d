@@ -36,8 +36,8 @@ const int MENU_MAIN_Y = 2500;
 instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Spiel starten";
-	text[1]		= "Ein neues Abenteuer beginnen.";  // Kommentar
+	text[0]		= "Rozpoczecie gry";
+	text[1]		= "Rozpocznij nowa przygode.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*0;
@@ -58,8 +58,8 @@ instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Spiel laden";
-	text[1]		=	"Einen gespeicherten Spielstand laden.";  // Kommentar
+	text[0]		=	"Gra obciazajaca";
+	text[1]		=	"Wczytaj zapisany wynik.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;
@@ -74,8 +74,8 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Spiel speichern";
-	text[1]		= "Den aktuellen Spielstand speichern.";  // Kommentar
+	text[0]		= "Zapisz gre";
+	text[1]		= "Zapisz aktualny wynik.";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*2;
@@ -96,8 +96,8 @@ instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Weiterspielen";
-	text[1]		=   "Aktuelles Spiel fortführen.";  // Kommentar
+	text[0]		=	"dalszy";
+	text[1]		=   "Kontynuuj biezaca gre.";  // Kommentar
 	
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_MAIN_Y + MENU_MAIN_DY*3;
@@ -116,8 +116,8 @@ INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Einstellungen";
-	text[1]		= "Spiel, Video, Audio und Tastatur einstellen";  // Kommentar
+	text[0]		= "nastawienia";
+	text[1]		= "Ustawienia gier, wideo, audio i klawiatury";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -132,8 +132,8 @@ instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_ZUSATZOPTIONS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zusatzeinstellungen";
-	text[1]		= "Speziell für die Mod erweiterte Einstellungen";  // Kommentar
+	text[0]		= "dodatkowe ustawienia";
+	text[1]		= "Specjalnie dla ustawien rozszerzonych modemu";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;
@@ -149,8 +149,8 @@ instance MENUITEM_MAIN_ZUSATZOPTIONS(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Intro spielen";
-	text[1]		= "Introsequenz noch einmal abspielen.";
+	text[0]		= "Odtwarzanie Intro";
+	text[1]		= "Ponownie odtwórz sekwencje intro.";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -164,8 +164,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Credits";
-	text[1]		= "Credits";  // Kommentar
+	text[0]		= "podziekowania";
+	text[1]		= "podziekowania";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;
@@ -185,8 +185,8 @@ INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_EXIT(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Spiel beenden";
-	text[1]		= "Die Welt von Xeres' Rückkehr verlassen.";  // Kommentar
+	text[0]		= "Koniec koncówka";
+	text[1]		= "Zostaw swiat powrotu Xeres.";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*7;	
@@ -202,8 +202,8 @@ INSTANCE MENUITEM_MAIN_EXIT(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_TEAM(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Teutonic Team";
-	text[1]		= "Mitglieder des Teutonic Teams";
+	text[0]		= "Druzyna Teutoniczna";
+	text[1]		= "Czlonkowie Druzyny Krzyzackiej";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;

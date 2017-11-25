@@ -1,7 +1,7 @@
 INSTANCE Mod_515_KDS_Myxir_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Myxir";
+	name 		= "mikser";
 	guild 		= GIL_KDF; 
 	id 			= 515;
 	voice 		= 28;

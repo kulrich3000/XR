@@ -20,13 +20,13 @@ FUNC INT Info_Mod_Mufid_Verrat_Condition()
 
 FUNC VOID Info_Mod_Mufid_Verrat_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_00"); //Was suchst du hier? Hau ab!
-	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_01"); //Ich suche den 3. Kelch. Einer von euch hat ihn.
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_02"); //Quatsch. Wir wissen nichts von einem Kelch. Wir haben den Auftrag, ein Außenlager einzurichten.
-	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_03"); //Da hab ich aber was anderes gehört. Außerden nützt euch der Kelch nichts. Ihr habt den Händler nicht umgebracht.
-	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_04"); //Dachte, er wäre tot. Kann ich ja noch nachholen. Aber erst bist du dran, Schnüffler.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_00"); //Co Pan tutaj robi? Wyjsc stad!
+	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_01"); //Szukam trzeciego. kielich. Jeden z panstwa to ma.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_02"); //Nonsens. Nie wiemy nic o pucharku. Mamy misje zalozenia obozu polowego.
+	AI_Output(hero, self, "Info_Mod_Mufid_Verrat_15_03"); //To nie to, co slyszalem. Poza tym kielich jest dla Ciebie bezuzyteczny. Nie zabiles kupca.
+	AI_Output(self, hero, "Info_Mod_Mufid_Verrat_13_04"); //Myslal, ze on nie zyje. Nadal moge nadrobic zaleglosci. Ale to Twoja kolej, chwytajac za glowe.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Ich habe Mufid und Mirza auf frischer Tat ertappt. Mirza ist allerdings geflohen. Ich sollte zusehen, dass ich ihn finde.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "W akcji zlapalem Mufida i Mirze. Mirza uciekla jednak. Powinienem go znalezc.");
 
 	CreateInvItems	(self, ItKe_Mufid, 1);
 

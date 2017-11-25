@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Erntehelfer_01_Hi (C_INFO)
 	information	= Info_Mod_Erntehelfer_01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sagt die Arbeit?";
+	description	= "Co mówi praca?";
 };
 
 FUNC INT Info_Mod_Erntehelfer_01_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Erntehelfer_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Erntehelfer_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_Hi_15_00"); //Was sagt die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_Hi_06_01"); //Nichts Besonderes. Man macht sie und ist damit durch.
+	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_Hi_15_00"); //Co mówi praca?
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_Hi_06_01"); //Nic szczególnego. Przechodzisz przez nie i jestes z nim zwiazany.
 };
 
 INSTANCE Info_Mod_Erntehelfer_01_AndererJob (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Erntehelfer_01_AndererJob (C_INFO)
 	information	= Info_Mod_Erntehelfer_01_AndererJob_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Noch nie davon geträumt, einen anderen Beruf auszuüben?";
+	description	= "Nigdy wczesniej nie marzyles o kolejnym zawodzie?";
 };
 
 FUNC INT Info_Mod_Erntehelfer_01_AndererJob_Condition()
@@ -38,10 +38,10 @@ FUNC INT Info_Mod_Erntehelfer_01_AndererJob_Condition()
 
 FUNC VOID Info_Mod_Erntehelfer_01_AndererJob_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_00"); //Noch nie davon geträumt, einen anderen Beruf auszuüben?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_01"); //Doch. Ich wollte immer ein Wächter in Khorata werden. Aber Anselm hat mich nicht genommen.
-	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_02"); //Und wieso wurdest du nicht eingestellt?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_03"); //Er meinte, er hätte einen schlechten Tag und wolle sich so einen Scheiß nicht anhören.
+	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_00"); //Nigdy wczesniej nie marzyles o kolejnym zawodzie?
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_01"); //Tak, tak. Zawsze chcialem byc obserwatorem w Khoracie. Ale Anselm mnie nie wzial.
+	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_02"); //A dlaczego nie zostales zatrudniony?
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_03"); //Powiedzial, ze ma zly dzien i nie chce sluchac gówno.
 };
 
 INSTANCE Info_Mod_Erntehelfer_01_Pickpocket (C_INFO)

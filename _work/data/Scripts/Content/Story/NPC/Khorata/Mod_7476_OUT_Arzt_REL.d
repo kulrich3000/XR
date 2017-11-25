@@ -1,7 +1,7 @@
 INSTANCE Mod_7476_OUT_Arzt_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Heiler";	
+	name 		= "uzdrowiciel";	
 	guild 		= GIL_OUT;
 	id 			= 7476;
 	voice 		= 10;

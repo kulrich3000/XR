@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Bloodhound(C_Npc)			
 {
-	name							=	"Bluthund";
+	name							=	"krew";
 	guild							=	GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Bloodhound;
 	level							=	22;
@@ -82,7 +82,7 @@ INSTANCE Bloodhound	(Mst_Default_Bloodhound)
 
 INSTANCE Bloodhound_Untier	(Mst_Default_Bloodhound)
 {
-	name = "verfluchtes Untier";
+	name = "potepiony";
 
 	level							=	100;
 

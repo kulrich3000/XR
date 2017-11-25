@@ -1,7 +1,7 @@
 instance Mod_902_BAU_Egill_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Egill";
+	name 		= "egota";
 	guild 		= GIL_NONE;
 	id 			= 902;
 	voice 		= 37;

@@ -1,7 +1,7 @@
 instance Mod_586_NONE_Jack_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jack"; 
+	name 		= "dzwignik"; 
 	guild 		= GIL_NONE;
 	id 			= 586;
 	voice 		= 14;

@@ -18,55 +18,55 @@ FUNC INT Info_Mod_Emerin_Stollen_Condition()
 
 FUNC VOID Info_Mod_Emerin_Stollen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_00"); //Was? Wo kommst du denn her?
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_15_01"); //Das sollte ich eher dich fragen.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_02"); //Ich lebe hier unten. Die Orks sind vor ein paar Tagen nach hier unten durchgebrochen, und ich musste sie ja irgendwie verjagen.
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_15_03"); //Also bist du ein Totenbeschwörer?
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_04"); //Ja, das könnte man so sagen.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_00"); //Co? Skad pochodziles?
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_15_01"); //Chyba powinienem pana o to zapytac.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_02"); //Mieszkam tutaj. Orki tu kilka dni temu przebily sie przez te orki i musialem je jakos scigac.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_15_03"); //Jestes nekromancerka?
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_12_04"); //Tak, mozna to powiedziec.
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Dann muss ich dich leider töten.", Info_Mod_Emerin_Stollen_B);
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Verstehst du dich auch auf die Verwandlungsmagie?", Info_Mod_Emerin_Stollen_A);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Wtedy bede musial cie zabic.", Info_Mod_Emerin_Stollen_B);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Czy rozumiesz magie transformacji?", Info_Mod_Emerin_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_B_15_00"); //Dann muss ich dich leider töten.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_B_12_01"); //Was habe ich dir denn getan?
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_B_15_00"); //Wtedy bede musial cie zabic.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_B_12_01"); //Co zrobilem dla Ciebie?
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Ich habe es mir zum Beruf gemacht, Nekromanten zu töten.", Info_Mod_Emerin_Stollen_C);
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Das war nur ein Witz.", Info_Mod_Emerin_Stollen_D);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Zrobilem to w mojej firmie, aby zabijac czarnoksiezników.", Info_Mod_Emerin_Stollen_C);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "To byl tylko zart.", Info_Mod_Emerin_Stollen_D);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_A_15_00"); //Verstehst du dich auch auf die Verwandlungsmagie?
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_A_12_01"); //Natürlich. Ich war einst ein angesehenes Mitglied im Kreis der Verwandlungsmagier in Tugettso.
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_A_15_02"); //Warum bist du denn keiner mehr?
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_A_12_03"); //Das ist eine lange Geschichte.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_A_15_00"); //Czy rozumiesz magie transformacji?
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_A_12_01"); //Oczywiscie tak jest. Bylem kiedys szanowanym czlonkiem Kola Metamagic w Tugettso.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_A_15_02"); //Dlaczego nikogo juz nie masz?
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_A_12_03"); //To dluga historia.
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Bitte die Kurzversion.", Info_Mod_Emerin_Stollen_F);
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Ich habe Zeit.", Info_Mod_Emerin_Stollen_E);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Krótka wersja, prosze.", Info_Mod_Emerin_Stollen_F);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Mam czas.", Info_Mod_Emerin_Stollen_E);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_D()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_D_15_00"); //Das war nur ein Witz.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_D_15_00"); //To byl tylko zart.
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Habt ihr hier zufällig einen Stollen entdeckt?", Info_Mod_Emerin_Stollen_A);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Czy zdarzylo Ci sie znalezc tunel?", Info_Mod_Emerin_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_C_15_00"); //Ich habe es mir zum Beruf gemacht, Nekromanten zu töten.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_C_12_01"); //Wenn das so ist ...
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_C_15_00"); //Zrobilem to w mojej firmie, aby zabijac czarnoksiezników.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_C_12_01"); //Cóz, w takim przypadku.....
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
@@ -77,34 +77,34 @@ FUNC VOID Info_Mod_Emerin_Stollen_C()
 
 FUNC VOID Info_Mod_Emerin_Stollen_G()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_G_15_00"); //Also bist du noch in der Lage, dich zu verwandeln oder zumindest Verwandlungsrollen herzustellen?
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_01"); //Selbstverständlich. Magie vergisst man nicht so einfach. Was kann ich für dich tun?
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_G_15_02"); //Ich suche den Verwandlungszauber zur Harpie.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_03"); //Oh, davon habe ich keine mehr. Aber du kannst mir die nötigen Zutaten bringen, damit ich einen herstellen kann.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_04"); //Bist du daran interessiert?
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_G_15_00"); //Wiec czy nadal jestes w stanie przeksztalcic sie lub przynajmniej stworzyc role transformacji?
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_01"); //Oczywiscie oczywiscie. Magia nie jest latwa do zapomnienia. Co moge dla Ciebie zrobic?
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_G_15_02"); //Szukam zaklecia metamorfozy do harpie.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_03"); //Och, nie mam juz tego zadnego. Ale mozesz mnie dostac skladniki, które sa mi potrzebne do ich wyprodukowania.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_G_12_04"); //Interesuje Cie?
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "In den Stollen habe ich einen ehemaligen Verwandlungsmagier getroffen, der sich scheinbar sehr eingehend mit der Nekromantie, der Totenbeschwörung, befasst.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "W tunelach spotkalem bylego maga transformacji, który zdaje sie bardzo dokladnie radzic sobie z nekromancja, nekromancja.");
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Vorher möchte ich noch etwas erledigen.", Info_Mod_Emerin_Stollen_I);
-	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Klar. Was soll ich dir bringen.", Info_Mod_Emerin_Stollen_H);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Jest cos, co chce zrobic najpierw.", Info_Mod_Emerin_Stollen_I);
+	Info_AddChoice	(Info_Mod_Emerin_Stollen, "Pewne. Co powinienem zrobic?", Info_Mod_Emerin_Stollen_H);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_I()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_I_15_00"); //Vorher möchte ich noch etwas erledigen.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_I_12_01"); //Komm wieder, wenn du interessiert bist.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_I_15_00"); //Jest cos, co chce zrobic najpierw.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_I_12_01"); //Jesli jestes zainteresowany, wróc.
 
 	Info_ClearChoices	(Info_Mod_Emerin_Stollen);
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_H()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_H_15_00"); //Klar. Was soll ich dir bringen.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_H_12_01"); //Ich brauche zwei Flügel einer Blutfliege, ein Blatt Papier – ein Steckbrief tut's auch -, und eine Mana Essenz.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_H_15_00"); //Pewne. Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_H_12_01"); //Potrzebuje dwóch skrzydel krwi, kartki papieru - a takze profilu - i esencji mana.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Der Nekromant Emerin braucht für die Herstellung der Spruchrolle „Verwandlung Harpie“ zwei Flügel einer Blutfliege, einen Blatt Papier und eine Mana Essenz.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Necromancer Emerin potrzebuje dwóch skrzydel muchy krwi, arkusza papieru i mana esencji do produkcji powiesciowej roli 'Transformation Harpie'.");
 
 	Mod_Hermy_KnowsQuest = 4;
 
@@ -113,22 +113,22 @@ FUNC VOID Info_Mod_Emerin_Stollen_H()
 
 FUNC VOID Info_Mod_Emerin_Stollen_E()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_E_15_00"); //Ich habe Zeit.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_01"); //Ich entdeckte, dass die Lehren, die die anderen verfolgten, verkehrt waren. Der Weg, den sie gingen, war falsch.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_02"); //Aber als ich versuchte, sie davon zu überzeugen, glaubten sie mir nicht. Sie verstießen mich aus ihrer Gemeinschaft.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_03"); //So irrte ich umher und lernte nach und nach, dass die Beschwörung der Verwandlung weit voraus ist.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_04"); //Ich besuchte große Meister, die inzwischen wohl tot sind, und lernte einiges über die Nekromantie.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_05"); //Bald danach entdeckte ich diesen Stollen und machte ihn für mich bewohnbar, ehe ich ihn verschloss.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_06"); //Doch dann kamen die Orks und zwangen mich dazu, den Stollen zu verteidigen.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_E_15_00"); //Mam czas.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_01"); //Odkrylem, ze nauki innych byly bledne. Droga, która obrali, byla bledna.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_02"); //Ale kiedy próbowalem ich przekonac, nie uwierzyli mi. Wyrzucili mnie z wlasnej spolecznosci.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_03"); //Wiec bladzilem sie wokól i stopniowo nauczylem sie, ze zaklecie jest daleko przed transformacja.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_04"); //Odwiedzilem wielkich mistrzów, którzy prawdopodobnie do tej pory nie zyja i dowiedzialem sie wiele o nekromancji.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_05"); //Wkrótce potem odkrylem ten tunel i uczynilem go mieszkalnym przed jego zamknieciem.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_E_12_06"); //Ale potem przyszly orki i zmusily mnie do obrony tunelu.
 
 	Info_Mod_Emerin_Stollen_G();
 };
 
 FUNC VOID Info_Mod_Emerin_Stollen_F()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_F_15_00"); //Bitte die Kurzversion.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_F_12_01"); //Nachdem die Verwandlungsmagier mich wegen meiner Einsicht über die Falschheit ihrer Lehren verstoßen hatten, irrte ich tagelang umher und lernte von großen, inzwischen wohl toten, Meistern einiges über die Nekromantie.
-	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_F_12_02"); //Danach richtete ich mir diesen Stollen ein und verschloss ihn, ehe die Orks ihn wieder aufbrachen und mich zwangen, den Stollen zu verteidigen.
+	AI_Output(hero, self, "Info_Mod_Emerin_Stollen_F_15_00"); //Krótka wersja, prosze.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_F_12_01"); //Po wyparciu mnie przez magów z metamorfozy z powodu mojego wgladu do nieprawdziwosci ich nauk, przez wiele dni wedrowalem po okolicy i nauczylem sie sporo o nekromancji od wielkich mistrzów, którzy teraz prawdopodobnie nie zyja.
+	AI_Output(self, hero, "Info_Mod_Emerin_Stollen_F_12_02"); //Nastepnie rozstawilem ten tunel i zamknalem go przed jego ponownym ustawieniem przez orki i zmusilem mnie do obrony tunelu.
 
 	Info_Mod_Emerin_Stollen_G();
 };
@@ -141,7 +141,7 @@ INSTANCE Info_Mod_Emerin_Zutaten (C_INFO)
 	information	= Info_Mod_Emerin_Zutaten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was soll ich dir bringen.";
+	description	= "Co powinienem zrobic?";
 };
 
 FUNC INT Info_Mod_Emerin_Zutaten_Condition()
@@ -155,10 +155,10 @@ FUNC INT Info_Mod_Emerin_Zutaten_Condition()
 
 FUNC VOID Info_Mod_Emerin_Zutaten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Emerin_Zutaten_15_00"); //Was soll ich dir bringen.
-	AI_Output(self, hero, "Info_Mod_Emerin_Zutaten_12_01"); //Ich brauche zwei Flügel einer Blutfliege, ein Blatt Papier – ein Steckbrief tut's auch -, und eine Mana Essenz.
+	AI_Output(hero, self, "Info_Mod_Emerin_Zutaten_15_00"); //Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Emerin_Zutaten_12_01"); //Potrzebuje dwóch skrzydel krwi, kartki papieru - a takze profilu - i esencji mana.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Der Nekromant Emerin braucht für die Herstellung der Spruchrolle „Verwandlung Harpie“ zwei Flügel einer Blutfliege, einen Steckbrief von mir und eine Mana Essenz.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Necromancer Emerin potrzebuje dwóch skrzydel krwi muchy, profilu mnie i mana esencji do produkcji powiesciowej roli 'Transformation Harpie'.");
 
 	Mod_Hermy_KnowsQuest = 4;
 };
@@ -187,18 +187,18 @@ FUNC INT Info_Mod_Emerin_HabZutaten_Condition()
 
 FUNC VOID Info_Mod_Emerin_HabZutaten_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Emerin_HabZutaten_12_00"); //Hast du die Zutaten?
-	AI_Output(hero, self, "Info_Mod_Emerin_HabZutaten_15_01"); //Ja, hier.
+	AI_Output(self, hero, "Info_Mod_Emerin_HabZutaten_12_00"); //Masz skladniki?
+	AI_Output(hero, self, "Info_Mod_Emerin_HabZutaten_15_01"); //Tak, tutaj.
 
-	B_ShowGivenThings	("Mana Essenz, zwei Blutfliegenflügel und Papier gegeben");
+	B_ShowGivenThings	("Mana esencja, dwa skrzydla krwi muchy i papieru podane");
 
 	Npc_RemoveInvItems	(hero, ItPo_Mana_01, 1);
 	Npc_RemoveInvItems	(hero, ItAt_Wing, 2);
 	Npc_RemoveInvItems	(hero, ItWr_Paper, 1);
 
-	AI_Output(self, hero, "Info_Mod_Emerin_HabZutaten_12_02"); //Wunderbar, komme morgen wieder, dann gebe ich dir die Spruchrolle.
+	AI_Output(self, hero, "Info_Mod_Emerin_HabZutaten_12_02"); //Cudowny, wróc jutro, a potem oddam Ci role czaru.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich soll einen Tag warten und mir dann die Spruchrolle von Emerin abholen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Mam poczekac dzien, a potem zlapac zaklecie Emerina.");
 
 	Mod_Hermy_KnowsQuest = 5;
 	Mod_EmerinWillDie = Wld_GetDay();

@@ -1,7 +1,7 @@
 instance Mod_7531_JG_Wilderer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wilderer"; 
+	name 		= "klusownicy"; 
 	guild 		= GIL_STRF;
 	id 			= 7531;
 	voice 		= 6;

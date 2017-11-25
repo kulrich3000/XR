@@ -2,7 +2,7 @@ instance Mod_1288_SLD_Butch_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Butch";
+	name =							"rzez";
 	Npctype =						Npctype_Main;
 	guild =							GIL_mil;      
 	level =							15;

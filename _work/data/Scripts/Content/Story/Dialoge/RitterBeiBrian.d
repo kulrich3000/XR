@@ -18,25 +18,25 @@ FUNC INT Info_Mod_RitterBeiBrian_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_RitterBeiBrian_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_00"); //Sehr gut, wir haben ihn erwischt.
-	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_15_01"); //Was habt ihr gemacht, warum habt ihr ihn getötet?
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_02"); //Er ... war ein gesuchter Mörder. Wir haben ihn für seine Tat gerichtet.
-	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_15_03"); //Einfach so mit der Armbrust niedergestreckt.
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_04"); //Schweig! Worüber habt ihr denn gesprochen? Hat er vielleicht Namen genannt?
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_05"); //Du musst uns alles erzählen, was er erwähnt hat. Vielleicht hatte er ja Komplizen ...
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_00"); //Bardzo dobrze, dostalismy go.
+	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_15_01"); //Co Pan zrobil, dlaczego go zabil?
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_02"); //On.... byl pozadanym zabójca. Uwazalismy go za to, co zrobil.
+	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_15_03"); //Po prostu rozstawione kusza.
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_04"); //Wylaczyc! O czym Pan mówil? Czy wymienil nazwiska?
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_11_05"); //Musi nam pan powiedziec wszystko, co powiedzial. Moze mial wspólników....
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Brian schien sehr verängstigt und wollte etwas von der Stadt berichten. Er wurde jedoch von dem Bolzen eines Ritters in die ewigen Jagdgründe geschickt. Sterbend erwähnte er Rupert und warnte mich vor der Finsternis.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Brian wydawal sie bardzo przerazony i chcial cos zglosic o miescie. Jednak zostal wyslany na wieczne tereny lowieckie przez rycerza. Z umierajac wspomnial o Rupercie i ostrzegl mnie przed ciemnoscia.");
 
 	Info_ClearChoices	(Info_Mod_RitterBeiBrian_Daemonisch);
 
-	Info_AddChoice	(Info_Mod_RitterBeiBrian_Daemonisch, "Nein, ich habe ihn hier gefunden, dann seid ihr gleich aufgetaucht.", Info_Mod_RitterBeiBrian_Daemonisch_B);
-	Info_AddChoice	(Info_Mod_RitterBeiBrian_Daemonisch, "Er wollte etwas von der Stadt erzählen, und sagte mir, ich solle mich vor der Finsternis hüten.", Info_Mod_RitterBeiBrian_Daemonisch_A);
+	Info_AddChoice	(Info_Mod_RitterBeiBrian_Daemonisch, "Nie, znalazlem go tutaj, a potem sie pojawiles.", Info_Mod_RitterBeiBrian_Daemonisch_B);
+	Info_AddChoice	(Info_Mod_RitterBeiBrian_Daemonisch, "Chcial mi cos powiedziec o miescie i powiedzial, ze czuwa nad ciemnoscia.", Info_Mod_RitterBeiBrian_Daemonisch_A);
 };
 
 FUNC VOID Info_Mod_RitterBeiBrian_Daemonisch_B()
 {
-	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_B_15_00"); //Nein, ich habe ihn hier gefunden, dann seid ihr gleich aufgetaucht.
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_B_11_01"); //Sehr schade. Naja, sei’s drum. Innos zum Gruß.
+	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_B_15_00"); //Nie, znalazlem go tutaj, a potem sie pojawiles.
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_B_11_01"); //To jest zbyt zle. No cóz, tak czy owak. Innos, powitanie.
 
 	Info_ClearChoices	(Info_Mod_RitterBeiBrian_Daemonisch);
 
@@ -49,11 +49,11 @@ FUNC VOID Info_Mod_RitterBeiBrian_Daemonisch_B()
 
 FUNC VOID Info_Mod_RitterBeiBrian_Daemonisch_A()
 {
-	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_A_15_00"); //Er wollte etwas von der Stadt erzählen, und sagte mir, ich solle mich vor der Finsternis hüten. Er erwähnte auch Rupert ...
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_A_11_01"); //Ja, hat er das ... Nun, ist es nicht verwunderlich, dass du dich hier mit ihm getroffen hast.
-	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_A_11_02"); //Du bist bestimmt ein Komplize des Mörders ... und Mörder müssen sofort gerichtet werden.
+	AI_Output(hero, self, "Info_Mod_RitterBeiBrian_Daemonisch_A_15_00"); //Chcial mi cos powiedziec o miescie i powiedzial, ze czuwa nad ciemnoscia. Wspomnial równiez o Rupercie....
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_A_11_01"); //Tak, czy dostal to....? Cóz, nie dziwi, ze spotkales sie z nim tutaj.
+	AI_Output(self, hero, "Info_Mod_RitterBeiBrian_Daemonisch_A_11_02"); //Musisz byc wspólnikiem zabójcy.... a mordercy musza byc osadzeni natychmiast.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Die Ritter, die Brian auf dem Gewissen hatten, versuchten mich umzubringen, nachdem ich ihnen preisgab, was Brian mir mitgeteilt hatte.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Rycerze, którzy zabili Briana próbowali mnie zabic po tym, jak dalem im to, co Brian mi powiedzial.");
 
 	Info_ClearChoices	(Info_Mod_RitterBeiBrian_Daemonisch);
 

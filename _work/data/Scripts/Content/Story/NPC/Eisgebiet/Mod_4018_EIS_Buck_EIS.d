@@ -1,7 +1,7 @@
 INSTANCE Mod_4018_EIS_Buck_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Buck"; 
+	name 		= "koziol"; 
 	guild 		= GIL_OUT;
 	id 			= 4018;
 	voice 		= 9;

@@ -1,7 +1,7 @@
 INSTANCE Mod_12001_DRA_Wache_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Echsenmensch";
+	name	=	"jaszczurka";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12001;
 	level	=	35;

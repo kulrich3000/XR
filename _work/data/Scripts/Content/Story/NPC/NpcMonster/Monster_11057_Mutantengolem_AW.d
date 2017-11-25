@@ -1,7 +1,7 @@
 INSTANCE Monster_11057_Mutantengolem_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mutantengolem";	
+	name 		= "Mutant Golem";	
 	guild							=	GIL_STONEGOLEM;
 	level							=	50;
 	id = 11057;

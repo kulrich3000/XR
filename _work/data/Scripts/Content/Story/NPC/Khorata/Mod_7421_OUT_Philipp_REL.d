@@ -1,7 +1,7 @@
 INSTANCE Mod_7421_OUT_Philipp_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Philipp"; 
+	name 		= "Philip"; 
 	guild 		= GIL_OUT;
 	id 			= 7421;
 	voice 		= 7;

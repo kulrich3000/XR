@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vanja_Hi (C_INFO)
 	information	= Info_Mod_Vanja_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Vanja_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Vanja_Hi_Condition()
 FUNC VOID Info_Mod_Vanja_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Vanja_Hi_17_01"); //Ich bin Vanja.
+	AI_Output(self, hero, "Info_Mod_Vanja_Hi_17_01"); //Jestem Vanja.
 };
 
 INSTANCE Info_Mod_Vanja_Hilfe (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Vanja_Hilfe (C_INFO)
 	information	= Info_Mod_Vanja_Hilfe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bedrückt dich was?";
+	description	= "Cos na twój umysl?";
 };
 
 FUNC INT Info_Mod_Vanja_Hilfe_Condition()
@@ -42,14 +42,14 @@ FUNC INT Info_Mod_Vanja_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Vanja_Hilfe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vanja_Hilfe_15_00"); //Bedrückt dich was?
-	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_01"); //Ach ... Bromor ist Zurzeit recht grob, wenn du verstehst.
-	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_02"); //Er schlägt mich, weil ich nicht so viel Geld verdiene wie Nadja.
-	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_03"); //Wenn ihm doch nur jemand eine ordentliche Abreibung verpassen könnte, damit er es auf der eigenen Haut spürt, wie das ist ...
+	AI_Output(hero, self, "Info_Mod_Vanja_Hilfe_15_00"); //Cos na twój umysl?
+	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_01"); //Ah.... Bromor jest teraz dosc chropowaty, jesli wiesz, co mam na mysli.
+	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_02"); //Bity mnie, bo nie zarabiam tyle co Nadja.
+	AI_Output(self, hero, "Info_Mod_Vanja_Hilfe_17_03"); //Jesli tylko ktos móglby mu dac dobre otarcie, aby mógl poczuc je na wlasnej skórze, jak to jest......
 
 	Log_CreateTopic	(TOPIC_MOD_VANJA_BROMOR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VANJA_BROMOR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_VANJA_BROMOR, "Bromor misshandelt Vanja. Sie denkt, dass er sich bessern würde, wenn er selbst eine Tracht Prügel bekäme ...");
+	B_LogEntry	(TOPIC_MOD_VANJA_BROMOR, "Bromor naduzywa Vanja. Ona uwaza, ze lepiej by byl, gdyby pobil sie sam....");
 };
 
 INSTANCE Info_Mod_Vanja_BromorKO (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Vanja_BromorKO (C_INFO)
 	information	= Info_Mod_Vanja_BromorKO_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bromor wird dich nicht mehr schlagen.";
+	description	= "Bromor juz cie nie uderzy.";
 };
 
 FUNC INT Info_Mod_Vanja_BromorKO_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Mod_Vanja_BromorKO_Condition()
 
 FUNC VOID Info_Mod_Vanja_BromorKO_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vanja_BromorKO_15_00"); //Bromor wird dich nicht mehr schlagen.
-	AI_Output(self, hero, "Info_Mod_Vanja_BromorKO_17_01"); //Vielen Dank, du bist mein Retter.
-	AI_Output(self, hero, "Info_Mod_Vanja_BromorKO_17_02"); //Hier hast du etwas Gold als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Vanja_BromorKO_15_00"); //Bromor juz cie nie uderzy.
+	AI_Output(self, hero, "Info_Mod_Vanja_BromorKO_17_01"); //Dziekuje bardzo, jestes moim zbawicielem.
+	AI_Output(self, hero, "Info_Mod_Vanja_BromorKO_17_02"); //Oto jakas nagroda za zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 

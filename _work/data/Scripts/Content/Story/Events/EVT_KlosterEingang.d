@@ -65,6 +65,6 @@ FUNC VOID EVT_KLOSTEREINGANG2()
 FUNC VOID EVT_KLOSTEREINGANG_WARNING()
 {
 	if (!CheckKlosterPermission()) {
-		PrintScreen ("Du bist nicht wÃ¼rdig die Pforte zu durchschreiten. Kehre um!", -1, YPOS_LevelUp, FONT_Screen, 3);
+		PrintScreen ("Nie warto przechodzic przez brame. Odwrócic!", -1, YPOS_LevelUp, FONT_Screen, 3);
 	};
 };

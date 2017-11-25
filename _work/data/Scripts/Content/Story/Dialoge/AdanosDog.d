@@ -6,7 +6,7 @@ INSTANCE Info_Mod_AdanosDog_Hi (C_INFO)
 	information	= Info_Mod_AdanosDog_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, ich glaube nicht, dass du derjenige bist, mit dem ich sprechen will.";
+	description	= "Uh, nie sadze, zebys byl tym, z kim chce porozmawiac.";
 };
 
 FUNC INT Info_Mod_AdanosDog_Hi_Condition()
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_AdanosDog_Kristall (C_INFO)
 	information	= Info_Mod_AdanosDog_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, bist du zufällig ein göttlicher Bote?";
+	description	= "Ach, czy przez przypadek jestes boskim poslannikiem?";
 };
 
 FUNC INT Info_Mod_AdanosDog_Kristall_Condition()
@@ -54,14 +54,14 @@ FUNC VOID Info_Mod_AdanosDog_Kristall_Info()
 
 	B_Say_Dog_Wau();
 
-	AI_Output(hero, self, "Info_Mod_AdanosDog_Kristall_15_02"); //Öhhm, könntest du dann zufällig dem Kristall unseres Herrn Adanos neue Kraft schenken?
+	AI_Output(hero, self, "Info_Mod_AdanosDog_Kristall_15_02"); //Um, czy móglbys wiec przez przypadek dac krysztalowi Pana Adanosa nowa sile?
 
 	B_Say_Dog_Wuff();
 
 	Npc_RemoveInvItems	(hero, ItMi_AbsorbKristall, 1);
 	CreateInvItems	(hero, ItMi_AbsorbKristall2, 1);
 
-	AI_Output(hero, self, "Info_Mod_AdanosDog_Kristall_15_03"); //Hab vielen Dank.
+	AI_Output(hero, self, "Info_Mod_AdanosDog_Kristall_15_03"); //Dziekuje bardzo.
 
 	B_GivePlayerXP	(2000);
 };
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_AdanosDog_Ende (C_INFO)
 	information	= Info_Mod_AdanosDog_Ende_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das war alles, was ich wollte.";
+	description	= "To wszystko, czego chcialem.";
 };
 
 FUNC INT Info_Mod_AdanosDog_Ende_Condition()
@@ -87,7 +87,7 @@ FUNC INT Info_Mod_AdanosDog_Ende_Condition()
 
 FUNC VOID Info_Mod_AdanosDog_Ende_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AdanosDog_Ende_15_00"); //Das war alles, was ich wollte.
+	AI_Output(hero, self, "Info_Mod_AdanosDog_Ende_15_00"); //To wszystko, czego chcialem.
 
 	AI_StopProcessInfos	(self);
 
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_AdanosDog_Futter (C_INFO)
 	information	= Info_Mod_AdanosDog_Futter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du ein Stück Fleisch?";
+	description	= "Chcesz kawalek miesa?";
 };
 
 FUNC INT Info_Mod_AdanosDog_Futter_Condition()
@@ -117,29 +117,29 @@ FUNC INT Info_Mod_AdanosDog_Futter_Condition()
 
 FUNC VOID Info_Mod_AdanosDog_Futter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AdanosDog_Futter_15_00"); //Willst du ein Stück Fleisch?
+	AI_Output(hero, self, "Info_Mod_AdanosDog_Futter_15_00"); //Chcesz kawalek miesa?
 	
 	Info_ClearChoices	(Info_Mod_AdanosDog_Futter);
 
 	if (Npc_HasItems(hero, ItFoMuttonZombie) > 0)
 	{
-		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Zombiefleisch geben", Info_Mod_AdanosDog_Futter_MuttonZombie);
+		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "nadac miazsz zombie", Info_Mod_AdanosDog_Futter_MuttonZombie);
 	};
 	if (Npc_HasItems(hero, ItFo_PfefferBacon) > 0)
 	{
-		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "gepfefferten Schinken geben", Info_Mod_AdanosDog_Futter_PfefferBacon);
+		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "wyciek", Info_Mod_AdanosDog_Futter_PfefferBacon);
 	};
 	if (Npc_HasItems(hero, ItFo_Mutton) > 0)
 	{
-		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Gebratenes Fleisch geben", Info_Mod_AdanosDog_Futter_Mutton);
+		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Podawanie miesa smazonego", Info_Mod_AdanosDog_Futter_Mutton);
 	};
 	if (Npc_HasItems(hero, ItFo_Mutton) > 0)
 	{
-		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Rohes Fleisch geben", Info_Mod_AdanosDog_Futter_MuttonRaw);
+		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Dodac surowe mieso", Info_Mod_AdanosDog_Futter_MuttonRaw);
 	};
 	if (Npc_HasItems(hero, ItFo_Schafswurst) > 0)
 	{
-		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "Schafswurst geben", Info_Mod_AdanosDog_Futter_Schafswurst);
+		Info_AddChoice	(Info_Mod_AdanosDog_Futter, "parówki owcze", Info_Mod_AdanosDog_Futter_Schafswurst);
 	};
 };
 

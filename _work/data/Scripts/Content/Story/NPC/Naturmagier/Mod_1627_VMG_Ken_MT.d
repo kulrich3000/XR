@@ -2,7 +2,7 @@ instance Mod_1627_VMG_Ken_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Ken";
+	name =							"kolega";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 		

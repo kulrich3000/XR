@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Skinner_Hi (C_INFO)
 	information	= Info_Mod_Skinner_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo ...";
+	description	= "Witaj....";
 };
 
 FUNC INT Info_Mod_Skinner_Hi_Condition()
@@ -19,28 +19,28 @@ FUNC INT Info_Mod_Skinner_Hi_Condition()
 
 FUNC VOID Info_Mod_Skinner_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_00"); //Hallo ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_01"); //(mürrisch) Warum weckst du mich? Siehst du nicht, dass ich mich gerade ausruhe?
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_02"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_03"); //Aber warte, du bist doch der Neue. Jetzt, da du schon mal hier bist, kann ich dir ein großartiges Angebot unterbreiten.
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_04"); //Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_05"); //Du bist ja noch nicht lange dabei und willst sicher schnell im Lager aufsteigen, Ansehen gewinnen. Ich kann dir dabei helfen.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_06"); //Dazu musst du nur ein paar Sachen meinen Geschäftspartnern vorbeibringen, dich von ihnen bezahlen lassen und mir Gold und Sonstiges, was du von ihnen bekommst, herbringen.
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_07"); //Was springt für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_08"); //Was?! Ist es nicht schon Entlohnung genug, dass du mir ... äh, dem Lager helfen kannst?
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_09"); //Aber warte, da fällt mir etwas ein. Ich habe da noch einen mächtigen magischen Ring, der deine Stärke erheblich beeinflusst.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_10"); //Den kriegst du dann noch zusätzlich zu dem ganzen Ruhm. Was sagst du?
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_00"); //Witaj....
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_01"); //Dlaczego mnie budzisz? Czy nie widzisz, ze odpoczywam teraz?
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_02"); //l--
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_03"); //Ale czekaj, jestes nowym facetem. Teraz, gdy jestes tutaj, moge ci wiele zrobic.
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_04"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_05"); //Nie byles zbyt dlugo, a chcesz szybko wejsc na obóz i zyskac reputacje. Moge panu w tym pomóc.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_06"); //Wszystko co musisz zrobic, to przyniesc kilka rzeczy moim partnerom biznesowym, zaplacic im i przyniesc mi zloto i inne rzeczy, które od nich otrzymujesz.
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_15_07"); //Co to dla mnie jest?
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_08"); //Co? Czy nie jest to wystarczajaco nagroda, aby mi powiedziec.... moze pomóc obozowi?
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_09"); //Ale poczekaj, pomyslim o czyms. Mam potezny magiczny pierscien, który w duzym stopniu wplynie na Twoja sile.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_24_10"); //Uzyskasz to oprócz calej chwaly. Co mówisz?
 
 	Info_ClearChoices	(Info_Mod_Skinner_Hi);
 
-	Info_AddChoice	(Info_Mod_Skinner_Hi, "Ich spiel doch nicht deinen Laufburschen.", Info_Mod_Skinner_Hi_B);
-	Info_AddChoice	(Info_Mod_Skinner_Hi, "Ich mach's.", Info_Mod_Skinner_Hi_A);
+	Info_AddChoice	(Info_Mod_Skinner_Hi, "Nie gram twojego chlopca, który sie rozmyslal.", Info_Mod_Skinner_Hi_B);
+	Info_AddChoice	(Info_Mod_Skinner_Hi, "Zrobie to.", Info_Mod_Skinner_Hi_A);
 };
 
 FUNC VOID Info_Mod_Skinner_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_B_15_00"); //Ich spiel doch nicht deinen Laufburschen.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_B_24_01"); //(verärgert) Dann eben nicht. Und jetzt verpiss dich!
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_B_15_00"); //Nie gram twojego chlopca, który sie rozmyslal.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_B_24_01"); //Nie róbmy wiec tego. Teraz sie rozejrzyj!
 	
 	Info_ClearChoices	(Info_Mod_Skinner_Hi);
 
@@ -49,23 +49,23 @@ FUNC VOID Info_Mod_Skinner_Hi_B()
 
 FUNC VOID Info_Mod_Skinner_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Hi_A_15_00"); //Ich mach's.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_01"); //Na also, du weißt, was ein gutes Angebot ist.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_02"); //Also, ich habe hier dieses Sumpfkraut. Habe ich mal einem Spinner abgenommen, der sich selbst Baal Netbek nannte, aber das tut nichts zur Sache.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_03"); //Du wirst es jedenfalls meinen Kunden bringen.
+	AI_Output(hero, self, "Info_Mod_Skinner_Hi_A_15_00"); //Zrobie to.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_01"); //No cóz, wiesz, jaka jest dobra oferta.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_02"); //No cóz, mam te ambrozje bagnista. Wzialem go od szalenca, który nazwal siebie Baalem Netbkiem, ale to nie ma znaczenia.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_03"); //Przyniesz to moim klientom.
 
 	CreateInvItems	(hero, ItMi_Traumruf, 10);
 	CreateInvItems	(hero, ItMi_Addon_Joint_01, 7);
 	CreateInvItems	(hero, ItMi_Addon_Joint_02, 12);
 
-	B_ShowGivenThings ("Sumpfkrautstängel erhalten");
+	B_ShowGivenThings ("zakonserwowane lodygi roslin bagiennych");
 
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_04"); //Bei den Dämonenkriegern gibt es da Eduard. Der raucht massenweise Traumrufe weg. 4 bis 8 Stück solltest du schon bei ihm wegbekommen. Pro Traumruf sind 80 Gold fällig.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_05"); //Dann gibt es noch Andokai bei den Dämonenmagiern. Er raucht das Zeug, sagt er, um in Trance seinem Meister näher sein zu können.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_06"); //Er nimmt dir auf jeden Fall ein paar Traumrufe und bestimmt noch einige schwarze Weise ab. Für jeden schwarzen Weisen sind 40 Goldstücke fällig und für jeden grünen Novizen 20.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_07"); //Ach ja, mein Kumpel Edgor hat noch was gut bei mir. Ich denke mit 3 grünen Novizen sollte das abgegolten sein.
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_08"); //Den Rest verscherbelst du in der Stadt im unteren Viertel. Da gibt’s immer Abnehmer. Alles klar?
-	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_09"); //Ich erwarte dann mindestens 1200 Gold von dir. Den Rest kannst du behalten und bekommst dann noch die versprochene Belohnung bei mir.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_04"); //Wojownicy demonów maja Edwarda. Palenie pali mnóstwo wymarzonych rozmów. Powinienes miec mozliwosc odebrania 4 lub 8 osób. 80 zloto jest nalezne za kazde wezwanie wymarzone.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_05"); //Jest Andokai z magikami demonów. On pali rzeczy, mówi, aby byc blizej swego mistrza w transie.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_06"); //W kazdym razie wezmie od Ciebie kilka wymarzonych rozmów i na pewno zrobi czarne rzeczy. Do kazdego czarnego mezczyzny przypadnie 40 sztuk zlota, a dla kazdego zielonego nowicjusza 20.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_07"); //A tak przy okazji, mój przyjaciel Edgor's dostal dla mnie cos innego. Uwazam, ze nalezy ja zrekompensowac trzema zielonymi nowicjuszami.
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_08"); //Reszta zostanie sprzedana w dolnej czesci miasta. Zawsze jest tam nabywca. Kazdy ma racje?
+	AI_Output(self, hero, "Info_Mod_Skinner_Hi_A_24_09"); //Oczekuje od Ciebie co najmniej 1200 zlota. Mozesz zatrzymac reszte i ode mnie dostac obiecana nagrode.
 	
 	Mod_SkinnerQuest = 1;
 
@@ -95,45 +95,45 @@ FUNC INT Info_Mod_Skinner_Laufbursche_Condition()
 
 FUNC VOID Info_Mod_Skinner_Laufbursche_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_00"); //Ach ja, fast hätte ich es noch vergessen. Ich habe da noch was Schönes, was du Myxir vorbeibringen sollst. Er experimentiert gerade an irgendwelchen neuen Beschwörungszaubern.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_01"); //Erst mal einige Skelettknochen ...
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_00"); //Och, prawie zapomnialem. Mam cos milego do przejecia Myxiru. W tej chwili eksperymentuje z nowymi zakleciami przywolujacymi.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_01"); //Najpierw kilka kosci szkieletowych.....
 
 	B_GiveInvItems	(self, hero, ItAt_SkeletonBone, 20);
 
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_02"); //Aha ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_03"); //... ein paar Goblinknochen ...
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_02"); //Aha....
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_03"); //... kilka kosci goblinka.....
 
 	B_GiveInvItems	(self, hero, ItAt_GoblinBone, 14);
 
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_04"); //Schön ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_05"); //... Totenschädel ...
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_04"); //sympatyczny
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_05"); //... czaszka
 
 	B_GiveInvItems	(self, hero, ItAt_SkeletonHead, 4);
 
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_06"); //Was noch?
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_07"); //... zwei Köpfe ...
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_06"); //Co jeszcze, co jeszcze mozna zrobic?
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_07"); //... dwie glowice.....
 
 	B_GiveInvItems	(self, hero, ItMi_Addon_Bloodwyn_Kopf, 2);
 
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_08"); //Wie nett ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_09"); //Ach, und hier noch der ganze Rest.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_08"); //Jak milo....
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_09"); //Oh, a tu jest reszta.
 
 	CreateInvItems	(hero, ItPo_Blood, 17);
 	CreateInvItems	(hero, ItFoMuttonZombie, 12);
 	CreateInvItems	(hero, ItAt_DemonHeart, 1);
 
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_10"); //Woher ...
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_11"); //Frag besser nicht, willst du gar nicht wissen.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_12"); //Du kriegst dann im Gegenzug je eine Beschwörungsspruchrolle für Wolf, Golem und Dämon von ihm.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_13"); //Dafür kriege ich einen guten Preis bei den Verwandlungsmagiern, die sich dafür interessieren, inwieweit ihre Verwandlungsmagie den unheiligen Beschwörungszaubern für Tiere ähnelt.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_14"); //Soll mir recht sein, solange sie genug Gold haben. Ach ja, da wir schon dabei sind: Das kannst du auch gleich machen.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_15"); //Kostet die Jungs 800 Gold und eine Verwandlung-Hase-Spruchrolle.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_16"); //Das Geschäft machst du mit Albert, der draußen, links vom Eingang des verfallenen Klosters über einen umgestürzten Baumstamm zu erreichen ist.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_17"); //Jetzt mach dich aber auf den Weg. Das Zeug beginnt nämlich langsam zu riechen.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche_15_10"); //Jak.....?
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_11"); //Nie pytaj, nie chcesz wiedziec.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_12"); //W zamian otrzymasz od niego po jednej roli zaklecia dla Wolfa, Golema i Demona.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_13"); //Dostaje za to dobra cene od magów transformacji, którzy sa zainteresowani stopniem, w jakim ich magia transformacji przypomina nieswiete zaklecia zaklecia dla zwierzat.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_14"); //Drobny z mna, o ile maja wystarczajaco duzo zlota. O tak, poniewaz jestesmy juz w trakcie procesu: mozecie panstwo to zrobic równiez.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_15"); //Koszt kosztuje chlopców 800 zlota i króliczek konwersji.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_16"); //Prowadzisz interesy z Albertem, do którego mozna sie dostac na zewnatrz, po lewej stronie od wejscia do zniszczonego klasztoru za pomoca upadlego pnia drzewa.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche_24_17"); //Teraz ruszaj w droge. Powoli zaczyna pachniec.
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_SKINNER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_SKINNER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Na schön, da habe ich jetzt einige Laufarbeit vor mir. Eduard kriegt Traumrufe für 80 Gold das Stück, Edgor bekommt drei grüne Novizen geschenkt, Andokai erhält für 80 Gold Traumrufe und für 40 Gold schwarze Weise. Den Rest soll ich in der Stadt loswerden, wobei 20 Gold für den grünen Novizen zu erwarten sind. Dann muss ich noch einen Haufen Aas dämonischer und untoter Geschöpfe Myxir überbringen und soll dafür drei Beschwörungsspruchrollen bekommen. Diese sollen dann wiederrum zurück ins Minental zu den Verwandlungsmagiern, wo ich von Albert, den ich außerhalb des Klosters links vom Eingang finden kann, dafür 800 Gold und eine Verwandlungsspruchrolle Hase erhalten soll. Skinner erwartet dann insgesamt 2000 Gold und die Hasenspruchrolle von mir. Dafür hat er mir einen magischen Ring in Aussicht gestellt, der die Stärke des Trägers 'erheblich beeinflussen' soll. Ich hoffe, dieser ist die ganze Mühe wert.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Wszystko w porzadku, mam troche pracy na nogach. Eduard dostaje wymarzone wezwania do 80 zlota na kawalek, Edgor dostaje trzech zielonych nowicjuszy jako prezent, Andokai otrzymuje wezwania do marzen za 80 medrców zlota i czerni za 40 zlota. Reszta pieniedzy zostanie utracona w miescie i oczekuje sie 20 zlota dla zielonych nowicjuszy. Potem musze dostarczyc kilka demonicznych i nieumarlych stworzen, Myxir, i powinienem dostac trzy przywolujace role. Zostana one nastepnie odeslane z powrotem do Doliny Minentalnej do magów transformacji, gdzie otrzymam 800 zlota i konwersyjna role Hase' a od Alberta, którego znajde poza klasztorem po lewej stronie wejscia. Skinner oczekuje od mnie w sumie 2000 zlota i roli zajac. Ale obiecal mi magiczny pierscien, który ma 'znaczaco wplynac' na sile uzytkownika. Mam nadzieje, ze to jedno z nich jest warte wysilku.");
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Skinner_Laufbursche2 (C_INFO)
 	information	= Info_Mod_Skinner_Laufbursche2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da bin ich wieder.";
+	description	= "Tu znów jestem.";
 };
 
 FUNC INT Info_Mod_Skinner_Laufbursche2_Condition()
@@ -168,21 +168,21 @@ FUNC INT Info_Mod_Skinner_Laufbursche2_Condition()
 
 FUNC VOID Info_Mod_Skinner_Laufbursche2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_15_00"); //Hier, ich habe alles abgeworfen, was du mir mitgegeben hast und auch alles dabei, was du dafür haben wolltest.
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_24_01"); //Ah, gut, gib her.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_15_00"); //Tutaj wyrzucilem wszystko, co mi dales i wszystko, czego chciales.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_24_01"); //Dobrze, daj mi to.
 	
 	Mod_SkinnerQuest = 2;
 
 	Info_ClearChoices	(Info_Mod_Skinner_Laufbursche2);
 
-	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "Ich denke, ich behalte das Gold und die Spruchrollen.", Info_Mod_Skinner_Laufbursche2_C);
-	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "Was ist mit dem Ring?", Info_Mod_Skinner_Laufbursche2_B);
-	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "Hier hast du das Gold und die Verwandlungsspruchrolle.", Info_Mod_Skinner_Laufbursche2_A);
+	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "Mysle, ze zatrzymam zloto i kolowrotki.", Info_Mod_Skinner_Laufbursche2_C);
+	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "A co z pierscieniem?", Info_Mod_Skinner_Laufbursche2_B);
+	Info_AddChoice	(Info_Mod_Skinner_Laufbursche2, "Oto zloto i czesc transformacyjna.", Info_Mod_Skinner_Laufbursche2_A);
 };
 
 FUNC VOID Info_Mod_Skinner_Laufbursche2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_C_15_00"); //Ich denke, ich behalte das Gold und die Spruchrollen.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_C_15_00"); //Mysle, ze zatrzymam zloto i kolowrotki.
 
 	Info_ClearChoices	(Info_Mod_Skinner_Laufbursche2);
 
@@ -195,17 +195,17 @@ FUNC VOID Info_Mod_Skinner_Laufbursche2_C()
 
 FUNC VOID Info_Mod_Skinner_Laufbursche2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_B_15_00"); //Was ist mit dem Ring?
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_01"); //Ja, hier hast du den Ring und die Sachen nehme ich an mich.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_B_15_00"); //A co z pierscieniem?
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_01"); //Tak, oto jest pierscien, a ja to zabiore.
 
 	CreateInvItems	(hero, ItRi_SkinnersRing, 1);
 
 	Npc_RemoveInvItems	(hero, ItSc_TrfRabbit, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 2000);
 
-	B_ShowGivenThings	("Verwitterter Ring erhalten und Spruchrolle und Gold gegeben");
+	B_ShowGivenThings	("Utrzymywac odporny na dzialanie czynników atmosferycznych pierscien i dawac czar i zloto.");
 
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_02"); //Habe ich zu viel versprochen? (lacht hämisch) Aber bei deinem Botengang ist ja auch bestimmt genug für dich abgefallen.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_02"); //Czy obiecywalem zbyt wiele? (smiech zwawo) Ale jestem pewien, ze twoja sprawa byla dla ciebie wystarczajaca.
 
 	Info_ClearChoices	(Info_Mod_Skinner_Laufbursche2);
 
@@ -218,18 +218,18 @@ FUNC VOID Info_Mod_Skinner_Laufbursche2_B()
 
 FUNC VOID Info_Mod_Skinner_Laufbursche2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_A_15_00"); //Hier hast du das Gold und die Verwandlungsspruchrolle.
+	AI_Output(hero, self, "Info_Mod_Skinner_Laufbursche2_A_15_00"); //Oto zloto i czesc transformacyjna.
 
 	Npc_RemoveInvItems	(hero, ItSc_TrfRabbit, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 2000);
 
-	B_ShowGivenThings	("Spruchrolle und Gold gegeben");	
+	B_ShowGivenThings	("Rola zaklecia i zlota jest okreslona");	
 
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_A_24_01"); //Sehr gut, hier hast du den Ring.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_A_24_01"); //Bardzo dobrze, oto pierscien.
 
 	B_GiveInvItems	(self, hero, ItRi_SkinnersRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_02"); //Habe ich zu viel versprochen? (lacht hämisch) Aber bei deinem Botengang ist ja auch bestimmt genug für dich abgefallen.
+	AI_Output(self, hero, "Info_Mod_Skinner_Laufbursche2_B_24_02"); //Czy obiecywalem zbyt wiele? (smiech zwawo) Ale jestem pewien, ze twoja sprawa byla dla ciebie wystarczajaca.
 
 	Info_ClearChoices	(Info_Mod_Skinner_Laufbursche2);
 
@@ -246,7 +246,7 @@ INSTANCE Info_Mod_Skinner_Orkjagd (C_INFO)
 	information	= Info_Mod_Skinner_Orkjagd_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt was zu tun. Komm heute um Mitternacht vors Lager.";
+	description	= "Jest jeszcze wiele do zrobienia. Przyjdz do obozu dzis wieczorem o pólnocy.";
 };
 
 FUNC INT Info_Mod_Skinner_Orkjagd_Condition()
@@ -260,8 +260,8 @@ FUNC INT Info_Mod_Skinner_Orkjagd_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd_15_00"); //Es gibt was zu tun. Komm heute Nacht um Mitternacht vors Lager. Wir gehen auf Orkjagd.
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd_24_01"); //(mürrisch) Mir ist aber nicht danach Orks zu jagen. Außerdem habe ich noch was anderes zu tun.
+	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd_15_00"); //Jest jeszcze wiele do zrobienia. Przyjdz do obozu dzis wieczorem o pólnocy. Robimy polowania na orki.
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd_24_01"); //Ale nie chce polowac na orki. Poza tym mam jeszcze inne rzeczy do zrobienia.
 
 	AI_StopProcessInfos	(self);
 
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Skinner_Orkjagd2 (C_INFO)
 	information	= Info_Mod_Skinner_Orkjagd2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das war keine Bitte, sondern ein Befehl von Morgahard.";
+	description	= "To nie byla prosba, to byl rozkaz Morgaharda.";
 };
 
 FUNC INT Info_Mod_Skinner_Orkjagd2_Condition()
@@ -291,8 +291,8 @@ FUNC INT Info_Mod_Skinner_Orkjagd2_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd2_15_00"); //Das war keine Bitte, sondern ein Befehl von Morgahard.
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd2_24_01"); //(mürrisch) Ah, meinetwegen.
+	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd2_15_00"); //To nie byla prosba, to byl rozkaz Morgaharda.
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd2_24_01"); //Ach, dla mnie.
 
 	AI_StopProcessInfos	(self);
 };
@@ -305,7 +305,7 @@ INSTANCE Info_Mod_Skinner_Orkjagd3 (C_INFO)
 	information	= Info_Mod_Skinner_Orkjagd3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Skinner, aufstehen, mitkommen, jetzt!";
+	description	= "Skinner, wstac, wstac, wejsc, teraz!";
 };
 
 FUNC INT Info_Mod_Skinner_Orkjagd3_Condition()
@@ -319,8 +319,8 @@ FUNC INT Info_Mod_Skinner_Orkjagd3_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd3_15_00"); //(energisch) Skinner, aufstehen, mitkommen, jetzt!
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd3_24_01"); //Bah, ich komme ja schon.
+	AI_Output(hero, self, "Info_Mod_Skinner_Orkjagd3_15_00"); //Skinner, wstac, wstac, wejsc, teraz!
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd3_24_01"); //Bah, przychodze.
 
 	AI_StopProcessInfos	(self);
 
@@ -348,7 +348,7 @@ FUNC INT Info_Mod_Skinner_Orkjagd4_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd4_24_00"); //Na, lass uns endlich losgehen. Ich habe noch Besseres zu tun.
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd4_24_00"); //No cóz, rozpocznijmy. Mam lepsze rzeczy do zrobienia.
 
 	AI_StopProcessInfos	(self);
 
@@ -398,7 +398,7 @@ FUNC INT Info_Mod_Skinner_Orkjagd5_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd5_24_00"); //So, jetzt aber leise.
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd5_24_00"); //Teraz trzymaj go w miejscu.
 
 	AI_StopProcessInfos	(self);
 };
@@ -427,13 +427,13 @@ FUNC INT Info_Mod_Skinner_Orkjagd6_Condition()
 
 FUNC VOID Info_Mod_Skinner_Orkjagd6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd6_24_00"); //So, ich gehe wieder zurück, das war genug Stress für heute.
+	AI_Output(self, hero, "Info_Mod_Skinner_Orkjagd6_24_00"); //Wracam wiec, to byl stres na dzisiaj.
 
 	AI_StopProcessInfos	(self);
 
 	Mod_Orks_Morgahard = 4;
 
-	B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Unser Überfall war erfolgreich und die Orks liegen im Staub. Jetzt muss ich nur noch Morgahard von dem Gelingen berichten.");
+	B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Nasz atak zakonczyl sie sukcesem i orki sa w prochu. Teraz musze tylko powiedziec Morgahardowi o sukcesie.");
 
 	B_StartOtherRoutine	(self, "START");
 	self.aivar[AIV_Partymember] = FALSE;
@@ -459,7 +459,7 @@ INSTANCE Info_Mod_Skinner_Lehrer (C_INFO)
 	information	= Info_Mod_Skinner_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Skinner_Lehrer_Condition()
@@ -475,10 +475,10 @@ FUNC VOID Info_Mod_Skinner_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Skinner_Lehrer_24_01"); //Ich kann dir den Umgang mit Einhändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Skinner_Lehrer_24_01"); //Potrafie nauczyc Cie, jak obchodzic sie z reka.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BANDITEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Skinner kann mich im Umgang mit Einhändern unterweisen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Skinner moze nauczyc mnie, jak radzic sobie z ludzmi jednej reki.");
 };
 
 INSTANCE Info_Mod_Skinner_Lernen (C_INFO)
@@ -489,7 +489,7 @@ INSTANCE Info_Mod_Skinner_Lernen (C_INFO)
 	information	= Info_Mod_Skinner_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Skinner_Lernen_Condition()
@@ -503,7 +503,7 @@ FUNC INT Info_Mod_Skinner_Lernen_Condition()
 
 FUNC VOID Info_Mod_Skinner_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skinner_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Skinner_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Skinner_Lernen);
 

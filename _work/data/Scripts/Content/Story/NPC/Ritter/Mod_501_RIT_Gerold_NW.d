@@ -1,7 +1,7 @@
 instance Mod_501_RIT_Gerold_NW  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gerold";
+	name 		= "geodka";
 	guild 		= GIL_PAL;
 	id 			= 501;
 	voice 		= 12;

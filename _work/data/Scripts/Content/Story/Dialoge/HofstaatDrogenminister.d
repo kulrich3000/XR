@@ -20,8 +20,8 @@ FUNC INT Info_Mod_HofstaatDrogenminister_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatDrogenminister_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_00"); //Was willst du?
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_01"); //Ich soll diese Sporen hier vorbeibringen.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_00"); //Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_01"); //Mam tutaj przeniesc te przetrwalniki.
 
 	if (Npc_HasItems(hero, ItMi_FreudenspenderSporen) == 1)
 	{
@@ -32,33 +32,33 @@ FUNC VOID Info_Mod_HofstaatDrogenminister_Hi_Info()
 		B_GiveInvItems	(hero, self, ItMi_FakeFreudenspenderSporen, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_02"); //Aaaaahh ausgezeichnet.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_02"); //Aaaaaahh doskonaly.
 
 	if (Npc_HasItems(self, ItMi_FreudenspenderSporen) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_03"); //Was hat es denn jetzt mit dieser Droge auf sich?
-		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_04"); //Wie du sicherlich gesehen hast bauen wir Getreide an.
-		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_05"); //Diese Sporen sind die Sporen des Mutterkornpilzes. Er setzt sich am Getreide ab und wächst dort.
-		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_06"); //Wir ernten ihn und verarbeiten ihn und erhalten so ein starkes Halluzinogen, stärker und billiger als all die andren Rauschmittel.
-		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_07"); //Hast du noch was für mich zu tun?
-		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_08"); //Ja, bring dem König diese Aufzeichnungen.
+		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_03"); //Jaki jest obecnie stosunek do tego leku?
+		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_04"); //Jak zapewne widziales, uprawiamy ziarno.
+		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_05"); //Zarodniki te sa przetrwalnikami grzyba spory. Osiedla sie na ziarnie i tam rosnie.
+		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_06"); //Zbieramy go i przetwarzamy w celu uzyskania silnego hallucynogenu, silniejszego i tanszego niz wszystkie inne leki.
+		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_07"); //Masz dla mnie cos innego do zrobienia?
+		AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Hi_04_08"); //Tak, przynies te banknoty do króla.
 
 		B_GiveInvItems	(self, hero, ItWr_HSAufzeichnung, 1);
 
-		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_09"); //Mach ich.
+		AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Hi_15_09"); //Wlasciwie, bede.
 
 		AI_StopProcessInfos	(self);
 
 		B_StartOtherRoutine	(Mod_7285_HS_Koenig_REL, "FREIFLUSS");
 		B_StartOtherRoutine	(Mod_7284_HS_Raufbold_REL, "FREIFLUSS");
 
-		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Drogenminister hat mir Aufzeichnungen für den König mitgegeben. Die sollte ich dort wohl baldmöglichst abliefern.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Sekretarz narkotyków dal mi notatki dla króla. Prawdopodobnie powinienem je tam jak najszybciej zrzucic.");
 	}
 	else
 	{
 		AI_StopProcessInfos	(self);
 
-		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Das Paket ist abgeliefert. Ich sollte morgen mal in der Festung vorbei sehen ...");
+		B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Pakiet zostal dostarczony. Powinienem zatrzymac sie jutro przy twierdzy.... Wiecej");
 
 		Mod_SL_Schwaechen = 6;
 
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_HofstaatDrogenminister_Maler (C_INFO)
 	information	= Info_Mod_HofstaatDrogenminister_Maler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast die ... Meisterwerke für den König gemalt?";
+	description	= "Masz - masz Mistrzostwa pomalowane dla króla?";
 };
 
 FUNC INT Info_Mod_HofstaatDrogenminister_Maler_Condition()
@@ -87,18 +87,18 @@ FUNC INT Info_Mod_HofstaatDrogenminister_Maler_Condition()
 
 FUNC VOID Info_Mod_HofstaatDrogenminister_Maler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_00"); //Du hast die ... Meisterwerke für den König gemalt?
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_01"); //Oh ja, die Kunst ist meine Obsession.
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_02"); //Könntest du mir ein Bild malen?
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_03"); //Eine Sonderanfertigung? Was soll ich dir malen?
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_04"); //Ein Landschaftsbild.
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_05"); //Wovon?
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_06"); //Von dem Sumpf. Du findest ihn in der ehemaligen Minenkolonie.
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_07"); //Na gut. Komm morgen wieder, da sollte ich zurück sein. Samt Bild.
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_00"); //Masz - masz Mistrzostwa pomalowane dla króla?
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_01"); //Tak, tak, sztuka jest moja obsesja.
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_02"); //Czy móglbys mnie narysowac?
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_03"); //Specjalny projekt? Co chcesz, abym malowal?
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_04"); //Krajobraz.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_05"); //O czym?
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Maler_15_06"); //Z bagna. Znajdziesz go w bylej kolonii górniczej.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Maler_04_07"); //Wszystkie sluszne, wszystkie sluszne. Powróc jutro, wróce. Aksamitny obrazek.
 
 	Mod_SL_BildMalTag = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Morgen kann ich das Gemälde beim Dorgenminister abholen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Jutro bede mógl odebrac obraz w ministerstwie Dorgena.");
 };
 
 INSTANCE Info_Mod_HofstaatDrogenminister_BildFertig (C_INFO)
@@ -122,14 +122,14 @@ FUNC INT Info_Mod_HofstaatDrogenminister_BildFertig_Condition()
 
 FUNC VOID Info_Mod_HofstaatDrogenminister_BildFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_BildFertig_04_00"); //Hier, dein Bild.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_BildFertig_04_00"); //Oto Twoje zdjecie.
 
 	B_GiveInvItems	(self, hero, ItMi_StrandBild, 1);
 
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_BildFertig_04_01"); //Das Ist ein Kuuuuuuuuuuuuuuuuuuuuuunstwerk!!!
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_BildFertig_15_02"); //Vielen Dank. Es ist ... umwerfend.
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_BildFertig_04_01"); //To jest Kuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu!!!!!!!!!!!!!!!!
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_BildFertig_15_02"); //Dziekuje bardzo. To..... ogluszanie.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe das Gemälde des Drogenministers. Hoffentlich ist der König nicht zu anspruchsvoll.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Mam obraz sekretarza narkotyków. Mam nadzieje, ze król nie jest zbyt wymagajacy.");
 };
 
 INSTANCE Info_Mod_HofstaatDrogenminister_Spezialauftrag (C_INFO)
@@ -152,15 +152,15 @@ FUNC INT Info_Mod_HofstaatDrogenminister_Spezialauftrag_Condition()
 
 FUNC VOID Info_Mod_HofstaatDrogenminister_Spezialauftrag_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_00"); //Sehr gut! Ich habe gewartet und du bist gekommen, einfach fabelhaft!
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_15_01"); //Was gibt’s zu tun?
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_02"); //Oh, etwas so geheimes und gefährliches, dass nur IHR es tun könnt!
-	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_15_03"); //Soweit war ich auch schon ...
-	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_04"); //Hier, bringt dieses Päckchen in den Sumpf. Gib es Lester. Und HÜTE dich!
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_00"); //Bardzo dobrze! Czekalem, a ty przyszedles, po prostu bajecznie!
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_15_01"); //Co nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_02"); //Ach, cos tak tajemniczego i niebezpiecznego, ze tylko Ty mozesz to zrobic!
+	AI_Output(hero, self, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_15_03"); //Dotychczas bylem juz.....
+	AI_Output(self, hero, "Info_Mod_HofstaatDrogenminister_Spezialauftrag_04_04"); //Tutaj zabierz to opakowanie na bagno. Dajcie ja Lesterowi. I uwazac!
 
 	B_GiveInvItems	(self, hero, ItMi_PaketFuerLester, 1);
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Der Spezialauftrag besteht darin, dass ich ein Paket zu Lester bringe. Na toll.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Specjalne zadanie polega na dostarczeniu paczki do Lester' s. Och, wielki.");
 
 	AI_StopProcessInfos	(self);
 };

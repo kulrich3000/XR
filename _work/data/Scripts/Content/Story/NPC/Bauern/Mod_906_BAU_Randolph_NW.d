@@ -1,7 +1,7 @@
 instance Mod_906_BAU_Randolph_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Randolph";
+	name 		= "Randolf";
 	guild 		= GIL_DMT;
 	id 			= 906;
 	voice 		= 6;

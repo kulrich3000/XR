@@ -1,7 +1,7 @@
 INSTANCE Mod_6002_KDF_Pyrokar_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pyrokar";
+	name 		= "piroksztalt";
 	guild 		= GIL_OUT;
 	id 		= 6002;
 	voice 		= 11;

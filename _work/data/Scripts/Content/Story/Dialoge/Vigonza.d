@@ -18,32 +18,32 @@ FUNC INT Info_Mod_Vigonza_Hi_Condition()
 
 FUNC VOID Info_Mod_Vigonza_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_00"); //Was zum Teufel?! Wie kommst du hier rauf und was hast du mit meinen Männern gemacht?
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_01"); //Um deine Männer würde ich mir keine Sorgen mehr machen, mit denen hatte der Sensenmann schon seinen Spaß. Bei dir steht das noch aus.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_02"); //Hast du überhaupt den blassesten Schimmer, was wir hier machen und wer wir sind?
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_03"); //Ihr seid selbst Schuld. Warum greifen deine Leute auch jeden an?
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_04"); //Auf einmal sind meine Leute Schuld? Wir wurden doch als Erste angegriffen.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_05"); //Wer soll euch denn angriffen haben?
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_06"); //Ein Jäger. Er hat einen meiner besten Männer mit seinem Bogen beschossen.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_07"); //Natürlich konnte ich ihm das nicht durchgehen lassen und hab zwei meiner Männer losgeschickt, die ihn zu mir bringen sollten.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_08"); //Sie sind aber bis heute nicht zurückgekehrt. Deshalb habe ich befohlen, jeden, der sich uns nähert, anzugreifen, bis ich weiß, ob man uns hier feindlich gesonnen ist.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_09"); //Ich hab den Jäger gefunden, der von deinen Leuten verfolgt wurde. Sie haben ihn getötet und das gleiche auch bei mir versucht, allerdings ohne Erfolg.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_10"); //Wenn sie ihn getötet haben, dann nur, weil er sie angegriffen hat. Und kannst du es ihnen dann übel nehmen, wenn sie auch dich für eine Feind halten.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_11"); //Gut, aber dann erklär mir, warum ein Jäger euch angreifen sollte?
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_12"); //Ich schätze mal er wollte das, weshalb auch wir in diese Lande gekommen sind. Mit der Ausnahme, dass er hinter dem schnellen Gold her war und wir um unsere Existenz kämpfen.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_13"); //Das musst du mir genauer erklären.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_14"); //Ich bin Hauptmann unseres Königs George Goddard, dem Zweiten.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_15"); //Unser König hat uns entsandt, um das Blut der Dalma, einer Riesenspinne, die normalerweise tief unter der Erde lebt, zu holen, um ihn von seiner Familienkrankheit zu heilen.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_16"); //Allerdings ist sie uns im Kampf in den Tiefen der Berge entwischt und in dieses Land geflüchtet.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_17"); //Als mein bester Krieger sie für mich besiegen sollte, wurde er von dem Jäger angegriffen. Warscheinlich, weil er den Wert der Trophäen vor Augen hatte.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_18"); //Und seitdem habe ich versucht, meine Leute auf einen Angriff vorzubereiten. Aber ohne meinen besten Krieger hätten sie es warscheinlich nicht geschafft.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_19"); //Ich glaube euch. Hätte man das vorher klären können, wären eure Leute noch am Leben.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_20"); //Vielleicht war es Schicksal. Du siehst aus, als könntest du gut kämpfen, und vielleicht hast du mehr Chancen gegen das Monster, als alle meine Leute zusammen.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_21"); //Ich bitte dich darum, mir im Kampf gegen die Dalma zur Seite zu stehen. Ich kann mich in meiner Heimat nicht ohne das Blut sehen lassen.
-	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_22"); //In Ordnung. Führe mich zu der Spinne und ich werde dir helfen.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_23"); //Folge mir!
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_00"); //Co to za pieklo! Jak wstales i co zrobiles z moimi mezczyznami?
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_01"); //Nie martwilabym sie juz o Waszych mezczyzn, Grim Reaper mial z nimi swoja zabawe. Brakujesz.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_02"); //Masz nawet najlagodniejsze wyobrazenie o tym, co robimy i kim jestesmy?
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_03"); //To Twoja wlasna wina. Dlaczego twoi ludzie atakuja wszystkich?
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_04"); //Nagle wine ponosza moi obywatele? Bylismy pierwszymi, którzy zostali zaatakowani.
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_05"); //Kto mial cie zaatakowac?
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_06"); //Lowca. Strzelal na kokarde w jednym z moich najlepszych mezczyzn.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_07"); //Oczywiscie nie moglem pozwolic mu uciec i wyslalem dwóch moich mezczyzn, aby go do mnie przywiezli.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_08"); //Ale nie wrócili do dzisiejszego dnia. Dlatego tez nakazalem zaatakowac kazdego, kto do nas podchodzi, dopóki nie wiem, czy jestesmy tu wrogo nastawieni.
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_09"); //Znalazlem mysliwego, którego scigali wasi ludzie. Zabili go i próbowali we mnie tego samego, ale bez powodzenia.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_10"); //Jesli go zabili, to dlatego, ze ja zaatakowal. I czy mozesz je obwiniac, jesli uwazaja, ze jestes takze wrogiem?
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_11"); //No cóz, to wytlumacz mi dlaczego mysliwy powinien cie zaatakowac?
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_12"); //Chyba tego chcial, dlatego tez przyjechalismy do tego kraju. Poza tym, ze byl po szybkim zlocie i walczymy o nasze srodki do zycia.
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_13"); //Bedziesz musial mi to wyjasnic bardziej szczególowo.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_14"); //Jestem kapitanem naszego króla Jerzego Goddarda, Drugiego.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_15"); //Nasz król wyslal nas, bysmy pobrali krew Dalmy, gigantycznego pajaka, który zwykle mieszka gleboko pod ziemia, aby leczyc go z powodu choroby rodzinnej.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_16"); //Uciekla jednak przed nami w bitwie w glebi gór i uciekla do tego kraju.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_17"); //Kiedy mój najlepszy wojownik mial mnie je pokonac, zostal zaatakowany przez mysliwego. Zapewne dlatego, ze zdawal sobie sprawe z wartosci trofeów.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_18"); //Od tamtej pory staram sie przygotowac moich ludzi do ataku. Ale bez mojego najlepszego wojownika zapewne by tego nie zrobili.
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_19"); //Wierze w pana. Gdyby zostalo to wczesniej rozwiazane, wasi ludzie nadal zyliby.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_20"); //Moze to byl los. Wyglada na to, ze mozesz dobrze walczyc i byc moze masz wieksze szanse na walke z potworem niz wszyscy moi ludzie razem wzieci.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_21"); //Prosze, abyscie trzymali sie przy mnie w walce z Dalma. Nie moge sobie pozwolic na to, aby bez krwi byc widocznym w mojej ojczyznie.
+	AI_Output(hero, self, "Info_Mod_Vigonza_Hi_15_22"); //Wszystkie sluszne, wszystkie sluszne. Zabierz mnie do pajaka, a ja ci pomoze.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Hi_08_23"); //Sledz mnie!
 
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Alles nur ein Misverständnis. Es scheint so als hätte Randi diesen Angriff provoziert. Wenigstens hat er seine gerechte Strafe bekommen. Vigonza, der Anführer der Bande, hat mich gebeten ihm beim Kampf gegen die Dalma, eine gefährliche Riesenspinne beizustehen. Er wird mich dorthin führen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "To tylko nieporozumienie. Wydaje sie, ze Randi sprowokowal ten atak. Przynajmniej dostal swój sprawiedliwy wyrok. Vigonza, przywódca gangu, poprosil mnie, abym pomógl mu walczyc z niebezpiecznym gigantycznym pajakiem, walczac przeciwko Dalmie. On mnie tam poprowadzi.");
 
 	AI_StopProcessInfos	(self);
 
@@ -74,14 +74,14 @@ FUNC INT Info_Mod_Vigonza_Dalma_Condition()
 
 FUNC VOID Info_Mod_Vigonza_Dalma_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_00"); //Endlich ist das Mistvieh erlegt. Ich danke dir. Hier, nimm dies als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_00"); //W koncu bestia zostala zabita. Dziekuje, dziekuje. Tutaj, wez to za nagrode.
 
 	B_GiveInvItems	(self, hero, ItAt_DalmaZange, 2);
 
-	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_01"); //Es sind die Zangen der Dalma. Mögen sie dir einen Goldregen schenken.
-	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_02"); //Ich werde mich jetzt zum Pass begeben. Hoffentlich komme ich nicht zu spät. Alles Gute, Fremder.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_01"); //To szczypce Dalmy. Niech podadza Ci prysznic zlota.
+	AI_Output(self, hero, "Info_Mod_Vigonza_Dalma_08_02"); //Bede isc teraz na przelecz. Mam nadzieje, ze nie jestem za pózno. Zycze powodzenia, obcy.
 
-	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Die Dalma ist erledigt. Vigonza wird nun zurückkehren und ich sollte zu Keith gehen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ALTERTURM, "Dalma jest ukonczona. Vigonza wróci teraz i powinienem udac sie do Keith.");
 
 	AI_StopProcessInfos	(self);
 

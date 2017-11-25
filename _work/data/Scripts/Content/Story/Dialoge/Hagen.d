@@ -19,39 +19,39 @@ FUNC INT Info_Mod_Hagen_Hi_Condition()
 
 FUNC VOID Info_Mod_Hagen_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_00"); //(erschöpft und fahrig) Danke für dein Kommen. Du hast dich gut gemacht, als ehemaliger Sträfling.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_01"); //Ich will ganz offen mit dir reden. Das Verschwinden der Barriere hat uns vor große Probleme gestellt.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_02"); //Die ganzen ehemaligen Gefangenen - wohin mit ihnen?
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_03"); //Der König hat befohlen, sie nicht aufs Festland zu lassen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_04"); //Ich will sie nicht alle in der Stadt haben, und es gibt viele, die das noch weniger wollen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_05"); //Bisher, Innos sei Dank, sind sie zum Großteil im Minental geblieben.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_06"); //Aber der Weg nach Khorinis ist ihnen nicht mehr versperrt.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_07"); //Und was sie in ihren Lagern ausbrüten, kann ich nicht einmal erahnen.
-	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_08"); //Welche Rolle spiele ich in der Geschichte?
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_09"); //Du bist nun ein angesehener Bürger. Du kennst beide Seiten.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_10"); //Ich brauche Informationen. Was planen die Sträflinge? Wo sind sie überall?
-	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_11"); //Ich soll also spionieren.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_12"); //Es soll ihnen kein Leid geschehen, im Gegenteil!
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_13"); //Man versucht mich zu beeinflussen, zu hintergehen, damit rücksichtslos gegen euch vorgegangen wird.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_14"); //(seufzt) Wenn sich keine Lösung ergibt, sieht es für die ehemaligen Sträflinge düster aus.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_15"); //Oder für die Stadt! Ich will kein Massaker verantworten müssen.
-	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_16"); //Was soll ich also tun? Und was habe ich davon?
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_17"); //Sieh dich im Sumpflager und dem Söldnerlager des Minentals um.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_18"); //Ich habe auch gehört, dass sich ein Haufen Banditen in einem Talkessel im Norden angesiedelt hat.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_19"); //Vielleicht gibt es weitere Gruppierungen, die sich nach dem Verschwinden der Barriere gebildet haben.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_20"); //Finde heraus, inwieweit die Stimmung gegen uns ist. Wie zahlreich die unabhängigen Lager sind.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_21"); //Ob es zu Kampfvorbereitungen kommt. Oder ob es ruhig bleibt. Dann berichte mir.
-	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_22"); //Was ist mit dem Alten Lager?
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_23"); //Es ist nicht nötig, dass du dich dort erkundigst.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_24"); //Über das Alte Lager weiß ich alles, was ich wissen muss.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_25"); //Als Gegenleistung werde ich dir unbegrenzten Zutritt zum Minental verschaffen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_26"); //Du wirst beinahe der Einzige sein, der sich sowohl in Khorinis als auch im Minental frei bewegen kann.
-	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_27"); //Dann werde ich mich mal auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_28"); //Ich danke ... (stöhnt) Was ... ist das? Dieser ... Schmerz ...
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_00"); //Dziekuje za przybycie. Zrobiles tak samo dobrze jak byly skazany.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_01"); //Bede z panstwem szczery. Znikniecie tej bariery przysporzylo nam powaznych problemów.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_02"); //Wszyscy byli wiezniowie - co z nimi?
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_03"); //Król nakazal im, aby nie wyjezdzali na lad.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_04"); //Nie chce ich wszystkich w miescie, a wielu ludzi juz tego nie chce.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_05"); //Do tej pory dzieki Innosowi wiekszosc z nich pozostala w Minentalu.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_06"); //Ale droga do Khorinis nie jest juz zablokowana.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_07"); //I nawet nie potrafie sie domyslac, co sie wylegaja w obozach.
+	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_08"); //Jaka role odgrywam w historii?
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_09"); //Jestes teraz godnym szacunku obywatelem. Wiedza panstwo o obu stronach.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_10"); //Potrzebuje troche informacji. Czym sa skazani? Gdzie sa wszedzie?
+	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_11"); //Wiec powinienem szpiegowac.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_12"); //Nie zaszkodzi im, przeciwnie!
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_13"); //Próbuja mnie lobbowac, oszukiwac, bym mógl podejmowac lekkomyslne dzialania przeciwko Tobie.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_14"); //Jezeli nie znaleziono rozwiazania, byli skazani uznaja to za mroczne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_15"); //Lub dla miasta! Nie chce byc odpowiedzialny za masakre.
+	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_16"); //Co wiec powinienem zrobic? A co sie z tego wydostaje?
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_17"); //Spójrzcie na obóz bagienny i najemnik Doliny Kopalni.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_18"); //Slyszalem tez, ze w kotlinie dolinowej na pólnocy osiedlil sie bandyci.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_19"); //Byc moze istnieja inne grupy, które powstaly po zniknieciu bariery.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_20"); //Dowiedz sie, w jakim stopniu nastrój jest przeciwny nam. Liczba obozów niepodleglych.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_21"); //Czy chodzi o walke z przygotowaniami. Albo jesli pozostaje spokojnie. Pózniej zglos sie do mnie.
+	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_22"); //A co z starym obozem?
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_23"); //Nie musisz pytac.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_24"); //Wiem wszystko, co musze wiedziec o Starym Obozie.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_25"); //W zamian dam Ci nieograniczony dostep do Minentala.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_26"); //Bedziesz prawie jedynym, który moze swobodnie poruszac sie zarówno w Khorinis, jak i w Minental.
+	AI_Output(hero, self, "Info_Mod_Hagen_Hi_15_27"); //Bede wiec w drodze.
+	AI_Output(self, hero, "Info_Mod_Hagen_Hi_36_28"); //Dziekuje..... Co.....? Czy to jest? To..... dotkliwy
 
 	Log_CreateTopic	(TOPIC_MOD_HAGEN_ASYLANTEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HAGEN_ASYLANTEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Lord Hagen hat mir eine umfassende Aufgabe gegeben: Ich soll alle Gruppierungen im Minental, ob alt oder neu, aufsuchen und herausfinden, was ihre Pläne für die Zukunft sind. Dazu sollte ich mich mit den jeweiligen Anführern unterhalten. Lord Hagen erhofft sich von diesen Gesprächen Aufschlüsse darüber, wie er seine Sträflingspolitik gestalten soll.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Pan Hagen powierzyl mi kompleksowe zadanie: powinienem odwiedzic wszystkie grupy w Minental, stare lub nowe, i dowiedziec sie, jakie sa ich plany na przyszlosc. W tym celu powinienem porozmawiac z odpowiednimi przywódcami. Lord Hagen ma nadzieje, ze rozmowy te rzuca swiatlo na to, jak powinien ksztaltowac swoja polityke wieznia.");
 
 	var int ptr;
 	ptr = MEM_SearchVobByName("NW_2_OW_ORETRAIL");
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Hagen_Asylanten (C_INFO)
 	information	= Info_Mod_Hagen_Asylanten_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe Neuigkeiten zu den Gruppierungen im Minental.";
+	description	= "Mam wiadomosci o grupach w Minental.";
 };
 
 FUNC INT Info_Mod_Hagen_Asylanten_Condition()
@@ -97,7 +97,7 @@ FUNC INT Info_Mod_Hagen_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Hagen_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_15_00"); //Ich habe Neuigkeiten zu den Gruppierungen im Minental.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_15_00"); //Mam wiadomosci o grupach w Minental.
 
 	Info_ClearChoices	(Info_Mod_Hagen_Asylanten);
 
@@ -106,40 +106,40 @@ FUNC VOID Info_Mod_Hagen_Asylanten_Info()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass (...)", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoja wlasna wojska, aby odebrac paszport (.... )", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
@@ -150,10 +150,10 @@ FUNC VOID Info_Mod_Hagen_Asylanten_BACK()
 
 FUNC VOID Info_Mod_Hagen_Asylanten_F1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_F1_15_00"); //In einem Talkessel im Norden halten sich Banditen auf.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_F1_36_01"); //Banditen? Das verheißt nichts Gutes ... Was konntest du herausfinden?
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_F1_15_02"); //Es sind nicht allzu viele, allerdings konnte ich nicht in Erfahrung bringen, welche Schritte sie als nächstes planen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_F1_36_03"); //Ich werde sie im Auge behalten müssen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_F1_15_00"); //W kotlinie dolinowej na pólnocy znajduja sie bandyci.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_F1_36_01"); //Bandyta? To nie wrózy dobrze...... Co móglbys dowiedziec?
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_F1_15_02"); //Nie ma ich zbyt wiele, ale nie moglem sie dowiedziec, jakie kroki zaplanowali kolejne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_F1_36_03"); //Bede musial ja obserwowac.
 
 	Mod_Hagen_BL = 1;
 
@@ -166,50 +166,50 @@ FUNC VOID Info_Mod_Hagen_Asylanten_F1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_E1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_E1_15_00"); //In einer Ruine sind Verwandlungsmagier aufgetaucht.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_01"); //Verwandlungsmagier? Was sind das für Gestalten?
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_E1_15_02"); //Sie hoffen auf Hilfe von außerhalb, da ihre Heimatwelt von einer Goblinplage heimgesucht wird. Sind ganz umgänglich.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_03"); //(lacht rau) Und da suchen sie gerade im Minental?
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_04"); //Ich kann sie jedenfalls nicht unterstützen, meine Männer werden alle gebraucht.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_E1_15_00"); //W ruinie pojawily sie magowie transformacji.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_01"); //Przeksztalcanie maga? Co to sa te stworzenia?
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_E1_15_02"); //Maja nadzieje na pomoc z zewnatrz, poniewaz ich rodzinny swiat neka goblinowa zaraza. Sa bardzo przyjemne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_03"); //I gdzie szukaja w Minentalu?
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_E1_36_04"); //Tak czy owak nie moge ich poprzec, wszyscy moi mezczyzni sa potrzebni.
 
 	Mod_Hagen_VL = 1;
 
@@ -222,47 +222,47 @@ FUNC VOID Info_Mod_Hagen_Asylanten_E1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_D2()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D2_15_00"); //(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D2_36_01"); //(atmet tief durch) Dann ist die Situation doch noch ein Stück entspannter als ich dachte.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D2_15_00"); //Nie ma zadnego zgrupowania na trasie daleko i szeroko.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D2_36_01"); //Wtedy sytuacja jest nieco bardziej zrelaksowana, niz myslalem.
 
 	Mod_Hagen_KG = 2;
 
@@ -275,51 +275,51 @@ FUNC VOID Info_Mod_Hagen_Asylanten_D2()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_D1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D1_15_00"); //Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_01"); //Verdammt! Wozu das?
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D1_15_02"); //Du scheinst bei ihm in Ungnade gefallen zu sein, und er traut dir nicht mehr über den Weg.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_03"); //(empört) Da zeigt es sich nun wieder!
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_04"); //Kaum bist du ein paar Jahre aus der unmittelbaren Reichweite des Königs, schon wird von allen Seiten gegen dich intrigiert, ohne dass du dich dagegen wehren kannst.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_05"); //Diese Knaben werden ich mir genauer anschauen müssen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D1_15_00"); //Król wyslal swoje wojska, by strzegl przepustki.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_01"); //Damn to! Jaki jest cel?
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_D1_15_02"); //Wyglada na to, ze wypadles mu z laski, a on juz ci nie ufa.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_03"); //To znów jest!
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_04"); //Gdy tylko znajdziecie sie kilka lat poza zasiegiem króla, jestescie zaintrygowani z kazdej strony i nie jestescie w stanie sie oprzec.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_D1_36_05"); //Bede musial przyjrzec sie blizej tym chlopcom.
 
 	Mod_Hagen_KG = 1;
 
@@ -332,48 +332,48 @@ FUNC VOID Info_Mod_Hagen_Asylanten_D1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_C1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_C1_15_00"); //Eine Jägergemeinschaft geht ihrem Beruf nach.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_C1_36_01"); //Sie müssen über den Pass gekommen sein, noch bevor ich ihn kontrollieren lassen konnte.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_C1_36_02"); //Aber sie werden wohl kaum für Ärger sorgen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_C1_15_00"); //Spolecznosc lowiecka wykonuje swój zawód.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_C1_36_01"); //Musieli oni przejsc przez przepustke, zanim móglbym ja sprawdzic.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_C1_36_02"); //Nie spowoduja one jednak wielu klopotów.
 
 	Mod_Hagen_JL = 1;
 
@@ -386,50 +386,50 @@ FUNC VOID Info_Mod_Hagen_Asylanten_C1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_B2()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_00"); //Die Bruderschaft erhebt sich!
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B2_36_01"); //(alarmiert) Die Bruderschaft? Was plant sie?
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_02"); //Sie glauben, der Schläfer sei nur ein Trick des Königs gewesen, um sie still zu halten.
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_03"); //Deswegen sind sie nun der Überzeugung, Innos sei der Gott des Lügens, und haben sich Beliar zugewandt.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B2_36_04"); //Gebe Innos, dass das nicht wahr ist!
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_00"); //Bractwo wzrasta!
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B2_36_01"); //Bractwo? Co planuje?
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_02"); //Mysleli, ze sypialnia byla tylko sztuczka od króla, by utrzymac ich w miejscu.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B2_15_03"); //Dlatego sa teraz przekonani, ze Innos jest Bogiem klamstwa i zwrócil sie do Beliara.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B2_36_04"); //Daj Innos to nie jest prawda!
 
 	Mod_Hagen_SL = 2;
 
@@ -442,48 +442,48 @@ FUNC VOID Info_Mod_Hagen_Asylanten_B2()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_B1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B1_15_00"); //Die Bruderschaft verhält sich ruhig.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B1_36_01"); //Das ist eine gute Nachricht.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B1_36_02"); //Allerdings kann man nie wissen, wann mal einer ihrer Fanatiker zu einem Exodus aufruft.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_B1_15_00"); //Bractwo jest spokojne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B1_36_01"); //To dobra wiadomosc.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_B1_36_02"); //Nigdy jednak nie wiesz, kiedy jeden z ich fanatyków wezwie exodus.
 
 	Mod_Hagen_SL = 1;
 
@@ -496,48 +496,48 @@ FUNC VOID Info_Mod_Hagen_Asylanten_B1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_A2()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A2_15_00"); //Im Neuen Lager ist alles ruhig.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A2_36_01"); //Das kann ich mir ja kaum vorstellen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A2_36_02"); //Aber da ich selbst nichts Genaueres weiß, werde ich mich wohl nach dir richten müssen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A2_15_00"); //W Nowym Obozie wszystko jest spokojne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A2_36_01"); //Trudno mi sobie wyobrazic.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A2_36_02"); //Poniewaz jednak nie wiem nic bardziej szczególowego, prawdopodobnie bede musial podazac za Toba.
 
 	Mod_Hagen_NL = 2;
 
@@ -550,50 +550,50 @@ FUNC VOID Info_Mod_Hagen_Asylanten_A2()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
 FUNC VOID Info_Mod_Hagen_Asylanten_A1()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_00"); //Das Neue Lager plant einen Ausbruch.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A1_36_01"); //Bei Innos! Erzähl mehr!
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_02"); //Die Banditen wollen zum Festland segeln und den König stürzen.
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_03"); //Es ist sehr wahrscheinlich, dass sie auf ihrem Weg nach Khorinis kommen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A1_36_04"); //Nein! Wenn sie es schaffen, auf das Festland überzusetzen, bin ich verloren!
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_00"); //Nowy obóz planuje wybuch epidemii.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A1_36_01"); //W Innosie! Powiedz mi wiecej!
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_02"); //Bandietowie chca poplynac na lad i obalic króla.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten_A1_15_03"); //Jest bardzo prawdopodobne, ze przyjada do Khorinis po drodze.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten_A1_36_04"); //Nie! Jesli uda im sie dostac na lad, to zgubie!
 
 	Mod_Hagen_NL = 1;
 
@@ -606,40 +606,40 @@ FUNC VOID Info_Mod_Hagen_Asylanten_A1()
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_Asylanten))
 	&& (Mod_Hagen_BL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einem Talkessel im Norden halten sich Banditen auf.", Info_Mod_Hagen_Asylanten_F1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W kotlinie dolinowej na pólnocy znajduja sie bandyci.", Info_Mod_Hagen_Asylanten_F1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Albert_Asylanten))
 	&& (Mod_Hagen_VL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "In einer Ruine sind Verwandlungsmagier aufgetaucht.", Info_Mod_Hagen_Asylanten_E1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "W ruinie pojawily sie magowie transformacji.", Info_Mod_Hagen_Asylanten_E1);
 	};
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Cathran_Asylanten))
 	&& (Mod_Hagen_KG == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Am Pass ist weit und breit keine Gruppierung zu sehen.", Info_Mod_Hagen_Asylanten_D2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Der König hat einen eigenen Trupp geschickt, um den Pass zu bewachen.", Info_Mod_Hagen_Asylanten_D1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nie ma zadnego zgrupowania na trasie daleko i szeroko.", Info_Mod_Hagen_Asylanten_D2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Król wyslal swoje wojska, by strzegl przepustki.", Info_Mod_Hagen_Asylanten_D1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torgan_Asylanten))
 	&& (Mod_Hagen_JL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Eine Jägergemeinschaft geht ihrem Beruf nach.", Info_Mod_Hagen_Asylanten_C1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Spolecznosc lowiecka wykonuje swój zawód.", Info_Mod_Hagen_Asylanten_C1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cadar_Asylanten))
 	&& (Mod_Hagen_SL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Die Bruderschaft erhebt sich!", Info_Mod_Hagen_Asylanten_B2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Die Bruderschaft verhält sich ruhig.", Info_Mod_Hagen_Asylanten_B1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo wzrasta!", Info_Mod_Hagen_Asylanten_B2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Bractwo jest spokojne.", Info_Mod_Hagen_Asylanten_B1);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lee_WieStehts))
 	&& (Mod_Hagen_NL == 0)
 	{
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "(lügen) Im Neuen Lager ist alles ruhig.", Info_Mod_Hagen_Asylanten_A2);
-		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Das Neue Lager plant einen Ausbruch.", Info_Mod_Hagen_Asylanten_A1);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Cisza w Nowym Obozie.", Info_Mod_Hagen_Asylanten_A2);
+		Info_AddChoice	(Info_Mod_Hagen_Asylanten, "Nowy obóz planuje wybuch epidemii.", Info_Mod_Hagen_Asylanten_A1);
 	};
 };
 
@@ -651,7 +651,7 @@ INSTANCE Info_Mod_Hagen_Asylanten2 (C_INFO)
 	information	= Info_Mod_Hagen_Asylanten2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sollte alle Lager gefunden haben.";
+	description	= "Powinnam byla znalezc wszystkie obozy.";
 };
 
 FUNC INT Info_Mod_Hagen_Asylanten2_Condition()
@@ -669,10 +669,10 @@ FUNC INT Info_Mod_Hagen_Asylanten2_Condition()
 
 FUNC VOID Info_Mod_Hagen_Asylanten2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten2_15_00"); //Ich sollte alle Lager gefunden haben.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_01"); //Du hast mir einen wichtigen Dienst erwiesen. Ich kann dir nicht genug danken.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_02"); //Nun wird es einfacher sein, auf die tatsächliche Lage dort zu reagieren.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_03"); //Bevor ich dich gehen lasse, muss ich dir leider noch kurz wehtun.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten2_15_00"); //Powinnam byla znalezc wszystkie obozy.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_01"); //Zrobiles mi pan wazna sluzbe. Nie moge Ci wystarczajaco podziekowac.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_02"); //Teraz latwiej bedzie teraz reagowac na rzeczywista sytuacje w tym kraju.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten2_36_03"); //Zanim pozwole wam pójsc, obawiam sie, ze musze cie na chwile zranic.
 
 	Mod_Talk_Sicherung = TRUE;
 
@@ -709,40 +709,40 @@ FUNC VOID Info_Mod_Hagen_Asylanten3_Info()
 
 	B_Say	(hero, self, "$AARGH_1");
 
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_00"); //Nimm es bitte nicht persönlich, aber ich kann mir keine Fehler mehr erlauben.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_01"); //Ich habe dir ein Wahrheitsserum verabreichen lassen, um deine Aussagen zu den Gruppierungen zu überprüfen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_02"); //Keine Angst, du bleibst auf jeden Fall am Leben.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_03"); //Falls du mich jedoch angelogen haben solltest, muss ich dir leider meine Gunst entziehen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_04"); //Also, sprich: Hast du mir die Wahrheit über die Gruppierungen erzählt?
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_00"); //Nie bierzcie tego osobiscie, ale nie moge sobie pozwolic na wiecej bledów.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_01"); //Wydalem wam serum prawdy, aby sprawdzic wasze wypowiedzi na temat grupowan.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_02"); //Nie martw sie, na pewno pozostaniesz przy zyciu.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_03"); //Jesli jednak sie do mnie oklamales, musze cie odebrac.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_04"); //Wiec powiedzmy: Czy powiedziales mi prawde o ugrupowaniach?
 
 	if (Mod_Hagen_NL == 1)
 	&& (Mod_Hagen_SL == 1)
 	&& (Mod_Hagen_KG == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_05"); //(leiernd) Ich habe nach bestem Wissen nur die Wahrheit gesprochen.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_06"); //(erleichtert) Das bedeutet mir sehr viel.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_07"); //Verzeih bitte meine grobe Methode. Nur so konnte ich mir sicher sein.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_08"); //Die Wirkung des Serums verfliegt in ein paar Minuten, dann bist du wieder du selbst.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_09"); //Du sollst auch eine kleine Entschädigung für das dir zugefügte Unrecht erhalten.
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_05"); //Mówilem prawde tylko wedlug mojej najlepszej wiedzy.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_06"); //Dla mnie to wiele znaczy.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_07"); //Prosze wybaczyc moja surowa droge. Tylko w ten sposób moge byc pewien.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_08"); //Efekt dzialania surowicy zanika w ciagu kilku minut, wtedy jestes juz sam.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_09"); //Otrzymasz równiez niewielka nagrode za niesprawiedliwosc, jakiej doznales.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_10"); //Ich hoffe, du bist mir nicht allzu böse?
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_11"); //(leiernd) Ich polier dir die Fresse, du Sack.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_12"); //(ernst) Es tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_10"); //Mam nadzieje, ze nie jestes zbytnio zly na mnie?
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_11"); //Rozbije twarz, worek gówno.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_12"); //(powaznie) Przykro mi.
 
 		Mod_Hagen_Asylanten = 1;
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_13"); //(leiernd) Nein.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_14"); //(ruhig) Und wie ist stattdessen die Lage?
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_15"); //(leiernd) Das Neue Lager plant, aus dem Minental auszubrechen und mit einem Schiff aufs Festland zu gelangen.
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_16"); //Die Bruderschaft ist vollkommen ruhig.
-		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_17"); //Am Pass lagert die Garde des Königs, damit du dort keine Macht mehr hast. Der König traut dir nicht.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_18"); //Das ist ja doch etwas anderes, als du mir versucht hast weiszumachen, nicht?
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_19"); //Und da behaupte noch einer, ich sei paranoid.
-		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_20"); //(laut) Albrecht, schaff ihn hier raus. Und geh sicher, dass er diesen Tag nicht so schnell vergisst.
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_13"); //(falowanie) Nr.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_14"); //Jaka jest natomiast sytuacja?
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_15"); //(lecace) Nowy Obóz planuje wyrwac sie z Minental i dotrzec statkiem do ladu.
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_16"); //Bractwo jest calkowicie spokojne.
+		AI_Output(hero, self, "Info_Mod_Hagen_Asylanten3_15_17"); //Obóz strazników króla przy przeleczy, zebyscie nie mieli wladzy. Król cie nie ufa.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_18"); //To inaczej niz próbowales mi powiedziec, czyz nie?
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_19"); //A inny facet mówi, ze jestem paranoikiem.
+		AI_Output(self, hero, "Info_Mod_Hagen_Asylanten3_36_20"); //Albrecht wyprowadzic go stad. I upewnij sie, ze nie zapomni tego dnia tak szybko.
 
 		AI_StopProcessInfos	(self);
 	};
@@ -756,7 +756,7 @@ INSTANCE Info_Mod_Hagen_Alissandro (C_INFO)
 	information	= Info_Mod_Hagen_Alissandro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alissandro schickt mich, wir haben eine Bitte an die Paladine.";
+	description	= "Alissandro wyslal mnie, mamy prosbe o Paladyn.";
 };
 
 FUNC INT Info_Mod_Hagen_Alissandro_Condition()
@@ -769,18 +769,18 @@ FUNC INT Info_Mod_Hagen_Alissandro_Condition()
 
 FUNC VOID Info_Mod_Hagen_Alissandro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Alissandro_15_00"); //Alissandro schickt mich, wir haben eine Bitte an die Paladine.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_01"); //Ich höre.
-	AI_Output(hero, self, "Info_Mod_Hagen_Alissandro_15_02"); //Das Alte Lager wird von Dämonenrittern unter der Leitung des früheren Erzbarons Gomez bedroht und wir erhoffen uns Hilfe vom Orden der Paladine.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_03"); //Nun, ich kenne Alissandro, er ist ein kluger und gerechter Mann und ich bin sicher, dass unter seiner Hand das Alte Lager eine gute Leitung erfährt, darum wollen wir eure Bitte erfüllen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_04"); //Ich will dir den Plan erklären:
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_05"); //Als Erstes werden wir durch die Verlassene Mine in das Minental gehen, wo wir bei der Jägerhütte Stellung beziehen. Danach Werden wir alle Wegen ins und aus dem Minental einnehmen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_06"); //Wenn wir dies geschafft haben werden wir die Alte Mine angreifen und sie einnehmen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_07"); //Wenn kein Nachschub mehr daraus kommen kann belagern wir Gomez und seine Leute in dem ein großer Teil unseres Heeres um das Lager Stellung bezieht, um zu verhindern, dass es jemand betritt oder verlässt.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_08"); //Allerdings werden wir jemanden in das Lager einschleußen, um ihnen von innen heraus zu schaden. Derjenige wirst du sein. So werden wir Gomez schließlich zur Kapitulation zwingen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_09"); //Wir werden bald ins Minental kommen. Geh du in der Zeit zu Alissandro und berichte ihm dies.
+	AI_Output(hero, self, "Info_Mod_Hagen_Alissandro_15_00"); //Alissandro wyslal mnie, mamy prosbe o Paladyn.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_01"); //Slucham.
+	AI_Output(hero, self, "Info_Mod_Hagen_Alissandro_15_02"); //Stary Obóz jest zagrozony przez demonicznych rycerzy pod przywództwem bylego arcybarona Gomeza i mamy nadzieje, ze Zakon Paladynów udzieli pomocy.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_03"); //Cóz, znam Alissandro, on jest madrym i sprawiedliwym czlowiekiem i jestem pewien, ze pod jego reka Stary Obóz bedzie dobrze zarzadzany, wiec chcemy spelnic twoja prosbe.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_04"); //Chce wyjasnic plan:
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_05"); //Najpierw przejdziemy przez opuszczona kopalnie do doliny Kopalni, gdzie zajmiemy stanowisko w chacie mysliwskiej. Pózniej wszystkie szlaki do i z Minentala zabierzemy.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_06"); //Kiedy to zrobimy, zaatakujemy stara kopalnie i wezmiemy ja.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_07"); //Jesli nie ma juz wiecej zapasów, oblegamy Gomeza i jego ludnosc, w której duza czesc naszej armii zajmuje miejsce wokól obozu, aby uniemozliwic komus wejscie lub wyjscie.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_08"); //Jednakze przenikniemy kogos do obozu, aby zranic go od wewnatrz. Bedziesz jednym z nich. Wiec ostatecznie zmusimy Gomeza do poddania sie.
+	AI_Output(self, hero, "Info_Mod_Hagen_Alissandro_36_09"); //Wkrótce przyjedziemy do Minental. Idzcie na czas do Alissandro i powiedzcie mu to.
 
-	B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Lord Hagen hat mir seine Hilfe zugesichert. Ich werde Alissandro davon berichten.");
+	B_LogEntry	(TOPIC_MOD_AL_FLUCHT, "Pan Hagen obiecal mi swoja pomoc. Powiem Alissandro o tym.");
 };
 
 INSTANCE Info_Mod_Hagen_Cornelius (C_INFO)
@@ -791,7 +791,7 @@ INSTANCE Info_Mod_Hagen_Cornelius (C_INFO)
 	information	= Info_Mod_Hagen_Cornelius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aufgrund meiner zahlreichen Verdienste ...";
+	description	= "Ze wzgledu na moje liczne zaslugi....";
 };
 
 FUNC INT Info_Mod_Hagen_Cornelius_Condition()
@@ -804,25 +804,25 @@ FUNC INT Info_Mod_Hagen_Cornelius_Condition()
 
 FUNC VOID Info_Mod_Hagen_Cornelius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_00"); //Aufgrund meiner zahlreichen Verdienste ...
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_01"); //Du fängst ja schon an wie die Stadtquacksalber. Was willst du?
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_02"); //Ich erbitte eine neue Aufgabe für Cornelius.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_03"); //(lacht) Den mach ich höchstens zum königlichen Kloputzer.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_04"); //Wieso beschwert sich gerade der? Seine einzige Arbeit besteht anscheinend darin, mir das Leben schwer zu machen.
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_05"); //Das macht ihn nicht glücklich.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_06"); //(ironisch) Die Vorstellung rührt mich zu Tränen. Aber ich werde ihn hier in meiner Nähe behalten, wo ich auf ihn aufpassen kann.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_07"); //Sonst müsste ich noch dauernd die Befürchtung haben, dass seine korrupten Spielchen zum Erfolg führen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_00"); //Ze wzgledu na moje liczne zaslugi....
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_01"); //Zaczynasz tak jak miejskie quacki. Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_02"); //Wnioskuje o nowe zlecenie dla Corneliusa.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_03"); //(smiech) Ja uczynie go tylko królewskim sprzataczem toalet.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_04"); //Dlaczego narzeka? Najwyrazniej jedynym jego zadaniem jest utrudnic mi zycie.
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_15_05"); //To nie czyni go szczesliwym.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_06"); //(ironiczne) Spektakl porusza mnie do lez. Bede go trzymal blisko miejsca, w którym moge sie nim opiekowac.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_36_07"); //W przeciwnym razie musialabym sie nadal obawiac, ze jego skorumpowane gry doprowadza do sukcesu.
 
 	Info_ClearChoices	(Info_Mod_Hagen_Cornelius);
 
-	Info_AddChoice	(Info_Mod_Hagen_Cornelius, "Das ist mir doch zu gefährlich.", Info_Mod_Hagen_Cornelius_B);
-	Info_AddChoice	(Info_Mod_Hagen_Cornelius, "Ich bürge für ihn.", Info_Mod_Hagen_Cornelius_A);
+	Info_AddChoice	(Info_Mod_Hagen_Cornelius, "Jest to dla mnie zbyt niebezpieczne.", Info_Mod_Hagen_Cornelius_B);
+	Info_AddChoice	(Info_Mod_Hagen_Cornelius, "Skontaktuje sie z nim.", Info_Mod_Hagen_Cornelius_A);
 };
 
 FUNC VOID Info_Mod_Hagen_Cornelius_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_B_15_00"); //Das ist mir doch zu gefährlich.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_B_36_01"); //Ich freue mich, dass du das auch so siehst.
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_B_15_00"); //Jest to dla mnie zbyt niebezpieczne.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_B_36_01"); //Ciesze sie, ze sie Pan z tym zgadza.
 
 	Mod_Cornelius_Overtalk = 2;
 
@@ -835,14 +835,14 @@ FUNC VOID Info_Mod_Hagen_Cornelius_B()
 
 FUNC VOID Info_Mod_Hagen_Cornelius_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_A_15_00"); //Ich bürge für ihn.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_01"); //Du scheinst dir deiner Sache ja sicher zu sein. Wenn ich gewillt wäre, Cornelius ein neues Amt zu verleihen, welches wäre das?
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_A_15_02"); //Ich denke, etwas Wirtschaftliches würde ihm liegen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_03"); //(seufzt tief) So sei es. Richte ihm aus, dass ich ihn bei nächster Gelegenheit zum Wirtschaftsminister ernenne.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_04"); //Aber bedenke, dass ich mich dazu nur verpflichtet fühle, weil du uns bisher so große Dienste erwiesen hast.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_05"); //Hoffen wir, dass er seine Stellung nicht missbraucht.
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_A_15_00"); //Skontaktuje sie z nim.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_01"); //Wydaje sie pan tak pewny siebie. Gdybym chcial dac Corneliusowi nowe biuro, co by to bylo?
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius_A_15_02"); //Mysle, ze podoba mu sie cos ekonomicznego.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_03"); //Gleboko sie wiec niech to bedzie. Powiedz mu, ze przy kolejnej okazji wyznacze go na ministra gospodarki.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_04"); //Pamietaj jednak, ze czuje sie do tego zobowiazany tylko dlatego, ze do tej pory pan nam tak swietnie sluzyl.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius_A_36_05"); //Miejmy nadzieje, ze nie naduzywa swojej pozycji.
 
-	B_LogEntry	(TOPIC_MOD_CORNELIUS_HELP, "Ich sollte Cornelius davon berichten, dass er bei nächster Gelegenheit von Lord Hagen zum Wirtschaftsminister ernannt wird.");
+	B_LogEntry	(TOPIC_MOD_CORNELIUS_HELP, "Powinienem powiedziec panu Corneliusowi, ze przy najblizszej okazji zostanie mianowany przez lorda Hagena ministrem gospodarki.");
 
 	Mod_Cornelius_Overtalk = 4;
 
@@ -859,7 +859,7 @@ INSTANCE Info_Mod_Hagen_Cornelius02 (C_INFO)
 	information	= Info_Mod_Hagen_Cornelius02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo ist Cornelius?";
+	description	= "Gdzie jest Cornelius?";
 };
 
 FUNC INT Info_Mod_Hagen_Cornelius02_Condition()
@@ -872,12 +872,12 @@ FUNC INT Info_Mod_Hagen_Cornelius02_Condition()
 
 FUNC VOID Info_Mod_Hagen_Cornelius02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius02_15_00"); //Wo ist Cornelius?
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_01"); //Da, wo er hingehört: hinter Gittern.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_02"); //Ich habe gerade noch erfahren, dass er einen kleinen Putsch im Sinn hatte.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_03"); //Er hätte nicht so viele Außenstehende einweihen sollen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_04"); //Gut, dass du damals nicht darauf beharrt hast, ihn sein Amt wechseln zu lassen, sonst sähe es jetzt vielleicht ganz anders aus.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_05"); //Man muss immer gut aufpassen, wen man sich zum Freund macht.
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius02_15_00"); //Gdzie jest Cornelius?
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_01"); //Gdzie on nalezy: za kratami.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_02"); //Wlasnie dowiedzialem sie, ze mial on na mysli maly zamach stanu.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_03"); //Nie powinien byl pozwolic na to tak wielu osobom z zewnatrz.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_04"); //Dobrze sie stalo, ze nie nalegales na zmiane jego stanowiska w tym czasie, w przeciwnym razie sprawy moga wygladac zupelnie inaczej.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius02_36_05"); //Musisz byc ostrozny, z kim sie zaprzyjazniasz.
 
 	B_GivePlayerXP	(150);
 };
@@ -902,9 +902,9 @@ FUNC INT Info_Mod_Hagen_Cornelius03_Condition()
 
 FUNC VOID Info_Mod_Hagen_Cornelius03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius03_36_00"); //(verbittert) Ist die Sache nun also gegessen? Können wir wieder an die Arbeit gehen?
-	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius03_15_01"); //Verzeih bitte meinen Leichtsinn.
-	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius03_36_02"); //Es soll dir als Lehre gereichen.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius03_36_00"); //(bitter) Czy to cos jest teraz zjadane? Czy mozemy wrócic do pracy?
+	AI_Output(hero, self, "Info_Mod_Hagen_Cornelius03_15_01"); //Prosze wybaczyc moja lekkomyslnosc.
+	AI_Output(self, hero, "Info_Mod_Hagen_Cornelius03_36_02"); //Chce nauczyc Was lekcji.
 };
 
 INSTANCE Info_Mod_Hagen_StellDichEin (C_INFO)
@@ -929,9 +929,9 @@ FUNC VOID Info_Mod_Hagen_StellDichEin_Info()
 {
 	AI_EquipBestArmor	(Mod_1056_VLK_Buergerin_NW);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_StellDichEin_36_00"); //Verflucht, was hast du hier zu suchen.
-	AI_Output(hero, self, "Info_Mod_Hagen_StellDichEin_15_01"); //Ähh, ich ...
-	AI_Output(self, hero, "Info_Mod_Hagen_StellDichEin_36_02"); //Nun gut, ähh, vergessen wir, dass das hier stattgefunden hat.
+	AI_Output(self, hero, "Info_Mod_Hagen_StellDichEin_36_00"); //Co ty tu robisz?
+	AI_Output(hero, self, "Info_Mod_Hagen_StellDichEin_15_01"); //Uh, I--
+	AI_Output(self, hero, "Info_Mod_Hagen_StellDichEin_36_02"); //Z cala slusznoscia, zapomnijmy o tym.
 
 	AI_EquipBestArmor	(self);
 
@@ -949,7 +949,7 @@ INSTANCE Info_Mod_Hagen_Mario (C_INFO)
 	information	= Info_Mod_Hagen_Mario_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Garond ist ein Mörder!";
+	description	= "Garond jest morderca!";
 };
 
 FUNC INT Info_Mod_Hagen_Mario_Condition()
@@ -963,13 +963,13 @@ FUNC INT Info_Mod_Hagen_Mario_Condition()
 
 FUNC VOID Info_Mod_Hagen_Mario_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_00"); //Garond ist ein Mörder!
-	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_01"); //Du meinst das Duell mit Mario?
-	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_02"); //(seufzt) Von einem erfahrenen Mann wie Garond hätte ich nicht erwartet, dass er etwas so Törichtes anstellt, aber ich kann an dem Duell selbst nichts Unrechtmäßiges sehen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_03"); //In vielen Fällen enden diese leider tödlich. Dessen sollte man sich bewusst sein, bevor man jemanden herausfordert.
-	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_04"); //Das bedeutet, ich muss die Sache selbst in die Hand nehmen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_05"); //Es würde mir besser gefallen, du würdest sie ruhen lassen.
-	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_06"); //Das werde ich jetzt selbst entscheiden.
+	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_00"); //Garond jest morderca!
+	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_01"); //Masz na mysli pojedynek z Mario?
+	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_02"); //(sighs) Nie spodziewalabym sie, ze doswiadczony mezczyzna, taki jak Garond, zrobi cos tak niemadrego, ale nie widze nic niezgodnego z prawem w samym pojedynku.
+	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_03"); //Niestety w wielu przypadkach konczy sie to niestety smiertelnie. Powinienes zdawac sobie z tego sprawe zanim rzucisz komus wyzwanie.
+	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_04"); //Oznacza to, ze musze wziac sprawy w swoje rece.
+	AI_Output(self, hero, "Info_Mod_Hagen_Mario_36_05"); //Chetnie bym lepiej, gdybys pozwolil jej odpoczac.
+	AI_Output(hero, self, "Info_Mod_Hagen_Mario_15_06"); //To do mnie nalezy decyzja.
 };
 
 INSTANCE Info_Mod_Hagen_AndreVermaechtnis (C_INFO)
@@ -995,32 +995,32 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_00"); //Aha, nun bist du also eingetroffen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_01"); //Ich habe von allem gehört, was geschehen ist ... und auch von Andres Wunsch, dass du sein Nachfolger werden sollst.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_02"); //Mir ist da allerdings einiges über deine Vergangenheit zu Ohren gekommen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_03"); //So sollst du ein ehemaliger Gefangener der Kolonie sein und Kontakte zu Lares und einigen Hehlern des Neuen Lagers unterhalten.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_04"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_05"); //Du brauchst es gar nicht zu leugnen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_06"); //Nach den letzten Ereignissen habe ich mich über dich erkundigt und aus mehreren Quellen Bestätigung erhalten.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_07"); //Angesichts dessen kann ich dich nicht einfach so zum Hauptmann ernennen ... allein schon, weil ich dich dafür zu einem Paladin des Königs erheben müsste, wo du doch mit seinen Feinden konspirierst.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_08"); //Andererseits, nun ... kann ich deine Taten für die Stadt, wie auch Andres Willen nach seinem großen Opfer nicht einfach so ignorieren.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_09"); //Was heißt das nun konkret?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_10"); //Das bedeutet, dass ich dir die Chance geben werde, dich zu bewähren.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_11"); //Wenn du bewiesen hast, dass du eines solchen Amtes würdig bist und den Paladinen keine Schande sein wirst, werde ich es mir vielleicht nochmal überlegen.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_12"); //Wie kann ich meine Loyalität beweisen?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_13"); //Nun, für deine erste Aufgabe wirst du genau die Beziehungen nutzen müssen, welche ein so schlechtes Licht auf dich werfen ... auch, wenn es paradox klingt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_14"); //Du wirst zum Großbauernhof gehen und Lares eine Nachricht überbringen, die meinen Willen für einen Nichtangriffspakt bekundet.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_15"); //Die Lage im Minental spitzt sich nämlich besorgniserregend zu.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_16"); //Da ist ein offener Konflikt zwischen Paladinen und Söldnern für keine Seite von Vorteil.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_17"); //Ich hoffe Lares wird es genauso sehen. Hier ist die Botschaft.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_00"); //Wiec teraz przybyles.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_01"); //Slyszalem o wszystkim, co sie wydarzylo..... a takze pragnienie Andre' a, abys go zastapil.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_02"); //Wiele jednak slyszalem o panskiej przeszlosci.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_03"); //Bedziesz wiec bylym wiezniem kolonii i bedziesz mial kontakty z Laresem i niektórymi skórami Nowego Obozu.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_04"); //l--
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_05"); //Nie musisz temu zaprzeczac.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_06"); //Po ostatnich wydarzeniach zapytalem o Ciebie i otrzymalem potwierdzenie z kilku zródel.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_07"); //Majac to na uwadze, nie moge cie po prostu naklonic do kapitana.... poniewaz musialbym uczynic cie paladyna dla paladyna króla, gdy spiskujesz sie z wrogami jego króla.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_08"); //Z drugiej strony, no cóz...... Nie moge zignorowac waszych dzialan na rzecz miasta, ani woli Andresa na jego wielka ofiare.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_09"); //Co to konkretnie oznacza?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_10"); //Oznacza to, ze jestem gonna dac Ci szanse na udowodnienie siebie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_11"); //Jesli udowodniliscie, ze jestescie godni takiej poslugi i ze nie bedziecie hanba dla Paladynów, byc moze powtórze to jeszcze raz.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis_15_12"); //Jak moge udowodnic swoja lojalnosc?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_13"); //Cóz, do pierwszego zadania bedziesz musial uzyc relacji, które rzucaja na ciebie tak zle swiatlo...... nawet jesli brzmi to paradoksalnie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_14"); //Pójdzie pan do wielkiej farmy i przekaze Laresowi wiadomosc, wyrazajac moja wole zawarcia paktu o nieagresji.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_15"); //Sytuacja w dolinie Minentalnej pogarsza sie niepokojaco.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_16"); //Otwarty konflikt miedzy paladynami a najemnikami nie przynosi korzysci zadnej ze stron.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_17"); //Mam nadzieje, ze Lares czuje sie podobnie. Oto wiadomosc.
 
 	B_GiveInvItems	(self, hero, ItWr_HagenLares, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_18"); //Du weißt also, was du zu tun hast.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis_36_18"); //Wiec wiesz, co robic.
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, "Lord Hagen hat Zweifel, ob ich wirklich eines Paladins und Hauptmanns würdig bin. Daher soll ich erst mal einige Aufgaben für ihn erledigen. Zu Beginn muss ich einen Friedensbotschaft an Lares überbringen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, "Lord Hagen ma watpliwosci, czy jestem godzien paladyna i kapitana. Najpierw powinienem wiec wykonac dla niego jakies zadania. Na poczatek musze przekazac Laresowi przeslanie pokoju.");
 };
 
 INSTANCE Info_Mod_Hagen_AndreVermaechtnis2 (C_INFO)
@@ -1044,22 +1044,22 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis2_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_00"); //Du bist zurück? Was hast du zu berichten?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis2_15_01"); //Ich übergab Lares der Schreiben und er willigte in die Waffenruhe ein.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_02"); //Das ist gut. Damit hast du diese Aufgabe erwartungsgemäß erfüllt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_03"); //Da das Übel jedoch nie ruht, muss ich dich gleich zum nächsten Auftrag aussenden.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis2_15_04"); //Um welche Bedrohung für die Stadt geht es?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_05"); //Nun ... wie soll ich sagen ... vom Osttor aus zieht ein zunehmender starker Verwesungsgeruch in die Stadt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_06"); //Zum einen stört es das öffentliche Leben auf dem sonst so belebten Markt ungemein, zum anderen konnten die Torwachen bislang keine Quelle dieses Übels ausmachen, was beunruhigend ist.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_07"); //Daher habe ich einige Stadtwachen vor das Osttor geschickt, um nach dem Ursprung zu suchen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_08"); //Du wirst dich zu ihnen begeben und sie dabei anleiten.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_09"); //Falls ihr fündig werdet, zögert nicht das Problem zu beseitigen, wenn es in eurer Macht liegt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_10"); //Alles verstanden? Gut. Möge Innos eure Suche erhellen.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_00"); //Wracasz? Co nalezy zglosic?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis2_15_01"); //Zlozylem list Larego i zgodzil sie na zawieszenie broni.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_02"); //To dobra wiadomosc. W ten sposób wykonales to zadanie zgodnie z oczekiwaniami.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_03"); //Poniewaz jednak zlo nigdy nie spoczywa, musze wyslac cie do nastepnego zadania.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis2_15_04"); //Jakie jest zagrozenie dla miasta?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_05"); //.... jak moge to ujac.... z bramy wschodniej do miasta wciaga coraz silniejszy zapach rozkladu.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_06"); //Z jednej strony bardzo przeszkadza to zyciu publicznemu na tak napietym rynku, a z drugiej strony bramkarze do tej pory nie byli w stanie zidentyfikowac zadnego zródla tego zla, które jest niepokojace.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_07"); //Wiec wyslalem kilku strazników poza Brame Wschodnia, aby szukali zródla.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_08"); //Pójdziesz do nich i poprowadzisz ich.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_09"); //Jesli znajdziesz to, czego szukasz, nie wahaj sie rozwiazac problem, jesli jest on w mocy.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis2_36_10"); //Wszystko jasne? Dobre. Nie pozwól, aby Twoje wyszukiwanie bylo latwiejsze.
 
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_FRIEDENSBOTE, LOG_SUCCESS);
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_NASE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_NASE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MILIZ_NASE, "Vom Osttor aus zieht ein starker Verwesungsgeruch in die Stadt. Daher soll ich mich dorthin begeben, wo mich einige Stadtwachen bei der Suche nach der Quelle des Gestanks unterstützen werden. Falls wir was finden, sollen wir das Problem lösen, wenn möglich.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_NASE, "Od wschodniej bramy do miasta wciaga silny zapach rozkladu. Dlatego wlasnie jade tam, gdzie niektórzy straznicy miejscy pomoga mi znalezc zródlo smrodu. Jesli znajdziemy cokolwiek, powinnismy rozwiazac problem, jesli to mozliwe.");
 
 	B_RemoveNpc	(Mod_7100_ASS_Zahit_NW);
 	B_RemoveNpc	(Mod_7101_ASS_Krieger_NW);
@@ -1152,19 +1152,19 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis3_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_00"); //Du bist wieder da? Heißt das, die Quelle wurde gefunden und beseitigt?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis3_15_01"); //Ja, die Stadtwachen kümmern sich gerade darum.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis3_15_02"); //In einer nahe gelegenen Höhle lagen die Leichen einiger finsterer Gestalten herum, die offensichtlich vom Roboter erschlagen wurden.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_03"); //Was so nahe an der Stadt? Und der Roboter hat sie beseitigt?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_04"); //Hmm ... wohl eine weitere Erklärung dafür, dass die Gewaltkriminalität so stark in der Stadt und Umgebung abgenommen hat.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_05"); //(halblaut) Vielleicht hätte man den Roboter noch ein bisschen länger ...
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_06"); //(wieder zum Helden) Ähhm, wie dem auch sei, du hast der Stadt wieder einmal einen guten Dienst erwiesen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_07"); //Hier eine kleine Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_00"); //Wracasz? Czy oznacza to, ze zródlo zostalo znalezione i wyeliminowane?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis3_15_01"); //Tak, troszczyli sie o to straznicy miasta.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis3_15_02"); //W pobliskiej jaskini znajdowaly sie zwloki jakichs zlowieszczych istot, najwyrazniej zabitych przez robota.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_03"); //Co jest tak blisko miasta? I robot wyciagnal je?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_04"); //Hmm..... Prawdopodobnie dalsze wyjasnienie faktu, ze przestepczosc z uzyciem przemocy zmniejszyla sie tak bardzo w miescie i okolicach.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_05"); //Moze robot mógl byc uzywany nieco dluzej....
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_06"); //(znów bohaterowi) Uh, wszelkimi sposobami po raz kolejny dobrze sluzyles miastu.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_07"); //Oto mala nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_08"); //Wenn du dich weiter so gut bewährst, ist es nur noch eine Frage der Zeit, bist du Hauptmann und Paladin wirst, auch, wenn ich vorerst keine weiteren Aufgaben für dich habe.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_09"); //Folge einfach weiter dem Pfad der Rechtschaffenden, dem Beispiel Innos.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_08"); //Jesli nadal dobrze grasz, to tylko kwestia czasu zanim zostaniesz kapitanem i Paladinem, nawet jesli nie mam na razie zadnych innych obowiazków.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis3_36_09"); //Wystarczy podazac droga sprawiedliwych, przykladem Innosa.
 
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_NASE, LOG_SUCCESS);
 
@@ -1201,34 +1201,34 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis4_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_00"); //Stadtwache Mika ist verschwunden. Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_01"); //Du bist für die Stadtwachen verantwortlich. Ich verlange Rechenschaft!
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_02"); //Er handelte mit heißer Ware und bekam Feuer unter dem Hintern, als ich ihn dabei erwischte.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_03"); //Was ... aber ... Dann war er also der Hehler, der die gestohlenen Waren aus der Stadt schaffte.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_04"); //Ihr wusstet von einem Hehler?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_05"); //Wir wussten, dass es einen Verbindungsmann zwischen den Dieben der Stadt und der umliegenden Gegend geben musste.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_06"); //Nur so konnten die gestohlenen Waren unbemerkt die Stadt verlassen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_07"); //Mika also ... ja ... jetzt im Nachhinein macht es alles Sinn. Aber ... was ist mit ihm geschehen?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_00"); //Zniknal straznik Mika. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_01"); //Jestes odpowiedzialny za strazników miejskich. Zadam odpowiedzialnosci!
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_02"); //Zajmowal sie goracymi rzeczami i zapalil sie pod paleczka, kiedy go zlapalem.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_03"); //Co.....? ale....... Wiec to on byl fencemanem, który wyprowadzil skradzione dobra poza miasto.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_04"); //Wiedziales o ogrodzeniu?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_05"); //Wiedzielismy, ze musi istniec lacznik miedzy zlodziejami miasta a okolica.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_06"); //Tylko w ten sposób kradzione towary mogly opuscic miasto niezauwazalnie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_07"); //Mika wtedy wiec.... tak z perspektywy czasu wszystko to ma sens. Ale.... co sie z nim stalo?
 
 	if (Mod_PAL_MikaHehler == 2)
 	{
-		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_08"); //Er ist aus der Stadt entkommen.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_09"); //Ärgerlich, dass er so seiner Strafe entgeht. Aber zumindest haben die Diebe ihren Hehler verloren.
+		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_08"); //Uciekl z miasta.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_09"); //Szkoda, ze tak ucieka przed kara. Ale przynajmniej zlodzieje stracili plot.
 
 		B_GivePlayerXP	(250);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_10"); //Ich habe ihn erwischt und war gezwungen ihn im Kampf zu töten.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_11"); //So wurde er also für seine Taten gerichtet. Gut.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_12"); //Und die Diebe haben ihren Hehler verloren.
+		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis4_15_10"); //Zlapalem go i musialem go zabic w bitwie.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_11"); //Tak wiec zostal osadzony za swoje czyny. Dobre.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_12"); //A zlodzieje stracili plot.
 
 		B_GivePlayerXP	(350);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_13"); //Das sollte ihr Handwerk ordentlich erschweren.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_14"); //Damit hast du der Stadt wieder einmal einen wertvollen Dienst erwiesen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_15"); //Hier, diesen Sold hast du dir verdient.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_13"); //To powinno naprawde utrudnic im handel.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_14"); //Po raz kolejny wykonales w miescie cenna usluge.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis4_36_15"); //Tutaj zarabiales.
 
 	if (Mod_PAL_MikaHehler == 2)
 	{
@@ -1248,7 +1248,7 @@ INSTANCE Info_Mod_Hagen_AndreVermaechtnis5 (C_INFO)
 	information	= Info_Mod_Hagen_AndreVermaechtnis5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Diebe haben mehr als nur ihren Hehler verloren.";
+	description	= "Zlodzieje stracili wiecej niz tylko plot.";
 };
 
 FUNC INT Info_Mod_Hagen_AndreVermaechtnis5_Condition()
@@ -1263,29 +1263,29 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis5_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_00"); //Die Diebe haben mehr als nur ihren Hehler verloren.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_01"); //Ich habe Mikas "Handelspartner" gestellt. Er wird keinen Ärger mehr machen.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_02"); //Ich fand einen Schlüssel bei ihm.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_03"); //Das ist großartig, Zeig mir den Schlüssel ...
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_04"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_00"); //Zlodzieje stracili wiecej niz tylko plot.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_01"); //Ich habe Mikas "handlowcy" gestellt. Er wird keinen Ärger mehr machen.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_02"); //Znajdowalem u niego klucz.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_03"); //To swietnie, pokaz mi klucz....
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_04"); //Tutaj.
 
 	B_GiveInvItems	(hero, self, ItKe_Hotel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_05"); //"H". Da könnten viele in der Stadt in Frage kommen ... mich eingeschlossen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_06"); //Wo hast du Mika bei seinen krummen Geschäften erwischt.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_07"); //Dort, wo der Herold tagsüber predigt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_08"); //Aha! Das bringt uns der Sache natürlich näher.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_09"); //Ich werde dann alles in die Wege leiten, um sicher zu gehen. Komm morgen wieder zu mir.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_05"); //H. W miescie moze byc duzo ludzi..... wraz ze mna.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_06"); //Gdzie móglbys zlapac Mike na jego krzywdzacym biznesie?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_07"); //Gdzie w ciagu dnia glosza zwiastun.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_08"); //Aha! To oczywiscie przybliza nas do tego celu.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_09"); //Doloze wszelkich staran, aby to zapewnic. Jutro przyjdzcie do mnie jutro.
 
 	if (Mod_PAL_Diebesgilde == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_10"); //Aber ...
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_11"); //Ja, war noch was?
-		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_12"); //Ich habe die Diebes bereits ausgeschaltet. Der Schlüssel führte von Hannas Herberge aus zu ihrem Versteck.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_13"); //(irritiert, etwas enttäuscht) Wie, du hast dich schon darum gekümmert?!
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_14"); //(fängt sich wieder) Ähhm, nun, wenn das so ist ... gute Arbeit.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_15"); //Damit hast du der Stadt wieder einmal einen unschätzbaren Dienst erwiesen.
-		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_16"); //Hier, diesen Sold hast du dir mehr als verdient.
+		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_10"); //Ale....
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_11"); //Tak, czy bylo jeszcze cos innego?
+		AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis5_15_12"); //Wyjelam juz zlodziei. Klucz wyprowadzil ja z hostelu Hanny do kryjówki.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_13"); //Co juz sie tym zajelas?
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_14"); //(captures again) Uh, no, no, jesli tak to jest....... dobra praca.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_15"); //Po raz kolejny wykonales w miescie nieoceniona usluge.
+		AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis5_36_16"); //Tutaj zarobiles wiecej niz to wynagrodzenie.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
@@ -1298,7 +1298,7 @@ FUNC VOID Info_Mod_Hagen_AndreVermaechtnis5_Info()
 	{
 		Log_CreateTopic	(TOPIC_MOD_MILIZ_DIEBESGILDE, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_MILIZ_DIEBESGILDE, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Lord Hagen hat mich dazu angewiesen, mich morgen wieder bei ihm zu melden.");
+		B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Pan Hagen poinstruowal mnie, abym jutro ponownie zglosil sie do niego.");
 
 		Mod_PAL_Diebesgilde_Day = Wld_GetDay();
 	};
@@ -1327,16 +1327,16 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis6_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_00"); //Gut, dass du eintriffst. Ich habe bereits alles in die Wege geleitet.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis6_15_01"); //Was ist zu tun?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_02"); //Du wirst dich in Hannas Herberge begeben, von wo aus ein Weg nach unten in die Kanalisation führt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_03"); //Dort wirst du die Aufmerksamkeit der Diebe auf dich lenken, sodass an anderer Stelle Stadtwachen unbemerkt durch einen Schacht hineinklettern und sich positionieren können.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_04"); //Mit einem Überraschungsangriff sollten wir die Diebesbande dann hoffentlich überrumpeln können.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_05"); //Du weißt also, was zu tun ist? Viel Erfolg.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_00"); //Ciesze sie, ze przyszedles. Juz wszystko zaaranzowalem.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis6_15_01"); //Co nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_02"); //Udamy sie do schroniska Hanny, skad prowadzi sciezka prowadzaca do systemu kanalizacyjnego.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_03"); //Tam zwrócisz uwage zlodziei na siebie, aby straznicy miejscy mogli wejsc i ustawic sie niezauwazalnie przez szyb w innym miejscu.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_04"); //Miejmy nadzieje, ze atakiem zaskoczeniem powinnismy byc w stanie zaskoczyc zlodziei.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_36_05"); //Wiec wiesz co robic? Powodzenia.
 
 	B_GiveInvItems	(self, hero, ItKe_Hotel, 1);
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Von Hannas Herberge aus führt ein Weg nach unten in die Kanalisation, den ich einschlagen soll.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Z hostelu Hanny prowadzi sciezka prowadzaca do kanalizacji, która mam zamiar zabrac.");
 
 	B_StartOtherRoutine	(Mod_968_MIL_Bilgot_NW, "HOTEL");
 
@@ -1366,9 +1366,9 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis7_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_00"); //Ihr habt euch um die Diebesbande gekümmert? Ausgezeichnet.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_01"); //Damit hast du der Stadt wieder einmal einen unschätzbaren Dienst erwiesen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_02"); //Hier, diesen Sold hast du dir mehr als verdient.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_00"); //Zajmowales sie gangiem zlodziei? Doskonaly.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_01"); //Po raz kolejny wykonales w miescie nieoceniona usluge.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis7_36_02"); //Tutaj zarobiles wiecej niz to wynagrodzenie.
 
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_DIEBESGILDE, LOG_SUCCESS);
 
@@ -1415,7 +1415,7 @@ FUNC VOID Info_Mod_Hagen_AndreVermaechtnis8_Info()
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_13"); //Ich glaube dennoch, oder gerade deshalb wirst du unserer Stadt und der Insel besonders gut dienen.
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_14"); //Dass du ihr Schicksal bislang schon entscheidend zum Guten bestimmt hast, steht außer Frage.
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_15"); //Wir werden das schon irgendwie hinbekommen ...
-	// this dialog is wrong, player got armor and weapon already from Lord Andre AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_16"); //Wie dem auch sei, hier sind die Rüstung und das Schwert eines Paladins.
+ AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_16"); //	// this dialog is wrong, player got armor and weapon already from Lord AndreWie dem auch sei, hier sind die Rüstung und das Schwert eines Paladins.
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis8_36_17"); //Willkommen in unseren Reihen.
 	
 	Mod_Gilde = 3;
@@ -1443,25 +1443,25 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis9_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis9_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_00"); //Ahh, gut, dass du kommst. Ich nehme an, dass du schon von den dramatischen Ereignissen im Minental gehört hast?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis9_15_01"); //Du meinst den Fall des Alten Lagers?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_02"); //Genau. Das Böse gewinnt mit besorgniserregender Geschwindigkeit an Macht ... und neues Übel scheint aus dem Minental zu drohen.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis9_15_03"); //Um was geht es?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_04"); //Das wissen wir selber leider noch nicht genau.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_05"); //Denn die Erfahrungen mit den Seelenpeinigern haben uns gezeigt, dass nicht immer auf den ersten Blick Harmloses von Gefährlichem zu unterscheiden ist.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_06"); //Fest steht nur, dass seit kurzem vermehrt Leute aus dem Minental strömen und man Gruppen von ihnen überall in der Umgebung antrifft.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_07"); //Ob, nur harmlose Flüchtlinge, oder verschlagene Verbrecher, gar heimtückische Spione des Feindes ... wir wissen es nicht.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_08"); //Einige unsere Stadtwachen befinden sich in ihrer Nähe und beobachten die Lage.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_09"); //In Hinblick auf deine Kenntnis um das Minental und seine Bewohner möchte ich, dass du zu ihnen stößt und ergründest, was es mit den Leuten auf sich hat.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_10"); //Hier, auf dieser Karte habe ich die Positionen der Gruppen verzeichnet.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_00"); //Ach, dobrze ci przyjsc. Slyszalem o dramatycznych wydarzeniach w Minentalu?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis9_15_01"); //Masz na mysli upadek Starego Obozu?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_02"); //Dokladnie. Zlo zyskuje moc z alarmujaca predkoscia.... Z Minentala wydaje sie, ze pojawia sie nowe zlo.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis9_15_03"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_04"); //Nie wiemy jeszcze na pewno.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_05"); //Doswiadczenia z dreczycielami duszy pokazaly nam, ze na pierwszy rzut oka nie zawsze mozna odróznic nieszkodliwe rzeczy od niebezpiecznych.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_06"); //Jedno jest jednak pewne, ze coraz wiecej osób pochodzi z Minentala, a ich grupy mozna spotkac wszedzie na tym obszarze.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_07"); //Czy to tylko nieszkodliwi uciekinierzy lub sprytni przestepcy, nawet podstepni szpiedzy wroga...... Nie wiemy.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_08"); //Niektórzy z naszych strazników miejskich sa blisko i obserwuja sytuacje.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_09"); //Jesli chodzi o znajomosc doliny i jej mieszkanców, chcialbym, abyscie sie z nimi spotkali i dowiedzieli sie, jak to jest z ludzmi.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_10"); //Tutaj, na tej mapie wymienilem pozycje grup.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_HagenAL, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_11"); //Du weißt also, was zu tun ist? Innos begleite dich auf deinen Wegen!
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis9_36_11"); //Wiec wiesz co robic? Innos towarzyszy Ci na drodze!
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_FREUNDFEIND, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_FREUNDFEIND, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MILIZ_FREUNDFEIND, "Seit dem Fall des Alten Lagers sind vermehrt Menschen aus dem Minental geströmt, die sich in Gruppen an verschiedenen Stellen von Khorinis niedergelassen haben. Lord Hagen möchte, dass ich ergründe, ob es nur harmlose Flüchtlinge sind, oder ob sie böses im Schilde führen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_FREUNDFEIND, "Od czasu upadku Starego Obozu z doliny Minentalnej przybywa coraz wiecej osób, które osiedlaja sie w grupach w róznych miejscach Khorinis. Lord Hagen chce, abym dowiedzial sie, czy sa oni tylko niewinnymi uchodzcami lub zlymi.");
 
 	B_StartOtherRoutine	(Mod_109_MIL_Rick_NW, "FISK");
 	B_StartOtherRoutine	(Mod_118_MIL_Rumbold_NW, "FISK");
@@ -1493,7 +1493,7 @@ INSTANCE Info_Mod_Hagen_AndreVermaechtnis10 (C_INFO)
 	information	= Info_Mod_Hagen_AndreVermaechtnis10_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei den drei Gruppen aus dem Minental.";
+	description	= "Bylem z trzema grupami z Minental.";
 };
 
 FUNC INT Info_Mod_Hagen_AndreVermaechtnis10_Condition()
@@ -1517,26 +1517,26 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis10_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis10_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_00"); //Ich war bei den drei Gruppen aus dem Minental.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_01"); //Und was hast du zu berichten?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_02"); //Bei Bengar waren es harmlose Flüchtlinge, darunter ein Händler, den ich noch aus der Kolonie kannte.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_03"); //Sie sind mittlerweile in der Stadt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_04"); //In Ordnung, das ist gut.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_05"); //Vielleicht können wir von ihnen noch mehr über die Situation im Minental erfahren.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_06"); //Die Gruppe bei Akil war nicht ganz so umgänglich.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_07"); //Es waren Wegelagerer ... deren Überreste nun am Wege lagern.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_08"); //Gute, Arbeit. Ein paar Halunken und Unruhestifter weniger.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_09"); //Sie wussten eben nicht, was ein Paladin vermag.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_10"); //Wie dem auch sei ... und die letzte Gruppe?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_11"); //Auch ein alter Bekannter aus dem Alten Lager ...
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_12"); //Erfreulich zu hören ...
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_13"); //Der jedoch nicht ganz so harmlos war.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_14"); //Es scheint, dass er unter dem Einfluss der Seeleinpeiniger das Tor im Lager öffnete.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_15"); //Was, er war dafür verantwortlich?
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_16"); //Ja. Er und seine "Freunde" die bei ihm waren, werden hier jedoch kein weiteres Unheil mehr anrichten.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_17"); //Da bin ich aber erleichtert. Innos möge ihrer gequälten Seelen gnädig sein ...
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_18"); //Wie dem auch sei, du hast deine Mission wie immer mehr als zufrieden stellend erfüllt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_19"); //Wir können wirklich stolz sein, dich in den Reihen der Paladine zu wissen.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_00"); //Bylem z trzema grupami z Minental.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_01"); //A co trzeba zglosic?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_02"); //W Bengarze byli nieszkodliwymi uchodzcami, w tym handlarzem, którego znalem z kolonii.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_03"); //Teraz sa w miescie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_04"); //Dobrze, to dobrze.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_05"); //Moze od nich mozemy dowiedziec sie wiecej o sytuacji w Minentalu.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_06"); //Grupa w Akil's nie byla az tak przyjemna.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_07"); //Byli to.... którego pozostalosci sa teraz przechowywane na trasie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_08"); //Dobra praca. Mniej szyderców i wichrzycieli.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_09"); //Po prostu nie wiedziales, co moze zrobic paladynka.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_10"); //Jednak.... i ostatnia grupa?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_11"); //Równiez stary znajomy z dawnego obozu.....
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_12"); //Mily sluch....
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_13"); //Ale nie bylo tak nie tak nieszkodliwe.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_14"); //Wydaje sie, ze pod wplywem marynarzy otworzyl brame w obozie.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_15"); //Co byl odpowiedzialny?
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis10_15_16"); //Ja. Er und seine "laski" die bei ihm waren, werden hier jedoch kein weiteres Unheil mehr anrichten.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_17"); //To ulga. Niech Innos zmiluje sie nad ich torturowanymi duszami.....
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_18"); //Tak czy owszem, jak zawsze, wypelniliscie swoja misje bardziej niz zadowalajaco.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis10_36_19"); //Jestesmy naprawde dumni, ze mamy Cie w rzedach Paladynów.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
@@ -1569,41 +1569,41 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis11_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis11_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_00"); //Gut, dass du da bist.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_01"); //Die letzten Ereignisse haben gezeigt, wie schnell uns auch hier die Lage entgleiten kann, wenn die Situation im Minental derart instabil ist.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_02"); //Wir bräuchten daher unbedingt jemanden, der vor Ort ein Auge darauf hat.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_03"); //Männer kann ich leider keine entbehren und ins Minental schicken, da die Situation um Khorinis schon unsere ganze Aufmerksamkeit erfordert.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_04"); //Wie ist dann vorzugehen?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_05"); //Wir müssen Kontakt zu einem Lager im Minental aufnehmen und sie um eine engere Zusammenarbeit bitten.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_06"); //Hmm, ich vermute mal, du dachtest dabei nicht an die Banditen oder Söldner.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_07"); //Ähhm, natürlich nicht ... alles hat seine Grenzen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_08"); //Gemeint waren selbstverständlich die Königstreuen. Auf ihnen ruhen jetzt meine Hoffnungen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_09"); //Sie sind kampferprobt und befinden sich gleich am Pass.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_10"); //Aber?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_11"); //Nun, viel mehr als eine Handelsbeziehung unterhielten wir bisher nicht zu Ihnen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_12"); //Und auch diese gründete nur auf ihrer guten Einstellung  gegenüber Andre, den sie aus früherer Zeit kannten und respektierten.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_13"); //Was ist das Problem?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_14"); //Nun ... ich habe sie damals kurz nach dem Fall der Barriere dorthin strafversetzt.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_15"); //Dies geschah auf Befehl, wozu ich aber nicht näheres sagen darf.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_16"); //Egal ... sie sind auf jeden Fall nicht sonderlich gut auf mich zu sprechen.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_17"); //Sie berufen sich nun stets darauf, dass sie ihren Schwur dem König geleistet haben und auch nur ihm zu Treue und Gehorsam verpflichtet sind.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_18"); //Aufgrund der Situation auf dem Festland ist es aber momentan recht schwierig an Direktiven des Königs zu gelangen, wie du dir vorstellen kannst.
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_19"); //Was ist also zu tun?
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_20"); //Du bist nicht nur Paladin und Hauptmann der Stadt, sondern kennst dich zudem besser als jeder andere von uns im Minental aus.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_21"); //Daher wirst du dich zu ihnen begeben und Hymir dieses Schreiben überbringen.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_00"); //Ciesze sie, ze jestes tutaj.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_01"); //Ostatnie wydarzenia pokazaly, jak szybko sytuacja moze sie wydostac z naszych rak, kiedy sytuacja w Minentalu jest tak niestabilna.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_02"); //W zwiazku z tym zdecydowanie potrzebujemy kogos, kto bedzie pilnowal tej sprawy na miejscu.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_03"); //Niestety, nie moge oszczedzic ludzi i wyslac ich do Minentala, poniewaz sytuacja wokól Khorinis wymaga naszej pelnej uwagi.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_04"); //Co zatem nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_05"); //Musimy skontaktowac sie z obozem w Minental i poprosic o blizsza wspólprace.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_06"); //Cóz, chyba nie myslales o bandytach czy najemnikach.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_07"); //Um, oczywiscie nie - oczywiscie wszystko ma swoje ograniczenia.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_08"); //Oczywiscie, wiernymi królowi byli wierni. Moje nadzieje teraz spoczywaja na nich.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_09"); //Sa one testowane bitewnie i maja racje na przeleczy.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_10"); //Ale?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_11"); //Cóz, nie mielismy z Panstwem nic innego jak tylko stosunki handlowe.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_12"); //I i ten równiez opieral sie tylko na ich dobrym stosunku do Andre' a, którego znali i szanowali w dawnych czasach.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_13"); //Jaki jest problem?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_14"); //.... Wyslalem ja tam wkrótce po upadku zapory.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_15"); //Uczyniono to na porzadku, ale nie wolno mi juz nic wiecej powiedziec na ten temat.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_16"); //.... Z pewnoscia nie sa dla mnie zbyt dobre.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_17"); //Oni teraz zawsze powoluja sie na fakt, ze przysiege przysiege zloza królowi i sa zwiazani tylko z nim dla lojalnosci i posluszenstwa.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_18"); //Ze wzgledu jednak na sytuacje na ladzie stalym, dosyc trudno jest w tej chwili dojsc do dyrektyw króla, jak mozna sobie wyobrazic.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_19"); //Co zatem nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_20"); //Jestes nie tylko Paladinem i kapitanem miasta, ale wiesz, ze lepiej niz ktokolwiek inny zna swoja droge wokól Minentala.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_21"); //Dlatego pójdziesz do nich i wyslesz ten list do Hymira.
 
 	B_GiveInvItems	(self, hero, ItWr_HagenForHymir, 1);
 
-	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_22"); //Gut, ich mache mich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_23"); //Warte! Falls er nicht darauf eingehen sollte, musst du diese Spruchrolle in ihrem Lager benutzen.
+	AI_Output(hero, self, "Info_Mod_Hagen_AndreVermaechtnis11_15_22"); //Dobrze, ze jestem w drodze.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_23"); //Poczekac! Jesli on nie odpowie, musisz uzyc tej rolki zaklecia w ich obozie.
 
 	B_GiveInvItems	(self, hero, ItSc_SumHagen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_24"); //Denke daran ... Innos beschütze dich.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis11_36_24"); //Pamietaj.... Innos chroni Cie.
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_TREUE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_TREUE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MILIZ_TREUE, "Hagen möchte, dass ich Hymir eine Botschaft überbringe, in welcher er um eine Zusammenarbeit bittet.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_TREUE, "Hagen chcialby, abym przekazal Hymirowi przeslanie, w którym prosi o wspólprace.");
 };
 
 INSTANCE Info_Mod_Hagen_AndreVermaechtnis12 (C_INFO)
@@ -1627,13 +1627,13 @@ FUNC INT Info_Mod_Hagen_AndreVermaechtnis12_Condition()
 
 FUNC VOID Info_Mod_Hagen_AndreVermaechtnis12_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_00"); //Die Situation am Pass sollte jetzt sicherer werden.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_01"); //Feinde können nun nicht mehr einfach so unentdeckt in Khorinis eindringen, was zum großen Teil dein Verdienst ist.
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_02"); //Hier, dein Sold.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_00"); //Sytuacja na karnecie powinna teraz stac sie bezpieczniejsza.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_01"); //Wrogowie nie moga juz nie wykrywac Khorinis, co jest w duzej mierze spowodowane Twoja zasluga.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_02"); //Oto Twoje wynagrodzenie.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_03"); //Innos behüte dich vor allen Gefahren.
+	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis12_36_03"); //Innos chroni przed wszelkimi niebezpieczenstwami.
 
 	B_GivePlayerXP	(400);
 
@@ -1650,7 +1650,7 @@ INSTANCE Info_Mod_Hagen_Siegelring (C_INFO)
 	information	= Info_Mod_Hagen_Siegelring_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe diesen Ring hier.";
+	description	= "Te pierscionek dostalem wlasnie tutaj.";
 };
 
 FUNC INT Info_Mod_Hagen_Siegelring_Condition()
@@ -1663,20 +1663,20 @@ FUNC INT Info_Mod_Hagen_Siegelring_Condition()
 
 FUNC VOID Info_Mod_Hagen_Siegelring_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Siegelring_15_00"); //Ich habe diesen Ring hier.
+	AI_Output(hero, self, "Info_Mod_Hagen_Siegelring_15_00"); //Te pierscionek dostalem wlasnie tutaj.
 
 	B_GiveInvItems	(hero, self, ItRi_Siegelring, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_01"); //Lass sehen ... Das ... das ist tatsächlich der geraubte Siegelring, den du mir da gebracht hast.
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_02"); //Unglaublich! Ich hätte nicht erwartet ihn jemals wieder zu Gesicht zu bekommen ...
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_03"); //Und was ist mit dem Frevler, der ihn raubte?
-	AI_Output(hero, self, "Info_Mod_Hagen_Siegelring_15_04"); //Er wird niemanden mehr überfallen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_05"); //So hat er also das Los bekommen, was ihm Zustand. Wie dem auch sei, dein Verdienst für die Stadt ist nicht gering zu schätzen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_06"); //Hier hast du 1000 Gold als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_01"); //Pozwólcie mi widziec.... .... To jest wlasnie kradziony pierscien sygnetowy, który mnie przywiózles.
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_02"); //Niewiarygodny! Nigdy juz go nie spodziewalem sie wiecej zobaczyc....
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_03"); //A co z zlym czlowiekiem, który go rabowal?
+	AI_Output(hero, self, "Info_Mod_Hagen_Siegelring_15_04"); //Nie bedzie nikogo innego rabowal.
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_05"); //Tak wiec dostal los, który nadal mu kondycje. Tak czy inaczej, nie nalezy lekcewazyc zaslug dla miasta.
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_06"); //Oto nagroda za tysiac zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_07"); //Dein leuchtendes Beispiel soll Vorbild für alle Bürger des Reiches sein. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Hagen_Siegelring_36_07"); //Twój blyszczacy przyklad powinien byc wzorem dla wszystkich obywateli królestwa. Innos jest z toba.
 
 	B_GivePlayerXP	(2500);
 
@@ -1693,7 +1693,7 @@ INSTANCE Info_Mod_Hagen_Asylanten4 (C_INFO)
 	information	= Info_Mod_Hagen_Asylanten4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was hast du jetzt vor?";
+	description	= "Co zamierzasz teraz zrobic?";
 };
 
 FUNC INT Info_Mod_Hagen_Asylanten4_Condition()
@@ -1707,9 +1707,9 @@ FUNC INT Info_Mod_Hagen_Asylanten4_Condition()
 
 FUNC VOID Info_Mod_Hagen_Asylanten4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten4_15_00"); //Was hast du jetzt vor?
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten4_36_01"); //Ich glaube, ich sollte Boten in das Minental schicken, um mit dem Neuen Lager zu einer gütlichen Einigung zu kommen.
-	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten4_36_02"); //Außerdem werde ich mit der Garde in Kontakt treten müssen, bevor sie dort im Auftrag des Königs Dummheiten begehen.
+	AI_Output(hero, self, "Info_Mod_Hagen_Asylanten4_15_00"); //Co zamierzasz teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten4_36_01"); //Mysle, ze powinienem wyslac poslanników do Minentala, aby dojsc do polubownego rozwiazania z Nowym Obozem.
+	AI_Output(self, hero, "Info_Mod_Hagen_Asylanten4_36_02"); //Bede równiez musial skontaktowac sie z straznikami, zanim tam zaczna glupote w imieniu króla.
 };
 
 INSTANCE Info_Mod_Hagen_Pickpocket (C_INFO)
@@ -1845,7 +1845,7 @@ FUNC INT Info_Mod_Hagen_EXIT_Condition()
 
 FUNC VOID Info_Mod_Hagen_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_EXIT_36_00"); //Für den König!
+	AI_Output(self, hero, "Info_Mod_Hagen_EXIT_36_00"); //Za Króla!
 
 	AI_StopProcessInfos	(self);
 };

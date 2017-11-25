@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Zombie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Zombie";
+	name							=	"zombi";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	20;
@@ -234,12 +234,12 @@ FUNC VOID B_SetVisual_Zom()
 	}
 	else if (Randi == 4)
 	{
-		self.name = "Zombie - Frau";
+		self.name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman01();
 	}
 	else
 	{
-		self.name = "Zombie - Frau";
+		self.name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman02();
 	};
 };
@@ -250,7 +250,7 @@ FUNC VOID B_SetVisual_Zom()
 
 INSTANCE Zombie_Tonak		(Mst_Default_Zombie)
 {
-	name = "Tonak";
+	name = "gliniany";
 
 	B_SetVisuals_Zombie01();
 	Npc_SetToFistMode(self);
@@ -266,7 +266,7 @@ INSTANCE Zombie_Akil		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Randolph		(Mst_Default_Zombie)
 {
-	name = "Randolph";
+	name = "Randolf";
 
 	B_SetVisuals_ZombieRandolph();
 	Npc_SetToFistMode(self);
@@ -369,12 +369,12 @@ INSTANCE Zombie_Griselda_01		(Mst_Default_Zombie)
 	}
 	else if (Randi == 4)
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman01();
 	}
 	else
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman02();
 	};
 
@@ -404,12 +404,12 @@ INSTANCE Zombie_Griselda_02		(Mst_Default_Zombie)
 	}
 	else if (Randi == 4)
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman01();
 	}
 	else
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman02();
 	};
 
@@ -439,12 +439,12 @@ INSTANCE Zombie_Griselda_03		(Mst_Default_Zombie)
 	}
 	else if (Randi == 4)
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman01();
 	}
 	else
 	{
-		name = "Zombie - Frau";
+		name = "Zombie - kobieta";
 		B_SetVisuals_ZombieWoman02();
 	};
 
@@ -462,7 +462,7 @@ INSTANCE Zombie_Argez		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Woman01		(Mst_Default_Zombie)
 {
-	name = "Zombie - Frau";
+	name = "Zombie - kobieta";
 
 	B_SetVisuals_ZombieWoman01();
 	Npc_SetToFistMode(self);
@@ -470,7 +470,7 @@ INSTANCE Zombie_Woman01		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Woman02		(Mst_Default_Zombie)
 {
-	name = "Zombie - Frau";
+	name = "Zombie - kobieta";
 
 	B_SetVisuals_ZombieWoman02();
 	Npc_SetToFistMode(self);
@@ -490,7 +490,7 @@ INSTANCE Zombie_AtSekobsHof_02		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Ehnim		(Mst_Default_Zombie)
 {
-	name = "Ehnim";
+	name = "ennim";
 
 	B_SetVisuals_ZombieEhnim();
 	Npc_SetToFistMode(self);
@@ -512,7 +512,7 @@ INSTANCE Zombie		(Mst_Default_Zombie)
 
 INSTANCE Zombie_SP_01		(Mst_Default_Zombie)
 {
-	name	= "ausgezehrter Seelenloser";
+	name	= "wycienczony bezduszny czlowiek";
 
 	B_SetVisuals_Zombie01();
 	Npc_SetToFistMode(self);
@@ -523,7 +523,7 @@ INSTANCE Zombie_SP_01		(Mst_Default_Zombie)
 
 INSTANCE Zombie_SP_02		(Mst_Default_Zombie)
 {
-	name	= "ausgezehrter Seelenloser";
+	name	= "wycienczony bezduszny czlowiek";
 
 	B_SetVisuals_Zombie01();
 	Npc_SetToFistMode(self);
@@ -534,7 +534,7 @@ INSTANCE Zombie_SP_02		(Mst_Default_Zombie)
 
 INSTANCE Zombie_SP_03		(Mst_Default_Zombie)
 {
-	name	= "ausgezehrter Seelenloser";
+	name	= "wycienczony bezduszny czlowiek";
 
 	B_SetVisuals_Zombie01();
 	Npc_SetToFistMode(self);
@@ -551,7 +551,7 @@ INSTANCE Zombie01		(Mst_Default_Zombie)
 
 INSTANCE Wasserleiche_Botschek_01		(Mst_Default_Zombie)
 {
-	name		=	"Wasserleiche";
+	name		=	"utoniete cialo";
 
 	Mdl_SetVisual			(self,	"Zombie.mds");
 	//								Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
@@ -562,7 +562,7 @@ INSTANCE Wasserleiche_Botschek_01		(Mst_Default_Zombie)
 
 INSTANCE Wasserleiche_Botschek_02		(Mst_Default_Zombie)
 {
-	name		=	"Wasserleiche";
+	name		=	"utoniete cialo";
 
 	Mdl_SetVisual			(self,	"Zombie.mds");
 	//								Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
@@ -607,7 +607,7 @@ INSTANCE Zombie_Paladin_02		(Mst_Default_Zombie)
 
 INSTANCE Schneegeist		(Mst_Default_Zombie)
 {
-	name		= "Schneegeist";
+	name		= "straszydlo sniegu";
 
 	flags = NPC_FLAG_GHOST;
 
@@ -1458,7 +1458,7 @@ INSTANCE Zombie04	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 {
 	
-	name 			= "Ravens Knecht";
+	name 			= "Sluga Ravena";
 	
 	Mdl_SetVisual			(self,	"Zombie.mds");
 	//								Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
@@ -1472,7 +1472,7 @@ INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Bloodwyn	(Mst_Default_Zombie)
 {
 	
-	name = "Erweckter Bloodwyn";
+	name = "Obudzony krwawnik";
 	level							=	25;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	1600;
@@ -1666,7 +1666,7 @@ INSTANCE MayaZombie04		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Burgherr		(Mst_Default_Zombie)
 {
-	name		=	"Burgherr";
+	name		=	"wladca zamku";
 
 	B_SetVisuals_Maya_Zombie04();
 	Npc_SetToFistMode(self);
@@ -1684,7 +1684,7 @@ INSTANCE MayaZombie04_Totenw	(Mst_Default_Zombie)
 	CreateInvItems	(self, ItWr_Bauplan_BeliarDolch, 1);
 	CreateInvItems	(self, ItMi_Zeitspalt_Addon, 1);
 
-	name = "Hüter des Herrenhauses";
+	name = "Wlasciciel dworu";
 
 	B_SetVisuals_Maya_Zombie04();
 	Npc_SetToFistMode(self);
@@ -1710,7 +1710,7 @@ INSTANCE Zombie_Adanos_Pepe		(Mst_Default_Zombie)
 
 INSTANCE Zombie_Herek		(Mst_Default_Zombie)
 {
-	name		=	"verendeter Abenteurer";
+	name		=	"zmarly awanturnik";
 
 	B_SetVisuals_Maya_Zombie04();
 	Npc_SetToFistMode(self);

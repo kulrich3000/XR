@@ -1,7 +1,7 @@
 instance Mod_2010_TPL_GorNaToth_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Gor Na Toth";
+	name =							"Gorza Naotha";
 	npctype =						npctype_Main;
 	guild =							GIL_OUT;
 	level =							21;

@@ -1,7 +1,7 @@
 instance Mod_748_NONE_Rengaru_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rengaru"; 
+	name 		= "engaru"; 
 	guild 		= GIL_OUT;
 	id 			= 748;
 	voice 		= 7;

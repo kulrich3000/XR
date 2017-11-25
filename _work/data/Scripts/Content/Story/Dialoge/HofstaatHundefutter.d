@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatHundefutter_Hi (C_INFO)
 	information	= Info_Mod_HofstaatHundefutter_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey!";
+	description	= "Hej!";
 };
 
 FUNC INT Info_Mod_HofstaatHundefutter_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_HofstaatHundefutter_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatHundefutter_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_00"); //Hey!
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_01"); //Aaalter. Was soll der Scheiß?
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_02"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_03"); //Siehst du nicht, dass ich arbeite? Du neeeervst!
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_04"); //Du hast ziemlich viel Freudenspender intus, oder?
-	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_05"); //Fr ... Freu ... hä? Aaaaaalter ... Endlich, der Boss!
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_00"); //Hej!
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_01"); //Wiek. Co to jest ten gówno?
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_02"); //Co myslisz?
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_03"); //Czy nie widzisz, ze pracuje? Stajesz sie na nerwy!
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_15_04"); //Ostatnio miales dosc dobry czas, czyz nie?
+	AI_Output(self, hero, "Info_Mod_HofstaatHundefutter_Hi_06_05"); //Ks. zadowolony Hu? aaaaaaa wieku Wreszcie szef!
 
 	AI_StopProcessInfos	(self);
 

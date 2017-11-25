@@ -1,7 +1,7 @@
 instance Mod_964_BDT_Skinner_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skinner";
+	name 		= "skóra";
 	guild 		= GIL_OUT;
 	id 			= 964;
 	voice 		= 24;

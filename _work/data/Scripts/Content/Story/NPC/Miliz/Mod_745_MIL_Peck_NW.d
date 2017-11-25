@@ -1,7 +1,7 @@
 instance Mod_745_MIL_Peck_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Peck";	
+	name 		= "dziób";	
 	guild 		= GIL_PAL;
 	id 			= 745;
 	voice 		= 12;

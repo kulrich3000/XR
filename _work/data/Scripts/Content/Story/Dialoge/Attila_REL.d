@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Attila_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_00"); //Es scheint, dass die Kinder der Einfalt ihr Lagerhaus gerade mit Vorräten befüllen.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_01"); //Immer von morgens bis abends tragen sie Kisten und Säcke gefüllt mit Speis und Trank ins Gebäude.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_02"); //Fenster befinden sich dort leider keine.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_03"); //Zwei Wachen bewachen den ganzen Ablauf, welche das Gebäude auch immer abends abschließen.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_04"); //Einer von beiden hält dann die Nacht über Wache bei der Vordertür.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_05"); //Das war alles, was ich erfahren habe.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_00"); //Wydaje sie, ze dzieci prostoty po prostu zapelniaja swój magazyn zaopatrzeniem.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_01"); //Zawsze niosa pudelka i worki wypelnione jedzeniem i napojami do budynku od rana do nocy.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_02"); //Nie ma tam okien.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_03"); //Dwóch strazników strzeze calego procesu, który zawsze zamyka budynek wieczorem.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_04"); //Jeden z nich zatrzymuje noc nad straza przy drzwiach wejsciowych.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Hi_09_05"); //To wszystko, co uslyszalem.
 
 	AI_StopProcessInfos	(self);
 };
@@ -45,20 +45,20 @@ FUNC INT Info_Mod_Attila_REL_Glorie_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_00"); //(ironisch) Sei gegrüßt, Vater der Gelehrsamkeit.
-	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_01"); //Du hier? Sollst du nicht dafür sorgen, dass der Gelehrte hier nicht auftaucht?
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_00"); //Powitanie, ojciec nauki.
+	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_01"); //Ty tutaj? Czy nie powinienes sie upewnic, ze uczony sie nie pojawil?
 
 	AI_PlayAni	(hero, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_02"); //Nun, es gelang mir nicht ihn in ein Gespräch zu verwickeln.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_03"); //Da musste ich zu anderen Mitteln greifen.
-	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_04"); //Du hast ihn doch nicht etwa ...
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_05"); //Nein, nein ... nur einige gezielte Würfe mit faulen Obst, gefolgt von einer kurzen Verfolgungsjagd mit ihm und seiner Leibwache.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_06"); //Er dürfte jetzt in seiner besudelten Kleidung das Haus hüten.
-	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_07"); //Faules Obst? Das ist sonst nicht deine Art.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_08"); //Ein Dieb muss sich stets zu wandeln wissen ... wobei mir dies in Erinnerung ruft, Ramirez aus seiner prekären Lage zu erlösen.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_09"); //Wenn wir es geschickt anstellen, sollte es uns sogar gelingen das Kleid zurückzulegen, ehe der Diebstahl bemerkt wird.
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_10"); //Komm!
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_02"); //No cóz, nie moglem go zaangazowac w rozmowe.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_03"); //Musialem skorzystac z innych srodków.
+	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_04"); //Nie widziales go......
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_05"); //Nie, nie, nie..... tylko niektóre wycelowane mioty z leniwymi owocami, a nastepnie krótka gonitwa z nim i jego ochroniarzem.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_06"); //Teraz wolno mu trzymac dom w zabrudzonych strojach.
+	AI_Output(hero, self, "Info_Mod_Attila_REL_Glorie_15_07"); //Owoce rotacyjne? To zwykle nie jest twoja droga.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_08"); //Zlodziej musi zawsze umiec sie zmienic.... co przypomina mi uwolnic Ramireza od jego niepewnej sytuacji.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_09"); //Jesli zrecznie to zrobimy, powinnismy byc nawet w stanie odlozyc sukienke z powrotem przed zauwazeniem kradziezy.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie_09_10"); //Chodz dalej!
 
 	AI_StopProcessInfos	(self);
 
@@ -88,7 +88,7 @@ FUNC INT Info_Mod_Attila_REL_Glorie2_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Glorie2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie2_09_00"); //So, darf ich den vornehmen Herrn um seine Kleidung bitten?
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie2_09_00"); //Czy moge wiec poprosic pana posla o jego ubranie?
 
 	B_GiveInvItems	(hero, self, ItAr_GelehrterNeu, 1);
 
@@ -125,7 +125,7 @@ FUNC INT Info_Mod_Attila_REL_Glorie3_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Glorie3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie3_09_00"); //So, jetzt nichts wie zurück ins Lager.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie3_09_00"); //Wrócmy teraz do obozu.
 
 	AI_StopProcessInfos (self);
 
@@ -155,7 +155,7 @@ FUNC INT Info_Mod_Attila_REL_Glorie4_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Glorie4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie4_09_00"); //Beliar ist groß ... schaut euch nur diesen Schatz an.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie4_09_00"); //Beliar jest duzy.... Wystarczy spojrzec na ten skarb.
 
 	AI_StopProcessInfos (self);
 };
@@ -185,7 +185,7 @@ FUNC INT Info_Mod_Attila_REL_Glorie5_Condition()
 
 FUNC VOID Info_Mod_Attila_REL_Glorie5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie5_09_00"); //Nun, ich denke wir haben Beliar für heute genug erzürnt. Wir sollten seinen Schatz besser nicht weiter plündern.
+	AI_Output(self, hero, "Info_Mod_Attila_REL_Glorie5_09_00"); //Cóz, mysle, ze na dzien dzisiejszy wscieklismy Beliara. Lepiej bysmy juz nie pladrowali jego skarbów.
 
 	AI_StopProcessInfos (self);
 };

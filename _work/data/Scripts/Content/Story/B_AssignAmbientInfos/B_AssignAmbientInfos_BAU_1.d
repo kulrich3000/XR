@@ -17,7 +17,7 @@ FUNC INT DIA_BAU_1_EXIT_Condition()
 
 FUNC VOID DIA_BAU_1_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_BAU_1_EXIT_01_00"); //Saftiges Korn solle auf deinen Feldern wachsen.
+	AI_Output(self, hero, "DIA_BAU_1_EXIT_01_00"); //Na polach rosna soczyste ziarna.
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_BAU_1_JOIN(C_INFO)
 	condition	= DIA_BAU_1_JOIN_Condition;
 	information	= DIA_BAU_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mehr über die Söldner wissen.";
+	description = "Chce wiedziec wiecej o najemnikach.";
 };                       
 
 FUNC INT DIA_BAU_1_JOIN_Condition()
@@ -44,10 +44,10 @@ FUNC INT DIA_BAU_1_JOIN_Condition()
 
 FUNC VOID DIA_BAU_1_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_1_JOIN_15_00"); //Ich will mehr über die Söldner wissen.
-	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_01"); //Ich kann dir nur raten, einen Bogen um die zu machen.
-	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_02"); //Wenn einem von ihnen dein Gesicht nicht gefällt, kann es sein, dass er dir mal eben eins auf die Nase gibt.
-	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_03"); //Du kannst dich zwar hinterher bei Lares beschweren, aber davon wird deine Nase auch nicht wieder gerade.
+	AI_Output (hero, self, "DIA_BAU_1_JOIN_15_00"); //Chce wiedziec wiecej o najemnikach.
+	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_01"); //Moge tylko doradzic, abys trzymal sie z dala od nich.
+	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_02"); //Jesli którys z nich nie lubi Twojej twarzy, moze dac Ci jedna na nosie.
+	AI_Output (self, hero, "DIA_BAU_1_JOIN_01_03"); //Mozesz zlozyc skarge do Lares pózniej, ale nie wyprostuje nosa.
 };
 
 // *************************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_BAU_1_PEOPLE(C_INFO)
 	condition	= DIA_BAU_1_PEOPLE_Condition;
 	information	= DIA_BAU_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT DIA_BAU_1_PEOPLE_Condition()
@@ -72,8 +72,8 @@ FUNC INT DIA_BAU_1_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_1_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_1_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, hero, "DIA_BAU_1_PEOPLE_01_01"); //Das hier ist Onars Hof. Er bestimmt über alles, was hier passiert.
+	AI_Output (hero, self, "DIA_BAU_1_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output (self, hero, "DIA_BAU_1_PEOPLE_01_01"); //Jest to gospodarstwo w Onar. rzadzi wszystkim, co sie tu dzieje.
 };
 
 // *************************************************************************
@@ -85,7 +85,7 @@ INSTANCE DIA_BAU_1_LOCATION(C_INFO)
 	condition	= DIA_BAU_1_LOCATION_Condition;
 	information	= DIA_BAU_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was gibt es so alles es hier in der Gegend?";
+	description = "O co tu chodzi?";
 };                       
 
 FUNC INT DIA_BAU_1_LOCATION_Condition()
@@ -98,10 +98,10 @@ FUNC INT DIA_BAU_1_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_1_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_1_LOCATION_15_00"); //Was gibt es so alles es hier in der Gegend?
-	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_01"); //Nur Felder und Höfe. Und jede Menge Söldner. Aber die sind fast alle im Osten auf Onars Hof eben.
-	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_02"); //Im Norden ist Sekobs Hof.
-	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_03"); //Und im Südwesten ist der Aufgang zu Bengars Hof.
+	AI_Output (hero, self, "DIA_BAU_1_LOCATION_15_00"); //O co tu chodzi?
+	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_01"); //Tylko pola i gospodarstwa rolne. I mnóstwo najemników. Ale na farmie Onar sa one prawie wszedzie na wschodzie.
+	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_02"); //Na pólnocy znajduje sie plac Sekobs.
+	AI_Output (self, hero, "DIA_BAU_1_LOCATION_01_03"); //A na poludniowym zachodzie schody do gospodarstwa Bengaru.
 };
 
 INSTANCE Info_Mod_BAU_1_Pickpocket (C_INFO)

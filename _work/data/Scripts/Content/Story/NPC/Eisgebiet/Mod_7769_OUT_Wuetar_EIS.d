@@ -1,7 +1,7 @@
 instance Mod_7769_OUT_Wuetar_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wütar"; 
+	name 		= "wscieklosc"; 
 	guild 		= GIL_OUT;
 	id 			= 7769;
 	voice 		= 4;

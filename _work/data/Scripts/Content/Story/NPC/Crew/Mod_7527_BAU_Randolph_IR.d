@@ -1,7 +1,7 @@
 instance Mod_7527_BAU_Randolph_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Randolph";
+	name 		= "Randolf";
 	guild 		= GIL_DMT;
 	id 			= 7527;
 	voice 		= 6;

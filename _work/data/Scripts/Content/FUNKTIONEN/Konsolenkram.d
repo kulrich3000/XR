@@ -84,11 +84,11 @@ func void ProcessCommand(var string command) {
     if (Hlp_StrCmp ("XCT", LLX_Tok)) {
         /* xct myfunction */
         if(!LLX_Next()) {
-            Print("Which script function should I execute?");
+            Print("Jaka funkcje skryptu powinienem wykonac?");
             return;
         };
         
-        msg = ConcatStrings("Calling: ", LLX_Tok);
+        msg = ConcatStrings("Dzwonienie: ", LLX_Tok);
         PrintDebug(msg);
         Print(msg);
         MEM_CallByString(LLX_Tok);
@@ -110,9 +110,9 @@ func void ProcessCommand(var string command) {
         
         if (!succ) {
             if (putting) {
-                Print("Usage example: 'put myVar 42'");
+                Print("Przyklad zastosowania:'podac myVar 42'.");
             } else {
-                Print("Usage example: 'peek myVar'");
+                Print("Przyklad zastosowania:'zajrzyj do myVar'.");
             };
             return;
         };
@@ -122,7 +122,7 @@ func void ProcessCommand(var string command) {
         ptr = MEM_GetParserSymbol(variable);
         
         if (!ptr) {
-            Print("Variable not found.");
+            Print("Zmienna nie wystepuje.");
             return;
         };
         sym = MEM_PtrToInst (ptr);
@@ -132,12 +132,12 @@ func void ProcessCommand(var string command) {
         
         if (type != zPAR_TYPE_INT)
         && (type != zPAR_TYPE_STRING) {
-            Print("Only string and integer variables supported!");
+            Print("Obslugiwane sa tylko zmienne lancuchowe i calkowite!");
             return;
         };
         
         if ((sym.bitfield & zCPar_Symbol_bitfield_ele) != 1) {
-            Print("Arrays currently not supported!");
+            Print("Matryce obecnie nie sa obslugiwane!");
             return;
         };
         
@@ -147,14 +147,14 @@ func void ProcessCommand(var string command) {
                 IntVal = STR_ToInt(value);
                 
                 if (!Hlp_StrCmp(IntToString(IntVal), value)) {
-                    Print("String to Int conversion failed.");
+                    Print("Nie udalo sie przekonwertowac lancucha do Int.");
                     return;
                 };
                 
                 sym.content = IntVal;
-                Print("Done.");
+                Print("Gotowe.");
             } else {
-                msg = ConcatStrings("value of int ", variable);
+                msg = ConcatStrings("wartosc int ", variable);
                 msg = ConcatStrings(msg, " is: ");
                 msg = ConcatStrings(msg, IntToString(sym.content));
                 
@@ -165,10 +165,10 @@ func void ProcessCommand(var string command) {
             //type == zPAR_TYPE_STRING
             if (putting) {
                 MEM_WriteString(sym.content, value);
-                Print("Done.");
+                Print("Gotowe.");
             } else {
-                msg = ConcatStrings("value of string ", variable);
-                msg = ConcatStrings(msg, " is: '");
+                msg = ConcatStrings("wartosc lancucha ", variable);
+                msg = ConcatStrings(msg, " jest:'.");
                 msg = ConcatStrings(msg, MEM_ReadString(sym.content));
                 msg = ConcatStrings(msg, "'");
                 
@@ -181,7 +181,7 @@ func void ProcessCommand(var string command) {
         
         if (Hlp_StrCmp (LLX_Tok, "TOLD")) {
             if (!LLX_Next()) {
-                Print("Which Dialog (C_INFO) should I tell/untell?");
+                Print("Który dialog (C_INFO) powinienem powiedziec/wyjasnic?");
                 return;
             };
             
@@ -189,7 +189,7 @@ func void ProcessCommand(var string command) {
             ID = MEM_FindParserSymbol(LLX_Tok);
             
             if (ID == -1) {
-                Print("Dialog not found.");
+                Print("Dialog nie zostal znaleziony.");
                 return;
             };
             
@@ -201,12 +201,12 @@ func void ProcessCommand(var string command) {
             info = MEM_PtrToInst (CALL_RetValAsPtr());
             info.told = !info.told;
             
-            msg = ConcatStrings(LLX_Tok, " is now ");
+            msg = ConcatStrings(LLX_Tok, " teraz ");
             
             if (info.told) {
-                ConcatStrings(msg, "told.");
+                ConcatStrings(msg, "powiedziane.");
             } else {
-                ConcatStrings(msg, "not told.");
+                ConcatStrings(msg, "nie powiedziane.");
             };
             PrintDebug(msg);
             Print(msg);

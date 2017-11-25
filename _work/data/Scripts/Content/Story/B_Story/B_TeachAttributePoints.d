@@ -19,7 +19,7 @@ func int B_TeachAttributePoints (var C_NPC slf, var C_NPC oth, var int attrib, v
 	// ------ falscher Parameter ------
 	if (attrib!=ATR_STRENGTH) && (attrib!=ATR_DEXTERITY) && (attrib!=ATR_MANA_MAX)
 	{
-		Print ("*** ERROR: Wrong Parameter ***");
+		Print ("BLEDNOSC: Zly parametr ***");
 		return FALSE;
 	};
 	
@@ -81,7 +81,7 @@ func int B_TeachAttributePoints_New (var C_NPC slf, var C_NPC oth, var int attri
 	// ------ falscher Parameter ------
 	if (attrib!=ATR_STRENGTH) && (attrib!=ATR_DEXTERITY) && (attrib!=ATR_MANA_MAX)
 	{
-		Print ("*** ERROR: Wrong Parameter ***");
+		Print ("BLEDNOSC: Zly parametr ***");
 		return FALSE;
 	};
 	

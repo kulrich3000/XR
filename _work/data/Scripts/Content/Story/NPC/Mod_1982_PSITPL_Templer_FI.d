@@ -1,7 +1,7 @@
 instance Mod_1982_PSITPL_Templer_FI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fanatischer Templer"; 
+	name 		= "templariusz"; 
 	guild 		= GIL_DMT;
 	id 			= 1982;
 	voice 		= 1;

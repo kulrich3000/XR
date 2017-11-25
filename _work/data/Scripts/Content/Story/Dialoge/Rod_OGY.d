@@ -15,18 +15,18 @@ FUNC INT Info_Mod_Rod_OGY_Hi_Condition()
 
 FUNC VOID Info_Mod_Rod_OGY_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_00"); //Verdammt, endlich Verstärkung.
-	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_01"); //Was ist geschehen.
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_02"); //Was gibt es da noch zu fragen! Wir wurden von den untoten Bastarden eiskalt in einen Hinterhalt gelockt. Plötzlich Untote von allen Seiten.
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_03"); //Wir haben uns hier verschanzt, um auf Verstärkung zu warten.
-	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_04"); //Ja, da bin ich.
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_05"); //Und die anderen? Du bist ja wohl nicht der einzige ...
-	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_06"); //Nun, ähh ... doch.
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_07"); //Was?! Na, fantastisch ... Ne, man, ehe du nicht die beiden Jungs von draußen noch zur Unterstützung hereingeholt hast mach ich bestimmt keinen Schritt mehr.
-	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_08"); //Nun, wenn es denn nicht anders geht ...
-	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_09"); //Na dann beeil dich. Wir halten hier so lange die Stellung.
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_00"); //Damn wreszcie wzmocnienia.
+	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_01"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_02"); //Czego jeszcze trzeba zapytac! Zostalismy zasadzeni przez nieumarle dranie w zimnej krwi. Nagle nieumarli z kazdej strony.
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_03"); //Barykadowalismy sie tutaj w oczekiwaniu na wzmocnienia.
+	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_04"); //Tak, tam jestem.
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_05"); //A i inni? Nie jestes jedynym....
+	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_06"); //No cóz, uh.... ale.
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_07"); //Co? Cóz, fantastyczne.... Nah, czlowiek, dopóki nie przywiozles dwóch mezczyzn z zewnatrz, aby mnie wspierac, jestem pewien, ze jak pieklo nie zrobi kolejnego kroku.
+	AI_Output(hero, self, "Info_Mod_Rod_OGY_Hi_15_08"); //No cóz, jesli nie ma innej drogi.....
+	AI_Output(self, hero, "Info_Mod_Rod_OGY_Hi_06_09"); //Cóz, spieszyc sie. Bedziemy sie tu trzymac jak najdluzej.
 
-	B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Die Überlebenden im Orkfriedhof haben mich darum gebeten, die Orkjäger vor dem Eingang zur Unterstützung heranzuziehen.");
+	B_LogEntry	(TOPIC_MOD_SLD_FRIEDHOF, "Ocalale osoby na Cmentarzu Lukowym poprosily mnie, abym zadzwonil do lowców luków na wejscie.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Rod_OGY_GetZombie (C_INFO)
 	information	= Info_Mod_Rod_OGY_GetZombie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tja, sieht schlecht aus, was die Unterstützung betrifft.";
+	description	= "No cóz, zle wyglada na wsparcie.";
 };
 
 FUNC INT Info_Mod_Rod_OGY_GetZombie_Condition()
@@ -52,7 +52,7 @@ FUNC INT Info_Mod_Rod_OGY_GetZombie_Condition()
 
 FUNC VOID Info_Mod_Rod_OGY_GetZombie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rod_OGY_GetZombie_15_00"); //Tja, sieht schlecht aus, was die Unterstützung betrifft.
+	AI_Output(hero, self, "Info_Mod_Rod_OGY_GetZombie_15_00"); //No cóz, zle wyglada na wsparcie.
 
 	AI_StopProcessInfos	(self);
 };

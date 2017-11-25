@@ -1,7 +1,7 @@
 instance Mod_1200_SLD_Soeldner_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hock"; 
+	name 		= "kucac"; 
 	guild 		= GIL_mil;
 	id 			= 1200;
 	voice 		= 34;

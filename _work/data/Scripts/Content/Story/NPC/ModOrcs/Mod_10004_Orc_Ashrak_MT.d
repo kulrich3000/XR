@@ -1,7 +1,7 @@
 INSTANCE Mod_10004_Orc_Ashrak_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ashrak";
+	name							=	"Aszrak";
 	guild							=	GIL_ORC;
 	id			= 	10004;
 	voice							=	18;

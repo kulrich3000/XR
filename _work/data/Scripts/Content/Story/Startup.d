@@ -2167,7 +2167,7 @@ FUNC VOID STARTUP_NewWorld_Part_Forest_01 ()
 
 FUNC VOID INIT_NewWorld_Part_Forest_01 ()
 {
-	Wld_AssignRoomToNpc	("forestherberge01",	Mod_776_NONE_Orlan_NW);
+	Wld_AssignRoomToNpc	("schronisko",	Mod_776_NONE_Orlan_NW);
 	
 	Wld_AssignRoomToGuild ("XRNWHOEHLE01",	GIL_PUBLIC);
 };
@@ -2404,7 +2404,7 @@ FUNC VOID STARTUP_NewWorld()
 
 FUNC VOID INIT_NewWorld()
 {
-	Spine_OverallSaveSetInt("KhorinisVisited", 1);
+	Spine_OverallSaveSetInt("KhorinisVisWisKhorinis", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Dragomir_BurnedLager))
@@ -3061,7 +3061,7 @@ FUNC VOID STARTUP_AddonWorld ()
 
 FUNC VOID INIT_AddonWorld ()
 {
-	Spine_OverallSaveSetInt("JharkendarVisited", 1);
+	Spine_OverallSaveSetInt("JharkendarWisly", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_XeresLebt))
@@ -5719,7 +5719,7 @@ FUNC VOID STARTUP_Minental ()
 
 FUNC VOID INIT_Minental ()
 {
-	Spine_OverallSaveSetInt("MinentalVisited", 1);
+	Spine_OverallSaveSetInt("Minentalna wizytacja", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Morgens
@@ -6591,7 +6591,7 @@ FUNC VOID STARTUP_OrcTempel ()
 
 FUNC VOID INIT_OrcTempel ()
 {
-	Spine_OverallSaveSetInt("OrctempelVisited", 1);
+	Spine_OverallSaveSetInt("OrctempelVis", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Rat_Ende))
@@ -6668,7 +6668,7 @@ FUNC VOID STARTUP_AbandonedMine ()
 
 FUNC VOID INIT_AbandonedMine ()
 {
-	Spine_OverallSaveSetInt("AbandonedMineVisited", 1);
+	Spine_OverallSaveSetInt("KontynuacjaMineVisited.", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(ABANDONEDMINE_ZEN);
@@ -6771,7 +6771,7 @@ FUNC VOID STARTUP_OldMine ()
 
 FUNC VOID INIT_OldMine ()
 {
-	Spine_OverallSaveSetInt("OldMineVisited", 1);
+	Spine_OverallSaveSetInt("StaromineVizowana", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(OLDMINE_ZEN);
@@ -6991,7 +6991,7 @@ FUNC VOID STARTUP_FreeMine()
 
 FUNC VOID INIT_FreeMine()
 {
-	Spine_OverallSaveSetInt("FreeMineVisited", 1);
+	Spine_OverallSaveSetInt("FreeMineVeit", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(FREEMINE_ZEN);
@@ -7038,7 +7038,7 @@ var int Monster_GDG_Spawned;
 
 FUNC VOID INIT_GdG_World()
 {
-	Spine_OverallSaveSetInt("RitualinselVisited", 1);
+	Spine_OverallSaveSetInt("Rytualowa wyspaVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Monster_GDG_Spawned == FALSE)
@@ -7125,7 +7125,7 @@ FUNC VOID STARTUP_DieInsel()
 
 FUNC VOID INIT_DieInsel()
 {
-	Spine_OverallSaveSetInt("SchatzinselVisited", 1);
+	Spine_OverallSaveSetInt("Skarb WyspaVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DIEINSEL_ZEN);
@@ -7269,7 +7269,7 @@ FUNC VOID STARTUP_Xeres_Endlevel()
 
 FUNC VOID INIT_Xeres_Endlevel()
 {
-	Spine_OverallSaveSetInt("XeresFortressVisited", 1);
+	Spine_OverallSaveSetInt("XeresFortressVis", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(XERESWELT_ZEN);
@@ -7454,7 +7454,7 @@ FUNC VOID STARTUP_DragonIsland()
 
 FUNC VOID INIT_DragonIsland()
 {
-	Spine_OverallSaveSetInt("IrdorathVisited", 1);
+	Spine_OverallSaveSetInt("IrdorathVis", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DRAGONISLAND_ZEN); 
@@ -7887,7 +7887,7 @@ FUNC VOID INIT_FEUERMAGIER_UNTERGRUND()
 
 	if (Npc_HasItems(hero, ItMi_TeleportStein) == 0)
 	{
-		AI_PrintScreen	("Teleportstein erhalten!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 5);
+		AI_PrintScreen	("Otrzymany kamien Teleportowy!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 5);
 
 		CreateInvItems	(hero, ItMi_TeleportStein, 1);
 	};
@@ -7932,7 +7932,7 @@ FUNC VOID STARTUP_PATHERION()
 
 FUNC VOID INIT_PATHERION()
 {
-	Spine_OverallSaveSetInt("PatherionVisited", 1);
+	Spine_OverallSaveSetInt("PatherionVischew", 1);
 	CheckWorldTravelerAchievement();
 	
 	INIT_FEUERMAGIER_SURFACE();
@@ -7953,7 +7953,7 @@ FUNC VOID INIT_PATHERION()
 	}
 	else
 	{
-		Mod_1771_KDF_Aaron_PAT.name		= "Garan";
+		Mod_1771_KDF_Aaron_PAT.name		= "gwarancja";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fuego_Unruhen))
@@ -8110,7 +8110,7 @@ FUNC VOID STARTUP_Bergwelt()
 
 FUNC VOID INIT_Bergwelt()
 {
-	Spine_OverallSaveSetInt("BergweltVisited", 1);
+	Spine_OverallSaveSetInt("Swiat GórskiWysokoWyswietlone", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(BERGWELT_ZEN); 
@@ -8177,7 +8177,7 @@ FUNC VOID STARTUP_Tugettso()
 
 FUNC VOID INIT_Tugettso()
 {
-	Spine_OverallSaveSetInt("TugettsoVisited", 1);
+	Spine_OverallSaveSetInt("CugettsoVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Thorge_KommMit))
@@ -8295,7 +8295,7 @@ FUNC VOID STARTUP_Eisgebiet()
 
 FUNC VOID INIT_Eisgebiet()
 {
-	Spine_OverallSaveSetInt("GelatoVisited", 1);
+	Spine_OverallSaveSetInt("GelatoVisische", 1);
 	CheckWorldTravelerAchievement();
 	
 	//---Laternen---
@@ -8355,7 +8355,7 @@ FUNC VOID INIT_Eisgebiet()
 	{
 		Mod_RattenQuest = 4;
 
-		B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Bisher ist das wohl das kälteste Gebiet. Mal sehen ob hier irgend jemand was über die Ratten weiß.");
+		B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Jest to prawdopodobnie najzimniejszy obszar do tej pory. Zobaczmy, czy ktokolwiek tutaj wie cos o szczurach.");
 	};
 };
 
@@ -8731,7 +8731,7 @@ FUNC VOID STARTUP_Relendel()
 
 FUNC VOID INIT_Relendel()
 {
-	Spine_OverallSaveSetInt("RelendelVisited", 1);
+	Spine_OverallSaveSetInt("Wizytowany", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Laternen in der Stadt
@@ -9094,7 +9094,7 @@ FUNC VOID STARTUP_Wolkenwelt()
 
 FUNC VOID INIT_Wolkenwelt()
 {
-	Spine_OverallSaveSetInt("CloudWorldVisited", 1);
+	Spine_OverallSaveSetInt("CloudWorldWorldVis", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(WOLKENWELT_ZEN);
@@ -9131,7 +9131,7 @@ FUNC VOID STARTUP_Halluzination()
 
 FUNC VOID INIT_Halluzination()
 {
-	Spine_OverallSaveSetInt("HalluzinationVisited", 1);
+	Spine_OverallSaveSetInt("HallucynacjaWyswietlone", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(HALLUZINATION_ZEN);
@@ -9174,7 +9174,7 @@ FUNC VOID STARTUP_Wald_Schlucht()
 
 FUNC VOID INIT_Wald_Schlucht()
 {
-	Spine_OverallSaveSetInt("WaldschluchtVisited", 1);
+	Spine_OverallSaveSetInt("Wawóz lesny Odwiedzony", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(WALDSCHLUCHT_ZEN);
@@ -9211,7 +9211,7 @@ FUNC VOID STARTUP_Drachental()
 
 FUNC VOID INIT_Drachental()
 {
-	Spine_OverallSaveSetInt("DrachentalVisited", 1);
+	Spine_OverallSaveSetInt("DragonVisit", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DRACHENTAL_ZEN);
@@ -9259,7 +9259,7 @@ FUNC VOID STARTUP_Relendel_Mine()
 
 FUNC VOID INIT_Relendel_Mine()
 {
-	Spine_OverallSaveSetInt("RelendelMineVisited", 1);
+	Spine_OverallSaveSetInt("RelendelMineVis", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(RELENDELMINE_ZEN);

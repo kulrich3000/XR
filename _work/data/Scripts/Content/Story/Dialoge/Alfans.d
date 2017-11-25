@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Alfans_Hi_Condition()
 
 FUNC VOID Info_Mod_Alfans_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_00"); //Hallo Fremder. Du scheinst von weit weg zu kommen.
-	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_01"); //Wenn du nach Lebensmitteln und Kräutern suchst, so soll es dir bei mir an nichts fehlen.
-	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_02"); //Ich habe eine ausgezeichnete Auswahl an allem, was den Körper belebt und ihm Linderung von Leid verschafft.
+	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_00"); //Witaj nieznajomego. Wyglada na to, ze przychodzi pan z daleka.
+	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_01"); //Jesli szukasz jedzenia i ziól, nie bedziesz chcial niczego.
+	AI_Output(self, hero, "Info_Mod_Alfans_Hi_01_02"); //Mam doskonaly wybór wszystkiego, co ozywia cialo i daje mu ulge w cierpieniu.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_EISGEBIET, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_EISGEBIET, "Bei Alfans bekomme ich Lebensmittel und Kräuter.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_EISGEBIET, "Alfans daje mi jedzenie i ziola.");
 
 	Npc_SetRefuseTalk (self, 300);
 };
@@ -46,22 +46,22 @@ FUNC INT Info_Mod_Alfans_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Alfans_Aufgabe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_00"); //Sei gegrüßt, da bist da ja wieder.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_01"); //Ich hätte ein Anliegen an dich und wäre überaus dankbar, wenn du mir dabei helfen könntest.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_02"); //Selbstverständlich würde ich dich auch entlohnen.
-	AI_Output(hero, self, "Info_Mod_Alfans_Aufgabe_15_03"); //Worum geht es.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_04"); //Nun, ich wandte mich an dich, da du von weit her kommst und somit bewiesen hast, dass du ein exzellenter Fährtensucher bist und den Gefahren der Wildnis trotzen kannst.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_05"); //Es geht um den Einsiedler Halfmar. Bislang kam er selten, jedoch regelmäßig ins unser Dorf und überbrachte mir Kräuter und Pflanzen welche er in der Wildnis fand.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_06"); //Sein letzter Besuch liegt jedoch weit länger zurück, als es üblich ist.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_07"); //Und ich beginne mir Sorgen zu machen ... (nachgeschoben) selbstverständlich nicht nur meiner Waren wegen.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_08"); //Er lebt fernab von hier im Südwesten. Ich wäre dir über die Maßen dankbar, wenn du nach dem Rechten sehen könntest.
-	AI_Output(hero, self, "Info_Mod_Alfans_Aufgabe_15_09"); //Nun, ich schaue, was sich machen lässt.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_10"); //Hab Dank. Es soll dir auch nicht zum Nachteil gedeihen.
-	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_11"); //Wenn du den Gleisen folgst, kommst du irgendwann an seiner Hütte vorbei.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_00"); //Powitania, tam znów jestescie.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_01"); //Mam dla Panstwa troske i bylbym bardzo wdzieczny, gdybyscie mogli mi panstwo w tym pomóc.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_02"); //Oczywiscie, ja równiez wam zaplate.
+	AI_Output(hero, self, "Info_Mod_Alfans_Aufgabe_15_03"); //Jaki jest cel?
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_04"); //Cóz, zwrócilam sie do Ciebie, poniewaz przebyles dluga droge, udowadniajac, ze jestes doskonalym trackerem i mozesz przeciwstawic sie niebezpieczenstwom zwiazanym z dzika przyroda.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_05"); //Chodzi o pustelnika Halfmara. Do tej pory rzadko przyjezdzal, ale regularnie do naszej wioski i przynosil mi ziola i rosliny, które znalazl na pustyni.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_06"); //Ostatnia wizyta byla jednak znacznie dluzsza niz zwykle.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_07"); //I zaczynam sie martwic.... (odroczona) oczywiscie nie tylko z powodu moich towarów.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_08"); //Zyje daleko stad na poludniowym zachodzie. Bylbym bardzo wdzieczny, gdybyscie mogli to zobaczyc.
+	AI_Output(hero, self, "Info_Mod_Alfans_Aufgabe_15_09"); //Zobacze, co moge zrobic.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_10"); //Doceniam to. Nie chce, aby to równiez bylo na Twoja niekorzysc.
+	AI_Output(self, hero, "Info_Mod_Alfans_Aufgabe_01_11"); //Jesli idziesz sladami, to w pewnym momencie przechodzisz obok jego kabiny.
 
 	Log_CreateTopic	(TOPIC_MOD_ALFANS_HALFMAR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ALFANS_HALFMAR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Alfans bat mich darum nach dem Einsiedler Halfmar im Süden zu sehen. Dieser bringt Alfans für gewöhnlich Kräuter und Pflanzen, die er in der Wildnis findet. Sein letzter Besuch steht jedoch schon lange aus. Ich finde seine Hütte im Südwesten. Wenn ich den Gleisen folge, kann ich sie angeblich nicht verfehlen.");
+	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Alfans poprosil mnie, abym szukal pustelnika Halfmara na poludniu. Zazwyczaj przynosi Alfansowi ziola i rosliny, które znajduje na pustyni. Jego ostatnia wizyta byla jednak juz dawno spózniona. Znajduje jego kabine na poludniowym zachodzie. Jesli podazam za utworami, nie moge ich pominac.");
 
 	Mod_AlfansQuest_Tag = Wld_GetDay();
 };
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_Alfans_Halfmar (C_INFO)
 	information	= Info_Mod_Alfans_Halfmar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei Halfmar.";
+	description	= "Bylem u Halfmara.";
 };
 
 FUNC INT Info_Mod_Alfans_Halfmar_Condition()
@@ -87,12 +87,12 @@ FUNC INT Info_Mod_Alfans_Halfmar_Condition()
 
 FUNC VOID Info_Mod_Alfans_Halfmar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_00"); //Ich war bei Halfmar.
-	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_01"); //Und, was ist mit ihm?
-	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_02"); //Er war erkrankt, ist jetzt jedoch auf dem Weg der Besserung.
-	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_03"); //In den nächsten Tagen sollte er dich besuchen.
-	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_04"); //Ahh, sehr gut. Vielen Dank für die erfreuliche Nachricht.
-	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_05"); //Und hier die versprochene Belohnung. Such dir einen Trank aus.
+	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_00"); //Bylem u Halfmara.
+	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_01"); //No cóz, co z nim?
+	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_02"); //Byl chory, ale teraz jest na drodze do powrotu do zdrowia.
+	AI_Output(hero, self, "Info_Mod_Alfans_Halfmar_15_03"); //Powinien cie odwiedzic w ciagu najblizszych kilku dni.
+	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_04"); //Ahh, bardzo dobry. Dziekuje za dobra wiadomosc.
+	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_01_05"); //I tu obiecana nagroda. Wybierz eliksir.
 
 	B_SetTopicStatus	(TOPIC_MOD_ALFANS_HALFMAR, LOG_SUCCESS);
 
@@ -102,14 +102,14 @@ FUNC VOID Info_Mod_Alfans_Halfmar_Info()
 
 	Info_ClearChoices	(Info_Mod_Alfans_Halfmar);
 
-	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(Elixier des Geistes)", Info_Mod_Alfans_Halfmar_C);
-	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(Trank des Geschicks)", Info_Mod_Alfans_Halfmar_B);
-	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(Trank der Stärke)", Info_Mod_Alfans_Halfmar_A);
+	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(Eliksir Ducha Swietego)", Info_Mod_Alfans_Halfmar_C);
+	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(pojadaj majatek)", Info_Mod_Alfans_Halfmar_B);
+	Info_AddChoice	(Info_Mod_Alfans_Halfmar, "(ziarna skrobiowe)", Info_Mod_Alfans_Halfmar_A);
 };
 
 FUNC VOID Info_Mod_Alfans_Halfmar_Fertig()
 {
-	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_Fertig_01_00"); //Es war mir eine Freude. Ich hoffe, wir sehen uns bald wieder.
+	AI_Output(self, hero, "Info_Mod_Alfans_Halfmar_Fertig_01_00"); //To byla przyjemnosc. Mam nadzieje, ze wkrótce do pana dojdzie.
 
 	Info_ClearChoices	(Info_Mod_Alfans_Halfmar);
 };

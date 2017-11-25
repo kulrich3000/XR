@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Paul_Hi (C_INFO)
 	information	= Info_Mod_Paul_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Paul ...";
+	description	= "Witaj Pawel.....";
 };
 
 FUNC INT Info_Mod_Paul_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Paul_Hi_Condition()
 
 FUNC VOID Info_Mod_Paul_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_00"); //Hallo Paul ...
+	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_00"); //Witaj Pawel.....
 	AI_Output(self, hero, "Info_Mod_Paul_Hi_01_01"); //...
-	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_02"); //Hmm ...
+	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_02"); //Hmm.....
 	AI_Output(self, hero, "Info_Mod_Paul_Hi_01_01"); //...
-	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_03"); //... wohl nicht sehr gesprächig heute.
+	AI_Output(hero, self, "Info_Mod_Paul_Hi_15_03"); //... nie jest dzis zbyt wygloszony.
 };
 
 INSTANCE Info_Mod_Paul_EXIT (C_INFO)

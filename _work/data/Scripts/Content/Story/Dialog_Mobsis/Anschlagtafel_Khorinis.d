@@ -18,7 +18,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Baltram (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Baltram_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Baltram nehmen";
+	description	= "Zatrzymac sie przez Baltram";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Baltram_Condition()
@@ -50,13 +50,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	Mod_Anschlagtafel_Khorinis_Baltram_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Baltram braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Baltram: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Milch = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Milch)), " Milch, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Milch)), " Mleko, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Milch*Value_Milk;
 	};
@@ -64,7 +64,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Kaese = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kaese)), " Käse, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kaese)), " Ser, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Kaese*Value_Cheese;
 	};
@@ -72,7 +72,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Brot = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Brot)), " Brote, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Brot)), " Chleby, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Brot*Value_Bread;
 	};
@@ -80,7 +80,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Wasser = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wasser)), " Wasser, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wasser)), " Woda, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Wasser*Value_Water;
 	};
@@ -88,7 +88,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Bier = 6+Hlp_Random(7);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Bier)), " Bier, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Bier)), " Piwo, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Bier*Value_Beer;
 	};
@@ -96,7 +96,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Wacholder = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wacholder)), " Wacholder, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wacholder)), " Jalowiec, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Wacholder*Value_Booze;
 	};
@@ -104,7 +104,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Wein = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wein)), " Wein, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wein)), " Wino, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Wein*Value_Wine;
 	};
@@ -112,7 +112,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Wurst = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wurst)), " Würste, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Wurst)), " Kielbasy, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Wurst*Value_Sausage;
 	};
@@ -136,7 +136,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis = 3+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis)), " Kürbisse, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis)), " Dynie, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Kuerbis*30;
 	};
@@ -144,14 +144,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Baltram_Melone = 2+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Melone)), " Melonen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Melone)), " Melony, ");
 
 		Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Melone*10;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Baltram_Fleisch = 10+Hlp_Random(11);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Fleisch)), " rohes Fleisch");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Baltram_Fleisch)), " surowe mieso");
 
 	Mod_Anschlagtafel_Khorinis_Baltram_Gold += Mod_Anschlagtafel_Khorinis_Baltram_Fleisch;
 
@@ -166,7 +166,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Baltram_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Baltram, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Bosper (C_INFO)
@@ -177,7 +177,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Bosper (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Bosper_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Bosper nehmen";
+	description	= "Wezmy atak Bosper' s";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Bosper_Condition()
@@ -206,7 +206,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	Mod_Anschlagtafel_Khorinis_Bosper_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Bosper braucht: ";
+	Anschlagtafel_Khorinis_Text = "Zapotrzebowanie na piwo: ";
 
 	if (r_max(99) < 70)
 	{
@@ -220,7 +220,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Zaehne = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Zaehne)), " Zähne, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Zaehne)), " Zeby, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Zaehne*Value_Teeth;
 	};
@@ -228,7 +228,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Krallen = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Krallen)), " Krallen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Krallen)), " Szczypce, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Krallen*Value_Claw;
 	};
@@ -236,7 +236,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Wargfell = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wargfell)), " Wargfelle, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Wargfell)), " Skóry ostrzegawcze, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Wargfell*Value_WargFur;
 	};
@@ -244,7 +244,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell)), " Schattenläuferfelle, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell)), " Skóry biegnace w cieniu, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferfell*Value_ShadowFur;
 	};
@@ -252,7 +252,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut)), " Reptilienhäute, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut)), " Skóry gadów, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Reptilienhaut*Value_ReptileSkin;
 	};
@@ -260,7 +260,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Trollfell = 1+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Trollfell)), " Trollfell, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Trollfell)), " Skóra zwijaj, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Trollfell*Value_TrollFur;
 	};
@@ -268,7 +268,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte)), " Minecrawlerplatten, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte)), " Plyty Minecrawler, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Minecrawlerplatte*Value_CrawlerPlate;
 	};
@@ -276,14 +276,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn)), " Schattenläuferhörner, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn)), " Róg cienia, ");
 
 		Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Schattenlaeuferhorn*Value_ShadowHorn;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Bosper_Ast = 20+Hlp_Random(21);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Ast)), " Äste");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Bosper_Ast)), " branze");
 
 	Mod_Anschlagtafel_Khorinis_Bosper_Gold += Mod_Anschlagtafel_Khorinis_Bosper_Ast;
 
@@ -298,7 +298,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Bosper_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Bosper, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Constantino (C_INFO)
@@ -309,7 +309,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Constantino (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Constantino_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Constantino nehmen";
+	description	= "Próba zamachu na Konstantyn.";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Constantino_Condition()
@@ -343,13 +343,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	Mod_Anschlagtafel_Khorinis_Constantino_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Constantino braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeba Constantino: ";
 
 	if (r_max(99) < 50)
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Feuernessel = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuernessel)), " Feuernesseln, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuernessel)), " Pokrzywy ogniowe, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Feuernessel*Value_Mana_Herb_01;
 	};
@@ -357,7 +357,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Blauflieder = 15+Hlp_Random(16);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Blauflieder)), " Blauflieder, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Blauflieder)), " Niebieskie piosenki, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Blauflieder*Value_Blueplant;
 	};
@@ -365,7 +365,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Flasche = 20+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Flasche)), " Laborwasserflaschen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Flasche)), " Butelki z woda laboratoryjna, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Flasche*Value_Flask;
 	};
@@ -373,7 +373,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut)), " Heilkräuter, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut)), " Ziola lecznicze, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Heilkraut*Value_Health_Herb_02;
 	};
@@ -381,7 +381,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel)), " Heilwurzeln, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel)), " Korzenie lecznicze, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Heilwurzel*Value_Health_Herb_03;
 	};
@@ -389,7 +389,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Feuerkraut = 7+Hlp_Random(9);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerkraut)), " Feuerkraut, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerkraut)), " Straz pozarna, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Feuerkraut*Value_Mana_Herb_02;
 	};
@@ -397,7 +397,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel = 3+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel)), " Feuerwurzeln, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel)), " Korzenie ognia, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Feuerwurzel*Value_Mana_Herb_03;
 	};
@@ -405,7 +405,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Feldknoeterich = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feldknoeterich)), " Feldknöterich, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Feldknoeterich)), " Chwast wezlowy, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Feldknoeterich*Value_Temp_Herb;
 	};
@@ -413,7 +413,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Buddlerfleisch = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Buddlerfleisch)), " Buddlerfleisch, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Buddlerfleisch)), " Mieso buddlera, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Buddlerfleisch*Value_Mushroom_02;
 	};
@@ -421,7 +421,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz)), " Dunkelpilze, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz)), " Grzyby ciemne, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Dunkelpilz*Value_Mushroom_01;
 	};
@@ -429,7 +429,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz)), " Fliegenpilze, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz)), " Plynny agaryk, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Fliegenpilz*Value_Mushroom_01;
 	};
@@ -437,7 +437,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Sumpfkraut = 8+Hlp_Random(9);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Sumpfkraut)), " Sumpfkraut, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Sumpfkraut)), " Chwast bagienny, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Sumpfkraut*Value_SwampHerb;
 	};
@@ -445,7 +445,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Heilknospe = 1+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilknospe)), " Heilknospe, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilknospe)), " Goracy bud, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Heilknospe*100;
 	};
@@ -453,14 +453,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Constantino_Unkraut = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Unkraut)), " Unkräuter, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Unkraut)), " Chwasty, ");
 
 		Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Unkraut*Value_Weed;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze = 20+Hlp_Random(21);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze)), " Heilpflanzen");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze)), " rosliny lecznicze");
 
 	Mod_Anschlagtafel_Khorinis_Constantino_Gold += Mod_Anschlagtafel_Khorinis_Constantino_Heilpflanze*Value_Health_Herb_01;
 
@@ -475,7 +475,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Constantino_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Constantino, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Hakon (C_INFO)
@@ -486,7 +486,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Hakon (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Hakon_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Hakon nehmen";
+	description	= "Zatrzymac sie przez Hakon.";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Hakon_Condition()
@@ -512,13 +512,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	Mod_Anschlagtafel_Khorinis_Hakon_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Hakon braucht: ";
+	Anschlagtafel_Khorinis_Text = "Hakon potrzebuje: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_MilizKurzchwert = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_MilizKurzchwert)), " Kurzschwert der Miliz, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_MilizKurzchwert)), " Krótki miecz milicji, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_MilizKurzchwert*Value_ShortSword1;
 	};
@@ -526,7 +526,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_Degen = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Degen)), " Degen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Degen)), " Epee, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_Degen*500;
 	};
@@ -534,7 +534,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_Kurzschwert = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Kurzschwert)), " Kurzschwert, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_Kurzschwert)), " Krótki miecz, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_Kurzschwert*Value_ShortSword3;
 	};
@@ -542,7 +542,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut)), " Amulett der Eichenhaut, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut)), " Debowy amulet skórny, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_AmulettEichenhaut*Value_Am_ProtPoint;
 	};
@@ -550,7 +550,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut)), " Ring der Eisenhaut, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut)), " Pierscien skóry zelaznej, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_RingEisenhaut*Value_Ri_ProtEdge;
 	};
@@ -558,7 +558,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Hakon_RingKraft = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingKraft)), " Ring der Kraft, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Hakon_RingKraft)), " Pierscien zasilania, ");
 
 		Mod_Anschlagtafel_Khorinis_Hakon_Gold += Mod_Anschlagtafel_Khorinis_Hakon_RingKraft*Value_Ri_Strg;
 	};
@@ -580,7 +580,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Hakon_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Hakon, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Harad (C_INFO)
@@ -591,7 +591,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Harad (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Harad_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Harad nehmen";
+	description	= "Wez przystanek Harada";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Harad_Condition()
@@ -618,13 +618,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	Mod_Anschlagtafel_Khorinis_Harad_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Harad braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Harada: ";
 
 	if (r_max(99) < 40)
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert = 1+Hlp_Random(10);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert)), " Rostige Schwerter, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert)), " zardzewiale miecze, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_RostigesSchwert*Value_MiscSword;
 	};
@@ -632,7 +632,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender = 1+Hlp_Random(10);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender)), " Rostige Zweihänder, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender)), " zardzewiale dwie rece, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_RostigerZweihaender*Value_Misc2hSword;
 	};
@@ -640,7 +640,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_Goldbrocken = 4+Hlp_Random(9);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Goldbrocken)), " Goldbrocken, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Goldbrocken)), " Kawalek zlota, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_Goldbrocken*Value_Goldnugget;
 	};
@@ -648,7 +648,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_Erzbrocken = 3+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Erzbrocken)), " Erzbrocken, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Erzbrocken)), " Rudne kawalki, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_Erzbrocken*Value_Nugget;
 	};
@@ -656,7 +656,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_Schmiedehammer = 1+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Schmiedehammer)), " Schmiedehammer, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Schmiedehammer)), " Mlotek kucia, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_Schmiedehammer*Value_Schmiedehammer;
 	};
@@ -664,7 +664,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_Zange = 1+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Zange)), " Zange, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Zange)), " Szczypce, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_Zange*Value_RuneBlank;
 	};
@@ -672,7 +672,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Harad_Schuerhaken = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Schuerhaken)), " Schürhaken, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Harad_Schuerhaken)), " Poker, ");
 
 		Mod_Anschlagtafel_Khorinis_Harad_Gold += Mod_Anschlagtafel_Khorinis_Harad_Schuerhaken*Value_Schuerhaken;
 	};
@@ -694,7 +694,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Harad_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Harad, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Ignaz (C_INFO)
@@ -705,7 +705,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Ignaz (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Ignaz_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Ignaz nehmen";
+	description	= "Wezmy zatrzymanie sie Ignacego";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Ignaz_Condition()
@@ -739,13 +739,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	Mod_Anschlagtafel_Khorinis_Ignaz_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Ignaz braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Ignaza: ";
 
 	if (r_max(99) < 40)
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Pech = 1+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Pech)), " Pech, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Pech)), " Zbyt zle, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Pech*Value_Pitch;
 	};
@@ -753,7 +753,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Kohle = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Kohle)), " Kohlen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Kohle)), " Wegiel, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Kohle*Value_Coal;
 	};
@@ -761,7 +761,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Quartz = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz)), " Gletscherquartz, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz)), " Kwarc lodowy, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Quartz*Value_Quartz;
 	};
@@ -769,7 +769,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall)), " Bergkristalle, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall)), " Skalne krysztaly, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall*Value_Rockcrystal;
 	};
@@ -785,7 +785,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel = 4+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel)), " Blutfliegenstachel, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel)), " Krew leci kregoslup, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel*Value_Sting;
 	};
@@ -793,7 +793,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen = 2+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen)), " Minecrawlerzangen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen)), " Szczegi do ciagników Minecrawler, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen*Value_CrawlerMandibles;
 	};
@@ -801,7 +801,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Spinnenzangen = 3+Hlp_Random(5);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Spinnenzangen)), " Spinnenzangen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Spinnenzangen)), " Szczypce krzyzowe, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Spinnenzangen*Value_CrawlerMandibles;
 	};
@@ -809,7 +809,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Feldraeuberzangen = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Feldraeuberzangen)), " Feldräuberzangen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Feldraeuberzangen)), " Szczypce zlodziejskie, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Feldraeuberzangen*Value_BugMandibles;
 	};
@@ -817,7 +817,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen = 3+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen)), " Goblinknochen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen)), " Kosci gobelinowe, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Goblinknochen*Value_GoblinBone;
 	};
@@ -825,7 +825,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen = 6+Hlp_Random(7);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen)), " Skelettknochen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen)), " Kosc szkieletowa, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Skelettknochen*Value_SkeletonBone;
 	};
@@ -833,7 +833,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber)), " Schlafzauber, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber)), " Uspij zaklecie, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Schlafzauber*Value_Sc_Sleep;
 	};
@@ -841,7 +841,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber)), " Vergessenszauber, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber)), " Zapomniany zaklecie, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Vergessenszauber*Value_Sc_Charm;
 	};
@@ -849,7 +849,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber)), " Angstzauber, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber)), " Strach przed zakleciem, ");
 
 		Mod_Anschlagtafel_Khorinis_Ignaz_Gold += Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber*Value_Sc_Fear;
 	};
@@ -871,7 +871,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Ignaz_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Ignaz, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Jora (C_INFO)
@@ -882,7 +882,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Jora (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Jora_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Jora nehmen";
+	description	= "podjecie próby zamachu na Jore";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Jora_Condition()
@@ -911,13 +911,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	Mod_Anschlagtafel_Khorinis_Jora_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Jora braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzebna Jora: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Bolzen = 50+Hlp_Random(51);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Bolzen)), " Bolzen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Bolzen)), " Sruby, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Bolzen;
 	};
@@ -925,7 +925,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen)), " Kurzbögen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen)), " Krótkie arkusze, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Kurzbogen*Value_Kurzbogen;
 	};
@@ -933,7 +933,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen)), " Weidenbögen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen)), " Luki wierzby, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Weidenbogen*Value_Weidenbogen;
 	};
@@ -941,7 +941,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Fackel = 10+Hlp_Random(11);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Fackel)), " Fackeln, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Fackel)), " Latarki, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Fackel*Value_Fackel;
 	};
@@ -949,7 +949,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke)), " Spitzhacken, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke)), " pickaxes, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Spitzhacke*50;
 	};
@@ -957,7 +957,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Laute = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Laute)), " Laute, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Laute)), " Wyciszone, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Laute*Value_Lute;
 	};
@@ -965,7 +965,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett)), " Harnischamulett, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett)), " Urok pancerza, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Harnischamulett*Value_Am_ProtEdge;
 	};
@@ -973,7 +973,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Klosterwein = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Klosterwein)), " Klosterwein, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Klosterwein)), " Wino klasztorne, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Klosterwein*(Value_Wine+5);
 	};
@@ -981,14 +981,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Jora_Schafswurst = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Schafswurst)), " Schafswürste, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Schafswurst)), " Kielbasy owcze, ");
 
 		Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Schafswurst*Value_Sausage;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Jora_Pfeil = 50+Hlp_Random(51);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Pfeil)), " Pfeile");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Jora_Pfeil)), " rzutki");
 
 	Mod_Anschlagtafel_Khorinis_Jora_Gold += Mod_Anschlagtafel_Khorinis_Jora_Pfeil;
 
@@ -1003,7 +1003,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Jora_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Jora, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Lobart (C_INFO)
@@ -1014,7 +1014,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Lobart (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Lobart_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Lobart nehmen";
+	description	= "Zatrzymac sie na Lobart.";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Lobart_Condition()
@@ -1042,13 +1042,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	Mod_Anschlagtafel_Khorinis_Lobart_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Lobart braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Lobart: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Sense = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sense)), " Sense, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sense)), " kosa, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Sense*1000;
 	};
@@ -1056,7 +1056,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_KleineSense = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_KleineSense)), " Kleine Sensen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_KleineSense)), " Male kosy, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_KleineSense*Value_Sense;
 	};
@@ -1064,7 +1064,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Rasiermesser = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Rasiermesser)), " Rasiermesser, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Rasiermesser)), " Razor, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Rasiermesser*25;
 	};
@@ -1072,7 +1072,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Pfanne = 1+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Pfanne)), " Pfanne, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Pfanne)), " Patelnia do smazenia, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Pfanne*Value_Pan;
 	};
@@ -1080,7 +1080,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Beil = 1+Hlp_Random(2);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Beil)), " Beil, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Beil)), " Hatchet, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Beil*Value_VLKAxe;
 	};
@@ -1088,7 +1088,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Kerze = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Kerze)), " Kerze, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Kerze)), " Swieca, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Kerze*Value_Stomper;
 	};
@@ -1104,14 +1104,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel)), " Kochlöffel, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel)), " Lyzka do gotowania, ");
 
 		Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Kochloeffel*Value_Scoop;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Lobart_Sichel = 4+Hlp_Random(5);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sichel)), " Sicheln");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lobart_Sichel)), " sierpy");
 
 	Mod_Anschlagtafel_Khorinis_Lobart_Gold += Mod_Anschlagtafel_Khorinis_Lobart_Sichel*Value_BauAxe;
 
@@ -1126,7 +1126,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lobart_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Lobart, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Lutero (C_INFO)
@@ -1137,7 +1137,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Lutero (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Lutero_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Lutero nehmen";
+	description	= "Zatrzymanie sie na przystanku Luteroro.";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Lutero_Condition()
@@ -1169,13 +1169,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	Mod_Anschlagtafel_Khorinis_Lutero_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Lutero braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Lutero: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch)), " Silberkelche, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch)), " Srebrne kubki, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Silberkelch*Value_SilverCup;
 	};
@@ -1183,7 +1183,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Silberteller = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberteller)), " Silberteller, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Silberteller)), " Srebrna plyta, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Silberteller*Value_SilverPlate;
 	};
@@ -1191,7 +1191,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_SilbernerKerzenstaender = 1+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_SilbernerKerzenstaender)), " Silberner Kerzenständer, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_SilbernerKerzenstaender)), " Srebrny uchwyt swiecowy, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_SilbernerKerzenstaender*Value_SilverCandleholder;
 	};
@@ -1215,7 +1215,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn)), " Drachensnapperhörner, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn)), " Smokowe rogi potrzaskowe, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Drachensnapperhorn*Value_DrgSnapperHorn;
 	};
@@ -1223,7 +1223,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn)), " Sumpfhaizähne, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn)), " Zeby rekina skokowego, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaizahn*Value_SharkTeeth;
 	};
@@ -1231,7 +1231,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut)), " Sumpfhaihäute, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut)), " Rekiny szarego, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Sumpfhaihaut*Value_SharkSkin;
 	};
@@ -1239,7 +1239,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett)), " Amulett der Flammen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett)), " Amulet plomieni, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_FlammenAmulett*Value_Am_ProtFire;
 	};
@@ -1255,7 +1255,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz)), " Steingolemherz, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz)), " Kamienne serce Golem, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Steingolemherz*Value_StoneGolemHeart;
 	};
@@ -1263,14 +1263,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz)), " Dämonenherz, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz)), " Serce demoniczne, ");
 
 		Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz*Value_DemonHeart;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Lutero_Goldring = 2+Hlp_Random(3);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldring)), " Goldringe");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Lutero_Goldring)), " zloto");
 
 	Mod_Anschlagtafel_Khorinis_Lutero_Gold += Mod_Anschlagtafel_Khorinis_Lutero_Goldring*Value_GoldRing;
 
@@ -1285,7 +1285,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Lutero_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Lutero, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Thorben (C_INFO)
@@ -1296,7 +1296,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Thorben (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Thorben_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Thorben nehmen";
+	description	= "Wez atak z Thorben.";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Thorben_Condition()
@@ -1323,13 +1323,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	Mod_Anschlagtafel_Khorinis_Thorben_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Thorben braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzebyhorbenu: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Ast = 30+Hlp_Random(31);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Ast)), " Äste, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Ast)), " Oddzialy, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Ast;
 	};
@@ -1337,7 +1337,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Beil = 1+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Beil)), " Beil, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Beil)), " Hatchet, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Beil*Value_VLKAxe;
 	};
@@ -1345,7 +1345,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Hammer = 3+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Hammer)), " Hämmer, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Hammer)), " Mloty mlotkowe, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Hammer*Value_Hammer;
 	};
@@ -1353,7 +1353,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst = 40+Hlp_Random(41);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst)), " schwere Äste, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst)), " ciezkie galezie, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_SchwererAst*10;
 	};
@@ -1361,7 +1361,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Dolch = 4+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Dolch)), " Dolche, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Dolch)), " Sztylety, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Dolch*Value_VLKDolch;
 	};
@@ -1369,7 +1369,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Besen = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Besen)), " Besen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Besen)), " Salon, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Besen*Value_Broom;
 	};
@@ -1377,14 +1377,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Thorben_Buerste = 1;
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Buerste)), " Bürsten, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Buerste)), " Szczotki, ");
 
 		Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Buerste*Value_Brush;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Thorben_Saege = 2+Hlp_Random(4);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Saege)), " Sägen");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Thorben_Saege)), " pily");
 
 	Mod_Anschlagtafel_Khorinis_Thorben_Gold += Mod_Anschlagtafel_Khorinis_Thorben_Saege*Value_Saw;
 
@@ -1399,7 +1399,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Thorben_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Thorben, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_Zuris (C_INFO)
@@ -1410,7 +1410,7 @@ INSTANCE PC_Anschlagtafel_Khorinis_Zuris (C_INFO)
 	information	= PC_Anschlagtafel_Khorinis_Zuris_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Anschlag von Zuris nehmen";
+	description	= "Wezmy napasc na Zurisa";
 };
 
 FUNC INT PC_Anschlagtafel_Khorinis_Zuris_Condition()
@@ -1438,13 +1438,13 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	Mod_Anschlagtafel_Khorinis_Zuris_Gold = 0;
 
 	var string Anschlagtafel_Khorinis_Text;
-	Anschlagtafel_Khorinis_Text = "Zuris braucht: ";
+	Anschlagtafel_Khorinis_Text = "Potrzeby Zurisa: ";
 
 	if (r_max(99) < 60)
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz = 5+Hlp_Random(6);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz)), " Manaessenzen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz)), " Mana essences, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_Manaessenz*Value_ManaEssenz;
 	};
@@ -1452,7 +1452,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt)), " Manaextrakte, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt)), " Wyciagi z maneny, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_ManaExtrakt*Value_ManaExtrakt;
 	};
@@ -1460,7 +1460,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt)), " Extrakte der Heilung, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt)), " Ekstrakty lecznicze, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_HPExtrakt*Value_HPExtrakt;
 	};
@@ -1468,7 +1468,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_HPElixier = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPElixier)), " Elixiere des Heilung, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPElixier)), " Eliksiry uzdrawiania, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_HPElixier*Value_HPElixier;
 	};
@@ -1484,7 +1484,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_Feuerball = 2+Hlp_Random(3);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerball)), " Feuerball-Spruchrollen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerball)), " Rozbój zaklecia pilki noznej, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_Feuerball*Value_Sc_InstantFireball;
 	};
@@ -1492,14 +1492,14 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 	{
 		Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil = 3+Hlp_Random(4);
 
-		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil)), " Feuerpfeil-Spruchrollen, ");
+		Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil)), " Zaklecie strzal ogniotrwale, ");
 
 		Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_Feuerpfeil*Value_Sc_Firebolt;
 	};
 
 	Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz = 5+Hlp_Random(6);
 
-	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz)), " Essenzen der Heilung");
+	Anschlagtafel_Khorinis_Text = ConcatStrings(ConcatStrings(Anschlagtafel_Khorinis_Text, IntToString(Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz)), " Esencje uzdrawiania");
 
 	Mod_Anschlagtafel_Khorinis_Zuris_Gold += Mod_Anschlagtafel_Khorinis_Zuris_HPEssenz*Value_HPEssenz;
 
@@ -1514,7 +1514,7 @@ FUNC VOID PC_Anschlagtafel_Khorinis_Zuris_Info()
 
 	CreateInvItems	(hero, ItWr_Anschlagtafel_Zuris, 1);
 
-	PrintScreen	("Anschlag erhalten", -1, -1, FONT_ScreenSmall, 3);
+	PrintScreen	("Zatrzymanie dzialania", -1, -1, FONT_ScreenSmall, 3);
 };
 
 INSTANCE PC_Anschlagtafel_Khorinis_EXIT (C_INFO)

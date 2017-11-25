@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Orkschlaechter (C_Item)
 {	
-	name 				=	"Orkschlächter";  
+	name 				=	"Orksilaki";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -26,7 +26,7 @@ INSTANCE ItMw_Orkschlaechter (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter (geschärft)";  
+	name 				=	"Luki rzeznicze (oslodzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -52,7 +52,7 @@ INSTANCE ItMw_Orkschlaechter_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03 (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge";
+	name 				=	"Ostrza bitewne rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -80,7 +80,7 @@ INSTANCE ItMw_1H_Special_03 (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge (geschärft)";
+	name 				=	"Ruda Ostrze do walki (ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -108,7 +108,7 @@ INSTANCE ItMw_1H_Special_03_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03 (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge";
+	name 				=	"Ostrze do walki z ostrzem ciezkiej rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -138,7 +138,7 @@ INSTANCE ItMw_2H_Special_03 (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge (geschärft)";
+	name 				=	"Ostrze bojowe ciezkiej rudy (utwardzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -170,7 +170,7 @@ INSTANCE ItMw_2H_Special_03_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser (C_Item)
 {	
-	name 				=	"Orkpiekser";  
+	name 				=	"orkisz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -197,7 +197,7 @@ INSTANCE ItMw_Orkpickser (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser (geschärft)";  
+	name 				=	"Orcpiekser (wyostrzany)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -228,7 +228,7 @@ INSTANCE ItMw_Orkpickser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher";
+	name 				=	"Rzeznik z rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -256,7 +256,7 @@ INSTANCE ItMw_1H_Special_03_Dex (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher (geschärft)";
+	name 				=	"Nóz rzeznika rudego (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -286,7 +286,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkschlaechter_Wasser (C_Item)
 {	
-	name 				=	"Orkschlächter des Wasserhiebes";  
+	name 				=	"Orcslaughterer zakladu mleczarstwa wodnego";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -310,7 +310,7 @@ INSTANCE ItMw_Orkschlaechter_Wasser (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Wasser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter des Wasserhiebes (geschärft)";  
+	name 				=	"Ork rzeznicy luków kaszki wodnej (utwardzonej)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -336,7 +336,7 @@ INSTANCE ItMw_Orkschlaechter_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Wasserhiebes";
+	name 				=	"Bojowe ostrze bitewne z kruszcu wodnego";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -364,7 +364,7 @@ INSTANCE ItMw_1H_Special_03_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Wasserhiebes (geschärft)";
+	name 				=	"Brzeszczot wodny z ostrzem bitewnym rudy (hartowany)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -392,7 +392,7 @@ INSTANCE ItMw_1H_Special_03_Wasser_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03_Wasser (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Wasserhiebes";
+	name 				=	"Ostrze bitewne ciezkiej rudy olotu wodnego";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -422,7 +422,7 @@ INSTANCE ItMw_2H_Special_03_Wasser (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Wasserhiebes (geschärft)";
+	name 				=	"Bojowe ostrze bitewne ciezkiej rudy olsniewacze wodne (utwardzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -452,7 +452,7 @@ INSTANCE ItMw_2H_Special_03_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser_Wasser (C_Item)
 {	
-	name 				=	"Orkpiekser des Wasserhiebes";  
+	name 				=	"Orkpiekser rzazu wodnego";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -479,7 +479,7 @@ INSTANCE ItMw_Orkpickser_Wasser (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Wasser_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser des Wasserhiebes (geschärft)";  
+	name 				=	"Orkpiekser skoku wody (ostrozony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -507,7 +507,7 @@ INSTANCE ItMw_Orkpickser_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Wasser (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Wasserhiebes";
+	name 				=	"Rudny nóz rzeznika do krojenia wody.";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -535,7 +535,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Wasser (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Wasser_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Wasserhiebes (geschärft)";
+	name 				=	"Rudny nóz rzeznika do krojenia wody (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -565,7 +565,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Wasser_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkschlaechter_Feuer (C_Item)
 {	
-	name 				=	"Orkschlächter des Versengens";  
+	name 				=	"wypalanie orkowego rzeznika";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -589,7 +589,7 @@ INSTANCE ItMw_Orkschlaechter_Feuer (C_Item)
 };
 INSTANCE ItMw_Orkschlaechter_Feuer_Geschaerft (C_Item)
 {	
-	name 				=	"Orkschlächter des Versengens (geschärft)";  
+	name 				=	"Orksluch rzeznik spalajacy (utwardzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -615,7 +615,7 @@ INSTANCE ItMw_Orkschlaechter_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Versengens";
+	name 				=	"Lopatka bojowa rudy sluchowej";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -643,7 +643,7 @@ INSTANCE ItMw_1H_Special_03_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtklinge des Versengens (geschärft)";
+	name 				=	"Ostrza rudy bojowej (utwardzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -671,7 +671,7 @@ INSTANCE ItMw_1H_Special_03_Feuer_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Special_03_Feuer (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Versengens";
+	name 				=	"Ostrze bitewne ciezkiej rudy z unoszacym sie ramieniem";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -701,7 +701,7 @@ INSTANCE ItMw_2H_Special_03_Feuer (C_Item)
 
 INSTANCE ItMw_2H_Special_03_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Schwere Erz-Schlachtklinge des Versengens (geschärft)";
+	name 				=	"Ostrze bitewne z ostrzem hartowniczym (otwarte)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -731,7 +731,7 @@ INSTANCE ItMw_2H_Special_03_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_Orkpickser_Feuer (C_Item)
 {	
-	name 				=	"Orkpiekser des Versengens";  
+	name 				=	"skrobaki";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -758,7 +758,7 @@ INSTANCE ItMw_Orkpickser_Feuer (C_Item)
 };
 INSTANCE ItMw_Orkpickser_Feuer_Geschaerft (C_Item)
 {	
-	name 				=	"Orkpiekser des Versengens (geschärft)";  
+	name 				=	"Orkiestra wypalania (utwardzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -786,7 +786,7 @@ INSTANCE ItMw_Orkpickser_Feuer_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Feuer (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Versengens";
+	name 				=	"Spalanie noza rzeznika rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -814,7 +814,7 @@ INSTANCE ItMw_1H_Special_03_Dex_Feuer (C_Item)
 
 INSTANCE ItMw_1H_Special_03_Dex_Feuer_Geschaerft (C_Item) 
 {	
-	name 				=	"Erz-Schlachtstecher des Versengens (geschärft)";
+	name 				=	"Rudny nóz rzeznika do wypalania (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

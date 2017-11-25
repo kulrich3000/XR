@@ -1,7 +1,7 @@
 INSTANCE Mod_915_NOV_Dyrian_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Feuernovize";
+	name 		= "nowicjusz";
 	guild 		= GIL_VLK;
 	id 			= 915;
 	voice 		= 13;

@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_2_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_2_WichtigePersonen_Condition;
 	information	= Info_ReisBau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Arbeitest du freiwillig auf den Reisfeldern?";
+	description = "Czy jestes wolontariuszem na polu ryzu?";
 };                       
 
 FUNC INT Info_ReisBau_2_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_2_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_00"); //Arbeitest du freiwillig auf den Reisfeldern?
-	AI_Output(self,hero,"Info_ReisBau_2_WichtigePersonen_02_01"); //Ja. Ja das tue ich. Ist nämlich besser freiwillig zu arbeiten, als von den Schlägern vom Reislord abgeholt zu werden.
-	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_02"); //So so ...
+	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_00"); //Czy jestes wolontariuszem na polu ryzu?
+	AI_Output(self,hero,"Info_ReisBau_2_WichtigePersonen_02_01"); //Tak. Tak, panie posle. Lepiej jest pracowac dobrowolnie niz zbierac ryz na wioslach o ryz.
+	AI_Output(hero,self,"Info_ReisBau_2_WichtigePersonen_15_02"); //Tak wiec tak....
 };
 
 INSTANCE Info_ReisBau_2_DankeProBauer(C_INFO)
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_2_DankeProBauer_Condition()
 
 FUNC VOID Info_ReisBau_2_DankeProBauer_Info()
 {
-	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_00"); //Ahh, da bist du ja. Geh am besten gleich zu Horatio.
-	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_01"); //Wir haben ein kleines Dankeschön für dich.
+	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_00"); //Ach, tam jestescie. Dlaczego nie idziesz prosto do Horatio?
+	AI_Output(self,hero,"Info_ReisBau_2_DankeProBauer_02_01"); //Dziekujemy panstwu troche za to.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_ReisBau_2_DasLager(C_INFO)
 	condition	= Info_ReisBau_2_DasLager_Condition;
 	information	= Info_ReisBau_2_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über das Lager erzählen?";
+	description = "Co mozesz mi powiedziec o obozie?";
 };                       
 
 FUNC INT Info_ReisBau_2_DasLager_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_ReisBau_2_DasLager_Condition()
 
 FUNC VOID Info_ReisBau_2_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_DasLager_15_00"); //Was kannst du mir über das Lager erzählen?
-	AI_Output(self,hero,"Info_ReisBau_2_DasLager_02_01"); //Es ist seit dem Fall der Barriere viel sicherer geworden. Die Banditen haben sich jetzt entweder den Söldnern angeschlossen oder sind in ein anderes Lager gegangen.
+	AI_Output(hero,self,"Info_ReisBau_2_DasLager_15_00"); //Co mozesz mi powiedziec o obozie?
+	AI_Output(self,hero,"Info_ReisBau_2_DasLager_02_01"); //Od czasu upadku zapory bariera stala sie znacznie bezpieczniejsza. Teraz bandyci albo dolaczyli do najemników, albo przeniesli sie do innego obozu.
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE Info_ReisBau_2_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_2_DieLage_Condition;
 	information	= Info_ReisBau_2_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar bei dir?";
+	description = "Wszystko jest w porzadku?";
 };                       
 
 FUNC INT Info_ReisBau_2_DieLage_Condition()
@@ -120,9 +120,9 @@ FUNC INT Info_ReisBau_2_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_2_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_00"); //Alles klar bei dir?
-	AI_Output(self,hero,"Info_ReisBau_2_DieLage_02_01"); //Was willst du? Hat Der Reislord dich geschickt? Ich arbeite doch jeden Tag!
-	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_02"); //Niemand hat mich geschickt - ich will mich nur ein bisschen unterhalten.
+	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_00"); //Wszystko jest w porzadku?
+	AI_Output(self,hero,"Info_ReisBau_2_DieLage_02_01"); //Czego chcesz? Wladca ryzu wysyla ci? Pracuje codziennie!
+	AI_Output(hero,self,"Info_ReisBau_2_DieLage_15_02"); //Nikt mnie nie wyslal - po prostu chce powiedziec troche.
 };
 
 INSTANCE Info_Mod_ReisBau_2_Pickpocket (C_INFO)

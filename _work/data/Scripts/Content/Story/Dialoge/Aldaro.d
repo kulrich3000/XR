@@ -15,21 +15,21 @@ FUNC INT Info_Mod_Aldaro_Hi_Condition()
 
 FUNC VOID Info_Mod_Aldaro_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_00"); //Ahh, ein neues Gesicht. Sei gegrüßt. Kommst du von ... ahhh ...
-	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_02"); //Ohh, entschuldige. Die Schmerzen sind einfach unerträglich.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_03"); //Egal ob ich gehe, stehe, oder sitze ... mit den Gelenken wird es immer schlimmer.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_04"); //Die letzten Tage konnte ich nicht mal mehr fischen gehen.
-	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_05"); //Gibt es denn kein Mittel zur Heilung, oder Linderung?
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_06"); //Nein, auch Thys konnte mir nicht helfen.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_07"); //Ich habe zwar in einigen Büchern gelesen, dass es etwas gibt, was bei entzündlichen Gelenkbeschwerden helfen kann ... aber das gibt es hier bestimmt nicht mal innerhalb von 1000 Meilen.
-	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_08"); //Was soll das sein?
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_09"); //Das Gift verschiedener Tiere, vor allem Insekten,  wie man sie eben in wärmeren Gebieten findet ... aber leider nicht hier.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_10"); //Ach, wie soll das nur weitergehen ...
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_00"); //Ahh, nowe oblicze. Powitania. Czy jestes z....? ahhhhhhh.....
+	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_02"); //Och, przepraszam. Ból jest po prostu nie do zniesienia.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_03"); //Czy ide, stoje, czy siedze.... z przegubami coraz gorzej.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_04"); //W ciagu ostatnich kilku dni nie moglem nawet lowic ryb.
+	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_05"); //Czy nie ma lekarstwa ani ulgi?
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_06"); //Nie, nawet Thys nie mógl mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_07"); //W niektórych ksiazkach przeczytalem, ze jest cos, co moze pomóc w rozwiazywaniu problemów zapalnych stawów..... Ale nie ma tu chyba nawet tysiaca mil do pokonania.
+	AI_Output(hero, self, "Info_Mod_Aldaro_Hi_15_08"); //Co to ma byc?
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_09"); //Trucizna róznych zwierzat, zwlaszcza owadów, wystepujaca w cieplejszych miejscach..... ale niestety tutaj nie ma.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Hi_09_10"); //Ach, jak to bedzie sie dzialo.....
 
 	Log_CreateTopic	(TOPIC_MOD_ALDARO_TIERGIFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ALDARO_TIERGIFT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ALDARO_TIERGIFT, "Aldaro leidet unter starken Gelenkbeschwerden. Er meint gelesen zu haben, dass Tiergift dagegen helfen könnte.");
+	B_LogEntry	(TOPIC_MOD_ALDARO_TIERGIFT, "Aldaro cierpi na powazne problemy wspólne. Uwaza, ze czytamy, ze trucizna zwierzeca moze mu pomóc.");
 };
 
 INSTANCE Info_Mod_Aldaro_Gift (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Aldaro_Gift (C_INFO)
 	information	= Info_Mod_Aldaro_Gift_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Tiergift bei mir.";
+	description	= "Mam przy sobie trucizne zwierzeca.";
 };
 
 FUNC INT Info_Mod_Aldaro_Gift_Condition()
@@ -54,22 +54,22 @@ FUNC INT Info_Mod_Aldaro_Gift_Condition()
 
 FUNC VOID Info_Mod_Aldaro_Gift_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_00"); //Ich habe Tiergift bei mir.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_01"); //Was? Ach, du willst mich doch auf den Arm nehmen.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_02"); //Wie sollte das denn möglich sein, hier in der eisigen Welt?
-	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_03"); //Durch Hilfe von etwas Magie.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_04"); //Magie? Aber… (in Gedanken versunken) dann stimmt es also vielleicht doch, was ich aus Gerüchten gehört habe ...
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_05"); //... dass einer durch die magischen Portale aus fernen Regionen der Welt zu uns kam ...
-	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_06"); //Hier, deine Medizin.
+	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_00"); //Mam przy sobie trucizne zwierzeca.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_01"); //Co? Musisz mnie oszukiwac.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_02"); //Jak to mozliwe w tym lodowatym swiecie?
+	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_03"); //Z pomoca jakiejs magii.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_04"); //Magia? Ale.... (zanurzone w myslach) byc moze jest to prawda, co slyszalem z poglosek......
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_05"); //... ze przyszedl do nas jeden z magicznych portali z odleglych regionów swiata......
+	AI_Output(hero, self, "Info_Mod_Aldaro_Gift_15_06"); //Oto Twoje lekarstwo.
 
 	B_GiveInvItems	(hero, self, ItPo_Tiergift, 1);
 
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_07"); //(wieder zum Helden) Was? Ahh, das Insektengift. Hab vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_08"); //Ich trage es gleich auf die betroffenen Stellen auf ... und schaue, wie es mir morgen geht.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_07"); //(znowu bohatera) Co? Ahh, jad owadów. Dziekuje bardzo.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift_09_08"); //Natychmiast stosuje ja w odniesieniu do dotknietych obszarów...... Zobacz, jak to robie jutro.
 
 	AI_PlayAni	(self, "T_PLUNDER");
 
-	B_LogEntry	(TOPIC_MOD_ALDARO_TIERGIFT, "Aldaro hat seine Gelenke mit dem Gift eingerieben und sich schlafen gelegt.");
+	B_LogEntry	(TOPIC_MOD_ALDARO_TIERGIFT, "Aldaro otarl mu stawy trucizna i poszedl spac.");
 
 	B_GivePlayerXP	(150);
 
@@ -100,15 +100,15 @@ FUNC INT Info_Mod_Aldaro_Gift2_Condition()
 
 FUNC VOID Info_Mod_Aldaro_Gift2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_00"); //(euphorisch) Es hat tatsächlich geholfen. Meinen Gelenken geht es schon viel besser.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_01"); //Wenn das so weitergeht, kann ich morgen vielleicht schon wieder fischen gehen.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_02"); //Hier, es ist zwar nicht viel, aber ich hoffe, du kannst was damit anfangen.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_00"); //Tak naprawde to pomoglo. Moje stawy sa juz duzo lepsze.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_01"); //Jesli tak bedzie, jutro bede mógl lowic ryby.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Gift2_09_02"); //Tutaj to niewiele, ale mam nadzieje, ze cos z tym zrobisz.
 
 	CreateInvItems	(hero, ItMi_Gold, 54);
 	CreateInvItems	(hero, ItMi_Nugget, 2);
 	CreateInvItems	(hero, ItFo_Fish, 12);
 
-	B_ShowGivenThings	("54 Gold, 2 Erzbrocken und 12 Fische erhalten");
+	B_ShowGivenThings	("54 zloto, 2 sztuki rudy i 12 ryb zakonserwowanych");
 
 	B_SetTopicStatus	(TOPIC_MOD_ALDARO_TIERGIFT, LOG_SUCCESS);
 
@@ -141,10 +141,10 @@ FUNC INT Info_Mod_Aldaro_Schneegeister_Condition()
 
 FUNC VOID Info_Mod_Aldaro_Schneegeister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_00"); //(erfreut) Schön dich wieder zu sehen.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_01"); //Meine Beschwerden sind völlig verschwunden und das Fläschchen reicht mir noch für Jahre.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_02"); //Aber worum es mir eigentlich ging ... ich habe diesen goldenen Ring in einem Fisch gefunden, den ich im See fing.
-	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_03"); //Und da ich ohne deine Hilfe gar nicht fischen könnte, steht er selbstverständlich dir zu. Hier, nimm.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_00"); //Chwyc, aby cie ponownie zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_01"); //Mój dyskomfort calkowicie znikl, a butelka bedzie trwala przez lata.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_02"); //Ale o co tak naprawde chodzilo mi.... Zloty pierscien znalazlem w rybie, która zlapalem w jeziorze.
+	AI_Output(self, hero, "Info_Mod_Aldaro_Schneegeister_09_03"); //A skoro nie moglem lowic ryb bez Twojej pomocy, to oczywiscie Twoja. Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItRi_Seering, 1);
 

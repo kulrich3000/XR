@@ -31,20 +31,20 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Der Weg des Kampfes"					);
+					Doc_PrintLine	( nDocID,  0, "Droga walki"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Angriff ist die beste Verteidigung, bei allem was nicht Mensch ist. Eine Parade gegen Tiere oder Monster auszuführen ist sinnlos."						);
-					Doc_PrintLines	( nDocID,  0, "Da ist es besser den Gegner mit gezielten Seitenschlägen auf Distanz zu halten um überraschend eine Kombination aus mehreren Schlägen durchzuführen."						);
+					Doc_PrintLines	( nDocID,  0, "Atak jest najlepsza obrona przed tym, co nie jest ludzkie. Parada wymierzona w zwierzeta lub potwory jest bezcelowa."						);
+					Doc_PrintLines	( nDocID,  0, "Lepiej jest trzymac przeciwnika w dystansie z ukierunkowanymi pociagnieciami bocznymi, aby wykonac zaskakujace polaczenie kilku pociagniec."						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Kombinationen mehrerer Schläge sind natürlich einem erfahrenen Kämpfer vorbehalten. Und wer sogar die Meisterschaft im Kampf erreicht, kann weitere Kombinationen ausführen."						); 
+					Doc_PrintLines	( nDocID,  1, "Kombinacje kilku pociagniec sa naturalnie zarezerwowane dla doswiadczonego wojownika. A jesli nawet dojdziesz do mistrzostw w bitwie, mozesz tworzyc kolejne kombinacje."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
@@ -81,22 +81,22 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Die Insel"					);
+					Doc_PrintLine	( nDocID,  0, "Wyspa"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Die Hafenstadt Khorinis liegt auf einer Insel vor der Küste des Königreiches Myrtana."						);
-					Doc_PrintLines	( nDocID,  0, "Die Insel ist vor allem durch das Minental bekannt geworden. Ein zweifelhafter Ruf, denn viele Jahre erstreckte sich eine magische Barriere über das gesamte Tal und alle Gefangenen des Reiches wurden dort hinein gebracht."						);
-					Doc_PrintLines	( nDocID,  0, "So wurde das Tal zur Strafkolonie für viele Verurteilte, die tief unter der Erde nach dem magischen Erz schürften. "						);
+					Doc_PrintLines	( nDocID,  0, "Miasto portowe Khorini lezy na wyspie u wybrzezy Królestwa Myrtana."						);
+					Doc_PrintLines	( nDocID,  0, "Wyspa slynie z doliny Minental. Watpliwa reputacja, bo przez wiele lat przez cala doline rozciagala sie magiczna bariera i wszyscy wiezniowie imperium zostali tam wzieci."						);
+					Doc_PrintLines	( nDocID,  0, "W ten sposób dolina stala sie kolonia karna dla wielu skazanych, którzy wykopali magiczna rude gleboko pod ziemia. "						);
 					
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Außerhalb von Khorinis gibt es noch einige Bauernhöfe, die den guten Boden nutzen, um Weizen und Rüben anzubauen, aber auch um Schafe zu züchten."						); 
+					Doc_PrintLines	( nDocID,  1, "Poza Khorinis jest jeszcze kilka gospodarstw, które wykorzystuja dobra glebe do uprawy pszenicy i buraków, ale takze owiec."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Seit Generationen ist der größte Hof im Besitz eines Großbauern, der sein umliegendes Land an andere Bauern verpachtet. "						);
+					Doc_PrintLines	( nDocID,  1, "Od pokolen najwieksze gospodarstwo jest wlasnoscia wielkiego rolnika, który dzierzawi okoliczne grunty innym rolnikom. "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Mitten auf der Insel steht ein altes Kloster. Ein Kloster Innos, das von den Magiern des Feuers geführt wird. Dort gehen sie magischen und alchmistischen Forschungen nach und keltern Wein."						);
+					Doc_PrintLines	( nDocID,  1, "Na srodku wyspy znajduje sie stary klasztor. Klasztor w Inno, prowadzony przez magów ognia. Tam prowadza magiczne i alchemiczne badania i produkuja wino."						);
 					
 					Doc_Show		( nDocID );
 					
@@ -128,26 +128,26 @@ FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Das Gesetz der Insel"					);
+					Doc_PrintLine	( nDocID,  0, "Prawo wyspy"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Überall dort, wo Menschen zusammenkommen, muss das gemeinsame Leben geregelt werden. Ob das im Kloster, in der Stadt oder auf dem Hof des Großbauers ist."						);
-					Doc_PrintLines	( nDocID,  0, "So wird jedes Verbrechen wider der Gemeinschaft bestraft."						);
-					Doc_PrintLines	( nDocID,  0, "Im Sinne der Gemeinschaft ist es nicht erlaubt Schlägereien anzuzetteln oder sich in solche verwickeln zu lassen. "						);
-					Doc_PrintLines	( nDocID,  0, "Ebenso ist Diebstahl ein Vergehen, das nicht ohne Folge bleibt. Und auch die Schafe stehen unter dem Schutz des Gesetzes.  "						);
+					Doc_PrintLines	( nDocID,  0, "Gdziekolwiek ludzie sie spotykaja, nalezy uregulowac wspólne zycie. Czy to w klasztorze, w miescie czy w gospodarstwie rolniczym."						);
+					Doc_PrintLines	( nDocID,  0, "W ten sposób kazda zbrodnia przeciwko spolecznosci bedzie karana."						);
+					Doc_PrintLines	( nDocID,  0, "Z korzyscia dla Wspólnoty nie wolno podzegac do walk ani angazowac sie w walki. "						);
+					Doc_PrintLines	( nDocID,  0, "Kradziez jest równiez wykroczeniem, które nie pozostaje niezauwazone. Owce sa równiez chronione prawem.  "						);
 					Doc_PrintLines	( nDocID,  0, " "						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Wer gar einen anderen Menschen niederschlägt und ermordet, muß damit rechnen auf der Stelle gerichtet zu werden."						);
-					Doc_PrintLines	( nDocID,  1, "Und wer dem entgehen kann, muß eine hohen Strafe zahlen. "						);
-					Doc_PrintLines	( nDocID,  1, "An allen großen Orten, führen Männer das Amt des Rechts aus. Ihnen wird zugetragen welche Taten geschehen und sie fordern die Strafe ein, auf das der Frieden wiederhergestellt wird. "						); 
-					Doc_PrintLines	( nDocID,  1, "Denn wer Opfer eines Vergehens wird oder solche bezeugen kann, wird nicht gut auf den Täter zu sprechen sein."						);
+					Doc_PrintLines	( nDocID,  1, "Ci, którzy nawet bili i mordowali innego czlowieka, musza oczekiwac, ze zostana osadzeni na miejscu."						);
+					Doc_PrintLines	( nDocID,  1, "A ci, którzy moga sie z tego uciec, musza zaplacic ciezka grzywne. "						);
+					Doc_PrintLines	( nDocID,  1, "We wszystkich wielkich miejscach mezczyzni sprawuja urzad sprawiedliwosci. Mówi sie im, jakie dzialania sa podejmowane i zadaja kary za przywrócenie pokoju. "						); 
+					Doc_PrintLines	( nDocID,  1, "Kto padl ofiara przestepstwa lub moze zeznawac przeciwko niemu, ten nie bedzie mówil dobrze o przestepcy."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Es gibt natürlich auch Volk das sich nicht um die Gesetze schert. Vor allem Banditen und Söldner. "						);
+					Doc_PrintLines	( nDocID,  1, "Oczywiscie sa tez ludzie, którzy nie dbaja o prawo. Zwlaszcza bandyci i najemnicy. "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_Show		( nDocID );

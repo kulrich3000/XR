@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest (C_INFO)
 	information	= Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hieltest du davon, zur Abwechslung mal wieder die Hände zum Gebet zu falten in der Kirche unseres Herrn?";
+	description	= "Co myslales o zlozeniu rak na modlitwe w Kosciele Panskim?";
 };
 
 FUNC INT Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Condition()
@@ -20,9 +20,9 @@ FUNC INT Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_15_00"); //Was hieltest du davon, zur Abwechslung mal wieder die Hände zum Gebet zu falten in der Kirche unseres Herrn?
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_01"); //Hmm, ja, das Gebet in der Kirche. Danke, dass du mich daran erinnerst, Bruder. Mein letzter Besuch liegt schon allzu lange zurück.
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_02"); //Danach werde ich auch gewiss mit ruhigerer Hand weiterarbeiten können. Ich mache mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_15_00"); //Co myslales o zlozeniu rak na modlitwe w Kosciele Panskim?
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_01"); //Hmm, tak, modlitwa w kosciele. Dziekuje za przypomnienie mi, bratu. Moja ostatnia wizyta byla zbyt dluga.
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_02"); //Potem z pewnoscia bede mógl kontynuowac prace spokojniejsza reka. Bede w drodze od razu.
 
 	AI_StopProcessInfos	(self);
 
@@ -34,7 +34,7 @@ FUNC VOID Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info()
 
 	if (Mod_Pat_Beter == 3)
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, ich denke ich haben genügend Jünger Innos’ zum Gebet bewegen können und sollte in der Kirche bei Nagon vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Wiec mysle, ze mialem wystarczajaco duzo uczniów Inno' s, aby zachecic ich do modlitwy i powinienem zatrzymac sie przy kosciele w Nagon.");
 	};
 };
 

@@ -1,7 +1,7 @@
 instance Mod_503_PAL_Oric_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Oric";
+	name 		= "ordynacja";
 	guild 		= GIL_PAL;
 	id 			= 503;
 	voice 		= 11;

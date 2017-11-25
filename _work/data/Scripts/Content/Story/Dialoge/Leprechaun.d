@@ -15,60 +15,60 @@ FUNC INT Info_Mod_Leprechaun_Hi_Condition()
 
 FUNC VOID Info_Mod_Leprechaun_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_00"); //Direkt in die Falle gelaufen.
-	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_15_01"); //Was wird das hier?
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_02"); //Der Meister hat entschieden, dass jetzt die Zeit gekommen ist, dich zu ihm zu bringen.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_03"); //Seine Kraft ist nun groß genug, es mit dir aufzunehmen.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_00"); //Prosto do pulapki.
+	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_15_01"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_02"); //Mistrz zdecydowal, ze teraz nadszedl czas, aby zabrac cie do niego.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_20_03"); //Jego sila jest teraz wystarczajaco silna, aby przyjac cie na siebie.
 
 	Info_ClearChoices	(Info_Mod_Leprechaun_Hi);
 
-	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Wieso gerade ich?", Info_Mod_Leprechaun_Hi_B);
-	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Wer ist dein Meister?", Info_Mod_Leprechaun_Hi_A);
+	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Dlaczego ja?", Info_Mod_Leprechaun_Hi_B);
+	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Kim jest Twój pan?", Info_Mod_Leprechaun_Hi_A);
 };
 
 FUNC VOID Info_Mod_Leprechaun_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_C_20_00"); //Das bedeutet wohl, dass Leprechaun die falsche Person gefangen hält.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_C_20_01"); //Diese Nachricht wird seinen Herrn nicht erfreuen.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_C_20_00"); //Przypuszczam, ze oznacza to, ze Leprechaun trzyma niewlasciwa osobe w niewoli.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_C_20_01"); //Ta wiadomosc nie spodoba mu sie jego pan.
 
 	Info_ClearChoices	(Info_Mod_Leprechaun_Hi);
 
 	Log_CreateTopic	(TOPIC_MOD_MAGISCHEMARKIERUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MAGISCHEMARKIERUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Kaum angekommen in Jharkendar, wurde ich schon von einer rätselhaften Gestalt gefangen genommen. Sie behauptete, ein Diener von Xeres zu sein, ließ mich aber fast dankbar frei, als ich ihr vorspielte, nicht der zu sein, den sie suchte.");
+	B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Wlasnie przybylem do Jharkendend, zostalem juz ujety przez tajemnicza postac. Ona twierdzila, ze jest sluga Xeres, ale prawie z wdziecznoscia pozwolila mi isc, kiedy udawalem, ze nie jest ta, której ona szuka.");
 
 	AI_StopProcessInfos	(self);
 };
 
 FUNC VOID Info_Mod_Leprechaun_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_00"); //Wieso gerade ich?
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_01"); //Du hast das Lieblingshaustier des Meisters getötet. Tagelang tobte er durch seine Hallen.
+	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_00"); //Dlaczego ja?
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_01"); //Zabiles ulubionego zwierzaka mistrza. Przez wiele dni szalal przez sale.
 
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_02"); //Ich?! Ich bin doch nur ein einfacher Söldner!
+		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_02"); //Oto ja! Jestem tylko najemnikiem!
 	}
 	else if (hero.guild == GIL_PAL)
 	{
-		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_03"); //Ich?! Ich bin doch nur ein einfacher Milizsoldat!
+		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_03"); //Oto ja! Jestem po prostu prostym zolnierzem milicji!
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_04"); //Ich?! Ich bin doch nur ein einfacher Wassernovize!
+		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_04"); //Oto ja! Jestem tylko prosta nowicjuszka!
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_05"); //Ich?! Ich bin doch nur ein einfacher Schwarzer Novize!
+		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_05"); //Oto ja! Jestem po prostu czarnym nowicjuszem!
 	}
 	else if (hero.guild == GIL_VLK)
 	{
-		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_06"); //Ich?! Ich bin doch nur ein einfacher Feuernovize!
+		AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_06"); //Oto ja! Jestem tylko prostym nowicjuszem!
 	};
 
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_07"); //(hoffnungsvoll) Also bist du nicht der, den sie den Auserwählten nennen?
-	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_08"); //Davon habe ich noch nie etwas gehört.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_09"); //Na, so was. Der Meister war sich sicher, dass er es wäre, der als Erster das Portal durchqueren würde, und nicht einer der unwichtigen Handlanger.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_07"); //Miejmy nadzieje, ze nie jestes wiec kim oni nazywaja wybranego?
+	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_B_15_08"); //Nigdy wczesniej o tym nie slyszalem.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_B_20_09"); //No cóz, co jest rzecza. Mistrz byl pewien, ze jako pierwszy przejdzie przez portal, a nie jeden z niewaznych popleczników.
 
 	Mod_Leprechaun_Choices += 1;
 
@@ -80,8 +80,8 @@ FUNC VOID Info_Mod_Leprechaun_Hi_B()
 
 FUNC VOID Info_Mod_Leprechaun_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_A_15_00"); //Wer ist dein Meister?
-	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_A_20_01"); //Xeres ist der Herr und Gebieter. Leprechauns Familie dient ihm seit über hundert Generationen.
+	AI_Output(hero, self, "Info_Mod_Leprechaun_Hi_A_15_00"); //Kim jest Twój pan?
+	AI_Output(self, hero, "Info_Mod_Leprechaun_Hi_A_20_01"); //Xeres jest Panem i Panem. Rodzina Leprechauna sluzyla mu od ponad stu pokolen.
 
 	Mod_Leprechaun_Choices += 1;
 

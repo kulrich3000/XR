@@ -37,7 +37,7 @@ INSTANCE Info_Mod_SMK_OM_13_Mine (C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_13_Mine_Condition;
 	information	= Info_Mod_SMK_OM_13_Mine_Info;
 	permanent	= 1;
-	description = "Was läuft in der Mine?";
+	description = "Co sie dzieje w kopalni?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_13_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_SMK_OM_13_Mine_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_13_Mine_15_00"); //Was läuft in der Mine?
-	AI_Output(self,other,"Info_Mod_SMK_OM_13_Mine_13_01"); //Hier wird Erz gefördert, welches wir als Zahlungsmittel und Durckmittel gegen den König benutzen.
+	AI_Output(other,self,"Info_Mod_SMK_OM_13_Mine_15_00"); //Co sie dzieje w kopalni?
+	AI_Output(self,other,"Info_Mod_SMK_OM_13_Mine_13_01"); //Wydobywa sie tu rude, która wykorzystujemy jako srodek platniczy i cisnieniowy przeciwko królowi.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_SMK_OM_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mod_SMK_OM_13_WichtigePersonen_Condition;
 	information	= Info_Mod_SMK_OM_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Mod_SMK_OM_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_13_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Mod_SMK_OM_13_WichtigePersonen_13_01"); //Kurgan ist unser Chef. Aber lass ihn bloß in Ruhe.
+	AI_Output(other,self,"Info_Mod_SMK_OM_13_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,other,"Info_Mod_SMK_OM_13_WichtigePersonen_13_01"); //Kurgan jest naszym szefem. Pozostaw go samemu sobie.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_SMK_OM_13_DieLage(C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_13_DieLage_Condition;
 	information	= Info_Mod_SMK_OM_13_DieLage_Info;
 	permanent	= 1;
-	description = "Wie läuft's?";
+	description = "Jak to sie dzieje?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_13_DieLage_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mod_SMK_OM_13_DieLage_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_13_DieLage_15_00"); //Wie läuft's?
-	AI_Output(self,other,"Info_Mod_SMK_OM_13_DieLage_13_01"); //Hab schon lange keinen Kampf mehr gehabt!
+	AI_Output(other,self,"Info_Mod_SMK_OM_13_DieLage_15_00"); //Jak to sie dzieje?
+	AI_Output(self,other,"Info_Mod_SMK_OM_13_DieLage_13_01"); //Haven nie walczyl przez dlugi czas!
 	
 };
 	

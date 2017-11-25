@@ -43,7 +43,7 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	};
 	
 	Log_CreateTopic (TOPIC_TalentRunes, LOG_NOTE);
-	B_LogEntry (TOPIC_TalentRunes, "Um eine Rune zu erschaffen, benötige ich, neben der Spruchrolle des gewünschten Spruches, für jede Rune unterschiedliche Zutaten. Mit diesen Zutaten und einem Runenrohling kann ich dann die gewünschte Rune am Runentisch erschaffen.");
+	B_LogEntry (TOPIC_TalentRunes, "Aby stworzyc rune, potrzebuje róznych skladników dla kazdej runy oprócz roli pozadanego zaklecia. Dzieki tym skladnikom i pustej runie moge stworzyc pozadana rune przy stole.");
 	
 	var C_NPC ScrollTrader;
 	
@@ -69,75 +69,75 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_TeleportOC)			{	PLAYER_TALENT_RUNES[SPL_TeleportOC] 			= TRUE;	};		
 	// Teleport-Joker fehlen
 	if (spell == SPL_LIGHT)					{	PLAYER_TALENT_RUNES[SPL_LIGHT] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_LIGHT, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´LICHT´: 1 Goldmünze.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki do runy - SWIATLO?: 1 zlota moneta.");	};		
 	if (spell == SPL_Firebolt)				{	PLAYER_TALENT_RUNES[SPL_Firebolt] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firebolt, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´FEUERPFEIL´: 1 Schwefel.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla strzalki ognia Rune?: 1 siarka.");	};		
 	if (spell == SPL_Icebolt)				{	PLAYER_TALENT_RUNES[SPL_Icebolt] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Icebolt, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´EISPFEIL´: 1 Gletscherquartz");};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune? Strzalka lodowa: 1 lodowiec kwarcowy?");};		
 	if (spell == SPL_LightHeal)				{	PLAYER_TALENT_RUNES[SPL_LightHeal] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_LightHeal, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´LEICHTE WUNDEN HEILEN´:1 Heilpflanze.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, LEKKIE WYBORY SWIATLA?: 1 roslina lecznicza.");	};		
 	if (spell == SPL_SummonGoblinSkeleton)	{	PLAYER_TALENT_RUNES[SPL_SummonGoblinSkeleton] 	= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumGobSkel, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´GOBLINSKELETT ERSCHAFFEN´:1 Goblinknochen.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune GOBLINSKELETT CREATE?: 1 kosc goblinowa.");	};		
 	if (spell == SPL_InstantIceball)		{	PLAYER_TALENT_RUNES[SPL_InstantIceball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_InstantIceball, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´EISBALL ´: 1 Pech");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na rune? ICE BALL: 1 wysokosc?");	};	
 	if (spell == SPL_InstantFireball)		{	PLAYER_TALENT_RUNES[SPL_InstantFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_InstantFireball, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´FEUERBALL ´: 1 Pech");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa? FIREBALL: 1 smola?");	};	
 	if (spell == SPL_Zap)					{	PLAYER_TALENT_RUNES[SPL_Zap] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Zap, 1);						
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´BLITZ`:1 Bergkristall.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_SummonWolf)			{	PLAYER_TALENT_RUNES[SPL_SummonWolf]				= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumWolf, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´WOLF RUFEN´: 1 Wolfsfell.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, WOLF RUF RUFEN?: 1 siersc wilka.");	};		
 	if (spell == SPL_WINDFIST)				{	PLAYER_TALENT_RUNES[SPL_WINDFIST] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_WINDFIST, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´WINDFAUST´:1 Stück Kohle.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki runa: 1 kawalk wegla.");	};		
 	if (spell == SPL_Sleep)					{	PLAYER_TALENT_RUNES[SPL_Sleep] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Sleep, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´SCHLAF`:1 Sumpfkraut. Auch eine Methode das Zeug zu verwenden.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_MediumHeal)			{	PLAYER_TALENT_RUNES[SPL_MediumHeal] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_MediumHeal, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´MITTLERE WUNDEN HEILEN´:1 Heilkraut.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune MEDIUM SREDNIO UZYTKOWANIE?: 1 Ziola.");	};		
 	if (spell == SPL_LightningFlash)		{	PLAYER_TALENT_RUNES[SPL_LightningFlash] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_LightningFlash, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´BLITZSCHLAG´: 1 Bergkristall und 1 Gletscher Quartz.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune BLITZSCHLAG: 1 krysztal skalny i 1 kwarc lodowy.");	};	
 	if (spell == SPL_ChargeFireball)		{	PLAYER_TALENT_RUNES[SPL_ChargeFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_ChargeFireball, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´GROSSER FEUERBALL´: 1 Schwefel und 1 Pech.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, DUZE STOPNIOWE FARBALL: 1 siarka i 1 boisko.");	};		
 	if (spell == SPL_SummonSkeleton)		{	PLAYER_TALENT_RUNES[SPL_SummonSkeleton] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumSkel, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´SKELET BESCHWÖREN´: 1 Skelettknochen.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na rune, SKELET DEMONS?: 1 kosc szkieletowa.");	};		
 	if (spell == SPL_Fear)					{	PLAYER_TALENT_RUNES[SPL_Fear] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Fear, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´ANGST´: 1 schwarze Perle.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa ANGST?: 1 czarna perla.");	};		
 	if (spell == SPL_IceCube)				{	PLAYER_TALENT_RUNES[SPL_IceCube] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_IceCube, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´EISBLOCK´: 1 Gletscher Quartz und 1 Aquamarin.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune, EISBLOCK?: 1 kwarc lodowy i 1 Aquamarine.");	};		
 	if (spell == SPL_ChargeZap)				{	PLAYER_TALENT_RUNES[SPL_ChargeZap] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_ThunderBall, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´KUGELBLITZ´: 1 Schwefel und 1 Bergkristall.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla pioruna Rune: 1 siarka i 1 krysztal skalny.");	};		
 	if (spell == SPL_SummonGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonGolem] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumGol, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune `STEINGOLEM ERSCHAFFEN`:1 Steingolemherz.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki do runa: 1 kamienne serce golema.");	};	
 	if (spell == SPL_SummonFireGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonFireGolem] 			= TRUE;					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune `FEUERGOLEM ERSCHAFFEN`:1 Feuergolemherz.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na runie: 1 serce golema pozarowego.");	};	
 	if (spell == SPL_SummonIceGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonIceGolem] 			= TRUE;
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune `EISGOLEM ERSCHAFFEN`:1 Eisgolemherz.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na runo: 1 serce golema lodowego.");	};	
 	if (spell == SPL_DestroyUndead)			{	PLAYER_TALENT_RUNES[SPL_DestroyUndead] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_HarmUndead, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´UNTOTE VERNICHTEN´:1 heiliges Wasser .");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, BEAUTY?: 1 swieta woda.");	};		
 	if (spell == SPL_Pyrokinesis)			{	PLAYER_TALENT_RUNES[SPL_Pyrokinesis] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_Pyrokinesis, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune `GROSSER FEUERSTURM´: 1 Schwefel und 1 Zunge eines Feuerwarans.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_Firestorm)				{	PLAYER_TALENT_RUNES[SPL_Firestorm] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firestorm, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´FEUERSTURM´: 1 Schwefel und 1 Pech.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki burzy pozarowej runy?: 1 siarka i 1 boisko.");	};		
 	if (spell == SPL_Pyrokinesis_g1)			{	PLAYER_TALENT_RUNES[SPL_Pyrokinesis_g1] 			= TRUE;					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune `PYROKINESE´: 2 Schwefel und 2 Zungen eines Feuerwarans.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_IceWave)				{	PLAYER_TALENT_RUNES[SPL_IceWave] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_IceWave, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´EISWELLE´: 1 Gletscher Quartz und 1 Aquamarin");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune? Fala lodowa: 1 kwarc lodowy i 1 akwamaryna.");	};		
 	if (spell == SPL_SummonDemon)			{	PLAYER_TALENT_RUNES[SPL_SummonDemon] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumDemon, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´DÄMON BESCHWÖREN´: 1 Dämonenherz");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na rune, DEMONS: 1 serce demona?");	};		
 	if (spell == SPL_FullHeal)				{	PLAYER_TALENT_RUNES[SPL_FullHeal] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_FullHeal, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´SCHWERE WUNDEN HEILEN´ 1 Heilwurzel");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runów GLÓWNIE OSIAGNIECIA UZYTKOWNIKÓW? 1 korzen leczniczy?");	};	
 	if (spell == SPL_Firerain)				{	PLAYER_TALENT_RUNES[SPL_Firerain] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firerain, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´FEUERREGEN´: 1 Pech und eine Zunge von einem Feuerwaran");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, RAIN OGNIECIA: 1 nachylenie i jeden jezyk z monitora przeciwpozarowego?");	};		
 	if (spell == SPL_BreathOfDeath)			{	PLAYER_TALENT_RUNES[SPL_BreathOfDeath]			= TRUE;	CreateInvItems (ScrollTrader, ItSc_BreathOfDeath, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´TODESHAUCH´: 1 Kohle und 1 schwarze Perle");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki Rune: 1 wegiel drzewny i 1 czarna perla?");	};		
 	if (spell == SPL_MassDeath)				{	PLAYER_TALENT_RUNES[SPL_MassDeath] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_MassDeath, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´MASSENTOD´: 1 Skelettknochen und 1 schwarze Perle");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa: 1 kosc szkieletowa i 1 czarna perla?");	};		
 	if (spell == SPL_ArmyOfDarkness)		{	PLAYER_TALENT_RUNES[SPL_ArmyOfDarkness] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_ArmyOfDarkness, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´ARMEE DER FINSTERNIS´: 1 Skelettknochen, 1 schwarze Perle, 1 Herz eines Steingolems und 1 Dämonenherz. ");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune ARMEE DER FINSTERNIS: 1 kosc szkieletowa, 1 czarna perla, 1 serce kamiennego golema i 1 serce demona. ");	};		
 	if (spell == SPL_Icerain)				{	PLAYER_TALENT_RUNES[SPL_Icerain] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Icerain, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´EISREGEN´: 1 Pech");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki na rune, ICE RAIN: 1 szt.");	};		
 	if (spell == SPL_SummonDragon)			{	PLAYER_TALENT_RUNES[SPL_SummonDragon] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumDemon, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´DRACHE BESCHWÖREN´: 1 Drachenei");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla runa, smialek: 1 smocze jajko?");	};		
 	if (spell == SPL_Shrink)				{	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Shrink, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´MONSTER SCHRUMPFEN´: 1 Goblinknochen und 1 Trollzahn");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune' a MONSTER SCHRUMPFEN?: 1 kosc goblinowa i 1 zab trollowy?");	};		
 	
 	//Addon
 	
@@ -152,26 +152,26 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_Thunderstorm)			{	PLAYER_TALENT_RUNES[SPL_Thunderstorm]			= TRUE; CreateInvItems (ScrollTrader, ItSc_Thunderstorm, 1);			
 	B_LogEntry (TOPIC_TalentRunes,Log_Text_Addon_TalentRune_Thunderstorm);	};
 	if (spell == SPL_SuckEnergy)				{	PLAYER_TALENT_RUNES[SPL_SuckEnergy]	= TRUE;
-	B_LogEntry (TOPIC_TalentRunes,"Zutaten für die Rune ´ENERGIE STEHLEN´: 1 Fläschchen Menschenblut"); };
+	B_LogEntry (TOPIC_TalentRunes,"Skladniki dla Rune: 1 butelka krwi ludzkiej?"); };
 	if (spell == SPL_SummonGuardian)
 	{
 		PLAYER_TALENT_RUNES[SPL_SummonGuardian] = TRUE;
-		B_LogEntry	(TOPIC_TalentRunes,"Zutaten für die Rune ´WÄCHTER BESCHWÖREN´: 1 alte Münze und 1 Bergkristall");
+		B_LogEntry	(TOPIC_TalentRunes,"Skladniki DYSKCJI ZATRZYMANIA RUNU: 1 stara moneta i 1 krysztal skalny");
 	};
 	if (spell == SPL_SummonZombie)
 	{
 		PLAYER_TALENT_RUNES[SPL_SummonZombie] = TRUE;
-		B_LogEntry	(TOPIC_TalentRunes,"Zutaten für die Rune ´ZOMBIE BESCHWÖREN´: 1 Zombiefleisch und 1 Fläschchen Menschenblut");
+		B_LogEntry	(TOPIC_TalentRunes,"Skladniki dla Rune ZOMBIE DEMONS: 1 mieso zombie i 1 butelka krwi ludzkiej.");
 	};
 	if (spell == SPL_EnergyBall)
 	{
 		PLAYER_TALENT_RUNES[SPL_EnergyBall] = TRUE;
-		B_LogEntry	(TOPIC_TalentRunes,"Zutaten für die Rune ´BELIARS ZORN´: 1 Schwarze Perle und 2 Kohle");
+		B_LogEntry	(TOPIC_TalentRunes,"Skladniki dla Rune' a BELIARSKIEGO ZORNU: 1 czarna perla i 2 wegiel.");
 	};
 	if (spell == SPL_Skull)
 	{
 		PLAYER_TALENT_RUNES[SPL_Skull] = TRUE;
-		B_LogEntry	(TOPIC_TalentRunes,"Zutaten für die Rune ´SCHREI DER TOTEN´: 2 Fläschchen Menschenblut, 3 Zombiefleisch und 2 Knochen");
+		B_LogEntry	(TOPIC_TalentRunes,"Skladniki do runy: 2 butelki krwi ludzkiej, 3 zombie mieso i 2 kosci.");
 	};
 	// Scrolls und Runen-Joker fehlen
 	if (spell == SPL_Zerfleischen)				{	PLAYER_TALENT_RUNES[SPL_Zerfleischen]					= TRUE; CreateInvItems (ScrollTrader, ItSc_Zerfleischen, 1);					

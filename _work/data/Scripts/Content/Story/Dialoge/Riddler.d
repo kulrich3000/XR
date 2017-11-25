@@ -19,9 +19,9 @@ FUNC INT Info_Mod_Riddler_Hi_Condition()
 
 FUNC VOID Info_Mod_Riddler_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_00"); //Was ist passiert? Ich kann mich nicht mehr genau erinnern.
-	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_01"); //Schatten, Tod und eine ungeheure Macht.
-	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_02"); //Hat Chromanin mich verlassen?
+	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_00"); //Co sie dzieje? Nie pamietam dokladnie.
+	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_01"); //Cien, smierc i ogromna moc.
+	AI_Output(self, hero, "Info_Mod_Riddler_Hi_09_02"); //Chromanin mnie opuscil?
 
 	B_SetTopicStatus	(TOPIC_MOD_THERIDDLE, LOG_SUCCESS);
 	
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_Riddler_Chromanin (C_INFO)
 	information	= Info_Mod_Riddler_Chromanin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist Chromanin?";
+	description	= "Czym jest chromanina?";
 };
 
 FUNC INT Info_Mod_Riddler_Chromanin_Condition()
@@ -49,17 +49,17 @@ FUNC INT Info_Mod_Riddler_Chromanin_Condition()
 
 FUNC VOID Info_Mod_Riddler_Chromanin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Riddler_Chromanin_15_00"); //Was ist Chromanin?
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_01"); //Chromanin ist eine unvorstellbare Macht. Ich habe sie vor langer Zeit empfangen.
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_02"); //Es scheint mir als hätte ich diese Macht von einem der Götter. Ich habe ebenfalls ein Schwert empfangen.
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_03"); //Es ist sehr mächtig. Durch dieses Schwert habe ich viele Kämpfe gewonnen.
-	AI_Output(hero, self, "Info_Mod_Riddler_Chromanin_15_04"); //Wie konnte es dann passieren das du stirbst?
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_05"); //Nein, ich war keineswegs tot. Aber die dunklen Mächte, mit denen ich mich einließ, übermannten mich und warfen mich in eine magische Zwischenwelt.
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_06"); //Dort war ich gefangen und konnte nur auf magischem Wege mit dem Diesseits kommunizieren.
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_07"); //So füllte ich die magischen Bücher mit Hinweisen, die zu meiner Befreiung führen konnten.
-	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_08"); //Jedoch haben die finsteren Kräfte versucht ihren Sinn in Rätseln zu verschleiern und viele andere Hindernisse geschaffen ...
+	AI_Output(hero, self, "Info_Mod_Riddler_Chromanin_15_00"); //Czym jest chromanina?
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_01"); //Chromanin jest niewyobrazalna potega. Dostalem je dawno temu.
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_02"); //Wydaje mi sie, ze mam te moc od jednego z bogów. Dostalem tez miecz.
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_03"); //Jest bardzo potezny. Z tym mieczem wygralem wiele walk.
+	AI_Output(hero, self, "Info_Mod_Riddler_Chromanin_15_04"); //Jak wiec moze sie zdarzyc, ze umrzesz?
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_05"); //Nie, w ogóle nie umarlem. Ale mroczne sily, którymi wciagnalem sie w gre, ogarnely mnie i rzucily w magiczny swiat.
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_06"); //Tam zostalem uwieziony i moglem komunikowac sie z tym swiatem tylko w magiczny sposób.
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_07"); //Wiec wypelnilem magiczne ksiazki wskazówkami, które moglyby doprowadzic do wyzwolenia.
+	AI_Output(self, hero, "Info_Mod_Riddler_Chromanin_09_08"); //Jednak ciemne sily staraly sie przycmic ich znaczenie w zagadkach i stworzyly wiele innych przeszkód....
 
-	B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Riddler hat etwas über ein Schwert gesagt, dass er zusammen mit Chromanin empfangen hat.");
+	B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Riddler powiedzial cos o mieczu, który dostal razem z chromanina.");
 };
 
 INSTANCE Info_Mod_Riddler_Schwert (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Riddler_Schwert (C_INFO)
 	information	= Info_Mod_Riddler_Schwert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit dem Schwert geschehen?";
+	description	= "Co sie stalo z mieczem?";
 };
 
 FUNC INT Info_Mod_Riddler_Schwert_Condition()
@@ -83,26 +83,26 @@ FUNC INT Info_Mod_Riddler_Schwert_Condition()
 
 FUNC VOID Info_Mod_Riddler_Schwert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Riddler_Schwert_15_00"); //Was ist mit dem Schwert geschehen?
-	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_01"); //Die dunkle Magie manifestierte sich zu finsteren Wesen, welche es an sich nahmen. Eines von ihnen hat das Schwert weggebracht. Wahrscheinlich liegt es noch irgendwo in den Höhlen unter dem Turm.
-	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_02"); //Da du bei deiner Suche allen Hindernissen trotztest, hast du dich als würdig erwiesen. Du sollst das Schwert behalten, wenn du es findest.
-	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_03"); //Ich war nicht derjenige, für den es bestimmt war und werde mich in Zukunft vor Mächten hüten, denen ich nicht gewachsen bin.
-	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_04"); //Daher kann ich dir bei deiner Suche mit nicht viel helfen, außer einem Teil meiner Macht.
+	AI_Output(hero, self, "Info_Mod_Riddler_Schwert_15_00"); //Co sie stalo z mieczem?
+	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_01"); //Czarna magia przejawiala sie w mrocznych istotach, które wziely ja na siebie. Jeden z nich zabral miecz. Prawdopodobnie jest jeszcze gdzies w jaskiniach pod wieza.
+	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_02"); //Skoro pokonales wszystkie przeszkody na drodze do celu, okazales sie godnym uwagi. Chce, abys zachowal miecz, kiedy go znajdziecie.
+	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_03"); //Nie bylam tym, do czego byla przeznaczona i bede sie bronic przed mocami, których nie mam w przyszlosci.
+	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_09_04"); //Wiec nie moge ci wiele pomóc w twoim poszukiwaniu, poza czescia mojej mocy.
 
 	Info_ClearChoices	(Info_Mod_Riddler_Schwert);
 
-	Info_AddChoice	(Info_Mod_Riddler_Schwert, "2 Stärke", Info_Mod_Riddler_Schwert_C);
-	Info_AddChoice	(Info_Mod_Riddler_Schwert, "2 Geschick", Info_Mod_Riddler_Schwert_B);
-	Info_AddChoice	(Info_Mod_Riddler_Schwert, "3 Mana", Info_Mod_Riddler_Schwert_A);
+	Info_AddChoice	(Info_Mod_Riddler_Schwert, "wytrzymalosc", Info_Mod_Riddler_Schwert_C);
+	Info_AddChoice	(Info_Mod_Riddler_Schwert, "2 Umiejetnosc", Info_Mod_Riddler_Schwert_B);
+	Info_AddChoice	(Info_Mod_Riddler_Schwert, "3 Mana Mana", Info_Mod_Riddler_Schwert_A);
 };
 
 FUNC VOID Info_Mod_Riddler_Schwert_D()
 {
-	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_D_09_00"); //Viel Erfolg auf deinem weiteren Weg. Er wird die Geschicke von Menschen und Göttern bestimmen.
+	AI_Output(self, hero, "Info_Mod_Riddler_Schwert_D_09_00"); //Zycze powodzenia w drodze. On okresli przeznaczenie ludzi i bogów.
 
 	Info_ClearChoices	(Info_Mod_Riddler_Schwert);
 
-	B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Riddler vermutet, dass sich das Schwert noch im Nebelturm befindet. Eines der Skelette hat es damals mitgenommen ...");
+	B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Napastnik podejrzewa, ze miecz nadal znajduje sie w Wiezy Mgly. Jeden z szkieletów odebral ja wtedy.....");
 
 	Wld_InsertNpc	(Skeleton_Anführer, "OW_FOGDUNGEON_42");
 };

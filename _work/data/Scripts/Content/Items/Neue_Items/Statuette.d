@@ -1,6 +1,6 @@
 INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 {
-	name 				=	"Statuette";
+	name 				=	"figurka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -11,7 +11,7 @@ INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 	material 			=	MAT_CLAY;
 
 	description			=	name;
-	TEXT[0]				= "Diese Figur stellt ein unförmiges Wesen dar,";
-	TEXT[1]				= "das eine Maske trägt.";
-	TEXT[2]				= "Die Maske wird von 6 großen Stacheln umsäumt";
+	TEXT[0]				= "Liczba ta reprezentuje istote niesformulowana,";
+	TEXT[1]				= "nosic maske.";
+	TEXT[2]				= "Maska otoczona jest 6 duzymi kregoslupami.";
 };

@@ -2,7 +2,7 @@ instance Mod_7799_SMK_Brandick_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Brandick";
+	name 		=	"oparzenie";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		= 	50;		// wegen XP!

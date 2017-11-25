@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Azhar_Hi (C_INFO)
 	information	= Info_Mod_Azhar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Na'im schickt mich. Du hast wohl ein Problem.";
+	description	= "Witaj! No cóz, wyslal mnie. Musisz miec problem.";
 };
 
 FUNC INT Info_Mod_Azhar_Hi_Condition()
@@ -20,9 +20,9 @@ FUNC INT Info_Mod_Azhar_Hi_Condition()
 
 FUNC VOID Info_Mod_Azhar_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Azhar_Hi_15_00"); //Hallo! Na'im schickt mich. Du hast wohl ein Problem.
-	AI_Output(self, hero, "Info_Mod_Azhar_Hi_04_01"); //Was die erzählen. Es ist nichts. Jedenfalls im Moment nicht. Später vielleicht.
-	AI_Output(hero, self, "Info_Mod_Azhar_Hi_15_02"); //Verstehe. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Azhar_Hi_15_00"); //Witaj! No cóz, wyslal mnie. Musisz miec problem.
+	AI_Output(self, hero, "Info_Mod_Azhar_Hi_04_01"); //Co oni mówia. To nic. Tak czy owak, nie w tej chwili. Moze pózniej.
+	AI_Output(hero, self, "Info_Mod_Azhar_Hi_15_02"); //Widze. Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Azhar_Later (C_INFO)
@@ -47,20 +47,20 @@ FUNC INT Info_Mod_Azhar_Later_Condition()
 
 FUNC VOID Info_Mod_Azhar_Later_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_00"); //Bei Beliar! Wo schleichst du rum?
-	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_01"); //Man hat ja auch noch anderes zu tun. Wo brennt's denn?
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_02"); //Anderes zu tun? Von einem Anwärter auf die Kriegerschaft erwarte ich volle Bereitschaft.
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_03"); //Ich frage mich schon, wie du's überhaupt so weit gebracht hast.
-	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_04"); //Durch volle Bereitschaft natürlich. Also, was ist los?
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_05"); //Es geht ein Gerücht um, dass einer der sagenhaften Zeremoniendolche der Alten auf der Insel zu finden ist.
-	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_06"); //Ein Zeremoniendolch? Noch nie davon gehört. Was soll ...
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_07"); //Schweig! Such das Teil und bringe es mir, sonst ist deine Laufbahn bei uns Kriegern beendet!
-	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_08"); //Reg dich ab. Ich muss wenigstens wissen, woher dieses Gerücht kommt.
-	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_09"); //Amir hat in der Stadt so was gehört. Und nun verschwinde!
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_00"); //Beliar! Gdzie sie skradasz?
+	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_01"); //Sa jeszcze inne rzeczy, które trzeba zrobic. Gdzie jest ogien?
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_02"); //Zrobienie czegos innego? Oczekuje, ze pretendent do wojny bedzie w pelni przygotowany.
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_03"); //Zastanawiam sie, jak pan to zrobil tak daleko.
+	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_04"); //Oczywiscie w pelnej gotowosci. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_05"); //Istnieje plotka, ze na wyspie znajduje sie jeden z legendarnych sztyletów ceremonialnych starozytnosci.
+	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_06"); //Sztylet ceremonialny? Nigdy o tym nie slyszalem. Co.....?
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_07"); //Wylaczyc! Znajdz to i przynies to do mnie, albo twoja kariera z nami wojownicy sie skonczy!
+	AI_Output(hero, self, "Info_Mod_Azhar_Later_15_08"); //Nie badz podekscytowany. Przynajmniej musze wiedziec, skad ta plotka pochodzi.
+	AI_Output(self, hero, "Info_Mod_Azhar_Later_04_09"); //Amir slyszal cos takiego w miescie. Teraz wyjdz z tego miejsca!
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Was ein ungemütlicher Mann, dieser Azhar. Ich soll ihm einen Zeremoniendolch, eine Waffe der Alten, besorgen, der angeblich irgendwo auf Khorinis zu finden ist. Amir hat das Gerücht ins Lager gebracht, vielleicht weiß der Näheres. Müsste am Tempelplatz sein ...");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Cóz za niewygodny czlowiek, Azhar. Mialem go dostac ceremonialnym sztyletem, bronia starozytnosci, która ma znalezc sie gdzies w Khorinis. Amir przyniósl plotke do obozu, moze szczególy. Powinna znajdowac sie na miejscu swiatyni......");
 };
 
 INSTANCE Info_Mod_Azhar_Blutkelch (C_INFO)
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Azhar_Blutkelch (C_INFO)
 	information	= Info_Mod_Azhar_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Beliar zum Gruß, Bruder!";
+	description	= "Beliar, brat!";
 };
 
 FUNC INT Info_Mod_Azhar_Blutkelch_Condition()
@@ -84,20 +84,20 @@ FUNC INT Info_Mod_Azhar_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Azhar_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_00"); //Beliar zum Gruß, Bruder!
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_01"); //Bruder? Ich bin immer noch dein Vorgesetzter. Hast du den Kelch?
-	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_02"); //Nein. Aber hat vielleicht ein anderer Assassine das Teil schon beschafft?
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_03"); //Nicht, dass ich wüsste. Mir hat ihn jedenfalls niemand gegeben.
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_04"); //Vielleicht hat Mustafa schon den Kelch. Er hat den Auftrag dazu gegeben.
-	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_05"); //Den du umgehend an mich weitergegeben hast.
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_06"); //Werd nicht unverschämt, Bursche! Du wolltest doch meine Stimme haben.
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_07"); //Die bekommst du natürlich nicht, wenn der Kelch schon im Lager ist.
-	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_08"); //Aber ich bin tagelang über die ganze Insel gelaufen.
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_09"); //Dein Pech. Nun sprich mit dem Boss.
-	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_10"); //Du meinst den Rat Mustafa?
-	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_11"); //Wen sonst? Beeil dich.
+	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_00"); //Beliar, brat!
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_01"); //Brat? Jestem nadal twoim przelozonym. Czy zdobyles puchar?
+	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_02"); //Nie. Ale czy inny zabójca moze juz cos nabyl?
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_03"); //Nie wiem o tym. Nikt mi jej i tak nie dal.
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_04"); //Byc moze Mustafa ma juz kubek. Wydal rozkaz.
+	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_05"); //która natychmiast mi przekazaliscie.
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_06"); //Nie badz niegrzeczny, chlopak! Powiedzial pan, ze chce pan mojego glosu.
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_07"); //Oczywiscie nie dostaniesz go, gdy kielich jest juz w magazynie.
+	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_08"); //Ale przez cale dni chodzilem po calej wyspie.
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_09"); //Zbyt zle dla Ciebie. Teraz porozmawiaj z szefem.
+	AI_Output(hero, self, "Info_Mod_Azhar_Blutkelch_15_10"); //Masz na mysli Rade Mustafe?
+	AI_Output(self, hero, "Info_Mod_Azhar_Blutkelch_04_11"); //Kto jeszcze inny? Chodz, spiesz sie.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Ich soll mich bei Mustafa erkundigen, ob ihm der Kelch bereits gebracht wurde.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Pytam sie z Mustafa, czy puchar zostal juz do niego przyniesiony.");
 };
 
 INSTANCE Info_Mod_Azhar_Pickpocket (C_INFO)

@@ -12,7 +12,7 @@ FUNC VOID B_StartMangel()
 	{
 		Log_CreateTopic	(TOPIC_MOD_FM_MANGEL, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_FM_MANGEL, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Durch die lange Belagerung fehlt es in Patherion an vielen Dingen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Z powodu dlugiego oblezenia w Patherionie brakuje wielu rzeczy.");
 
 		Mod_Pat_MangelStarted = 1;
 	};
@@ -37,7 +37,7 @@ FUNC VOID B_StopMangel()
 	&& (Npc_KnowsInfo(hero, Info_Mod_Nagon_MangelQuest2))
 	&& (Npc_KnowsInfo(hero, Info_Mod_Velario_MangelQuest2))
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Ich habe allen geholfen. Innos dürfte zufrieden mit mir sein.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Pomagalem wszystkim. Innos powinien mnie zadowolic.");
 		B_SetTopicStatus	(TOPIC_MOD_FM_MANGEL, LOG_SUCCESS);
 
 		Mod_Pat_MangelStarted = 2;

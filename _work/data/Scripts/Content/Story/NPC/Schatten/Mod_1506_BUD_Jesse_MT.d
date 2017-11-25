@@ -2,7 +2,7 @@ instance Mod_1506_BUD_Jesse_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Jesse";
+	name =							"Jesza";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							4;

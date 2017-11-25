@@ -2,7 +2,7 @@ const int	Value_MegaBerry		=	10;		const int	HP_MegaBerry		=	-60;
 const int	Mana_MegaBerry		=	20;		const int	ManaMax_MegaBerry	=	3;
 INSTANCE ItFo_MegaBerry (C_Item)
 {	
-	name 				=	"Flammenbeere";
+	name 				=	"jagoda";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -18,7 +18,7 @@ INSTANCE ItFo_MegaBerry (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		
 	COUNT[1]			= 	HP_MegaBerry;
 	
-	TEXT[3]				=    "Eine seltsame Beere";
+	TEXT[3]				=    "dziwna jagoda";
 	TEXT[4]				=    "";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_MegaBerry;

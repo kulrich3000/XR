@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Quentin_Hi (C_INFO)
 	information	= Info_Mod_Quentin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Quentin_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Quentin_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Quentin_Hi_07_01"); //Ich bin Quentin.
+	AI_Output(self, hero, "Info_Mod_Quentin_Hi_07_01"); //Jestem Quentin.
 };
 
 INSTANCE Info_Mod_Quentin_AmulettWeg (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Quentin_AmulettWeg (C_INFO)
 	information	= Info_Mod_Quentin_AmulettWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll im alten Lager versuchen, wieder an das Amulett zu kommen.";
+	description	= "Postaram sie dostac amulet z powrotem do starego obozu.";
 };
 
 FUNC INT Info_Mod_Quentin_AmulettWeg_Condition()
@@ -44,42 +44,42 @@ FUNC INT Info_Mod_Quentin_AmulettWeg_Condition()
 
 FUNC VOID Info_Mod_Quentin_AmulettWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_00"); //Ich soll im alten Lager versuchen, wieder an das Amulett zu kommen.
+	AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_00"); //Postaram sie dostac amulet z powrotem do starego obozu.
 
 	if (Kapitel < 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_01"); //Kannst du mir irgendetwas über Sabitsch sagen, was mir weiterhelfen könnte?
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_02"); //(missmutig) Ich weiß, ich habe da verdammte Scheiße gebaut, was ich schwer wieder gut machen kann.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_03"); //Aber ich werde zumindest versuchen, dir möglichst gute Auskunft über Sabitsch zu geben, auch wenn du das meiste wohl bereits von Dexter erfahren hast.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_04"); //Also, dieser Sabitsch ist ein unglaublich schneller und schlagkräftiger Kämpfer, wie ich es noch nie erlebt habe. Er schwingt seine Axt, als es ein Degen.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_05"); //Nimm es nicht persönlich, wenn ich anzweifele, dass du eine Chance gegen ihn im Kampf hättest.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_06"); //Aber ich bin ein guter Kämpfer und konnte doch nicht länger als wenige Sekunden gegen ihn bestehen.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_07"); //Hmm, da fällt mir noch ein, dass er wohl eine Vorliebe für Ringe und Amulette hat.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_08"); //Er trägt einiges davon am Körper und hat schon gierig nach meinem Amulett geschaut, bevor er überhaupt von den magischen Eigenschaften wissen konnte.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_09"); //Mehr fällt mir leider nicht dazu ein. Ich kann dir aber noch diese Spruchrollen geben, die ich mal einem Händler am Marktplatz in Khorinis abgenommen habe.
+		AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_01"); //Czy mozesz mi powiedziec cos o Sabitsch, co moze mi pomóc?
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_02"); //Wiem, ze peknalem, czego nie potrafie odrobic.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_03"); //Spróbuje jednak przynajmniej dac ci jak najwiecej informacji na temat Sabitsch, mimo ze prawdopodobnie wiesz juz o tym od Dextera.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_04"); //Tak wiec, ten Sabitsch jest niesamowicie szybkim i poteznym wojownikiem, jakiego nigdy wczesniej nie widzialem. Obraca siekiere, bo jest mieczem.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_05"); //Nie bierzcie tego osobiscie, jesli watpie, ze masz szanse w walce przeciwko niemu.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_06"); //Ale jestem dobrym wojownikiem i nie moglem sprzeciwic sie mu przez ponad kilka sekund.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_07"); //No cóz, to mi przypomina, zdaje sie miec zamilowanie do pierscionków i amuletów.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_08"); //On nosi kilka z nich na swoim ciele i juz chciwie szukal mojego amuletu, zanim mógl nawet wiedziec o magicznych cechach.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_09"); //To wszystko, o czym moge pomyslec. Ale nadal moge dac ci te rolki zaklecia, które wzialem od handlowca na rynku w Khorinis.
 
 		CreateInvItems	(hero, ItSc_IceCube, 1);
 		CreateInvItems	(hero, ItSc_Charm, 1);
 
-		B_ShowGivenThings	("2 Spruchrolle erhalten");
+		B_ShowGivenThings	("2 Przyjmowanie roli mówienia");
 
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_10"); //Ich hoffe, ich konnte dir damit zumindest etwas weiterhelfen.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_10"); //Mam nadzieje, ze przynajmniej móglbym panstwu w tym pomóc.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Von Quentin habe ich erfahren, dass er außer seinem Geschick im Kampf eine Vorliebe für Schmuck hat. Ob mir das weiterhilft?");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Nauczylem sie od Quentina, ze oprócz swoich umiejetnosci bizuteryjnych ma równiez zamilowanie do bizuterii. Czy to mi pomoze?");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_11"); //(missmutig) Ich weiß, ich habe da verdammte Scheiße gebaut, was ich schwer wieder gut machen kann.
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_12"); //Aber ich werde es zumindest versuchen. Hier, ich kann dir diese Spruchrollen geben, die ich mal einem Händler am Marktplatz in Khorinis abgenommen habe.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_11"); //Wiem, ze peknalem, czego nie potrafie odrobic.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_12"); //Spróbuje jednak przynajmniej spróbowac. Tutaj moge dac ci te rolki zaklec, które wzialem od kupca na targowisku w Khorinis.
 
-		B_ShowGivenThings	("2 Spruchrolle erhalten");
+		B_ShowGivenThings	("2 Przyjmowanie roli mówienia");
 
-		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_13"); //Die könnten dir entscheidend weiterhelfen. Viel Glück.
-		AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_14"); //Ja, kann ich brauchen.
+		AI_Output(self, hero, "Info_Mod_Quentin_AmulettWeg_07_13"); //Moglyby one stanowic decydujaca pomoc. Zycze powodzenia.
+		AI_Output(hero, self, "Info_Mod_Quentin_AmulettWeg_15_14"); //Tak, moge go uzyc.
 
 		CreateInvItems	(hero, ItSc_TrfRabbit, 2);
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Von Quentin habe ich Verwandlungsspruchrollen erhalten.");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Quentin nadal mi role w transformacji.");
 	};
 };
 

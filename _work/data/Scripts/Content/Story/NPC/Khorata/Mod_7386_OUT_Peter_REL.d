@@ -1,7 +1,7 @@
 instance Mod_7386_OUT_Peter_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Peter";
+	name 		= "Piotr";
 	guild 		= GIL_OUT;
 	id 			= 7386;
 	voice 		= 14;

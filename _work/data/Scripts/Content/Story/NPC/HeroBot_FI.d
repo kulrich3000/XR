@@ -1,7 +1,7 @@
 instance HeroBot_FI (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Helden-Bot";
+	name 		= "bohater";
 	guild		= GIL_DMT;
 	id			= 7233;
 	voice		= 33;

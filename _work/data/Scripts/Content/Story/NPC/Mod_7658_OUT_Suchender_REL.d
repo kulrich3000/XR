@@ -2,7 +2,7 @@ instance Mod_7658_OUT_Suchender_REL (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Suchender";
+	name 		=	"poszukiwacz";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_STRF;
 	level 		=	10;

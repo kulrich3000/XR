@@ -29,7 +29,7 @@ INSTANCE DIA_NOV_3_JOIN(C_INFO)
 	condition	= DIA_NOV_3_JOIN_Condition;
 	information	= DIA_NOV_3_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will ein Magier werden!";
+	description = "Chce byc magikiem!";
 };                       
 
 FUNC INT DIA_NOV_3_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_NOV_3_JOIN_Condition()
 
 FUNC VOID DIA_NOV_3_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_3_JOIN_15_00"); //Ich will ein Magier werden!
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_01"); //Das wollen viele der Novizen. Aber nur den wenigsten ist es bestimmt, als Erwählte die Chance zu bekommen, in den Kreis des Feuers aufgenommen zu werden.
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_02"); //Ein Magier vom Kreis des Feuers zu sein, ist die höchste Ehre, die dir in unserem Orden zuteil werden kann.
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_03"); //Du wirst hart dafür arbeiten müssen, um deine Chance zu bekommen.
+	AI_Output (hero, self, "DIA_NOV_3_JOIN_15_00"); //Chce byc magikiem!
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_01"); //Tego wlasnie pragnie wielu nowicjuszy. Ale tylko nieliczni maja szanse dostac szanse na to, by zostac przyjeci w krag ognia jako wybrani.
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_02"); //Bycie czarodziejem z kregu ognia jest najwyzszym zaszczytem, który moze byc Ci dany w naszym porzadku.
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_03"); //Musisz ciezko pracowac, aby uzyskac szanse.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_NOV_3_PEOPLE(C_INFO)
 	condition	= DIA_NOV_3_PEOPLE_Condition;
 	information	= DIA_NOV_3_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer führt dieses Kloster?";
+	description = "Kto prowadzi ten klasztor?";
 };                       
 
 FUNC INT DIA_NOV_3_PEOPLE_Condition()
@@ -67,9 +67,9 @@ FUNC INT DIA_NOV_3_PEOPLE_Condition()
 
 FUNC VOID DIA_NOV_3_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_3_PEOPLE_15_00"); //Wer führt dieses Kloster?
-	AI_Output (self, hero, "DIA_NOV_3_PEOPLE_03_01"); //Wir Novizen dienen den Magiern vom Kreis des Feuers. Diese wiederum werden angeführt vom hohen Rat der Feuermagier, der aus den drei mächtigsten Feuermagiern von Khorinis besteht.
-	AI_Output (self, hero, "DIA_NOV_3_PEOPLE_03_02"); //Aber für alle Belange der Novizen ist Parlan zuständig. Er ist immer im Hof und überwacht die Arbeit der Novizen.
+	AI_Output (hero, self, "DIA_NOV_3_PEOPLE_15_00"); //Kto prowadzi ten klasztor?
+	AI_Output (self, hero, "DIA_NOV_3_PEOPLE_03_01"); //My, nowicjusze, sluzymy magikom z kregu ognia. Te z kolei kierowane sa przez Najwyzsza Rade Strazaków, która sklada sie z trzech najsilniejszych Strazaków Khorinis.
+	AI_Output (self, hero, "DIA_NOV_3_PEOPLE_03_02"); //Ale parlamentarzysta jest odpowiedzialny za wszystkie potrzeby nowicjuszy. Zawsze jest na podwórku i nadzoruje prace nowicjuszy.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_NOV_3_LOCATION(C_INFO)
 	condition	= DIA_NOV_3_LOCATION_Condition;
 	information	= DIA_NOV_3_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über dieses Kloster erzählen?";
+	description = "Co mozesz mi powiedziec o tym klasztorze?";
 };                       
 
 FUNC INT DIA_NOV_3_LOCATION_Condition()
@@ -91,10 +91,10 @@ FUNC INT DIA_NOV_3_LOCATION_Condition()
 
 FUNC VOID DIA_NOV_3_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_3_LOCATION_15_00"); //Was kannst du mir über dieses Kloster erzählen?
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_01"); //Wir bauen uns hier unsere bescheidene Verpflegung selbst an. Wir züchten Schafe und keltern Wein.
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_02"); //Es gibt eine Bibliothek, aber deren Nutzung ist den Magiern und den ausgesuchten Novizen vorbehalten.
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_03"); //Wir anderen Novizen kümmern uns in erster Linie darum, dass es den Magiern vom Kreis des Feuers an nichts fehlt.
+	AI_Output (hero, self, "DIA_NOV_3_LOCATION_15_00"); //Co mozesz mi powiedziec o tym klasztorze?
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_01"); //Rozwijamy tu wlasny pokorny catering. Chowamy owce i produkujemy wino.
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_02"); //Istnieje biblioteka, ale jej wykorzystanie jest zastrzezone dla magów i nowicjuszy.
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_03"); //Inni nowicjusze troszcza sie przede wszystkim o to, aby magicy z kregu ognia nie mieli nic zlego.
 };
 
 INSTANCE Info_Mod_NOV_3_Pickpocket (C_INFO)

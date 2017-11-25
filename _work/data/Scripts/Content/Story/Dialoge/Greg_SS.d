@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Greg_SS_Hi_Condition()
 
 FUNC VOID Info_Mod_Greg_SS_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_SS_Hi_01_00"); //(schreit) Eine orkische Kriegsgaleere! Jedermann auf seinen Posten!
+	AI_Output(self, hero, "Info_Mod_Greg_SS_Hi_01_00"); //Orkiestra kambuz wojenny! Kazdy na Twój post!
 
 	AI_StopProcessInfos	(self);
 };
@@ -41,7 +41,7 @@ FUNC INT Info_Mod_Greg_SS_Entern_Condition()
 
 FUNC VOID Info_Mod_Greg_SS_Entern_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_SS_Entern_01_00"); //(ruft) Entert das Orkschiff!
+	AI_Output(self, hero, "Info_Mod_Greg_SS_Entern_01_00"); //(skrzyk) Wejdz do orkiestry!
 
 	AI_StopProcessInfos	(self);
 };

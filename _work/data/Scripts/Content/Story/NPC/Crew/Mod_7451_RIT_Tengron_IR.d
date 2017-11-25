@@ -1,7 +1,7 @@
 instance Mod_7451_RIT_Tengron_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Tengron";
+	name 		= "tengron";
 	guild 		= GIL_OUT;
 	id 			= 7451;
 	voice 		= 7;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Frazer_Hi (C_INFO)
 	information	= Info_Mod_Frazer_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Frazer_Hi_Condition()
@@ -21,19 +21,19 @@ FUNC VOID Info_Mod_Frazer_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_01"); //Rumstehen, und ab und zu kratz ich mir den Sack. (lacht rau)
-	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_02"); //Naja, eigentlich soll ich ein Auge auf die Jungs hier haben, aber was soll da schon groß passieren? (Pause)
-	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_03"); //Wart mal, wenn du schon hier bist ... nimmste das hier gleich mit zum Boss, oder?
-	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_04"); //Dann muss ich nämlich nicht immer laufen, gibt echt Spannenderes.
+	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_01"); //Stojac wokól, od czasu do czasu drapie moja torbe. (smiech szorstki)
+	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_02"); //No cóz, mam tu miec oko na chlopaków, ale co sie stanie? (pauza)
+	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_03"); //Czekaj minute, gdy jestes tutaj.... zabrac to od razu szefowi, czy móglbys?
+	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_04"); //Wtedy nie musze chodzic caly czas, co jest naprawde ekscytujace.
 
 	B_GiveInvItems	(self, hero, ItMi_ErzPaketFrazer, 10);
 
-	AI_Output(hero, self, "Info_Mod_Frazer_Hi_15_05"); //Was ... äh ... Wer ist der Boss?
-	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_06"); //Anselm natürlich! Wir brauchen das Zeug für Umbauarbeiten an den Wasserleitungen. Oder so.
+	AI_Output(hero, self, "Info_Mod_Frazer_Hi_15_05"); //Co.....? uh..... Kim jest szef?
+	AI_Output(self, hero, "Info_Mod_Frazer_Hi_29_06"); //Oczywiscie Anselm! Potrzebujemy tego, aby odbudowac instalacje wodociagowa. Albo cos.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_ERZPAKETE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_ERZPAKETE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_ERZPAKETE, "Frazer hat mir unvermittelt 10 Erzpakete in die Arme gedrückt, die ich zu Anselm in Khorata bringen soll.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ERZPAKETE, "Frazer nagle wcisnal do ramion mnie 10 opakowan rudy, które mialem przyniesc Anselmowi w Khoracie.");
 };
 
 INSTANCE Info_Mod_Frazer_Endres (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Frazer_Endres (C_INFO)
 	information	= Info_Mod_Frazer_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du einen Verdacht, wer Endres getötet haben könnte?";
+	description	= "Czy masz pomysl, kto mógl zabic Endów?";
 };
 
 FUNC INT Info_Mod_Frazer_Endres_Condition()
@@ -58,8 +58,8 @@ FUNC INT Info_Mod_Frazer_Endres_Condition()
 
 FUNC VOID Info_Mod_Frazer_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres_15_00"); //Hast du einen Verdacht, wer Endres getötet haben könnte?
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres_29_01"); //Da kommt eigentlich jeder der Schürfer infrage. Und sonst ... frag mich nicht.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres_15_00"); //Czy masz pomysl, kto mógl zabic Endów?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres_29_01"); //Wlasciwie kazdy poszukiwacz jest opcja. I inaczej..... nie pytaj mnie.
 };
 
 INSTANCE Info_Mod_Frazer_Endres02 (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Frazer_Endres02 (C_INFO)
 	information	= Info_Mod_Frazer_Endres02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer hat Endres' Arbeit übernommen?";
+	description	= "Kto przejal prace Endów?";
 };
 
 FUNC INT Info_Mod_Frazer_Endres02_Condition()
@@ -84,18 +84,18 @@ FUNC INT Info_Mod_Frazer_Endres02_Condition()
 
 FUNC VOID Info_Mod_Frazer_Endres02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_00"); //Wer hat Endres' Arbeit übernommen?
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_01"); //(misstrauisch) Wieso willst du das wissen? Planst wohl, auch ihn das Zeitliche segnen zu lassen?
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_02"); //Nein, aus Sicherheitsgründen werden wir den neuen Vorsteher nicht verraten.
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_03"); //Was muss ich tun, damit du mir den Namen verrätst?
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_04"); //Ich muss mir sicher sein, dass du ihm keinen Schaden zufügen willst.
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_05"); //Versprechen reicht dir wahrscheinlich nicht?
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_06"); //Haha. Hmm ... ein Nachweis deiner Loyalität ... na schön, da fällt mir was ein: Küss mich!
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_07"); //Was?!
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_08"); //Ahaha, Witz. Ein kleines Zettelchen von Anselm, auf dem er sich für dich verbürgt, würde mir auch reichen.
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_09"); //Ich werde sehen, was sich machen lässt.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_00"); //Kto przejal prace Endów?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_01"); //Dlaczego chcesz wiedziec? Czy zamierzacie uczynic go blogoslawienstwem takze dla doczesnych?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_02"); //Nie, ze wzgledów bezpieczenstwa nie zdradzimy nowego szefa.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_03"); //Co musze zrobic, abys dal mi imie?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_04"); //Musze miec pewnosc, ze nie chcesz mu krzywdzic.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_05"); //Obietnica prawdopodobnie nie wystarczy dla ciebie?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_06"); //Haha. Hmm..... dowód twojej lojalnosci.... Wszystko w porzadku, to przypomina mi o tym, ze caluj mnie!
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_07"); //Co?
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres02_29_08"); //Ahahaha, zart. Wystarczy mi troche papieru z Anselm, na który on kupuje dla Ciebie.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres02_15_09"); //Zobacze, co moge zrobic.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Frazer aus der Mine wird mir nur erzählen, wer Endres' Posten geerbt hat, wenn er von Anselm die Versicherung bekommen hat, dass mir zu trauen ist.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Frazer z kopalni powie mi, kto odziedziczyl pozycje Endresa tylko wtedy, gdy otrzymal zapewnienie od Anselm, ze moge byc zaufany.");
 };
 
 INSTANCE Info_Mod_Frazer_Endres03 (C_INFO)
@@ -106,7 +106,7 @@ INSTANCE Info_Mod_Frazer_Endres03 (C_INFO)
 	information	= Info_Mod_Frazer_Endres03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Von Anselm für dich.";
+	description	= "Z Anselm dla Ciebie.";
 };
 
 FUNC INT Info_Mod_Frazer_Endres03_Condition()
@@ -120,20 +120,20 @@ FUNC INT Info_Mod_Frazer_Endres03_Condition()
 
 FUNC VOID Info_Mod_Frazer_Endres03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_00"); //Von Anselm für dich.
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_00"); //Z Anselm dla Ciebie.
 
 	B_GiveInvItems	(hero, self, ItWr_AnselmForFrazer, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_01"); //Joa, in Ordnung. Dann darf ich dich wohl einweihen.
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_02"); //Also, Wendel hat natürlich Endres' Platz eingenommen. Er ist der einzige, der dafür qualifiziert ist.
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_03"); //Nur eine Frage habe ich noch: Warum willst du das eigentlich wissen?
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_04"); //Wendel steht ab jetzt unter Tatverdacht.
-	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_05"); //(überrascht) Wendel? Das trau ich dem nicht zu ... (denkt nach) Aber ja doch, das würde Sinn ergeben ...
-	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_06"); //Wir werden sehen.
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_01"); //Joa, wszystko w porzadku. Potem wpuszcze cie na to.
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_02"); //No cóz, Wendel zajal oczywiscie miejsce Endresa. Tylko on jest do tego uprawniony.
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_03"); //Mam jeszcze jedno pytanie: dlaczego chcesz wiedziec?
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_04"); //Wendel jest teraz podejrzany.
+	AI_Output(self, hero, "Info_Mod_Frazer_Endres03_29_05"); //(spodzianka) Spirala? Nie sadze, aby tak bylo.... Ale tak, to by mialo sens....
+	AI_Output(hero, self, "Info_Mod_Frazer_Endres03_15_06"); //Zobaczymy to.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel hat von dem Tod Endres' profitiert. Hat er mit dem Mord einen Rivalen aus dem Weg geräumt?");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wendel skorzystal na smierci Endresa. Czy pozbyl sie rywala z morderstwem?");
 
 	B_GivePlayerXP	(50);
 };

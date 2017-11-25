@@ -12,7 +12,7 @@ INSTANCE ItArScrollTeleport4 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_Cost_Teleport;
 
-	description			= 	"orkischer Teleportzauber";
+	description			= 	"orkiewskie zaklecie teleportu";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	0;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_Cost_Teleport;
 };
@@ -31,7 +31,7 @@ INSTANCE ItArScrollTeleport5 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_Cost_Teleport;
 
-	description			= 	"Andokais Teleportspruchrolle";
+	description			= 	"Funkcja przywolawcza teleportu Andokai";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	0;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_Cost_Teleport;
 };
@@ -50,7 +50,7 @@ INSTANCE ItSc_TeleportXD (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_Cost_Teleport;
 
-	description			= 	"Vatras' Teleportspruchrolle";
+	description			= 	"Waty 'teleport";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	0;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_Cost_Teleport;
 };

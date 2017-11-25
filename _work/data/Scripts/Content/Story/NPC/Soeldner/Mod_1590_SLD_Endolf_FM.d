@@ -2,7 +2,7 @@ instance Mod_1590_SLD_Endolf_FM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		= 	"Endolf";
+	name 		= 	"koncowy";
 	guild 		=	GIL_mil;
 	npctype		=	npctype_MAIN;
 	level 		=	30;

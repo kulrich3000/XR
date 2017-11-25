@@ -1,7 +1,7 @@
 INSTANCE Mod_934_PIR_Henry_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Henry";
+	name 		= "Henryka";
 	guild 		= GIL_NONE;
 	id 			= 934;
 	voice 		= 4;

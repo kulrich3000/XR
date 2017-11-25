@@ -1,7 +1,7 @@
 instance Mod_1892_NONE_Bandenmitglied1_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bandenmitglied";	
+	name 		= "czlonek gang";	
 	guild 		= GIL_OUT;
 	id 			= 1892;
 	voice 		= 6;

@@ -1,7 +1,7 @@
 INSTANCE Mod_7453_NONE_Bennet_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bennet";
+	name 		= "bennet";
 	guild 		= GIL_OUT;
 	id 			= 7453;
 	voice 		= 30;

@@ -3,7 +3,7 @@
 INSTANCE FH (NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name			= "Face Helper";
+	name			= "Helper twarzy";
 	Npctype			= NPCTYPE_FRIEND;
 	guild			= GIL_NONE;
 	level			= 999;			// real 15, aber 999 damit er nicht vor dem Brückegolem flieht!

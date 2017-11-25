@@ -23,19 +23,19 @@ FUNC INT Info_Mod_Franco_Hi_Condition()
 
 FUNC VOID Info_Mod_Franco_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_00"); //Lauf nur fröhlich weiter in dein Verderben.
-	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_01"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_02"); //Probier's aus. Über die Brücke kommst du vielleicht noch, aber bevor du bei Orlan bist, hast du einen Pfeil in der Fresse.
-	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_03"); //Hast du etwa Freunde auf der anderen Seite der Brücke?
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_04"); //(spuckt aus) Pah, Freunde! Dämliche Idioten aus dem Minental sind das.
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_05"); //Ein ganzer Haufen von denen, dumm wie Brot. Richtige Arschlöcher.
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_06"); //Kommen vor ein paar Tagen anspaziert und schlagen ihr Lager direkt neben meinem auf.
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_07"); //Ich habe ihnen klar gemacht, dass das hier MEIN Platz ist, aber ihnen ist dazu nichts Besseres eingefallen, als laut zu lachen.
-	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_08"); //Und jetzt bist du so nett und warnst alle, die vorbei kommen?
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_09"); //Die Penner sollen schön langsam ausbluten. Wenn sie niemanden zum Überfallen haben, werden sie schon wieder abziehen.
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_10"); //Hast du eigentlich Gold dabei oder irgendwas Wertvolles?
-	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_11"); //(leicht ironisch) Nein, tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_12"); //Dann zieh ab.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_00"); //Po prostu uciekaj wesolo do zguby.
+	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_01"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_02"); //Wypróbuj to. Nadal mozna przejsc przez most, ale zanim dotrzesz do Orlanu, masz strzalke na twarzy.
+	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_03"); //Masz przyjaciól po drugiej stronie mostu?
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_04"); //Pah, przyjaciele! Glupi idioty z Minentala.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_05"); //Cala kisc z nich, glupi jak kanapka. Prawdziwe dziury.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_06"); //Spacerujac za kilka dni temu i zakladajac obóz tuz obok mnie.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_07"); //Wyjasnilam im, ze jest to Mój Mój Mój lokal, ale nie moga myslec o niczym lepszym niz glosnym smiechem.
+	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_08"); //A teraz jestes tak uprzejmy, ze ostrzegasz kazdego, kto przychodzi obok?
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_09"); //Porozmawiaj z wlóczkami, aby powoli odpowietrzaly sie. Jesli nie maja kogos do zaatakowania, wyciagaja sie ponownie.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_10"); //Masz zloto lub cos wartosciowego?
+	AI_Output(hero, self, "Info_Mod_Franco_Hi_15_11"); //(nieco ironiczny) Nie, przepraszam.
+	AI_Output(self, hero, "Info_Mod_Franco_Hi_25_12"); //Nastepnie wyciagnac.
 
 	AI_StopProcessInfos	(self);
 };
@@ -48,7 +48,7 @@ INSTANCE Info_Mod_Franco_Warnung (C_INFO)
 	information	= Info_Mod_Franco_Warnung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dich vor einem Miliztrupp warnen.";
+	description	= "Mam Ci ostrzec o milicji.";
 };
 
 FUNC INT Info_Mod_Franco_Warnung_Condition()
@@ -62,12 +62,12 @@ FUNC INT Info_Mod_Franco_Warnung_Condition()
 
 FUNC VOID Info_Mod_Franco_Warnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Franco_Warnung_15_00"); //Ich soll dich vor einem Miliztrupp warnen.
-	AI_Output(self, hero, "Info_Mod_Franco_Warnung_25_01"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Franco_Warnung_15_02"); //Tom hat mich geschickt.
-	AI_Output(self, hero, "Info_Mod_Franco_Warnung_25_03"); //Gut, dann glaub ich dir. Ich hau mal ab. Sag Tom, dass ich bei Edgor bin.
+	AI_Output(hero, self, "Info_Mod_Franco_Warnung_15_00"); //Mam Ci ostrzec o milicji.
+	AI_Output(self, hero, "Info_Mod_Franco_Warnung_25_01"); //Mówi kto kogo?
+	AI_Output(hero, self, "Info_Mod_Franco_Warnung_15_02"); //Tomek mnie poslal.
+	AI_Output(self, hero, "Info_Mod_Franco_Warnung_25_03"); //No cóz, wtedy ja w to wierze. Jestem poza nim. Powiedz Tomkowi I jestem z Edgorem.
 
-	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Franco haut jetzt ab. Ich soll Tom ausrichten, dass er bei Edgor ist.");
+	B_LogEntry	(TOPIC_MOD_TOMSFREUND, "Franco odchodzi teraz. Mam powiedziec Tomkowi, ze jest z Edgorem.");
 
 	AI_StopProcessInfos	(self);
 
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Franco_Scorpio (C_INFO)
 	information	= Info_Mod_Franco_Scorpio_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Banditen sind übrigens weg.";
+	description	= "Nawiasem mówiac, bandyci znikneli.";
 };
 
 FUNC INT Info_Mod_Franco_Scorpio_Condition()
@@ -110,8 +110,8 @@ FUNC INT Info_Mod_Franco_Scorpio_Condition()
 
 FUNC VOID Info_Mod_Franco_Scorpio_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Franco_Scorpio_15_00"); //Die Banditen sind übrigens weg.
-	AI_Output(self, hero, "Info_Mod_Franco_Scorpio_25_01"); //Was? Jetzt schon? (lacht) Ich sag ja: dumm wie Brot.
+	AI_Output(hero, self, "Info_Mod_Franco_Scorpio_15_00"); //Nawiasem mówiac, bandyci znikneli.
+	AI_Output(self, hero, "Info_Mod_Franco_Scorpio_25_01"); //Co? Masz juz? (smiech) Mówie "glupi jak chleb".
 
 	AI_StopProcessInfos	(self);
 
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Franco_Allein (C_INFO)
 	information	= Info_Mod_Franco_Allein_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du eigentlich ganz allein?";
+	description	= "Czy jestescie naprawde sami?";
 };
 
 FUNC INT Info_Mod_Franco_Allein_Condition()
@@ -141,11 +141,11 @@ FUNC INT Info_Mod_Franco_Allein_Condition()
 
 FUNC VOID Info_Mod_Franco_Allein_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Franco_Allein_15_00"); //Bist du eigentlich ganz allein?
-	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_01"); //Ich bin nur 'n Kundschafter. Meine Leute wollen, dass ich von hier aus die Händler beobachte. Und das mach ich.
-	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_02"); //Aber ich bleib eh lieber für mich.
-	AI_Output(hero, self, "Info_Mod_Franco_Allein_15_03"); //Ein Einzelgänger, wie?
-	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_04"); //Nee. Mit den anderen Deppen kann man nur nichts anfangen. Ich bin ganz froh, wenn ich von denen nichts mitkriege.
+	AI_Output(hero, self, "Info_Mod_Franco_Allein_15_00"); //Czy jestescie naprawde sami?
+	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_01"); //Jestem tylko harcerzem. Moi ludzie chca, abym z tego miejsca ogladal kupców. I to wlasnie robie.
+	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_02"); //Ale i tak wolalbym zostac dla mnie.
+	AI_Output(hero, self, "Info_Mod_Franco_Allein_15_03"); //Samotny, huh?
+	AI_Output(self, hero, "Info_Mod_Franco_Allein_25_04"); //Nah. Jedyna rzecza, której nie mozesz zrobic z innymi idiotami, jest niehumanna ". Bede szczesliwy, jesli nic o nich nie zauwazylem.
 };
 
 INSTANCE Info_Mod_Franco_AtEdgor (C_INFO)
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Franco_AtEdgor (C_INFO)
 	information	= Info_Mod_Franco_AtEdgor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du so?";
+	description	= "Co Pan robi w ten sposób?";
 };
 
 FUNC INT Info_Mod_Franco_AtEdgor_Condition()
@@ -170,8 +170,8 @@ FUNC INT Info_Mod_Franco_AtEdgor_Condition()
 
 FUNC VOID Info_Mod_Franco_AtEdgor_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Franco_AtEdgor_15_00"); //Was machst du so?
-	AI_Output(self, hero, "Info_Mod_Franco_AtEdgor_25_01"); //Ich denk mir was aus, wie ich Edgor umlegen kann. Der Typ nervt nur mit seinen blöden Befehlen.
+	AI_Output(hero, self, "Info_Mod_Franco_AtEdgor_15_00"); //Co Pan robi w ten sposób?
+	AI_Output(self, hero, "Info_Mod_Franco_AtEdgor_25_01"); //Zastanowie sie, jak zabic Edgora. Mezczyzna po prostu denerwuje sie glupimi rozkazami.
 };
 
 INSTANCE Info_Mod_Franco_AtEdgor2 (C_INFO)
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_Franco_AtEdgor2 (C_INFO)
 	information	= Info_Mod_Franco_AtEdgor2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was befiehlt Edgor denn?";
+	description	= "Co dowodzi Edgor?";
 };
 
 FUNC INT Info_Mod_Franco_AtEdgor2_Condition()
@@ -195,8 +195,8 @@ FUNC INT Info_Mod_Franco_AtEdgor2_Condition()
 
 FUNC VOID Info_Mod_Franco_AtEdgor2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Franco_AtEdgor2_15_00"); //Was befiehlt Edgor denn?
-	AI_Output(self, hero, "Info_Mod_Franco_AtEdgor2_25_01"); //"Wasch dir vorm Essen die Hände!" "Schnarch nicht so laut!" "Red ordentlich mit mir!" So einen Scheiß halt.
+	AI_Output(hero, self, "Info_Mod_Franco_AtEdgor2_15_00"); //Co dowodzi Edgor?
+	AI_Output(self, hero, "Info_Mod_Franco_AtEdgor2_25_01"); //"Przed jedzeniem umyc rece!" "Nie irytuj sie tak glosno!" "Zwróc sie do mnie wlasciwie!" So einen Scheiß halt.
 };
 
 INSTANCE Info_Mod_Franco_Pickpocket (C_INFO)

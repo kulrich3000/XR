@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bill_Hi (C_INFO)
 	information	= Info_Mod_Bill_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Bill_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Bill_Hi_Condition()
 FUNC VOID Info_Mod_Bill_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Bill_Hi_03_01"); //Ich bin Bill.
+	AI_Output(self, hero, "Info_Mod_Bill_Hi_03_01"); //Jestem Bill.
 };
 
 INSTANCE Info_Mod_Bill_Rezept (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Bill_Rezept (C_INFO)
 	information	= Info_Mod_Bill_Rezept_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier was von dir.";
+	description	= "Dostalem cos z waszego.";
 };
 
 FUNC INT Info_Mod_Bill_Rezept_Condition()
@@ -44,35 +44,35 @@ FUNC INT Info_Mod_Bill_Rezept_Condition()
 
 FUNC VOID Info_Mod_Bill_Rezept_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_00"); //Ich hab hier was von dir.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_01"); //Was denn?
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_02"); //Diesen Zettel hab ich bei Alvro gefunden. Es ist ein Schreiben von dir.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_00"); //Dostalem cos z waszego.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_01"); //Co masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_02"); //Te notatke znalazlem w Alvro. To Twój list.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_03"); //Ähm, nunja, es ist nicht so wie es aussieht. Ich wollte nur nicht wieder auf Schatzsuche gehen.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_04"); //Wir wären beim letzten Mal fast draufgegangen.
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_05"); //Ich sollte das Greg melden.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_06"); //Nein, tu das nicht. Ich könnte dir vielleicht auch irgendwann mal helfen.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_03"); //Um, no cóz, to nie tak wyglada. Po prostu nie chcialem znów ponownie polowac na skarb.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_04"); //Niemal ostatni raz zginelismy.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_15_05"); //Powinienem zglosic sie do Greg.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_03_06"); //Nie, nie rób tego. Moge Ci kiedys pomóc.
 
 	Info_ClearChoices	(Info_Mod_Bill_Rezept);
 
-	Info_AddChoice	(Info_Mod_Bill_Rezept, "Na gut, ich verpetze dich nicht und du hilfst mir dafür.", Info_Mod_Bill_Rezept_JA);
-	Info_AddChoice	(Info_Mod_Bill_Rezept, "Nein, ich werde zu Greg gehen.", Info_Mod_Bill_Rezept_NEIN);
+	Info_AddChoice	(Info_Mod_Bill_Rezept, "Dobrze, nie powiem o Tobie i pomozesz mi.", Info_Mod_Bill_Rezept_JA);
+	Info_AddChoice	(Info_Mod_Bill_Rezept, "Nie, jestem gonna ide zobaczyc Greg.", Info_Mod_Bill_Rezept_NEIN);
 };
 
 FUNC VOID Info_Mod_Bill_Rezept_JA()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_JA_15_00"); //Na gut, ich verpetze dich nicht und du hilfst mir dafür.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_JA_03_01"); //Danke. Wenn du ein Problem hast, dann komm gleich zu mir, ich werde dir helfen.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_JA_15_00"); //Dobrze, nie powiem o Tobie i pomozesz mi.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_JA_03_01"); //Dzieki. Jesli masz problem, przyjdz do mnie juz teraz, pomoze Ci.
 
 	Info_ClearChoices	(Info_Mod_Bill_Rezept);
 };
 
 FUNC VOID Info_Mod_Bill_Rezept_NEIN()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Rezept_NEIN_15_00"); //Nein, ich werde zu Greg gehen.
-	AI_Output(self, hero, "Info_Mod_Bill_Rezept_NEIN_03_01"); //Wie du meinst, aber ich hätte nützlich für dich sein können.
+	AI_Output(hero, self, "Info_Mod_Bill_Rezept_NEIN_15_00"); //Nie, jestem gonna ide zobaczyc Greg.
+	AI_Output(self, hero, "Info_Mod_Bill_Rezept_NEIN_03_01"); //Cokolwiek pan powiedzial, ale móglbym byc dla pana uzyteczny.
 
 	Mod_BillsVerbrechenPetzen = 1;
 	
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Bill_Befreiung (C_INFO)
 	information	= Info_Mod_Bill_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du ziehst so eine lange Schnute, ist etwas passiert?";
+	description	= "Wyciagasz tak dlugi ryj, czy cos sie wydarzylo?";
 };
 
 FUNC INT Info_Mod_Bill_Befreiung_Condition()
@@ -100,24 +100,24 @@ FUNC INT Info_Mod_Bill_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Bill_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_00"); //Du ziehst so eine lange Schnute, ist etwas passiert?
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_01"); //(traurig) Das kann man wohl sagen. Mein Freund, Owen, ist nicht mehr da.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_02"); //Seit wir von den Untoten und diesem Kult angegriffen wurden, ist er spurlos verschwunden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_03"); //Ich glaube, dass er vor lauter Angst abgehauen ist, doch ich frage mich, wie er das angestellt hat, da das Lager verschlossen ist.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_04"); //Ich weiß nicht mehr weiter.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_05"); //Wo hast du Owen denn zuletzt gesehen. Ich meine, er kann nicht einfach verschwinden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_06"); //(nachdenklich) Zuletzt war er vor dem Angriff auf Wache hinter dem See bei Gregs Haus, da dort ein Weg in das Gebirge führt und wir von dort eventuellen Angriffen der Untoten ausgeliefert sind.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_07"); //Ich denke, dass er dort verschwunden ist.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_08"); //Seltsam ist das, ich werde versuchen deinen Freund zu finden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_09"); //(hellt auf) Wirklich? Ich kann dir nicht genug danken.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_10"); //Was ich noch sagen wollte: Alligator Jack ist ebenfalls aufgebrochen, um Bill zu finden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_11"); //Vielleicht holst du ihn noch ein.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_12"); //Gut, danke für die Infos. Ich werde mich auf den Weg machen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_13"); //Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_00"); //Wyciagasz tak dlugi ryj, czy cos sie wydarzylo?
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_01"); //Mysle, ze móglby pan to powiedziec. Mój przyjaciel, Owen, nie ma juz tutaj.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_02"); //Od kiedy zostalismy zaatakowani przez nieumarlych i ten kult, zniknal bez sladu.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_03"); //Mysle, ze uciekl z przerazeniem, ale zastanawiam sie jak to zrobil, bo obóz byl zamkniety.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_04"); //Nie wiem co robic.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_05"); //Gdzie ostatnio zobaczyles Owen? Nie moze po prostu zniknac.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_06"); //Ostatnio, przed atakiem na strazników za jeziorem w poblizu domu Greg, poniewaz jest droga prowadzaca w góry i stamtad jestesmy na lasce potencjalnych ataków nieumarlych.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_07"); //Mysle, ze on tam zniknal.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_08"); //Dziwne jest to, ze postaram sie znalezc twojego przyjaciela.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_09"); //Naprawde? Nie moge Ci wystarczajaco podziekowac.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_10"); //Chcialem powiedziec, ze Alligator Jack równiez pozostal do znalezienia Billa.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_11"); //Moze mozna sie z nim dogonic.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung_15_12"); //Cóz, dziekuje za informacje. Bede na drodze.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung_03_13"); //Powodzenia!
 	
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRBILL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBILL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Bill's Freund Owen ist seit dem Angriff der Untoten verschwunden. Zuletzt wurde er in der Nähe von Greg's Hütte beim Weg ins Gebirge gesehen. Ich sollte meine Suche dort beginnen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRBILL, "Przyjaciel Billa Owena zniknal od nieumarlego ataku. Ostatnio spotkal sie z nim w poblizu chaty Greg w drodze na góry. Powinienem rozpoczac wyszukiwanie tam.");
 };
 
 INSTANCE Info_Mod_Bill_Befreiung2 (C_INFO)
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Bill_Befreiung2 (C_INFO)
 	information	= Info_Mod_Bill_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe dir Owen wieder.";
+	description	= "Owen wróce do Ciebie.";
 };
 
 FUNC INT Info_Mod_Bill_Befreiung2_Condition()
@@ -142,19 +142,19 @@ FUNC INT Info_Mod_Bill_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Bill_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_00"); //Ich bringe dir Owen wieder.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_01"); //(hell erfreut) Ich danke dir. Ich kann dir nicht genug danken. Du hast Owen gerettet. Hier, nimm das!
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_00"); //Owen wróce do Ciebie.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_01"); //Dziekuje, dziekuje. Nie moge Ci wystarczajaco podziekowac. Zapisales Owena. Tutaj wez to!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_02"); //Danke. Aber ich habe dir noch eine schlimme Nachricht zu überbringen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_03"); //(überrascht) Achja? Um was geht es?
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_04"); //Um Alligator Jack. Ich habe seine Leiche im Gebirge gefunden. Er wurde von den Banditen getötet, die auch Owen entführt hatten.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_05"); //(stottert) Das kann ... kann nicht sein. Alligator Jack war einer der Besten.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_06"); //Ich kann es auch nicht verstehen. Aber ich habe seine Leiche gefunden.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_07"); //Er ist gestorben, um seinen Kameraden zu helfen. Wir werden auf sein Wohl trinken und ihm ein anständiges Begräbnis machen.
-	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_08"); //Jedenfalls danke ich dir für deine Hilfe. Wenn du mich jetzt entschuldigst, ich werde mich nun um Owen kümmern.
-	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_09"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_02"); //Dzieki. Ale mam dla ciebie jakies zle wiesci.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_03"); //(zdziwiony) Ach, tak? Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_04"); //Alligator Jack. Jego cialo znalazlem w górach. Zostal zabity przez bandytów, którzy równiez porwali Owena.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_05"); //(muttering) To moze.... nie moze byc. Alligator Jack byl jednym z najlepszych.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_06"); //Nie rozumiem tego takze. Ale znalazlem jego cialo.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_07"); //Zmarl, aby pomóc swoim towarzyszom. Bedziemy pic do jego dobrego samopoczucia i uczynic go przyzwoitym pogrzebem.
+	AI_Output(self, hero, "Info_Mod_Bill_Befreiung2_03_08"); //W kazdym razie dziekuje za pomoc. Teraz, jesli mnie wybaczycie, to zajme sie Owenem.
+	AI_Output(hero, self, "Info_Mod_Bill_Befreiung2_15_09"); //Wszystko jasne.
 
 	B_GivePlayerXP	(600);
 
@@ -164,7 +164,7 @@ FUNC VOID Info_Mod_Bill_Befreiung2_Info()
 
 	Mod_Piratenbefreiung += 1;
 	
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBILL, TOPIC_MOD_BEL_PIRATENLAGER, "Ich habe Owen zu Bill gebracht und diesem von Alligator Jack erzählt.", "Ich habe für Bill Owen gefunden. Leider ist Alligator Jack auf der Suche nach Owen getötet worden.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRBILL, TOPIC_MOD_BEL_PIRATENLAGER, "Przynioslem Owena do Billa i opowiedzialem mu o Alligatorze Jacka.", "Znalazlem go dla Billa Owena. Niestety, zabito podnosnik aligator w poszukiwaniu owena.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBILL, LOG_SUCCESS);
 };
 

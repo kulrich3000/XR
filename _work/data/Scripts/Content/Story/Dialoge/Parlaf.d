@@ -51,17 +51,17 @@ FUNC INT Info_Mod_Parlaf_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Parlaf_HaradLehrling_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_00"); //Stopp. Du bist doch der Lehrling von Harad, oder?
-	AI_Output(hero, self, "Info_Mod_Parlaf_HaradLehrling_15_01"); //Ja, schon ...
-	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_02"); //Auf Anweisung Tengrons müssen wir dich durchsuchen. Einen kleinen Moment, bitte ...
+	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_00"); //Zatrzymaj. Jestes praktykantem Harada, czyz nie jestes?
+	AI_Output(hero, self, "Info_Mod_Parlaf_HaradLehrling_15_01"); //Tak, tak, tak.....
+	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_02"); //Na zamówienie Tengrons musimy Cie przeszukac. Tylko chwile, prosze.....
 
 	AI_PlayAni	(self, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_03"); //Um dieses Waffenbündel ging es. Damit verstößt Harad gegen eine Bestimmung Tengrons. Wir müssen es an uns nehmen.
+	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_03"); //Wlasnie o to chodzilo w tej grupie broni. Harad narusza tym samym postanowienie Tengrona. Musimy to wziac.
 
 	B_GiveInvItems	(hero, self, ItMi_Waffenbuendel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_04"); //Dass Harad versucht, es durch dich zu den Söldnern zu schmuggeln, wird ernsthafte Konsequenzen für ihn haben.
+	AI_Output(self, hero, "Info_Mod_Parlaf_HaradLehrling_06_04"); //Harad próbujac przemycic go przez ciebie do najemników bedzie mial powazne konsekwencje dla niego.
 
 	AI_StopProcessInfos	(self);
 };
@@ -87,11 +87,11 @@ FUNC INT Info_Mod_Parlaf_Randolph_Condition()
 
 FUNC VOID Info_Mod_Parlaf_Randolph_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_00"); //Du machst besser, dass du schnell in die Stadt kommst.
-	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_01"); //Hier draußen treiben sich zurzeit Dämonen umher, die keinen am Leben lassen, der ihren Weg kreuzt.
-	AI_Output(hero, self, "Info_Mod_Parlaf_Randolph_15_02"); //Dämonen? Woher stammen diese?
-	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_03"); //Keine Ahnung, sie sind hier überall in den Wäldern nahe der Stadt. Und in der Nähe von Lobart’s Hof treibt sich zudem eine obskure Gestalt umher.
-	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_04"); //Egal, ich muss jetzt aufpassen und habe keine Zeit mich weiter zu unterhalten.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_00"); //Lepiej szybko dotrzec do miasta.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_01"); //W chwili obecnej wokól nich plywaja demony, nie pozostawiajac nikogo zywego, kto móglby ich przekroczyc.
+	AI_Output(hero, self, "Info_Mod_Parlaf_Randolph_15_02"); //Demony? Skad one pochodza?
+	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_03"); //Nie wiem, oni sa po lasach w poblizu miasta. A w sasiedztwie podwórza Lobarta kryje sie nieznana postac.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Randolph_06_04"); //Tak czy inaczej, musze byc teraz ostrozny i nie mam juz czasu na rozmowe.
 };
 
 INSTANCE Info_Mod_Parlaf_RandolphWeg (C_INFO)
@@ -116,9 +116,9 @@ FUNC INT Info_Mod_Parlaf_RandolphWeg_Condition()
 
 FUNC VOID Info_Mod_Parlaf_RandolphWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_00"); //Gute Nachrichten. Die Dämonen scheinen sich langsam zurückzuziehen.
-	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_01"); //(hochmütig) Dürften wohl erkannt haben, dass sie es mit uns nicht aufnehmen können.
-	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_02"); //Du kannst also wieder unbesorgt vor die Stadt gehen.
+	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_00"); //To dobra wiadomosc. Demony zdaja sie powoli wycofywac.
+	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_01"); //Przypuszczam, ze musieli zdac sobie sprawe, ze nie pasuja do nas.
+	AI_Output(self, hero, "Info_Mod_Parlaf_RandolphWeg_06_02"); //Mozesz wiec spokojnie wrócic do miasta.
 
 	B_GivePlayerXP	(100);
 };
@@ -143,8 +143,8 @@ FUNC INT Info_Mod_Parlaf_Rasend_Condition()
 
 FUNC VOID Info_Mod_Parlaf_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlaf_Rasend_06_00"); //Hey, pass auf, wenn du dich vor der Stadt herumtreibst.
-	AI_Output(self, hero, "Info_Mod_Parlaf_Rasend_06_01"); //Am Hafen ist etwas Schreckliches vorgefallen und das üble dämonische Geschöpf, das dies alles getan hat, muss sich immer noch in der Nähe befinden.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Rasend_06_00"); //Hey, uwazaj, gdy wiesz sie wokól miasta.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Rasend_06_01"); //Cos strasznego wydarzylo sie w porcie i zlego demonicznego stworzenia, które zrobilo to wszystko, musi byc w poblizu.
 };
 
 INSTANCE Info_Mod_Parlaf_Hi (C_INFO)
@@ -169,34 +169,34 @@ FUNC VOID Info_Mod_Parlaf_Hi_Info()
 
 	if (Hlp_IsItem(NovArmorOrNot, ITAR_FAKE_NOV_L) == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_00"); //Halt! Was treibt dich denn hierher?
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_01"); //Ich gebe dir nur den guten Rat in der Stadt ja keinen Ärger zu machen, sonst findest du sich schneller außerhalb der Stadtmauern wieder, als dir lieb ist. Verstanden?
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_00"); //Zatrzymaj sie! Co przynosi ci tutaj?
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_01"); //Po prostu daje wam dobra rade, abyscie nie popadli w klopoty w miescie, inaczej znajdziecie sie Panstwo predzej niz chcecie. Zrozumiec?
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_02"); //Ahh, ein Novize des Innosklosters.
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_03"); //Es freut mich immer, wenn ich die Streiter für das Rechtschaffende in unseren Stadtmauern willkommen heißen darf.
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_04"); //Wenn man bedenkt, was sich sonst so für Gesindel seit dem Fall der Barriere hier herumtreibt ...
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_05"); //Jedenfalls solltest du aufpassen, was du in der Stadt tust, da gibt es leicht Ärger in letzter Zeit.
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_02"); //Ahh, nowicjusz klasztoru Innos.
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_03"); //Zawsze z przyjemnoscia witam bojowników za sprawiedliwych w naszych murach miejskich.
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_04"); //Biorac pod uwage, jaki rodzaj riffraffa wisi tu od czasu upadku zapory......
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_06_05"); //Tak czy inaczej, uwazaj na to, co robisz w miescie, ostatnio bylo wiele klopotów.
 	};
 
 	Info_ClearChoices	(Info_Mod_Parlaf_Hi);
 
 	if (Hlp_IsItem(NovArmorOrNot, ITAR_FAKE_NOV_L) == FALSE)
 	{
-		Info_AddChoice	(Info_Mod_Parlaf_Hi, "Ich werde tun und lassen, was immer ich will.", Info_Mod_Parlaf_Hi_B);
+		Info_AddChoice	(Info_Mod_Parlaf_Hi, "Zrobie wszystko, co chce.", Info_Mod_Parlaf_Hi_B);
 	};
-	Info_AddChoice	(Info_Mod_Parlaf_Hi, "Natürlich.", Info_Mod_Parlaf_Hi_A);
+	Info_AddChoice	(Info_Mod_Parlaf_Hi, "Oczywiscie tak jest.", Info_Mod_Parlaf_Hi_A);
 };
 
 FUNC VOID Info_Mod_Parlaf_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Parlaf_Hi_B_15_00"); //Ich werde tun und lassen, was immer ich will.
-	AI_Output(self, hero, "Info_Mod_Parlaf_Hi_B_06_01"); //So? Aber nicht in der Stadt. Einen Unruhestifter wie dich werde ich bestimmt nicht hereinlassen.
+	AI_Output(hero, self, "Info_Mod_Parlaf_Hi_B_15_00"); //Zrobie wszystko, co chce.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Hi_B_06_01"); //Lubie to? Ale nie w miescie. Nie pozwole sobie pozwolic, zeby jakis awanturnik jak ty tam byl.
 
 	if (!Npc_HasEquippedArmor(hero))
 	{
-		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_B_06_02"); //Nicht mal Kleidung ...
+		AI_Output(self, hero, "Info_Mod_Parlaf_Hi_B_06_02"); //Nawet ubrania nie....
 	};
 
 	Info_ClearChoices	(Info_Mod_Parlaf_Hi);
@@ -209,8 +209,8 @@ FUNC VOID Info_Mod_Parlaf_Hi_B()
 
 FUNC VOID Info_Mod_Parlaf_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Parlaf_Hi_A_15_00"); //Natürlich.
-	AI_Output(self, hero, "Info_Mod_Parlaf_Hi_A_06_01"); //Gut, dann verstehen wir uns.
+	AI_Output(hero, self, "Info_Mod_Parlaf_Hi_A_15_00"); //Oczywiscie tak jest.
+	AI_Output(self, hero, "Info_Mod_Parlaf_Hi_A_06_01"); //No cóz, wtedy zrozumiemy sie nawzajem.
 
 	Info_ClearChoices	(Info_Mod_Parlaf_Hi);
 
@@ -227,7 +227,7 @@ INSTANCE Info_Mod_Parlaf_DunklerPilger (C_INFO)
 	information	= Info_Mod_Parlaf_DunklerPilger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier vor kurzem ein Pilger in schwarzem Gewand (...)";
+	description	= "Czy jest tu ostatnio pielgrzymka w czarnej szacie (....)? )";
 };
 
 FUNC INT Info_Mod_Parlaf_DunklerPilger_Condition()
@@ -241,8 +241,8 @@ FUNC INT Info_Mod_Parlaf_DunklerPilger_Condition()
 
 FUNC VOID Info_Mod_Parlaf_DunklerPilger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Parlaf_DunklerPilger_15_00"); //Ist hier vor kurzem ein Pilger in schwarzem Gewand vorbeigekommen?
-	AI_Output(self, hero, "Info_Mod_Parlaf_DunklerPilger_06_01"); //Nicht, dass ich wüsste.
+	AI_Output(hero, self, "Info_Mod_Parlaf_DunklerPilger_15_00"); //Czy pielgrzym przybyl tu niedawno w czarnej szacie?
+	AI_Output(self, hero, "Info_Mod_Parlaf_DunklerPilger_06_01"); //Nie wiem o tym.
 };
 
 INSTANCE Info_Mod_Parlaf_Daemonisch (C_INFO)
@@ -269,7 +269,7 @@ FUNC INT Info_Mod_Parlaf_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Parlaf_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_00"); //Halt, erst den 1/4 Klosterwein trinken
+	AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_00"); //Stop, najpierw napic sie wina klasztornego 1/4
 
 	B_GiveInvItems	(self, hero, ItFo_KWine, 1);
 
@@ -277,16 +277,16 @@ FUNC VOID Info_Mod_Parlaf_Daemonisch_Info()
 
 	if (Mod_HQ_Daemonisch == 6)
 	{
-		AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_01"); //Der Typ vorher wäre uns ja fast durch die Lappen gegangen, aber wir sind eben doch zu flink und er musste hübsch austrinken.
-		AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_02"); //Ist danach weiter wien Irrer in den Wald gerannt ...
+		AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_01"); //Mezczyzna przedtem prawie przeszedlby przez palce, ale my jestesmy zbyt szybcy i musial pic milo.
+		AI_Output(self, hero, "Info_Mod_Parlaf_Daemonisch_06_02"); //Pózniej do lasu wbiegla kolejna wiencowa lunatyk.....
 
 		AI_TurnAway	(hero, self);
 
-		AI_Output(hero, self, "Info_Mod_Parlaf_Daemonisch_15_03"); //(zu sich selbst) Was, er hat den Klosterweintest bestanden? Dann kann er ja eigentlich nur ...  Urnol.
+		AI_Output(hero, self, "Info_Mod_Parlaf_Daemonisch_15_03"); //Do siebie, co zdal test wina klasztornego? Wtedy wszystko, co moze zrobic, to.... Urnol.
 
 		Mod_HQ_Daemonisch = 7;
 
-		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "So, vom Südtor aus rechts in den Wald gelaufen. Dich krieg ich ... Urnol.");
+		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Wiec wbiegamy do lasu po prawej stronie od bramy poludniowej. Bede cie zalatwial..... Urnol.");
 	};
 
 	Npc_SetRefuseTalk (self, 40);
@@ -340,25 +340,25 @@ func void Info_Mod_Parlaf_FirstWarn_Info()
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
-		AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_01"); //(seufzt) Was denn?
-		AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_02"); //Das weißt du ganz genau!
+		AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_01"); //Co to jest?
+		AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_02"); //Wiesz bardzo dobrze!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_03"); //Du wirst in der Stadt als Mörder gesucht!
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_03"); //Chcesz byc w miescie za morderstwo!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_04"); //Dreckige Diebe brauchen wir hier nicht!
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_04"); //Nie potrzebujemy tu brudnych zlodziei!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_05"); //Unruhestifter können wir in unserer Stadt nicht gebrauchen!
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_05"); //W naszym miescie nie potrzebujemy wichrzycieli!
 		};
 	
-		AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_06"); //Warum, glaubst du, sollten wir dich reinlassen?
+		AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_06"); //Dlaczego uwazasz, ze powinnismy Cie wpuscic?
 	}
 	else // ------ normales Reinkommen ------
 	{
@@ -367,26 +367,26 @@ func void Info_Mod_Parlaf_FirstWarn_Info()
 		// ------ ohne Rüstung ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{
-			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_07"); //Was denn?
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_08"); //DU kommst hier nicht rein, mein Junge!
-			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_09"); //Warum nicht?
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_10"); //So abgerissen, wie du aussiehst, machst du hier bestimmt nur Ärger!
-			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_11"); //Wir haben schon genug Gesindel in der Stadt. Leute ohne Geld können wir nicht gebrauchen.
+			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_07"); //Co masz na mysli?
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_08"); //Nie mozesz sie tu dostac, synu!
+			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_09"); //Dlaczego nie?
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_10"); //Rozbity jak spojrzec, prawdopodobnie robisz tu tylko klopoty!
+			AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_11"); //Juz w miescie dostalismy mnóstwo riffraffów. Nie mozemy miec ludzi bez pieniedzy.
 		}
  	 	else 
 		{
-			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_18"); //(ruhig) Was?
+			AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_18"); //Cichy) Co?
 			if (hero.guild == GIL_PAL)
 			|| (hero.guild == GIL_KDF)
 			{
-				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_19"); //Verzeihung, aber so sind nun mal die Vorschriften.
-				AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_20"); //Willst du mich aufhalten?
-				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_21"); //Natürlich nicht. Alle Angehörigen der Kirche Innos' sind uns selbstverständlich willkommen.
+				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_19"); //Prosze mi wybaczyc, ale to sa zasady.
+				AI_Output (other, self,"Info_Mod_Parlaf_FirstWarn_15_20"); //Chcesz mnie zatrzymac?
+				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_21"); //Oczywiscie nie. Wszyscy czlonkowie Kosciola Innos sa oczywiscie mile widziani.
 				
 			}
 			else
 			{
-				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_22"); //Wollte dich nur mal ansehen. Siehst aus, als ob du Geld hättest. Kannst reingehen.
+				AI_Output (self, other,"Info_Mod_Parlaf_FirstWarn_06_22"); //Wystarczy sie po prostu zameldowac. Wyglada na to, ze masz pieniadze. Mozesz wejsc.
 			};
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Mil_333_Stadtwache.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -427,7 +427,7 @@ FUNC INT Info_Mod_Parlaf_SecondWarn_Condition()
 
 func void Info_Mod_Parlaf_SecondWarn_Info()
 {
-	AI_Output (self, other,"Info_Mod_Parlaf_SecondWarn_06_00"); //Jetzt werd mal nicht ulkig. Noch einen Schritt und ich hack dich in Stücke!
+	AI_Output (self, other,"Info_Mod_Parlaf_SecondWarn_06_00"); //
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_309_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -465,7 +465,7 @@ func void Info_Mod_Parlaf_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"Info_Mod_Parlaf_Attack_06_00"); //Du hast es so gewollt ...
+	AI_Output (self, other,"Info_Mod_Parlaf_Attack_06_00"); //Poprosil pan o to.....
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -483,7 +483,7 @@ INSTANCE Info_Mod_Parlaf_Bribe (C_INFO)
 	condition	= Info_Mod_Parlaf_Bribe_Condition;
 	information	= Info_Mod_Parlaf_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Hier sind 100 Goldstücke. Lass mich rein!";
+	description	= "Oto 100 sztuk zlota. Pozwólcie mi wejsc!";
 };                       
 
 FUNC INT Info_Mod_Parlaf_Bribe_Condition()
@@ -496,15 +496,15 @@ FUNC INT Info_Mod_Parlaf_Bribe_Condition()
 	
 func void Info_Mod_Parlaf_Bribe_Info()
 {
-	AI_Output (other, self,"Info_Mod_Parlaf_Bribe_15_00"); //Hier sind 100 Goldstücke. Lass mich rein!
+	AI_Output (other, self,"Info_Mod_Parlaf_Bribe_15_00"); //Oto 100 sztuk zlota. Pozwólcie mi wejsc!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_01"); //(gierig) 100 Goldstücke klingen gut. Dann mal immer rein mit dir.
+		AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_01"); //Dobrze brzmi 100 sztuk zlota. Cóz, dostac sie tam.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_02"); //Und geh direkt zu Lord Andre! Sonst knöpf ich dir beim nächsten Mal wieder 100 Goldstücke ab!
+			AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_02"); //Idz prosto do Pana Andre! Albo zabiore 100 sztuk zlota nastepnym razem!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -517,7 +517,7 @@ func void Info_Mod_Parlaf_Bribe_Info()
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_03"); //Was?! Wo?! Ich sehe keine 100 Goldmünzen. Hau ab!
+		AI_Output (self, other,"Info_Mod_Parlaf_Bribe_06_03"); //Co? Gdzie? Nie widze 100 zlotych monet. Wyjsc stad!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -545,7 +545,7 @@ FUNC INT Info_Mod_Parlaf_PERM_Condition()
 	
 func void Info_Mod_Parlaf_PERM_Info()
 {
-	AI_Output (self, other,"Info_Mod_Parlaf_PERM_06_00"); //Weitergehen!
+	AI_Output (self, other,"Info_Mod_Parlaf_PERM_06_00"); //Pozostan w ruchu!
 	
 	AI_StopProcessInfos (self);
 };

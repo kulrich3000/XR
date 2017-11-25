@@ -5,7 +5,7 @@ FUNC VOID ERFINDERHAUS ()
 	{
 		AI_GotoWP	(PC_Hero, "NW_CITY_UPTOWN_HUT_04_04");
 
-		AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderHaus_15_00"); //Ich sollte mich noch ein wenig umsehen.
+		AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderHaus_15_00"); //Powinienem rozejrzec sie nieco dalej.
 	};
 };
 

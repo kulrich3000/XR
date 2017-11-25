@@ -1,7 +1,7 @@
 instance Mod_7357_VMG_Dean_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dean";
+	name 		= "dziekan";
 	guild 		= GIL_out;
 	id 			= 7357;
 	voice 		= 11;

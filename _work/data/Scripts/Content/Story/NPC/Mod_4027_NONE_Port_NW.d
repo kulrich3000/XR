@@ -1,7 +1,7 @@
 INSTANCE Mod_4027_NONE_Port_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Johannes Port";
+	name 		= "Port Johannes";
 	guild 		= GIL_OUT;
 	id 			= 4027;
 	voice 		= 1;

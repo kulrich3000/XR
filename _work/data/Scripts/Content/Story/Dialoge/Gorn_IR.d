@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gorn_IR_Hi (C_INFO)
 	information	= Info_Mod_Gorn_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und was hältst du von der Insel?";
+	description	= "A co sadzisz o wyspie?";
 };
 
 FUNC INT Info_Mod_Gorn_IR_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Gorn_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Gorn_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gorn_IR_Hi_15_00"); //Und was hältst du von der Insel?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_12_01"); //Ach, ich kenne mich mit dem ganzen magischen Firlefanz nicht aus ... aber ich bin mir sicher, dass ich meine Axt gut gebrauchen kann, um diesen untoten und dämonischen Bastarden ordentlich in den Arsch zu treten.
+	AI_Output(hero, self, "Info_Mod_Gorn_IR_Hi_15_00"); //A co sadzisz o wyspie?
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_12_01"); //Nie wiem, jak radzic sobie z magiczna falbanka.... ale jestem pewien, ze moge uzyc siekiery, by kopnac ciezka osade na nieumarlych dranie demoniczne.
 };
 
 INSTANCE Info_Mod_Gorn_IR_Hebel (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Gorn_IR_Hebel (C_INFO)
 	information	= Info_Mod_Gorn_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Gorn_IR_Hebel_Condition()
@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Gorn_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_12_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_12_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -74,9 +74,9 @@ FUNC INT Info_Mod_Gorn_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Gorn_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_00"); //Man, ohh, man, die Untoten und Dämonen sind vielleicht zäh und aufdringlich.
-	AI_Output(hero, self, "Info_Mod_Gorn_IR_Ambient01_15_01"); //(ironisch) Ich hoffe du hältst noch mit?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_02"); //Machst du Witze? Es wurde höchste Zeit, dass sie eins mit dem schweren Stück Stahl auf die Mütze bekommen.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_00"); //Czlowiek, oh, czlowiek, nieumarly i demony moga byc trudne i pchajace.
+	AI_Output(hero, self, "Info_Mod_Gorn_IR_Ambient01_15_01"); //Mam nadzieje, ze nadal sie trzymasz?
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_02"); //Czy kochasz mnie? Najwyzszy czas nadszedl najwyzszy czas, aby dostali na kapeluszu ciezki kawalek stali.
 
 	AI_StopProcessInfos	(self);
 };
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Gorn_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Gorn_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Gorn_IR_GehtLos_Condition()
@@ -108,7 +108,7 @@ FUNC VOID Info_Mod_Gorn_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_12_00"); //Klar. Bevor meine Axt noch völlig vom Salzwasser zerfressen wird, soll sie einigen Untoten den Schädel spalten.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_12_00"); //Pewne. Zanim zas mój topór zostanie calkowicie zjedzony przez slona wode, wówczas czaszka jakiejs nieumarlej czaszki powinna sie rozbic.
 
 	Mod_IR_Dabei += 1;
 
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Gorn_IR_GehBack (C_INFO)
 	information	= Info_Mod_Gorn_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Gorn_IR_GehBack_Condition()
@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Gorn_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehBack_06_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehBack_06_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Gorn_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Gorn_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Gorn_IR_Heiltrank_Condition()
@@ -183,31 +183,31 @@ FUNC VOID Info_Mod_Gorn_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Gorn_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Gorn_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Gorn_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Gorn_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Gorn_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Gorn_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Gorn_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Gorn_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Gorn_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Gorn_IR_Heiltrank_Health_05);
 	};
 };
 

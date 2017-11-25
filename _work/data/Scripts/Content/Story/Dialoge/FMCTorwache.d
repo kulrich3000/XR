@@ -15,7 +15,7 @@ FUNC INT Info_Mod_FMCTorwache_Hi_Condition()
 
 FUNC VOID Info_Mod_FMCTorwache_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_FMCTorwache_Hi_11_00"); //Halt! Niemand darf ohne Genehmigung die Mine betreten.
+	AI_Output(self, hero, "Info_Mod_FMCTorwache_Hi_11_00"); //Zatrzymaj sie! Nikt nie moze wejsc do kopalni bez zezwolenia.
 };
 
 INSTANCE Info_Mod_FMCTorwache_Erzkiste (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_FMCTorwache_Erzkiste (C_INFO)
 	information	= Info_Mod_FMCTorwache_Erzkiste_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll eine Kiste Erz für Thofeistos holen ...";
+	description	= "Chce, abym dostal pudelko z ruda dla Thofeistos....";
 };
 
 FUNC INT Info_Mod_FMCTorwache_Erzkiste_Condition()
@@ -40,16 +40,16 @@ FUNC INT Info_Mod_FMCTorwache_Erzkiste_Condition()
 
 FUNC VOID Info_Mod_FMCTorwache_Erzkiste_Info()
 {
-	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_00"); //Ich soll eine Kiste Erz für Thofeistos holen ...
-	AI_Output(self, hero, "Info_Mod_FMCTorwache_Erzkiste_11_01"); //Ah ja, Endolf hat sie bereits herbringen lassen. Hier hast du sie.
+	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_00"); //Chce, abym dostal pudelko z ruda dla Thofeistos....
+	AI_Output(self, hero, "Info_Mod_FMCTorwache_Erzkiste_11_01"); //Tak, Endolf juz ich przywiózl. Tutaj je masz.
 
 	B_GiveInvItems	(self, hero, ItMi_Erzkiste, 1);
 
-	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_02"); //(überrascht) Wie jetzt, einfach so?
-	AI_Output(self, hero, "Info_Mod_FMCTorwache_Erzkiste_11_03"); //(verwundert) Ähh, ja.
-	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_04"); //Hmm, ok.
+	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_02"); //(zdziwiony) Co tak jak to rozumiesz?
+	AI_Output(self, hero, "Info_Mod_FMCTorwache_Erzkiste_11_03"); //(zdziwiony) Uh, tak.
+	AI_Output(hero, self, "Info_Mod_FMCTorwache_Erzkiste_15_04"); //Hmm, okay.
 
-	B_LogEntry	(TOPIC_MOD_NL_ERZKISTE, "Na das war ja simpel. Ich habe die Kiste und muss nur wieder zu Thofeistos.");
+	B_LogEntry	(TOPIC_MOD_NL_ERZKISTE, "No cóz, to bylo proste. Mam pudelko i musze tylko wrócic do Thofeistos.");
 };
 
 INSTANCE Info_Mod_FMCTorwache_Crawlerplage (C_INFO)
@@ -73,7 +73,7 @@ FUNC INT Info_Mod_FMCTorwache_Crawlerplage_Condition()
 
 FUNC VOID Info_Mod_FMCTorwache_Crawlerplage_Info()
 {
-	AI_Output(self, hero, "Info_Mod_FMCTorwache_Crawlerplage_11_00"); //Ahh, der Kammerjäger kommt. Wird auch langsam Zeit. Da unten ist die Hölle los.
+	AI_Output(self, hero, "Info_Mod_FMCTorwache_Crawlerplage_11_00"); //Ahh, przyjscie eksterminatora. Najwyzszy czas. Wszystko tam sie rozpadnie.
 
 	Wld_SendTrigger	("FREEMINEGATE");
 };

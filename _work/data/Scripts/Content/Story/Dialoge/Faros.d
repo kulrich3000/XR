@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Faros_Hi (C_INFO)
 	information	= Info_Mod_Faros_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Faros_Hi_Condition()
@@ -18,8 +18,8 @@ FUNC VOID Info_Mod_Faros_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_01"); //Ich bin Faros, der Gärtner.
-	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_02"); //Ich bin der Chef vom Kräutergarten.
+	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_01"); //Jestem Faros, ogrodnik.
+	AI_Output(self, hero, "Info_Mod_Faros_Hi_09_02"); //Jestem glowa ogrodu ziolowego.
 };
 
 INSTANCE Info_Mod_Faros_MangelQuest (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Faros_MangelQuest (C_INFO)
 	information	= Info_Mod_Faros_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft die Gartenarbeit?";
+	description	= "Jak wyglada ogrodnictwo?";
 };
 
 FUNC INT Info_Mod_Faros_MangelQuest_Condition()
@@ -43,15 +43,15 @@ FUNC INT Info_Mod_Faros_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Faros_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_00"); //Wie läuft die Gartenarbeit?
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_01"); //Miserabel. Da hilft es auch nicht, das Turgas immer alles schönreden will.
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_02"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_03"); //Na sieh dich doch mal um! Unter den Pflanzen grassiert eine Pilzinfektion und ich habe das verdammte Fungizid dagegen nicht.
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_04"); //Dabei hat außerhalb des Belagerungsringes jeder beliebige Alchemisten- oder Kräuterfutzi dieses Zeug. Es ist zu frustrierend.
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_00"); //Jak wyglada ogrodnictwo?
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_01"); //Miserable. Nie pomaga to, ze Turgas zawsze chce porozmawiac.
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest_15_02"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_03"); //Zapraszamy do obejrzenia! Wsród roslin wystepuje infekcja grzybicza i nie mam srodka grzybobójczego.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest_09_04"); //Na zewnatrz pierscienia oblezenia kazdy alchemik lub ziolowe utzi ma takie rzeczy. To zbyt frustrujace.
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros hat sich beklagt, dass in seinem Kräutergarten eine Pilzinfektion wütet. Er meinte, dass jeder Alchemist und Kräuterkundler draußen ein Gegenmittel hätte.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros skarzyl sie, ze w jego ogrodzie ziolowym wystepuje infekcja grzybicza. Powiedzial, ze kazdy alchemik i zielarz na zewnatrz ma antidotum.");
 };
 
 INSTANCE Info_Mod_Faros_MangelQuest2 (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Faros_MangelQuest2 (C_INFO)
 	information	= Info_Mod_Faros_MangelQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier was gegen die Pilzinfektion ...";
+	description	= "Mam cos przeciwko infekcji grzybiczej.....";
 };
 
 FUNC INT Info_Mod_Faros_MangelQuest2_Condition()
@@ -76,18 +76,18 @@ FUNC INT Info_Mod_Faros_MangelQuest2_Condition()
 
 FUNC VOID Info_Mod_Faros_MangelQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest2_15_00"); //Ich habe hier was gegen die Pilzinfektion ...
+	AI_Output(hero, self, "Info_Mod_Faros_MangelQuest2_15_00"); //Mam cos przeciwko infekcji grzybiczej.....
 
 	B_GiveInvItems	(hero, self, ItMi_Fungizid, 1);
 
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_01"); //Was? Zeig her ... Tatsächlich, das scheint es zu sein. Ich muss es sofort ausprobieren.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_01"); //Co? Pokaz mi.... Wydaje sie, ze tak wlasnie jest. Musze to teraz wypróbowac.
 
 	AI_PlayAni	(hero, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_02"); //Ja, es wirkt. Damit wird diese Pilzgeschichte in wenigen Tagen der Vergangenheit angehören. Tausend Dank.
-	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_03"); //Hier, nimm einige meiner besten Kräuter zur Belohnung. Innos sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_02"); //Tak, to dziala. Oznacza to, ze za kilka dni ta grzybowa historia bedzie juz przeszloscia. Dziekuje bardzo.
+	AI_Output(self, hero, "Info_Mod_Faros_MangelQuest2_09_03"); //Oto kilka z moich najlepszych ziól jako nagrode. Innos jest z toba.
 
-	B_ShowGivenThings	("Kronstöckl, 4 Feldknöterich und 5 Feuerwurzel erhalten");
+	B_ShowGivenThings	("Kronstöckl, 4 wezel chwast i 5 korzeni przeciwpozarowych zakonserwowanych");
 
 	CreateInvItems	(hero, ItPl_Perm_Herb, 1);
 	CreateInvItems	(hero, ItPl_Temp_Herb, 4);
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Faros_MangelQuest2_Info()
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Faros Pilzproblem ist gelöst.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Rozwiazano problem grzybów Faro.");
 
 	B_StopMangel();
 };
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Faros_Fake (C_INFO)
 	information	= Info_Mod_Faros_Fake_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier ein seltsamer Magier gewesen?";
+	description	= "Czy byl tu jakis dziwny mag?";
 };
 
 FUNC INT Info_Mod_Faros_Fake_Condition()
@@ -122,10 +122,10 @@ FUNC INT Info_Mod_Faros_Fake_Condition()
 
 FUNC VOID Info_Mod_Faros_Fake_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Faros_Fake_15_00"); //Ist hier ein seltsamer Magier gewesen?
-	AI_Output(self, hero, "Info_Mod_Faros_Fake_09_01"); //Ja, allerdings. Da war so ein Kerl, der es ziemlich eilig hatte. Er hat sich umgeschaut und dann was von Bibliothek gemurmelt. Dann ist er verschwunden.
+	AI_Output(hero, self, "Info_Mod_Faros_Fake_15_00"); //Czy byl tu jakis dziwny mag?
+	AI_Output(self, hero, "Info_Mod_Faros_Fake_09_01"); //Tak, rzeczywiscie. Tam byl ten facet, który sie spieszyl. Rozejrzal sie dookola, a potem mumblowal sie po bibliotece. Potem zniknal.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Faros hat mir erzählt, dass der Magier etwas von der Bibliothek gemurmelt hat. Vielleicht sollte ich mich dort mal umsehen.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Faros powiedzial mi, ze magik okaleczyl cos z biblioteki. Moze powinienem sie rozejrzec.");
 };
 
 INSTANCE Info_Mod_Faros_EXIT (C_INFO)

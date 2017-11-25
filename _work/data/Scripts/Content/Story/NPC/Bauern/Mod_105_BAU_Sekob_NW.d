@@ -1,7 +1,7 @@
 instance Mod_105_BAU_Sekob_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sekob";
+	name 		= "odosobnienie";
 	guild 		= GIL_NONE;
 	id 			= 105;
 	voice 		= 1;

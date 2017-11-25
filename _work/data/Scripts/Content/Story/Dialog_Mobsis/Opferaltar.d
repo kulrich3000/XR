@@ -114,7 +114,7 @@ INSTANCE PC_Opferaltar_Zeremoniendolch (C_INFO)
 	information	= PC_Opferaltar_Zeremoniendolch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeremoniendolch nehmen";
+	description	= "podjac ceremonialny sztylet";
 };
 
 FUNC INT PC_Opferaltar_Zeremoniendolch_Condition()
@@ -139,9 +139,9 @@ FUNC VOID PC_Opferaltar_Zeremoniendolch_Info()
 {
 	CreateInvItems	(hero, ItMw_Avaquar, 1);
 
-	B_ShowGivenThings	("Zeremoniendolch erhalten");
+	B_ShowGivenThings	("Otrzymanie ceremonialnego sztyletu");
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Was ein Akt! Aber den Dolch habe ich endlich. Nochmal mit dem Eremiten reden und dann ab zu Mustafa.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Co za akt! Ale w koncu mam sztylet. Porozmawiaj jeszcze raz z pustelnikiem, a potem z Mustafa.");
 
 	B_GivePlayerXP	(300);
 
@@ -156,7 +156,7 @@ INSTANCE PC_Opferaltar_Plagegeister (C_INFO)
 	information	= PC_Opferaltar_Plagegeister_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geister besänftigen";
+	description	= "Zmywaja duchy";
 };
 
 FUNC INT PC_Opferaltar_Plagegeister_Condition()
@@ -175,7 +175,7 @@ FUNC VOID PC_Opferaltar_Plagegeister_Info()
 	&& (Npc_HasItems(hero, ItSc_Charm) >= 1)
 	&& (Npc_HasItems(hero, ItPl_SwampHerb) >= 3)
 	{
-		AI_Output(hero, hero, "PC_Opferaltar_Plagegeister_15_00"); //Ighoriat Thorul. Kehrt ins Totenreich zurück, ihr ruhelosen Geister!
+		AI_Output(hero, hero, "PC_Opferaltar_Plagegeister_15_00"); //Ighoriat Thorul. Powrót do sfery zmarlych, jestes niespokojny duchów!
 
 		Wld_PlayEffect	("spellFX_Sleep_TARGET", hero, hero, 0, 0, 0, FALSE);
 		Wld_PlayEffect	("FX_EARTHQUAKE", hero, hero, 0, 0, 0, FALSE);
@@ -201,7 +201,7 @@ FUNC VOID PC_Opferaltar_Plagegeister_Info()
 	}
 	else
 	{
-		Print	("Mir fehlen die nötigen Gegenstände!");
+		Print	("Brakuje mi niezbednych elementów!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -215,7 +215,7 @@ INSTANCE PC_Opferaltar_Knochen (C_INFO)
 	information	= PC_Opferaltar_Knochen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Knochen eines Skelettes opfern";
+	description	= "Kosc kryza kosci szkieletowej";
 };
 
 FUNC INT PC_Opferaltar_Knochen_Condition()
@@ -249,7 +249,7 @@ INSTANCE PC_Opferaltar_Heilwurzel (C_INFO)
 	information	= PC_Opferaltar_Heilwurzel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Heilwurzel opfern";
+	description	= "Ofiara korzen leczniczy";
 };
 
 FUNC INT PC_Opferaltar_Heilwurzel_Condition()
@@ -283,7 +283,7 @@ INSTANCE PC_Opferaltar_Feuerwurzel (C_INFO)
 	information	= PC_Opferaltar_Feuerwurzel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Feuerwurzel opfern";
+	description	= "poswiecenie korzenia ognia";
 };
 
 FUNC INT PC_Opferaltar_Feuerwurzel_Condition()
@@ -317,7 +317,7 @@ INSTANCE PC_Opferaltar_Gold (C_INFO)
 	information	= PC_Opferaltar_Gold_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "500 Gold opfern";
+	description	= "500 ofiar zlota";
 };
 
 FUNC INT PC_Opferaltar_Gold_Condition()
@@ -351,7 +351,7 @@ INSTANCE PC_Opferaltar_Erz (C_INFO)
 	information	= PC_Opferaltar_Erz_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Erzbrocken opfern";
+	description	= "kawalki zloza rudy";
 };
 
 FUNC INT PC_Opferaltar_Erz_Condition()
@@ -385,7 +385,7 @@ INSTANCE PC_Opferaltar_Nahrung (C_INFO)
 	information	= PC_Opferaltar_Nahrung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Nahrung opfern";
+	description	= "wyrzeczenie sie zywnosci";
 };
 
 FUNC INT PC_Opferaltar_Nahrung_Condition()
@@ -407,87 +407,87 @@ FUNC VOID PC_Opferaltar_Nahrung_Info()
 
 	if (Npc_HasItems(hero, ItFoMuttonZombie) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Zombiefleisch opfern", PC_Opferaltar_Nahrung_MuttonZombie);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Zombie poswiecenie ciala", PC_Opferaltar_Nahrung_MuttonZombie);
 	};
 	if (Npc_HasItems(hero, ItFo_Sausage) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Wurst opfern", PC_Opferaltar_Nahrung_Sausage);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "poswiecenie kielbasa", PC_Opferaltar_Nahrung_Sausage);
 	};
 	if (Npc_HasItems(hero, ItFo_Wineberrys_01) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Weintrauben opfern", PC_Opferaltar_Nahrung_Wineberrys_01);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Winogrona ofiarne z kryzy", PC_Opferaltar_Nahrung_Wineberrys_01);
 	};
 	if (Npc_HasItems(hero, ItFo_XPStew) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Thekla's Eintopf opfern", PC_Opferaltar_Nahrung_XPStew);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Gulasz w ofierze Gulasz Thekla", PC_Opferaltar_Nahrung_XPStew);
 	};
 	if (Npc_HasItems(hero, ItPl_SwampHerb) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Sumpfkraut opfern", PC_Opferaltar_Nahrung_SwampHerb);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "ambrozja bagnista", PC_Opferaltar_Nahrung_SwampHerb);
 	};
 	if (Npc_HasItems(hero, ItFo_StockFish) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Stockfisch opfern", PC_Opferaltar_Nahrung_StockFish);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Ofiara stada", PC_Opferaltar_Nahrung_StockFish);
 	};
 	if (Npc_HasItems(hero, ItFo_Bacon) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Schinken opfern", PC_Opferaltar_Nahrung_Bacon);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "wyrzeczenie szynki", PC_Opferaltar_Nahrung_Bacon);
 	};
 	if (Npc_HasItems(hero, ItFo_Schafswurst) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Schafswurst opfern", PC_Opferaltar_Nahrung_Schafswurst);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "poswiecona owcza kielbasa owcza", PC_Opferaltar_Nahrung_Schafswurst);
 	};
 	if (Npc_HasItems(hero, ItFo_Kuerbis) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Kürbis opfern", PC_Opferaltar_Nahrung_Kuerbis);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Dynia kryza", PC_Opferaltar_Nahrung_Kuerbis);
 	};
 	if (Npc_HasItems(hero, ItFo_Cheese) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Käse opfern", PC_Opferaltar_Nahrung_Cheese);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Ser kryza", PC_Opferaltar_Nahrung_Cheese);
 	};
 	if (Npc_HasItems(hero, ItFo_Honey) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Honig opfern", PC_Opferaltar_Nahrung_Honey);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "miód poswiecajacy", PC_Opferaltar_Nahrung_Honey);
 	};
 	if (Npc_HasItems(hero, ItFo_PfefferBacon) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "gepfefferten Schinken opfern", PC_Opferaltar_Nahrung_PfefferBacon);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "utrudniony proces poswiecenia", PC_Opferaltar_Nahrung_PfefferBacon);
 	};
 	if (Npc_HasItems(hero, ItFo_Fish_Gebraten) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "gebratenen Fisch opfern", PC_Opferaltar_Nahrung_Fish_Gebraten);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "ofiara smazonych ryb", PC_Opferaltar_Nahrung_Fish_Gebraten);
 	};
 	if (Npc_HasItems(hero, ItFo_Fleischeintopf) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fleischeintopf opfern", PC_Opferaltar_Nahrung_Fleischeintopf);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "gulasz miesny", PC_Opferaltar_Nahrung_Fleischeintopf);
 	};
 	if (Npc_HasItems(hero, ItFo_FishSoup) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fischsuppe opfern", PC_Opferaltar_Nahrung_FishSoup);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Zupa rybna poswiecenie", PC_Opferaltar_Nahrung_FishSoup);
 	};
 	if (Npc_HasItems(hero, ItFo_Fishragout) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fischragout opfern", PC_Opferaltar_Nahrung_Fishragout);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Ofiara ragouta rybnego", PC_Opferaltar_Nahrung_Fishragout);
 	};
 	if (Npc_HasItems(hero, ItFo_Fish) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Fisch opfern", PC_Opferaltar_Nahrung_Fish);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "ofiara ryba", PC_Opferaltar_Nahrung_Fish);
 	};
 	if (Npc_HasItems(hero, ItFo_Stew) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Eintopf opfern", PC_Opferaltar_Nahrung_Stew);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "gulasz ofiarny", PC_Opferaltar_Nahrung_Stew);
 	};
 	if (Npc_HasItems(hero, ItFo_Blutkult) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Dämoneneintopf der Verdammnis opfern", PC_Opferaltar_Nahrung_Blutkult);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Poswiecenie demon demon demon gulasz do zaparcia", PC_Opferaltar_Nahrung_Blutkult);
 	};
 	if (Npc_HasItems(hero, ItFo_Bread) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Brot opfern", PC_Opferaltar_Nahrung_Bread);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "poswiecenie chleba", PC_Opferaltar_Nahrung_Bread);
 	};
 	if (Npc_HasItems(hero, ItFo_Apple) > 0)
 	{
-		Info_AddChoice	(PC_Opferaltar_Nahrung, "Apfel opfern", PC_Opferaltar_Nahrung_Apple);
+		Info_AddChoice	(PC_Opferaltar_Nahrung, "Jablko kryza jablko kryza", PC_Opferaltar_Nahrung_Apple);
 	};
 };
 

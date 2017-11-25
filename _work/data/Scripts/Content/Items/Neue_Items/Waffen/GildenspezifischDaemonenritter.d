@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_XRSchwert_04 (C_Item)
 {	
-	name 				=	"Beliars' Vollstrecker";
+	name 				=	"Wykonawca Beliarsa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -25,7 +25,7 @@ INSTANCE ItMw_XRSchwert_04 (C_Item)
 };
 INSTANCE ItMw_XRSChwert_04_Geschaerft (C_Item)
 {	
-	name 				=	"Beliars' Vollstrecker (geschärft)";
+	name 				=	"Wykonawca Beliarsa (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

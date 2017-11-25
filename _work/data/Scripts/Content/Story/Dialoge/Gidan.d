@@ -9,7 +9,7 @@ INSTANCE Info_Mod_Gidan_Hi (C_INFO)
 	information	= Info_Mod_Gidan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Gidan_Hi_Condition()
@@ -20,7 +20,7 @@ FUNC INT Info_Mod_Gidan_Hi_Condition()
 FUNC VOID Info_Mod_Gidan_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Gidan_Hi_13_01"); //Ich bin Gidan.
+	AI_Output(self, hero, "Info_Mod_Gidan_Hi_13_01"); //Jestem Gidanem.
 };
 
 INSTANCE Info_Mod_Gidan_Kampf (C_INFO)
@@ -45,29 +45,29 @@ FUNC INT Info_Mod_Gidan_Kampf_Condition()
 
 FUNC VOID Info_Mod_Gidan_Kampf_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_00"); //Ha, du bist mein nächster Gegner? Dass ich nicht lache!
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_01"); //Willst du nicht lieber gleich aufgeben? Das würde die ganze Sache verkürzen.
-	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_15_02"); //Das einzige, das gekürzt wird, bist du, und zwar um einen Kopf, wenn du nich gleich die Klappe hälst.
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_03"); //(lacht) Du Gesindel! Bringen wir das Ganze hinter uns.
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_00"); //Huh, jestes moim nastepnym przeciwnikiem? Nie daj mi sie smiac!
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_01"); //Dlaczego nie poddajecie sie teraz? Skróciloby to cala sprawe.
+	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_15_02"); //Jedyne, co sie skraca, to Ty, na glowie, jesli sie nie zamknales.
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_13_03"); //(smiech) Predzej sie! Zróbmy to z tym.
 
 	Info_ClearChoices	(Info_Mod_Gidan_Kampf);
 
-	Info_AddChoice	(Info_Mod_Gidan_Kampf, "Nein, warte noch.", Info_Mod_Gidan_Kampf_B);
-	Info_AddChoice	(Info_Mod_Gidan_Kampf, "Gut, ich bin bereit.", Info_Mod_Gidan_Kampf_A);
+	Info_AddChoice	(Info_Mod_Gidan_Kampf, "Nie, poczekaj minute.", Info_Mod_Gidan_Kampf_B);
+	Info_AddChoice	(Info_Mod_Gidan_Kampf, "Wlasciwie, jestem gotowy.", Info_Mod_Gidan_Kampf_A);
 };
 
 FUNC VOID Info_Mod_Gidan_Kampf_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_B_15_00"); //Nein, warte noch.
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_B_13_01"); //Dann komm wieder, wenn du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_B_15_00"); //Nie, poczekaj minute.
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_B_13_01"); //Potem wróc, gdy bedziesz gotowy.
 
 	Info_ClearChoices	(Info_Mod_Gidan_Kampf);
 };
 
 FUNC VOID Info_Mod_Gidan_Kampf_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_A_15_00"); //Gut, ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_A_13_01"); //Jetzt mach ich dich fertig!
+	AI_Output(hero, self, "Info_Mod_Gidan_Kampf_A_15_00"); //Wlasciwie, jestem gotowy.
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf_A_13_01"); //Teraz koncze cie!
 
 	Info_ClearChoices	(Info_Mod_Gidan_Kampf);
 
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Gidan_Kampf2 (C_INFO)
 	information	= Info_Mod_Gidan_Kampf2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Zeig mir was du kannst!";
+	description	= "Pokaz mi, co mozesz zrobic!";
 };
 
 FUNC INT Info_Mod_Gidan_Kampf2_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Mod_Gidan_Kampf2_Condition()
 
 FUNC VOID Info_Mod_Gidan_Kampf2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gidan_Kampf2_15_00"); //Zeig mir was du kannst!
-	AI_Output(self, hero, "Info_Mod_Gidan_Kampf2_13_01"); //Dann komm mal her.
+	AI_Output(hero, self, "Info_Mod_Gidan_Kampf2_15_00"); //Pokaz mi, co mozesz zrobic!
+	AI_Output(self, hero, "Info_Mod_Gidan_Kampf2_13_01"); //Przyjdzcie wiec tutaj.
 
 	self.fight_tactic = FAI_HUMAN_STRONG;
 
@@ -136,34 +136,34 @@ FUNC VOID Info_Mod_Gidan_KampfEnde_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_00"); //(brüllt) Betrug! Man hat mich betrogen!
-			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_03"); //Nie hätte jemand wie du es geschafft einen Kämpfer meinesgleichen zu besiegen!
-			AI_Output(hero, self, "Info_Mod_Gidan_KampfEnde_15_04"); //Reg dich ab! Ich habe dich fair und ehrlich geschlagen.
-			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_05"); //Das werde ich mir nicht gefallen lassen!
+			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_00"); //(roars) Oszustwa! Zostalem oszukany!
+			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_03"); //Nigdy nikt nie chcialby, zeby udalo ci sie pokonac tego rodzaju wojownika!
+			AI_Output(hero, self, "Info_Mod_Gidan_KampfEnde_15_04"); //Wez to latwo! Bity uczciwie i uczciwie.
+			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_05"); //Nie wytrzymam tego!
 
 			Mod_MilizTurnier = 11;
 			
 			B_StartOtherRoutine	(Mod_1723_MIL_Gidan_NW,	"SAUER");
 				
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Gidan gewonnen. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Zwyciezylem w walce z Gidanem. Powinienem teraz porozmawiac z Panem Andre.");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_01"); //Tja, das war wohl nichts. Jetzt werde ich vielleicht ein Mitglied der Miliz.
+			AI_Output(self, hero, "Info_Mod_Gidan_KampfEnde_13_01"); //No cóz, to bylo nic. Teraz moge zostac czlonkiem milicji.
 
 			Mod_MilizTurnier = 12;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Gidan verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Stracilem walke z Gidanem. Powinienem teraz porozmawiac z Panem Andre.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		}
 		else //FIGHT_CANCEL
 		{
-			AI_Output (self, other,"Info_Mod_Gidan_KampfEnde_13_02"); //Du bist abgehauen und dadurch hab ich gewonnen. Dumm gelaufen für dich.
+			AI_Output (self, other,"Info_Mod_Gidan_KampfEnde_13_02"); //Uciekles i tak wygralem. To bylo dla Ciebie glupia rzecza.
 
 			Mod_MilizTurnier = 12;
 
-			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Ich habe meinen Kampf gegen Gidan verloren. Ich sollte jetzt mit Lord Andre sprechen.");
+			B_LogEntry	(TOPIC_MOD_MILIZTURNIER, "Stracilem walke z Gidanem. Powinienem teraz porozmawiac z Panem Andre.");
 
 			B_SetTopicStatus	(TOPIC_MOD_MILIZTURNIER, LOG_FAILED);
 		};
@@ -207,11 +207,11 @@ FUNC INT Info_Mod_Gidan_Andre_Condition()
 
 FUNC VOID Info_Mod_Gidan_Andre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_00"); //So sieht man sich wieder.
-	AI_Output(hero, self, "Info_Mod_Gidan_Andre_15_01"); //Was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_02"); //Ich erfülle nur meine Pflicht als Miliz dieser Stadt.
-	AI_Output(hero, self, "Info_Mod_Gidan_Andre_15_03"); //Hast dir den Posten wohl erkauft was?
-	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_04"); //Ts, auf solche Beleidigungen gehe ich gar nicht ein. Ich muss jetzt der Pflicht nachgehen!
+	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_00"); //Spotykamy sie wiec ponownie.
+	AI_Output(hero, self, "Info_Mod_Gidan_Andre_15_01"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_02"); //Spelniam jedynie mój obowiazek milicji w tym miescie.
+	AI_Output(hero, self, "Info_Mod_Gidan_Andre_15_03"); //Mysle, ze kupiles prace, huh?
+	AI_Output(self, hero, "Info_Mod_Gidan_Andre_13_04"); //Ts, nie reaguje na takie obelgi. Musze teraz wykonac swój obowiazek!
 
 	AI_StopProcessInfos	(self);
 };

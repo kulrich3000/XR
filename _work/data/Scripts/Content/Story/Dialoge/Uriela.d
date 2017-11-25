@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Uriela_GoOutOfHere (C_INFO)
 	information	= Info_Mod_Uriela_GoOutOfHere_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Verlasst dieses Haus und macht, dass ihr weg kommt!";
+	description	= "Opusc ten dom i wyciagnij z niego pieklo!";
 };
 
 FUNC INT Info_Mod_Uriela_GoOutOfHere_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Uriela_GoOutOfHere_Condition()
 
 FUNC VOID Info_Mod_Uriela_GoOutOfHere_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_GoOutOfHere_15_00"); //Verlasst dieses Haus und macht, dass ihr weg kommt!
-	AI_Output(self, hero, "Info_Mod_Uriela_GoOutOfHere_17_01"); //Nein, von hier lassen wir uns nicht mehr wegjagen.
+	AI_Output(hero, self, "Info_Mod_Uriela_GoOutOfHere_15_00"); //Opusc ten dom i wyciagnij z niego pieklo!
+	AI_Output(self, hero, "Info_Mod_Uriela_GoOutOfHere_17_01"); //Nie, nie zostaniemy stad odsunieci.
 
 	AI_StopProcessInfos	(self);
 };
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Uriela_WhoAreYou (C_INFO)
 	information	= Info_Mod_Uriela_WhoAreYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer seid ihr und was macht ihr hier?";
+	description	= "Kim jestes i co robisz tutaj?";
 };
 
 FUNC INT Info_Mod_Uriela_WhoAreYou_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Uriela_WhoAreYou_Condition()
 
 FUNC VOID Info_Mod_Uriela_WhoAreYou_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_WhoAreYou_15_00"); //Wer seid ihr und was macht ihr hier?
-	AI_Output(self, hero, "Info_Mod_Uriela_WhoAreYou_17_01"); //Wir sind gläubige Beliaranhänger, die von der Insel Khorala fliehen mussten und auf der Suche nach einer neuen Bleibe sind.
+	AI_Output(hero, self, "Info_Mod_Uriela_WhoAreYou_15_00"); //Kim jestes i co robisz tutaj?
+	AI_Output(self, hero, "Info_Mod_Uriela_WhoAreYou_17_01"); //Wierzymy w wyznawców Beliaranu, którzy musieli uciec z wyspy Khorala i szukaja nowego miejsca na pobyt.
 };
 
 INSTANCE Info_Mod_Uriela_WhyFlight (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Uriela_WhyFlight (C_INFO)
 	information	= Info_Mod_Uriela_WhyFlight_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weshalb musstet ihr die Flucht ergreifen?";
+	description	= "Dlaczego musiales uciec?";
 };
 
 FUNC INT Info_Mod_Uriela_WhyFlight_Condition()
@@ -71,11 +71,11 @@ FUNC INT Info_Mod_Uriela_WhyFlight_Condition()
 
 FUNC VOID Info_Mod_Uriela_WhyFlight_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_WhyFlight_15_00"); //Weshalb musstet ihr die Flucht ergreifen?
-	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_01"); //Die Schergen eines niederträchtigen Magiers Namens Xeres betraten unsere Siedlung und verlangten von uns Beliar zu verleugnen und stattdessen ihrem Herrn zu dienen.
-	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_02"); //Wir weigerten uns standhaft und wurden von ihnen angegriffen.
-	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_03"); //Wie sich zeigte, waren auch sie Herr über die sphärische Manifestation und sie schafften es zudem, einige unserer Kreaturen unter ihre Kontrolle zu bringen.
-	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_04"); //Wir unterlagen und konnten uns nur durch einen raschen Teleportzauber auf dieses Eiland hier retten – als einige der wenigen Überlebenden.
+	AI_Output(hero, self, "Info_Mod_Uriela_WhyFlight_15_00"); //Dlaczego musiales uciec?
+	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_01"); //Postacie niegodziwego maga o imieniu Xeres wkroczyly do naszej osady i zazadaly, abysmy zaparli sie Beliara i zamiast tego sluzyli Panu ich.
+	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_02"); //Niezlomnie odmówilismy i zostalismy przez nich zaatakowani.
+	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_03"); //Jak sie okazalo, oni tez byli mistrzami kulistej manifestacji i zdolali tez przyprowadzic pod swoja kontrole niektóre z naszych stworzen.
+	AI_Output(self, hero, "Info_Mod_Uriela_WhyFlight_17_04"); //Stracilismy i moglismy sie ocalic tylko dzieki szybkiemu teleportowi na tej wyspie - jako jedni z niewielu ocalalych.
 };
 
 INSTANCE Info_Mod_Uriela_FarmWorking (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Uriela_FarmWorking (C_INFO)
 	information	= Info_Mod_Uriela_FarmWorking_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dieser Hof wird bereits von einigen Leuten bewohnt.";
+	description	= "Gospodarstwo to jest juz zamieszkane przez czesc ludzi.";
 };
 
 FUNC INT Info_Mod_Uriela_FarmWorking_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Uriela_FarmWorking_Condition()
 
 FUNC VOID Info_Mod_Uriela_FarmWorking_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_FarmWorking_15_00"); //Dieser Hof wird bereits von einigen Leuten bewohnt.
-	AI_Output(self, hero, "Info_Mod_Uriela_FarmWorking_17_01"); //Und?! Was sollen wir denn machen? Auch wir brauchen Obdach.
+	AI_Output(hero, self, "Info_Mod_Uriela_FarmWorking_15_00"); //Gospodarstwo to jest juz zamieszkane przez czesc ludzi.
+	AI_Output(self, hero, "Info_Mod_Uriela_FarmWorking_17_01"); //A? Co powinnismy zrobic? Potrzebujemy równiez schronienia.
 };
 
 INSTANCE Info_Mod_Uriela_LiveTogether (C_INFO)
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Uriela_LiveTogether (C_INFO)
 	information	= Info_Mod_Uriela_LiveTogether_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könntet ihr nicht zusammen mit ihnen hier leben?";
+	description	= "Czy nie mozesz tu mieszkac?";
 };
 
 FUNC INT Info_Mod_Uriela_LiveTogether_Condition()
@@ -124,14 +124,14 @@ FUNC INT Info_Mod_Uriela_LiveTogether_Condition()
 
 FUNC VOID Info_Mod_Uriela_LiveTogether_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_LiveTogether_15_00"); //Könntet ihr nicht zusammen mit ihnen hier leben?
-	AI_Output(self, hero, "Info_Mod_Uriela_LiveTogether_17_01"); //Mit denen?! Es sind doch vermutlich Diener Innos’. Wie sollte das klappen?
-	AI_Output(hero, self, "Info_Mod_Uriela_LiveTogether_15_02"); //Auch sie haben Verluste erlitten, durch genau denselben Unhold. Er ist eine Gefahr für alle, die Diener Innos’, wie auch die Diener Beliars’.
-	AI_Output(self, hero, "Info_Mod_Uriela_LiveTogether_17_03"); //Hmm, du magst vielleicht Recht haben. Unter diesen Umständen habe ich gegen eine Zusammenarbeit auf Zeit nichts einzuwenden.
+	AI_Output(hero, self, "Info_Mod_Uriela_LiveTogether_15_00"); //Czy nie mozesz tu mieszkac?
+	AI_Output(self, hero, "Info_Mod_Uriela_LiveTogether_17_01"); //Z nimi? Prawdopodobnie sa oni tylko slugami Innos ". Jak by to funkcjonowalo?
+	AI_Output(hero, self, "Info_Mod_Uriela_LiveTogether_15_02"); //Oni równiez poniesli straty z tego samego przyjaciela. Jest on zagrozeniem dla wszystkich slug Inno, jak równiez dla slug Beliara.
+	AI_Output(self, hero, "Info_Mod_Uriela_LiveTogether_17_03"); //Hmm, byc moze masz racje. W tych okolicznosciach nie mam zastrzezen do tymczasowej wspólpracy.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Es sind Diener Beliar’s, die vor Xeres’ Schergen fliehen mussten. Sie wären damit einverstanden für einige Zeit mit den anderen gemeinsam auf dem Hof zu leben. Ich hoffe, dass auch Telbor dafür zu gewinnen ist.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Sa slugami Beliara, który musial uciec przed poplecznikami Xeresów. Zgodza sie oni mieszkac razem z innymi w gospodarstwie przez pewien czas. Mam nadzieje, ze Telbor równiez moze sie przekonac.");
 };
 
 INSTANCE Info_Mod_Uriela_LiveOtherway (C_INFO)
@@ -142,7 +142,7 @@ INSTANCE Info_Mod_Uriela_LiveOtherway (C_INFO)
 	information	= Info_Mod_Uriela_LiveOtherway_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könntet ihr euch nicht doch vorstellen, woanders hin zu gehen?";
+	description	= "Czy nie wyobrazasz sobie wyjazdu gdzies indziej?";
 };
 
 FUNC INT Info_Mod_Uriela_LiveOtherway_Condition()
@@ -155,8 +155,8 @@ FUNC INT Info_Mod_Uriela_LiveOtherway_Condition()
 
 FUNC VOID Info_Mod_Uriela_LiveOtherway_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_LiveOtherway_15_00"); //Könntet ihr euch nicht doch vorstellen, woanders hin zu gehen?
-	AI_Output(self, hero, "Info_Mod_Uriela_LiveOtherway_17_01"); //Was?! Aber wohin denn. Ehe wir nicht eine andere Möglichkeit haben, bleiben wir hier.
+	AI_Output(hero, self, "Info_Mod_Uriela_LiveOtherway_15_00"); //Czy nie wyobrazasz sobie wyjazdu gdzies indziej?
+	AI_Output(self, hero, "Info_Mod_Uriela_LiveOtherway_17_01"); //Co? Ale dokad idziesz? Dopóki nie bedziemy mieli innej mozliwosci, pozostaniemy tutaj.
 };
 
 INSTANCE Info_Mod_Uriela_ThinkForPlace (C_INFO)
@@ -167,7 +167,7 @@ INSTANCE Info_Mod_Uriela_ThinkForPlace (C_INFO)
 	information	= Info_Mod_Uriela_ThinkForPlace_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hmm, lass mich nachdenken, vielleicht fällt mir ja was ein.";
+	description	= "Cóz, niech mi sie pomysli, moze cos pomysle.";
 };
 
 FUNC INT Info_Mod_Uriela_ThinkForPlace_Condition()
@@ -180,7 +180,7 @@ FUNC INT Info_Mod_Uriela_ThinkForPlace_Condition()
 
 FUNC VOID Info_Mod_Uriela_ThinkForPlace_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_ThinkForPlace_15_00"); //Hmm, lass mich nachdenken, vielleicht fällt mir ja was ein.
+	AI_Output(hero, self, "Info_Mod_Uriela_ThinkForPlace_15_00"); //Cóz, niech mi sie pomysli, moze cos pomysle.
 };
 
 INSTANCE Info_Mod_Uriela_MageAndFighter (C_INFO)
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Uriela_MageAndFighter (C_INFO)
 	information	= Info_Mod_Uriela_MageAndFighter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ihr seid doch magisch begabt, kennt euch bestimmt in der Landwirtschaft etwas aus (...)";
+	description	= "Jestescie magicznie uzdolnieni, na pewno wiecie cos o rolnictwie (....). )";
 };
 
 FUNC INT Info_Mod_Uriela_MageAndFighter_Condition()
@@ -204,10 +204,10 @@ FUNC INT Info_Mod_Uriela_MageAndFighter_Condition()
 
 FUNC VOID Info_Mod_Uriela_MageAndFighter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_MageAndFighter_15_00"); //Ihr seid doch magisch begabt, kennt euch bestimmt in der Landwirtschaft etwas aus und könnt vermutlich auch mit Waffen kämpfen.
-	AI_Output(hero, self, "Info_Mod_Uriela_MageAndFighter_15_01"); //Bei den Dämonenmagiern oder -kriegern oder auf dem Großbauernhof wird man euch bestimmt aufnehmen.
-	AI_Output(self, hero, "Info_Mod_Uriela_MageAndFighter_17_02"); //Magisch begabt sind wir zwar, aber wir verstehen uns dennoch nicht auf runengebundene Magie.
-	AI_Output(self, hero, "Info_Mod_Uriela_MageAndFighter_17_03"); //Und mein Sohn ist im Kampf mit den Waffen auch noch nicht so geschickt.
+	AI_Output(hero, self, "Info_Mod_Uriela_MageAndFighter_15_00"); //Jestes magicznie utalentowany, masz troche wiedzy o rolnictwie i prawdopodobnie mozesz walczyc z bronia.
+	AI_Output(hero, self, "Info_Mod_Uriela_MageAndFighter_15_01"); //Czarodzieje demonów, demoniczni wojownicy lub duze gospodarstwo na pewno cie wciagna.
+	AI_Output(self, hero, "Info_Mod_Uriela_MageAndFighter_17_02"); //Jestesmy magicznie utalentowani, ale nie rozumiemy samych siebie w magii runowej.
+	AI_Output(self, hero, "Info_Mod_Uriela_MageAndFighter_17_03"); //I mój syn nie jest tak dobry w walce z bronia.
 };
 
 INSTANCE Info_Mod_Uriela_Bengar (C_INFO)
@@ -218,7 +218,7 @@ INSTANCE Info_Mod_Uriela_Bengar (C_INFO)
 	information	= Info_Mod_Uriela_Bengar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bengar’s Hof ist verlassen.";
+	description	= "Gospodarstwo Bengara jest opuszczone.";
 };
 
 FUNC INT Info_Mod_Uriela_Bengar_Condition()
@@ -232,8 +232,8 @@ FUNC INT Info_Mod_Uriela_Bengar_Condition()
 
 FUNC VOID Info_Mod_Uriela_Bengar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_Bengar_15_00"); //Bengar’s Hof ist verlassen. Ihr müsst dazu die Brücke überqueren und das nächste mal rechts einbiegen, auf das Weidenplateau.
-	AI_Output(self, hero, "Info_Mod_Uriela_Bengar_17_01"); //Hört sich gut an, und wenn wir auf diesem Weg weiteren Konflikten aus dem Weg gehen können ...
+	AI_Output(hero, self, "Info_Mod_Uriela_Bengar_15_00"); //Gospodarstwo Bengara jest opuszczone. Nalezy przejsc przez most i nastepnym razem skrecic w prawo na plaskowyz pastwiskowy.
+	AI_Output(self, hero, "Info_Mod_Uriela_Bengar_17_01"); //Dobrze brzmi i jesli uda nam sie uniknac dalszych konfliktów w ten sposób....
 
 	AI_StopProcessInfos	(self);
 
@@ -246,7 +246,7 @@ FUNC VOID Info_Mod_Uriela_Bengar_Info()
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "So, die Belianer machen sich auf den Weg zu ihrer neuen Bleibe. Jetzt brauche ich nur noch Telbor bescheid zu geben, dass das Haus wieder frei ist.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "No cóz, Belianie zmierzaja do swojego nowego domu. Teraz musze tylko poinformowac Telbora, ze dom jest ponownie wolny.");
 };
 
 INSTANCE Info_Mod_Uriela_TeachMage (C_INFO)
@@ -257,7 +257,7 @@ INSTANCE Info_Mod_Uriela_TeachMage (C_INFO)
 	information	= Info_Mod_Uriela_TeachMage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Kreis 1 und 2 der Runenmagie lehren)";
+	description	= "(Okrag 1 i 2 programu nauczania Runemagic)";
 };
 
 FUNC INT Info_Mod_Uriela_TeachMage_Condition()
@@ -271,9 +271,9 @@ FUNC INT Info_Mod_Uriela_TeachMage_Condition()
 
 FUNC VOID Info_Mod_Uriela_TeachMage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_00"); //Der erste Kreis erlaubt es dir, Runen, die du erschaffen hast, anzuwenden.
-	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_01"); //Du kannst jetzt die Formeln der Zaubersprüche lernen, um deine eigenen Runen herzustellen.
-	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_02"); //Tritt nun in den zweiten Kreis und lerne, noch mächtigere Zauber zu wirken.
+	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_00"); //Pierwsze kolo pozwala na uzycie utworzonych przez Ciebie run.
+	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_01"); //Mozesz teraz nauczyc sie formul zaklec, aby tworzyc wlasne runy.
+	AI_Output(hero, self, "Info_Mod_Uriela_TeachMage_15_02"); //Wejdz do drugiego kola i naucz sie rzucac jeszcze mocniejsze czary.
 
 	B_GivePlayerXP	(100);
 };
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Uriela_TeachingFinished (C_INFO)
 	information	= Info_Mod_Uriela_TeachingFinished_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe euch unterwiesen.";
+	description	= "Nauczylem cie.";
 };
 
 FUNC INT Info_Mod_Uriela_TeachingFinished_Condition()
@@ -300,19 +300,19 @@ FUNC INT Info_Mod_Uriela_TeachingFinished_Condition()
 
 FUNC VOID Info_Mod_Uriela_TeachingFinished_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_00"); //Ich habe euch unterwiesen.
+	AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_00"); //Nauczylem cie.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Uriela_TeachMage))
 	{
-		AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_01"); //Du bist jetzt der Runenmagie mächtig.
+		AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_01"); //Jestes teraz potezny w magii runów.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Mann_TeachFight))
 	{
-		AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_02"); //Dein Sohn kann kämpfen.
+		AI_Output(hero, self, "Info_Mod_Uriela_TeachingFinished_15_02"); //Twój syn moze walczyc.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Uriela_TeachingFinished_17_03"); //Hab vielen Dank. Jetzt können wir uns woanders umsehen und mehr tun, als nur Rüben pflücken.
+	AI_Output(self, hero, "Info_Mod_Uriela_TeachingFinished_17_03"); //Dziekuje bardzo. Teraz mozemy spojrzec gdzie indziej i zrobic cos wiecej niz tylko wybrac rzepe.
 
 	AI_StopProcessInfos	(self);
 
@@ -323,7 +323,7 @@ FUNC VOID Info_Mod_Uriela_TeachingFinished_Info()
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "So, die Belianer machen sich auf den Weg zu ihrer neuen Bleibe. Jetzt brauche ich nur noch Telbor bescheid zu geben, dass das Haus wieder frei ist.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "No cóz, Belianie zmierzaja do swojego nowego domu. Teraz musze tylko poinformowac Telbora, ze dom jest ponownie wolny.");
 };
 
 INSTANCE Info_Mod_Uriela_Verbatscht (C_INFO)
@@ -346,7 +346,7 @@ FUNC INT Info_Mod_Uriela_Verbatscht_Condition()
 
 FUNC VOID Info_Mod_Uriela_Verbatscht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Uriela_Verbatscht_17_00"); //Verdammt, Beliar soll dich dafür strafen du Schuft.
+	AI_Output(self, hero, "Info_Mod_Uriela_Verbatscht_17_00"); //Beliar za to ukarze cie, oszukasz.
 
 	AI_StopProcessInfos	(self);
 
@@ -374,16 +374,16 @@ FUNC INT Info_Mod_Uriela_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Uriela_Irdorath_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_00"); //Schön dich mal wieder zu Gesicht zu bekommen. Wie ist es dir ergangen?
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_01"); //Gibt es vielleicht irgendwelche nennenswerten Neuigkeiten?
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_02"); //Naja, ich lebe noch und schickte manch garstiges Untier in das Reich Beliars.
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_03"); //Mit Magie und auf Schusters Rappen besuchte ich viele Flecken der Insel, aber wo ich als nächstes hin muss, kann mich nur ein Schiff befördern.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_04"); //Tatsächlich, du planst eine Seereise?
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_05"); //Ja, zu einer Insel, um den Lakaien des finsteren Xeres zu stellen ...
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_06"); //Was?! Jenes abscheulichen Magiers, der für die Vernichtung meiner Siedlung verantwortlich ist, jener, der die Verbannung meines Herrn Beliar anstrebt?
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_07"); //Genau dieser.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_08"); //Wenn es im Rahmen deiner Möglichkeiten liegt, so bitte ich darum, dich bei dieser Exkursion begleiten zu dürfen.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_09"); //Es wäre mir ein wichtiges Anliegen. Endlich die Genugtuung Rache an dem Frevler für seine Missetaten zu nehmen zu können ...
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_00"); //Milosc, aby cie ponownie zobaczyc. Jak Pan/Pani byl/a?
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_01"); //Jakich wiadomosci warto wspomniec?
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_02"); //Cóz, wciaz zyje i wyslalem jakies paskudne bestie do królestwa Beliara.
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_03"); //Z magia i rappenem Schustera zwiedzilem wiele miejsc na wyspie, ale dokad musze isc dalej, tylko statek moze mnie przewiezc.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_04"); //Tak naprawde planujesz podróz oceaniczna?
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_05"); //Tak, na wyspe, aby polozyc stopke ciemnego Xerere.....
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_06"); //Co? Ohydny magik, który jest odpowiedzialny za zniszczenie mojej osady, ten, który próbuje wygnac mojego Pana Beliara?
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath_15_07"); //To jedno prawo tutaj.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_08"); //Jesli jest w zasiegu waszych mozliwosci, pozwole sobie towarzyszyc wam podczas tej wycieczki.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath_17_09"); //Byloby to dla mnie wazne. W koncu zadoscuczynienie zemsty na niegodziwca za swoje wykroczenia.....
 };
 
 INSTANCE Info_Mod_Uriela_Irdorath2 (C_INFO)
@@ -394,7 +394,7 @@ INSTANCE Info_Mod_Uriela_Irdorath2 (C_INFO)
 	information	= Info_Mod_Uriela_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann freut es mich meinerseits, die Mannschaft um jemanden bereichern zu können, der sich auf Hexenmagie versteht.";
+	description	= "Ciesze sie, ze bede mógl wzbogacic zespól o kogos, kto rozumie magie czarownic.";
 };
 
 FUNC INT Info_Mod_Uriela_Irdorath2_Condition()
@@ -408,10 +408,10 @@ FUNC INT Info_Mod_Uriela_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Uriela_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath2_15_00"); //Dann freut es mich meinerseits, die Mannschaft um jemanden bereichern zu können, der sich auf Hexenmagie versteht. Komm in die Stadt zum Hafen.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath2_17_01"); //Das werde ich.
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath2_15_00"); //Ciesze sie, ze bede mógl wzbogacic zespól o kogos, kto rozumie magie czarownic. Zapraszamy do portu.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath2_17_01"); //Bede, to zrobie.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Uriela sinnt auf Rache an Xeres und wird am Hafen warten.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Uriela szuka zemsty na Xeres i czeka w porcie.");
 
 	B_GivePlayerXP	(100);
 
@@ -432,7 +432,7 @@ INSTANCE Info_Mod_Uriela_Irdorath3 (C_INFO)
 	information	= Info_Mod_Uriela_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Uriela_Irdorath3_Condition()
@@ -450,8 +450,8 @@ FUNC INT Info_Mod_Uriela_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Uriela_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath3_17_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath3_17_01"); //Zbyt zle. Wróce wtedy. Wiesz, gdzie mnie znalezc, jesli kiedykolwiek zostanie jakies miejsce.
 
 	Mod_UrielaDabei = 0;
 
@@ -470,7 +470,7 @@ INSTANCE Info_Mod_Uriela_Irdorath4 (C_INFO)
 	information	= Info_Mod_Uriela_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "Moge dac ci przejazdzke.";
 };
 
 FUNC INT Info_Mod_Uriela_Irdorath4_Condition()
@@ -486,8 +486,8 @@ FUNC INT Info_Mod_Uriela_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Uriela_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath4_17_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Uriela_Irdorath4_15_00"); //Moge dac ci przejazdzke. Na statku znajduje sie pomieszczenie.
+	AI_Output(self, hero, "Info_Mod_Uriela_Irdorath4_17_01"); //Bardzo dobrze, wróce do portu.
 
 	Mod_UrielaDabei = 1;
 

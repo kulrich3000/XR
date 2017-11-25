@@ -1,7 +1,7 @@
 INSTANCE PC_Levelinspektor(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "Levelinspektor";
+	name 			= "inspektor poziomu";
 	Npctype			= NPCTYPE_MAIN;
 	flags			= NPC_FLAG_GHOST;
 	guild			= GIL_NONE;

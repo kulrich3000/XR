@@ -1,7 +1,7 @@
 instance Mod_7010_HS_Sabine_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sabine";	//Halvors Frau
+	name 		= "Sabina";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7010;
 	voice 		= 17;

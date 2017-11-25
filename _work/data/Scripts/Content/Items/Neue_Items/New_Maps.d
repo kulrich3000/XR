@@ -1,6 +1,6 @@
 INSTANCE ItWrFocimap(C_Item)
 {	
-	name 					=	"Fokuskarte von Saturas";
+	name 					=	"Mapa ogniskowa Satura";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -14,12 +14,12 @@ INSTANCE ItWrFocimap(C_Item)
 	on_state[0]				=	UseFocimap;
 
 	description				= name;
-	TEXT[0]					= "Die Spitzen des Pentagramms markieren die ";
-	TEXT[1]					= "Orte aller fünf Fokussteine, die damals bei";
-	TEXT[2]					= "der Erschaffung der magischen Barriere";
-	TEXT[3]					= "verwendet wurden. Die Karte ist alt und die";
-	TEXT[4]					= "Steine könnten mittlerweile";
-	TEXT[5]					= "an anderen Orten liegen";
+	TEXT[0]					= "Szczyty pentagramu oznaczaja ";
+	TEXT[1]					= "Polozenia wszystkich pieciu kamieni ogniskujacych, które znaleziono w tamtym czasie";
+	TEXT[2]					= "stworzenie bariery magicznej";
+	TEXT[3]					= "zostaly uzyte. Mapa jest stara i stara";
+	TEXT[4]					= "Kamienie moglyby w miedzyczasie byc";
+	TEXT[5]					= "lezac";
 };
 
 FUNC VOID UseFocimap()
@@ -38,7 +38,7 @@ FUNC VOID UseFocimap()
 
 INSTANCE ItWrTemplemap(C_Item)
 {
-	name 				=	"Karte";
+	name 				=	"menu";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -51,7 +51,7 @@ INSTANCE ItWrTemplemap(C_Item)
 	scemeName			=	"MAP";
 	on_state[0]			=	UseTemplemap;
 
-	description			= "Skizze des Tempels";
+	description			= "Szkic swiatyni";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
@@ -72,7 +72,7 @@ INSTANCE ItWrTemplemap(C_Item)
 
 INSTANCE ItWrWorldmap(C_Item)
 {	
-	name 					=	"Karte der Kolonie";
+	name 					=	"Mapa kolonii";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -86,8 +86,8 @@ INSTANCE ItWrWorldmap(C_Item)
 	on_state[0]				=	UseWorldmap;
 
 	description				= name;
-	TEXT[0]					= "Leider fehlt darauf ein großes Gebiet";
-	TEXT[1]					= "im Südwesten.";
+	TEXT[0]					= "Niestety nie ma na niej niestety duzego obszaru.";
+	TEXT[1]					= "na poludniowym zachodzie.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -110,7 +110,7 @@ INSTANCE ItWrWorldmap(C_Item)
 
 INSTANCE ItWr_EremitenCamp(C_Item)
 {	
-	name 					=	"Karte der Kolonie";
+	name 					=	"Mapa kolonii";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -124,7 +124,7 @@ INSTANCE ItWr_EremitenCamp(C_Item)
 	on_state[0]				=	UseEremitenCamp;
 
 	description				= name;
-	TEXT[0]					= "Das Lager der Druiden ist markiert";
+	TEXT[0]					= "Obóz druidów jest oznaczony";
 	TEXT[1]					= "";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -148,7 +148,7 @@ INSTANCE ItWr_EremitenCamp(C_Item)
 
 INSTANCE ItWrWorldmapZufluchten(C_Item)
 {	
-	name 					=	"Karte der Kolonie";
+	name 					=	"Mapa kolonii";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -162,7 +162,7 @@ INSTANCE ItWrWorldmapZufluchten(C_Item)
 	on_state[0]				=	UseWorldmapZufluchten;
 
 	description				= name;
-	TEXT[0]					= "Alissandro hat die Zufluchten eingezeichnet";
+	TEXT[0]					= "Alissandro przyciagnelo schroniska";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -185,7 +185,7 @@ INSTANCE ItWrWorldmapZufluchten(C_Item)
 
 INSTANCE ItWrOCmap(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -198,7 +198,7 @@ INSTANCE ItWrOCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOCmap;
 
-	description				= "Übersicht Altes Lager";
+	description				= "Przeglad Starego magazynu";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -220,7 +220,7 @@ INSTANCE ItWrOCmap(C_Item)
 
 INSTANCE ItWrNCmap(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -233,7 +233,7 @@ INSTANCE ItWrNCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseNCmap;
 
-	description				= "Übersicht Neues Lager";
+	description				= "Przeglad Nowy magazyn";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -255,7 +255,7 @@ INSTANCE ItWrNCmap(C_Item)
 
 INSTANCE ItWrPSImap(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -268,7 +268,7 @@ INSTANCE ItWrPSImap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UsePSImap;
 
-	description				= "Übersicht Sumpflager";
+	description				= "Przegladowy obóz zapasowy";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -290,7 +290,7 @@ INSTANCE ItWrPSImap(C_Item)
 
 INSTANCE ItWrWorldmap_Orc(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -303,9 +303,9 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseWorldmap_Orc;
 
-	description				= "Karte der Kolonie (ergänzt)";
-	TEXT[0]					= "Ur-Shak der Ork-Schamane hat das";
-	TEXT[1]					= "Orkgebiet eingezeichnet!";
+	description				= "Mapa kolonii (dodana)";
+	TEXT[0]					= "Oryginalny otchlan Orka Szamana ma";
+	TEXT[1]					= "Orcish zaznaczony obszar!";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -327,7 +327,7 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 
 INSTANCE ItWr_Map_Perlenkram(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -340,7 +340,7 @@ INSTANCE ItWr_Map_Perlenkram(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseMap_Perlenkram;
 
-	description				= "Auf der Karte sind verfluchte Orte eingezeichnet";
+	description				= "Na mapie zaznaczono zakreslone miejsca.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -362,7 +362,7 @@ INSTANCE ItWr_Map_Perlenkram(C_Item)
 
 INSTANCE ItWr_Map_Perlenkram_02(C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -375,7 +375,7 @@ INSTANCE ItWr_Map_Perlenkram_02(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseMap_Perlenkram_02;
 
-	description				= "Auf der Karte sind gesegnete Orte eingezeichnet";
+	description				= "Blogoslawione miejsca sa zaznaczone na mapie.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -397,7 +397,7 @@ INSTANCE ItWr_Map_Perlenkram_02(C_Item)
 
 INSTANCE ItWr_Map_Wettstreit_01 (C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -410,7 +410,7 @@ INSTANCE ItWr_Map_Wettstreit_01 (C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseMap_Wettstreit_01;
 
-	description				= "Auf der Karte sind zwei Kreuze";
+	description				= "Na mapie znajduja sie dwa krzyze";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -432,7 +432,7 @@ INSTANCE ItWr_Map_Wettstreit_01 (C_Item)
 
 INSTANCE ItWr_Map_Wettstreit_02 (C_Item)
 {	
-	name 					=	"Karte";
+	name 					=	"menu";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -445,7 +445,7 @@ INSTANCE ItWr_Map_Wettstreit_02 (C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseMap_Wettstreit_02;
 
-	description				= "Auf der Karte sind zwei Kreuze";
+	description				= "Na mapie znajduja sie dwa krzyze";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };

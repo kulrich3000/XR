@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_DemonWolf(C_Npc)			
 {
 	//----- Monster ----
-	name = "Dämonischer Wolf";
+	name = "Demonston Wolf";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	effect	= "SPELLFX_DARKARMOR";

@@ -1,7 +1,7 @@
 instance Mod_2003_GUR_BaalTondral_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Baal Tondral";
+	name 		=		"Zwijanie gliny Baal";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_OUT;
 	level 		=		28;

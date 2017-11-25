@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Angar_IR_Hi (C_INFO)
 	information	= Info_Mod_Angar_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, was sagst du?";
+	description	= "Cóz, co Pan mówi?";
 };
 
 FUNC INT Info_Mod_Angar_IR_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Angar_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Angar_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Angar_IR_Hi_15_00"); //Und, was sagst du?
-	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_01"); //Ja, das ist das Ziel unserer Reise.
-	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_02"); //Hier werde ich mein Schwert gegen jene führen, die mit Schuld an dem Tod von Meister Y'berion tragen.
-	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_03"); //Erst wenn sein Ableben 100fach durch die zerschmetterten Leiber unserer Feinde gesühnt wurde, kann ich wieder ruhen.
-	AI_Output(hero, self, "Info_Mod_Angar_IR_Hi_15_04"); //Ohh, das ist genau die Art von Einstellung, die wir für diese Expedition brauchen.
+	AI_Output(hero, self, "Info_Mod_Angar_IR_Hi_15_00"); //Cóz, co Pan mówi?
+	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_01"); //Tak, to jest cel naszej podrózy.
+	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_02"); //Oto wladam mieczem przeciwko tym, którzy sa winni smierci Mistrza J' berionu.
+	AI_Output(self, hero, "Info_Mod_Angar_IR_Hi_34_03"); //Tylko wtedy, gdy jego smierc zostanie odpoczeta 100 razy przez zdruzgotane ciala naszych wrogów, moge znowu odpoczac.
+	AI_Output(hero, self, "Info_Mod_Angar_IR_Hi_15_04"); //Oh, to wlasnie taki rodzaj postawy, jakiej potrzebujemy do tej wyprawy.
 };
 
 INSTANCE Info_Mod_Angar_IR_Hebel (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Angar_IR_Hebel (C_INFO)
 	information	= Info_Mod_Angar_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Angar_IR_Hebel_Condition()
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Angar_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Angar_IR_Hebel_34_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Angar_IR_Hebel_34_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Angar_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Angar_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Angar_IR_GehtLos_Condition()
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Angar_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Angar_IR_GehtLos_34_00"); //Natürlich. Wenn es die Situation verlangt, so soll ein Mann nicht nur durch Worte, sondern auch durch seine Taten überzeugen.
+	AI_Output(self, hero, "Info_Mod_Angar_IR_GehtLos_34_00"); //Oczywiscie tak jest. Kiedy sytuacja tego wymaga, czlowiek powinien przekonywac nie tylko slowami, ale i czynami.
 
 	Mod_IR_Dabei += 1;
 
@@ -103,7 +103,7 @@ INSTANCE Info_Mod_Angar_IR_GehBack (C_INFO)
 	information	= Info_Mod_Angar_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Angar_IR_GehBack_Condition()
@@ -120,7 +120,7 @@ FUNC VOID Info_Mod_Angar_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Angar_IR_GehBack_34_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Angar_IR_GehBack_34_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -139,7 +139,7 @@ INSTANCE Info_Mod_Angar_IR_Kram (C_INFO)
 	information	= Info_Mod_Angar_IR_Kram_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Angar_IR_Kram_Condition()
@@ -154,7 +154,7 @@ FUNC VOID Info_Mod_Angar_IR_Kram_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Angar_IR_Kram_34_01"); //Ich kann dich lehren das zweihändige Schwert zu führen und dir zeigen, wie du die Kräfte deines Körpers effektiver nutzen kannst.
+	AI_Output(self, hero, "Info_Mod_Angar_IR_Kram_34_01"); //Potrafie nauczyc sie trzymac miecz obureczny i pokazac wam, jak skuteczniej wykorzystywac sily waszego ciala.
 };
 
 INSTANCE Info_Mod_Angar_IR_Lernen (C_INFO)
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Angar_IR_Lernen (C_INFO)
 	information	= Info_Mod_Angar_IR_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Angar_IR_Lernen_Condition()
@@ -178,7 +178,7 @@ FUNC INT Info_Mod_Angar_IR_Lernen_Condition()
 
 FUNC VOID Info_Mod_Angar_IR_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Angar_IR_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Angar_IR_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Angar_IR_Lernen);
 
@@ -224,7 +224,7 @@ INSTANCE Info_Mod_Angar_IR_Staerke (C_INFO)
 	information	= Info_Mod_Angar_IR_Staerke_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden.";
+	description	= "Chce byc silniejszy.";
 };
 
 FUNC INT Info_Mod_Angar_IR_Staerke_Condition()
@@ -238,7 +238,7 @@ FUNC INT Info_Mod_Angar_IR_Staerke_Condition()
 
 FUNC VOID Info_Mod_Angar_IR_Staerke_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Angar_IR_Staerke_15_00"); //Ich will stärker werden.
+	AI_Output(hero, self, "Info_Mod_Angar_IR_Staerke_15_00"); //Chce byc silniejszy.
 
 	Info_ClearChoices	(Info_Mod_Angar_IR_Staerke);
 
@@ -280,7 +280,7 @@ INSTANCE Info_Mod_Angar_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Angar_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Angar_IR_Heiltrank_Condition()
@@ -300,31 +300,31 @@ FUNC VOID Info_Mod_Angar_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Angar_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Angar_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Angar_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Angar_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Angar_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Angar_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Angar_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Angar_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Angar_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Angar_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Angar_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Angar_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Angar_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Angar_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Angar_IR_Heiltrank_Health_05);
 	};
 };
 

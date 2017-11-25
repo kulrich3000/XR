@@ -2,7 +2,7 @@ instance Mod_7023_BDT_Quentin_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Quentin";
+	name =					"kwentyna";
 	Npctype =				Npctype_MAIN;
 	guild =					GIL_OUT;     
 	level =					12;

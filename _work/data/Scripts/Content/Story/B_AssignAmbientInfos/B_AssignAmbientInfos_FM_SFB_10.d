@@ -37,7 +37,7 @@ INSTANCE Info_FM_SFB_10_EinerVonEuchWerden (C_INFO)
 	condition	= Info_FM_SFB_10_EinerVonEuchWerden_Condition;
 	information	= Info_FM_SFB_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich dem Schürferbund beitreten?";
+	description = "Jak moge dolaczyc do Stowarzyszenia Kandydatów?";
 };                       
 
 FUNC INT Info_FM_SFB_10_EinerVonEuchWerden_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_FM_SFB_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_FM_SFB_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_EinerVonEuchWerden_15_00"); //Wie kann ich dem Schürferbund beitreten?
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_01"); //Bei uns mitmachen? Glaub bloß nicht, hier wird nicht gearbeitet, nur weil man uns nicht zwingt.
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_02"); //Also wenn du glaubst, du kannst hier faulenzen, dann bist du schief gewickelt, mein Freund.
-	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_03"); //Wenn du jetzt immer noch glaubst hier richtig zu sein, dann such dir ne Spitzhacke und melde dich bei der Wache vor dem Eingang zur Mine.
+	AI_Output(hero,self,"Info_FM_SFB_10_EinerVonEuchWerden_15_00"); //Jak moge dolaczyc do Stowarzyszenia Kandydatów?
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_01"); //Dolacz do nas? Nie mysl, ze nie pracujemy tutaj tylko dlatego, ze nie jestesmy zmuszeni.
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_02"); //Wiec jesli myslisz, ze mozesz sie tu lenic, jestes krzywy, mój przyjaciel.
+	AI_Output(self,hero,"Info_FM_SFB_10_EinerVonEuchWerden_10_03"); //Jesli nadal uwazasz, ze masz racje, znajdz piknik i zglos sie do straznika przed wejsciem do kopalni.
 };
 
 // *************************************************************************
@@ -63,7 +63,7 @@ INSTANCE Info_FM_SFB_10_WichtigePersonen(C_INFO)
 	condition	= Info_FM_SFB_10_WichtigePersonen_Condition;
 	information	= Info_FM_SFB_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_FM_SFB_10_WichtigePersonen_Condition()
@@ -73,8 +73,8 @@ FUNC INT Info_FM_SFB_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_FM_SFB_10_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_FM_SFB_10_WichtigePersonen_10_01"); //Das Sagen? Sieh dich doch mal um. Bestimmt nicht die Leute, die den ganzen Tag schuften, um genug Erz zu fördern.
+	AI_Output(hero,self,"Info_FM_SFB_10_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_FM_SFB_10_WichtigePersonen_10_01"); //Powiedziec? Rozejrzyj sie dookola. Z pewnoscia nie ludzie, którzy pracuja caly dzien, aby wydobyc wystarczajaco duzo rudy.
 };
 
 // *************************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_FM_SFB_10_DasLager(C_INFO)
 	condition	= Info_FM_SFB_10_DasLager_Condition;
 	information	= Info_FM_SFB_10_DasLager_Info;
 	permanent	= 1;
-	description = "Was ist das hier?";
+	description = "Jakie jest to miejsce?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DasLager_Condition()
@@ -97,9 +97,9 @@ FUNC INT Info_FM_SFB_10_DasLager_Condition()
 
 FUNC VOID Info_FM_SFB_10_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_DasLager_15_00"); //Was ist das hier?
-	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_01"); //Wie sieht es denn aus? Wie der Palast des Königs?
-	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_02"); //Also wenn du wirklich in der Freien Mine arbeiten willst, dann solltest du nicht so viel reden sondern mehr arbeiten.
+	AI_Output(hero,self,"Info_FM_SFB_10_DasLager_15_00"); //Jakie jest to miejsce?
+	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_01"); //Jak to wyglada? Jak palac królewski?
+	AI_Output(self,hero,"Info_FM_SFB_10_DasLager_10_02"); //Wiec jesli naprawde chcesz pracowac w Wolnej Kopalni, nie powinienes mówic tyle, ale pracowac wiecej.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_FM_SFB_10_DieLage(C_INFO)
 	condition	= Info_FM_SFB_10_DieLage_Condition;
 	information	= Info_FM_SFB_10_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DieLage_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_FM_SFB_10_DieLage_Condition()
 
 FUNC VOID Info_FM_SFB_10_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_10_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_FM_SFB_10_DieLage_10_01"); //Wie soll's schon aussehen? Beschissen wie immer. Kaum was zu beißen, dafür immer was zu tun.
+	AI_Output(hero,self,"Info_FM_SFB_10_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,hero,"Info_FM_SFB_10_DieLage_10_01"); //Jak to wyglada gonna? Lagodny jak zawsze. Trudno sie ugryzc, zawsze cos do zrobienia.
 };
 
 INSTANCE Info_Mod_FM_SFB_10_Pickpocket (C_INFO)

@@ -2,7 +2,7 @@ instance Mod_7699_KGD_Typ_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Königstreuer";
+	name 		=	"rojalisci";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	level 		=	20;

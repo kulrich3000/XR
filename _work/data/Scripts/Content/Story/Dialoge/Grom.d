@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Grom_WhoAreYou (C_INFO)
 	information	= Info_Mod_Grom_WhoAreYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Grom?";
+	description	= "Czy jestes Gromem?";
 };
 
 FUNC INT Info_Mod_Grom_WhoAreYou_Condition()
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Grom_WhoAreYou_Condition()
 
 FUNC VOID Info_Mod_Grom_WhoAreYou_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_WhoAreYou_15_00"); //Bist du Grom?
-	AI_Output(self, hero, "Info_Mod_Grom_WhoAreYou_08_01"); //Ja ... was willst du?
+	AI_Output(hero, self, "Info_Mod_Grom_WhoAreYou_15_00"); //Czy jestes Gromem?
+	AI_Output(self, hero, "Info_Mod_Grom_WhoAreYou_08_01"); //Tak..... czego chcesz?
 };
 
 INSTANCE Info_Mod_Grom_Dragomir (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Grom_Dragomir (C_INFO)
 	information	= Info_Mod_Grom_Dragomir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dragomir schickt mich.";
+	description	= "Dragomir mnie poslal.";
 };
 
 FUNC INT Info_Mod_Grom_Dragomir_Condition()
@@ -67,15 +67,15 @@ FUNC INT Info_Mod_Grom_Dragomir_Condition()
 
 FUNC VOID Info_Mod_Grom_Dragomir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_Dragomir_15_00"); //Ich soll dich von Dragomir fragen, ob du Neues über die Gegend hier herausgefunden hast.
-	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_01"); //Jetzt lässt der auch noch Anfänger durch die Wälder laufen, unglaublich. Aber wenn es unbedingt sein muss ...
-	AI_Output(hero, self, "Info_Mod_Grom_Dragomir_15_02"); //Ja, es muss sein. Und jetzt erzähl mir, was du weisst. Ich möchte heute noch weiter.
-	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_03"); //Nein, bisher gibt es nicht viel Neues. Die faulen Söldner lungern hier beständig rum und verteiben jegliches Wild im Umkreis von ein paar Meilen.
-	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_04"); //In letzter Zeit scheinen allerdings die Feldräuber viel aggressiver zu sein als normalerweise.
-	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_05"); //Sie gehen viel weiter in die Felder rein und greifen auch Bauern an, zum Leidwesen der Söldner.
-	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_06"); //(lacht dreckig) Da kriegen die ihren Arsch auch mal wieder hoch.
+	AI_Output(hero, self, "Info_Mod_Grom_Dragomir_15_00"); //Ja powinienem zapytac Dragomira, czy dowiedziales sie czegos nowego o okolicy.
+	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_01"); //Teraz pozwala nawet poczatkujacym biec przez lasy, nieprawdopodobny. Ale jesli jest to absolutnie konieczne....
+	AI_Output(hero, self, "Info_Mod_Grom_Dragomir_15_02"); //Tak, trzeba to zrobic. Teraz powiedz mi, co wiesz. Dzis chce pójsc dalej.
+	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_03"); //Nie, do tej pory niewiele nowych wiadomosci. Leniwi najemnicy czaja sie tu przez caly czas i maltretowali kazda gre w promieniu kilku mil.
+	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_04"); //Ostatnio jednak grabieze wydaja sie byc bardziej agresywne niz zwykle.
+	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_05"); //Dalej ida na pola i atakuja chlopów, co jest zalem najemników.
+	AI_Output(self, hero, "Info_Mod_Grom_Dragomir_08_06"); //(smiech zabrudzony) To tam znów podnosza swoje osly.
 
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Bei Grom gibt es nichts neues, außer, dass die Feldräuber aggressiver zu sein scheinen als gewöhnlich.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Nie ma nic nowego w Gromie, poza tym, ze grabieze sa bardziej agresywne niz zwykle.");
 };
 
 INSTANCE Info_Mod_Grom_WerBistDu (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Grom_WerBistDu (C_INFO)
 	information	= Info_Mod_Grom_KeinBock_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dir gefällts hier wohl nicht sonderlich.";
+	description	= "Nie bardzo sie to tu podoba.";
 };
 
 FUNC INT Info_Mod_Grom_KeinBock_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Mod_Grom_KeinBock_Condition()
 
 FUNC VOID Info_Mod_Grom_KeinBock_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_KeinBock_15_00"); //Dir gefällts hier wohl nicht sonderlich.
-	AI_Output(self, hero, "Info_Mod_Grom_KeinBock_08_01"); //Nein, kann man nicht behaupten. Diese ignoranten Großkotze können doch nur ihr Maul aufreissen und trampeln wie eine Herde fetter Molerats alles nieder, was sie antreffen.
-	AI_Output(self, hero, "Info_Mod_Grom_KeinBock_08_02"); //Hast du schon einmal eine ihrer Höhlen gesehen? Wiederlich!
+	AI_Output(hero, self, "Info_Mod_Grom_KeinBock_15_00"); //Nie bardzo sie to tu podoba.
+	AI_Output(self, hero, "Info_Mod_Grom_KeinBock_08_01"); //Nie, nie mozna tego powiedziec. Ten nieswiadomy ksiaze moze tylko rozpuscic usta i podeptac wszystko, co napotka, jak stado tlustych moleratów.
+	AI_Output(self, hero, "Info_Mod_Grom_KeinBock_08_02"); //Czy widziales kiedys jedna z ich jaskin? Obrzydliwy!
 };
 
 INSTANCE Info_Mod_Grom_Sauhaufen (C_INFO)
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Grom_Sauhaufen (C_INFO)
 	information	= Info_Mod_Grom_Sauhaufen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ja, ein echter Sauhaufen hier.";
+	description	= "Tak, tu prawdziwa turnia.";
 };
 
 FUNC INT Info_Mod_Grom_Sauhaufen_Condition()
@@ -125,47 +125,47 @@ FUNC INT Info_Mod_Grom_Sauhaufen_Condition()
 
 FUNC VOID Info_Mod_Grom_Sauhaufen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_15_00"); //Ja, ein echter Sauhaufen hier.
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_08_01"); //Hm, sag mal, hast du nicht an 'ner kleinen Aufgabe Interesse?
-	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_15_02"); //Kommt darauf an.
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_08_03"); //Ich wollte mir mal die geheimen Lagerräume der Söldner ansehen, allerdings wachen die davor wie ein Drache vor seinem Hort. Ich möchte, dass du sie etwas ... ablenkst.
+	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_15_00"); //Tak, tu prawdziwa turnia.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_08_01"); //Hm, powiedzmy, czy nie jestes zainteresowany malym zadaniem?
+	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_15_02"); //Zalezy od niego.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_08_03"); //Chcialem spojrzec na sekretne magazyny najemników, ale ogladali jak smok przed jego komora. Chce, zebys jej cos dal..... rozproszenie uwagi.
 
 	Info_ClearChoices	(Info_Mod_Grom_Sauhaufen);
 
-	Info_AddChoice	(Info_Mod_Grom_Sauhaufen, "Nein, besser nicht.", Info_Mod_Grom_Sauhaufen_Nein);
-	Info_AddChoice	(Info_Mod_Grom_Sauhaufen, "Klingt gefährlich.", Info_Mod_Grom_Sauhaufen_Ja);
+	Info_AddChoice	(Info_Mod_Grom_Sauhaufen, "Nie, nie sadze, ze tak nie jest.", Info_Mod_Grom_Sauhaufen_Nein);
+	Info_AddChoice	(Info_Mod_Grom_Sauhaufen, "Dzwieki niebezpieczne.", Info_Mod_Grom_Sauhaufen_Ja);
 };
 
 FUNC VOID Info_Mod_Grom_Sauhaufen_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Nein_15_00"); //Nein, besser nicht.
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Nein_08_01"); //Dann halte mich nicht länger auf.
+	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Nein_15_00"); //Nie, nie sadze, ze tak nie jest.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Nein_08_01"); //Wtedy nie powstrzymaj mnie juz dluzej.
 
 	Info_ClearChoices	(Info_Mod_Grom_Sauhaufen);
 };
 
 FUNC VOID Info_Mod_Grom_Sauhaufen_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Ja_15_00"); //Klingt gefährlich.
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_01"); //Ist es nicht. Hör zu. Schütte einfach, wenn gerade keiner hinschaut, diesen Scavengerdung in Theklas Eintopf.
+	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Ja_15_00"); //Dzwieki niebezpieczne.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_01"); //Nie. Posluchaj. Wystarczy wlac ten padlinozerca uziemienie do gulasz Theklas, jesli nikt nie patrzy.
 
 	B_GiveInvItems	(self, hero, ItMi_Scavengerdung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_02"); //Die Söldner essen jeden Abend davon und werden dadurch ziemliche Magenkrämpfe kriegen, darauf kannst du dich verlassen.
-	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_03"); //Wie du das anstellst, ist mir egal, sie dürfen nur nichts mitbekommen. Notfalls versuchs halt nachts, dem Dung schadet es nicht, wenn er lange ziehen kann.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_02"); //najemnicy jedza z niej kazdego wieczoru i dostaniesz mnóstwo skurczów zoladkowych, na które mozesz liczyc.
+	AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_03"); //Nie obawiam sie, jak to robisz, po prostu nie wolno im nic slyszec. Jesli to konieczne, spróbuj to w nocy, obornik nie boli, jesli moze ciagnac przez dlugi czas.
 
 	if (Npc_HasItems(hero, ItMi_Pan) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_04"); //Hier hast du noch eine Pfanne, damit sollte es leichter gehen.
+		AI_Output(self, hero, "Info_Mod_Grom_Sauhaufen_Ja_08_04"); //Oto kolejna patelnia.
 
 		B_GiveInvItems	(self, hero, ItMi_Pan, 1);
 	};
 
-	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Ja_15_05"); //Ist klar, ich bin bald wieder zurück.
+	AI_Output(hero, self, "Info_Mod_Grom_Sauhaufen_Ja_15_05"); //Oczywiscie wkrótce wróce.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_DUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_DUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_DUNG, "Der Jäger Grom will sich in der Vorratskammer der Söldner umsehen. Dazu soll ich Scavengerdung in Theklas Eintopf mischen.");
+	B_LogEntry	(TOPIC_MOD_JG_DUNG, "Hunter Grom chce obejrzec spizarnie najemników. Mam mieszac Scavengerdung w gulas Theklas.");
 
 	Info_ClearChoices	(Info_Mod_Grom_Sauhaufen);
 };
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Grom_DungDrin (C_INFO)
 	information	= Info_Mod_Grom_DungDrin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dieses mal dürftest du keine Probleme bekommen.";
+	description	= "Tym razem nie powinienes miec zadnych problemów.";
 };
 
 FUNC INT Info_Mod_Grom_DungDrin_Condition()
@@ -191,9 +191,9 @@ FUNC INT Info_Mod_Grom_DungDrin_Condition()
 
 FUNC VOID Info_Mod_Grom_DungDrin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_DungDrin_15_00"); //Dieses mal dürftest du keine Probleme bekommen.
-	AI_Output(self, hero, "Info_Mod_Grom_DungDrin_08_01"); //Hehe, dank dir. Vielleicht habe ich mich in dir getäuscht. Du bist echt in Ordnung.
-	AI_Output(self, hero, "Info_Mod_Grom_DungDrin_08_02"); //Hier hast du etwas Gold als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Grom_DungDrin_15_00"); //Tym razem nie powinienes miec zadnych problemów.
+	AI_Output(self, hero, "Info_Mod_Grom_DungDrin_08_01"); //Hej, dzieki Tobie. Moze sie myle co do Pana. Naprawde masz racje.
+	AI_Output(self, hero, "Info_Mod_Grom_DungDrin_08_02"); //Oto jakas nagroda za zloto.
 
 	B_GivePlayerXP	(100);
 
@@ -201,7 +201,7 @@ FUNC VOID Info_Mod_Grom_DungDrin_Info()
 
 	B_Göttergefallen(3, 1);
 
-	B_LogEntry	(TOPIC_MOD_JG_DUNG, "Ich habe Grom gesagt, dass er sich jetzt in den Lagerräumen umsehen kann.");
+	B_LogEntry	(TOPIC_MOD_JG_DUNG, "Powiedzialem Gromowi, ze moze teraz rozejrzec sie po magazynach.");
 	B_SetTopicStatus	(TOPIC_MOD_JG_DUNG, LOG_SUCCESS);
 };
 
@@ -213,7 +213,7 @@ INSTANCE Info_Mod_Grom_Untier (C_INFO)
 	information	= Info_Mod_Grom_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir in letzter Zeit etwas Ungewöhnliches begegnet?";
+	description	= "Ostatnio widziales cos niezwyklego?";
 };
 
 FUNC INT Info_Mod_Grom_Untier_Condition()
@@ -228,8 +228,8 @@ FUNC INT Info_Mod_Grom_Untier_Condition()
 
 FUNC VOID Info_Mod_Grom_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grom_Untier_15_00"); //Ist dir in letzter Zeit etwas Ungewöhnliches begegnet?
-	AI_Output(self, hero, "Info_Mod_Grom_Untier_08_01"); //Hmm, nein, nur das Übliche. Jede Menge Holz zum Bearbeiten und zwei Trolle.
+	AI_Output(hero, self, "Info_Mod_Grom_Untier_15_00"); //Ostatnio widziales cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Grom_Untier_08_01"); //Hmm, nie, tak jak zwykle. Duzo drewna do pracy i dwa trolle.
 };
 
 INSTANCE Info_Mod_Grom_Pickpocket (C_INFO)

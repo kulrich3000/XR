@@ -1,7 +1,7 @@
 instance Mod_962_STT_Scatty_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Scatty";
+	name 		= "skapstwo";
 	guild 		= GIL_OUT;
 	id 			= 962;
 	voice 		= 1;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raven_Irdorath (C_INFO)
 	information	= Info_Mod_Raven_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss mit dem Schiff im Hafen zu einer Insel aufbrechen.";
+	description	= "Musze zabrac statek na wyspe w porcie.";
 };
 
 FUNC INT Info_Mod_Raven_Irdorath_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Raven_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Raven_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_00"); //Ich muss mit dem Schiff im Hafen zu einer Insel aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_01"); //Und?
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_02"); //Würdest du in meine Mannschaft kommen?
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_03"); //Was?! Warum sollte ich das bitte machen?!
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_04"); //Auf ein Schiff der Paladine und mir dann die ganze Seereise über die Seele aus dem Leib kotzen?!
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_05"); //Keine 10 Trolle kriegen mich da rauf.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_06"); //Wie kommst du überhaupt auf den absurden Gedanken, ich könne mitkommen?
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_07"); //Tja, ähh, also Xardas meinte ...
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_08"); //Was?! (halblaut) Verdammt, eine Anweisung von Xardas.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_09"); //(widerwillig zum Helden) Also gut, wir sehen uns dann am Hafen.
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_10"); //Na, das war ein schneller Stimmungswandel.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_00"); //Musze zabrac statek na wyspe w porcie.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_01"); //A co?
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_02"); //Czy dolaczysz do zalogi?
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_03"); //Co? Dlaczego bym to zrobil?
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_04"); //Na statku Paladynów, a potem wykuc cala wyprawe z mojej duszy!
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_05"); //No 10 trollów moze mnie tam dostac.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_06"); //Jak nawet dostajesz absurdalny pomysl, ze moge przyjsc z wami?
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_07"); //No cóz, uh, wiec Xardas powiedzial, ze....
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_08"); //Co? Damn, to zamówienie od Xardas.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath_10_09"); //Niechetnie do bohatera) Wszystko w prawo, zobacze cie w porcie.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath_15_10"); //Cóz, to byla szybka zmiana nastroju.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Trotz gewissem Widerstreben konnte ich Raven für die Reise 'gewinnen'.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Mimo pewnego oporu udalo mi sie 'wygrac' Raven na wycieczke.");
 
 	B_GivePlayerXP	(100);
 
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Raven_Irdorath3 (C_INFO)
 	information	= Info_Mod_Raven_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint, dass wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze jest nas zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Raven_Irdorath3_Condition()
@@ -70,9 +70,9 @@ FUNC INT Info_Mod_Raven_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Raven_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raven_Irdorath3_15_00"); //Tut mir leid, aber es scheint, dass wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_01"); //Was?! Na dann nichts wie weg hier ...
-	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_02"); //(halblaut) Nicht, dass er es sich noch anders überlegt.
+	AI_Output(hero, self, "Info_Mod_Raven_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze jest nas zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_01"); //Co? No cóz, wyciagnijmy z tego piekla pieklo....
+	AI_Output(self, hero, "Info_Mod_Raven_Irdorath3_10_02"); //Nie, ze zmieni zdanie.
 
 	Mod_RavenDabei = 0;
 

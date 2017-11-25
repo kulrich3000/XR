@@ -16,7 +16,7 @@ instance ItRi_Feuerring_Parlan(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Feuerring von Parlan";
+	description				= "Plomien pozarowy z parlamentów";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -48,7 +48,7 @@ instance ItRi_DragonRing(C_Item)
 	on_equip		= Equip_DragonRing;
 	on_unequip		= UnEquip_DragonRing;
 
-	description				= "Ring von Dragon";
+	description				= "Pierscien smoka";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -109,7 +109,7 @@ instance ItRi_BeliarBosheit(C_Item)
 	on_equip		= Equip_BeliarBosheit;
 	on_unequip		= UnEquip_BeliarBosheit;
 
-	description				= "Beliars Boshiet";
+	description				= "Beliars Bosiet";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -148,7 +148,7 @@ instance ItRi_OrcWarrior_Arena_Ring(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Den Ring hatte der Orkkämpfer bei sich";
+	description				= "Bojownik orka mial pierscionek w kieszeni.";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -177,7 +177,7 @@ instance Mod_XardasBeamRing(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Dieser Ring bringt mich zum Rat";
+	description				= "Pierscien ten kieruje mnie do Rady.";
 	
 	on_equip		= Equip_XardasBeamRing;
 	on_unequip		= UnEquip_XardasBeamRing;
@@ -208,7 +208,7 @@ FUNC VOID Equip_XardasBeamRing()
 	}
 	else
 	{
-		Print	("Funktioniert hier nicht!");
+		Print	("Nie dziala tutaj!");
 	};
 };
 
@@ -236,7 +236,7 @@ instance ItRi_Snapperring(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Snapperkraftring";
+	description				= "zatrzaskany pierscien";
 	
 	on_equip		= Equip_Snapperring;
 	on_unequip		= UnEquip_Snapperring;
@@ -288,7 +288,7 @@ instance ItRi_Verschlagenheit (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Ring der Verschlagenheit";
+	description				= "Przebieg madrosci";
 	
 	on_equip		= Equip_Verschlagenheit;
 	on_unequip		= UnEquip_Verschlagenheit;

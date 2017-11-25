@@ -1,7 +1,7 @@
 instance Mod_7481_OUT_Monteur_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Monteur"; 
+	name 		= "mechanik"; 
 	guild 		= GIL_OUT;
 	id 			= 7481;
 	voice 		= 6;

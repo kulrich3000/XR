@@ -19,24 +19,24 @@ FUNC VOID Bookstand_Milten_03_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Es ist spät geworden."					);
-					Doc_PrintLines	( nDocID,  0, "Mit dem Zusammenbruch der alten Mine ist auch die Stimmung der Erzbarone zusammmengebrochen."	);
-					Doc_PrintLines	( nDocID,  0, "Gomez ist wie ein Pulverfaß, das kurz vor dem explodieren steht.  "					);
+					Doc_PrintLines	( nDocID,  0, "Spóznia sie."					);
+					Doc_PrintLines	( nDocID,  0, "Wraz z zawaleniem sie starej kopalni zawalil sie nastrój baronów rudy."	);
+					Doc_PrintLines	( nDocID,  0, "Gomez jest jak beczka proszkowa, która wkrótce wybuchnie.  "					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Corristo");
+					Doc_PrintLine	( nDocID,  0, "korristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Er glaubt das dieser neue Kerl schuld am Zusammenbruch der Mine ist. Dieser Mann ist in der Tat ungewöhnlich. Aber er sollte sich hier besser nicht mehr blicken lassen.");
+					Doc_PrintLines	( nDocID,  0, "Mysli, ze ten nowy facet jest odpowiedzialny za katastrofe kopalniana. Ten czlowiek jest naprawde niezwykly. Lepiej jednak nie wracac tutaj.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Corristo");
+					Doc_PrintLine	( nDocID,  0, "korristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Gomez ist jähzorniger denn je zuvor und ich glaube zu wissen was er vorhat. Wir müssen unbedingt die Wassermagier unterrichten, bevor es zu spät ist. "					);
+					Doc_PrintLines	( nDocID,  1, "Gomez jest bardziej agresywny niz kiedykolwiek wczesniej i mysle, ze wiem, co on ma do roboty. Musimy nauczyc sie magików wody, zanim bedzie za pózno. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLine	( nDocID,  1, "Corristo"					);
+					Doc_PrintLine	( nDocID,  1, "korristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Vielleicht gelingt es uns eine Katastrophe zu verhindern. Nicht auszudenken was passieren würde, wenn er die freie Mine, "					);
+					Doc_PrintLines	( nDocID,  1, "Moze uda nam sie zapobiec katastrofie. Wyobraz sobie, co by sie stalo, gdyby mial wolna kopalnie, "					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Ich war so frei, mich hier ein wenig einzurichten. Wer hätte gedacht, das ich einmal der einzige Magier des Lagers sein werde?"					);
-					Doc_PrintLines	( nDocID,  0, "Nun ja, ich kann mich nicht wirklich darüber freuen, das ich wieder hier bin. Eigentlich sollte ich zusehen, das ich hier wegkomme."	);
-					Doc_PrintLines	( nDocID,  0, "Diese Expedition ist einfach nicht erfolgreich."					);
+					Doc_PrintLines	( nDocID,  0, "Bylem tak wolny, ze moglem sie tu na chwile osiedlic. Kto by pomyslal, ze ja bede jedynym magikiem obozu?"					);
+					Doc_PrintLines	( nDocID,  0, "Cóz, nie moge byc szczesliwy, ze jestem tu z powrotem. Wlasciwie to mialem z tego wyjsc."	);
+					Doc_PrintLines	( nDocID,  0, "Ta wyprawa po prostu sie nie udaje."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -74,9 +74,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Die Schürfer sind gestern aufgebrochen. Sie haben Diego mitgenommen - würde mich nicht wundern, wenn er abhaut. "					);
-					Doc_PrintLines	( nDocID,  1, "Denn er wird garantiert keine Spitzhacke schwingen. "					);
-					Doc_PrintLines	( nDocID,  1, "Nun, ich werde die Zeit nutzen, um mich in die Kunst der Alchemie einzuarbeiten. "					);
+					Doc_PrintLines	( nDocID,  1, "Wczoraj wyszli poszukiwacze. Wzieli Diego - nie zaskoczylby mnie, gdyby wyszedl. "					);
+					Doc_PrintLines	( nDocID,  1, "Poniewaz z pewnoscia nie bedzie on sie kolysal pikseksem. "					);
+					Doc_PrintLines	( nDocID,  1, "Cóz, wykorzystam ten czas na zapoznanie sie z sztuka alchemii. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
 					Doc_Show		( nDocID );
@@ -128,36 +128,36 @@ FUNC VOID Bookstand_Engor_01_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Bestand");
+					Doc_PrintLine	( nDocID,  0, "ludnosc");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Haben einigen Kram vorgefunden - kaum noch verwertbares Material, darunter wie folgt"					);
+					Doc_PrintLines	( nDocID,  0, "Znaleziono kilka rzeczy - praktycznie nie pozostawiono nadajacego sie do uzytku materialu, w tym nastepujace rzeczy"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "3 Kisten alte Stoffe"	);
+					Doc_PrintLines	( nDocID,  0, "3 pudelka na stare tkaniny"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "8 Kisten rostige Eisenware"					);
+					Doc_PrintLines	( nDocID,  0, "8 pudelek z zardzewialego zelaza"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "4 Kisten kaputte Rüstungsteile ");
+					Doc_PrintLines	( nDocID,  0, "4 skrzynki zlamanych czesci pancerza ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "5 Kisten Leder und Fellwaren (stinken schon!)");
+					Doc_PrintLines	( nDocID,  0, "5 pudelek na produkty skórzane i futrzarskie (juz teraz zatrzasnij!). )");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "2 Kisten Spitzhacken"					);
+					Doc_PrintLines	( nDocID,  1, "2 skrzynki pickaxy"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "3 Kisten Werkzeuge"					);
+					Doc_PrintLines	( nDocID,  1, "3 skrzynki narzedzi"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "16 Kisten Gesteinsbrocken (kaum Erzgehalt)"					);
+					Doc_PrintLines	( nDocID,  1, "16 pudelek z glazów (brunatnych praktycznie bez rudy)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 Kiste mit rostigen Rasiermessern"					);
+					Doc_PrintLines	( nDocID,  1, "1 skrzynka z zardzewiala maszynka do golenia"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "4 Kisten kaputtes Geschirr "					);
+					Doc_PrintLines	( nDocID,  1, "4 pudelka z rozbitymi potrawami "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "56 Fässer Wasser"					);
+					Doc_PrintLines	( nDocID,  1, "56 Bebny wody"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 Kiste Sumpf...- (was auch immer es war, es ist verdorben.)"					);
+					Doc_PrintLines	( nDocID,  1, "1 skrzynia bagna.... cokolwiek to bylo, jest wybarwione. )"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Engor"					);
 					Doc_Show		( nDocID );

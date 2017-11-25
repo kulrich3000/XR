@@ -1,7 +1,7 @@
 instance Mod_2005_GUR_CorCadar_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name		=	"Cor Cadar";
+	name		=	"Koronka Kadar";
 	Npctype		=	NPCTYPE_Main;
 	guild		=	GIL_OUT;
 	level 		=	28;

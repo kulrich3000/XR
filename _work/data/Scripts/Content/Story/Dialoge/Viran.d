@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Viran_Hi (C_INFO)
 	information	= Info_Mod_Viran_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fleißig an der Sumpfkrautproduktion?";
+	description	= "Ciezko pracujacy przy produkcji rdestnicy borowinowej?";
 };
 
 FUNC INT Info_Mod_Viran_Hi_Condition()
@@ -16,20 +16,20 @@ FUNC INT Info_Mod_Viran_Hi_Condition()
 
 FUNC VOID Info_Mod_Viran_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_00"); //Fleißig an der Sumpfkrautproduktion?
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_01"); //Ja, aber gemütlicher, als zu meiner Zeit in der Kolonie.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_02"); //Dort stand ich von früh bis spät wie blöd im Sumpf und hab mir bei der Ernte jeden Tag den Buckel für die Gurus krumm gemacht.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_03"); //Jetzt können selbst ihren Hintern aufs Feld bewegen, um das Kraut zu ernten.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_04"); //Und hier kann ich sogar selbst am Alchemietisch herumexperimentieren.
-	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_05"); //Du warst früher Alchemist?
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_06"); //Ähh, ne ... freischaffend. Hier ein bisschen mit Rauschmitteln gehandelt, da ein bisschen geklaut ...
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_07"); //Nach dem Fall der Barriere habe ich die Verwirrung genutzt, um die Besitztümer von Cor Kalom um Nützliches zu erleichtern.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_08"); //Na ja, viel Gold und Erz gab’s nicht, dafür aber einige Rezepte ...
-	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_09"); //Und wie bist du dann hierher gekommen?
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_10"); //Chani hatte einige Gurus belauscht, die den Novizen Lester damit betrauten, Sumpfkraut auf magisch beeinflussten Böden anzubauen.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_11"); //Das sollte die Erträge deutlich steigern.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_12"); //Ich hatte in meiner Zeit vor der Barriere von diesem verfluchten Moor gehört und brach deshalb mit ihr und Harlok hierher auf.
-	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_13"); //Und ich habe es nicht bereut ... auch, wenn Harlok die längste Zeit des Tages auf seinem Arsch sitzt und kaum hilft.
+	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_00"); //Ciezko pracujacy przy produkcji rdestnicy borowinowej?
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_01"); //Tak, ale wygodniej niz gdy bylem w kolonii.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_02"); //Stalem tam od rana do nocy w bagnie i codziennie codziennie zginalem garb za guru.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_03"); //Teraz nawet ich osly moga przesunac sie na pole, aby zebrac ziolo.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_04"); //I tu moge nawet eksperymentowac przy stole alchemicznym.
+	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_05"); //Kiedys byles alchemikiem?
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_06"); //Uh, ne.... freelance. Tu sprzedawano troche srodków odurzajacych, tam troche skradziono.....
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_07"); //Po upadku bariery uzylem dezorientacji, aby ulatwic posiadanie Kor Kalomów na rzecz pozytecznych rzeczy.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_08"); //Cóz, nie bylo zbyt wiele zlota i rudy, ale byly jakies przepisy....
+	AI_Output(hero, self, "Info_Mod_Viran_Hi_15_09"); //Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_10"); //Chani uslyszal kilka guru, który powierzyl nowicjuszom z Lesteru rosnaca brudna ziemia na glebach, na które wplyw mialy magiczne wplywy.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_11"); //Powinno to znacznie zwiekszyc plony.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_12"); //Slyszalem o tym przekletym wrzosowisku w moim przed zapora, wiec wyjechalem tu z nia i Harlokiem.
+	AI_Output(self, hero, "Info_Mod_Viran_Hi_07_13"); //I nie zaluje, ze..... nawet jesli Harlok siada na tylku przez najdluzszy okres dnia i prawie nie pomaga.
 };
 
 INSTANCE Info_Mod_Viran_Traenke (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Viran_Traenke (C_INFO)
 	information	= Info_Mod_Viran_Traenke_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, was machen die Tränke?";
+	description	= "Co wiec robia eliksiry?";
 };
 
 FUNC INT Info_Mod_Viran_Traenke_Condition()
@@ -53,15 +53,15 @@ FUNC INT Info_Mod_Viran_Traenke_Condition()
 
 FUNC VOID Info_Mod_Viran_Traenke_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Viran_Traenke_15_00"); //Und, was machen die Tränke?
-	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_01"); //Den Kunden schmeckt’s. Ich bin auch gerade wieder an einem neuen Trank ... nur fehlen mir da einige Zutaten.
-	AI_Output(hero, self, "Info_Mod_Viran_Traenke_15_02"); //Was brauchst du?
-	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_03"); //Vor allem Sumpfbeeren. Ja davon bräuchte ich mindestens fünf Stück.
-	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_04"); //Nur sind die verdammt selten ... es sei denn, man hat keine Angst vor den Monsterpflanzen.
+	AI_Output(hero, self, "Info_Mod_Viran_Traenke_15_00"); //Co wiec robia eliksiry?
+	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_01"); //Klientowi to sie podoba. Wracam tez do nowego eliksiru.... ale brakuje mi niektórych skladników.
+	AI_Output(hero, self, "Info_Mod_Viran_Traenke_15_02"); //Czego potrzebujesz?
+	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_03"); //Najczesciej dzikie jagody. Tak, potrzebowalbym co najmniej pieciu z nich.
+	AI_Output(self, hero, "Info_Mod_Viran_Traenke_02_04"); //Tylko one sa rzadkie.... chyba ze nie boisz sie roslin potworów.
 
 	Log_CreateTopic	(TOPIC_MOD_VIRAN_SUMPFBEEREN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VIRAN_SUMPFBEEREN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "Viran bräuchte mindestens 5 Sumpfbeeren, um einen Trank zu vervollständigen. Er sprach davon, sie seien selten ... nannte jedoch in dem Zusammenhang Monsterpflanzen als mögliche Quelle.");
+	B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "Wiran potrzebowalby co najmniej 5 jagód do wykonania eliksiru. Powiedzial, ze sa rzadkie.... cytowal rosliny potworów jako mozliwe zródlo.");
 };
 
 INSTANCE Info_Mod_Viran_Sumpfbeeren (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Viran_Sumpfbeeren (C_INFO)
 	information	= Info_Mod_Viran_Sumpfbeeren_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind fünf Sumpfbeeren.";
+	description	= "Jest piec borówek bagiennych.";
 };
 
 FUNC INT Info_Mod_Viran_Sumpfbeeren_Condition()
@@ -86,16 +86,16 @@ FUNC INT Info_Mod_Viran_Sumpfbeeren_Condition()
 
 FUNC VOID Info_Mod_Viran_Sumpfbeeren_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren_15_00"); //Hier sind fünf Sumpfbeeren.
+	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren_15_00"); //Jest piec borówek bagiennych.
 
 	B_GiveInvItems	(hero, self, ItPl_Sumpfbeeren_XR, 5);
 
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_01"); //Was willst du mich verarschen? Tatsächlich. Wie du das nur hinbekommen hast ...
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_02"); //Das ist mir auf jeden Fall 500 Goldmünzen wert. Hier.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_01"); //Co mnie oszukujesz? Wlasciwie. Jak to sie udalo?
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_02"); //To i tak warte 500 zlotych monet. Tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_03"); //Morgen sollte der Trank fertig sein. Du sollst dann auch 'n Schluck davon haben.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren_02_03"); //Eliksir powinien byc gotowy do jutra. Masz miec go lyk.
 
 	B_GivePlayerXP	(500);
 
@@ -127,16 +127,16 @@ FUNC INT Info_Mod_Viran_Sumpfbeeren2_Condition()
 
 FUNC VOID Info_Mod_Viran_Sumpfbeeren2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren2_02_00"); //Hey, der Trank ist fertig. Ist gut geworden, glaube ich. Hier, probier mal.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren2_02_00"); //Hej, eliksir jest gotowy. Wydaje mi sie, ze okazalo sie to sluszne. Spróbuj to tutaj.
 
 	B_GiveInvItems	(self, hero, ItFo_Bruehe, 1);
 
-	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren2_15_01"); //Na dann ...
+	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren2_15_01"); //No cóz, wiec....
 
 	B_UseItem	(hero, ItFo_Bruehe);
 
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren2_02_02"); //Und?
-	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren2_15_03"); //Ich ...
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren2_02_02"); //A co?
+	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren2_15_03"); //l--
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -163,12 +163,12 @@ FUNC INT Info_Mod_Viran_Sumpfbeeren3_Condition()
 
 FUNC VOID Info_Mod_Viran_Sumpfbeeren3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_00"); //Hey, alles wieder ok?
-	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren3_15_01"); //(benommen) Klirrendes Metall bringt den Tod ... Erlösung durch das, was der Brust des Moores entrissen ...
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_02"); //Ohh man, das war wohl etwas zu heftig.
-	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren3_15_03"); //(wieder zu sich kommend) Was? Ähh, nein, mir geht’s wieder gut. Ich hatte nur einen sonderbaren Traum.
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_04"); //Nach solchen Tränken würde es mich auch eher wundern, wenn die Träume ausblieben, hähä. Nichts für ungut.
-	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_05"); //Werde den Trank auf meine Liste setzen.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_00"); //Czy jestes w porzadku?
+	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren3_15_01"); //Olsniewajacy metal przynosi smierc.... Zbawienie przez to, co zostalo wyrwane z piersia torfowiska.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_02"); //Och, czlowiek, to bylo troche zbyt intensywne.
+	AI_Output(hero, self, "Info_Mod_Viran_Sumpfbeeren3_15_03"); //(znów) Co? Uh, nie, jestem juz teraz. Mialem po prostu dziwne marzenie.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_04"); //Po takim piciu, bylbym zaskoczony, gdyby marzenia nie spelnily sie, huh? Bez twardych uczuc.
+	AI_Output(self, hero, "Info_Mod_Viran_Sumpfbeeren3_02_05"); //Umiesc eliksir na mojej liscie.
 };
 
 INSTANCE Info_Mod_Viran_Wasserleichen (C_INFO)
@@ -191,13 +191,13 @@ FUNC INT Info_Mod_Viran_Wasserleichen_Condition()
 
 FUNC VOID Info_Mod_Viran_Wasserleichen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_00"); //Hey, keine Untoten mehr in 100 Schritt ... das nenn ich saubere Arbeit.
-	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_01"); //Ohne Wasserleichen haben wir ein Problem weniger bei der Sumpfkrautpflege.
-	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_02"); //Hier, nimm dieses Rezept als kleines Dankeschön.
+	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_00"); //Hej, nie ma juz nieumarlych w 100 krokach.... to wlasnie nazywam czysta praca.
+	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_01"); //Bez utopionego trupu mamy o jeden problem z pielegnacja chwastów bagiennych.
+	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_02"); //Tutaj wezcie ten przepis jako male podziekowania.
 
 	B_GiveInvItems	(self, hero, ItWr_Rezept_Purpurmond, 1);
 
-	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_03"); //Aber sei nicht zu gierig ... ein Fläschchen reicht für schöne Träume, hähä.
+	AI_Output(self, hero, "Info_Mod_Viran_Wasserleichen_02_03"); //Ale nie badz zbyt chciwy...... Czy wystarczy jedna fiolka do pieknych marzen, huh?
 
 	B_GivePlayerXP	(100);
 };

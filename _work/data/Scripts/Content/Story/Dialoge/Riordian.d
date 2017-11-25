@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Riordian_Hi_Condition()
 
 FUNC VOID Info_Mod_Riordian_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Riordian_Hi_10_00"); //Du traust dir ganz schön was zu.
-	AI_Output(self, hero, "Info_Mod_Riordian_Hi_10_01"); //Hätte nicht gedacht dich nochmal wieder zu sehen.
+	AI_Output(self, hero, "Info_Mod_Riordian_Hi_10_00"); //Dostales duzo wnetrznosci.
+	AI_Output(self, hero, "Info_Mod_Riordian_Hi_10_01"); //Nie sadzilem, ze znów cie zobacze.
 };
 
 INSTANCE Info_Mod_Riordian_IrrlichtBekommen (C_INFO)
@@ -39,13 +39,13 @@ FUNC INT Info_Mod_Riordian_IrrlichtBekommen_Condition()
 
 FUNC VOID Info_Mod_Riordian_IrrlichtBekommen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_00"); //Ich habe das hier im Tempel entdeckt.
+	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_00"); //Znalazlem to w swiatyni.
 
 	B_GiveInvItems	(self, hero, ItAm_Addon_WispDetector, 1);
 
-	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_01"); //Es scheint, als könne man damit ein Irrlicht rufen, welches einem Gegenstände sucht.
-	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_02"); //Dir ist es bestimmt von größerem Nutzen als mir.
-	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_03"); //Ich werde versuchen etwas mehr darüber herauszufinden, vielleicht lässt sich das Aufgabenfeld des Irrlichtes erweitern, so dass es mehr Gegenstände finden kann oder sogar für dich kämpfen.
+	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_01"); //Wyglada na to, ze mozna zadzwonic do will-o' -tych-wispów, którzy szukaja produktu.
+	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_02"); //Jestem pewien, ze jest to dla Ciebie bardziej przydatne niz dla mnie.
+	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_10_03"); //
 };
 
 INSTANCE Info_Mod_Riordian_PortalOeffnen (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Riordian_PortalOeffnen (C_INFO)
 	information	= Info_Mod_Riordian_PortalOeffnen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nefarius meint, du hättest etwas für mich?";
+	description	= "Nefarius uwaza, ze masz cos dla mnie?";
 };
 
 FUNC INT Info_Mod_Riordian_PortalOeffnen_Condition()
@@ -69,17 +69,17 @@ FUNC INT Info_Mod_Riordian_PortalOeffnen_Condition()
 
 FUNC VOID Info_Mod_Riordian_PortalOeffnen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Riordian_PortalOeffnen_15_00"); //Nefarius meint, du hättest etwas für mich?
-	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_01"); //Ja. Ich hab die Sprache der Erbauer durch die Schriften und Zeichen an den Wänden lernen können.
-	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_02"); //Da du das Portal als erster durchschreiten wirst, sobald es geöffnet ist, solltest du zumindest die Grundlagen dieser Sprache beherrschen.
-	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_03"); //Also höre gut zu.
+	AI_Output(hero, self, "Info_Mod_Riordian_PortalOeffnen_15_00"); //Nefarius uwaza, ze masz cos dla mnie?
+	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_01"); //Tak. Nauczylem sie jezyka budowniczych poprzez pisma i znaki na scianach.
+	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_02"); //Jako ze jako pierwszy przejdziesz przez portal zaraz po jego otwarciu, powinienes przynajmniej posiadac podstawowa znajomosc tego jezyka.
+	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_03"); //Sluchaj wiec uwaznie.
 
 	hero.lp += 5;
 
 	B_TeachPlayerTalentForeignLanguage (self, hero, LANGUAGE_1);
 
-	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_04"); //Also, es es ganz einfach. Ein G ist ein O, ein T ist ein H ist ein I ist ein C.
-	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_05"); //Wenn du das mal kapiert hast, ist der Rest eigentlich logisch ...
+	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_04"); //Cóz, to bardzo proste. G jest O, T jest H jest H jest I jest C.
+	AI_Output(self, hero, "Info_Mod_Riordian_PortalOeffnen_10_05"); //Kiedy juz zorientowales sie, ze tak sie stanie, reszta jest w rzeczywistosci logiczna....
 
 	B_GivePlayerXP	(500);
 };
@@ -104,9 +104,9 @@ FUNC INT Info_Mod_Riordian_TempelDicht_Condition()
 
 FUNC VOID Info_Mod_Riordian_TempelDicht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht_10_00"); //Adanos sei dank. Wärst du nicht gekommen, wären wir alle verloren gewesen.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht_10_00"); //Dziekujemy Adanosowi. Gdybys nie przyszedl, wszyscy bysmy zgubili sie.
 
-	B_LogEntry	(TOPIC_MOD_BEL_ADANOS, "Die Untoten sind besiegt und die Wasserkrieger vorerst sicher.");
+	B_LogEntry	(TOPIC_MOD_BEL_ADANOS, "Nieumarli zostaja pokonani, a wojownicy wodni sa na razie bezpieczni.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_ADANOS, LOG_SUCCESS);
 
 	B_GivePlayerXP	(500);
@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Riordian_TempelDicht2 (C_INFO)
 	information	= Info_Mod_Riordian_TempelDicht2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist passiert?";
+	description	= "Co sie dzieje?";
 };
 
 FUNC INT Info_Mod_Riordian_TempelDicht2_Condition()
@@ -133,23 +133,23 @@ FUNC INT Info_Mod_Riordian_TempelDicht2_Condition()
 
 FUNC VOID Info_Mod_Riordian_TempelDicht2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_00"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_01"); //Es war ein Tag wie jeder. Wir gingen alle unserem Tagwerk nach, bis plötzlich Kampfgeräusche von draußen zu uns reindrangen.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_02"); //Wir wollten nachsehen, was los war, doch dann telepotierten sich fünf extrem mächtige Gardisten in den Portalraum und fegten alles nieder und nahmen die anderen Wassermagier gefangen.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_03"); //Ich entkam im letzen Moment nach draußen und dann versiegelte sich der Eingang. Dann kamst du zu uns und hast geholfen die Gegner zu besiegen.
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_04"); //Gibt es eine Möglichkeit den Eingang zu öffnen. Es ist sehr dringend. Khorinis Existenz steht auf dem Spiel.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_05"); //Der Eingang ist magisch verschlossen. man bekommt ihn nicht ohne Weiteres auf.
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_06"); //Was muss ich tun um in den Tempel zu gelangen?
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_07"); //Nun, wenn ich mich recht entsinne gibt es eine Art magischen Schlüssel um die Tür zu öffnen. Jedoch habe ich keine Ahnung, wo sich dieser befindet.
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_08"); //Weißt du wirklich nicht wo der Schlüssel sein kann?
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_09"); //(nachdenklich) Hmmmm. Den Standort kennen nur Vatras und Saturas. Gehe am besten zu vatras in die Stadt und frage ihn um Rat.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_10"); //Beeil dich aber, die Zeit drängt!
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_11"); //Ich werde sofort aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_12"); //Viel Glück!
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_00"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_01"); //To byl dzien jak kazdy inny. Wszyscy sledzilismy nasze dzielo az do momentu naglego pojawienia sie odglosów walk z zewnatrz.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_02"); //Chcielismy zobaczyc co sie dzieje, ale potem pieciu niezwykle poteznych strazników teleporowalo sie w przestrzen portalowa i zmiecilo wszystko w dól i zlapalo pozostalych magów wodnych.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_03"); //W ostatniej chwili ucieklam na zewnatrz, a potem wejscie zostalo zapieczetowane. Potem przyszedles do nas i pomógles nam pokonac naszych wrogów.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_04"); //Czy jest jak otworzyc wejscie? Jest to bardzo pilne. Stawka jest egzystencja Khoriniego.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_05"); //Wejscie jest magicznie zamkniete. nie da sie go latwo otworzyc.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_06"); //Co musze zrobic, aby dostac sie do swiatyni?
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_07"); //No cóz, jesli dobrze pamietam, jest jakis magiczny klucz do otwarcia drzwi. Nie mam jednak pojecia, gdzie to jest.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_08"); //Nie wiesz, gdzie jest klucz?
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_09"); //Hmmmm. Lokalizacje znaja tylko Vatras i Saturas. Idz do vatras w miescie i popros go o rade.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_10"); //Ale spieszyc sie, czas jest krótki!
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht2_15_11"); //Natychmiast odejde.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht2_10_12"); //Powodzenia!
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_TEMPEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_TEMPEL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_TEMPEL, "Um in den Portaltempel zu kommen muss ich einen magischen Schlüssel finden. Den Standort kennen jedoch nur Vatras und Saturas. Ich sollte Vatras in der Stadt aufsuchen um mir Informationen zu holen.");
+	B_LogEntry	(TOPIC_MOD_BEL_TEMPEL, "Aby dostac sie do swiatyni portalu, musze znalezc magiczny klucz. Jednak lokalizacje znaja tylko Vatras i Saturas. Po informacje powinienem zobaczyc Vatry w miescie.");
 };
 
 INSTANCE Info_Mod_Riordian_TempelDicht3 (C_INFO)
@@ -160,7 +160,7 @@ INSTANCE Info_Mod_Riordian_TempelDicht3 (C_INFO)
 	information	= Info_Mod_Riordian_TempelDicht3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Schlüssel.";
+	description	= "Mam kluczowe znaczenie.";
 };
 
 FUNC INT Info_Mod_Riordian_TempelDicht3_Condition()
@@ -174,13 +174,13 @@ FUNC INT Info_Mod_Riordian_TempelDicht3_Condition()
 
 FUNC VOID Info_Mod_Riordian_TempelDicht3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht3_15_00"); //Ich habe den Schlüssel. Wir können den Eingang öffnen.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht3_10_01"); //(erfreut) Sehr gut. Gib mir den Schlüssel, damit ich den Eingang öffnen kann.
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht3_15_02"); //Hier hast du ihn.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht3_15_00"); //Mam kluczowe znaczenie. Mozemy otworzyc wejscie.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht3_10_01"); //(prosze) Bardzo dobry. Podaj mi klucz, abym mógl otworzyc wejscie.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht3_15_02"); //Tutaj ja masz.
 
 	B_GiveInvItems	(hero, self, ItKe_MagicTempelKey, 1);
 
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht3_10_03"); //Geh nun beiseite, damit ich den Eingang öffnen kann.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht3_10_03"); //Teraz ustapie na bok, abym mógl otworzyc wejscie.
 	
 	B_SetTopicStatus	(TOPIC_MOD_BEL_TEMPEL, LOG_SUCCESS);
 
@@ -212,9 +212,9 @@ FUNC INT Info_Mod_Riordian_TempelDicht4_Condition()
 
 FUNC VOID Info_Mod_Riordian_TempelDicht4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht4_10_00"); //Das Tor öffnet sich. Wir müssen die Anderen retten.
-	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht4_15_01"); //Ich gehe vor. Sorge dafür, dass uns niemand von hinten überrascht.
-	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht4_10_02"); //Gut, geh voran.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht4_10_00"); //Brama otwiera sie. Musimy uratowac innych.
+	AI_Output(hero, self, "Info_Mod_Riordian_TempelDicht4_15_01"); //Pójde dalej. Upewnij sie, ze nikt nie zaskakuje nas z tylu.
+	AI_Output(self, hero, "Info_Mod_Riordian_TempelDicht4_10_02"); //Wszystko w porzadku, idzcie naprzód.
 	
 	Wld_SendTrigger	("EVT_PORTAL_EINGANG_TOR_01");
 

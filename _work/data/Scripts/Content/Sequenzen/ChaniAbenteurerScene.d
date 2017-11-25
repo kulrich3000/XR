@@ -14,7 +14,7 @@ FUNC VOID ChaniAbenteurerScene()
 
 	if (Mod_ChaniAbenteurerScene_Counter == 2)
 	{
-		AI_Output(Mod_7655_OUT_Abenteurer_REL, NULL, "Info_Mod_ChaniAbenteurerScene_06_00"); //Du Miststück, hast mir meinen Geldbeutel geklaut. Na warte!
+		AI_Output(Mod_7655_OUT_Abenteurer_REL, NULL, "Info_Mod_ChaniAbenteurerScene_06_00"); //Ty jestes suka, ukradles woreczek. Cóz, poczekaj!
 	};
 
 	if (Mod_ChaniAbenteurerScene_Counter == 8)
@@ -34,12 +34,12 @@ FUNC VOID ChaniAbenteurerScene()
 
 	if (Mod_ChaniAbenteurerScene_Counter == 12)
 	{
-		AI_Output(Mod_1623_OUT_Chani_REL, NULL, "Info_Mod_ChaniAbenteurerScene_16_01"); //Was jetzt, du Pantoffelheld?!
+		AI_Output(Mod_1623_OUT_Chani_REL, NULL, "Info_Mod_ChaniAbenteurerScene_16_01"); //A co teraz slizgasz sie z bohaterem?
 	};
 
 	if (Mod_ChaniAbenteurerScene_Counter == 18)
 	{
-		AI_Output(Mod_7654_OUT_Alkor_REL, NULL, "Info_Mod_ChaniAbenteurerScene_31_02"); //(hämisch) Ha, das ging voll in die Weichteile.
+		AI_Output(Mod_7654_OUT_Alkor_REL, NULL, "Info_Mod_ChaniAbenteurerScene_31_02"); //Ha, która przeszla cala droge do tkanek miekkich.
 	};
 
 	if (Mod_ChaniAbenteurerScene_Counter == 24)

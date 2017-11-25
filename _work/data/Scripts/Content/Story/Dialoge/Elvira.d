@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Elvira_Frauenkleider_Condition()
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_00"); //(herrisch) Warte! Ich habe eine Aufgabe für dich!
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider_15_01"); //Ach ja?
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_02"); //Ich bin auf meiner Reise nach Khorata überfallen und meiner Kleider beraubt worden.
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_03"); //Du wirst sie mir wieder beschaffen!
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_00"); //Poczekac! Mam dla Ciebie prace!
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider_15_01"); //Ach, tak?
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_02"); //Zostalem okradziony w drodze do Khoraty i zrabowany z ubran.
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider_17_03"); //Otrzymasz ja dla mnie!
 };
 
 INSTANCE Info_Mod_Elvira_Frauenkleider2 (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Elvira_Frauenkleider2 (C_INFO)
 	information	= Info_Mod_Elvira_Frauenkleider2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum so unfreundlich?";
+	description	= "Dlaczego tak niegrzecznie?";
 };
 
 FUNC INT Info_Mod_Elvira_Frauenkleider2_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Elvira_Frauenkleider2_Condition()
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider2_15_00"); //Warum so unfreundlich?
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_01"); //Daran seid ihr Männer schon selbst Schuld!
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_02"); //Erst wird mir ein schlechtes Gewissen eingeredet, weil ich nicht männlich bin, und dann wird mir auch noch das Zeichen meiner Weiblichkeit gestohlen!
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_03"); //Was soll denn da noch übrig bleiben?
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider2_15_00"); //Dlaczego tak niegrzecznie?
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_01"); //Wy macie za to wine!
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_02"); //Najpierw przekonuje mnie zle sumienie, bo nie jestem mezczyzna, a potem wykradziony jest takze znak mojej kobiecosci!
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider2_17_03"); //Co pozostalo?
 };
 
 INSTANCE Info_Mod_Elvira_Frauenkleider3 (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Elvira_Frauenkleider3 (C_INFO)
 	information	= Info_Mod_Elvira_Frauenkleider3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo genau wurdest du überfallen?";
+	description	= "Gdzie dokladnie byles przytulony?";
 };
 
 FUNC INT Info_Mod_Elvira_Frauenkleider3_Condition()
@@ -69,34 +69,34 @@ FUNC INT Info_Mod_Elvira_Frauenkleider3_Condition()
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_15_00"); //Wo genau wurdest du überfallen?
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_17_01"); //Ist das nicht egal? Die Räuber werden schon keine Spuren hinterlassen haben, schließlich haben sie nur meinen Kleiderkoffer mitgenommen.
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_17_02"); //Aber so viel von dem Lumpenpack kann es doch hier nicht geben, oder?
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_15_00"); //Gdzie dokladnie byles przytulony?
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_17_01"); //Czy ma to znaczenie? Zlodzieje nie zostawia po sobie zadnego sladu, bo przeciez zabrali mi tylko walizke.
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_17_02"); //Ale nie moze tu byc tak wiele szlafroków, czy to mozliwe?
 
 	Info_ClearChoices	(Info_Mod_Elvira_Frauenkleider3);
 
-	Info_AddChoice	(Info_Mod_Elvira_Frauenkleider3, "Such doch allein.", Info_Mod_Elvira_Frauenkleider3_B);
-	Info_AddChoice	(Info_Mod_Elvira_Frauenkleider3, "Ich werde mich umsehen.", Info_Mod_Elvira_Frauenkleider3_A);
+	Info_AddChoice	(Info_Mod_Elvira_Frauenkleider3, "Dlaczego nie szukasz tego samemu?", Info_Mod_Elvira_Frauenkleider3_B);
+	Info_AddChoice	(Info_Mod_Elvira_Frauenkleider3, "Rozejrze sie dookola.", Info_Mod_Elvira_Frauenkleider3_A);
 };
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_B_15_00"); //Such doch allein.
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_B_17_01"); //(sarkastisch) Danke.
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_B_15_00"); //Dlaczego nie szukasz tego samemu?
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_B_17_01"); //(przypadkowo) Dziekuje.
 
 	Info_ClearChoices	(Info_Mod_Elvira_Frauenkleider3);
 };
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_A_15_00"); //Ich werde mich umsehen.
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_A_17_01"); //Na, immerhin scheinst du ganz vernünftig zu sein.
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider3_A_15_00"); //Rozejrze sie dookola.
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider3_A_17_01"); //No cóz, przynajmniej wydaje sie pan rozsadny.
 
 	Info_ClearChoices	(Info_Mod_Elvira_Frauenkleider3);
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Elvira, die Feuermagierin aus Khorata, hat bei einem Überfall ihre Kleider verloren. Verantwortlich dafür soll eine Diebesbande sein.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Elvira, czarodziejka ognia z Khoraty, zgubila ubrania w rabunku. Mówi sie, ze za to odpowiedzialna jest banda zlodziei.");
 
 	Mod_REL_Frauenkleider = 1;
 };
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Elvira_Frauenkleider4 (C_INFO)
 	information	= Info_Mod_Elvira_Frauenkleider4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deine Kleider dabei.";
+	description	= "Przynioslem wasze ubrania.";
 };
 
 FUNC INT Info_Mod_Elvira_Frauenkleider4_Condition()
@@ -123,12 +123,12 @@ FUNC INT Info_Mod_Elvira_Frauenkleider4_Condition()
 
 FUNC VOID Info_Mod_Elvira_Frauenkleider4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider4_15_00"); //Ich habe deine Kleider dabei.
+	AI_Output(hero, self, "Info_Mod_Elvira_Frauenkleider4_15_00"); //Przynioslem wasze ubrania.
 
 	B_GiveInvItems	(hero, self, ItMi_Kleiderkoffer, 1);
 
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider4_17_01"); //Ja, das sind sie. Hätte nicht damit gerechnet, sie wiederzusehen.
-	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider4_17_02"); //Nimm diese Tränke als Dank.
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider4_17_01"); //Tak, tak. Nie spodziewalem sie, ze nie zobaczyl jej juz wiecej.
+	AI_Output(self, hero, "Info_Mod_Elvira_Frauenkleider4_17_02"); //Wez te eliksiry jako podziekowania.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_02, 3);
 
@@ -149,7 +149,7 @@ INSTANCE Info_Mod_Elvira_Dorn (C_INFO)
 	information	= Info_Mod_Elvira_Dorn_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir müssen reden ...";
+	description	= "Musimy porozmawiac....";
 };
 
 FUNC INT Info_Mod_Elvira_Dorn_Condition()
@@ -163,30 +163,30 @@ FUNC INT Info_Mod_Elvira_Dorn_Condition()
 
 FUNC VOID Info_Mod_Elvira_Dorn_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_15_00"); //Wir müssen reden ...
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_17_01"); //Was gibt's denn?
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_15_00"); //Musimy porozmawiac....
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_17_01"); //Co to jest sprawa?
 
 	Info_ClearChoices	(Info_Mod_Elvira_Dorn);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Elvira_DiebeKey2))
 	{
-		Info_AddChoice	(Info_Mod_Elvira_Dorn, "Wenn du nicht gehst, erzähl ich allen, was zwischen uns gelaufen ist.", Info_Mod_Elvira_Dorn_C);
+		Info_AddChoice	(Info_Mod_Elvira_Dorn, "Jesli nie pójdziesz, powiem wszystkim, co wydarzylo sie miedzy nami.", Info_Mod_Elvira_Dorn_C);
 	};
-	Info_AddChoice	(Info_Mod_Elvira_Dorn, "Idrico will dich loswerden.", Info_Mod_Elvira_Dorn_B);
-	Info_AddChoice	(Info_Mod_Elvira_Dorn, "Du musst die Stadt sofort verlassen.", Info_Mod_Elvira_Dorn_A);
+	Info_AddChoice	(Info_Mod_Elvira_Dorn, "Idrico chce sie cie pozbyc.", Info_Mod_Elvira_Dorn_B);
+	Info_AddChoice	(Info_Mod_Elvira_Dorn, "Trzeba opuscic miasto juz teraz.", Info_Mod_Elvira_Dorn_A);
 };
 
 FUNC VOID Info_Mod_Elvira_Dorn_C()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_C_15_00"); //Wenn du nicht gehst, erzähl ich allen, was zwischen uns gelaufen ist.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_C_17_01"); //Du verdammter Schuft ...
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_C_17_02"); //Dann habe ich wohl wirklich keine Wahl ... Hoffentlich bist du zufrieden mit dem, was du tust.
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_C_15_00"); //Jesli nie pójdziesz, powiem wszystkim, co wydarzylo sie miedzy nami.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_C_17_01"); //Synkujesz z suki!
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_C_17_02"); //Wtedy nie mam wyboru.... Mam nadzieje, ze jestes zadowolony z tego, co robisz.
 
 	Info_ClearChoices	(Info_Mod_Elvira_Dorn);
 
 	Mod_REL_IdricoDorn = 2;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Elvira wird die Stadt verlassen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Elvira opusci miasto.");
 
 	AI_StopProcessInfos	(self);
 
@@ -195,32 +195,32 @@ FUNC VOID Info_Mod_Elvira_Dorn_C()
 
 FUNC VOID Info_Mod_Elvira_Dorn_B()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_00"); //Idrico will dich loswerden.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_01"); //Dieser Penner, der mich immer schief anschaut? Meinst du, er könnte unangenehm werden?
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_02"); //Sein Geruch ist es schon. Der Fanatismus ist stark in ihm.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_03"); //Wir sollten ihm eine Maulsperre verpassen.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_04"); //Meinst du, du bekommst es hin, Anselm auf unsere Seite zu ziehen, damit er den Kerl ruhig stellt?
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_05"); //Ich kann's versuchen.
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_00"); //Idrico chce sie cie pozbyc.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_01"); //Ten bum, który zawsze patrzy na mnie krzywa? Czy uwazasz, ze móglby byc niewygodny?
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_02"); //To juz jego zapach. Fanatyzm jest w nim silny.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_03"); //Powinnismy na niego zalozyc sluzówke.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_B_17_04"); //Sadzisz, ze mozesz przeciagnac Anselm na nasza strone, aby utrzymac go w spokoju?
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_B_15_05"); //Moge spróbowac.
 
 	Info_ClearChoices	(Info_Mod_Elvira_Dorn);
 
 	Mod_REL_IdricoDorn = 3;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Ich glaube, dass Idricos Vorhaben falsch ist, und will Anselm davon überzeugen, dass er in die Schranken zu verweisen ist.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Uwazam, ze plan Idrico jest bledny i chce przekonac Anzelma, ze nalezy go wdrozyc.");
 };
 
 FUNC VOID Info_Mod_Elvira_Dorn_A()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_A_15_00"); //Du musst die Stadt sofort verlassen.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_A_17_01"); //Meine Tagesplanung sah eigentlich etwas anders aus. Was ist denn los?
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_A_15_02"); //Du wirst hier nicht länger geduldet. Entweder gehst du freiwillig, oder ich helfe nach.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_A_17_03"); //Hört sich an, als wäre es dir ernst. Ich bin gespannt, wie deine Hilfe aussieht.
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_A_15_00"); //Trzeba opuscic miasto juz teraz.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_A_17_01"); //Mój codzienny plan byl wlasciwie troche inny. Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn_A_15_02"); //Nie bedziesz juz tu dluzej tolerowany. Albo ochotniczo, albo pomagam.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn_A_17_03"); //Brzmi to jak powazne. Zastanawiam sie, jak wyglada wasza pomoc.
 
 	Info_ClearChoices	(Info_Mod_Elvira_Dorn);
 
 	Mod_REL_IdricoDorn = 2;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Elvira wollte die Stadt nicht kampflos verlassen und hat jetzt den Schaden. Idrico sollte trotzdem zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Elvira nie chciala opuscic miasta bez walki, a teraz doznala obrazen. Idrico wciaz powinno byc zadowolone.");
 
 	AI_StopProcessInfos	(self);
 
@@ -236,7 +236,7 @@ INSTANCE Info_Mod_Elvira_Dorn2 (C_INFO)
 	information	= Info_Mod_Elvira_Dorn2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Anselm fordert eine Tributzahlung von euch (...)";
+	description	= "Anselm prosi o zaplate plemiennej platnosci (....). )";
 };
 
 FUNC INT Info_Mod_Elvira_Dorn2_Condition()
@@ -250,13 +250,13 @@ FUNC INT Info_Mod_Elvira_Dorn2_Condition()
 
 FUNC VOID Info_Mod_Elvira_Dorn2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn2_15_00"); //Anselm fordert eine Tributzahlung von euch im Gegenzug für seine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn2_17_01"); //So ein Erpresser! Aber wenn es ihn zufriedenstellt ...
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn2_17_02"); //Ist mir immer noch lieber als Ärger mit so einer Matschbirne.
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn2_15_00"); //Anselm prosi o dokonanie platnosci w zamian za jego pomoc.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn2_17_01"); //Co za szmalcownik! Ale jesli go usatysfakcjonuje....
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn2_17_02"); //Nadal wolalbym, zeby tak sie nie stalo z taka koszula slobberballowa.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Ich habe das Gold der Feuermagier und sollte es nun bei Anselm abliefern.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Mam zloto magów ognia i powinienem dostarczyc je Anselmowi.");
 };
 
 INSTANCE Info_Mod_Elvira_Dorn3 (C_INFO)
@@ -280,7 +280,7 @@ FUNC INT Info_Mod_Elvira_Dorn3_Condition()
 
 FUNC VOID Info_Mod_Elvira_Dorn3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn3_17_01"); //Du hast Anselm nur 50 Goldmünzen angeboten? Mach, dass du wegkommst, Dieb!
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn3_17_01"); //Oferowales tylko zlote monety Anselm 50? Wyjdz z niego, zlodziej!
 };
 
 INSTANCE Info_Mod_Elvira_Dorn4 (C_INFO)
@@ -291,7 +291,7 @@ INSTANCE Info_Mod_Elvira_Dorn4 (C_INFO)
 	information	= Info_Mod_Elvira_Dorn4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Angelegenheit um Idrico sollte bereinigt sein.";
+	description	= "Nalezy rozwiazac sprawe Idrico.";
 };
 
 FUNC INT Info_Mod_Elvira_Dorn4_Condition()
@@ -305,8 +305,8 @@ FUNC INT Info_Mod_Elvira_Dorn4_Condition()
 
 FUNC VOID Info_Mod_Elvira_Dorn4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Dorn4_15_00"); //Die Angelegenheit um Idrico sollte bereinigt sein.
-	AI_Output(self, hero, "Info_Mod_Elvira_Dorn4_17_01"); //Schön, dass man sich auf dich verlassen kann. Hier hast du eine kleine Entschädigung.
+	AI_Output(hero, self, "Info_Mod_Elvira_Dorn4_15_00"); //Nalezy rozwiazac sprawe Idrico.
+	AI_Output(self, hero, "Info_Mod_Elvira_Dorn4_17_01"); //Ciesze sie, ze mozna na Ciebie liczyc. Oto niewielka rekompensata.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -342,9 +342,9 @@ FUNC INT Info_Mod_Elvira_DiebeKey_Condition()
 
 FUNC VOID Info_Mod_Elvira_DiebeKey_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_00"); //Ohh, mir wird ganz anders. Alles so leicht und lustig es dreht sich.
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_01"); //Und vor mir ... ohh ... dieser stattliche Bursche.
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_02"); //Komm her, nicht so zögerlich, ich beiße auch nicht, es sei denn du willst ...
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_00"); //Och, ja sie zmieniam. Tak latwo i smiesznie sie zmienia.
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_01"); //A przede mna.... oh...... to przystojny przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey_17_02"); //Chodzcie tutaj, nie wahajcie sie, nie ugryze, chyba ze chcecie....
 
 	AI_StopProcessInfos	(self);
 };
@@ -372,16 +372,16 @@ FUNC VOID Info_Mod_Elvira_DiebeKey2_Info()
 {
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Elvira_DiebeKey2_15_00"); //(zu sich selbst) Ihr den Schlüssel abzunehmen war ein Kinderspiel.
+	AI_Output(hero, self, "Info_Mod_Elvira_DiebeKey2_15_00"); //(ja sama) Zdjecie klucza bylo dziecinna zabawa.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_01"); //(verwirrt) Wie, was ist geschehen. Ich ... meine Robe.
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_01"); //Tak jak to sie stalo. l-- moja szata.
 
 	AI_EquipBestArmor	(self);
 
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_02"); //Ohh, nein, was habe ich getan.
-	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_03"); //Bei Innos. Ich habe mich aufs schwerste versündigt ... ich muss Buße tun.
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_02"); //Oh, nie, co zrobilem?
+	AI_Output(self, hero, "Info_Mod_Elvira_DiebeKey2_17_03"); //Innos. Najciezej zgrzeszylem (....). Musze pokutowac.
 
 	AI_StopProcessInfos	(self);
 
@@ -396,7 +396,7 @@ INSTANCE Info_Mod_Elvira_DickeLuft (C_INFO)
 	information	= Info_Mod_Elvira_DickeLuft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich würde mich gern in ein Schaf verwandeln.";
+	description	= "Chcialbym zamienic sie w owce.";
 };
 
 FUNC INT Info_Mod_Elvira_DickeLuft_Condition()
@@ -410,11 +410,11 @@ FUNC INT Info_Mod_Elvira_DickeLuft_Condition()
 
 FUNC VOID Info_Mod_Elvira_DickeLuft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_DickeLuft_15_00"); //Ich würde mich gern in ein Schaf verwandeln.
-	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_01"); //Das hättest du auch bitter nötig, wenn du bei den Frauen landen wolltest.
-	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_02"); //Mit so einer plumpen Anmache wird das jedenfalls nichts!
-	AI_Output(hero, self, "Info_Mod_Elvira_DickeLuft_15_03"); //Du hast also keine entsprechende Spruchrolle?
-	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_04"); //Nein. Verwandlungen sind nicht mein Spezialgebiet.
+	AI_Output(hero, self, "Info_Mod_Elvira_DickeLuft_15_00"); //Chcialbym zamienic sie w owce.
+	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_01"); //Musisz to zrobic, jesli chcesz przyjechac z kobietami.
+	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_02"); //Z tak niezgrabna linia odbiorcza, to nie zadziala!
+	AI_Output(hero, self, "Info_Mod_Elvira_DickeLuft_15_03"); //Wiec nie masz nic do powiedzenia?
+	AI_Output(self, hero, "Info_Mod_Elvira_DickeLuft_17_04"); //Nie. Przeksztalcenia nie sa moja specjalnoscia.
 };
 
 INSTANCE Info_Mod_Elvira_Freudenspender (C_INFO)
@@ -425,7 +425,7 @@ INSTANCE Info_Mod_Elvira_Freudenspender (C_INFO)
 	information	= Info_Mod_Elvira_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Kannst du Freudenspender gebrauchen?";
+	description 	= "Czy mozna uzyc dozowników blyszczacych?";
 };                       
 
 FUNC INT Info_Mod_Elvira_Freudenspender_Condition()
@@ -440,8 +440,8 @@ FUNC INT Info_Mod_Elvira_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Elvira_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elvira_Freudenspender_15_00"); //Kannst du Freudenspender gebrauchen?
-	AI_Output(self, hero, "Info_Mod_Elvira_Freudenspender_17_01"); //Freudenspender verstößt gegen unseren Kodex. Also nein.
+	AI_Output(hero, self, "Info_Mod_Elvira_Freudenspender_15_00"); //Czy mozna uzyc dozowników blyszczacych?
+	AI_Output(self, hero, "Info_Mod_Elvira_Freudenspender_17_01"); //Przyjemnosc przekazujacego narusza nasz kodeks. Tak wiec nie.
 };
 
 INSTANCE Info_Mod_Elvira_Pickpocket_Quest (C_INFO)

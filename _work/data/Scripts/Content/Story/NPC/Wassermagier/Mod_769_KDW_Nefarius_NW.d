@@ -1,7 +1,7 @@
 INSTANCE Mod_769_KDW_Nefarius_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nefarius";
+	name 		= "nefarius";
 	guild 		= GIL_NOV; 
 	id 			= 769;
 	voice 		= 5;

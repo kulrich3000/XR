@@ -10,7 +10,7 @@
 /******************************************************************************************/
 INSTANCE ItPl_Sumpfbeeren_XR (C_Item)
 {	
-	name 				=	"Sumpfbeeren";
+	name 				=	"zurawiny";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -33,7 +33,7 @@ INSTANCE ItPl_Sumpfbeeren_XR (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -59,7 +59,7 @@ INSTANCE ItPl_Sumpfbeeren_XR (C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mondauge_XR (C_Item)
 {	
-	name 				=	"Mondauge";
+	name 				=	"ksiezycowe oko";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -82,7 +82,7 @@ INSTANCE ItPl_Mondauge_XR (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -115,7 +115,7 @@ INSTANCE ItPl_Mondauge_XR (C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItMi_GoldDrache(C_Item)
 {
-	name 		=	"Goldener Drache";
+	name 		=	"Zloty smok";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;

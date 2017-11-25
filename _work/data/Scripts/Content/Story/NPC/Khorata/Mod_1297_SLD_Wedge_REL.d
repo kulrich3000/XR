@@ -2,7 +2,7 @@ instance Mod_1297_SLD_Wedge_REL (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Wedge";
+	name =					"klin";
 	Npctype =				Npctype_Main;
 	guild =					GIL_OUT;      
 	level =					11;

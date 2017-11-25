@@ -17,8 +17,8 @@ FUNC VOID Info_Mod_Wuetar_Hi_Info()
 {
 	if (Mod_EIS_Amorite == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_00"); //Was in Dreiteufelsnamen ...?! Du Schwein machst dich an meine Frau ran?!
-		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_01"); //Dir werde ich helfen!
+		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_00"); //Co w piekle nazywa sie....? Idziesz za moja zona, za Swina?
+		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_01"); //Pomoze ci!
 
 		AI_StopProcessInfos	(self);
 
@@ -28,19 +28,19 @@ FUNC VOID Info_Mod_Wuetar_Hi_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_02"); //He, was ist hier los? Belästigst du etwa meine Frau?!
+		AI_Output(self, hero, "Info_Mod_Wuetar_Hi_04_02"); //Hej, co sie dzieje? Masz klopoty z zona!
 
 		Info_ClearChoices	(Info_Mod_Wuetar_Hi);
 
-		Info_AddChoice	(Info_Mod_Wuetar_Hi, "Blas dich nicht so auf. Deine Frau war es, die mir an die Wäsche wollte.", Info_Mod_Wuetar_Hi_B);
-		Info_AddChoice	(Info_Mod_Wuetar_Hi, "War nur ein Missverständnis ... ich wollte gerade gehen.", Info_Mod_Wuetar_Hi_A);
+		Info_AddChoice	(Info_Mod_Wuetar_Hi, "Nie dmuchajcie w taki sposób. To wasza zona próbowala dostac sie do mojej pralni.", Info_Mod_Wuetar_Hi_B);
+		Info_AddChoice	(Info_Mod_Wuetar_Hi, "Bylo to tylko nieporozumienie...... Wlasnie wychodzilem.", Info_Mod_Wuetar_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Wuetar_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wuetar_Hi_B_15_00"); //Blas dich nicht so auf. Deine Frau war es, die mir an die Wäsche wollte.
-	AI_Output(self, hero, "Info_Mod_Wuetar_Hi_B_04_01"); //Du dreckiges Schwein wagst es auch noch ...?! Na warte, du Strolch!
+	AI_Output(hero, self, "Info_Mod_Wuetar_Hi_B_15_00"); //Nie dmuchajcie w taki sposób. To wasza zona próbowala dostac sie do mojej pralni.
+	AI_Output(self, hero, "Info_Mod_Wuetar_Hi_B_04_01"); //Brudny pig, osmielisz sie? Czekaj minute, rascal!
 
 	Info_ClearChoices	(Info_Mod_Wuetar_Hi);
 
@@ -53,8 +53,8 @@ FUNC VOID Info_Mod_Wuetar_Hi_B()
 
 FUNC VOID Info_Mod_Wuetar_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wuetar_Hi_A_15_00"); //War nur ein Missverständnis ... ich wollte gerade gehen.
-	AI_Output(self, hero, "Info_Mod_Wuetar_Hi_A_04_01"); //Dann mach, dass du rauskommst, bevor ich mich vergesse!
+	AI_Output(hero, self, "Info_Mod_Wuetar_Hi_A_15_00"); //Bylo to tylko nieporozumienie...... Wlasnie wychodzilem.
+	AI_Output(self, hero, "Info_Mod_Wuetar_Hi_A_04_01"); //Potem wyjmij z niego pieklo, zanim zapomne siebie samego!
 
 	Info_ClearChoices	(Info_Mod_Wuetar_Hi);
 
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Wuetar_Snapperbogen (C_INFO)
 	information	= Info_Mod_Wuetar_Snapperbogen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich von dir Drachensnappersehnen bekommen?";
+	description	= "Czy moge odebrac od Ciebie sciagacz smoczy?";
 };
 
 FUNC INT Info_Mod_Wuetar_Snapperbogen_Condition()
@@ -85,11 +85,11 @@ FUNC INT Info_Mod_Wuetar_Snapperbogen_Condition()
 
 FUNC VOID Info_Mod_Wuetar_Snapperbogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_15_00"); //Kann ich von dir Drachensnappersehnen bekommen?
+	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_15_00"); //Czy moge odebrac od Ciebie sciagacz smoczy?
 
 	if (Mod_EIS_Amorite == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_04_00"); //(wütend) Von mir bekommen? Eine Tracht Prügel kannst du von mir bekommen, du Schwein!
+		AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_04_00"); //Got od mnie? Mozesz dostac bicie ode mnie, pig!
 
 		AI_StopProcessInfos	(self);
 
@@ -97,23 +97,23 @@ FUNC VOID Info_Mod_Wuetar_Snapperbogen_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_04_01"); //(erbost) Wie kommst du dazu von mir etwas haben zu wollen?! Wäre ja noch schöner ...
+		AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_04_01"); //Co sprawia, ze myslisz, ze chcesz czegos mojego! Byloby jeszcze piekniej....
 
 		Info_ClearChoices	(Info_Mod_Wuetar_Snapperbogen);
 
-		Info_AddChoice	(Info_Mod_Wuetar_Snapperbogen, "Weil ich ein netter Kerl bin ...", Info_Mod_Wuetar_Snapperbogen_B);
+		Info_AddChoice	(Info_Mod_Wuetar_Snapperbogen, "Bo jestem milym facetem....", Info_Mod_Wuetar_Snapperbogen_B);
 
 		if (Npc_HasItems(hero, ItFo_Beer) >= 2)
 		{
-			Info_AddChoice	(Info_Mod_Wuetar_Snapperbogen, "Ach komm, das war nur ein albernes Missverständnis. (einen ausgeben)", Info_Mod_Wuetar_Snapperbogen_A);
+			Info_AddChoice	(Info_Mod_Wuetar_Snapperbogen, "To bylo glupie nieporozumienie. (jedno wyjscie)", Info_Mod_Wuetar_Snapperbogen_A);
 		};
 	};
 };
 
 FUNC VOID Info_Mod_Wuetar_Snapperbogen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_B_15_00"); //Weil ich ein netter Kerl bin ... (süffisant) deine Frau wird es dir bestätigen.
-	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_B_04_01"); //Na warte, du Strolch!
+	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_B_15_00"); //Bo jestem milym facetem.... Twoja zona udowodni ci to.
+	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_B_04_01"); //Czekaj minute, rascal!
 
 	Info_ClearChoices	(Info_Mod_Wuetar_Snapperbogen);
 
@@ -124,20 +124,20 @@ FUNC VOID Info_Mod_Wuetar_Snapperbogen_B()
 
 FUNC VOID Info_Mod_Wuetar_Snapperbogen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_A_15_00"); //Ach komm, das war nur ein albernes Missverständnis.
+	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_A_15_00"); //To bylo glupie nieporozumienie.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_A_04_01"); //Missverständnis? Na, ich weiß ja nicht ...
-	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_A_15_02"); //Hier, trink noch einen auf meine Rechnung.
+	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_A_04_01"); //Rozumienie? No cóz, nie wiem.....
+	AI_Output(hero, self, "Info_Mod_Wuetar_Snapperbogen_A_15_02"); //Oto kolejny napój na mojej karcie.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_A_04_03"); //Also ok, ich will mal nicht nachtragend sein. Für 150 Goldmünzen bekommst du zwei Drachensnappersehnen.
+	AI_Output(self, hero, "Info_Mod_Wuetar_Snapperbogen_A_04_03"); //Z cala slusznoscia, nie chce byc msciwy. Za 150 zlotych monet dostajesz dwa sciagacze smoka.
 
 	Info_ClearChoices	(Info_Mod_Wuetar_Snapperbogen);
 
@@ -152,7 +152,7 @@ INSTANCE Info_Mod_Wuetar_Snapperbogen2 (C_INFO)
 	information	= Info_Mod_Wuetar_Snapperbogen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Sehnen für 150 Gold kaufen)";
+	description	= "(kupi sciegna za 150 zlota)";
 };
 
 FUNC INT Info_Mod_Wuetar_Snapperbogen2_Condition()
@@ -193,7 +193,7 @@ FUNC INT Info_Mod_Wuetar_LassMich_Condition()
 
 FUNC VOID Info_Mod_Wuetar_LassMich_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wuetar_LassMich_04_00"); //Lass mich in Ruhe!
+	AI_Output(self, hero, "Info_Mod_Wuetar_LassMich_04_00"); //Udajcie sie ode mnie!
 
 	AI_StopProcessInfos	(self);
 };

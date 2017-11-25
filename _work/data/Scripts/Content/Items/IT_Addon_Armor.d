@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon 	= 1300;
 // ******************************************************
 INSTANCE ITAR_PIR_L_Addon (C_Item)
 {
-	name 					=	"Piratenkleidung";
+	name 					=	"ubranie pirackie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -52,7 +52,7 @@ INSTANCE ITAR_PIR_L_Addon (C_Item)
 
 INSTANCE ITAR_PIR_Zombie (C_Item)
 {
-	name 					=	"Zombiepiratenkleidung";
+	name 					=	"ubranie pirackie zombie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -92,7 +92,7 @@ INSTANCE ITAR_PIR_Zombie (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_M_Addon (C_Item)
 {
-	name 					=	"Piratenrüstung";
+	name 					=	"pirat uzbrojenie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -133,7 +133,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Kapitäns Kleidung";
+	name 					=	"Kapitan Odziez";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -174,7 +174,7 @@ INSTANCE ITAR_PIR_H_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Thorus_Addon (C_Item)
 {
-	name 					=	"Rüstung der Schwarzen Krieger";
+	name 					=	"Zbroja Czarnych Wojowników";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -194,7 +194,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
-	description				=	"Rüstung von Raven's Garde";
+	description				=	"Zbroja Gwardii Ravena";
 
 	TEXT[0]					= 	PRINT_Addon_BDTArmor;
 	TEXT[1]					=	NAME_Prot_Edge;			
@@ -215,7 +215,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 
 INSTANCE ITAR_Besatzer2 (C_Item)
 {
-	name 					=	"???";
+	name 					=	"";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -257,7 +257,7 @@ INSTANCE ITAR_Besatzer2 (C_Item)
 // ******************************************************
 INSTANCE ITAR_Raven_Addon (C_Item)
 {
-	name 					=	"Dämonenritterrüstung";
+	name 					=	"zbroja demoniczna rycerska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -298,7 +298,7 @@ INSTANCE ITAR_Raven_Addon (C_Item)
 // ******************************************************
 INSTANCE ITMi_DemonArmor (C_Item)
 {
-	name 					=	"Dämonenritterrüstung";
+	name 					=	"zbroja demoniczna rycerska";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;
@@ -338,7 +338,7 @@ INSTANCE ITMi_DemonArmor (C_Item)
 
 INSTANCE ITAR_Xeres (C_Item)
 {
-	name 					=	"Xeres' Rüstung";
+	name 					=	"Xe 'Zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -378,7 +378,7 @@ INSTANCE ITAR_Xeres (C_Item)
 
 INSTANCE ITAR_DMR_M (C_Item)
 {
-	name 					=	"Schwarze Wächterrüstung";
+	name 					=	"Zbroja z czarna oslona";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -418,7 +418,7 @@ INSTANCE ITAR_DMR_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_OreBaron_Addon (C_Item)
 {
-	name 					=	"Erzbaronrüstung";
+	name 					=	"zapora";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -459,7 +459,7 @@ INSTANCE ITAR_OreBaron_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_RANGER_Addon (C_Item)
 {
-	name 					=	"Rüstung des 'Rings des Wassers'";
+	name 					=	"Pancerz 'Pierscien wodny";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -500,7 +500,7 @@ INSTANCE ITAR_RANGER_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Armor_01 (C_Item)
 {
-	name 					=	"Rüstung 1";
+	name 					=	"Pancerz 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -541,7 +541,7 @@ INSTANCE ITAR_Armor_01 (C_Item)
 // ******************************************************
 INSTANCE ITAR_Fake_RANGER (C_Item)
 {
-	name 					=	"zerissene Rüstung";
+	name 					=	"zepsuta zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -571,7 +571,7 @@ INSTANCE ITAR_Fake_RANGER (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_L_Addon (C_Item)
 {
-	name 					=	"Wassermagierrobe";
+	name 					=	"magiczna suknia wodna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -611,7 +611,7 @@ INSTANCE ITAR_KDW_L_Addon (C_Item)
 
 INSTANCE ITAR_KDW_L_S (C_Item)
 {
-	name 					=	"Verbesserte Wassermagierrobe";
+	name 					=	"Udoskonalona Robia z materialu wodnego Magic Magic Robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -651,7 +651,7 @@ INSTANCE ITAR_KDW_L_S (C_Item)
 // ******************************************************
 INSTANCE ITAR_Bloodwyn_Addon (C_Item)
 {
-	name 					=	"Bloodwyn Rüstung";
+	name 					=	"Zbroja krwionosna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -692,7 +692,7 @@ INSTANCE ITAR_Bloodwyn_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_MayaZombie_Addon (C_Item)
 {
-	name 					=	"alte Rüstung";
+	name 					=	"stara zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -733,7 +733,7 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_RyansWache (C_Item)
 {
-	name 					=	"alte Rüstung";
+	name 					=	"stara zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -780,7 +780,7 @@ INSTANCE ITAR_RyansWache (C_Item)
 
 instance ItAr_FireArmor_Addon (C_Item)
 {
-	name 					=	"Magische Rüstung";
+	name 					=	"Zbroja magiczna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

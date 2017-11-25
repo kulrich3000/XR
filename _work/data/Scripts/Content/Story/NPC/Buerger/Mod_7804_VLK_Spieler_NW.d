@@ -1,7 +1,7 @@
 instance Mod_7804_VLK_Spieler_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Spieler"; 
+	name 		= "zawodnicy"; 
 	guild 		= GIL_PAL;
 	id 			= 7804;
 	voice 		= 1;

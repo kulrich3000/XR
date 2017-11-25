@@ -1,7 +1,7 @@
-const string TOPIC_MOD_KG_OLEBRIEF	=	"Der Brief für die Paladine";
-const string TOPIC_MOD_KG_VORBEREITUNGEN	=	"Vorbereitungen für die Mine";
-const string TOPIC_MOD_KG_TROLLHOLZ	=	"Holz gegen Stein";
-const string TOPIC_MOD_KG_NAHRUNGSVERSORGUNG	=	"Nahrungsversorgung";
-const string TOPIC_MOD_KG_BUDDLER	=	"Neue Männer für die Mine";
-const string TOPIC_MOD_KG_STEINMONSTER	=	"Erzmonster und andere Übel";
-const string TOPIC_MOD_KG_RITUAL	=	"Schwarzes Ritual";
+const string TOPIC_MOD_KG_OLEBRIEF	=	"List dla Paladynów";
+const string TOPIC_MOD_KG_VORBEREITUNGEN	=	"Przygotowania kopalni";
+const string TOPIC_MOD_KG_TROLLHOLZ	=	"Drewno z kamieniem";
+const string TOPIC_MOD_KG_NAHRUNGSVERSORGUNG	=	"zaopatrzenie w zywnosc";
+const string TOPIC_MOD_KG_BUDDLER	=	"Nowi mezczyzni dla kopalni";
+const string TOPIC_MOD_KG_STEINMONSTER	=	"Potwory Arch i inne zlo";
+const string TOPIC_MOD_KG_RITUAL	=	"Rytual czarny";

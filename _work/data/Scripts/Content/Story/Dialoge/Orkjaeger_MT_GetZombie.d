@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Orkjaeger_MT_SindSchonDrin_Condition()
 
 FUNC VOID Info_Mod_Orkjaeger_MT_SindSchonDrin_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_00"); //Du kommst ein paar Minuten zu spät. Die Jungs sind bereits losgegangen. Wir passen auf, dass sich keiner von den Orks aus dem Staub machen will.
-	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_01"); //Tja, der ganze Spaß ohne uns.
-	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_SindSchonDrin_15_02"); //Spaß?
-	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_03"); //Ach, die paar Grünhäute machen wir doch mit links alle. Nur dumme, stinkende Orks ...
-	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_SindSchonDrin_15_04"); //Hmm, wenn du meinst ...
+	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_00"); //Jestes kilka minut pózno. Chlopcy juz odeszli. Upewnimy sie, ze nikt z orków nie chce uciekac.
+	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_01"); //Cóz, cala zabawa bez nas.
+	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_SindSchonDrin_15_02"); //Zabawa?
+	AI_Output(self, hero, "Info_Mod_Orkjaeger_MT_SindSchonDrin_11_03"); //Och, wszyscy robimy zielone skóry po lewej stronie. Glupi, smierdzacy orki....
+	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_SindSchonDrin_15_04"); //No cóz, jesli masz na mysli - -.
 
 	AI_StopProcessInfos	(self);
 };
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Orkjaeger_MT_GetZombie_Hi (C_INFO)
 	information	= Info_Mod_Orkjaeger_MT_GetZombie_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey Leute, macht dass ihr reinkommt.";
+	description	= "Hej, chlopaki, upewnij sie, ze weszliscie.";
 };
 
 FUNC INT Info_Mod_Orkjaeger_MT_GetZombie_Hi_Condition()
@@ -50,7 +50,7 @@ FUNC INT Info_Mod_Orkjaeger_MT_GetZombie_Hi_Condition()
 
 FUNC VOID Info_Mod_Orkjaeger_MT_GetZombie_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_GetZombie_Hi_15_00"); //Hey Leute, macht dass ihr reinkommt, drinnen könnten wir etwas Unterstützung brauchen.
+	AI_Output(hero, self, "Info_Mod_Orkjaeger_MT_GetZombie_Hi_15_00"); //Hej, chlopaki, dostac sie tam, moglibysmy wykorzystac jakies kopie zapasowe w srodku.
 
 	AI_StopProcessInfos	(self);
 };

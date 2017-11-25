@@ -6,7 +6,7 @@ INSTANCE Info_Mod_WirtEisgebiet_Rattenquest (C_INFO)
 	information	= Info_Mod_WirtEisgebiet_Rattenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Habt ihr in letzter Zeit vielleicht zufällig ein Rattenproblem?";
+	description	= "Czy chlopaki maja ostatnio problem z szczurami, przez jakakolwiek szanse?";
 };
 
 FUNC INT Info_Mod_WirtEisgebiet_Rattenquest_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_WirtEisgebiet_Rattenquest_Condition()
 
 FUNC VOID Info_Mod_WirtEisgebiet_Rattenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_00"); //Habt ihr in letzter Zeit vielleicht zufällig ein Rattenproblem?
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_01"); //Wir haben doch kein Problem mit Ratten. Einmal fest Draufgeschlagen und schon ist das Viech tot.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_02"); //Nein, so meinte ich das nicht. Ich meinte, ob sie in letzter Ziet vermehrt auftauchen.
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_03"); //Na ja, bei uns hier in der Stadt nicht, aber einer der Jäger, ich glaube Burl war sein Name, hat mal was von Ratten erzählt.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_04"); //Und wo ist dieser Burl?
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_05"); //Ich glaube der ist im Hotel, der hat gestern Abend ganz schön gesoffen.
-	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_06"); //Du kannst ja mal schauen, ob er jetzt wieder fit ist.
-	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_07"); //Danke, dann geh ich mal gleich zu ihm.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_00"); //Czy chlopaki maja ostatnio problem z szczurami, przez jakakolwiek szanse?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_01"); //Nie mamy problemu z szczurami. Kiedy ciezko ja uderzysz i stwór jest martwy.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_02"); //Nie, nie o to nie chodzilo mi. Mam na mysli, czy w ciagu ostatnich kilku minut gonna pojawia sie czesciej?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_03"); //ale jeden z mysliwych, mysle, ze Burl byl jego imieniem, powiedzial mi o szczurach.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_04"); //A gdzie taki zadzior?
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_05"); //Mysle, ze jest w hotelu.
+	AI_Output(self, hero, "Info_Mod_WirtEisgebiet_Rattenquest_14_06"); //Mozesz sprawdzic, czy jest znów sprawny.
+	AI_Output(hero, self, "Info_Mod_WirtEisgebiet_Rattenquest_15_07"); //Dzieki, zobacze go od razu.
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "In der Stadt hier ist nichts vorgefallen, jedoch hat ein Jäger namens Burl von Ratten gesprochen. Er soll sich zur Zeit im Hotel aufhalten, wo er seinen Rausch ausschläft.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "W tym miescie nic sie nie wydarzylo, ale mysliwy o imieniu Burl mówil o szczurach. Ma zostac w hotelu, gdzie ma go spac.");
 
 	Mod_RattenQuest = 5;
 };

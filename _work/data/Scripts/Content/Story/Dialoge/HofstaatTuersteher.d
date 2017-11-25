@@ -15,20 +15,20 @@ FUNC INT Info_Mod_HofstaatTuersteher_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatTuersteher_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_00"); //Hey! Du kannst hier nicht durch!
-	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_01"); //Warum nicht?
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_02"); //Nur Angehörige des Hofstaats dürfen da rein!
-	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_03"); //Hofstaat?
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_04"); //Ja, Mann! Der Pöbel hat in der Burg nichts verloren!
-	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_05"); //Und wie werde ich Mitglied des Hofstaates?
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_06"); //Da musst du zuerst mal die Staatsbürgerschaft für unser Reich hier erhalten.
-	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_07"); //Wie werde ich Staatsbürger?
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_08"); //Du hast zwei Möglichkeiten: Heirate eine aus unserer Mitte oder eröffne einen Laden.
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_09"); //Ach ja, falls du vorhast zu heiraten, würd ich mich nicht an die Bauern halten.
-	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_10"); //Warum nicht?
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_11"); //Bauern sind nur Pöbel! Du wirst dann zwar als Pöbel angesehen, doch nicht als Mitglied des Staates. Dazu müsstest du mit der Bäuerin in ein Haus ziehen ...
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_00"); //Hej! Nie mozesz przejsc tutaj!
+	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_01"); //Dlaczego nie?
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_02"); //Tylko czlonkowie sadu sa dopuszczeni!
+	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_03"); //Czy sad?
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_04"); //Tak, czlowiek! W zamku nie ma miejsca na wzgórze!
+	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_05"); //A jak zostac czlonkiem sadu?
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_06"); //Przede wszystkim trzeba tu uzyskac obywatelstwo dla naszego imperium.
+	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_07"); //Jak zostac obywatelem?
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_08"); //Masz dwie mozliwosci: poslubic jednego z nas lub otworzyc sklep.
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_09"); //Nawiasem mówiac, gdybys zamierzal sie ozenic, nie trzymalbym sie chlopów.
+	AI_Output(hero, self, "Info_Mod_HofstaatTuersteher_Hi_15_10"); //Dlaczego nie?
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_Hi_29_11"); //Chlopi sa po prostu rabusi! Zostaniesz uznany za wscieklego, ale nie czlonka tego panstwa. Aby to zrobic, trzeba sie przeprowadzic do domu z zona rolnika....
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Der Türsteher des Schlosses sagt, dass ich es erst betreten darf, wenn ich Mitglied des Hofstaates bin. Um das zu erreichen, hab ich zwei Möglichkeiten: Ich heirate eine Hofstaatlerin oder ich eröffne einen Laden. Sollte ich jedoch eine Bäuerin heiraten, dann muss ich mit ihr noch in die Burg ziehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Drzwiowiec zamku mówi, ze nie wolno mi wejsc do niego, dopóki nie zostane czlonkiem sadu. Aby to osiagnac, mam dwie mozliwosci: poslubic dyrektora domu lub otworzyc sklep. Jesli jednak powinienem poslubic zone rolnika, to musze sie z nia przeniesc do zamku.");
 };
 
 INSTANCE Info_Mod_HofstaatTuersteher_NachFest (C_INFO)
@@ -51,11 +51,11 @@ FUNC INT Info_Mod_HofstaatTuersteher_NachFest_Condition()
 
 FUNC VOID Info_Mod_HofstaatTuersteher_NachFest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_NachFest_29_00"); //Hey, du bist doch der königliche Bademeister? Der König sucht nach dir.
+	AI_Output(self, hero, "Info_Mod_HofstaatTuersteher_NachFest_29_00"); //Hej, czyz nie jestes asystentem basenów królewskich? Król szuka cie.
 
 	Log_CreateTopic	(TOPIC_MOD_SEKTE_KING, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_KING, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Der Türsteher meint, dass der König nach mir sucht. Ich sollte mal bei ihm vorbei schauen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Drzwiowiec uwaza, ze król mnie szuka. Powinienem zatrzymac sie przy jego miejscu.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -93,7 +93,7 @@ func int Info_Mod_HofstaatTuersteher_FirstWarn_Condition()
 
 func void Info_Mod_HofstaatTuersteher_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_FirstWarn_29_00"); //HALT! Du darfst hier noch nicht rein.
+	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_FirstWarn_29_00"); //HALT! Nie mozesz tu jeszcze wejsc.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, HofstaatTuersteher_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -126,7 +126,7 @@ FUNC INT Info_Mod_HofstaatTuersteher_SecondWarn_Condition()
 
 func void Info_Mod_HofstaatTuersteher_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_SecondWarn_29_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_SecondWarn_29_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,HofstaatTuersteher_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -164,7 +164,7 @@ func void Info_Mod_HofstaatTuersteher_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_Attack_29_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_HofstaatTuersteher_Attack_29_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

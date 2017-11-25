@@ -4,7 +4,7 @@
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC1 (C_ITEM)
 {
-	name 					=	"Die Kreise des Wassers";
+	name 					=	"Kregi wodne";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -15,7 +15,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier";
+	description				= 	"Ksiazka batalionu magika wodnego";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC1_S1;
@@ -23,7 +23,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC1 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 {
-	name 					=	"Wasserrunenbuch II";
+	name 					=	"Ksiega wodna II";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -34,7 +34,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier (2. Kreis)";
+	description				= 	"Ksiazka z runami maga wodnego (2). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC2_S1;
@@ -42,7 +42,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC2 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 {
-	name 					=	"Wasserrunenbuch III";
+	name 					=	"Ksiega wodna III";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -53,7 +53,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier (3. Kreis)";
+	description				= 	"Kalendarz magika wody (3). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC3_S1;
@@ -61,7 +61,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC3 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 {
-	name 					=	"Wasserrunenbuch VI";
+	name 					=	"Ksiega wodna VI";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -72,7 +72,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier (4. Kreis)";
+	description				= 	"Ksiazka batalionu magika wodnego (4). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC4_S1;
@@ -81,7 +81,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC4 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 {
-	name 					=	"Wasserrunenbuch V";
+	name 					=	"Ksiega poboru wody V";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -92,7 +92,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier (5. Kreis)";
+	description				= 	"Wodna ksiazka magika z runami (5). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC5_S1;
@@ -101,7 +101,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC5 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 {
-	name 					=	"Wasserrunenbuch VI";
+	name 					=	"Ksiega wodna VI";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -112,7 +112,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Wassermagier (6. Kreis)";
+	description				= 	"Ksiazka z runami maga wodnego (6). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Runemaking_KDW_CIRC6_S1;
@@ -127,7 +127,7 @@ INSTANCE ITWR_Addon_Runemaking_KDW_CIRC6 (C_ITEM)
 
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC1 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch I";
+	name 					=	"Ksiazka ognia I";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -138,14 +138,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (1. Kreis)";
+	description				= 	"Ogniem magiczna ksiazka runiczna (1). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_01_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC2 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch II";
+	name 					=	"Ksiazka plomieniowa II";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -156,14 +156,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (2. Kreis)";
+	description				= 	"Ogniem magiczna runiczka (2). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_02_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC3 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch III";
+	name 					=	"Ksiazka III Przeciwpozarowa";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -174,14 +174,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (3. Kreis)";
+	description				= 	"Ogniem magiczna runiczka iluzjonisty (3). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_03_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC4 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch IV";
+	name 					=	"Ksiazka IV dotyczaca pracy ogniowej";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -192,14 +192,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC4 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (4. Kreis)";
+	description				= 	"Ogniem magiczna runiczka (4). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_04_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC5 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch V";
+	name 					=	"Ksiazka plomieniowa V";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -210,14 +210,14 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC5 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (5. Kreis)";
+	description				= 	"Ogniem magiczna runiczka (5). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_05_S1;
 };
 INSTANCE ITWR_Addon_Runemaking_KDF_CIRC6 (C_ITEM)
 {
-	name 					=	"Feuerrunenbuch VI";
+	name 					=	"Pomieszczenie awaryjne VI";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -228,7 +228,7 @@ INSTANCE ITWR_Addon_Runemaking_KDF_CIRC6 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Runenbuch der Feuermagier (6. Kreis)";
+	description				= 	"Ogniem magiczna runiczka (6). Kolo)";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	Use_Bookstand_Kreise_06_S1;

@@ -4,7 +4,7 @@
 //****************************************************************************
 INSTANCE ItSe_ErzFisch (C_Item)
 {	
-	name 				=	"Kugeliger Fisch";
+	name 				=	"okragle ryby";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -17,7 +17,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 	on_state[0]			=	Use_ErzFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Irgendwas ist in diesem Fisch versteckt";		
+	TEXT[2]				= 	"Jest cos ukrytego w tej rybie.";		
 	
 };
 
@@ -31,7 +31,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_GoldFisch (C_Item)
 {	
-	name 				=	"Schwerer Fisch";
+	name 				=	"Ciezkie ryby";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -44,7 +44,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 	on_state[0]			=	Use_GoldFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Irgendwas ist in diesem Fisch versteckt";		
+	TEXT[2]				= 	"Jest cos ukrytego w tej rybie.";		
 	
 };
 
@@ -58,7 +58,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_Ringfisch (C_Item)
 {	
-	name 				=	"Kleiner Fisch";
+	name 				=	"Drobiazga";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -71,7 +71,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 	on_state[0]			=	Use_Ringfisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Irgendwas ist in diesem Fisch versteckt";		
+	TEXT[2]				= 	"Jest cos ukrytego w tej rybie.";		
 	
 };
 
@@ -85,7 +85,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_LockpickFisch (C_Item)
 {	
-	name 				=	"Leichter Fisch";
+	name 				=	"Ryby lekkie";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -98,7 +98,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 	on_state[0]			=	Use_LockpickFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"Irgendwas ist in diesem Fisch versteckt";		
+	TEXT[2]				= 	"Jest cos ukrytego w tej rybie.";		
 	
 };
 
@@ -116,7 +116,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 //------------- 25 Gold -----------------------
 INSTANCE ItSe_GoldPocket25	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -128,11 +128,11 @@ INSTANCE ItSe_GoldPocket25	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket25;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein paar Münzen klimpern darin";
+	TEXT[2]				= 	"Kilka monet w nim strumien";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -145,7 +145,7 @@ FUNC VOID GoldPocket25 ()
 //------------- 50 Gold -----------------------
 INSTANCE ItSe_GoldPocket50	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -157,11 +157,11 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket50;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Der Beutel ist voller Münzen";
+	TEXT[2]				= 	"Torba jest pelna monet";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -174,7 +174,7 @@ FUNC VOID GoldPocket50 ()
 //------------- 100 Gold -----------------------
 INSTANCE ItSe_GoldPocket100	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -186,12 +186,12 @@ INSTANCE ItSe_GoldPocket100	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket100;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen";
+	TEXT[2]				= 	"Ciezka torba";
+	TEXT[3]				= 	"wypelnione zlotymi monetami";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -203,7 +203,7 @@ FUNC VOID GoldPocket100 ()
 //------------- 100 Gold -----------------------
 INSTANCE ItMi_Lederbeutel_Diebe	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -213,19 +213,19 @@ INSTANCE ItMi_Lederbeutel_Diebe	(C_Item)
 	visual 				=	"ItMi_Pocket.3ds";
 	material 			=	MAT_LEATHER;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen";
+	TEXT[2]				= 	"Ciezka torba";
+	TEXT[3]				= 	"wypelnione zlotymi monetami";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //------------- 100 Gold -----------------------
 INSTANCE ItSe_HeroPocket	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -237,11 +237,11 @@ INSTANCE ItSe_HeroPocket	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   HeroPocket;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Enthält alles Eigentum";
+	TEXT[2]				= 	"Zawiera wszystkie wlasciwosci";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -253,7 +253,7 @@ FUNC VOID HeroPocket ()
 
 INSTANCE ItMi_KoboldGold	(C_Item)
 {
-	name 				=	"Praller Lederbeutel";
+	name 				=	"Gesta skórzana torba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -265,12 +265,12 @@ INSTANCE ItMi_KoboldGold	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   KoboldGold;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen";
+	TEXT[2]				= 	"Ciezka torba";
+	TEXT[3]				= 	"wypelnione zlotymi monetami";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -282,7 +282,7 @@ FUNC VOID KoboldGold ()
 
 INSTANCE ItMi_Magierbeutel_IR	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -294,11 +294,11 @@ INSTANCE ItMi_Magierbeutel_IR	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Magierbeutel_IR;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Enthält ein paar Spruchrollen";
+	TEXT[2]				= 	"Zawiera kilka ról";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -330,12 +330,12 @@ FUNC VOID Magierbeutel_IR ()
 		CreateInvItems	(hero, ItSc_FullHeal, 1);
 	};
 
-	B_ShowGivenThings	("Spruchrollen gefunden");
+	B_ShowGivenThings	("Znalezienie ról w pisowni");
 };
 //------------- Hannas Beutel -----------------------
 INSTANCE ItSe_HannasBeutel	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -347,11 +347,11 @@ INSTANCE ItSe_HannasBeutel	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   HannasBeutel;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Hanna hat ihn mir gegeben";
+	TEXT[2]				= 	"Hanna mi ja dala.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -366,7 +366,7 @@ FUNC VOID HannasBeutel ()
 
 INSTANCE ItSe_WilfriedsBeutel	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -376,11 +376,11 @@ INSTANCE ItSe_WilfriedsBeutel	(C_Item)
 	visual 				=	"ItMi_Pocket.3ds";	
 	material 			=	MAT_LEATHER;
 	
-	description			= 	"Ein aufgeschlitzter Lederbeutel";
+	description			= 	"Jeden worek skórzany";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Der Lederbeutel gehört Wilfried";
+	TEXT[2]				= 	"Torba skórzana nalezy do Wilfried.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -389,7 +389,7 @@ INSTANCE ItSe_WilfriedsBeutel	(C_Item)
 //------------- 25 Gold -----------------------
 INSTANCE ItMi_HerekBeutel	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -401,11 +401,11 @@ INSTANCE ItMi_HerekBeutel	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   HerekBeutel;
 	
-	description			= 	"Ein Lederbeutel";
+	description			= 	"Jedna skórzana torba";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"von Herek";
+	TEXT[2]				= 	"Herek";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -422,7 +422,7 @@ FUNC VOID HerekBeutel ()
 //------------- 100 Gold -----------------------
 INSTANCE ItMi_GorNaKoshsBeutel	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -434,12 +434,12 @@ INSTANCE ItMi_GorNaKoshsBeutel	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GorNaKoshsBeutel;
 	
-	description			= 	"Gor Na Koshs Lederbeutel";
+	description			= 	"Gor Na Koshs Leather Bag Bag";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen und anderen Sachen";
+	TEXT[2]				= 	"Ciezka torba";
+	TEXT[3]				= 	"wypelnione zlotymi monetami i innymi przedmiotami";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -453,7 +453,7 @@ FUNC VOID GorNaKoshsBeutel ()
 //------------- 100 Gold -----------------------
 INSTANCE ItMi_GorNaKoshsBeutel2	(C_Item)
 {
-	name 				=	"Lederbeutel";
+	name 				=	"torby skórzane";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -465,12 +465,12 @@ INSTANCE ItMi_GorNaKoshsBeutel2	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GorNaKoshsBeutel2;
 	
-	description			= 	"Gor Na Koshs Lederbeutel";
+	description			= 	"Gor Na Koshs Leather Bag Bag";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Ein schwerer Beutel";
-	TEXT[3]				= 	"gefüllt mit goldenen Münzen und anderen Sachen";
+	TEXT[2]				= 	"Ciezka torba";
+	TEXT[3]				= 	"wypelnione zlotymi monetami i innymi przedmiotami";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };

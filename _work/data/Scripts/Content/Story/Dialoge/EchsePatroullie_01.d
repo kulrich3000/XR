@@ -15,12 +15,12 @@ FUNC INT Info_Mod_EchsePatroullie_01_Hi_Condition()
 
 FUNC VOID Info_Mod_EchsePatroullie_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_EchsePatroullie_01_Hi_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output(self, hero, "Info_Mod_EchsePatroullie_01_Hi_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
 
 	Info_ClearChoices	(Info_Mod_EchsePatroullie_01_Hi);
 
-	Info_AddChoice	(Info_Mod_EchsePatroullie_01_Hi, "Mitgehen.", Info_Mod_EchsePatroullie_01_Hi_B);
-	Info_AddChoice	(Info_Mod_EchsePatroullie_01_Hi, "Waffe ziehen.", Info_Mod_EchsePatroullie_01_Hi_A);
+	Info_AddChoice	(Info_Mod_EchsePatroullie_01_Hi, "Idz z nim.", Info_Mod_EchsePatroullie_01_Hi_B);
+	Info_AddChoice	(Info_Mod_EchsePatroullie_01_Hi, "Pociagnac pistolet.", Info_Mod_EchsePatroullie_01_Hi_A);
 };
 
 FUNC VOID Info_Mod_EchsePatroullie_01_Hi_B()
@@ -39,7 +39,7 @@ FUNC VOID Info_Mod_EchsePatroullie_01_Hi_B()
 
 	Log_CreateTopic	(TOPIC_MOD_ECHSEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Ich hab mich der Echse ergeben, die mich nach meiner Verwandlung erwischt hat. Sie hat mich in die Stadt gebracht und mir alles abgenommen, was ich dabei hatte.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Poddalem sie jaszczurce, która zlapala mnie po przemianie. Przyniosla mnie do miasta i wziela wszystko, co mialam.");
 };
 
 FUNC VOID Info_Mod_EchsePatroullie_01_Hi_A()

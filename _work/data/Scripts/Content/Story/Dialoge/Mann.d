@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mann_TeachFight (C_INFO)
 	information	= Info_Mod_Mann_TeachFight_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Schwertkampf lehren)";
+	description	= "(Maszyny do nauki)";
 };
 
 FUNC INT Info_Mod_Mann_TeachFight_Condition()
@@ -21,8 +21,8 @@ FUNC INT Info_Mod_Mann_TeachFight_Condition()
 
 FUNC VOID Info_Mod_Mann_TeachFight_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_00"); //Lerne das Schwert als einen Teil deines Armes, deines eigenen Körpers zu sehen. Werde eins mit ihm.
-	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_01"); //Benutzt du ein zweischneidiges Schwert, so stecke viel Wucht in den Schlag, einen Säbel jedoch lässt auf dem Gegner abgleiten, um tiefe Schnittwunden zu schlagen.
+	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_00"); //Naucz sie widziec miecza jako czesc ramienia, wlasne cialo. Zostan z nim.
+	AI_Output(hero, self, "Info_Mod_Mann_TeachFight_15_01"); //Jesli uzywasz miecza z podwójnymi krawedziami, wlóz duza sile w uderzenie, ale szabla pozwala na zeslizgiwanie sie przeciwnika, aby uderzyc glebokimi cieciami.
 
 	B_GivePlayerXP	(100);
 };

@@ -1,7 +1,7 @@
 instance Mod_780_SLD_Buster_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Buster";
+	name 		= "gwar";
 	guild 		= GIL_MIL;
 	id 			= 780;
 	voice 		= 13;

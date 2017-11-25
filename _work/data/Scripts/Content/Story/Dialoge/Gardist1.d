@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Gardist1_Hi_Condition()
 
 FUNC VOID Info_Mod_Gardist1_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gardist1_Hi_07_00"); //Ich wusste doch, dass Bartholo recht hatte, als er meinte, wir sollten im Haus der Gardisten nach dem Rechten sehn.
-	AI_Output(self, hero, "Info_Mod_Gardist1_Hi_07_01"); //Jetzt hat dein letztes Stündlein geschlagen.
+	AI_Output(self, hero, "Info_Mod_Gardist1_Hi_07_00"); //Wiedzialem, ze Bartholo mial racje mówiac, ze powinnismy dbac o dom strazników.
+	AI_Output(self, hero, "Info_Mod_Gardist1_Hi_07_01"); //Teraz to Twoja ostatnia godzina.
 
 	AI_StopProcessInfos	(self);
 
 	B_Attack	(self, hero, AR_GuildEnemy, 0);
 
 	B_StartOtherRoutine	(Mod_1107_GRD_Jackal_MT, "FLUCHTHILFE");
-	Mod_1107_GRD_Jackal_MT.name = "Fremder";
+	Mod_1107_GRD_Jackal_MT.name = "kosmitka";
 	B_Attack	(Mod_1107_GRD_Jackal_MT, self, AR_Kill, 1);
 };
 

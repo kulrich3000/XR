@@ -1,7 +1,7 @@
 INSTANCE Mod_929_PIR_Bill_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bill";
+	name 		= "Rachunek";
 	guild 		= GIL_OUT;
 	id 			= 929;
 	voice 		= 3;

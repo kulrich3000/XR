@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Frowin_Hi_Condition()
 
 FUNC VOID Info_Mod_Frowin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_00"); //Endlich bist du angekommen!
-	AI_Output(hero, self, "Info_Mod_Frowin_Hi_15_01"); //Du bist der letzte der dunklen Krieger. Dich werde ich ebenfalls töten und danach die Axt sichern!
-	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_02"); //Das werde ich zu verhindern wissen. Der Almanach ist jetzt nutzlos für mich. Und du wirst nicht mehr lebend hier rauskommen.
-	AI_Output(hero, self, "Info_Mod_Frowin_Hi_15_03"); //Komm her!
-	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_04"); //(lacht) Noch nicht!
+	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_00"); //Nareszcie dotarles!
+	AI_Output(hero, self, "Info_Mod_Frowin_Hi_15_01"); //Jestescie ostatnimi z ciemnych wojowników. Zabije cie, a potem zabezpiecze siekiere!
+	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_02"); //Bede wiedzial, jak temu zapobiec. Almanach jest teraz dla mnie bezuzyteczny. I nie wychodzisz tu zywy.
+	AI_Output(hero, self, "Info_Mod_Frowin_Hi_15_03"); //Zapraszamy tutaj!
+	AI_Output(self, hero, "Info_Mod_Frowin_Hi_14_04"); //(smiech) Jeszcze nie!
 
 	AI_StopProcessInfos	(self);
 
@@ -48,8 +48,8 @@ FUNC INT Info_Mod_Frowin_HatAxt_Condition()
 
 FUNC VOID Info_Mod_Frowin_HatAxt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Frowin_HatAxt_14_00"); //(lacht laut) Hahaha! Du kommst zu spät. Die Axt des Untergangs gehört mir. Ich werde sie meinem Meister übergeben, und er wird die Welt in tiefste Dunkelheit stürzen.
-	AI_Output(self, hero, "Info_Mod_Frowin_HatAxt_14_01"); //Und nun, Mensch, wirst du sterben.
+	AI_Output(self, hero, "Info_Mod_Frowin_HatAxt_14_00"); //(smieje sie glosno) Hahahahaha! Jestes za pózno. Aksamitem zguby jest moja. Przekaze go mojemu panu, a on zanurzy swiat w najglebsza ciemnosc.
+	AI_Output(self, hero, "Info_Mod_Frowin_HatAxt_14_01"); //A teraz, czlowiek, umrzesz.
 
 	AI_StopProcessInfos	(self);
 

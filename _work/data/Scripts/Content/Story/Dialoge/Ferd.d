@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ferd_Hi (C_INFO)
 	information	= Info_Mod_Ferd_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist einer der Jäger, die das Lager hier mit Fleisch (...)";
+	description	= "Jestes jednym z mysliwych, którzy zalozyli tu obóz z miesem (....). )";
 };
 
 FUNC INT Info_Mod_Ferd_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Ferd_Hi_Condition()
 
 FUNC VOID Info_Mod_Ferd_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_00"); //Du bist einer der Jäger, die das Lager hier mit Fleisch und Fellen versorgen?
-	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_01"); //Jo, aber ich kann im Moment nich jagen.
-	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_02"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_03"); //Letzthin hat mich 'ne Wildsau mit ihren Hauern erwischt. Nu hab ich 'ne tiefe Wunde am Bein.
-	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_04"); //Aber du überlebst?
-	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_05"); //Klar. Wulfgar kümmert sich um mich.
-	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_06"); //Dann mal gute Besserung.
+	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_00"); //Jestes jednym z mysliwych, który karmi obóz tu miesem i skórami?
+	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_01"); //Jo, ale nie moge juz teraz polowac.
+	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_02"); //Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_03"); //Ostatnio zostalem zlapany przez dzika z jej kogutami. Teraz mam gleboka rane na nodze.
+	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_04"); //Ale przezyjesz?
+	AI_Output(self, hero, "Info_Mod_Ferd_Hi_06_05"); //Pewne. O mnie troszczy sie Wulfgar.
+	AI_Output(hero, self, "Info_Mod_Ferd_Hi_15_06"); //Dobrze sie wkrótce.
 };
 
 INSTANCE Info_Mod_Ferd_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 INSTANCE Monster_11051_Eisgolem_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Eisgolem";	
+	name 		= "gol";	
 	guild 		= GIL_DEMON;
 	id 			= 11051;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;

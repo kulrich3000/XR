@@ -5,7 +5,7 @@ INSTANCE Info_Mod_SNOV_11_Leader (C_INFO)
 	information	= Info_Mod_SNOV_11_Leader_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wer hat hier das Sagen?";
+	description	= "Kto jest tu odpowiedzialny?";
 };
 
 FUNC INT Info_Mod_SNOV_11_Leader_Condition()
@@ -17,7 +17,7 @@ FUNC VOID Info_Mod_SNOV_11_Leader_Info()
 {
 	B_Say	(hero, self, "$AMBISNOV01");
 
-	AI_Output(self, hero, "Info_Mod_SNOV_11_Leader_11_00"); //Das weiß ich auch nicht so genau. Frag doch wen anders.
+	AI_Output(self, hero, "Info_Mod_SNOV_11_Leader_11_00"); //Tak naprawde nie wiem. Zapytaj kogos innego.
 };
 
 INSTANCE Info_Mod_SNOV_11_Beliarkloster (C_INFO)
@@ -27,7 +27,7 @@ INSTANCE Info_Mod_SNOV_11_Beliarkloster (C_INFO)
 	information	= Info_Mod_SNOV_11_Beliarkloster_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was gibt es hier für wichtige Orte?";
+	description	= "Jakie sa interesujace miejsca?";
 };
 
 FUNC INT Info_Mod_SNOV_11_Beliarkloster_Condition()
@@ -41,12 +41,12 @@ FUNC VOID Info_Mod_SNOV_11_Beliarkloster_Info()
 
 	if (Mod_BibEntdeckt)
 	{
-		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_00"); //Du hast doch die Bibliothek entdeckt. Du kennst dich hier wahrscheinlich besser aus als ich.
+		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_00"); //Znalazles biblioteke, prawda? Prawdopodobnie wiecie tu o swojej drodze lepiej niz ja.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_01"); //Die Kirche in der Mitte des Platzes. Dort solltest du regelmäßig erscheinen, wenn du nicht verdächtig werden willst.
-		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_02"); //Dahinter liegt irgendwo versteckt im Labyrinth die Bibliothek, die seit Jahren niemand mehr zu Gesicht bekommen hat, weil niemand durch den Irrgarten findet.
+		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_01"); //Kosciól na srodku placu. Jesli nie chcesz byc podejrzany, powinienes sie tam regularnie pojawiac.
+		AI_Output(self, hero, "Info_Mod_SNOV_11_Beliarkloster_11_02"); //Za nia kryje sie biblioteka, ukryta gdzies w labiryncie, której nikt od lat nie widzial, bo nikt nie moze jej znalezc przez labirynt.
 	};
 };
 
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_SNOV_11_Interessantes (C_INFO)
 	information	= Info_Mod_SNOV_11_Interessantes_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ist in letzter Zeit was Interessantes passiert?";
+	description	= "Czy cos ciekawego zdarzylo sie ostatnio?";
 };
 
 FUNC INT Info_Mod_SNOV_11_Interessantes_Condition()
@@ -69,9 +69,9 @@ FUNC VOID Info_Mod_SNOV_11_Interessantes_Info()
 {
 	B_Say	(hero, self, "$AMBISNOV04");
 
-	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_00"); //Die ganzen Typen aus dem alten Lager sind noch nicht lange hier.
-	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_01"); //Waren ganz komisch, als Xardas sie angeschleppt hat, wussten ihren eigenen Namen nicht mehr und so weiter.
-	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_02"); //Wahrscheinlich hat er ihnen eine ordentliche Gehirnwäsche verpasst.
+	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_00"); //Wszyscy ci ludzie ze starego magazynu nie byli tu od dawna.
+	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_01"); //Byli bardzo dziwni, kiedy Xardas przywiózl ich do domu, nie znali swojego imienia i tak dalej.
+	AI_Output(self, hero, "Info_Mod_SNOV_11_Interessantes_11_02"); //Prawdopodobnie umyl im mózg.
 };
 
 INSTANCE Info_Mod_SNOV_11_Pickpocket (C_INFO)

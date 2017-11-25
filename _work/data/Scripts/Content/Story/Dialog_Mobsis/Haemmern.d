@@ -18,7 +18,7 @@ INSTANCE PC_Haemmern_CoragonStuhl (C_INFO)
 	information	= PC_Haemmern_CoragonStuhl_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Stuhl anfertigen (5 zurechtgesägte Bretter)";
+	description	= "Zrób krzeslo (5 scietych desek)";
 };
 
 FUNC INT PC_Haemmern_CoragonStuhl_Condition()
@@ -34,7 +34,7 @@ FUNC INT PC_Haemmern_CoragonStuhl_Condition()
 
 FUNC VOID PC_Haemmern_CoragonStuhl_Info()
 {
-	Print	("Stuhl hergestellt!");
+	Print	("Krzeslo zrobione!");
 
 	Npc_RemoveInvItems	(hero, ItMi_Brett_Saege, 5);
 
@@ -51,7 +51,7 @@ INSTANCE PC_Haemmern_MatteoFesttisch (C_INFO)
 	information	= PC_Haemmern_MatteoFesttisch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tisch anfertigen (6 zurechtgesägte Bretter)";
+	description	= "Utworzenie stolu (6 desek sciennych)";
 };
 
 FUNC INT PC_Haemmern_MatteoFesttisch_Condition()
@@ -67,7 +67,7 @@ FUNC INT PC_Haemmern_MatteoFesttisch_Condition()
 
 FUNC VOID PC_Haemmern_MatteoFesttisch_Info()
 {
-	Print	("Tisch hergestellt!");
+	Print	("Tabela wykonana!");
 
 	Npc_RemoveInvItems	(hero, ItMi_Brett_Saege, 5);
 
@@ -84,7 +84,7 @@ INSTANCE PC_Haemmern_Schmuckkasten (C_INFO)
 	information	= PC_Haemmern_Schmuckkasten_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schmuckkästchen anfertigen (Rohfassung des Schmuckkästchens)";
+	description	= "Wykonaj pudelko na bizuterie (wersja surowa pudelka na bizuterie)";
 };
 
 FUNC INT PC_Haemmern_Schmuckkasten_Condition()
@@ -100,7 +100,7 @@ FUNC INT PC_Haemmern_Schmuckkasten_Condition()
 
 FUNC VOID PC_Haemmern_Schmuckkasten_Info()
 {
-	Print	("Schmuckkästchen hergestellt!");
+	Print	("Produkowane pudelko na bizuterie!");
 
 	Npc_RemoveInvItems	(hero, ItMi_Schmuckkasten_Roh, 1);
 
@@ -117,7 +117,7 @@ INSTANCE PC_Haemmern_Bierkrug (C_INFO)
 	information	= PC_Haemmern_Bierkrug_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bierkrug anfertigen (Rohfassung des Schmuckkästchens)";
+	description	= "Stwórz kubek z piwem (sloma wersja pudelka na bizuterie)";
 };
 
 FUNC INT PC_Haemmern_Bierkrug_Condition()
@@ -133,7 +133,7 @@ FUNC INT PC_Haemmern_Bierkrug_Condition()
 
 FUNC VOID PC_Haemmern_Bierkrug_Info()
 {
-	Print	("Bierkrug hergestellt!");
+	Print	("Produkowany kubek piwa!");
 
 	Npc_RemoveInvItems	(hero, ItMi_Bierkrug_Roh, 1);
 
@@ -150,7 +150,7 @@ INSTANCE PC_Haemmern_Karte (C_INFO)
 	information	= PC_Haemmern_Karte_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Karte anfertigen (Rohfassung der Karte)";
+	description	= "Sporzadzic mape (slowna wersja mapy)";
 };
 
 FUNC INT PC_Haemmern_Karte_Condition()
@@ -166,7 +166,7 @@ FUNC INT PC_Haemmern_Karte_Condition()
 
 FUNC VOID PC_Haemmern_Karte_Info()
 {
-	Print	("Karte hergestellt!");
+	Print	("Karta sporzadzona!");
 
 	Npc_RemoveInvItems	(hero, ItMi_Karte_Roh, 1);
 

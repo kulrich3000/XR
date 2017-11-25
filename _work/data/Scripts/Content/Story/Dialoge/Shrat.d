@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Shrat_Hi_Condition()
 
 FUNC VOID Info_Mod_Shrat_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shrat_Hi_02_00"); //Stör nicht meine Ruhe!
+	AI_Output(self, hero, "Info_Mod_Shrat_Hi_02_00"); //Nie zaklócaj mojego spokoju!
 };
 
 INSTANCE Info_Mod_Shrat_Woher (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Shrat_Woher (C_INFO)
 	information	= Info_Mod_Shrat_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso bist du alleine in einer Hütte mitten im Sumpf?";
+	description	= "Dlaczego jestes sam w kabinie w bagnie?";
 };
 
 FUNC INT Info_Mod_Shrat_Woher_Condition()
@@ -39,12 +39,12 @@ FUNC INT Info_Mod_Shrat_Woher_Condition()
 
 FUNC VOID Info_Mod_Shrat_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shrat_Woher_15_00"); //Wieso bist du alleine in einer Hütte mitten im Sumpf?
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_01"); //Weil ich meine Ruhe haben will. Nie hab ich meine Ruhe gehabt.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_02"); //Erst musste ich auf Onars Hof den ganzen Tag schuften, bis ich mit einem seiner Schafe abgehauen bin.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_03"); //Als sie mich in die Kolonie geworfen haben, habe ich gedacht, dass das Sumpflager ganz gemütlich ist.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_04"); //Aber dort durfte ich den ganzen Tag Sumpfkraut stampfen und das war nicht das, was ich wollte.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_05"); //Dann bin abgehauen und hab mir hier eine kleine Hütte gebaut und endlich hab ich meine Ruhe.
+	AI_Output(hero, self, "Info_Mod_Shrat_Woher_15_00"); //Dlaczego jestes sam w kabinie w bagnie?
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_01"); //Poniewaz chce zostac sam. Nigdy nie bylem w pokoju.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_02"); //Najpierw musialem pracowac caly dzien na farmie Onar, az ucieklem z jedna z jego owiec.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_03"); //Kiedy wrzucili mnie do kolonii, pomyslalem, ze obóz bagienny jest przytulny.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_04"); //Ale tam przez caly dzien wolno mi bylo strapac kapuste bagienna i nie tego chcialem.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_05"); //Potem ucieklem i zbudowalem tu mala chatke, a w koncu mam spokój.
 };
 
 INSTANCE Info_Mod_Shrat_Pickpocket (C_INFO)

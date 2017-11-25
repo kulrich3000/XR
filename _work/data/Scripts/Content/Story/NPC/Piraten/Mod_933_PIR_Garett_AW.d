@@ -1,7 +1,7 @@
 INSTANCE Mod_933_PIR_Garett_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Garett";
+	name 		= "nakladka";
 	guild 		= GIL_NONE;
 	id 			= 933;
 	voice 		= 9;

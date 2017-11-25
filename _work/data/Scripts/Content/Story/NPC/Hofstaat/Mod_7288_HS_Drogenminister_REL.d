@@ -1,7 +1,7 @@
 instance Mod_7288_HS_Drogenminister_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Drogenminister"; 
+	name 		= "Królewski minister ds. narkotyków"; 
 	guild 		= GIL_OUT;
 	id 			= 7288;
 	voice 		= 4;

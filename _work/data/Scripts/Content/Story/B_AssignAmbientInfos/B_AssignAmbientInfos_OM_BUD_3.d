@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_3_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_3_Mine_Condition;
 	information	= Info_OM_BUD_3_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Opowiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT Info_OM_BUD_3_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_OM_BUD_3_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_3_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_3_Mine_01_01"); //Wir müssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
+	AI_Output(other,self,"Info_OM_BUD_3_Mine_15_00"); //Opowiedz mi o mojej kopalni.
+	AI_Output(self,other,"Info_OM_BUD_3_Mine_01_01"); //Wszyscy musimy pracowac. Przez tygodnie bez swiatla dziennego. Nie ma ucieczki. Jedyna wolnoscia jest smierc.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_3_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_3_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Kto ma w tym cos do powiedzenia?";
 };                       
 
 FUNC INT Info_OM_BUD_3_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_3_WichtigePersonen_01_01"); //Kurgan ist der Chef der Mine. Er hat die Kontrolle über die Mine und befehligt alle Wachen.
+	AI_Output(other,self,"Info_OM_BUD_3_WichtigePersonen_15_00"); //Kto ma cos do powiedzenia?
+	AI_Output(self,other,"Info_OM_BUD_3_WichtigePersonen_01_01"); //Kurgan jest szefem kopalni. On kontroluje kopalnie i dowodzi wszystkimi straznikami.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_3_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_3_DieLage_Condition;
 	information	= Info_OM_BUD_3_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_OM_BUD_3_DieLage_Condition()
@@ -96,9 +96,9 @@ FUNC INT Info_OM_BUD_3_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_3_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_01"); //Tja, also mein Rücken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin müde.
-	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_02"); //Und das ständige Geräusch der Spitzhacken. Ich werde noch wahnsinnig.
+	AI_Output(other,self,"Info_OM_BUD_3_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_01"); //Cóz, boli mnie plecy, wypadaja rece, gardlo jest suche i jestem zmeczony.
+	AI_Output(self,other,"Info_OM_BUD_3_DieLage_01_02"); //I ciagly dzwiek pickaxów. Bede szalony.
 };
 
 INSTANCE Info_Mod_OM_BUD_3_Pickpocket (C_INFO)

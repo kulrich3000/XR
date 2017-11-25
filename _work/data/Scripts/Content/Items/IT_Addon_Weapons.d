@@ -40,7 +40,7 @@
 //-------------------------------------------------------
 INSTANCE ItMW_Addon_Knife01 (C_Item)
 {	
-	name 				=	"Wolfsmesser";  
+	name 				=	"wilki";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -68,7 +68,7 @@ INSTANCE ItMW_Addon_Knife01 (C_Item)
 };
 INSTANCE ItMW_Addon_Knife01_Geschaerft (C_Item)
 {	
-	name 				=	"Wolfsmesser (geschärft)";  
+	name 				=	"Nóz Wolf (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -96,7 +96,7 @@ INSTANCE ItMW_Addon_Knife01_Geschaerft (C_Item)
 };
 instance Fluegel (C_Item)
 {
-	name 				=	"Flügel";
+	name 				=	"fortepiany";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -123,7 +123,7 @@ instance Fluegel (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Stab01 (C_Item)
 {	
-	name 				=	"Feuerstab";  
+	name 				=	"ognisko";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -143,7 +143,7 @@ INSTANCE ItMW_Addon_Stab01 (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_01.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF1";
 
-	description			= 	"Stab der Feuermagier";
+	description			= 	"Pracownicy strazy pozarnej";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -152,7 +152,7 @@ INSTANCE ItMW_Addon_Stab01 (C_Item)
 // *****************************************************
 INSTANCE ItMW_BeliarStab (C_Item)
 {	
-	name 				=	"Dunkelstab";  
+	name 				=	"ciemny drazek";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -172,7 +172,7 @@ INSTANCE ItMW_BeliarStab (C_Item)
 	visual 				=	"ItMW_Schwarzmagierstab.3DS"; 
 	effect				= 	"SPELLFX_FIRESWORDBLACK";
 
-	description			= 	"Stab der Schwarzmagier";
+	description			= 	"Personel czarnego maga";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -181,7 +181,7 @@ INSTANCE ItMW_BeliarStab (C_Item)
 // *****************************************************
 INSTANCE DreiGoetterStab (C_Item)
 {	
-	name 				=	"Drei-Götter-Stab";  
+	name 				=	"Trzy Bogowie Rodowie";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -208,7 +208,7 @@ INSTANCE DreiGoetterStab (C_Item)
 // *****************************************************
 INSTANCE ItMW_Heilmagierstab (C_Item)
 {	
-	name 				=	"Heilstab";  
+	name 				=	"personel leczniczy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -228,7 +228,7 @@ INSTANCE ItMW_Heilmagierstab (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_01.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF1";
 
-	description			= 	"Stab der Heilmagier";
+	description			= 	"Personel magów uzdrawiajacych";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -237,7 +237,7 @@ INSTANCE ItMW_Heilmagierstab (C_Item)
 // *****************************************************
 INSTANCE ItMW_PyrmansStab (C_Item)
 {	
-	name 				=	"Pyrmans Stab";  
+	name 				=	"Personel Pyrmana";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -254,7 +254,7 @@ INSTANCE ItMW_PyrmansStab (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_01.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF1";
 
-	description			= 	"Stab Pyrmans";
+	description			= 	"Rod Pyrman";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -263,7 +263,7 @@ INSTANCE ItMW_PyrmansStab (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Stab02 (C_Item)
 {	
-	name 				=	"Zauberstab";  
+	name 				=	"rózdzka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -324,7 +324,7 @@ FUNC VOID UnEquip_Zauberstab()
 // *****************************************************
 INSTANCE ItMW_Addon_Stab03 (C_Item)
 {	
-	name 				=	"Wasserstab";  
+	name 				=	"patelnia";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -344,7 +344,7 @@ INSTANCE ItMW_Addon_Stab03 (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF1";
 
-	description			= 	"Stab der Wassermagier";
+	description			= 	"Personel magów wody";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -353,7 +353,7 @@ INSTANCE ItMW_Addon_Stab03 (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Stab04 (C_Item)
 {	
-	name 				=	"Ulthars Stab";  
+	name 				=	"Personel Ulthara";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -373,7 +373,7 @@ INSTANCE ItMW_Addon_Stab04 (C_Item)
 	visual 				=	"ItMW_MageStaff_Good_2H_02.3DS"; 
 	effect				=	"SPELLFX_MAGESTAFF4";
 
-	description			= 	"Ulthar verzauberte diesen Stab";
+	description			= 	"Ulthar oczarowal ten personel";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Mana_needed;				COUNT[3]	= cond_value[2];
@@ -383,7 +383,7 @@ INSTANCE ItMW_Addon_Stab04 (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Stab05 (C_Item)
 {	
-	name 				=	"Taifun";
+	name 				=	"tajfun";
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
 	material 			=	MAT_WOOD;
@@ -411,7 +411,7 @@ INSTANCE ItMW_Addon_Stab05 (C_Item)
 };
 INSTANCE ItMW_Addon_Stab05_Geschaerft (C_Item)
 {	
-	name 				=	"Taifun (geschärft)";
+	name 				=	"Typhoon (na ostrzony)";
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
 	material 			=	MAT_WOOD;
@@ -440,7 +440,7 @@ INSTANCE ItMW_Addon_Stab05_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_1h_01 (C_Item) 
 {	
-	name 				=	"Machete";
+	name 				=	"machete";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -470,7 +470,7 @@ INSTANCE ItMW_Addon_Hacker_1h_01 (C_Item)
 };
 INSTANCE ItMW_Addon_Hacker_1h_01_Geschaerft (C_Item) 
 {	
-	name 				=	"Machete (geschärft)";
+	name 				=	"Machete (naostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -501,7 +501,7 @@ INSTANCE ItMW_Addon_Hacker_1h_01_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_1h_02 (C_Item) 
 {	
-	name 				=	"Alte Machete";
+	name 				=	"Stare Machete";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -529,7 +529,7 @@ INSTANCE ItMW_Addon_Hacker_1h_02 (C_Item)
 };
 INSTANCE ItMW_Addon_Hacker_1h_02_Geschaerft (C_Item) 
 {	
-	name 				=	"Alte Machete (geschärft)";
+	name 				=	"Stare makhety (naostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -558,7 +558,7 @@ INSTANCE ItMW_Addon_Hacker_1h_02_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_2h_01 (C_Item) 
 {	
-	name 				=	"Riesenmachete";
+	name 				=	"olbrzymia maszyna";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -588,7 +588,7 @@ INSTANCE ItMW_Addon_Hacker_2h_01 (C_Item)
 };
 INSTANCE ItMW_Addon_Hacker_2h_01_Geschaerft (C_Item) 
 {	
-	name 				=	"Riesenmachete (geschärft)";
+	name 				=	"Giant Machete (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -619,7 +619,7 @@ INSTANCE ItMW_Addon_Hacker_2h_01_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMW_Addon_Hacker_2h_02 (C_Item) 
 {	
-	name 				=	"Alte Riesenmachete";
+	name 				=	"Stara maszyna gigantyczna";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -647,7 +647,7 @@ INSTANCE ItMW_Addon_Hacker_2h_02 (C_Item)
 };
 INSTANCE ItMW_Addon_Hacker_2h_02_Geschaerft (C_Item) 
 {	
-	name 				=	"Alte Riesenmachete (geschärft)";
+	name 				=	"Stare Karkonosze Machete (osloniete)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -676,7 +676,7 @@ INSTANCE ItMW_Addon_Hacker_2h_02_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMW_Chemo_Unloaded (C_Item)
 {	
-	name 				=	"Chemische Keule";  
+	name 				=	"Klub chemiczny";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -703,7 +703,7 @@ INSTANCE ItMW_Chemo_Unloaded (C_Item)
 // *****************************************************
 INSTANCE ItMW_Chemo (C_Item)
 {	
-	name 				=	"Chemische Keule";  
+	name 				=	"Klub chemiczny";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -726,7 +726,7 @@ INSTANCE ItMW_Chemo (C_Item)
 	
 	TEXT[0]				= NAME_Damage;					COUNT[0]	= damageTotal;
 	
-	TEXT[1]				= "Diese Keule ist besonders gut für den Kampf gegen Insekten und andere Parasiten geeignet.";
+	TEXT[1]				= "Klub ten jest szczególnie odpowiedni do zwalczania owadów i innych pasozytów.";
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
@@ -734,7 +734,7 @@ INSTANCE ItMW_Chemo (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Keule_1h_01 (C_Item)
 {	
-	name 				=	"Windknecht";  
+	name 				=	"wiatrakowiec";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -765,7 +765,7 @@ INSTANCE ItMW_Addon_Keule_1h_01 (C_Item)
 // *****************************************************
 INSTANCE ItMW_ErzKeule (C_Item)
 {	
-	name 				=	"erzüberzogener Windknecht";  
+	name 				=	"Wytwarzacz wiatrów z pokladu rudy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -792,7 +792,7 @@ INSTANCE ItMW_ErzKeule (C_Item)
 // *****************************************************
 INSTANCE ItMW_UnconsciousKnueppel (C_Item)
 {	
-	name 				=	"Schlafknüppel";  
+	name 				=	"spic";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -820,7 +820,7 @@ INSTANCE ItMW_UnconsciousKnueppel (C_Item)
 // *****************************************************
 INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 {	
-	name 				=	"Sturmknecht";  
+	name 				=	"napastnik";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -852,7 +852,7 @@ INSTANCE ItMW_Addon_Keule_2h_01 (C_Item)//Sturmknecht 2h Holzkeule
 // *****************************************************
 INSTANCE ItMW_GranmarKeule (C_Item)//Sturmknecht 2h Holzkeule
 {	
-	name 				=	"erzübrzogener Sturmknecht";  
+	name 				=	"ruda pobrana";  
 
 	mainflag 			=	ITEM_KAT_NONE;	
 	material 			=	MAT_WOOD;
@@ -877,7 +877,7 @@ INSTANCE ItMW_GranmarKeule (C_Item)//Sturmknecht 2h Holzkeule
 // *****************************************************
 INSTANCE ItMW_KGErzwaffe (C_Item)//Sturmknecht 2h Holzkeule
 {	
-	name 				=	"Königliche Erzwaffe";  
+	name 				=	"Bron królewska rudy";  
 
 	mainflag 			=	ITEM_KAT_NONE;	
 	material 			=	MAT_WOOD;
@@ -902,7 +902,7 @@ INSTANCE ItMW_KGErzwaffe (C_Item)//Sturmknecht 2h Holzkeule
 // *****************************************************
 INSTANCE ItMw_FrancisDagger_Mis (C_Item)
 {	
-	name 				=	"Guter Dolch";  
+	name 				=	"Dobry sztylet";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -931,7 +931,7 @@ INSTANCE ItMw_FrancisDagger_Mis (C_Item)
 };
 INSTANCE ItMw_FrancisDagger_Mis_Geschaerft (C_Item)
 {	
-	name 				=	"Guter Dolch (geschärft)";  
+	name 				=	"Dobry sztylet (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -962,7 +962,7 @@ INSTANCE ItMw_FrancisDagger_Mis_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_RangerStaff_Addon (C_Item)
 {	
-	name 				=	"Kampfstab des 'Rings des Wassers'";  
+	name 				=	"Sztab Bojowy Pierscien Wodny";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -990,7 +990,7 @@ INSTANCE ItMw_RangerStaff_Addon (C_Item)
 
 INSTANCE ItMw_Addon_PIR2hAxe (C_Item)
 {	
-	name 				=	"Plankenbrecher";  
+	name 				=	"kruszarki do desek tarcicy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1015,7 +1015,7 @@ INSTANCE ItMw_Addon_PIR2hAxe (C_Item)
 
 INSTANCE ItMw_BonesAxt (C_Item)
 {	
-	name 				=	"Bones Plankenbrecher";  
+	name 				=	"Kruszarka do desek kamiennych";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1039,7 +1039,7 @@ INSTANCE ItMw_BonesAxt (C_Item)
 };
 INSTANCE ItMw_Addon_PIR2hAxe_Geschaerft (C_Item)
 {	
-	name 				=	"Plankenbrecher (geschärft)";  
+	name 				=	"Kruszarka do desek (do ostrzenia)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1064,7 +1064,7 @@ INSTANCE ItMw_Addon_PIR2hAxe_Geschaerft (C_Item)
 //*********************************************************
 INSTANCE ItMw_Addon_PIR2hSword (C_Item)
 {	
-	name 				=	"Enterschwert";  
+	name 				=	"kuter";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1088,7 +1088,7 @@ INSTANCE ItMw_Addon_PIR2hSword (C_Item)
 };
 INSTANCE ItMw_Addon_PIR2hSword_Geschaerft (C_Item)
 {	
-	name 				=	"Enterschwert (geschärft)";  
+	name 				=	"Miecz do ciecia ostrzony";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1113,7 +1113,7 @@ INSTANCE ItMw_Addon_PIR2hSword_Geschaerft (C_Item)
 //*********************************************************
 INSTANCE ItMw_Addon_PIR1hAxe (C_Item)
 {	
-	name 				=	"Enteraxt";  
+	name 				=	"enterakson";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1137,7 +1137,7 @@ INSTANCE ItMw_Addon_PIR1hAxe (C_Item)
 };
 INSTANCE ItMw_Addon_PIR1hAxe_Geschaerft (C_Item)
 {	
-	name 				=	"Enteraxt (geschärft)";  
+	name 				=	"Enteraxt (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1162,7 +1162,7 @@ INSTANCE ItMw_Addon_PIR1hAxe_Geschaerft (C_Item)
 //*********************************************************
 INSTANCE ItMw_Addon_PIR1hSword (C_Item)
 {	
-	name 				=	"Entermesser";  
+	name 				=	"kordelas";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1186,7 +1186,7 @@ INSTANCE ItMw_Addon_PIR1hSword (C_Item)
 };
 INSTANCE ItMw_Addon_PIR1hSword_Geschaerft (C_Item)
 {	
-	name 				=	"Entermesser (geschärft)";  
+	name 				=	"Klasa tnaca (naostrzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1212,7 +1212,7 @@ INSTANCE ItMw_Addon_PIR1hSword_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_Addon_BanditTrader (C_Item)
 {	
-	name 				=	"Degen der Banditen";  
+	name 				=	"Epee of the Bandits";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1230,7 +1230,7 @@ INSTANCE ItMw_Addon_BanditTrader (C_Item)
 
 	description			= name;
 
-	TEXT[1]				= 	"Der Buchstabe 'F.' ist in den Knauf geritzt.";
+	TEXT[1]				= 	"Litera 'F. jest wyrzezbiony w bombie.";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Dex_needed;				COUNT[3]	= cond_value[2];
@@ -1239,7 +1239,7 @@ INSTANCE ItMw_Addon_BanditTrader (C_Item)
 };
 INSTANCE ItMw_Addon_BanditTrader_Geschaerft (C_Item)
 {	
-	name 				=	"Degen der Banditen (geschärft)";  
+	name 				=	"Epee bandytów (ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1257,7 +1257,7 @@ INSTANCE ItMw_Addon_BanditTrader_Geschaerft (C_Item)
 
 	description			= name;
 
-	TEXT[1]				= 	"Der Buchstabe 'F.' ist in den Knauf geritzt.";
+	TEXT[1]				= 	"Litera 'F. jest wyrzezbiony w bombie.";
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Dex_needed;				COUNT[3]	= cond_value[2];
@@ -1269,7 +1269,7 @@ INSTANCE ItMw_Addon_BanditTrader_Geschaerft (C_Item)
 // *******************
 INSTANCE ItMw_Addon_Betty (C_Item)
 {	
-	name 				=	"Betty";  
+	name 				=	"beta";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE|ITEM_MISSION;	
@@ -1295,7 +1295,7 @@ INSTANCE ItMw_Addon_Betty (C_Item)
 };
 INSTANCE ItMw_Addon_Betty_Geschaerft (C_Item)
 {	
-	name 				=	"Betty (geschärft)";  
+	name 				=	"Zaklad (ostrozony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE|ITEM_MISSION;	
@@ -1327,7 +1327,7 @@ INSTANCE ItMw_Addon_Betty_Geschaerft (C_Item)
 
 instance ItRw_Addon_MagicArrow (C_Item)
 {
-	name 				=	"Magischer Pfeil";
+	name 				=	"Magiczna strzalka";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW | ITEM_MULTI;
@@ -1352,7 +1352,7 @@ instance ItRw_Addon_MagicArrow (C_Item)
 
 instance ItRw_IceArrow (C_Item)
 {
-	name 				=	"Eispfeil";
+	name 				=	"strzalka lodowa";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW | ITEM_MULTI;
@@ -1378,7 +1378,7 @@ instance ItRw_IceArrow (C_Item)
 
 instance ItRw_Addon_FireArrow (C_Item)
 {
-	name 				=	"Feuerpfeil";
+	name 				=	"strzalka ognia";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW | ITEM_MULTI;
@@ -1406,7 +1406,7 @@ instance ItRw_Addon_FireArrow (C_Item)
 
 instance ItRw_Addon_MagicBolt (C_Item)
 {
-	name 				=	"Magischer Bolzen";
+	name 				=	"Magiczny rygiel";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1430,7 +1430,7 @@ instance ItRw_Addon_MagicBolt (C_Item)
 
 instance ItRw_IceBolt (C_Item)
 {
-	name 				=	"Eisbolzen";
+	name 				=	"styki lodowe";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1454,7 +1454,7 @@ instance ItRw_IceBolt (C_Item)
 
 instance ItRw_Addon_FireBolt (C_Item)
 {
-	name 				=	"Feuerbolzen";
+	name 				=	"sruby pozarowe";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;

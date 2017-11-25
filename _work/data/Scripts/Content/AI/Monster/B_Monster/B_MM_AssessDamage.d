@@ -11,7 +11,7 @@ func void B_MM_AssessDamage ()
 	&& (!Mod_SleeperHint) {
 		Mod_SleeperHint = TRUE;
 		
-		B_LogEntry(TOPIC_MOD_PAL_FI, "Es scheint als könnte ich mit normalen Mitteln diesem Schläfer-Konstrukt nichts anhaben. Da es sich um eine Maschine handelt, kann ich vielleicht irgendwie seine Energiezufuhr abschneiden... Ich sollte mich hier umschauen... Und zwar schnell...");
+		B_LogEntry(TOPIC_MOD_PAL_FI, "Wydaje mi sie, ze nie moge nic zrobic z ta konstrukcja podkladu w normalnych warunkach. Poniewaz jest to maszyna, móglbym jakos odciac jej doplyw energii..... Tutaj powinienem sie rozejrzec..... I szybko.....");
 	};
 
 	if (self.aivar[AIV_Damage] == self.attribute[ATR_HITPOINTS] + 1)

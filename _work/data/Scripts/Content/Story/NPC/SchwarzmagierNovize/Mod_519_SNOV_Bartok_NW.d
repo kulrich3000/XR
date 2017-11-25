@@ -1,7 +1,7 @@
 INSTANCE Mod_519_SNOV_Bartok_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bartok"; 
+	name 		= "wasy"; 
 	guild 		= GIL_OUT;
 	id 			= 519;
 	voice 		= 4;

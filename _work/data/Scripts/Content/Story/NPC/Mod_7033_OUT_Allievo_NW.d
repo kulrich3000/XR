@@ -1,7 +1,7 @@
 INSTANCE Mod_7033_OUT_Allievo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Allievo"; 
+	name 		= "alievo"; 
 	guild 		= GIL_OUT;
 	id 			= 7033;
 	voice 		= 13;

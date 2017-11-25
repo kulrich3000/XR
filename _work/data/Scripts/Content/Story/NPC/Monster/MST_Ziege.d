@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Ziege(C_Npc)			
 {
 	//----- Maonster ----
-	name							=	"Wildziege";
+	name							=	"koza";
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZIEGE;
 	level							=	1;
@@ -104,7 +104,7 @@ INSTANCE Canyon_Ziege	(Mst_Default_Ziege)
 
 INSTANCE Canyon_Ziege_Euter	(Mst_Default_Ziege)
 {
-	name	=	"Wildziege mit fetten Eutern";
+	name	=	"Dzikie kozy z wymionami tluszczu";
 	B_SetVisuals_CanyonZiege();
 	Npc_SetToFistMode(self);
 	start_aistate				= ZS_MM_AllScheduler;

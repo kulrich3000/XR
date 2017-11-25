@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sterling_Buddler (C_INFO)
 	information	= Info_Mod_Sterling_Buddler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Buddler?";
+	description	= "Czy jestes Buddler?";
 };
 
 FUNC INT Info_Mod_Sterling_Buddler_Condition()
@@ -31,7 +31,7 @@ FUNC VOID Info_Mod_Sterling_Buddler_Info()
 	AI_Output(hero, self, "Info_Mod_Sterling_Buddler_15_09"); //Gut, was willst du haben? 
 	AI_Output(self, hero, "Info_Mod_Sterling_Buddler_02_10"); //Ich denke 200 Gold und fünf Laibe Brot reichen mir für den Anfang.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling arbeitet in der Mine, wenn ich für seine Reisekosten aufkomme. Er will 200 Gold und fünf Laibe Brot.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling pracuje w kopalni, kiedy pokrywam jego koszty podrózy. Chce 200 zlota i piec bochenków chleba.");
 };
 
 INSTANCE Info_Mod_Sterling_Buddler2 (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Sterling_Buddler2 (C_INFO)
 	information	= Info_Mod_Sterling_Buddler2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Sachen.";
+	description	= "Oto Twoje rzeczy.";
 };
 
 FUNC INT Info_Mod_Sterling_Buddler2_Condition()
@@ -57,17 +57,17 @@ FUNC INT Info_Mod_Sterling_Buddler2_Condition()
 
 FUNC VOID Info_Mod_Sterling_Buddler2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_00"); //Hier hast du die Sachen.
+	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_00"); //Oto Twoje rzeczy.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 200);
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 5);
 
-	B_ShowGivenThings	("200 Gold und 5 Brote gegeben");
+	B_ShowGivenThings	("200 zlota i 5 dodanych chlebów");
 
-	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_01"); //Warte einfach am Eingang der Mine auf mich.
-	AI_Output(self, hero, "Info_Mod_Sterling_Buddler2_02_02"); //Bin schon auf dem Weg.
+	AI_Output(hero, self, "Info_Mod_Sterling_Buddler2_15_01"); //Po prostu czekam na mnie przy wejsciu do kopalni.
+	AI_Output(self, hero, "Info_Mod_Sterling_Buddler2_02_02"); //Jestem na drodze.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling ist auf dem Weg ins Minental.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Sterling jest w drodze do Minentala.");
 
 	B_GivePlayerXP	(50);
 

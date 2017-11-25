@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Matt_Hi (C_INFO)
 	information	= Info_Mod_Matt_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Matt_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Matt_Hi_Condition()
 FUNC VOID Info_Mod_Matt_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Matt_Hi_10_01"); //Ich bin Matt.
+	AI_Output(self, hero, "Info_Mod_Matt_Hi_10_01"); //Jestem Mattem.
 
 	AI_StopProcessInfos	(self);
 };
@@ -44,19 +44,19 @@ FUNC INT Info_Mod_Matt_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Matt_Befreiung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_00"); //Was willst du?
-	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_01"); //Ich soll euch Jungs aushelfen, hat Greg gesagt.
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_02"); //Dann hab' ich was zu tun für dich.
-	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_03"); //Um was geht's?
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_04"); //Ich habe letztens diese Insel da vorne im Meer erkundet. Auf einmal kamen ein paar Lurker, die mich als Mittagsmenü haben wollten.
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_05"); //Dann bin ich ins Wasser gesprungen und Richtung Strand getaucht und habe dabei drei Säcke voller Gold verloren, die nun auf dem Meeresgrund liegen.
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_06"); //Ich will, dass du mir diese wieder besorgst.
-	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_07"); //Von mir aus, ich geh dann mal.
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_08"); //Viel Erfolg.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_00"); //Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_01"); //Mialem Ci pomóc, powiedzial Greg.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_02"); //Wtedy bede mial dla Ciebie cos do zrobienia.
+	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_03"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_04"); //Ostatnio odkrywam tamta wyspe w oceanie. Nagle kilka Lurkerów przyszlo po mnie na lunch.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_05"); //Potem wskoczylem do wody i zanurkowalem w kierunku plazy i stracilem trzy worki zlota, które leza teraz na dnie morza.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_06"); //Chce, abys odebral mi ja z powrotem.
+	AI_Output(hero, self, "Info_Mod_Matt_Befreiung_15_07"); //Dobrze, bede szedl.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung_10_08"); //Powodzenia.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRMATT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRMATT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRMATT, "Der Pirat Matt hat seine drei Goldsäcke im Meer verloren. Ich soll sie ihm wiederbringen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRMATT, "Pirat Matt stracil trzy zlote worki w morzu. Mam go z powrotem przyniesc.");
 
 	Wld_InsertItem	(ItMi_MattsGoldsack, "FP_ITEM_GOLDSACK_MATT_01");
 	Wld_InsertItem	(ItMi_MattsGoldsack, "FP_ITEM_GOLDSACK_MATT_02");
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Matt_Befreiung2 (C_INFO)
 	information	= Info_Mod_Matt_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe dein Gold gefunden.";
+	description	= "Zloto znalazlem.";
 };
 
 FUNC INT Info_Mod_Matt_Befreiung2_Condition()
@@ -85,22 +85,22 @@ FUNC INT Info_Mod_Matt_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Matt_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Matt_Befreiung2_15_00"); //Ich habe dein Gold gefunden.
+	AI_Output(hero, self, "Info_Mod_Matt_Befreiung2_15_00"); //Zloto znalazlem.
 
 	B_GiveInvItems	(hero, self, ItMi_MattsGoldsack, 3);
 
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung2_10_01"); //Ich danke dir. Hier nimm das als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung2_10_01"); //Dziekuje, dziekuje. Tutaj, wez to za nagrode.
 
 	B_GiveInvItems	(self, hero, ItPo_Perm_Health, 1);
 
-	AI_Output(hero, self, "Info_Mod_Matt_Befreiung2_15_02"); //Danke, den Trank kann ich sicher gut gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Matt_Befreiung2_10_03"); //Das hoffe ich doch.
+	AI_Output(hero, self, "Info_Mod_Matt_Befreiung2_15_02"); //Jestem pewien, ze móglbym uzyc tego eliksiru.
+	AI_Output(self, hero, "Info_Mod_Matt_Befreiung2_10_03"); //Cóz, mam taka nadzieje.
 
 	Mod_Piratenbefreiung += 1;
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRMATT, TOPIC_MOD_BEL_PIRATENLAGER, "Matt hat seine Goldsäcke wieder. Sein Lohn für mich war ein Elixier des Lebens.", "Matt habe ich nun geholfen.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRMATT, TOPIC_MOD_BEL_PIRATENLAGER, "Matt's odzyskal zlote torby. Jego nagroda dla mnie byla eliksir zycia.", "Pomagalem Mattowi teraz.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRMATT, LOG_SUCCESS);
 };
 

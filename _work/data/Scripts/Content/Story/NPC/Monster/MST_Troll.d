@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Troll(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Troll";
+	name							=	"troll";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -123,7 +123,7 @@ INSTANCE Krauttroll	(Mst_Default_Troll)
 
 INSTANCE SilverTroll	(Mst_Default_Troll)
 {
-	name = "Silbertroll";
+	name = "troll";
 
 	Mdl_SetModelScale(self, 1.5, 1.5, 1.5);
 
@@ -149,7 +149,7 @@ INSTANCE Troll_s	(Mst_Default_Troll)
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_HÖHLE;
 	level							=	250; //30
 
-	name = "Höhlentroll";
+	name = "Jaskinia Troll";
 
 	protection	[PROT_POINT]		=	IMMUNE;	
 	protection	[PROT_FLY]			=	IMMUNE;
@@ -163,7 +163,7 @@ INSTANCE Troll_s_Pat	(Mst_Default_Troll)
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL_HÖHLE;
 	level							=	250; //30
 
-	name = "Höhlentroll";
+	name = "Jaskinia Troll";
 
 	protection	[PROT_POINT]		=	IMMUNE;	
 	protection	[PROT_FLY]			=	IMMUNE;
@@ -185,7 +185,7 @@ INSTANCE Troll_Howy	(Mst_Default_Troll)
 INSTANCE YTroll	(Mst_Default_Troll)
 {
 	level							=	25;
-	name							=	"Junger Troll";
+	name							=	"Mloda rolka";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	75;	//FlyDamage
 	attribute	[ATR_DEXTERITY]		=	50;

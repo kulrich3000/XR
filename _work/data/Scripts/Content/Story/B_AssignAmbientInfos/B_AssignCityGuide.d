@@ -9,34 +9,34 @@ func void B_AddCityGuideChoices()
 	
 	if (!C_IsQuarterNearest(self, Q_UNTERSTADT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "In die Unterstadt.", DIA_CITYGUIDE_UNTERSTADT);
+		Info_AddChoice (DIA_CITYGUIDE, "Do dolnego miasta.", DIA_CITYGUIDE_UNTERSTADT);
 	};
 	if (!C_IsQuarterNearest(self, Q_OBERSTADT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Ins obere Viertel.", DIA_CITYGUIDE_OBERSTADT);
+		Info_AddChoice (DIA_CITYGUIDE, "Do górnej cwierctuszy.", DIA_CITYGUIDE_OBERSTADT);
 	};
 	if (!C_IsQuarterNearest(self, Q_TEMPEL))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Zum Adanos-Tempel", DIA_CITYGUIDE_TEMPEL);
+		Info_AddChoice (DIA_CITYGUIDE, "Do Swiatyni Adanos", DIA_CITYGUIDE_TEMPEL);
 	};
 	if (!C_IsQuarterNearest(self, Q_MARKT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Zum Marktplatz.", DIA_CITYGUIDE_MARKT);
+		Info_AddChoice (DIA_CITYGUIDE, "Na targowisko.", DIA_CITYGUIDE_MARKT);
 	};
 	if (!C_IsQuarterNearest(self, Q_GALGEN))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Zum Galgenplatz", DIA_CITYGUIDE_GALGEN);
+		Info_AddChoice (DIA_CITYGUIDE, "Do szubienicy", DIA_CITYGUIDE_GALGEN);
 	};
 	if (!C_IsQuarterNearest(self, Q_KASERNE))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Zur Kaserne.", DIA_CITYGUIDE_KASERNE);
+		Info_AddChoice (DIA_CITYGUIDE, "Do koszar.", DIA_CITYGUIDE_KASERNE);
 	};
 	if (!C_IsQuarterNearest(self, Q_HAFEN))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Ins Hafenviertel.", DIA_CITYGUIDE_HAFEN);
+		Info_AddChoice (DIA_CITYGUIDE, "Do brzegu.", DIA_CITYGUIDE_HAFEN);
 	};
 	
-	Info_AddChoice (DIA_CITYGUIDE, "Danke - das war alles, was ich wissen wollte!", DIA_CITYGUIDE_BACK);
+	Info_AddChoice (DIA_CITYGUIDE, "Dziekuje - to wszystko, co chcialem wiedziec!", DIA_CITYGUIDE_BACK);
 };
 
 INSTANCE DIA_CITYGUIDE (C_INFO)
@@ -45,7 +45,7 @@ INSTANCE DIA_CITYGUIDE (C_INFO)
 	condition	= DIA_CITYGUIDE_Condition;
 	information	= DIA_CITYGUIDE_Info;
 	permanent	= TRUE;
-	description = "Kannst du mir helfen, mich hier zurechtzufinden?";
+	description = "Czy mozesz pomóc mi znalezc moja droge tutaj?";
 };                       
 
 FUNC INT DIA_CITYGUIDE_Condition()
@@ -55,7 +55,7 @@ FUNC INT DIA_CITYGUIDE_Condition()
 
 FUNC VOID DIA_CITYGUIDE_Info()
 {	
-	AI_Output (other, self, "DIA_CITYGUIDE_15_00"); //Kannst du mir helfen, mich hier zurechtzufinden?
+	AI_Output (other, self, "DIA_CITYGUIDE_15_00"); //Czy mozesz pomóc mi znalezc moja droge tutaj?
 	
 	// ------ Du bist jetzt ------
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
@@ -94,13 +94,13 @@ FUNC VOID DIA_CITYGUIDE_Info()
 
 func void DIA_CITYGUIDE_BACK()
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Danke - das war alles, was ich wissen wollte!
+	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Dziekuje - to wszystko, co chcialem wiedziec!
 	Info_ClearChoices (DIA_CITYGUIDE);
 };
 	
 func void DIA_CITYGUIDE_UNTERSTADT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //Wie komme ich in die Unterstadt?
+	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //Jak dotrzec do dolnego miasta?
 	
 	if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
@@ -136,7 +136,7 @@ func void DIA_CITYGUIDE_UNTERSTADT()
 
 func void DIA_CITYGUIDE_OBERSTADT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_OBERSTADT_15_00"); //Wie komme ich ins obere Viertel?
+	AI_Output (other, self, "DIA_CITYGUIDE_OBERSTADT_15_00"); //Jak dojsc do górnej cwierctuszy?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -177,7 +177,7 @@ func void DIA_CITYGUIDE_OBERSTADT()
 	
 func void DIA_CITYGUIDE_TEMPEL()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_TEMPEL_15_00"); //Ich suche den Tempel.
+	AI_Output (other, self, "DIA_CITYGUIDE_TEMPEL_15_00"); //Szukam swiatyni.
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -212,7 +212,7 @@ func void DIA_CITYGUIDE_TEMPEL()
 	
 func void DIA_CITYGUIDE_MARKT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Wo ist der Marktplatz?
+	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Gdzie jest rynek?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -249,7 +249,7 @@ func void DIA_CITYGUIDE_MARKT()
 	
 func void DIA_CITYGUIDE_GALGEN()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_GALGEN_15_00"); //Wie komme ich zum Galgenplatz?
+	AI_Output (other, self, "DIA_CITYGUIDE_GALGEN_15_00"); //Jak dotrzec do galerii?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -286,7 +286,7 @@ func void DIA_CITYGUIDE_GALGEN()
 	
 func void DIA_CITYGUIDE_KASERNE()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Wo ist die Kaserne?
+	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Gdzie sa koszary?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -327,7 +327,7 @@ func void DIA_CITYGUIDE_KASERNE()
 	
 func void DIA_CITYGUIDE_HAFEN()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Wo ist das Hafenviertel?
+	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Gdzie jest nabrzeze?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{

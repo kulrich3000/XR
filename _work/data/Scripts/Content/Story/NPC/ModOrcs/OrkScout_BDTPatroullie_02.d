@@ -1,7 +1,7 @@
 INSTANCE OrkScout_BDTPatroullie_02 (Mst_Default_OrcScout)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Harcerka ork";
 	guild							=	GIL_ORC;
 	id			= 	10010;
 	voice							=	18;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Patient_Endres (C_INFO)
 	information	= Info_Mod_Patient_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Stimmt es, dass der Heiler bei dir war, als Endres ermordet (...)";
+	description	= "Czy to prawda, ze uzdrowiciel byl z wami, kiedy Endres zostal zamordowany (....)? )";
 };
 
 FUNC INT Info_Mod_Patient_Endres_Condition()
@@ -19,11 +19,11 @@ FUNC INT Info_Mod_Patient_Endres_Condition()
 
 FUNC VOID Info_Mod_Patient_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_Endres_15_00"); //Stimmt es, dass der Heiler bei dir war, als Endres ermordet wurde?
-	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_01"); //Ich kann es nicht genau sagen. An dem Tag bin ich komischerweise mittags eingeschlafen und erst abends wieder aufgewacht.
-	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_02"); //Aber der Heiler war da, bevor ich eingeschlafen und nachdem ich aufgewacht bin.
+	AI_Output(hero, self, "Info_Mod_Patient_Endres_15_00"); //Czy to prawda, ze uzdrowiciel byl z Toba, kiedy Endres zostal zamordowany?
+	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_01"); //Nie moge powiedziec na pewno. Tego dnia zasnalem w poludnie i tylko obudzilem sie wieczorem.
+	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_02"); //Lecz uzdrowiciel byl tam zanim zasnalem i po obudzeniu sie obudzilem.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Der Patient hat einen Großteil des Tages 'komischerweise' verschlafen. Das Alibi des Heilers ist also löchrig.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Pacjent przeszedl przez wiekszosc dnia dosc dziwnie. Wiec alibi uzdrowiciela jest kiepski.");
 };
 
 INSTANCE Info_Mod_Patient_WasFehlt (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Patient_WasFehlt (C_INFO)
 	information	= Info_Mod_Patient_WasFehlt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, woran fehlt es uns denn?";
+	description	= "Cóz, czego nam brakuje?";
 };
 
 FUNC INT Info_Mod_Patient_WasFehlt_Condition()
@@ -44,46 +44,46 @@ FUNC INT Info_Mod_Patient_WasFehlt_Condition()
 
 FUNC VOID Info_Mod_Patient_WasFehlt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_15_00"); //Na, woran fehlt es uns denn?
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_04_01"); //Am Betäubungsmittel. Hast du vielleicht was Hochprozentiges dabei?
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_15_00"); //Cóz, czego nam brakuje?
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_04_01"); //Narkotyczny. Masz na sobie cos ciezkiego?
 
 	Info_ClearChoices	(Info_Mod_Patient_WasFehlt);
 
-	Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Ich hab nichts für dich.", Info_Mod_Patient_WasFehlt_B);
+	Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Nie mam nic dla Ciebie.", Info_Mod_Patient_WasFehlt_B);
 
 	if (Npc_HasItems(hero, ItFo_Booze) >= 1)
 	|| (Npc_HasItems(hero, ItFo_Addon_Grog) >= 1)
 	|| (Npc_HasItems(hero, ItFo_Addon_Rum) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Na sicher.", Info_Mod_Patient_WasFehlt_A);
+		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Oczywiscie.", Info_Mod_Patient_WasFehlt_A);
 	};
 };
 
 FUNC VOID Info_Mod_Patient_WasFehlt_B()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_B_15_00"); //Ich hab nichts für dich.
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_B_15_00"); //Nie mam nic dla Ciebie.
 
 	Info_ClearChoices	(Info_Mod_Patient_WasFehlt);
 };
 
 FUNC VOID Info_Mod_Patient_WasFehlt_A()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_A_15_00"); //Na sicher.
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_A_04_01"); //Was denn?
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_A_15_00"); //Oczywiscie.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_A_04_01"); //Co masz na mysli?
 
 	Info_ClearChoices	(Info_Mod_Patient_WasFehlt);
 
 	if (Npc_HasItems(hero, ItFo_Booze) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Grog wird dir sicher helfen.", Info_Mod_Patient_WasFehlt_E);
+		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Grog z pewnoscia pomoze Ci.", Info_Mod_Patient_WasFehlt_E);
 	};
 	if (Npc_HasItems(hero, ItFo_Addon_Rum) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Wie sieht's mit Rum aus?", Info_Mod_Patient_WasFehlt_D);
+		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "A co z rumem?", Info_Mod_Patient_WasFehlt_D);
 	};
 	if (Npc_HasItems(hero, ItFo_Booze) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Hier hab ich Wacholder.", Info_Mod_Patient_WasFehlt_C);
+		Info_AddChoice	(Info_Mod_Patient_WasFehlt, "Tutaj mam jalowca.", Info_Mod_Patient_WasFehlt_C);
 	};
 };
 
@@ -91,14 +91,14 @@ FUNC VOID Info_Mod_Patient_WasFehlt_F(var C_Item itm)
 {
 	B_GiveInvItems	(hero, self, itm, 1);
 
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_00"); //Danke, Mann.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_00"); //Dzieki, czlowiek.
 
 	B_UseItem	(self, itm);
 
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_01"); //Diese verfluchten Brustoperationen gehen mir echt an die Nieren.
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_F_15_02"); //Welche Brustoperationen?
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_03"); //Meine Leber scheint schlapp zu machen. Sagt jedenfalls der Heiler.
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_04"); //Aber mir ging's besser, als ich noch nicht hier lag.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_01"); //Ten pieprzacy zabieg chirurgii piersi naprawde idzie na moje nerki.
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_F_15_02"); //Jaka operacja piersia?
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_03"); //Moja watroba wydaje sie rozkladac. Tak mówi uzdrowiciel.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_04"); //Ale czulem sie lepiej, gdy jeszcze nie bylo mnie tutaj.
 
 	B_GivePlayerXP	(50);
 
@@ -107,21 +107,21 @@ FUNC VOID Info_Mod_Patient_WasFehlt_F(var C_Item itm)
 
 FUNC VOID Info_Mod_Patient_WasFehlt_E()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_E_15_00"); //Grog wird dir sicher helfen.
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_E_15_00"); //Grog z pewnoscia pomoze Ci.
 
 	Info_Mod_Patient_WasFehlt_F(ItFo_Addon_Grog);
 };
 
 FUNC VOID Info_Mod_Patient_WasFehlt_D()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_D_15_00"); //Wie sieht's mit Rum aus?
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_D_15_00"); //A co z rumem?
 
 	Info_Mod_Patient_WasFehlt_F(ItFo_Addon_Rum);
 };
 
 FUNC VOID Info_Mod_Patient_WasFehlt_C()
 {
-	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_C_15_00"); //Hier hab ich Wacholder.
+	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_C_15_00"); //Tutaj mam jalowca.
 
 	Info_Mod_Patient_WasFehlt_F(ItFo_Booze);
 };

@@ -18,18 +18,18 @@ FUNC INT Info_Mod_Hexe_PAT_Fokus05_Hi_Condition()
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_17_00"); //Na du erbärmlicher Schlappschwanz. Jämmerlicher Versager, du. Willst du dich vielleicht mit mir anlegen?
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_17_00"); //No cóz, zalosny mieczak. Piekna porazka, ty. Próbujesz sie ze mna balaganic?
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
-	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Ich werde dir mal dein Schandmaul stopfen, du alte Vettel. Komm her!", Info_Mod_Hexe_PAT_Fokus05_Hi_B);
-	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Beruhige dich, gute Frau. Ich will nur diesen Fokus hier holen.", Info_Mod_Hexe_PAT_Fokus05_Hi_A);
+	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Jestem gonna strzelic haniebne usta, ty stare hag. Zapraszamy tutaj!", Info_Mod_Hexe_PAT_Fokus05_Hi_B);
+	Info_AddChoice	(Info_Mod_Hexe_PAT_Fokus05_Hi, "Spokojna, dobra kobieta. Chce tylko skupic sie na tym.", Info_Mod_Hexe_PAT_Fokus05_Hi_A);
 };
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_15_00"); //Ich werde dir mal dein Schandmaul stopfen, du alte Vettel. Komm her!
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_17_01"); //Das kannst du haben, Großmaul!
+	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_15_00"); //Jestem gonna strzelic haniebne usta, ty stare hag. Zapraszamy tutaj!
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_B_17_01"); //Mozesz miec to duze usta!
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
@@ -42,8 +42,8 @@ FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_B()
 
 FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_15_00"); //Beruhige dich, gute Frau. Ich will nur diesen Fokus hier holen.
-	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_17_01"); //Nur über meine Leiche.
+	AI_Output(hero, self, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_15_00"); //Spokojna, dobra kobieta. Chce tylko skupic sie na tym.
+	AI_Output(self, hero, "Info_Mod_Hexe_PAT_Fokus05_Hi_A_17_01"); //Nad martwym cialem.
 
 	Info_ClearChoices	(Info_Mod_Hexe_PAT_Fokus05_Hi);
 
@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Hexe_PAT_Fokus05_Hi_A()
 	self.guild = GIL_STRF;
 	Npc_SetTrueGuild	(self, GIL_STRF);
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Von so einer Zicke lass ich mich doch nicht provozieren. Vernünftig wie ich bin.");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Nie pozwole sobie na taka suke, która mnie prowokuje. Rozsadny jak jestem.");
 
 	Mod_PAT_Focus_05 = 1;
 };

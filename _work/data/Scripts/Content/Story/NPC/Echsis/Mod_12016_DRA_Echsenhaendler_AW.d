@@ -1,7 +1,7 @@
 INSTANCE Mod_12016_DRA_Echsenhaendler_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Echsenhändler";
+	name	=	"sprzedawca jaszczurki";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12016;
 	level	=	35;

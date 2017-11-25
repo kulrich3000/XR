@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Zahit_Kill_Condition()
 
 FUNC VOID Info_Mod_Zahit_Kill_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zahit_Kill_13_00"); //Du wärst besser nicht hierher gekommen!
+	AI_Output(self, hero, "Info_Mod_Zahit_Kill_13_00"); //Nie powinienes tu przyjezdzac!
 	
 	AI_StopProcessInfos(self);
 	
@@ -45,17 +45,17 @@ FUNC INT Info_Mod_Zahit_Amir_Condition()
 
 FUNC VOID Info_Mod_Zahit_Amir_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_00"); //(überrascht) Was willst Du denn hier? Hat dich Amir etwa hieher gebracht?
-	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_01"); //Ja, das hat er.
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_02"); //(wütend) Was bildet sich der Kerl denn überhaupt ein?
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_03"); //Nur, weil er in der Stadt ist, heißt das noch lange nicht, dass er unsere Regeln missachten und wildfremde Leute hieher schleifen kann.
-	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_04"); //Bleib Locker. Ich habe Amir bei einem Problem geholfen und er bot mir daraufhin an, mich den Assassinen anzuschließen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_05"); //(lauernd) Aha, du hast Amir geholfen. Soso mein Freund, was musstest du tun? Fleischwanzen erlegen?
-	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_06"); //Ich habe für Amir einen nervigen Bürger der Stadt bei einem Attentat erledigt und von diesem einen Blutkelch gestohlen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_07"); //(staunt) Du als Schwächling hast solche Begabungen? Das spricht für dich, das muss man sagen.
-	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_08"); //Was ist jetzt, kann ich mich euch anschließen?
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_09"); //Nicht so hastig, mein Freund. Du hast zwar Amir überzeugen können, doch um überhaupt ein Assassine werden zu können, musst du noch einiges erledigen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_10"); //Da liegt noch ein weiter Weg vor dir, mein Junge.
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_00"); //Co Pan tutaj robi? Czy Amir przywiózl cie tutaj?
+	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_01"); //Tak, zrobil.
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_02"); //Co sobie wyobraza?
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_03"); //To, ze jest w miescie, nie oznacza, ze moze lekcewazyc nasze zasady i wciagac nieznajomych.
+	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_04"); //Pozostan luzny. Pomagalem Amirowi z problemem i zaproponowalem mu przylaczenie sie do zabójców.
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_05"); //Aha, pomógles Amirowi. Wiec mój przyjaciel, co musiales zrobic? Zabijac pluskwy miesne?
+	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_06"); //Zabilem denerwujacego mieszkanca miasta za zamach na Amir podczas próby zabicia i odebralem mu kubek krwi.
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_07"); //Masz takie talenty jako slabszy? To przemawia za panem, musze to powiedziec.
+	AI_Output(hero, self, "Info_Mod_Zahit_Amir_15_08"); //Co teraz moge sie przylaczyc do Ciebie?
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_09"); //Nie spiesz sie, mój przyjaciel. Przekonales Amir, ale aby zostac zabójca w ogóle, musisz zrobic wiele rzeczy.
+	AI_Output(self, hero, "Info_Mod_Zahit_Amir_13_10"); //Mój chlopiec ma przed soba dluga droge.
 };
 
 INSTANCE Info_Mod_Zahit_Aufnahme (C_INFO)
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Zahit_Aufnahme (C_INFO)
 	information	= Info_Mod_Zahit_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie kann ich mich euch anschließen?";
+	description	= "Jak moge dolaczyc do Ciebie?";
 };
 
 FUNC INT Info_Mod_Zahit_Aufnahme_Condition()
@@ -79,33 +79,33 @@ FUNC INT Info_Mod_Zahit_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Zahit_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_00"); //Wie kann ich mich euch anschließen?
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_01"); //Nun, um zu einem Assassinen werden zu können bedarf es einer sehr wichtigen Sache.
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_02"); //Die wäre?
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_03"); //Vertrauen.
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_04"); //Aha. Und weiter?
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_05"); //Um ein Mitglied des Lagers werden zu können, musst du zuerst das Vertrauen der niederen Assassinenmitgliedern erwerben, den sogenannten Gaunern.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_06"); //Ihr Viertel liegt hinter dieser Tür.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_07"); //Dahinter kommt dann das Viertel der Krieger und danach das der Magier und des Hohen Rates.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_08"); //Um die zwei letzten Viertel überhaupt betreten zu können, musst du jedoch ein Gauner sein.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_09"); //Wenn du diesen Weg, der sehr schwirieg sein wird, tatsächlich einschlägst, dann hast du die Möglichkeit dich den Magiern oder den Kriegern anzuschließen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_10"); //Doch vorher wirst du dich dafür schweren Prüfungen unterziehen müssen.
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_11"); //Das hört sich sehr motivierend an.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_12"); //(streng) Sei froh, dass du überhaupt die Möglichkeit bekommst, dich uns anzuschließen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_13"); //Nur wenige Außenstehende haben bisher diese Ehre erhalten, also zügle dein freches Mundwerk.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_14"); //Wenn du den Magiern oder Kriegern so begegnest, werden sie dir Manieren beibringen.
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_15"); //(trocken) Ich werde es mir merken.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_16"); //Gut. Also du kannst jetzt das erste Viertel betreten.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_17"); //Sprich mit den Gauern und erledige ihre Aufgaben, um aufgenommen zu werden.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_18"); //Wenn du alle überzeugt hast, bekommst du die Chance mit den Magiern und Kriegern zu reden.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_19"); //Der Anführer ist Obergauner Shakir. Rede mit ihm, um Weiteres zu erfahren.
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_20"); //Danke, das werde ich tun.
-	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_21"); //Und mach keinen Ärger, dass wir uns da richtig verstanden haben!
-	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_22"); //Das haben wir, nur keine Sorge.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_00"); //Jak moge dolaczyc do Ciebie?
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_01"); //Cóz, aby zostac zabójca, potrzeba bardzo waznej rzeczy.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_02"); //Co to jest?
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_03"); //Zaufanie.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_04"); //Uh-huh. Co dalej?
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_05"); //Zeby zostac czlonkiem obozu, najpierw trzeba zdobyc zaufanie nizszych zabójców, tzw. oszustów.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_06"); //Twoja okolica jest za tymi drzwiami.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_07"); //Za nia znajduje sie dzielnica wojowników, a nastepnie magik i Wysoka Rada.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_08"); //Aby móc w ogóle wejsc do ostatnich dwóch kwartalów, musisz byc oszustem.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_09"); //Jesli naprawde przyjmiesz te sciezke, która bedzie bardzo trudna, wtedy bedziesz mial mozliwosc dolaczenia do magów lub wojowników.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_10"); //Ale najpierw trzeba bedzie przejsc trudne testy.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_11"); //To brzmi bardzo motywujace.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_12"); //(mocna) Ciesz sie, ze masz szanse dolaczyc do nas w ogóle.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_13"); //Jak dotad nieliczni goscie z zewnatrz otrzymali ten zaszczyt, wiec zamknijcie niegrzeczne usta.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_14"); //Jesli spotkasz takich magów lub wojowników, naucza cie manier.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_15"); //Bede o tym pamietac.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_16"); //Dobre. Mozesz wiec teraz wprowadzic pierwszy kwartal.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_17"); //Porozmawiaj z ludzmi i wykonaj ich zadania do zaakceptowania.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_18"); //Kiedy przekonasz wszystkich, bedziesz mial okazje porozmawiac z magikami i wojownikami.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_19"); //Liderem jest szef korony korony szakir. Porozmawiaj z nim, aby uzyskac wiecej informacji.
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_20"); //Dziekuje.
+	AI_Output(self, hero, "Info_Mod_Zahit_Aufnahme_13_21"); //I nie spraw nam nic trudnego w zrozumieniu siebie nawzajem!
+	AI_Output(hero, self, "Info_Mod_Zahit_Aufnahme_15_22"); //Tak wlasnie mamy, nie martw sie.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_VERTRAUEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_VERTRAUEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Ich habe mit der Wache Zahit gesprochen, die mit einem Kollegen den Eingang zum Versteck der Assassinen bewacht. Er meinte, um ein Mitglied des Lagers zu werden, ein sogenannter Gauner, muss ich das Vertrauen ebenjener Assasinen erlangen. Das geht nur, indem ich wohl wieder den Laufburschen spiele. Um genaueres erfahren zu können soll ich im Lager mit dem Anführer der Gauner, Shakir, sprechen. Da bin ich aber gespannt.");
+	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Rozmawialem z wartownikiem Zahitem, który wraz z kolega pilnowal wejscia do kryjówki zabójców. Powiedzial, ze aby zostac czlonkiem obozu, tak zwanym oszustem, musze zdobyc zaufanie tych samych zabójców. Jedynym sposobem na to jest powrót do bycia chlopcem, który popelnil blad. Zeby dowiedziec sie wiecej, musze porozmawiac z przywódca oszustów, Shakirem, w obozie. Nie moge sie doczekac, zeby zobaczyc.");
 };
 
 INSTANCE Info_Mod_Zahit_Assassinengold (C_INFO)
@@ -128,10 +128,10 @@ FUNC INT Info_Mod_Zahit_Assassinengold_Condition()
 
 FUNC VOID Info_Mod_Zahit_Assassinengold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Zahit_Assassinengold_13_00"); //Da bist du endlich. Alle warten auf dich. Mach hin.
-	AI_Output(hero, self, "Info_Mod_Zahit_Assassinengold_15_01"); //Etwas Respekt vor einem Magier, Bursche!
-	AI_Output(self, hero, "Info_Mod_Zahit_Assassinengold_13_02"); //Tschuldigung. Vor Kurzem warst du noch ein Nichts.
-	AI_Output(hero, self, "Info_Mod_Zahit_Assassinengold_15_03"); //Jedem das Seine. Mach Platz.
+	AI_Output(self, hero, "Info_Mod_Zahit_Assassinengold_13_00"); //Tutaj jestes nareszcie. Kazdy czeka na ciebie. Idz na to.
+	AI_Output(hero, self, "Info_Mod_Zahit_Assassinengold_15_01"); //Troche szacunku dla maga, chlopaka!
+	AI_Output(self, hero, "Info_Mod_Zahit_Assassinengold_13_02"); //Przepraszam za to. Nie tak dawno temu nic nie bylo.
+	AI_Output(hero, self, "Info_Mod_Zahit_Assassinengold_15_03"); //Do kazdego z nich. Zejdz z drogi.
 };
 
 INSTANCE Info_Mod_Zahit_PosWechsel (C_INFO)
@@ -142,7 +142,7 @@ INSTANCE Info_Mod_Zahit_PosWechsel (C_INFO)
 	information	= Info_Mod_Zahit_PosWechsel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du denn hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Zahit_PosWechsel_Condition()
@@ -155,11 +155,11 @@ FUNC INT Info_Mod_Zahit_PosWechsel_Condition()
 
 FUNC VOID Info_Mod_Zahit_PosWechsel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_00"); //Was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Zahit_PosWechsel_13_01"); //Habe Amir als Beobachter abgelöst.
-	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_02"); //Und was ist so wichtig?
-	AI_Output(self, hero, "Info_Mod_Zahit_PosWechsel_13_03"); //Du musst sofort zu Mustafa gehen. Scheint wichtig zu sein.
-	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_04"); //Da bin ich aber gespannt.
+	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Zahit_PosWechsel_13_01"); //Zastapil Amir obserwatorem.
+	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_02"); //A co jest tak wazne?
+	AI_Output(self, hero, "Info_Mod_Zahit_PosWechsel_13_03"); //Musisz natychmiast udac sie do Mustafy. Sprawy wazne.
+	AI_Output(hero, self, "Info_Mod_Zahit_PosWechsel_15_04"); //Nie moge sie doczekac, zeby zobaczyc.
 };
 
 INSTANCE Info_Mod_Zahit_Gefunden (C_INFO)
@@ -170,7 +170,7 @@ INSTANCE Info_Mod_Zahit_Gefunden (C_INFO)
 	information	= Info_Mod_Zahit_Gefunden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie kommt es, dass ihr bisher noch nicht endeckt worden seit?";
+	description	= "Jak do tej pory nie zostales jeszcze odkryty?";
 };
 
 FUNC INT Info_Mod_Zahit_Gefunden_Condition()
@@ -183,13 +183,13 @@ FUNC INT Info_Mod_Zahit_Gefunden_Condition()
 
 FUNC VOID Info_Mod_Zahit_Gefunden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_00"); //Wie kommt es, dass ihr bisher noch nicht endeckt worden seid?
-	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_01"); //Wie meinst du das?
-	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_02"); //Ich glaube kaum, dass bisher noch niemand diese Höhle erforscht hat.
-	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_03"); //Das ist bisher selten passiert und die, die hieher kamen, konnten es niemandem mehr berichten.
-	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_04"); //Also habt ihr sie getötet?
-	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_05"); //Ja, wir wollen doch nicht das Paladine und Milizen hieher anrücken.
-	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_06"); //Klar, das wäre nicht gut.
+	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_00"); //Jak do tej pory nie zostales jeszcze odkryty?
+	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_01"); //Co masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_02"); //Nie sadze, aby nikt wczesniej nie zglebial tej jaskini.
+	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_03"); //Do tej pory zdarzalo sie to rzadko, a ci, którzy tu przyjechali, nie mogli nikomu powiedziec.
+	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_04"); //Wiec zabiles ja?
+	AI_Output(self, hero, "Info_Mod_Zahit_Gefunden_13_05"); //Tak, nie chcemy tutaj przenosic paladynów i milicji.
+	AI_Output(hero, self, "Info_Mod_Zahit_Gefunden_15_06"); //To z pewnoscia nie byloby dobre.
 };
 
 INSTANCE Info_Mod_Zahit_Hergekommen (C_INFO)
@@ -200,7 +200,7 @@ INSTANCE Info_Mod_Zahit_Hergekommen (C_INFO)
 	information	= Info_Mod_Zahit_Hergekommen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie seid ihr hierher gekommen?";
+	description	= "Jak sie tu dostales?";
 };
 
 FUNC INT Info_Mod_Zahit_Hergekommen_Condition()
@@ -213,16 +213,16 @@ FUNC INT Info_Mod_Zahit_Hergekommen_Condition()
 
 FUNC VOID Info_Mod_Zahit_Hergekommen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_00"); //Wie seid ihr hierher gekommen?
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_01"); //Auf dem Festland herrscht ja bekanntlich das vollkommene Chaos.
-	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_02"); //Ja, davon habe ich auch gehört.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_03"); //Wir haben es dort nicht mehr ausgehalten. Deshalb beschlossen unsere weisen Anführer diesem Wahnsinn zu entfliehen.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_04"); //Mittels eines starken Teleportzaubers haben es die Magier von uns geschafft uns alle nach Khorinis zu telepotieren.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_05"); //Wir suchten nach einem Versteck und fanden diese Höhle hier unbenutzt vor.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_06"); //Wir beschlossen hier zu bleiben und seither ist dies unser Lager.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_07"); //Wir wollen aber in nächster Zeit versuchen, unseren Einfluss auszuweiten.
-	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_08"); //Das hört sich alles sehr abenteuerlich an. Interessant zu erfahren wie ihr hiehrher kamt. Danke für die Infos.
-	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_09"); //Keine Ursache.
+	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_00"); //Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_01"); //Jak wszyscy wiemy, na kontynencie panuje calkowity chaos.
+	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_02"); //Tak, równiez o tym slyszalem.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_03"); //Nie moglismy juz wytrzymac. Dlatego nasi madrzy przywódcy postanowili uciec od tego szalenstwa.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_04"); //Za pomoca poteznego zaklecia teleportu, nasi magowie zdolali nas wszystkich telepolizowac na Khorinis.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_05"); //Poszukiwalismy kryjówki i znalezlismy tutaj te jaskinie niewykorzystana.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_06"); //Postanowilismy zostac tutaj i od tego czasu jest to nasz obóz.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_07"); //Chcemy jednak w niedalekiej przyszlosci starac sie poszerzyc nasze wplywy.
+	AI_Output(hero, self, "Info_Mod_Zahit_Hergekommen_15_08"); //Wszystko brzmi bardzo przygodowo. Ciekawe, jak przyszedles tutaj. Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Zahit_Hergekommen_13_09"); //Nie wspominajmy o tym.
 };
 
 INSTANCE Info_Mod_Zahit_Pickpocket (C_INFO)

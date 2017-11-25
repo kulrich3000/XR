@@ -1,7 +1,7 @@
 instance Mod_1417_BAU_Bauer_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bauer";
+	name 		= "chlop";
 	guild 		= GIL_OUT;
 	id 			= 1417;
 	voice 		= 13;

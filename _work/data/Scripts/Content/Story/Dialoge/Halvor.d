@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Halvor_Hi (C_INFO)
 	information	= Info_Mod_Halvor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Halvor_Hi_Condition()
@@ -17,10 +17,10 @@ FUNC INT Info_Mod_Halvor_Hi_Condition()
 FUNC VOID Info_Mod_Halvor_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Halvor_Hi_26_01"); //Ich bin Halvor. Bei mir kriegst du immer frische Fische.
+	AI_Output(self, hero, "Info_Mod_Halvor_Hi_26_01"); //Jestem Halvor. Zawsze daje swieza rybe.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Halvor im Hafenviertel ist Fischhändler.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Halvor w dzielnicy portowej jest rybakiem.");
 };
 
 INSTANCE Info_Mod_Halvor_HolFische (C_INFO)
@@ -45,18 +45,18 @@ FUNC INT Info_Mod_Halvor_HolFische_Condition()
 
 FUNC VOID Info_Mod_Halvor_HolFische_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_26_00"); //Hast du einen Moment Zeit?
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_26_00"); //Masz minute?
 
 	Info_ClearChoices	(Info_Mod_Halvor_HolFische);
 
-	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Nein, momentan hab ich keine Zeit.", Info_Mod_Halvor_HolFische_Nein);
-	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Ja, was gibt's denn?", Info_Mod_Halvor_HolFische_Ja);
+	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Nie, nie mam teraz czasu.", Info_Mod_Halvor_HolFische_Nein);
+	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Tak, co jest?", Info_Mod_Halvor_HolFische_Ja);
 };
 
 FUNC VOID Info_Mod_Halvor_HolFische_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Nein_15_00"); //Nein, momentan hab ich keine Zeit.
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Nein_26_01"); //Hm, dann muss ich mich wohl selbst darum kümmern.
+	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Nein_15_00"); //Nie, nie mam teraz czasu.
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Nein_26_01"); //Cóz, mysle, ze sam bede musial sie tym zajac.
 
 	Info_ClearChoices	(Info_Mod_Halvor_HolFische);
 
@@ -65,21 +65,21 @@ FUNC VOID Info_Mod_Halvor_HolFische_Nein()
 
 FUNC VOID Info_Mod_Halvor_HolFische_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_15_00"); //Ja, was gibt's denn?
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_01"); //Wie du weißt, bin ich ja hier der Fischhändler, und ich sitze gerade fast auf dem Trockenen.
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_02"); //Meine Fische bekomme ich normalerweise von den Fischern Farim und William, aber die beiden haben sich seit Tagen nicht blicken lassen.
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_03"); //Könntest du mir ihre Fische abholen? Bezahlt hab ich sie schon, nur kann ich meinen Stand nicht allein lassen.
+	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_15_00"); //Tak, co jest?
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_01"); //Jak wiecie, jestem tu rybakiem i teraz jestem prawie suchy.
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_02"); //Zazwyczaj dostaje rybe od rybaków Farima i Williama, ale oni nie widzieli sie od dni.
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_26_03"); //Czy móglbys odebrac mi jej rybe? Zaplacilem juz za nie, ale nie moge zostawic sie samotnie.
 
 	Info_ClearChoices	(Info_Mod_Halvor_HolFische);
 
-	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Nein, geh doch selber.", Info_Mod_Halvor_HolFische_Ja_Nein);
-	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Ja, aber wie stehts mit einer Belohnung?", Info_Mod_Halvor_HolFische_Ja_Ja);
+	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Nie, idzcie sami.", Info_Mod_Halvor_HolFische_Ja_Nein);
+	Info_AddChoice	(Info_Mod_Halvor_HolFische, "Tak, ale co z nagroda?", Info_Mod_Halvor_HolFische_Ja_Ja);
 };
 
 FUNC VOID Info_Mod_Halvor_HolFische_Ja_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Nein_15_00"); //Nein, geh doch selber.
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Nein_26_01"); //Hm, dann muss ich mich wohl selbst darum kümmern.
+	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Nein_15_00"); //Nie, idzcie sami.
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Nein_26_01"); //Cóz, mysle, ze sam bede musial sie tym zajac.
 
 	Info_ClearChoices	(Info_Mod_Halvor_HolFische);
 
@@ -88,16 +88,16 @@ FUNC VOID Info_Mod_Halvor_HolFische_Ja_Nein()
 
 FUNC VOID Info_Mod_Halvor_HolFische_Ja_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Ja_15_00"); //Ja, aber wie steht's mit einer Belohnung?
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Ja_26_01"); //(verächtlich) Natürlich, jede kleine Gefälligkeit will in barer Münze bezahlt werden, stimmt's?
-	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Ja_26_02"); //Na schön, wenn du deine Sache gut erledigst, sind ein paar Goldstücke drin.
-	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Ja_15_03"); //Das wollte ich hören. Ich mach mich dann mal auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Ja_15_00"); //Tak, ale co z nagroda?
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Ja_26_01"); //Oczywiscie, kazda mala przysluga chcialaby byc placona twarda gotówka, prawda?
+	AI_Output(self, hero, "Info_Mod_Halvor_HolFische_Ja_Ja_26_02"); //Dobrze, jesli dobrze sobie radzisz, jest w nim troche zlota.
+	AI_Output(hero, self, "Info_Mod_Halvor_HolFische_Ja_Ja_15_03"); //To wlasnie chcialem uslyszec. Bede wiec w drodze.
 
 	Mod_HalvorHolFischeQuest = TRUE;
 
 	Log_CreateTopic	(TOPIC_MOD_HALVOR_HOLFISCHE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HALVOR_HOLFISCHE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Halvor, der Fischhändler im Hafenviertel, will, dass ich ihm die Fische von den Fischern Farim und William bringe.");
+	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Halvor, handlarz ryb w dzielnicy portowej, chce, abym przywiózl mu ryby od rybaków Farima i Williama.");
 
 	Info_ClearChoices	(Info_Mod_Halvor_HolFische);
 };
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Halvor_HierSindFische (C_INFO)
 	information	= Info_Mod_Halvor_HierSindFische_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Fische.";
+	description	= "Dostalem rybe.";
 };
 
 FUNC INT Info_Mod_Halvor_HierSindFische_Condition()
@@ -125,19 +125,19 @@ FUNC INT Info_Mod_Halvor_HierSindFische_Condition()
 
 FUNC VOID Info_Mod_Halvor_HierSindFische_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_HierSindFische_15_00"); //Ich hab die Fische.
+	AI_Output(hero, self, "Info_Mod_Halvor_HierSindFische_15_00"); //Dostalem rybe.
 
 	B_GiveInvItems	(hero, self, ItFo_Fish, 20);
 
-	AI_Output(self, hero, "Info_Mod_Halvor_HierSindFische_26_01"); //Gut, das wird meinen Kunden gefallen.
-	AI_Output(hero, self, "Info_Mod_Halvor_HierSindFische_15_02"); //Und dir gefällt's auch?
-	AI_Output(self, hero, "Info_Mod_Halvor_HierSindFische_26_03"); //Ach ja, hier hast du ein paar Goldmünzen.
+	AI_Output(self, hero, "Info_Mod_Halvor_HierSindFische_26_01"); //Cóz, moim klientom sie to spodoba.
+	AI_Output(hero, self, "Info_Mod_Halvor_HierSindFische_15_02"); //Lubisz to równiez?
+	AI_Output(self, hero, "Info_Mod_Halvor_HierSindFische_26_03"); //Ach, tak, oto kilka zlotych monet.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Ich habe Halvor die Fische gebracht und zum Dank ein paar Goldmünzen bekommen.");
+	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Przynioslam rybe Halvor i dostalam zlote monety, zeby mu podziekowac.");
 	B_SetTopicStatus	(TOPIC_MOD_HALVOR_HOLFISCHE, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -151,7 +151,7 @@ INSTANCE Info_Mod_Halvor_Fenia (C_INFO)
 	information	= Info_Mod_Halvor_Fenia_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe da ein paar Frauengeschichten von dir gehört.";
+	description	= "Slyszalem od Ciebie historie kobiety.";
 };
 
 FUNC INT Info_Mod_Halvor_Fenia_Condition()
@@ -164,41 +164,41 @@ FUNC INT Info_Mod_Halvor_Fenia_Condition()
 
 FUNC VOID Info_Mod_Halvor_Fenia_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_15_00"); //Ich habe da ein paar Frauengeschichten von dir gehört.
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_26_01"); //Lachhaft! Aber darüber rede ich nicht mit Fremden. Mit Häftlingen.
+	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_15_00"); //Slyszalem od Ciebie historie kobiety.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_26_01"); //Rozkoszuj sie! Ale nie rozmawiam o tym z nieznajomymi. Z zatrzymanymi.
 
 	Info_ClearChoices	(Info_Mod_Halvor_Fenia);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		Info_AddChoice	(Info_Mod_Halvor_Fenia, "(Feilschen) Du könntest doch sicher Unterstützung gebrauchen.", Info_Mod_Halvor_Fenia_C);
+		Info_AddChoice	(Info_Mod_Halvor_Fenia, "Jestem pewien, ze moglibyscie skorzystac z jakiegos wsparcia.", Info_Mod_Halvor_Fenia_C);
 	};
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 20)
 	{
-		Info_AddChoice	(Info_Mod_Halvor_Fenia, "Könnte dich das Klimpern von Gold überzeugen? (- 20 Gold)", Info_Mod_Halvor_Fenia_B);
+		Info_AddChoice	(Info_Mod_Halvor_Fenia, "Czy mozna przekonac Cie o tym, ze zloto jest pelne blasku? (- 20 zlota (- 20 zlota)", Info_Mod_Halvor_Fenia_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Halvor_Fenia, "Na gut, lassen wir es sein.", Info_Mod_Halvor_Fenia_A);
+	Info_AddChoice	(Info_Mod_Halvor_Fenia, "Wszystko w porzadku, zróbmy to odrzucmy.", Info_Mod_Halvor_Fenia_A);
 };
 
 FUNC VOID Info_Mod_Halvor_Fenia_D()
 {
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_00"); //Abgemacht, aber da gibt es nicht viel zu erzählen.
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_01"); //Ich weiß nicht, was Fenia für Hirngespinste hat. Doch, ich weiß es, aber nicht, warum.
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_02"); //Sie ist eifersüchtig auf jede Frau, mit der ich rede, und das sind viele.
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_03"); //Als sie gesehen hat, dass Sonja einen Fisch bei mir gekauft hat, ist sie fast ausgerastet und hat mir unterstellt, Sonja würde mich nach einer tollen Nacht besuchen kommen.
-	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_D_15_04"); //An ihren Zweifeln ist also nichts dran?
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_05"); //Ich war schon seit Jahren nicht mehr im Puff!
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_06"); //Aber je mehr Fenia mich bedrängt, desto lieber würde ich ihr mal eins auswischen.
-	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_07"); //Das würde sie sicher zur Weißglut bringen.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_00"); //Laduj, ale nie ma wiele do powiedzenia.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_01"); //Nie wiem, czym jest fantazja fenii. Tak, to robie, ale nie wiem dlaczego.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_02"); //Ona zazdrosci o kazda kobiete, z która rozmawiam, i to wiele kobiet.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_03"); //Kiedy zobaczyla, ze Sonja kupila u mnie rybe, niemal szalala i zalozyla, ze Sonja przyjedzie do mnie po wielkiej nocy.
+	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_D_15_04"); //Nic wiec nie budzi watpliwosci?
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_05"); //Od lat nie bylem w kurniku!
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_06"); //Ale im wiecej mnie Fenia pchnie, tym lepiej bym sobie z nia poradzila.
+	AI_Output(self, hero, "Info_Mod_Halvor_Fenia_D_26_07"); //Jestem pewien, ze to je ozywiloby.
 
 	Info_ClearChoices	(Info_Mod_Halvor_Fenia);
 };
 
 FUNC VOID Info_Mod_Halvor_Fenia_C()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_C_15_00"); //Du könntest doch sicher Unterstützung gebrauchen.
+	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_C_15_00"); //Z pewnoscia mozesz skorzystac z jakiegos wsparcia.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
@@ -210,7 +210,7 @@ FUNC VOID Info_Mod_Halvor_Fenia_C()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Halvor_Fenia_C_26_01"); //Deine Unterstützung brauche ich sicher nicht.
+		AI_Output(self, hero, "Info_Mod_Halvor_Fenia_C_26_01"); //Z pewnoscia nie potrzebuje waszego wsparcia.
 
 		Info_ClearChoices	(Info_Mod_Halvor_Fenia);
 	};
@@ -218,7 +218,7 @@ FUNC VOID Info_Mod_Halvor_Fenia_C()
 
 FUNC VOID Info_Mod_Halvor_Fenia_B()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_B_15_00"); //Könnte dich das Klimpern von Gold überzeugen?
+	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_B_15_00"); //Czy mozna przekonac Cie o tym, ze zloto jest pelne blasku?
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 20);
 
@@ -227,7 +227,7 @@ FUNC VOID Info_Mod_Halvor_Fenia_B()
 
 FUNC VOID Info_Mod_Halvor_Fenia_A()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_A_15_00"); //Na gut, lassen wir es sein.
+	AI_Output(hero, self, "Info_Mod_Halvor_Fenia_A_15_00"); //Wszystko w porzadku, zróbmy to odrzucmy.
 
 	Info_ClearChoices	(Info_Mod_Halvor_Fenia);
 };
@@ -240,7 +240,7 @@ INSTANCE Info_Mod_Halvor_Kap2 (C_INFO)
 	information	= Info_Mod_Halvor_Kap2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast also frischen Fisch?";
+	description	= "Masz wiec swieza rybe?";
 };
 
 FUNC INT Info_Mod_Halvor_Kap2_Condition()
@@ -254,14 +254,14 @@ FUNC INT Info_Mod_Halvor_Kap2_Condition()
 
 FUNC VOID Info_Mod_Halvor_Kap2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_00"); //Du hast also frischen Fisch?
-	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_01"); //Das sage ich doch die ganze Zeit. Frische Fische.
-	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_02"); //Welcher ist denn am frischesten?
-	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_03"); //Die sind alle gleich gut. Frischer Fisch eben.
-	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_04"); //Also wirklich frischer Hering?
-	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_05"); //(genervt) Pass mal auf, du Held. Siehst du den Hering ganz links?
-	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_06"); //Meinst du den da?
-	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_07"); //Ja, genau den. Der ist so frisch, der schwamm gestern noch im Ozean und hat die Haie gejagt. So frisch ist der. Und jetzt hau ab und lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_00"); //Masz wiec swieza rybe?
+	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_01"); //Wlasnie o tym ciagle wam mówie. Swieze ryby.
+	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_02"); //Który z nich jest najswiezszy?
+	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_03"); //Sa równie dobre. Swieze ryby, to wszystko.
+	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_04"); //Wiec naprawde swieze sledzie?
+	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_05"); //Zobacz to, bohater. Zobacz, ze sledz po lewej stronie?
+	AI_Output(hero, self, "Info_Mod_Halvor_Kap2_15_06"); //Masz na mysli to?
+	AI_Output(self, hero, "Info_Mod_Halvor_Kap2_26_07"); //Tak, tak wlasnie jest. Jest tak swiezy, wczoraj plywal w oceanie, zonglowal rekinami. Jest tak swiezy. Teraz odejdz i zostaw mnie sam na sam.
 };
 
 INSTANCE Info_Mod_Halvor_Trade (C_INFO)

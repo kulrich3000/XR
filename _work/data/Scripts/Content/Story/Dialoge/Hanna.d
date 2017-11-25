@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hanna_Hi (C_INFO)
 	information	= Info_Mod_Hanna_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo bin ich hier?";
+	description	= "Gdzie jestem tutaj?";
 };
 
 FUNC INT Info_Mod_Hanna_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Hanna_Hi_Condition()
 
 FUNC VOID Info_Mod_Hanna_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hanna_Hi_15_00"); //Wo bin ich hier?
-	AI_Output(self, hero, "Info_Mod_Hanna_Hi_17_01"); //In meinem Rasthaus. Wenn du eine Bleibe für die Nacht suchst, bist du herzlich willkommen.
+	AI_Output(hero, self, "Info_Mod_Hanna_Hi_15_00"); //Gdzie jestem tutaj?
+	AI_Output(self, hero, "Info_Mod_Hanna_Hi_17_01"); //W moim obszarze uslug. Jesli szukasz miejsca na nocleg, zapraszamy.
 };
 
 INSTANCE Info_Mod_Hanna_Preis (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Hanna_Preis (C_INFO)
 	information	= Info_Mod_Hanna_Preis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Je nachdem. Wie viel verlangst du?";
+	description	= "W zaleznosci od. Ile chcesz?";
 };
 
 FUNC INT Info_Mod_Hanna_Preis_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Hanna_Preis_Condition()
 
 FUNC VOID Info_Mod_Hanna_Preis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hanna_Preis_15_00"); //Je nachdem. Wie viel verlangst du?
-	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_01"); //Hmm... Du bist der Neue aus dem Minental und hast sicher keine vollen Taschen.
-	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_02"); //Wenn du friedlich bist und ein freies Bett findest, kannst du meinetwegen kostenlos übernachten.
-	AI_Output(hero, self, "Info_Mod_Hanna_Preis_15_03"); //Das ist eine angenehme Überraschung. Davon hatte ich in letzter Zeit wenige.
-	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_04"); //Ich kann auch nur so großzügig sein, weil ich finanziell nicht von dem Rasthaus abhängig bin.
-	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_05"); //(hintergründig) Aber davon dann ein andermal vielleicht mehr...
+	AI_Output(hero, self, "Info_Mod_Hanna_Preis_15_00"); //W zaleznosci od. Ile chcesz?
+	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_01"); //Hmm..... Jestes nowym facetem z Minental i prawdopodobnie nie jestes pelen kieszeni.
+	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_02"); //Jesli jestes spokojny i znajdziesz bezplatne lózko, mozesz zostac na noc za darmo.
+	AI_Output(hero, self, "Info_Mod_Hanna_Preis_15_03"); //To mile zaskoczenie. Ostatnio nie mialem ich zbyt wiele.
+	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_04"); //Moge byc tak hojny tylko dlatego, ze jestem finansowo niezalezny od reszty domu.
+	AI_Output(self, hero, "Info_Mod_Hanna_Preis_17_05"); //(Tlo) Ale potem byc moze innym razem moze wiecej....
 };
 
 INSTANCE Info_Mod_Hanna_Gaeste (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Hanna_Gaeste (C_INFO)
 	information	= Info_Mod_Hanna_Gaeste_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer übernachtet sonst noch hier?";
+	description	= "Kto jeszcze pozostaje tu dzis wieczorem?";
 };
 
 FUNC INT Info_Mod_Hanna_Gaeste_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mod_Hanna_Gaeste_Condition()
 
 FUNC VOID Info_Mod_Hanna_Gaeste_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hanna_Gaeste_15_00"); //Wer übernachtet sonst noch hier?
-	AI_Output(self, hero, "Info_Mod_Hanna_Gaeste_17_01"); //Eigentlich jeder, der von außerhalb kommt und keine Lust hat, sich in der Roten Laterne zu verausgaben.
-	AI_Output(self, hero, "Info_Mod_Hanna_Gaeste_17_02"); //Es kommt aber trotzdem sehr selten vor, dass ich meine Kundschaft nicht kenne. Es sind doch immer wieder dieselben Gesichter, die abends mehr oder weniger betrunken an mir vorbeitorkeln.
+	AI_Output(hero, self, "Info_Mod_Hanna_Gaeste_15_00"); //Kto jeszcze pozostaje tu dzis wieczorem?
+	AI_Output(self, hero, "Info_Mod_Hanna_Gaeste_17_01"); //Wlasciwie kazdy, kto przychodzi z zewnatrz i nie ma ochoty spedzac czasu w czerwonej latarni.
+	AI_Output(self, hero, "Info_Mod_Hanna_Gaeste_17_02"); //Niemniej jednak zdarza sie bardzo rzadko, ze nie znam swoich klientów. To zawsze te same twarze, które sa mniej lub bardziej pijane wieczorami.
 };
 
 INSTANCE Info_Mod_Hanna_Rasthaus (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Hanna_Rasthaus (C_INFO)
 	information	= Info_Mod_Hanna_Rasthaus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dein Rasthaus? Hast du keinen Mann?";
+	description	= "Twój obszar uslug? Nie masz meza?";
 };
 
 FUNC INT Info_Mod_Hanna_Rasthaus_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Mod_Hanna_Rasthaus_Condition()
 
 FUNC VOID Info_Mod_Hanna_Rasthaus_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hanna_Rasthaus_15_00"); //Dein Rasthaus? Hast du keinen Mann?
-	AI_Output(self, hero, "Info_Mod_Hanna_Rasthaus_17_01"); //(spöttisch) Ich nehme mal an, dass du aus einem hinterwäldlerischen Landstrich stammst, wenn du es nicht für eine Frechheit hältst, so etwas zu fragen.
-	AI_Output(self, hero, "Info_Mod_Hanna_Rasthaus_17_02"); //Ich komme sehr gut allein zurecht, und für den Notfall weiß ich, wie ich Hilfe organisieren kann. Und für kleinere Probleme tut's auch immer der Prügel.
+	AI_Output(hero, self, "Info_Mod_Hanna_Rasthaus_15_00"); //Twój obszar uslug? Nie masz meza?
+	AI_Output(self, hero, "Info_Mod_Hanna_Rasthaus_17_01"); //(smiesznie) Przypuszczam, ze jestes z kregoslupa, jesli nie sadzisz, ze zrozpaczeniem jest zadawanie tego rodzaju pytan.
+	AI_Output(self, hero, "Info_Mod_Hanna_Rasthaus_17_02"); //Potrafie radzic sobie bardzo dobrze na wlasna reke, a w sytuacji kryzysowej wiem jak zorganizowac pomoc. A w przypadku drobnych problemów to zawsze bicie.
 };
 
 INSTANCE Info_Mod_Hanna_ThorbenLehrling (C_INFO)
@@ -125,11 +125,11 @@ FUNC INT Info_Mod_Hanna_ThorbenLehrling_Condition()
 
 FUNC VOID Info_Mod_Hanna_ThorbenLehrling_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_00"); //Hallo. Ich würde gern Thorben sprechen.
-	AI_Output(hero, self, "Info_Mod_Hanna_ThorbenLehrling_15_01"); //Ich vertrete ihn heute. Möchtest du ein Möbelstück in Auftrag geben?
-	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_02"); //Du vermutest richtig. Ein betrunkener Gast hat meine Kommode für einen nächtlichen Angreifer gehalten und mit dem Degen schwer beschädigt.
-	AI_Output(hero, self, "Info_Mod_Hanna_ThorbenLehrling_15_03"); //Wir werden uns um die Reparatur kümmern.
-	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_04"); //Gut. Ich erwarte euch in meinem Haus.
+	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_00"); //Witaj. Chcialbym zobaczyc Thorben.
+	AI_Output(hero, self, "Info_Mod_Hanna_ThorbenLehrling_15_01"); //Reprezentuje go dzisiaj. Chcesz zamówic mebel?
+	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_02"); //Zdaje sie, ze dobrze. Pijany gosc zabral mi pijana komode na nocnego napastnika i mocno uszkodzil mieczem.
+	AI_Output(hero, self, "Info_Mod_Hanna_ThorbenLehrling_15_03"); //Zajmiemy sie naprawami.
+	AI_Output(self, hero, "Info_Mod_Hanna_ThorbenLehrling_17_04"); //Dobre. Bede czekac na Ciebie w moim domu.
 };
 
 INSTANCE Info_Mod_Hanna_Meldor (C_INFO)
@@ -152,17 +152,17 @@ FUNC INT Info_Mod_Hanna_Meldor_Condition()
 
 FUNC VOID Info_Mod_Hanna_Meldor_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_00"); //Was kann ich für dich tun?
-	AI_Output(hero, self, "Info_Mod_Hanna_Meldor_15_01"); //Sumpfkrautmeldor schickt mich.
-	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_02"); //Oh, ein Neuer, was?
-	AI_Output(hero, self, "Info_Mod_Hanna_Meldor_15_03"); //Was seid ihr überhaupt?
-	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_04"); //Hier, nimm diesen Schlüssel und geh durch die Kellertür.
+	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_00"); //Co moge dla Ciebie zrobic?
+	AI_Output(hero, self, "Info_Mod_Hanna_Meldor_15_01"); //Przyslala mi jastrzab bagienny.
+	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_02"); //Ach, nowy facet, huh?
+	AI_Output(hero, self, "Info_Mod_Hanna_Meldor_15_03"); //Jaki jestes facetem?
+	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_04"); //Wez ten klucz i przejdz przez drzwi piwnicy.
 
 	B_GiveInvItems	(self, hero, ItKe_ThiefGuildKey_Hotel_MIS, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_05"); //Dort wirst du deine Antwort finden.
+	AI_Output(self, hero, "Info_Mod_Hanna_Meldor_17_05"); //Tutaj znajdziesz odpowiedz.
 
-	B_LogEntry	(TOPIC_MOD_MELDOR_HANNA, "Hanna hat mir einen Schlüssel gegeben, der die Tür zu ihrem Keller öffnet. Ich bin gespannt, was mich dort unten erwartet.");
+	B_LogEntry	(TOPIC_MOD_MELDOR_HANNA, "Hanna dala mi klucz, który otwiera drzwi do piwnicy. Zastanawiam sie, co mnie tam czeka.");
 };
 
 INSTANCE Info_Mod_Hanna_Keller (C_INFO)
@@ -173,7 +173,7 @@ INSTANCE Info_Mod_Hanna_Keller (C_INFO)
 	information	= Info_Mod_Hanna_Keller_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt Probleme.";
+	description	= "Istnieja problemy.";
 };
 
 FUNC INT Info_Mod_Hanna_Keller_Condition()
@@ -186,12 +186,12 @@ FUNC INT Info_Mod_Hanna_Keller_Condition()
 
 FUNC VOID Info_Mod_Hanna_Keller_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hanna_Keller_15_00"); //Es gibt Probleme.
-	AI_Output(self, hero, "Info_Mod_Hanna_Keller_17_01"); //Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Hanna_Keller_15_02"); //Einer der Händler hat nachts festgestellt, dass mehrere Gestalten aus dem Keller gekommen sind. Passt besser auf.
-	AI_Output(self, hero, "Info_Mod_Hanna_Keller_17_03"); //Danke, werden wir machen.
+	AI_Output(hero, self, "Info_Mod_Hanna_Keller_15_00"); //Istnieja problemy.
+	AI_Output(self, hero, "Info_Mod_Hanna_Keller_17_01"); //Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Hanna_Keller_15_02"); //Jeden z kupców zauwazyl noca, ze z piwnicy wyszlo kilka postaci. Lepiej obserwowac swój krok.
+	AI_Output(self, hero, "Info_Mod_Hanna_Keller_17_03"); //Dzieki temu zrobimy to.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_HANNA, "Ich habe Hanna gewarnt. Hoffentlich kommt so etwas nicht mehr vor.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ANDRE_HANNA, "Ostrzeglem Hanne. Mam nadzieje, ze to sie nie powtórzy.");
 };
 
 INSTANCE Info_Mod_Hanna_Flugblaetter (C_INFO)
@@ -202,7 +202,7 @@ INSTANCE Info_Mod_Hanna_Flugblaetter (C_INFO)
 	information	= Info_Mod_Hanna_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Hanna_Flugblaetter_Condition()
@@ -223,11 +223,11 @@ FUNC VOID Info_Mod_Hanna_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hanna_Flugblaetter_17_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Hanna_Flugblaetter_17_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Hanna_Flugblaetter_17_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Hanna_Flugblaetter_17_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

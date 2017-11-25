@@ -2,7 +2,7 @@ instance Mod_7298_DJG_Butch_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Butch";
+	name =							"rzez";
 	Npctype =						Npctype_Main;
 	guild =							GIL_mil;      
 	level =							15;

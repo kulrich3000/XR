@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Aabid_Hi (C_INFO)
 	information	= Info_Mod_Aabid_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Aabid_Hi_Condition()
@@ -18,11 +18,11 @@ FUNC VOID Info_Mod_Aabid_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_00"); //Mein Name ist Aabid. Ich bin einer der Gauner hier und gleichzeitig Händler für außergewöhnliche Sorten von Tabak und Sumpfkrautstängeln.
-	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_01"); //Interessant. Kann ich mal dein Angebot sehen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_02"); //Nein, das geht leider nicht.
-	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_03"); //Wieso nicht?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_04"); //Ich warte schon seit einiger Zeit auf die Lieferung von drei Sumpfkrautpaketen, aber die Kerle haben mich anscheinend vergessen und ich komme einfach nicht aus dem Versteck.
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_00"); //Nazywam sie Aabid. Jestem tu jednym z oszustów i jednoczesnie handlarzem niezwyklymi odmianami tytoniu i lodyg ziól bagiennych.
+	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_01"); //Ciekawe. Czy moge zobaczyc Panstwa oferte?
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_02"); //Nie, nie moge tego zrobic.
+	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_03"); //Dlaczego nie?
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_04"); //Czekam od jakiegos czasu na dostawe trzech paczek, ale wydaje mi sie, ze chlopaki mnie zapomnieli i po prostu nie moge wyjsc z ukrycia.
 };
 
 INSTANCE Info_Mod_Aabid_Aufgabe (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Aabid_Aufgabe (C_INFO)
 	information	= Info_Mod_Aabid_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Soll ich dir die Sumpfkrautpakete bringen?";
+	description	= "Czy przyniose wam pakiety chwastów?";
 };
 
 FUNC INT Info_Mod_Aabid_Aufgabe_Condition()
@@ -47,21 +47,21 @@ FUNC INT Info_Mod_Aabid_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Aabid_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_00"); //Soll ich dir die Sumpfkrautpakete bringen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_01"); //Das wäre wirklich gut, wenn du das machen würdest. Aber warum willst du das machen?
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_02"); //Ich möchte mich den Gaunern anschließen. Dazu brauche ich jedoch eure Stimmen.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_03"); //Würdest du mir nach dieser Aufgabe eventuell deine Stimme geben.
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_04"); //Wenn du alle Pakete bekommen kannst, dann werde ich dir natürlich meine Stimme geben.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_05"); //Abgemacht. Wo soll ich die Pakete abholen?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_06"); //Alle drei Händler findest du in der Stadt. Ihre Namen sind Meldor, Borka und zuletzt Jason, ein Milizionär.
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_07"); //Jemand von der Miliz handelt mit Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_08"); //Meinst du die halten sich alle an ihre Regeln?
-	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_09"); //Nein. Also gut, ich werde die drei mal aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_10"); //Gut. Komm wieder, wenn du die Pakete hast.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_00"); //Czy przyniose wam pakiety chwastów?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_01"); //To byloby naprawde dobre, gdybyscie to zrobili. Ale dlaczego chcialbys to zrobic?
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_02"); //Chcialbym dolaczyc do oszustów. Potrzebuje jednak panstwa glosu.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_03"); //Czy chcialbys oddac glos po tym zadaniu?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_04"); //Jesli otrzymasz wszystkie pakiety, oddam oczywiscie mój glos.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_05"); //Ladunek. Gdzie nalezy odebrac paczki?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_06"); //W miescie mozna znalezc wszystkich trzech dealerów. Jej imiona to Meldor, Borka i wreszcie Jason, militaman.
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_07"); //Ktos z milicji handlujacej bagnista ambrozja?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_08"); //Czy uwazasz, ze wszyscy oni przestrzegaja swoich zasad?
+	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_09"); //Nie. Wszystko w porzadku, zobacze je trzy razy.
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_10"); //Dobre. Wróc po otrzymaniu pakietów.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_AABID_PAKET, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Ich habe mit Aabid gesprochen, einem er Gauner der Assassinen. Er will mir seine Stimme geben, aber nur, wenn ich ihm drei Pakete voller Sumpfkraut bringe, die eigentlich von verschiedenen 'Händlern' der Stadt hätten geliefert werden müssen. Dieser Personen sind Meldor, Borka und Jason. Wenn ich von ihnen die Pakete erhalten habe, soll ich mich wieder bei Aabid melden.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Rozmawialam z Aabidem, jeden z nich zabil oszustów. Chce mi oddac swój glos, ale tylko wtedy, gdy przyniose mu trzy paczki chwastów, które powinny byc dostarczone przez róznych 'kupców' w miescie. Sa to: Meldor, Borka i Jason. Gdy otrzymalem od nich paczki, powinienem skontaktowac sie z Aabid.");
 };
 
 INSTANCE Info_Mod_Aabid_HabPakete (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Aabid_HabPakete (C_INFO)
 	information	= Info_Mod_Aabid_HabPakete_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Pakete erhalten können.";
+	description	= "Otrzymalem wszystkie paczki.";
 };
 
 FUNC INT Info_Mod_Aabid_HabPakete_Condition()
@@ -86,22 +86,22 @@ FUNC INT Info_Mod_Aabid_HabPakete_Condition()
 
 FUNC VOID Info_Mod_Aabid_HabPakete_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_00"); //Ich habe alle Pakete erhalten können.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_01"); //(ungläubig) Du verarscht mich!
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_02"); //Nein, hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_00"); //Otrzymalem wszystkie paczki.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_01"); //To ty mnie oszukujesz!
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_02"); //Nie, tutaj sa.
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 3);
 	Npc_RemoveInvItems(self, ItMi_HerbPaket, 3);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_04"); //Das sind tatsächlich alle, wie hast du das nur gemacht?
-	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_05"); //Reine Intuition, würde ich sagen.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_06"); //Ich kann dir nicht genug danken. Hier, nimm dieses Gold als Zeichen meiner Dankbarkeit.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_04"); //Oni wszyscy, jak to zrobiliscie?
+	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_05"); //Powiedzialbym: Czysta intuicja.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_06"); //Nie moge Ci wystarczajaco podziekowac. Tutaj wezmy to zloto jako znak mojej wdziecznosci.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_07"); //Außerdem bekommst du meine Stimme.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_07"); //Poza tym otrzymuje mój glos.
 
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Ich habe Aabid alle Pakte gebracht und er war sehr zufrieden mit meiner Leistung. Anscheinend hat er damit nicht gerechnet. Nunja, mir soll's recht sein, denn ich bin nun eine Stimme und 500 Goldmünzen reicher.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Przynioslam Aabid wszystkie pakty i byl bardzo zadowolony z mojego wystepu. Najwyrazniej nie spodziewal sie tego. No cóz, to dobrze, bo teraz mam jeden glos i 500 zlotych monet bogatszych.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);

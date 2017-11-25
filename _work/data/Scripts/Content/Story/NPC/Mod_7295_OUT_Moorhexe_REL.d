@@ -1,7 +1,7 @@
 INSTANCE Mod_7295_OUT_Moorhexe_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Moorhexe";
+	name 		= "torfowisko";
 	guild 		= GIL_DMT;
 	id 			= 7295;
 	voice 		= 17;

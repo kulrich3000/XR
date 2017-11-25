@@ -1,7 +1,7 @@
 instance Mod_1968_EIS_Dorfbewohner_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dorfbewohner";	
+	name 		= "wiesniacy";	
 	guild 		= GIL_out;
 	id 			= 1968;
 	voice 		= 6;

@@ -1,7 +1,7 @@
 instance Mod_573_NONE_Elvrich_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Elvrich"; 
+	name 		= "Elzbieta"; 
 	guild 		= GIL_PAL;
 	id 			= 573;
 	voice 		= 24;

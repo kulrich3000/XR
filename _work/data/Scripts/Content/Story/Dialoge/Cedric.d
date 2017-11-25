@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cedric_Hi (C_INFO)
 	information	= Info_Mod_Cedric_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Cedric_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Cedric_Hi_Condition()
 FUNC VOID Info_Mod_Cedric_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Cedric_Hi_12_01"); //Ich bin Cedric, Kampflehrer der Miliz, der Ritter und der Paladine.
+	AI_Output(self, hero, "Info_Mod_Cedric_Hi_12_01"); //Jestem Cedrykiem, nauczycielem milicji, rycerzy i paladynów walczacych.
 };
 
 INSTANCE Info_Mod_Cedric_Irdorath (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Cedric_Irdorath (C_INFO)
 	information	= Info_Mod_Cedric_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hörte das Schiff der Paladine hätte sich zuletzt unter deinem Kommando befunden.";
+	description	= "Slyszalem, jak ostatni okret Paladina byl ostatnim dowódca.";
 };
 
 FUNC INT Info_Mod_Cedric_Irdorath_Condition()
@@ -42,20 +42,20 @@ FUNC INT Info_Mod_Cedric_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Cedric_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_00"); //Ich hörte das Schiff der Paladine hätte sich zuletzt unter deinem Kommando befunden ...
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_01"); //Ja, genau. Weshalb fragst du ... aber einen Augenblick mal, du bist doch jener Mann, dem auf Weisung der Magier das Schiff überlassen wurde ...
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_02"); //Was kann ich für dich tun?
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_03"); //Nun, du könntest ein weiteres Mal die Funktion des Kapitäns auf der Esmeralda übernehmen und mich zur Insel geleiten.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_04"); //Ahh ja, das ist also dein Anliegen ... ja, als Streiter für Recht und Ordnung komme ich gar nicht umhin, dieser Bitte nachzukommen.
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_05"); //Wirklich?
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_06"); //Selbstverständlich. Es ist die oberste Pflicht eines Paladins und Diener Innos' alles in seiner Macht stehende zu tun, um Finsternis und Unheil zu bannen.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_07"); //Einige der fähigsten meiner Mitstreiter werden uns zudem begleiten und den Erfolg unserer Mission gewährleisten.
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_08"); //Großartig ...
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_09"); //Nur ein Anliegen habe ich an dich, bevor wir aufbrechen können.
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_10"); //Ja?
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_11"); //Veranlasse bitte zumindest einen erfahrenen Magier des Feuers dazu, uns auf dieser Reise zu begleiten.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_12"); //Den Segen eines Magiers Innos möchte ich nicht auf unserer Exkursion missen ...
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_13"); //Ich werde dann zum Hafen gehen und dort warten.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_00"); //Ostatnio uslyszalem, ze okret Paladina byl pod panskim dowództwem...
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_01"); //Tak, to prawda. Dlaczego pytasz....? ale na chwile jestes czlowiekiem, który zostal zarzadzony przez magów, aby opuscic statek....
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_02"); //Co moge dla Ciebie zrobic?
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_03"); //Cóz, mozna by jeszcze raz przejac funkcje kapitana na Esmeraldzie i eskortowac mnie na wyspe.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_04"); //Tak, wiec to jest twoja prosba.... Tak, jako bojownik o porzadek publiczny, nie moge nie zastosowac sie do tej prosby.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_05"); //Naprawde?
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_06"); //Oczywiscie oczywiscie. Najwyzszym obowiazkiem slugi Paladina i Innosa jest uczynic wszystko, co w jego mocy, aby wyeliminowac ciemnosc i nieszczescie.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_07"); //Niektórzy z moich kolegów bedzie nam towarzyszyc i zapewnic sukces naszej misji.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_08"); //Wielki.....
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_09"); //Jest tylko jedna rzecz, która mam dla Ciebie, zanim wyjdziemy.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath_15_10"); //Tak?
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_11"); //Prosimy poprosic co najmniej jednego doswiadczonego maga strazaka, aby towarzyszyl nam w tej podrózy.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_12"); //Nie chce przegapic blogoslawienstwa maga Innosa na naszej wycieczce.....
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath_12_13"); //Ide do portu i tam bede czekac.
 
 	Mod_Kapitan = 1;
 	Mod_CedricDabei = 1;
@@ -65,7 +65,7 @@ FUNC VOID Info_Mod_Cedric_Irdorath_Info()
 
 	Mod_CrewCount += 4;
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cedric brennt mit seinem Eifer geradewegs auf die Mission. Er wünscht sich jedoch noch einen Feuermagier an Bord.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cedryk plonie z zapalem do misji. Ale wciaz chce na pokladzie maga pozarowego.");
 
 	AI_StopProcessInfos	(self);
 
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Cedric_Irdorath2 (C_INFO)
 	information	= Info_Mod_Cedric_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Feuermagier Milten wird uns begleiten.";
+	description	= "Czarodziej ognia Milten bedzie nam towarzyszyl.";
 };
 
 FUNC INT Info_Mod_Cedric_Irdorath2_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mod_Cedric_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Cedric_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath2_15_00"); //Feuermagier Milten wird uns begleiten.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath2_12_01"); //Sehr gut. Mit Innos Segen werden wir die die Scharen der Unholde versengen.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath2_15_00"); //Czarodziej ognia Milten bedzie nam towarzyszyl.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath2_12_01"); //Bardzo dobry. Z blogoslawienstwem Inno spalimy stada przyjaciól.
 
 	Mod_CedricLos = 2;
 
@@ -128,27 +128,27 @@ FUNC INT Info_Mod_Cedric_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Cedric_Irdorath4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_00"); //Was soll das werden?!
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_00"); //Co ty robisz?
 
 	B_Say	(hero, self, "$WASMEINSTDU");
 
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_01"); //Du heuerst mich nebst einem anderen Kapitän an?! Was soll das?!
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_02"); //Triff deine Entscheidung, wer dich denn nun begleiten soll! Jetzt gleich!
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_03"); //Du solltest unsere Mission mit der gleichen Ernsthaftigkeit begehen, wie ich.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_04"); //Weitere Sperenzchen werde ich nicht dulden ... auch, wen du mit in unsere Mannschaft nimmst werde ich genau verfolgen.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_01"); //Zatrudniasz mnie u innego kapitana! Co ty robisz?
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_02"); //Podejmij decyzje, kto powinien Ci teraz towarzyszyc! Wlasnie teraz, teraz!
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_03"); //Powinniscie wykonywac nasza misje z taka sama powaga jak ja.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_12_04"); //Nie bede juz dluzej tolerowal..... Nawet jesli wprowadzisz sie do naszej zalogi, bede uwaznie sledzil.
 
 	Info_ClearChoices	(Info_Mod_Cedric_Irdorath4);
 
-	Info_AddChoice	(Info_Mod_Cedric_Irdorath4, "Tut mir Leid, aber ich entscheide mich in dem Fall für Jack.", Info_Mod_Cedric_Irdorath4_B);
-	Info_AddChoice	(Info_Mod_Cedric_Irdorath4, "In Ordnung, du sollst mein Kapitän sein.", Info_Mod_Cedric_Irdorath4_A);
+	Info_AddChoice	(Info_Mod_Cedric_Irdorath4, "Przykro mi, ale w tym przypadku wybieram Jack.", Info_Mod_Cedric_Irdorath4_B);
+	Info_AddChoice	(Info_Mod_Cedric_Irdorath4, "Wlasciwie chce, zebys byl moim kapitanem.", Info_Mod_Cedric_Irdorath4_A);
 };
 
 FUNC VOID Info_Mod_Cedric_Irdorath4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath4_B_15_00"); //Tut mir Leid, aber ich entscheide mich in dem Fall für Jack.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_01"); //(fast außer sich) Wie, du willst mich doch verhöhnen ...?!
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_02"); //(beherrscht sich wieder, streng) In Ordnung, wie du meinst ...
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_03"); //(halblaut) Ich befürchte, dass die Magier dem falschen unser aller Schicksal anvertraut haben.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath4_B_15_00"); //Przykro mi, ale w tym przypadku wybieram Jack.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_01"); //(prawie obok siebie) Jak próbujesz mnie wysmiewac....?
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_02"); //(podjete ponownie, surowo) Wszystko w porzadku, jak mówisz,....
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_B_12_03"); //(pól glosno) Obawiam sie, ze magowie powierzyli nasz los zlemu.
 
 	Info_ClearChoices	(Info_Mod_Cedric_Irdorath4);
 
@@ -169,8 +169,8 @@ FUNC VOID Info_Mod_Cedric_Irdorath4_B()
 
 FUNC VOID Info_Mod_Cedric_Irdorath4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath4_A_15_00"); //In Ordnung, du sollst mein Kapitän sein.
-	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_A_12_01"); //Gut, dann geh jetzt den weiteren Vorbereitungen nach.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath4_A_15_00"); //Wlasciwie chce, zebys byl moim kapitanem.
+	AI_Output(self, hero, "Info_Mod_Cedric_Irdorath4_A_12_01"); //Cóz, rozpocznij przygotowania.
 
 	Info_ClearChoices	(Info_Mod_Cedric_Irdorath4);
 
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Cedric_Irdorath3 (C_INFO)
 	information	= Info_Mod_Cedric_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns aufbrechen, es ist alles vorbereitet.";
+	description	= "Zalózmy, wszystko to jest skonfigurowane.";
 };
 
 FUNC INT Info_Mod_Cedric_Irdorath3_Condition()
@@ -206,7 +206,7 @@ FUNC INT Info_Mod_Cedric_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Cedric_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath3_15_00"); //Lass uns aufbrechen, es ist alles vorbereitet.
+	AI_Output(hero, self, "Info_Mod_Cedric_Irdorath3_15_00"); //Zalózmy, wszystko to jest skonfigurowane.
 
 	if (Mod_BonesDabei > 0)
 	|| (Mod_CordDabei > 0)
@@ -215,40 +215,40 @@ FUNC VOID Info_Mod_Cedric_Irdorath3_Info()
 	|| (Mod_CassiaDabei > 0)
 	|| (Mod_SagittaDabei > 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_01"); //Achja? Mir scheint aber, dass uns Leute begleiten sollen, die nichts auf dieser Mission verloren haben sollen.
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_01"); //Ach, tak? Wydaje mi sie jednak, ze powinnismy byc w towarzystwie ludzi, którym mówi sie, ze nic nie stracili na misji.
 
 		B_Say	(hero, self, "$WASMEINSTDU");
 
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_02"); //Piraten, Söldner, Diener Beliar’s und Frauen haben nichts auf einem Schiff der Paladine verloren.
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_03"); //Sie würden nur den Erfolg unserer Mission gefährden.
-		AI_Output(hero, self, "Info_Mod_Cedric_Irdorath3_15_04"); //Wie?
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_02"); //Piraci, najemnicy, sludzy Beliara i kobiety nic nie stracili na okrecie Paladynów.
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_03"); //Zagrazalyby one jedynie powodzeniu naszej misji.
+		AI_Output(hero, self, "Info_Mod_Cedric_Irdorath3_15_04"); //Jak?
 
 		if (Mod_BonesDabei > 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_05"); //Piraten, üble Halunken, Halsabschneider, Mörder.
+			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_05"); //Piraci, zlosliwi oszusci, kutroatrzy, mordercy.
 		};
 		if (Mod_CordDabei > 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_06"); //Söldner, delinquente Schläger aus der Kolonie, die immer noch dem König die Gefolgschaft verweigern.
+			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_06"); //Nabozency, przestepcze bandyci z kolonii, którzy wciaz odmawiaja pójscia za królem.
 		};
 		if (Mod_RavenDabei > 0)
 		|| (Mod_MyxirDabei > 0 && Mod_MyxirDabei < 4)
 		{
-			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_07"); //Belianer, Diener des finsteren Gottes, bei denen man sich nicht einmal sicher sein kann, ob sie nicht mit dem Urheber des Unheils unter einer Decke stecken.
+			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_07"); //Belianie, sludzy ciemnego Boga, w których nie mozna nawet byc pewnym, ze nie znajduja sie w cieniu sprawcy zlosliwosci.
 		};
 		if (Mod_CassiaDabei > 0)
 		|| (Mod_SagittaDabei > 0)
 		{
-			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_08"); //Für Frauen ist solcherlei Unternehmung schlichtweg zu gefährlich und ich könnte es zu ihrer eigenen Sicherheit nicht verantworten, sie mitzunehmen.
-			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_09"); //Außerdem würden sie die Männer nur von der drängenden Mission ablenken ...
+			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_08"); //Dla kobiet takie przedsiewziecie jest po prostu zbyt niebezpieczne i nie moglem ich zabrac dla wlasnego bezpieczenstwa.
+			AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_09"); //Poza tym tylko odwróciliby uwage mezczyzn od pilnej misji.... Wiecej
 		};
 
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_10"); //Also, sorge dafür, dass sie gleich wieder verschwinden.
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_11"); //Eher werde ich mich nicht zum Aufbruch bereit erklären.
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_10"); //Wiec upewnij sie, ze natychmiast znikaja.
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_11"); //Wolalbym raczej nie byc gotowy do odejscia.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_12"); //Vortrefflich. Auf zu ruhmreichen Taten.
+		AI_Output(self, hero, "Info_Mod_Cedric_Irdorath3_12_12"); //Doskonaly. Do chwalebnych czynów.
 
 		Mod_CedricLos = 3;
 
@@ -264,7 +264,7 @@ INSTANCE Info_Mod_Cedric_Lehrer (C_INFO)
 	information	= Info_Mod_Cedric_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Cedric_Lehrer_Condition()
@@ -283,10 +283,10 @@ FUNC VOID Info_Mod_Cedric_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Cedric_Lehrer_12_00"); //Ich kann dir den Umgang mit Einhändern und Zweihändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Cedric_Lehrer_12_00"); //Potrafie nauczyc Cie obslugiwac ludzi jedna i dwie rece.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Cedric kann mir den Umgang mit Einhändern und Zweihändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Cedric moze nauczyc mnie obslugiwac ludzi jedna i dwie rece.");
 };
 
 INSTANCE Info_Mod_Cedric_Lernen (C_INFO)
@@ -297,7 +297,7 @@ INSTANCE Info_Mod_Cedric_Lernen (C_INFO)
 	information	= Info_Mod_Cedric_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Cedric_Lernen_Condition()
@@ -314,7 +314,7 @@ FUNC INT Info_Mod_Cedric_Lernen_Condition()
 
 FUNC VOID Info_Mod_Cedric_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cedric_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Cedric_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Cedric_Lernen);
 

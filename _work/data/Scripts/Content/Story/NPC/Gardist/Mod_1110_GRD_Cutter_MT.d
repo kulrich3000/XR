@@ -2,7 +2,7 @@ instance Mod_1110_GRD_Cutter_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		= 	"Cutter";
+	name 		= 	"redaktor";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		=	20;

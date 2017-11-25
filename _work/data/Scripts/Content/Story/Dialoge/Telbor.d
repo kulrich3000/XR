@@ -18,25 +18,25 @@ FUNC INT Info_Mod_Telbor_Hi_Condition()
 
 FUNC VOID Info_Mod_Telbor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_00"); //(resigniert) Hallo Fremder. Was treibt dich in dieser schweren Zeit hierher?
-	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_01"); //Du wirkst recht betrübt. Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_02"); //Ich weiß gar nicht, wo ich beginnen soll. Alles fing mit diesem dunklen Pilger an ...
-	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_03"); //Der dunkle Pilger?
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_04"); //Ja, er kam hier gestern Abend die Stufen hinauf und ist zunächst im Wald verschwunden.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_05"); //Einige Stunden später kam er zurück und ersuchte Akil um eine Bleibe für die Nacht. Akil ist ein gläubiger Mann und wollte nicht das Gastrecht verletzten, auch wenn ihm der Pilger in dunklem Gewand nicht ganz Geheuer war.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_06"); //Er blieb jedenfalls die Nacht über, sprach während dieser Zeit kein Wort und verschwand am nächsten morgen Richtung Orlans Taverne.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_07"); //Und seitdem hat das Unheil seinen Lauf genommen.
-	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_08"); //Was ist danach vorgefallen?
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_09"); //Es fing zunächst ganz unscheinbar an. Von dem Friedhof aus dem Wald drangen seit dem immer wieder seltsame Geräusche, ein Stöhnen und Ächzen.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_10"); //Mein Kumpel Tonak ist losgezogen, um nachzusehen, was vor sich geht und nicht wiedergekommen. Etwas Schlimmes muss ihm zugestoßen sein.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_11"); //Aber das ist erst der Anfang. Ehnim und Egill hatten zwar immer wieder kleinere Auseinandersetzungen, aber an diesem Tag waren sie wie wildgewordene Wölfe.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_12"); //Es begann zunächst mit einem kleinen Wortwechsel, der sich rasch zum heftigen Streit auflud.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_13"); //Zuletzt waren beide so außer sich, dass sie aufeinander losgingen und Egill seinen Bruder so unglücklich mit der Sichel am Hals traf, dass dieser schwer verletzt zu Boden ging.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_14"); //Erschrocken über seine eigene Tat rannte Egill Richtung Orlan davon und ist ebenfalls seitdem verschwunden.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_00"); //Hej, nieznajomy. Co przywoluje pana tutaj w tym trudnym czasie?
+	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_01"); //Wydaje sie pan dosc smutny. Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_02"); //Nie wiem nawet, od czego zaczac. Wszystko zaczelo sie od tej mrocznej pielgrzymki....
+	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_03"); //Mroczny pielgrzym?
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_04"); //Tak, przyszedl tu wczoraj wieczorem po schodach i zniknal w lesie.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_05"); //Kilka godzin pózniej wrócil i poprosil Akila o nocleg. Akil jest czlowiekiem wiary i nie chcial naruszac prawa do goscinnosci, nawet jesli pielgrzym nie byl calkiem potworem w ciemnej szacie.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_06"); //W kazdym razie pozostal przez cala noc, w tym czasie nie mówil ani slowa i nastepnego ranka zniknal w kierunku tawerny Orlana.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_07"); //I od tego czasu kleska przybrala swój bieg.
+	AI_Output(hero, self, "Info_Mod_Telbor_Hi_15_08"); //Co sie potem stalo?
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_09"); //Na poczatku wszystko zaczelo sie niezauwazalnie. Od tego czasu na cmentarzu w lesie dochodza dziwne odglosy, jeki i jeki.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_10"); //Mój przyjaciel Tonak poszedl zobaczyc, co sie dzieje i nie wrócil. Cos strasznego musialo mu sie przydarzyc.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_11"); //Ale to dopiero poczatek. Ehnim i Egill mieli kilka mniejszych walk, ale tego dnia byli jak dzikie wilki.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_12"); //Zaczelo sie od niewielkiej wymiany slów, która szybko przerodzila sie w gwaltowny spór.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_13"); //Obydwaj byli tak zdenerwowani, ze Egill uderzyl brata tak nieszczesliwego sierpa na szyi, ze zostal ciezko ranny.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hi_12_14"); //Przerazony jego wlasnymi dzialaniami Egill uciekl w kierunku Orlanu i od tego czasu równiez zniknal.
 
 	Log_CreateTopic	(TOPIC_MOD_AKILSHOF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_AKILSHOF, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_DUNKLERPILGER, TOPIC_MOD_AKILSHOF, "Es wird immer mysteriöser. Seitdem der dunkle Pilger auf Akil’s Hof war, sind dort verheerende Dinge vorgefallen. Er ist anschließend Richtung Taverne entschwunden.", "Seit dem Besuch des Pilgers sind beunruhigende Dinge auf dem Hof vorgefallen. Von dem Friedhof im Wald kamen seltsame Geräusche. Tonak ist nicht zurückgekommen, nachdem er dort nach dem Rechten sehen wollte. Egill und Ehnim sind wie besessen aufeinander losgegangen. Ehnim wurde dabei schwer verwundet und Egill ist Richtung Taverne davon gelaufen.");
+	B_LogEntry_More	(TOPIC_MOD_DUNKLERPILGER, TOPIC_MOD_AKILSHOF, "Staje sie coraz bardziej tajemniczy. Od czasu, gdy do farmy Akila przybyl mroczny pielgrzym, wydarzyly sie tam niszczycielskie wydarzenia. Potem zniknal w kierunku tawerny.", "Od czasu wizyty pielgrzymów na farmie zdarzyly sie niepokojace wydarzenia. Z cmentarza w lesie wydarzyly sie dziwne dzwieki. Tonak nie wrócil po tym, jak próbowal tam patrzec. Egill i Ehnim poszli sobie nawzajem jak szalony. Ehnim byl ciezko ranny i Egill uciekl do tawerny.");
 
 	B_GivePlayerXP	(200);
 
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Telbor_WhatHappenedNext (C_INFO)
 	information	= Info_Mod_Telbor_WhatHappenedNext_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und was ist mit den anderen auf dem Hof?";
+	description	= "A co z innymi na podwórku?";
 };
 
 FUNC INT Info_Mod_Telbor_WhatHappenedNext_Condition()
@@ -66,11 +66,11 @@ FUNC INT Info_Mod_Telbor_WhatHappenedNext_Condition()
 
 FUNC VOID Info_Mod_Telbor_WhatHappenedNext_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext_15_00"); //Und was ist mit den anderen auf dem Hof? Warum seid ihr nicht zusammen alle auf die Suche gegangen?
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext_12_01"); //Wenn die anderen doch nur dazu in der Lage wären. Seit dieser Nacht sind sie alle schwer erkrankt und haben sich in das Haus zurückgezogen.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext_12_02"); //Es ist besser, wenn du ihnen nicht zu nahe kommst, du könntest ebenfalls erkranken.
+	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext_15_00"); //A co z innymi na podwórku? Dlaczego nie wszyscy razem szukali?
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext_12_01"); //Gdyby tylko inni mogli to zrobic. Od tamtej nocy wszyscy sa powaznie chorzy i wycofali sie do domu.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext_12_02"); //Lepiej jest, jesli nie zblizysz sie do nich zbyt blisko, mozesz równiez zachorowac.
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Alle anderen sind schwer erkrankt und haben sich in das Haus zurückgezogen.");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Wszyscy pozostali sa powaznie chorzy i przeszli na emeryture.");
 };
 
 INSTANCE Info_Mod_Telbor_WhatHappenedNext2 (C_INFO)
@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Telbor_WhatHappenedNext2 (C_INFO)
 	information	= Info_Mod_Telbor_WhatHappenedNext2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit dir? Fühlst du dich wohl?";
+	description	= "Co jest z Toba? Czy masz racje?";
 };
 
 FUNC INT Info_Mod_Telbor_WhatHappenedNext2_Condition()
@@ -94,11 +94,11 @@ FUNC INT Info_Mod_Telbor_WhatHappenedNext2_Condition()
 
 FUNC VOID Info_Mod_Telbor_WhatHappenedNext2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext2_15_00"); //Was ist mit dir? Fühlst du dich wohl?
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_01"); //Stimmt, das hatte ich noch gar nicht erwähnt.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_02"); //Ich war an diesem Abend in der Stadt um unsere Waren zu liefern und sonstige Erledigungen zu machen und als es schon zu dunkel für den Rückweg war, blieb ich die Nacht über in der Herberge.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_03"); //Ich kam erst früh am nächsten morgen zurück und sah gerade noch den Pilger Richtung Orlan verschwinden.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_04"); //Dieser verfluchte Unhold, diese Ausgeburt des Bösen . Er muss für all das verantwortlich sein.
+	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext2_15_00"); //Co jest z Toba? Czy masz racje?
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_01"); //To prawda, nie wspomnialem nawet o tym.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_02"); //Bylem tamtej nocy w miescie, aby dostarczyc towar i zrobic inne rzeczy, a kiedy bylo juz zbyt ciemno na droge powrotna, zostalem w hostelu na noc.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_03"); //Wrócilem wczesnie rano nastepnego ranka i wlasnie zobaczylem, jak pielgrzym wyjezdza do Orlanu.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext2_12_04"); //Ten przeklety pasjonat, ten tarlo zla. Musi byc za to odpowiedzialny.
 };
 
 INSTANCE Info_Mod_Telbor_WhatHappenedNext3 (C_INFO)
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Telbor_WhatHappenedNext3 (C_INFO)
 	information	= Info_Mod_Telbor_WhatHappenedNext3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was willst du jetzt weiter machen?";
+	description	= "Co zamierzasz teraz zrobic?";
 };
 
 FUNC INT Info_Mod_Telbor_WhatHappenedNext3_Condition()
@@ -122,16 +122,16 @@ FUNC INT Info_Mod_Telbor_WhatHappenedNext3_Condition()
 
 FUNC VOID Info_Mod_Telbor_WhatHappenedNext3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext3_15_00"); //Was willst du jetzt weiter machen?
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_01"); //Ich weiß es nicht. Hier weg kann ich sowieso nicht.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_02"); //Ich muss da bleiben, um vorbeikommende Wanderer davor zu warnen, sich dem Haus zu nähern.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_03"); //Außerdem könnten wilde Tiere aus dem Wald über den verletzten Ehnim und die Erkrankten herfallen.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_04"); //Aber andererseits brauchen sie unbedingt Medizin und Ehnim Heilung, sonst überstehen sie die nächsten Tage vielleicht nicht.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_05"); //Wenn du die Zeit und die Mittel dafür findest, so würde ich dich bitten zu versuchen, irgendwo Hilfe für uns zu finden.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_06"); //Vielleicht im Kloster, oder in der Stadt, wo es einen heilkundigen Wassermagier gibt, ... oder auch die Kräuterhexe in der Nähe des Großbauernhofs.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_07"); //Aber beeile dich bitte, sonst ist es schlecht um uns alle bestellt.
+	AI_Output(hero, self, "Info_Mod_Telbor_WhatHappenedNext3_15_00"); //Co zamierzasz teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_01"); //Nie wiem, panie posle. Nie moge tu i tak wyjechac.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_02"); //Musze zostac tam, aby ostrzec przejezdzajacych spacerowiczów przed zblizaniem sie do domu.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_03"); //Ponadto dzikie zwierzeta z lasu moga padac na rannego Ehnima i chorych.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_04"); //Ale z drugiej strony bezwzglednie potrzebuja lekarstw i uzdrowienia Ehnim, w przeciwnym razie moga nie przezyc nastepnych dni.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_05"); //Jesli znajda Panstwo czas i srodki na to, chcialbym prosic Panstwa, aby spróbowali Panstwo gdzies znalezc pomoc dla nas.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_06"); //Moze w klasztorze lub w miescie, gdzie jest leczniczy magik wodny..... lub ziól w poblizu wielkiej farmy.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhatHappenedNext3_12_07"); //Ale prosze spieszyc sie, bo w zlym stanie.
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Telbor hat mich darum gebeten Heilung für Ehnim und Medizin für die Erkrankten zu beschaffen, um ihrem Siechtum Einhalt zu gebieten. Er meinte, ich könnte vielleicht im Kloster, in der Stadt bei einem Wassermagier, oder bei einer Kräuterhexe in der Nähe des Großbauernhofes Unterstützung erfahren.");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Telbor poprosil mnie, abym zapewnil Ehnimowi uzdrowienie i lekarstwa dla chorych, abym zatrzymal ich kalectwo. Powiedzial, ze byc moze uda mi sie znalezc wsparcie w klasztorze, w miescie z magikiem wody lub ziolami w poblizu wielkiego gospodarstwa.");
 };
 
 INSTANCE Info_Mod_Telbor_TonakZombie (C_INFO)
@@ -142,7 +142,7 @@ INSTANCE Info_Mod_Telbor_TonakZombie (C_INFO)
 	information	= Info_Mod_Telbor_TonakZombie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe deinen Freund Tonak gefunden.";
+	description	= "Znalazlem twojego przyjaciela Tonaka.";
 };
 
 FUNC INT Info_Mod_Telbor_TonakZombie_Condition()
@@ -155,21 +155,21 @@ FUNC INT Info_Mod_Telbor_TonakZombie_Condition()
 
 FUNC VOID Info_Mod_Telbor_TonakZombie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_00"); //Ich habe deinen Freund Tonak gefunden.
-	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_01"); //(erfreut) Ja, wo ist er?
-	AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_02"); //Ähhm, ...
-	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_03"); //(besorgt) Warum ist er nicht mitgekommen? Es ist ihm doch nicht etwa etwas zugestoßen? (hält kurz inne) Er ist doch nicht etwa ... tot?
+	AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_00"); //Znalazlem twojego przyjaciela Tonaka.
+	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_01"); //Gdzie on jest?
+	AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_02"); //Um.....
+	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_03"); //Dlaczego nie przyjechal z Toba? Cos mu sie nie przytrafilo, czy to? Krótko trzyma sie) On nie.... martwy?
 
 	if (Npc_IsDead(Zombie_Tonak))
 	{
-		AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_04"); //Nun, also ... ach was soll’s. Er verrottet mit Zombies und anderem Untoten Pack auf dem Friedhof.
+		AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_04"); //No cóz, wiec.... cóz, cokolwiek. Wedruje na cmentarzu z zombie i innymi nieumarlymi draniemi.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_05"); //Nun, also ... ach was soll’s. Er wandelt mit Zombies und anderem Untoten Pack auf dem Friedhof umher.
+		AI_Output(hero, self, "Info_Mod_Telbor_TonakZombie_15_05"); //No cóz, wiec.... cóz, cokolwiek. Spaceruje po cmentarzu z zombie i innymi nieumarlymi draniemi.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_06"); //(kurze Pause) Das muss ich erst mal verdauen.
+	AI_Output(self, hero, "Info_Mod_Telbor_TonakZombie_12_06"); //Najpierw bede musial to najpierw strawic.
 	
 	B_GivePlayerXP	(150);
 };
@@ -194,7 +194,7 @@ FUNC INT Info_Mod_Telbor_Gerettet_Condition()
 
 FUNC VOID Info_Mod_Telbor_Gerettet_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_Gerettet_12_00"); //Du hast es tatsächlich geschafft. Sei dir meines ewigen Dankes gewiss. Ohne dich wären wir alle verloren gewesen.
+	AI_Output(self, hero, "Info_Mod_Telbor_Gerettet_12_00"); //Tak naprawde to pan zrobil. Badzcie pewni, ze moje wieczne podziekowania. Bez Was wszyscy bylibysmy zagubieni.
 	
 	B_GivePlayerXP	(150);
 
@@ -230,13 +230,13 @@ FUNC INT Info_Mod_Telbor_AllDead_Condition()
 
 FUNC VOID Info_Mod_Telbor_AllDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_AllDead_12_00"); //(resigniert) Zu spät. Im Haus sind alle verschieden. Ich werde mich bald daran machen sie zu bestatten.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllDead_12_00"); //Zbyt pózno. W domu sa rózne. Wkrótce bede ja pochowac.
 	
 	B_GivePlayerXP	(50);
 
 	Mod_AkilsHof_WaitingForDeath = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Da habe ich mir wohl zu viel Zeit gelassen. Die Erkrankten weilen nicht mehr unter uns.");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Musialem poswiecic zbyt wiele czasu. Chorzy nie sa juz wsród nas.");
 	B_SetTopicStatus	(TOPIC_MOD_AKILSHOF, LOG_SUCCESS);
 	
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_40);
@@ -262,17 +262,17 @@ FUNC INT Info_Mod_Telbor_AllZombies_Condition()
 
 FUNC VOID Info_Mod_Telbor_AllZombies_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_00"); //Kennt Innos denn gar keine Gnade? Wie kann er nur so was Abscheuliches zulassen?
-	AI_Output(hero, self, "Info_Mod_Telbor_AllZombies_15_01"); //Ja, es ist sicher hart, aber der Tod gehört zum Leben dazu.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_02"); //(aufgebracht) Leben?! Tod?! Wenn es nur das wäre ... Als ich gestern daran gehen wollte die Armen zu bestatten, begannen sie sich plötzlich zu rühren.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_03"); //Verblüfft und regungslos blieb ich stehen und sah dabei zu, wie sie sich erhoben. Es war schon Nacht und dunkel im Haus, sodass ich ihre Gesichter nicht erkennen konnte.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_04"); //Als sie jedenfalls vor mir standen glaubte ich an ein Wunder.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_05"); //Nachdem ich ihnen jedoch zu nahe kam begannen sie plötzlich nach mir zu schlagen und abscheuliche, gequälte Laute von sich zu geben.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_06"); //Ich stürzte nach hinten und sah jetzt das Gesicht Akil’s, als der Mondenschein darauf viel. Es war grausam verzerrt mit toten, ausdruckslosen Augen.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_07"); //Sie waren alle zu widerlichen Zombies geworden. Im letzten Moment konnte ich noch aus dem Haus stürzen, sonst wäre ich als das Mahl dieser Untoten geendet.
-	AI_Output(hero, self, "Info_Mod_Telbor_AllZombies_15_08"); //Hmm, ja, das ist natürlich übel.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_09"); //Ich will auf jedem Fall keinen Augenblick länger an diesem verfluchten Ort verweilen.
-	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_10"); //Wir gehen in die Stadt und hoffen, dass uns dort ein besseres Schicksal erwartet. Hier gibt es nur Elend, Tod ... und noch Schlimmeres ...
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_00"); //Czy Innos nie ma zadnego milosierdzia? Jak moze pozwolic mu na taka okropna sytuacje?
+	AI_Output(hero, self, "Info_Mod_Telbor_AllZombies_15_01"); //Tak, musi byc twarda, ale smierc jest czescia zycia.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_02"); //Zycie? Smierc! Gdyby to bylo tylko to - gdyby to bylo Kiedy wczoraj chcialem pogrzebac biednych, nagle zaczeli sie ruszac.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_03"); //Stalem nieruchomo, zdumiony i nieruchomy, patrzac jak wznosza sie. Byla noc i ciemno w domu, wiec nie moglem zobaczyc ich twarzy.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_04"); //Kiedy stali przed mna, wierzylem w cud.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_05"); //Kiedy jednak zblizylem sie do nich, nagle zaczeli bic mnie za mna i wydawac straszne, torturowane dzwieki.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_06"); //Odwrócilem sie do tylu i zobaczylem teraz twarz Akila jako swiatlo ksiezyca. Byl okrutnie wypaczony martwymi, bezekspresyjnymi oczami.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_07"); //Wszyscy oni stali sie obrzydliwymi zombiemi. W ostatniej chwili moglem jeszcze wypadnac z domu, w przeciwnym razie skonczylbym jako posilek tych nieumarlych.
+	AI_Output(hero, self, "Info_Mod_Telbor_AllZombies_15_08"); //Hmm, tak, to oczywiscie zle.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_09"); //Z pewnoscia nie chce spedzac chwili w tym przekletym miejscu.
+	AI_Output(self, hero, "Info_Mod_Telbor_AllZombies_12_10"); //Idziemy do miasta i mamy nadzieje, ze czeka nas tam lepszy los. Jest tylko nieszczescie, smierc.... a jeszcze gorzej....
 
 	B_GivePlayerXP	(100);
 
@@ -316,12 +316,12 @@ FUNC INT Info_Mod_Telbor_WantingToHof_Condition()
 
 FUNC VOID Info_Mod_Telbor_WantingToHof_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_00"); //Hallo, gibt es irgendwelche Neuigkeiten aus der Welt da draußen?
-	AI_Output(hero, self, "Info_Mod_Telbor_WantingToHof_15_01"); //Nun, zurzeit herrscht einiges Ungemach zwischen Göttern, Dämonen und Magiern. Schwere Zeiten eben.
-	AI_Output(hero, self, "Info_Mod_Telbor_WantingToHof_15_02"); //Und was hast du so zu berichten? Wie ist das Leben in der Stadt?
-	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_03"); //Ach, es ist ein unwürdiges Dasein. Irgendwie schlägt man sich als Tagelöhner durch, oder führt die Schafe auf die Wiese.
-	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_04"); //Damals auf Akil’s Hof war es zwar nicht immer einfach, aber es war richtige Arbeit, für die man auch mit einer guten Ernte entlohnt wurde und mit Anerkennung.
-	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_05"); //Hier bin ich nichts weiter als ein Tagedieb und Nichtsnutz.
+	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_00"); //Witaj, czy sa jakies wiadomosci z zewnatrz?
+	AI_Output(hero, self, "Info_Mod_Telbor_WantingToHof_15_01"); //Cóz, w tej chwili jest duzo pecha miedzy bogami, demonami i magikami. Trudne czasy sa trudne.
+	AI_Output(hero, self, "Info_Mod_Telbor_WantingToHof_15_02"); //A co musisz zglosic? Jak wyglada zycie w miescie?
+	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_03"); //Ach, to egzystencja niegodna. Jakos trzeba byc robotnikiem lub prowadzic owce na lake.
+	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_04"); //W owym czasie na farmie Akila nie zawsze bylo to latwe, ale to byla prawdziwa praca, za która zostaliscie równiez nagrodzeni dobrymi zbiorami i uznaniem.
+	AI_Output(self, hero, "Info_Mod_Telbor_WantingToHof_12_05"); //Oto nie jestem niczym innym jak zlodziejem i mama.
 };
 
 INSTANCE Info_Mod_Telbor_WhyNotHof (C_INFO)
@@ -332,7 +332,7 @@ INSTANCE Info_Mod_Telbor_WhyNotHof (C_INFO)
 	information	= Info_Mod_Telbor_WhyNotHof_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum fängst du nicht wieder an und nimmst Akils Hof in Betrieb?";
+	description	= "Dlaczego nie rozpoczynasz dzialalnosci i nie uruchomisz gospodarstwa Akila?";
 };
 
 FUNC INT Info_Mod_Telbor_WhyNotHof_Condition()
@@ -345,13 +345,13 @@ FUNC INT Info_Mod_Telbor_WhyNotHof_Condition()
 
 FUNC VOID Info_Mod_Telbor_WhyNotHof_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_WhyNotHof_15_00"); //Warum fängst du nicht wieder an und nimmst Akils Hof in Betrieb?
-	AI_Output(self, hero, "Info_Mod_Telbor_WhyNotHof_12_01"); //Ein schöner Traum, aber solange dort die Untoten ihr Unwesen treiben, setze ich ganz bestimmt keinen Fuß dort hin.
-	AI_Output(self, hero, "Info_Mod_Telbor_WhyNotHof_12_02"); //Naja, was soll ich weiter viel reden. Die Schafe müssen gemolken werden. Hab dank für das Gespräch.
+	AI_Output(hero, self, "Info_Mod_Telbor_WhyNotHof_15_00"); //Dlaczego nie rozpoczynasz dzialalnosci i nie uruchomisz gospodarstwa Akila?
+	AI_Output(self, hero, "Info_Mod_Telbor_WhyNotHof_12_01"); //Piekne marzenie, ale dopóki zyja tam jeszcze nieumarli, z pewnoscia nie postawie tam stopy.
+	AI_Output(self, hero, "Info_Mod_Telbor_WhyNotHof_12_02"); //Cóz, o czym powinienem dalej mówic? Owce musza byc dojone. Dziekujemy za wywiad.
 
 	Log_CreateTopic	(TOPIC_MOD_TELBOR_WEHMUT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TELBOR_WEHMUT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Telbor hat sich über das Leben in der Stadt beklagt. Er würde gerne wieder Akils Hof bewirtschaften, fürchtet sich jedoch vor den Untoten im Haus.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Telbor narzekal na zycie w miescie. Chcialby ponownie prowadzic gospodarstwo Akila, ale obawia sie nieumarlych w domu.");
 };
 
 INSTANCE Info_Mod_Telbor_ZombiesWeg (C_INFO)
@@ -362,7 +362,7 @@ INSTANCE Info_Mod_Telbor_ZombiesWeg (C_INFO)
 	information	= Info_Mod_Telbor_ZombiesWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Untoten im Haus sind nicht mehr.";
+	description	= "Nieumarli w domu zniknely.";
 };
 
 FUNC INT Info_Mod_Telbor_ZombiesWeg_Condition()
@@ -378,15 +378,15 @@ FUNC INT Info_Mod_Telbor_ZombiesWeg_Condition()
 
 FUNC VOID Info_Mod_Telbor_ZombiesWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_ZombiesWeg_15_00"); //Die Untoten im Haus sind nicht mehr.
-	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_01"); //Was, wirklich? Hab Dank für die Mittelung. Ja, eigentlich könnte ich jetzt wieder hin, nur ...
-	AI_Output(hero, self, "Info_Mod_Telbor_ZombiesWeg_15_02"); //Ja, was ist noch?
-	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_03"); //Ich warte lieber noch mal etwas ab, ob der dunkle Pilger nicht vielleicht wieder sein Unwesen treibt.
-	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_04"); //Ach, wenn ich mir doch nur sicher sein könnte, dass er sich nie wieder Unheil anrichtet ...
+	AI_Output(hero, self, "Info_Mod_Telbor_ZombiesWeg_15_00"); //Nieumarli w domu zniknely.
+	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_01"); //Co tak naprawde? Dziekujemy za usrednianie. Tak, wlasciwie, moglem wrócic teraz, tylko....
+	AI_Output(hero, self, "Info_Mod_Telbor_ZombiesWeg_15_02"); //Tak, co jeszcze?
+	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_03"); //Wolalbym poczekac i zobaczyc, czy mroczny pielgrzym nie wróci do swojej zlosliwosci.
+	AI_Output(self, hero, "Info_Mod_Telbor_ZombiesWeg_12_04"); //Ach, jesli tylko ja móglbym byc pewien, ze juz nigdy wiecej nie zaszkodzi.....
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Tja, der dunkle Pilger bzw. Urnol bereitet ihm noch sorgen. Ehe Telbor nicht sicher sein kann von ihm unbehelligt zu bleiben, will er noch mit der Rückkehr auf den Hof warten.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Cóz, mroczny pielgrzym lub, w zaleznosci od przypadku, Urnol nadal daje mu powód do niepokoju. Zanim Telbor nie moze byc pewny, ze pozostanie przez niego nieskrepowany, chce czekac na powrót do gospodarstwa.");
 };
 
 INSTANCE Info_Mod_Telbor_PilgerTot (C_INFO)
@@ -397,7 +397,7 @@ INSTANCE Info_Mod_Telbor_PilgerTot (C_INFO)
 	information	= Info_Mod_Telbor_PilgerTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der abscheuliche Pilger wird nie wieder jemandem Schaden zufügen können.";
+	description	= "Ohydny pielgrzym nigdy wiecej juz nikomu nie zaszkodzi.";
 };
 
 FUNC INT Info_Mod_Telbor_PilgerTot_Condition()
@@ -411,20 +411,20 @@ FUNC INT Info_Mod_Telbor_PilgerTot_Condition()
 
 FUNC VOID Info_Mod_Telbor_PilgerTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_00"); //Der abscheuliche Pilger wird nie wieder jemandem Schaden zufügen können.
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_01"); //Was, bist du auch wirklich sicher?
-	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_02"); //Ja, ich habe gesehen, wie er zu Grunde ging.
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_03"); //Welch erfreuliche Mitteilung. Hat dieser widerliche Unhold seine gerechte Strafe doch noch erhalten.
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_04"); //Möge er bei Beliar bis in alle Ewigkeit schmoren.
-	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_05"); //Dann wirst du jetzt die Arbeit auf dem Hof wieder aufnehmen?
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_06"); //Ja, jetzt scheint dem kaum noch etwas im Wege zu stehen. Es ist nur ...
-	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_07"); //Was jetzt noch?
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_08"); //Nun, ohne zusätzliche Arbeiter wird man den Hof schwerlich bewirtschaften können.
-	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_09"); //Zwei weitere Landarbeiter und eine Magd müssten es schon sein. Aber wo ich die jetzt auf die schnelle finden soll ...
+	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_00"); //Ohydny pielgrzym nigdy wiecej juz nikomu nie zaszkodzi.
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_01"); //Co naprawde jestes pewien?
+	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_02"); //Tak, zobaczylem, jak on schodzil.
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_03"); //Co za mila wiadomosc. Czy ten obrzydliwy pasjonat nadal jest karany?
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_04"); //Niech plonie z Beliarem przez cala wiecznosc.
+	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_05"); //Wiec teraz wracasz do pracy na farmie?
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_06"); //Tak, teraz wydaje sie, ze nic nie stoi na przeszkodzie. To po prostu......
+	AI_Output(hero, self, "Info_Mod_Telbor_PilgerTot_15_07"); //Co jeszcze teraz?
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_08"); //No cóz, bez dodatkowych pracowników trudno bedzie prowadzic gospodarstwo.
+	AI_Output(self, hero, "Info_Mod_Telbor_PilgerTot_12_09"); //Do tej pory powinny tam byc jeszcze dwie kolejne farmhands i pokojówka. Ale teraz, ze mam je szybko znalezc.....
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Diesmal sind es zwei Arbeiter und eine Magd die fehlen, damit die Arbeit auf dem Hof wieder aufgenommen werden kann.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_WEHMUT, "Tym razem brakuje dwóch pracowników i sluzacej, aby mozna bylo wznowic prace w gospodarstwie.");
 };
 
 INSTANCE Info_Mod_Telbor_FarmWorking (C_INFO)
@@ -435,7 +435,7 @@ INSTANCE Info_Mod_Telbor_FarmWorking (C_INFO)
 	information	= Info_Mod_Telbor_FarmWorking_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kannst nun auf den Hof zurückkehren.";
+	description	= "Teraz mozesz wrócic na podwórko.";
 };
 
 FUNC INT Info_Mod_Telbor_FarmWorking_Condition()
@@ -449,10 +449,10 @@ FUNC INT Info_Mod_Telbor_FarmWorking_Condition()
 
 FUNC VOID Info_Mod_Telbor_FarmWorking_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_FarmWorking_15_00"); //Du kannst nun auf den Hof zurückkehren.
-	AI_Output(hero, self, "Info_Mod_Telbor_FarmWorking_15_01"); //Es haben sich tatsächlich zwei Landarbeiter und eine Magd gefunden, die dabei helfen werden, den Hof wieder zu bewirtschaften.
-	AI_Output(self, hero, "Info_Mod_Telbor_FarmWorking_12_02"); //(erfreut) Tatsächlich? Dann hat uns Innos vielleicht doch noch nicht vergessen, wenn er uns einen selbstlosen Helfer wie dich schickt.
-	AI_Output(self, hero, "Info_Mod_Telbor_FarmWorking_12_03"); //Ich weiß nicht, wie ich dir danken soll. Möge der Segen Innos auf ewig mit dir sein.
+	AI_Output(hero, self, "Info_Mod_Telbor_FarmWorking_15_00"); //Teraz mozesz wrócic na podwórko.
+	AI_Output(hero, self, "Info_Mod_Telbor_FarmWorking_15_01"); //W rzeczywistosci znalezli sie dwaj robotnicy rolni i sluzaca, którzy pomoga odbudowac gospodarstwo.
+	AI_Output(self, hero, "Info_Mod_Telbor_FarmWorking_12_02"); //Czy to prawda? Wtedy Innos moze nie zapomnial o nas, gdy wysyla nam bezinteresownego pomocnika, takiego jak ty.
+	AI_Output(self, hero, "Info_Mod_Telbor_FarmWorking_12_03"); //Nie wiem, jak wam podziekowac. Niech blogoslawienstwo bedzie z wami na zawsze.
 	
 	B_SetTopicStatus	(TOPIC_MOD_TELBOR_WEHMUT, LOG_SUCCESS);
 
@@ -504,14 +504,14 @@ FUNC INT Info_Mod_Telbor_Hausbesetzer_Condition()
 
 FUNC VOID Info_Mod_Telbor_Hausbesetzer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_00"); //(erschöpft) Nimmt es denn gar kein Ende?!
-	AI_Output(hero, self, "Info_Mod_Telbor_Hausbesetzer_15_01"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_02"); //Einige ganz obskure Gestalten haben unser Haus besetzt.
-	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_03"); //Dort setzen wir ganz bestimmt keinen Fuß mehr hinein, ehe sie nicht verschwunden sind.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_00"); //Czy nie konczy sie wcale?
+	AI_Output(hero, self, "Info_Mod_Telbor_Hausbesetzer_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_02"); //Niektóre nieznane postaci zajely nasz dom.
+	AI_Output(self, hero, "Info_Mod_Telbor_Hausbesetzer_12_03"); //Z pewnoscia nie postawimy tam kolejnej stopy, dopóki oni nie odejda.
 
 	Log_CreateTopic	(TOPIC_MOD_TELBOR_HAUSBESETZER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TELBOR_HAUSBESETZER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Telbor beklagt sich, nicht mehr in das Haus zu können, da sich dort finstere Gestalten niedergelassen hätten.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Telbor narzeka, ze nie jest juz w stanie wejsc do domu, poniewaz osiedlily sie tam zlowieszcze stworzenia.");
 };
 
 INSTANCE Info_Mod_Telbor_Uriela (C_INFO)
@@ -534,10 +534,10 @@ FUNC INT Info_Mod_Telbor_Uriela_Condition()
 
 FUNC VOID Info_Mod_Telbor_Uriela_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_Uriela_12_00"); //Und, hast du sie endlich aus dem Haus gejagt?
-	AI_Output(hero, self, "Info_Mod_Telbor_Uriela_15_01"); //Nein. Es sind Flüchtlinge, die wie ihr, unter dem Meister des dunklen Pilgers gelitten haben.
-	AI_Output(hero, self, "Info_Mod_Telbor_Uriela_15_02"); //Könntest du dir nicht vorstellen für einige zeit mit ihnen zusammenzuleben?
-	AI_Output(self, hero, "Info_Mod_Telbor_Uriela_12_03"); //Was?! Mit diesem Unrat Beliars?! Nie und nimmer!
+	AI_Output(self, hero, "Info_Mod_Telbor_Uriela_12_00"); //Czy wreszcie wypedzilas ja z domu?
+	AI_Output(hero, self, "Info_Mod_Telbor_Uriela_15_01"); //Nie. Sa oni uchodzcami, którzy, podobnie jak wy, cierpieli pod panem mrocznego pielgrzyma.
+	AI_Output(hero, self, "Info_Mod_Telbor_Uriela_15_02"); //Czy nie mozna sobie wyobrazic zamieszkiwania z nimi przez jakis czas?
+	AI_Output(self, hero, "Info_Mod_Telbor_Uriela_12_03"); //Co? Beliars z tym brudem? Nigdy nigdy!
 };
 
 INSTANCE Info_Mod_Telbor_TalkAgain (C_INFO)
@@ -548,7 +548,7 @@ INSTANCE Info_Mod_Telbor_TalkAgain (C_INFO)
 	information	= Info_Mod_Telbor_TalkAgain_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ok, dann rede ich noch mal mit ihnen.";
+	description	= "Dobrze, potem porozmawiam z nimi jeszcze raz.";
 };
 
 FUNC INT Info_Mod_Telbor_TalkAgain_Condition()
@@ -562,9 +562,9 @@ FUNC INT Info_Mod_Telbor_TalkAgain_Condition()
 
 FUNC VOID Info_Mod_Telbor_TalkAgain_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_TalkAgain_15_00"); //Ok, dann rede ich noch mal mit ihnen.
+	AI_Output(hero, self, "Info_Mod_Telbor_TalkAgain_15_00"); //Dobrze, potem porozmawiam z nimi jeszcze raz.
 
-	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Telbor kann es sich unter keinen Umständen vorstellen, mit den Belianern zusammenzuwohnen. Dann werde ich versuchen müssen Uriela davon zu überzeugen, woanders hin zu gehen.");
+	B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "Pod zadnym pozorem Telbor nie moze sobie wyobrazic zycia z Belianami. Wtedy bede musial spróbowac przekonac Uriele, aby udala sie gdzie indziej.");
 };
 
 INSTANCE Info_Mod_Telbor_GoBackToCity (C_INFO)
@@ -575,7 +575,7 @@ INSTANCE Info_Mod_Telbor_GoBackToCity (C_INFO)
 	information	= Info_Mod_Telbor_GoBackToCity_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na gut. Wenn es dir nicht passt, kannst du ja wieder in die Stadt gehen.";
+	description	= "Wszystkie sluszne, wszystkie sluszne. Jesli nie lubisz, mozesz wrócic do miasta.";
 };
 
 FUNC INT Info_Mod_Telbor_GoBackToCity_Condition()
@@ -589,10 +589,10 @@ FUNC INT Info_Mod_Telbor_GoBackToCity_Condition()
 
 FUNC VOID Info_Mod_Telbor_GoBackToCity_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Telbor_GoBackToCity_15_00"); //Na gut. Wenn es dir nicht passt, kannst du ja wieder in die Stadt gehen.
-	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_01"); //Genau das werde ich auch tun. Die anderen können ja machen, was sie wollen.
-	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_02"); //Und ich möchte noch sagen, dass ich über die Maßen enttäuscht von dir bin.
-	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_03"); //Ich habe mich schwer in dir getäuscht.
+	AI_Output(hero, self, "Info_Mod_Telbor_GoBackToCity_15_00"); //Wszystkie sluszne, wszystkie sluszne. Jesli nie lubisz, mozesz wrócic do miasta.
+	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_01"); //Wlasnie to robie. Inni moga robic, co chca.
+	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_02"); //I chcialbym powiedziec, ze jestem w Tobie bardzo rozczarowany.
+	AI_Output(self, hero, "Info_Mod_Telbor_GoBackToCity_12_03"); //Bardzo sie mylilem.
 	
 	B_SetTopicStatus	(TOPIC_MOD_TELBOR_HAUSBESETZER, LOG_FAILED);
 
@@ -643,9 +643,9 @@ FUNC INT Info_Mod_Telbor_SindWeg_Condition()
 
 FUNC VOID Info_Mod_Telbor_SindWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Telbor_SindWeg_12_00"); //Und, ist das Haus endlich leer?
-	AI_Output(hero, self, "Info_Mod_Telbor_SindWeg_15_01"); //Ja, ihr könnte wieder hinein.
-	AI_Output(self, hero, "Info_Mod_Telbor_SindWeg_12_02"); //Erneut bin ich dir großen Dank schuldig. Ich hoffe, dass kann dich zumindest etwas entschädigen.
+	AI_Output(self, hero, "Info_Mod_Telbor_SindWeg_12_00"); //Czy dom jest wreszcie pusty?
+	AI_Output(hero, self, "Info_Mod_Telbor_SindWeg_15_01"); //Tak, mozna bylo wrócic do srodka.
+	AI_Output(self, hero, "Info_Mod_Telbor_SindWeg_12_02"); //Ponownie zawdzieczam panstwu dlug wdziecznosci. Mam nadzieje, ze moze to przynajmniej zrekompensowac panu cos.
 
 	B_GivePlayerXP	(300);
 

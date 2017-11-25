@@ -2,7 +2,7 @@ instance Mod_1266_SLD_Orik_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Orik";
+	name =					"ordynacja";
 	Npctype =				NPCTYPE_main;
 	guild =					GIL_mil;
 	level =					18;

@@ -1,7 +1,7 @@
 INSTANCE Monster_11072_Transportsnapper_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Transportsnapper";	
+	name 		= "transport";	
 	guild 		= GIL_SHEEP;
 	id 			= 11072;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SNAPPER;

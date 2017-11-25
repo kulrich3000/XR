@@ -20,11 +20,11 @@ FUNC VOID Info_Mod_Rod_AtOGY_Info()
 {
 	if (Mod_Gilde != 19)
 	{
-		AI_Output(self, hero, "Info_Mod_Rod_AtOGY_06_00"); //Hey, du kannst erst in den Orkfriedhof, wenn du deiner von uns bist, ein Orkjäger. Ist nur was für ganze Kerle.
+		AI_Output(self, hero, "Info_Mod_Rod_AtOGY_06_00"); //Nie mozesz pójsc na Cmentarz Orkowy, dopóki nie bedziesz mysliwym orka. To tylko dla calych chlopaków.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Rod_AtOGY_06_01"); //Hey, du kannst erst in den Orkfriedhof, wenn du mit Lee gesprochen hast. Geh lieber gleich zu ihm.
+		AI_Output(self, hero, "Info_Mod_Rod_AtOGY_06_01"); //Nie mozesz pójsc na cmentarz lukowy, dopóki nie porozmawiasz z Lee. Lepiej udac sie do niego prosto.
 	};
 
 	AI_StopProcessInfos	(self);

@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Cord_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Cord_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cord_IR_Hi_14_00"); //Hey, wenn mich mein Auge nicht täuscht, dann treiben sich nicht weit vom Schiff einige Untote umher.
-	AI_Output(self, hero, "Info_Mod_Cord_IR_Hi_14_01"); //Sag Bescheid, wenn es losgehen kann. Nach der langweiligen Seereise muss endlich was passieren.
+	AI_Output(self, hero, "Info_Mod_Cord_IR_Hi_14_00"); //Hej, jesli moje oko mnie nie oszukuje, sa jakies nieumarle unoszace sie w poblizu statku.
+	AI_Output(self, hero, "Info_Mod_Cord_IR_Hi_14_01"); //Prosze pozwolic mi wiedziec, kiedy sie zaczyna. Po nudnej podrózy cos musi sie wydarzyc.
 };
 
 INSTANCE Info_Mod_Cord_IR_Hebel (C_INFO)
@@ -27,7 +27,7 @@ INSTANCE Info_Mod_Cord_IR_Hebel (C_INFO)
 	information	= Info_Mod_Cord_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Cord_IR_Hebel_Condition()
@@ -44,7 +44,7 @@ FUNC VOID Info_Mod_Cord_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Cord_IR_Hebel_14_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Cord_IR_Hebel_14_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -73,7 +73,7 @@ FUNC INT Info_Mod_Cord_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Cord_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cord_IR_Ambient01_14_00"); //Hier ist aber ordentlich was los. Mal was anderes, als sich bei Onar die Beine in den Arsch zu stehen.
+	AI_Output(self, hero, "Info_Mod_Cord_IR_Ambient01_14_00"); //Wiele sie tu dzieje. To troche inaczej niz unoszenie nóg na tylku Onara.
 
 	AI_StopProcessInfos	(self);
 };
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Cord_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Cord_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Cord_IR_GehtLos_Condition()
@@ -105,7 +105,7 @@ FUNC VOID Info_Mod_Cord_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Cord_IR_GehtLos_14_00"); //Sicher, wozu bin ich mitgekommen. Auf geht’s.
+	AI_Output(self, hero, "Info_Mod_Cord_IR_GehtLos_14_00"); //Oczywiscie, po co przyszedlem? Chodzcie dalej, odejdzmy.
 
 	Mod_IR_Dabei += 1;
 
@@ -124,7 +124,7 @@ INSTANCE Info_Mod_Cord_IR_GehBack (C_INFO)
 	information	= Info_Mod_Cord_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Cord_IR_GehBack_Condition()
@@ -141,7 +141,7 @@ FUNC VOID Info_Mod_Cord_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Cord_IR_GehBack_14_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Cord_IR_GehBack_14_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 

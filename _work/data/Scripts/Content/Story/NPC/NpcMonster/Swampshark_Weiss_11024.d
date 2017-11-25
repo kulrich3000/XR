@@ -1,7 +1,7 @@
 INSTANCE Swampshark_Weiss (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Weiﬂer Sumpfhai";
+	name 		= "zarlacz bagienny bialy";
 	guild 		= GIL_SWAMPSHARK;
 	id 			= 11024;
 	voice 		= 18;

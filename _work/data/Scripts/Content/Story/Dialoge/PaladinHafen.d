@@ -18,7 +18,7 @@ FUNC INT Info_Mod_PaladinHafen_Hi_Condition()
 
 FUNC VOID Info_Mod_PaladinHafen_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Hi_04_00"); //Hey, du? Hast du zufällig was zu rauchen? Ich hatte schon ewig nichts mehr und die ständige Warterei hier im Hafen macht mich langsam mürbe!
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Hi_04_00"); //Hej, Ty? Masz papierosy? Nie mialem nic do czynienia od wieków, a nieustanne czekanie tutaj w porcie powoli sprawia, ze jestem zmeczony!
 };
 
 INSTANCE Info_Mod_PaladinHafen_Trent (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_PaladinHafen_Trent (C_INFO)
 	information	= Info_Mod_PaladinHafen_Trent_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Klar, kein Problem. Du müsstest mir nur sagen, wo ich einen Paladin namens Trent finde.";
+	description	= "Oczywiscie, nie ma problemu. Wszystko co musisz zrobic, to powiedziec mi, gdzie moge znalezc paladyn Trent.";
 };
 
 FUNC INT Info_Mod_PaladinHafen_Trent_Condition()
@@ -43,23 +43,23 @@ FUNC INT Info_Mod_PaladinHafen_Trent_Condition()
 
 FUNC VOID Info_Mod_PaladinHafen_Trent_Info()
 {
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_00"); //Klar, kein Problem. Du müsstest mir nur sagen, wo ich einen Paladin namens Trent finde.
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_01"); //Trent?! (Pause) Nein, tut mir leid, ich hab den Namen noch nie gehört.
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_02"); //Mhm ... merkwürdig, ich kenne eigentlich jeden Paladin auf Khorinis. Meinst du vielleicht den neuen Paladin von den Südlichen Inseln?
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_03"); //Ja, ich nehme an, dass er das ist.
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_04"); //Gut, dann weiß ich zumindest, wo er ist.
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_05"); //Ok ... und wo ist er?
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_06"); //Er ist ins Meer gesprungen.
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_07"); //Was?!
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_08"); //Ja, er hat einen von uns gefragt, wo es hier noch unerkundete Orte gibt.
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_09"); //Der Ritter hat daraufhin auf die Insel dort vorne gezeigt. Das hättest du mal sehen sollen, ich hab nicht einmal gezwinkert und schon ist der in die Bucht gesprungen.
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_10"); //Also ist er noch auf der Insel?
-	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_11"); //Ich nehme es an.
-	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_12"); //Danke! Das war alles was ich wissen wollte.
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_00"); //Oczywiscie, nie ma problemu. Wszystko co musisz zrobic, to powiedziec mi, gdzie moge znalezc paladyn Trent.
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_01"); //Rzeczy? Nie, przepraszam, nigdy wczesniej nie slyszalem tego imienia.
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_02"); //.... Dziwne, znam wlasciwie kazda paladyne nahorynie. Masz na mysli nowa Paladyne Wysp Poludniowych?
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_03"); //Tak, przypuszczam, ze to on.
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_04"); //No cóz, wtedy przynajmniej wiem, gdzie on jest.
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_05"); //Ok.... i gdzie on jest?
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_06"); //Wskoczyl do morza.
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_07"); //Co?
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_08"); //Tak, zapytal nas tam, gdzie sa niezbadane miejsca.
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_09"); //Rycerz wskazal wyspe naprzód. Powinien byles to zobaczyc, ja nawet nie widzialem i on wskoczyl do zatoki.
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_10"); //Wiec on jest wciaz na wyspie?
+	AI_Output(self, hero, "Info_Mod_PaladinHafen_Trent_04_11"); //Przypuszczam, ze tak.
+	AI_Output(hero, self, "Info_Mod_PaladinHafen_Trent_15_12"); //Dziekuje! To wszystko, co chcialem wiedziec.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent scheint auf der kleinen Insel vor Khorinis zu sein. Wenn ich Glück habe, dann finde ich ihn dort noch.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent wydaje sie byc na malej wyspie u wybrzezy Khorinis. Jesli mam szczescie, znajde go tam.");
 
 	Wld_InsertNpc	(Mod_7629_RIT_Trent_NW, "WAYTOPORT_07");
 

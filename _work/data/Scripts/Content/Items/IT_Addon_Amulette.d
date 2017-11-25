@@ -76,7 +76,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
 
-	description		=  "Franco's Amulett";
+	description		=  "Amulet Franco";
 
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= STR_FRANCO;
@@ -139,7 +139,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
 
-	description		=  "Amulett der Täuschung";
+	description		=  "Amulet oszustwa";
 
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -180,7 +180,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Amulett der Heiler";
+	description		=  "Amulet uzdrowicieli";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Amulett_Solo_Bonus;
@@ -245,7 +245,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Heiler";
+	description		=  "Pierscien uzdrowicieli";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -310,7 +310,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Heiler";
+	description		=  "Pierscien uzdrowicieli";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -378,7 +378,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Amulett der Priester";
+	description		=  "Amulet kaplanów";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Amulett_Solo_Bonus;
@@ -443,7 +443,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Priester";
+	description		=  "Pierscien ksiedza";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -508,7 +508,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Priester";
+	description		=  "Pierscien ksiedza";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -576,7 +576,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Amulett der Krieger";
+	description		=  "Amulet wojowników";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Amulett_Solo_Bonus;
@@ -642,7 +642,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Krieger";
+	description		=  "Pierscien wojowników";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;
@@ -709,7 +709,7 @@ INSTANCE  ItAm_Taeuschung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Ring der Krieger";
+	description		=  "Pierscien wojowników";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;

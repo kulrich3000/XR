@@ -18,7 +18,7 @@ FUNC INT Info_Mod_GorNaKar_Hi_Condition()
 
 FUNC VOID Info_Mod_GorNaKar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hi_08_00"); //Wir haben euch erwartet, nehmt euch diese Novizenröcke.
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hi_08_00"); //Spodziewalismy sie cie, wez te nowicjusze spódnice.
 
 	AI_UnequipArmor	(Mod_1870_EBR_Alissandro_MT);
 	AI_UnequipArmor (hero);
@@ -31,7 +31,7 @@ FUNC VOID Info_Mod_GorNaKar_Hi_Info()
 	CreateInvItems	(Mod_1870_EBR_Alissandro_MT, Nov_Armor_L, 1);
 	AI_EquipArmor	(Mod_1870_EBR_Alissandro_MT, Nov_Armor_L);
 
-	B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Vor dem Tempel wurden wir bereits von zwei Templern erwartet. Ich haben einen Novizenrock bekommen und jetzt brechen wir auf.");
+	B_LogEntry	(TOPIC_MOD_AL_EROBERUNG, "Przed swiatynia oczekiwaly nas juz dwa templariusze. Dostalem spódnice dla poczatkujacych, a teraz wychodzimy.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_GorNaKar_Torwache_01_Info()
 {
 	AI_TurnToNpc	(self, Mod_1130_GRD_Torwache_MT);
 
-	AI_Output(self, Mod_1130_GRD_Torwache_MT, "Info_Mod_GorNaKar_Torwache_01_08_00"); //Wir sind hier um Sumpfkraut zu Bartholo zu bringen.
+	AI_Output(self, Mod_1130_GRD_Torwache_MT, "Info_Mod_GorNaKar_Torwache_01_08_00"); //Jestesmy tutaj, aby przywiezc bagnista bartholo.
 
 	AI_StopProcessInfos	(self);
 
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_GorNaKar_Hueterklinge (C_INFO)
 	information	= Info_Mod_GorNaKar_Hueterklinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher bekomme ich eine Hüterklinge?";
+	description	= "Gdzie moge dostac ostrze stróza?";
 };
 
 FUNC INT Info_Mod_GorNaKar_Hueterklinge_Condition()
@@ -97,12 +97,12 @@ FUNC INT Info_Mod_GorNaKar_Hueterklinge_Condition()
 
 FUNC VOID Info_Mod_GorNaKar_Hueterklinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_00"); //Woher bekomme ich eine Hüterklinge?
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_01"); //Komisch, du bist der Zweite der mich das in so kurzer Zeit fragt.
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_02"); //Vor kurzem hat dich das noch jemand gefragt?
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_03"); //Kann noch keine zwei Tage her sein. Ein junger Templer namens Gor Na Kosh.
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_04"); //Und was hast du ihm gesagt?
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_05"); //Ich weiß nicht. Ach ... ich hätte gerne einen Stängel.
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_00"); //Gdzie moge dostac ostrze stróza?
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_01"); //Zabawny, jestes druga osoba, która prosi mnie o to w tak krótkim czasie.
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_02"); //Ktos sie o to ostatnio zapytal?
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_03"); //Nie moze byc dwa dni temu. Mlody templar o imieniu Gor Na Kosh.
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge_15_04"); //A co mu powiedziales?
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge_08_05"); //Nie wiem o tym. Ah.... Lubie lodyge.
 };
 
 INSTANCE Info_Mod_GorNaKar_Hueterklinge2 (C_INFO)
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_GorNaKar_Hueterklinge2 (C_INFO)
 	information	= Info_Mod_GorNaKar_Hueterklinge2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nimm.";
+	description	= "Wez to pod uwage.";
 };
 
 FUNC INT Info_Mod_GorNaKar_Hueterklinge2_Condition()
@@ -128,19 +128,19 @@ FUNC INT Info_Mod_GorNaKar_Hueterklinge2_Condition()
 
 FUNC VOID Info_Mod_GorNaKar_Hueterklinge2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_15_00"); //Nimm.
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_15_00"); //Wez to pod uwage.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_15_01"); //Und, kannst du dich jetzt erinnern?
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_08_02"); //Keine Ahnung.
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_15_01"); //No cóz, pamietasz teraz?
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_08_02"); //Nie wiem o tym.
 
 	Info_ClearChoices	(Info_Mod_GorNaKar_Hueterklinge2);
 
-	Info_AddChoice	(Info_Mod_GorNaKar_Hueterklinge2, "Was könnte deinem Gedächtnis auf die Sprünge helfen?", Info_Mod_GorNaKar_Hueterklinge2_B);
-	Info_AddChoice	(Info_Mod_GorNaKar_Hueterklinge2, "Muss ich dir erst aufs Maul hauen?", Info_Mod_GorNaKar_Hueterklinge2_A);
+	Info_AddChoice	(Info_Mod_GorNaKar_Hueterklinge2, "Co mozesz zapamietac?", Info_Mod_GorNaKar_Hueterklinge2_B);
+	Info_AddChoice	(Info_Mod_GorNaKar_Hueterklinge2, "Czy najpierw musze cie uderzyc w usta?", Info_Mod_GorNaKar_Hueterklinge2_A);
 };
 
 FUNC VOID Info_Mod_GorNaKar_Hueterklinge2_C()
@@ -148,24 +148,24 @@ FUNC VOID Info_Mod_GorNaKar_Hueterklinge2_C()
 	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_C_08_00"); //Ich weiß nicht, keine Ahnung. 
 	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_C_15_01"); //Jetzt reicht's.
 	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_C_08_02"); //Was willst du eigentlich von mir? Ich hab’s dir doch gesagt!
-	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_C_08_03"); //Ich hab dem jungen Spund gesagt "Ich weiß nicht. Keine Ahnung."
+	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_C_08_03"); //Ich hab dem jungen Spund gesagt "Nie wiem o tym. Nie wiem o tym."
 	AI_Output(self, hero, "Info_Mod_GorNaKar_Hueterklinge2_C_08_04"); //Er ist dann glaub ich zu Baal Ydran gegangen.
 
 	Info_ClearChoices	(Info_Mod_GorNaKar_Hueterklinge2);
 
-	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Von Gor Na Kar hab ich erfahren, dass Gor Na Kosh sich auch kürzlich wegen der Zutaten erkundigt hat. Dieser ist danach zu Baal Yrdan gegangen. Ob Baal Namib mir sagen kann, wo ich ihn finde?");
+	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Gor Na Kar powiedzial mi, ze Gor Na Kosh niedawno zapytal mnie o skladniki. Nastepnie udal sie do Baal Yrdan. Czy Baal Namib moze mi powiedziec, gdzie moge go znalezc?");
 };
 
 FUNC VOID Info_Mod_GorNaKar_Hueterklinge2_B()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_B_15_00"); //Was könnte deinem Gedächtnis auf die Sprünge helfen?
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_B_15_00"); //Co mozesz zapamietac?
 
 	Info_Mod_GorNaKar_Hueterklinge2_C();
 };
 
 FUNC VOID Info_Mod_GorNaKar_Hueterklinge2_A()
 {
-	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_A_15_00"); //Muss ich dir erst aufs Maul hauen?
+	AI_Output(hero, self, "Info_Mod_GorNaKar_Hueterklinge2_A_15_00"); //Czy najpierw musze cie uderzyc w usta?
 
 	Info_Mod_GorNaKar_Hueterklinge2_C();
 };

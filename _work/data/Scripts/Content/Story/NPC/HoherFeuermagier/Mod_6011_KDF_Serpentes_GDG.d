@@ -1,7 +1,7 @@
 INSTANCE Mod_6011_KDF_Serpentes_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Serpentes";
+	name 		= "serpentyny";
 	guild 		= GIL_OUT;
 	id 		= 6011;
 	voice 		= 10;

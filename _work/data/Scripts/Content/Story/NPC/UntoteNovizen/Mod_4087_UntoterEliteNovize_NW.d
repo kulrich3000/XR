@@ -1,7 +1,7 @@
 instance Mod_4087_UntoterEliteNovize_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Elite-Novize";
+	name 		=		"Nieumarla Elita Novice Novice";
 	Npctype 		=		Npctype_UNTOTERNOVIZE;
 	guild 		=		GIL_STRF;
 	level 		=		50;

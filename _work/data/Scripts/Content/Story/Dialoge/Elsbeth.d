@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Elsbeth_Hi (C_INFO)
 	information	= Info_Mod_Elsbeth_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Eine Frau in dieser Wildnis! Wie kommt's?";
+	description	= "Kobieta na tej pustyni! Jak przyjsc?";
 };
 
 FUNC INT Info_Mod_Elsbeth_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Elsbeth_Hi_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_00"); //Eine Frau in dieser Wildnis! Wie kommt's?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_01"); //Ich komme vom Alten Lager. Ich wollte nicht so, wie der Baron wollte.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_02"); //Und dann hat er dich vor die Tür gesetzt.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_03"); //Gewissermaßen. Bin bei den Pennern draußen neben dem Tor gelandet.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_04"); //Irgendwann kam dann dieser Baldur vorbei und hat mich hierher mitgenommen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_05"); //Bist du froh darüber?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_06"); //Und ob. Hier wird man als Frau repektiert, obwohl das ruppige Kerle sind.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_07"); //Das ist gut. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_00"); //Kobieta na tej pustyni! Jak przyjsc?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_01"); //Jestem z Starego Obozu. Nie chcialem tego tak, jak chcial tego baron.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_02"); //I wtedy wyrzucil cie.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_03"); //Rodzaj. Wyladowany z uskokami przy bramie.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_04"); //W pewnym momencie przyszedl ten Baldur i zabral mnie tutaj.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_05"); //Czy jestes z tego zadowolony?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Hi_17_06"); //Zakladasz sie. W tym miejscu powtarzaja Cie jako kobieta, mimo ze sa chropowatymi facetami.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Hi_15_07"); //To dobra wiadomosc. Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Elsbeth_Ambi (C_INFO)
@@ -47,19 +47,19 @@ FUNC INT Info_Mod_Elsbeth_Ambi_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Ambi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_00"); //Ich sehe, du bist dauernd auf Achse.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_01"); //Ich bin ziemlich neu hier und muss mich noch bewähren. Und die Rennerei bin ich mittlerweile gewöhnt.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_02"); //Und doch bist du immer freundlich, wie mir scheint.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_03"); //Na ja. Ich kann auch anders.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_04"); //Ich finde dich jedenfalls sympatisch. Du darfst mich Beth nennen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_05"); //Das freut mich, Beth. Vielleicht kann ich dir auch einen Gefallen tun?
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_06"); //Das kannst du. Mir geht das Holz für den Herd aus.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_07"); //Neue Äste könnte ich gebrauchen. So ein Dutzend sollten reichen.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_08"); //Ich bring dir welche. Bis später.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_00"); //Widze, ze zawsze jestes w ruchu.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_01"); //Jestem tu calkiem nowa i nadal musze sie udowodnic. I przyzwyczailem sie do biegania.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_02"); //A mimo to jestescie zawsze przyjazni, wydaje mi sie.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_03"); //No cóz, dobrze. Moge to zrobic inaczej.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_04"); //W kazdym razie uwazam, ze jestescie wam sympatyczni. Mozesz mnie nazwac Beth.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_05"); //Nic wiec milo Cie spotkac, Beth. Moze moge zrobic laske?
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_06"); //Mozesz to zrobic. Zabraklo mi drewna do pieca.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Ambi_17_07"); //Móglbym skorzystac z kilku nowych oddzialów. Tuzin powinien to zrobic.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Ambi_15_08"); //Przyniose Ci troche. Do zobaczenia pózniej.
 
 	Log_CreateTopic	(TOPIC_MOD_ELSBETH_HOLZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ELSBETH_HOLZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ELSBETH_HOLZ, "Elsbeth braucht Äste für ihren Küchenofen. Ich soll so zwölf Stück besorgen.");
+	B_LogEntry	(TOPIC_MOD_ELSBETH_HOLZ, "Elsbeth potrzebuje galezi do swojego pieca kuchennego. Mam dostac 12 sztuk.");
 };
 
 INSTANCE Info_Mod_Elsbeth_Holz (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Elsbeth_Holz (C_INFO)
 	information	= Info_Mod_Elsbeth_Holz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier dein Holz.";
+	description	= "Dostalem tu wasze drewno.";
 };
 
 FUNC INT Info_Mod_Elsbeth_Holz_Condition()
@@ -84,14 +84,14 @@ FUNC INT Info_Mod_Elsbeth_Holz_Condition()
 
 FUNC VOID Info_Mod_Elsbeth_Holz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_00"); //Ich hab hier dein Holz.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_00"); //Dostalem tu wasze drewno.
 
 	B_GiveInvItems	(hero, self, ItMi_Ast, 12);
 
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_01"); //Das ist lieb. Danke schön.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_02"); //Gern geschehen, aber ich muss jetzt weiter.
-	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_03"); //Dann wünsche ich dir Erfolg bei deinen Aufgaben.
-	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_04"); //Das kann ich immer brauchen. Danke.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_01"); //To slodkie. Dziekuje bardzo.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_02"); //Jestes mile widziany, ale musze odejsc teraz.
+	AI_Output(self, hero, "Info_Mod_Elsbeth_Holz_17_03"); //Wtedy zycze powodzenia w realizacji zadan.
+	AI_Output(hero, self, "Info_Mod_Elsbeth_Holz_15_04"); //Zawsze moge z tego skorzystac. Dzieki.
 
 	B_SetTopicStatus	(TOPIC_MOD_ELSBETH_HOLZ, LOG_SUCCESS);
 

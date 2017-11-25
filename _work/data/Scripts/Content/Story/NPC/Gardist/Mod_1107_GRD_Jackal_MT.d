@@ -2,7 +2,7 @@ instance Mod_1107_GRD_Jackal_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Jackal";
+	name 		=	"szakal";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		= 	50;		// wegen XP!

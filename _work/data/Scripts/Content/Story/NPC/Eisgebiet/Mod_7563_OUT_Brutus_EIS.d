@@ -1,7 +1,7 @@
 INSTANCE Mod_7563_OUT_Brutus_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brutus"; 	
+	name 		= "rozmnazanie"; 	
 	guild 		= GIL_OUT;
 	id 			= 7563;
 	voice 		= 8;																	

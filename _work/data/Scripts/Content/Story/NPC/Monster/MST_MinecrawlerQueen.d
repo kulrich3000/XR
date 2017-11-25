@@ -5,7 +5,7 @@
 
 PROTOTYPE Mst_Default_MinecrawlerQueen(C_Npc)			
 {
-	name							=	"Minecrawler-Königin";
+	name							=	"Królowa Minecrawler";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLERQUEEN;
 	level							=	50;		// SN: wegen XP, real nur Level 15!
@@ -74,7 +74,7 @@ INSTANCE MinecrawlerQueen	(Mst_Default_MinecrawlerQueen)
 
 INSTANCE ErznagerQueen	(Mst_Default_MinecrawlerQueen)
 {
-	name			=	"Erznager-Königin";
+	name			=	"królowa gryzonca";
 	Set_ErznagerQueen_Visuals();
 	Npc_SetToFistMode(self);
 };

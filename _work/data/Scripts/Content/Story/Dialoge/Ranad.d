@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Ranad_Hi_Condition()
 
 FUNC VOID Info_Mod_Ranad_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ranad_Hi_18_00"); //Fremder sein gegrüßt von mir.
+	AI_Output(self, hero, "Info_Mod_Ranad_Hi_18_00"); //Pozdrawiam mnie.
 
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ranad_Hi_18_02"); //Ich seien Ranad.
+	AI_Output(self, hero, "Info_Mod_Ranad_Hi_18_02"); //Jestem Ranadem.
 };
 
 INSTANCE Info_Mod_Ranad_WasHier (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Ranad_WasHier (C_INFO)
 	information	= Info_Mod_Ranad_WasHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ur Shak schickt mich.";
+	description	= "Ur Shak mnie wyslal.";
 };
 
 FUNC INT Info_Mod_Ranad_WasHier_Condition()
@@ -44,22 +44,22 @@ FUNC INT Info_Mod_Ranad_WasHier_Condition()
 
 FUNC VOID Info_Mod_Ranad_WasHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ranad_WasHier_15_00"); //Ur Shak schickt mich. Du sollst mir die Infos über die Pläne der Orks in der Orkstadt geben.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_01"); //Orks sammeln Fokusse. Sie schon haben zwei. Doch Ranad können machen falsches Fokus. So er haben getauscht eine Fokus von ihnen.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_02"); //Ranad noch haben weitere vier falsche Fokusse. Doch böse Orks nur haben eine Fokus. Hosh Pak immer tragen bei sich.
-	AI_Output(hero, self, "Info_Mod_Ranad_WasHier_15_03"); //Dann sollten wir versuchen den Fokus irgendwie aus der Obhut von Hosh Pak zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_04"); //Hosh Pak nicht wird geben weg Fokus. Ranad und Mensch müssen machen tot. Sie können tarnen und dringen ein in Stadt von Orks. Haben große Stadt, auch unter Erde.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_05"); //Ranad werden geben Hosh Pak drei falsche Fokusse. Dann er werden denken er können machen Ritual für Krushak.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_06"); //Dann Ranad und Mensch werden greifen an und holen letztes Fokus. Freund müssen kommen mit in Stadt, doch böse Orks werden nicht lassen.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_07"); //Freund gehen zu Tarrok. Er können machen Ulu-Mulu für Freund. Wenn Freund sein in Stadt von Orks, er greifen an Hosh Pak. Wenn Freund greifen an Hosh Pak, Ranad werden helfen Freund.
-	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_08"); //Hier Freund noch haben Fokus von Ranad.
+	AI_Output(hero, self, "Info_Mod_Ranad_WasHier_15_00"); //Ur Shak mnie wyslal. Chce, zebys podal mi informacje na temat planów orków dla Ork City.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_01"); //Orksy skupiaja uwage. Masz juz dwóch. Jednak Ranad moze sie zle skupic. Wymienil wiec ich punkt ciezkosci.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_02"); //Ranad nadal ma jeszcze cztery inne bledne nastawienie. Jednak zle orki maja tylko jeden cel. Hosh Pak nalezy zawsze miec przy sobie.
+	AI_Output(hero, self, "Info_Mod_Ranad_WasHier_15_03"); //Nastepnie spróbujmy jakos skupic sie na opiece Hosh Pak.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_04"); //Firma Hosh Pak nie bedzie skupiac uwagi. Ranad i czlowiek musza umrzec. Moga zakamuflowac i wtargnac do miasta Orków. Miej duze miasto, nawet metro.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_05"); //Ranad poswieci Hosh Pak trzem bledom. Wtedy pomysli, ze moze obchodzic rytual dla Krushaka.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_06"); //Wtedy Ranad i Czlowiek zaatakuja i skupia uwage. Przyjaciel musi przyjsc z nim do miasta, ale zle orki nie odejda.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_07"); //Przyjaciel wybiera sie do Tarroka. Moze zrobic Ulu-Mulu dla przyjaciela. Jesli przyjaciel przebywa w miescie Orcs, atakuje Hosha Pak. Kiedy przyjaciel atakuje Hosh Pak, Ranad pomoze przyjacielowi.
+	AI_Output(self, hero, "Info_Mod_Ranad_WasHier_18_08"); //Tutaj przyjaciele nadal skupiaja sie wokól Ranada.
 
 	CreateInvItems	(self, ItMi_Focus_Stonehenge, 1);
 	B_GiveInvItems	(self, hero, ItMi_Focus_Stonehenge, 1);
 
 	B_StartOtherRoutine	(Mod_10002_Orc_HoshPak_MT, "TOT");
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Der Ork Ranad hat bereits einen Fokus von den Orks gestohlen und dafür einen falschen dort gelassen. Die Orks haben nur noch einen weiteren Fokusstein, und den trägt Hosh Pak immer bei sich. Um an diesen Fokusstein zu kommen, müssen wir Hosh Pak töten. Ranad wird ihm die anderen falschen Foki bringen, damit Hosh Pak das Ritual machen kann und ich soll ihn dann attackieren. Um in die Orkstadt zu kommen, brauche ich allerdings ein Ulu-Mulu. Tarrok wird mir eins herstellen können.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ork Ranad juz wykradl ostrosc z Orków i zostawil tam falszywa. Orkiestry maja tylko jeszcze jeden kamien ogniskowy, a Hosh Pak zawsze nosi go razem z nim. Aby dotrzec do tego centralnego punktu, musimy zabic Hosh Pak. Ranad przywiezie go do Foki, aby Hosh Pak mógl wykonac rytual i powinienem go zaatakowac. Aby dostac sie do Orku, potrzebuje jednak Ulu-Mulu. Tarrok bedzie mi mógl to uczynic.");
 };
 
 INSTANCE Info_Mod_Ranad_Tarrok (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Ranad_Tarrok (C_INFO)
 	information	= Info_Mod_Ranad_Tarrok_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich Tarrok?";
+	description	= "Gdzie moge znalezc Tarrok?";
 };
 
 FUNC INT Info_Mod_Ranad_Tarrok_Condition()
@@ -84,12 +84,12 @@ FUNC INT Info_Mod_Ranad_Tarrok_Condition()
 
 FUNC VOID Info_Mod_Ranad_Tarrok_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ranad_Tarrok_15_00"); //Wo finde ich Tarrok?
-	AI_Output(self, hero, "Info_Mod_Ranad_Tarrok_18_01"); //Tarrok haben Spezialauftrag von Ur Shak. Sollen finden Fokus aus Stonehenge.
-	AI_Output(hero, self, "Info_Mod_Ranad_Tarrok_15_02"); //Aber den hast du mir doch gegeben?
-	AI_Output(self, hero, "Info_Mod_Ranad_Tarrok_18_03"); //Sein Fokus ich gestohlen von Orks in Stadt. Ich erst zurück gekommen bin, als Tarrok schon weg.
+	AI_Output(hero, self, "Info_Mod_Ranad_Tarrok_15_00"); //Gdzie moge znalezc Tarrok?
+	AI_Output(self, hero, "Info_Mod_Ranad_Tarrok_18_01"); //Tarrok posiada specjalne zamówienie od Ur Shaka. Skoncentrujmy sie na Stonehenge.
+	AI_Output(hero, self, "Info_Mod_Ranad_Tarrok_15_02"); //Ale ty mi to dales, prawda?
+	AI_Output(self, hero, "Info_Mod_Ranad_Tarrok_18_03"); //Jego cel wykradlem z orków w miescie. Wrócilem dopiero wtedy, gdy odjechal Tarrok.
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich finde Tarrok beim Stonehenge.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Tarrok znajdziemy w Stonehenge.");
 };
 
 INSTANCE Info_Mod_Ranad_EXIT (C_INFO)

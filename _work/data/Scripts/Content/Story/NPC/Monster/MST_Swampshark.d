@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Swampshark(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Sumpfhai";
+	name							=	"rekin bagienny";
 	guild							=	GIL_SWAMPSHARK;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPSHARK;
 	level							=	24;
@@ -116,7 +116,7 @@ INSTANCE Swampshark	(Mst_Default_Swampshark)
 
 INSTANCE Swampshark_Undead	(Mst_Default_Swampshark)
 {
-	name	= "Untoter Sumpfhai";
+	name	= "Nieumarly rekin bagienny";
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADSWAMPSHARK;
 
 	level = 40;
@@ -127,7 +127,7 @@ INSTANCE Swampshark_Undead	(Mst_Default_Swampshark)
 
 INSTANCE Swampshark_Undead2	(Mst_Default_Swampshark)
 {
-	name	= "Untoter Sumpfhai";
+	name	= "Nieumarly rekin bagienny";
 
 	level = 40;
 
@@ -137,7 +137,7 @@ INSTANCE Swampshark_Undead2	(Mst_Default_Swampshark)
 
 INSTANCE Summoned_UndeadSwampshark (Mst_Default_Swampshark)
 {
-	name							=	"Beschworener untoter Sumpfhai";
+	name							=	"Wezwanie Niezagromadzonego Zasobnika Szarlata";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_UNDEADSWAMPSHARK;
 	level							=	0;
@@ -155,7 +155,7 @@ INSTANCE Summoned_UndeadSwampshark (Mst_Default_Swampshark)
 
 INSTANCE Lindwurm	(Mst_Default_Swampshark)
 {
-	name	= "Lindwurm";
+	name	= "smok";
 	aivar[AIV_MM_REAL_ID]			= 	ID_LINDWURM;
 
 	CreateInvItems	(self, ItAt_LindwurmHaut, 1);
@@ -274,7 +274,7 @@ INSTANCE Swampshark_Fuetterung_03_05	(Mst_Default_Swampshark)
 
 INSTANCE Wurm	(Mst_Default_Swampshark)
 {
-	name	=	"Morastwurm";
+	name	=	"wrzosowisko";
 	level							=	1;
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	10;

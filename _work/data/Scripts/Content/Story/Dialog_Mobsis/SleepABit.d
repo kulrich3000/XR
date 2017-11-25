@@ -48,13 +48,13 @@ func void PC_Sleep (var int t)
 	else if (Mod_EssPunkte == 0)
 	&& (Mod_Esssystem == TRUE)
 	{
-		PrintScreen	("Vor Hunger bist du ohnmächtig geworden!", -1, -1, FONT_Screen, 2);
+		PrintScreen	("Zemdlales sie z glodu!", -1, -1, FONT_Screen, 2);
 	}
 	else if ((hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_VLK))
 	&& (Mod_Gottstatus < 9)
 	{
-		PrintScreen	("Du hast ein schlechtes Gewissen!", -1, -1, FONT_Screen, 2);
+		PrintScreen	("Czujesz sie winny!", -1, -1, FONT_Screen, 2);
 
 		hero.attribute[ATR_HITPOINTS] += (hero.attribute[ATR_HITPOINTS_MAX]-hero.attribute[ATR_HITPOINTS])/2;
 		hero.attribute[ATR_MANA] += (hero.attribute[ATR_MANA_MAX]-hero.attribute[ATR_MANA])/2;
@@ -62,7 +62,7 @@ func void PC_Sleep (var int t)
 	else if (hero.guild == GIL_KDF)
 	&& (Mod_Gottstatus > 4)
 	{
-		PrintScreen	("Beliar verwehrt dir vollständige Erholung!", -1, -1, FONT_Screen, 2);
+		PrintScreen	("Beliar zaprzecza calkowitej regeneracji!", -1, -1, FONT_Screen, 2);
 
 		hero.attribute[ATR_HITPOINTS] += (hero.attribute[ATR_HITPOINTS_MAX]-hero.attribute[ATR_HITPOINTS])/2;
 		hero.attribute[ATR_MANA] += (hero.attribute[ATR_MANA_MAX]-hero.attribute[ATR_MANA])/2;
@@ -71,7 +71,7 @@ func void PC_Sleep (var int t)
 	&& ((Mod_Gottstatus > 8)
 	|| (Mod_Gottstatus < 5))
 	{
-		PrintScreen	("Du bist nicht ausgeglichen!", -1, -1, FONT_Screen, 2);
+		PrintScreen	("Nie jestes zrównowazony!", -1, -1, FONT_Screen, 2);
 
 		hero.attribute[ATR_HITPOINTS] += (hero.attribute[ATR_HITPOINTS_MAX]-hero.attribute[ATR_HITPOINTS])/2;
 		hero.attribute[ATR_MANA] += (hero.attribute[ATR_MANA_MAX]-hero.attribute[ATR_MANA])/2;
@@ -117,7 +117,7 @@ func void PC_Sleep (var int t)
 		hero.attribute[ATR_STRENGTH] += 10;
 		hero.attribute[ATR_DEXTERITY] += 10;
 
-		PrintScreen	("Du fühlst dich wie neugeboren!", -1, 45, FONT_SCREEN, 2);
+		PrintScreen	("Czujesz sie jak sie odrodziles!", -1, 45, FONT_SCREEN, 2);
 
 		hero.attribute[ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX]+(hero.attribute[ATR_HITPOINTS_MAX] * 4) / 10;
 
@@ -138,7 +138,7 @@ func void PC_Sleep (var int t)
 		hero.attribute[ATR_MANA_MAX] += 10;
 		hero.attribute[ATR_MANA] = (hero.attribute[ATR_MANA_MAX] * 3) / 2;
 
-		PrintScreen	("Dein Bewusstsein scheint erweitert!", -1, -1, FONT_SCREEN, 2);
+		PrintScreen	("Wasza swiadomosc wydaje sie rozszerzona!", -1, -1, FONT_SCREEN, 2);
 	};
 
 	hero.aivar[AIV_Damage] = hero.attribute[ATR_HITPOINTS];
@@ -161,7 +161,7 @@ func void SLEEPABIT_S1 ()
 		&& ((Npc_GetDistToWP(hero, "NW_CITY_BED_BRAHIM_WEIB") < 500)
 		|| (Npc_GetDistToWP(hero, "NW_CITY_BED_BRAHIM") < 500))
 		{
-			PrintScreen	("Ich kann hier jetzt nicht schlafen", -1,-1,FONT_Screen,2);
+			PrintScreen	("Nie moge tu spac juz teraz.", -1,-1,FONT_Screen,2);
 		}
 		else
 		{
@@ -216,18 +216,18 @@ INSTANCE PC_SleepTime_Morning (C_INFO)
 	information		= PC_SleepTime_Morning_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Bis zum nächsten Morgen schlafen";
+	description		= "Spac do nastepnego ranka";
 };
 
 FUNC INT PC_SleepTime_Morning_Condition()
 {
 	if (Wld_IsTime(12,00,07,59))
 	{
-		PC_SleepTime_Morning.description = "Bis zum Morgen schlafen";
+		PC_SleepTime_Morning.description = "Sypiac do rana";
 	}
 	else
 	{
-		PC_SleepTime_Morning.description = "Bis zum nächsten Morgen schlafen";
+		PC_SleepTime_Morning.description = "Spac do nastepnego ranka";
 	};
 
 	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_SLEEPABIT)
@@ -252,7 +252,7 @@ INSTANCE PC_SleepTime_Noon (C_INFO)
 	information		= PC_SleepTime_Noon_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Bis Mittags schlafen";
+	description		= "Sypiac do poludnia";
 };
 
 FUNC INT PC_SleepTime_Noon_Condition()
@@ -279,18 +279,18 @@ INSTANCE PC_SleepTime_Evening (C_INFO)
 	information		= PC_SleepTime_Evening_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Bis zum nächsten Abend schlafen";
+	description		= "Spac do nastepnej nocy";
 };
 
 FUNC INT PC_SleepTime_Evening_Condition()
 {
 	if (Wld_IsTime(00,00,19,59))
 	{
-		PC_SleepTime_Evening.description = "Bis zum Abend schlafen";
+		PC_SleepTime_Evening.description = "Sypiac do wieczora";
 	}
 	else
 	{
-		PC_SleepTime_Evening.description = "Bis zum nächsten Abend schlafen";
+		PC_SleepTime_Evening.description = "Spac do nastepnej nocy";
 	};
 
 	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_SLEEPABIT)
@@ -313,7 +313,7 @@ instance PC_SleepTime_Midnight (C_INFO)
 	information		= PC_SleepTime_Midnight_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Bis Mitternacht schlafen";
+	description		= "Sypiac do pólnocy";
 };
 
 FUNC INT PC_SleepTime_Midnight_Condition()
@@ -338,7 +338,7 @@ instance PC_SleepTime_Special (C_INFO)
 	information		= PC_SleepTime_Special_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(Stunde wählen)";
+	description		= "(wybrac godzine)";
 };
 
 FUNC INT PC_SleepTime_Special_Condition()
@@ -353,26 +353,26 @@ func VOID PC_SleepTime_Special_Info()
 {
 	Info_ClearChoices	(PC_SleepTime_Special);
 
-	Info_AddChoice	(PC_SleepTime_Special, "13 - 24 Uhr", PC_SleepTime_Special_A);
-	Info_AddChoice	(PC_SleepTime_Special, "1 - 12 Uhr", PC_SleepTime_Special_B);
+	Info_AddChoice	(PC_SleepTime_Special, "13 - o godz. 24:00", PC_SleepTime_Special_A);
+	Info_AddChoice	(PC_SleepTime_Special, "1 - godz. 12:00", PC_SleepTime_Special_B);
 };
 
 FUNC VOID PC_SleepTime_Special_B()
 {
 	Info_ClearChoices	(PC_SleepTime_Special);
 
-	Info_AddChoice	(PC_SleepTime_Special, "12 Uhr", PC_SleepTime_Special_N);
-	Info_AddChoice	(PC_SleepTime_Special, "11 Uhr", PC_SleepTime_Special_M);
-	Info_AddChoice	(PC_SleepTime_Special, "10 Uhr", PC_SleepTime_Special_L);
-	Info_AddChoice	(PC_SleepTime_Special, "9 Uhr", PC_SleepTime_Special_K);
-	Info_AddChoice	(PC_SleepTime_Special, "8 Uhr", PC_SleepTime_Special_J);
-	Info_AddChoice	(PC_SleepTime_Special, "7 Uhr", PC_SleepTime_Special_I);
-	Info_AddChoice	(PC_SleepTime_Special, "6 Uhr", PC_SleepTime_Special_H);
-	Info_AddChoice	(PC_SleepTime_Special, "5 Uhr", PC_SleepTime_Special_G);
-	Info_AddChoice	(PC_SleepTime_Special, "4 Uhr", PC_SleepTime_Special_F);
-	Info_AddChoice	(PC_SleepTime_Special, "3 Uhr", PC_SleepTime_Special_E);
-	Info_AddChoice	(PC_SleepTime_Special, "2 Uhr", PC_SleepTime_Special_D);
-	Info_AddChoice	(PC_SleepTime_Special, "1 Uhr", PC_SleepTime_Special_C);
+	Info_AddChoice	(PC_SleepTime_Special, "godzina 12 o godzina 12 o godzina", PC_SleepTime_Special_N);
+	Info_AddChoice	(PC_SleepTime_Special, "o 11' zegara", PC_SleepTime_Special_M);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 10 o godz.", PC_SleepTime_Special_L);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 9' o", PC_SleepTime_Special_K);
+	Info_AddChoice	(PC_SleepTime_Special, "godzina 8 o godz. 8", PC_SleepTime_Special_J);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 7' o o", PC_SleepTime_Special_I);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 6' o", PC_SleepTime_Special_H);
+	Info_AddChoice	(PC_SleepTime_Special, "o piatej o godzinie", PC_SleepTime_Special_G);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 4 o", PC_SleepTime_Special_F);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 3 o", PC_SleepTime_Special_E);
+	Info_AddChoice	(PC_SleepTime_Special, "o o godzinie 2 o o", PC_SleepTime_Special_D);
+	Info_AddChoice	(PC_SleepTime_Special, "1' zegar", PC_SleepTime_Special_C);
 };
 
 FUNC VOID PC_SleepTime_Special_N()
@@ -463,18 +463,18 @@ FUNC VOID PC_SleepTime_Special_A()
 {
 	Info_ClearChoices	(PC_SleepTime_Special);
 
-	Info_AddChoice	(PC_SleepTime_Special, "24 Uhr", PC_SleepTime_Special_Z);
-	Info_AddChoice	(PC_SleepTime_Special, "23 Uhr", PC_SleepTime_Special_Y);
-	Info_AddChoice	(PC_SleepTime_Special, "22 Uhr", PC_SleepTime_Special_X);
-	Info_AddChoice	(PC_SleepTime_Special, "21 Uhr", PC_SleepTime_Special_W);
-	Info_AddChoice	(PC_SleepTime_Special, "20 Uhr", PC_SleepTime_Special_V);
-	Info_AddChoice	(PC_SleepTime_Special, "19 Uhr", PC_SleepTime_Special_U);
-	Info_AddChoice	(PC_SleepTime_Special, "18 Uhr", PC_SleepTime_Special_T);
-	Info_AddChoice	(PC_SleepTime_Special, "17 Uhr", PC_SleepTime_Special_S);
-	Info_AddChoice	(PC_SleepTime_Special, "16 Uhr", PC_SleepTime_Special_R);
-	Info_AddChoice	(PC_SleepTime_Special, "15 Uhr", PC_SleepTime_Special_Q);
-	Info_AddChoice	(PC_SleepTime_Special, "14 Uhr", PC_SleepTime_Special_P);
-	Info_AddChoice	(PC_SleepTime_Special, "13 Uhr", PC_SleepTime_Special_O);
+	Info_AddChoice	(PC_SleepTime_Special, "24 o godzinie 24 o godz. 24 o godzinie", PC_SleepTime_Special_Z);
+	Info_AddChoice	(PC_SleepTime_Special, "o godz. 23 o godzinie", PC_SleepTime_Special_Y);
+	Info_AddChoice	(PC_SleepTime_Special, "o 22 o godzinie", PC_SleepTime_Special_X);
+	Info_AddChoice	(PC_SleepTime_Special, "o 21 o zegarze o", PC_SleepTime_Special_W);
+	Info_AddChoice	(PC_SleepTime_Special, "20 o godzinie 20 o godzinie", PC_SleepTime_Special_V);
+	Info_AddChoice	(PC_SleepTime_Special, "o godz. 19 o godzinie", PC_SleepTime_Special_U);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 18 o godzinie", PC_SleepTime_Special_T);
+	Info_AddChoice	(PC_SleepTime_Special, "o 17' clock", PC_SleepTime_Special_S);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzinie 16 o godzinie", PC_SleepTime_Special_R);
+	Info_AddChoice	(PC_SleepTime_Special, "o 15' zegara", PC_SleepTime_Special_Q);
+	Info_AddChoice	(PC_SleepTime_Special, "o godzina 14 o godzina", PC_SleepTime_Special_P);
+	Info_AddChoice	(PC_SleepTime_Special, "13' zegar o godzina 13", PC_SleepTime_Special_O);
 };
 
 FUNC VOID PC_SleepTime_Special_Z()

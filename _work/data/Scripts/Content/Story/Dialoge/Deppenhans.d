@@ -15,32 +15,32 @@ FUNC INT Info_Mod_Deppenhans_Truhe_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_Truhe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_00"); //Hey, kannst du mir mal helfen? Ich habe Probleme mir meiner Truhe.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_01"); //Ich komme nicht an meine Ersparnisse.
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_02"); //Ärger mit dem Schloss?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_03"); //Nee, die braucht mal wieder eins auf den Deckel.
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_04"); //Wie?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_05"); //Naja, die springt und beißt mal wieder wie verrückt.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_06"); //Diesmal ganz doll, sodass ich sie nicht alleine zu züchtigen vermag.
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_07"); //Was ist das für ein Unsinn?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_08"); //Ja, hast Recht, ist Unsinn, was die mal wieder macht.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_09"); //Konnte sich aber schon als Baum nicht benehmen. Ist durch das Feld gerannt und hat alles auf den Kopf gestellt.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_10"); //Irgendwann habe ich dann meine Axt genommen und ihn zu der Truhe gemacht.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_11"); //Aber mit dem Benehmen ist es immer noch nicht besser.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_00"); //Hej, czy mozesz dac mi reke? Mam klopoty z klatka piersiowa.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_01"); //Nie moge uzyskac oszczednosci zyciowych.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_02"); //Klopot z zamkiem?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_03"); //Nah, potrzebuje kolejnej na pokrywie.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_04"); //Jak?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_05"); //No cóz, ponownie skacze i ugryza jak szalone.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_06"); //Tym razem bylo to naprawde wspaniale, wiec nie moge jej karcic na wlasna reke.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_07"); //Jaki to nonsens?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_08"); //Tak, masz racje, to nonsens, co ona robi znowu.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_09"); //Nie moze jednak zachowywac sie jak drzewo. Przechodzimy przez pole i przewracamy wszystko do góry nogami.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_10"); //W pewnym momencie wzialem siekiere i podjalem ja na klatke piersiowa.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_11"); //Ale zachowanie nie jest jeszcze lepsze.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_12"); //(zu sich selbst) Und ich dachte in der Kolonie gab es damals die schrägsten Vögel.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe_15_12"); //(ja sama) I pomyslalam, ze w tej kolonii byly wtedy najdziwniejsze ptaki.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_13"); //Ja, ist schon schräg drauf, die Gute.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_14"); //Wenn du mir hilfst, sie zur Ruhe zu bringen, bekommst du auch einen Teil meiner Ersparnisse.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_15"); //Ich geh schon mal rein und schau nach ihr.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_13"); //Tak, to dziwne, dobre.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_14"); //Jesli pomozesz mi ja uspokoic, dam ci troche oszczednosci.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe_31_15"); //Jestem gonna wejsc do srodka i sprawdzic ja.
 
 	Log_CreateTopic	(TOPIC_MOD_DEPPENHANS_TRUHE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DEPPENHANS_TRUHE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DEPPENHANS_TRUHE, "In Khorata begegnet man ja einigen Kuriositäten. Der Bauer Deppenhans bat mich darum, seiner Truhe mit ein paar Schlägen Benehmen beizubringen, da diese angeblich wie wild herumspringt und beißt. Was davon zu halten ist ... na ja. Da er mir aber einen Teil seiner Ersparnisse zur Belohnung versprochen hat, sollte ich vielleicht doch mal einen Blick hinein werfen, was da so vor sich geht.");
+	B_LogEntry	(TOPIC_MOD_DEPPENHANS_TRUHE, "W Khoracie spotyka sie kilka ciekawostek. Rolnik Deppenhans poprosil mnie, abym nauczyl jego klatki piersiowej jak ma sie zachowywac kilkoma uderzeniami, bo podobno skacze i ukasza jak dzikie zwierzeta. Co o tym myslec? cóz. Skoro jednak obiecal mi jako nagrode czesc swoich oszczednosci, moze powinienem przyjrzec sie temu, co sie dzieje.");
 
 	AI_StopProcessInfos	(self);
 
@@ -70,8 +70,8 @@ FUNC INT Info_Mod_Deppenhans_Truhe2_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_Truhe2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe2_31_00"); //Da schau. So garstig war sie schon lange nicht mehr.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe2_31_01"); //Verpass ihr bitte eins, dass sie es so schnell nicht mehr vergisst.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe2_31_00"); //Tam, spojrzec. Od dawna nie byla tak paskudna.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe2_31_01"); //Prosze, tesknic za jednym, nie zapomni o tym tak szybko.
 
 	AI_StopProcessInfos	(self);
 };
@@ -97,7 +97,7 @@ FUNC INT Info_Mod_Deppenhans_Truhe3_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_Truhe3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_00"); //Großartig, du hast es geschafft.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_00"); //Wspaniale, to zrobiles.
 
 	AI_GotoNpc	(self, Truhe_Deppenhans);
 
@@ -109,13 +109,13 @@ FUNC VOID Info_Mod_Deppenhans_Truhe3_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_01"); //Und hier, wie versprochen ein Teil meiner Ersparnisse.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_02"); //Hier, nimm ruhig die Hälfte. Du hast ja auch echt gute Arbeit geleistet und es dir wirklich verdient.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_01"); //I tutaj, jak obiecalem, czesc moich oszczednosci.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_02"); //Tu zajmiemy polowe. Wykonales naprawde dobra prace i naprawde zarobiles.
 
 	B_GiveInvItems	(self, hero, ItPl_Beet, 6);
 
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe3_15_03"); //Ohh, toll, Rüben.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_04"); //Ja, schön, dass sie dir gefallen.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Truhe3_15_03"); //Och, wspaniale, rzepy.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Truhe3_31_04"); //Tak, ciesze sie, ze podoba ci sie.
 
 	B_SetTopicStatus	(TOPIC_MOD_DEPPENHANS_TRUHE, LOG_SUCCESS);
 
@@ -134,7 +134,7 @@ INSTANCE Info_Mod_Deppenhans_Kaninchenplage (C_INFO)
 	information	= Info_Mod_Deppenhans_Kaninchenplage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast hier ja eine ganz schöne Kaninchenplage auf deinem Feld.";
+	description	= "Dostales mnóstwo zajaców w polu.";
 };
 
 FUNC INT Info_Mod_Deppenhans_Kaninchenplage_Condition()
@@ -147,22 +147,22 @@ FUNC INT Info_Mod_Deppenhans_Kaninchenplage_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_Kaninchenplage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_00"); //Du hast hier ja eine ganz schöne Kaninchenplage auf deinem Feld.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_01"); //(leicht debil) Ja, überall lustige, flauschige Hoppelhasen. Komisch, dass seitdem mein Gemüse Stück für Stück verschwindet. Muss hier irgendwo ein Dieb sein ...
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_02"); //Ähh, ja, wie dem auch sei, hast du eine Ahnung, woher die alle kommen könnten?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_03"); //Nö, die tauchen einfach so auf.
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_04"); //Na schön, dann darf ich die Gegend nach Hinweisen durchkämmen.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_05"); //Durchkämmen?! Hey, da habe ich was für dich.
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_06"); //(erwartungsvoll) Ja?! Hinweise?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_07"); //Nee, ich hatte die tolle Idee, einen überdimensionalen Kamm an einen Holzstil zu basteln. Da habe ich das dabei herausbekommen.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_00"); //Dostales mnóstwo zajaców w polu.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_01"); //Tak, smieszne, puszyste, puszyste, puszyste króliczki na calym miejscu. To dziwne, ze od tego czasu stopniowo znikaja moje warzywa. Musi byc tu gdzies zlodziejem....
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_02"); //Ach, tak i tak, czy masz jakies wyobrazenie, skad one wszystkie moga pochodzic?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_03"); //Nah, po prostu tak sie pojawiaja.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_04"); //Wszystko w prawo, wiec moge przeczesac obszar, aby uzyskac wskazówki.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_05"); //Skorzystajcie? Hej, dostalem cos dla Ciebie.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_06"); //Chetni) Tak! Wskazówki?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_07"); //Nah, mialem swietny pomysl, zeby zrobic za duzy grzebien na drewnianym stylu. O tym wlasnie dowiedzialem sie.
 
 	B_GiveInvItems	(self, hero, ItMi_Rake, 1);
 
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_08"); //(etwas enttäuscht) Ohh, toll, eine Harke, danke.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_09"); //Aber kannst du ja auch diesen schwarz angezogenen Typen fragen, der hier immer so herumläuft und komische Lichter mit seiner Hand macht.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_10"); //Gerade dann tauchen immer besonders viele Kaninchen auf ... er hat's bestimmt auch gesehen.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Kaninchenplage_15_08"); //Och, wielki, rake, dziekuje.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_09"); //Ale mozna równiez zapytac tego czarnego goscia, który zawsze chodzi po nim, robiac zabawne swiatlo reka.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Kaninchenplage_31_10"); //Zwlaszcza, ze pojawia sie wtedy duzo królików...... On równiez musial to widziec.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Hmpf ... na ja, immerhin weiß ich jetzt, dass ich nach einem Magier in schwarzer Kleidung Ausschau halten muss.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Hmph..... no cóz, przynajmniej teraz wiem, ze musze szukac maga w czarnych ubraniach.");
 
 	Wld_InsertNpc	(Mod_7412_SNOV_Novize_REL, "REL_SURFACE_110");
 
@@ -193,12 +193,12 @@ FUNC INT Info_Mod_Deppenhans_NovizeWeg_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_NovizeWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Deppenhans_NovizeWeg_31_00"); //Hey, mein Gemüse hat aufgehört zu verschwinden.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_NovizeWeg_31_01"); //Wie du das auch gemacht hast, nimm diese Kürbisse als Dankeschön.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_NovizeWeg_31_00"); //Hej, moje warzywa przestaly znikac.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_NovizeWeg_31_01"); //Cokolwiek zrobiles, wez te dynie jako podziekowanie.
 
 	B_GiveInvItems	(self, hero, ItFo_Kuerbis, 5);
 
-	AI_Output(hero, self, "Info_Mod_Deppenhans_NovizeWeg_15_02"); //Ohh, wie reizend.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_NovizeWeg_15_02"); //Ach, jak piekny.
 
 	B_GivePlayerXP	(200);
 };
@@ -211,7 +211,7 @@ INSTANCE Info_Mod_Deppenhans_WoherBaum (C_INFO)
 	information	= Info_Mod_Deppenhans_WoherBaum_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher hattest du den laufenden Baum?";
+	description	= "Gdzie otrzymalibyscie to poruszajace sie drzewo?";
 };
 
 FUNC INT Info_Mod_Deppenhans_WoherBaum_Condition()
@@ -224,9 +224,9 @@ FUNC INT Info_Mod_Deppenhans_WoherBaum_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_WoherBaum_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Deppenhans_WoherBaum_15_00"); //Woher hattest du den laufenden Baum?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_WoherBaum_31_01"); //Den hatte ich neben meinem Feld gepflanzt ... mit Setzlingen aus dem verfluchten Moor.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_WoherBaum_31_02"); //Aber scheinbar wurden die schlecht aufgezogen, so wie er sich benommen hat. Du hast es ja selbst gesehen.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_WoherBaum_15_00"); //Gdzie otrzymalibyscie to poruszajace sie drzewo?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_WoherBaum_31_01"); //Sadzilem ja obok pola..... z sadzonkami od wilgotnego bagna.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_WoherBaum_31_02"); //Ale najwyrazniej byly one zle wychowane, sposób, w jaki sie zachowywal. Widziales go sam.
 };
 
 INSTANCE Info_Mod_Deppenhans_Landarbeit (C_INFO)
@@ -237,7 +237,7 @@ INSTANCE Info_Mod_Deppenhans_Landarbeit (C_INFO)
 	information	= Info_Mod_Deppenhans_Landarbeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und was macht sonst die Landarbeit?";
+	description	= "Co jeszcze robi praca w gospodarstwie?";
 };
 
 FUNC INT Info_Mod_Deppenhans_Landarbeit_Condition()
@@ -250,13 +250,13 @@ FUNC INT Info_Mod_Deppenhans_Landarbeit_Condition()
 
 FUNC VOID Info_Mod_Deppenhans_Landarbeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Deppenhans_Landarbeit_15_00"); //Und was macht sonst die Landarbeit?
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_01"); //Die läuft wunderprächtig. Ich weiß ja auch, wie es geht.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_02"); //Die Samen und Knollen kommen in die Erde aufs Feld und dann wachsen sie.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_03"); //Mein Chef, der Erhard, der macht das ganz falsch.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_04"); //Hat komische gelb und blau glänzende Brocken bei der Wand seines Hauses vergraben, zwischen den ganzen Heuballen und Fässern.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_05"); //Dass aus denen nichts Anständiges wachsen würde, hatte ich mir gleich gedacht.
-	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_06"); //Aber es gibt ja komische Leute.
+	AI_Output(hero, self, "Info_Mod_Deppenhans_Landarbeit_15_00"); //Co jeszcze robi praca w gospodarstwie?
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_01"); //To cudownie piekne. Wiem, jak to dziala.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_02"); //Nasiona i bulwy wpadaja do gleby na polu, a nastepnie rosna.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_03"); //Mój szef, Erhard, robi to wszystko zle.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_04"); //Na scianie domu, posród wszystkich belek siana i beczek zasypal smiesznie zólte i niebieskie lsniace klody.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_05"); //Myslalem, ze nic przyzwoitego z nich nie wyrosnie.
+	AI_Output(self, hero, "Info_Mod_Deppenhans_Landarbeit_31_06"); //Ale sa tez dziwni ludzie.
 };
 
 INSTANCE Info_Mod_Deppenhans_Pickpocket (C_INFO)

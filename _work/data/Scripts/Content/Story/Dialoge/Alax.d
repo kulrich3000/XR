@@ -15,14 +15,14 @@ FUNC INT Info_Mod_Alax_Hi_Condition()
 
 FUNC VOID Info_Mod_Alax_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_00"); //He, was trampelst du hier so laut rum? Ich brauche absolute Konzentration beim Tränkebrauen.
-	AI_Output(hero, self, "Info_Mod_Alax_Hi_15_01"); //Als wäre es hier drin so still ...
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_02"); //Nun ... das mag ja stimmen. Aber als ehemaliger Guru des Schläfers entspricht es nun mal meiner Gewohnheit.
-	AI_Output(hero, self, "Info_Mod_Alax_Hi_15_03"); //Du warst Guru im Sumpflager?
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_04"); //(ungeduldig) Das habe ich doch gerade gesagt.
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_05"); //Nachdem Xardas jedoch den Schläfer bezwungen hatte und die Barriere zum Einsturz brachte, verstand es sich für mich von selbst, dass ich seinem Beispiel folgen würde.
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_06"); //Letztendlich hat er mich von dieser Irrlehre, wie auch von der Gefangenschaft in der Kolonie befreit.
-	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_07"); //Also bin ich Alchemist in den Reihen der Dämonenmagier geworden.
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_00"); //Hej, co robisz tutaj? Potrzebuje absolutnej koncentracji podczas picia.
+	AI_Output(hero, self, "Info_Mod_Alax_Hi_15_01"); //Lubie, ze tutaj jest tak cicho....
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_02"); //.... to moze byc prawda. Ale jako byly guru sypialni, to mój nawyk.
+	AI_Output(hero, self, "Info_Mod_Alax_Hi_15_03"); //Byles guru w obozie bagnistym?
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_04"); //Tak wlasnie powiedzialem.
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_05"); //Ale po pokonaniu sypialni przez Xardasa i zburzeniu bariery bylo dla mnie oczywiste, ze pójde za jego przykladem.
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_06"); //W koncu uwolnil mnie od tej falszywej doktryny, jak równiez od niewoli w kolonii.
+	AI_Output(self, hero, "Info_Mod_Alax_Hi_14_07"); //Zostalem wiec alchemikiem w szeregach demonicznych magów.
 };
 
 INSTANCE Info_Mod_Alax_AlchemieLehrer (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Alax_AlchemieLehrer (C_INFO)
 	information	= Info_Mod_Alax_AlchemieLehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir etwas über Alchemie beibringen?";
+	description	= "Czy mozesz mnie nauczyc o alchemii?";
 };
 
 FUNC INT Info_Mod_Alax_AlchemieLehrer_Condition()
@@ -46,41 +46,41 @@ FUNC INT Info_Mod_Alax_AlchemieLehrer_Condition()
 
 FUNC VOID Info_Mod_Alax_AlchemieLehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_15_00"); //Kannst du mir etwas über Alchemie beibringen?
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_14_01"); //Warum bei Beliar sollte ich das tun?
+	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_15_00"); //Czy mozesz mnie nauczyc o alchemii?
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_14_01"); //Dlaczego powinienem to zrobic z Beliarem?
 
 	Info_ClearChoices	(Info_Mod_Alax_AlchemieLehrer);
 
-	Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer, "Weil ich ein netter Kerl bin.", Info_Mod_Alax_AlchemieLehrer_B);
-	Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer, "Ich habe Xardas damals geholfen den Schläfers zu verbannen.", Info_Mod_Alax_AlchemieLehrer_A);
+	Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer, "Bo jestem milym facetem.", Info_Mod_Alax_AlchemieLehrer_B);
+	Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer, "Pomagalem wtedy Xardasowi w wygnaniu sypialni.", Info_Mod_Alax_AlchemieLehrer_A);
 };
 
 FUNC VOID Info_Mod_Alax_AlchemieLehrer_C()
 {
-	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_C_15_00"); //Von welchen?
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_C_14_01"); //Überrasch mich ... oder anders gesagt: Stiehl mir nicht mehr Zeit und lass mich in Ruhe weiterarbeiten.
+	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_C_15_00"); //Który z nich?
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_C_14_01"); //Zaskocz mnie.... albo inaczej mówiac, nie krasc mnie wiecej czasu i pozwól mi kontynuowac prace.
 
 	Info_ClearChoices	(Info_Mod_Alax_AlchemieLehrer);
 
 	Log_CreateTopic	(TOPIC_MOD_ALAX_ZUTATEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ALAX_ZUTATEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Bevor mir Alax etwas über Alchemie beibringt, soll ich ihm erst mal von 13 Tränken, Gewächsen oder sonstigen Zutaten meiner Wahl je 6 Stück bringen.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Zanim Alax uczy mnie czegos o alchemii, powinienem przyniesc mu 6 kawalków 13 eliksirów, roslin lub innych skladników wedlug mojego wyboru.");
 };
 
 FUNC VOID Info_Mod_Alax_AlchemieLehrer_B()
 {
-	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_B_15_00"); //Weil ich ein netter Kerl bin.
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_B_14_01"); //Netter Kerl?! Dann geh doch zu den weichgespülten Feuermagiern und bitte sie um deren Gunst.
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_B_14_02"); //Wenn ICH dir etwas beibringen soll, besorg mir erst von 13 verschiedenen Tränken, Gewächsen oder anderen Ingredienzien jeweils sechs Stück. Dann können wir weiterreden.
+	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_B_15_00"); //Bo jestem milym facetem.
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_B_14_01"); //Mily facet! Nastepnie udaj sie do zmiekczonych magów ognia i popros ich o laske.
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_B_14_02"); //Jesli mam nauczyc cie czegokolwiek, popros mnie o szesc kawalków kazdej z 13 róznych eliksirów, roslin lub innych skladników. Wtedy bedziemy mogli dalej rozmawiac.
 
 	Info_Mod_Alax_AlchemieLehrer_C();
 };
 
 FUNC VOID Info_Mod_Alax_AlchemieLehrer_A()
 {
-	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_A_15_00"); //Ich habe Xardas damals geholfen den Schläfers zu verbannen.
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_A_14_01"); //Haha, natürlich ... und ich habe Innos’ heilige Jungfrauen geschändet. Verarschen kann ich mich selbst.
-	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_A_14_02"); //Wenn ich dir wirklich etwas beibringen soll, besorg mir erst von 13 verschiedenen Tränken, Gewächsen oder anderen Ingredienzien jeweils sechs Stück.
+	AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer_A_15_00"); //Pomagalem wtedy Xardasowi w wygnaniu sypialni.
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_A_14_01"); //Haha, oczywiscie.... i zbezczescilem swiete dziewice Inno. Ja sie oszukuje.
+	AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer_A_14_02"); //Jesli naprawde chcesz, abym cos cie nauczyl, popros mnie o szesc kawalków kazdej z 13 róznych eliksirów, roslin lub innych skladników.
 
 	Info_Mod_Alax_AlchemieLehrer_C();
 };
@@ -93,7 +93,7 @@ INSTANCE Info_Mod_Alax_AlchemieLehrer2 (C_INFO)
 	information	= Info_Mod_Alax_AlchemieLehrer2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Zutaten geben)";
+	description	= "(skladniki dajace)";
 };
 
 FUNC INT Info_Mod_Alax_AlchemieLehrer2_Condition()
@@ -118,175 +118,175 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Verteiler()
 		if (!Mod_Alax_Zutat_Zwillingsdorn)
 		&& (Npc_HasItems(hero, ItPl_Zwillingsdorn) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Zwillingsdorn geben", Info_Mod_Alax_AlchemieLehrer2_Zwillingsdorn);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "Podwójny trzpien 6x", Info_Mod_Alax_AlchemieLehrer2_Zwillingsdorn);
 		};
 		if (!Mod_Alax_Zutat_Weidenbeere)
 		&& (Npc_HasItems(hero, ItPl_Planeberry) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Weidenbeere geben", Info_Mod_Alax_AlchemieLehrer2_Weidenbeere);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "Jagoda wierzba 6x", Info_Mod_Alax_AlchemieLehrer2_Weidenbeere);
 		};
 		if (!Mod_Alax_Zutat_Waldbeere)
 		&& (Npc_HasItems(hero, ItPl_Forestberry) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Waldbeere geben", Info_Mod_Alax_AlchemieLehrer2_Waldbeere);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x daj daje jagody lesne 6x", Info_Mod_Alax_AlchemieLehrer2_Waldbeere);
 		};
 		if (!Mod_Alax_Zutat_LeichtesMana)
 		&& (Npc_HasItems(hero, ItPo_Mana_06) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Trank des leichten Manas geben", Info_Mod_Alax_AlchemieLehrer2_LeichtesMana);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x eliksiry lekkiej maniku", Info_Mod_Alax_AlchemieLehrer2_LeichtesMana);
 		};
 		if (!Mod_Alax_Zutat_SchnelleHeilung)
 		&& (Npc_HasItems(hero, ItPo_Health_05) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Trank der schnellen Heilung geben", Info_Mod_Alax_AlchemieLehrer2_SchnelleHeilung);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "Dac 6x eliksiry szybkiego uzdrawiania.", Info_Mod_Alax_AlchemieLehrer2_SchnelleHeilung);
 		};
 		if (!Mod_Alax_Zutat_Sumpfkraut)
 		&& (Npc_HasItems(hero, ItPl_SwampHerb) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Sumpfkraut geben", Info_Mod_Alax_AlchemieLehrer2_Sumpfkraut);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x ziólka boga", Info_Mod_Alax_AlchemieLehrer2_Sumpfkraut);
 		};
 		if (!Mod_Alax_Zutat_Snapperkraut)
 		&& (Npc_HasItems(hero, ItPl_Speed_Herb_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Snapperkraut geben", Info_Mod_Alax_AlchemieLehrer2_Snapperkraut);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Podawac kapuste glowiasta", Info_Mod_Alax_AlchemieLehrer2_Snapperkraut);
 		};
 		if (!Mod_Alax_Zutat_Schwefel)
 		&& (Npc_HasItems(hero, ItMi_Sulfur) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Schwefel geben", Info_Mod_Alax_AlchemieLehrer2_Schwefel);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x siarkowanie", Info_Mod_Alax_AlchemieLehrer2_Schwefel);
 		};
 		if (!Mod_Alax_Zutat_SchwarzePerle)
 		&& (Npc_HasItems(hero, ItMi_DarkPearl) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Schwarze Perle geben", Info_Mod_Alax_AlchemieLehrer2_SchwarzePerle);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Podac czarna perle", Info_Mod_Alax_AlchemieLehrer2_SchwarzePerle);
 		};
 		if (!Mod_Alax_Zutat_Pech)
 		&& (Npc_HasItems(hero, ItMi_Pitch) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Pech geben", Info_Mod_Alax_AlchemieLehrer2_Pech);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x podzialka", Info_Mod_Alax_AlchemieLehrer2_Pech);
 		};
 		if (!Mod_Alax_Zutat_ManaExtrakt)
 		&& (Npc_HasItems(hero, ItPo_Mana_02) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Mana Extrakt geben", Info_Mod_Alax_AlchemieLehrer2_ManaExtrakt);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Podajnik ekstraktu z maniku", Info_Mod_Alax_AlchemieLehrer2_ManaExtrakt);
 		};
 		if (!Mod_Alax_Zutat_ManaEssenz)
 		&& (Npc_HasItems(hero, ItPo_Mana_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Mana Essenz geben", Info_Mod_Alax_AlchemieLehrer2_ManaEssenz);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x esencja manekina daje", Info_Mod_Alax_AlchemieLehrer2_ManaEssenz);
 		};
 		if (!Mod_Alax_Zutat_ManaElixier)
 		&& (Npc_HasItems(hero, ItPo_Mana_03) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Mana Elixier geben", Info_Mod_Alax_AlchemieLehrer2_ManaElixier);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Podajnik Mana Elixer", Info_Mod_Alax_AlchemieLehrer2_ManaElixier);
 		};
 		if (!Mod_Alax_Zutat_LeichterManatrank)
 		&& (Npc_HasItems(hero, ItPo_Mana_05) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Leichten Manatrank geben", Info_Mod_Alax_AlchemieLehrer2_LeichterManatrank);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x lekki eliksir z woda lekka", Info_Mod_Alax_AlchemieLehrer2_LeichterManatrank);
 		};
 		if (!Mod_Alax_Zutat_LeichteHeilung)
 		&& (Npc_HasItems(hero, ItPo_Health_06) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Leichten Heiltrank geben", Info_Mod_Alax_AlchemieLehrer2_LeichteHeilung);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Lekki Potencjal Goracy 6x", Info_Mod_Alax_AlchemieLehrer2_LeichteHeilung);
 		};
 		if (!Mod_Alax_Zutat_Kohle)
 		&& (Npc_HasItems(hero, ItMi_Coal) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Kohle geben", Info_Mod_Alax_AlchemieLehrer2_Kohle);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "dac 6 razy wegiel kamienny", Info_Mod_Alax_AlchemieLehrer2_Kohle);
 		};
 		if (!Mod_Alax_Zutat_Heilwurzel)
 		&& (Npc_HasItems(hero, ItPl_Health_Herb_03) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Heilwurzel geben", Info_Mod_Alax_AlchemieLehrer2_Heilwurzel);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6 x korzen leczniczy", Info_Mod_Alax_AlchemieLehrer2_Heilwurzel);
 		};
 		if (!Mod_Alax_Zutat_Heilpflanze)
 		&& (Npc_HasItems(hero, ItPl_Health_Herb_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Heilpflanze geben", Info_Mod_Alax_AlchemieLehrer2_Heilpflanze);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x roslina lecznicza dajaca dawke 6x", Info_Mod_Alax_AlchemieLehrer2_Heilpflanze);
 		};
 		if (!Mod_Alax_Zutat_Heilkraut)
 		&& (Npc_HasItems(hero, ItPl_Health_Herb_02) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Heilkraut geben", Info_Mod_Alax_AlchemieLehrer2_Heilkraut);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x ziola daja", Info_Mod_Alax_AlchemieLehrer2_Heilkraut);
 		};
 		if (!Mod_Alax_Zutat_Heilknospe)
 		&& (Npc_HasItems(hero, ItPl_Heilknospe) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Heilknospe geben", Info_Mod_Alax_AlchemieLehrer2_Heilknospe);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x paczki do gojenia sie", Info_Mod_Alax_AlchemieLehrer2_Heilknospe);
 		};
 		if (!Mod_Alax_Zutat_GletscherQuartz)
 		&& (Npc_HasItems(hero, ItMi_Quartz) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Gletscher-Quartz geben", Info_Mod_Alax_AlchemieLehrer2_GletscherQuartz);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x dawac lód lodowiec-Quart", Info_Mod_Alax_AlchemieLehrer2_GletscherQuartz);
 		};
 		if (!Mod_Alax_Zutat_Feuerwurzel)
 		&& (Npc_HasItems(hero, ItPl_Mana_Herb_03) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Feuerwurzel geben", Info_Mod_Alax_AlchemieLehrer2_Feuerwurzel);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x korzen ognia daje", Info_Mod_Alax_AlchemieLehrer2_Feuerwurzel);
 		};
 		if (!Mod_Alax_Zutat_Feuernessel)
 		&& (Npc_HasItems(hero, ItPl_Mana_Herb_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Feuernessel geben", Info_Mod_Alax_AlchemieLehrer2_Feuernessel);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x pokrzywa przeciwpozarowa podaruje", Info_Mod_Alax_AlchemieLehrer2_Feuernessel);
 		};
 		if (!Mod_Alax_Zutat_ExtraktDerHeilung)
 		&& (Npc_HasItems(hero, ItPo_Health_02) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Extrakt der Heilung geben", Info_Mod_Alax_AlchemieLehrer2_ExtraktDerHeilung);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x wyciag z wyciagu z gojenia daje", Info_Mod_Alax_AlchemieLehrer2_ExtraktDerHeilung);
 		};
 		if (!Mod_Alax_Zutat_EssenzDerHeilung)
 		&& (Npc_HasItems(hero, ItPo_Health_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Essenz der Heilung geben", Info_Mod_Alax_AlchemieLehrer2_EssenzDerHeilung);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x daje esencje uzdrawiania", Info_Mod_Alax_AlchemieLehrer2_EssenzDerHeilung);
 		};
 		if (!Mod_Alax_Zutat_ElixierDerHeilung)
 		&& (Npc_HasItems(hero, ItPo_Health_03) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Elixier der Heilung geben", Info_Mod_Alax_AlchemieLehrer2_ElixierDerHeilung);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Eliksir do leczenia", Info_Mod_Alax_AlchemieLehrer2_ElixierDerHeilung);
 		};
 		if (!Mod_Alax_Zutat_Fliegenpilz)
 		&& (Npc_HasItems(hero, ItPl_Mushroom_03) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Fliegenpilz geben", Info_Mod_Alax_AlchemieLehrer2_Fliegenpilz);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Wydajnosc z podzialka lotna", Info_Mod_Alax_AlchemieLehrer2_Fliegenpilz);
 		};
 		if (!Mod_Alax_Zutat_Feuerkraut)
 		&& (Npc_HasItems(hero, ItPl_Mana_Herb_02) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Feuerkraut geben", Info_Mod_Alax_AlchemieLehrer2_Feuerkraut);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Zeba ogniowa daje", Info_Mod_Alax_AlchemieLehrer2_Feuerkraut);
 		};
 		if (!Mod_Alax_Zutat_Dunkelpilz)
 		&& (Npc_HasItems(hero, ItPl_Mushroom_01) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Dunkelpilz geben", Info_Mod_Alax_AlchemieLehrer2_Dunkelpilz);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x ciemny grzyb daje", Info_Mod_Alax_AlchemieLehrer2_Dunkelpilz);
 		};
 		if (!Mod_Alax_Zutat_Buddlerfleisch)
 		&& (Npc_HasItems(hero, ItPl_Mushroom_02) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Buddlerfleisch geben", Info_Mod_Alax_AlchemieLehrer2_Buddlerfleisch);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Podaje sie mieso Buddlera", Info_Mod_Alax_AlchemieLehrer2_Buddlerfleisch);
 		};
 		if (!Mod_Alax_Zutat_Blauflieder)
 		&& (Npc_HasItems(hero, ItPl_Blueplant) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Blauflieder geben", Info_Mod_Alax_AlchemieLehrer2_Blauflieder);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x niebieskie piosenki daja", Info_Mod_Alax_AlchemieLehrer2_Blauflieder);
 		};
 		if (!Mod_Alax_Zutat_Bergkristall)
 		&& (Npc_HasItems(hero, ItMi_Rockcrystal) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Bergkristall geben", Info_Mod_Alax_AlchemieLehrer2_Bergkristall);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x krysztal skalny daje", Info_Mod_Alax_AlchemieLehrer2_Bergkristall);
 		};
 		if (!Mod_Alax_Zutat_Aquamarin)
 		&& (Npc_HasItems(hero, ItMi_Aquamarine) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "6x Aquamarin geben", Info_Mod_Alax_AlchemieLehrer2_Aquamarin);
+			Info_AddChoice	(Info_Mod_Alax_AlchemieLehrer2, "Dac 6x Aquamarine 6x", Info_Mod_Alax_AlchemieLehrer2_Aquamarin);
 		};
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_15_00"); //Das waren 13mal 6.
-		AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_14_01"); //Tatsache ... Wäre eigentlich gar nicht nötig gewesen. Wie ich mittlerweile erfahren habe, warst du tatsächlich der Helfer meines Meisters im Kampf gegen den Schläfer ...
-		AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_15_02"); //Was?!
-		AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_14_03"); //Wie dem auch sei, was soll ich dir beibringen?
+		AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_15_00"); //To 13 razy szesc.
+		AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_14_01"); //faktyczny Nie byloby to konieczne. Jak juz w miedzyczasie nauczylem sie, byles wlasciwie pomocnikiem mojego mistrza w walce z sypialnym... Wiecej
+		AI_Output(hero, self, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_15_02"); //Co?
+		AI_Output(self, hero, "Info_Mod_Alax_AlchemieLehrer2_Verteiler_14_03"); //W kazdym razie, czego chcesz, abym cie nauczyl?
 
 		B_GivePlayerXP	(600);
 
@@ -295,7 +295,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Verteiler()
 		B_SetTopicStatus	(TOPIC_MOD_ALAX_ZUTATEN, LOG_SUCCESS);
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_BELIARFESTUNG, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Alax kann mich in der Kunst der Alchemie unterweisen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Alax moze mnie nauczyc sztuki alchemii.");
 	};
 };
 
@@ -317,7 +317,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Zwillingsdorn()
 
 	Mod_Alax_Zutat_Zwillingsdorn = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Zwillingsdorn gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem 6x blizniaczy kregoslup Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -330,7 +330,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Weidenbeere()
 
 	Mod_Alax_Zutat_Weidenbeere = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Weidenbeere gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem jagode wierzby Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -343,7 +343,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Waldbeere()
 
 	Mod_Alax_Zutat_Waldbeere = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Waldbeere gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x lesne jagody lesne.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -356,7 +356,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_ManaEssenz()
 
 	Mod_Alax_Zutat_ManaEssenz = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Mana Essenz gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Mana Essence.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -369,7 +369,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_EssenzDerHeilung()
 
 	Mod_Alax_Zutat_EssenzDerHeilung = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Essenz der Heilung gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem 6x Alax 6x esencje gojenia.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -382,7 +382,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_ExtraktDerHeilung()
 
 	Mod_Alax_Zutat_ExtraktDerHeilung = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Extrakt der Heilung gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem 6x wyciag z Alaxu 6x wyciagu z gojenia.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -395,7 +395,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_ElixierDerHeilung()
 
 	Mod_Alax_Zutat_ElixierDerHeilung = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Elixier der Heilung gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem 6x eliksir Alax 6x Elixir of Healing.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -408,7 +408,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_SchnelleHeilung()
 
 	Mod_Alax_Zutat_SchnelleHeilung = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Trank der schnellen Heilung gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x eliksiry szybkiego gojenia sie.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -421,7 +421,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_LeichteHeilung()
 
 	Mod_Alax_Zutat_LeichteHeilung = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Leichten Heiltrank gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem lekkie mikstury lecznicze Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -434,7 +434,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_ManaExtrakt()
 
 	Mod_Alax_Zutat_ManaExtrakt = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Mana Extrakt gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem wyciag z maniku Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -447,7 +447,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_ManaElixier()
 
 	Mod_Alax_Zutat_ManaElixier = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Mana Elixier gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Mana Elixier.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -460,7 +460,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_LeichterManatrank()
 
 	Mod_Alax_Zutat_LeichterManatrank = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Leichten Manatrank gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynioslem 6x lekkie eliksiry z mana Alaxa.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -473,7 +473,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_LeichtesMana()
 
 	Mod_Alax_Zutat_LeichtesMana = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Trank des leichten Manas gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x eliksiry lekkiej maniku.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -486,7 +486,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Schwefel()
 
 	Mod_Alax_Zutat_Schwefel = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Schwefel gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynioslem len 6x siarke.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -499,7 +499,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_SchwarzePerle()
 
 	Mod_Alax_Zutat_SchwarzePerle = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Schwarze Perle gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem Alax 6x Black Pearl.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -512,7 +512,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Pech()
 
 	Mod_Alax_Zutat_Pech = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Pech gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alaxowi 6x pecha.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -525,7 +525,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Kohle()
 
 	Mod_Alax_Zutat_Kohle = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Kohle gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynioslem 6x wegiel Alax.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -538,7 +538,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Heilwurzel()
 
 	Mod_Alax_Zutat_Heilwurzel = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Heilwurzel gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem 6x leczniczy korzen Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -551,7 +551,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Heilpflanze()
 
 	Mod_Alax_Zutat_Heilpflanze = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Heilpflanze gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x rosliny lecznicze.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -564,7 +564,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Heilkraut()
 
 	Mod_Alax_Zutat_Heilkraut = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Heilkraut gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem Alax 6x lecznicze ziololecznicze.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -577,7 +577,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Heilknospe()
 
 	Mod_Alax_Zutat_Heilknospe = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Heilknospe gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x leczniczy bud.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -590,7 +590,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_GletscherQuartz()
 
 	Mod_Alax_Zutat_GletscherQuartz = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Gletscher Quartz gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Glacier Quartz.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -603,7 +603,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Feuerwurzel()
 
 	Mod_Alax_Zutat_Feuerwurzel = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Feuerwurzel gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x korzen ognia.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -616,7 +616,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Feuernessel()
 
 	Mod_Alax_Zutat_Feuernessel = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Feuernessel gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem 6x pokrzywe ogniowa Alax 6x.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -629,7 +629,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Feuerkraut()
 
 	Mod_Alax_Zutat_Feuerkraut = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Feuerkraut gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Fireweed.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -642,7 +642,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Bergkristall()
 
 	Mod_Alax_Zutat_Bergkristall = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Bergkristall gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem 6x Alax 6x krysztal skalny.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -655,7 +655,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Aquamarin()
 
 	Mod_Alax_Zutat_Aquamarin = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Aquamarin gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Aquamarine.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -668,7 +668,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Buddlerfleisch()
 
 	Mod_Alax_Zutat_Buddlerfleisch = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Buddlerfleisch gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x mieso Buddlera.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -681,7 +681,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Dunkelpilz()
 
 	Mod_Alax_Zutat_Dunkelpilz = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Dunkelpilz gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem 6x Alax 6x ciemny grzyb.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -694,7 +694,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Fliegenpilz()
 
 	Mod_Alax_Zutat_Fliegenpilz = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Fliegenpilz gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przywiózlem Alax 6x Fly agaric.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -707,7 +707,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Blauflieder()
 
 	Mod_Alax_Zutat_Blauflieder = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Blauflieder gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6 niebieskich piosenek.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -720,7 +720,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Sumpfkraut()
 
 	Mod_Alax_Zutat_Sumpfkraut = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Sumpfkraut gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynosilem Alaxa szesc przelyku.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -733,7 +733,7 @@ FUNC VOID Info_Mod_Alax_AlchemieLehrer2_Snapperkraut()
 
 	Mod_Alax_Zutat_Snapperkraut = TRUE;
 	
-	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Ich habe Alax 6x Snapperkraut gebracht.");
+	B_LogEntry	(TOPIC_MOD_ALAX_ZUTATEN, "Przynióslem Alax 6x Snapperkraut.");
 
 	Info_Mod_Alax_AlchemieLehrer2_Verteiler();
 };
@@ -746,7 +746,7 @@ INSTANCE Info_Mod_Alax_Lehrer (C_INFO)
 	information	= Info_Mod_Alax_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir etwas über die Alchemie bei.";
+	description	= "Naucz mnie alchemii.";
 };
 
 FUNC INT Info_Mod_Alax_Lehrer_Condition()
@@ -768,73 +768,73 @@ FUNC VOID Info_Mod_Alax_Lehrer_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Regeneration] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Regenerationstrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Regeneration)), Info_Mod_Alax_Lehrer_Regeneration);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("odbudowa eliksiru", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Regeneration)), Info_Mod_Alax_Lehrer_Regeneration);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_07] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Trank der leichten Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Alax_Lehrer_Health_07);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Napój lekkiego leczenia", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_07)), Info_Mod_Alax_Lehrer_Health_07);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Leichter Heiltrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Alax_Lehrer_Health_06);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Lekki eliksir leczniczy", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_06)), Info_Mod_Alax_Lehrer_Health_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Trank der schnellen Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Alax_Lehrer_Health_05);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Napoje szybko lecznicze", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Alax_Lehrer_Health_05);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice 		(Info_Mod_Alax_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Alax_Lehrer_HEALTH_01);
+		Info_AddChoice 		(Info_Mod_Alax_Lehrer,B_BuildLearnString ("Istota uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Alax_Lehrer_HEALTH_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Alax_Lehrer_Health_02);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Ekstrakt z ekstraktu leczniczego", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Alax_Lehrer_Health_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Alax_Lehrer_Health_03);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Eliksir uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Alax_Lehrer_Health_03);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_06] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Trank des leichten Mana", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Alax_Lehrer_Mana_06);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Pic lekka mane", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_06)), Info_Mod_Alax_Lehrer_Mana_06);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Leichte Manatrank", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Alax_Lehrer_Mana_05);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Eliksir lekki", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_05)), Info_Mod_Alax_Lehrer_Mana_05);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	&& (Mod_LehrlingBei != 1)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Alax_Lehrer_Mana_01);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Alax_Lehrer_Mana_01);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Alax_Lehrer_Mana_02);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("ekstrakt z maneny", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Alax_Lehrer_Mana_02);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Alax_Lehrer_Mana_03);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Alax_Lehrer_Mana_03);
 	};
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Trank der Geschwindigkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Alax_Lehrer_Speed);
+		Info_AddChoice	  (Info_Mod_Alax_Lehrer, B_BuildLearnString ("Szybkosc", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Speed)), Info_Mod_Alax_Lehrer_Speed);
 	};
 };
 FUNC VOID Info_Mod_Alax_Lehrer_BACK()

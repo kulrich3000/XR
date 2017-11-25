@@ -1,7 +1,7 @@
 instance GardeInnos_4099_Josephina (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Josephina";
+	name 		=		"Józefina";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_NONE;
 	level 		=		80;

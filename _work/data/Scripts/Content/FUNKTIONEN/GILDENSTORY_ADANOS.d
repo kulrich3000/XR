@@ -67,11 +67,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -97,11 +97,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -127,11 +127,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -157,11 +157,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -187,11 +187,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -217,11 +217,11 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden), " posadzki");
 
 			if (Mod_WM_Boeden == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Ich habe alle Böden gereinigt und sollte nun zu Saturas zurück kehren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Czyscilem wszystkie podlogi i teraz powinienem wrócic do Satur.");
 			};
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
@@ -247,7 +247,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_AbsorbKristall = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Ich habe tatsächlich das begehrte Artefakt gefunden.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Wlasciwie znalazlem pozadany artefakt.");
 		};
 
 		if (Hlp_IsValidNpc(Bloodhound_Untier))
@@ -257,7 +257,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_Untier_Tot = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Ha, der Bestie habe ich es gezeigt. Die wird niemanden mehr belästigen.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Ha, pokazalem to bestii. Ona nikogo juz nie zmartwi.");
 		};
 
 		// Reinigung der Böden II
@@ -273,7 +273,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden_02 += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " posadzki");
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
 		};
@@ -289,7 +289,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden_02 += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " posadzki");
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
 		};
@@ -305,7 +305,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Mod_WM_Boeden_02 += 1;
 
-			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " Böden gereinigt");
+			ReinigungsMeldung = ConcatStrings(IntToString(Mod_WM_Boeden_02), " posadzki");
 
 			PrintScreen (ReinigungsMeldung, -1, YPOS_LevelUp, FONT_Screen, 2);
 		};
@@ -315,7 +315,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_WM_Boeden = 8;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "So alle Böden entweiht, jetzt zu Saturas um meine Belohnung abzuholen.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Wiec zbezczeszczone wszystkie gleby, teraz do Saturas, aby odebrac moja nagrode.");
 		};
 
 		// Großes Unheil
@@ -394,7 +394,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			if (Mod_WM_KameraBengar_Counter == 6)
 			{
-				AI_Output(Mod_1420_BAU_Bauer_NW, NULL, "Info_Mod_Bauer_01_00"); //Ach du Scheiße!
+				AI_Output(Mod_1420_BAU_Bauer_NW, NULL, "Info_Mod_Bauer_01_00"); //Och, gówno!
 			};
 
 			if (Mod_WM_KameraBengar_Counter == 12)
@@ -551,7 +551,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 			{
 				Mod_WM_SawBigOne = TRUE;
 
-				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Ungetüme gigantischen Ausmaßes auf dem Weidenplateau. Das sollte Saturas interessieren.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Wyjatkowe wymiary na plaskowyzu pastwiskowym. Powinno to zainteresowac Satura.");
 			};
 
 			if ((Npc_GetDistToWP(hero, "NW_FARM4_WOOD_MONSTER_MORE_03") < 2000)
@@ -560,7 +560,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 			{
 				Mod_WM_SawGraveOne = TRUE;
 
-				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Horden von Untoten scheinen von ihnen vorangestellten Kreaturen angeführt zu werden.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hordowie nieumarlych wydaja sie byc prowadzeni przez swoich poprzedników.");
 			};
 		};
 
@@ -575,7 +575,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			Npc_ClearAIQueue	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_HexenInfos_15_00"); //Hmm, dass ist doch schon eine Häufung seltsamer Ereignisse. Vielleicht sollte ich Saturas darüber unterrichten.
+			AI_Output(hero, NULL, "Info_Mod_Hero_HexenInfos_15_00"); //Hmm, to mnóstwo dziwnych zdarzen. Byc moze powinienem nauczyc Saturasa o tym.
 
 			Mod_GenugBauernHinweise = 1;
 			Mod_WM_Hexeninfos = 1;
@@ -586,7 +586,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_HasBerserkScroll = 1;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hmm, nach dieser Spruchrolle sollte ich mal Saturas fragen.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hmm, powinienem zapytac Saturasa o te czesc powiedzenia.");
 		};
 
 		if (Mod_HasHexenScroll == 0)
@@ -596,7 +596,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_HasHexenScroll = 1;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Was sind das für interessante Spruchrollen? Ich sollte mal Saturas dazu konsultieren.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Jakie sa te ciekawe zaklecia? W tej sprawie powinienem skonsultowac sie z organami ochrony danych.");
 		};
 
 		if (Mod_WM_PepeAtSheep == 0)
@@ -691,7 +691,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 			if (Mod_WM_HexenTot == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "So, diese magisch befähigten Weiber wären dann wohl Geschichte. Ich sollte es Saturas mitteilen.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Te magicznie kompetentne kobiety bylyby wiec historia. Powinienem podzielic sie z Saturami.");
 
 				B_RemoveNpc	(Mod_7198_HEX_AttraktiveFrau_NW);
 			};
@@ -706,7 +706,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 			{
 				Mod_WM_HasRune = 1;
 
-				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Vielleicht kann Saturas mir mehr zu der Rune sagen, welche der Untote bei sich hatte.");
+				B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Byc moze Saturasi moga mi opowiedziec wiecej o runie, która jeden z nieumarlych mial z nim.");
 			};
 		};
 
@@ -722,7 +722,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 
 				if (!Npc_KnowsInfo(hero, Info_Mod_Cronos_Angriff_02))
 				{
-					B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Gut, die Blutkultfritzen wären Geschichte. Jetzt sollte ich Saturas von meinem Erfolg berichten.");
+					B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "No cóz, karmienie kultów krwi byloby historia. Teraz powinienem powiedziec Satorom o moim sukcesie.");
 				};
 			};
 		};
@@ -921,7 +921,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_WM_EthanQuest = 2;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_ETHAN, "Nanu, was sind das für sonderbare Gestalten, welche die Felsen mit Spitzhacken bearbeiten? Darüber sollte ich Ethan unterrichten, sobald er wieder erwacht ist.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_ETHAN, "Cóz, jakie dziwne stwory robia skaly z pikseksami? Poprosil mnie, abym opowiedzial Ethanowi o tym, jak tylko sie obudzil.");
 		};
 
 		// Nach der Hexenaffäre hängt man im Dialog fest
@@ -1012,7 +1012,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_WM_HexenSpruch = 1;
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_HexenSpruch_15_00"); //Verdammt, ich fühle mich gar nicht gut.
+			AI_Output(hero, NULL, "Info_Mod_Hero_HexenSpruch_15_00"); //Damn, wcale nie czuje sie dobrze.
 		};
 		
 		if (Npc_KnowsInfo(hero, Info_Mod_Wilderer_Hi))
@@ -1109,7 +1109,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_WM_Plage_PartRatte = 1;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Gut, das Rattenproblem wäre schon mal weitgehend geklärt.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Cóz, problem szczurów jest w duzej mierze rozwiazany.");
 		};
 
 		if (Mod_WM_UnheilFertig == 2)
@@ -1119,7 +1119,7 @@ FUNC VOID GILDENSTORY_ADANOS()
 		{
 			Mod_WM_UnheilFertig = 3;
 
-			B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Damit wären die Ursachen der Plagen erschlossen und ich kann zu Saturas zurückkehren.");
+			B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Otworzyloby to przyczyny plag i moge powrócic do Satur.");
 		};
 
 		if (Mod_WM_Rasend == 1)

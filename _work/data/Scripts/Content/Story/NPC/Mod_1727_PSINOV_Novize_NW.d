@@ -1,7 +1,7 @@
 instance Mod_1727_PSINOV_Novize_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Fanatischer Novize";
+	name 		=		"Nowicjusz Fanatyczny";
 	Npctype 		=		Npctype_nw_sumpfnovize;
 	guild 		=		GIL_strf;
 	level 		=		3;

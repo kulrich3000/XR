@@ -17,7 +17,7 @@ FUNC INT Info_Mod_KDF_13_EXIT_Condition()
 
 FUNC VOID Info_Mod_KDF_13_EXIT_Info()
 {	
-	AI_Output(self, hero, "Info_Mod_KDF_13_EXIT_13_00"); //Magie zu ehren!
+	AI_Output(self, hero, "Info_Mod_KDF_13_EXIT_13_00"); //Czcic magie!
 	AI_StopProcessInfos	(self);
 };
 
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_KDF_13_Trank(C_INFO)
 	condition	= Info_Mod_KDF_13_Trank_Condition;
 	information	= Info_Mod_KDF_13_Trank_Info;
 	permanent	= TRUE;
-	description = "Hier hast du einen Trank.";
+	description = "Oto eliksir.";
 };                       
 
 FUNC INT Info_Mod_KDF_13_Trank_Condition()
@@ -46,14 +46,14 @@ FUNC INT Info_Mod_KDF_13_Trank_Condition()
 
 FUNC VOID Info_Mod_KDF_13_Trank_Info()
 {	
-	AI_Output (hero, self, "Info_Mod_KDF_13_Trank_15_00"); //Hier hast du einen Trank.
+	AI_Output (hero, self, "Info_Mod_KDF_13_Trank_15_00"); //Oto eliksir.
 
 	B_GiveInvItems	(hero, self, ItPo_Mana_02, 1);
 	AI_UseItem	(self, ItPo_Mana_02);
 
 	Mod_FM_TrankCounter_Mana += 1;
 
-	AI_Output (self, hero, "Info_Mod_KDF_13_Trank_13_01"); //Danke.
+	AI_Output (self, hero, "Info_Mod_KDF_13_Trank_13_01"); //Dzieki.
 
 	self.aivar[AIV_TrankBekommen] = TRUE;
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_KDF_13_Fake(C_INFO)
 	condition	= Info_Mod_KDF_13_Fake_Condition;
 	information	= Info_Mod_KDF_13_Fake_Info;
 	permanent	= 0;
-	description = "Hast du gesehen wohin der Magier vom Podest verschwunden ist?";
+	description = "Czy widziales, gdzie z platformy zniknal magik?";
 };                       
 
 FUNC INT Info_Mod_KDF_13_Fake_Condition()
@@ -77,10 +77,10 @@ FUNC INT Info_Mod_KDF_13_Fake_Condition()
 
 FUNC VOID Info_Mod_KDF_13_Fake_Info()
 {	
-	AI_Output (hero, self, "Info_Mod_KDF_13_Fake_15_00"); //Hast du gesehen wohin der Magier vom Podest verschwunden ist?
-	AI_Output (self, hero, "Info_Mod_KDF_13_Fake_13_01"); //Ja, ich glaube er ist zu den Alchemielaboren gelaufen.
+	AI_Output (hero, self, "Info_Mod_KDF_13_Fake_15_00"); //Czy widziales, gdzie z platformy zniknal magik?
+	AI_Output (self, hero, "Info_Mod_KDF_13_Fake_13_01"); //Tak, chyba poszedl do pracowni alchemii.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Es scheint als wäre der Spion in die Alchemielabors geflohen.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Wydaje sie, ze szpiegowie uciekli do laboratoriów alchemicznych.");
 };
 
 INSTANCE Info_Mod_KDF_13_TrankLeer(C_INFO)
@@ -104,8 +104,8 @@ FUNC INT Info_Mod_KDF_13_TrankLeer_Condition()
 
 FUNC VOID Info_Mod_KDF_13_TrankLeer_Info()
 {	
-	AI_Output(self, hero, "Info_Mod_KDF_13_TrankLeer_13_00"); //Hast du auch einen Trank für mich?
-	AI_Output(hero, self, "Info_Mod_KDF_13_TrankLeer_15_01"); //Ähm ... Nein. Da stimmt irgendetwas nicht.
+	AI_Output(self, hero, "Info_Mod_KDF_13_TrankLeer_13_00"); //Masz równiez dla mnie eliksir?
+	AI_Output(hero, self, "Info_Mod_KDF_13_TrankLeer_15_01"); //Um.... Nie. Jest cos zlego.
 
 	B_StartOtherRoutine	(Mod_1768_KDF_Magier_PAT, "FLUCHT");
 
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_KDF_13_MangelQuest(C_INFO)
 	information	= Info_Mod_KDF_13_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hieltest du von einem Besuch in der Kirche, um zu Innos zu beten?";
+	description	= "Co myslales o wizycie w kosciele, aby modlic sie do Innos?";
 };                       
 
 FUNC INT Info_Mod_KDF_13_MangelQuest_Condition()
@@ -133,16 +133,16 @@ FUNC INT Info_Mod_KDF_13_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_KDF_13_MangelQuest_Info()
 {	
-	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_00"); //Was hieltest du von einem Besuch in der Kirche, um zu Innos zu beten?
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_01"); //Ich muss hier auf der Mauer Wache halten und die Schwarzröcken die Hölle heiß machen, sollten sie zu nahe kommen.
-	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_02"); //Im Moment ist aber alles ruhig.
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_03"); //Hmm, ja, stimmt eigentlich schon ... und die letzten Angriffe liegen auch schon einige Zeit zurück.
-	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_04"); //Und dein letzter Besuch in der Kirche?
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_05"); //(eingestehend) Hmm, nun, das ist tatsächlich schon etwas her ...
-	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_06"); //Und einen Mann werdet ihr hier oben auch sicher entbehren können. Außer Belagerung ist ja nichts los ...
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_07"); //Ja, du hast vollkommen recht.
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_08"); //Über die Belagerung habe ich allmählich meine anderen Pflichten als Diener Innos immer stärker vernachlässigt, ohne es zu merken.
-	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_09"); //Ich werde mich sofort zur Kirche begeben.
+	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_00"); //Co myslales o wizycie w kosciele, aby modlic sie do Innos?
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_01"); //Musze stanac tu na scianie i rozgrzac czarne spódnice, jesli zbytnio sie zbliza.
+	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_02"); //Juz teraz wszystko jest spokojne.
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_03"); //Hmm, tak, to prawda.... a ostatnie ataki mialy miejsce jakis czas temu.
+	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_04"); //A co z ostatnia wizyta w kosciele?
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_05"); //(znane) Hmm, no cóz, to juz bylo calkiem sporo czasu.....
+	AI_Output(hero, self, "Info_Mod_KDF_13_MangelQuest_15_06"); //I jestem pewien, ze i tu bedziesz w stanie oszczedzic czlowieka. Nie dzieje sie nic innego jak oblezenie....
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_07"); //Tak, masz calkowita racje.
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_08"); //Przez oblezenie stopniowo zaczalem zaniedbywac moje inne obowiazki jako slugi Inno, nie zdajac sobie z tego sprawy.
+	AI_Output(self, hero, "Info_Mod_KDF_13_MangelQuest_13_09"); //Natychmiast pójde do kosciola.
 
 	AI_StopProcessInfos	(self);
 
@@ -154,7 +154,7 @@ FUNC VOID Info_Mod_KDF_13_MangelQuest_Info()
 
 	if (Mod_Pat_Beter == 3)
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, ich denke ich haben genügend Jünger Innos’ zum Gebet bewegen können und sollte in der Kirche bei Nagon vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Wiec mysle, ze mialem wystarczajaco duzo uczniów Inno' s, aby zachecic ich do modlitwy i powinienem zatrzymac sie przy kosciele w Nagon.");
 	};
 };
 

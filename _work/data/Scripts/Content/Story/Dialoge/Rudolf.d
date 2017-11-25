@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Rudolf_Hi_Condition()
 
 FUNC VOID Info_Mod_Rudolf_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rudolf_Hi_09_00"); //Frische Ware, frische Ware. Lebensmittel aller Art nur bei mir!
+	AI_Output(self, hero, "Info_Mod_Rudolf_Hi_09_00"); //Swieze produkty, swieze produkty. Jedzenie wszelkiego rodzaju tylko ze mna!
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Rudolf in Khorata verkauft alle möglichen Lebensmittel.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Rudolf w Khoracie sprzedaje wszystkie rodzaje zywnosci.");
 };
 
 INSTANCE Info_Mod_Rudolf_Aufgabe (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Rudolf_Aufgabe (C_INFO)
 	information	= Info_Mod_Rudolf_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich dir irgendwas Gutes tun?";
+	description	= "Czy moge zrobic cos dobrego?";
 };
 
 FUNC INT Info_Mod_Rudolf_Aufgabe_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Rudolf_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Rudolf_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_00"); //Kann ich dir irgendwas Gutes tun?
-	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_01"); //Was Gutes?
-	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_02"); //Ja, irgendetwas, was dir auf dem Herzen liegt ...
-	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_03"); //Hm ... du könntest zu Erika gehen. Sie hat dort einen besonders guten Schnaps im Angebot.
-	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_04"); //Den könntest du mir besorgen. Ich geb dir auch das Gold dafür, wenn du ihn mir gebracht hast.
-	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_05"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_00"); //Czy moge zrobic cos dobrego?
+	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_01"); //Cos dobrego?
+	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_02"); //Tak, wszystko, co jest blisko twojego serca....
+	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_03"); //Hm.... mozna bylo pójsc do Eriki. Ma tam w swojej ofercie szczególnie dobry alkohol.
+	AI_Output(self, hero, "Info_Mod_Rudolf_Aufgabe_09_04"); //Móglbym ja odebrac mi. Daje ci zloto takze za nie, jesli przyniósles je do mnie.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Aufgabe_15_05"); //Cokolwiek mówisz.
 };
 
 INSTANCE Info_Mod_Rudolf_HabSchnaps (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Rudolf_HabSchnaps (C_INFO)
 	information	= Info_Mod_Rudolf_HabSchnaps_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Schnaps für dich.";
+	description	= "Dostalem dla Ciebie gorzalke.";
 };
 
 FUNC INT Info_Mod_Rudolf_HabSchnaps_Condition()
@@ -72,23 +72,23 @@ FUNC INT Info_Mod_Rudolf_HabSchnaps_Condition()
 
 FUNC VOID Info_Mod_Rudolf_HabSchnaps_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_00"); //Ich hab den Schnaps für dich.
-	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_01"); //Dann gib mal her das Zeug.
-	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_02"); //Hier hast du ihn.
+	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_00"); //Dostalem dla Ciebie gorzalke.
+	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_01"); //I daj mi to wszystko.
+	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_02"); //Tutaj ja masz.
 
 	B_GiveInvItems	(hero, self, ItFo_BoozeRudolf, 1);
 
-	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_03"); //Ah ... gleich mal probieren.
+	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_03"); //Ah.... Chce spróbowac tego kiedys.
 
 	B_UseItem	(self, ItFo_BoozeRudolf);
 
-	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_04"); //Oh, der haut ganz schön rein ...
-	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_05"); //Was ist mit meinem Gold?
-	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_06"); //Jaja, hier nimm.
+	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_04"); //Ach, to jest calkiem niezly cios....
+	AI_Output(hero, self, "Info_Mod_Rudolf_HabSchnaps_15_05"); //A co z moim zlotem?
+	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_06"); //Tak, wezcie to.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_07"); //Und jetzt lass mich meinen edlen Tropfen genießen.
+	AI_Output(self, hero, "Info_Mod_Rudolf_HabSchnaps_09_07"); //Teraz pozwole sobie cieszyc sie wspanialym winem.
 
 	B_GivePlayerXP	(50);
 };
@@ -101,7 +101,7 @@ INSTANCE Info_Mod_Rudolf_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Rudolf_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Nägel?";
+	description	= "Masz paznokcie?";
 };
 
 FUNC INT Info_Mod_Rudolf_Nagelnachschub_Condition()
@@ -114,9 +114,9 @@ FUNC INT Info_Mod_Rudolf_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Rudolf_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rudolf_Nagelnachschub_15_00"); //Hast du Nägel?
-	AI_Output(self, hero, "Info_Mod_Rudolf_Nagelnachschub_09_01"); //(grimmig) Kannst ja mal in meinem Obst suchen, ob ich irgendwo Nägel versteckt habe.
-	AI_Output(self, hero, "Info_Mod_Rudolf_Nagelnachschub_09_02"); //Und wenn du nicht fündig wirst, habe ich wohl keine.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Nagelnachschub_15_00"); //Masz paznokcie?
+	AI_Output(self, hero, "Info_Mod_Rudolf_Nagelnachschub_09_01"); //Mozesz sprawdzic mój owoc, czy mam gdzies ukryte paznokcie.
+	AI_Output(self, hero, "Info_Mod_Rudolf_Nagelnachschub_09_02"); //A jesli nie znajdziesz tego, czego szukasz, nie mam nic.
 };
 
 INSTANCE Info_Mod_Rudolf_Kissen (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Rudolf_Kissen (C_INFO)
 	information	= Info_Mod_Rudolf_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche was Weiches.";
+	description	= "Potrzebuje czegos miekkiego.";
 };
 
 FUNC INT Info_Mod_Rudolf_Kissen_Condition()
@@ -142,12 +142,12 @@ FUNC INT Info_Mod_Rudolf_Kissen_Condition()
 
 FUNC VOID Info_Mod_Rudolf_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_00"); //Ich brauche was Weiches.
-	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_01"); //Da kann ich meinen Hochlandkäse anbieten. Der schmilzt auf der Zunge.
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_02"); //Der stinkt.
-	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_03"); //Na und? Sonst wäre es kein Käse.
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_04"); //Auch wahr. Nein danke. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_05"); //Wenn du meinst ...
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_00"); //Potrzebuje czegos miekkiego.
+	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_01"); //W tym miejscu moge zaoferowac mój ser góralski. Roztopia sie na jezyku.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_02"); //To smierdzi.
+	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_03"); //Co wiec? W przeciwnym razie nie bylby to ser.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kissen_15_04"); //To wystarczy. Nie, dziekuje. Zobacze cie dookola.
+	AI_Output(self, hero, "Info_Mod_Rudolf_Kissen_09_05"); //Jesli masz na mysli....
 };
 
 INSTANCE Info_Mod_Rudolf_Kimon (C_INFO)
@@ -158,7 +158,7 @@ INSTANCE Info_Mod_Rudolf_Kimon (C_INFO)
 	information	= Info_Mod_Rudolf_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch was anderes außer Lebensmitteln?";
+	description	= "Masz cos innego niz jedzenie?";
 };
 
 FUNC INT Info_Mod_Rudolf_Kimon_Condition()
@@ -173,11 +173,11 @@ FUNC INT Info_Mod_Rudolf_Kimon_Condition()
 
 FUNC VOID Info_Mod_Rudolf_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_00"); //Hast du noch was anderes außer Lebensmitteln?
-	AI_Output(self, hero, "Info_Mod_Rudolf_Kimon_09_01"); //Eigentlich nichts.
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_02"); //Eigentlich? Vielleicht doch? Freudenspender vielleicht?
-	AI_Output(self, hero, "Info_Mod_Rudolf_Kimon_09_03"); //Ich wollte, ich hätte! Soll noch besser sein, als der Schnaps von der Erika.
-	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_04"); //War ja nur eine Frage. Nichts für ungut.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_00"); //Masz cos innego niz jedzenie?
+	AI_Output(self, hero, "Info_Mod_Rudolf_Kimon_09_01"); //Naprawde nic, naprawde nic.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_02"); //Czy wlasciwie? Byc moze Pan/Pani to robi? Byc moze przyjemny dawca?
+	AI_Output(self, hero, "Info_Mod_Rudolf_Kimon_09_03"); //Zycze, zebym mial! Slysze, ze jest jeszcze lepiej niz likier Erika.
+	AI_Output(hero, self, "Info_Mod_Rudolf_Kimon_15_04"); //Pytalem tylko o to. Bez twardych uczuc.
 };
 
 INSTANCE Info_Mod_Rudolf_Trade (C_INFO)

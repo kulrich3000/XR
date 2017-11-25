@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_4_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_4_WichtigePersonen_Condition;
 	information	= Info_ReisBau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Habt ihr einen Anführer?";
+	description = "Masz lidera?";
 };                       
 
 FUNC INT Info_ReisBau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_4_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_WichtigePersonen_15_00"); //Habt ihr einen Anführer?
-	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_01"); //Der Reislord ist so was wie unser Anführer. Aber die meisten arbeiten nur aus Angst vor ihm und seinen Schlägern.
-	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_02"); //Bei mir sieht das anders aus. Ich hab' schon ein paar Jahre auf dem Buckel und keine Lust mehr, mich mit den Söldnern im Lager rumzuschlagen ... Die Reisfelder sind genau das Richtige für mich.
+	AI_Output(hero,self,"Info_ReisBau_4_WichtigePersonen_15_00"); //Masz lidera?
+	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_01"); //Wladca ryzu jest jak nasz lider. Jednak wiekszosc z nich pracuje tylko dla strachu przed nim i jego bandytami.
+	AI_Output(self,hero,"Info_ReisBau_4_WichtigePersonen_04_02"); //To nie to samo dotyczy mnie. Od kilku lat jestem na plecach i nie mam ochoty walczyc z najemnikami w obozie.... Wiecej Pole ryzowe jest dla mnie idealne.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_4_DasLager(C_INFO)
 	condition	= Info_ReisBau_4_DasLager_Condition;
 	information	= Info_ReisBau_4_DasLager_Info;
 	permanent	= 1;
-	description = "Was muß ich über diesen Ort wissen?";
+	description = "Co musze wiedziec o tym miejscu?";
 };                       
 
 FUNC INT Info_ReisBau_4_DasLager_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_4_DasLager_Condition()
 
 FUNC VOID Info_ReisBau_4_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_DasLager_15_00"); //Was muss ich über diesen Ort wissen?
-	AI_Output(self,hero,"Info_ReisBau_4_DasLager_04_01"); //Sei vorsichtig, wenn du ins Lager gehst, Junge! Da laufen so einige Halsabschneider rum, die einem Neuen wie dir an die Kehle wollen.
+	AI_Output(hero,self,"Info_ReisBau_4_DasLager_15_00"); //Co musze wiedziec o tym miejscu?
+	AI_Output(self,hero,"Info_ReisBau_4_DasLager_04_01"); //Badz ostrozny, gdy idziesz do obozu, chlopiec! Dookola biegnie mnóstwo kutroatów, które staraja sie zdobyc nowego faceta, jak w dól gardla.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_ReisBau_4_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_4_DieLage_Condition;
 	information	= Info_ReisBau_4_DieLage_Info;
 	permanent	= 1;
-	description = "Wie läuft's denn so?";
+	description = "Jak to sie dzieje?";
 };                       
 
 FUNC INT Info_ReisBau_4_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_ReisBau_4_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_4_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_4_DieLage_15_00"); //Wie läuft's denn so?
-	AI_Output(self,hero,"Info_ReisBau_4_DieLage_04_01"); //Gibt 'ne Menge zu tun. Wir brauchen viel Reis, um die Leute hier alle ernähren zu können.
+	AI_Output(hero,self,"Info_ReisBau_4_DieLage_15_00"); //Jak to sie dzieje?
+	AI_Output(self,hero,"Info_ReisBau_4_DieLage_04_01"); //Jest wiele do zrobienia. Potrzebujemy duzo ryzu, aby nakarmic ludzi.
 };
 
 INSTANCE Info_Mod_ReisBau_4_Pickpocket (C_INFO)

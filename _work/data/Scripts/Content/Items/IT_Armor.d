@@ -64,7 +64,7 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 INSTANCE ITAR_AmPro_Test (C_Item)
 {
-	name 					=	"Wams des Statthalters";
+	name 					=	"Podwójny gubernator";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -104,7 +104,7 @@ INSTANCE ITAR_AmPro_Test (C_Item)
 
 INSTANCE ITAR_BattleMage (C_Item)
 {
-	name 					=	"Wams des Statthalters";
+	name 					=	"Podwójny gubernator";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -144,7 +144,7 @@ INSTANCE ITAR_BattleMage (C_Item)
 
 INSTANCE ITAR_VlkBabe_Nude (C_Item)
 {
-	name 					=	"Wams des Statthalters";
+	name 					=	"Podwójny gubernator";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -184,7 +184,7 @@ INSTANCE ITAR_VlkBabe_Nude (C_Item)
 
 INSTANCE ITAR_Wendel (C_Item)
 {
-	name 					=	"Wendels Kleidung";
+	name 					=	"Odziez Wendla";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -224,7 +224,7 @@ INSTANCE ITAR_Wendel (C_Item)
 
 INSTANCE ITAR_Monteur (C_Item)
 {
-	name 					=	"Kleidung vom Monteur";
+	name 					=	"Ubrania instalatora";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -264,7 +264,7 @@ INSTANCE ITAR_Monteur (C_Item)
 
 INSTANCE ITAR_Jaeger (C_Item)
 {
-	name 					=	"Wams des Statthalters";
+	name 					=	"Podwójny gubernator";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -304,7 +304,7 @@ INSTANCE ITAR_Jaeger (C_Item)
 
 INSTANCE ITAR_Governor (C_Item)
 {
-	name 					=	"Prunkgewand";
+	name 					=	"wspanialy szata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -344,7 +344,7 @@ INSTANCE ITAR_Governor (C_Item)
 
 INSTANCE ITAR_Nrd_M (C_Item)
 {
-	name 					=	"Wams des Statthalters";
+	name 					=	"Podwójny gubernator";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -384,7 +384,7 @@ INSTANCE ITAR_Nrd_M (C_Item)
 
 INSTANCE ITAR_GelehrterNeu (C_Item)
 {
-	name 					=	"Kleidung des Gelehrten";
+	name 					=	"odziez naukowa";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -443,7 +443,7 @@ FUNC VOID UnEquip_ItAr_Dieb()
 
 INSTANCE ITAR_Hofstaatler (C_Item)
 {
-	name 					=	"Wams der Hofstaatler";
+	name 					=	"podwójny";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -483,7 +483,7 @@ INSTANCE ITAR_Hofstaatler (C_Item)
 
 INSTANCE ITAR_Hofstaatlerin (C_Item)
 {
-	name 					=	"Wams der Hofstaatler";
+	name 					=	"podwójny";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -523,7 +523,7 @@ INSTANCE ITAR_Hofstaatlerin (C_Item)
 
 INSTANCE ITAR_WKR_H (C_Item)
 {
-	name 					=	"Wasserkriegerrüstung";
+	name 					=	"wojna wodna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -563,7 +563,7 @@ INSTANCE ITAR_WKR_H (C_Item)
 
 INSTANCE ITAR_WKR_S (C_Item)
 {
-	name 					=	"Verbesserte Wasserkriegerrüstung";
+	name 					=	"Ulepszony sprzet bojowy do walki wodnej";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -603,7 +603,7 @@ INSTANCE ITAR_WKR_S (C_Item)
 
 INSTANCE ITAR_Hueter (C_Item)
 {
-	name 					=	"Hüterrüstung";
+	name 					=	"uzbrojenie ochronne";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -643,7 +643,7 @@ INSTANCE ITAR_Hueter (C_Item)
 
 INSTANCE ITAR_Hueter_S (C_Item)
 {
-	name 					=	"Blaue Wächterrüstung";
+	name 					=	"Pancerz niebieski z oslona ochronna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -683,7 +683,7 @@ INSTANCE ITAR_Hueter_S (C_Item)
 // ******************************************************
 INSTANCE ITAR_JUDGE (C_Item)
 {
-	name 					=	"Richterrobe";
+	name 					=	"szata sedziego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -723,7 +723,7 @@ INSTANCE ITAR_JUDGE (C_Item)
 // ******************************************************
 INSTANCE ITAR_SMITH (C_Item)
 {
-	name 					=	"Schmiedkleidung";
+	name 					=	"kuznia odziezy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -763,7 +763,7 @@ INSTANCE ITAR_SMITH (C_Item)
 // ******************************************************
 INSTANCE ITAR_Metzger (C_Item)
 {
-	name 					=	"Metzgerkleidung";
+	name 					=	"Odziez rzeznicza";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -803,7 +803,7 @@ INSTANCE ITAR_Metzger (C_Item)
 // ******************************************************
 INSTANCE ITAR_Baecker (C_Item)
 {
-	name 					=	"Bäckerkleidung";
+	name 					=	"odziez piekarska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -842,7 +842,7 @@ INSTANCE ITAR_Baecker (C_Item)
 };
 INSTANCE ITAR_Maler (C_Item)
 {
-	name 					=	"Malerkleidung";
+	name 					=	"odziez malarska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -882,7 +882,7 @@ INSTANCE ITAR_Maler (C_Item)
 // ******************************************************
 INSTANCE ITAR_BARKEEPER (C_Item)
 {
-	name 					=	"Wirtskleidung";
+	name 					=	"hostia";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -922,7 +922,7 @@ INSTANCE ITAR_BARKEEPER (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_L (C_Item)
 {
-	name 					=	"Bürgerkleidung";
+	name 					=	"ubrania mieszczan";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -962,7 +962,7 @@ INSTANCE ITAR_VLK_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_M (C_Item)
 {
-	name 					=	"Bürgerkleidung";
+	name 					=	"ubrania mieszczan";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1002,7 +1002,7 @@ INSTANCE ITAR_VLK_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_H (C_Item)
 {
-	name 					=	"Bürgerkleidung";
+	name 					=	"ubrania mieszczan";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1037,7 +1037,7 @@ INSTANCE ITAR_VLK_H (C_Item)
 };
 INSTANCE ITAR_VLK_01 (C_Item)
 {
-	name 					=	"Bürger Kleidung 01";
+	name 					=	"Odziez obywatelska 01";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1076,7 +1076,7 @@ INSTANCE ITAR_VLK_01 (C_Item)
 };
 INSTANCE ITAR_VLK_02 (C_Item)
 {
-	name 					=	"Bürger Kleidung 01";
+	name 					=	"Odziez obywatelska 01";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1115,7 +1115,7 @@ INSTANCE ITAR_VLK_02 (C_Item)
 };
 INSTANCE ITAR_VLK_04 (C_Item)
 {
-	name 					=	"Bürger Kleidung 01";
+	name 					=	"Odziez obywatelska 01";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1154,7 +1154,7 @@ INSTANCE ITAR_VLK_04 (C_Item)
 };
 INSTANCE ITAR_VLK_09 (C_Item)
 {
-	name 					=	"Bürger Kleidung 01";
+	name 					=	"Odziez obywatelska 01";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1193,7 +1193,7 @@ INSTANCE ITAR_VLK_09 (C_Item)
 };
 INSTANCE ITAR_VLK_10 (C_Item)
 {
-	name 					=	"Bürger Kleidung 01";
+	name 					=	"Odziez obywatelska 01";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1233,7 +1233,7 @@ INSTANCE ITAR_VLK_10 (C_Item)
 // ******************************************************
 INSTANCE ITAR_BuergerNew_01 (C_Item)
 {
-	name 					=	"Bürgerkleidung";
+	name 					=	"ubrania mieszczan";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1269,7 +1269,7 @@ INSTANCE ITAR_BuergerNew_01 (C_Item)
 // ******************************************************
 INSTANCE ITAR_BuergerNew_02 (C_Item)
 {
-	name 					=	"Bürgerkleidung";
+	name 					=	"ubrania mieszczan";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1305,7 +1305,7 @@ INSTANCE ITAR_BuergerNew_02 (C_Item)
 // ******************************************************
 INSTANCE ITAR_BuergerinNew_01 (C_Item)
 {
-	name 					=	"Bürgerinkleidung";
+	name 					=	"ubrania obywatelskie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1341,7 +1341,7 @@ INSTANCE ITAR_BuergerinNew_01 (C_Item)
 // ******************************************************
 instance ITAR_VlkBabe_L (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 1";
+	name 					=	"Odziez obywatelska 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1381,7 +1381,7 @@ instance ITAR_VlkBabe_L (C_Item)
 
 instance ITAR_VlkBabe_L_5 (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 5";
+	name 					=	"Odziez obywatelska 5";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1421,7 +1421,7 @@ instance ITAR_VlkBabe_L_5 (C_Item)
 
 instance ITAR_VlkBabe_L_7 (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 7";
+	name 					=	"Odziez obywatelska 7";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1461,7 +1461,7 @@ instance ITAR_VlkBabe_L_7 (C_Item)
 
 instance ITAR_GrittasKleid (C_Item)
 {
-	name 					=	"Kleid für Gritta";
+	name 					=	"Sukienka do grytu";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	ITEM_SHOW;
@@ -1501,7 +1501,7 @@ instance ITAR_GrittasKleid (C_Item)
 
 instance ITAR_Hexe (C_Item)
 {
-	name 					=	"Hexenrobe";
+	name 					=	"szlafrok";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1541,7 +1541,7 @@ instance ITAR_Hexe (C_Item)
 
 instance ITAR_Hexenqueen (C_Item)
 {
-	name 					=	"Hexenköniginrobe";
+	name 					=	"szata czarownicy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1581,7 +1581,7 @@ instance ITAR_Hexenqueen (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_M (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 2";
+	name 					=	"Odziez obywatelska 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1621,7 +1621,7 @@ INSTANCE ITAR_VlkBabe_M (C_Item)
 
 INSTANCE ITAR_VlkBabe_M_6 (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 6";
+	name 					=	"Odziez obywatelska 6";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1661,7 +1661,7 @@ INSTANCE ITAR_VlkBabe_M_6 (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_H (C_Item)
 {
-	name 					=	"Bürgerin Kleidung 3";
+	name 					=	"Odziez obywatelska 3";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1696,7 +1696,7 @@ INSTANCE ITAR_VlkBabe_H (C_Item)
 };
 INSTANCE ITAR_Buergerinkleid8(C_Item)
 {
-	name 					=	"Bürgerin Kleidung 8";
+	name 					=	"Odziez obywatelska 8";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1732,7 +1732,7 @@ INSTANCE ITAR_Buergerinkleid8(C_Item)
 // ******************************************************
 INSTANCE ITAR_MIL_L (C_Item)
 {
-	name 					=	"Leichte Milizrüstung";
+	name 					=	"Lekka milicja zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1807,7 +1807,7 @@ FUNC VOID UnEquip_ITAR_MIL_L()
 // ******************************************************
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"Schwere Milizrüstung";
+	name 					=	"Ciezka milicja zbrojna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1877,7 +1877,7 @@ FUNC VOID UnEquip_ITAR_MIL_M()
 };
 INSTANCE ITAR_Besatzer (C_Item)
 {
-	name 					=	"???";
+	name 					=	"";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1913,7 +1913,7 @@ INSTANCE ITAR_Besatzer (C_Item)
 // ******************************************************
 INSTANCE ITAR_PAL_M (C_Item)
 {
-	name 					=	"Ritterrüstung";
+	name 					=	"zbroja rycerska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1953,7 +1953,7 @@ INSTANCE ITAR_PAL_M (C_Item)
 
 INSTANCE ITAR_PAL_Zombie (C_Item)
 {
-	name 					=	"Ritterrüstung";
+	name 					=	"zbroja rycerska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1993,7 +1993,7 @@ INSTANCE ITAR_PAL_Zombie (C_Item)
 
 INSTANCE ITAR_RIT_S (C_Item)
 {
-	name 					=	"Verbesserte Ritterrüstung";
+	name 					=	"Lepsza zbroja rycerska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2033,7 +2033,7 @@ INSTANCE ITAR_RIT_S (C_Item)
 
 INSTANCE ITAR_PAL_M_2 (C_Item)
 {
-	name 					=	"Ritterrüstung";
+	name 					=	"zbroja rycerska";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2073,7 +2073,7 @@ INSTANCE ITAR_PAL_M_2 (C_Item)
 // ******************************************************
 INSTANCE ITAR_PAL_H (C_Item)
 {
-	name 					=	"Paladinrüstung";
+	name 					=	"rusztowanie paladynowe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2113,7 +2113,7 @@ INSTANCE ITAR_PAL_H (C_Item)
 
 INSTANCE ITAR_PAL_H_Visier (C_Item)
 {
-	name 					=	"Paladinrüstung";
+	name 					=	"rusztowanie paladynowe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2153,7 +2153,7 @@ INSTANCE ITAR_PAL_H_Visier (C_Item)
 
 INSTANCE ITAR_PAL_Tiger (C_Item)
 {
-	name 					=	"Weiße Wächterrüstung";
+	name 					=	"Zbroja Bialych Gwardii";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2193,7 +2193,7 @@ INSTANCE ITAR_PAL_Tiger (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_L (C_Item)
 {
-	name 					=	"Bauernkleidung";
+	name 					=	"odziez rolnicza";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2233,7 +2233,7 @@ INSTANCE ITAR_BAU_L (C_Item)
 
 INSTANCE ITAR_BAU_Reis (C_Item)
 {
-	name 					=	"Kleidung der Reisbauern";
+	name 					=	"Odziez rolnika ryzowego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2273,7 +2273,7 @@ INSTANCE ITAR_BAU_Reis (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_M (C_Item)
 {
-	name 					=	"Bauernkluft";
+	name 					=	"ubiór kraju";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2313,7 +2313,7 @@ INSTANCE ITAR_BAU_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_L (C_Item)
 {
-	name 					=	"Bäuerin Tracht 1";
+	name 					=	"Zona rolniczki kostium 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2349,7 +2349,7 @@ INSTANCE ITAR_BauBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_M (C_Item)
 {
-	name 					=	"Bäuerin Tracht 2" ;
+	name 					=	"Zona rolniczki kostium 2" ;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2385,7 +2385,7 @@ INSTANCE ITAR_BauBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_SLD_L (C_Item)
 {
-	name 					=	"Leichte Söldnerrüstung";
+	name 					=	"Lekka zbroja najemnicza";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2461,7 +2461,7 @@ FUNC VOID UnEquip_ITAR_SLD_L()
 // ******************************************************
 INSTANCE ITAR_SLD_Logan (C_Item)
 {
-	name 					=	"Leichte Söldnerrüstung von Logan";
+	name 					=	"Lekki najemnik z Loganu.";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2502,7 +2502,7 @@ INSTANCE ITAR_SLD_Logan (C_Item)
 // ******************************************************
 INSTANCE ITAR_SLD_M (C_Item)
 {
-	name 					=	"Schwere Söldnerrüstung";
+	name 					=	"Ciezki najemnik zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2577,7 +2577,7 @@ FUNC VOID UnEquip_ITAR_SLD_M()
 // ******************************************************
 INSTANCE ITAR_SLD_H (C_Item)
 {
-	name 					=	"Orkjägerrüstung";
+	name 					=	"Pancerz mysliwski";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2646,7 +2646,7 @@ FUNC VOID UnEquip_ITAR_SLD_H()
 
 INSTANCE ITAR_Zombie_Orkjaeger (C_Item)
 {
-	name 					=	"Orkjägerrüstung";
+	name 					=	"Pancerz mysliwski";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2683,7 +2683,7 @@ INSTANCE ITAR_Zombie_Orkjaeger (C_Item)
 
 INSTANCE ITAR_SLD_S (C_Item)
 {
-	name 					=	"Verbesserte Söldnerrüstung";
+	name 					=	"Poprawa uzbrojenia najemników";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2719,7 +2719,7 @@ INSTANCE ITAR_SLD_S (C_Item)
 
 INSTANCE ITAR_OJG_S (C_Item)
 {
-	name 					=	"Verbesserte Orkjägerrüstung";
+	name 					=	"Ulepszony pancerz lukowy zabójczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2756,7 +2756,7 @@ INSTANCE ITAR_OJG_S (C_Item)
 
 INSTANCE ITAR_OJG_S2 (C_Item)
 {
-	name 					=	"Verbesserte Orkjägerrüstung";
+	name 					=	"Ulepszony pancerz lukowy zabójczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2793,7 +2793,7 @@ INSTANCE ITAR_OJG_S2 (C_Item)
 
 INSTANCE ITAR_SLD_H2 (C_Item)
 {
-	name 					=	"Sehr schwere Söldnerrüstung";
+	name 					=	"Bardzo ciezka zbroja najemnicza";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2830,7 +2830,7 @@ INSTANCE ITAR_SLD_H2 (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_Crawler (C_Item)
 {
-	name 					=	"Rüstung aus Crawlerplatten";
+	name 					=	"Pancerz plyty gasienicowej";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2904,7 +2904,7 @@ FUNC VOID UnEquip_ITAR_DJG_Crawler()
 // ******************************************************
 INSTANCE ITAR_DJG_L (C_Item)
 {
-	name 					=	"Leichte Drachenjägerrüstung";
+	name 					=	"Lekki Smoczy Pancerz Lowiecki";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2944,7 +2944,7 @@ INSTANCE ITAR_DJG_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_M (C_Item)
 {
-	name 					=	"Mittlere Drachenjägerrüstung";
+	name 					=	"Sprzet mysliwski sredniego smoka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -2984,7 +2984,7 @@ INSTANCE ITAR_DJG_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_H (C_Item)
 {
-	name 					=	"Schwere Drachenjägerrüstung";
+	name 					=	"Ciezki Smoczy Lowiecki Zbój Smoczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3024,7 +3024,7 @@ INSTANCE ITAR_DJG_H (C_Item)
 
 INSTANCE ITAR_Drachentroll (C_Item)
 {
-	name 					=	"Drachentöterrüstung";
+	name 					=	"dragonowa przekladnia gladzaca";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3064,7 +3064,7 @@ INSTANCE ITAR_Drachentroll (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_BABE (C_Item)
 {
-	name 					=	"Rüstung einer Drachenjägerin";
+	name 					=	"Smoczy mysliwy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3104,7 +3104,7 @@ INSTANCE ITAR_DJG_BABE (C_Item)
 // ******************************************************
 INSTANCE ITAR_NOV_L (C_Item)
 {
-	name 					=	"Feuer Novizenrobe";
+	name 					=	"Opatrunek ogniowy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3180,7 +3180,7 @@ FUNC VOID UnEquip_ITAR_NOV_L()
 
 INSTANCE ITAR_Wassernovize1 (C_Item)
 {
-	name 					=	"Wasser-Novizenrobe";
+	name 					=	"próbka wodonaukowa";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3257,7 +3257,7 @@ FUNC VOID UnEquip_ITAR_WNOV_L()
 
 INSTANCE ITAR_WNOV_S (C_Item)
 {
-	name 					=	"Verbesserte Wasser Novizenrobe";
+	name 					=	"Udoskonalona próbka wodonaukowa";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3298,7 +3298,7 @@ INSTANCE ITAR_WNOV_S (C_Item)
 
 INSTANCE ITAR_NOV_M (C_Item)
 {
-	name 					=	"Verbesserte Feuer Novizenrobe";
+	name 					=	"Udoskonalona próbka próbki pozaru";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3338,7 +3338,7 @@ INSTANCE ITAR_NOV_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDF_F (C_Item)
 {
-	name 					=	"Feuerrobe";
+	name 					=	"suknia";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3381,7 +3381,7 @@ INSTANCE ITAR_KDF_F (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDF_L (C_Item)
 {
-	name 					=	"Feuerrobe";
+	name 					=	"suknia";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3460,7 +3460,7 @@ FUNC VOID UnEquip_ITAR_KDF_L()
 
 INSTANCE ITAR_Silberrobe (C_Item)
 {
-	name 					=	"Heilmagierrobe";
+	name 					=	"uzdrowienie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3500,7 +3500,7 @@ INSTANCE ITAR_Silberrobe (C_Item)
 
 INSTANCE ITAR_Heilrobe_Big (C_Item)
 {
-	name 					=	"Hohe Heilmagierrobe";
+	name 					=	"Wysokiej jakosci magia lecznicza Magia Goraca";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3541,7 +3541,7 @@ INSTANCE ITAR_Heilrobe_Big (C_Item)
 // ******************************************************
 INSTANCE ITAR_MartiniKdfH_01 (C_Item)
 {
-	name 					=	"Martinis Feuerrobe";
+	name 					=	"Martinik, szata przeciwpozarowa";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3582,7 +3582,7 @@ INSTANCE ITAR_MartiniKdfH_01 (C_Item)
 
 INSTANCE ITAR_KDF_H (C_Item)
 {
-	name 					=	"Ordenspriesterrobe";
+	name 					=	"suknia religijna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3661,7 +3661,7 @@ FUNC VOID UnEquip_ITAR_KDF_H()
 // ******************************************************
 INSTANCE ITAR_Leather_L (C_Item)
 {
-	name 					=	"Lederrüstung";
+	name 					=	"pancerz skórzany";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3732,7 +3732,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 
 INSTANCE Snapperlederrüstung (C_Item)
 {
-	name 					=	"Rüstung aus Snapperleder";
+	name 					=	"Skórzany pancerz spodni";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3768,7 +3768,7 @@ INSTANCE Snapperlederrüstung (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_M (C_Item)
 {
-	name 					=	"Mittlere Banditenrüstung";
+	name 					=	"Srednie uzbrojenieandowe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3809,7 +3809,7 @@ INSTANCE ITAR_BDT_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_H (C_Item)
 {
-	name 					=	"Schwere Banditenrüstung";
+	name 					=	"Ciezka bandyta zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3850,7 +3850,7 @@ INSTANCE ITAR_BDT_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_XARDAS (C_Item)
 {
-	name 					=	"Dämonenbeschwörerrobe";
+	name 					=	"demon przywolujacy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3886,7 +3886,7 @@ INSTANCE ITAR_XARDAS (C_Item)
 
 INSTANCE ITAR_DMB_S (C_Item)
 {
-	name 					=	"Verbesserte Dämonenbeschwörerrobe";
+	name 					=	"Udoskonalona szata demonów przywolywaczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3922,7 +3922,7 @@ INSTANCE ITAR_DMB_S (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_LESTER (C_Item)
 {
-	name 					=	"Lesters Robe";
+	name 					=	"Robe Lester's Robe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -3962,7 +3962,7 @@ INSTANCE ITAR_LESTER (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_Diego (C_Item)
 {
-	name 					=	"Diegos Rüstung";
+	name 					=	"Zbroja Diego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4002,7 +4002,7 @@ INSTANCE ITAR_Diego (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_Diego2 (C_Item)
 {
-	name 					=	"Diegos Rüstung 2";
+	name 					=	"Zbroja Diego's Armor 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4042,7 +4042,7 @@ INSTANCE ITAR_Diego2 (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_CorAngar (C_Item)
 {
-	name 					=	"Cor Angars Rüstung";
+	name 					=	"Zbroje Cor Angars";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4082,7 +4082,7 @@ INSTANCE ITAR_CorAngar (C_Item)
 // ******************************************************
 INSTANCE ITAR_Dementor (C_Item)
 {
-	name 					=	"Dunkler Umhang";
+	name 					=	"Ciemny peleryna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4118,7 +4118,7 @@ INSTANCE ITAR_Dementor (C_Item)
 
 INSTANCE ITAR_Tarnung (C_Item)
 {
-	name 					=	"Mantel";
+	name 					=	"plaszcz";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4154,7 +4154,7 @@ INSTANCE ITAR_Tarnung (C_Item)
 
 INSTANCE ITAR_Tarnung_White (C_Item)
 {
-	name 					=	"Mantel";
+	name 					=	"plaszcz";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4190,7 +4190,7 @@ INSTANCE ITAR_Tarnung_White (C_Item)
 
 INSTANCE ITAR_WomanCape (C_Item)
 {
-	name 					=	"Mantel";
+	name 					=	"plaszcz";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4226,7 +4226,7 @@ INSTANCE ITAR_WomanCape (C_Item)
 
 INSTANCE Schwarzmagierrobe (C_Item)
 {
-	name 					=	"Schwarzmagierrobe";
+	name 					=	"ciemna magiczna szata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4262,7 +4262,7 @@ INSTANCE Schwarzmagierrobe (C_Item)
 
 INSTANCE ITAR_KDS_S (C_Item)
 {
-	name 					=	"Verbesserte Schwarzmagierrobe";
+	name 					=	"Ulepszony szata czarna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4298,7 +4298,7 @@ INSTANCE ITAR_KDS_S (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_H (C_Item)
 {
-	name 					=	"Richterrobe";
+	name 					=	"szata sedziego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4338,7 +4338,7 @@ INSTANCE ITAR_KDW_H (C_Item)
 
 INSTANCE ITAR_KDW_M (C_Item)
 {
-	name 					=	"Verbesserte Richterrobe";
+	name 					=	"Ulepszona suknia dla sedziów";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4378,7 +4378,7 @@ INSTANCE ITAR_KDW_M (C_Item)
 // ******************************************************
 instance ITAR_Prisoner (C_Item)
 {
-	name 					=	"Sträflingskleidung";
+	name 					=	"odziez wiezienna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -4418,7 +4418,7 @@ instance ITAR_Prisoner (C_Item)
 // ******************************************************
 INSTANCE ITAR_RyansPriester (C_Item)
 {
-	name 					=	"Dämonenbeschwörerrobe";
+	name 					=	"demon przywolujacy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

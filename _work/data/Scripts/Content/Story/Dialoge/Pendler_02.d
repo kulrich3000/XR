@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Pendler_02_Hi (C_INFO)
 	information	= Info_Mod_Pendler_02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst durstig aus. Wie wär's mit einem Schluck kühlem Bier?";
+	description	= "Wygladasz spragniony. A jak lykowi chlodnego piwa?";
 };
 
 FUNC INT Info_Mod_Pendler_02_Hi_Condition()
@@ -16,51 +16,51 @@ FUNC INT Info_Mod_Pendler_02_Hi_Condition()
 
 FUNC VOID Info_Mod_Pendler_02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_15_00"); //Du siehst durstig aus. Wie wär's mit einem Schluck kühlem Bier?
-	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_08_01"); //(stöhnt) Gib schon, gib schon!
+	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_15_00"); //Wygladasz spragniony. A jak lykowi chlodnego piwa?
+	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_08_01"); //Daj, dajcie!
 
 	Info_ClearChoices	(Info_Mod_Pendler_02_Hi);
 
 	if (Npc_HasItems(hero, ItFo_Beer) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Ich hab's mir anders überlegt: Schau mir doch beim Trinken zu!", Info_Mod_Pendler_02_Hi_C);
+		Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Odwrócilem mysl, obserwuje jak pije!", Info_Mod_Pendler_02_Hi_C);
 	};
-	Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Ich hab leider keins mehr.", Info_Mod_Pendler_02_Hi_B);
+	Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Juz jej nie mam.", Info_Mod_Pendler_02_Hi_B);
 	if (Npc_HasItems(hero, ItFo_Beer) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Da hast du eins.", Info_Mod_Pendler_02_Hi_A);
+		Info_AddChoice	(Info_Mod_Pendler_02_Hi, "Tam jest jeden.", Info_Mod_Pendler_02_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Pendler_02_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_C_15_00"); //Ich hab's mir anders überlegt: Schau mir doch beim Trinken zu!
+	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_C_15_00"); //Odwrócilem mysl, obserwuje jak pije!
 
 	B_UseItem	(hero, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_C_08_01"); //Verpiss dich, du mieser Arsch!
+	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_C_08_01"); //Zepchnij sie, pije sie dziure!
 
 	Info_ClearChoices	(Info_Mod_Pendler_02_Hi);
 };
 
 FUNC VOID Info_Mod_Pendler_02_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_B_15_00"); //Ich hab leider keins mehr.
-	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_B_08_01"); //Ich auch nicht, und dabei schleift meine Zunge jetzt schon aufm Boden.
-	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_B_08_02"); //Nachher wird bei Ditmar erst mal ordentlich was gestürzt.
+	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_B_15_00"); //Juz jej nie mam.
+	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_B_08_01"); //Ja tez i ja, a mój jezyk juz ciagnie sie po ziemi.
+	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_B_08_02"); //Nastepnie Ditmar bedzie mial dobry upadek.
 
 	Info_ClearChoices	(Info_Mod_Pendler_02_Hi);
 };
 
 FUNC VOID Info_Mod_Pendler_02_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_A_15_00"); //Da hast du eins.
+	AI_Output(hero, self, "Info_Mod_Pendler_02_Hi_A_15_00"); //Tam jest jeden.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_A_08_01"); //Verflucht, das ist das Einzige, woran ich den ganzen Tag denken kann. Danke, Mann!
+	AI_Output(self, hero, "Info_Mod_Pendler_02_Hi_A_08_01"); //Damn, to jedyna rzecz, o której moge pomyslec przez caly dzien. Dziekujemy czlowiekowi!
 
 	B_GivePlayerXP	(25);
 

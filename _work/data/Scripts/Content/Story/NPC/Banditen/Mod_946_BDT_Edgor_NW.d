@@ -1,7 +1,7 @@
 instance Mod_946_BDT_Edgor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Edgor";
+	name 		= "edgor";
 	guild 		= GIL_OUT;
 	id 			= 946;
 	voice 		= 31;

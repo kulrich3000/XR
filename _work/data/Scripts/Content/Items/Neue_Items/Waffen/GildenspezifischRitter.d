@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Schwert_02 (C_Item)
 {
-	name 				=	"Ritterschwert";
+	name 				=	"miecz rycerski";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -30,7 +30,7 @@ INSTANCE ItMw_Schwert_02 (C_Item)
 };
 INSTANCE ItMw_Schwert_02_Geschaerft (C_Item)
 {
-	name 				=	"Ritterschwert (geschärft)";
+	name 				=	"Miecz rycerski (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -61,7 +61,7 @@ INSTANCE ItMw_Schwert_02_Geschaerft (C_Item)
 
 INSTANCE ItMw_Schwert_03 (C_Item)
 {
-	name 				=	"Schweres Ritterschwert";
+	name 				=	"Ciezki miecz rycerski";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -89,7 +89,7 @@ INSTANCE ItMw_Schwert_03 (C_Item)
 };
 INSTANCE ItMw_Schwert_03_Geschaerft (C_Item)
 {
-	name 				=	"Schweres Ritterschwert (geschärft)";
+	name 				=	"Ciezki miecz rycerski (naostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;

@@ -18,31 +18,31 @@ FUNC INT Info_Mod_Greg_Hi_Condition()
 
 FUNC VOID Info_Mod_Greg_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_00"); //Adanos! Eine Landratte! Was willst du?
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_01"); //Ich will Pirat werden.
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_02"); //Pirat? Du? Wir veranstalten hier keine Teeparty min Jung!
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_03"); //Ich will auch keinen Tee trinken!
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_04"); //Ihr seht aber verdammt so aus als würdet ihr das!
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_05"); //Nu nimm das Maul nich so voll.
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_06"); //Wo kommst du eigentlich her? Skip hat dich sicher nicht mitgebracht.
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_07"); //Ich komme aus Khorinis. Durch die Berge gewissermassen.
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_08"); //Die Berge? Gibt's da 'nen geheimen Pfad oder sowas?
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_09"); //Nein. Magier haben eine Möglichkeit gefunden zwischen dem alten Tempel oben und einem Gegenstück in Khorinis einen Durchgang nach Jharkendar zu schaffen.
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_00"); //Adanos! Lubisz gospodyni! Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_01"); //Chce byc piratem.
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_02"); //Pirat? Czy? Nie organizujemy przyjecia herbatkowego min min mlody!
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_03"); //Nie chce pic herbaty!
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_04"); //Wygladasz jak pieklo, którego chcialbys!
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_05"); //Nie nalezy miec ust tak pelnych.
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_06"); //Skad pochodzisz? Pomin prawdopodobnie nie przyniosla ci nic.
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_07"); //Jestem z Khorinis. Przez góry do pewnego stopnia.
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_08"); //Góry? Czy jest tajemnicza sciezka czy cos?
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_09"); //Nie. Magicy znalezli sposób, aby stworzyc przejscie do Jharkendara miedzy stara swiatynia a jej odpowiednikiem w Khorinis.
 	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_10"); //Jharkendar?
-	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_11"); //So haben die alten Erbauer diesen Landstrich genannt. Die sollen vor Jahrhunderten die Insel besiedelt haben.
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_12"); //Aha. Und du willst wirklich Pirat werden, was?
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_13"); //Na gut. Hier nimm die Hacke in die Rechte und die Karte in die Linke.
+	AI_Output(hero, self, "Info_Mod_Greg_Hi_15_11"); //To wlasnie starozytni budowniczowie nazywali ten obszar. Mówi sie, ze osiedlili sie na wyspie wieki temu.
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_12"); //Uh-huh. I naprawde chcesz byc piratem, huh?
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_13"); //Wszystkie sluszne, wszystkie sluszne. Poprowadz palec w prawo, a mape w lewo.
 
 	CreateInvItems	(hero, ItWR_Addon_TreasureMap, 1);
 	CreateInvItems	(hero, ItMw_2H_Axe_L_01, 1);
 
-	B_ShowGivenThings	("Spitzhacke und Karte erhalten");
+	B_ShowGivenThings	("Pickaxe i otrzymana karta");
 
-	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_14"); //Wir werden ja sehen ob du das Zeug zum Pirat hast!
+	AI_Output(self, hero, "Info_Mod_Greg_Hi_01_14"); //Zobaczymy, czy masz to, co trzeba, aby byc piratem!
 
 	Log_CreateTopic	(TOPIC_MOD_GREG_AUFNAHME, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GREG_AUFNAHME, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GREG_AUFNAHME, "Greg hat mir eine Schatzkarte und eine Spitzhacke gegeben. Ich soll ihm die Schätze besorgen.");
+	B_LogEntry	(TOPIC_MOD_GREG_AUFNAHME, "Greg dal mi mape skarbu i piknik. Mam mu zdobyc skarby.");
 };
 
 INSTANCE Info_Mod_Greg_Sweetwater (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Greg_Sweetwater (C_INFO)
 	information	= Info_Mod_Greg_Sweetwater_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für Probleme habt ihr?";
+	description	= "Jaki jest twój problem?";
 };
 
 FUNC INT Info_Mod_Greg_Sweetwater_Condition()
@@ -66,21 +66,21 @@ FUNC INT Info_Mod_Greg_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_Greg_Sweetwater_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_00"); //Was für Probleme habt ihr?
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_01"); //Wasser. Uns geht das Wasser aus. Und euch wohl auch.
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_02"); //Wasser geht aus? Hier am Meer? Willst du mich verarschen?
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_03"); //Ich meine Süßwasser. Der See in der Senke oben ist das einzige Süßwasser, das wir hier haben.
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_04"); //Und? Da ist doch genug, möchte ich meinen.
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_05"); //Schon, aber wir kommen nicht dran. Die Senke wimmelt vor Alligatoren.
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_06"); //Weiß Adanos, wo die plötzlich alle herkommen.
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_07"); //Aha. Und da soll ich ...
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_08"); //Rede mal mit Alligator Jack. Er steht vorm Tor. Passt auf, dass die Viecher nicht hier runter kommen.
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_09"); //Alligator Jack? Da habt ihr doch einen Spezialisten.
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_10"); //Schon. Aber allein hat er keine Chance, sagt er.
-	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_11"); //Na gut. Ich rede mal mit ihm.
-	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_12"); //Dann ist gut.
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_00"); //Jaki jest twój problem?
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_01"); //Woda. Brakuje nam wody. I i wy sami.
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_02"); //Woda wyplywa? Nad morzem? Czy kochasz mnie?
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_03"); //Mam na mysli slodka wode. Jedyna slodka woda, która mamy tutaj w dolinie, jest jezioro w góre.
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_04"); //A co? To wystarczy, ze lubie moja.
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_05"); //Tak, ale nie mozemy do niego dotrzec. Dolina jest pelna aligatorów.
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_06"); //Czy Adanos wie skad one wszystkie nagle pochodza?
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_07"); //Uh-huh. I tam mam.....
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_08"); //Porozmawiaj z Alligator Jack. On jest poza brama. Upewnij sie, ze te rzeczy nie spadna tutaj.
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_09"); //Jack? Masz specjaliste.
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_10"); //Tak jest. Ale on sam nie ma szans, mówi.
+	AI_Output(hero, self, "Info_Mod_Greg_Sweetwater_15_11"); //Wszystkie sluszne, wszystkie sluszne. Porozmawiam z nim.
+	AI_Output(self, hero, "Info_Mod_Greg_Sweetwater_01_12"); //Wtedy to dobrze.
 
-	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Alligatorenplage im Talkessel, dem Süßwasserreservoir ... Mal sehen, was Alligator Jack erzählt.");
+	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "plaga aligatorów w kotlinie dolinowej, zbiornik slodkowodny..... Zobaczmy, co mówi Alligator Jack.");
 
 	B_StartOtherRoutine	(Mod_928_PIR_AlligatorJack_AW, "PRESTART");
 };
@@ -93,7 +93,7 @@ INSTANCE Info_Mod_Greg_Irdorath (C_INFO)
 	information	= Info_Mod_Greg_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich beabsichtige eine Exkursion über die weite See.";
+	description	= "Zamierzam odbyc wycieczke przez szerokie morze.";
 };
 
 FUNC INT Info_Mod_Greg_Irdorath_Condition()
@@ -108,19 +108,19 @@ FUNC INT Info_Mod_Greg_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Greg_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_00"); //Ich beabsichtige eine Exkursion über die weite See.
-	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_01"); //Dazu brauche ich aber einen fähigen Kapitän, der das Schiff der Paladine aus dem Hafen ...
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_02"); //(unterbricht) Ich soll in die Hafenstadt und auf das Schiff der Paladine?
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_03"); //Du bist mir gut, dann kann ich mich ja gleich den königlichen Häschern ausliefern.
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_04"); //Ne, Junge, wenn ich mal abtreten will, dann bestimmt nicht mit einem Strick um den Hals und durch grenzenlose Dummheit ...
-	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_05"); //Schade ... Dann muss ich wohl einen anderen Kapitän finden, der mich zu dieser ominösen Insel führt ...
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_06"); //Was für 'ne Insel?
-	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_07"); //Die Insel, auf der die mächtigen Schergen des Magiers Xeres lauern.
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_08"); //(zu sich selbst) Tjo, vielleicht gibt’s da ja was abzugreifen. Arme Schlucker sind Magier bekanntlich nie ...
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_09"); //(wieder zum Helden) Nun, min Jung, ich selbst kann mich zwar nicht in der Stadt blicken lassen, aber vielleicht kannst du ja meinen besten Kämpfer Bones davon überzeugen, dass er mitkommt.
-	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_10"); //An mir soll es jedenfalls nicht scheitern.
+	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_00"); //Zamierzam odbyc wycieczke przez szerokie morze.
+	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_01"); //Ale do tego potrzebny jest mi kapitan, który jest w stanie wyciagnac statek Paladyn z portu......
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_02"); //Czy chcesz, abym udal sie do portu morskiego i statku Paladynów?
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_03"); //Jestes przy mnie dobry, wiec moge sie zwrócic do córek królewskich.
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_04"); //Nah, chlopiec, jesli chce ustapic, to na pewno nie z lina wokól szyi i bezgraniczna glupota......
+	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_05"); //Zbyt przykry Potem musze znalezc innego kapitana, który przewiezie mnie na te zlowieszcza wyspe....
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_06"); //Jaka wyspa?
+	AI_Output(hero, self, "Info_Mod_Greg_Irdorath_15_07"); //Wyspa, na której czaja sie potezne slugusy maga Xeresa.
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_08"); //(do siebie) Tjo, moze jest cos do podniesienia. Jak wszyscy wiemy, biedni przelykacze nigdy nie sa magami....
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_09"); //(znów bohaterowi) No cóz, min mlody, nie moge pozwolic sie zobaczyc w miescie, ale moze uda ci sie przekonac moje najlepsze kosci bojowników, aby przyszli ze mna.
+	AI_Output(self, hero, "Info_Mod_Greg_Irdorath_01_10"); //Nie chce, aby zawiodla z mojej winy.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Greg wird nicht in die Hafenstadt kommen, um das Schiff zu führen. Er stellte es mir jedoch frei Bones mitzunehmen, wenn ich diesen davon überzeugen kann mitzukommen.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Greg nie przyjedzie do miasta portowego, aby poprowadzic statek. Dal mi jednak wolnosc wziecia kosci, gdybym mógl go przekonac do przyjscia ze mna.");
 };
 
 INSTANCE Info_Mod_Greg_Schatzsuche (C_INFO)
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Greg_Schatzsuche (C_INFO)
 	information	= Info_Mod_Greg_Schatzsuche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Schätze gefunden.";
+	description	= "Znalazlem skarby.";
 };
 
 FUNC INT Info_Mod_Greg_Schatzsuche_Condition()
@@ -149,7 +149,7 @@ FUNC INT Info_Mod_Greg_Schatzsuche_Condition()
 
 FUNC VOID Info_Mod_Greg_Schatzsuche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzsuche_15_00"); //Ich hab die Schätze gefunden.
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzsuche_15_00"); //Znalazlem skarby.
 	
 	Npc_RemoveInvItems	(hero, ItMi_Sextant_Greg, 1);
 	Npc_RemoveInvItems	(hero, ItMi_JeweleryChest_Greg, 1);
@@ -157,15 +157,15 @@ FUNC VOID Info_Mod_Greg_Schatzsuche_Info()
 	Npc_RemoveInvItems	(hero, ItMw_Piratensaebel_Greg, 1);
 	Npc_RemoveInvItems	(hero, ItMi_RuneBlank_Greg, 1);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_01"); //Tja, scheinst ja doch zu was gebrauchen zu sein!
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_01"); //Cóz, wydaje Ci sie, ze czegos potrzebujesz!
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_02"); //Wenn du willst, kannst du jetzt ein echter Seemann werden.
+		AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_02"); //Jesli chcesz, mozesz teraz stac sie prawdziwym zeglarzem.
 	}
 	else 
 	{
-		AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_03"); //Leider hast du dich schon zu vielen Gemeinschaften angeschlossen.
+		AI_Output(self, hero, "Info_Mod_Greg_Schatzsuche_01_03"); //Niestety, dolaczyles do zbyt wielu spolecznosci.
 	};
 
 	B_Göttergefallen(2, 1);
@@ -183,7 +183,7 @@ INSTANCE Info_Mod_Greg_Aufnahme (C_INFO)
 	information	= Info_Mod_Greg_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Pirat werden.";
+	description	= "Chce byc piratem.";
 };
 
 FUNC INT Info_Mod_Greg_Aufnahme_Condition()
@@ -197,14 +197,14 @@ FUNC INT Info_Mod_Greg_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Greg_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_00"); //Ich will Pirat werden.
-	AI_Output(self, hero, "Info_Mod_Greg_Aufnahme_01_01"); //Dann leg dir mal anständige Klamotten an und mach dich an die Arbeit.
+	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_00"); //Chce byc piratem.
+	AI_Output(self, hero, "Info_Mod_Greg_Aufnahme_01_01"); //Potem dostajcie troche przyzwoitych ubran i dostajcie sie do pracy.
 
 	CreateInvItems	(self, ITAR_PIR_L_Addon, 1);
 	B_GiveInvItems	(self, hero, ITAR_PIR_L_Addon, 1);
 
-	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_02"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Greg_Aufnahme_01_03"); //Such dir zuerst mal 'nen Entertrupp, dann sehen wir weiter.
+	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_02"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Greg_Aufnahme_01_03"); //Najpierw musisz znalezc druzyne, a potem zobaczymy.
 
 	Mod_AnzahlNebengilden += 1;
 
@@ -217,12 +217,12 @@ FUNC VOID Info_Mod_Greg_Aufnahme_Info()
 
 	B_Göttergefallen(2, 2);
 
-	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_05"); //Aye, aye Käptn.
+	AI_Output(hero, self, "Info_Mod_Greg_Aufnahme_15_05"); //Oko, oko, oko, kapitan.
 
 	Log_CreateTopic	(TOPIC_MOD_PIRATEN_ENTERTRUPP, LOG_MISSION);
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_ENTERTRUPP, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_NEBENGILDEN, TOPIC_MOD_PIRATEN_ENTERTRUPP, "Ich bin jetzt ein richtiger Pirat.", "Greg meint ich solle mich zuerst einem Entertrupp anschließen.");
+	B_LogEntry_More	(TOPIC_MOD_NEBENGILDEN, TOPIC_MOD_PIRATEN_ENTERTRUPP, "Jestem teraz prawdziwym piratem.", "Greg mówi, ze powinienem najpierw dolaczyc do oddzialu.");
 };
 
 INSTANCE Info_Mod_Greg_WasJetzt (C_INFO)
@@ -233,7 +233,7 @@ INSTANCE Info_Mod_Greg_WasJetzt (C_INFO)
 	information	= Info_Mod_Greg_WasJetzt_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was soll ich jetzt machen?";
+	description	= "Co mam teraz zrobic?";
 };
 
 FUNC INT Info_Mod_Greg_WasJetzt_Condition()
@@ -247,10 +247,10 @@ FUNC INT Info_Mod_Greg_WasJetzt_Condition()
 
 FUNC VOID Info_Mod_Greg_WasJetzt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_WasJetzt_15_00"); //Was soll ich jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Greg_WasJetzt_01_01"); //Momentan hab ich nichts für dich zu tun.
-	AI_Output(self, hero, "Info_Mod_Greg_WasJetzt_01_02"); //Du hast sicher noch anderes zu erledigen.
-	AI_Output(hero, self, "Info_Mod_Greg_WasJetzt_15_03"); //Das kannst du laut sagen. Also bis später.
+	AI_Output(hero, self, "Info_Mod_Greg_WasJetzt_15_00"); //Co mam teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Greg_WasJetzt_01_01"); //W tej chwili nie mam nic do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Greg_WasJetzt_01_02"); //Jestem pewien, ze masz inne rzeczy do zrobienia.
+	AI_Output(hero, self, "Info_Mod_Greg_WasJetzt_15_03"); //Mozna to powiedziec jeszcze raz. Do zobaczenia pózniej.
 
 	Npc_ExchangeRoutine	(Mod_940_PIR_Samuel_AW, "START");
 };
@@ -276,18 +276,18 @@ FUNC INT Info_Mod_Greg_Karte_Condition()
 
 FUNC VOID Info_Mod_Greg_Karte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_00"); //Hey, gut das du kommst.
-	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_01"); //Diese Karte hier hat einer von Morgan's Jungs in einer angeschwemmten Flasche gefunden.
-	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_02"); //Dazu schreibt ein Schiffsbrüchiger, er sei auf einer Insel gestrandet, wo Zombies ihr Unwesen trieben und offenbar einen riesigen Schatz bewachten.
-	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_03"); //Ich denke, wir sollten der Sache nachgehen. Sitzen eh schon zu lange hier rum.
-	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_04"); //Du wirst den Leuten bei den Vorbereitungen helfen. Frag die Männer.
-	AI_Output(hero, self, "Info_Mod_Greg_Karte_15_05"); //Aye, aye Käpt'n.
+	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_00"); //Hej, dobra od ciebie przyjsc.
+	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_01"); //Ta mapa zostala znaleziona przez jednego z chlopców Morgana w umytej butelce.
+	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_02"); //W katastrofie okretowej czlowiek pisze, ze zostal uwieziony na wyspie, gdzie zombie robily balagan i najwyrazniej strzegly ogromnego skarbu.
+	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_03"); //Mysle, ze powinnismy sie temu przyjrzec. Siedzcie tu zbyt dlugo i tak.
+	AI_Output(self, hero, "Info_Mod_Greg_Karte_01_04"); //Pomozesz ludziom w przygotowaniach. Zapytaj mezczyzn.
+	AI_Output(hero, self, "Info_Mod_Greg_Karte_15_05"); //Oko, oko, oko, kapitan.
 
 	B_StartOtherRoutine	(Mod_940_PIR_Samuel_AW, "START");
 
 	Log_CreateTopic	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Einer aus Morgans Entertrupp hat eine Karte gefunden. Ich soll nun im Lager helfen alles für die Schatzsuche vorzubereiten.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Jeden z porywaczy Morgan znalazl mape. Ma mi pomóc przygotowac wszystko w obozie do polowania na skarb.");
 };
 
 INSTANCE Info_Mod_Greg_Aufgabe (C_INFO)
@@ -298,7 +298,7 @@ INSTANCE Info_Mod_Greg_Aufgabe (C_INFO)
 	information	= Info_Mod_Greg_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Greg_Aufgabe_Condition()
@@ -312,17 +312,17 @@ FUNC INT Info_Mod_Greg_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Greg_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Aufgabe_15_00"); //Hast du was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Greg_Aufgabe_01_01"); //Nun, du könntest meinen alten Piratensäbel, den du mir bei deiner Aufnahmeprüfung gebracht hast, zu einem Schmied bringen und reparieren lassen.
+	AI_Output(hero, self, "Info_Mod_Greg_Aufgabe_15_00"); //Masz dla mnie cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Greg_Aufgabe_01_01"); //No cóz, móglbys wziac moja stara szable piratów, która przywiozles do kowala i naprawic.
 
 	B_GiveInvItems	(self, hero, ItMw_Piratensaebel_Greg, 1);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Aufgabe_01_02"); //Mit dem alten, verrosteten Ding seh ich ja wohl richtig dämlich aus. Also beeil dich!
-	AI_Output(hero, self, "Info_Mod_Greg_Aufgabe_15_03"); //Aye, aye Käptn.
+	AI_Output(self, hero, "Info_Mod_Greg_Aufgabe_01_02"); //Ta stara zardzewiala stara rzecz sprawia, ze wygladam naprawde glupio. Tak spieszyc sie!
+	AI_Output(hero, self, "Info_Mod_Greg_Aufgabe_15_03"); //Oko, oko, oko, kapitan.
 
 	Log_CreateTopic	(TOPIC_MOD_GREG_ROST, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GREG_ROST, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GREG_ROST, "Ich soll Greg's alten Piratensäbel bei einem Schmied reparieren lassen.");
+	B_LogEntry	(TOPIC_MOD_GREG_ROST, "Mam naprawic stara szable pirata Greg' a w kuzni.");
 };
 
 INSTANCE Info_Mod_Greg_Saebel (C_INFO)
@@ -333,7 +333,7 @@ INSTANCE Info_Mod_Greg_Saebel (C_INFO)
 	information	= Info_Mod_Greg_Saebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bin zurück und hab dir was mitgebracht.";
+	description	= "Wrócilem i cos ci przynióslam.";
 };
 
 FUNC INT Info_Mod_Greg_Saebel_Condition()
@@ -347,21 +347,21 @@ FUNC INT Info_Mod_Greg_Saebel_Condition()
 
 FUNC VOID Info_Mod_Greg_Saebel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_00"); //Bin zurück und hab dir was mitgebracht.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_01"); //Meinen aufgepeppten Säbel?
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_02"); //Nein, was Besseres. Der Schmied Bennet möchte deinen Säbel behalten.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_03"); //Beim Klabautermann! Ein Erbstück! Von meinem Grossvater selbst!
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_04"); //Man nannte ihn den Freibeuter der Meere ...
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_05"); //Der Schmied hat mir dafür dieses Schwert mitgegeben.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_06"); //Dieser Säbel hat schon gallonenweise Blut getrunken!
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_07"); //Mein Ahn würde sich im Gra ... im Meer umdrehen!
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_08"); //Hier. Schau doch erst mal.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_09"); //Die Seelen aller gefallenen Piraten würden mir nachstellen.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_10"); //Hm ... Zeig mal her.
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_00"); //Wrócilem i cos ci przynióslam.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_01"); //Mój szczytowy szabla?
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_02"); //Nie, cos lepszego. Kowal Bennet chce utrzymac szable.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_03"); //Klabautermann! Spadek! Mój dziadek sam!
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_04"); //Nazywano go bukierem mórz.....
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_05"); //Kowal dal mi za to ten miecz.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_06"); //Ten miecz pijal galon galon galon galon galon krwi!
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_07"); //Mój przodek umarl w grobie.... w morzu!
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_08"); //Tutaj. Najpierw spójrz.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_09"); //Dusze wszystkich poleglych piratów przesladowaly mnie.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_10"); //Hm.... Pozwole sobie to zobaczyc.
 
 	B_GiveInvItems	(hero, self, ItMw_BennetGreg, 1);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_11"); //Was soll das denn sein?
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_11"); //Co to ma byc?
 
 	AI_UnequipWeapons	(self);
 
@@ -371,11 +371,11 @@ FUNC VOID Info_Mod_Greg_Saebel_Info()
 	AI_PlayAni	(self, "T_1HSINSPECT");
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_12"); //Wieso ist das schwarz angemalt? Au! Das ist aber scharf.
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_13"); //Drei mal schärfer als jede Klinge und doppelt so stabil. Ganz neues Material, sagt Bennet.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_14"); //Das muss ich selber sehen. Ich gehe mal zu Bones die Klinge testen.
-	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_15"); //Du fragst Skip, ob die Vorräte verladen sind.
-	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_16"); //Aye, Sir.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_12"); //Dlaczego jest pomalowana na czarno? Ow! To jest tak gorace.
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_13"); //Trzy razy ostrzejsze niz jakiekolwiek ostrze i dwa razy bardziej stabilne. Calkowicie nowy material, mówi Bennet.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_14"); //Musze sie przekonac. Jade do kosci, aby sprawdzic ostrze.
+	AI_Output(self, hero, "Info_Mod_Greg_Saebel_01_15"); //Jesli materialy eksploatacyjne sa zaladowane, nalezy opuscic menu.
+	AI_Output(hero, self, "Info_Mod_Greg_Saebel_15_16"); //Oko, panie posle.
 
 	B_SetTopicStatus	(TOPIC_MOD_GREG_ROST, LOG_SUCCESS);
 
@@ -385,7 +385,7 @@ FUNC VOID Info_Mod_Greg_Saebel_Info()
 
 	B_Göttergefallen(2, 1);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Jetzt soll ich mich bei Skip erkundigen, ob alles an Bord ist.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Teraz powinienem sprawdzic z Skipem, czy wszystko jest na pokladzie.");
 
 	B_StartOtherRoutine	(self, "TRAINING");
 };
@@ -398,7 +398,7 @@ INSTANCE Info_Mod_Greg_Bill (C_INFO)
 	information	= Info_Mod_Greg_Bill_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bill hat versucht die Schatzsuche zu sabotieren.";
+	description	= "Bill próbowal sabotowac polowanie na skarb.";
 };
 
 FUNC INT Info_Mod_Greg_Bill_Condition()
@@ -412,15 +412,15 @@ FUNC INT Info_Mod_Greg_Bill_Condition()
 
 FUNC VOID Info_Mod_Greg_Bill_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Bill_15_00"); //Bill hat versucht die Schatzsuche zu sabotieren.
-	AI_Output(self, hero, "Info_Mod_Greg_Bill_01_01"); //Wie kommst du darauf?
-	AI_Output(hero, self, "Info_Mod_Greg_Bill_15_02"); //Auf diesem Zettel steht es. Ich hab den Zettel von einem Alchemisten aus Khorinis.
+	AI_Output(hero, self, "Info_Mod_Greg_Bill_15_00"); //Bill próbowal sabotowac polowanie na skarb.
+	AI_Output(self, hero, "Info_Mod_Greg_Bill_01_01"); //Co sprawia, ze myslisz o tym?
+	AI_Output(hero, self, "Info_Mod_Greg_Bill_15_02"); //Ta uwaga tak brzmi. Dostalem notatke od alchemika z Khorinisa.
 
 	B_GiveInvItems	(hero, self, Mod_BillsRumRezept, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Greg_Bill_01_03"); //Tatsächlich. Na warte, der kann was erleben. Gut gemacht, min jung!
+	AI_Output(self, hero, "Info_Mod_Greg_Bill_01_03"); //Wlasciwie. Odczekaj minute, bedzie ranny. Dobrze zrobione, min mlode!
 
 	B_GivePlayerXP	(200);
 
@@ -435,7 +435,7 @@ INSTANCE Info_Mod_Greg_Vorbereitungen (C_INFO)
 	information	= Info_Mod_Greg_Vorbereitungen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann's losgehen?";
+	description	= "Czy mozemy zaczac dzialac?";
 };
 
 FUNC INT Info_Mod_Greg_Vorbereitungen_Condition()
@@ -449,29 +449,29 @@ FUNC INT Info_Mod_Greg_Vorbereitungen_Condition()
 
 FUNC VOID Info_Mod_Greg_Vorbereitungen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Vorbereitungen_15_00"); //Kann's losgehen?
+	AI_Output(hero, self, "Info_Mod_Greg_Vorbereitungen_15_00"); //Czy mozemy zaczac dzialac?
 
 	if (Mod_PiratenVorbereitungen > 5)
 	{
 		if (Npc_KnowsInfo(hero, Info_Mod_Josephina_Hi))
 		&& (!Npc_KnowsInfo(hero, Info_Mod_Greg_AJAlive4))
 		{
-			AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_03"); //Nein, jetzt ist nicht der beste Zeitpunkt dafür.
+			AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_03"); //Nie, teraz nie jest najlepszy czas.
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_01"); //Ja, die Vorbereitungen sind getroffen. Es kann losgehen.
+			AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_01"); //Tak, przygotowania zostaly poczynione. Jestesmy gotowi do wyjazdu.
 	
 			Mod_VorbereitungenFertig = 1;
 
-			B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Die Vorbereitungen sind getroffen und die Schatzsuche kann losgehen.");
+			B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Poczyniono przygotowania i mozna rozpoczac polowanie na skarb.");
 
 			B_Göttergefallen(2, 1);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_02"); //Noch sind nicht genug Vorbereitungen getroffen werden, du musst noch ein wenig helfen.
+		AI_Output(self, hero, "Info_Mod_Greg_Vorbereitungen_01_02"); //Nie przeprowadzono jeszcze dostatecznej ilosci przygotowan, nadal trzeba troche pomóc.
 	};
 };
 
@@ -483,7 +483,7 @@ INSTANCE Info_Mod_Greg_GehtsLos (C_INFO)
 	information	= Info_Mod_Greg_GehtsLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Können wir aufbrechen?";
+	description	= "Czy mozemy wyjechac teraz?";
 };
 
 FUNC INT Info_Mod_Greg_GehtsLos_Condition()
@@ -496,33 +496,33 @@ FUNC INT Info_Mod_Greg_GehtsLos_Condition()
 
 FUNC VOID Info_Mod_Greg_GehtsLos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_15_00"); //Können wir aufbrechen? Bis auf die Mannschaft ist alles an Bord.
-	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_01_01"); //Jo, soweit ist alles erledigt. Stell sicher dass du nichts mehr von hier brauchst, sobald wir aufgebrochen sind werden wir nicht mehr so schnell zurückkommen.
+	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_15_00"); //Czy mozemy wyjechac teraz? Poza zaloga, wszystko jest na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_01_01"); //Jo, jak do tej pory wszystko jest robione. Upewnij sie, ze nie potrzebujesz niczego wiecej z tego miejsca po naszym wyjezdzie, nie wrócimy tak szybko.
 
 	Info_ClearChoices	(Info_Mod_Greg_GehtsLos);
 
-	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Ich muss noch was erledigen.", Info_Mod_Greg_GehtsLos_Nein);
-	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Ich bin bereit.", Info_Mod_Greg_GehtsLos_Ja);
+	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Jest cos, co musze zrobic.", Info_Mod_Greg_GehtsLos_Nein);
+	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Jestem gotowy.", Info_Mod_Greg_GehtsLos_Ja);
 };
 
 FUNC VOID Info_Mod_Greg_GehtsLos_Nein ()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_Nein_15_00"); //Ich muss noch was erledigen.
-	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_Nein_01_01"); //Gut, komm sobald du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_Nein_15_00"); //Jest cos, co musze zrobic.
+	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_Nein_01_01"); //Wszystko w porzadku, przyjdz jak tylko bedziesz gotowy.
 
 	Info_ClearChoices	(Info_Mod_Greg_GehtsLos);
 };
 
 FUNC VOID Info_Mod_Greg_GehtsLos_Ja ()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_Ja_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_Ja_01_01"); //Also los gehts.
+	AI_Output(hero, self, "Info_Mod_Greg_GehtsLos_Ja_15_00"); //Jestem gotowy.
+	AI_Output(self, hero, "Info_Mod_Greg_GehtsLos_Ja_01_01"); //I tu idziemy.
 
 	Mod_VorbereitungenFertig = 2;
 
 	Info_ClearChoices	(Info_Mod_Greg_GehtsLos);
 
-	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Los!", Info_Mod_Greg_GehtsLos_Los);
+	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "Idzmy!", Info_Mod_Greg_GehtsLos_Los);
 };
 
 FUNC VOID Info_Mod_Greg_GehtsLos_Los ()
@@ -544,7 +544,7 @@ INSTANCE Info_Mod_Greg_Kompass (C_INFO)
 	information	= Info_Mod_Greg_Kompass_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist der Kompass.";
+	description	= "Oto kompas.";
 };
 
 FUNC INT Info_Mod_Greg_Kompass_Condition()
@@ -558,27 +558,27 @@ FUNC INT Info_Mod_Greg_Kompass_Condition()
 
 FUNC VOID Info_Mod_Greg_Kompass_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_00"); //Hier ist der Kompass.
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_00"); //Oto kompas.
 
 	B_GiveInvItems	(hero, self, ItMi_Kompass, 1);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_01"); //Gut. Aber ein Problem haben wir noch.
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_02"); //(resignierend) Und das wäre?
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_03"); //Spürst du auch den leisesten Windhauch?
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_04"); //Eigentlich nicht.
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_05"); //Und haben wir eine Galeere, wo Rudersklaven das Schiff vorwärts treiben.
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_06"); //Eigentlich auch nicht.
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_07"); //Was brauchen wir also noch?
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_08"); //Die steife Brise aus Südwest?
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_09"); //Genau! Solang die nicht weht, können wir nicht auslaufen.
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_10"); //Das heißt?
-	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_11"); //Du hast frei. Komm zurück, wenn's richtig windet.
-	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_12"); //Wenn du meinst. Bis dann.
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_01"); //Dobre. Ale nadal mamy problem.
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_02"); //I co by to bylo?
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_03"); //Czy czules sie jak najmniejszy powiew?
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_04"); //Wlasciwie nie.
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_05"); //I czy mamy kuchnie, gdzie niewolnicy wioslowi napedzaja statek naprzód?
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_06"); //Tak naprawde nie.
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_07"); //Czego wiec jeszcze potrzebujemy?
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_08"); //Sztywna bryza od poludniowego zachodu?
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_09"); //Dokladnie! Dopóki nie wysycha, nie mozemy przeciekac.
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_10"); //Co to znaczy?
+	AI_Output(self, hero, "Info_Mod_Greg_Kompass_01_11"); //Wyjezdzasz. Wróc do domu, jesli jest naprawde wietrznie.
+	AI_Output(hero, self, "Info_Mod_Greg_Kompass_15_12"); //Jesli tak powiesz. Do zobaczenia dookola.
 
 	//Mod_VorbereitungenFertig = 5;
 
 	B_SetTopicStatus	(TOPIC_MOD_GREG_KOMPASS, LOG_SUCCESS);
-	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Leider herrscht gerade eine Flaute, so dass wir noch nicht zu unserer Schatzsuche aufbrechen können. Ich soll später wiederkommen.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Niestety, juz teraz jestesmy w doldrumach, wiec nie mozemy jeszcze zaczac polowania na skarb. Mam wrócic pózniej.");
 };
 
 INSTANCE Info_Mod_Greg_Schatzaufteilung (C_INFO)
@@ -601,28 +601,28 @@ FUNC INT Info_Mod_Greg_Schatzaufteilung_Condition()
 
 FUNC VOID Info_Mod_Greg_Schatzaufteilung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_00"); //Tatsächlich, du lebst noch! Ich hätte nicht gedacht dass jemand einen Schlag mit einer solchen Axt überleben kann!
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_15_01"); //Ich hatte wohl Glück. Ich kann mich nur an nichts mehr erinnern.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_02"); //Jo! Während der Überfahrt wurden wir von einer orkischen Galeere überfallen. Sie haben dich heimlich ausgeschalten, als du geschlafen hast.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_03"); //War ein kräftiger Schlag, denn er war so laut, dass wir dadurch bemerkt haben, dass diese Biester unser Schiff geentert haben.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_04"); //Danach haben wir sie zurückgeschlagen. Du jedoch warst bis vor kurzem bewusstlos.
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_15_05"); //Was ist mit dem Schatz?
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_06"); //Was soll damit sein? Niemand hat ihn angerührt. Obwohl ich es erlaubt habe! Alle wollten sie auf dich warten.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_07"); //Damit darfst du dir deinen Teil aussuchen!
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_00"); //W rzeczywistosci jestes wciaz zywy! Nie sadzilem, aby ktokolwiek mógl przezyc taki cios siekiera!
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_15_01"); //Chyba mialem szczescie. Nic nie pamietam.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_02"); //Jo! Podczas przeprawy zostalismy zaatakowani przez orkiestrowa kuchnie. Oni potajemnie wyprowadzili cie na zewnatrz podczas snu.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_03"); //Byl to potezny cios, bowiem byl tak glosny, ze odnotowalismy iz zwierzeta te wsiadaly na nasz statek.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_04"); //Potem walczylismy z nimi z powrotem. Ale do niedawna byles nieprzytomny.
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_15_05"); //A co z skarbem?
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_06"); //Co jest z tym nie tak? Nikt go nie dotknal. Mimo ze pozwolilem na to! Wszyscy chcieli na ciebie czekac.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_01_07"); //Mozesz wiec wybrac swoja czesc!
 
 	Info_ClearChoices	(Info_Mod_Greg_Schatzaufteilung);
 
-	Info_AddChoice	(Info_Mod_Greg_Schatzaufteilung, "Trank der Ausgewogenheit", Info_Mod_Greg_Schatzaufteilung_Trank);
-	Info_AddChoice	(Info_Mod_Greg_Schatzaufteilung, "10.000 Goldmünzen", Info_Mod_Greg_Schatzaufteilung_Gold);
+	Info_AddChoice	(Info_Mod_Greg_Schatzaufteilung, "eliksir równowagi", Info_Mod_Greg_Schatzaufteilung_Trank);
+	Info_AddChoice	(Info_Mod_Greg_Schatzaufteilung, "10. zloto", Info_Mod_Greg_Schatzaufteilung_Gold);
 };
 
 FUNC VOID Info_Mod_Greg_Schatzaufteilung_Trank ()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Trank_15_00"); //Ich nehme den Trank.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_01"); //Bestimmt eine gute Wahl. Wir wissen nicht was er bewirkt.
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Trank_15_02"); //Wo habt ihr ihn denn überhaupt her?
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_03"); //Er lag im Schiffswrack. Während du die Insel erkundet hast, hat Skip das Schiffswrack untersucht.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_04"); //Da ist er über den Trank gestolpert und hat ihn mitgebracht.
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Trank_15_00"); //Wezmiemy eliksir.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_01"); //Musi to byc dobry wybór. Nie wiemy, co ona robi.
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Trank_15_02"); //Gdzie go Pan dostal?
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_03"); //Lezal w wraku statku. Podczas zwiedzania wyspy Skip badal zatoke statku.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Trank_01_04"); //Potknal sie na eliksir i przyniósl go razem z nim.
 
 	B_GiveInvItems	(self, hero, ItPo_Piratentrank, 1);
 
@@ -631,8 +631,8 @@ FUNC VOID Info_Mod_Greg_Schatzaufteilung_Trank ()
 
 FUNC VOID Info_Mod_Greg_Schatzaufteilung_Gold ()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Gold_15_00"); //Ich nehm das Gold.
-	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Gold_01_01"); //Gut, hier ist dein Gold.
+	AI_Output(hero, self, "Info_Mod_Greg_Schatzaufteilung_Gold_15_00"); //Bede bral zloto.
+	AI_Output(self, hero, "Info_Mod_Greg_Schatzaufteilung_Gold_01_01"); //Dobrze, oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 10000);
 
@@ -647,7 +647,7 @@ INSTANCE Info_Mod_Greg_Befreiung (C_INFO)
 	information	= Info_Mod_Greg_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss mit dir reden.";
+	description	= "Musze z panstwem porozmawiac.";
 };
 
 FUNC INT Info_Mod_Greg_Befreiung_Condition()
@@ -660,16 +660,16 @@ FUNC INT Info_Mod_Greg_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Greg_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_00"); //Ich muss mit dir reden.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_01"); //(wütend) Was willst DU denn von mir. Siehst du nicht das ich ungestört bleiben will.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_02"); //Das ist jetzt verdammt noch mal völlig unwichtig!
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_03"); //(erbost) Was fällt dir ein, du Lümmel!
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_04"); //Wichtiger ist jetzt erstmal die Garde Innos' aufzuhalten, bevor hier alles den Bach runter geht!
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_05"); //(seufzt) Na gut. Was gibt's?
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_06"); //Myxir erzählte mir, dass du Pläne hast, die Besagen, wie wir Jharkendar von all dem Übel befreien können.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_07"); //So, hat er das? Na dann will ich dir vorher was sagen. Bevor wir überhaupt daran denken können irgendwas zu unternehmen, müssen wir erstmal zusehen, dass alles wieder ins Lot kommt!
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_08"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_09"); //(sauer) Na sieh dich doch mal um. Alles Mögliche ist passiert, seit wir von den Zombies angegriffen wurden. Wir müssen erstmal Vorbereitungen treffen!
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_00"); //Musze z panstwem porozmawiac.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_01"); //Czego od mnie oczekujesz? Czy nie widzisz, ze chce pozostac niezaklócony?
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_02"); //Nie ma to znaczenia, przepraszam!
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_03"); //Co uwazasz, ze robisz, to co robisz!
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_04"); //Teraz wazniejsze jest, aby najpierw zatrzymac straznika Innosa, zanim wszystko pójdzie w dól odplywu!
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_05"); //(sighs) Wszystko w porzadku. Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_06"); //Myxir powiedzial mi, ze masz plany uwolnienia Jharkendala od tego zla.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_07"); //Czyz nie? Cóz, prosze pozwolic mi powiedziec cos najpierw. Zanim bedziemy mogli nawet pomyslec o cokolwiek zrobic, musimy upewnic sie, ze wszystko jest w porzadku!
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung_15_08"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung_01_09"); //Rozejrzyj sie dookola. Od czasu zaatakowania nas przez zombie wydarzylo sie wiele rzeczy. Najpierw musimy przygotowac sie!
 };
 
 INSTANCE Info_Mod_Greg_Befreiung2 (C_INFO)
@@ -680,7 +680,7 @@ INSTANCE Info_Mod_Greg_Befreiung2 (C_INFO)
 	information	= Info_Mod_Greg_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was kann ich tun?";
+	description	= "Co moge zrobic?";
 };
 
 FUNC INT Info_Mod_Greg_Befreiung2_Condition()
@@ -693,19 +693,19 @@ FUNC INT Info_Mod_Greg_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Greg_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_00"); //Was kann ich tun?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_01"); //Du sollst mal zu allen meinen Jungs gehen und zusehen, ob du ihnen bei ihren Problemen helfen kannst, da wir sonst nichts mehr zu melden haben.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_02"); //Hilf mindestens acht von ihnen.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_03"); //Was springt für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_04"); //(aufgebracht) Das gibt's doch nicht! Du willst Bezahlung, weil du uns hilfst?
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_05"); //(seufzt) Na, dann werde ich ...
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_06"); //(hastig) Ok, ok! Du bekommst 500 Goldmünzen, wenn du das getan hast. Einverstanden?
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_07"); //Ok.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_08"); //Dann mach dich an die Arbeit!
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_00"); //Co moge zrobic?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_01"); //Powinienes udac sie do wszystkich moich chlopców i sprawdzic, czy mozesz pomóc im w rozwiazywaniu ich problemów, poniewaz nie mamy nic innego do zgloszenia.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_02"); //Pomóz co najmniej osmiu z nich.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_03"); //Co to dla mnie jest?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_04"); //To sie nie moze zdarzyc! Chcesz zaplacic za pomoc?
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_05"); //(sighs) No cóz, wtedy bede....
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_06"); //Przykry, dobry! Otrzymujesz po tym 500 zlotych monet. Uzgodniony?
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung2_15_07"); //Okay.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung2_01_08"); //Nastepnie rozpocznij prace!
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRATENLAGER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRATENLAGER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRATENLAGER, "Bevor die Befreiungsaktion der Piraten starten kann, muss das Lager wieder auf Vordermann gebracht werden. Greg will, dass ich mindestens acht von seinen Leuten helfe.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRATENLAGER, "Zanim rozpocznie sie operacja wyzwolenia piratów, obóz musi zostac przywrócony do formy. Greg chce, abym pomógl co najmniej osmiu jego mieszkancom.");
 };
 
 INSTANCE Info_Mod_Greg_Befreiung3 (C_INFO)
@@ -716,7 +716,7 @@ INSTANCE Info_Mod_Greg_Befreiung3 (C_INFO)
 	information	= Info_Mod_Greg_Befreiung3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Befehl ausgeführt und das Lager wieder auf Trab gebracht.";
+	description	= "Zrealizowalem rozkaz i ponownie ruszylem do obozu.";
 };
 
 FUNC INT Info_Mod_Greg_Befreiung3_Condition()
@@ -729,31 +729,31 @@ FUNC INT Info_Mod_Greg_Befreiung3_Condition()
 
 FUNC VOID Info_Mod_Greg_Befreiung3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_00"); //Ich habe den Befehl ausgeführt und das Lager wieder auf Trab gebracht.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_01"); //Sehr gut, Junge. Dann können wir vielleicht doch noch irgendwann einen Ausbruch wagen.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_02"); //Was ist mit meinem Gold?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_03"); //Ohh, ja ... na gut, hier deine 500 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_00"); //Zrealizowalem rozkaz i ponownie ruszylem do obozu.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_01"); //Bardzo dobry, chlopiec. Wtedy byc moze pewnego dnia bedziemy mogli mimo wszystko wybuchnac.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_02"); //A co z moim zlotem?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_03"); //Oh, tak, tak.... Wszystko w porzadku, oto 500 zlotych monet.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_04"); //(zu sich selbst im Stillen, mürrisch) Ach, ich hätte ihm weniger anbieten sollen.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_05"); //Und wie gehen wir nun vor? Die geschlossenen Palisaden öffnen und den Eindringlingen ordentlich in den Hintern treten?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_06"); //Nu, ähh, ne, mei Jung, so einfach wird das wohl kaum werden.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_07"); //Die Kerle, mit denen wir es hier zu tun haben, sind von einem ganz üblen Schlag.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_08"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_09"); //Nu, ich meine damit die drei untoten Hohepriester vor der Palisade.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_10"); //Die Bastarde stehen um irgend so ein magisches Ding herum, das sie schützt und ihnen unglaubliche magische Macht verleiht.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_11"); //Der Schwarzmagier, der dich hierher brachte, versuchte mittlerweile mehrmals sich wegzuteleportieren, ist aber bei jedem Versuch gescheitert.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_12"); //Er hat zuletzt sogar einen untoten Diener loszuschicken, um Unterstützung anzufordern.
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_13"); //Die drei Mistkerle hatten sich aber im Nu zu ihm hinteleportiert und ihn alle gemacht.
-	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_14"); //Und was können wir dann tun?
-	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_15"); //Ich weiß es noch nicht. Es müsste eine Möglichkeit geben die drei aus der Nähe diese magischen Dings zu bekommen. Eine Ablenkung ...
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_04"); //Mniej bym mu zaproponowal.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_05"); //Jak wiec postepujemy? Otwórz zamkniete palisady i kopac maty najezdzców?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_06"); //Cóz, uh, ne, ne, mei mlode, nie bedzie tak proste.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_07"); //Chlopcy, z którymi mamy tu do czynienia, sa z bardzo zlego strzalu.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_08"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_09"); //Cóz, mówie o trzech nieumarlych wysokich kaplanach przed palisada.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_10"); //Dranie stoi wokól jakiejs magicznej rzeczy, która chroni je i daje im niesamowita magiczna moc.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_11"); //Czarny magik, który cie tutaj przywiózl, próbowal sie kilkakrotnie teleportowac, ale nie powiodla sie kazda próba.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_12"); //Musi nawet wyslac nieumarlego sluge, aby poprosil o pomoc.
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_13"); //Te trzy dranie w mgnieniu oka teleportowaly sie do niego i uczynily go wszystkim.
+	AI_Output(hero, self, "Info_Mod_Greg_Befreiung3_15_14"); //Co mozemy zrobic?
+	AI_Output(self, hero, "Info_Mod_Greg_Befreiung3_01_15"); //Jeszcze nie wiem. Powinien istniec sposób, aby ich trójka byla bliska i osobista tej magicznej rzeczy. Rozproszenie uwagi....
 
 	AI_Teleport	(Mod_939_PIR_Owen_AW,	"WP_BLA_PIR_01");
 	B_StartOtherRoutine	(Mod_939_PIR_Owen_AW, "GREG");
 
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRATENLAGER, LOG_SUCCESS);
-	B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Vor dem Lager befinden sich drei untote Hohepriester um ein magisches Artefakt, das sie schützt und ihnen große Macht verleiht. Sie können jeden Flüchtenden mit Teleportation rasch einholen und  verhindern zudem die Nutzung von Teleportmagie im Lager.");
+	B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Przed obozem znajduje sie trzech nieumarlych wysokich kaplanów wokól magicznego artefaktu, który chroni ich i daje im wielka moc. Szybko doganiaja kazdego uciekiniera za pomoca teleportu, a takze zapobiegaja wykorzystywaniu magii teleportowej w magazynie.");
 
 	AI_StopProcessInfos	(self);
 
@@ -781,7 +781,7 @@ FUNC INT Info_Mod_Greg_ArtefaktAttacke_Condition()
 
 FUNC VOID Info_Mod_Greg_ArtefaktAttacke_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktAttacke_01_00"); //Los Männer, das ist der richtige Augenblick.
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktAttacke_01_00"); //Chodzcie, mezczyzni, to dobry czas.
 
 	AI_StopProcessInfos	(self);
 
@@ -829,18 +829,18 @@ FUNC INT Info_Mod_Greg_ArtefaktTot_Condition()
 
 FUNC VOID Info_Mod_Greg_ArtefaktTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_00"); //So, das wäre erledigt. Den untoten Bastarden hätten wir damit einen empfindlichen Schlag versetzt.
-	AI_Output(hero, self, "Info_Mod_Greg_ArtefaktTot_15_01"); //Ja, aber noch ist die Bedrohung nicht gebannt. Wir müssen unbedingt die Orks im Canyon erledigen, um ...
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_02"); //... und während dessen das Lager unbeschützt zurücklassen? Ne, wir halten hier erst mal hübsch die Stellung und warten ab, was sich weiter entwickelt.
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_03"); //Außerdem müssen wir so, oder so abwarten, ob nicht Owen zurückkommt. Einen guten Mann haben wir bereits verloren.
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_04"); //Solange die Möglichkeit besteht, dass er noch munter ist, werden wir hier auf ihn warten.
-	AI_Output(hero, self, "Info_Mod_Greg_ArtefaktTot_15_05"); //Aber ...
-	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_06"); //Ne, min Jung, wenn du Lust auf weitere Sperenzchen hast, musst du das schon alleine durchziehen. Man sieht sich.
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_00"); //Cóz, tak sie stalo. Zalatwilibysmy nieumarlym bastardom powazny cios.
+	AI_Output(hero, self, "Info_Mod_Greg_ArtefaktTot_15_01"); //Tak, ale zagrozenie nie zostalo jeszcze zazegnane. Musimy zabic orki w kanionie, aby...
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_02"); //... i opuscic obóz bez ochrony w tym czasie? Nie, zajmiemy to stanowisko przez pewien czas i bedziemy czekac, aby zobaczyc, co sie zmienia.
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_03"); //Poza tym bedziemy musieli poczekac i zobaczyc, czy Owen nie wróci. Stracilismy juz dobrego czlowieka.
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_04"); //Tak dlugo, jak on jeszcze zyje, bedziemy na niego czekac.
+	AI_Output(hero, self, "Info_Mod_Greg_ArtefaktTot_15_05"); //Ale....
+	AI_Output(self, hero, "Info_Mod_Greg_ArtefaktTot_01_06"); //Nie, min mlode, jesli chcesz uczyc sie wiecej jezyków, musisz to robic samodzielnie. Do zobaczenia dookola.
 
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BEFREIUNG, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Die Belagerer sind vernichtet. Nun kann ich zu der Bibliothek im Canyon, um nach Hinweisen auf das Schwert zu suchen.");
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Die Piraten lassen sich leider nicht dazu motivieren, mitzukommen. Muss ich mir mal wieder den Weg alleine durchschlagen.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Zabójcy zostaja zniszczeni. Teraz moge udac sie do biblioteki w kanionie, aby szukac wskazówek do miecza.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Niestety, piraci nie beda zmotywowani do przyjscia. Czy musze znów samemu sie przebrnac?");
 
 	AI_StopProcessInfos	(self);
 
@@ -891,20 +891,20 @@ FUNC INT Info_Mod_Greg_Beerdigung_Condition()
 
 FUNC VOID Info_Mod_Greg_Beerdigung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_00"); //(betrübt) Ahh, Junge, du bist auch wieder zurück. Kommst gerade richtig.
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_01"); //Wir haben Alligator Jack mit einigen seiner Sachen beigesetzt und sprechen ein Seemannsgebet für ihn ... ach, tragisch, nach allem, was wir Jungs zusammen durch gestanden haben.
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_02"); //Nun ja, Verluste an Mann und Material wird man als Pirat häufiger erfahren müssen ...
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_03"); //Ich frage mich nur, was mit den Bastarden geschehen ist, die das alles verschuldet haben.
-	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_04"); //Sie haben ihre gerechte Strafe erhalten und werden nie wieder Unfrieden stiften.
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_05"); //(überrascht) Ja?! Sag bloß ... Und du hast bestimmt deinen Anteil daran. Das ist mir doch satte 1000 Goldmünzen wert, hier.
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_00"); //Ach, chlopiec, ty tez wracasz. Jestes na czasie.
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_01"); //Grzebalismy Alligatora Jacka z niektórymi jego dobytkami i mówimy marynarzowi modlitwe za niego..... Bo przeciez my, chlopcy, bylismy razem.
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_02"); //Otóz trzeba bedzie czesciej doswiadczac strat czlowieka i materialu jako pirata......
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_03"); //Zastanawiam sie tylko, co sie stalo z tymi draniemi, którzy to wszystko spowodowali.
+	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_04"); //Otrzymali sprawiedliwa kare i nigdy wiecej nie spowoduja konfliktów.
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_05"); //(zaskoczony) Tak? Nie mów mi.... I jestem pewien, ze masz swój udzial. To jest warte tysiac zlotych monet do mnie, wlasnie tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_06"); //Tjo, so erfährt sein Tod wenigestens Vergeltung ... auch, wenn er nicht rückgängig gemacht werden kann ...
-	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_07"); //Hmm, da wäre ich mir gar nicht so sicher ...
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_08"); //Wie?! Ich glaube wirklich nicht, dass das der richtige Zeitpunkt für Scherze ist.
-	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_09"); //Und Untote können wir auch nicht im Lager brauchen, falls du das gemeint hast.
-	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_10"); //Nein, schau doch ...
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_06"); //Tjo, wiec jego smierc otrzyma przynajmniej zemsty.... nawet jesli nie da sie jej cofnac......
+	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_07"); //Hmm, nie bylbym pewny....
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_08"); //Jak? Naprawde nie sadze, by nadszedl czas na zarty.
+	AI_Output(self, hero, "Info_Mod_Greg_Beerdigung_01_09"); //I w obozie tez nie mozemy nieumarlych miec w obozie.
+	AI_Output(hero, self, "Info_Mod_Greg_Beerdigung_15_10"); //Nie, wygladac......
 
 	B_SetTopicStatus	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_SUCCESS);
 
@@ -936,7 +936,7 @@ FUNC INT Info_Mod_Greg_AJAlive_Condition()
 
 FUNC VOID Info_Mod_Greg_AJAlive_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_AJAlive_01_00"); //Jo, potz tausend, da stich mich doch der Rochen ...
+	AI_Output(self, hero, "Info_Mod_Greg_AJAlive_01_00"); //Yo, potz tysiac, tam promien mi kiwa....
 
 	AI_StopProcessInfos	(self);
 };
@@ -961,7 +961,7 @@ FUNC INT Info_Mod_Greg_AJAlive2_Condition()
 
 FUNC VOID Info_Mod_Greg_AJAlive2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_AJAlive2_01_00"); //Nu, nimm erst mal n ordentlichen Schluck Seemannsgrog. Heute Abend wird gezecht und gefeiert.
+	AI_Output(self, hero, "Info_Mod_Greg_AJAlive2_01_00"); //No cóz, najpierw lyk zalatwiania marynarzy. Dzis wieczorem odbedzie sie uroczystosc.
 
 	AI_StopProcessInfos	(self);
 };
@@ -986,7 +986,7 @@ FUNC INT Info_Mod_Greg_AJAlive3_Condition()
 
 FUNC VOID Info_Mod_Greg_AJAlive3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_AJAlive3_01_00"); //Nu, ...
+	AI_Output(self, hero, "Info_Mod_Greg_AJAlive3_01_00"); //....
 
 	AI_TurnToNpc	(self, Rabbit);
 
@@ -1015,16 +1015,16 @@ FUNC INT Info_Mod_Greg_AJAlive4_Condition()
 
 FUNC VOID Info_Mod_Greg_AJAlive4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_AJAlive4_01_00"); //Junge, du hast ungeheuer viel getan für unser Lager. Mir Gold kann ich das kaum aufwiegen.
-	AI_Output(self, hero, "Info_Mod_Greg_AJAlive4_01_01"); //Daher sollst du mein bestes Stück bekommen: Blackbarts Piratenhut. Trage ihn mit stolz.
+	AI_Output(self, hero, "Info_Mod_Greg_AJAlive4_01_00"); //Chlopak, zrobiles bardzo duzo dla naszego obozu. Zloto prawie nie jest w stanie przewazyc.
+	AI_Output(self, hero, "Info_Mod_Greg_AJAlive4_01_01"); //Dlatego chce, abys mial mój najlepszy kawalek: czapke piratowa Blackbarts. Z nosic go dumnie.
 
-	B_ShowGivenThings	("Blackbarts Piratenhut erhalten");
+	B_ShowGivenThings	("Pobierz paski czarno-biale Piraty Hat");
 
 	CreateInvItems	(hero, ItAr_Piratenhut, 1);
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Greg_AJAlive4_15_02"); //(zu sich selbst) Na toll, ein alter, zerlumpter Hut.
+	AI_Output(hero, self, "Info_Mod_Greg_AJAlive4_15_02"); //Swietny, to stary szarpany kapelusz.
 
 	B_GivePlayerXP	(2000);
 
@@ -1051,27 +1051,27 @@ FUNC INT Info_Mod_Greg_Todesangst_Condition()
 
 FUNC VOID Info_Mod_Greg_Todesangst_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_00"); //(brüllt) Was soll das? Kein Fremder ins Lager, hab ich gesagt.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_01"); //Beruhig dich! Du kennst mich doch. Außerdem bewacht mich Jack.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_02"); //Also gut. Du hast uns schon geholfen. Warum bist du hier?
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_03"); //Zuerst wüsste ich gern, was mir dir los ist.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_04"); //Was mit mir los ist? Ich schwebe in Lebensgefahr! Das ist los!
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_05"); //Hast du dich vergiftet? Ich wüsste einen guten Heiler ...
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_06"); //Neulich kam ein seltsamer alter Mann hier vorbei.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_07"); //Er kann in die Zukunft sehen, sagt er, und hat mir prozeitet, dass ich in Kürze meuchlings ermordet werde.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_08"); //Ha ha ha. Man sagt ja, dass Seeleute abergläubisch sind. Klabautermann und so. Aber so was ... Übrigens heißt das prophezeit.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_09"); //Ist mir grad egal. Jedenfalls glaub ich ihm. Traue schon meinen eigenen Leuten nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_10"); //Das ist schlimm. Vielleicht solltest du in ein Kloster gehen, bis die Gefahr vorüber ist.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_11"); //Hör bloß auf! Da hocken doch die größten Heuchler und Meuchler.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_12"); //Schade. Ich wollte dir eigentlich das Geschäft deines Lebens vorschlagen.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_13"); //(neugierig) Das da wäre? Nur interessehalber ...
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_14"); //Ich kenne eine Gruppe Leute, so 20 Mann, die wollen aufs Festland ...
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_15"); //Bist du von Sinnen? 20 Fremde in meiner Nähe! Da kann ich mich ja gleich ersäufen.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_16"); //... wobei der Preis der Überfahrt keine Rolle spielt. Du könntest verlangen, was du willst.
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_17"); //Hört sich ja gut an. Aber nein, selbst wenn ich die Fahrt überlebe, da sind da noch die Schiffe der Königstreuen, die vor der Küste kreuzen und womöglich noch Orkschiffe. Nein. Völlig ausgeschlossen.
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_18"); //Schade. Dann geh ich mal Bericht erstatten. Pass auf deinen Rücken auf!
-	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_19"); //Wie meinst du das?
-	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_20"); //Nur so.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_00"); //Co robisz? Powiedzialem, ze nikt inny w magazynie nie jest obcy.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_01"); //Spokojny, spokojny! Znasz mnie, czy nie? Poza tym Jack mnie pilnuje.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_02"); //A zatem wszystko w porzadku. Juz nam Pan pomógl. Dlaczego tu jestes?
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_03"); //Najpierw chcialbym wiedziec, co jest z toba zle.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_04"); //Co jest dla mnie najwazniejsze? Jestem w niebezpieczenstwie smierci! To wlasnie sie dzieje!
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_05"); //Czy sam sie zatrules? Znam dobrego uzdrowiciela.....
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_06"); //Pewnego dnia przybyl tu kiedys dziwny staruszek.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_07"); //Potrafi spojrzec w przyszlosc, mówi i powiedzial mi, ze wkrótce zostane zamordowany.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_08"); //ha ha ha ha ha ha ha ha ha. Mówia, ze marynarze sa przesadni. Klabautermann i rzeczy. Ale cos takiego jak.... Nawiasem mówiac, oznacza to proroctwo.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_09"); //Po prostu mnie to nie obchodzi. Przynajmniej wierze mu. Nie ufaj juz moim wlasnym ludziom.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_10"); //To zle. Byc moze powinienes pójsc do klasztoru, dopóki nie skonczy sie niebezpieczenstwo.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_11"); //Zatrzymajmy sie! Sa najwieksi hipokryci i zabójcy.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_12"); //Zbyt zle. Mialem zamiar zaproponowac dzialalnosc biznesowa w Waszym zyciu.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_13"); //Byloby tak? Oprocentowanie....
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_14"); //Znam grupe ludzi, jak 20 mezczyzn, którzy chca pojechac na kontynent....
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_15"); //Czy nie masz zamiaru? 20 nieznajomych obok mnie! Moge sie utopic juz teraz.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_16"); //... cena przejazdu jest nieistotna. Mozesz zapytac o wszystko, co chcesz.
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_17"); //Dobrze mi brzmi. Ale nie, nawet jesli przetrwam podróz, to sa okrety lojalnosci Króla, które przekraczaja wybrzeze i byc moze nadal sa okretami orkiestrowymi. Nie. Calkowicie niemozliwe.
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_18"); //Zbyt zle. Wracam i bede sie raportowal. Uwazaj na plecy!
+	AI_Output(self, hero, "Info_Mod_Greg_Todesangst_01_19"); //Co masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Greg_Todesangst_15_20"); //Bez powodu.
 
 	B_GivePlayerXP	(300);
 
@@ -1079,7 +1079,7 @@ FUNC VOID Info_Mod_Greg_Todesangst_Info()
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_TODESANGST, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_ASS_HEIMWEH, "Unglaublich! Der Kapitän glaubt doch tatsächlich den Sprüchen eines dahergelaufenen Lumpen. Wahrsager, dass ich nicht lache! Das kann eigentlich nur der Eremit vom Tal sein. Was der wohl bezweckt hat? Jedenfalls muss ich Bericht erstatten. Den Rat wird's nicht erfreuen ...");
+	B_LogEntry	(TOPIC_MOD_ASS_HEIMWEH, "Niewiarygodny! Kapitan tak naprawde wierzy w to, ze szmatka, która chodzil. Powiedzcie, ze nie smieje sie! Moze to byc tylko pustelnik od doliny. Zastanawiam sie, po co to bylo. W kazdym razie musze to zglosic. To nie spodoba sie radzie....");
 };
 
 INSTANCE Info_Mod_Greg_Sumpfmensch (C_INFO)
@@ -1090,7 +1090,7 @@ INSTANCE Info_Mod_Greg_Sumpfmensch (C_INFO)
 	information	= Info_Mod_Greg_Sumpfmensch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich wollte dich etwas wegen eines ehemaligen Piraten fragen.";
+	description	= "Chcialem zapytac o bylego pirata.";
 };
 
 FUNC INT Info_Mod_Greg_Sumpfmensch_Condition()
@@ -1103,23 +1103,23 @@ FUNC INT Info_Mod_Greg_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Greg_Sumpfmensch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_00"); //Ich wollte dich etwas wegen eines ehemaligen Piraten fragen.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_01"); //Ehemaliger Pirat? Sowas gibt's doch garnicht! Einmal Pirat, immer Pirat, das ist die Devise!
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_02"); //Es handelt sich dabei um Darrion.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_03"); //WAS?! Dieser Sohn einer räudigen Hündin? Sag bloß der alte Dreckskerl lebt noch?!
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_04"); //Er ist mittlerweile einer Sumpfgemeinschaft beigetreten und hat dort bis vor kurzem ein ruhiges Leben geführt.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_05"); //Zur Ruhe gesetzt hat er sich also? Dass ich das noch erleben darf.
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_06"); //So ruhig hatte er es in letzter Zeit nicht. Er hat sich vor kurzem mit einem Sumpfmonster angelegt und das ist nicht so gut für ihn ausgegangen. So schnell wird er wohl nicht wieder aufwachen.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_07"); //Was sagst du da? Ein Monster, das es mit dem alten Darrion aufnehmen kann? Geht da ein verdammter Drache in dem Sumpf um oder was?
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_08"); //Was auch immer es ist, es ist gefährlich. Und ich glaube, Darrion weiß mehr über das Monster, als er sagen wollte. Kannst du dir einen Reim darauf machen?
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_09"); //Tut mir Leid, min Jung, aber aus seinen Angelegenheiten hab' ich mich immer schön rausgehalten.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_10"); //Darrion und ich waren die beiden Entertruppführer unter unsrem vorherigen Captain. Als er mich zu seinem Nachfolger ernannte, hat Darrion uns nur noch sporadisch aufgesucht.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_11"); //Der hat die meiste Zeit beim alten Turm in der Nähe des Lagers verbracht. Ist nur hin und wieder Mal vorbeigekommen, um etwas zu handeln und hin und wieder die Frischlinge untern Tisch zu saufen!
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_12"); //Sprich doch mal mit Skip, vielleicht hat der 'ne Info für dich.
-	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_13"); //Mach ich. Danke.
-	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_14"); //Kein Ding, min Jung!
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_00"); //Chcialem zapytac o bylego pirata.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_01"); //Dawniej pirat? Nie ma czegos takiego! Kiedys pirat, zawsze piracki, to jest motto!
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_02"); //To Darrion.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_03"); //WAS?! Ten syn sukaniny? Nie mów mi, ze stary bastard wciaz zyje!
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_04"); //W miedzyczasie dolaczyl do spolecznosci bagiennej i do niedawna prowadzil tam spokojne zycie.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_05"); //Wiec odszedl na emeryture? Zebym mógl to zobaczyc.
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_06"); //Ostatnio nie mial tego ciszy. Ostatnio bal sie z bagnistym potworem, a to nie skonczylo mu sie dobrze. Nie obudzi sie tak szybko.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_07"); //Co powiedziales? Potwór, który moze przyjac dawnego Darriona? Czy w tym bagnie znajduje sie smok bogini lub co?
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_08"); //Niezaleznie od tego, co jest niebezpieczne. I mysle, ze Darrion wie wiecej o potworze niz chcial powiedziec. Czy moze pan to zrozumiec?
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_09"); //Przykro mi, min. mlody, ale zawsze pozostawalam poza jego dzialalnoscia.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_10"); //Darrion i ja bylismy dwoma liderami eskadry Enter pod kierownictwem naszego poprzedniego kapitana. Kiedy mnie mianowal swoim nastepca, Darrion przychodzil do nas tylko sporadycznie.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_11"); //Wiekszosc czasu spedzil przy starej wiezy w poblizu obozu. Po prostu zatrzymal sie raz na jakis czas, aby cos zrobic i czasami pic nowych przybyszów pod stolem!
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_12"); //Porozmawiaj z Skipem, który moze miec dla Ciebie jakies informacje.
+	AI_Output(hero, self, "Info_Mod_Greg_Sumpfmensch_15_13"); //Wlasciwie, bede. Dzieki.
+	AI_Output(self, hero, "Info_Mod_Greg_Sumpfmensch_01_14"); //Nie rzecz, min mlode!
 
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Greg hat erzählt, dass Darrion sich viel beim alten Turm in der Nähe des Piratenlagers aufgehalten hat. Skip hat vielleicht noch weitere Informationen für mich.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Greg powiedzial, ze Darrion spedzil duzo czasu na starej wiezy w poblizu obozu piratów. Pomin mi troche wiecej informacji.");
 };
 
 INSTANCE Info_Mod_Greg_Steg (C_INFO)
@@ -1130,7 +1130,7 @@ INSTANCE Info_Mod_Greg_Steg (C_INFO)
 	information	= Info_Mod_Greg_Steg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo führt denn der Steg da drüben hin?";
+	description	= "Gdzie jest ten nabrzeze?";
 };
 
 FUNC INT Info_Mod_Greg_Steg_Condition()
@@ -1143,8 +1143,8 @@ FUNC INT Info_Mod_Greg_Steg_Condition()
 
 FUNC VOID Info_Mod_Greg_Steg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Greg_Steg_15_00"); //Wo führt denn der Steg da drüben hin?
-	AI_Output(self, hero, "Info_Mod_Greg_Steg_01_01"); //In eines unserer Ausweichlager. Falls ein übermächtiger Feind von See her angreift.
+	AI_Output(hero, self, "Info_Mod_Greg_Steg_15_00"); //Gdzie jest ten nabrzeze?
+	AI_Output(self, hero, "Info_Mod_Greg_Steg_01_01"); //Do jednego z naszych obozów zapasowych. Jesli obezwladniajacy przeciwnik atakuje z morza.
 };
 
 INSTANCE Info_Mod_Greg_Pickpocket (C_INFO)

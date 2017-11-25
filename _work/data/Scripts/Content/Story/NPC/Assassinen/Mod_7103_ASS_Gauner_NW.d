@@ -1,7 +1,7 @@
 INSTANCE Mod_7103_ASS_Gauner_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gauner"; 
+	name 		= "rekieter"; 
 	guild 		= GIL_OUT;
 	id 			= 7103;
 	voice 		= 3;

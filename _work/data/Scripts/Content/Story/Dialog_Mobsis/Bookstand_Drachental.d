@@ -17,7 +17,7 @@ FUNC VOID Use_Bookstand_Drachental_01_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Es ist nicht alles Gold, was glänzt."					);
+					Doc_PrintLines	( nDocID,  0, "Nie wszystko jest zlote."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -39,7 +39,7 @@ FUNC VOID Use_Bookstand_Drachental_01_S1()
 
 			Log_CreateTopic	(TOPIC_MOD_JG_VASALLEN, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_JG_VASALLEN, LOG_RUNNING);
-			B_LogEntry	(TOPIC_MOD_JG_VASALLEN, "Was glänzen soll, braucht Licht. Hm.");
+			B_LogEntry	(TOPIC_MOD_JG_VASALLEN, "Co powinno swiecic potrzebuje swiatla. Hm.");
 		};
 
 	};

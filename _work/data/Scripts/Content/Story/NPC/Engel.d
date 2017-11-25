@@ -1,7 +1,7 @@
 instance ENGEL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Engel"; 
+	name 		= "aniol"; 
 	guild 		= GIL_OUT;
 	level		=1;
 	id 			= 4024;

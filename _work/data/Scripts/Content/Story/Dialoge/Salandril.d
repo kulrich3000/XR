@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Salandril_Hi_Condition()
 
 FUNC VOId Info_Mod_Salandril_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Salandril_Hi_13_00"); //Willkommen in meinem Laden, Fremder!
-	AI_Output(self, hero, "Info_Mod_Salandril_Hi_13_01"); //Bei mir kannst du Tränke kaufen.
+	AI_Output(self, hero, "Info_Mod_Salandril_Hi_13_00"); //Witamy w moim sklepie, obcy!
+	AI_Output(self, hero, "Info_Mod_Salandril_Hi_13_01"); //Mozna od mnie kupic eliksiry.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Bei Salandril kann ich Tränke kaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "W Salandril moge kupic eliksiry.");
 };
 
 INSTANCE Info_Mod_Salandril_Alkohol (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Salandril_Alkohol (C_INFO)
 	information	= Info_Mod_Salandril_Alkohol_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll bei dir Alkohol abholen.";
+	description	= "Mam podnosic gorzalke na twoje miejsce.";
 };
 
 FUNC INT Info_Mod_Salandril_Alkohol_Condition()
@@ -45,27 +45,27 @@ FUNC INT Info_Mod_Salandril_Alkohol_Condition()
 
 FUNC VOID Info_Mod_Salandril_Alkohol_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_00"); //Ich soll bei dir Alkohol abholen.
-	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_01"); //Dann bist du also der Bote der Feuermagier?
-	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_02"); //Ja, der bin ich.
-	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_03"); //Hier ist der Alkohol.
+	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_00"); //Mam podnosic gorzalke na twoje miejsce.
+	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_01"); //Wiec jestes wyslannikiem magów ognia?
+	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_02"); //Tak, jestem nim.
+	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_03"); //Oto jest gorzalka.
 
 	B_GiveInvItems	(self, hero, ItMi_Alchemy_Alcohol_01, 4);
 
-	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_04"); //Das macht dann 100 Goldmünzen.
+	AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_13_04"); //To daje 100 zlotych monet.
 
-	B_LogEntry	(TOPIC_MOD_GORAX_ALKOHOL, "Salandril hat mir den Alkohol gegeben.");
+	B_LogEntry	(TOPIC_MOD_GORAX_ALKOHOL, "Salandril dal mi gorzalke.");
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
 		Info_ClearChoices	(Info_Mod_Salandril_Alkohol);
 
-		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Akzeptieren.", Info_Mod_Salandril_Alkohol_Ok_100);
-		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Feilschen.", Info_Mod_Salandril_Alkohol_Feilschen_100);
+		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Zaakceptowac.", Info_Mod_Salandril_Alkohol_Ok_100);
+		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Zegluga.", Info_Mod_Salandril_Alkohol_Feilschen_100);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_04"); //Hier ist dein Gold.
+		AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_15_04"); //Oto Twoje zloto.
 	
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 	};
@@ -73,7 +73,7 @@ FUNC VOID Info_Mod_Salandril_Alkohol_Info()
 
 FUNC VOID Info_Mod_Salandril_Alkohol_Ok_100()
 {
-	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_Ok_100_15_00"); //Hier ist dein Gold.
+	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_Ok_100_15_00"); //Oto Twoje zloto.
 	
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
@@ -82,11 +82,11 @@ FUNC VOID Info_Mod_Salandril_Alkohol_Ok_100()
 
 FUNC VOID Info_Mod_Salandril_Alkohol_Feilschen_100()
 {
-	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_Feilschen_100_15_00"); //Das ist er doch niemals wert.
+	AI_Output(hero, self, "Info_Mod_Salandril_Alkohol_Feilschen_100_15_00"); //On nigdy nie jest tego warty.
 	
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_Feilschen_100_13_01"); //(sauer) Nun gut, 70 Münzen.
+		AI_Output(self, hero, "Info_Mod_Salandril_Alkohol_Feilschen_100_13_01"); //Wszystko po prawej stronie, 70 monet.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 70);
 
@@ -98,11 +98,11 @@ FUNC VOID Info_Mod_Salandril_Alkohol_Feilschen_100()
 	}
 	else
 	{
-		AI_Output(self, hero, "Inf_Mod_Salandril_Alkohol_Feilschen_100_13_02"); //Ich will meine ganzen 100 Goldmünzen.
+		AI_Output(self, hero, "Inf_Mod_Salandril_Alkohol_Feilschen_100_13_02"); //Chce miec wszystkie moje 100 zlotych monet.
 
 		Info_ClearChoices	(Info_Mod_Salandril_Alkohol);
 		
-		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Akzeptieren.", Info_Mod_Salandril_Alkohol_Ok_100);
+		Info_AddChoice	(Info_Mod_Salandril_Alkohol, "Zaakceptowac.", Info_Mod_Salandril_Alkohol_Ok_100);
 	};
 };
 
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_Salandril_SonjaFreier (C_INFO)
 	information	= Info_Mod_Salandril_SonjaFreier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du häufig Kunde bei Sonja gewesen?";
+	description	= "Czy byles czestym klientem Sonji?";
 };
 
 FUNC INT Info_Mod_Salandril_SonjaFreier_Condition()
@@ -128,10 +128,10 @@ FUNC INT Info_Mod_Salandril_SonjaFreier_Condition()
 
 FUNC VOID Info_Mod_Salandril_SonjaFreier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Salandril_SonjaFreier_15_00"); //Bist du häufig Kunde bei Sonja gewesen?
-	AI_Output(self, hero, "Info_Mod_Salandril_SonjaFreier_13_01"); //(verdutzt) Was wird das? Willst du mich verleumden?
-	AI_Output(hero, self, "Info_Mod_Salandril_SonjaFreier_15_02"); //Ein Nein würde mir schon reichen.
-	AI_Output(self, hero, "Info_Mod_Salandril_SonjaFreier_13_03"); //Nein!
+	AI_Output(hero, self, "Info_Mod_Salandril_SonjaFreier_15_00"); //Czy byles czestym klientem Sonji?
+	AI_Output(self, hero, "Info_Mod_Salandril_SonjaFreier_13_01"); //Co robisz? Próbujesz mnie znieslawic?
+	AI_Output(hero, self, "Info_Mod_Salandril_SonjaFreier_15_02"); //Dla mnie nie wystarczy.
+	AI_Output(self, hero, "Info_Mod_Salandril_SonjaFreier_13_03"); //Nie!
 };
 
 INSTANCE Info_Mod_Salandril_Trade (C_INFO)

@@ -8,35 +8,35 @@ FUNC VOID OTTeleportScene()
 
 		CutsceneAn = TRUE;
 
-		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_00"); //Na prima, als Untoter kann ich mich nicht teleportieren.
+		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_00"); //Wspaniale, nie moge sie teleportowac jako nieumarly.
 	};
 
 	if (Mod_OTTeleportScene_Counter == 6)
 	{
 		AI_StandUP	(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_01"); //Ich muss zuerst einen Weg zurück ins Leben finden.
+		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_01"); //Musze najpierw znalezc droge powrotu do zycia.
 	};
 
 	if (Mod_OTTeleportScene_Counter == 12)
 	{
 		AI_StandUP	(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_02"); //Aber wie? Ich habe schon alles mitgenommen, was der Tempel zu bieten hat, bevor ich dem Schläfer gegenübergetreten bin.
+		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_02"); //Ale jak? Wzialem juz wszystko, co swiatynia ma do zaoferowania, zanim spotkalem sypialnia.
 	};
 
 	if (Mod_OTTeleportScene_Counter == 18)
 	{
 		AI_StandUP	(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_03"); //(überlegt) Hmm, vielleicht kann ich durch die Erdbeben an Orte gelangen, die mir vorher verwehrt geblieben sind ...?
+		AI_Output(hero, NULL, "Info_Mod_OTTeleportScene_15_03"); //(omyslilem sie) Hmm, moze trzesienia ziemi zaprowadza mnie w miejsca, których nie udalo mi sie znalezc wczesniej....?
 	};
 
 	if (Mod_OTTeleportScene_Counter == 24)
 	{
 		TooLessMana = 2;
 
-		B_LogEntry	(TOPIC_MOD_ANFANG, "Na prima, als Untoter kann ich mich nicht teleportieren. Ich muss zuerst einen Weg zurück ins Leben finden. Aber wie? Ich habe schon alles mitgenommen, was der Tempel zu bieten hat, bevor ich dem Schläfer gegenübergetreten bin. (überlegt) Hmm, vielleicht kann ich durch die Erdbeben an Orte gelangen, die mir vorher verwehrt geblieben sind...?");
+		B_LogEntry	(TOPIC_MOD_ANFANG, "Wspaniale, nie moge sie teleportowac jako nieumarly. Musze najpierw znalezc droge powrotu do zycia. Ale jak? Wzialem juz wszystko, co swiatynia ma do zaoferowania, zanim spotkalem sypialnia. (omyslilem sie) Hmm, moze trzesienia ziemi zaprowadza mnie w miejsca, których nie udalo mi sie znalezc wczesniej....?");
 
 		CutsceneAn = FALSE;
 	};

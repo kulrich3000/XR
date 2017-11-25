@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Heidrek_Hi (C_INFO)
 	information	= Info_Mod_Heidrek_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Scheint als hättest du 'ne Menge Arbeit!";
+	description	= "Wyglada na to, ze masz wiele do zrobienia.";
 };
 
 FUNC INT Info_Mod_Heidrek_Hi_Condition()
@@ -16,17 +16,17 @@ FUNC INT Info_Mod_Heidrek_Hi_Condition()
 
 FUNC VOID Info_Mod_Heidrek_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_00"); //Scheint als hättest du 'ne Menge Arbeit!
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_01"); //An Arbeit mangelt es hier im Lager wirklich nicht. Das liegt aber auch daran, dass außer Bernd und mir hier niemand was macht.
-	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_02"); //Und woran, glaubst du, liegt das?
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_03"); //Eine Mine wieder herzurichten ist keine Sonntag-Abend-Aufgabe. Wenn wir hier Erz abbauen wollen, müssen wir dafür auch was tun.
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_04"); //Aber die haben ja alle Schiss vor den Monstern in der Mine.
-	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_05"); //Du etwa nicht?
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_06"); //Nein, warum auch, die lassen sich genau so wie alle anderen Monster töten.
-	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_07"); //Warum gehst du dann nicht in die Mine?!
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_08"); //Im Gegensatz zu den meisten hier hab ich außer Muskelkraft auch noch ein anderes Argument: Ich kann schmieden!
-	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_09"); //Wenn ich in der Mine draufgehen würde, wäre das ein zu großer Verlust für das Lager, und das kann ich nicht verantworten.
-	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_10"); //(ironisch) Ah, ich verstehe ...
+	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_00"); //Wyglada na to, ze masz wiele do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_01"); //W obozie nie brakuje pracy. Ale to równiez dlatego, ze nikt nie robi nic oprócz mnie i Bernda.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_02"); //A co Pana zdaniem jest tego powodem?
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_03"); //Modernizacja kopalni nie jest praca nocna w niedziele. Jezeli chcemy tu wydobywac rude, musimy cos z tym zrobic.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_04"); //Wszyscy jednak boja sie potworów w kopalni.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_05"); //Nie?
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_06"); //Nie, dlaczego mieliby dac sie zabic jak kazdy inny potwór.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_07"); //Dlaczego wiec nie pójdziesz do kopalni?
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_08"); //W przeciwienstwie do wiekszosci z panstwa tutaj obecnych, oprócz sily miesni mam jeszcze jeden argument: potrafie kuzc!
+	AI_Output(self, hero, "Info_Mod_Heidrek_Hi_04_09"); //Gdybym mial zginac w mojej kopalni, byloby to zbyt duza strata dla obozu i nie moge na to odpowiedziec.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Hi_15_10"); //(ironiczne) Ah, rozumiem, rozumiem.....
 };
 
 INSTANCE Info_Mod_Heidrek_InGilde (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Heidrek_InGilde (C_INFO)
 	information	= Info_Mod_Heidrek_InGilde_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könntest du mich in deine Schmiedekunst einweihen?";
+	description	= "Czy móglbys nauczyc mnie sztuki kowalstwa?";
 };
 
 FUNC INT Info_Mod_Heidrek_InGilde_Condition()
@@ -51,10 +51,10 @@ FUNC INT Info_Mod_Heidrek_InGilde_Condition()
 
 FUNC VOID Info_Mod_Heidrek_InGilde_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heidrek_InGilde_15_00"); //Könntest du mich in deine Schmiedekunst einweihen?
-	AI_Output(self, hero, "Info_Mod_Heidrek_InGilde_04_01"); //Ich hätte es wissen müssen, schon wieder einer, der zu faul ist sich um die Mine zu kümmern.
-	AI_Output(self, hero, "Info_Mod_Heidrek_InGilde_04_02"); //Das sind keine Voraussetzungen, unter denen ich dich nehmen würde. Du würdest doch sowieso nichts mit deinem Wissen anfangen, also lass mich damit in Ruhe.
-	AI_Output(hero, self, "Info_Mod_Heidrek_InGilde_15_03"); //Was hat das eine mit dem ... ach vergiss es.
+	AI_Output(hero, self, "Info_Mod_Heidrek_InGilde_15_00"); //Czy móglbys nauczyc mnie sztuki kowalstwa?
+	AI_Output(self, hero, "Info_Mod_Heidrek_InGilde_04_01"); //Powinienem wiedziec, ze kolejny jest zbyt leniwy, by zajac sie kopalnia.
+	AI_Output(self, hero, "Info_Mod_Heidrek_InGilde_04_02"); //Nie sa to warunki wstepne, zgodnie z którymi bym pana zabral. Tak czy owak nie uzylibyscie swojej wiedzy, wiec zostawcie mnie samemu.
+	AI_Output(hero, self, "Info_Mod_Heidrek_InGilde_15_03"); //Co to jest z....? Och, zapomnij.
 };
 
 INSTANCE Info_Mod_Heidrek_Trollholz (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Heidrek_Trollholz (C_INFO)
 	information	= Info_Mod_Heidrek_Trollholz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier ein Stück Trollholz.";
+	description	= "Mam tu trollwood.";
 };
 
 FUNC INT Info_Mod_Heidrek_Trollholz_Condition()
@@ -79,14 +79,14 @@ FUNC INT Info_Mod_Heidrek_Trollholz_Condition()
 
 FUNC VOID Info_Mod_Heidrek_Trollholz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz_15_00"); //Ich habe hier ein Stück Trollholz. Du sollst daraus für Granmar eine Keule schnitzen.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz_15_00"); //Mam tu trollwood. Chce, zebys z tego klubu stworzyl dla Granmar.
 
 	B_GiveInvItems	(hero, self, ItMi_Trollholz, 1);
 
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz_04_01"); //In Ordnung, ich brauche dafür aber noch mindestens zwei Erzbrocken.
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz_04_02"); //Frag mal Cathran, er müsste noch ein paar haben, vielleicht gibt er sie dir ja.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz_04_01"); //Wszystko w porzadku, ale potrzebuje co najmniej dwóch kolejnych bryl rudy.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz_04_02"); //Zapytajcie Cathrana, powinien miec jeszcze cos wiecej, moze poda ci to.
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Heidrek braucht noch zwei Erzbrocken für die Keule. Ich sollte mal bei Cathran nachfragen ...");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Heidrek potrzebuje do klubu jeszcze dwóch kawalków rudy. Powinienem skontaktowac sie z Cathranem.....");
 };
 
 INSTANCE Info_Mod_Heidrek_Trollholz2 (C_INFO)
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Heidrek_Trollholz2 (C_INFO)
 	information	= Info_Mod_Heidrek_Trollholz2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die zwei Erzbrocken aufgetrieben.";
+	description	= "Znalazlem dwa kawalki rudy.";
 };
 
 FUNC INT Info_Mod_Heidrek_Trollholz2_Condition()
@@ -111,14 +111,14 @@ FUNC INT Info_Mod_Heidrek_Trollholz2_Condition()
 
 FUNC VOID Info_Mod_Heidrek_Trollholz2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz2_15_00"); //Ich hab die zwei Erzbrocken aufgetrieben.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz2_15_00"); //Znalazlem dwa kawalki rudy.
 
 	B_GiveInvItems	(hero, self, ItMi_Nugget, 2);
 
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz2_04_01"); //Sehr schön, jetzt muss ich die Keule nur noch damit überziehen.
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz2_04_02"); //Komm morgen wieder, dann dürfte sie fertig sein.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz2_04_01"); //Bardzo dobrze, teraz wszystko, co musze zrobic, to umiescic to na klubie.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz2_04_02"); //Wróc jutro, a do tego czasu powinna sie skonczyc.
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Heidrek überzieht die Keule nun mit Erz. Morgen wird sie fertig sein.");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Teraz Heidrek przykrywa klub ruda. Jutro sie skonczy.");
 
 	Mod_KG_Trollholz_Day = Wld_GetDay();
 };
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Heidrek_Trollholz3 (C_INFO)
 	information	= Info_Mod_Heidrek_Trollholz3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist die Keule fertig?";
+	description	= "Czy klub jest gotowy?";
 };
 
 FUNC INT Info_Mod_Heidrek_Trollholz3_Condition()
@@ -145,18 +145,18 @@ FUNC INT Info_Mod_Heidrek_Trollholz3_Condition()
 
 FUNC VOID Info_Mod_Heidrek_Trollholz3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz3_15_00"); //Ist die Keule fertig?
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_01"); //Ja, und ich muss sagen, das Ding macht ganz schön was her.
+	AI_Output(hero, self, "Info_Mod_Heidrek_Trollholz3_15_00"); //Czy klub jest gotowy?
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_01"); //Tak, i musze przyznac, ze to cos na pewno idzie dobrze.
 
 	B_GiveInvItems	(self, hero, ItMw_GranmarKeule, 1);
 
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_02"); //Granmar meinte du bräuchtest auch eine.
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_03"); //Zum Glück war das Holzstück groß genug für zwei Keulen, auch wenn deine Keule etwas kleiner ausgefallen ist.
-	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_04"); //Hier hast du sie.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_02"); //Granmar równiez powiedzial, ze trzeba.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_03"); //Na szczescie kawalek drewna byl wystarczajaco duzy dla dwóch klubów, nawet jesli Twój klub byl troche mniejszy.
+	AI_Output(self, hero, "Info_Mod_Heidrek_Trollholz3_04_04"); //Tutaj je masz.
 
 	B_GiveInvItems	(self, hero, ItMw_ErzKeule, 1);
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Ich habe die Keule von Granmar bekommen und sogar noch eine kleinere für mich.");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Dostalem klub Granmar, a nawet mniejszy dla mnie.");
 };
 
 INSTANCE Info_Mod_Heidrek_Pickpocket (C_INFO)

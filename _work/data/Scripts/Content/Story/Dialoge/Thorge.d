@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Thorge_KommMit (C_INFO)
 	information	= Info_Mod_Thorge_KommMit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Komm mit.";
+	description	= "Przyjedz ze mna.";
 };
 
 FUNC INT Info_Mod_Thorge_KommMit_Condition()
@@ -20,8 +20,8 @@ FUNC INT Info_Mod_Thorge_KommMit_Condition()
 
 FUNC VOID Info_Mod_Thorge_KommMit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thorge_KommMit_15_00"); //Komm mit.
-	AI_Output(self, hero, "Info_Mod_Thorge_KommMit_13_01"); //In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Thorge_KommMit_15_00"); //Przyjedz ze mna.
+	AI_Output(self, hero, "Info_Mod_Thorge_KommMit_13_01"); //Wszystkie sluszne, wszystkie sluszne.
 
 	AI_StopProcessInfos	(self);
 

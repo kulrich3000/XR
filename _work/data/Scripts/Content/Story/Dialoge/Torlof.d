@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Torlof_Hi_Condition()
 FUNC VOID Info_Mod_Torlof_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Torlof_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Torlof_Hi_01_01"); //Du lebst ja noch.
-	AI_Output(self, hero, "Info_Mod_Torlof_Hi_01_02"); //Hätte nicht gedacht, dass ich dich nochmal wieder sehe.
+	AI_Output(self, hero, "Info_Mod_Torlof_Hi_01_01"); //Ty nadal zyjesz.
+	AI_Output(self, hero, "Info_Mod_Torlof_Hi_01_02"); //Nie sadze, ze znów cie zobaczylabym.
 };
 
 INSTANCE Info_Mod_Torlof_Auftrag (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Torlof_Auftrag (C_INFO)
 	information	= Info_Mod_Torlof_Auftrag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lares schickt mich.";
+	description	= "Lares wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Torlof_Auftrag_Condition()
@@ -44,18 +44,18 @@ FUNC INT Info_Mod_Torlof_Auftrag_Condition()
 
 FUNC VOID Info_Mod_Torlof_Auftrag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Auftrag_15_00"); //Lares schickt mir. Du sollst mir einen Auftrag geben.
-	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_01"); //Ok. Wie du sicher weißt, haben die Paladine unseren Anführer Lee damals verraten. Deshalb wurde er in die Barriere geworfen.
-	AI_OUtput(self, hero, "Info_Mod_Torlof_Auftrag_01_02"); //Es ist also kein Wunder, dass wir uns gegen die Paladine auflehnen.
-	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_03"); //Wir bräuchten etwas mit dem wir sie unter Druck setzen können. Doch uns kennen die Paladine, aber du bist neu hier.
-	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_04"); //Geh in die Stadt und finde heraus was wir gegen die Paladine machen könnten.
-	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_05"); //Du musst etwas beschaffen oder herausfinden, womit wir die Paladine in der Stadt unter Druck setzen können.
-	AI_Output(hero, self, "Info_Mod_Torlof_Auftrag_15_06"); //Und wie soll ich dazu vorgehen?
-	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_07"); //Dir wird schon etwas einfallen. Wenn du nicht weiter weißt, dann frag Gorn, den du ja noch aus den Zeiten der Kolonie kennst. Er hat seine Kontakte in der Stadt.
+	AI_Output(hero, self, "Info_Mod_Torlof_Auftrag_15_00"); //Lares wysyla mnie. Chce, aby dal mi pan prace.
+	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_01"); //Okay. Jak wiecie, Paladynowie zdradzili wówczas naszego lidera Lee. Dlatego tez zostal wrzucony do zapory.
+	AI_OUtput(self, hero, "Info_Mod_Torlof_Auftrag_01_02"); //Nic wiec dziwnego, ze buntujemy sie przeciwko paladynom.
+	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_03"); //Potrzebujemy czegos, co mozemy wykorzystac, aby wywrzec na nich presje. Ale Paladynowie znaja nas, ale tu jestes nowy.
+	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_04"); //Wejdz do miasta i dowiedz sie, co mozemy zrobic z paladynami.
+	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_05"); //Musisz cos zdobyc lub dowiedziec sie, jak mozemy wycisnac paladynów w miescie.
+	AI_Output(hero, self, "Info_Mod_Torlof_Auftrag_15_06"); //A jak mam postepowac?
+	AI_Output(self, hero, "Info_Mod_Torlof_Auftrag_01_07"); //Pomysl o czyms. Jesli nie wiesz co robic, zapytaj Gorna, kogo pamietasz z czasów kolonii. Ma kontakty w miescie.
 
 	Log_CreateTopic	(TOPIC_MOD_TORLOFSPIONAGE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOFSPIONAGE, "Als Beweis meiner Loyalität zu Lee soll ich die Paladine ausspionieren.", "Torlof will, dass ich etwas herausfinde oder beschaffe, dass gegen die Paladine verwendet werden kann. Vielleicht kann Gorn mir ein paar Tipps geben.");
+	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOFSPIONAGE, "Dowodem mojej lojalnosci wobec Lee jest fakt, ze jestem tutaj, zeby szpiegowac na Paladynach.", "Torlof chce, abym dowiedzial sie lub nabyl cos, co mozna wykorzystac przeciwko paladynom. Moze Gorn moze da mi kilka wskazówek.");
 };
 
 INSTANCE Info_Mod_Torlof_Kristall (C_INFO)
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Torlof_Kristall (C_INFO)
 	information	= Info_Mod_Torlof_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier den Kristall der Paladine.";
+	description	= "Mam tu krysztal Paladyn.";
 };
 
 FUNC INT Info_Mod_Torlof_Kristall_Condition()
@@ -82,14 +82,14 @@ FUNC INT Info_Mod_Torlof_Kristall_Condition()
 
 FUNC VOID Info_Mod_Torlof_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Kristall_15_00"); //Ich hab hier den Kristall der Paladine.
+	AI_Output(hero, self, "Info_Mod_Torlof_Kristall_15_00"); //Mam tu krysztal Paladyn.
 
 	B_GiveInvItems	(hero, self, Mod_PaladinKristall, 1);
 	
-	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_01"); //Ein magischer Kristall. Darüber muss ich mich erst einmal mit Lares beraten. Komm in ein paar Stunden wieder.
+	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_01"); //Magiczny krysztal. Najpierw musze to omówic z Laresem. Wróc za kilka godzin.
 
 
-	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "Von Gorn konnte ich erfahren, dass Paladin Lothar im oberen Viertel eine schwäche für Alkohol und eine große Klappe hat.");
+	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "Dowiedzialem sie od Gorna, ze Paladin Lothar ma slabosc na alkohol i duze usta w górnej cwiartce.");
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_SUCCESS);
 	
 	B_GivePlayerXP	(400);
@@ -118,22 +118,22 @@ FUNC INT Info_Mod_Torlof_KristallEnd_Condition()
 
 FUNC VOID Info_Mod_Torlof_KristallEnd_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_00"); //Da bist du ja. Nun, wirklich etwas anfangen können wir mit dem Kristall bei den Paladinen nicht.
-	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_01"); //Wir könnten ihn höchstens gegen ein paar Münzen zurückverkaufen. Aber da haben wir einen strategisch besseren Einfall.
-	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_02"); //Wenn du tatsächlich bei uns mitmachen willst, musst du noch den Kristall samt diesem Schreiben den Wassermagiern bei ihrer Ausgrabungsstätte bringen.
+	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_00"); //Och, tam jestescie. Cóz, naprawde nie mozemy nic zrobic z krysztalem w paladynach.
+	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_01"); //Moglibysmy ja sprzedac za najwyzej kilka monet. Mamy jednak strategicznie lepszy pomysl.
+	AI_Output(self, hero, "Info_Mod_Torlof_KristallEnd_01_02"); //Jesli naprawde chcesz dolaczyc do nas, musisz przyniesc krysztal i ten list do magów wodnych w miejscu ich wykopalisk.
 
 	CreateInvItems	(hero, Mod_PaladinKristall, 1);
 	CreateInvItems	(hero, ItWr_TorlofForSaturas, 1);
 
 	Npc_RemoveInvItems	(self, Mod_PaladinKristall, 1);
 
-	B_ShowGivenThings	("Kristall des Feuers und Nachricht erhalten");
+	B_ShowGivenThings	("Krysztal pozaru i odebranych wiadomosci");
 
-	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_03"); //Danach kommst du mit dem Entgelt zu uns zurück.
+	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_03"); //Nastepnie wracaja Panstwo do nas z oplata.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_KRISTALL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_KRISTALL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Torlof hat mir aufgetragen den Kristall des Feuers zusammen mit einem Schreiben zu den Wassermagiern zu bringen. Die Bezahlung soll ich dann zu ihm bringen.");
+	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Torlof kazal mi przyniesc krysztal ognia wraz z listem do magów wodnych. Powinienem go wyplacic.");
 	
 	Wld_InsertNpc	(Mod_7214_OUT_Halunke_NW, "PORTAL");
 };
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Torlof_KristallEntgelt (C_INFO)
 	information	= Info_Mod_Torlof_KristallEntgelt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Kristall übergeben.";
+	description	= "Przekazalem krysztal.";
 };
 
 FUNC INT Info_Mod_Torlof_KristallEntgelt_Condition()
@@ -161,20 +161,20 @@ FUNC INT Info_Mod_Torlof_KristallEntgelt_Condition()
 
 FUNC VOID Info_Mod_Torlof_KristallEntgelt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_KristallEntgelt_15_00"); //Ich habe den Kristall übergeben und dafür 1000 Goldstücke und dieses Paket erhalten.
+	AI_Output(hero, self, "Info_Mod_Torlof_KristallEntgelt_15_00"); //Przekazalem krysztal i otrzymalem 1000 sztuk zlota i to opakowanie.
 
-	B_ShowGivenThings	("1000 Gold und Paket gegeben");
+	B_ShowGivenThings	("1000 Zloto i dostarczony pakiet");
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 1000);
 	Npc_RemoveInvItems	(hero, ItMi_MagicPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_KristallEntgelt_01_01"); //Ausgezeichnet. Nun steht deiner Aufnahme nichts mehr im Weg. Geh am besten gleich zu Lares.
+	AI_Output(self, hero, "Info_Mod_Torlof_KristallEntgelt_01_01"); //Doskonaly. Teraz nic nie stoi na przeszkodzie waszemu nagrywaniu. Dlaczego nie idziesz prosto do Lares.
 
 	B_SetTopicStatus	(TOPIC_MOD_NL_KRISTALL, LOG_SUCCESS);
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_SÖLDNER, "Torlof meint, dass ich jetzt Söldner werden kann.");
+	B_LogEntry	(TOPIC_MOD_SÖLDNER, "Torlof uwaza, ze teraz moge byc najemnikiem.");
 
 	B_Göttergefallen(2, 3);
 };
@@ -187,7 +187,7 @@ INSTANCE Info_Mod_Torlof_NeueAufgabe (C_INFO)
 	information	= Info_Mod_Torlof_NeueAufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du eine andere Aufgabe für mich?";
+	description	= "Masz dla mnie inna prace?";
 };
 
 FUNC INT Info_Mod_Torlof_NeueAufgabe_Condition()
@@ -204,10 +204,10 @@ FUNC INT Info_Mod_Torlof_NeueAufgabe_Condition()
 
 FUNC VOID Info_Mod_Torlof_NeueAufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_NeueAufgabe_15_00"); //Hast du eine andere Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Torlof_NeueAufgabe_01_01"); //Du hast deine erste Prüfung nicht bestanden. Aber wir wollen ja nicht so sein, du bekommst eine zweite Chance.
-	AI_Output(hero, self, "Info_Mod_Torlof_NeueAufgabe_15_02"); //Was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Torlof_NeueAufgabe_01_03"); //Bring uns einen weiteren Söldneranwärter.
+	AI_Output(hero, self, "Info_Mod_Torlof_NeueAufgabe_15_00"); //Masz dla mnie inna prace?
+	AI_Output(self, hero, "Info_Mod_Torlof_NeueAufgabe_01_01"); //Zwyciezyles pierwszy test. Ale nie chcemy byc tacy, dostajesz druga szanse.
+	AI_Output(hero, self, "Info_Mod_Torlof_NeueAufgabe_15_02"); //Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Torlof_NeueAufgabe_01_03"); //Przynies nam innego najemnika.
 
 	Wld_InsertNpc	(Mod_200_NONE_Alvares_NW,	"NW_CITY_ENTRANCE_01");
 
@@ -216,7 +216,7 @@ FUNC VOID Info_Mod_Torlof_NeueAufgabe_Info()
 	Log_CreateTopic	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, LOG_RUNNING);
 	
-	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Ich soll einen neuen Söldneranwärter zu Torlof bringen.", "Torlof hat mir aufgetragen einen Söldneranwärter zu finden. Vielleicht kann mir Gorn einen Tipp geben.");
+	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Mam zabrac do Torlof nowego najemnika.", "Torlof kazal mi znalezc najemnika. Moze moze Gorn da mi wskazówke.");
 };
 
 INSTANCE Info_Mod_Torlof_Alvares (C_INFO)
@@ -227,7 +227,7 @@ INSTANCE Info_Mod_Torlof_Alvares (C_INFO)
 	information	= Info_Mod_Torlof_Alvares_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab einen neuen Anwärter für euch.";
+	description	= "Mam dla pana nowego kandydata.";
 };
 
 FUNC INT Info_Mod_Torlof_Alvares_Condition()
@@ -240,12 +240,12 @@ FUNC INT Info_Mod_Torlof_Alvares_Condition()
 
 FUNC VOID Info_Mod_Torlof_Alvares_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Alvares_15_00"); //Ich hab einen neuen Anwärter für euch.
-	AI_Output(self, hero, "Info_Mod_Torlof_Alvares_01_01"); //Wen?
-	AI_Output(hero, self, "Info_Mod_Torlof_Alvares_15_02"); //Alvares. Er hat sich mit einer Miliz geprügelt und ich musste ihn aus dem Gefängnis befreien.
-	AI_Output(self, hero, "Info_Mod_Torlof_Alvares_01_03"); //Sehr gut. Du hast die Prüfung bestanden. Damit kannst du uns nun beitreten.
+	AI_Output(hero, self, "Info_Mod_Torlof_Alvares_15_00"); //Mam dla pana nowego kandydata.
+	AI_Output(self, hero, "Info_Mod_Torlof_Alvares_01_01"); //Kto?
+	AI_Output(hero, self, "Info_Mod_Torlof_Alvares_15_02"); //Alvares. Walczyl z milicja i musialem go wyprowadzic z wiezienia.
+	AI_Output(self, hero, "Info_Mod_Torlof_Alvares_01_03"); //Bardzo dobry. Zdales test. Teraz mozesz do nas dolaczyc.
 
-	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Ich hab die Prüfung bestanden", "Ich kann jetzt Söldner werden.");
+	B_LogEntry_More	(TOPIC_MOD_SÖLDNER, TOPIC_MOD_TORLOF_NEUERANWÄRTER, "Zdalem egzamin.", "Moge teraz zostac najemnikiem.");
 	B_SetTopicStatus	(TOPIC_MOD_TORLOF_NEUERANWÄRTER, LOG_SUCCESS);
 
 	B_GivePlayerXP	(300);
@@ -275,28 +275,28 @@ FUNC INT Info_Mod_Torlof_Hexen_Condition()
 
 FUNC VOID Info_Mod_Torlof_Hexen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_00"); //Hallo Kleine. Wollen wir nicht etwas Spaß miteinander haben? So wie du aussiehst willst du es doch auch.
-	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_15_01"); //Gerne.
-	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_02"); //Was, wirklich ...?! Wollen wir dann etwas aufs Zimmer gehen.
-	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_15_03"); //Sicher. Da gibt es nur ein Problem ...
-	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_04"); //Ach, zier dich nicht so. Welches Problem?
+	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_00"); //Wi, kiddo. Chcesz sie bawic? Chcesz wygladac tak jak Ty.
+	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_15_01"); //Wyraznie.
+	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_02"); //Co tak naprawde! Idzmy do pokoju.
+	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_15_03"); //Pewne. Jest tylko jeden problem.....
+	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_01_04"); //Och, nie badz niesmialy. Jaki problem?
 
 	Mod_WM_Beeinflussend = 0;
 
 	Info_ClearChoices	(Info_Mod_Torlof_Hexen);
 
-	Info_AddChoice	(Info_Mod_Torlof_Hexen, "Du stehst in Flammen. Schnell.", Info_Mod_Torlof_Hexen_B);
-	Info_AddChoice	(Info_Mod_Torlof_Hexen, "Auf dem Hof stehen lauter Goblins herum, die mich bedrohen.", Info_Mod_Torlof_Hexen_A);
+	Info_AddChoice	(Info_Mod_Torlof_Hexen, "Ty ploniesz. Szybko.", Info_Mod_Torlof_Hexen_B);
+	Info_AddChoice	(Info_Mod_Torlof_Hexen, "Na podwórzu stoi wiele goblinów, które groza mi.", Info_Mod_Torlof_Hexen_A);
 };
 
 FUNC VOID Info_Mod_Torlof_Hexen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_B_15_00"); //Du stehst in Flammen. Schnell, entledige dich deiner Kleidung und renn auf dem Hof herum, um die Flammen zu löschen.
-	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_B_01_01"); //Was?! Wuahh, tatsächlich, diese Hitze diese Schmerzen.
+	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_B_15_00"); //Ty ploniesz. Szybko pozbyc sie ubran i biec wokól podwórka, aby ugasic plomienie.
+	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_B_01_01"); //Co? Wuahh, faktycznie, ogrzewaja ten ból.
 
 	AI_UnequipArmor	(self);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "So, nachdem ich Torlof dem Wahnsinn preisgab, kann ich Elena davon berichten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Tak wiec po tym, jak obróce Torlof w szalenstwo, moge powiedziec Elenie o tym.");
 
 	Info_ClearChoices	(Info_Mod_Torlof_Hexen);
 
@@ -307,10 +307,10 @@ FUNC VOID Info_Mod_Torlof_Hexen_B()
 
 FUNC VOID Info_Mod_Torlof_Hexen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_A_15_00"); //Auf dem Hof stehen lauter Goblins herum, die mich bedrohen. Erledige sie, dann können wir zur Sache kommen.
-	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_A_01_01"); //Was Goblins?! Ja, tatsächlich, jetzt sehe ich sie auch.
+	AI_Output(hero, self, "Info_Mod_Torlof_Hexen_A_15_00"); //Na podwórzu stoi wiele goblinów, które groza mi. Uczynimy to, a nastepnie dojdziemy do celu.
+	AI_Output(self, hero, "Info_Mod_Torlof_Hexen_A_01_01"); //Jakie gobliny? Tak, wlasciwie, teraz widze ja równiez.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "So, nachdem ich Torlof dem Wahnsinn preisgab, kann ich Elena davon berichten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Tak wiec po tym, jak obróce Torlof w szalenstwo, moge powiedziec Elenie o tym.");
 
 	Info_ClearChoices	(Info_Mod_Torlof_Hexen);
 
@@ -327,7 +327,7 @@ INSTANCE Info_Mod_Torlof_Grog (C_INFO)
 	information	= Info_Mod_Torlof_Grog_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier was für dich.";
+	description	= "Dostalem cos dla Ciebie.";
 };
 
 FUNC INT Info_Mod_Torlof_Grog_Condition()
@@ -342,14 +342,14 @@ FUNC INT Info_Mod_Torlof_Grog_Condition()
 
 FUNC VOID Info_Mod_Torlof_Grog_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Grog_15_00"); //Ich hab hier was für dich.
-	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_01"); //Was denn?
-	AI_Output(hero, self, "Info_Mod_Torlof_Grog_15_02"); //Ein Paket voller Grog.
+	AI_Output(hero, self, "Info_Mod_Torlof_Grog_15_00"); //Dostalem cos dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_01"); //Co masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Torlof_Grog_15_02"); //Pakiet grog.
 
 	B_GiveInvItems	(hero, self, Mod_GrogPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_03"); //Wurde aber auch langsam Zeit. Endlich haben wir hier mal wieder was ordentliches zu trinken.
-	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_04"); //Hier ist dein Gold.
+	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_03"); //Najwyzszy czas. Wreszcie mamy tu znowu cos do picia.
+	AI_Output(self, hero, "Info_Mod_Torlof_Grog_01_04"); //Oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 };
@@ -362,7 +362,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Harad schickt mich, um dir ein Angebot zu machen.";
+	description	= "Harad przyslal mi oferte.";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling_Condition()
@@ -375,9 +375,9 @@ FUNC INT Info_Mod_Torlof_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling_15_00"); //Harad schickt mich, um dir ein Angebot zu machen.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling_01_01"); //Harad? Wir haben doch Bennet. Der stellt alles her, was wir brauchen.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling_01_02"); //Außerdem soll Harad ein ziemliches Arschloch sein. Wieso sollte uns sein Angebot interessieren?
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling_15_00"); //Harad przyslal mi oferte.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling_01_01"); //Harad? Mamy Bennet. Robi wszystko, czego potrzebujemy.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling_01_02"); //Poza tym Harad's ma byc calkiem dziura. Dlaczego powinnismy dbac o jego oferte?
 };
 
 INSTANCE Info_Mod_Torlof_HaradLehrling2 (C_INFO)
@@ -388,7 +388,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling2 (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schau dir dieses Schwert an.";
+	description	= "Spójrz na ten miecz.";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling2_Condition()
@@ -402,7 +402,7 @@ FUNC INT Info_Mod_Torlof_HaradLehrling2_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling2_15_00"); //Schau dir dieses Schwert an.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling2_15_00"); //Spójrz na ten miecz.
 
 	B_GiveInvItems	(hero, self, ItMw_HaradSchwert, 1);
 
@@ -414,9 +414,9 @@ FUNC VOID Info_Mod_Torlof_HaradLehrling2_Info()
 
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_01"); //Wahrlich nicht schlecht. Aber ich bin kein Experte für Schwerter und kann nicht beurteilen, ob es sich besser macht als die Schwerter von Bennet.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_02"); //Wie wär's, wenn du dich mit Hock messen würdest?
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_03"); //Der dürfte etwa deine Kragenweite haben, und ich könnte mir anschauen, wie sich die Waffe im Kampf verhält.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_01"); //Naprawde nie jest zle. Nie jestem jednak ekspertem w zakresie mieczy i nie moge ocenic, czy jest to lepsze niz miecze Benneta.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_02"); //Jak konkurowac z Hockiem?
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling2_01_03"); //Powinien byc o twoim rozmiarze kolnierza, a ja moglem zobaczyc jak bron zachowuje sie w walce.
 };
 
 INSTANCE Info_Mod_Torlof_HaradLehrling3 (C_INFO)
@@ -427,7 +427,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling3 (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Klar doch.";
+	description	= "Oczywiscie tak sie dzieje.";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling3_Condition()
@@ -440,22 +440,22 @@ FUNC INT Info_Mod_Torlof_HaradLehrling3_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling3_15_00"); //Klar doch.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling3_15_00"); //Oczywiscie tak sie dzieje.
 
 	AI_TurnToNpc	(self, Mod_1200_SLD_Soeldner_NW);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_01"); //(ruft) Hock, komm mal her!
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_01"); //Hock, tu przyjdz!
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_02"); //Ihr zwei Hübschen werdet jetzt einen Übungskampf austragen.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_03"); //Nimm das Schwert und zeig, was du drauf hast.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_02"); //Dwie piekne dziewczyny sa gonna maja teraz walke treningowa.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_03"); //Wez miecz i pokaz mi co dostales.
 
 	B_GiveInvItems	(self, hero, ItMw_HaradSchwert, 1);
 
 	EquipWeapon (hero, ItMw_HaradSchwert);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_04"); //3, 2, 1, los!
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling3_01_04"); //3,2,2,1, idz!
 
 	AI_StopProcessInfos	(self);
 
@@ -489,17 +489,17 @@ FUNC VOID Info_Mod_Torlof_HaradLehrling4_Info()
 {
 	if (Mod_HaradLehrling_Kampf == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_00"); //Sieht passabel aus. Leicht, schnell und gut ausbalanciert.
-		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_01"); //Sag Harad, dass wir bereit wären, eine Probelieferung von ihm entgegen zu nehmen.
+		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_00"); //Wyglada rozsadnie. Lekkie, szybkie i dobrze wywazone.
+		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_01"); //Powiedz Haradowi, ze chcielibysmy odebrac od niego próbke dostawy.
 
-		B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_ONE, "Ich konnte Torlof davon überzeugen, eine Lieferung bei Harad zu bestellen. Ich sollte die Nachricht schnellstmöglich überbringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_ONE, "Przekonalem Torlof do zamówienia przesylki z Haradu. Powinienem jak najszybciej przekazac te wiadomosc.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_02"); //(lacht ausgiebig) Meinst du, ich sehe nicht, wenn du die Waffe wechselst?
-		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_03"); //Das war ja mal die schlechteste Verarsche, die mir je untergekommen ist!
-		AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling4_15_04"); //Wollt ihr die Waffen trotzdem bei Harad kaufen?
-		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_05"); //Du hast Nerven! Scher dich zurück zu ihm!
+		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_02"); //(smiech ekstensywnie) Czy myslisz, ze nie widzisz kiedy zmieniasz pistolet?
+		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_03"); //To byl najgorszy prank, jaki kiedykolwiek widzialem!
+		AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling4_15_04"); //Czy nadal chcesz kupowac bron od Harada?
+		AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling4_01_05"); //Otrzymales duzo nerwów! Wróc do niego!
 	};
 
 	B_StartOtherRoutine	(Mod_1200_SLD_Soeldner_NW, "START");
@@ -515,7 +515,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling5 (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Eine Waffenlieferung von Harad.";
+	description	= "Dostawa broni od Harada.";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling5_Condition()
@@ -528,25 +528,25 @@ FUNC INT Info_Mod_Torlof_HaradLehrling5_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_00"); //Eine Waffenlieferung von Harad.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_01"); //Das wurde aber auch Zeit. Wir haben schon seit Tagen darauf gewartet.
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_02"); //Die Paladine waren nicht damit einverstanden, dass Harad für euch arbeitet.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_03"); //(lacht) Das verstehe ich gut. Aber das Schlitzohr hat's dann ja doch geschafft.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_04"); //Dann lass mal sehen.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_00"); //Dostawa broni od Harada.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_01"); //Najwyzszy czas. Czekamy na to od kilku dni.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_02"); //Paladynowie nie aprobowali Harada pracujacego dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_03"); //Rozumiem to bardzo dobrze. Ale jednak ta mdla to zrobila.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_04"); //Przyjrzyjmy sie.
 
 	B_GiveInvItems	(hero, self, ItMi_Waffenbuendel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_05"); //(zählt murmelnd) 5, 10, 15, 17... Bloß 17 Schwerter? Wir hatten 20 bestellt.
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_06"); //Bist du dir sicher?
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_07"); //Ja. 20 Schwerter zu je 100 Goldmünzen. Ganz klare Rechnung.
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_08"); //Dann gibst du mir jetzt das Gold, und ich sag Harad, dass er noch drei Schwerter schmieden soll.
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_09"); //So läuft das nicht. Wir bezahlen nur das, was wir auch bekommen.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_05"); //(zliczenia zmiekczajace) 5,10,15,15,17..... Tylko 17 mieczy? Zamówilismy 20.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_06"); //Czy jestes pewien tego?
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_07"); //Tak. 20 mieczy i 100 zlotych monet. Jasny rachunek.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling5_15_08"); //Wtedy dasz mi zloto, a ja powiem Haradowi, ze zrobi jeszcze trzy miecze.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_09"); //Nie tak to dziala. Placimy tylko za to, co otrzymujemy.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1700);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_10"); //Wenn Harad mehr will, soll er schnell liefern, sonst überlegen wir es uns vielleicht anders.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling5_01_10"); //Jesli Harad chce wiecej, pozwól mu szybko dostarczyc, inaczej moglibysmy zmienic nasze zdanie.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_TWO, "Torlof behauptet, dass er drei Schwerter zu wenig von Harad erhalten hat, und hat mir deshalb auch nicht so viel Gold gegeben, wie Harad wollte.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_TWO, "Torlof twierdzi, ze nie dostal od Harada wystarczajaco duzo mieczy, wiec nie dal mi tyle zlota, ile chcial Harad.");
 };
 
 INSTANCE Info_Mod_Torlof_HaradLehrling6 (C_INFO)
@@ -557,7 +557,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling6 (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind die fehlenden Schwerter.";
+	description	= "Oto brakujace miecze.";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling6_Condition()
@@ -575,7 +575,7 @@ FUNC INT Info_Mod_Torlof_HaradLehrling6_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling6_15_00"); //Hier sind die fehlenden Schwerter.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling6_15_00"); //Oto brakujace miecze.
 
 	if (Npc_HasItems(hero, ItMw_1H_Common_01) >= 3) {
 		B_GiveInvItems	(hero, self, ItMw_1H_Common_01, 3);
@@ -587,11 +587,11 @@ FUNC VOID Info_Mod_Torlof_HaradLehrling6_Info()
 		B_GiveInvItems	(hero, self, ItMw_1H_Common_01_BonusMeisterschmied, 3);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling6_01_01"); //Du und dein Meister, ihr braucht immer ziemlich lang. Aber über die Qualität kann man sich nicht beschweren.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling6_01_01"); //Wy i wasz mistrz zawsze trwacie dlugo. Nie mozna jednak narzekac na jakosc.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling6_01_02"); //Ich hoffe nur, dass ihr euch beim nächsten Auftrag mehr beeilt.
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling6_01_02"); //Mam nadzieje, ze spieszysz sie z nastepnym zadaniem.
 
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_TWO, LOG_SUCCESS);
 
@@ -606,7 +606,7 @@ INSTANCE Info_Mod_Torlof_HaradLehrling7 (C_INFO)
 	information	= Info_Mod_Torlof_HaradLehrling7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich euch meine Dienste als Schmied anbieten?";
+	description	= "Czy moge zaoferowac Ci moje uslugi kowala?";
 };
 
 FUNC INT Info_Mod_Torlof_HaradLehrling7_Condition()
@@ -619,8 +619,8 @@ FUNC INT Info_Mod_Torlof_HaradLehrling7_Condition()
 
 FUNC VOID Info_Mod_Torlof_HaradLehrling7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling7_15_00"); //Kann ich euch meine Dienste als Schmied anbieten?
-	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling7_01_01"); //Nein, danke. Nach den Schwierigkeiten, die wir mit Harad hatten, bleiben wir jetzt doch lieber bei Bennet. Tut mir Leid.
+	AI_Output(hero, self, "Info_Mod_Torlof_HaradLehrling7_15_00"); //Czy moge zaoferowac Ci moje uslugi kowala?
+	AI_Output(self, hero, "Info_Mod_Torlof_HaradLehrling7_01_01"); //Nie, dziekuje. Po trudnosciach z Haradem, wolimy pozostac z Bennetem. Przepraszam za to.
 };
 
 INSTANCE Info_Mod_Torlof_Lehrer (C_INFO)
@@ -631,7 +631,7 @@ INSTANCE Info_Mod_Torlof_Lehrer (C_INFO)
 	information	= Info_Mod_Torlof_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Torlof_Lehrer_Condition()
@@ -650,10 +650,10 @@ FUNC VOID Info_Mod_Torlof_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Torlof_Lehrer_01_01"); //Ich kann dir helfen stärker zu werden.
+	AI_Output(self, hero, "Info_Mod_Torlof_Lehrer_01_01"); //Moge pomóc wam wzmocnic sie.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Torlof kann mir helfen Stärker zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Torlof moze mi pomóc wzmocnic sie.");
 };
 
 INSTANCE Info_Mod_Torlof_Lernen (C_INFO)
@@ -664,7 +664,7 @@ INSTANCE Info_Mod_Torlof_Lernen (C_INFO)
 	information	= Info_Mod_Torlof_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Naucz mnie czegos.";
 };
 
 FUNC INT Info_Mod_Torlof_Lernen_Condition()
@@ -681,8 +681,8 @@ FUNC INT Info_Mod_Torlof_Lernen_Condition()
 
 FUNC VOID Info_Mod_Torlof_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torlof_Lernen_15_00"); //Bring mir was bei.
-	AI_Output(self, hero, "Info_Mod_Torlof_Lernen_01_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Torlof_Lernen_15_00"); //Naucz mnie czegos.
+	AI_Output(self, hero, "Info_Mod_Torlof_Lernen_01_01"); //Czego chcesz sie nauczyc?
 
 	Info_ClearChoices	(Info_Mod_Torlof_Lernen);
 

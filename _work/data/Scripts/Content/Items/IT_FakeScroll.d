@@ -1,6 +1,6 @@
 INSTANCE Fakescroll(C_Item)
 {	
-	name 					=	"Letter";
+	name 					=	"litera";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rega_Unheil (C_INFO)
 	information	= Info_Mod_Rega_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, schönes Kind.";
+	description	= "Witaj, piekne dziecko.";
 };
 
 FUNC INT Info_Mod_Rega_Unheil_Condition()
@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Rega_Unheil_Condition()
 
 FUNC VOID Info_Mod_Rega_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_00"); //Hallo, schönes Kind.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_01"); //Hallo, Wanderer? Was verschlägt euch an diesen finsteren Tagen hierhin?
-	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_02"); //Och, ich wollte mich nur etwas umsehen und fragen, ob etwas Ungewohntes in den letzten Tagen und Wochen hier passiert ist.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_03"); //Ach, es ist einfach schrecklich. Dem Hof ist es dieses Jahr mehr als schlecht ergangen. Und jetzt noch diese Untoten auf dem Friedhof.
-	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_04"); //Nimm es dann anderen nicht übel, wenn sie etwas unfreundlich erscheinen sollten. Aber diese Tage ist es sehr schwer.
+	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_00"); //Witaj, piekne dziecko.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_01"); //Witaj, wedrowca? Co przywodzi na mysl te mroczne dni?
+	AI_Output(hero, self, "Info_Mod_Rega_Unheil_15_02"); //Och, po prostu chcialem sie rozejrzec i zapytac, czy cos niezwyklego wydarzylo sie tutaj w ostatnich dniach i tygodniach.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_03"); //Och, to po prostu straszne. W tym roku Trybunal w tym roku uderzyl w Trybunal bardzo mocno. A teraz ci nieumarli na cmentarzu.
+	AI_Output(self, hero, "Info_Mod_Rega_Unheil_17_04"); //Nie obwiniaj innych, jesli wydaja sie nieco nieprzyjazne. Ale dzis jest to bardzo trudne.
 };
 
 INSTANCE Info_Mod_Rega_Pickpocket (C_INFO)

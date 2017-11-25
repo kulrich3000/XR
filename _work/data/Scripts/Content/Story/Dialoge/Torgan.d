@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Torgan_Hi_Condition()
 
 FUNC VOID Info_Mod_Torgan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Hi_13_00"); //Halt, keinen Schritt weiter. Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Torgan_Hi_13_00"); //Trzymaj go, trzymaj w reku i trzymaj. Co Pan tutaj robi?
 };
 
 INSTANCE Info_Mod_Torgan_Dragomir (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Torgan_Dragomir (C_INFO)
 	information	= Info_Mod_Torgan_Dragomir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Dragomir.";
+	description	= "Jestem z Dragomiru.";
 };
 
 FUNC INT Info_Mod_Torgan_Dragomir_Condition()
@@ -40,16 +40,16 @@ FUNC INT Info_Mod_Torgan_Dragomir_Condition()
 
 FUNC VOID Info_Mod_Torgan_Dragomir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_00"); //Ich komme von Dragomir.
-	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_01"); //Von Dragomir? Erzähle, wie sieht es in Khorinis aus?
-	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_02"); //Es sieht schlecht bei ihm aus. Sein Lager wurde vor einigen Nächten von Schwarzmagiern und Banditen überfallen.
-	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_03"); //Jetzt hat er sich in ein neues Lager bei der alten Mine im dunklen Wald aufgebaut.
-	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_04"); //Das klingt nicht gut. Ich danke dir für diese wichtige Information. Wir werden den Vorfall besprechen.
-	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_05"); //In der Zwischenzeit hätte ich noch eine Aufgabe für dich. Hast du interesse?
+	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_00"); //Jestem z Dragomiru.
+	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_01"); //Z Dragomiru? Powiedz mi, jaka jest sytuacja w Khorinis?
+	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_02"); //On wyglada zle. Jego obóz zostal kilka nocy temu zaatakowany przez czarnych magów i bandytów.
+	AI_Output(hero, self, "Info_Mod_Torgan_Dragomir_15_03"); //Teraz zbudowal nowy obóz w poblizu starej kopalni w ciemnym lesie.
+	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_04"); //To nie brzmi dobrze. Dziekuje za te wazne informacje. Omówimy ten incydent.
+	AI_Output(self, hero, "Info_Mod_Torgan_Dragomir_13_05"); //W miedzyczasie mam dla pana prace. Interesuje Cie?
 
 	Log_CreateTopic	(TOPIC_MOD_JG_EREMITENCAMP, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_EREMITENCAMP, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_JG_LAGER, TOPIC_MOD_JG_EREMITENCAMP, "Ich habe Torgan von den Vorfällen in Khorinis erzählt. Sie werden den Vorfall besprechen.", "Ich kann nicht in das Lager der Druiden. Ich werde versuchen müssen, mir den Zugang zu erarbeiten.");
+	B_LogEntry_More	(TOPIC_MOD_JG_LAGER, TOPIC_MOD_JG_EREMITENCAMP, "Opowiedzialem Torganowi o wydarzeniach w Khorinis. Omówia zdarzenie.", "Nie moge pojechac do obozu druidów. Bede musial spróbowac znalezc dostep.");
 	B_SetTopicStatus	(TOPIC_MOD_JG_LAGER, LOG_SUCCESS);
 
 	B_Göttergefallen(2, 1);
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Torgan_Zwischenzeit (C_INFO)
 	information	= Info_Mod_Torgan_Zwischenzeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass hören.";
+	description	= "Uslyszmy to.";
 };
 
 FUNC INT Info_Mod_Torgan_Zwischenzeit_Condition()
@@ -76,26 +76,26 @@ FUNC INT Info_Mod_Torgan_Zwischenzeit_Condition()
 
 FUNC VOID Info_Mod_Torgan_Zwischenzeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_15_00"); //Lass hören.
-	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_13_01"); //Ich habe lange nichts mehr von unseren Spähern hier im Minental gehört. Schau bitte nach ihnen und frage nach, ob sie neue Informationen haben.
+	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_15_00"); //Uslyszmy to.
+	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_13_01"); //Od dawna nie slyszalem od naszych harcerzy w Minentalu. Sprawdz je i sprawdz, czy maja nowe informacje.
 
 	Info_ClearChoices	(Info_Mod_Torgan_Zwischenzeit);
 
-	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "In Ordnung.", Info_Mod_Torgan_Zwischenzeit_B);
-	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "In Ordnung, was bekomme ich dafür?", Info_Mod_Torgan_Zwischenzeit_A);
+	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "Wszystkie sluszne, wszystkie sluszne.", Info_Mod_Torgan_Zwischenzeit_B);
+	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "Cóz wlasciwie, co mam za to dostac?", Info_Mod_Torgan_Zwischenzeit_A);
 };
 
 FUNC VOID Info_Mod_Torgan_Zwischenzeit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_B_15_00"); //In Ordnung.
-	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_B_13_01"); //Gut, das Lager der Späher liegt ziemlich in der Mitte des Tales an einem Pfad, der vom Alten Lager ins Neue Lager führt.
-	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_B_13_02"); //Nimm diese Spruchrolle, mit ihr kannst du dich wieder zu mir teleportieren.
+	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_B_15_00"); //Wszystkie sluszne, wszystkie sluszne.
+	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_B_13_01"); //Cóz, obóz harcerzy znajduje sie w samym srodku doliny na sciezce prowadzacej z dawnego obozu do nowego obozu.
+	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_B_13_02"); //Mozesz ja teleportowac do mnie z nia.
 
 	B_GiveInvItems	(self, hero, ItSc_TeleportTorgan, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_JG_TORGANSINFOS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_TORGANSINFOS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Torgan möchte, dass ich bei den Späher, welche ihr Lager etwa in der Mitte des Minentals bei einem Pfad vom alten Lager ins neue Lager haben, nach neuen Informationen frage.");
+	B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Torgan chcialby, abym poprosil o nowe informacje harcerzy, którzy maja swój obóz w srodku Doliny Kopalni niedaleko sciezki od starego obozu do nowego obozu.");
 
 	Wld_InsertNpc	(Mod_1966_GRD_Gardist_MT, "OC1");
 	B_KillNpc	(Mod_1966_GRD_Gardist_MT);
@@ -109,13 +109,13 @@ FUNC VOID Info_Mod_Torgan_Zwischenzeit_B()
 
 FUNC VOID Info_Mod_Torgan_Zwischenzeit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_A_15_00"); //In Ordnung, was bekomme ich dafür?
-	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_A_13_01"); //Unseren Dank als Waldläufer.
-	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_A_15_02"); //Na toll.
+	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_A_15_00"); //Cóz wlasciwie, co mam za to dostac?
+	AI_Output(self, hero, "Info_Mod_Torgan_Zwischenzeit_A_13_01"); //Dziekujemy jako Ranger.
+	AI_Output(hero, self, "Info_Mod_Torgan_Zwischenzeit_A_15_02"); //Och, wielki.
 
 	Info_ClearChoices	(Info_Mod_Torgan_Zwischenzeit);
 
-	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "In Ordnung.", Info_Mod_Torgan_Zwischenzeit_B);
+	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "Wszystkie sluszne, wszystkie sluszne.", Info_Mod_Torgan_Zwischenzeit_B);
 };
 
 INSTANCE Info_Mod_Torgan_SpaeherTot (C_INFO)
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Torgan_SpaeherTot (C_INFO)
 	information	= Info_Mod_Torgan_SpaeherTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe sie gefunden.";
+	description	= "Znalazlem je.";
 };
 
 FUNC INT Info_Mod_Torgan_SpaeherTot_Condition()
@@ -139,29 +139,29 @@ FUNC INT Info_Mod_Torgan_SpaeherTot_Condition()
 
 FUNC VOID Info_Mod_Torgan_SpaeherTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_15_00"); //Ich habe sie gefunden.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_13_01"); //Und was haben sie gesagt?
+	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_15_00"); //Znalazlem je.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_13_01"); //A co oni mówili?
 
 	Info_ClearChoices	(Info_Mod_Torgan_SpaeherTot);
 
-	Info_AddChoice	(Info_Mod_Torgan_SpaeherTot, "Sie sind tot. Ich habe aber die Leiche eines Gardisten (...)", Info_Mod_Torgan_SpaeherTot_B);
-	Info_AddChoice	(Info_Mod_Torgan_SpaeherTot, "Nichts, sie waren stumm wie eine Leiche.", Info_Mod_Torgan_SpaeherTot_A);
+	Info_AddChoice	(Info_Mod_Torgan_SpaeherTot, "Oni nie zyja. Ale znalazlem cialo straznika (....). )", Info_Mod_Torgan_SpaeherTot_B);
+	Info_AddChoice	(Info_Mod_Torgan_SpaeherTot, "Oni byli tak niemy jak trup.", Info_Mod_Torgan_SpaeherTot_A);
 };
 
 FUNC VOID Info_Mod_Torgan_SpaeherTot_C()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_C_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_01"); //Das kann ich kaum glauben. Bisher haben wir mit den Gardisten immer in relativer Ruhe gelebt.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_02"); //Ich verstehe nicht, warum sie unsere Späher angreifen sollten. Ich muss dies sofort weitergeben.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_03"); //Dass die Sachen jetzt beinahe gleichzeitig passieren, kann kein Zufall sein. Da muss mehr dahinter stecken.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_04"); //Hier, nimm dies als Entlohnung für deine Mühe.
+	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_C_15_00"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_01"); //Nie moge w to uwierzyc. Do tej pory zawsze zylismy w pokoju z straznikami.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_02"); //Nie rozumiem, dlaczego maja atakowac naszych harcerzy. Musze to natychmiast przekazac.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_03"); //Nie moze byc przypadkiem, ze wszystko dzieje sie niemal w tym samym czasie. Musi byc jej wiecej.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_C_13_04"); //Tutaj wez to jako nagrode za swoje wysilki.
 
 	CreateInvItems	(self, ItWr_Bauplan_Wolfsring_Leben, 1);
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_Wolfsring_Leben, 1);
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Ich habe Torgan von den toten Spähern berichtet. Er schien sehr beunruhigt.");
+	B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Opowiedzialem Torganowi o martwych harcerzach. Wydawal sie bardzo zaniepokojony.");
 	B_SetTopicStatus	(TOPIC_MOD_JG_TORGANSINFOS, LOG_SUCCESS);
 
 	B_Göttergefallen(2, 1);
@@ -169,8 +169,8 @@ FUNC VOID Info_Mod_Torgan_SpaeherTot_C()
 
 FUNC VOID Info_Mod_Torgan_SpaeherTot_B()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_B_15_00"); //Sie sind tot. Ich habe aber die Leiche eines Gardisten bei ihnen gesehen.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_B_13_01"); //Was sagst du? Sie sind tot? ... einen Gardisten sagst du?
+	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_B_15_00"); //Oni nie zyja. Ale widzialem z nimi cialo straznika.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_B_13_01"); //Co mówisz? Oni umarli? ... gwardierem, mówisz?
 
 	Info_ClearChoices	(Info_Mod_Torgan_SpaeherTot);
 
@@ -179,10 +179,10 @@ FUNC VOID Info_Mod_Torgan_SpaeherTot_B()
 
 FUNC VOID Info_Mod_Torgan_SpaeherTot_A()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_A_15_00"); //Nichts, sie waren stumm wie eine Leiche.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_A_13_01"); //Was sagst du da? Diese verdammten Nichtsnutze ... rauchen den ganzen Tag Sumpfkraut oder nehmen dieses neue Rauschmittel. Diese unzuerlässigen ...
-	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_A_15_02"); //Hey, mach mal halblang. Sie sind tot und nicht benebelt! Neben ihnen haben ich noch die Leiche eines Gardisten gefunden.
-	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_A_13_03"); //Wieso sagst du soetwas nicht gleich, verdammt? Sie sind tot? Und ein Gardist soll neben ihnen ebenfalls tot rumliegen?
+	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_A_15_00"); //Oni byli tak niemy jak trup.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_A_13_01"); //Co powiedziales? Tych, którzy nie sa dobrymi draniemi..... palenie na bagnach przez caly dzien lub przyjmowanie tego nowego leku. Te niewiarygodne i niewiarygodne.....
+	AI_Output(hero, self, "Info_Mod_Torgan_SpaeherTot_A_15_02"); //Hej, daj mi przerwe. Oni umarli i nie zamgleni! Obok nich znalazlem cialo straznika.
+	AI_Output(self, hero, "Info_Mod_Torgan_SpaeherTot_A_13_03"); //Dlaczego po prostu nie mówisz cos takiego, niech to damn? Oni umarli? I straznik tez ma byc martwy?
 
 	Info_ClearChoices	(Info_Mod_Torgan_SpaeherTot);
 
@@ -210,45 +210,45 @@ FUNC INT Info_Mod_Torgan_GardistenZettel_Condition()
 
 FUNC VOID Info_Mod_Torgan_GardistenZettel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_00"); //Warst du schon bei den anderen Lagern?
-	AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_01"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_02"); //Hast du was neues herausgefunden?
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_00"); //Czy byles jeszcze w innych obozach?
+	AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_01"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_02"); //Czy znalazles cos nowego?
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torwache_Sekte_01_GardistenInfos))
 	{
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_03"); //Beim Sektenlager ist nichts außergewöhnliches vorgefallen.
-		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_04"); //Das war zu erwarten. Bei denen dauert es immer eine Weile, bis sie es mitbekommen.
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_03"); //Na obozie kultowym nie wydarzylo sie nic niezwyklego.
+		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_04"); //To nalezalo sie spodziewac. Zawsze poswiecaja troche czasu, aby sie do tego przyzwyczaic.
 
 		B_GivePlayerXP	(500);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torwache_AL_01_Halt))
 	{
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_05"); //Beim Alten Lager konnte ich nichts weiter herausfinden.
-		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_06"); //Nichts? Hm. Wir müssen herausfinden, ob sie wirklich nichts damit zu tun haben, oder ob sie sich doch nur verstellen. Zuzutrauen ist ihnen alles.
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_05"); //Na Starym Obozie nie moglem znalezc niczego wiecej.
+		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_06"); //Nic? Hm. Musimy dowiedziec sie, czy naprawde nie maja z tym nic wspólnego, czy po prostu udaja. Chodzi o zaufanie.
 
 		B_GivePlayerXP	(500);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torwache_NL_01_GardistenInfos))
 	{
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_07"); //Ein Wächter des Neuen Lagers wurde von Unbekannten beschossen.
-		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_08"); //Das Neue Lager wurde einfach beschossen? Weiß man mehr darüber?
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_07"); //Straznik Nowego Obozu zostal zwolniony przez nieznanych.
+		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_08"); //Nowy obóz zostal wlasnie zastrzelony? Czy wiesz o tym wiecej?
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Nodrak_BierInfos))
 		{
-			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_09"); //Die Banditen und die Waldläufer werden verdächtigt, den feigen Angriff begangen zu haben.
-			AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_10"); //Das ist bedenklich. Wir müssen schnell reagieren und diesen Irrtum gar nicht erst wachsen lassen.
+			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_09"); //Bandyci i straznicy sa podejrzewani o popelnienie tchórzliwego ataku.
+			AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_10"); //Jest to watpliwe. Musimy reagowac szybko i przede wszystkim nie pozwolic, aby ten blad rozrastal sie.
 
 			if (Npc_KnowsInfo(hero, Info_Mod_Hecta_Hi))
 			{
-				AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_11"); //Ich glaube ich habe die beiden Schützen gestellt.
-				AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_12"); //Das ist wenigstens eine erfreuliche Nachricht. Damit wird es uns leichter fallen, unseren Standpunkt zu behaupten.
+				AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_11"); //Mysle, ze wlozylem te dwie strzelanki.
+				AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_12"); //To przynajmniej dobra wiadomosc. Ulatwi nam to utrzymanie naszej pozycji.
 			};
 		}
 		else
 		{
-			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_13"); //Leider nicht.
+			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_13"); //Niestety nie.
 		};
 
 		B_GivePlayerXP	(500);
@@ -256,45 +256,45 @@ FUNC VOID Info_Mod_Torgan_GardistenZettel_Info()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Sancho_GardistenInfos))
 	{
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_14"); //Ein paar Gardisten sind bei dem Banditenlager aufgetaucht, wurden von ihnen jedoch getötet.
-		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_15"); //Das verstärkt meine Vermutung, dass es vielleicht gar keine Gardisten sind. Keiner von ihnen würde einfach so in der Nähe der Banditen herumstreifen.
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_14"); //Na obozie bandytów pojawilo sie kilku strazników, ale zostali przez nich zabici.
+		AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_15"); //To poteguje moje podejrzenie, ze nie moga byc straznikami. Zaden z nich po prostu nie wedrowal w poblizu bandytów.
 
 
 		B_GivePlayerXP	(500);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_16"); //Trotz all den Informationen reicht es noch nicht. Wir brauchen etwas Handfestes, um einen Hinweis zu bekommen!
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_17"); //Die ganze Situation ist noch zu undurchsichtig, um konkrete Vermutungen anstellen zu können.
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_18"); //Gibt es noch mehr, was uns einen Hinweis auf den Täter geben könnte?
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_16"); //Pomimo tych wszystkich informacji, to nie wystarczy. Potrzebujemy czegos solidnego, aby uzyskac wskazówki!
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_17"); //Cala sytuacja jest nadal zbyt nieprzejrzysta, aby mozna bylo przyjac konkretne zalozenia.
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_18"); //Czy jest jeszcze cos innego, co mogloby dac nam wskazówke, kto to zrobil?
 
 	if (Npc_HasItems(hero, ItWr_MagicPaper) == 1)
 	{
 		if (Mod_SanchoHatZettel == 2)
 		{
-			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_19"); //Ja, hier, diesen Zettel habe ich von den Banditen. Er stammt von einem der getöteten Gardisten.
+			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_19"); //Tak, tutaj dostalem te notatke od bandytów. Pochodzil od jednego z zabitych strazników.
 		}
 		else
 		{
-			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_20"); //Ja, hier, diesen Zettel habe ich gefunden. Er stammt von den Gardisten, die das Neue Lager überfallen haben.
+			AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_20"); //Tak, tutaj znalazlem te uwage. Pochodzi on od strazników, którzy napadli na Nowy Obóz.
 		};
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_21"); //Ja, diese beiden Zettel habe ich gefunden.
-		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_22"); //Einer stammt von den Gardisten, die das Neue Lager überfallen haben, der andere von den Banditen. Sie haben ihn bei einem der getöteten Gardisten gefunden.
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_21"); //Tak, znalazlem te dwie notatki.
+		AI_Output(hero, self, "Info_Mod_Torgan_GardistenZettel_15_22"); //Jeden pochodzi od strazników, którzy zaatakowali Nowy Obóz, drugi od bandytów. Znalezli go u jednego z zabitych strazników.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_23"); //Wunderbar, kann ich ihn mal sehen?
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_23"); //Cudowny, czy moge go zobaczyc?
 
 	B_GiveInvItems	(hero, self, ItWr_MagicPaper, 1);
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_24"); //Dieser Zettel ist eindeutig magischer Natur. Bitte nimm ihn zurück und bringe ihn dem Druiden Cyrco.
-	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_25"); //Du hast die dir anvertrauten Aufgaben mit großem Erfolg erledigt. Von nun an ist dir der Zutritt zu unserem Lager erlaubt, da du uns dein Vertrauen bewiesen hast. Bitte tritt ein.
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_24"); //Ta nuta ma wyraznie magiczny charakter. Prosze zabrac ja z powrotem i przywiezc do druidu Cyrco.
+	AI_Output(self, hero, "Info_Mod_Torgan_GardistenZettel_13_25"); //Zadania, które zostaly Ci powierzone, wykonales z wielkim sukcesem. Od tej pory dostaniecie sie Panstwo do naszego obozu, jak pokazaliscie nam swoja wiare w nas. Prosze wejsc.
 
 	B_GiveInvItems	(self, hero, ItWr_MagicPaper, 1);
 
-	B_LogEntry_More	(TOPIC_MOD_JG_GARDISTEN, TOPIC_MOD_JG_EREMITENCAMP, "Ich habe Torgan von den Geschehnissen berichtet. Er ist sehr zufrieden mit den Informationen und ich darf nun endlich das Lager betreten.", "Dank meiner Verdienste darf ich jetzt in das Lager der Druiden.");
+	B_LogEntry_More	(TOPIC_MOD_JG_GARDISTEN, TOPIC_MOD_JG_EREMITENCAMP, "Opowiedzialem Torganowi o wydarzeniach. Jest bardzo zadowolony z tych informacji i wreszcie pozwolono mi wejsc do obozu.", "Dzieki moim zaslugom jestem teraz w obozie Druidów.");
 
 	B_GivePlayerXP	(500);
 
@@ -311,7 +311,7 @@ INSTANCE Info_Mod_Torgan_InsLager (C_INFO)
 	information	= Info_Mod_Torgan_InsLager_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich jetzt in das Lager?";
+	description	= "Czy moge teraz isc do obozu?";
 };
 
 FUNC INT Info_Mod_Torgan_InsLager_Condition()
@@ -325,8 +325,8 @@ FUNC INT Info_Mod_Torgan_InsLager_Condition()
 
 FUNC VOID Info_Mod_Torgan_InsLager_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_InsLager_15_00"); //Kann ich jetzt in das Lager?
-	AI_Output(self, hero, "Info_Mod_Torgan_InsLager_13_01"); //Nein, noch nicht.
+	AI_Output(hero, self, "Info_Mod_Torgan_InsLager_15_00"); //Czy moge teraz isc do obozu?
+	AI_Output(self, hero, "Info_Mod_Torgan_InsLager_13_01"); //Nie, jeszcze nie.
 };
 
 INSTANCE Info_Mod_Torgan_SomethingInteresting (C_INFO)
@@ -337,7 +337,7 @@ INSTANCE Info_Mod_Torgan_SomethingInteresting (C_INFO)
 	information	= Info_Mod_Torgan_SomethingInteresting_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist irgendetwas passiert?";
+	description	= "Czy cos sie stalo?";
 };
 
 FUNC INT Info_Mod_Torgan_SomethingInteresting_Condition()
@@ -350,8 +350,8 @@ FUNC INT Info_Mod_Torgan_SomethingInteresting_Condition()
 
 FUNC VOID Info_Mod_Torgan_SomethingInteresting_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_SomethingInteresting_15_00"); //Ist irgendetwas passiert?
-	AI_Output(self, hero, "Info_Mod_Torgan_SomethingInteresting_13_01"); //Erst Dragomir und nun unsere Späher. Du bringst nicht gerade positive Neuigkeiten, das reicht mir erstmal!
+	AI_Output(hero, self, "Info_Mod_Torgan_SomethingInteresting_15_00"); //Czy cos sie stalo?
+	AI_Output(self, hero, "Info_Mod_Torgan_SomethingInteresting_13_01"); //Pierwszy Dragomir i teraz nasi harcerze. Nie przynosisz pozytywnych wiadomosci, to dla mnie wystarczy!
 };
 
 INSTANCE Info_Mod_Torgan_NochEinAuftrag (C_INFO)
@@ -362,7 +362,7 @@ INSTANCE Info_Mod_Torgan_NochEinAuftrag (C_INFO)
 	information	= Info_Mod_Torgan_NochEinAuftrag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich für euch noch irgendetwas erledigen?";
+	description	= "Czy jest jeszcze cos, co moge dla Ciebie zrobic?";
 };
 
 FUNC INT Info_Mod_Torgan_NochEinAuftrag_Condition()
@@ -375,28 +375,28 @@ FUNC INT Info_Mod_Torgan_NochEinAuftrag_Condition()
 
 FUNC VOID Info_Mod_Torgan_NochEinAuftrag_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_00"); //Kann ich für euch noch irgendetwas erledigen?
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_01"); //Ich muss zugeben, dass mir nicht ganz wohl dabei ist, Aufgaben an einen Außenstehenden zu verteilen. Doch es scheint, als bliebe mir keine Wahl.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_02"); //Deine Zuverlässigkeit hast du ja bereits bewiesen, ich erwarte von dir äußerste Diskretion über unsere Angelegenheiten.
-	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_03"); //Natürlich.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_04"); //Gut, dann pass auf. Wir müssen unbedingt mehr über diese angeblichen Gardisten herausfinden.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_05"); //Ich kann mir einfach nicht vorstellen, dass das alte Lager uns angreifen sollte und dann die Leiche ihres Kumpanen einfach dort mitsamt Ausrüstung liegen lassen.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_06"); //Bringe in Erfahrung, ob jemand in den anderen Lagern des Minentals mehr über diese „Gardisten“ weiß. Am besten fragst du bei den jeweiligen Torwächtern des Sektenlagers, alten Lagers und Neuen Lagers nach.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_07"); //Beim Alten Lager solltest du besonders vorsichtig sein, wie ich hörte, gibt es dort einige Spannungen.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_08"); //Geh auch ruhig zu den Banditen, falls du weißt, wo diese sich aufhalten. In den letzten Meldungen der Späher haben sie angeblich welche im Süden gesehen.
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_09"); //Sobald du etwas herausgefunden hast, komm sofort zu uns zurück.
-	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_10"); //Ich bin schon unterwegs!
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_11"); //Und hier, nimm diese Geschwindigkeitstränke. Ich denke, du wirst sie brauchen können.
+	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_00"); //Czy jest jeszcze cos, co moge dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_01"); //Musze przyznac, ze nie jestem do konca wygodny w rozdysponowaniu zadan na osoby z zewnatrz. Ale wydaje mi sie, ze nie mam wyboru.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_02"); //Spodziewam sie od Panstwa najwyzszego dyskrecji w odniesieniu do naszych spraw.
+	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_03"); //Oczywiscie tak jest.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_04"); //W prawo, uwazajcie. Musimy dowiedziec sie wiecej o tych rzekomych straznikach.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_05"); //Nie moge sobie wyobrazic, ze stary obóz powinien nas zaatakowac i zostawic lezace tam cialo swojego przyjaciela z calym jego sprzetem.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_06"); //Dowiedz sie, czy ktokolwiek w innych obozach w Dolinie Kopalni wie wiecej o owych "straznikach". Najlepiej zapytac strazników obozu kultowego, starego i nowego.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_07"); //Powinniscie byc szczególnie ostrozni w przypadku Starego Obozu, poniewaz slysze tam pewne napiecia.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_08"); //Jesli wiesz, gdzie sa bandyci, dlaczego nie idziesz i widzisz bandytów? W ostatnich raportach harcerskich podobno widzieli oni niektóre z nich na poludniu.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_09"); //Jak tylko sie dowiesz, wróc do nas od razu.
+	AI_Output(hero, self, "Info_Mod_Torgan_NochEinAuftrag_15_10"); //Jestem juz w drodze!
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_11"); //I tutaj wez te przepychanki. Mysle, ze bedziesz mógl go uzyc.
 
 	B_GiveInvItems	(self, hero, ItPo_Speed, 4);
 
-	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_12"); //Und eine Spruchrolle habe ich auch wieder für dich.
+	AI_Output(self, hero, "Info_Mod_Torgan_NochEinAuftrag_13_12"); //I znów mam dla Ciebie zaklecie.
 
 	B_GiveInvItems	(self, hero, ItSc_TeleportTorgan, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_JG_GARDISTEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_GARDISTEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Torgan will, dass ich mehr über die Gardisten rausfinde. Dazu soll ich die Torwächter der verschiedenen Lager hier im Minental nach Informationen befragen. Ich sollte mich aber beim alten Lager in Acht nehmen.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Torgan chce, abym dowiedzial sie wiecej o straznikach. W tym celu powinienem poprosic o informacje strazników róznych obozów w Minental. Powinnismy uwazac na stary obóz.");
 };
 
 INSTANCE Info_Mod_Torgan_Scharmuetzel (C_INFO)
@@ -419,8 +419,8 @@ FUNC INT Info_Mod_Torgan_Scharmuetzel_Condition()
 
 FUNC VOID Info_Mod_Torgan_Scharmuetzel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Scharmuetzel_13_00"); //Wer waren die? Was wollten die? Die haben kein Wort geredet.
-	AI_Output(hero, self, "Info_Mod_Torgan_Scharmuetzel_15_01"); //Vielleicht weiß Cyrco was. Mal sehen.
+	AI_Output(self, hero, "Info_Mod_Torgan_Scharmuetzel_13_00"); //Kim oni byli? Czego chcieli? Nie mówili ani slowa.
+	AI_Output(hero, self, "Info_Mod_Torgan_Scharmuetzel_15_01"); //Moze Cyrco cos wie. Zobaczmy teraz.
 };
 
 INSTANCE Info_Mod_Torgan_Turm (C_INFO)
@@ -444,8 +444,8 @@ FUNC INT Info_Mod_Torgan_Turm_Condition()
 
 FUNC VOID Info_Mod_Torgan_Turm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Turm_13_00"); //Eh. Gut, dass du kommst. Wulfgar will dich sprechen.
-	AI_Output(hero, self, "Info_Mod_Torgan_Turm_15_01"); //Bin schon unterwegs.
+	AI_Output(self, hero, "Info_Mod_Torgan_Turm_13_00"); //Eh. Ciesze sie, ze przyszedles. Wulfgar chce cie zobaczyc.
+	AI_Output(hero, self, "Info_Mod_Torgan_Turm_15_01"); //Jestem na drodze.
 };
 
 INSTANCE Info_Mod_Torgan_Turm2 (C_INFO)
@@ -468,22 +468,22 @@ FUNC INT Info_Mod_Torgan_Turm2_Condition()
 
 FUNC VOID Info_Mod_Torgan_Turm2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_00"); //Du schon wieder.
-	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_15_01"); //Ich muss ...
-	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_02"); //Moment. Hörst du den Kerl da oben im Turm?
-	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_03"); //Der schreit sich schier die Lunge aus dem Leib.
-	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_15_04"); //Na und? Soll er doch. Ich muss ...
-	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_05"); //Geh doch mal eben raus und frag, was er will. Hast auch was gut bei mit.
+	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_00"); //To znów Ty.
+	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_15_01"); //Musze.....
+	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_02"); //Trzymac wlaczony, trzymac wcisniety. Slyszysz tam tego faceta w wiezy?
+	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_03"); //On krzyczy z pluc.
+	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_15_04"); //Na und? Soll er doch. Musze.....
+	AI_Output(self, hero, "Info_Mod_Torgan_Turm2_13_05"); //Dlaczego nie wychodzisz na zewnatrz i pytasz go, czego chce? Masz tez cos dobrego na sobie.
 
 	Info_ClearChoices	(Info_Mod_Torgan_Turm2);
 
-	Info_AddChoice	(Info_Mod_Torgan_Turm2, "Geht nicht. Ich muss zu Wulfgar.", Info_Mod_Torgan_Turm2_A);
-	Info_AddChoice	(Info_Mod_Torgan_Turm2, "Na gut. Ich nehm dich beim Wort.", Info_Mod_Torgan_Turm2_B);
+	Info_AddChoice	(Info_Mod_Torgan_Turm2, "Nie moge tego zrobic. Musze zobaczyc Wulfgar.", Info_Mod_Torgan_Turm2_A);
+	Info_AddChoice	(Info_Mod_Torgan_Turm2, "Wszystkie sluszne, wszystkie sluszne. Bede cie o tym mówil.", Info_Mod_Torgan_Turm2_B);
 };
 
 FUNC VOID Info_Mod_Torgan_Turm2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_B_15_00"); //Na gut. Ich nehm dich beim Wort.
+	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_B_15_00"); //Wszystkie sluszne, wszystkie sluszne. Bede cie o tym mówil.
 
 	Mod_JG_TurmwaechterFelle = 1;
 
@@ -492,7 +492,7 @@ FUNC VOID Info_Mod_Torgan_Turm2_B()
 
 FUNC VOID Info_Mod_Torgan_Turm2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_A_15_00"); //Geht nicht. Ich muss zu Wulfgar.
+	AI_Output(hero, self, "Info_Mod_Torgan_Turm2_A_15_00"); //Nie moge tego zrobic. Musze zobaczyc Wulfgar.
 
 	Info_ClearChoices	(Info_Mod_Torgan_Turm2);
 };
@@ -517,13 +517,13 @@ FUNC INT Info_Mod_Torgan_WeicheFelle_Condition()
 
 FUNC VOID Info_Mod_Torgan_WeicheFelle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_00"); //Und? Was will der Schreihals?
-	AI_Output(hero, self, "Info_Mod_Torgan_WeicheFelle_15_01"); //Ein Fell. Ein warmes, weiches Fell.
-	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_02"); //Soll er sich bewegen. Da wird ihm warm. Oder nein.
-	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_03"); //Ich hab gehört, dass der Alchemist was Neues mit den Fellen macht. Frag den mal.
-	AI_Output(hero, self, "Info_Mod_Torgan_WeicheFelle_15_04"); //Mach ich. Bis dann.
+	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_00"); //A co? Czego chce krzyczacy?
+	AI_Output(hero, self, "Info_Mod_Torgan_WeicheFelle_15_01"); //Siersc. Ciepla, miekka powloka.
+	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_02"); //Niech sie porusza. Tam sie rozgrzewa. Lub nie
+	AI_Output(self, hero, "Info_Mod_Torgan_WeicheFelle_13_03"); //Slysze, jak alchemik robi cos nowego z skórami. Popros go o to.
+	AI_Output(hero, self, "Info_Mod_Torgan_WeicheFelle_15_04"); //Wlasciwie, bede. Do zobaczenia dookola.
 
-	B_LogEntry	(TOPIC_MOD_JG_TURMFELLE, "Wulfgar macht was mit den Fellen. Gut zu wissen.");
+	B_LogEntry	(TOPIC_MOD_JG_TURMFELLE, "Wulfgar robi cos z skórami. Dobra znajomosc.");
 };
 
 INSTANCE Info_Mod_Torgan_Nahkampf (C_INFO)
@@ -546,10 +546,10 @@ FUNC INT Info_Mod_Torgan_Nahkampf_Condition()
 
 FUNC VOID Info_Mod_Torgan_Nahkampf_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf_13_00"); //Na. Wieder auf zu neuen Abenteuern?
-	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf_15_01"); //Abenteuer? Neues Lager ist besser. Neue Leute beschaffen.
-	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf_13_02"); //Da kannst du gleich mal da draußen schauen. Da lungert so ein Typ rum. Könnte ein Söldner sein.
-	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf_15_03"); //Das trifft sich gut.
+	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf_13_00"); //Na, j. j. Powrót do nowych przygód?
+	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf_15_01"); //Przygoda? Nowy magazyn jest lepszy. Pozyskiwanie nowych ludzi.
+	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf_13_02"); //Mozna tam od razu spojrzec. Wokól panuje gosc. Moze byc najemnikiem.
+	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf_15_03"); //To dobrze.
 
 	Wld_InsertNpc	(Mod_7475_SLD_Falin_MT, "WP_MT_JAEGERLAGER_05");
 };
@@ -575,8 +575,8 @@ FUNC INT Info_Mod_Torgan_Nahkampf2_Condition()
 
 FUNC VOID Info_Mod_Torgan_Nahkampf2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf2_13_00"); //Schöner Tag heute.
-	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf2_15_01"); //Ich weiß nicht. Auf jeden Fall wieder mal anstrengend.
+	AI_Output(self, hero, "Info_Mod_Torgan_Nahkampf2_13_00"); //Piekny dzien dzisiaj.
+	AI_Output(hero, self, "Info_Mod_Torgan_Nahkampf2_15_01"); //Nie wiem o tym. Zdecydowanie jest to znowu uciazliwe.
 };
 
 INSTANCE Info_Mod_Torgan_Sweetwater (C_INFO)
@@ -599,9 +599,9 @@ FUNC INT Info_Mod_Torgan_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_Torgan_Sweetwater_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Sweetwater_13_00"); //Nanu, schon wieder weg? Bist doch eben erst gekommen.
-	AI_Output(hero, self, "Info_Mod_Torgan_Sweetwater_15_01"); //Wie du siehst. Einer muss ja was tun ...
-	AI_Output(self, hero, "Info_Mod_Torgan_Sweetwater_13_02"); //Hmm ...
+	AI_Output(self, hero, "Info_Mod_Torgan_Sweetwater_13_00"); //Znów poszedles? Wlasnie tu dotarles.
+	AI_Output(hero, self, "Info_Mod_Torgan_Sweetwater_15_01"); //Jak widac. Ktos musi cos zrobic......
+	AI_Output(self, hero, "Info_Mod_Torgan_Sweetwater_13_02"); //Hmm.....
 };
 
 INSTANCE Info_Mod_Torgan_Drachental (C_INFO)
@@ -624,10 +624,10 @@ FUNC INT Info_Mod_Torgan_Drachental_Condition()
 
 FUNC VOID Info_Mod_Torgan_Drachental_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torgan_Drachental_13_00"); //Diesmal warst du aber lange weg. Was war los?
-	AI_Output(hero, self, "Info_Mod_Torgan_Drachental_15_01"); //Stress ohne Ende. Bei Gelegenheit erzähl ich's dir.
-	AI_Output(self, hero, "Info_Mod_Torgan_Drachental_13_02"); //Dein Wort in Adanos Ohr!
-	AI_Output(hero, self, "Info_Mod_Torgan_Drachental_15_03"); //Bis dann.
+	AI_Output(self, hero, "Info_Mod_Torgan_Drachental_13_00"); //Tym razem przeszedles juz dawno temu. Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Torgan_Drachental_15_01"); //Stres bez konca. Opowiem ci to przy okazji.
+	AI_Output(self, hero, "Info_Mod_Torgan_Drachental_13_02"); //Twoje slowo w uchu Adano!
+	AI_Output(hero, self, "Info_Mod_Torgan_Drachental_15_03"); //Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Torgan_AlterMann (C_INFO)
@@ -638,7 +638,7 @@ INSTANCE Info_Mod_Torgan_AlterMann (C_INFO)
 	information	= Info_Mod_Torgan_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Zapytaj o starca w lesie.";
 };
 
 FUNC INT Info_Mod_Torgan_AlterMann_Condition()
@@ -656,54 +656,54 @@ FUNC VOID Info_Mod_Torgan_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes Rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_00"); //Ach, masz na mysli starego czlowieka z lasu. Tak, wiem o nim cos.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_01"); //Mówi sie, ze ma ona stulecia i ma chronic zwierzeta w lesie wokól Khoraty.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_02"); //Mówi sie, ze jest slepy, ale jednoczesnie ma magiczny talent.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_03"); //To wszystko, o czym moge teraz pomyslec. Moze ktos inny wie wiecej.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes, behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Od pierwszego straznika nie dostalem wiele nowych informacji. Stary czlowiek z lasu, chroniac zwierzeta, jest starozytnym, niewidomym i magicznym. Moze inny straznik wie wiecej.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_04"); //Der alte Mann des Waldes? Ja, ich hörte er solle einst ein Diener Adanos gewesen sein.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_04"); //Stary czlowiek z lasu? Tak, slyszalem, ze byl kiedys sluga Adano.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_05"); //Nie wiadomo, czy byl on takim straznikiem jak my, magikiem wody, czy przemieniajacym magiem.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_06"); //Jego magiczne zdolnosci, a takze silne przywiazanie do swiata zwierzat i roslin sa dowodem na to, ze ma wszystko.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim 2ten Waldläufer erfuhr ich auch nicht viel wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "W 2. lesniczy tez nie dowiedzialem sie wiele, co warto wiedziec. Mówi sie, ze stary czlowiek lasu jest zwiazany z Adanosem i kreacja, zwlaszcza zwierzetami i roslinami.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_07"); //Cóz, nie moge ci wiele powiedziec o nim.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_08"); //Problem polega równiez na tym, ze nie rozmawia z nikim, nawet z nami, nawet jesli dazymy do podobnych celów.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_09"); //Sam z zwierzetami lasu bawi sie sam.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_10"); //No cóz, gdybym byl dzikiem, jestem pewien, ze móglbym powiedziec ci wiecej o nim.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, to mogla byc wazna wskazówka. Stary czlowiek z lasu calkowicie unika ludzi, mówi tylko zwierzetom.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_12"); //Man sagt, er leite Rudeltiere wie Keiler, oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_11"); //Stary czlowiek z lasu? Cóz, ma byc scisle zwiazany z fauna i flora.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_12"); //Mówi sie, ze prowadzi on spakowywanie zwierzat takich jak knury czy wilki, aby chronic las przed intruzami.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_13"); //Nawet mówi sie, ze czesto wystepuje w ksztalcie zielonego wilka.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Przede wszystkim powinien on równiez poinstruowac wieksze paczki zwierzat, takie jak knury i wilki, aby chronic las przed intruzami.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_14"); //Interesuja Cie opowiesci o starym czlowieku z lasu?
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_15"); //Cóz, nie wiem wiele o tej mistycznej dziwnej kuli.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_16"); //Podobno zamieszkuje glównie w ciemnym lesie, ale równiez w poblizu zbiorników wodnych, takich jak jeziora.
+		AI_Output(self, hero, "Info_Mod_Torgan_AlterMann_13_17"); //Rzadko zdarza sie, ze ktos go widzial.....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khorata’s in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Najprawdopodobniej znajduje sie on w gestym lesie Khoraty w poblizu jeziora.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;
@@ -717,7 +717,7 @@ INSTANCE Info_Mod_Torgan_Asylanten (C_INFO)
 	information	= Info_Mod_Torgan_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso seid ihr Jäger hier im Minental?";
+	description	= "Dlaczego polujecie tutaj w Minental?";
 };
 
 FUNC INT Info_Mod_Torgan_Asylanten_Condition()
@@ -730,13 +730,13 @@ FUNC INT Info_Mod_Torgan_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Torgan_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Asylanten_15_00"); //Wieso seid ihr Jäger hier im Minental?
-	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_01"); //Na, wegen unseres Berufs.
-	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_02"); //Das Minental ist ein gefährlicher Ort, und die Lager senden nur wenige eigene Jäger aus, sodass es hier fette Beute für uns zu machen gibt.
-	AI_Output(hero, self, "Info_Mod_Torgan_Asylanten_15_03"); //Habt ihr schon Kontakt zu anderen Lagern gehabt?
-	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_04"); //Nicht viel. Die meisten sind doch Schwerverbrecher, mit denen wollen wir nichts zu tun haben.
+	AI_Output(hero, self, "Info_Mod_Torgan_Asylanten_15_00"); //Dlaczego polujecie tutaj w Minental?
+	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_01"); //Cóz, o naszym zawodzie.
+	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_02"); //Minental jest niebezpiecznym miejscem, a obozy wysylaja tylko nielicznych swoich mysliwych, wiec tu jest duzo grabiezy.
+	AI_Output(hero, self, "Info_Mod_Torgan_Asylanten_15_03"); //Czy miales kontakt z innymi obozami?
+	AI_Output(self, hero, "Info_Mod_Torgan_Asylanten_13_04"); //Niewiele. Nie chcemy z nimi nic wspólnego.
 
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Einen Trupp Jäger hat es auch in das Minental verschlagen. Er ist jedoch nur zum Jagen da und tritt kaum in Kontakt mit den anderen Gruppierungen.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Swoja droge do Minentala trafil równiez oddzial mysliwych. Jednak poluje sie tam tylko po to, by polowac i nie wchodzi w kontakt z innymi grupami.");
 };
 
 INSTANCE Info_Mod_Torgan_WerBistDu (C_INFO)
@@ -747,7 +747,7 @@ INSTANCE Info_Mod_Torgan_WerBistDu (C_INFO)
 	information	= Info_Mod_Torgan_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Torgan_WerBistDu_Condition()
@@ -760,8 +760,8 @@ FUNC INT Info_Mod_Torgan_WerBistDu_Condition()
 
 FUNC VOID Info_Mod_Torgan_WerBistDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_WerBistDu_15_00"); //Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Torgan_WerBistDu_13_01"); //Mein Name ist Torgan und ich bin angewiesen, niemanden Unbekannten hereinzulassen.
+	AI_Output(hero, self, "Info_Mod_Torgan_WerBistDu_15_00"); //Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Torgan_WerBistDu_13_01"); //Nazywam sie Torgan i mam pouczenie, ze nie wolno mi nikomu pozostawiac nieznanego.
 };
 
 INSTANCE Info_Mod_Torgan_WasBewachstDu (C_INFO)
@@ -772,7 +772,7 @@ INSTANCE Info_Mod_Torgan_WasBewachstDu (C_INFO)
 	information	= Info_Mod_Torgan_WasBewachstDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was bewachst du dort?";
+	description	= "Co tam chronisz?";
 };
 
 FUNC INT Info_Mod_Torgan_WasBewachstDu_Condition()
@@ -785,8 +785,8 @@ FUNC INT Info_Mod_Torgan_WasBewachstDu_Condition()
 
 FUNC VOID Info_Mod_Torgan_WasBewachstDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_WasBewachstDu_15_00"); //Was bewachst du dort?
-	AI_Output(self, hero, "Info_Mod_Torgan_WasBewachstDu_13_01"); //Wir sind Waldläufer und Jäger, hier befindet sich zur Zeit eines unserer Lager, die von niemandem Fremden betreten werden sollen.
+	AI_Output(hero, self, "Info_Mod_Torgan_WasBewachstDu_15_00"); //Co tam chronisz?
+	AI_Output(self, hero, "Info_Mod_Torgan_WasBewachstDu_13_01"); //Jestesmy straznikami i mysliwymi, w chwili obecnej znajduje sie tu jeden z naszych obozów, do którego nie powinni wjezdzac obcy.
 };
 
 INSTANCE Info_Mod_Torgan_Wegschauen (C_INFO)
@@ -797,7 +797,7 @@ INSTANCE Info_Mod_Torgan_Wegschauen (C_INFO)
 	information	= Info_Mod_Torgan_Wegschauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könntest du nicht eine kleine Ausnahme machen (...)";
+	description	= "Nie mozna zrobic jednego malego wyjatku (....) )";
 };
 
 FUNC INT Info_Mod_Torgan_Wegschauen_Condition()
@@ -812,9 +812,9 @@ FUNC INT Info_Mod_Torgan_Wegschauen_Condition()
 
 FUNC VOID Info_Mod_Torgan_Wegschauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torgan_Wegschauen_15_00"); //Könntest du nicht eine kleine Ausnahme machen und kurz in eine Andere Richtung schaun?
-	AI_Output(self, hero, "Info_Mod_Torgan_Wegschauen_13_01"); //Nein! Kannst du nicht zuhören? Vielleicht haben einige Jagdtrupps von uns was für dich zu tun, sie mal bei denen nach.
-	AI_Output(self, hero, "Info_Mod_Torgan_Wegschauen_13_02"); //Bei Dragomir in Khorinis findest du eigentlich immer genug.
+	AI_Output(hero, self, "Info_Mod_Torgan_Wegschauen_15_00"); //Czy nie mozna zrobic odrobiny wyjatku i spojrzec inaczej?
+	AI_Output(self, hero, "Info_Mod_Torgan_Wegschauen_13_01"); //Nie! Nie mozesz sluchac? Byc moze niektóre z naszych oddzialów mysliwskich maja cos do zrobienia, sa po nich.
+	AI_Output(self, hero, "Info_Mod_Torgan_Wegschauen_13_02"); //Dragomir w Khorinis zawsze wystarczy dla ciebie.
 };
 
 INSTANCE Info_Mod_Torgan_Lernen (C_INFO)
@@ -825,7 +825,7 @@ INSTANCE Info_Mod_Torgan_Lernen (C_INFO)
 	information	= Info_Mod_Torgan_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was kannst du mir beibringen?";
+	description	= "Czego mozesz mnie nauczyc?";
 };
 
 FUNC INT Info_Mod_Torgan_Lernen_Condition()
@@ -846,55 +846,55 @@ FUNC VOID Info_Mod_Torgan_Lernen_ShowOptions()
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Torgan_Lernen_Teeth);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Torgan_Lernen_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Torgan_Lernen_Claws);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Torgan_Lernen_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Torgan_Lernen_BFSting);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Torgan_Lernen_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Torgan_Lernen_Fur);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Torgan_Lernen_Fur);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_TrollTeeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Trollhauer reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_TrollTeeth)), Info_Mod_Torgan_Lernen_TrollTeeth);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Trollhauer z rabkiem rolowca",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_TrollTeeth)), Info_Mod_Torgan_Lernen_TrollTeeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_SwampSharkTeeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Sumpfhaizähne ziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_SwampSharkTeeth)), Info_Mod_Torgan_Lernen_SwampsharkTeeth);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("mokradla zeby rekinów ciagniecie",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_SwampSharkTeeth)), Info_Mod_Torgan_Lernen_SwampsharkTeeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Häuten von Reptilien",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Torgan_Lernen_ReptileSkin);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Skinowanie gadów",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Torgan_Lernen_ReptileSkin);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Heart] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Herzen nehmen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)), Info_Mod_Torgan_Lernen_Heart);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("wziac serca",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)), Info_Mod_Torgan_Lernen_Heart);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ShadowHorn] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Schattenläuferhörner nehmen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)), Info_Mod_Torgan_Lernen_ShadowHorn);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Wziac klaksony biegaczy cieni",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)), Info_Mod_Torgan_Lernen_ShadowHorn);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Feuerzungen reißen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)), Info_Mod_Torgan_Lernen_FireTongue);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("pekajace jezyki ognia",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)), Info_Mod_Torgan_Lernen_FireTongue);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Flügel nehmen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)), Info_Mod_Torgan_Lernen_BFWing);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Wezmy skrzydlo",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)), Info_Mod_Torgan_Lernen_BFWing);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Klauen nehmen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)), Info_Mod_Torgan_Lernen_Mandibles);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("kradziez",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)), Info_Mod_Torgan_Lernen_Mandibles);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("Drachensnapperhorn nehmen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)), Info_Mod_Torgan_Lernen_DrgSnapperHorn);
+		Info_AddChoice	(Info_Mod_Torgan_Lernen, B_BuildLearnString ("wziac pod uwage podbródek smokowy",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)), Info_Mod_Torgan_Lernen_DrgSnapperHorn);
 	};
 };
 
@@ -904,9 +904,9 @@ FUNC VOID Info_Mod_Torgan_Lernen_Info()
 		Mod_Torgan_Lehrer = TRUE;
 		
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_WALDIS, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Torgan kann mich das Nehmen verschiedener Jagdtrophäen lehren.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Torgan moze nauczyc mnie brac rózne trofea mysliwskie.");
 	};
-	AI_Output(hero, self, "Info_Mod_Torgan_Lernen_15_00"); //Was kannst du mir beibringen?
+	AI_Output(hero, self, "Info_Mod_Torgan_Lernen_15_00"); //Czego mozesz mnie nauczyc?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
@@ -922,13 +922,13 @@ FUNC VOID Info_Mod_Torgan_Lernen_Info()
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_13_01"); //Kommt darauf an, was du wissen willst.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_13_01"); //Zalezy od tego, co chcesz wiedziec.
 
 		Info_Mod_Torgan_Lernen_ShowOptions();
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_13_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_13_02"); //Nie moge cie nauczyc wiecej niz juz wiesz. Przepraszam za to.
 	};
 };
 
@@ -941,9 +941,9 @@ FUNC void Info_Mod_Torgan_Lernen_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Claws))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_00"); //Zwierzeta nie lubia oddawac pazurów. Musisz trafic dokladnie tam, gdzie idziesz nozem.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_01"); //Postawa dloni powinna byc lekko uwiklana. Z mocnym wstrzasem odciales pazur.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Claws_13_02"); //Sprzet jest zawsze pozadanym srodkiem platniczym dla przedsiebiorcy.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -954,8 +954,8 @@ FUNC void Info_Mod_Torgan_Lernen_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Teeth))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Teeth_13_00"); //Das einfachste, was du Tieren entnehmen kannst, sind seine Zähne. Du fährst mit deinem Messer in seinem Maul um das Gebiss.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Teeth_13_01"); //Dann trennst es geschickt mit einem Ruck vom Schädel des Tieres.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Teeth_13_00"); //Najprostsza rzecza, która mozna wyciagnac ze zwierzat jest ich zeby. Jezdzisz nozem dookola protezy w ustach.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Teeth_13_01"); //Potem umiejetnie oddziela sie go od czaszki zwierzecia szarpnieciem.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -965,8 +965,8 @@ FUNC void Info_Mod_Torgan_Lernen_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_BFSting))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFSting_13_00"); //Die Fliege hat am Rücken eine weiche Stelle.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFSting_13_01"); //Wenn du dort mit der Hand gegen drückst, fährt der Stachel sehr weit aus und du kannst ihn mit dem Messer abtrennen.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFSting_13_00"); //mucha ma miekkie miejsce na plecach.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFSting_13_01"); //Jesli wcisna Panstwo dlon do niej dociskajac, uklucie wysuwa sie bardzo daleko i mozna ja przeciac nozem.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -976,8 +976,8 @@ FUNC void Info_Mod_Torgan_Lernen_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Fur))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Fur_13_00"); //Felle ziehst du am besten ab, indem du einen tiefen Schnitt an den Hinterläufen des Tieres vornimmst.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Fur_13_01"); //Dann kannst du das Fell von vorne nach hinten eigentlich immer sehr leicht abziehen.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Fur_13_00"); //Najlepszym sposobem usuniecia siersci jest wykonanie glebokiego ciecia na tylnych nogach zwierzecia.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Fur_13_01"); //Dzieki temu zawsze mozna latwo sciagnac futro z przodu do tylu.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1005,7 +1005,7 @@ FUNC void Info_Mod_Torgan_Lernen_ReptileSkin()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_ReptileSkin))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_ReptileSkin_13_00"); //Wenn du die Haut an den Seiten anschneidest, löst sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu häuten.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_ReptileSkin_13_00"); //Po przecieciu skóry po bokach, skóra sie rozprezy. Od teraz nie powinno sie miec problemu z skórowaniem jaszczurek.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1015,7 +1015,7 @@ FUNC void Info_Mod_Torgan_Lernen_Heart()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Heart))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Heart_13_00"); //Ein Herz entfernst du dem Tier mit einem gekonnten Schnitt in die Brust. Lohnt sich aber häufig nur bei besonderen Tieren oder magischen Wesen.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Heart_13_00"); //Serce usuwa sie z zwierzecia za pomoca sprytnego naciecia w klatce piersiowej. Jednak czesto oplaca sie to tylko dla wyjatkowych zwierzat lub magicznych istot.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1034,7 +1034,7 @@ FUNC void Info_Mod_Torgan_Lernen_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_FireTongue))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_FireTongue_13_00"); //Die Zunge von einem Feuerwaran schlägst du mit einem Messerhieb aus dem Maul, während du sie mit der anderen Hand festhältst.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_FireTongue_13_00"); //Za pomoca noza wycietego z ust podczas trzymania go druga reka uderza sie w jezyk monitora przeciwpozarowego.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1044,8 +1044,8 @@ FUNC void Info_Mod_Torgan_Lernen_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_BFWing))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFWing_13_00"); //Die Flügel einer Fliege entfernst du am besten mit einem Hieb einer scharfen Klinge sehr nah am Körper der Fliege.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFWing_13_01"); //Du musst nur darauf achten, dass du das feine Gewebe der Flügel nicht verletzt. Sie sind nichts mehr wert, wenn du es nicht vorsichtig machst.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFWing_13_00"); //Najlepszym sposobem na usuniecie skrzydel skrzydla muchy jest przeciecie ostrego ostrza bardzo blisko korpusu muchy.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_BFWing_13_01"); //Upewnij sie tylko, ze nie uszkodzisz cienkiej tkaniny skrzydel. Oni sa bezwartosciowi, chyba ze robisz to ostroznie.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1055,8 +1055,8 @@ FUNC void Info_Mod_Torgan_Lernen_Mandibles()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Mandibles))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Mandibles_13_00"); //Klar, nachdem du das Vieh getötet hast, packst du es an den Beißzangen und reißt sie gerade heraus. Dann kommt die Sekretdrüse mit raus, ohne zu zerreißen.
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Mandibles_13_01"); //Ich habe übrigens gehört, dass das so auch mit Feldräubern klappen soll.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Mandibles_13_00"); //Z pewnoscia, po zabiciu bydla, chwycic go za szczypce i wyrwac. Nastepnie gruczol wydzielania wychodzi bez rozdarcia.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_Mandibles_13_01"); //Nawiasem mówiac, slyszalem, ze tak wlasnie dziala z polowymi zlodziejami.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();
@@ -1066,7 +1066,7 @@ FUNC void Info_Mod_Torgan_Lernen_DrgSnapperHorn()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_DrgSnapperHorn))
 	{
-		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_DrgSnapperHorn_13_00"); //Am Stirnansatz des Drachensnappers ist die beste Stelle, ihm das Horn mit einem stabilen Messer aus dem Schädel zu trennen.
+		AI_Output(self, hero, "Info_Mod_Torgan_Lernen_DrgSnapperHorn_13_00"); //Przy podstawie czolo smoka jest najlepszym miejscem do oddzielenia rogu od czaszki stabilnym nozem.
 	};
 
 	Info_Mod_Torgan_Lernen_ShowOptions();

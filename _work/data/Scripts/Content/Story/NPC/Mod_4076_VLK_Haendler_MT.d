@@ -1,7 +1,7 @@
 instance Mod_4076_VLK_Haendler_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Händler"; 
+	name 		= "monstrum"; 
 	guild 		= GIL_NONE;
 	id 			= 4076;
 	voice 		= 1;

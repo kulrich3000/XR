@@ -1,7 +1,7 @@
 instance Mod_7478_OUT_Roman_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Roman"; 
+	name 		= "powiesc"; 
 	guild 		= GIL_OUT;
 	id 			= 7478;
 	voice 		= 8;

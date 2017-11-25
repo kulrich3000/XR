@@ -18,9 +18,9 @@ FUNC INT Info_Mod_Trent_VM_Hi_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_VM_Hi_06_00"); //Wobei soll ich dir denn genau hier helfen?
-	AI_Output(hero, self, "Info_Mod_Trent_VM_Hi_15_01"); //Am besten folgst du mir erst mal ein wenig tiefer in die Mine.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_Hi_06_02"); //In Ordnung.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_Hi_06_00"); //Co mam Ci tu pomóc?
+	AI_Output(hero, self, "Info_Mod_Trent_VM_Hi_15_01"); //Najpierw powinienes zaglebic sie nieco glebiej w moja kopalnie.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_Hi_06_02"); //Wszystkie sluszne, wszystkie sluszne.
 
 	AI_StopProcessInfos	(self);
 
@@ -49,12 +49,12 @@ FUNC INT Info_Mod_Trent_VM_BrauchenLicht_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_BrauchenLicht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_00"); //Mhm, hier scheint ein merkwürdiger Windzug zu herrschen. Normale Fackeln werden hier wahrscheinlich nicht funktionieren.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_01"); //Ich glaube, ich weiß, was wir hier brauchen. Ich hatte mich schon gefragt, wann ich die Runen mal wirklich brauche.
-	AI_Output(hero, self, "Info_Mod_Trent_VM_BrauchenLicht_15_02"); //Was für eine Rune meinst du?
-	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_03"); //Die Lichtrune, die man als Ritter bekommt. Mit ihr werden wir in der Dunkelheit keine Probleme haben.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_00"); //Pojawia sie dziwny podmuch wiatru. Normalne latarki prawdopodobnie nie zadzialaja.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_01"); //Mysle, ze wiem, czego nam tutaj potrzeba. Zastanawialem sie, kiedy naprawde potrzebuje runy.
+	AI_Output(hero, self, "Info_Mod_Trent_VM_BrauchenLicht_15_02"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Trent_VM_BrauchenLicht_06_03"); //Swiatla runa dostajesz jako rycerz. Nie bedziemy miec z nia zadnych problemów w ciemnosci.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent will seine Lichtrune einsetzen, um uns Licht im rechten Tunnel zu spenden.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent chce wykorzystac swoja jasna rune, aby dac nam swiatlo we wlasciwym tunelu.");
 
 	AI_StopProcessInfos	(self);
 
@@ -84,15 +84,15 @@ FUNC INT Info_Mod_Trent_VM_AtFirstNager_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_AtFirstNager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_00"); //Mhm, diese Monster kommen mir bekannt vor.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_00"); //Mem, te potwory wygladaja znajomo.
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_01"); //Ja, genau, derartige Monster sind mir schon in einer Höhle in Varant auf gefallen.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_02"); //Allerdings war es dort eine Goldmine und die Nager waren wesentlich kleiner als diese hier.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_03"); //Wenn ich mich nicht irre, dürften sie auch eine Königin haben. Also lass uns weiter gehen.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_01"); //Tak, prawda, juz wczesniej widzialem takie potwory w jaskini w Varant.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_02"); //Byla to jednak kopalnia zlota, a gryzonie byly znacznie mniejsze niz ta.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtFirstNager_06_03"); //Jesli sie nie myle, moga miec królowa. Nie ustapmy wiec dalej.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent meint, er kenne die Erznager bereits aus Varant, auch wenn sie dort kleiner sind. Er vermutet auch eine Königin hier in der Mine.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent mówi, ze zna juz rude gryzoni z Varant, nawet jesli sa tam mniejsze. Podejrzewa tez, ze w kopalni jest królowa.");
 
 	AI_StopProcessInfos	(self);
 
@@ -120,8 +120,8 @@ FUNC INT Info_Mod_Trent_VM_AtSecondNager_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_AtSecondNager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtSecondNager_06_00"); //Kannst du das auch hören?! Ich glaube die Königin ist sehr nah, sie wird auch einige ihrer Kinder um sich geschart haben.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AtSecondNager_06_01"); //Ich warte hier, falls du noch etwas benötigst ist jetzt die letzte Möglichkeit.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtSecondNager_06_00"); //Czy moze pan to uslyszec? Mysle, ze królowa jest bardzo blisko, ona równiez zgromadzi wokól siebie kilka swoich dzieci.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AtSecondNager_06_01"); //Czekam tutaj, jesli czegos jeszcze potrzebujesz, to juz ostatnia szansa.
 
 	AI_StopProcessInfos	(self);
 
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Trent_VM_KillQueen (C_INFO)
 	information	= Info_Mod_Trent_VM_KillQueen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit, erledigen wir sie!";
+	description	= "Jestem gotowy, skonczmy je!";
 };
 
 FUNC INT Info_Mod_Trent_VM_KillQueen_Condition()
@@ -150,8 +150,8 @@ FUNC INT Info_Mod_Trent_VM_KillQueen_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_KillQueen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trent_VM_KillQueen_15_00"); //Ich bin bereit, erledigen wir sie!
-	AI_Output(self, hero, "Info_Mod_Trent_VM_KillQueen_06_01"); //Dann los!
+	AI_Output(hero, self, "Info_Mod_Trent_VM_KillQueen_15_00"); //Jestem gotowy, skonczmy je!
+	AI_Output(self, hero, "Info_Mod_Trent_VM_KillQueen_06_01"); //Idzmy!
 
 	AI_StopProcessInfos	(self);
 
@@ -179,7 +179,7 @@ FUNC INT Info_Mod_Trent_VM_QueenDead_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_QueenDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_VM_QueenDead_06_00"); //So, das Vieh wird sich im nächsten Leben zweimal überlegen, wo es seine Eier legt. Mal sehen, was es alles interessantes gefressen hat.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_QueenDead_06_00"); //Tak wiec bydlo dwa razy zastanowi sie, gdzie zlozyc jaja w nastepnym zyciu. Zobaczmy, co bylo ciekawe.
 
 	AI_GotoNpc	(self, ErznagerQueen);
 	AI_TurnToNpc	(self, ErznagerQueen);
@@ -189,7 +189,7 @@ FUNC VOID Info_Mod_Trent_VM_QueenDead_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Trent_VM_QueenDead_06_01"); //Seltsam ... so etwas habe ich noch nie gesehen.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_QueenDead_06_01"); //Dziwny.... Nigdy nie widzialem niczego podobnego.
 
 	self.aivar[AIV_Partymember] = FALSE;
 };
@@ -202,7 +202,7 @@ INSTANCE Info_Mod_Trent_VM_AfterQueen (C_INFO)
 	information	= Info_Mod_Trent_VM_AfterQueen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung mit dir?";
+	description	= "Czy masz racje?";
 };
 
 FUNC INT Info_Mod_Trent_VM_AfterQueen_Condition()
@@ -215,16 +215,16 @@ FUNC INT Info_Mod_Trent_VM_AfterQueen_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_AfterQueen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueen_15_00"); //Alles in Ordnung mit dir?
+	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueen_15_00"); //Czy masz racje?
 
 	Wld_PlayEffect("spellFX_Fear", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueen_06_01"); //Es gehört mir, verstanden! Keiner darf erfahren, dass ich es besitze.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueen_06_02"); //(zu sich selbst) Warum sollte ich ein Risiko eingehen?! Ein Opfer wird mir womöglich seine gesammte Macht zugänglich machen.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueen_06_01"); //To moje, to moje! Nikt nie wie, ze jestem jego wlascicielem.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueen_06_02"); //Dlaczego powinienem skorzystac z szansy? Ofiara moze dac mi dostep do calej swojej wladzy.
 
 	CreateInvItems	(self, ItMi_SchwarzesErz_Trent, 1);
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent ist durchgedreht und greift mich an. Ich sollte ihn erst mal K.O. schlagen und dann sehen, was mit ihm los ist.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent sie wypuszcza i atakuje mnie. Najpierw powinienem dac mu K. O. i zobacz, co jest z nim zle.");
 
 	AI_StopProcessInfos	(self);
 
@@ -253,12 +253,12 @@ FUNC INT Info_Mod_Trent_VM_AfterQueenAttack_Condition()
 FUNC VOID Info_Mod_Trent_VM_AfterQueenAttack_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueenAttack_15_00"); //Langsam habe ich genug von Kerlen, die in dunklen Höhlen den Verstand verlieren.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_01"); //Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueenAttack_15_02"); //Das schwarze Erz hier hat dich ziemlich durchdrehen lassen. Komisch, denn bei mir zeigt es scheinbar keine Wirkung.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_03"); //Ich hab schon viel dunkle Magie erlebt, dass diese allerdings eines Tages mich treffen würde, habe ich nicht erwartet.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_04"); //Auf jeden Fall danke ich dir. An solchen magischen Artefakten kann man ganz schön zu Grunde gehen.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_05"); //Ich denke, ich setz mich erst mal ein wenig von der Gruppe ab und denke über all das hier nach. Vielleicht sieht man sich ja noch mal.
+	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueenAttack_15_00"); //Jestem zmeczony chlopakami, którzy gubia umysly w ciemnych jaskiniach.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_01"); //Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Trent_VM_AfterQueenAttack_15_02"); //Czarna ruda wokól niej wypuszczala cie na wolnosc. Zabawny, bo wydaje mi sie nie dzialac.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_03"); //Przezylam wiele mrocznych magii, ale pewnego dnia nie spodziewalam sie, ze mnie uderzy.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_04"); //W kazdym razie dziekuje. Takie magiczne artefakty moga cie zrujnowac.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AfterQueenAttack_06_05"); //Mysle, ze zrobie sobie przerwe od pracy w grupie i pomysle o tym wszystkim. Moze znów cie zobacze.
 
 	B_GivePlayerXP	(400);
 
@@ -275,7 +275,7 @@ INSTANCE Info_Mod_Trent_VM_AndreSauer (C_INFO)
 	information	= Info_Mod_Trent_VM_AndreSauer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich glaube, Lord Andre ist ein wenig sauer auf deine Entscheidung direkt hierher zu kommen.";
+	description	= "Mysle, ze Pan Andre jest troche gniewny z powodu waszej decyzji, aby tu wlasnie przyjsc.";
 };
 
 FUNC INT Info_Mod_Trent_VM_AndreSauer_Condition()
@@ -289,8 +289,8 @@ FUNC INT Info_Mod_Trent_VM_AndreSauer_Condition()
 
 FUNC VOID Info_Mod_Trent_VM_AndreSauer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trent_VM_AndreSauer_15_00"); //Ich glaube, Lord Andre ist ein wenig sauer auf deine Entscheidung direkt hierher zu kommen.
-	AI_Output(self, hero, "Info_Mod_Trent_VM_AndreSauer_06_01"); //Das sind sie meistens, bis ich mit einem Berg voll Erz zurück komme. Dann war es plötzlich doch ihre Idee.
+	AI_Output(hero, self, "Info_Mod_Trent_VM_AndreSauer_15_00"); //Mysle, ze Pan Andre jest troche gniewny z powodu waszej decyzji, aby tu wlasnie przyjsc.
+	AI_Output(self, hero, "Info_Mod_Trent_VM_AndreSauer_06_01"); //Zwykle sa one az do powrotu z góra rudy. Potem nagle to byl jej pomysl.
 };
 
 INSTANCE Info_Mod_Trent_VM_EXIT (C_INFO)

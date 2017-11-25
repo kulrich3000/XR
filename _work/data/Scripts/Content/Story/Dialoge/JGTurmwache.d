@@ -18,22 +18,22 @@ FUNC INT Info_Mod_JGTurmwache_Felle_Condition()
 
 FUNC VOID Info_Mod_JGTurmwache_Felle_Info()
 {
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_00"); //He, du!
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_01"); //Ja, was ist?
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_02"); //Du kommst doch viel rum, oder?
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_03"); //Das kannst du laut sagen.
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_04"); //Tu ich doch!
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_05"); //Hier oben zieht's wie Hechtsuppe. Ich brauch dringend ein warmes Fell.
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_06"); //Dann besorg dir eins beim Händler!
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_07"); //Wie?
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_08"); //Der Händler hat doch welche.
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_09"); //Schon. Aber die sind nach paar Tagen steif wie 'n Brett.
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_10"); //Was warmes, weiches darf's schon sein.
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_11"); //Gut. Mal sehen, was ich tun kann.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_00"); //Hej, Ty!
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_01"); //Tak, co to jest?
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_02"); //Duzo sie rozgladasz, czy nie?
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_03"); //Mozna to powiedziec jeszcze raz.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_04"); //Czyz nie?
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_05"); //To jak szczupak. Naprawde potrzebuje cieplej powloki.
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_06"); //Nastepnie nalezy ja pobrac od dealera!
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_07"); //Jak?
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_08"); //Kupiec ma ich kilka.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_09"); //Tak jest. Ale po kilku dniach sa tak samo sztywne jak deska.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle_32_10"); //Zrobic cos cieplego i miekkiego.
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle_15_11"); //Dobre. Zobaczmy, co moge zrobic.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_TURMFELLE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_TURMFELLE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_TURMFELLE, "Ein neues Fell für den Turmwächter. Mal sehen.");
+	B_LogEntry	(TOPIC_MOD_JG_TURMFELLE, "Nowy plaszcz ochronny dla strazy wiezy. Zobaczmy teraz.");
 };
 
 INSTANCE Info_Mod_JGTurmwache_Felle2 (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_JGTurmwache_Felle2 (C_INFO)
 	information	= Info_Mod_JGTurmwache_Felle2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier etwas für dich.";
+	description	= "Mam tu cos dla panstwa.";
 };
 
 FUNC INT Info_Mod_JGTurmwache_Felle2_Condition()
@@ -57,16 +57,16 @@ FUNC INT Info_Mod_JGTurmwache_Felle2_Condition()
 
 FUNC VOID Info_Mod_JGTurmwache_Felle2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_00"); //Ich habe hier etwas für dich.
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_01"); //Ja, was ist es?
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_02"); //Nun, es ist flauschig weich und herrlich warm ...
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_03"); //Sag bloß du hast ein Fell für mich gefunden?
-	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_04"); //Genau so ist es, hier hast du es.
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_00"); //Mam tu cos dla panstwa.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_01"); //Tak, co to jest?
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_02"); //Cóz, jest miekki, puszysty i cudownie cieply....
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_03"); //Nie mów mi, ze znalazles dla mnie futro.
+	AI_Output(hero, self, "Info_Mod_JGTurmwache_Felle2_15_04"); //Tak to jest, tutaj masz.
 
 	B_GiveInvItems	(hero, self, ItMi_Kuschelfell, 1);
 
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_05"); //Das ist ja wunderbar weich. Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_06"); //Hier nimm das.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_05"); //To cudownie miekkie. Dziekuje bardzo.
+	AI_Output(self, hero, "Info_Mod_JGTurmwache_Felle2_32_06"); //Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 

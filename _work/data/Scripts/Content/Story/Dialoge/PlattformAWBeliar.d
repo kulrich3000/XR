@@ -6,7 +6,7 @@ INSTANCE Info_Mod_PlattformAWBeliar_Erzbrocken (C_INFO)
 	information	= Info_Mod_PlattformAWBeliar_Erzbrocken_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Erzbrocken auf Plattform legen)";
+	description	= "(ukladanie rudy na platformie)";
 };
 
 FUNC INT Info_Mod_PlattformAWBeliar_Erzbrocken_Condition()
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_PlattformAWBeliar_Weihwasser (C_INFO)
 	information	= Info_Mod_PlattformAWBeliar_Weihwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Weihwasser auf Plattform legen)";
+	description	= "(Zanieczyszczajaca woda na peronie)";
 };
 
 FUNC INT Info_Mod_PlattformAWBeliar_Weihwasser_Condition()

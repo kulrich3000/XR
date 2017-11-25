@@ -1,7 +1,7 @@
 instance Mod_784_SLD_Fester_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fester";
+	name 		= "twardszy";
 	guild 		= GIL_MIL;
 	id 			= 784;
 	voice 		= 31;

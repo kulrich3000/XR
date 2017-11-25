@@ -1,7 +1,7 @@
 INSTANCE Mod_10041_Orc_Schamane_MT (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Orkschamane";
+	name							=	"Szamaniki z Orchidei";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10041;
 	voice							=	18;

@@ -2,7 +2,7 @@ instance Mod_1308_SLD_Rath_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Rath";
+	name =					"konsylium";
 	Npctype =				Npctype_main;
 	guild =					GIL_mil;      
 	level =					11;

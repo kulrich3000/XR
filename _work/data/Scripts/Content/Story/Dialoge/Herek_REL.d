@@ -18,38 +18,38 @@ FUNC INT Info_Mod_Herek_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Herek_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_00"); //Hey, warte mal.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_01"); //Du siehst aus wie jemand, der sich eine gute Gelegenheit nicht durch die Lappen gehen lassen würde.
-	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_15_02"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_03"); //Nun, ich könnte dir erzählen – sagen wir für nur 100 Goldmünzen – wo du einen Schatz findest.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_00"); //Hejdz, odczekaj minute.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_01"); //Wyglada na to, ze ktos, kto nie pozwolilby, aby dobra okazja przeslizgnela sie mu przez palce.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_15_02"); //Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_01_03"); //Cóz, móglbym powiedziec wam - powiedzmy to po prostu dla 100 zlotych monet - gdzie mozna znalezc skarb.
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_Hi);
 
-	Info_AddChoice	(Info_Mod_Herek_REL_Hi, "Vergiss es. Ich behalte mein Gold.", Info_Mod_Herek_REL_Hi_B);
-	Info_AddChoice	(Info_Mod_Herek_REL_Hi, "Ok, hier. Leg los.", Info_Mod_Herek_REL_Hi_A);
+	Info_AddChoice	(Info_Mod_Herek_REL_Hi, "Zapomnij o tym. Zachowuje zloto.", Info_Mod_Herek_REL_Hi_B);
+	Info_AddChoice	(Info_Mod_Herek_REL_Hi, "Okay, tutaj. Idz na to.", Info_Mod_Herek_REL_Hi_A);
 };
 
 FUNC VOID Info_Mod_Herek_REL_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_B_15_00"); //Vergiss es. Ich behalte mein Gold.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_B_01_01"); //Okey, dir entgeht damit zwar einiges an Gold ... aber andere Abenteurer lassem sich diese Gelegenheit bestimmt nicht entgehen.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_B_15_00"); //Zapomnij o tym. Zachowuje zloto.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_B_01_01"); //Dobrze, tracisz na zlocie.... Ale inni poszukiwacze przygód z pewnoscia nie przegapia tej szansy.
 };
 
 FUNC VOID Info_Mod_Herek_REL_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_A_15_00"); //Ok, hier. Leg los.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_Hi_A_15_00"); //Okay, tutaj. Idz na to.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_01"); //Gut, dann hör zu. In einem der verfallenen Gebäude vor dem Moor läuft ein verendeter Abenteurer herum.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_02"); //Wie ich nun mitbekommen habe, fand er vor seinem Tod viel Gold und einige wertvolle Artefakte ...
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_03"); //Die muss er noch bei sich haben. Kapiert?
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_01"); //Cóz, potem sluchaj. W jednym z zniszczonych budynków przed torfowiskiem znajduje sie martwy poszukiwacz przygód.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_02"); //Jak juz zauwazylem, przed smiercia znalazl wiele zlota i cennych artefaktów... Wiecej
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Hi_A_01_03"); //Wciaz musi miec go przy sobie. Czy to zrobiles?
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_Hi);
 
 	Log_CreateTopic	(TOPIC_MOD_HEREK_GOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HEREK_GOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Für 100 Münzen habe ich von Herek erfahren, dass bei den verfallenen Gebäuden vor dem Moor ein verendeter Abenteurer als Untoter herumwandelt, der noch einiges an Gold und Schätzen bei sich haben muss.");
+	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Na 100 monetach dowiedzialem sie od Hereka, ze umierajacy poszukiwacz przygód wedruje po zniszczonych budynkach przed wrzosowiskiem jako nieumarly, który musi nadal nosic z soba zloto i skarb.");
 
 	Wld_InsertNpc	(Zombie_Herek,	"FP_ROAM_ZOMBIE_HEREK");
 };
@@ -75,19 +75,19 @@ FUNC INT Info_Mod_Herek_REL_AtZombie_Condition()
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_01_00"); //(zu sich selbst) Hähä, jetzt kann ich hier ungestört buddeln. (bemerkt den Helden) Was, du?!
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_15_01"); //Ja, ich! Du Schwein hast mich reingelegt.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_01_02"); //(hämisch) Und, was willst du jetzt machen?
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_01_00"); //Huh, teraz moge bez zaklócen kopac. Co ty!
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_15_01"); //Tak, ja! Masz szczescie, ze mnie ustawiles.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_01_02"); //Co wiec teraz robisz?
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_AtZombie);
 
-	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie, "Mir mein Gold wiederholen.", Info_Mod_Herek_REL_AtZombie_B);
-	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie, "Mein Gold zurückverlangen.", Info_Mod_Herek_REL_AtZombie_A);
+	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie, "Powtórzcie mi moje zloto.", Info_Mod_Herek_REL_AtZombie_B);
+	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie, "Zdobadz zloto z powrotem.", Info_Mod_Herek_REL_AtZombie_A);
 };
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie_C()
 {
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_C_01_00"); //Ja?! Kannst es ja mal versuchen!
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_C_01_00"); //Tak! Dlaczego nie spróbowac?
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_AtZombie);
 
@@ -98,18 +98,18 @@ FUNC VOID Info_Mod_Herek_REL_AtZombie_C()
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie_B()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_B_15_00"); //Mir mein Gold wiederholen.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_B_15_00"); //Powtórzcie mi moje zloto.
 
 	Info_Mod_Herek_REL_AtZombie_C();
 };
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie_A()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_A_15_00"); //Mein Gold zurückverlangen.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_01"); //Ohh, mir kommen gleich die Tränen.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_02"); //Wenn du dich reinlegen lässt, bist du selbst schuld. Jeder muss mal sein Lehrgeld zahlen.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_03"); //Solltest mir eigentlich noch dankbar sein für die Lektion.
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_A_15_04"); //Ich glaube ich muss DIR gleich eine Lektion beibringen.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_A_15_00"); //Zdobadz zloto z powrotem.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_01"); //Och, za chwile bede plakal.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_02"); //Jesli dajesz sie oszukiwac, to twoja wlasna wina. Kazdy musi placic wlasne czesne.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie_A_01_03"); //Powinniscie byc wdzieczni za te lekcje.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie_A_15_04"); //Mysle, ze musze nauczyc Cie lekcji.
 
 	Info_Mod_Herek_REL_AtZombie_C();
 };
@@ -135,7 +135,7 @@ FUNC INT Info_Mod_Herek_REL_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Herek_REL_Umgehauen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Herek_REL_Umgehauen_04_00"); //Du Mistkerl, meine Knochen.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_Umgehauen_04_00"); //Jestes synem suki, kosci moich.
 							
 	// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
 	self.aivar[AIV_ArenaFight] = AF_NONE;
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Herek_REL_AtZombie2 (C_INFO)
 	information	= Info_Mod_Herek_REL_AtZombie2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo ist der Rest meines Goldes?";
+	description	= "Gdzie jest reszta mojego zlota?";
 };
 
 FUNC INT Info_Mod_Herek_REL_AtZombie2_Condition()
@@ -169,35 +169,35 @@ FUNC INT Info_Mod_Herek_REL_AtZombie2_Condition()
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_15_00"); //Wo ist der Rest meines Goldes?
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_01_01"); //Hä, das wüsstest du wohl gerne. Aber ich sag nichts!
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_15_00"); //Gdzie jest reszta mojego zlota?
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_01_01"); //Huh, chcialbys wiedziec. Ale nic nie powiem!
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_AtZombie2);
 
-	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie2, "Dann muss ich deine Zunge mit einer weiteren Tracht Prügel lockern.", Info_Mod_Herek_REL_AtZombie2_B);
-	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie2, "Dann mach, dass du weg kommst.", Info_Mod_Herek_REL_AtZombie2_A);
+	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie2, "Wtedy bede musial poluzowac Twój jezyk z kolejnym pobiciem.", Info_Mod_Herek_REL_AtZombie2_B);
+	Info_AddChoice	(Info_Mod_Herek_REL_AtZombie2, "Potem wyjmij pieklo z niego.", Info_Mod_Herek_REL_AtZombie2_A);
 };
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_00"); //Dann muss ich deine Zunge mit einer weiteren Tracht Prügel lockern.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_00"); //Wtedy bede musial poluzowac Twój jezyk z kolejnym pobiciem.
 
 	AI_PlayAni	(hero, "T_FISTATTACKMOVE");
 
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_01"); //Ahh, meine Knochen.
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_02"); //Das hatten wir schon mal.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_03"); //(nachgebend) Ok. Ich zeig dir ja, wo es funkelt. (impulsiv) Hier!
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_01"); //Ahh, moje kosci.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_02"); //Przeszlismy przez to juz wczesniej.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_03"); //(obnizenie) Okay. Pokaze Ci, gdzie sie swieci. (impulsywne) Tutaj!
 
 	AI_PlayAni	(hero, "T_FISTATTACKMOVE");
 
 	AI_TurnToNpc	(hero, self);
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_04"); //(stöhnt) Ahh ... ich kann nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_05"); //Wir können das Spiel gerne so weitertreiben.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_06"); //Jaja ... ich hab genug.
-	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_07"); //Das Gold liegt auf dem Dach der verfallenen Hütte, die am weitesten vom Moor entfernt liegt.
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_08"); //Ok, ich schaue nach ... und wehe du hast mich belogen.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_04"); //(grozy) Ahhh..... Nie moge juz tego robic.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_05"); //Jestesmy szczesliwi, ze mozemy kontynuowac gre.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_06"); //Tak, tak, tak..... Mialem dosc.
+	AI_Output(self, hero, "Info_Mod_Herek_REL_AtZombie2_B_01_07"); //Zloto znajduje sie na dachu zniszczonej chaty, najdalej oddalonej od bagna.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_B_15_08"); //Dobrze, sprawdze.... Nie osmielisz sie klamac.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_AtZombie2);
@@ -208,7 +208,7 @@ FUNC VOID Info_Mod_Herek_REL_AtZombie2_B()
 
 	Wld_InsertItem	(ItMi_HerekBeutel,	"FP_ITEM_HEREKBEUTEL");
 
-	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Es hat einige Überredungskunst gekostet, aber endlich hat Herek ausgespuckt, wo er den Rest meines Goldes versteckt hat… zumindest hoffe ich das. Es liegt auf dem Dach der zerfallenen Hütte, die am weitsteten vom Moor entfernt liegt.");
+	B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Trzeba bylo troche perswazji, ale w koncu Herek wyskoczyl, gdzie ukryl reszte mojego zlota.... przynajmniej mam taka nadzieje. Znajduje sie on na dachu rozpadajacej sie chaty, najdalej oddalonej od torfowiska.");
 	B_SetTopicStatus	(TOPIC_MOD_HEREK_GOLD, LOG_SUCCESS);
 
 	B_GivePlayerXP	(300);
@@ -216,7 +216,7 @@ FUNC VOID Info_Mod_Herek_REL_AtZombie2_B()
 
 FUNC VOID Info_Mod_Herek_REL_AtZombie2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_A_15_00"); //Dann mach, dass du weg kommst.
+	AI_Output(hero, self, "Info_Mod_Herek_REL_AtZombie2_A_15_00"); //Potem wyjmij pieklo z niego.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Herek_REL_AtZombie2);

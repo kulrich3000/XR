@@ -15,7 +15,7 @@ FUNC INT ENTER_KLOSTERKELLERDOOR ()
 	}
 	else
 	{
-		AI_PrintScreen	("Ich bin noch nicht so weit", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("Jeszcze tego nie zrobilem.", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		return 0;
 	};

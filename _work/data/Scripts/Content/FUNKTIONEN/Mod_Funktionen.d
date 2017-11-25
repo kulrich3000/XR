@@ -9,7 +9,7 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 	var string GefallenMeldung;
 
 	GefallenMeldung = ConcatStrings("+", IntToString(GefallenCounter));
-	GefallenMeldung = ConcatStrings(GefallenMeldung, " Gesinnung für ");
+	GefallenMeldung = ConcatStrings(GefallenMeldung, " Polozenie wzgledem ");
 
 	if (GefallenArt == 1)
 	{
@@ -21,7 +21,7 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 	{
 		Adanos_Gefallen += GefallenCounter;
 
-		GefallenMeldung = ConcatStrings(GefallenMeldung, "Adanos");
+		GefallenMeldung = ConcatStrings(GefallenMeldung, "adanos");
 	}
 	else if (GefallenArt == 3)
 	{
@@ -37,8 +37,8 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 		Mod_ErsteGesinnung = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_GESINNUNG, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Durch meine Taten scheint sich mein Ansehen bei den Göttern zu ändern. Jede der Hauptgilden gehört zu einer Gottheit, nur die Söldner scheinen da recht unanhängig zu sein. Die Nebengilden gehören zum Teil keinem Gott an. Aufträge für die Gilden, die einem Gott angehören, werde mich in dessen Ansehen steigern. Auch meine restlichen Taten wie Diebstähle werden in mein Ansehen einfließen.");
-		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Je nach meiner Gesinnung und den äußeren Umständen, wird mir von der jeweiligen Gottheit ein Segen zuteil, der mich stärken und mir auf meinem Weg helfen wird.");
+		B_LogEntry	(TOPIC_MOD_GESINNUNG, "Moje dzialania zdaja sie zmieniac moja reputacje w stosunku do bogów. Kazdy z glównych cechów nalezy do bóstwa, tylko najemnicy wydaja sie byc calkiem niezalezni. Niektóre z podleglych cechów nie naleza do zadnego boga. Zamówienia dla cechów nalezacych do boga zwieksza moja reputacje. Reszta moich dzialan, takich jak kradzieze, równiez znajdzie odzwierciedlenie w mojej reputacji.");
+		B_LogEntry	(TOPIC_MOD_GESINNUNG, "W zaleznosci od mojej postawy i zewnetrznych okolicznosci, blogoslawienstwo jest mi dane przez bóstwo, które wzmocni mnie i pomoze mi w drodze.");
 	};
 
 	if (Innos_Gefallen > Beliar_Gefallen)

@@ -2,7 +2,7 @@ instance Mod_1622_EBR_Seraphia_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Seraphia";
+	name 		=	"serafia";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		=   1;

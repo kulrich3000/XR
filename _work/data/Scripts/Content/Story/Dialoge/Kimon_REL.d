@@ -15,19 +15,19 @@ FUNC INT Info_Mod_Kimon_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Kimon_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_00"); //So sieht man sich wieder. Auch unterwegs?
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_01"); //Du sagst es. Hab immer was zu tun.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_02"); //Ich auch. Meine Geschäfte laufen wieder prächtig. Nur ...
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_03"); //Nur?
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_04"); //Da ist ein wichtiger Kunde, der interessiert sich für Freudenspender. Das ist bestens bekannt in Khorata.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_05"); //Ich habe auch gute Beziehungen dort, aber es gelingt mir nicht, da einen Lieferanten aufzutreiben.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_06"); //Da haben offensichtlich der Richter und der Stadthalter die Hand drauf.
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_07"); //Und wer stellt das Zeug her?
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_08"); //Das sollen die Leute im Hofstaat sein. Aber der Zugang zu denen ist mit einer magischen Barriere verrammelt. Da kommt keiner durch.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_09"); //Hab's selbst probiert, aber die hat mich jedes Mal zum Umkehren gezwungen, ob ich wollte oder nicht.
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_10"); //Seltsam. Und warum erzählst du mir das?
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_11"); //Du bist da doch erfolgreicher als ich. Vielleicht kannst du ja einen Lieferanten ausmachen, wenn du schon mal in Khorata bist.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_12"); //Es soll dein Schaden nicht sein. So drei Portionen würden mir schon genügen ...
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_00"); //Spotykamy sie wiec ponownie. Na drodze?
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_01"); //Mówisz to. Zawsze mam cos do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_02"); //Tak samo jak ja. Moja firma znów rozkwita. Tylko....
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_03"); //Po prostu?
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_04"); //Waznym klientem interesuja sie dozowniki blyszczace. Jest to dobrze znane w Khoracie.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_05"); //Tam tez mam dobre relacje, ale nie moge znalezc dostawcy.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_06"); //Sedzia i prezes oczywiscie maja na niej swoje rece.
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_07"); //A kto tworzy rzeczy?
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_08"); //To maja byc ludzie sadu. Jednak dostep do nich jest blokowany przez magiczna bariere. Nikt nie moze przejsc.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_09"); //Próbowalem go sam, ale zmusilo mnie to do zawracania za kazdym razem, niezaleznie od tego, czy chcialem, czy nie.
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Hi_15_10"); //Dziwny. A dlaczego mi o tym mówisz?
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_11"); //Jestes bardziej skuteczny niz ja. Byc moze podczas pobytu w Khoracie mozna znalezc dostawce.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Hi_34_12"); //To nie powinno byc twoim uszkodzeniem. Dla mnie wystarcza mi trzy czesci.....
 };
 
 INSTANCE Info_Mod_Kimon_REL_Freudenspender (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Kimon_REL_Freudenspender (C_INFO)
 	information	= Info_Mod_Kimon_REL_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich höre mich bei Gelegenheit mal um.";
+	description	= "Zapytam sie przy okazji.";
 };
 
 FUNC INT Info_Mod_Kimon_REL_Freudenspender_Condition()
@@ -51,12 +51,12 @@ FUNC INT Info_Mod_Kimon_REL_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Kimon_REL_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender_15_00"); //Ich höre mich bei Gelegenheit mal um.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender_34_01"); //Solltest du etwas finden, dann komm wieder zu mir.
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender_15_00"); //Zapytam sie przy okazji.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender_34_01"); //Jesli cos znajdziecie, wróccie do mnie.
 
 	Log_CreateTopic	(TOPIC_MOD_KIMON_FREUDENSPENDER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KIMON_FREUDENSPENDER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "Der Händler Kimon will drei Mal Freudenspender weiterverkaufen. Ich soll in Khorata einen Lieferanten finden. Ich glaube, der Penner ist die richtige Adresse.");
+	B_LogEntry	(TOPIC_MOD_KIMON_FREUDENSPENDER, "Dealer Kimon chce trzykrotnie odsprzedac delights. Mam znalezc dostawce w Khoracie. Mysle, ze jest to wlasciwy adres.");
 };
 
 INSTANCE Info_Mod_Kimon_REL_Freudenspender2 (C_INFO)
@@ -80,15 +80,15 @@ FUNC INT Info_Mod_Kimon_REL_Freudenspender2_Condition()
 
 FUNC VOID Info_Mod_Kimon_REL_Freudenspender2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_00"); //Hast du was erreicht?
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_01"); //Aber ja. Nicht nur den Lieferanten, sondern gleich die Ware. Hier.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_00"); //Czy cos zrobiles/as?
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_01"); //Ale tak, tak, tak. Nie tylko dostawca, ale takze towary. Tutaj.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 3);
 
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_02"); //Fantastisch! Hattest du Auslagen?
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_03"); //Ja, ungefähr 350 Gold.
-	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_04"); //Hier hast du's zurück und noch mal 350 für deine Mühe.
-	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_05"); //Bis ein andermal.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_02"); //Fantastyczne! Miales/as wydatki?
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_03"); //Tak, okolo 350 zlota.
+	AI_Output(self, hero, "Info_Mod_Kimon_REL_Freudenspender2_34_04"); //Tutaj wracasz i 350 na swoje problemy.
+	AI_Output(hero, self, "Info_Mod_Kimon_REL_Freudenspender2_15_05"); //Do zobaczenia nastepnym razem.
 
 	B_SetTopicStatus	(TOPIC_MOD_KIMON_FREUDENSPENDER, LOG_SUCCESS);
 

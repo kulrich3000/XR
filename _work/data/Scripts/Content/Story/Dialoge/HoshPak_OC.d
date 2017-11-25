@@ -18,9 +18,9 @@ FUNC INT Info_Mod_HoshPak_OC_Hi_Condition()
 
 FUNC VOID Info_Mod_HoshPak_OC_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HoshPak_OC_Hi_18_00"); //Was machen Fremder hier? Hier nichts Mensch dürfen sein!
-	AI_Output(hero, self, "Info_Mod_HoshPak_OC_Hi_15_01"); //Ich bin hier, um mir deinen Fokus zu holen.
-	AI_Output(self, hero, "Info_Mod_HoshPak_OC_Hi_18_02"); //Du sein mutig. Doch ich dich jetzt werden töten. Du nichts kriegen Fokus.
+	AI_Output(self, hero, "Info_Mod_HoshPak_OC_Hi_18_00"); //Co robia tutaj obcy ludzie? Nie moze tu byc czlowieka!
+	AI_Output(hero, self, "Info_Mod_HoshPak_OC_Hi_15_01"); //Jestem tutaj, zebys sie skoncentrowal.
+	AI_Output(self, hero, "Info_Mod_HoshPak_OC_Hi_18_02"); //Jestes odwazny. Ale teraz cie zabije. Nie skupisz sie.
 
 	AI_StopProcessInfos	(self);
 

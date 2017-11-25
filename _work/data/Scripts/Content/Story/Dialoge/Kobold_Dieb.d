@@ -18,12 +18,12 @@ FUNC INT Info_Mod_Kobold_Dieb_Hi_Condition()
 
 FUNC VOID Info_Mod_Kobold_Dieb_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_00"); //Was??!!! Du hier, Mensch???!!! Wage es nicht mir Leid zuzufügen.
-	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_01"); //Der vereinten Macht des untoten Magiers und der Drachen – deren Diener ich bin - wirst du nichts entgegenzusetzen haben.
-	AI_Output(hero, self, "Info_Mod_Kobold_Dieb_Hi_15_02"); //Das hindert mich nicht, mir mein Gold wiederzuholen, diebischer Unrat.
-	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_03"); //Garstiger Mensch, das wirst du bereuen. Eines Tages werde ich mir mein Gold wiederholen.
+	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_00"); //Co! Ty tu, mezczyzna? Nie osmielisz sie mi zaszkodzic.
+	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_01"); //Nie bedziesz mial nic do przeciwstawienia sie polaczonej mocy nieumarlego maga i smoków - których slugami jestem.
+	AI_Output(hero, self, "Info_Mod_Kobold_Dieb_Hi_15_02"); //Nie przeszkadza mi to w odzyskaniu zlota, zlodziejskiego brudu.
+	AI_Output(self, hero, "Info_Mod_Kobold_Dieb_Hi_20_03"); //Ciezki czlowiek, bedziesz tego zalowal. Pewnego razu powtórze moje zloto.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Immerhin habe ich jetzt mein Gold wieder. Der Kobold indes erzählte irgendetwas von der vereinten Macht von untotem Magier und Drachen.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Wszakze mam zloto na plecach. Jednak goblin opowiadal o polaczonej mocy nieumarlego maga i smoka.");
 
 	AI_StopProcessInfos	(self);
 

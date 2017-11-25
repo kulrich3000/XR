@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jesse_Hi (C_INFO)
 	information	= Info_Mod_Jesse_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was macht die Arbeit, Schürfer?";
+	description	= "Jak wyglada praca, poszukiwacz?";
 };
 
 FUNC INT Info_Mod_Jesse_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Jesse_Hi_Condition()
 
 FUNC VOID Info_Mod_Jesse_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesse_Hi_15_00"); //Was macht die Arbeit, Schürfer?
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_01"); //Ach, der gleiche Job, den ich schon damals als Buddler erledigen musste.
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_02"); //Aber nach den ganzen Schweinereien, die das Alte Lager damals gemacht hat, bin ich lieber ins Neue Lager gegangen.
-	AI_Output(hero, self, "Info_Mod_Jesse_Hi_15_03"); //Du meinst den Überfall auf die Mine hier?
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_04"); //Ja, unter anderem. Deshalb sind hier auch ein paar Plätze für Schürfer frei geworden.
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_05"); //Nachdem die Gardisten alle abgeschlachtet hatten, hat das Neue Lager händeringend nach Arbeitern gesucht. Ist schon ganz in Ordnung hier.
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_06"); //Und zumindest gibt es hier keine Wahnsinnigen, die mit einem magischen Schwert Jagd auf alles machen, was geht und steht ... wie der Verrückte im Alten Lager damals.
-	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_07"); //Möchte gar nicht daran zurückdenken.
+	AI_Output(hero, self, "Info_Mod_Jesse_Hi_15_00"); //Jak wyglada praca, poszukiwacz?
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_01"); //Ach, te sama prace musialem wtedy wykonywac jako Buddler.
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_02"); //Ale przeciez po brud, który robil Stary Obóz, wolalem jechac do Nowego Obozu.
+	AI_Output(hero, self, "Info_Mod_Jesse_Hi_15_03"); //Masz tu na mysli napad na kopalnie?
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_04"); //Tak, miedzy innymi. Dlatego jest kilka miejsc dla poszukiwaczy.
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_05"); //Po tym, jak straznicy zamordowali ich wszystkich, Nowy Obóz rozpaczliwie szukal pracowników. To wszystko jest tutaj.
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_06"); //A przynajmniej nie ma tu szalenców, którzy poluja z magicznym mieczem na cokolwiek, co dziala i stoi? jak ów szalenca w Starym Obozie.
+	AI_Output(self, hero, "Info_Mod_Jesse_Hi_36_07"); //Nie chcialbys myslec z powrotem.
 };
 
 INSTANCE Info_Mod_Jesse_Costa (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Jesse_Costa (C_INFO)
 	information	= Info_Mod_Jesse_Costa_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast da etwas, das Costa gehört.";
+	description	= "Dostales cos, co nalezalo do Costy.";
 };
 
 FUNC INT Info_Mod_Jesse_Costa_Condition()
@@ -47,25 +47,25 @@ FUNC INT Info_Mod_Jesse_Costa_Condition()
 
 FUNC VOID Info_Mod_Jesse_Costa_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_00"); //Du hast da etwas, das Costa gehört.
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_01"); //(besorgt) Ja, ich habe noch einiges von ihm. Weißt du, was aus ihm geworden ist? Haben die Gardisten ihn erwischt?
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_02"); //Nein. Er hat den Zeitpunkt verschlafen.
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_03"); //(bestürzt) Oh nein! Und wir dachten, ihm wäre etwas zugestoßen! Sitzt er noch immer im Lager fest?
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_04"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_05"); //Dann muss ich ihn unbedingt retten. Ich werde noch heute Nacht aufbrechen und ihn da rausholen.
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_06"); //Ist das nicht etwas überstürzt?
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_07"); //Nicht, wenn er Bescheid weiß und sich darauf vorbereitet. Kannst du dich frei im Lager bewegen?
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_00"); //Dostales cos, co nalezalo do Costy.
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_01"); //Tak, dostalem kilka jego rzeczy. Wiesz, czym on sie stal? Czy straznicy go zlapali?
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_02"); //Nie. Nadazal nad czasem.
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_03"); //(upadek, nie! I pomyslelismy, ze cos mu sie stalo! Czy jeszcze utknal w obozie?
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_04"); //Tak wlasnie jest.
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_05"); //Potem musze go uratowac. Zostawie go dzis wieczorem i wyprowadze.
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_15_06"); //Czyz nie jest to troche pospieszne?
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_36_07"); //Nie, jesli wie i przygotowuje sie do tego. Czy mozesz swobodnie poruszac sie po obozie?
 
 	Info_ClearChoices	(Info_Mod_Jesse_Costa);
 
-	Info_AddChoice	(Info_Mod_Jesse_Costa, "Nein.", Info_Mod_Jesse_Costa_B);
-	Info_AddChoice	(Info_Mod_Jesse_Costa, "Ja.", Info_Mod_Jesse_Costa_A);
+	Info_AddChoice	(Info_Mod_Jesse_Costa, "Nie.", Info_Mod_Jesse_Costa_B);
+	Info_AddChoice	(Info_Mod_Jesse_Costa, "Tak.", Info_Mod_Jesse_Costa_A);
 };
 
 FUNC VOID Info_Mod_Jesse_Costa_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_B_15_00"); //Nein.
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_B_36_01"); //Schade. Dann werde ich es so versuchen.
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_B_15_00"); //Nie.
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_B_36_01"); //Zbyt zle. Wtedy spróbuje.
 
 	Info_ClearChoices	(Info_Mod_Jesse_Costa);
 
@@ -74,12 +74,12 @@ FUNC VOID Info_Mod_Jesse_Costa_B()
 
 FUNC VOID Info_Mod_Jesse_Costa_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jesse_Costa_A_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Jesse_Costa_A_36_01"); //Du musst Costa noch heute warnen, dass er mich um Mitternacht an unserem letzten vereinbarten Ort treffen soll. Unbedingt heute, verstehst du?
+	AI_Output(hero, self, "Info_Mod_Jesse_Costa_A_15_00"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Jesse_Costa_A_36_01"); //Musicie ostrzec Coste juz dzis, aby spotkac sie ze mna w naszym ostatnim uzgodnionym miejscu o pólnocy. Absolutnie dzis wiesz, co wiesz?
 
 	Info_ClearChoices	(Info_Mod_Jesse_Costa);
 
-	B_LogEntry	(TOPIC_MOD_COSTA_GUERTEL, "Ich habe Jesse gefunden. Aber statt mir den Gürtel zu geben, will er jetzt eigenhändig Costa befreien. Dazu ist es dringend notwendig, dass ich Costa noch vor Mitternacht Bescheid gebe, damit er sich auf die Flucht vorbereiten kann.");
+	B_LogEntry	(TOPIC_MOD_COSTA_GUERTEL, "Znalazlem Jesse. Ale zamiast dac mi pas, chce sam uwolnic Coste. W tym celu pilnie konieczne jest poinformowanie Costy przed pólnoca, aby mógl on przygotowac sie do ucieczki.");
 
 	Mod_Costa_Guertel_Tag = Wld_GetDay();
 };

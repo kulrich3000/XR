@@ -18,7 +18,7 @@ INSTANCE PC_Waterpipe_Tabak (C_INFO)
 	information	= PC_Waterpipe_Tabak_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tabak wählen";
+	description	= "Wybierz tyton";
 };
 
 FUNC INT PC_Waterpipe_Tabak_Condition()

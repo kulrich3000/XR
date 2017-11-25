@@ -1,7 +1,7 @@
 instance Mod_502_RIT_Keroloth_NW  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Keroloth";
+	name 		= "Kerolit";
 	guild 		= GIL_PAL;
 	id 			= 502;
 	voice 		= 7;

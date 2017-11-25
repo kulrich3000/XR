@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ferros_Hi (C_INFO)
 	information	= Info_Mod_Ferros_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein Schmied hier im Lager? Braucht's das?";
+	description	= "Kowal w obozie? Czy tego potrzebujesz?";
 };
 
 FUNC INT Info_Mod_Ferros_Hi_Condition()
@@ -16,20 +16,20 @@ FUNC INT Info_Mod_Ferros_Hi_Condition()
 
 FUNC VOID Info_Mod_Ferros_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_00"); //Ein Schmied hier im Lager? Braucht's das?
-	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_01"); //Eigentlich nicht. Ich richte ab und zu ein Schwert oder schärfe eins.
-	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_02"); //Manchmal mache ich  Sachen aus Metall oder repariere sie.
-	AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_03"); //Und das ist alles?
-	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_04"); //Na ja, manchmal kommt einer und sagt: Ferros, ich hab nix zu tun, laß uns trainieren.
-	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_05"); //Dann zeig ich ihm, wie er stärker wird.
+	AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_00"); //Kowal w obozie? Czy tego potrzebujesz?
+	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_01"); //Wlasciwie nie. Czasami wyprostowuje lub wyostrzam miecz.
+	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_02"); //Czasami robie rzeczy z metalu lub naprawiam je.
+	AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_03"); //I to wszystko?
+	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_04"); //Cóz, czasem ktos przychodzi i mówi:"Ferros, nie mam nic do roboty, pociagnijmy.
+	AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_05"); //Wtedy pokaze mu, jak sie wzmocnic.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_06"); //Könntest du mir auch zeigen, wie ich stärker werde?
-		AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_07"); //Sicher kann ich das.
+		AI_Output(hero, self, "Info_Mod_Ferros_Hi_15_06"); //Czy móglbys mi pokazac, jak sie wzmocnic?
+		AI_Output(self, hero, "Info_Mod_Ferros_Hi_06_07"); //Oczywiscie moge.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_WALDIS, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Bei Ferros kann ich meine Stärke verbessern.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "W firmie Ferros moge zwiekszyc swoja sile.");
 	};
 };
 
@@ -41,7 +41,7 @@ INSTANCE Info_Mod_Ferros_Lernen (C_INFO)
 	information	= Info_Mod_Ferros_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden!";
+	description	= "Chce byc silniejszy!";
 };
 
 FUNC INT Info_Mod_Ferros_Lernen_Condition()
@@ -56,7 +56,7 @@ FUNC INT Info_Mod_Ferros_Lernen_Condition()
 
 FUNC VOID Info_Mod_Ferros_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ferros_Lernen_15_00"); //Ich will stärker werden!
+	AI_Output(hero, self, "Info_Mod_Ferros_Lernen_15_00"); //Chce byc silniejszy!
 
 	Info_ClearChoices	(Info_Mod_Ferros_Lernen);
 

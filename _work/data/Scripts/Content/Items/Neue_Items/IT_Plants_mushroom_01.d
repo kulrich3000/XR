@@ -1,6 +1,6 @@
 INSTANCE ItFo_Plants_mushroom_01(C_Item)
 {	
-	name 				=	"Höllenpilz";
+	name 				=	"piekielny grzyb";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -21,7 +21,7 @@ INSTANCE ItFo_Plants_mushroom_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 5;

@@ -43,7 +43,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Flammen";
+	description		= "Amulet plomieni";
 	
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= Am_ProtFire;
@@ -84,9 +84,9 @@ INSTANCE  ItAm_Hast(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Hast";
+	description		= "Amulet Haste";
 	
-	TEXT[1]			= "Beschleunigt den Träger";
+	TEXT[1]			= "Przyspiesza podstawe ladunkowa";
 
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -125,9 +125,9 @@ INSTANCE  ItAm_HalskettederEhre(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Halskette der Ehre";
+	description		= "Naszyjnik Honoru";
 
-	TEXT[1]			= "+2% Erfahrung";
+	TEXT[1]			= "2% doswiadczenie";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -166,7 +166,7 @@ INSTANCE  ItAm_LangerAtem(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett 'Langer Atem'";
+	description		= "Amulet 'Dlugi oddech'.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -217,7 +217,7 @@ INSTANCE  ItAm_Mirza(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett von Mirza";
+	description		= "Amulet Mirzynski";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -254,7 +254,7 @@ INSTANCE  ItAm_Pirateninsel (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett aus dem Stollen";
+	description		= "Amulet z galerii";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -291,9 +291,9 @@ INSTANCE  ItAm_Geisteramulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett von Jim";
+	description		= "Amulet Jim";
 
-	TEXT[1]			= "Vertreibt Geister";
+	TEXT[1]			= "Wyeliminowanie duchów";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -328,7 +328,7 @@ INSTANCE  ItAm_GardeInnos(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "altes Amulett";
+	description		= "starozytny amulet";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -355,9 +355,9 @@ INSTANCE  ItAm_CyrcoMinenAmulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Antimagie";
+	description		= "Charmurgia antymaginowa";
 	
-	TEXT[2]			= "zeigt magisch verborgene Dinge";
+	TEXT[2]			= "pokazuje magicznie ukryte rzeczy";
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
 	
@@ -393,7 +393,7 @@ INSTANCE  Pala_Feuer_Amulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Feuermagier";
+	description		= "Amulet magów ognia";
 	
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= Am_ProtFire;
@@ -421,7 +421,7 @@ INSTANCE  ItAm_MegaAmulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "besonderes Amulett";
+	description		= "specjalny amulet";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -449,7 +449,7 @@ INSTANCE  ItAm_MegaAmulett2(C_Item)
 	on_equip		=	Equip_MegaAmulett;
 	on_unequip		=	UnEquip_MegaAmulett;
 
-	description		= "Amulett der Extension";
+	description		= "Amulet przedluzenia";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -488,7 +488,7 @@ INSTANCE  ItAm_TojansAmulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Tojans Amulett";
+	description		= "Charman Tojana";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -533,7 +533,7 @@ INSTANCE  ItAm_TojansAmulett(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Harnischamulett";
+	description		= "pancerz";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= Am_ProtEdge/1000;
@@ -577,9 +577,9 @@ INSTANCE  ItAm_Nek (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Holzhaut";
+	description		= "Amulet skóry drewnianej";
 	
-	TEXT[1]			= "Auf der Rückseite ist der Name Nek eingraviert";
+	TEXT[1]			= "Nazwa Nek jest wygrawerowana na odwrocie.";
 	
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 5;
@@ -623,9 +623,9 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Dam-Amulett";
+	description		= "Dam Charm";
 	
-	TEXT[1]			= "Auf der Rückseite ist der Name Dam eingraviert";
+	TEXT[1]			= "Imie Dame wygrawerowano na odwrocie.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -663,7 +663,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Eichenhaut";
+	description		= "Debowy amulet skórny";
 	
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= Am_ProtPoint/1000;
@@ -706,7 +706,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Geisteskraft";
+	description		= "Amulet mocy duchowej";
 	
 	TEXT[2]			= NAME_Prot_Magic;
 	COUNT[2]		= Am_ProtMage;
@@ -750,7 +750,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Erzhaut";
+	description		= "Rudy amulet skóry.";
 	
 	TEXT[1]			= NAME_Prot_Fire;
 	COUNT[1]		= AM_TProtFire;
@@ -806,7 +806,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Wendigkeit";
+	description		= "Amulet zwinnosci";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Am_Dex;
@@ -850,7 +850,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Kraft";
+	description		= "Amulet mocy";
 	
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= Am_Strg;
@@ -893,7 +893,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Lebenskraft";
+	description		= "Amulet witalnosci";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= Am_Hp;
@@ -953,7 +953,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Magie";
+	description		= "Amulet Magii";
 	
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= Am_Mana;
@@ -988,7 +988,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 /******************************************************************************************/
 	INSTANCE  ItAm_Dex_Strg_01(C_Item)	// wird dem PAL von Ulthar überreicht für die Reinigung der Schreine Kapitel 3\
 {
-	name 			=	"Amulett der Macht";
+	name 			=	"Amulet mocy";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -1035,7 +1035,7 @@ INSTANCE  ItAm_Dam (C_Item) // Waffen Schutz Amulett
 /******************************************************************************************/
 	INSTANCE  ItAm_Hp_Mana_01 (C_Item)	//Xardas_Secret-area für KDF	(Kapitel 3)
 {
-	name 			=	"Amulett der Erleuchtung";
+	name 			=	"Amulet oswiecenia";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -1130,10 +1130,10 @@ INSTANCE  ItAm_Blickfang (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Blickfangamulett";
+	description		= "atrakcyjny";
 	
-	TEXT[2]			= "Dieses Amulett zieht die Blicke jedes Gesprächpartners";
-	TEXT[3]			= "auf sich und lenkt ihn ab.";
+	TEXT[2]			= "Ten amulet przyciaga uwage kazdego rozmówcy.";
+	TEXT[3]			= "i rozpraszaj go.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1172,7 +1172,7 @@ INSTANCE  ItAm_Blutmond (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett des Blutmondes";
+	description		= "Amulet krwi ksiezycowy";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1269,7 +1269,7 @@ INSTANCE  ItTa_Behueter(C_Item)
 	on_equip		=	Equip_ItTa_Behueter;
 	on_unequip		=	UnEquip_ItTa_Behueter;
 
-	description		= "Talisman des Behüters";
+	description		= "talizman protektora";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1346,7 +1346,7 @@ FUNC VOID Equip_ItMi_Magieprisma ()
 {
 	Mod_PrismaAngelegt = TRUE;
 	
-	Print ("Amulett angelegt");
+	Print ("Stworzony amulet");
 	
 	Mod_View_Prisma = View_CreatePxl(Print_Screen[PS_X] / 2 - PRISMA_WIDTH / 2, Print_Screen[PS_Y] - PRISMA_HEIGHT - 10, Print_Screen[PS_X] / 2 + PRISMA_WIDTH / 2, Print_Screen[PS_Y] - 10);
 	View_SetTexture(Mod_View_Prisma, "PRISMA_0.TGA");

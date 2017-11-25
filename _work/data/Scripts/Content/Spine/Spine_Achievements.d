@@ -24,7 +24,7 @@ func int Spine_IsAchievementUnlocked(var int identifier) {
 // private, don't call from outside
 func void Spine_ShowAchievementView(var int identifier) {
 	var zCPar_Symbol sym; sym = _^(MEMINT_SwitchG1G2(MEM_GetSymbol("_STR_FONT_ONSCREEN"), // Font constant G1
-                                                 MEM_GetSymbol("FONT_SCREENSMALL"))); // Font constant G2
+                                                 MEM_GetSymbol("CZCIONKA_SCREENSMALL"))); // Font constant G2
 	var string Spine_Font; Spine_Font = MEM_ReadString(sym.content);
 	var int startPosX;
 	var int startPosY;

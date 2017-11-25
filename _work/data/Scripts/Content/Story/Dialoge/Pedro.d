@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Pedro_Hi (C_INFO)
 	information	= Info_Mod_Pedro_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Pedro_Hi_Condition()
@@ -21,7 +21,7 @@ FUNC VOID Info_Mod_Pedro_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Pedro_Hi_09_01"); //Ich bin Pedro. Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Pedro_Hi_09_01"); //Jestem Pedro. Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Pedro_Erwischt (C_INFO)
@@ -76,11 +76,11 @@ FUNC VOID Info_Mod_Pedro_Niederlage_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_00"); //Ok, du hast gewonnen.
-			AI_Output(hero, self, "Info_Mod_Pedro_Niederlage_15_01"); //Gibst du mir jetzt den Ring?
-			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_02"); //Hier ist er.
+			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_00"); //Dobrze, wygrasz.
+			AI_Output(hero, self, "Info_Mod_Pedro_Niederlage_15_01"); //Czy dasz mi teraz pierscionek?
+			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_02"); //Tutaj jest, Panie Panu.
 
-			B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Nachdem ich Pedro eine Lektion erteilt habe hat er mir den Ring gegeben.");
+			B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Po tym jak nauczylem Pedra lekcji, dal mi pierscionek.");
 
 			CreateInvItems	(self, ItRi_Feuerring_Parlan, 1);
 			B_GiveInvItems	(self, hero, ItRi_Feuerring_Parlan, 1);
@@ -89,7 +89,7 @@ FUNC VOID Info_Mod_Pedro_Niederlage_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_03"); //Das hast du davon. Jetzt mach das du verschwindest.
+			AI_Output(self, hero, "Info_Mod_Pedro_Niederlage_09_03"); //Wlasnie to otrzymujesz. Teraz wyjmij z niego pieklo.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------

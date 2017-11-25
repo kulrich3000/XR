@@ -1,7 +1,7 @@
 INSTANCE Mod_7536_KG_Jerry_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jerry"; 
+	name 		= "Jerzego"; 
 	guild 		= GIL_OUT;
 	id 			= 7536;
 	voice 		= 4;

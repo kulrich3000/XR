@@ -7,8 +7,8 @@ FUNC VOID EVT_FAKE_HERO_ADDON_FUNC()
 	{
 		AI_GotoWP (hero, "ADW_VALLEY_PATH_134");
 
-		AI_Output(hero, hero, "Info_Mod_Fake_15_00"); //Was ist denn das?
-		AI_Output(hero, hero, "Info_Mod_Fake_15_01"); //Der sieht aus wie ich.
+		AI_Output(hero, hero, "Info_Mod_Fake_15_00"); //Czym jest to pieklo?
+		AI_Output(hero, hero, "Info_Mod_Fake_15_01"); //On wyglada jak ja.
 
 		ENTER_FIRSTTIME_FAKE_HERO = TRUE;
 

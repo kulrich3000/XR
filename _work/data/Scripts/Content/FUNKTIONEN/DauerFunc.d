@@ -92,7 +92,7 @@ FUNC VOID DAUERFUNC_01()
 		{
 			FirstF8Malus = TRUE;
 
-			PrintScreen	("Das viele Fliegen hat dich total ausgepowert!", -1, -1, FONT_SCREEN, 5);
+			PrintScreen	("Jestes tak pelen much!", -1, -1, FONT_SCREEN, 5);
 		};
 
 		hero.attribute[ATR_STRENGTH] = 0;
@@ -242,7 +242,7 @@ FUNC VOID DAUERFUNC_01()
 
 					Log_CreateTopic	(TOPIC_MOD_DUNKLERPILGER, LOG_MISSION);
 					B_SetTopicStatus	(TOPIC_MOD_DUNKLERPILGER, LOG_RUNNING);
-					B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Nanu, was ist denn das für eine sonderbare dunkle Gestalt?");
+					B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Jaka jest ta dziwna ciemna figura?");
 				};
 
 				if (Mod_DunklerPilger_Counter == 10)
@@ -806,35 +806,35 @@ FUNC VOID DAUERFUNC_01()
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_00"); //Was ist geschehen? Die herabstürzenden Felsbrocken sind das Letzte, woran ich mich erinnere.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_00"); //Co sie stalo? Spadajace skaly to ostatnia rzecz, która pamietam.
 			};
 
 			if (TimeCounter_Real == 15)
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_01"); //Ich muss einige Zeit bewusstlos gewesen sein. Aber warum fühlt sich alles so taub an, gar keine Schmerzen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_01"); //Od pewnego czasu musialem byc nieprzytomny. Ale dlaczego wszystko czuje sie tak zdretwiale, bez bólu.
 			};
 
 			if (TimeCounter_Real == 25)
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_02"); //(schockiert) Verdammt, mein ... mein Körper scheint zu verwesen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_02"); //Damn to, mój..... moje cialo wydaje sie rozkladac.
 			};
 
 			if (TimeCounter_Real == 35)
 			{
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_03"); //Ich ... ich muss untot sein.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Anfangsdialog_15_03"); //l-- Musze byc nieumarlym.
 			};
 
 			if (TimeCounter_Real == 45)
 			{
 				Log_CreateTopic	(TOPIC_MOD_ANFANG, LOG_MISSION);
 				B_SetTopicStatus	(TOPIC_MOD_ANFANG, LOG_RUNNING);
-				B_LogEntry	(TOPIC_MOD_ANFANG, "Mist, ich wurde im Tempel des Schläfers scheinbar von herabstürzendem Geröll erschlagen und bin jetzt untot. Wie nun weiter?");
+				B_LogEntry	(TOPIC_MOD_ANFANG, "Poszedlem, zostalem najwyrazniej zabity w swiatyni sypialni przez spadajace odlamki i teraz jestem nieumarly. Co dalej?");
 
 				AnfangsDialog = TRUE;
 
@@ -854,7 +854,7 @@ FUNC VOID DAUERFUNC_01()
 			{
 				AI_EquipBestArmor	(hero);
 
-				Print	("Ich kann die Rüstung nicht ablegen. Sie haftet an mir, wie eine zweite Haut.");
+				Print	("Nie moge zdjac zbroi. Klei sie do mnie jak druga skóra.");
 			};
 		};
 		
@@ -1029,7 +1029,7 @@ FUNC VOID DAUERFUNC_01()
 
 			Mod_Zufallsdrink_Att = 0;
 
-			Print ("Wirkung des 'Trank des Zufalls' ist vorbei!");
+			Print ("Efekt eliksiru jest juz za nami!");
 		};
 	};
 
@@ -1040,7 +1040,7 @@ FUNC VOID DAUERFUNC_01()
 
 		AI_StandUp(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_00"); //Igitt!
+		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_00"); //Yck!
 	};
 
 	if (Fleischwanzen_Zertrampelt == 20)
@@ -1050,7 +1050,7 @@ FUNC VOID DAUERFUNC_01()
 
 		AI_StandUp(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_01"); //Ob ich das wieder rauskrieg?
+		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_01"); //Czy moge to osiagnac?
 	};
 
 	if (Fleischwanzen_Zertrampelt == 40)
@@ -1060,7 +1060,7 @@ FUNC VOID DAUERFUNC_01()
 
 		AI_StandUp(hero);
 
-		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_02"); //Alles voll mit Wanzengedärmen!
+		AI_Output(hero, NULL, "Info_Mod_Hero_Fleischwanze_15_02"); //Jest pelen blotników!
 	};
 
 	// Nebenquests
@@ -1086,7 +1086,7 @@ FUNC VOID DAUERFUNC_01()
 	{
 		var string OpferText;
 
-		OpferText = ConcatStrings(IntToString(CurrentOpfer), " von 6 Opfern gegeben");
+		OpferText = ConcatStrings(IntToString(CurrentOpfer), " z 6 ofiar.");
 
 		PrintScreen	(OpferText, -1, 4, FONT_ScreenSmall, 2);
 	};
@@ -1247,7 +1247,7 @@ FUNC VOID DAUERFUNC_01()
 		{
 			AI_GotoWP(hero, "REL_201");
 
-			PrintScreen ("Dort gibt es noch nichts für mich ...", -1, YPOS_LevelUp, FONT_Screen, 2);		
+			PrintScreen ("Nie ma jeszcze dla mnie nic....", -1, YPOS_LevelUp, FONT_Screen, 2);		
 		};
 
 		// Lester in die Stadt
@@ -1351,56 +1351,56 @@ FUNC VOID DAUERFUNC_01()
 					HeroBow.munition = ItRw_Arrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Normaler Pfeil als Munition gewählt!");
+					Print	("Zwykla strzalka wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_GoldErzArrow) > 0)
 				{
 					HeroBow.munition = ItRw_GoldErzArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Pfeil mit Gold-Erz-Spitze als Munition gewählt!");
+					Print	("Strzalka z koncówka rudy zlota wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_GoldErzBlutArrow) > 0)
 				{
 					HeroBow.munition = ItRw_GoldErzBlutArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Pfeil mit Gold-Erz-Blut-Spitze als Munition gewählt!");
+					Print	("Strzalka z rudokrwista koncówka zlota jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_IceArrow) > 0)
 				{
 					HeroBow.munition = ItRw_IceArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Eispfeil als Munition gewählt!");
+					Print	("Strzalka lodowa wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_Addon_FireArrow) > 0)
 				{
 					HeroBow.munition = ItRw_Addon_FireArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Feuerpfeil als Munition gewählt!");
+					Print	("Strzalka ognia wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_Addon_MagicArrow) > 0)
 				{
 					HeroBow.munition = ItRw_Addon_MagicArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Magischer Pfeil als Munition gewählt!");
+					Print	("Strzalka magiczna wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_SchmetterArrow) > 0)
 				{
 					HeroBow.munition = ItRw_SchmetterArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_BLUNT;
 
-					Print	("Schmetterpfeil als Munition gewählt!");
+					Print	("Strzalka motylkowa wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_HolyArrow) > 0)
 				{
 					HeroBow.munition = ItRw_HolyArrow; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Heiliger Pfeil als Munition gewählt!");
+					Print	("Swieta strzala wybrana jako amunicja!");
 				}
 				else
 				{
@@ -1414,56 +1414,56 @@ FUNC VOID DAUERFUNC_01()
 					HeroBow.munition = ItRw_Bolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Normaler Bolzen als Munition gewählt!");
+					Print	("Sruba normalna wybrana jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_GoldErzBolt) > 0)
 				{
 					HeroBow.munition = ItRw_GoldErzBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Bolzen mit Gold-Erz-Spitze als Munition gewählt!");
+					Print	("Bolce z koncówka rudy zlota wybrane jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_GoldErzBlutBolt) > 0)
 				{
 					HeroBow.munition = ItRw_GoldErzBlutBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Bolzen mit Gold-Erz-Blut-Spitze als Munition gewählt!");
+					Print	("Bolce ze zlotem, ruda i punktami krwi wybranymi jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_IceBolt) > 0)
 				{
 					HeroBow.munition = ItRw_IceBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Eisbolzen als Munition gewählt!");
+					Print	("Sruby lodowe wybrane jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_Addon_FireBolt) > 0)
 				{
 					HeroBow.munition = ItRw_Addon_FireBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Feuerbolzen als Munition gewählt!");
+					Print	("Sruby ognia wybrane jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_Addon_MagicBolt) > 0)
 				{
 					HeroBow.munition = ItRw_Addon_MagicBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Magischer Bolzen als Munition gewählt!");
+					Print	("Magic Bolt wybrany jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_SchmetterBolt) > 0)
 				{
 					HeroBow.munition = ItRw_SchmetterBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_BLUNT;
 
-					Print	("Schmetterbolzen als Munition gewählt!");
+					Print	("Sworzen motylkowy wybrany jako amunicja!");
 				}
 				else if (Npc_HasItems(hero, ItRw_HolyBolt) > 0)
 				{
 					HeroBow.munition = ItRw_HolyBolt; //Neuer Munitionstyp wird festgelegt
 					HeroBow.damagetype = DAM_POINT;
 
-					Print	("Heiliger Bolzen als Munition gewählt!");
+					Print	("Swieci rodzice wybrani jako amunicja!");
 				}
 				else
 				{

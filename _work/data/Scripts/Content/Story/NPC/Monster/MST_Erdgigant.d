@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Erdgigant(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Erdgewachsener Gigant";
+	name							=	"Grown-up gigant";
 	guild							=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ERDGIGANT;
 	level							=	100;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Monty_Hi (C_INFO)
 	information	= Info_Mod_Monty_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ich höre, willst du den Schläfer besiegt haben.";
+	description	= "Slysze, ze chcesz pokonac spiwora.";
 };
 
 FUNC INT Info_Mod_Monty_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Monty_Hi_Condition()
 
 FUNC VOID Info_Mod_Monty_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_Hi_15_00"); //Wie ich höre, willst du den Schläfer besiegt haben.
-	AI_Output(self, hero, "Info_Mod_Monty_Hi_31_01"); //(eifrig) Genau! Stell dich zu den anderen, ich erzähle gerade, wie ich es geschafft habe.
+	AI_Output(hero, self, "Info_Mod_Monty_Hi_15_00"); //Slysze, ze chcesz pokonac spiwora.
+	AI_Output(self, hero, "Info_Mod_Monty_Hi_31_01"); //To prawda! Stojac z innymi, po prostu mówie im, jak to zrobilem.
 };
 
 INSTANCE Info_Mod_Monty_KeinInteresse (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Monty_KeinInteresse (C_INFO)
 	information	= Info_Mod_Monty_KeinInteresse_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Geschichte interessiert mich nicht.";
+	description	= "Nie interesuje mnie ta historia.";
 };
 
 FUNC INT Info_Mod_Monty_KeinInteresse_Condition()
@@ -41,43 +41,43 @@ FUNC INT Info_Mod_Monty_KeinInteresse_Condition()
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_15_00"); //Die Geschichte interessiert mich nicht.
-	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_31_01"); //Nein? Was denn dann?
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_15_02"); //Ich war es, der den Schläfer zurück in seine Dimension verbannt hat.
-	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_31_03"); //(lacht laut) Ah, ein Witzbold! (murmelt) Hey, Kollege, das hier ist mein Revier, in Ordnung?
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_15_00"); //Nie interesuje mnie ta historia.
+	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_31_01"); //Nie? Co zatem?
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_15_02"); //To ja wypedzilem sypialera z powrotem do jego wymiaru.
+	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_31_03"); //(smieje sie glosno) Ah, zartownica! Oko, przyjacielu, to jest moje terytorium, to wszystko ma racje?
 
 	Log_CreateTopic	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_MISSION);
 
 	Info_ClearChoices	(Info_Mod_Monty_KeinInteresse);
 
-	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Entweder du verschwindest oder es wird wehtun.", Info_Mod_Monty_KeinInteresse_B);
-	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Na schön, mach was du willst.", Info_Mod_Monty_KeinInteresse_A);
+	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Albo znikniesz, albo bedzie to krzywda.", Info_Mod_Monty_KeinInteresse_B);
+	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Dobrze, rób to, co chcesz.", Info_Mod_Monty_KeinInteresse_A);
 };
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_B()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_B_15_00"); //Entweder du verschwindest oder es wird wehtun.
-	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_B_31_01"); //(ängstlich) Bleib mal ruhig! Ich bin ein bisschen knapp bei Kasse, was soll ich tun?
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_B_15_00"); //Albo znikniesz, albo bedzie to krzywda.
+	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_B_31_01"); //Pozostan spokojny! Mam troche krótka gotówke, co moge zrobic?
 
 	Info_ClearChoices	(Info_Mod_Monty_KeinInteresse);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
-		Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "(Feilschen) Du gibst mir 50 Gold und wir sind quitt.", Info_Mod_Monty_KeinInteresse_E);
+		Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Dajesz mi 50 zlota, a my bedziemy to nazywac nawet.", Info_Mod_Monty_KeinInteresse_E);
 	};
 
-	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Du willst es wohl ohne Schmerzen nicht einsehen.", Info_Mod_Monty_KeinInteresse_D);
-	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Also gut. Mach weiter.", Info_Mod_Monty_KeinInteresse_C);
+	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "Nie chcesz go zobaczyc bez bólu.", Info_Mod_Monty_KeinInteresse_D);
+	Info_AddChoice	(Info_Mod_Monty_KeinInteresse, "A zatem wszystko w porzadku. Przejdz do przodu.", Info_Mod_Monty_KeinInteresse_C);
 };
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_A()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_A_15_00"); //Na schön, mach was du willst.
-	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_A_31_01"); //(leise) Danke für deine Einsicht. Scheiße, ich brauch das Geld.
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_A_15_00"); //Dobrze, rób to, co chcesz.
+	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_A_31_01"); //Dziekujemy za wglad. Shit, potrzebuje pieniedzy.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Ich lasse Monty seine Geschichte weitererzählen. Ich halte mich da raus.");
+	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Pozwóle Monty' emu opowiedziec jego historie. Bede z tego rezygnowal.");
 	B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_SUCCESS);
 
 	Mod_MontyFake = 1;
@@ -89,11 +89,11 @@ FUNC VOID Info_Mod_Monty_KeinInteresse_A()
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_E()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_E_15_00"); //Du gibst mir 50 Gold und wir sind quitt.
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_E_15_00"); //Dajesz mi 50 zlota, a my bedziemy to nazywac nawet.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_E_31_01"); //Das ist ein guter Kompromiss!
+		AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_E_31_01"); //To dobry kompromis!
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -101,7 +101,7 @@ FUNC VOID Info_Mod_Monty_KeinInteresse_E()
 
 		B_GivePlayerXP	(50);
 
-		B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Ich lasse Monty seine Geschichte weitererzählen. Ich halte mich da raus.");
+		B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Pozwóle Monty' emu opowiedziec jego historie. Bede z tego rezygnowal.");
 		B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_SUCCESS);
 
 		Mod_MontyFake = 1;
@@ -112,13 +112,13 @@ FUNC VOID Info_Mod_Monty_KeinInteresse_E()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_E_31_02"); //So viel habe ich leider nicht.
+		AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_E_31_02"); //Nie mam tak wiele.
 	};
 };
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_D()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_D_15_00"); //Du willst es wohl ohne Schmerzen nicht einsehen.
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_D_15_00"); //Nie chcesz go zobaczyc bez bólu.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Monty_KeinInteresse);
@@ -132,12 +132,12 @@ FUNC VOID Info_Mod_Monty_KeinInteresse_D()
 
 FUNC VOID Info_Mod_Monty_KeinInteresse_C()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_C_15_00"); //Also gut. Mach weiter.
-	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_C_31_01"); //(leise) Danke für deine Einsicht. Scheiße, ich brauch das Geld.
+	AI_Output(hero, self, "Info_Mod_Monty_KeinInteresse_C_15_00"); //A zatem wszystko w porzadku. Przejdz do przodu.
+	AI_Output(self, hero, "Info_Mod_Monty_KeinInteresse_C_31_01"); //Dziekujemy za wglad. Shit, potrzebuje pieniedzy.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Ich lasse Monty seine Geschichte weitererzählen. Ich halte mich da raus.");
+	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Pozwóle Monty' emu opowiedziec jego historie. Bede z tego rezygnowal.");
 	B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_SUCCESS);
 
 	Mod_MontyFake = 1;
@@ -173,13 +173,13 @@ FUNC INT Info_Mod_Monty_Pruegel_Condition()
 
 FUNC VOID Info_Mod_Monty_Pruegel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Monty_Pruegel_31_00"); //Ich sag ja schon nichts mehr!
+	AI_Output(self, hero, "Info_Mod_Monty_Pruegel_31_00"); //Nie mówie nic wiecej!
 
 	Mod_MontyFake = 3;
 
 	CurrentNQ += 1;
 
-	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Ich konnte Monty nicht ungestraft lassen. Das wird ihm eine Lehre sein.");
+	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Nie moglem pozwolic Monty' emu odejsc bezkarnie. To go nauczy.");
 	B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_SUCCESS);
 
 	// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -208,7 +208,7 @@ INSTANCE Info_Mod_Monty_WieGehts (C_INFO)
 	information	= Info_Mod_Monty_WieGehts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_Monty_WieGehts_Condition()
@@ -223,41 +223,41 @@ FUNC INT Info_Mod_Monty_WieGehts_Condition()
 
 FUNC VOID Info_Mod_Monty_WieGehts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_15_00"); //Wie läuft's?
+	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_15_00"); //Jak to sie dzieje?
 
 	if (Mod_MontyFake == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Monty_WieGehts_31_01"); //Die Leute zahlen für eine gute Geschichte. Solltest du auch mal probieren.
+		AI_Output(self, hero, "Info_Mod_Monty_WieGehts_31_01"); //Ludzie placa za dobra historie. Czasem powinienes spróbowac.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Monty_WieGehts_31_02"); //(lustlos) Halt's Maul. Bin froh, wenn ich was zu beißen kriege.
+		AI_Output(self, hero, "Info_Mod_Monty_WieGehts_31_02"); //Zamknac usta. Glad, moge dostac kes.
 
 		Info_ClearChoices	(Info_Mod_Monty_WieGehts);
 
-		Info_AddChoice	(Info_Mod_Monty_WieGehts, "Dann bereichere dich nicht auf Kosten anderer.", Info_Mod_Monty_WieGehts_B);
+		Info_AddChoice	(Info_Mod_Monty_WieGehts, "Nie bogacijcie sie wtedy kosztem innych.", Info_Mod_Monty_WieGehts_B);
 
 		if (Npc_HasItems(hero, ItFo_Bread) >= 1)
 		{
-			Info_AddChoice	(Info_Mod_Monty_WieGehts, "Hier hast du ein wenig Brot.", Info_Mod_Monty_WieGehts_A);
+			Info_AddChoice	(Info_Mod_Monty_WieGehts, "Oto troche chleba.", Info_Mod_Monty_WieGehts_A);
 		};
 	};
 };
 
 FUNC VOID Info_Mod_Monty_WieGehts_B()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_B_15_00"); //Dann bereichere dich nicht auf Kosten anderer.
+	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_B_15_00"); //Nie bogacijcie sie wtedy kosztem innych.
 
 	Info_ClearChoices	(Info_Mod_Monty_WieGehts);
 };
 
 FUNC VOID Info_Mod_Monty_WieGehts_A()
 {
-	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_A_15_00"); //Hier hast du ein wenig Brot.
+	AI_Output(hero, self, "Info_Mod_Monty_WieGehts_A_15_00"); //Oto troche chleba.
 
 	B_GiveInvItems	(hero, self, ItFo_Bread, 1);
 
-	AI_Output(self, hero, "Info_Mod_Monty_WieGehts_A_31_01"); //Danke. Das wird meinen Tod ein paar Tage hinauszögern.
+	AI_Output(self, hero, "Info_Mod_Monty_WieGehts_A_31_01"); //Dzieki. To opózni moja smierc o kilka dni.
 
 	B_GivePlayerXP	(30);
 
@@ -272,7 +272,7 @@ INSTANCE Info_Mod_Monty_Flugblaetter (C_INFO)
 	information	= Info_Mod_Monty_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Monty_Flugblaetter_Condition()
@@ -292,11 +292,11 @@ FUNC VOID Info_Mod_Monty_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Monty_Flugblaetter_31_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Monty_Flugblaetter_31_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Monty_Flugblaetter_31_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Monty_Flugblaetter_31_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

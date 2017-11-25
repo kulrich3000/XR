@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest (C_INFO)
 	information	= Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hieltest du davon, dich zur Abwechslung in ein Gebet zu Innos zu versenken in seiner Kirche, Bruder?";
+	description	= "Co myslales o tym, ze wpadles w modlitwe do Innos o zmiane w jego kosciele, bratu?";
 };
 
 FUNC INT Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_Condition()
@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_15_00"); //Was hieltest du davon, dich zur Abwechslung in ein Gebet zu Innos zu versenken in seiner Kirche, Bruder?
-	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_01"); //(vom Lesen aufgeschreckt) Was sagst du Bruder? Achso, ja die Kirche.
-	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_02"); //Hmm, eigentlich wollte mich weiter mit dieser Abhandlung über magische Kriegsführung auseinandersetzen, an der ich schon so lange nage.
-	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_03"); //Aber ein Gebet in der Kirche wird mir bestimmt zu einem frischen Geiste verhelfen, um konzentriert weiterzuarbeiten.
-	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_04"); //Ich werde mich sofort dorthin begeben.
+	AI_Output(hero, self, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_15_00"); //Co myslales o tym, ze wpadles w modlitwe do Innos o zmiane w jego kosciele, bratu?
+	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_01"); //Co mówisz, bracie? Cóz, tak, Kosciól.
+	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_02"); //Hmm, tak naprawde chcialem nadal zajmowac sie tym traktatem o magicznych dzialaniach wojennych, który tak dawno zajmowalem.
+	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_03"); //Ale modlitwa w Kosciele z pewnoscia pomoze mi nabrac swiezego ducha, aby kontynuowac prace w sposób skoncentrowany.
+	AI_Output(self, hero, "Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_06_04"); //Ide tam natychmiast.
 
 	AI_StopProcessInfos	(self);
 
@@ -36,7 +36,7 @@ FUNC VOID Info_Mod_Feuermagier_PAT_Bibliothek_MangelQuest_Info()
 
 	if (Mod_Pat_Beter == 3)
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, ich denke ich haben genügend Jünger Innos’ zum Gebet bewegen können und sollte in der Kirche bei Nagon vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Wiec mysle, ze mialem wystarczajaco duzo uczniów Inno' s, aby zachecic ich do modlitwy i powinienem zatrzymac sie przy kosciele w Nagon.");
 	};
 };
 

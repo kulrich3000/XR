@@ -1,7 +1,7 @@
 INSTANCE Mod_513_DMB_Xardas_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Xardas";
+	name 		= "kardany";
 	guild 		= GIL_DMT;
 	id 			= 513;
 	voice 		= 14;

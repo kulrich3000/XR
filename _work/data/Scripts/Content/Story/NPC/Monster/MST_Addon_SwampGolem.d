@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Addon_SwampGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Sumpfgolem";
+	name							=	"Marsh Gogol";
 	guild							=	GIL_SWAMPGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPGOLEM;
 	level							=	10;
@@ -293,7 +293,7 @@ INSTANCE Wurzelzwerg	(Mst_Default_Addon_SwampGolem)
 	B_SetVisuals_Swampgolem();
 	Npc_SetToFistMode	(self);
 
-	name							=	"Wurzelzwerg";
+	name							=	"skrzat";
 	level							=	10;
 
 	//----- Attribute ----
@@ -322,7 +322,7 @@ INSTANCE Wurzelzwerg	(Mst_Default_Addon_SwampGolem)
 
 INSTANCE Summoned_SwampGolem (Mst_Default_Addon_SwampGolem)
 {
-	name							=	"Beschworener Sumpfgolem";
+	name							=	"Na wezwanie Marsh Golem";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_GOLEM;
 	level							=	0;

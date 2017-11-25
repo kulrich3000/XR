@@ -301,7 +301,7 @@ func void EVT_PLATVORM_FUNC_S1 ()
 PROTOTYPE Mst_Default_UndeadOrcWarriorHorn (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Darmon Ur";
+	name							=	"Harmonijka";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	100;
@@ -379,7 +379,7 @@ INSTANCE UndeadOrcWarriorHorn (Mst_Default_UndeadOrcWarriorHorn)
 /**********************      Kristall Waffen*************************/
 INSTANCE KristallOrkAxt (C_Item)
 {	
-	name 				=	"Kristall Orkaxt";
+	name 				=	"Orkaxt krysztalowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -408,7 +408,7 @@ INSTANCE KristallOrkAxt (C_Item)
 
 INSTANCE Kristallschwert (C_Item)
 {	
-	name 				=	"Avatier";  
+	name 				=	"awatary";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

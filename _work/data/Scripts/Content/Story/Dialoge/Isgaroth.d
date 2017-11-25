@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Isgaroth_Hi (C_INFO)
 	information	= Info_Mod_Isgaroth_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Isgaroth_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Isgaroth_Hi_Condition()
 
 FUNC VOID Info_Mod_Isgaroth_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Isgaroth_Hi_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Hi_01_01"); //Sei mir gegrüßt, Fremder.
+	AI_Output(hero, self, "Info_Mod_Isgaroth_Hi_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Hi_01_01"); //Pozdrowienia, obcy.
 };
 
 INSTANCE Info_Mod_Isgaroth_Pedro (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Isgaroth_Pedro (C_INFO)
 	information	= Info_Mod_Isgaroth_Pedro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier ein Novize vorbeigekommen, der es ziemlich eilig hatte?";
+	description	= "Czy nowicjusz przeszedl przez kogos, kto sie spieszyl?";
 };
 
 FUNC INT Info_Mod_Isgaroth_Pedro_Condition()
@@ -43,11 +43,11 @@ FUNC INT Info_Mod_Isgaroth_Pedro_Condition()
 
 FUNC VOID Info_Mod_Isgaroth_Pedro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Isgaroth_Pedro_15_00"); //Ist hier ein Novize vorbeigekommen, der es ziemlich eilig hatte?
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Pedro_01_01"); //Ja, vor einiger Zeit ist hier ein Novize vorbeigekommen. Er ist den Weg entlang gerannt.
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Pedro_01_02"); //Frag mal Dragomir. Er hat ein kleines Lager in der Nähe der Taverne, von da aus dürfte er gesehen haben wohin der Novize gerannt ist.
+	AI_Output(hero, self, "Info_Mod_Isgaroth_Pedro_15_00"); //Czy nowicjusz przeszedl przez kogos, kto sie spieszyl?
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Pedro_01_01"); //Tak, nowicjusz przyszedl tu jakis czas temu. Zbiegl w dól drogi.
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Pedro_01_02"); //Zapytaj Dragomir. Ma maly obóz w poblizu tawerny, stamtad musial widziec dokad biegal poczatkujacy.
 
-	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Isgaroth hat Pedro gesehen wie er den Weg entlang gerannt ist. Er sagt ich solle mich mal mit dem Jäger Dragomir unterhalten.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Isgaroth pila Pedro biegnac wzdluz sciezki. Powiedzial, ze powinienem porozmawiac z mysliwym Dragomirem.");
 };
 
 INSTANCE Info_Mod_Isgaroth_Drachen (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Isgaroth_Drachen (C_INFO)
 	information	= Info_Mod_Isgaroth_Drachen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sind dir in letzter Zeit seltsame Dinge aufgefallen?";
+	description	= "Czy ostatnio zauwazyles jakies dziwne rzeczy?";
 };
 
 FUNC INT Info_Mod_Isgaroth_Drachen_Condition()
@@ -72,12 +72,12 @@ FUNC INT Info_Mod_Isgaroth_Drachen_Condition()
 
 FUNC VOID Info_Mod_Isgaroth_Drachen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Isgaroth_Drachen_15_00"); //Sind dir in letzter Zeit seltsame Dinge aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_01"); //Ja, wobei es ungewöhnliche Geräusche sind, die immer wieder von den Felsen über mir kommen.
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_02"); //Es klingt wie ... Schnauben und das Auflodern heftiger Flammen, aber einer Art von Feuer, die nicht unserer Magie entstammt.
-	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_03"); //Sehr ungewöhnlich und besorgniserregend.
+	AI_Output(hero, self, "Info_Mod_Isgaroth_Drachen_15_00"); //Czy ostatnio zauwazyles jakies dziwne rzeczy?
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_01"); //Tak, ale to niezwykle odglosy, które wciaz dochodza z skal nade mna.
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_02"); //To brzmi jak..... Snortowanie i wybuchanie gwaltownych plomieni, ale rodzaj ognia, który nie pochodzi z naszej magii.
+	AI_Output(self, hero, "Info_Mod_Isgaroth_Drachen_01_03"); //Bardzo nietypowe i niepokojace.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Isgaroth berichtete, dass von den Felsen über ihm immer wieder ungewöhnliche Geräusche lodernden Feuers kommen würden.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Isgaroth donosil, ze z skal nad nim dochodza odglosy plonacego ognia.");
 };
 
 INSTANCE Info_Mod_Isgaroth_Trade (C_INFO)
@@ -105,7 +105,7 @@ FUNC VOID Info_Mod_Isgaroth_Trade_Info()
 	if (Mod_IsgarothHaendler == 0)
 	{
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_KLOSTER, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_KLOSTER, "Isgaroth, welcher sich in einem Schrein vor dem Kloster Innos' befindet, kann mir Spruchrollen verkaufen.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_KLOSTER, "Isgaroth, który znajduje sie w sanktuarium przed klasztorem Innos, moze sprzedac mi rolki zaklec.");
 
 		Mod_IsgarothHaendler = 1;
 	};

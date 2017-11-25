@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lester_IR_Hi (C_INFO)
 	information	= Info_Mod_Lester_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie fandest du die Reise und wie gefällt dir die Insel?";
+	description	= "Co myslales o wycieczce i jak podoba Ci sie wyspa?";
 };
 
 FUNC INT Info_Mod_Lester_IR_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Lester_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Lester_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_IR_Hi_15_00"); //Wie fandest du die Reise und wie gefällt dir die Insel?
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_01"); //Naja, ich weiß nicht ... sehr ungewohnt, soviel klares Wasser um sich zu sehen, wenn man über so lange Zeit vor allem im Sumpf gesessen hat.
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_02"); //Und diese Insel scheint wieder einiges an Abenteuern zu versprechen.
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_03"); //So wie es hier aussieht meint man, das Böse lauert hinter jeder Ecke.
-	AI_Output(hero, self, "Info_Mod_Lester_IR_Hi_15_04"); //Ja, dem einen oder anderen Vieh werden wir hier bestimmt begegnen ...
+	AI_Output(hero, self, "Info_Mod_Lester_IR_Hi_15_00"); //Co myslales o wycieczce i jak podoba Ci sie wyspa?
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_01"); //No cóz, nie wiem.... bardzo obce, aby widziec wokól ciebie tak duzo czystej wody, kiedy tak dlugo siedzisz w bagnie.
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_02"); //A ta wyspa znowu obiecuje przygode.
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Hi_13_03"); //Jak to wyglada, uwazasz, ze zlo czai sie za kazdym rogiem.
+	AI_Output(hero, self, "Info_Mod_Lester_IR_Hi_15_04"); //Tak, na pewno spotykamy tu jedno lub dwa bydlo....
 };
 
 INSTANCE Info_Mod_Lester_IR_Hebel (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Lester_IR_Hebel (C_INFO)
 	information	= Info_Mod_Lester_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Lester_IR_Hebel_Condition()
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Lester_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Hebel_13_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Hebel_13_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -77,8 +77,8 @@ FUNC INT Info_Mod_Lester_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Lester_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Ambient01_13_00"); //Sehr beklemmend. Je weiter wir gehen, desto stärker erspüre ich eine Gegenwart, die jener des Schläfers nicht unähnlich ist.
-	AI_Output(self, hero, "Info_Mod_Lester_IR_Ambient01_13_01"); //Lasst uns das hier schnell hinter uns bringen.
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Ambient01_13_00"); //Bardzo uciazliwy. Im dalej idziemy, tym bardziej czuje obecnosc, która nie rózni sie od obecnosci osoby sypialnej.
+	AI_Output(self, hero, "Info_Mod_Lester_IR_Ambient01_13_01"); //Zróbmy to szybko.
 
 	AI_StopProcessInfos	(self);
 };
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Lester_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Lester_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Lester_IR_GehtLos_Condition()
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Lester_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Lester_IR_GehtLos_13_00"); //Sicherlich. Ob Bergfestung, oder Inselfestung soll keine Roll spielen. Wenn das Abenteuer ruft ...
+	AI_Output(self, hero, "Info_Mod_Lester_IR_GehtLos_13_00"); //Oczywiscie. Niezaleznie od tego, czy twierdza górska czy twierdza wyspowa nie powinna grac na rolkach. Kiedy nadejdzie przygoda.....
 
 	Mod_IR_Dabei += 1;
 
@@ -129,7 +129,7 @@ INSTANCE Info_Mod_Lester_IR_GehBack (C_INFO)
 	information	= Info_Mod_Lester_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Lester_IR_GehBack_Condition()
@@ -146,7 +146,7 @@ FUNC VOID Info_Mod_Lester_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Lester_IR_GehBack_13_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Lester_IR_GehBack_13_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Lester_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Lester_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Lester_IR_Heiltrank_Condition()
@@ -185,31 +185,31 @@ FUNC VOID Info_Mod_Lester_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Lester_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Lester_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Lester_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Lester_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Lester_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Lester_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Lester_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Lester_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Lester_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Lester_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Lester_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Lester_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Lester_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Lester_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Lester_IR_Heiltrank_Health_05);
 	};
 };
 

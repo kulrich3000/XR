@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_BeliarsRache (C_Item)
 {
-	name 				=	"Beliars' Rache";
+	name 				=	"Zemsta weliarsów";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -30,7 +30,7 @@ INSTANCE ItMw_BeliarsRache (C_Item)
 };
 INSTANCE ItMw_BeliarsRache_Geschaerft (C_Item)
 {
-	name 				=	"Beliars' Rache (geschärft)";
+	name 				=	"Zemsta Beliarów (ostrozna)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;

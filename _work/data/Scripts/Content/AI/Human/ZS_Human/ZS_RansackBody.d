@@ -56,7 +56,7 @@ func void ZS_RansackBody_End ()
 		{
 			Npc_RemoveInvItems	(hero, ItRi_SkinnersRing_Gold, 1);
 
-			AI_Output(self, hero, "Info_Mod_Sabitsch_HerosRing_04_00"); //Danke für den Schmuck, du Held. Wird sich in meiner Sammlung bestimmt gut machen.
+			AI_Output(self, hero, "Info_Mod_Sabitsch_HerosRing_04_00"); //Dziekujemy za bizuterie, bohater. Jestem pewien, ze moja kolekcja bedzie sie dobrze sprawdzac.
 
 			Mod_SabitschAmulettGeklaut = 0;
 		};

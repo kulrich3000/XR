@@ -1,7 +1,7 @@
 INSTANCE Mod_564_MIL_Boltan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Boltan";	
+	name 		= "sworzen";	
 	guild 		= GIL_PAL;
 	id 			= 564;
 	voice 		= 30;

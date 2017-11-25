@@ -1,7 +1,7 @@
 instance Mod_7321_HoherUntoterMagier_AW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Hoher Untoter Magier";
+	name 		=		"Czosnek wysokiego skladowania";
 	Npctype 		=		Npctype_UNTOTERMAGIER;
 	guild 		=		GIL_STRF;
 	level 		=		80;

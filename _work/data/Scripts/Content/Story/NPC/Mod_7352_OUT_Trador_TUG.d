@@ -1,7 +1,7 @@
 instance Mod_7352_OUT_Trador_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Trador";
+	name 		= "Handlowiec";
 	guild 		= GIL_DMT;
 	id 			= 7352;
 	voice 		= 8;

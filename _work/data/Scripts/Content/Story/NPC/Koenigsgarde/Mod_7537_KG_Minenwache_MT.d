@@ -1,7 +1,7 @@
 instance Mod_7537_KG_Minenwache_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Minenwache";	
+	name 		= "wartownik miny";	
 	guild 		= GIL_OUT;
 	id 			= 7537;
 	voice 		= 7;

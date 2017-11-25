@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Harpie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Harpie";
+	name							=	"harfa";
 	guild							=	GIL_HARPY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_HARPY;
 	level							=	18;
@@ -141,7 +141,7 @@ INSTANCE HarpieTransform	(Mst_Default_Harpie)
 
 INSTANCE Summoned_Harpie	(Mst_Default_Harpie)
 {
-	name							=	"Beschworene Harpie";
+	name							=	"Przedza karpie na wezwanie";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_HARPIE;
 	level							=	0; //10

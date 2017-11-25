@@ -15,22 +15,22 @@ FUNC INT Info_Mod_Lawrence_Hi_Condition()
 
 FUNC VOID Info_Mod_Lawrence_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_00"); //Suchst du jemanden?
-	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_01"); //Ja, aber mir fällt sein Name nicht mehr ein. Er beginnt mit L.
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_02"); //Hier in der Oberstadt gibt es nur drei. Einer ist Larius, der Stadthalter. Dann gibt es noch Lutero, ein Händler. Er sollte eigentlich hier irgendwo rumstehen.
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_03"); //Und natürlich noch mich. Mein Namen ist Lawrence.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_00"); //Szukasz kogos?
+	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_01"); //Tak, ale nie pamietam jego nazwiska. Zaczyna sie od L.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_02"); //W górnym miescie sa tylko trzy. Jednym z nich jest Larius, gubernator. Jest tez Lutero, dealer. Móglby tu stanac.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_03"); //I ja oczywiscie. Nazywam sie Lawrence.
 
-	Mod_1730_MIL_Lawrence_NW.name = "Lawrence";
+	Mod_1730_MIL_Lawrence_NW.name = "prawo";
 
-	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_04"); //Achso, danke für die Informationen.
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_05"); //Kein Problem. Was brauchst du denn?
-	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_06"); //Ich suche den Erfinder.
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_07"); //Den Erfinder?
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_08"); //(verängstigt) Äh, d-d-der ist ...a-auf Urlaub, genau, auf Urlaub! Er hat gesagt, er wolle einen Freund besuchen ...in Myrtana!
-	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_09"); //Okay! Nochmal danke für die Informationen.
-	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_10"); //Kein Problem. Äh, ich muss jetzt weg!
+	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_04"); //Cóz, dziekuje za informacje.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_05"); //Bez problemu. Czego potrzebujesz?
+	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_06"); //Szukam wynalazcy.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_07"); //Wynalazca?
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_08"); //Uh, th,.... na wakacje, prawo, na wakacje! Powiedzial, ze zamierza odwiedzic przyjaciela.... w Myrtanie!
+	AI_Output(hero, self, "Info_Mod_Lawrence_Hi_15_09"); //O Skromnie! Jeszcze raz dziekuje za informacje.
+	AI_Output(self, hero, "Info_Mod_Lawrence_Hi_06_10"); //Bez problemu. Uh, musze isc teraz!
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Eine Miliz namens Lawrence hat mir von drei Personen in der Oberstadt mit dem Anfangsbuchstaben L erzählt. Larius, der Stadthalter, Lutero, der Händler, und er selbst. Nachdem er erfahren hat, dass ich den Erfinder suche, wurde er ziemlich nervös. Ich sollte ihn wohl mal verfolgen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Milicja o imieniu Lawrence opowiedziala mi o trzech osobach w górnym miescie z poczatkowa litera 'L'. Larius, gubernator, Lutero, kupiec i on sam. Po tym jak dowiedzial sie, ze szukam wynalazcy, bardzo sie zdenerwowal. Chyba powinienem kiedys pójsc za nim.");
 
 	AI_StopProcessInfos	(self);
 

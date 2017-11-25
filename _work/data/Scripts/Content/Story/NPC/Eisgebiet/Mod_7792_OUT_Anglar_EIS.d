@@ -1,7 +1,7 @@
 instance Mod_7792_OUT_Anglar_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Anglar"; 
+	name 		= "anglik"; 
 	guild 		= GIL_OUT;
 	id 			= 7792;
 	voice 		= 6;

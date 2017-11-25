@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jim_Hi (C_INFO)
 	information	= Info_Mod_Jim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Jim_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Jim_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Jim_Hi_18_00"); //Ich Jim.
+	AI_Output(self, hero, "Info_Mod_Jim_Hi_18_00"); //Ja, Jim.
 };
 
 INSTANCE Info_Mod_Jim_WieStadt (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Jim_WieStadt (C_INFO)
 	information	= Info_Mod_Jim_WieStadt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällt dir die Stadt?";
+	description	= "Jak Ci sie podoba miasto?";
 };
 
 FUNC INT Info_Mod_Jim_WieStadt_Condition()
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Jim_WieStadt_Condition()
 
 FUNC VOID Info_Mod_Jim_WieStadt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_WieStadt_15_00"); //Wie gefällt dir die Stadt?
-	AI_Output(self, hero, "Info_Mod_Jim_WieStadt_18_01"); //Bis vor ein paar Wochen Jim glücklich in Menschenstadt, aber jetzt traurig.
+	AI_Output(hero, self, "Info_Mod_Jim_WieStadt_15_00"); //Jak Ci sie podoba miasto?
+	AI_Output(self, hero, "Info_Mod_Jim_WieStadt_18_01"); //Jeszcze kilka tygodni temu Jim byl szczesliwy w Menschenstadt, ale teraz jest smutny.
 };
 
 INSTANCE Info_Mod_Jim_Traurig (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Jim_Traurig (C_INFO)
 	information	= Info_Mod_Jim_Traurig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso bist du traurig?";
+	description	= "Dlaczego jestes smutny?";
 };
 
 FUNC INT Info_Mod_Jim_Traurig_Condition()
@@ -68,50 +68,50 @@ FUNC INT Info_Mod_Jim_Traurig_Condition()
 
 FUNC VOID Info_Mod_Jim_Traurig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_00"); //Wieso bist du traurig?
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_01"); //Menschenhäuptling kommen zu Jim und sagen: "Du jetzt arbeiten in Mine von Khorata."
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_02"); //Aber Jim sagen: "Nein!"
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_03"); //Jim nicht wollen arbeiten wie seine Brüder in Mine.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_04"); //Menschenhäuptling sagen: "Gut, aber dann kriegen Jim kein Spender-Freuden mehr, wenn nicht gehen in Mine."
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_05"); //Jim mögen Spender-Freuden sehr gern, und Menschenhäuptling wissen.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_06"); //Aber Jim lieber verzichten als zu arbeiten in dreckiger Mine. Seitdem Jim vermissen Spender-Freuden.
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_07"); //Das wäre doch die richtige Zeit, sich von dem Zeug zu entwöhnen.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_08"); //Nein! Jim nicht wollen entwöhnen! Jim wollen Spender-Freuden!
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_09"); //Und Jim haben Plan zu kriegen es zurück.
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_10"); //Jetzt bin ich aber gespannt.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_11"); //Jim bauen Menschenhäuptling Amulett, das schützen gegen Geister.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_12"); //Dann Menschenhäuptling zufrieden und wieder lieb zu Jim und geben Jim Spender-Freuden.
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_13"); //Und das soll funktionieren?
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_14"); //Jim sehr guter Handwerker, Mensch brauchen haben keine Angst. Jim haben beeindruckt großen Ork-Häuptling Grshka mit Geisteramulett.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_15"); //Aber auszuprobieren Amulett, Jim müssen finden Geisterseele.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_00"); //Dlaczego jestes smutny?
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_01"); //Menschenhäuptling kommen zu Jim und sagen: "Pracujesz teraz w kopalni Khoraty."
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_02"); //Aber Jim sagen: "Nie!"
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_03"); //Jim nie chcial pracowac jak jego bracia w Kopalni.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_04"); //Menschenhäuptling sagen: "Piekny, ale potem Jim nie dostanie wiecej przyjemnosci darczyncy, jesli nie pójdzie do Kopalni."
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_05"); //Jim lubi przyjemnosci darczynców, a szefowie lubia wiedziec.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_06"); //Jim wolalby jednak nie pracowac w brudnej kopalni. Od tego czasu Jim teskni za radoscia dawcy.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_07"); //Teraz bylby to dobry czas na pozbycie sie tego wszystkiego.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_08"); //Nie! Jim nie chce sie odstawic od piersi! Jim chce radosci darczyncy!
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_09"); //A Jim ma zamiar ja odzyskac.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_10"); //Teraz jestem ciekawy.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_11"); //Jim buduje ludzki szef amulet chroniacy przed duchami.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_12"); //Wtedy ludzki szef tresci i ponownie kochac Jim i dac darczyncy Jim radosci.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_15_13"); //I to ma dzialac?
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_14"); //Jim bardzo dobry rzemieslnik, ludzie nie musza sie bac. Jim zachwycil wielkiego orka szefa Orkiestry Grshki amuletem duchowym.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_18_15"); //Aby jednak spróbowac amuletu, Jim musi znalezc dusze duchów.
 
 	Info_ClearChoices	(Info_Mod_Jim_Traurig);
 
-	Info_AddChoice	(Info_Mod_Jim_Traurig, "Viel Spaß bei der Suche!", Info_Mod_Jim_Traurig_B);
-	Info_AddChoice	(Info_Mod_Jim_Traurig, "Soll ich das übernehmen?", Info_Mod_Jim_Traurig_A);
+	Info_AddChoice	(Info_Mod_Jim_Traurig, "Szukaj zabawy!", Info_Mod_Jim_Traurig_B);
+	Info_AddChoice	(Info_Mod_Jim_Traurig, "Chcesz, abym sobie z tym poradzil?", Info_Mod_Jim_Traurig_A);
 };
 
 FUNC VOID Info_Mod_Jim_Traurig_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_B_15_00"); //Viel Spaß bei der Suche!
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_B_15_00"); //Szukaj zabawy!
 
 	Info_ClearChoices	(Info_Mod_Jim_Traurig);
 };
 
 FUNC VOID Info_Mod_Jim_Traurig_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_A_15_00"); //Soll ich das übernehmen?
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_01"); //Jim glücklich, wenn Mensch suchen nach Geisterseele.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_02"); //Schauen auf Menschenfriedhof bei Hofstaat-Pass, wenn dunkel.
-	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_03"); //Vielleicht treiben sich dort herum eine Seele.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_A_15_00"); //Chcesz, abym sobie z tym poradzil?
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_01"); //Jim szczesliwy, gdy ludzie szukaja duchowej duszy.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_02"); //Spogladajac na cien, gdy jest ciemno, na cmentarz mezczyzny w poblizu Hofstaat-Pass.
+	AI_Output(self, hero, "Info_Mod_Jim_Traurig_A_18_03"); //Byc moze wokól panuje dusza.
 
 	B_GiveInvItems	(self, hero, ItAm_Geisteramulett, 1);
 
-	AI_Output(hero, self, "Info_Mod_Jim_Traurig_A_15_04"); //Alles klar. Ich werde mal nachsehen.
+	AI_Output(hero, self, "Info_Mod_Jim_Traurig_A_15_04"); //Wszystko jasne. Zobacze.
 
 	Log_CreateTopic	(TOPIC_MOD_JIM_SCHUTZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JIM_SCHUTZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Der Ork Jim in Khorata bekommt keinen Freudenspender mehr von Anselm, weil er sich geweigert hat, in der Mine zu arbeiten. Er will Anselm nun zur Besänftigung ein Geisteramulett schenken, das allerdings noch erprobt werden muss. Nordöstlich des Hofstaat-Passes ist ein Friedhof, auf dem sich nachts eine Geisterseele befinden könnte.");
+	B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Orc Jim w Khoracie nie jest juz dawca radosci od Anselm, poniewaz odmówil pracy w kopalni. Teraz chce dac Anselmowi amulet duchowy, aby uspokoic go, ale nie zostal jeszcze przetestowany. Na pólnocny wschód od Hofstaat-Pass znajduje sie cmentarz, na którym dusza duchowa moze byc noca.");
 
 	Mod_Jim_Schutz = 1;
 
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Jim_Schutzbeduerftig (C_INFO)
 	information	= Info_Mod_Jim_Schutzbeduerftig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe dein Amulett ausprobiert. Es hat tadellos gearbeitet.";
+	description	= "Spróbowalem waszego amuletu. To zadzialalo doskonale.";
 };
 
 FUNC INT Info_Mod_Jim_Schutzbeduerftig_Condition()
@@ -140,17 +140,17 @@ FUNC INT Info_Mod_Jim_Schutzbeduerftig_Condition()
 
 FUNC VOID Info_Mod_Jim_Schutzbeduerftig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_00"); //Ich habe dein Amulett ausprobiert. Es hat tadellos gearbeitet.
+	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_00"); //Spróbowalem waszego amuletu. To zadzialalo doskonale.
 
 	B_GiveInvItems	(hero, self, ItAm_Geisteramulett, 1);
 
-	AI_Output(self, hero, "Info_Mod_Jim_Schutzbeduerftig_18_01"); //Jim froh und dankbar. Mensch nehmen dieses Gold als Dank von Jim.
+	AI_Output(self, hero, "Info_Mod_Jim_Schutzbeduerftig_18_01"); //Jim radosny i wdzieczny. Ludzie przyjmuja to zloto jako podziekowanie od Jima.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_02"); //Wirst du Anselm das Amulett nun geben?
-	AI_Output(self, hero, "Info_Mod_Jim_Schutzbeduerftig_18_03"); //Ja! Jim kaum können erwarten zu kriegen wieder Spender-Freuden.
-	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_04"); //Dann viel Glück.
+	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_02"); //Czy dasz juz Anselmowi amulet?
+	AI_Output(self, hero, "Info_Mod_Jim_Schutzbeduerftig_18_03"); //Tak! Jim nie moze sie doczekac, az darczynca odzyska przyjemnosc.
+	AI_Output(hero, self, "Info_Mod_Jim_Schutzbeduerftig_15_04"); //Powodzenia.
 
 	B_SetTopicStatus	(TOPIC_MOD_JIM_SCHUTZ, LOG_SUCCESS);
 
@@ -171,7 +171,7 @@ INSTANCE Info_Mod_Jim_SpenderFreuden (C_INFO)
 	information	= Info_Mod_Jim_SpenderFreuden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warst du erfolgreich mit deinem Amulett?";
+	description	= "Czy odniesliscie sukcesy z amuletem?";
 };
 
 FUNC INT Info_Mod_Jim_SpenderFreuden_Condition()
@@ -185,37 +185,37 @@ FUNC INT Info_Mod_Jim_SpenderFreuden_Condition()
 
 FUNC VOID Info_Mod_Jim_SpenderFreuden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_15_00"); //Warst du erfolgreich mit deinem Amulett?
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_18_01"); //(verzweifelt) Menschenhäuptling nehmen, aber nicht geben Spender-Freuden zurück.
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_18_02"); //Sagen bloß, Amulett nett und passen gut zu Kleidung.
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_15_00"); //Czy odniesliscie sukcesy z amuletem?
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_18_01"); //Rozpad) zabrac szefów ludzkich, ale nie oddawac radosci darczyncom.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_18_02"); //Powiedzmy, amulet jest ladny i dobrze pasuje do ubran.
 
 	Info_ClearChoices	(Info_Mod_Jim_SpenderFreuden);
 
-	Info_AddChoice	(Info_Mod_Jim_SpenderFreuden, "Glaub mir, das ist besser so.", Info_Mod_Jim_SpenderFreuden_B);
-	Info_AddChoice	(Info_Mod_Jim_SpenderFreuden, "Soll ich ein wenig Freudenspender für dich auftreiben?", Info_Mod_Jim_SpenderFreuden_A);
+	Info_AddChoice	(Info_Mod_Jim_SpenderFreuden, "Prosze mi wierzyc, lepiej w ten sposób.", Info_Mod_Jim_SpenderFreuden_B);
+	Info_AddChoice	(Info_Mod_Jim_SpenderFreuden, "Czy znajde dla Ciebie troche przysmaku?", Info_Mod_Jim_SpenderFreuden_A);
 };
 
 FUNC VOID Info_Mod_Jim_SpenderFreuden_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_B_15_00"); //Glaub mir, das ist besser so.
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_B_18_01"); //Aber Jim jetzt sehr traurig.
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_B_15_00"); //Prosze mi wierzyc, lepiej w ten sposób.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_B_18_01"); //Ale teraz Jim jest bardzo smutny.
 
 	Info_ClearChoices	(Info_Mod_Jim_SpenderFreuden);
 };
 
 FUNC VOID Info_Mod_Jim_SpenderFreuden_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_A_15_00"); //Soll ich ein wenig Freudenspender für dich auftreiben?
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_01"); //Jim würden stehen in großer Schuld von Mensch, wenn bringen Spender-Freuden.
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_02"); //Menschenhäuptling immer gehen zu Haus-Lager in Gasse, wo Menschen schlafen.
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_03"); //Dort müssen sein großer Vorrat an Spender-Freuden. Aber Wache nicht lassen Jim in Haus-Lager.
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_A_15_04"); //Ich komme bald wieder.
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_A_15_00"); //Czy znajde dla Ciebie troche przysmaku?
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_01"); //Jim stanalby w wielkim dlugu czlowieka, jesli przyniesc darczyncy przyjemnosci.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_02"); //Ludzcy przywódcy zawsze jada do obozu na pasie, gdzie ludzie spia.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden_A_18_03"); //Musi istniec duzy zapas przyjemnosci darczynców. Ale straznik nie opuszcza Jima w obozie domowym.
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden_A_15_04"); //Wkrótce wróce.
 
 	Mod_Jim_Freudenspender = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_JIM_FREUDENSPENDER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JIM_FREUDENSPENDER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "Jim ist am Boden zerstört, weil Anselm sein Geschenk nicht mit Begeisterung aufgenommen hat. Ich habe ihm versprochen, dass ich ihm Freudenspender aus dem Lagerhaus in der Wohnhausgasse von Khorata bringe.");
+	B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "Jim jest zdewastowany, poniewaz Anselm z entuzjazmem nie przyjal daru. Obiecalem mu, ze przyniose mu przysmaki z magazynu przy ulicy mieszkalnej Khoraty.");
 
 	Wld_InsertItem	(ItMi_FreudenspenderPaket, "FP_ITEM_JIM_DROGEN");
 
@@ -230,7 +230,7 @@ INSTANCE Info_Mod_Jim_SpenderFreuden2 (C_INFO)
 	information	= Info_Mod_Jim_SpenderFreuden2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das Paket hier sollte erst mal reichen, oder?";
+	description	= "Ten pakiet powinien wystarczyc na teraz, prawda?";
 };
 
 FUNC INT Info_Mod_Jim_SpenderFreuden2_Condition()
@@ -244,16 +244,16 @@ FUNC INT Info_Mod_Jim_SpenderFreuden2_Condition()
 
 FUNC VOID Info_Mod_Jim_SpenderFreuden2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden2_15_00"); //Das Paket hier sollte erst mal reichen, oder?
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden2_15_00"); //Ten pakiet powinien wystarczyc na teraz, prawda?
 
 	B_GiveInvItems	(hero, self, ItMi_FreudenspenderPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden2_18_01"); //Oh, Jim Mensch sehr dankbar. Jim haben gespart eine Menge Geld von Ausbildung bei Metzger.
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden2_18_02"); //Jim wollen teilen mit Mensch.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden2_18_01"); //Oh, Jim Mensch bardzo wdzieczny. Dzieki szkoleniom w Metzger Jim zaoszczedzil sporo pieniedzy.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden2_18_02"); //Jim chce dzielic sie z ludzmi.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden2_15_03"); //Danke. Mach's gut.
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden2_15_03"); //Dzieki. Teraz nalezy zachowac ostroznosc.
 
 	B_SetTopicStatus	(TOPIC_MOD_JIM_FREUDENSPENDER, LOG_SUCCESS);
 
@@ -274,7 +274,7 @@ INSTANCE Info_Mod_Jim_SpenderFreuden3 (C_INFO)
 	information	= Info_Mod_Jim_SpenderFreuden3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte hier so was Ähnliches wie Freudenspender ...";
+	description	= "Mam tu cos w rodzaju radosci....";
 };
 
 FUNC INT Info_Mod_Jim_SpenderFreuden3_Condition()
@@ -289,11 +289,11 @@ FUNC INT Info_Mod_Jim_SpenderFreuden3_Condition()
 
 FUNC VOID Info_Mod_Jim_SpenderFreuden3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden3_15_00"); //Ich hätte hier so was Ähnliches wie Freudenspender ...
+	AI_Output(hero, self, "Info_Mod_Jim_SpenderFreuden3_15_00"); //Mam tu cos w rodzaju radosci....
 
 	B_GiveInvItems	(hero, self, ItPo_FreudenspenderSuppe, 1);
 
-	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden3_18_01"); //Jim müssen probieren. Riechen nicht gut, aber vielleicht schmecken gut.
+	AI_Output(self, hero, "Info_Mod_Jim_SpenderFreuden3_18_01"); //Jim musi spróbowac. Nie pachna dobrze, ale moga smakowac dobrze.
 
 	AI_StopProcessInfos	(self);
 
@@ -308,7 +308,7 @@ INSTANCE Info_Mod_Jim_Name (C_INFO)
 	information	= Info_Mod_Jim_Name_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ungewöhnlicher Name für einen Ork.";
+	description	= "Nietypowa nazwa orka.";
 };
 
 FUNC INT Info_Mod_Jim_Name_Condition()
@@ -321,8 +321,8 @@ FUNC INT Info_Mod_Jim_Name_Condition()
 
 FUNC VOID Info_Mod_Jim_Name_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jim_Name_15_00"); //Ungewöhnlicher Name für einen Ork.
-	AI_Output(self, hero, "Info_Mod_Jim_Name_18_01"); //Jim Name von Menschen. Jim nicht kennen Name von Orks.
+	AI_Output(hero, self, "Info_Mod_Jim_Name_15_00"); //Nietypowa nazwa orka.
+	AI_Output(self, hero, "Info_Mod_Jim_Name_18_01"); //Jim Nazwisko ludzi. Jim nie zna nazwy orków.
 };
 
 INSTANCE Info_Mod_Jim_Pickpocket (C_INFO)

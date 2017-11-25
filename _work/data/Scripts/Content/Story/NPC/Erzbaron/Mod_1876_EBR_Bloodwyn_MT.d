@@ -1,7 +1,7 @@
 instance Mod_1876_EBR_Bloodwyn_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bloodwyn";
+	name 		= "krew";
 	guild 		= GIL_OUT;
 	id 			= 1876;
 	voice 		= 4;//Stimme Lee

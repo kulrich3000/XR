@@ -1,7 +1,7 @@
 INSTANCE Mod_1553_PIR_GEISTERPIRAT_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Käptn Silver";
+	name 		= "Kapitan Srebrny";
 	guild 		= GIL_STRF;
 	id 			= 1553;
 	voice 		= 7;

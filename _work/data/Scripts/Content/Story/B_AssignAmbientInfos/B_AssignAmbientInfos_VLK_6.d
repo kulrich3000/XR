@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_6_JOIN(C_INFO)
 	condition	= DIA_VLK_6_JOIN_Condition;
 	information	= DIA_VLK_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Wie werde ich Bürger dieser Stadt?";
+	description = "Jak zostac obywatelem tego miasta?";
 };                       
 
 FUNC INT DIA_VLK_6_JOIN_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_VLK_6_JOIN_Condition()
 
 FUNC VOID DIA_VLK_6_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_00"); //Wie werde ich Bürger dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_01"); //Du willst dich hier niederlassen? Jetzt? Wo hier alle Anzeichen auf Weltuntergang stehen?
-	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_02"); //Ich hatte nicht vor, ewig zu bleiben.
-	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_03"); //Also, ich würde dir raten, dich hier zu verkrümeln, solange du noch kannst, aber wenn du's darauf anlegst, solltest du mit einem der einflussreichen Bürger hier reden.
+	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_00"); //Jak zostac obywatelem tego miasta?
+	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_01"); //Chcesz sie tu osiedlic? Teraz? Gdzie sa wszystkie znaki zguby i ponury?
+	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_02"); //Nie chcialem zostac na zawsze.
+	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_03"); //No cóz, radzilbym, zebys tu zostal, dopóki jeszcze mozesz, ale jesli sie na to zdecydujesz, powinienes porozmawiac z jednym z wplywowych obywateli.
 };
 
 INSTANCE DIA_VLK_6_Skinner(C_INFO)
@@ -55,7 +55,7 @@ INSTANCE DIA_VLK_6_Skinner(C_INFO)
 	condition	= DIA_VLK_6_Skinner_Condition;
 	information	= DIA_VLK_6_Skinner_Info;
 	permanent	= TRUE;
-	description = "Ich habe hier etwas, was die Stimmung zu heben vermag.";
+	description = "Mam tu cos do podzwigniecia.";
 };                       
 
 FUNC INT DIA_VLK_6_Skinner_Condition()
@@ -72,28 +72,28 @@ FUNC INT DIA_VLK_6_Skinner_Condition()
 
 FUNC VOID DIA_VLK_6_Skinner_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_Skinner_15_00"); //Ich habe hier etwas, was die Stimmung zu heben vermag.
-	AI_Output (self, hero, "DIA_VLK_6_Skinner_06_01"); //Ahh, dieser herrliche Duft. Wirkt intensiver als das, was man hier sonst so bekommt am Hafen. Wie viel soll der Spaß den kosten?
+	AI_Output (hero, self, "DIA_VLK_6_Skinner_15_00"); //Mam tu cos do podzwigniecia.
+	AI_Output (self, hero, "DIA_VLK_6_Skinner_06_01"); //Ahh, ten piekny zapach. Bardziej intensywne niz to, co zwykle docierasz do portu. Ile kosztuje to radosci?
 
 	Mod_SkinnerQuest = 2;
 
 	Info_ClearChoices	(DIA_VLK_6_Skinner);
 
-	Info_AddChoice	(DIA_VLK_6_Skinner, "40 Gold.", DIA_VLK_6_Skinner_C);
-	Info_AddChoice	(DIA_VLK_6_Skinner, "30 Gold", DIA_VLK_6_Skinner_B);
-	Info_AddChoice	(DIA_VLK_6_Skinner, "20 Gold.", DIA_VLK_6_Skinner_A);
+	Info_AddChoice	(DIA_VLK_6_Skinner, "40 zlota.", DIA_VLK_6_Skinner_C);
+	Info_AddChoice	(DIA_VLK_6_Skinner, "30 zloto", DIA_VLK_6_Skinner_B);
+	Info_AddChoice	(DIA_VLK_6_Skinner, "20 zlota.", DIA_VLK_6_Skinner_A);
 };
 
 FUNC VOID DIA_VLK_6_Skinner_D()
 {	
-	AI_Output (self, hero, "DIA_VLK_6_Skinner_D_06_00"); //Und auch noch so günstig. Ich nehme alles, was du hast.
+	AI_Output (self, hero, "DIA_VLK_6_Skinner_D_06_00"); //Bez wzgledu na to, jak tanie. Zabiore wszystko, co dostales.
 
 	Info_ClearChoices	(DIA_VLK_6_Skinner);
 };
 
 FUNC VOID DIA_VLK_6_Skinner_C()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_Skinner_C_15_00"); //40 Gold.
+	AI_Output (hero, self, "DIA_VLK_6_Skinner_C_15_00"); //40 zlota.
 
 	DIA_VLK_6_Skinner_D();
 
@@ -104,14 +104,14 @@ FUNC VOID DIA_VLK_6_Skinner_C()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_6_Skinner);
 };
 
 FUNC VOID DIA_VLK_6_Skinner_B()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_Skinner_B_15_00"); //30 Gold.
+	AI_Output (hero, self, "DIA_VLK_6_Skinner_B_15_00"); //Trzydziesci zlota.
 
 	DIA_VLK_6_Skinner_D();
 
@@ -122,14 +122,14 @@ FUNC VOID DIA_VLK_6_Skinner_B()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_6_Skinner);
 };
 
 FUNC VOID DIA_VLK_6_Skinner_A()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_Skinner_A_15_00"); //20 Gold.
+	AI_Output (hero, self, "DIA_VLK_6_Skinner_A_15_00"); //20 zlota.
 
 	DIA_VLK_6_Skinner_D();
 
@@ -140,7 +140,7 @@ FUNC VOID DIA_VLK_6_Skinner_A()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 
 	Info_ClearChoices	(DIA_VLK_6_Skinner);
 };
@@ -151,7 +151,7 @@ INSTANCE Info_VLK_06_Flugblätter (C_INFO) // E1
 	condition	= Info_VLK_06_Flugblätter_Condition;
 	information	= Info_VLK_06_Flugblätter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "Mam dla Ciebie ulotke.";
 };                       
 
 FUNC INT Info_VLK_06_Flugblätter_Condition()
@@ -188,7 +188,7 @@ INSTANCE Info_VLK_6_Rangar (C_INFO) // E1
 	condition	= Info_VLK_6_Rangar_Condition;
 	information	= Info_VLK_6_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Czy wiedziales juz, ze....";
 };                       
 
 FUNC INT Info_VLK_6_Rangar_Condition()
@@ -207,14 +207,14 @@ FUNC INT Info_VLK_6_Rangar_Condition()
 
 FUNC VOID Info_VLK_6_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_6_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_6_Rangar_06_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_6_Rangar_15_02"); //Mit einem von Alwins Schafen!
-	AI_Output(self, hero, "Info_Mod_VLK_6_Rangar_06_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_6_Rangar_15_00"); //Czy wiedziales, ze Rangar ma romans?
+	AI_Output(self, hero, "Info_Mod_VLK_6_Rangar_06_01"); //Naprawde? Z kim?
+	AI_Output(hero, self, "Info_Mod_VLK_6_Rangar_15_02"); //Z jedna z owiec Alwin!
+	AI_Output(self, hero, "Info_Mod_VLK_6_Rangar_06_03"); //Czy jestes pewien tego? Bede musial od razu isc dalej.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Wokól krazy plotka, wiec Den bedzie zadowolony.");
 };
 
 // *************************************************************************
@@ -226,7 +226,7 @@ INSTANCE DIA_VLK_6_PEOPLE(C_INFO)
 	condition	= DIA_VLK_6_PEOPLE_Condition;
 	information	= DIA_VLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die einflussreichen Bürger von Khorinis?";
+	description = "Kim sa wplywowi obywatele Khorinis?";
 };                       
 
 FUNC INT DIA_VLK_6_PEOPLE_Condition()
@@ -236,9 +236,9 @@ FUNC INT DIA_VLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_6_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_PEOPLE_15_00"); //Wer sind die einflussreichen Bürger von Khorinis?
-	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_01"); //Probier's mal beim Schmied oder beim Tischler in der Unterstadt. Es gibt dort auch noch ein paar andere angesehene Meister.
-	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_02"); //Wenn hier jemand abgesehen von der Stadtwache und den Paladinen was zu sagen hat, dann diese Männer.
+	AI_Output (hero, self, "DIA_VLK_6_PEOPLE_15_00"); //Kim sa wplywowi obywatele Khorinis?
+	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_01"); //Wypróbuj kowal lub stolarza w dolnym miescie. Jest tam równiez kilku innych wybitnych mistrzów.
+	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_02"); //Jesli ktokolwiek ma tu cos do powiedzenia oprócz strazników i paladynów, to wlasnie oni.
 };
 
 // *************************************************************************
@@ -250,7 +250,7 @@ INSTANCE DIA_VLK_6_LOCATION(C_INFO)
 	condition	= DIA_VLK_6_LOCATION_Condition;
 	information	= DIA_VLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Woran kann ich mich hier in der Stadt am besten orientieren?";
+	description = "Jak najlepiej orientowac sie w miescie?";
 };                       
 
 FUNC INT DIA_VLK_6_LOCATION_Condition()
@@ -260,10 +260,10 @@ FUNC INT DIA_VLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_6_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_LOCATION_15_00"); //Woran kann ich mich hier in der Stadt am besten orientieren?
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_01"); //Ist gar nicht so leicht, sich hier zurechtzufinden, was? Da helfen selbst die Wegweiser nicht immer.
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_02"); //Wenn du einen schlechten Orientierungssinn hast, wird es das Beste sein, du gehst zum Hafen - den wirst du ja wohl noch finden - und suchst das Haus des Kartenzeichners.
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_03"); //Es ist direkt neben der Kneipe, an der Hafenmauer. Brahim hat bestimmt einen Plan von der Stadt für dich.
+	AI_Output (hero, self, "DIA_VLK_6_LOCATION_15_00"); //Jak najlepiej orientowac sie w miescie?
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_01"); //Nie jest latwo znalezc sie tutaj, prawda? Nawet drogowskazy nie zawsze pomagaja.
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_02"); //Jesli masz zle wyczucie kierunku, najlepiej bedzie udac sie do portu - prawdopodobnie nadal go odnajdziesz - i poszukac domu kartografa.
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_03"); //Jest tuz obok pubu, przy scianie doku. Brahim musi miec dla Ciebie mape miasta.
 };
 
 INSTANCE Info_Mod_VLK_6_Pickpocket (C_INFO)

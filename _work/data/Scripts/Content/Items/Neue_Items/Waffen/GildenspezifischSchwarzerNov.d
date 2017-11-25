@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Beliarschwert (C_Item)
 {	
-	name 				=	"Dunkles Kurzschwert";
+	name 				=	"Mroczny krótki miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_Beliarschwert (C_Item)
 };
 INSTANCE ItMw_Beliarschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Dunkles Kurzschwert (geschärft)";
+	name 				=	"Mroczny krótki miecz (ostry ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

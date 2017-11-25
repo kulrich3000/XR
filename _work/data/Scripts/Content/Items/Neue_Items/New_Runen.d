@@ -16,7 +16,7 @@ INSTANCE ItRu_Altern	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Altern";
+	description			=	"starzenie";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;

@@ -2,7 +2,7 @@
 instance Mil_304_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Torwache"; 	
+	name 		= "bramka"; 	
 	guild 		= GIL_PAL;
 	id 			= 304;
 	voice 		= 8;

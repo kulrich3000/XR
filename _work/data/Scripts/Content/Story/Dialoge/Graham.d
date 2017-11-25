@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Graham_Hi_Condition()
 
 FUNC VOID Info_Mod_Graham_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_00"); //Hab ich dich nicht schon mal gesehen?
-	AI_Output(hero, self, "Info_Mod_Graham_Hi_15_01"); //Du hast mir jedenfalls mal eine deiner Karten gegeben.
-	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_02"); //Jetzt weiß ich wieder, wer du bist!
-	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_03"); //Du warst der Komische, der erst vor ein paar Monaten in der Barriere angekommen ist und sich als Erstes hier mit so ziemlich jedem einflussreichen Gardisten angelegt hat.
-	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_04"); //Mann, die Buddler haben damals Wetten abgeschlossen, wann es Gomez zu bunt wird und er dich umbringen lässt.
-	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_05"); //Und jetzt bist du plötzlich wieder da.
-	AI_Output(hero, self, "Info_Mod_Graham_Hi_15_06"); //Ja. So bin ich.
+	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_00"); //Nie widzialem cie wczesniej?
+	AI_Output(hero, self, "Info_Mod_Graham_Hi_15_01"); //W kazdym razie dales mi jedna z kart jeden raz.
+	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_02"); //Teraz wiem, kim znów jestes!
+	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_03"); //Byles dziwaczny, który przybyl do zapory kilka miesiecy temu i zwiazal sie z niemal kazdym wplywowym straznikiem.
+	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_04"); //Czlowiek, Buddlerzy obstawiaja, kiedy Gomez staje sie zbyt kolorowy, a on zabije cie.
+	AI_Output(self, hero, "Info_Mod_Graham_Hi_36_05"); //A teraz nagle wracasz.
+	AI_Output(hero, self, "Info_Mod_Graham_Hi_15_06"); //Tak. To jest tym kim jestem.
 };
 
 INSTANCE Info_Mod_Graham_Haendler (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Graham_Haendler (C_INFO)
 	information	= Info_Mod_Graham_Haendler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du immer noch Karten?";
+	description	= "Nadal sprzedaje karty?";
 };
 
 FUNC INT Info_Mod_Graham_Haendler_Condition()
@@ -45,11 +45,11 @@ FUNC INT Info_Mod_Graham_Haendler_Condition()
 
 FUNC VOID Info_Mod_Graham_Haendler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Graham_Haendler_15_00"); //Verkaufst du immer noch Karten?
-	AI_Output(self, hero, "Info_Mod_Graham_Haendler_36_01"); //Klar. Ich fertige zwar keine mehr an, aber ich hab noch ein Restangebot. Kannst sie dir ja mal anschauen.
+	AI_Output(hero, self, "Info_Mod_Graham_Haendler_15_00"); //Nadal sprzedaje karty?
+	AI_Output(self, hero, "Info_Mod_Graham_Haendler_36_01"); //Pewne. Nie robie juz wiecej, ale mam troche resztek. Mozna na nie spojrzec.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OLDCAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_OLDCAMP, "Graham verkauft Karten.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_OLDCAMP, "Graham sprzedaje bilety.");
 };
 
 INSTANCE Info_Mod_Graham_WasGibts (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Graham_WasGibts (C_INFO)
 	information	= Info_Mod_Graham_WasGibts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es über die Zwischenzeit zu berichten?";
+	description	= "Co nalezy zglosic na temat okresu przejsciowego?";
 };
 
 FUNC INT Info_Mod_Graham_WasGibts_Condition()
@@ -73,13 +73,13 @@ FUNC INT Info_Mod_Graham_WasGibts_Condition()
 
 FUNC VOID Info_Mod_Graham_WasGibts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Graham_WasGibts_15_00"); //Was gibt es über die Zwischenzeit zu berichten?
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_01"); //Oh Mann, wo soll ich da anfangen?
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_02"); //Erst mal lief noch alles normal weiter, aber kurz vor dem Fall der Barriere ist Gomez dann durchgedreht und hat erst alle Feuermagier ermorden lassen und ist dann mit Raven und Scar spurlos verschwunden.
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_03"); //Außerdem ist die Mine dann angeblich eingestürzt, aber wenn man Ian Glauben schenken darf, ist das auch fraglich.
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_04"); //Alles sehr mysteriös. Im Lager brach jedenfalls die Hölle los und es herrschte die reinste Anarchie, bis Thorus für Ruhe sorgen konnte.
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_05"); //Mittlerweile hat sich alles wieder etwas beruhigt. Etwas zu sehr, wenn du mich fragst. Ohne die Mine gibt es für uns den lieben langen Tag nichts zu tun.
-	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_06"); //Die meisten wissen sich nur mit Alkohol, Sumpfkrautstängeln oder den Kämpfen in der Arena abzulenken.
+	AI_Output(hero, self, "Info_Mod_Graham_WasGibts_15_00"); //Co nalezy zglosic na temat okresu przejsciowego?
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_01"); //Ach, mezczyzna, dokad zaczynam?
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_02"); //Poczatkowo wszystko trwalo normalnie, ale na krótko przed upadkiem zapory Gomez szalal i mordowal wszystkich magów ognia, a nastepnie zniknal bez sladu z Ravenem i Scar.
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_03"); //Poza tym kopalnia rzekomo upadla, ale jesli wierzyc Ianowi, to jest to równiez watpliwe.
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_04"); //To wszystko jest bardzo tajemnicze. W kazdym razie pieklo pekalo w obozie i byla czysta anarchia, az Thorus mógl zapewnic spokój i cisze.
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_05"); //W miedzyczasie wszystko znów sie uspokoilo. Nieco za duzo, jesli mnie pan zapyta. Bez kopalni nie mamy nic do zrobienia przez caly dzien.
+	AI_Output(self, hero, "Info_Mod_Graham_WasGibts_36_06"); //Wiekszosc ludzi wie, jak rozpraszac sie alkoholem, bagiennymi lodygami ziól lub walkami na arenie.
 };
 
 INSTANCE Info_Mod_Graham_Lagermusik (C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Graham_Lagermusik (C_INFO)
 	information	= Info_Mod_Graham_Lagermusik_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du ein Instrument spielen?";
+	description	= "Czy mozesz grac na instrumencie?";
 };
 
 FUNC INT Info_Mod_Graham_Lagermusik_Condition()
@@ -103,13 +103,13 @@ FUNC INT Info_Mod_Graham_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Graham_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_00"); //Kannst du ein Instrument spielen?
-	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_01"); //Na ja, ich bin kein Virtuose oder so... aber ein bisschen kann ich auf der Laute klimpern.
-	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_02"); //Gravo sucht Mitglieder für seine Gruppe. Du solltest dich mal bei ihm melden.
-	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_03"); //Eigentlich gern. Aber warum ausgerechnet bei Gravo?
-	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_04"); //Er beißt schon nicht.
-	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_05"); //Nicht, solange er sich an seine gute Erziehung erinnert...
-	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_06"); //Na gut, ich werd mal schauen, ob das was für mich ist.
+	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_00"); //Czy mozesz grac na instrumencie?
+	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_01"); //No cóz, nie jestem wirtuozem ani niczym innym.... ale moge zrobic troche halasu.
+	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_02"); //Gravo szuka czlonków swojej grupy. Powinienes kiedys sie z nim zameldowac.
+	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_03"); //Kocham. Ale dlaczego wlasnie z Gravo?
+	AI_Output(hero, self, "Info_Mod_Graham_Lagermusik_15_04"); //Nie ugryzie sie.
+	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_05"); //Tak dlugo, jak dlugo pamieta o swoim dobrym wychowaniu.....
+	AI_Output(self, hero, "Info_Mod_Graham_Lagermusik_36_06"); //Dobrze, zobacze, czy to cos dla mnie.
 
 	AI_StopProcessInfos	(self);
 

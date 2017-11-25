@@ -18,35 +18,35 @@ FUNC INT Info_Mod_Gobshak_Stollen_Condition()
 
 FUNC VOID Info_Mod_Gobshak_Stollen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_18_00"); //Was machen Mensch hier oben?
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_15_01"); //Du sprichst unsere Sprache?
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_18_02"); //Ich lange gewesen Sklave von Menschen. Jetzt ich mich habe befreit. Ich nicht wieder in die Sklaverei zurückwollen.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_18_00"); //Co robia tutaj ludzie?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_15_01"); //Mówisz po angielsku?
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_18_02"); //Od dawna jestem niewolnikiem ludzi. Teraz ja sie uwolnilem. Nie chce wracac do niewolnictwa.
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Da gehört ihr stinkenden Würmer aber hin!", Info_Mod_Gobshak_Stollen_B);
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Habt ihr hier zufällig einen Stollen entdeckt?", Info_Mod_Gobshak_Stollen_A);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Do tego wlasnie naleza jej smierdzace robaki!", Info_Mod_Gobshak_Stollen_B);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Czy zdarzylo Ci sie znalezc tunel?", Info_Mod_Gobshak_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Gobshak_Stollen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_B_15_00"); //Da gehört ihr stinkenden Würmer aber hin!
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_B_18_01"); //Warum du wollen mich povo ... prozi ... verärgern?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_B_15_00"); //Do tego wlasnie naleza jej smierdzace robaki!
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_B_18_01"); //Dlaczego chcesz, abym.... prozi...... aby mnie zdenerwowac?
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Tut mir Leid, das wollte ich nicht sagen.", Info_Mod_Gobshak_Stollen_D);
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Ich mag es, Orks zu ärgern.", Info_Mod_Gobshak_Stollen_C);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Przepraszam, nie chcialem tego powiedziec.", Info_Mod_Gobshak_Stollen_D);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Lubie denerwujace orki.", Info_Mod_Gobshak_Stollen_C);
 };
 
 FUNC VOID Info_Mod_Gobshak_Stollen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_A_15_00"); //Habt ihr hier zufällig einen Stollen entdeckt?
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_A_18_01"); //Ja, jetzt wo du sagen. Wir wirklich haben gefunden Stollen hier in Alter Bibio ... Biblithe ... Bücherei. Hinten bei Grubuz du müssen fragen.
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_A_15_02"); //Danke für die Information.
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_A_18_03"); //Es ehren mich, Dank zu haben.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_A_15_00"); //Czy zdarzylo Ci sie znalezc tunel?
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_A_18_01"); //Tak, teraz mówisz. Naprawde znalezlismy tu kradziez w Alter Bibio.... Wiecej biblithetyczny Biblioteka. Z tylu przy Grubuzie trzeba zapytac.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_A_15_02"); //Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_A_18_03"); //Mam zaszczyt podziekowac.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Gobshak hat mir gesagt, dass weiter hinten in der Felsenfestung wirklich ein Stollen entdeckt wurde. Ich soll mit einem Ork namens Grubuz sprechen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Gobshak powiedzial mi, ze tunel zostal odkryty w skalnej twierdzy. Mam porozmawiac z orkiem o nazwisku Grubuz.");
 
 	Mod_Hermy_KnowsQuest = 2;
 
@@ -55,39 +55,39 @@ FUNC VOID Info_Mod_Gobshak_Stollen_A()
 
 FUNC VOID Info_Mod_Gobshak_Stollen_D()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_D_15_00"); //Tut mir Leid, das wollte ich nicht sagen.
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_D_18_01"); //Was du dann wollen?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_D_15_00"); //Przepraszam, nie chcialem tego powiedziec.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_D_18_01"); //Czego zatem chcesz?
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Habt ihr hier zufällig einen Stollen entdeckt?", Info_Mod_Gobshak_Stollen_A);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Czy zdarzylo Ci sie znalezc tunel?", Info_Mod_Gobshak_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Gobshak_Stollen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_C_15_00"); //Ich mag es, Orks zu ärgern.
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_C_18_01"); //Du dich wollen bekämpfen mit Gobshak?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_C_15_00"); //Lubie denerwujace orki.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_C_18_01"); //Chcesz walczyc z gobshakiem?
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Nein nein. Ich wollte etwas anderes.", Info_Mod_Gobshak_Stollen_G);
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Komm doch her!", Info_Mod_Gobshak_Stollen_F);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Nie, nie, nie. Chcialem czegos innego.", Info_Mod_Gobshak_Stollen_G);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Odwiedz nas tutaj!", Info_Mod_Gobshak_Stollen_F);
 };
 
 FUNC VOID Info_Mod_Gobshak_Stollen_G()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_G_15_00"); //Nein nein. Ich wollte etwas anderes.
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_G_18_01"); //Was du wollen?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_G_15_00"); //Nie, nie, nie. Chcialem czegos innego.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_G_18_01"); //Czego chcesz?
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Habt ihr hier zufällig einen Stollen entdeckt?", Info_Mod_Gobshak_Stollen_A);
+	Info_AddChoice	(Info_Mod_Gobshak_Stollen, "Czy zdarzylo Ci sie znalezc tunel?", Info_Mod_Gobshak_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Gobshak_Stollen_F()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_F_15_00"); //Komm doch her!
-	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_F_18_01"); //Auf so etwas ich mich nicht lassen herab. Mensch verschwinden besser.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Stollen_F_15_00"); //Odwiedz nas tutaj!
+	AI_Output(self, hero, "Info_Mod_Gobshak_Stollen_F_18_01"); //Nie poddaje sie temu rodzajowi rzeczy. Czlowiek lepiej znika.
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Stollen);
 
@@ -114,35 +114,35 @@ FUNC INT Info_Mod_Gobshak_Grubuz_Condition()
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_18_00"); //Etwas passieren? Mensch sehen aufgebracht aus.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_18_00"); //Wszystko sie zdarzylo? Czlowiek wyglada zdenerwowany.
 	
 	Info_ClearChoices	(Info_Mod_Gobshak_Grubuz);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Leugnen ist zwecklos du stinkender Ork!", Info_Mod_Gobshak_Grubuz_B);
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Weißt du, wo sich Grubuz zurzeit aufhält?", Info_Mod_Gobshak_Grubuz_A);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Odmowa jest bezuzyteczna, smierdzisz orkiem!", Info_Mod_Gobshak_Grubuz_B);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Czy wiesz, gdzie teraz jest Grubuz?", Info_Mod_Gobshak_Grubuz_A);
 };
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_B_15_00"); //Leugnen ist zwecklos du stinkender Ork!
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_B_18_01"); //Was haben Gobshak dir getan?
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_B_15_00"); //Odmowa jest bezuzyteczna, smierdzisz orkiem!
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_B_18_01"); //Co zrobil wam gobshak?
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Grubuz);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Es tut mir Leid, das war ein Ausrutscher.", Info_Mod_Gobshak_Grubuz_D);
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Ihr habt mir meine Spruchrolle gestohlen und Emerin umgebracht. Elendes Pack!", Info_Mod_Gobshak_Grubuz_C);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Przykro mi, ale to bylo zepsucie.", Info_Mod_Gobshak_Grubuz_D);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Kradles mój zaklecie i zabiles Emerina. Glupich kisc!", Info_Mod_Gobshak_Grubuz_C);
 };
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_00"); //Weißt du, wo sich Grubuz zurzeit aufhält?
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_01"); //Grubuz vorhin schnell wegrennen. Über die Brücke, wenn Gobshak sich nicht irren.
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_02"); //War er allein?
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_03"); //Ja, Gobshak niemandem bei ihm gesehen.
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_04"); //Danke für diese Information.
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_05"); //Es ehren mich, Dank zu haben.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_00"); //Czy wiesz, gdzie teraz jest Grubuz?
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_01"); //Grubuz ucieka szybko wczesniej. Nad mostem, jesli Gobshak sie nie pomyli.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_02"); //Czy byl on sam?
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_03"); //Tak, gobshak nie widzial z nim nikogo.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_A_15_04"); //Dziekuje za te informacje.
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_A_18_05"); //Mam zaszczyt podziekowac.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Gobshak war scheinbar nicht am Überfall beteiligt, aber verdächtig ist, dass Grubuz über die Brücke getürmt ist. Weit kann er noch nicht sein.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Gobshak najwyrazniej nie bral udzialu w ataku, ale podejrzane jest, ze Grubuz spietrzyl most. Nie moze byc daleko.");
 
 	Mod_Hermy_KnowsQuest = 8;
 
@@ -151,27 +151,27 @@ FUNC VOID Info_Mod_Gobshak_Grubuz_A()
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_D()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_D_15_00"); //Es tut mir Leid, das war ein Ausrutscher.
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_D_15_00"); //Przykro mi, ale to bylo zepsucie.
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Grubuz);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Weißt du, wo sich Grubuz zurzeit aufhält?", Info_Mod_Gobshak_Grubuz_A);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Czy wiesz, gdzie teraz jest Grubuz?", Info_Mod_Gobshak_Grubuz_A);
 };
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_C()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_C_15_00"); //Ihr habt mir meine Spruchrolle gestohlen und Emerin umgebracht. Elendes Pack!
-	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_C_18_01"); //Du Gobshak für etwas beschuldigen, was Gobshak nicht getan!
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_C_15_00"); //Kradles mój zaklecie i zabiles Emerina. Glupich kisc!
+	AI_Output(self, hero, "Info_Mod_Gobshak_Grubuz_C_18_01"); //Winic gobshak za cos, co gobshak nie zrobil!
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Grubuz);
 
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Es tut mir Leid, das war ein Ausrutscher.", Info_Mod_Gobshak_Grubuz_D);
-	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Natürlich nicht! Glaubst du ich spinne? Jetzt wirst du sterben!", Info_Mod_Gobshak_Grubuz_F);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Przykro mi, ale to bylo zepsucie.", Info_Mod_Gobshak_Grubuz_D);
+	Info_AddChoice	(Info_Mod_Gobshak_Grubuz, "Oczywiscie nie! Masz wrazenie, ze jestem szalony? Teraz umrzesz!", Info_Mod_Gobshak_Grubuz_F);
 };
 
 FUNC VOID Info_Mod_Gobshak_Grubuz_F()
 {
-	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_F_15_00"); //Natürlich nicht! Glaubst du ich spinne? Jetzt wirst du sterben!
+	AI_Output(hero, self, "Info_Mod_Gobshak_Grubuz_F_15_00"); //Oczywiscie nie! Masz wrazenie, ze jestem szalony? Teraz umrzesz!
 
 	Info_ClearChoices	(Info_Mod_Gobshak_Grubuz);
 

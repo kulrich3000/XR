@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Olav_Hi (C_INFO)
 	information	= Info_Mod_Olav_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wozu bist du hier zuständig?";
+	description	= "Co tu robisz?";
 };
 
 FUNC INT Info_Mod_Olav_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Olav_Hi_Condition()
 
 FUNC VOID Info_Mod_Olav_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_Hi_15_00"); //Wozu bist du hier zuständig?
-	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_01"); //Ich stehe mir die Beine in den Arsch, um den Marktplatz zu überwachen.
-	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_02"); //Nirgendwo wird so viel gelogen und betrogen wie hier, verflucht.
-	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_03"); //Sind doch alles zwielichtige Gestalten, die sich hier rumtreiben ...
+	AI_Output(hero, self, "Info_Mod_Olav_Hi_15_00"); //Co tu robisz?
+	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_01"); //Podnosze sie do góry nogami, aby obserwowac targowisko.
+	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_02"); //Nigdzie indziej nie ma tak wiele klamstwa i oszukiwania, jak tutaj, przeklety.
+	AI_Output(self, hero, "Info_Mod_Olav_Hi_04_03"); //Wisza tu wszystkie cieniste stworzenia.....
 };
 
 INSTANCE Info_Mod_Olav_WarumMiliz (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Olav_WarumMiliz (C_INFO)
 	information	= Info_Mod_Olav_WarumMiliz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du zu der Miliz gegangen?";
+	description	= "Dlaczego udales sie do milicji?";
 };
 
 FUNC INT Info_Mod_Olav_WarumMiliz_Condition()
@@ -40,9 +40,9 @@ FUNC INT Info_Mod_Olav_WarumMiliz_Condition()
 
 FUNC VOID Info_Mod_Olav_WarumMiliz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_WarumMiliz_15_00"); //Warum bist du zu der Miliz gegangen?
-	AI_Output(self, hero, "Info_Mod_Olav_WarumMiliz_04_01"); //Na ja, das hat eigentlich mein Vater damals entschieden.
-	AI_Output(self, hero, "Info_Mod_Olav_WarumMiliz_04_02"); //Ich mochte die anderen Kinder in meiner Gasse nicht, und er dachte, in der Kaserne müsste ich nicht mehr mit ihnen zu tun haben.
+	AI_Output(hero, self, "Info_Mod_Olav_WarumMiliz_15_00"); //Dlaczego udales sie do milicji?
+	AI_Output(self, hero, "Info_Mod_Olav_WarumMiliz_04_01"); //No cóz, to wlasnie postanowil wtedy mój ojciec.
+	AI_Output(self, hero, "Info_Mod_Olav_WarumMiliz_04_02"); //Nie podobaly mi sie inne dzieci w mojej uliczce i pomyslal, ze nie bede musial sobie z nimi radzic w barakach.
 };
 
 INSTANCE Info_Mod_Olav_Mortis (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Olav_Mortis (C_INFO)
 	information	= Info_Mod_Olav_Mortis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mortis schickt mich.";
+	description	= "Mortis wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Olav_Mortis_Condition()
@@ -66,10 +66,10 @@ FUNC INT Info_Mod_Olav_Mortis_Condition()
 
 FUNC VOID Info_Mod_Olav_Mortis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_Mortis_15_00"); //Mortis schickt mich. Ich soll fragen ob alles in Ordnung ist.
-	AI_Output(self, hero, "Info_Mod_Olav_Mortis_04_01"); //Ja, bei mir ist alles bestens.
+	AI_Output(hero, self, "Info_Mod_Olav_Mortis_15_00"); //Mortis wyslal mnie. Mam pytac, czy wszystko jest w porzadku.
+	AI_Output(self, hero, "Info_Mod_Olav_Mortis_04_01"); //Tak, wszystko jest mi w porzadku.
 
-	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "Bei Olav ist alles in Ordung.");
+	B_LogEntry	(TOPIC_MOD_MORTIS_KONTROLLE, "Wszystko jest w porzadku z Olavem.");
 
 	B_GivePlayerXP	(50);
 };
@@ -82,7 +82,7 @@ INSTANCE Info_Mod_Olav_Turm (C_INFO)
 	information	= Info_Mod_Olav_Turm_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist eigentlich in den Wachtürmen neben dem Stadttor?";
+	description	= "Co wlasciwie znajduje sie w wiezyczkach strazniczych obok bramy miejskiej?";
 };
 
 FUNC INT Info_Mod_Olav_Turm_Condition()
@@ -96,10 +96,10 @@ FUNC INT Info_Mod_Olav_Turm_Condition()
 
 FUNC VOID Info_Mod_Olav_Turm_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_Turm_15_00"); //Was ist eigentlich in den Wachtürmen neben dem Stadttor?
-	AI_Output(self, hero, "Info_Mod_Olav_Turm_04_01"); //Das würdest du wohl gern wissen. Ich weiß gut, was in dem einen ist, denn ich bin dafür verantwortlich.
-	AI_Output(hero, self, "Info_Mod_Olav_Turm_15_02"); //Das heißt, du hast einen Schlüssel?
-	AI_Output(self, hero, "Info_Mod_Olav_Turm_04_03"); //(leicht besorgt) Nun ja, natürlich. Sonst würde ich wohl kaum reinkommen.
+	AI_Output(hero, self, "Info_Mod_Olav_Turm_15_00"); //Co wlasciwie znajduje sie w wiezyczkach strazniczych obok bramy miejskiej?
+	AI_Output(self, hero, "Info_Mod_Olav_Turm_04_01"); //To wlasnie chcesz wiedziec. Wiem, co jest w tym, bo jestem odpowiedzialny.
+	AI_Output(hero, self, "Info_Mod_Olav_Turm_15_02"); //Oznacza to, ze masz klucz?
+	AI_Output(self, hero, "Info_Mod_Olav_Turm_04_03"); //(nieco zaniepokojony) No cóz, oczywiscie. W przeciwnym razie nie bylbym w stanie wejsc.
 };
 
 INSTANCE Info_Mod_Olav_Turm2 (C_INFO)
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Olav_Turm2 (C_INFO)
 	information	= Info_Mod_Olav_Turm2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Feilschen) Du gibst mir den Schlüssel, und ich sehe für dich nach dem Rechten.";
+	description	= "Dajesz mi klucz, a ja zajme sie Toba.";
 };
 
 FUNC INT Info_Mod_Olav_Turm2_Condition()
@@ -123,11 +123,11 @@ FUNC INT Info_Mod_Olav_Turm2_Condition()
 
 FUNC VOID Info_Mod_Olav_Turm2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_Turm2_15_00"); //Du gibst mir den Schlüssel, und ich sehe für dich nach dem Rechten.
+	AI_Output(hero, self, "Info_Mod_Olav_Turm2_15_00"); //Dajesz mi klucz, a ja zajme sie Toba.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Olav_Turm2_04_01"); //In Ordnung, das ist eh schon lange notwendig. Könnten sich ja schon Ratten dort ausgebreitet haben.
+		AI_Output(self, hero, "Info_Mod_Olav_Turm2_04_01"); //Wszystko sluszne, to bylo potrzebne przez dlugi czas. Móglby sie tam rozprzestrzenic do tej pory.
 
 		B_GiveInVItems	(self, hero, ItKe_City_Tower_03, 1);
 
@@ -135,7 +135,7 @@ FUNC VOID Info_Mod_Olav_Turm2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Olav_Turm2_04_02"); //Ganz einfach: Nein.
+		AI_Output(self, hero, "Info_Mod_Olav_Turm2_04_02"); //Bardzo proste: Nie.
 	};
 };
 
@@ -147,7 +147,7 @@ INSTANCE Info_Mod_Olav_Mario (C_INFO)
 	information	= Info_Mod_Olav_Mario_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hakon verkauft gestohlene Ware!";
+	description	= "Hakon sprzedaje skradzione towary!";
 };
 
 FUNC INT Info_Mod_Olav_Mario_Condition()
@@ -160,14 +160,14 @@ FUNC INT Info_Mod_Olav_Mario_Condition()
 
 FUNC VOID Info_Mod_Olav_Mario_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Olav_Mario_15_00"); //Hakon verkauft gestohlene Ware!
-	AI_Output(self, hero, "Info_Mod_Olav_Mario_04_01"); //Was?! Verflucht, das muss ich prüfen.
+	AI_Output(hero, self, "Info_Mod_Olav_Mario_15_00"); //Hakon sprzedaje skradzione towary!
+	AI_Output(self, hero, "Info_Mod_Olav_Mario_04_01"); //Co? Damn, musze to sprawdzic.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "HAKON");
 
-	B_LogEntry	(TOPIC_MOD_MARIO_FLUCHTHILFE, "Olav ist fürs Erste abgelenkt.");
+	B_LogEntry	(TOPIC_MOD_MARIO_FLUCHTHILFE, "Olav jest na razie rozproszony.");
 };
 
 INSTANCE Info_Mod_Olav_HaradLehrling (C_INFO)
@@ -200,21 +200,21 @@ FUNC VOID Info_Mod_Olav_HaradLehrling_Info()
 
 	AI_TurnToNpc	(Olav, Harad);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_00"); //Schöne Waffe.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_00"); //Ladny dzialko.
 
 	TRIA_Next(Harad);
 
 	AI_TurnToNpc	(Harad, Olav);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_01"); //(argwöhnisch) Ja. Wieso?
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_01"); //(ostrozny) Tak. Dlaczego?
 
 	TRIA_Next(Olav);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_02"); //Kann ich mal haben? Ist doch immer wieder beeindruckend, was mit dem richtiger Schmiedekunst schaffen kann.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_02"); //Czy moge go miec? Zawsze robi wrazenie to, co mozna osiagnac kuta sztuka.
 
 	TRIA_Next(Harad);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_03"); //Alles harte Arbeit.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_03"); //To byla ciezka praca.
 
 	TRIA_Next(Olav);
 
@@ -224,17 +224,17 @@ FUNC VOID Info_Mod_Olav_HaradLehrling_Info()
 
 	AI_RemoveWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_04"); //(murmelt) Ja, das glaube ich. (Pause)
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_05"); //Aha. Da haben wir's. "Glück und Ruhm Lares, dem Sieger." Na, wenn das mal nicht verdächtig klingt.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_04"); //Tak, wierze. (pauza)
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_05"); //Aha. Da haben wir's. "Szczescie i chwala Laresowi, zwyciezcy." Na, wenn das mal nicht verdächtig klingt.
 
 	TRIA_Next(Harad);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_06"); //Das ist doch ganz anders gemeint!
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_09_06"); //Nie o to rozumiem!
 
 	TRIA_Next(Olav);
 
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_07"); //(lacht) Red du nur. Das Schwert ist konfisziert, basta. Du weißt doch, dass du keinen Kontakt zu den Söldnerlümmeln haben sollst.
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_08"); //(stöhnt) Wenn's nicht so schwer wäre, würde ich das Ding ja gern behalten.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_07"); //(smiech) Mówisz po prostu. Miecz zostaje skonfiskowany, to wszystko. Wiesz, ze nie powinienes byc w kontakcie z najemnikami.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling_04_08"); //Jesli nie bylo to takie trudne, chcialbym to zachowac.
 
 	TRIA_Finish();
 
@@ -263,17 +263,17 @@ FUNC INT Info_Mod_Olav_HaradLehrling2_Condition()
 
 FUNC VOID Info_Mod_Olav_HaradLehrling2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_00"); //Die Schmiede darf nicht betreten werden.
-	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_01"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_02"); //Tengron hat entschieden, dass es für Harad Zeit wird, bestimmte Lektionen über Anstand zu lernen.
-	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_03"); //(seufzt) Der ist auch so ein sturer Hund.
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_04"); //Das ist für diese Angelegenheit nicht von Belang.
-	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_05"); //Und was ist mit Harad? Sitzt er im Gefängnis?
-	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_06"); //Korrekt. Und wenn ich Tengron richtig verstanden habe, kommt er dort auch nicht so schnell wieder raus.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_00"); //Kuznia nie moze byc wprowadzana.
+	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_02"); //Tengron zdecydowal, ze nadszedl czas, aby Harad nauczyl sie pewnych lekcji przyzwoitosci.
+	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_03"); //Jest tez takim upartym psem.
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_04"); //Nie dotyczy to tej kwestii.
+	AI_Output(hero, self, "Info_Mod_Olav_HaradLehrling2_15_05"); //A co z Haradem? Czy przebywa w wiezieniu?
+	AI_Output(self, hero, "Info_Mod_Olav_HaradLehrling2_04_06"); //Poprawne. I jesli dobrze zrozumialem Tengrona, nie wyjdzie z niego tak szybko.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Harad sitzt im Gefängnis! Tengron hat ihn für seinen Handel mit den Söldnern eingebuchtet.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Harad w wiezieniu! Tengron ma go zamkniety dla swoich najemników.");
 };
 
 INSTANCE Info_Mod_Olav_Pickpocket (C_INFO)

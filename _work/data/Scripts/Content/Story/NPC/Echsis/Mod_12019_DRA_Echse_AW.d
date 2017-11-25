@@ -1,7 +1,7 @@
 INSTANCE Mod_12019_DRA_Echse_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Echsenmensch";
+	name	=	"jaszczurka";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12019;
 	level	=	35;

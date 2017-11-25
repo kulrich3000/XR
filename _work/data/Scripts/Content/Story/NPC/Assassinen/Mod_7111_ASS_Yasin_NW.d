@@ -1,7 +1,7 @@
 INSTANCE Mod_7111_ASS_Yasin_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Yasin"; 
+	name 		= "Kasza"; 
 	guild 		= GIL_OUT;
 	id 			= 7111;
 	voice 		= 13;

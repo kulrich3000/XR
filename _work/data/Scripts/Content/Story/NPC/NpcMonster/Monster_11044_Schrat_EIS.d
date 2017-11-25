@@ -1,7 +1,7 @@
 INSTANCE Monster_11044_Schrat_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenschrat";	
+	name 		= "demon";	
 	guild 		= GIL_OUT;
 	id 			= 11044;
 	voice 		= 20;

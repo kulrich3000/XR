@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Gerichtswache_01_AnnaProzess_Condition()
 
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_11_00"); //Was habt ihr hier zu suchen?
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_11_00"); //Co ty tu robisz?
 
 	B_StartOtherRoutine	(Mod_7370_OUT_Ulrich_REL, "ATPROZESS");
 
@@ -28,33 +28,33 @@ FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_Info()
 
 	if (Mod_AnnaQuestRichter == 1)
 	{
-		Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Ich soll Ulrich des versuchten Mordes überführen.", Info_Mod_Gerichtswache_01_AnnaProzess_C);
+		Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Chce, abym skazal Ulricha za próbe morderstwa.", Info_Mod_Gerichtswache_01_AnnaProzess_C);
 	};
 
-	Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Jemand ist in den See gefallen und ruft um Hilfe!", Info_Mod_Gerichtswache_01_AnnaProzess_B);
-	Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Am Stadttor ist eine Unruhe entstanden!", Info_Mod_Gerichtswache_01_AnnaProzess_A);
+	Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Ktos wpadl do jeziora i prosi o pomoc!", Info_Mod_Gerichtswache_01_AnnaProzess_B);
+	Info_AddChoice	(Info_Mod_Gerichtswache_01_AnnaProzess, "Przy bramie miejskiej powstalo zaklócenie!", Info_Mod_Gerichtswache_01_AnnaProzess_A);
 };
 
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_C()
 {
-	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_C_15_00"); //Ich soll Ulrich des versuchten Mordes überführen.
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_C_11_01"); //In Ordnung. Das wollte uns der Richter wohl sagen mit seiner, äh, komischen Ausdrucksweise.
+	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_C_15_00"); //Chce, abym skazal Ulricha za próbe morderstwa.
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_C_11_01"); //Wszystkie sluszne, wszystkie sluszne. Wydaje mi sie, ze to wlasnie ten sedzia próbowal nam powiedziec swoim, dziwnym jezykiem.
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 };
 
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_B_15_00"); //Jemand ist in den See gefallen und ruft um Hilfe!
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_B_11_01"); //Na und? Dafür verlasse ich nicht meinen Posten.
+	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_B_15_00"); //Ktos wpadl do jeziora i prosi o pomoc!
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_B_11_01"); //Co wiec? Nie koncze pracy na to stanowisko.
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 };
 
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_A_15_00"); //Am Stadttor ist eine Unruhe entstanden!
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_A_11_01"); //Scheiße, was ist denn dort nun schon wieder los?
+	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_A_15_00"); //Przy bramie miejskiej powstalo zaklócenie!
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_A_11_01"); //Co sie tam dzieje?
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 

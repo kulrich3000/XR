@@ -15,28 +15,28 @@ FUNC INT Info_Mod_PriesterRyan_Hi_Condition()
 
 FUNC VOID Info_Mod_PriesterRyan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_02_00"); //Ryan kann gerade nicht gestört werden. Er ist mitten in einer Zeremonie.
+	AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_02_00"); //Ryan nie moze byc teraz zaklócony. Jest w srodku ceremonii.
 
 	Info_ClearChoices	(Info_Mod_PriesterRyan_Hi);
 
-	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Schöne Waffe, die du da hast.", Info_Mod_PriesterRyan_Hi_B);
-	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Davon wirst du mich sicher nicht abhalten!", Info_Mod_PriesterRyan_Hi_A);
+	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Ladny pistolet, który tam dostales.", Info_Mod_PriesterRyan_Hi_B);
+	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Nie powstrzymasz mnie przed tym!", Info_Mod_PriesterRyan_Hi_A);
 };
 
 FUNC VOID Info_Mod_PriesterRyan_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_B_15_00"); //Schöne Waffe, die du da hast.
-	AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_B_02_01"); //Der Drei-Götter-Stab ist unsere wichtigste Reliquie. Jeden Tag treibt er jedem unserer Anhänger böse Gedanken aus.
+	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_B_15_00"); //Ladny pistolet, który tam dostales.
+	AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_B_02_01"); //Najwazniejszym reliktem naszej najistotniejszej relikwii jest Trzech Bogów. Kazdego dnia wyrzuca zle mysli z kazdego z naszych nasladowców.
 
 	Info_ClearChoices	(Info_Mod_PriesterRyan_Hi);
 
-	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "(Feilschen) Gibst du ihn mir freiwillig (...)", Info_Mod_PriesterRyan_Hi_D);
-	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Der Zahnstocher wird sich gut in meiner Sammlung machen.", Info_Mod_PriesterRyan_Hi_C);
+	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "Czy dasz mi ja chetnie? )", Info_Mod_PriesterRyan_Hi_D);
+	Info_AddChoice	(Info_Mod_PriesterRyan_Hi, "W mojej kolekcji wykalaczka poradzi sobie dobrze.", Info_Mod_PriesterRyan_Hi_C);
 };
 
 FUNC VOID Info_Mod_PriesterRyan_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_A_15_00"); //Davon wirst du mich sicher nicht abhalten!
+	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_A_15_00"); //Nie powstrzymasz mnie przed tym!
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_PriesterRyan_Hi);
@@ -75,12 +75,12 @@ FUNC VOID Info_Mod_PriesterRyan_Hi_A()
 
 FUNC VOID Info_Mod_PriesterRyan_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_D_15_00"); //Gibst du ihn mir freiwillig oder muss ich ihn holen kommen?
-	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_D_15_01"); //Soll heißen: Wenn du hier lebend rauskommen willst, solltest du jetzt ganz brav sein.
+	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_D_15_00"); //Czy dajesz mi ja gonna, czy musze ja dostac?
+	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_D_15_01"); //Jesli chcesz sie wydostac z tego miejsca zywy, powinienes byc dobrym chlopcem.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_D_02_02"); //(schluckt) Wollen uns die Götter bestrafen? Aber wofür?
+		AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_D_02_02"); //Czy bogowie chca nas ukarac? Ale za co?
 
 		B_GiveInvItems	(self, hero, DreiGoetterStab, 1);
 
@@ -105,13 +105,13 @@ FUNC VOID Info_Mod_PriesterRyan_Hi_D()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_D_02_03"); //Ha, du unterschätzt meine Macht!
+		AI_Output(self, hero, "Info_Mod_PriesterRyan_Hi_D_02_03"); //Nie doceniacie mojej mocy!
 	};
 };
 
 FUNC VOID Info_Mod_PriesterRyan_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_C_15_00"); //Der Zahnstocher wird sich gut in meiner Sammlung machen.
+	AI_Output(hero, self, "Info_Mod_PriesterRyan_Hi_C_15_00"); //W mojej kolekcji wykalaczka poradzi sobie dobrze.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_PriesterRyan_Hi);

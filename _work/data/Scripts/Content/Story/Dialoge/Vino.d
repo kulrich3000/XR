@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vino_Hi (C_INFO)
 	information	= Info_Mod_Vino_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Vino_Hi_Condition()
@@ -18,39 +18,39 @@ FUNC VOID Info_Mod_Vino_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_05_01"); //Ordentlich arbeiten, Penner. Während ihr es euch in eurer Kuppel gemütlich gemacht habt.
-	AI_Output(hero, self, "Info_Mod_Vino_Hi_15_02"); //Da hast du ein paar falsche Vorstellungen, fürchte ich.
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_05_03"); //Ich hab gesehen, was euch alles reingeschickt wurde. Davon hätte ein Fürst leben können!
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_05_01"); //Lagodna praca, posciel. Podczas gdy wygodnie sie bawiles w kopule.
+	AI_Output(hero, self, "Info_Mod_Vino_Hi_15_02"); //Masz jakies bledne wyobrazenia, boje sie.
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_05_03"); //Widzialem wszystkie rzeczy, które wyslali. Ksiaze móglby na tym zyc!
 
 	Info_ClearChoices	(Info_Mod_Vino_Hi);
 
-	Info_AddChoice	(Info_Mod_Vino_Hi, "Das war ein herrliches Leben!", Info_Mod_Vino_Hi_B);
-	Info_AddChoice	(Info_Mod_Vino_Hi, "Richtig, einer. Der Rest hat davon nichts gesehen.", Info_Mod_Vino_Hi_A);
+	Info_AddChoice	(Info_Mod_Vino_Hi, "To bylo wspaniale zycie!", Info_Mod_Vino_Hi_B);
+	Info_AddChoice	(Info_Mod_Vino_Hi, "To prawda. Reszta nie widziala niczego.", Info_Mod_Vino_Hi_A);
 };
 
 FUNC VOID Info_Mod_Vino_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Hi_B_15_00"); //(süffisant) Das war ein herrliches Leben!
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_B_05_01"); //Halt die Schnauze!
+	AI_Output(hero, self, "Info_Mod_Vino_Hi_B_15_00"); //To bylo wspaniale zycie!
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_B_05_01"); //Wylaczyc fuck up!
 
 	Info_ClearChoices	(Info_Mod_Vino_Hi);
 
-	Info_AddChoice	(Info_Mod_Vino_Hi, "Jeden Abend Bier und Weiber ...", Info_Mod_Vino_Hi_D);
-	Info_AddChoice	(Info_Mod_Vino_Hi, "Ist wohl besser, ich gehe langsam.", Info_Mod_Vino_Hi_C);
+	Info_AddChoice	(Info_Mod_Vino_Hi, "Piwo i kobiety kazdej nocy....", Info_Mod_Vino_Hi_D);
+	Info_AddChoice	(Info_Mod_Vino_Hi, "Mysle, ze lepiej jest, gdy idziem powoli.", Info_Mod_Vino_Hi_C);
 };
 
 FUNC VOID Info_Mod_Vino_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Hi_A_15_00"); //Richtig, einer. Der Rest hat davon nichts gesehen.
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_A_05_01"); //Du gehst mir aufn Sack, Mann. Hau endlich ab!
+	AI_Output(hero, self, "Info_Mod_Vino_Hi_A_15_00"); //To prawda. Reszta nie widziala niczego.
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_A_05_01"); //Ty bujasz pilki, czlowiek. Wyciagnij z tego fuge!
 
 	Info_ClearChoices	(Info_Mod_Vino_Hi);
 };
 
 FUNC VOID Info_Mod_Vino_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Hi_D_15_00"); //Jeden Abend Bier und Weiber ...
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_D_05_01"); //Dir werd ich's zeigen!
+	AI_Output(hero, self, "Info_Mod_Vino_Hi_D_15_00"); //Piwo i kobiety kazdej nocy....
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_D_05_01"); //Pokaze Ci!
 
 	Info_ClearChoices	(Info_Mod_Vino_Hi);
 
@@ -61,8 +61,8 @@ FUNC VOID Info_Mod_Vino_Hi_D()
 
 FUNC VOID Info_Mod_Vino_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Hi_C_15_00"); //Ist wohl besser, ich gehe langsam.
-	AI_Output(self, hero, "Info_Mod_Vino_Hi_C_05_01"); //Ja, verzieh dich bloß!
+	AI_Output(hero, self, "Info_Mod_Vino_Hi_C_15_00"); //Mysle, ze lepiej jest, gdy idziem powoli.
+	AI_Output(self, hero, "Info_Mod_Vino_Hi_C_05_01"); //Tak, zgubic sie!
 
 	Info_ClearChoices	(Info_Mod_Vino_Hi);
 };
@@ -93,7 +93,7 @@ FUNC INT Info_Mod_Vino_Pruegel_Condition()
 
 FUNC VOID Info_Mod_Vino_Pruegel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vino_Pruegel_05_00"); //Für solche Momente schufte ich den ganzen Tag.
+	AI_Output(self, hero, "Info_Mod_Vino_Pruegel_05_00"); //Przez takie chwile pracuje caly dzien.
 							
 	// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
 	self.aivar[AIV_ArenaFight] = AF_NONE;
@@ -128,13 +128,13 @@ FUNC INT Info_Mod_Vino_KingImRing_Condition()
 
 FUNC VOID Info_Mod_Vino_KingImRing_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_00"); //Hey, du da!
-	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_01"); //Redest du mit mir?
-	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_02"); //Du hast mich mal ziemlich beleidigt.
-	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_03"); //Du willst sagen: fertig gemacht?
-	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_04"); //Ich habe lange auf diesen Moment gewartet.
-	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_05"); //Bleib doch vernünftig.
-	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_06"); //Jetzt geht's dir an den Kragen!
+	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_00"); //Hej!
+	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_01"); //Rozmawiasz do mnie?
+	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_02"); //Obrazal mnie pan raz bardzo zle.
+	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_03"); //Mówisz, skonczyles?
+	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_04"); //Na te chwile dlugo czekalem.
+	AI_Output(hero, self, "Info_Mod_Vino_KingImRing_15_05"); //Dlaczego nie jestes rozsadny?
+	AI_Output(self, hero, "Info_Mod_Vino_KingImRing_05_06"); //Teraz Twoja kolej!
 
 	AI_StopProcessInfos	(self);
 
@@ -153,7 +153,7 @@ INSTANCE Info_Mod_Vino_Brennerei (C_INFO)
 	information	= Info_Mod_Vino_Brennerei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier steckst du also. Was ist los?";
+	description	= "Tak wiec w tym wlasnie miejscu jestes. Co sie dzieje?";
 };
 
 FUNC INT Info_Mod_Vino_Brennerei_Condition()
@@ -166,24 +166,24 @@ FUNC INT Info_Mod_Vino_Brennerei_Condition()
 
 FUNC VOID Info_Mod_Vino_Brennerei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_00"); //Hier steckst du also. Was ist los?
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_01"); //Was los ist? Mich hätte es beinahe erwischt.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_02"); //Nur Nandor verdanke ich es, dass ich noch lebe. Er hat mich aus der Höhle gezogen, als mir die Sinne schwanden ...
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_03"); //Was genau ist denn geschehen?
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_04"); //Diese abscheulichen Biester ... ich hätte nicht so neugierig sein sollen und die Fässer dort stehen lassen, wo sie waren.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_05"); //Aber als ich diese Geräusche bei der Türe hörte, stellte ich sie beiseite um mit dem Ohr an der Türe zu lauschen.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_06"); //Und als ich wieder nach unten blickte ... da hingen diese grässlichen Viecher an meinen Beinen ... und danach wurde es schwarz um mich.
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_07"); //Ja, klingt nicht so schön. Aber wie geht es dir denn jetzt? Auf dem Hof vermissen sie dich schon ...
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_08"); //Eigentlich fühle ich mich schon ziemlich erholt ... aber zurück zum Hof kann ich trotzdem nicht.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_09"); //Bei der Plattform unten krabbeln noch unzählige von diesen ekligen Spinnenbiestern.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_10"); //Solange die dort sind, setz ich keinen Fuß in die Höhle.
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_00"); //Tak wiec w tym wlasnie miejscu jestes. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_01"); //Co sie dzieje? Prawie sie zlapalem.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_02"); //Tylko dzieki Nandorowi wciaz zyje. Wyciagnal mnie z jaskini, kiedy stracilem zmysly....
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_03"); //Co dokladnie sie stalo?
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_04"); //Te ohydne bestie..... i opuscily beczki, gdzie sie znajdowaly.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_05"); //Ale kiedy uslyszalem te odglosy przy drzwiach, odlozylem je na bok, aby sluchaly z uchem przy drzwiach.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_06"); //A kiedy spojrzalem znowu w dól..... byly te straszne stworzenia wiszace na nogach...... a potem poszla mi czarna.
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei_15_07"); //Tak, nie brzmi tak ladnie. Ale jak Pan teraz postepuje? Brakuje im juz na podwórku....
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_08"); //Wlasciwie czuje sie juz dosc wyleczony..... ale wciaz nie moge wrócic na podwórko.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_09"); //Na podestu ponizej, niezliczona liczba owych obrzydliwych pajakowych bestii ciagle jeszcze raczkuje.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei_05_10"); //Tak dlugo, jak tylko tam beda, nie postawie stopy w jaskini.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Nandor_VinoBrennerei))
 	{
-		B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino ist in Nandors Lager. Er wurde von kleinen Spinnen angegriffen, wird sich aber bald wieder erholen.");
+		B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino jest w obozie Nandora. Zostal zaatakowany przez male pajaki, ale wkrótce powróci do zdrowia.");
 	};
 
-	B_LogEntry	(TOPIC_MOD_VINO_WO, "Zum Hof kann er jedoch nicht zurück, da bei dem Teleporter in der Höhle immer noch die Spinnen herumwuseln.");
+	B_LogEntry	(TOPIC_MOD_VINO_WO, "Nie moze jednak wrócic na podwórko, bo pajaki wciaz rozkrecaja sie w jaskini z teleporterka.");
 
 	B_GivePlayerXP	(150);
 
@@ -217,7 +217,7 @@ INSTANCE Info_Mod_Vino_Brennerei2 (C_INFO)
 	information	= Info_Mod_Vino_Brennerei2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Plattform ist sicher.";
+	description	= "Podest jest bezpieczny.";
 };
 
 FUNC INT Info_Mod_Vino_Brennerei2_Condition()
@@ -231,9 +231,9 @@ FUNC INT Info_Mod_Vino_Brennerei2_Condition()
 
 FUNC VOID Info_Mod_Vino_Brennerei2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei2_15_00"); //Die Plattform ist sicher.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei2_05_01"); //Wirklich? Keine von diesen garstigen Biestern mehr da?
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei2_05_02"); //Na schön, ich werde mal einen Blick riskieren, ob es  auch wirklich ungefährlich ist.
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei2_15_00"); //Podest jest bezpieczny.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei2_05_01"); //Naprawde? Zadne z tych paskudnych bestii nie zostalo?
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei2_05_02"); //Dobrze, sprawdze, czy jest to naprawde bezpieczne.
 
 	B_GivePlayerXP	(250);
 
@@ -261,12 +261,12 @@ FUNC INT Info_Mod_Vino_Brennerei3_Condition()
 
 FUNC VOID Info_Mod_Vino_Brennerei3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_00"); //(munter) Ahh, da bist du ja. Hab vielen Dank für deine Hilfe bei der Spinnensache.
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei3_15_01"); //Du bist wieder wohl auf?
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_02"); //Ja, mir geht es großartig.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_03"); //(etwas wehmütig) Tja, nur in die Brennerei setze ich wohl vorerst keinen Fuß mehr, solange sich die Spinnen in den Höhlen und Gängen tummeln.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_04"); //(wieder fröhlicher) Wie dem auch sei, hier, als kleines Dankeschön etwas Gold und ein paar meiner guten Kräuterschnäpse.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_05"); //Die wirken belebend und machen jeden Kränkelnden rasch wieder munter. Auf dein Wohl.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_00"); //Ach, tam jestescie. Dziekujemy bardzo za pomoc z pajakiem.
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei3_15_01"); //Znów znów znów?
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_02"); //Tak, radze sobie swietnie.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_03"); //(lekko melancholijny) No cóz, tylko w gorzelni prawdopodobnie nie postawie na razie stopy w gorzelni, dopóki pajaki beda kawortowac w jaskiniach i korytarzach.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_04"); //(znów jeszcze bardziej radosny) Zreszta tutaj, troche dziekuje - dziekuje - to troche zlota i niektóre z moich dobrych likierów ziolowych.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei3_05_05"); //Dzialaja pobudzajaco i szybko ozywiaja kazdego chorego. Dla zdrowia.
 
 	B_GivePlayerXP	(200);
 
@@ -285,7 +285,7 @@ INSTANCE Info_Mod_Vino_Brennerei4 (C_INFO)
 	information	= Info_Mod_Vino_Brennerei4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Von den Spinnen geht keine Gefahr mehr aus.";
+	description	= "Nie ma juz zagrozenia ze strony pajaków.";
 };
 
 FUNC INT Info_Mod_Vino_Brennerei4_Condition()
@@ -299,17 +299,17 @@ FUNC INT Info_Mod_Vino_Brennerei4_Condition()
 
 FUNC VOID Info_Mod_Vino_Brennerei4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vino_Brennerei4_15_00"); //Von den Spinnen geht keine Gefahr mehr aus. Ihre Königin war einmal.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_01"); //Wirklich? Das sind großartige Neuigkeiten. Dann kann ich meiner Brennerei ja bald wieder einen Besuch abstatten.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_02"); //Ich hatte meinen Alchemietisch schon vermisst ...
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_03"); //Hmm, aber wie kann ich mich nun dafür bedanken? Schnapps habe ich keinen mehr.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_04"); //Aber warte ... nimm diesen Ring hier.
+	AI_Output(hero, self, "Info_Mod_Vino_Brennerei4_15_00"); //Nie ma juz zagrozenia ze strony pajaków. Twoja królowa byla kiedys.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_01"); //Naprawde? To wspaniala wiadomosc. Wkrótce bede mógl ponownie odwiedzic moja gorzelnie.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_02"); //Brakowalo mi juz stolu alchemii.....
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_03"); //Hmm, ale jak moge panu teraz podziekowac? Jestem z Schnappsa.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_04"); //Ale poczekaj.... Wez ten pierscien tutaj.
 
 	B_GiveInvItems	(self, hero, ItRi_Alchemist, 1);
 
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_05"); //Ich fand ihn damals in der Höhle, bevor ich mit dem Brennen anfing.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_06"); //Ich hatte den Eindruck, dass er mir dabei half die Grundlagen der Alchemie schnell zu begreifen.
-	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_07"); //Na ja, jetzt brauch ich ihn mittlerweile nicht mehr. Vielleicht nützt er dir etwas.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_05"); //Znalazlem go z powrotem w jaskini zanim zaczalem palic.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_06"); //Mialem wrazenie, ze pomógl mi szybko uchwycic podstawy alchemii.
+	AI_Output(self, hero, "Info_Mod_Vino_Brennerei4_05_07"); //No cóz, teraz juz tego nie potrzebuje. Moze zrobi ci cos dobrego.
 
 	B_GivePlayerXP	(200);
 };

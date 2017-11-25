@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_AdanosKurzschwert (C_Item)
 {	
-	name 				=	"Adanos' Kurzschwert";
+	name 				=	"Adanos Krótki miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_AdanosKurzschwert (C_Item)
 };
 INSTANCE ItMw_AdanosKurzschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Adanos' Kurzschwert (geschärft)";
+	name 				=	"Krótki miecz Adanosa (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

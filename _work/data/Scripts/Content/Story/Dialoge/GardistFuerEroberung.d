@@ -20,7 +20,7 @@ FUNC VOID Info_Mod_GardistFuerEroberung_Hi_Info()
 {
 	AI_TurnToNpc	(self, Mod_1106_EBR_Bartholo_MT);
 
-	AI_Output(self, Mod_1106_EBR_Bartholo_MT, "Info_Mod_GardistFuerEroberung_Hi_13_00"); //Wir werden angegriffen!
+	AI_Output(self, Mod_1106_EBR_Bartholo_MT, "Info_Mod_GardistFuerEroberung_Hi_13_00"); //Jestesmy w ataku!
 
 	AI_StopProcessInfos	(self);
 };
@@ -47,7 +47,7 @@ FUNC VOID Info_Mod_GardistFuerEroberung_Hi_02_Info()
 {
 	AI_TurnToNpc	(self, Mod_1106_EBR_Bartholo_MT);
 
-	AI_Output(self, Mod_1106_EBR_Bartholo_MT, "Info_Mod_GardistFuerEroberung_Hi_02_13_00"); //Anscheinend haben uns die Heilmagier verraten und jemandem das Signal gegeben, das Tor zu öffnen.
+	AI_Output(self, Mod_1106_EBR_Bartholo_MT, "Info_Mod_GardistFuerEroberung_Hi_02_13_00"); //Najwyrazniej uzdrawiajacy magicy oddali nam pomoc i dali komus sygnal do otwarcia bramy.
 
 	AI_StopProcessInfos	(self);
 };

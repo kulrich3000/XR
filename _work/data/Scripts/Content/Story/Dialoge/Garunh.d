@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Garunh_Hi_Condition()
 
 FUNC VOID Info_Mod_Garunh_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garunh_Hi_18_00"); //Du sein Mensch von weit entfernten Ort.
-	AI_Output(self, hero, "Info_Mod_Garunh_Hi_18_01"); //Ich berichte dir nicht nur von bösen Orks, sondern auch von bösen Menschen aus diesem Tal.
+	AI_Output(self, hero, "Info_Mod_Garunh_Hi_18_00"); //Jestes jego czlowiekiem z daleka.
+	AI_Output(self, hero, "Info_Mod_Garunh_Hi_18_01"); //Opowiem wam nie tylko o zlych orkach, ale takze o zlych ludziach z tej doliny.
 };
 
 INSTANCE Info_Mod_Garunh_Orkring (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Garunh_Orkring (C_INFO)
 	information	= Info_Mod_Garunh_Orkring_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über die bösen Orks?";
+	description	= "Co wiesz o zlych orkach?";
 };
 
 FUNC INT Info_Mod_Garunh_Orkring_Condition()
@@ -43,9 +43,9 @@ FUNC INT Info_Mod_Garunh_Orkring_Condition()
 
 FUNC VOID Info_Mod_Garunh_Orkring_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring_15_00"); //Was weißt du über die bösen Orks?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring_18_01"); //Böse Orks sind sehr abergläubig. Sie vergöttern die  Macht des Erschaffers.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring_18_02"); //Er ist sehr stark, seitdem er im Tempel unter den Bergen war.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring_15_00"); //Co wiesz o zlych orkach?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring_18_01"); //Zle orki sa bardzo przesadne. Uwielbiaja czcic moc stwórcy.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring_18_02"); //Odkad byl w swiatyni pod górami, byl bardzo silny.
 };
 
 INSTANCE Info_Mod_Garunh_Orkring2 (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Garunh_Orkring2 (C_INFO)
 	information	= Info_Mod_Garunh_Orkring2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer sind eigentlich die bösen Menschen?";
+	description	= "Kim sa zli ludzie?";
 };
 
 FUNC INT Info_Mod_Garunh_Orkring2_Condition()
@@ -69,11 +69,11 @@ FUNC INT Info_Mod_Garunh_Orkring2_Condition()
 
 FUNC VOID Info_Mod_Garunh_Orkring2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring2_15_00"); //Wer sind eigentlich die bösen Menschen?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_01"); //Böse Menschen, haben Waffen einer alten Schmiede gefunden.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_02"); //Waffen die nicht rosten und für Orks geschmiedet wurden.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_03"); //Sie liefern den Orks die Waffen und Orks bezahlen mit Artefakten unserer Kultur.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_04"); //Sie haben Ring von meinen Ahnen an die Menschen gegeben und Garunh muss ihn wieder zurückerlangen, um Ehre nicht zu beschmutzen.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring2_15_00"); //Kim sa zli ludzie?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_01"); //Ludzie szatanscy, znalezli bron starego kowala.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_02"); //Bron, która nie rdzewiala i byla kuta na orki.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_03"); //Orkiestry zaopatruja orki w bron, a orki placa artefaktami naszej kultury.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring2_18_04"); //Oni dali pierscionek moich przodków ludziom i Garunh musi odzyskac go, aby nie wyniszczyc czci.
 };
 
 INSTANCE Info_Mod_Garunh_Orkring3 (C_INFO)
@@ -84,7 +84,7 @@ INSTANCE Info_Mod_Garunh_Orkring3 (C_INFO)
 	information	= Info_Mod_Garunh_Orkring3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie können wir die Orks daran hindern den Pass anzugreifen?";
+	description	= "Jak mozemy powstrzymac Orków przed atakiem przeleczy?";
 };
 
 FUNC INT Info_Mod_Garunh_Orkring3_Condition()
@@ -98,11 +98,11 @@ FUNC INT Info_Mod_Garunh_Orkring3_Condition()
 
 FUNC VOID Info_Mod_Garunh_Orkring3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring3_15_00"); //Wie können wir die Orks daran hindern den Pass anzugreifen?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring3_18_01"); //Wenn Mensch helfen Garunh, seinen Ring von bösen Menschen zu holen, dann er auch Stärke von Orks schwächen.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring3_18_02"); //Böse Menschen haben Höhle. Garunh begleiten dich zu ihr.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring3_15_00"); //Jak mozemy powstrzymac Orków przed atakiem przeleczy?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring3_18_01"); //Jesli ludzie pomagaja Garunhowi w zdobyciu jego kregu zlych ludzi, wtedy oslabia tez sile orków.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring3_18_02"); //Zli ludzie maja jaskinie. Garunh bedzie cie do niej eskortowac.
 
-	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Damit Garunh mir gegen die Orks am Pass hilft muss ich ihm zuerst helfen einen alten Ring von den Banditen zurückzuerobern. Er wird mich zu ihnen führen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Aby Garunh pomógl mi przeciw Orkom na przeleczy, musze mu pomóc odzyskac stary dzwonek od bandytów. On mnie do nich poprowadzi.");
 
 	AI_StopProcessInfos	(self);
 
@@ -132,11 +132,11 @@ FUNC INT Info_Mod_Garunh_Orkring4_Condition()
 
 FUNC VOID Info_Mod_Garunh_Orkring4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring4_18_00"); //Böse Menschen befinden sich hinter Hütte im Berg. Eingang sein zu klein für Orks, deswegen sind Menschen hier sicher.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring4_18_01"); //Garunh muss hier warten und auf Erfolg von Mensch hoffen.
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring4_15_02"); //Ich finde deinen Ring schon, halt mir einfach hier draußen den Rücken frei.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring4_18_00"); //Zlo jest za chatka w górze. Wejscie jest za male dla orków, wiec ludzie sa tu bezpieczni.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring4_18_01"); //Garunh musi tu czekac i miec nadzieje na sukces czlowieka.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring4_15_02"); //Znajde twój pierscionek, po prostu zatrzymaj sie tutaj.
 
-	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Wir sind bei der Höhle angekommen. Da der Eingang allerdings zu klein für Garunh ist, muss ich mich den Banditen alleine stellen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Do jaskini dotarlismy. Poniewaz wejscie jest zbyt male dla Garunha, musze stawic czola samym bandytom.");
 };
 
 INSTANCE Info_Mod_Garunh_Orkring5 (C_INFO)
@@ -147,7 +147,7 @@ INSTANCE Info_Mod_Garunh_Orkring5 (C_INFO)
 	information	= Info_Mod_Garunh_Orkring5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die bösen Menschen und ihr Anfüher sind tot.";
+	description	= "Zly ludzie i ich przywódca nie zyja.";
 };
 
 FUNC INT Info_Mod_Garunh_Orkring5_Condition()
@@ -162,26 +162,26 @@ FUNC INT Info_Mod_Garunh_Orkring5_Condition()
 
 FUNC VOID Info_Mod_Garunh_Orkring5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_00"); //Die bösen Menschen und ihr Anfüher sind tot. Bei ihm habe ich auch deinen Ring gefunden.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_00"); //Zly ludzie i ich przywódca nie zyja. Znalazlem z nim równiez twój pierscionek.
 
 	B_GiveInvItems	(hero, self, ItRi_Garunh, 1);
 
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_01"); //Danke, Mensch, jetzt du haben meine Ehre gerettet. Ich will dir Geheimnis von Orks verraten.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_02"); //Vor vielen Jahren haben Orks in den Bergen großen Tempel gefunden.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_03"); //Der mutigste war Schamane Asek. Er sein der erste gewesen, der Tempel betreten hat.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_04"); //In der Artefakthalle fand er viele mächtige Artefakte, doch keins interessierte ihn, außer Stab des Erschaffers.
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_05"); //Was soll das für ein Stab sein? Und wer ist der Erschaffer?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_06"); //Stab sein so stark wie Erschaffer und Erschaffer jeder sein, der Stab besitzt.
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_07"); //Heißt das, dass man mit ihm alles erschaffen kann, was man will?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_08"); //Sein göttliches Artefakt, nicht für Orks oder Menschen bestimmt.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_09"); //Asek können nur Tod erschaffen. Und das er haben gemacht, um sich und Tempel zu schützen.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_10"); //Aber Asek wollte mehr. Er haben nicht nur lebende Orks im Tempel zu lebenden Toten gemacht, sondern auch tote Orks von Friedhof aufstehen lassen.
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_11"); //Moment mal, soll das heißen die Orks im Wald sind untote Orks?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_12"); //Ja, Asek nur haben ganz wenige am Leben gelassen. Nur Anführer sind noch lebendig.
-	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_13"); //Wo befindet sich der Tempel, in dem Asek sein Versteck hat?
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_14"); //Das können dir nur lebender Ork-Anfüher sagen. Da du Sprache aber nicht kannst, brauchst du Übersetzer.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_15"); //Baro haben von Mensch erzählt, der Orks studiert hat. Am besten du gehen zu ihm.
-	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_16"); //Wenn du weißt, wo Asek ist, du können mich aufsuchen bei Zelt. Viel Erfolg, Mensch.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_01"); //Dzieki czlowiekowi, teraz uratowales mój zaszczyt. Chce powiedziec panu sekret Orków.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_02"); //Wiele lat temu orki znajdowaly w górach wielkie swiatynie.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_03"); //Najodwazniejszym byl Szaman Asek. Jako pierwszy wszedl do swiatyni.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_04"); //W Artefakthalle odnalazl wiele poteznych artefaktów, ale zaden z nich nie interesowal sie nim poza personelem twórcy.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_05"); //Jaki personel? A kto jest twórca?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_06"); //Personel jest równie silny jak twórcy i twórcy, to kazdy, kto posiada pracowników.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_07"); //Czy oznacza to, ze mozesz z nim stworzyc cos, czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_08"); //Jego boski artefakt, nieprzeznaczony dla orków i ludzi.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_09"); //Asek moze tylko powodowac smierc. Czynil to, aby chronic siebie i swiatynie.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_10"); //Ale Asek chcial wiecej. Nie tylko zamienil zywe orki w swiatynie w zywych zmarlych, ale takze wznosil martwe orki z cmentarza.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_11"); //Poczekaj na minute, czy to, co ma oznaczac, ze orki w lesie sa nieumarlymi orkami?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_12"); //Tak, bardzo niewiele Asek przetrwalo. Tylko przywódcy nadal zyja.
+	AI_Output(hero, self, "Info_Mod_Garunh_Orkring5_15_13"); //Gdzie jest swiatynia, w której Asek ma swoja kryjówke?
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_14"); //Tylko zyjacy lider orka moze Ci to powiedziec. Poniewaz jednak nie znasz jezyka, potrzebujesz tlumaczy.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_15"); //Baro opowiedzial mi o mezczyznie, który studiowal orki. Lepiej pójsc do niego.
+	AI_Output(self, hero, "Info_Mod_Garunh_Orkring5_18_16"); //Jesli wiesz, gdzie jest Asek, mozesz mnie odwiedzic w namiocie. Zycze powodzenia, czlowiek.
 
 	B_GivePlayerXP	(250);
 
@@ -191,7 +191,7 @@ FUNC VOID Info_Mod_Garunh_Orkring5_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_EIS_UNTOTEORKS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EIS_UNTOTEORKS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Garunh hat mir erzählt, was es mit den Orks auf sich hat. Offenbar hat ein Schamane namens Asek einen mächtigen Stab in einem Tempel gefunden, mit dessen Hilfe er nahezu alle Orks in Untote verwandelt hat und zusätzlich noch tote Orks hat auferstehen lassen. Um seinen Aufenthaltsort zu erfahren soll ich mit Baro sprechen, da er jemanden kennt, der die Sprache der Orks studiert hat. Danach muss ich einen Ork-Anführer finden und die Informationen beschaffen.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Garunh opowiedzial mi, o co chodzi w Orkach. Widocznie szaman o imieniu Asek znalazl w swiatyni potezny szaman, z pomoca którego przerobil niemal wszystkie orki na nieumarle i dodatkowo zmartwychwstale martwe orki. Aby dowiedziec sie, gdzie przebywa, powinienem porozmawiac z Baro, bo zna kogos, kto studiowal jezyk orków. Potem musze znalezc lidera orka i uzyskac informacje.");
 
 	AI_StopProcessInfos	(self);
 

@@ -1,7 +1,7 @@
 INSTANCE Mod_1540_PIR_Skip_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skip";
+	name 		= "pominiecie";
 	guild 		= GIL_out;
 	id 			= 1540;
 	voice 		= 8;

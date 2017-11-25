@@ -1,7 +1,7 @@
 INSTANCE Xeres_03	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Xeres";
+	name							=	"Xeze";
 	guild							=	GIL_STRF;
 	id			= 	1608;
 	voice			=	14;

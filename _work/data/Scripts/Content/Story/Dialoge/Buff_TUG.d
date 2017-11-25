@@ -20,8 +20,8 @@ FUNC VOID Info_Mod_Buff_TUG_Hi_Info()
 {
 	AI_TurnToNPC(self, Mod_7352_OUT_Trador_TUG);
 	
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Hi_06_00"); //Das stimmt. Wir sind euch auf die Schliche gekommen.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Hi_06_01"); //Dieser Mann hat uns die Hoffnung wiedergegeben. Wir sind ihm durch den Teleporter gefolgt.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Hi_06_00"); //To prawda. Do Ciebie dotarlismy.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Hi_06_01"); //Ten czlowiek dal nam nadzieje. Sledzilismy go przez teleportera.
 
 	AI_StopProcessInfos	(self);
 };
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Buff_TUG_Trador (C_INFO)
 	information	= Info_Mod_Buff_TUG_Trador_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, das hätten wir. Was hattest du mit Trador zu schaffen?";
+	description	= "Cóz, tutaj jestesmy. Co robiles z Trador?";
 };
 
 FUNC INT Info_Mod_Buff_TUG_Trador_Condition()
@@ -48,17 +48,17 @@ FUNC INT Info_Mod_Buff_TUG_Trador_Condition()
 
 FUNC VOID Info_Mod_Buff_TUG_Trador_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_15_00"); //So, das hätten wir. Was hattest du mit Trador zu schaffen?
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_01"); //Da muss ich ausholen. In jungen Jahren war ich Aufseher im Minental.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_02"); //Einige Gefangene planten eine Verschwörung gegen die Magier.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_03"); //Diese hatten vor, die Gefangenen im Minental einzuschließen oder so.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_04"); //Auf jeden Fall bekam ich Wind von der Sache und meldete die Angelegenheit dem obersten Aufseher.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_05"); //Er bestrafte die Gruppe, deren Anführer Trador war.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_06"); //Das wollte er sich nicht gefallen lassen und teleportierte mich mit irgendeinem Zauber in das verlassene Tal.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_07"); //Ein paar Jahre später tauchte dort Setta auf, die scheinbar auch mit Trador zu tun gehabt hat.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_08"); //Aber als du dann gekommen bist wurde uns der Mut zum Handeln wiedergegeben und wir benutzten gemeinsam das Portal um dich zu unterstützen.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_09"); //Was für ein Glück, dass wir Trador nun endlich erwischt haben.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_10"); //Wie kann ich mich erkenntlich zeigen?
+	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_15_00"); //Cóz, tutaj jestesmy. Co robiles z Trador?
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_01"); //Musze sie na to rzucic okiem. W mlodym wieku bylem straznikiem w Minental.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_02"); //Niektórzy wiezniowie spisek wymierzony w magów.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_03"); //Planowali zamknac wiezniów w Minental lub w czyms innym.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_04"); //W kazdym razie dostalem wiatr od sprawy i zglosilem sprawe szefowi straznika.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_05"); //Ukaral grupe, której przywódca byl Trador.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_06"); //Nie chcial sie z tym pogodzic i teleportowal mnie jakas magia do opuszczonej doliny.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_07"); //Kilka lat pózniej pojawil sie tam Setta, który najwyrazniej mial tez cos wspólnego z Trador.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_08"); //Ale kiedy przyszedles, odwaga do dzialania zostala nam zwrócona, a my wykorzystalismy ten portal do wspólnego wsparcia.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_09"); //Na szczescie ostatecznie zlapalismy Tradora.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_06_10"); //Jak moge wyrazic wdziecznosc?
 
 	Mod_VMG_WSTrador += 1;
 	
@@ -66,22 +66,22 @@ FUNC VOID Info_Mod_Buff_TUG_Trador_Info()
 
 	if (Mod_VMG_WSTrador == 6)
 	{
-		B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe mit den beiden gesprochen und eine Kurzfassung ihrer Lebensgeschichte gehört. Über seine Gruppe habe ich leider nichts Wissenswertes erfahren, aber ich weiß nun, dass er ein ehemaliger Gefangener in der Kolonie war. Ich sollte mal mit Genn wegen des Teleporters reden.");
+		B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Rozmawialem z nimi i uslyszalem podsumowanie ich historii zyciowej. Niestety, nie dowiedzialem sie nic wartego poznania jego grupy, ale teraz wiem, ze byl on byl bylym wiezniem w kolonii. Powinienem porozmawiac z Gennem o teleporterze.");
 	};
 
 	B_StartOtherRoutine	(self, "DORF");
 
 	Info_ClearChoices	(Info_Mod_Buff_TUG_Trador);
 
-	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Gib mir 100 Goldmünzen.", Info_Mod_Buff_TUG_Trador_C);
-	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Vielleicht 50 Goldmünzen. Das reicht völlig.", Info_Mod_Buff_TUG_Trador_B);
-	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Ich brauche keine Belohnung, dein Dank ist mir genug.", Info_Mod_Buff_TUG_Trador_A);
+	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Daj mi 100 zlotych monet.", Info_Mod_Buff_TUG_Trador_C);
+	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Moze 50 zlotych monet. To wystarczy.", Info_Mod_Buff_TUG_Trador_B);
+	Info_AddChoice	(Info_Mod_Buff_TUG_Trador, "Nie potrzebuje nagrody, twoja wdziecznosc wystarczy.", Info_Mod_Buff_TUG_Trador_A);
 };
 
 FUNC VOID Info_Mod_Buff_TUG_Trador_C()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_C_15_00"); //Gib mir 100 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_C_06_01"); //Nicht gerade was für den kleinen Geldbeutel, aber bitte. Du sollst es haben.
+	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_C_15_00"); //Daj mi 100 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_C_06_01"); //Nie dokladnie cos dla malej torebki, ale prosze. Chce, zebyscie mieli ja pania.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
@@ -90,8 +90,8 @@ FUNC VOID Info_Mod_Buff_TUG_Trador_C()
 
 FUNC VOID Info_Mod_Buff_TUG_Trador_B()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_B_15_00"); //Vielleicht 50 Goldmünzen. Das reicht völlig.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_B_06_01"); //Das ist angemessen. Hier.
+	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_B_15_00"); //Moze 50 zlotych monet. To wystarczy.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_B_06_01"); //To wlasciwe. Tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
@@ -102,8 +102,8 @@ FUNC VOID Info_Mod_Buff_TUG_Trador_B()
 
 FUNC VOID Info_Mod_Buff_TUG_Trador_A()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_A_15_00"); //Ich brauche keine Belohnung, dein Dank ist mir genug.
-	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_A_06_01"); //Oh, so etwas habe ich lange nicht mehr erlebt. Du bist ein guter Mensch.
+	AI_Output(hero, self, "Info_Mod_Buff_TUG_Trador_A_15_00"); //Nie potrzebuje nagrody, twoja wdziecznosc wystarczy.
+	AI_Output(self, hero, "Info_Mod_Buff_TUG_Trador_A_06_01"); //Och, od dawna nic takiego nie widzialem. Jestes dobrym czlowiekiem.
 
 	B_GivePlayerXP	(200);
 

@@ -1,7 +1,7 @@
 INSTANCE Mod_7328_HS_Hofnarr_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Hofnarr"; 
+	name 		= "Królewski blazen"; 
 	guild 		= GIL_OUT;
 	id 			= 7328;
 	voice 		= 27;

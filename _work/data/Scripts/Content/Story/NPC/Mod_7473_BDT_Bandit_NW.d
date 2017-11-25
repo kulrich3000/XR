@@ -1,7 +1,7 @@
 INSTANCE Mod_7473_BDT_Bandit_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Räuber";
+	name 		= "bandyta";
 	guild 		= GIL_STRF;
 	id 			= 7473;
 	voice 		= 03;

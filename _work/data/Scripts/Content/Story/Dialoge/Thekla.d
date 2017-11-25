@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Thekla_Hi_Condition()
 
 FUNC VOID Info_Mod_Thekla_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Hi_17_00"); //Hallo Fremder. Wenn du einen Ort suchst an dem du etwas zu Essen bekommst, dann bist du hier richtig.
+	AI_Output(self, hero, "Info_Mod_Thekla_Hi_17_00"); //Witaj nieznajomego. Jesli szukasz miejsca, gdzie mozna cos zjesc, trafiles we wlasciwe miejsce.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Thekla kann mir etwas zu Essen verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Thekla moze mi sprzedac cos do jedzenia.");
 };
 
 INSTANCE Info_Mod_Thekla_Daemonisch (C_INFO)
@@ -42,13 +42,13 @@ FUNC INT Info_Mod_Thekla_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Thekla_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_00"); //(wütend) Was ist, willst du auch noch was zu fressen?
-	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch_15_01"); //Nein, ich wollte nur mal hallo sagen.
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_02"); //(wieder ruhiger) Ach, entschuldige meinen Tonfall.
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_03"); //Lares schickt paar seiner Söldner in den Wald zum Wölfe jagen und jetzt meinen sie mir deswegen alles leer fressen zu müssen.
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_04"); //Wenn es nur etwas gäbe, was ihren unbändigen Appetit endlich stillen könnte.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_00"); //Co to jest sprawa, czy chcesz cos zjesc?
+	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch_15_01"); //Nie, chcialem tylko powitac.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_02"); //Och, usprawiedliwic mój ton glosu.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_03"); //Lares wysyla niektórych swoich najemników do lasu, aby polowali na wilki i teraz mysla, ze musza jesc cale jedzenie.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch_17_04"); //Gdyby bylo tylko cos, co mogloby zaspokoic jej nieposkromiony apetyt.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Thekla flucht darüber, dass einige Söldner, die Lares zum Wölfejagen in den Wald geschickt hatte, ihr seit dem die Küche leer fressen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Thekla zaklina, ze niektórzy najemnicy, którzy wyslali Lares na wilki w lesie, jedza ja od pustej kuchni.");
 };
 
 INSTANCE Info_Mod_Thekla_Daemonisch2 (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Thekla_Daemonisch2 (C_INFO)
 	information	= Info_Mod_Thekla_Daemonisch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wolltest doch, dass die Söldner nicht mehr so viel fressen.";
+	description	= "Chciales, aby najemnicy tak bardzo przestali jesc.";
 };
 
 FUNC INT Info_Mod_Thekla_Daemonisch2_Condition()
@@ -74,14 +74,14 @@ FUNC INT Info_Mod_Thekla_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Thekla_Daemonisch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch2_15_00"); //Du wolltest doch, dass die Söldner nicht mehr so viel fressen. Ich habe da was für dich ...
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch2_17_01"); //Ja, in Innos Namen was?
+	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch2_15_00"); //Chciales, aby najemnicy tak bardzo przestali jesc. Dostalem cos dla Ciebie.....
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch2_17_01"); //Tak, na czym polega nazwa Inno?
 
 	Info_ClearChoices	(Info_Mod_Thekla_Daemonisch2);
 
 	if (Npc_HasItems(hero, ItPo_HealBesessenheit) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Thekla_Daemonisch2, "Heilung von Besessenheit", Info_Mod_Thekla_Daemonisch2_B);
+		Info_AddChoice	(Info_Mod_Thekla_Daemonisch2, "Uzdrowienie obsesji", Info_Mod_Thekla_Daemonisch2_B);
 	};
 	if (Npc_HasItems(hero, ItFo_KWine) >= 1)
 	{
@@ -91,8 +91,8 @@ FUNC VOID Info_Mod_Thekla_Daemonisch2_Info()
 
 FUNC VOID Info_Mod_Thekla_Daemonisch2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch2_C_15_00"); //Hier, dieses Wässerchen sollte ihren Appetit wieder in normale Bahnen lenken. Misch es einfach ins Essen.
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch2_C_17_01"); //Ja, ich will auch gar nicht wissen was es ist.
+	AI_Output(hero, self, "Info_Mod_Thekla_Daemonisch2_C_15_00"); //Tutaj ta mala soda powinna przywrócic apetyt. Wystarczy tylko umiescic go w jedzenie.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch2_C_17_01"); //Tak, nie chce nawet wiedziec, co to jest.
 
 	Info_ClearChoices	(Info_Mod_Thekla_Daemonisch2);
 };
@@ -131,9 +131,9 @@ FUNC INT Info_Mod_Thekla_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Thekla_Daemonisch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch3_17_00"); //Es hat geklappt. Hier, nimm etwas von meinem Eintopf zum Dank.
+	AI_Output(self, hero, "Info_Mod_Thekla_Daemonisch3_17_00"); //To sie sprawdzilo. Oto kilka slów podziekowania.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "So, Onar's Hof wäre erledigt.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Wiec farma w Onar jest skonczona.");
 
 	B_GivePlayerXP	(250);
 };
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Thekla_Dung (C_INFO)
 	information	= Info_Mod_Thekla_Dung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Thekla weglocken versuchen)";
+	description	= "(Próbujac wyciagnac Scla)";
 };
 
 FUNC INT Info_Mod_Thekla_Dung_Condition()
@@ -163,16 +163,16 @@ FUNC VOID Info_Mod_Thekla_Dung_Info()
 {
 	Info_ClearChoices	(Info_Mod_Thekla_Dung);
 
-	Info_AddChoice	(Info_Mod_Thekla_Dung, "Ich möchte den Söldnern nur einen kleinen Streich spielen.", Info_Mod_Thekla_Dung_04);
-	Info_AddChoice	(Info_Mod_Thekla_Dung, "Habe ich da nicht gerade jemanden in der Vorratskammer gesehen?", Info_Mod_Thekla_Dung_03);
-	Info_AddChoice	(Info_Mod_Thekla_Dung, "Einer der Knechte hat gerade einen Teller mitgehen lassen.", Info_Mod_Thekla_Dung_02);
-	Info_AddChoice	(Info_Mod_Thekla_Dung, "Onar möchte was von dir.", Info_Mod_Thekla_Dung_01);
+	Info_AddChoice	(Info_Mod_Thekla_Dung, "Chce tylko troche zartowac z najemnikami.", Info_Mod_Thekla_Dung_04);
+	Info_AddChoice	(Info_Mod_Thekla_Dung, "Czyz nie widzialem kogos po prostu w spizarni?", Info_Mod_Thekla_Dung_03);
+	Info_AddChoice	(Info_Mod_Thekla_Dung, "Jeden z pracowników po prostu ukradl talerz.", Info_Mod_Thekla_Dung_02);
+	Info_AddChoice	(Info_Mod_Thekla_Dung, "Onar chce od ciebie czegos.", Info_Mod_Thekla_Dung_01);
 };
 
 FUNC VOID Info_Mod_Thekla_Dung_01()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung_01_15_00"); //Onar möchte was von dir. Er erwartet dich im Gutshaus.
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung_01_17_01"); //Der fette Kerl soll ruhig herkommen, wenn er was will. Der wird langsam genauso faul wie diese verkommenen Söldner.
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung_01_15_00"); //Onar chce od ciebie czegos. On oczekuje cie przy dworze.
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung_01_17_01"); //Powiedz tlustemu facetowi, aby przyjechal tutaj, jesli chce czegos. On staje sie równie leniwy jak zdegenerowani najemnicy.
 
 	Info_ClearChoices	(Info_Mod_Thekla_Dung);
 
@@ -181,8 +181,8 @@ FUNC VOID Info_Mod_Thekla_Dung_01()
 
 FUNC VOID Info_Mod_Thekla_Dung_02()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung_02_15_00"); //Einer der Knechte hat gerade einen Teller mitgehen lassen. Er ist gerade rausgegangen.
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung_02_17_01"); //Welche Teller? Ich habe doch überhaupt keine Teller verteilt. Willst du mich veralbern?
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung_02_15_00"); //Jeden z pracowników po prostu ukradl talerz. On wlasnie wyszedl.
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung_02_17_01"); //Jakie plytki? W ogóle nie wydawalem talerzy. Czy kochasz mnie?
 
 	Info_ClearChoices	(Info_Mod_Thekla_Dung);
 
@@ -191,8 +191,8 @@ FUNC VOID Info_Mod_Thekla_Dung_02()
 
 FUNC VOID Info_Mod_Thekla_Dung_03()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung_03_15_00"); //Habe ich da nicht gerade jemanden in der Vorratskammer gesehen?
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung_03_17_01"); //Was? Die Strolche! Na wartet ...
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung_03_15_00"); //Czyz nie widzialem kogos po prostu w spizarni?
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung_03_17_01"); //Co? Hoodlumy! Cóz, poczekaj....
 
 	Info_ClearChoices	(Info_Mod_Thekla_Dung);
 
@@ -205,8 +205,8 @@ FUNC VOID Info_Mod_Thekla_Dung_03()
 
 FUNC VOID Info_Mod_Thekla_Dung_04()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung_04_15_00"); //Ich möchte den Söldnern nur einen kleinen Streich spielen. Schau mal bitte kurz weg.
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung_04_17_01"); //Lieber nicht, Jungchen. Die Kerle verstehen bei sowas absolut keinen Spaß.
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung_04_15_00"); //Chce tylko troche zartowac z najemnikami. Prosze spojrzec na chwile, prosze.
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung_04_17_01"); //Wole nie, kocham. Chlopcy nie bawia sie z tego.
 
 	Info_ClearChoices	(Info_Mod_Thekla_Dung);
 
@@ -236,8 +236,8 @@ FUNC INT Info_Mod_Thekla_Dung2_Condition()
 
 FUNC VOID Info_Mod_Thekla_Dung2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung2_17_00"); //Du hast mich angelogen! Tu das nie wieder.
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung2_17_01"); //Wenn es um meine Vorräte geht, versteh ich keinen Spaß.
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung2_17_00"); //Oklamales mi! Nie rób tego nigdy wiecej.
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung2_17_01"); //Jesli chodzi o moje zapasy, nie moge wziac zartów.
 };
 
 INSTANCE Info_Mod_Thekla_Dung3 (C_INFO)
@@ -262,11 +262,11 @@ FUNC INT Info_Mod_Thekla_Dung3_Condition()
 
 FUNC VOID Info_Mod_Thekla_Dung3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_00"); //Sag mal, hast du was mit den Bauchschmerzen der Söldner zu tun?
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung3_15_01"); //Wie kommst du darauf?
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_02"); //Du hast, bevor sie angefangen haben zu jammern, doch von einem Streich gesprochen, den du ihnen spielen wolltest.
-	AI_Output(hero, self, "Info_Mod_Thekla_Dung3_15_03"); //Ähm ...
-	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_04"); //Mir ist egal, was mit den Söldnern ist, aber lass die Finger von meinem Herd, merk dir das!
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_00"); //Masz cos wspólnego z brzuchami najemników?
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung3_15_01"); //Co sprawia, ze myslisz o tym?
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_02"); //Mówiles o zartie, które chciales zagrac zanim zaczely narzekac.
+	AI_Output(hero, self, "Info_Mod_Thekla_Dung3_15_03"); //Um....
+	AI_Output(self, hero, "Info_Mod_Thekla_Dung3_17_04"); //Nie obchodze sie co z najemnikami, ale trzymajcie wasze rece z pieca, pamietajcie o tym!
 };
 
 INSTANCE Info_Mod_Thekla_Wasili_01 (C_INFO)
@@ -289,32 +289,32 @@ FUNC INT Info_Mod_Thekla_Wasili_01_Condition()
 
 FUNC VOID Info_Mod_Thekla_Wasili_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_00"); //Ach, dieser arme Wasili. Er wurde von Onar vom Hof verbannt, weil er auf Marias Weisung einem Fremden Geld gegeben hat.
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_01"); //Jetzt sitzt er in der Höhle und trinkt den ganzen Tag. Und Maria macht keinen Finger krumm, um Wasili da wieder raus zu helfen.
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_02"); //Du bist doch ziemlich viel unterwegs. Könntest du ihm nicht etwas zu Essen von mir bringen?
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_00"); //Biedny Wasili. Onar zostal wygnany z dworu, poniewaz dawal pieniadze nieznajomemu na polecenie Marii.
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_01"); //Teraz caly dzien siedzi w jaskini pije. I Maria nie podniesie palca, by pomóc Wasili wydostac sie z niego.
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_17_02"); //Duzo jestes na drodze. Czy nie mozesz przyniesc mu cos do jedzenia?
 
 	Info_ClearChoices	(Info_Mod_Thekla_Wasili_01);
 
-	Info_AddChoice	(Info_Mod_Thekla_Wasili_01, "Nein, dafür habe ich keine Zeit.", Info_Mod_Thekla_Wasili_01_B);
-	Info_AddChoice	(Info_Mod_Thekla_Wasili_01, "Klar, ich helfe gern.", Info_Mod_Thekla_Wasili_01_A);
+	Info_AddChoice	(Info_Mod_Thekla_Wasili_01, "Nie, nie mam na to czasu.", Info_Mod_Thekla_Wasili_01_B);
+	Info_AddChoice	(Info_Mod_Thekla_Wasili_01, "Z pewnoscia chetnie pomoze.", Info_Mod_Thekla_Wasili_01_A);
 };
 
 FUNC VOID Info_Mod_Thekla_Wasili_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_01_B_15_00"); //Nein, dafür habe ich keine Zeit.
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_B_17_01"); //Schade. Dann muss ich später selbst gehen.
+	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_01_B_15_00"); //Nie, nie mam na to czasu.
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_B_17_01"); //Zbyt zle. Pózniej bede musial sie sam udac.
 
 	Info_ClearChoices	(Info_Mod_Thekla_Wasili_01);
 };
 
 FUNC VOID Info_Mod_Thekla_Wasili_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_01_A_15_00"); //Klar, ich helfe gern.
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_A_17_01"); //Vielen Dank, dafür kriegst du auch später etwas von meinem Eintopf, den ich gerade zubereite.
+	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_01_A_15_00"); //Z pewnoscia chetnie pomoze.
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_01_A_17_01"); //Dzieki temu dostaniesz troche mojego gulaszu, który przygotuje pózniej.
 
 	B_GiveInvItems	(self, hero, ItMi_EsspaketWasili, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Thekla bat mich darum Wasili etwas zu Essen zu bringen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Thekla poprosila mnie, abym przyniósl Wasili cos do jedzenia.");
 
 	Info_ClearChoices	(Info_Mod_Thekla_Wasili_01);
 };
@@ -327,7 +327,7 @@ INSTANCE Info_Mod_Thekla_Wasili_02 (C_INFO)
 	information	= Info_Mod_Thekla_Wasili_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Wasili sein Essen gebracht.";
+	description	= "Przynioslem jego jedzenie.";
 };
 
 FUNC INT Info_Mod_Thekla_Wasili_02_Condition()
@@ -340,12 +340,12 @@ FUNC INT Info_Mod_Thekla_Wasili_02_Condition()
 
 FUNC VOID Info_Mod_Thekla_Wasili_02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_02_15_00"); //Ich habe Wasili sein Essen gebracht.
-	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_02_17_01"); //Dankeschön. Hier ist der versprochene Eintopf, mit dem ich gerade fertig geworden bin. Lass es dir schmecken.
+	AI_Output(hero, self, "Info_Mod_Thekla_Wasili_02_15_00"); //Przynioslem jego jedzenie.
+	AI_Output(self, hero, "Info_Mod_Thekla_Wasili_02_17_01"); //Dziekuje bardzo. Oto obiecany gulasz, z którym wlasnie skonczylem. Ciesz sie posilkiem.
 
 	B_GiveInvItems	(self, hero, ItFo_XPStew, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Ich habe Wasili sein Essen gebracht und den Eintopf bekommen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_WASILI, "Przywiozlem Wasili jego jedzenie i dostalem gulasz.");
 };
 
 INSTANCE Info_Mod_Thekla_Zauberwasser (C_INFO)
@@ -356,7 +356,7 @@ INSTANCE Info_Mod_Thekla_Zauberwasser (C_INFO)
 	information	= Info_Mod_Thekla_Zauberwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier eine Lieferung Zauberwasser.";
+	description	= "Mam dostawe magicznej wody.";
 };
 
 FUNC INT Info_Mod_Thekla_Zauberwasser_Condition()
@@ -371,11 +371,11 @@ FUNC INT Info_Mod_Thekla_Zauberwasser_Condition()
 
 FUNC VOID Info_Mod_Thekla_Zauberwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thekla_Zauberwasser_15_00"); //Ich hab hier eine Lieferung Zauberwasser.
+	AI_Output(hero, self, "Info_Mod_Thekla_Zauberwasser_15_00"); //Mam dostawe magicznej wody.
 
 	B_GiveInvItems	(hero, self, ItMi_Zauberwasser_MIS, 8);
 
-	AI_Output(self, hero, "Info_Mod_Thekla_Zauberwasser_17_01"); //Wird auch langsam Zeit.
+	AI_Output(self, hero, "Info_Mod_Thekla_Zauberwasser_17_01"); //Najwyzszy czas.
 };
 
 INSTANCE Info_Mod_Thekla_Trade (C_INFO)

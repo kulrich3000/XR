@@ -8,7 +8,7 @@ FUNC VOID TORINORCCITY()
 
 		Mod_TorInStadt = 1;		
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Was ist das? Warum ist das Tor zu? Naja, ich werde mich darum kümmern, wenn ich den Fokus von Hosh Pak habe.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Co to jest? Dlaczego brama jest zamknieta? Cóz, zajme sie tym, kiedy zajme sie Hosh Pak.");
 	};
 
 	if (Mod_TorInStadt == 1)
@@ -21,6 +21,6 @@ FUNC VOID TORINORCCITY()
 
 		B_InitMonsterAttitudes();
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Scheint so, als hätte Hosh Pak das Tor geschlossen. Jetzt, wo er tot ist, ist es jedenfalls wieder offen.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Takie jak Hosh Pak zamyka brame. Tak czy owak, teraz, gdy juz umarl, znów jest otwarte.");
 	};
 };

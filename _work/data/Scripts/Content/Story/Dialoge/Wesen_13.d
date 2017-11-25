@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_13_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_13_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_13_Hi_18_00"); //Wohingegen das Argument als gegenläufig betrachtet werden könnte ...
+	AI_Output(self, hero, "Info_Mod_Wesen_13_Hi_18_00"); //Argument ten mozna uznac za sprzeczny.....
 
 	AI_StopProcessInfos	(self);
 };

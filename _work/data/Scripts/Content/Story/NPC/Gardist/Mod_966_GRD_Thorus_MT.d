@@ -1,7 +1,7 @@
 instance Mod_966_GRD_Thorus_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Thorus";
+	name 		= "stringi";
 	guild 		= GIL_OUT;
 	id 			= 966;
 	voice 		= 12;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jason_Aabid (C_INFO)
 	information	= Info_Mod_Jason_Aabid_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Aabid wegen ...";
+	description	= "Przyszedlem po Aabid....";
 };
 
 FUNC INT Info_Mod_Jason_Aabid_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Jason_Aabid_Condition()
 
 FUNC VOID Info_Mod_Jason_Aabid_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_00"); //Ich komme von Aabid wegen ...
-	AI_Output(self, hero, "Info_Mod_Jason_Aabid_06_01"); //(wütend) Psssssssssst!
-	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_02"); //(verwirrt) Was ...?
-	AI_Output(self, hero, "Info_Mod_Jason_Aabid_06_03"); //(verärgert) Hier ist es und nun verschwinde!
+	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_00"); //Przyszedlem po Aabid....
+	AI_Output(self, hero, "Info_Mod_Jason_Aabid_06_01"); //Pssssssssssssssssssssssssssst!
+	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_02"); //Co.....?
+	AI_Output(self, hero, "Info_Mod_Jason_Aabid_06_03"); //Tutaj jest i teraz wyjdz!
 
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_04"); //Ähm ... ok.
+	AI_Output(hero, self, "Info_Mod_Jason_Aabid_15_04"); //Um.... Okay.
 
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Jason war ziemlich komisch drauf und gab mir ohne viele Worte sein Paket. Woran liegt's nur?");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Jason byl bardzo zabawny i dal mi swój pakiet bez wielu slów. Jaki jest cel?");
 
 	B_GivePlayerXP	(50);
 };

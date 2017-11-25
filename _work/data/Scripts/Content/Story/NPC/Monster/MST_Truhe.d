@@ -5,7 +5,7 @@
 
 PROTOTYPE Mst_Default_Truhe(C_Npc)			
 {
-	name							=	"Truhe";
+	name							=	"kaseton";
 	guild							=	GIL_SUMMONEDGUARDIAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Truhe;
 	level							=	10;		// SN: wegen XP, real nur Level 15!
@@ -123,7 +123,7 @@ INSTANCE Truhe	(Mst_Default_Truhe)
 
 INSTANCE Truhe_Deppenhans	(Mst_Default_Truhe)
 {
-	name				=	"Deppenhans' Truhe";
+	name				=	"Deppenhinsy";
 
 	level				=	5;
 //------------------------------------------------------

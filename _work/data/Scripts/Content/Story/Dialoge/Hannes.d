@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Hannes_Hi_Condition()
 
 FUNC VOID Info_Mod_Hannes_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_00"); //Grandios! Parfait! So etwas kann nur von einem Meister erdacht werden. Sieh Er sich's an, sieh Er sich's an!
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_01"); //Dieser Mann spricht wahr, alles passt wie der, Verzeihung, die Faust aufs Auge!
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_02"); //Die Einführung der contraction wird das Theaterleben auf Jahrzehnte beeinflussen, was sage ich da, eine neue Phase der Bühnendichtung einläuten.
-	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_03"); //Wir wohnen gewissermaßen einem historischen Moment bei, exactement!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_00"); //Wspanialy! Parafit! Taka rzecz moze byc stworzona tylko przez mistrza. Spójrz na niego, spogladaj na niego!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_01"); //Ten czlowiek mówi prawde, wszystko tak pasuje, przepraszam, piesc na oko!
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_02"); //Wprowadzenie skurczu bedzie mialo wplyw na zycie teatralne przez kolejne dziesieciolecia, wiec co mówie, nowa faza poezji scenicznej.
+	AI_Output(self, hero, "Info_Mod_Hannes_Hi_06_03"); //Jestesmy w pewnym sensie swiadkami historycznej chwili, precyzji!
 };
 
 INSTANCE Info_Mod_Hannes_EXIT (C_INFO)

@@ -37,7 +37,7 @@ INSTANCE Info_Grd_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Grd_6_EinerVonEuchWerden_Condition;
 	information	= Info_Grd_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will Gardist werden.";
+	description = "Chce byc straznikiem.";
 };                       
 
 FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Grd_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,hero,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Frischling, was? Wenn du ein Lager suchst, das dich aufnimmt, probier's doch bei den Sektenspinnern, die nehmen jeden.
-	AI_Output(self,hero,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Bei uns wird nicht jeder genommen!
+	AI_Output(hero,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Czy mozesz uzyc innego dobrego mezczyzny?
+	AI_Output(self,hero,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Newbie, huh? Jesli szukasz obozu, do którego Cie zabierzesz, spróbuj kultowych blystek, zabiora kazdego.
+	AI_Output(self,hero,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Nie wszystkich zabieramy!
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Grd_6_WichtigePersonen(C_INFO)
 	condition	= Info_Grd_6_WichtigePersonen_Condition;
 	information	= Info_Grd_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Grd_6_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Grd_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Grd_6_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Grd_6_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus kümmert sich drum das alles läuft.
+	AI_Output(hero,self,"Info_Grd_6_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus zajmie sie wszystkim.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Grd_6_DasLager(C_INFO)
 	condition	= Info_Grd_6_DasLager_Condition;
 	information	= Info_Grd_6_DasLager_Info;
 	permanent	= 1;
-	description = "Ich bin neu hier. Was läuft denn so?";
+	description = "Jestem tu nowy. Co sie dzieje?";
 };                       
 
 FUNC INT Info_Grd_6_DasLager_Condition()
@@ -105,28 +105,28 @@ FUNC INT Info_Grd_6_DasLager_Condition()
 };
 FUNC VOID Info_Grd_6_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Grd_6_DasLager_15_00"); //Ich bin neu hier.
-	AI_Output(self,hero,"Info_Grd_6_DasLager_06_01"); //Sehe ich.
-	AI_Output(hero,self,"Info_Grd_6_DasLager_15_02"); //Was läuft denn so?
-	AI_Output(self,hero,"Info_Grd_6_DasLager_06_03"); //Wer hier Ärger macht bekommt was aufs Maul.
+	AI_Output(hero,self,"Info_Grd_6_DasLager_15_00"); //Jestem tu nowy.
+	AI_Output(self,hero,"Info_Grd_6_DasLager_06_01"); //Widze to.
+	AI_Output(hero,self,"Info_Grd_6_DasLager_15_02"); //Co sie dzieje?
+	AI_Output(self,hero,"Info_Grd_6_DasLager_06_03"); //Kto jest w klopotach, ten dostaje bicie.
 	Info_ClearChoices(Info_Grd_6_DasLager);
-	Info_AddChoice(Info_Grd_6_DasLager, "Verstehe.", Info_Grd_6_DasLager_Verstehe);
-	Info_AddChoice(Info_Grd_6_DasLager, "Was verstehst du unter Ärger?", Info_Grd_6_DasLager_WasIstAerger);
+	Info_AddChoice(Info_Grd_6_DasLager, "Widze.", Info_Grd_6_DasLager_Verstehe);
+	Info_AddChoice(Info_Grd_6_DasLager, "Co masz na mysli, klopoty?", Info_Grd_6_DasLager_WasIstAerger);
 };
 
 FUNC VOID Info_Grd_6_DasLager_Verstehe()
 {
-	AI_Output(hero,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //Verstehe.
+	AI_Output(hero,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //Widze.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
 FUNC VOID Info_Grd_6_DasLager_WasIstAerger()
 {
-	AI_Output(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //Was verstehst du unter Ärger?
-	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Die meisten Buddler bezahlen uns, damit wir sie beschützen.
-	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Wenn du dich mit einem von ihnen anlegst, lernst du uns kennen.
-	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Erwische ich dich beim rumstöbern in fremden Hütten ...
-	AI_Output(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Schon gut, ich hab's verstanden.
+	AI_Output(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //Co masz na mysli, klopoty?
+	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Wiekszosc Buddlerów placi nam za ich ochrone.
+	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Miesz sie z jednym z nich, poznasz nas.
+	AI_Output(self,hero,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Lapie cie w dziwnym chacie w dziwaczne chaty....
+	AI_Output(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Wszystko jest w porzadku, dostaje to.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
@@ -140,7 +140,7 @@ INSTANCE Info_Grd_6_DieLage(C_INFO) // E1
 	condition	= Info_Grd_6_DieLage_Condition;
 	information	= Info_Grd_6_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_Grd_6_DieLage_Condition()
@@ -150,8 +150,8 @@ FUNC INT Info_Grd_6_DieLage_Condition()
 
 FUNC VOID Info_Grd_6_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Grd_6_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_Grd_6_DieLage_06_01"); //Willst du Ärger machen?
+	AI_Output(hero,self,"Info_Grd_6_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,hero,"Info_Grd_6_DieLage_06_01"); //Chcesz zrobic klopoty?
 };
 
 INSTANCE Info_Mod_GRD_6_Pickpocket (C_INFO)

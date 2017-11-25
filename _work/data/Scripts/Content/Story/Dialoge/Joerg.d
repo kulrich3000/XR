@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Joerg_Hi (C_INFO)
 	information	= Info_Mod_Joerg_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Joerg_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Joerg_Hi_Condition()
 FUNC VOID Info_Mod_Joerg_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Joerg_Hi_01_01"); //Ich bin Joerg, der Helfer von Carl.
+	AI_Output(self, hero, "Info_Mod_Joerg_Hi_01_01"); //Jestem Joerg, asystentem Carla.
 };
 
 INSTANCE Info_Mod_Joerg_Wilfried (C_INFO)
@@ -42,33 +42,33 @@ FUNC INT Info_Mod_Joerg_Wilfried_Condition()
 
 FUNC VOID Info_Mod_Joerg_Wilfried_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_00"); //Was willst du?
-	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_01"); //Kannst du dich daran erinnern, jemals schlechte Erfahrungen mit Wilfried gemacht zu haben?
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_02"); //Vielleicht... Aber kann ich dir vertrauen?
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_00"); //Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_01"); //Pamietasz, ze kiedykolwiek miales zle doswiadczenia z Wilfriedem?
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_02"); //Byc moze...... Ale czy moge panu ufac?
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 10)
 	{
-		AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_03"); //Sicher doch.
+		AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_03"); //Oczywiscie.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 10);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_04"); //Es gibt Gerüchte, dass er ein Verbrecher ist.
+		AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_04"); //Plotka ma go kryminalista.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_05"); //Oh, ja, das ist ein echter Vertrauensbeweis. Aber nun zu deiner Ausgangsfrage: Ja, ich meide Wilfried, weil mir seine Geschäfte etwas dubios erscheinen.
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_06"); //Allerdings kann ich das nicht an einzelnen Ereignissen festlegen, es ist eher der Gesamteindruck, der bei ihm nicht stimmt.
-	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_07"); //Mehr kannst du mir nicht sagen?
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_08"); //Es hat mit seinen Waren zu tun, glaube ich. Ich war nie zufrieden mit den Produkten, jedenfalls nicht im Verhältnis zum Preis. Mehr kann ich dir nicht sagen.
-	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_09"); //Aber ich würde zu gerne sehen, was passieren würde, wenn man Wilfried und seinen Laden mal genauer untersuchte...
-	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_10"); //Wir werden sehen ...
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_05"); //Ach, tak, to prawdziwy glos zaufania. Ale teraz na pierwsze pytanie: Tak, unikam Wilfrieda, poniewaz jego dzialalnosc wydaje mi sie nieco watpliwa.
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_06"); //Nie moge to jednak naprawic w poszczególnych wydarzeniach, ale raczej ogólne wrazenie jest dla niego nieprawdziwe.
+	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_07"); //Czy to wszystko, co mozesz mi powiedziec?
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_08"); //Mysle, ze ma to zwiazek z jego towarem. Nigdy nie bylem zadowolony z produktów, przynajmniej nie w stosunku do ceny. To wszystko, co moge ci powiedziec.
+	AI_Output(self, hero, "Info_Mod_Joerg_Wilfried_01_09"); //Ale chcialbym zobaczyc, co by sie stalo, gdyby Wilfried i jego sklep zostaly dokladniej zbadane......
+	AI_Output(hero, self, "Info_Mod_Joerg_Wilfried_15_10"); //Zobaczymy jak....
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Nimius_Wilfried))
 	{
 		Mod_WilfriedsQuest = 3;
 
-		B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe noch zwei weitere Personen gefunden, die überzeugt sind, dass Wilfried unfairen Handel treibt. Allerdings fehlen noch immer die handfesten Beweise...");
+		B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Znalazlem jeszcze dwie osoby, które sa przekonane, ze Wilfried niesprawiedliwie handluje. Wciaz jednak brakuje dowodów na to, co jest....");
 
 		B_StartOtherRoutine	(Mod_544_NONE_Wilfried_NW, "HOEHLE");
 		AI_Teleport	(Mod_544_NONE_Wilfried_NW, "TAVERNE");
@@ -95,9 +95,9 @@ FUNC INT Info_Mod_Joerg_WilfriedTot_Condition()
 
 FUNC VOID Info_Mod_Joerg_WilfriedTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joerg_WilfriedTot_01_00"); //War es nötig, Wilfried umzubringen?
-	AI_Output(hero, self, "Info_Mod_Joerg_WilfriedTot_15_01"); //Er hat mich angegriffen.
-	AI_Output(self, hero, "Info_Mod_Joerg_WilfriedTot_01_02"); //(seufzt) Dann soll es wohl so sein.
+	AI_Output(self, hero, "Info_Mod_Joerg_WilfriedTot_01_00"); //Czy trzeba bylo zabic Wilfriela?
+	AI_Output(hero, self, "Info_Mod_Joerg_WilfriedTot_15_01"); //Zaatakowal mnie.
+	AI_Output(self, hero, "Info_Mod_Joerg_WilfriedTot_01_02"); //Wtedy przypuszczam, ze tak.
 };
 
 INSTANCE Info_Mod_Joerg_Flugblaetter (C_INFO)
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Joerg_Flugblaetter (C_INFO)
 	information	= Info_Mod_Joerg_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Joerg_Flugblaetter_Condition()
@@ -129,11 +129,11 @@ FUNC VOID Info_Mod_Joerg_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Joerg_Flugblaetter_01_01"); //Oh, danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Joerg_Flugblaetter_01_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Joerg_Flugblaetter_01_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Joerg_Flugblaetter_01_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

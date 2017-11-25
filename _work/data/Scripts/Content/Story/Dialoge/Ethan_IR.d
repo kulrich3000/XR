@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ethan_IR_Hi (C_INFO)
 	information	= Info_Mod_Ethan_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hüter des Wassers, was meinst du zu unserer bisherigen Exkursion?";
+	description	= "Trzymaj sie wody, co myslisz o naszej wycieczce?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Ethan_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Ethan_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ethan_IR_Hi_15_00"); //Hüter des Wassers, was meinst du zu unserer bisherigen Exkursion?
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_01"); //Nun, den ersten Teil unserer Reise haben wir bewältigt, ohne Gefahren, ohne Zwischenfälle.
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_02"); //Dieses finstere Eiland mit seinen dämonischen Bewohnern jedoch, wird sich ohne Zweifel als sehr hartnäckig gegenüber uns erweisen.
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_03"); //Mit Kampf und Magie werden wir unser Möglichstes tun müssen, um hier zu bestehen.
+	AI_Output(hero, self, "Info_Mod_Ethan_IR_Hi_15_00"); //Trzymaj sie wody, co myslisz o naszej wycieczce?
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_01"); //Cóz, pierwsza czesc naszej podrózy opanowalismy bez niebezpieczenstwa, bez incydentu.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_02"); //Ta ciemna wyspa z demonicznymi mieszkancami niewatpliwie okaze sie jednak bardzo uparta wobec nas.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_03"); //Z walka i magia bedziemy musieli zrobic wszystko, co w naszej mocy, aby tu przezyc.
 };
 
 INSTANCE Info_Mod_Ethan_IR_Hebel (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Ethan_IR_Hebel (C_INFO)
 	information	= Info_Mod_Ethan_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Hebel_Condition()
@@ -47,7 +47,7 @@ FUNC VOID Info_Mod_Ethan_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hebel_13_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hebel_13_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Ethan_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Ethan_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Ethan_IR_GehtLos_Condition()
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Ethan_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_00"); //Selbstverständlich. Meine Erfahrung als Streiter für das Gleichgewicht soll der gerechten Sache zum Sieg verhelfen.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_Hi_13_00"); //Oczywiscie oczywiscie. Moje doswiadczenie jako mistrza równowagi pomoze mi wygrac.
 
 	Mod_IR_Dabei += 1;
 
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Ethan_IR_GehBack (C_INFO)
 	information	= Info_Mod_Ethan_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Ethan_IR_GehBack_Condition()
@@ -119,7 +119,7 @@ FUNC VOID Info_Mod_Ethan_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Ethan_IR_GehBack_13_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Ethan_IR_GehBack_13_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Ethan_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Ethan_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Ethan_IR_Heiltrank_Condition()
@@ -158,31 +158,31 @@ FUNC VOID Info_Mod_Ethan_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Ethan_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Ethan_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Ethan_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Ethan_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Ethan_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Ethan_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Ethan_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Ethan_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Ethan_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Ethan_IR_Heiltrank_Health_05);
 	};
 };
 

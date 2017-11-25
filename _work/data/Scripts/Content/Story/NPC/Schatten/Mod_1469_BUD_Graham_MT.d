@@ -2,7 +2,7 @@ instance Mod_1469_BUD_Graham_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Graham";
+	name =							"szaman";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							4;

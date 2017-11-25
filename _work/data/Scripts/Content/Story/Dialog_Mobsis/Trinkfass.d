@@ -17,7 +17,7 @@ INSTANCE PC_Trinkfass_Trinken (C_Info)
 	condition	= PC_Trinkfass_Trinken_Condition;
 	information	= PC_Trinkfass_Trinken_Info;
 	permanent	= TRUE;
-	description	= "Einen Schluck Wasser trinken"; 
+	description	= "Pic lyk wody"; 
 };
 
 FUNC INT PC_Trinkfass_Trinken_Condition ()

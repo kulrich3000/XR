@@ -1,7 +1,7 @@
 INSTANCE Mod_551_KDF_Pyrokar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pyrokar";
+	name 		= "piroksztalt";
 	guild 		= GIL_DMT;
 	id 		= 551;
 	voice 		= 11;

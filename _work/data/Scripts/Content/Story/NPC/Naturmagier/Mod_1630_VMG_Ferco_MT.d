@@ -2,7 +2,7 @@ instance Mod_1630_VMG_Ferco_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Ferco";
+	name =							"ferco";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							2;

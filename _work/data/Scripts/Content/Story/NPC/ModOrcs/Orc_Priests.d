@@ -1,7 +1,7 @@
 instance ORC_Priest_1 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Varrag-Hashor";
+	name 		=		"warrahazhora";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORC;
 	level 		=		800;
@@ -104,7 +104,7 @@ FUNC VOID Rtn_PreStart_2996 ()
 instance ORC_Priest_3 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Varrag-Unhilqt";
+	name 		=		"Warrang-Unhilqt";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORC;
 	level 		=		800;
@@ -158,7 +158,7 @@ FUNC VOID Rtn_PreStart_2997 ()
 instance ORC_Priest_4 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Varrag-Ruuushk";
+	name 		=		"Wariak-Ruush";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORC;
 	level 		=		800;
@@ -209,7 +209,7 @@ FUNC VOID Rtn_PreStart_2998 ()
 instance ORC_Priest_5 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Grash-Varrag-Arushat";
+	name 		=		"Prushat aranzacji szarosci";
 	Npctype 	=		NPCTYPE_FRIEND;
 	guild 		=		GIL_ORC;
 	level 		=		1000;

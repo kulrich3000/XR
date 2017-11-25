@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Larius_Hallo (C_INFO)
 	information	= Info_Mod_Larius_Hallo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist ja schick angezogen.";
+	description	= "Jestes ladnie ubrany.";
 };
 
 FUNC INT Info_Mod_Larius_Hallo_Condition()
@@ -69,8 +69,8 @@ FUNC INT Info_Mod_Larius_Hallo_Condition()
 
 FUNC VOID Info_Mod_Larius_Hallo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Larius_Hallo_15_00"); //Du bist ja schick angezogen.
-	AI_Output(self, hero, "Info_Mod_Larius_Hallo_01_01"); //(belustigt) Ja, das stimmt. Damit man mich sofort als den Statthalter erkennt und nicht frech von der Seite anredet.
+	AI_Output(hero, self, "Info_Mod_Larius_Hallo_15_00"); //Jestes ladnie ubrany.
+	AI_Output(self, hero, "Info_Mod_Larius_Hallo_01_01"); //Tak, to prawda. Tak, ze moge byc natychmiast rozpoznany jako dyrektor i nie byc bezglosnie zaadresowany z boku.
 };
 
 INSTANCE Info_Mod_Larius_Aufgaben (C_INFO)
@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Larius_Aufgaben (C_INFO)
 	information	= Info_Mod_Larius_Aufgaben_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sind deine Aufgaben als Statthalter?";
+	description	= "Jakie sa Twoje obowiazki jako gubernatora?";
 };
 
 FUNC INT Info_Mod_Larius_Aufgaben_Condition()
@@ -95,10 +95,10 @@ FUNC INT Info_Mod_Larius_Aufgaben_Condition()
 
 FUNC VOID Info_Mod_Larius_Aufgaben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Larius_Aufgaben_15_00"); //Was sind deine Aufgaben als Statthalter?
-	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_01"); //Im Moment kann ich mich nur um den Abfall kümmern, für den sich die Paladine zu wichtig sind.
-	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_02"); //Ich weiß, der König hat es so verfügt. Aber ich hoffe doch, dass die Besetzung der Stadt bald ihr Ende findet.
-	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_03"); //So lange widme ich mich dem Studium der alten Rechtsschriften oder lustwandle durch die Straßen und treffe mich mit Freunden...
+	AI_Output(hero, self, "Info_Mod_Larius_Aufgaben_15_00"); //Jakie sa Twoje obowiazki jako gubernatora?
+	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_01"); //Teraz moge zajac sie tylko smieciami, dla których paladyny sa zbyt wazne.
+	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_02"); //Wiem, ze król ja rozkazal. Mam jednak nadzieje, ze okupacja miasta wkrótce sie skonczy.
+	AI_Output(self, hero, "Info_Mod_Larius_Aufgaben_01_03"); //Od tak dawna poswiecam sie studiowaniu starych tekstów prawnych lub wedruje ulicami i spotykam sie z przyjaciólmi.....
 };
 
 INSTANCE Info_Mod_Larius_Haeftlinge (C_INFO)
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Larius_Haeftlinge (C_INFO)
 	information	= Info_Mod_Larius_Haeftlinge_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Welche Meinung hast du von den Häftlingen des Minentals?";
+	description	= "Jaka jest Twoja opinia o wiezniach w Dolinie Kopalni?";
 };
 
 FUNC INT Info_Mod_Larius_Haeftlinge_Condition()
@@ -123,9 +123,9 @@ FUNC INT Info_Mod_Larius_Haeftlinge_Condition()
 
 FUNC VOID Info_Mod_Larius_Haeftlinge_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Larius_Haeftlinge_15_00"); //Welche Meinung hast du von den Häftlingen des Minentals?
-	AI_Output(self, hero, "Info_Mod_Larius_Haeftlinge_01_01"); //Ist das eine Fangfrage? Das ist mir zu politisch, als dass ich es ehrlich beantworten könnte.
-	AI_Output(self, hero, "Info_Mod_Larius_Haeftlinge_01_02"); //Aber so viel sei verraten: Nicht alles aus dem Minental, was nun vergangen ist, war so schlecht, wie es gemacht wurde.
+	AI_Output(hero, self, "Info_Mod_Larius_Haeftlinge_15_00"); //Jaka jest Twoja opinia o wiezniach w Dolinie Kopalni?
+	AI_Output(self, hero, "Info_Mod_Larius_Haeftlinge_01_01"); //Czy to jest pytanie? Uczciwa odpowiedz jest dla mnie zbyt polityczna.
+	AI_Output(self, hero, "Info_Mod_Larius_Haeftlinge_01_02"); //Ale pozwole sobie powiedziec panstwu wiele: nie wszystko z Minentalnej doliny, która odeszla, bylo tak zle, jak to zrobiono.
 };
 
 INSTANCE Info_Mod_Larius_Ornament (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Larius_Ornament (C_INFO)
 	information	= Info_Mod_Larius_Ornament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir etwas zum Gründer der Stadt erzählen?";
+	description	= "Czy mozesz mi cos powiedziec o zalozycielu miasta?";
 };
 
 FUNC INT Info_Mod_Larius_Ornament_Condition()
@@ -149,19 +149,19 @@ FUNC INT Info_Mod_Larius_Ornament_Condition()
 
 FUNC VOID Info_Mod_Larius_Ornament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Larius_Ornament_15_00"); //Kannst du mir etwas zum Gründer der Stadt erzählen?
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_01"); //Jemand, der sich für die Geschichte von Khorinis interessiert? Das gibt es nicht oft.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_02"); //Gut, ich will dir erzählen, was ich über ihn weiß.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_03"); //Er hat die Stadt gegründet und wollte es zu seinem Refugium machen. Er soll ein Prediger Adanos gewesen sein.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_04"); //Die Bevölkerung der Stadt jedoch hat sich stark Innos zugewendet.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_05"); //Er war unzufrieden hier und ging über den Pass im Norden nach Relendel.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_06"); //Einige sagen, dass er dort die Stadt Khorata gegründet hat, welche ganz und gar dem einen Gott huldigt.
-	AI_Output(hero, self, "Info_Mod_Larius_Ornament_15_07"); //Interessant.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_08"); //Ich hoffe, ich konnte dir helfen.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_09"); //Wenn du noch mehr Informationen zu ihm benötigst, dann sprich in Khorata mal mit Anselm. Er ist dort der Stadthalter.
-	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_10"); //Du findest die Stadt oben im Norden der Insel. Noch ein ganzes Stück nördlich der Ausgrabungsstelle der Wassermagier ist der Pass.
+	AI_Output(hero, self, "Info_Mod_Larius_Ornament_15_00"); //Czy mozesz mi cos powiedziec o zalozycielu miasta?
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_01"); //Ktos zainteresowal sie historiahorynów? Nie ma wiele razy.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_02"); //Wlasciwie powiem ci, co wiem o nim.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_03"); //Zalozyl miasto i chcial sie nim schronic. Mówi sie, ze byl kaznodzieja Adano.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_04"); //Mieszkancy miasta zwrócili sie jednak do Innos.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_05"); //Nie byl tu zadowolony i przeszedl przez przelecz na pólnocy do Relendel.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_06"); //Niektórzy mówia, ze zalozyl miasto Khorata, które sklada hold jedynemu Bogu.
+	AI_Output(hero, self, "Info_Mod_Larius_Ornament_15_07"); //Ciekawe.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_08"); //Mam nadzieje, ze moge wam pomóc.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_09"); //Jesli potrzebujesz wiecej informacji na jego temat, porozmawiaj z Anselm w Khorata. Tam jest gubernatorem.
+	AI_Output(self, hero, "Info_Mod_Larius_Ornament_01_10"); //Miasto na pólnoc od wyspy. Przelecz jest jeszcze dluga na pólnoc od miejsca wykopalisk dla magów wodnych.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Der Priester scheint Khorinis verlassen und in Relendel die Stadt Khorata gegründet zu haben. Sicher befindet sich das Ornamentstück dort. Ich sollte mich mal mit Anselm unterhalten. Khorata liegt im Norden der Insel und ist durch einen Pass nördlich der Ausgrabungsstelle zu finden.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Ksiadz najwyrazniej opuscil Khorinisa i zalozyl miasto Khorata w Relendel. Z cala pewnoscia jest tam ornamentalne dzielo. Powinienem porozmawiac z Anselmem. Khorata znajduje sie na pólnocy wyspy i mozna ja znalezc przez przelecz na pólnoc od miejsca wykopaliska.");
 
 	B_StartOtherRoutine	(self, "START");
 };

@@ -52,7 +52,7 @@ FUNC INT DIA_Mil_310_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_310_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_PERM_07_00"); //Weitergehen!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_PERM_07_00"); //Pozostan w ruchu!
 	
 	AI_StopProcessInfos (self);
 };

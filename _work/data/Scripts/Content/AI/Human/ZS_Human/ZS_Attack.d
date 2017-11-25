@@ -602,7 +602,7 @@ func void ZS_Attack_End ()
 	&& (Hlp_GetInstanceID(other) == Hlp_GetInstanceID(Mod_1871_TPL_GorKaranto_MT))
 	&& (Mod_GorKarantoSchwach == TRUE)
 	{
-		B_LogEntry	(TOPIC_MOD_AL_ARENA, "Er kämpft wirklich nicht sehr gut, aber er hat den Templer Gor Karanto trotzdem leicht besiegt. Ich glaube, ich sehe mir mal an, wie er sich gegen mich schlägt.");
+		B_LogEntry	(TOPIC_MOD_AL_ARENA, "Naprawde nie walczy zbyt dobrze, ale latwo pokonal templariusza Gora Karanto. Mysle, ze zobacze jak mnie walczy.");
 
 		Mod_GorKarantoSchwach = 2;
 

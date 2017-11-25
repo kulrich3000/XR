@@ -99,7 +99,7 @@ func void B_SetVisuals_Kristallgolem()
 INSTANCE XR_Kristallgolem	(Mst_Default_IceGolem)
 {
 
-	name					=	"Kristallgolem";
+	name					=	"golem";
 	guild					=	GIL_STONEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	level					=	55;
@@ -147,7 +147,7 @@ func void B_SetVisuals_StoneGolemerz()
 
 INSTANCE StoneGolemerz	(Mst_Default_StoneGolem)
 {
-	name		=	"Kupfererzgolem";
+	name		=	"Ruda miedziana Golem";
 
 	CreateInvItems	(self, ItMi_Metallblock, 16);
 
@@ -171,7 +171,7 @@ func void B_SetVisuals_Apfelbaum()
 
 INSTANCE Apfelbaum	(Mst_Addon_Stoneguardian)
 {
-	name							= "Apfelbaum";
+	name							= "jablon";
 	guild							= GIL_SUMMONEDGuardian;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONEDGuardian;
 	level							=	0;	//30
@@ -199,7 +199,7 @@ INSTANCE Apfelbaum	(Mst_Addon_Stoneguardian)
 
 INSTANCE WilderApfelbaum	(Mst_Addon_Stoneguardian)
 {
-	name							= "Wilder Apfelbaum";
+	name							= "Drzewo jablkowe";
 	guild							= GIL_STONEGuardian;
 	aivar[AIV_MM_REAL_ID]			= ID_APFELBAUM;
 	level							=	25;	//30
@@ -224,7 +224,7 @@ INSTANCE WilderApfelbaum	(Mst_Addon_Stoneguardian)
 
 INSTANCE Apfelbaum_Botschek_01	(Mst_Addon_Stoneguardian)
 {
-	name							= "Apfelbaum";
+	name							= "jablon";
 	guild							= GIL_StoneGuardian;
 	aivar[AIV_MM_REAL_ID]			= ID_APFELBAUM;
 	level							=	20;	//30
@@ -252,7 +252,7 @@ INSTANCE Apfelbaum_Botschek_01	(Mst_Addon_Stoneguardian)
 
 INSTANCE Apfelbaum_Botschek_02	(Mst_Addon_Stoneguardian)
 {
-	name							= "Apfelbaum";
+	name							= "jablon";
 	guild							= GIL_StoneGuardian;
 	aivar[AIV_MM_REAL_ID]			= ID_APFELBAUM;
 	level							=	20;	//30
@@ -280,7 +280,7 @@ INSTANCE Apfelbaum_Botschek_02	(Mst_Addon_Stoneguardian)
 
 INSTANCE Apfelbaum_Botschek_03	(Mst_Addon_Stoneguardian)
 {
-	name							= "Apfelbaum";
+	name							= "jablon";
 	guild							= GIL_StoneGuardian;
 	aivar[AIV_MM_REAL_ID]			= ID_APFELBAUM;
 	level							=	20;	//30
@@ -314,7 +314,7 @@ var int Mod_ItPl_AlterPilz_Anzahl;
 /******************************************************************************************/
 INSTANCE ItPl_AlterPilz (C_Item)
 {	
-	name 				=	"Alter Steinpilz";
+	name 				=	"Stary borowik";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	

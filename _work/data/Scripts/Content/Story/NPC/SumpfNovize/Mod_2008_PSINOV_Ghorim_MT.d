@@ -1,7 +1,7 @@
 instance Mod_2008_PSINOV_Ghorim_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Ghorim";
+	name 		=		"ghorim";
 	Npctype	 	=		Npctype_Main;
 	guild 		=		GIL_OUT;
 	level 		=		9;

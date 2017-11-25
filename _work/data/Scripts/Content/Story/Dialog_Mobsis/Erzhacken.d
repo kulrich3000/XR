@@ -6,7 +6,7 @@ FUNC VOID Erzhacken_S1 ()
 	{	
 		if (Npc_HasItems(hero, ItMw_2H_Axe_L_01) == 0)
 		{
-			Print	("Ohne Spitzhacke geht das nicht!");
+			Print	("Nie mozna tego zrobic bez pickaxe!");
 
 			AI_UseMob (hero, "ORE", -1);
 			return;
@@ -827,7 +827,7 @@ INSTANCE PC_Erzhacken_Hacken (C_INFO)
 	information	= PC_Erzhacken_Hacken_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Einfach mal hacken.";
+	description	= "Wystarczy je pokroic.";
 };
 
 FUNC INT PC_Erzhacken_Hacken_Condition()
@@ -852,31 +852,31 @@ FUNC VOID PC_Erzhacken_Hacken_Info()
 			if (ErzAnzahl < 60)
 			{
 				CreateInvItems	(hero, ItMi_Nugget, 1);
-				PrintScreen	("1 Erzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("1 grudka rozdrobnionej rudy!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			}
 			else if (ErzAnzahl < 80)
 			{
 				CreateInvItems	(hero, ItMi_Nugget, 2);
-				PrintScreen	("2 Erzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("Dwa kawalki rudy, siekane!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			}
 			else
 			{
 				CreateInvItems	(hero, ItMi_Nugget, 3);
-				PrintScreen	("3 Erzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("Trzy kawalki rudy, siekane!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			};
 		}
 		else
 		{
-			PrintScreen	("Erzsplitter fliegen durch die Luft!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen	("Odryglowane odlamki przelatuja przez powietrze!", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);		
 		};
 	}
 	else
 	{
-		PrintScreen ("Hier gibt's nichts mehr zu holen.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("Nie ma tu nic do zrobienia.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 		return;
 	};
@@ -908,7 +908,7 @@ INSTANCE PC_Erzhacken_TSchlag (C_Info)
 	condition		= PC_Erzhacken_TSchlag_Condition;
 	information		= PC_Erzhacken_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Trümmerschlag ansetzen."; 
+	description		= ""; 
 };
 
 FUNC INT PC_Erzhacken_TSchlag_Condition ()
@@ -927,7 +927,7 @@ FUNC VOID PC_Erzhacken_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Nichts ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Nic nie....", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -939,19 +939,19 @@ FUNC VOID PC_Erzhacken_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_Nugget, 3);	
-			PrintScreen ("3 Erzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Trzy kawalki rudy, siekane!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_Nugget, 2);	
-			PrintScreen ("2 Erzbrocken gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Dwa kawalki rudy, siekane! ...", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_Nugget, 1);	
-			PrintScreen ("1 Erzbrocken gehackt! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("1 grudka rozdrobnionej rudy! ...", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 
@@ -965,7 +965,7 @@ INSTANCE PC_Erzhacken_Chance (C_Info)
 	condition		= PC_Erzhacken_Chance_Condition;
 	information		= PC_Erzhacken_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Eigene Fähigkeit prüfen)"; 
+	description		= "(Kontrola wlasnej zdolnosci)"; 
 };
 
 FUNC INT PC_Erzhacken_Chance_Condition ()
@@ -981,34 +981,34 @@ FUNC VOID PC_Erzhacken_Chance_Info()
 
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("blutiger Anfänger (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("poczatkujacy absolutny (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("ganz passabler Schürfer (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("calkiem rozsadny poszukiwacz (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("erfahrener Goldschürfer (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("doswiadczony poszukiwacz (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("waschechter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Buddler prawdziwy ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("verdammt guter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("dobry kopacz ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Meister Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Buddler glówny ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
 		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
 	};
 	
-	ConcatText = ConcatStrings (concatText, " Prozent)");
+	ConcatText = ConcatStrings (concatText, " procent");
 	
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };

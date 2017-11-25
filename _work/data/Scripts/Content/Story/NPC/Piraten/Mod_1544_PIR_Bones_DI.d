@@ -1,7 +1,7 @@
 INSTANCE Mod_1544_PIR_Bones_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bones";
+	name 		= "kosci";
 	guild 		= GIL_out;
 	id 			= 1544;
 	voice 		= 1;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_SchwarzerNovizeKaninchen_Hi (C_INFO)
 	information	= Info_Mod_SchwarzerNovizeKaninchen_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist also für die überschießende Kaninchenpopulation verantwortlich ...";
+	description	= "Wiec jestes odpowiedzialny za nadmierna populacje królików......";
 };
 
 FUNC INT Info_Mod_SchwarzerNovizeKaninchen_Hi_Condition()
@@ -19,26 +19,26 @@ FUNC INT Info_Mod_SchwarzerNovizeKaninchen_Hi_Condition()
 
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_15_00"); //Du bist also für die überschießende Kaninchenpopulation verantwortlich ...
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_01"); //Ja, ich bin im Auftrag der Dämonenmagier unterwegs, Plagenzauber zu testen.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_02"); //Und was willst du dagegen machen?
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_15_00"); //Wiec jestes odpowiedzialny za nadmierna populacje królików......
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_01"); //Tak, jestem na misji magików demonów, aby przetestowac zaklecia szkodników.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_02"); //I co ty z tym robisz?
 
 	B_GivePlayerXP	(250);
 
 	Mod_WM_Plage_PartHase = 1;
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Ok, der Ursprung der Kaninchen ist mir nun bekannt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_PLAGE, "Ok, pochodzenie królików jest mi znane.");
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovizeKaninchen_Hi);
 
-	Info_AddChoice	(Info_Mod_SchwarzerNovizeKaninchen_Hi, "Dir den Hosenboden versohlen, wenn du nicht damit aufhörst.", Info_Mod_SchwarzerNovizeKaninchen_Hi_B);
-	Info_AddChoice	(Info_Mod_SchwarzerNovizeKaninchen_Hi, "Garnichts. Die Auskunft darüber ist alles, was ich gebraucht habe.", Info_Mod_SchwarzerNovizeKaninchen_Hi_A);
+	Info_AddChoice	(Info_Mod_SchwarzerNovizeKaninchen_Hi, "Jesli sie nie zatrzymasz, zatrzasnac tylek.", Info_Mod_SchwarzerNovizeKaninchen_Hi_B);
+	Info_AddChoice	(Info_Mod_SchwarzerNovizeKaninchen_Hi, "Nic nie ma nic. Informacje na ten temat to wszystko, czego potrzebowalem.", Info_Mod_SchwarzerNovizeKaninchen_Hi_A);
 };
 
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_15_00"); //Dir den Hosenboden versohlen, wenn du nicht damit aufhörst.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_11_01"); //Na, dann komm doch her.
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_15_00"); //Jesli sie nie zatrzymasz, zatrzasnac tylek.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_11_01"); //Cóz, przyjdzcie tutaj.
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovizeKaninchen_Hi);
 
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_B()
 
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_A_15_00"); //Garnichts. Die Auskunft darüber ist alles, was ich gebraucht habe.
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_A_15_00"); //Nic nie ma nic. Informacje na ten temat to wszystko, czego potrzebowalem.
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovizeKaninchen_Hi);
 
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_SchwarzerNovizeKaninchen_Umgehauen (C_INFO)
 	information	= Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, und jetzt mach, dass du wegkommst.";
+	description	= "Tak wiec teraz wyjmij z tego piekla.";
 };
 
 FUNC INT Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_15_00"); //So, und jetzt mach, dass du wegkommst.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_04_01"); //Das wirst du noch bereuen.
+	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_15_00"); //Tak wiec teraz wyjmij z tego piekla.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Umgehauen_04_01"); //Bedziesz tego zalowal.
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Salmey_Hi (C_INFO)
 	information	= Info_Mod_Salmey_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es denn hier für Bier?";
+	description	= "Jakiego rodzaju piwo jest?";
 };
 
 FUNC INT Info_Mod_Salmey_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Salmey_Hi_Condition()
 
 FUNC VOID Info_Mod_Salmey_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Salmey_Hi_15_00"); //Was gibt es denn hier für Bier?
-	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_01"); //Restbestände vom Khorataer Lagerbier. Unser Brauer hat gerade Probleme, will aber bald wieder liefern.
-	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_02"); //Ansonsten reichlich herkömmliches Klosterbier, mit frischem Quellwasser verdünnt.
+	AI_Output(hero, self, "Info_Mod_Salmey_Hi_15_00"); //Jakiego rodzaju piwo jest?
+	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_01"); //Pozostalosci po Khoracie. Nasz piwowar jest juz teraz w klopotach, ale chce wkrótce znów dostarczyc.
+	AI_Output(self, hero, "Info_Mod_Salmey_Hi_16_02"); //W przeciwnym razie klosterbier jest obficie konwencjonalny, rozcienczony swieza woda zródlana.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Salmey in der Kneipe kann mir Bier verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Salmey w pubie moze mi sprzedac piwo.");
 };
 
 INSTANCE Info_Mod_Salmey_Trade (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Salmey_Trade (C_INFO)
 	permanent	= 1;
 	important	= 0;
 	trade		= 1;
-	description	= "Dann lass mal das Angebot sehen.";
+	description	= "Zobaczmy oferte.";
 };
 
 FUNC INT Info_Mod_Salmey_Trade_Condition()
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_Salmey_Trade_Info()
 	Backup_Questitems();
 
 	//B_GiveTradeInv (self);
-	AI_Output(hero, self, "Info_Mod_Salmey_Trade_15_00"); //Dann lass mal das Angebot sehen.
+	AI_Output(hero, self, "Info_Mod_Salmey_Trade_15_00"); //Zobaczmy oferte.
 };
 
 INSTANCE Info_Mod_Salmey_Pickpocket (C_INFO)

@@ -18,12 +18,12 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geistesveränderung";
+	description		= 	"eliksir zmian mentalnych";
 	
-	TEXT[2]			=   "Vor der Anwendung sollte man sich ABSICHERN!";
+	TEXT[2]			=   "Upewnij sie, ze przed uzyciem!";
 	
-	TEXT[3]			= 	"Kann den Verstand derbe beeinflußen ";	
-	TEXT[4]			= 	"oder den Anwender töten";
+	TEXT[3]			= 	"Moze wplywac na umysl w sposób gruboziarnisty ";	
+	TEXT[4]			= 	"lub zabic uzytkownika";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -59,12 +59,12 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Trank der Geistesveränderung";
+	description		= 	"eliksir zmian mentalnych";
 	
-	TEXT[2]			=   "Vor der Anwendung sollte man sich ABSICHERN!";
+	TEXT[2]			=   "Upewnij sie, ze przed uzyciem!";
 	
-	TEXT[3]			= 	"Kann den Verstand derbe beeinflußen ";	
-	TEXT[4]			= 	"oder den Anwender töten";
+	TEXT[3]			= 	"Moze wplywac na umysl w sposób gruboziarnisty ";	
+	TEXT[4]			= 	"lub zabic uzytkownika";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -99,10 +99,10 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
 
-	description		= 	"Reine Lebensenergie";
+	description		= 	"Czysta energia zyciowa";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Vollständige Regeneration";
+	TEXT[2]			= 	"Calkowita regeneracja";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -141,10 +141,10 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	effect			=	"SPELLFX_MANAPOTION"; 
 
 
-	description		= 	"Reines Mana";
+	description		= 	"Czysta mana";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Vollständige Mana - Regeneration";
+	TEXT[2]			= 	"Kompletna Regeneracja Bananowca";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

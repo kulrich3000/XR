@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Erntehelfer_02_Hi (C_INFO)
 	information	= Info_Mod_Erntehelfer_02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was meinst du zu Erhard?";
+	description	= "Co sadzisz o Erhardzie?";
 };
 
 FUNC INT Info_Mod_Erntehelfer_02_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Erntehelfer_02_Hi_Condition()
 
 FUNC VOID Info_Mod_Erntehelfer_02_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Erntehelfer_02_Hi_15_00"); //Was meinst du zu Erhard?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_02_Hi_08_01"); //Was gibt’s da zu meinen? Er ist mein Vater, so viel ist mal sicher ...
+	AI_Output(hero, self, "Info_Mod_Erntehelfer_02_Hi_15_00"); //Co sadzisz o Erhardzie?
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_02_Hi_08_01"); //A co z moja osoba? To mój ojciec, to na pewno....
 };
 
 INSTANCE Info_Mod_Erntehelfer_02_Pickpocket (C_INFO)

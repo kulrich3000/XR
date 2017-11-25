@@ -1,6 +1,6 @@
 INSTANCE Mod_546_NONE_Liselotte_NW (Npc_Default)
 {
-	name 		= "Liselotte";
+	name 		= "Liselotta";
 	guild 		= GIL_PAL;
 	id 		= 546;
 	voice 		= 16;

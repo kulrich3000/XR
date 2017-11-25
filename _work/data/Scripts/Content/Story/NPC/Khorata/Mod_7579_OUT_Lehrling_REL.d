@@ -1,7 +1,7 @@
 instance Mod_7579_OUT_Lehrling_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brauerlehrling"; 
+	name 		= "browarnik aplikant"; 
 	guild 		= GIL_OUT;
 	id 			= 7579;
 	voice 		= 1;

@@ -37,7 +37,7 @@ INSTANCE Info_grd_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_13_EinerVonEuchWerden_Condition;
 	information	= Info_grd_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will Gardist werden.";
+	description = "Chce byc straznikiem.";
 };                       
 
 FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
@@ -51,8 +51,8 @@ FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Ich will Gardist werden.
-	AI_Output(self,hero,"Info_grd_13_EinerVonEuchWerden_13_01"); //Da hast du aber noch einiges vor dir, Junge!
+	AI_Output(hero,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Chce byc straznikiem.
+	AI_Output(self,hero,"Info_grd_13_EinerVonEuchWerden_13_01"); //Masz przed soba duzo pracy, chlopak!
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_grd_13_WichtigePersonen_Condition;
 	information	= Info_grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_grd_13_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_grd_13_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_grd_13_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_grd_13_WichtigePersonen_13_01"); //Ich hab hier das Sagen. Und ich sage: Sei vorsichtig, was du sagst, Junge!
+	AI_Output(hero,self,"Info_grd_13_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_grd_13_WichtigePersonen_13_01"); //Odpowiadam tutaj. A ja mówie bardzo ostrozny, chlopiec!
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_grd_13_DasLager(C_INFO)
 	condition	= Info_grd_13_DasLager_Condition;
 	information	= Info_grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "Wie komme ich in die Burg?";
+	description = "Jak dojsc do zamku?";
 };                       
 
 FUNC INT Info_grd_13_DasLager_Condition()
@@ -104,10 +104,10 @@ FUNC INT Info_grd_13_DasLager_Condition()
 
 FUNC VOID Info_grd_13_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_grd_13_DasLager_15_00"); //Wie komme ich in die Burg?
-	AI_Output(self,hero,"Info_grd_13_DasLager_13_01"); //Das ist nicht so leicht. Dazu musst du nämlich deine Beine benutzen.
-	AI_Output(self,hero,"Info_grd_13_DasLager_13_02"); //Dann kommt aber der schwierigere Teil: Durch das Tor gehen.
-	AI_Output(hero,self,"Info_grd_13_DasLager_15_03"); //Sehr lustig.
+	AI_Output(hero,self,"Info_grd_13_DasLager_15_00"); //Jak dojsc do zamku?
+	AI_Output(self,hero,"Info_grd_13_DasLager_13_01"); //Nie jest to takie latwe. Musisz uzywac nóg.
+	AI_Output(self,hero,"Info_grd_13_DasLager_13_02"); //Ale potem przychodzi trudniejsza czesc: przejdz przez brame.
+	AI_Output(hero,self,"Info_grd_13_DasLager_15_03"); //Bardzo zabawny.
 };
 
 INSTANCE Info_Mod_GRD_13_Pickpocket (C_INFO)

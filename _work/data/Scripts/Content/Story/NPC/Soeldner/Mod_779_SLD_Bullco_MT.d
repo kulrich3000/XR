@@ -1,7 +1,7 @@
 instance Mod_779_SLD_Bullco_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bullco";
+	name 		= "byk";
 	guild 		= GIL_MIL;
 	id 			= 779;
 	voice 		= 6;

@@ -1,7 +1,7 @@
 instance Mod_7523_JG_Ferros_JL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ferros"; 
+	name 		= "zelazka"; 
 	guild 		= GIL_OUT;
 	id 			= 7523;
 	voice 		= 6;

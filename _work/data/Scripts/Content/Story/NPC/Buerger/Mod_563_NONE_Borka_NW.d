@@ -1,7 +1,7 @@
 INSTANCE Mod_563_NONE_Borka_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Borka"; 
+	name 		= "borka"; 
 	guild 		= GIL_NONE;
 	id 			= 563;
 	voice 		= 11;

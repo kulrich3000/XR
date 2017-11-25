@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Black(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schwarzer Drache";
+	name							=	"Czarny smok";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_Black;
 	level							=	300;
@@ -76,7 +76,7 @@ func void B_SetVisuals_Dragon_Black()
 //*****************
 INSTANCE Dragon_Black	(Mst_Default_Dragon_Black)
 {
-	//name		=	"Pandrodor";
+	//name		=	"Pandrodrodor";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	fight_tactic	=	FAI_DRAGON;
 	B_SetVisuals_Dragon_Black();
@@ -88,7 +88,7 @@ INSTANCE Dragon_Black	(Mst_Default_Dragon_Black)
 
 INSTANCE Summoned_Dragon_Black (Mst_Default_Dragon_Black)
 {
-	name							= "Beschworener Schwarzer Drache";
+	name							= "Czarny smok przywolany";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_STONEDRAGON;
 	level							= 0;

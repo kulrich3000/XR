@@ -1,7 +1,7 @@
 INSTANCE Mod_922_KDF_Neoras_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Neoras";
+	name 		= "neorydy";
 	guild 		= GIL_VLK;
 	id 			= 922;
 	voice 		= 1;

@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Furgas_Hi_Condition()
 
 FUNC VOID Info_Mod_Furgas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_00"); //Ein neues Gesicht in unseren Reihen, wie erfreulich.
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_01"); //Lass mich dir kurz etwas wichtiges erklären.
-	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_02"); //Erzähl.
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_03"); //Dieser Turm ist eine zentrale Stelle im Kloster.
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_04"); //Auf der Spitze findest du das Orakel, das sehr nützlich sein kann.
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_05"); //Wenn du jedoch in das Pentagramm schreitest, so wirst du in unsere Höhle teleportiert.
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_06"); //Dort gibt es eine Mine, in der wir Runensteine abbauen, und einen Kräutergarten.
-	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_07"); //Ein Kräutergarten unter der Erde?
-	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_08"); //Ja, und die Pflanzen gedeihen dort dank unserer Magie prächtig.
-	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_09"); //Danke für die Informationen.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_00"); //Nowe oblicze w naszych szeregach, jak bardzo satysfakcjonujace.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_01"); //Pozwole sobie krótko wyjasnic cos waznego.
+	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_02"); //Powiedz mi o tym.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_03"); //Wieza ta jest centralnym miejscem w klasztorze.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_04"); //Na górze znajduje sie wyrocznia, która moze byc bardzo przydatna.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_05"); //Jesli jednak wejdziesz do pentagramu, zostaniesz przeniesiony do naszej jaskini.
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_06"); //Jest kopalnia, w której wydobywamy kamienie runowe i ogród ziolowy.
+	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_07"); //Ogród ziolowy pod ziemia?
+	AI_Output(self, hero, "Info_Mod_Furgas_Hi_13_08"); //Tak, a rosliny rozwijaja sie dzieki naszej magii.
+	AI_Output(hero, self, "Info_Mod_Furgas_Hi_15_09"); //Dziekujemy za informacje.
 };
 
 INSTANCE Info_Mod_Furgas_Paket (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Furgas_Paket (C_INFO)
 	information	= Info_Mod_Furgas_Paket_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Nahrungspaket für dich.";
+	description	= "Dostalem dla Ciebie pakiet zywnosciowy.";
 };
 
 FUNC INT Info_Mod_Furgas_Paket_Condition()
@@ -49,12 +49,12 @@ FUNC INT Info_Mod_Furgas_Paket_Condition()
 
 FUNC VOID Info_Mod_Furgas_Paket_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furgas_Paket_15_00"); //Ich hab Paketer ein Nahrungspaket für dich.
+	AI_Output(hero, self, "Info_Mod_Furgas_Paket_15_00"); //Dostawalem dla Ciebie paczki zywnosciowe.
 	
 	B_GiveInvItems	(hero, self, ItMi_Pat_Nahrung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Furgas_Paket_13_01"); //Ah, endlich. Die Paladine haben schon darauf gewartet.
-	AI_Output(self, hero, "Info_Mod_Furgas_Paket_13_02"); //Hier hast du einen Runenstein als Dank.
+	AI_Output(self, hero, "Info_Mod_Furgas_Paket_13_01"); //Ah, w koncu. Na to czekali paladyni.
+	AI_Output(self, hero, "Info_Mod_Furgas_Paket_13_02"); //Oto kamien runowy, któremu dziekuje.
 
 	B_GiveInvItems	(self, hero, ItMi_Runeblank, 1);
 
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Furgas_MangelQuest (C_INFO)
 	information	= Info_Mod_Furgas_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ich gesehen habe, besitzt ihr viele Erzadern da unten ...";
+	description	= "Jak widzialem, masz tam wiele zyl rudy.....";
 };
 
 FUNC INT Info_Mod_Furgas_MangelQuest_Condition()
@@ -82,16 +82,16 @@ FUNC INT Info_Mod_Furgas_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Furgas_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furgas_MangelQuest_15_00"); //Wie ich gesehen habe, besitzt ihr viele Erzadern da unten ... aber niemand ist mit dem Abbau beschäftigt.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_01"); //Nunja, seit der Belagerung läuft eben doch nicht alles so ganz seinen gewohnten Gang.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_02"); //Wir waren wirklich nicht darauf  vorbereitet, dass die Schwarzmagier mit ihren Legionen so plötzlich vor unseren Toren stehen.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_03"); //Und als es ernst wurde, konnten wir nicht lange überlegen, sondern mussten kurzerhand jedes Stück Metall zu einer Klinge für unsere Streiter umschmieden.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_04"); //Darunter waren eben auch die Spitzhacken ... Ach, aber so langsam könnten wir doch hier und da wieder das Erz für die Runensteine brauchen.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_05"); //Wenn wir doch nur fünf Spitzhacken hätten ...
+	AI_Output(hero, self, "Info_Mod_Furgas_MangelQuest_15_00"); //Jak widzialem, masz tam wiele zyl rudy..... Ale nikt nie jest zaangazowany w wydobycie.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_01"); //No cóz, od oblezenia nie wszystko odbywa sie w zwyklym trybie.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_02"); //Naprawde nie bylismy przygotowani na to, ze Czarni Magicy i ich legiony sa tak nagle u naszych bram.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_03"); //A kiedy zrobilo sie to powazne, nie moglismy dlugo myslec, ale musielismy przerzucic kazdy kawalek metalu w ostrze dla naszych bojowników.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_04"); //Wsród nich byly pikseksy..... Ach, ale od czasu do czasu mozna bylo wykorzystac rude do budowy kamieni runowych.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest_13_05"); //Gdyby tylko mielismy piec pikseksów....
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Furgas könnte fünf Spitzhacken gebrauchen, um den Erzabbau wieder in Gang zu bringen.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Furgas moze uzyc pieciu pikseksów, aby wydobycie rudy znów ruszyc.");
 };
 
 INSTANCE Info_Mod_Furgas_MangelQuest2 (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Furgas_MangelQuest2 (C_INFO)
 	information	= Info_Mod_Furgas_MangelQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier einige Spitzhacken.";
+	description	= "Mam tu kilka pickaxów.";
 };
 
 FUNC INT Info_Mod_Furgas_MangelQuest2_Condition()
@@ -116,20 +116,20 @@ FUNC INT Info_Mod_Furgas_MangelQuest2_Condition()
 
 FUNC VOID Info_Mod_Furgas_MangelQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Furgas_MangelQuest2_15_00"); //Ich habe hier einige Spitzhacken.
+	AI_Output(hero, self, "Info_Mod_Furgas_MangelQuest2_15_00"); //Mam tu kilka pickaxów.
 
 	B_GiveInvItems	(hero, self, ItMw_2H_Axe_L_01, 5);
 
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_01"); //Tatsächlich ... habe vielen Dank. Nimm diese Runensteine zur Belohnung.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_01"); //W rzeczywistosci.... Dziekuje bardzo. Wez te kamienie runowe jako nagrode.
 
 	B_GiveInvItems	(self, hero, ItMi_Runeblank, 2);
 
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_02"); //Es sind unsere letzten, aber mit den Spitzhacken werden wir in Kürze genügend neue haben.
-	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_03"); //Innos behüte dich auf deinen Wegen.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_02"); //To sa nasze ostatnie, ale z pikselkami juz wkrótce bedziemy mieli dosc nowych.
+	AI_Output(self, hero, "Info_Mod_Furgas_MangelQuest2_13_03"); //Innos chroni Cie na drodze.
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Furgas hat die Spitzhacken und der Erzabbau kann weitergehen.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Furgas posiada pikniki i moze kontynuowac wydobycie rudy.");
 
 	B_StopMangel();
 

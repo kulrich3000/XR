@@ -1,7 +1,7 @@
 INSTANCE Mod_775_PIR_Skip_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skip";
+	name 		= "pominiecie";
 	guild 		= GIL_NONE;
 	id 			= 775;
 	voice 		= 8;

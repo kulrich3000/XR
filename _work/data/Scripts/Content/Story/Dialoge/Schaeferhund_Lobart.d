@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schaeferhund_Lobart_Hi (C_INFO)
 	information	= Info_Mod_Schaeferhund_Lobart_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Geh zum Herrchen!";
+	description	= "Idz do mistrza!";
 };
 
 FUNC INT Info_Mod_Schaeferhund_Lobart_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Schaeferhund_Lobart_Hi_Condition()
 
 FUNC VOID Info_Mod_Schaeferhund_Lobart_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schaeferhund_Lobart_Hi_15_00"); //Geh zum Herrchen!
-	AI_Output(self, hero, "Info_Mod_Schaeferhund_Lobart_Hi_13_01"); //Wau.
+	AI_Output(hero, self, "Info_Mod_Schaeferhund_Lobart_Hi_15_00"); //Idz do mistrza!
+	AI_Output(self, hero, "Info_Mod_Schaeferhund_Lobart_Hi_13_01"); //Ruff.
 
 	AI_StopProcessInfos	(self);
 

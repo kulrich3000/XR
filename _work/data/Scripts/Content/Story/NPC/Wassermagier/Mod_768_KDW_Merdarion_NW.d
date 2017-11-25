@@ -1,7 +1,7 @@
 INSTANCE Mod_768_KDW_Merdarion_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Merdarion";
+	name 		= "meryl";
 	guild 		= GIL_NOV; 
 	id 			= 768;
 	voice 		= 6;

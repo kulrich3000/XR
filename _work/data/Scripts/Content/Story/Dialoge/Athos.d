@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Athos_Hi_Condition()
 
 FUNC VOID Info_Mod_Athos_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Athos_Hi_13_00"); //Verdammt, er ist uns entwischt.
+	AI_Output(self, hero, "Info_Mod_Athos_Hi_13_00"); //Damn, on uciekl.
 
 	AI_StopProcessInfos	(self);
 };

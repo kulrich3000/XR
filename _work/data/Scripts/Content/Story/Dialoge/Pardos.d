@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Pardos_Unheil (C_INFO)
 	information	= Info_Mod_Pardos_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo. du siehst mitgenommen aus.";
+	description	= "Witaj. wygladaja na zdenerwowane.";
 };
 
 FUNC INT Info_Mod_Pardos_Unheil_Condition()
@@ -19,9 +19,9 @@ FUNC INT Info_Mod_Pardos_Unheil_Condition()
 
 FUNC VOID Info_Mod_Pardos_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pardos_Unheil_15_00"); //Hallo. du siehst mitgenommen aus.
-	AI_Output(self, hero, "Info_Mod_Pardos_Unheil_03_01"); //(verstört) Groß, wie ein Haus, ein Flammemeer, Schreie, brennende Leiber. Mitgenommen?! Nur mein Leben.
-	AI_Output(self, hero, "Info_Mod_Pardos_Unheil_03_02"); //Alles verbrannt zerstört, verwüstet, von Dämonenhand, was hereinbrach, wie aus dem Nichts ...
+	AI_Output(hero, self, "Info_Mod_Pardos_Unheil_15_00"); //Witaj. wygladaja na zdenerwowane.
+	AI_Output(self, hero, "Info_Mod_Pardos_Unheil_03_01"); //Duzy, jak dom, morze plomieni, krzyki, plonace ciala. Do niego! Tylko moje zycie.
+	AI_Output(self, hero, "Info_Mod_Pardos_Unheil_03_02"); //Wszystko spalilo sie na ziemie, zdewastowane, zniszczone przez demony, wszystko, co sie zlamalo, jakby znikad......
 
 	AI_StopProcessInfos	(self);
 };

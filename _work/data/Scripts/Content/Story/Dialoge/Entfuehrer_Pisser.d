@@ -18,45 +18,45 @@ FUNC INT Info_Mod_Entfuehrer_Pisser_Hi_Condition()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_01_00"); //Halt! Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_01_00"); //Zatrzymaj sie! Czego od mnie oczekujesz?
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
-	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Ich wollte dich bloß umbringen.", Info_Mod_Entfuehrer_Pisser_Hi_B);
-	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Ich wollte dich fragen, ob du mir beim Blümchenpflücken hilfst.", Info_Mod_Entfuehrer_Pisser_Hi_A);
+	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Próbowalem po prostu pana zabic.", Info_Mod_Entfuehrer_Pisser_Hi_B);
+	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Zastanawialem sie, czy mozesz mi pomóc wybrac kwiaty.", Info_Mod_Entfuehrer_Pisser_Hi_A);
 };
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_00"); //Du bist derjenige, den wir suchen. Ich könnte jetzt laut rufen und dich angreifen. Du hättest keine Chance.
-	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_C_15_01"); //Und warum tust du's nicht?
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_02"); //Ich habe drei Kinder zu ernähren, und mit einem Schwert in der Brust lässt es sich schwer Geld verdienen.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_03"); //Ich schlage dir vor, du lässt mich laufen, und ich werde keine Hilfe rufen.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_00"); //Jestes tym, którego szukamy. Móglbym panstwa teraz wezwac na glos i zaatakowac. Nie mielibysmy zadnych szans.
+	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_C_15_01"); //I dlaczego tego nie zrobisz?
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_02"); //Mam troje dzieci do wyzywienia, a z mieczem w klatce piersiowej ciezko zarabiac pieniadze.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_03"); //Sugeruje, zebyscie pozwolili mi odejsc i nie bede apelowal o pomoc.
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
-	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Nein, ich kann dich nicht am Leben lassen.", Info_Mod_Entfuehrer_Pisser_Hi_E);
-	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Einverstanden. Hau schon ab!", Info_Mod_Entfuehrer_Pisser_Hi_D);
+	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Nie, nie moge ci pozwolic zyc.", Info_Mod_Entfuehrer_Pisser_Hi_E);
+	Info_AddChoice	(Info_Mod_Entfuehrer_Pisser_Hi, "Uzgodnione. Wyjsc stad!", Info_Mod_Entfuehrer_Pisser_Hi_D);
 };
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_B_15_00"); //Ich wollte dich bloß umbringen.
+	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_B_15_00"); //Próbowalem po prostu pana zabic.
 
 	Info_Mod_Entfuehrer_Pisser_Hi_C();
 };
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_A_15_00"); //Ich wollte dich fragen, ob du mir beim Blümchenpflücken hilfst.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_01_01"); //(ungerührt) Haha. (Pause)
+	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_A_15_00"); //Zastanawialem sie, czy mozesz mi pomóc wybrac kwiaty.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_01_01"); //(niedotkniete) Ha-ha. (pauza)
 
 	Info_Mod_Entfuehrer_Pisser_Hi_C();
 };
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_E_15_00"); //Nein, ich kann dich nicht am Leben lassen.
+	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_E_15_00"); //Nie, nie moge ci pozwolic zyc.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
@@ -68,7 +68,7 @@ FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_E()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_D_15_00"); //Einverstanden. Hau schon ab!
+	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_D_15_00"); //Uzgodnione. Wyjsc stad!
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);

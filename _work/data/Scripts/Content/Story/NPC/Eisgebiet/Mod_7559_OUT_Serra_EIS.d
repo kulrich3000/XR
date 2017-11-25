@@ -1,7 +1,7 @@
 instance Mod_7559_OUT_Serra_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Serra";	
+	name 		= "serra";	
 	guild 		= GIL_OUT;
 	id 			= 7559;
 	voice 		= 17;

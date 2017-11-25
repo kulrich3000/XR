@@ -1,7 +1,7 @@
 INSTANCE Mod_532_NONE_Constantino_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Constantino";	
+	name 		= "Konstantynino";	
 	guild 		= GIL_NONE;
 	id 			= 532;
 	voice 		= 10;

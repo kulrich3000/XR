@@ -1,7 +1,7 @@
 instance Mod_7337_HS_Passantin_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Passantin"; 
+	name 		= "obserwator"; 
 	guild 		= GIL_OUT;
 	id 			= 7337;
 	voice 		= 16;

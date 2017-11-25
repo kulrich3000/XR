@@ -1,7 +1,7 @@
 INSTANCE Mod_530_NONE_Regis_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Regis"; 
+	name 		= "regal"; 
 	guild 		= GIL_NONE;
 	id 			= 530;
 	voice 		= 13;

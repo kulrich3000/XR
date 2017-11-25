@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raeuber01_Hi (C_INFO)
 	information	= Info_Mod_Raeuber01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft die Arbeit?";
+	description	= "Jak wyglada praca?";
 };
 
 FUNC INT Info_Mod_Raeuber01_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Raeuber01_Hi_Condition()
 
 FUNC VOID Info_Mod_Raeuber01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber01_Hi_15_00"); //Wie läuft die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Hi_08_01"); //Beschissen. Hab noch nie so einen dummen Anführer gehabt.
+	AI_Output(hero, self, "Info_Mod_Raeuber01_Hi_15_00"); //Jak wyglada praca?
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Hi_08_01"); //Shitty. Nigdy wczesniej nie mial tak glupiego przywódcy.
 };
 
 INSTANCE Info_Mod_Raeuber01_Frauenkleider (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Raeuber01_Frauenkleider (C_INFO)
 	information	= Info_Mod_Raeuber01_Frauenkleider_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hälst du von Melvins Kleidern?";
+	description	= "Co sadzisz o strojach Melvina?";
 };
 
 FUNC INT Info_Mod_Raeuber01_Frauenkleider_Condition()
@@ -42,10 +42,10 @@ FUNC INT Info_Mod_Raeuber01_Frauenkleider_Condition()
 
 FUNC VOID Info_Mod_Raeuber01_Frauenkleider_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider_15_00"); //Was hälst du von Melvins Kleidern?
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider_08_01"); //Hab noch nie so was Dummes gesehen. Passt zu ihm.
-	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider_15_02"); //Hast du ihm das schon gesagt?
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider_08_03"); //Nee. Ist mir zu dumm.
+	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider_15_00"); //Co sadzisz o strojach Melvina?
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider_08_01"); //Nigdy nie widzialem nic tak glupiego. Pasuje do niego.
+	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider_15_02"); //Powiedziales mu to jeszcze?
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider_08_03"); //Nah. To jest zbyt zle.
 };
 
 INSTANCE Info_Mod_Raeuber01_Frauenkleider2 (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Raeuber01_Frauenkleider2 (C_INFO)
 	information	= Info_Mod_Raeuber01_Frauenkleider2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sagst du es ihm für 10 Goldmünzen?";
+	description	= "Czy powiesz mu o 10 zlotych monetach?";
 };
 
 FUNC INT Info_Mod_Raeuber01_Frauenkleider2_Condition()
@@ -71,8 +71,8 @@ FUNC INT Info_Mod_Raeuber01_Frauenkleider2_Condition()
 
 FUNC VOID Info_Mod_Raeuber01_Frauenkleider2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider2_15_00"); //Sagst du es ihm für 10 Goldmünzen?
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_01"); //Mach ich glatt.
+	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider2_15_00"); //Czy powiesz mu o 10 zlotych monetach?
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_01"); //Zajme sie tym.
 
 	AI_StandUP	(self);
 
@@ -82,7 +82,7 @@ FUNC VOID Info_Mod_Raeuber01_Frauenkleider2_Info()
 
 	AI_TurnToNpc	(self, Mod_7505_BDT_Melvin_REL);
 
-	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_02"); //Weißt du, wie bescheuert du in den Kleidern aussiehst?
+	AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_02"); //Wiesz jak glupi wygladasz w ubraniu?
 
 	Mod_REL_Frauenkleider01 = 1;
 
@@ -90,7 +90,7 @@ FUNC VOID Info_Mod_Raeuber01_Frauenkleider2_Info()
 	&& (Mod_REL_Frauenkleider02 == 1)
 	&& (Mod_REL_Frauenkleider03 == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Nun sollte Melvin weichgeklopft sein.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Teraz nalezy zmiekczyc Melvin.");
 	};
 
 	AI_StopProcessInfos	(self);
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Raeuber01_Frauenkleider3 (C_INFO)
 	information	= Info_Mod_Raeuber01_Frauenkleider3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Feilschen) Würdest du ihm das sagen?";
+	description	= "Czy móglbys mu to powiedziec?";
 };
 
 FUNC INT Info_Mod_Raeuber01_Frauenkleider3_Condition()
@@ -120,11 +120,11 @@ FUNC INT Info_Mod_Raeuber01_Frauenkleider3_Condition()
 
 FUNC VOID Info_Mod_Raeuber01_Frauenkleider3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider3_15_00"); //Würdest du ihm das sagen?
+	AI_Output(hero, self, "Info_Mod_Raeuber01_Frauenkleider3_15_00"); //Czy móglbys mu to powiedziec?
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider3_08_01"); //Joa, klar.
+		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider3_08_01"); //Oczywiscie.
 
 		AI_StandUP	(self);
 
@@ -132,7 +132,7 @@ FUNC VOID Info_Mod_Raeuber01_Frauenkleider3_Info()
 
 		AI_TurnToNpc	(self, Mod_7505_BDT_Melvin_REL);
 
-		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_02"); //Weißt du, wie bescheuert du in den Kleidern aussiehst?
+		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider2_08_02"); //Wiesz jak glupi wygladasz w ubraniu?
 
 		Mod_REL_Frauenkleider01 = 1;
 
@@ -142,12 +142,12 @@ FUNC VOID Info_Mod_Raeuber01_Frauenkleider3_Info()
 		&& (Mod_REL_Frauenkleider02 == 1)
 		&& (Mod_REL_Frauenkleider03 == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Nun sollte Melvin weichgeklopft sein.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_FRAUENKLEIDER, "Teraz nalezy zmiekczyc Melvin.");
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider3_08_02"); //Wenn du so ein Interesse daran hast, zahlst du doch sicher auch.
+		AI_Output(self, hero, "Info_Mod_Raeuber01_Frauenkleider3_08_02"); //Jesli masz takie zainteresowanie, jestem pewien, ze zaplacisz za to.
 	};
 };
 

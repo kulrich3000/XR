@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Port_Hi (C_INFO)
 	information	= Info_Mod_Port_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Port_Hi_Condition()
@@ -17,41 +17,41 @@ FUNC INT Info_Mod_Port_Hi_Condition()
 FUNC VOID Info_Mod_Port_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Port_Hi_01_01"); //(zittrig) Ich weiß nicht ... Kann ich dir trauen?
-	AI_Output(hero, self, "Info_Mod_Port_Hi_15_02"); //Du bist also Johannes Port?
-	AI_Output(self, hero, "Info_Mod_Port_Hi_01_03"); //Vielleicht ... (leiser) vielleicht ...
+	AI_Output(self, hero, "Info_Mod_Port_Hi_01_01"); //(wstrzasajace) Nie wiem...... Czy moge panu ufac?
+	AI_Output(hero, self, "Info_Mod_Port_Hi_15_02"); //Jestes Johannes Port?
+	AI_Output(self, hero, "Info_Mod_Port_Hi_01_03"); //Byc moze...... cichy) byc moze....
 
 	Moe_KnowsPort = 3;
 
 	Info_ClearChoices	(Info_Mod_Port_Hi);
 
-	Info_AddChoice	(Info_Mod_Port_Hi, "Ich werde dich töten!", Info_Mod_Port_Hi_B);
-	Info_AddChoice	(Info_Mod_Port_Hi, "Ich suche dich. Jeder sucht dich.", Info_Mod_Port_Hi_A);
+	Info_AddChoice	(Info_Mod_Port_Hi, "Zabije cie!", Info_Mod_Port_Hi_B);
+	Info_AddChoice	(Info_Mod_Port_Hi, "Szukam Ciebie. Kazdy szuka Ciebie.", Info_Mod_Port_Hi_A);
 };
 
 FUNC VOID Info_Mod_Port_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Port_Hi_B_15_00"); //Ich werde dich töten!
-	AI_Output(self, hero, "Info_Mod_Port_Hi_B_01_01"); //(flehend) Nein, bitte nicht!
+	AI_Output(hero, self, "Info_Mod_Port_Hi_B_15_00"); //Zabije cie!
+	AI_Output(self, hero, "Info_Mod_Port_Hi_B_01_01"); //Nie, prosze nie!
 
 	Info_ClearChoices	(Info_Mod_Port_Hi);
 
-	Info_AddChoice	(Info_Mod_Port_Hi, "Kleiner Scherz.", Info_Mod_Port_Hi_D);
-	Info_AddChoice	(Info_Mod_Port_Hi, "Doch. Du stehst meinem Reichtum im Weg.", Info_Mod_Port_Hi_C);
+	Info_AddChoice	(Info_Mod_Port_Hi, "Dziwie sie.", Info_Mod_Port_Hi_D);
+	Info_AddChoice	(Info_Mod_Port_Hi, "Tak, tak. Stajesz na drodze mojego bogactwa.", Info_Mod_Port_Hi_C);
 };
 
 FUNC VOID Info_Mod_Port_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Port_Hi_D_15_00"); //Kleiner Scherz.
+	AI_Output(hero, self, "Info_Mod_Port_Hi_D_15_00"); //Dziwie sie.
 
 	Info_ClearChoices	(Info_Mod_Port_Hi);
 
-	Info_AddChoice	(Info_Mod_Port_Hi, "Ich suche dich. Jeder sucht dich.", Info_Mod_Port_Hi_A);
+	Info_AddChoice	(Info_Mod_Port_Hi, "Szukam Ciebie. Kazdy szuka Ciebie.", Info_Mod_Port_Hi_A);
 };
 
 FUNC VOID Info_Mod_Port_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Port_Hi_C_15_00"); //Doch. Du stehst meinem Reichtum im Weg.
+	AI_Output(hero, self, "Info_Mod_Port_Hi_C_15_00"); //Tak, tak. Stajesz na drodze mojego bogactwa.
 
 	Info_ClearChoices	(Info_Mod_Port_Hi);
 
@@ -62,16 +62,16 @@ FUNC VOID Info_Mod_Port_Hi_C()
 
 FUNC VOID Info_Mod_Port_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_00"); //Ich suche dich. Jeder sucht dich.
-	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_01"); //Das habe ich gemerkt! Sie wollen mich umbringen!
-	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_02"); //Wer? Wieso?
-	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_03"); //Ich weiß nicht, wer. Aber seine Gründe kenne ich. Seine Gründe, die ihn veranlasst haben, das Schiff zu versenken.
-	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_04"); //Und was sind das für Gründe?
-	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_05"); //(unsicher) Das sage ich dir nicht. Wieso sollte ich dir trauen? Aber ... ich wäre dir für etwas Essbares sehr dankbar ...
-	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_06"); //Komm mit, ich bringe dich zu einem Bekannten, einem Händler. Dort bekommst du was zu essen.
-	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_07"); //Bin ich dort sicher?
-	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_08"); //Bestimmt.
-	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_09"); //Na gut, ich folge dir.
+	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_00"); //Szukam Ciebie. Kazdy szuka Ciebie.
+	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_01"); //Zauwazylem to! Próbuja mnie zabic!
+	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_02"); //Kto? Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_03"); //Nie wiem, kto. Znam jednak jego przyczyny. Powody, które sklonily go do zatopienia statku.
+	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_04"); //I jakie sa to powody?
+	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_05"); //Nie mówie ci tego. Dlaczego powinienem panu ufac? Ale.... Bylbym wdzieczny za cos jadalnego....
+	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_06"); //Przyjedz ze mna, zabiore Cie do znajomego, kupca. Dostaniesz tam cos do jedzenia.
+	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_07"); //Czy jestem tam bezpieczny?
+	AI_Output(hero, self, "Info_Mod_Port_Hi_A_15_08"); //Oczywiscie.
+	AI_Output(self, hero, "Info_Mod_Port_Hi_A_01_09"); //Dobrze, ja pójde za Toba.
 
 	Info_ClearChoices	(Info_Mod_Port_Hi);
 
@@ -81,7 +81,7 @@ FUNC VOID Info_Mod_Port_Hi_A()
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Johannes Port habe ich gefunden. Jetzt muss ich ihn nur noch zu Brahim bringen ...");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Znalazlem Johannes Port. Teraz musze tylko zabrac go do Brahima....");
 };
 
 INSTANCE Info_Mod_Port_EXIT (C_INFO)

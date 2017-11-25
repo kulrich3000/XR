@@ -4,7 +4,7 @@
 
 INSTANCE ItWr_XardasLetterToOpenBook_MIS		(C_Item)
 {
-	name 				=	"Xardas Brief";
+	name 				=	"list kardyski";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -29,18 +29,18 @@ func void Use_XardasLetterToOpenBook ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ich hatte vermutet, einer der Drachen im Minental sei die Quelle der bösen Macht."					);
-					Doc_PrintLines	( nDocID,  0, "Ich habe mich geirrt."					);
-					Doc_PrintLines	( nDocID,  0, "Wenn alles so gekommen ist, wie ich es vermute, "					);
-					Doc_PrintLines	( nDocID,  0, "wirst du jetzt nach den Hallen von Irdorath suchen. "					);
-					Doc_PrintLines	( nDocID,  0, "Das Buch, das du Pyrokar gegeben hast, enthält alle Hinweise, die du brauchst."					);
-					Doc_PrintLines	( nDocID,  0, "Mir hätte klar sein sollen, warum die Suchenden"					);
-					Doc_PrintLines	( nDocID,  0, " es in ihren Besitz bringen wollten."					);
-					Doc_PrintLines	( nDocID,  0, "Du mußt es dir wiederbeschaffen!"					);
-					Doc_PrintLines	( nDocID,  0, "Die Worte 'XARAK BENDARDO' werden es öffnen. Verrate sie niemandem!"					);
-					Doc_PrintLines	( nDocID,  0, "Ich werde mich nun wichtigeren Dingen widmen."					);
-					Doc_PrintLines	( nDocID,  0, "Ich kann dir bei deiner letzten Aufgabe nicht beistehen - nur du kannst es schaffen, die Quelle des Bösen zu bezwingen."					);
-					Doc_PrintLines	( nDocID,  0, "Wir werden uns wiedersehen! "					);
+					Doc_PrintLines	( nDocID,  0, "Podejrzewalem, ze jeden z smoków w Minental byl zródlem zlej mocy."					);
+					Doc_PrintLines	( nDocID,  0, "Bylem w bledzie."					);
+					Doc_PrintLines	( nDocID,  0, "Jesli wszystko przyszlo, jak podejrzewam, "					);
+					Doc_PrintLines	( nDocID,  0, "Wyszukaj teraz sale Irdorath. "					);
+					Doc_PrintLines	( nDocID,  0, "Ksiazka, która dales Pyrokar zawiera wszystkie potrzebne wskazówki."					);
+					Doc_PrintLines	( nDocID,  0, "Powinienem wiedziec, dlaczego tak sie stalo."					);
+					Doc_PrintLines	( nDocID,  0, " chcialby ja umiescic w ich posiadaniu."					);
+					Doc_PrintLines	( nDocID,  0, "Trzeba ja odzyskac!"					);
+					Doc_PrintLines	( nDocID,  0, "Otworzy go napis 'XARAK BENDARDO'. Nie mów nikomu!"					);
+					Doc_PrintLines	( nDocID,  0, "Teraz zamierzam skupic sie na wazniejszych sprawach."					);
+					Doc_PrintLines	( nDocID,  0, "Nie moge wam pomóc z waszym ostatnim zadaniem - tylko mozecie pokonac zródlo zla."					);
+					Doc_PrintLines	( nDocID,  0, "Spotkamy sie ponownie! "					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
@@ -49,7 +49,7 @@ func void Use_XardasLetterToOpenBook ()
 
 	if(MIS_Xardas_SCCanOpenIrdorathBook == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardas erklärte mir in seinem Brief, wie die Worte heißen, mit der sich das Buch DIE HALLEN VON IRDORATH öffnen läßt."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"W swoim liscie Xardas wyjasnil mi nazwe slów uzywanych do otwarcia ksiazki HALLS OF IRDORATH."); 
 	};
 
 	MIS_Xardas_SCCanOpenIrdorathBook  = TRUE;	//Joly:  Spieler kann nun das Buch im Kloster lesen und findet so die geheime Bibliothek!
@@ -62,7 +62,7 @@ func void Use_XardasLetterToOpenBook ()
 
 INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 {
-	name 				=	"Schlüssel" ;
+	name 				=	"klucz" ;
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -74,7 +74,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 	description			= 	name;
 	
-	TEXT[0]				= 	"aus dem Buch ´Die Hallen von Irdorath´";
+	TEXT[0]				= 	"z ksiazki Sale Irdorathowe?";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -84,7 +84,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 INSTANCE ItWr_HallsofIrdorath_Mis (C_ITEM) 
 {	
-	name 					=	"Die Hallen von Irdorath";
+	name 					=	"Hale Irdorathanu";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -117,7 +117,7 @@ FUNC VOID Use_HallsofIrdorath ()
 			Print	(PRINT_IrdorathBookHiddenKey);
 			ItWr_HallsofIrdorathIsOpen = TRUE;
 			
-			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Ich konnte Xardas Buch öffnen. Es befanden sich eine geheime Nachricht und ein seltsamer Schlüssel darin. Wer weiß, was ich da unten im Keller des Klosters noch so alles finden werde."); 
+			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Udalo mi sie otworzyc ksiazke Xardy. Byla w nim tajemnicza wiadomosc i dziwny klucz. Kto wie, co jeszcze znajde w podziemiach klasztoru."); 
 		}
 		else
 		{
@@ -135,7 +135,7 @@ FUNC VOID Use_HallsofIrdorath ()
 
 INSTANCE ItWr_HallsofIrdorath_Open_Mis (C_ITEM) 
 {	
-	name 					=	"Die Hallen von Irdorath";
+	name 					=	"Hale Irdorathanu";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -156,7 +156,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 {   	 
 	if (ItWr_SCReadsHallsofIrdorath == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Ich habe Xardas Buch gelesen. Es ist da von einer geheimen Bibliothek die Rede. Sie muß hier irgendwo im Keller des Klosters sein."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Czytalem ksiazke Xardy. Mówi sie o sekretnej bibliotece. Musi byc gdzies w piwnicy klasztoru."); 
 	};
 	
 	ItWr_SCReadsHallsofIrdorath = TRUE;
@@ -176,8 +176,8 @@ FUNC VOID Use_HallsofIrdorath_Open ()
  					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "...und so habe ich den Zugang zur Bibliothek hinter einer Geheimtür versteckt, um meine Aufzeichnungen über die Tempel Beliars zu schützen. ");
-					Doc_PrintLines	( nDocID,  0, "Hätten meine Glaubensbrüder von der Existenz dieser Aufzeichnungen gewußt, hätten diese verblendeten Narren sicherlich alles vernichtet.");		
+					Doc_PrintLines	( nDocID,  0, "... I tak ukrylem dostep do biblioteki za sekretnymi drzwiami, aby chronic moje zapisy swiatyn Beliara. ");
+					Doc_PrintLines	( nDocID,  0, "Gdyby moi koledzy wierzacy wiedzieli o istnieniu tych rejestrów, ci oszukani glupcy z pewnoscia zniszczyliby wszystko.");		
 					
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -185,15 +185,15 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 					Doc_PrintLine	( nDocID,  1, ""					);										
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Jetzt wissen sie nicht mehr, als dass es diese Tempel einmal gegeben hat."	);
+					Doc_PrintLines	( nDocID,  1, "Teraz nie wiedza wiecej niz to, ze te swiatynie istnialy raz."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Zur Sicherheit habe ich einige Diener zum Schutz der Bibliothek beschworen.");
+					Doc_PrintLines	( nDocID,  1, "Aby byc po bezpiecznej stronie, wezwalem niektórych pracowników do ochrony biblioteki.");
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Der Schlüssel öffnet die letzte Tür.");
+					Doc_PrintLines	( nDocID,  1, "Klawisz otwiera ostatnie drzwi.");
 					
 					Doc_Show		( nDocID );
 
@@ -205,7 +205,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 
 INSTANCE ItWr_XardasSeamapBook_Mis (C_ITEM) 
 {	
-	name 					=	"Verstaubtes Buch";
+	name 					=	"Ksiazka kuszaca";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -239,45 +239,45 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
  					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "...ich bin mir jetzt sicher, dass es sich bei diesem Bauwerk um die Hallen von Irdorath handelt. Sie befinden sich augenblicklich auf einer Insel nicht weit vor Khorinis Hafen. Beliars Interesse an den Erzminen wird immer offenkundiger...");
+					Doc_PrintLines	( nDocID,  0, "... Jestem teraz pewien, ze ten budynek jest sala Irdoratha. Obecnie jestes na wyspie niedaleko portu Khorini. Zainteresowanie Beliara kopalniami rudy staje sie coraz bardziej widoczne.... Wiecej");
 					Doc_PrintLines	( nDocID,  0, "");		
 	
 					if (hero.guild == GIL_PAL)
 					{
-						Doc_PrintLines	( nDocID,  0, "...je stärker sie sind desto eher scheinen sie es wert zu sein, ihm als Untote zu dienen. Ein solch bekehrter Paladin ist für einen Kämpfer nur schwer zu besiegen. Einer von ihnen ist mir in die Hände gefallen. Ich hoffe die anderen werden seine Anwesendheit hier unten nicht bemerken...");		
+						Doc_PrintLines	( nDocID,  0, "... Im silniejsi sa, tym szybciej wydaja sie godni sluzenia mu jako nieumarlym. Taki nawrócony paladyn jest trudny do pokonania przez bojownika. Jeden z nich wpadl w moje rece. Mam nadzieje, ze inni go tutaj nie zauwaza....");		
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...der bekehrte Paladin, scheint auf keinerlei Reize mehr zu reagieren. Ich habe seine Rüstung und seine restlichen Habseeligkeiten im hinteren Raum verstaut. Die Tür kann nur von innen geöffnet werden. Ich habe eine Teleportrune gebaut, um in den Raum zu gelangen. Die Anleitung dazu  habe ich im Almanach hinterlegt, so dass er Eine sie finden kann..."	);
+						Doc_PrintLines	( nDocID,  1, "... Konwertowany Paladin nie reaguje juz na jakiekolwiek bodzce. Przechowalem jego zbroje i inne rzeczy na zapleczu. Drzwi mozna otwierac tylko od wewnatrz. Zbudowalem teleport, aby dostac sie do pokoju. Umiescilem instrukcje w almanachu, aby mógl on znalezc jedna z nich...."	);
 					};
 					
 					if (hero.guild == GIL_KDF)
 					{
-						Doc_PrintLines	( nDocID,  0, "...die Zeichen sind eindeutig! Wenn der Eine kommt, wird er jede Hilfe brauchen, die wir ihm geben können, Beliar ist schon zu stark. Mir ist es gelungen einige sehr wertvolle Artefakte zu erwerben und werde sie für den Fall der Fälle hier unten aufbewahren. Ich gehe davon aus, das der erwählte aus unseren Reihe stammt und ");
+						Doc_PrintLines	( nDocID,  0, "... znaki sa wyrazne! Kiedy jeden przyjdzie, bedzie potrzebowal wszelkiej pomocy jaka mozemy mu udzielic, Beliar jest juz zbyt silny. Udalo mi sie zdobyc kilka bardzo cennych artefaktów i zatrzymam je na wypadek ponizszych przypadków. Zakladam, ze wybrany jest z naszego skladu. ");
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "habe ihm ein paar Anweisungen in den Almanach geschreiben."					);
+						Doc_PrintLines	( nDocID,  1, "Napisalem mu kilka instrukcji w almanachu."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...Ich bin mir nun sicher. Wir können das Schicksal nicht aufhalten. Sobalt Beliar sich stark genug fühlt, wird er sich erheben und nach der Herrschaft über die Welt greifen. Ich muss den Einen finden, sonst sind wir verloren."); 
+						Doc_PrintLines	( nDocID,  1, "... Jestem pewien, ze teraz. Nie mozemy zatrzymac przeznaczenia. Jak tylko Beliar poczuje sie wystarczajaco silny, podniesie sie i siegnie po panowanie swiata. Musze go znalezc, bo w przeciwnym razie zgubimy sie."); 
 					};
 					
 					if (hero.guild == GIL_DJG)
 					{
-						Doc_PrintLines	( nDocID,  0, "...es wird einen Krieg geben, einen Krieg um das Schicksal der Welt. Ich scheine der Einzige zu zu sein, der die Vorzeichen deuten kann. Um mich herum scheint sie jeder zu ignorieren. Es wird der Eine kommen und mit seinem Erscheinen hat der Krieg begonnen. Dieser Krieg ist so alt wie die Zeit, aber es scheint sich eine Entscheidung abzuzeichenen  ");
+						Doc_PrintLines	( nDocID,  0, "... bedzie wojna, wojna dla losu swiata. Wydaje mi sie, ze jestem jedynym, który potrafi odczytac znaki. Kazdy wokól mnie zdaje sie je ignorowac. Jeden przyjdzie i z jego wygladem wojna sie rozpoczela. Wojna ta jest tak stara jak czas, ale decyzja wydaje sie byc podjeta.  ");
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "und ich werde nicht tatenlos zusehen, wie Andere das Geschick der Welt in ihre Hände nehmen."					);
+						Doc_PrintLines	( nDocID,  1, "a ja nie bede stal bezczynnie i obserwowal, jak inni biora losy swiata w swoje rece."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...Ich habe die alten Schriften studiert und Anleitung gefunden wie man die sagenumwobenen Waffen der alten Drachenherren herstellen kann. Allerdings kann ich mir nicht vorstellen, wo man die Zutaten herbekommen soll. Zur Sicherheit habe ich das Rezept im Almanach niedergelegt, wer von uns kann schon sagen, was die Zukunft uns bringen mag, vielleicht ja sogar Drachen."); 
+						Doc_PrintLines	( nDocID,  1, "... Studiowalem starozytne skrypty i znalazlem instrukcje, jak wykonac legendarna bron starozytnych Smoczych Lordów. Nie wyobrazam sobie jednak, gdzie znalezc skladniki. Aby byc po bezpiecznej stronie, w almanachu podalem przepis, który z nas moze juz powiedziec, co przyniesie nam przyszlosc, byc moze nawet smoki."); 
 					};					
 					
 					Doc_Show		( nDocID );
@@ -291,7 +291,7 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 
 INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 {
-	name 				=	"Zerknüllter Brief";
+	name 				=	"Zapisany list";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -303,7 +303,7 @@ INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 	on_state[0]			=   UseItWr_UseLampIdiot_Mis;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"aus dem Buch ´Die Hallen von Irdorath´";
+	TEXT[0]				=	"z ksiazki Sale Irdorathowe?";
 };
 func void UseItWr_UseLampIdiot_Mis ()
 {   
@@ -320,8 +320,8 @@ func void UseItWr_UseLampIdiot_Mis ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "     Die Lampe bringt Licht "						);
-					Doc_PrintLine	(nDocID,  0, "     in die unteren Gefilde"						);
+					Doc_PrintLine	(nDocID,  0, "     Lampa swieci "						);
+					Doc_PrintLine	(nDocID,  0, "     na nizinach"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -345,7 +345,7 @@ func void UseItWr_UseLampIdiot_Mis ()
 
 INSTANCE ItWr_Seamap_Irdorath (C_Item)
 {	
-	name 					=	"Seekarte zur Insel von Irdorath";
+	name 					=	"Mapa morska do wyspy Irdorath.";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -385,7 +385,7 @@ FUNC VOID Use_Seamap_Irdorath ()
 	{
 		Log_CreateTopic (TOPIC_SHIP, LOG_MISSION);                                                                   
 	    B_SetTopicStatus(TOPIC_SHIP, LOG_RUNNING);                                                                 
-	    B_LogEntry (TOPIC_SHIP,"Wie es aussieht, muss ich diese seltsame Insel des Feindes erreichen. Doch dafür benötige ich erst einmal ein Schiff, eine Mannschaft und einen Kapitän.");
+	    B_LogEntry (TOPIC_SHIP,"Wyglada na to, ze musze dotrzec do tej dziwnej wyspy wroga. Ale przede wszystkim potrzebuje statku, zalogi i kapitana.");
 	};
 
 	MIS_SCKnowsWayToIrdorath  = TRUE;
@@ -398,7 +398,7 @@ FUNC VOID Use_Seamap_Irdorath ()
 
 INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 {
-	name 				=	"Schiffsbrief";
+	name 				=	"list przewozowy";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -411,7 +411,7 @@ INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[3]				=	"Ermächtigungsschreiben";
-	TEXT[4]				=   "für das Schiff der Paladine";
+	TEXT[4]				=   "w przypadku statku Paladynu";
 };
 func void UseITWr_ForgedShipLetter_MIS ()
 {   
@@ -430,15 +430,15 @@ func void UseITWr_ForgedShipLetter_MIS ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, " Diese Urkunde berechtigt seinen"					);
-					Doc_PrintLine	(nDocID,  0, " Besitzer, sich auf unbestimmte Zeit auf der"		);
-					Doc_PrintLine	(nDocID,  0, " königlichen Kriegsgaleree von Lord Hagen"		);
-					Doc_PrintLine	(nDocID,  0, " aufzuhalten oder das Schiff zu führen."			);
+					Doc_PrintLine	(nDocID,  0, " Dokument ten uprawnia jego posiadacza do"					);
+					Doc_PrintLine	(nDocID,  0, " wlasciciela, pozostajacego w nieskonczonosc na czas nieokreslony"		);
+					Doc_PrintLine	(nDocID,  0, " Królewska Galeria Wojny Królewskiej Hagen"		);
+					Doc_PrintLine	(nDocID,  0, " lub prowadzic statek."			);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     königliches Siegel"							);
+					Doc_PrintLine	(nDocID,  0, "     pieczec królewska"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -449,7 +449,7 @@ func void UseITWr_ForgedShipLetter_MIS ()
 
 INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 {
-	name 				=	"Turmschlüssel der Haupttorwache";
+	name 				=	"Klucze wiezy glównej oslony bramy glównej";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -465,7 +465,7 @@ INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 
 INSTANCE ITKE_SHIP_LEVELCHANGE_MIS(C_Item)	//Joly: führt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
 {
-	name 				=	"Kajütenschlüssel des Kapitäns";
+	name 				=	"Klucze do kabiny kapitana";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -496,10 +496,10 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Die Tränen Innos";
+	description		= 	"Lzy z Inno";
 	
-	TEXT[1]			= 	"Magiern des Feuers verleiht dieser Trank ungeahnte Kräfte.";
-	Text[2]			=   "Jeder andere wird den Tod finden.";
+	TEXT[1]			= 	"Magicy ognia daja temu eliksirowi nieomylna moc.";
+	Text[2]			=   "Kazdy inny znajdzie smierc.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -542,7 +542,7 @@ INSTANCE ItPo_Piratentrank (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Der Trank der Ausgewogenheit";
+	description		= 	"Eliksir równowagi";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -591,9 +591,9 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Die Tränen Innos";
-	TEXT[1]			= 	"Magiern des Feuers verleiht dieser Trank ungeahnte Kräfte.";
-	Text[2]			=   "Jeder andere wird den Tod finden.";
+	description		= 	"Lzy z Inno";
+	TEXT[1]			= 	"Magicy ognia daja temu eliksirowi nieomylna moc.";
+	Text[2]			=   "Kazdy inny znajdzie smierc.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -606,7 +606,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 
 INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 {
-	name 			=	"Innos göttliche Aura";
+	name 			=	"boska aura Inno";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -623,10 +623,10 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Innos göttlich Aura";
+	description		= "boska aura Inno";
 	
-	TEXT[2]			= "Dieses Amulett verleiht dem Träger ";
-	TEXT[3]			= "Schutz vor jeglichem Schaden.";
+	TEXT[2]			= "Ten amulet wypozycza uzytkownikowi ";
+	TEXT[3]			= "Ochrona przed uszkodzeniem.";
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
 	
@@ -678,7 +678,7 @@ INSTANCE ItPo_HealRandolph_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Heilung der Sucht";
+	description		= 	"Leczenie uzaleznienia";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;

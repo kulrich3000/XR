@@ -1,7 +1,7 @@
 INSTANCE Mod_7161_ASS_Novize_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Novize"; 
+	name 		= "nowicjusz"; 
 	guild 		= GIL_OUT;
 	id 			= 7161;
 	voice 		= 13;

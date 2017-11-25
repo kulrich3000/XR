@@ -1,7 +1,7 @@
 INSTANCE Mod_10043_Orc_Bollok_OM (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Bollok";
+	name							=	"ankieta";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10043;
 	voice							=	18;

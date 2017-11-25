@@ -1,6 +1,6 @@
 INSTANCE Dragon_11009_NW	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Dragon";
+	name	=	"smok";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

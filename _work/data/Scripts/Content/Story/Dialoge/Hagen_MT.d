@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Hagen_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Hagen_MT_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_00"); //Da ich nun vor dir stehe, darf ich annehmen, dass es nicht ganz so gut gelaufen ist?
-	AI_Output(hero, self, "Info_Mod_Hagen_MT_Hi_15_01"); //Du hier? Ahh, ein Teleportzauber, ich verstehe.
-	AI_Output(hero, self, "Info_Mod_Hagen_MT_Hi_15_02"); //Ja, Hymir war recht ungehalten über das Schreiben, genauso wie über die Tatsache, das Andre nicht mehr unter den Lebenden weilt.
-	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_03"); //Nun, mit so etwas hatte ich gerechnet.
-	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_04"); //Daher hoffe ich die Sache nun im persönlichen Gespräch mit Hymir klären zu können.
+	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_00"); //Teraz, gdy stoje przed toba, czy moge zalozyc, ze to nie poszlo równie dobrze?
+	AI_Output(hero, self, "Info_Mod_Hagen_MT_Hi_15_01"); //Ty tutaj? Ahh, zaklecie teleportu, rozumiem.
+	AI_Output(hero, self, "Info_Mod_Hagen_MT_Hi_15_02"); //Tak, Hymir byl raczej zdenerwowany pisarstwem, a takze faktem, ze Andre nie jest juz wsród zyjacych.
+	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_03"); //Cóz, tego wlasnie oczekiwalem.
+	AI_Output(self, hero, "Info_Mod_Hagen_MT_Hi_36_04"); //Dlatego mam nadzieje, ze bede mógl wyjasnic te sprawe w osobistej rozmowie z Hymirem.
 
 	AI_StopProcessInfos	(self);
 

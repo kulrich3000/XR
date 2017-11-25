@@ -15,12 +15,12 @@ FUNC INT Info_Mod_Argez_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_00"); //Schön, dich wieder zu sehen. Wir haben dich gesucht.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_01"); //Äh, ja, ich wollte nur mal kurz in den Tempel schauen, da fuhr auch schon die Wand runter.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_02"); //Hat 'ne ganze Weile gedauert, das Ding aufzukriegen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_03"); //Und dann bist du direkt in Ohnmacht gefallen.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_04"); //Genau, war wohl die schlechte Luft da drin.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_05"); //Hauptsache, es ist alles gutgegangen.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_00"); //Dobrze, abys znów cie zobaczyl. Szukalismy Ciebie.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_01"); //Uh, tak, ja po prostu chcialem spojrzec na swiatynie, wiec zjechalem w dól muru.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_02"); //To mi troche czasu, zeby to sie otworzylo.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_03"); //A potem zemdlales sie od razu.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Hi_15_04"); //Dokladnie musialo tam byc zle powietrze.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Hi_37_05"); //Jak dlugo wszystko przebiegalo dobrze.
 };
 
 INSTANCE Info_Mod_Argez_AW_Magiespur (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Argez_AW_Magiespur (C_INFO)
 	information	= Info_Mod_Argez_AW_Magiespur_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du etwas über magische Markierungen?";
+	description	= "Czy wiesz cos o magicznych znakach?";
 };
 
 FUNC INT Info_Mod_Argez_AW_Magiespur_Condition()
@@ -44,35 +44,35 @@ FUNC INT Info_Mod_Argez_AW_Magiespur_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Magiespur_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_00"); //Weißt du etwas über magische Markierungen?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_01"); //Du meinst ein Signum Magicum?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_02"); //Du überraschst mich immer wieder.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_03"); //Dabei handelt es sich um einen Zauber des Altes Volkes, der auf jedes beseelte Lebewesen angewendet werden kann.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_04"); //Der Zaubernde kann jederzeit spüren, wo sich sein Ziel befindet, dieses merkt ...
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_05"); //Genau. Aber bevor du jetzt eine Doktorarbeit improvisierst, könntest du mir helfen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_06"); //Es ist ungeheuer befriedigend, Wissen zu entdecken, wo man keines vermutet hat.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_07"); //Was genau willst du wissen?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_08"); //Es könnte sein, dass ich markiert bin. Dann würde ich diese Markierung gern loswerden.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_09"); //Hmm, lass mal sehen ...
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_00"); //Czy wiesz cos o magicznych znakach?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_01"); //Masz na mysli Signum Magicum?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_02"); //Zaskakuje mnie pan ciagle.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_03"); //Jest to zaklecie starozytnych ludzi, które mozna zastosowac do kazdej animowanej istoty.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_04"); //Czarnoksieznik moze w kazdej chwili poczuc, gdzie znajduje sie jego cel, dostrzega go.....
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_05"); //Dokladnie. Ale zanim teraz zaimprowizujesz prace doktorska, mozesz mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_06"); //Odkrywanie wiedzy tam, gdzie nigdy jej nie podejrzewales, jest ogromnie satysfakcjonujace.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_07"); //Co dokladnie chcesz wiedziec?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_08"); //Moze byc tak, ze jestem oznaczony. Wtedy chcialbym pozbyc sie tego markera.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_09"); //Hmm, patrzmy na....
 
 	// ToDo: Toller Zaubereffekt auf den Helden
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_10"); //In der Tat.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_11"); //Kann man die Markierung entfernen?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_12"); //Normalerweise entscheidet der Zaubernde darüber, wann er die Verbindung abbricht.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_13"); //Aber es gibt auch Möglichkeiten für das Opfer, die Wirkung zu durchbrechen.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_14"); //Der Ere... Mir kam die Idee, die Markierung nicht zu lösen, sondern nur umzulenken.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_15"); //Damit der Zaubernde nicht merkt, dass er ausgetrickst worden ist.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_16"); //Eine kluge Überlegung. Auch das sollte machbar sein.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_17"); //Bring mir einfach ein Tier, das das neue Ziel sein soll.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_18"); //Irgendein Tier?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_19"); //Ja. Für den besseren Transport solltest du es vorher schrumpfen.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_10"); //Tak, rzeczywiscie.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_11"); //Czy moge usunac oznakowanie?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_12"); //Zazwyczaj kólko rozdzielajace decyduje, kiedy zerwac polaczenie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_13"); //Istnieja jednak równiez sposoby, by ofiara mogla przelamac ten skutek.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_14"); //Erekcja Pomyslalem sobie, zeby nie poluzowac znacznika, ale przekierowac go.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_15"); //Aby czarodziej nie zauwazyl, ze zostal podstepem.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_16"); //Madra mysl. To równiez powinno byc wykonalne.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_17"); //Wystarczy tylko, ze otrzymam zwierze, które ma byc nowym celem.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_18"); //Jakis rodzaj zwierzecia?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur_37_19"); //Tak. Dla lepszego transportu nalezy go najpierw skurczyc.
 
 	B_GiveInvItems	(self, hero, ItSc_Shrink, 1);
 
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_20"); //Gut, bis später.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur_15_20"); //W porzadku, zobaczcie to pózniej.
 
-	B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Argez hat tatsächlich eine Markierung bei mir festgestellt. Er will sie aber umleiten können, wenn ich ihm ein geschrumpftes Tier bringe.");
+	B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Argez faktycznie znalazl na mnie znacznik. Ale on chce byc w stanie przemiescic je, jesli przyniose mu skurczone zwierze.");
 
 	Mod_Argez_Shrink = 1;
 	
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Argez_AW_Magiespur2 (C_INFO)
 	information	= Info_Mod_Argez_AW_Magiespur2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist das neue Ziel für die Markierung.";
+	description	= "Oto nowy cel znakowania.";
 };
 
 FUNC INT Info_Mod_Argez_AW_Magiespur2_Condition()
@@ -121,33 +121,33 @@ FUNC VOID Info_Mod_Argez_AW_Magiespur2_Info()
 {
 	AI_Teleport	(Mod_Argez_ShrinkMonster, "PC_HERO");
 
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_00"); //Hier ist das neue Ziel für die Markierung.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_00"); //Oto nowy cel znakowania.
 
 	if (Mod_Argez_ShrinkMonster.guild == GIL_TROLL)
 	|| (Mod_Argez_ShrinkMonster.guild == GIL_STONEGOLEM)
 	{
-		AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_01"); //(lacht) Der ist ja putzig.
+		AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_01"); //(smiech) Jest uroczy.
 	}
 	else if (Mod_Argez_ShrinkMonster.guild == GIL_MEATBUG)
 	{
-		AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_02"); //Wo denn? Ach, da unten!
+		AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_02"); //Gdzie? Och!
 	};
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_03"); //Perfekt, ich werde sofort beginnen.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_03"); //Doskonale, zaczynam od razu.
 
 	// ToDo: Effekt auf Held und Monster rennt weg
 
 	AI_Flee	(Mod_Argez_ShrinkMonster);
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_04"); //Das sollte es schon gewesen sein. Hoffentlich war das Tier noch nah genug, dass die Übertragung geklappt hat. Lass mal nachsehen.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_04"); //Tak wlasnie powinno byc. Miejmy nadzieje, ze zwierze bylo jeszcze wystarczajaco blisko, aby przenoszenie wirusa moglo dzialac. Pozwole sobie spojrzec.
 
 	// ToDo: Toller Zaubereffekt auf den Helden
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_05"); //Du bist frei. Die Markierung ist verschwunden.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_06"); //Ich fühle mich auch schon viel besser.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_07"); //Das ist nur der Placebo-Effekt. Aber von nun an sollte dich dein Widersacher nicht mehr ohne Weiteres aufspüren können.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_08"); //Das wäre großartig. Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_09"); //Keine Ursache.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_05"); //Jestes wolny. marker znikl.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_06"); //Teraz czuje sie duzo lepiej.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_07"); //To tylko efekt placebo. Ale od tej chwili twój przeciwnik nie powinien byc w stanie Cie odszukac.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Magiespur2_15_08"); //To byloby wspaniale. Dziekuje bardzo.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Magiespur2_37_09"); //Nie wspominajmy o tym.
 
 	B_SetTopicStatus	(TOPIC_MOD_MAGISCHEMARKIERUNG, LOG_SUCCESS);
 
@@ -174,19 +174,19 @@ FUNC INT Info_Mod_Argez_AW_Echsis_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Echsis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_00"); //Hast wohl deine Einladung verloren?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_01"); //Du schon wieder?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_02"); //Das Gleiche könnte ich dich fragen. Würde ich auch, wenn es von Bedeutung wäre.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_03"); //Was willst du überhaupt hier?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_04"); //Ich will in den Sumpf, aber wie du eindrucksvoll bewiesen hast, ist das nicht so einfach.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_05"); //Es wäre jedenfalls nicht gerade klug, durch das Tor zu brechen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_06"); //Klüger wäre es, einen Schwachpunkt an der Barriere zu nutzen, sagen wir mal ein Loch am Boden der Barriere, einige Meter rechts von den Wachen, das gerade groß genug ist, dass eine kleine Kreatur durchkriechen kann ... das wäre klug, ja.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_07"); //Vermutlich ...
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_08"); //Ja. Aber auch kluge Entscheidungen können mal schief gehen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_09"); //Dann gibt’s immer zwei Wege. Den des Kampfes und den der Diplomatie.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_10"); //Zum Ziel führen meist beide, der eine schneller, der andere dafür vielleicht effektiver ... aber ein kluger Mann wird wissen, was zu tun ist.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_11"); //Vermutlich.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_12"); //Ach ja, hier. Deine Einladung.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_00"); //Straciles zaproszenie, huh?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_01"); //Ponownie?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_02"); //Moglabym pana zapytac to samo. Gdybym to mialo znaczenie.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_03"); //Co i tak Pan tu robi?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_04"); //Chce isc na bagno, ale jak juz udowodniles, nie jest to latwe.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_05"); //W kazdym razie nie byloby madrze, aby przebic sie przez brame.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_06"); //Rozsadne byloby uzycie slabego punktu na szlabanie, powiedzmy dziure na dnie szlabanu, kilka metrów po prawej stronie strazników, który jest na tyle duzy, ze male stworzenie moze przeszukac...... to byloby madre, tak.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_07"); //Prawdopodobnie.....
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_08"); //Tak. Ale madre decyzje moga byc takze bledne.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_09"); //Wtedy zawsze sa dwa sposoby. Walka i dyplomacja.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_10"); //Zazwyczaj oba te cele prowadza do celu, jeden szybciej, drugi moze bardziej skuteczny.... Ale madry czlowiek bedzie wiedzial, co robic.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Echsis_15_11"); //Prawdopodobnie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Echsis_37_12"); //Oh, tak, tutaj. Zaproszenie.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfMeatbug, 1);
 
@@ -195,7 +195,7 @@ FUNC VOID Info_Mod_Argez_AW_Echsis_Info()
 	AI_Teleport	(self, "STRAND");
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Vor dem Sumpf habe ich Argez wieder getroffen. Er hat mir eine 'Verwandlung-Fleischwanze'-Spruchrolle gegeben und gab mir den Tipp, rechts von den Wachen durch ein Loch in der Barrikade zu kriechen. Auch hat er komische Andeutungen gemacht: 'Aber auch kluge Entscheidungen können mal schief gehen. Dann gibt’s immer zwei Wege. Den des Kampfes und den der Diplomatie. Zum Ziel führen meist beide, der eine schneller, der andere dafür vielleicht effektiver ...'");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Przed bagnem znów spotkalem Argeza. Dal mi zwój zaklecia 'bakcyla transformacyjnego' i kazal mi czolgac sie przez dziure w barykade po prawej stronie strazników. Zrobil równiez smieszne insynuacje:'Ale nawet madre decyzje moga pójsc nie tak. Wtedy zawsze sa dwa sposoby. Walka i dyplomacja. Zazwyczaj oba te cele prowadza do celu, jeden szybciej, drugi moze bardziej skuteczny.... '");
 };
 
 INSTANCE Info_Mod_Argez_AW_Rettung (C_INFO)
@@ -218,16 +218,16 @@ FUNC INT Info_Mod_Argez_AW_Rettung_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Rettung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_00"); //Danke. Ich komme jetzt allein zurecht.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Rettung_15_01"); //Du willst deine Ruhe?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_02"); //Ja, bitte. Es gibt da etwas, über das ich nachdenken muss.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_03"); //Nimm es mir nicht übel, es liegt nicht an dir.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_00"); //Dzieki. Moge sobie poradzic teraz.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Rettung_15_01"); //Chcesz spokoju?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_02"); //Tak, prosze. Jest cos, o czym musze pomyslec.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Rettung_37_03"); //To nie ty.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_ARGEZ, "Unsere Flucht aus der Unterwelt ist geglückt! Ich sollte schauen, ob Xardas etwas herausgefunden hat.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ, "Nasza ucieczka z podziemi odniosla sukces! Zobaczylabym, czy Xardas cos sie dowiedzial.");
 
 	B_GivePlayerXP	(1000);
 };
@@ -252,25 +252,25 @@ FUNC INT Info_Mod_Argez_AW_AtTempel_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_AtTempel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_00"); //(schwärmerisch) Wunderschön, nicht? So alt und doch so ... vertraut.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_01"); //(vorsichtig) Argez?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_02"); //Überrascht?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_03"); //Gelinde gesagt, ja. Wie kommst du hierher?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_04"); //Und wieso bist du vor mir angekommen?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_05"); //Ich hatte dich beinahe eingeholt, als du den Tempel betratst.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_06"); //Als ich hörte, wohin du unterwegs warst, schoss mir das Bild dieses Tempels in den Kopf, und ich eilte dir sofort hinterher.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_07"); //Wir können uns nicht um viele Minuten verfehlt haben. Vor dem Eingang fiel mir dann vieles wieder ein: die Sicherungen vor Räubern, die düsteren Fresken.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_08"); //Und die verborgene Seitentür, mit der man die Fallen umgehen kann.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_09"); //(brummt) Na klasse ...
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_10"); //Sie wird jetzt auch nicht mehr funktionieren, da ich ihren Mechanismus versehentlich beschädigt habe. Sie klemmte, und ich griff zu roher Gewalt.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_11"); //Aber immerhin habe ich dich gefunden. Ich hoffe, dass ich dir irgendwie mit meinem Wissen dienlich sein kann.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_12"); //Klar, wenn du mir sagst, wo ich hier eine Götterwaffe finde.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_13"); //Das weiß ich nicht. Ich weiß nur, dass sie nicht weit sein kann.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_14"); //Wenn du sie hast, würde ich sie mir gern näher anschauen.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_15"); //Ganz ohne Hintergedanken?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_16"); //Zumindest keine, vor denen du dich fürchten musst. Ich bin vor allem neugierig.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_00"); //Piekny, czyz nie? Tak stary, a jeszcze taki.... znajomy.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_01"); //(ostrozny) Argez?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_02"); //Zaskoczony?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_03"); //Co najmniej mówiac, tak. Jak sie tu dostales?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_04"); //A dlaczego przybyles przede mna?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_05"); //Prawie dogonilem sie z wami, kiedy wszedles do swiatyni.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_06"); //Kiedy dowiedzialem sie, dokad idziesz, obraz tej swiatyni zastrzelil mnie w glowe i pospieszylem zaraz za toba.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_07"); //Nie mozemy przegapic sie o wiele minut. Przed wejsciem zapamietalem wiele rzeczy: bezpieczniki przed rabusiami, ciemne freskowce.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_08"); //Ukryte drzwi boczne, które moga obslugiwac pulapki.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_09"); //(buzytowany) O, wielki, wielki......
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_10"); //To juz nie zadziala, bo przypadkowo uszkodzilem jego mechanizm. To sie utknelo, a ja uciekalem sie do brutalnej sily.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_11"); //Ale przynajmniej znalazlem cie. Mam nadzieje, ze w jakis sposób moge Wam sluzyc swoja wiedza.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_12"); //Pewnie, jesli powiesz mi, gdzie moge znalezc bron boska.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_13"); //Nie wiem o tym. Wiem tylko, ze nie moze byc daleko.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_14"); //Jesli masz je, to chcialbym sie blizej przyjrzec.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_AtTempel_15_15"); //Bez dodatkowych motywów?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_AtTempel_37_16"); //Przynajmniej nikt nie musi sie bac. Jestem glównie ciekawy.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Sobald ich die Götterwaffe aus dem Adanostempel gefunden habe, will Argez sie in Augenschein nehmen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Jak tylko odnajde bron boska w swiatyni Adano, Argez chce sie jej przyjrzec.");
 };
 
 INSTANCE Info_Mod_Argez_AW_Stab (C_INFO)
@@ -281,7 +281,7 @@ INSTANCE Info_Mod_Argez_AW_Stab (C_INFO)
 	information	= Info_Mod_Argez_AW_Stab_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin fündig geworden. Allerdings hat anscheinend die Zeit ihre Wirkung getan.";
+	description	= "Zrobilem znalezisko. Jednak najwyrazniej czas juz jednak wykonal swoja prace.";
 };
 
 FUNC INT Info_Mod_Argez_AW_Stab_Condition()
@@ -296,32 +296,32 @@ FUNC INT Info_Mod_Argez_AW_Stab_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Stab_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_00"); //Ich bin fündig geworden. Allerdings hat anscheinend die Zeit ihre Wirkung getan.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_01"); //Hmm ... gib mal her, das muss ich mir näher anschauen.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_00"); //Zrobilem znalezisko. Jednak najwyrazniej czas juz jednak wykonal swoja prace.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_01"); //Hmm..... Musze sie temu blizej przyjrzec.
 
 	Npc_RemoveInvItems (hero, ItMw_Adanos_Stab_Teil1, 1);
 	Npc_RemoveInvItems (hero, ItMw_Adanos_Stab_Teil2, 1);
 
-	B_ShowGivenThings	("Zwei Bruchstücke gegeben");
+	B_ShowGivenThings	("Dwa fragmenty");
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_02"); //Das sieht nicht gut aus, und damit meine ich noch nicht mal das morsche Holz und den offensichtlichen Bruch.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_03"); //Der Ort der Waffe, also ihre Spitze, war brüchig und ist zerbröckelt, als ich ihn betastet habe, und auch die restliche Klinge zeigt Risse.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_04"); //Damit hat sie einen Großteil ihrer alten Stärke eingebüßt.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_05"); //Kann man da nichts mit Magie machen?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_06"); //(überlegt) Ich kenne einen Heilzauber, der auch bei unbelebter Materie helfen könnte. Er ist kein Ersatz für eine heiße Esse, aber das Beste, was ich anbieten kann.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_07"); //Ich will nicht versprechen, dass die Waffe dadurch ihre ursprüngliche Effektivität wiedergewinnt, aber zumindest wäre sie wieder einsatzbereit.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_08"); //Dafür müssten aber die einzelnen Bruchstücke der Spitze an ihrem richtigen Platz liegen, was zu bewerkstelligen schwierig genug sein dürfte.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_09"); //Bleibt mir wohl nichts anderes, als mich daran zu versuchen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_10"); //Hier hast du die Fragmente. Ich glaube, ich habe sie alle gefunden.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_11"); //Du solltest sie also so zusammenlegen können, dass sie wieder ihre ursprüngliche Form erhalten.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_02"); //Nie wyglada to dobrze, a przez to nie mam na mysli mniej lub bardziej kruchego drewna i oczywistego pekniecia.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_03"); //Miejsce broni, czyli jej czubek, bylo kruche i kruszone po dotknieciu go, a pozostale ostrze równiez wykazuje pekniecia.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_04"); //Utracil wiekszosc swojej starej sily.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_05"); //Nie mozesz nic zrobic z magia?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_06"); //Znam zaklecie uzdrawiajace, które mogloby pomóc w nieozywionej materii. Nie jest to substytut goracego posilku, ale jest to najlepszy, jaki moge zaoferowac.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_07"); //Nie chce obiecywac, ze bron odzyska pierwotna skutecznosc, ale przynajmniej bedzie gotowa do ponownego uzycia.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_08"); //W tym celu jednak poszczególne fragmenty wierzcholka musialyby znajdowac sie we wlasciwym miejscu, co byloby na tyle trudne do osiagniecia.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab_15_09"); //Nie sadze, ze jedyne co moge zrobic to spróbowac na sobie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_10"); //Oto fragmenty. Mysle, ze znalazlem je wszystkie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_11"); //Powinienes miec mozliwosc polaczenia ich w taki sposób, aby zachowaly swój pierwotny ksztalt.
 
 	B_GiveInvItems	(self, hero, ItMi_ArgezBruchstuecke, 1);
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_12"); //Sag Bescheid, wenn du Fortschritte gemacht hast.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab_37_12"); //Prosze mi powiedziec, kiedy poczyniles postepy.
 
 	Log_CreateTopic	(TOPIC_MOD_ARGEZ_ORT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ARGEZ_ORT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ARGEZ_ORT, "Die Spitze der Klinge im Stab ist zerbrochen. Ich muss sie in die richtige Form bringen. Dazu sollte ich mir die Bruchstücke genauer ansehen, die Argez mit gegeben hat.");
+	B_LogEntry	(TOPIC_MOD_ARGEZ_ORT, "Koncówka ostrza w listwie jest polamana. Musze doprowadzic je do wlasciwego ksztaltu. Powinienem przyjrzec sie blizej fragmentom, które dal mi Argez.");
 };
 
 INSTANCE Info_Mod_Argez_AW_Stab2 (C_INFO)
@@ -332,7 +332,7 @@ INSTANCE Info_Mod_Argez_AW_Stab2 (C_INFO)
 	information	= Info_Mod_Argez_AW_Stab2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich scheine die richtige Anordnung gefunden zu haben...";
+	description	= "Wydaje mi sie, ze znalazlem wlasciwy porzadek....";
 };
 
 FUNC INT Info_Mod_Argez_AW_Stab2_Condition()
@@ -346,17 +346,17 @@ FUNC INT Info_Mod_Argez_AW_Stab2_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Stab2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_15_00"); //Ich scheine die richtige Anordnung gefunden zu haben.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_01"); //Das hilft mir weiter.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_15_00"); //Wydaje mi sie, ze znalazlem wlasciwy porzadek.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_01"); //To bardzo mi pomaga.
 
 	B_GiveInvItems	(hero, self, ItMi_ArgezBruchstuecke, 1);
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_02"); //Bevor ich nun die Fragmente zusammenfüge, will ich dir noch anbieten, den Stab umzufunktionieren.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_03"); //Ich könnte das stumpfe Ende mit einem Zauber belegen, sodass du deinem Gegner eine Mischung aus den zwei Schadensarten Holz und Magie verpassen würdest.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_04"); //Von der Klinge am anderen Ende würde ein solcher Zauber abprallen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_05"); //Welche der zwei Möglichkeiten spricht dich mehr an?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_02"); //Zanim zloze te fragmenty razem, chcialbym zaproponowac Panstwu zmiane personelu.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_03"); //Móglbym rzucic zaklecie na te tepa koncówke, zebys dal przeciwnikowi mieszanine dwóch rodzajów obrazen: drewna i magii.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_04"); //Z drugiej strony brzeszczotu taki zaklecie odbijalo sie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_37_05"); //Która z tych dwóch opcji bedzie dla Ciebie bardziej atrakcyjna?
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Argez hat mir den Stab Adanos' repariert. Wie er das nur immer anstellt.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Argez zatrudnil personel Adanosa. Jak zawsze.");
 
 	B_GivePlayerXP	(400);
 
@@ -364,13 +364,13 @@ FUNC VOID Info_Mod_Argez_AW_Stab2_Info()
 
 	Info_ClearChoices	(Info_Mod_Argez_AW_Stab2);
 
-	Info_AddChoice	(Info_Mod_Argez_AW_Stab2, "Ich wähle den magisch verstärkten Stab.", Info_Mod_Argez_AW_Stab2_Magie);
-	Info_AddChoice	(Info_Mod_Argez_AW_Stab2, "Ich nehme den Stab so, wie er ist.", Info_Mod_Argez_AW_Stab2_Kampf);
+	Info_AddChoice	(Info_Mod_Argez_AW_Stab2, "Wybieram magicznie wzmocniona rózdzke.", Info_Mod_Argez_AW_Stab2_Magie);
+	Info_AddChoice	(Info_Mod_Argez_AW_Stab2, "Bede bral personel tak, jak jest.", Info_Mod_Argez_AW_Stab2_Kampf);
 };
 
 FUNC VOID Info_Mod_Argez_AW_Stab2_Weiter()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_Kampf_37_00"); //So sei es. Nun tritt zurück.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab2_Kampf_37_00"); //I niech tak bedzie. Teraz zrezygnuj.
 
 	Info_ClearChoices	(Info_Mod_Argez_AW_Stab2);
 
@@ -380,7 +380,7 @@ FUNC VOID Info_Mod_Argez_AW_Stab2_Weiter()
 
 FUNC VOID Info_Mod_Argez_AW_Stab2_Kampf()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_Kampf_15_00"); //Ich nehme den Stab so, wie er ist.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_Kampf_15_00"); //Bede bral personel tak, jak jest.
 
 	Mod_Argez_Stab = 0;
 
@@ -389,7 +389,7 @@ FUNC VOID Info_Mod_Argez_AW_Stab2_Kampf()
 
 FUNC VOID Info_Mod_Argez_AW_Stab2_Magie()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_Magie_15_00"); //Ich wähle den magisch verstärkten Stab.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab2_Magie_15_00"); //Wybieram magicznie wzmocniona rózdzke.
 
 	Mod_Argez_Stab = 1;
 
@@ -416,7 +416,7 @@ FUNC INT Info_Mod_Argez_AW_Stab3_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Stab3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_00"); //Fast so gut wie erhofft. Aber immer noch besser als alles, was heutzutage geschmiedet wird.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_00"); //Prawie tak dobrze, jak oczekiwalem. Ale jeszcze lepiej niz cokolwiek dzisiaj kutego.
 
 	if (Mod_Argez_Stab == 1) {
 		B_GiveInvItems	(self, hero, ItMw_Adanos_Stab_Magieteil, 1);
@@ -424,9 +424,9 @@ FUNC VOID Info_Mod_Argez_AW_Stab3_Info()
 		B_GiveInvItems	(self, hero, ItMw_Adanos_Stab_Kampfteil, 1);
 	};
 
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab3_15_01"); //Danke. Damit bin ich hier im Tempel fertig.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_02"); //Ich ebenfalls. Lass uns diese Teleportplattform benutzen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_03"); //Man kann vom Alten Volk sagen, was man will, aber Bequemlichkeit wurde geschätzt.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab3_15_01"); //Dzieki. Robie to tutaj w swiatyni.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_02"); //Tak wiec jestem ja. Wykorzystajmy te platforme teleportowa.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab3_37_03"); //Mozna powiedziec, co chcecie od starych ludzi, ale komfort zostal doceniony.
 
 	AI_StopProcessInfos	(self);
 
@@ -454,23 +454,23 @@ FUNC INT Info_Mod_Argez_AW_Stab4_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_Stab4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_00"); //Ich spüre, dass du bald aufbrechen wirst zur letzten Schlacht.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_01"); //Na ja...
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_02"); //Ich respektiere deine Gründe dafür, dass du mich nicht fragst, ob ich mitkommen will.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_03"); //Argez...
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_04"); //Du brauchst dich wirklich nicht zu entschuldigen.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_05"); //Danke. Aber warum bist du heute so gut gelaunt? Das war vor einiger Zeit noch anders.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_06"); //Ich habe etwas Altes gefunden. Von mir.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_07"); //Das ist ja ... fantastisch!
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_08"); //In Xeres' Kerker, du erinnerst dich? Als dieser schreckliche Kobold, der uns eingeschlossen hatte, endlich verschwunden war, fand ich nahe den Gitterstäben einen stinkenden, zerfledderten Kodex, in dem etliche Seiten fehlten.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_09"); //Ich schlug ihn auf ... und erkannte meine eigene Handschrift! Ich hielt mein eigenes Tagebuch in der Hand, geschrieben vor unendlich langer Zeit!
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_10"); //Natürlich begann ich sofort zu lesen, aber was ich erfuhr, legte sich wie ein Grabstein auf mein Gemüt. Nachdem wir entkommen waren, konnte ich es kaum über mich bringen, weiterzulesen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_11"); //Ein Glück, dass ich es doch getan habe. Denn es erfüllt mich nun mit Stolz.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_12"); //Ich will dir eine Seite davon schenken, eine der letzten, eine Seite, die einiges, aber nicht alles erklären wird. Ich habe sie für dich übersetzt.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_00"); //Czuje, ze wkrótce wyjdziecie na ostatnia bitwe.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_01"); //....
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_02"); //Szanuje panskie powody, dla których nie poprosilem mnie o spotkanie z panem.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_03"); //argeza....
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_04"); //Naprawde nie musisz przepraszac.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_05"); //Dzieki. Ale dlaczego jestes dzis w tak dobrym nastroju? Jakis czas temu bylo inaczej.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_06"); //Znalazlem cos starego. Od mnie.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_Stab4_15_07"); //To po prostu...... fantastyczne!
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_08"); //W Xeres, pamietaj? Kiedy ten potworny goblin, który nas uwiezil, w koncu zniknal, znalazlem smierdzacy, przytlaczajacy kod w poblizu taktów taktów, w którym brakowalo wielu stron.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_09"); //Uderzylem go..... i rozpoznalem wlasne pismo odreczne! Prowadzilem swój wlasny pamietnik w reku, napisany dawno temu!
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_10"); //Oczywiscie od razu zaczalem czytac, ale to, czego sie nauczylem, lezalo na glowie jak nagrobek. Po ucieczce, nie moglem sie z trudem zabrac do czytania.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_11"); //Szczesliwie zrobilem. Bo teraz napawa mnie to duma.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_12"); //Chce przedstawic panstwu jedna z jego stron, jedna z ostatnich, strone, która duzo wyjasni, ale nie wszystko. Tlumaczylem je dla Ciebie.
 
 	B_GiveInvItems	(self, hero, ItWr_ArgezTagebuch1, 1);
 
-	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_13"); //Und damit lasse ich dich allein, damit du deinen Weg ohne mich gehen kannst. Aber sei unbesorgt: Ich werde dich nicht aus dem Blick verlieren.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_Stab4_37_13"); //I zostawie cie sam na sam z tym, abys mógl bez mnie isc wlasna droga. Ale nie martw sie, nie zapomne o Tobie.
 
 	AI_StopProcessInfos	(self);
 
@@ -486,18 +486,18 @@ INSTANCE Info_Mod_Argez_AW_Gast (C_INFO)
 	information	= Info_Mod_Argez_AW_Gast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du überhaupt mitgekommen?";
+	description	= "Dlaczego i tak przybyles?";
 };
 
 FUNC INT Info_Mod_Argez_AW_Gast_Condition()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		Info_Mod_Argez_AW_Gast.description = "Hast du Anhaltspunkte dafür, wer den Magiern die Ausrüstung gestohlen hat?";
+		Info_Mod_Argez_AW_Gast.description = "Czy masz zadnych przewodników po kims, kto ukradl sprzet magów?";
 	}
 	else
 	{
-		Info_Mod_Argez_AW_Gast.description = "Hast du etwas vom Diebstahl der Ausrüstung mitbekommen?";
+		Info_Mod_Argez_AW_Gast.description = "Czy zauwazyles cos na temat kradziezy sprzetu?";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_UngebeterBesucher))
@@ -511,14 +511,14 @@ FUNC VOID Info_Mod_Argez_AW_Gast_Info()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Argez_AW_Gast_15_00"); //Hast du Anhaltspunkte dafür, wer den Magiern die Ausrüstung gestohlen hat?
-		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_01"); //Nein, mir ist nichts aufgefallen.
-		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_02"); //Ich bin nur verwundert und erleichtert, dass noch niemand mich verdächtigt hat.
+		AI_Output(hero, self, "Info_Mod_Argez_AW_Gast_15_00"); //Czy masz zadnych przewodników po kims, kto ukradl sprzet magów?
+		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_01"); //Nie, nic nie zauwazylem.
+		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_02"); //Jestem po prostu zaskoczony i ulge, ze nikt nigdy nie podejrzewal mnie.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Argez_AW_Gast_15_03"); //Hast du etwas vom Diebstahl der Ausrüstung mitbekommen?
-		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_04"); //Welcher Diebstahl? Ich habe die ganze Nacht geschlafen.
+		AI_Output(hero, self, "Info_Mod_Argez_AW_Gast_15_03"); //Czy zauwazyles cos na temat kradziezy sprzetu?
+		AI_Output(self, hero, "Info_Mod_Argez_AW_Gast_37_04"); //Jaka kradziez? Spalem cala noc.
 	};
 };
 
@@ -530,7 +530,7 @@ INSTANCE Info_Mod_Argez_AW_WarumHier (C_INFO)
 	information	= Info_Mod_Argez_AW_WarumHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du überhaupt mitgekommen?";
+	description	= "Dlaczego i tak przybyles?";
 };
 
 FUNC INT Info_Mod_Argez_AW_WarumHier_Condition()
@@ -543,16 +543,16 @@ FUNC INT Info_Mod_Argez_AW_WarumHier_Condition()
 
 FUNC VOID Info_Mod_Argez_AW_WarumHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_00"); //Warum bist du überhaupt mitgekommen? Wolltest du nicht in den Sumpf?
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_01"); //Das Gefühl, das mich beim Anblick des Tempelinneren in Khorinis erfasst hat, ist hier noch stärker.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_02"); //Ich bin mir sicher, dass ich diese Gegend kenne.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_03"); //Sieht aber nicht so aus, als könnten das viele andere von sich behaupten.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_04"); //Richtig. Aber vielleicht gibt es hier irgendwo Menschen.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_05"); //Ich fühle mich einfach zu Hause.
-	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_06"); //Viel Glück bei der Suche.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_07"); //Danke. Was hast du jetzt vor?
-	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_08"); //Mal schauen. Zur Ruhe setzen kann ich mich noch nicht.
-	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_09"); //Ich verstehe. Wir sehen uns.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_00"); //Dlaczego i tak przybyles? Czy nie chcialabys pójsc na bagno?
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_01"); //Uczucie, które mnie ogarnelo, gdy zobaczylem wnetrze swiatyni w Khorinis, jest jeszcze silniejsze.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_02"); //Jestem pewien, ze znam ten obszar.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_03"); //Ale nie wyglada na to, ze wielu innych mogloby tak twierdzic.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_04"); //Prawo. Ale byc moze sa tu gdzies ludzie.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_05"); //Po prostu czuje sie jak w domu.
+	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_06"); //Zycze powodzenia w poszukiwaniu.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_07"); //Dzieki. Co zamierzasz teraz zrobic?
+	AI_Output(hero, self, "Info_Mod_Argez_AW_WarumHier_15_08"); //Przyjrzyjmy sie. Nie moge jeszcze przejsc na emeryture.
+	AI_Output(self, hero, "Info_Mod_Argez_AW_WarumHier_37_09"); //Rozumiem. Zobacze cie dookola.
 };
 
 INSTANCE Info_Mod_Argez_AW_EXIT (C_INFO)

@@ -58,7 +58,7 @@ func void B_LogEntry_NS (var string topic, var string entry)
 FUNC VOID B_SucceedTopic (var string topic)
 {
 	Erfolg_OpenQuests -= 1;
-	PrintScreen		(ConcatStrings("Quest erfüllt: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall_Green, 4);
+	PrintScreen		(ConcatStrings("Pytania kompletne: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall_Green, 4);
 
 	LogState_PosY += 3;
 
@@ -85,7 +85,7 @@ FUNC VOID B_SucceedTopic (var string topic)
 FUNC VOID B_StartTopic (var string topic)
 {
 	Erfolg_OpenQuests += 1;
-	PrintScreen		(ConcatStrings("Neue Quest: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall, 4);
+	PrintScreen		(ConcatStrings("Nowe pytanie: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall, 4);
 
 	LogState_PosY += 3;
 
@@ -99,7 +99,7 @@ FUNC VOID B_StartTopic (var string topic)
 FUNC VOID B_FailTopic (var string topic)
 {
 	Erfolg_OpenQuests -= 1;
-	PrintScreen		(ConcatStrings("Quest gescheitert: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall_Red, 4);
+	PrintScreen		(ConcatStrings("Pytania nie powiodly sie: ", topic), -1, YPOS_LOGENTRY+3+LogState_PosY, FONT_ScreenSmall_Red, 4);
 
 	LogState_PosY += 3;
 

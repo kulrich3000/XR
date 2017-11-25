@@ -15,14 +15,14 @@ FUNC INT Info_Mod_Shivar_Eisgebiet_Condition()
 
 FUNC VOID Info_Mod_Shivar_Eisgebiet_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_00"); //Was? Dich hier anzutreffen hätte ich nicht erwartet.
-	AI_Output(hero, self, "Info_Mod_Shivar_Eisgebiet_15_01"); //Was geht hier vor?
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_02"); //Ich bereite mit Kreaturen Beliars den Angriff auf die Dämonen des Magiers Xeres vor, die sich nicht weit von hier gesammelt haben ...
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_03"); //Nun, mit deinem Eintreffen erhöht sich unsere Zahl und Schlagkraft.
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_04"); //Wir können jede Hilfe gebrauchen, denn der Büffeldämon, der die Kreaturen anführt, ist mir fast ebenbürtig.
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_05"); //Und zu dem kamen mir Gerüchte zu Ohren, dass kein Dämon in der Lage sei, ihn zu bannen.
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_06"); //Nun, das werden wir jetzt auf die Probe stellen.
-	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_07"); //(zu seinen Kreaturen) Macht euch kampfbereit, Kreaturen Beliars. Jetzt ist der Zeitpunkt loszuschlagen und die Verräter zu strafen. Für Beliar!
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_00"); //Co? Nie spodziewalem sie, ze tu Cie nie odnajde.
+	AI_Output(hero, self, "Info_Mod_Shivar_Eisgebiet_15_01"); //Co sie tu dzieje?
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_02"); //Przygotowuje wraz z Beliarsami atak na demony magika Xeres' a, który zgromadzil sie niedaleko stad......
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_03"); //Cóz, Twój przyjazd zwieksza nasza liczbe i sile przebicia.
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_04"); //Mozemy wykorzystac wszelka mozliwa pomoc, poniewaz bawól demon, który prowadzi stworzenia jest niemal na równi ze mna.
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_05"); //I slyszalem pogloski, ze zaden demon nie byl w stanie go wypedzic.
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_06"); //No cóz, my to teraz poddalismy próbie.
+	AI_Output(self, hero, "Info_Mod_Shivar_Eisgebiet_20_07"); //Przygotuj sie do walki, stworzen Beliarów. Teraz nadszedl czas na strajk i ukaranie zdrajców. Dla Beliara!
 
 	AI_StopProcessInfos	(self);
 
@@ -58,16 +58,16 @@ FUNC INT Info_Mod_Shivar_MahishaDead_Condition()
 
 FUNC VOID Info_Mod_Shivar_MahishaDead_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_00"); //Es ist vollbracht und die Feinde zerschmettert. Welch Wohltat, huahaha ...
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_01"); //Was mich aber verwundert ist die Tatsache, dass seine Dämonenaura erst durch dein Einwirken nun vollständig zu erlischen beginnt.
-	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_02"); //Tja, nun ...
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_03"); //Was bei Beliar ...
-	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_04"); //(zu sich selbst) Ohh, verdammt, nicht mehr genug Dämonenaura ...
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_05"); //(entsetzt) Du ... du bist ja gar kein Dämon, nur Täuschung.
-	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_06"); //Ähhm, es war notwendig ...
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_07"); //(unterbricht) Schweig! (überlegt) Nun, also daher vermochtest nur du Mahisha den Todesstoß zu versetzen.
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_08"); //(zum Helden) Nun, ich bin bereit dir deinen Frevel zu verzeihen ...
-	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_09"); //Und nun ... geh. Zu viel Zeit will ich mit euch gewöhnlichen Sterblichen auch nicht zubringen. Beliar sei mit dir.
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_00"); //To jest skonczone i wrogowie sa zmiazdzeni. Cóz za blogoslawienstwo, huahahahahahahahahaha....
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_01"); //Zaskakuje mnie jednak fakt, ze jego aura demoniczna zaczyna sie calkowicie wybuchac dopiero po waszym wplywie.
+	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_02"); //No cóz, no cóz....
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_03"); //A co z Beliarem.....
+	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_04"); //Och, przepraszam, nie dosc demonicznej aury....
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_05"); //Ty....... w ogóle nie jestes demonem, to tylko oszustwo.
+	AI_Output(hero, self, "Info_Mod_Shivar_MahishaDead_15_06"); //Um, bylo to konieczne....
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_07"); //(przerwania) Wylacza sie! Cóz, tylko dlatego udalo sie zabic Mahisze.
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_08"); //(do bohatera) No cóz, jestem gotów przebaczyc wam swoje wykroczenie....
+	AI_Output(self, hero, "Info_Mod_Shivar_MahishaDead_20_09"); //A teraz..... wyjezdzac Nie chce spedzac z toba zbyt wiele czasu dla zwyklych smiertelników. Beliar badzcie z wami.
 
 	B_GivePlayerXP	(500);
 

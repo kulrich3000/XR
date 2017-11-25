@@ -1,7 +1,7 @@
 instance Mod_7353_VMG_Per_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Per";
+	name 		= "Performance";
 	guild 		= GIL_out;
 	id 			= 7353;
 	voice 		= 13;

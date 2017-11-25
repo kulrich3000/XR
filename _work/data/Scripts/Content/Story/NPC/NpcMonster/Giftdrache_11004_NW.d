@@ -1,6 +1,6 @@
 INSTANCE Giftdrache_11004_NW	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Giftdrache";
+	name	=	"trucizna smok";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

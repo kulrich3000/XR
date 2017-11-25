@@ -1,7 +1,7 @@
 INSTANCE Mod_963_PIR_Malcom_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Malcom";
+	name 		= "malkom";
 	guild 		= GIL_OUT;
 	id 			= 963;
 	voice 		= 30;

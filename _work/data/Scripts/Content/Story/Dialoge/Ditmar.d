@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ditmar_Hi (C_INFO)
 	information	= Info_Mod_Ditmar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum ist es hier so ruhig?";
+	description	= "Dlaczego wokól nas jest tak cicho?";
 };
 
 FUNC INT Info_Mod_Ditmar_Hi_Condition()
@@ -16,55 +16,55 @@ FUNC INT Info_Mod_Ditmar_Hi_Condition()
 
 FUNC VOID Info_Mod_Ditmar_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_00"); //Warum ist es hier so ruhig? Sollte es in Gasthäusern nicht Lärm geben?
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_01"); //(gedämpft) Schau doch mal zu dem Tisch da vorn. Da sitzen die drei Gründe dafür, dass hier keiner mehr was sagen mag.
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_02"); //Ein ... etwas ungewohntes Bild.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_03"); //Du sagst es.
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_04"); //Wie konnte das bloß geschehen?
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_05"); //(verzweifelt) Weiß ich doch nicht! Die marschieren hier einfach ein wie die Orks in Myrtana und bestehen darauf, dass sie sich hier aufhalten dürfen.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_06"); //Seitdem können meine Gäste keine normalen Stammtischgespräche mehr führen, weil die Weiber alles mithören.
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_00"); //Dlaczego wokól nas jest tak cicho? Czy w tawernach nie powinno byc halasu?
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_01"); //Spójrzcie na tamta tablice. Sa trzy powody, dla których nikt tutaj nie chce nic powiedziec.
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_02"); //A... nieco nietypowy obraz.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_03"); //Mówisz to.
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_15_04"); //Jak moglo do tego dojsc?
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_05"); //Nie wiem! Wchodza tu po prostu jak Orki w Myrtanie i nalegaja, aby pozwolono im tu zostac.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_26_06"); //Od tego czasu moi goscie nie moga juz odbywac regularnych spotkan, poniewaz kobiety sluchaja wszystkiego.
 
 	Info_ClearChoices	(Info_Mod_Ditmar_Hi);
 
-	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Ruft mich, wenn es schwerwiegendere Probleme gibt.", Info_Mod_Ditmar_Hi_C);
-	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Na und? Die Frauen sind vollkommen im Recht.", Info_Mod_Ditmar_Hi_B);
-	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Ich verstehe das Problem.", Info_Mod_Ditmar_Hi_A);
+	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Zadzwon do mnie, jesli pojawia sie powazniejsze problemy.", Info_Mod_Ditmar_Hi_C);
+	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Co wiec? Kobiety maja calkowita racje.", Info_Mod_Ditmar_Hi_B);
+	Info_AddChoice	(Info_Mod_Ditmar_Hi, "Rozumiem problem.", Info_Mod_Ditmar_Hi_A);
 };
 
 FUNC VOID Info_Mod_Ditmar_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_C_15_00"); //Ruft mich, wenn es schwerwiegendere Probleme gibt.
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_C_15_00"); //Zadzwon do mnie, jesli pojawia sie powazniejsze problemy.
 
 	Info_ClearChoices	(Info_Mod_Ditmar_Hi);
 };
 
 FUNC VOID Info_Mod_Ditmar_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_D_15_00"); //Ich schau mal.
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_D_15_00"); //Zobacze.
 
 	Mod_Kneipe_Ditmar = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_DITMAR_DICKELUFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DITMAR_DICKELUFT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Drei Frauen im gesetzten Alter haben es sich in den Kopf gesetzt, ihre Tage im Gasthaus zu verbringen. Dem Wirt passt das allerdings gar nicht, weil kein Platz mehr für seine Stammtischgespräche bleibt. Ich soll eine Lösung finden, um die drei zu verscheuchen.");
+	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Trzy kobiety w wieku uspokojenia postawily sobie za cel spedzenie dni w karczmie. Gospodarzowi nie podoba sie to jednak wcale, poniewaz nie ma miejsca na spotkania z kolegami. Mam znalezc rozwiazanie, aby odstraszyc trzy z nich.");
 
 	Info_ClearChoices	(Info_Mod_Ditmar_Hi);
 };
 
 FUNC VOID Info_Mod_Ditmar_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_B_15_00"); //Na und? Die Frauen sind vollkommen im Recht.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_B_26_01"); //Ja, schon, deswegen habe ich ja auch nur versucht, sie durch Bitten zum Gehen zu bewegen. Aber fruchtlos, wie du siehst.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_B_26_02"); //Vielleicht findest du ja einen Weg, sie von hier zu vertreiben ... es soll auch nicht zu deinem Schaden sein!
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_B_15_00"); //Co wiec? Kobiety maja calkowita racje.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_B_26_01"); //Tak, owszem, dlatego wlasnie próbowalem ich zmusic do odejscia, proszac o opuszczenie. Ale jak widac, bezowocne.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_B_26_02"); //Byc moze znajdziesz sposób, aby ich stad odjechac..... nie powinno to byc szkodliwe równiez dla Ciebie!
 
 	Info_Mod_Ditmar_Hi_D();
 };
 
 FUNC VOID Info_Mod_Ditmar_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_A_15_00"); //Ich verstehe das Problem.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_A_26_01"); //Jemand muss sie von hier vertreiben ... alles Bitten hat nichts geholfen.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_A_26_02"); //Wenn es dir gelingt, soll es dein Schaden nicht sein!
+	AI_Output(hero, self, "Info_Mod_Ditmar_Hi_A_15_00"); //Rozumiem problem.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_A_26_01"); //Ktos musi ich stad wyprowadzic.... wszystkie petycje nie pomogly.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Hi_A_26_02"); //Jesli sie uda, to nie bedzie to twoja szkoda!
 
 	Info_Mod_Ditmar_Hi_D();
 };
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Ditmar_DickeLuft (C_INFO)
 	information	= Info_Mod_Ditmar_DickeLuft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ich höre, ist das Leben zurückgekehrt.";
+	description	= "Slysze, jak powrócilo zycie.";
 };
 
 FUNC INT Info_Mod_Ditmar_DickeLuft_Condition()
@@ -90,9 +90,9 @@ FUNC INT Info_Mod_Ditmar_DickeLuft_Condition()
 
 FUNC VOID Info_Mod_Ditmar_DickeLuft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_DickeLuft_15_00"); //Wie ich höre, ist das Leben zurückgekehrt.
-	AI_Output(self, hero, "Info_Mod_Ditmar_DickeLuft_26_01"); //Du sagst es! Gute Gäste waren sie ja, die drei. Aber Frauen in der Wirtschaft? Es wird noch Jahrhunderte dauern, bis das normal wird.
-	AI_Output(self, hero, "Info_Mod_Ditmar_DickeLuft_26_02"); //Lass uns auf deine Rettung anstoßen!
+	AI_Output(hero, self, "Info_Mod_Ditmar_DickeLuft_15_00"); //Slysze, jak powrócilo zycie.
+	AI_Output(self, hero, "Info_Mod_Ditmar_DickeLuft_26_01"); //Powiedziales to! Byli dobrymi goscmi, ich trójka. Ale kobiety w gospodarce? Aby stalo sie to normalne, zajmie to wiele wieków.
+	AI_Output(self, hero, "Info_Mod_Ditmar_DickeLuft_26_02"); //Napójmy sie do zbawienia!
 	
 	CreateInvItems(self, ItFo_Beer_Khorata, 2);
 	B_GiveInvItems(self, hero, ItFo_Beer_Khorata, 1);
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Ditmar_DeinLaden (C_INFO)
 	information	= Info_Mod_Ditmar_DeinLaden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist das hier dein Laden?";
+	description	= "Czy to jest twoje miejsce?";
 };
 
 FUNC INT Info_Mod_Ditmar_DeinLaden_Condition()
@@ -124,9 +124,9 @@ FUNC INT Info_Mod_Ditmar_DeinLaden_Condition()
 
 FUNC VOID Info_Mod_Ditmar_DeinLaden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ditmar_DeinLaden_15_00"); //Ist das hier dein Laden?
-	AI_Output(self, hero, "Info_Mod_Ditmar_DeinLaden_26_01"); //(geübt) Jawoll. Ein echter Familienbetrieb.
-	AI_Output(self, hero, "Info_Mod_Ditmar_DeinLaden_26_02"); //Was zu trinken gibt es bei meiner Tochter, nur meine Frau gibt's nicht mehr, Adanos habe sie selig.
+	AI_Output(hero, self, "Info_Mod_Ditmar_DeinLaden_15_00"); //Czy to jest twoje miejsce?
+	AI_Output(self, hero, "Info_Mod_Ditmar_DeinLaden_26_01"); //(kwalifikowane) Tak, tak. Prawdziwe rodzinne przedsiebiorstwo.
+	AI_Output(self, hero, "Info_Mod_Ditmar_DeinLaden_26_02"); //Moja córka ma cos do picia, tylko moja zona juz nie zyje, Adanos ma swoje blogoslawienstwo.
 };
 
 INSTANCE Info_Mod_Ditmar_Geruechte (C_INFO)
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Ditmar_Geruechte (C_INFO)
 	information	= Info_Mod_Ditmar_Geruechte_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was hast du an Gerüchten anzubieten?";
+	description	= "Co masz do zaoferowania w pogloskach?";
 };
 
 FUNC INT Info_Mod_Ditmar_Geruechte_Condition()
@@ -153,32 +153,32 @@ FUNC VOID Info_Mod_Ditmar_Geruechte_Info()
 	var int didicounter;
 	didicounter = 0;
 
-	AI_Output(hero, self, "Info_Mod_Ditmar_Geruechte_15_00"); //Was hast du an Gerüchten anzubieten?
+	AI_Output(hero, self, "Info_Mod_Ditmar_Geruechte_15_00"); //Co masz do zaoferowania w pogloskach?
 
 	if (Mod_Jim_Schutz < 2)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Endres_Hi))
 	{
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_01"); //Auf dem Friedhof nahe dem Pass zu den Hofstaatlern soll es angeblich spuken.
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_02"); //Mehrere Buddler wollen von dort auf dem Heimweg markerschütternde Geräusche gehört haben.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_01"); //Mówi sie, ze straszyc cmentarz w poblizu przeleczy do Hofstaatlera.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_02"); //Kilku Buddlerów chcialo uslyszec stamtad w drodze do domu, aby uslyszec dzwiek krwiopijnych dzwonów.
 
 		didicounter += 1;
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Anna_Hi))
 	{
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_03"); //Maria wurde angeblich schon wieder beim Hexen erwischt.
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_04"); //Wenn du mich fragst, ist es nur eine Frage der Zeit, bis sie endlich verbrannt wird.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_03"); //Maria zostala podobno ponownie zlapana na czarownicy.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_04"); //Jesli mnie zapytacie, to tylko kwestia czasu, zanim zostanie ona w koncu spalona.
 
 		didicounter += 1;
 	};
 	if (Npc_KnowsInfo(hero, Info_Mod_Theodorus_Unruhen4))
 	{
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_05"); //Theodorus macht sich nicht gerade beliebt bei den Leuten. An seiner Stelle wäre ich vorsichtiger.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_05"); //Teodor nie do konca cieszy sie popularnoscia wsród ludzi. Gdybym byl nim, bylbym bardziej ostrozny.
 
 		didicounter += 1;
 	};
 	if (didicounter == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_06"); //Es passiert in Khorata so viel Komisches, aber was Besonderes war in letzter Zeit nicht dabei.
+		AI_Output(self, hero, "Info_Mod_Ditmar_Geruechte_26_06"); //W Khoracie dzieje sie tak wiele dziwnych rzeczy, ale ostatnio nie bylo tam czegos wyjatkowego.
 	};
 };
 
@@ -202,8 +202,8 @@ FUNC INT Info_Mod_Ditmar_Buerger_Condition()
 
 FUNC VOID Info_Mod_Ditmar_Buerger_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_00"); //Jeder hat's schon mitbekommen, dass du ab heute zu uns gehörst.
-	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_01"); //Das will begossen werden!
+	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_00"); //Kazdy wie, ze jestes z nami od dzisiaj.
+	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_01"); //To chce sie podlewac!
 
 	CreateInvItems	(self, ItFo_Beer, 1);
 	CreateInvItems	(hero, ItFo_Beer, 1);
@@ -211,7 +211,7 @@ FUNC VOID Info_Mod_Ditmar_Buerger_Info()
 	B_UseItem	(self, ItFo_Beer);
 	B_UseItem	(hero, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_02"); //Viel Spaß hier! Und Spaß kannst du haben. (augenzwinkernd) Nur nicht mit meiner Salmey, verstanden?
+	AI_Output(self, hero, "Info_Mod_Ditmar_Buerger_26_02"); //Baw sie tutaj! I mozesz sie dobrze bawic. Po prostu nie z moim Salmejem, prawda?
 };
 
 INSTANCE Info_Mod_Ditmar_Pickpocket (C_INFO)

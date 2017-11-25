@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Fleischfly(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Fleischfliege";
+	name							=	"mucha";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FLEISCHFLY;
 	level							=	6;
@@ -58,7 +58,7 @@ PROTOTYPE Mst_Default_Fleischfly(C_Npc)
 PROTOTYPE Mst_Default_YFleischfly(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Kleine Fleischfliege";
+	name							=	"Mala mucha";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FLEISCHFLY;
 	level							=	3;

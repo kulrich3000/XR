@@ -1,7 +1,7 @@
 instance Mod_7408_OUT_Burl_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Burl"; 
+	name 		= "burga"; 
 	guild 		= GIL_OUT;
 	id 			= 7408;
 	voice 		= 8;

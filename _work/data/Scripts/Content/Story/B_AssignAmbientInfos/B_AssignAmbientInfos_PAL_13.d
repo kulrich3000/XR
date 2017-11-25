@@ -17,7 +17,7 @@ FUNC INT Info_Mod_PAL_13_EXIT_Condition()
 
 FUNC VOID Info_Mod_PAL_13_EXIT_Info()
 {	
-	AI_Output(self, hero, "Info_Mod_PAL_13_EXIT_13_00"); //Für Innos!
+	AI_Output(self, hero, "Info_Mod_PAL_13_EXIT_13_00"); //Dla Innosów!
 	AI_StopProcessInfos	(self);
 };
 
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_PAL_13_Trank(C_INFO)
 	condition	= Info_Mod_PAL_13_Trank_Condition;
 	information	= Info_Mod_PAL_13_Trank_Info;
 	permanent	= TRUE;
-	description = "Hier hast du einen Trank.";
+	description = "Oto eliksir.";
 };                       
 
 FUNC INT Info_Mod_PAL_13_Trank_Condition()
@@ -46,14 +46,14 @@ FUNC INT Info_Mod_PAL_13_Trank_Condition()
 
 FUNC VOID Info_Mod_PAL_13_Trank_Info()
 {	
-	AI_Output (hero, self, "Info_Mod_PAL_13_Trank_15_00"); //Hier hast du einen Trank.
+	AI_Output (hero, self, "Info_Mod_PAL_13_Trank_15_00"); //Oto eliksir.
 
 	B_GiveInvItems	(hero, self, ItPo_Health_02, 1);
 	AI_UseItem	(self, ItPo_Health_02);
 
 	Mod_FM_TrankCounter_Health += 1;
 
-	AI_Output (self, hero, "Info_Mod_PAL_13_Trank_13_01"); //Danke.
+	AI_Output (self, hero, "Info_Mod_PAL_13_Trank_13_01"); //Dzieki.
 
 	self.aivar[AIV_TrankBekommen] = TRUE;
 };

@@ -1,7 +1,7 @@
 instance Mod_7286_HS_Eremit_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Königlicher Eremit"; 
+	name 		= "Royal Hermit"; 
 	guild 		= GIL_OUT;
 	id 			= 7286;
 	voice 		= 8;

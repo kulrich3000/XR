@@ -1,7 +1,7 @@
 instance Mod_7399_DMR_Daemonenritter_OM (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter"; 
+	name 		= "demonicy"; 
 	guild 		= GIL_KDF;
 	id 			= 7399;
 	voice 		= 13;

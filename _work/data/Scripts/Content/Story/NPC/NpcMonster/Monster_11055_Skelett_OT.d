@@ -1,7 +1,7 @@
 INSTANCE Monster_11055_Skelett_OT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Xardas' Skelett - Arbeiter";	
+	name 		= "szkielet kardaski - pracownik";	
 	guild							=	GIL_DMT;
 	level							=	20;
 	flags = 2;

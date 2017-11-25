@@ -18,18 +18,18 @@ FUNC INT Info_Mod_HofstaatKoenig_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_00"); //Wer ist er, der er unserem königlichen Ritter von und zu Raufbold gewachsen ist?
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_01"); //Ich bin ...
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_02"); //Haltet ein! Ihr seid nun einer von uns!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_03"); //Doch seht ihr nicht so aus als zieme euch eure Position! Ihr werdet fortan hier im Schloss wohnen.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_04"); //Ihr seid des heutigen Tages an das königliche Mädchen für alles!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_05"); //Senkt euer Haupt in Demut!
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_06"); //Jaja, schon klar ...
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_07"); //Haltet ein! Ich vermute, ihr habt meinen Arsch bereits kennen gelernt?
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_08"); //Ja.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_09"); //So denn, geht zu ihr und lasset euch von ihr einen Termin bei dem höfischen Magier geben.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_00"); //Kim jest ten, kto dorastal do naszego królewskiego rycerza z i do Raufbold?
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_01"); //Jestem.....
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_02"); //Trzymac sie dalej! Jestes teraz jednym z nas!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_03"); //Ale nie wyglada na to, ze zaslugujesz na swoja pozycje! Od teraz bedziecie mieszkac tutaj w zamku.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_04"); //Jestes dzisiaj królewskiej dziewczynce za wszystko!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_05"); //Opusc glowy w pokorze!
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_06"); //Tak, to wszystko dobrze.....
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_07"); //Trzymac sie dalej! Przypuszczam, ze juz spotkales sie z moimi synami?
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Hi_15_08"); //Tak.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Hi_06_09"); //Wiec idz do niej i umów sie z nia na spotkanie z nadwornym magikiem.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Der König hat mich zum Arsch geschickt, damit ich dort einen Termin mit dem Hofmagier vereinbare.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_Freudenspender, "Król przyslal mnie do mojej tylka, aby umówic sie na spotkanie z magikiem dworskim.");
 };
 
 INSTANCE Info_Mod_HofstaatKoenig_Sorge (C_INFO)
@@ -52,15 +52,15 @@ FUNC INT Info_Mod_HofstaatKoenig_Sorge_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Sorge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_00"); //Nichts gibt es, das die Schönheit meines Königreiches zu übertrumpfen vermag.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_01"); //Und doch ... wenn ich so dem Freifluss entlang sehe ... dann sehne ich mich immer nach dem Meer.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_02"); //Hab' ich Euch erzählt, dass euer König vor seiner Zeit in der Politik ein Fischer war? Natürlich nicht, es ist ja auch gelogen.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_03"); //Um die Wahrheit zu sprechen, getreuer Kehrwisch, einst verliebte ich mich in eine Meerjungfrau.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_04"); //Sie war schön wie die ersten Sonnenstrahlen des Tages, die sich auf dem Meer spiegelten ...
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Sorge_15_05"); //Ich soll euch diese Aufzeichnungen bringen.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_06"); //Ich weiß dass die Kunst unseres Drogenministers unübertroffen ist, doch bin ich jetzt nicht in der Stimmung dafür ... tretet nicht auf den Königlichen Raufbold wenn ihr mich verlässt.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_00"); //Nie ma nic, co moze przewyzszyc piekno mojego królestwa.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_01"); //A jednak.... kiedy patrze wzdluz wolnej rzeki..... Zawsze tesknie za morzem.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_02"); //Czy powiedzialem wam, ze król wasz byl przedtem rybakiem w polityce? Oczywiscie nie, to klamstwo.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_03"); //Mówiac prawde, wierni zamachaja, kiedys zakochalem sie w syrenie.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_04"); //Bylo piekne jak pierwsze promienie slonca dnia odbijajace sie na morzu......
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Sorge_15_05"); //Przynosze ci te notatki.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Sorge_06_06"); //Wiem, ze sztuka naszego ministra ds. narkotyków jest niezrównana, ale nie mam na to ochoty teraz.... Nie idz na królewski szorstki kajak, jesli mnie opuscisz.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der König ist zu besorgt, um sich für die Aufzeichnungen des Drogenministers zu kümmern. Ich muss eine Lösung für diese Problem finden.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Król obawia sie zbytnio, by zajac sie zapisami sekretarza. Musze znalezc rozwiazanie tego problemu.");
 };
 
 INSTANCE Info_Mod_HofstaatKoenig_Meer (C_INFO)
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_HofstaatKoenig_Meer (C_INFO)
 	information	= Info_Mod_HofstaatKoenig_Meer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Antwort!";
+	description	= "Mam odpowiedz!";
 };
 
 FUNC INT Info_Mod_HofstaatKoenig_Meer_Condition()
@@ -84,12 +84,12 @@ FUNC INT Info_Mod_HofstaatKoenig_Meer_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Meer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Meer_15_00"); //Ich habe die Antwort!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Meer_06_01"); //Ihr stört mich beim sorgen, Kehrwisch. Das ist etwas, das nur den Geist des Königs zu betreffen vermag, ich könnt mir dabei nicht zur Hand gehen.
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Meer_15_02"); //Aber ich habe ein Meer für euch, König!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Meer_06_03"); //(in Rage) ES GIBT KEIN MEER FÜR MICH! Und jetzt geht mir aus den Augen, Kehrwisch.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Meer_15_00"); //Mam odpowiedz!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Meer_06_01"); //Martwi mnie pan niepokojacy, miotajacy sie. To jest cos, co moze tylko wplynac na ducha króla, nie moge sobie pomóc.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Meer_15_02"); //Ale mam dla ciebie morze!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Meer_06_03"); //NIE MA DLA MNIE MORZA! Teraz wyjdz z oczu, traluj.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der König lässt nicht mit sich reden. Was jetzt?");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Król nie bedzie sluchal rozumu. Co teraz?");
 
 	AI_StopProcessInfos	(self);
 
@@ -117,25 +117,25 @@ FUNC INT Info_Mod_HofstaatKoenig_Gemaelde_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Gemaelde_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_00"); //Kehrwisch! Ihr überschreitet eure Kompetenzen.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_01"); //Verschwindet augenblicklich oder Ihr werdet meinen Königlichen Zorn zu spüren bekommen.
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_02"); //Vielleicht heitert dieses Gemälde euch auf.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_00"); //Zrzuty! Przekraczasz swoje uprawnienia.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_01"); //Natychmiast znikaj albo poczujesz mój gniew królewski.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_02"); //Moze ten obraz moze Cie rozweseli.
 
 	B_GiveInvItems	(hero, self, ItMi_StrandBild, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_03"); //Das ... das ist wunderschön. Was war die Inspiration für dieses Kunstwerk?
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_04"); //Ein Strand. Er liegt in der alten Minenkolonie.
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_05"); //Dort herrscht ein Bekannter von mir und ich bin mir sicher, ich könnte ein Bündnis arrangieren.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_06"); //Ihr meint ... ich hätte jederzeit Zutritt zu diesem von den Göttern geküssten Fleck Erde?
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_07"); //Genau. Kommt mit mir, ich bring euch hin.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_08"); //Nein.
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_09"); //Was soll das heißen, nein?
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_10"); //Ich bin vielleicht in Sorge, aber ich bin immer noch König! Ich erwarte, dass du eine dauerhafte Lösung für das Transportproblem findest.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_11"); //Hol mich, sobald du einen Weg gefunden hast.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_03"); //.... to piekne. Co bylo inspiracja dla tego dziela sztuki?
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_04"); //Plaza. Znajduje sie w starej kolonii górniczej.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_05"); //Zapoznalem sie z moimi znajomymi i jestem pewien, ze moglem zawrzec sojusz.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_06"); //Masz na mysli..... Czy w kazdej chwili mialabym dostep do tego boskiego kawalka ziemi?
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_07"); //Dokladnie. Przyjedzcie ze mna, zabiore Was tam.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_08"); //Nie.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Gemaelde_15_09"); //Co masz na mysli, nie?
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_10"); //Moge sie martwic, ale wciaz jestem królem! Oczekuje, ze znajda Panstwo trwale rozwiazanie problemu transportu.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Gemaelde_06_11"); //Pozwól mi jak najszybciej znalezc sposób.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der König ist beeindruckt von der Schönheit des Sumpfes. Er will jedoch eine Lösung des Transportproblemes. Ich sollte mich mal hier umhören, ob jemand etwas dazu weiß.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Król jest pod wrazeniem piekna bagna. Pragnie jednak rozwiazania problemu transportu. Tutaj powinienem zapytac, czy ktokolwiek o tym nie wie.");
 
 	Mod_SL_Meer = 5;
 };
@@ -160,11 +160,11 @@ FUNC INT Info_Mod_HofstaatKoenig_Loch_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Loch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Loch_06_00"); //Habt ihr einen Weg gefunden?
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Loch_15_01"); //Ja, habe ich, kommt mit.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Loch_06_02"); //Wehe euch, er ist einem König nicht würdig!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Loch_06_00"); //Czy znalazles sposób?
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Loch_15_01"); //Tak, ja to zrobilem, idzcie dalej.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Loch_06_02"); //Biada wam, on nie jest godzien króla!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich hab dem König vom neuen Transportloch berichtet. Er hat sich sofort auf den Weg gemacht.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Opowiedzialem królowi o nowym otworze transportowym. Natychmiast odszedl.");
 
 	Mod_SL_Meer = 8;
 
@@ -193,14 +193,14 @@ FUNC INT Info_Mod_HofstaatKoenig_Tuersteher_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Tuersteher_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_00"); //Bademeister! Gut dass ihr kommt, seeeeeehr gut dass ihr kommt! Euch muss GOTT schicken!
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Tuersteher_15_01"); //Nein, der Türsteher.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_02"); //Vielleicht sollte ich den Mann befödrern. Egal! Ich bitte euch einen letzten Botengang für mich zu erledigen, Bademeister!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_03"); //Etwas so geheimes und gefährliches, dass nur IHR es tun könnt!
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Tuersteher_15_04"); //Worum geht es? Laufen Kinder am Beckenrand?
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_05"); //Viiiiel wichtiger. Ihr müsst zum Drogenminister! Er wird euch weiter instruieren! Eilt euch!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_00"); //Asystent kapieli! Dobrze, ze przyjdziesz, zobaczysz, ze jestes dobry, ze przyjdziesz! BOGA musi Cie wyslac!
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Tuersteher_15_01"); //Nie, bouncer.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_02"); //Moze powinienem go dostarczyc. Nigdy nie martwcie sie! Prosze Cie o zrobienie ostatniego bledu dla mnie, opiekuna puli!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_03"); //Cos tak ukrytego i niebezpiecznego, ze tylko Ty mozesz to zrobic!
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_Tuersteher_15_04"); //Co o tym chodzi? Czy dzieci chodza na krawedzi basenu?
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Tuersteher_06_05"); //Znacznie wazniejsze. Musisz zobaczyc sekretarza narkotyków! On udzieli dalszych wskazówek! Pospiesz sie!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Der König hat einen sehr geheimen und gefährlichen Auftrag für mich. Ich soll zum Drogenminister gehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Król ma dla mnie bardzo tajemnicza i niebezpieczna misje. Mam pójsc do sekretarki narkotyków.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -225,11 +225,11 @@ FUNC INT Info_Mod_HofstaatKoenig_Fluffy_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_Fluffy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_00"); //Fluffy!!! Komm zurück zu mir, mein Liebling!!!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_01"); //Wir spielen auch fang den Baum und du darfst den Burgturm rammeln ... Fluffy ...
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_02"); //FLUUUUUUFFYYYYY!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_00"); //! Wróccie do mnie, moje ulubieniec!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_01"); //Gramy równiez w gre lapiac drzewo i mozna siegnac po wieze zamkowa..... Przepustowosc......
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_02"); //
 
-	B_LogEntry	(TOPIC_MOD_SL_FLUFFY, "Fluffy ist weg und der König ganz schön traurig darüber.");
+	B_LogEntry	(TOPIC_MOD_SL_FLUFFY, "Fluffy's gone i the królewiatko smutek o ono.");
 
 	Mod_SL_PartFluffy = 3;
 
@@ -258,11 +258,11 @@ FUNC INT Info_Mod_HofstaatKoenig_HofstaatFutsch_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_HofstaatFutsch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_00"); //NEEEEEEEEEEEEEEEEEIIN!!! WARUM?
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_01"); //Verflucht seid ihr Götter! Gebt mir meine Welt zurück, ich will eure Realität nicht.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_02"); //(Stimme wird weinerlich und versagt am Schluss) Was habe ich nur getan ...
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_00"); //EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE! WARUM?
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_01"); //Bóstwo obalajcie! Daj mi z powrotem mój swiat, nie chce twojej rzeczywistosci.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_HofstaatFutsch_06_02"); //(Woice placze i konczy sie niepowodzeniem) Co zrobilem....
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Hofstaat ist nun endgültig zerstört. Ich sollte jetzt zu Baal Namib gehen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Obecnie sad zostaje ostatecznie zniszczony. Powinienem udac sie teraz do Baala Namiba.");
 
 	Mod_SL_Schwaechen = 8;
 
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis (C_INFO)
 	information	= Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe noch ein paar Fragen über die hiesigen Rauschmittel.";
+	description	= "Mam jeszcze kilka pytan dotyczacych narkotyków.";
 };
 
 FUNC INT Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_Condition()
@@ -290,8 +290,8 @@ FUNC INT Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_15_00"); //Ich habe noch ein paar Fragen über die hiesigen Rauschmittel.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_06_01"); //Stellt diese dem Hofmagier! Und nun hinfort!
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_15_00"); //Mam jeszcze kilka pytan dotyczacych narkotyków.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_FreudenspenderGeheimnis_06_01"); //Ustaw ja dla maga dworskiego! A teraz z dala!
 };
 
 INSTANCE Info_Mod_HofstaatKoenig_Pickpocket (C_INFO)

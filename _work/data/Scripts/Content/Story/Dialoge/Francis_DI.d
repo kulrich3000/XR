@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Francis_DI_Stollen_Condition()
 
 FUNC VOID Info_Mod_Francis_DI_Stollen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Francis_DI_Stollen_13_00"); //Endlich kommt jemand. Mir wird’s langsam unheimlich hier.
-	AI_Output(hero, self, "Info_Mod_Francis_DI_Stollen_15_01"); //Ich übernehme jetzt, warte hier.
+	AI_Output(self, hero, "Info_Mod_Francis_DI_Stollen_13_00"); //Wreszcie czyjes nadejscie. Wkradam sie tutaj.
+	AI_Output(hero, self, "Info_Mod_Francis_DI_Stollen_15_01"); //Przejme sie, czekam tutaj.
 };
 
 INSTANCE Info_Mod_Francis_DI_Amulett (C_INFO)
@@ -43,14 +43,14 @@ FUNC INT Info_Mod_Francis_DI_Amulett_Condition()
 
 FUNC VOID Info_Mod_Francis_DI_Amulett_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Francis_DI_Amulett_13_00"); //Da bist du ja wieder. Und der Schatz?
-	AI_Output(hero, self, "Info_Mod_Francis_DI_Amulett_15_01"); //Ein paar Kleinigkeiten und ein Amulett.
-	AI_Output(self, hero, "Info_Mod_Francis_DI_Amulett_13_02"); //Was? Sonst nichts? Heiliger Klabautermann!
-	AI_Output(hero, self, "Info_Mod_Francis_DI_Amulett_15_03"); //Komm. Wir gehen zurück.
+	AI_Output(self, hero, "Info_Mod_Francis_DI_Amulett_13_00"); //Tam znów pan jest. I skarb?
+	AI_Output(hero, self, "Info_Mod_Francis_DI_Amulett_15_01"); //Kilka malych rzeczy i amulet.
+	AI_Output(self, hero, "Info_Mod_Francis_DI_Amulett_13_02"); //Co? Nic wiecej? Swiety goblin!
+	AI_Output(hero, self, "Info_Mod_Francis_DI_Amulett_15_03"); //Wlacz. Wracamy.
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "Nur ein paar Kleinigkeiten und ein Amulett waren in dem Stollen ...");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_DI, "W galerii bylo tylko kilka malych rzeczy i amuletu.....");
 };
 
 INSTANCE Info_Mod_Francis_DI_EXIT (C_INFO)

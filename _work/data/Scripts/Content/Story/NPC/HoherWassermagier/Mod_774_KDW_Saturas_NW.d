@@ -1,7 +1,7 @@
 INSTANCE Mod_774_KDW_Saturas_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Saturas";
+	name 		= "Satura";
 	guild 		= GIL_DMT; 
 	id 			= 774;
 	voice 		= 14;

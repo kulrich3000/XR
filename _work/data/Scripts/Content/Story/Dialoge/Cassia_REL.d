@@ -18,27 +18,27 @@ FUNC INT Info_Mod_Cassia_REL_VorTaverne_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_VorTaverne_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_00"); //(halblaut) Das habt ihr wirklich fein gemacht. Schön schaurig.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_01"); //Das sollte sich in Windeseile in der ganzen Stadt verbreiten und den Einfallspinseln Respekt vor dem Gebäude verschaffen.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_15_02"); //Du hast alles mit angehört? Dann können wir also einziehen?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_03"); //Noch nicht ganz.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_04"); //Metzger und Braumeister werden bald schon von den Gerüchten erfahren und sich zu dem Haus begeben, um sich selbst ein Bild davon zu machen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_05"); //Die erste Rate für das Haus haben sie nämlich schon gezahlt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_06"); //Dort werde ich am Vordereingang auf sie warten und das hysterische Weib geben.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_07"); //Während dessen wirst du dich hinter und herschleichen und von hinten die Fackel entzünden, die im Keller steht.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_08"); //Das sollte ihnen den Rest geben ... und mir ihren Schlüssel zum Gebäude.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_00"); //Panowie naprawde dobrze wywiazali sie z tego zadania. Ladny i przerazajacy.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_01"); //Mialo to w krótkim czasie rozprzestrzenic sie po calym miescie i zyskac szacunek dla budynku.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_15_02"); //Wszystko slyszales? Wiec mozemy sie wprowadzic?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_03"); //Jeszcze nie calkiem.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_04"); //Browarnicy i mistrzowie piwowarów wkrótce dowiedza sie o plotkach i udaja sie do domu, aby zobaczyc dla siebie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_05"); //Zaplacili juz pierwsza rate za dom.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_06"); //Tam bede czekal na nia przy przednim wejsciu i podaje histeryczna kobiete.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_07"); //W tym czasie bedziesz sie chwytac za i nad palnikiem i zapalic latarke w piwnicy od tylu.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_16_08"); //To powinno dac im reszte...... i jej klucz do budynku.
 
 	B_GivePlayerXP	(150);
 
 	Info_ClearChoices	(Info_Mod_Cassia_REL_VorTaverne);
 
-	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "Geht auch ein Beschwörungszauber?", Info_Mod_Cassia_REL_VorTaverne_B);
-	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "Alles klar.", Info_Mod_Cassia_REL_VorTaverne_A);
+	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "Czy zaklecie wywolania dziala?", Info_Mod_Cassia_REL_VorTaverne_B);
+	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "Wszystko jasne.", Info_Mod_Cassia_REL_VorTaverne_A);
 };
 
 FUNC VOID Info_Mod_Cassia_REL_VorTaverne_C()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_C_16_00"); //Gut, dann folge mir.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_C_16_00"); //Wszystko w porzadku, podazaj za mna.
 
 	Info_ClearChoices	(Info_Mod_Cassia_REL_VorTaverne);
 
@@ -49,16 +49,16 @@ FUNC VOID Info_Mod_Cassia_REL_VorTaverne_C()
 
 FUNC VOID Info_Mod_Cassia_REL_VorTaverne_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_B_15_00"); //Geht auch ein Beschwörungszauber?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_B_16_01"); //Damit wir im Anschluss zwei Leichen im Keller haben und die Stadtwachen schwer bewaffnet bei uns an die Türe klopfen?
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_B_15_02"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_B_15_00"); //Czy zaklecie wywolania dziala?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_VorTaverne_B_16_01"); //Tak wiec, ze mamy w piwnicy dwa trupy, a straznicy miejscy pukaja do naszych drzwi mocno uzbrojeni?
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_B_15_02"); //Widze.
 
 	Info_Mod_Cassia_REL_VorTaverne_C();
 };
 
 FUNC VOID Info_Mod_Cassia_REL_VorTaverne_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_A_15_00"); //Alles klar.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_VorTaverne_A_15_00"); //Wszystko jasne.
 
 	Info_Mod_Cassia_REL_VorTaverne_C();
 };
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Cassia_REL_AtHaus (C_INFO)
 	information	= Info_Mod_Cassia_REL_AtHaus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Pakete erhalten können.";
+	description	= "Otrzymalem wszystkie paczki.";
 };
 
 FUNC INT Info_Mod_Cassia_REL_AtHaus_Condition()
@@ -85,13 +85,13 @@ FUNC INT Info_Mod_Cassia_REL_AtHaus_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_AtHaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_AtHaus_16_00"); //Ahh, da kommen die beiden schon. Hier ist die Rune.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_AtHaus_16_00"); //Ach, tu przychodza. Oto runa.
 
 	B_GiveInvItems	(self, hero, ItRu_Fackel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_AtHaus_16_01"); //Du weißt, was zu tun ist.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_AtHaus_16_01"); //Wiesz co robic.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_UMZUG, "Während Cassia die beiden ablenkt, werde ich mich von hinten anschleichen und eine Fackel mit Hilfe eines Zaubers entzünden.");
+	B_LogEntry	(TOPIC_MOD_DIEB_UMZUG, "Podczas gdy Cassia rozprasza obie te dwie rzeczy, to za nimi sie przemykam i zapale pochodnie za pomoca zaklecia.");
 
 	AI_StopProcessInfos	(self);
 
@@ -120,8 +120,8 @@ FUNC INT Info_Mod_Cassia_REL_InHaus_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_InHaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_InHaus_16_00"); //Ausgezeichnet. Die beiden Narren werden wir hier bestimmt nicht wieder zu Gesicht bekommen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_InHaus_16_01"); //Jetzt können wir uns erst einmal in aller Seelenruhe hier einrichten.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_InHaus_16_00"); //Doskonaly. Nie bedziemy znów widziec tych durniów.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_InHaus_16_01"); //Teraz mozemy osiedlic sie tutaj w spokoju.
 
 	B_GivePlayerXP	(350);
 
@@ -157,63 +157,63 @@ FUNC INT Info_Mod_Cassia_REL_Glorie_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_00"); //Ahh, gut dass du das bist.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_01"); //Wir haben gerade etwas ausgearbeitet, bei dem du uns helfen kannst ... nein musst.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_02"); //Ein fertiger Plan, wie ich höre. Was gibt es diesmal zu besorgen? Etwas Gold, paar Schinken ...
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_03"); //Nein, diesmal ist es etwas komplexer.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_04"); //Wir werden jedes Mitglied aus unserer Gemeinschaft brauchen, wenn es glücken soll.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_05"); //Das hört sich spannend an. Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_06"); //Es geht zuerst einmal darum wertvolle Dokumente zu beschaffen, die noch wertvollere Informationen beinhalten könnten.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_07"); //Diese lagern irgendwo in den Untiefen der Bibliothek.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_08"); //Also ein Einbruch?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_09"); //Nein, es würde wohl Tage, wenn nicht Wochen dauern, unter den ganzen Schriften und Büchern das zu finden, wonach wir suchen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_10"); //Und das Schloss, das zu knacken wäre, ist auch kein gängiges Türschloss.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_11"); //Hör mir also erst einmal zu.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_12"); //Also, es gibt einen Gelehrten in dieser Stadt der jeden Tag zu Mittag die Bibliothek betritt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_13"); //Er wird von einer Leibwache begleitet, die immer am Eingang stehen bleibt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_14"); //Sobald der Bibliothekar den Alten erblickt, springt er auf und begibt sich durch eine verschlossene Falltüre in einen Raum unterhalb.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_15"); //Nach wenigen Minuten kommt er mit einem Stapel Dokumente heraus und bringt diese dem Gelehrten.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_16"); //Das sind sehr exklusive und spezielle Dokumente, da niemand sonst diese ausgehändigt bekommt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_17"); //Und glaub mir, wir haben alle Register der Diplomatie gezogen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_18"); //Jedenfalls schmökert der gelehrte Alte immer einige Stunden darin, ehe er sie dem Bibliothekar wieder zurückgibt und sie in dem Raum unterhalb verschwinden.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_19"); //Hmm, und wo wollen wir uns da einklinken?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_20"); //Beim Schneider.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_21"); //Das verstehe ich nicht ...
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_22"); //Weil du nicht die nötigen Informationen gesammelt hast.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_23"); //Denn wie wir in Erfahrung gebracht haben, arbeitet der Schneider gerade an einem Kleid für den Gelehrten.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_24"); //Die Robe sieht fast genauso aus, wie der exzentrische Fummel, in dem der Alte sonst herumläuft.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_25"); //Langsam verstehe ich. Jemand von uns besorgt sich das Kleid und gibt sich als der Alte aus.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_26"); //Nahe liegende Schlüsse kannst du also ziehen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_27"); //Aber genug der Schmeicheleien.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_28"); //Das wird deine und Ramirez Aufgabe sein.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_29"); //Während er den Schneider ablenkt und bezirzt – glaub mir, ich hätte keinen Erfolg – wirst du dir das Kleid unter den Nagel reißen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_30"); //Mit diesem Bart hier, solltest du dem Alten Schnösel dann doch ganz ähnlich sehen.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_00"); //Ach, dobrze, jestescie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_01"); //Wlasnie wypracowalismy cos, z czym mozesz nam pomóc..... musza.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_02"); //Gotowy plan, slysze. Co jest po to, aby tym razem? Odrobina zlota, troche szynki....
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_03"); //Nie, tym razem jest to nieco bardziej skomplikowane.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_04"); //Bedziemy potrzebowac kazdego czlonka naszej spolecznosci, aby odniesc sukces.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_05"); //Brzmi to ekscytujaco. Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_06"); //Przede wszystkim chodzi o uzyskanie wartosciowych dokumentów, które moglyby zawierac jeszcze cenniejsze informacje.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_07"); //Sa one przechowywane gdzies w plyciznach biblioteki.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_08"); //Wiec wlamanie?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_09"); //Nie, znalezienie tego, czego szukamy wsród wszystkich pism i ksiazek zajeloby prawdopodobnie kilka dni, jesli nie tygodnie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_10"); //Zamek, który moze ulec peknieciu nie jest zwykla blokada drzwi.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_11"); //Wiec najpierw posluchajcie mnie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_12"); //Cóz, w tym miescie jest uczony, który codziennie w poludnie wchodzi do biblioteki.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_13"); //Towarzyszy mu ochroniarz, który zawsze zatrzymuje sie przy wejsciu.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_14"); //Gdy tylko bibliotekarz zobaczy starego mezczyzne, podskakuje i przechodzi przez zamkniete drzwi pulapki do pokoju ponizej.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_15"); //Po kilku minutach wychodzi z stosem dokumentów i przynosi je uczonemu.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_16"); //Sa to dokumenty bardzo ekskluzywne i specjalne, bo nikt inny ich nie otrzymuje.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_17"); //I wierzcie mi, wyciagnelismy wszystkie przystanki na dyplomacje.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_18"); //W kazdym razie, uczony stary czlowiek zawsze czyta w nim kilka godzin, zanim wróci do bibliotekarza i znikaja w pokoju ponizej.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_19"); //Hmm, i gdzie mamy sie dostac?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_20"); //U krawca.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_21"); //Nie rozumiem....
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_22"); //Poniewaz nie zebrales niezbednych informacji.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_23"); //Bo jak sie dowiedzielismy, krawiec pracuje obecnie nad sukienka dla uczonego.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_24"); //Suknia wyglada niemal dokladnie tak jak mimosrodowy akordeon, do którego chodzil stary czlowiek.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_25"); //Zaczynam rozumiec. Jeden z nas dostaje sukienke i udaje starca.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_26"); //Mozna wiec wyciagnac oczywiste wnioski.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_27"); //Ale wystarczy pochlebstwo.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_28"); //To bedzie Twoja praca i Ramirez' s.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_29"); //Podczas gdy on rozprasza sie z krawiectwem i przepychankami - prosze mi wierzyc, nie odniose sukcesu - zburzysz swój strój.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_30"); //Z ta broda tutaj nalezy wygladac jak stara rzecz.
 
 	B_GiveInvItems	(self, hero, ItAr_Bart, 1);
 
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_31"); //Ok, dann kenne ich meine weitere Aufgabe.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_32"); //Wie schon zu vermuten war, begibst du dich in entsprechender Verkleidung  in die Bibliothek.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_33"); //Attila sorgt während dessen dafür, dass der Alte mit seinem Wachhund nicht in der Bibliothek aufkreuzt, indem er ihn in ein Gespräch verwickelt ... oder was auch notwendig sein wird.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_34"); //Nun gut, wird der Bibliothekar aber nicht merken, dass er nicht den richtigen Gelehrten vor sich hat.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_35"); //Ein guter Punkt ... wo Jesper zum Einsatz kommt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_36"); //Der Bibliothekar ist nämlich eigentlich blind wie ein Maulwurf, kann ohne sein Monokel gerade mal das Buch vor seiner Nase erkennen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_37"); //Sobald er sich die Augen reibt und das Monokel zur Seite legt, wird Jesper dafür sorgen, dass er es so schnell nicht wieder in die Finger bekommt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_38"); //Das einzige was du tun musst, ist also nah genug an den Bibliothekar heranzugehen, damit er den exzentrischen Fummel und den langen Bart erkennt.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_39"); //So läuft nämlich sonst keiner rum ... sogar in dieser Stadt nicht.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_40"); //Sagen brauchst und solltest du nichts ... der Junge wird von selbst kuschen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_41"); //Im Anschluss verlässt du mit den Papieren die Bibliothek.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_42"); //Wenn alles gut läuft solltest du auch noch genug Zeit haben das Kleid zurückzubringen, ehe der Schneider den Verlust bemerkt.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_43"); //Gut ... und was ist deine Aufgabe dabei?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_44"); //Ich?! Ich bin quasi der Joker, falls nicht alles so laufen sollte, wie geplant.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_45"); //Ich werde stets in der Nähe sein, die Umgebung beobachten und eingreifen, wenn es mir notwendig erscheint.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_46"); //Ok, und wann geht es los?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_47"); //Morgen früh gegen 10 wirst du dich hier mit Ramirez treffen und zum Schneider gehen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_48"); //Wenn alles läuft, wie geplant, sollte es uns das ideale Zeitfenster für unseren Coup bieten.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_49"); //Alles klar? Wir zählen auf dich.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_31"); //Dobrze, wtedy znam swoja inna prace.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_32"); //Jak zapewne sie domyslales, chodzisz do tak ubranej biblioteki.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_33"); //Attila dba o to, aby stary mezczyzna nie pojawil sie w bibliotece, angazujac go w rozmowe...... lub cokolwiek bedzie konieczne.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_34"); //No cóz, bibliotekarz nie zrozumie, ze nie ma przed soba wlasciwego uczonego.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_35"); //Dobry punkt.... gdzie stosuje sie Jesper.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_36"); //Bibliotekarz jest wlasciwie slepy na mola, bez jego monoklina ledwo potrafi rozpoznac ksiazke przed nosem.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_37"); //Jak tylko tylko wyciera oczy i odlozy monoklina na bok, Jesper zadba o to, aby nie dostal sie tak szybko w rece.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_38"); //Jedyne, co musisz zrobic, to wystarczajaco blisko bibliotekarza, aby rozpoznac akordeon ekscentryczny i dluga brode.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_39"); //Nie ma juz nikogo innego, kto chodzilby w taki sposób..... nawet w tym miescie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_40"); //Nie musisz i nie powinienes mówic niczego.... chlopiec bedzie sie pieszczyc.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_41"); //Nastepnie zostawiasz biblioteke z dokumentami.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_42"); //Jesli wszystko pójdzie dobrze, powinienes miec wystarczajaco duzo czasu, aby zabrac sukienke z powrotem, zanim krawiec zauwazy straty.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_43"); //.... Co tu robisz?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_44"); //Oto ja! Jestem swoista dzika karta, jesli sprawy nie przebiegaja zgodnie z planem.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_45"); //Bede zawsze blisko, obserwujac otoczenie i interweniujac w razie potrzeby.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie_15_46"); //Dobrze, kiedy zaczynamy?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_47"); //Jutro rano o godzinie 10:00 spotkasz sie tu z Ramirezem i pójdziesz do krawców.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_48"); //Jesli wszystko pójdzie zgodnie z planem, powinien dac nam idealny czas na nasz zamach stanu.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie_16_49"); //Kazdy ma racje? Liczymy na Ciebie.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEB_GLORIE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEB_GLORIE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Das ist jetzt mal eine größere Geschichte. Ich soll morgen früh um 10 hier Ramirez treffen. Mit ihm werde ich zum Schneider gehen und die Robe des Gelehrten stehlen, während Ramirez ihn ablenkt. Mit der neuen Kleidung und einem falschen Bart bekleidet gehe ich dann in die Bibliothek, wo Jesper den Bibliothekar seiner Sehhilfe beraubt hat. Ich brauche mich nur vor ihn zu stellen und er sollte mir einige wertvolle Dokumente bringen. Während dessen Wird Attila dafür sorgen, dass sich der Besuch des richtigen Gelehrten in der Bibliothek verzögert. Sobald ich die Papiere habe muss ich nur noch das Kleid beim Schneider zurücklegen, ehe ihm der Verlust auffällt.");
+	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "To jest teraz wieksza historia. Spotkam sie tu jutro rano o godzinie 10:00 z Ramirezem. Pójde z nim do krawca i ukradlem szate uczonego, podczas gdy Ramirez go rozprasza. Z nowymi ubraniami i falszywa broda ide do biblioteki, gdzie Jesper zrabowal bibliotekarzowi swojej pomocy wizualnej. Musze tylko sie z nim zmierzyc i on powinien przyniesc mi cenne dokumenty. W tym czasie Attila zadba o to, aby wizyta wlasciwego uczonego w bibliotece zostala opózniona. Jak tylko mam papiery, wszystko co musze zrobic, to polozyc sukienke z powrotem na krawca, zanim zauwazy straty.");
 
 	Mod_Dieb_Haus_Day = Wld_GetDay();
 };
@@ -239,7 +239,7 @@ FUNC INT Info_Mod_Cassia_REL_Glorie2_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie2_16_00"); //(halblaut) Keine Zeit zu verlieren. Zieh die Sachen an und dann weiter zur Bibliothek.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie2_16_00"); //Nie ma czasu do stracenia. Zalóz ubrania i przejdz do biblioteki.
 
 	AI_StopProcessInfos	(self);
 
@@ -268,7 +268,7 @@ FUNC INT Info_Mod_Cassia_REL_Glorie3_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie3_16_00"); //(halblaut) Los, rein mit dir.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie3_16_00"); //Chodz dalej, w drodze.
 
 	AI_StopProcessInfos	(self);
 
@@ -296,32 +296,32 @@ FUNC INT Info_Mod_Cassia_REL_Glorie4_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_00"); //Nun aber genug der Worte. Hast du die Unterlagen?
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie4_15_01"); //Ja, hier.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_00"); //Teraz dosc slów. Czy otrzymaliscie pliki?
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie4_15_01"); //Tak, tutaj.
 
 	B_GiveInvItems	(hero, self, ItWr_DiebDokumente, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_02"); //Lass sehen.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_02"); //Pozwólcie, ze zobacze.
 
 	B_UseFakescroll();
 
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_03"); //Nein ... das scheint unwichtig ...
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_03"); //Nie.... Nie. nie wydaje sie to wazne.......
 
 	B_UseFakescroll();
 
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_04"); //Völlig belanglos ...
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_04"); //Calkowicie bez znaczenia....
 
 	B_UseFakescroll();
 
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_05"); //Uninteressant ...
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_06"); //(zum Helden) Es wird wohl einige Stunden dauern in dem Haufen Dokumente etwas Brauchbares zu finden.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_05"); //Nieciekawe....
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie4_16_06"); //Na znalezienie czegos przydatnego w stosie dokumentów zajmie kilka godzin.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "DOKUMENTELESEN");
 	B_StartOtherRoutine	(Mod_7708_OUT_Ramirez_REL, "DOKUMENTELESEN");
 
-	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Wir konnten die Notizen erfolgreich entwenden. Nun wird es einige Zeit dauern sie zu studieren.");
+	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Udalo nam sie z powodzeniem ukrasc notatki. Teraz ich studiowanie zajmie troche czasu.");
 
 	B_GivePlayerXP	(500);
 
@@ -348,7 +348,7 @@ FUNC INT Info_Mod_Cassia_REL_Glorie5_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie5_16_00"); //Gut, ich glaube wir haben da was. Hier, lies selbst.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie5_16_00"); //Cóz, mysle, ze cos nam sie udalo. Tutaj przeczytaj go samemu.
 
 	B_GiveInvItems	(self, hero, ItWr_BesaenftigungBeliars, 1);
 
@@ -380,14 +380,14 @@ FUNC INT Info_Mod_Cassia_REL_Glorie6_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_00"); //Nun, klingt das nicht verlockend?
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie6_15_01"); //Ein kleines Opfer Goldes alle paar Tage ... womöglich über Jahrhunderte.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_02"); //Nun gilt es noch herauszufinden, wo dieses Opfer erbracht wird.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_03"); //Nach der letzten Aktion bist du derjenige, den mit Sicherheit niemand wieder erkennen wird ...
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie6_15_04"); //... sodass ich das Vergnügen haben werde. Verstehe.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_05"); //Also, immer schön dem Stadthalter auf den Fersen bleiben, sobald die Dämmerung einbricht ... (spitz) ich traue es dir zu.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_00"); //No cóz, czy to nie kusi?
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie6_15_01"); //Niewielka ofiara zlota co kilka dni..... byc moze przez wieki.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_02"); //Teraz musimy teraz dowiedziec sie, gdzie to poswiecenie ma miejsce.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_03"); //Po ostatniej akcji jestes tym, który na pewno nie bedzie znów rozpoznawany....
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie6_15_04"); //... Moge wiec miec przyjemnosc. Widze.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie6_16_05"); //Tak wiec, zawsze pozostan zawsze blisko gubernatora, jak tylko zmierzch sie rozpoczyna..... Ufam, ze pan to zrobi.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Scheinbar werden hier seit Ewigkeiten Beliar Goldopfer dargebracht, um die Stadt vor seinem Zorn zu schützen. Ich muss den Stadthalter Nachts beschatten, um zu sehen, wo das Gold landet.");
+	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Wydaje sie, ze Beliarowi od wieków poswieca sie zloto, aby uchronic miasto przed gniewem. Musze zaciemnic w nocy gubernatora, aby zobaczyc, gdzie laduje zloto.");
 };
 
 INSTANCE Info_Mod_Cassia_REL_Glorie7 (C_INFO)
@@ -398,7 +398,7 @@ INSTANCE Info_Mod_Cassia_REL_Glorie7 (C_INFO)
 	information	= Info_Mod_Cassia_REL_Glorie7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe in Erfahrung gebracht, wo sie ihr Gold opfern.";
+	description	= "Dowiedzialem sie, gdzie poswiecaja zloto.";
 };
 
 FUNC INT Info_Mod_Cassia_REL_Glorie7_Condition()
@@ -411,15 +411,15 @@ FUNC INT Info_Mod_Cassia_REL_Glorie7_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie7_15_00"); //Ich habe in Erfahrung gebracht, wo sie ihr Gold opfern. Es ist der verschlossene Brunnen, gleich hier in der Nähe.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_01"); //Ahh, natürlich ... nichts ist besser geeignet ein Opfer an Adanos vorzugaukeln, als ein Brunnen.
-	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie7_15_02"); //Was ist also als nächstes zu tun?
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_03"); //Nun, die Nähe des Brunnens zu unserer Behausung spielt uns natürlich in die Hände.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_04"); //Selbige werden wir auch nutzen müssen, um uns mit Spitzhacken einen Weg durchs Erdreich zu bahnen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_05"); //Wenn wir Glück haben, könnten wir schon nach wenigen Metern auf einen der Hohlräume stoßen, die offenbar unter der Stadt verlaufen.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_06"); //Bis morgen haben wir hoffentlich alles zusammen, um mit dem Tunnel loszulegen.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie7_15_00"); //Dowiedzialem sie, gdzie poswiecaja zloto. Jest to zamknieta studnia, tutaj.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_01"); //Ahh, oczywiscie.... nic nie jest lepiej przystosowane do tego, by naklonic ofiare do Adanosa niz studnia.
+	AI_Output(hero, self, "Info_Mod_Cassia_REL_Glorie7_15_02"); //Co zatem powinnismy zrobic dalej?
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_03"); //Otóz bliskosc studni do naszego mieszkania naturalnie wplywa na nasze rece.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_04"); //Bedziemy tez musieli ja wykorzystac, aby przejsc przez ziemie z pikseksami.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_05"); //Gdybysmy mieli szczescie, znalezlibysmy po kilku metrach jedna z wglebien, które zdaja sie przebiegac pod miastem.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie7_16_06"); //Miejmy nadzieje, ze do jutra bedziemy mieli wszystko, czego potrzebujemy, aby rozpoczac budowe tunelu.
 
-	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Cassia plant den Bau eines Tunnels von unserem Versteck aus.");
+	B_LogEntry	(TOPIC_MOD_DIEB_GLORIE, "Cassia planuje budowe tunelu z naszej kryjówki.");
 
 	Mod_Diebe_BrunnenTag = Wld_GetDay();
 };
@@ -444,8 +444,8 @@ FUNC INT Info_Mod_Cassia_REL_Glorie8_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie8_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie8_16_00"); //(zu den dreien) Los, immer schön weiter hacken.
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie8_16_01"); //(zum Helden) Und du kannst auch ruhig die Spitzhacke schwingen ... (süffisant) das vermisst du doch bestimmt aus der Kolonie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie8_16_00"); //Przyjdz dalej, rozbijaj sie.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie8_16_01"); //(do bohatera) I mozna równiez kolyszac sie pikseksem.... Musisz go pominac w kolonii.
 
 	AI_StopProcessInfos	(self);
 };
@@ -470,7 +470,7 @@ FUNC INT Info_Mod_Cassia_REL_Glorie9_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie9_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie9_16_00"); //Also gut, schnappt euch Fackeln und dann los. Wir sind unserem Ziel sehr nahe.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie9_16_00"); //W prawo, chwycic latarki i isc. Jestesmy bardzo blisko naszego celu.
 
 	AI_StopProcessInfos	(self);
 
@@ -500,7 +500,7 @@ FUNC INT Info_Mod_Cassia_REL_Glorie10_Condition()
 
 FUNC VOID Info_Mod_Cassia_REL_Glorie10_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie10_16_00"); //Ich möchte behaupten, wir haben den Jackpot gezogen. Ich nehme es niemanden Übel, wenn er sich auf den Goldhaufen wirft und sich die Taschen füllt ... (schnell) ich werde die erst sein, die es tut.
+	AI_Output(self, hero, "Info_Mod_Cassia_REL_Glorie10_16_00"); //Chcialbym powiedziec, ze trafilismy w jackpota. Nie obwiniam nikogo, kiedy rzuca sie na kupe zlota i wypelnia kieszenie? (szybko) jako pierwszy to zrobie.
 
 	AI_StopProcessInfos	(self);
 

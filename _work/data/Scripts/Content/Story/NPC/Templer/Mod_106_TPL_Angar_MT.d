@@ -1,7 +1,7 @@
 instance Mod_106_TPL_Angar_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cor Angar";
+	name 		= "Katownik";
 	guild 		= GIL_OUT;
 	id 			= 106;
 	voice 		= 34;

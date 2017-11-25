@@ -1,7 +1,7 @@
 instance Mod_7520_JG_Ferd_JL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ferd"; 
+	name 		= "fretka"; 
 	guild 		= GIL_OUT;
 	id 			= 7520;
 	voice 		= 6;

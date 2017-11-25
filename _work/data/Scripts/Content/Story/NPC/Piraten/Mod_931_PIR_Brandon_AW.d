@@ -1,7 +1,7 @@
 INSTANCE Mod_931_PIR_Brandon_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brandon";
+	name 		= "ognisko";
 	guild 		= GIL_NONE;
 	id 			= 931;
 	voice 		= 4;

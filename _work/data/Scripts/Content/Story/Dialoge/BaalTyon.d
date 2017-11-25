@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Tyon_GotoTempel (C_INFO)
 	information	= Info_Mod_Tyon_GotoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst am Tempel erwartet.";
+	description	= "Jestescie oczekiwani w swiatyni.";
 };
 
 FUNC INT Info_Mod_Tyon_GotoTempel_Condition()
@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Tyon_GotoTempel_Condition()
 
 FUNC VOID Info_Mod_Tyon_GotoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyon_GotoTempel_15_00"); //Du wirst am Tempel erwartet.
+	AI_Output(hero, self, "Info_Mod_Tyon_GotoTempel_15_00"); //Jestescie oczekiwani w swiatyni.
 
 	AI_StopProcessInfos	(hero);
 
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Tyon_Woher (C_INFO)
 	information	= Info_Mod_Tyon_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo kommst du her?";
+	description	= "Skad pochodzisz?";
 };
 
 FUNC INT Info_Mod_Tyon_Woher_Condition()
@@ -48,14 +48,14 @@ FUNC INT Info_Mod_Tyon_Woher_Condition()
 
 FUNC VOID Info_Mod_Tyon_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_00"); //Wo kommst du her?
-	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_01"); //Ursprünglich war ich Nomade in Varant, der Wüste von Myrtana.
-	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_02"); //Wie du vielleicht weißt, hat König Rhobar II. Varant besetzt.
-	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_03"); //Es ergab sich, dass ich unter dem Einfluss von Sumpfkraut einen der Paladine des Königs angriff ...
-	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_04"); //... und dann haben sie dich in die Kolonie geworfen?
-	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_05"); //Genau.
-	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_06"); //Und was hast du dort dann gemacht?
-	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_07"); //Ich hab mich dem alten Lager als Buddler angeschlossen, bin aber kurz nach der Gründung der Bruderschaft zusammen mit Cor Angar hierher gekommen.
+	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_00"); //Skad pochodzisz?
+	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_01"); //Pierwotnie bylem koczownikiem w Varant, na pustyni Myrtany.
+	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_02"); //Jak zapewne wiesz, król Rhobar II. Zajeta kwarantanna.
+	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_03"); //Okazalo sie, ze zaatakowalem jedna z paladyn królewskich pod wplywem rdestnicy bagnistej....
+	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_04"); //... a potem wrzucili cie do kolonii?
+	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_05"); //Dokladnie.
+	AI_Output(hero, self, "Info_Mod_Tyon_Woher_15_06"); //Co Pan tam robil?
+	AI_Output(self, hero, "Info_Mod_Tyon_Woher_11_07"); //Wstapilem do starego obozu jako Buddler, ale wkrótce po zalozeniu Bractwa przyszedlem tu z Cor Angar.
 };
 
 INSTANCE Info_Mod_Tyon_BistGuru (C_INFO)
@@ -78,10 +78,10 @@ FUNC INT Info_Mod_Tyon_BistGuru_Condition()
 
 FUNC VOID Info_Mod_Tyon_BistGuru_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tyon_BistGuru_11_00"); //Da du jetzt zu uns Gurus gehörst, werde ich dir zeigen, wie du deine magischen Kräfte steigern kannst.
+	AI_Output(self, hero, "Info_Mod_Tyon_BistGuru_11_00"); //Teraz, gdy jestescie jednym z nas guru, pokaze wam jak zwiekszyc wasze magiczne moce.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SUMPF, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Baal Tyon wird mir zeigen, wie ich mein MANA steigern kann.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Baal Tyon pokaze mi jak udoskonalic MANA.");
 };
 
 INSTANCE Info_Mod_Tyon_Lernen (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Tyon_Lernen (C_INFO)
 	information	= Info_Mod_Tyon_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Tyon_Lernen_Condition()
@@ -107,7 +107,7 @@ FUNC INT Info_Mod_Tyon_Lernen_Condition()
 
 FUNC VOID Info_Mod_Tyon_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tyon_Lernen_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Tyon_Lernen_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Tyon_Lernen);
 
@@ -120,7 +120,7 @@ FUNC VOID Info_Mod_Tyon_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 200)
 	{
-		AI_Output(self, hero, "Info_Mod_Tyon_Lernen_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Tyon_Lernen_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Tyon_Lernen);
 };

@@ -1,7 +1,7 @@
 INSTANCE Mod_7145_ASS_Aadel_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Aadel"; 
+	name 		= "igla"; 
 	guild 		= GIL_OUT;
 	id 			= 7145;
 	voice 		= 2;

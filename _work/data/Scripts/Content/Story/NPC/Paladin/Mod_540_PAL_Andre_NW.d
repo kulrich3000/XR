@@ -1,7 +1,7 @@
 INSTANCE Mod_540_PAL_Andre_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lord Andre";	
+	name 		= "Pan Andrzej";	
 	guild 		= GIL_DMT;
 	id 			= 540;
 	voice 		= 8;

@@ -1,7 +1,7 @@
 instance Mod_7271_OUT_HFFrau_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frau des Hundefutters"; 
+	name 		= "Kobieta z karmy dla psów"; 
 	guild 		= GIL_OUT;
 	id 			= 7271;
 	voice 		= 16;

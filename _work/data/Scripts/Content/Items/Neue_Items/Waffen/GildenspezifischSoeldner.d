@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_GrobesKurzschwert (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert";
+	name 				=	"Gruby, krótki miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_GrobesKurzschwert (C_Item)
 };
 INSTANCE ItMw_GrobesKurzschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert (geschärft)";
+	name 				=	"Krótki, gruboziarnisty miecz (ostry)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

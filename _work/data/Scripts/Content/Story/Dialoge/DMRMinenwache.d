@@ -6,7 +6,7 @@ INSTANCE Info_Mod_DMRMinenwache_GoIn (C_INFO)
 	information	= Info_Mod_DMRMinenwache_GoIn_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt es irgendeine Möglichkeit, dass du mich reinlässt?";
+	description	= "Czy jest jakis sposób, w jaki moge mnie wpuscic?";
 };
 
 FUNC INT Info_Mod_DMRMinenwache_GoIn_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_DMRMinenwache_GoIn_Condition()
 
 FUNc VOID Info_Mod_DMRMinenwache_GoIn_Info()
 {
-	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn_15_00"); //Gibt es irgendeine Möglichkeit, dass du mich reinlässt?
-	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn_05_01"); //Nein, nicht solange du zu uns gehörst. Und jetzt verschwinde.
+	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn_15_00"); //Czy jest jakis sposób, w jaki moge mnie wpuscic?
+	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn_05_01"); //Nie, nie tak dlugo jak jestes z nami. Teraz wyjdz z tego miejsca.
 
 	AI_StopProcessInfos	(self);
 };
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_DMRMinenwache_GoIn2 (C_INFO)
 	information	= Info_Mod_DMRMinenwache_GoIn2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und könntest du nur kurz vom Eingang weggehen (...)";
+	description	= "I czy móglbys na chwile oddalic sie od wejscia? )";
 };
 
 FUNC INT Info_Mod_DMRMinenwache_GoIn2_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_DMRMinenwache_GoIn2_Condition()
 
 FUNc VOID Info_Mod_DMRMinenwache_GoIn2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn2_15_00"); //Und könntest du nur kurz vom Eingang weggehen, wenn mir ein Beutel mit 200 Goldmünzen versehentlich auf den Boden fallen sollte?
-	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn2_05_01"); //Der einzige Grund vom Eingang wegzugehen wäre, dir ordentlich in den Arsch zu treten.
+	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn2_15_00"); //I czy móglbys po prostu oddalic sie od wejscia na torbe 200 zlotych monet, gdy przypadkowo wypadne na ziemie?
+	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn2_05_01"); //Jedynym powodem oddalenia sie od wejscia jest kopniecie tylka.
 
 	AI_StopProcessInfos	(self);
 };
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_DMRMinenwache_GoIn3 (C_INFO)
 	information	= Info_Mod_DMRMinenwache_GoIn3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Pass auf, ich bin gefährlich.";
+	description	= "Patrz, jestem niebezpieczny.";
 };
 
 FUNC INT Info_Mod_DMRMinenwache_GoIn3_Condition()
@@ -73,10 +73,10 @@ FUNC INT Info_Mod_DMRMinenwache_GoIn3_Condition()
 
 FUNc VOID Info_Mod_DMRMinenwache_GoIn3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn3_15_00"); //Pass auf, ich bin gefährlich.
-	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn3_05_01"); //Haha, das ich nicht lache, du Wurm. Ich könnte dich mit geschlossenen Augen umhauen.
-	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn3_15_02"); //Das glaube ich erst, wenn ich es gesehen habe.
-	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn3_05_03"); //Na schön, jetzt erlebst du dein blaues Wunder.
+	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn3_15_00"); //Patrz, jestem niebezpieczny.
+	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn3_05_01"); //Haha, nie smieje sie, robisz. Móglbym cie wybic z zamknietymi oczami.
+	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn3_15_02"); //Nie wierze w to dopóki nie zobacze tego.
+	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn3_05_03"); //Wszystko w porzadku, teraz przezywasz swój niebieski cud.
 
 	AI_StopProcessInfos	(self);
 
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_DMRMinenwache_GoIn4 (C_INFO)
 	information	= Info_Mod_DMRMinenwache_GoIn4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mir in den Arsch zu treten? Das glaube ich erst (...)";
+	description	= "Kopiac moja dupe? Nie wierze w to dopiero wtedy, gdy ja (....). )";
 };
 
 FUNC INT Info_Mod_DMRMinenwache_GoIn4_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mod_DMRMinenwache_GoIn4_Condition()
 
 FUNc VOID Info_Mod_DMRMinenwache_GoIn4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn4_15_00"); //Mir in den Arsch zu treten? Das glaube ich erst, wenn ich es gesehen habe ...
-	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn4_05_01"); //Ok, jetzt reicht’s.
+	AI_Output(hero, self, "Info_Mod_DMRMinenwache_GoIn4_15_00"); //Kopiac moja dupe? Nie uwierze w to, dopóki nie zobacze tego.....
+	AI_Output(self, hero, "Info_Mod_DMRMinenwache_GoIn4_05_01"); //To wystarczy.
 
 	AI_StopProcessInfos	(self);
 
@@ -144,7 +144,7 @@ func int Info_Mod_DMRMinenwache_FirstWarn_Condition()
 
 func void Info_Mod_DMRMinenwache_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_DMRMinenwache_FirstWarn_05_00"); //HALT! Niemand darf ohne Genehmigung die Mine betreten.
+	AI_Output (self, hero,"Info_Mod_DMRMinenwache_FirstWarn_05_00"); //HALT! Nikt nie moze wejsc do kopalni bez zezwolenia.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, DMRMinenwache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -177,7 +177,7 @@ FUNC INT Info_Mod_DMRMinenwache_SecondWarn_Condition()
 
 func void Info_Mod_DMRMinenwache_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_DMRMinenwache_SecondWarn_05_00"); //Keinen Schritt weiter!
+	AI_Output (self, hero,"Info_Mod_DMRMinenwache_SecondWarn_05_00"); //Nie wykonuj kolejnego kroku!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,DMRMinenwache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -215,7 +215,7 @@ func void Info_Mod_DMRMinenwache_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_DMRMinenwache_Attack_05_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_DMRMinenwache_Attack_05_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

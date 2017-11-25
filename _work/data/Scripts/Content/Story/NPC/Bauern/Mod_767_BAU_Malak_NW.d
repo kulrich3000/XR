@@ -1,7 +1,7 @@
 instance Mod_767_BAU_Malak_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schäfer";
+	name 		= "pasterz";
 	guild 		= GIL_OUT;
 	id 			= 767;
 	voice 		= 8;

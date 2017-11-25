@@ -1,7 +1,7 @@
 instance Mod_7715_STT_Balam_REL (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Balam";
+	name 		=		"balam";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_out;
 	level 		=		3;

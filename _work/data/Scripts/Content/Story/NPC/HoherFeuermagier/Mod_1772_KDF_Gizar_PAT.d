@@ -1,7 +1,7 @@
 INSTANCE Mod_1772_KDF_Gizar_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gizar";
+	name 		= "jaszczurka";
 	guild 		= GIL_VLK;
 	id 			= 1772;
 	voice 		= 10;

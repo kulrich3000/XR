@@ -2,7 +2,7 @@ instance Mod_1294_SLD_Lefty_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =						"Lefty";
+	name =						"lewy";
 	Npctype =					NPCTYPE_MAIN;	
 	guild =						GIL_mil;      
 	level =						8;

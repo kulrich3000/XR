@@ -19,12 +19,12 @@ FUNC INT Info_Mod_LeibwacheHymir_Treue_Condition()
 
 FUNC VOID Info_Mod_LeibwacheHymir_Treue_Info()
 {
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Treue_06_00"); //Halt! Hier geht es nicht weiter für dich.
-	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Treue_15_01"); //Ich habe eine Botschaft von Lord Hagen. Schau.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Treue_06_00"); //Zatrzymaj sie! Tutaj nie mozna pójsc dalej.
+	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Treue_15_01"); //Mam wiadomosc od Pana Hagena. Spójrz.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Treue_06_02"); //Tatsächlich ... versehen mit dem königlichen Siegel. In Ordnung, du darfst zu Hymir.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Treue_06_02"); //W rzeczywistosci.... z pieczecia królewska. W porzadku, mozna pójsc do Hymira.
 
 	AI_StopProcessInfos	(self);
 };
@@ -50,10 +50,10 @@ FUNC INT Info_Mod_LeibwacheHymir_Hi_Condition()
 
 FUNC VOID Info_Mod_LeibwacheHymir_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Hi_06_00"); //Halt! Ohne Erlaubnis wird niemand zu Hymir vorgelassen.
-	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Hi_15_01"); //Warum das denn? Er sieht nicht so aus, als hätte er viel zu tun.
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Hi_06_02"); //Das ist egal. Ich habe den Befehl, niemanden passieren zu lassen, und auch du wirst dich danach richten, verstanden!
-	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Hi_15_03"); //Schon in Ordnung, ich geh ja schon.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Hi_06_00"); //Zatrzymaj sie! Nikt nie moze wejsc do Hymiru bez pozwolenia.
+	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Hi_15_01"); //Dlaczego tak sie stalo? Nie wyglada na to, ze ma wiele do zrobienia.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_Hi_06_02"); //Nie ma to znaczenia. Mam rozkaz, aby nikogo nie pozwalac, a wy równiez bedziecie go przestrzegac, zrozumieli!
+	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_Hi_15_03"); //To prawda, ide.
 
 	AI_TurnAway	(hero, self);
 
@@ -82,9 +82,9 @@ FUNC INT Info_Mod_LeibwacheHymir_DarfDurch_Condition()
 
 FUNC VOID Info_Mod_LeibwacheHymir_DarfDurch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_00"); //Halt!
-	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_DarfDurch_15_01"); //Ole schickt mich, er meint Hymir will mich sehen.
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_02"); //Warte hier!
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_00"); //Zatrzymaj sie!
+	AI_Output(hero, self, "Info_Mod_LeibwacheHymir_DarfDurch_15_01"); //Ole mnie poslal, to znaczy Hymir chce mnie zobaczyc.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_02"); //Czekaj tutaj!
 
 	AI_TurnToNpc	(self, Mod_1016_KGD_Hymir_MT);
 
@@ -92,7 +92,7 @@ FUNC VOID Info_Mod_LeibwacheHymir_DarfDurch_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_03"); //Gut! Du darfst zu ihm gehen.
+	AI_Output(self, hero, "Info_Mod_LeibwacheHymir_DarfDurch_06_03"); //Dobrze! Mozesz sie do niego udac.
 };
 
 INSTANCE Info_Mod_LeibwacheHymir_EXIT (C_INFO)

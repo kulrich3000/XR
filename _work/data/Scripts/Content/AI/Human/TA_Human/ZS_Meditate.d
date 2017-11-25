@@ -52,7 +52,7 @@ func void ZS_Meditate_Loop()
 	};
 	if (praytime >= 98)
 	{
-		AI_Output(self, NULL, "ZS_Meditate_Om"); //Omm...
+		AI_Output(self, NULL, "ZS_Meditate_Om"); //Omm.....
 	};
 
 	AI_Wait(self, 1);

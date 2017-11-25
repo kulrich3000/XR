@@ -15,10 +15,10 @@ FUNC INT Info_Mod_UndeadOrkShamane_Hi_Condition()
 
 FUNC VOID Info_Mod_UndeadOrkShamane_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_Hi_18_00"); //(zu sich selbst) Ein Buch von großer magischer Kraft spüre ich. Nur zu neugierig bin ich, welche Bewandtnis es damit auf sich hat.
-	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_Hi_18_01"); //(zu dem Helden) Was, du hier, der meinen alten Meister einst verbannte?! Ich ziehe mich lieber mit dem Buch an einen Ort toter Stille zurück, um mich ihm ungestört zu widmen.
+	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_Hi_18_00"); //Ksiazka o wielkiej magicznej mocy, czuje. Jestem zbyt ciekawy, aby wiedziec, jaka wiedze posiada.
+	AI_Output(self, hero, "Info_Mod_UndeadOrkShamane_Hi_18_01"); //Co ty, który kiedys wyrzucil mojego starego pana? Wole siegnac z ksiazka do miejsca martwej ciszy, aby poswiecic sie jej bez zaklócen.
 
-	B_LogEntry	(TOPIC_MOD_THERIDDLE, "Verdammt. Dieser untote Orkschamane hat mir einfach das Buch vor der Nase weggeklaut und sich an einen 'Ort toter Stille' abgesetzt, was immer er damit auch meinte.");
+	B_LogEntry	(TOPIC_MOD_THERIDDLE, "Damn go. Ten nieumarly orkiestr, który po prostu ukradl mi ksiazke i zrzucil ja w 'miejsce martwej ciszy', cokolwiek by to nie oznaczalo.");
 
 	AI_StopProcessInfos	(self);
 

@@ -13,7 +13,7 @@ func void ZS_BeliarCity()
 	Npc_SetStateTime(self, 0);	*/
 
 
-	Print ("Die Wirkung des Zaubers neigt sich dem Ende zu");
+	Print ("Efekt zaklecia dobiega konca.");
 	
 	if (Npc_GetStateTime(self) > SPL_TIME_BeliarCity)
 	{
@@ -25,7 +25,7 @@ func void ZS_BeliarCity()
 
 		if (Npc_GetStateTime(self) < 60)
 		{
-			Print ("Die Wirkung des Zaubers neigt sich dem Ende zu");
+			Print ("Efekt zaklecia dobiega konca.");
 		};
 
 		ZS_BeliarCity();

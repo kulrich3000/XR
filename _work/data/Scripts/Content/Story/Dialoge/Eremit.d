@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Eremit_Hi (C_INFO)
 	information	= Info_Mod_Eremit_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aha, da hätten wir also unseren Dieb.";
+	description	= "Wiec jest nasz zlodziej.";
 };
 
 FUNC INT Info_Mod_Eremit_Hi_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Eremit_Hi_Condition()
 
 FUNC VOID Info_Mod_Eremit_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Hi_15_00"); //Aha, da hätten wir also unseren Dieb.
-	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_01"); //(kindlich) Kein Dieb, nein! Nur spielen!
-	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_02"); //(ernst) Ich hab dir doch gesagt, du sollst abhauen. War doch klar, dass einer dich findet.
-	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_03"); //(kindlich, trotzig) Will aber spielen!
+	AI_Output(hero, self, "Info_Mod_Eremit_Hi_15_00"); //Wiec jest nasz zlodziej.
+	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_01"); //Nie ma zlodzieja, zlodziejstwa! Po prostu graj!
+	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_02"); //Powiedzialem, zebyscie wyszli z tego miejsca. Jasne bylo, ze ktos cie znajdzie.
+	AI_Output(self, hero, "Info_Mod_Eremit_Hi_04_03"); //Ale chce grac!
 };
 
 INSTANCE Info_Mod_Eremit_WerBistDu (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Eremit_WerBistDu (C_INFO)
 	information	= Info_Mod_Eremit_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du eigentlich?";
+	description	= "Kim jestes przy okazji?";
 };
 
 FUNC INT Info_Mod_Eremit_WerBistDu_Condition()
@@ -46,22 +46,22 @@ FUNC INT Info_Mod_Eremit_WerBistDu_Condition()
 
 FUNC VOID Info_Mod_Eremit_WerBistDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_00"); //Wer bist du eigentlich?
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_01"); //(kindlich) Wen von uns meinst du?
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_02"); //(ernst) Selbstverständlich mich. Warum sollte er mit dir Kindskopf sprechen wollen?
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_03"); //(kindlich) Das nimmst du sofort zurück!
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_04"); //(ernst) Vergiss es.
-	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_05"); //He, seid mal ruhig. Könnt ihr, äh, euch nicht einigen, bevor ihr was sagt?
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_06"); //(kindlich) Im Geheimen?
-	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_07"); //Ja, genau.
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_08"); //(kindlich, begeistert) Ohhh ...
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_09"); //(ernst) An mir soll's nicht scheitern.
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_10"); //(ernst) Ist mir eh peinlich, wenn jemand die Kommentare dieses Zurückgebliebenen mithören muss.
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_11"); //(kindlich) Das nimmst du zurück!
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_12"); //(ernst) Nein!
-	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_13"); //Psst.
-	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_14"); //(räuspert sich, mit normaler Stimme) Hallo. Erinnert uns dunkel an alte Zeiten, so zu sprechen.
-	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_15"); //Schon viel besser.
+	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_00"); //Kim jestes przy okazji?
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_01"); //Które z nas masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_02"); //(powaznie) Oczywiscie, ja. Dlaczego chcialby porozmawiac z Toba, glowa dziecka?
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_03"); //Zabierasz to natychmiast!
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_04"); //Powaznie o tym zapomnij.
+	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_05"); //Hej, badz cichy. Czy nie mozesz sie zgodzic, zanim cos powiesz?
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_06"); //W tajemnicy?
+	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_07"); //Tak, to prawda.
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_08"); //(dzieci, entuzjasci) Ohhhhhhhh....
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_09"); //Nie chce, aby zawiodla z mojej winy.
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_10"); //Powaznie, tak czy owak jestem zaklopotany, kiedy ktos musi sluchac komentarzy osoby opóznionej.
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_11"); //Zabierasz to z powrotem!
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_12"); //Nie!
+	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_13"); //Shh.
+	AI_Output(self, hero, "Info_Mod_Eremit_WerBistDu_04_14"); //(nosi gardlo, normalny glos) Witaj. Przypomina nam o dawnych czasach, ze tak powiem.
+	AI_Output(hero, self, "Info_Mod_Eremit_WerBistDu_15_15"); //Znacznie lepiej teraz.
 };
 
 INSTANCE Info_Mod_Eremit_Woher (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Eremit_Woher (C_INFO)
 	information	= Info_Mod_Eremit_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher kommst du?";
+	description	= "Skad pochodzisz?";
 };
 
 FUNC INT Info_Mod_Eremit_Woher_Condition()
@@ -85,23 +85,23 @@ FUNC INT Info_Mod_Eremit_Woher_Condition()
 
 FUNC VOID Info_Mod_Eremit_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_00"); //Woher kommst du?
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_01"); //Ursprünglich kommen wir vom Festland und haben gemeinsam Karten hergestellt.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_02"); //Bis wir auf diesem Schiff anheuerten, um eine Karte von der Küste Khorinis' anzulegen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_03"); //Wir waren noch nicht mal in seichten Gewässern, da wurden wir von einer Orkgaleere angegriffen und versenkt.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_04"); //Auf einem Fass voll Portwein haben wir es bis zu dem Strand geschafft - als Einzige.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_05"); //Bis dahin hatten die Piranhas uns schon vier Zehen abgeknabbert.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_06"); //(kindlich) Mir nur drei.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_07"); //(ernst) Du kannst einfach nicht weiter zählen als bis drei.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_08"); //Danach haben wir es uns gemütlich eingerichtet.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_09"); //Nicht am Strand, da hausen die Freibeuter. Mit denen wollten wir nichts zu tun haben.
-	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_10"); //Hast du nie versucht, zurück zum Festland zu kommen?
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_11"); //Nö, Mann. Dort wartet nur ein nervige Frau auf uns, die keine Kinder haben will.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_12"); //Karten können wir hier auch zeichnen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_13"); //Durch den Handel mit den Piraten werden wir mit dem Nötigsten versorgt, und mehr brauchen wir auch nicht.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_14"); //Wobei die Einsamkeit manchmal langweilig wird und wir uns gegenseitig auf die Nerven gehen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_15"); //Manchmal wünschen wir uns einen Dritten im Bunde.
-	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_16"); //Adanos bewahre!
+	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_00"); //Skad pochodzisz?
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_01"); //Pierwotnie pochodzilismy z ladu i wspólnie przygotowalismy mapy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_02"); //Dopóki nie wynajelismy tego statku do stworzenia mapy wybrzeza Khorini.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_03"); //Nie bylismy nawet na plytkich wodach, kiedy zostalismy zaatakowani i zatopieni przez Orkgaleere.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_04"); //Na beczce wina portowego wyplynelismy na plaze - jedynego.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_05"); //Do tego czasu Piranie zerwali juz cztery palce.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_06"); //Dla mnie tylko trzy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_07"); //Po prostu nie mozna liczyc wiecej niz trzy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_08"); //Potem osiedlilismy sie wygodnie.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_09"); //Nie na plazy mieszkaja tu policjanci. Nie chcielismy z nimi nic wspólnego.
+	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_10"); //Nie próbowales nigdy wrócic na lad?
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_11"); //Nah, czlowiek. Czeka na nas tylko jedna irytujaca kobieta, która nie chce miec dzieci.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_12"); //Tutaj mozemy równiez rysowac mapy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_13"); //Dzieki handlowi z piratami dostarczamy nam najwazniejsze rzeczy, a to wszystko, czego potrzebujemy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_14"); //Samotnosc czasami sie nudzi, a my nawzajem na siebie nerwy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Woher_04_15"); //Czasami zyczymy sobie jednej trzeciej w sojuszu.
+	AI_Output(hero, self, "Info_Mod_Eremit_Woher_15_16"); //Zapisz Adanos!
 };
 
 INSTANCE Info_Mod_Eremit_WiesoDieb (C_INFO)
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Eremit_WiesoDieb (C_INFO)
 	information	= Info_Mod_Eremit_WiesoDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso hast du den Wassermagiern die Ausrüstung gestohlen?";
+	description	= "Dlaczego kradles sprzet magików wodnych?";
 };
 
 FUNC INT Info_Mod_Eremit_WiesoDieb_Condition()
@@ -125,16 +125,16 @@ FUNC INT Info_Mod_Eremit_WiesoDieb_Condition()
 
 FUNC VOID Info_Mod_Eremit_WiesoDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_WiesoDieb_15_00"); //Wieso hast du den Wassermagiern die Ausrüstung gestohlen?
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_01"); //Wassermagier sind die Typen in den Schlafröcken?
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_02"); //Einerseits ... (muss sich überwinden) wollten wir mit ihnen spielen.
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_03"); //Andererseits brauchen wir die Ingredenzien für ein paar Rezepte, die das alte Volk hinterlassen hat.
-	AI_Output(hero, self, "Info_Mod_Eremit_WiesoDieb_15_04"); //Du kannst also ihre Sprache lesen?
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_05"); //Lesen, sprechen, was du willst.
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_06"); //Ich habe alle Texte gelesen, die ich gefunden habe.
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_07"); //Am Anfang habe ich natürlich kein Wort verstanden, aber ich hatte ja Zeit.
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_08"); //Wenn es ein Wort gibt, dass das alte Volk beschreibt, dann ist es "magisch".
-	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_09"); //In der Hinsicht waren sie euch voraus.
+	AI_Output(hero, self, "Info_Mod_Eremit_WiesoDieb_15_00"); //Dlaczego kradles sprzet magików wodnych?
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_01"); //Magowie wody sa mezczyzni w szatach?
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_02"); //Z jednej strony.... (must overcome) chcielismy sie z nimi bawic.
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_03"); //Z drugiej strony, potrzebujemy skladników dla kilku przepisów pozostawionych przez starych ludzi.
+	AI_Output(hero, self, "Info_Mod_Eremit_WiesoDieb_15_04"); //Mozesz wiec przeczytac jej jezyk?
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_05"); //Czytanie, mówienie, cokolwiek chcesz.
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_06"); //Czytalem wszystkie znalezione teksty.
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_07"); //Oczywiscie na poczatku nie rozumialem tego slowa, ale mialem czas.
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_08"); //Wenn es ein Wort gibt, dass das alte Volk beschreibt, dann ist es "magiczny".
+	AI_Output(self, hero, "Info_Mod_Eremit_WiesoDieb_04_09"); //W tym wzgledzie byli przed wami.
 };
 
 INSTANCE Info_Mod_Eremit_AlteSprache (C_INFO)
@@ -145,7 +145,7 @@ INSTANCE Info_Mod_Eremit_AlteSprache (C_INFO)
 	information	= Info_Mod_Eremit_AlteSprache_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich die Sprache des alten Volkes lehren?";
+	description	= "Czy mozesz nauczyc mnie jezyka starych ludzi?";
 };
 
 FUNC INT Info_Mod_Eremit_AlteSprache_Condition()
@@ -158,10 +158,10 @@ FUNC INT Info_Mod_Eremit_AlteSprache_Condition()
 
 FUNC VOID Info_Mod_Eremit_AlteSprache_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_AlteSprache_15_00"); //Kannst du mich die Sprache des alten Volkes lehren?
-	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_01"); //Zu gegebener Zeit könnte man darüber verhandeln.
-	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_02"); //(kindlich) Fnidhdr gröggel snüt!
-	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_03"); //(ernst) Pass bloß auf, was du sagst!
+	AI_Output(hero, self, "Info_Mod_Eremit_AlteSprache_15_00"); //Czy mozesz nauczyc mnie jezyka starych ludzi?
+	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_01"); //Mogloby to zostac wynegocjowane w odpowiednim czasie.
+	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_02"); //Fnidhdr gröggel snüt!
+	AI_Output(self, hero, "Info_Mod_Eremit_AlteSprache_04_03"); //Wystarczy uwazac na usta!
 };
 
 INSTANCE Info_Mod_Eremit_Prisma (C_INFO)
@@ -172,7 +172,7 @@ INSTANCE Info_Mod_Eremit_Prisma (C_INFO)
 	information	= Info_Mod_Eremit_Prisma_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bräuchte da Hilfe bei der Herstellung eines Prismas.";
+	description	= "Potrzebuje pomocy w tworzeniu pryzmatu.";
 };
 
 FUNC INT Info_Mod_Eremit_Prisma_Condition()
@@ -185,21 +185,21 @@ FUNC INT Info_Mod_Eremit_Prisma_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_00"); //Ich bräuchte da Hilfe bei der Herstellung eines magischen Prismas.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_01"); //Ein magisches Prisma? Davon haben wir auch schon gehört.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_02"); //Eine Zeitlang war das mal in Mode beim alten Volk.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_03"); //Allerdings sind die Teile so schnell wieder verschwunden, wie sie aufgekommen sind. Frag nicht, warum.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_04"); //Du weißt aber nicht zufällig, wie man so ein Prisma herstellen könnte?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_05"); //Doch, das würden wir wohl hinbekommen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_06"); //(ernst) Also ich jedenfalls.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_07"); //Dazu bräuchten wir nur eine schwarze Perle.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_08"); //Wenn ich dir eine bringe, schleifst du mir dann das Prisma?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_09"); //Ja. Unter einer Bedingung.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_10"); //Die wäre?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_11"); //Wir dürfen die Sachen von den Wassermagiern behalten.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_12"); //Saturas wird mir den Kopf abreißen, aber na schön.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_13"); //Wir machen uns auf den Rückweg, komm vorbei, soweit du bereit bist.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_14"); //Auf dieser Karte haben wir markiert, wo du uns finden kannst.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_00"); //Potrzebuje pomocy w tworzeniu magicznego pryzmatu.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_01"); //magiczny pryzmat? Slyszelismy równiez o tym.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_02"); //Przez jakis czas byl on modny dla dawnych ludzi.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_03"); //Czesci te jednak zniknely tak szybko, jak tylko sie pojawily. Nie pytaj dlaczego.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_04"); //Czy nie zdarzyloby Ci sie wiedziec, jak wykonac taki pryzmat?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_05"); //Tak, prawdopodobnie poradzilibysmy sobie z tym.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_06"); //(powaznie) No cóz, ja tak czy owak.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_07"); //Potrzebujemy jedynie czarnej perly.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_08"); //Jesli przyniose Ci jedna, to czy mielisz mój pryzmat?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_09"); //Tak. Jeden warunek.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_10"); //Co to jest?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_11"); //Mozemy zatrzymac magów wody.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma_15_12"); //Szatan's gonna zerwac glowe z glowy, ale dobrze.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_13"); //Wrócimy z powrotem, wrócimy tak dlugo, jak tylko bedziesz gotowy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma_04_14"); //Na tej mapie zaznaczylismy gdzie mozna nas znalezc.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_Eremit, 1);
 
@@ -211,11 +211,11 @@ FUNC VOID Info_Mod_Eremit_Prisma_Info()
 
 	if (Mod_Saturas_Gast == 1)
 	{
-		B_LogEntry_More (TOPIC_MOD_MAGIEPRISMA, TOPIC_MOD_SATURAS_TAGGAST, "Der Eremit, der die Wassermagier bestohlen hat, will mit bei dem Prisma helfen können. Ich muss nur mit einer schwarzen Perle zu ihm kommen. Den Weg zu seiner Behausung hat er mir aufgezeichnet.", "Bei dem Dieb handelt es sich um einen Eremiten. Im Austausch mit seinem Wissen habe ich versprochen, Saturas gegenüber die Schuld auf mich zu nehmen.");
+		B_LogEntry_More (TOPIC_MOD_MAGIEPRISMA, TOPIC_MOD_SATURAS_TAGGAST, "pustelnik, który ukradl magów wodnych chce byc w stanie pomóc z pryzmatem. Musze tylko przyjsc do niego z czarna perla. Zapisal droge do swego mieszkania dla mnie.", "Zlodziej jest pustelnikiem. W zamian za jego wiedze obiecalem przyjac wine za wine Szatana.");
 	}
 	else
 	{
-		B_LogEntry_More (TOPIC_MOD_MAGIEPRISMA, TOPIC_MOD_SATURAS_NACHTGAST, "Der Eremit, der die Wassermagier bestohlen hat, will mit bei dem Prisma helfen können. Ich muss nur mit einer schwarzen Perle zu ihm kommen. Den Weg zu seiner Behausung hat er mir aufgezeichnet.", "Bei dem Dieb handelt es sich um einen Eremiten. Im Austausch mit seinem Wissen habe ich versprochen, Saturas gegenüber die Schuld auf mich zu nehmen.");
+		B_LogEntry_More (TOPIC_MOD_MAGIEPRISMA, TOPIC_MOD_SATURAS_NACHTGAST, "pustelnik, który ukradl magów wodnych chce byc w stanie pomóc z pryzmatem. Musze tylko przyjsc do niego z czarna perla. Zapisal droge do swego mieszkania dla mnie.", "Zlodziej jest pustelnikiem. W zamian za jego wiedze obiecalem przyjac wine za wine Szatana.");
 	};
 };
 
@@ -227,7 +227,7 @@ INSTANCE Info_Mod_Eremit_Prisma2 (C_INFO)
 	information	= Info_Mod_Eremit_Prisma2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin da und bereit.";
+	description	= "Jestem tam i jestem gotowy.";
 };
 
 FUNC INT Info_Mod_Eremit_Prisma2_Condition()
@@ -242,14 +242,14 @@ FUNC INT Info_Mod_Eremit_Prisma2_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma2_15_00"); //Ich bin da und bereit.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma2_15_00"); //Jestem tam i jestem gotowy.
 	
 	B_GiveInvItems(hero, self, ItMi_DarkPearl, 1);
 	
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma2_04_01"); //(kindlich) Und du hast sogar deine Freunde zum Spielen mitgebracht?
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma2_15_02"); //(irritiert) Welche Freunde?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma2_04_01"); //A nawet przyprowadziles swoich przyjaciól do gry z Toba?
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma2_15_02"); //Jaki znajomy?
 
-	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "Meine Widersacher bleiben mir auf den Fersen. Als ich wegen des Prismas den Eremiten aufsuchte, griff mich eine Reihe von Untoten unter der Führung Urnols an.");
+	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "Moi przeciwnicy pozostaja na pietach. Kiedy odwiedzilem pustelnika dla pryzmatu, zaatakowalo mnie kilku nieumarlych pod przywództwem Urnola.");
 
 	AI_StopProcessInfos	(self);
 
@@ -287,26 +287,26 @@ FUNC INT Info_Mod_Eremit_Prisma3_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_00"); //Denen haben wir ordentlich eingeheizt. Gegen uns drei hatten sie keine Chance.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_01"); //Woher wissen die immer, wo ich mich gerade befinde?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_02"); //Unmöglich ist nichts. Vielleicht kennen sie ein paar Kniffe des alten Volkes.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_03"); //Was für Kniffe?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_04"); //Wir vermuten nur. Sie könnten dich magisch markiert haben, sodass du überall hin eine feine Spur ziehst, die für den Zaubernden sichtbar ist.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_05"); //Bist du einem von ihnen schon mal nahe gekommen, ohne dass du ihn danach getötet hast?
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_06"); //Mehrmals.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_07"); //Dann wäre das zumindest eine Möglichkeit.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_08"); //Und wie könnte ich die Markierung wieder loswerden?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_09"); //Keine Ahnung. Der Zauber ist nicht darauf ausgelegt, leicht gebrochen werden zu können.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_10"); //Eventuell ließe er sich aber austricksen, indem du ihn auf einen anderen Gegenstand umlenkst.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_11"); //Ein Gegenstand, der sich danach willkürlich durch die Welt bewegt, um meine Gegner zu verwirren.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_12"); //Genau.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_13"); //Schön und gut, aber wie fange ich das an?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_14"); //Frag uns nicht ... Was sagen denn deine Schlafröcke dazu? Vielleicht hat einer von denen eine Idee.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_15"); //Oder jemand, der sich besser mit dem alten Volk auskennt als wir. Wenn es so jemanden gibt.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_16"); //Es wäre besser, du würdest die Markierung abstreifen, bevor wir fortfahren. So viel Besuch ist uns doch ein wenig lästig.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_17"); //Bis du wieder zurück bist, haben wir auch das Prisma fertig geschliffen.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_00"); //Ogrzalismy je calkiem dobrze. Oni nie mieli szans na to, zeby nam sie sprzeciwic.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_01"); //Skad zawsze wiedza, gdzie jestem teraz?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_02"); //Nic nie jest niemozliwe. Moze znaja kilka sztuczek starych ludzi.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_03"); //Jakie triki?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_04"); //Po prostu sie domyslamy. Byc moze zaznaczyli cie magicznie, abys mógl naniesc drobny slad w dowolnym miejscu, który jest widoczny dla kólka.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_05"); //Czy kiedykolwiek zblizyles sie do jednego z nich zanim go zabiles?
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_06"); //Kilka razy.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_07"); //Jest to przynajmniej jedna z mozliwosci.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_08"); //Jak moge pozbyc sie markera?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_09"); //Nie wiem o tym. Czar nie jest przeznaczony do latwego lamania.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_10"); //Mozliwe, ze uda Ci sie go oszukac przekierowujac go na inny przedmiot.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_11"); //Obiekt, który nastepnie losowo porusza sie po swiecie, aby zdezorientowac moich przeciwników.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_12"); //Dokladnie.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma3_15_13"); //Wszystko w porzadku, ale jak zaczac?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_14"); //Nie pytaj nas..... Co mówia szaty? Moze jeden z nich ma pomysl.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_15"); //Albo ktos, kto zna starych ludzi lepiej niz my. Jesli cos takiego jest.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_16"); //Lepiej byloby, gdybyscie Panstwo zdjeli znacznik przed przystapieniem do pracy. Tak wielu odwiedzajacych nas jest troche denerwujacych.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma3_04_17"); //Zanim wrócisz do domu, skonczymy polerowanie pryzmatu.
 
-	B_LogEntry_More	(TOPIC_MOD_MAGISCHEMARKIERUNG, TOPIC_MOD_MAGIEPRISMA, "Der Eremit vermutet, ich würde wegen einer magischen Markierung für diesen finsteren Urnol und seinen Meister überall sichtbar sein. Er selbst kennt keine Methode, sie wieder loszuwerden. Ich sollte mich an Vatras oder einen Kundigen des alten Volkes wenden, so ich denn einen kenne. Als Notlösung könnte auch Argez in Frage kommen.", "Der Eremit schleift nun die schwarze Perle. Wenn ich die magische Markierung abgestreift habe, soll ich wiederkommen.");
+	B_LogEntry_More	(TOPIC_MOD_MAGISCHEMARKIERUNG, TOPIC_MOD_MAGIEPRISMA, "Pustelnik podejrzewa, ze wszedzie bylbym widoczny z powodu magicznego markera dla tego zlowieszczego Urnola i jego mistrza. Sam nie wie, jak sie ich pozbyc. Jesli ja znam, powinienem zwrócic sie do Vatras lub jednego z starozytnych ludzi. Argez móglby byc równiez rozwiazaniem awaryjnym.", "pustelnik teraz miesza czarna perle. Gdy zdejme znacznik magii, chca, zebym wrócil.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -331,15 +331,15 @@ FUNC INT Info_Mod_Eremit_Prisma4_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_00"); //Komm schon! Wir müssen noch ein kleines Stück Weg hinter uns bringen!
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_01"); //Wohin geht's?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_02"); //Es gibt eine Höhle hier in der Nähe, in der Beliars Macht stark ist. Das wird uns genügen müssen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_03"); //Beliar? Wieso zum Teufel der?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_04"); //Beliar ist der einzige der drei Götter, der das Unbändige ähnlich wie Radanos, der Gott des alten Volkes, verkörpert.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_05"); //Da wir Radanos nicht mehr um Hilfe bitten können, müssen wir eben mit Beliar vorlieb nehmen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_06"); //Ich habe da kein gutes Gefühl ...
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_07"); //Es wäre auch unklug, sich in Beliars Gegenwart sicher zu fühlen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_09"); //Aber nun lass uns gehen!
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_00"); //Chodz, przyjdz! Nadal mamy jeszcze pewna droge do przebycia!
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_01"); //Gdzie zmierzamy?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_02"); //W poblizu znajduje sie jaskinia, w której moc Beliara jest silna. To musi wystarczyc.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_03"); //Czysty? Co robi pieklo?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_04"); //Beliar jest jedynym z trzech bogów, którzy ucielesniaja nieposkromione jak Radanos, bóg starozytnego ludu.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_05"); //Poniewaz nie mozemy juz prosic Radanosa o pomoc, musimy zajac sie Beliarem.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma4_15_06"); //Mam zle uczucie....
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_07"); //Nierozsadne byloby równiez czuc sie bezpiecznie w obecnosci Beliara.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma4_04_09"); //Ale idzmy teraz!
 
 	AI_StopProcessInfos	(self);
 
@@ -369,25 +369,25 @@ FUNC INT Info_Mod_Eremit_Prisma5_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_00"); //Du musst uns bei dem Ritual assistieren.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_01"); //Wie funktioniert das überhaupt?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_02"); //Das Prisma ist noch nicht aufnahmefähig genug für mehrere Zaubersprüche, deshalb werden wir einen Dehnzauber wirken, der das magische Volumen des Prismas vergrößert.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_03"); //Das kann einige Zeit dauern. Das Prisma wird versuchen, den Zauber abzustoßen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_04"); //Aber mit Beliars und deiner Hilfe sollte es gelingen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_05"); //(kindlich) Mir brummt der Kopf!
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_06"); //Was kann ich machen?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_07"); //Wir zwei haben genug damit zu tun, den Dehnzauber aufrecht zu erhalten.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_08"); //Du musst aufpassen, dass er im Prisma bleibt.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_09"); //Und wie?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_10"); //Solange er sich im Prisma befindet, leuchtet es auf.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_11"); //Ermattet das Prisma, musst du schnell handeln - du hast nur wenige Sekunden, um den Zauber "Beliars Zorn" zu wirken, der den Dehnzauber zurück in seinen eigentlichen Bestimmungsort treibt.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_12"); //Hier hast du ein paar Spruchrollen. Sollte es bei den ersten Versuchen nicht klappen, geben wir dir noch mehr.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_00"); //Musisz nam pomóc w obrzedach.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_01"); //Jak to dziala?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_02"); //Pryzmat nie jest jeszcze na tyle chlonny, by pomnozyc czary wielokrotnych zaklec, wiec rzucimy zaklecie ekspansyjne, by zwiekszyc magiczna objetosc pryzmatu.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_03"); //Moze to zajac troche czasu. Pryzmat bedzie próbowal odpychac czar.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_04"); //Ale z Beliarsem i wasza pomoca, to powinno dzialac.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_05"); //Moja glowa bzyczy!
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_06"); //Co moge zrobic?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_07"); //Dwoje z nas ma wystarczajaco duzo do zrobienia, aby utrzymac zaklecie.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_08"); //Trzeba sie upewnic, ze on pozostaje w pryzmie.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma5_15_09"); //I jak?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_10"); //Dopóki jest w pryzmie, swieci sie.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_11"); //Ermattet das Prisma, musst du schnell handeln - du hast nur wenige Sekunden, um den Zauber "Gniew Beliara" zu wirken, der den Dehnzauber zurück in seinen eigentlichen Bestimmungsort treibt.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_12"); //Oto kilka zaklec. Jesli kilka pierwszych prób nie zadziala, damy ci jeszcze wiecej.
 
 	B_GiveInvItems	(self, hero, ItSc_BeliarsRage, 6);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_13"); //Bist du bereit?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma5_04_13"); //Czy jestes gotowy?
 
-	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "Das Ritual kann nun losgehen - ich muss aufpassen, dass der Dehnzauber, den der Eremit wirkt, das Prisma nicht verlässt. Sollte das Prisma ermatten, muss ich sofort den Zauber 'Beliars Zorn' sprechen.");
+	B_LogEntry	(TOPIC_MOD_MAGIEPRISMA, "Rytual moze sie teraz zaczac - musze uwazac, aby rozciagajace sie zaklecia pustelników nie opuscily pryzmatu. Jesli pryzmat ma sie ubrac, musze natychmiast rzucic zaklecie 'Beliars Zorn'.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -400,7 +400,7 @@ INSTANCE Info_Mod_Eremit_Prisma6 (C_INFO)
 	information	= Info_Mod_Eremit_Prisma6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass es uns versuchen.";
+	description	= "Dajmy jej strzal.";
 };
 
 FUNC INT Info_Mod_Eremit_Prisma6_Condition()
@@ -413,7 +413,7 @@ FUNC INT Info_Mod_Eremit_Prisma6_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma6_15_00"); //Lass es uns versuchen.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma6_15_00"); //Dajmy jej strzal.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -448,7 +448,7 @@ FUNC INT Info_Mod_Eremit_Prisma7_Condition()
 
 FUNC VOID Info_Mod_Eremit_Prisma7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma7_04_00"); //Das hat noch nicht ganz geklappt. Noch mal!
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma7_04_00"); //To jeszcze nie zadzialalo. Ponownie!
 
 	AI_StopProcessInfos	(self);
 
@@ -483,7 +483,7 @@ FUNC INT Info_Mod_Eremit_Prisma8_Condition()
 FUNC VOID Info_Mod_Eremit_Prisma8_Info()
 {
 	if (!Mod_PrismaZauber_Eremit) {
-		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_00"); //Du hast ja gar keine Zauber mehr. Hier, nimm neue.
+		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_00"); //Nie masz zaklec. Oto kilka nowych.
 
 		B_GiveInvItems	(self, hero, ItSc_BeliarsRage, 6);
 
@@ -491,16 +491,16 @@ FUNC VOID Info_Mod_Eremit_Prisma8_Info()
 
 		Mod_PrismaZauber_Eremit = TRUE;
 	} else {
-		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_01"); //Puh, wir sind ja immer noch nicht fertig. Wir haben zwar noch ein paar Zauber, aber bei deinem Verschleiß bald nicht mehr.
-		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_02"); //(ernst) Oder versuchst du etwa, uns zu hintergehen?
-		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_03"); //Wenn du mehr Zauber willst, verlangen wir von nun an 300 Goldstücke dafür.
+		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_01"); //Phew, jeszcze nie jestesmy skonczeni. Pozostalo jeszcze kilka zaklec, ale przy Twoim zuzyciu nie bedziemy w stanie.
+		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_02"); //Próbujesz nas oszukac?
+		AI_Output(self, hero, "Info_Mod_Eremit_Prisma8_04_03"); //Jesli chcesz wiecej zaklec, zaczynamy naliczac 300 sztuk zlota.
 
 		Info_ClearChoices	(Info_Mod_Eremit_Prisma8);
 
-		Info_AddChoice	(Info_Mod_Eremit_Prisma8, "So viel Gold habe ich noch nicht.", Info_Mod_Eremit_Prisma8_B);
+		Info_AddChoice	(Info_Mod_Eremit_Prisma8, "Nie mam jeszcze tyle zlota.", Info_Mod_Eremit_Prisma8_B);
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 300) {
-			Info_AddChoice	(Info_Mod_Eremit_Prisma8, "Na gut, gib mir die Zauber.", Info_Mod_Eremit_Prisma8_A);
+			Info_AddChoice	(Info_Mod_Eremit_Prisma8, "Dobrze, daj mi magie.", Info_Mod_Eremit_Prisma8_A);
 		};
 	};
 
@@ -511,7 +511,7 @@ FUNC VOID Info_Mod_Eremit_Prisma8_Info()
 
 FUNC VOID Info_Mod_Eremit_Prisma8_A()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma8_A_15_00"); //Na gut, gib mir die Zauber.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma8_A_15_00"); //Dobrze, daj mi magie.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 300);
 
@@ -526,7 +526,7 @@ FUNC VOID Info_Mod_Eremit_Prisma8_A()
 
 FUNC VOID Info_Mod_Eremit_Prisma8_B()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma8_B_15_00"); //So viel Gold habe ich noch nicht.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma8_B_15_00"); //Nie mam jeszcze tyle zlota.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Eremit_Prisma8);
@@ -561,17 +561,17 @@ FUNC VOID Info_Mod_Eremit_Prisma9_Info()
 
 	Wld_InsertItem	(ItMi_Magieprisma, "FP_ITEM_MAGIEPRISMA");
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_00"); //Das hätten wir. Dort liegt dein fertiges Prisma.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_01"); //Wie kann ich dir danken?
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_02"); //Ein einfaches Danke reicht vollkommen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_03"); //Danke.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_04"); //Wir können dir auch noch einen Hinweis zum Gebrauch geben.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_05"); //Das Prisma wird nur aktiv, wenn du es aus deinem Gepäck hervorholst und anlegst.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_06"); //Alle Schadenszauber, die du nun sprichst, laden das Prisma auf.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_07"); //Allerdings haben nur drei bis vier Zauber gleichzeitig im Prisma Platz.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_08"); //Wenn du mehr sprichst, gehen die Zauber verloren.
-	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_09"); //Ich werd's mir merken.
-	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_10"); //Möge es dir auf deinen Reisen Glück bringen.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_00"); //Wlasnie to otrzymalismy. Tam znajduje sie twój skonczony pryzmat.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_01"); //Jak moge wam podziekowac?
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_02"); //Wystarczy proste podziekowania.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_03"); //Dzieki.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_04"); //Mozemy równiez udzielic wskazówek do wykorzystania.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_05"); //Pryzmat aktywuje sie tylko wtedy, gdy wyjmie sie go z bagazu i umiesci.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_06"); //Wszystkie zaklecia obrazen beda teraz ladowac pryzmat.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_07"); //Jednak tylko trzy do czterech czarów mozna umiescic w pryzmie jednoczesnie.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_08"); //Jesli mówisz wiecej, czary zostana utracone.
+	AI_Output(hero, self, "Info_Mod_Eremit_Prisma9_15_09"); //Bede o tym pamietac.
+	AI_Output(self, hero, "Info_Mod_Eremit_Prisma9_04_10"); //Niech przyniesie Ci to szczescie w podrózy.
 
 	B_GivePlayerXP	(350);
 
@@ -580,7 +580,7 @@ FUNC VOID Info_Mod_Eremit_Prisma9_Info()
 	B_SetTopicStatus	(TOPIC_MOD_MAGIEPRISMA, LOG_SUCCESS);
 
 	Log_CreateTopic	(TOPIC_MOD_PRISMA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_PRISMA, "Wenn das Prisma angelegt ist und der Held einen Schadenszauber spricht, wird das Prisma aufgeladen. Das Prisma kann vier Zaubersprüche gleichzeitig aufnehmen. Das Prisma kann durch Drücken der ihm zu gewiesenen Taste ausgelöst werden und streut dann den Schaden der vier Zauber auf umliegende Gegner.");
+	B_LogEntry	(TOPIC_MOD_PRISMA, "Gdy zaaplikowany jest pryzmat, a bohater rzuca zaklecie obrazenia, pryzmat jest naladowany. Pryzmat moze pomiescic jednoczesnie cztery czary. Pryzmat moze byc wyzwalany przez nacisniecie przypisanego klawisza, a nastepnie zadaje obrazenia otaczajacym wrogom z czterech zaklec.");
 
 	AI_StopProcessInfos	(self);
 
@@ -599,7 +599,7 @@ INSTANCE Info_Mod_Eremit_ScrollJG (C_INFO)
 	information	= Info_Mod_Eremit_ScrollJG_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Adanos zum Gruß.";
+	description	= "Adanos, powitanie.";
 };
 
 FUNC INT Info_Mod_Eremit_ScrollJG_Condition()
@@ -615,54 +615,54 @@ FUNC INT Info_Mod_Eremit_ScrollJG_Condition()
 
 FUNC VOID Info_Mod_Eremit_ScrollJG_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_00"); //Adanos zum Gruß.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_01"); //Adanos? Verschone uns mit diesem neumodischen Quatsch!
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_02"); //Du bist kein Anhänger des Wassers?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_03"); //Nein, in den alten Schriften, die wir lesen, kam er noch nicht vor. Vier der Sprachen konnten wir entziffern.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_04"); //Vier? Ich kenne nur drei, welches ist die vierte?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_05"); //Die Sprache der Gelehrten.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_06"); //Dann stießen wir auf eine weitere Sprache. Die war so furchtbar, dass wir heute noch in Panik geraten, wenn wir nur daran denken.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_07"); //Hmm. Dann kannst du mir die Sprache der Gelehrten auch beibringen?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_08"); //Wir wissen nicht, ob du dafür schon bereit bist.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_09"); //Dann probier's halt. Auf den Kopf gefallen bin ich nicht.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_10"); //So höre: „Ralgnatiru chrenid kar.“
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_11"); //Hör auf. Ich versteh kein Wort.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_12"); //Also doch. Tut uns Leid.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_13"); //Hmm. Kannst du mir wenigstens diese Nachricht übersetzen?
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_00"); //Adanos, powitanie.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_01"); //Adanos? Zapomnij o tym nonsensie!
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_02"); //Nie jestes fanem wody?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_03"); //Nie, nie pojawil sie w starych pismach, które czytalismy. Udalo nam sie rozszyfrowac cztery jezyki.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_04"); //Czyms? Wiem tylko trzy, co jest czwartym?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_05"); //Jezyk uczonych.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_06"); //Potem natknelismy sie na inny jezyk. To bylo tak straszne, ze dzisiaj wciaz panikujemy, kiedy myslimy o tym.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_07"); //Hmm. Wtedy mozesz tez nauczyc mnie jezyka uczonych?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_08"); //Nie wiemy, czy jestes na to jeszcze gotowy.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_09"); //No cóz, spróbuj. Nie upadlem na glowe.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_10"); //Slysze wiec:"Ralgnatiru chrenid kar. “
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_11"); //Zatrzymaj go. Nie rozumiem slowa.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_12"); //Tak, jestes. Przepraszam za to.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_13"); //Hmm. Czy moze pan przynajmniej przetlumaczyc to przeslanie dla mnie?
 
 	B_GiveInvItems	(hero, self, ItWr_TruhenNotizJG, 1);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_14"); //Zeig her.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_14"); //Pozwole sobie to zobaczyc.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_15"); //Ja. Die Gelehrtensprache.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_16"); //Und das heißt?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_17"); //Du hast ein paar Gold für uns? Wir müssen wieder mal einkaufen gehen zu den Piraten.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_18"); //An wie viel dachtest du?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_19"); //Dir scheint es wichtig zu sein. So 500 Gold ...
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_15"); //Tak. Jezyk naukowy.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_16"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_17"); //Dostales dla nas zloto? Musimy ponownie pójsc na zakupy z piratami.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_15_18"); //Ile miales na mysli?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_04_19"); //Wyglada na to, ze jestescie zainteresowani. Okolo 500 zlota....
 
 	Info_ClearChoices	(Info_Mod_Eremit_ScrollJG);
 
-	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Hier hast du. Und?", Info_Mod_Eremit_ScrollJG_B);
-	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Tun es 200 Gold auch?", Info_Mod_Eremit_ScrollJG_A);
+	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Tutaj idziesz. A co?", Info_Mod_Eremit_ScrollJG_B);
+	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Czy zloto 200 zlota równiez?", Info_Mod_Eremit_ScrollJG_A);
 };
 
 FUNC VOID Info_Mod_Eremit_ScrollJG_B()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_00"); //Hier hast du. Und?
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_00"); //Tutaj idziesz. A co?
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_01"); //Dieser Text erklärt die Handhabung einer gewissen Spruchrolle.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_02"); //Die Rolle haben wir auch.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_03"); //Hier steht: Ralgnatiru chrenid ...
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_04"); //Ach so: „Man nehme diese Rolle, einen Brocken unreines Erz, einen Geschwindigkeitstrank, Teil eines Flugtieres oder einen Fliegenpilz, das Fleisch eines Untoten und zwei Skelettknochen.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_05"); //Das füge man in der Opferschale zusammen. Sodann erscheint ein Gegenstand, der dir in Zeiten höchster Bedrängnis helfen wird."
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_06"); //Uff. Das wirft ja mehr Fragen auf, als es Antworten gibt.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_07"); //Tut uns Leid. Da können wir dir auch nicht weiterhelfen.
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_08"); //Das glaub ich gerne. Also, wir sind quitt?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_09"); //Gewiss. Wir wünschen dir Glück.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_01"); //Ten tekst wyjasnia, jak uzywac okreslonej czcionki.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_02"); //Dostalismy tez czesc.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_03"); //Mówi sie tutaj: Ralgnatiru chrenid.....
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_04"); //Przy okazji:"Wezcie te role, bryle rudy nieczystej, eliksir szybkosci, czesc zwierzecia lub agaryke muchowa, miazsz nieumarlych i dwie kosci szkieletowe.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_05"); //
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_06"); //Tarcza. Wywoluje to wiecej pytan niz odpowiedzi.
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_07"); //Przepraszam za to. Nie mozemy Ci tez pomóc.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_08"); //Postawie na Ciebie. Tak wiec jestesmy nawet?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_04_09"); //Oczywiscie. Zyczymy powodzenia.
 
 	B_GivePlayerXP	(250);
 
@@ -670,18 +670,18 @@ FUNC VOID Info_Mod_Eremit_ScrollJG_B()
 
 	Log_CreateTopic	(TOPIC_MOD_JG_OPFERSCHALE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_OPFERSCHALE, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_JG_SCROLL, TOPIC_MOD_JG_OPFERSCHALE, "Der Einsiedler hat mir den Text übersetzt. Er ist in der Sprache der Gelehrten geschrieben und handelt von einer gewissen Opferschale. Hmm. Hoffentlich weiß Wulfgar darüber Bescheid.", "Hmm. Ich brauche zwei Skelettknochen, was von einer Blutfliege oder einen Fliegenpilz, einen Geschwindigkeitstrank und unreines Erz. Das könnte der Brocken seltsames Erz sein, den ich von Grimbald habe. Hoffe, ich hab's noch dabei. Und dann die Opferschale. Welche, bitte schön? Vielleicht kann Riordian ...");
+	B_LogEntry_More	(TOPIC_MOD_JG_SCROLL, TOPIC_MOD_JG_OPFERSCHALE, "Pustelnik przetlumaczyl mi tekst. Jest napisana w jezyku uczonych i zajmuje sie pewna miska ofiarna. Hmm. Mam nadzieje, ze Wulfgar o tym wie.", "Hmm. Potrzebuje dwóch kosci szkieletowych, czegos o muchie krwi lub agarycznej muchy, peczniejacego eliksiru i rudy nieczystej. To moze byc dziwna ruda, która mam z Grimbaldu. Mam nadzieje, ze mam ja przy sobie. A potem miska ofiarnicza. Który z nich prosze? Byc moze Riordian....");
 	B_SetTopicStatus	(TOPIC_MOD_JG_SCROLL, LOG_SUCCESS);
 };
 
 FUNC VOID Info_Mod_Eremit_ScrollJG_A()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_A_15_00"); //Tun es 200 Gold auch?
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_A_04_01"); //Nein. Wir müssen auf Vorrat kaufen.
+	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_A_15_00"); //Czy zloto 200 zlota równiez?
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_A_04_01"); //Nie. Musimy kupowac z góry.
 
 	Info_ClearChoices	(Info_Mod_Eremit_ScrollJG);
 
-	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Hier hast du. Und?", Info_Mod_Eremit_ScrollJG_B);
+	Info_AddChoice	(Info_Mod_Eremit_ScrollJG, "Tutaj idziesz. A co?", Info_Mod_Eremit_ScrollJG_B);
 };
 
 INSTANCE Info_Mod_Eremit_Zeremoniendolch (C_INFO)
@@ -692,7 +692,7 @@ INSTANCE Info_Mod_Eremit_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Eremit_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Du kennst dich doch aus in der Gegend.";
+	description	= "Witaj! Tutaj znasz swoja droge.";
 };
 
 FUNC INT Info_Mod_Eremit_Zeremoniendolch_Condition()
@@ -705,12 +705,12 @@ FUNC INT Info_Mod_Eremit_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Eremit_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_00"); //Hallo! Du kennst dich doch aus in der Gegend.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_01"); //Das wollen wir meinen. Was suchst du?
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_02"); //Sowas wie eine Ritualstätte, Opferstätte, einen mystischen Platz oder so.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_03"); //Da wüssten wir schon was. Aber damit wir dir das verraten, musst du uns einen Gefallen tun.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_04"); //Und das wäre?
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_05"); //Uns geht das Essen aus. Und dann würden wir gern mal etwas anderes trinken, als das Wasser vom See bei den Piraten.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_00"); //Witaj! Tutaj znasz swoja droge.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_01"); //Oto co rozumiemy. Czego szukasz?
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_02"); //Jak miejsce rytualu, miejsce ofiarnicze, miejsce mistyczne czy cos mistycznego.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_03"); //Do tej pory cos juz wiemy. Ale zebysmy ci to powiedziec, musisz zrobic nam laske.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch_15_04"); //I co to jest?
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch_04_05"); //Brakuje nam jedzenia. I wtedy chcielibysmy miec cos innego niz woda z jeziora przez pirackich piratów.
 };
 
 INSTANCE Info_Mod_Eremit_Zeremoniendolch2 (C_INFO)
@@ -721,7 +721,7 @@ INSTANCE Info_Mod_Eremit_Zeremoniendolch2 (C_INFO)
 	information	= Info_Mod_Eremit_Zeremoniendolch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab da einiges dabei. Hier, probier mal diesen Wein.";
+	description	= "Mam na sobie kilka rzeczy. Spróbuj tego wina.";
 };
 
 FUNC INT Info_Mod_Eremit_Zeremoniendolch2_Condition()
@@ -735,26 +735,26 @@ FUNC INT Info_Mod_Eremit_Zeremoniendolch2_Condition()
 
 FUNC VOID Info_Mod_Eremit_Zeremoniendolch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_00"); //Ich hab da einiges dabei. Hier, probier mal diesen Wein.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_00"); //Mam na sobie kilka rzeczy. Spróbuj tego wina.
 
 	B_GiveInvItems	(hero, self, ItFo_Wine, 1);
 
 	B_UseItem	(self, ItFo_Wine);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_01"); //Boaar! Lange nicht mehr so was Gutes getrunken! Wo hast du den her?
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_02"); //In Khorinis kannst du den fast überall kaufen.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_01"); //Boaar! Minelo wiele czasu od wypicia tego rodzaju dobrych rzeczy! Gdzie mozna to osiagnac?
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_02"); //Mozna ja kupic prawie wszedzie w Khorinis.
 	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_03"); //Khorinis?
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_04"); //Der andere Teil der Insel. Da, wo ich und die Wassermagier beim Tempel herkommen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_05"); //Wie kommt man da hin?
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_06"); //Durch eben diesen Tempel. Die Magier würden dir sicher helfen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_07"); //Wir überlegen es uns. Aber erst mal, was wir dringend brauchen. Wir schreiben dir einen Zettel.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_08"); //Inzwischen könntest du uns frisches Wasser vom See im Talkessel in der Nähe der Piraten besorgen. Hier hast du einen Eimer.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_04"); //Druga czesc wyspy. Gdzie ja i magicy wody pochodze w swiatyni.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_05"); //Jak tam dotrzec?
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch2_15_06"); //Przez te sama swiatynie. Jestem pewien, ze magicy Ci pomoga.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_07"); //Pomyslimy. Ale po pierwsze, to, czego pilnie potrzebujemy. Napiszemy Ci notatke.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch2_04_08"); //W miedzyczasie mozna bylo nas wyplynac z jeziora w kotlinie dolinowej niedaleko piratów. Tutaj jest szufla.
 
 	B_GiveInvItems	(self, hero, ItMi_Eimer, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_EREMIT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_EREMIT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_EREMIT, "Der Eremit will mir eine Liste mit Dingen schreiben, die er benötigt. Währenddessen soll ich ihm einen Eimer Wasser aus dem See im Talkessel in der Nähe der Piraten holen.");
+	B_LogEntry	(TOPIC_MOD_ASS_EREMIT, "pustelnik chce napisac liste rzeczy, których potrzebuje. W miedzyczasie zaczne go od wiadra wody z jeziora w kotlinie w dolinie w poblizu piratów.");
 };
 
 INSTANCE Info_Mod_Eremit_Zeremoniendolch3 (C_INFO)
@@ -765,7 +765,7 @@ INSTANCE Info_Mod_Eremit_Zeremoniendolch3 (C_INFO)
 	information	= Info_Mod_Eremit_Zeremoniendolch3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, das Wasser.";
+	description	= "Oto woda.";
 };
 
 FUNC INT Info_Mod_Eremit_Zeremoniendolch3_Condition()
@@ -779,23 +779,23 @@ FUNC INT Info_Mod_Eremit_Zeremoniendolch3_Condition()
 
 FUNC VOID Info_Mod_Eremit_Zeremoniendolch3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_00"); //Hier, das Wasser.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_00"); //Oto woda.
 
 	B_GiveInvItems	(hero, self, ItMi_EimerW, 1);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_01"); //Und hier unsere Liste. Und einen neuen Jagdbogen und eine neue Pfanne brauchen wir auch noch.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_01"); //Oto nasza lista. Potrzebujemy tez nowego poklonu mysliwskiego i nowej patelni.
 
 	B_GiveInvItems	(self, hero, ItWr_EremitEinkaufsliste, 1);
 
 	B_HEROFAKESCROLL();
 
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_02"); //Ich lese hier: 30 Holz. Meinst du normale oder schwere Äste?
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_03"); //Das ist egal. Hauptsache, es ist trocken und brennt gut.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_04"); //Und dann verrätst du mir, wo ich eine Opferstätte finde?
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_05"); //Versprochen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_06"); //Bis später.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_02"); //Czytam tutaj: 30 drewna. Czy masz na mysli normalne lub ciezkie galezie?
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_03"); //Nie ma to znaczenia. Najwazniejsze jest to, ze jest suchy i dobrze sie pali.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_04"); //A potem powiesz mi, gdzie moge znalezc miejsce ofiary?
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch3_04_05"); //Obiecuje.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch3_15_06"); //Do zobaczenia pózniej.
 
-	B_LogEntry	(TOPIC_MOD_ASS_EREMIT, "Möglicherweise kann mir der Eremit weiterhelfen. Ich muss allerdings erst seine Einkaufsliste erledigen. Er will 20 Brote, 10 Schinken, 10 Wurst, 10 Wein, 5 Grog, 30 Äste, 300 Pfeile, 1 Jagdbogen, 2 Moleratfett und eine neue Pfanne haben. Hoffentlich lohnt sich die Mühe ...");
+	B_LogEntry	(TOPIC_MOD_ASS_EREMIT, "Moze pustelnik mi pomoze. Ale najpierw musze ukonczyc jego liste zakupów. Chce 20 bochenków, 10 szynki, 10 kielbas, 10 kielbas, 10 kielbas, 5 grog, 30 galezi, 300 strzal, 1 luk mysliwski, 2 molowe tluszcze i nowa patelnie. Miejmy nadzieje, ze wysilek jest wart zachodu.....");
 
 	Wld_InsertNpc	(Mod_7640_RDW_Cavalorn_AW, "ADW_ENTRANCE");
 };
@@ -808,7 +808,7 @@ INSTANCE Info_Mod_Eremit_Zeremoniendolch4 (C_INFO)
 	information	= Info_Mod_Eremit_Zeremoniendolch4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Bin zurück mit deinem Zeug.";
+	description	= "Witaj! Wróc do swoich rzeczy.";
 };
 
 FUNC INT Info_Mod_Eremit_Zeremoniendolch4_Condition()
@@ -830,8 +830,8 @@ FUNC INT Info_Mod_Eremit_Zeremoniendolch4_Condition()
 
 FUNC VOID Info_Mod_Eremit_Zeremoniendolch4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_00"); //Hallo! Bin zurück mit deinem Zeug. War ganz schön teuer, das alles.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_01"); //Zeig her. Erst mal sehen.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_00"); //Witaj! Wróc do swoich rzeczy. Bylo to dosc drogie, a wszystko to wszystko.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_01"); //Pozwole sobie to zobaczyc. Zobaczmy najpierw.
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 20);
 	Npc_RemoveInvItems	(hero, ItFo_Bacon, 10);
@@ -843,17 +843,17 @@ FUNC VOID Info_Mod_Eremit_Zeremoniendolch4_Info()
 	Npc_RemoveInvItems	(hero, ItMi_MoleratLubric_MIS, 2);
 	Npc_RemoveInvItems	(hero, ItRw_Bow_L_03, 1);
 
-	B_ShowGivenThings	("Diverse Gegenstände gegeben");
+	B_ShowGivenThings	("Rózne przedmioty");
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_02"); //Prima, alles dabei. Wir machen dir einen Vorschlag: Wenn unser Tipp dir weiterhilft, bekommen wir die Lieferung umsonst. Wenn nicht, bezahlen wir die Sachen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_03"); //Von mir aus. Wo ist nun diese verdammte Opferstätte?
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_04"); //Also höre: Gleich hier um die Ecke, auf dem Weg hoch aus dem Tal, ist eine versteckte Abzweigung auf ein kleines Plateau.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_05"); //Dort findest du eine Gruft. Und da drin könnte deine Opferstätte sein.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_06"); //Warst du schon mal dort?
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_07"); //Bewahre! Da wimmelt es von Monstern. Niemand kriegt uns da rein. Wir sind zwar ein bisschen seltsam, aber nicht lebensmüde.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_08"); //Ich schaff das schon. Bin gespannt.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_02"); //Wspaniale, wszystko w tym. Przedstawimy Ci sugestie: Jesli nasza wskazówka pomoze, otrzymamy dostawe bezplatnie. Jesli nie, zaplacimy za to.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_03"); //Drobny, drobny. Gdzie jest to miejsce ofiarne?
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_04"); //Wiec posluchajcie: Tuz za rogiem, w drodze od doliny do góry, kryje sie zakret na maly plaskowyz.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_05"); //Znajdziesz tu krypte. I tam moze byc twoje miejsce ofiarne.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_06"); //Czy kiedykolwiek byles tam wczesniej?
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch4_04_07"); //Zapisz! Jest pelna potworów. Nikt nie moze nas wciagnac. Mozemy byc troche dziwni, ale nie jestesmy samobójczy.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch4_15_08"); //Moge sobie z tym poradzic. Jestem podekscytowany.
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Der Einsiedler hat mir von einem Plateau erzählt, das ganz in der Nähe seiner Hütte liegt. Der Zugang liegt an einem Weg, der nach oben führt. Da gibt es eine Gruft und haufenweise Monster. Mal sehen ...");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Hermit opowiadal mi o plaskowyzu w poblizu jego chaty. Wejscie prowadzi sciezka. Jest tu grobowiec i mnóstwo potworów. Zobaczmy jak.....");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_EREMIT, LOG_SUCCESS);
 
 	B_GivePlayerXP	(250);
@@ -882,11 +882,11 @@ FUNC INT Info_Mod_Eremit_Zeremoniendolch5_Condition()
 
 FUNC VOID Info_Mod_Eremit_Zeremoniendolch5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_00"); //Und, hast du deinen Dolch?
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch5_15_01"); //Ja. Er war tatsächlich in der Gruft, aber gut geschützt. Und dann das Viehzeug!
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_02"); //Haben wir doch gesagt. Dann schulden wir dir nichts.
-	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch5_15_03"); //So war's abgemacht. Mach's gut, ich muss weiter.
-	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_04"); //Möge dir die Sonne den Weg weisen. Alter Spruch.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_00"); //Czy masz sztylet?
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch5_15_01"); //Tak. Byl w grobowcu, ale byl dobrze chroniony. I wtedy bydlo!
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_02"); //Tak wlasnie mówilismy. Wtedy nic Ci nie zawdzieczamy.
+	AI_Output(hero, self, "Info_Mod_Eremit_Zeremoniendolch5_15_03"); //Taka jest umowa. Zegnam sie, musze isc dalej.
+	AI_Output(self, hero, "Info_Mod_Eremit_Zeremoniendolch5_04_04"); //Niech slonce wskaze ci droge. Stare powiedzenie.
 };
 
 INSTANCE Info_Mod_Eremit_Sumpfmensch (C_INFO)
@@ -909,13 +909,13 @@ FUNC INT Info_Mod_Eremit_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Eremit_Sumpfmensch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_00"); //Was willst du?
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_01"); //Kennst du einen Piraten namens Darrion?
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_02"); //Darrion? Den kenn' ich ja.
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_03"); //Du hast ihm ein Buch übersetzt.
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_04"); //Und wenn es so wäre? Ich wüsste nicht was dich das angeht!
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_05"); //Er ist verletzt, er...
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_06"); //Das ist mir egal! Mach, dass du weiter kommst, und lass mich in Ruhe.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_00"); //Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_01"); //Czy znasz pirata o imieniu Darrion?
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_02"); //Darrion? Znam go.
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_03"); //Tlumaczyles dla niego ksiazke.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_04"); //Co by bylo, gdyby? Nie wiem, co to jest Twój biznes!
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch_15_05"); //Boli, jest....
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch_04_06"); //Nie interesuje mnie to! Idz dalej i zostaw mnie sam na sam.
 	
 	AI_StopProcessInfos(self);
 };
@@ -941,31 +941,31 @@ FUNC INT Info_Mod_Eremit_Sumpfmensch2_Condition()
 
 FUNC VOID Info_Mod_Eremit_Sumpfmensch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_00"); //Warte mal! Dieser Geruch... dieser betörende Duft... hast du etwas Schimmelkäse bei dir?!
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_01"); //Und wenn dem so wäre?
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_02"); //Äh... ich muss mich für meine Unhöflichkeit entschuldigen, das war doch nicht so gemeint. Du wolltest doch etwas über Darrion wissen, oder?
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_03"); //Er ist mit einem Buch zu mir gekommen, es war in der alten Schrift dieses Landes verfasst. Er hat sich besonders für die Beschreibung einer Blume interessiert.
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_04"); //Ich hab ihm die Seite übersetzt und er ist wieder verschwunden.
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_05"); //Und sonst?
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_06"); //Ich hab ihn seitdem nicht mehr gesehen.
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_07"); //Na gut. Hier.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_00"); //Poczekaj minute! Ten zapach.... zapach, który sprawia, ze.... Czy masz z Toba ser plesniowy?
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_01"); //Co zrobic, gdybym to zrobil?
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_02"); //Uh.... Musze przeprosic za swoja chamosc, nie mialem tego na mysli. Chciales wiedziec o Darrionie, czyz nie?
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_03"); //Przyszedl do mnie z ksiazka, zostala napisana w starozytnych pismach swietych tej ziemi. Szczególnie zainteresowal sie opisywaniem kwiatu.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_04"); //Tlumaczylem jego strone i on zniknal ponownie.
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_05"); //W przeciwnym razie?
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_06"); //Od tego czasu go nie widzialem.
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_07"); //Wszystkie sluszne, wszystkie sluszne. Tutaj.
 	
 	B_GiveInvItems(hero, self, ItMi_StinkeCheese, 1);
 	
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_08"); //Oh ja! Vielen Dank!
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_08"); //Och, tak! Bardzo dziekuje!
 	
 	B_UseItem(self, ItFo_Cheese);
 	
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_09"); //(mit vollem Mund) Ach ja, sag Darrion, fals du ihn siehst, er soll die Pflanze auf keinen Fall einsetzen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_10"); //Im Buch ist beschrieben, dass die Pflanze irgendwie im Zusammenhang mit irgendwelchen Monstern steht.
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_11"); //Genau hab ich es nicht verstanden, aber der Autor stellt irgendeine Beziehung zwischen einer dieser Pflanzen und fünf "Sumpfriesen" her.
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_12"); //Und warum hast du Darrion das nicht gesagt?!
-	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_13"); //Das stand auf der nächsten Seite, die hatte ich damals noch nicht übersetzt...
-	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_14"); //Oh Mann...
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_09"); //Tak, powiedz Darrionowi, jesli go nie widzisz, nie pozwól mu wlozyc rosliny.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_10"); //Ksiazka opisuje, ze roslina jest w jakis sposób zwiazana z jakims potworem.
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_11"); //Genau hab ich es nicht verstanden, aber der Autor stellt irgendeine Beziehung zwischen einer dieser Pflanzen und fünf "olbrzymie bagna" her.
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_12"); //A dlaczego nie powiecie tego Darrionowi!
+	AI_Output(self, hero, "Info_Mod_Eremit_Sumpfmensch2_04_13"); //To bylo na nastepnej stronie, jeszcze nie przetlumaczylem.......
+	AI_Output(hero, self, "Info_Mod_Eremit_Sumpfmensch2_15_14"); //Och, czlowiek....
 	
 	AI_StopProcessInfos(self);
 
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Der Eremit hat von einer Pflanze erzählt, die Darrion interessiert hat. Sie steht nach Aussage des Eremiten im Zusammenhang mit fünf Sumpfriesen. Eventuell hat Darrion diese Pflanze entdeckt und im Sumpf eingepflanzt? Ich sollte zum Sumpflager zurückkehren und Baal Joru meine Erkenntnisse berichten.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Pustelnik opowiedzial mi o roslinie, która zainteresowal sie Darrion. Wedlug pustelnika, jest zwiazany z piecioma gigantami bagiennymi. Moze Darrion odkryl te rosline i zasadzil ja w bagnie? Powinienem wrócic do obozu bagiennego i opowiedziec Baalowi Joru o swoich odkryciach.");
 };
 
 INSTANCE Info_Mod_Eremit_NettHier (C_INFO)
@@ -976,7 +976,7 @@ INSTANCE Info_Mod_Eremit_NettHier (C_INFO)
 	information	= Info_Mod_Eremit_NettHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nett hast du es hier.";
+	description	= "Ladne miejsce, do którego dotarles.";
 };
 
 FUNC INT Info_Mod_Eremit_NettHier_Condition()
@@ -990,10 +990,10 @@ FUNC INT Info_Mod_Eremit_NettHier_Condition()
 
 FUNC VOID Info_Mod_Eremit_NettHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_NettHier_15_00"); //Nett hast du es hier.
-	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_01"); //Kann man mit viel Zeit alles schaffen.
-	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_02"); //Seitdem wir zu zweit sind, ist der Raum etwas eng, deshalb schlafen wir zusammen in einem Bett.
-	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_03"); //Aber wer nur das Nötigste zum Leben hat, kommt auch mit wenig Platz klar.
+	AI_Output(hero, self, "Info_Mod_Eremit_NettHier_15_00"); //Ladne miejsce, do którego dotarles.
+	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_01"); //Z duza iloscia czasu mozna zrobic wszystko.
+	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_02"); //Poniewaz jestesmy razem, pokój jest troche ciasny, wiec spimy razem w jednym lózku.
+	AI_Output(self, hero, "Info_Mod_Eremit_NettHier_04_03"); //Ale jesli masz tylko niezbedne rzeczy do zycia, bedziesz tez w stanie poradzic sobie z mala przestrzenia.
 };
 
 INSTANCE Info_Mod_Eremit_PreLehrer (C_INFO)
@@ -1004,7 +1004,7 @@ INSTANCE Info_Mod_Eremit_PreLehrer (C_INFO)
 	information	= Info_Mod_Eremit_PreLehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Eremit_PreLehrer_Condition()
@@ -1020,12 +1020,12 @@ FUNC VOID Info_Mod_Eremit_PreLehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_00"); //Wir könnten dir die Sprache der alten Kultur beibringen ...
-	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer_15_01"); //Schön. Also, was muss ich ...
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_02"); //(unterbricht) Wir sagten, wir könnten ... aber wir haben zur Zeit absolut nicht den Nerv dazu!
-	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer_15_03"); //Wieso, was ist los?
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_04"); //Ach ... diese verdammten Harpien machen uns gerade das Leben echt schwer.
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_05"); //Immer, wenn wir uns gerade was Feines braten möchte, kommen sie angeflogen und ... oh verflucht, da sind sie schon wieder!
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_00"); //Mozemy nauczyc Cie jezyka starozytnej kultury....
+	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer_15_01"); //Grzywna. Cóz, co mam do....?
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_02"); //(przerwania) Powiedzielismy, ze mozemy.... ale nie mamy nerwy, aby to zrobic juz teraz!
+	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer_15_03"); //Dlaczego, co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_04"); //Ah.... Te harfy boginne bardzo utrudniaja nam zycie.
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer_04_05"); //Za kazdym razem, gdy chcemy ugotowac cos milego, przychodza i.... oh, chodz, tam znów sa!
 
 	AI_StopProcessInfos	(self);
 
@@ -1055,11 +1055,11 @@ FUNC INT Info_Mod_Eremit_PreLehrer2_Condition()
 
 FUNC VOID Info_Mod_Eremit_PreLehrer2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_00"); //Siehst du, das meinten wir! Immer, wenn wir uns etwas braten möchten, kommen diese Viecher angeflogen und besudeln alles mit ihrem Gestank und Unrat.
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_01"); //Diese verdammten Biester haben irgendwo in der Nähe ihre Nester ...
-	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer2_15_02"); //Hast du schon versucht sie zu erledigen?
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_03"); //Wie denn?! Können wir denn zu ihren Nestern hochfliegen?! Und auf Fernkampf verstehen Wir uns auch nicht.
-	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_04"); //Wenn das so weitergeht, werden Wir uns wohl einen anderen Platz zum Leben suchen müssen ...
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_00"); //Zobacz, o to wlasnie chodzilo nam! Kiedykolwiek bowiem chcemy sie smazyc, istoty te przychodza do nas latajac i defilowac wszystko swoim smrodem i brudem.
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_01"); //Te diabelskie bestie maja gdzies tam swoje gniazda....
+	AI_Output(hero, self, "Info_Mod_Eremit_PreLehrer2_15_02"); //Próbowales ja jeszcze zabrac?
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_03"); //Jak? Czy mozemy isc do ich gniazd? I my tez sie nie zgadzamy na strzelanie.
+	AI_Output(self, hero, "Info_Mod_Eremit_PreLehrer2_04_04"); //Jesli tak bedzie dalej, prawdopodobnie bedziemy musieli znalezc inne miejsce do zycia.... Wiecej
 
 	AI_StopProcessInfos	(self);
 
@@ -1069,7 +1069,7 @@ FUNC VOID Info_Mod_Eremit_PreLehrer2_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_EREMIT_HARPIEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EREMIT_HARPIEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "Der Eremit wird immer wieder von Harpien heimgesucht, die ihm das Leben schwer machen. Er meinte, dass die Viecher in der Nähe ihre Nester haben müssen.");
+	B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "Hermit jest wielokrotnie nawiedzany przez harfy, które utrudniaja mu zycie. Powiedzial, ze stworzenia w poblizu musza miec swoje gniazda.");
 };
 
 INSTANCE Info_Mod_Eremit_Lehrer (C_INFO)
@@ -1080,7 +1080,7 @@ INSTANCE Info_Mod_Eremit_Lehrer (C_INFO)
 	information	= Info_Mod_Eremit_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Harpien sollten dir in Zukunft keinen Ärger mehr machen.";
+	description	= "harfy nie powinny sprawiac zadnych klopotów w przyszlosci.";
 };
 
 FUNC INT Info_Mod_Eremit_Lehrer_Condition()
@@ -1093,19 +1093,19 @@ FUNC INT Info_Mod_Eremit_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Eremit_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Eremit_Lehrer_15_00"); //Die Harpien sollten dir in Zukunft keinen Ärger mehr machen.
-	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_01"); //Dann hast du sie alle erwischt? Großartig, endlich haben wir wieder unsere Ruhe.
-	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_02"); //Wir wissen nicht, wie wir dir danken sollen ... hmm, wobei ... nimm diese Steintafeln.
+	AI_Output(hero, self, "Info_Mod_Eremit_Lehrer_15_00"); //harfy nie powinny sprawiac zadnych klopotów w przyszlosci.
+	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_01"); //Wtedy dostales je wszystkie? Wspanialy, wreszcie znów mamy pokój.
+	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_02"); //Nie wiemy, jak podziekowac..... hmm, gdzie..... przyjmowac te tabletki.
 
-	B_ShowGivenThings	("2 Steintafeln erhalten");
+	B_ShowGivenThings	("2 tabletki kamienne zakonserwowane");
 
 	CreateInvItems	(hero, ItWr_DexStonePlate1_Addon, 1);
 	CreateInvItems	(hero, ItWr_ManaStonePlate1_Addon, 1);
 
-	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_03"); //Und falls du sie noch nicht lesen kannst, werden wir es dir selbstverständlich beibringen.
+	AI_Output(self, hero, "Info_Mod_Eremit_Lehrer_04_03"); //A jesli jeszcze ich nie mozesz przeczytac, oczywiscie Cie nauczymy.
 	
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_JHARKENDAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_JHARKENDAR, "Der Eremit kann mir die Sprachen dieses Landes beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_JHARKENDAR, "Pustelnik moze mnie nauczyc jezyków tego kraju.");
 
 	B_SetTopicStatus	(TOPIC_MOD_EREMIT_HARPIEN, LOG_SUCCESS);
 
@@ -1121,7 +1121,7 @@ INSTANCE Info_Mod_Eremit_Lernen (C_INFO)
 	condition	= Info_Mod_Eremit_Lernen_Condition;
 	information	= Info_Mod_Eremit_Lernen_Info;
 	permanent 	= TRUE;
-	description 	= "Ich will die Sprachen lernen.";
+	description 	= "Chce sie uczyc jezyków.";
 };
 FUNC INT Info_Mod_Eremit_Lernen_Condition ()
 {
@@ -1133,8 +1133,8 @@ FUNC INT Info_Mod_Eremit_Lernen_Condition ()
 };
 FUNC VOID Info_Mod_Eremit_Lernen_Info ()
 {
-	AI_Output (other, self, "Info_Mod_Eremit_Lernen_15_00"); //Ich will die Sprachen lernen.
-	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_01"); //Welche willst du lernen?
+	AI_Output (other, self, "Info_Mod_Eremit_Lernen_15_00"); //Chce sie uczyc jezyków.
+	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_01"); //Który z nich chcesz sie uczyc?
 
 	Info_ClearChoices (Info_Mod_Eremit_Lernen);
 	Info_AddChoice (Info_Mod_Eremit_Lernen, DIALOG_BACK, Info_Mod_Eremit_Lernen_No);
@@ -1165,8 +1165,8 @@ FUNC VOID B_Eremit_LernenLanguage()
 
 FUNC VOID B_Eremit_LernenLanguage2()
 {	
-	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_05"); //Wohl aus Gründen der strategischen Geheimhaltung schrieben die Krieger ihre Texte rückwärts.
-	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_06"); //Zum Beispiel: „Tlah! Rew  ad?“ oder „Elorap!“ Es sollte also nicht allzu schwer sein, diese Tafeln zu lesen.
+	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_05"); //Prawdopodobnie dla celów tajemnicy strategicznej wojownicy pisali teksty do tylu.
+	AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_06"); //Na przyklad:"Tlah! Czy na nowo? "lub" Elorap! "Wiec nie powinno byc zbyt trudno odczytac te tablice.
 };
 
 FUNC VOID Info_Mod_Eremit_Lernen_No()
@@ -1178,7 +1178,7 @@ FUNC VOID Info_Mod_Eremit_Lernen_Yes()
 {
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_04"); //Wir glauben nicht, dass wir dir noch was darüber beibringen können...
+		AI_Output (self, other, "Info_Mod_Eremit_Lernen_04_04"); //Nie sadzimy, zebysmy mogli Cie o tym niczego wiecej nauczyc....
 	}
 	else if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
 	{

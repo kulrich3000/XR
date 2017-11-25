@@ -1,6 +1,6 @@
 INSTANCE Mod_545_NONE_Gildo_NW (Npc_Default)
 {
-	name = "Bauer";
+	name = "chlop";
    	level = 5;
    	guild = GIL_OUT;
    	id = 545;

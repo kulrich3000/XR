@@ -1,7 +1,7 @@
 instance Mod_7665_MIL_Miliz_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "aufgebrachte Miliz";	
+	name 		= "gniewna milicja";	
 	guild 		= GIL_STRF;
 	id 			= 7665;
 	voice 		= 6;

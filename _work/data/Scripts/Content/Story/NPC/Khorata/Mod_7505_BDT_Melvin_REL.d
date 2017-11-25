@@ -1,7 +1,7 @@
 INSTANCE Mod_7505_BDT_Melvin_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Melvin";
+	name 		= "melina";
 	guild 		= GIL_out;
 	id 			= 7505;
 	voice 		= 08;

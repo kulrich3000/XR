@@ -26,7 +26,7 @@
 
 INSTANCE ItRw_Arrow(C_Item)
 {
-	name 				=	"Pfeil";
+	name 				=	"strzalka";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -47,7 +47,7 @@ INSTANCE ItRw_Arrow(C_Item)
 
 INSTANCE ItRw_WiderhakenArrow(C_Item)
 {
-	name 				=	"Pfeil mit Widerhaken";
+	name 				=	"Straszny";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -68,7 +68,7 @@ INSTANCE ItRw_WiderhakenArrow(C_Item)
 
 INSTANCE ItRw_PraezisionsArrow(C_Item)
 {
-	name 				=	"Präzisionspfeil";
+	name 				=	"strzalka precyzyjna";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -89,7 +89,7 @@ INSTANCE ItRw_PraezisionsArrow(C_Item)
 
 INSTANCE ItRw_SprengstoffArrow(C_Item)
 {
-	name 				=	"Explosionspfeil";
+	name 				=	"strzalka wybuchu";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -110,7 +110,7 @@ INSTANCE ItRw_SprengstoffArrow(C_Item)
 
 INSTANCE ItRw_RueckverwandlungsArrow(C_Item)
 {
-	name 				=	"Rückverwandlungspfeil";
+	name 				=	"tylna strzalka przeksztalcania";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -131,7 +131,7 @@ INSTANCE ItRw_RueckverwandlungsArrow(C_Item)
 
 INSTANCE ItRw_GoldErzArrow(C_Item)
 {
-	name 				=	"Pfeil mit Gold-Erz-Spitze";
+	name 				=	"Strzalka z koncówka rudy zlota";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -153,7 +153,7 @@ INSTANCE ItRw_GoldErzArrow(C_Item)
 
 INSTANCE ItRw_GoldErzBlutArrow(C_Item)
 {
-	name 				=	"Pfeil mit Gold-Erz-Blut-Spitze";
+	name 				=	"Strzalka z rudo-krewetowa koncówka zlota";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -175,7 +175,7 @@ INSTANCE ItRw_GoldErzBlutArrow(C_Item)
 
 INSTANCE ItRw_HolyArrow(C_Item)
 {
-	name 				=	"Heiliger Pfeil";
+	name 				=	"Swieta strzala";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -196,7 +196,7 @@ INSTANCE ItRw_HolyArrow(C_Item)
 
 INSTANCE ItRw_TiergiftArrow(C_Item)
 {
-	name 				=	"Tiergiftpfeil";
+	name 				=	"trucizna zwierzeca rzutka";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -217,7 +217,7 @@ INSTANCE ItRw_TiergiftArrow(C_Item)
 
 INSTANCE ItRw_GewaechsgiftArrow(C_Item)
 {
-	name 				=	"Pflanzengiftpfeil";
+	name 				=	"trucizna roslinna rzutka";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -238,7 +238,7 @@ INSTANCE ItRw_GewaechsgiftArrow(C_Item)
 
 INSTANCE ItRw_SchmetterArrow(C_Item)
 {
-	name 				=	"Schmetterpfeil";
+	name 				=	"strzalka motylkowa";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -259,7 +259,7 @@ INSTANCE ItRw_SchmetterArrow(C_Item)
 
 INSTANCE ItRw_Bolt(C_Item)
 {
-	name 				=	"Bolzen";
+	name 				=	"sworznie";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -280,7 +280,7 @@ INSTANCE ItRw_Bolt(C_Item)
 
 INSTANCE ItRw_WiderhakenBolt(C_Item)
 {
-	name 				=	"Bolzen mit Widerhaken";
+	name 				=	"Stluczki";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -301,7 +301,7 @@ INSTANCE ItRw_WiderhakenBolt(C_Item)
 
 INSTANCE ItRw_PraezisionsBolt(C_Item)
 {
-	name 				=	"Präzisionsbolzen";
+	name 				=	"precyzyjne sruby";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -322,7 +322,7 @@ INSTANCE ItRw_PraezisionsBolt(C_Item)
 
 INSTANCE ItRw_SprengstoffBolt(C_Item)
 {
-	name 				=	"Explosionsbolzen";
+	name 				=	"sworzen wybuchowy";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -343,7 +343,7 @@ INSTANCE ItRw_SprengstoffBolt(C_Item)
 
 INSTANCE ItRw_RueckverwandlungsBolt(C_Item)
 {
-	name 				=	"Rückverwandlungsbolzen";
+	name 				=	"sworznie przeksztalcajace";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -364,7 +364,7 @@ INSTANCE ItRw_RueckverwandlungsBolt(C_Item)
 
 INSTANCE ItRw_GoldErzBolt(C_Item)
 {
-	name 				=	"Bolzen mit Gold-Erz-Spitze";
+	name 				=	"Sruba z koncówka rudy zlota";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -386,7 +386,7 @@ INSTANCE ItRw_GoldErzBolt(C_Item)
 
 INSTANCE ItRw_GoldErzBlutBolt(C_Item)
 {
-	name 				=	"Bolzen mit Gold-Erz-Blut-Spitze";
+	name 				=	"Bolcówka z koncówka z rudy zlota";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -408,7 +408,7 @@ INSTANCE ItRw_GoldErzBlutBolt(C_Item)
 
 INSTANCE ItRw_HolyBolt(C_Item)
 {
-	name 				=	"Heiliger Bolzen";
+	name 				=	"Swiety Bolczyk";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -429,7 +429,7 @@ INSTANCE ItRw_HolyBolt(C_Item)
 
 INSTANCE ItRw_TiergiftBolt(C_Item)
 {
-	name 				=	"Tiergiftbolzen";
+	name 				=	"sworzen trucizny zwierzecej";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -450,7 +450,7 @@ INSTANCE ItRw_TiergiftBolt(C_Item)
 
 INSTANCE ItRw_GewaechsgiftBolt(C_Item)
 {
-	name 				=	"Pflanzengiftbolzen";
+	name 				=	"sworznie trucizny roslinnej";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -471,7 +471,7 @@ INSTANCE ItRw_GewaechsgiftBolt(C_Item)
 
 INSTANCE ItRw_SchmetterBolt(C_Item)
 {
-	name 				=	"Schmetterbolzen";
+	name 				=	"sworzen motylkowy";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;
@@ -492,7 +492,7 @@ INSTANCE ItRw_SchmetterBolt(C_Item)
 
 instance ItRw_Addon_MagicCrossbow (C_Item)
 {
-	name 				=	"Magische Armbrust";
+	name 				=	"Magic Crossowow '.";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -526,7 +526,7 @@ instance ItRw_Addon_MagicCrossbow (C_Item)
 
 instance ItRw_Addon_FireBow (C_Item)
 {
-	name 				=	"Feuerbogen";
+	name 				=	"pozar";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -561,7 +561,7 @@ instance ItRw_Addon_FireBow (C_Item)
 
 INSTANCE ItRw_Mil_Crossbow(C_Item)
 {
-	name 				=	"Armbrust";
+	name 				=	"kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -590,7 +590,7 @@ INSTANCE ItRw_Mil_Crossbow(C_Item)
 
 INSTANCE ItRw_Holzarmbrust(C_Item)
 {
-	name 				=	"Holzarmbrust";
+	name 				=	"drewniane ramie";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -619,7 +619,7 @@ INSTANCE ItRw_Holzarmbrust(C_Item)
 
 INSTANCE ItRw_Goldarmbrust(C_Item)
 {
-	name 				=	"Goldarmbrust";
+	name 				=	"zlota bransoletka";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -648,7 +648,7 @@ INSTANCE ItRw_Goldarmbrust(C_Item)
 
 INSTANCE ItRw_EchsenArmbrust (C_Item)
 {
-	name 				=	"Echsenarmbrust";
+	name 				=	"kusza jaszczurka";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -677,7 +677,7 @@ INSTANCE ItRw_EchsenArmbrust (C_Item)
 
 INSTANCE ItRw_Mil_Crossbow_Schmetter (C_Item)
 {
-	name 				=	"Armbrust";
+	name 				=	"kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -707,7 +707,7 @@ INSTANCE ItRw_Mil_Crossbow_Schmetter (C_Item)
 
 instance ItRw_Addon_MagicBow (C_Item)
 {
-	name 				=	"Magischer Bogen";
+	name 				=	"Magiczny bow";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -740,7 +740,7 @@ instance ItRw_Addon_MagicBow (C_Item)
 
 INSTANCE ItRw_Sld_Bow(C_Item)
 {
-	name 				=	"Bogen";
+	name 				=	"zakret";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -770,7 +770,7 @@ INSTANCE ItRw_Sld_Bow(C_Item)
 
 INSTANCE ItRw_Sld_Bow_Schmetter (C_Item)
 {
-	name 				=	"Bogen";
+	name 				=	"zakret";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -803,7 +803,7 @@ INSTANCE ItRw_Sld_Bow_Schmetter (C_Item)
 //Kapitel 1
 instance ItRw_Bow_L_01(C_Item)
 {
-	name 				=	"Kurzbogen";
+	name 				=	"krótki";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -833,7 +833,7 @@ instance ItRw_Bow_L_01(C_Item)
 
 instance ItRw_EchsenBogen (C_Item)
 {
-	name 				=	"Echsenbogen";
+	name 				=	"jaszczurka";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -864,7 +864,7 @@ instance ItRw_EchsenBogen (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_02 (C_Item)
 {
-	name 				=	"Orkhetzer";
+	name 				=	"huragan";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -894,7 +894,7 @@ INSTANCE ItRw_Bow_War_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_03 (C_Item)
 {
-	name 				=	"Sturmbogen";
+	name 				=	"luk burzy";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -924,7 +924,7 @@ INSTANCE ItRw_Bow_War_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Snapperbogen (C_Item)
 {
-	name 				=	"Snapperbogen";
+	name 				=	"luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -975,7 +975,7 @@ FUNC VOID UnEquip_Snapperbogen()
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_04 (C_Item)
 {
-	name 				=	"Dämonenbogen";
+	name 				=	"demon";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1005,7 +1005,7 @@ INSTANCE ItRw_Bow_War_04 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_05 (C_Item)
 {
-	name 				=	"Todbringer";
+	name 				=	"smiertelnik";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1035,7 +1035,7 @@ INSTANCE ItRw_Bow_War_05 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_05_Schmetter (C_Item)
 {
-	name 				=	"Todbringer";
+	name 				=	"smiertelnik";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1064,7 +1064,7 @@ INSTANCE ItRw_Bow_War_05_Schmetter (C_Item)
 
 INSTANCE ItRw_Bow_L_02 (C_Item)
 {
-	name 				=	"Weidenbogen";
+	name 				=	"wierzba";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1095,7 +1095,7 @@ INSTANCE ItRw_Bow_L_02 (C_Item)
 //Kapitel 2
 instance ItRw_Bow_L_03 (C_Item)
 {
-	name 				=	"Jagdbogen";
+	name 				=	"lowiectwo";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1125,7 +1125,7 @@ instance ItRw_Bow_L_03 (C_Item)
 
 instance ItRw_Bow_L_03_Zelar (C_Item)
 {
-	name 				=	"Jagdbogen";
+	name 				=	"lowiectwo";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1155,7 +1155,7 @@ instance ItRw_Bow_L_03_Zelar (C_Item)
 
 instance ItRw_Bow_L_04 (C_Item)
 {
-	name 				=	"Ulmenbogen";
+	name 				=	"luk wiazowy";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1187,7 +1187,7 @@ instance ItRw_Bow_L_04 (C_Item)
 
 INSTANCE ItRw_Bow_M_01 (C_Item)
 {
-	name 				=	"Kompositbogen";
+	name 				=	"luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1219,7 +1219,7 @@ INSTANCE ItRw_Bow_M_01 (C_Item)
 
 INSTANCE ItRw_Bow_M_02 (C_Item)
 {
-	name 				=	"Eschenbogen";
+	name 				=	"jesion";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1253,7 +1253,7 @@ INSTANCE ItRw_Bow_M_02 (C_Item)
 
 INSTANCE ItRw_Bow_M_03 (C_Item)
 {
-	name 				=	"Langbogen";
+	name 				=	"sciega";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1285,7 +1285,7 @@ INSTANCE ItRw_Bow_M_03 (C_Item)
 
 INSTANCE ItRw_Bow_M_04 (C_Item)
 {
-	name 				=	"Buchenbogen";
+	name 				=	"arkusz bukowy";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1319,7 +1319,7 @@ INSTANCE ItRw_Bow_M_04 (C_Item)
 
 INSTANCE ItRw_Bow_H_01 (C_Item)
 {
-	name 				=	"Knochenbogen";
+	name 				=	"kosc";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1351,7 +1351,7 @@ INSTANCE ItRw_Bow_H_01 (C_Item)
 
 INSTANCE ItRw_Geisterbogen (C_Item)
 {
-	name 				=	"Geisterbogen";
+	name 				=	"duch";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1375,7 +1375,7 @@ INSTANCE ItRw_Geisterbogen (C_Item)
 	on_unequip	=	munichange_e;
 
 	description			= name;
-	TEXT[0]				= "50% mehr Schaden gegen Untote";
+	TEXT[0]				= "50% wiecej szkód dla nieumarlych";
 	TEXT[1]				= NAME_Range;					COUNT[1]	= range/100;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Dex_needed;				COUNT[3]	= cond_value[2];
@@ -1384,7 +1384,7 @@ INSTANCE ItRw_Geisterbogen (C_Item)
 
 INSTANCE ItRw_Bow_H_02 (C_Item)
 {
-	name 				=	"Eichenbogen";
+	name 				=	"debowy luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1418,7 +1418,7 @@ INSTANCE ItRw_Bow_H_02 (C_Item)
 
 INSTANCE ItRw_Bow_H_03 (C_Item)
 {
-	name 				=	"Kriegsbogen";
+	name 				=	"wojna";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1450,7 +1450,7 @@ INSTANCE ItRw_Bow_H_03 (C_Item)
 
 INSTANCE ItRw_Bow_H_04 (C_Item)
 {
-	name 				=	"Drachenbogen";
+	name 				=	"luk smok";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1482,7 +1482,7 @@ INSTANCE ItRw_Bow_H_04 (C_Item)
 
 INSTANCE ItRw_Bow_H_04_Eigen (C_Item)
 {
-	name 				=	"Drachenbogen (selbst gebaut)";
+	name 				=	"Smoczy uklon (samowybudowany)";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -1518,7 +1518,7 @@ INSTANCE ItRw_Bow_H_04_Eigen (C_Item)
 
 INSTANCE ItRw_Crossbow_L_01(C_Item)
 {
-	name 				=	"Jagdarmbrust";
+	name 				=	"kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1549,7 +1549,7 @@ INSTANCE ItRw_Crossbow_L_01(C_Item)
 
 INSTANCE ItRw_Crossbow_L_02(C_Item)
 {
-	name 				=	"Leichte Armbrust";
+	name 				=	"Kusza swietlna";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1580,7 +1580,7 @@ INSTANCE ItRw_Crossbow_L_02(C_Item)
 
 INSTANCE ItRw_Crossbow_M_01(C_Item)
 {
-	name 				=	"Armbrust";
+	name 				=	"kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1613,7 +1613,7 @@ INSTANCE ItRw_Crossbow_M_01(C_Item)
 
 INSTANCE ItRw_Crossbow_M_02(C_Item)
 {
-	name 				=	"Kriegsarmbrust";
+	name 				=	"kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1646,7 +1646,7 @@ INSTANCE ItRw_Crossbow_M_02(C_Item)
 
 INSTANCE ItRw_Crossbow_H_01(C_Item)
 {
-	name 				=	"Schwere Armbrust";
+	name 				=	"Ciezki crossbow";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1679,7 +1679,7 @@ INSTANCE ItRw_Crossbow_H_01(C_Item)
 
 INSTANCE ItRw_Crossbow_Orc(C_Item)
 {
-	name 				=	"Orkarmbrust";
+	name 				=	"krzyzówka ramienia huraganu";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1710,7 +1710,7 @@ INSTANCE ItRw_Crossbow_Orc(C_Item)
 
 INSTANCE ItRw_Crossbow_H_02(C_Item)
 {
-	name 				=	"Drachenjägerarmbrust";
+	name 				=	"Smok kusza";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1741,7 +1741,7 @@ INSTANCE ItRw_Crossbow_H_02(C_Item)
 
 INSTANCE ItRw_Crossbow_H_02_Eigen(C_Item)
 {
-	name 				=	"Drachenjägerarmbrust (selbst gebaut)";
+	name 				=	"Pokusa smokowfighter (samobudowana)";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW | ITEM_MULTI;
@@ -1822,7 +1822,7 @@ FUNC VOID PC_Arrow_Eis_Info ()
 	waffe.munition = ItRw_IceArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Eispfeil als Munition gewählt!");
+	Print	("Strzalka lodowa wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -1855,7 +1855,7 @@ FUNC VOID PC_Arrow_Sprengstoff_Info ()
 	waffe.munition = ItRw_SprengstoffArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Explosionspfeil als Munition gewählt!");
+	Print	("Strzalka wybuchowa wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -1888,7 +1888,7 @@ FUNC VOID PC_Arrow_Feuer_Info ()
 	waffe.munition = ItRw_Addon_FireArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Feuerpfeil als Munition gewählt!");
+	Print	("Strzalka ognia wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -1921,7 +1921,7 @@ FUNC VOID PC_Arrow_Gewaechsgift_Info ()
 	waffe.munition = ItRw_GewaechsgiftArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Gewächspfeil als Munition gewählt!");
+	Print	("Strzalka wzrostu wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -1954,7 +1954,7 @@ FUNC VOID PC_Arrow_Holy_Info ()
 	waffe.munition = ItRw_HolyArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Heiliger Pfeil als Munition gewählt!");
+	Print	("Swieta strzala wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -1987,7 +1987,7 @@ FUNC VOID PC_Arrow_Magic_Info ()
 	waffe.munition = ItRw_Addon_MagicArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Magischer Pfeil als Munition gewählt!");
+	Print	("Strzalka magiczna wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2000,7 +2000,7 @@ INSTANCE PC_Arrow_Normal (C_INFO)
 	information 	= PC_Arrow_Normal_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Normaler Pfeil"; 
+	description 	= "Normalna strzalka"; 
 };
 
 FUNC INT PC_Arrow_Normal_Condition()
@@ -2020,7 +2020,7 @@ FUNC VOID PC_Arrow_Normal_Info ()
 	waffe.munition = ItRw_Arrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Normaler Pfeil als Munition gewählt!");
+	Print	("Zwykla strzalka wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2053,7 +2053,7 @@ FUNC VOID PC_Arrow_GoldErz_Info ()
 	waffe.munition = ItRw_GoldErzArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Pfeil mit Gold-Erz-Spitze als Munition gewählt!");
+	Print	("Strzalka z koncówka rudy zlota wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2086,7 +2086,7 @@ FUNC VOID PC_Arrow_GoldErzBlut_Info ()
 	waffe.munition = ItRw_GoldErzBlutArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Pfeil mit Gold-Erz-Blut-Spitze als Munition gewählt!");
+	Print	("Strzalka z rudokrwista koncówka zlota jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2119,7 +2119,7 @@ FUNC VOID PC_Arrow_Widerhaken_Info ()
 	waffe.munition = ItRw_WiderhakenArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Pfeil mit Widerhaken als Munition gewählt!");
+	Print	("Strzalka z kotwami wybranymi jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2152,7 +2152,7 @@ FUNC VOID PC_Arrow_Praezision_Info ()
 	waffe.munition = ItRw_PraezisionsArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Präzisionspfeil als Munition gewählt!");
+	Print	("Strzalka precyzyjna wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2185,7 +2185,7 @@ FUNC VOID PC_Arrow_Rueckverwandlungs_Info ()
 	waffe.munition = ItRw_RueckverwandlungsArrow;
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Rückverwandlungspfeil als Munition gewählt!");
+	Print	("Strzalka rekonwersji wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2218,7 +2218,7 @@ FUNC VOID PC_Arrow_Schmetter_Info ()
 	waffe.munition = ItRw_SchmetterArrow;
 	waffe.damagetype = DAM_BLUNT;
 
-	Print	("Schmetterpfeil als Munition gewählt!");
+	Print	("Strzalka motylkowa wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2251,7 +2251,7 @@ FUNC VOID PC_Arrow_Tiergift_Info ()
 	waffe.munition = ItRw_TiergiftArrow; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Tiergiftpfeil als Munition gewählt!");
+	Print	("Trucizna zwierzeca wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2326,7 +2326,7 @@ FUNC VOID PC_Bolt_GoldErz_Info ()
 	waffe.munition = ItRw_GoldErzBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Bolzen mit Gold-Erz-Spitze als Munition gewählt!");
+	Print	("Bolce z koncówka rudy zlota wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2359,7 +2359,7 @@ FUNC VOID PC_Bolt_GoldErzBlut_Info ()
 	waffe.munition = ItRw_GoldErzBlutBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Bolzen mit Gold-Erz-Blut-Spitze als Munition gewählt!");
+	Print	("Bolce ze zlotem, ruda i punktami krwi wybranymi jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2392,7 +2392,7 @@ FUNC VOID PC_Bolt_Widerhaken_Info ()
 	waffe.munition = ItRw_WiderhakenBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Bolzen mit Widerhaken als Munition gewählt!");
+	Print	("Sruby z kotwami wyselekcjonowanymi jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2425,7 +2425,7 @@ FUNC VOID PC_Bolt_Eis_Info ()
 	waffe.munition = ItRw_IceBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Eisbolzen als Munition gewählt!");
+	Print	("Sruby lodowe wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2458,7 +2458,7 @@ FUNC VOID PC_Bolt_Sprengstoff_Info ()
 	waffe.munition = ItRw_SprengstoffBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Explosionsbolzen als Munition gewählt!");
+	Print	("Sruba wybuchowa wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2491,7 +2491,7 @@ FUNC VOID PC_Bolt_Feuer_Info ()
 	waffe.munition = ItRw_Addon_FireBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Feuerbolzen als Munition gewählt!");
+	Print	("Sruby ognia wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2524,7 +2524,7 @@ FUNC VOID PC_Bolt_Gewaechsgift_Info ()
 	waffe.munition = ItRw_GewaechsgiftBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Pflanzengiftbolzen als Munition gewählt!");
+	Print	("Fitotoksyczne stadniny wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2557,7 +2557,7 @@ FUNC VOID PC_Bolt_Holy_Info ()
 	waffe.munition = ItRw_HolyBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Heiliger Bolzen als Munition gewählt!");
+	Print	("Swieci rodzice wybrani jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2590,7 +2590,7 @@ FUNC VOID PC_Bolt_Magic_Info ()
 	waffe.munition = ItRw_Addon_MagicBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Magischer Bolzen als Munition gewählt!");
+	Print	("Magic Bolt wybrany jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2603,7 +2603,7 @@ INSTANCE PC_Bolt_Normal (C_INFO)
 	information 	= PC_Bolt_Normal_Info;
 	permanent 	= 1;
 	important	= 0;
-	description 	= "Normaler Bolzen"; 
+	description 	= "Sruba zwykla"; 
 };
 
 FUNC INT PC_Bolt_Normal_Condition()
@@ -2623,7 +2623,7 @@ FUNC VOID PC_Bolt_Normal_Info ()
 	waffe.munition = ItRw_Bolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Normaler Bolzen als Munition gewählt!");
+	Print	("Sruba normalna wybrana jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2656,7 +2656,7 @@ FUNC VOID PC_Bolt_Praezision_Info ()
 	waffe.munition = ItRw_PraezisionsBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Präzisionsbolzen als Munition gewählt!");
+	Print	("Sruby precyzyjne wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2689,7 +2689,7 @@ FUNC VOID PC_Bolt_Rueckverwandlungs_Info ()
 	waffe.munition = ItRw_RueckverwandlungsBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Rückverwandlungsbolzen als Munition gewählt!");
+	Print	("Sruby rekonwersyjne wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2722,7 +2722,7 @@ FUNC VOID PC_Bolt_Schmetter_Info ()
 	waffe.munition = ItRw_SchmetterBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_BLUNT;
 
-	Print	("Schmetterbolzen als Munition gewählt!");
+	Print	("Sworzen motylkowy wybrany jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -2755,7 +2755,7 @@ FUNC VOID PC_Bolt_Tiergift_Info ()
 	waffe.munition = ItRw_TiergiftBolt; //Neuer Munitionstyp wird festgelegt
 	waffe.damagetype = DAM_POINT;
 
-	Print	("Tiergiftbolzen als Munition gewählt!");
+	Print	("Sruby trucizny zwierzecej wybrane jako amunicja!");
 
 	B_ENDPRODUCTIONDIALOG();
 };

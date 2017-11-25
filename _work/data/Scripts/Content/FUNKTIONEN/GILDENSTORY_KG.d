@@ -11,9 +11,9 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_VM_GehtNichtVoran_15_00"); //Wenn wir so weiter machen, bekommen wir die Mine nie richtig in Gang. Sieht so aus, als ob ich wieder alles allein machen darf.
+			AI_Output(hero, NULL, "Info_Mod_Hero_VM_GehtNichtVoran_15_00"); //Jesli tak sie stanie, to nigdy nie uda nam sie tego odebrac. Wyglada na to, ze moge robic wszystko na wlasna reke.
 
-			B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Ich sollte mich hier ein wenig umsehen, solange Granmar die anderen in die Mine holt.");
+			B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "tak dlugo, jak dlugo Granmar zabiera innych do kopalni.");
 		};
 
 		if (Mod_KG_WaitInMine == 1)
@@ -26,9 +26,9 @@ FUNC VOID GILDENSTORY_KG()
 			{
 				Mod_KG_RightTunnel = 1;
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_VM_RightTunnel_15_00"); //Hier sieht man ja nicht mal die Hand vor Augen. Und meine Fackel bekomm ich hier auch nicht an. Scheint so, als würde es hier einen Windzug geben. Ich sollte lieber umkehren, bevor ich hier noch irgendwelchen Monstern in die Arme laufe, falls die sowas überhaupt haben ...
+				AI_Output(hero, NULL, "Info_Mod_Hero_VM_RightTunnel_15_00"); //Nie widac nawet reki przed oczami. I tu nie moge siegnac po latarke. Wyglada jak podmuch wiatru. Powinienem raczej zawrócic z powrotem, zanim tu natrafie na jakies potwory, jesli maja cos takiego......
 
-				B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Der rechte Tunnel ist zu dunkel, um ihn zu betreten. Ich sollte es später noch einmal versuchen ...");
+				B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Wlasciwy tunel jest zbyt ciemny, aby wejsc. Powinienem spróbowac ponownie pózniej.....");
 			};
 
 			AI_GotoWP	(hero, "MINE_GO_36");
@@ -41,9 +41,9 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_VM_SpecialErzguardian_15_00"); //Ich sollte jetzt langsam mal bei Granmar vorbeischauen ...
+			AI_Output(hero, NULL, "Info_Mod_Hero_VM_SpecialErzguardian_15_00"); //Powinienem zatrzymac sie przy domu Granmara....
 
-			B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Ich sollte jetzt langsam mal bei Granmar vorbeischauen ...");
+			B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Powinienem zatrzymac sie przy domu Granmara....");
 		};
 
 		if (Mod_KG_SchwarzesErz == 0)
@@ -54,11 +54,11 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_VM_AfterQueenAttack_15_00"); //Ich sollte das schwarze Erz auf keinen Fall den Paladinen übergeben. Xardas wir mir damit bestimmt weiterhelfen können ...
+			AI_Output(hero, NULL, "Info_Mod_Hero_VM_AfterQueenAttack_15_00"); //Nigdy nie przekazuje paladynom czarnego rudy. Xarda z pewnoscia moze mi w tym pomóc.....
 
 			Log_CreateTopic	(TOPIC_MOD_KG_RITUAL, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_KG_RITUAL, LOG_RUNNING);
-			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Ich sollte das schwarze Erz auf keinen Fall den Paladinen übergeben. Xardas wir mir damit bestimmt weiterhelfen können ...");
+			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Nigdy nie przekazuje paladynom czarnego rudy. Xarda z pewnoscia moze mi w tym pomóc.....");
 		};
 
 		if (Mod_KG_TrentLicht > 0)
@@ -100,9 +100,9 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkNichtTot_15_00"); //Verdammt, das war's wohl für Trent. Ich sollte Xardas aufsuchen, vielleicht hilft mir hier das schwarze Erz weiter. Hm ... hat der Schamane nicht auch etwas schwarzes erwähnt?
+			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkNichtTot_15_00"); //Damn, to chyba dla Trent. Powinienem odwiedzic Xardas, moze pomoze mi tu czarna ruda. Hm.... czy szaman nie wspomnial o czyms czarnym?
 
-			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Verdammt, das war's wohl für Trent. Ich sollte Xardas aufsuchen, vielleicht hilft mir hier das schwarze Erz weiter. Hm ... hat der Schamane nicht auch etwas schwarzes erwähnt?");
+			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Damn, to chyba dla Trent. Powinienem odwiedzic Xardas, moze pomoze mi tu czarna ruda. Hm.... czy szaman nie wspomnial o czyms czarnym?");
 		};
 
 		if (Mod_KG_OrkTot == 0)
@@ -113,9 +113,9 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkTot_15_00"); //Das wäre erledigt. Ich sollte jetzt noch mal Hymir und Lord Andre aufsuchen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkTot_15_00"); //To ja reguluje. Zobacze teraz Hymira i Pana Andre' a.
 
-			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Das wäre erledigt. Ich sollte jetzt noch mal Hymir und Lord Andre aufsuchen.");
+			B_LogEntry	(TOPIC_MOD_KG_RITUAL, "To ja reguluje. Zobacze teraz Hymira i Pana Andre' a.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_OrcSchamane_KG_NichtTot))
@@ -126,7 +126,7 @@ FUNC VOID GILDENSTORY_KG()
 
 			AI_GotoWP	(hero, "CASTLE_30");
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkNochNichtBereit_15_00"); //Ich sollte mich lieber noch nicht wieder hineinwagen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_KG_OrkNochNichtBereit_15_00"); //Lepiej bym nie wracal do srodka.
 		};
 	};
 

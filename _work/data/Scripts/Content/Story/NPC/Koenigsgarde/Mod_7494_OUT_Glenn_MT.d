@@ -1,7 +1,7 @@
 instance Mod_7494_OUT_Glenn_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Glenn"; 
+	name 		= "blask"; 
 	guild 		= GIL_OUT;
 	id 			= 7494;
 	voice 		= 6;

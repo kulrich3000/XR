@@ -1,7 +1,7 @@
 INSTANCE Mod_7105_ASS_Aabid_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Aabid"; 
+	name 		= "aabide"; 
 	guild 		= GIL_OUT;
 	id 			= 7105;
 	voice 		= 9;

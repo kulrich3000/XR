@@ -1,7 +1,7 @@
 instance Mod_1953_EIS_Gellit_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gellit";
+	name 		= "gellit";
 	guild 		= GIL_OUT;
 	id 			= 1953;
 	voice 		= 26;

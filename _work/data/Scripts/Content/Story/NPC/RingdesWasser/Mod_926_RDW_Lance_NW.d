@@ -1,7 +1,7 @@
 instance Mod_926_RDW_Lance_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lance";
+	name 		= "wlócznia";
 	guild 		= GIL_NOV;
 	id 			= 926;
 	voice 		= 3;

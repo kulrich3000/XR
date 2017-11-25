@@ -1,7 +1,7 @@
 INSTANCE Mod_10038_Orc_Scout_AW (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Harcerka ork";
 	guild							=	GIL_ORC;
 	id			= 	10038;
 	voice							=	18;

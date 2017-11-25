@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Daniel_Hi (C_INFO)
 	information	= Info_Mod_Daniel_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist ein Händler?";
+	description	= "Jestes dealerem?";
 };
 
 FUNC INT Info_Mod_Daniel_Hi_Condition()
@@ -16,30 +16,30 @@ FUNC INT Info_Mod_Daniel_Hi_Condition()
 
 FUNC VOID Info_Mod_Daniel_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Hi_15_00"); //Du bist ein Händler?
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_01"); //Das ist richtig. Mein Angebot umfasst alle Gegenstände, die du als Magier nützlich finden kannst.
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_02"); //Willst du mein Sonderangebot hören?
+	AI_Output(hero, self, "Info_Mod_Daniel_Hi_15_00"); //Jestes dealerem?
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_01"); //To prawda. Moja oferta obejmuje wszystkie przedmioty, które moga Ci sie przydac jako magikowi.
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_02"); //Chcesz uslyszec moja specjalna oferte?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Daniel verkauft verschiedene Gegenstände für Magier.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Daniel sprzedaje rózne przedmioty dla magów.");
 
 	Info_ClearChoices	(Info_Mod_Daniel_Hi);
 
-	Info_AddChoice	(Info_Mod_Daniel_Hi, "Nein, ich möchte mir nur deine Waren ansehen.", Info_Mod_Daniel_Hi_B);
-	Info_AddChoice	(Info_Mod_Daniel_Hi, "Ja, bitte.", Info_Mod_Daniel_Hi_A);
+	Info_AddChoice	(Info_Mod_Daniel_Hi, "Nie, chce tylko spojrzec na wasze towary.", Info_Mod_Daniel_Hi_B);
+	Info_AddChoice	(Info_Mod_Daniel_Hi, "Tak, prosze.", Info_Mod_Daniel_Hi_A);
 };
 
 FUNC VOID Info_Mod_Daniel_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Hi_B_15_00"); //Nein, ich möchte mir nur deine Waren ansehen.
+	AI_Output(hero, self, "Info_Mod_Daniel_Hi_B_15_00"); //Nie, chce tylko spojrzec na wasze towary.
 
 	Info_ClearChoices	(Info_Mod_Daniel_Hi);
 };
 
 FUNC VOID Info_Mod_Daniel_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Hi_A_15_00"); //Ja, bitte.
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_A_11_01"); //Ich habe eine übermäßige Lieferung an Eisspruchrollen erhalten. Eislanze, Eispfeil, Eisblock und Eiswelle kannst du bei mir zum halben Preis kaufen. Interesse?
+	AI_Output(hero, self, "Info_Mod_Daniel_Hi_A_15_00"); //Tak, prosze.
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_A_11_01"); //Dostalem zbyt duza ilosc rolek lodowych. Lanca lodowa, strzalka lodowa, blok lodowy i fala lodowa mozna kupic za pól ceny. Interesuje?
 
 	Info_ClearChoices	(Info_Mod_Daniel_Hi);
 };
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Daniel_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Daniel_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Hast du zufällig ein paar Nägel?";
+	description 	= "Masz jakies paznokcie, przez przypadek?";
 };                       
 
 FUNC INT Info_Mod_Daniel_Nagelnachschub_Condition()
@@ -65,9 +65,9 @@ FUNC INT Info_Mod_Daniel_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Daniel_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Nagelnachschub_15_00"); //Hast du zufällig ein paar Nägel?
-	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_01"); //Tut mir Leid, damit kann ich nicht dienen.
-	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_02"); //Aber ich bin mir sicher, meine etwas ... grobschlächtigen Kollegen können dir weiterhelfen. (rümpft die Nase)
+	AI_Output(hero, self, "Info_Mod_Daniel_Nagelnachschub_15_00"); //Masz jakies paznokcie, przez przypadek?
+	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_01"); //Przykro mi, nie moge w tym pomóc.
+	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_02"); //Ale jestem pewien, ze moje male.... Zgrubni koledzy moga Ci pomóc. (pobudza nos)
 };
 
 INSTANCE Info_Mod_Daniel_BrokenRune (C_INFO)
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Daniel_BrokenRune (C_INFO)
 	information	= Info_Mod_Daniel_BrokenRune_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Tag, ich habe eine Frage.";
+	description 	= "Naprawde, mam pytanie.";
 };                       
 
 FUNC INT Info_Mod_Daniel_BrokenRune_Condition()
@@ -93,18 +93,18 @@ FUNC INT Info_Mod_Daniel_BrokenRune_Condition()
 
 FUNC VOID Info_Mod_Daniel_BrokenRune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_00"); //Tag, ich habe eine Frage.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_01"); //Du willst etwas kaufen? Ich zeig dir gern meine Waren.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_02"); //Nein, nein. Ich suche eigentlich einen Magier. Habt ihr einen im Ort.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_03"); //Nun es gibt da Fuego, ein Feuermagier. Du findest in im Haus der Feuermagier.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_04"); //Danke Mann. Ich schau dann mal.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_05"); //Langsam. Dann ist da noch ein Wassermagier. Ein seltsamer Kauz.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_06"); //Lebt irgendwo im Armenviertel. Wo genau, weiß ich nicht.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_07"); //Jo. Danke nochmal.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_00"); //Naprawde, mam pytanie.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_01"); //Chcesz cos kupic? Pokaze Ci moje towary.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_02"); //Nie, nie, nie, nie, nie. Wlasciwie poszukuje maga. Dostales go w miescie.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_03"); //No cóz, jest Fuego, magik ognia. Znajdziesz go w Magicznym Domu Pozarnym.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_04"); //Dzieki, czlowiek. Zobacze.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_05"); //Powoli. Potem jest magik wody. Dziwny wspólpracownik.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_06"); //Mieszka gdzies w slumsach. Gdzie dokladnie nie wiem.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_07"); //Jo Jo. Jeszcze raz panstwu dziekuje.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_RUNENZAUBER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_RUNENZAUBER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Es gibt zwei wichtige Magier hier in Khorata: Den Feuermagier Fuego im Magierhaus und einen Wassermagier im Armenviertel.");
+	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "W Khoracie sa tu dwaj wazni magowie: magik ognia w domu czarodziejów i magik wodny w slumsach.");
 };
 
 INSTANCE Info_Mod_Daniel_BrokenRune2 (C_INFO)
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Daniel_BrokenRune2 (C_INFO)
 	information	= Info_Mod_Daniel_BrokenRune2_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Guten Tag. Ich sehe, du hast allerlei Magie anzubieten.";
+	description 	= "Dobry dzien. Widze, ze masz do zaoferowania wszystkie rodzaje magii.";
 };                       
 
 FUNC INT Info_Mod_Daniel_BrokenRune2_Condition()
@@ -128,16 +128,16 @@ FUNC INT Info_Mod_Daniel_BrokenRune2_Condition()
 
 FUNC VOID Info_Mod_Daniel_BrokenRune2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_00"); //Guten Tag. Ich sehe, du hast allerlei Magie anzubieten.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_01"); //Wohl war. Was darf's sein? Ein Trank? Eine Rolle? Oder ein Kraut?
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_02"); //Nichts da. Ich suche die Adanosfigur, die dir der Wassermagier verkauft hat.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_03"); //Ja, ein selten schönes Teil. Nur leider hab ich's nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_04"); //Und wem hast du es verkauft?
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_05"); //Lass mich nachdenken ... Ja, der Kollege, der mit Raritäten handelt.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_06"); //Wobei ich nicht glaube, dass alles echt ist, was er verkauft ...
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_07"); //Danke für den Tipp.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_00"); //Dobry dzien. Widze, ze masz do zaoferowania wszystkie rodzaje magii.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_01"); //Bylo dobrze. Co moge Ci dostac? Czyz eliksir? Czesc? A moze ziolo?
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_02"); //Nic tam nie ma. Szukam postaci Adanos, która sprzedal ci magik wody.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_03"); //Tak, rzecz rzadko piekna. Niestety, juz tego nie mam.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_04"); //A do kogo ja sprzedales?
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_05"); //Prosze pozwolic mi pomyslec o tym...... Tak, kolega, który zajmuje sie rzadkoscia.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_06"); //I nie sadze, aby wszystko, co sprzedaje, bylo realne....
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_07"); //Dziekujemy za koncówke.
 
-	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Daniel hat die Adanosfigur an den Raritätenhändler verkauft.");
+	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Daniel sprzedal sylwetke Adanos dealerowi rzadkosci.");
 };
 
 INSTANCE Info_Mod_Daniel_BrokenRune3 (C_INFO)
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Daniel_BrokenRune3 (C_INFO)
 	information	= Info_Mod_Daniel_BrokenRune3_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Hm. Könntest du vielleicht für mich diese Sache aushandeln?";
+	description 	= "Hm. Czy móglbys wynegocjowac te rzecz dla mnie?";
 };                       
 
 FUNC INT Info_Mod_Daniel_BrokenRune3_Condition()
@@ -163,11 +163,11 @@ FUNC INT Info_Mod_Daniel_BrokenRune3_Condition()
 
 FUNC VOID Info_Mod_Daniel_BrokenRune3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_00"); //Hm. Könntest du vielleicht für mich diese Sache aushandeln?
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_01"); //Wieso. Denkst du, das würde dann billiger? Ich bin auch Händler.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_02"); //Nein, nein. Nur, ich habe ihn vorhin wahrscheinlich etwas geärgert ...
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_03"); //Ich kann's versuchen. Plus 25 Prozent für mich.
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_04"); //Ist schon gut.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_00"); //Hm. Czy móglbys wynegocjowac te rzecz dla mnie?
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_01"); //Dlaczego. Czy uwazasz, ze bedzie tanszy? Ja równiez jestem handlarzem.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_02"); //Nie, nie, nie, nie, nie. Prawdopodobnie troche wczesniej go zirytowalam.....
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_03"); //Moge spróbowac. Dla mnie to 25 procent.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_04"); //To dobrze, to w porzadku.
 
 	AI_GotoWP	(self, "REL_CITY_102");
 	AI_GotoWP	(self, "REL_CITY_347");
@@ -175,17 +175,17 @@ FUNC VOID Info_Mod_Daniel_BrokenRune3_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_05"); //So. Hier ist die Figur. Hat 100 gekostet. Das heißt: 150 Gold für mich.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_05"); //Tam. Oto rysunek. Koszt 100. Dla mnie oznacza to 150 zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_AdanosStatue, 1);
 
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_06"); //Das wären aber 50 Prozent.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_07"); //Ja und? Ist doch günstig genug, oder? Außerdem hab ich Frau und sieben ...
-	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_08"); //... sieben Kinder. Ich weiß. Hier, dein Gold.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_06"); //Ale to 50%.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_07"); //Tak, i? Czy nie jest to wystarczajaco tanie? Poza tym mam zone i siedem - mam zone.
+	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_08"); //... siedmioro dzieci. Wiem. Oto Twoje zloto.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 150);
 
-	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Händlerpack! Dass die immer Feilschen müssen. Sieben Kinder! Ich hab hier noch kein einzigen Balg gesehen. Wenigstens habe ich jetzt die Adanosfigur. Muss zum Magier zurück.");
+	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Pakiet handlowca! Ze zawsze musza sie targowac. Siedem dzieci! Nie widzialem jeszcze tu ani jednego szczura. Przynajmniej teraz mam postac Adanos. Gota wraca do maga.");
 };
 
 INSTANCE Info_Mod_Daniel_Kissen (C_INFO)
@@ -196,7 +196,7 @@ INSTANCE Info_Mod_Daniel_Kissen (C_INFO)
 	information	= Info_Mod_Daniel_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich suche einen wohlriechenden Weichmacher.";
+	description 	= "Szukam srodka zmiekczajacego zapach.";
 };                       
 
 FUNC INT Info_Mod_Daniel_Kissen_Condition()
@@ -211,11 +211,11 @@ FUNC INT Info_Mod_Daniel_Kissen_Condition()
 
 FUNC VOID Info_Mod_Daniel_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_00"); //Ich suche einen wohlriechenden Weichmacher.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_01"); //Nie gehört. Was soll DAS denn sein?
-	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_02"); //Weiß ich auch nicht genau. Könnte eine Tinktur sein oder so.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_03"); //Dann würde ich's beim Alchemisten versuchen. Oder bei Morpheus drüben, der verkauft Raritäten.
-	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_04"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_00"); //Szukam srodka zmiekczajacego zapach.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_01"); //Nigdy o tym nie slyszalem. Co to ma byc?
+	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_02"); //Tak naprawde nie wiem. Moze to byc nalewka lub cos.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_03"); //Potem spróbowalbym alchemika. Albo na Morpheus, sprzedajac rarytasy.
+	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_04"); //Dzieki.
 };
 
 INSTANCE Info_Mod_Daniel_Kimon (C_INFO)
@@ -226,7 +226,7 @@ INSTANCE Info_Mod_Daniel_Kimon (C_INFO)
 	information	= Info_Mod_Daniel_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du hast allerlei Tränke und Pflanzen.";
+	description 	= "Masz wszystkie rodzaje eliksirów i roslin.";
 };                       
 
 FUNC INT Info_Mod_Daniel_Kimon_Condition()
@@ -241,11 +241,11 @@ FUNC INT Info_Mod_Daniel_Kimon_Condition()
 
 FUNC VOID Info_Mod_Daniel_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_00"); //Du hast allerlei Tränke und Pflanzen. Da ist sicher auch Freudenspender dabei.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_01"); //Da denkst du falsch. Ich führe nur, was ehrliche Alchemie herstellt. Nicht dieses monströse Gepansche. Da musst du schon zu den Hofstaatlern gehen.
-	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_02"); //Da komme ich nicht rein.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_03"); //Ist auch gut so. Ich kann dir jedenfalls nicht helfen.
-	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_04"); //Hätte ja sein können. Bis ein andermal.
+	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_00"); //Masz wszystkie rodzaje eliksirów i roslin. Jestem pewien, ze jest tez dawca radosci.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_01"); //Myslisz zle. Prowadze tylko to, co czyni uczciwa alchemie. Nie ten potworny miotacz. Bedziesz musial udac sie do komorników sadowych.
+	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_02"); //Nie moge sie tam dostac.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_03"); //To równiez dobrze. Tak czy owak nie moge wam pomóc.
+	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_04"); //Moglo tak byc. Do zobaczenia nastepnym razem.
 };
 
 INSTANCE Info_Mod_Daniel_Freudenspender (C_INFO)
@@ -256,7 +256,7 @@ INSTANCE Info_Mod_Daniel_Freudenspender (C_INFO)
 	information	= Info_Mod_Daniel_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Brauchst du Freudenspender?";
+	description 	= "Potrzebujesz dozowników radosci?";
 };                       
 
 FUNC INT Info_Mod_Daniel_Freudenspender_Condition()
@@ -271,9 +271,9 @@ FUNC INT Info_Mod_Daniel_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Daniel_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daniel_Freudenspender_15_00"); //Brauchst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_01"); //Es tut mir Leid, aber es ist mir nicht gestattet, meinen Geist trüben zu lassen.
-	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_02"); //Da musst du dich an andere wenden.
+	AI_Output(hero, self, "Info_Mod_Daniel_Freudenspender_15_00"); //Potrzebujesz dozowników radosci?
+	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_01"); //Przykro mi, ale nie wolno mi pozwolic, aby mój umysl sie zamglal.
+	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_02"); //Bedziesz musial zwrócic sie do innych.
 };
 
 INSTANCE Info_Mod_Daniel_Trade (C_INFO)

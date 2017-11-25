@@ -2,7 +2,7 @@ instance Mod_1108_GRD_Bullit_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Bullit";
+	name 		=	"bullit";
 	npctype		=	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		=	10;

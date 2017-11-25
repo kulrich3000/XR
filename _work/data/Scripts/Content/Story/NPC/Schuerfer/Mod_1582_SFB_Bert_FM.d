@@ -2,7 +2,7 @@ instance Mod_1582_SFB_Bert_FM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Bert";
+	name =							"Berto";
 	npctype =						npctype_MAIN;
 	guild =							GIL_DMT;      
 	level =							3;

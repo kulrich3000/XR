@@ -85,7 +85,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 		{
 			Mod_Orks_Morgahard = 2;
 
-			B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "So, ich habe die Truppe zusammengestellt. Heute Nacht kann es losgehen.");
+			B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Wszystko w porzadku, mam gotowy oddzial. Dzis mozemy zaczac dzialac.");
 		};
 
 		if (Mod_Orks_Morgahard == 2)
@@ -96,9 +96,9 @@ FUNC VOID GILDENSTORY_BANDIT()
 
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_BDT_WoSkinner_15_00"); //Wo bleibt nur Skinner?
+			AI_Output(hero, NULL, "Info_Mod_Hero_BDT_WoSkinner_15_00"); //Gdzie jest Skinner?
 
-			B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Wo bleibt nur Skinner? Ich sollte nochmal in seiner Höhle vorbei sehen.");
+			B_LogEntry	(TOPIC_MOD_BDT_MORGAHARD, "Gdzie jest Skinner? Powrót do jego jaskini.");
 		};
 
 		if (Mod_Orks_Morgahard >= 1)
@@ -200,7 +200,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 		&& (Mod_Dexter_AmulettParty == 1)
 		&& (!Npc_IsInState(Mod_761_BDT_Dexter_MT, ZS_Talk))
 		{
-			PrintScreen ("Eine durchzechte Nacht später", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("Noc pic pózniej", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -225,7 +225,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 		&& (Mod_AlbertTransforms == 8) {
 			if (!Npc_IsInState(Mod_761_BDT_Dexter_MT, ZS_Talk))
 			{
-				PrintScreen ("Eine durchzechte Nacht später", -1, YPOS_LevelUp, FONT_Screen, 2);
+				PrintScreen ("Noc pic pózniej", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 				Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -276,7 +276,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 			B_StartOtherRoutine	(Mod_790_BDT_Morgahard_MT, "ABLENKUNG");
 			B_StartOtherRoutine	(Mod_958_BDT_Miguel_MT, "ABLENKUNG");
 
-			B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Es geht los, jetzt nur lange genug durchhalten ...");
+			B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Tu jedziemy, po prostu juz wystarczajaco dlugo wiszac.....");
 		};
 
 		if (Mod_LoganQuest == 2)
@@ -294,7 +294,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 				B_StartOtherRoutine	(Mod_790_BDT_Morgahard_MT, "RETTUNG");
 				B_StartOtherRoutine	(Mod_958_BDT_Miguel_MT, "RETTUNG");
 
-				B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Fertig, jetzt nichts wie weg hier ...");
+				B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Wykonczony, wyjdzmy stad stad.....");
 			};
 		};
 
@@ -504,44 +504,44 @@ FUNC VOID GILDENSTORY_BANDIT()
 			{
 				if (Mod_BDT_AlterWaldMann_Text == 0)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_00"); //Wer bist du? Ein Bandit, ein Wilderer? Niemals wirst du deine finsteren Ziele umsetzen können, du Narr.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_00"); //Kim jestes? A bandyta, klusownika? Nigdy nie osiagniesz swoich zlowrogich celów, oszukujesz.
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 1)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_01"); //Hör mal an, wenn wir da haben ... Willst du den Tieren des Waldes schaden, den Wald roden?
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_01"); //Sluchaj, kiedy tam dojdziemy..... Chcesz zaszkodzic zwierzetom z lasu, oczyscic las?
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 2)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_02"); //Ein Störenfried? Mach das du weg kommst, du Banause, der Wald gehört den Pflanzen und Tieren.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_02"); //awanturnik? Zejdz stad, dranie, las nalezy do roslin i zwierzat.
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 3)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_03"); //Schon wieder ein ungebetener Gast? Was immer du auch willst, niemals wirst du es erreichen.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_03"); //Inny nieproszony gosc? Cokolwiek zechcesz, nigdy tego nie osiagniesz.
 				};
 			};
 			if (Mod_BDT_AlterWaldMann_Counter == 6)
 			{
 				if (Mod_BDT_AlterWaldMann_Text == 0)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_04"); //Niemals, wirst du auch nur in meine Nähe gelangen, hehehe.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_04"); //Nigdy nie dotrzesz nigdzie obok mnie, sluchacze.
 
 					Mod_BDT_AlterWaldMann_Text = 1;
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 1)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_05"); //Zerbissene Waden werden das einzige sein, was du davonträgst, hehehe.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_05"); //Ukaszenie cielat bedzie jedyna rzecza, która bedziesz nosil, sluchacze.
 
 					Mod_BDT_AlterWaldMann_Text = 2;
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 2)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_06"); //Willst ihnen Böses, werde ich dich mit meinen Freunden aus dem Wald jagen, hehehe.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_06"); //Chcac im zaszkodzic, scigam cie z lasu z moimi przyjaciólmi, sluchaczami.
 
 					Mod_BDT_AlterWaldMann_Text = 3;
 				}
 				else if (Mod_BDT_AlterWaldMann_Text == 3)
 				{
-					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_07"); //Das mussten auch schon Tollpatsche erkennen, die versuchten mich zu ergreifen, nenene nene.
+					AI_Output(Mod_7529_OUT_AlterMann_REL, NULL, "Info_Mod_AlterWaldMann_Mecker_11_07"); //Musialo to równiez rozpoznac juz Tollpatsche, który próbowal mnie zlapac, nazwany nene.
 
 					Mod_BDT_AlterWaldMann_Text = 0;
 				};
@@ -596,7 +596,7 @@ FUNC VOID GILDENSTORY_BANDIT()
 		{
 			Mod_BDT_AlterWaldMann = 11;
 
-			B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Kräuter und Pflanzen? Ohh, jetzt verstehe ich, ein Schatz des Wissen und des Waldes. Was Morgahard dazu sagen wird?");
+			B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Ziola i rosliny? Och, teraz widze, skarbnice wiedzy i lasu. Co powie Morgahard?");
 		};
 	};
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Anor_Hi (C_INFO)
 	information	= Info_Mod_Anor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Anor_Hi_Condition()
@@ -16,31 +16,31 @@ FUNC INT Info_Mod_Anor_Hi_Condition()
 
 FUNC VOID Info_Mod_Anor_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Hi_15_00"); //Was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Anor_Hi_02_01"); //Ich bin Händler und verkaufe Tränke. Wieso willst du das wissen?
+	AI_Output(hero, self, "Info_Mod_Anor_Hi_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Anor_Hi_02_01"); //Jestem kupcem sprzedajacym eliksiry. Dlaczego chcesz wiedziec?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_VM, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Anor handelt mit Tränken.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Anor zajmuje sie eliksirami.");
 
 	Info_ClearChoices	(Info_Mod_Anor_Hi);
 
-	Info_AddChoice	(Info_Mod_Anor_Hi, "Ich will wissen, wen ich töte, wenn ich hier alle niedermetzle.", Info_Mod_Anor_Hi_B);
-	Info_AddChoice	(Info_Mod_Anor_Hi, "Ich möchte mehr über euch Verwandlungsmagier erfahren.", Info_Mod_Anor_Hi_A);
+	Info_AddChoice	(Info_Mod_Anor_Hi, "Chce wiedziec, kto mnie zabije, gdybym wszystkich tu zabil.", Info_Mod_Anor_Hi_B);
+	Info_AddChoice	(Info_Mod_Anor_Hi, "Chce wiedziec wiecej o Tobie przetwarzajacej magów.", Info_Mod_Anor_Hi_A);
 };
 
 FUNC VOID Info_Mod_Anor_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Hi_B_15_00"); //Ich will wissen, wen ich töte, wenn ich hier alle niedermetzle.
-	AI_Output(self, hero, "Info_Mod_Anor_Hi_B_02_01"); //Tut mir Leid, aber für so etwas bin ich nicht zu haben.
+	AI_Output(hero, self, "Info_Mod_Anor_Hi_B_15_00"); //Chce wiedziec, kto mnie zabije, gdybym wszystkich tu zabil.
+	AI_Output(self, hero, "Info_Mod_Anor_Hi_B_02_01"); //Przepraszam, ale nie jestem dostepny dla tego rodzaju rzeczy.
 
 	Info_ClearChoices	(Info_Mod_Anor_Hi);
 };
 
 FUNC VOID Info_Mod_Anor_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Hi_A_15_00"); //Ich möchte mehr über euch Verwandlungsmagier erfahren.
-	AI_Output(self, hero, "Info_Mod_Anor_Hi_A_02_01"); //Ich weiß nicht, ob ich dir vertrauen kann.
-	AI_Output(self, hero, "Info_Mod_Anor_Hi_A_02_02"); //Wenn du Tränke kaufen willst, komm wieder, wenn du gezeigt hast, dass du dich wirklich für uns interessierst.
+	AI_Output(hero, self, "Info_Mod_Anor_Hi_A_15_00"); //Chce wiedziec wiecej o Tobie przetwarzajacej magów.
+	AI_Output(self, hero, "Info_Mod_Anor_Hi_A_02_01"); //Nie wiem, czy moge wam zaufac.
+	AI_Output(self, hero, "Info_Mod_Anor_Hi_A_02_02"); //Jesli chcesz kupic eliksiry, wróc, kiedy pokazesz, ze jestes naprawde zainteresowany nami.
 
 	Info_ClearChoices	(Info_Mod_Anor_Hi);
 };
@@ -67,7 +67,7 @@ FUNC INT Info_Mod_Anor_Abwimmeln_Condition()
 
 FUNC VOID Info_Mod_Anor_Abwimmeln_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anor_Abwimmeln_02_00"); //Was willst du?
+	AI_Output(self, hero, "Info_Mod_Anor_Abwimmeln_02_00"); //Czego chcesz?
 };
 
 INSTANCE Info_Mod_Anor_Faice01 (C_INFO)
@@ -78,7 +78,7 @@ INSTANCE Info_Mod_Anor_Faice01 (C_INFO)
 	information	= Info_Mod_Anor_Faice01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir in letzter Zeit irgendetwas merkwürdig vorgekommen?";
+	description	= "Czy ostatnio czules cos dziwnego?";
 };
 
 FUNC INT Info_Mod_Anor_Faice01_Condition()
@@ -92,8 +92,8 @@ FUNC INT Info_Mod_Anor_Faice01_Condition()
 
 FUNC VOID Info_Mod_Anor_Faice01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Faice01_15_00"); //Ist dir in letzter Zeit irgendetwas merkwürdig vorgekommen?
-	AI_Output(self, hero, "Info_Mod_Anor_Faice01_02_01"); //Nein, eigentlich nicht. Rede mal mit den anderen.
+	AI_Output(hero, self, "Info_Mod_Anor_Faice01_15_00"); //Czy ostatnio czules cos dziwnego?
+	AI_Output(self, hero, "Info_Mod_Anor_Faice01_02_01"); //Nie, wlasciwie nie. Porozmawiaj z innymi.
 };
 
 INSTANCE Info_Mod_Anor_Faice02 (C_INFO)
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Anor_Faice02 (C_INFO)
 	information	= Info_Mod_Anor_Faice02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas über die Vergiftung der Spruchrolle von Faice gehört?";
+	description	= "Czy slyszales cos o zatruciu roli Faice' a?";
 };
 
 FUNC INT Info_Mod_Anor_Faice02_Condition()
@@ -118,8 +118,8 @@ FUNC INT Info_Mod_Anor_Faice02_Condition()
 
 FUNC VOID Info_Mod_Anor_Faice02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Faice02_15_00"); //Hast du etwas über die Vergiftung der Spruchrolle von Faice gehört?
-	AI_Output(self, hero, "Info_Mod_Anor_Faice02_02_01"); //Nein, tut mir Leid.
+	AI_Output(hero, self, "Info_Mod_Anor_Faice02_15_00"); //Czy slyszales cos o zatruciu roli Faice' a?
+	AI_Output(self, hero, "Info_Mod_Anor_Faice02_02_01"); //Nie, przepraszam, panie posle.
 };
 
 INSTANCE Info_Mod_Anor_Faice03 (C_INFO)
@@ -130,7 +130,7 @@ INSTANCE Info_Mod_Anor_Faice03 (C_INFO)
 	information	= Info_Mod_Anor_Faice03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir sonst noch irgendetwas aufgefallen?";
+	description	= "Czy zauwazyles cos wiecej?";
 };
 
 FUNC INT Info_Mod_Anor_Faice03_Condition()
@@ -144,8 +144,8 @@ FUNC INT Info_Mod_Anor_Faice03_Condition()
 
 FUNC VOID Info_Mod_Anor_Faice03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Faice03_15_00"); //Ist dir sonst noch irgendetwas aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Anor_Faice03_02_01"); //Alles normal, mir ist nichts aufgefallen.
+	AI_Output(hero, self, "Info_Mod_Anor_Faice03_15_00"); //Czy zauwazyles cos wiecej?
+	AI_Output(self, hero, "Info_Mod_Anor_Faice03_02_01"); //Co normalne, nic nie zauwazylem.
 };
 
 INSTANCE Info_Mod_Anor_Nick (C_INFO)
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Anor_Nick (C_INFO)
 	information	= Info_Mod_Anor_Nick_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du vielleicht eine Aufgabe für mich?";
+	description	= "Masz dla mnie prace?";
 };
 
 FUNC INT Info_Mod_Anor_Nick_Condition()
@@ -169,29 +169,29 @@ FUNC INT Info_Mod_Anor_Nick_Condition()
 
 FUNC VOID Info_Mod_Anor_Nick_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Nick_15_00"); //Hast du vielleicht eine Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_01"); //Es gibt tatsächlich etwas, das du für mich, und für die Gemeinde wohlgemerkt, tun könntest.
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_02"); //Mir ist aufgefallen, dass in der Nähe des Sumpflagers, in etwa dort, wo einst einer dieser Fokussteine war, vermehrt Tiere sterben.
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_03"); //Du könntest der Sache auf den Grund gehen, denn ich kann im Moment hier nicht weg.
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_04"); //Falls einer dieser Sektenspinner dahintersteckt, können die was von uns erleben!
+	AI_Output(hero, self, "Info_Mod_Anor_Nick_15_00"); //Masz dla mnie prace?
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_01"); //Jest cos, co mozecie zrobic dla mnie i dla Kosciola, myslicie o sobie.
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_02"); //Zauwazylem, ze w poblizu obozu bagiennego, gdzie kiedys znajdowaly sie kamienie ogniskowe, umiera coraz wiecej zwierzat.
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_03"); //Móglbys dojsc do dna, bo nie moge juz teraz odejsc.
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_02_04"); //Jesli którys z tych kultowych blystek jest za nim, moga doswiadczyc czegos naszego!
 
 	Info_ClearChoices	(Info_Mod_Anor_Nick);
 
-	Info_AddChoice	(Info_Mod_Anor_Nick, "Was springt für mich dabei raus?", Info_Mod_Anor_Nick_B);
-	Info_AddChoice	(Info_Mod_Anor_Nick, "Ich bin dabei.", Info_Mod_Anor_Nick_A);
+	Info_AddChoice	(Info_Mod_Anor_Nick, "Co to dla mnie jest?", Info_Mod_Anor_Nick_B);
+	Info_AddChoice	(Info_Mod_Anor_Nick, "Jestem.", Info_Mod_Anor_Nick_A);
 };
 
 FUNC VOID Info_Mod_Anor_Nick_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Nick_A_15_00"); //Ich bin dabei.
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_A_02_01"); //Das freut mich zu hören. Mach dich am besten sofort auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_A_02_02"); //Hier hast du einen Heiltrank, falls dir etwas zustoßen sollte.
+	AI_Output(hero, self, "Info_Mod_Anor_Nick_A_15_00"); //Jestem.
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_A_02_01"); //Ciesze sie, ze moge to uslyszec. Lepiej juz teraz wyjdzcie z tego miejsca.
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_A_02_02"); //Oto leczniczy eliksir, jesli cos sie stanie z Toba.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_ANOR_NICK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ANOR_NICK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Anor wünscht, dass ich einem merkwürdigen Tiersterben in der Nähe des Sumpflagers auf den Grund gehe. Ich sollte mich dort umsehen, wo mich damals Nyras der Novize angefallen hat.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Anor chce, abym dotarl do dna dziwnego zwierzecia umierajacego w poblizu bagna. Mialem rozejrzec sie dookola, gdzie zaatakowal mnie wtedy nowicjusz.");
 
 	Wld_InsertNpc	(Mod_7050_ZOM_Nick_MT, "OC2");
 	
@@ -200,8 +200,8 @@ FUNC VOID Info_Mod_Anor_Nick_A()
 
 FUNC VOID Info_Mod_Anor_Nick_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_Nick_B_15_00"); //Was springt für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Anor_Nick_B_02_01"); //Lass mich nur so viel sagen: Es soll dein Schaden nicht sein.
+	AI_Output(hero, self, "Info_Mod_Anor_Nick_B_15_00"); //Co to dla mnie jest?
+	AI_Output(self, hero, "Info_Mod_Anor_Nick_B_02_01"); //Pozwole sobie tylko powiedziec, ze to nie bedzie twoja szkoda.
 	
 	Info_Mod_Anor_Nick_A();
 };
@@ -226,9 +226,9 @@ FUNC INT Info_Mod_Anor_NickTot_Condition()
 
 FUNC VOID Info_Mod_Anor_NickTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anor_NickTot_02_00"); //Was gibt es Neues?
-	AI_Output(hero, self, "Info_Mod_Anor_NickTot_15_01"); //Das Tiersterben hat aufgehört. Ein kopfloser Zombie war dafür verantwortlich, aber ich habe ihn erlöst.
-	AI_Output(self, hero, "Info_Mod_Anor_NickTot_02_02"); //Sehr gut. Hier hast du deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Anor_NickTot_02_00"); //Co to sa wiadomosci?
+	AI_Output(hero, self, "Info_Mod_Anor_NickTot_15_01"); //Smierc zwierzat ustala. Odpowiedzialny byl bezglowy zombie, ale go uratowalem.
+	AI_Output(self, hero, "Info_Mod_Anor_NickTot_02_02"); //Bardzo dobry. Oto Twoja nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
@@ -236,16 +236,16 @@ FUNC VOID Info_Mod_Anor_NickTot_Info()
 
 	Info_ClearChoices	(Info_Mod_Anor_NickTot);
 
-	Info_AddChoice	(Info_Mod_Anor_NickTot, "Ich musste mit einem Minotauren verhandeln ...", Info_Mod_Anor_NickTot_B);
-	Info_AddChoice	(Info_Mod_Anor_NickTot, "Vielen Dank. Ich mache mich nun wieder auf den Weg.", Info_Mod_Anor_NickTot_A);
+	Info_AddChoice	(Info_Mod_Anor_NickTot, "Musialem negocjowac z minotaurem....", Info_Mod_Anor_NickTot_B);
+	Info_AddChoice	(Info_Mod_Anor_NickTot, "Dziekuje bardzo. Jestem teraz w drodze powrotnej.", Info_Mod_Anor_NickTot_A);
 };
 
 FUNC VOID Info_Mod_Anor_NickTot_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_NickTot_A_15_00"); //Vielen Dank. Ich mache mich nun wieder auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Anor_NickTot_A_02_01"); //Wir sehen uns.
+	AI_Output(hero, self, "Info_Mod_Anor_NickTot_A_15_00"); //Dziekuje bardzo. Jestem teraz w drodze powrotnej.
+	AI_Output(self, hero, "Info_Mod_Anor_NickTot_A_02_01"); //Zobacze cie dookola.
 	
-	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Ich habe von Anor meine Belohnung erhalten.");
+	B_LogEntry	(TOPIC_MOD_ANOR_NICK, "Otrzymalem moja nagrode od Anora.");
 	B_SetTopicStatus	(TOPIC_MOD_ANOR_NICK, LOG_SUCCESS);
 
 	B_GivePlayerXP	(650);
@@ -255,21 +255,21 @@ FUNC VOID Info_Mod_Anor_NickTot_A()
 
 FUNC VOID Info_Mod_Anor_NickTot_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_NickTot_B_15_00"); //Ich musste mit einem Minotauren verhandeln ...
-	AI_Output(self, hero, "Info_Mod_Anor_NickTot_B_02_01"); //Hmpf. Hier hast du etwas Extrageld.
+	AI_Output(hero, self, "Info_Mod_Anor_NickTot_B_15_00"); //Musialem negocjowac z minotaurem....
+	AI_Output(self, hero, "Info_Mod_Anor_NickTot_B_02_01"); //Hmph. Oto troche dodatkowej gotówki.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	Info_ClearChoices	(Info_Mod_Anor_NickTot);
 
-	Info_AddChoice	(Info_Mod_Anor_NickTot, "Ich musste zwanzig Wölfe und ein Dutzend Snapper umlegen ...", Info_Mod_Anor_NickTot_C);
-	Info_AddChoice	(Info_Mod_Anor_NickTot, "Vielen Dank. Ich mache mich nun wieder auf den Weg.", Info_Mod_Anor_NickTot_A);
+	Info_AddChoice	(Info_Mod_Anor_NickTot, "Musialem zabic dwadziescia wilków i tuzin suwaka.....", Info_Mod_Anor_NickTot_C);
+	Info_AddChoice	(Info_Mod_Anor_NickTot, "Dziekuje bardzo. Jestem teraz w drodze powrotnej.", Info_Mod_Anor_NickTot_A);
 };
 
 FUNC VOID Info_Mod_Anor_NickTot_C()
 {
-	AI_Output(hero, self, "Info_Mod_Anor_NickTot_C_15_00"); //Ich musste zwanzig Wölfe und ein Dutzend Snapper umlegen ...
-	AI_Output(self, hero, "Info_Mod_Anor_NickTot_C_02_01"); //Okay, hier. Mehr gibt es aber nicht.
+	AI_Output(hero, self, "Info_Mod_Anor_NickTot_C_15_00"); //Musialem zabic dwadziescia wilków i tuzin suwaka.....
+	AI_Output(self, hero, "Info_Mod_Anor_NickTot_C_02_01"); //Okay, tutaj. Ale nie ma juz wiecej.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 

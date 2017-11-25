@@ -6,7 +6,7 @@ instance Info_Mod_Liselotte_Trade1 (C_INFO)
 	information	= Info_Mod_Liselotte_Trade1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was für mich?";
+	description	= "Dostales cos dla mnie?";
 };
 
 FUNC INT Info_Mod_Liselotte_Trade1_Condition()
@@ -16,33 +16,33 @@ FUNC INT Info_Mod_Liselotte_Trade1_Condition()
 
 FUNC VOID Info_Mod_Liselotte_TRADE1_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_00"); //He, sag mal, du Händlerin, hast du vielleicht was für mich?
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_01"); //He, willst du mich hier anmachen?
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_02"); //Oh, äh....
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_03"); //Sag jetzt nichts Falsches!
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_04"); //Ich ...
- 	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_05"); //... Denk es nicht einmal!
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_06"); //ENTSCHULDIGUNG!
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_07"); //Angenommen - aber GERADESO!
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_08"); //Ähm ...
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_09"); //Was willst du, verdammt nochmal?
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_10"); //Ich wollte dich fragen ... du als Händlerin ...
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_11"); //Red vernünftig mit mir!
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_12"); //O.K., ähm, du als Händler verkaufst du Waren ...
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_13"); //Ja, das stimmt.
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_14"); //Dürfte ich mir dann mal deine Ware anschauen?
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_15"); //Ich kann dir leider nichts anbieten, da ich mein Warenpaket auf dem Weg in die Stadt verloren habe.
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_19"); //Es muss irgendwo in der Nähe des Stadttores herumliegen, aber ich habe es nicht finden können.
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_16"); //Wenn ich es finde, werde ich es dir zukommen lassen.
-	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_17"); //Danke, du bist ein Schatz!
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_00"); //Hej, handlowiec, czy masz cos dla mnie?
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_01"); //Chcecie mnie tu trafic?
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_02"); //Oh, uh,..........
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_03"); //Nie mów nic zlego!
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_04"); //l--
+ 	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_05"); //... Nie mysl nawet o tym!
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_06"); //SORRY!
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_07"); //Przypuscmy - ale STRAIGHT!
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_08"); //Um....
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_09"); //Jakiego fuku chcesz?
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_10"); //Chcialem pana zapytac.... jako handlowiec.....
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_11"); //Zwróc sie do mnie rozsadnie!
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_12"); //O. K. Ty, jako dealer sprzedajesz towary....
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_13"); //Tak, to prawda.
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_14"); //Czy móglbys sie zastanawiac, gdybym spojrzal na Twój towar?
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_15"); //Nie moge Ci nic zaoferowac, poniewaz zgubilem swój pakiet w drodze do miasta.
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_19"); //To musi lezec gdzies w poblizu bramy miasta, ale nie moglem go znalezc.
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_16"); //Jesli ja znajde, wyslem ja do Ciebie.
+	AI_Output (self, hero, "Info_Mod_Liselotte_Trade1_16_17"); //Dziekuje, jestes ulubiencem!
 
 	B_GiveInvItems (self, hero, ItMi_Gold, 50);
 
-	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_18"); //Ähm, danke ...
+	AI_Output (hero, self, "Info_Mod_Liselotte_Trade1_15_18"); //Um, dziekuje.
 
 	Log_CreateTopic (TOPIC_MOD_LISELOTTESBEUTEL, LOG_MISSION);
 	B_SetTopicStatus (TOPIC_MOD_LISELOTTESBEUTEL, LOG_RUNNING);
-	B_LogEntry (TOPIC_MOD_LISELOTTESBEUTEL, "Liselotte hat ihr Warenpaket irgendwo auf dem Weg in die Stadt verloren, weiß aber nicht genau wo. Es soll jedenfalls in der Nähe des Stadttores sein. Wenn ich es finde, kann ich Waren von ihr kaufen, da sie dann wieder welche hat. Wahrscheinlich erklärt dieser Verlust auch ihre schlechte Laune...");
+	B_LogEntry (TOPIC_MOD_LISELOTTESBEUTEL, "Liselotte stracila swoja paczke gdzies w drodze do miasta, ale nie wie dokladnie gdzie. Mówi sie, ze znajduje sie w poblizu bramy miejskiej. Jesli ja znajde, moge od niej kupowac towary, bo ona bedzie miala ich znów. Prawdopodobnie ta utrata tlumaczy równiez ich zly nastrój....");
 };
    
 INSTANCE Info_Mod_Liselotte_Warenpaket (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Liselotte_Warenpaket (C_INFO)
 	information	= Info_Mod_Liselotte_Warenpaket_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist das deins? (Warenpaket geben)";
+	description	= "Czy jest to twoje? (wydajac opakowanie)";
 };
 
 FUNC INT Info_Mod_Liselotte_Warenpaket_Condition()
@@ -67,19 +67,19 @@ FUNC INT Info_Mod_Liselotte_Warenpaket_Condition()
 
 FUNC VOID Info_Mod_Liselotte_Warenpaket_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Liselotte_Warenpaket_15_00"); //Ist das hier dein Warenpaket?
+	AI_Output(hero, self, "Info_Mod_Liselotte_Warenpaket_15_00"); //Czy to jest Twój pakiet?
 
 	B_GiveInvItems	(hero, self, Packet_Lise, 1);
 
-	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_01"); //Ja, Danke.
-	AI_Output(hero, self, "Info_Mod_Liselotte_Warenpaket_15_02"); //Ähm, bekomme ich jetzt eine Belohnung?
-	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_03"); //OK. Ich gebe dir 50 Gold.
+	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_01"); //Tak, dziekuje.
+	AI_Output(hero, self, "Info_Mod_Liselotte_Warenpaket_15_02"); //Um, czy dostaje teraz nagrode?
+	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_03"); //OK. Daje Ci 50 zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_04"); //Außerdem kannst du jetzt mit mir handeln.
+	AI_Output(self, hero, "Info_Mod_Liselotte_Warenpaket_16_04"); //Poza tym teraz mozecie handlowac ze mna.
 
-	B_LogEntry	(TOPIC_MOD_LISELOTTESBEUTEL, "Ich habe Liselottes Warenpaket gefunden und zurückgegeben.");
+	B_LogEntry	(TOPIC_MOD_LISELOTTESBEUTEL, "Znalazlem pakiet Liselottes i odeslalem go.");
 	B_SetTopicStatus	(TOPIC_MOD_LISELOTTESBEUTEL, LOG_SUCCESS);
 
 	B_GivePlayerXP (100);
@@ -99,7 +99,7 @@ INSTANCE Info_Mod_Liselotte_Blutkelch (C_INFO)
 	information	= Info_Mod_Liselotte_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, schönes Kind!";
+	description	= "Witajcie, piekne dziecko!";
 };
 
 FUNC INT Info_Mod_Liselotte_Blutkelch_Condition()
@@ -113,13 +113,13 @@ FUNC INT Info_Mod_Liselotte_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Liselotte_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_00"); //Hallo, schönes Kind!
-	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_01"); //Ah, der Schmeichler. Was darf's sein?
-	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_02"); //Ich suche einen Kelch. Einen Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_03"); //Einen Kelch habe ich nicht. Schon gar keinen blutigen.
-	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_04"); //Hätte ja sein können. Danke. Übrigens, was machst du nach Feierabend?
-	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_05"); //Schlafen gehen. Was sonst?
-	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_06"); //Nur so ...
+	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_00"); //Witajcie, piekne dziecko!
+	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_01"); //Ach, mieszkaniec. Co moge Ci dostac?
+	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_02"); //Szukam filizanki. Filizanka krwi.
+	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_03"); //Nie mam filizanki. Szczególnie nie krwawy.
+	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_04"); //Moglo tak byc. Dzieki. Nawiasem mówiac, co robisz po godzinach?
+	AI_Output(self, hero, "Info_Mod_Liselotte_Blutkelch_16_05"); //Isc spac. Cóz, co jeszcze?
+	AI_Output(hero, self, "Info_Mod_Liselotte_Blutkelch_15_06"); //Tak wlasnie....
 };
 
 INSTANCE Info_Mod_Liselotte_Pickpocket (C_INFO)

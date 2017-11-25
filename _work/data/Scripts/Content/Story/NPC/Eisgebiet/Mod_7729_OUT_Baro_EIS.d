@@ -1,7 +1,7 @@
 INSTANCE Mod_7729_OUT_Baro_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Baro"; 
+	name 		= "baro"; 
 	guild 		= GIL_OUT;
 	id 			= 7729;
 	voice 		= 4;

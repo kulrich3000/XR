@@ -37,7 +37,7 @@ INSTANCE Info_Bud_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_2_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will bei euch mitmachen.";
+	description = "Chce dolaczyc do Ciebie.";
 };                       
 
 FUNC INT Info_Bud_2_EinerVonEuchWerden_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Bud_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_EinerVonEuchWerden_15_00"); //Ich will bei euch mitmachen.
-	AI_Output(self,hero,"Info_Bud_2_EinerVonEuchWerden_02_01"); //Einer wie du kann schon bald in der Burg leben.
+	AI_Output(hero,self,"Info_Bud_2_EinerVonEuchWerden_15_00"); //Chce dolaczyc do Ciebie.
+	AI_Output(self,hero,"Info_Bud_2_EinerVonEuchWerden_02_01"); //Ktos taki jak Ty moze wkrótce mieszkac w zamku.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_Bud_2_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_2_WichtigePersonen_Condition;
 	information	= Info_Bud_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Bud_2_WichtigePersonen_Condition()
@@ -76,9 +76,9 @@ FUNC INT Info_Bud_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_2_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_01"); //Hier im äußeren Ring treiben Fletcher und Bloodwyn das Schutzgeld ein. Jedem gehört eine Hälfte.
-	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_02"); //Wenn du dich mit ihnen gut stellst, kann dir nichts passieren.
+	AI_Output(hero,self,"Info_Bud_2_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_01"); //Tutaj w pierscieniu zewnetrznym Fletcher i Bloodwyn gromadza pieniadze na ochrone. Polowa nalezy do wszystkich.
+	AI_Output(self,hero,"Info_Bud_2_WichtigePersonen_02_02"); //Jesli jestes z nimi dobry, nic nie moze Ci sie przydarzyc.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Bud_2_DasLager(C_INFO)
 	condition	= Info_Bud_2_DasLager_Condition;
 	information	= Info_Bud_2_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über dieses Lager erfahren.";
+	description = "Chce wiedziec wiecej o tym obozie.";
 };                       
 
 FUNC INT Info_Bud_2_DasLager_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Bud_2_DasLager_Condition()
 
 FUNC VOID Info_Bud_2_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_DasLager_15_00"); //Ich will mehr über dieses Lager erfahren.
-	AI_Output(self,hero,"Info_Bud_2_DasLager_02_01"); //Dann solltest du mit den Schatten reden, sie können dir noch am ehesten sagen, was du wissen willst. Aber sei vorsichtig. Den meisten von ihnen kannst du nicht trauen.
+	AI_Output(hero,self,"Info_Bud_2_DasLager_15_00"); //Chce wiedziec wiecej o tym obozie.
+	AI_Output(self,hero,"Info_Bud_2_DasLager_02_01"); //Nastepnie powinienes porozmawiac z cieniami, oni moga ci powiedziec, co chcesz wiedziec. Badz jednak ostrozny. Wiekszosc z nich nie mozna ufac.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_Bud_2_DieLage(C_INFO) // E1
 	condition	= Info_Bud_2_DieLage_Condition;
 	information	= Info_Bud_2_DieLage_Info;
 	permanent	= 1;
-	description = "Wie ist das Leben hier?";
+	description = "Jak tu wyglada zycie?";
 };                       
 
 FUNC INT Info_Bud_2_DieLage_Condition()
@@ -130,11 +130,11 @@ FUNC INT Info_Bud_2_DieLage_Condition()
 
 FUNC VOID Info_Bud_2_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_2_DieLage_15_00"); //Wie ist das Leben hier?
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_01"); //Wenn die Erzbarone dich schicken, sag ihnen, ich will keinen Ärger. Von mir bekommt keiner was zu hören.
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_02"); //Ich bin zufrieden mit dem, was sie uns geben.
-	AI_Output(hero,self,"Info_Bud_2_DieLage_15_03"); //Niemand schickt mich. Ich bin neu hier.
-	AI_Output(self,hero,"Info_Bud_2_DieLage_02_04"); //Ein Neuer ... Neue kriegen hier immer schnell Ärger. Ich will in nichts reingezogen werden, klar?
+	AI_Output(hero,self,"Info_Bud_2_DieLage_15_00"); //Jak tu wyglada zycie?
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_01"); //Jesli Er Barons Cie wysle, powiedz im, ze nie chce miec zadnych problemów. Nie mówie nikomu nic.
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_02"); //Jestem zadowolony z tego, co nam daja.
+	AI_Output(hero,self,"Info_Bud_2_DieLage_15_03"); //Nikt mnie nie wyslal. Jestem tu nowy.
+	AI_Output(self,hero,"Info_Bud_2_DieLage_02_04"); //Nowy.... Nowi ludzie caly czas wpadaja w klopoty. Nie chce sie w nic zaangazowac, prawda?
 };	
 
 INSTANCE Info_Mod_BUD_2_Pickpocket (C_INFO)

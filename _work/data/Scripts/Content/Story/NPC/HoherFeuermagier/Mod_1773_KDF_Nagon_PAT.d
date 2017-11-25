@@ -1,7 +1,7 @@
 instance Mod_1773_KDF_Nagon_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Nagon";
+	name 		= "nagon";
 	guild 		= GIL_VLK;
 	id 			= 1773;
 	voice 		= 10;

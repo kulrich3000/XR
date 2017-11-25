@@ -116,7 +116,7 @@ func void B_AssessTalk ()
 		{
 			Mod_MoeDontTalk = 2;
 
-			B_LogEntry	(TOPIC_MOD_MOE_TALK, "Ich scheine nun mit den Auswirkungen von Canthars Rache konfrontiert zu werden: Niemand spricht mehr mit mir ... Niemand? Moe muss mir wieder helfen ...");
+			B_LogEntry	(TOPIC_MOD_MOE_TALK, "Wydaje mi sie, ze mam teraz konfrontacje z efektami zemsty Canthara: nikt juz do mnie nie rozmawia..... Nikt nie? Moe musi mi ponownie pomóc.....");
 		};
 
 		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_599_NONE_Moe_NW))

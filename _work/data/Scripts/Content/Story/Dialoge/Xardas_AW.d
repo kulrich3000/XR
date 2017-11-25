@@ -18,65 +18,65 @@ FUNC INT Info_Mod_Xardas_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Xardas_AW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_00"); //Ich muss dich sprechen. Ich habe einiges herausgefunden.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_01"); //Was gibt es?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_02"); //Dieser Teil der Insel Khorinis heißt Jharkendar.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_03"); //Vor vielen tausend Jahren hat hier mal ein hochentwickeltes Volk gelebt, wie man unschwer erkennen kann.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_04"); //Zu dieser Zeit waren die Götter noch vereint, als Urgott Radanos.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_00"); //Musze z panstwem porozmawiac. Dowiedzialem sie wiele rzeczy.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_02"); //Ta czesc wyspy nosi nazwe Jharkendar.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_03"); //Tysiace lat temu mieszkaly tu wysoko rozwinieci ludzie, jak latwo widac.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_04"); //W tamtym czasie bogowie byli jeszcze zjednoczeni jako pierwotny bóg Radano.
 
 	AI_Function_I (self, XR_Backgroundstory, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_05"); //Mit Xeres kam dann der Untergang. Xeres war ein mächtiger Magier, so mächtig, dass er von den Bewohnern verlangte, dass sie statt den Göttern ihn verehrten.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_05"); //Z Xeresem przyszedl upadek. Xeres byl poteznym magikiem, tak poteznym, ze zadal, aby mieszkancy czcili go zamiast bogów.
 
 	AI_Function_I (self, XR_Backgroundstory, 2);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_06"); //Als sie ihm die Gefolgschaft verweigerten, löschte er vor Wut den ganzen Landstrich aus, und nur wenige überlebten.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_06"); //Kiedy oni odmówili mu posluszenstwa, on z wsciekloscia wymazal caly region, a tylko nieliczni przezyli.
 
 	AI_Function_I (self, XR_Backgroundstory, 3);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_07"); //Einem von ihnen gelang es, mit einem rätselhaften Schwert Xeres tödlich zu verwunden.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_07"); //Jeden z nich zdolal zabic Xeres z tajemniczym mieczem.
 
 	AI_Function_I (self, XR_Backgroundstory, 4);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_08"); //Weil er vollkommen kraftlos war, konnte Radanos ihn in ein Gefängnis tief unter der Erdoberfläche sperren.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_08"); //Poniewaz byl zupelnie bezsilny, Radanos mógl go zamknac w wiezieniu gleboko pod powierzchnia ziemi.
 
 	AI_Function_I (self, XR_Backgroundstory, 5);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_09"); //Danach weinte der Gott der Sage nach bittere Tränen, die als Flut Jharkendar verwüsteten.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_10"); //Seine gesamte Schöpfung war dahin, und in der Trauer splitterte sein Denken allmählich in drei Teile - die drei Götter, die wir noch heute kennen.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_09"); //Potem bóg plakal po gorzkiej lzach, które zniszczyly Jharkendala jako powódz.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_10"); //Cale jego dzielo odeszlo w niepamiec i w oplakiwaniu jego mysli stopniowo rozpadalo sie na trzy czesci - trzech bogów, których do dzis znamy.
 
 	AI_Function_I (self, XR_Backgroundstory, 6);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_11"); //Aber das ist eine andere Geschichte.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_12"); //Nun beginnt der Teil meiner Erzählung, der größtenteils auf meinen eigenen Spekulationen beruht.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_13"); //Xeres muss in seinem Gefängnis überlebt haben.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_14"); //Schwer angeschlagen und seiner Kräfte beraubt, aber noch immer wild entschlossen, zurückzukehren.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_15"); //Seit ein paar Jahrzehnten scheint er seinen Ausbruch voranzutreiben.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_16"); //Was er brauchte, befand sich im Minental. Deshalb entsandte er den Schläfer dorthin.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_17"); //Dann kamen wir ihm dazwischen, indem wir die Barriere schufen. Xeres verlor den Kontakt zu seiner Kreation und konnte ihr nicht den entscheidenden Auftrag erteilen.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_18"); //Was hat Xeres dort gesucht?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_19"); //Die Fokussteine. Die Seite von Radanos, die später Beliar werden sollte, schuf sich ein Hintertürchen für eine spätere Begnadigung des Magiers.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_20"); //Sollten alle Foki wieder zu den Sockeln in Jharkendar zurückfinden, würde der Bann von Xeres genommen und sein Gefängnis geöffnet.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_21"); //(gewichtig) Deshalb darfst du niemals auf die Idee kommen, die Foki aus dem Minental hier in Jharkendar einzusetzen. Niemals!
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_22"); //Stattdessen müssen wir alles daran setzen, die Foki zu zerstören oder zumindest zu verstecken!
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_23"); //Ähm, Xardas?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_24"); //Ja?
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_25"); //Das erklärt, warum es so viele merkwürdige Zwischenfälle bei meiner Fokussuche gab.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_26"); //Xeres hatte schon wieder seine Fühler danach ausgestreckt. Aber ich habe sie alle bekommen.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_27"); //Du hast sie also schon beschafft? Wunderbar!
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_28"); //Nicht nur das. Ich habe gerade den letzten hier in Jharkendar eingesetzt.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_29"); //(sprachlos)
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_30"); //Schöne Bescherung, was?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_31"); //(ruft) NEIN! Das kann nicht sein!
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_32"); //Ich mach's auch wieder gut ...
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_33"); //Nein, warte! Wir brauchen jetzt einen Plan.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_34"); //Du musst verhindern, dass sich Xeres weitere Verbündete auf Khorinis suchen kann.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_35"); //Am meisten Gefahr geht sicherlich von den Orks aus, die er ja schon mit dem Schläfer für sich einspannen konnte.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_36"); //Um deinen Weg abzukürzen, werde ich dich zu meinem alten Turm im Minental teleportieren. Von dort ist es nicht mehr weit.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_11"); //Ale to jeszcze inna historia.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_12"); //Teraz zaczyna sie ta czesc mojej historii, która w duzej mierze opiera sie na moich wlasnych spekulacjach.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_13"); //Xeres musial przetrwac w wiezieniu.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_14"); //Nagle uderzyl i pozbawiony sily, ale nadal zdeterminowany do powrotu.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_15"); //Wydaje sie, ze od kilku dziesiecioleci prowadzi ucieczke.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_16"); //Potrzebowal tego w Minentalu. Dlatego wlasnie poslal tam sypialnego.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_17"); //Potem przeszlismy jego droga, tworzac bariere. Xeres stracil kontakt z twórczoscia i nie mógl jej powierzyc kluczowego zadania.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_18"); //Co robila tam Xeres?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_19"); //Kamienie ogniskujace. Obok Radanosa, który pózniej zostal Beliarem, powstaly tylne drzwi dla pózniejszego przebaczenia czarodziejowi.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_20"); //Gdyby wszystkie Foki wrócily do postumentów w Jharkendarzu, zostalyby zabrane przez Xeres i jego wiezienie zostaloby otwarte.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_21"); //(wazki) Dlatego tez nigdy nie nalezy miec pomyslu na uzywanie Foki' ego z Minentala tutaj w Jharkendarzu. Nigdy nigdy!
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_22"); //Zamiast tego musimy zrobic wszystko, co w naszej mocy, aby zniszczyc lub przynajmniej ukryc ostrosc!
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_23"); //Um, Xardas?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_24"); //Tak?
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_25"); //Wyjasnia to, dlaczego podczas poszukiwan w skupieniu uwagi bylo tak wiele dziwnych zdarzen.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_26"); //Xeres znów wyciagnal swoje uczucia. Ale dostalem je wszystkie.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_27"); //Wiec juz je masz? Wspaniale!
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_28"); //Nie tylko to. Ostatni wlasnie napisalem tutaj w Jharkendarzu.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_29"); //(bezjezykowo)
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_30"); //Mila terazniejszosc, huh?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_31"); //(wezwania) NIE! Nie moze byc!
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Hi_15_32"); //Ja równiez zrobie to dla Ciebie....
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_33"); //Nie, poczekaj! Potrzebujemy planu juz teraz.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_34"); //Musisz powstrzymac Xeres' a przed znalezieniem dalszych sojuszników na Khorinis.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_35"); //Orki to chyba najniebezpieczniejsze orki, które byl w stanie wykorzystac dla siebie wraz z sypialnia.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Hi_14_36"); //W celu skrócenia podrózy, bede Cie teleportowal do mojej starej wiezy w Minental. Tam jest niedaleko.
 
 	Log_CreateTopic	(TOPIC_MOD_XERES, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_XERES, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_XERES, "Durch das Einsetzen der Foki habe ich Xeres, einen mächtigen Magier des Alten Volkes, aus seinem Schattenreich befreit. Xardas hat mir aufgetragen, bei den Orks im Minental nach dem Rechten zu sehen, bevor Xeres sie sich untertan macht.");
+	B_LogEntry	(TOPIC_MOD_XERES, "Uzywajac Foki' ego wyzwolilem Xeresa, poteznego maga Starego Ludu, od jego imperium cieni. Xardas kazal mi sprawdzic z orkami w dolinie Kopalni, zanim Xeres ich usypie.");
 
 	B_SetTopicStatus	(TOPIC_MOD_DIEBEDROHUNG, LOG_SUCCESS);
 
@@ -103,52 +103,52 @@ FUNC INT Info_Mod_Xardas_AW_Bshydal_Condition()
 
 FUNC VOID Info_Mod_Xardas_AW_Bshydal_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_00"); //Was, ach hier bin ich gelandet. Xardas, du auch hier?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_01"); //Wenn es um Ereignisse von besonderer Bedeutung geht, bin ich nie fern.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_02"); //Berichte: Wie ist deine Suche verlaufen und was ist mit der Garde Innos geschehen. Ich kann ihre Macht nicht mehr spüren.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_03"); //Die Garde ist vernichtet. Einige ihrer Jünger habe ich bezwingen können ... die anderen wurden von dem Blutkult getötet.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_04"); //Du musst wissen, dass der Blutkult die Garde nur als Werkzeug benutzte, um selbst das Schwert Innos’ zu erlangen.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_05"); //Jedoch muss etwas bei der Suche ...
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_06"); //... fehlgeschlagen sein, da sie das Schwert nicht fanden.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_07"); //Du weißt es? Aber wie ist das möglich? Und wo ist dann das Schwert Innos nun wirklich?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_08"); //Es befand sich an einem anderen Ort in Khorinis. War gar nicht so einfach es zu finden, so tief unter Patherion.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_09"); //Leichter war es da schon die blind Fanatisierten auf eine andere Fährte zu locken ...
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_10"); //Was?! Du hast die ganze Zeit gewusst, dass sie auf der falschen Spur waren und währenddessen selbst danach gesucht?!
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_11"); //Was denkst du denn? Wenn jemand nach der Vernichtung Beliars’ trachtet, werde ich wohl kaum in meinem Turm sitzen und auf den Untergang der Welt warten.
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_12"); //Und wo ist das Schwert im Moment?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_13"); //Das wird mein Geheimnis bleiben ... und ganz bestimmt wirst du diese Waffe auch nicht bekommen ... ein Werkzeug, dass die Macht hat unseren Gott zu verbannen und größerem Übel zum Aufstieg zu verhelfen.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_14"); //Stattdessen erhältst du etwas Gold für deine Ausrüstung und diesen Ring unseres Herrn. Wenn du allerdings Bürger und Bauern verprügelst, solltest du ihn lieber nicht anhaben.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_00"); //Co, to tam wyladowalem. Xardas, Ty równiez tutaj?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_01"); //Jesli chodzi o wydarzenia o szczególnym znaczeniu, to nigdy nie jestem daleko.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_02"); //Raporty: Jak wygladalo Twoje wyszukiwanie i co sie stalo z gwardia Innos? Nie moge juz odczuc ich mocy.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_03"); //Oslony sa niszczone. Udalo mi sie pokonac niektórych z jej uczniów.... Wiecej inni zostali zabici przez kult krwi.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_04"); //Musicie wiedziec, ze kult krwi uzywal strazników tylko jako narzedzia do zdobycia miecza Innosa ".
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_05"); //Jednak podczas wyszukiwania trzeba cos zrobic....
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_06"); //... nie udalo sie, poniewaz nie mogli znalezc miecza.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_07"); //Wiesz? Ale jak to jest mozliwe? Gdzie zatem jest wiec Innos, miecz?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_08"); //Bylo to inne miejsce w Khorinis. Nie bylo tak latwo go znalezc, tak gleboko pod Patherionem.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_09"); //Latwiej bylo wciagnac slepo oszolomionych do innego utworu....
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_10"); //Co? Wiesz, ze przez caly czas byli na niewlasciwym torze, szukali go sami!
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_11"); //Co myslisz? Jesli ktos spróbuje zniszczyc Beliarsa, nie bede siedzial w mojej wiezy i czekal na zniszczenie swiata.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_12"); //A gdzie jest teraz miecz?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_13"); //To pozostanie moja tajemnica..... i jestem pewien, ze nie dostaniesz tego pistoletu.... narzedzie, które ma moc, by wygnac naszego Boga i pomóc w wiekszym zlu wstapic.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_14"); //Zamiast tego, otrzymasz troche zlota na swój sprzet i pierscien naszego Pana. Ale jesli bijesz obywateli i chlopów, lepiej nie ubierasz sie.
 
 	CreateInvItems	(hero, ItMi_Gold, 1000);
 	CreateInvItems	(hero, ItRi_BeliarBosheit, 1);
 
-	B_ShowGivenThings	("1000 Gold und Ring erhalten");
+	B_ShowGivenThings	("1000 Otrzymane zloto i pierscien");
 
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_15"); //Hmm, wie dem auch sei, wenn du das Ziel deiner Suche erreicht haben solltest, müsstest du jetzt im Besitz des Wassers des Lebens sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_16"); //Ein Werkzeug ausgestattet mit einer Macht, die auch nicht zu verschmähen ist. Verstorbenen soll es das Leben wiedergeben.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_17"); //Vielleicht fällt dir ja ein Verwendungszweck dafür ein.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_15"); //Hmm, jesli jednak powinienes osiagnac cel swojej misji, powinienes byc teraz w posiadaniu wody zyciowej.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_16"); //Narzedzie wyposazone w moc, której nie mozna ignorowac. Niech zmarly odzwierciedla zycie.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_17"); //Moze wymyslisz cos, za co zaplacisz.
 
 	if (!Npc_IsDead(Mod_7316_BK_Bshydal_AW))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_18"); //Hmm, noch was: Ein Blutkultmagier, der die Macht der Garde Innos’ in sich aufnahm, befindet sich noch in dem Raum unter dem Tempel.
-		AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_19"); //Er scheint äußerst mächtig geworden zu sein ...
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_20"); //Nun, ich denke nicht, dass wir uns um ihn Sorgen machen müssen.
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_21"); //Der Raum unter dem Tempel Adanos muss magisch versiegelt sein, sonst würde ich seine Macht spüren.
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_22"); //Nur durch bestimmte Mechanismen der Teleportmagie kann der Raum betreten, oder verlassen werden.
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_23"); //Und das Portal, das er sich erschuf, muss zusammengebrochen sein ... so etwas kann geschehen, wenn ein anderes Portal in der Umgebung erschaffen wird.
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_24"); //Er ist dort unten vermutlich bis in alle Ewigkeit gefangen.
+		AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_18"); //Hmm, jeszcze jedna rzecz: Czarodziej kultowej krwi, który wzial w siebie wladze strazników Inno, jest jeszcze w pokoju pod swiatynia.
+		AI_Output(hero, self, "Info_Mod_Xardas_AW_Bshydal_15_19"); //Wydaje sie, ze stal sie niezwykle potezny.....
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_20"); //Cóz, nie sadze, ze musimy sie nim martwic.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_21"); //Pomieszczenie pod swiatynia Adanos musi byc magicznie zapieczetowane, w przeciwnym razie poczulabym jego moc.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_22"); //Tylko poprzez okreslone mechanizmy magii teleportowej mozna wejsc lub wyjsc z pokoju.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_23"); //A portal, który stworzyl musial sie zawalic.... cos takiego moze sie zdarzyc, gdy w srodowisku tworzony jest inny portal.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_24"); //Prawdopodobnie jest schwytany tam na zawsze.
 	};
 
 	if (Mod_Gilde == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_25"); //Geh zu Myxir ins Kloster, er wird dich in den Rang des Dämonenbeschwörers aufnehmen.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_25"); //Idz do Myxiru w klasztorze, wezmie cie do rangi przywolujacego demona.
 	}
 	else if (Mod_Gilde == 15)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_26"); //Geh zu Scar, er wird dich in den Rang des Dämonenritters aufnehmen.
+		AI_Output(self, hero, "Info_Mod_Xardas_AW_Bshydal_14_26"); //Idz do Scar, wezmie cie do rangi rycerza demonów.
 	};
 
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Eine falsche Fährte also, gelegt von Xardas. Und er hat das Schwert Innos längst gefunden und an einen sicheren Ort gebracht. Er meinte, das Wasser des Lebens könnte Verstorbene wieder zum Leben erwecken. Fällt mir dazu etwas ein?");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Wiec to falszywe prowadzenie Xardasa. I juz od dawna odnalazl miecz Innos i sprowadzil go w bezpieczne miejsce. Powiedzial, ze woda zycia moze przywrócic zycie zmarlym. Wszystko, o czym moge pomyslec?");
 	
 	B_GivePlayerXP	(800);
 
@@ -189,7 +189,7 @@ INSTANCE Info_Mod_Xardas_AW_FokusWeg (C_INFO)
 	information	= Info_Mod_Xardas_AW_FokusWeg_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso können wir nicht einfach einen Fokus wegnehmen?";
+	description	= "Dlaczego nie mozemy po prostu pozbyc sie skupienia?";
 };
 
 FUNC INT Info_Mod_Xardas_AW_FokusWeg_Condition()
@@ -202,11 +202,11 @@ FUNC INT Info_Mod_Xardas_AW_FokusWeg_Condition()
 
 FUNC VOID Info_Mod_Xardas_AW_FokusWeg_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_FokusWeg_15_00"); //Wieso können wir nicht einfach einen Fokus wegnehmen?
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_FokusWeg_15_01"); //Schließt sich dann das Gefängnis nicht wieder?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_02"); //Ich bezweifle, dass es so kommen würde.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_03"); //Aber abgesehen davon bin ich mir sicher, dass Xeres schon Wind von seiner Freiheit bekommen hat und gar nicht mehr in seinem Gefängnis verweilt.
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_04"); //Deshalb ist es wichtig, dass wir schnell handeln!
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_FokusWeg_15_00"); //Dlaczego nie mozemy po prostu pozbyc sie skupienia?
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_FokusWeg_15_01"); //Czy wiezienie nie zostanie zamkniete?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_02"); //Watpie, czy do tego dojdzie.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_03"); //Poza tym jestem jednak pewien, ze Xeres ma juz wiatr wolnosci i nie jest juz w wiezieniu.
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_FokusWeg_14_04"); //Dlatego wazne jest, abysmy dzialali szybko!
 };
 
 INSTANCE Info_Mod_Xardas_AW_DuZwischenzeit (C_INFO)
@@ -217,7 +217,7 @@ INSTANCE Info_Mod_Xardas_AW_DuZwischenzeit (C_INFO)
 	information	= Info_Mod_Xardas_AW_DuZwischenzeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was wirst du in der Zwischenzeit tun?";
+	description	= "Co zamierzasz zrobic w miedzyczasie?";
 };
 
 FUNC INT Info_Mod_Xardas_AW_DuZwischenzeit_Condition()
@@ -230,8 +230,8 @@ FUNC INT Info_Mod_Xardas_AW_DuZwischenzeit_Condition()
 
 FUNC VOID Info_Mod_Xardas_AW_DuZwischenzeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_AW_DuZwischenzeit_15_00"); //Was wirst du in der Zwischenzeit tun?
-	AI_Output(self, hero, "Info_Mod_Xardas_AW_DuZwischenzeit_14_01"); //Ich werde die Gesamtsituation im Auge behalten und verhindern, dass sich Xeres' Truppen in Khorinis ausbreiten.
+	AI_Output(hero, self, "Info_Mod_Xardas_AW_DuZwischenzeit_15_00"); //Co zamierzasz zrobic w miedzyczasie?
+	AI_Output(self, hero, "Info_Mod_Xardas_AW_DuZwischenzeit_14_01"); //Bede bacznie obserwowac ogólna sytuacje i zapobiegac rozprzestrzenianiu sie oddzialów Xeres na Khorinis.
 };
 
 INSTANCE Info_Mod_Xardas_AW_EXIT (C_INFO)

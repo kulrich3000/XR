@@ -218,7 +218,7 @@ FUNC VOID B_Vergiftet(var C_NPC slf)
 		{
 			Mod_EchsenQuest_01 = 3;
 
-			B_LogEntry	(TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Auch die alten Weibchen sind versorgt, fehlen nur noch die starken Weibchen. Da reicht es, wenn ich die nächsten fünf Sumpfhaie wie sie sind ins Grenzgebiet locke.");
+			B_LogEntry	(TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Takze staruszki sa dobrze zadbane, zabraklo tylko silnych samic. Wystarczy mi wabic kolejnych piec rekinów bagiennych do strefy przygranicznej.");
 
 			Wld_InsertNpc	(Swampshark_Fuetterung_03_01,	"ADW_BANDIT_VP3_05");
 			Wld_InsertNpc	(Swampshark_Fuetterung_03_02,	"ADW_BANDIT_VP3_05");
@@ -244,7 +244,7 @@ FUNC VOID B_Vergiftet(var C_NPC slf)
 		{
 			Mod_EchsenQuest_01 = 4;
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Ich habe die Weibchen gefüttert.", "Und auch die starken Weibchen haben ihr Futter bekommen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, "Karmilem samice.", "Równiez silne kobiety dostawaly jedzenie.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_WEIBCHENFUETTERUNG, LOG_SUCCESS);
 		};
 	};

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Paladin01_Hi (C_INFO)
 	information	= Info_Mod_Paladin01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Paladin01_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Paladin01_Hi_Condition()
 FUNC VOID Info_Mod_Paladin01_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Paladin01_Hi_06_01"); //Ich bin einer der Paladine.
+	AI_Output(self, hero, "Info_Mod_Paladin01_Hi_06_01"); //Naleze do paladynów.
 };
 
 INSTANCE Info_Mod_Paladin01_MangelQuest (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Paladin01_MangelQuest (C_INFO)
 	information	= Info_Mod_Paladin01_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie wäre es zur Abwechslung deine geistigen Kräfte bei einem Gebet in der Kirche zu stärken.";
+	description	= "Jak wzmocnic swoja duchowa sile poprzez modlitwe w Kosciele o zmiane?";
 };
 
 FUNC INT Info_Mod_Paladin01_MangelQuest_Condition()
@@ -42,11 +42,11 @@ FUNC INT Info_Mod_Paladin01_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Paladin01_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Paladin01_MangelQuest_15_00"); //Wie wäre es zur Abwechslung deine geistigen Kräfte bei einem Gebet in der Kirche zu stärken.
-	AI_Output(hero, self, "Info_Mod_Paladin01_MangelQuest_15_01"); //Denn ein wahrer Krieger nutzt im Kampf sowohl die Stärke seines Körpers, als auch die seines Geistes.
-	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_02"); //Ja, Meister ... ihr habt natürlich Recht. Was wären wir Paladine denn ohne die von Innos verliehene Magie.
-	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_03"); //In der letzten Zeit des Blutvergießens hatte ich begonnen mich zu sehr rein nach dem Schwert zu richten.
-	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_04"); //Habt Dank, für eure weisen Worte. Ich werde mich sofort zur Kirche begeben.
+	AI_Output(hero, self, "Info_Mod_Paladin01_MangelQuest_15_00"); //Jak wzmocnic swoja duchowa sile poprzez modlitwe w Kosciele o zmiane?
+	AI_Output(hero, self, "Info_Mod_Paladin01_MangelQuest_15_01"); //Bo prawdziwy wojownik wykorzystuje sile swojego ciala i umyslu w walce.
+	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_02"); //Tak, Mistrz.... masz oczywiscie racje. Co by bylo, gdybysmy paladynami nie mieli magii wypozyczonej przez Innosa?
+	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_03"); //W ostatnim czasie rozlewu krwi zaczalem zbytnio skupiac sie na mieczu.
+	AI_Output(self, hero, "Info_Mod_Paladin01_MangelQuest_06_04"); //Dziekuje za madre slowa. Natychmiast pójde do kosciola.
 
 	AI_StopProcessInfos	(self);
 
@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_Paladin01_MangelQuest_Info()
 
 	if (Mod_Pat_Beter == 3)
 	{
-		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "So, ich denke ich haben genügend Jünger Innos’ zum Gebet bewegen können und sollte in der Kirche bei Nagon vorbeischauen.");
+		B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Wiec mysle, ze mialem wystarczajaco duzo uczniów Inno' s, aby zachecic ich do modlitwy i powinienem zatrzymac sie przy kosciele w Nagon.");
 	};
 };
 
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Paladin01_Fake (C_INFO)
 	information	= Info_Mod_Paladin01_Fake_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir hier jemand besonderes aufgefallen?";
+	description	= "Czy zauwazyles tu kogos wyjatkowego?";
 };
 
 FUNC INT Info_Mod_Paladin01_Fake_Condition()
@@ -84,10 +84,10 @@ FUNC INT Info_Mod_Paladin01_Fake_Condition()
 
 FUNC VOID Info_Mod_Paladin01_Fake_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Paladin01_Fake_15_00"); //Ist dir hier jemand besonderes aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Paladin01_Fake_06_01"); //Vielleicht einer der Magier, der es scheinbar ziemlich eilig hatte. Ich glaube er wollte in den Kräutergarten.
+	AI_Output(hero, self, "Info_Mod_Paladin01_Fake_15_00"); //Czy zauwazyles tu kogos wyjatkowego?
+	AI_Output(self, hero, "Info_Mod_Paladin01_Fake_06_01"); //Byc moze jeden z magów, który wydawal sie byc w pospiechu. Mysle, ze poszedl do ogrodu ziolowego.
 
-	B_LogEntry	(TOPIC_MOD_FM_SM, "Ein Paladin meint, dass der Magier in den Kräutergarten gegangen wäre.");
+	B_LogEntry	(TOPIC_MOD_FM_SM, "Paladynarz uwaza, ze magik poszedl do ogrodu ziolowego.");
 };
 
 INSTANCE Info_Mod_Paladin01_EXIT (C_INFO)

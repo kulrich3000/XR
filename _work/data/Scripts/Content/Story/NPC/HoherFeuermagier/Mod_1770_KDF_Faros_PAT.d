@@ -1,7 +1,7 @@
 INSTANCE Mod_1770_KDF_Faros_PAT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Faros";
+	name 		= "Fa";
 	guild 		= GIL_VLK;
 	id 			= 1770;
 	voice 		= 9;

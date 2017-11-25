@@ -2,7 +2,7 @@ instance Mod_13018_SP_Seelenpeiniger_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Seelenpeiniger";
+	name 		=	"udreka umyslu";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_DMT;
 	level 		=	25;

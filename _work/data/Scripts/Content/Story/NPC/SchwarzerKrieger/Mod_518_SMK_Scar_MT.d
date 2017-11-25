@@ -1,7 +1,7 @@
 INSTANCE Mod_518_SMK_Scar_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Scar";
+	name 		= "bliznowaty";
 	guild 		= GIL_KDF;
 	id 			= 518;
 	voice 		= 10;

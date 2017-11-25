@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Malek_Hi (C_INFO)
 	information	= Info_Mod_Malek_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich höre, du bist knapp an Mana.";
+	description	= "Slysze, ze brakuje ci many.";
 };
 
 FUNC INT Info_Mod_Malek_Hi_Condition()
@@ -19,17 +19,17 @@ FUNC INT Info_Mod_Malek_Hi_Condition()
 
 FUNC VOID Info_Mod_Malek_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_00"); //Ich höre, du bist knapp an Mana.
-	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_01"); //Bei Beliar! Du hast recht. Ich bin erst kürzlich Magier geworden. Irgendwie verbrauche ich zu viel von dem Zeug bei meinen Übungen.
-	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_02"); //Wenn du genug Geld hast, besorg ich dir welches.
-	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_03"); //Du bist lustig. Wie soll man hier zu viel Geld kommen?
-	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_04"); //Auch wahr. Aber deine Stimme gibst du mir.
-	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_05"); //Wenn du mir 20 Flaschen Manaextrakt besorgst, ja.
-	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_06"); //Na, dann bis später.
+	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_00"); //Slysze, ze brakuje ci many.
+	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_01"); //Beliar! Masz racje, masz racje. Zostalem ostatnio magikiem. Jakos wykorzystuje to zbyt wiele podczas cwiczen.
+	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_02"); //Jesli masz wystarczajaco duzo pieniedzy, dostaniem cie troche.
+	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_03"); //Jestes smieszny. Jak dostajesz tu zbyt wiele pieniedzy?
+	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_04"); //To wystarczy. Ale oddaje mi pan swój glos.
+	AI_Output(self, hero, "Info_Mod_Malek_Hi_08_05"); //Jesli dostajesz mi 20 butelek wyciagu z maniku, tak.
+	AI_Output(hero, self, "Info_Mod_Malek_Hi_15_06"); //Cóz, zobaczcie to pózniej.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_MANAEXTRAKT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_MANAEXTRAKT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_MANAEXTRAKT, "Der Magier Malek braucht 20 Flaschen Manaextrakt. Das werde ich wohl in der Stadt finden.");
+	B_LogEntry	(TOPIC_MOD_ASS_MANAEXTRAKT, "Czarodziej Malek potrzebuje 20 butelek wyciagu z many. Prawdopodobnie znajde ja w miescie.");
 };
 
 INSTANCE Info_Mod_Malek_Manaextrakt (C_INFO)
@@ -53,16 +53,16 @@ FUNC INT Info_Mod_Malek_Manaextrakt_Condition()
 
 FUNC VOID Info_Mod_Malek_Manaextrakt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_00"); //Und, hast du ...?
-	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_01"); //Ja, hier sind 20 Flaschen.
+	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_00"); //Czy....?
+	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_01"); //Tak, tutaj jest 20 butelek.
 
 	B_GiveInvItems	(hero, self, ItPo_Mana_02, 20);
 
-	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_02"); //Optimal. Dann kann ich ja wieder ...
-	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_03"); //Und deine Stimme?
-	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_04"); //Gehört dir. Ist doch selbstverständlich.
-	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_05"); //Noch was. Mahamad sucht dich.
-	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_06"); //Dann werde ich mal zu ihm gehen.
+	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_02"); //Optymalny. Potem moge wrócic do....
+	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_03"); //A Twój glos?
+	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_04"); //To Twoja. Jest to jedyne naturalne.
+	AI_Output(self, hero, "Info_Mod_Malek_Manaextrakt_08_05"); //Jeszcze jedna rzecz. Mahamad szuka cie.
+	AI_Output(hero, self, "Info_Mod_Malek_Manaextrakt_15_06"); //Jestem gonna go zobaczyc.
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_MANAEXTRAKT, LOG_SUCCESS);
 

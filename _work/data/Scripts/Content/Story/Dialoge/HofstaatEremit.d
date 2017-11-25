@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatEremit_Hi (C_INFO)
 	information	= Info_Mod_HofstaatEremit_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du der Eremit?";
+	description	= "Jestes pustelnikiem?";
 };
 
 FUNC INT Info_Mod_HofstaatEremit_Hi_Condition()
@@ -16,27 +16,27 @@ FUNC INT Info_Mod_HofstaatEremit_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatEremit_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_00"); //Bist du der Eremit?
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_01"); //Kommt drauf an.
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_02"); //Auf was?
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_03"); //Welchen Eremiten du meinst.
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_04"); //(genervt) Den königliche natürlich.
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_05"); //Ja, der bin ich.
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_06"); //Der Magier schickt mich.
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_07"); //Welcher?
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_08"); //(genervt) Der königliche.
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_09"); //Achso. Und was will er?
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_10"); //Er hat was von einer Pilzlieferung gesagt.
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_11"); //Welche Pilzlief ... (wird unterbrochen)
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_12"); //Die königliche verdammt noch mal!
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_13"); //Achso. Dann nimm hier dieses königliche Säckchen voller königlicher Pilzsporen und bring es dem Magier!
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_00"); //Jestes pustelnikiem?
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_01"); //Zalezy od niego.
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_02"); //Co na czym?
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_03"); //Który pustelnik oznacza.
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_04"); //Oczywiscie królewski.
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_05"); //Tak, jestem nim.
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_06"); //Czarodziej wyslal mnie.
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_07"); //Który z nich?
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_08"); //Królewski.
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_09"); //Ach, cóz. I czego chce?
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_10"); //Powiedzial cos na temat doreczenia grzybów.
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_11"); //.... Co to grzyb? (zaklócone)
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_12"); //Królewski goddamned jeden królewski!
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_13"); //Ach, cóz. Nastepnie wez te królewska torbe pelna królewskich zarodników grzybów i przyprowadz do maga!
 
 	B_GiveInvItems	(self, hero, ItMi_FreudenspenderSporen, 1);
 
-	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_14"); //Welchem?
-	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_15"); //Dem königlichen natürlich!
+	AI_Output(hero, self, "Info_Mod_HofstaatEremit_Hi_15_14"); //Który z nich?
+	AI_Output(self, hero, "Info_Mod_HofstaatEremit_Hi_08_15"); //Oczywiscie królewski!
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Der Eremit hat mir die Pilzsporen gegeben. Ich sollte sie zum Magier bringen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Hermit dal mi zarodniki grzybów. Powinienem ja zabrac do maga.");
 };
 
 INSTANCE Info_Mod_HofstaatEremit_EXIT (C_INFO)

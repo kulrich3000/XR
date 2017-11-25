@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Dusty_Hi_Condition()
 
 FUNC VOID Info_Mod_Dusty_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_00"); //Du hier? Es hieß, du wärst im Schläfertempel verschüttet ...
-	AI_Output(hero, self, "Info_Mod_Dusty_Hi_15_01"); //Eine lange, nicht sehr erfreuliche Geschichte. Aber wieso bist du hier?
-	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_02"); //Ich wollte eigentlich rüber aufs Festland, Familie und so. (lacht gequält)
-	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_03"); //Problem ist nur, dass momentan kein Schiff im Hafen liegt, das in nächster Zeit dorthin auslaufen wird.
-	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_04"); //Und weil die Paladine selbst im Hafenviertel Stress machen, bin ich wieder raus und verdinge mich als Jäger.
+	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_00"); //Ty tutaj? Oni powiedzieli, ze zostaliscie pochowani w swiatyni dla sypialni.
+	AI_Output(hero, self, "Info_Mod_Dusty_Hi_15_01"); //Dluga, nieprzyjemna historia. Ale dlaczego tu jestes?
+	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_02"); //Mialem pojechac na lad, rodzine i rzeczy. (smiertelnicy torturowani)
+	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_03"); //Jedyny problem polega na tym, ze obecnie w porcie nie ma statku, który w niedalekiej przyszlosci bedzie opuszczal port.
+	AI_Output(self, hero, "Info_Mod_Dusty_Hi_14_04"); //A poniewaz paladyny powoduja stres nawet w dzielnicy portowej, znowu wychodze na polowanie.
 };
 
 INSTANCE Info_Mod_Dusty_Lehrer (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Dusty_Lehrer (C_INFO)
 	information	= Info_Mod_Dusty_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du als Jäger vielleicht ein paar Tipps für mich auf Lager?";
+	description	= "Jako mysliwy, czy masz dla mnie jakies rady?";
 };
 
 FUNC INT Info_Mod_Dusty_Lehrer_Condition()
@@ -40,11 +40,11 @@ FUNC INT Info_Mod_Dusty_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Dusty_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Lehrer_15_00"); //Hast du als Jäger vielleicht ein paar Tipps für mich auf Lager?
-	AI_Output(self, hero, "Info_Mod_Dusty_Lehrer_14_01"); //Die Grundlagen kann ich dir auf jeden Fall zeigen. Du hast mir in der Kolonie ja auch geholfen.
+	AI_Output(hero, self, "Info_Mod_Dusty_Lehrer_15_00"); //Jako mysliwy, czy masz dla mnie jakies rady?
+	AI_Output(self, hero, "Info_Mod_Dusty_Lehrer_14_01"); //Moge zdecydowanie pokazac wam podstawy. Pomagales mi w kolonii, czyz nie ty?
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KHORINIS, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Dusty kann mir beibringen, wie ich an Jagdtrophäen komme.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KHORINIS, "Kurzacy moze nauczyc mnie, jak zdobyc trofea mysliwskie.");
 };
 
 INSTANCE Info_Mod_Dusty_Infos (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Dusty_Infos (C_INFO)
 	information	= Info_Mod_Dusty_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du was über die Schläferanhänger hier in der Gegend?";
+	description	= "Czy wiesz cos na temat przyczep podkladowych?";
 };
 
 FUNC INT Info_Mod_Dusty_Infos_Condition()
@@ -69,14 +69,14 @@ FUNC INT Info_Mod_Dusty_Infos_Condition()
 
 FUNC VOID Info_Mod_Dusty_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_00"); //Weißt du was über die Schläferanhänger hier in der Gegend?
-	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_01"); //Ja, ich hab ein paar gesehen. Es waren zwei kleine Gruppen.
-	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_02"); //Wo kann ich sie finden?
-	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_03"); //Weißt du was? Ich bin schon seit Tagen auf Entzug. Da arbeitet mein Gehirn nicht mehr so schnell, wenn du verstehst, was ich meine.
-	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_04"); //Du brauchst mal wieder eine Dosis Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_05"); //(wollüstig) Oh ja! Wenn du mir einen ordentlichen Stängel bringst, ordnen sich meine Gedanken auch wieder.
+	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_00"); //Czy wiesz cos na temat przyczep podkladowych?
+	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_01"); //Tak, widzialem kilka. Byly to dwie male grupy.
+	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_02"); //Gdzie moge ja znalezc?
+	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_03"); //Wiesz cos wiesz? Od wielu dni jestem na wycofywaniu sie. Mój mózg nie dziala tak szybko, jesli wiesz, co mam na mysli.
+	AI_Output(hero, self, "Info_Mod_Dusty_Infos_15_04"); //Potrzebujesz kolejnej dawki chwastu bagiennego?
+	AI_Output(self, hero, "Info_Mod_Dusty_Infos_14_05"); //Och, tak! Jesli przyniosa mi Panstwo dobry lódz, wyprostuje moje mysli.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Bevor Dusty mir sagen kann, wo sich die Schläferanhänger aufhalten, soll ich ihm einen Sumpfkrautstängel bringen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Zanim Dusty powie mi, gdzie znajduja sie przyczepy sypialne, musze go zabrac na mokradlo.");
 };
 
 INSTANCE Info_Mod_Dusty_Kippe (C_INFO)
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Dusty_Kippe (C_INFO)
 	information	= Info_Mod_Dusty_Kippe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du dein Sumpfkraut.";
+	description	= "Oto Twoja rdestnica bagnista.";
 };
 
 FUNC INT Info_Mod_Dusty_Kippe_Condition()
@@ -101,21 +101,21 @@ FUNC INT Info_Mod_Dusty_Kippe_Condition()
 
 FUNC VOID Info_Mod_Dusty_Kippe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Kippe_15_00"); //Hier hast du dein Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Dusty_Kippe_15_00"); //Oto Twoja rdestnica bagnista.
 	
 	B_GiveInvItems	(hero, self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_01"); //Ah, sehr schön. Mein Blick wird wieder klar.
-	AI_Output(hero, self, "Info_Mod_Dusty_Kippe_15_02"); //Dann sag mir, wo ich die Fanatiker finde.
-	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_03"); //Die eine Gruppe hat sich beim Leuchtturm niedergelassen. Das ist die größere Gruppe. Wenn du dort hingehst, musst du sehr vorsichtig sein.
-	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_04"); //Die andere Gruppe ist in einer Höhle im Wald südlich der Stadt. Dort solltest du zuerst vorbeischauen.
-	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_05"); //Den Leuchtturm lässt du besser mal noch bleiben, bevor du mehr herausgefunden hast.
+	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_01"); //Ach, bardzo milo. Moje oczy znów sa jasne.
+	AI_Output(hero, self, "Info_Mod_Dusty_Kippe_15_02"); //Potem powiedz mi, gdzie moge znalezc fanatyków.
+	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_03"); //Jedna grupa osiedlila sie w latarni morskiej. To jest wieksza grupa. Kiedy idziesz tam, musisz byc bardzo ostrozny.
+	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_04"); //Druga grupa znajduje sie w jaskini w lesie na poludnie od miasta. Najpierw powinienes sie zatrzymac.
+	AI_Output(self, hero, "Info_Mod_Dusty_Kippe_14_05"); //Lepiej zostawic latarnie, zanim dowiesz sie wiecej.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Dusty hat mir gesagt, dass die eine Gruppe ihr Lager beim Leuchtturm hat, die andere in einer Höhle südlich der Stadt. Den Leuchtturm sollte ich noch in Ruhe lassen, bis ich mehr weiß.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Dusty powiedzial mi, ze jedna grupa ma swój obóz przy latarni morskiej, druga w jaskini na poludnie od miasta. Powinienem zostawic latarnie samotnie do czasu, az bede wiedzial wiecej.");
 };
 
 INSTANCE Info_Mod_Dusty_Crawlersekret (C_INFO)
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Dusty_Crawlersekret (C_INFO)
 	information	= Info_Mod_Dusty_Crawlersekret_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher könnte ich starkes Minecrawler-Sekret bekommen?";
+	description	= "Skad moge siegnac po silna wydzieline miotacza?";
 };
 
 FUNC INT Info_Mod_Dusty_Crawlersekret_Condition()
@@ -141,9 +141,9 @@ FUNC INT Info_Mod_Dusty_Crawlersekret_Condition()
 
 FUNC VOID Info_Mod_Dusty_Crawlersekret_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Crawlersekret_15_00"); //Woher könnte ich starkes Minecrawler-Sekret bekommen?
-	AI_Output(self, hero, "Info_Mod_Dusty_Crawlersekret_14_01"); //Ich habe von den anderen Jägern gehört, dass im Norden Minecrawler gesichtet wurden.
-	AI_Output(self, hero, "Info_Mod_Dusty_Crawlersekret_14_02"); //Wenn du Glück hast, dann gibt es dort auch eine Königin, deren Eier du stehlen kannst, um daraus das Sekret zu gewinnen.
+	AI_Output(hero, self, "Info_Mod_Dusty_Crawlersekret_15_00"); //Skad moge siegnac po silna wydzieline miotacza?
+	AI_Output(self, hero, "Info_Mod_Dusty_Crawlersekret_14_01"); //Slyszalem od innych mysliwych, ze minecrawlerzy zostali zauwazeni na pólnocy.
+	AI_Output(self, hero, "Info_Mod_Dusty_Crawlersekret_14_02"); //Jesli masz szczescie, jest równiez królowa, której jaja mozna ukrasc, aby wygrac tajemnice.
 };
 
 INSTANCE Info_Mod_Dusty_OtherHunters (C_INFO)
@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Dusty_OtherHunters (C_INFO)
 	information	= Info_Mod_Dusty_OtherHunters_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir sagen, wo ich noch andere Jäger finde?";
+	description	= "Czy mozesz mi powiedziec, gdzie moge znalezc innych mysliwych?";
 };
 
 FUNC INT Info_Mod_Dusty_OtherHunters_Condition()
@@ -168,9 +168,9 @@ FUNC INT Info_Mod_Dusty_OtherHunters_Condition()
 
 FUNC VOID Info_Mod_Dusty_OtherHunters_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_OtherHunters_15_00"); //Kannst du mir sagen, wo ich noch andere Jäger finde?
-	AI_Output(self, hero, "Info_Mod_Dusty_OtherHunters_14_01"); //Bei der Taverne "Zur toten Harpie" nordöstlich von hier ist ein großes Lager, an dem ich vorbeigekommen bin. Ob es noch andere Treffpunkte gibt, weiß ich nicht.
-	AI_Output(hero, self, "Info_Mod_Dusty_OtherHunters_15_02"); //Danke, das hilft mir schon weiter.
+	AI_Output(hero, self, "Info_Mod_Dusty_OtherHunters_15_00"); //Czy mozesz mi powiedziec, gdzie moge znalezc innych mysliwych?
+	AI_Output(self, hero, "Info_Mod_Dusty_OtherHunters_14_01"); //Bei der Taverne "Do martwej harfy" nordöstlich von hier ist ein großes Lager, an dem ich vorbeigekommen bin. Ob es noch andere Treffpunkte gibt, weiß ich nicht.
+	AI_Output(hero, self, "Info_Mod_Dusty_OtherHunters_15_02"); //Bardzo mi to pomoze.
 };
 
 INSTANCE Info_Mod_Dusty_Bruderschaft (C_INFO)
@@ -181,7 +181,7 @@ INSTANCE Info_Mod_Dusty_Bruderschaft (C_INFO)
 	information	= Info_Mod_Dusty_Bruderschaft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist nach dem Fall der Barriere mit der Bruderschaft (...)";
+	description	= "Co dzieje sie po upadku zapory z braterstwem (....)? )";
 };
 
 FUNC INT Info_Mod_Dusty_Bruderschaft_Condition()
@@ -194,9 +194,9 @@ FUNC INT Info_Mod_Dusty_Bruderschaft_Condition()
 
 FUNC VOID Info_Mod_Dusty_Bruderschaft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Bruderschaft_15_00"); //Was ist nach dem Fall der Barriere mit der Bruderschaft passiert?
-	AI_Output(self, hero, "Info_Mod_Dusty_Bruderschaft_14_01"); //Keine Ahnung, es gab keine große Aufbruchstimmung oder so. Die meisten haben sich im Lager ein neues Leben aufgebaut und wollen gar nicht mehr weg.
-	AI_Output(self, hero, "Info_Mod_Dusty_Bruderschaft_14_02"); //Dass der Schläfer ein Erzdämon war, mussten natürlich einige erst mal verdauen, aber ob sie sich jetzt einen Ersatz gesucht haben oder nur noch Sumpfkraut rauchen, weiß ich nicht.
+	AI_Output(hero, self, "Info_Mod_Dusty_Bruderschaft_15_00"); //Co sie stalo z braterstwem po upadku zapory?
+	AI_Output(self, hero, "Info_Mod_Dusty_Bruderschaft_14_01"); //Nie wiem, nie bylo zbyt wiele sensu wyjazdu ani niczego. Wiekszosc z nich zbudowala nowe zycie w obozie i nie chce opuscic obozu.
+	AI_Output(self, hero, "Info_Mod_Dusty_Bruderschaft_14_02"); //Ze sypialnia byla archipelag demonem musial oczywiscie troche trawic, ale nie wiem, czy szukali zamienników, czy po prostu palili ziola bagienne.
 };
 
 INSTANCE Info_Mod_Dusty_BosperFelle (C_INFO)
@@ -207,7 +207,7 @@ INSTANCE Info_Mod_Dusty_BosperFelle (C_INFO)
 	information	= Info_Mod_Dusty_BosperFelle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast nicht zufällig ein paar schöne Wolfsfelle?";
+	description	= "Nie zdarzyloby Ci sie miec pieknych wilków, czy móglbys?";
 };
 
 FUNC INT Info_Mod_Dusty_BosperFelle_Condition()
@@ -222,14 +222,14 @@ FUNC INT Info_Mod_Dusty_BosperFelle_Condition()
 
 FUNC VOID Info_Mod_Dusty_BosperFelle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_BosperFelle_15_00"); //Du hast nicht zufällig ein paar schöne Wolfsfelle, die du nicht mehr brauchst?
-	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_01"); //Wölfe habe ich schon ein paar erlegt, auch wenn die verdammt gefährlich sind.
-	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_02"); //Aber das Fell hab ich nicht allen abgezogen. Wart mal ... (Suchgeräusch) Zwei unbeschädigte Felle hätte ich. Interesse?
-	AI_Output(hero, self, "Info_Mod_Dusty_BosperFelle_15_03"); //Nur her damit. Wie kann ich dir danken?
+	AI_Output(hero, self, "Info_Mod_Dusty_BosperFelle_15_00"); //Nie zdarza Ci sie miec jakies ladne futra z wilkami, których juz nie potrzebujesz?
+	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_01"); //Strzelilem kilka wilków, mimo ze sa one niebezpieczne.
+	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_02"); //Ale ja ich nie zdusilem. Odczekac minute..... Mam dwie nieuszkodzone skóry. Interesuje?
+	AI_Output(hero, self, "Info_Mod_Dusty_BosperFelle_15_03"); //Daj mi ja. Jak moge wam podziekowac?
 
 	B_GiveInvItems	(self, hero, ItAt_WolfFur_Rein, 2);
 
-	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_04"); //Du hast die Barriere beseitigt. Mehr brauchst du nicht für mich tun.
+	AI_Output(self, hero, "Info_Mod_Dusty_BosperFelle_14_04"); //Usunieto bariere. To wszystko, co musisz dla mnie zrobic.
 };
 
 INSTANCE Info_Mod_Dusty_Lernen (C_INFO)
@@ -240,7 +240,7 @@ INSTANCE Info_Mod_Dusty_Lernen (C_INFO)
 	information	= Info_Mod_Dusty_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was kannst du mir beibringen?";
+	description	= "Czego mozesz mnie nauczyc?";
 };
 
 FUNC INT Info_Mod_Dusty_Lernen_Condition()
@@ -253,13 +253,13 @@ FUNC INT Info_Mod_Dusty_Lernen_Condition()
 
 FUNC VOID Info_Mod_Dusty_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dusty_Lernen_15_00"); //Was kannst du mir beibringen?
+	AI_Output(hero, self, "Info_Mod_Dusty_Lernen_15_00"); //Czego mozesz mnie nauczyc?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	|| (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_14_01"); //Kommt darauf an, was du wissen willst.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_14_01"); //Zalezy od tego, co chcesz wiedziec.
 
 		Info_ClearChoices	(Info_Mod_Dusty_Lernen);
 
@@ -267,24 +267,24 @@ FUNC VOID Info_Mod_Dusty_Lernen_Info()
 
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
+			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
+			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
+			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
+			Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_14_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_14_02"); //Nie moge cie nauczyc wiecej niz juz wiesz. Przepraszam za to.
 	};
 };
 
@@ -297,9 +297,9 @@ FUNC void Info_Mod_Dusty_Lernen_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Claws))
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_00"); //Zwierzeta nie lubia oddawac pazurów. Musisz trafic dokladnie tam, gdzie idziesz nozem.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_01"); //Postawa dloni powinna byc lekko uwiklana. Z mocnym wstrzasem odciales pazur.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Claws_14_02"); //Sprzet jest zawsze pozadanym srodkiem platniczym dla przedsiebiorcy.
 	};
 
 	Info_ClearChoices	(Info_Mod_Dusty_Lernen);
@@ -308,19 +308,19 @@ FUNC void Info_Mod_Dusty_Lernen_Claws()
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
 	};
 		
 };
@@ -329,8 +329,8 @@ FUNC void Info_Mod_Dusty_Lernen_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Teeth))
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Teeth_14_00"); //Das einfachste, was du Tieren entnehmen kannst, sind seine Zähne. Du fährst mit deinem Messer in seinem Maul um das Gebiss.
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Teeth_14_01"); //Dann trennst es geschickt mit einem Ruck vom Schädel des Tieres.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Teeth_14_00"); //Najprostsza rzecza, która mozna wyciagnac ze zwierzat jest ich zeby. Jezdzisz nozem dookola protezy w ustach.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Teeth_14_01"); //Potem umiejetnie oddziela sie go od czaszki zwierzecia szarpnieciem.
 	};
 
 	Info_ClearChoices	(Info_Mod_Dusty_Lernen);
@@ -339,19 +339,19 @@ FUNC void Info_Mod_Dusty_Lernen_Teeth()
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
 	};
 };
 
@@ -359,8 +359,8 @@ FUNC void Info_Mod_Dusty_Lernen_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_BFSting))
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_BFSting_07_00"); //Die Fliege hat am Rücken eine weiche Stelle.
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_BFSting_07_01"); //Wenn du dort mit der Hand gegen drückst, fährt der Stachel sehr weit aus und du kannst ihn mit dem Messer abtrennen.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_BFSting_07_00"); //mucha ma miekkie miejsce na plecach.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_BFSting_07_01"); //Jesli wcisna Panstwo dlon do niej dociskajac, uklucie wysuwa sie bardzo daleko i mozna ja przeciac nozem.
 	};
 
 	Info_ClearChoices	(Info_Mod_Dusty_Lernen);
@@ -369,19 +369,19 @@ FUNC void Info_Mod_Dusty_Lernen_BFSting()
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
 	};
 };
 
@@ -389,8 +389,8 @@ FUNC void Info_Mod_Dusty_Lernen_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, hero, TROPHY_Fur))
 	{
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Fur_14_00"); //Felle ziehst du am besten ab, indem du einen tiefen Schnitt an den Hinterläufen des Tieres vornimmst.
-		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Fur_14_01"); //Dann kannst du das Fell von vorne nach hinten eigentlich immer sehr leicht abziehen.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Fur_14_00"); //Najlepszym sposobem usuniecia siersci jest wykonanie glebokiego ciecia na tylnych nogach zwierzecia.
+		AI_Output(self, hero, "Info_Mod_Dusty_Lernen_Fur_14_01"); //Dzieki temu zawsze mozna latwo sciagnac futro z przodu do tylu.
 	};
 
 	Info_ClearChoices	(Info_Mod_Dusty_Lernen);
@@ -399,19 +399,19 @@ FUNC void Info_Mod_Dusty_Lernen_Fur()
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)), Info_Mod_Dusty_Lernen_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)), Info_Mod_Dusty_Lernen_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("Fliegenstachel", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString("mucha kregoslup", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)), Info_Mod_Dusty_Lernen_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
+		Info_AddChoice	(Info_Mod_Dusty_Lernen, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)), Info_Mod_Dusty_Lernen_Fur);
 	};
 };
 

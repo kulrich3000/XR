@@ -2,7 +2,7 @@ instance Mod_7791_SFB_Flaemar_PAT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Flämar";
+	name =					"Flamandzki";
 	npctype = 				Npctype_MAIN;
 	guild =					GIL_VLK;  
 	level =					6;

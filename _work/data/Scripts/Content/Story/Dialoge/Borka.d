@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Borka_Hi_Condition()
 
 FUNC VOID Info_Mod_Borka_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Borka_Hi_11_00"); //Tritt ein Fremder, hier werden deine wildesten Träume und Phantasien erfüllt.
+	AI_Output(self, hero, "Info_Mod_Borka_Hi_11_00"); //Krok w slepa uliczke, a Twoje najsmielsze marzenia i fantazje spelnia sie.
 };
 
 INSTANCE Info_Mod_Borka_Flugblaetter (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Borka_Flugblaetter (C_INFO)
 	information	= Info_Mod_Borka_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Borka_Flugblaetter_Condition()
@@ -47,11 +47,11 @@ FUNC VOID Info_Mod_Borka_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Borka_Flugblaetter_11_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Borka_Flugblaetter_11_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Borka_Flugblaetter_11_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Borka_Flugblaetter_11_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Borka_Aabid (C_INFO)
 	information	= Info_Mod_Borka_Aabid_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Aabid und ...";
+	description	= "Pochodze z Aabid i.....";
 };
 
 FUNC INT Info_Mod_Borka_Aabid_Condition()
@@ -78,20 +78,20 @@ FUNC INT Info_Mod_Borka_Aabid_Condition()
 
 FUNC VOID Info_Mod_Borka_Aabid_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_00"); //Ich komme von Aabid und ...
-	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_01"); //(seufzt) Der Kerl schon wieder.
-	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_02"); //Was ist damit?
-	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_03"); //Dauernd will er, dass ich ihm sein Paket vor die Stadt bringe, aber ich habe keine Lust dazu. Kannst du ihm das mal ausrichten?
-	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_04"); //Ich bin eigentlich gekommen, um das Paket abzuholen.
-	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_05"); //(lacht) Aabid ist 'ne faule Sau. Hier hast du das Paket.
+	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_00"); //Pochodze z Aabid i.....
+	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_01"); //Znowu gosc.
+	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_02"); //A co z tym?
+	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_03"); //On ciagle chce, zebym mial odebrac jego paczke z miasta, ale nie mam ochoty. Czy moze pan przekazac mu wiadomosc?
+	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_04"); //Przyszedlem, zeby odebrac pakiet.
+	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_05"); //(smiech) Aabid to leniwa swinia. Oto pakiet.
 
 	B_GiveInvItems	(self, hero, ItMi_HerbPaket, 1);
 
-	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_06"); //(verwundert) Einfach so?
-	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_07"); //Es ist schon bezahlt worden. Bring Aabid das Paket und schöne Grüße, das nächste mal soll er selber kommen.
-	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_08"); //Na gut, werde ich machen.
+	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_06"); //Tak wlasnie jest?
+	AI_Output(self, hero, "Info_Mod_Borka_Aabid_11_07"); //Jest juz zaplacona. Przynies pakiet do Aabid i powiem hello, nastepnym razem powinien przyjsc sam.
+	AI_Output(hero, self, "Info_Mod_Borka_Aabid_15_08"); //Wlasciwie to zrobie.
 
-	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Das Paket von Borka habe ich bekommen, und das ohne bezahlen zu müssen.");
+	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Dostalem pakiet od Borki bez placenia.");
 
 	B_GivePlayerXP	(50);
 };
@@ -118,9 +118,9 @@ FUNC INT Info_Mod_Borka_SchutzgeldErpresser_Condition()
 
 FUNC VOID Info_Mod_Borka_SchutzgeldErpresser_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Borka_SchutzgeldErpresser_11_00"); //Hast du das Geld?
-	AI_Output(hero, self, "Info_Mod_Borka_SchutzgeldErpresser_15_01"); //Vergiss es! Sag mir sofort, wer dich schickt, oder du wirst dir wünschen, deine Geburt nicht überlebt zu haben!
-	AI_Output(self, hero, "Info_Mod_Borka_SchutzgeldErpresser_11_02"); //Du willst Ärger? Den kannst du gerne bekommen.
+	AI_Output(self, hero, "Info_Mod_Borka_SchutzgeldErpresser_11_00"); //Dostales pieniadze?
+	AI_Output(hero, self, "Info_Mod_Borka_SchutzgeldErpresser_15_01"); //Zapomnij o tym! Powiedz mi natychmiast, kto cie wyslal, albo zyczysz ci, zebys nie przezyl porodu!
+	AI_Output(self, hero, "Info_Mod_Borka_SchutzgeldErpresser_11_02"); //Chcesz miec klopoty? Serdecznie zapraszamy.
 
 	AI_StopProcessInfos	(self);
 
@@ -151,15 +151,15 @@ FUNC VOID Info_Mod_Borka_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_00"); //Mannomann! Du hast ja 'nen ganz schönen Schlag drauf.
-			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_02"); //Willst du mir jetzt sagen, wer dich schickt?
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_03"); //Ist ja schon gut, keine Aufregung. Bromor schickt mich, er will, dass wir euren Laden zertrümmern und Geld von euch kassieren.
-			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_04"); //Warum will er das?
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_05"); //Er mag die Sträflinge nicht und will sie deshalb nicht hier im Hafenviertel haben.
-			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_06"); //So, das wird Lord Andre sicher interessieren.
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_07"); //Die Stadtwache interessiert sich nicht für eure Probleme.
-			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_08"); //Gut, dann weiß ich, was ich wissen wollte. Und jetzt verschwinde, bevor du noch eine aufs Maul bekommst.
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_09"); //Schon gut, schon gut, ich bin schon weg.
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_00"); //Jezu Chryste! Dostales na ciebie pieklo ponczu.
+			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_02"); //Chcesz mi powiedziec, kto Cie wyslal?
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_03"); //Wszystko jest w porzadku, nie badz podekscytowany. Bromor mnie przyslal, chce, abysmy rozbili twój sklep i pobrali od ciebie pieniadze.
+			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_04"); //Dlaczego tego chce?
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_05"); //Nie podobaja mu sie skazancy, wiec nie chce ich tu na nabrzezu.
+			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_06"); //Cóz, jestem pewien, ze Lord Andre bedzie zainteresowany.
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_07"); //City Watch nie dba o Twoje problemy.
+			AI_Output(hero, self, "Info_Mod_Borka_Umgehauen_15_08"); //No cóz, wtedy wiem, co chcialem wiedziec. Teraz wyjmij z niego pieklo, zanim dostaniesz kolejny strzal do ust.
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_09"); //Wszystko w porzadku, wszystko w porzadku, jestem poza nia.
 
 			AI_StopProcessInfos	(self);
 
@@ -167,11 +167,11 @@ FUNC VOID Info_Mod_Borka_Umgehauen_Info()
 
 			Mod_AL_BorkaAusgequetscht	=	1;
 
-			B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Es war Borka. Er arbeitet für Bromor, der uns Sträflinge nicht zu mögen scheint. Das sollte ich Whistler erzählen.");
+			B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "To byla Borka. Pracuje dla Bromora, który zdaje sie nie lubic nas skazanych. To wlasnie powinienem powiedziec Whistlerowi.");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_01"); //Tja, das war wohl nichts.
+			AI_Output(self, hero, "Info_Mod_Borka_Umgehauen_04_01"); //No cóz, to bylo nic.
 
 			AI_StopProcessInfos	(self);
 
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Borka_Lucy (C_INFO)
 	information	= Info_Mod_Borka_Lucy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du verkaufst Sumpfkraut?";
+	description	= "Sprzedajesz ambrozje bagienna?";
 };
 
 FUNC INT Info_Mod_Borka_Lucy_Condition()
@@ -208,10 +208,10 @@ FUNC INT Info_Mod_Borka_Lucy_Condition()
 
 FUNC VOID Info_Mod_Borka_Lucy_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Borka_Lucy_15_00"); //Du verkaufst Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Borka_Lucy_11_01"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Borka_Lucy_15_02"); //Ich habe Gold.
-	AI_Output(self, hero, "Info_Mod_Borka_Lucy_11_03"); //Wenn das so ist ...
+	AI_Output(hero, self, "Info_Mod_Borka_Lucy_15_00"); //Sprzedajesz ambrozje bagienna?
+	AI_Output(self, hero, "Info_Mod_Borka_Lucy_11_01"); //Mówi kto kogo?
+	AI_Output(hero, self, "Info_Mod_Borka_Lucy_15_02"); //Mam zloto.
+	AI_Output(self, hero, "Info_Mod_Borka_Lucy_11_03"); //Cóz, w takim przypadku.....
 };
 
 INSTANCE Info_Mod_Borka_Skinner (C_INFO)
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_Borka_Skinner (C_INFO)
 	information	= Info_Mod_Borka_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Interesse an ein paar grünen Novizen?";
+	description	= "Interesuja Cie nowicjusze zieleni?";
 };
 
 FUNC INT Info_Mod_Borka_Skinner_Condition()
@@ -238,19 +238,19 @@ FUNC INT Info_Mod_Borka_Skinner_Condition()
 
 FUNC VOID Info_Mod_Borka_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Borka_Skinner_15_00"); //Hast du Interesse an ein paar grünen Novizen?
-	AI_Output(self, hero, "Info_Mod_Borka_Skinner_07_01"); //Klar, ich nehm alles was du hast.
-	AI_Output(hero, self, "Info_Mod_Borka_Skinner_15_02"); //Hier, nimm.
+	AI_Output(hero, self, "Info_Mod_Borka_Skinner_15_00"); //Interesuja Cie nowicjusze zieleni?
+	AI_Output(self, hero, "Info_Mod_Borka_Skinner_07_01"); //Oczywiscie zabiore wszystko, co dostales.
+	AI_Output(hero, self, "Info_Mod_Borka_Skinner_15_02"); //Wez to tutaj.
 
 	B_GiveInvItems	(hero, self, ItMi_Addon_Joint_01, Npc_HasItems(hero, ItMi_Addon_Joint_01));
 
-	AI_Output(self, hero, "Info_Mod_Borka_Skinner_07_03"); //Hier dein Gold.
+	AI_Output(self, hero, "Info_Mod_Borka_Skinner_07_03"); //Oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, Npc_HasItems(self, ItMi_Addon_Joint_01)*20);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich in der Stadt die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Pozbylem sie wiec wszystkich zielonych nowicjuszy w miescie.");
 };
 
 var int Mod_BorkaTrader;
@@ -281,7 +281,7 @@ FUNC VOID Info_Mod_Borka_Trade_Info()
 		Mod_BorkaTrader = TRUE;
 		
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Borka handelt mit Sumpfkraut.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Borka zawiera transakcje z bagnista.");
 	};
 	Backup_Questitems();
 

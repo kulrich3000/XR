@@ -1,6 +1,6 @@
 INSTANCE ItRwOrcstaff (C_Item)
 {
-	name 				=	"Grachtnakk";
+	name 				=	"szarosc";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

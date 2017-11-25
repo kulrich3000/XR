@@ -18,26 +18,26 @@ FUNC INT Info_Mod_Dever_Trador_Condition()
 
 FUNC VOID Info_Mod_Dever_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_00"); //Willkommen zurück.
-	AI_Output(hero, self, "Info_Mod_Dever_Trador_15_01"); //Kannst du mir sagen, welche Magier im Moment vermisst werden?
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_02"); //Vermisst wird eigentlich keiner, aber ich habe ein paar seit einigen Tagen nicht mehr gesehen.
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_03"); //Asko hat sich auf den Weg zu den Ruinen gemacht.
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_04"); //Fore hat etwas von seltenen Pflanzen gebrabbelt und ist den Hang runter gegangen.
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_05"); //Dean wollte, glaube ich, den Steinkreis untersuchen.
-	AI_Output(hero, self, "Info_Mod_Dever_Trador_15_06"); //Ich werde die drei mal aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_07"); //Das ist nett. Wenn du Dean triffst, frag ihn mal, ob er jetzt die Antwort auf meine Frage kennt.
-	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_08"); //Er sitzt schon ziemlich lange daran.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_00"); //Witam powitaj, panie posle.
+	AI_Output(hero, self, "Info_Mod_Dever_Trador_15_01"); //Czy mozesz mi powiedziec, których magów teraz brakuje?
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_02"); //Nikt nie jest nieobecny, ale w ciagu kilku dni nie widzialem ich kilku.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_03"); //Asko udal sie na ruiny.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_04"); //Fore belkotal troche o rzadkich roslinach i zszedl na zbocze.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_05"); //Mysle, ze dziekan chcial zbadac krag kamienny.
+	AI_Output(hero, self, "Info_Mod_Dever_Trador_15_06"); //Pójde do nich trzy razy.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_07"); //To milo. Jesli spotkasz dziekana, zapytaj go, czy zna odpowiedz na moje pytanie.
+	AI_Output(self, hero, "Info_Mod_Dever_Trador_11_08"); //Przez dlugi czas na nim siedzial.
 
 	Log_CreateTopic	(TOPIC_MOD_DEVER_DEAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DEVER_DEAN, LOG_RUNNING);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Per_Trador))
 	{
-		B_LogEntry	(TOPIC_MOD_DEVER_DEAN, "Ich soll Dean fragen, ob er nun die Antwort auf Devers Frage kennt.");
+		B_LogEntry	(TOPIC_MOD_DEVER_DEAN, "Zadaje dziekanowi pytanie, czy zna odpowiedz na jego pytanie.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_FAICE_GIFT, TOPIC_MOD_DEVER_DEAN, "Seit einigen Tagen nicht mehr aufgetaucht sind: Asko, der ist bei den Ruinen; Fore, der ist unten am Hang; und Dean, der ist beim Steinkreis.", "Ich soll Dean fragen, ob er nun die Antwort auf Devers Frage kennt.");
+		B_LogEntry_More	(TOPIC_MOD_FAICE_GIFT, TOPIC_MOD_DEVER_DEAN, "Od kilku dni juz sie nie pojawil: Asko, które znajduje sie w poblizu ruin; Fore, jest na stoku; Jest na kamiennym kole dziekana.", "Zadaje dziekanowi pytanie, czy zna odpowiedz na jego pytanie.");
 	};
 };
 
@@ -61,14 +61,14 @@ FUNC INT Info_Mod_Dever_Dean_Condition()
 
 FUNC VOID Info_Mod_Dever_Dean_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_00"); //Da bist du ja wieder. Was hast du herausgefunden?
-	AI_Output(hero, self, "Info_Mod_Dever_Dean_15_01"); //Dean wurde von einem Golem umgebracht, der von einem Betrüger namens Trador hierher gesendet wurde.
-	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_02"); //Oh nein! Wie konnte das passieren? Ich habe gar keinen Golem gesehen.
-	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_03"); //Du solltest Genn davon 	berichten.
+	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_00"); //Tam znów pan jest. Co sie dowiedziales/as?
+	AI_Output(hero, self, "Info_Mod_Dever_Dean_15_01"); //Dziekan zostal zabity przez golem wyslany tutaj przez konduktanta o nazwisku Trador.
+	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_02"); //Och, nie! Jak do tego doszlo? Nie widzialem Golema.
+	AI_Output(self, hero, "Info_Mod_Dever_Dean_11_03"); //Miales powiedziec Gennowi o tym.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Per_Dean))
 	{
-		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Ich habe von Deans Tod berichtet. Jetzt sollte ich zurück zu Genn gehen und ihn von den Ereignissen in Kenntnis setzen.");
+		B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Zglosilem smierc dziekana. Teraz powinienem wrócic do Genna i poinformowac go o wydarzeniach.");
 	};
 };
 
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Dever_Frage (C_INFO)
 	information	= Info_Mod_Dever_Frage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte Dean leider nicht mehr nach der Antwort fragen.";
+	description	= "Niestety, nie moglem poprosic dziekana o odpowiedz.";
 };
 
 FUNC INT Info_Mod_Dever_Frage_Condition()
@@ -94,12 +94,12 @@ FUNC INT Info_Mod_Dever_Frage_Condition()
 
 FUNC VOID Info_Mod_Dever_Frage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dever_Frage_15_00"); //Ich konnte Dean leider nicht mehr nach der Antwort fragen.
-	AI_Output(self, hero, "Info_Mod_Dever_Frage_11_01"); //Verständlich. Aber die Antwort ist irgendwo da draußen ...
+	AI_Output(hero, self, "Info_Mod_Dever_Frage_15_00"); //Niestety, nie moglem poprosic dziekana o odpowiedz.
+	AI_Output(self, hero, "Info_Mod_Dever_Frage_11_01"); //Zrozumiale. Ale odpowiedz jest tam gdzies....
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_DEVER_DEAN, "Ich habe Dever gesagt, dass ich Dean schlecht nach der Antwort fragen konnte.");
+	B_LogEntry	(TOPIC_MOD_DEVER_DEAN, "Powiedzialem Deverowi, ze ciezko mi bylo poprosic dziekana o odpowiedz.");
 	B_SetTopicStatus	(TOPIC_MOD_DEVER_DEAN, LOG_SUCCESS);
 };
 
@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Dever_Lernen (C_INFO)
 	information	= Info_Mod_Dever_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden!";
+	description	= "Chce byc silniejszy!";
 };
 
 FUNC INT Info_Mod_Dever_Lernen_Condition()
@@ -132,10 +132,10 @@ FUNC VOID Info_Mod_Dever_Lernen_Info()
 		Mod_Knows_DeverTeacher = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_VM, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Dever kann mir helfen stärker zu werden.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Ktos moze mi pomóc wzmocnic sie.");
 	};
 
-	AI_Output(hero, self, "Info_Mod_Dever_Lernen_15_00"); //Ich will stärker werden!
+	AI_Output(hero, self, "Info_Mod_Dever_Lernen_15_00"); //Chce byc silniejszy!
 
 	Info_ClearChoices	(Info_Mod_Dever_Lernen);
 

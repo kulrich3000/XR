@@ -18,39 +18,39 @@ FUNC INT Info_Mod_Grubuz_Stollen_Condition()
 
 FUNC VOID Info_Mod_Grubuz_Stollen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_18_00"); //Was Mensch wollen hier?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_18_00"); //Czego ludzie chca tutaj?
 	
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ich will euch stinkende Orks ausrotten!", Info_Mod_Grubuz_Stollen_B);
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ich muss in den Stollen, den ihr ausgegraben habt.", Info_Mod_Grubuz_Stollen_A);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Chce eksterminowac ci czajace orki!", Info_Mod_Grubuz_Stollen_B);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Musze udac sie do wykopanego tunelu.", Info_Mod_Grubuz_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Grubuz_Stollen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_B_15_00"); //Ich will euch stinkende Orks ausrotten!
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_B_18_01"); //Mensch böse, warum Gobshak lassen ihn zu mir?
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_B_15_00"); //Chce eksterminowac ci czajace orki!
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_B_18_01"); //Czlowiek zly, dlaczego gobshak pozwolil mu przyjsc do mnie?
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Das ist uninteressant. Interessanter ist, ob du Kämpfen kannst, du Schwächling!", Info_Mod_Grubuz_Stollen_D);
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Das war nur ein Versprecher von mir.", Info_Mod_Grubuz_Stollen_C);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "To nie jest interesujace. Co ciekawsze, jesli mozesz walczyc, slabniesz!", Info_Mod_Grubuz_Stollen_D);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "To byl tylko posmak jezyka.", Info_Mod_Grubuz_Stollen_C);
 };
 
 FUNC VOID Info_Mod_Grubuz_Stollen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_A_15_00"); //Ich muss in den Stollen, den ihr ausgegraben habt.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_A_18_01"); //Warum?
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_A_15_00"); //Musze udac sie do wykopanego tunelu.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_A_18_01"); //Dlaczego?
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Dort müssen irgendwo noch Spruchrollen herumliegen, die ich benötige.", Info_Mod_Grubuz_Stollen_F);
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Das ist ein Geheimnis.", Info_Mod_Grubuz_Stollen_E);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ciagle jeszcze musza istniec jakies zaklecia lezace gdzies tam gdzie potrzebuje.", Info_Mod_Grubuz_Stollen_F);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "To sekret.", Info_Mod_Grubuz_Stollen_E);
 };
 
 FUNC VOID Info_Mod_Grubuz_Stollen_D()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_D_15_00"); //Das ist uninteressant. Interessanter ist, ob du Kämpfen kannst, du Schwächling!
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_D_15_00"); //To nie jest interesujace. Co ciekawsze, jesli mozesz walczyc, slabniesz!
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
@@ -61,33 +61,33 @@ FUNC VOID Info_Mod_Grubuz_Stollen_D()
 
 FUNC VOID Info_Mod_Grubuz_Stollen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_C_15_00"); //Das war nur ein Versprecher von mir.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_C_18_01"); //Ich überhört habe. Was wollen Mensch also?
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_C_15_00"); //To byl tylko posmak jezyka.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_C_18_01"); //Nie sluchalem. Czego wiec ludzie chca?
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ich muss in den Stollen, den ihr ausgegraben habt.", Info_Mod_Grubuz_Stollen_A);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Musze udac sie do wykopanego tunelu.", Info_Mod_Grubuz_Stollen_A);
 };
 
 FUNC VOID Info_Mod_Grubuz_Stollen_E()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_E_15_00"); //Das ist ein Geheimnis.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_E_18_01"); //Mensch ... du müssen mir Geheimnis sagen, sonst ich nicht kann dich in Stollen lassen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_E_15_00"); //To sekret.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_E_18_01"); //Jeez..... trzeba mi powiedziec tajemnice lub nie pozwole wam wejsc do kopalni.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Stollen);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Dort müssen irgendwo noch Spruchrollen herumliegen, die ich benötige.", Info_Mod_Grubuz_Stollen_F);
-	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ich denke gar nicht daran.", Info_Mod_Grubuz_Stollen_G);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Ciagle jeszcze musza istniec jakies zaklecia lezace gdzies tam gdzie potrzebuje.", Info_Mod_Grubuz_Stollen_F);
+	Info_AddChoice	(Info_Mod_Grubuz_Stollen, "Nie mysle nawet o tym.", Info_Mod_Grubuz_Stollen_G);
 };
 
 FUNC VOID Info_Mod_Grubuz_Stollen_F()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_F_15_00"); //Dort müssen irgendwo noch Spruchrollen herumliegen, die ich benötige.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_F_18_01"); //Wir nicht gefunden haben Spruchrollen. Du können rein und suchen.
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_F_15_02"); //Danke. Wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_F_18_03"); //Es ehren mich, Dank zu haben.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_F_15_00"); //Ciagle jeszcze musza istniec jakies zaklecia lezace gdzies tam gdzie potrzebuje.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_F_18_01"); //Nie znalezlismy zadnych rolek zaklec. Mozesz wejsc i wyszukac.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_F_15_02"); //Dzieki. Zobacze cie dookola.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_F_18_03"); //Mam zaszczyt podziekowac.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich habe die Erlaubnis von Grubuz, den Stollen zu betreten. Er sagt aber, dass die Orks dort keine Spruchrollen gefunden haben. Ich werde mich wohl genauer umsehen müssen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Mam pozwolenie z Grubuz na wejscie do tunelu. Ale mówi, ze orki nie znalazly tam zadnych ról pisowni. Prawdopodobnie bede musial przyjrzec sie blizej.");
 
 	Mod_Hermy_KnowsQuest = 3;
 
@@ -98,9 +98,9 @@ FUNC VOID Info_Mod_Grubuz_Stollen_F()
 
 FUNC VOID Info_Mod_Grubuz_Stollen_G()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_G_15_00"); //Ich denke gar nicht daran.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_G_18_01"); //Dann ich dich nicht kann in den Stollen lassen.
-	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_G_15_02"); //Okay, ich sage es dir.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_G_15_00"); //Nie mysle nawet o tym.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Stollen_G_18_01"); //Wtedy nie moge cie wpuscic do tunelu.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Stollen_G_15_02"); //Dobrze, powiem ci.
 
 	Info_Mod_Grubuz_Stollen_F();
 };
@@ -125,95 +125,95 @@ FUNC INT Info_Mod_Grubuz_Emerin_Condition()
 
 FUNC VOID Info_Mod_Grubuz_Emerin_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_18_00"); //Was du wollen hier?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_18_00"); //Co Pan tutaj robi?
 
 	self.flags = 0;
 	
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Die Frage ist doch: Was machst du hier?", Info_Mod_Grubuz_Emerin_B);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Die Spruchrolle, du stinkendes Monster.", Info_Mod_Grubuz_Emerin_A);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Pytanie brzmi: co Pan tutaj robi?", Info_Mod_Grubuz_Emerin_B);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Przewin potwora, nekajacego potwora.", Info_Mod_Grubuz_Emerin_A);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_K()
 {
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_K_18_00"); //Grubuz brauchen ein wenig frische Luft.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_K_18_00"); //Grubuz potrzebuje troche swiezego powietrza.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Warum läufst du dann so weit fort?", Info_Mod_Grubuz_Emerin_L);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Rück' die Spruchrolle raus oder ich bringe dich um.", Info_Mod_Grubuz_Emerin_E);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dlaczego wiec uciekasz tak daleko?", Info_Mod_Grubuz_Emerin_L);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Zrezygnuje z czesci wypowiedzi, albo cie zabiore.", Info_Mod_Grubuz_Emerin_E);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_B()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_B_15_00"); //Die Frage ist doch: was machst du hier?
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_B_15_00"); //Pytanie brzmi: co Pan tutaj robi?
 
 	Info_Mod_Grubuz_Emerin_K();
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_A()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_A_15_00"); //Die Spruchrolle, du stinkendes Monster.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_A_18_01"); //Grubuz haben keine Spruchrolle. Grubuz nicht wissen, wovon Mensch reden.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_A_15_00"); //Przewin potwora, nekajacego potwora.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_A_18_01"); //Grubuz nie pelni roli mówcy. Grubuz nie wie, o czym ludzie mówia.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Warum bist du dann weggelaufen?", Info_Mod_Grubuz_Emerin_O);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Rück' die Spruchrolle raus oder ich bringe dich um.", Info_Mod_Grubuz_Emerin_E);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dlaczego wiec uciekles?", Info_Mod_Grubuz_Emerin_O);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Zrezygnuje z czesci wypowiedzi, albo cie zabiore.", Info_Mod_Grubuz_Emerin_E);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_O()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_O_15_00"); //Warum bist du dann weggelaufen?
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_O_15_00"); //Dlaczego wiec uciekles?
 
 	Info_Mod_Grubuz_Emerin_K();
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_L()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_L_15_00"); //Warum läufst du dann so weit fort?
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_L_18_01"); //Bei Wald die Luft sein am Besten.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_L_15_00"); //Dlaczego wiec uciekasz tak daleko?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_L_18_01"); //Badz najlepszy w powietrzu lesnym.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Und warum hast du dich dann nicht bei Gobshak abgemeldet?", Info_Mod_Grubuz_Emerin_N);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Sag mal, willst du mich verarschen? Rück' sofort die Spruchrolle raus!", Info_Mod_Grubuz_Emerin_M);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dlaczego wiec nie wylogowales sie na gobshak?", Info_Mod_Grubuz_Emerin_N);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Czy kochasz mnie? Teraz wyjdz z tego miejsca!", Info_Mod_Grubuz_Emerin_M);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_E()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_E_15_00"); //Rück' die Spruchrolle raus oder ich bringe dich um.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_E_18_01"); //Wenn du wirklich wollen kämpfen, Grubuz dich umbringen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_E_15_00"); //Zrezygnuje z czesci wypowiedzi, albo cie zabiore.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_E_18_01"); //Jesli naprawde chcesz walczyc, Grubuz cie zabije.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Gib mir die Spruchrolle doch einfach und wir sind quitt.", Info_Mod_Grubuz_Emerin_F);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dann komm doch her!", Info_Mod_Grubuz_Emerin_G);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dlaczego nie podajesz mi tylko fragmentu mowy, a my bedziemy to nazywac nawet?", Info_Mod_Grubuz_Emerin_F);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "A potem tutaj!", Info_Mod_Grubuz_Emerin_G);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_H()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_H_15_00"); //Was denn?
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_H_18_01"); //Du mich nicht umbringen und mir Versprechen geben, dass mich nicht weiter verfolgen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_H_15_00"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_H_18_01"); //Nie zabijasz mnie i obiecujesz, ze nie pójdziesz za mna dalej.
 
 	Info_ClearChoices	(Info_Mod_Grubuz_Emerin);
 
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Egal, du stirbst jetzt.", Info_Mod_Grubuz_Emerin_J);
-	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Okay, ich verspreche es.", Info_Mod_Grubuz_Emerin_I);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Zreszta umieracie teraz.", Info_Mod_Grubuz_Emerin_J);
+	Info_AddChoice	(Info_Mod_Grubuz_Emerin, "Dobrze, obiecuje.", Info_Mod_Grubuz_Emerin_I);
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_F()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_F_15_00"); //Gib mir die Spruchrolle doch einfach und wir sind quitt.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_F_18_01"); //Du müssen mir aber etwas versprechen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_F_15_00"); //Dlaczego nie podajesz mi tylko fragmentu mowy, a my bedziemy to nazywac nawet?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_F_18_01"); //Trzeba mi cos obiecac.
 
 	Info_Mod_Grubuz_Emerin_H();
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_G()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_G_15_00"); //Dann komm doch her!
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_G_15_00"); //A potem tutaj!
 
 	CreateInvItems	(self, ItSc_TrfHarpie, 1);
 
@@ -226,7 +226,7 @@ FUNC VOID Info_Mod_Grubuz_Emerin_G()
 
 FUNC VOID Info_Mod_Grubuz_Emerin_J()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_J_15_00"); //Egal, du stirbst jetzt.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_J_15_00"); //Zreszta umieracie teraz.
 
 	CreateInvItems	(self, ItSc_TrfHarpie, 1);
 
@@ -239,16 +239,16 @@ FUNC VOID Info_Mod_Grubuz_Emerin_J()
 
 FUNC VOID Info_Mod_Grubuz_Emerin_I()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_I_15_00"); //Okay, ich verspreche es.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_I_18_01"); //Hier, Grubuz dir geben Spruro ... Spuch ... Zauber.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_I_15_00"); //Dobrze, obiecuje.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_I_18_01"); //Tutaj Grubuz daje Ci Spruro..... obrzydliwy Magia.
 
 	CreateInvItems	(self, ItSc_TrfHarpie, 1);
 	B_GiveInvItems	(self, hero, ItSc_TrfHarpie, 1);
 
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_I_15_02"); //Ich halte mein Wort. Du kannst gehen.
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_I_18_03"); //Hoffentlich wir uns sehen nie wieder.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_I_15_02"); //Chce dotrzymac slowa. Mozesz przejsc teraz.
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_I_18_03"); //Mam nadzieje, ze nigdy wiecej sie nie zobaczymy.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich habe die Spruchrolle 'Verwandlung Harpie'. Jetzt sollte ich damit zu Hermy gehen.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Mam zaklecie 'Transforming Harpie'. Teraz powinienem isc z nia do Hermy' ego.");
 
 	B_StartOtherRoutine	(self, "START");
 
@@ -261,16 +261,16 @@ FUNC VOID Info_Mod_Grubuz_Emerin_I()
 
 FUNC VOID Info_Mod_Grubuz_Emerin_N()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_N_15_00"); //Und warum hast du dich dann nicht bei Gobshak abgemeldet?
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_N_18_01"); //Hören auf Grubuz zu quälen! Ich dir geben Rolle, wenn du mir etwas versprechen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_N_15_00"); //Dlaczego wiec nie wylogowales sie na gobshak?
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_N_18_01"); //Przestan meczyc Grubuz! Daje ci rolke, jesli cos mi obiecujesz.
 
 	Info_Mod_Grubuz_Emerin_H();
 };
 
 FUNC VOID Info_Mod_Grubuz_Emerin_M()
 {
-	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_M_15_00"); //Sag mal, willst du mich verarschen? Rück' sofort die Spruchrolle raus!
-	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_M_18_01"); //Du wollen kämpfen? Grubuz dich umbringen.
+	AI_Output(hero, self, "Info_Mod_Grubuz_Emerin_M_15_00"); //Czy kochasz mnie? Teraz wyjdz z tego miejsca!
+	AI_Output(self, hero, "Info_Mod_Grubuz_Emerin_M_18_01"); //Chcesz walczyc? Grubuz cie zabije.
 
 	Info_Mod_Grubuz_Emerin_G();
 };

@@ -21,54 +21,54 @@ FUNC INT Info_Mod_Logan_Quest_Condition()
 
 FUNC VOID Info_Mod_Logan_Quest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_00"); //Hey, du bist neu im Lager.
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_01"); //Ja, das hast du richtig erkannt.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_02"); //Und du hast den weiten Weg von Khorinis zu uns geschafft, und lebst noch.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_03"); //Du musst schnell auf den Beinen sein. Das sind doch schon mal gute Voraussetzungen.
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_04"); //Gute Voraussetzungen wofür?
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_05"); //Für unseren Plan.
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_06"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_07"); //Nun, wie klar sein dürfte befinden sind einige Reichtümer im Haus der Erzbarone. Auch ist zur Zeit ein stinkreicher Händler bei ihnen in der Burg, mit Handelswaren beachtlichen Wertes.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_08"); //Das Problem ist nur, an dies alles heranzukommen. Dafür bedarf es einer kleinen Ablenkung. Und da kommst du ins Spiel.
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_09"); //Was genau habt ihr euch denn vorgestellt?
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_10"); //Nun, uns ist vor einigen Wochen eine Söldnerrüstung "in die Hände gefallen". Wie du vielleicht mitbekommen hast, sind das Alte und Neue Lager nicht so gut aufeinander zu sprechen.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_11"); //Wenn nun jemand mit einer Söldnerrüstung ins Alte Lager marschieren würde ...
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_12"); //Was, ist das wirklich euer Ernst!? Ich soll mitten ins Wespennest?
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_13"); //Es ist nicht ganz so gefährlich, wie es sich anhört. Du wirst auch mit einem Schnelligkeitstrank ausgestattet.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_14"); //Du läufst dann wenige Minuten. etwas auf dem Hof herum und ziehst die Aufmerksamkeit der Gardisten auf dich. Je mehr Zeit du uns verschaffst, desto besser.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_15"); //Wir nehmen indessen getarnt mit alten Schattenrüstungen etwas von den Reichtümern des Burginneren an uns. Was sagst du?
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_00"); //Hej, jestes nowy w obozie.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_01"); //Tak, dostales to prawo.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_02"); //Przeszliscie droge od Khorinis do nas i wciaz zyjecie.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_03"); //Musisz byc na nogach szybko. To juz dobre warunki.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_04"); //Dobre warunki dla jakich dzialan?
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_05"); //Dla naszego planu.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_06"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_07"); //Cóz, jak to jest jasne moze byc zlokalizowane sa niektóre bogactwa w domu arcybarona. W chwili obecnej w zamku znajduje sie tez zatwardzialy, bogaty kupiec z towarami o znacznej wartosci handlowej.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_08"); //Jedynym problemem jest dotarcie do tego wszystkiego. Wymaga to nieco rozproszenia uwagi. Tam wlasnie przychodzisz.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_09"); //Co dokladnie miales na mysli?
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_10"); //Nun, uns ist vor einigen Wochen eine Söldnerrüstung "wpadl w rece". Wie du vielleicht mitbekommen hast, sind das Alte und Neue Lager nicht so gut aufeinander zu sprechen.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_11"); //Gdyby ktos z pancerzem najemnika przemaszerowal do Starego Obozu.... Wiecej
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_15_12"); //Co naprawde masz na mysli? Chcesz, abym poszedl do gniazda osy?
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_13"); //Nie jest tak niebezpiecznie, jak brzmi. Zostaniesz równiez wyposazony w potencjometr predkosci.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_14"); //Przebiegacie kilka minut. i zwróc uwage straznika na siebie. Im wiecej dasz nam czasu, tym lepiej.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_10_15"); //Jednak, zakamuflowani stara pancerzem cieni, czerpiemy z bogactwa wnetrza zamku. Co mówisz?
 
 	Info_ClearChoices	(Info_Mod_Logan_Quest);
 
-	Info_AddChoice	(Info_Mod_Logan_Quest, "Auf keinen Fall, ich bin doch nicht lebensmüde.", Info_Mod_Logan_Quest_B);
-	Info_AddChoice	(Info_Mod_Logan_Quest, "Ok, ich mach’s.", Info_Mod_Logan_Quest_A);
+	Info_AddChoice	(Info_Mod_Logan_Quest, "Nie jestem samobójczy.", Info_Mod_Logan_Quest_B);
+	Info_AddChoice	(Info_Mod_Logan_Quest, "Dobrze, zrobie to.", Info_Mod_Logan_Quest_A);
 };
 
 FUNC VOID Info_Mod_Logan_Quest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_B_15_00"); //Auf keinen Fall, ich bin doch nicht lebensmüde.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_B_10_01"); //Schade. (vorwurfsvoll) Ich hoffe du weißt, dass und damit eine ordentliche Beute entgeht.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_B_15_00"); //Nie jestem samobójczy.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_B_10_01"); //Zbyt zle. (skarzace) Mam nadzieje, ze wiecie, ze wraz z tym ucieka przyzwoity lup.
 	
 	Info_ClearChoices	(Info_Mod_Logan_Quest);
 };
 
 FUNC VOID Info_Mod_Logan_Quest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Logan_Quest_A_15_00"); //Ok, ich mach’s.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_01"); //Sehr gut. Ok, Ich, Morgahard und Miguel warten vor dem Eingang zur inneren Burg.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_02"); //Sobald du für Ablenkung drinnen sorgst, übernehme ich und Morgahard den Händler und das Haus der Erzbarone, während Miguel etwas in den alten Schriften der Feuermagier nach nützlichem und profitablem Wissen stöbert.
-	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_03"); //Alles klar? Gut, dann kann es ja losgehen.
+	AI_Output(hero, self, "Info_Mod_Logan_Quest_A_15_00"); //Dobrze, zrobie to.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_01"); //Bardzo dobry. Okay, ja, Morgahard i Miguel czekaja przed wejsciem na zamek wewnetrzny.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_02"); //Jak tylko stworzysz rozproszenie w srodku, ja i Morgahard przejmujemy kupca i Dom Baronów Er, podczas gdy Miguel grzebie w starozytnych pismach Magickich Strazaków dla uzytecznej i zyskownej wiedzy.
+	AI_Output(self, hero, "Info_Mod_Logan_Quest_A_10_03"); //Kazdy ma racje? Wszystko w porzadku, idzmy tutaj.
 
 	CreateInvItems	(hero, ItAr_Sld_Logan, 1);
 	CreateInvItems	(hero, ItPo_Speed, 1);
 
-	B_ShowGivenThings	("leichte Söldnerrüstun und Trank erhalten");
+	B_ShowGivenThings	("konserwowane lekkie rusztowania najemne i eliksir zakonserwowany");
 
 	Mod_LoganQuest = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_LOGAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_LOGAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Ich soll mit der leichten Söldnerrüstung von Logan die Gardisten in der inneren Burg ablenken, während er, Miguel und Morgahard die Schätze dort rauben.");
+	B_LogEntry	(TOPIC_MOD_BDT_LOGAN, "Z lekkim pancerzem najemników Logana odwróce uwage strazników w zamku wewnetrznym, podczas gdy on, Miguel i Morgahard okradaja tam skarby.");
 
 	Info_ClearChoices	(Info_Mod_Logan_Quest);
 
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Logan_Belohnung_Info()
 {
 	if (Mod_LaufZeit <= 60)
 	{
-		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_00"); //Du hättest dir wirklich etwas mehr Mühe geben können. In der kurzen Zeit haben wir nicht so viel zusammenbekommen.
+		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_00"); //Móglbys naprawde wlozyc troche wiecej wysilku. W tym krótkim czasie nie zebralismy sie tak wiele razem.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -118,19 +118,19 @@ FUNC VOID Info_Mod_Logan_Belohnung_Info()
 	}
 	else if (Mod_LaufZeit <= 120)
 	{
-		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_01"); //Naja, etwas mehr Zeit hätten wir schon gebrauchen können. Hier dein Anteil.
+		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_01"); //Cóz, moglibysmy poswiecic nieco wiecej czasu. Oto Twój udzial.
 
 		CreateInvItems	(hero, ItMi_Gold, 300);
 		CreateInvItems	(hero, ItMi_Nugget, 4);
 		CreateInvItems	(hero, ItAt_LurkerSkin, 4);
 
-		B_ShowGivenThings	("300 Gold, 4 Erzbrocken und 4 Reptilienhäute erhalten");
+		B_ShowGivenThings	("300 zlota, 4 sztuki rudy i 4 skórki gadów zakonserwowane");
 
 		B_GivePlayerXP	(300);
 	}
 	else if (Mod_LaufZeit < 180)
 	{
-		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_02"); //Du hast deine Arbeit gut gemacht und dir deinen Anteil verdient, anbei auch ein Rezept von Miguel.
+		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_02"); //Wykonales swoja prace dobrze i zarobiles swój udzial, wiec tutaj jest recepta Miguela.
 
 		CreateInvItems	(hero, ItMi_Gold, 350);
 		CreateInvItems	(hero, ItMi_Nugget, 5);
@@ -139,14 +139,14 @@ FUNC VOID Info_Mod_Logan_Belohnung_Info()
 		CreateInvItems	(hero, ItAt_Shadowhorn, 2);
 		CreateInvItems	(hero, ITWr_Addon_MCELIXIER_01, 1);
 
-		B_ShowGivenThings	("350 Gold, 5 Erzbrocken, 4 Reptilienhäute, Trollhauer, 2 Schattenläuferhörner und Rezept erhalten");
+		B_ShowGivenThings	("350 zlota, 5 kawalków rudy, 4 skórki gadów, Trollhauer, 2 rogi biegacza cieniowanego i receptura zakonserwowana");
 
 		B_GivePlayerXP	(400);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_03"); //Muahaha, du hast die Gardisten wirklich großartig an der Nase herumgeführt und uns mehr als genug Zeit verschafft dem Alten Lager einige kostbare Schätze zu entreißen.
-		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_04"); //Auch Miguel hat in den Büchern Nützliches gefunden, wovon du deinen Anteil bekommst.
+		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_03"); //Muahahahahahahaha, naprawde zrobiles swietna robote prowadzac strazników wokól i dajac nam wystarczajaco duzo czasu, aby obejrzec cenne skarby z dawnego obozu.
+		AI_Output(self, hero, "Info_Mod_Logan_Belohnung_10_04"); //Miguel znalazl równiez cos pozytecznego w ksiazkach, z których mozesz skorzystac.
 
 		CreateInvItems	(hero, ItMi_Gold, 500);
 		CreateInvItems	(hero, ItMi_Nugget, 7);
@@ -176,7 +176,7 @@ FUNC VOID Info_Mod_Logan_Belohnung_Info()
 			CreateInvItems	(hero, ItSc_AuraBerserker, 1);
 		};
 
-		B_ShowGivenThings	("500 Gold, 7 Erzbrocken, 5 Reptilienhäute, 2 Trollhauer, 2 Schattenläuferhörner, Rezept und 4 Sumpfhaizähne erhalten");
+		B_ShowGivenThings	("500 zlota, 7 kawalków rudy, 5 skór gadów, 2 kly trollowe, 2 cieniowate rogi biegacza, receptura i 4 wlosy bagienne.");
 
 		B_GivePlayerXP	(600);
 	};

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Babo_Hi (C_INFO)
 	information	= Info_Mod_Babo_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schlechte Laune?";
+	description	= "Zly nastrój?";
 };
 
 FUNC INT Info_Mod_Babo_Hi_Condition()
@@ -16,22 +16,22 @@ FUNC INT Info_Mod_Babo_Hi_Condition()
 
 FUNC VOID Info_Mod_Babo_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_15_00"); //Schlechte Laune?
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_01"); //(niedergeschlagen) Ja. Sieht man doch.
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_15_02"); //Was gibt's?
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_03"); //Verdammt, jemand hat sich an meiner Truhe zu schaffen gemacht und mir ein wichtiges Stück Papier gestohlen.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_04"); //Das Einzige, was das Novizenleben hier im Kloster noch erträglich gemacht hat.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_05"); //Aber ich hab keinen Schimmer, wer das getan haben könnte. Ärgern tun sie mich alle, sogar die Magier.
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_15_00"); //Zly nastrój?
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_01"); //(zrazenie) Tak. Widac to wyraznie.
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_15_02"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_03"); //Damn, ktos manipulowal moim tulowiem i ukradl wazny kawalek papieru.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_04"); //Jedyna rzecz, która sprawila, ze nowe zycie w klasztorze stalo sie znosne.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_36_05"); //Nie mam jednak pojecia, kto mógl to zrobic. Wszyscy mnie denerwuja, nawet magowie.
 
 	Info_ClearChoices	(Info_Mod_Babo_Hi);
 
-	Info_AddChoice	(Info_Mod_Babo_Hi, "(auslachen)", Info_Mod_Babo_Hi_B);
-	Info_AddChoice	(Info_Mod_Babo_Hi, "Was ist das für ein Gegenstand? Soll ich die Augen offen halten?", Info_Mod_Babo_Hi_A);
+	Info_AddChoice	(Info_Mod_Babo_Hi, "(luskanie", Info_Mod_Babo_Hi_B);
+	Info_AddChoice	(Info_Mod_Babo_Hi, "Co to jest ten przedmiot? Czy powinienem miec oczy otwarte?", Info_Mod_Babo_Hi_A);
 };
 
 FUNC VOID Info_Mod_Babo_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_B_15_00"); //(auslachen)
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_B_15_00"); //(luskanie
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Babo_Hi);
@@ -41,41 +41,41 @@ FUNC VOID Info_Mod_Babo_Hi_B()
 
 FUNC VOID Info_Mod_Babo_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_00"); //Was ist das für ein Gegenstand? Soll ich die Augen offen halten?
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_01"); //(panisch) Um Innos' Willen, nein! Das ist sehr privat.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_02"); //Ich hätte dir gar nichts erzählen dürfen...
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_03"); //Willst du nicht mal ein wenig an die frische Luft?
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_04"); //Das habe ich den Magiern schon oft gesagt. Aber sie wählen mich nie für die Botengänge aus.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_05"); //Ich darf fegen und den Wein stampfen, bis mir schlecht wird. Und das war's.
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_06"); //Ich könnte ein gutes Wort bei den Magiern für dich einlegen...
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_07"); //(argwöhnisch) Warum so hilfsbereit? Willst du mich auf den Arm nehmen, oder was?
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_08"); //Ich biete es nur an.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_09"); //Hast du ein Stück Kohle? Dann könnte ich mir die Zeichnung aus dem Gedächtnis wieder anfertigen.
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_00"); //Co to jest ten przedmiot? Czy powinienem miec oczy otwarte?
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_01"); //(panik) Dla Innosa, nie! To bardzo prywatne.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_02"); //Nie powinienem byl wam nic powiedziec....
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_03"); //Czy nie chcesz miec swiezego powietrza?
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_04"); //Mówilem magikom, ze wiele razy wczesniej. Ale nigdy mnie nie wybieraja do spraw.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_05"); //Potrafie zamiatac wino do czasu, az zachoruje. I tak wlasnie jest.
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_06"); //Móglbym powiedziec dobre slowo z magikami dla Was....
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_07"); //Dlaczego jestes tak pomocny? Czy oszukujesz mnie lub co?
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_A_15_08"); //Oferuje.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_A_36_09"); //Masz jakakolwiek gotówke? Potem moglem zrobic rysunek z pamieci.
 
 	Info_ClearChoices	(Info_Mod_Babo_Hi);
 
-	Info_AddChoice	(Info_Mod_Babo_Hi, "Gerade nicht.", Info_Mod_Babo_Hi_D);
+	Info_AddChoice	(Info_Mod_Babo_Hi, "Nie teraz.", Info_Mod_Babo_Hi_D);
 
 	if (Npc_HasItems(hero, ItMi_Coal) >= 1) {
-		Info_AddChoice	(Info_Mod_Babo_Hi, "Klar, hier hast du es.", Info_Mod_Babo_Hi_C);
+		Info_AddChoice	(Info_Mod_Babo_Hi, "Jasne, ze tu idziesz.", Info_Mod_Babo_Hi_C);
 	};
 };
 
 FUNC VOID Info_Mod_Babo_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_D_15_00"); //Gerade nicht.
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_D_36_01"); //Schade...
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_D_15_00"); //Nie teraz.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_D_36_01"); //Zbyt przykry
 
 	Info_ClearChoices	(Info_Mod_Babo_Hi);
 };
 
 FUNC VOID Info_Mod_Babo_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Babo_Hi_C_15_00"); //Klar, hier hast du es.
+	AI_Output(hero, self, "Info_Mod_Babo_Hi_C_15_00"); //Jasne, ze tu idziesz.
 
 	B_GiveInvItems	(hero, self, ItMi_Coal, 1);
 
-	AI_Output(self, hero, "Info_Mod_Babo_Hi_C_36_01"); //Danke, wenigstens etwas.
+	AI_Output(self, hero, "Info_Mod_Babo_Hi_C_36_01"); //Dziekuje, przynajmniej za cos.
 
 	B_GivePlayerXP	(50);
 
@@ -103,16 +103,16 @@ FUNC INT Info_Mod_Babo_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Babo_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch_36_00"); //(verstört) Schwarzer Rauch aus seinem Schlund, schwarzer Rauch aus seinem Körper, Schreie ...
-	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_01"); //Nun, beruhige dich mal. Was genau ist passiert?
-	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch_36_02"); //(verstört) Kurz nachdem er die Kirche verließ ... nein, nein ...
-	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_03"); //Nein, viel mehr bekomme ich aus ihm nicht heraus.
+	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch_36_00"); //Czarny dym z ust, czarny dym z ciala, krzyki....
+	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_01"); //Cóz, po prostu spokojny. Co dokladnie sie stalo?
+	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch_36_02"); //Tuz po opuszczeniu kosciola.... nie, nie, nie, nie, nie.......
+	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_03"); //Nie, to wszystko, co moge z niego wydostac.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_04"); //Ach jaa, in der Kirche war er zuletzt. Da sollte ich mich mal umhören.
+	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch_15_04"); //Tak, byl ostatni w kosciele. Powinienem zapytac.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Babo ist tatsächlich ziemlich verstört, berichtet von schwarzem Rauch aus dem Körper des Verstorbenen. Dyrian war zuvor offensichtlich noch in der Kirche gewesen ...");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Babo jest zreszta dosyc zdenerwowany, doniesienia o czarnym dymie z ciala zmarlego. Dyrian oczywiscie byl w kosciele przed.....");
 
 	Mod_BaboVerwirrt_Day = Wld_GetDay();
 };
@@ -138,11 +138,11 @@ FUNC INT Info_Mod_Babo_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Babo_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch2_36_00"); //Na, wie sieht’s aus?
-	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch2_15_01"); //Ähh, du bist wieder in Ordnung? Du hast mir doch solche Sachen erzählt ...
-	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch2_36_02"); //Ach, vergiss den Unsinn. Ich war einfach verwirrt über Dyrians Tod. Aber jetzt geht es mir wieder gut.
+	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch2_36_00"); //Jak to wyglada?
+	AI_Output(hero, self, "Info_Mod_Babo_Daemonisch2_15_01"); //Uh, masz racje? Mówiles mi pan takie rzeczy jak......
+	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch2_36_02"); //Och, zapomnij o nonsensie. Bylem po prostu zdezorientowany co do smierci dyryga. Ale teraz jestem juz teraz.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Komisch ... Babo scheint wieder voll beisammen zu sein und tut die Sachen, die er mir zuvor berichtet hatte, als Folge des Schocks über Dyrians Tod ab.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Dziwny.... Babo zdaje sie byc znowu razem i robi to, co powiedzial mi wczesniej w wyniku szoku spowodowanego smiercia Dyriana.");
 };
 
 INSTANCE Info_Mod_Babo_Daemonisch3 (C_INFO)
@@ -165,7 +165,7 @@ FUNC INT Info_Mod_Babo_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Babo_Daemonisch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch3_36_00"); //Die schwarzen Schatten in der Höhle beim See ... ich muss sofort das Kloster davon in Kenntnis setzen.
+	AI_Output(self, hero, "Info_Mod_Babo_Daemonisch3_36_00"); //Czarne cienie w jaskini w poblizu jeziora..... Musze natychmiast poinformowac o tym klasztor.
 
 	AI_StopProcessInfos	(self);
 

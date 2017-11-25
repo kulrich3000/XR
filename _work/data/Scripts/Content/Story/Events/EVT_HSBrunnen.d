@@ -7,10 +7,10 @@ FUNC VOID HSBRUNNEN_S0 ()
 
 		Npc_RemoveInvItems	(hero, ItFo_Water, 1);
 
-		B_LogEntry	(TOPIC_MOD_SL_BRUNNEN, "Ich habe Wasser in den Brunnen gefüllt.");
+		B_LogEntry	(TOPIC_MOD_SL_BRUNNEN, "Napelnialem studnie woda.");
 	}
 	else
 	{
-		AI_PrintScreen	("Geht nicht!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("Nie moge!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 	};
 };

@@ -1,7 +1,7 @@
 instance Mod_7180_BDT_Skinner_OC (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skinner";
+	name 		= "skóra";
 	guild 		= GIL_OUT;
 	id 			= 7180;
 	voice 		= 24;

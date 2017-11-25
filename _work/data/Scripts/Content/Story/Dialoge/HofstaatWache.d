@@ -15,44 +15,44 @@ FUNC INT Info_Mod_HofstaatWache_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatWache_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_07_00"); //Hey! Was machst du hier?
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_07_00"); //Hej! Co Pan tutaj robi?
 
 	Info_ClearChoices	(Info_Mod_HofstaatWache_Hi);
 
-	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "Was war denn das eben?", Info_Mod_HofstaatWache_Hi_C);
-	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "Ich will da rein!", Info_Mod_HofstaatWache_Hi_B);
-	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "Ich ... habe keine Ahnung.", Info_Mod_HofstaatWache_Hi_A);
+	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "O co w tym wszystkim chodzilo?", Info_Mod_HofstaatWache_Hi_C);
+	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "Chce tam wejsc!", Info_Mod_HofstaatWache_Hi_B);
+	Info_AddChoice	(Info_Mod_HofstaatWache_Hi, "l-- Nie mam pojecia.", Info_Mod_HofstaatWache_Hi_A);
 };
 
 FUNC VOID Info_Mod_HofstaatWache_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_C_15_00"); //Was war denn das eben?
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_C_07_01"); //Das? Fluffy's Mittagessen.
+	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_C_15_00"); //O co w tym wszystkim chodzilo?
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_C_07_01"); //To? Lunch Fluffy' ego.
 
 	Info_ClearChoices	(Info_Mod_HofstaatWache_Hi);
 };
 
 FUNC VOID Info_Mod_HofstaatWache_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_D_07_00"); //Ach übrigens, du bist jetzt königlicher Pöbel!
-	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_D_15_01"); //Pöbel?
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_D_07_02"); //KÖNIGLICHER PÖBEL! Und jetzt hau ab.
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_D_07_00"); //Nawiasem mówiac, teraz jestes królewskim królewszczyzna!
+	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_D_15_01"); //Mobilnosc?
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_D_07_02"); //ROYAL PEASANT! Teraz wyjdz z tego miejsca.
 };
 
 FUNC VOID Info_Mod_HofstaatWache_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_B_15_00"); //Ich will da rein!
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_01"); //Dazu brauchst du einen Pass.
-	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_B_15_02"); //Woher bekomme ich einen Pass.
+	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_B_15_00"); //Chce tam wejsc!
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_01"); //Bedziesz potrzebowal paszportu.
+	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_B_15_02"); //Skad mam otrzymac paszport?
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_03"); //Das macht 100 Goldstücke.
+		AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_03"); //To jest 100 sztuk zlota.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 	};
 
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_04"); //Hier.
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_B_07_04"); //Tutaj.
 
 	B_GiveInvItems	(self, hero, ItWr_Passierschein_HS, 1);
 
@@ -61,8 +61,8 @@ FUNC VOID Info_Mod_HofstaatWache_Hi_B()
 
 FUNC VOID Info_Mod_HofstaatWache_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_A_15_00"); //Ich ... habe keine Ahnung.
-	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_A_07_01"); //Dann bist du einer von uns. Du darfst passieren.
+	AI_Output(hero, self, "Info_Mod_HofstaatWache_Hi_A_15_00"); //l-- Nie mam pojecia.
+	AI_Output(self, hero, "Info_Mod_HofstaatWache_Hi_A_07_01"); //Wtedy jestes jednym z nas. Mozesz przejsc.
 
 	Info_Mod_HofstaatWache_Hi_D();
 };

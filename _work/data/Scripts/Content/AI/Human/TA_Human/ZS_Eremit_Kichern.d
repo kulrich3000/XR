@@ -39,15 +39,15 @@ func int ZS_Eremit_Kichern_Loop ()
 
 			if (rnd == 0)
 			{
-				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_00"); //(lautes Kichern)
+				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_00"); //(duzy giggling)
 			}
 			else if (rnd == 1)
 			{
-				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_01"); //(lautes Kichern)
+				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_01"); //(duzy giggling)
 			}
 			else if (rnd == 2)
 			{
-				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_02"); //(lautes Kichern)
+				AI_Output(self, NULL, "Info_Mod_Eremit_Kichern_04_02"); //(duzy giggling)
 			};
 		
 			Npc_SetStateTime (self, 0);

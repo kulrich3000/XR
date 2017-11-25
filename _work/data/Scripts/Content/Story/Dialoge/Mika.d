@@ -15,60 +15,60 @@ FUNC INT Info_Mod_Mika_Hi_Condition()
 
 FUNC VOID Info_Mod_Mika_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_00"); //Hey, dich habe ich hier noch die gesehen. Du musst neu in der Stadt sein.
-	AI_Output(hero, self, "Info_Mod_Mika_Hi_15_01"); //Schon möglich.
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_02"); //Ich will dir den Rat geben gut auf dich aufzupassen, wenn du die Stadt verlässt.
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_03"); //In letzter Zeit häufen sich nämlich die Berichte über recht unheimliche Begebenheiten.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_00"); //Hej, widzialem cie tutaj. Musisz byc nowy w miescie.
+	AI_Output(hero, self, "Info_Mod_Mika_Hi_15_01"); //Jest to mozliwe.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_02"); //Daje wam rade, abyscie przy wyjezdzie z miasta zadbali o siebie.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_13_03"); //Ostatnio coraz wiecej jest doniesien o raczej niesamowitych wydarzeniach.
 
 	Info_ClearChoices	(Info_Mod_Mika_Hi);
 
-	Info_AddChoice	(Info_Mod_Mika_Hi, "Von welchen Begebenheiten sprichst du?", Info_Mod_Mika_Hi_B);
-	Info_AddChoice	(Info_Mod_Mika_Hi, "Interessiert mich nicht.", Info_Mod_Mika_Hi_A);
+	Info_AddChoice	(Info_Mod_Mika_Hi, "O jakich wydarzeniach mówisz?", Info_Mod_Mika_Hi_B);
+	Info_AddChoice	(Info_Mod_Mika_Hi, "Nie jestem zainteresowany.", Info_Mod_Mika_Hi_A);
 };
 
 FUNC VOID Info_Mod_Mika_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Hi_B_15_00"); //Von welchen Begebenheiten sprichst du?
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_B_13_01"); //Nun, es wird gemunkelt, dass dunkle Mächte ihr Unwesen treiben. Leute verschwinden, andere erkranken plötzlich schwer.
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_B_13_02"); //Und manch einer hat gar berichtet, dass die Toten sich aus ihren Gräbern erheben und als Untote ihr Unwesen treiben.
+	AI_Output(hero, self, "Info_Mod_Mika_Hi_B_15_00"); //O jakich wydarzeniach mówisz?
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_B_13_01"); //No cóz, pogloski mówia, ze ciemne moce klóca sie miedzy soba. Ludzie znikaja, inni nagle powaznie choruja.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_B_13_02"); //Niektórzy mówili nawet o tym, ze umarli wzniesli sie z grobów i jako nieumarli powoduja straszne ich zlosliwosc.
 
 	Info_ClearChoices	(Info_Mod_Mika_Hi);
 
-	Info_AddChoice	(Info_Mod_Mika_Hi, "(weiter)", Info_Mod_Mika_Hi_D);
-	Info_AddChoice	(Info_Mod_Mika_Hi, "Das hat doch alles gar nichts zu bedeuten.", Info_Mod_Mika_Hi_C);
+	Info_AddChoice	(Info_Mod_Mika_Hi, "(wiecej)", Info_Mod_Mika_Hi_D);
+	Info_AddChoice	(Info_Mod_Mika_Hi, "Nie oznacza to niczego.", Info_Mod_Mika_Hi_C);
 };
 
 FUNC VOID Info_Mod_Mika_Hi_E()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_E_13_00"); //Ok, wie du meinst. Komm dann aber bloß nicht angelaufen, wenn Untote oder andere finstere Gestalten hinter dir her sind.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_E_13_00"); //Dobrze, cokolwiek powiesz. Nie biegajcie, gdy juz po tobie sa nieumarle lub inne zlowieszcze stworzenia.
 
 	Info_ClearChoices	(Info_Mod_Mika_Hi);
 };
 
 FUNC VOID Info_Mod_Mika_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Hi_A_15_00"); //Interessiert mich nicht.
+	AI_Output(hero, self, "Info_Mod_Mika_Hi_A_15_00"); //Nie jestem zainteresowany.
 
 	Info_Mod_Mika_Hi_E();
 };
 
 FUNC VOID Info_Mod_Mika_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_00"); //Und erst vor einiger Zeit habe ich von weitem eine unheimliche, finstere Gestalt aus dem Talkessel vor der Stadt kommen sehen.
-	AI_Output(hero, self, "Info_Mod_Mika_Hi_D_15_01"); //Eine finstere Gestalt? Wohin ist sie gegangen?
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_02"); //Weiter den Weg hinauf. Entweder in Richtung Akil’s Hof, der links vom Weg liegt, oder gerade aus Richtung Taverne.
-	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_03"); //War mir gar nicht geheuer, dieser Geselle.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_00"); //I dopiero jakis czas temu widzialem niesamowita, zlowieszcza sylwetke z doliny przed miastem.
+	AI_Output(hero, self, "Info_Mod_Mika_Hi_D_15_01"); //Ciemna figura? Gdzie poszla?
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_02"); //Kontynuujcie sciezke. Albo w kierunku Hof Akila, który znajduje sie po lewej stronie drogi, albo prosto w kierunku Taverne.
+	AI_Output(self, hero, "Info_Mod_Mika_Hi_D_13_03"); //Nie bylem bardzo szczesliwy, ten kolega.
 
 	Info_ClearChoices	(Info_Mod_Mika_Hi);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Der dunkle Pilger hat die Stadt offenbar umgangen und ist Richtung Akil’s Hof, oder Orlan’s Taverne weitergegangen.");
+	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Ciemni pielgrzymi najwyrazniej omineli miasto i skierowali sie w strone farmy Akila czy tawerny Orlanu.");
 };
 
 FUNC VOID Info_Mod_Mika_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Hi_C_15_00"); //Das hat doch alles gar nichts zu bedeuten.
+	AI_Output(hero, self, "Info_Mod_Mika_Hi_C_15_00"); //Nie oznacza to niczego.
 
 	Info_Mod_Mika_Hi_E();
 };
@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Mika_Yasin (C_INFO)
 	information	= Info_Mod_Mika_Yasin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, Mika.";
+	description	= "Hej, Mika.";
 };
 
 FUNC INT Info_Mod_Mika_Yasin_Condition()
@@ -96,28 +96,28 @@ FUNC INT Info_Mod_Mika_Yasin_Condition()
 
 FUNC VOID Info_Mod_Mika_Yasin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_00"); //Hey, Mika.
+	AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_00"); //Hej, Mika.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Urnol_WerBistDu))
 	{
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_01"); //Ich hab den Pilger noch nicht gefunden, von dem du mir erzählt hast.
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_02"); //Dafür aber eine Gruppe Banditen oder Diebe, was weiß ich.
-		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_03"); //Wollen die in die Stadt? Sag schon.
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_04"); //Ich denke ja. Sie lungern da vorn in der Höhle rum, links vom Weg.
-		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_05"); //Du musst wahnsinnig sein, aber gut, viel Glück!
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_01"); //Nie znalazlem pielgrzyma, o którym mówiles.
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_02"); //Ale nie wiem, grupa bandytów czy zlodziei.
+		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_03"); //Czy chodzi do miasta? Powiedz mi.
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_04"); //Mysle, ze tak, tak. Czaja sie w tej jaskini przed soba, po lewej stronie drogi.
+		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_05"); //Musisz byc szalony, ale dobry, szczescie!
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_06"); //Ich hab den Pilger erwischt, von dem du mir erzählt hast. Und sogar noch mehr.
-		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_07"); //Erzähl.
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_08"); //Den Weg hier ein Stück hoch, da ist doch links diese Höhle.
-		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_09"); //Da hab ich paar üble Gestalten gesehen. Banditen oder Diebespack würde ich sagen.
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_06"); //Zlapalem pielgrzyma, o którym mówiles. I jeszcze wiecej.
+		AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_07"); //Powiedz mi o tym.
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_08"); //Jest tu ta jaskinia troche w góre, po lewej stronie jest ta jaskinia.
+		AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_09"); //Widzialem tam kilku zlych ludzi. Mówie, ze bandyci lub zlodzieje.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_10"); //Da will ich doch gleich mal nachsehen, zu was bin ich schließlich hier? Gibst du mir Rückendeckung?
-	AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_11"); //Gewiss.
+	AI_Output(self, hero, "Info_Mod_Mika_Yasin_13_10"); //Chce to sprawdzic, po co tu jestem? Miales mój powrót?
+	AI_Output(hero, self, "Info_Mod_Mika_Yasin_15_11"); //Oczywiscie.
 
-	B_LogEntry	(TOPIC_MOD_ASS_YASIN_MIKA, "Mika ist in meine Falle getappt.");
+	B_LogEntry	(TOPIC_MOD_ASS_YASIN_MIKA, "Mika wpadl w moja pulapke.");
 
 	AI_StopProcessInfos	(self);
 
@@ -145,10 +145,10 @@ FUNC INT Info_Mod_Mika_Yasin2_Condition()
 
 FUNC VOID Info_Mod_Mika_Yasin2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Yasin2_13_00"); //Hier ist niemand. Die Vögel sind wohl ausgeflogen.
-	AI_Output(hero, self, "Info_Mod_Mika_Yasin2_15_01"); //Nicht ganz. Einer ist noch hier.
-	AI_Output(self, hero, "Info_Mod_Mika_Yasin2_13_02"); //Wo denn?
-	AI_Output(hero, self, "Info_Mod_Mika_Yasin2_15_03"); //Da wo du stehst.
+	AI_Output(self, hero, "Info_Mod_Mika_Yasin2_13_00"); //Nie ma tu nikogo. Ptaki musza wyplynac.
+	AI_Output(hero, self, "Info_Mod_Mika_Yasin2_15_01"); //Nie do konca. Zostala jedna.
+	AI_Output(self, hero, "Info_Mod_Mika_Yasin2_13_02"); //Gdzie?
+	AI_Output(hero, self, "Info_Mod_Mika_Yasin2_15_03"); //Gdzie stoisz.
 
 	AI_StopProcessInfos	(self);
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Mika_Banditen (C_INFO)
 	information	= Info_Mod_Mika_Banditen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibts hier was Neues?";
+	description	= "Wszystko nowe tutaj?";
 };
 
 FUNC INT Info_Mod_Mika_Banditen_Condition()
@@ -180,18 +180,18 @@ FUNC INT Info_Mod_Mika_Banditen_Condition()
 
 FUNC VOID Info_Mod_Mika_Banditen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_00"); //Gibts hier was Neues?
-	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_01"); //Seit Tagen schon jagt die Miliz einer kleinen Gruppe Banditen hinterher, die ständig die Händler überfallen.
-	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_02"); //Bevor wir sie zu fassen bekommen verschwinden sie immer in den Wäldern bei Akil Hof.
-	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_03"); //Wir gehen da auf keinen Fall rein. Da wimmelts nur so von Viechern.
-	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_04"); //Was würdest du mir geben, wenn ich diese Banditen töten würde!
-	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_05"); //Nun, 100 Goldstücke wären für dich drin. Heißt das, du tötest die Kerle?
-	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_06"); //Ja, das heißt es!
-	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_07"); //Du musst wahnsinnig sein, aber gut, viel Glück!
+	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_00"); //Wszystko nowe tutaj?
+	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_01"); //Od wielu dni milicja goni za mala grupa bandytów, którzy nieustannie atakuja handlarzy.
+	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_02"); //Zanim je zdobedziemy, zawsze znikaja w lasach kolo Akila Hofa.
+	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_03"); //Nie ma mowy o tym, ze idziemy tam. Jest pelen zwierzat.
+	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_04"); //Co dalbys mi, gdybym zabil tych bandytów!
+	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_05"); //Cóz, 100 sztuk zlota bedzie w nim dla Ciebie. Czy to oznacza, ze zabijasz tych facetów?
+	AI_Output(hero, self, "Info_Mod_Mika_Banditen_15_06"); //Tak, to wlasnie to oznacza!
+	AI_Output(self, hero, "Info_Mod_Mika_Banditen_13_07"); //Musisz byc szalony, ale dobry, szczescie!
 
 	Log_CreateTopic	(TOPIC_MOD_MIKA_BANDITEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MIKA_BANDITEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MIKA_BANDITEN, "Die Miliz hat Probleme mit einer kleinen Gruppe Banditen. Sie verstecken sich angeblich im Wald bei Akils Hof. Ich werde mich darum kümmern müssen.");
+	B_LogEntry	(TOPIC_MOD_MIKA_BANDITEN, "Milicja ma klopoty z mala grupa bandytów. Chowaja sie w lesie niedaleko farmy Akila. Bede musial sie tym zajac.");
 };
 
 INSTANCE Info_Mod_Mika_BanditenTot (C_INFO)
@@ -202,7 +202,7 @@ INSTANCE Info_Mod_Mika_BanditenTot (C_INFO)
 	information	= Info_Mod_Mika_BanditenTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Banditen sind Geschichte!";
+	description	= "Bandyci sa historia!";
 };
 
 FUNC INT Info_Mod_Mika_BanditenTot_Condition()
@@ -218,8 +218,8 @@ FUNC INT Info_Mod_Mika_BanditenTot_Condition()
 
 FUNC VOID Info_Mod_Mika_BanditenTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_BanditenTot_15_00"); //Die Banditen sind Geschichte!
-	AI_Output(self, hero, "Info_Mod_Mika_BanditenTot_13_01"); //Ich hätte nicht gedacht, dass du das alleine schaffst, Kleiner. Hier hast du das versprochene Gold!
+	AI_Output(hero, self, "Info_Mod_Mika_BanditenTot_15_00"); //Bandyci sa historia!
+	AI_Output(self, hero, "Info_Mod_Mika_BanditenTot_13_01"); //Nie sadzilem, zebys mógl to zrobic na wlasna reke, kiddo. Oto zloto, które mi obiecales!
 
 	CreateInvItems	(self, ItMi_Gold, 100);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
@@ -228,7 +228,7 @@ FUNC VOID Info_Mod_Mika_BanditenTot_Info()
 
 	B_Göttergefallen(1, 1);
 
-	B_LogEntry	(TOPIC_MOD_MIKA_BANDITEN, "Die Banditen sind erledigt und Mika zufrieden.");
+	B_LogEntry	(TOPIC_MOD_MIKA_BANDITEN, "Bandyci sa skonczeni, a Mika jest zadowolony.");
 	B_SetTopicStatus	(TOPIC_MOD_MIKA_BANDITEN, LOG_SUCCESS);
 };
 
@@ -253,11 +253,11 @@ FUNC INT Info_Mod_Mika_Randolph_Condition()
 
 FUNC VOID Info_Mod_Mika_Randolph_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_00"); //Du machst besser, dass du schnell in die Stadt kommst.
-	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_01"); //Hier draußen treiben sich zurzeit Dämonen umher, die keinen am Leben lassen, der ihren Weg kreuzt.
-	AI_Output(hero, self, "Info_Mod_Mika_Randolph_15_02"); //Dämonen? Woher stammen diese?
-	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_03"); //Keine Ahnung, sie sind hier überall in den Wäldern nahe der Stadt. Und in der Nähe von Lobart’s Hof treibt sich zudem eine obskure Gestalt umher.
-	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_04"); //Egal, ich muss jetzt aufpassen und habe keine Zeit mich weiter zu unterhalten.
+	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_00"); //Lepiej szybko dotrzec do miasta.
+	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_01"); //W chwili obecnej wokól nich plywaja demony, nie pozostawiajac nikogo zywego, kto móglby ich przekroczyc.
+	AI_Output(hero, self, "Info_Mod_Mika_Randolph_15_02"); //Demony? Skad one pochodza?
+	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_03"); //Nie wiem, oni sa po lasach w poblizu miasta. A w sasiedztwie podwórza Lobarta kryje sie nieznana postac.
+	AI_Output(self, hero, "Info_Mod_Mika_Randolph_13_04"); //Tak czy inaczej, musze byc teraz ostrozny i nie mam juz czasu na rozmowe.
 };
 
 INSTANCE Info_Mod_Mika_RandolphWeg (C_INFO)
@@ -282,9 +282,9 @@ FUNC INT Info_Mod_Mika_RandolphWeg_Condition()
 
 FUNC VOID Info_Mod_Mika_RandolphWeg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_00"); //Gute Nachrichten. Die Dämonen scheinen sich wieder verzogen zu haben.
-	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_01"); //(hochmütig) Dürften wohl erkannt haben, dass sie es mit uns nicht aufnehmen können.
-	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_02"); //Du kannst also wieder unbesorgt vor die Stadt gehen.
+	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_00"); //To dobra wiadomosc. Wydaje sie, ze demony znów zniknely.
+	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_01"); //Przypuszczam, ze musieli zdac sobie sprawe, ze nie pasuja do nas.
+	AI_Output(self, hero, "Info_Mod_Mika_RandolphWeg_13_02"); //Mozesz wiec spokojnie wrócic do miasta.
 
 	B_GivePlayerXP	(100);
 };
@@ -297,7 +297,7 @@ INSTANCE Info_Mod_Mika_Dokumente (C_INFO)
 	information	= Info_Mod_Mika_Dokumente_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du hast die Zettel von Baltram konfisziert?";
+	description	= "Konfiskujesz notatki Baltrama?";
 };
 
 FUNC INT Info_Mod_Mika_Dokumente_Condition()
@@ -311,40 +311,40 @@ FUNC INT Info_Mod_Mika_Dokumente_Condition()
 
 FUNC VOID Info_Mod_Mika_Dokumente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_00"); //Du hast die Zettel von Baltram konfisziert?
-	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_01"); //Korrekt.
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_02"); //Und sie befinden sich noch in deinem Besitz?
-	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_03"); //Richtig.
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_04"); //Würdest du sie verkau ...?
-	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_05"); //200 Gold.
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_00"); //Konfiskujesz notatki Baltrama?
+	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_01"); //Poprawne.
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_02"); //I sa jeszcze w twoim posiadaniu?
+	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_03"); //Prawo.
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_15_04"); //Czy móglbys to ugotowac....?
+	AI_Output(self, hero, "Info_Mod_Mika_Dokumente_13_05"); //200 zlota.
 
 	Info_ClearChoices	(Info_Mod_Mika_Dokumente);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	&& (Mod_REL_Dokumente == 3)
 	{
-		Info_AddChoice	(Info_Mod_Mika_Dokumente, "(Feilschen) Was würde Lord Hagen dazu sagen ...", Info_Mod_Mika_Dokumente_C);
+		Info_AddChoice	(Info_Mod_Mika_Dokumente, "Co powiedzialby Pan Hagen, mówiac:....", Info_Mod_Mika_Dokumente_C);
 	};
 
-	Info_AddChoice	(Info_Mod_Mika_Dokumente, "Ich komme später wieder.", Info_Mod_Mika_Dokumente_B);
+	Info_AddChoice	(Info_Mod_Mika_Dokumente, "Wróce pózniej.", Info_Mod_Mika_Dokumente_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Mika_Dokumente, "Abgemacht.", Info_Mod_Mika_Dokumente_A);
+		Info_AddChoice	(Info_Mod_Mika_Dokumente, "Ladunek.", Info_Mod_Mika_Dokumente_A);
 	};
 };
 
 FUNC VOID Info_Mod_Mika_Dokumente_C()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_C_15_00"); //Was würde Lord Hagen dazu sagen, dass du beschlagnahmte Güter behältst?
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_C_15_00"); //Co powiedzialby Lord Hagen o zatrzymywaniu skonfiskowanych towarów?
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Mika_Dokumente_C_13_01"); //Ach, nimm sie schon, ich kann damit nichts anfangen.
+		AI_Output(self, hero, "Info_Mod_Mika_Dokumente_C_13_01"); //Och, wezcie to juz teraz, nie moge nic z tym zrobic.
 
 		CreateInvItems	(hero, ItWr_Lehrling01, 1);
 		CreateInvItems	(hero, ItWr_Lehrling02, 1);
-		B_ShowGivenThings	("Blätter des Lehrlings erhalten");
+		B_ShowGivenThings	("Pozyskiwanie arkuszy praktykanta");
 
 		Npc_RemoveInvItems	(self, ItWr_Lehrling01, 1);
 		Npc_RemoveInvItems	(self, ItWr_Lehrling02, 1);
@@ -353,13 +353,13 @@ FUNC VOID Info_Mod_Mika_Dokumente_C()
 
 		Mod_REL_Dokumente = 5;
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Ich bin endlich in den Besitz der Blätter gelangt und muss sie nur noch dem Lehrling zurückbringen. Scheint ja wirklich was Heißes zu sein ...");
+		B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "W koncu weszlam w posiadanie lisci i musze tylko zwrócic je praktykantowi. Wyglada jak cos naprawde goracego....");
 
 		Info_ClearChoices	(Info_Mod_Mika_Dokumente);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Mika_Dokumente_C_13_02"); //200 Gold oder keine Zettel.
+		AI_Output(self, hero, "Info_Mod_Mika_Dokumente_C_13_02"); //200 zlota lub brak banknotów.
 
 		Mod_REL_Dokumente = 4;
 	};
@@ -367,14 +367,14 @@ FUNC VOID Info_Mod_Mika_Dokumente_C()
 
 FUNC VOID Info_Mod_Mika_Dokumente_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_B_15_00"); //Ich komme später wieder.
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_B_15_00"); //Wróce pózniej.
 
 	Info_ClearChoices	(Info_Mod_Mika_Dokumente);
 };
 
 FUNC VOID Info_Mod_Mika_Dokumente_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_A_15_00"); //Abgemacht.
+	AI_Output(hero, self, "Info_Mod_Mika_Dokumente_A_15_00"); //Ladunek.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItWr_Lehrling01, 1);
@@ -383,11 +383,11 @@ FUNC VOID Info_Mod_Mika_Dokumente_A()
 	Npc_RemoveInvItems	(self, ItWr_Lehrling01, 1);
 	Npc_RemoveInvItems	(self, ItWr_Lehrling02, 1);
 
-	B_ShowGivenThings	("200 Gold gegeben und Blätter des Lehrlings erhalten");
+	B_ShowGivenThings	("200 zlota i lisci uzyskanego ucznia");
 
 	Mod_REL_Dokumente = 5;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "Ich bin endlich in den Besitz der Blätter gelangt und muss sie nur noch dem Lehrling zurückbringen. Scheint ja wirklich was Heißes zu sein ...");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DOKUMENTE, "W koncu weszlam w posiadanie lisci i musze tylko zwrócic je praktykantowi. Wyglada jak cos naprawde goracego....");
 
 	Info_ClearChoices	(Info_Mod_Mika_Dokumente);
 };
@@ -414,23 +414,23 @@ FUNC INT Info_Mod_Mika_VinoBrennerei_Condition()
 
 FUNC VOID Info_Mod_Mika_VinoBrennerei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_00"); //Warte mal einen Augenblick.
-	AI_Output(hero, self, "Info_Mod_Mika_VinoBrennerei_15_01"); //Was ist?
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_02"); //Du bist doch viel da draußen unterwegs. Hast du zufällig Vino irgendwo gesehen?
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_03"); //Lobart macht sich große Sorgen, weil er vor zwei Tagen den Hof verlassen hat und noch nicht zurückgekommen ist.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_04"); //Und ich kann mich dunkel erinnern, dass er hier das Stadttor passiert hat.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_05"); //Wohin er danach gegangen ist, weiß ich allerdings nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Mika_VinoBrennerei_15_06"); //Nein, zuletzt habe ich ihn auch nicht gesehen.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_07"); //Ach, dass auf Lobart’s Hof auch keiner wissen will, wohin er gegangen ist.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_08"); //Er steht doch mit den anderen Landarbeitern den ganzen Tag auf dem Feld.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_09"); //Da müsste doch eigentlich einer was mitbekommen haben.
-	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_10"); //Und ich darf mir dann hier die Beine ich den Bauch stehen und jeden Fragen, der vorbeikommt.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_00"); //Trzymac przez sekunde.
+	AI_Output(hero, self, "Info_Mod_Mika_VinoBrennerei_15_01"); //Co to jest?
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_02"); //Duzo podrózujesz tam. Widziales Vino wszedzie?
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_03"); //Lobart jest bardzo zaniepokojony, poniewaz opuscil gospodarstwo dwa dni temu i jeszcze nie wrócil.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_04"); //I pamietam tylko, ze tu przejezdzal przez brame miasta.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_05"); //Nie wiem jednak, dokad poszedl pózniej.
+	AI_Output(hero, self, "Info_Mod_Mika_VinoBrennerei_15_06"); //Nie, jeszcze go nie widzialem.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_07"); //Nikt w gospodarstwie Lobarta nie chce wiedziec, dokad sie udal.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_08"); //Jest na polu przez caly dzien z innymi rolnikami.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_09"); //Ktos musial cos uslyszec.
+	AI_Output(self, hero, "Info_Mod_Mika_VinoBrennerei_13_10"); //I wolno mi tu wstac i zadawac pytania.
 
 	Log_CreateTopic	(TOPIC_MOD_VINO_WO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VINO_WO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_VINO_WO, "Vino wird auf Lobarts Hof vermisst.");
-	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Mika hatte Vino zwar das Osttor passieren sehen, konnte sich jedoch nicht daran erinnern, wo er anschließend hinging.");
-	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Vielleicht sollte ich mal mit seinen Landarbeiterkollegen auf dem Feld sprechen.");
+	B_LogEntry	(TOPIC_MOD_VINO_WO, "W gospodarstwie Lobarta brakuje Vino.");
+	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Mika widzial Vino mijalo wschodnia brame, ale nie pamietal, dokad poszedl.");
+	B_LogEntry_NS	(TOPIC_MOD_VINO_WO, "Moze powinienem porozmawiac z jego chlopami na polu.");
 };
 
 INSTANCE Info_Mod_Mika_AndreVermaechtnis (C_INFO)
@@ -453,9 +453,9 @@ FUNC INT Info_Mod_Mika_AndreVermaechtnis_Condition()
 
 FUNC VOID Info_Mod_Mika_AndreVermaechtnis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis_13_00"); //Verdammt ...
-	AI_Output(hero, self, "Info_Mod_Mika_AndreVermaechtnis_15_01"); //Was haben wir den hier? Heiße Ware?
-	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis_13_02"); //(stammelt) Ich ... ähhh ... scheiße, nichts wie weg.
+	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis_13_00"); //Damn.....
+	AI_Output(hero, self, "Info_Mod_Mika_AndreVermaechtnis_15_01"); //Co tu mamy? Gorace rzeczy?
+	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis_13_02"); //I.... ..... Szal, wyjdzmy tutaj.
 
 	AI_StopProcessInfos	(self);
 };
@@ -481,7 +481,7 @@ FUNC INT Info_Mod_Mika_AndreVermaechtnis2_Condition()
 
 FUNC VOID Info_Mod_Mika_AndreVermaechtnis2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis2_13_00"); //Scheiße, wir sitzen in der Falle. Kämpf um dein Leben, sonst ergeht es uns wie Yasin.
+	AI_Output(self, hero, "Info_Mod_Mika_AndreVermaechtnis2_13_00"); //Poszlismy, jestesmy uwiezieni. Walcz o swoje zycie, bo w koncu jak Yasin.
 
 	AI_StopProcessInfos	(self);
 
@@ -512,26 +512,26 @@ FUNC INT Info_Mod_Mika_Pflanzensammler_Condition()
 
 FUNC VOID Info_Mod_Mika_Pflanzensammler_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_00"); //He, bleib mal stehen!
-	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_15_01"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_02"); //Die Kräutersammler haben sich darüber beschwert, du würdest dauernd alle Heilpflanzen in der Gegend aufsammeln und für dich behalten.
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_03"); //Die vorhandenen würden kaum ausreichen, den Bedarf zu decken.
-	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_15_04"); //Wusste nicht, dass es verboten ist, selbst Pflanzen aufzulesen. Was wollt ihr von mir?
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_05"); //Du gibst mir 50 Heilpflanzen und ich bezahle dich fast so gut wie einer der Händler.
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_06"); //Dafür kriegst du keinen Ärger mehr.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_00"); //Hej, trzymaj go tam!
+	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_02"); //Ziolowcy skarzyli sie, ze caly czas zbieracie wszystkie rosliny lecznicze w okolicy i trzymacie je dla siebie.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_03"); //Istniejace juz istniejace nie wystarcza na pokrycie zapotrzebowania.
+	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_15_04"); //Nie wiedzialem, ze zabrania sie samodzielnego zbierania roslin. Czego od mnie oczekujesz?
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_05"); //Dajesz mi 50 roslin leczniczych, a ja zaplace ci prawie tak dobrze jak jeden z kupców.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_13_06"); //Nie dostajesz za to zadnych klopotów.
 
 	Info_ClearChoices	(Info_Mod_Mika_Pflanzensammler);
 
-	Info_AddChoice	(Info_Mod_Mika_Pflanzensammler, "Das ist Erpressung. (...)", Info_Mod_Mika_Pflanzensammler_B);
-	Info_AddChoice	(Info_Mod_Mika_Pflanzensammler, "Also schön. Ich hoffe, es hilft.", Info_Mod_Mika_Pflanzensammler_A);
+	Info_AddChoice	(Info_Mod_Mika_Pflanzensammler, "To jest wymuszenie. (... )", Info_Mod_Mika_Pflanzensammler_B);
+	Info_AddChoice	(Info_Mod_Mika_Pflanzensammler, "A zatem wszystko w porzadku. Mam nadzieje, ze to pomaga.", Info_Mod_Mika_Pflanzensammler_A);
 };
 
 FUNC VOID Info_Mod_Mika_Pflanzensammler_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_B_15_00"); //Das ist Erpressung. Niemand kann mir das Kräutersammeln verbieten!
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_01"); //Ich bedaure deine Entscheidung.
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_02"); //Sie zwingt mich, dir meine Hilfe aufzukündigen für den Fall, dass du vor den Stadttoren angegriffen wirst.
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_03"); //Und nun: geh.
+	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_B_15_00"); //To jest wymuszenie. Nikt nie moze mi zabronic zbierania ziól!
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_01"); //Zaluje panskiej decyzji.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_02"); //Zmusza mnie do potepienia mojej pomocy w przypadku, gdy zostaniesz zaatakowany poza brama miasta.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_B_13_03"); //I teraz: idzcie.
 
 	Info_ClearChoices	(Info_Mod_Mika_Pflanzensammler);
 
@@ -540,13 +540,13 @@ FUNC VOID Info_Mod_Mika_Pflanzensammler_B()
 
 FUNC VOID Info_Mod_Mika_Pflanzensammler_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_A_15_00"); //Also schön. Ich hoffe, es hilft.
+	AI_Output(hero, self, "Info_Mod_Mika_Pflanzensammler_A_15_00"); //A zatem wszystko w porzadku. Mam nadzieje, ze to pomaga.
 
 	B_GiveInvItems	(hero, self, ItPl_Health_Herb_01, 50);
 
 	Npc_RemoveInvItems	(self, ItPl_Health_Herb_01, 50);
 
-	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_A_13_01"); //Eine kluge Entscheidung. Ich wünsche einen angenehmen Tag.
+	AI_Output(self, hero, "Info_Mod_Mika_Pflanzensammler_A_13_01"); //Madra decyzja. Milego dnia.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 60);
 

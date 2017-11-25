@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Henrik_Hi (C_INFO)
 	information	= Info_Mod_Henrik_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft die Arbeit?";
+	description	= "Jak wyglada praca?";
 };
 
 FUNC INT Info_Mod_Henrik_Hi_Condition()
@@ -16,42 +16,42 @@ FUNC INT Info_Mod_Henrik_Hi_Condition()
 
 FUNC VOID Info_Mod_Henrik_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_00"); //Wie läuft die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_01"); //Nicht gut. Wir haben schon so wenige Fischchen in unserem See ... und es werden immer weniger!
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_02"); //Warum das?
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_03"); //In dem Wald gegenüber gibt es wahre Horden von Molerats.
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_04"); //Vincent, unser Jäger, scheint nicht allzu erfolgreich in letzter Zeit zu sein, und so werden es immer mehr.
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_05"); //Die Molerats gehen gern zur Abkühlung schwimmen und schleppen dabei Unmengen an Dreck mit ins Wasser.
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_06"); //Kein Wunder, dass die Fischchen alle verrecken. Würde ich an deren Stelle auch tun. Muss an dem Freudenspender liegen ...
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_07"); //Wie meinen?
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_08"); //Dass Vincent nicht mehr erfolgreich jagt. Der ist doch immer zugedröhnt. Also - übernimmst du die Sache mit den Molerats?
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_00"); //Jak wyglada praca?
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_01"); //Zly. W naszym jeziorze jest juz tak malo rybek.... i coraz mniej!
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_02"); //Dlaczego tak jest?
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_03"); //W lesie naprzeciwko znajduja sie hordy Moleratów.
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_04"); //Vincent, nasz mysliwy, ostatnio nie wydaje sie byc zbyt udany, a wiec coraz wiecej.
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_05"); //Moleraty lubia plywac do chlodzenia i wciagac do wody duzo brudu.
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_06"); //Nic dziwnego, ze male ryby umieraja. Ja bym zrobil to samo dla nich. Musi byc dawca radosci.....
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_15_07"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_07_08"); //Vincent ten nie poluje juz z powodzeniem. Zawsze jest wysoki. Wiec.... czy przejmiesz Molerats?
 
 	Info_ClearChoices	(Info_Mod_Henrik_Hi);
 
-	Info_AddChoice	(Info_Mod_Henrik_Hi, "Man muss der Natur manchmal ihren Lauf lassen.", Info_Mod_Henrik_Hi_B);
-	Info_AddChoice	(Info_Mod_Henrik_Hi, "Kein Problem.", Info_Mod_Henrik_Hi_A);
+	Info_AddChoice	(Info_Mod_Henrik_Hi, "Czasami trzeba pozwolic naturze panowac nad nia.", Info_Mod_Henrik_Hi_B);
+	Info_AddChoice	(Info_Mod_Henrik_Hi, "Bez problemu.", Info_Mod_Henrik_Hi_A);
 };
 
 
 FUNC VOID Info_Mod_Henrik_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_B_15_00"); //Man muss der Natur manchmal ihren Lauf lassen.
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_B_15_00"); //Czasami trzeba pozwolic naturze panowac nad nia.
 
 	Info_ClearChoices	(Info_Mod_Henrik_Hi);
 };
 
 FUNC VOID Info_Mod_Henrik_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_00"); //Kein Problem.
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_01"); //Schön!
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_02"); //Bei mir wirkt das Zeug übrigens nicht ...
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_03"); //Was?
-	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_04"); //Freudenspender! Okay?
-	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_05"); //Alles klar!
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_00"); //Bez problemu.
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_01"); //Nicei!
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_02"); //Nawiasem mówiac, to nie dziala na mnie....
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_03"); //Co?
+	AI_Output(self, hero, "Info_Mod_Henrik_Hi_A_07_04"); //Przyjemny dawca! Dobrze?
+	AI_Output(hero, self, "Info_Mod_Henrik_Hi_A_15_05"); //Wszystko jasne!
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_SCHWEINE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_SCHWEINE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Der Fischer Henrik beschwert sich darüber, dass die Molerats auf der Waldseite des großen Sees diesen beim Baden verdrecken und dadurch die Fische sterben. Ich soll die Molerats also gehörig dezimieren.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Rybak Henrik skarzy sie na to, ze meleraty po lesnej stronie duzego jeziora zanieczyszczaja je podczas kapieli i w ten sposób ryby gina. Wiec powinienem zdziesiatkowac meleraty.");
 
 	Mod_Henrik_Schweine = 1;
 
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Henrik_MoleratsTot (C_INFO)
 	information	= Info_Mod_Henrik_MoleratsTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Molerats erlegt.";
+	description	= "Strzelilem do Moleratów.";
 };
 
 FUNC INT Info_Mod_Henrik_MoleratsTot_Condition()
@@ -79,12 +79,12 @@ FUNC INT Info_Mod_Henrik_MoleratsTot_Condition()
 
 FUNC VOID Info_Mod_Henrik_MoleratsTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henrik_MoleratsTot_15_00"); //Ich habe die Molerats erlegt.
-	AI_Output(self, hero, "Info_Mod_Henrik_MoleratsTot_07_01"); //Dankesehr! Hier hast du eine Flasche Grog als Belohnung, die brauche ich nicht mehr.
+	AI_Output(hero, self, "Info_Mod_Henrik_MoleratsTot_15_00"); //Strzelilem do Moleratów.
+	AI_Output(self, hero, "Info_Mod_Henrik_MoleratsTot_07_01"); //Bardzo dziekuje! Oto butelka grog jako nagroda, której juz nie potrzebuje.
 
 	B_GiveInvItems	(self, hero, ItFo_Addon_Grog, 1);
 
-	AI_Output(self, hero, "Info_Mod_Henrik_MoleratsTot_07_02"); //Mach's gut!
+	AI_Output(self, hero, "Info_Mod_Henrik_MoleratsTot_07_02"); //Oto teraz!
 
 	AI_StopProcessInfos	(self);
 
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Henrik_Freudenspender (C_INFO)
 	information	= Info_Mod_Henrik_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Freudenspender gegen die Einsamkeit?";
+	description 	= "Przyjemnosc-darczynca przeciw samotnosci?";
 };                       
 
 FUNC INT Info_Mod_Henrik_Freudenspender_Condition()
@@ -120,17 +120,17 @@ FUNC INT Info_Mod_Henrik_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Henrik_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_00"); //Freudenspender gegen die Einsamkeit?
-	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_01"); //Ja, ja, sehr gut.
+	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_00"); //Przyjemnosc-darczynca przeciw samotnosci?
+	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_01"); //Tak, tak, tak, bardzo dobrze.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 10);
 
-	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_02"); //Sie beißen gut an, was?
-	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_03"); //Wer?
-	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_04"); //Die dummen Fischchen. Okay?
-	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_05"); //Klar.
+	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_02"); //Jestes dobrym bitrem, huh?
+	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_03"); //Kto?
+	AI_Output(self, hero, "Info_Mod_Henrik_Freudenspender_07_04"); //Glupich rybek. Dobrze?
+	AI_Output(hero, self, "Info_Mod_Henrik_Freudenspender_15_05"); //Pewne.
 
 	Mod_Freudenspender	+= 1;
 };

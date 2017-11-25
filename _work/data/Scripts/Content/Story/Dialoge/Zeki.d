@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Zeki_Hi (C_INFO)
 	information	= Info_Mod_Zeki_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Zeki_Hi_Condition()
@@ -18,12 +18,12 @@ FUNC VOID Info_Mod_Zeki_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_00"); //Mein Name ist Zeki. Ich gehöre zu diesem traurigen Verein von Gaunern.
-	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_01"); //Wieso trauriger Verein?
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_02"); //Sieh dich doch mal um. Würdest du dich wohl fühlen, wenn du nie die Chance bekommst, einen höheren Rang ergreifen?
-	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_03"); //Das wäre nicht toll. Heißt das, ihr könnt NICHT innerhalb der Gilde auftsiegen?
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_04"); //Nein, nicht alle. Manche, wie ich, werden dazu verdonnert als Gauner geringere Dienste, wie zum Beispiel das Jagen, auszuüben.
-	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_05"); //Was willst du eigentlich von mir?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_00"); //Nazywam sie Zeki. Jestem z tym smutnym klubem oszustów.
+	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_01"); //Dlaczego smutny klub?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_02"); //Rozejrzyj sie dookola. Czy czulbys sie komfortowo, gdybys nigdy nie mial szansy na zdobycie wyzszej rangi?
+	AI_Output(hero, self, "Info_Mod_Zeki_Hi_15_03"); //To nie byloby wielkie. Czy to oznacza, ze nie mozesz wygrac w gildii?
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_04"); //Nie, nie wszyscy. Niektórzy, podobnie jak ja, sa skazywani jako oszustowie na mniejsze uslugi, takie jak polowania.
+	AI_Output(self, hero, "Info_Mod_Zeki_Hi_05_05"); //Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Zeki_Aufgabe (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Zeki_Aufgabe (C_INFO)
 	information	= Info_Mod_Zeki_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte mich euch anschließen.";
+	description	= "Chcialbym dolaczyc do Ciebie.";
 };
 
 FUNC INT Info_Mod_Zeki_Aufgabe_Condition()
@@ -48,25 +48,25 @@ FUNC INT Info_Mod_Zeki_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Zeki_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_00"); //Ich möchte mich euch anschließen. Shakir sagte mir, dass ich euch Gauner dafür überzeugen muss.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_01"); //Und wieder einer, der sich in den Mist hier reiten will und ...
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_02"); //Hast du keine Aufgabe für mich?
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_03"); //Doch ich habe da etwas zu tun.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_04"); //Ich spiele leidenschaftlich gerne Laute, aber ich Trottel habe meine alte Laute versehentlich auf den Boden fallen lassen, so dass diese zerbrochen ist.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_05"); //Ich würde gerne eine neue haben, aber ich habe keine Zeit in die Stadt zu gehen und mir eine Anfertigen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_06"); //Bitte geh' für mich zu Thorben, einem der Handwerksmeister.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_07"); //Sage ihm, dass du eine neue Laute haben möchtest.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_08"); //Hier sind 250 Goldmünzen, damit du ihn bezahlen kannst.
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_00"); //Chcialbym dolaczyc do Ciebie. Shakir powiedzial mi, ze musze przekonac pana oszustów.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_01"); //I jeszcze jeden, który chce sie tu wjechac do chwytu i.....
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_02"); //Nie masz dla mnie pracy?
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_03"); //Ale mam jeszcze cos do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_04"); //Uwielbiam grac w lutnie, ale przypadkowo upuscilem moja stara lutnie na podloge tak, ze jest zlamana.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_05"); //Chce miec nowy, ale nie mam czasu, zeby pojechac do miasta i dostac go.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_06"); //Prosze udac sie do Thorben, jednego z rzemieslników.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_07"); //Powiedz mu, ze chcesz nowa lutnie.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_08"); //Jest tu 250 zlotych monet, wiec mozesz mu zaplacic.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_09"); //Wenn du die Laute hast werde ich dir meine Stimme geben.
-	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_10"); //Alles Klar, dann werde ich Thorben gleich aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_11"); //Vielen dank, ich werde hier auf dich warten.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_09"); //Kiedy beda panstwo mieli dzwieki, oddam panstwu swój glos.
+	AI_Output(hero, self, "Info_Mod_Zeki_Aufgabe_15_10"); //Tak wiec od razu zobacze Thorben.
+	AI_Output(self, hero, "Info_Mod_Zeki_Aufgabe_05_11"); //Dziekuje bardzo, czekam na Ciebie tutaj.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Der Gauner Zeki ist ein sehr pessimistischer Mensch. Er spielt sehr gerne Laute, um sich bei Laune zu halten, doch hat er sein altes Instrument versehentlich zerbrochen und bläst seit dem nur Trübsal. Da er keine Zeit hat beim Handwerksmeister Thorben eine neue Laute bauen zu lassen, soll ich zu ihm gehen und diesen Job übernehmen. Wenn ich das erledigt habe, winkt mir vielleicht eine Belohnung und eine Stimme für die Aufnahme bei den Gaunern.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "crook Zeki jest czlowiekiem bardzo pesymistycznym. Uwielbia grac w lutnie, aby utrzymac sie w dobrym nastroju, ale przypadkowo zlamal swój stary instrument i dopiero od tamtej pory moping. Poniewaz nie ma czasu, aby pozwolic mistrzowi rzemieslnikowi Thorbenowi zbudowac nowa lutnie, pójde do niego i przejme te prace. Kiedy to uczynilem, byc moze bedzie nagroda i glosowanie za to, ze lzy mnie podniosa.");
 };
 
 INSTANCE Info_Mod_Zeki_Laute (C_INFO)
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Zeki_Laute (C_INFO)
 	information	= Info_Mod_Zeki_Laute_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist deine neue Laute.";
+	description	= "Oto Twoja nowa lutnia.";
 };
 
 FUNC INT Info_Mod_Zeki_Laute_Condition()
@@ -91,20 +91,20 @@ FUNC INT Info_Mod_Zeki_Laute_Condition()
 
 FUNC VOID Info_Mod_Zeki_Laute_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_00"); //Hier ist deine neue Laute.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_00"); //Oto Twoja nowa lutnia.
 
 	B_GiveInvItems	(hero, self, ItMi_Lute_Zeki, 1);
 
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_01"); //(erfreut) Danke, ich bin dir nun etwas schuldig.
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_02"); //Wie wäre es mit deiner Stimme für die Aufnahme bei euch?
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_03"); //Ja, wie versprochen bekommst du sie.
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_04"); //Wenn Shakir nach dir fragt, werde ich ihm nur das Beste über dich berichten.
-	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_05"); //Danke, das wollte ich hören.
-	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_06"); //Nun werde ich mich wieder völlig dem Lautenspiel widmen können.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_01"); //Dziekuje, teraz cos wam zawdzieczam.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_02"); //A co z glosem na nagranie?
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_03"); //Tak, tak jak obiecalem, dostaniesz to.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_04"); //Jesli Shakir poprosi Cie o pomoc, powie mu tylko to, co najlepsze.
+	AI_Output(hero, self, "Info_Mod_Zeki_Laute_15_05"); //Dzieki temu wlasnie chcialem uslyszec.
+	AI_Output(self, hero, "Info_Mod_Zeki_Laute_05_06"); //Teraz bede mógl poswiecic sie calkowicie grze lutni.
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Ich habe Zeki seine neue Laute gebracht und er war sehr glücklich darüber. Nun ist mir eine Stimme für die Aufnahme sicher und ich kann mich nun weiteren Dingen widmen.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEKI_LAUTE, "Przynioslem Zeki swoja nowa lutnie i bardzo sie z tego cieszyl. Teraz mam glos na nagranie i teraz moge poswiecic sie wiekszej ilosci spraw.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_ZEKI_LAUTE, LOG_SUCCESS);
 };
 

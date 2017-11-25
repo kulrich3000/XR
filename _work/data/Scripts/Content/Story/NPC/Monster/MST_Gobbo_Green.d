@@ -5,7 +5,7 @@
 prototype Mst_Default_Gobbo_Green (C_NPC)			
 {
 	// ------ Monster -----
-	name							=	"Goblin";
+	name							=	"chochlik";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	4;
@@ -57,7 +57,7 @@ prototype Mst_Default_Gobbo_Green (C_NPC)
 
 prototype Mst_Default_YGobbo_Green (C_NPC)
 {
-	name	= "Junger Goblin";
+	name	= "Young Young Goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	2;
@@ -110,7 +110,7 @@ prototype Mst_Default_YGobbo_Green (C_NPC)
 
 prototype Mst_Default_Matrone (C_NPC)			
 {	
-	name							=	"Goblin-Matrone";
+	name							=	"Wklad Goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	8;
@@ -287,7 +287,7 @@ INSTANCE Gobbo_Matrone_04 (Mst_Default_Gobbo_Green)
 
 INSTANCE Gobbo_Matrone_Summoned (Mst_Default_Matrone)
 {
-	name		= "Beschworene Goblin-Matrone";
+	name		= "Wywolany kartridz Goblin";
 	level = 0;
 
 	B_SetVisuals_Gobbo_Matrone();
@@ -299,7 +299,7 @@ INSTANCE Gobbo_Matrone_Summoned (Mst_Default_Matrone)
 
 INSTANCE Menschenfresser (Mst_Default_Gobbo_Green)
 {
-	name							=	"Menschenfresser";
+	name							=	"ludzie";
 	level							=	16;
 	
 	// ------ Attribute ------
@@ -347,7 +347,7 @@ INSTANCE YGobbo_Green_Weg (Mst_Default_YGobbo_Green)
 
 INSTANCE Gobbo_Fester_01 (Mst_Default_Gobbo_Green)
 {
-	name	= "Junger Goblin";
+	name	= "Young Young Goblin";
 
 	level							=	2;
 	
@@ -380,7 +380,7 @@ INSTANCE Gobbo_Fester_01 (Mst_Default_Gobbo_Green)
 
 INSTANCE Gobbo_Fester_02 (Mst_Default_Gobbo_Green)
 {
-	name	= "Junger Goblin";
+	name	= "Young Young Goblin";
 
 	level							=	2;
 	
@@ -413,7 +413,7 @@ INSTANCE Gobbo_Fester_02 (Mst_Default_Gobbo_Green)
 
 INSTANCE Gobbo_Fester_03 (Mst_Default_Gobbo_Green)
 {
-	name	= "Junger Goblin";
+	name	= "Young Young Goblin";
 
 	level							=	2;
 	
@@ -446,7 +446,7 @@ INSTANCE Gobbo_Fester_03 (Mst_Default_Gobbo_Green)
 
 INSTANCE Gobbo_Fester_04 (Mst_Default_Gobbo_Green)
 {
-	name	= "Junger Goblin";
+	name	= "Young Young Goblin";
 
 	level							=	2;
 	

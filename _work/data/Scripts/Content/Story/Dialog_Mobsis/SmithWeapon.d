@@ -20,7 +20,7 @@ INSTANCE PC_ItMw_Prunkschwert (C_INFO)
 	condition		= PC_ItMw_Prunkschwert_Condition;
 	information		= PC_ItMw_Prunkschwert_Info;
 	permanent		= 0;
-	description	= "Prunkschwert schmieden";
+	description	= "miecze";
 };
 
 FUNC INT PC_ItMw_Prunkschwert_Condition()
@@ -55,7 +55,7 @@ INSTANCE PC_Common (C_INFO)
 	condition		= PC_Common_Condition;
 	information		= PC_Common_Info;
 	permanent		= TRUE;
-	description		= "Gewöhnliche Waffen schmieden";
+	description		= "Zwykla kuznia broni";
 };
 
 FUNC INT PC_Common_Condition()
@@ -85,7 +85,7 @@ INSTANCE PC_Stark (C_INFO)
 	condition		= PC_Stark_Condition;
 	information		= PC_Stark_Info;
 	permanent		= TRUE;
-	description		= "Gewöhnliche Waffen besser schmieden";
+	description		= "Lepsze tworzenie wspólnej broni";
 };
 
 FUNC INT PC_Stark_Condition()
@@ -699,7 +699,7 @@ INSTANCE PC_Ore (C_INFO)
 	condition		= PC_Ore_Condition;
 	information		= PC_Ore_Info;
 	permanent		= TRUE;
-	description		= "Erzwaffen schmieden";
+	description		= "bron ruda";
 };
 
 FUNC INT PC_Ore_Condition()
@@ -884,7 +884,7 @@ INSTANCE PC_ItMw_1H_Special_03 (C_INFO)
 	condition		= PC_ItMw_1H_Special_03_Condition;
 	information		= PC_ItMw_1H_Special_03_Info;
 	permanent		= TRUE;
-	description	= "Erz-Schlachtklinge schmieden (Einhand - Stärke)";
+	description	= "Kucie ostrza do walki rudy (jedna reka - sila)";
 };
 
 FUNC INT PC_ItMw_1H_Special_03_Condition()
@@ -927,7 +927,7 @@ INSTANCE PC_ItMw_1H_Special_03_Dex (C_INFO)
 	condition		= PC_ItMw_1H_Special_03_Dex_Condition;
 	information		= PC_ItMw_1H_Special_03_Dex_Info;
 	permanent		= TRUE;
-	description	= "Erz-Schlachtstecher schmieden (Einhand - Geschick)";
+	description	= "Kucie nozy rzezniczych do rudy (jedna reka - umiejetnosc)";
 };
 
 FUNC INT PC_ItMw_1H_Special_03_Dex_Condition()
@@ -971,7 +971,7 @@ INSTANCE PC_ItMw_2H_Special_03 (C_INFO)
 	condition		= PC_ItMw_2H_Special_03_Condition;
 	information		= PC_ItMw_2H_Special_03_Info;
 	permanent		= TRUE;
-	description	= "Schwere Erz-Schlachtklinge schmieden (Zweihand)";
+	description	= "Kute ostrze do walki ciezkiej rudy Kute (dwureczne)";
 };
 
 FUNC INT PC_ItMw_2H_Special_03_Condition()
@@ -1013,7 +1013,7 @@ INSTANCE PC_ItMw_1H_Special_04 (C_INFO)
 	condition		= PC_ItMw_1H_Special_04_Condition;
 	information		= PC_ItMw_1H_Special_04_Info;
 	permanent		= TRUE;
-	description	= "Erz-Drachentöter schmieden (Einhand - Stärke)";
+	description	= "Kucie rudy smoków (jedna reka - sila)";
 };
 
 FUNC INT PC_ItMw_1H_Special_04_Condition()
@@ -1059,7 +1059,7 @@ INSTANCE PC_ItMw_1H_Special_04_Dex (C_INFO)
 	condition		= PC_ItMw_1H_Special_04_Dex_Condition;
 	information		= PC_ItMw_1H_Special_04_Dex_Info;
 	permanent		= TRUE;
-	description	= "Erz-Drachenstecher schmieden (Einhand - Geschick)";
+	description	= "Kucie frezów do kucia rudo-kamienia (jedna reka - umiejetnosc)";
 };
 
 FUNC INT PC_ItMw_1H_Special_04_Dex_Condition()
@@ -1104,7 +1104,7 @@ INSTANCE PC_ItMw_2H_Special_04 (C_INFO)
 	condition		= PC_ItMw_2H_Special_04_Condition;
 	information		= PC_ItMw_2H_Special_04_Info;
 	permanent		= TRUE;
-	description	= "Schwere Erz-Schlachtklinge schmieden (Zweihand)";
+	description	= "Kute ostrze do walki ciezkiej rudy Kute (dwureczne)";
 };
 
 FUNC INT PC_ItMw_2H_Special_04_Condition()
@@ -1181,7 +1181,7 @@ INSTANCE PC_Erzwaffen_Verbessern (C_INFO)
 	condition		= PC_Erzwaffen_Verbessern_Condition;
 	information		= PC_Erzwaffen_Verbessern_Info;
 	permanent		= TRUE;
-	description	= "Verbesserte Waffe herstellen";
+	description	= "Tworzenie ulepszonej broni";
 };
 
 FUNC INT PC_Erzwaffen_Verbessern_Condition()
@@ -1273,11 +1273,11 @@ FUNC VOID PC_Erzwaffen_Verbessern_Info ()
 			};
 			if (Npc_HasItems(hero, ItMw_Orkpickser_Geschaerft) >= 1)
 			{
-				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Orkpickser des Wasserhiebes", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Wasser_G);
+				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Zaczep do lapania lapacza wody", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Wasser_G);
 			};
 			if (Npc_HasItems(hero, ItMw_Orkpickser) >= 1)
 			{
-				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Orkpickser des Wasserhiebes", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Wasser);
+				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Zaczep do lapania lapacza wody", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Wasser);
 			};
 		};
 	};
@@ -1347,11 +1347,11 @@ FUNC VOID PC_Erzwaffen_Verbessern_Info ()
 			};
 			if (Npc_HasItems(hero, ItMw_Orkpickser_Geschaerft) >= 1)
 			{
-				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Orkpickser des Versengens", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Feuer_G);
+				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Luk orkowy zbieracz opalu", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Feuer_G);
 			};
 			if (Npc_HasItems(hero, ItMw_Orkpickser) >= 1)
 			{
-				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Orkpickser des Versengens", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Feuer);
+				Info_AddChoice	(PC_Erzwaffen_Verbessern, "Luk orkowy zbieracz opalu", PC_Erzwaffen_Verbessern_ItMw_Orkpickser_Feuer);
 			};
 		};
 	};
@@ -1658,7 +1658,7 @@ INSTANCE PC_BolzenMachen (C_INFO)
 	condition	= PC_BolzenMachen_Condition;
 	information	= PC_BolzenMachen_Info;
 	permanent	= 1;
-	description	= "Bolzen herstellen";
+	description	= "Produkcja srub";
 };
 
 FUNC INT PC_BolzenMachen_Condition()
@@ -1688,7 +1688,7 @@ INSTANCE PC_BolzenMachen_Spitze (C_INFO)
 	condition		= PC_BolzenMachen_Spitze_Condition;
 	information		= PC_BolzenMachen_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Bolzenspitze schmieden (1 Rohstahl)";
+	description		= "Odkuwanie koncówki sruby (1 stali surowej)";
 };
 FUNC INT PC_BolzenMachen_Spitze_Condition()
 {	
@@ -1709,7 +1709,7 @@ FUNC VOID PC_BolzenMachen_Spitze_Info ()
 		Npc_RemoveInvItems	(hero, ItMiSwordRawHot, 1);
 		CreateInvItems	(hero, BolzenSpitze, 10);
 
-		Print	("Bolzenspitze hergestellt!");
+		Print	("Koncówka sruby produkowane!");
 	}
 	else
 	{
@@ -1724,7 +1724,7 @@ INSTANCE PC_BolzenMachen_SchmetterSpitze (C_INFO)
 	condition		= PC_BolzenMachen_SchmetterSpitze_Condition;
 	information		= PC_BolzenMachen_SchmetterSpitze_Info;
 	permanent		= TRUE;
-	description		= "Schmetterbolzenspitze schmieden (1 Rohstahl)";
+	description		= "Kucie koncówki sruby motylkowej (1 surowej stali)";
 };
 FUNC INT PC_BolzenMachen_SchmetterSpitze_Condition()
 {	
@@ -1745,7 +1745,7 @@ FUNC VOID PC_BolzenMachen_SchmetterSpitze_Info ()
 		Npc_RemoveInvItems	(hero, ItMiSwordRawHot, 1);
 		CreateInvItems	(hero, SchmetterBolzenSpitze, 10);
 
-		Print	("Schmetterbolzenspitze hergestellt!");
+		Print	("Koncówka sworznia klucza wykonana!");
 	}
 	else
 	{
@@ -1760,7 +1760,7 @@ INSTANCE PC_BolzenMachen_GoldErz_Spitze (C_INFO)
 	condition		= PC_BolzenMachen_GoldErz_Spitze_Condition;
 	information		= PC_BolzenMachen_GoldErz_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Bolzenspitzen mit Gold-Erz-Legierung schmieden (1 Goldbrocken und 3 Erzbrocken)";
+	description		= "Kucie slupów z rudy zlota (1 kawalek zlota i 3 kawalki rudy)";
 };
 FUNC INT PC_BolzenMachen_GoldErz_Spitze_Condition()
 {	
@@ -1782,7 +1782,7 @@ FUNC VOID PC_BolzenMachen_GoldErz_Spitze_Info ()
 
 		CreateInvItems	(hero, BolzenSpitze_GoldErz, 100);
 
-		Print	("100 Bolzenspitzen aus Gold-Erz-Legierung hergestellt!");
+		Print	("100 koncówek szpilkowych z rudy zlota!");
 	}
 	else
 	{
@@ -1797,7 +1797,7 @@ INSTANCE PC_BolzenMachen_GoldErzBlut_Spitze (C_INFO)
 	condition		= PC_BolzenMachen_GoldErzBlut_Spitze_Condition;
 	information		= PC_BolzenMachen_GoldErzBlut_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Bolzenspitzen mit Gold-Erz-Blut-Legierung schmieden (1 Goldbrocken, 3 Erzbrocken und 1 Drachenblut)";
+	description		= "Kucie stadnin z zlotem, stopu rudo-krewetowego (1 kawalek zlota, 3 sztuki rudy i 1 krew smoka)";
 };
 FUNC INT PC_BolzenMachen_GoldErzBlut_Spitze_Condition()
 {	
@@ -1824,7 +1824,7 @@ FUNC VOID PC_BolzenMachen_GoldErzBlut_Spitze_Info ()
 
 		CreateInvItems	(hero, BolzenSpitze_GoldErzBlut, 100);
 
-		Print	("100 Bolzenspitzen aus Gold-Erz-Blut-Legierung hergestellt!");
+		Print	("100 szpilkowych koncówek wykonanych ze stopu zlota, rudy i krwi!");
 	}
 	else
 	{
@@ -1839,7 +1839,7 @@ INSTANCE PC_BolzenMachen_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_Komplett_Condition;
 	information		= PC_BolzenMachen_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Bolzen herstellen (1x)";
+	description		= "Produkcja srub (1x)";
 };
 FUNC INT PC_BolzenMachen_Komplett_Condition()
 {	
@@ -1864,14 +1864,14 @@ FUNC VOID PC_BolzenMachen_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, BolzenSpitze, 1);
 		CreateInvItems	(hero, ItRw_Bolt, 1);
 
-		Print	("Bolzen hergestellt!");
+		Print	("Wykonano srube!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -1882,7 +1882,7 @@ INSTANCE PC_BolzenMachen_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Bolzen herstellen (Alle)";
+	description		= "Sruby fabryczne (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_Komplett_Alle_Condition()
 {	
@@ -1920,14 +1920,14 @@ FUNC VOID PC_BolzenMachen_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Bolzen hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Wykonano srube!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -1938,7 +1938,7 @@ INSTANCE PC_BolzenMachen_Widerhaken_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_Widerhaken_Komplett_Condition;
 	information		= PC_BolzenMachen_Widerhaken_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Widerhaken herstellen (1x)";
+	description		= "Produkcja kolków z kolcami (1x)";
 };
 FUNC INT PC_BolzenMachen_Widerhaken_Komplett_Condition()
 {	
@@ -1964,14 +1964,14 @@ FUNC VOID PC_BolzenMachen_Widerhaken_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, BolzenSpitze, 1);
 		CreateInvItems	(hero, ItRw_WiderhakenBolt, 1);
 
-		Print	("Bolzen mit Widerhaken hergestellt!");
+		Print	("Sruba z hakiem kolczastym!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -1982,7 +1982,7 @@ INSTANCE PC_BolzenMachen_Widerhaken_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_Widerhaken_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_Widerhaken_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Widerhaken herstellen (Alle)";
+	description		= "Produkcja kolków z kolcami (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_Widerhaken_Komplett_Alle_Condition()
 {	
@@ -2021,14 +2021,14 @@ FUNC VOID PC_BolzenMachen_Widerhaken_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Bolzen mit Widerhaken hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Sruba z hakiem kolczastym!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -2039,7 +2039,7 @@ INSTANCE PC_BolzenMachen_Sprengstoff_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_Sprengstoff_Komplett_Condition;
 	information		= PC_BolzenMachen_Sprengstoff_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Explosionsbolzen herstellen (1x)";
+	description		= "Wytwarzanie srub wybuchowych (1x)";
 };
 FUNC INT PC_BolzenMachen_Sprengstoff_Komplett_Condition()
 {	
@@ -2068,14 +2068,14 @@ FUNC VOID PC_BolzenMachen_Sprengstoff_Komplett_Info ()
 
 		CreateInvItems	(hero, ItRw_SprengstoffBolt, 1);
 
-		Print	("Explosionsbolzen hergestellt!");
+		Print	("Wykonana sruba wybuchowa!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -2086,7 +2086,7 @@ INSTANCE PC_BolzenMachen_Sprengstoff_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_Sprengstoff_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_Sprengstoff_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Explosionsbolzen herstellen (Alle)";
+	description		= "Produkcja srub wybuchowych (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_Sprengstoff_Komplett_Alle_Condition()
 {	
@@ -2175,14 +2175,14 @@ FUNC VOID PC_BolzenMachen_Sprengstoff_Komplett_Alle_Info ()
 			};
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Explosionsbolzen hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Wykonana sruba wybuchowa!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -2193,7 +2193,7 @@ INSTANCE PC_BolzenMachen_Praezision_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_Praezision_Komplett_Condition;
 	information		= PC_BolzenMachen_Praezision_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Präzisionsbolzen herstellen (1x)";
+	description		= "Produkcja srub precyzyjnych (1x)";
 };
 FUNC INT PC_BolzenMachen_Praezision_Komplett_Condition()
 {	
@@ -2219,14 +2219,14 @@ FUNC VOID PC_BolzenMachen_Praezision_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, BolzenSpitze, 1);
 		CreateInvItems	(hero, ItRw_PraezisionsBolt, 1);
 
-		Print	("Präzisionsbolzen hergestellt!");
+		Print	("Precyzyjny trzpien produkowany!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -2237,7 +2237,7 @@ INSTANCE PC_BolzenMachen_Praezision_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_Praezision_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_Praezision_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Präzisionsbolzen herstellen (Alle)";
+	description		= "Produkcyjne sruby precyzyjne (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_Praezision_Komplett_Alle_Condition()
 {	
@@ -2276,14 +2276,14 @@ FUNC VOID PC_BolzenMachen_Praezision_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Präzisionsbolzen hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Precyzyjny trzpien produkowany!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze fehlen");
+		Print	("Brak walka strzalki i koncówki sworznia");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze) == 0) {
-		Print	("Bolzenspitze fehlt");
+		Print	("Brak koncówki bolca");
 	};
 };
 
@@ -2294,7 +2294,7 @@ INSTANCE PC_BolzenMachen_Schmetter_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_Schmetter_Komplett_Condition;
 	information		= PC_BolzenMachen_Schmetter_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Schmetterbolzen herstellen (1x)";
+	description		= "Produkcja srub motylkowych (1x)";
 };
 FUNC INT PC_BolzenMachen_Schmetter_Komplett_Condition()
 {	
@@ -2319,14 +2319,14 @@ FUNC VOID PC_BolzenMachen_Schmetter_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, SchmetterBolzenSpitze, 1);
 		CreateInvItems	(hero, ItRw_SchmetterBolt, 1);
 
-		Print	("Schmetterbolzen hergestellt!");
+		Print	("Sworzen kluczykowy!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, SchmetterBolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Schmetterbolzenspitze fehlen");
+		Print	("Brak walu strzalki i czubka sruby motylkowej");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, SchmetterBolzenSpitze) == 0) {
-		Print	("Schmetterbolzenspitze fehlt");
+		Print	("Brak koncówki sworznia masulowego");
 	};
 };
 
@@ -2337,7 +2337,7 @@ INSTANCE PC_BolzenMachen_Schmetter_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_Schmetter_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_Schmetter_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Schmetterbolzen herstellen (Alle)";
+	description		= "Produkcja srub motylkowych (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_Schmetter_Komplett_Alle_Condition()
 {	
@@ -2375,14 +2375,14 @@ FUNC VOID PC_BolzenMachen_Schmetter_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Bolzen hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Wykonano srube!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, SchmetterBolzenSpitze) == 0) {
-		Print	("Pfeilschaft und Schmetterbolzenspitze fehlen");
+		Print	("Brak walu strzalki i czubka sruby motylkowej");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, SchmetterBolzenSpitze) == 0) {
-		Print	("Schmetterbolzenspitze fehlt");
+		Print	("Brak koncówki sworznia masulowego");
 	};
 };
 
@@ -2393,7 +2393,7 @@ INSTANCE PC_BolzenMachen_GoldErz_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_GoldErz_Komplett_Condition;
 	information		= PC_BolzenMachen_GoldErz_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Gold-Erz-Spitze herstellen (1x)";
+	description		= "Produkcja kolków z ruda zlota (1x)";
 };
 FUNC INT PC_BolzenMachen_GoldErz_Komplett_Condition()
 {	
@@ -2419,14 +2419,14 @@ FUNC VOID PC_BolzenMachen_GoldErz_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, BolzenSpitze_GoldErz, 1);
 		CreateInvItems	(hero, ItRw_GoldErzBolt, 1);
 
-		Print	("Bolzen aus Gold-Erz-Legierung hergestellt!");
+		Print	("Sruby wykonane z rudy zlota!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze_GoldErz) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze aus Gold-Erz-Legierung fehlen");
+		Print	("Brakuje walu strzalowego i koncówki sworznia wykonanych z rudy zlota.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze_GoldErz) == 0) {
-		Print	("Bolzenspitze aus Gold-Erz-Legierung fehlt");
+		Print	("Brakuje czubka bolca wykonanego z rudy zlota.");
 	};
 };
 
@@ -2437,7 +2437,7 @@ INSTANCE PC_BolzenMachen_GoldErz_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_GoldErz_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_GoldErz_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Gold-Erz-Spitze herstellen (Alle)";
+	description		= "Produkcja kolków z koncówka rudy zlota (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_GoldErz_Komplett_Alle_Condition()
 {	
@@ -2476,14 +2476,14 @@ FUNC VOID PC_BolzenMachen_GoldErz_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Bolzen aus Erz-Gold-Legierung hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Sruby wykonane z rudno-zlotego stopu!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze_GoldErz) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze aus Gold-Erz-Legierung fehlen");
+		Print	("Brakuje walu strzalowego i koncówki sworznia wykonanych z rudy zlota.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze_GoldErz) == 0) {
-		Print	("Bolzenspitze aus Gold-Erz-Legierung fehlt");
+		Print	("Brakuje czubka bolca wykonanego z rudy zlota.");
 	};
 };
 
@@ -2494,7 +2494,7 @@ INSTANCE PC_BolzenMachen_GoldErzBlut_Komplett (C_INFO)
 	condition		= PC_BolzenMachen_GoldErzBlut_Komplett_Condition;
 	information		= PC_BolzenMachen_GoldErzBlut_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Gold-Erz-Blut-Spitze herstellen (1x)";
+	description		= "Wytworzyc szpilke z koncówka krwi z rudy zlota (1x)";
 };
 FUNC INT PC_BolzenMachen_GoldErzBlut_Komplett_Condition()
 {	
@@ -2520,14 +2520,14 @@ FUNC VOID PC_BolzenMachen_GoldErzBlut_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, BolzenSpitze_GoldErzBlut, 1);
 		CreateInvItems	(hero, ItRw_GoldErzBlutBolt, 1);
 
-		Print	("Bolzen aus Gold-Erz-Blut-Legierung hergestellt!");
+		Print	("Sruby wykonane ze zlota, rudy i stopu krwi!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze aus Gold-Erz-Blut-Legierung fehlen");
+		Print	("Brakuje walu strzalkowego i koncówki sworznia ze zloconego stopu rudo-krwiowego.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze_GoldErzBlut) == 0) {
-		Print	("Bolzenspitze aus Gold-Erz-Blut-Legierung fehlt");
+		Print	("Brakuje koncówki szpilki ze zlota, rudy i stopu krwi.");
 	};
 };
 
@@ -2538,7 +2538,7 @@ INSTANCE PC_BolzenMachen_GoldErzBlut_Komplett_Alle (C_INFO)
 	condition		= PC_BolzenMachen_GoldErzBlut_Komplett_Alle_Condition;
 	information		= PC_BolzenMachen_GoldErzBlut_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Bolzen mit Gold-Erz-Blut-Spitze herstellen (Alle)";
+	description		= "Produkcja stadek z zlotem, ruda i koncówka krwi (wszystkie)";
 };
 FUNC INT PC_BolzenMachen_GoldErzBlut_Komplett_Alle_Condition()
 {	
@@ -2577,14 +2577,14 @@ FUNC VOID PC_BolzenMachen_GoldErzBlut_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Bolzen aus Gold-Erz-Blut-Legierung hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Sruby wykonane ze zlota, rudy i stopu krwi!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, BolzenSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilschaft und Bolzenspitze aus Gold-Erz-Blut-Legierung fehlen");
+		Print	("Brakuje walu strzalkowego i koncówki sworznia ze zloconego stopu rudo-krwiowego.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, BolzenSpitze_GoldErzBlut) == 0) {
-		Print	("Bolzenspitze aus Gold-Erz-Blut-Legierung fehlt");
+		Print	("Brakuje koncówki szpilki ze zlota, rudy i stopu krwi.");
 	};
 };
 
@@ -2624,7 +2624,7 @@ INSTANCE PC_PfeileMachen (C_INFO)
 	condition	= PC_PfeileMachen_Condition;
 	information	= PC_PfeileMachen_Info;
 	permanent	= 1;
-	description	= "Pfeile herstellen";
+	description	= "produkowac strzalki";
 };
 
 FUNC INT PC_PfeileMachen_Condition()
@@ -2654,7 +2654,7 @@ INSTANCE PC_PfeileMachen_Spitze (C_INFO)
 	condition		= PC_PfeileMachen_Spitze_Condition;
 	information		= PC_PfeileMachen_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Pfeilspitzen schmieden (1 Rohstahl)";
+	description		= "Kucie grotów strzalek (1 stal surowa)";
 };
 FUNC INT PC_PfeileMachen_Spitze_Condition()
 {	
@@ -2678,7 +2678,7 @@ FUNC VOID PC_PfeileMachen_Spitze_Info ()
 		Npc_RemoveInvItems	(hero, ItMiSwordRawHot, 1);
 		CreateInvItems	(hero, PfeilSpitze, 10);
 
-		Print	("10 Pfeilspitzen hergestellt!");
+		Print	("10 glowic strzalkowych!");
 	}
 	else
 	{
@@ -2693,7 +2693,7 @@ INSTANCE PC_PfeileMachen_SchmetterSpitze (C_INFO)
 	condition		= PC_PfeileMachen_SchmetterSpitze_Condition;
 	information		= PC_PfeileMachen_SchmetterSpitze_Info;
 	permanent		= TRUE;
-	description		= "Schmetterpfeilspitzen schmieden (1 Rohstahl)";
+	description		= "Kucie przegubów strzalek motylkowych (1 stal surowa)";
 };
 FUNC INT PC_PfeileMachen_SchmetterSpitze_Condition()
 {	
@@ -2717,7 +2717,7 @@ FUNC VOID PC_PfeileMachen_SchmetterSpitze_Info ()
 		Npc_RemoveInvItems	(hero, ItMiSwordRawHot, 1);
 		CreateInvItems	(hero, SchmetterpfeilSpitze, 10);
 
-		Print	("10 Schmetterpfeilspitzen hergestellt!");
+		Print	("10 wykonanych strzalek motylkowych!");
 	}
 	else
 	{
@@ -2732,7 +2732,7 @@ INSTANCE PC_PfeileMachen_GoldErz_Spitze (C_INFO)
 	condition		= PC_PfeileMachen_GoldErz_Spitze_Condition;
 	information		= PC_PfeileMachen_GoldErz_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Pfeilspitzen mit Gold-Erz-Legierung schmieden (1 Goldbrocken und 3 Erzbrocken)";
+	description		= "Sciany strzalek kute ze stopu rudy zlota (1 kawalek zlota i 3 kawalki rudy)";
 };
 FUNC INT PC_PfeileMachen_GoldErz_Spitze_Condition()
 {	
@@ -2759,7 +2759,7 @@ FUNC VOID PC_PfeileMachen_GoldErz_Spitze_Info ()
 
 		CreateInvItems	(hero, PfeilSpitze_GoldErz, 100);
 
-		Print	("100 Pfeilspitzen aus Gold-Erz-Legierung hergestellt!");
+		Print	("100 grotów strzalek z rudy zlota!");
 	}
 	else
 	{
@@ -2774,7 +2774,7 @@ INSTANCE PC_PfeileMachen_GoldErzBlut_Spitze (C_INFO)
 	condition		= PC_PfeileMachen_GoldErzBlut_Spitze_Condition;
 	information		= PC_PfeileMachen_GoldErzBlut_Spitze_Info;
 	permanent		= TRUE;
-	description		= "Pfeilspitzen mit Gold-Erz-Blut-Legierung schmieden (1 Goldbrocken, 3 Erzbrocken und 1 Drachenblut)";
+	description		= "Groty strzalowe kute zlotem, stop rudo-krwi (1 kawalk zlota, 3 kawalki rudy i 1 krew smoka)";
 };
 FUNC INT PC_PfeileMachen_GoldErzBlut_Spitze_Condition()
 {	
@@ -2803,7 +2803,7 @@ FUNC VOID PC_PfeileMachen_GoldErzBlut_Spitze_Info ()
 
 		CreateInvItems	(hero, PfeilSpitze_GoldErzBlut, 100);
 
-		Print	("100 Pfeilspitzen aus Gold-Erz-Blut-Legierung hergestellt!");
+		Print	("100 grotów strzalek ze zlota, rudy i stopu krwi!");
 	}
 	else
 	{
@@ -2818,7 +2818,7 @@ INSTANCE PC_PfeileMachen_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_Komplett_Condition;
 	information		= PC_PfeileMachen_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Pfeil herstellen (1x)";
+	description		= "Tworzenie strzalki (1x)";
 };
 FUNC INT PC_PfeileMachen_Komplett_Condition()
 {	
@@ -2842,14 +2842,14 @@ FUNC VOID PC_PfeileMachen_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, PfeilSpitze, 1);
 		CreateInvItems	(hero, ItRw_Arrow, 1);
 
-		Print	("Pfeil hergestellt!");
+		Print	("Strzalka!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -2860,7 +2860,7 @@ INSTANCE PC_PfeileMachen_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Pfeil herstellen (Alle)";
+	description		= "Tworzenie strzalki (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_Komplett_Alle_Condition()
 {	
@@ -2894,14 +2894,14 @@ FUNC VOID PC_PfeileMachen_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Pfeile hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzalki wykonane!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -2912,7 +2912,7 @@ INSTANCE PC_PfeileMachen_Widerhaken_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_Widerhaken_Komplett_Condition;
 	information		= PC_PfeileMachen_Widerhaken_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Pfeil mit Widerhaken herstellen (1x)";
+	description		= "Tkaninowa strzalka kolczasta (1x)";
 };
 FUNC INT PC_PfeileMachen_Widerhaken_Komplett_Condition()
 {	
@@ -2938,14 +2938,14 @@ FUNC VOID PC_PfeileMachen_Widerhaken_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, PfeilSpitze, 1);
 		CreateInvItems	(hero, ItRw_WiderhakenArrow, 1);
 
-		Print	("Pfeil mit Widerhaken hergestellt!");
+		Print	("Strzalka z wymyslonymi kolcami!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -2956,7 +2956,7 @@ INSTANCE PC_PfeileMachen_Widerhaken_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_Widerhaken_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_Widerhaken_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Pfeil mit Widerhaken herstellen (Alle)";
+	description		= "Wykonaj strzalke z kolcami (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_Widerhaken_Komplett_Alle_Condition()
 {	
@@ -2995,14 +2995,14 @@ FUNC VOID PC_PfeileMachen_Widerhaken_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Pfeile mit Widerhaken hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzalki z kreskami!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -3013,7 +3013,7 @@ INSTANCE PC_PfeileMachen_Praezision_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_Praezision_Komplett_Condition;
 	information		= PC_PfeileMachen_Praezision_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Präzisionspfeil herstellen (1x)";
+	description		= "Wytwarzana strzalka precyzyjna (1x)";
 };
 FUNC INT PC_PfeileMachen_Praezision_Komplett_Condition()
 {	
@@ -3039,14 +3039,14 @@ FUNC VOID PC_PfeileMachen_Praezision_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, PfeilSpitze, 1);
 		CreateInvItems	(hero, ItRw_PraezisionsArrow, 1);
 
-		Print	("Präzisionspfeil hergestellt!");
+		Print	("Wykonana strzalka precyzyjna!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -3057,7 +3057,7 @@ INSTANCE PC_PfeileMachen_Praezision_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_Praezision_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_Praezision_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Präzisionspfeil herstellen (Alle)";
+	description		= "Stworzyc strzalke precyzji (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_Praezision_Komplett_Alle_Condition()
 {	
@@ -3096,14 +3096,14 @@ FUNC VOID PC_PfeileMachen_Praezision_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Präzisionspfeile hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Wykonane strzalki precyzyjne!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -3114,7 +3114,7 @@ INSTANCE PC_PfeileMachen_Schmetterpfeile_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_Schmetterpfeile_Komplett_Condition;
 	information		= PC_PfeileMachen_Schmetterpfeile_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Schmetterpfeil herstellen (1x)";
+	description		= "Zrób strzalke motylkowa (1x)";
 };
 FUNC INT PC_PfeileMachen_Schmetterpfeile_Komplett_Condition()
 {	
@@ -3139,14 +3139,14 @@ FUNC VOID PC_PfeileMachen_Schmetterpfeile_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, SchmetterPfeilSpitze, 1);
 		CreateInvItems	(hero, ItRw_SchmetterArrow, 1);
 
-		Print	("Schmetterpfeil hergestellt!");
+		Print	("Strzalka motylkowa wykonana!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, SchmetterPfeilSpitze) == 0) {
-		Print	("Pfeilschaft und Schmetterpfeilspitze fehlen");
+		Print	("Brak walka strzalki i glowicy motylkowej");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, SchmetterPfeilSpitze) == 0) {
-		Print	("Schmetterpfeilspitze fehlt");
+		Print	("Brak koncówki strzalki masulkowej");
 	};
 };
 
@@ -3157,7 +3157,7 @@ INSTANCE PC_PfeileMachen_Schmetterpfeile_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_Schmetterpfeile_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_Schmetterpfeile_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Schmetterpfeil herstellen (Alle)";
+	description		= "Wykonac strzalke maslowa (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_Schmetterpfeile_Komplett_Alle_Condition()
 {	
@@ -3195,14 +3195,14 @@ FUNC VOID PC_PfeileMachen_Schmetterpfeile_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Schmetterpfeile hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzalki motylkowe wykonane!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, SchmetterPfeilSpitze) == 0) {
-		Print	("Pfeilschaft und Schmetterpfeilspitze fehlen");
+		Print	("Brak walka strzalki i glowicy motylkowej");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, SchmetterPfeilSpitze) == 0) {
-		Print	("Schmetterpfeilspitze fehlt");
+		Print	("Brak koncówki strzalki masulkowej");
 	};
 };
 
@@ -3213,7 +3213,7 @@ INSTANCE PC_PfeileMachen_GoldErz_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_GoldErz_Komplett_Condition;
 	information		= PC_PfeileMachen_GoldErz_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Pfeil mit Gold-Erz-Spitze herstellen (1x)";
+	description		= "Wypelnic strzalke zlota koncówka rudy (1x)";
 };
 FUNC INT PC_PfeileMachen_GoldErz_Komplett_Condition()
 {	
@@ -3239,14 +3239,14 @@ FUNC VOID PC_PfeileMachen_GoldErz_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, PfeilSpitze_GoldErz, 1);
 		CreateInvItems	(hero, ItRw_GoldErzArrow, 1);
 
-		Print	("Pfeil aus Gold-Erz-Legierung hergestellt!");
+		Print	("Strzalka wykonana z rudy zlota!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze_GoldErz) == 0) {
-		Print	("Pfeilschaft und -spitze aus Gold-Erz-Legierung fehlen");
+		Print	("Wal strzalkowy i czubek z brakujacego zlota stopu rudy zlota");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze_GoldErz) == 0) {
-		Print	("Pfeilspitze aus Gold-Erz-Legierung fehlt");
+		Print	("Brakuje grota strzalki wykonanej z rudy zlota.");
 	};
 };
 
@@ -3257,7 +3257,7 @@ INSTANCE PC_PfeileMachen_GoldErz_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_GoldErz_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_GoldErz_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Pfeile mit Gold-Erz-Spitze herstellen (Alle)";
+	description		= "Wypelnij strzalki zlota koncówka rudy (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_GoldErz_Komplett_Alle_Condition()
 {	
@@ -3296,14 +3296,14 @@ FUNC VOID PC_PfeileMachen_GoldErz_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Npc_HasItems(hero, PfeilStab));
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Pfeile aus Gold-Erz-Legierung hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzaly wykonane z rudy zlota!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze_GoldErz) == 0) {
-		Print	("Pfeilschaft und -spitze aus Gold-Erz-Legierung fehlen");
+		Print	("Wal strzalkowy i czubek z brakujacego zlota stopu rudy zlota");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze_GoldErz) == 0) {
-		Print	("Pfeilspitze aus Gold-Erz-Legierung fehlt");
+		Print	("Brakuje grota strzalki wykonanej z rudy zlota.");
 	};
 };
 
@@ -3314,7 +3314,7 @@ INSTANCE PC_PfeileMachen_GoldErzBlut_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_GoldErzBlut_Komplett_Condition;
 	information		= PC_PfeileMachen_GoldErzBlut_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Pfeil mit Gold-Erz-Blut-Spitze herstellen (1x)";
+	description		= "Wypelnic strzalke zlota koncówka z rudy zlota (1x)";
 };
 FUNC INT PC_PfeileMachen_GoldErzBlut_Komplett_Condition()
 {	
@@ -3340,14 +3340,14 @@ FUNC VOID PC_PfeileMachen_GoldErzBlut_Komplett_Info ()
 		Npc_RemoveInvItems	(hero, PfeilSpitze_GoldErzBlut, 1);
 		CreateInvItems	(hero, ItRw_GoldErzBlutArrow, 1);
 
-		Print	("Pfeil aus Gold-Erz-Blut-Legierung hergestellt!");
+		Print	("Strzalka zlota, rudy i stopu krwi!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilschaft und -spitze aus Gold-Erz-Blut-Legierung fehlen");
+		Print	("Wal strzalkowy i koncówka z brakujacego zlota stopu rudokrwiowego.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilspitze aus Gold-Erz-Blut-Legierung fehlt");
+		Print	("Brakuje grota strzalki wykonanej ze zlota stopu rudo-krwiowego.");
 	};
 };
 
@@ -3358,7 +3358,7 @@ INSTANCE PC_PfeileMachen_GoldErzBlut_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_GoldErzBlut_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_GoldErzBlut_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Pfeile mit Gold-Erz-Blut-Spitze herstellen (Alle)";
+	description		= "Wypelnij strzalki zlotem, ruda i koncówka krwi (Wszystkie)";
 };
 FUNC INT PC_PfeileMachen_GoldErzBlut_Komplett_Alle_Condition()
 {	
@@ -3397,14 +3397,14 @@ FUNC VOID PC_PfeileMachen_GoldErzBlut_Komplett_Alle_Info ()
 			Npc_RemoveInvItems	(hero, PfeilStab, Mod_PfeilCounter);
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Pfeile aus Gold-Erz-Blut-Legierung hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzaly wykonane ze zlota, rudy i stopu krwi!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilschaft und -spitze aus Gold-Erz-Blut-Legierung fehlen");
+		Print	("Wal strzalkowy i koncówka z brakujacego zlota stopu rudokrwiowego.");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze_GoldErzBlut) == 0) {
-		Print	("Pfeilspitze aus Gold-Erz-Blut-Legierung fehlt");
+		Print	("Brakuje grota strzalki wykonanej ze zlota stopu rudo-krwiowego.");
 	};
 };
 
@@ -3415,7 +3415,7 @@ INSTANCE PC_PfeileMachen_Sprengstoff_Komplett (C_INFO)
 	condition		= PC_PfeileMachen_Sprengstoff_Komplett_Condition;
 	information		= PC_PfeileMachen_Sprengstoff_Komplett_Info;
 	permanent		= TRUE;
-	description		= "Explosionspfeil herstellen (1x)";
+	description		= "Utworzyc strzalke eksplozji (1x)";
 };
 FUNC INT PC_PfeileMachen_Sprengstoff_Komplett_Condition()
 {	
@@ -3444,14 +3444,14 @@ FUNC VOID PC_PfeileMachen_Sprengstoff_Komplett_Info ()
 
 		CreateInvItems	(hero, ItRw_SprengstoffArrow, 1);
 
-		Print	("Explosionspfeil hergestellt!");
+		Print	("Wybuchowa strzalka!");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -3462,7 +3462,7 @@ INSTANCE PC_PfeileMachen_Sprengstoff_Komplett_Alle (C_INFO)
 	condition		= PC_PfeileMachen_Sprengstoff_Komplett_Alle_Condition;
 	information		= PC_PfeileMachen_Sprengstoff_Komplett_Alle_Info;
 	permanent		= TRUE;
-	description		= "Explosionspfeile herstellen (Alle)";
+	description		= "Utworzyc strzalki eksplozji (wszystkie)";
 };
 FUNC INT PC_PfeileMachen_Sprengstoff_Komplett_Alle_Condition()
 {	
@@ -3551,14 +3551,14 @@ FUNC VOID PC_PfeileMachen_Sprengstoff_Komplett_Alle_Info ()
 			};
 		};
 
-		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Explosionspfeile hergestellt!"));
+		Print	(ConcatStrings(IntToString(Mod_PfeilCounter), " Strzalki wybuchowe wykonane!"));
 	} else if (Npc_HasItems(hero, PfeilStab) == 0)
 	&& (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilschaft und -spitze fehlen");
+		Print	("Brak walka strzalki i koncówki");
 	} else if (Npc_HasItems(hero, PfeilStab) == 0) {
-		Print	("Pfeilschaft fehlt");
+		Print	("Brak walka strzalki");
 	} else if (Npc_HasItems(hero, PfeilSpitze) == 0) {
-		Print	("Pfeilspitze fehlt");
+		Print	("Brak strzalki");
 	};
 };
 
@@ -3598,7 +3598,7 @@ INSTANCE PC_Set (C_INFO)
 	condition	= PC_Set_Condition;
 	information	= PC_Set_Info;
 	permanent	= 1;
-	description	= "Ringe und Amulette schmieden";
+	description	= "Kucie pierscieni i amuletów";
 };
 
 FUNC INT PC_Set_Condition()
@@ -3628,7 +3628,7 @@ INSTANCE PC_Set_AdanosAmulett (C_INFO)
 	condition		= PC_Set_AdanosAmulett_Condition;
 	information		= PC_Set_AdanosAmulett_Info;
 	permanent		= TRUE;
-	description		= "Adanos' Amulett des Nebels schmieden (1x Metallblock, 1x Erzbrocken, 1x Goldbrocken, 2x Aquamarin, 1x Spruchrolle 'Eiswelle')";
+	description		= "Adanos' amulet kucia mglawicy (1 klocek metalowy, 1 kawalk rudy, 1 kromka zlota, 2 x akwamaryn, 1 x fala lodu)";
 };
 FUNC INT PC_Set_AdanosAmulett_Condition()
 {	
@@ -3668,7 +3668,7 @@ INSTANCE PC_Set_AdanosBelt (C_INFO)
 	condition		= PC_Set_AdanosBelt_Condition;
 	information		= PC_Set_AdanosBelt_Info;
 	permanent		= TRUE;
-	description		= "Adanos' Gürtel des Frostes schmieden (1x Metallblock, 1x Erzbrocken, 1x Bergkristall, 2x Reptilienhaut, 1x Spruchrolle 'Eisblock')";
+	description		= "Pas Adanos' a z odkuwek mrozu (1 klocek metalowy, 1 kawalk rudy, 1 kawalk kamienia, 2x skóra gadów, 1-krotna rolka zaklecia 'Eisblock').";
 };
 FUNC INT PC_Set_AdanosBelt_Condition()
 {	
@@ -3708,7 +3708,7 @@ INSTANCE PC_Set_AdanosRing (C_INFO)
 	condition		= PC_Set_AdanosRing_Condition;
 	information		= PC_Set_AdanosRing_Info;
 	permanent		= TRUE;
-	description		= "Adanos' Ring des Wassers schmieden (1x Metallblock, 1x Erzbrocken, 2x Aquamarin, 1x Herz eines Eisgolems)";
+	description		= "Kucie wody w pierscieniu Adanosa (1 kucie bloku metalowego, 1x kawalek rudy, 2x akwamaryn, 1x serce lodowe)";
 };
 FUNC INT PC_Set_AdanosRing_Condition()
 {	
@@ -3746,7 +3746,7 @@ INSTANCE PC_Set_Wolfsamulett (C_INFO)
 	condition		= PC_Set_Wolfsamulett_Condition;
 	information		= PC_Set_Wolfsamulett_Info;
 	permanent		= TRUE;
-	description		= "Amulett des Wolfes schmieden (1x Metallblock, 3x Wolfsfell, 3x Zähne, 1x Spruchrolle 'Wolf beschwören')";
+	description		= "Amulet kuzni wilków (1 klocek metalowy, 3x siersc wilka, 3x zeby, 1x zaklecie 'Summon wilk')";
 };
 FUNC INT PC_Set_Wolfsamulett_Condition()
 {	
@@ -3783,7 +3783,7 @@ INSTANCE PC_Set_RingAusdauer (C_INFO)
 	condition		= PC_Set_RingAusdauer_Condition;
 	information		= PC_Set_RingAusdauer_Info;
 	permanent		= TRUE;
-	description		= "Linken Ring der Ausdauer schmieden (1x Metallblock, 1x Trank der Geschwindigkeit, 2x Flügel)";
+	description		= "Lewy pierscien odkuwki wytrzymaly (1 kucie blok metalowy, 1-krotne eliksir predkosci obrotowej, 2-krotne skrzydla)";
 };
 
 FUNC INT PC_Set_RingAusdauer_Condition()
@@ -3820,7 +3820,7 @@ INSTANCE PC_Set_RingHiebe (C_INFO)
 	condition		= PC_Set_RingHiebe_Condition;
 	information		= PC_Set_RingHiebe_Info;
 	permanent		= TRUE;
-	description		= "Linken Ring der Hiebe schmieden (1x Metallblock, 1x Trank der Geschwindigkeit, 2x Lurkerklaue)";
+	description		= "Kuznia lewy pierscien ciosów (1-krotny blok metalowy, 1-krotny eliksir predkosci obrotowej, 2-krotny pazur Lurkera)";
 };
 
 FUNC INT PC_Set_RingHiebe_Condition()
@@ -3857,7 +3857,7 @@ INSTANCE PC_Set_RingGewandtheit (C_INFO)
 	condition		= PC_Set_RingGewandtheit_Condition;
 	information		= PC_Set_RingGewandtheit_Info;
 	permanent		= TRUE;
-	description		= "Rechten Ring des Gewandtheit schmieden (1x Metallblock, 1x Horn eines Drachensnappers, 2x Knochen eines Goblins)";
+	description		= "Prawy pierscien kucia zrecznosciowego (1-krotny metalowy blok, 1-krotny rog smoczej zatyczki, 2-krotna kosc goblina)";
 };
 
 FUNC INT PC_Set_RingGewandtheit_Condition()
@@ -3894,7 +3894,7 @@ INSTANCE PC_Set_RingStaerke (C_INFO)
 	condition		= PC_Set_RingStaerke_Condition;
 	information		= PC_Set_RingStaerke_Info;
 	permanent		= TRUE;
-	description		= "Rechten Ring der Stärke schmieden (1x Metallblock, 1x Horn eines Drachensnappers, 2x Knochen eines Goblins)";
+	description		= "Kuty prawy pierscien mocny (1-krotny metalowy blok, 1-krotny rog smoczy, 2-krotna kosc goblina)";
 };
 
 FUNC INT PC_Set_RingStaerke_Condition()
@@ -3931,7 +3931,7 @@ INSTANCE PC_Set_Snapperring (C_INFO)
 	condition		= PC_Set_Snapperring_Condition;
 	information		= PC_Set_Snapperring_Info;
 	permanent		= TRUE;
-	description		= "Snapperkraftring schmieden (1x Metallblock, 4x Krallen)";
+	description		= "Kucie pierscienia zatrzaskowego (1 klocek metalowy, 4-krotne pazury)";
 };
 
 FUNC INT PC_Set_Snapperring_Condition()
@@ -3965,7 +3965,7 @@ INSTANCE PC_Set_Wolfsring_Ruestung (C_INFO)
 	condition		= PC_Set_Wolfsring_Ruestung_Condition;
 	information		= PC_Set_Wolfsring_Ruestung_Info;
 	permanent		= TRUE;
-	description		= "Wolfsring der Rüstung schmieden (1x Metallblock, 4x Wolfsfell)";
+	description		= "Kucie pierscienia wilka (1 klocek metalowy, 4x futro z wilków)";
 };
 FUNC INT PC_Set_Wolfsring_Ruestung_Condition()
 {	
@@ -3998,7 +3998,7 @@ INSTANCE PC_Set_Wolfsring_Leben (C_INFO)
 	condition		= PC_Set_Wolfsring_Leben_Condition;
 	information		= PC_Set_Wolfsring_Leben_Info;
 	permanent		= TRUE;
-	description		= "Wolfsring des Lebens schmieden (1x Metallblock, 4x Zähne)";
+	description		= "Wolfsring des Lebens schmieden (1 blok metalowy, 4x zeby)";
 };
 FUNC INT PC_Set_Wolfsring_Leben_Condition()
 {	
@@ -4062,7 +4062,7 @@ INSTANCE PC_Verbessern (C_INFO)
 	condition	= PC_Verbessern_Condition;
 	information	= PC_Verbessern_Info;
 	permanent	= 1;
-	description	= "Rüstungen verbessern";
+	description	= "Poprawic pancerz";
 };
 
 FUNC INT PC_Verbessern_Condition()
@@ -4092,7 +4092,7 @@ INSTANCE PC_Verbessern_Pala (C_INFO)
 	condition		= PC_Verbessern_Pala_Condition;
 	information		= PC_Verbessern_Pala_Info;
 	permanent		= TRUE;
-	description	= "Paladinrüstung verbessern";
+	description	= "Ulepszenie uzbrojenia paladynowego";
 };
 
 FUNC INT PC_Verbessern_Pala_Condition()
@@ -4127,7 +4127,7 @@ INSTANCE PC_Verbessern_LDJG (C_INFO)
 	condition		= PC_Verbessern_LDJG_Condition;
 	information		= PC_Verbessern_LDJG_Info;
 	permanent		= TRUE;
-	description	= "Leichte Drachenjägerrüstung verbessern";
+	description	= "Ulepszenie sprzetu do polowania na latawce lekkie";
 };
 
 FUNC INT PC_Verbessern_LDJG_Condition()
@@ -4166,7 +4166,7 @@ INSTANCE PC_Verbessern_MDJG (C_INFO)
 	condition		= PC_Verbessern_MDJG_Condition;
 	information		= PC_Verbessern_MDJG_Info;
 	permanent		= TRUE;
-	description	= "Mittlere Drachenjägerrüstung verbessern";
+	description	= "Usprawnienie sprzetu do polowan na srednie latawce";
 };
 
 FUNC INT PC_Verbessern_MDJG_Condition()
@@ -4207,7 +4207,7 @@ INSTANCE PC_Verbessern_DJG (C_INFO)
 	condition		= PC_Verbessern_DJG_Condition;
 	information		= PC_Verbessern_DJG_Info;
 	permanent		= TRUE;
-	description	= "Schwere Drachenjägerrüstung verbessern";
+	description	= "Ulepszenie ciezkiego sprzetu do polowania na latawce";
 };
 
 FUNC INT PC_Verbessern_DJG_Condition()
@@ -4244,7 +4244,7 @@ INSTANCE PC_Verbessern_DMR (C_INFO)
 	condition		= PC_Verbessern_DMR_Condition;
 	information		= PC_Verbessern_DMR_Info;
 	permanent		= TRUE;
-	description	= "Dämonenritterrüstung verbessern";
+	description	= "Poprawa wyposazenia rycerzy demonstracji";
 };
 
 FUNC INT PC_Verbessern_DMR_Condition()
@@ -4281,7 +4281,7 @@ INSTANCE PC_Verbessern_HTR (C_INFO)
 	condition		= PC_Verbessern_HTR_Condition;
 	information		= PC_Verbessern_HTR_Info;
 	permanent		= TRUE;
-	description	= "Hüterrüstung verbessern";
+	description	= "Poprawic pancerz ochronny";
 };
 
 FUNC INT PC_Verbessern_HTR_Condition()

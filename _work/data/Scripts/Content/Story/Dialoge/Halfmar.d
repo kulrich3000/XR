@@ -18,27 +18,27 @@ FUNC INT Info_Mod_Halfmar_Hi_Condition()
 
 FUNC VOID Info_Mod_Halfmar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_00"); //(überrascht) Wer da? Woher kommst du?
-	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_01"); //Ich komme aus dem Dorf nördlich von hier. Alfans bat mich darum, bei dir nach dem rechten zu sehen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_02"); //Nun, wie du siehst geht es mir nicht allzu gut.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_03"); //Beim Kräutersammeln überraschte mich ein Wurzeldämon und biss mich in die Hand.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_04"); //Seitdem sitze ich hier in meiner Hütte und versuche mich zu kurieren. Aber nichts scheint zu helfen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_05"); //Die Vergiftung, die er mir zufügte, scheint magischer Natur zu sein und da helfen keine einfachen Kräuter.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_06"); //(nachdenklich) Wenn ich doch nur etwas Rabenkraut und Mondschattengewächs hätte ...
-	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_07"); //Wieso, was ist mit diesen Kräutern?
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_08"); //Es sind besondere Gewächse.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_09"); //Sie benötigen im Gegensatz zu anderen Pflanzen kein Sonnenlicht, denn sie ziehen ihre Energie aus magischer Strahlung.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_10"); //Daher findet man sie häufig in Höhlen mit magischem Erz oder in der Nähe mystischer Orte ...
-	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_11"); //Und gibt es solche Plätze in der Nähe?
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_12"); //Ja, die gibt es, einige hundert Meter südlich von hier, ein Steinkreis nebst einer Höhle.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_13"); //Die magischen Mächte sind dort stark ...
-	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_14"); //Dann werde ich mich dort nach den Pflanzen umsehen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_15"); //Ja, aber wie ich sagte sind die magischen Energien dort mächtig ... sogar in so weit, dass sie sich manifestieren können ... zu Geschöpfen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_16"); //Obwohl ich mich in der gesamten Umgebung hier gut auskenne, traue sogar ich mich nur selten dorthin ...
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_17"); //So, wie vor einigen Tagen eben, als mich der garstige Dämon beim Kräutersammeln überraschte.
-	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_18"); //Pass also gut auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_00"); //(zdziwiony) Kim to jest? Skad pochodzisz?
+	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_01"); //Jestem z wioski na pólnoc od niej. Alfans poprosil mnie, abym spojrzal we wlasciwym kierunku.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_02"); //Cóz, jak widac, nie jestem zbyt dobrze.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_03"); //Zbierajac ziola, glówny demon zaskoczyl mnie i uderzyl w dlon.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_04"); //Od tego czasu siedze tutaj w kabinie, próbujac sie wyleczyc. Ale nic nie wydaje sie pomocne.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_05"); //Zanieczyszczenie, które mi zadal wydaje sie byc magiczne w naturze i nie ma prostych ziól, które moglyby mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_06"); //Przemyslany) Gdyby tylko mialem jakies ziola i cienie ksiezycowe....
+	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_07"); //Dlaczego te ziola?
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_08"); //Sa to rosliny specjalne.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_09"); //W przeciwienstwie do innych roslin, nie potrzebuja swiatla slonecznego, poniewaz czerpia energie z magicznego promieniowania.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_10"); //Dlatego tez znajduja sie one czesto w jaskiniach z magiczna ruda lub w poblizu miejsc mistycznych.....
+	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_11"); //I czy takie miejsca sa wokól nas?
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_12"); //Tak, jest tu jakies sto metrów na poludnie od niego kamienny krag z jaskinia.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_13"); //Magiczne moce sa tam silne....
+	AI_Output(hero, self, "Info_Mod_Halfmar_Hi_15_14"); //Potem bede szukal roslin tam.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_15"); //Tak, ale jak juz powiedzialem, magiczne energie sa tam potezne.... nawet w takim stopniu, ze moga sie przejawiac..... do stworzen.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_16"); //Chociaz znam swoja droge, nie osmiele sie nawet jechac tam bardzo czesto......
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_17"); //Jak kilka dni temu, kiedy zaskoczyl mnie paskudny demon zbierajacy ziola.
+	AI_Output(self, hero, "Info_Mod_Halfmar_Hi_32_18"); //Dlatego zadbaj o siebie.
 
-	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Ich habe Halfmar gefunden. Er sitzt in seiner Hütte und ist in schlechter Verfassung. Ein Dämon biss ihn in die Hand und fügte ihm damit damit eine Vergiftung zu. Nur die heilende Wirkung eines Mondschattens und eines Rabenkrauts kann ihm Genesung verschaffen. Einige hundert Meter südlich gibt es einen Steinkreis und eine Höhle, wo ich welche finden müsste ... jedoch auch auf dämonische Wesen treffen könnte.");
+	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Znalazlem Halfmar. Jest w swojej chacie i w zlej kondycji. Demon uderzyl go w dlon i zatrul nim. Tylko lecznicze dzialanie cienia ksiezycowego i kruka moze go leczyc. Kilkaset metrów na poludnie znajduje sie kamienny krag i jaskinia, gdzie musze znalezc.... demoniczne stworzenia.");
 
 	Wld_InsertItem	(ItPl_Mondschatten, "FP_ITEM_MONDSCHATTEN_01");
 	Wld_InsertItem	(ItPl_Rabenkraut, "FP_ITEM_RABENKRAUT_01");
@@ -70,33 +70,33 @@ FUNC INT Info_Mod_Halfmar_HabKraeuter_Condition()
 
 FUNC VOID Info_Mod_Halfmar_HabKraeuter_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_00"); //Da bist du ja wieder. Warst du erfolgreich?
-	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_01"); //Ja, ich habe die Kräuter.
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_00"); //Tam znów pan jest. Czy odniesliscie sukces?
+	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_01"); //Tak, dostalem ziola.
 
 	Npc_RemoveInvItems	(hero, ItPl_Mondschatten, 1);
 	Npc_RemoveInvItems	(hero, ItPl_Rabenkraut, 1);
 
-	B_ShowGivenThings	("Rabenkraut und Mondschatten gegeben");
+	B_ShowGivenThings	("Raven ziolo i cien ksiezyca podane");
 
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_02"); //Tatsächlich. Und du bist unversehrt?
-	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_03"); //Ja, den Dämonen konnte ich beikommen ...
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_04"); //Ausgezeichnet. Warte ... hier, nimm diese Kräuter zur Entlohnung.
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_02"); //Wlasciwie. A Ty jestes bezpieczny?
+	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_03"); //Tak, moglem pomóc demonom....
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_04"); //Doskonaly. Poczekaj.... Tutaj wez te ziola jako nagrode.
 
 	CreateInvItems	(hero, ItPl_Perm_Herb, 1);
 	CreateInvItems	(hero, ItPl_Heilknospe, 1);
 	CreateInvItems	(hero, ItPl_Health_Herb_03, 1);
 	CreateInvItems	(hero, ItPl_Mana_Herb_03, 1);
 
-	B_ShowGivenThings	("Kronstöckel, Heilknospe, Heilwurzel und Feuerwurzel erhalten");
+	B_ShowGivenThings	("Pólksiezycowy, leczniczy bud, leczniczy korzen i korzen przeciwpozarowy zachowany");
 
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_05"); //Ich mach mich dann mal daran, den Trank für meine Genesung herzustellen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_06"); //Achja, wenn du wieder bei Alfans bist, kannst du ihm mitteilen, dass ich in den nächsten Tagen mit den Kräutern vorbeikomme.
-	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_07"); //Mach ich.
-	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_08"); //Gut, hab vielen Dank für alles.
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_05"); //Bede robil eliksir dla mojego powrotu do zdrowia.
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_06"); //Cóz, kiedy wrócisz do Alfansa, mozesz mu powiedziec, ze za kilka dni bede przychodzil z ziolami.
+	AI_Output(hero, self, "Info_Mod_Halfmar_HabKraeuter_15_07"); //Wlasciwie, bede.
+	AI_Output(self, hero, "Info_Mod_Halfmar_HabKraeuter_32_08"); //Cóz, bardzo dziekuje za wszystko.
 
 	B_GivePlayerXP	(350);
 
-	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Halfmar hat die Kräuter und sollte bald wieder auf den Beinen sein. Wenn ich wieder im Dorf bin, kann ich Alfans berichten, dass er bald wieder bei ihm vorbeischaut.");
+	B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Halfmar ma ziola i wkrótce powinien powrócic na nogi. Kiedy wróce do wioski, moge powiedziec Alfansowi, ze wkrótce wróci.");
 };
 
 INSTANCE Info_Mod_Halfmar_GeistGetroffen (C_INFO)
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Halfmar_GeistGetroffen (C_INFO)
 	information	= Info_Mod_Halfmar_GeistGetroffen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In der Höhle begegnete ich dem Geist eines Verstorbenen.";
+	description	= "W jaskini spotkalem duch zmarlej osoby.";
 };
 
 FUNC INT Info_Mod_Halfmar_GeistGetroffen_Condition()
@@ -122,26 +122,26 @@ FUNC INT Info_Mod_Halfmar_GeistGetroffen_Condition()
 
 FUNC VOID Info_Mod_Halfmar_GeistGetroffen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_00"); //In der Höhle begegnete ich dem Geist eines Verstorbenen. Er schien seit Ewigkeiten an diesen Ort gebunden.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_01"); //Eine ruhelose Seele, gefangen an diesem Ort?
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_02"); //Ja. Als Lebender ließ er dort einst sein Leben und wartet seit dem vergeblich auf das jenseits.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_03"); //Erstaunlich. Ich wusste zwar, dass dieser Ort magische Energie anzieht und festhält.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_04"); //Dass er aber sogar dazu in der Lage wäre Tote davon abzuhalten ins jenseits zu gelangen, hätte ich nicht für möglich gehalten.
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_05"); //Nun, er erwähnte Versprechen, dass er einst abgab.
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_06"); //Nicht eher zu ruhen, als bis er seinen Bruder gefunden hätte, oder seine sterbliche Hülle ins Jenseits eingekehrt sei.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_07"); //Tatsächlich? Nun, dass ist schon nachvollziehbarer.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_08"); //Das Versprechen verhindert den Übergang ins jenseits und der Ort hindert ihn daran, sich frei zu bewegen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_09"); //Er müsste sein Versprechen folglich einlösen, damit er Frieden finden könnte.
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_10"); //Aber das alles hat sich vor sehr langer Zeit ereignet, vermutlich vor weit über 100 Jahren.
-	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_11"); //Ist es da möglich, dass sein Bruder noch lebt?
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_12"); //Hmm, ich weiß es nicht ... Es gibt viel Mystisches und Magisches in diesem Teil der Welt.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_13"); //Gut möglich, dass sich etwas Übernatürliches ereignet hat, was dies doch ermöglicht.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_14"); //Deinem Bericht nach zu urteilen, war sein Bruder unterwegs, fernab von jeder Siedlung.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_15"); //Vielleicht ist er da auf etwas uns Unbekanntes gestoßen. Mehr vermag ich auch nicht dazu zu sagen.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_16"); //Vielleicht werden dich irgendwann deine Schritte dort hin führen, wenn es das Schicksal will.
-	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_17"); //Womöglich bleibt das Rätsel um das Schicksal des ruhelosen Geistes aber auch für immer im Dunkeln ...
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_00"); //W jaskini spotkalem duch zmarlej osoby. Przez wieki wydawal sie zwiazany z tym miejscem.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_01"); //Spokojna dusza uwieziona w tym miejscu?
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_02"); //Tak. Jako zywy czlowiek, raz opuscil tam swoje zycie i od tego czasu na prózno czekal na druga strone.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_03"); //Amazing. Wiedzialem, ze to miejsce przyciagnie i zdobedzie magiczna energie.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_04"); //Nie pomyslalbym jednak, ze nie móglby on zapobiec wyjsciu zmarlych poza granice.
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_05"); //Wspomnial o obietnicach, które zlozyl raz.
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_06"); //Nie odpoczywac, dopóki nie znajdzie swego brata lub dopóki jego smiertelne cialo nie powróci do zaswiatów.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_07"); //Czy tak jest? Cóz, jest to bardziej zrozumiale.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_08"); //Obietnica ta uniemozliwia przejscie na druga strone, a miejsce nie pozwala mu sie swobodnie poruszac.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_09"); //Musialby zatem dotrzymac obietnicy, by znalezc pokój.
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_10"); //Ale wszystko to wydarzylo sie dawno temu, prawdopodobnie ponad 100 lat temu.
+	AI_Output(hero, self, "Info_Mod_Halfmar_GeistGetroffen_15_11"); //Czy to mozliwe, ze jego brat jeszcze zyje?
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_12"); //Hmm, nie wiem.... W tej czesci swiata jest wiele mistyki i magii.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_13"); //Jest calkiem mozliwe, ze stalo sie cos nadprzyrodzonego, co to umozliwia.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_14"); //Sadzac po waszym sprawozdaniu, jego brat byl daleko od osiedlenia sie.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_15"); //Moze natknal sie na cos nieznanego nam. To wszystko, co moge powiedziec.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_16"); //Byc moze kiedys twoje kroki poprowadza cie tam, jesli los cie zechce.
+	AI_Output(self, hero, "Info_Mod_Halfmar_GeistGetroffen_32_17"); //Byc moze tajemnica wokól losu niespokojnego umyslu pozostanie w ciemnosci na zawsze....
 
-	B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Halfmar hält es für möglich, dass Strewak fernab der Zivilisation in dieser Welt etwas Übernatürlichem und Unbekanntem begegnete, was verhinderte, dass er über die Zeit verfiel. Vielleicht werde ich irgendwann herausfinden, was es war.");
+	B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Halfmar wierzy, ze jest mozliwe, iz Strewak natknal sie na cos nadprzyrodzonego i nieznanego daleko od cywilizacji na tym swiecie, co uchronilo go przed rozkladem w czasie. Byc moze kiedys dowiemy sie, co to bylo.");
 };
 
 INSTANCE Info_Mod_Halfmar_EXIT (C_INFO)

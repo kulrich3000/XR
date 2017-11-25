@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_7_JOIN(C_INFO)
 	condition	= DIA_BAU_7_JOIN_Condition;
 	information	= DIA_BAU_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über die Söldner?";
+	description = "Co wiesz o najemnikach?";
 };                       
 
 FUNC INT DIA_BAU_7_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_7_JOIN_Condition()
 
 FUNC VOID DIA_BAU_7_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_7_JOIN_15_00"); //Was weißt du über die Söldner?
-	AI_Output (self, hero, "DIA_BAU_7_JOIN_07_01"); //Sie sind hier um neue Mitglieder anzuwerben. Nebenbei beschützen sie uns auch noch vor allen möglichen Monstern.
+	AI_Output (hero, self, "DIA_BAU_7_JOIN_15_00"); //Co wiesz o najemnikach?
+	AI_Output (self, hero, "DIA_BAU_7_JOIN_07_01"); //Jestes tutaj, aby rekrutowac nowych czlonków. Poza tym chronia nas przed wszelkiego rodzaju potworami.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_7_PEOPLE(C_INFO)
 	condition	= DIA_BAU_7_PEOPLE_Condition;
 	information	= DIA_BAU_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT DIA_BAU_7_PEOPLE_Condition()
@@ -68,8 +68,8 @@ FUNC INT DIA_BAU_7_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_7_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_7_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, hero, "DIA_BAU_7_PEOPLE_07_01"); //Der große Hof gehört Onar. Die kleinen Höfe hier in der Nähe auch. Aber die hat er verpachtet.
+	AI_Output (hero, self, "DIA_BAU_7_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output (self, hero, "DIA_BAU_7_PEOPLE_07_01"); //Wielkie podwórze nalezy do Onar. W poblizu znajduja sie równiez male gospodarstwa rolne. Ale on go wynajal.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_BAU_7_LOCATION(C_INFO)
 	condition	= DIA_BAU_7_LOCATION_Condition;
 	information	= DIA_BAU_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir mehr über die Gegend.";
+	description = "Powiedz mi wiecej o okolicy.";
 };                       
 
 FUNC INT DIA_BAU_7_LOCATION_Condition()
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_7_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_7_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_7_LOCATION_15_00"); //Erzähl mir mehr über die Gegend.
-	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_01"); //Der große Hof hier im Osten des Tals ist der von Onar, der Hof von Sekob liegt im Norden.
-	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_02"); //Und Bengars Hof liegt auf der Hochebene im Südwesten. Du kannst sie vom Tal aus erreichen - es gibt eine große Steintreppe dorthin.
+	AI_Output (hero, self, "DIA_BAU_7_LOCATION_15_00"); //Powiedz mi wiecej o okolicy.
+	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_01"); //Duzy dziedziniec na wschód od doliny znajduje sie w dolinie Onar, dziedziniec Sekob znajduje sie na pólnocy.
+	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_02"); //Gospodarstwo Bengara znajduje sie na poludniowo-zachodnim plaskowyzu. Dojazd do niego mozna dostac sie z doliny, do której prowadza duze kamienne schody.
 };
 
 INSTANCE Info_Mod_BAU_7_Pickpocket (C_INFO)

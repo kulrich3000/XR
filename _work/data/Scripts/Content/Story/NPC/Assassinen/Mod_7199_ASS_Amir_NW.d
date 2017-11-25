@@ -1,7 +1,7 @@
 INSTANCE Mod_7199_ASS_Amir_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Amir"; 
+	name 		= "amid"; 
 	guild 		= GIL_OUT;
 	id 			= 7199;
 	voice 		= 13;

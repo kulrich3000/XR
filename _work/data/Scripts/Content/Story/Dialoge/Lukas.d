@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lukas_Hi (C_INFO)
 	information	= Info_Mod_Lukas_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist dein Beruf?";
+	description	= "Jaki jest Twój zawód?";
 };
 
 FUNC INT Info_Mod_Lukas_Hi_Condition()
@@ -16,9 +16,9 @@ FUNC INT Info_Mod_Lukas_Hi_Condition()
 
 FUNC VOID Info_Mod_Lukas_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Hi_15_00"); //Was ist dein Beruf?
-	AI_Output(self, hero, "Info_Mod_Lukas_Hi_06_01"); //Schlosser, Schreiner, Schankmädchen ... ich mache alles, wofür ich gebraucht werde.
-	AI_Output(self, hero, "Info_Mod_Lukas_Hi_06_02"); //Aber am liebsten ist mir das Handwerk.
+	AI_Output(hero, self, "Info_Mod_Lukas_Hi_15_00"); //Jaki jest Twój zawód?
+	AI_Output(self, hero, "Info_Mod_Lukas_Hi_06_01"); //Slusarze, ciesle, barmanki,.... Robie wszystko, czego potrzebuje.
+	AI_Output(self, hero, "Info_Mod_Lukas_Hi_06_02"); //Ale wole handel.
 };
 
 INSTANCE Info_Mod_Lukas_Lernen (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Lukas_Lernen (C_INFO)
 	information	= Info_Mod_Lukas_Lernen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich von dir lernen?";
+	description	= "Czy moge sie od Ciebie nauczyc?";
 };
 
 FUNC INT Info_Mod_Lukas_Lernen_Condition()
@@ -42,31 +42,31 @@ FUNC INT Info_Mod_Lukas_Lernen_Condition()
 
 FUNC VOID Info_Mod_Lukas_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_15_00"); //Kann ich von dir lernen?
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_06_01"); //Bestimmt. (lacht) Willst du für mich arbeiten oder wie?
+	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_15_00"); //Czy moge sie od Ciebie nauczyc?
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_06_01"); //Oczywiscie. (smiech) Chcesz pracowac dla mnie lub co?
 
 	Info_ClearChoices	(Info_Mod_Lukas_Lernen);
 
-	Info_AddChoice	(Info_Mod_Lukas_Lernen, "Nein.", Info_Mod_Lukas_Lernen_B);
-	Info_AddChoice	(Info_Mod_Lukas_Lernen, "Ja. Hast du was?", Info_Mod_Lukas_Lernen_A);
+	Info_AddChoice	(Info_Mod_Lukas_Lernen, "Nie.", Info_Mod_Lukas_Lernen_B);
+	Info_AddChoice	(Info_Mod_Lukas_Lernen, "Tak. Dostales cos?", Info_Mod_Lukas_Lernen_A);
 };
 
 FUNC VOID Info_Mod_Lukas_Lernen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_B_15_00"); //Nein.
+	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_B_15_00"); //Nie.
 
 	Info_ClearChoices	(Info_Mod_Lukas_Lernen);
 };
 
 FUNC VOID Info_Mod_Lukas_Lernen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_A_15_00"); //Ja. Hast du was?
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_01"); //Ha, du gefällst mir. Kommst gleich zur Sache.
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_02"); //Nur, bevor ich dir Arbeit gebe, will ich mir sicher sein, dass du 'n ganzer Mann bist.
-	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_A_15_03"); //Wie kann ich dir meine ... Männlichkeit unter Beweis stellen?
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_04"); //Hab gehört, die alljährliche Rattenjagd in Khorata soll bald beginnen. Dort treten Männer im Wettstreit gegeneinander an.
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_05"); //Wenn du da teilnimmst und einigermaßen gut abschneidest, reden wir weiter.
-	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_06"); //Sprich mit Friedel, er weist die Teilnehmer ein. Du findest ihn in einem der Häuser am Seeufer.
+	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_A_15_00"); //Tak. Dostales cos?
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_01"); //Ha, lubie Cie. Przejsc prosto do punktu.
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_02"); //Dopiero zanim oddam Ci prace, chce miec pewnosc, ze jestes czlowiekiem.
+	AI_Output(hero, self, "Info_Mod_Lukas_Lernen_A_15_03"); //Jak moge dac ci moja....? aby udowodnic meskosc?
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_04"); //Slysze, jak rozpoczynaja sie coroczne polowania na szczury w Khorata. Tam mezczyzni rywalizuja miedzy soba w konkurencji.
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_05"); //Jesli wezmiesz udzial i zrobisz to dosc dobrze, bedziemy rozmawiac.
+	AI_Output(self, hero, "Info_Mod_Lukas_Lernen_A_06_06"); //Porozmawiaj z Friedelem, przyblizy uczestnikom. Znajdziesz go w jednym z domów na brzegu jeziora.
 
 	Mod_REL_Wettstreit = 1;
 
@@ -74,7 +74,7 @@ FUNC VOID Info_Mod_Lukas_Lernen_A()
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_WETTSTREIT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_WETTSTREIT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Der Handwerker Lukas in Khorata hat mir Arbeit in Aussicht gestellt, wenn ich meinen Mut bei der Rattenjagd beweise. Dazu soll ich Friedel am Seeufer aufsuchen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Rzemieslnik Lukas z Khoraty zaproponowal mi prace, jesli udowodnie swoja odwage podczas polowania na szczury. Mam odwiedzic Friedel na brzegu jeziora.");
 
 	Info_ClearChoices	(Info_Mod_Lukas_Lernen);
 };
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Lukas_Wettstreit (C_INFO)
 	information	= Info_Mod_Lukas_Wettstreit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe bei der Rattenjagd gewonnen.";
+	description	= "Wygralem polowanie na szczury.";
 };
 
 FUNC INT Info_Mod_Lukas_Wettstreit_Condition()
@@ -100,13 +100,13 @@ FUNC INT Info_Mod_Lukas_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Lukas_Wettstreit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_00"); //Ich habe bei der Rattenjagd gewonnen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_01"); //Das hat sich schon herumgesprochen! Es wäre mir eine Ehre, wenn du mir zu Hand gehen könntest.
-	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_02"); //Was gibt es zu tun?
-	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_03"); //Ich bin mitten in der Arbeit, und mir gehen langsam die Nägel aus.
-	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_04"); //Du kannst mir vom Marktplatz drei Pakete mit Nägeln bringen, das würde mir helfen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_05"); //Frag einfach bei den Händlern dort herum, wer die Dinger verkauft.
-	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_06"); //Wird erledigt.
+	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_00"); //Wygralem polowanie na szczury.
+	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_01"); //Slowo zebralo sie! Bylbym zaszczycony, gdybys dal mi reke.
+	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_02"); //Co nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_03"); //Jestem posrodku mojej pracy i koncze sie z paznokci.
+	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_04"); //Mozesz przyniesc mi z rynku trzy paczki paznokci, co mi pomoze.
+	AI_Output(self, hero, "Info_Mod_Lukas_Wettstreit_06_05"); //Wystarczy poprosic dealerów, aby dowiedzieli sie, kto sprzedaje te rzeczy.
+	AI_Output(hero, self, "Info_Mod_Lukas_Wettstreit_15_06"); //To juz wszystko.
 
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_WETTSTREIT, LOG_SUCCESS);
 
@@ -116,7 +116,7 @@ FUNC VOID Info_Mod_Lukas_Wettstreit_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Ich soll Lukas drei Pakete Nägel vom Marktplatz in Khorata besorgen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Mam dostac lucas trzy paczki paznokci z rynku w khoracie.");
 };
 
 INSTANCE Info_Mod_Lukas_Nagelnachschub (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Lukas_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Lukas_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Drei Pakete gefüllt mit Nägeln, wie bestellt.";
+	description	= "Trzy pakiety wypelnione gwozdziami, zgodnie z zamówieniem.";
 };
 
 FUNC INT Info_Mod_Lukas_Nagelnachschub_Condition()
@@ -140,11 +140,11 @@ FUNC INT Info_Mod_Lukas_Nagelnachschub_Condition()
 
 FUNC VOID Info_Mod_Lukas_Nagelnachschub_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Nagelnachschub_15_00"); //Drei Pakete gefüllt mit Nägeln, wie bestellt.
+	AI_Output(hero, self, "Info_Mod_Lukas_Nagelnachschub_15_00"); //Trzy pakiety wypelnione gwozdziami, zgodnie z zamówieniem.
 
 	B_GiveInvItems	(hero, self, ItMi_Nagelpaket, 3);
 
-	AI_Output(self, hero, "Info_Mod_Lukas_Nagelnachschub_06_01"); //Sehr gut gemacht! Dafür lasse ich auch was springen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Nagelnachschub_06_01"); //Bardzo dobrze zrobione! Dlatego tez pozwalam na skakanie po rzeczy.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Lukas_NochWasZuTun (C_INFO)
 	information	= Info_Mod_Lukas_NochWasZuTun_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du sonst noch was zu tun für mich?";
+	description	= "Masz dla mnie cos innego do zrobienia?";
 };
 
 FUNC INT Info_Mod_Lukas_NochWasZuTun_Condition()
@@ -178,9 +178,9 @@ FUNC INT Info_Mod_Lukas_NochWasZuTun_Condition()
 
 FUNC VOID Info_Mod_Lukas_NochWasZuTun_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_NochWasZuTun_15_00"); //Hast du sonst noch was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Lukas_NochWasZuTun_06_01"); //Nein, ich komme gut zurecht und bin wirklich dankbar für deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Lukas_NochWasZuTun_06_02"); //Frag doch mal meinen Lehrling, ob er Probleme hat, wenn du das noch nicht getan hast.
+	AI_Output(hero, self, "Info_Mod_Lukas_NochWasZuTun_15_00"); //Masz dla mnie cos innego do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Lukas_NochWasZuTun_06_01"); //Jestem bardzo wdzieczny za pomoc.
+	AI_Output(self, hero, "Info_Mod_Lukas_NochWasZuTun_06_02"); //Dlaczego nie pytasz mojego praktykanta, jesli masz problemy, jesli jeszcze tego nie zrobiles?
 };
 
 INSTANCE Info_Mod_Lukas_Unruhen (C_INFO)
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Lukas_Unruhen (C_INFO)
 	information	= Info_Mod_Lukas_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Würdest du Anselm beerben wollen?";
+	description	= "Czy chcialbys odziedziczyc Anselm?";
 };
 
 FUNC INT Info_Mod_Lukas_Unruhen_Condition()
@@ -204,8 +204,8 @@ FUNC INT Info_Mod_Lukas_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Lukas_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen_15_00"); //Würdest du Anselm beerben wollen?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen_06_01"); //Hmm, klar. Ich würd einige Fehler, die Anselm gemacht hat, wieder ausbügeln.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen_15_00"); //Czy chcialbys odziedziczyc Anselm?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen_06_01"); //Hmm, na pewno. Usunelam niektóre bledy popelnione przez Anselm.
 };
 
 INSTANCE Info_Mod_Lukas_Unruhen2 (C_INFO)
@@ -216,7 +216,7 @@ INSTANCE Info_Mod_Lukas_Unruhen2 (C_INFO)
 	information	= Info_Mod_Lukas_Unruhen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für Fehler?";
+	description	= "Jakie bledy?";
 };
 
 FUNC INT Info_Mod_Lukas_Unruhen2_Condition()
@@ -230,10 +230,10 @@ FUNC INT Info_Mod_Lukas_Unruhen2_Condition()
 
 FUNC VOID Info_Mod_Lukas_Unruhen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen2_15_00"); //Was für Fehler?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_01"); //Na, die Freudenspender-Gesetze für Stadtbewohner zu lockern, zum Beispiel. Gibt doch kaum noch einen, der richtig arbeitet.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_02"); //Anselm hat die Zügel schleifen lassen. Einmal pro Monat hat er jemanden willkürlich einbuchten lassen und ihm später gnädig die Freiheit geschenkt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_03"); //Das Diebespack läuft auf offener Straße herum.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen2_15_00"); //Jakie bledy?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_01"); //No cóz, rozluznienie praw przyjemnosci - na przyklad dla mieszkanców miast. Malo kto nie zostawil nikogo, kto dzialalby prawidlowo.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_02"); //Anselm pozwolil na zsuniecie sie zalewki. Raz w miesiacu arbitralnie uwiezil kogos i dal mu wolnosc.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen2_06_03"); //Pakiet zlodziei biegnie po otwartej drodze.
 };
 
 INSTANCE Info_Mod_Lukas_Unruhen3 (C_INFO)
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Lukas_Unruhen3 (C_INFO)
 	information	= Info_Mod_Lukas_Unruhen3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie stehst du zum Buddler-Konflikt?";
+	description	= "Jak czujesz sie o konflikcie Buddlera?";
 };
 
 FUNC INT Info_Mod_Lukas_Unruhen3_Condition()
@@ -258,14 +258,14 @@ FUNC INT Info_Mod_Lukas_Unruhen3_Condition()
 
 FUNC VOID Info_Mod_Lukas_Unruhen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen3_15_00"); //Wie stehst du zum Buddler-Konflikt?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_01"); //Da gibt's ja wohl nur eine Position! Die Buddler müssen für ihren Verrat büßen.
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen3_15_02"); //Wie stellst du dir das vor?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_03"); //Wir stellen einen ordentlichen Trupp zusammen und gehen gegen sie vor. Wenn sie sich wehren, werden sie getötet.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_04"); //Die übrigen verbringen den Rest ihres Lebens mit 'ner dicken Steinkugel am Fuß.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_05"); //Jedenfalls kann ich solchen Störenfrieden meinen Lebtag kein Vertrauen mehr entgegen bringen.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen3_15_00"); //Jak czujesz sie o konflikcie Buddlera?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_01"); //Jest tylko jedna pozycja! Buddysci musza placic za swoja zdrade.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen3_15_02"); //Jak sobie to wyobrazasz?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_03"); //Zlozymy odpowiedni oddzial i podejmiemy dzialania przeciwko nim. Jesli sie sprzeciwia, to zostaja zabici.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_04"); //Reszta spedza reszte zycia z wielka kamienna pilka na nogach.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen3_06_05"); //Tak czy owak nie moge zaufac takim problemom w moim zyciu.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Lukas ist der Ansicht, dass die Bergleute mit Gewalt zur Ruhe gebracht werden sollten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Lukasz uwaza, ze górnicy powinni odpoczac sila.");
 };
 
 INSTANCE Info_Mod_Lukas_Unruhen4 (C_INFO)
@@ -276,7 +276,7 @@ INSTANCE Info_Mod_Lukas_Unruhen4 (C_INFO)
 	information	= Info_Mod_Lukas_Unruhen4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die ehrenvolle Aufgabe ...";
+	description	= "Mam zaszczytne zadanie....";
 };
 
 FUNC INT Info_Mod_Lukas_Unruhen4_Condition()
@@ -289,15 +289,15 @@ FUNC INT Info_Mod_Lukas_Unruhen4_Condition()
 
 FUNC VOID Info_Mod_Lukas_Unruhen4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_00"); //Ich habe die ehrenvolle Aufgabe ...
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_01"); //Ja, schon gut. Wollen wir den verfluchten Aufständischen ordentlich Feuer unterm Hintern machen, was?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_02"); //Gut, hier ist der Plan: Ich gebe dir einen kleinen Trupp guter Männer, und ihr räuchert das Ungeziefernest bis auf den letzten Mann aus.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_03"); //Wenn sich welche ergeben ... nehmt sie fest. Aber seid nicht zu zimperlich.
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_04"); //Wen soll ich mitnehmen?
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_05"); //Drei harte Kerle: Friedel, Davon und den Henker. Die haben 'ne Portion Zunder im Arsch; musst sie nur in Brand setzen.
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_06"); //Bin schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_00"); //Mam zaszczytne zadanie....
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_01"); //Tak, wszystko w porzadku. Oswietlmy palacych sie powstanców pod ich tylkiem, czyzbysmy my?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_02"); //No cóz, oto plan: kupie ci maly oddzial dobrych mezczyzn, a ty wypuszczisz szkodnik do gniazda ostatniego czlowieka.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_03"); //Ewentualne zdarzenia..... Aresztowac ich. Ale nie badzcie zbyt piskliwi.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_04"); //Kto powinien mnie zabrac ze soba?
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen4_06_05"); //Trzech twardych facetów: Friedela, Vona i kata. Oni maja kawalek opróznia ich tylek; Wystarczy tylko podpalic je.
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen4_15_06"); //Jestem na drodze.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ich soll mir Friedel, Davon und den Henker abholen und dann die Bergleute gewaltsam aus ihrem Bollwerk vertreiben.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Mam zabrac Friedela i kata, a nastepnie sila wypedzic górników z muru.");
 
 	B_StartOtherRoutine	(self, "STADTHALTER");
 
@@ -331,7 +331,7 @@ INSTANCE Info_Mod_Lukas_Unruhen5 (C_INFO)
 	information	= Info_Mod_Lukas_Unruhen5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Bergarbeiter sind alle tot.";
+	description	= "Wszyscy górnicy sa umarli.";
 };
 
 FUNC INT Info_Mod_Lukas_Unruhen5_Condition()
@@ -344,11 +344,11 @@ FUNC INT Info_Mod_Lukas_Unruhen5_Condition()
 
 FUNC VOID Info_Mod_Lukas_Unruhen5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen5_15_00"); //Die Bergarbeiter sind alle tot.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen5_06_01"); //Recht so, das haben sie verdient. Ich bin mit dir zufrieden.
-	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen5_06_02"); //Ab jetzt wird in Khorata härter durchgegriffen werden, dafür sorge ich schon. Diese Stadt wird nicht so enden wie der Hofstaat!
+	AI_Output(hero, self, "Info_Mod_Lukas_Unruhen5_15_00"); //Wszyscy górnicy sa umarli.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen5_06_01"); //To prawda, oni zasluguja na to. Jestem z Toba zadowolony.
+	AI_Output(self, hero, "Info_Mod_Lukas_Unruhen5_06_02"); //Od tej pory Khorata bedzie troche trudniejsza, to sie upewnie. To miasto nie wyladuje jak sad!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Die Opfer der Bergleute waren wohl nötig, um den Konflikt zu lösen. Ab jetzt sollte ich mir aus der Politik heraushalten können.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ofiary górników byly prawdopodobnie niezbedne do rozwiazania konfliktu. Od teraz powinienem byc w stanie trzymac sie z dala od polityki.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_UNRUHEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(800);
@@ -378,8 +378,8 @@ FUNC INT Info_Mod_Lukas_Theodorus_Condition()
 
 FUNC VOID Info_Mod_Lukas_Theodorus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukas_Theodorus_06_00"); //So ein verlogener Strauchdieb soll unser neuer Stadthalter sein, mit einem ortsfremden Lakaien, der uns nicht einmal kennt?
-	AI_Output(self, hero, "Info_Mod_Lukas_Theodorus_06_01"); //Lieber sterbe ich, als dass ich eine solche Schmach hinnehme!
+	AI_Output(self, hero, "Info_Mod_Lukas_Theodorus_06_00"); //Takim zlodziejem lezacym w buszu powinien byc nasz nowy gubernator, z obcym brakiem, który nawet nas nie zna?
+	AI_Output(self, hero, "Info_Mod_Lukas_Theodorus_06_01"); //Wolalbym raczej umrzec niz przyjac taka hanbe!
 
 	AI_StopProcessInfos	(self);
 
@@ -395,7 +395,7 @@ INSTANCE Info_Mod_Lukas_Plagenquest (C_INFO)
 	information	= Info_Mod_Lukas_Plagenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mir scheint, ihr braucht einen Kammerjäger.";
+	description	= "Wydaje mi sie, ze potrzebujesz eksterminatora.";
 };
 
 FUNC INT Info_Mod_Lukas_Plagenquest_Condition()
@@ -410,17 +410,17 @@ FUNC INT Info_Mod_Lukas_Plagenquest_Condition()
 FUNC VOID Info_Mod_Lukas_Plagenquest_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST01");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_01"); //Ja, wir hatten schon einen ganzen Trupp Hammerjäger durch die Stadt geschickt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_02"); //Aber auch mit ihren Hämmern konnten sie dem Ungeziefer keinen Einhalt gebieten.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_03"); //Egal wie oft man drauf schlägt, sie kommen wieder und in Gesellschaft vieler ihrer Artgenossen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_01"); //Tak, wyslalismy juz przez miasto kilka mlotków mysliwych.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_02"); //Ale nawet mlotkami nie udalo sie powstrzymac szkodników.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_03"); //Bez wzgledu na to, jak czesto ich bijesz, wracaja oni do nas i w towarzystwie wielu swoich rodaków.
 	B_Say	(hero, self, "$PLAGENQUEST02");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_05"); //In der Tat, ich forsche gerade in den Chroniken der Stadt nach und bin da tatsächlich auf etwas gestoßen ...
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_06"); //Es wird aber noch ein Weilchen dauern, bis ich mir den Text vollständig erschlossen habe.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_05"); //W rzeczywistosci, obecnie badam kroniki miasta i spotkalem sie z czyms.....
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_06"); //Minie jednak troche czasu, zanim przejde do pelnej analizy tekstu.
 	B_Say	(hero, self, "$PLAGENQUEST03");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_08"); //Ja, du kannst mal dein Glück als Hammerjäger im Gerichtsgebäude versuchen, wo sich im Moment besonders viele Drecksviecher tummeln.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_09"); //Vielleicht hast du ja mehr Erfolg.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_08"); //Tak, mozesz spróbowac szczescia jako mlotkowiec na dworze, w którym obecnie jest wiele brudnych stworzen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_06_09"); //Moze odniesiesz wiekszy sukces.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Lukas scheint in den Chroniken der Stadt auf Anhaltspunkte gestoßen zu sein. Bis er sie vollständig ergründet hat, soll ich mich im Gerichtsgebäude im Insektenjagen erproben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Wydaje sie, ze Lukasz znalazl pewne wskazówki w kronikach miasta. Do czasu, gdy on je do konca zglebi, mam wypróbowac mnie w dworcu do polowania na owady.");
 
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
@@ -458,25 +458,25 @@ FUNC INT Info_Mod_Lukas_Plagenquest_02_Condition()
 
 FUNC VOID Info_Mod_Lukas_Plagenquest_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_00"); //Ahh, gut, dass du vorbeikommst, ich habe etwas wichtiges entdeckt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_01"); //Die Plage, die zurzeit die Stadt heimsucht, hatte es bereits vor vielen Jahrhunderten gegeben – nicht lange, nach der Stadtgründung.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_02"); //Um der Stadt und ihrer Umgebung den Segen der Götter zu sichern, wurde damals den Göttern mit Tieropfern gehuldigt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_03"); //Jeder hatte die Pflicht eine bestimmte Anzahl an Tieren zu opfern.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_04"); //Einer ihrer Gründerväter war jedoch so geizig, dass er nicht Schafe oder Molerat, sondern Insekten opferte.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_05"); //Die Götter waren darüber so erzürnt, dass sie den Wunsch der Menschen nach reicher Tierpopulation vor allem auf die Insekten der Umgebung übertrugen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_00"); //Ach, dobrze, zeby cie zobaczyc, odkrylem cos waznego.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_01"); //Choroba, która obecnie dotyka miasto, istniala juz wiele stuleci temu - niedlugo po jego powstaniu.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_02"); //Aby zabezpieczyc blogoslawienstwo bogów dla miasta i jego otoczenia, w holdzie bogom uczyniono wówczas poswiecenia zwierzat.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_03"); //Kazdy mial obowiazek poswiecic pewna liczbe zwierzat.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_04"); //Jednak jeden z ich ojców zalozycieli byl tak skapy, ze zamiast owcy czy molate poswiecil owady.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_05"); //Bogowie byli tak wsciekli, ze przenosili ludzkie pragnienie bogatej populacji zwierzat na owady srodowiska.
 	B_Say	(hero, self, "$PLAGENQUEST04");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_07"); //Nun, mit der chemischen Keule.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_07"); //No cóz, z klubem chemicznym.
 	B_Say	(hero, self, "$PLAGENQUEST05");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_09"); //Ja, lange Zeit war man völlig ratlos und es schien so, als müsse man die Stadt aufgeben.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_10"); //Doch dann wurde einem rechtschaffenden und ehrbaren Bürger namens Chemos ein Traum gesandt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_11"); //Er erhielt die Anleitung zum Bau einer Waffe, welche die Plagegeister bannen konnte.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_12"); //Daher muss auch unser Brauch mit den Stadthämmern zum Kampf gegen die Insekten kommen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_13"); //Damals unterschieden sich Hämmer und Keulen nämlich noch nicht grundlegend.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_14"); //Unser Gesetz dazu stammt erst aus etwas späterer Zeit, als die Hämmer ihre charakteristische Form erhielten und die Keulen aus praktischen Gründen ablösten.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_09"); //Tak, przez dlugi czas bylo sie zupelnie bezradnym i wydawalo sie, ze trzeba sie bylo porzucic miasto.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_10"); //Ale wtedy sprawiedliwy i szanowany obywatel Chemos zostal wysypany snem.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_11"); //Otrzymal on instrukcje jak zbudowac bron, która moglaby wypedzic zaraze.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_12"); //Dlatego wlasnie nasz zwyczaj z mlotkami miejskimi musi przyjsc do walki z owadami.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_13"); //Mloty i kluby nie róznily sie wówczas zasadniczo.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_14"); //Nasze prawo w tym zakresie siega nieco pózniej, kiedy to mlotki nadano im charakterystyczny ksztalt, a kluby zostaly zastapione z powodów praktycznych.
 	B_Say	(hero, self, "$PLAGENQUEST06");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_16"); //Nein, leider nicht mehr. Und die Anfertigung einer solchen Waffe ist nicht ganz unkompliziert. Ich habe die Anleitung gefunden ...
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_16"); //Nie, juz nie boje sie. A produkcja takiej broni nie jest nieskomplikowana. Znalazlem te instrukcje.....
 	B_Say	(hero, self, "$PLAGENQUEST07");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_18"); //Hier hast du eine Abschrift davon.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_18"); //Oto jej kopia.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_ChemischeKeule, 1);
 
@@ -485,11 +485,11 @@ FUNC VOID Info_Mod_Lukas_Plagenquest_02_Info()
 	B_HeroFakeScroll ();
 
 	B_Say	(hero, self, "$PLAGENQUEST09");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_21"); //(erfreut) Wirklich? Du würdest uns allen einen großen Dienst damit erweisen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_22"); //Sobald du alles zusammen hast, begib dich wieder hier her und händige die Materialien unserem Schmied aus.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_23"); //Und eine Keule werden wir schon irgendwo in der Stadt auftreiben. Ich danke dir.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_21"); //Czy to prawda? Bedzie pan nam wszystkim przysluzyl sie swietnie.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_22"); //Jak tylko bedziesz miec wszystko razem, wróc tutaj i oddaj materialy do naszego kowala.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_02_06_23"); //A gdzies w miescie znajdziemy klub. Dziekuje, dziekuje.
 
-	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, die Insektenplage beruht also auf einer Strafe der Götter für einen Frevel, der begangen wurde.", "Ok, ich darf mich jetzt auf die Suche nach dem Material für die chemische Keule begeben, welche die Mistviecher bannen kann. Eine Keule müssten sie in Khorata schon selbst auftreiben können ...");
+	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, plaga owadów opiera sie wiec na karze dla bogów za popelnione zniewagi.", "W porzadku, teraz moge szukac chemicznego materialu klubowego, który moze wypedzic bydlo. W Khoracie powinni byc w stanie sami znalezc klub w Khoracie....");
 
 	B_GivePlayerXP	(200);
 
@@ -517,10 +517,10 @@ FUNC INT Info_Mod_Lukas_Plagenquest_03_Condition()
 
 FUNC VOID Info_Mod_Lukas_Plagenquest_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_03_06_00"); //Ich habe gehört, du hast die Keule. Jetzt ist es an der Zeit die Plagegeister aus der Stadt zu verjagen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_03_06_01"); //Am Marktplatz haben sich besonders viele von den Viechern gesammelt. Nimm die chemische Keule und vernichte sie.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_03_06_00"); //Slysze, ze dostales klub. Teraz nadszedl czas, aby wypedzic szkodniki z miasta.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_03_06_01"); //Wiele zwierzat zebralo sie na targowisku. Wez klub chemiczny i zniszcz go.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Jetzt ist es an der Zeit zu testen, ob die chemische Keule etwas taugt. Ich soll die ganzen Drecksplagen erledigen, die sich am Marktplatz gesammelt haben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Teraz nadszedl czas, aby sprawdzic, czy klub chemiczny dziala. Mam do czynienia z wszystkimi lupkami, które zebraly sie na rynku.");
 
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
@@ -545,7 +545,7 @@ INSTANCE Info_Mod_Lukas_Plagenquest_04 (C_INFO)
 	information	= Info_Mod_Lukas_Plagenquest_04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Keule konnte den Insekten Einhalt gebieten. Ich habe sie alle bezwungen.";
+	description	= "Klub byl w stanie powstrzymac owady. Pokonalem ich wszystkich.";
 };
 
 FUNC INT Info_Mod_Lukas_Plagenquest_04_Condition()
@@ -563,22 +563,22 @@ FUNC INT Info_Mod_Lukas_Plagenquest_04_Condition()
 FUNC VOID Info_Mod_Lukas_Plagenquest_04_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST10");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_01"); //Das ist großartig und der erste Schritt um das Übel endgültig zu bannen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_01"); //To wspanialy i pierwszy krok na drodze do ostatecznego wygnania zla.
 	B_Say	(hero, self, "$PLAGENQUEST11");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_03"); //Ja, leider mussten wir feststellen, dass weiterhin neue Parasiten aus den umliegenden Wäldern kommen.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_04"); //Irgendwo dort muss die Wurzel des Übels sein ... der ominöse Riesenbug, von dem die Quellen sprachen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_03"); //Tak, niestety dowiedzielismy sie, ze nowe pasozyty nadal pochodza z okolicznych lasów.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_04"); //Gdzies tam, gdzie musi byc korzen zla...... zlowieszczy olbrzymi blad, o którym mówily zródla.
 	B_Say	(hero, self, "$PLAGENQUEST12");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_06"); //Es gibt da aber etwas, besser gesagt jemanden, der dir dabei helfen könnte.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_06"); //Jest cos, a raczej ktos, kto moze Ci w tym pomóc.
 	B_Say	(hero, self, "$PLAGENQUEST13");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_08"); //Ein Bürger unserer Stadt. Sein Name ist Axon und er trägt das chemische Blut in sich, wie ich vor ein paar Stunden herausgefunden habe.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_08"); //Obywatel naszego miasta. Jego imie jest aksonem i nosi krew chemiczna, jak dowiedzialem sie kilka godzin temu.
 	B_Say	(hero, self, "$PLAGENQUEST14");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_10"); //Nun, zum einen geben die Stammbäume klare Hinweise darauf und dann ... nun ...
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_10"); //Cóz, z jednej strony rodowody daja jasne wskazówki, a z drugiej..... no cóz.....
 	B_Say	(hero, self, "$PLAGENQUEST15");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_12"); //... dann haben wir noch die chemische Keule bei ihm gefunden. Sie hing die ganze Zeit im Wohnzimmer seines Hauses.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_12"); //... Znalezlismy z nim klub chemiczny. Caly czas wisiala w salonie jego domu.
 	B_Say	(hero, self, "$PLAGENQUEST16");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_14"); //Jedenfalls sollte er dir dabei helfen können das Käfergetier zu erspüren, den Riesenbug zu entdecken und zu vernichten. Er wartet bereits vor der Stadt auf dich.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_04_06_14"); //W kazdym razie, powinien byc w stanie pomóc Ci wyczuc chrzaszcze, odkryc i zniszczyc olbrzymi blad. On juz czeka na Ciebie poza miastem.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpf, das wird ja immer besser. Die ganze Zeit hing die chemische Keule bei Axon, einem Nachfahren des Chemos ... Nun denn, jetzt darf ich also mit ihm den Riesenbug im Wald erlegen. Axon erwartet mich vor der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpff, to jest coraz lepsze i lepsze. Caly czas klub chemiczny wisial wokól Axona, potomka chemoo.... No cóz, teraz pozwolono mi strzelac z nim do wielkiego bakcyla w lesie. Axon czeka na mnie poza miastem.");
 
 	B_StartOtherRoutine	(Mod_7415_OUT_Axon_REL, "VORSTADT");
 	AI_Teleport	(Mod_7415_OUT_Axon_REL, "REL_CITY_001");
@@ -592,7 +592,7 @@ INSTANCE Info_Mod_Lukas_Plagenquest_05 (C_INFO)
 	information	= Info_Mod_Lukas_Plagenquest_05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es ist vollbracht. Der Riesenbug ist bezwungen.";
+	description	= "To sie dzieje. Ogromny luk zostaje pokonany.";
 };
 
 FUNC INT Info_Mod_Lukas_Plagenquest_05_Condition()
@@ -608,10 +608,10 @@ FUNC INT Info_Mod_Lukas_Plagenquest_05_Condition()
 FUNC VOID Info_Mod_Lukas_Plagenquest_05_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST17");
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_05_06_01"); //Das ist großartig. Du hast unserer Stadt einen Dienst von unschätzbarem Wert erwiesen und das Übel gebannt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_05_06_02"); //Nimm, dieses Gold und den Stadthammer zum Dank. Der Segen der Götter möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_05_06_01"); //To wspaniale. Uczyniles nasze miasto sluzba o nieocenionej wartosci i rozwiales zlo.
+	AI_Output(self, hero, "Info_Mod_Lukas_Plagenquest_05_06_02"); //Wez to zloto i mlotek miejski jako podziekowania. Niech wam towarzyszy blogoslawienstwo bogów.
 
-	B_ShowGivenThings	("1000 Gold und Stadthammer erhalten");
+	B_ShowGivenThings	("1000 Otrzymane zloto i mlot miejski");
 
 	CreateInvItems	(hero, ItMw_Stadthammer, 1);
 	CreateInvItems	(hero, ItMi_Gold, 1000);
@@ -650,22 +650,22 @@ FUNC INT Info_Mod_Lukas_Andre_Condition()
 
 FUNC VOID Info_Mod_Lukas_Andre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_00"); //Guten Morgen, Soldat. Oder sollte ich dich lieber Hauptmann nennen?
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_00"); //Dobry poranek, zolnierz. Czy tez powinienem wezwac Pana kapitana?
 	B_Say	(hero, self, "$HEROBOTQUEST01");
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_02"); //Lord Andres Plan hat funktioniert, allerdings gab es keine Möglichkeit einen Ausgang in den Hochofen zu implementieren, deshalb hat er dich überwältigt, selbst das Kostüm angezogen und den Roboter in den Hochofen gelockt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_03"); //Wir haben einen versiegelten Umschlag neben dir gefunden. Darin erklärte Andre die ganze Angelegenheit und hat dich zu seinem Nachfolger ernannt.
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_04"); //Aber hier ... die Details kannst du selbst nachlesen.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_02"); //Pan Andres planowal dzialac, ale nie bylo mozliwosci wyjscia z wielkiego pieca, wiec on cie wyprzedzil, wlozyl kostium i zwabil robota do wielkiego pieca.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_03"); //Znalezlismy obok Ciebie zapieczetowana koperte. W nim Andre wyjasnil cala sprawe i mianowal cie swoim nastepca.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_04"); //Ale tutaj.... mozesz sam przeczytac szczególy.
 
 	B_GiveInvItems	(self, hero, ItWr_AndreAbschied, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_05"); //Und diesen Schlüssel soll ich dir geben. Vermutlich zu seiner Kiste im Hauptmannzimmer.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_05"); //A ja powinienem wam dac ten klucz. Prawdopodobnie do pudelka w pokoju kapitana.
 
 	B_GiveInvItems	(self, hero, ItKe_Andre, 1);
 
 	B_Say	(hero, self, "$HEROBOTQUEST02");
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_06"); //Genau. Die Trauerfeier hast du verpasst, du hast geschlagene 32 Stunden durchgeschlafen. Der alte Haudegen scheint in ganz guter Form gewesen zu sein.
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_07"); //Wenn du dich verabschieden willst, Andre liegt mittlerweile am Friedhof. Zumindest seine Asche. Aber ruh' dich zuerst aus, er läuft dir schon nicht weg.
-	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_08"); //Ach ja, bevor ich's vergesse: Der Betreiber des Hochofens hat nach dir gefragt, schau mal bei ihm vorbei.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_06"); //Dokladnie. Brakowalo Ci nabozenstwa, spales przez 32 godziny snu. Stary konik wydaje sie byc w bardzo dobrej formie.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_07"); //Jesli chcesz sie pozegnac, Andre jest teraz na cmentarzu. Przynajmniej jego prochy. Ale odpocznij najpierw, nie ucieknie od ciebie.
+	AI_Output(self, hero, "Info_Mod_Lukas_Andre_06_08"); //O tak, zanim zapomne: operator wielkiego pieca poprosil cie o to, sprawdz go.
 
 	B_Göttergefallen(1, 5);
 
@@ -673,10 +673,10 @@ FUNC VOID Info_Mod_Lukas_Andre_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Roboter ist besiegt, jedoch musste sich Lord Andre opfern, um dies zu erreichen. Nun hat er mich zu seinem Nachfolger ernannt.", "Andre hat sich tatsächlich geopfert um den Roboter zu vernichten. In einem Schreiben hat er mich zu seinem Nachfolger ernannt und mir einen Schlüssel hinterlegt, der wahrscheinlich zu seiner Truhe in der Kaserne führt.");
+	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Robot jest pokonany, ale Lord Andre musial poswiecic sie, aby to osiagnac. Teraz mianowal mnie swoim nastepca.", "Andre faktycznie poswiecil sie, aby zniszczyc robota. W liscie nazwal mnie swoim nastepca i dal mi klucz, który prawdopodobnie prowadzi mnie do jego klatki piersiowej w koszarach.");
 	B_SetTopicStatus	(TOPIC_MOD_PAL_BOT, LOG_SUCCESS);
 
-	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Betreiber des Hochofens Robert will mich sprechen. Ich sollte dort mal vorbeischauen und fragen, worum es geht.");
+	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Operator wielkiego pieca Robert chce mnie zobaczyc. Powinienem zatrzymac sie tam i zapytac, o co chodzi.");
 };
 
 INSTANCE Info_Mod_Lukas_Judith (C_INFO)
@@ -687,7 +687,7 @@ INSTANCE Info_Mod_Lukas_Judith (C_INFO)
 	information	= Info_Mod_Lukas_Judith_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Wie geht's eigentlich dir und deiner Frau?";
+	description 	= "Jak ty i twoja zona?";
 };                       
 
 FUNC INT Info_Mod_Lukas_Judith_Condition()
@@ -700,13 +700,13 @@ FUNC INT Info_Mod_Lukas_Judith_Condition()
 
 FUNC VOID Info_Mod_Lukas_Judith_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Judith_15_00"); //Wie geht's eigentlich dir und deiner Frau?
-	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_01"); //Mir geht's gut. Aber komisch, dass du das gerade fragst.
-	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_02"); //Judith hat mir erst vor Kurzem gebeichtet, dass sie eine Weile fremdgegangen ist.
-	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_03"); //Aber sie meint, das wird nicht wieder vorkommen.
-	AI_Output(hero, self, "Info_Mod_Lukas_Judith_15_04"); //Und du hast ihr verziehen?
-	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_05"); //Na ja, 'ne neue Alte krieg ich in meinem Alter nicht mehr.
-	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_06"); //Da behalt ich lieber die, die ich schon hab.
+	AI_Output(hero, self, "Info_Mod_Lukas_Judith_15_00"); //Jak ty i twoja zona?
+	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_01"); //Mam racje. Zabawny powinien pan teraz o to prosic.
+	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_02"); //Judyta dopiero niedawno przyznala mi sie, ze przez jakis czas oszukiwala.
+	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_03"); //Ale ona mówi, ze to sie nie powtórzy.
+	AI_Output(hero, self, "Info_Mod_Lukas_Judith_15_04"); //I wybaczyles jej?
+	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_05"); //Cóz, nie moge dostac nowa staruszke w moim wieku.
+	AI_Output(self, hero, "Info_Mod_Lukas_Judith_06_06"); //Wole raczej trzymac te, które juz mam.
 
 	B_GivePlayerXP	(100);
 };
@@ -719,7 +719,7 @@ INSTANCE Info_Mod_Lukas_Freudenspender (C_INFO)
 	information	= Info_Mod_Lukas_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Lust auf Freudenspender?";
+	description 	= "Poczuj sie jak danie radosci?";
 };                       
 
 FUNC INT Info_Mod_Lukas_Freudenspender_Condition()
@@ -734,8 +734,8 @@ FUNC INT Info_Mod_Lukas_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Lukas_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lukas_Freudenspender_15_00"); //Lust auf Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Lukas_Freudenspender_06_01"); //So ein Teufelszeug! Hau ab!
+	AI_Output(hero, self, "Info_Mod_Lukas_Freudenspender_15_00"); //Poczuj sie jak danie radosci?
+	AI_Output(self, hero, "Info_Mod_Lukas_Freudenspender_06_01"); //rzeczy diabelskie! Wyjsc stad!
 };
 
 INSTANCE Info_Mod_Lukas_Pickpocket (C_INFO)

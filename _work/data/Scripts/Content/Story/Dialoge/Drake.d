@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Drake_Hi_Condition()
 
 FUNC VOID Info_Mod_Drake_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drake_Hi_11_00"); //Ahh, ein Neuer.
-	AI_Output(hero, self, "Info_Mod_Drake_Hi_15_01"); //Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Drake_Hi_11_02"); //Naja, du gehörst nicht zu uns Jungs, die wir damals hier verschüttet wurden.
+	AI_Output(self, hero, "Info_Mod_Drake_Hi_11_00"); //Ahh, nowy.
+	AI_Output(hero, self, "Info_Mod_Drake_Hi_15_01"); //Co myslisz?
+	AI_Output(self, hero, "Info_Mod_Drake_Hi_11_02"); //No cóz, nie jestes jednym z tych chlopaków, których wtedy pochowano.
 };
 
 INSTANCE Info_Mod_Drake_WhatHappened (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Drake_WhatHappened (C_INFO)
 	information	= Info_Mod_Drake_WhatHappened_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist damals passiert?";
+	description	= "Co sie wtedy stalo?";
 };
 
 FUNC INT Info_Mod_Drake_WhatHappened_Condition()
@@ -41,9 +41,9 @@ FUNC INT Info_Mod_Drake_WhatHappened_Condition()
 
 FUNC VOID Info_Mod_Drake_WhatHappened_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drake_WhatHappened_15_00"); //Was ist damals passiert?
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened_11_01"); //Du bist wohl noch nicht lange dabei, oder?
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened_11_02"); //Ach, weißt du, ich würde dir ja gerne alles erzählen, aber von der staubigen Luft in der Mine ist mir gerade die Kehle so trocken, wenn du verstehst ...
+	AI_Output(hero, self, "Info_Mod_Drake_WhatHappened_15_00"); //Co sie wtedy stalo?
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened_11_01"); //Nie byles juz za dlugo, czy?
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened_11_02"); //O, wiesz, uwielbiam ci wszystko powiedziec, ale zakurzone powietrze w kopalni sprawia, ze moje gardlo jest tak suche, jesli rozumiesz,....
 };
 
 INSTANCE Info_Mod_Drake_WhatHappened2 (C_INFO)
@@ -54,7 +54,7 @@ INSTANCE Info_Mod_Drake_WhatHappened2 (C_INFO)
 	information	= Info_Mod_Drake_WhatHappened2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(einen ausgeben)";
+	description	= "(jedno wyjscie)";
 };
 
 FUNC INT Info_Mod_Drake_WhatHappened2_Condition()
@@ -72,14 +72,14 @@ FUNC VOID Info_Mod_Drake_WhatHappened2_Info()
 
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_00"); //Ahh, das tat gut. Ok, wo waren wir ... genau ... also, da als wir ohne an etwas böses zu denken in der Mine saßen und jeder seinen Job gemacht hat, fing die Erde auf einmal an zu beben und zu rumpeln, dass es nichts auf seinem Fleck hielt.
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_01"); //Es ist dann auch so einiges eingestürzt und viele Jungs fanden den Tod ... nur ein paar Meter hinter mir wurde zum Beispiel Santino von Felsen erschlagen.
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_02"); //Was aber für die Überlebenden am schlimmsten war: Der Eingang war von tonnenschweren Felsbrocken versperrt ... aussichtslos da je wieder raus zukommen.
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_03"); //Wir hatten alle schon unseren Frieden mit dem Jenseits gemacht, als nach zwei Wochen die Dämonenmagier mit ihren Kreaturen plötzlich den Weg nach draußen freigehauen hatten ... nicht vom alten Eingang aus, sondern über eine unbekannte Festung!
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_04"); //Kannst du dir das vorstellen?! Das waren hunderte Meter Gestein! Dafür hätten 100 Buddler paar Jahrzehnte gebraucht!
-	AI_Output(hero, self, "Info_Mod_Drake_WhatHappened2_15_05"); //Und die haben dann die Mine übernommen?
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_06"); //Klar, die haben ja auch die Mine wieder freigelegt. Von uns sind die meisten dageblieben und haben sich ihnen angeschlossen.
-	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_07"); //Hat sich von selbst verstanden, nach den Geschehnissen.
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_00"); //Ahh, to bylo dobre. No cóz, gdzie bylismy? Dokladnie..... Kiedy wiec siedzielismy w mojej kopalni bez zastanawiania sie nad tym, co zle i wszyscy wykonali swoja prace, ziemia zaczela trzasc sie i szumic i nie trzymala sie niczego na miejscu.
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_01"); //Upadlo to bardzo wiele i wielu chlopców zginelo..... na przyklad kilka metrów za mna, Santino zostalo zabite skalami.
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_02"); //Ale co bylo najgorsze dla ocalalych: Wejscie zostalo zablokowane przez ogromne glazy.... Beznadziejnie nigdy nie wyjdziemy z niej ponownie.
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_03"); //Wszyscy osiagnelismy juz pokój z zaswiatami, kiedy po dwóch tygodniach magicy demonów i ich stworzenia nagle wyszli z drogi.... nie od starego wejscia, ale przez nieznana fortece!
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_04"); //Czy mozesz sobie wyobrazic? To byly setki dziedzinców skalnych! Mialoby to zajac 100 Buddlera kilkadziesiat lat!
+	AI_Output(hero, self, "Info_Mod_Drake_WhatHappened2_15_05"); //I oni przejeli kopalnie?
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_06"); //Oczywiscie odkryli takze kopalnie. Wiekszosc z nas zostala i dolaczyla do nich.
+	AI_Output(self, hero, "Info_Mod_Drake_WhatHappened2_11_07"); //Zrozumial sie po tym, co sie stalo.
 };
 
 INSTANCE Info_Mod_Drake_EXIT (C_INFO)

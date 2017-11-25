@@ -1,7 +1,7 @@
 instance Mod_594_NONE_Lutero_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lutero"; 
+	name 		= "lutero"; 
 	guild 		= GIL_PAL;
 	id 			= 594;
 	voice 		= 13;

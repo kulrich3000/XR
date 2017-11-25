@@ -1,7 +1,7 @@
 instance Mod_742_MIL_Mortis_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mortis";	
+	name 		= "hipoteza";	
 	guild 		= GIL_PAL;
 	id 			= 742;
 	voice 		= 13;

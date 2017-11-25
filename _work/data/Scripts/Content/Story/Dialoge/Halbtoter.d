@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Halbtoter_Hi_Condition()
 
 FUNC VOID Info_Mod_Halbtoter_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_00"); //Ohh, nein,… du schon wieder.
-	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_01"); //Nachdem du alle anderen umgebracht hast, bist du nun gekommen, um mir den Rest zu bringen.
-	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_02"); //(verklingend) Du grässliches Metallmonster.
+	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_00"); //Och, nie, ty znów.
+	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_01"); //Po zabiciu wszystkich innych, przyszedles, zeby przyniesc mi reszte.
+	AI_Output(self, hero, "Info_Mod_Halbtoter_Hi_13_02"); //Przykry metalowy potwór.
 
 	AI_StopProcessInfos	(self);
 };

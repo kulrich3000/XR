@@ -1,7 +1,7 @@
 INSTANCE Mod_7420_OUT_Michael_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Michael"; 
+	name 		= "Michal"; 
 	guild 		= GIL_OUT;
 	id 			= 7420;
 	voice 		= 11;

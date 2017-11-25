@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Esteban_Hi (C_INFO)
 	information	= Info_Mod_Esteban_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Esteban_Hi_Condition()
@@ -19,29 +19,29 @@ FUNC INT Info_Mod_Esteban_Hi_Condition()
 
 FUNC VOID Info_Mod_Esteban_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_Hi_15_00"); //Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_01"); //Ich bin Esteban, zweites Oberhaupt dieses Lagers. Du hast sicher schon von mir gehört.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_02"); //Außerdem bin ich noch der Verwalter der Banditen auf dieser Insel. Ich sorge dafür, dass jeder einen Teil der Beute bekommt und dass jeder seine Pflichten erfüllt.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_03"); //Du musst der Neue sein. Ich will garnicht lange um den heißen Brei herumreden.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_04"); //Es gibt da eine Sache, bei welcher du unseren Jungs helfen könntest, um dich erst einmal im Lager zu bewähren.
-	AI_Output(hero, self, "Info_Mod_Esteban_Hi_15_05"); //Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_06"); //Nichts besonders schweres, eine Aufgabe, wie sie einem Banditen jeden Tag zufällt, mit welcher du dich für den Anfang schon mal gut beweisen kannst in deinem Talent als Bandit.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_07"); //Einer unserer Kundschafter hat spitzgekriegt, dass einige Händler, die nach dem Fall der Barriere hier her kamen, um einträgliche Geschäfte zu machen, morgen früh aus dem Alten Lager zurück nach Khorinis reisen wollen.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_08"); //Diese wollen wir um Gold, Erz und Handelswaren erleichtern. Wir werden ihnen also morgen um 9h im Eingang der verlassenen Mine auflauern.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_09"); //Einige andere Banditen werden sie bei der ehemaligen Übergabestelle erwarten, sodass jede Flucht unmöglich ist.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_10"); //Da sie von einer Gruppe Gardisten zu ihrem Schutz bis kurz nach der verlassenen Mine begleitet werden, müssen wir ruhig verharren und den richtigen Zeitpunkt abwarten zuzuschlagen.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_11"); //Jeder kriegt seinen Anteil von der Beute. Bist du dabei?
+	AI_Output(hero, self, "Info_Mod_Esteban_Hi_15_00"); //Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_01"); //Jestem Estebanem, drugim szefem tego obozu. Jestem pewien, ze slyszales o mnie.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_02"); //Poza tym jestem straznikiem bandytów na tej wyspie. Dbam o to, aby kazdy dostal kawalek lupu i kazdy wypelnial swoje obowiazki.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_03"); //Musisz byc nowym facetem. Nie chce dlugo bic wokól krzewu.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_04"); //Jest jedna rzecz, która mozesz zrobic, aby pomóc naszym chlopcom sprawdzic sie w obozie.
+	AI_Output(hero, self, "Info_Mod_Esteban_Hi_15_05"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_06"); //Nic szczególnie trudnego, to zadanie, bo co dzien nalezy do bandyta, z którym juz na poczatek mozna sie dobrze udowodnic w swoim talencie jako bandyta.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_07"); //Jeden z naszych harcerzy dowiedzial sie, ze niektórzy handlarze, którzy przyjechali tu po upadku bariery, aby zrobic korzystne interesy chca podrózowac jutro rano z powrotem do Khorinis z Starego Obozu.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_08"); //Chcemy ulatwic ten proces, wykorzystujac zloto, rude i surowce. Czekamy na nich jutro o godzinie 9:00 przy wejsciu do opuszczonej kopalni.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_09"); //Inni bandyci beda na nich czekac w dawnym punkcie przejscia, aby jakakolwiek ucieczka byla niemozliwa.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_10"); //Poniewaz sa oni eskortowani przez grupe strazników w celu ich ochrony az do niedlugo po opuszczonej kopalni, musimy pozostac spokojni i czekac na wlasciwy czas na strajk.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_07_11"); //Kazdy otrzymuje swoja czesc lupu. Czy jestes?
 
 	Info_ClearChoices	(Info_Mod_Esteban_Hi);
 
-	Info_AddChoice	(Info_Mod_Esteban_Hi, "Nein, Ich überfalle doch keine wehrlosen Händler.", Info_Mod_Esteban_Hi_B);
-	Info_AddChoice	(Info_Mod_Esteban_Hi, "Selbstverständlich. Das Gold und den Spaß lasse ich mir (...)", Info_Mod_Esteban_Hi_A);
+	Info_AddChoice	(Info_Mod_Esteban_Hi, "Nie, nie okradam bezbronnych dealerów.", Info_Mod_Esteban_Hi_B);
+	Info_AddChoice	(Info_Mod_Esteban_Hi, "Oczywiscie oczywiscie. Zloto i zabieram mi radosc (....). )", Info_Mod_Esteban_Hi_A);
 };
 
 FUNC VOID Info_Mod_Esteban_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_Hi_B_15_00"); //Nein, Ich überfalle doch keine wehrlosen Händler.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_B_07_01"); //Was?! Wenn du dazu nicht in der Lage bist, weiß ich wirklich nicht, was du bei uns zu suchen hast.
+	AI_Output(hero, self, "Info_Mod_Esteban_Hi_B_15_00"); //Nie, nie okradam bezbronnych dealerów.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_B_07_01"); //Co? Jesli nie jestes w stanie tego zrobic, naprawde nie wiem, co tu robisz.
 	
 	Info_ClearChoices	(Info_Mod_Esteban_Hi);
 
@@ -52,8 +52,8 @@ FUNC VOID Info_Mod_Esteban_Hi_B()
 
 FUNC VOID Info_Mod_Esteban_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_Hi_A_15_00"); //Selbstverständlich. Das Gold und den Spaß lasse ich mir nicht entgehen.
-	AI_Output(self, hero, "Info_Mod_Esteban_Hi_A_07_01"); //Sehr gut, ich habe auch nichts anderes von dir erwartet Wir sehen uns dann morgen um 9 Uhr vor der verlassenen Mine.
+	AI_Output(hero, self, "Info_Mod_Esteban_Hi_A_15_00"); //Oczywiscie oczywiscie. Nie przegapie zlota i zabawy.
+	AI_Output(self, hero, "Info_Mod_Esteban_Hi_A_07_01"); //Bardzo dobrze, nie spodziewalem sie od ciebie niczego innego, do zobaczenia jutro o 9 rano przed opuszczona kopalnia.
 	
 	Info_ClearChoices	(Info_Mod_Esteban_Hi);
 
@@ -64,7 +64,7 @@ FUNC VOID Info_Mod_Esteban_Hi_A()
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_ESTEBAN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_ESTEBAN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_ESTEBAN, "Mein erster Raubüberfall als Bandit steht bevor. Morgen um 9 Uhr sollte ich bei der verlassenen Mine sein, um mit Esteban und paar seiner Jungs einige Händler zu überraschen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ESTEBAN, "Moja pierwsza próba rabunku jako bandyta jest nieuchronna. Jutro o godz. 9.00 mialem byc w opuszczonej kopalni, aby zaskoczyc niektórych handlarzy Estebanem i niektórych jego chlopaków.");
 };
 
 INSTANCE Info_Mod_Esteban_AtVM (C_INFO)
@@ -89,7 +89,7 @@ FUNC INT Info_Mod_Esteban_AtVM_Condition()
 
 FUNC VOID Info_Mod_Esteban_AtVM_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM_07_00"); //Da bist du ja. Drei der Jungs gehen jetzt zum Austauschplatz und wir verbergen uns einige Schritte im Eingang der Mine.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM_07_00"); //Och, tam jestescie. Trzech chlopców idzie teraz na miejsce wymiany i chowamy kilka kroków przed wejsciem do kopalni.
 
 	Mod_Banditenueberfall_Esteban = 3;
 
@@ -128,7 +128,7 @@ FUNC INT Info_Mod_Esteban_AtVM2_Condition()
 
 FUNC VOID Info_Mod_Esteban_AtVM2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM2_07_00"); //Ahh, da kommen sie. Jetzt seid ganz still, damit uns die Gardisten nicht bemerken.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM2_07_00"); //Ach, tu przychodza. Teraz badz cichy, wiec straznicy nas nie zauwaza.
 
 	Mod_Banditenueberfall_Esteban = 4;
 
@@ -168,7 +168,7 @@ FUNC INT Info_Mod_Esteban_AtVM3_Condition()
 
 FUNC VOID Info_Mod_Esteban_AtVM3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM3_07_00"); //Los jetzt!
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM3_07_00"); //Przejdzmy teraz!
 
 	Mod_Banditenueberfall_Esteban = 6;
 
@@ -218,7 +218,7 @@ FUNC INT Info_Mod_Esteban_AtVM4_Condition()
 
 FUNC VOID Info_Mod_Esteban_AtVM4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM4_07_00"); //Gute Arbeit. Jetzt durchsuch die Beiden, sie müssten etwas wertvolles dabei haben.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM4_07_00"); //Dobra praca. Teraz wyszukaj ich oboje, musza miec przy sobie cos wartosciowego.
 
 	Mod_Banditenueberfall_Esteban = 8;
 
@@ -266,20 +266,20 @@ FUNC INT Info_Mod_Esteban_AtVM5_Condition()
 
 FUNC VOID Info_Mod_Esteban_AtVM5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_07_00"); //Genau danach haben wir gesucht. Jetzt gib mir die zwei Kisten, damit ich sie öffnen und die Beute verteilen kann.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_07_00"); //Tego wlasnie szukalismy. Teraz daj mi dwa skrzynki, abym mógl je otworzyc i rozdawac lupy.
 
 	Mod_Banditenueberfall_Esteban = 9;
 
 	Info_ClearChoices	(Info_Mod_Esteban_AtVM5);
 
-	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Ich glaube ich behalte die Kisten lieber für mich.", Info_Mod_Esteban_AtVM5_B);
-	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Hier hast du sie.", Info_Mod_Esteban_AtVM5_A);
+	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Mysle, ze wolalbym raczej zostawic skrzynki sobie samemu.", Info_Mod_Esteban_AtVM5_B);
+	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Tutaj je masz.", Info_Mod_Esteban_AtVM5_A);
 };
 
 FUNC VOID Info_Mod_Esteban_AtVM5_B()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_AtVM5_B_15_00"); //Ich glaube ich behalte die Kisten lieber für mich.
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_B_07_01"); //Was? Dann holen wir sie uns eben. Los Männer!
+	AI_Output(hero, self, "Info_Mod_Esteban_AtVM5_B_15_00"); //Mysle, ze wolalbym raczej zostawic skrzynki sobie samemu.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_B_07_01"); //Co? No cóz, zalózmy je. Chodz, mezczyzni!
 
 	Mod_Banditenueberfall_Esteban = 10;
 
@@ -300,14 +300,14 @@ FUNC VOID Info_Mod_Esteban_AtVM5_B()
 
 FUNC VOID Info_Mod_Esteban_AtVM5_A()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_AtVM5_A_15_00"); //Hier hast du sie.
+	AI_Output(hero, self, "Info_Mod_Esteban_AtVM5_A_15_00"); //Tutaj je masz.
 
 	Npc_RemoveInvItems	(hero, ItMi_BDTKiste_01, 1);
 	Npc_RemoveInvItems	(hero, ItMi_BDTKiste_02, 1);
 
-	B_ShowGivenThings	("2 Schatzkisten gegeben");
+	B_ShowGivenThings	("2 skrzynie skarbowe wydawane");
 
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_A_07_01"); //Ahh, jetzt habe ich sie endlich mit zwei meiner Spezialdietriche öffnen können. Hier ist dein Anteil.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_A_07_01"); //Ahh, teraz wreszcie udalo mi sie otworzyc go z dwoma specjalnymi dietami. Oto Twój udzial.
 
 	CreateInvItems	(hero, ItMi_Nugget, 9);
 	CreateInvItems	(hero, ItMi_Gold, 160);
@@ -316,9 +316,9 @@ FUNC VOID Info_Mod_Esteban_AtVM5_A()
 	CreateInvItems	(hero, ItMi_SilverCup, 2);
 	CreateInvItems	(hero, ItAt_ShadowHorn, 1);
 
-	B_ShowGivenThings	("Diverse Items erhalten");
+	B_ShowGivenThings	("Otrzymywanie róznych pozycji");
 
-	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_A_07_02"); //Komm später noch mal vorbei, da habe ich wieder was zu tun für dich.
+	AI_Output(self, hero, "Info_Mod_Esteban_AtVM5_A_07_02"); //Wróccie pózniej, mam dla was cos do zrobienia.
 
 	Mod_Banditenueberfall_Esteban = 11;
 
@@ -326,7 +326,7 @@ FUNC VOID Info_Mod_Esteban_AtVM5_A()
 
 	B_GivePlayerXP	(500);
 
-	B_LogEntry	(TOPIC_MOD_BDT_ESTEBAN, "Der Überfall ist geglückt. Die Händler wurden um ihre Lasten erleichtert und wir haben paar Münzen und Habseeligkeiten mehr.");
+	B_LogEntry	(TOPIC_MOD_BDT_ESTEBAN, "Rozbój zakonczyl sie sukcesem. Kupcy zostali zwolnieni z ciezarów, a my mamy jeszcze kilka monet i rzeczy.");
 	B_SetTopicStatus	(TOPIC_MOD_BDT_ESTEBAN, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -359,13 +359,13 @@ FUNC INT Info_Mod_Esteban_OrkAttack_Condition()
 
 FUNC VOID Info_Mod_Esteban_OrkAttack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_00"); //Los, aufstehen, keine Zeit für Trödeleien.
-	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_01"); //Die letzte Nacht mag dir zwar noch in den Knochen liegen, aber die Horde Orks, die sich durch den Wald unserem Lager nährt, wird nicht darauf warten, bis du deinen Rausch ausgeschlafen hast.
-	AI_Output(hero, self, "Info_Mod_Esteban_OrkAttack_15_02"); //(verschlafen) Wa ... was, Orks, schon wieder?
-	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_03"); //Ja, los, komm. Einer unserer Jungs hat sie gesehen, als er im Wald Pilze suche wollte. Ich verlasse mich lieber darauf, dass das nicht nur eine Halluzination war.
-	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_04"); //Sie nehmen den Weg über den Durchgang und wir werden sie mit Bögen und Keulen am Ausgang begrüßen, bevor sie die Stärke ihrer Streitmacht entfalten können. Also, auf geht’s.
+	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_00"); //Chodz dalej, wstan, nie daj sie poranic.
+	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_01"); //Wczoraj wieczorem moze byc jeszcze w twoich kosciach, ale horda orków, które zeruja przez las, nie czekaja na ciebie, zebys mógl sie spac.
+	AI_Output(hero, self, "Info_Mod_Esteban_OrkAttack_15_02"); //(spiace) Co, Orcs, znów?
+	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_03"); //Tak, przyjdz, przyjdz, przyjdz dalej. Jeden z naszych chlopców widzial ich w lesie w poszukiwaniu grzybów. Wolalbym raczej polegac na tym, ze nie byla to tylko halucynacja.
+	AI_Output(self, hero, "Info_Mod_Esteban_OrkAttack_07_04"); //Przechodza przez przejscie, a my powitamy ich lukami i klubami na wyjsciu, zanim beda mogli rozwinac sile swojej armii. W porzadku, idzmy.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Noch ist es nicht vorbei. Ein Trupp Orks nährt sich dem Lager. Ich werde sie mit Esteban und einigen seiner Jungs beim Durchgang im Wald erwarten.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "To jeszcze nie koniec. Obóz zasila oddzial orków. Spodziewam sie, ze wraz z Estebanem i niektórymi z jego chlopców przejezdzac beda przez lasy.");
 
 	AI_StopProcessInfos	(self);
 
@@ -400,7 +400,7 @@ FUNC INT Info_Mod_Esteban_FirstOrkWave_Condition()
 
 FUNC VOID Info_Mod_Esteban_FirstOrkWave_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_FirstOrkWave_07_00"); //So, da kommen sie.
+	AI_Output(self, hero, "Info_Mod_Esteban_FirstOrkWave_07_00"); //Wszystko w porzadku, tu przychodza.
 	
 	AI_StopProcessInfos	(self);
 
@@ -433,7 +433,7 @@ FUNC INT Info_Mod_Esteban_SecondOrkWave_Condition()
 
 FUNC VOID Info_Mod_Esteban_SecondOrkWave_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_SecondOrkWave_07_00"); //Das soll die Streitmacht gewesen sein? Entweder hat jemand zu viele Pilze gefressen oder ...
+	AI_Output(self, hero, "Info_Mod_Esteban_SecondOrkWave_07_00"); //Czy to ma byc sila? Albo ktos jadl zbyt wiele grzybów, albo tez ktos....
 	
 	AI_StopProcessInfos	(self);
 
@@ -471,7 +471,7 @@ FUNC INT Info_Mod_Esteban_Unterlegen_Condition()
 
 FUNC VOID Info_Mod_Esteban_Unterlegen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_Unterlegen_07_00"); //Verdammter Verräter ... Jungs, tut was er sagt. Gegen so viele Orks kommen wir nicht an.
+	AI_Output(self, hero, "Info_Mod_Esteban_Unterlegen_07_00"); //Identyfikator procesu.... Chlopcy, jak mówi. Nie mozemy walczyc z wieloma orkami.
 	
 	AI_StopProcessInfos	(self);
 
@@ -500,8 +500,8 @@ FUNC INT Info_Mod_Esteban_FluchtHappy_Condition()
 
 FUNC VOID Info_Mod_Esteban_FluchtHappy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_FluchtHappy_07_00"); //Hörst du das?
-	AI_Output(self, hero, "Info_Mod_Esteban_FluchtHappy_07_01"); //Das scheint von unserem Lager zu kommen. Schnell, bevor wir zu spät kommen.
+	AI_Output(self, hero, "Info_Mod_Esteban_FluchtHappy_07_00"); //Slyszysz to?
+	AI_Output(self, hero, "Info_Mod_Esteban_FluchtHappy_07_01"); //Wydaje sie, ze to pochodzi z naszego obozu. Pospiesz sie, zanim sie spóznimy.
 
 	AI_StopProcessInfos	(self);
 
@@ -586,7 +586,7 @@ FUNC VOID Info_Mod_Esteban_FluchtHappy_Info()
 
 	Mod_7175_BDT_Oschust_MT.guild = GIL_ORC;
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Zwar haben wir es nach draußen geschafft. Unser Lager scheint jedoch in größter Bedrängnis. Eile ist jetzt geboten ...");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Zrobilismy to tam. Jednak wydaje sie, ze nasz obóz znajduje sie w tragicznym polozeniu. Rus jest teraz niezbedny......");
 };
 
 INSTANCE Info_Mod_Esteban_Lehrer (C_INFO)
@@ -597,7 +597,7 @@ INSTANCE Info_Mod_Esteban_Lehrer (C_INFO)
 	information	= Info_Mod_Esteban_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Esteban_Lehrer_Condition()
@@ -615,10 +615,10 @@ FUNC VOID Info_Mod_Esteban_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Esteban_Lehrer_07_00"); //Ich kann dir helfen stärker und geschickter zu werden.
+	AI_Output(self, hero, "Info_Mod_Esteban_Lehrer_07_00"); //Moge Panstwu pomóc w zwiekszeniu sily i umiejetnosci.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BANDITEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Esteban kann mich in Stärke und Geschick trainieren.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Esteban potrafi wytrenowac mnie w sile i umiejetnosci.");
 };
 
 INSTANCE Info_Mod_Esteban_Lernen (C_INFO)
@@ -629,7 +629,7 @@ INSTANCE Info_Mod_Esteban_Lernen (C_INFO)
 	information	= Info_Mod_Esteban_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Naucz mnie czegos.";
 };
 
 FUNC INT Info_Mod_Esteban_Lernen_Condition()
@@ -643,7 +643,7 @@ FUNC INT Info_Mod_Esteban_Lernen_Condition()
 
 FUNC VOID Info_Mod_Esteban_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Esteban_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Esteban_Lernen_15_00"); //Naucz mnie czegos.
 
 	Info_ClearChoices	(Info_Mod_Esteban_Lernen);
 

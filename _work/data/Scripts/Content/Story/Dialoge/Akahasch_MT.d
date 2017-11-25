@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Akahasch_MT_Hi (C_INFO)
 	information	= Info_Mod_Akahasch_MT_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warst du nicht mal Novize im Innoskloster?";
+	description	= "Czy nie byles nowicjuszem w klasztorze Innos?";
 };
 
 FUNC INT Info_Mod_Akahasch_MT_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Akahasch_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Akahasch_MT_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Akahasch_MT_Hi_15_00"); //Warst du nicht mal Novize im Innoskloster?
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_01"); //Erinnere mich bloß nicht daran. Nach der Geschichte mit der Stadt haben die mir im Kloster das Leben nur noch zur Hölle gemacht.
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_02"); //Irgendjemand muss mich verpfiffen haben. Ich habe diesen Ulf in Verdacht ...
-	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_03"); //Egal, hier geht es mir jetzt tausendmal besser. Als ehemaligen Feuernovizen haben die mich hier mit offenen Armen aufgenommen.
+	AI_Output(hero, self, "Info_Mod_Akahasch_MT_Hi_15_00"); //Czy nie byles nowicjuszem w klasztorze Innos?
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_01"); //Nie przypominaj mi o tym. Po historii z miastem zycie w klasztorze stalo sie zywym pieklem.
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_02"); //Ktos musial mnie ratyfikowac. Podejrzewam, ze to Ulf....
+	AI_Output(self, hero, "Info_Mod_Akahasch_MT_Hi_24_03"); //W kazdym razie teraz czuje sie tysiac razy lepiej. Jako byli innowatorzy ognia przywitali mnie tutaj z otwartymi ramionami.
 };
 
 INSTANCE Info_Mod_Akahasch_MT_EXIT (C_INFO)

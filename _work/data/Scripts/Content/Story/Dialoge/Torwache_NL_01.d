@@ -21,72 +21,72 @@ FUNC INT Info_Mod_Torwache_NL_01_GardistenInfos_Condition()
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_01"); //Ja?
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_02"); //Eine Frage: Habt ihr in den letzten Tagen Fremde hier gesehen? Vielleicht Gardisten?
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_03"); //Gardisten? Hier? Es wird sich wohl kaum einer hierher trauen.
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_04"); //Bist du dir sicher, dass hier nichts gewesen ist?
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_05"); //Hm, lass mich noch einmal überlegen. Doch, da fällt mir ein, dass uns vorletzte Nacht ein paar Unbekannte beschossen haben.
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_06"); //Ein Pfeil hat einen unserer Söldner verletzt. Lee ist beinahe ausgerastet vor Wut. Ich war aber nicht dabei, daher weiss ich nicht mehr.
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_07"); //Geh einfach mal in die Taverne auf der Insel, er wird da bestimmt sitzen und ein paar Krüge heben. Geh ruhig rein.
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_08"); //Danke, ich werd ihn dann mal suchen gehen.
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_09"); //Hast du vielleicht was zu trinken bei dir? Ich bin hier schon seit Stunden kurz vorm verdursten.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_01"); //Tak?
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_02"); //Czy widziales tutaj obcych? Byc moze strazników?
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_03"); //Straznicy? Oto? Nie sadze, zeby nikt nie odwazyl sie tu przyjechac.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_04"); //Czy jestes pewien, ze nic tu nie bylo?
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_05"); //Prosze pozwolic mi sie ponownie zastanowic. Przypomina mi to, ze pare niewiadomych strzelalo do nas w przedostatnia noc.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_06"); //Strzalka zranila jednego z naszych najemników. Lee prawie wyplynal z gniewem. Ale nie bylem tam, wiec nie pamietam.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_07"); //Wystarczy tylko pójsc do tawerny na wyspie, prawdopodobnie usiadzie tam i wezmie kilka dzbanów. Wejdz od razu.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_15_08"); //Dziekuje, odnajde go.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_06_09"); //Masz u siebie cos do picia? Od wielu godzin umieralem z pragnienia.
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Die Torwache vom neuen Lager weiß nichts, aber ein anderer Söldner, der sich zur Zeit in der Taverne aufhält, wurde vor ein paar Nächten angeschossen. Ich sollte ihn aufsuchen, vielleicht weiß er was.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Straznik nowego obozu nic nie wie, ale kilka nocy temu zostal zastrzelony inny najemnik w tawernie. Powinnam go zobaczyc, moze on cos wie.");
 
 	Info_ClearChoices	(Info_Mod_Torwache_NL_01_GardistenInfos);
 	
-	Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "Tut mir leid, ich habe nichts dabei.", Info_Mod_Torwache_NL_01_GardistenInfos_B);
+	Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "Przykro mi, nie mam nic na sobie.", Info_Mod_Torwache_NL_01_GardistenInfos_B);
 	if (Npc_HasItems(hero, ItFo_Wine) > 0)
 	|| (Npc_HasItems(hero, ItFo_Water) > 0)
 	|| (Npc_HasItems(hero, ItFo_Booze) > 0)
 	|| (Npc_HasItems(hero, ItFo_Beer) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "Klar, hier nimm ...", Info_Mod_Torwache_NL_01_GardistenInfos_A);
+		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "Jasne, ze tutaj idziesz....", Info_Mod_Torwache_NL_01_GardistenInfos_A);
 	};
 };
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_B()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_B_15_00"); //Tut mir leid, ich habe nichts dabei.
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_B_06_01"); //Ach verdammt. Na dann viel Erfolg.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_B_15_00"); //Przykro mi, nie mam nic na sobie.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_B_06_01"); //Ach, zrób to. Cóz, szczescie.
 
 	Info_ClearChoices	(Info_Mod_Torwache_NL_01_GardistenInfos);
 };
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_G()
 {
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_G_06_00"); //Danke, Mann. Er heiß tübrigens Nodrak. Wenn er ein paar Bier getrunken hat, ist er eigentlich immer ein wenig redselig.
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_GardistenInfos_G_06_00"); //Dzieki, czlowiek. Nawiasem mówiac, nazywal sie Nodrak. Kiedy mial kilka piwa, w rzeczywistosci jest zawsze troche gadatliwy.
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Der Name des Söldners ist Nodrak. Wenn er was zu trinken bekommt, spricht er lieber.");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Nazwisko najemnika brzmi Nodrak. Jesli dostaje napój, to wolalby porozmawiac.");
 };
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_A()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_A_15_00"); //Klar, hier nimm ...
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_A_15_00"); //Jasne, ze tutaj idziesz....
 
 	Info_ClearChoices	(Info_Mod_Torwache_NL_01_GardistenInfos);
 
 	if (Npc_HasItems(hero, ItFo_Wine) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... einen Wein.", Info_Mod_Torwache_NL_01_GardistenInfos_F);
+		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... wino.", Info_Mod_Torwache_NL_01_GardistenInfos_F);
 	};
 	if (Npc_HasItems(hero, ItFo_Water) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... ein Wasser.", Info_Mod_Torwache_NL_01_GardistenInfos_E);
+		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... wody.", Info_Mod_Torwache_NL_01_GardistenInfos_E);
 	};
 	if (Npc_HasItems(hero, ItFo_Booze) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... einen Wacholder.", Info_Mod_Torwache_NL_01_GardistenInfos_D);
+		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... jalowiec.", Info_Mod_Torwache_NL_01_GardistenInfos_D);
 	};
 	if (Npc_HasItems(hero, ItFo_Beer) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... ein Bier.", Info_Mod_Torwache_NL_01_GardistenInfos_C);
+		Info_AddChoice	(Info_Mod_Torwache_NL_01_GardistenInfos, "... piwo.", Info_Mod_Torwache_NL_01_GardistenInfos_C);
 	};
 };
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_F()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_F_15_00"); //... einen Wein.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_F_15_00"); //... wino.
 
 	B_GiveInvItems	(hero, self, ItFo_Wine, 1);
 	B_UseItem	(self, ItFo_Wine);
@@ -98,7 +98,7 @@ FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_F()
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_E()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_E_15_00"); //... ein Wasser.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_E_15_00"); //... wody.
 
 	B_GiveInvItems	(hero, self, ItFo_Water, 1);
 	B_UseItem	(self, ItFo_Water);
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_E()
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_D()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_D_15_00"); //... einen Wacholder.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_D_15_00"); //... jalowiec.
 
 	B_GiveInvItems	(hero, self, ItFo_Booze, 1);
 	B_UseItem	(self, ItFo_Booze);
@@ -122,7 +122,7 @@ FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_D()
 
 FUNC VOID Info_Mod_Torwache_NL_01_GardistenInfos_C()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_C_15_00"); //... ein Bier.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_GardistenInfos_C_15_00"); //... piwo.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 	B_UseItem	(self, ItFo_Beer);
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Torwache_NL_01_Hi (C_INFO)
 	information	= Info_Mod_Torwache_NL_01_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gibt's was Neues?";
+	description	= "Cokolwiek nowego?";
 };
 
 FUNC INT Info_Mod_Torwache_NL_01_Hi_Condition()
@@ -150,8 +150,8 @@ FUNC INT Info_Mod_Torwache_NL_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Torwache_NL_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_Hi_15_00"); //Gibt's was Neues?
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_Hi_06_01"); //Nein, in letzter Zeit ist alles ruhig.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_Hi_15_00"); //Cokolwiek nowego?
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_Hi_06_01"); //Nie, wszystko bylo ostatnio cicho.
 };
 
 INSTANCE Info_Mod_Torwache_NL_01_WarumHier (C_INFO)
@@ -162,7 +162,7 @@ INSTANCE Info_Mod_Torwache_NL_01_WarumHier (C_INFO)
 	information	= Info_Mod_Torwache_NL_01_WarumHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso bewacht ihr das Tor hier?";
+	description	= "Dlaczego pilnujesz bramy?";
 };
 
 FUNC INT Info_Mod_Torwache_NL_01_WarumHier_Condition()
@@ -172,10 +172,10 @@ FUNC INT Info_Mod_Torwache_NL_01_WarumHier_Condition()
 
 FUNC VOID Info_Mod_Torwache_NL_01_WarumHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_WarumHier_15_00"); //Wieso bewacht ihr das Tor hier?
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_WarumHier_06_01"); //Im Grunde bewachen wir hier gar nichts. Ab und zu erwischen wir einen Orkspäher, der aus den Bergen kommt, aber die sind keine Gefahr für uns.
-	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_WarumHier_15_02"); //Und was ist mit dem Zugang über den Fluss?
-	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_WarumHier_06_03"); //Der Zugang ist nicht besonders gefährdet. Außerdem gibt es im Lager ja noch ein Tor und die Bauern als Vorhut.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_WarumHier_15_00"); //Dlaczego pilnujesz bramy?
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_WarumHier_06_01"); //Wlasciwie niczego tutaj nie pilnujemy. Sporadycznie lapiemy harcerza orkowego wychodzacego z gór, ale oni nam nie zagrazaja.
+	AI_Output(hero, self, "Info_Mod_Torwache_NL_01_WarumHier_15_02"); //A co z dostepem nad rzeka?
+	AI_Output(self, hero, "Info_Mod_Torwache_NL_01_WarumHier_06_03"); //Dostep nie jest szczególnie podatny na zagrozenia. W obozie jest tez brama, a rolnicy jako awangarda.
 };
 
 INSTANCE Info_Mod_Torwache_NL_01_Pickpocket (C_INFO)

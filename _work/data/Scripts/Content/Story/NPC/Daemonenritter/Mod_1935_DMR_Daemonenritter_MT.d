@@ -1,7 +1,7 @@
 INSTANCE Mod_1935_DMR_Daemonenritter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter";
+	name 		= "demonicy";
 	guild 		= GIL_STRF;
 	id 			= 1935;
 	voice 		= 12;

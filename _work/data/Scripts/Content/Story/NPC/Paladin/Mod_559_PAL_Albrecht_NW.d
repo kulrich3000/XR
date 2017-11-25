@@ -1,7 +1,7 @@
 INSTANCE Mod_559_PAL_Albrecht_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Albrecht";
+	name 		= "koszmar";
 	guild 		= GIL_PAL;
 	id 			= 559;
 	voice 		= 3;

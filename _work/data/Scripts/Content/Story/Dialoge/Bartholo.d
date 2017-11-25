@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Bartholo_Hi_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_00"); //Dich kenne ich doch! Wie war noch mal dein Name?
-	AI_Output(hero, self, "Info_Mod_Bartholo_Hi_15_01"); //Ähm... Na ja ...
-	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_02"); //Was gibt's da herumzudrucksen?
-	AI_Output(hero, self, "Info_Mod_Bartholo_Hi_15_03"); //Früher nannte man mich häufig, äh, Rü...
-	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_04"); //Wie dem auch sei. Was hast du hier verloren?
+	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_00"); //Wiem, czyz nie? Jakie znów bylo Twoje nazwisko?
+	AI_Output(hero, self, "Info_Mod_Bartholo_Hi_15_01"); //Um.... ....
+	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_02"); //Co tam jest do popchniecia?
+	AI_Output(hero, self, "Info_Mod_Bartholo_Hi_15_03"); //Dawniej wolalem, uh, Ru....
+	AI_Output(self, hero, "Info_Mod_Bartholo_Hi_12_04"); //W kazdym razie, niezaleznie od wszystkiego. Co ty tu robisz?
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -46,7 +46,7 @@ FUNC INT Info_Mod_Bartholo_Laber_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Laber_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Laber_12_00"); //Verschwinde!
+	AI_Output(self, hero, "Info_Mod_Bartholo_Laber_12_00"); //Wyjsc stad!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -72,9 +72,9 @@ FUNC INT Info_Mod_Bartholo_Verrat_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Verrat_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Verrat_12_00"); //Du hättest schon lange sterben müssen und jetzt, wo du uns gefährlich wirst, hast du dein Recht auf Leben verwirkt.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Verrat_12_00"); //Powinien pan umrzec dawno temu, a teraz, gdy staje sie pan dla nas niebezpieczny, stracil swoje prawo do zycia.
 
-	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Es scheint als wäre Bartholo der Hintermann.");
+	B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Wydaje sie, ze Bartholo jest mezczyzna na plecach.");
 
 	AI_StopProcessInfos	(self);
 
@@ -116,8 +116,8 @@ FUNC VOID Info_Mod_Bartholo_KillBuddler_Info()
 {
 	AI_TurnToNpc	(self, Mod_1440_BUD_Buddler_MT);
 
-	AI_Output(self, hero, "Info_Mod_Bartholo_KillBuddler_12_00"); //Du dreckiger Bastard meinst wohl, du könntest dich unbemerkt mit Alissandro in Verbindung setzen?
-	AI_Output(self, hero, "Info_Mod_Bartholo_KillBuddler_12_01"); //Doch ich merke alles, und deshalb bekommst du auch deine Strafe.
+	AI_Output(self, hero, "Info_Mod_Bartholo_KillBuddler_12_00"); //Brudny bastard, to znaczy, ze mozesz skontaktowac sie z Alissandro niezauwazony?
+	AI_Output(self, hero, "Info_Mod_Bartholo_KillBuddler_12_01"); //Ale wszystko zauwazam i dlatego dostajesz kare.
 
 	AI_StopProcessInfos	(self);
 
@@ -144,13 +144,13 @@ FUNC INT Info_Mod_Bartholo_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Sumpfkraut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Sumpfkraut_12_00"); //Ihr bringt mir sicher das Sumpfkraut.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Sumpfkraut_12_00"); //Jestem pewien, ze przywiezie mnie pan ambrozja.
 
 	Snd_Play	("THRILLJINGLE_03.WAV");
 
 	AI_TurnToNpc	(self, Mod_1874_HMG_Makanius_MT);
 
-	AI_Output(self, hero, "Info_Mod_Bartholo_Sumpfkraut_12_01"); //Verdammt, was ist jetzt passiert?
+	AI_Output(self, hero, "Info_Mod_Bartholo_Sumpfkraut_12_01"); //Co teraz stalo sie pieklem?
 
 	AI_StopProcessInfos	(self);
 
@@ -183,7 +183,7 @@ FUNC VOID Info_Mod_Bartholo_Eroberung_Info()
 {
 	AI_TurnToNpc	(self, Mod_1156_GRD_Gardist_MT);
 
-	AI_Output(self, Mod_1156_GRD_Gardist_MT, "Info_Mod_Bartholo_Eroberung_12_00"); //Was? Verdammt, wie konnte das passieren?
+	AI_Output(self, Mod_1156_GRD_Gardist_MT, "Info_Mod_Bartholo_Eroberung_12_00"); //Co? Jak to sie stalo w piekle?
 
 	AI_StopProcessInfos	(self);
 };
@@ -196,7 +196,7 @@ INSTANCE Info_Mod_Bartholo_Anschluss (C_INFO)
 	information	= Info_Mod_Bartholo_Anschluss_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mich euch anschließen.";
+	description	= "Chce do Panstwa dolaczyc.";
 };
 
 FUNC INT Info_Mod_Bartholo_Anschluss_Condition()
@@ -210,13 +210,13 @@ FUNC INT Info_Mod_Bartholo_Anschluss_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Anschluss_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartholo_Anschluss_15_00"); //Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_01"); //Aha! Der verloren geglaubte Sohn kehrt zurück, oder wie?
-	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_02"); //Schön, sprich mit Thorus. Er wird sich zwar nicht freuen, dich zu sehen, aber er hat gerade größere Probleme.
-	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_03"); //Deswegen musst du dir wohl keine Sorgen um dein Leben machen.
-	AI_Output(hero, self, "Info_Mod_Bartholo_Anschluss_15_04"); //Das klingt ja vielversprechend ...
-	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_05"); //Das ist mehr, als du erwarten kannst. Dass du dich den Wassermagiern anvertraut hast, hat dir hier keine Sympathiepunkte eingebracht.
-	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_06"); //Denk übrigens dran, deine Waffe stecken zu lassen, wenn du zu Thorus gehst. Solltest du den Fehler begehen und sie zücken, werden wir dir kurzen Prozess machen.
+	AI_Output(hero, self, "Info_Mod_Bartholo_Anschluss_15_00"); //Chce do Panstwa dolaczyc.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_01"); //Aha! Zgubiony syn wraca, a moze co?
+	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_02"); //Dobrze, porozmawiaj z Thorusem. Nie bedzie sie cieszyl widzac cie, ale teraz ma klopoty.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_03"); //Prawdopodobnie dlatego nie musisz sie martwic o swoje zycie.
+	AI_Output(hero, self, "Info_Mod_Bartholo_Anschluss_15_04"); //To brzmi obiecujaco....
+	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_05"); //To wiecej niz mozna sie spodziewac. Fakt, ze powierzyles sie magikom wody, nie przyniósl ci zadnych wyrazów wspólczucia.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Anschluss_12_06"); //Nawiasem mówiac, pamietaj, aby trzymac karabin uwieziony, gdy idziesz do Thorusa. Jesli popelnisz blad i wyciagniesz go, poinformujemy Cie o tym.
 };
 
 INSTANCE Info_Mod_Bartholo_Thorus (C_INFO)
@@ -227,7 +227,7 @@ INSTANCE Info_Mod_Bartholo_Thorus (C_INFO)
 	information	= Info_Mod_Bartholo_Thorus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will nur mit Thorus sprechen.";
+	description	= "Chce po prostu porozmawiac z Thorusem.";
 };
 
 FUNC INT Info_Mod_Bartholo_Thorus_Condition()
@@ -241,9 +241,9 @@ FUNC INT Info_Mod_Bartholo_Thorus_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Thorus_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartholo_Thorus_15_00"); //Ich will nur mit Thorus sprechen.
-	AI_Output(self, hero, "Info_Mod_Bartholo_Thorus_12_01"); //Wenn er auch mit dir sprechen will, sollte das kein Problem sein.
-	AI_Output(self, hero, "Info_Mod_Bartholo_Thorus_12_02"); //Aber sei gewarnt: Wenn du in seiner Gegenwart deine Waffe ziehst, bist du schneller tot, als du dir in die Hose scheißen kannst.
+	AI_Output(hero, self, "Info_Mod_Bartholo_Thorus_15_00"); //Chce po prostu porozmawiac z Thorusem.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Thorus_12_01"); //Jesli chce z Toba porozmawiac, nie powinno to byc problemem.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Thorus_12_02"); //Ostrzegaj sie jednak: Jesli narysujesz swoja bron w jego obecnosci, bedziesz umarl wczesniej niz mozesz umrzec.
 };
 
 INSTANCE Info_Mod_Bartholo_WarumNochHier (C_INFO)
@@ -254,7 +254,7 @@ INSTANCE Info_Mod_Bartholo_WarumNochHier (C_INFO)
 	information	= Info_Mod_Bartholo_WarumNochHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du noch hier?";
+	description	= "Co nadal robicie?";
 };
 
 FUNC INT Info_Mod_Bartholo_WarumNochHier_Condition()
@@ -268,9 +268,9 @@ FUNC INT Info_Mod_Bartholo_WarumNochHier_Condition()
 
 FUNC VOID Info_Mod_Bartholo_WarumNochHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bartholo_WarumNochHier_15_00"); //Was machst du noch hier?
-	AI_Output(self, hero, "Info_Mod_Bartholo_WarumNochHier_12_01"); //Ich bin Thorus loyal gegenüber. Bald wird es mit dem Lager wieder bergauf gehen.
-	AI_Output(self, hero, "Info_Mod_Bartholo_WarumNochHier_12_02"); //Außerdem will ich nicht so enden wie Stone dort draußen...
+	AI_Output(hero, self, "Info_Mod_Bartholo_WarumNochHier_15_00"); //Co nadal robicie?
+	AI_Output(self, hero, "Info_Mod_Bartholo_WarumNochHier_12_01"); //Jestem wierny Thorusowi. Wkrótce obóz znów ruszy pod góre.
+	AI_Output(self, hero, "Info_Mod_Bartholo_WarumNochHier_12_02"); //Poza tym, nie chce sie skonczyc jak Stone tam....
 };
 
 INSTANCE Info_Mod_Bartholo_Ende (C_INFO)
@@ -294,7 +294,7 @@ FUNC INT Info_Mod_Bartholo_Ende_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Ende_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Ende_12_00"); //Ihr habt mich gefunden, jetzt ist es also zu spät. Aber ich werde nicht kampflos aufgeben.
+	AI_Output(self, hero, "Info_Mod_Bartholo_Ende_12_00"); //Znalazles mnie, wiec teraz jest juz za pózno. Ale nie zamierzam sie poddawac bez walki.
 
 	AI_StopProcessInfos	(self);
 

@@ -18,7 +18,7 @@ func int B_TeachFightTalentPercent (var C_NPC slf, var C_NPC oth, var int talent
 	// ------ falscher Parameter ------
 	if (talent!=NPC_TALENT_1H) && (talent!=NPC_TALENT_2H) && (talent!=NPC_TALENT_BOW) && (talent!=NPC_TALENT_CROSSBOW)
 	{
-		Print ("*** ERROR: Wrong Parameter ***");
+		Print ("BLEDNOSC: Zly parametr ***");
 		return FALSE;
 	};
 	
@@ -206,7 +206,7 @@ func int B_TeachFightTalentPercent_New (var C_NPC slf, var C_NPC oth, var int ta
 	// ------ falscher Parameter ------
 	if (talent!=NPC_TALENT_1H) && (talent!=NPC_TALENT_2H) && (talent!=NPC_TALENT_BOW) && (talent!=NPC_TALENT_CROSSBOW)
 	{
-		Print ("*** ERROR: Wrong Parameter ***");
+		Print ("BLEDNOSC: Zly parametr ***");
 		return FALSE;
 	};
 	

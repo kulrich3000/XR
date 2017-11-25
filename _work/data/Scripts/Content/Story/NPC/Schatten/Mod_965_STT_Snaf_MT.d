@@ -1,7 +1,7 @@
 instance Mod_965_STT_Snaf_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Snaf";
+	name 		= "pstrykniecie";
 	guild 		= GIL_OUT;
 	id 			= 965;
 	voice 		= 1;

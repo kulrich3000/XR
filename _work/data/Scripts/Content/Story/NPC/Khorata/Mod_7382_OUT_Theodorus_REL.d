@@ -1,7 +1,7 @@
 INSTANCE Mod_7382_OUT_Theodorus_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Theodorus"; 
+	name 		= "teatry"; 
 	guild 		= GIL_OUT;
 	id 			= 7382;
 	voice 		= 9;

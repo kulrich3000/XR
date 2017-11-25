@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Bennet_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Bennet_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bennet_IR_Hi_30_00"); //Bäh, so eine kalte und feuchte Absteige hätte ich nicht erwartet, als es hieß, wir würden zu einer Insel aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Bennet_IR_Hi_30_01"); //Da kann ich doch froh sein, das Schmiedefeuer immer in meiner Nähe zu haben.
+	AI_Output(self, hero, "Info_Mod_Bennet_IR_Hi_30_00"); //Yuck, nie spodziewalem sie takiego zimnego i wilgotnego wysypiska, kiedy mówili, ze jedziemy na wyspe.
+	AI_Output(self, hero, "Info_Mod_Bennet_IR_Hi_30_01"); //Mam szczescie miec kuznie zawsze w poblizu mnie.
 };
 
 INSTANCE Info_Mod_Bennet_IR_GehtLos (C_INFO)
@@ -27,7 +27,7 @@ INSTANCE Info_Mod_Bennet_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Bennet_IR_GehtLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Bennet_IR_GehtLos_Condition()
@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Bennet_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Bennet_IR_GehtLos_30_00"); //Machst du Witze?! Ich bin als Schmied an Bord gekommen und keinen Zentimeter werde ich mich vom Schmiedeofen wegbewegen. Wäre ja noch schöner ...
+	AI_Output(self, hero, "Info_Mod_Bennet_IR_GehtLos_30_00"); //Czy kochasz mnie? Przyszedlem na poklad jako kowal i bez centymetra odejde od pieca kuzniczego. Byloby jeszcze piekniej....
 
 	AI_StopProcessInfos	(self);
 };
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Bennet_IR_Kram (C_INFO)
 	information	= Info_Mod_Bennet_IR_Kram_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du vielleicht auch einige Schwerter und Schmiedewerkzeug für mich?";
+	description	= "Masz dla mnie miecze i narzedzia do kucia?";
 };
 
 FUNC INT Info_Mod_Bennet_IR_Kram_Condition()
@@ -71,8 +71,8 @@ FUNC INT Info_Mod_Bennet_IR_Kram_Condition()
 
 FUNC VOID Info_Mod_Bennet_IR_Kram_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bennet_IR_Kram_15_00"); //Hast du vielleicht auch einige Schwerter und Schmiedewerkzeug für mich?
-	AI_Output(self, hero, "Info_Mod_Bennet_IR_Kram_30_01"); //Sicher. Da ich bisher sowieso nicht viel zu tun habe, kann ich dir auch zeugen, wie du einen stärkeren Arm bekommst.
+	AI_Output(hero, self, "Info_Mod_Bennet_IR_Kram_15_00"); //Masz dla mnie miecze i narzedzia do kucia?
+	AI_Output(self, hero, "Info_Mod_Bennet_IR_Kram_30_01"); //Pewne. Skoro i tak nie mam zbyt wiele do zrobienia, moge równiez pokazac, jak zdobyc mocniejsze ramie.
 };
 
 INSTANCE Info_Mod_Bennet_IR_Staerke (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Bennet_IR_Staerke (C_INFO)
 	information	= Info_Mod_Bennet_IR_Staerke_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden.";
+	description	= "Chce byc silniejszy.";
 };
 
 FUNC INT Info_Mod_Bennet_IR_Staerke_Condition()
@@ -98,7 +98,7 @@ FUNC INT Info_Mod_Bennet_IR_Staerke_Condition()
 
 FUNC VOID Info_Mod_Bennet_IR_Staerke_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bennet_IR_Staerke_15_00"); //Ich will stärker werden.
+	AI_Output(hero, self, "Info_Mod_Bennet_IR_Staerke_15_00"); //Chce byc silniejszy.
 
 	Info_ClearChoices	(Info_Mod_Bennet_IR_Staerke);
 

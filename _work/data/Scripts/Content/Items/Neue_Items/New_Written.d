@@ -2,7 +2,7 @@ var int Mod_Ritualplatz_Used;
 
 INSTANCE ItWr_BookForFaris (C_ITEM)
 {
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -14,15 +14,15 @@ INSTANCE ItWr_BookForFaris (C_ITEM)
 
 	description				= 	"";
 	
-	TEXT[2] 				=  "Ein altes Buch";
-	TEXT[3] 				=  "Es ist magisch verschlossen";
+	TEXT[2] 				=  "Stara ksiazka";
+	TEXT[3] 				=  "To jest magicznie zamkniete.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
 INSTANCE Mod_XardasBriefAnKarras (C_ITEM)
 {
-	name		=	"Xardas' Botschaft";
+	name		=	"ambasada kardaska";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -34,7 +34,7 @@ INSTANCE Mod_XardasBriefAnKarras (C_ITEM)
 	on_state[0]	=	Use_XardasBriefAnKarras_Versiegelt;
 	scemeName	=	"MAPSEALED";
 	description	=	name;
-	TEXT[2]		=	"Diese Botschaft wurde sorgfältig versiegelt.";
+	TEXT[2]		=	"Komunikat ten zostal dokladnie zapieczetowany.";
 };
 var int Use_XardasBriefAnKarras_OneTime;
 FUNC VOID Use_XardasBriefAnKarras()
@@ -45,10 +45,10 @@ FUNC VOID Use_XardasBriefAnKarras()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Werter Karras,"	);
+		Doc_PrintLine	( nDocID, 0, "Drogi Karrasie,"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Ich habe es tatsächlich geschafft. Der Zauber, den wir in dem Buch gefunden haben hat den Bezwinger des Schläfers das Leben gerettet.");
-		Doc_PrintLines	( nDocID, 0, "Er lebt und wird dir diese Nachricht überbringen. Gib ihm das Buch und schicke ihn damit zu mir. Aber vergiss nicht das Buch zu versiegeln.");
+		Doc_PrintLines	( nDocID, 0, "Tak naprawde to zrobilem. Magia, która znalezlismy w ksiazce uratowala zycie sypialni.");
+		Doc_PrintLines	( nDocID, 0, "Zyje i przekaze ci to przeslanie. Daj mu ksiazke i przeslij go do mnie z nia. Nie zapomnij jednak o zapieczetowaniu ksiazki.");
 		Doc_PrintLine	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, "Xardas"		);
 		Doc_Show	( nDocID );
@@ -68,7 +68,7 @@ FUNC VOID Use_XardasBriefAnKarras_Versiegelt()
 
 INSTANCE ItWr_OleForAndre (C_ITEM)
 {
-	name		=	"Oles Brief an Lord Andre";
+	name		=	"List Olego do Pana Andre' a";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -78,12 +78,12 @@ INSTANCE ItWr_OleForAndre (C_ITEM)
 	visual		=	"ItWr_Scroll_02.3DS";
 	material	=	MAT_LEATHER;
 	description	=	name;
-	TEXT[2]		=	"Diese Botschaft wurde sorgfältig versiegelt.";
+	TEXT[2]		=	"Komunikat ten zostal dokladnie zapieczetowany.";
 };
 
 INSTANCE ItWr_NamibForBeliar (C_ITEM)
 {
-	name		=	"Namib's Brief";
+	name		=	"List Namiba";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -93,12 +93,12 @@ INSTANCE ItWr_NamibForBeliar (C_ITEM)
 	visual		=	"ItWr_Scroll_02.3DS";
 	material	=	MAT_LEATHER;
 	description	=	name;
-	TEXT[2]		=	"Diese Botschaft wurde sorgfältig versiegelt.";
+	TEXT[2]		=	"Komunikat ten zostal dokladnie zapieczetowany.";
 };
 
 INSTANCE ItWr_GDG_Almanach (C_ITEM)
 {
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -110,15 +110,15 @@ INSTANCE ItWr_GDG_Almanach (C_ITEM)
 
 	description				= 	"";
 	
-	TEXT[2] 				=  "Ein altes Buch";
-	TEXT[3] 				=  "Es ist magisch verschlossen";
+	TEXT[2] 				=  "Stara ksiazka";
+	TEXT[3] 				=  "To jest magicznie zamkniete.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 };
 
 INSTANCE ItWr_GDG_Almanach_Offen (C_ITEM)
 {
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -133,8 +133,8 @@ INSTANCE ItWr_GDG_Almanach_Offen (C_ITEM)
 
 	description				= 	"";
 	
-	TEXT[2] 				=  "Ein altes Buch";
-	TEXT[3] 				=  "Es ist magisch verschlossen";
+	TEXT[2] 				=  "Stara ksiazka";
+	TEXT[3] 				=  "To jest magicznie zamkniete.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 };
@@ -150,9 +150,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Rüstung"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa zbroi"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Rüstung eines Paladins weiter zu verbessern muss man drei weiße Tigerfelle und eine Paladinrüstung an einem Amboss verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby poprawic pancerz paladyny nalezy polaczyc trzy biale skóry tygrysa i rusztowanie paladynowe z kowadlem.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -166,9 +166,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Rüstung"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa zbroi"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Rüstung eines Drachenjägers weiter zu verbessern muss man drei silberne Trollfelle und eine Schwere Drachenjägerüstung an einem Amboss verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby jeszcze bardziej ulepszyc pancerz mysliwskiego smoka, trzeba polaczyc trzy srebrne skóry trollowe i ciezka pancerz smoka mysliwego z kowadlem.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -182,9 +182,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Robe"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa sukni"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Robe eines Ordenspriester weiter zu verbessern muss man drei weiße Tigerfelle und eine Ordenspriesterrobe an einem Runentisch verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby ulepszyc szate kaplana zakonnego, trzeba polaczyc trzy biale skóry tygrysa i religijna suknie kaplanska przy okraglym stole.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -198,9 +198,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Robe"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa sukni"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Robe eines Richters weiter zu verbessern muss man drei Wasserorkfelle und eine Richterrobe an einem Runentisch verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby jeszcze bardziej ulepszyc szate sedziego, nalezy polaczyc trzy wodne skóry i szate sedziego przy okraglym stole.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -214,9 +214,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Robe"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa sukni"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Robe eines Dämonenbeschwörers weiter zu verbessern muss man drei Lindwurmhäute und eine Dämonenbeschwörerrobe an einem Runentisch verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby jeszcze bardziej uwydatnic szate przywolujacego demona, nalezy polaczyc trzy linowe skóry i szate przywolujaca demona z okraglym stolem.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -230,9 +230,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Rüstung"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa zbroi"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Rüstung eines Dämonenritters weiter zu verbessern muss man drei Lindwurmhäute und eine Dämonenritterrüstung an einem Amboss verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby jeszcze bardziej ulepszyc pancerz rycerza demonów, trzeba polaczyc trzy skóry i pancerz rycerza demonów z kowadlem.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -246,9 +246,9 @@ FUNC VOID Use_GDGAlmanach()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Verbesserung einer Rüstung"	);
+		Doc_PrintLine	( nDocID, 0, "Poprawa zbroi"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Um die Rüstung eines Hüters weiter zu verbessern muss man drei Wasserorkfelle und eine Hüterrüstung an einem Amboss verbinden.");
+		Doc_PrintLines	( nDocID, 0, "Aby jeszcze bardziej ulepszyc pancerz stróza, trzeba polaczyc trzy skóry wodne i pancerz wartownika z kowadlem.");
 		Doc_PrintLines	( nDocID, 0, "");
 		Doc_PrintLines	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -261,7 +261,7 @@ FUNC VOID Use_GDGAlmanach()
 
 INSTANCE ItWr_ZombieToHuman (C_ITEM)
 {
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -279,7 +279,7 @@ INSTANCE ItWr_ZombieToHuman (C_ITEM)
 
 	description				= 	"";
 	
-	TEXT[2] 				=  "Macht antiker Kriegsführung";
+	TEXT[2] 				=  "Sila starozytnej wojny";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 };
@@ -300,25 +300,25 @@ FUNC VOID Use_ZombieToHuman()
 		//1.Seite
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 		Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
-		Doc_PrintLines	( nDocID,  0, "Aura-Zauber"	);
+		Doc_PrintLines	( nDocID,  0, "zaklecia"	);
 		Doc_PrintLine	( nDocID,  0, "---------");
 		Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
-		Doc_PrintLines	( nDocID,  0, "Alte Überlieferungen künden von einer Kunst Magie zu wirken, die bereits bei einfacher Anwendung ganze Armeen mit übernatürlicher Widerstandsfähigkeit und Macht auszustatten vermochte. So sollen  einige der Zauber über einen kurzen Zeitraum den Betroffenen Resistenz gegen Magie, Feuer oder Waffen verliehen, ihre Bewegungen um ein vielfaches beschleunigt und gekräftigt, oder sogar die Macht verliehen haben, die Umgebung durch ihre bloße Präsenz mit Feuer und Eis zu versehen."					);
+		Doc_PrintLines	( nDocID,  0, "Starozytne tradycje wskazuja na sztuke pracujacej magii, która dzieki prostemu zastosowaniu byla juz w stanie wyposazyc cale armie w nadprzyrodzona sprezystosc i moc. Mówi sie, ze niektóre z tych zaklec byly odporne na magie, ogien lub bron przez krótki okres czasu, wielokrotnie przyspieszaly i wzmacnialy swoje ruchy, a nawet dawaly sile do zapewnienia srodowisku ognia i lodu poprzez swoja zwykla obecnosc."					);
 					
 		//2.Seite
 		Doc_SetMargins	( nDocID,  1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 		Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
-		Doc_PrintLines	( nDocID,  1, "Konvertieren magischer Energie von Artefakt auf Träger"					);
+		Doc_PrintLines	( nDocID,  1, "Przeksztalcanie energii magicznej z artefaktu na nosnik"					);
 		Doc_PrintLine	( nDocID,  1, "---------");
 		Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
-		Doc_PrintLines	( nDocID,  1, "Eine weitere Methode der machtvollen Kriegsführung soll in dem Transfer magischer Energie von Artefakten auf ihre Träger gelegen haben. Schwerter und Rüstungen aus magischem Erz sollen mit Runen gekoppelt worden sein, die den Trägern damit unglaubliche Widerstandskraft und Stärke im Kampf verliehen haben. So ließ der einfache Ausspruch der Formel 'atoic onectos' alle Wunden des Trägers schließen, wenn er eine Heilungsrune an Waffe oder Rüstung trug.");
+		Doc_PrintLines	( nDocID,  1, "Inna metoda poteznych dzialan wojennych jest podobno transfer energii magicznej z artefaktów do ich nosników. Mówi sie, ze miecze i pancerz z magicznej rudy zostaly polaczone z runem, co dalo uzytkownikom niesamowity opór i sile w walce. Tak wiec proste sformulowanie formuly 'atoic onectos' pozwalalo na zamkniecie wszystkich ran uzytkownika, jesli nosil on uzdrawiajaca rune broni lub zbroi.");
 		Doc_Show		( nDocID );
 
 	if (ZombieToHuman == FALSE)
 	{
 		CreateInvItems	(hero, ItWr_OTZauberformel, 1);
 
-		B_LogEntry	(TOPIC_MOD_ANFANG, "Das ist interessant. Scheinbar lassen sich Rüstungen aus magischem Erz durch Ausspruch einer Zauberformel mit einer Heilrune koppeln, um dem Träger Heilung zu verschaffen.");
+		B_LogEntry	(TOPIC_MOD_ANFANG, "To ciekawe. Najwyrazniej pancerz wykonany z magicznej rudy moze byc polaczony z lecznicza runa, mówiac magiczna formule, aby dac uzytkownikowi uzdrowienie.");
 
 		ZombieToHuman = TRUE;
 	};
@@ -327,7 +327,7 @@ FUNC VOID Use_ZombieToHuman()
 
 INSTANCE Mod_XardasBriefAnKarras_Geoeffnet (C_ITEM)
 {
-	name		=	"Xardas' Botschaft (geöffnet)";
+	name		=	"Ambasada Xardasa (otwarta)";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -339,12 +339,12 @@ INSTANCE Mod_XardasBriefAnKarras_Geoeffnet (C_ITEM)
 	on_state[0]	=	Use_XardasBriefAnKarras;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"Xardas' Brief an Karras";
+	TEXT[2]		=	"List 'Xardas' do Karras";
 };
 
 INSTANCE Mod_MattheusBotschaft (C_ITEM)
 {
-	name		=	"Botschaft von Pyrokar";
+	name		=	"Wiadomosc od Pyrokar";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION|ITEM_SHOW;
@@ -367,19 +367,19 @@ FUNC VOID Use_MattheusBotschaft()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Sehr geehrter Paladin Hagen,"	);
+		Doc_PrintLine	( nDocID, 0, "Drogi Paladin Hagen,"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Wie ihr vielleicht wisst, bereiten uns die Anhänger Beliars immer noch großes Kopfzerbrechen.");
-		Doc_PrintLines	( nDocID, 0, "Es wurde uns nun auch noch unser Heiliger Hammer gestohlen. Ebenfalls wurde Gorax eine Lieferung Wein gestohlen und dadurch haben wir weitere Einnahmen verloren.");
-		Doc_PrintLines	( nDocID, 0, "Ich schreibe euch diesen Brief um euch zu bitten mir ein paar Wachen zur Verfügung zu stellen."			);
+		Doc_PrintLines	( nDocID, 0, "Jak zapewne wiesz, zwolennicy Beliara wciaz wywoluja u nas wiele bólów glowy.");
+		Doc_PrintLines	( nDocID, 0, "Nasz Swiety Hammer zostal nam skradziony. Równiez Gorax zostal skradziony i stracilismy dalsze dochody.");
+		Doc_PrintLines	( nDocID, 0, "Napisze Ci ten list, abys poprosil Cie o oddanie do mojej dyspozycji kilku strazników."			);
 		Doc_PrintLine	( nDocID, 0, ""		);
-		Doc_PrintLine	( nDocID, 0, "Innos Schütze euch, Pyrokar");
+		Doc_PrintLine	( nDocID, 0, "Archer Inno, Pyrokar");
 		Doc_Show	( nDocID );
 };
 
 INSTANCE ItWr_CantharZettel_Valentino (C_ITEM)
 {
-	name		=	"Zettel";
+	name		=	"chit";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -391,7 +391,7 @@ INSTANCE ItWr_CantharZettel_Valentino (C_ITEM)
 	on_state[0]	=	Use_CantharZettel_Valentino;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"aus dem Zelt, in dem Valentino war";
+	TEXT[2]		=	"z namiotu, w którym znajdowal sie Valentino";
 };
 
 var int Knows_CantharZettel_Valentino;
@@ -404,7 +404,7 @@ FUNC VOID Use_CantharZettel_Valentino()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLines	( nDocID, 0, "Wenn ihr ihn habt, bringt ihn in das Haus, in dem früher Kuno gewohnt hat. Dort wird ihn dann einer meiner Schüler 'befragen', bis ich zurück bin. Mit Valentino könnt ihr verfahren, wie ihr wünscht, Hauptsache, er kann sein Maul danach nicht mehr so weit aufreißen."			);
+		Doc_PrintLines	( nDocID, 0, "Jesli go masz, zabierz go do domu, w którym mieszkal Kuno. Tam jeden z moich uczniów bedzie go 'przesluchiwal' az do powrotu. Z Valentino mozesz zrobic to, co chcesz, pod warunkiem, ze nie moze on otworzyc usta tak daleko po tym."			);
 		Doc_PrintLine	( nDocID, 0, ""		);
 		Doc_PrintLine	( nDocID, 0, "C.");
 		Doc_Show	( nDocID );
@@ -413,7 +413,7 @@ FUNC VOID Use_CantharZettel_Valentino()
 	{
 		Knows_CantharZettel_Valentino = TRUE;
 
-		B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Canthars Gefolgschaft hat im ehemaligen Haus Kunos beim Pass zum Minental Unterschlupf gefunden. Das Räubernest sollte ich ausräuchern.");
+		B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Nasladowcy kantaru znalezli schronienie w dawnym domu Kunosa niedaleko przeleczy Minental. Powinienem wypalic gniazdo zlodziejki.");
 
 		Wld_InsertNpc	(Mod_7033_OUT_Allievo_NW, "TAVERNE");
 	};
@@ -421,7 +421,7 @@ FUNC VOID Use_CantharZettel_Valentino()
 
 INSTANCE ItWr_TofuRezept (C_ITEM)
 {
-	name		=	"Rezept";
+	name		=	"recepta";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -433,7 +433,7 @@ INSTANCE ItWr_TofuRezept (C_ITEM)
 	on_state[0]	=	Use_TofuRezept;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"Rezept für To-Fu";
+	TEXT[2]		=	"Zalecenie dotyczace stosowania To-Fudu";
 };
 
 FUNC VOID Use_TofuRezept()
@@ -445,16 +445,16 @@ FUNC VOID Use_TofuRezept()
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
 		Doc_PrintLine	( nDocID, 0, ""		);
-		Doc_PrintLine	( nDocID, 0, "To-Fu-Rezept"		);
+		Doc_PrintLine	( nDocID, 0, "Recepturao-Fu"		);
 		Doc_PrintLine	( nDocID, 0, ""		);
-		Doc_PrintLines	( nDocID, 0, "Für normale Portion man sammeln 30 Schoten von So-Ja-Pflanze. Aus den Schoten man nehmen die Bohnen heraus und tun sie kurz in Wasser, dann alles auspressen. In den ausgepressten Saft man schütten Salz, dann in So-Ja-Presse pressen. So man erhalten To-Fu."			);
+		Doc_PrintLines	( nDocID, 0, "Na zwykla porcje zbierasz 30 straków rosliny So-Ja. Wyjmij fasole z straków i wlóz ja na krótko do wody, a nastepnie wycisnij. Do wyciskanego soku wlac sól, a nastepnie wycisnac w prasie So-Ja. Wiec dostajesz To-Fu."			);
 		Doc_PrintLine	( nDocID, 0, ""		);
 		Doc_Show	( nDocID );
 };
 
 INSTANCE ItWr_SoerensPBrief (C_ITEM)
 {
-	name		=	"Zettel";
+	name		=	"chit";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION|ITEM_SHOW;
@@ -466,7 +466,7 @@ INSTANCE ItWr_SoerensPBrief (C_ITEM)
 	on_state[0]	=	Use_SoerensPBrief;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"von Sören";
+	TEXT[2]		=	"zören";
 };
 
 var int Knows_SoerensPBrief;
@@ -479,8 +479,8 @@ FUNC VOID Use_SoerensPBrief()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLines	( nDocID, 0, "Nachdem  Lorforn kläglich gescheitert ist, bringe ich nun dich auf den Plan. Tugettso muss untergehen. Am besten, du versuchst, dich bei einem der Oberhäupter einzuschmeicheln. Denk dir etwas aus. Wenn du ihr Vertrauen genießt, versuche mit allen Mitteln, sie gegeneinander aufzuhetzen. Und versuche ein Exemplar dieser seltenen Heilpflanze, die nur dort wächst, zu ergattern."			);
-		Doc_PrintLines	( nDocID, 0, "Ach ja, wenn du diesen aufgeblasenen Schwachkopf findest, der Lorforn fertig gemacht hat, beseitige ihn."		);
+		Doc_PrintLines	( nDocID, 0, "Teraz, kiedy Lorforn poniósl porazke, umieszczam cie na mapie. Tugettso musi zejsc w dól. Lepiej spróbowac przytulic sie do jednego z szefów. Zrób cos. Jesli cieszysz sie ich zaufaniem, spróbuj w kazdy sposób przeciwstawic je sobie nawzajem. I spróbuj uzyskac trzymac okaz tej rzadkiej rosliny leczniczej, która tylko rosnie tam."			);
+		Doc_PrintLines	( nDocID, 0, "Ach, jesli okaze sie, ze ten pompatyczny moron, który zlamal Lorforn, pozbyj sie go."		);
 		Doc_PrintLine	( nDocID, 0, "");
 		Doc_PrintLine	( nDocID, 0, "P.");
 		Doc_Show	( nDocID );
@@ -489,7 +489,7 @@ FUNC VOID Use_SoerensPBrief()
 	{
 		Mod_VMG_FaiceGifty_Gift = 8;
 
-		B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich musste Sören niederstrecken und habe herausgefunden, dass er auch für diesen 'P.' arbeitet, genau wie Lorforn. Ich sollte das Genn erzählen.");
+		B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Musialem obciac Sörena i dowiedziec sie, ze jest on odpowiedzialny za ten 'P'. jak Lorforn. Powinienem powiedziec Gennowi.");
 	};
 };
 
@@ -497,7 +497,7 @@ var int XardasLetterForHeroOT;
 
 INSTANCE ItWr_XardasLetterForHeroOT (C_ITEM)
 {
-	name		=	"Botschaft von Xardas";
+	name		=	"Wiadomosc od Xardas";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -520,14 +520,14 @@ FUNC VOID Use_XardasLetterForHeroOT()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLines	( nDocID, 0, "Der Schläfer scheint verbannt, doch ich kann auch nach mehreren Tagen unter den Trümmern dieses Ortes kein Leben mehr spüren. Daher muss ich annehmen, dass du entgegen aller Erwartungen und Prophezeiungen den Tod gefunden hast. Für alle Fälle lasse ich diese Teleportspruchrolle hier, die dich sicher zu meinem Turm bringen wird, sollten meine Diener dich lebend aus den Trümmern bergen. Da der Teleport über eine relativ große Distanz erfolgt, solltest du nicht zuviel Ballast  mit dir tragen."			);
+		Doc_PrintLines	( nDocID, 0, "Narzutnik zdaje sie byc wygnany, jednak nawet po kilku dniach ciagle nie czuje zycia pod gruzami tego miejsca. Musze zatem zalozyc, ze zgineliscie przeciwko wszelkim oczekiwaniom i przepowiedniom. W kazdym razie zostawiam tutaj te teleporte, która bezpiecznie zawiezie cie do mojej wiezy, jesli moi sludzy ratuja cie zywcem z gruzów. Poniewaz teleport odbywa sie na stosunkowo duza odleglosc, nie powinienes miec przy sobie zbyt duzo balastu."			);
 		Doc_PrintLine	( nDocID, 0, ""		);
 		Doc_PrintLine	( nDocID, 0, "Xardas");
 		Doc_Show	( nDocID );
 
 	if (XardasLetterForHeroOT == FALSE)
 	{
-		B_LogEntry	(TOPIC_MOD_ANFANG, "Xardas hat den Tempel wieder verlassen, nachdem er von meinem Tod ausgehen musste. Für alle Fälle hinterließ er jedoch eine Teleportspruchrolle, die mich – mit nicht zu viel Gepäck – zu ihm befördern sollte.");
+		B_LogEntry	(TOPIC_MOD_ANFANG, "Xardas opuscil swiatynie po tym, jak musial odebrac mi smierc. W kazdym razie jednak zostawil po sobie role teleportu, który mial mnie przewiezc - z niezbyt duzym bagazem.");
 
 		XardasLetterForHeroOT = TRUE;
 	};
@@ -535,7 +535,7 @@ FUNC VOID Use_XardasLetterForHeroOT()
 
 INSTANCE ItWr_OTZauberformel (C_ITEM)
 {
-	name		=	"Formel";
+	name		=	"wzór";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -567,7 +567,7 @@ FUNC VOID Use_OTZauberformel()
 
 		HeroIstKeinZombie = TRUE;
 
-		B_LogEntry	(TOPIC_MOD_ANFANG, "Es hat geklappt! Ich bin tatsächlich wieder unter den Lebenden! Der Prozess hat bei meinem verwesten Körper jedoch soviel magische Energie verschlungen, dass sie Rüstung zerfallen ist und viele Dinge, die ich bei mir trug, verloren sind.");
+		B_LogEntry	(TOPIC_MOD_ANFANG, "To zadzialalo! W rzeczywistosci wracam miedzy zywymi! Jednak proces ten pochlonal tyle magicznej energii w moim rozkladajacym sie ciele, ze rozpadl pancerz i stracil wiele z rzeczy, które mialem przy sobie.");
 
 		B_InitMonsterAttitudes();
 
@@ -586,7 +586,7 @@ FUNC VOID Use_OTZauberformel()
 
 INSTANCE ItWr_HymirsLetterForHagen (C_ITEM)
 {
-	name		=	"Hymir's Nachricht";
+	name		=	"Przeslanie Hymira";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -608,9 +608,9 @@ FUNC VOID Use_HymirsLetterForHagen()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Sehr geehrter Lord Hagen,"	);
+		Doc_PrintLine	( nDocID, 0, "Szanowny Panie Hagen,"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Ich habe es geschafft die verlassene Mine wieder in Betrieb zu nehmen. Der Bote, der dir diese Nachricht überbringt, war daran nicht unbeteiligt. Er wird für uns noch Spitzhacken besorgen, damit wir das Erz auch abbauen können. Wir werden das Erz sobald wie möglich in die Stadt bringen.");
+		Doc_PrintLines	( nDocID, 0, "Udalo mi sie oddac opuszczona kopalnie do eksploatacji. Poslaniec, który niesie wam to przeslanie, nie byl niezauwazony. Zapewni nam on pikniki, abysmy mogli wydobywac rude. Jak najszybciej dostaniemy rude do miasta.");
 		Doc_PrintLine	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, "Hymir"		);
 		Doc_Show	( nDocID );
@@ -618,7 +618,7 @@ FUNC VOID Use_HymirsLetterForHagen()
 
 INSTANCE Mod_SamuelsGrogRezept (C_ITEM)
 {
-	name		=	"Notiz";
+	name		=	"okólnik";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -642,10 +642,10 @@ FUNC VOID Use_SamuelsGrogRezept()
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
 		Doc_PrintLine	( nDocID, 0, ""	);
-		Doc_PrintLine	( nDocID, 0, "Aus Rum muss man’s Brauen"			);
-		Doc_PrintLine	( nDocID, 0, "und Zucker dazu haun’");
-		Doc_PrintLine	( nDocID, 0, "mit Wasser zusammen wird’s gebrannt");
-		Doc_PrintLine	( nDocID, 0, "danach wird es Grog genannt."			);
+		Doc_PrintLine	( nDocID, 0, "Z rumu trzeba go warzyc"			);
+		Doc_PrintLine	( nDocID, 0, "i dodac cukier.");
+		Doc_PrintLine	( nDocID, 0, "jest wypalany razem z woda");
+		Doc_PrintLine	( nDocID, 0, "nazywa sie Grog."			);
 		Doc_PrintLine	( nDocID, 0, ""		);
 		Doc_PrintLine	( nDocID, 0, "");
 		Doc_Show	( nDocID );
@@ -655,7 +655,7 @@ FUNC VOID Use_SamuelsGrogRezept()
 
 INSTANCE ItWr_AL_GebrandtDokumente (C_ITEM)
 {
-	name		=	"Dokument";
+	name		=	"dokument";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -667,7 +667,7 @@ INSTANCE ItWr_AL_GebrandtDokumente (C_ITEM)
 	on_state[0]	=	Use_ItWr_AL_GebrandtDokumente;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"von Gebrandt";
+	TEXT[2]		=	"przez Gebranddt";
 };
 
 FUNC VOID Use_ItWr_AL_GebrandtDokumente()
@@ -679,19 +679,19 @@ FUNC VOID Use_ItWr_AL_GebrandtDokumente()
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
 		Doc_PrintLine	( nDocID, 0, ""	);
-		Doc_PrintLine	( nDocID, 0, "Mitgliederliste:"			);
+		Doc_PrintLine	( nDocID, 0, "Lista czlonków:"			);
 		Doc_PrintLines	( nDocID, 0, "Gerbrandt, Valentino, Fernando, Cornelius");
 		Doc_PrintLine	( nDocID, 0, "");
-		Doc_PrintLine	( nDocID, 0, "Aufzeichnungen der Gruppe:"			);
-		Doc_PrintLine	( nDocID, 0, "Diego wurde beseitigt"		);
-		Doc_PrintLine	( nDocID, 0, "Morgahard wurde beseitigt");
-		Doc_PrintLines	( nDocID, 0, "Leon musste getötet werden, er hätte zu viele Informationen weitergeben können");
+		Doc_PrintLine	( nDocID, 0, "Zapisy grupowe:"			);
+		Doc_PrintLine	( nDocID, 0, "Diego zostal usuniety"		);
+		Doc_PrintLine	( nDocID, 0, "Morgahard zostal usuniety");
+		Doc_PrintLines	( nDocID, 0, "Leon musial zostac zabity, poniewaz mógl podac zbyt wiele informacji,");
 		Doc_Show	( nDocID );
 };
 
 INSTANCE ItWr_Ritualplatz (C_ITEM)
 {
-	name		=	"Notiz";
+	name		=	"okólnik";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -703,7 +703,7 @@ INSTANCE ItWr_Ritualplatz (C_ITEM)
 	on_state[0]	=	Use_Ritualplatz;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"Enthält die Formel zum Öffnen des Ritualplatzes";
+	TEXT[2]		=	"Zawiera formule otwarcia miejsca rytualu.";
 };
 
 FUNC VOID Use_Ritualplatz()
@@ -716,7 +716,7 @@ FUNC VOID Use_Ritualplatz()
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
 		Doc_PrintLine	( nDocID, 0, ""	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLine	( nDocID, 0, "Aperires Meo");
+		Doc_PrintLine	( nDocID, 0, "Aperire Meo Meo");
 		Doc_PrintLine	( nDocID, 0, "");
 		Doc_PrintLine	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -736,7 +736,7 @@ FUNC VOID Use_Ritualplatz()
 
 INSTANCE Mod_DiegosRaubListe (C_ITEM)
 {
-	name		=	"Liste von Diego";
+	name		=	"Wykaz Diegoiego";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -759,18 +759,18 @@ FUNC VOID Use_DiegosRaubListe()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Folgende Gegenstände sollen besorgt werden:"	);
+		Doc_PrintLine	( nDocID, 0, "Zamawia sie nastepujace pozycje:"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLine	( nDocID, 0, "3 Goldkelche");
-		Doc_PrintLine	( nDocID, 0, "3000 Goldmünzen");
-		Doc_PrintLine	( nDocID, 0, "1 Ring der Geschicklichkeit"			);
-		Doc_PrintLine	( nDocID, 0, "2 Meisterdegen"		);
+		Doc_PrintLine	( nDocID, 0, "3 kielichy zlote");
+		Doc_PrintLine	( nDocID, 0, "Monety zlotowe");
+		Doc_PrintLine	( nDocID, 0, "1 Pierscien umiejetnosci"			);
+		Doc_PrintLine	( nDocID, 0, "2 glównych mieczników"		);
 		Doc_Show	( nDocID );
 };
 
 INSTANCE Mod_BillsRumRezept (C_ITEM)
 {
-	name		=	"Notiz";
+	name		=	"okólnik";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -794,7 +794,7 @@ FUNC VOID Use_BillsRumRezept()
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
 		Doc_PrintLine	( nDocID, 0, ""	);
-		Doc_PrintLines	( nDocID, 0, "Es ist wichtig, dass du alles an Melasse aufkaufst, damit der neue nichts mehr von dem Zeug bekommt. Ich hab keine Lust auf diese Schatzsuche, da wir bei der letzten fast draufgegegangen sind. Wenn du willst, kannst du dir dann aus der Melasse Rum brauen. Dazu mischt du die Melasse mit Wasser, so dass auf ein Glas Melasse zwei Flaschen Wasser kommen. Das ganze dann erhitzen und wieder abkühlen lassen und du hast deinen Rum.");
+		Doc_PrintLines	( nDocID, 0, "Wazne jest, aby kupic wszystkie melasy, wiec nowy gosc nie dostaje juz wiecej tych rzeczy. Nie chce isc na to polowanie na skarb, bo prawie zabilismy sie w ostatnim. Jesli chcesz, mozesz zrobic rum z melasy. Zmieszac melase z woda tak, aby do szklanki melasy dodac dwie butelki wody. Potem ogrzac cala rzecz i pozwolic, aby ponownie ostygla i masz swój rum.");
 		Doc_PrintLine	( nDocID, 0, "");
 		Doc_PrintLine	( nDocID, 0, "Bill"			);
 		Doc_PrintLine	( nDocID, 0, ""		);
@@ -806,7 +806,7 @@ FUNC VOID Use_BillsRumRezept()
 
 INSTANCE XardasLetterForSaturas (C_ITEM)
 {
-	name		=	"Xardas' Botschaft";
+	name		=	"ambasada kardaska";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -818,8 +818,8 @@ INSTANCE XardasLetterForSaturas (C_ITEM)
 	on_state[0]	=	Use_XardasLetterForSaturas_Versiegelt;
 	scemeName	=	"MAPSEALED";
 	description	=	name;
-	TEXT[2]		=	"Diese Botschaft wurde sorgfältig versiegelt.";
-	TEXT[3]		=	"Ich soll sie Saturas überbringen.";
+	TEXT[2]		=	"Komunikat ten zostal dokladnie zapieczetowany.";
+	TEXT[3]		=	"Mam je dostarczyc Saturnowi.";
 };
 var int Use_XardasLetterForSaturas_OneTime;
 FUNC VOID Use_XardasLetterForSaturas()
@@ -830,9 +830,9 @@ FUNC VOID Use_XardasLetterForSaturas()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "An Saturas, den obersten Wassermagier"	);
+		Doc_PrintLine	( nDocID, 0, "Satura, najwyzszy magik wody."	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Ich schicke dir einen Boten um dir etwas wichtiges mitzuteilen. Ich fürchte das es eine neue Bedrohung gibt. Sie wird schlimmer sein als der Schläfer und nur mein Bote kann die Gefahr bannen. Du musst ihm unbedingt Zugang zum Portal gewähren.");
+		Doc_PrintLines	( nDocID, 0, "Wyslem wam poslanniczke, abyscie powiedzieli wam cos waznego. Obawiam sie, ze istnieje nowe zagrozenie. Ona bedzie gorsza od sypialni i tylko mój poslannik moze zapobiec niebezpieczenstwu. Musisz zapewnic mu dostep do portalu.");
 		Doc_PrintLine	( nDocID, 0, ""			);
 		Doc_PrintLine	( nDocID, 0, "Xardas"		);
 		Doc_Show	( nDocID );
@@ -852,7 +852,7 @@ FUNC VOID Use_XardasLetterForSaturas_Versiegelt()
 
 INSTANCE XardasLetterForSaturas_Geoeffnet (C_ITEM)
 {
-	name		=	"Xardas' Botschaft (geöffnet)";
+	name		=	"Ambasada Xardasa (otwarta)";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -864,12 +864,12 @@ INSTANCE XardasLetterForSaturas_Geoeffnet (C_ITEM)
 	on_state[0]	=	Use_XardasLetterForSaturas;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"Xardas' Brief an Saturas";
+	TEXT[2]		=	"Pismo Xardasa do Satura";
 };
 
 INSTANCE Mod_Sklavenliste_DMR (C_ITEM)
 {
-	name		=	"Eine Liste mit Namen";
+	name		=	"Lista nazwisk";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -894,17 +894,17 @@ FUNC VOID Use_Sklavenliste()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Liste der Sklaven:"	);
+		Doc_PrintLine	( nDocID, 0, "Lista niewolników:"	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Fred    (X)"	);
+		Doc_PrintLines	( nDocID, 0, "Czerwony."	);
 		Doc_PrintLines	( nDocID, 0, "Jorgen  (X)"	);
-		Doc_PrintLine	( nDocID, 0, "Draal   (X)"			);
-		Doc_PrintLine	( nDocID, 0, "Elvrich ( )"		);
+		Doc_PrintLine	( nDocID, 0, ""			);
+		Doc_PrintLine	( nDocID, 0, "Elvrich ()"		);
 		Doc_Show	( nDocID );
 
 	if (Sklavenliste_OneTime	==	FALSE)
 	{
-		B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ich hab in der Nähe von Freds Hütte eine Liste mit Namen gefunden. Fred war der erste. Es scheint eine Liste derer zu sein, die von den unbekannten gefangen werden. Als nächster ist Elvrich an der Reihe. Ich sollte Vatras Bericht erstatten.");
+		B_LogEntry	(TOPIC_MOD_VERMISSTE, "Liste nazwisk znalazlem w poblizu kabiny Freda. Fred byl pierwszym. Wydaje sie, ze jest to lista osób zlapanych przez nieznane. Dalej Elvrich. Powinienem zglosic sie do Vatry.");
 
 		Sklavenliste_OneTime	=	TRUE;
 	};
@@ -912,7 +912,7 @@ FUNC VOID Use_Sklavenliste()
 
 INSTANCE MatteoFlugblaetter (C_ITEM)
 {
-	name		=	"Matteos Flugblatt";
+	name		=	"Broszura Matteos";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION|ITEM_MULTI;
@@ -934,12 +934,12 @@ FUNC VOID Use_MatteoFlugblatt()
 		Doc_SetPage	( nDocID, 0, "letters.TGA" , 0	);
 		Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1	);
-		Doc_PrintLine	( nDocID, 0, "Du hast Hunger und nicht viel Geld."	);
+		Doc_PrintLine	( nDocID, 0, "Jestes glodny i nie masz duzo pieniedzy."	);
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLines	( nDocID, 0, "Dann geh zu Matteo, dem besten Händler für Lebensmittel, den man in der Stadt finden kann.");
-		Doc_PrintLines	( nDocID, 0, "Egal was du brauchst, ob Milch oder Brot, bei Matteo kannst du alles kaufen, was du zum Überleben brauchst.");
+		Doc_PrintLines	( nDocID, 0, "Nastepnie udaj sie do Matteo, najlepszego sprzedawcy artykulów spozywczych w miescie.");
+		Doc_PrintLines	( nDocID, 0, "Bez wzgledu na to, czego potrzebujesz, mleko czy chleb, w Matteo mozesz kupic wszystko, czego potrzebujesz, aby przezyc.");
 		Doc_PrintLine	( nDocID, 0, ""			);
-		Doc_PrintLine	( nDocID, 0, "Nur für kurze Zeit im Angebot: Käse"		);
+		Doc_PrintLine	( nDocID, 0, "Dostepny tylko przez krótki czas."		);
 		Doc_Show	( nDocID );
 	
 		if (Mod_AngebotMatteo	==	0)
@@ -950,7 +950,7 @@ FUNC VOID Use_MatteoFlugblatt()
 
 INSTANCE Mod_ConstantinosZutatenliste (C_ITEM)
 {
-	name		=	"Constantinos Zutatenliste";
+	name		=	"Lista skladników Konstantynos Lista skladników";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION|ITEM_MULTI;
@@ -962,7 +962,7 @@ INSTANCE Mod_ConstantinosZutatenliste (C_ITEM)
 	on_state[0]	=	Use_ConstantinosZutatenliste;
 	scemeName	=	"MAPSEALED";
 	description	=	name;
-	TEXT[2]		=	"Diese Zutaten braucht man für einen neuen Trank";
+	TEXT[2]		=	"Skladniki te sa potrzebne do nowego napoju";
 };
 
 FUNC VOID Use_ConstantinosZutatenliste()
@@ -973,26 +973,26 @@ FUNC VOID Use_ConstantinosZutatenliste()
 		Doc_SetPage	( nDocID, 0, "letters.TGA", 0);
 		Doc_SetFont	( nDocID, -1, FONT_Book);
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1);
-		Doc_PrintLine	( nDocID, 0, "Zutatenliste für den 'Trank der Macht'");
+		Doc_PrintLine	( nDocID, 0, "Skladniki dla napojów o mocy");
 		Doc_PrintLine	( nDocID, 0, "--------------------------------------");
 		Doc_PrintLine	( nDocID, 0, "");
-		Doc_PrintLine	( nDocID, 0, "Starkes Minecrawler-Sekret (2x)");
-		Doc_PrintLine	( nDocID, 0, "Zwillingsdorn (1x)");
-		Doc_PrintLine	( nDocID, 0, "Sumpfkrautpflanze (4x)");
-		Doc_PrintLine	( nDocID, 0, "Blutfliegenstachel (1x)");
+		Doc_PrintLine	( nDocID, 0, "Mocna sekretarka koparek mineralów (2x)");
+		Doc_PrintLine	( nDocID, 0, "Podwójny trzpien (1x)");
+		Doc_PrintLine	( nDocID, 0, "Roslina ziolowa bagna (4x)");
+		Doc_PrintLine	( nDocID, 0, "Kregoslup krwi (1x)");
 		Doc_Show	( nDocID );
 
 	if (Mod_MinecrawlerEi	==	0)
 	{
 		Mod_MinecrawlerEi	=	1;
 
-		B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Constantino braucht: 2x starkes Minecrawler-Sekret, 1x Zwillingsdorn, 4x Sumpfkraut und 1x Blutfliegenstachel.");
+		B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Konstantino potrzebuje: 2x silny minecrawler-secret, 1x podwójny kregoslup, 4x ziele bagna i 1x krwi mucha kregoslupa.");
 	};
 };
 
 INSTANCE ItWr_ConstantinosZauberwasserliste (C_ITEM)
 {
-	name		=	"Constantino's Zutatenliste";
+	name		=	"Lista skladników Konstantynu";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION|ITEM_MULTI;
@@ -1004,7 +1004,7 @@ INSTANCE ItWr_ConstantinosZauberwasserliste (C_ITEM)
 	on_state[0]	=	Use_ConstantinosZauberwasserliste;
 	scemeName	=	"MAP";
 	description	=	name;
-	TEXT[2]		=	"Diese Zutaten braucht man für Zauberwasser";
+	TEXT[2]		=	"Te skladniki sa potrzebne dla magicznej wody.";
 };
 
 FUNC VOID Use_ConstantinosZauberwasserliste()
@@ -1015,21 +1015,21 @@ FUNC VOID Use_ConstantinosZauberwasserliste()
 		Doc_SetPage	( nDocID, 0, "letters.TGA", 0);
 		Doc_SetFont	( nDocID, -1, FONT_Book);
 		Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1);
-		Doc_PrintLine	( nDocID, 0, "Zutatenliste für Zauberwasser");
+		Doc_PrintLine	( nDocID, 0, "Skladniki dla czarodziejskiej wody");
 		Doc_PrintLine	( nDocID, 0, "-----------------------------");
 		Doc_PrintLine	( nDocID, 0, "");
-		Doc_PrintLine	( nDocID, 0, "Wasser (10x)");
-		Doc_PrintLine	( nDocID, 0, "Salzwasser (2x)");
-		Doc_PrintLine	( nDocID, 0, "Feuernesseln (5x)");
-		Doc_PrintLine	( nDocID, 0, "Heilpflanzen (5x)");
-		Doc_PrintLine	( nDocID, 0, "Blauflieder (3x)");
-		Doc_PrintLine	( nDocID, 0, "Feldknöterich (1x)");
+		Doc_PrintLine	( nDocID, 0, "Woda (10x)");
+		Doc_PrintLine	( nDocID, 0, "Woda slona (2x)");
+		Doc_PrintLine	( nDocID, 0, "Pokrowce (5x)");
+		Doc_PrintLine	( nDocID, 0, "Rosliny lecznicze (5x)");
+		Doc_PrintLine	( nDocID, 0, "Piosenki niebieskie (3x)");
+		Doc_PrintLine	( nDocID, 0, "rdestnica (1x)");
 		Doc_Show	( nDocID );
 };
 
 INSTANCE Mod_XardasZauberbuch (C_ITEM)
 {
-	name		=	"Altes Buch";
+	name		=	"Ksiazka";
 
 	mainflag	=	ITEM_KAT_DOCS;
 	flags		=	ITEM_MISSION;
@@ -1040,8 +1040,8 @@ INSTANCE Mod_XardasZauberbuch (C_ITEM)
 	material	=	MAT_LEATHER;
 
 	description	=	name;
-	TEXT[2]		=	"Dieses Buch ist sehr alt.";
-	TEXT[3]		=	"Es scheint magisch zu sein.";
+	TEXT[2]		=	"Ta ksiazka jest bardzo stara.";
+	TEXT[3]		=	"Wydaje sie to magiczne.";
 };
 
 var int riddle1;
@@ -1053,7 +1053,7 @@ var int riddle6;
 
 INSTANCE theriddle1(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1064,7 +1064,7 @@ INSTANCE theriddle1(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Chromanin";
+	description			= "chroman";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1084,11 +1084,11 @@ INSTANCE theriddle1(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Der, der gewillt ist allen irdischen Lastern zu entsagen und auf den Pfaden der Rechtschaffenen wandelt, soll wissen wo der Quell meiner Macht verborgen liegt. Auf daß er es nutzen möge die Ketten dieser Welt zu sprengen und sich als würdig zu erweisen, Chromanin zu empfangen.");
+					Doc_PrintLines	( nDocID,  0, "Ten, kto jest sklonny wyrzec sie wszelkich ziemskich wad i isc sciezkami sprawiedliwych, wie, gdzie lezy zródlo mojej mocy. Oby wykorzystal go do zerwania lancuchów tego swiata i udowodnil, ze zasluguje na chromanine.");
 					
 				
 
@@ -1103,14 +1103,14 @@ INSTANCE theriddle1(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Der Weise fängt an dem Ort an, von dem er zur Suche aufgebrochen ist.");
+					Doc_PrintLines	( nDocID,  1, "Szalwia zaczyna sie w miejscu, z którego wyszedl szukac.");
 					Doc_Show		( nDocID );
 				
 					if (riddle1 == FALSE)
 					{
 						Log_CreateTopic		(TOPIC_MOD_THERIDDLE,		LOG_MISSION);
 						B_SetTopicStatus	(TOPIC_MOD_THERIDDLE,		LOG_RUNNING);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Ich habe dem Skelett Magier im Nebelturm ein sehr seltsames Buch abgenommen. Chromanin! Es scheint sich um ein Rätsel zu handeln, das ein geheimnisvoller Fremder dieser Welt gestellt hat: ...Der Weise fängt an dem Ort an, von dem er zur Suche aufgebrochen ist ... Mmmh! Ob er auch meinen Aufsbruchsort meint? Ich sollte mal zur Bergfestung gehen ..."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Zabralem bardzo dziwna ksiazke od magika szkieletu w Wiezy Mgly. Chromanina! Wydaje sie byc tajemnica, z która skonfrontowal sie tajemniczy nieznajomy w swiecie:...... Szalwia zaczyna sie w miejscu, z którego wyszedl szukac..... Mmm! Masz wrazenie, ze oznacza to moje miejsce wyjazdu? W pewnym momencie powinienem pójsc do twierdzy górskiej....."); 
 						//Wld_InsertItem			(theriddle2,"FP_FELSENFESTUNG_CHROMANIN_BAND_2");
 					
 						riddle1 = TRUE;
@@ -1125,7 +1125,7 @@ INSTANCE theriddle1(C_Item)
 
 INSTANCE theriddle2(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1157,11 +1157,11 @@ INSTANCE theriddle2(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Getragen von den Gezeiten, haben Chromanins Visionen der Zukunft mir die Augen geöffnet. Kein Preis ist hoch genug, den Glauben daran wieder aufzugeben. Viel zu stark hat es mich bewegt.");
+					Doc_PrintLines	( nDocID,  0, "Wizje przyszlosci Chromanina, podtrzymywane przez plywy, otworzyly mi oczy. Zadna cena nie jest na tyle wysoka, aby zrezygnowac z wiary w nia. Za bardzo mnie to poruszylo.");
 					
 				
 
@@ -1176,13 +1176,13 @@ INSTANCE theriddle2(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Fast voll Wasser und doch noch Luft zum atmen.");
+					Doc_PrintLines	( nDocID,  1, "Prawie pelna woda i powietrze do oddychania.");
 					Doc_Show		( nDocID );
 					
 					if (riddle2 == FALSE)
 					{					
 						B_GivePlayerXP (300);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Ich habe ein zweites Buch gefunden, das den Namen Chromanin trägt. Und wieder gibt es mir ein Rätsel auf...Fast voll Wasser und doch noch Luft zum atmen....."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Znalazlem druga ksiazke o nazwie Chromanin. I po raz kolejny to dla mnie tajemnica..... Prawie pelna woda i powietrze do oddychania......"); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle3,"FP_ALTESLAGERHOEHLE_CHROMANIN_BAND_3");
 					
@@ -1193,7 +1193,7 @@ INSTANCE theriddle2(C_Item)
 	};
 INSTANCE theriddle3(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1204,7 +1204,7 @@ INSTANCE theriddle3(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Chromanin 3";
+	description			= "Chromanina 3";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1225,11 +1225,11 @@ INSTANCE theriddle3(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Oh, ihr Götter der alten Zeiten. Kann es sein, das ein Mensch, wie ich, der nur einfach gestrickt und unwürdig, solch großes Vermächtnis erlangen darf. Die Angst ist groß, alles zu verlieren durch ein kleines Wort des Schwankens.");
+					Doc_PrintLines	( nDocID,  0, "Och, bogowie dawnych czasów. Moze byc tak, ze czlowiek, taki jak ja, który jest po prostu dziany i niegodny, moze osiagnac tak wielka spuscizne. Strach jest wielki, aby stracic wszystko poprzez male slowo wahan.");
 					
 				
 
@@ -1244,7 +1244,7 @@ INSTANCE theriddle3(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Ein kluger Fischer fischt nicht dort.");
+					Doc_PrintLines	( nDocID,  1, "Madry rybak nie lowi tam rybaków.");
 					Doc_Show		( nDocID );
 
 
@@ -1252,7 +1252,7 @@ INSTANCE theriddle3(C_Item)
 					if (riddle3 == FALSE)
 					{		
 						B_GivePlayerXP (500);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Ich habe das dritte Buch gefunden. Ich glaube so langsam verstehe ich, wie das abläuft ... Ein kluger Fischer fischt nicht dort ..."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Znalazlem trzecia ksiazke. Mysle, ze zaczynam rozumiec, jak to sie dzieje...... Madry rybak nie lowi tam rybaków....."); 
 						Snd_Play 		("FoundRiddlersBook");
 
 						if (hero.guild == GIL_MIL)
@@ -1274,7 +1274,7 @@ INSTANCE theriddle3(C_Item)
 				
 INSTANCE theriddle4(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1285,7 +1285,7 @@ INSTANCE theriddle4(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Chromanin 4";
+	description			= "Chromanina 4";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1306,11 +1306,11 @@ INSTANCE theriddle4(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Ich wage nicht zu hoffen eines Tages Chromanin selbst zu erleben. Vorbei sind die Tage der Verschwendung und des Klangens. So leicht wird es sein, die völlige Vollendung zu erreichen. Ich bin nicht mehr weit davon entfernt.");
+					Doc_PrintLines	( nDocID,  0, "Nie mam odwagi miec nadziei, ze pewnego dnia sam bede doswiadczal chromaniny dla siebie. Minely juz czasy marnotrawstwa i halasu. Jest to jak latwo bedzie osiagnac pelna perfekcje. Nie jestem daleko od tego.");
 					
 				
 
@@ -1325,7 +1325,7 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Vergessen sind die Taten jener, die sich einst an Bord befanden.");
+					Doc_PrintLines	( nDocID,  1, "Zapomniane sa czyny tych, którzy kiedys byli na pokladzie.");
 					Doc_Show		( nDocID );
 					
 
@@ -1334,7 +1334,7 @@ INSTANCE theriddle4(C_Item)
 						if (CurrentLevel == MINENTAL_ZEN)
 						{				
 							B_GivePlayerXP (700);
-							B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Nummer vier. Ich frag mich langsam, warum ich mich von diesem Typ an der Nase herumführen lasse....Vergessen sind die Taten jener, die sich einst an Bord befanden..."); 
+							B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Czwarta cyfra. Zaczynam sie zastanawiac, dlaczego pozwole temu facetowi dac mi ucieczke....... Zapomniane sa czyny tych, którzy kiedys byli na pokladzie...."); 
 							Snd_Play 		("FoundRiddlersBook");					
 							//Wld_InsertItem			(theriddle5,"FP_ITEM_THERIDDLE_05");
 
@@ -1352,7 +1352,7 @@ INSTANCE theriddle4(C_Item)
 								
 INSTANCE theriddle5(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1363,7 +1363,7 @@ INSTANCE theriddle5(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Chromanin 5";
+	description			= "Chromanina 5";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1384,11 +1384,11 @@ INSTANCE theriddle5(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Doch soll ich nicht alleine diesen Weg beschreiten. Diese Ehre sei mir vergönnt. Ich muß mich fügen und die Kraft, die in mir wohnt, muß ich teilen mit den Würdigen, die da kommen werden, mich zu finden. Hoffentlich kommen sie bald...");
+					Doc_PrintLines	( nDocID,  0, "Nie powinienem jednak podazac ta droga samemu. Ten zaszczyt moze zostac mi przyznany. Musze przekazac i podzielic sie wladza, która mieszka we mnie z tymi, którzy przychodza, aby mnie znalezc. Miejmy nadzieje, ze wkrótce przyjda....");
 					
 				
 
@@ -1403,7 +1403,7 @@ INSTANCE theriddle5(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Dort, wo deine Suche begann, sollst du mich finden.");
+					Doc_PrintLines	( nDocID,  1, "Gdzie rozpoczelo sie wyszukiwanie, znajdziesz mnie.");
 					Doc_Show		( nDocID );
 
 
@@ -1412,7 +1412,7 @@ INSTANCE theriddle5(C_Item)
 					if (riddle5 == FALSE)
 					{
 						B_GivePlayerXP (850);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Dies scheint das letzte zu sein. Bin gespannt zu erfahren, wem ich gegenüber stehen werde ... Dort, wo alles begann, sollst du mich finden ... Also muss ich wieder in die Höhlen unter dem Nebelturm..."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"To wydaje sie byc ostatni. Ciekawe, kogo bede mial przed soba.... Tam, gdzie wszystko zaczelo sie, odnajdziesz mnie.... Musze wiec wrócic do jaskin pod mglowa wieza...."); 
 						Snd_Play 		("FoundRiddlersBook");				
 						Wld_InsertNpc				(Bau_989_Riddler,"");
 						var C_NPC riddler; riddler = Hlp_GetNpc(Bau_989_Riddler);
@@ -1425,7 +1425,7 @@ INSTANCE theriddle5(C_Item)
 
 INSTANCE theriddle6(C_Item)
 {	
-	name 					=	"Altes Buch";
+	name 					=	"Ksiazka";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION|ITEM_SHOW;
@@ -1436,7 +1436,7 @@ INSTANCE theriddle6(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Chromanin 6";
+	description			= "Chroman 6";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1457,7 +1457,7 @@ INSTANCE theriddle6(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "chroman"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -1483,7 +1483,7 @@ INSTANCE theriddle6(C_Item)
 					if (riddle6 == FALSE)
 					{
 						B_GivePlayerXP (1000);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Der geheimnisvolle Fremde ist tot. Diese Dämonen haben ihn getötet. Irgendetwas scheint ihn mit diesen Geschöpfen der Hölle verbunden zu haben. Sonst wäre er sicher nicht an diesen gottverlassenen Ort zurückgekehrt. Das Geheimnis, das er mit mir teilen wollte, hat er mit ins Grab genommen."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Tajemniczy nieznajomy jest martwy. Te demony go zabily. Cos wydaje sie, ze cos go polaczylo z tymi stworzeniami piekla. W przeciwnym razie nie wrócilby na to miejsce. Wzial tajemnice, która chcial mi przekazac do grobu."); 
 						B_SetTopicStatus	(TOPIC_MOD_THERIDDLE,		LOG_SUCCESS);
 						Snd_Play 		("FoundRiddler");
 						
@@ -1501,7 +1501,7 @@ INSTANCE theriddle6(C_Item)
 
 INSTANCE TondralsBuch_01(C_Item)
 {	
-	name 					=	"Die Schande der Götter - Teil I";
+	name 					=	"Wstyd Bogów - Czesc I";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1532,24 +1532,24 @@ INSTANCE TondralsBuch_01(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Die Schande der Götter"			);
+					Doc_PrintLines	( nDocID,  0, "Hanba bogów"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Sagt mir, welche Götter sind es, die uns nur geschaffen haben, um uns im Krieg in den Tod zu schicken. Wie kann sich Innos als Gott der Gerechtigkeit bezeichnen, wenn ihm doch nur wichtig ist, die Anhänger Beliars zu vernichten? Was ist Adanos Gleichgewicht wert, wenn es nur daraus besteht, dieses ewige Blutbad aufrecht zu erhalten und das Volk zu vernichten, das im Vorteil ist?");
+					Doc_PrintLines	( nDocID,  0, "Powiedz mi, którzy bogowie sa bogami, którzy uczynili nas ofiarami wojny. Jak Innos moze nazwac sie Bogiem sprawiedliwosci, gdy jest tylko wazne dla niego, aby zniszczyc wyznawców Beliara? Co warte jest równowaga Adano, jesli polega ona jedynie na utrzymaniu tej wiecznej rzezi i zniszczeniu ludzi, którzy czerpia z niej korzysci?");
 					
 				
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Welchen Nutzen erfüllt Beliar, der nichts als Zerstörung und Chaos anrichtet und sich daran ergötzt. Der die Orks erschaffen hat, die die Menschen jagen und abschlachten? Wir alle sind doch nur Schachfiguren für jene Wesen, die sich selbst als Götter bezeichnen, jedoch nichts anderes als sadistische Kriegstreiber sind. Die uns ausnutzen um ihre Ziele zu erreichen und denen unser Leben nichts wert ist. Die Verlangen, von uns angebetet zu werden, dafür, dass sie uns wie ihre Spielfiguren ausnutzen.");
+					Doc_PrintLines	( nDocID,  1, "Jakiego uzycia Beliar dokonuje, co powoduje jedynie zniszczenie i chaos oraz oczarowuje sie nim. Kto stworzyl orki, które poluja i rzezników? Wszyscy jestesmy po prostu kawalkami szachów dla tych istot, które nazywaja sie bogami, ale sa jedynie sadystycznymi watazkami. Kto korzysta z nas, aby osiagnac swoje cele i dla kogo nasze zycie jest bezwartosciowe. Pragnienie bycia czczonym przez nas, abysmy mogli korzystac z nas jak ich bohaterowie.");
 					Doc_Show		( nDocID );
 	};
 
 INSTANCE TondralsBuch_02(C_Item)
 {	
-	name 					=	"Die Schande der Götter - Teil II";
+	name 					=	"Wstyd Bogów - Czesc II";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1580,7 +1580,7 @@ INSTANCE TondralsBuch_02(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Wer sind schon der König, die Magier und die Paladine? Nichts als Marionetten, die den Willen ihrer sogenannten Götter ausführen. Die, die im Namen dieser dreckigen Kriegstreiber sich das Recht nehmen über uns zu bestimmen! Daher sage ich, kämpft gegen die Götter, verbrennt ihre Tempel, zerstört ihre Statuen und tötet ihre Anhänger, für ein Leben, dass nicht durch den sinnlosen Krieg von Innos, Beliar und Adanos bestimmt wird!");
+					Doc_PrintLines	( nDocID,  0, "Kim sa królowie, magowie i paladyni? Nic poza lalkami niosacymi wole ich tak zwanych bogów. Ci, którzy biora prawo rzadzenia nad nami w imieniu tych brudnych czarnoksiezników! Dlatego mówie walke z bogami, spalic ich swiatynie, zniszczyc ich posagi i zabic swoich zwolenników za zycie, które nie jest zdeterminowane przez bezsensowna wojne Innos, Beliar i Adanos!");
 					
 				
 
@@ -1593,7 +1593,7 @@ INSTANCE TondralsBuch_02(C_Item)
 
 INSTANCE ItWr_HeiligeWaffen (C_Item)
 {	
-	name 					=	"Heilige Waffen";
+	name 					=	"Swieta bron";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1629,20 +1629,20 @@ INSTANCE ItWr_HeiligeWaffen (C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Heilige Waffen gibt es in verschiedener Form ... ob gesegnete Klinge, Magie, oder Tinktur. Sie richten sich gezielt gegen dämonische Geschöpfe und untote Wesen, welche durch dämonische Magie gelenkt werden.");
+					Doc_PrintLines	( nDocID,  0, "Swieta bron przybiera rózne formy.... blogoslawione ostrze, magia lub nalewka. Skierowane sa przeciwko demonicznym istotom i istotom nieumarlym, kierowanym przez magie demoniczna.");
 					
 				
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Im Besonderen ist es die Macht Innos’, der diese Waffen entspringen. Die Klingen seine Streiter sind häufig gesegnet und besonders wirkungsvoll gegen Dämonen und Untote, gleichermaßen die Magie, welche ihnen verliehen wurde ... so der heilige Pfeil und mächtigere Zauber. Es heißt sogar, dass bereits die bloßen Strahlen eines heiligen Lichtes die Widerstandskraft finsterer Wesen mindern können ...");
+					Doc_PrintLines	( nDocID,  1, "W szczególnosci to wlasnie moc Inno rodzi te bron. Ostrza jego wojowników sa czesto blogoslawione i szczególnie skuteczne w walce z demonami i nieumarlymi, magia, która im obdarzyli..... Tak wiec swieta strzala i mocniejsze czary. Mówi sie nawet, ze nawet zwykle promienie swietego swiatla moga zmniejszyc opór ze strony zlowieszczych istot.....");
 					Doc_Show		( nDocID );
 	};
 
 INSTANCE ItWr_Flueche (C_Item)
 {	
-	name 					=	"Flüche";
+	name 					=	"klatwy";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1678,15 +1678,15 @@ INSTANCE ItWr_Flueche (C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Flüche entspringen der Magie des dunklen Gottes und dämonischer Wesen. Sie können ein einzelnes Geschöpf, oder gar ganze Gruppen von Wesen beeinflussen und in Händen eines kundigen Magiers große Macht entfalten.");
+					Doc_PrintLines	( nDocID,  0, "Kursory pochodza z magii ciemnego boga i demonicznych istot. Potrafia wplywac na jedno stworzenie, a nawet cale grupy istot i w rekach doswiadczonego maga potrafia rozwinac wielka moc.");
 					
 				
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Es wird berichtet von solchen, die Opfer lähmen, ihnen die Lebenskraft entziehen, oder ihre Widerstandskraft senken. Meist in Form von magischen Sprüchen ist in Überlieferungen auch von Schwertern die Rede, deren Klinge ein getroffenes Wesen mit einem Fluch belegen kann.");
+					Doc_PrintLines	( nDocID,  1, "Istnieja doniesienia o tych, którzy paralizuja ofiary, pozbawiaja je energii zyciowej lub zmniejszaja swój opór. Zwykle w formie magicznych powiedzen, mówi sie równiez o mieczach, których ostrze moze przeklinac uderzajaca istote.");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Untote Wesen jedoch, selbst von dunkler Magie gelenkt, werden nicht mehr in vollem Umfang von Flüchen beeinflusst, während dämonische Wesen gar jeden Fluches auf einen Bruchteil seines Effektes reduzieren können.");
+					Doc_PrintLines	( nDocID,  1, "Jednak nieumarle stworzenia, nawet poprowadzone przez ciemna magie, nie sa juz w pelni pod wplywem przeklenstw, podczas gdy demoniczne stworzenia moga nawet zredukowac kazde przeklenstwo do ulamka jego efektu.");
 					Doc_Show		( nDocID );
 	};

@@ -18,37 +18,37 @@ FUNC INT Info_Mod_Dragon_Hi_Condition()
 
 FUNC VOID Info_Mod_Dragon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_00"); //So bekomme ich dich endlich zu Gesicht Mensch.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_01"); //Einer meiner Diener berichtete mir davon, dass du es warst, der das Buch öffnete.
-	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_02"); //(zu sich selbst) Da bin ich aber erleichtert.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_03"); //Den Dienst, den du mir damit erwiesen hast, kann ich schwerlich mit Gold aufwiegen.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_04"); //Deine Belohnung soll es sein, als meine rechte Hand auf Khorinis zu wirken und an meiner wachsenden Macht teilzuhaben.
-	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_05"); //(halblaut, leicht ironisch) Zu großzügig.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_06"); //Nun, zu allererst ...
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_00"); //W ten sposób wreszcie zobacze cie.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_01"); //Jeden z moich pracowników powiedzial mi, ze to Ty otworzyles ksiazke.
+	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_02"); //Jestem jednak ulga.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_03"); //Ciezko jest mi przewazac nad usluga, która zrobiles mi zloto.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_04"); //Twoja nagroda powinno byc dzialanie jako moja prawa reka w khorynach i uczestniczenie w mojej rosnacej potedze.
+	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_05"); //(nieco ironiczny) Zbyt hojny.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_06"); //Cóz, przede wszystkim.....
 
 	AI_TurnToNpc	(self, Kobold_11010_NW);
 
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_07"); //Was sagst du Kobold, ihr habt den Übeltäter gefasst, der den Anteil seiner Beute von dem letzten Raubzug nicht an mich abgetreten hat.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_08"); //So, 20 Goldmünzen hat der unflätige Wurm mir unterschlagen. Was, nun fleht er um Mitleid und Gnade für seine Verfehlung?!
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_09"); //Verbrannt und durchbohrt von 20 Klingen soll er werden!
-	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_10"); //(zu sich selbst, schockiert) Ohh, sein Gefolgsmann?
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_11"); //So, das soll ihm eine Lehre sein ...
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_12"); //Er bedankt sich für mein mildes Urteil?! Das will ich ihm auch geraten haben.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_13"); //Und wehe, er leistet sich noch eine Verfehlung… . Dann soll es ihm wirklich schlecht ergehen.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_07"); //Co mówisz, goblin, zlapales winowajce, który nie zrzekl sie porcji lupu z ostatniego nalotu na mnie.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_08"); //Tak wiec niegrzeczny robak ukradl ode mnie 20 zlotych monet. Co teraz prosi o laske i milosierdzie za swoje zlo?
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_09"); //Poparzony i przebity przez 20 ostrzy!
+	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_10"); //(do samego siebie zszokowany) Oh, jego poplecznik?
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_11"); //Cóz, to ma go nauczyc lekcji.....
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_12"); //Dziekuje za mój lagodny werdykt! To wlasnie mu powiedzialem.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_13"); //I biada mu sie, zeby sobie pozwolic na kolejne...... Wtedy chce, aby czul sie zle.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_14"); //So, wo waren wir grade stehen geblieben? Genau, deine Aufgaben.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_15"); //Vorerst habe ich noch nichts Konkretes für dich zu tun. Höre dich einfach auf diesem Eiland bei Mensch und Monster um, ob du nicht nützliche Informationen für mich aufschnappst.
-	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_16"); //Mein Drachenschatz ist kläglich, nicht mal eines Linswurmes würdig, und ich Sinne darauf diesen zu vergrößern.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_14"); //Gdzie wiec byli¶my? Dokladnie, Twoje obowiazki.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_15"); //Na razie nie mam dla pana nic konkretnego do zrobienia. Po prostu zapytaj sie na tej wyspie z ludzmi i potworami, czy mozesz uzyskac dla mnie jakies przydatne informacje.
+	AI_Output(self, hero, "Info_Mod_Dragon_Hi_22_16"); //Mój skarb smokowy jest zalosny, nie godny nawet soczewicy i czuje, ze moge go powiekszyc.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_17"); //Im Moment scheint mir der Drache samt seiner Dienerschaft übermächtig. Ich sollte mitspielen und schauen, ob ich nicht etwas Nützliches in Erfahrung bringe.
+	AI_Output(hero, self, "Info_Mod_Dragon_Hi_15_17"); //W tej chwili smok i jego sludzy wydaja mi sie przytlaczajace. Powinienem sie bawic i sprawdzic, czy moge dowiedziec sie czegos pozytecznego.
 
 	AI_TurnToNpc	(hero, self);
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Tja, ein mächtiger Drache mit einer Furcht einflößenden Gefolgschaft ist dieser Dragon. Vorerst bin ich noch chancenlos und sollte daher mitspielen. Und es wäre wohl wirklich nicht von Nachteil, wenn ich mich etwas umsehe und umhöre. Hmm, seinen Drachenschatz will er vergrößern ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Cóz, ten smok to potezny smok z przerazajacymi zwolennikami. Na razie nie mam szans i dlatego powinienem grac. I nie byloby zle, gdybym rozejrzal sie i sluchal. Hmm, chce powiekszyc swój skarb latawca....");
 };
 
 INSTANCE Info_Mod_Dragon_Kloster (C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Dragon_Kloster (C_INFO)
 	information	= Info_Mod_Dragon_Kloster_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gebieter über Dämonen und Untiere (...)";
+	description	= "Panowie demonów i bestii (....) )";
 };
 
 FUNC INT Info_Mod_Dragon_Kloster_Condition()
@@ -72,15 +72,15 @@ FUNC INT Info_Mod_Dragon_Kloster_Condition()
 
 FUNC VOID Info_Mod_Dragon_Kloster_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragon_Kloster_15_00"); //Gebieter über Dämonen und Untiere, ich kenne eine Möglichkeit, wie ihr euren Drachenschatz vergrößern könnt.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_01"); //(erwartungsvoll) Ja, sprich Mensch!
-	AI_Output(hero, self, "Info_Mod_Dragon_Kloster_15_02"); //Nicht weit im Osten liegt ein Kloster der Feuermagier, das große Reichtümer birgt. Diese solltet ihr ausheben.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_03"); //Das hört sich in der Tat sehr verlockend an. Ein guter Hinweis Mensch.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_04"); //Heute bei Anbruch der Nacht werden wir uns des Klosters annehmen.
+	AI_Output(hero, self, "Info_Mod_Dragon_Kloster_15_00"); //Wladca demonów i bestii, znam sposób na zwiekszenie twojego skarbu smoka.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_01"); //Tak, mów ludzki!
+	AI_Output(hero, self, "Info_Mod_Dragon_Kloster_15_02"); //Niedaleko na wschód lezy klasztor magów ognia, który posiada wielkie bogactwa. Powinienes je odkopac.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_03"); //To brzmi naprawde kuszaco. Dobra wskazówka, czlowiek.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kloster_22_04"); //Dzis wieczorem wieczorem, w nocy, zajmiemy sie klasztorem.
 
 	Mod_NL_DragonKlosterTag = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Ich habe Dragon über das Kloster und seine Reichtümer unterrichtet. Er war zufrieden und will bei Anbruch der Nacht einen Überfall starten.");
+	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Nauczalem Smoka o klasztorze i jego bogactwie. Byl zadowolony i chcial rozpoczac grabiez w nocy.");
 };
 
 INSTANCE Info_Mod_Dragon_KlosterErfolg (C_INFO)
@@ -104,48 +104,48 @@ FUNC INT Info_Mod_Dragon_KlosterErfolg_Condition()
 
 FUNC VOID Info_Mod_Dragon_KlosterErfolg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_00"); //(erfreut) Wuahaha, dein Vorschlag war wirklich Gold wert, Mensch.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_01"); //Wir rafften so viel aus Schatzkammern und Vorratsräumen des Klosters zusammen, dass wir kaum alles zu tragen vermochten, so viel hatten sie.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_02"); //Diese Feuermagier scheinen ja einem überaus einträglichen Gewerbe nachzugehen ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_03"); //Wie dem auch sei Mensch, du hast dir deinen Anteil verdient.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_00"); //Wuahahahahahaha, twoja propozycja byla naprawde warta swojej wagi w zlocie, czlowieku.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_01"); //Z skarbców i magazynów klasztoru zebralismy tak wiele, ze nie moglismy nosic wszystkiego, mieli tak wiele.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_02"); //Ci magicy strazy pozarnej wydaja sie prowadzic niezwykle lukratywny handel.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_03"); //Niezaleznie od tego, jak to mozliwe, zdobyles swój udzial.
 
-	B_ShowGivenThings	("2000 Gold, 16 Schinken und 30 Wein erhalten");
+	B_ShowGivenThings	("2000 Zloto, 16 szynek i 30 uzyskanych win");
 
 	CreateInvItems	(hero, ItMi_Gold, 2000);
 	CreateInvItems	(hero, ItFo_Bacon, 16);
 	CreateInvItems	(hero, ItFo_Wine, 30);
 
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_04"); //Wonach es mich jetzt gelüstet: magisches, bläulich schimmerndes Erz.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_05"); //Wenn ich noch damit meinen Drachenschatz bereichern könnte, müsste jeder andere Drache, König, oder was sonst auf dieser Erdkugel Rang und Schätze hat, vor Neid erblassen.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_06"); //Hier, nimm diesen Ring und ziehe ihn in einer Mine an, in welcher meine Diener für mich Erz schürfen können.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_04"); //Teraz tesknie za: magiczna, niebieskawa, migoczaca ruda.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_05"); //Gdybym mógl jeszcze wzbogacic nim swój skarb smokowy, kazdy inny smok, król lub cokolwiek innego na tej kuli ziemskiej ma range i skarby musialyby z zazdroscia isc na zielono.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_06"); //Wez ten pierscien i umiesc go w kopalni, gdzie moi sludzy moga kopac rude dla mnie.
 
 	B_GiveInvItems	(self, hero, ItRi_DragonRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_07"); //Aber nun ... (gähnt) muss ich mich mal wieder zur Ruhe begeben.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_08"); //Der erfolgreiche Raubzug und die Schafe im Magen ... (gähnt) rufen förmlich nach Muße, Erholung und Schlaf.
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_09"); //(spricht im Schlaf) Gold ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_10"); //(spricht im Schlaf) ... Edelsteine ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_11"); //(spricht im Schlaf) ... Schafe ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_12"); //(spricht im Schlaf) ... Macht und Reichtum ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_13"); //(spricht im Schlaf) ... Macht und Unsterblichkeit ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_14"); //(spricht im Schlaf) ... geteilt mit dem, der untot ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_15"); //(spricht im Schlaf) ... mit dem magischen Bündnis ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_16"); //(spricht im Schlaf) ... in Höhlen, Kerkern und Folterkammern ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_17"); //(spricht im Schlaf) ... ein Gegenstand der das Leben birgt ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_18"); //(spricht im Schlaf) ... im Lande ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_19"); //(spricht im Schlaf) ... des Korns der Mutter ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_20"); //(spricht im Schlaf) ... das Moor ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_21"); //(spricht im Schlaf) ... und seine Bewohnerin ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_22"); //(spricht im Schlaf) ... sich verbirgt ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_23"); //(spricht im Schlaf) ... dem Mächtigen ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_24"); //(spricht im Schlaf) ... sie trägt ihn ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_25"); //(spricht im Schlaf) ... mhh, Schafsfleisch ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_26"); //(spricht im Schlaf) ... Schinken ...
-	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_27"); //(spricht im Schlaf) ... blonde Jungfrauen ...
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_07"); //Ale teraz..... (jawny) Musze ponownie przejsc na emeryture.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_08"); //Udany nalot i owce w zoladku..... (jawyny) wzywaja do wypoczynku, odpoczynku i snu.
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_09"); //(szczyty we snie) Zloty.....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_10"); //(szczyt w czasie snu) Kamienie szlachetne.....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_11"); //(szczyt w czasie snu) owce
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_12"); //(szczyt w czasie snu) Moc i bogactwo....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_13"); //(szczyt w czasie snu) Moc i niesmiertelnosc.....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_14"); //(szczyt w czasie snu) dzielic sie z nieumarlym....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_15"); //(szczyt w czasie snu) z magicznym przymierzem......
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_16"); //(szczyt w czasie snu) w jaskiniach, lochach i komorach tortur.....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_17"); //(szczyt w czasie snu) obiekt, który zawiera zycie.....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_18"); //(szczyt w czasie snu) w kraju......
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_19"); //(szczyt w czasie snu) z ziarna matki......
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_20"); //(szczyt w czasie snu) bagno
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_21"); //(szczyt w czasie snu) i jego okupant....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_22"); //(szczyt w czasie snu) ukryty
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_23"); //(szczyt w czasie snu) dla poteznych....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_24"); //(szczyt w czasie snu) nosi ja na sobie....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_25"); //(szczyt w czasie snu) mhhhh, mieso baranie....
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_26"); //(szczyt w czasie snu) szynka
+	AI_Output(self, hero, "Info_Mod_Dragon_KlosterErfolg_22_27"); //(szczyt w czasie snu) blond dziewice......
 
-	B_LogEntry_NS	(TOPIC_MOD_NL_DRACHEN, "Dragon gab mir einen Ring, welchen ich in einer Mine aufziehen soll, in der seine Diener Erz für ihn schürfen können.");
-	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Macht und Unsterblichkeit geteilt mit dem, der Untot ... magisches Bündnis, in Höhlen, Kerkern und Folterkammern ... ein Gegenstand der das Leben birgt, im Lande, des Korns der Mutter, das Moor und seine Bewohnerin, sich verbirgt dem Mächtigen, sie trägt ihn.");
-	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Okey, der Drache hat mit einem Untoten ein Bündnis geschlossen, in welchem Unsterblichkeit geteilt wird.");
+	B_LogEntry_NS	(TOPIC_MOD_NL_DRACHEN, "Smok dal mi pierscionek do podniesienia w kopalni, gdzie jego sludzy moga dla niego kopac rude.");
+	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Moc i niesmiertelnosc dzielone z nieumarlymi.... sojusze magiczne, w jaskiniach, lochach i komorach tortur.... Obiekt, który ma zycie w ziemi, ziarno matki, torfowisko i jego mieszkaniec, ukrywa sie przed poteznym, nosi go w sobie.");
+	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Okey, smok zawiazal sojusz z nieumarla, w którym dzielona jest niesmiertelnosc.");
 
 	if (Mod_HSNL_RatProblem == 1)
 	{
@@ -184,7 +184,7 @@ FUNC INT Info_Mod_Dragon_Mine_Condition()
 
 FUNC VOID Info_Mod_Dragon_Mine_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_Mine_22_00"); //Du hast deine Aufgabe einmal mehr zu meiner Zufriedenheit erfüllt und eine ergiebige Mine gefunden. Hier, deine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Dragon_Mine_22_00"); //Po raz kolejny wypelniles swoje zadanie ku mojemu zadowoleniu i znalazles bogata kopalnie. Oto Twoja nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 25);
 
@@ -211,14 +211,14 @@ FUNC INT Info_Mod_Dragon_Snorre_Condition()
 
 FUNC VOID Info_Mod_Dragon_Snorre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_00"); //Dieser dreckige kleine Dieb! Zu Asche werde ich ihn verbrennen!
-	AI_Output(hero, self, "Info_Mod_Dragon_Snorre_15_01"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_02"); //Dieser dreiste Kobold Snorre hat sich mit einem Teil meiner Schätze aus dem Staub gemacht. Darunter besonders wertvolle Stücke aus dem Kloster. Grrr (schnaubt)
-	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_03"); //Meine Dracheninstinkte sagen mir, dass er nach Norden geflohen ist.  Tue mir den Gefallen und töte ihn.
-	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_04"); //Als besonderen Anreiz darfst du sogar die Schätze behalten.
-	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_05"); //Es muss ein Exempel statuiert werden, bevor noch andere auf dumme Gedanken kommen.
+	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_00"); //Ten zabrudzony maly zlodziej! Spale go do popiolu!
+	AI_Output(hero, self, "Info_Mod_Dragon_Snorre_15_01"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_02"); //Ten zuchwaly goblin Snorre zabral z kurzu niektóre z moich skarbów. Wsród nich szczególnie cenne sa takze eksponaty z klasztoru. Szczepy imiennos (weglowane)
+	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_03"); //Moje instynkty smokowe mówia mi, ze uciekl na pólnoc. Zrób mi laske i zabij go.
+	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_04"); //W ramach specjalnej zachety mozna nawet zachowac skarby.
+	AI_Output(self, hero, "Info_Mod_Dragon_Snorre_22_05"); //Trzeba dac przyklad, zanim inni przedstawia glupie pomysly.
 
-	B_LogEntry	(TOPIC_MOD_NL_STAB, "Der Kobold Snorre ist mit einem Teil von Dragon’s schätzen durchgebrannt. Er ist vermutlich nach Norden geflohen. Ob darunter auch der Stab war? Hier sehe ich ihn jedenfalls nicht.");
+	B_LogEntry	(TOPIC_MOD_NL_STAB, "Golebinowy Snorre wysadzil sie w powietrze z czescia uznania smoka. Prawdopodobnie biegal na pólnoc. Czy wsród nich byli równiez pracownicy? Przynajmniej go tutaj nie widze.");
 
 	B_StartOtherRoutine	(Kobold_11010_NW, "FLUCHT");
 
@@ -246,8 +246,8 @@ FUNC INT Info_Mod_Dragon_SnorreTot_Condition()
 
 FUNC VOID Info_Mod_Dragon_SnorreTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_SnorreTot_22_00"); //Hmm, ich spüre Snorress Aura nicht mehr. Ich darf daher davon ausgehen, dass du deine Aufgabe zu meiner äußersten Zufriedenheit erfüllt hast.
-	AI_Output(self, hero, "Info_Mod_Dragon_SnorreTot_22_01"); //Belohnt bist du ja durch die Schätze bereits mehr als zureichend.
+	AI_Output(self, hero, "Info_Mod_Dragon_SnorreTot_22_00"); //Hmm, nie czuje juz Snorress Aura. Moge zatem przypuszczac, ze wywiazal sie Pan z tego zadania ku mojemu wielkiemu zadowoleniu.
+	AI_Output(self, hero, "Info_Mod_Dragon_SnorreTot_22_01"); //Nagrodzony przez skarby jestescie juz wystarczajaco duzo.
 
 	B_GivePlayerXP	(200);
 };
@@ -272,18 +272,18 @@ FUNC INT Info_Mod_Dragon_Kamm_Condition()
 
 FUNC VOID Info_Mod_Dragon_Kamm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_00"); //(faucht) Grrr, ein Feind hat einen meiner Verbündeten vernichtet und damit einen mächtigen magischen Pakt zerstört, der für mich und die anderen Drachen von unschätzbarer Bedeutung war.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_01"); //Dafür hat sich ein anderer Magier mit mir in Verbindung gesetzt und mich über den vermeintlichen Übeltäter unterrichtet.
-	AI_Output(hero, self, "Info_Mod_Dragon_Kamm_15_02"); //(zu sich selbst) Oha ...
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_03"); //Ich habe sein Bild ... Hier, nimm es und finde dieses Ungeziefer und dann bereite ihm einen schmerzhaften Tot.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_00"); //(hufle) Grrr, wróg, zniszczyl jednego z moich sojuszników, niszczac potezny magiczny pakt, który byl nieoceniony dla mnie i innych smoków.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_01"); //W zamian za to inny magik skontaktowal sie ze mna i poinformowal mnie o domniemanym zloczyncy.
+	AI_Output(hero, self, "Info_Mod_Dragon_Kamm_15_02"); //(do siebie) Uh-huh....
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_03"); //Mam jego obrazek.... Tutaj wezcie ja i znajdzcie to robactwo, a nastepnie przygotujcie dla niego bolesna smierc.
 
 	B_GiveInvItems	(self, hero, ItWr_Poster_MIS, 1);
 
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_04"); //Ich werde dich mit Gold und Reichtümern beladen, mehr als du zu tragen vermagst. (hält kurz inne) Ich kann mir nicht helfen, aber Ihr Menschen seht für mich alle gleich aus.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_05"); //Achja, und lauf besser nicht meinen Brüdern über den Weg.
-	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_06"); //Nach den jüngsten Vorkommnissen werden sie nicht damit zögern jeden Menschen, der sich ihnen nährt, sofort den Garaus zu machen.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_04"); //Zaladuje cie zlotem i bogactwami, wiecej niz mozesz nosic. Nie moge sobie pomóc, ale wy ludzie wygladacie na mnie tak samo.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_05"); //Och, i nie biec na moich braci.
+	AI_Output(self, hero, "Info_Mod_Dragon_Kamm_22_06"); //Po ostatnich wydarzeniach nie zawahaja sie natychmiast zatrzymac kazdego, kto je zywi.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Langsam wird die Luft dünn für mich beim Oberdrachen Dragon. Xeres scheint den Drachen über mich unterrichtet zu haben. Und ich bin mir nicht sicher, ob ich jetzt schon eine Chance gegen ihn habe, selbst, wenn er jetzt sterblich sein sollte. Vielleicht sollte ich mich erst mal mit etwas Unterstützung an einem schwächeren Exemplar erproben.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Powoli powietrze staje sie dla mnie cienki na górnym smoku. Wydaje sie, ze Xeres nauczyl o mnie smoka. I nie jestem pewna, ze mam teraz szanse, nawet jesli teraz powinien byc smiertelnikiem. Moze powinienem spróbowac sie na slabszym egzemplarzu z jakims wsparciem.");
 };
 
 INSTANCE Info_Mod_Dragon_Infos (C_INFO)
@@ -294,7 +294,7 @@ INSTANCE Info_Mod_Dragon_Infos (C_INFO)
 	information	= Info_Mod_Dragon_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Herr über Drachen und Dämonen, könnt ihr mir mehr verraten (...)";
+	description	= "Panie smoków i demonów, czy mozesz mi powiedziec wiecej (....)? )";
 };
 
 FUNC INT Info_Mod_Dragon_Infos_Condition()
@@ -307,8 +307,8 @@ FUNC INT Info_Mod_Dragon_Infos_Condition()
 
 FUNC VOID Info_Mod_Dragon_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragon_Infos_15_00"); //Herr über Drachen und Dämonen, könnt ihr mir mehr verraten über euch und eure Geschöpfe? Was hat es auf sich ...
-	AI_Output(self, hero, "Info_Mod_Dragon_Infos_22_01"); //(unterbricht, zurechtweisen) Sei nicht so neugierig Mensch. Du wirst das erfahren, was du zu wissen brauchst.
+	AI_Output(hero, self, "Info_Mod_Dragon_Infos_15_00"); //Wladca smoków i demonów, czy mozesz mi opowiedziec wiecej o sobie i swoich stworzeniach? Co to jest wielka sprawa.....
+	AI_Output(self, hero, "Info_Mod_Dragon_Infos_22_01"); //(przerwanie, nagana) Nie badz tak ciekawym czlowiekiem. Dowiesz sie, co musisz wiedziec.
 };
 
 INSTANCE Info_Mod_Dragon_EXIT (C_INFO)

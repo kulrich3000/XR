@@ -18,30 +18,30 @@ FUNC INT Info_Mod_Ulthar_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Ulthar_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_00"); //Hallo mein Sohn. Du wirkst, als würdest du etwas suchen. Kann ich dir helfen?
-	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_01"); //Ich hörte es gab einen Todesfall. Kurz bevor der unglückliche Novize starb, soll er in der Kirche gewesen sein.
-	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_02"); //Ja, der Verlust ist schrecklich und unerwartet. Zum Glück hat er zuvor noch dem mittäglichen Gottesdienst beigewohnt und starb somit mit Innos Segen.
-	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_03"); //Und wie sieht ein solcher Gottesdienst aus?
-	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_04"); //Hmm, es scheint nicht allzu weit her mit deinem Glauben zu sein, wenn du diese Frage an mich richtest.
-	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_05"); //In aller Kürze: man betet, nimmt den Segen eines hohen Feuermagiers entgegen und trinkt zuletzt etwas Klosterwein, aus einem gesegneten Kelch.
-	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_06"); //Aha, Klosterwein ...
+	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_00"); //Witaj, synu. Wyglada na to, ze szukasz czegos. Czy moge Ci pomóc?
+	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_01"); //Slyszalem smierc. Na krótko przed smiercia nieszczesnego nowicjusza mówi sie, ze byl on w kosciele.
+	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_02"); //Tak, strata jest straszna i niespodziewana. Na szczescie, wczesniej uczeszczal na nabozenstwo w poludnie i zmarl z blogoslawienstwem Inno.
+	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_03"); //I jak taka usluga wyglada?
+	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_04"); //Hmm, wydaje sie, ze nie jest zbyt daleko od wiary, kiedy zadajesz mi to pytanie.
+	AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_05"); //Krótko mówiac: czlowiek modli sie, otrzymuje blogoslawienstwo wielkiego maga ognia i pije klasztorne wino z blogoslawionego pucharu.
+	AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_06"); //Aha, klasztorny wino....
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Der Novize Dyrian hatte kurz vor seinem Tot noch dem Gottesdienst beigewohnt. Darin wurde gebetet, der Segen eines Feuermagiers gespendet und etwas Klosterwein aus einem gesegneten Kelch genossen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Na krótko przed smiercia nowicjusz Dyrian uczestniczyl w nabozenstwie. Modlili sie, dali blogoslawienstwo magowi ognia i rozkoszowali sie klasztornym winem z blogoslawionego pucharu.");
 
 	if (hero.guild == GIL_VLK)
 	{
-		AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_07"); //Woraus besteht Klosterwein?
-		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_08"); //Also, man nehme fünf Flaschen ganz gewöhnlichen Wein, gehe damit zu einem Schrein Innos, weihe sie und verteile einen Trank zur Heilung von Besessenheit auf sie. Das war es auch schon.
+		AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_07"); //Na czym polega wino klasztorne?
+		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_08"); //Wiec wziac piec butelek zwyklego wina, isc z nim do swiatyni Innos, poswiecic go i rozprowadzic eliksir do uzdrowienia obsesji z nim. To równiez o to chodzi.
 
-		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Für den Klosterwein nimmt man fünf normale Flaschen Wein, verteilt an einem Innosschrein eine Flasche Heilung der Besessenheit auf diese und segnet sie.");
+		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Dla klasztornego wina, piec zwyklych butelek wina jest zabieranych, rozdawanych w Innoshrine butelke uzdrawiania obsesji na nia i blogoslawionych.");
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_09"); //Woraus besteht ...?
-		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_10"); //(unterbricht) Du erwartest nicht wirklich, dass ich dieses heilige Wissen mit dir teile.
-		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_11"); //Nur Diener des Feuers besitzen Kenntnis über die Rezeptur und kein Magier in diesem Kloster wird es an dich weitergeben.
+		AI_Output(hero, self, "Info_Mod_Ulthar_Daemonisch_15_09"); //Co.....?
+		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_10"); //Nie oczekujesz, ze podziele sie z wami ta swieta wiedza.
+		AI_Output(self, hero, "Info_Mod_Ulthar_Daemonisch_05_11"); //Tylko strazacy znaja przepis i zaden magik w tym klasztorze nie przekaze go Tobie.
 
-		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Ulthar wollte mir die Ingredienzien des Klosterweines nicht preisgeben. Ob ich es von einem anderen Feuermagier erfahren kann?");
+		B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Ulthar nie chcial dac mi skladników klasztornego wina. Czy moge dowiedziec sie od innego maga ognia?");
 	};
 };
 
@@ -53,7 +53,7 @@ instance Info_Mod_Ulthar_Runen	(C_INFO)
 	information	= Info_Mod_Ulthar_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterweise mich (Runen erschaffen)";
+	description	= "Naucz mnie (tworzac runy)";
 };
 
 func int Info_Mod_Ulthar_Runen_Condition ()
@@ -71,7 +71,7 @@ func void Info_Mod_Ulthar_Runen_Info ()
 {
 	var int abletolearn;
 	abletolearn = 0;
-	AI_Output (other, self, "Info_Mod_Ulthar_Runen_15_00"); //Unterweise mich.
+	AI_Output (other, self, "Info_Mod_Ulthar_Runen_15_00"); //Naucz mnie.
 	
 	Info_ClearChoices 	(Info_Mod_Ulthar_Runen);
 	Info_AddChoice		(Info_Mod_Ulthar_Runen, DIALOG_BACK, Info_Mod_Ulthar_Runen_BACK);
@@ -103,7 +103,7 @@ func void Info_Mod_Ulthar_Runen_Info ()
 		};
 		if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis_g1] == FALSE)
 		{
-			Info_AddChoice	(Info_Mod_Ulthar_Runen, B_BuildLearnString ("Pyrokinese", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Ulthar_Runen_Pyrokinesis_g1);
+			Info_AddChoice	(Info_Mod_Ulthar_Runen, B_BuildLearnString ("pirokineza", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Ulthar_Runen_Pyrokinesis_g1);
 			abletolearn = (abletolearn +1);
 		};
 		if (PLAYER_TALENT_RUNES [SPL_FullHeal] == FALSE)
@@ -167,7 +167,7 @@ func void Info_Mod_Ulthar_Runen_Info ()
 
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "Info_Mod_Ulthar_Runen_14_01"); //Es gibt nichts mehr, das ich dir beibringen könnte.
+		AI_Output (self, other, "Info_Mod_Ulthar_Runen_14_01"); //Nic wiecej nie moge cie nauczyc.
 	};
 };
 

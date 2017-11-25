@@ -1,7 +1,7 @@
 instance Mod_7575_OUT_Baeckerfrau_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Frau des Bäckers";	
+	name 		= "Zona piekarza";	
 	guild 		= GIL_OUT;
 	id 			= 7575;
 	voice 		= 16;

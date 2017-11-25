@@ -1,7 +1,7 @@
 INSTANCE Dschinn_11013_OM (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dschinn";	
+	name 		= "jun";	
 	guild 		= GIL_SKELETON_MAGE;
 	id 			= 11013;
 	voice 		= 10;

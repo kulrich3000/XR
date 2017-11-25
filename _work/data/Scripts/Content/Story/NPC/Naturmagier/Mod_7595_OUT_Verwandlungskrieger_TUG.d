@@ -1,7 +1,7 @@
 instance Mod_7595_OUT_Verwandlungskrieger_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Verwandlungskrieger"; 
+	name 		= "wojownik transformacyjny"; 
 	guild 		= GIL_OUT;
 	id 			= 7595;
 	voice 		= 6;

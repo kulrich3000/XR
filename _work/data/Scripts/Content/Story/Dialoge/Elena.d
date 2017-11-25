@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Elena_Hi_Condition()
 
 FUNC VOID Info_Mod_Elena_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hi_15_00"); //Wie gehts?
-	AI_Output(self, hero, "Info_Mod_Elena_Hi_16_01"); //Mir gehts gut. Was willst du von mir?
-	AI_Output(hero, self, "Info_Mod_Elena_Hi_15_02"); //Was hast du denn für mich?
-	AI_Output(self, hero, "Info_Mod_Elena_Hi_16_03"); //Ich könnte dir ein paar Sachen verkaufen. Mehr ist aber nicht drin.
+	AI_Output(hero, self, "Info_Mod_Elena_Hi_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Elena_Hi_16_01"); //Mam racje. Czego od mnie oczekujesz?
+	AI_Output(hero, self, "Info_Mod_Elena_Hi_15_02"); //Co dostales za mnie?
+	AI_Output(self, hero, "Info_Mod_Elena_Hi_16_03"); //Móglbym wam sprzedac kilka rzeczy. Ale nie ma nic wiecej.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Elena kann mir ein paar Waren verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Elena moze mi sprzedac jakies towary.");
 };
 
 INSTANCE Info_Mod_Elena_Hexenparty_01 (C_INFO)
@@ -48,47 +48,47 @@ FUNC INT Info_Mod_Elena_Hexenparty_01_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_16_00"); //Was machst du hier? Ich spüre magische Befähigung in dir und die Restaura eines mächtigen Dämons.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_16_01"); //Du scheinst kein gewöhnliches Bauernweib zu sein, sonst hätten wir dich schon zum Teufel gejagt. Also sprich!
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_16_00"); //Co Pan tutaj robi? Czuje magiczne zdolnosci w Tobie i restauracji poteznego demona.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_16_01"); //Nie wydaje Ci sie, ze nie jest to zwykla chlopska kobieta, bo inaczej polowalibysmy na ciebie do diabla. Wiec mówcie!
 
 	B_RemoveNpc	(Mod_7198_HEX_AttraktiveFrau_NW);
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich will eurer Schwesternschaft beitreten.", Info_Mod_Elena_Hexenparty_01_C);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich wollte mich nur mal umsehen.", Info_Mod_Elena_Hexenparty_01_B);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich bin hier um euch zu vernichten.", Info_Mod_Elena_Hexenparty_01_A);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Chce dolaczyc do waszego siostry.", Info_Mod_Elena_Hexenparty_01_C);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Chcialem tylko sie rozejrzec.", Info_Mod_Elena_Hexenparty_01_B);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Jestem po to, zeby cie zniszczyc.", Info_Mod_Elena_Hexenparty_01_A);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_C()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_C_15_00"); //Ich will eurer Schwesternschaft beitreten.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_C_16_01"); //(lacht) Eine neue Anwärterin für unseren Bund.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_C_16_02"); //(ernster) In der Tat, deine magischen Fähigkeiten sprechen für dich, werfen aber auch einige Fragen auf: Wo hast du sie erlernt?
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_C_15_00"); //Chce dolaczyc do waszego siostry.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_C_16_01"); //(smiech) Nowy pretendent do naszego przymierza.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_C_16_02"); //(powazne) Faktycznie, twoje magiczne zdolnosci mówia za ciebie, ale zadaja równiez kilka pytan: Gdzie sie ich nauczyles?
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich kann mich nicht mehr erinnern.", Info_Mod_Elena_Hexenparty_01_F);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich habe sie mich selbst gelehrt.", Info_Mod_Elena_Hexenparty_01_E);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ein Wassermagier lehrte sie mich.", Info_Mod_Elena_Hexenparty_01_D);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Nie pamietam.", Info_Mod_Elena_Hexenparty_01_F);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Nauczylem sie ich samemu.", Info_Mod_Elena_Hexenparty_01_E);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Nauczyl mnie magik wody.", Info_Mod_Elena_Hexenparty_01_D);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_B_15_00"); //Ich wollte mich nur mal umsehen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_B_16_01"); //Du törichtes Ding willst mich wohl zum Besten halten. Sag mir auf der Stelle, was du hier suchst, und überlege wohl, was du sagst.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_B_15_00"); //Chcialem tylko sie rozejrzec.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_B_16_01"); //Glupota mysle, ze próbujesz zrobic z mnie glupote. Powiedz mi, czego teraz szukasz i zastanów sie nad tym, co mówisz.
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich will eurer Schwesternschaft beitreten.", Info_Mod_Elena_Hexenparty_01_C);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Ich bin hier, um euch zu vernichten.", Info_Mod_Elena_Hexenparty_01_A);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Chce dolaczyc do waszego siostry.", Info_Mod_Elena_Hexenparty_01_C);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Jestem po to, zeby cie zniszczyc.", Info_Mod_Elena_Hexenparty_01_A);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_A_15_00"); //Ich bin hier, um euch zu vernichten.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_A_16_01"); //Was?! Du Närrin hast wohl keine Vorstellung, mit wem du dich hier messen willst?!
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_A_16_02"); //Los, Schwestern, zeigt ihr, wie wir mit ungebetenen Gästen verfahren.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_A_15_00"); //Jestem po to, zeby cie zniszczyc.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_A_16_01"); //Co? Glupiec nie ma pojecia, kto jest tutaj przeciwko tobie!
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_A_16_02"); //Chodzcie, siostry, pokazcie jej jak mamy do czynienia z nieproszonymi goscmi.
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
@@ -103,48 +103,48 @@ FUNC VOID Info_Mod_Elena_Hexenparty_01_A()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_G()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_00"); //Gut, wir wollen dir eine Chance geben. Wenn du dich unserer Schwesternschaft als würdig erwiesen hast, werden wir dich in unsere Gemeinschaft aufnehmen.
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_G_15_01"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_02"); //Dieser Pepe ist uns schon seit langem ein Dorn im Auge. Er steht viel zu nah an unserem Versteck.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_03"); //Wir werden ihm einen kleinen Besuch abstatten ... das heißt, du wirst in Warggestalt erscheinen und seine Herde dezimieren. Wir werden dieses Mal nur zusehen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_04"); //Das sollte reichen, um ihn zukünftig vom Wald fernzuhalten, damit wir unser Werk des Chaos ungestört fortsetzen können.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_05"); //Nimm dazu diese verzauberte Warghaut, lege sie an und folge uns.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_00"); //Prawda jest, ze chcemy dac Ci szanse. Jesli udowodniles, ze jestes godzien naszej siostry, powitamy Cie w naszej wspólnocie.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_G_15_01"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_02"); //Pepe od dawna jest ciernia po naszej stronie. On jest zbyt blisko miejsca, w którym sie ukrywamy.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_03"); //Zapraszamy go do malej wizyty..... i dziesiatego stada. Jestesmy tylko gonna ogladac tym razem.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_04"); //To powinno wystarczyc, aby uchronic go w przyszlosci od lasu, abysmy mogli kontynuowac nasza prace nad chaosem bez zaklócen.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_05"); //Zrób te zaczarowana, wojenna skóre, wlóz ja i podazaj za nami.
 
 	B_GiveInvItems	(self, hero, ItRu_Verwandlungsfell, 1);
 
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_06"); //Wenn du willst, kann ich dich auch noch lehren, deine tierische Form geschickter einzusetzen, deine aggressiven Triebe zu zähmen, Kadaver zu fressen und andere Wölfe und Warge dir folgen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_07"); //Außerdem würdest du deine Tiergestalt an den Erfahrungen teilhaben lassen, die du als Mensch machst und so mit der Zeit als Warg an Stärke und Macht gewinnen.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_06"); //Jesli chcesz, moge równiez nauczyc cie, abys uzywal twojej formy zwierzecej bardziej umiejetnie, oswoil twoje agresywne instynkty, zjadl tusze i pozwolil innym wilkom i wojownikom pójsc za toba.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_G_16_07"); //Ponadto, dzielac sie doswiadczeniem swojej zwierzecej postaci jako istoty ludzkiej, z czasem zdobedziesz sile i wladze jako wojna.
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
 	if (hero.lp >= 3)
 	{
-		Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Bring mir bei, meine tierische Gestalt besser kontrollieren zu können. (3 Lernpunkte)", Info_Mod_Elena_Hexenparty_01_H);
+		Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Naucz mnie jak lepiej kontrolowac forme zwierzat. (3 punkty edukacyjne)", Info_Mod_Elena_Hexenparty_01_H);
 	};
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Lass uns aufbrechen.", Info_Mod_Elena_Hexenparty_01_I);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "Idzmy dalej.", Info_Mod_Elena_Hexenparty_01_I);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_F()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_F_15_00"); //Ich kann mich nicht mehr erinnern.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_F_16_01"); //Hmm, sie hat ihr Gedächtnis verloren. Die Begegnung mit einem Dämonen könnte natürlich so etwas hervorrufen.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_F_15_00"); //Nie pamietam.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_F_16_01"); //Hmm, stracila pamiec. Spotkanie z demonem moze oczywiscie cos takiego spowodowac.
 	
 	Info_Mod_Elena_Hexenparty_01_G();
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_E()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_E_15_00"); //Ich habe es mich selbst gelehrt.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_E_16_01"); //Beeindruckend, du musst Hexenblut in dir haben.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_E_15_00"); //Nauczylam sie sama.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_E_16_01"); //Imponujaca, musisz miec w sobie krew czarownicy.
 	
 	Info_Mod_Elena_Hexenparty_01_G();
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_D()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_D_15_00"); //Ein Wassermagier lehrte sie mich.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_D_16_01"); //Du willst meiner spotten?! Weidet sie aus, Schwestern ...
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_D_15_00"); //Nauczyl mnie magik wody.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_01_D_16_01"); //Chcesz mnie wysmiewac! Pozwólcie im, siostrom....
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
@@ -159,9 +159,9 @@ FUNC VOID Info_Mod_Elena_Hexenparty_01_D()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_I()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_I_15_00"); //Lass uns aufbrechen.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_I_15_00"); //Idzmy dalej.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Unglaublich. Die Hexen sind doch tatsächlich auf meine Tarnung hereingefallen. Ich soll mir jetzt die Warghaut anlegen und mit meinen 'Schwestern' Pepe verscheuchen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Niewiarygodne. Czarownice w rzeczywistosci upadly na moje okladki. Mialam polozyc warghaut i uciekac z siostrami Pepe.");
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
@@ -170,7 +170,7 @@ FUNC VOID Info_Mod_Elena_Hexenparty_01_I()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_01_H()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_H_15_00"); //Bring mir bei, meine tierische Gestalt besser kontrollieren zu können.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_01_H_15_00"); //Naucz mnie jak lepiej kontrolowac forme zwierzat.
 
 	hero.lp -= 3;
 
@@ -201,7 +201,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_07_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_07_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_07_16_00"); //Gut, und nun folge uns.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_07_16_00"); //Wszystko na wskros, teraz podazaj za nami.
 
 	AI_StopProcessInfos	(self);
 
@@ -233,7 +233,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_08_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_08_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_08_16_00"); //Na dann los, du weißt, was du zu tun hast.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_08_16_00"); //Idz dalej, wiec wiesz co robic.
 
 	AI_StopProcessInfos	(self);
 };
@@ -261,7 +261,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_09_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_09_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_09_16_00"); //Hast du dich schön am Blut der Schafe gelabt? Keine schlechte Arbeit ... für eine beginnende Hexe.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_09_16_00"); //Czy jadles/as krew owcza? Nie zla praca...... za poczatkowa czarownice.
 
 	AI_StopProcessInfos	(self);
 
@@ -289,7 +289,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_02_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_16_00"); //Das war doch eine erbauliche, wie auch vergnügsame Erfahrung, meine Schwester, meinst du nicht auch?
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_16_00"); //To bylo niesamowite i przyjemne doswiadczenie, moja siostra, nie sadzisz?
 
 	B_GivePlayerXP	(200);
 
@@ -301,34 +301,34 @@ FUNC VOID Info_Mod_Elena_Hexenparty_02_Info()
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_02);
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_02, "Weiß nicht.", Info_Mod_Elena_Hexenparty_02_B);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_02, "Ja, gewiss.", Info_Mod_Elena_Hexenparty_02_A);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_02, "Nie wiem.", Info_Mod_Elena_Hexenparty_02_B);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_02, "Tak, na pewno.", Info_Mod_Elena_Hexenparty_02_A);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_02_C()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_C_16_00"); //Wie dem auch sei, ich hoffe, du bist bereit, dein Werk der Zerstörung und Zersetzung fortzuführen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_C_16_01"); //Nimm diese Spruchrolle des Hagelschauers, warte, bis ein Bauer und die Bäuerin auf dem Feld vor Onars Gehöft arbeiten und wende sie dort an.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_C_16_00"); //Mam jednak nadzieje, ze sa panstwo gotowi kontynuowac swoja prace nad zniszczeniem i dezintegracja.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_C_16_01"); //Wezmy na siebie te role gradobicia, poczekajmy, az rolnik i zona rolnika zaczna pracowac na polu przed zagroda Onar i zastosujmy ja tam.
 
 	B_GiveInvItems	(self, hero, ItSc_Hagel, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Diesmal haben mir meine Schwestern aufgetragen, die Hagelspruchrolle bei dem Bauern und der Bäuerin auf dem Feld vor Onars Hof anzuwenden.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Tym razem moje siostry poprosily mnie o uzycie gradobicia rolnika i jego zony na polu przed farma Onar.");
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_02);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_02_B()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_02_B_15_00"); //Weiß nicht.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_B_16_01"); //Aber, aber. Du musst noch viel lernen.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_02_B_15_00"); //Nie wiem.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_B_16_01"); //Ale, ale. Masz jeszcze wiele do nauczenia sie.
 	
 	Info_Mod_Elena_Hexenparty_02_C();
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_02_A()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_02_A_15_00"); //Ja, gewiss.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_A_16_01"); //Das will ich meinen.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_02_A_15_00"); //Tak, na pewno.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_02_A_16_01"); //Tak wlasnie rozumiem.
 	
 	Info_Mod_Elena_Hexenparty_02_C();
 };
@@ -341,7 +341,7 @@ INSTANCE Info_Mod_Elena_Hexenparty_03 (C_INFO)
 	information	= Info_Mod_Elena_Hexenparty_03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Spruchrolle angewendet.";
+	description	= "Uzywalem przewijania.";
 };
 
 FUNC INT Info_Mod_Elena_Hexenparty_03_Condition()
@@ -356,28 +356,28 @@ FUNC INT Info_Mod_Elena_Hexenparty_03_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_03_Info()
 {
-	AI_Output(hero, hero, "Info_Mod_Elena_Hexenparty_03_15_00"); //Ich habe die Spruchrolle angewendet.
+	AI_Output(hero, hero, "Info_Mod_Elena_Hexenparty_03_15_00"); //Uzywalem przewijania.
 
 	if (Mod_WM_HexenHagel == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_01"); //Ausgezeichnet. Das hat wieder für zauberhafte Unruhe auf dem Hof gesorgt.
+		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_01"); //Doskonaly. To znowu wywolalo magiczny niepokój w gospodarstwie.
 
 		B_GivePlayerXP	(250);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_02"); //Aber ohne die gewünschte Wirkung. Sehr enttäuschend, meine Schwester.
-		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_03"); //Wenn du dir noch mehr Fehler dieser Art erlaubst, werden wir dich irgendwann noch für deine Unfähigkeit bestrafen müssen.
+		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_02"); //Ale bez pozadanego efektu. Bardzo rozczarowujaca, moja siostra.
+		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_03"); //Jesli pozwolisz sobie popelnic wiecej tego rodzaju bledów, bedziemy musieli w któryms momencie ukarac cie za twoja niezdolnosc.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_04"); //So, bevor wir dich in unsere Schwesternschaft aufnehmen, musst du noch die Macht jener Zauber erlernen, die ihre Opfer beeinflussen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_05"); //Nimm diese Spruchrolle der Beeinflussung, wende sie an und sprich danach mit Torlof.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_04"); //Zanim wiec przyznamy sie do naszego siostrzenstwa, musisz poznac moc zaklec, które dotykaja ofiar.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_05"); //Wezcie te role wplywu, zastosujcie go i porozmawiajcie z Torlofem.
 
 	B_GiveInvItems	(self, hero, ItSc_Beeinflussung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_06"); //Bring ihn dazu, sich unmöglich vor den anderen Söldnern zu verhalten.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_03_16_06"); //Pozwól mu zachowywac sie niemozliwie przed innymi najemnikami.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Nun soll ich noch Torlof mit der Spruchrolle der Beeinflussung dazu bringen, unmögliche Dinge zu tun.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Teraz mam zmusic Torlof do robienia rzeczy niemozliwych z rola wplywu.");
 };
 
 INSTANCE Info_Mod_Elena_Hexenparty_04 (C_INFO)
@@ -402,13 +402,13 @@ FUNC INT Info_Mod_Elena_Hexenparty_04_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_04_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_00"); //Das hast du großartig gemacht. Es hätte jeder von uns zur Ehre gereicht. Was für ein Spaß!
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_01"); //Damit hast du der Moral der Söldner geschadet und ein würdiges Zeugnis deiner magischen Künste, wie auch deines listenreichen Verstandes abgegeben.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_02"); //Nun bist du bereit, eine von uns zu werden. Komm bei Nacht in unser Versteck.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_00"); //Wykonal pan wspaniala prace. Kazdy z nas zrobilby zaszczyty. Cóz za radosc!
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_01"); //Czyniac to, zniszczyles morale najemników i dales godne swiadectwo magicznych sztuk, jak równiez swojego sprytnego umyslu.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_04_16_02"); //Teraz jestes gotowy zostac jednym z nas. Zapraszamy do naszej kryjówki w nocy.
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Verquer. Meine Schwestern ... ähh, die Hexen wollen mich doch tatsächlich in ihre Gemeinschaft aufnehmen. Bei Nacht soll ich sie in der Höhle aufsuchen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "W kierunku poprzecznym. Moje siostry.... czarownice rzeczywiscie chca mnie zabrac do swojej spolecznosci. W nocy mam pójsc do jaskini.");
 };
 
 INSTANCE Info_Mod_Elena_Hexenparty_05 (C_INFO)
@@ -433,20 +433,20 @@ FUNC INT Info_Mod_Elena_Hexenparty_05_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_05_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_00"); //So, Schwestern. Nun haben wir uns hier versammelt, einer neuen Anwärterin ihre dämonische Weihe zu geben.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_01"); //(zum Helden) Ja, meine Schwester, dir werden sich nun ganz neue Türen öffnen, die Macht, deine Umgebung zu beeinflussen und zu verheeren.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_02"); //Ohne Zweifel hast du schon die Ungetüme bemerkt, die in der Umgebung entstanden sind. Sie stehen zum großen Teil unter unserer Kontrolle.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_03"); //Unsere Verbündeten des Blutkults mögen zwar die Macht absorbiert haben, um diese zu erschaffen. Ohne unseren Einfluss könnten sie diese Kreaturen jedoch nie unter solcher Kontrolle halten.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_00"); //Idziesz tam, siostry. Teraz zebralismy sie tutaj, aby dac jej demoniczne poswiecenie nowemu kandydatowi.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_01"); //Tak, moja siostra, zupelnie nowe drzwi otworza sie teraz dla Ciebie, moc oddzialywania i wyniszczenia otoczenia.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_02"); //Niewatpliwie zauwazyles juz bez watpienia potwory, które powstaly w otoczeniu. Sa one w duzej mierze pod nasza kontrola.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_16_03"); //Nasi sprzymierzency moga pochlonac sile, aby je stworzyc. Bez naszego wplywu jednak nie mogliby oni nigdy nie utrzymywac tych stworzen pod taka kontrola.
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_05);
 
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_05, "Lass uns mit dem Ritual beginnen.", Info_Mod_Elena_Hexenparty_05_B);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_05, "Blutkult?", Info_Mod_Elena_Hexenparty_05_A);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_05, "Rozpocznijmy rytual.", Info_Mod_Elena_Hexenparty_05_B);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_05, "Kult krwi?", Info_Mod_Elena_Hexenparty_05_A);
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_05_C()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_C_16_00"); //Schwestern, lasst uns nun in Meditation verfallen, unsere Kräfte sammeln, um ein neues Mitglied in unsere Gemeinschaft aufzunehmen und ihm den Teil dämonischer Macht zukommen zu lassen, der ihm zusteht.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_C_16_00"); //Siostry, wpadnijmy teraz w medytacje, zgromadzimy sily, aby powitac nowego czlonka naszej wspólnoty i dac mu te czesc demonicznej wladzy, na która zasluguje.
 	
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_05);
 
@@ -457,21 +457,21 @@ FUNC VOID Info_Mod_Elena_Hexenparty_05_C()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_05_B()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_05_B_15_00"); //Lass uns mit dem Ritual beginnen.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_05_B_15_00"); //Rozpocznijmy rytual.
 	
 	Info_Mod_Elena_Hexenparty_05_C();
 };
 
 FUNC VOID Info_Mod_Elena_Hexenparty_05_A()
 {
-	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_05_A_15_00"); //Blutkult?
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_01"); //Eine uralte Bruderschaft. Einer ihrer Clans hat vor einiger Zeit Kontakt zu uns aufgenommen und das Bündnis mit uns geschlossen, auf dass wir mit vereinten Kräften alles ins Chaos stürzen.
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_02"); //Sie haben ihr Refugium in der Nähe des Weidenplateaus.
+	AI_Output(hero, self, "Info_Mod_Elena_Hexenparty_05_A_15_00"); //Kult krwi?
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_01"); //Starozytne braterstwo. Jeden z ich klanów skontaktowal sie z nami jakis czas temu i zawarl z nami sojusz, abysmy mogli polaczyc sily i pograzyc wszystko w chaosie.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_02"); //Oni maja schronienie w poblizu plaskowyzu wierzbowego.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_AttraktiveFrau_Sex))
 	{
-		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_03"); //Ja, die Taverne beim Weidenplateau ... da habe ich die köstliche Lebenskraft eines Mannes in mich aufgesogen, der von besonderer Art war.
-		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_04"); //Wie dem auch sei, beginnen wir mit dem Ritual.
+		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_03"); //Tak, karczma w poblizu plaskowyzu pastwiskowego...... Wysysalem przepyszna sile zyciowa szczególnego rodzaju czlowieka.
+		AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_05_A_16_04"); //Tak czy owak, rozpocznijmy rytual.
 	};
 
 	Mod_WM_Blutkultinfos = 1;
@@ -501,7 +501,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_06_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_06_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_06_16_00"); //(benommen) Was, wie ... Schwestern, wir wurden hereingelegt.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_06_16_00"); //Co, jak.....? Siostry, zostalismy powolani do zycia.
 
 	Mod_HexenAttack = 1;
 
@@ -531,7 +531,7 @@ FUNC INT Info_Mod_Elena_Hexenparty_10_Condition()
 
 FUNC VOID Info_Mod_Elena_Hexenparty_10_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_10_16_00"); //Was soll das? Nimm deine Tiergestalt wieder an und verrichte, was dir aufgetragen wurde.
+	AI_Output(self, hero, "Info_Mod_Elena_Hexenparty_10_16_00"); //Co robisz? Wez swoje zwierze znowu w formie i zrobic, jak zostaniesz poinformowany.
 
 	AI_StopProcessInfos	(self);
 

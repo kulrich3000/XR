@@ -1,7 +1,7 @@
 instance Mod_7713_DMR_Daemonenritter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenritter"; 
+	name 		= "demonicy"; 
 	guild 		= GIL_STRF;
 	id 			= 7713;
 	voice 		= 13;

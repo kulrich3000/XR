@@ -18,27 +18,27 @@ FUNC INT Info_Mod_Hexenqueen_Hi_Condition()
 
 FUNC VOID Info_Mod_Hexenqueen_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_00"); //(lacht) Du lieferst mir meinen Gemahl doch tatsächlich noch frei Haus.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_01"); //Ich liefere dir nur den Tod frei Haus!
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_02"); //Schweig, du Narr! Glaubst du wirklich, du kannst dich zwischen mich und meine Mutter stellen?
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_03"); //Deine Mutter?
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_04"); //(lacht) Oder sollte ich lieber UNSERE Mutter sagen?
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_05"); //Was? Wie meinst du das?
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_06"); //Ganz einfach. Ich bin die Tochter von Ragon und Garan ist der Sohn der früheren Hexenkönigin.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_07"); //Dann ist Garan ... dein Bruder?
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_08"); //Du begreifst ja ganz schnell.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_09"); //Und Tojan ist ... IGITT!
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_10"); //(lacht) Ja. Der Sohn von Bruder und Schwester. In ihm vereinte sich das Blut wieder.
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_11"); //Schade, dass sein Vater ihn getötet hat. Doch Mutter wird ihn dafür bestrafen.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_12"); //Du meinst die vorherige Hexenkönigin?
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_13"); //Ja. Ragon tötete sie, als sie in einem kurzen Moment der Unachtsamkeit ihren Zauber nicht eng genug um ihn gesponnen hatte und er ihre wahre Natur erkannte.
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_14"); //Dafür bezahlte er aber auch mit seinem Leben.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_15"); //Dann hast du also Garans Erinnerungen gelöscht und ihn sich selbst Überlassen.
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_16"); //Ja, ich ließ ihn mit nichts weiter zurück als dem Namen Aaron. Ein Anagramm für den Namen meiner Mutter ... Orana!
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_17"); //Doch das ist jetzt nich weiter wichtig! Ich werde meine Mutter zurück ins Leben holen! Und der kleine Garan wird mir dabei helfen.
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_18"); //Aber warum brauchst du dazu Garan?
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_19"); //Es ist sein Blut, dass ich brauche! Mit ihm kann ich der Hexenkönigin wieder das Leben schenken!
-	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_20"); //Genug, jetzt wirst du sterben!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_00"); //(smiech) W rzeczywistosci dostarczasz mojemu mezowi bezplatnie.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_01"); //Daje tylko wolnosc smierci!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_02"); //Wyobraz sobie, oszukujesz! Naprawde myslisz, ze mozesz stac miedzy mna a moja mama?
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_03"); //Twoja matka?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_04"); //(smiech) Lub powinienem powiedziec o naszej mamie?
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_05"); //Co? Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_06"); //Bardzo proste. Jestem córka Ragona, a Garan jest synem bylej królowej czarownic.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_07"); //Potem Garan.... twój brat?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_08"); //Szybko zrozumiesz.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_09"); //A Tojan jest..... IGITT!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_10"); //(smiech) Tak. Syn brata i siostry. Krew w nim ponownie sie polaczyla.
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_11"); //Zbyt przykry ojciec zabil go. Ale matka ukarze go za to.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_12"); //Masz na mysli poprzednia czarownice?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_13"); //Tak. Ragon zabil ja, kiedy w krótkim momencie beztroski nie dosc ciasno tkala wokól niego swoja magie, a on rozpoznal jej prawdziwa nature.
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_14"); //Ale on równiez zaplacil za to swoim zyciem.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_15"); //Tak wiec wymazales wspomnienia Garana i pozostawiles go sam sobie.
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_16"); //Tak, zostawilem go z imieniem Aarona. Anagram na nazwisko mojej matki..... Orana!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_17"); //Ale to juz nie jest wazne! Jestem gonna przywracajac mamie zycie! A maly Garan pomoze mi w tym.
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_18"); //Ale dlaczego potrzebujesz garanu?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Hi_17_19"); //To jego krew, której potrzebuje! Razem z nim moge przywrócic czarownice do zycia!
+	AI_Output(hero, self, "Info_Mod_Hexenqueen_Hi_15_20"); //Wystarczy, teraz umrzesz!
 
 	AI_StopProcessInfos	(self);
 
@@ -65,8 +65,8 @@ FUNC INT Info_Mod_Hexenqueen_Blut_Condition()
 
 FUNC VOID Info_Mod_Hexenqueen_Blut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Blut_17_00"); //(lacht) Ihr schwachen Sterblichen! Erschaudert vor der Macht meiner Mutter!
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Blut_17_01"); //Sie ist ... was ist das ... NEIN! Warum bist du nicht aus Fleisch und Blut?
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Blut_17_00"); //(smiech) Masz slabych smiertelników! Krzyczenie przed potega mojej matki!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Blut_17_01"); //Ona jest..... co to jest....? NEIN! Dlaczego nie masz krwi i ciala?
 
 	AI_StopProcessInfos	(self);
 
@@ -94,7 +94,7 @@ FUNC INT Info_Mod_Hexenqueen_Falsch_Condition()
 
 FUNC VOID Info_Mod_Hexenqueen_Falsch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hexenqueen_Falsch_17_00"); //AHHHH! ES WAR EIN DOPPELGÄNGER! ICH WERDE EUCH VERNICHTEN!
+	AI_Output(self, hero, "Info_Mod_Hexenqueen_Falsch_17_00"); //AHHHH! TO BYL PODWÓJNY GANG! ZNISZCZE CIE!
 
 	AI_StopProcessInfos	(self);
 };

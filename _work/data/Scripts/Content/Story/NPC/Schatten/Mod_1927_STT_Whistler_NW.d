@@ -1,7 +1,7 @@
 instance Mod_1927_STT_Whistler_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Whistler";
+	name 		=		"gwizdek";
 	npctype 		=		NPCTYPE_main;
 	guild 		=		GIL_out;
 	level 		=		5;

@@ -1,7 +1,7 @@
 instance Mod_761_BDT_Dexter_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dexter"; 
+	name 		= "xter"; 
 	guild 		= GIL_OUT;
 	id 			= 761;
 	voice 		= 9;

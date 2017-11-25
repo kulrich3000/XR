@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Diana_Hi (C_INFO)
 	information	= Info_Mod_Diana_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung?";
+	description	= "Czy masz racje?";
 };
 
 FUNC INT Info_Mod_Diana_Hi_Condition()
@@ -16,17 +16,17 @@ FUNC INT Info_Mod_Diana_Hi_Condition()
 
 FUNC VOID Info_Mod_Diana_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_00"); //Alles in Ordnung?
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_01"); //Ich hoffe es, aber langsam mache ich mir Sorgen.
-	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_02"); //Vermisst du jemanden?
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_03"); //Unsere Tochter ist heute Morgen zum Pilzesammeln aufgebrochen, aber bisher nicht zurückgekehrt.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_04"); //Nicht, dass sie nicht alt genug wäre, um selbst auf sich aufpassen zu können, aber es lässt mir doch keine Ruhe, nichts von ihr zu hören.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_05"); //Wenn du ihr begegnest, sag ihr ruhig Bescheid, dass sie sich langsam mal wieder auf den Rückweg machen könnte.
-	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_06"); //Du kannst sie an ihrer eigenwilligen roten Mütze erkennen.
+	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_00"); //Czy masz racje?
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_01"); //Mam taka nadzieje, ale zaczynam sie martwic.
+	AI_Output(hero, self, "Info_Mod_Diana_Hi_15_02"); //Brakuje Ci kogos?
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_03"); //Nasza córka wyjechala dzis rano na grzyb zbierajac, ale jeszcze nie wrócila.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_04"); //Nie to, ze ona nie jest na tyle starcza, zeby sie nia zajac, ale nie pozostawia mnie samotnie nie slyszec.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_05"); //Jesli natkniesz sie na nia, poinformuj ja, ze moze powoli cofnac sie.
+	AI_Output(self, hero, "Info_Mod_Diana_Hi_16_06"); //Rozpoznasz je po idiosynkratycznej czerwonej czapce.
 	
 	Log_CreateTopic	(TOPIC_MOD_ROTKAEPPCHEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ROTKAEPPCHEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "Diana vermisst ihre Tochter, die heute morgen zum Pilzesammeln aufgebrochen ist. Ich kann sie an ihrer roten Mütze erkennen.");
+	B_LogEntry	(TOPIC_MOD_ROTKAEPPCHEN, "Diana teskni za córka, która dzis rano opuscila miejsce na grzyby. Rozpoznaje je po ich czerwonej czapce.");
 };
 
 INSTANCE Info_Mod_Diana_Eintopf (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Diana_Eintopf (C_INFO)
 	information	= Info_Mod_Diana_Eintopf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Machst du auch leckere Eintöpfe?";
+	description	= "Czy tez robisz mroczne gulaszki?";
 };
 
 FUNC INT Info_Mod_Diana_Eintopf_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Mod_Diana_Eintopf_Condition()
 
 FUNC VOID Info_Mod_Diana_Eintopf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_00"); //Machst du auch leckere Eintöpfe?
-	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_01"); //Sieh dir doch die gutgenährten Buben auf dem Hof an! Das Fleischwanzenragout reißen sie mir förmlich aus den Händen.
-	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_02"); //(verschwörerisch) Mein Geheimnis sind kleine Melonenstückchen.
-	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_03"); //Aha. Ist ja interessant.
+	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_00"); //Czy tez robisz mroczne gulaszki?
+	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_01"); //Spójrzmy na dobrze karmionych chlopców na podwórku! Doslownie wyrywaja mi z rak pluskwy.
+	AI_Output(self, hero, "Info_Mod_Diana_Eintopf_16_02"); //Mój sekret to male kawalki melona.
+	AI_Output(hero, self, "Info_Mod_Diana_Eintopf_15_03"); //Uh-huh. To ciekawe.
 };
 
 INSTANCE Info_Mod_Diana_Pickpocket (C_INFO)

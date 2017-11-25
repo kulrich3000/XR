@@ -2,7 +2,7 @@ instance Mod_1122_SLD_Mordrag_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Mordrag";
+	name =					"zabójstwo";
 	Npctype =				Npctype_Main;
 	guild =					GIL_OUT;      
 	level =					10;

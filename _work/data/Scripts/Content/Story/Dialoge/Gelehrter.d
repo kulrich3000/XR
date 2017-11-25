@@ -23,15 +23,15 @@ FUNC VOID Info_Mod_Gelehrter_Hi_Info()
 
 	if (rnd == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_00"); //Was wagst du es mich anzusprechen, unwürdiger Pöbel.
+		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_00"); //Jak smiesz mówic do mnie, niechetny tlum.
 	}
 	else if (rnd == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_01"); //Hinfort mit dir, stinkender Auswurf der Unwissenheit.
+		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_01"); //Wkrótce z toba, nekajac rzucanie niewiedzy.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_02"); //Banause! Soll mein Knecht dich lehren, was Schmerzen sind?
+		AI_Output(self, hero, "Info_Mod_Gelehrter_Hi_10_02"); //Buffon! Czy mój sluga nauczylby cie, czym jest ból?
 	};
 
 	AI_StopProcessInfos	(self);

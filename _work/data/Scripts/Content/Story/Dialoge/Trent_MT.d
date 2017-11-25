@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Trent_MT_Hi (C_INFO)
 	information	= Info_Mod_Trent_MT_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, fühlst du dich schon besser?";
+	description	= "Czy czujesz sie lepiej?";
 };
 
 FUNC INT Info_Mod_Trent_MT_Hi_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Trent_MT_Hi_Condition()
 
 FUNC VOID Info_Mod_Trent_MT_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_00"); //Na, fühlst du dich schon besser?
-	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_01"); //Nicht wirklich. Ich hatte bisher wenig Zeit zum Erholen.
-	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_02"); //Hier brennt die Luft, sag ich dir. Ich hab schon drei meiner Leute verloren und wir haben kaum noch Wasser.
-	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_03"); //Habt ihr den schon was heraus gefunden?
-	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_04"); //Ja, jeden Mann, den ich hier verliere, opfern die Orks in ihrer Höhle. Kein besonders ermutigender Gedanke. Wir sind einfach zu wenige, besonders jetzt!
-	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_05"); //Na gut, aber vielleicht schafft ihr es mit mir.
-	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_06"); //Einen Versucht ist es Wert. Mehr als einen weitern Tag halten wir es hier sowieso nicht mehr durch.
-	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_07"); //Auf dein Zeichen greifen wir sie an.
+	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_00"); //Czy czujesz sie lepiej?
+	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_01"); //Nie tak naprawde. Nie mialem zbyt wiele czasu na wyzdrowienie.
+	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_02"); //Powiedzialbym, ze powietrze plonie. Stracilem juz trzech moich mezczyzn i biegniemy nisko na wodzie.
+	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_03"); //Czy cos jeszcze sie dowiedziales?
+	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_04"); //Tak, kazdy czlowiek, którego tu przegrywam, orki poswiecaja sie w ich jaskini. Nie jest to mysl szczególnie zachecajaca. Jestesmy po prostu za malo, zwlaszcza teraz!
+	AI_Output(hero, self, "Info_Mod_Trent_MT_Hi_15_05"); //Wszystko w porzadku, ale moze mozna to zrobic ze mna.
+	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_06"); //Warto spróbowac. Tak czy owak nie mozemy trwac dluzej niz nastepnego dnia.
+	AI_Output(self, hero, "Info_Mod_Trent_MT_Hi_06_07"); //Na pani sygnal atakujemy ich.
 
-	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Die Situation bei Trent sieht nicht gut aus. Wir müssen die Orks in ihrer Opferstätte gemeinsam angreifen, und zwar bald. Ich soll das Zeichen geben, sobald ich bereit bin.");
+	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Sytuacja Trenta nie wyglada dobrze. Musimy zaatakowac orki razem w ich miejscu poswiecenia i wkrótce. Mam dac sygnal, gdy tylko bede gotowy.");
 };
 
 INSTANCE Info_Mod_Trent_MT_Angriff (C_INFO)
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Trent_MT_Angriff (C_INFO)
 	information	= Info_Mod_Trent_MT_Angriff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lasst uns angreifen!";
+	description	= "Atakujmy!";
 };
 
 FUNC INT Info_Mod_Trent_MT_Angriff_Condition()
@@ -52,10 +52,10 @@ FUNC INT Info_Mod_Trent_MT_Angriff_Condition()
 
 FUNC VOID Info_Mod_Trent_MT_Angriff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Trent_MT_Angriff_15_00"); //Lasst uns angreifen!
+	AI_Output(hero, self, "Info_Mod_Trent_MT_Angriff_15_00"); //Atakujmy!
 	AI_Output(self, hero, "DEFAULT"); //
 
-	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Es geht los!");
+	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Idziemy tutaj!");
 
 	AI_StopProcessInfos	(self);
 

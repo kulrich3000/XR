@@ -1,7 +1,7 @@
 INSTANCE Gnom_11005_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Betrunkener Gnom";
+	name 		= "Pijak Gnome";
 	guild 		= GIL_OUT;
 	id 			= 11005;
 	voice 		= 11;

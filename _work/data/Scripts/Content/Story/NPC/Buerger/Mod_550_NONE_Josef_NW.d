@@ -1,7 +1,7 @@
 instance Mod_550_NONE_Josef_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Josef";
+	name 		= "Józef";
 	guild 		= GIL_NONE;
 	id 		= 550;
 	voice 		= 13;

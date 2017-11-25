@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Torwache_Halt_Condition()
 
 FUNC VOID Info_Mod_Torwache_Halt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torwache_Halt_08_00"); //HALT! Was wollt hier?
+	AI_Output(self, hero, "Info_Mod_Torwache_Halt_08_00"); //HALT! Co Pan tutaj robi?
 
 	AI_StopProcessInfos	(self);
 };
@@ -44,11 +44,11 @@ FUNC INT Info_Mod_Torwache_SabitschDieb_Condition()
 
 FUNC VOID Info_Mod_Torwache_SabitschDieb_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_00"); //Dreckige Diebe haben nichts in unserem Lager verloren.
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_01"); //Begleiche erst deine Schuld bei Sabitsch, dann darfst du wieder hinein.
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_02"); //1000 Goldmünzen Strafe für den dreisten Diebstahl und das Amulett.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_00"); //Brudni zlodzieje nie stracili nic w naszym magazynie.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_01"); //Najpierw splacic dlug Sabitschowi, a nastepnie wrócic do srodka.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschDieb_08_02"); //1000 zlotych monet kara za pogrubiona kradziez i amulet.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Ich konnte das Amulett stehlen, was Sabitsch jedoch kurz darauf bemerkte. Ich sollte es jetzt Dexter bringen und mir dann überlegen, wie ich das Alte Lager nach dem Diebstahl wieder freundlich stimmen kann.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Bylem w stanie ukrasc amulet, który Sabitsch zauwazyl wkrótce potem. Mialem go przywiezc do Dextera i zastanowic sie, jak po kradziezy przywrócic stary obóz przyjazny.");
 };
 
 INSTANCE Info_Mod_Torwache_SabitschMoerder (C_INFO)
@@ -73,11 +73,11 @@ FUNC INT Info_Mod_Torwache_SabitschMoerder_Condition()
 
 FUNC VOID Info_Mod_Torwache_SabitschMoerder_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_00"); //Thorus Kumpel wurde diese Nacht in seiner Hütte getötet.
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_01"); //Wir haben einen zuverlässigen Zeugen, der dich zu diesem Zeitpunkt in der Nähe gesehen hat.
-	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_02"); //Bevor das nicht geklärt ist, kommst du ganz bestimmt nicht mehr ins Lager.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_00"); //Tego wieczoru w jego kabinie zmarl przyjaciel Thorusa.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_01"); //Mamy wiarygodnego swiadka, który widzial Cie w poblizu.
+	AI_Output(self, hero, "Info_Mod_Torwache_SabitschMoerder_08_02"); //Dopóki tak sie nie stanie, na pewno nie wrócisz do obozu.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Verdammt ein Zeuge – vermutlich Scatty – hat ausgesagt, mich nachts bei der Hütte des Getöteten gesehen zu haben. Wenn ich nicht dauerhaft Hausverbot im Alten Lager haben will, so muss ich etwas unternehmen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Pewnego swiadka Damna - prawdopodobnie Scatty' ego - swiadczyl o tym, ze widzialem mnie noca w kabinie zmarlego. Jesli nie chce byc na stale zakazany z dawnego obozu, musze cos zrobic.");
 };
 
 INSTANCE Info_Mod_Torwache_EXIT (C_INFO)

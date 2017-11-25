@@ -1,7 +1,7 @@
 instance Mod_569_RIT_Cedric_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cedric";
+	name 		= "cedryzm";
 	guild 		= GIL_PAL;
 	id 			= 569;
 	voice 		= 12;

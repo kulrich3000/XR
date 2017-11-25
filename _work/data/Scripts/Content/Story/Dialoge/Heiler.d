@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Heiler_Hi (C_INFO)
 	information	= Info_Mod_Heiler_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich heilen?";
+	description	= "Czy mozecie mnie wyleczyc?";
 };
 
 FUNC INT Info_Mod_Heiler_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Heiler_Hi_Condition()
 
 FUNC VOID Info_Mod_Heiler_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Hi_15_00"); //Kannst du mich heilen?
-	AI_Output(self, hero, "Info_Mod_Heiler_Hi_10_01"); //Kann ich schon, gegen Bezahlung.
+	AI_Output(hero, self, "Info_Mod_Heiler_Hi_15_00"); //Czy mozecie mnie wyleczyc?
+	AI_Output(self, hero, "Info_Mod_Heiler_Hi_10_01"); //Moge, za oplata.
 };
 
 INSTANCE Info_Mod_Heiler_Endres (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Heiler_Endres (C_INFO)
 	information	= Info_Mod_Heiler_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woran ist Endres gestorben?";
+	description	= "Co spowodowalo smierc Endresa?";
 };
 
 FUNC INT Info_Mod_Heiler_Endres_Condition()
@@ -41,16 +41,16 @@ FUNC INT Info_Mod_Heiler_Endres_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_00"); //Woran ist Endres gestorben?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_01"); //Ich bin mir nicht ganz sicher, aber möglicherweise ... ja, doch, es könnte an dem faustgroßen Loch im Hinterkopf liegen.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_02"); //Mit was für einer Waffe ist die Wunde geschlagen worden?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_03"); //Mit einer gebogenen Klinge. Sieht mir stark nach einer Sense oder Spitzhacke aus.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_04"); //Das Loch ist nicht senkrecht in den Hinterkopf geschlagen, sondern leicht gekrümmt.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_05"); //Dann muss es ein Mord gewesen sein?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_06"); //Ob Mord, Totschlag oder Versehen - es ist eindeutig von fremder Hand herbeigeführt worden.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_07"); //Danke für die Auskunft.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_00"); //Co spowodowalo smierc Endresa?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_01"); //Nie jestem do konca pewna, ale moze..... Tak, ale moze to byc pierwszy otwór w tylnej czesci glowy.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_02"); //Jakiego rodzaju bron zostala uzyta do uderzenia w rane?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_03"); //Z zakrzywionym ostrzem. Wyglada mi duzo jak kosa lub piknik.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_04"); //Otwór nie jest wbijany pionowo w tyl glowy, lecz lekko wygiety.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_05"); //To musialo to byc morderstwo?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres_10_06"); //Bez wzgledu na to, czy chodzi o morderstwo, zabójstwo czy wypadek - zostal on wyraznie spowodowany przez kogos innego.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres_15_07"); //Dziekujemy za informacje.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Es gibt ein weiteres Indiz dafür, dass einer der Bergleute für den Tod Endres' verantwortlich ist - und zwar die gebogene Tatwaffe.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Istnieja dalsze dowody na to, ze jeden z górników jest odpowiedzialny za smierc Endre' a - zgieta bron.");
 };
 
 INSTANCE Info_Mod_Heiler_Endres02 (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Heiler_Endres02 (C_INFO)
 	information	= Info_Mod_Heiler_Endres02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst der Erpressung verdächtigt.";
+	description	= "Jestes podejrzany o wymuszenie.";
 };
 
 FUNC INT Info_Mod_Heiler_Endres02_Condition()
@@ -74,11 +74,11 @@ FUNC INT Info_Mod_Heiler_Endres02_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_00"); //Du wirst der Erpressung verdächtigt.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres02_10_01"); //Na, was wird das denn? Eine Verleumdungskampagne?
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_02"); //Darf ich dir ein paar Fragen stellen?
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_03"); //Wenn du unschuldig bist, hast du nichts zu befürchten.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres02_10_04"); //(mürrisch) Fang schon an.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_00"); //Jestes podejrzany o wymuszenie.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres02_10_01"); //Co robisz? Kampania wymazujaca?
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_02"); //Czy moge zadac kilka pytan?
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres02_15_03"); //Jesli jestes niewinny, nie masz nic do zmartwienia.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres02_10_04"); //Zacznij juz teraz.
 };
 
 INSTANCE Info_Mod_Heiler_Endres03 (C_INFO)
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Heiler_Endres03 (C_INFO)
 	information	= Info_Mod_Heiler_Endres03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du zum Zeitpunkt von Endres' Tod getrieben?";
+	description	= "Co robilas w czasie smierci Endresa?";
 };
 
 FUNC INT Info_Mod_Heiler_Endres03_Condition()
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Heiler_Endres03_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres03_15_00"); //Was hast du zum Zeitpunkt von Endres' Tod getrieben?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres03_10_01"); //Ich war hier im Haus und habe mich um meinen Patienten gekümmert.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres03_10_02"); //Den ganzen Tag habe ich das Haus nicht verlassen.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres03_15_00"); //Co robilas w czasie smierci Endresa?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres03_10_01"); //Bylem tutaj w domu opiekujac sie swoim pacjentem.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres03_10_02"); //Nie opuscilem domu przez caly dzien.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Der Heiler gibt an, sich den ganzen Tag über zu Hause um seinen Patienten gekümmert zu haben.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Leczacy twierdzi, ze opiekowal sie swoim pacjentem przez caly dzien w domu.");
 };
 
 INSTANCE Info_Mod_Heiler_Endres04 (C_INFO)
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Heiler_Endres04 (C_INFO)
 	information	= Info_Mod_Heiler_Endres04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du vom Verhältnis zwischen Endres und seiner Frau?";
+	description	= "Co wiesz o zwiazku miedzy Endresem a jego zona?";
 };
 
 FUNC INT Info_Mod_Heiler_Endres04_Condition()
@@ -130,10 +130,10 @@ FUNC INT Info_Mod_Heiler_Endres04_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres04_15_00"); //Was weißt du vom Verhältnis zwischen Endres und seiner Frau?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres04_10_01"); //Ha, Juliana war unzufrieden mit ihrer Beziehung. Sie hat ihn verehrt, und er war vertieft in seine Arbeit.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres04_15_00"); //Co wiesz o zwiazku miedzy Endresem a jego zona?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres04_10_01"); //Ha, Juliana byla niezadowolona z jej zwiazku. Ona oddawala mu czesc, a on zostal wchloniety w jego pracy.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Julianas Liebe zu Endres soll nicht voll von ihm erwidert worden sein.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Mówi sie, ze milosc Juliany do Endresa nie zostala przez niego w pelni odwzajemniona.");
 };
 
 INSTANCE Info_Mod_Heiler_Endres05 (C_INFO)
@@ -144,7 +144,7 @@ INSTANCE Info_Mod_Heiler_Endres05 (C_INFO)
 	information	= Info_Mod_Heiler_Endres05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du vom Verhältnis zwischen Endres und Wendel?";
+	description	= "Co wiesz o zwiazku pomiedzy Endres i Wendel?";
 };
 
 FUNC INT Info_Mod_Heiler_Endres05_Condition()
@@ -157,10 +157,10 @@ FUNC INT Info_Mod_Heiler_Endres05_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres05_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres05_15_00"); //Was weißt du vom Verhältnis zwischen Endres und Wendel?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres05_10_01"); //Die beiden hatten ein gutes Verhältnis zueinander, schätz ich. Endres war Wendels Idol.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres05_15_00"); //Co wiesz o zwiazku pomiedzy Endres i Wendel?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres05_10_01"); //Oni mieli dobre relacje, jak sadze. Endres byl bozkiem Wendla.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Den Angaben des Heilers zufolge habe es nie ein Problem zwischen Endres und Wendel gegeben.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Wedlug uzdrowiciela, miedzy Endresem a Wendel nigdy nie bylo problemu.");
 };
 
 INSTANCE Info_Mod_Heiler_Endres06 (C_INFO)
@@ -171,7 +171,7 @@ INSTANCE Info_Mod_Heiler_Endres06 (C_INFO)
 	information	= Info_Mod_Heiler_Endres06_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du stehst unter dringendem Tatverdacht.";
+	description	= "Jest pan powaznie podejrzany.";
 };
 
 FUNC INT Info_Mod_Heiler_Endres06_Condition()
@@ -184,33 +184,33 @@ FUNC INT Info_Mod_Heiler_Endres06_Condition()
 
 FUNC VOID Info_Mod_Heiler_Endres06_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_00"); //Du stehst unter dringendem Tatverdacht.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_01"); //(unbeeindruckt) Interessant.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_02"); //Ich möchte das Haus durchsuchen.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_03"); //Das wird leider nicht möglich sein.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_04"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_05"); //Weil ich es nicht gestatte.
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_06"); //Dann wird der Richter es mir gestatten. Bin gleich zurück.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_07"); //Na schön. Du hast es so gewollt. Ihr alle habt es so gewollt. (laut) Rühr dich nicht vom Fleck!
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_08"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_09"); //Ja, ich habe Endres ermordet. Ich habe Juliana verführt, habe Unzüchtiges mit ihr getrieben.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_10"); //Und ich bereue es nicht. Ich liebe sie.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_00"); //Jest pan powaznie podejrzany.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_01"); //(nieimpregnowane) Interesujace.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_02"); //Chce przeszukac dom.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_03"); //Niestety, nie bedzie to mozliwe.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_04"); //Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_05"); //Poniewaz nie pozwole na to.
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_06"); //Wtedy sedzia mi pozwoli. Bede z powrotem.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_07"); //A zatem wszystko w porzadku. Prosil pan o to. Wszyscy chcieliscie tego w ten sposób. Nie ruszaj sie!
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_08"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_09"); //Tak, zabilem Endresa. Uwodzilem Juliane, robilem z nia obscenicznosci.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_10"); //I nie zaluje. Kocham ja.
 
 	AI_PlayAni  (self, "T_MAGRUN_2_HEASHOOT");
 	AI_PlayAni  (self, "T_HEASHOT_2_STAND");
 
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_11"); //(fassungslos) Nein, NEIN!
-	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_12"); //Es gibt wohl doch eine höhere Gerechtigkeit.
-	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_13"); //Das ist nicht möglich!
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_11"); //Nie!
+	AI_Output(hero, self, "Info_Mod_Heiler_Endres06_15_12"); //Przypuszczam, ze jest wyzsza sprawiedliwosc.
+	AI_Output(self, hero, "Info_Mod_Heiler_Endres06_10_13"); //Nie jest to mozliwe!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Der Heiler hat sich hinter Endres' Rücken an Juliana vergangen. Doch das reichte ihm anscheinend nicht, und so räumte ihren Mann aus dem Weg. Ach, die Liebe ...");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Lecznik udal sie po powrocie Endresa do Julian. Ale najwyrazniej to nie wystarczylo mu, wiec maz wyszedl z drogi. Och, milosc....");
 
 	B_StartOtherRoutine	(self, "TOT");
 
 	Info_ClearChoices	(Info_Mod_Heiler_Endres06);
 
-	Info_AddChoice	(Info_Mod_Heiler_Endres06, "Ich werde Endres eigenhändig rächen!", Info_Mod_Heiler_Endres06_B);
-	Info_AddChoice	(Info_Mod_Heiler_Endres06, "Du wanderst jetzt hinter Gitter.", Info_Mod_Heiler_Endres06_A);
+	Info_AddChoice	(Info_Mod_Heiler_Endres06, "Bede mscic sie konczy!", Info_Mod_Heiler_Endres06_B);
+	Info_AddChoice	(Info_Mod_Heiler_Endres06, "Bedziesz teraz zamkniety.", Info_Mod_Heiler_Endres06_A);
 };
 
 FUNC VOID Info_Mod_Heiler_Endres06_B()
@@ -243,7 +243,7 @@ INSTANCE Info_Mod_Heiler_Heilen (C_INFO)
 	information	= Info_Mod_Heiler_Heilen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Heile mich (75 Gold)";
+	description	= "Uzdrowic mnie (75 zl)";
 };
 
 FUNC INT Info_Mod_Heiler_Heilen_Condition()
@@ -256,7 +256,7 @@ FUNC INT Info_Mod_Heiler_Heilen_Condition()
 
 FUNC VOID Info_Mod_Heiler_Heilen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Heilen_15_00"); //Heile mich.
+	AI_Output(hero, self, "Info_Mod_Heiler_Heilen_15_00"); //Uzdrowic mnie.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 75)
 	{
@@ -266,7 +266,7 @@ FUNC VOID Info_Mod_Heiler_Heilen_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Heiler_Heilen_10_01"); //Kein Gold, keine Heilung.
+		AI_Output(self, hero, "Info_Mod_Heiler_Heilen_10_01"); //Bez zlota, bez leczenia.
 	};
 };
 
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Heiler_WasGeht (C_INFO)
 	information	= Info_Mod_Heiler_WasGeht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft's?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_Heiler_WasGeht_Condition()
@@ -288,8 +288,8 @@ FUNC INT Info_Mod_Heiler_WasGeht_Condition()
 
 FUNC VOID Info_Mod_Heiler_WasGeht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_WasGeht_15_00"); //Wie läuft's?
-	AI_Output(self, hero, "Info_Mod_Heiler_WasGeht_10_01"); //Ohne Unterbrechungen liefe es reibungslos, oh ja.
+	AI_Output(hero, self, "Info_Mod_Heiler_WasGeht_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Heiler_WasGeht_10_01"); //Bez przerw biegalby plynnie, oh tak.
 };
 
 INSTANCE Info_Mod_Heiler_Freudenspender (C_INFO)
@@ -300,7 +300,7 @@ INSTANCE Info_Mod_Heiler_Freudenspender (C_INFO)
 	information	= Info_Mod_Heiler_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Freudenspender für den entspannten Feierabend?";
+	description 	= "Zródlo radosci dla relaksujacego wieczoru?";
 };                       
 
 FUNC INT Info_Mod_Heiler_Freudenspender_Condition()
@@ -315,8 +315,8 @@ FUNC INT Info_Mod_Heiler_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Heiler_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Heiler_Freudenspender_15_00"); //Freudenspender für den entspannten Feierabend?
-	AI_Output(self, hero, "Info_Mod_Heiler_Freudenspender_10_01"); //Keine schlechte Idee.
+	AI_Output(hero, self, "Info_Mod_Heiler_Freudenspender_15_00"); //Zródlo radosci dla relaksujacego wieczoru?
+	AI_Output(self, hero, "Info_Mod_Heiler_Freudenspender_10_01"); //Nie zly pomysl.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

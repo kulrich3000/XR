@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Regina_Hi (C_INFO)
 	information	= Info_Mod_Regina_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Regina_Hi_Condition()
@@ -18,62 +18,62 @@ FUNC VOID Info_Mod_Regina_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_26_00"); //Regina, eine einfache Hausfrau.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_26_01"); //Ich habe dich noch nie gesehen ... reist du viel?
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_26_00"); //Regina, zwykla gospodyni domowa.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_26_01"); //Nigdy wczesniej cie nie widzialem.... duzo podrózujesz?
 
 	Info_ClearChoices	(Info_Mod_Regina_Hi);
 
-	Info_AddChoice	(Info_Mod_Regina_Hi, "Nein, ich bin nur neu zugezogen.", Info_Mod_Regina_Hi_B);
-	Info_AddChoice	(Info_Mod_Regina_Hi, "Kann man wohl sagen.", Info_Mod_Regina_Hi_A);
+	Info_AddChoice	(Info_Mod_Regina_Hi, "Nie, po prostu sie wprowadzilem.", Info_Mod_Regina_Hi_B);
+	Info_AddChoice	(Info_Mod_Regina_Hi, "Na pewno mozna to powiedziec.", Info_Mod_Regina_Hi_A);
 };
 
 FUNC VOID Info_Mod_Regina_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_00"); //Mein Bub wollte auch immer raus in die weite Welt, da kann ich dir was erzählen, ja.
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_01"); //Ein andermal.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_02"); //Er sagte, Mutti, wenn ich groß bin, will ich über die Leute herrschen. Süß, nich?
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_03"); //Vielleicht kennst du ja seinen Namen?
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_04"); //Der da lautet?
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_05"); //Gomez heißt er. Hat sich schon lange nich mehr bei seiner Mutter blicken lassen, der Lümmel.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_06"); //Ich wüsste zu gern, wo er sich rumtreibt.
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_07"); //Gomez?!
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_08"); //Du kennst ihn? Nich dein Ernst!
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_09"); //Sein Traum ist wahr geworden ... wenn auch nur für kurze Zeit.
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_10"); //Dann wurde er von einem Unbekannten gestürzt.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_11"); //Nee, oder? Und ich sag noch, Junge, sag ich, lass das man lieber sein, dieser Beherrschungskrams führt doch zu keinem gute Ende.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_12"); //Ich hab's ihm gesagt! (aufgebracht, schnell) Aber nee, er wollte ja nicht hören, musste immer seinen Dickkopf durchsetzen.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_13"); //Und schreibt mir nich mal Briefe, der Bengel.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_14"); //Nich sein Zimmer hat er aufgeräumt, nichts, stell dir das mal vor!
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_15"); //Wie er noch klein gewesen war, sind wir immer zusammen zum See runter und haben Wäsche gewaschen, da hat er noch geholfen.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_16"); //Aber später nich mehr, nee, da durfte ich immer alles allein machen.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_17"); //Wurde schon fast wie sein Vater, der Bub.
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_18"); //Aha ...
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_19"); //Diese Freudenspender hat er dann auch irgendwann genommen, war dann immer komisch im Kopp.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_20"); //Visionen hatte der, ich sag's dir.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_21"); //Keine Ahnung, woher er all die Ideen hatte, aber glaub ja nicht, dass ich die gut fand!
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_22"); //Sein Frauenbild, das willst du nicht gekannt haben!
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_23"); //Ich muss dann mal ...
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_24"); //... aber die Höhe war ja noch ... Was?
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_25"); //Habe ich schon wieder zu viel geredet?
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_26"); //Das wirst du doch einer alten Mutter nachsehen, oder?
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_27"); //Ich überleg's mir.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_28"); //(ruhig) Dann mach's mal gut. Auf Wiedersehen.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_00"); //Mój chlopiec zawsze chcial wyjsc na swiat, wiec moge ci cos powiedziec, tak.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_01"); //Innym razem.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_02"); //Powiedzial, Mama, kiedy dorastam, chce rzadzic ludzmi. Ladny, czyz nie?
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_03"); //Moze znasz jego nazwisko?
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_04"); //Co tam jest?
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_05"); //Jego imieniem Gomez. Haven przez dlugi czas nie widzial swojej matki, rak.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_06"); //Chcialbym wiedziec, gdzie byl.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_07"); //Zapraszamy!
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_08"); //Znasz go? Nie mozesz byc powazny!
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_09"); //Jego marzenie spelnilo sie.... jesli tylko przez krótki czas.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_10"); //Potem zostal obalony przez nieznajomego.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_11"); //Nie, czyz nie? A ja ciagle jeszcze mówie, chlopak, mówie, niech to bedzie, ta dominacja nie prowadzi do szczesliwego konca.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_12"); //Powiedzialem mu! Ale nie, nie chcial o tym slyszec, zawsze musial byc uparty.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_13"); //I nie pisze nawet listów, chlopiec.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_14"); //Nie sprzatal swojego pokoju, nic, nie wyobraz sobie.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_15"); //Kiedy byl malym chlopcem, razem zjezdzalismy do jeziora i mylismy sie, wiec pomógl.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_16"); //Ale juz nie, nie, zawsze wolno mi bylo robic wszystko w pojedynke.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_17"); //Niemal stal sie jak jego ojciec, chlopiec.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_18"); //Aha....
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_19"); //W pewnym momencie wzial tych radosnych darczynców i zawsze byl zabawny w Kopp.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_20"); //Mial wizje, ja ci opowiem.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_21"); //Nie wiem skad mial wszystkie pomysly, ale nie sadze, ze mi sie podobaly!
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_22"); //Jego wizerunek kobiety, nie wiedziales!
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_23"); //Musze isc....
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_24"); //... ale wysokosc n. p. m. byla wciaz.... Co?
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_25"); //Czy powtarzalem zbyt wiele rozmów?
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_26"); //Zamierzasz sprawdzic na starszej matce, czy nie?
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_C_15_27"); //Zastanowie sie nad tym.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_C_26_28"); //Nalezy wiec uwazac. Pozegnanie pozegnania.
 
 	Info_ClearChoices	(Info_Mod_Regina_Hi);
 };
 
 FUNC VOID Info_Mod_Regina_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_B_15_00"); //Nein, ich bin nur neu zugezogen.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_B_26_01"); //Schade.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_B_15_00"); //Nie, po prostu sie wprowadzilem.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_B_26_01"); //Zbyt zle.
 
 	Info_Mod_Regina_Hi_C();
 };
 
 FUNC VOID Info_Mod_Regina_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Regina_Hi_A_15_00"); //Kann man wohl sagen.
-	AI_Output(self, hero, "Info_Mod_Regina_Hi_A_26_01"); //Ach, wie hübsch.
+	AI_Output(hero, self, "Info_Mod_Regina_Hi_A_15_00"); //Na pewno mozna to powiedziec.
+	AI_Output(self, hero, "Info_Mod_Regina_Hi_A_26_01"); //Ach, jak bardzo ladny.
 
 	Info_Mod_Regina_Hi_C();
 };
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Regina_Freudenspender (C_INFO)
 	information	= Info_Mod_Regina_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Willst du Freudenspender?";
+	description 	= "Chcesz dac przyjemnosc?";
 };                       
 
 FUNC INT Info_Mod_Regina_Freudenspender_Condition()
@@ -101,8 +101,8 @@ FUNC INT Info_Mod_Regina_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Regina_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Regina_Freudenspender_15_00"); //Willst du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Regina_Freudenspender_26_01"); //Ganz bestimmt nicht! Das hat meinem Sohn schon den Geist vernebelt.
+	AI_Output(hero, self, "Info_Mod_Regina_Freudenspender_15_00"); //Chcesz dac przyjemnosc?
+	AI_Output(self, hero, "Info_Mod_Regina_Freudenspender_26_01"); //Oczywiscie nie! To juz zamazalo umysl mojego syna.
 };
 
 INSTANCE Info_Mod_Regina_Pickpocket (C_INFO)

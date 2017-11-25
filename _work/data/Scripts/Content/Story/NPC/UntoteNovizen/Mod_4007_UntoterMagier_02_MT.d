@@ -1,7 +1,7 @@
 instance Mod_4007_UntoterMagier_02_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Magier";
+	name 		=		"Magik nieumarly";
 	Npctype 		=		Npctype_UNTOTERMAGIER;
 	guild 		=		GIL_STRF;
 	level 		=		20;

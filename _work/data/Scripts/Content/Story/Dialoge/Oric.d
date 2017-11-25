@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Oric_Hi_Condition()
 
 FUNC VOID Info_Mod_Oric_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Oric_Hi_11_00"); //Das war der Anfang. Ich werde einige Leute hier lassen. Nun müssen wir noch die Austauschstelle befreien, danach bekommen wir Verstärkung, um uns um die Mine zu kümmern.
-	AI_Output(hero, self, "Info_Mod_Oric_Hi_15_01"); //Verstehe.
+	AI_Output(self, hero, "Info_Mod_Oric_Hi_11_00"); //To byl poczatek. Jestem gonna zostawiam tu kilka osób. Teraz musimy uwolnic punkt wymiany, wtedy dostajemy zbrojenia, by zajac sie kopalnia.
+	AI_Output(hero, self, "Info_Mod_Oric_Hi_15_01"); //Widze.
 
 	AI_StopProcessInfos	(self);
 
@@ -37,7 +37,7 @@ FUNC VOID Info_Mod_Oric_Hi_Info()
 	Mod_7044_RIT_Ritter_MT.aivar[AIV_PARTYMEMBER] = FALSE;
 	Mod_7045_RIT_Ritter_MT.aivar[AIV_PARTYMEMBER] = FALSE;
 
-	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Wir haben den Eingang bei der Verlassenen Mine eingenommen.");
+	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Zabralismy wejscie do opuszczonej kopalni.");
 };
 
 INSTANCE Info_Mod_Oric_AtAustausch (C_INFO)
@@ -48,7 +48,7 @@ INSTANCE Info_Mod_Oric_AtAustausch (C_INFO)
 	information	= Info_Mod_Oric_AtAustausch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht es jetzt weiter?";
+	description	= "Co dzieje sie teraz?";
 };
 
 FUNC INT Info_Mod_Oric_AtAustausch_Condition()
@@ -62,19 +62,19 @@ FUNC INT Info_Mod_Oric_AtAustausch_Condition()
 
 FUNC VOID Info_Mod_Oric_AtAustausch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_00"); //Wie geht es jetzt weiter?
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_01"); //Jetzt ist die Mine dran. Unsere Leute haben sich bereits in ihrer Nähe positioniert. In der nächsten Schlacht spielst du eine besondere Rolle.
-	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_02"); //Ach was?
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_03"); //Ja, ich hoffe du bist dir über die Wichtigkeit deine Einsatzes bewusst. Zweifellos trägt er zum Ausgang der Schlacht bei. Beinahe könnte man sagen, dass von dir das Gelingen der Unternehmung abhängt, daher weißt du hoffentlich ...
-	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_04"); //(genervt) Jetzt spuck endlich aus was du von mir willst.
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_05"); //(mit unterdrückter Wut) Dring in die Mine ein und schick den Anführer zu Beliar.
-	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_06"); //Geht doch. Und wie soll ich in die Mine kommen?
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_07"); //Ich habe hier eine Unsichtbarkeitsspruchrolle. Sie macht dich natürlich nicht wirklich unsichtbar, sondern sorgt nur dafür, dass andere dich nicht sehen können.
+	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_00"); //Co dzieje sie teraz?
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_01"); //Teraz to moja kopalnia. Nasi pracownicy postawili sie juz w poblizu Ciebie. W kolejnej bitwie odgrywasz szczególna role.
+	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_02"); //Oh, co?
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_03"); //Tak, mam nadzieje, ze jestescie swiadomi wagi waszego zaangazowania. Niewatpliwie przyczynia sie do wyniku bitwy. Mozna powiedziec, ze sukces przedsiebiorstwa zalezy od Ciebie, wiec miejmy nadzieje, ze wiesz......
+	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_04"); //Teraz wyplun od mnie to, co chcesz ode mnie.
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_05"); //Wejdz do kopalni i wyslij lidera do Beliara.
+	AI_Output(hero, self, "Info_Mod_Oric_AtAustausch_15_06"); //Jestes. Jak mam dotrzec do kopalni?
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_07"); //Mam tu do odegrania role niewidzialnosci. Oczywiscie nie czyni Cie niewidocznym, ale tylko upewnia sie, ze inni Cie nie widza.
 
 	B_GiveInvItems	(self, hero, ItSc_Unsichtbarkeit, 1);
 
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_08"); //Schleich dich damit in die Mine und töte dort Kurgan, den Anführer. Die Unsichtbarkeit hält zehn Minuten an. Außerdem kann Kurgan dich sehen, nachdem du ihn angegriffen hast. Das heißt, du musst vor allem schnell sein.
-	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_09"); //Lauf dann aus der Mine heraus und rede mit mir, ich werde vor der Mine auf dich warten.
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_08"); //ukrasc sie do kopalni i zabic przywódce Kurgana. Niewidzialnosc trwa dziesiec minut. Poza tym Kurgan moze cie zobaczyc po zaatakowaniu go. Oznacza to, ze musisz byc szybki.
+	AI_Output(self, hero, "Info_Mod_Oric_AtAustausch_11_09"); //Potem skonczy sie mina i porozmawiam ze mna, czekam na Ciebie przed kopalnia.
 
 	Mod_AL_Oric = 2;
 
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Oric_AtAustausch_Info()
 		Wld_SendTrigger	("EVT_AM_LOB_GATE_BIG");
 	};
 
-	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Der Austauschplatz ist unser. Nun soll ich mich unsichtbar in die Alte Mine schleichen und dort Kurgan, den Anführer, töten.");
+	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Miejsce wymiany to nasze. Teraz mam sie przedostac niewidocznie do starej kopalni i zabic przywódce Kurgana.");
 };
 
 INSTANCE Info_Mod_Oric_KurganTot (C_INFO)
@@ -106,7 +106,7 @@ INSTANCE Info_Mod_Oric_KurganTot (C_INFO)
 	information	= Info_Mod_Oric_KurganTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kurgan ist tot.";
+	description	= "Kurgan zmarl.";
 };
 
 FUNC INT Info_Mod_Oric_KurganTot_Condition()
@@ -120,14 +120,14 @@ FUNC INT Info_Mod_Oric_KurganTot_Condition()
 
 FUNC VOID Info_Mod_Oric_KurganTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oric_KurganTot_15_00"); //Kurgan ist tot.
-	AI_Output(self, hero, "Info_Mod_Oric_KurganTot_11_01"); //Perfekt. Nun werden wir die Mine angreifen. Geh vor, meine Truppe wird dir folgen.
+	AI_Output(hero, self, "Info_Mod_Oric_KurganTot_15_00"); //Kurgan zmarl.
+	AI_Output(self, hero, "Info_Mod_Oric_KurganTot_11_01"); //Doskonaly. Teraz zaatakujemy kopalnie. Idz dalej, moje wojska pójda za Toba.
 
 	Mod_AL_Oric = 4;
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Nun können wir die Mine angreifen.");
+	B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Teraz mozemy atakowac kopalnie.");
 };
 
 INSTANCE Info_Mod_Oric_MineUns (C_INFO)
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Oric_MineUns (C_INFO)
 	information	= Info_Mod_Oric_MineUns_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Mine gehört uns.";
+	description	= "Kopalnia jest nasza.";
 };
 
 FUNC INT Info_Mod_Oric_MineUns_Condition()
@@ -152,8 +152,8 @@ FUNC INT Info_Mod_Oric_MineUns_Condition()
 
 FUNC VOID Info_Mod_Oric_MineUns_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oric_MineUns_15_00"); //Die Mine gehört uns.
-	AI_Output(self, hero, "Info_Mod_Oric_MineUns_11_01"); //Sehr gut. Nun haben wir nur noch einen Schritt vor uns. Alissandro wird ihn dir bei der Hütte erklären.
+	AI_Output(hero, self, "Info_Mod_Oric_MineUns_15_00"); //Kopalnia jest nasza.
+	AI_Output(self, hero, "Info_Mod_Oric_MineUns_11_01"); //Bardzo dobry. Teraz mamy przed soba tylko jeden krok. Alissandro wyjasni to Panstwu w kabinie pasazerskiej.
 
 	Mod_AL_Oric = 7;
 
@@ -187,7 +187,7 @@ FUNC VOID Info_Mod_Oric_Gomez_Info()
 {
 	AI_TurnToNpc	(self, Mod_520_DMR_Raven_MT);
 
-	AI_Output(self, hero, "Info_Mod_Oric_Gomez_11_00"); //Schweigt, Abschaum Beliars. Wir haben euren Mann bezwungen, und so steht uns auch das Recht zu, ihn zu töten.
+	AI_Output(self, hero, "Info_Mod_Oric_Gomez_11_00"); //Zamknij sie, beliary. Pokonalismy twojego meza, wiec mamy prawo go zabic.
 
 	AI_StopProcessInfos	(self);
 };

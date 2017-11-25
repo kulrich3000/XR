@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBauer_03_Hi (C_INFO)
 	information	= Info_Mod_HSBauer_03_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wie geht's voran?";
+	description	= "Jak to sie dzieje?";
 };
 
 FUNC INT Info_Mod_HSBauer_03_Hi_Condition()
@@ -16,29 +16,29 @@ FUNC INT Info_Mod_HSBauer_03_Hi_Condition()
 
 FUNC VOID Info_Mod_HSBauer_03_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_15_00"); //Wie geht's voran?
-	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_05_01"); //ICH BIN NICHT VERRÜCKT!
-	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_15_02"); //Das habe ich auch nie behauptet ...
-	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_05_03"); //Dann ... bist du mein Freund?
+	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_15_00"); //Jak to sie dzieje?
+	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_05_01"); //NIE ZWARIOWALEM!
+	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_15_02"); //Nigdy o tym nie mówilem....
+	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_05_03"); //Wtedy..... Czy jestes moim przyjacielem?
 
 	Info_ClearChoices	(Info_Mod_HSBauer_03_Hi);
 
-	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "ICH BIN NICHT VERRÜCKT!", Info_Mod_HSBauer_03_Hi_C);
-	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Nein.", Info_Mod_HSBauer_03_Hi_B);
-	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Ja.", Info_Mod_HSBauer_03_Hi_A);
+	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "NIE ZWARIOWALEM!", Info_Mod_HSBauer_03_Hi_C);
+	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Nie.", Info_Mod_HSBauer_03_Hi_B);
+	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Tak.", Info_Mod_HSBauer_03_Hi_A);
 };
 
 FUNC VOID Info_Mod_HSBauer_03_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_C_15_00"); //ICH BIN NICHT VERRÜCKT!
-	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_C_05_01"); //Das versteh' ich jetzt nicht ...
+	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_C_15_00"); //NIE ZWARIOWALEM!
+	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_C_05_01"); //Nie rozumiem tego teraz....
 
 	Info_ClearChoices	(Info_Mod_HSBauer_03_Hi);
 };
 
 FUNC VOID Info_Mod_HSBauer_03_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_B_15_00"); //Nein.
+	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_B_15_00"); //Nie.
 	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_B_05_01"); //EISBEIN!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_03_Hi);
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_HSBauer_03_Hi_B()
 
 FUNC VOID Info_Mod_HSBauer_03_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_A_15_00"); //Ja.
+	AI_Output(hero, self, "Info_Mod_HSBauer_03_Hi_A_15_00"); //Tak.
 	AI_Output(self, hero, "Info_Mod_HSBauer_03_Hi_A_05_01"); //SAUERKRAUT!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_03_Hi);

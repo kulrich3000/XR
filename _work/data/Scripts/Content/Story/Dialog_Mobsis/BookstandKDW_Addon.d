@@ -22,27 +22,27 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Die Kreise des Wassers"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des Wassers und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Odplywy wodne i skladniki potrzebne do ich przygotowania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Wirbelwind");
-					Doc_PrintLine	( nDocID,  0, "Flügel einer Blutfliege");
+					Doc_PrintLine	( nDocID,  0, "skrecarka");
+					Doc_PrintLine	( nDocID,  0, "Skrzydla muchy krwi");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Eislanze");
-					Doc_PrintLine	( nDocID,  0, "Gletscherquartz");
+					Doc_PrintLine	( nDocID,  0, "lód");
+					Doc_PrintLine	( nDocID,  0, "kwarc");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Geysir");
+					Doc_PrintLine	( nDocID,  0, "gejzer");
 					Doc_PrintLine	( nDocID,  0, "Aquamarin");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Unwetter");
-					Doc_PrintLine	( nDocID,  0, "Gletscherquartz");
-					Doc_PrintLine	( nDocID,  0, "Flügel einer Blufliege");
+					Doc_PrintLine	( nDocID,  0, "surowy");
+					Doc_PrintLine	( nDocID,  0, "kwarc");
+					Doc_PrintLine	( nDocID,  0, "Bluflat");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Wasserfaust");
+					Doc_PrintLine	( nDocID,  0, "piesc");
 					Doc_PrintLine	( nDocID,  0, "Aquamarin");
 					Doc_PrintLine	( nDocID,  0, "Bergkristall");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -51,11 +51,11 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 	};
 };

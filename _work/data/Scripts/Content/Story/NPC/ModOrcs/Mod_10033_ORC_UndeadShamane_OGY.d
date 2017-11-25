@@ -1,7 +1,7 @@
 INSTANCE Mod_10033_ORC_UndeadShamane_OGY (Mst_Default_UndeadOrcWarrior)			
 {
 	//----- Monster -----
-	name							=	"Untoter Orkshamane";
+	name							=	"Nieumarly Orcshamane";
 	guild							=	GIL_ORC;
 	id			= 	10033;
 	voice							=	18;

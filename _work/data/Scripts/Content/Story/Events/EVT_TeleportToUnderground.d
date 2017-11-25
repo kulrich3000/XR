@@ -6,7 +6,7 @@ FUNC VOID TELEPORTTOUNDERGROUND ()
 
 	if (Npc_HasItems(hero, ItMi_TeleportStein) == 0)
 	{
-		AI_PrintScreen	("Teleportstein erhalten!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
+		AI_PrintScreen	("Otrzymany kamien Teleportowy!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
 
 		CreateInvItems	(hero, ItMi_TeleportStein, 1);
 	};

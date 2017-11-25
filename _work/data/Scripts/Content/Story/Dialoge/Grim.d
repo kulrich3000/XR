@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Grim_Hi (C_INFO)
 	information	= Info_Mod_Grim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst ja ganz müde aus.";
+	description	= "Wygladasz bardzo zmeczony.";
 };
 
 FUNC INT Info_Mod_Grim_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Grim_Hi_Condition()
 
 FUNC VOID Info_Mod_Grim_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Hi_15_00"); //Du siehst ja ganz müde aus.
-	AI_Output(self, hero, "Info_Mod_Grim_Hi_06_01"); //Ach ja, da sind diese Alpträume... Irgendwann machen sie mich noch irre!
+	AI_Output(hero, self, "Info_Mod_Grim_Hi_15_00"); //Wygladasz bardzo zmeczony.
+	AI_Output(self, hero, "Info_Mod_Grim_Hi_06_01"); //Tak, sa takie koszmary.... Któregos razu popedza mnie szalenczo!
 };
 
 INSTANCE Info_Mod_Grim_WieGehts (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Grim_WieGehts (C_INFO)
 	information	= Info_Mod_Grim_WieGehts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ist es dir seit dem Fall der Barriere ergangen?";
+	description	= "Jak wygladales/as od upadku bariery?";
 };
 
 FUNC INT Info_Mod_Grim_WieGehts_Condition()
@@ -44,10 +44,10 @@ FUNC INT Info_Mod_Grim_WieGehts_Condition()
 
 FUNC VOID Info_Mod_Grim_WieGehts_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_WieGehts_15_00"); //Wie ist es dir seit dem Fall der Barriere ergangen?
-	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_01"); //Ist einiges passiert seitdem. Anfangs war es noch ganz lustig, ohne Anführer und so.
-	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_02"); //Aber seitdem Thorus Gomez' Position eingenommen hat, kann man sich einfach nichts mehr leisten. Wurde ziemlich langweilig hier.
-	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_03"); //Und dann haben diese Alpträume angefangen ...
+	AI_Output(hero, self, "Info_Mod_Grim_WieGehts_15_00"); //Jak wygladales/as od upadku bariery?
+	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_01"); //Od tego czasu wydarzylo sie wiele rzeczy. Na poczatku bylo to zabawne, bez lidera i wszystkiego.
+	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_02"); //Ale po zajeciu stanowiska przez Thorusa Gomeza nie mozna sobie pozwolic na nic. Zrobilo sie tu cos w rodzaju nudnego.
+	AI_Output(self, hero, "Info_Mod_Grim_WieGehts_06_03"); //A potem te koszmary zaczely sie.....
 };
 
 INSTANCE Info_Mod_Grim_Alptraeume (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Grim_Alptraeume (C_INFO)
 	information	= Info_Mod_Grim_Alptraeume_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für Alpträume?";
+	description	= "Jakie koszmary?";
 };
 
 FUNC INT Info_Mod_Grim_Alptraeume_Condition()
@@ -72,10 +72,10 @@ FUNC INT Info_Mod_Grim_Alptraeume_Condition()
 
 FUNC VOID Info_Mod_Grim_Alptraeume_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Alptraeume_15_00"); //Was für Alpträume?
-	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_01"); //Sie sind wie diese Dinger, die die Gurus im Sumpf hatten, wie Visionen.
-	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_02"); //Nach dem Aufwachen kann ich mich nur noch ganz verschwommen erinnern.
-	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_03"); //Es hat etwas mit Orks zu tun. Sie werden mich sicher töten!
+	AI_Output(hero, self, "Info_Mod_Grim_Alptraeume_15_00"); //Jakie koszmary?
+	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_01"); //Sa jak te rzeczy, które guru mial w bagnie, jak wizje.
+	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_02"); //Po przebudzeniu pamietam tylko rozmyte.
+	AI_Output(self, hero, "Info_Mod_Grim_Alptraeume_06_03"); //Ma to cos wspólnego z orkami. Jestem pewien, ze mnie zabija!
 };
 
 INSTANCE Info_Mod_Grim_Nacht (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Grim_Nacht (C_INFO)
 	information	= Info_Mod_Grim_Nacht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Grim_Nacht_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Grim_Nacht_Condition()
 
 FUNC VOID Info_Mod_Grim_Nacht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Nacht_15_00"); //Was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Grim_Nacht_06_01"); //Ach, ich ... ich vertrete mir ein wenig die Beine. Sonst kriege ich immer diese Alpträume. Ja, genau.
+	AI_Output(hero, self, "Info_Mod_Grim_Nacht_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Grim_Nacht_06_01"); //Och, l--- Troche rozciagam nogi. Zawsze mam te koszmary. Tak, to prawda.
 };
 
 INSTANCE Info_Mod_Grim_Lagermusik (C_INFO)
@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Grim_Lagermusik (C_INFO)
 	information	= Info_Mod_Grim_Lagermusik_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gravo will eine Musikgruppe gründen. Interesse?";
+	description	= "Gravo chce zalozyc zespól muzyczny. Interesuje?";
 };
 
 FUNC INT Info_Mod_Grim_Lagermusik_Condition()
@@ -124,27 +124,27 @@ FUNC INT Info_Mod_Grim_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Grim_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_15_00"); //Gravo will eine Musikgruppe gründen. Interesse?
-	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_06_01"); //(nervös) Wieso fragst du das?
+	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_15_00"); //Gravo chce zalozyc zespól muzyczny. Interesuje?
+	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_06_01"); //Dlaczego o to pan pyta?
 
 	Info_ClearChoices	(Info_Mod_Grim_Lagermusik);
 
-	Info_AddChoice	(Info_Mod_Grim_Lagermusik, "Vielleicht kannst du ihn ja unterstützen.", Info_Mod_Grim_Lagermusik_B);
-	Info_AddChoice	(Info_Mod_Grim_Lagermusik, "Ich will dir Angst einjagen.", Info_Mod_Grim_Lagermusik_A);
+	Info_AddChoice	(Info_Mod_Grim_Lagermusik, "Moze mozesz go poprzec.", Info_Mod_Grim_Lagermusik_B);
+	Info_AddChoice	(Info_Mod_Grim_Lagermusik, "Staram sie cie straszyc.", Info_Mod_Grim_Lagermusik_A);
 };
 
 FUNC VOID Info_Mod_Grim_Lagermusik_B()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_B_15_00"); //Vielleicht kannst du ihn ja unterstützen.
-	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_B_06_01"); //(abweisend) Nein, das glaube ich nicht. Muss eh nachdenken.
+	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_B_15_00"); //Moze mozesz go poprzec.
+	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_B_06_01"); //Odrzucam) Nie, nie sadze. I tak i tak trzeba sie nad tym zastanowic.
 
 	Info_ClearChoices	(Info_Mod_Grim_Lagermusik);
 };
 
 FUNC VOID Info_Mod_Grim_Lagermusik_A()
 {
-	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_A_15_00"); //Ich will dir Angst einjagen.
-	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_A_06_01"); //D-das ist dir aber nicht g-g-gelungen!
+	AI_Output(hero, self, "Info_Mod_Grim_Lagermusik_A_15_00"); //Staram sie cie straszyc.
+	AI_Output(self, hero, "Info_Mod_Grim_Lagermusik_A_06_01"); //Th-That nie sprawdza sie dla Ciebie!
 
 	Info_ClearChoices	(Info_Mod_Grim_Lagermusik);
 };

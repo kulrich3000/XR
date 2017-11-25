@@ -6,7 +6,7 @@ FUNC VOID GruenErzbrocken2_S1 ()
 	{	
 		if (Npc_HasItems(hero, ItMw_2H_Axe_L_01) == 0)
 		{
-			Print	("Ohne Spitzhacke geht das nicht!");
+			Print	("Nie mozna tego zrobic bez pickaxe!");
 
 			AI_UseMob (hero, "ORE", -1);
 			return;
@@ -25,7 +25,7 @@ INSTANCE PC_GruenErzbrocken2_Addon_Hour (C_Info)
 	condition		= PC_GruenErzbrocken2_Addon_Hour_Condition;
 	information		= PC_GruenErzbrocken2_Addon_Hour_Info;
 	permanent		= 0;
-	description		= "Einfach mal hacken. "; 
+	description		= "Wystarczy je pokroic. "; 
 };
 
 FUNC INT PC_GruenErzbrocken2_Addon_Hour_Condition ()
@@ -40,7 +40,7 @@ FUNC VOID PC_GruenErzbrocken2_Addon_Hour_Info()
 {
 	CreateInvItems (hero, ItMi_GreenNugget, 2);	
 
-	PrintScreen ("2 grüne Erzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+	PrintScreen ("2 zielone kawalki rudy, siekane!", -1, -1, FONT_ScreenSmall, 2);
 };
 
 INSTANCE PC_GruenErzbrocken2_End (C_Info)

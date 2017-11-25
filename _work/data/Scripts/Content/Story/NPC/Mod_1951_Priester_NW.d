@@ -1,7 +1,7 @@
 instance Mod_1951_Priester_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Priester";
+	name 		=		"ksiadz";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_DMT;
 	level 		=		30;

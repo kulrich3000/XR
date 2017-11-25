@@ -1,7 +1,7 @@
 instance Mod_2011_TPL_GorNaDrak_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Gor Na Drak";
+	name =							"Gorgo Na Drak";
 	npctype =						npctype_Main;
 	guild =							GIL_OUT;
 	level =							21;

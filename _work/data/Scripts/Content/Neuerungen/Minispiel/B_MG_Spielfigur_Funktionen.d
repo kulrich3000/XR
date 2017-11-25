@@ -5,17 +5,17 @@ FUNC VOID Button_Spielfigur_Enter(var int hndl) {
 	tex = View_GetTexture(Button_GetViewHandle(hndl));
 
 	if (Hlp_StrCmp(tex, "MG_FIGUR_TROLL.TGA")) {
-		Button_CreateMouseover("Gewinnt jeden Kampf, kann nicht übersprungen werden", Font_ScreenSmall);
+		Button_CreateMouseover("Zwycieza kazda walke, nie mozna jej pominac.", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_MINECRAWLERQUEEN.TGA")) {
-		Button_CreateMouseover("Friert die Reihe vor sich für eine Runde ein", Font_ScreenSmall);
+		Button_CreateMouseover("Zamrozic linke przed Toba na okrazenie.", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_HASE.TGA")) {
-		Button_CreateMouseover("Kann Gegner (außer Troll) überspringen", Font_ScreenSmall);
+		Button_CreateMouseover("Moze pominac przeciwników (z wyjatkiem trollów)", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_MEATBUG.TGA")) {
-		Button_CreateMouseover("Verliert jeden Kampf", Font_ScreenSmall);
+		Button_CreateMouseover("Utrata kazdej walki", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_BALROG.TGA")) {
-		Button_CreateMouseover("Verbrennt Gegner auf den Feldern direkt rechts und links von sich", Font_ScreenSmall);
+		Button_CreateMouseover("Rzuc przeciwników na pola po prawej i lewej stronie.", Font_ScreenSmall);
 	} else if (Hlp_StrCmp(tex, "MG_FIGUR_GOBLIN.TGA")) {
-		Button_CreateMouseover("Hinterlässt auf seinem ehemaligen Feld für eine Runde eine Mine", Font_ScreenSmall);
+		Button_CreateMouseover("Pozostawia kopalnie na swoim dawnym polu na okrazenie.", Font_ScreenSmall);
 	};
 };
 

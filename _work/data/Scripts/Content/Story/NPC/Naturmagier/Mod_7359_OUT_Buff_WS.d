@@ -1,7 +1,7 @@
 instance Mod_7359_OUT_Buff_WS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Buff"; 
+	name 		= "zderzak"; 
 	guild 		= GIL_DMT;
 	id 			= 7359;
 	voice 		= 6;

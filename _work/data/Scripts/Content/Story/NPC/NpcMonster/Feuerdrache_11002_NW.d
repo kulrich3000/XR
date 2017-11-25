@@ -1,6 +1,6 @@
 INSTANCE Feuerdrache_11002_NW	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Feuerdrache";
+	name	=	"smok ognia";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_FIRE;

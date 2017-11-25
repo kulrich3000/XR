@@ -1,7 +1,7 @@
 instance Mod_1530_WKR_Everaldo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Everaldo"; 
+	name 		= "bilans wieczny"; 
 	guild 		= GIL_NOV;
 	id 			= 1530;
 	voice 		= 4;

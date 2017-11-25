@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Spider(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Spinne";
+	name							=	"pajak";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SPIDER;
 	level							=	10;
@@ -57,7 +57,7 @@ PROTOTYPE Mst_Default_Spider(C_Npc)
 PROTOTYPE Mst_Default_Spider_Mini(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Spinne";
+	name							=	"pajak";
 	guild							=	GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SPIDER;
 	level							=	1;
@@ -204,7 +204,7 @@ INSTANCE Spinne_Griselda_02	(Mst_Default_Spider)
 
 INSTANCE Spider_Big	(Mst_Default_Spider)
 {
-	name		= "Riesenspinne";
+	name		= "kolosalny pajak";
 
 	level							=	50;
 
@@ -230,7 +230,7 @@ INSTANCE Spider_Big	(Mst_Default_Spider)
 
 INSTANCE Riesenspinne_XW_01	(Mst_Default_Spider)
 {
-	name		= "Riesenspinne";
+	name		= "kolosalny pajak";
 
 	level							=	50;
 
@@ -258,7 +258,7 @@ INSTANCE Riesenspinne_XW_01	(Mst_Default_Spider)
 
 INSTANCE Riesenspinne_XW_02	(Mst_Default_Spider)
 {
-	name		= "Riesenspinne";
+	name		= "kolosalny pajak";
 
 	level							=	50;
 
@@ -286,7 +286,7 @@ INSTANCE Riesenspinne_XW_02	(Mst_Default_Spider)
 
 INSTANCE Riesenspinne_XW_03	(Mst_Default_Spider)
 {
-	name		= "Riesenspinne";
+	name		= "kolosalny pajak";
 
 	level							=	50;
 
@@ -314,7 +314,7 @@ INSTANCE Riesenspinne_XW_03	(Mst_Default_Spider)
 
 INSTANCE Riesenspinne_XW_04	(Mst_Default_Spider)
 {
-	name		= "Riesenspinne";
+	name		= "kolosalny pajak";
 
 	level							=	50;
 
@@ -342,7 +342,7 @@ INSTANCE Riesenspinne_XW_04	(Mst_Default_Spider)
 
 INSTANCE Spider_Queen	(Mst_Default_Spider)
 {
-	name		=	"Spinnenkönigin";
+	name		=	"królowa pajaków";
 
 	level							=	50;
 
@@ -370,7 +370,7 @@ INSTANCE Spider_Queen	(Mst_Default_Spider)
 
 INSTANCE Dalma	(Mst_Default_Spider)
 {
-	name		= "Dalma";
+	name		= "dalma";
 
 	level							=	50;
 

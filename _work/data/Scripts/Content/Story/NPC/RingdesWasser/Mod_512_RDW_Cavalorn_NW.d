@@ -1,7 +1,7 @@
 instance Mod_512_RDW_Cavalorn_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cavalorn";
+	name 		= "swobodny";
 	guild 		= GIL_NOV;
 	id 			= 512;
 	voice 		= 36;

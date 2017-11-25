@@ -1,7 +1,7 @@
 instance Mod_1000_DMR_Kurgan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kurgan";
+	name 		= "kurgan";
 	guild 		= GIL_KDF;
 	id 			= 1000;
 	voice 		= 1;

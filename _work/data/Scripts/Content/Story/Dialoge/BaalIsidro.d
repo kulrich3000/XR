@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Isidro_Hi (C_INFO)
 	information	= Info_Mod_Isidro_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es wird langsam Zeit zu gehen.";
+	description	= "Nadszedl czas, aby isc powoli.";
 };
 
 FUNC INT Info_Mod_Isidro_Hi_Condition()
@@ -19,21 +19,21 @@ FUNC INT Info_Mod_Isidro_Hi_Condition()
 
 FUNC VOID Info_Mod_Isidro_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_15_00"); //Es wird langsam Zeit zu gehen.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_03_01"); //(betrunken) Was? Wieso?
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_15_00"); //Nadszedl czas, aby isc powoli.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_03_01"); //(pijany) Co? Dlaczego?
 
 	B_StartOtherRoutine	(Mod_1117_PSINOV_BaalKagan_MT, "ISIDRO");
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 
-	Info_AddChoice	(Info_Mod_Isidro_Hi, "Weil ich dir sonst die Fresse poliere.", Info_Mod_Isidro_Hi_B);
-	Info_AddChoice	(Info_Mod_Isidro_Hi, "Weil ich es sage.", Info_Mod_Isidro_Hi_A);
+	Info_AddChoice	(Info_Mod_Isidro_Hi, "Bo jesli tego nie zrobisz, to odrobine twarzy.", Info_Mod_Isidro_Hi_B);
+	Info_AddChoice	(Info_Mod_Isidro_Hi, "Poniewaz tak wlasnie mówie.", Info_Mod_Isidro_Hi_A);
 };
 
 FUNC VOID Info_Mod_Isidro_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_B_15_00"); //Weil ich dir sonst die Fresse poliere.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_B_03_01"); //Was? Ich habe aber keine Lust auf Stress. Ist gut. Ich komme mit.
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_B_15_00"); //Bo jesli tego nie zrobisz, to odrobine twarzy.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_B_03_01"); //Co? Nie czuje sie jak stres. Wszystkie sluszne, wszystkie sluszne. Pójde z Toba.
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 
@@ -44,8 +44,8 @@ FUNC VOID Info_Mod_Isidro_Hi_B()
 
 FUNC VOID Info_Mod_Isidro_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Isidro_Hi_A_15_00"); //Weil ich es sage.
-	AI_Output(self, hero, "Info_Mod_Isidro_Hi_A_03_01"); //Ähhh, klar, machen wir einen Spaziergang.
+	AI_Output(hero, self, "Info_Mod_Isidro_Hi_A_15_00"); //Poniewaz tak wlasnie mówie.
+	AI_Output(self, hero, "Info_Mod_Isidro_Hi_A_03_01"); //Uh, na pewno, przejdzmy na spacer.
 
 	Info_ClearChoices	(Info_Mod_Isidro_Hi);
 

@@ -1,7 +1,7 @@
 instance Mod_910_BAU_Lobart_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lobart";
+	name 		= "rodzaj pochwaly";
 	guild 		= GIL_OUT;
 	id 			= 910;
 	voice 		= 26;

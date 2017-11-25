@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jack_Irdorath (C_INFO)
 	information	= Info_Mod_Jack_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hörte, du seiest einst Seemann gewesen, ein stolzer Kapitän ...";
+	description	= "Slysze, ze kiedys byles marynarzem, dumnym kapitanem.....";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath_Condition()
@@ -20,16 +20,16 @@ FUNC INT Info_Mod_Jack_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Jack_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_00"); //Ich hörte, du seiest einst Seemann gewesen, ein stolzer Kapitän ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_01"); //Tatsächlich? Wie du bloß davon erfahren hast ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_02"); //Ja, es stimmt, auch, wenn es schon viele Jahre her ist. Damals war ich Kapitän der Colossus.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_03"); //Ja, so manches Abenteuer habe ich mit meiner Mannschaft überstanden.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_04"); //Ob Piraten oder Stürme, ob Skorbut oder Seeungeheuer, allem haben wir getrotzt ...
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_05"); //Ok, das können wir ein andermal näher ausführen.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_06"); //Mir scheint, auf jeden Fall, dass du gerne an die Zeiten zurückdenkst.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_07"); //Was würdest du sagen, wenn dir jetzt noch einmal die Möglichkeit geschenkt würde, ein großes Schiff zu befehligen?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_08"); //Ich würde es für einen schönen Traum halten.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_09"); //Denn wer sollte eine altem Seebären wie mir noch einmal ein Schiff anvertrauen wollen ...
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_00"); //Slysze, ze kiedys byles marynarzem, dumnym kapitanem.....
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_01"); //Czy tak jest? Jak dowiedziales sie o tym?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_02"); //Tak, to prawda, choc trwalo wiele lat. Bylem wówczas kapitanem Kolosów.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_03"); //Tak, przezylem wiele przygód z moja zaloga.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_04"); //Czy to piraci, burze, szkorbut czy potwory morskie, to czy my wszystko przeciwstawilismy?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_05"); //Dobrze, mozemy sie tym bardziej szczególowo zajac w innym czasie.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_06"); //W kazdym razie wydaje mi sie, ze lubi pan myslec wstecz w czasie.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath_15_07"); //Co powiedzialbys, gdybys mial ponownie mozliwosc dowodzenia duzym statkiem?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_08"); //Uwazam to za piekny sen.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath_14_09"); //Kto bowiem chcialby zawierzyc statkowi stary niedzwiedz morski, taki jak ja raz jeszcze?
 };
 
 INSTANCE Info_Mod_Jack_Irdorath2 (C_INFO)
@@ -40,7 +40,7 @@ INSTANCE Info_Mod_Jack_Irdorath2 (C_INFO)
 	information	= Info_Mod_Jack_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich könnte dir einen Posten als Kapitän auf dem Schiff der Paladine anbieten.";
+	description	= "Moglem zaoferowac panu stanowisko kapitana na statku Paladina.";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath2_Condition()
@@ -54,28 +54,28 @@ FUNC INT Info_Mod_Jack_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Jack_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_00"); //Ich könnte dir einen Posten als Kapitän auf dem Schiff der Paladine anbieten.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_01"); //Ach, was soll dieser Unfug. Warum versuchst du einen alten Seemann zum Narren zu halten ...?
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_02"); //Nein, das ist mein voller Ernst.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_03"); //Vielleicht hörtest du von den beunruhigenden Vorgängen in der Stadt und sonst auf Khorinis?
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_04"); //Ich bin im Auftrag der Magier unterwegs um den Urheber zu bannen.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_05"); //Zu diesem Zweck muss ich mit Schiff, Mannschaft und natürlich Kapitän zu einer Insel übersetzen.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_06"); //(etwas hellhöriger) Was sagst du, ist das wirklich dein ernst ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_07"); //(nachdenklicher) Hmm, ja, stimmt, ich hörte Gerüchte über einen Mann und das Geschehene ... du bist das also?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_08"); //Und ich sah dich auch mit dem Boten der Wassermagier sprechen, Diego ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_09"); //(unterbricht und wieder zum Helden) Ähh, ja, du sprachst also von einer Insel ...?
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_10"); //Ja, einige Tage Seereise entfernt. Wir müssen dort ein Geschöpf stellen, was in die Machenschaften verwickelt war.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_11"); //Also wird es nicht ganz ungefährlich ...
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_12"); //Aber es ist wichtig. Wirst du also mein Kapitän sein?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_13"); //Ja, natürlich, selbstverständlich ... Hmm, aber bestimmte Voraussetzungen müssen doch erfüllt sein.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_14"); //Ja, was meinst du?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_15"); //Falls sich die Reise verzögert, es Probleme geben sollte, so wäre es nicht schlecht, wenn jemanden an Bord haben, der sich auf ein Handwerk versteht.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_16"); //Ein Bootsbauer wäre natürlich das beste ... oder was du eben sonst findest an Leuten die sich auf Holz und Eisen verstehen.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_17"); //Und dann, wenn ich an eine meiner letzten Reisen zurückdenke, würde ich meiner einen Alchemisten mit Wissen über Pflanzen und Tränke wünschen.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_18"); //Wenn die Skorbut losbricht, ist so einer Goldwert ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_19"); //Ja, das ist im Moment alles, was mir in den Sinn kommt.
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_20"); //Na, dann mach ich mich mal auf die Suche ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_21"); //Und ich werde mir dann schon mal das stolze Schiff anschauen.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_00"); //Moglem zaoferowac panu stanowisko kapitana na statku Paladina.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_01"); //Ach, co ty robisz? Dlaczego próbujesz oszukac starego zeglarza....?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_02"); //Nie, jestem zupelnie powazny.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_03"); //Byc moze slyszales o niepokojacych wydarzeniach w miescie i innych miejscach na Khorinis?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_04"); //Jestem na misji magów, aby wygnac autora.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_05"); //W tym celu musze przeniesc sie wraz ze statkiem, zaloga i oczywiscie kapitanem na wyspe.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_06"); //Co mówisz, ze jestes naprawde powazny....
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_07"); //(bardziej kontemplacyjne) Hmm, tak, prawda, slyszalem plotki o czlowieku i o tym, co sie stalo.... Czy to jest to kim jestes?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_08"); //I widzialem takze widzialem, jak rozmawiales z poslannikiem magika wody, Diego.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_09"); //(przerwanie i powrót do bohatera) Uh, tak, wiec mówiles o wyspie....?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_10"); //Tak, kilka dni podrózy droga morska. Musimy umiescic tam istote, która byla zaangazowana w machinacje.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_11"); //Nie jest to wiec niegrozne.....
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_12"); //Ale to wazne. Czy bedzie pan moim kapitanem?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_13"); //Oczywiscie oczywiscie tak..... Hmm, ale musza byc spelnione pewne warunki.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_14"); //Tak, co myslisz?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_15"); //Jesli podróz jest opózniona, nie powinno byc problemów, nie byloby zle, gdyby ktos, kto wie, ze statek jest na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_16"); //Oczywiscie, najlepszy bylby konstruktor lodzi.... lub cokolwiek innego mozna znalezc u ludzi, którzy rozumieja drewno i zelazo.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_17"); //A potem, kiedy mysle o jednej z moich ostatnich podrózy, zyczylbym sobie alchemika znajacego rosliny i eliksiry.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_18"); //Kiedy szkorbut zepsuje sie, taka wartosc zlota.....
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_19"); //Tak, to wszystko, co moge sobie wyobrazic wlasnie teraz.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath2_15_20"); //No cóz, pójde i spojrze....
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath2_14_21"); //Zobacze dumny statek.
 
 	Mod_Kapitan = 1;
 	Mod_JackDabei = 1;
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Jack_Irdorath2_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_HQ_JACK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HQ_JACK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Jack wäre Feuer und Flamme dafür, mein Kapitän zu werden. Zwei Bedingungen hat er aber noch, bevor es losgehen kann. Ich soll jemanden finden, der handwerklich erfahren ist – ein Bootsbauer wäre das Beste, aber was anderes tut’s auch. Und dann wünscht er sich noch einen Alchemisten an Bord, der sich auch auf Pflanzenkunde gut versteht.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Jack podpalil sie, by zostac moim kapitanem. Zanim jednak zacznie, ma jeszcze dwa warunki. Znalazlem kogos, kto jest doswiadczony technicznie - budowniczy lodzi bylby najlepszy, ale co jeszcze robi. I wtedy chce na pokladzie alchemika, który dobrze rozumie botanike.");
 
 	AI_StopProcessInfos	(self);
 
@@ -99,7 +99,7 @@ INSTANCE Info_Mod_Jack_Irdorath3 (C_INFO)
 	information	= Info_Mod_Jack_Irdorath3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen Handwerker gefunden.";
+	description	= "Znalazlem rzemieslnika.";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath3_Condition()
@@ -115,17 +115,17 @@ FUNC INT Info_Mod_Jack_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Jack_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_00"); //Ich habe einen Handwerker gefunden.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_01"); //Sehr gut, wer ist es?
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_02"); //Der Schmied Bennet.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_03"); //Ein Schmied ...?! Hmm, als ich hätte mir wirklich lieber jemanden gewünscht, der auch Ahnung von Holz hat ...
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_04"); //Tja ...
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_05"); //Hmm ... (kurzes Schweigen) ... aber daran soll jetzt unsere Reise nicht scheitern.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_06"); //Ok, dann eben der Schmied.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_00"); //Znalazlem rzemieslnika.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_01"); //Bardzo dobry, kim jest?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_02"); //Kowal Bennet.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_03"); //Kowal....? Hmm, tak jak bym naprawde wolal kogos, kto równiez ma pomysl na drewno....
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath3_15_04"); //....
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_05"); //Hmm..... (krótka cisza) Ale nie chce, aby nasza podróz zakonczyla sie niepowodzeniem z tego powodu.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath3_14_06"); //Okay, kowal.
 
 	Mod_JackHW = 2;
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Ok, Jack hat den Schmied gerade so durchgehen lassen.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Okay, Jack po prostu pozwolil kowalowi uciec z niej.");
 
 	B_GivePlayerXP	(100);
 };
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Jack_Irdorath4 (C_INFO)
 	information	= Info_Mod_Jack_Irdorath4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe jemanden gefunden, der sich vortrefflich auf Kräuter und Tränke versteht.";
+	description	= "Znalazlem kogos, kto doskonale rozumie ziola i eliksiry.";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath4_Condition()
@@ -154,20 +154,20 @@ FUNC INT Info_Mod_Jack_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Jack_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_00"); //Ich habe jemanden gefunden, der sich vortrefflich auf Kräuter und Tränke versteht.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_01"); //Ja, wer ist es? Alchemist Constantino?
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_02"); //Ähh, nein ... es ist Sagitta, die Kräuterhe ... ähh, die kräuterkundige Alchemistin.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_03"); //Was, die Kräuterhexe die sich irgendwo im Wald beim Großbauernhof herumtreiben soll?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_04"); //Bist du dir sicher, dass du da keinen Fehler machst?
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_05"); //Vielleicht bringt sie ja Unglück oder hat es darauf abgesehen, zur Abwechslung arglose Seeleute zu verhexen ...
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_06"); //(halblaut) Ähem, arglose Seeleute ...
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_07"); //(Wieder zu Jack) Nein, ich glaube wirklich, dass wir mit ihr den besten und zuverlässigsten Experten an Bord haben, wenn es um Pflanzen und Kräuter geht, so wie du es dir ja gewünscht hast.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_08"); //Naja, wir werden sehen ... meinen Talisman werde ich aber die ganze Seereise über anbehalten.
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_09"); //Nicht, dass ich eines morgens noch als Tiefseebarsch erwache ...
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_00"); //Znalazlem kogos, kto doskonale rozumie ziola i eliksiry.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_01"); //Tak, kim to jest? Alchemistka Constantino?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_02"); //Uh, nie...... To jest Sagitta, ziol.... Uh, alchemik ziolowy.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_03"); //Co, ziolo czarownica, która ma sie zwisac wokól wielkiej farmy gdzies w lesie?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_04"); //Czy jestes pewien, ze nie popelniasz bledu?
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_05"); //Moze przyniesie nieszczescie, czy jest to chec oczarowania niewinnych zeglarzy do zmiany?
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_06"); //Ahem, niewinni zeglarze....
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath4_15_07"); //(To jeszcze raz) Nie! Naprawde wierze, ze mamy najlepszego i najbardziej niezawodnego eksperta na pokladzie, jesli chodzi o rosliny i ziola, jak pan prosil.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_08"); //Cóz, zobaczymy.... Bede trzymal talizman przez caly czas podrózy.
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath4_14_09"); //Nie dlatego, ze budze sie pewnego ranka jako bas glebinowy....
 
 	Mod_JackAL = 2;
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Mit leichtem Nachdruck konnte ich Jack von Sagitta 'überzeugen'");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Z odrobina sily udalo mi sie 'przekonac' Jacka z Sagitty.");
 
 	B_GivePlayerXP	(100);
 };
@@ -180,7 +180,7 @@ INSTANCE Info_Mod_Jack_Irdorath5 (C_INFO)
 	information	= Info_Mod_Jack_Irdorath5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Also, jetzt sind die nötigen Vorbereitungen getroffen.";
+	description	= "Cóz, teraz poczyniono niezbedne przygotowania.";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath5_Condition()
@@ -197,7 +197,7 @@ FUNC INT Info_Mod_Jack_Irdorath5_Condition()
 
 FUNC VOID Info_Mod_Jack_Irdorath5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath5_15_00"); //Also, jetzt sind die nötigen Vorbereitungen getroffen.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath5_15_00"); //Cóz, teraz poczyniono niezbedne przygotowania.
 
 	if (Mod_CrewCount >= 5)
 	&& (Mod_CrewCount <= 15)
@@ -206,7 +206,7 @@ FUNC VOID Info_Mod_Jack_Irdorath5_Info()
 	|| (Mod_MiltenDabei > 0)
 	|| (Mod_VatrasDabei > 0))
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_01"); //Ja, stimmt. Sag einfach Bescheid. Wann es losgehen kann.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_01"); //Tak, to prawda. Po prostu daj mi znac. Kiedy zaczac.
 
 		Mod_JackHW = 3;
 		Mod_JackAL = 3;
@@ -218,26 +218,26 @@ FUNC VOID Info_Mod_Jack_Irdorath5_Info()
 	&& (Mod_MiltenDabei == 0)
 	&& (Mod_VatrasDabei == 0))
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_02"); //Nicht ganz ... Da du im Auftrag der Magier unterwegs bist, hätte ich mir schon zumindest einen mit an Bord gewünscht.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_03"); //Wäre sicher nicht schlecht, einen erfahrenen von der Sorte mit dabei zu haben.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_02"); //Nie do konca.... Poniewaz jestescie na misji magów, chcialbym, aby przynajmniej jeden z nich byl na pokladzie.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_03"); //Z pewnoscia nie byloby zle, gdybysmy mieli z wami tego rodzaju doswiadczenie.
 	}
 	else if (Mod_CrewCount < 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_04"); //Na du bist mir lustig ... Als du von Mannschaft sprachst hatte ich gedacht, dass du bereits eine angeheuert hast.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_05"); //Ohne weitere Leute können wir schlecht in See stechen.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_06"); //Ich will außer dem Schmied und der Kräuterhexe zumindest noch drei weitere Leute mit an Bord haben.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_07"); //Sonst können wir doch kein Schiff führen.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_04"); //No cóz, jestes dla mnie zabawny.... Kiedy mówiles o ekipie, myslalem, ze juz ja zatrudniles.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_05"); //Bez innych ludzi trudno nam wyplynac na morze.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_06"); //Oprócz kowala i ziól, chce miec na pokladzie co najmniej trzech innych ludzi.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_07"); //W przeciwnym razie nie mozemy prowadzic statku.
 	}
 	else if (Mod_CedricDabei == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_08"); //Cedric macht, ähh, Schwierigkeiten. Solltest du vielleicht erst einmal mit ihm klären.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_08"); //Cedryjski, uh, klopoty. Moze powinienes sie z nim najpierw skontaktowac.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_09"); //Ja, sag mal, willst du eine ganze Kompanie auf der Esmeralda mitnehmen?!
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_10"); //Das Schiff mag zwar groß sein, aber auch nicht unendlich.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_11"); //Ein paar wirst du wieder nach Hause schicken müssen.
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_12"); //Für mehr als 15 Leute reicht der Platz nicht auf dem Schiff.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_09"); //Tak, powiedz mi, czy chcesz wziac cala firme na Esmeralde?
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_10"); //Statek moze byc duzy, ale nie jest nieskonczony.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_11"); //Musisz odeslac troche do domu.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath5_14_12"); //Na statku nie ma wystarczajaco duzo miejsca dla ponad 15 osób.
 	};
 };
 
@@ -249,7 +249,7 @@ INSTANCE Info_Mod_Jack_Irdorath6 (C_INFO)
 	information	= Info_Mod_Jack_Irdorath6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns zu der Insel aufbrechen.";
+	description	= "Idzmy na wyspe.";
 };
 
 FUNC INT Info_Mod_Jack_Irdorath6_Condition()
@@ -269,7 +269,7 @@ FUNC VOID Info_Mod_Jack_Irdorath6_Info()
 {
 	var int Mod_JackWomanizer;
 
-	AI_Output(hero, self, "Info_Mod_Jack_Irdorath6_15_00"); //Lass uns zu der Insel aufbrechen.
+	AI_Output(hero, self, "Info_Mod_Jack_Irdorath6_15_00"); //Idzmy na wyspe.
 
 	if (Mod_SagittaDabei == 1)
 	{
@@ -290,7 +290,7 @@ FUNC VOID Info_Mod_Jack_Irdorath6_Info()
 
 	if (Mod_JackWomanizer >= 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Jack_Irdorath6_14_01"); //Man, da war ich schon jahrelang Seemann, aber so viele Frauen an Bord bei einer Kampfexpedition… das wird mir keiner glauben, wenn ich das erzähle.
+		AI_Output(self, hero, "Info_Mod_Jack_Irdorath6_14_01"); //Czlowiek, jestem marynarzem od lat, ale tak wiele kobiet na pokladzie na wyprawie bojowej.... Nikt mi nie uwierzy, kiedy ci to powie.
 
 		if (Mod_JackWomanizer == 3)
 		{
@@ -302,7 +302,7 @@ FUNC VOID Info_Mod_Jack_Irdorath6_Info()
 		};
 	};
 
-	AI_Output(self, hero, "Info_Mod_Jack_Irdorath6_14_02"); //Na, dann ... Anker einziehen, Segel setzen. Dass ich das noch mal erleben darf ...
+	AI_Output(self, hero, "Info_Mod_Jack_Irdorath6_14_02"); //No cóz, wiec.... Wciagnac kotwice, zalozyc zagiel. Zebym mógl na nowo o tym przypomniec....
 
 	Mod_JackHW = 4;
 
@@ -321,7 +321,7 @@ INSTANCE Info_Mod_Jack_Masut (C_INFO)
 	information	= Info_Mod_Jack_Masut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo. Einer hier ist zuviel.";
+	description	= "Witaj. Jedno jest tu zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Jack_Masut_Condition()
@@ -335,40 +335,40 @@ FUNC INT Info_Mod_Jack_Masut_Condition()
 
 FUNC VOID Info_Mod_Jack_Masut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_00"); //Hallo. Einer hier ist zuviel.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_01"); //Dann geh doch wieder raus. Ich hab dich nicht gerufen.
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_02"); //Das verstehst du falsch. DU bist zuviel.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_03"); //Das kann nicht sein. Ich wohne schon ewig hier oben.
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_04"); //Dieser Turm wird aber gebraucht. Ohne dich.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_05"); //Nur über meine Leiche.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_00"); //Witaj. Jedno jest tu zbyt wiele.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_01"); //Wróc tam z powrotem. Nie zadzwonilem do Ciebie.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_02"); //Rozumiesz nieporozumienie. Jestes zbyt wiele.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_03"); //Nie moze tak sie stac. Mieszkalem tutaj na zawsze.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_15_04"); //Ale ta wieza jest potrzebna. Bez ciebie.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_14_05"); //Nad martwym cialem.
 
 	Info_ClearChoices	(Info_Mod_Jack_Masut);
 
-	Info_AddChoice	(Info_Mod_Jack_Masut, "Bleib ruhig. Bist eigentlich ein netter, alter Kerl. Würde dich ungern töten.", Info_Mod_Jack_Masut_B);
-	Info_AddChoice	(Info_Mod_Jack_Masut, "Das kannst du haben. Ich soll dich eh töten.", Info_Mod_Jack_Masut_A);
+	Info_AddChoice	(Info_Mod_Jack_Masut, "Pozostan spokojny. Jestes naprawde milym, starym facetem. Nie chcialbys cie zabic.", Info_Mod_Jack_Masut_B);
+	Info_AddChoice	(Info_Mod_Jack_Masut, "Moze pan to miec. Tak czy owak powinienem cie zabic.", Info_Mod_Jack_Masut_A);
 };
 
 FUNC VOID Info_Mod_Jack_Masut_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_00"); //Bleib ruhig. Bist eigentlich ein netter, alter Kerl. Würde dich ungern töten.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_01"); //Mir kommen die Tränen. Was wäre dir lieber?
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_02"); //Du würdest das Feld räumen und untertauchen.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_03"); //Hört sich vernünftig an. Bin auch nicht mehr der Jüngste ...
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_04"); //Du verschwindest also und tauchst unter? Aber richtig. Wir haben Späher in Khorinis.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_05"); //Versprochen. Ich verschwinde.
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_06"); //Dann gib mir deinen Degen. Ich brauch einen Beweis für deinen Tod.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_07"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_00"); //Pozostan spokojny. Jestes naprawde milym, starym facetem. Nie chcialbys cie zabic.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_01"); //Placze. Które wolisz?
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_02"); //Wyczysc pole i zniknij.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_03"); //Brzmi to dla mnie rozsadnie. Juz nie jestem najmlodszy.....
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_04"); //Wiec znikasz i wchodzisz pod ziemie? Ale prawidlowo. Mamy harcerzy w Khorinisie.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_05"); //Obiecuje. Jestem poza nim.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_06"); //Potem daj mi swój miecz. Potrzebuje dowodu Pana smierci.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_07"); //Tutaj.
 
 	B_GiveInvItems	(self, hero, ItMw_Degen_Jack, 1);
 
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_08"); //Das muss sein. Und lass deinen Kram hier. Nimm nur das Nötigste mit.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_09"); //Verstehe.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_B_15_08"); //Tak musi byc. I zostaw swoje rzeczy tutaj. Po prostu wez z soba najwazniejsze rzeczy.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_B_14_09"); //Widze.
 
 	B_GivePlayerXP	(1000);
 
 	Mod_ASS_Jack = 1;
 
-	B_LogEntry	(TOPIC_MOD_ASS_JACK, "Jack wird untertauchen. Als Beweis seines Todes hat er mir seinen Degen gegeben. Auf zu Masut.");
+	B_LogEntry	(TOPIC_MOD_ASS_JACK, "Jack idzie pod ziemie. Jako dowód smierci dal mi swój miecz. Przejdzmy do Masut.");
 
 	Info_ClearChoices	(Info_Mod_Jack_Masut);
 
@@ -379,8 +379,8 @@ FUNC VOID Info_Mod_Jack_Masut_B()
 
 FUNC VOID Info_Mod_Jack_Masut_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Masut_A_15_00"); //Das kannst du haben. Ich soll dich eh töten.
-	AI_Output(self, hero, "Info_Mod_Jack_Masut_A_14_01"); //Na, dann komm doch, Großmaul.
+	AI_Output(hero, self, "Info_Mod_Jack_Masut_A_15_00"); //Moze pan to miec. Tak czy owak powinienem cie zabic.
+	AI_Output(self, hero, "Info_Mod_Jack_Masut_A_14_01"); //Cóz, przyjdz dalej, duze usta.
 
 	Mod_ASS_Jack = 2;
 
@@ -401,7 +401,7 @@ INSTANCE Info_Mod_Jack_Fanatiker (C_INFO)
 	information	= Info_Mod_Jack_Fanatiker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du denn hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Jack_Fanatiker_Condition()
@@ -415,15 +415,15 @@ FUNC INT Info_Mod_Jack_Fanatiker_Condition()
 
 FUnc VOID Info_Mod_Jack_Fanatiker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jack_Fanatiker_15_00"); //Was machst du denn hier?
-	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_01"); //Geflohen bin ich. Vor kurzem sind einige seltsame Typen in meinen Leuchtturm marschiert.
-	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_02"); //Haben etwas von einem Schläfer erzählt.
-	AI_Output(hero, self, "Info_Mod_Jack_Fanatiker_15_03"); //Was weißt du noch?
-	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_04"); //Ein Teil von ihnen wurde dann irgendwo in den Wald vor der Stadt bei Lobart geschickt.
-	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_05"); //Aber dann hab ich mich lieber aus dem Staub gemacht.
-	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_06"); //Geh lieber nicht zum Leuchtturm.
+	AI_Output(hero, self, "Info_Mod_Jack_Fanatiker_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_01"); //Ucieklem przed nami. Niedawno w moja latarnie wkroczyli niektórzy dziwni faceci.
+	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_02"); //Powiedz mi o sypialni.
+	AI_Output(hero, self, "Info_Mod_Jack_Fanatiker_15_03"); //Co jeszcze wiesz?
+	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_04"); //Czesc z nich zostala nastepnie wyslana gdzies w lesie poza miasto pod Lobartem.
+	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_05"); //Ale wtedy wolalbym sie z tego wycofac.
+	AI_Output(self, hero, "Info_Mod_Jack_Fanatiker_14_06"); //Lepiej nie isc do latarni morskiej.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Jack hat erzählt, dass die Anhänger des Schläfers nach Khorinis gezogen sind. Einige sind bei seinem Leuchtturm, ein kleinerer Trupp wurde in den Wald vor Khorinis bei Lobart gesichtet. Den Leuchtturm sollte ich lieber vorerst unberührt lassen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Jack powiedzial, ze naczepy sypialne przenosily sie dohorynu. Niektóre z nich znajduja sie w jego latarni morskiej, mniejsza grupa zostala zauwazona w lesie przed Khorinis kolo Lobart. Wolalbym na razie nie dotykac latarni morskiej.");
 };
 
 INSTANCE Info_Mod_Jack_Pickpocket (C_INFO)

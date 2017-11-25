@@ -1,7 +1,7 @@
 instance Mod_527_SLD_Torlof_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Torlof";
+	name 		= "torflada";
 	guild 		= GIL_MIL;
 	id 			= 527;
 	voice 		= 1;

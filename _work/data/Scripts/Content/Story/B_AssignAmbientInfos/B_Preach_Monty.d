@@ -30,11 +30,11 @@ func void B_Preach_Monty(var int satz)
 			AI_PlayAni	(Mod_1044_VLK_Buerger_NW, "T_CLAPHANDS_2_STAND");
 		};
 
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_00"); //Mitten in der Nacht schlich ich mich durch das Orklager.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_00"); //W srodku nocy wskakiwalem przez orklager.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_01"); //Ich schlitzte den Orkwachen die Kehlen auf, sodass sie in ihrem Blut schwammen!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_01"); //Przerzucilem gardla strazników orków tak, aby plynieli we krwi!
 
 		// Hier kommt dann das applaudierende Publikum drunter (T_STAND_2_CLAPHANDS oder so)
 
@@ -86,39 +86,39 @@ func void B_Preach_Monty(var int satz)
 			AI_PlayAni	(Mod_1044_VLK_Buerger_NW, "T_CLAPHANDS_2_STAND");
 		};
 
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_02"); //Dann stieg ich die Höhle hinab wie in ein Grab.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_02"); //Potem zjechalem do jaskini jak grób.
 	};
 	if (satz == 3) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_03"); //Stockfinster und eng war es dort, und es wimmelte von Dämonen und Schlimmerem.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_03"); //Bylo ciemno na boisku i bylo tam zatloczone, tetnilo demonami i gorzej.
 	};
 	if (satz == 4) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_04"); //Endlich, ich wähnte mich seit Wochen dort unten, weitete sich die Höhle, und mittendrin, hässlich und riesenhaft, hockt der Schläfer.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_04"); //W koncu pomyslalem, ze jestem tam przez tygodnie, poszerzylem jaskinie, a posrodku, brzydki i ogromny, spiewak.
 	};
 	if (satz == 5) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_05"); //Und nun - ich gegen ihn, 20 Meter und 14 Beine gegen zwei.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_05"); //A teraz - ja przeciwko niemu, 20 metrów i 14 nóg przy dwóch.
 	};
 	if (satz == 6) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_06"); //Kampf auf Leben und Tod.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_06"); //Walczyc do smierci.
 	};
 	if (satz == 7) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_07"); //Keine Chance, denke ich. Aber ich gebe nicht auf!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_07"); //Nie sadze, by bylo inaczej. Ale nie poddaje sie!
 	};
 	if (satz == 8) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_08"); //Ein Bein nach dem andern fällt, grüne Säure spritzt heraus und verätzt mir die Augen, bis ich kaum noch etwas sehe.
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_08"); //Jedna noga po upadku, zielony kwas rozpryskuje sie i spala oczy, az prawie nic nie widze.
 	};
 	if (satz == 9) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_09"); //Ich hacke und steche, und irgendwann - rührt sich nichts mehr. Ich habe gesiegt!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_09"); //Caknelam i uzadlam, a w pewnym momencie przestalam sie mieszac. Zwyciezylem!
 	};
 	if (satz == 10) 	
 	{	
-		AI_Output (self, self, "Info_Mod_Monty_Preach_31_10"); //Und hier ist alles, was noch von ihm übrig ist!
+		AI_Output (self, self, "Info_Mod_Monty_Preach_31_10"); //Oto wszystko, co mu pozostalo!
 
 		// Hier kommt dann das applaudierende Publikum drunter (T_STAND_2_CLAPHANDS oder so)
 

@@ -1,7 +1,7 @@
 INSTANCE Mod_7104_ASS_Shakir_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Shakir"; 
+	name 		= "wstrzas"; 
 	guild 		= GIL_OUT;
 	id 			= 7104;
 	voice 		= 31;

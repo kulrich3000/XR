@@ -1,7 +1,7 @@
 instance Mod_4089_UntoterKrieger_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Untoter Krieger";
+	name 		=		"Nieumiarkowany wojownik wojenny";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_STRF;
 	level 		=		40;

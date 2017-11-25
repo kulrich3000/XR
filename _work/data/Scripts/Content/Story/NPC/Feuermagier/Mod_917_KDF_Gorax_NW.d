@@ -1,7 +1,7 @@
 INSTANCE Mod_917_KDF_Gorax_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gorax";
+	name 		= "goryl";
 	guild 		= GIL_VLK;
 	id 			= 917;
 	voice 		= 14;

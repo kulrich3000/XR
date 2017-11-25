@@ -69,6 +69,6 @@ FUNC VOID WaffenCheck()
 	
 	if (Npc_HasReadiedMeleeWeapon(hero))
 	&& (Mod_Tiergift > 0 || Mod_Gewaechsgift > 0) {
-		PrintScreen("Waffe vergiftet", 10, 80, FONT_ScreenSmall, 2);
+		PrintScreen("zatruty bron", 10, 80, FONT_ScreenSmall, 2);
 	};
 };

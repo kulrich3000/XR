@@ -15,9 +15,9 @@ FUNC INT Info_Mod_AufgebrachteBuergerin_Hi_Condition()
 
 FUNC VOID Info_Mod_AufgebrachteBuergerin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_00"); //(kreischt) Iih! Das ist er!
-	AI_Output(hero, self, "Info_Mod_AufgebrachteBuergerin_Hi_15_01"); //Beruhig dich! Wer ist was?
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_02"); //Du bist der Schlächter! Mörder, Mörder!
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_00"); //Zaprawde! To on!
+	AI_Output(hero, self, "Info_Mod_AufgebrachteBuergerin_Hi_15_01"); //Spokojny, spokojny! Kto jest kim?
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_02"); //Jestes rzeznikiem! Morderca, zabójca!
 
 	AI_StopProcessInfos	(self);
 
@@ -25,5 +25,5 @@ FUNC VOID Info_Mod_AufgebrachteBuergerin_Hi_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MOE_TALK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MOE_TALK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Ich bin leicht verwirrt ... Auf dem Marktplatz von Khorinis hat mich eine Frau des Mordes bezichtigt. Wieso das jetzt so plötzlich? Ich sollte mit Moe darüber reden.");
+	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Jestem nieco zdezorientowany..... Na targowisku w Khorinis kobieta oskarzyla mnie o morderstwo. Dlaczego nagle? Powinienem porozmawiac o tym z Moe.");
 };

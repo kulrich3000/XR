@@ -1,7 +1,7 @@
 INSTANCE Mod_4015_SNOV_BesessenerNovize_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Besessener schwarzer Novize";
+	name 		= "Czarny nowicjusz w kolorze czarnym";
 	guild 		= GIL_OUT;
 	id 			= 4015;
 	voice 		= 11;

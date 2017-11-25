@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_5_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie werde ich in diesem Lager aufgenommen?";
+	description = "Jak moge zostac przyjety w tym obozie?";
 };                       
 
 FUNC INT Info_PsiNov_5_EinerVonEuchWerden_Condition()
@@ -54,9 +54,9 @@ FUNC INT Info_PsiNov_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_PsiNov_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_EinerVonEuchWerden_15_00"); //Wie werde ich in diesem Lager aufgenommen?
-	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_01"); //Nichts leichter als das. Rede einfach mit einigen der niederen Gurus. Sie werden dir weiterhelfen.
-	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_02"); //Es wird dir hier gefallen - wirst schon sehen.
+	AI_Output(hero,self,"Info_PsiNov_5_EinerVonEuchWerden_15_00"); //Jak moge zostac przyjety w tym obozie?
+	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_01"); //Nic nie moze byc latwiejsze. Po prostu porozmawiaj z dolnym guru. Pomoga Ci.
+	AI_Output(self,hero,"Info_PsiNov_5_EinerVonEuchWerden_05_02"); //Tutaj spodoba Ci sie - zobaczysz.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_PsiNov_5_WichtigePersonen(C_INFO)
 	condition	= Info_PsiNov_5_WichtigePersonen_Condition;
 	information	= Info_PsiNov_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_PsiNov_5_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_PsiNov_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_PsiNov_5_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_PsiNov_5_WichtigePersonen_05_01"); //Die Gurus haben alles unter Kontrolle. Aber wenn man nicht auffällt, lassen sie einen in Ruhe.
+	AI_Output(hero,self,"Info_PsiNov_5_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_PsiNov_5_WichtigePersonen_05_01"); //Guru ma wszystko pod kontrola. Ale jesli nie zauwazysz, zostawiaja cie samotnie.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_PsiNov_5_DasLager(C_INFO)
 	condition	= Info_PsiNov_5_DasLager_Condition;
 	information	= Info_PsiNov_5_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mit über dieses Lager erzählen?";
+	description = "Co mozesz mi powiedziec o tym obozie?";
 };                       
 
 FUNC INT Info_PsiNov_5_DasLager_Condition()
@@ -103,11 +103,11 @@ FUNC INT Info_PsiNov_5_DasLager_Condition()
 
 FUNC VOID Info_PsiNov_5_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_01"); //Es ist der beste Ort, an dem du in diesem Tal sein kannst.
-	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_02"); //Selbst wenn du nicht an unsere Lehren glaubst, bekommst du deine tägliche Ration Essen und Sumpfkraut. Du brauchst nur zu Fortuno zu gehen.
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_03"); //Und wo finde ich den?
-	AI_Output(hero,self,"Info_PsiNov_5_DasLager_05_04"); //Unten an Cor Kaloms altem Labor. In der Nähe des großen Tempelplatzes.
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_00"); //Co mozesz mi powiedziec o tym obozie?
+	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_01"); //Jest to najlepsze miejsce, w którym mozna znalezc sie w tej dolinie.
+	AI_Output(self,hero,"Info_PsiNov_5_DasLager_05_02"); //Nawet jesli nie wierzysz w nasze nauki, otrzymujesz dzienna porcje pokarmu i marudzi. Jedyne co musisz zrobic, to udac sie do Fortuno.
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_15_03"); //A gdzie moge go znalezc?
+	AI_Output(hero,self,"Info_PsiNov_5_DasLager_05_04"); //W dól w starej pracowni Cor Kalom. W poblizu duzego placu swiatyni.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_PsiNov_5_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_5_DieLage_Condition;
 	information	= Info_PsiNov_5_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_PsiNov_5_DieLage_Condition()
@@ -130,9 +130,9 @@ FUNC INT Info_PsiNov_5_DieLage_Condition()
 
 FUNC VOID Info_PsiNov_5_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,hero,"Info_PsiNov_5_DieLage_05_01"); //Kann mich nicht beklagen. Bist du neu hier?
-	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_02"); //Ich bin vor kurzem angekommen.
+	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,hero,"Info_PsiNov_5_DieLage_05_01"); //Nie moge narzekac. Czy jestes tu nowy?
+	AI_Output(hero,self,"Info_PsiNov_5_DieLage_15_02"); //Niedawno przybylem.
 };
 
 INSTANCE Info_Mod_PsiNov_5_Pickpocket (C_INFO)

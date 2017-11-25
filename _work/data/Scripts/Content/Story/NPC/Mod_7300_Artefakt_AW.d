@@ -1,7 +1,7 @@
 INSTANCE Mod_7300_Artefakt_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Magisches Artefakt";
+	name 		= "Magiczny artefakt";
 	guild 		= GIL_STRF;
 	id 			= 7300;
 	flags       = 0;				

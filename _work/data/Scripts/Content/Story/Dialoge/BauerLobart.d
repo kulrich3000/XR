@@ -1,29 +1,29 @@
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei()
 {
-	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_00"); //Ich habe gehört, dass Vino seit einiger Zeit verschwunden ist. Weißt du etwas darüber?
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_01"); //(unsicher) Ähh, nun, ich weiß ja nicht ... (zu sich selbst) aber wenn ihm nun doch was zugestoßen ist ...
-	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_02"); //Spuck’s schon aus. Vielleicht kann ich ja helfen.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_03"); //(zögerlich) Nun gut ... Vino hat im großen Wald eine Brennerei eingerichtet ... in der Nähe von einem Steinkreis glaube ich.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_04"); //Er geht dort ab und zu mal hin, um sich anschließend in der Stadt mit dem Selbstgebrannten ein paar Münzen hinzu zu verdienen ... oder bringt uns Landarbeitern auch mal was mit für den Feierabend.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_05"); //So jetzt weißt du es. Erzähl es aber bitte niemandem weiter.
+	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_00"); //Slysze, ze Vino od jakiegos czasu brakowalo Vino. Czy wiesz cos o tym?
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_01"); //(niepewny) Uh, cóz, nie wiem.... (osobiscie) ale jesli cos mu sie przydarzylo (....).
+	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_02"); //Wyrzuc go juz teraz. Moze moge pomóc.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_03"); //(budzacy) No cóz.... Vino zalozylo gorzelnie w duzym lesie.... Mysle, ze w poblizu kamiennego kola.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_04"); //Co jakis czas udaje sie tam, by zarobic w miescie kilka dodatkowych monet z wypiekanym domem.... lub przyniesc nam prace na wieczór.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_05"); //Wiec teraz wiesz. Ale prosze nikomu nie mówic.
 
-	B_LogEntry	(TOPIC_MOD_VINO_WO, "Wie ich von einem anderen Landarbeiter erfuhr, hat sich Vino im großen Wald eine Brennerei eingerichtet, in der Nähe eines Steinkreises.");
+	B_LogEntry	(TOPIC_MOD_VINO_WO, "Jak slyszalem od innego rolnika, Vino zalozylo gorzelnie w duzym lesie, w poblizu kamiennego kola.");
 };
 
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei2()
 {
-	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei2_15_00"); //Und warum habt ihr niemandem davon berichtet? Er könnte in großen Schwierigkeiten sein ...
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_01"); //Ja, ich weiß. Aber wem hätten wir davon erzählen sollen?
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_02"); //Lobart würde ihm die Hölle heiß machen, wenn er das mitbekäme ... und Mika, der alles vor der Stadt im Auge behält, ist nicht gerade zimperlich, wenn es um Rauschmittel geht.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_03"); //Vino könnte dafür geradewegs in den Knast wandern ...
+	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei2_15_00"); //Dlaczego nikomu nie powiesz? Mógl byc w wielu klopotach....
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_01"); //Tak, wiem. Kto by jednak powiedzial?
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_02"); //Lobart wyrzucilby z niego pieklo, gdyby wiedzial, ze.... Mika i Mika, którzy maja oko na rzeczy poza miastem, nie jest dokladnie squeamish, jesli chodzi o narkotyki.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_03"); //Vino moze za to isc prosto do wiezienia....
 };
 
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei3()
 {
-	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei3_15_00"); //Ein Bauer ganz alleine durch den monsterverseuchten Wald?! Das ist Irrsinn ...
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_01"); //Achja, stimmt, das hatte ich noch nicht erwähnt.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_02"); //Er berichtete mal, hinter Jack’s Leuchtturm eine seltsame Plattform gefunden zu haben.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_03"); //Die bringt ihn angeblich direkt in diese abgelegene Höhle, vorbei an allen Monstern.
+	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei3_15_00"); //Rolnik samotnie przez skazony potworami las? To jest szalenstwo.....
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_01"); //Oh, prawda, nie wspomnialem o tym.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_02"); //Zglosil kiedys znalezienie dziwnej platformy za latarnia Jacka.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_03"); //Ma on zabrac go bezposrednio do tej zacisznej jaskini, za wszystkie potwory.
 };
 
 INSTANCE Info_Mod_BauerLobart_01_VinoBrennerei (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_BauerLobart_01_VinoBrennerei (C_INFO)
 	information	= Info_Mod_BauerLobart_01_VinoBrennerei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, dass Vino seit einiger Zeit verschwunden ist.";
+	description	= "Slysze, ze Vino od jakiegos czasu brakowalo Vino.";
 };
 
 FUNC INT Info_Mod_BauerLobart_01_VinoBrennerei_Condition()
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_BauerLobart_02_VinoBrennerei (C_INFO)
 	information	= Info_Mod_BauerLobart_02_VinoBrennerei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, dass Vino seit einiger Zeit verschwunden ist.";
+	description	= "Slysze, ze Vino od jakiegos czasu brakowalo Vino.";
 };
 
 FUNC INT Info_Mod_BauerLobart_02_VinoBrennerei_Condition()
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_BauerLobart_01_VinoBrennerei2 (C_INFO)
 	information	= Info_Mod_BauerLobart_01_VinoBrennerei2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und warum habt ihr niemandem davon berichtet?";
+	description	= "Dlaczego nikomu nie powiesz?";
 };
 
 FUNC INT Info_Mod_BauerLobart_01_VinoBrennerei2_Condition()
@@ -121,7 +121,7 @@ INSTANCE Info_Mod_BauerLobart_02_VinoBrennerei2 (C_INFO)
 	information	= Info_Mod_BauerLobart_02_VinoBrennerei2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und warum habt ihr niemandem davon berichtet?";
+	description	= "Dlaczego nikomu nie powiesz?";
 };
 
 FUNC INT Info_Mod_BauerLobart_02_VinoBrennerei2_Condition()
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_BauerLobart_01_VinoBrennerei3 (C_INFO)
 	information	= Info_Mod_BauerLobart_01_VinoBrennerei3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein Bauer ganz alleine durch den monsterverseuchten Wald?!";
+	description	= "Rolnik samotnie przez skazony potworami las?";
 };
 
 FUNC INT Info_Mod_BauerLobart_01_VinoBrennerei3_Condition()
@@ -179,7 +179,7 @@ INSTANCE Info_Mod_BauerLobart_02_VinoBrennerei3 (C_INFO)
 	information	= Info_Mod_BauerLobart_02_VinoBrennerei3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein Bauer ganz alleine durch den monsterverseuchten Wald?!";
+	description	= "Rolnik samotnie przez skazony potworami las?";
 };
 
 FUNC INT Info_Mod_BauerLobart_02_VinoBrennerei3_Condition()

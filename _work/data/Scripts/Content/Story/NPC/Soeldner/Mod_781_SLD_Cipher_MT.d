@@ -1,7 +1,7 @@
 instance Mod_781_SLD_Cipher_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cipher";
+	name 		= "szyfr";
 	guild 		= GIL_MIL;
 	id 			= 781;
 	voice 		= 32;

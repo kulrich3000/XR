@@ -1,7 +1,7 @@
 instance Mod_570_NONE_Coragon_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Coragon"; 
+	name 		= "korona"; 
 	guild 		= GIL_PAL;
 	id 			= 570;
 	voice 		= 9;

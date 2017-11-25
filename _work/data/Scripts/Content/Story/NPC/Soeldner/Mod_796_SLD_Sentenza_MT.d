@@ -1,7 +1,7 @@
 instance Mod_796_SLD_Sentenza_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sentenza";
+	name 		= "aforyzm";
 	guild 		= GIL_MIL;
 	id 			= 796;
 	voice 		= 9;

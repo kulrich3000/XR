@@ -1,7 +1,7 @@
 instance Mod_7496_NONE_Schlaeger_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schläger";
+	name 		= "gacek";
 	guild 		= GIL_OUT;
 	id 			= 7496;
 	voice 		= 28;

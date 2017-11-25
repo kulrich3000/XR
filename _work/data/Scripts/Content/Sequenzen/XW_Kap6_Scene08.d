@@ -21,7 +21,7 @@ FUNC VOID XW_Kap6_Scene08()
 
 	if (Mod_XW_Kap6_Scene08_Counter == 3)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_00"); //(spöttisch rufend) Mein tapferer Recke!
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_00"); //Mój odwazny rycerz!
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 9)
@@ -32,22 +32,22 @@ FUNC VOID XW_Kap6_Scene08()
 
 	if (Mod_XW_Kap6_Scene08_Counter == 11)
 	{
-		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_11_01"); //Du bist also die hässliche Missgeburt, wegen der wir hier sind.
+		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_11_01"); //Wiec jestes brzydkim freakiem, po który tu przyjechalismy.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 17)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_02"); //Wegen der du in einen unehrenhaften Tod gehen wirst, ja.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_02"); //Z tego powodu umrzesz niehonorowo, tak.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 23)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_03"); //Hier gibt es nichts für dich zu gewinnen.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_03"); //Nie ma tu nic do wygrania.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 29)
 	{
-		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_11_04"); //Ich bin nicht hier, um zu gewinnen.
+		AI_Output(Mod_7763_RDW_Diego_XW, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_11_04"); //Nie jestem tutaj, aby wygrac.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 35)
@@ -70,7 +70,7 @@ FUNC VOID XW_Kap6_Scene08()
 
 	if (Mod_XW_Kap6_Scene08_Counter == 40)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_05"); //Ich hoffe, du hast gesehen, wie hoffnungslos dein Unterfangen war.
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_05"); //Mam nadzieje, ze zobaczyliscie, jak beznadziejna jest wasza misja.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 46)
@@ -81,12 +81,12 @@ FUNC VOID XW_Kap6_Scene08()
 
 	if (Mod_XW_Kap6_Scene08_Counter == 47)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_15_06"); //Du redest doch nur, um verschnaufen zu können.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_15_06"); //Mówisz, wiec mozesz zlapac oddech.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 53)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_15_07"); //So groß können deine Kräfte gar nicht sein.
+		AI_Output(hero, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_15_07"); //Twoja wladza nie moze byc az tak wielka.
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 59)
@@ -99,7 +99,7 @@ FUNC VOID XW_Kap6_Scene08()
 
 	if (Mod_XW_Kap6_Scene08_Counter == 60)
 	{
-		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_08"); //Du hast ja noch nicht alles gesehen!
+		AI_Output(Xeres_02, NULL, "Info_Mod_Hero_XW_Kap6_Scene08_14_08"); //Nie widziales jeszcze wszystkiego!
 	};
 
 	if (Mod_XW_Kap6_Scene08_Counter == 66)

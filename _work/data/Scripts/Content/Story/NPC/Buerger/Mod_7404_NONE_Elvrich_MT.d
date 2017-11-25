@@ -1,7 +1,7 @@
 instance Mod_7404_NONE_Elvrich_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Elvrich"; 
+	name 		= "Elzbieta"; 
 	guild 		= GIL_OUT;
 	id 			= 7404;
 	voice 		= 24;

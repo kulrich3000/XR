@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Nagon_Hi_Condition()
 
 FUNC VOID Info_Mod_Nagon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagon_Hi_10_00"); //Stör mich jetzt nicht!
+	AI_Output(self, hero, "Info_Mod_Nagon_Hi_10_00"); //Nie martw sie teraz!
 
 	AI_StopProcessInfos	(self);
 };
@@ -44,16 +44,16 @@ FUNC INT Info_Mod_Nagon_Gizar_Condition()
 
 FUNC VOID Info_Mod_Nagon_Gizar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_00"); //Ah, es freut mich, dich zu sehen, Bruder.
-	AI_Output(hero, self, "Info_Mod_Nagon_Gizar_15_01"); //Gizar hat mich zu Euch geschickt.
-	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_02"); //Ich weiß. Pyrokar hält große Stücke auf dich. Er hat großes Vertrauen in dich! Das ist auch der Grund warum du hier bist.
-	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_03"); //Ich habe eine wichtige Aufgabe für dich. Du musst die fünf Foki, die die Schwarzmagier benutzen um die Barriere aufrecht zu halten, stehlen und zu uns bringen.
-	AI_Output(hero, self, "Info_Mod_Nagon_Gizar_15_04"); //Aber... Wie soll ich das machen?
-	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_05"); //Geh im Turm ganz nach oben und frag das Orakel. Es wird dir verraten, wie du die Foki erlangen kannst.
+	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_00"); //Dobrze jest widziec cie, bracie.
+	AI_Output(hero, self, "Info_Mod_Nagon_Gizar_15_01"); //Jaszczurca wyslal mnie do Ciebie.
+	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_02"); //Wiem. Pyrokar mysli wiele o Tobie. On ma wielka wiare w ciebie! Dlatego jestes tutaj.
+	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_03"); //Mam dla Panstwa wazne zadanie. Musisz ukrasc piec Foki' ów, których uzywa sie do podtrzymania bariery, krasc i przywiezc je do nas.
+	AI_Output(hero, self, "Info_Mod_Nagon_Gizar_15_04"); //Ale.... Jak mam to zrobic?
+	AI_Output(self, hero, "Info_Mod_Nagon_Gizar_10_05"); //Wejdz na szczyt wiezy i zapytaj o wyrocznie. W ten sposób dowiesz sie, jak skupic uwage.
 
 	Log_CreateTopic	(TOPIC_MOD_FM_FOKI, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_FOKI, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Nagon will, dass ich die fünf Foki stehle, die die Schwarzmagier benutzen, um die Barriere um Patherion aufrecht zu erhalten. Dazu soll ich das Orakel befragen, welches sich auf dem Turm befindet.");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Nagon chce, abym ukradl piec ognisk, które czarni magowie uzywaja do utrzymania bariery wokól Patheriona. W tym celu powinienem poprosic o wyrocznie na wiezy.");
 };
 
 INSTANCE Info_Mod_Nagon_HabFoki (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Nagon_HabFoki (C_INFO)
 	information	= Info_Mod_Nagon_HabFoki_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Foki.";
+	description	= "Skupilem sie na tym.";
 };
 
 FUNC INT Info_Mod_Nagon_HabFoki_Condition()
@@ -78,40 +78,40 @@ FUNC INT Info_Mod_Nagon_HabFoki_Condition()
 
 FUNC VOID Info_Mod_Nagon_HabFoki_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_00"); //Ich habe es geschafft. Ich habe die fünf Foki.
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_00"); //Zrobilem to. Mam piec Foki.
 	
 	B_GiveInvItems	(hero, self, ItMi_Focus_Pat, 5);
 
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_01"); //Wahrhaftig Bruder, du hast es geschafft! Wir sind stolz auf dich! Du hast Innos einen großen Dienst erwiesen!
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_02"); //Aber warum ist die Barriere noch nicht verschwunden?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_03"); //Nun, wir müssen zuerst ein Ritual durchführen. Dazu brauchen wir aber noch einen fünften Magier.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_04"); //Ich werde sie solange gut verwahren, bis wir jemanden gefunden haben, der mächtig genug ist, die Barriere mit uns zu zerstören.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_05"); //Wusstest du, dass wir die Foki geschaffen haben?
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_06"); //Ihr?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_07"); //Ja. Das heißt wir vier und Ragon.
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_08"); //Achso, der Gründer dieses Klosters.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_09"); //Du kennst die Geschichte?
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_10"); //Ja, Pyrokar hat sie mir erzählt.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_11"); //Traurig, wenn man überlegt, dass der Gründer der gesamten Innoskirche verschollen ist.
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_12"); //Ja, ich habe aber noch eine Frage: Kennst du Aaron?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_13"); //Aaron? Du meinst den neuen Magier. Ja, ich kenne ihn.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_14"); //Er hat die letzte Lieferung Tränke vorbeigebracht die Tojan wollte. Das ist noch gar nicht so lange her ...
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_15"); //(überrascht) Er hat die Tränke gebracht?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_16"); //Ja, er hat sie auch gleich verteilt, genau wie du.
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_17"); //Und ist da irgendwas Außergewöhnliches passiert?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_18"); //Etwas Außergewöhnliches? Wie meinst du etwas Außergewöhnliches?
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_19"); //Naja, zum Beispiel, dass ein Schwarzmagier in der Festung war?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_20"); //Was? Ein Schwarzmagier? Wie kommst du denn darauf?
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_21"); //Nur so 'ne Frage.
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_22"); //Nein, das hätte mir Tojan unbedingt gemeldet.
-	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_23"); //Achso, danke. Weißt du wo sich Aaron aufhält?
-	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_24"); //Des Tags ist er immer irgendwo anders, er versucht sich überall nützlich zu machen, aber nachts ist er immer in der Kirche und betet.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_01"); //Prawdziwy bracie, zrobiles to! Jestesmy z Ciebie dumni! Zrobiles wspaniala obsluge Innos!
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_02"); //Dlaczego jednak bariera nie zniknela?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_03"); //Cóz, najpierw musimy wykonac rytual. Do tego celu potrzebujemy jednak piatego maga.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_04"); //Bede ja trzymac bezpiecznie, dopóki nie znajdziemy kogos na tyle mocnego, by z nami zniszczyc bariere.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_05"); //Czy wiesz, ze stworzylismy Foki?
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_06"); //Czy ona jej?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_07"); //Tak. Oznacza to czterech z nas i Ragona.
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_08"); //Och, zalozyciel tego klasztoru.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_09"); //Znasz te historie?
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_10"); //Tak, powiedzial mi Pyrokar.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_11"); //Smutne jest myslec, ze zniknal zalozyciel calego Innoskirche.
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_12"); //Tak, ale mam jeszcze jedno pytanie: czy znasz Aarona?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_13"); //Aaron? Masz na mysli nowego maga. Tak, znam go.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_14"); //Odrzucil ostatnia przesylke eliksirów, której chcial Tojan. Nie tak dawno temu....
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_15"); //(zdziwiony) Przyniósl eliksiry?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_16"); //Tak, natychmiast sie nim dzielil, tak jak ty.
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_17"); //I czy zdarzylo sie cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_18"); //Cos nadzwyczajnego? Co masz na mysli, cos niezwyklego?
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_19"); //Cóz na przyklad, ze w twierdzy byl czarny mag?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_20"); //Co? Czarny mag? Co sprawia, ze myslisz o tym?
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_21"); //Tylko pytanie.
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_22"); //Nie, Tojan by mi tak powiedzial.
+	AI_Output(hero, self, "Info_Mod_Nagon_HabFoki_15_23"); //Cóz, dziekuje. Czy wiesz, gdzie jest Aaron?
+	AI_Output(self, hero, "Info_Mod_Nagon_HabFoki_10_24"); //W ciagu dnia jest zawsze gdzies indziej, stara sie byc wszedzie uzytecznym, ale w nocy jest zawsze w kosciele modlac sie.
 
 	B_GivePlayerXP	(500);
 
 	B_StartOtherRoutine	(Mod_1771_KDF_Aaron_PAT, "ARBEIT");
 
-	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Aaron ist tagsüber nur schwer aufzufinden, da er überall aushilft, aber nachts ist er immer in der Kirche und betet. Was noch komisch war, was dass Nagon es für unmöglich hält, dass ein Schwarzmagier im Kloster ist. Es scheint fast so, als hätte Tojan ihn nicht darüber informiert.");
+	B_LogEntry	(TOPIC_MOD_FM_VERRAT, "Aaron jest trudny do znalezienia w ciagu dnia, poniewaz pomaga wszedzie, ale w nocy jest zawsze w kosciele modlac sie. To bylo smieszne, poniewaz Nagon uwaza, ze czarny magik nie moze byc w klasztorze. Prawie sie wydaje, ze Tojan go nie poinformowal.");
 	B_SetTopicStatus	(TOPIC_MOD_FM_FOKI, LOG_SUCCESS);
 };
 
@@ -123,7 +123,7 @@ INSTANCE Info_Mod_Nagon_MangelQuest (C_INFO)
 	information	= Info_Mod_Nagon_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was trübt dein Gemüt, Bruder?";
+	description	= "Co Cie martwi, bracie?";
 };
 
 FUNC INT Info_Mod_Nagon_MangelQuest_Condition()
@@ -133,19 +133,19 @@ FUNC INT Info_Mod_Nagon_MangelQuest_Condition()
 
 FUNC VOID Info_Mod_Nagon_MangelQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_00"); //Was trübt dein Gemüt, Bruder?
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_01"); //Ach ... entschuldige meinen Tonfall ... aber sieh dich doch nur mal hier um!
-	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_02"); //(schaut sich um) Hmm, ich sehe nichts ...
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_03"); //Eben! Dies ist die Kirche Patherions, einer der wichtigsten religiösen Orte unseres Gemeinschaft Innos’ ... und wer ist hier? Fast niemand!
-	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_04"); //Es herrscht aber nun mal leider Belagerung, und die Priester und Streiter Innos’ müssen ...
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_05"); //(unterbricht) Ja, diese Stätte verteidigen.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_06"); //Aber welchen Wert hat es denn überhaupt noch, wenn keiner das Gebet zu Innos’ spricht und die religiösen Traditionen pflegt, die doch unseren Glauben als solchen definieren.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_07"); //Dieser Konflikt hat uns viele Opfer abverlangt ... aber der größte Preis, den wir dafür zahlen, ist unsere Verbindung zu Innos.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_08"); //Wenn nicht mal mehr an diesem heiligen Ort jemand die Beziehung zu Innos pflegt, ja, dann haben wir den Krieg quasi schon verloren.
+	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_00"); //Co Cie martwi, bracie?
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_01"); //Ah.... Prosze wybaczyc mój glos...... Wystarczy tylko spojrzec tutaj!
+	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_02"); //(oczekuje) Hmm, nie widze niczego....
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_03"); //Dokladnie! Jest to kosciól Patheriona, jeden z najwazniejszych miejsc religijnych naszej wspólnoty.... Wiecej i kto jest tutaj? Niemal nikt!
+	AI_Output(hero, self, "Info_Mod_Nagon_MangelQuest_15_04"); //Niestety jednak oblezenie, a kaplani i bojownicy Innosów musza...
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_05"); //Tak, bronic tego miejsca.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_06"); //Ale jaka wartosc ma to, ze nikt nie mówi do Innosów o modlitwie i kultywuje tradycje religijne, które definiuja nasza wiare jako taka?
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_07"); //Konflikt ten kosztowal nas wiele poswiecen.... Jednak najwieksza cena, jaka placimy jest nasze polaczenie z Innosem.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest_10_08"); //Jesli nawet nie w tym swietym miejscu ktos kultywuje relacje z Innosem, tak, to przegralismy juz wojne.
 
 	B_StartMangel();
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Nagon beklagte sich darüber, dass niemand mehr in die Kapelle beten kommt.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Nagon skarzyl sie, ze juz nikt nie przyszedl sie modlic w kaplicy.");
 };
 
 INSTANCE Info_Mod_Nagon_MangelQuest2 (C_INFO)
@@ -168,16 +168,16 @@ FUNC INT Info_Mod_Nagon_MangelQuest2_Condition()
 
 FUNC VOID Info_Mod_Nagon_MangelQuest2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_00"); //(enthusiastischer) Sei gegrüßt, Bruder. Kaum, dass wir uns unterhalten hatten, fanden sich rasch mehrere Jünger zum Gebet ein.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_01"); //Diesem Ort des Glaubens wird nun wieder die Aufmerksamkeit zu Teil, wie es sein sollte ... und ich bezweifle mal, dass es Zufall ist.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_02"); //Dein Einsatz für unseren Glauben zeigt, dass du ein wahrer Diener unseres Herrn bist.
-	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_03"); //So gehe denn mit Innos' Segen und helfe auch weiterhin die Welt nach seinem Willen zu gestalten.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_00"); //Powitania, bracia. Jak tylko rozmawialismy, kilku uczniów szybko przyszlo sie modlic.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_01"); //To miejsce wiary jest teraz po raz kolejny, tak jak powinno byc? i watpie, ze to zbieg okolicznosci.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_02"); //Twoje zaangazowanie w nasza wiare pokazuje, ze jestes prawdziwym sluga naszego Pana.
+	AI_Output(self, hero, "Info_Mod_Nagon_MangelQuest2_10_03"); //Idzcie wiec z blogoslawienstwem Innosa i nadal pomagajcie ksztaltowac swiat zgodnie z jego wola.
 
 	B_BlessAttribute	(hero, ATR_MANA_MAX, 3);
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Nagon war erfreut über die Gläubigen in der Kirche.");
+	B_LogEntry	(TOPIC_MOD_FM_MANGEL, "Nagon byl zadowolony z wiernych w kosciele.");
 
 	B_StopMangel();
 };
@@ -207,17 +207,17 @@ FUNC INT Info_Mod_Nagon_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Nagon_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Nagon_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Nagon_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Nagon_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Nagon_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Nagon_LastPetzCounter);
 		
@@ -232,42 +232,42 @@ FUNC VOID Info_Mod_Nagon_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Nagon_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Nagon_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Nagon_LastPetzCrime == CRIME_THEFT)
 		|| ( (Nagon_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Nagon_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Nagon_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Nagon_Schulden			= 0;
 			Nagon_LastPetzCounter 	= 0;
@@ -275,9 +275,9 @@ FUNC VOID Info_Mod_Nagon_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Nagon_Schulden);
-			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Nagon_PMSchulden_10_14"); //Co to jest?
 		};
 	};
 	
@@ -286,27 +286,27 @@ FUNC VOID Info_Mod_Nagon_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Nagon_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Nagon_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Nagon_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Nagon_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Nagon_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Ile to znów bylo?",Info_Mod_Nagon_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Nagon_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Nagon_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Nagon_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Nagon_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Nagon_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Nagon_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Nagon_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Nagon_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Nagon_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Nagon_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Nagon_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Nagon_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Nagon_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Nagon_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Nagon_PMSchulden,"Ile to znów bylo?",Info_Mod_Nagon_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Nagon_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Nagon_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Nagon_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Nagon_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Nagon_PETZMASTER_PayNow);
 	};
 };
 
@@ -335,13 +335,13 @@ FUNC VOID Info_Mod_Nagon_PETZMASTER_Info()
 	// ------ SC hat mit Nagon noch nicht gesprochen ------
 	if (B_GetAivar(self, AIV_TalkedToPlayer) == FALSE)
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_00"); //Du musst der Neue sein, der hier im Kloster Ärger gemacht hat.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_00"); //Musisz byc nowym facetem, który spowodowal klopoty w klasztorze.
 	};	
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Nagon_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -349,42 +349,42 @@ FUNC VOID Info_Mod_Nagon_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_04"); //Die meisten Magier und Paladine werden einen Mörder im Kloster nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_04"); //Wiekszosc magów i paladynów nie toleruje mordercy w klasztorze!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_06"); //Nie interesuje mnie to, ze moge panstwa umiescic na szubienicy.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_07"); //Ale nie bedzie latwo sprawic, by ludzie znów byli laskawi.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_08"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_09"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_10"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_11"); //Ich werde so ein Verhalten im Kloster nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_11"); //Nie bede tolerowal takiego zachowania w klasztorze!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_12"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Nagon_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_13"); //Wenn du dich mit den Schwarzmagiern anlegst, geht uns das nichts an.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_14"); //Aber wenn du Magier oder Paladine angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_13"); //Miesz sie z czarnymi magami, to nie jest nasza dzialalnosc.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_14"); //Ale jesli zaatakujesz czarodziej lub paladyne, bede musial cie pociagnac do odpowiedzialnosci.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_15"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_16"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_17"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Nagon_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -392,14 +392,14 @@ FUNC VOID Info_Mod_Nagon_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_18"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_19"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_10_20"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Nagon_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_15_21"); //Ile?
 	
 	if (Nagon_Schulden > 1000)	{	Nagon_Schulden = 1000;	};
 		
@@ -407,18 +407,18 @@ FUNC VOID Info_Mod_Nagon_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Nagon_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Nagon_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Nagon_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Nagon_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Nagon_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Nagon_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Nagon_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Nagon_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Nagon_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Nagon_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Nagon_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Nagon_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Nagon_Schulden);
-	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayNow_10_01"); //Gut! Ich werde dafür sorgen, dass es jeder im Kloster erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayNow_10_01"); //Dobrze! Doloze wszelkich staran, aby wszyscy w klasztorze sie o tym dowiedzieli - to w pewnym stopniu przywróci Twoja reputacje.
 
 	B_GrantAbsolution (LOC_PATHERION);
 	
@@ -432,9 +432,9 @@ func void Info_Mod_Nagon_PETZMASTER_PayNow()
 
 func void Info_Mod_Nagon_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Nagon_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Nagon_LastPetzCrime		= B_GetGreatestPetzCrime(self);

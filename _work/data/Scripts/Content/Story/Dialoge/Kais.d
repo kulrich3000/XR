@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Kais_Hi (C_INFO)
 	information	= Info_Mod_Kais_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Na'im schickt mich. Du hast wohl ein Problem.";
+	description	= "Witaj! No cóz, wyslal mnie. Musisz miec problem.";
 };
 
 FUNC INT Info_Mod_Kais_Hi_Condition()
@@ -20,9 +20,9 @@ FUNC INT Info_Mod_Kais_Hi_Condition()
 
 FUNC VOID Info_Mod_Kais_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kais_Hi_15_00"); //Hallo! Na'im schickt mich. Du hast wohl ein Problem.
-	AI_Output(self, hero, "Info_Mod_Kais_Hi_01_01"); //Was die erzählen. Es ist nichts. Jedenfalls im Moment nicht. Später vielleicht.
-	AI_Output(hero, self, "Info_Mod_Kais_Hi_15_02"); //Verstehe. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Kais_Hi_15_00"); //Witaj! No cóz, wyslal mnie. Musisz miec problem.
+	AI_Output(self, hero, "Info_Mod_Kais_Hi_01_01"); //Co oni mówia. To nic. Tak czy owak, nie w tej chwili. Moze pózniej.
+	AI_Output(hero, self, "Info_Mod_Kais_Hi_15_02"); //Widze. Do zobaczenia dookola.
 };
 
 INSTANCE Info_Mod_Kais_Blutkelch (C_INFO)
@@ -46,22 +46,22 @@ FUNC INT Info_Mod_Kais_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Kais_Blutkelch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_00"); //Endlich! Wo steckst du die ganze Zeit?
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_01"); //Du hast mich doch weggeschickt. Ich hab 'ne Auszeit genommen.
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_02"); //Auszeit. Das war aber zur Unzeit.
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_03"); //Jetzt bin ich ja da. Was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_04"); //Nun höre, wir Magier haben ein Problem.
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_05"); //Ich bin ganz Ohr. Wie kann ich helfen?
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_06"); //Einige von uns haben Bruchteile einer Botschaft oder so erhalten.
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_07"); //Die scheinen irgendwie zusammemzugehören, aber keiner hat bis jetzt herausgefunden, was das bedeutet.
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_08"); //Aha. Und nun darf ich raten ...
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_09"); //Genau. Du bist doch angeblich ein schaues Kerlchen. Sagt man.
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_10"); //Nun gut. Ich kanns mal probieren.
-	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_11"); //Hier ist mein Teil. Noch einen haben der Magier Mahamad und Ratsmitglied Norek.
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_00"); //W koncu! Gdzie byles caly czas?
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_01"); //Wyslales mnie, czy nie? Zrobilem przerwe.
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_02"); //Czas wolny. To bylo z czasem.
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_03"); //Jestem tu teraz. Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_04"); //Teraz sluchaj, my, magicy, mamy problem.
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_05"); //Jestem uszy. Jak moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_06"); //Niektórzy z nas otrzymali ulamki wiadomosci lub cos.
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_07"); //Wydaje sie, ze w jakis sposób naleza one do siebie, ale nikt jeszcze nie zorientowal sie, co to oznacza.
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_08"); //Uh-huh. A teraz pozwole sobie odgadnac.....
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_09"); //Dokladnie. Masz byc przystojnym bliznim. Tak mówia.
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_10"); //Bardzo dobrze. Moge to kiedys spróbowac.
+	AI_Output(self, hero, "Info_Mod_Kais_Blutkelch_01_11"); //Oto mój udzial. Jest jeszcze jeden dla maga Mahamada i radnego Noreka.
 
 	B_GiveInvItems	(self, hero, ItWr_BlutkelchZettel1, 1);
 
-	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_12"); //Ich schau dann mal.
+	AI_Output(hero, self, "Info_Mod_Kais_Blutkelch_15_12"); //Zobacze.
 
 	B_RemoveNpc	(Mod_7199_ASS_Amir_NW);
 };

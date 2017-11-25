@@ -20,27 +20,27 @@ FUNC INT Info_Mod_HofstaatArsch_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_00"); //(bürokratisch) Ja?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_00"); //(biurokratyczna) Takeah?
 
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_01"); //Ich bin der königliche Arsch.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_02"); //Wenn sie es hier zu etwas bringen wollen, dann sollten sie es sich nicht mit mir verscheißen.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_03"); //Der König legt großen Wert auf die Meinung seines Arsches!
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_01"); //Jestem tylkiem króla.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_02"); //Jesli chcesz cos zmienic tutaj, nie fajkuj mi.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_16_03"); //Król kocha opinie swego tylka!
 
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Hi);
 
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Hi, "Dann kannst du doch sicher ein gutes Wort für mich einlegen.", Info_Mod_HofstaatArsch_Hi_B);
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Hi, "Das ist nur heiße Luft!", Info_Mod_HofstaatArsch_Hi_A);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Hi, "Wtedy jestem pewien, ze mozecie powiedziec mi dobre slowo.", Info_Mod_HofstaatArsch_Hi_B);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Hi, "To tylko gorace powietrze!", Info_Mod_HofstaatArsch_Hi_A);
 };
 
 FUNC VOID Info_Mod_HofstaatArsch_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_C_16_00"); //Wie dem auch sei, den Raum durchqueren, die Leiter hinauf und dann dort wieder bis zum Ende des Raumes.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_C_15_01"); //Was?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_C_16_02"); //Dort finden sie den König. Und jetzt lassen sie mich weiterarbeiten.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_C_16_00"); //Tak czy inaczej, przeprawic sie przez pomieszczenie, wspiac sie po drabinie i z powrotem na koniec pomieszczenia.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_C_15_01"); //Co?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Hi_C_16_02"); //Tam wlasnie znajda króla. Teraz pozwole sobie wrócic do pracy.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Der Weg zum König des Hofstaates ist frei. Er befindet sich im Stockwerk über mir.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Droga do króla panstwa sadu jest jasna. On jest na podlodze nade mna.");
 
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Hi);
 
@@ -49,14 +49,14 @@ FUNC VOID Info_Mod_HofstaatArsch_Hi_C()
 
 FUNC VOID Info_Mod_HofstaatArsch_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_B_15_00"); //Dann kannst du doch sicher ein gutes Wort für mich einlegen.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_B_15_00"); //Wtedy jestem pewien, ze mozecie powiedziec mi dobre slowo.
 
 	Info_Mod_HofstaatArsch_Hi_C();
 };
 
 FUNC VOID Info_Mod_HofstaatArsch_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_A_15_00"); //Das ist nur heiße Luft!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Hi_A_15_00"); //To tylko gorace powietrze!
 
 	Info_Mod_HofstaatArsch_Hi_C();
 };
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_HofstaatArsch_MagierTermin (C_INFO)
 	information	= Info_Mod_HofstaatArsch_MagierTermin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche einen Termin beim Hofmagier.";
+	description	= "Potrzebuje spotkania z magikiem dworskim.";
 };
 
 FUNC INT Info_Mod_HofstaatArsch_MagierTermin_Condition()
@@ -82,14 +82,14 @@ FUNC INT Info_Mod_HofstaatArsch_MagierTermin_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_MagierTermin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_MagierTermin_15_00"); //Ich brauche einen Termin beim Hofmagier.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_MagierTermin_16_01"); //Der königliche Hofmagier wird Sie empfangen. Gehen sie in den Turm.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_MagierTermin_15_00"); //Potrzebuje spotkania z magikiem dworskim.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_MagierTermin_16_01"); //Czarodziej dworu królewskiego powita Cie. Wejdz do wiezy.
 
 	B_StartOtherRoutine	(Mod_7011_HS_Alex_REL, "MAGIER");
 
 	AI_Teleport	(Mod_7011_HS_Alex_REL, "REL_290");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Der Hofmagier wird mich jetzt empfangen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_FREUDENSPENDER, "Magik nadworny zobaczy mnie teraz.");
 };
 
 INSTANCE Info_Mod_HofstaatArsch_Drogenminister (C_INFO)
@@ -112,23 +112,23 @@ FUNC INT Info_Mod_HofstaatArsch_Drogenminister_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_Drogenminister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_00"); //Dienstgrad?
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_01"); //Wie?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_02"); //Dienstgrad!
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_03"); //Ahm ...
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_04"); //Sind die auf den Mund gefallen? Warten Sie ... Sie sind doch das königliche Mädchen für alles, oder?
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_05"); //Ja.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_06"); //Falsch. Sie sind mit sofortiger Wirkung ihrem Amt enthoben, direkter Befehl von oben. Sie wurden befördert.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_07"); //Dann bin ich jetzt die Frau für alles oder was?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_08"); //Bedaure, der Platz ist schon vergeben, der König braucht zur Zeit kein weiteres Freudenmädchen. Der König sprach, ich zitiere:
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_06_09"); //(mit Stimme des Königs) Fortan soll es nichtmehr das Amt des königlichen Mädchen für alles sein, das euer Wesen ziert. Ihr habet großes Potential und noch größere Potenz bewiesen.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_06_10"); //Alsdann, seied ihr fortan, da ihr Probleme einfach von dem Tisch zu wischen vermagt, als der königliche Kehrwisch bekannt! Senket euer Haupt ... in Stolz!
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_11"); //Zuviel der Ehre. Ich soll diese Aufzeichnungen dem König bringen.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_12"); //Der ist zurzeit unabkömmlich, er sorgt sich.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_13"); //Im Thronsaal?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_14"); //Nein, am Freifluss, in der Nähe der Bauernhöfe.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_00"); //Ranking?
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_01"); //Jak?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_02"); //Praca w klasie uzytkowej!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_03"); //Um....
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_04"); //Czy oni upadli za to? Poczekaj.... Jestes królewska dziewczyna za wszystko, czyz nie jestes?
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_05"); //Tak.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_06"); //Nieprawidlowe. Sa oni zwolnieni z urzedu ze skutkiem natychmiastowym, bezposrednio od góry. Zostales awansowany.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_07"); //Wiec teraz jestem kobieta za wszystko i co?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_08"); //Przepraszamy, miejsce jest juz zajete, król nie potrzebuje w tej chwili kolejnej dziewczyny przyjemnosci. Król mówil, cytuje:
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_06_09"); //Glos króla) Odtad nie bedzie to juz urzad królewskiej panny dla wszystkich, którzy ozdabiaja twoja istote. Wykazaliscie sie Panstwo ogromnym potencjalem i jeszcze wieksza sila dzialania.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_06_10"); //Nastepnie, od tego momentu, zostaniesz uciszony, poniewaz Twoje problemy zostana po prostu wymazane ze stolu, zwanego królewskim zamachowcem! Opusc glowe.... w dumie!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_11"); //Zbyt wiele szacunku. Bede te notatki przekazywal królowi.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_12"); //On nie jest teraz dostepny, troszczy sie o niego.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Drogenminister_15_13"); //Na sali tronowej?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Drogenminister_16_14"); //Nie, nad rzeka wolna, w poblizu gospodarstw rolnych.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der König sorgt sich in der Nähe der Bauernhöfe am Freifluss. Ich sollte ihn aufsuchen, um ihm die Aufzeichnungen zu zeigen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Król troszczy sie o wolna rzeke w poblizu farm. Powinienem go zobaczyc i pokazac mu notatki.");
 };
 
 INSTANCE Info_Mod_HofstaatArsch_Orakel (C_INFO)
@@ -151,41 +151,41 @@ FUNC INT Info_Mod_HofstaatArsch_Orakel_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_Orakel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_00"); //Was kann ich für Sie tun?
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_15_01"); //Ich möchte bei dir einen Termin beim Orakel ausmachen.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_02"); //Also so geht das nicht weiter! Haben wir beide schon mal zusammen Schafe gehütet?
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_15_03"); //Nicht, dass ich wüsste.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_04"); //Dann finde ich es äußerst unangebracht, stets von ihnen geduzt zu werden! Das wird nun augenblicklich unterbunden!
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_00"); //Co moge dla Ciebie zrobic?
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_15_01"); //Chcialbym umówic sie z Toba na spotkanie w Oracle.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_02"); //Wiec to nie moze isc dalej! Czy przedtem hodowalismy razem dwie owce?
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_15_03"); //Nie wiem o tym.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_16_04"); //Wtedy uwazam za calkowicie niestosowne, ze zawsze powinni mnie przesladowac! Teraz natychmiast sie to zatrzymuje!
 
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Orakel);
 
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Garnichts wirst du unterbinden!", Info_Mod_HofstaatArsch_Orakel_B);
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Verzeiht, werter Arsch, ich bitte  vielmals um Entschuldigung.", Info_Mod_HofstaatArsch_Orakel_A);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Nic sie nie zatrzymasz!", Info_Mod_HofstaatArsch_Orakel_B);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Przepraszam, przepraszam.", Info_Mod_HofstaatArsch_Orakel_A);
 };
 
 FUNC VOID Info_Mod_HofstaatArsch_Orakel_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_B_15_00"); //Garnichts wirst du unterbinden!
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_B_16_01"); //Entschuldigen sie sich augenblicklich, Unhold!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_B_15_00"); //Nic sie nie zatrzymasz!
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_B_16_01"); //Przepraszaj natychmiast, ogre!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Orakel);
 
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Garnichts werd ich!", Info_Mod_HofstaatArsch_Orakel_D);
-	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Entschuldigung, mir liegt nur das Sie nicht.", Info_Mod_HofstaatArsch_Orakel_C);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Nie bede niczym!", Info_Mod_HofstaatArsch_Orakel_D);
+	Info_AddChoice	(Info_Mod_HofstaatArsch_Orakel, "Przepraszam, po prostu cie nie lubie.", Info_Mod_HofstaatArsch_Orakel_C);
 };
 
 FUNC VOID Info_Mod_HofstaatArsch_Orakel_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_A_15_00"); //Verzeiht, werter Arsch, ich bitte  vielmals um Entschuldigung.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_A_16_01"); //Ach, bleiben Sie beim du, das klingt ja furchtbar wenn Sie sich in der gehobenen Sprache versuchen.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_A_15_00"); //Przepraszam, przepraszam.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_A_16_01"); //Ach, trzymaj sie z toba, to brzmi okropnie, gdy spróbujesz swojej reki na wysokim poziomie jezyka.
 	
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Orakel);
 };
 
 FUNC VOID Info_Mod_HofstaatArsch_Orakel_D()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_D_15_00"); //Garnichts werd ich!
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_D_16_01"); //Dieses Gespräch geht erst weiter, wenn du dich entschuldigt hast!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_D_15_00"); //Nie bede niczym!
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_D_16_01"); //Ta rozmowa trwa do momentu przeprosin!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Orakel);
 
@@ -194,8 +194,8 @@ FUNC VOID Info_Mod_HofstaatArsch_Orakel_D()
 
 FUNC VOID Info_Mod_HofstaatArsch_Orakel_C()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_C_15_00"); //Entschuldigung, mir liegt nur das Sie nicht.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_C_16_01"); //Na gut, dann bleiben Sie beim du.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Orakel_C_15_00"); //Przepraszam, po prostu cie nie lubie.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Orakel_C_16_01"); //Wszystko w prawo, zostan z toba.
 	
 	Info_ClearChoices	(Info_Mod_HofstaatArsch_Orakel);
 };
@@ -208,7 +208,7 @@ INSTANCE Info_Mod_HofstaatArsch_Entschuldigung (C_INFO)
 	information	= Info_Mod_HofstaatArsch_Entschuldigung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Entschuldigung, mir liegt nur das Sie nicht.";
+	description	= "Przepraszam, po prostu cie nie lubie.";
 };
 
 FUNC INT Info_Mod_HofstaatArsch_Entschuldigung_Condition()
@@ -235,7 +235,7 @@ INSTANCE Info_Mod_HofstaatArsch_OrakelTermin (C_INFO)
 	information	= Info_Mod_HofstaatArsch_OrakelTermin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Könnte ich jetzt vielleicht mit dem Orakel sprechen?";
+	description	= "Czy moge teraz porozmawiac z wyrocznia?";
 };
 
 FUNC INT Info_Mod_HofstaatArsch_OrakelTermin_Condition()
@@ -249,20 +249,20 @@ FUNC INT Info_Mod_HofstaatArsch_OrakelTermin_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_OrakelTermin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_00"); //Könnte ich jetzt vielleicht mit dem Orakel sprechen?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_01"); //Erst wenn du einen Termin vereinbart hast.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_02"); //Wann ist der nächste freie Termin?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_03"); //In drei Minuten.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_04"); //Dann hätte ich den gern.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_05"); //Tut mir leid, der wurde gerade vergeben.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_06"); //Gibt es sonst keinen Termin?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_07"); //Doch, nach dem Termin in drei Minuten immer.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_08"); //Immer? Ach was soll's, den Termin hätt' ich gern.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_09"); //Gut, Sie sind eingetragen, aber verpassen Sie ihren Termin nicht.
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_10"); //Und wo finde ich das Orakel?
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_11"); //Im Thronsaal. Er wird sie erwarten.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_00"); //Czy moge teraz porozmawiac z wyrocznia?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_01"); //Dopiero po umówieniu sie na spotkanie.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_02"); //Kiedy nastepna darmowa wizyta?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_03"); //W trzy minuty.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_04"); //Wtedy bym tego chcial.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_05"); //Przykro mi, ze to zostalo tylko przebaczone.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_06"); //Czy nie ma innego powolania?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_07"); //Tak, zawsze po wizycie w trzy minuty.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_08"); //Zawsze? W kazdym razie chcialbym umówic sie na spotkanie.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_09"); //Jestes na liscie, ale nie przegap spotkania.
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_OrakelTermin_15_10"); //A gdzie moge znalezc Oracle?
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_OrakelTermin_16_11"); //W sali tronowej. Bedzie oczekiwal jej.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Ich habe jetzt einen Termin beim Orakel. Es soll im Thronsaal zu finden sein.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Mam teraz spotkanie z Oracle. Mówi sie, ze jest w pokoju tronu.");
 };
 
 INSTANCE Info_Mod_HofstaatArsch_Transportsystem (C_INFO)
@@ -273,7 +273,7 @@ INSTANCE Info_Mod_HofstaatArsch_Transportsystem (C_INFO)
 	information	= Info_Mod_HofstaatArsch_Transportsystem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen bequemen Weg in die Sümpfe.";
+	description	= "Szukam wygodnej drogi przez bagna.";
 };
 
 FUNC INT Info_Mod_HofstaatArsch_Transportsystem_Condition()
@@ -286,8 +286,8 @@ FUNC INT Info_Mod_HofstaatArsch_Transportsystem_Condition()
 
 FUNC VOID Info_Mod_HofstaatArsch_Transportsystem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Transportsystem_15_00"); //Ich suche einen bequemen Weg in die Sümpfe.
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Transportsystem_16_01"); //Perverser Lüstling! Wenn Sie sich nicht augenblicklich in Luft auflösen bekommen Sie einen Tritt. Einen schmerzhaften. Einen UNGLAUBLICH schmerzhaften!
+	AI_Output(hero, self, "Info_Mod_HofstaatArsch_Transportsystem_15_00"); //Szukam wygodnej drogi przez bagna.
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Transportsystem_16_01"); //Odwrócic uwage! Jesli nie znikniesz na raz w cienkim powietrzu, dostaniesz kopniecie w tylek. Bolesny. Niezwykle bolesna!
 };
 
 INSTANCE Info_Mod_HofstaatArsch_Liste (C_INFO)
@@ -312,7 +312,7 @@ FUNC VOID Info_Mod_HofstaatArsch_Liste_Info()
 {
 	AI_TurnToNpc	(self, Mod_7285_HS_Koenig_REL);
 
-	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Liste_16_00"); //Hier ist die Liste ...
+	AI_Output(self, hero, "Info_Mod_HofstaatArsch_Liste_16_00"); //Oto lista.....
 
 	AI_StopProcessInfos	(self);
 

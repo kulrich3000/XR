@@ -11,7 +11,7 @@ const int	Value_Key_03			=	3;
 
 INSTANCE ItKe_Lockpick (C_Item)
 {
-	name 				=	"Dietrich";
+	name 				=	"zamek";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -27,7 +27,7 @@ INSTANCE ItKe_Lockpick (C_Item)
 
 INSTANCE ItKe_Bunch (C_Item)
 {
-	name 				=	"Schlüsselbund";
+	name 				=	"klucze";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -43,7 +43,7 @@ INSTANCE ItKe_Bunch (C_Item)
 
 INSTANCE ItKe_Lockpick_Mage (C_Item)
 {
-	name 				=	"magischer Dietrich";
+	name 				=	"czarnoksieznik z zamkiem blyskawicznym";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -59,7 +59,7 @@ INSTANCE ItKe_Lockpick_Mage (C_Item)
 
 INSTANCE ItKe_Lockpick_Mage_Unloaded (C_Item)
 {
-	name 				=	"magischer Dietrich (nicht aufgeladen)";
+	name 				=	"dietrich magiczny (nie naladowany)";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -79,7 +79,7 @@ INSTANCE ItKe_Lockpick_Mage_Unloaded (C_Item)
 
 INSTANCE ItKe_XR_NW_HOEHLE_01 (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -95,7 +95,7 @@ INSTANCE ItKe_XR_NW_HOEHLE_01 (C_Item)
 
 INSTANCE ItKe_XeresKnast (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -106,13 +106,13 @@ INSTANCE ItKe_XeresKnast (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[1]				=	"Öffnet die Zellen in Xeres' Gefängnis";
+	TEXT[1]				=	"Otwiera cele w wiezieniu Xeres.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_PennerVaterFreudenspender (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -123,13 +123,13 @@ INSTANCE ItKe_PennerVaterFreudenspender (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[1]				=	"von Penners Vater";
+	TEXT[1]				=	"przez ojca Pennera";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Darrion (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -140,13 +140,13 @@ INSTANCE ItKe_Darrion (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[1]				=	"von Darrion";
+	TEXT[1]				=	"Darrion";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_SekobScheune (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -157,13 +157,13 @@ INSTANCE ItKe_SekobScheune (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[1]				=	"aus Sekobs Scheune";
+	TEXT[1]				=	"z obory Sekob.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Santino (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -174,13 +174,13 @@ INSTANCE ItKe_Santino (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[1]				=	"Schlüssel von Aleph";
+	TEXT[1]				=	"Klucze od Alepha";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Elena(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -196,7 +196,7 @@ INSTANCE ItKe_Elena(C_Item)
 
 INSTANCE ItKe_Akahasch(C_Item)
 {
-	name 				=	"Akahaschs Schlüssel";
+	name 				=	"Klucz Akahash' a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -212,7 +212,7 @@ INSTANCE ItKe_Akahasch(C_Item)
 
 INSTANCE ItKe_RitualsinselDoor(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -223,13 +223,13 @@ INSTANCE ItKe_RitualsinselDoor(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				=	"Für die Tür zu Teleportflamme";
+	TEXT[0]				=	"Do drzwi do plomienia teleportowego";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Mufid(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -240,13 +240,13 @@ INSTANCE ItKe_Mufid(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				=	"habe ich Mufid abgenommen";
+	TEXT[0]				=	"Stracilem Mufid.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Keith (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -257,13 +257,13 @@ INSTANCE ItKe_Keith (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				=	"Für Keiths Hütte";
+	TEXT[0]				=	"Do kabiny Keith' a";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_TugettsoTempel (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -279,7 +279,7 @@ INSTANCE ItKe_TugettsoTempel (C_Item)
 
 INSTANCE ItKe_Irdorath(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -295,7 +295,7 @@ INSTANCE ItKe_Irdorath(C_Item)
 
 INSTANCE ItKe_Eisturm01(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -311,7 +311,7 @@ INSTANCE ItKe_Eisturm01(C_Item)
 
 INSTANCE ItKe_Costa(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -327,7 +327,7 @@ INSTANCE ItKe_Costa(C_Item)
 
 INSTANCE ItKe_Canthar(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -343,7 +343,7 @@ INSTANCE ItKe_Canthar(C_Item)
 
 INSTANCE ItKe_SuchenderJG (C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -357,13 +357,13 @@ INSTANCE ItKe_SuchenderJG (C_Item)
 	effect				=	"SPELLFX_MANAPOTION";
 
 	description			= 	name;
-	TEXT[1]				= "Vom Suchenden im Nebelturm";
+	TEXT[1]				= "Z osoby poszukujacej w wiezy mgly.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_EchsenKey(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -374,13 +374,13 @@ INSTANCE ItKe_EchsenKey(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				= 	"Hatte die weiße Echse im Sumpf bei sich";
+	TEXT[0]				= 	"Mial bialy jaszczur w bagnie z nim.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_EchsenKey2(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -391,14 +391,14 @@ INSTANCE ItKe_EchsenKey2(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[0]				= 	"Hatte die weiße Echse im Sumpf bei sich";
-	TEXT[1]				= 	"Öffnet eine Tür im Süden des Sumpfes";
+	TEXT[0]				= 	"Mial bialy jaszczur w bagnie z nim.";
+	TEXT[1]				= 	"Otwiera drzwi na poludnie od bagna";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 INSTANCE ItKe_Andre(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -414,7 +414,7 @@ INSTANCE ItKe_Andre(C_Item)
 
 INSTANCE ItKe_ReislordVonPock(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -430,7 +430,7 @@ INSTANCE ItKe_ReislordVonPock(C_Item)
 
 INSTANCE ItKe_Wettstreit(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -446,7 +446,7 @@ INSTANCE ItKe_Wettstreit(C_Item)
 
 INSTANCE ItKe_Lehmar(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -462,7 +462,7 @@ INSTANCE ItKe_Lehmar(C_Item)
 
 INSTANCE ItKe_HSDM(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -478,7 +478,7 @@ INSTANCE ItKe_HSDM(C_Item)
 
 INSTANCE ItKe_MagicTempelKey(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -494,7 +494,7 @@ INSTANCE ItKe_MagicTempelKey(C_Item)
 
 INSTANCE ItKe_Key_01(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -510,7 +510,7 @@ INSTANCE ItKe_Key_01(C_Item)
 
 INSTANCE ItKe_RELMagier(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -526,7 +526,7 @@ INSTANCE ItKe_RELMagier(C_Item)
 
 INSTANCE ItKe_DrachsKey(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -542,7 +542,7 @@ INSTANCE ItKe_DrachsKey(C_Item)
 
 INSTANCE ItKe_WilfriedsHoehle(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -558,7 +558,7 @@ INSTANCE ItKe_WilfriedsHoehle(C_Item)
 
 INSTANCE ItKe_Key_02(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -574,7 +574,7 @@ INSTANCE ItKe_Key_02(C_Item)
 
 INSTANCE ItKe_Key_03(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -593,7 +593,7 @@ INSTANCE ItKe_Key_03(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_01(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -615,7 +615,7 @@ INSTANCE ItKe_City_Tower_01(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_02(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -637,7 +637,7 @@ INSTANCE ItKe_City_Tower_02(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_03(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -659,7 +659,7 @@ INSTANCE ItKe_City_Tower_03(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_04(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -681,7 +681,7 @@ INSTANCE ItKe_City_Tower_04(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_05(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -703,7 +703,7 @@ INSTANCE ItKe_City_Tower_05(C_Item)
 //****************************************************************************
 INSTANCE ItKe_City_Tower_06(C_Item)
 {
-	name 				=	"Turm Schlüssel";
+	name 				=	"Wieza Klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -725,7 +725,7 @@ INSTANCE ItKe_City_Tower_06(C_Item)
 //---------------------------------------------------------------------
 INSTANCE DungeonKey(C_Item)
 {
-	name 				=	"Kerkerschlüssel";
+	name 				=	"klucze loch";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -736,8 +736,8 @@ INSTANCE DungeonKey(C_Item)
 	material 				=	MAT_METAL;
 
 	description			= name;
-	TEXT[0]				= "öffnet den Kerker";
-	TEXT[0]				= "des Alten Lagers.";
+	TEXT[0]				= "otwiera loch";
+	TEXT[0]				= "Starego Obozu.";
 };
 
 

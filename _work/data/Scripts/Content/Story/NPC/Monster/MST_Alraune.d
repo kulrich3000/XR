@@ -5,7 +5,7 @@
 
 PROTOTYPE Mst_Default_Alraune(C_Npc)			
 {
-	name							=	"Alraune";
+	name							=	"trzpien";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Alraune;
 	level							=	50;		// SN: wegen XP, real nur Level 15!
@@ -67,7 +67,7 @@ INSTANCE Alraune	(Mst_Default_Alraune)
 
 INSTANCE Alraune_Sumpfis	(Mst_Default_Alraune)
 {
-	name	=	"hartnäckige Staude";
+	name	=	"uparty bylina";
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	100;
 	attribute	[ATR_HITPOINTS]		=	100;
@@ -143,7 +143,7 @@ INSTANCE Alraune_Echsis	(Mst_Default_Alraune)
 
 INSTANCE Alraune_Moor	(Mst_Default_Alraune)
 {
-	name	=	"Besessene Pflanze";
+	name	=	"Zaklady o zlozonym skladzie";
 
 	level		=	20;
 
@@ -194,7 +194,7 @@ INSTANCE Alraune_Moor	(Mst_Default_Alraune)
 
 INSTANCE Alraune_Botschek_01	(Mst_Default_Alraune)
 {
-	name	=	"Aggressives Unkraut";
+	name	=	"Agresywne chwasty";
 
 	level		=	10;
 
@@ -247,7 +247,7 @@ INSTANCE Alraune_Botschek_01	(Mst_Default_Alraune)
 
 INSTANCE Alraune_Botschek_02	(Mst_Default_Alraune)
 {
-	name	=	"Aggressives Unkraut";
+	name	=	"Agresywne chwasty";
 
 	level		=	10;
 
@@ -300,7 +300,7 @@ INSTANCE Alraune_Botschek_02	(Mst_Default_Alraune)
 
 INSTANCE Alraune_Botschek_03	(Mst_Default_Alraune)
 {
-	name	=	"Aggressives Unkraut";
+	name	=	"Agresywne chwasty";
 
 	level		=	10;
 

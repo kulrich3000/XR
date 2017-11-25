@@ -5,7 +5,7 @@ var C_ITEM CurrentWeapon;
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
-	name 				=	"Weltenspalter";
+	name 				=	"tasak";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;
@@ -20,12 +20,12 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Hashor.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"Byl to miecz nieumarlych";
+	TEXT[1]				=	"Orc-Priest Varrag Hashor.";
+	TEXT[2]				=	"Bron ta byla uzywana przez lata.";
+	TEXT[3]				=	"Stan sie bezuzyteczny!";
+	TEXT[4]				=	"Byc moze miecz jest nadal otwarty.";
+	TEXT[5]				=	"w inny sposób.";
 };
 
 //---------------------------------------------------------------------
@@ -33,7 +33,7 @@ INSTANCE Weltenspalter (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
-	name 				=	"Lichtbringer";
+	name 				=	"miotacz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -48,12 +48,12 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Kasorg.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"Byl to miecz nieumarlych";
+	TEXT[1]				=	"Orc-Priest Varrag-Kasorg.";
+	TEXT[2]				=	"Bron ta byla uzywana przez lata.";
+	TEXT[3]				=	"Stan sie bezuzyteczny!";
+	TEXT[4]				=	"Byc moze miecz jest nadal otwarty.";
+	TEXT[5]				=	"w inny sposób.";
 };
 
 //---------------------------------------------------------------------
@@ -61,7 +61,7 @@ INSTANCE Lichtbringer (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
-	name 				=	"Zeitenklinge";
+	name 				=	"ostrze czasowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -80,12 +80,12 @@ INSTANCE Zeitenklinge (C_Item)
 
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Unhilqt.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"Byl to miecz nieumarlych";
+	TEXT[1]				=	"Orc-Priest Varrag-Unhilqt.";
+	TEXT[2]				=	"Bron ta byla uzywana przez lata.";
+	TEXT[3]				=	"Stan sie bezuzyteczny!";
+	TEXT[4]				=	"Byc moze miecz jest nadal otwarty.";
+	TEXT[5]				=	"w inny sposób.";
 };
 
 func void Equip_Zeitenklinge()
@@ -104,7 +104,7 @@ func void UnEquip_Zeitenklinge()
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Dämonenstreich";
+	name 				=	"dowcip";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -119,12 +119,12 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Priesters Varrag-Ruuushk.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"Byl to miecz nieumarlych";
+	TEXT[1]				=	"Orc-Priest Varrag-Ruuushk.";
+	TEXT[2]				=	"Bron ta byla uzywana przez lata.";
+	TEXT[3]				=	"Stan sie bezuzyteczny!";
+	TEXT[4]				=	"Byc moze miecz jest nadal otwarty.";
+	TEXT[5]				=	"w inny sposób.";
 };
 
 //---------------------------------------------------------------------
@@ -132,7 +132,7 @@ INSTANCE Daemonenstreich (C_Item)
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
-	name 				=	"Bannklinge";
+	name 				=	"brzeszczot";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -147,17 +147,17 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Dies war das Schwert des untoten";
-	TEXT[1]				=	"Ork-Hohepriesters Grash-Varrag-Arushat.";
-	TEXT[2]				=	"Die Waffe ist im Laufe der Jahre";
-	TEXT[3]				=	"unbrauchbar geworden!";
-	TEXT[4]				=	"Vielleicht ist das Schwert noch auf";
-	TEXT[5]				=	"andere Art und Weise nützlich.";
+	TEXT[0]				=	"Byl to miecz nieumarlych";
+	TEXT[1]				=	"Ork Wysoki Ksiadz Kaplan Grash Varrag Arushat.";
+	TEXT[2]				=	"Bron ta byla uzywana przez lata.";
+	TEXT[3]				=	"Stan sie bezuzyteczny!";
+	TEXT[4]				=	"Byc moze miecz jest nadal otwarty.";
+	TEXT[5]				=	"w inny sposób.";
 };
 
 INSTANCE ItMw_Ritualdolch_Versengen (C_Item)
 {
-	name 				=	"Ritualdolch des Versengens";
+	name 				=	"Rytualny sztylet wypalajacy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -183,7 +183,7 @@ INSTANCE ItMw_Ritualdolch_Versengen (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Frost (C_Item)
 {
-	name 				=	"Ritualdolch des Frostes";
+	name 				=	"Sztylet rytualny sztylet mrozu";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -209,7 +209,7 @@ INSTANCE ItMw_Ritualdolch_Frost (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Seuche (C_Item)
 {
-	name 				=	"Ritualdolch des Siechtums";
+	name 				=	"Sztylet rytualny slabosci";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -235,7 +235,7 @@ INSTANCE ItMw_Ritualdolch_Seuche (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Gift (C_Item)
 {
-	name 				=	"Ritualdolch des Giftes";
+	name 				=	"Sztylet rytualny trucizny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -261,7 +261,7 @@ INSTANCE ItMw_Ritualdolch_Gift (C_Item)
 
 INSTANCE ItMw_Ritualdolch_Blut (C_Item)
 {
-	name 				=	"Ritualdolch des Blutes";
+	name 				=	"Sztylet rytualny krwi";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -287,7 +287,7 @@ INSTANCE ItMw_Ritualdolch_Blut (C_Item)
 
 instance ITMW_FEUERSCHWERT(C_Item)
 {
-	name = "Feuerschwert";
+	name = "miecz pozarowy";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -304,14 +304,14 @@ instance ITMW_FEUERSCHWERT(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "Czarna bron";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_Feuerschwert_Geschaerft(C_Item)
 {
-	name = "Feuerschwert (geschärft)"; 
+	name = "Miecz pozarowy (wyostrzony)"; 
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -328,14 +328,14 @@ instance ITMW_Feuerschwert_Geschaerft(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "Czarna bron";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_ICESWORD(C_Item)
 {
-	name = "Eisschwert";
+	name = "miecz lodowy";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -352,14 +352,14 @@ instance ITMW_ICESWORD(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "Czarna bron";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 instance ITMW_ICESWORD_Geschaerft(C_Item)
 {
-	name = "Eisschwert (geschärft)";
+	name = "Miecz lodu (wyostrzony)";
 	mainflag = ITEM_KAT_NF;
 	flags = ITEM_2HD_SWD;
 	material = MAT_METAL;
@@ -376,14 +376,14 @@ instance ITMW_ICESWORD_Geschaerft(C_Item)
 	count[2] = damageTotal;
 	text[3] = NAME_Str_needed;
 	count[3] = cond_value[2];
-	text[4] = "Eine magische Waffe";
+	text[4] = "Czarna bron";
 	text[5] = NAME_Value;
 	count[5] = value;
 };
 
 INSTANCE ItMW_Sense_02 (C_Item)
 {	
-	name 				=	"Sense";  
+	name 				=	"kosa";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -408,7 +408,7 @@ INSTANCE ItMW_Sense_02 (C_Item)
 };
 INSTANCE ItMW_Sense_02_Geschaerft (C_Item)
 {	
-	name 				=	"Sense (geschärft)";  
+	name 				=	"kosa (naostrzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -434,7 +434,7 @@ INSTANCE ItMW_Sense_02_Geschaerft (C_Item)
 
 INSTANCE ItMW_Sense_03 (C_Item)
 {	
-	name 				=	"Sense";  
+	name 				=	"kosa";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -459,7 +459,7 @@ INSTANCE ItMW_Sense_03 (C_Item)
 };
 INSTANCE ItMW_Sense_03_Geschaerft (C_Item)
 {	
-	name 				=	"Sense (geschärft)";  
+	name 				=	"kosa (naostrzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -485,7 +485,7 @@ INSTANCE ItMW_Sense_03_Geschaerft (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Magieteil (C_Item)
 {	
-	name 				=	"Adanos Stab (Magieseite)";  
+	name 				=	"Adanos Personel (strona magiczna)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -511,7 +511,7 @@ INSTANCE ItMW_Adanos_Stab_Magieteil (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Kampfteil (C_Item)
 {	
-	name 				=	"Adanos Stab (Kampfseite)";  
+	name 				=	"Sztab Adano (po stronie walczacej)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -537,7 +537,7 @@ INSTANCE ItMW_Adanos_Stab_Kampfteil (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Teil1 (C_Item)
 {	
-	name 				=	"Adanos Stab (Bruchstück 1)";  
+	name 				=	"Pracownicy firmy Adanos (przerwa 1)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -562,7 +562,7 @@ INSTANCE ItMW_Adanos_Stab_Teil1 (C_Item)
 
 INSTANCE ItMW_Adanos_Stab_Teil2 (C_Item)
 {	
-	name 				=	"Adanos Stab (Bruchstück 2)";  
+	name 				=	"Pracownicy firmy Adanos (przerwa 2)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE|ITEM_SHOW;
@@ -587,7 +587,7 @@ INSTANCE ItMW_Adanos_Stab_Teil2 (C_Item)
 
 INSTANCE Xeres_Schwert (C_Item)
 {
-	name 				=	"Xeres' Schwert";
+	name 				=	"Miecz Xe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -613,7 +613,7 @@ INSTANCE Xeres_Schwert (C_Item)
 
 INSTANCE Xeres_Schwert_Geschaerft (C_Item)
 {
-	name 				=	"Xeres Schwert (geschärft)";
+	name 				=	"Miecz Xeres (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -639,7 +639,7 @@ INSTANCE Xeres_Schwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Neok_Zeusschwert_01 (C_Item)
 {	
-	name 				=	"Zeusschwert";
+	name 				=	"zerowy miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -663,7 +663,7 @@ INSTANCE ItMw_1H_Neok_Zeusschwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_Neok_Zeusschwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Zeusschwert (geschärft)";
+	name 				=	"Miecz zeusowy (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -688,7 +688,7 @@ INSTANCE ItMw_1H_Neok_Zeusschwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_Faustklaue (C_Item)
 {	
-	name 				=	"Faustschwert";
+	name 				=	"piesc miecza";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -713,7 +713,7 @@ INSTANCE ItMw_Faustklaue (C_Item)
 
 INSTANCE ItMw_Lurkerklaue (C_Item)
 {	
-	name 				=	"Lurkerklaue";
+	name 				=	"pazur purkera";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -762,7 +762,7 @@ INSTANCE ItMw_1H_Neok_Athos_01 (C_Item)
 };
 INSTANCE ItMw_1H_Neok_Athos_01_Geschaerft (C_Item)
 {	
-	name 				=	"Athos (geschärft)";
+	name 				=	"Athos (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -812,7 +812,7 @@ INSTANCE ItMw2hOrcMace01 (C_Item)
 
 INSTANCE ItMw_Schmetteraxt (C_Item)
 {	
-	name 				=	"Schmetteraxt";
+	name 				=	"siekiera motylkowa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -836,7 +836,7 @@ INSTANCE ItMw_Schmetteraxt (C_Item)
 };
 INSTANCE ItMw_Schmetteraxt_Geschaerft (C_Item)
 {	
-	name 				=	"Schmetteraxt (geschärft)";
+	name 				=	"Osie motylkowe (ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -861,7 +861,7 @@ INSTANCE ItMw_Schmetteraxt_Geschaerft (C_Item)
 
 INSTANCE ItMw_Truemmeraxt (C_Item)
 {	
-	name 				=	"Trümmeraxt";
+	name 				=	"topór szczatkowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -885,7 +885,7 @@ INSTANCE ItMw_Truemmeraxt (C_Item)
 };
 INSTANCE ItMw_Truemmeraxt_Geschaerft (C_Item)
 {	
-	name 				=	"Trümmeraxt (geschärft)";
+	name 				=	"Osad gruzowy (osloniety)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -910,7 +910,7 @@ INSTANCE ItMw_Truemmeraxt_Geschaerft (C_Item)
 
 INSTANCE ItMW_Schaedelbrecher (C_Item)
 {	
-	name 				=	"Schädelbrecher";  
+	name 				=	"kruszarki czaszek";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -936,7 +936,7 @@ INSTANCE ItMW_Schaedelbrecher (C_Item)
 };
 INSTANCE ItMW_Schaedelbrecher_Geschaerft (C_Item)
 {	
-	name 				=	"Schädelbrecher (geschärft)";  
+	name 				=	"Kruszarka do czaszki (naostrzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -963,7 +963,7 @@ INSTANCE ItMW_Schaedelbrecher_Geschaerft (C_Item)
 
 INSTANCE ItMW_Drachenaxt (C_Item)
 {	
-	name 				=	"Drachenaxt";  
+	name 				=	"topór smoczy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -988,7 +988,7 @@ INSTANCE ItMW_Drachenaxt (C_Item)
 };
 INSTANCE ItMW_Drachenaxt_Geschaerft (C_Item)
 {	
-	name 				=	"Drachenaxt (geschärft)";  
+	name 				=	"Dragon Axe (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1014,7 +1014,7 @@ INSTANCE ItMW_Drachenaxt_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Eminem_Eisenklinge_02 (C_Item)
 {
-	name 				=	"Eisenklinge";
+	name 				=	"ostrze zelazka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1039,7 +1039,7 @@ INSTANCE ItMw_1H_Eminem_Eisenklinge_02 (C_Item)
 };
 INSTANCE ItMw_1H_Eminem_Eisenklinge_02_Geschaerft (C_Item)
 {
-	name 				=	"Eisenklinge (geschärft)";
+	name 				=	"Brzeszczot zelazowy (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1065,7 +1065,7 @@ INSTANCE ItMw_1H_Eminem_Eisenklinge_02_Geschaerft (C_Item)
 
 INSTANCE ItMw_Gladius (C_Item)
 {
-	name 				=	"Gladius";
+	name 				=	"gladius";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1090,7 +1090,7 @@ INSTANCE ItMw_Gladius (C_Item)
 };
 INSTANCE ItMw_Gladius_Geschaerft (C_Item)
 {
-	name 				=	"Gladius (geschärft)";
+	name 				=	"Gladiusz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1116,7 +1116,7 @@ INSTANCE ItMw_Gladius_Geschaerft (C_Item)
 
 INSTANCE ItMw_Kurzschwert (C_Item)
 {
-	name 				=	"Kurzschwert";
+	name 				=	"krótki miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1141,7 +1141,7 @@ INSTANCE ItMw_Kurzschwert (C_Item)
 };
 INSTANCE ItMw_Kurzschwert_Geschaerft (C_Item)
 {
-	name 				=	"Kurzschwert (geschärft)";
+	name 				=	"Krótki miecz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1167,7 +1167,7 @@ INSTANCE ItMw_Kurzschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Klingendolch (C_Item)
 {
-	name 				=	"Klingendolch";
+	name 				=	"sztylet";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1192,7 +1192,7 @@ INSTANCE ItMw_Klingendolch (C_Item)
 };
 INSTANCE ItMw_Klingendolch_Geschaerft (C_Item)
 {
-	name 				=	"Klingendolch (geschärft)";
+	name 				=	"Sztylet ostrzony";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1218,7 +1218,7 @@ INSTANCE ItMw_Klingendolch_Geschaerft (C_Item)
 
 INSTANCE ItMw_Klauenschwert (C_Item)
 {
-	name 				=	"Klauenschwert";
+	name 				=	"kopyto miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1243,7 +1243,7 @@ INSTANCE ItMw_Klauenschwert (C_Item)
 };
 INSTANCE ItMw_Klauenschwert_Geschaerft (C_Item)
 {
-	name 				=	"Klauenschwert (geschärft)";
+	name 				=	"Miecz ostrzony (ostry)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1269,7 +1269,7 @@ INSTANCE ItMw_Klauenschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Schuetterschwert (C_Item)
 {
-	name 				=	"Schütterschwert";
+	name 				=	"";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1294,7 +1294,7 @@ INSTANCE ItMw_Schuetterschwert (C_Item)
 };
 INSTANCE ItMw_Schuetterschwert_Geschaerft (C_Item)
 {
-	name 				=	"Schütterschwert (geschärft)";
+	name 				=	"Przegroda grodziowa (zaostrzona)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1320,7 +1320,7 @@ INSTANCE ItMw_Schuetterschwert_Geschaerft (C_Item)
 
 INSTANCE ItMW_AxtDesUntergangs (C_Item)
 {	
-	name 				=	"Axt des Untergangs";  
+	name 				=	"Os zguba";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1346,7 +1346,7 @@ INSTANCE ItMW_AxtDesUntergangs (C_Item)
 
 INSTANCE ItMw_BennetGreg (C_Item)
 {	
-	name 				=	"Bennets spezielles Schwert ";
+	name 				=	"Specjalny miecz Benneta ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD | ITEM_SHOW;	

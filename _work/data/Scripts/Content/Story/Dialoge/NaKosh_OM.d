@@ -6,7 +6,7 @@ INSTANCE Info_Mod_NaKosh_OM_Hi (C_INFO)
 	information	= Info_Mod_NaKosh_OM_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, wie läuft die Crawlerjagd?";
+	description	= "Wiec jak to jest polowanie na gasienice?";
 };
 
 FUNC INT Info_Mod_NaKosh_OM_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_NaKosh_OM_Hi_Condition()
 
 FUNC VOID Info_Mod_NaKosh_OM_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_NaKosh_OM_Hi_15_00"); //Und, wie läuft die Crawlerjagd?
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_01"); //(desillusioniert, benebelt) Garnicht. Wozu auch? Die großen Tage der Bruderschaft sind vorüber. Die einstmals großen Ziele sind nun dem Handel mit Kraut und Erz gewichen.
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_02"); //Und von dem einstigen Stolz des Templers ist nichts geblieben ... außer der Schande.
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_03"); //Ja, wo sind sie, die stolzen Taten und Insignien der Krieger? Zerfallen zu Nichts ... zerfallen zu Staub.
+	AI_Output(hero, self, "Info_Mod_NaKosh_OM_Hi_15_00"); //Wiec jak to jest polowanie na gasienice?
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_01"); //W ogóle nie. Jaki jest pozytek? Wielkie dni braterstwa juz sie skonczyly. Niegdys wielkie cele ustapily teraz miejsca handlowi kapusta i ruda.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_02"); //I nic nie pozostalo z dawnej dumy templariusza.... z wyjatkiem wstydu.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_Hi_13_03"); //Tak, gdzie oni, dumni czyny i insygnia wojowników? Zgnilizna do niczego.... rozpad na pyl.
 };
 
 INSTANCE Info_Mod_NaKosh_OM_ZeichenDerBruderschaft (C_INFO)
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_Condition()
 
 FUNC VOID Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_Info()
 {
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_00"); //(aufgerüttelt) Was… was sehe ich da? Das Zeichen der Bruderschaft, welches mein einstiger Mentor bei sich trug? Du hast es bei dir?
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_01"); //Vielleicht ist doch nicht alles vertan, wenn ein einzelner Mann das erbringen kann, was als verloren galt.
-	AI_Output(hero, self, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_15_02"); //Es liegt in der Hand des Einzelnen, was er Kraft seines Mutes erreicht.
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_03"); //(sich besinnend) Ja ... ja du hast recht.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_00"); //Cóz, na co patrze? Znak braterstwa, który mój byly mentor nosil z nim? Masz ja u siebie?
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_01"); //Byc moze nie wszystko jest stracone, jesli jeden czlowiek moze osiagnac to, co zostalo uznane za zagubione.
+	AI_Output(hero, self, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_15_02"); //To w rekach jednostki znajduje sie to, co osiaga na mocy swojej odwagi.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_03"); //(pamietajac) Tak...... Tak, masz racje.
 
 	CreateInvItems	(self, TPL_ARMOR_M, 1);
 
@@ -58,9 +58,9 @@ FUNC VOID Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_Info()
 
 	AI_EquipBestMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_04"); //Lange genug habe ich mich in den Schwaden des Sumpfkrauts betäubt. Es wird wieder Zeit den Krieger in mir zu ergründen, der ich einstmals war.
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_05"); //(bestimmend zu dem Helden) So wisse: Wann immer du einen Gefährten im Kampf brauchst, werde ich vor dem Eingang dieser Mine darauf warten dir beizustehen.
-	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_06"); //Die Ehre des Kämpfers möge dich Allzeit geleiten.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_04"); //Dawno juz sie uspokajalem w chmurach bagnistych. Nadszedl czas, aby zrozumiec wojownika wewnatrz mnie, ze kiedys bylem.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_05"); //(ustalenie bohatera) Znajcie to: ilekroc potrzebujecie towarzysza w bitwie, bede czekac przed wejsciem do kopalni, aby wam pomóc.
+	AI_Output(self, hero, "Info_Mod_NaKosh_OM_ZeichenDerBruderschaft_13_06"); //Niech zaszczyt wojownika bedzie zawsze z wami.
 
 	AI_StopProcessInfos	(self);
 

@@ -21,8 +21,8 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Runensteine"					);
+					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
+					Doc_PrintLine	( nDocID,  0, "Runestones"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -30,7 +30,7 @@ FUNC VOID Use_Bookstand_Rune_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Strona 2 Strona 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -57,8 +57,8 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Runen und ihre Ingredenzien"	);
+					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
+					Doc_PrintLine	( nDocID,  0, "Runny i ich skladniki"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -66,7 +66,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Strona 2 Strona 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -93,8 +93,8 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Lehren Innos"	);
+					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
+					Doc_PrintLine	( nDocID,  0, "Nauki Inno"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -102,7 +102,7 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Strona 2 Strona 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -129,8 +129,8 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Die Gebote Innos"	);
+					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
+					Doc_PrintLine	( nDocID,  0, "Przykazania Inno"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -138,7 +138,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Strona 2 Strona 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);
@@ -165,22 +165,22 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER ERSTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "PIERWSZE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des ersten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role pierwszego kola i skladniki potrzebne do ich wykonania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Licht");
-					Doc_PrintLine	( nDocID,  0, "Goldmünze");
+					Doc_PrintLine	( nDocID,  0, "jasny");
+					Doc_PrintLine	( nDocID,  0, "zloty moneta");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Feuerpfeil");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Leichte Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Lekkie rany lecznicze");
 					Doc_PrintLine	( nDocID,  0, "Heilpflanze");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -188,11 +188,11 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -215,10 +215,10 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER ZWEITE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "DRUGIE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Die Runen des zweiten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role drugiego kola i skladniki potrzebne do ich wykonania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -230,11 +230,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -258,28 +258,28 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER DRITTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "TRZECIE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des dritten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role trzeciego kola i skladniki potrzebne do ich wykonania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Mittlere Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Rany medium lecznicze");
 					Doc_PrintLine	( nDocID,  0, "Heilkraut");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Kleiner Feuersturm");
+					Doc_PrintLine	( nDocID,  0, "strazak");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -303,19 +303,19 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER VIERTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "CZWARTE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des vierten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role czwartego kola i skladniki potrzebne do ich wykonania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Grosser Feuerball");
+					Doc_PrintLine	( nDocID,  0, "Big Fireball");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Untote vernichten");
+					Doc_PrintLine	( nDocID,  0, "Zniszczenie nieumarlych");
 					Doc_PrintLine	( nDocID,  0, "Geweihtes Wasser");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -327,11 +327,11 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -355,20 +355,20 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER FÜNFTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "PIATE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des fünften Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role piatego kola i skladniki potrzebne do ich wykonania ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Grosser Feuersturm");
+					Doc_PrintLine	( nDocID,  0, "Duzy pozar");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Flammenzunge");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Schwere Wunden heilen");
+					Doc_PrintLine	( nDocID,  0, "Gorace ciezkie rany lecznicze");
 					Doc_PrintLine	( nDocID,  0, "Heilwurzel");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -376,11 +376,11 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -404,14 +404,14 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DER SECHSTE KREIS"					);
+					Doc_PrintLine	( nDocID,  0, "SZÓSTE KOLO"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Die Runen des sechsten Kreises und die zu deren Herstellung benötigten Ingredenzien ");
+					Doc_PrintLines	( nDocID,  0, "Role szóstego kola i skladniki potrzebne do ich wytworzenia ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Feuerregen");
+					Doc_PrintLine	( nDocID,  0, "pozar");
 					Doc_PrintLine	( nDocID,  0, "Pech");
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "Flammenzunge");
@@ -424,17 +424,17 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLine	( nDocID,  1, "Monster schrumpfen");
+					Doc_PrintLine	( nDocID,  1, "kurczyc sie potwór");
 					Doc_PrintLine	( nDocID,  1, "Knochen eines Goblins");
 					Doc_PrintLine	( nDocID,  1, "Trollhauer");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich."					);
+					Doc_PrintLines	( nDocID,  1, "Do produkcji runa wymagana jest JEDNA z wymienionych skladników."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen."					);
+					Doc_PrintLines	( nDocID,  1, "Uzytkownik musi znac formule zaklecia i musi miec naga kamien runowy oraz zaklecie w rolach czaru."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen."					);
+					Doc_PrintLines	( nDocID,  1, "Tylko po spelnieniu tych warunków moze on dostac sie do pracy przy stole z runami."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -458,8 +458,8 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Seite 1"					);
-					Doc_PrintLine	( nDocID,  0, "Regeln"	);
+					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
+					Doc_PrintLine	( nDocID,  0, "rozporzadzenia"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -467,7 +467,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "Seite 2"					);
+					Doc_PrintLine	( nDocID,  1, "Strona 2 Strona 2"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLines	( nDocID,  1, " "					);

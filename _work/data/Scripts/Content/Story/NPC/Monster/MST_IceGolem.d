@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_IceGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Eisgolem";
+	name							=	"gol";
 	guild							=	GIL_ICEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 	level							=	100;
@@ -94,7 +94,7 @@ INSTANCE IceGolem_Moor	(Mst_Default_IceGolem)
 
 INSTANCE FrostGolem	(Mst_Default_IceGolem)
 {
-	name = "Frostgolem";
+	name = "Frostgolemat";
 	B_SetVisuals_FrostGolem();
 	Npc_SetToFistMode(self);
 };
@@ -155,7 +155,7 @@ INSTANCE IceGolem_FeuerGegenEis_09	(Mst_Default_IceGolem)
 
 INSTANCE Summoned_IceGolem (Mst_Default_IceGolem)
 {
-	name							=	"Beschworener Eisgolem";
+	name							=	"Wezwanie Golemina lodowego";
 	guild							=	GIL_SUMMONED_GOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_ICEGOLEM;
 	level							=	0;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_AlligatorJack_Hi (C_INFO)
 	information	= Info_Mod_AlligatorJack_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So allein auf weiter Flur?";
+	description	= "Wiec samotnie w sali?";
 };
 
 FUNC INT Info_Mod_AlligatorJack_Hi_Condition()
@@ -19,13 +19,13 @@ FUNC INT Info_Mod_AlligatorJack_Hi_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_00"); //So allein auf weiter Flur?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_01"); //Als Jäger ist man meist allein. Allerdings sind meine Kumpels nicht weit.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_02"); //Da hinten, wo ich die Palisaden sehe?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_03"); //Genau. Dort ist unser Piratenlager.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_04"); //Piraten ... interessant. Was meinst du, könnte man bei euch mitmachen?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_05"); //Möglich. Da must du Käpt'n Greg fragen. Übrigens, mich nennt man Alligator Jack.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_06"); //Angenehm. Ich schau dann mal.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_00"); //Wiec samotnie w sali?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_01"); //Mysliwi sa zazwyczaj sami. Ale moi przyjaciele sa niedaleko.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_02"); //Wracam tam, gdzie widze palisady?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_03"); //Dokladnie. Jest tam nasz obóz piratów.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_04"); //statek piracki ciekawy. Co masz na mysli, czy oni mogliby do ciebie dolaczyc?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Hi_12_05"); //Mozliwe. Musisz zapytac kapitana Greg. Nawiasem mówiac, nazywam sie Alligator Jack.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Hi_15_06"); //Przyjemnosc spotkania. Zobacze.
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -50,13 +50,13 @@ FUNC INT Info_Mod_AlligatorJack_Beerdigung_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Beerdigung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_00"); //(zu sich selbst) Was, wie, wo bin ich? Zuletzt die Banditen und dann alles dunkel.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_00"); //Co, jak, gdzie jestem? W koncu bandyci i potem wszystko ciemne.
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_01"); //Und was ist mit euch passiert? Steht hier herum und gafft, als hättet ihr einen Geist gesehen.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_02"); //Und Bäume, Blumen, Kaninchen? Was zur Seejungfrau ist hier passiert?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_03"); //Kaum bin ich mal ne Stunde bewusstlos scheint das Lager gleich völlig zu verkommen.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_01"); //A co sie stalo z Toba? Stan tutaj i spogladaj, jakbys widzial duch.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_02"); //I drzewa, kwiaty, króliki? Co sie tutaj stalo z syrena?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Beerdigung_12_03"); //Jak tylko przez godzine jestem nieprzytomny, obóz wydaje sie zupelnie zepsuc.
 
 	AI_StopProcessInfos	(self);
 };
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_AlligatorJack_Sweetwater (C_INFO)
 	information	= Info_Mod_AlligatorJack_Sweetwater_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist der Alligator-Spezialist?";
+	description	= "Jestes specjalista od aligatorów?";
 };
 
 FUNC INT Info_Mod_AlligatorJack_Sweetwater_Condition()
@@ -82,14 +82,14 @@ FUNC INT Info_Mod_AlligatorJack_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Sweetwater_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_00"); //Du bist der Alligator-Spezialist?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_01"); //Ja, das bin ich. Und Jäger bin ich. (stolz) Vor allem aber Pirat.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_02"); //Und was ist mit den Alligatoren?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_03"); //Es sind ganz einfach zu viele geworden. Da müssen Muttertiere dabei sein.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_04"); //Was ist, wenn ich dich unterstütze?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_05"); //Dann könnten wir's wagen, denke ich.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_06"); //Dann bleibe dicht bei mir. Nicht losstürmen oder so was.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_07"); //Wem sagst du das, Kollege?
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_00"); //Jestes specjalista od aligatorów?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_01"); //Tak, to ja. I jestem mysliwy. Pirat, przede wszystkim.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_02"); //A co z aligatorami?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_03"); //Jest ich po prostu zbyt wiele. Musza tam byc zwierzeta matki.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_04"); //Co zrobic, jesli cie wspieram?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_05"); //Wtedy moglibysmy to zrobic, jak sadze.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_06"); //Potem pozostancie blisko mnie. Nie nalezy sie naladowywac ani cos ladowac.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater_12_07"); //Powiedz mi o tym, przyjacielu.
 	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater_15_08"); //Hmm.
 
 	AI_StopProcessInfos	(self);
@@ -109,7 +109,7 @@ FUNC VOID Info_Mod_AlligatorJack_Sweetwater_Info()
 	Wld_InsertNpc	(Alligator_AJ_09, "ADW_PIRATECAMP_WATERHOLE_07");
 	Wld_InsertNpc	(Alligator_AJ_10, "ADW_PIRATECAMP_WATERHOLE_08");
 
-	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Jack erzählt von einer Horde Tiere im Tal. Möglicherweise auch Muttertiere.");
+	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Jack mówi o hordzie zwierzat w dolinie. Mozliwe, ze równiez zwierzeta matki.");
 };
 
 INSTANCE Info_Mod_AlligatorJack_Sweetwater2 (C_INFO)
@@ -142,11 +142,11 @@ FUNC INT Info_Mod_AlligatorJack_Sweetwater2_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Sweetwater2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_00"); //Puh, zähe Biester.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater2_15_01"); //Doch Muttertiere. Du hattest recht. Und ein brauchbarer Jäger bist du auch.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_02"); //Danke für das Lob. Man hört so was nicht oft hier.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater2_15_03"); //Schon gut. Sag Greg Bescheid. Und er soll dafür sorgen, dass die Magier auch frisches Wasser bekommen. Ich muss weiter.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_04"); //Wird gemacht. Und danke noch mal.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_00"); //Phew, twarde dranie.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater2_15_01"); //Zwierzeta matka to robi. Mial pan jednak racje. Jestes tez dobrym mysliwym.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_02"); //Dziekujemy za pochwale. Tutaj nie slyszysz tak czesto.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Sweetwater2_15_03"); //Wszystkie sluszne, wszystkie sluszne. Dajmy znac Gregowi. I ma sie upewnic, ze czarodzieje otrzymaja swieza wode. Musze isc dalej.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Sweetwater2_12_04"); //Zrobi to. Jeszcze raz dziekuje.
 
 	AI_StopProcessInfos	(self);
 
@@ -154,7 +154,7 @@ FUNC VOID Info_Mod_AlligatorJack_Sweetwater2_Info()
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
-	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "So, wieder was erledigt. Die Leute haben Süßwasser. Was Saturas wohl sagt ...");
+	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Tu znów jedziemy. Ludzie maja swieza wode. Zastanawiam sie, co mówi Saturas.....");
 };
 
 INSTANCE Info_Mod_AlligatorJack_Todesangst (C_INFO)
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_AlligatorJack_Todesangst (C_INFO)
 	information	= Info_Mod_AlligatorJack_Todesangst_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Jack. Was macht die Jagd?";
+	description	= "Witaj, Jack. Jak wyglada polowanie?";
 };
 
 FUNC INT Info_Mod_AlligatorJack_Todesangst_Condition()
@@ -179,12 +179,12 @@ FUNC INT Info_Mod_AlligatorJack_Todesangst_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Todesangst_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_00"); //Hallo Jack. Was macht die Jagd?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_01"); //Geht so. Du willst ins Lager?
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_02"); //Genau. Warum fragst du?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_03"); //Du wirst dich wundern. Der Alte ist verrückt geworden.
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_04"); //Der Kapitän?
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_05"); //Ja. Wahrscheinlich lässt dich Henry gar nicht rein. Wirst schon sehen.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_00"); //Witaj, Jack. Jak wyglada polowanie?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_01"); //Wszystkie sluszne, wszystkie sluszne. Chcesz isc do obozu?
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_02"); //Dokladnie. Dlaczego pytasz?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_03"); //Bedziesz zaskoczony. Stary mezczyzna odszedl szalony.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst_15_04"); //Kapitan?
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst_12_05"); //Tak. Henry prawdopodobnie nie wpusci Cie. Dowiesz sie.
 };
 
 INSTANCE Info_Mod_AlligatorJack_Todesangst2 (C_INFO)
@@ -195,7 +195,7 @@ INSTANCE Info_Mod_AlligatorJack_Todesangst2 (C_INFO)
 	information	= Info_Mod_AlligatorJack_Todesangst2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst mich ins Lager begleiten. Wohl als Aufpasser.";
+	description	= "Chce, zebyscie przyjechali ze mna do obozu. Prawdopodobnie opiekujac sie nim.";
 };
 
 FUNC INT Info_Mod_AlligatorJack_Todesangst2_Condition()
@@ -208,8 +208,8 @@ FUNC INT Info_Mod_AlligatorJack_Todesangst2_Condition()
 
 FUNC VOID Info_Mod_AlligatorJack_Todesangst2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst2_15_00"); //Du sollst mich ins Lager begleiten. Wohl als Aufpasser.
-	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst2_12_01"); //Hab ich's nicht gesagt? Der Chef spinnt. Gehen wir.
+	AI_Output(hero, self, "Info_Mod_AlligatorJack_Todesangst2_15_00"); //Chce, zebyscie przyjechali ze mna do obozu. Prawdopodobnie opiekujac sie nim.
+	AI_Output(self, hero, "Info_Mod_AlligatorJack_Todesangst2_12_01"); //Czy nie powiedzialem ci tego? Szef jest szalony. Chodzcie dalej, odejdzmy.
 
 	AI_StopProcessInfos	(self);
 

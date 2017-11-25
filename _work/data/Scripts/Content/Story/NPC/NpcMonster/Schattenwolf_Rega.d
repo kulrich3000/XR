@@ -1,6 +1,6 @@
 INSTANCE Schattenwolf_Rega	(Mst_Default_Warg)
 {
-	name	=	"Rega";
+	name	=	"zregenerowac sie";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	id = 7201;

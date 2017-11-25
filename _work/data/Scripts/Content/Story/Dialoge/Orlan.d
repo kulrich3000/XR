@@ -17,11 +17,11 @@ FUNC INT Info_Mod_Orlan_Hi_Condition()
 FUNC VOID Info_Mod_Orlan_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Orlan_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Orlan_Hi_32_01"); //Willkommen in meiner Taverne, Fremder.
-	AI_Output(self, hero, "Info_Mod_Orlan_Hi_32_02"); //Was kann ich für dich tun? Brauchst du was zu trinken? Oder suchst du vielleicht ein Bett für die Nacht?
+	AI_Output(self, hero, "Info_Mod_Orlan_Hi_32_01"); //Witam w mojej tawernie, obcy.
+	AI_Output(self, hero, "Info_Mod_Orlan_Hi_32_02"); //Co moge dla Ciebie zrobic? Potrzebujesz napoju? A moze szukasz lózka na noc?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OHNELAGER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_OHNELAGER, "Orlan kann mir was zu trinken verkaufen und mir ein Zimmer vermieten.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_OHNELAGER, "Orlan moze mi sprzedac napój i wynajac mi pokój.");
 };
 
 INSTANCE Info_Mod_Orlan_DunklerPilger (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Orlan_DunklerPilger (C_INFO)
 	information	= Info_Mod_Orlan_DunklerPilger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gab es in letzter Zeit hier zufällig seltsame Ereignisse oder Erscheinungen?";
+	description	= "Czy ostatnio mialy miejsce jakies dziwne wydarzenia lub objawienia?";
 };
 
 FUNC INT Info_Mod_Orlan_DunklerPilger_Condition()
@@ -45,20 +45,20 @@ FUNC INT Info_Mod_Orlan_DunklerPilger_Condition()
 
 FUNC VOID Info_Mod_Orlan_DunklerPilger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_00"); //Gab es in letzter Zeit hier zufällig seltsame Ereignisse oder Erscheinungen?
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_01"); //Seltsame Erscheinungen? Hmm, lass mich nachdenken. Ja, Rukhar hat vor einigen Stunden ist hier einen dunklen Wanderer vorüber gehen sehen.
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_02"); //(lacht) Muss dem alten Säufer ziemlich Angst gemacht haben, so aufgeregt, wie er von ihm berichtet hat.
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_03"); //Achja und dann - ich bin mir nicht ganz sicher – habe ich auch den Eindruck, als würde seit einigen Stunden immer wieder ein klägliches Ächzen aus der Grabeshöhle vor der Taverne kommen.
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_04"); //Das ist sogar mir etwas unheimlich. Es geschehen ja recht merkwürdige Dinge in der letzten Zeit ...
-	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_05"); //Wohin ist der Wanderer gegangen?
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_06"); //Rukhar meinte, er sei aus Richtung Akil’s Hof gekommen und hatte seine Schritte weiter Richtung See gelenkt.
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_07"); //Wollte wohl zum Großbauernhof, oder Sekob’s Hof gehen, oder auch zum Händler, der in der Hütte am See lebt ...
-	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_08"); //Danke für die Auskunft.
-	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_09"); //Kein Problem. Wenn du ein gutes Zimmer brauchst für eine Übernachtung, oder du Lust nach einem kühlen Bier verspürst, weißt du ja, wo du alles findest.
+	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_00"); //Czy ostatnio mialy miejsce jakies dziwne wydarzenia lub objawienia?
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_01"); //Dziwne objawienia? Hmm, prosze pozwolic mi pomyslec. Tak, kilka godzin temu Rukhar widzial tu mroczny pasaz.
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_02"); //(smiech) Musialem sie przestraszyc starego pijanego, tak podekscytowanego, jak nam mówil o nim.
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_03"); //Ach, a potem - nie jestem do konca pewna - mam równiez wrazenie, ze od kilku godzin przed tawerna zawsze pojawia sie nieszczesliwa jek, który wydostaje sie z jaskini przed grobowcem.
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_04"); //To troche przerazajace nawet dla mnie. Calkiem dziwne rzeczy dzialy sie ostatnio.....
+	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_05"); //Gdzie wyruszyl wedrowiec?
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_06"); //Rukhar powiedzial, ze wyszedl z farmy Akila i poprowadzil swoje kroki dalej w kierunku jeziora.
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_07"); //Prawdopodobnie chcialem udac sie do wielkiej farmy lub placu Sekob, a takze do kupca, który mieszka w chacie nad jeziorem.... Wiecej
+	AI_Output(hero, self, "Info_Mod_Orlan_DunklerPilger_15_08"); //Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Orlan_DunklerPilger_32_09"); //Bez problemu. Jesli potrzebujesz dobrego pokoju na nocleg lub jesli czujesz sie jak fajne piwo, wiesz gdzie znalezc wszystko.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Wie ich von Orlan erfahren habe, ist die dunkle Gestalt Richtung See weitergegangen.");
+	B_LogEntry	(TOPIC_MOD_DUNKLERPILGER, "Jak dowiedzialem sie od Orlana, ciemna figura szla w kierunku jeziora.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -85,12 +85,12 @@ FUNC INT Info_Mod_Orlan_Untier_Condition()
 
 FUNC VOID Info_Mod_Orlan_Untier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_00"); //Ohh, dieser Rukhar ...
-	AI_Output(hero, self, "Info_Mod_Orlan_Untier_15_01"); //Was ist mit ihm?
-	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_02"); //Erst bricht er wegen diesem dahergelaufenen Pilger in Panik aus, behauptet, er sei das Böse in Menschengestalt ... und jetzt will er gesehen haben, wie hier am helligten Tage ein meterhohes Untier Richtung Akil vorbeigelief.
-	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_03"); //Tja, mit seinem Verstand scheint es bergab zu gehen ... allmählich muss ich mir Sorgen um ihn machen.
+	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_00"); //Oh, ten Rukhar, który....
+	AI_Output(hero, self, "Info_Mod_Orlan_Untier_15_01"); //Co sie z nim dzieje?
+	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_02"); //Dopiero wtedy wpada w panike z powodu tego pielgrzyma, który odszedl, twierdzac, ze jest zly w ludzkiej formie...... A teraz chce widziec tu metropolitalna bestie w jaskrawym dniu w kierunku Akila.
+	AI_Output(self, hero, "Info_Mod_Orlan_Untier_32_03"); //Cóz, jego umysl zdaje sie schodzic w dól z góry.... Zaczynam sie martwic o niego.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Rukhar sah die Bestie Richtung Akils Hof laufen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Rukhar widzial bestie biegnaca w kierunku dworu Akila.");
 };
 
 INSTANCE Info_Mod_Orlan_Daemonisch (C_INFO)
@@ -113,39 +113,39 @@ FUNC INT Info_Mod_Orlan_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Orlan_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_00"); //Darf ich dir etwas anbieten? Klosterwein zum Beispiel ist im Angebot ...
-	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_01"); //Nachher vielleicht. Wollte mich zuerst erkundigen, ob es irgendetwas Ungewöhnliches in letzter Zeit gab?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_00"); //Czy moge Ci cos zaoferowac? Na przyklad w ofercie jest wino klasztorne....
+	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_01"); //Moze pózniej. Chcielismy dowiedziec sie najpierw, czy ostatnio bylo cos niezwyklego?
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_02"); //(zu sich selbst) Toll, jetzt werde ich den Klosterwein nicht mehr los.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_02"); //Swietnie, teraz nie moge pozbyc sie klasztornego wina.
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_03"); //(wieder zum Helden) Na ja, ungewöhnliches ... ein Todesfall. Rukhar hat’s erwischt.
-	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_04"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_05"); //Naja, wahrscheinlich hat er sich einfach totgesoffen ... zumindest mit dem Segen Innos.
-	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_06"); //Wie meinst du das?
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_07"); //Nun, eine Flasche Wein nach der anderen hat er gesoffen, darunter auch viele Klosterwein.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_08"); //Er hat dann am späten Abend einige Leute aus der Umgebung begleitet, die anderen in der Umgebung eine Höhle oder so zeigen wollten ...
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_09"); //Nach etwa zehn Minuten kam er ganz verstört in die Taverne gerannt und stotterte etwas von schwarzen Schatten und gellenden Schreien.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_10"); //Nach kurz darauf kamen die anderen jedoch völlig unversehrt zurück.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_11"); //Ich habe ihn dann erst mal schlafen geschickt und einige seiner Begleiter haben sich noch um ihn gekümmert.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_12"); //Und am nächsten Morgen war er tot.
-	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_13"); //Was, einfach so tot?
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_14"); //Tja, auch bei dem komischen Pilger hatte Rukhar ja auch schon wahnhafte Ängste.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_15"); //Ist unmerklich Stück für Stück mit ihm abwärts gegangen.
-	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_16"); //Und was waren das für Leute, die ihn begleitet haben?
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_17"); //Ach, Bauern und auch Bürger aus der Stadt die ich bislang ja noch gar nicht kannte.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_18"); //Zwei Novizen des Klosters waren glaube ich auch dabei.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_19"); //Ist an einigen Tagen ein recht großer Personenverkehr geworden in der letzten Zeit.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_20"); //Den Klosterwein will aber niemand mehr ... nach Rukhar’s Schicksal umso weniger.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_21"); //Naja, zumindest fressen viele jetzt wie die Scheunendrescher bei mir, sogar Novizen. Da kommt doch einiges wieder hinein.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_22"); //Nur verwunderlich, warum die trotzdem alle so ausgemergelt erscheinen ...
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_03"); //(znowu bohatera) Cóz, niezwykly...... smierc. Rukhar trafil.
+	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_04"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_05"); //No cóz, on chyba tylko wypil sie na smierc.... przynajmniej z blogoslawienstwem Inno.
+	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_06"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_07"); //Cóz, jedna butelka wina po drugiej wypil, w tym wiele klasztornych win.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_08"); //Póznym wieczorem towarzyszyl on ludziom z okolic, którzy chcieli pokazac innym jaskinie lub cos takiego....
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_09"); //Po okolo dziesieciu minutach wbiegl do tawerny i zacial odrobine czarnych cieni i krzyczal.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_10"); //Po krótkim czasie jednak inni wrócili zupelnie bez obrazen.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_11"); //Wyslalem go do snu, a czesc jego towarzyszy opiekowala sie nim.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_12"); //Nastepnego ranka zmarl.
+	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_13"); //Co po prostu umarl?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_14"); //Cóz, nawet z dziwnym pielgrzymem Rukhar juz mial zludzenia leki.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_15"); //Niepostrzezenie poszedl z nim krok po kroku.
+	AI_Output(hero, self, "Info_Mod_Orlan_Daemonisch_15_16"); //I jakich towarzyszyli mu ludzie?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_17"); //Och, rolnicy i mieszkancy miasta, którego nigdy wczesniej nie znalem.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_18"); //Sadze, ze obecnych bylo równiez dwóch nowicjuszy klasztoru.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_19"); //Ostatnio w ciagu kilku dni stal sie dosc duzym ruchem pasazerskim.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_20"); //Ale nikt nie chce juz wiecej wina klasztornego..... po losie Rukhara.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_21"); //No cóz, przynajmniej teraz wielu ludzi jedza jak mlockarnie w moim miejscu, nawet nowicjusze. Tam wraca wiele rzeczy.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch_32_22"); //To niesamowite, dlaczego i tak wszyscy wydaja sie tak wycienczeni....
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Von Orlan habe ich erfahren, dass Rukhar zu Tode gekommen ist. Er hatte einige Bürger, Bauern und Novizen, von denen in letzter Zeit viele in die Taverne kommen, abends nach draußen - in eine Höhle, oder so - begleitet und zuvor viel Klosterwein getrunken. Er kam alleine schreiend zurück gerannt und soll irgendwas von schwarzen Schatten und Schreien berichtet haben, seine Begleiter kamen etwas später nach. Am nächsten morgen war er tot. Außerdem erzählte Orlan, dass kaum jemand mehr Klosterwein trinkt, jedoch erstaunlich viel gegessen wird. Trotzdem erscheinen viele der Besucher sehr ausgemergelt ...");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Dowiedzialem sie od Orlana, ze Rukhar zmarl. Towarzyszyl on pewnym mieszkancom, chlopom i nowicjuszom, z których wielu niedawno przybylo do tawerny, wieczorem - w jaskini lub w czyms - i wczesniej wypil duzo klasztornego wina. Wrócil krzyczac samotnie i cofnal sie krzyczac i doniósl cos o czarnych cieniach i krzykach, jego towarzysze przyszli pózniej. Nastepnego ranka zmarl. Orlan powiedzial nam równiez, ze prawie nikt nie pije wiecej klasztornego wina, ale zdumiewajaca ilosc jedzenia jest spozywana. Niemniej jednak wielu odwiedzajacych wydaje sie byc bardzo wycienczonych.....");
 };
 
 INSTANCE Info_Mod_Orlan_Daemonisch2 (C_INFO)
@@ -169,10 +169,10 @@ FUNC INT Info_Mod_Orlan_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Orlan_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch2_32_00"); //(zu sich selbst) Ohh, bald kommen wahrscheinlich wieder die ganzen Gäste.
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch2_32_01"); //Langsam sollte ich mich daran machen, zum Bierfass nach oben zu gehen ...
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch2_32_00"); //Ach, prawdopodobnie juz wkrótce wszyscy goscie wróca.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch2_32_01"); //Powinienem zaczac powoli isc do beczki po piwo.....
 
-	MOBNAME_XR_BIERFASS_ORLAN = "Bierfass";
+	MOBNAME_XR_BIERFASS_ORLAN = "beczka z piwa";
 };
 
 INSTANCE Info_Mod_Orlan_Daemonisch3 (C_INFO)
@@ -195,7 +195,7 @@ FUNC INT Info_Mod_Orlan_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Orlan_Daemonisch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch3_32_00"); //Was bei Innos ...?
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch3_32_00"); //A co z Innosem....?
 
 	AI_StopProcessInfos	(self);
 };
@@ -220,13 +220,13 @@ FUNC INT Info_Mod_Orlan_Daemonisch4_Condition()
 
 FUNC VOID Info_Mod_Orlan_Daemonisch4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch4_32_00"); //Na toll, da geht sie hin, meine Kundschaft.
+	AI_Output(self, hero, "Info_Mod_Orlan_Daemonisch4_32_00"); //Wspaniale, to jest to, dokad zmierza, moja klientela.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "So, Orlans Taverne hätten wir.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Tam idziesz, tawerna Orlana.");
 };
 
 INSTANCE Info_Mod_Orlan_Unheil (C_INFO)
@@ -237,7 +237,7 @@ INSTANCE Info_Mod_Orlan_Unheil (C_INFO)
 	information	= Info_Mod_Orlan_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sind dir in den letzten Stunden vielleicht ungewöhnliche Dinge aufgefallen?";
+	description	= "Czy zauwazyles cos niezwyklego w ciagu ostatnich kilku godzin?";
 };
 
 FUNC INT Info_Mod_Orlan_Unheil_Condition()
@@ -251,14 +251,14 @@ FUNC INT Info_Mod_Orlan_Unheil_Condition()
 
 FUNC VOID Info_Mod_Orlan_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_Unheil_15_00"); //Sind dir in den letzten Stunden vielleicht ungewöhnliche Dinge aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_01"); //Was?! Meinst du diese Frage ernst? Für Späße scheint mir jetzt nicht der richtige Anlass zu bestehen.
-	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_02"); //Die Toten erheben sich aus ihren Gräbern, direkt hinter meiner Taverne, unter ihnen ein fürchterliches Geschöpf, groß, wie ein Baum.
-	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_03"); //Auf dem Weidenplateau sollen sich gar Ungetüme herumtreiben, die sich fast mit einem Berg messen können, umgeben von vielen furchtbaren Geschöpfen.
-	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_04"); //Frag doch mal den verstörten Pardos von Bengars Hof - der einzige von dort, der dem Unheil entrinnen konnte.
+	AI_Output(hero, self, "Info_Mod_Orlan_Unheil_15_00"); //Czy zauwazyles cos niezwyklego w ciagu ostatnich kilku godzin?
+	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_01"); //Co? Czy powaznie podchodzisz do tego pytania? Nie sadze, zeby teraz byl dobry czas na zarty.
+	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_02"); //Z ich grobów, tuz za moja tawerna, martwe wznosza sie z grobów, wsród nich straszne stworzenie, duze jak drzewo.
+	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_03"); //Na plaskowyzu pastwiskowym znajduja sie nawet potwory, które potrafia konkurowac z górami, otoczonymi przez wiele strasznych stworzen.
+	AI_Output(self, hero, "Info_Mod_Orlan_Unheil_32_04"); //Zapytajcie zapytanie o niepokojone ulaskawienie dworu Bengara - jedynego stamtad, który zdolal uciec przed katastrofa.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Ungetüme gigantischen Ausmaßes auf dem Weidenplateau. Das sollte Saturas interessieren.");
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Horden von Untoten scheinen von ihnen vorangestellten Kreaturen angeführt zu werden.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Wyjatkowe wymiary na plaskowyzu pastwiskowym. Powinno to zainteresowac Satura.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Hordowie nieumarlych wydaja sie byc prowadzeni przez swoich poprzedników.");
 
 	Mod_WM_SawBigOne = TRUE;
 	Mod_WM_SawGraveOne = TRUE;
@@ -272,7 +272,7 @@ INSTANCE Info_Mod_Orlan_Pedro (C_INFO)
 	information	= Info_Mod_Orlan_Pedro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist hier ein Novize reingekommen?";
+	description	= "Czy przybyl tu nowicjusz?";
 };
 
 FUNC INT Info_Mod_Orlan_Pedro_Condition()
@@ -287,12 +287,12 @@ FUNC INT Info_Mod_Orlan_Pedro_Condition()
 
 FUNC VOID Info_Mod_Orlan_Pedro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_Pedro_15_00"); //Ist hier ein Novize reingekommen?
-	AI_Output(self, hero, "Info_Mod_Orlan_Pedro_32_01"); //Außer dir keiner.
-	AI_Output(hero, self, "Info_Mod_Orlan_Pedro_15_02"); //Der Jäger Dragomir behauptet er habe einen Novizen hier rein rennen sehen.
-	AI_Output(self, hero, "Info_Mod_Orlan_Pedro_32_03"); //Hier ist kein Novize. Du kannst ja die anderen Besucher hier befragen.
+	AI_Output(hero, self, "Info_Mod_Orlan_Pedro_15_00"); //Czy przybyl tu nowicjusz?
+	AI_Output(self, hero, "Info_Mod_Orlan_Pedro_32_01"); //Nikt oprócz ciebie.
+	AI_Output(hero, self, "Info_Mod_Orlan_Pedro_15_02"); //Lowca Dragomir twierdzi, ze widzial tu biegnacego nowicjusza.
+	AI_Output(self, hero, "Info_Mod_Orlan_Pedro_32_03"); //Nie ma tu nowicjusza. Tutaj mozesz zapytac innych gosci.
 
-	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Orlan sagt, dass Pedro nicht in die Taverne gekommen ist. Ich sollte mal ein ernstes Wörtchen mit Dragomir reden.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Orlan mówi, ze Pedro nie przyszedl do tawerny. Powazna rozmowa z Dragomirem.");
 };
 
 INSTANCE Info_Mod_Orlan_Kobold (C_INFO)
@@ -315,18 +315,18 @@ FUNC INT Info_Mod_Orlan_Kobold_Condition()
 
 FUNC VOID Info_Mod_Orlan_Kobold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_00"); //Du hattest aber verdammtes Glück, dass wir dich noch gefunden haben, bevor die ganze Horde dämonischer Wesen hier vorbeizog.
-	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_01"); //(verwirrt) Wie ... was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_02"); //Genau weiß ich es nicht. Ich sah nur, wie du leblos am Boden, lagst und ein kleiner Dämon deine Taschen nach Gold durchwühlte. Wir verscheuchten ihn und holten dich herein.
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_03"); //Kurze Zeit später tobte draußen auch schon das Chaos und wir mussten uns in der Taverne verschanzen ...
-	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_04"); //Was, wie viel Zeit ist seit dem vergangen?
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_05"); //Nun, ein guter Tag.
-	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_06"); //Dann sollte ich wieder schnell aufbrechen. Bei dir ist in der Taverne sonst alles in bester Ordnung?
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_07"); //Ja, an sich schon. Leider habe ich oben das Fenster zu meinem Vorratsraum offen stehen lassen.
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_08"); //(wütend) Mein ganzer Schnaps ist weg! Einer von diesen verdammten Zwergdämonen muss eingestiegen sein und ihn mir gestohlen haben. Dreckige Diebe!
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_09"); //(wieder ruhiger) Ach ... mittlerweile scheinen sie sich die Dämonen und Riesenechsen aber in der Umgebung verstreut zu haben.
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_10"); //Vorsicht ist trotzdem geboten, wenn man sich nach draußen wagt.
-	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_11"); //Verstehe. Hier hast du einige Goldmünzen als Dank für meine Rettung ... (zu sich selbst) Verdammt, viel gelassen hat mir der Dämon wirklich nicht.
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_00"); //Masz szczescie, ze znalezlismy cie przed cala horda demonicznych istot.
+	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_01"); //Jak.....? co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_02"); //Nie wiem dokladnie. Wlasnie zobaczylem, ze lezales martwy na ziemi, bez zycia i troche demona grzebiacego w kieszeniach za zloto. Straszymy go i zabralismy Cie do domu.
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_03"); //Wkrótce potem chaos juz szaleje na zewnatrz i musielismy ukryc sie w tawernie.... Wiecej
+	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_04"); //Co, ile czasu uplynelo od tego czasu?
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_05"); //Dobry dzien.
+	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_06"); //Wtedy powinienem zaczac znowu jechac. Czy jestes w tawernie?
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_07"); //Tak, sama w sobie. Niestety, zostawilem okno do magazynu na górze.
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_08"); //Caly mój nalewka odeszla! Jeden z tych okaleczonych karlowatych demonów musi sie dostac i ukradl mi go. Brudne zlodzieje!
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_09"); //(ponownie spokój) Oh, oh, oh..... Tymczasem wydaje sie, ze rozproszyli oni w okolicy demony i olbrzymie jaszczurki.
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_10"); //Zachowaj jednak ostroznosc, gdy wychodzisz na zewnatrz.
+	AI_Output(hero, self, "Info_Mod_Orlan_Kobold_15_11"); //Widze. Tutaj masz zlote monety, które dziekuja mi za ocalenie mojego zycia..... Damn, demon naprawde nie zawiódl mnie zbytnio.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
@@ -339,9 +339,9 @@ FUNC VOID Info_Mod_Orlan_Kobold_Info()
 
 	Wld_InsertItem	(ItMi_KoboldGold, "FP_ITEM_KOBOLDGOLD");
 
-	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_12"); //Danke. Und pass gut auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Orlan_Kobold_32_12"); //Dzieki. I dbaj o siebie.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Verdammt war dieser Dämon aber schnell ... und mein Gold gestohlen hat er mir auch noch. Einen ganzen Tag lag ich bewusstlos bei Orlan und die Monster haben sich mittlerweile in die Gegend zerstreut. Orlan beklagte den Verlust seiner Schnapsreserven ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Potem ten demon byl szybki.... i ukradl równiez moje zloto. Przez caly dzien lezalem nieprzytomny z Orlanem i potwory rozrosly sie na ten obszar. Orlan skarzyl sie na utrate rezerw booze....");
 
 	// Münzenspur
 
@@ -380,7 +380,7 @@ INSTANCE Info_Mod_Orlan_Gorax (C_INFO)
 	information	= Info_Mod_Orlan_Gorax_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gorax schickt mich.";
+	description	= "Gorax wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Orlan_Gorax_Condition()
@@ -395,12 +395,12 @@ FUNC INT Info_Mod_Orlan_Gorax_Condition()
 
 FUNC VOID Info_Mod_Orlan_Gorax_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_Gorax_15_00"); //Gorax schickt mich. Er hat mir diesen Wein für dich mitgegeben.
+	AI_Output(hero, self, "Info_Mod_Orlan_Gorax_15_00"); //Gorax wyslal mnie. Dal mi to wino dla ciebie.
 
 	B_GiveInvItems	(hero, self, ItFo_KWine, 10);
 
-	AI_Output(self, hero, "Info_Mod_Orlan_Gorax_32_01"); //Wunderbar. Der Klosterwein ist der beste, den man hier in der Gegend bekommen kann.
-	AI_Output(self, hero, "Info_Mod_Orlan_Gorax_32_02"); //Hier hast du das Gold für Gorax.
+	AI_Output(self, hero, "Info_Mod_Orlan_Gorax_32_01"); //Cudowny. Wino klasztorne jest najlepszym winem, które mozna dostac tutaj w okolicy.
+	AI_Output(self, hero, "Info_Mod_Orlan_Gorax_32_02"); //Oto zloto dla Goraxa.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
@@ -417,7 +417,7 @@ INSTANCE Info_Mod_Orlan_Zauberwasser (C_INFO)
 	information	= Info_Mod_Orlan_Zauberwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier eine Lieferung Zauberwasser.";
+	description	= "Mam dostawe magicznej wody.";
 };
 
 FUNC INT Info_Mod_Orlan_Zauberwasser_Condition()
@@ -432,11 +432,11 @@ FUNC INT Info_Mod_Orlan_Zauberwasser_Condition()
 
 FUNC VOID Info_Mod_Orlan_Zauberwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_Zauberwasser_15_00"); //Ich hab hier eine Lieferung Zauberwasser.
+	AI_Output(hero, self, "Info_Mod_Orlan_Zauberwasser_15_00"); //Mam dostawe magicznej wody.
 
 	B_GiveInvItems	(hero, self, ItMi_Zauberwasser_MIS, 8);
 
-	AI_Output(self, hero, "Info_Mod_Orlan_Zauberwasser_32_01"); //Wird auch langsam Zeit.
+	AI_Output(self, hero, "Info_Mod_Orlan_Zauberwasser_32_01"); //Najwyzszy czas.
 };
 
 INSTANCE Info_Mod_Orlan_GnomSchnaps (C_INFO)
@@ -447,7 +447,7 @@ INSTANCE Info_Mod_Orlan_GnomSchnaps (C_INFO)
 	information	= Info_Mod_Orlan_GnomSchnaps_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte einen Teil deines Schnapses retten.";
+	description	= "Ocalilem czesc twojego trunku.";
 };
 
 FUNC INT Info_Mod_Orlan_GnomSchnaps_Condition()
@@ -462,17 +462,17 @@ FUNC INT Info_Mod_Orlan_GnomSchnaps_Condition()
 
 FUNC VOID Info_Mod_Orlan_GnomSchnaps_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_GnomSchnaps_15_00"); //Ich konnte einen Teil deines Schnapses retten.
+	AI_Output(hero, self, "Info_Mod_Orlan_GnomSchnaps_15_00"); //Ocalilem czesc twojego trunku.
 
 	B_GiveInvItems	(hero, self, ItMi_OrlansSchnaps, 1);
 
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_01"); //Was, nicht möglich, du nimmst mich auf den Arm ... Tatsächlich ...
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_02"); //Wie ist es dir gelungen diesen Ungetümen meinen guten Schnaps zu entreißen?
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_03"); //Was hast du mit den Missetätern gemacht?
-	AI_Output(hero, self, "Info_Mod_Orlan_GnomSchnaps_15_04"); //Ach, der Dieb ist erst mal ordentlich bedient.
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_05"); //Du musst der größte Krieger aller Zeiten sein.
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_06"); //Es ist mir eine Ehre, dass ich dich bei mir beherbergen dürfte.
-	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_07"); //Mit dir auf Khorinis bin ich mir sicher, dass wir dieses Problems bald Herr werden.
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_01"); //Co, co nie jest mozliwe, oszukujesz mnie.... W rzeczywistosci....
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_02"); //Jak udalo Ci sie odepchnac mój dobry likier z tych potworów?
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_03"); //Co zrobiles z winowajcami?
+	AI_Output(hero, self, "Info_Mod_Orlan_GnomSchnaps_15_04"); //Ach, zlodziejowi na razie podawano wlasciwie.
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_05"); //Musisz byc najwiekszym wojownikiem wszechczasów.
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_06"); //To zaszczyt miec Cie tutaj ze mna.
+	AI_Output(self, hero, "Info_Mod_Orlan_GnomSchnaps_32_07"); //Z wami na Khorinis, jestem pewien, ze wkrótce bedziemy mistrzami tego problemu.
 
 	B_GivePlayerXP	(300);
 };
@@ -485,7 +485,7 @@ INSTANCE Info_Mod_Orlan_Zimmer (C_INFO)
 	information	= Info_Mod_Orlan_Zimmer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie viel kostet ein Zimmer bei dir?";
+	description	= "Ile kosztuje pokój?";
 };
 
 FUNC INT Info_Mod_Orlan_Zimmer_Condition()
@@ -498,8 +498,8 @@ FUNC INT Info_Mod_Orlan_Zimmer_Condition()
 
 FUNC VOID Info_Mod_Orlan_Zimmer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_Zimmer_15_00"); //Wie viel kostet ein Zimmer bei dir?
-	AI_Output(self, hero, "Info_Mod_Orlan_Zimmer_32_01"); //100 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Orlan_Zimmer_15_00"); //Ile kosztuje pokój?
+	AI_Output(self, hero, "Info_Mod_Orlan_Zimmer_32_01"); //100 zlotych monet.
 };
 
 INSTANCE Info_Mod_Orlan_ZimmerMieten (C_INFO)
@@ -510,7 +510,7 @@ INSTANCE Info_Mod_Orlan_ZimmerMieten (C_INFO)
 	information	= Info_Mod_Orlan_ZimmerMieten_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gib mir ein Zimmer (100 Gold)";
+	description	= "Daj mi pokój (100 zlota)";
 };
 
 FUNC INT Info_Mod_Orlan_ZimmerMieten_Condition()
@@ -524,19 +524,19 @@ FUNC INT Info_Mod_Orlan_ZimmerMieten_Condition()
 
 FUNC VOID Info_Mod_Orlan_ZimmerMieten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Orlan_ZimmerMieten_15_00"); //Gib mir ein Zimmer.
+	AI_Output(hero, self, "Info_Mod_Orlan_ZimmerMieten_15_00"); //Daj mi pokój.
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-		AI_Output(self, hero, "Info_Mod_Orlan_ZimmerMieten_32_01"); //Hier hast du einen Schlüssel. Du kannst dir dein Zimmer aussuchen.
+		AI_Output(self, hero, "Info_Mod_Orlan_ZimmerMieten_32_01"); //Oto klucz. Mozesz wybrac swój pokój.
 
 		B_GiveInvItems	(self, hero, ItKe_Orlan_Hotelzimmer, 1);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Orlan_ZimmerMieten_32_02"); //Komm wieder, wenn du genug Gold hast.
+		AI_Output(self, hero, "Info_Mod_Orlan_ZimmerMieten_32_02"); //Przyjedz z powrotem, gdy masz wystarczajaco duzo zlota.
 	};
 };
 
@@ -704,13 +704,13 @@ FUNC VOID Info_Mod_Orlan_EXIT_Info()
 	if (Npc_HasItems(hero, ItKe_Orlan_Hotelzimmer) == 1)
 	&& (Mod_Orlan_Bett == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Orlan_EXIT_32_00"); //Wünsche gute Nacht.
+		AI_Output(self, hero, "Info_Mod_Orlan_EXIT_32_00"); //Dobra noc.
 
 		Mod_Orlan_Bett = 1;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Orlan_EXIT_32_01"); //Beehre mich bald wieder.
+		AI_Output(self, hero, "Info_Mod_Orlan_EXIT_32_01"); //Naucz mnie wkrótce ponownie.
 	};
 
 	AI_StopProcessInfos	(self);

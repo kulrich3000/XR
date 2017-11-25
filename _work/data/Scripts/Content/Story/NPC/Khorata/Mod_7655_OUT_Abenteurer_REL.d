@@ -1,7 +1,7 @@
 INSTANCE Mod_7655_OUT_Abenteurer_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Abenteurer";	
+	name 		= "awanturnicy";	
 	guild 		= GIL_OUT;
 	id 			= 7655;
 	voice 		= 6;

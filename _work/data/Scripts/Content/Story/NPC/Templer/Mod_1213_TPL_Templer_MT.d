@@ -1,7 +1,7 @@
 instance Mod_1213_TPL_Templer_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Caines Leibwache";
+	name =							"ochroniarz Caine";
 	npctype =						NPCTYPE_MAIN;
 	guild =							GIL_out;
 	level =							25;

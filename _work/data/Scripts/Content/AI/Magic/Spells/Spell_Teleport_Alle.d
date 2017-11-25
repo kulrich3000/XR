@@ -84,7 +84,7 @@ func int Spell_Logic_TeleportOT (var int manaInvested)
 		{
 			TooLessMana = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_ANFANG, "Dumm gelaufen. Als einfacher Zombie verfüge ich nicht über die magische Befähigung die Spruchrolle zu nutzen. Was jetzt?");
+			B_LogEntry	(TOPIC_MOD_ANFANG, "Zrobilo sie zle. Jako zwykly zombie nie mam magicznej umiejetnosci poslugiwania sie rolka zaklecia. Co teraz?");
 		};
 	};
 	

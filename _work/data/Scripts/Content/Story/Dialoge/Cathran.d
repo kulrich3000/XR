@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Cathran_Hi_Condition()
 
 FUNC VOID Info_Mod_Cathran_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_00"); //He Fremder, bevor du weiter ins Minental gehst, solltest du bei uns im Lager vorbei schauen.
-	AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_01"); //Jemand wie du kann sich bei uns bestimmt die ein oder andere Goldmünze verdienen.
+	AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_00"); //Zanim pójdziesz dalej do Minental, powinienes zatrzymac sie przy naszym obozie.
+	AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_01"); //Ktos taki jak ty moze z nas zarobic zloty medal lub dwoje.
 
 	if (Mod_Gilde > 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_02"); //Sprich mit Ole, er ist im Moment für die Verwaltung des Lagers zuständig.
+		AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_02"); //Porozmawiaj z Ole, teraz jest odpowiedzialny za administracje obozowa.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_03"); //Sprich mit Ole, sobald du dich für eine der großen Gilden entschieden hast, vielleicht hat er dann etwas für dich zu tun.
+		AI_Output(self, hero, "Info_Mod_Cathran_Hi_06_03"); //Porozmawiaj z Ole, jak tylko wybierzesz jeden z najwiekszych gildii, moze on bedzie mial dla ciebie cos do zrobienia.
 	};
 };
 
@@ -49,9 +49,9 @@ FUNC INT Info_Mod_Cathran_InGilde_Condition()
 
 FUNC VOID Info_Mod_Cathran_InGilde_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cathran_InGilde_06_00"); //Ah, wie ich sehe hast du dich entschieden bei uns mit zu machen.
-	AI_Output(self, hero, "Info_Mod_Cathran_InGilde_06_01"); //Glaub mir, du hast die richtige Entscheidung getroffen. Bald schon werden wir alle im Erz schwimmen, das hab ich so im Urin.
-	AI_Output(hero, self, "Info_Mod_Cathran_InGilde_15_02"); //Wenn du meinst. Ich hoffe nur, dass wir auch alle schwimmen können.
+	AI_Output(self, hero, "Info_Mod_Cathran_InGilde_06_00"); //Ach, widze, ze zdecydowales sie dolaczyc do nas.
+	AI_Output(self, hero, "Info_Mod_Cathran_InGilde_06_01"); //Prosze mi wierzyc, podjeliscie wlasciwa decyzje. Wkrótce bedziemy wszyscy plywali w rudie, wiec mam ja w moczu.
+	AI_Output(hero, self, "Info_Mod_Cathran_InGilde_15_02"); //Jesli tak powiesz. Mam tylko nadzieje, ze wszyscy mozemy równiez plywac.
 };
 
 INSTANCE Info_Mod_Cathran_Trollholz (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Cathran_Trollholz (C_INFO)
 	information	= Info_Mod_Cathran_Trollholz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört du hast zufällig noch ein paar Erzbrocken und weißt nicht wohin damit.";
+	description	= "Slysze, ze macie jakies kawalki rudy i nie wiecie gdzie je umiescic.";
 };
 
 FUNC INT Info_Mod_Cathran_Trollholz_Condition()
@@ -76,14 +76,14 @@ FUNC INT Info_Mod_Cathran_Trollholz_Condition()
 
 FUNC VOID Info_Mod_Cathran_Trollholz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz_15_00"); //Ich habe gehört du hast zufällig noch ein paar Erzbrocken und weißt nicht wohin damit.
-	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_01"); //Das hättest du wohl gerne ...
-	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_02"); //Weil ich heute aber einen guten Tag habe, gebe ich dir zwei, wenn du mir einen kleinen Gefallen erweist.
-	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz_15_03"); //Und der wäre?
-	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_04"); //Besorg mir ein Keilerfell. Hier oben ist es bisweilen verdammt windig und ich hab lieber ein warmes Fell, als zwei kalte Erzbrocken.
-	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_05"); //Wenn du selbst keins hast, dann frag doch mal die Wachen auf den Türmen, die haben wahrscheinlich selbst welche.
+	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz_15_00"); //Slysze, ze macie jakies kawalki rudy i nie wiecie gdzie je umiescic.
+	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_01"); //Przypuszczam, ze chcialbys....
+	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_02"); //Poniewaz dzis mam dobry dzien, daje ci dwa, jesli zrobisz mi troche laski.
+	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz_15_03"); //I co to jest?
+	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_04"); //Pobierz mnie futro z dzika. Czasami jest tu bardzo wietrznie i preferuje ciepla powloke od dwóch zimnych kawalków rudy.
+	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz_06_05"); //Jesli nie masz go sam, zapytaj strazników na wiezach, prawdopodobnie maja troche wlasnych.
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Damit Cathran mit zwei seiner Erzbrocken gibt soll ich ihm zuerst ein Keilerfell organisieren. Er meint, dass die Turmwachen eines haben könnten ...");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Zeby Kathran dal mu dwie porcelany rudy, powinienem najpierw dostac od niego skóre knurowa. Sadzi, ze straznicy wiezy moga miec jedna rzecz....");
 };
 
 INSTANCE Info_Mod_Cathran_Trollholz2 (C_INFO)
@@ -94,7 +94,7 @@ INSTANCE Info_Mod_Cathran_Trollholz2 (C_INFO)
 	information	= Info_Mod_Cathran_Trollholz2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du dein Keilerfell.";
+	description	= "Oto Twoje futro z dzika.";
 };
 
 FUNC INT Info_Mod_Cathran_Trollholz2_Condition()
@@ -110,7 +110,7 @@ FUNC INT Info_Mod_Cathran_Trollholz2_Condition()
 
 FUNC VOID Info_Mod_Cathran_Trollholz2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz2_15_00"); //Hier hast du dein Keilerfell.
+	AI_Output(hero, self, "Info_Mod_Cathran_Trollholz2_15_00"); //Oto Twoje futro z dzika.
 
 	if (Npc_HasItems(hero, ItAt_Addon_KeilerFur) >= 1)
 	{
@@ -125,13 +125,13 @@ FUNC VOID Info_Mod_Cathran_Trollholz2_Info()
 		B_GiveInvItems	(hero, self, ItAt_Addon_KeilerFur_Feuer, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz2_06_01"); //Danke, hier hast du deine zwei Erzbrocken.
+	AI_Output(self, hero, "Info_Mod_Cathran_Trollholz2_06_01"); //Dziekuje, oto twoje dwa kawalki rudy.
 
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 2);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Damit hätte ich die zwei Erzbrocken von Cathran. Ich sollte sie gleich zu Heidrek bringen ...");
+	B_LogEntry	(TOPIC_MOD_KG_TROLLHOLZ, "Daloby mi to dwie bryly rudy Kathranu. Powinnam ja od razu zabrac do Heidarka.....");
 };
 
 INSTANCE Info_Mod_Cathran_Asylanten (C_INFO)
@@ -142,7 +142,7 @@ INSTANCE Info_Mod_Cathran_Asylanten (C_INFO)
 	information	= Info_Mod_Cathran_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher kommt die königliche Garde?";
+	description	= "Skad pochodzi straznik królewski?";
 };
 
 FUNC INT Info_Mod_Cathran_Asylanten_Condition()
@@ -155,19 +155,19 @@ FUNC INT Info_Mod_Cathran_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Cathran_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_00"); //Woher kommt die königliche Garde?
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_01"); //Direkt nach dem Fall der Barriere wurden wir vom König hierher geschickt, um den Durchgang nach Khorinis zu überwachen.
-	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_02"); //Aber das hat doch Lord Hagen auf der anderen Seite auch gemacht.
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_03"); //Der König traut Lord Hagen nicht mehr über den Weg.
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_04"); //Er befürchtet, dass Hagen zu schwach sein könnte, um die Sträflinge aufzuhalten.
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_05"); //Der hat nämlich häufig genug betont, dass er ein Blutvergießen unbedingt verhindern möchte.
-	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_06"); //Was wisst ihr über die Gruppierungen im Minental?
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_07"); //Aggressives Potenzial geht vom Alten und vom Neuen Lager aus.
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_08"); //Diese beiden Lager stehen unter besonderer Beobachtung.
-	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_09"); //Danke für die Informationen.
-	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_10"); //Schönen Tag noch, falls er hier so was gibt.
+	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_00"); //Skad pochodzi straznik królewski?
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_01"); //Natychmiast po upadku zapory wyslano nas tu przez króla, by obserwowac przejscie dohorinis.
+	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_02"); //Ale to wlasnie uczynil po drugiej stronie Lord Hagen.
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_03"); //Król nie ufa juz Panu Hagenowi.
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_04"); //Obawia sie, ze Hagen moze byc zbyt slaby, aby powstrzymac skazanych.
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_05"); //Czesto podkreslal, ze chce zapobiegac rozlewowi krwi.
+	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_06"); //Co wiesz o grupach w Minental?
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_07"); //Agresywny potencjal emanuje z dawnego i nowego obozu.
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_08"); //Te dwa obozy sa pod szczególna obserwacja.
+	AI_Output(hero, self, "Info_Mod_Cathran_Asylanten_15_09"); //Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Cathran_Asylanten_06_10"); //Milego dnia, jesli on daje cos takiego.
 
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Der König hat seine Garde heimlich zum Pass im Minental geschickt, um ihn unabhängig von Lord Hagen zu überwachen. Besonders das Alte und das neue Lager werden als gefährlich eingeschätzt.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Król wyslal swoich strazników potajemnie do Minentalnej przepustki, aby monitorowac go niezaleznie od Lorda Hagena. Szczególnie stary i nowy obóz jest uwazany za niebezpieczny.");
 };
 
 INSTANCE Info_Mod_Cathran_Treue (C_INFO)
@@ -190,8 +190,8 @@ FUNC INT Info_Mod_Cathran_Treue_Condition()
 
 FUNC VOID Info_Mod_Cathran_Treue_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cathran_Treue_06_00"); //Man muss sie alle schlachten, diese grünen Bastarde.
-	AI_Output(self, hero, "Info_Mod_Cathran_Treue_06_01"); //Sollen sie ruhig wiederkommen.
+	AI_Output(self, hero, "Info_Mod_Cathran_Treue_06_00"); //Trzeba je wszystkie ubic, te wszystkie zielone dranie.
+	AI_Output(self, hero, "Info_Mod_Cathran_Treue_06_01"); //Niech wróca.
 
 	AI_StopProcessInfos	(self);
 };
@@ -217,9 +217,9 @@ FUNC INT Info_Mod_Cathran_Siegelring_Condition()
 
 FUNC VOID Info_Mod_Cathran_Siegelring_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring_06_00"); //Halt. Der Würdenträger des Königs wünscht nicht gestört zu werden.
-	AI_Output(hero, self, "Info_Mod_Cathran_Siegelring_15_01"); //Würdenträger des Königs?
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring_06_02"); //Nun ... ähh, er trägt die Kleidung eines Würdenträgers und hat einen Erlass mit königlichem Siegel bei sich.
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring_06_00"); //Przytrzymaj go. Królowy dostojnik nie chce sie niepokoic.
+	AI_Output(hero, self, "Info_Mod_Cathran_Siegelring_15_01"); //Dyrygent króla?
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring_06_02"); //.... nosi ubrania dostojnika i posiada dekret królewski z pieczecia.
 };
 
 INSTANCE Info_Mod_Cathran_Siegelring2 (C_INFO)
@@ -230,7 +230,7 @@ INSTANCE Info_Mod_Cathran_Siegelring2 (C_INFO)
 	information	= Info_Mod_Cathran_Siegelring2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In etwa in dieser Schrift verfasst?";
+	description	= "O czym piszemy w tym pismie?";
 };
 
 FUNC INT Info_Mod_Cathran_Siegelring2_Condition()
@@ -244,17 +244,17 @@ FUNC INT Info_Mod_Cathran_Siegelring2_Condition()
 
 FUNC VOID Info_Mod_Cathran_Siegelring2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cathran_Siegelring2_15_00"); //In etwa in dieser Schrift verfasst?
+	AI_Output(hero, self, "Info_Mod_Cathran_Siegelring2_15_00"); //O czym piszemy w tym pismie?
 
 	B_GiveInvItems	(hero, self, ItWr_LandstreicherSiegelring, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_01"); //Was?
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_01"); //Co?
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_02"); //Aber ... das ... Jetzt wird mir einiges klar. Ich hatte mich schon gewundert.
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_03"); //Dieser ... dieser schmierige Halunke säuft und stopft sich auf unsere Kosten den Wanst voll ... mit seinem gefälschten Erlass.
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_04"); //Das werde ich ihm schon austreiben.
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_02"); //Ale.... ze..... Teraz widze wiele rzeczy. Zastanawialem sie dlaczego.
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_03"); //To..... ten tlusty pije potlusty scoundrel napoje i rzuca sie na nasz koszt brzuch pelen....... swoim falszywym dekretem.
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring2_06_04"); //Pozbede sie go.
 
 	AI_StopProcessInfos	(self);
 
@@ -285,12 +285,12 @@ FUNC INT Info_Mod_Cathran_Siegelring3_Condition()
 
 FUNC VOID Info_Mod_Cathran_Siegelring3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring3_06_00"); //So, das hat der Dreckskerl nun davon. Danke, dass du mir die Augen geöffnet hast. Hier, nimm das zur Belohnung.
+	AI_Output(self, hero, "Info_Mod_Cathran_Siegelring3_06_00"); //No cóz, to wlasnie dostaje syn suki. Dziekuje za otwarcie moich oczu. Tutaj, wez to za nagrode.
 
 	CreateInvItems	(hero, ItMi_Gold, 100);
 	CreateInvItems	(hero, ItMi_Nugget, 5);
 
-	B_ShowGivenThings	("100 Gold und 5 Erzbrocken erhalten");
+	B_ShowGivenThings	("100 zlota i 5 sztuk konserwowanej rudy");
 
 	B_GivePlayerXP	(200);
 };

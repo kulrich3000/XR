@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Cadar_Hi_Condition()
 
 FUNC VOID Info_Mod_Cadar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cadar_Hi_02_00"); //Ah, ein neues Gesicht in unserem Sumpf. Sei mir willkommen.
-	AI_Output(self, hero, "Info_Mod_Cadar_Hi_02_01"); //Ich bin Cor Cadar, geistiger Anführer unserer Gemeinschaft.
+	AI_Output(self, hero, "Info_Mod_Cadar_Hi_02_00"); //Ach, nowe oblicze w naszym bagnie. Witamy.
+	AI_Output(self, hero, "Info_Mod_Cadar_Hi_02_01"); //Jestem Cor Cadarem, duchowym przywódca naszej wspólnoty.
 };
 
 INSTANCE Info_Mod_Cadar_Eroberung_02 (C_INFO)
@@ -40,7 +40,7 @@ FUNC INT Info_Mod_Cadar_Eroberung_02_Condition()
 
 FUNC VOID Info_Mod_Cadar_Eroberung_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cadar_Eroberung_02_02_00"); //Ich stelle euch einige Novizenröcke bereit. Ihr gebt vor, Bartholo Sumpfkraut zu liefern, und geht in das Lager.
+	AI_Output(self, hero, "Info_Mod_Cadar_Eroberung_02_02_00"); //Zaoferuje Ci kilka nowicjuszy spódnic. Udajecie udawac, ze wyruszacie na zablocona bartholo i jedziecie do obozu.
 
 	AI_StopProcessInfos	(self);
 };
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Cadar_Asylanten (C_INFO)
 	information	= Info_Mod_Cadar_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie sehen die Pläne der Bruderschaft für die Zukunft aus?";
+	description	= "Jakie sa plany Bractwa na przyszlosc?";
 };
 
 FUNC INT Info_Mod_Cadar_Asylanten_Condition()
@@ -66,18 +66,18 @@ FUNC INT Info_Mod_Cadar_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Cadar_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_00"); //Wie sehen die Pläne der Bruderschaft für die Zukunft aus?
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_01"); //(verdutzt) Pläne? Die Zukunft selbst wird uns zeigen, was sie für uns bereithält.
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_02"); //Solange werden wir weiter ein normales Leben führen: Wir bauen Sumpfkraut an, rauchen ab und zu einen und tauschen uns über unsere spirituellen Erfahrungen aus.
-	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_03"); //Ihr habt also nicht vor, das Minental zu verlassen?
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_04"); //Nein.
-	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_05"); //Und wie steht ihr zu den anderen Gruppierungen im Minental?
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_06"); //Alle, die mit uns Handel treiben wollen, sind willkommene Gäste.
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_07"); //Allerdings habe ich gehört, dass das Alte Lager viel von seinem vormaligen Status eingebüßt hat, und die Beziehungen zum neuen Lager waren nie so ausgeprägt, wie wir es uns wünschten.
-	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_08"); //Danke für die Auskunft.
-	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_09"); //Möge der Schläf... Mögen die Sterne dir günstig stehen.
+	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_00"); //Jakie sa plany Bractwa na przyszlosc?
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_01"); //(uzywane) plany? Przyszlosc sama pokaze nam, co jest dla nas dostepne.
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_02"); //Tak dlugo, jak dlugo prowadzimy normalne zycie: kultywowanie rdestnicy, palenie tytoniu raz na jakis czas i dzielenie sie naszymi duchowymi doswiadczeniami.
+	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_03"); //Nie planujesz wiec opuscic Minental?
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_04"); //Nie.
+	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_05"); //A jak czujesz sie o innych grupach w Minental?
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_06"); //Wszyscy ci, którzy chca handlowac z nami sa goscmi powitanymi.
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_07"); //Slyszalem jednak, ze stary obóz stracil wiekszosc swojego dawnego statusu, a stosunki z nowym obozem nigdy nie byly tak silne, jak bysmy sobie tego zyczyli.
+	AI_Output(hero, self, "Info_Mod_Cadar_Asylanten_15_08"); //Dziekujemy za informacje.
+	AI_Output(self, hero, "Info_Mod_Cadar_Asylanten_02_09"); //Pozwólcie spac.... Niech gwiazdy beda dla Ciebie dobre.
 
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Von der Bruderschaft geht kaum eine Gefahr aus. Die Templer und Novizen sind glücklich mit ihrem derzeitigen Leben und hegen keinen Groll gegen eine andere Gruppierung.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Nie ma praktycznie zadnego niebezpieczenstwa ze strony Bractwa. templariusze i nowicjusze Rycerzy sa zadowoleni z obecnego zycia i nie maja zalu wobec innej grupy.");
 };
 
 INSTANCE Info_Mod_Cadar_Woher (C_INFO)
@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Cadar_Woher (C_INFO)
 	information	= Info_Mod_Cadar_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wie bist du zum geistlichen Führer der Bruderschaft geworden?";
+	description	= "Jak zostales duchowym przywódca Bractwa?";
 };
 
 FUNC INT Info_Mod_Cadar_Woher_Condition()
@@ -102,12 +102,12 @@ FUNC INT Info_Mod_Cadar_Woher_Condition()
 
 FUNC VOID Info_Mod_Cadar_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cadar_Woher_15_00"); //Wie bist du zum geistlichen Führer der Bruderschaft geworden?
-	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_01"); //Bevor ich in die Barriere geworfen wurde war ich ein Feuermagier des Königs.
-	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_02"); //Allerdings habe ich mich auch für andere Magierichtungen interessiert. Besonders von der Orkmagie war ich sehr angetan, doch als Gegenleistung musste ich sie unterstützen.
-	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_03"); //Irgendwann haben sie dann rausgefunden, dass ich die Orks unterstütze und haben mich in die Barriere geworfen.
-	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_04"); //Ich bin dann zur Bruderschaft gegangen um diese Art der Magie ebenfalls zu lernen und wurde bald darauf Cor Kaloms Stellvertreter.
-	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_05"); //Nach seinem und Y'Berions Tod war ich der höhste Guru im Lager und wurde deshalb zum geistlichen Führer der Bruderschaft.
+	AI_Output(hero, self, "Info_Mod_Cadar_Woher_15_00"); //Jak zostales duchowym przywódca Bractwa?
+	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_01"); //Zanim wrzucono mnie do zapory, bylem magikiem ognia wladcy.
+	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_02"); //Interesowaly mnie jednak równiez inne kierunki magów. Szczególnie lubilem sie orkmagicznym, ale w zamian musialem go poprzec.
+	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_03"); //W koncu okazalo sie, ze podparlem orki i wrzucilem mnie do zapory.
+	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_04"); //Poszedlem wtedy do Bractwa, aby nauczyc sie tego rodzaju magii i wkrótce potem zostalem poslem Cor Kalom.
+	AI_Output(self, hero, "Info_Mod_Cadar_Woher_02_05"); //Po jego smierci i smierci Y' Beriona bylem najwyzszym guru w obozie i w zwiazku z tym zostalem duchowym przywódca Bractwa.
 };
 
 INSTANCE Info_Mod_Cadar_Lehrer (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Cadar_Lehrer (C_INFO)
 	information	= Info_Mod_Cadar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Cadar_Lehrer_Condition()
@@ -136,10 +136,10 @@ FUNC VOID Info_Mod_Cadar_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Cadar_Lehrer_02_01"); //Ich kann dir zeigen, wie du aus deiner Erfahrung mehr wissen schöpfst, welches du nutzen kannst um weitere Fähigkeiten zu erlernen.
+	AI_Output(self, hero, "Info_Mod_Cadar_Lehrer_02_01"); //Moge pokazac, jak uczyc sie czegos wiecej na podstawie twoich doswiadczen, z których mozesz skorzystac, aby zdobyc wiecej umiejetnosci.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SUMPF, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Cor Cadar kann mir helfen mehr Wissen aus meiner Erfahrung zu schöpfen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_SUMPF, "Cor Cadar moze mi pomóc czerpac wiecej wiedzy z mojego doswiadczenia.");
 };
 
 INSTANCE Info_Mod_Cadar_SchnellesLernen_Perk (C_INFO)
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Cadar_SchnellesLernen_Perk (C_INFO)
 	information	= Info_Mod_Cadar_SchnellesLernen_Perk_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Perk: Schnelles Lernen (5 LP)";
+	description	= "Perc: Szybkie uczenie sie (5 LP)";
 };
 
 FUNC INT Info_Mod_Cadar_SchnellesLernen_Perk_Condition()
@@ -166,7 +166,7 @@ FUNC VOID Info_Mod_Cadar_SchnellesLernen_Perk_Info()
 {
 	if (hero.lp > 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Cadar_SchnellesLernen_Perk_02_00"); //Nun wirst du mehr Wissen aus deiner Erfahrung schöpfen können. Nutze dieses Wissen weise.
+		AI_Output(self, hero, "Info_Mod_Cadar_SchnellesLernen_Perk_02_00"); //Teraz bedziesz mógl czerpac wiecej wiedzy z wlasnego doswiadczenia. Uzywaj tej wiedzy madrze.
 
 		SchnellesLernen_Perk = TRUE;
 

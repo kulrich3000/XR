@@ -17,7 +17,7 @@ FUNC INT DIA_SLD_6_EXIT_Condition()
 
 FUNC VOID DIA_SLD_6_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_SLD_6_EXIT_06_00"); //Stirb uns nicht weg!
+	AI_Output(self, hero, "DIA_SLD_6_EXIT_06_00"); //Nie umieraj na nas!
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_SLD_6_JOIN(C_INFO)
 	condition	= DIA_SLD_6_JOIN_Condition;
 	information	= DIA_SLD_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "Chce do Ciebie dolaczyc!";
 };                       
 
 FUNC INT DIA_SLD_6_JOIN_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_SLD_6_JOIN_Condition()
 
 FUNC VOID DIA_SLD_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Ich will mich euch anschließen!
-	AI_Output(self, hero, "DIA_SLD_6_JOIN_06_01"); //Was sprichst du dann mit mir? Rede mit Lares und beweise dich.
+	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Chce do Ciebie dolaczyc!
+	AI_Output(self, hero, "DIA_SLD_6_JOIN_06_01"); //Wtedy po co do mnie mówisz? Porozmawiaj z Laresem i udowodnij sie.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_SLD_6_PEOPLE(C_INFO)
 	condition	= DIA_SLD_6_PEOPLE_Condition;
 	information	= DIA_SLD_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT DIA_SLD_6_PEOPLE_Condition()
@@ -71,10 +71,10 @@ FUNC INT DIA_SLD_6_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Der Hof gehört Onar, wenn du das meinst. Aber unser Anführer ist Lee.
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Er war mal General in der Armee des Königs. Aber jetzt ist er nicht mehr ganz so gut auf den König zu sprechen (lacht).
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Merk dir seinen Namen. Wenn du Mist baust, ist er vermutlich der einzige, der die Sache für dich regeln kann. Alle anderen ziehen dir einfach das Fell über die Ohren.
+	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Gospodarstwo nalezy do Onar, jesli to wlasnie masz na mysli. Ale naszym liderem jest Lee.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Byl niegdys generalem w wojsku królewskim. Ale teraz nie jest juz tak dobry mówic o królu (smiech).
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Pamietaj jego nazwisko. Jesli zaslepisz sie, jest on prawdopodobnie jedynym, który poradzi sobie z tym dla Ciebie. Wszyscy inni po prostu ciagnij za uszy futro.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE DIA_SLD_6_LOCATION(C_INFO)
 	condition	= DIA_SLD_6_LOCATION_Condition;
 	information	= DIA_SLD_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Bewacht ihr die Bauern?";
+	description = "Czy pilnujesz chlopów?";
 };                       
 
 FUNC INT DIA_SLD_6_LOCATION_Condition()
@@ -96,8 +96,8 @@ FUNC INT DIA_SLD_6_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //Bewacht ihr die Bauern?
-	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //Wir sind nicht hier um jemanden zu bewachen, sondern um neue Mitglieder anzuwerben.
+	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //Czy pilnujesz chlopów?
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //Nie jestesmy tutaj po to, aby kogos chronic, jestesmy po to, aby rekrutowac nowych czlonków.
 };
 
 INSTANCE Info_Mod_SLD_6_Pickpocket (C_INFO)

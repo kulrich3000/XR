@@ -37,7 +37,7 @@ INSTANCE Info_Mod_SMK_OM_7_Mine (C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_7_Mine_Condition;
 	information	= Info_Mod_SMK_OM_7_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir von der Mine";
+	description = "Opowiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_SMK_OM_7_Mine_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_Mine_15_00"); //Erzähl mir von der Mine
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_Mine_07_01"); //Die Buddler schürfen das Erz und wir passen auf, dass sie nicht abhauen.
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_Mine_15_00"); //Opowiedz mi o mojej kopalni.
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_Mine_07_01"); //Kopaczki kopaczki kopia rude i upewniamy sie, ze nie uciekaja.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_SMK_OM_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mod_SMK_OM_7_WichtigePersonen_Condition;
 	information	= Info_Mod_SMK_OM_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mod_SMK_OM_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_WichtigePersonen_07_01"); //Kurgan. Wende dich an ihn, wenn du was willst.
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_WichtigePersonen_07_01"); //Kurgan. Zwróc sie do niego, jesli chcesz cos zrobic.
 	
 };
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_SMK_OM_7_DieLage(C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_7_DieLage_Condition;
 	information	= Info_Mod_SMK_OM_7_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "Jaki jest wynik?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_7_DieLage_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mod_SMK_OM_7_DieLage_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_7_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,other,"Info_Mod_SMK_OM_7_DieLage_07_01"); //Mann, geh mir nicht auf den Sack!
+	AI_Output(other,self,"Info_Mod_SMK_OM_7_DieLage_15_00"); //Jaki jest wynik?
+	AI_Output(self,other,"Info_Mod_SMK_OM_7_DieLage_07_01"); //Czlowiek, nie daj mi tego gówno!
 };
 	
 // *************************************************************************

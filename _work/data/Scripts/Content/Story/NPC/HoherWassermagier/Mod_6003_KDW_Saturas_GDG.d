@@ -1,7 +1,7 @@
 INSTANCE Mod_6003_KDW_Saturas_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Saturas";
+	name 		= "Satura";
 	guild 		= GIL_KDW; 
 	id 			= 6003;
 	voice 		= 14;

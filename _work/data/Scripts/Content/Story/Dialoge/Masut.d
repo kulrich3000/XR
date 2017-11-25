@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Masut_Hi (C_INFO)
 	information	= Info_Mod_Masut_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Ich hab mich bei den Gaunern bewährt (...)";
+	description	= "Witaj! Udowodnilem swoja wartosc z oszustami (....). )";
 };
 
 FUNC INT Info_Mod_Masut_Hi_Condition()
@@ -20,14 +20,14 @@ FUNC INT Info_Mod_Masut_Hi_Condition()
 
 FUNC VOID Info_Mod_Masut_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_00"); //Hallo! Ich hab mich bei den Gaunern bewährt und möchte nun zu den Kriegern aufsteigen.
-	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_01"); //Wir haben von dir gehört. Du hast Erstaunliches in kurzer Zeit geleistet.
-	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_02"); //Aber auch bei uns musst du dich erst noch bewähren.
-	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_03"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_04"); //Im Moment liegt nichts an. Komm später wieder. Du hast sicher noch anderes zu tun.
-	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_05"); //Gewiss. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_00"); //Witaj! Udowodnilam sie do oszustów i chcialbym byc teraz awansowana na wojownika.
+	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_01"); //Slyszelismy o Tobie. W krótkim czasie zrobiles niesamowite rzeczy.
+	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_02"); //Ale nawet u nas trzeba sie jeszcze udowodnic.
+	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_03"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Masut_Hi_13_04"); //Obecnie nic sie nie dzieje. Wróc do domu pózniej. Musisz miec inne rzeczy do zrobienia.
+	AI_Output(hero, self, "Info_Mod_Masut_Hi_15_05"); //Oczywiscie. Do zobaczenia dookola.
 
-	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Masut hat im Moment nichts für mich. Ich soll später wiederkommen.");
+	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Masut nie ma teraz nic dla mnie. Mam wrócic pózniej.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_VERTRAUEN, LOG_SUCCESS);
 };
 
@@ -52,48 +52,48 @@ FUNC INT Info_Mod_Masut_Later_Condition()
 
 FUNC VOID Info_Mod_Masut_Later_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Masut_Later_13_00"); //Halt. Nur für Fortgeschrittene!
-	AI_Output(hero, self, "Info_Mod_Masut_Later_15_01"); //Ich bin fortgeschritten. Du hast mich letztens weggeschickt, weil du nichts zu tun hattest für mich.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_13_02"); //Ach ja. Also ich habe da was, aber erst muss ich dir erklären, was hier so abgeht.
-	AI_Output(hero, self, "Info_Mod_Masut_Later_15_03"); //Ich höre.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_13_04"); //Du musst dich jetzt entscheiden, welchen Weg du gehst.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_13_05"); //Willst du Krieger werden, bist du bei mir an der richtigen Adresse.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_13_06"); //Möchtest du aber Magier werden, dann wende dich an Aadel. Du findest ihn weiter hinten.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_13_00"); //Przytrzymaj go. Zaawansowany!
+	AI_Output(hero, self, "Info_Mod_Masut_Later_15_01"); //Jestem zaawansowany. Wyslales mnie tamtego dnia, bo nie miales dla mnie nic do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_13_02"); //Oh, tak. Cóz, mam cos do dyspozycji, ale najpierw musze wam wyjasnic, co sie tu dzieje.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_15_03"); //Slucham.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_13_04"); //Musisz teraz zdecydowac, w która strone chcesz isc.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_13_05"); //Jesli chcesz byc wojownikiem, znalazles sie we wlasciwym miejscu.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_13_06"); //Ale jesli chcesz zostac magikiem, skontaktuj sie z Aadel. Znajdziesz go dalej.
 
 	Info_ClearChoices	(Info_Mod_Masut_Later);
 
-	Info_AddChoice	(Info_Mod_Masut_Later, "Ich will Magier werden.", Info_Mod_Masut_Later_B);
-	Info_AddChoice	(Info_Mod_Masut_Later, "Ich will zu den Kriegern.", Info_Mod_Masut_Later_A);
+	Info_AddChoice	(Info_Mod_Masut_Later, "Chce byc magikiem.", Info_Mod_Masut_Later_B);
+	Info_AddChoice	(Info_Mod_Masut_Later, "Chce dolaczyc do wojowników.", Info_Mod_Masut_Later_A);
 };
 
 FUNC VOID Info_Mod_Masut_Later_B()
 {
-	AI_Output(hero, self, "Info_Mod_Masut_Later_B_15_00"); //Ich will Magier werden.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_B_13_01"); //Wie du willst. Gehe zu Aadel, er wird dich einweisen.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_B_15_00"); //Chce byc magikiem.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_B_13_01"); //Dopasuj sie do siebie. Idz do Aadel, on cie zobowiaze.
 
 	Mod_ASS_Magier = 1;
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_MAGIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MoD_ASS_MAGIER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_MAGIER, "Wenn ich Magier werden will, muss ich zu Aadel gehen. Er ist weiter hinten in der Höhle.");
+	B_LogEntry	(TOPIC_MOD_ASS_MAGIER, "Jesli chce zostac magikiem, musze udac sie do Aadel. Dalej z powrotem w jaskini.");
 
 	Info_ClearChoices	(Info_Mod_Masut_Later);
 };
 
 FUNC VOID Info_Mod_Masut_Later_A()
 {
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_00"); //Ich will zu den Kriegern.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_01"); //Das höre ich gerne, gute Leute brauchen wir immer. Ich hoffe, du enttäuschst mich nicht ...
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_02"); //Ich werde mich bemühen. Was liegt an?
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_03"); //Du willst sicher weiterkommem und brauchst dafür Stimmen.
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_04"); //Deswegen frage ich, was anliegt.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_05"); //Das will ich dir sagen. Oben im Leuchtturm haust doch dieser Jack.
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_06"); //Ja ...?
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_07"); //Den sollst du beseitigen. Wir wollen den Turm besetzen, damit wir Ausschau auf die Stadt haben.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_08"); //Hier drinnen bekommen wir zu wenig mit. Und wir haben nur Amir draußen. Der sieht auch nicht alles.
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_09"); //Das wird kein Problem sein. Mit seinem Degen werde ich schon fertig.
-	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_10"); //Dann mach hin.
-	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_11"); //Schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_00"); //Chce dolaczyc do wojowników.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_01"); //To jest to, co lubie slyszec, zawsze potrzebujemy dobrych ludzi. Mam nadzieje, ze mnie nie zawiedziesz....
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_02"); //Zrobie wszystko, co w mojej mocy. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_03"); //Jestem pewien, ze chcesz isc dalej i potrzebujesz glosów.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_04"); //Dlatego pytam, co sie dzieje.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_05"); //To wlasnie chce ci to powiedziec. Ten Jack zyje w latarni morskiej.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_06"); //Czy....?
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_07"); //Chce, zebys go pozbyl sie. Chcemy zajmowac wieze, wiec mozemy patrzec na miasto.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_08"); //Nie mamy tu wystarczajaco duzo. I mamy tylko Amir out. On nie widzi wszystkiego.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_09"); //Nie bedzie to problem. Moge wytrzymac jego miecz.
+	AI_Output(self, hero, "Info_Mod_Masut_Later_A_13_10"); //Pózniej spiesz sie.
+	AI_Output(hero, self, "Info_Mod_Masut_Later_A_15_11"); //Jest w drodze.
 
 	Mod_ASS_Krieger = 1;
 
@@ -102,7 +102,7 @@ FUNC VOID Info_Mod_Masut_Later_A()
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_JACK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MoD_ASS_JACK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_JACK, "Als erstes soll ich Jack im Leuchtturm umbringen. Hm ... armer Kerl. Ist eigentlich ganz harmlos.");
+	B_LogEntry	(TOPIC_MOD_ASS_JACK, "Najpierw mam zabic Jacka w latarni morskiej. Hm.... biedny facet. Wlasciwie jest to dosc nieszkodliwe.");
 
 	Info_ClearChoices	(Info_Mod_Masut_Later);
 };
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Masut_Jack (C_INFO)
 	information	= Info_Mod_Masut_Jack_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Auftrag ausgeführt. Dieser Jack ist Geschichte.";
+	description	= "Misja zostala zrealizowana. Ten Jack jest historia.";
 };
 
 FUNC INT Info_Mod_Masut_Jack_Condition()
@@ -130,22 +130,22 @@ FUNC INT Info_Mod_Masut_Jack_Condition()
 
 FUNC VOID Info_Mod_Masut_Jack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_00"); //Auftrag ausgeführt. Dieser Jack ist Geschichte.
-	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_01"); //Das ging aber schnell.
-	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_02"); //Ein alter Mann. Es war nicht schwer. Hier, sein Degen als Beweis.
+	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_00"); //Misja zostala zrealizowana. Ten Jack jest historia.
+	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_01"); //To bylo szybkie.
+	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_02"); //Stary czlowiek. Nie bylo to trudne. Tutaj jego miecz jako dowód.
 
 	B_GiveInvItems	(hero, self, ItMw_Degen_Jack, 1);
 
-	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_03"); //Ihn selbst habe ich über die Klippe geworfen.
-	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_04"); //Saubere Arbeit. Dich kann man brauchen.
-	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_05"); //Das will ich meinen. Ich kriege also deine Stimme?
-	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_06"); //Natürlich. Und Malik hat wahrscheinlich auch was für dich. Der ist dauernd am Jammern.
-	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_07"); //Aha. Wo finde ich den?
-	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_08"); //Weiter vorn. Bei den Anwärtern steht er rum.
+	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_03"); //Sam rzucilem go nad skale.
+	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_04"); //Czysta praca. Mozesz byc uzyteczny.
+	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_05"); //Tak wlasnie rozumiem. Wiec oddaje swój glos?
+	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_06"); //Oczywiscie tak jest. I Malik prawdopodobnie ma cos dla Ciebie. Zawsze narzeka.
+	AI_Output(hero, self, "Info_Mod_Masut_Jack_15_07"); //Uh-huh. Gdzie moge go znalezc?
+	AI_Output(self, hero, "Info_Mod_Masut_Jack_13_08"); //Dalsza przyszlosc. Staje z kandydatami.
 
 	B_SetTopicStatus	(TOPIC_MoD_ASS_JACK, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_ASS_KRIEGER, "Es scheint so, als könne Malik Hilfe gebrauchen. Er soll weiter vorne bei den Anwärtern zu finden sein.");
+	B_LogEntry	(TOPIC_MOD_ASS_KRIEGER, "Wydaje sie, ze Malik mógl skorzystac z pomocy. Mówi sie, ze jest on w czolówce kandydatów.");
 };
 
 INSTANCE Info_Mod_Masut_GotoAzhar (C_INFO)
@@ -171,10 +171,10 @@ FUNC INT Info_Mod_Masut_GotoAzhar_Condition()
 
 FUNC VOID Info_Mod_Masut_GotoAzhar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Masut_GotoAzhar_13_00"); //Wo steckst du denn? Azhar wartet auf dich.
-	AI_Output(hero, self, "Info_Mod_Masut_GotoAzhar_15_01"); //Was willst du? Letzthin hat mich der Kerl weggeschickt.
-	AI_Output(self, hero, "Info_Mod_Masut_GotoAzhar_13_02"); //Aber jetzt braucht er dich.
-	AI_Output(hero, self, "Info_Mod_Masut_GotoAzhar_15_03"); //Ich schaue mal.
+	AI_Output(self, hero, "Info_Mod_Masut_GotoAzhar_13_00"); //Gdzie byles/as? Azhar czeka na Ciebie.
+	AI_Output(hero, self, "Info_Mod_Masut_GotoAzhar_15_01"); //Czego chcesz? Ten facet wyslal mnie ostatni raz.
+	AI_Output(self, hero, "Info_Mod_Masut_GotoAzhar_13_02"); //Teraz jednak potrzebuje cie.
+	AI_Output(hero, self, "Info_Mod_Masut_GotoAzhar_15_03"); //Zobacze.
 };
 
 INSTANCE Info_Mod_Masut_Zeremoniendolch (C_INFO)
@@ -197,9 +197,9 @@ FUNC INT Info_Mod_Masut_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Masut_Zeremoniendolch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Masut_Zeremoniendolch_13_00"); //Wo treibst du dich wieder rum? Sofort zu Mustafa!
-	AI_Output(hero, self, "Info_Mod_Masut_Zeremoniendolch_15_01"); //Dann halte mich nicht auf.
-	AI_Output(self, hero, "Info_Mod_Masut_Zeremoniendolch_13_02"); //Reiß bloß das Maul nicht so weit auf, Anwärter!
+	AI_Output(self, hero, "Info_Mod_Masut_Zeremoniendolch_13_00"); //Gdzie znów spedzasz czas? Natychmiast do Mustafy!
+	AI_Output(hero, self, "Info_Mod_Masut_Zeremoniendolch_15_01"); //Wtedy nie powstrzymaj mnie.
+	AI_Output(self, hero, "Info_Mod_Masut_Zeremoniendolch_13_02"); //Nie otwórz usta tak szeroko otwarte, kandydata!
 };
 
 INSTANCE Info_Mod_Masut_Blutkelch (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Masut_Blutkelch (C_INFO)
 	information	= Info_Mod_Masut_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Soviel zum Anwärter. Mustafa sagt, dir ist etwas aufgefallen.";
+	description	= "Tyle dla kandydata. Mustafa mówi, ze cos zauwazyles.";
 };
 
 FUNC INT Info_Mod_Masut_Blutkelch_Condition()
@@ -223,17 +223,17 @@ FUNC INT Info_Mod_Masut_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Masut_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_00"); //Soviel zum Anwärter. Mustafa sagt, dir ist etwas aufgefallen.
-	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_01"); //Wie hast du das so schnell zum Krieger geschafft?
-	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_02"); //Zur Sache. Was weißt du?
-	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_03"); //In letzter Zeit schleichen nachts öfter Magier hier durch.
-	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_04"); //Wen meinst du genau?
-	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_05"); //Kann ich so nicht sagen. Bei unserer Rüstung, wenn da einer nicht erkannt werden will, ist das einfach.
-	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_06"); //Du hast also keinen Namen?
-	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_07"); //Nein, leider nicht.
-	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_08"); //Hmm ... schauen wir mal. Vielleicht hat Shakir was bemerkt.
+	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_00"); //Tyle dla kandydata. Mustafa mówi, ze cos zauwazyles.
+	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_01"); //Jak szybko zostales wojownikiem?
+	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_02"); //Do punktu. Co wiesz?
+	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_03"); //Ostatnio noca w nocy przedostalo sie tu mnóstwo magów.
+	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_04"); //Kogo dokladnie masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_05"); //Nie moge tak powiedziec. Z nasza zbroja, jesli ktos nie chce byc rozpoznany, to latwo.
+	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_06"); //Nie masz wiec imie?
+	AI_Output(self, hero, "Info_Mod_Masut_Blutkelch_13_07"); //Nie, boje sie nie.
+	AI_Output(hero, self, "Info_Mod_Masut_Blutkelch_15_08"); //Hmm..... Przyjrzyjmy sie. Byc moze Shakir cos zauwazyl.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Masut hat Magier rumschleichen sehen, weiß aber keinen Namen. Ich sollte mal Shakir fragen.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Masut widzial czarodziejów, ale nie zna nazwiska. Chcialbym zapytac Shakir.");
 };
 
 INSTANCE Info_Mod_Masut_Pickpocket (C_INFO)

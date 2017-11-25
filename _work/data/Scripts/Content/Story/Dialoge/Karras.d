@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Karras_Hallo (C_INFO)
 	information	= Info_Mod_Karras_Hallo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso bist du bei den Beliaranhängern?";
+	description	= "Dlaczego jestes z sympatykami Beliaranu?";
 };
 
 FUNC INT Info_Mod_Karras_Hallo_Condition()
@@ -16,31 +16,31 @@ FUNC INT Info_Mod_Karras_Hallo_Condition()
 
 FUNC VOID Info_Mod_Karras_Hallo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Hallo_15_00"); //Wieso bist du bei den Beliaranhängern?
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_01"); //Beliar hat mich dazu berufen, als ich erwachsen wurde.
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_02"); //Mein Vater war innosgläubig und ein Schläger. Er hat meine Mutter und meine Geschwister misshandelt.
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_03"); //Eines Nachts sprach Beliar zu mir. Ich ging zu meinem Vater und erwürgte ihn im Schlaf. Von da an wurde alles besser.
+	AI_Output(hero, self, "Info_Mod_Karras_Hallo_15_00"); //Dlaczego jestes z sympatykami Beliaranu?
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_01"); //Beliar zadzwonil do mnie, kiedy dorastalem.
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_02"); //Mój ojciec byl niewinnym wierzacym i bandyta. Zmeczyl moja matke i rodzenstwo.
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_36_03"); //Pewnej nocy przemówil do mnie Beliar. Poszedlem do ojca i udusilem go we snie. Od tego czasu wszystko sie poprawilo.
 
 	Info_ClearChoices	(Info_Mod_Karras_Hallo);
 
-	Info_AddChoice	(Info_Mod_Karras_Hallo, "Eine spannende Geschichte!", Info_Mod_Karras_Hallo_B);
-	Info_AddChoice	(Info_Mod_Karras_Hallo, "So ein Blödsinn.", Info_Mod_Karras_Hallo_A);
+	Info_AddChoice	(Info_Mod_Karras_Hallo, "Ekscytujaca historia!", Info_Mod_Karras_Hallo_B);
+	Info_AddChoice	(Info_Mod_Karras_Hallo, "To byka.", Info_Mod_Karras_Hallo_A);
 };
 
 FUNC VOID Info_Mod_Karras_Hallo_B()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Hallo_B_15_00"); //Eine spannende Geschichte!
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_B_36_01"); //Sie zeigt, dass Beliar uns nicht im Stich lässt. Und wenn du einmal Kontakt zu ihm hergestellt hast, kannst du immer mit ihm reden, wenn du es wünschst.
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_B_36_02"); //So geht es zumindest mir.
+	AI_Output(hero, self, "Info_Mod_Karras_Hallo_B_15_00"); //Ekscytujaca historia!
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_B_36_01"); //Pokazuje, ze Beliar nas nie zawiedzie. A gdy juz nawiazales z nim kontakt, zawsze mozesz z nim porozmawiac.
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_B_36_02"); //Tak wlasnie sie czuje.
 
 	Info_ClearChoices	(Info_Mod_Karras_Hallo);
 };
 
 FUNC VOID Info_Mod_Karras_Hallo_A()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Hallo_A_15_00"); //So ein Blödsinn.
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_A_36_01"); //Ich kann verstehen, dass du es nicht wahrhaben willst. Aber Beliar kümmert sich um die Benachteiligten.
-	AI_Output(self, hero, "Info_Mod_Karras_Hallo_A_36_02"); //Die meisten von uns haben eine ähnliche Vorgeschichte wie ich. Zu den Königen und Fürsten spricht Beliar nicht.
+	AI_Output(hero, self, "Info_Mod_Karras_Hallo_A_15_00"); //To byka.
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_A_36_01"); //Rozumiem, ze nie chcesz w to wierzyc. Beliar troszczy sie jednak o osoby w niekorzystnej sytuacji.
+	AI_Output(self, hero, "Info_Mod_Karras_Hallo_A_36_02"); //Wiekszosc z nas ma historie podobna do mojej. Beliar nie mówi do królów i ksiazat.
 
 	Info_ClearChoices	(Info_Mod_Karras_Hallo);
 };
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Karras_HastDuAuftrag_2 (C_INFO)
 	information	= Info_Mod_Karras_HastDuAuftrag_2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du einen Auftrag für mich, Meister?";
+	description	= "Masz dla mnie misje, Mistrza?";
 };
 
 FUNC INT Info_Mod_Karras_HastDuAuftrag_2_Condition()
@@ -68,17 +68,17 @@ FUNC INT Info_Mod_Karras_HastDuAuftrag_2_Condition()
 
 FUNC VOID Info_Mod_Karras_HastDuAuftrag_2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_HastDuAuftrag_2_15_00"); //Hast du einen Auftrag für mich, Meister?
-	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_01"); //Ja, ich habe eine Aufgabe für dich, junger Schüler. Meine Ohren vernahmen in letzter Zeit Gerüchte, dass unsere verhassten Brüder etwas Großes planen.
-	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_02"); //Geh den Gerüchten auf den Grund. Es wäre vermutlich das Klügste, wenn du dich an die Fersen des Boten heftest, den Pyrokar in letzter Zeit des Öfteren in die Stadt geschickt hat.
-	AI_Output(hero, self, "Info_Mod_Karras_HastDuAuftrag_2_15_03"); //Wo werde ich den Boten finden?
-	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_04"); //Unsere Späher berichten, dass er zu Mittag immer in der Taverne vor dem Kloster eine Pause einlegt, um ein Glas zu trinken.
-	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_05"); //Aus einem Glas wird meistens eine Flasche oder zwei. Du solltest keine Probleme haben, dem Boten den Brief abzuluchsen!
-	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_06"); //Lass dich jedoch nicht in deiner Robe erwischen!
+	AI_Output(hero, self, "Info_Mod_Karras_HastDuAuftrag_2_15_00"); //Masz dla mnie misje, Mistrza?
+	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_01"); //Tak, mam prace dla Ciebie, mlodego studenta. Moje uszy slysze ostatnio plotki, ze nasi znienawidzeni bracia planuja cos wielkiego.
+	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_02"); //Przejdz na dól poglosek. Prawdopodobnie najrozsadniej byloby postapic, gdybyscie poszli sladami poslanca Pyrokara wyslanego ostatnio do miasta.
+	AI_Output(hero, self, "Info_Mod_Karras_HastDuAuftrag_2_15_03"); //Gdzie znajde poslanca?
+	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_04"); //Nasi harcerze donosza, ze zawsze robi przerwe w tawernie przed klasztorem, aby pic szklanke w poludnie.
+	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_05"); //Szklanka zazwyczaj zamienia sie w butelke lub dwie. Nie powinniscie miec zadnych problemów z pozbyciem sie listu poslannika!
+	AI_Output(self, hero, "Info_Mod_Karras_HastDuAuftrag_2_36_06"); //Nie wpadaj jednak w szate!
 
 	Log_CreateTopic	(TOPIC_MOD_KARRAS_BOTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KARRAS_BOTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Die Feuermagier scheinen etwas zu planen. Ich soll ihren Boten abfangen und seine Informationen zu Karras bringen. Mittags befindet er sich immer in der Taverne vor dem Kloster. Ich sollte aber nicht in meiner Robe dort auftauchen.");
+	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Magicy strazy pozarnej zdaja sie cos planowac. Jestem tu po to, aby przechwycic waszego poslannika i zabrac go do Karrasa. W poludnie jest zawsze w tawernie przed klasztorem. Nie powinienem sie bawic w szate.");
 };
 
 INSTANCE Info_Mod_Karras_Bote (C_INFO)
@@ -89,7 +89,7 @@ INSTANCE Info_Mod_Karras_Bote (C_INFO)
 	information	= Info_Mod_Karras_Bote_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier eine Brief, Meister.";
+	description	= "Mam tutaj list, Panie Panie.";
 };
 
 FUNC INT Info_Mod_Karras_Bote_Condition()
@@ -102,28 +102,28 @@ FUNC INT Info_Mod_Karras_Bote_Condition()
 
 FUNC VOID Info_Mod_Karras_Bote_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Bote_15_00"); //Ich habe hier einen Brief, Meister.
+	AI_Output(hero, self, "Info_Mod_Karras_Bote_15_00"); //Mam tutaj list, Panie Panie.
 
 	B_GiveInvItems	(hero, self, Mod_MattheusBotschaft, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Karras_Bote_36_01"); //Ah. Die Feuermagier wollen also Wachen aufstellen. Doch da Lord Hagen diesen Brief nicht bekommt, wird es wohl noch ein wenig dauern.
+	AI_Output(self, hero, "Info_Mod_Karras_Bote_36_01"); //Ah. Tak wiec strazacy chca zalozyc strazników. Poniewaz jednak Lord Hagen nie otrzyma tego listu, zajmie to troche czasu.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Mattheus_Alk))
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_Bote_36_02"); //Was hast du mit dem Boten gemacht?
-		AI_Output(hero, self, "Info_Mod_Karras_Bote_15_03"); //Ich hab ihm noch was zu trinken gegeben, aber das scheint wohl ein Schluck zu viel gewesen zu sein, jedenfalls wird er jetzt nicht mehr aufstehen.
-		AI_Output(self, hero, "Info_Mod_Karras_Bote_36_04"); //Dann wird es wohl noch ein wenig länger dauern, bis die Feuermagier Wind von der Sache bekommen.
+		AI_Output(self, hero, "Info_Mod_Karras_Bote_36_02"); //Co uczyniliscie poslannikowi?
+		AI_Output(hero, self, "Info_Mod_Karras_Bote_15_03"); //Dalem mu cos do picia, ale to chyba za duzo, przynajmniej teraz nie wstanie.
+		AI_Output(self, hero, "Info_Mod_Karras_Bote_36_04"); //Wtedy prawdopodobnie zajmie to troche dluzej, az magowie ognia nabiora wiatru w materie.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Karras_Bote_36_05"); //Du hast deine Aufgabe jedenfalls gut erfüllt. Hier ist eine kleine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Karras_Bote_36_05"); //Tak czy inaczej, dobrze wykonales swoja prace. Oto mala nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Karras ist mit meiner Arbeit zufrieden.");
+	B_LogEntry	(TOPIC_MOD_KARRAS_BOTE, "Karras jest zadowolony z mojej pracy.");
 
 	B_SetTopicStatus	(TOPIC_MOD_KARRAS_BOTE, LOG_SUCCESS);
 
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Karras_Namib (C_INFO)
 	information	= Info_Mod_Karras_Namib_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir diesen Brief geben.";
+	description	= "Mam Ci ten list przekazac.";
 };
 
 FUNC INT Info_Mod_Karras_Namib_Condition()
@@ -153,7 +153,7 @@ FUNC INT Info_Mod_Karras_Namib_Condition()
 
 FUNC VOID Info_Mod_Karras_Namib_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Namib_15_00"); //Ich soll dir diesen Brief geben.
+	AI_Output(hero, self, "Info_Mod_Karras_Namib_15_00"); //Mam Ci ten list przekazac.
 
 	B_GiveInvItems	(hero, self, ItWr_NamibForBeliar, 1);
 
@@ -162,51 +162,51 @@ FUNC VOID Info_Mod_Karras_Namib_Info()
 	if (Mod_Gilde > 11)
 	&& (Mod_Gilde < 16)
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_01"); //Endlich, ich dachte schon, die fragen gar nicht mehr.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_02"); //Du hast damit gerechnet?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_03"); //Natürlich! Glaubst du, wir haben nicht mitbekommen, dass dieser gottverlassene Idiot in der Höhle oben seine Versuche macht?
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_04"); //Dann kommt ihr mit in den Sumpf.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_05"); //Ja ... das heißt, nein.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_06"); //Was jetzt?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_07"); //Wir kommen mit, doch zuerst musst du etwas organisieren.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_08"); //Was?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_09"); //Ein Buch, das Necronomicum. Die Feuermagier haben es uns gestohlen. Es ist im Kloster.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_10"); //Und wie stellst du dir das vor? Ich kann nicht ins Kloster der Feuermagier! Ich habe dort den Hammer gestohlen und werde sicher gesucht.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_11"); //Was weiß ich, wie du das erledigst! Vielleicht hilft dir das hier weiter. Das ist ein Schlafknüppel.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_01"); //W koncu myslalem, ze przestana zadawac pytania.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_02"); //Spodziewales sie tego?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_03"); //Oczywiscie! Czy uwazasz, ze nie zdawalismy sobie sprawy, ze idiot chrzestny w jaskini robil swoje eksperymenty na górze?
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_04"); //Potem przychodzicie ze mna na bagno.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_05"); //Tak..... to znaczy, ze nie.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_06"); //Co teraz?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_07"); //Pójdziemy z Toba, ale najpierw trzeba cos zorganizowac.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_08"); //Co?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_09"); //Ksiazka, Necronomicum. Magicy strazy pozarnej ukradli nam ja. Znajduje sie w klasztorze.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_10"); //A jak sobie to wyobrazasz? Nie moge pójsc do Klasztoru Strazaków! Kradlem tam mlotek i oni mnie szukaja.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_11"); //Nie wiem, jak to robisz! Moze to ci pomoze. To koszmar.
 
 		B_GiveInvItems	(self, hero, ItMw_UnconsciousKnueppel, 1);
 
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_12"); //Er ist verzaubert. Schlägst du jemanden damit, wird er in Ohnmacht fallen und sich an nichts mehr erinnern, wenn er aufwacht.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_13"); //Er funktioniert allerdings nur ein einziges Mal. Am besten siehst du dich mal in der Stadt um.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_12"); //Oczarowany. Jesli kogos z tym uderzysz, on zemdli i nic nie zapamieta, kiedy sie obudzi.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_13"); //Dziala jednak tylko raz. Dlaczego nie ogladasz miasta?
 
-		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Bevor Karras mit ins Minental geht, soll ich ihm ein Buch von der Feuermagiern holen, welches ihm gestohlen wurde. Ich sollte mich mal in der Stadt umhören.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Zanim Karras wyjedzie z nim do Minentala, pójde po ukradziona mu ksiege magów ognia. Powinienem obejrzec miasto.");
 
 		Mod_Sekte_Karras = 2;
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_14"); //Meinst du das ernsthaft? Und was bekommen wir als Gegenleistung?
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_15"); //Nun, ich soll euch dieses Paket hier geben.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_14"); //Czy jestes powazny? A co otrzymujemy w zamian?
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_15"); //No cóz, mam Ci tutaj przekazac ten pakiet.
 
 		B_GiveInvItems	(hero, self, ItMi_HerbPaket, 1);
 
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_16"); //Ein Paket Sumpfkraut? Dass ich nicht lache.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_17"); //Du glaubst doch nicht ernsthaft, dass wir uns nur wegen einem Paket Sumpfkraut so abmühen? Ich mach dir einen Vorschlag.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_18"); //Es gibt etwas zu tun. Etwas, das nur jemand, der keiner unserer Brüder ist, machen kann.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_19"); //Was denn?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_20"); //Die Feuermagier haben uns ein Buch gestohlen. Du sollst es für uns zurückholen.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_21"); //Wenn ich den Feuermagiern dieses Buch stehle, dann kommt ihr mit?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_22"); //Also, erstens stiehlst du es nicht, sondern holst uns unser rechtmäßiges Eigentum zurück, und zweitens, ja.
-		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_23"); //Na gut. Wo finde ich das Buch?
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_24"); //Vermutlich in ihrer Bibliothek.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //Und nimm diesen Knüppel. Er ist verzaubert. Schlägst du jemanden damit, wird er in Ohnmacht fallen und sich an nichts mehr erinnern, wenn er aufwacht.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_16"); //Paczka bagiennicy? Nie daj mi sie smiac.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_17"); //Nie sadzisz, ze my po prostu zmagamy sie z brudnym pakietem, czy ty? Zrobie ci umowe.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_18"); //Jest cos do zrobienia. Cos moze zrobic tylko ktos, kto nie jest jednym z naszych braci.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_19"); //Co masz na mysli?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_20"); //Magicy strazy pozarnej ukradli nam ksiazke. Chce, zebyscie odzyskali to za nas.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_21"); //Jesli wykrade te ksiazke magikom strazakom, czy przyjdziesz ze mna?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_22"); //Wiec, po pierwsze, nie kradna go, ale dostajesz nasza prawowita wlasnosc z powrotem, a po drugie, tak.
+		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_23"); //Wszystkie sluszne, wszystkie sluszne. Gdzie moge znalezc ksiazke?
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_24"); //Prawdopodobnie w jej bibliotece.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //Und nimm diesen Knüppel. Oczarowany. Jesli kogos z tym uderzysz, on zemdli i nic nie zapamieta, kiedy sie obudzi.
 
 		B_GiveInvItems	(self, hero, ItMw_UnconsciousKnueppel, 1);
 
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_26"); //Er funktioniert allerdings nur ein einziges Mal. Also pass gut auf. Versaust du das, musst du selbst eine Möglichkeit finden, die Wache auszuschalten.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_27"); //Und jetzt beeil dich!
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_26"); //Dziala jednak tylko raz. Ogladaj wiec go. Jesli sie to przykreci, trzeba znalezc sposób na samodzielne wyjecie oslony.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_27"); //Teraz spiesz sie!
 
-		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Bevor Karras mit ins Minental geht, soll ich ihm ein Buch von der Feuermagiern holen, welches ihm gestohlen wurde.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Zanim Karras wyjedzie z nim do Minentala, pójde po ukradziona mu ksiege magów ognia.");
 
 		Mod_Sekte_Karras = 1;
 	};
@@ -220,7 +220,7 @@ INSTANCE Info_Mod_Karras_NamibHabBuch (C_INFO)
 	information	= Info_Mod_Karras_NamibHabBuch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Buch.";
+	description	= "Mam ksiazke.";
 };
 
 FUNC INT Info_Mod_Karras_NamibHabBuch_Condition()
@@ -236,28 +236,28 @@ FUNC INT Info_Mod_Karras_NamibHabBuch_Condition()
 
 FUNC VOID Info_Mod_Karras_NamibHabBuch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_00"); //Ich habe das Buch.
+	AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_00"); //Mam ksiazke.
 
 	B_GiveInvItems	(hero, self, ItWr_BeliarBook, 1);
 
 	if (Mod_Sekte_Karras == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_01"); //Sehr gut. Dann gehen wir mit dir ins Minental. Sag, wenn du bereit bist.
-		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_02"); //Ich muss noch jemanden abholen, dann können wir gehen.
+		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_01"); //Bardzo dobry. Nastepnie udamy sie z Toba do Minentala. Powiedz mi, kiedy bedziesz gotowy.
+		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_02"); //Musze kogos zabrac, wtedy mozemy isc.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_03"); //Sehr gut! Damit sind die Vorbereitungen abgeschlossen.
-		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_04"); //Die Vorbereitungen wozu?
-		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_05"); //Das wirst du noch früh genug sehen. Sag Bescheid, sobald du gehen willst.
-		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_06"); //Ich muss nur zuerst einen Freund aus einer Höhle holen.
+		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_03"); //Bardzo dobrze! To konczy przygotowania.
+		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_04"); //Przygotowania do czego?
+		AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_05"); //Zobaczysz to dosc szybko. Pozwól mi wiedziec, jak tylko bedziesz gotowy do wyjazdu.
+		AI_Output(hero, self, "Info_Mod_Karras_NamibHabBuch_15_06"); //Najpierw musze wyciagnac przyjaciela z jaskini.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_07"); //Na gut.
+	AI_Output(self, hero, "Info_Mod_Karras_NamibHabBuch_36_07"); //Wszystkie sluszne, wszystkie sluszne.
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Jetzt muss ich noch Lester Bescheid geben und dann geht's mit Karras ins Minental.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Teraz musze dac znac Lesterowi, a potem Karrasowi i ja ide z nim do Minentala.");
 };
 
 INSTANCE Info_Mod_Karras_Lester (C_INFO)
@@ -268,7 +268,7 @@ INSTANCE Info_Mod_Karras_Lester (C_INFO)
 	information	= Info_Mod_Karras_Lester_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir können gehen.";
+	description	= "Mozemy pójsc teraz.";
 };
 
 FUNC INT Info_Mod_Karras_Lester_Condition()
@@ -281,8 +281,8 @@ FUNC INT Info_Mod_Karras_Lester_Condition()
 
 FUNC VOID Info_Mod_Karras_Lester_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Karras_Lester_15_00"); //Wir können gehen.
-	AI_Output(self, hero, "Info_Mod_Karras_Lester_36_01"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Karras_Lester_15_00"); //Mozemy pójsc teraz.
+	AI_Output(self, hero, "Info_Mod_Karras_Lester_36_01"); //Wszystkie sluszne, wszystkie sluszne.
 	
 	AI_StopProcessInfos	(self);
 
@@ -309,7 +309,7 @@ FUNC INT Info_Mod_Karras_Namib2_Condition()
 
 FUNC VOID Info_Mod_Karras_Namib2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_Namib2_36_00"); //Berichte Baal Namib, dass wir hier sind.
+	AI_Output(self, hero, "Info_Mod_Karras_Namib2_36_00"); //Powiedz Baalowi Namibowi, ze jestesmy tutaj.
 };
 
 INSTANCE Info_Mod_Karras_Leader (C_INFO)
@@ -333,20 +333,20 @@ FUNC INT Info_Mod_Karras_Leader_Condition()
 
 FUNC VOID Info_Mod_Karras_Leader_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_00"); //Da bist du ja. Alles läuft nach Plan. Bald ist es so weit.
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_01"); //Wir werden hier gleich Untote beschwören, aber keine Knochengerüste, sondern die Sumpfhaie, die hier ihr Ende fanden.
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_02"); //Keine Angst, das hat den gleichen Effekt auf den Boden, doch wir werden einen Vorteil daraus ziehen.
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_03"); //Wir haben dafür gesorgt, dass einer der Templer, der eine Kampfgruppe gegen die Untoten leiten sollte, nicht dazu kommen wird.
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_04"); //Du wirst seinen Platz einnehmen.
-	AI_Output(hero, self, "Info_Mod_Karras_Leader_15_05"); //Warum?
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_06"); //Da, nimm diesen Stein.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_00"); //Och, tam jestescie. Wszystko idzie zgodnie z planem. To prawie czas.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_01"); //Natychmiast wezwiemy tu nieumarlych, ale nie szkieletów kosci, ale zakonczonych tu rekinów bagiennych.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_02"); //Nie martw sie, ma to taki sam wplyw na grunt, ale skorzystamy z tego.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_03"); //Upewnilismy sie, ze jeden z Templariuszy, który mial prowadzic walke z nieumarlymi, nie dolaczy do nas.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_04"); //Zajmiesz jego miejsce.
+	AI_Output(hero, self, "Info_Mod_Karras_Leader_15_05"); //Dlaczego?
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_06"); //Tutaj wez ten kamien.
 
 	B_GiveInvItems	(self, hero, ItMi_SumpfhaiStein, 1);
 
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_07"); //Er wird die Energie jedes Sumphaies absorbieren, den du oder jemand aus deiner Gruppe umbringt.
-	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_08"); //Es sollten mindestens zehn Haie sein, sonst war alles umsonst! Und jetzt geh.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_07"); //Bedzie pochlaniac energie kazdego Sumphai ty lub ktos w twojej grupie zabija.
+	AI_Output(self, hero, "Info_Mod_Karras_Leader_36_08"); //Powinno byc co najmniej dziesiec rekinów, inaczej wszystko za nic! Teraz odejdz.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Karras hat mir einen Stein gegeben. Er meinte, dass er die Energie von Sumpfhaien, die ich mit meiner Gruppe töte, absorbieren wird.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Karras dal mi kamien. Powiedzial, ze bedzie wchlanial energie rekinów bagiennych, które zabijam z moja grupa.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -374,19 +374,19 @@ FUNC INT Info_Mod_Karras_Stein_Condition()
 
 FUNC VOID Info_Mod_Karras_Stein_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_Stein_36_00"); //Gib mir den Stein.
+	AI_Output(self, hero, "Info_Mod_Karras_Stein_36_00"); //Daj mi kamien.
 
 	B_GiveInvItems	(hero, self, ItMi_SumpfhaiStein, 1);
 
 	if (Mod_Sekte_UDS_Stein >= 10)
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_Stein_36_01"); //Oh ja, sehr gut, er ist voll geladen. Komm in ein paar Tagen im Tal vorbei.
+		AI_Output(self, hero, "Info_Mod_Karras_Stein_36_01"); //Ach, tak, tak, bardzo dobrze, laduje sie. Przyjedzcie za kilka dni nad doline.
 	
-		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Karras will, dass ich in ein paar Tagen nochmal bei ihm vorbei komme.");
+		B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Karras chce, ze za kilka dni wróce do jego miejsca.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Karras_Stein_36_02"); //Aber ... der ist ja gar nicht aufgeladen! Verdammt, es war alles umsonst! Du nichtsnutziger Bastard! Geh mir aus den Augen!
+		AI_Output(self, hero, "Info_Mod_Karras_Stein_36_02"); //Ale.... Nie jest nawet naladowany! Damn, wszystko za nic! Jestes bezuzyteczny! Wychodzic z moich oczu!
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -415,7 +415,7 @@ FUNC INT Info_Mod_Karras_Fertig_Condition()
 
 FUNC VOID Info_Mod_Karras_Fertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_Fertig_36_00"); //Ich werde jetzt wieder gehen.
+	AI_Output(self, hero, "Info_Mod_Karras_Fertig_36_00"); //Bede teraz wyjezdzal.
 
 	AI_StopProcessInfos	(self);
 
@@ -444,13 +444,13 @@ FUNC INT Info_Mod_Karras_UDS_Condition()
 
 FUNC VOID Info_Mod_Karras_UDS_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_00"); //Ah, da bist du ja! Ich habe was für dich.
-	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_01"); //Hier, das ist eine Rune, die einen untoten Sumpfhai beschwört.
+	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_00"); //Ach, tam jestes! Dostalem cos dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_01"); //Tutaj jest to runo przywolujace nieumarlego rekina bagiennego.
 
 	B_GiveInvItems	(self, hero, ItRu_SumUDSwampshark, 1);
 
-	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_02"); //Wir haben sie mit der Energie des Steines, den du für uns aufgeladen hast, hergestellt.
-	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_03"); //Sumpfhaie sind zähe Gegner, untote Sumpfhaie sind unglaublich stark, aber diese, durch Magie beschworen, sind nahezu unbesiegbar!
+	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_02"); //Zrobilismy je z energii kamienia, za który nas Panstwo zaplacili.
+	AI_Output(self, hero, "Info_Mod_Karras_UDS_36_03"); //Rekiny swampowe sa twardymi przeciwnikami, rekiny nieumarle sa niesamowicie silne, ale te przywolane magia sa prawie niezwyciezone!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -478,9 +478,9 @@ FUNC INT Info_Mod_Karras_MagierWerden_Condition()
 
 FUNC VOID Info_Mod_Karras_MagierWerden_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_00"); //Du bist nun bereit, ein Schwarzmagier zu werden.
-	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_01"); //Wenn du dich für diesen Weg entscheidest, dann solltest du Xardas aufsuchen.
-	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_02"); //Alternativ kannst du auch zu Raven gehen und dich dort den Schwarzen Kriegern anschließen.
+	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_00"); //Teraz jestes gotowy, aby zostac czarnym magikiem.
+	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_01"); //Jesli wybierzesz te sciezke, powinienes odwiedzic Xardas.
+	AI_Output(self, hero, "Info_Mod_Karras_MagierWerden_36_02"); //Mozesz równiez wybrac sie do Raven i dolaczyc do Czarnych Wojowników.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -493,7 +493,7 @@ INSTANCE Info_Mod_Karras_Kreis1	(C_INFO)
 	information	= Info_Mod_Karras_Kreis1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den ersten Kreis der Magie.";
+	description	= "Naucz mnie pierwszego kola magii.";
 };
 FUNC INT Info_Mod_Karras_Kreis1_Condition()
 {	
@@ -510,12 +510,12 @@ FUNC INT Info_Mod_Karras_Kreis1_Condition()
 };
 FUNC VOID Info_Mod_Karras_Kreis1_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis1_15_00"); //Lehre mich den ersten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis1_15_00"); //Naucz mnie pierwszego kola magii.
 	
 	if B_TeachMagicCircle (self, hero, 1)
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_Kreis1_36_01"); //Der erste Kreis erlaubt es dir, Runen, die du erschaffen hast, anzuwenden.
-		AI_Output (self, hero, "Info_Mod_Karras_Kreis1_36_02"); //Du kannst jetzt die Formeln der Zaubersprüche lernen, um deine eigenen Runen herzustellen.
+		AI_Output (self, hero, "Info_Mod_Karras_Kreis1_36_01"); //Pierwsze kolo pozwala na uzycie utworzonych przez Ciebie run.
+		AI_Output (self, hero, "Info_Mod_Karras_Kreis1_36_02"); //Mozesz teraz nauczyc sie formul zaklec, aby tworzyc wlasne runy.
 
 		Mod_MagieKreis = 1;
 	};
@@ -531,7 +531,7 @@ INSTANCE Info_Mod_Karras_Kreis2		(C_INFO)
 	information	= Info_Mod_Karras_Kreis2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den zweiten Kreis der Magie.";
+	description	= "Naucz mnie drugiego kola magii.";
 };
 FUNC INT Info_Mod_Karras_Kreis2_Condition ()
 {	
@@ -547,20 +547,20 @@ FUNC INT Info_Mod_Karras_Kreis2_Condition ()
 };
 FUNC VOID Info_Mod_Karras_Kreis2_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis2_15_00"); //Lehre mich den zweiten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis2_15_00"); //Naucz mnie drugiego kola magii.
 	
 	if (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self, hero, 2)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis2_36_01"); //Tritt nun in den zweiten Kreis und lerne, noch mächtigere Zauber zu wirken.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis2_36_01"); //Wejdz do drugiego kola i naucz sie rzucac jeszcze mocniejsze czary.
 
 			Mod_MagieKreis = 2;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_Kreis2_36_02"); //Die Zeit ist noch nicht gekommen.
+		AI_Output (self, hero, "Info_Mod_Karras_Kreis2_36_02"); //Nadszedl jeszcze czas.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -574,7 +574,7 @@ INSTANCE Info_Mod_Karras_Kreis3		(C_INFO)
 	information	= Info_Mod_Karras_Kreis3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den dritten Kreis der Magie.";
+	description	= "Naucz mnie trzeciego kola magii.";
 };
 FUNC INT Info_Mod_Karras_Kreis3_Condition ()
 {	
@@ -587,20 +587,20 @@ FUNC INT Info_Mod_Karras_Kreis3_Condition ()
 };
 FUNC VOID Info_Mod_Karras_Kreis3_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis3_15_00"); //Lehre mich den dritten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis3_15_00"); //Naucz mnie trzeciego kola magii.
 	
 	if (Kapitel >= 3)
 	{
 		if B_TeachMagicCircle (self, hero, 3)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis3_36_01"); //Ja, die Zeit ist gekommen. Tritt ein in den dritten Kreis der Magie. Neue Zauber erwarten dich.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis3_36_01"); //Tak, nadszedl czas. Wprowadz trzecie kolo magii. Czekaja na Ciebie nowe zaklecia.
 
 			Mod_MagieKreis = 3;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_Kreis3_36_02"); //Es ist noch nicht an der Zeit für dich, den dritten Kreis zu lernen.
+		AI_Output (self, hero, "Info_Mod_Karras_Kreis3_36_02"); //Nie nadszedl jeszcze czas, aby nauczyc sie trzeciego kola.
 	};
 };		
 
@@ -612,7 +612,7 @@ INSTANCE Info_Mod_Karras_Kreis4 (C_INFO)
 	information	= Info_Mod_Karras_Kreis4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den vierten Kreis der Magie lernen.";
+	description	= "Chce poznac czwarte kolo magii.";
 };
 
 FUNC INT Info_Mod_Karras_Kreis4_Condition()
@@ -626,20 +626,20 @@ FUNC INT Info_Mod_Karras_Kreis4_Condition()
 };
 FUNC VOID Info_Mod_Karras_Kreis4_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis4_15_00"); //Ich will den vierten Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis4_15_00"); //Chce poznac czwarte kolo magii.
 	
 	if (Kapitel >= 4)
 	{
 		if B_TeachMagicCircle (self,hero, 4)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis4_36_01"); //Gut. Alle Zeichen sind erfüllt. Tritt nun ein in den vierten Kreis, auf dass dir die Macht der neuen Zauber inne werde.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis4_36_01"); //Dobre. Wszystkie znaki sa wypelnione. Wejdz do czwartego kola i zostaniesz upelnomocniony nowymi zakleciami.
 
 			Mod_MagieKreis = 4;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis4_36_02"); //Noch ist es nicht soweit.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis4_36_02"); //Jeszcze nie.
 	};
 };
 
@@ -651,7 +651,7 @@ INSTANCE Info_Mod_Karras_Kreis5 (C_INFO)
 	information	= Info_Mod_Karras_Kreis5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den fünften Kreis der Magie lernen.";
+	description	= "Chce poznac piate kolo magii.";
 };
 
 FUNC INT Info_Mod_Karras_Kreis5_Condition()
@@ -665,20 +665,20 @@ FUNC INT Info_Mod_Karras_Kreis5_Condition()
 
 FUNC VOID Info_Mod_Karras_Kreis5_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis5_15_00"); //Ich will den fünften Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis5_15_00"); //Chce poznac piate kolo magii.
 	
 	if (Kapitel >= 5)
 	{
 		if B_TeachMagicCircle (self,hero, 5)
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis5_36_01"); //Dann tritt nun ein in den fünften Kreis der Magie. Du wirst nun mächtigere Zauber als je zuvor beherrschen.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis5_36_01"); //Nastepnie dolacz do piatego kola magii. Teraz opanujesz mocniejsze czary niz kiedykolwiek wczesniej.
 
 			Mod_MagieKreis = 5;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis5_36_02"); //Die Zeit ist noch nicht reif dafür.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis5_36_02"); //Nadszedl jeszcze czas.
 	};
 };
 
@@ -690,7 +690,7 @@ INSTANCE Info_Mod_Karras_Kreis6	(C_INFO)
 	information	= Info_Mod_Karras_Kreis6_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den letzten Kreis der Magie.";
+	description	= "Naucz mnie ostatniego kola magii.";
 };
 
 FUNC INT Info_Mod_Karras_Kreis6_Condition()
@@ -704,23 +704,23 @@ FUNC INT Info_Mod_Karras_Kreis6_Condition()
 
 FUNC VOID Info_Mod_Karras_Kreis6_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Karras_Kreis6_15_00"); //Lehre mich den letzten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Karras_Kreis6_15_00"); //Naucz mnie ostatniego kola magii.
 	
 	if (Kapitel >= 6)
 	{
 		if B_TeachMagicCircle (self,hero, 6)  
 		{
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_01"); //Viel Zeit ist vergangen, seit du den Bund mit Beliar eingegangen bist. Viel ist geschehen und wir finden keine Ruhe.
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_02"); //Du bist der Erwählte Beliars. Und als solcher wirst du alle Kraft brauchen, um deine Kämpfe zu bestehen.
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_03"); //Ich weihe dich nun, Erwählter. Du trittst ein in den sechsten Kreis.
-			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_04"); //Die Zauberformeln des letzten Kreises kannst du nun von Andokai lernen, wenn du es wünschst.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_01"); //Minelo wiele czasu od zawarcia przymierza z Beliarem. Wiele sie wydarzylo i nie znajdujemy pokoju.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_02"); //Jestes wybranym Beliarem. W ten sposób bedziesz potrzebowal calej sily, aby przetrwac swoje walki.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_03"); //Poswiecam pana teraz, prosze pania wybrac. Wprowadzasz szóste kolo.
+			AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_04"); //Mozesz teraz nauczyc sie zaklec ostatniego kola z Andokai, jesli chcesz.
 
 			Mod_MagieKreis = 6;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_05"); //Noch ist es nicht an der Zeit dafür. Wenn du ein Stück weiter auf dem Weg gegangen bist, den Beliar dir zeigt, dann werde ich dich unterweisen.
+		AI_Output (self, hero, "Info_Mod_Karras_Kreis6_36_05"); //To jeszcze nie czas. Jesli poszedles troche dalej po drodze Beliar cie pokaze, a ja cie poucze.
 	};
 };
 

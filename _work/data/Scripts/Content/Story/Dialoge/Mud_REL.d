@@ -15,23 +15,23 @@ FUNC INT Info_Mod_Mud_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Mud_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_00"); //(dümmlich freundlich) Ahh, hallo. Du bist’s mein lieber Freund.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_01"); //Ich würde ja gerne mir dir ein bisschen durch die Gegend spazieren gehen.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_02"); //Aber ich muss jetzt hier auf die netten Schäfchen aufpassen.
-	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_03"); //Mud?!
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_04"); //Ja, bin jetzt hier Schäfer. Bei Onar wollten sie mich nicht mehr.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_05"); //Da passt jetzt der Pepe auf die Schafe auf.
-	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_06"); //Aber ... was war mit dem Alten Lager?
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_07"); //Da waren jetzt so böse grüne Kerle.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_08"); //Die waren noch gemeiner als die anderen vorher im Lager, haben die ganze Zeit herumgebrüllt und wollte mich verhauen.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_09"); //Da bin ich weggelaufen.
-	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_10"); //Aaalles klar. Dann wünsche ich dir noch viel vergnügen beim Bewachen der Wollknäule.
-	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_11"); //Hihi, du bist komisch ... Wollknäule ... das muss ich mir unbedingt merken.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_00"); //Ahh, powitanie. To ty, mój drogi przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_01"); //Chcialbym zabrac cie na spacer.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_02"); //Ale teraz musze zadbac o ladne owce.
+	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_03"); //Mud?
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_04"); //Tak, teraz jestem pasterzem. Z Onar nie chcieli mnie juz wiecej.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_05"); //Opieka Pepe' a nad owcami.
+	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_06"); //Ale.... A co z starym obozem?
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_07"); //Byli tam tak zlo zielonych chlopaków.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_08"); //Byli nawet bardziej zdenerwowani niz inni w obozie, krzyczeli caly czas i próbowali mnie bic.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_09"); //Wtedy ucieklem.
+	AI_Output(hero, self, "Info_Mod_Mud_REL_Hi_15_10"); //Wszystko jest jasne. Pózniej zycze Wam wiele zabawy podczas ogladania welnianej kolumny.
+	AI_Output(self, hero, "Info_Mod_Mud_REL_Hi_03_11"); //Hihi, jestes dziwaczny.... pokretlo welny..... Musze o tym pamietac.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fisk_NW_Hi))
 	&& (Mod_Fisk_LeiseHoffnung == 0)
 	{
-		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Mud hatte offensichtlich mal wieder mehr Glück als Verstand. Er hütet jetzt Schafe in Khorata.");
+		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Oczywiscie bloto bylo szczesliwsze niz myslalem. Obecnie hoduje on owce w Khorata.");
 	};
 };
 

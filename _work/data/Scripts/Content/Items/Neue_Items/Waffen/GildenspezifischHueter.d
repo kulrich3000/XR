@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Kilgorin (C_Item)
 {	
-	name 				=	"Kilgorin";
+	name 				=	"kilgoryn";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_Kilgorin (C_Item)
 };
 INSTANCE ItMw_Kilgorin_Geschaerft (C_Item)
 {	
-	name 				=	"Kilgorin (geschärft)";
+	name 				=	"Kilgorin (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -59,7 +59,7 @@ INSTANCE ItMw_Kilgorin_Geschaerft (C_Item)
 
 INSTANCE ItMw_XRSchwert_02 (C_Item)
 {	
-	name 				=	"Hüter - Zweihänder";
+	name 				=	"Trzymac Twoja reke";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -82,7 +82,7 @@ INSTANCE ItMw_XRSchwert_02 (C_Item)
 };
 INSTANCE ItMw_XRSChwert_02_Geschaerft (C_Item)
 {	
-	name 				=	"Hüter - Zweihänder (geschärft)";
+	name 				=	"Keeper - Dwuosobowy (ostrozny)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

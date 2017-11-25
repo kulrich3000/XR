@@ -18,36 +18,36 @@ FUNC INT Info_Mod_Thys_Hi_Condition()
 
 FUNC VOID Info_Mod_Thys_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_Hi_07_00"); //Was willst du hier?
+	AI_Output(self, hero, "Info_Mod_Thys_Hi_07_00"); //Co Pan tutaj robi?
 
 	Info_ClearChoices	(Info_Mod_Thys_Hi);
 
-	Info_AddChoice	(Info_Mod_Thys_Hi, "Ich suche eine bestimmte Spruchrolle.", Info_Mod_Thys_Hi_B);
+	Info_AddChoice	(Info_Mod_Thys_Hi, "Szukam pewnego zaklecia.", Info_Mod_Thys_Hi_B);
 
 	if (VMG_Second == 6)
 	&& (Npc_HasItems(hero, ItFo_Fish) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Thys_Hi, "Ich habe dir etwas mitgebracht.", Info_Mod_Thys_Hi_A);
+		Info_AddChoice	(Info_Mod_Thys_Hi, "Przynióslem ci cos.", Info_Mod_Thys_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Thys_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Hi_B_15_00"); //Ich suche eine bestimmte Spruchrolle.
-	AI_Output(self, hero, "Info_Mod_Thys_Hi_B_07_01"); //Warum sollte ich dir helfen?
+	AI_Output(hero, self, "Info_Mod_Thys_Hi_B_15_00"); //Szukam pewnego zaklecia.
+	AI_Output(self, hero, "Info_Mod_Thys_Hi_B_07_01"); //Dlaczego móglbym Ci pomóc?
 
 	Info_ClearChoices	(Info_Mod_Thys_Hi);
 
-	Info_AddChoice	(Info_Mod_Thys_Hi, "Was soll ich für dich tun?", Info_Mod_Thys_Hi_D);
-	Info_AddChoice	(Info_Mod_Thys_Hi, "Weil ich dir sonst die Kehle durchschneide.", Info_Mod_Thys_Hi_C);
+	Info_AddChoice	(Info_Mod_Thys_Hi, "Co chcesz, abym zrobil?", Info_Mod_Thys_Hi_D);
+	Info_AddChoice	(Info_Mod_Thys_Hi, "Bo rozcie Ci gardlo.", Info_Mod_Thys_Hi_C);
 };
 
 FUNC VOID Info_Mod_Thys_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Hi_D_15_00"); //Was soll ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Thys_Hi_D_07_01"); //Bring mir etwas zu essen. Und zu trinken. Zwei Flaschen Wein und ein Brot sollten für’s Erste reichen.
+	AI_Output(hero, self, "Info_Mod_Thys_Hi_D_15_00"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Thys_Hi_D_07_01"); //Przynies mi cos do jedzenia. I pic. Na razie powinny to zrobic dwie butelki wina i bochenek chleba.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich soll Thys zwei Flaschen Wein und ein Brot geben, bevor er weiter mit mir redet.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Mam dac Tony' emu dwie butelki wina i bochenka chleba, zanim on do mnie porozmawia.");
 
 	VMG_Second = 7;
 
@@ -56,22 +56,22 @@ FUNC VOID Info_Mod_Thys_Hi_D()
 
 FUNC VOID Info_Mod_Thys_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Hi_C_15_00"); //Weil ich dir sonst die Kehle durchschneide.
-	AI_Output(self, hero, "Info_Mod_Thys_Hi_C_07_01"); //Versuch’s doch mal, Bürschchen.
-	AI_Output(hero, self, "Info_Mod_Thys_Hi_C_15_02"); //Ich will keinen Ärger. Nur eine Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Thys_Hi_C_15_00"); //Bo rozcie Ci gardlo.
+	AI_Output(self, hero, "Info_Mod_Thys_Hi_C_07_01"); //Spróbuj, busteruj.
+	AI_Output(hero, self, "Info_Mod_Thys_Hi_C_15_02"); //Nie chce zadnych klopotów. Po prostu zaklecie.
 
 	Info_ClearChoices	(Info_Mod_Thys_Hi);
 
-	Info_AddChoice	(Info_Mod_Thys_Hi, "Was soll ich für dich tun?", Info_Mod_Thys_Hi_D);
+	Info_AddChoice	(Info_Mod_Thys_Hi, "Co chcesz, abym zrobil?", Info_Mod_Thys_Hi_D);
 };
 
 FUNC VOID Info_Mod_Thys_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Hi_A_15_00"); //Ich habe dir etwas mitgebracht.
+	AI_Output(hero, self, "Info_Mod_Thys_Hi_A_15_00"); //Przynióslem ci cos.
 
 	B_GiveInvItems	(hero, self, ItFo_Fish, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_Hi_A_07_01"); //Ah, du kennst unsere Bräuche. Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Thys_Hi_A_07_01"); //Ach, znasz nasze zwyczaje. Co moge dla Ciebie zrobic?
 
 	VMG_Second = 8;
 
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Thys_HabEssen (C_INFO)
 	information	= Info_Mod_Thys_HabEssen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab deine Sachen.";
+	description	= "Dostalem wasze rzeczy.";
 };
 
 FUNC INT Info_Mod_Thys_HabEssen_Condition()
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Thys_HabEssen_Condition()
 
 FUNC VOID Info_Mod_Thys_HabEssen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_HabEssen_15_00"); //Ich hab deine Sachen.
+	AI_Output(hero, self, "Info_Mod_Thys_HabEssen_15_00"); //Dostalem wasze rzeczy.
 
-	B_ShowGivenThings	("Zwei Wein und ein Brot gegeben");
+	B_ShowGivenThings	("Dwa wina i bochenki chleba");
 
-	AI_Output(self, hero, "Info_Mod_Thys_HabEssen_07_01"); //Vielen Dank. Was kann ich nun für dich tun?
+	AI_Output(self, hero, "Info_Mod_Thys_HabEssen_07_01"); //Dziekuje bardzo. Co moge teraz dla Ciebie zrobic?
 
 	VMG_Second = 8;
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Mod_Thys_Zauber (C_INFO)
 	information	= Info_Mod_Thys_Zauber_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen Verwandlungszauber. Zur Fleischwanze.";
+	description	= "Szukam zaklecia metamorfozy. Do bledu przy miesie.";
 };
 
 FUNC INT Info_Mod_Thys_Zauber_Condition()
@@ -133,12 +133,12 @@ FUNC INT Info_Mod_Thys_Zauber_Condition()
 
 FUNC VOID Info_Mod_Thys_Zauber_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Zauber_15_00"); //Ich suche einen Verwandlungszauber. Zur Fleischwanze.
-	AI_Output(self, hero, "Info_Mod_Thys_Zauber_07_01"); //Da kann ich dir helfen. Zufällig habe ich einen hier. Umsonst gibt es den allerdings nicht.
-	AI_Output(hero, self, "Info_Mod_Thys_Zauber_15_02"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Thys_Zauber_07_03"); //Ich bin ziemlich einsam hier. Bringe mir jemanden aus dem Dorf zum Unterhalten.
+	AI_Output(hero, self, "Info_Mod_Thys_Zauber_15_00"); //Szukam zaklecia metamorfozy. Do bledu przy miesie.
+	AI_Output(self, hero, "Info_Mod_Thys_Zauber_07_01"); //Moge panu w tym pomóc. Tak sie sklada, ze mam tutaj taka propozycje. Nie jest ona jednak bezplatna.
+	AI_Output(hero, self, "Info_Mod_Thys_Zauber_15_02"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Thys_Zauber_07_03"); //Jestem tu bardzo samotny. Zabierz mnie z wioski, aby mnie zabawic.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Thys möchte, dass ich ihm jemanden aus dem Dorf bringe, mit dem er sich unterhalten kann.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Thys chce, abym przywiózl go z wioski do rozmów.");
 };
 
 INSTANCE Info_Mod_Thys_Scroll (C_INFO)
@@ -162,31 +162,31 @@ FUNC INT Info_Mod_Thys_Scroll_Condition()
 
 FUNC VOID Info_Mod_Thys_Scroll_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_00"); //Ah, gut! Du willst also den Verwandlungszauber, mit dem man sich in eine Fleischwanze verwandeln kann?
-	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_01"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_02"); //Also gut, du kannst ihn haben. Hier.
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_00"); //Ach, dobrze! Chcesz miec zaklecie metamorfozy, które przeksztalca cie w blad miesny?
+	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_01"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_02"); //Wszystko w porzadku, mozesz go miec. Tutaj.
 
 	CreateInvItems	(self, ItSc_TrfMeatbug, 1);
 	B_GiveInvItems	(self, hero, ItSc_TrfMeatbug, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_03"); //Pass gut darauf aus.
-	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_04"); //Vielen Dank. Aber eins noch: Wie komme ich wieder von hier weg?
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_05"); //Bist du durch das Portal gekommen?
-	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_06"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_07"); //Alles klar. Ich erzähle dir von einem Weg, wenn du mir ... sagen wir einen Fisch bringst.
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_03"); //Zadbaj o to.
+	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_04"); //Dziekuje bardzo. Ale jak moge sie wydostac z tego miejsca?
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_05"); //Czy przegladales portal?
+	AI_Output(hero, self, "Info_Mod_Thys_Scroll_15_06"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_07_07"); //Wszystko jasne. Opowiem ci, jak mi pomóc.... przynosic rybe.
 
 	Info_ClearChoices	(Info_Mod_Thys_Scroll);
 
 	Info_AddChoice	(Info_Mod_Thys_Scroll, "Okay.", Info_Mod_Thys_Scroll_B);
-	Info_AddChoice	(Info_Mod_Thys_Scroll, "Vergiss es.", Info_Mod_Thys_Scroll_A);
+	Info_AddChoice	(Info_Mod_Thys_Scroll, "Zapomnij o tym.", Info_Mod_Thys_Scroll_A);
 };
 
 FUNC VOID Info_Mod_Thys_Scroll_B()
 {
 	AI_Output(hero, self, "Info_Mod_Thys_Scroll_B_15_00"); //Okay.
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_B_07_01"); //Worauf wartest du noch?
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_B_07_01"); //Na co czekasz?
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich soll Thys einen Fisch bringen, damit er mir erzählt, wie ich wieder von hier wegkomme.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Mialem przyniesc Thysowi rybe, wiec on moze mi powiedziec, jak mnie tu wyprowadzic.");
 
 	VMG_Second = 10;
 
@@ -195,11 +195,11 @@ FUNC VOID Info_Mod_Thys_Scroll_B()
 
 FUNC VOID Info_Mod_Thys_Scroll_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Scroll_A_15_00"); //Vergiss es.
-	AI_Output(self, hero, "Info_Mod_Thys_Scroll_A_07_01"); //Also liegt dir gar nicht so viel an der Spruchrolle?
-	AI_Output(hero, self, "Info_Mod_Thys_Scroll_A_15_02"); //Doch, doch. Ich bringe dir deinen Fisch.
+	AI_Output(hero, self, "Info_Mod_Thys_Scroll_A_15_00"); //Zapomnij o tym.
+	AI_Output(self, hero, "Info_Mod_Thys_Scroll_A_07_01"); //Wiec nie obchodzi Cie tak wiele zaklecia?
+	AI_Output(hero, self, "Info_Mod_Thys_Scroll_A_15_02"); //Tak, tak, tak, tak, tak. Przynosze twoja rybe.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich soll Thys einen Fisch bringen, damit er mir erzählt, wie ich wieder von hier wegkomme.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Mialem przyniesc Thysowi rybe, wiec on moze mi powiedziec, jak mnie tu wyprowadzic.");
 
 	VMG_Second = 10;
 
@@ -228,25 +228,25 @@ FUNC INT Info_Mod_Thys_Fisch_Condition()
 
 FUNC VOID Info_Mod_Thys_Fisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_Fisch_07_00"); //Hast du den Fisch?
-	AI_Output(hero, self, "Info_Mod_Thys_Fisch_15_01"); //Ja, hier.
+	AI_Output(self, hero, "Info_Mod_Thys_Fisch_07_00"); //Dostales rybe?
+	AI_Output(hero, self, "Info_Mod_Thys_Fisch_15_01"); //Tak, tutaj.
 
 	B_GiveInvItems	(hero, self, ItFo_Fish, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_Fisch_07_02"); //Oh, schön. Also folgendes: Du gehst einfach wieder zum Portal und sprichst folgende Worte: Aman rabbah kolir! Das war's.
+	AI_Output(self, hero, "Info_Mod_Thys_Fisch_07_02"); //Ach, ladny. Oto wiec sprawa: po prostu wracasz do portalu i mówisz nastepujace slowa: Aman rabbah kolir! To wszystko.
 
-	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Ich soll wieder zum Steinkreis gehen und die Worte 'Aman rabbah kolir' sprechen.");
+	B_LogEntry	(TOPIC_MOD_FERCO_WANZE, "Powinienem wrócic do kamiennego kola i powiedziec slowa 'Aman rabbah kolir'.");
 
 	Info_ClearChoices	(Info_Mod_Thys_Fisch);
 
-	Info_AddChoice	(Info_Mod_Thys_Fisch, "Vielen Dank. Ich mache mich auf den Weg.", Info_Mod_Thys_Fisch_B);
-	Info_AddChoice	(Info_Mod_Thys_Fisch, "Das war alles? Du verarschst mich doch.", Info_Mod_Thys_Fisch_A);
+	Info_AddChoice	(Info_Mod_Thys_Fisch, "Dziekuje bardzo. Jestem na drodze.", Info_Mod_Thys_Fisch_B);
+	Info_AddChoice	(Info_Mod_Thys_Fisch, "To wszystko? Oszukujesz mnie.", Info_Mod_Thys_Fisch_A);
 };
 
 FUNC VOID Info_Mod_Thys_Fisch_B()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Fisch_B_15_00"); //Vielen Dank. Ich mache mich auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Thys_Fisch_B_07_01"); //Mach's gut und danke für den Fisch!
+	AI_Output(hero, self, "Info_Mod_Thys_Fisch_B_15_00"); //Dziekuje bardzo. Jestem na drodze.
+	AI_Output(self, hero, "Info_Mod_Thys_Fisch_B_07_01"); //Pozegnanie i podziekowania za ryby!
 
 	VMG_Second = 11;
 
@@ -255,10 +255,10 @@ FUNC VOID Info_Mod_Thys_Fisch_B()
 
 FUNC VOID Info_Mod_Thys_Fisch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Fisch_A_15_00"); //Das war alles? Du verarschst mich doch.
-	AI_Output(self, hero, "Info_Mod_Thys_Fisch_A_07_01"); //Nein. Finde es doch selbst heraus.
-	AI_Output(hero, self, "Info_Mod_Thys_Fisch_A_15_02"); //Das werde ich.
-	AI_Output(self, hero, "Info_Mod_Thys_Fisch_A_07_03"); //Mach’s gut und danke für den Fisch!
+	AI_Output(hero, self, "Info_Mod_Thys_Fisch_A_15_00"); //To wszystko? Oszukujesz mnie.
+	AI_Output(self, hero, "Info_Mod_Thys_Fisch_A_07_01"); //Nie. Dowiedz sie dla siebie.
+	AI_Output(hero, self, "Info_Mod_Thys_Fisch_A_15_02"); //Bede, to zrobie.
+	AI_Output(self, hero, "Info_Mod_Thys_Fisch_A_07_03"); //Pozegnanie i podziekowania za ryby!
 
 	VMG_Second = 11;
 
@@ -273,7 +273,7 @@ INSTANCE Info_Mod_Thys_AlvarDead (C_INFO)
 	information	= Info_Mod_Thys_AlvarDead_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hörte, dass dir das Tagebuch des verschiedenen Alvar gebracht wurde?";
+	description	= "Slyszalem, ze przyniósles pamietnik innego Alvara?";
 };
 
 FUNC INT Info_Mod_Thys_AlvarDead_Condition()
@@ -286,12 +286,12 @@ FUNC INT Info_Mod_Thys_AlvarDead_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarDead_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_00"); //Ich hörte, dass dir das Tagebuch des verschiedenen Alvar gebracht wurde?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_01"); //Ja, das ist richtig. Wieso fragst du?
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_02"); //Nun, ich habe einen Verdacht und es könnte helfen einiges aufzuklären, wenn ich einen kurzen Blick hineinwerfen könnte.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_03"); //Einen Verdacht? Wovon sprichst du? Erkläre dich!
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_04"); //Ja, ich habe allen Grund zur Vermutung, dass mehr hinter seinem Tod steckt ... mehr als nur Schneegeister.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_05"); //Und da soll dir seine Tagebuch irgendwie weiterhelfen? Nun gut, ein kurzer Blick hinein sei dir gewährt.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_00"); //Slyszalem, ze przyniósles pamietnik innego Alvara?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_01"); //Tak, to prawda. Dlaczego pytasz?
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_02"); //No cóz, mam podejrzliwosc i moze mi pomóc wyjasnic pewne kwestie, gdybym mógl szybko zagladnac do srodka.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_03"); //Pod podejrzenia? O czym Pan mówi? Wyjasnij sie!
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead_15_04"); //Tak, mam wszelkie powody, by wierzyc, ze az do jego smierci jest wiecej.... nie tylko duchy sniegu.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead_07_05"); //A jego pamietnik ma ci w tym pomóc? W prawo, zajrzyjmy do srodka.
 
 	B_GiveInvItems	(self, hero, ItWr_AlvarTagebuch2, 1);
 
@@ -306,7 +306,7 @@ INSTANCE Info_Mod_Thys_AlvarDead2 (C_INFO)
 	information	= Info_Mod_Thys_AlvarDead2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die letzte Seite wurde herausgerissen und der Text ist neu.";
+	description	= "Ostatnia strona zostala wyrwana, a tekst jest nowy.";
 };
 
 FUNC INT Info_Mod_Thys_AlvarDead2_Condition()
@@ -319,38 +319,38 @@ FUNC INT Info_Mod_Thys_AlvarDead2_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarDead2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_00"); //Die letzte Seite wurde herausgerissen und der Text ist neu.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_01"); //Was?! Wie kommst du zu dieser Behauptung? Woher willst du das wissen?
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_02"); //Nun, weil ich es im Auftrag von Serra und Malfama vor nicht vielen Stunden entwendet habe ... bevor Alvar umkam.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_03"); //Gestohlen auf die Weisung dieser beiden untadeligen Frauen? Bist du dir darüber im Klaren, wie unerhört diese Vorwürfe klingen.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_04"); //Umso mehr, da sie durch die Nachstellungen von Alvar so gelitten haben.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_05"); //Aber es ist die Wahrheit.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_06"); //Wahr ist vor Gericht nur das, was als erwiesen gilt.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_07"); //Und habe ich mich nur verhört, als du gar einen Zusammenhang zu dem Ableben von Alvar herstellen wolltest?
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_08"); //Ja, das wollte ich.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_09"); //(nach Luft ringend) Das ... das ist ...
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_10"); //Es ist wahr, was ich sage! Ich brachte ihnen das Tagebuch.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_11"); //In diesem hatte Alvar etwas von einem magischen Kristall preisgegeben, der sich versteckt in seiner Rüstung befand, um ihn vor den Schneegeistern zu schützten.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_12"); //Und heute ist er durch selbige umgekommen? Kann das Zufall sein?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_13"); //(noch immer aufgeregt) Es ... (hält inne, gefasster) lass mich kurz nachdenken ... Es klingt zu unglaublich ...
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_14"); //Gut, eine herausgerissene Seite als lächerliches Indiz.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_15"); //Und dann noch deine Aussage, die Behauptungen eines Fremden, die zwei geachtete, fromme und ungescholtene Frauen der Mittäterschaft an einem Mord bezichtigt. Das ist unerhört.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_16"); //Du fängst ja schon an, wie der verrückte Alvar.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_17"); //Wie? Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_18"); //ch, der Irre hat ja auch einige Zeit schlimmes über die beiden verbreitet, behauptet, sie seien ... (hält inne) egal, das soll jetzt keine Rolle mehr spielen.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_19"); //Was genau hat er erzählt.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_20"); //Ich werde bestimmt nicht damit fortfahren, seine üblen Verleumdungen wieder aufleben zu lassen.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_21"); //Was davon seinen Aussagen zu halten war, sehen wir ja hier im Tagebuch.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_22"); //Aber wenn nun doch etwas dran war?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_23"); //(ungeduldig) Du lässt wohl nicht locker. Wenn du deine unmöglichen Behauptungen  untermauern willst, so solltest du dies mit Beweisen tun ...
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_24"); //Beweisstücke? Was zum Beispiel?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_25"); //Wenn du Beweisstücke suchst, dann wäre Alvars Rüstung doch schon mal ein guter Anfang.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_26"); //Aber du weißt, dass es nicht ungefährlich wird. Du macht es auf eigene Gefahr.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_27"); //Ja, da bleibt mir aber wohl keine andere Wahl.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_28"); //Ja, mach, was du glaubst tun zu müssen. Alvars Leiche wurde auf einem Berg nordöstlich von hier gesichtet.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_29"); //Jetzt weißt du, wo du hin musst. Auch, wenn ich die ganze Sache nicht gutheiße.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_00"); //Ostatnia strona zostala wyrwana, a tekst jest nowy.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_01"); //Co? Jak dojsc do tego stwierdzenia? Skad to wiesz?
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_02"); //Cóz, poniewaz ukradlem go w imieniu Serry i Malfamy nie wiele godzin temu...... przed zabiciem Alvara.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_03"); //Stolen na instrukcje tych dwóch nienagannych kobiet? Czy zdajesz sobie sprawe, jak oburzajace sa te oskarzenia?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_04"); //Tym bardziej, ze tak bardzo ucierpieli z powodu rekonstrukcji Alvaru.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_05"); //Ale to prawda.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_06"); //Jedyna prawda w sadzie jest to, co zostalo udowodnione.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_07"); //Czy tylko zle zrozumialem, kiedy próbowales nawiazac kontakt z upadkiem Alvara?
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_08"); //Tak, to wlasnie chcialem.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_09"); //(walka o powietrze).... to jest......
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_10"); //To prawda, co mówie! Przynioslam im pamietnik.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_11"); //Alvar odslonil w nim magiczny krysztal krysztal ukryty w zbroi, aby uchronic go przed duchami sniegu.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_12"); //I dzisiaj zostal przez nich zabity. Czy to moze byc zbieg okolicznosci?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_13"); //(jeszcze podekscytowany) To.... (zatrzymuje sie, zatrzymuje) pozwole sobie pomyslec krótko..... Brzmi to zbyt niewiarygodnie....
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_14"); //Cóz, rozdarta strona jako smieszna wskazówka.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_15"); //A potem twoje swiadectwo, twierdzenia nieznajomych oskarzajacych dwie szanowane, religijne i niewinne kobiety o wspóludzial w zabójstwie. To oburzajace.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_16"); //Zaczynasz jak szalony Alvar.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_17"); //Jak? Co myslisz?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_18"); //lunatyk od jakiegos czasu rozpowszechnia zle wiesci o dwóch z nich, twierdzac, ze sa one...... Nie ma znaczenia, to juz nie ma znaczenia.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_19"); //Co dokladnie ci powiedzial?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_20"); //Z pewnoscia nie bede dalej ozywiac jego zlego znieslawienia.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_21"); //To, co mozna bylo myslec o jego wypowiedziach, widzimy tutaj w dzienniku.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_22"); //Ale czy bylo cos na ten temat?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_23"); //Nie oddajesz sie, prawda? Jesli chcesz uzasadnic swoje niemozliwe twierdzenia, powinienes to zrobic dowodami....
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_24"); //Wystawy? Co na przyklad podoba sie?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_25"); //Jesli szukasz dowodów, zbroja Alvara bedzie dobrym poczatkiem.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_26"); //Ale wiesz, ze to nie bedzie nieszkodliwe. Robisz to na wlasne ryzyko.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead2_15_27"); //Tak, nie mam wyboru.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_28"); //Tak, zrób to, co uwazasz za konieczne. Cialo Alvara bylo tu widziane na pólnocnym wschodzie góry.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead2_07_29"); //Teraz wiesz, dokad pójsc. Nawet jesli nie popieram calej sprawy.
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Thys war nicht gerade sehr aufgeschlossen dafür mich bei diesem Fall zu unterstützen. Ich werde wohl Alvars Rüstung bergen müssen. Den Leichnam werde ich nordöstlich vom Dorf auf einem Berg finden.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "To nie bylo zbytnio otwarte na wsparcie mnie w tej sprawie. Prawdopodobnie bede musial ratowac pancerz Alvara. Cialo na pólnocny-wschód od wioski znajde na górze.");
 
 	Wld_InsertNpc	(Mod_7562_OUT_Alvar_EIS,	"EIS_268");
 
@@ -365,7 +365,7 @@ INSTANCE Info_Mod_Thys_AlvarDead3 (C_INFO)
 	information	= Info_Mod_Thys_AlvarDead3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Rüstung.";
+	description	= "Mam zbroje.";
 };
 
 FUNC INT Info_Mod_Thys_AlvarDead3_Condition()
@@ -379,22 +379,22 @@ FUNC INT Info_Mod_Thys_AlvarDead3_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarDead3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_00"); //Ich habe die Rüstung.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_01"); //Was wirklich? Zeig her.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_02"); //Tatsächlich, irgendetwas Hartes ist darin eingenäht.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_03"); //Warte mal. Es ist ein simpler Stein.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_04"); //Na also. Serra und Malfama haben von dem Kristall gelesen und ihn durch einen einfachen Stein ausgetaucht.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_05"); //Ja, die Rüstung könnte ein Indiz dafür sein. Aber eben auch nicht mehr.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_06"); //Was kann ich noch tun?
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_07"); //Nun, in der Rüstung muss sich nach deinen Mutmaßungen einmal der Kristall befunden haben. Finde ihn!
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_08"); //Hmm, er könnte überall sein. Wenn mir doch nur etwas bei der Suche helfen könnte ...
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_09"); //Also bei uns gab es einst ein Amulett, dass in der Lage war Gegenstände aufzuspüren. Es stammte von den ...
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_10"); //(unterbricht) Natürlich, dass Erzamulett des suchenden Irrlichtes.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_11"); //Du bist im Besitze eines solchen? Dann sollte es auch kein Problem für dich sein, damit einen magischen Kristall aufzuspüren.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_12"); //Magische Energie können solche Amulette ja bekanntlich besonders gut sichtbar machen.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_13"); //Du weißt also, wie du vorgehen musst.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_00"); //Mam zbroje.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_01"); //Naprawde co? Pozwole sobie to zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_02"); //Wlasciwie w nim wszyte jest cos twardego.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_03"); //Trzymac przez sekunde. To prosty kamien.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_04"); //Idziesz tam. Serra i Malfama przeczytali o krysztalu i zanurzyli go w prostym kamieniu.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_05"); //Tak, pancerz moze to wskazywac. Ale nie wiecej.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_06"); //Co jeszcze moge zrobic?
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_07"); //Cóz, krysztal musial byc raz w zbroi, zgodnie z Twoimi przypuszczeniami. Znajdz go!
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_08"); //Hmm, mógl byc wszedzie. Jesli tylko cos mi pomogloby w wyszukiwaniu....
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_09"); //Mielismy wiec kiedys amulet, który potrafil wykrywac obiekty. Pochodzil z.....
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarDead3_15_10"); //(Interruje) Oczywiscie, ze ruda amulet przeszukujacej Night Wisp.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_11"); //Posiadasz jeden z nich? Wtedy nie powinienes miec problemu z odnalezieniem magicznego krysztalu.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_12"); //Energia magiczna moze sprawic, ze takie amulety beda szczególnie dobrze znane.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarDead3_07_13"); //Wiec wiesz, jak postepowac.
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Nun muss ich versuchen mit Hilfe des Amulettes den Kristall zu finden.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Teraz musze spróbowac znalezc krysztal z pomoca amuletu.");
 
 	B_GivePlayerXP	(300);
 
@@ -423,9 +423,9 @@ FUNC INT Info_Mod_Thys_AlvarKristall_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarKristall_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall_07_00"); //Ähhm, es sind gerade einige aufgebrachte Dorfbewohner zu mir gekommen, wie du ja selbst sieht.
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall_07_01"); //Sie erheben schlimme Anschuldigungen gegen dich. Außerdem haben sie auch von deinen Nachforschungen erfahren.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarKristall_15_02"); //Da ich den magischen Kristall nun habe, sollte die Wahrheit wohl endlich ans Tageslicht kommen.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall_07_00"); //Um, niektórzy zdenerwowani mieszkancy wsi wlasnie do mnie przyszli, jak ty sam widzisz siebie.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall_07_01"); //Oni oskarzaja Cie zle. Poza tym dowiedzieli sie równiez o Panstwa badaniach.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarKristall_15_02"); //Teraz, gdy mam magiczny krysztal, prawda powinna wreszcie wyjsc na swiatlo dzienne.
 
 	AI_StopProcessInfos	(self);
 };
@@ -452,8 +452,8 @@ FUNC INT Info_Mod_Thys_AlvarKristall2_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarKristall2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall2_07_00"); //Was hat das zu bed... natürlich. Alles, was mit dem Kristall in Berührung war, dem haftet für eine gewisse Zeit etwas dieser magischen Energie an.
-	AI_Output(hero, self, "Info_Mod_Thys_AlvarKristall2_15_01"); //Und Serras Hände strahlen förmlich. Das ist der Beweis, dass sie den Kristall aus der Rüstung entwendet hat, um Alvar dem sicheren Tod zu weihen.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall2_07_00"); //Co to znaczy, ze Oczywiscie. Wszystko, co bylo w kontakcie z krysztalem, ma czesc tej magicznej energii zwiazanej z nim od pewnego czasu.
+	AI_Output(hero, self, "Info_Mod_Thys_AlvarKristall2_15_01"); //Rece Serry swieca. To dowód na to, ze ukradla krysztal z pancerza, aby Alvar spowodowal smierc.
 
 	AI_StopProcessInfos	(self);
 };
@@ -478,19 +478,19 @@ FUNC INT Info_Mod_Thys_Eriskult_Condition()
 
 FUNC VOID Info_Mod_Thys_Eriskult_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_00"); //Mein Bewusstsein war die ganze Zeit wach.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_01"); //Nur war ich wegen der Hexenmagie nicht in der Lage mich zu bewegen und mitzuteilen.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_02"); //Ich habe also durchaus vernommen, was hier vorgefallen ist.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_03"); //(zum Helden) Die Gemeinschaft des Dorfes steht tief in euer beider Schuld.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_04"); //Ohne dich und Alvar wäre das Dorf dem Untergang geweiht gewesen.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_05"); //Über den Frevel mit der Eisleiche will ich mal hinwegsehen.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_06"); //Aber berichtet mir doch: Wie ist es euch gelungen die Zungen der trügerischen Weiber zu lösen?
-	AI_Output(hero, self, "Info_Mod_Thys_Eriskult_15_07"); //Durch einen Kristall, der den Tränen Innos entstammt. Ich habe ihn hier ... aber, Augenblick mal. Er ist ganz feucht.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_08"); //Ein Tränenkristall? Wirklich?
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_09"); //Ja, ich habe schon einmal davon gehört, hielt es aber für eine schlichte Legende. Beeindruckend.
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_10"); //Nun scheint er sich aber wieder in die Form der Tränen zurückzuverwandeln, da er sich außerhalb der Höhle und ihrer Umgebungsbedingungen befindet.
-	AI_Output(hero, self, "Info_Mod_Thys_Eriskult_15_11"); //Kann man den Prozess aufhalten?
-	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_12"); //Ich wüsste leider nicht wie.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_00"); //Caly czas budzila sie moja swiadomosc.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_01"); //Tylko z powodu magii czarownic nie bylem w stanie poruszac sie i komunikowac.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_02"); //Tak wiec z pewnoscia slyszalem, co sie tutaj wydarzylo.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_03"); //Spolecznosc wioski jest dla Was obojga gleboko zadluzona.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_04"); //Bez Ciebie i Alvara wioska bylaby skazana na zgube.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_05"); //Zobacze nieprawosc trupu.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_06"); //Ale powiedz mi, jak udalo ci sie rozluznic jezyki zwodniczych kobiet?
+	AI_Output(hero, self, "Info_Mod_Thys_Eriskult_15_07"); //Przez krysztal, który pochodzi z lez Inno. Mam go tutaj..... ale czekac minute. Jest mokry.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_08"); //Krystal? Naprawde?
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_09"); //Tak, slyszalem o tym juz wczesniej, ale myslalem, ze to prosta legenda. Imponujace.
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_10"); //Teraz jednak wydaje sie powracac do ksztaltu lez, poniewaz znajduje sie poza jaskinia i jej otoczeniem.
+	AI_Output(hero, self, "Info_Mod_Thys_Eriskult_15_11"); //Czy mozna zatrzymac proces?
+	AI_Output(self, hero, "Info_Mod_Thys_Eriskult_07_12"); //Nie wiem jak.
 
 	AI_StopProcessInfos	(self);
 
@@ -515,7 +515,7 @@ INSTANCE Info_Mod_Thys_Schneegeister (C_INFO)
 	information	= Info_Mod_Thys_Schneegeister_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hörte, dass die Schneegeister nicht immer die Umgebung des Dorfes belagert hätten ...";
+	description	= "Slyszalem, ze duchy sniegu nie zawsze oblegaly okolice wioski.... Wiecej";
 };
 
 FUNC INT Info_Mod_Thys_Schneegeister_Condition()
@@ -528,26 +528,26 @@ FUNC INT Info_Mod_Thys_Schneegeister_Condition()
 
 FUNC VOID Info_Mod_Thys_Schneegeister_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_00"); //Ich hörte, dass die Schneegeister nicht immer die Umgebung des Dorfes belagert hätten ... weißt du näheres über ihren Ursprung?
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_01"); //(überrascht) Die Schneegeister? Ach, das ist eine mysteriöse Geschichte.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_02"); //Ich war noch ein Kind, als sie anfingen, die Umgebung heimzusuchen.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_03"); //Ihre Herkunft? Das weiß keiner mit Sicherheit.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_04"); //Über die vielen Jahre haben wir uns mittlerweile auf die Gefahren eingestellt, die von ihnen ausgehen.
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_05"); //Aber welche Vermutungen gibt es denn zu ihrem Ursprung?
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_06"); //Ich hörte, dass manche die Götter dafür verantwortlich machen, oder magische Wesen.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_07"); //Ach, wenn Menschen keine Erklärung für Dinge finden, denken sie sich alles Mögliche aus.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_08"); //Natürlich könnten es die Götter sein. Aber genauso der Klabautermann.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_09"); //Es ist eben nichts, wofür es irgendwelche Indizien gäbe ...
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_10"); //Verstehe ... Ich hörte auch, dass jemand mal wegen aus dem Dorf verbannt worden sein soll ...
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_11"); //Ahh, die Geschichte. Du sprichst von Skamp. Ein junger Mann damals ...  vor fast sechs Jahrzehnten.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_12"); //Ja, mit dunklen Kräften soll er sich eingelassen haben, Beschwörungen vorgenommen und sich mit verruchtem Weibsbild vereinigt.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_13"); //Kurzum, er hatte nicht den besten Ruf und wurde aus dem Dorf verbannt.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_14"); //Einige Monate später tauchten die ersten Schneegeister auf. Ob es damit in Zusammenhang steht ... ich weiß es nicht.
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_15"); //Und wohin ist er gegangen?
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_16"); //Zuletzt will ihn jemand am großen See gesehen haben ... und dann war er wie vom Erdboden verschluckt.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_17"); //Aber, wie gesagt, dass alles ist lange, lange her ... und wahrscheinlich ohne jede Bedeutung.
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_00"); //Slyszalem, ze duchy sniegu nie zawsze oblegaly okolice wioski.... Wiecej Czy wiesz wiecej o ich pochodzeniu?
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_01"); //Duchy sniegu? Oh, to tajemnicza historia.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_02"); //Bylem tylko dzieckiem, kiedy zaczeli nawiedzac okolice.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_03"); //Jej tlo? Nikt nie wie na pewno.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_04"); //Przez lata dostosowywalismy sie do zagrozen, jakie stwarzaja.
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_05"); //Ale jakie sa zalozenia dotyczace jego pochodzenia?
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_06"); //Slyszalem, ze niektórzy ludzie obwiniaja bogów lub magiczne istoty.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_07"); //Ach, kiedy ludzie nie moga znalezc wyjasnienia dla rzeczy, wymyslaja rózne rzeczy.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_08"); //Oczywiscie moze to byc bogowie. Ale tak samo jest z czlowiekiem w laboratorium.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_09"); //Nie jest to tylko cos, na co istnieja jakiekolwiek poszlaki.....
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_10"); //Widze, jak.... Slyszalem tez, ze ktos zostal kiedys wypedzony z wioski......
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_11"); //Ahh, opowiesc. Mówisz o Skampie. Mlody mezczyzna wtedy jeszcze.... prawie szescdziesiat lat temu.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_12"); //Tak, podobno wszedl w ciemnosc, zaklecia i zjednoczyl sie z niegodziwa kobieta.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_13"); //Krótko mówiac, nie mial najlepszej reputacji i zostal wygnany z wioski.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_14"); //Kilka miesiecy pózniej pojawily sie pierwsze duchy sniegu. Czy to jest z tym zwiazane...... Nie wiem.
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister_15_15"); //A dokad poszedl?
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_16"); //Na koniec ktos chcialby zobaczyc go nad duzym jeziorem...... a nastepnie zostal polkniety na smierc.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister_07_17"); //Ale jak juz powiedzialem, od wszystkiego minelo duzo czasu.... i prawdopodobnie bez znaczenia.
 
-	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Thys hält nicht viel von den meisten Mutmaßungen über das Mitwirken von Göttern. Er erwähnte noch einen jungen Mann, der sich einst mit dunklen Mächten eingelassen haben soll und aus dem Dorf verbannt wurde. Zuletzt wurde er am zugefrorenen See gesehen. Das alles ist jedoch schon über 60 Jahre her und – so Thys Ansicht – vermutlich ohne jeden Kontext zu den Schneegeistern.");
+	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Wiekszosc spekulacji na temat zaangazowania bogów nie mysli o wiekszosci spekulacji. Wspomnial równiez o mlodym czlowieku, który podobno zaangazowal sie w ciemne moce i zostal wygnany z wioski. Ostatnio zobaczyl go na zamarznietym jeziorze. Wszystko to bylo jednak ponad 60 lat temu i wedlug opinii Thysa prawdopodobnie bez kontekstu dla duchów sniegu.");
 
 	Mod_Thys_Schneegeister_Tag = Wld_GetDay();
 };
@@ -560,7 +560,7 @@ INSTANCE Info_Mod_Thys_Schneegeister2 (C_INFO)
 	information	= Info_Mod_Thys_Schneegeister2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Beim See fand ich eine Höhle mit Schneegeistern.";
+	description	= "Nad jeziorem znalazlem jaskinie z duchami sniegu.";
 };
 
 FUNC INT Info_Mod_Thys_Schneegeister2_Condition()
@@ -575,29 +575,29 @@ FUNC INT Info_Mod_Thys_Schneegeister2_Condition()
 
 FUNC VOID Info_Mod_Thys_Schneegeister2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_00"); //Beim See fand ich eine Höhle mit Schneegeistern.
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_01"); //Unter ihnen war ein Untoter, der diesen Zettel bei sich hatte.
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_00"); //Nad jeziorem znalazlem jaskinie z duchami sniegu.
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_01"); //Wsród nich byl nieumarly czlowiek, który mial te nute z nim.
 
 	B_GiveInvItems	(hero, self, ItWr_Schneegeister, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_02"); //Was sagst du?
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_02"); //Co mówisz?
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_03"); //Nicht möglich!
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_03"); //Nie jest to mozliwe!
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_04"); //Unglaublich! Wenn das stimmt, dann könnte der Untote tatsächlich Skamp gewesen sein. Und du hast ihn vernichtet?
-	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_05"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_06"); //Das würde erklären, warum ich eine starke Änderung des magischen Gefüges in der Umgebung wahrnahm.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_07"); //Dem Schreiben ist zu entnehmen, dass er die Verbindung mit dämonischen Mächten suchte, sie zu lenken und kontrollieren.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_08"); //Wie es scheint, war er ihnen jedoch nicht gewachsen und sie nahmen Besitz von ihm ... oder jemand hat ihn reingelegt.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_09"); //Wie dem auch sei, es ist wahrscheinlich, dass er tatsächlich die Ursache für die Schneegeister war ... und wir ab jetzt von ihrem Treiben unbehelligt bleiben.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_10"); //Damit hast du unserer Gemeinde ein weiteres Mal einen unschätzbaren Dienst erwiesen.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_11"); //Wie kann ich es dir nur vergelten? Hmm, bis morgen ist mir bestimmt etwas eingefallen.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_04"); //Niewiarygodny! Jesli to prawda, nieumarlym mógl byc Skamp. I go zniszczyles?
+	AI_Output(hero, self, "Info_Mod_Thys_Schneegeister2_15_05"); //Tak wlasnie jest.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_06"); //Wyjasnialoby to, dlaczego odczuwalem silna zmiane w magicznym srodowisku.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_07"); //Na podstawie listu mozna wywnioskowac, ze domagal sie on polaczenia z silami demonicznymi w celu kierowania nimi i kontrolowania ich.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_08"); //Wydaje sie jednak, ze nie byl do nich i oni przejeli go w posiadanie...... lub ktos go zalozyl.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_09"); //W kazdym razie jest prawdopodobne, ze to wlasnie on byl przyczyna duchów sniegu... Wiecej i od teraz bedziemy spieszyc sie ich zgielkiem.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_10"); //Jest to kolejna nieoceniona usluga dla naszej spolecznosci.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister2_07_11"); //Jak moge Cie splacic? Hmm, jestem pewien, ze jutro cos wymyslim.
 
-	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Da das Dorf nun von weiteren Nachstellungen der Schneegeister verschont bleibt, möchte Thys mir morgen ein Geschenk machen.");
+	B_LogEntry	(TOPIC_MOD_GELLIT_SCHNEEGEISTER, "Poniewaz wioska jest teraz ocalona od dalszych przebudowy duchów sniegu, Thys chce dac mi jutro prezent.");
 
 	Mod_Thys_Schneegeister_Tag = Wld_GetDay();
 
@@ -625,14 +625,14 @@ FUNC INT Info_Mod_Thys_Schneegeister3_Condition()
 
 FUNC VOID Info_Mod_Thys_Schneegeister3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_00"); //Ahh, da bist du wieder.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_01"); //Da du dich immer auf gefährlichen Pfaden bewegst, habe ich diesen Schutztalisman für dich.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_00"); //Ahhh, znów jestes.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_01"); //Poniewaz jestes zawsze na niebezpiecznych sciezkach, mam dla ciebie ten ochronny talizman.
 
 	B_GiveInvItems	(self, hero, ItTa_Behueter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_02"); //Sobald du ihn am Gürtel befestigst, wird er nicht nur deine Widerstandskraft erhöhen, sondern auch für einen geringen Teil deines Manas ein Irrlicht herbeizaubern.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_03"); //Dieses wird alle Geschöpfe in deiner Umgebung in Verwirrung stürzen und Angriffe auf sich lenken.
-	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_04"); //Möge es dich auf deinen Wegen behüten.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_02"); //Po przymocowaniu do paska nie tylko zwiekszy to Twój opór, ale równiez wyczarowuje Nocna Szybe dla malej czesci Twojej many.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_03"); //Spowoduje to dezorientacje wszystkich stworzen wokól ciebie i bezposrednie ataki na siebie.
+	AI_Output(self, hero, "Info_Mod_Thys_Schneegeister3_07_04"); //Oby strzegla cie na twoich drogach.
 
 	B_GivePlayerXP	(200);
 
@@ -662,7 +662,7 @@ FUNC INT Info_Mod_Thys_AlvarKristall3_Condition()
 
 FUNC VOID Info_Mod_Thys_AlvarKristall3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall3_07_00"); //Es tut mir Leid. Die Mehrheit des Dorfes hat sich dafür ausgesprochen, dich auszustoßen. Mir sind die Hände gebunden.
+	AI_Output(self, hero, "Info_Mod_Thys_AlvarKristall3_07_00"); //Przykro mi z tego powodu. Wiekszosc mieszkanców wioski opowiedziala sie za wypedzeniem. Moje rece sa zwiazane.
 
 	AI_StopProcessInfos	(self);
 };
@@ -675,7 +675,7 @@ INSTANCE Info_Mod_Thys_GobboBeschwoerer (C_INFO)
 	information	= Info_Mod_Thys_GobboBeschwoerer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wolltest mich sehen?";
+	description	= "Chciales mnie zobaczyc?";
 };
 
 FUNC INT Info_Mod_Thys_GobboBeschwoerer_Condition()
@@ -688,17 +688,17 @@ FUNC INT Info_Mod_Thys_GobboBeschwoerer_Condition()
 
 FUNC VOID Info_Mod_Thys_GobboBeschwoerer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Thys_GobboBeschwoerer_15_00"); //Du wolltest mich sehen?
-	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_01"); //Ja, du hast unsere Stadt vor einem Angriff bewahrt und hast das Wohl der Anderen vor deines gestellt.
-	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_02"); //Als Belohnung sollst du diesen Ring bekommen. Er steigert deine Lebenskraft.
+	AI_Output(hero, self, "Info_Mod_Thys_GobboBeschwoerer_15_00"); //Chciales mnie zobaczyc?
+	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_01"); //Tak, uratowales nasze miasto przed atakiem i postawiles dobro innych przed soba.
+	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_02"); //W nagrode otrzymasz ten pierscionek. Zwieksza to sile zyciowa.
 
 	B_GiveInvItems	(self, hero, ItRi_Hp_03, 1);
 
-	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_03"); //Und nimm noch diese 250 Goldstücke.
+	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_03"); //I wez te 250 sztuk zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_04"); //Möge dir beides bei deiner weiteren Reise helfen.
+	AI_Output(self, hero, "Info_Mod_Thys_GobboBeschwoerer_07_04"); //Oboje moga pomóc w podrózy.
 
 	B_SetTopicStatus	(TOPIC_MOD_EIS_FRIEDHOF, LOG_SUCCESS);
 

@@ -6,7 +6,7 @@ const int Shield_01_TProtMagic = 20;
 
 instance ItAr_Shield_01 (C_Item)
 {	
-	name 				=	"Schild";
+	name 				=	"posluzyc sie jezykiem migowym";
 	
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SHIELD;	

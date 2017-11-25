@@ -2,7 +2,7 @@ instance Mod_7627_BUD_Costa_VM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Costa";
+	name =							"Kostaryka";
 	npctype =						npctype_MAIN;
 	guild =							GIL_out;      
 	level =							2;

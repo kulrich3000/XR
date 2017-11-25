@@ -65,7 +65,7 @@ func void NL_STEINKREIS_01_S1 ()
 			B_RemoveNpc	(Mod_7440_Paladingeist_NW);
 			B_RemoveNpc	(Mod_7441_Paladingeist_NW);
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Tatsächlich! Das erste Siegel ist geöffnet! Die Dinge, die sich während dessen in der Umgebung abgespielt haben, waren mehr als verwirrend ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Wlasciwie! Pierwsza uszczelka jest otwarta! To, co wydarzylo sie w otoczeniu podczas tego wydarzenia bylo wiecej niz mylace....");
 		};
 	};
 };
@@ -137,7 +137,7 @@ func void NL_STEINKREIS_01_S0 ()
 			B_RemoveNpc	(Mod_7440_Paladingeist_NW);
 			B_RemoveNpc	(Mod_7441_Paladingeist_NW);
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Tatsächlich! Das erste Siegel ist geöffnet! Die Dinge, die sich während dessen in der Umgebung abgespielt haben, waren mehr als verwirrend ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Wlasciwie! Pierwsza uszczelka jest otwarta! To, co wydarzylo sie w otoczeniu podczas tego wydarzenia bylo wiecej niz mylace....");
 		};
 	};
 };
@@ -193,12 +193,12 @@ func void NL_STEINKREIS_02_S1 ()
 			Wld_InsertNpc	(Stoneguardian, "FP_SPAWN_STONEGUARDIAN_STEINKREIS_07");
 			Wld_InsertNpc	(Stoneguardian, "FP_SPAWN_STONEGUARDIAN_STEINKREIS_08");
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Puhh, so habe ich denn nun das 2te Siegel öffnen können. Auch, wenn es mich diesmal beinahe das Leben gekostet hätte ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Phew, wiec udalo mi sie otworzyc druga pieczec. Nawet jesli tym razem prawie mnie to kosztowalo....");
 		};
 	}
 	else if (Mod_NL_Siegelbuch == 2)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Ich sollte erst einen anderen Steinkreis benutzen.
+		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Najpierw powinienem uzyc innego kola kamiennego.
 	};
 };
 
@@ -253,12 +253,12 @@ func void NL_STEINKREIS_02_S0 ()
 			Wld_InsertNpc	(Stoneguardian, "FP_SPAWN_STONEGUARDIAN_STEINKREIS_07");
 			Wld_InsertNpc	(Stoneguardian, "FP_SPAWN_STONEGUARDIAN_STEINKREIS_08");
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Puhh, so habe ich denn nun das 2te Siegel öffnen können. Auch, wenn es mich diesmal beinahe das Leben gekostet hätte ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Phew, wiec udalo mi sie otworzyc druga pieczec. Nawet jesli tym razem prawie mnie to kosztowalo....");
 		};
 	}
 	else if (Mod_NL_Siegelbuch == 2)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Ich sollte erst einen anderen Steinkreis benutzen.
+		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Najpierw powinienem uzyc innego kola kamiennego.
 	};
 };
 
@@ -314,7 +314,7 @@ func void NL_STEINKREIS_03_S1 ()
 			Npc_RemoveInvItems	(hero, ItWr_Chromanin3, 1);
 			CreateInvItems	(hero, theriddle4, 1);
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Ja, endlich das sollte es gewesen sein. Aber ... einen Augenblick mal ... scheiße, nichts wie weg ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Tak, tak wlasnie mialo byc. Ale.... na chwile..... Chodzmy, wyjdzmy stad.....");
 			B_SetTopicStatus	(TOPIC_MOD_NL_SIEGELBUCH, LOG_SUCCESS);
 
 			Mdl_ApplyOverlayMDS	(hero, "HUMANS_REGEN.MDS");
@@ -323,13 +323,13 @@ func void NL_STEINKREIS_03_S1 ()
 
 			B_StartOtherRoutine	(Mod_513_DMB_Xardas_NW, "DRACHEN");
 			
-			MEM_RemoveVob("STEINKREISMITTE_03");
+			MEM_RemoveVob("CENTRUM KOLA KAMIENNEGO_03");
 		};
 	}
 	else if (Mod_NL_Siegelbuch == 2)
 	|| (Mod_NL_Siegelbuch == 3)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Ich sollte erst einen anderen Steinkreis benutzen.
+		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Najpierw powinienem uzyc innego kola kamiennego.
 	};
 };
 
@@ -385,7 +385,7 @@ func void NL_STEINKREIS_03_S0 ()
 			Npc_RemoveInvItems	(hero, ItWr_Chromanin3, 1);
 			CreateInvItems	(hero, theriddle4, 1);
 
-			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Ja, endlich das sollte es gewesen sein. Aber ... einen Augenblick mal ... scheiße, nichts wie weg ...");
+			B_LogEntry	(TOPIC_MOD_NL_SIEGELBUCH, "Tak, tak wlasnie mialo byc. Ale.... na chwile..... Chodzmy, wyjdzmy stad.....");
 			B_SetTopicStatus	(TOPIC_MOD_NL_SIEGELBUCH, LOG_SUCCESS);
 
 			Mdl_ApplyOverlayMDS	(hero, "HUMANS_REGEN.MDS");
@@ -394,7 +394,7 @@ func void NL_STEINKREIS_03_S0 ()
 
 			B_StartOtherRoutine	(Mod_513_DMB_Xardas_NW, "DRACHEN");
 			
-			MEM_RemoveVob("STEINKREISMITTE_03");
+			MEM_RemoveVob("CENTRUM KOLA KAMIENNEGO_03");
 
 			Mod_SiegelEffekt = 1;
 		};
@@ -402,6 +402,6 @@ func void NL_STEINKREIS_03_S0 ()
 	else if (Mod_NL_Siegelbuch == 2)
 	|| (Mod_NL_Siegelbuch == 3)
 	{
-		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Ich sollte erst einen anderen Steinkreis benutzen.
+		AI_Output(hero, NULL, "Info_Mod_Hero_ErstAndererSteinkreis_15_00"); //Najpierw powinienem uzyc innego kola kamiennego.
 	};
 };

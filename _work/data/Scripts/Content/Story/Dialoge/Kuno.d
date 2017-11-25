@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Kuno_Hi (C_INFO)
 	information	= Info_Mod_Kuno_Hi_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Handelst du?";
+	description	= "Czy handlujesz?";
 };
 
 FUNC INT Info_Mod_Kuno_Hi_Condition()
@@ -16,9 +16,9 @@ FUNC INT Info_Mod_Kuno_Hi_Condition()
 
 FUNC VOID Info_Mod_Kuno_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kuno_Hi_15_00"); //Handelst du?
-	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_01"); //(leicht verrückt) Nicht an allen Tagen, nicht mit jeder Ware. Hast du was Lustiges zum Spielen oder zum Essen? Hast du was Außergewöhnliches?
-	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_02"); //Dann können wir handeln, verhandeln, aushandeln, behandeln ... (nuschelt Unverständliches vor sich hin)
+	AI_Output(hero, self, "Info_Mod_Kuno_Hi_15_00"); //Czy handlujesz?
+	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_01"); //(nieco szalony) Nie codziennie, nie kazdy produkt. Masz cos smiesznego do zabawy lub jedzenia? Masz cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_02"); //Wtedy mozemy dzialac, negocjowac, negocjowac, negocjowac, negocjowac, traktowac? (pomaga w niezrozumialych rzeczach)
 };
 
 INSTANCE Info_Mod_Kuno_Pickpocket (C_INFO)

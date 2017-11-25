@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Khaled_Hi_Condition()
 
 FUNC VOID Info_Mod_Khaled_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Khaled_Hi_11_00"); //Halt, nur Söldner und Schürfer dürfen hinein.
+	AI_Output(self, hero, "Info_Mod_Khaled_Hi_11_00"); //Stop, dozwolone sa tylko najemnicy i poszukiwacze.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Khaled_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Khaled_Sumpfi (C_INFO)
 	information	= Info_Mod_Khaled_Sumpfi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da drinnen sitzt aber einer vom Sumpflager.";
+	description	= "Tam jest facet z obozu bagiennego.";
 };
 
 FUNC INT Info_Mod_Khaled_Sumpfi_Condition()
@@ -39,10 +39,10 @@ FUNC INT Info_Mod_Khaled_Sumpfi_Condition()
 
 FUNC VOID Info_Mod_Khaled_Sumpfi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Khaled_Sumpfi_15_00"); //Da drinnen sitzt aber einer vom Sumpflager.
-	AI_Output(self, hero, "Info_Mod_Khaled_Sumpfi_11_01"); //Ist mir doch egal, ich bin nur dafür zuständig aufzupassen, dass nur Leute hineinkommen, die auch hineindürfen.
-	AI_Output(hero, self, "Info_Mod_Khaled_Sumpfi_15_02"); //Aber wie ...
-	AI_Output(self, hero, "Info_Mod_Khaled_Sumpfi_11_03"); //Interessiert mich nicht. Seitdem ich hier Wache schiebe, ist keiner reingekommen, der nicht auch hinein dürfte.
+	AI_Output(hero, self, "Info_Mod_Khaled_Sumpfi_15_00"); //Tam jest facet z obozu bagiennego.
+	AI_Output(self, hero, "Info_Mod_Khaled_Sumpfi_11_01"); //Nie obchodze sie, jestem tylko odpowiedzialny za dopilnowanie, aby tylko osoby, które sa dopuszczone do wstepu.
+	AI_Output(hero, self, "Info_Mod_Khaled_Sumpfi_15_02"); //Ale jak....
+	AI_Output(self, hero, "Info_Mod_Khaled_Sumpfi_11_03"); //Nie jestem zainteresowany. Odkad pilnuje tego miejsca, nikt nie przyszedl w to miejsce nie moze sie dostac.
 };
 
 INSTANCE Info_Mod_Khaled_Soeldner (C_INFO)
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Khaled_Soeldner (C_INFO)
 	information	= Info_Mod_Khaled_Soeldner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin Söldner.";
+	description	= "Jestem najemnikiem.";
 };
 
 FUNC INT Info_Mod_Khaled_Soeldner_Condition()
@@ -66,8 +66,8 @@ FUNC INT Info_Mod_Khaled_Soeldner_Condition()
 
 FUNC VOID Info_Mod_Khaled_Soeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Khaled_Soeldner_15_00"); //Ich bin Söldner.
-	AI_Output(self, hero, "Info_Mod_Khaled_Soeldner_11_01"); //Ist ok, du darfst hinein.
+	AI_Output(hero, self, "Info_Mod_Khaled_Soeldner_15_00"); //Jestem najemnikiem.
+	AI_Output(self, hero, "Info_Mod_Khaled_Soeldner_11_01"); //To dobrze, jestes wpuszczony.
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Khaled_KenneLee (C_INFO)
 	information	= Info_Mod_Khaled_KenneLee_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich kenne Lee von früher.";
+	description	= "Znam wczesniej Lee.";
 };
 
 FUNC INT Info_Mod_Khaled_KenneLee_Condition()
@@ -93,12 +93,12 @@ FUNC INT Info_Mod_Khaled_KenneLee_Condition()
 
 FUNC VOID Info_Mod_Khaled_KenneLee_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Khaled_KenneLee_15_00"); //Ich kenne Lee von früher.
-	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee_11_01"); //Klar, das kann ja jeder sagen. Ohne seine ausdrückliche Erlaubnis kommst du hier nicht rein.
+	AI_Output(hero, self, "Info_Mod_Khaled_KenneLee_15_00"); //Znam wczesniej Lee.
+	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee_11_01"); //Oczywiscie, kazdy moze to powiedziec. Nie mozna sie tu dostac bez jego wyraznej zgody.
 
 	Log_CreateTopic	(TOPIC_MOD_NLINKNEIPE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NLINKNEIPE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NLINKNEIPE, "Solange ich nicht Söldner oder Schürfer bin, brauche ich die ausdrückliche Erlaubnis von Lee, um in die Kneipe des Neuen Lagers zu kommen.");
+	B_LogEntry	(TOPIC_MOD_NLINKNEIPE, "Dopóki nie jestem najemnikiem ani poszukiwaczem, dopóty potrzebuje wyraznej zgody Lee, aby wejsc do baru Nowego Obozu.");
 };
 
 INSTANCE Info_Mod_Khaled_KenneLee2 (C_INFO)
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Khaled_KenneLee2 (C_INFO)
 	information	= Info_Mod_Khaled_KenneLee2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin nun Schürfer. Hier der Nachweis.";
+	description	= "Jestem teraz poszukiwaczem. Oto dowód.";
 };
 
 FUNC INT Info_Mod_Khaled_KenneLee2_Condition()
@@ -122,15 +122,15 @@ FUNC INT Info_Mod_Khaled_KenneLee2_Condition()
 
 FUNC VOID Info_Mod_Khaled_KenneLee2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Khaled_KenneLee2_15_00"); //Ich bin nun Schürfer. Hier der Nachweis.
-	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_01"); //Lass mal sehen.
+	AI_Output(hero, self, "Info_Mod_Khaled_KenneLee2_15_00"); //Jestem teraz poszukiwaczem. Oto dowód.
+	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_01"); //Pozwole sobie spojrzec.
 
 	B_GiveInvItems	(hero, self, ItWr_LeeInKneipe, 1);
 
 	B_USEFAKESCROLL();
 
-	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_02"); //Hmm, tatsächlich, du hast deine Spitzhacke für uns geschwungen.
-	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_03"); //Okey, du darfst rein. Viel Spaß.
+	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_02"); //Hmm, wlasciwie, zrobiles dla nas swing swój pickaxe.
+	AI_Output(self, hero, "Info_Mod_Khaled_KenneLee2_11_03"); //Wszystko w porzadku, mozna wejsc. Dobrze sie bawic.
 
 	B_SetTopicStatus	(TOPIC_MOD_NLINKNEIPE, LOG_SUCCESS);
 
@@ -203,7 +203,7 @@ FUNC INT Info_Mod_Khaled_SecondWarn_Condition()
 
 func void Info_Mod_Khaled_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Khaled_SecondWarn_11_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Khaled_SecondWarn_11_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Khaled_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -241,7 +241,7 @@ func void Info_Mod_Khaled_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Khaled_Attack_11_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Khaled_Attack_11_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

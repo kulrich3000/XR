@@ -1,7 +1,7 @@
 instance Mod_7373_OUT_Schoeppe_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Schöppe"; 
+	name 		= "czerpak"; 
 	guild 		= GIL_DMT;
 	id 			= 7373;
 	voice 		= 6;

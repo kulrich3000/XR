@@ -72,7 +72,7 @@ FUNC VOID Zustaende()
 		{
 			hero.attribute[ATR_STRENGTH] += 1;
 
-			AI_PrintScreen	("+1 Stärke durch viel Schwimmen", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("1 wytrzymalosc dzieki duzej ilosci plywania", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			Mod_Schwimmpraxis = 0;
 		};
@@ -174,7 +174,7 @@ FUNC VOID Zustaende()
 
 		if (Erkaeltungsdauer == 0)
 		{
-			AI_PrintScreen	("Ich habe mir eine Erkältung eingefangen", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Zlapalem zimno.", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			hero.attribute[ATR_HITPOINTS] -= Erkaeltung_Stufe01_HP;
 			hero.attribute[ATR_HITPOINTS_MAX] -= Erkaeltung_Stufe01_HP;
@@ -228,7 +228,7 @@ FUNC VOID Zustaende()
 
 		if (Erkaeltungsdauer >= Erkaeltung_Stufe01)
 		{
-			AI_PrintScreen	("Die Erkältung ist vorüber", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Uplynie zimno.", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			hero.attribute[ATR_HITPOINTS_MAX] += Erkaeltung_Stufe01_HP;
 			hero.attribute[ATR_HITPOINTS] += Erkaeltung_Stufe01_HP;
@@ -256,14 +256,14 @@ FUNC VOID Zustaende()
 
 				if (KE == 4)
 				{
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber Hauch der Pestilenz erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Osiagnales najwyzsza odpornosc na zarazy.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Krankheit < 4)
 				{
 					Krankheit += 1;
 
-					PrintScreen	("Deine Resistenzen gegenüber Erkrankungen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Pani odpornosc na choroby.", -1, -1, FONT_SCREEN, 2);
 				};
 			};
 		};
@@ -307,7 +307,7 @@ FUNC VOID Zustaende()
 		if (Mod_EssPunkte == 25)
 		&& (Mod_NichtsGegessenCounter == 0)
 		{
-			AI_PrintScreen	("Puh, langsam krieg' ich Hunger!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Phew, jestem glodny!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			AI_StandUp	(hero);
 
@@ -317,7 +317,7 @@ FUNC VOID Zustaende()
 		if (Mod_EssPunkte == 15)
 		&& (Mod_NichtsGegessenCounter == 0)
 		{
-			AI_PrintScreen	("Ich muss jetzt was essen!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Teraz musze jesc!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			AI_StandUp	(hero);
 
@@ -327,7 +327,7 @@ FUNC VOID Zustaende()
 		if (Mod_EssPunkte == 5)
 		&& (Mod_NichtsGegessenCounter == 0)
 		{
-			AI_PrintScreen	("Wenn ich nicht gleich etwas esse, kippe ich um!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+			AI_PrintScreen	("Jesli nie dostaje czegos do jedzenia, przewróce sie!", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			AI_StandUp	(hero);
 
@@ -432,13 +432,13 @@ FUNC VOID Zustaende()
 		{
 			Mod_Fliegenpilzgift_MSG = 1;
 
-			PrintScreen ("Das Gift des Pilzes beginnt zu wirken!", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("Zaczal dzialac trucizna grzybowa!", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			if (FliegenpilzGift_FirstTime == 0)
 			{
 				FliegenpilzGift_FirstTime = 1;
 
-				PrintScreen ("Es gibt sicherlich ein Gegengift bei einem Heiler oder einm Händler ...", -1, YPOS_LevelUp-5, FONT_Screen, 2);
+				PrintScreen ("Z pewnoscia istnieje antidotum u uzdrowiciela lub handlowca.... Wiecej", -1, YPOS_LevelUp-5, FONT_Screen, 2);
 			};
 		};
 			

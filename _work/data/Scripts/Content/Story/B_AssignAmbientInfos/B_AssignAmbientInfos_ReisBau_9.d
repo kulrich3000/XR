@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_9_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_9_WichtigePersonen_Condition;
 	information	= Info_ReisBau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer kümmert sich darum, daß hier auf den Feldern alles glatt geht?";
+	description = "Kto bedzie dbal o to, aby wszystko przebiegalo plynnie w polu?";
 };                       
 
 FUNC INT Info_ReisBau_9_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_ReisBau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_ReisBau_9_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_9_WichtigePersonen_15_00"); //Wer kümmert sich darum, dass hier auf den Feldern alles glatt geht?
-	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_01"); //Na, wir alle! Der Reislord überwacht zwar alles, aber ich glaube, er sitzt den ganzen Tag in seinem Bunker und zählt die Säcke.
-	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_02"); //Na, immerhin hat er zusammen mit Homer die ganze Anlage hier gebaut ...
+	AI_Output(hero,self,"Info_ReisBau_9_WichtigePersonen_15_00"); //Kto bedzie dbal o to, aby wszystko przebiegalo plynnie w polu?
+	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_01"); //Wszyscy! Wladca ryzu kontroluje wszystko, ale mysle, ze siada w bunkrach przez caly dzien i liczy worki.
+	AI_Output(self,hero,"Info_ReisBau_9_WichtigePersonen_09_02"); //No cóz, przeciez razem z Homerem zbudowal tu caly kompleks....
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_9_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_9_DieLage_Condition;
 	information	= Info_ReisBau_9_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "Jaki jest wynik?";
 };                       
 
 FUNC INT Info_ReisBau_9_DieLage_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_ReisBau_9_DieLage_Condition()
 
 FUNC VOID Info_ReisBau_9_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_ReisBau_9_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_ReisBau_9_DieLage_09_01"); //Wir arbeiten uns den Arsch ab, damit hier alle was zu futtern kriegen!
+	AI_Output(hero,self,"Info_ReisBau_9_DieLage_15_00"); //Jaki jest wynik?
+	AI_Output(self,hero,"Info_ReisBau_9_DieLage_09_01"); //Pracujemy nad naszymi oslami, aby kazdy mógl cos zjesc!
 };
 
 INSTANCE Info_Mod_ReisBau_9_Pickpocket (C_INFO)

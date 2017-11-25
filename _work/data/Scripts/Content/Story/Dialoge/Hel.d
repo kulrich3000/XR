@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Hel_Hi_Condition()
 
 FUNC VOID Info_Mod_Hel_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hel_Hi_26_00"); //(schräg) Ahh, Eindringlinge und neue Sklaven für meine Dienerschaft. An eurem Blute werde ich mich laben.
+	AI_Output(self, hero, "Info_Mod_Hel_Hi_26_00"); //Ah, najezdzcy i nowi niewolnicy dla moich slug. Bede karmic sie Twoja krwia.
 
 	AI_StopProcessInfos	(self);
 
@@ -42,7 +42,7 @@ FUNC INT Info_Mod_Hel_GhuleFutsch_Condition()
 
 FUNC VOID Info_Mod_Hel_GhuleFutsch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hel_GhuleFutsch_26_00"); //Ahh, seid verflucht.
+	AI_Output(self, hero, "Info_Mod_Hel_GhuleFutsch_26_00"); //Ahh, badz zwilzony.
 
 	AI_StopProcessInfos	(self);
 
@@ -70,8 +70,8 @@ FUNC INT Info_Mod_Hel_InKrypta_Condition()
 
 FUNC VOID Info_Mod_Hel_InKrypta_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hel_InKrypta_26_00"); //Hartnäckig seid ihr. Aber umso mehr Vergnügen wird es mir bereiten, mit euren Eingeweiden die Decke meiner Räumlichkeiten zu kleiden.
-	AI_Output(self, hero, "Info_Mod_Hel_InKrypta_26_01"); //(auffordernd) Inubis!
+	AI_Output(self, hero, "Info_Mod_Hel_InKrypta_26_00"); //Jestes wytrwaly. Ale tym bardziej przyjemne bedzie mi to, ze bede mógl ubierac sie z Twoimi wnetrzami w sufit moich pokoi.
+	AI_Output(self, hero, "Info_Mod_Hel_InKrypta_26_01"); //Inubis!
 
 	self.flags = 0;
 

@@ -2,7 +2,7 @@ instance Mod_800_GRD_Stone_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Stone";
+	name 		=	"Kamien";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_OUT;
 	level 		=	15;

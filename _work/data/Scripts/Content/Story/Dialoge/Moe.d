@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Moe_Hi_Condition()
 
 FUNC VOID Info_Mod_Moe_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_00"); //Ein Fremder auf Erkundungstour durch das Hafenviertel?
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_01"); //Dann solltest du hier nicht einfach vorbei gehen.
-	AI_Output(hero, self, "Info_Mod_Moe_Hi_15_02"); //Was für ein Gebäude ist das da hinter dir?
-	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_03"); //Das ist Kardifs Kneipe, der Mittelpunkt des Hafenviertels. Neben der Roten Laterne. (lacht) Wenn du was trinken oder wissen willst, komm hierher.
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_00"); //Obcy zwiedzajacy dzielnice portowa?
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_01"); //Wtedy nie powinienes tylko isc tutaj.
+	AI_Output(hero, self, "Info_Mod_Moe_Hi_15_02"); //Jaki budynek jest za toba?
+	AI_Output(self, hero, "Info_Mod_Moe_Hi_29_03"); //Jest to pub Kardifa, centrum dzielnicy portowej. Obok czerwonej latarni. (smiech) Jesli chcesz cos pic lub wiedziec, przyjdz tutaj.
 };
 
 INSTANCE Info_Mod_Moe_Geruechte (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Moe_Geruechte (C_INFO)
 	information	= Info_Mod_Moe_Geruechte_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Gibt es zur Zeit interessante Gerüchte?";
+	description	= "Czy sa jakies ciekawe pogloski?";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte_Condition()
@@ -44,72 +44,72 @@ FUNC INT Info_Mod_Moe_Geruechte_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_15_00"); //Gibt es zur Zeit interessante Gerüchte?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_01"); //Etliches, etliches. Man muss nur wissen, das Seemannsgarn von den Fakten zu trennen, dann lässt sich mit den Informationen sogar was anfangen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_02"); //Hast du zum Beispiel schon von dem Schicksal des bedauernswerten Malers Johannes Port gehört?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_15_00"); //Czy sa jakies ciekawe pogloski?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_01"); //Dosc kilka, calkiem sporo. Musisz tylko wiedziec, jak oddzielic przedze zeglarza od faktów, a wtedy informacja moze nawet cos zmienic?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_29_02"); //Czy slyszeli Panstwo na przyklad o losie nieszczesnego malarza Johannesa Port?
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nein, das interessiert mich aber auch nicht.", Info_Mod_Moe_Geruechte_B);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nein, erzähl mehr.", Info_Mod_Moe_Geruechte_A);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nie, to tez mnie nie obchodzi.", Info_Mod_Moe_Geruechte_B);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Nie, powiedz mi wiecej.", Info_Mod_Moe_Geruechte_A);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_B_15_00"); //Nein, das interessiert mich aber auch nicht.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_B_29_01"); //Schade, vielleicht später.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_B_15_00"); //Nie, to tez mnie nie obchodzi.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_B_29_01"); //Zbyt zle, moze pózniej.
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_A_15_00"); //Nein, erzähl mehr.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_01"); //(schwärmerisch) Johannes Port ... ah, das war ein Maler. Weltberühmt für seine Landschaftsmalereien. Es gibt nicht viele Künstler, die schon im Leben so viel Ruhm erlangt haben wie er.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_02"); //Eigentlich lebte er in Myrtana, aber die Suche nach Motiven trieb ihn in der ganzen Welt 'rum. Tja, und darunter war eben die, die seine letzte werden sollte.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_03"); //Die Küstengegend von Khorinis interessierte ihn anscheinend sehr, jedenfalls brach er vor kurzer Zeit auf einem Schiffskutter hierher auf.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_04"); //Die Besatzung wollte im Hafen ihre Netze auswerfen und Port seine Bilder malen, aber das ging nicht lange gut. Das Schiff kenterte und ging unweit der großen Insel vor dem Hafen unter.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_05"); //Niemand konnte nachher sagen, wieso, außer man glaubt den Geschichten vom rachsüchtigen Meeresgott.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_06"); //'N Teil der Besatzung konnte gerettet werden, aber Port war nicht darunter. Einer der Seeleute, die mit ihm unterwegs gewesen waren, sprach zu mir davon, dass Port 'nen großen Teil seiner Ausrüstung sowie einige bereits fertig gestellte Gemälde dabei hatte.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_07"); //Nun, diese Wertstücke dürften noch in dem Schiffswrack zu finden sein, denn bisher sind noch keine Trupps zur Überprüfung dorthin geschickt worden und der Kreis der Personen, die von der Sache wissen, ist sehr begrenzt.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_A_15_00"); //Nie, powiedz mi wiecej.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_01"); //Johannes Port.... ah, to byl malarz. Swiat slynie z jego malarstwa krajobrazowego. Nie ma wielu artystów, którzy osiagneli tak wielka slawe jak on w zyciu.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_02"); //W rzeczywistosci mieszkal w Myrtanie, ale poszukiwanie motywów zapedzalo go po calym swiecie. Cóz, a pod spodem byl ten, który mial byc jego ostatnim.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_03"); //Wydawalo mu sie, ze jest bardzo zainteresowany przybrzezna strefa Khorinis, ale niedawno opuscil tu kuter okretowy.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_04"); //Zaloga chciala wysunac siatki w porcie i Port chcial namalowac swoje zdjecia, ale to nie poszlo dobrze na dlugo. Statek wywrócil sie i zatonal niedaleko duzej wyspy przed portem.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_05"); //Nikt nie móglby pózniej powiedziec dlaczego, chyba ze wierzysz w historie msciwego boga morza.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_06"); //Czesc zalogi mozna bylo uratowac, ale nie bylo wsród nich portu. Jeden z marynarzy, który byl z nim, mówil mi o tym, ze Port' nen mial duza czesc swojego sprzetu i kilka gotowych obrazów z nim.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_A_29_07"); //Cóz, te skarby moga nadal znajdowac sie w wraku statku, poniewaz jak dotad nie wyslano tam do inspekcji zadnych zolnierzy, a krag ludzi, którzy wiedza o tej sprawie, jest bardzo ograniczony.
 
 	Log_CreateTopic	(TOPIC_MOD_MOE_PORT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MOE_PORT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Vor wenigen Tagen ist aus unerklärlichen Gründen ein Schiffskutter vor dem Hafen von Khorinis gesunken. Wenn man Moe glauben darf, befand sich der bekannte Maler Johannes Port mit einem Teil seiner Ausrüstung an Bord. Wohin Port verschwunden ist, weiß niemand, aber sein 'Schatz' könnte sich noch an Bord des Schiffswracks befinden.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Kilka dni temu, z niewytlumaczalnych powodów, przed portem w Khorinis zatonal kuter. Jesli mozna uwierzyc Moe' owi, na pokladzie byl slynny malarz Johannes Port z czescia swojego sprzetu. Nikt nie wie, dokad Port zniknal, ale jego 'skarb' moze byc jeszcze na pokladzie wraku.");
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Du meinst, da ist was zu holen ...", Info_Mod_Moe_Geruechte_D);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Was ist nun mit Port passiert?", Info_Mod_Moe_Geruechte_C);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Oznacza to, ze jest cos do zdobycia.....", Info_Mod_Moe_Geruechte_D);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Co wiec stalo sie z Portem?", Info_Mod_Moe_Geruechte_C);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_D()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_00"); //Du meinst, da ist was zu holen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_01"); //(geheimnisvoll) Das könnte schon sein...
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_02"); //Aber warum erzählst du gerade mir davon?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_03"); //Du siehst mir nicht wie einer dieser Banditen aus, die die Bilder gleich beim nächsten Hehler zu Gold machen würden.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_04"); //Ich fände es besser, sie bei einem Kunstverständigen abzugeben. Der sicher auch 'ne Menge zahlen würde.
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_05"); //An welchen "Kunstverständigen" hast du dabei gedacht?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_06"); //Brahim, den Kartenverkäufer. Du findest ihn hier gleich um die Ecke in Richtung des Lagerhauses.
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_07"); //Wieso holst du dir den Schatz nicht selbst?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_08"); //Meine abenteuerlustigen Jahre sind vorbei, Junge. Ich habe genug Geld, um mir das zu kaufen, was ich brauche. Was soll ich da mit zusätzlicher Aufregung?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_00"); //Oznacza to, ze jest cos do zdobycia.....
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_01"); //To moze byc....
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_02"); //Ale dlaczego o tym mówisz?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_03"); //Nie wygladasz jak jeden z tych bandytów, który przy nastepnym ogrodzeniu zamienilby zdjecia w zloto.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_04"); //Wolalbym przekazac ja ekspertowi artystycznemu. Zakladam, ze on zaplacilby duzo pieniedzy.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_05"); //An welchen "artysci" hast du dabei gedacht?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_06"); //Brahim, sprzedawca biletów. Znajdziesz go tuz za rogiem w kierunku magazynu.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_D_15_07"); //Dlaczego nie otrzymujesz skarbu samemu?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_D_29_08"); //Moje pelne przygód lata sie skonczyly, chlopiec. Mam wystarczajaco duzo pieniedzy, aby kupic to, czego potrzebuje. Co mam zrobic z dodatkowym podnieceniem?
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim, der Kartenverkäufer im Hafenviertel, ist meine erste Ansprechperson, wenn ich den Schatz gefunden haben sollte.");
+	B_LogEntry	(TOPIC_MOD_MOE_PORT, "Brahim, sprzedawca biletów w dzielnicy portowej, jest moim pierwszym punktem kontaktowym, kiedy powinienem byl znalezc skarb.");
 
 	Moe_KnowsPort = 1;
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte_C()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_C_15_00"); //Was ist nun mit Port passiert?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_C_29_01"); //Das weiß keiner. Entweder ist seine Leiche im Wrack oder am Meeresboden, oder er hat sich ans Festland retten können. Aber das ist unwahrscheinlich, dann hätte man wohl schon von ihm gehört.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte_C_15_00"); //Co wiec stalo sie z Portem?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte_C_29_01"); //Nikt nie wie. Albo jego cialo znajduje sie w wraku, albo na dnie morskim, albo jest w stanie uratowac sie na ladzie stalym. Ale to malo prawdopodobne i slyszalbys o nim do tej pory.
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Du meinst, da ist was zu holen ...", Info_Mod_Moe_Geruechte_D);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte, "Oznacza to, ze jest cos do zdobycia.....", Info_Mod_Moe_Geruechte_D);
 };
 
 INSTANCE Info_Mod_Moe_Geruechte2 (C_INFO)
@@ -133,7 +133,7 @@ FUNC INT Info_Mod_Moe_Geruechte2_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte2_29_00"); //Hey! Ich hab' Neuigkeiten, die dich interessieren könnten.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte2_29_00"); //Hej! Mam wiadomosci, które moga Cie zainteresowac.
 };
 
 INSTANCE Info_Mod_Moe_Geruechte3 (C_INFO)
@@ -144,7 +144,7 @@ INSTANCE Info_Mod_Moe_Geruechte3 (C_INFO)
 	information	= Info_Mod_Moe_Geruechte3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du Neues?";
+	description	= "Co wiesz o czyms nowym?";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte3_Condition()
@@ -158,12 +158,12 @@ FUNC INT Info_Mod_Moe_Geruechte3_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_15_00"); //Was weißt du Neues?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_29_01"); //Canthar ist wieder in der Stadt. Er hat Valentino entführt, den wohlhabenden Arschkriecher.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_15_00"); //Co wiesz o czyms nowym?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_29_01"); //Kanthar jest z powrotem w miescie. Porwal Valentino, zamoznego as-kissera.
 
 	Log_CreateTopic	(TOPIC_MOD_MOE_VALENTINO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MOE_VALENTINO, LOG_RUNNING);
-	B_LogEntry_More	( TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_VALENTINO, "Canthar ist, wie angekündigt, zurückgekehrt, um Rache an mir zu nehmen.", "Valentino wurde entführt, und zwar von Canthar, der ihn gegen mich eintauschen möchte. Lord Andre traut sich jedoch nicht, irgendetwas zu unternehmen, also liegt es an mir, den Fall zu beenden.");
+	B_LogEntry_More	( TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_VALENTINO, "Canthar powrócil do mnie, jak zapowiedziano, by zemscic sie na mnie.", "Valentino zostalo porwane przez Canthara, który chce go dla mnie sprzedac. Lord Andre nie ma odwagi zrobic nic, wiec to od mnie zalezy zakonczenie sprawy.");
 
 	B_StartOtherRoutine	(Mod_754_NONE_Valentino_NW, "TOT");
 
@@ -174,79 +174,79 @@ FUNC VOID Info_Mod_Moe_Geruechte3_Info()
 
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Valentino?! Den kann er behalten!", Info_Mod_Moe_Geruechte3_B);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Und woher weißt du, dass Canthar der Entführer ist?", Info_Mod_Moe_Geruechte3_A);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Valentino? Moze to utrzymac!", Info_Mod_Moe_Geruechte3_B);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Skad wiesz, ze Canthar jest porywaczem?", Info_Mod_Moe_Geruechte3_A);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_D()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_D_15_00"); //Das war ja zu erwarten ...
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_01"); //Valentino ist 'n beliebter Mann, vor allem beim weiblichen Volk und bei den Wirten.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_02"); //Sollte sich Canthars Forderung 'rumsprechen, würden die meisten einen Tausch fordern - ihn gegen dich.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_03"); //Lord Andre kann nichts dagegen unternehmen: Was er auch macht, Menschenleben stehen auf dem Spiel.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_04"); //Er wird seine korrupten Stadtwachen nicht gegen Canthar einsetzen, weil er dessen Stärke kennt.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_05"); //Es bleibt also an dir hängen. Du musst versuchen, Valentino zu befreien, damit Canthar kein Druckmittel mehr in der Hand hat.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_06"); //Denk aber daran, dass ihn das nur kurzfristig aufhalten wird. Du hast ihm seinen Coup versaut, und er will sich rächen.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_D_15_00"); //To nalezalo sie spodziewac.......
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_01"); //Valentino jest popularnym mezczyzna, zwlaszcza wsród kobiet i wlascicieli.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_02"); //Jesli zapotrzebowanie Canthara pojawi sie, wiekszosc ludzi prosi o wymiane - on za Ciebie.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_03"); //Pan Andre nie moze nic z tym zrobic: Cokolwiek robi, w gre wchodzi zycie.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_04"); //Nie bedzie uzywal swoich skorumpowanych strazników przed Canthar, poniewaz zna swoja sile.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_05"); //To zalezy od Ciebie. Musisz spróbowac uwolnic Valentino, aby Canthar nie mial juz w rekach dzwigni.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_D_29_06"); //Pamietajmy jednak, ze zatrzyma go to tylko na krótki czas. Pudales mu partyture, a on chce zemsty.
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Soll Canthar doch kommen, für Valentino setze ich mein Leben (...)", Info_Mod_Moe_Geruechte3_F);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Wo wird Valentino festgehalten?", Info_Mod_Moe_Geruechte3_E);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Niech przyjdzie Kanthar, dla Valentino oddaje swoje zycie (....). )", Info_Mod_Moe_Geruechte3_F);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Gdzie odbywa sie impreza Valentino?", Info_Mod_Moe_Geruechte3_E);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_B_15_00"); //Valentino?! Den kann er behalten!
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_B_29_01"); //Ihm geht es nicht um Valentino... er will dich!
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_B_15_00"); //Valentino? Moze to utrzymac!
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_B_29_01"); //Nie chodzi o Valentino.... On chce cie!
 
 	Info_Mod_Moe_Geruechte3_D();
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_00"); //Und woher weißt du, dass Canthar der Entführer ist?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_01"); //Er hat kein Lösegeld gefordert ...
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_02"); //Was denn sonst?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_03"); //Na, dich.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_00"); //Skad wiesz, ze Canthar jest porywaczem?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_01"); //Nie prosil o wykup....
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_A_15_02"); //Co jeszcze jest z tym do czego?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_A_29_03"); //No cóz, wy.
 
 	Info_Mod_Moe_Geruechte3_D();
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_F()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_F_15_00"); //Soll Canthar doch kommen, für Valentino setze ich mein Leben nicht aufs Spiel.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_F_29_01"); //In dem Fall weichst du nur dem Unabwendbaren aus. Wenn du deine Entscheidung geändert ist, geh ins Obere Viertel und suche nach Valentine, Valentinos Schwester.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_F_15_00"); //Nie chce, aby Canthar przyjechal, ale nie ryzykuje zycia dla Valentino.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_F_29_01"); //W takim przypadku po prostu unikasz tego, co nieuniknione. Jesli zmieniles zdanie, udaj sie do Górnej Dzielnicy i poszukaj Valentine, siostry Valentino.
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Ich soll zu Valentinos Schwester Valentine im Oberviertel gehen; sie weiß möglicherweise, wo ihr Bruder festgehalten wird.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Mam udac sie do siostry Walentynki Valentino w górnej dzielnicy; moze wiedziec, gdzie brat jest przetrzymywany.");
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_E()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_E_15_00"); //Wo wird Valentino festgehalten?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_E_29_01"); //Das kann ich dir nicht sagen, aber seine Schwester Valentine weiß darüber Bescheid. Du findest sie im Oberen Viertel.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_E_15_00"); //Gdzie odbywa sie impreza Valentino?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_E_29_01"); //Nie moge ci to powiedziec, ale o tym wie jego siostra Walentynka. Znajdziesz je w górnej dzielnicy.
 
-	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Ich soll zu Valentinos Schwester Valentine im Oberviertel gehen; sie weiß möglicherweise, wo ihr Bruder festgehalten wird.");
+	B_LogEntry	(TOPIC_MOD_MOE_VALENTINO, "Mam udac sie do siostry Walentynki Valentino w górnej dzielnicy; moze wiedziec, gdzie brat jest przetrzymywany.");
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Woher weißt du das alles über Canthar (...)", Info_Mod_Moe_Geruechte3_H);
-	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Danke für die Informationen. Du bist eine echte Hilfe.", Info_Mod_Moe_Geruechte3_G);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Skad wiesz to wszystko o Canthar? )", Info_Mod_Moe_Geruechte3_H);
+	Info_AddChoice	(Info_Mod_Moe_Geruechte3, "Dziekujemy za informacje. Jestes prawdziwa pomoca.", Info_Mod_Moe_Geruechte3_G);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_G()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_G_15_00"); //Danke für die Informationen. Du bist eine echte Hilfe.
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_G_29_01"); //(nachdrücklich) Diese Scheiße sollte endlich gestoppt werden. Wer geht schon noch bei uns in die Kneipe, wenn ihm seine ganzen Mäuse gestohlen wurden?
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_G_15_00"); //Dziekujemy za informacje. Jestes prawdziwa pomoca.
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_G_29_01"); //Ten gówno nalezy wreszcie zatrzymac. Kto idzie do pubu, gdy wszystkie jego myszy zostaly skradzione?
 	
 	Info_ClearChoices	(Info_Mod_Moe_Geruechte3);
 };
 
 FUNC VOID Info_Mod_Moe_Geruechte3_H()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_H_15_00"); //Woher weißt du das alles über Canthar und sein Verhältnis zu mir?
-	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_H_29_01"); //Brahim hält mir gegenüber nicht dicht. Zumindest nicht nach ein paar Humpen. (lacht) Den Rest erfahre ich von Reisenden.
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte3_H_15_00"); //Skad wiesz o Cantharze i jego zwiazku ze mna?
+	AI_Output(self, hero, "Info_Mod_Moe_Geruechte3_H_29_01"); //Brahim nie powstrzyma mnie. Przynajmniej nie po kilku szmatach. (smiech) Slysze reszte od podróznych.
 	
 	Info_Mod_Moe_Geruechte3_G();
 };
@@ -259,7 +259,7 @@ INSTANCE Info_Mod_Moe_Geruechte4 (C_INFO)
 	information	= Info_Mod_Moe_Geruechte4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Später vielleicht ...";
+	description	= "Pózniej moze....";
 };
 
 FUNC INT Info_Mod_Moe_Geruechte4_Condition()
@@ -273,7 +273,7 @@ FUNC INT Info_Mod_Moe_Geruechte4_Condition()
 
 FUNC VOID Info_Mod_Moe_Geruechte4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Geruechte4_15_00"); //Später vielleicht...
+	AI_Output(hero, self, "Info_Mod_Moe_Geruechte4_15_00"); //Pózniej moze....
 	
 	AI_StopProcessInfos	(self);
 };
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Moe_AllievoTot (C_INFO)
 	information	= Info_Mod_Moe_AllievoTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte Valentino befreien und einen Schüler von Canthar erledigen.";
+	description	= "Udalo mi sie uwolnic Valentino i zatrudnic ucznia z Canthara.";
 };
 
 FUNC INT Info_Mod_Moe_AllievoTot_Condition()
@@ -299,17 +299,17 @@ FUNC INT Info_Mod_Moe_AllievoTot_Condition()
 
 FUNC VOID Info_Mod_Moe_AllievoTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_00"); //Ich konnte Valentino befreien und einen Schüler von Canthar erledigen.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_01"); //Das mit Valentino hab ich schon gehört, aber was für ein Schüler soll das gewesen sein?
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_02"); //Sein Name war Allievo.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_03"); //Allievo? Verflucht, wenn dir das keinen Ärger einbringt ...
-	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_04"); //Wieso sollte es das?
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_05"); //Es heißt, Allievo sei Canthars Sohn gewesen. Du stehst jetzt wahrscheinlich noch höher auf seiner Abschussliste, wenn das noch geht.
-	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_06"); //Also, pass auf deinen Arsch auf. Ich sag dir Bescheid, wenn ich Neues in Erfahrung bringe.
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_00"); //Udalo mi sie uwolnic Valentino i zatrudnic ucznia z Canthara.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_01"); //Slyszalem juz o Valentino, ale jaki to uczen?
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_02"); //Nazywal sie Allievo.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_03"); //Alievo? Damn to, jesli nie przyniesie Ci to zadnych klopotów....
+	AI_Output(hero, self, "Info_Mod_Moe_AllievoTot_15_04"); //Dlaczego mialaby to zrobic?
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_05"); //Mówia, ze Allievo byl synem Kanthara. Prawdopodobnie znalazles sie teraz na jego liscie przebojów, jesli nadal jest to mozliwe.
+	AI_Output(self, hero, "Info_Mod_Moe_AllievoTot_29_06"); //Wiec, obserwuj tylek. Daje Wam znac, kiedy dostaje cos nowego.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Oh ... Wenn Allievo wirklich der Sohn von Canthar war, dürfte das auf noch mehr Ärger hinauslaufen ... Ich sollte von nun an wirklich vorsichtig sein.");
+	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Oh..... Gdyby Allievo byl naprawde synem Kanthara, byloby jeszcze wiecej klopotów..... Od teraz powinienem byc naprawde ostrozny.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -322,7 +322,7 @@ INSTANCE Info_Mod_Moe_AufgebrachteFrau (C_INFO)
 	information	= Info_Mod_Moe_AufgebrachteFrau_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du zufällig, warum ich auf einmal auf offener Straße als Schlächter bezeichnet werde?";
+	description	= "Czy zdarza Ci sie wiedziec, dlaczego nagle nazywa sie mnie rzeznikiem na otwartej drodze?";
 };
 
 FUNC INT Info_Mod_Moe_AufgebrachteFrau_Condition()
@@ -335,16 +335,16 @@ FUNC INT Info_Mod_Moe_AufgebrachteFrau_Condition()
 
 FUNC VOID Info_Mod_Moe_AufgebrachteFrau_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_00"); //Weißt du zufällig, warum ich auf einmal auf offener Straße als Schlächter bezeichnet werde?
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_01"); //Ja, das kann ich mir zumindest denken. Ich hatte ja bereits angekündigt, dass Canthar jetzt nicht mehr von dir lassen wird, Kumpel.
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_02"); //Keine Ahnung, was er sich diesmal einfallen lassen hat, aber es sieht ganz nach Verleumdung aus. (Pause) Die schmutzige Sache mit Allievo hättest du dir halt sparen sollen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_03"); //Was soll ich denn jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_04"); //Heul nicht gleich rum und lass dich überraschen. Wenn du die Scheiße nicht abwenden kannst, bevor sie über dich hineinbricht, musst du dich eben durchwühlen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_05"); //Danke für die schlauen Sprüche.
-	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_06"); //Du wirst es schon überstehen.
-	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_07"); //Wir werden sehen.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_00"); //Czy zdarza Ci sie wiedziec, dlaczego nagle nazywa sie mnie rzeznikiem na otwartej drodze?
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_01"); //Tak, moge to przynajmniej odgadnac. Oglosilem juz, ze Canthar's not gonna pozwolil ci odejsc, przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_02"); //Nie wiem, co on tym razem wymyslil, ale wyglada to jak pomówienie. Powinienes uratowac sobie brudny biznes z Allievo.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_03"); //Co mam teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_04"); //Nie plakaj teraz i pozwól mi sie zaskoczyc. Jesli nie mozesz zapobiec gontowi zanim sie do ciebie wlamie, musisz przejsc przez niego.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_05"); //Dzieki za madre rzeczy.
+	AI_Output(self, hero, "Info_Mod_Moe_AufgebrachteFrau_29_06"); //Bedziesz mial racje.
+	AI_Output(hero, self, "Info_Mod_Moe_AufgebrachteFrau_15_07"); //Zobaczymy to.
 
-	B_LogEntry_More	(TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_TALK, "Canthar will weiterhin seine Rache und fordert erneut mein Geschick heraus.", "Die aufgebrachte Frau deutet darauf hin, dass Canthar es nun mit Verleumdung versucht. Moe meint, es sei am besten, wenn ich das Unglück erst bekämpfe, sobald ich konkrete Hinweise habe.");
+	B_LogEntry_More	(TOPIC_MOD_CANTHAR_GESCHAEFTE, TOPIC_MOD_MOE_TALK, "Canthar nadal chce zemsty i znów podwaza moje umiejetnosci.", "Gniewna kobieta sugeruje, ze Canthar próbuje go znieslawic. Moe uwaza, ze najlepiej jest, gdy nie walcze z nieszczesciem, dopóki nie mam konkretnych wskazówek.");
 
 	Mod_MoeTalkedAboutNoTalk = Wld_GetDay();
 };
@@ -370,9 +370,9 @@ FUNC INT Info_Mod_Moe_DontTalk_Condition()
 
 FUNC VOID Info_Mod_Moe_DontTalk_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_00"); //Stimmt es? Stimmt es, was die Anschläge sagen?
-	AI_Output(hero, self, "Info_Mod_Moe_DontTalk_15_01"); //Was sagen die Anschläge denn?
-	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_02"); //Hier. Du solltest es dir wirklich ansehen.
+	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_00"); //Czy to prawda? Czy to prawda, co mówia ataki?
+	AI_Output(hero, self, "Info_Mod_Moe_DontTalk_15_01"); //Co mówia ataki?
+	AI_Output(self, hero, "Info_Mod_Moe_DontTalk_29_02"); //Tutaj. Naprawde powinienes to zobaczyc.
 
 	B_GiveInvItems	(self, hero, ItWr_Anschlag, 1);
 
@@ -402,24 +402,24 @@ FUNC VOID Info_Mod_Moe_ErsterAnschlag_Info()
 {
 	Info_ClearChoices	(Info_Mod_Moe_ErsterAnschlag);
 
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Der Bastard hat es verdient, so zu enden!", Info_Mod_Moe_ErsterAnschlag_C);
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Ich habe Allievo im Kampf getötet, aber nicht hingerichtet.", Info_Mod_Moe_ErsterAnschlag_B);
-	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Siehst du nicht, dass das Canthars Blendwerk ist?", Info_Mod_Moe_ErsterAnschlag_A);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Bastard zasluguje na to, aby tak sie skonczylo!", Info_Mod_Moe_ErsterAnschlag_C);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Zabilem Allievo w bitwie, ale nie rozstrzelalem go.", Info_Mod_Moe_ErsterAnschlag_B);
+	Info_AddChoice	(Info_Mod_Moe_ErsterAnschlag, "Czy nie widzisz, ze jest to fantazja Canthara?", Info_Mod_Moe_ErsterAnschlag_A);
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_D()
 {
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_00"); //Scheiße, Mann, ich hatte gehofft, dass du so etwas sagst.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_01"); //Überall auf Khorinis hängen diese Plakate jetzt rum. Alle haben davon erfahren, keiner will noch mit dir zu tun haben.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_02"); //Ich weiß allerdings, wie viele Plakate es gibt: eines findest du im Kloster, eins jeweils auf dem Hof von Bengar, Onar und Lobart, und drei hängen hier in der Stadt aus, an sehr zugänglichen Stellen, habe ich mir sagen lassen.
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_03"); //Das heißt, ich muss alle Plakate abnehmen?
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_04"); //Ich würde solche Bilder von mir nicht sehen wollen.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_05"); //Findest du nicht, dass die Nase schlecht getroffen ist? Deine sieht aus wie eine Rübe, aber auf dem Anschlag ist sie eher birnenförmig.
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_06"); //Ich habe bisher selten in einen Spiegel geschaut.
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_07"); //Ist ja gut, Kumpel. Also, wenn du die verdammten Plakate in einer Siedlung entfernt hast, sollte es nicht lange dauern, bis die Bewohner dort wieder mit dir plaudern wie eh und je. Du weißt ja, wie sie sind. (lacht)
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_08"); //Ich mache mich gleich auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_00"); //Szanowni panstwo, czlowiek, mialem nadzieje, ze cos takiego powiecie.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_01"); //Plakaty te dotycza teraz Khorinisa. Nikt nie chce miec z Toba nic wspólnego.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_02"); //Wiem jednak, jak wiele jest plakatów: jeden w klasztorze, po jednym na dziedzincu Bengaru, Onar i Lobart oraz trzy w miescie, w bardzo dostepnych miejscach, pozwole sobie powiedziec.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_03"); //Czy to oznacza, ze musze zdjac wszystkie plakaty?
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_04"); //Nie chcialbym widziec tych zdjec.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_05"); //Czy nie sadzisz, ze nos jest zle wystrzelony? Wyglada to jak rzepa, ale na linii wyglada jak gruszka.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_06"); //Rzadko wygladalem wczesniej w lustrze.
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_D_29_07"); //To wszystko jest w porzadku, przyjaciel. Tak wiec, jesli usunales tamtejsze plakaty, to nie powinno byc dlugo przed ludzmi, którzy rozmawiaja z Toba tak jak zawsze. Wiesz, jak one wygladaja. (smiertelnicy)
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_D_15_08"); //Bede na dobrej drodze.
 
-	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Die Gründe für das fortlaufende Schweigen hängen in ganz Khorinis aus: Es sind Plakate mit Verunglimpfungen meiner Person. Diese Anschläge an Orten des öffentlichen Lebens, drei Stück in Khorinis und jeweils eins im Kloster und an den Höfen von Bengar, Onar und Lobart, sollte ich schnellstmöglich entfernen, damit die dort ansässige Bevölkerung wieder mit mir spricht.");
+	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Przyczyny nieustajacej ciszy dotycza Khorinisa: to plakaty z lekcewazeniem mojej osoby. Te ataki w miejscach zycia publicznego, trzy spektakle w Khorinis i po jednym w klasztorze i na dziedzincach Bengaru, Onar i Lobart, powinienem jak najszybciej usunac, aby miejscowa ludnosc mogla znowu rozmawiac ze mna.");
 
 	Wld_InsertItem	(ItWr_Anschlag_City, "FP_ITEM_ANSCHLAG_CITY_01");
 	Wld_InsertItem	(ItWr_Anschlag_City, "FP_ITEM_ANSCHLAG_CITY_02");
@@ -436,22 +436,22 @@ FUNC VOID Info_Mod_Moe_ErsterAnschlag_D()
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_B()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_B_15_00"); //Ich habe Allievo im Kampf getötet, aber nicht hingerichtet.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_B_15_00"); //Zabilem Allievo w bitwie, ale nie rozstrzelalem go.
 
 	Info_Mod_Moe_ErsterAnschlag_D();
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_A()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_A_15_00"); //Siehst du nicht, dass das Canthars Blendwerk ist?
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_A_15_00"); //Czy nie widzisz, ze jest to fantazja Canthara?
 
 	Info_Mod_Moe_ErsterAnschlag_D();
 };
 
 FUNC VOID Info_Mod_Moe_ErsterAnschlag_C()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_C_15_00"); //Der Bastard hat es verdient, so zu enden!
-	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_C_29_01"); //Es tut mir Leid, ich dachte, wir stehen auf einer Seite. Jetzt muss ich aber sehen, dass du auch nicht besser bist als Canthar. Geh mir aus den Augen.
+	AI_Output(hero, self, "Info_Mod_Moe_ErsterAnschlag_C_15_00"); //Bastard zasluguje na to, aby tak sie skonczylo!
+	AI_Output(self, hero, "Info_Mod_Moe_ErsterAnschlag_C_29_01"); //Przykro mi, pomyslalem, ze bylismy z jednej strony. Teraz musze zobaczyc, ze nie jestes lepszy niz Canthar. Wyjdz z oczu.
 	
 	Info_ClearChoices	(Info_Mod_Moe_ErsterAnschlag);
 
@@ -471,7 +471,7 @@ INSTANCE Info_Mod_Moe_Anschlaege (C_INFO)
 	information	= Info_Mod_Moe_Anschlaege_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du die Anschläge, du kannst sie entsorgen.";
+	description	= "Tutaj masz ataki, mozesz je zrzucic.";
 };
 
 FUNC INT Info_Mod_Moe_Anschlaege_Condition()
@@ -485,23 +485,23 @@ FUNC INT Info_Mod_Moe_Anschlaege_Condition()
 
 FUNC VOID Info_Mod_Moe_Anschlaege_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_00"); //Hier hast du die Anschläge, du kannst sie entsorgen.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_00"); //Tutaj masz ataki, mozesz je zrzucic.
 
 	B_GiveInvItems	(hero, self, ItWr_Anschlag, Npc_HasItems(hero, ItWr_Anschlag));
 
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_01"); //(mürrisch) Sind das alle?
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_02"); //Ja.
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_01"); //Czy to wszyscy?
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_02"); //Tak.
 	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_03"); //...
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_04"); //Was ist denn mit dir los?
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_05"); //Ich habe heute einen Zettel zugesteckt bekommen.
-	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_06"); //Und?
-	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_07"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_04"); //Co jest z Toba?
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_05"); //Dzis utknelam z notatka.
+	AI_Output(hero, self, "Info_Mod_Moe_Anschlaege_15_06"); //A co?
+	AI_Output(self, hero, "Info_Mod_Moe_Anschlaege_29_07"); //Tutaj.
 
 	B_GiveInvItems	(self, hero, ItWr_MoesZettel, 1);
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Ich habe die Anschläge abgeliefert.");
+	B_LogEntry	(TOPIC_MOD_MOE_TALK, "Dostarczylem ataki.");
 	B_SetTopicStatus	(TOPIC_MOD_MOE_TALK, LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -517,7 +517,7 @@ INSTANCE Info_Mod_Moe_Zettel (C_INFO)
 	information	= Info_Mod_Moe_Zettel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verstehe.";
+	description	= "Widze.";
 };
 
 FUNC INT Info_Mod_Moe_Zettel_Condition()
@@ -531,14 +531,14 @@ FUNC INT Info_Mod_Moe_Zettel_Condition()
 
 FUNC VOID Info_Mod_Moe_Zettel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_00"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_01"); //Mach den Fall allein weiter, ja, Kumpel?
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_02"); //Willst du dich etwa unterkriegen lassen?
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_03"); //Nein ... ja, ist in Ordnung. Ich helfe dir weiterhin. (Pause) Aber such mich so selten auf wie möglich.
-	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_04"); //Geht klar. Pass auf deinen Rücken auf.
-	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_05"); //Ich weiß schon gar nicht mehr, wo er ist ...
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_00"); //Widze.
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_01"); //Zajmij sie ta sprawa samemu, czy bedziesz zona?
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_02"); //Próbujesz sie zabic?
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_03"); //Nie.... Nie. Tak, wszystko jest w porzadku. Bede Cie nadal pomagal. (pauza) Ale nie przychodze, zeby mnie widziec zbyt czesto.
+	AI_Output(hero, self, "Info_Mod_Moe_Zettel_15_04"); //Dostales to. Obserwuj plecy.
+	AI_Output(self, hero, "Info_Mod_Moe_Zettel_29_05"); //Nawet nie wiem, gdzie on juz jest....
 
-	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Moe hat eine kryptische Drohung erhalten, er will mir jedoch weiterhin helfen.");
+	B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Moe dostal kryptograficzne zagrozenie, ale wciaz chce mi pomóc.");
 };
 
 INSTANCE Info_Mod_Moe_Shakir (C_INFO)
@@ -549,7 +549,7 @@ INSTANCE Info_Mod_Moe_Shakir (C_INFO)
 	information	= Info_Mod_Moe_Shakir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Moe. Ich brauche eine Frau.";
+	description	= "Witaj, Moe. Potrzebuje kobiety.";
 };
 
 FUNC INT Info_Mod_Moe_Shakir_Condition()
@@ -562,19 +562,19 @@ FUNC INT Info_Mod_Moe_Shakir_Condition()
 
 FUNC VOID Info_Mod_Moe_Shakir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_00"); //Hallo, Moe. Ich brauche eine Frau.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_01"); //Du willst heiraten?
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_02"); //Nein. Nur mal eben so.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_03"); //Aha. Wieso gehst du nicht zu Bromor? Er hat die Auswahl.
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_04"); //Der will mir keine mitgeben.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_05"); //Schäferstündchen im trauten Heim? Im Kerzenlicht und so?
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_06"); //Genau.
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_07"); //Dann frag mal Edda. Die kennt alle Frauen im Viertel.
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_08"); //Edda?
-	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_09"); //Die macht die Suppenküche. Hinter dem Haus vom Fischverkäufer.
-	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_10"); //Danke erst mal.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_00"); //Witaj, Moe. Potrzebuje kobiety.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_01"); //Chcesz sie ozenic?
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_02"); //Nie. Tak wlasnie jest.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_03"); //Uh-huh. Dlaczego nie idziesz do Bromora? Ma on wybór.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_04"); //Nie da mi jednego.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_05"); //Godzina Pasterza w domu? W swietle swiec i to wszystko?
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_06"); //Dokladnie.
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_07"); //No cóz, zapytaj Edde. Zna wszystkie kobiety w okolicy.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_08"); //Czy?
+	AI_Output(self, hero, "Info_Mod_Moe_Shakir_29_09"); //Jest w kuchni zupy. Za domem sprzedawcy ryb.
+	AI_Output(hero, self, "Info_Mod_Moe_Shakir_15_10"); //Na poczatek dziekuje.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Moe schickt mich zur Suppen-Edda. Die kennt alle Frauen im Viertel.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Moe wyslal mnie do zupy edda. Zna wszystkie kobiety w okolicy.");
 };
 
 INSTANCE Info_Mod_Moe_Sumpfkraut (C_INFO)
@@ -585,7 +585,7 @@ INSTANCE Info_Mod_Moe_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Moe_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mal angenommen ich wollte Sumpfkraut kaufen ...";
+	description	= "Przypuscmy, ze chcialem kupic ambrozje bagnista....";
 };
 
 FUNC INT Info_Mod_Moe_Sumpfkraut_Condition()
@@ -598,10 +598,10 @@ FUNC INT Info_Mod_Moe_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Moe_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Moe_Sumpfkraut_15_00"); //Mal angenommen ich wollte Sumpfkraut kaufen ...
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_01"); //He, Mann, wir sind hier im Hafenviertel. Hier gibt es alles Verruchte, was Spaß macht ... (grinsend) und was die feinen Herren vom Orden nicht so gerne sehen.
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_02"); //Freudenmädchen, Glückspiel, Schlägereien für Geld ... und natürlich auch den einen oder anderen harzigen Stängel.
-	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_03"); //Du musst dich nur bei den Leuten im Hafenviertel etwas umhören.
+	AI_Output(hero, self, "Info_Mod_Moe_Sumpfkraut_15_00"); //Przypuscmy, ze chcialem kupic ambrozje bagnista....
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_01"); //Hej, czlowiek, jestesmy na nabrzezu. Tutaj znajdziesz wszystko, co jest przyjemne.... (smiling) i to, co nie podoba sie swietnym panom z rozkazu.
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_02"); //Dziewczyna radosci, hazardu, walki o pieniadze..... a takze oczywiscie kilka pedów zywicznych.
+	AI_Output(self, hero, "Info_Mod_Moe_Sumpfkraut_29_03"); //Jedyne, co trzeba zrobic, to zadac ludziom w nadbrzezu kilka pytan.
 };
 
 INSTANCE Info_Mod_Moe_Flugblaetter (C_INFO)
@@ -612,7 +612,7 @@ INSTANCE Info_Mod_Moe_Flugblaetter (C_INFO)
 	information	= Info_Mod_Moe_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Moe_Flugblaetter_Condition()
@@ -633,11 +633,11 @@ FUNC VOID Info_Mod_Moe_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Moe_Flugblaetter_29_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

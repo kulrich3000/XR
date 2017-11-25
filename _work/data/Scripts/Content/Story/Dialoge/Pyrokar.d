@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Pyrokar_Hi_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Hi_11_00"); //Willkommen in unserem Kloster. Was können wir für dich tun?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Hi_11_00"); //Zapraszamy do naszego klasztoru. Co mozemy dla Ciebie zrobic?
 };
 
 INSTANCE Info_Mod_Pyrokar_Hammer (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Pyrokar_Hammer (C_INFO)
 	information	= Info_Mod_Pyrokar_Hammer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche den Heiligen Hammer.";
+	description	= "Potrzebuje swietego mlotka.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Hammer_Condition()
@@ -43,10 +43,10 @@ FUNC INT Info_Mod_Pyrokar_Hammer_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Hammer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Hammer_15_00"); //Ich brauche den Heiligen Hammer.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Hammer_11_01"); //Geh zu Garwig und sage ihm, dass ich dich schicke. Er wird dir gestatten den Hammer an dich zu nehmen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Hammer_15_00"); //Potrzebuje swietego mlotka.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Hammer_11_01"); //Idz do Garwiga i powiedz mu, ze wysylam ci. On pozwoli ci wziac mloteczek.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Pyrokar hat mir erlaubt den heiligen Hammer zu holen. Ich soll Garwig vorher Bescheid sagen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Pyrokar pozwolil mi dostac swiety mlotek. Chce najpierw dac Garwigowi znac.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Goetter (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Pyrokar_Goetter (C_INFO)
 	information	= Info_Mod_Pyrokar_Goetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was weißt du über die Machtträger?";
+	description	= "Co wiesz o nosnikach energii elektrycznej?";
 };
 
 FUNC INT Info_Mod_Pyrokar_Goetter_Condition()
@@ -71,11 +71,11 @@ FUNC INT Info_Mod_Pyrokar_Goetter_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Goetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Goetter_15_00"); //Was weißt du über die Machtträger?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Goetter_11_01"); //Es gibt drei davon und wie die Götterwaffen befindet sich einer in jedem Gebiet. Desweiteren kann jeder von ihnen nur durch eine der Götterwaffen getötet werden.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Goetter_11_02"); //Doch du solltest dich in acht nehmen, sie sind sehr mächtig.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Goetter_15_00"); //Co wiesz o nosnikach energii elektrycznej?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Goetter_11_01"); //Sa trzy z nich i podobnie jak bron bogów, jest jeden na kazdym obszarze. Ponadto kazdy z nich moze byc zabity tylko przez jedna z broni bogów.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Goetter_11_02"); //Ale badz ostrozny, sa bardzo mocni.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Auch die Machtträger halten sich in unterschiedlichen Gebieten auf. Außerdem ist jeder von ihnen nur durch eine der Götterwaffen zu töten.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Wladze znajduja sie równiez na róznych obszarach. Poza tym kazdy z nich moze zostac zabity tylko przez jedna z broni bogów.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Machttraeger (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Pyrokar_Machttraeger (C_INFO)
 	information	= Info_Mod_Pyrokar_Machttraeger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für Wesen sind die Machtträger?";
+	description	= "Jakie sa istoty potezne?";
 };
 
 FUNC INT Info_Mod_Pyrokar_Machttraeger_Condition()
@@ -99,27 +99,27 @@ FUNC INT Info_Mod_Pyrokar_Machttraeger_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Machttraeger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Machttraeger_15_00"); //Was für Wesen sind die Machtträger?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_01"); //Das wissen wir nicht, doch wie bereits erwähnt sind sie sehr mächtig. Du wirst es selbst herausfinden müssen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_02"); //Doch wir haben etwas über die Aufenthaltsorte herausgefunden. Und wir glauben zu wissen wer der Machtträger im Minental ist.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Machttraeger_15_03"); //Was weißt du?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_04"); //Gut, ich werde dir erzählen, was wir herausgefunden haben.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_05"); //Der Machtträger im Minental ist vermutlich ein Schattenlord Namens Urnol. Xardas hat davon berichtet, dass du ihm bereits begegnet bist.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Machttraeger_15_00"); //Jakie sa istoty potezne?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_01"); //Nie wiemy, ale jak juz wspomnialem, sa one bardzo potezne. Musisz sie sam przekonac.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_02"); //Ale dowiedzielismy sie czegos o miejscu pobytu. I myslimy, ze wiemy, kto jest w Minentalu.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Machttraeger_15_03"); //Co wiesz?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_04"); //Wlasciwie powiem ci, co sie dowiedzielismy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_05"); //Wlascicielem mocy w Minentalu jest prawdopodobnie pan cienisty o imieniu Urnol. Xardas poinformowal Cie, ze juz go spotkales.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Daemonisch3))
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_06"); //Zur Zeit scheint er hier in Khorinis für Unruhe zu sorgen. Du musst ihn unbedingt stellen.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_06"); //W tej chwili wydaje sie on byc przyczyna niepokoju tutaj w Khorinis. Trzeba go zapytac.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_07"); //Nachdem du ihn gestellt hast, wird er wieder zurück ins Minental gegangen sein.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_07"); //Po umieszczeniu go tam wrócilby do doliny rzeki Minental.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_08"); //Der Machtträger von Khorinis scheint sich auf einer Insel zu befinden. Doch ohne Schiff wirst du dort wohl nicht hinkommen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_09"); //Der letzte Machtträger befindet sich in Jharkendar, dem Tal, das die Wassermagier entdeckt haben. Wie ich gehört habe warst du daran nicht ganz unbeteiligt. Dort gibt es mehrere Herrenhäuser.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_10"); //In einem dieser Gebäude befindet er sich sicherlich.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_08"); //Nosnik energii Khorinis wydaje sie znajdowac na wyspie. Ale bez statku nie bedzie mozna do niego dotrzec.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_09"); //Ostatni wladca znajduje sie w Jharkendarzu, dolinie odkrytej przez magów wody. Rozumiem, ze uczestniczyl pan w tym wszystkim. Jest kilka dworów.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Machttraeger_11_10"); //Z pewnoscia znajduje sie w jednym z tych budynków.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Der Machtträger im Minental ist der Schattenlord Urnol. Der wird vermutlich wieder im Minental sein. Der Machtträger von Khorinis soll sich auf einer etwas erntfernten Insel befinden. Ich werde ein Schiff brauchen, um dorthin zu gelangen. Und in Jharkendar sollte ich die Herrenhäuser abklappern. Das kann ja lustig werden.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Nosnikiem energii w Minental jest Shadowlord Urnol. Prawdopodobnie wróci do Minentala. Mówi sie, ze nosnik energii Khorinis znajduje sie na odleglej wyspie. Do dotarcia tam potrzebny jest mi statek. A w Jharkendarzu mialem odebrac dwory. To moze byc zabawa.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Rasend (C_INFO)
@@ -143,8 +143,8 @@ FUNC INT Info_Mod_Pyrokar_Rasend_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Rasend_11_00"); //Wir können Khorinis im Augenblick unter keinen Umständen verlassen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Rasend_11_01"); //Solange der Dämon hier tobt, wäre es unverantwortlich, wenn wir Magier die Insel sich selbst überließen.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Rasend_11_00"); //Nie ma sposobu, aby opuscic Khorinis.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Rasend_11_01"); //Tak dlugo, jak demon szaleje tutaj, pozostawienie tej wyspy samym sobie byloby nieodpowiedzialne.
 };
 
 INSTANCE Info_Mod_Pyrokar_Trank (C_INFO)
@@ -155,7 +155,7 @@ INSTANCE Info_Mod_Pyrokar_Trank (C_INFO)
 	information	= Info_Mod_Pyrokar_Trank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe den Trank für die Novizen.";
+	description	= "Przynosze eliksir dla nowicjuszy.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Trank_Condition()
@@ -170,21 +170,21 @@ FUNC INT Info_Mod_Pyrokar_Trank_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Trank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Trank_15_00"); //Ich bringe den Trank für die Novizen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Trank_15_00"); //Przynosze eliksir dla nowicjuszy.
 
 	B_GiveInvItems	(hero, self, VatrasNovizenTrunk, 1);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Trank_11_01"); //Ich habe doch Daron geschickt.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Trank_15_02"); //Daron hat mir den Trank gegeben und mir gesagt ich solle ihn dir bringen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Trank_11_03"); //Vielen Dank, du hast uns damit sehr geholfen.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Trank_11_01"); //Wyslalem Darona.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Trank_15_02"); //Daron dal mi eliksir i kazal przyniesc go wam.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Trank_11_03"); //Bardzo dziekujemy, bardzo nam pomogliscie.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Pyrokar_Mitglied))
 	{
-		B_LogEntry_More	(TOPIC_MOD_DARONSGEFALLEN, TOPIC_MOD_FEUERMAGIER, "Ich habe Pyrokar den Trank gebracht.", "Ich habe Daron einen Gefallen getan.");
+		B_LogEntry_More	(TOPIC_MOD_DARONSGEFALLEN, TOPIC_MOD_FEUERMAGIER, "Przynióslem Pyrokar eliksir.", "Ja dalem Daronowi laske.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Ich habe Pyrokar den Trank gebracht.");
+		B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Przynióslem Pyrokar eliksir.");
 	};
 
 	Mod_FMFieberDay = Wld_GetDay();
@@ -205,7 +205,7 @@ INSTANCE Info_Mod_Pyrokar_Mitglied (C_INFO)
 	information	= Info_Mod_Pyrokar_Mitglied_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will einer eurer Novizen werden.";
+	description	= "Chce byc jednym z waszych nowicjuszy.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Mitglied_Condition()
@@ -219,16 +219,16 @@ FUNC INT Info_Mod_Pyrokar_Mitglied_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Mitglied_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Mitglied_15_00"); //Ich will einer eurer Novizen werden.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Mitglied_11_01"); //Wir brauchen immer neue Novizen. Du musst dich allerdings erst als würdig erweisen.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Mitglied_15_02"); //Wie kann ich mich würdig erweisen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Mitglied_11_03"); //Helfe jedem der Feuermagier ein wenig. Es reicht wenn du den normalen Magier hilfst, wir hohen Magier werden dich nicht auf die Probe stellen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Mitglied_15_00"); //Chce byc jednym z waszych nowicjuszy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Mitglied_11_01"); //Zawsze potrzebujemy nowych nowicjuszy. Trzeba jednak najpierw okazac sie godnym zaufania.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Mitglied_15_02"); //Jak moge okazac sie godnym siebie?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Mitglied_11_03"); //Pomóz kazdemu z magów strazy pozarnej. Jedyne co musisz zrobic, to pomóc normalnemu magowi, my, wysokocisnieni magowie, nie testujemy cie.
 
-	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Um ein Feuer Novize zu werden muss ich jedem Feuermagier helfen.");
+	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Aby zostac nowicjuszem ognia, musze pomóc kazdemu magowi ognia.");
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Pyrokar_Trank))
 	{
-		B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Ich habe Daron einen Gefallen getan.");
+		B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Ja dalem Daronowi laske.");
 	};
 };
 
@@ -240,7 +240,7 @@ INSTANCE Info_Mod_Pyrokar_Geholfen (C_INFO)
 	information	= Info_Mod_Pyrokar_Geholfen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe allen Magiern geholfen.";
+	description	= "Pomagalem wszystkim magom.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Geholfen_Condition()
@@ -260,12 +260,12 @@ FUNC INT Info_Mod_Pyrokar_Geholfen_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Geholfen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Geholfen_15_00"); //Ich habe allen Magiern geholfen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Geholfen_11_01"); //Sehr gut. Du kannst dich uns nun anschließen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Geholfen_15_00"); //Pomagalem wszystkim magom.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Geholfen_11_01"); //Bardzo dobry. Mozesz do nas dolaczyc juz teraz.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Ich habe die Zustimmung aller Magier und kann nun einer ihrer Novizen werden.");
+	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Mam aprobate wszystkich magów i moge teraz stac sie jednym z ich nowicjuszy.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Aufnahme (C_INFO)
@@ -276,7 +276,7 @@ INSTANCE Info_Mod_Pyrokar_Aufnahme (C_INFO)
 	information	= Info_Mod_Pyrokar_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin bereit mich euch anzuschließen.";
+	description	= "Jestem gotów dolaczyc do Ciebie.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Aufnahme_Condition()
@@ -291,42 +291,42 @@ FUNC INT Info_Mod_Pyrokar_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_15_00"); //Ich bin bereit mich euch anzuschließen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_15_00"); //Jestem gotów dolaczyc do Ciebie.
 	
 	if (hero.level >= 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_01"); //Du bist bereit ein Feuer Novize zu werden.
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_02"); //Doch wenn du einmal eine von unseren Novizenroben trägst, dann gibt es kein zurück mehr.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_01"); //Jestescie gotowi zostac nowicjuszami ognia.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_02"); //Ale kiedy nosisz jeden z naszych nowicjuszy, nie ma odwrotu.
 		
 		if (Mod_HatPlayerNeutraleKlamotten())
 		{
 			if (Mod_Gottstatus <= 8)
 			{
-				AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_05"); //Du solltest allerdings vorher noch ein paar Taten zu Gunsten von Innos vollbringen.
+				AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_05"); //Nalezy jednak najpierw zrobic kilka rzeczy na korzysc Innosa.
 			}
 			else
 			{
 				Info_ClearChoices	(Info_Mod_Pyrokar_Aufnahme);
 
-				Info_AddChoice	(Info_Mod_Pyrokar_Aufnahme, "Ich habs mir anders überlegt.", Info_Mod_Pyrokar_Aufnahme_Nein);
-				Info_AddChoice	(Info_Mod_Pyrokar_Aufnahme, "Ich will mich euch anschließen.", Info_Mod_Pyrokar_Aufnahme_Ja);
+				Info_AddChoice	(Info_Mod_Pyrokar_Aufnahme, "Zmienilam zdanie.", Info_Mod_Pyrokar_Aufnahme_Nein);
+				Info_AddChoice	(Info_Mod_Pyrokar_Aufnahme, "Chce do Panstwa dolaczyc.", Info_Mod_Pyrokar_Aufnahme_Ja);
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_04"); //Du solltest dir vorher aber noch eine neutrale Rüstung besorgen.
+			AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_04"); //Najpierw powinienes zdobyc neutralna zbroje.
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_03"); //Du solltest lieber noch etwas Erfahrung sammeln.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_11_03"); //Lepiej zdobyc wiecej doswiadczenia.
 	};
 };
 
 FUNC VOID Info_Mod_Pyrokar_Aufnahme_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_Nein_15_00"); //Ich hab's mir anders überlegt.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Nein_11_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_Nein_15_00"); //Zmienilam zdanie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Nein_11_01"); //Cokolwiek mówisz.
 
 	Info_ClearChoices	(Info_Mod_Pyrokar_Aufnahme);
 };
@@ -342,8 +342,8 @@ FUNC VOID Info_Mod_Pyrokar_Aufnahme_Ja()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_55);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_59);
 	
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_Ja_15_00"); //Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_01"); //Gut. Hier ist deine Novizenrobe.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Aufnahme_Ja_15_00"); //Chce do Panstwa dolaczyc.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_01"); //Dobre. Oto Twoja próba.
 
 	CreateInvItems	(self, ITAR_NOV_L, 1);
 	B_GiveInvItems	(self, hero, ITAR_NOV_L, 1);
@@ -351,26 +351,26 @@ FUNC VOID Info_Mod_Pyrokar_Aufnahme_Ja()
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Nov_L);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_02"); //Du solltest dich damit nicht vor den Beliaranhängern zeigen, sie könnten sehr gereizt auf dich reagieren.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_03"); //Als einer unserer Novizen ist es dir möglich unsere Magie zu erlernen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_04"); //Außerdem gehört es zu deinen Pflichten den Magiern zu dienen.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_02"); //Nie powinienes sie pokazywac przed zwolennikami Beliarana, oni moga byc bardzo irytujacy na Ciebie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_03"); //Jako jeden z naszych nowicjuszy mozesz nauczyc sie naszej magii.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_04"); //Twoim obowiazkiem jest równiez sluzba magikom.
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_05"); //Als Waffe kann ich dir nur einen Kampfstab anbieten.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_05"); //Jedyna bronia, która moge wam zaoferowac, jest paleczka.
 
 	B_GiveInvItems	(self, hero, ItMw_1h_Nov_Mace, 1);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_06"); //Desweiteren bekommst du noch ein paar Kleinigkeiten.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_07"); //Das wäre zuerst ein Runenstein, mit dem du deine erste Rune erstellen kannst.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_06"); //Podam panstwu kilka szczególów.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_07"); //Bylby to przede wszystkim kamien runowy, dzieki któremu mozna stworzyc pierwsza rune.
 
 	B_GiveInvItems	(self, hero, ItMi_Runeblank, 1);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_08"); //Dann steht es dir als Novize ebenfalls zu, die Bibliothek zu betreten.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_09"); //Dort wirst du auf Hyglas treffen, der dich in der Runenerstellung unterweise wird.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_10"); //Außerdem wird dir Marduk die magischen Kreiser lehren, wenn du dazu bereit bist.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_08"); //Wtedy jako nowicjusz masz równiez prawo wejsc do biblioteki.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_09"); //Tam spotkasz Hyglasa, który nauczy cie jak tworzyc runy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Aufnahme_Ja_11_10"); //Poza tym Marduk nauczy Cie czarodziejskiego srodowiska kiedy bedziesz gotowy.
 
 	B_GiveInvItems	(self, hero, ItKe_KlosterBibliothek, 1);
 
-	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_GILDENAUFNAHME, "Ich bin jetzt ein Feuer Novize.", "Ich bin jetzt ein Feuer Novize.");
+	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_GILDENAUFNAHME, "Jestem nowicjuszem ognia.", "Jestem nowicjuszem ognia.");
 	B_SetTopicStatus	(TOPIC_MOD_FEUERMAGIER, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_SUCCESS);
 
@@ -380,8 +380,8 @@ FUNC VOID Info_Mod_Pyrokar_Aufnahme_Ja()
 	B_SetTopicStatus	(TOPIC_MOD_DAEMONENBESCHWOERER, LOG_FAILED);
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KLOSTER, LOG_NOTE);
-	B_LogEntry_NS	(TOPIC_MOD_LEHRER_KLOSTER, "Marduk lehrt die magischen Kreise.");
-	B_LogEntry_NS	(TOPIC_MOD_LEHRER_KLOSTER, "Bei Hyglas kann ich das Herstellen von Runen lernen.");
+	B_LogEntry_NS	(TOPIC_MOD_LEHRER_KLOSTER, "Marduk uczy magicznych kregów.");
+	B_LogEntry_NS	(TOPIC_MOD_LEHRER_KLOSTER, "W Hyglasie moge nauczyc sie robic runy.");
 	
 	Mod_Gilde = 6;
 
@@ -404,15 +404,15 @@ FUNC VOID Info_Mod_Pyrokar_Aufnahme_Ja()
 
 	Mod_FMAufnahme_Day = Wld_GetDay();
 
-	Wld_ReassignPortalToGuild ("kloster04", GIL_PUBLIC); //Schlafraum Novizen
-	Wld_ReassignPortalToGuild ("kloster05", GIL_PUBLIC); //Schlafraum Novizen
-	Wld_ReassignPortalToGuild ("kloster10", GIL_PUBLIC); //Schlafraum Novizen
-	Wld_ReassignPortalToGuild ("kloster12", GIL_PUBLIC); //Schlafraum Novizen
+	Wld_ReassignPortalToGuild ("klasztor04", GIL_PUBLIC); //Schlafraum Novizen
+	Wld_ReassignPortalToGuild ("klasztor05", GIL_PUBLIC); //Schlafraum Novizen
+	Wld_ReassignPortalToGuild ("klasztor10", GIL_PUBLIC); //Schlafraum Novizen
+	Wld_ReassignPortalToGuild ("klasztor12", GIL_PUBLIC); //Schlafraum Novizen
 	
-	Wld_ReassignPortalToGuild ("kloster06", GIL_PUBLIC); //Schlafraum Magier
-	Wld_ReassignPortalToGuild ("kloster07", GIL_PUBLIC); //Schlafraum Magier
-	Wld_ReassignPortalToGuild ("kloster08", GIL_PUBLIC); //Schlafraum Magier
-	Wld_ReassignPortalToGuild ("kloster09", GIL_PUBLIC); //Schlafraum Magier
+	Wld_ReassignPortalToGuild ("klasztor06", GIL_PUBLIC); //Schlafraum Magier
+	Wld_ReassignPortalToGuild ("klasztor07", GIL_PUBLIC); //Schlafraum Magier
+	Wld_ReassignPortalToGuild ("klasztor08", GIL_PUBLIC); //Schlafraum Magier
+	Wld_ReassignPortalToGuild ("klasztor09", GIL_PUBLIC); //Schlafraum Magier
 };
 
 INSTANCE Info_Mod_Pyrokar_FeuerGegenEis (C_INFO)
@@ -435,22 +435,22 @@ FUNC INT Info_Mod_Pyrokar_FeuerGegenEis_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_FeuerGegenEis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_00"); //Da bist du ja, Novize.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis_15_01"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_02"); //Das wissen wir selbst noch nicht genau.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_03"); //Aber es scheint, als hätte sich bei dem Steinkreis auf Sekobs Hof ein mysteriöses Portal gebildet, durch welches immer mehr Kreaturen aus Eis in die Umgebung eindringen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_04"); //Diese wassernahen Wesen haben sich besonders am See ausgebreitet.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_05"); //Nun gilt mit Innos’ Hilfe diese Wesen zurückzudrängen, das Phänomen zu untersuchen und das Portal – wenn möglich - wieder zu verschließen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_06"); //(nachdenklich kalkulierend) Dadurch könnten wir den Einfluss der Wassermagier auf den Höfen wieder eindämmen und die Vormachtstellung unserer Kirche Innos’ sichern.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_07"); //(wieder zum Helden) Jedenfalls habe ich bereits Sergio mit einigen Novizen losgeschickt, um die Lage auszukundschaften.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis_15_08"); //Was ist meine Aufgabe?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_09"); //Dazu wollte ich gerade kommen. Hyglas hat sich nämlich indes darauf vorbereitet mit seinem Wissen um die Feuermagie gegen diese Eiswesen vorzugehen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_10"); //Als mein erfahrenster Novize wirst du ihn zu den Höfen begleiten und wenn nötig unterstützen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_11"); //Es bleibt keine Zeit zu verlieren und ihr brecht sofort auf. Innos’ beschütze euch auf eurem Weg.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_00"); //Jestes, Novice.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis_15_01"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_02"); //Nie wiemy jeszcze na pewno.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_03"); //Wydaje sie jednak, ze na kamiennym kregu na podwórzu Sekob powstal tajemniczy portal, przez który coraz wiecej stworzen lodu przenika do otoczenia.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_04"); //Te wodorozcienczalne istoty rozprzestrzenilysie szczególnie nad jeziorem.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_05"); //Teraz, z pomoca Innosa, istoty te nalezy odepchnac z powrotem, zbadac zjawisko i - jesli to mozliwe - ponownie zamknac portal.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_06"); //To pozwoliloby nam ograniczyc wplyw magików wody na dwory i zapewnic wyzszosc naszego kosciola Innos ".
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_07"); //W kazdym razie wyslalem juz Sergio z kilkoma nowicjuszami do zbadania sytuacji.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis_15_08"); //Jaka jest moja praca?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_09"); //Wkrótce mialem sie do tego zblizyc. Hyglas przygotowal sie jednak do podjecia dzialan przeciwko tym lodowcom z jego wiedza o magii ognia.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_10"); //Jako mój najbardziej doswiadczony nowicjusz, bedziesz mu towarzyszyl przy sadach i w razie potrzeby wspieral go.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis_11_11"); //Nie ma czasu do stracenia i natychmiast odchodzisz. Innos chroni Cie na drodze.
 
 	Log_CreateTopic	(TOPIC_MOD_FM_FEUEREIS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FM_FEUEREIS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Da steh ich also mit Hyglas. Von Sekobs Hof aus strömen durch ein mysteriöses Portal immer mehr Eiswesen nach Khorinis und unsere Jungs sind am See mit ihnen in Kämpfe verwickelt. Es bleibt keine Zeit zu verlieren ihnen zu Hilfe zu eilen.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Jestem wiec z Hyglasem. Z ogrodu Sekobs przez tajemniczy portal przeplywa coraz wiecej lodowców do Khorinis, a nasi chlopcy biora udzial w bitwach z nimi nad jeziorem. Nie ma czasu do stracenia, aby im pomóc.");
 	
 	B_StartOtherRoutine(Mod_104_BAU_Rega_NW, "FEUERGEGENEIS");
 	B_StartOtherRoutine(Mod_1412_BAU_Bauer_NW, "FEUERGEGENEIS");
@@ -476,19 +476,19 @@ FUNC INT Info_Mod_Pyrokar_FeuerGegenEis2_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_FeuerGegenEis2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_00"); //Endlich bist du wach geworden!
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_01"); //(irritiert) Was ... was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_02"); //Sergio hat dich bewusstlos auf dem Feld gefunden und ins Kloster gebracht.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_03"); //Das Portal ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_04"); //Ja, ihr habt es geschafft, das Portal ist wieder verschlossen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_05"); //Über die genauren Umstände hatten wir allerdings gehofft mehr von dir zu erfahren. Umso mehr, da unser Bruder Hyglas verschollen ist.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_06"); //Hyglas ... er ist auf der anderen Seite geblieben.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_07"); //Die andere Seite des Portals? Ihr wart dort?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_08"); //Ja ... wir fanden uns in einer Eishöhle mit einer Konstruktion vor, welche das Portal mit Energie speiste.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_09"); //Jetzt beginne ich zu verstehen ... er blieb zurück um das Portal zu versiegeln.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_10"); //Ja, zum Wohle von ganz Khorinis hat er sich geopfert und die Höhle zum Einsturz gebracht.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_11"); //Bei Innos, ein wahrer Akt er Selbstlosigkeit ... Hmm, nun muss ich mich mit meinen Brüdern zurückziehen, um uns zu beraten.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_12"); //Ruh du dich derweil noch aus und suche uns in einigen Stunden auf.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_00"); //W koncu sie obudziles!
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_01"); //(irytowany) Co.... co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_02"); //Sergio odnalazl cie w polu nieprzytomnosci i przywiózl do klasztoru.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_03"); //Portal....
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_04"); //Tak, zrobiles to, portal jest ponownie zablokowany.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_05"); //Mielismy jednak nadzieje dowiedziec sie wiecej o dokladnych okolicznosciach. Zwlaszcza, ze nasz brat Hyglas zginal.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_06"); //szklanki przebywal po drugiej stronie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_07"); //Druga strona portalu? Byles tam?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_08"); //Tak..... Znalezlismy sie w jaskini lodowej z konstrukcja zasilajaca portal energia.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_09"); //Teraz zaczynam rozumiec..... Zatrzymal sie, aby zamknac portal.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_FeuerGegenEis2_15_10"); //Tak, dla dobra calego Khorinisa poswiecil samego siebie i zawalil jaskinie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_11"); //W Innosie prawdziwy akt bezinteresownosci.... Hmm, teraz musze przejsc na emeryture z moimi bracmi, aby skonsultowac sie z nami.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_FeuerGegenEis2_11_12"); //W miedzyczasie odpoczniecie i odwiedzicie nas za kilka godzin.
 
 	B_SetTopicStatus	(TOPIC_MOD_FM_FEUEREIS, LOG_SUCCESS);
 
@@ -532,34 +532,34 @@ FUNC INT Info_Mod_Pyrokar_Befoerderung_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Befoerderung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_00"); //Gut, da bist du. Wir haben uns eingehend beraten.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_01"); //Durch deine Verdienste für das Kloster und ganz Khorinis hast du dich als würdig erwiesen in unserer Reihen einzutreten.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_02"); //Ich soll ein Magier des Feuers werden?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_03"); //Ja, ein Priester des  heiligen Feuers, und ein treuer Bruder im heiligen Kampf für Innos gerechte Sache. Sprich den Schwur und tritt in unsere Reihen ein.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_04"); //Ich schwöre, vor dem allmächtigen Herrn Innos, seiner Diener und der heiligen Flamme ...
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_05"); //... dass von nun an und auf ewig mein Leben mit dem Feuer verbunden ist ...
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_06"); //... bis mein Körper und mein Geist Ruhe finden in seinen heiligen Hallen und das Feuer des Lebens erlischt.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_07"); //So, damit bist du nun ein Magier des Feuers.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_08"); //Hier ist deine neue Robe.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_00"); //No cóz, tam jestescie. Przeprowadzilismy szerokie dyskusje.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_01"); //Dzieki swoim zaslugom za klasztor i caly Khorinis, udowodniles, ze jestes godzien przylaczenia sie do naszych szeregów.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_02"); //Chcesz, abym zostal magikiem ognia?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_03"); //Tak, kaplan swietego ognia i wierny brat w swietej bitwie o sprawiedliwa sprawe Inna. Powiedz przysiege i dolacz do naszych szeregów.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_04"); //Przysiegam przed wszechmogacym Panem Innosem, jego slugami i swietym plomieniem....
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_05"); //... od teraz i na zawsze moje zycie jest zwiazane z ogniem....
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_06"); //... dopóki moje cialo i duch nie odnajda spokoju w jego swietych salach, a ogien zycia zniknie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_07"); //Wiec teraz jestes magikiem ognia.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_08"); //Oto Twoja nowa szata.
 
 	CreateInvItems	(self, ItAr_Kdf_L, 1);
 	B_GiveInvItems	(self, hero, ItAr_Kdf_L, 1);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_09"); //Und hier ist ein Schlüssel für dein neues Schlafgemach.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_09"); //Oto klucz do Twojej nowej komory lózkowej.
 
 	B_GiveInvItems	(self, hero, ItKe_KDFPlayer, 1);
 
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_10"); //Was ist mit Hyglas?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_11"); //Wir werden sein großes Opfer ehren, wie es ihm gebührt, und ihn zu einem der Schutzheiligen dieser Insel erheben.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_12"); //Seine Aufgabe im Kloster als Lehrer der Feuermagie wird nun Ulthar übernehmen. Und da gibt es noch eine Sache ...
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_13"); //Ja, was?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_14"); //Es gab eine dringliche Aufgabe, die Hyglas eigentlich für uns erledigen sollte.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_15"); //Da er nun jedoch nicht unter uns weilt, haben wir entschieden sie an dich weiter zu geben.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_16"); //Ich weiß, dass es nach den letzten Ereignissen sehr schnell für dich kommt, Bruder, aber es ist wichtig.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_17"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_18"); //Um  eine heilige Stätte, die mitunter als das Zentrum unsere Glaubens bezeichnet wird.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_19"); //Parlan ist jedoch von allen Magiern im Kloster am besten mit dem Hintergrundwissen darum vertraut.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_20"); //Geh also zu ihm, Bruder, und besprich alles weitere mit ihm. Innos behüte dich auf deinen Wegen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_10"); //A co z Hyglasem?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_11"); //Bedziemy czcic jego wielka ofiare, jak on zasluguje, i uczynimy go jednym z patronów swietych tej wyspy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_12"); //Ulthar przejmie teraz swoje zadanie w klasztorze jako nauczyciel magii ognia. I jest jeszcze jedna rzecz.....
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_13"); //Tak, co?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_14"); //Bylo pilne zadanie, które Hyglas mial nam wykonac.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_15"); //Poniewaz jednak nie jest z nami teraz, zdecydowalismy sie przekazac go wam.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_16"); //Wiem, ze po kilku ostatnich wydarzeniach, bracie, przychodzi ci to bardzo szybko, ale to wazne.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Befoerderung_15_17"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_18"); //Wokól swietego miejsca, które czasami nazywane jest centrum naszej wiary.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_19"); //Jednak parlamentarzysta jest najlepiej zaznajomiony z podstawowa wiedza wszystkich magów klasztoru.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Befoerderung_11_20"); //Idzcie wiec do niego, bracie, i omówcie z nim wszystko inne. Innos chroni Cie na drodze.
 
 	Mod_Gilde = 7;
 
@@ -573,7 +573,7 @@ FUNC VOID Info_Mod_Pyrokar_Befoerderung_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_PATHERION, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_PATHERION, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_PATHERION, "Kaum ist die Sache mit dem Portal überstanden, gibt es eine andere wichtige Aufgabe für mich. Ich soll mich an Parlan wenden, um alles weitere dazu zu erfahren.");
+	B_LogEntry	(TOPIC_MOD_PATHERION, "Jak tylko portal dobiegnie konca, jest jeszcze jedno wazne dla mnie zadanie. Skontaktuje sie z Parlamentem, aby dowiedziec sie wiecej.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Patherion2 (C_INFO)
@@ -596,15 +596,15 @@ FUNC INT Info_Mod_Pyrokar_Patherion2_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Patherion2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Patherion2_11_00"); //Wie ich sehe bist du aus Patherion zurückgekehrt. So berichte, was sich dort ereignet hat?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Patherion2_15_01"); //Es gab einen Schwarzmagier im Kloster. Der Magier Garan und ich haben ihn enttarnt und unschädlich gemacht.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Patherion2_15_02"); //Danach haben wir uns um die Barriere gekümmert, die nun ebenfalls nicht mehr existiert.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Patherion2_11_03"); //Das sind wahrlich gute Nachrichten. Nimm diese Tränke als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Patherion2_11_00"); //Widze, ze wróciles z Patherionu. Zglaszajmy wiec, co sie tam wydarzylo?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Patherion2_15_01"); //W klasztorze byl czarny magik. Czarodziej Garan i ja zdemaskowalismy go i uczynilismy go nieszkodliwym.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Patherion2_15_02"); //Potem zajelismy sie bariera, która juz nie istnieje.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Patherion2_11_03"); //To naprawde dobra wiadomosc. Uzywaj tych eliksirów jako nagrody.
 
 	CreateInvItems	(hero, ItPo_Health_03, 3);
 	CreateInvItems	(hero, ItPo_Mana_03, 3);
 
-	B_ShowGivenThings	("3 Elixiere der Heilung und 3 Elixiere des Manas erhalten");
+	B_ShowGivenThings	("Uzyskano 3 eliksiry lecznicze i 3 eliksiry maneksu.");
 
 	B_GivePlayerXP	(500);
 };
@@ -617,7 +617,7 @@ INSTANCE Info_Mod_Pyrokar_AkilsHof (C_INFO)
 	information	= Info_Mod_Pyrokar_AkilsHof_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Würdenträger Innos, ich brauche eure Hilfe.";
+	description	= "Dignitary Innos, potrzebuje waszej pomocy.";
 };
 
 FUNC INT Info_Mod_Pyrokar_AkilsHof_Condition()
@@ -634,31 +634,31 @@ FUNC INT Info_Mod_Pyrokar_AkilsHof_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_00"); //Würdenträger Innos, ich brauche eure Hilfe.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_01"); //Was ist dein Anliegen?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_02"); //Brüder sind wie besessen aufeinander losgegangen und hätten sich fast umgebracht, andere Leute wiederum sind schwer erkrankt, nachdem sie unwissentlich einem Diener des Bösen Unterkunft gewährt hatten.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_03"); //Diener des Bösen sagst du?! Das klingt ganz nach einer Form von Besessenheit, welche  über diese Menschen gewirkt wurde.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_04"); //Habt ihr ein Mittel dagegen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_05"); //Selbstverständlich. Nichts gibt es, was der Allmacht unseres Herrn Innos  widerstehen könnte.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_06"); //Da bin ich ja erleichtert ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_07"); //Gegen eine kleine Spende an das Kloster werde ich dich mit Tränken ausstatten, die Abhilfe schaffen sollten.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_08"); //Spende?! Wie viel?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_09"); //Wie viele Menschen sind denn von der Krankheit betroffen?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_10"); //Nun, es müssten drei sein.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_11"); //Dann wird eine bescheidene Spende von 600 Goldmünzen ihnen Linderung verschaffen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_00"); //Dignitary Innos, potrzebuje waszej pomocy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_01"); //Jakie sa Twoje obawy?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_02"); //Bracia chodzili do siebie tak, jakby opetani i prawie zabijali sie, podczas gdy inni ludzie byli powaznie chorzy po tym, jak nieswiadomie udzielali schronienia sludze zla.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_03"); //Mówisz, ze zly sluga zla? To brzmi jak swego rodzaju obsesja, która zostala rzucona na tych ludzi.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_04"); //Czy masz ku temu lekarstwo?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_05"); //Oczywiscie oczywiscie. Nie ma nic, co moze sie oprzec wszechmocowi naszego Pana Inno.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_06"); //No cóz, jestem ulga.....
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_07"); //Za mala darowizne na rzecz klasztoru dostarcze wam eliksiry, które wam pomoga.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_08"); //Darowizna! Ile?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_09"); //Ile osób cierpi na chorobe?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_15_10"); //Cóz, powinny byc trzy.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_11_11"); //Wtedy skromna darowizna 600 zlotych monet przyniesie im ulge.
 
 	Info_ClearChoices	(Info_Mod_Pyrokar_AkilsHof);
 
-	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Was?! 600 Goldmünzen?!", Info_Mod_Pyrokar_AkilsHof_B);
+	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Co? 600 zlotych monet!", Info_Mod_Pyrokar_AkilsHof_B);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 600)
 	{
-		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Na gut, hier ist das Gold.", Info_Mod_Pyrokar_AkilsHof_A);
+		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Wszystko dobrze, tutaj zloto.", Info_Mod_Pyrokar_AkilsHof_A);
 	};
 };
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_G()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_G_11_00"); //Der Segen unseres Herrn möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_G_11_00"); //Niech towarzyszy wam blogoslawienstwo naszego Pana.
 
 	B_GiveInvItems	(self, hero, ItPo_HealBesessenheit, 3);
 	
@@ -666,26 +666,26 @@ FUNC VOID Info_Mod_Pyrokar_AkilsHof_G()
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Ich habe das Heilmittel für die Erkrankten. Jetzt sollte ich mich damit beeilen es ihnen zu bringen.");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Mam lekarstwo dla chorych. Teraz powinienem spieszyc sie, zeby im to przyblizyc.");
 };
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_B()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_B_15_00"); //Was?! 600 Goldmünzen?!
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_B_11_01"); //Es ist eine angemessene Spende, die dazu verhelfen wird den Segen unseres Herrn Innos in die Welt hinauszutragen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_B_15_00"); //Co? 600 zlotych monet!
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_B_11_01"); //Jest to odpowiednia darowizna, która pomoze wprowadzic blogoslawienstwo naszego Pana Inno w swiat.
 	
 	Info_ClearChoices	(Info_Mod_Pyrokar_AkilsHof);
 
-	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Aber es geht um Leben und Tod (...)", Info_Mod_Pyrokar_AkilsHof_D);
+	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Ale to kwestia zycia i smierci (....). )", Info_Mod_Pyrokar_AkilsHof_D);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 600)
 	{
-		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Na gut, hier ist das Gold.", Info_Mod_Pyrokar_AkilsHof_A);
+		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Wszystko dobrze, tutaj zloto.", Info_Mod_Pyrokar_AkilsHof_A);
 	};
 };
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_A_15_00"); //Na gut, hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_A_15_00"); //Wszystko dobrze, tutaj zloto.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 600);
 
@@ -694,40 +694,40 @@ FUNC VOID Info_Mod_Pyrokar_AkilsHof_A()
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_D()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_D_15_00"); //Aber es geht um Le ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_D_11_01"); //(unterbricht etwas energisch) Wenn dein Anliegen von solcher Wichtigkeit ist, wirst du diese kleine Spende ohne Zweifel aufbringen können.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_D_15_00"); //Ale chodzi o Le....
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_D_11_01"); //Jesli Twoja prosba ma tak duze znaczenie, bez watpienia bedziesz w stanie podnosic te mala darowizne.
 	
 	Info_ClearChoices	(Info_Mod_Pyrokar_AkilsHof);
 
-	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Aber Akil ist doch gläubiger und rechtschaffener Mann.", Info_Mod_Pyrokar_AkilsHof_F);
+	Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Ale Akil jest wiernym i sprawiedliwym czlowiekiem.", Info_Mod_Pyrokar_AkilsHof_F);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 600)
 	{
-		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Na schön, ich bezahle.", Info_Mod_Pyrokar_AkilsHof_E);
+		Info_AddChoice	(Info_Mod_Pyrokar_AkilsHof, "Dobrze, zaplace.", Info_Mod_Pyrokar_AkilsHof_E);
 	};
 };
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_F()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_F_15_00"); //Aber Akil ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_F_11_01"); //(Wütend) Ich sagte (hält plötzlich inne) ... (zu sich selbst) ... was, Akil? Hmm, ein gläubiger Mann, spendet jeden Monat dem ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_F_11_02"); //(wieder zum Helden) ... ähh, die unermessliche Güte unseres Herrn Innos bewegt mich dazu, dir ohne jedes Entgelt die Tränke als Geschenk zu überreichen.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_F_15_00"); //Ale Akil....
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_F_11_01"); //Powiedzialem (oczekiwanie zatrzymuje sie)? (do siebie samego? co, Akil? Hmm, czlowiek wiary, co miesiac ofiarowuje co miesiac na....
+	AI_Output(self, hero, "Info_Mod_Pyrokar_AkilsHof_F_11_02"); //(znowu bohatera) ah, niezmierzona zyczliwosc naszego Pana Innosa motywuje mnie, abym dal ci eliksiry jako dar bez zadnych oplat.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_F_15_03"); //(Zu sich selbst) Na also, geht doch.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_F_15_03"); //Idziesz tam, tam idziesz.
 
 	Info_Mod_Pyrokar_AkilsHof_G();
 };
 
 FUNC VOID Info_Mod_Pyrokar_AkilsHof_E()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_E_15_00"); //Na schön, ich bezahle.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_E_15_00"); //Dobrze, zaplace.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 600);
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_E_15_01"); //(zu sich selbst) Halsabschneider.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_AkilsHof_E_15_01"); //(do siebie) Cutthroat.
 
 	AI_TurnToNpc	(hero, self);
 
@@ -742,7 +742,7 @@ INSTANCE Info_Mod_Pyrokar_Hexenfluch (C_INFO)
 	information	= Info_Mod_Pyrokar_Hexenfluch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hoher Magier des Feuers, ich trage so ein beklemmendes Gefühl in mir.";
+	description	= "Wysoki magik ognia, nosze we mnie tak opresyjne uczucie.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Hexenfluch_Condition()
@@ -757,18 +757,18 @@ FUNC INT Info_Mod_Pyrokar_Hexenfluch_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Hexenfluch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_15_00"); //Hoher Magier des Feuers, ich trage so ein beklemmendes Gefühl in mir.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_01"); //Ja, ich spüre auch, dass schwarze Magie auf dich gewirkt wurde. Was ist geschehen?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_15_02"); //Ein Weibsbild hat diesen Fluch auf mich gewirkt.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_03"); //Eine Frau?! Das klingt ja ganz ... nach Hexenwerk. Darüber werde ich eingehend nachdenken.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_04"); //Wie dem auch sei, für eine bescheidene Spende von 300 Goldmünzen werde ich dich mit einem Heilmittel ausstatten.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_15_00"); //Wysoki magik ognia, nosze we mnie tak opresyjne uczucie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_01"); //Tak, wyczuwam tez, ze czarna magia zostala rzucona na ciebie. Co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_15_02"); //Kobieta rzucila na mnie to przeklenstwo.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_03"); //Kobieta? To brzmi tak...... po czary. Daje temu duzo myslenia.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Hexenfluch_11_04"); //W kazdym razie, za skromna darowizne 300 monet zlota, udziele ci lekarstwa.
 
 	Info_ClearChoices	(Info_Mod_Pyrokar_Hexenfluch);
 
 	Info_AddChoice	(Info_Mod_Pyrokar_Hexenfluch, DIALOG_BACK, Info_Mod_Pyrokar_Hexenfluch_B);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 300)
 	{
-		Info_AddChoice	(Info_Mod_Pyrokar_Hexenfluch, "Hier das Gold.", Info_Mod_Pyrokar_Hexenfluch_A);
+		Info_AddChoice	(Info_Mod_Pyrokar_Hexenfluch, "Oto zloto.", Info_Mod_Pyrokar_Hexenfluch_A);
 	};
 };
 
@@ -779,7 +779,7 @@ FUNC VOID Info_Mod_Pyrokar_Hexenfluch_B()
 
 FUNC VOID Info_Mod_Pyrokar_Hexenfluch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_A_15_00"); //Hier das Gold.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Hexenfluch_A_15_00"); //Oto zloto.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 300);
 
@@ -801,7 +801,7 @@ INSTANCE Info_Mod_Pyrokar_Kimon (C_INFO)
 	information	= Info_Mod_Pyrokar_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Serpentes weigert sich, das Gold für die Trauben des Händlers Kimon zu zahlen.";
+	description	= "Serpentes odmawia zaplaty zlota za winogrona kupca Kimona.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Kimon_Condition()
@@ -816,12 +816,12 @@ FUNC INT Info_Mod_Pyrokar_Kimon_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Kimon_15_00"); //Serpentes weigert sich, das Gold für die Trauben des Händlers Kimon zu zahlen. Er hat 1000 Gold zu wenig bezahlt.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Kimon_11_01"); //Kannst du das beweisen?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Kimon_15_02"); //Nein ...
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Kimon_11_03"); //Dann komm wieder, wenn du es kannst!
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Kimon_15_00"); //Serpentes odmawia zaplaty zlota za winogrona kupca Kimona. Za malo zaplacil 1000 zlota.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Kimon_11_01"); //Czy moze pan to udowodnic?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Kimon_15_02"); //Nie.... Nie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Kimon_11_03"); //Wróc, kiedy tylko mozesz!
 
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Pyrokar will, dass ich ihm das Unrecht beweise. Ich sollte mal mit Kimon reden.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Pyrokar chce, abym udowodnil mu zlo. Powinienem porozmawiac z Kimonem.");
 };
 
 INSTANCE Info_Mod_Pyrokar_KimonGeld (C_INFO)
@@ -832,7 +832,7 @@ INSTANCE Info_Mod_Pyrokar_KimonGeld (C_INFO)
 	information	= Info_Mod_Pyrokar_KimonGeld_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist der Beleg.";
+	description	= "Oto rachunek.";
 };
 
 FUNC INT Info_Mod_Pyrokar_KimonGeld_Condition()
@@ -848,20 +848,20 @@ FUNC INT Info_Mod_Pyrokar_KimonGeld_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_KimonGeld_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_KimonGeld_15_00"); //Hier ist der Beleg.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_KimonGeld_15_00"); //Oto rachunek.
 
 	B_GiveInvItems	(hero, self, ItWr_KimonsBeleg, 1);
 
 	B_UseFakeScroll	();
 
-	AI_Output(hero, self, "Info_Mod_Pyrokar_KimonGeld_15_01"); //Nach myrthanischer Verordnung müssen Waren für das Doppelte ihres Wertes verkauft werden.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_KimonGeld_11_02"); //Gut, dann nimm das Gold und geh.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_KimonGeld_15_01"); //Zgodnie z przepisami mirhanickimi towary musza byc sprzedawane po dwukrotnosci ich wartosci.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_KimonGeld_11_02"); //Cóz, wez zloto i idz.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Pyrokar hat mir das Gold für Kimon gegeben. Ich sollte es ihm jetzt bringen.");
+	B_LogEntry	(TOPIC_MOD_KIMONSTRAUBEN, "Pyrokar dal mi zloto dla Kimona. Powinienem go teraz zabrac.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Kristall (C_INFO)
@@ -872,7 +872,7 @@ INSTANCE Info_Mod_Pyrokar_Kristall (C_INFO)
 	information	= Info_Mod_Pyrokar_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier einen wertvollen Kristall.";
+	description	= "Mam tu cenny krysztal.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Kristall_Condition()
@@ -887,22 +887,22 @@ FUNC INT Info_Mod_Pyrokar_Kristall_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Kristall_15_00"); //Ich habe hier einen wertvollen Kristall.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Kristall_15_00"); //Mam tu cenny krysztal.
 	
 	B_GiveInvItems	(hero, self, Mod_PaladinKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_01"); //Der Kristall der Paladine? Wie hast du ihn bekommen?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Kristall_15_02"); //Ich habe ihn von den Dieben in der Kanalisation erbeutet.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_03"); //Dass du ihn zu mir bringst, zeigt mir dein Vertrauen in unsere Gemeinschaft.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_01"); //Krysztal Paladynów? Jak ja otrzymales?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Kristall_15_02"); //Zdjalem go od zlodziei w kanale.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_03"); //Przynoszac go do mnie pokazuje mi twoje zaufanie do naszej spolecznosci.
 
 	if (Mod_Gilde == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_04"); //Wenn du willst, kannst du nun den Novizen beitreten.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Kristall_11_04"); //Jesli chcesz, mozesz teraz dolaczyc do nowicjuszy.
 	};
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_SÖLDNER, "Pyrokar ist bereit mich bei den Feuer Novizen aufzunehmen.", "Ich hab den Kristall Pyrokar gegeben. Torlof wird das sicherlich nicht sehr gefallen.");
+	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_SÖLDNER, "Pyrokar jest gotów przyjac mnie do nowicjuszy ognia.", "Podalem krysztal Pyrokarowi. Torlof nie spodoba sie zbytnio.");
 
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_FAILED);
 
@@ -917,7 +917,7 @@ INSTANCE Info_Mod_Pyrokar_Comeback (C_INFO)
 	information	= Info_Mod_Pyrokar_Comeback_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Innos zum Gruß, Ehrwürdiger.";
+	description	= "Innos, mój pelen szacunku przyjaciel.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Comeback_Condition()
@@ -930,18 +930,18 @@ FUNC INT Info_Mod_Pyrokar_Comeback_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Comeback_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_00"); //Innos zum Gruß, Ehrwürdiger.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_01"); //Was soll der Schmus? Sicher willst du was.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_02"); //Nun ja, ich könnte eine der alten Opferschalen gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_03"); //Bei Innos! Du willst den Klosterkeller entrümpeln. Nun gut. Aber für was brauchst du die Schale?
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_04"); //Eine Gruppe von Leuten will eine Spendensammlung organisieren. Für die Behinderten und die Armen ...
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_05"); //Man glaubt, dass bei so einem heiligen Gefäß mehr Gold aus den Beuteln der Menschen kommt.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_06"); //Das ist klug gedacht und löblich. Aber das Kloster schwimmt auch nicht gerade in Gold ...
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_07"); //Es ist beabsichtigt, ein Viertel des gesammelten Goldes dem Kloster zukommen zu lassen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_08"); //(gierig) Gut, gut. Ganz im Sinne Innos. Er wird seinen Segen geben. Du bekommst deine Schale. Sprich mit Gorax.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_09"); //Vielen Dank, Ehrwürdiger.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_00"); //Innos, mój pelen szacunku przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_01"); //Co z przytulaniem sie? Jasne, ze czegos chcesz.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_02"); //Cóz, móglbym uzyc jednej z tych starych miseczek ofiarniczych.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_03"); //W Innosie! Chcesz oczyscic klasztorna piwnice. Bardzo dobrze. Do czego potrzebujesz miski?
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_04"); //Grupa ludzi chce zorganizowac fundraisera. Dla osób niepelnosprawnych i ubogich....
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_05"); //Uwaza sie, ze z tak swietym naczyniem wiecej zlota pochodzi z worków mezczyzn.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_06"); //Jest to madrze przemyslane i godne pochwaly. Klasztor tez nie plynie w zlocie.....
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_07"); //Zloto ma zostac przekazane na rzecz klasztoru jedna czwarta zebranego zlota.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Comeback_11_08"); //Dobre, dobre, dobre, dobre. W duchu Inno. On da swoje blogoslawienstwo. Dostaniesz swoja miske. Porozmawiaj z Goraxem.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Comeback_15_09"); //Bardzo wam dziekuje, czcigodny.
 
-	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "Mit ein wenig Überzeugungskraft konnte ich Pyrokar eine der Opferschalen abschwatzen. Ich soll jetzt zu Gorax gehen.");
+	B_LogEntry	(TOPIC_MOD_ASS_COMEBACK, "Przy odrobinie przekonywujacej mocy bylem w stanie porozmawiac z Pyrokarem o jednej z misek ofiarniczych. Mam teraz udac sie do Goraxa.");
 };
 
 INSTANCE Info_Mod_Pyrokar_HyglasBack (C_INFO)
@@ -964,13 +964,13 @@ FUNC INT Info_Mod_Pyrokar_HyglasBack_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_HyglasBack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_00"); //Ahh, da bist du ja. Du hast uns tatsächlich unseren Bruder Hyglas lebend zurück gebracht.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_01"); //Das ist schon fast ein Wunder ... zumindest sehen das auch viele Menschen auf Khorinis so.
-	AI_Output(hero, self, "Info_Mod_Pyrokar_HyglasBack_15_02"); //Wird er jetzt wieder dem Kloster dienen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_03"); //Nein ... nicht direkt. Er hat sich für einen anderen Weg entschieden und will von nun an den weniger Privilegierten der Insel predigen und zur Seite stehen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_04"); //Mit persönlich wäre es zwar lieber gewesen, wenn er sich den Menschen aller Schichten gleichermaßen zuwenden würde ... aber, es ist nun mal sein Entschluss.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_05"); //Jedenfalls hast du für Innos gerechte Sache einen großen Dienst getan und sollst daher einen Teil unseres Klosterschatzes zur Belohnung bekommen.
-	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_06"); //Nutze dieses Gold im Sinne Innos.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_00"); //Ach, tam jestescie. W rzeczywistosci przywiózles do nas z powrotem naszego brata Hyglasa.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_01"); //To niemal cud..... Przynajmniej tyle osób w Khorinis widzi.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_HyglasBack_15_02"); //Czy bedzie teraz znów sluzyl klasztorowi?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_03"); //Nie.... Nie. nie bezposrednio. On wybral inna droge i od teraz chce glosic kazania i pomagac mniej uprzywilejowanym wyspie.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_04"); //Osobiscie lepiej byloby, gdyby zwracal sie on w równym stopniu do ludzi wszystkich klas spolecznych.... Wiecej Ale to jego decyzja.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_05"); //W kazdym razie, zrobiliscie wspaniala przysluge dla prawego Inno i powinniscie otrzymac czesc naszego skarbu klasztornego jako nagrode.
+	AI_Output(self, hero, "Info_Mod_Pyrokar_HyglasBack_11_06"); //Wykorzystaj to zloto w duchu Inno.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
@@ -1002,17 +1002,17 @@ FUNC INT Info_Mod_Pyrokar_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Pyrokar_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Pyrokar_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Pyrokar_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Pyrokar_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Pyrokar_LastPetzCounter);
 		
@@ -1027,42 +1027,42 @@ FUNC VOID Info_Mod_Pyrokar_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Pyrokar_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Pyrokar_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Pyrokar_LastPetzCrime == CRIME_THEFT)
 		|| ( (Pyrokar_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Pyrokar_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Pyrokar_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Pyrokar_Schulden			= 0;
 			Pyrokar_LastPetzCounter 	= 0;
@@ -1070,9 +1070,9 @@ FUNC VOID Info_Mod_Pyrokar_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Pyrokar_Schulden);
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PMSchulden_11_14"); //Co to jest?
 		};
 	};
 	
@@ -1081,27 +1081,27 @@ FUNC VOID Info_Mod_Pyrokar_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Pyrokar_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Pyrokar_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Pyrokar_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Ile to znów bylo?",Info_Mod_Pyrokar_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Pyrokar_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Pyrokar_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Pyrokar_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Pyrokar_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Pyrokar_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Pyrokar_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Pyrokar_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Pyrokar_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Pyrokar_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Pyrokar_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Pyrokar_PMSchulden,"Ile to znów bylo?",Info_Mod_Pyrokar_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Pyrokar_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Pyrokar_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Pyrokar_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
 	};
 };
 
@@ -1130,13 +1130,13 @@ FUNC VOID Info_Mod_Pyrokar_PETZMASTER_Info()
 	// ------ SC hat mit Pyrokar noch nicht gesprochen ------
 	if (B_GetAivar(self, AIV_TalkedToPlayer) == FALSE)
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_00"); //Du musst der Neue sein, der hier im Kloster Ärger gemacht hat.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_00"); //Musisz byc nowym facetem, który spowodowal klopoty w klasztorze.
 	};	
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Pyrokar_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -1144,42 +1144,42 @@ FUNC VOID Info_Mod_Pyrokar_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_04"); //Die meisten Magier werden einen Mörder im Kloster nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_04"); //Wiekszosc magów nie toleruje mordercy w klasztorze!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_06"); //Nie interesuje mnie to, ze moge panstwa umiescic na szubienicy.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_07"); //Ale nie bedzie latwo sprawic, by ludzie znów byli laskawi.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_08"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_09"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_10"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_11"); //Ich werde so ein Verhalten im Kloster nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_11"); //Nie bede tolerowal takiego zachowania w klasztorze!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_12"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Pyrokar_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_13"); //Wenn du dich mit den Leuten und der Stadt oder auf den Höfen anlegst, geht uns das nichts an.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_14"); //Aber wenn du Novizen oder Magier angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_13"); //Jesli meczycie sie z ludzmi, miastem lub podwórkiem, to nie jest to nasza dzialalnosc.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_14"); //Ale jesli zaatakujesz nowicjuszy lub magów, bede musial Cie pociagnac do odpowiedzialnosci.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_15"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_16"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_17"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Pyrokar_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -1187,14 +1187,14 @@ FUNC VOID Info_Mod_Pyrokar_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_18"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_19"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_11_20"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Pyrokar_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_15_21"); //Ile?
 	
 	if (Pyrokar_Schulden > 1000)	{	Pyrokar_Schulden = 1000;	};
 		
@@ -1202,18 +1202,18 @@ FUNC VOID Info_Mod_Pyrokar_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Pyrokar_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Pyrokar_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Pyrokar_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Pyrokar_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Pyrokar_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Pyrokar_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Pyrokar_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Pyrokar_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Pyrokar_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Pyrokar_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Pyrokar_Schulden);
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayNow_11_01"); //Gut! Ich werde dafür sorgen, dass es jeder im Kloster erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayNow_11_01"); //Dobrze! Doloze wszelkich staran, aby wszyscy w klasztorze sie o tym dowiedzieli - to w pewnym stopniu przywróci Twoja reputacje.
 
 	B_GrantAbsolution (LOC_MONASTERY);
 	
@@ -1227,9 +1227,9 @@ func void Info_Mod_Pyrokar_PETZMASTER_PayNow()
 
 func void Info_Mod_Pyrokar_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Pyrokar_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Pyrokar_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -1245,7 +1245,7 @@ INSTANCE Info_Mod_Pyrokar_Lehrer (C_INFO)
 	information	= Info_Mod_Pyrokar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer kann mir beibringen meine magische Kraft zu erhöhen?";
+	description	= "Kto moze mnie nauczyc jak zwiekszyc swoja magiczna moc?";
 };
 
 FUNC INT Info_Mod_Pyrokar_Lehrer_Condition()
@@ -1260,11 +1260,11 @@ FUNC INT Info_Mod_Pyrokar_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Lehrer_15_00"); //Wer kann mir beibringen meine magische Kraft zu erhöhen?
-	AI_Output(self, hero, "Info_Mod_Pyrokar_Lehrer_11_01"); //Ich kann dir beibringen deine magische Kraft zu steigern.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Lehrer_15_00"); //Kto moze mnie nauczyc jak zwiekszyc swoja magiczna moc?
+	AI_Output(self, hero, "Info_Mod_Pyrokar_Lehrer_11_01"); //Moge cie nauczyc, jak zwiekszyc swoja magiczna moc.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KLOSTER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Pyrokar kann mir beibringen meine MANA zu steigern.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Pyrokar moze mnie nauczyc, jak pobudzic MANA.");
 };
 
 INSTANCE Info_Mod_Pyrokar_Lernen (C_INFO)
@@ -1275,7 +1275,7 @@ INSTANCE Info_Mod_Pyrokar_Lernen (C_INFO)
 	information	= Info_Mod_Pyrokar_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Naucz mnie czegos.";
 };
 
 FUNC INT Info_Mod_Pyrokar_Lernen_Condition()
@@ -1291,7 +1291,7 @@ FUNC INT Info_Mod_Pyrokar_Lernen_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Pyrokar_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Pyrokar_Lernen_15_00"); //Naucz mnie czegos.
 
 	Info_ClearChoices	(Info_Mod_Pyrokar_Lernen);
 
@@ -1304,7 +1304,7 @@ FUNC VOID Info_Mod_Pyrokar_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX]	>=	300)
 	{
-		AI_Output(self, hero, "Info_Mod_Pyrokar_Lernen_BACK_05_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Pyrokar_Lernen_BACK_05_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Pyrokar_Lernen);
 };
@@ -1464,7 +1464,7 @@ FUNC INT Info_Mod_Pyrokar_EXIT_Condition()
 
 FUNC VOID Info_Mod_Pyrokar_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Pyrokar_EXIT_11_00"); //Möge Innos deinen Weg erleuchten!
+	AI_Output(self, hero, "Info_Mod_Pyrokar_EXIT_11_00"); //Niech Innos oswieci Twoja droge!
 
 	AI_StopProcessInfos	(self);
 };

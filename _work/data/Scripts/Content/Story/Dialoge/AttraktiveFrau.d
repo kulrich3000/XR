@@ -15,24 +15,24 @@ FUNC INT Info_Mod_AttraktiveFrau_Hi_Condition()
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_17_00"); //(verführerisch) Hallo, mein Schöner. Was macht ein prächtiger Kerl wie du ohne weibliche Begleitung in dieser Spelunke?
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_17_01"); //Willst du mir nicht etwas Gesellschaft leisten?
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_17_00"); //Witaj, przystojny. Co to jest wspanialy facet, jak to robisz w tym nurkowaniu bez zenskiej eskorty?
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_17_01"); //Czy nie dolaczysz do mnie troche?
 
 	Info_ClearChoices	(Info_Mod_AttraktiveFrau_Hi);
 
-	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Nein, ich habe zu tun und muss weiter.", Info_Mod_AttraktiveFrau_Hi_B);
-	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Ja, aber immer doch.", Info_Mod_AttraktiveFrau_Hi_A);
+	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Nie, jestem zajety i musze jechac dalej.", Info_Mod_AttraktiveFrau_Hi_B);
+	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Tak, ale zawsze.", Info_Mod_AttraktiveFrau_Hi_A);
 };
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_C_17_00"); //(verführerisch) Ich spüre, dass dich eine ganz besondere Aura umgibt.
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_C_17_01"); //(nachdenklich, sachlicher) Du bist kein gewöhnlicher Mann ... (hält kurz inne, wieder verführerisch) Wollen wir nicht aufs Zimmer gehen und uns etwas näher kennen lernen?
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_C_17_00"); //Czuje, ze jestes otoczony wyjatkowa aura.
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_C_17_01"); //Nie jestes zwyklym czlowiekiem.... Czy nie pójdziemy do pokoju i nie poznamy sie troche lepiej?
 	
 	Info_ClearChoices	(Info_Mod_AttraktiveFrau_Hi);
 
-	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Nein, ich muss jetzt wirklich weiter.", Info_Mod_AttraktiveFrau_Hi_E);
-	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Warum nicht, gehen wir.", Info_Mod_AttraktiveFrau_Hi_D);
+	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Naprawde musze zaczac dzialac.", Info_Mod_AttraktiveFrau_Hi_E);
+	Info_AddChoice	(Info_Mod_AttraktiveFrau_Hi, "Dlaczego nie, odejdzmy.", Info_Mod_AttraktiveFrau_Hi_D);
 };
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_F()
@@ -51,23 +51,23 @@ FUNC VOID Info_Mod_AttraktiveFrau_Hi_F()
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_B_15_00"); //Nein, ich habe zu tun und muss weiter.
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_B_17_01"); //Aber, aber, es gehört sich nicht, einer Frau so einen Gefallen abzuschlagen.
+	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_B_15_00"); //Nie, jestem zajety i musze jechac dalej.
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_B_17_01"); //Ale nie jest jednak sluszne robienie takiej laski kobiecie.
 	
 	Info_Mod_AttraktiveFrau_Hi_C();
 };
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_A_15_00"); //Ja, aber immer doch.
+	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_A_15_00"); //Tak, ale zawsze.
 	
 	Info_Mod_AttraktiveFrau_Hi_C();
 };
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_E_15_00"); //Nein, ich muss jetzt wirklich weiter.
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_E_17_01"); //(lächelnd) Ich höre doch an deiner Stimme, dass du nur mit mir spielst. Kommst du jetzt endlich?
+	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_E_15_00"); //Naprawde musze zaczac dzialac.
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_E_17_01"); //Slysze w twoim glosie, ze tylko bawisz sie ze mna. Czy przyjdzie Pan dalej, prosze?
 
 	Mod_AttraktiveFrau = 1;
 	
@@ -76,8 +76,8 @@ FUNC VOID Info_Mod_AttraktiveFrau_Hi_E()
 
 FUNC VOID Info_Mod_AttraktiveFrau_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_D_15_00"); //Warum nicht, gehen wir.
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_D_17_01"); //Dann folge mir einfach.
+	AI_Output(hero, self, "Info_Mod_AttraktiveFrau_Hi_D_15_00"); //Dlaczego nie, odejdzmy.
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Hi_D_17_01"); //Wtedy pójdz za mna.
 
 	Mod_AttraktiveFrau = 2;
 	
@@ -105,7 +105,7 @@ FUNC INT Info_Mod_AttraktiveFrau_Sex_Condition()
 
 FUNC VOID Info_Mod_AttraktiveFrau_Sex_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Sex_17_00"); //So, und nun entkleide dich. Es wird eine unvergessliche Nacht für dich werden.
+	AI_Output(self, hero, "Info_Mod_AttraktiveFrau_Sex_17_00"); //Teraz rozebrac sie. Bedzie to dla Ciebie niezapomniana noc.
 
 	Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -123,15 +123,15 @@ FUNC VOID Info_Mod_AttraktiveFrau_Sex_Info()
 
 	if (Mod_AttraktiveFrau == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Verdammt, ich fühle mich alles andere als wohl. Aber ich war einfach nicht in der Lage dazu, mich ihrem Willen zu widersetzen.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Damn, wcale nie czuje sie dobrze. Ale po prostu nie bylem w stanie oprzec sie ich woli.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Verdammt, ich fühle mich alles andere als wohl. Worauf habe ich mich da nur eingelassen ...");
+		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Damn, wcale nie czuje sie dobrze. W co sie zaangazowalem?");
 	};
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Ich sollte auf jeden Fall einen heilkundigen Magier aufsuchen und danach Saturas davon berichten.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Zdecydowanie powinienem odwiedzic maga uzdrawiajacego, a nastepnie opowiedziec o tym Saturasowi.");
 		
-	Spine_OverallSaveSetInt("HexeSex", 1);
+	Spine_OverallSaveSetInt("czarownica", 1);
 	CheckSexAchievement();
 };

@@ -3,7 +3,7 @@
 //**************************************
 	INSTANCE MobsiBrief		(C_Item)
 {
-	name 				=	"MobsiBrief";
+	name 				=	"MobsiLter";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -28,19 +28,19 @@ func void UseMobsiBrief ()
 					Doc_SetPage		(nDocID,  0, "letters.TGA", 0);
 					Doc_SetFont		(nDocID,  0, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
-					Doc_PrintLine	(nDocID,  0, "StandardBrief"									);
+					Doc_PrintLine	(nDocID,  0, "Standardowy list"									);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "Jetzt wird alles wieder gut"						);
+					Doc_PrintLines	(nDocID,  0, "Teraz wszystko bedzie w porzadku"						);
 					Doc_PrintLines	(nDocID,  0, "PLAYER_MOBSI_PRODUCTION = MOBSI_NONE;"			);
-					Doc_PrintLines	(nDocID,  0, "self.aivar[AIV_INVINCIBLE] = FALSE;"				);
+					Doc_PrintLines	(nDocID,  0, "jazn. aivar[AIV_INVINCIBLE] = FALSE;"				);
 					Doc_Show		(nDocID);
 };
 
 INSTANCE CH (NPC_DEFAULT)
 {
 // ------ NSC ------
-	name 		= "Characterhelper";
+	name 		= "pomocnik";
 	guild 		= GIL_NONE;
 	id 			= 0;
 	voice 		= 15;
@@ -96,9 +96,9 @@ func void B_SetHeroExp()
     hero.attribute[ATR_HITPOINTS_MAX] = 40 + (10* hero.level);
     hero.attribute[ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
   
-    Attributes = "Level Up!  Lernpunkte:";
+    Attributes = "Poziomuj do góry! Punkty edukacyjne:";
     Attributes = ConcatStrings(Attributes, IntToString(hero.LP));
-    Attributes = ConcatStrings(Attributes, "  Hitpoints:");
+    Attributes = ConcatStrings(Attributes, "  Punkty odniesienia:");
     Attributes = ConcatStrings(Attributes, IntToString(hero.attribute[ATR_HITPOINTS_MAX]));
     
     PrintScreen	(Attributes, -1,-1,FONT_Screen,3);
@@ -254,7 +254,7 @@ instance  CH_kriegen (C_INFO)
 	condition	=  CH_kriegen_Condition;
 	information	=  CH_kriegen_Info;
 	permanent	=  TRUE;
-	description = "1 Erz geben";
+	description = "1 Dawanie rudy";
 };                       
 
 FUNC int  CH_kriegen_Condition()
@@ -314,7 +314,7 @@ instance  CH_RESET (C_INFO)
 	condition	=  CH_RESET_Condition;
 	information	=  CH_RESET_Info;
 	permanent 	=  TRUE;
-	description = "Totaler Reset";
+	description = "Calkowity reset";
 };                       
 
 FUNC int  CH_RESET_Condition()
@@ -366,7 +366,7 @@ FUNC VOID  CH_RESET_Info()
 	
 	AI_UnequipArmor (hero); 
 	
-	PrintScreen ("PC_Hero wieder hergestellt", - 1, - 1, FONT_Screen, 2);   
+	PrintScreen ("PC_ero przywrócony", - 1, - 1, FONT_Screen, 2);   
 	
 };
 
@@ -382,7 +382,7 @@ INSTANCE CH_Language (C_INFO)
 	information		= CH_Language_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sprache lernen"; 
+	description		= "Nauka jezyków obcych"; 
 };
 
 FUNC INT CH_Language_Condition()
@@ -396,9 +396,9 @@ func VOID CH_Language_Info()
 {
 	Info_ClearChoices	(CH_Language);
 	Info_AddChoice	(CH_Language, DIALOG_BACK, CH_Language_BACK );
-	Info_AddChoice	(CH_Language, "Sprache der Priester (3)", CH_Language_Priest );
-	Info_AddChoice	(CH_Language, "Sprache der Krieger (2)", CH_Language_Warrior );
-	Info_AddChoice	(CH_Language, "Sprache der Bauern (1)", CH_Language_Peasant );
+	Info_AddChoice	(CH_Language, "Jezyk ksiezy (3)", CH_Language_Priest );
+	Info_AddChoice	(CH_Language, "Jezyk wojowników (2)", CH_Language_Warrior );
+	Info_AddChoice	(CH_Language, "Jezyk rolniczy (1)", CH_Language_Peasant );
 };
 func void CH_Language_BACK ()
 {
@@ -433,7 +433,7 @@ INSTANCE CH_Guild (C_INFO)
 	information		= CH_Guild_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Gildenwahl"; 
+	description		= "selekcja cechów"; 
 };
 
 FUNC INT CH_Guild_Condition()
@@ -449,12 +449,12 @@ func VOID CH_Guild_Info()
     Info_AddChoice	(CH_Guild, DIALOG_BACK		, CH_Guild_BACK);
     Info_AddChoice	(CH_Guild, "Novize"      	, CH_NOV);	    
     Info_AddChoice	(CH_Guild, "KDF"       		, CH_KDF);   
-    Info_AddChoice	(CH_Guild, "Söldner"   		, CH_SLD);
-    Info_AddChoice	(CH_Guild, "Drachenjäger"       , CH_DJG);
+    Info_AddChoice	(CH_Guild, "najemnicy"   		, CH_SLD);
+    Info_AddChoice	(CH_Guild, "mysliwy smok"       , CH_DJG);
     Info_AddChoice	(CH_Guild, "Miliz"       	, CH_MIL);    
     Info_AddChoice	(CH_Guild, "Paladin"  		, CH_PAL);
-    Info_AddChoice	(CH_Guild, "None"        	, CH_NONE);
-    Info_AddChoice 	(CH_Guild, "Fake Bandit"        , CH_FakeBandit);	    
+    Info_AddChoice	(CH_Guild, "dziewiaty"        	, CH_NONE);
+    Info_AddChoice 	(CH_Guild, "Falszywy Bandit"        , CH_FakeBandit);	    
 };
 func void CH_Guild_BACK()
 {
@@ -552,7 +552,7 @@ INSTANCE CH_Level_Start (C_INFO)
 	npc				= CH;
 	condition		= CH_Level_Start_Condition;
 	information		= CH_Level_Start_Info;
-	description		= "Level, Lernpunkte und Gilde"; 
+	description		= "Poziomy, punkty nauki i umiejetnosci"; 
 	permanent		=  TRUE;
 };
 
@@ -606,7 +606,7 @@ INSTANCE CH_Lernpunkte (C_INFO)
 	nr 				=  5;
 	condition		= CH_Lernpunkte_Condition;
 	information		= CH_Lernpunkte_Info;
-	description		= "Lernpunkte"; 
+	description		= "uczenie sie"; 
 	permanent		=  TRUE;
 };
 
@@ -622,10 +622,10 @@ func VOID CH_Lernpunkte_Info()
 	Info_ClearChoices (CH_Lernpunkte);
 	
 	Info_AddChoice (CH_Lernpunkte,DIALOG_BACK      ,CH_Lernpunkte_BACK);
-	Info_AddChoice (CH_Lernpunkte,"Lernpunkte + 50",CH_Lernpunkte_50);
-	Info_AddChoice (CH_Lernpunkte,"Lernpunkte + 25",CH_Lernpunkte_25);
-	Info_AddChoice (CH_Lernpunkte,"Lernpunkte + 10",CH_Lernpunkte_10);
-	Info_AddChoice (CH_Lernpunkte,"Lernpunkte + 5 ",CH_Lernpunkte_5);
+	Info_AddChoice (CH_Lernpunkte,"Punkty + 50 pkt.",CH_Lernpunkte_50);
+	Info_AddChoice (CH_Lernpunkte,"Punkty + 25 pkt.",CH_Lernpunkte_25);
+	Info_AddChoice (CH_Lernpunkte,"Punkty nauki + 10 punktów nauczania",CH_Lernpunkte_10);
+	Info_AddChoice (CH_Lernpunkte,"Punkty nauki + 5 pkt. ",CH_Lernpunkte_5);
 };
 FUNC VOID CH_Lernpunkte_BACK ()
 {
@@ -637,7 +637,7 @@ FUNC VOID CH_Lernpunkte_50 ()
 	Info_ClearChoices (CH_Lernpunkte);
 	
 	hero.LP = (hero.LP + 50);
-	PrintScreen  ("+ 50 Lernpunkte", -1,-1,FONT_Screen,3);
+	PrintScreen  ("+ 50 punktów nauki", -1,-1,FONT_Screen,3);
 	Snd_Play ("LEVELUP");    
 };
 FUNC VOID CH_Lernpunkte_25 ()
@@ -645,7 +645,7 @@ FUNC VOID CH_Lernpunkte_25 ()
 	Info_ClearChoices (CH_Lernpunkte);
 	
 	hero.LP = (hero.LP + 25);
-	PrintScreen  ("+ 25 Lernpunkte", -1,-1,FONT_Screen,3);
+	PrintScreen  ("25 + 25 punktów nauki", -1,-1,FONT_Screen,3);
 	 Snd_Play ("LEVELUP");    
 };
 FUNC VOID CH_Lernpunkte_10 ()
@@ -653,7 +653,7 @@ FUNC VOID CH_Lernpunkte_10 ()
 	Info_ClearChoices (CH_Lernpunkte);
 	
 	hero.LP = (hero.LP + 10);
-	PrintScreen  ("+ 10 Lernpunkte", -1,-1,FONT_Screen,3);
+	PrintScreen  ("10 punktów nauki", -1,-1,FONT_Screen,3);
 	 Snd_Play ("LEVELUP");    
 };
 FUNC VOID CH_Lernpunkte_5 ()
@@ -661,7 +661,7 @@ FUNC VOID CH_Lernpunkte_5 ()
 	Info_ClearChoices (CH_Lernpunkte);
 	
 	hero.LP = (hero.LP + 5);
-	PrintScreen  ("+ 5 Lernpunkte", -1,-1,FONT_Screen,3);
+	PrintScreen  ("5 punktów nauki", -1,-1,FONT_Screen,3);
 	 Snd_Play ("LEVELUP");    
 };
 //***************************************************************************
@@ -673,7 +673,7 @@ INSTANCE CH_Level_niedrig (C_INFO)
 	nr 				=  2;
 	condition		= CH_Level_niedrig_Condition;
 	information		= CH_Level_niedrig_Info;
-	description		= "Level Wahl 1 - 25"; 
+	description		= "Poziom Wybór 1 - 25"; 
 	permanent		=  TRUE;
 };
 
@@ -691,11 +691,11 @@ func VOID CH_Level_niedrig_Info()
 	
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK	   , CH_Level_niedrig_BACK);
 	
-	Info_AddChoice		(CH_Level_niedrig, "Level 21 - 25" , CH_Level21);
-	Info_AddChoice		(CH_Level_niedrig, "Level 16 - 20" , CH_Level16);
-	Info_AddChoice		(CH_Level_niedrig, "Level 11 - 15" , CH_Level11);
-	Info_AddChoice		(CH_Level_niedrig, "Level  6 - 10" , CH_Level6);
-	Info_AddChoice		(CH_Level_niedrig, "Level  1 -  5" , CH_Level1);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 21 - 25" , CH_Level21);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 16 - 20" , CH_Level16);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 11-15" , CH_Level11);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 6 - 10" , CH_Level6);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 1 - 5" , CH_Level1);
 
 };
 //***************************************************************************
@@ -707,7 +707,7 @@ INSTANCE CH_Level_hoch (C_INFO)
 	nr 				=  3;
 	condition		= CH_Level_hoch_Condition;
 	information		= CH_Level_hoch_Info;
-	description		= "Level Wahl 26 - 50"; 
+	description		= "Poziom Wybór 26 - 50"; 
 	permanent		=  TRUE;
 };
 
@@ -725,11 +725,11 @@ func VOID CH_Level_hoch_Info()
 	
 	Info_AddChoice		(CH_Level_hoch, DIALOG_BACK	   , CH_Level_hoch_BACK);
 	
-	Info_AddChoice		(CH_Level_hoch, "Level 46 - 50" , CH_Level46);
-	Info_AddChoice		(CH_Level_hoch, "Level 41 - 45" , CH_Level41);
-	Info_AddChoice		(CH_Level_hoch, "Level 36 - 40" , CH_Level36);
-	Info_AddChoice		(CH_Level_hoch, "Level 31 - 35" , CH_Level31);
-	Info_AddChoice		(CH_Level_hoch, "Level 26 - 30" , CH_Level26);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 46 - 50" , CH_Level46);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 41 - 45" , CH_Level41);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 36 - 40" , CH_Level36);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 31 - 35" , CH_Level31);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 26 - 30" , CH_Level26);
 };
 //***************************************************************************
 //	Level Funcs
@@ -739,44 +739,44 @@ func void CH_Level46()
 	Info_ClearChoices	(CH_Level_hoch);
 	
 	Info_AddChoice		(CH_Level_hoch,DIALOG_BACK	, CH_Level_hoch_BACK);
-	Info_AddChoice		(CH_Level_hoch, "Level 50" , CH_Level_50);
-	Info_AddChoice		(CH_Level_hoch, "Level 49" , CH_Level_49);
-	Info_AddChoice		(CH_Level_hoch, "Level 48" , CH_Level_48);
-	Info_AddChoice		(CH_Level_hoch, "Level 47" , CH_Level_47);
-	Info_AddChoice		(CH_Level_hoch, "Level 46" , CH_Level_46);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 50" , CH_Level_50);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 49 Poziom" , CH_Level_49);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 48" , CH_Level_48);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 47 Poziom 47" , CH_Level_47);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 46 Poziom" , CH_Level_46);
 };
 func void CH_Level41()
 {
 	Info_ClearChoices	(CH_Level_hoch);
 	
 	Info_AddChoice		(CH_Level_hoch,DIALOG_BACK	, CH_Level_hoch_BACK);
-	Info_AddChoice		(CH_Level_hoch, "Level 45" , CH_Level_45);
-	Info_AddChoice		(CH_Level_hoch, "Level 44" , CH_Level_44);
-	Info_AddChoice		(CH_Level_hoch, "Level 43" , CH_Level_43);
-	Info_AddChoice		(CH_Level_hoch, "Level 42" , CH_Level_42);
-	Info_AddChoice		(CH_Level_hoch, "Level 41" , CH_Level_41);
+	Info_AddChoice		(CH_Level_hoch, "Poziom zaawansowany" , CH_Level_45);
+	Info_AddChoice		(CH_Level_hoch, "Poziom zaawansowany 44" , CH_Level_44);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 43 Poziom 43" , CH_Level_43);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 42 Poziom 42" , CH_Level_42);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 41 Poziom 41" , CH_Level_41);
 };
 func void CH_Level36()
 {
 	Info_ClearChoices	(CH_Level_hoch);
 	
 	Info_AddChoice		(CH_Level_hoch,DIALOG_BACK	, CH_Level_hoch_BACK);
-	Info_AddChoice		(CH_Level_hoch, "Level 40" , CH_Level_40);
-	Info_AddChoice		(CH_Level_hoch, "Level 39" , CH_Level_39);
-	Info_AddChoice		(CH_Level_hoch, "Level 38" , CH_Level_38);
-	Info_AddChoice		(CH_Level_hoch, "Level 37" , CH_Level_37);
-	Info_AddChoice		(CH_Level_hoch, "Level 36" , CH_Level_36);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 40" , CH_Level_40);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 39" , CH_Level_39);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 38" , CH_Level_38);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 37 Poziom 37" , CH_Level_37);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 36 Poziom" , CH_Level_36);
 };
 func void CH_Level31()
 {
 	Info_ClearChoices	(CH_Level_hoch);
 	
 	Info_AddChoice		(CH_Level_hoch,DIALOG_BACK	, CH_Level_hoch_BACK);
-	Info_AddChoice		(CH_Level_hoch, "Level 35" , CH_Level_35);
-	Info_AddChoice		(CH_Level_hoch, "Level 34" , CH_Level_34);
-	Info_AddChoice		(CH_Level_hoch, "Level 33" , CH_Level_33);
-	Info_AddChoice		(CH_Level_hoch, "Level 32" , CH_Level_32);
-	Info_AddChoice		(CH_Level_hoch, "Level 31" , CH_Level_31);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 35" , CH_Level_35);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 34 Poziom" , CH_Level_34);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 33 Poziom" , CH_Level_33);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 32 Poziom 32" , CH_Level_32);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 31" , CH_Level_31);
 };
 
 func void CH_Level26()
@@ -784,22 +784,22 @@ func void CH_Level26()
 	Info_ClearChoices	(CH_Level_hoch);
 	
 	Info_AddChoice		(CH_Level_hoch,DIALOG_BACK	, CH_Level_hoch_BACK);
-	Info_AddChoice		(CH_Level_hoch, "Level 30" , CH_Level_30);
-	Info_AddChoice		(CH_Level_hoch, "Level 29" , CH_Level_29);
-	Info_AddChoice		(CH_Level_hoch, "Level 28" , CH_Level_28);
-	Info_AddChoice		(CH_Level_hoch, "Level 27" , CH_Level_27);
-	Info_AddChoice		(CH_Level_hoch, "Level 26" , CH_Level_26);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 30" , CH_Level_30);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 29 Poziom" , CH_Level_29);
+	Info_AddChoice		(CH_Level_hoch, "Poziom" , CH_Level_28);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 27 Poziom 27" , CH_Level_27);
+	Info_AddChoice		(CH_Level_hoch, "Poziom 26" , CH_Level_26);
 };  
 func void CH_Level21()
 {
 	Info_ClearChoices	(CH_Level_niedrig);
 	
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK		, CH_Level_niedrig_BACK);
-	Info_AddChoice		(CH_Level_niedrig, "Level 25" , CH_Level_25);
-	Info_AddChoice		(CH_Level_niedrig, "Level 24" , CH_Level_24);
-	Info_AddChoice		(CH_Level_niedrig, "Level 23" , CH_Level_23);
-	Info_AddChoice		(CH_Level_niedrig, "Level 22" , CH_Level_22);
-	Info_AddChoice		(CH_Level_niedrig, "Level 21" , CH_Level_21);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 25 Poziom" , CH_Level_25);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 24 Poziom 24" , CH_Level_24);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 23 Poziom" , CH_Level_23);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 22 Poziom 22" , CH_Level_22);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 21 Poziom 21 Poziom" , CH_Level_21);
 	
 };  
 func void CH_Level16()
@@ -807,11 +807,11 @@ func void CH_Level16()
 	Info_ClearChoices	(CH_Level_niedrig);
 	
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK		, CH_Level_niedrig_BACK);
-	Info_AddChoice		(CH_Level_niedrig, "Level 20" , CH_Level_20);
-	Info_AddChoice		(CH_Level_niedrig, "Level 19" , CH_Level_19);
-	Info_AddChoice		(CH_Level_niedrig, "Level 18" , CH_Level_18);
-	Info_AddChoice		(CH_Level_niedrig, "Level 17" , CH_Level_17);
-	Info_AddChoice		(CH_Level_niedrig, "Level 16" , CH_Level_16);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 20" , CH_Level_20);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 19 Poziom 19" , CH_Level_19);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 18 Poziom 18" , CH_Level_18);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 17 Poziom" , CH_Level_17);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 16 Poziom" , CH_Level_16);
 };
 
 func void CH_Level11()
@@ -819,22 +819,22 @@ func void CH_Level11()
 	Info_ClearChoices	(CH_Level_niedrig);
 
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK		, CH_Level_niedrig_BACK);
-	Info_AddChoice		(CH_Level_niedrig, "Level 15" , CH_Level_15);
-	Info_AddChoice		(CH_Level_niedrig, "Level 14" , CH_Level_14);
-	Info_AddChoice		(CH_Level_niedrig, "Level 13" , CH_Level_13);
-	Info_AddChoice		(CH_Level_niedrig, "Level 12" , CH_Level_12);
-	Info_AddChoice		(CH_Level_niedrig, "Level 11" , CH_Level_11);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 15" , CH_Level_15);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 14" , CH_Level_14);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 13" , CH_Level_13);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 12 Poziom 12" , CH_Level_12);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 11 Poziom 11" , CH_Level_11);
 };
 func void CH_Level6()
 {
 	Info_ClearChoices	(CH_Level_niedrig);
 
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK	    , CH_Level_niedrig_BACK);
-	Info_AddChoice		(CH_Level_niedrig, "Level 10" , CH_Level_10);
-	Info_AddChoice		(CH_Level_niedrig, "Level  9" , CH_Level_9);
-	Info_AddChoice		(CH_Level_niedrig, "Level  8" , CH_Level_8);
-	Info_AddChoice		(CH_Level_niedrig, "Level  7" , CH_Level_7);
-	Info_AddChoice		(CH_Level_niedrig, "Level  6" , CH_Level_6);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 10" , CH_Level_10);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 9" , CH_Level_9);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 8" , CH_Level_8);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 7" , CH_Level_7);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 6" , CH_Level_6);
 };
 
 func void CH_Level1()
@@ -842,11 +842,11 @@ func void CH_Level1()
 	Info_ClearChoices	(CH_Level_niedrig);
 
 	Info_AddChoice		(CH_Level_niedrig, DIALOG_BACK		, CH_Level_niedrig_BACK);
-	Info_AddChoice		(CH_Level_niedrig, "Level 5" 	, CH_Level_5);
-	Info_AddChoice		(CH_Level_niedrig, "Level 4" 	, CH_Level_4);
-	Info_AddChoice		(CH_Level_niedrig, "Level 3" 	, CH_Level_3);
-	Info_AddChoice		(CH_Level_niedrig, "Level 2" 	, CH_Level_2);
-	Info_AddChoice		(CH_Level_niedrig, "Level 1" 	, CH_Level_1);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 5" 	, CH_Level_5);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 4" 	, CH_Level_4);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 3" 	, CH_Level_3);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 2 Poziom 2" 	, CH_Level_2);
+	Info_AddChoice		(CH_Level_niedrig, "Poziom 1" 	, CH_Level_1);
 };
 func void CH_Level_niedrig_BACK()
 {
@@ -1428,7 +1428,7 @@ INSTANCE DIA_CH_Attribute_Start (C_INFO)
 	condition	= DIA_CH_Attribute_Start_Condition;
 	information	= DIA_CH_Attribute_Start_Info;
 	permanent	= TRUE;
-	description = "Stärke und Geschick";
+	description = "Moc i umiejetnosci";
 };                       
 
 FUNC INT DIA_CH_Attribute_Start_Condition()
@@ -1481,7 +1481,7 @@ INSTANCE DIA_CH_Strength (C_INFO)
 	condition	= DIA_CH_Strength_Condition;
 	information	= DIA_CH_Strength_Info;
 	permanent	= TRUE;
-	description = "Stärke steigern";
+	description = "zwiekszenie wytrzymalosci";
 };                       
 
 FUNC INT DIA_CH_Strength_Condition()
@@ -1496,10 +1496,10 @@ FUNC VOID DIA_CH_Strength_Info()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 	
 	
 };
@@ -1514,10 +1514,10 @@ FUNC VOID DIA_CH_Strength_1()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_5()
 {
@@ -1526,10 +1526,10 @@ FUNC VOID DIA_CH_Strength_5()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_10()
 {
@@ -1538,10 +1538,10 @@ FUNC VOID DIA_CH_Strength_10()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 FUNC VOID DIA_CH_Strength_20()
 {
@@ -1550,10 +1550,10 @@ FUNC VOID DIA_CH_Strength_20()
 	Info_ClearChoices (DIA_CH_Strength);
 	Info_AddChoice 	  (DIA_CH_Strength, DIALOG_BACK, DIA_CH_Strength_BACK);
 	
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
-	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Stärke + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 20"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*20)		,DIA_CH_Strength_20);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 10"		, B_GetLearnCostAttribute(other, ATR_STRENGTH)*10)		,DIA_CH_Strength_10);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 5"			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_CH_Strength_5);
+	Info_AddChoice	  (DIA_CH_Strength, B_BuildLearnString("Wytrzymalosc + 1"			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_CH_Strength_1);
 };
 //******************************************************************************************
 // Attribut Geschicklichkeit 
@@ -1565,7 +1565,7 @@ INSTANCE DIA_CH_Dex (C_INFO)
 	condition	= DIA_CH_Dex_Condition;
 	information	= DIA_CH_Dex_Info;
 	permanent	= TRUE;
-	description = "Geschicklichkeit steigern";
+	description = "Zwiekszenie zrecznosci";
 };                       
 
 FUNC INT DIA_CH_Dex_Condition()
@@ -1580,10 +1580,10 @@ FUNC VOID DIA_CH_Dex_Info()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice 	  (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosc + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 FUNC VOID DIA_CH_Dex_BACK()
 {
@@ -1598,10 +1598,10 @@ func void DIA_CH_DEX_1()
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosc + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 
 // ------ 5 Geschick ------
@@ -1612,10 +1612,10 @@ func void DIA_CH_DEX_5()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosc + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 // ------ 10 Geschick ------
 func void DIA_CH_DEX_10()
@@ -1625,10 +1625,10 @@ func void DIA_CH_DEX_10()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosc + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 // ------ 20 Geschick ------
 func void DIA_CH_DEX_20()
@@ -1638,10 +1638,10 @@ func void DIA_CH_DEX_20()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Geschick + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosci + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Umiejetnosc + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 
 //******************************************************************************************
@@ -1657,7 +1657,7 @@ INSTANCE DIA_CH_MAGIE (C_INFO)
 	condition	= DIA_CH_MAGIE_Condition;
 	information	= DIA_CH_MAGIE_Info;
 	permanent	= TRUE;
-	description = "MAGIE: Mana, Runen, Kreise";
+	description = "MAGIE: Mana, Runes, okregi";
 };                       
 
 FUNC INT DIA_CH_MAGIE_Condition()
@@ -1712,7 +1712,7 @@ INSTANCE DIA_CH_Mana (C_INFO)
 	condition	= DIA_CH_Mana_Condition;
 	information	= DIA_CH_Mana_Info;
 	permanent	= TRUE;
-	description = "Mana steigern";
+	description = "Zwiekszenie Mana";
 };                       
 
 FUNC INT DIA_CH_Mana_Condition()
@@ -1800,7 +1800,7 @@ INSTANCE DIA_CH_KREISE (C_INFO)
 	condition	= DIA_CH_KREISE_Condition;
 	information	= DIA_CH_KREISE_Info;
 	permanent	= TRUE;
-	description = "Die magischen Kreise";
+	description = "Czarodziejskie kregi";
 };                       
 
 FUNC INT DIA_CH_KREISE_Condition()
@@ -1817,12 +1817,12 @@ FUNC VOID DIA_CH_KREISE_Info()
 	
 	//Info_AddChoice	  (DIA_CH_KREISE,"Paladin-Runen",  CH_Training_Runen_Paladin);
 	
-	Info_AddChoice 	  (DIA_CH_KREISE,"Sechster Kreis",CH_KREISE_6);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Fünfter Kreis", CH_KREISE_5);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Vierter Kreis", CH_KREISE_4);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Dritter Kreis", CH_KREISE_3);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Zweiter Kreis", CH_KREISE_2);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Erster Kreis",  CH_KREISE_1);  
+	Info_AddChoice 	  (DIA_CH_KREISE,"Szóste kolo",CH_KREISE_6);
+	Info_AddChoice 	  (DIA_CH_KREISE,"piaty okrag", CH_KREISE_5);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Czwarte kolo", CH_KREISE_4);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Trzecie kolo", CH_KREISE_3);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Drugie kolo", CH_KREISE_2);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Pierwsze kolo",  CH_KREISE_1);  
 	
 };
 //***************************************************************************
@@ -1879,7 +1879,7 @@ INSTANCE DIA_CH_Runen (C_INFO)
 	condition	= DIA_CH_Runen_Condition;
 	information	= DIA_CH_Runen_Info;
 	permanent	= TRUE;
-	description = "Runen basteln";
+	description = "Zabieg pomylkowy";
 };                       
 
 FUNC INT DIA_CH_Runen_Condition()
@@ -1897,27 +1897,27 @@ FUNC VOID DIA_CH_Runen_Info()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("6. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_CH_Runen_6);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("6. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_CH_Runen_6);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 4)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("5. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_CH_Runen_5);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("5. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_CH_Runen_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 3)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("4. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_CH_Runen_4);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("4. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_CH_Runen_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 2)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("3. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_CH_Runen_3);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("3. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_CH_Runen_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 1)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("2. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_CH_Runen_2);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("2. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_CH_Runen_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) < 1)
 	{ 
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("1. Kreis der Magie"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_CH_Runen_1);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("1. Kolo Magii"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_CH_Runen_1);
 	};
 };
 //**********************************************************
@@ -2261,7 +2261,7 @@ INSTANCE DIA_CH_Kampf_Start (C_INFO)
 	condition	= DIA_CH_Kampf_Start_Condition;
 	information	= DIA_CH_Kampf_Start_Info;
 	permanent	= TRUE;
-	description = "Kampftalente (Nah - und Fernkampf)";
+	description = "Walka z talentami (walka bliska i bojowa)";
 };                       
 
 FUNC INT DIA_CH_Kampf_Start_Condition()
@@ -2314,7 +2314,7 @@ INSTANCE DIA_CH_Kampf_Einhand (C_INFO)
 	condition	= DIA_CH_Kampf_Einhand_Condition;
 	information	= DIA_CH_Kampf_Einhand_Info;
 	permanent	= TRUE;
-	description = "Einhandwaffen";
+	description = "pistolety reczne";
 };                       
 
 FUNC INT DIA_CH_Kampf_Einhand_Condition()
@@ -2329,10 +2329,10 @@ FUNC VOID DIA_CH_Kampf_Einhand_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Einhand);
 	Info_AddChoice	  (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 1 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
 };
 FUNC VOID DIA_CH_Kampf_Einhand_BACK()
 {
@@ -2346,10 +2346,10 @@ func void CH_Training_Combat_1H_1()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 1 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2360,10 +2360,10 @@ func void CH_Training_Combat_1H_5()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 1 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2374,10 +2374,10 @@ func void CH_Training_Combat_1H_10()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 1 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 
 // ------20% Waffentalent ------
@@ -2388,10 +2388,10 @@ func void CH_Training_Combat_1H_20()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Einhand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("Bron jednoreczna + 1 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 //******************************************************************************************
 //Kampf Zweihand
@@ -2403,7 +2403,7 @@ INSTANCE DIA_CH_Kampf_Zweihand (C_INFO)
 	condition	= DIA_CH_Kampf_Zweihand_Condition;
 	information	= DIA_CH_Kampf_Zweihand_Info;
 	permanent	= TRUE;
-	description = "Zweihandwaffen";
+	description = "bron dwureczna";
 };                       
 
 FUNC INT DIA_CH_Kampf_Zweihand_Condition()
@@ -2418,10 +2418,10 @@ FUNC VOID DIA_CH_Kampf_Zweihand_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("bron dwureczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 FUNC VOID DIA_CH_Kampf_Zweihand_BACK()
 {
@@ -2435,10 +2435,10 @@ func void CH_Training_Combat_2H_1()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("bron dwureczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2449,10 +2449,10 @@ func void CH_Training_Combat_2H_5()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("bron dwureczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2463,10 +2463,10 @@ func void CH_Training_Combat_2H_10()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("bron dwureczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------20% Waffentalent ------
@@ -2477,10 +2477,10 @@ func void CH_Training_Combat_2H_20()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Zweihand-Waffen + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("bron dwureczna + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Bron dwureczna + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 //***************************************************************************************************************************************
 // FERNKAMPF Bogen und Armbrust
@@ -2512,10 +2512,10 @@ FUNC VOID DIA_CH_Kampf_Bogen_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Bogen );
 	Info_AddChoice	  (DIA_CH_Kampf_Bogen , DIALOG_BACK, DIA_CH_Kampf_Bogen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
 	
 };
 FUNC VOID DIA_CH_Kampf_Bogen_BACK()
@@ -2531,10 +2531,10 @@ func void CH_Training_Combat_BOW_1()
 	Info_ClearChoices (DIA_CH_Kampf_Bogen );
 	Info_AddChoice	  (DIA_CH_Kampf_Bogen , DIALOG_BACK, DIA_CH_Kampf_Bogen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2545,10 +2545,10 @@ func void CH_Training_Combat_BOW_5()
 	Info_ClearChoices (DIA_CH_Kampf_Bogen );
 	Info_AddChoice	  (DIA_CH_Kampf_Bogen , DIALOG_BACK, DIA_CH_Kampf_Bogen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2559,10 +2559,10 @@ func void CH_Training_Combat_BOW_10()
 	Info_ClearChoices (DIA_CH_Kampf_Bogen );
 	Info_AddChoice	  (DIA_CH_Kampf_Bogen , DIALOG_BACK, DIA_CH_Kampf_Bogen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
 };
 
 // ------20% Waffentalent ------
@@ -2573,10 +2573,10 @@ func void CH_Training_Combat_BOW_20()
 	Info_ClearChoices (DIA_CH_Kampf_Bogen );
 	Info_AddChoice	  (DIA_CH_Kampf_Bogen , DIALOG_BACK, DIA_CH_Kampf_Bogen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Bogen + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*20)			,CH_Training_Combat_BOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*10)			,CH_Training_Combat_BOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("luk + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1)*5)			,CH_Training_Combat_BOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Bogen, B_BuildLearnString("Luk + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))			,CH_Training_Combat_BOW_1);
 };
 
 //******************************************************************************************
@@ -2604,10 +2604,10 @@ FUNC VOID DIA_CH_Kampf_Armbrust_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Armbrust );
 	Info_AddChoice	  (DIA_CH_Kampf_Armbrust , DIALOG_BACK, DIA_CH_Kampf_Armbrust_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
 };
 FUNC VOID DIA_CH_Kampf_Armbrust_BACK()
 {
@@ -2622,10 +2622,10 @@ func void CH_Training_Combat_CROSSBOW_1()
 	Info_ClearChoices (DIA_CH_Kampf_Armbrust );
 	Info_AddChoice	  (DIA_CH_Kampf_Armbrust , DIALOG_BACK, DIA_CH_Kampf_Armbrust_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2636,10 +2636,10 @@ func void CH_Training_Combat_CROSSBOW_5()
 	Info_ClearChoices (DIA_CH_Kampf_Armbrust );
 	Info_AddChoice	  (DIA_CH_Kampf_Armbrust , DIALOG_BACK, DIA_CH_Kampf_Armbrust_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2650,10 +2650,10 @@ func void CH_Training_Combat_CROSSBOW_10()
 	Info_ClearChoices (DIA_CH_Kampf_Armbrust );
 	Info_AddChoice	  (DIA_CH_Kampf_Armbrust , DIALOG_BACK, DIA_CH_Kampf_Armbrust_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
 };
 
 // ------20% Waffentalent ------
@@ -2663,10 +2663,10 @@ func void CH_Training_Combat_CROSSBOW_20()
 	
 	Info_ClearChoices	(DIA_CH_Kampf_Armbrust);
 	Info_AddChoice	    (DIA_CH_Kampf_Armbrust, DIALOG_BACK, DIA_CH_Kampf_Armbrust_BACK);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
-	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Armbrust + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 1"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1))				,CH_Training_Combat_CROSSBOW_1);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 5"	, 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*5)			,CH_Training_Combat_CROSSBOW_5);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 10", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*10)			,CH_Training_Combat_CROSSBOW_10);
+	Info_AddChoice		(DIA_CH_Kampf_Armbrust, B_BuildLearnString("Krzyzówka + 20", 			B_GetLearnCostTalent(other, NPC_TALENT_CROSSBOW, 1)*20)			,CH_Training_Combat_CROSSBOW_20);
 };
 
 //*********************************************
@@ -2682,7 +2682,7 @@ INSTANCE DIA_CH_Dieb_Start (C_INFO)
 	condition	= DIA_CH_Dieb_Start_Condition;
 	information	= DIA_CH_Dieb_Start_Info;
 	permanent	= TRUE;
-	description = "Diebestalente";
+	description = "talenty kradziezy";
 };                       
 
 FUNC INT DIA_CH_Dieb_Start_Condition()
@@ -2735,7 +2735,7 @@ INSTANCE DIA_CH_Dieb_Steal (C_INFO)
 	condition	= DIA_CH_Dieb_Steal_Condition;
 	information	= DIA_CH_Dieb_Steal_Info;
 	permanent	= TRUE;
-	description = "Taschendiebstahl";
+	description = "kompletacja kieszonkowa";
 };                       
 
 FUNC INT DIA_CH_Dieb_Steal_Condition()
@@ -2750,7 +2750,7 @@ FUNC VOID DIA_CH_Dieb_Steal_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Steal);
 	Info_AddChoice 		(DIA_CH_Dieb_Steal,DIALOG_BACK,DIA_CH_Dieb_Steal_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Steal, B_BuildLearnString("Taschendiebstahl"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKPOCKET, 1))		,CH_Training_Thief_Pickpocket);
+	Info_AddChoice		(DIA_CH_Dieb_Steal, B_BuildLearnString("kompletacja kieszonkowa"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKPOCKET, 1))		,CH_Training_Thief_Pickpocket);
 };
 //*********************************************
 //Dieb Schleichen
@@ -2762,7 +2762,7 @@ INSTANCE DIA_CH_Dieb_Schleichen (C_INFO)
 	condition	= DIA_CH_Dieb_Schleichen_Condition;
 	information	= DIA_CH_Dieb_Schleichen_Info;
 	permanent	= TRUE;
-	description = "Schleichen";
+	description = "bijatyka";
 };                       
 
 FUNC INT DIA_CH_Dieb_Schleichen_Condition()
@@ -2777,7 +2777,7 @@ FUNC VOID DIA_CH_Dieb_Schleichen_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Schleichen);
 	Info_AddChoice 		(DIA_CH_Dieb_Schleichen,DIALOG_BACK,DIA_CH_Dieb_Schleichen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Schleichen, B_BuildLearnString("Schleichen"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,CH_Training_Thief_Sneak);
+	Info_AddChoice		(DIA_CH_Dieb_Schleichen, B_BuildLearnString("bijatyka"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,CH_Training_Thief_Sneak);
 };
 //*********************************************
 //Dieb Schlösser öffnen
@@ -2789,7 +2789,7 @@ INSTANCE DIA_CH_Dieb_Picklock (C_INFO)
 	condition	= DIA_CH_Dieb_Picklock_Condition;
 	information	= DIA_CH_Dieb_Picklock_Info;
 	permanent	= TRUE;
-	description = "Schlösser öffnen";
+	description = "Zamki otwierajace";
 };                       
 
 FUNC INT DIA_CH_Dieb_Picklock_Condition()
@@ -2804,7 +2804,7 @@ FUNC VOID DIA_CH_Dieb_Picklock_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Picklock );
 	Info_AddChoice 		(DIA_CH_Dieb_Picklock ,DIALOG_BACK,DIA_CH_Dieb_Picklock_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("Schlösser knacken"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
+	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("sluzy chwytaki"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
 };
 //*********************************************
 //Alle Diebestalente auf einen Schlag 
@@ -2816,7 +2816,7 @@ INSTANCE DIA_CH_Dieb_Alle (C_INFO)
 	condition	= DIA_CH_Dieb_Alle_Condition;
 	information	= DIA_CH_Dieb_Alle_Info;
 	permanent	= TRUE;
-	description = "Alle Diebestalente lernen";
+	description = "Poznaj wszystkie talenty kradziezy.";
 };                       
 
 FUNC INT DIA_CH_Dieb_Alle_Condition()
@@ -2839,7 +2839,7 @@ FUNC VOID DIA_CH_Dieb_Alle_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Alle );
 	Info_AddChoice 		(DIA_CH_Dieb_Alle ,DIALOG_BACK,DIA_CH_Dieb_Alle_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Alle , B_BuildLearnString("Alle Diebestalente", kosten_alle), CH_Training_Thief_Alle);
+	Info_AddChoice		(DIA_CH_Dieb_Alle , B_BuildLearnString("Wszystkie talenty kradziezy", kosten_alle), CH_Training_Thief_Alle);
 };
 //***************************************************************************
 // Talente Diebesfähigkeiten
@@ -2900,7 +2900,7 @@ INSTANCE DIA_CH_Misc_Start (C_INFO)
 	condition	= DIA_CH_Misc_Start_Condition;
 	information	= DIA_CH_Misc_Start_Info;
 	permanent	= TRUE;
-	description = "Sonstiges (Tränke,Trophäen,Schmieden,Paladin-Runen,Sprache)";
+	description = "Rózne napoje (napoje, trofea, kuznie, runy paladynowe, jezyk)";
 };                       
 
 FUNC INT DIA_CH_Misc_Start_Condition()
@@ -2960,7 +2960,7 @@ INSTANCE DIA_CH_Misc_Alchemie (C_INFO)
 	condition	= DIA_CH_Misc_Alchemie_Condition;
 	information	= DIA_CH_Misc_Alchemie_Info;
 	permanent	= TRUE;
-	description = "Alchemie - die Kunst Tränke zu brauen";
+	description = "Alchemia - sztuka piwowarska eliksiru";
 };                       
 
 FUNC INT DIA_CH_Misc_Alchemie_Condition()
@@ -3012,7 +3012,7 @@ INSTANCE DIA_CH_Misc_Health (C_INFO)
 	condition	= DIA_CH_Misc_Health_Condition;
 	information	= DIA_CH_Misc_Health_Info;
 	permanent	= TRUE;
-	description = "Heiltränke aller Art";
+	description = "Eliksir leczniczy wszelkiego rodzaju";
 };                       
 
 FUNC INT DIA_CH_Misc_Health_Condition()
@@ -3029,19 +3029,19 @@ FUNC VOID DIA_CH_Misc_Health_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), CH_Training_Alchemy_POTION_Health_01);	  
+		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Istota uzdrawiania", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), CH_Training_Alchemy_POTION_Health_01);	  
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), CH_Training_Alchemy_POTION_Health_02);
+		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Ekstrakt z ekstraktu leczniczego", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), CH_Training_Alchemy_POTION_Health_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), CH_Training_Alchemy_POTION_Health_03);
+		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Eliksir uzdrawiania", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), CH_Training_Alchemy_POTION_Health_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Permanenter Heiltrank", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), CH_Training_Alchemy_POTION_Perm_Health);
+		Info_AddChoice	  (DIA_CH_Misc_Health, B_BuildLearnString ("Trwaly zbiornik leczniczy", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), CH_Training_Alchemy_POTION_Perm_Health);
 	};
 };
 FUNC VOID DIA_CH_Misc_Health_BACK()
@@ -3078,7 +3078,7 @@ INSTANCE DIA_CH_Misc_Mana (C_INFO)
 	condition	= DIA_CH_Misc_Mana_Condition;
 	information	= DIA_CH_Misc_Mana_Info;
 	permanent	= TRUE;
-	description = "Manatränke aller Art";
+	description = "Eliksir manatowy wszelkiego rodzaju";
 };                       
 
 FUNC INT DIA_CH_Misc_Mana_Condition()
@@ -3095,19 +3095,19 @@ FUNC VOID DIA_CH_Misc_Mana_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Permanenter Manatrank"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), CH_Training_Alchemy_POTION_Perm_Mana);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Staly eliksir z manila"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), CH_Training_Alchemy_POTION_Perm_Mana);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Manaelixier", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), CH_Training_Alchemy_POTION_Mana_03);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Manaelixir", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), CH_Training_Alchemy_POTION_Mana_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Manaextrakt", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), CH_Training_Alchemy_POTION_Mana_02);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("ekstrakt z maneny", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), CH_Training_Alchemy_POTION_Mana_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Manaessenz", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), CH_Training_Alchemy_POTION_Mana_01);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("esencja maneny", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), CH_Training_Alchemy_POTION_Mana_01);
 	};
 };
 FUNC VOID DIA_CH_Misc_Mana_BACK()
@@ -3144,7 +3144,7 @@ INSTANCE DIA_CH_Misc_Special (C_INFO)
 	condition	= DIA_CH_Misc_Special_Condition;
 	information	= DIA_CH_Misc_Special_Info;
 	permanent	= TRUE;
-	description = "Spezielle Tränke";
+	description = "Poidla specjalne";
 };                       
 
 FUNC INT DIA_CH_Misc_Special_Condition()
@@ -3161,19 +3161,19 @@ FUNC VOID DIA_CH_Misc_Special_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[CHARGE_INNOSEYE] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Auge aufladen", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, CHARGE_Innoseye)), CH_Training_Alchemy_Charge_InnosEye);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Ladowanie oczu", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, CHARGE_Innoseye)), CH_Training_Alchemy_Charge_InnosEye);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Trank der Geschwindigkeit"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), CH_Training_Alchemy_POTION_Speed);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Szybkosc"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)), CH_Training_Alchemy_POTION_Speed);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Elixier der Stärke"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), CH_Training_Alchemy_POTION_Perm_STR);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Skrobia Eliksir"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), CH_Training_Alchemy_POTION_Perm_STR);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Geschicklichkeitstrank"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), CH_Training_Alchemy_POTION_Perm_DEX);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("sprawnosc eliksiru"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), CH_Training_Alchemy_POTION_Perm_DEX);
 	};
 	
 };
@@ -3214,7 +3214,7 @@ INSTANCE DIA_CH_Misc_SmithStart (C_INFO)
 	condition	= DIA_CH_Misc_SmithStart_Condition;
 	information	= DIA_CH_Misc_SmithStart_Info;
 	permanent	= TRUE;
-	description = "Schmieden - Männergruppe";
+	description = "Kucie - meska grupa mezczyzn";
 };                       
 FUNC INT DIA_CH_Misc_SmithStart_Condition()
 {
@@ -3265,7 +3265,7 @@ INSTANCE DIA_CH_Misc_Smithniedrig (C_INFO)
 	condition	= DIA_CH_Misc_Smithniedrig_Condition;
 	information	= DIA_CH_Misc_Smithniedrig_Info;
 	permanent	= TRUE;
-	description = "Die ersten 5  Waffen";
+	description = "Pierwsze 5 sztuk broni";
 };                       
 
 FUNC INT DIA_CH_Misc_Smithniedrig_Condition()
@@ -3311,7 +3311,7 @@ INSTANCE DIA_CH_Misc_SmithHoch (C_INFO)
 	condition	= DIA_CH_Misc_SmithHoch_Condition;
 	information	= DIA_CH_Misc_SmithHoch_Info;
 	permanent	= TRUE;
-	description = "Die letzten 4 Waffen";
+	description = "Ostatnie cztery rodzaje broni";
 };                       
 
 FUNC INT DIA_CH_Misc_SmithHoch_Condition()
@@ -3416,7 +3416,7 @@ INSTANCE DIA_CH_Misc_Animal_Start (C_INFO)
 	condition	= DIA_CH_Misc_Animal_Start_Condition;
 	information	= DIA_CH_Misc_Animal_Start_Info;
 	permanent	= TRUE;
-	description = "Animaltrophys";
+	description = "trofea";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_Start_Condition()
@@ -3468,7 +3468,7 @@ INSTANCE DIA_CH_Misc_Animal_allg (C_INFO)
 	condition	= DIA_CH_Misc_Animal_allg_Condition;
 	information	= DIA_CH_Misc_Animal_allg_Info;
 	permanent	= TRUE;
-	description = "Zähne, Fell, Klauen, Herzen";
+	description = "Zeby, siersc, pazury, szpony, serca";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_allg_Condition()
@@ -3485,19 +3485,19 @@ FUNC VOID DIA_CH_Misc_Animal_allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  CH_Training_TROPHYS_Claws);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("pazury",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  CH_Training_TROPHYS_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  CH_Training_TROPHYS_Fur);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("skórka",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  CH_Training_TROPHYS_Fur);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Herzen nehmen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  CH_Training_TROPHYS_Heart);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("wziac serca",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  CH_Training_TROPHYS_Heart);
 	};
 };
 
@@ -3532,7 +3532,7 @@ INSTANCE DIA_CH_Misc_Animal_Speziell (C_INFO)
 	condition	= DIA_CH_Misc_Animal_Speziell_Condition;
 	information	= DIA_CH_Misc_Animal_Speziell_Info;
 	permanent	= TRUE;
-	description = "Flügel, Stachel, Zangen, Platten";
+	description = "Sciernice, pryzmaty, szczypce, plytki";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_Speziell_Condition()
@@ -3549,19 +3549,19 @@ FUNC VOID DIA_CH_Misc_Animal_Speziell_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Blutfliegenstachel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  CH_Training_TROPHYS_BFSting);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Krwi kregoslup",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  CH_Training_TROPHYS_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Blutfliegenflügel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("mucha",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Crawlerplatten nehmen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  CH_Training_TROPHYS_CrawlerPlate	);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Zdjac plyty gasienicowe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  CH_Training_TROPHYS_CrawlerPlate	);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Zangen rausschneiden",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  CH_Training_TROPHYS_Mandibles	);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("obciac szczypce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  CH_Training_TROPHYS_Mandibles	);
 	};
 };
 //--------------------------------------------
@@ -3595,7 +3595,7 @@ INSTANCE DIA_CH_Misc_Animal_other (C_INFO)
 	condition	= DIA_CH_Misc_Animal_other_Condition;
 	information	= DIA_CH_Misc_Animal_other_Info;
 	permanent	= TRUE;
-	description = "Blut, Schuppen, Hörner, Zunge";
+	description = "Krew, lupiez, rogi, jezyk";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_other_Condition()
@@ -3612,24 +3612,24 @@ FUNC VOID DIA_CH_Misc_Animal_other_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn des Schattenläufers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Róg toru cieniowego",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Feuerzunge",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  CH_Training_TROPHYS_FireTongue);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("jezyk ognia",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  CH_Training_TROPHYS_FireTongue);
 	};
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Drachensnapperhorn",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  CH_Training_TROPHYS_DrgSnapperHorn);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("smok",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  CH_Training_TROPHYS_DrgSnapperHorn);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Drachenschuppen ziehen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  CH_Training_TROPHYS_DragonScale);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Smocze waga ciagnaca",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  CH_Training_TROPHYS_DragonScale);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Drachenblut zapfen",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  CH_Training_TROPHYS_DragonBlood);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Krew smokowa stozek",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  CH_Training_TROPHYS_DragonBlood);
 	};
 };
 //--------------------------------------------
@@ -3671,7 +3671,7 @@ INSTANCE DIA_CH_Misc_PaladinStart (C_INFO)
 	condition	= DIA_CH_Misc_PaladinStart_Condition;
 	information	= DIA_CH_Misc_PaladinStart_Info;
 	permanent	= TRUE;
-	description = "Paladin Runen";
+	description = "Paladyn - Slady";
 };                       
 
 FUNC INT DIA_CH_Misc_PaladinStart_Condition()
@@ -3723,7 +3723,7 @@ INSTANCE DIA_CH_Misc_PalHeal (C_INFO)
 	condition	= DIA_CH_Misc_PalHeal_Condition;
 	information	= DIA_CH_Misc_PalHeal_Info;
 	permanent	= TRUE;
-	description = "Licht und Heilsprüche";
+	description = "Powiedzenia lekkie i lecznicze";
 };                       
 
 FUNC INT DIA_CH_Misc_PalHeal_Condition()
@@ -3787,7 +3787,7 @@ INSTANCE DIA_CH_Misc_PalKampf (C_INFO)
 	condition	= DIA_CH_Misc_PalKampf_Condition;
 	information	= DIA_CH_Misc_PalKampf_Info;
 	permanent	= TRUE;
-	description = "Kampfsprüche";
+	description = "motto";
 };                       
 
 FUNC INT DIA_CH_Misc_PalKampf_Condition()

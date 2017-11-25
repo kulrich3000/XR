@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Kroete(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Kröte";
+	name							=	"koral";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Kroete;
 	level							=	5;

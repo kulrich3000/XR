@@ -1,7 +1,7 @@
 INSTANCE Mod_7037_NOV_Pedro_NW (Npc_Default) 
 {
 	// ------ NSC ------
-	name 		= "Pedro";
+	name 		= "pedal";
 	guild 		= GIL_VLK;
 	id 			= 7037;
 	voice 		= 9;

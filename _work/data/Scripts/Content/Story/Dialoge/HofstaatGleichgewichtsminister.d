@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatGleichgewichtsminister_Hi (C_INFO)
 	information	= Info_Mod_HofstaatGleichgewichtsminister_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss zum Drogenminister.";
+	description	= "Musze zobaczyc sekretarza.";
 };
 
 FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Hi_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatGleichgewichtsminister_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_00"); //Ich muss zum Drogenminister.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_01"); //Da bist du bei mir falsch, ich bin der Gleichgewichtsminister.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_02"); //Ich weiß, aber der Jäger hat mir gesagt, du kannst mir helfen, zum Drogenminister zu kommen.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_03"); //Da hat er wohl Recht. Aber nur, wenn du mir das Codewort sagen kannst.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_04"); //Lass mich raten ... Bananarama?
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_05"); //Richtig. Gehen wir.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_00"); //Musze zobaczyc sekretarza.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_01"); //Nie macie sie co do mnie, jestem ministrem równowagi.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_02"); //Wiem, ale mysliwy powiedzial mi, ze mozesz pomóc mi dostac sie do sekretarza narkotyków.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_03"); //Mysle, ze ma racje. Ale tylko wtedy, gdy mozesz mi podac kod.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Hi_15_04"); //Pozwólcie mi sie zgadnac..... Bananarama?
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Hi_01_05"); //Prawo. Chodzcie dalej, odejdzmy.
 
 	AI_StopProcessInfos	(self);
 
@@ -53,27 +53,27 @@ FUNC INT Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_Condition()
 
 FUNC VOID Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_00"); //Also Mann, du musst nur ganz ruhig werden.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_00"); //Wiec czlowiek, trzeba tylko sie uspokoic.
 	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_01"); //Okay.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_02"); //Fühl einfach, wie der Wind dich durchströmt und eins mit dir wird.
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_03"); //Ist gut.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_04"); //Du musst fest sein wie der Stein und doch biegsam wie das Schilfrohr, verstehst du?
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_05"); //Mehr oder weniger.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_06"); //Das ist gut. Dann nimm jetzt dein Ziel in die Augen und ...
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_07"); //Geh über das Seil?
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_08"); //UM HIMMELS WILLEN BLOß NICHT! Da brichst du dir ja den Hals.
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_09"); //Hier, der Schlüssel für die Leiter. Die Tür ist am Fuß des andren Hügels.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_02"); //Wystarczy poczuc, jak wiatr przeplywa przez ciebie i stac sie jednym z toba.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_03"); //Wszystkie sluszne, wszystkie sluszne.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_04"); //Musisz byc twardy jak kamien i jednoczesnie elastyczny jak trzcina, wiesz?
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_05"); //Wiecej lub mniej.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_06"); //To dobra wiadomosc. Nastepnie wez cel do oczu i....
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_07"); //Przejdz przez line?
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_08"); //NA NIEBO NIEBO NIE CHCE BYKU! Zerwiesz szyje.
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_09"); //Oto klucz do drabiny. Drzwi znajduja sie u podnóza drugiego wzniesienia.
 
 	B_GiveInvItems	(self, hero, ItKe_HSDM, 1);
 
-	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_10"); //Was?! Wieso sind wir dann noch mal hier rauf gegangen?!
-	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_11"); //Mir gefällts hier oben.
+	AI_Output(hero, self, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_15_10"); //Co? Wiec dlaczego weszlismy tu ponownie?
+	AI_Output(self, hero, "Info_Mod_HofstaatGleichgewichtsminister_Drogenminister_01_11"); //Lubie to tutaj.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Gleichgewichtsminister hat mir den Schlüssel zu einer Tür im gegenüberliegenden Berg gegeben, in welchem sich eine Leiter befinden soll, die zum Drogenminister hinauf führt.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Minister Equilibrium dal mi klucz do drzwi w przeciwleglej górze, gdzie ma byc drabina prowadzaca do ministra ds. narkotyków.");
 };
 
 INSTANCE Info_Mod_HofstaatGleichgewichtsminister_Pickpocket (C_INFO)

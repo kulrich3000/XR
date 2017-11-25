@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Skeleton_Mage(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Skelettmagier";
+	name							=	"szkieletowy mag mag";
 	guild							=	GIL_SKELETON_MAGE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETON_MAGE;
 	level							=	30;
@@ -94,7 +94,7 @@ INSTANCE SkeletonMage_Riddler		(Mst_Default_Skeleton_Mage)
 {
  	B_SetVisuals_Skeleton_Mage();
 
-	name = "Besonderer Skelettmagier";
+	name = "Szkielet specjalny mag";
 
 	CreateInvItems	(self, theriddle1, 1);
 };

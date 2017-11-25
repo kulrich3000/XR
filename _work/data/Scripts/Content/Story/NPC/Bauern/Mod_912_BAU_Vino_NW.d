@@ -1,7 +1,7 @@
 instance Mod_912_BAU_Vino_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Vino";
+	name 		= "vino";
 	guild 		= GIL_OUT;
 	id 			= 912;
 	voice 		= 5;

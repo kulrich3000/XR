@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Morpheus_Hi (C_INFO)
 	information	= Info_Mod_Morpheus_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles klar bei dir?";
+	description	= "Wszystko jest w porzadku?";
 };
 
 FUNC INT Info_Mod_Morpheus_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Morpheus_Hi_Condition()
 
 FUNC VOID Info_Mod_Morpheus_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_00"); //Alles klar bei dir?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_01"); //(eindringlich) Hüte dich! Diese Welt ist nicht real!
-	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_02"); //Ach so ...
-	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_03"); //(lacht) Der Spruch kommt immer gut bei Kunden, die zu viel Freudenspender genommen haben.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_04"); //Und das kurbelt wohl deine Geschäfte an?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_05"); //Eine mystische Aura kann ja nicht schaden. Ich verkaufe vor allem Talismane wie Amulette und Ringe.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_06"); //Schau dich doch einfach mal um.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_00"); //Wszystko jest w porzadku?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_01"); //Kapelusze! Ten swiat nie jest prawdziwy!
+	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_02"); //Ach, tak samo....
+	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_03"); //(smiech) To powiedzenie jest zawsze dobre dla klientów, którzy czerpia z tego zbyt wiele przyjemnosci.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Hi_15_04"); //A to pobudzi Twój biznes?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_05"); //Aura mistyczna nie moze zranic. Glównie sprzedaje talizmanów jak amulety i pierscienie.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Hi_37_06"); //Wystarczy sie rozejrzec.
 };
 
 INSTANCE Info_Mod_Morpheus_Kissen (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Morpheus_Kissen (C_INFO)
 	information	= Info_Mod_Morpheus_Kissen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche was Weiches für den Kopf. Zum Schlafen ...";
+	description	= "Szukam czegos miekkiego dla glowy. Do spania....";
 };
 
 FUNC INT Info_Mod_Morpheus_Kissen_Condition()
@@ -47,20 +47,20 @@ FUNC INT Info_Mod_Morpheus_Kissen_Condition()
 
 FUNC VOID Info_Mod_Morpheus_Kissen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_00"); //Ich suche was Weiches für den Kopf. Zum Schlafen ...
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_01"); //Aha. Ein Kissen für den Kopf. Ein Kopfkissen.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_02"); //So kann man sagen. Hast du eins?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_03"); //Ist zwar eine Rarität, habe ich aber nicht. Allerdings kann ich dir sagen, wie du eins bekommst.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_04"); //Ich höre.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_05"); //Du gehst zum Metzger und lässt dir ein Säckchen mit Vengerfedern geben. Fest zugeschnürt gibt das ein prima Kopfkissen.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_06"); //Was sind Venger?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_07"); //Kennst du nicht? Das sind winzige Scavenger ohne rote Augen und völlig ungefährlich.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_08"); //Der Bauer hält sie wegen der Eier und dem zarten Fleisch. Musst du unbedingt probieren. Das zergeht auf der Zunge.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_09"); //So wie ein Käse?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_10"); //Kann man so sagen. Du kannst mir übrigen eines mitbringen. Für meinen Tipp.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_11"); //Danke erst mal.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_00"); //Szukam czegos miekkiego dla glowy. Do spania....
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_01"); //Uh-huh. Poduszka na glowe. Poduszka.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_02"); //Mozna to powiedziec. Masz go?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_03"); //To rzadkosc, ale ja jej nie mam. Moge jednak panstwu powiedziec, jak to zrobic.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_04"); //Slucham.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_05"); //Idziesz do rzeznika i dostajesz torbe z piórami Vengera. Ciasno ulozona warstwa tworzy wspaniala poduszke.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_06"); //Czym jest pasazer?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_07"); //Nie wiesz? Sa to malutkie padliny bez czerwonych oczu i calkowicie nieszkodliwe.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_08"); //Hodowca przechowuje je dzieki jajom i miekkiemu miazszowi. Trzeba to spróbowac. Roztopi sie w ustach.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_09"); //Lubisz ser?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen_37_10"); //Mozna to powiedziec. Mozecie mi panstwo przyniesc jedna z nich. Na rade.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen_15_11"); //Na poczatek dziekuje.
 
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Morpheus meint, ich sollte ein Säckchen mit Vengerfedern füllen. Der Metzger sollte welche haben.");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Morpheus uwaza, ze powinienem wypelnic worek z piórami Vengera. Powinien miec je rzeznik.");
 };
 
 INSTANCE Info_Mod_Morpheus_Kissen02 (C_INFO)
@@ -71,7 +71,7 @@ INSTANCE Info_Mod_Morpheus_Kissen02 (C_INFO)
 	information	= Info_Mod_Morpheus_Kissen02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich bin zurück. Ich hab das Kissen.";
+	description	= "Witam, jestem z powrotem. Dostalem poduszke.";
 };
 
 FUNC INT Info_Mod_Morpheus_Kissen02_Condition()
@@ -85,18 +85,18 @@ FUNC INT Info_Mod_Morpheus_Kissen02_Condition()
 
 FUNC VOID Info_Mod_Morpheus_Kissen02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_00"); //Hallo, ich bin zurück. Ich hab das Kissen.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_01"); //Und, bist du zufrieden?
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_02"); //Na ja. Weich ist es ja, aber der Sack ist doch etwas kratzig und muffig.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_03"); //Hm ... Dann gehst du zum Scheider und lässt dir ein Kissen aus Leinen machen.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_04"); //Dann braucht's noch ein paar handvoll Heu, die machst du mit rein. Riecht sehr angenehm.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_05"); //Wo ...
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_06"); //Hinten am See bei der Wasserleitung wurde letztens das Gras gemäht. Da wirst du fündig, denke ich.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_07"); //Du hast Ideen! Hört sich aber gut an. Danke. Bis ein andernmal.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_00"); //Witam, jestem z powrotem. Dostalem poduszke.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_01"); //Cóz, czy jestes zadowolony?
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_02"); //No cóz, dobrze. Jest miekki, ale torba jest troche drapakowa i stechla.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_03"); //Hm.... Nastepnie idziesz do separatora i masz poduszke z lnu.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_04"); //Potem potrzebujesz garstki siana i wlozysz je do srodka. Pachnie bardzo przyjemnie.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kissen02_15_05"); //Gdzie....?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_06"); //W tylnej czesci jeziora, przy rurze wodnej, niedawno skoszono trawe. Mysle, ze znajdziesz to.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kissen02_37_07"); //Masz pomysly! Brzmi to jak dobry pomysl. Dzieki. Do zobaczenia nastepnym razem.
 
 	Wld_InsertItem	(ItMi_Heu, "FP_ITEM_HEU_01");
 
-	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Morpheus meint ich soll mir ein Leinenkissen von Versage machen lassen. Füllen soll ich es neben den Federn noch mit etwas Heu für den Geruch. Das finde ich beim See bei der Wasserleitung.");
+	B_LogEntry	(TOPIC_MOD_ASS_KISSEN, "Morpheus mówi, ze powinienem miec lniana poduszke wykonana przez Versage. Obok piór powinienem wypelnic je sianem dla zapachu. To wlasnie znajduje nad jeziorem przy wodociagu.");
 };
 
 INSTANCE Info_Mod_Morpheus_Kimon (C_INFO)
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Morpheus_Kimon (C_INFO)
 	information	= Info_Mod_Morpheus_Kimon_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Freudenspender?";
+	description	= "Masz radosne dozowniki?";
 };
 
 FUNC INT Info_Mod_Morpheus_Kimon_Condition()
@@ -121,13 +121,13 @@ FUNC INT Info_Mod_Morpheus_Kimon_Condition()
 
 FUNC VOID Info_Mod_Morpheus_Kimon_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_00"); //Hast du Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_01"); //Natürlich nicht. Man darf damit nicht öffentlich handeln. Verbot vom Stadthalter.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_02"); //Und inoffiziell?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_03"); //Auch nicht. Der Penner da drüben kann dir wahrscheinlich weiterhelfen.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_04"); //Kann er nicht. Den habe ich schon gefragt.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_05"); //Dann lügt er. Ich bin sicher, dass er was weiß.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_06"); //Dann probier ich's noch mal.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_00"); //Masz radosne dozowniki?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_01"); //Oczywiscie nie. Nie mozna tego robic publicznie. Zakaz gubernatora.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_02"); //I nieoficjalnie?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_03"); //Nawet nie. Tam ta posladka moze Ci pomóc.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_04"); //On nie moze. Juz go zapytalem.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Kimon_37_05"); //Potem klamie. Jestem pewien, ze cos wie.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Kimon_15_06"); //Potem spróbuje jeszcze raz.
 };
 
 INSTANCE Info_Mod_Morpheus_Blutkelch (C_INFO)
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Morpheus_Blutkelch (C_INFO)
 	information	= Info_Mod_Morpheus_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo! Und? Schon Kopfkissen verkauft?";
+	description	= "Witaj! A co? Juz sprzedane poduszki?";
 };
 
 FUNC INT Info_Mod_Morpheus_Blutkelch_Condition()
@@ -151,19 +151,19 @@ FUNC INT Info_Mod_Morpheus_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Morpheus_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_00"); //Hallo! Und? Schon Kopfkissen verkauft?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_01"); //Aber ja. Die Weiber reißen mir die Dinger von der Auslage.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_02"); //Freut mich. Dann hilfst du mir sicher nochmal.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_03"); //Ich suche einen Blutkelch. Dürfte irgendwie ungewöhnlich aussehen.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_04"); //Das sollte wohl eine Rarität sein. Aber nein, ich habe nie solch ein Teil gesehen.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_05"); //Schade. Hast du eine Ahnung, wer ...?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_06"); //Vielleicht die Magier im Ort ...
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_07"); //Die da wären?
-	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_08"); //Eine Gruppe von Feuermagiern. Arrogantes Pack. Wohnen im schönsten Haus der Stadt.
-	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_09"); //Und einen Wassermagier. Komischer Kauz. Treibt sich im alten Viertel rum.
-	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_10"); //Danke erst mal.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_00"); //Witaj! A co? Juz sprzedane poduszki?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_01"); //Ale tak, tak, tak. Tamy odrywaja te rzeczy z mojego wyswietlacza.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_02"); //Nicosc na spotkanie. Potem znów pomóz mi pomóc.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_03"); //Szukam kielicha krwi. Powinien wygladac niecodziennie.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_04"); //To powinna byc rzadkosc. Ale nie, nigdy nie widzialem takiej rzeczy.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_05"); //Zbyt zle. Masz pomysl, kto....?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_06"); //Moze magowie w miescie.....
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_07"); //Które istnieja?
+	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_08"); //Grupa magów ognia. Arogancka kisc. Mieszkanie w najpiekniejszym domu miasta.
+	AI_Output(self, hero, "Info_Mod_Morpheus_Blutkelch_37_09"); //I magik wody. Dziwny wspólpracownik. Wiszacy w starej dzielnicy.
+	AI_Output(hero, self, "Info_Mod_Morpheus_Blutkelch_15_10"); //Na poczatek dziekuje.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Morpheus hat mich an die hiesigen Magier verwiesen.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Morfheus skierowal mnie do miejscowych magów.");
 };
 
 INSTANCE Info_Mod_Morpheus_Trade (C_INFO)

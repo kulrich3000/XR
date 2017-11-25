@@ -35,7 +35,7 @@ FUNC VOID GILDENSTORY_AL()
 
 				Mod_1872_NONE_Unbekannt_MT.flags = 2;
 
-				B_LogEntry	(TOPIC_MOD_AL_ARENA, "Er hat auch micht besiegt, aber aus unerfindlichen Gründen wurde ich ziemlich rasch schwächer. Ich glaube, das berichte ich erst mal Thorus.");
+				B_LogEntry	(TOPIC_MOD_AL_ARENA, "On tez mnie pokonal, ale z jakichs niewytlumaczalnych powodów szybko sie zemdlalem. Mysle, ze po raz pierwszy poinformuje o tym Thorusa.");
 
 				Mod_GorKarantoSchwach = 5;
 
@@ -70,7 +70,7 @@ FUNC VOID GILDENSTORY_AL()
 			B_StartOtherRoutine	(Mod_1872_NONE_Unbekannt_MT, "FLUCHT");
 			B_StartOtherRoutine	(Mod_7384_OUT_Dragan_MT, "FLUCHT");
 
-			B_LogEntry	(TOPIC_MOD_AL_ARENA, "Ich habe Paran in der Arena besiegt. Er ist abgehauen und wird keinen Ärger mehr machen.");
+			B_LogEntry	(TOPIC_MOD_AL_ARENA, "Bity w paranie na arenie. On ucieka i nie bedzie juz wiecej sprawial klopotów.");
 
 			Mod_GorKarantoSchwach = 10;
 		};
@@ -92,7 +92,7 @@ FUNC VOID GILDENSTORY_AL()
 		{
 			Wld_SendTrigger	("EVT_KERKERGATE_01");
 
-			B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Cutter ist tot. Ich sollte Thorus davon berichten.");
+			B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Smierc noza. Powinienem o tym powiedziec Thorusowi.");
 
 			Mod_TemplerBeiThorus = 2;
 		};
@@ -169,54 +169,54 @@ FUNC VOID GILDENSTORY_AL()
 
 				CutsceneAn = TRUE;
 
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_00"); //Ich habe das Gefühl, dass uns Alissandro gefährlich werden könnte.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_00"); //Mam wrazenie, ze Alissandro moze byc dla nas niebezpieczne.
 			};
 
 			if (Mod_GespraechCounter_BB == 5)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_01"); //Wir wissen nicht, wo er sich versteckt hält oder wer mit ihm zusammenarbeitet.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_01"); //Nie wiemy, gdzie sie ukrywa i kto z nim pracuje.
 			};
 
 			if (Mod_GespraechCounter_BB == 10)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_02"); //Es gibt keinen Grund beunruhigt zu sein. Wir sind gut bewacht uns sie kennen die Stellungen der Gardisten nicht.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_02"); //Nic sie nie martwic. Jestesmy dobrze strzezeni i oni nie znaja stanowisk strazników.
 			};
 
 			if (Mod_GespraechCounter_BB == 15)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_03"); //Die kennen meine Männer auch nicht. wenn wir diese Stellungen nicht auch bald einnehmen, hilft uns der Plan nichts.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_03"); //Oni tez nie znaja moich mezczyzn. Jesli wkrótce nie zajmiemy tych stanowisk, plan nie pomoze nam.
 			};
 
 			if (Mod_GespraechCounter_BB == 22)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_04"); //Ich kann dir den Plan geben, es wird wohl wirklich Zeit, uns vorzubereiten.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_04"); //Potrafie podac plan, to naprawde czas przygotowac nas.
 			};
 
 			if (Mod_GespraechCounter_BB == 27)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_05"); //Gut, ich werde ihn den Gardisten zur Verfügung stellen.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_05"); //W porzadku, udostepnie ja straznikom.
 			};
 
 			if (Mod_GespraechCounter_BB == 31)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_06"); //Wo wirst du ihn aufbewahren?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_06"); //Gdzie zamierzasz go zatrzymac?
 			};
 
 			if (Mod_GespraechCounter_BB == 36)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_07"); //Ich lege ihn in das Haus der Gardisten, das dürfte relativ sicher sein.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_07"); //Umiescilem to w domu strazników, co powinno byc stosunkowo pewne.
 			};
 
 			if (Mod_GespraechCounter_BB == 41)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_08"); //Das dürfte es vermutlich, allerdings sind nachts keine Gardisten dort, die ihn bewachen könnten.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_08"); //Prawdopodobnie tak sie stanie, ale w nocy nie ma tam strazników, którzy by go pilnowali.
 			};
 
 			if (Mod_GespraechCounter_BB == 46)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_09"); //(lacht) Wer soll ihn schon stehlen? Wer in das Lager einbrechen will, müsste schon so klein wie eine Fleischwanze sein.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_04_09"); //(smiech) Kto to kradnie? Ktokolwiek chcialby wlamac sie do obozu, musialby byc tak maly jak pluskwa miesna.
 
-				B_LogEntry	(TOPIC_MOD_AL_KARTE, "Der Plan ist im Haus der Gardisten. Nachts ist es unbewacht, eine gute Gelegenheit den Plan zu stehlen.");
+				B_LogEntry	(TOPIC_MOD_AL_KARTE, "Plan znajduje sie w Domu Strazników. W nocy jest to niestrzezone, dobra okazja do kradziezy planu.");
 
 				Wld_InsertItem	(AL_Aufstellung, "FP_ITEM_SPAWN_AUFSTELLUNG");
 
@@ -240,7 +240,7 @@ FUNC VOID GILDENSTORY_AL()
 		&& (Npc_GetDistToWP(hero, "GOBBO_MASTERCAVE") < 500)
 		&& (Mod_AL_EnteredGobboCaveFirstTime == FALSE)
 		{
-			B_LogEntry	(TOPIC_MOD_AL_KillMission, "Ich habe es geschafft, jetzt sollte ich erstmal warten.");
+			B_LogEntry	(TOPIC_MOD_AL_KillMission, "Zrobilem to, teraz powinienem poczekac.");
 			B_SetTopicStatus	(TOPIC_MOD_AL_KillMission, LOG_SUCCESS);
 
 			Wld_InsertItem	(ItWr_AL_Zufluchtsnotiz, "FP_ITEM_ZUFLUCHT_NACHRICHT");
@@ -257,7 +257,7 @@ FUNC VOID GILDENSTORY_AL()
 			B_StartOtherRoutine	(Mod_1107_GRD_Jackal_MT, "ABHAUEN");
 			B_StartOtherRoutine	(Mod_1870_EBR_Alissandro_MT, "FLUCHT");
 
-			B_LogEntry	(TOPIC_MOD_AL_WhereAlissandro, "Jackal konnte Alissandro befreien. Wir sollten jetzt zur Zuflucht gehen.");
+			B_LogEntry	(TOPIC_MOD_AL_WhereAlissandro, "Jackal byl w stanie uwolnic Alissandro. Powinnismy teraz udac sie do sanktuarium.");
 
 			Mod_AL_AlissandroBefreit = TRUE;
 		};
@@ -282,56 +282,56 @@ FUNC VOID GILDENSTORY_AL()
 			{
 				AI_TurnToNpc	(DemonKnight_01, hero);
 
-				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_00"); //Halt! Der Boss hat gesagt, wenn hier einer durch will sollen wir...
+				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_00"); //Zatrzymaj sie! Szef powiedzial, ze jesli ktokolwiek chce sie tu przedostac, powinnismy.....
 			};
 
 			if (DemonKnight_Talk == 9)
 			{
 				AI_TurnToNpc	(DemonKnight_01, DemonKnight_02);
 
-				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_01"); //... ähm, was sollen wir?
+				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_01"); //... Co robimy?
 			};
 
 			if (DemonKnight_Talk == 12)
 			{
 				AI_TurnToNpc	(DemonKnight_02, DemonKnight_01);
 
-				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_02"); //Ähm... Ich glaube wir sollen ihn durchlassen, oder?
+				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_02"); //Um.... Mysle, ze powinnismy go przepuscic, czy nie?
 			};
 
 			if (DemonKnight_Talk == 15)
 			{
 				AI_TurnToNpc	(DemonKnight_01, DemonKnight_02);
 
-				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_03"); //Nein, das war´s nicht, glaub ich...
+				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_03"); //Nie, to nie jest, nie sadze, ze....
 			};
 
 			if (DemonKnight_Talk == 20)
 			{
 				AI_TurnToNpc	(DemonKnight_02, DemonKnight_01);
 
-				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_04"); //Verdammt... Hätte wissen sollen das wir nicht dieses Zeug nehmen sollen wenn wir Wache schieben...
+				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_04"); //Damn..... Powinnam wiedziec, ze nie powinnismy brac tych rzeczy, gdy jestesmy na strazy......
 			};
 
 			if (DemonKnight_Talk == 25)
 			{
 				AI_TurnToNpc	(DemonKnight_01, DemonKnight_02);
 
-				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_05"); //Es ist aber echt gut... Vorher habe ich ein Mädchen namens Lucy gesehen... Im Himmel, mit Diamanten...
+				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_05"); //Ale to naprawde dobrze..... Widzialem wczesniej dziewczyne o imieniu Lucy.... Na niebie, z diamentami....
 			};
 
 			if (DemonKnight_Talk == 35)
 			{
 				AI_TurnToNpc	(hero, DemonKnight_01);
 
-				AI_Output(hero, NULL, "Info_Mod_DemonKnight_01_15_06"); //Darf ich jetzt durch oder nicht?
+				AI_Output(hero, NULL, "Info_Mod_DemonKnight_01_15_06"); //Czy moge przepuszczac lub nie?
 			};
 
 			if (DemonKnight_Talk == 40)
 			{
 				AI_TurnToNpc	(DemonKnight_01, hero);
 
-				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_07"); //Weiß nicht, ich geh mal zum Boss und frag ihn ...
+				AI_Output(DemonKnight_01, NULL, "Info_Mod_DemonKnight_01_06_07"); //Nie wiem, jestem gonna ide zobaczyc szefa i poprosic go......
 			};
 
 			if (DemonKnight_Talk == 44)
@@ -340,14 +340,14 @@ FUNC VOID GILDENSTORY_AL()
 
 				AI_TurnToNpc	(DemonKnight_02, hero);
 
-				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_08"); //In der Zeit lass ich dich hier nicht durch, ja?
+				AI_Output(DemonKnight_02, NULL, "Info_Mod_DemonKnight_01_08_08"); //Nie przepuszczam Cie tutaj w tym czasie, dobrze?
 			};
 
 			if (DemonKnight_Talk == 46)
 			{
 				AI_TurnToNpc	(hero, DemonKnight_02);
 
-				AI_Output(hero, NULL, "Info_Mod_DemonKnight_01_15_09"); //Nein... du wirst gleich im Dreck liegen!
+				AI_Output(hero, NULL, "Info_Mod_DemonKnight_01_15_09"); //Nie.... Nie. Bedziesz lezal w brudzie!
 			};
 
 			if (DemonKnight_Talk == 51)
@@ -449,42 +449,42 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 1)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_BerichtBeiBartholo_04_00"); //Wir haben die Kerle gefunden, die für den Tod von Fletcher, Ian und Cathran verantwortlich sind.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_BerichtBeiBartholo_04_00"); //Za smierc Fletchera, Iana i Kathrana uznalismy mezczyzn.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 6)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_00"); //So, dann sind auch diese Ratten in die Falle gegangen. Ich könnte euch töten, wie den Buddler, ich könnte euch auch den Snappern zum Fraß vorwerfen, wie die Köche.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_00"); //No cóz, potem te szczury zostaly uwiezione. Móglbym cie zabic jak Buddlera, móglbym tez rzucic cie do snappera po jedzenie, jak kucharze.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 11)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_01"); //Aber wenn ich schon mal so hohen Besuch habe, will ich euch einige Fragen stellen. Wo haben der alte Mann und seine Anhänger ihr Quartier?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_01"); //Ale skoro mam tak wysokiego rangi goscia, chce zadac kilka pytan. Gdzie starszy czlowiek i jego zwolennicy maja swoje kwatery?
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 16)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_WeißVersteck_04_00"); //Sie sind im alten Bergkastell, dass habe ich bei ihrem Gespräch gehört.
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_WeißVersteck_04_00"); //Jestes w starej górskiej fort, slyszalem, ze rozmawiasz z nia.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 21)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_00"); //Gut Bloodwyn, nimm dir einen Gardisten und unsere zwei Freunde hier und geh zum Bergkastell, ich werde später Verstärkung nachschicken.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_00"); //Dobry Bloodwyn, wezcie tu strazników i naszych dwóch przyjaciól i udaje sie do twierdzy górskiej, pózniej wyslemy zbrojen.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 26)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_01"); //Den beiden wird es sicher gefallen, bei der Vernichtung ihrer Kumpanen zu zu sehen.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_01"); //Jestem pewien, ze dwoje z nich ucieszy sie widzac, jak ich kolesie zostana zniszczone.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 31)
 			{
-				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_GotoBergkastell_04_00"); //Gut, dann kommt mit! (lacht gemein)
+				AI_Output(Mod_1876_EBR_Bloodwyn_MT, NULL, "Info_Mod_Bloodwyn_EBR_GotoBergkastell_04_00"); //Wszystko w porzadku, przyjdz ze mna! (smiech srednio)
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 36)
 			{
-				B_LogEntry	(TOPIC_MOD_AL_KillMission, "Bartholo hat mich mit Jackal und einem Gardisten zum Kastell geschickt, er wird Verstärkung nachschicken.");
+				B_LogEntry	(TOPIC_MOD_AL_KillMission, "Bartholo wyslal mnie do fortu z Jackalem i straznikiem, bedzie wysylal zbrojenia.");
 	
 				B_StartOtherRoutine	(Mod_1106_EBR_Bartholo_MT, "BOSS");
 				B_StartOtherRoutine	(Mod_1876_EBR_Bloodwyn_MT, "GOTOBERGKASTELL");
@@ -531,7 +531,7 @@ FUNC VOID GILDENSTORY_AL()
 		{
 			Mod_AL_Oric = 3;
 
-			B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Kurgan ist tot. Nun sollte ich Oric davon berichten.");
+			B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Kurgan zmarl. Teraz powinienem powiedziec Oricowi o tym.");
 		};
 
 		if (Mod_AL_Oric == 5)
@@ -550,7 +550,7 @@ FUNC VOID GILDENSTORY_AL()
 		{
 			Mod_AL_Oric = 6;
 
-			B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Die Mine gehört uns!");
+			B_LogEntry	(TOPIC_MOD_AL_ERSTERSCHRITT, "Kopalnia jest nasza!");
 		};
 	};
 

@@ -1,7 +1,7 @@
 INSTANCE Mod_1547_PIR_Henry_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Henry";
+	name 		= "Henryka";
 	guild 		= GIL_out;
 	id 			= 1547;
 	voice 		= 4;

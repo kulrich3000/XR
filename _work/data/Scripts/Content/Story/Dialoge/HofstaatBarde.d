@@ -18,12 +18,12 @@ FUNC INT Info_Mod_HofstaatBarde_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatBarde_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_00"); //Ein schwarzer Geselle betritt unser Reich,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_01"); //Die Haare sind blond, das Gesicht ist bleich.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_02"); //Die Narben seiner Seele, die sieht man nicht,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_03"); //Nur den Schrecken in seinem Gesicht.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_04"); //Bringt er uns Freude oder bringt er uns Leid?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_05"); //Kommt er aus Gunst oder kommt er aus Neid?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_00"); //Czarny czarnoskóry czarnoskóry czeladnik wchodzi do naszej sfery,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_01"); //Wlosy sa blond, twarz blada.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_02"); //Blizny jego duszy, nie widac ich,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_03"); //Tylko przerazenie na twarzy.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_04"); //Czy przynosi nam radosc lub cierpienie?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Hi_31_05"); //Czy jest faworyzowany czy zazdrosny?
 
 	AI_StopProcessInfos	(self);
 };
@@ -48,28 +48,28 @@ FUNC INT Info_Mod_HofstaatBarde_Sporen_Condition()
 
 FUNC VOID Info_Mod_HofstaatBarde_Sporen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_00"); //Wer schleicht mit verbotenem Wissen herum?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_01"); //Wer verkauft den hiesigen König für dumm?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_02"); //Wer ist er, der er unser Schicksal trägt,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_03"); //Und noch seine Entscheidung abwägt.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_04"); //Ich habe dich durchschaut. Vom ersten Tag an war mir klar, was du willst, doch ist es dir jetzt klar?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_05"); //Du wurdest geschickt uns zu zerstören,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_06"); //Stattdessen begannst du uns anzugehören.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_07"); //In der einen Hand hältst du die Klinge,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_08"); //In der andren meine Kehle.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_09"); //Und während ich noch hier singe,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_10"); //Hast du nur eine Wahl: WÄHLE!
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_11"); //Willst du Sturm in unsrem Garten säen
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_12"); //Oder ihn gar selbst bebauen?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_13"); //Über unsre Leichen gehen
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_14"); //Oder aus unsrer Mitte schaun?
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_15"); //Entscheide dich, und wähle gut,
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_16"); //Gib uns Hoffnung, gib uns Mut
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_17"); //Oder aber: Nimm sie uns
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_18"); //Und bring das Säckchen in den Sumpf.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_19"); //Entscheide dich, welcher Seite du angehören willst.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_20"); //Willst du bei deiner alten Gemeinschaft im Sumpf bleiben, so bring ihnen dieses Pulver.
-	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_21"); //Willst du aber einer neuen Gemeinschaft nicht alle Hoffnung nehmen, so bringe dieses Pulver dem Alchemisten.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_00"); //Kto przemyka sie z zakazana wiedza?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_01"); //Kto sprzedaje tutejszego króla za glupiego?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_02"); //Kim jest ten, który ponosi nasz los,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_03"); //I nadal wazy jego decyzje.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_04"); //Dostalem sie zorientowalem. Znam to, czego chciales od pierwszego dnia, ale czy zdajesz sobie z tego sprawe teraz?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_05"); //Zostal pan poslany, aby nas zniszczyc,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_06"); //Zamiast tego zaczales do nas przynalezec.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_07"); //W jednej rece przytrzymaj ostrze,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_08"); //W drugim moim gardle.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_09"); //I jeszcze spiewam tutaj,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_10"); //Masz tylko jeden wybór: CHOOSE!
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_11"); //Chcesz zasiac burze w naszym ogrodzie?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_12"); //A moze nawet sam ja kultywowac?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_13"); //Spacer po naszych cialach.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_14"); //A moze spogladajmy z naszej strony?
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_15"); //Zastanów sie i dobrze wybierz,
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_16"); //Daj nam nadzieje, daj nam odwage.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_17"); //Albo inaczej: odebrac nam ja.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_18"); //I zabrac te torbe na bagno.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_19"); //Wybierz strone, do której chcesz nalezec.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_20"); //Jesli chcesz zatrzymac sie w starej spolecznosci w bagnie, przynies im ten proszek.
+	AI_Output(self, hero, "Info_Mod_HofstaatBarde_Sporen_31_21"); //Ale jesli nie chcesz pozbawic nowej wspólnoty wszelkiej nadziei, przynies ten proszek alchemikowi.
 
 	AI_StopProcessInfos	(self);
 
@@ -77,7 +77,7 @@ FUNC VOID Info_Mod_HofstaatBarde_Sporen_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Barde hat mich durchschaut und mich vor die Wahl gestellt. Entweder entscheide ich mich für das Sumpflager, indem ich die Sporen zu Baal Namib bringe, oder aber für den Hofstaat, dann muss ich den königlichen Jäger aufsuchen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Bard zobaczyl mnie i dal mi wybór. Albo zdecyduje sie na obóz bagienny przywiezc do Baala Namiba, albo na dwór królewski, wtedy musze odwiedzic królewskiego mysliwego.");
 };
 
 INSTANCE Info_Mod_HofstaatBarde_Pickpocket (C_INFO)

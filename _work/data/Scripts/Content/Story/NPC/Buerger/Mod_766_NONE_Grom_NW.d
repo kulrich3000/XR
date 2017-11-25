@@ -1,7 +1,7 @@
 INSTANCE Mod_766_NONE_Grom_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Grom";
+	name 		= "zarnowiec";
 	guild 		= GIL_OUT;
 	id 			= 766;
 	voice 		= 8;

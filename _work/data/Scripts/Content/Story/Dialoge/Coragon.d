@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Coragon_Hi_Condition()
 
 FUNC VOID Info_Mod_Coragon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Coragon_Hi_09_00"); //Willkommen in meiner Kneipe, Fremder. Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Coragon_Hi_09_00"); //Witam w moim pubie, obcy. Co moge dla Ciebie zrobic?
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Coragon ist Besitzer einer Kneipe in Khorinis. Er hat sicher was zu trinken für mich.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Coragon jest wlascicielem pubu w Khorinis. Musi miec dla mnie cos do picia.");
 };
 
 INSTANCE Info_Mod_Coragon_MatteoLehrling1 (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Coragon_MatteoLehrling1 (C_INFO)
 	information	= Info_Mod_Coragon_MatteoLehrling1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich da unter deinem Stand gerade etwas bewegt? (Apfel platzieren)";
+	description	= "Czy cos sie po prostu poruszylo pod twoimi stopami? (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Coragon_MatteoLehrling1_Condition()
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Coragon_MatteoLehrling2 (C_INFO)
 	information	= Info_Mod_Coragon_MatteoLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, wird der da drüben nicht gesucht? (Apfel platzieren)";
+	description	= "Hej, nie szukaja go tam? (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Coragon_MatteoLehrling2_Condition()
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Coragon_MatteoLehrling3 (C_INFO)
 	information	= Info_Mod_Coragon_MatteoLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schöne Äpfel hast du da ... (Apfel platzieren)";
+	description	= "Mile jablka, które tam masz.... (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Coragon_MatteoLehrling3_Condition()
@@ -140,17 +140,17 @@ FUNC INT Info_Mod_Coragon_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Coragon_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_00"); //Ahh, wieder ein Gast. Dasselbe wie die anderen?
-	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch_15_01"); //Wie?
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_02"); //Eine große Portion Fleisch und Bier ...
-	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch_15_03"); //Ähh, nein, ich wollte mich eigentlich nur über Ungewöhnliches erkundigen ...
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_04"); //Naja, in letzter Zeit essen alle Gäste Fleisch in rauen Mengen und trinken das Bier literweise ... als ob sie seit Tagen nichts gegessen hätten.
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_05"); //Und so sehen sie auch aus… daran ändert sich aber merkwürdiger Weise auch nichts, egal, wie oft sie meine Gaststätte besuchen.
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_06"); //(zu sich selbst) Müssen wohl alle Bandwürmer haben.
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_00"); //Ahhh, inny gosc. Tak samo jak inni?
+	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch_15_01"); //Jak?
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_02"); //Duza ilosc miesa i piwa....
+	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch_15_03"); //Uh, nie, chcialem po prostu dowiedziec sie o rzeczach niezwyklych....
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_04"); //Cóz, ostatnio wszyscy goscie jedza mieso w surowych ilosciach i pija piwo doslownie..... tak jak nie jadly w ciagu kilku dni.
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_05"); //I tak one wygladaja.... ale dziwnie, bez wzgledu na to, jak czesto odwiedzaja moja restauracje.
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch_09_06"); //Mysle, ze kazdy musi miec tasiemce.
 
 	CreateInvItems	(self, ItFo_KWine, 5);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Von Coragon erfuhr ich, dass seine Gäste Fleisch und Bier in rauen Mengen verschlingen, und trotzdem so aussehen, als würden sie am Hungertuch nagen.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Dowiedzialem sie od Coragona, ze jego goscie pozeraja mieso i piwo w surowych ilosciach, ale wciaz wygladaja tak, jakby jedli na chustce.");
 };
 
 INSTANCE Info_Mod_Coragon_Daemonisch2 (C_INFO)
@@ -174,9 +174,9 @@ FUNC INT Info_Mod_Coragon_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Coragon_Daemonisch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch2_09_00"); //Hey, könntest du mir einen gefallen tun und ein Paket Pökelfleisch von Baltram auf dem Markt holen.
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch2_09_01"); //(etwas leiser) Die gierige Meute müsste bald wieder vorbeikommen und nach mehr Fleisch gieren.
-	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch2_15_02"); //Klar, kein Problem.
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch2_09_00"); //Hej, czy moglabys mi przysluzyc sie i dostac na rynku paczke wyleczonego miesa Baltrama?
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch2_09_01"); //(nieco cichsze) Lakomny pakunek musialby wkrótce wrócic i chciwosc na wiecej miesa.
+	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch2_15_02"); //Oczywiscie, nie ma problemu.
 };
 
 INSTANCE Info_Mod_Coragon_Daemonisch3 (C_INFO)
@@ -187,7 +187,7 @@ INSTANCE Info_Mod_Coragon_Daemonisch3 (C_INFO)
 	information	= Info_Mod_Coragon_Daemonisch3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier das Paket.";
+	description	= "Oto pakiet.";
 };
 
 FUNC INT Info_Mod_Coragon_Daemonisch3_Condition()
@@ -201,15 +201,15 @@ FUNC INT Info_Mod_Coragon_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Coragon_Daemonisch3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch3_15_00"); //Hier das Paket.
+	AI_Output(hero, self, "Info_Mod_Coragon_Daemonisch3_15_00"); //Oto pakiet.
 
 	B_GiveInvItems	(hero, self, ItMi_CoragonDaemonisch2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch3_09_01"); //Sehr gut ... hier 50 Goldmünzen für den Aufwand ...
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch3_09_01"); //Bardzo dobry.... tu 50 zlotych monet dla....
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch3_09_02"); //Da kommen sie ja auch schon.
+	AI_Output(self, hero, "Info_Mod_Coragon_Daemonisch3_09_02"); //Tutaj juz przychodza.
 
 	AI_StopProcessInfos	(self);
 
@@ -260,7 +260,7 @@ INSTANCE Info_Mod_Coragon_WhatHappened (C_INFO)
 	information	= Info_Mod_Coragon_WhatHappened_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit dir los?";
+	description	= "Co jest z Toba?";
 };
 
 FUNC INT Info_Mod_Coragon_WhatHappened_Condition()
@@ -278,21 +278,21 @@ FUNC INT Info_Mod_Coragon_WhatHappened_Condition()
 
 FUNC VOID Info_Mod_Coragon_WhatHappened_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_00"); //Was ist mit dir los?
-	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_01"); //(zynisch) Nichts, nur das ein mieser Dieb mir eine Lieferung von 40 Flaschen Wachholder gestohlen hat. Das ist los.
-	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_02"); //Kann ich dir irgendwie helfen?
-	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_03"); //Ja, das könntest du. Finde diesen miesen Dieb und mach ihn alle.
-	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_04"); //Was springt für mich dabei raus?
-	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_05"); //(überlegt) Hmm ... wärst du mit 300 Goldstücken einverstanden?
-	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_06"); //Natürlich! Wo soll ich anfangen zu suchen?
-	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_07"); //Ich bin so ratlos wie du, aber am besten klapperst du mal das Hafenviertel ab und sprichst dort mit den Leuten!
-	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_08"); //Dann mach ich mich mal auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_00"); //Co jest z Toba?
+	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_01"); //Nic, z wyjatkiem zalosnego zlodzieja ukradl przesylke 40 butelek jalowca. To wlasnie sie dzieje.
+	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_02"); //Czy moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_03"); //Tak, mozna bylo. Znajdz tego zarlocznego zlodzieja i zabij go.
+	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_04"); //Co to dla mnie jest?
+	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_05"); //(przemyslane) Hmm..... Czy móglbys byc w porzadku z 300 kawalkami zlota?
+	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_06"); //Oczywiscie! Gdzie chcesz, abym zaczal szukac?
+	AI_Output(self, hero, "Info_Mod_Coragon_WhatHappened_09_07"); //Jestem tak samo bezradny jak Ty, ale najlepiej jest krecic sie po dzielnicy portowej i rozmawiac z ludzmi!
+	AI_Output(hero, self, "Info_Mod_Coragon_WhatHappened_15_08"); //Bede wiec w drodze.
 
 	CreateInvItems	(Mod_799_BAU_Thekla_NW, ItFo_Booze, 40);
 
 	Log_CreateTopic	(TOPIC_MOD_CORAGON_WACHOLDER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_CORAGON_WACHOLDER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Dem Wirt Coragon wurde eine Lieferung von 40 Flaschen Wacholder gestohlen. Er bat mich den Dieb zu suchen.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Z gospodarzem Coragona skradziono przesylke 40 butelek jalowca. Poprosil mnie o znalezienie zlodzieja.");
 };
 
 INSTANCE Info_Mod_Coragon_Back (C_INFO)
@@ -303,7 +303,7 @@ INSTANCE Info_Mod_Coragon_Back (C_INFO)
 	information	= Info_Mod_Coragon_Back_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Diebstahl aufgelöst.";
+	description	= "Rozstrzygnalem sprawe kradziezy.";
 };
 
 FUNC INT Info_Mod_Coragon_Back_Condition()
@@ -319,43 +319,43 @@ FUNC INT Info_Mod_Coragon_Back_Condition()
 
 FUNC VOID Info_Mod_Coragon_Back_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Coragon_Back_15_00"); //Ich hab den Diebstahl aufgelöst.
-	AI_Output(self, hero, "Info_Mod_Coragon_Back_09_01"); //Wer war es?
+	AI_Output(hero, self, "Info_Mod_Coragon_Back_15_00"); //Rozstrzygnalem sprawe kradziezy.
+	AI_Output(self, hero, "Info_Mod_Coragon_Back_09_01"); //Kim to bylo?
 
 	if (Mod_KnowsRukharWacholder == 2)
 	|| (Mod_KnowsRukharWacholder == 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_02"); //Es war Rukhar.
+		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_02"); //To byl Rukhar.
 	}
 	else if (Mod_KnowsRukharWacholder == 6)
 	{
-		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_03"); //Kardif hat Rukhar mit dem Diebstahl beauftragt. Kardif sitzt jetzt im Gefängnis.
+		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_03"); //Kardif powierzyl Rukharowi kradziez. Karta znajduje sie obecnie w wiezieniu.
 	};
 
 	if (Npc_HasItems(hero, ItFo_Booze) > 39)
 	{
-		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_05"); //Deinen Wacholder hab ich auch dabei.
+		AI_Output(hero, self, "Info_Mod_Coragon_Back_15_05"); //Przynioslem równiez waszego jalowca.
 
 		B_GiveInvItems	(hero, self, ItFo_Booze, 40);
 
 		Mod_KnowsRukharWacholder = 7;
 	};
 
-	AI_Output(self, hero, "Info_Mod_Coragon_Back_09_06"); //Danke du bist ein außergewöhnlicher Kerl! Hier deine versprochene Belohnung.
+	AI_Output(self, hero, "Info_Mod_Coragon_Back_09_06"); //Dziekujemy za niezwykly facet! Oto Twoja obiecana nagroda.
 
 	CreateInvItems	(self, ItMi_Gold, 300);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
 	if (Mod_KnowsRukharWacholder == 7)
 	{
-		AI_Output(self, hero, "Info_Mod_Coragon_Back_09_07"); //Und noch extra was weil du mir meinen Wachholder wieder gebracht hast.
+		AI_Output(self, hero, "Info_Mod_Coragon_Back_09_07"); //A ekstra, bo przywiózles mnie z powrotem do jalowca.
 
 		B_GiveInvItems	(self, hero, ItFo_CoragonsBeer, 3);
 	};
 
 	B_GivePlayerXP	(350);
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Ich habe Coragon Bericht erstattet und meine Belohnung erhalten.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Zglosilem sie do Coragon i otrzymalem nagrode.");
 	B_SetTopicStatus	(TOPIC_MOD_CORAGON_WACHOLDER, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -369,7 +369,7 @@ INSTANCE Info_Mod_Coragon_Zauberwasser (C_INFO)
 	information	= Info_Mod_Coragon_Zauberwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier eine Lieferung Zauberwasser.";
+	description	= "Mam dostawe magicznej wody.";
 };
 
 FUNC INT Info_Mod_Coragon_Zauberwasser_Condition()
@@ -384,11 +384,11 @@ FUNC INT Info_Mod_Coragon_Zauberwasser_Condition()
 
 FUNC VOID Info_Mod_Coragon_Zauberwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Coragon_Zauberwasser_15_00"); //Ich hab hier eine Lieferung Zauberwasser.
+	AI_Output(hero, self, "Info_Mod_Coragon_Zauberwasser_15_00"); //Mam dostawe magicznej wody.
 
 	B_GiveInvItems	(hero, self, ItMi_Zauberwasser_MIS, 8);
 
-	AI_Output(self, hero, "Info_Mod_Coragon_Zauberwasser_09_01"); //Wird auch langsam Zeit.
+	AI_Output(self, hero, "Info_Mod_Coragon_Zauberwasser_09_01"); //Najwyzszy czas.
 };
 
 INSTANCE Info_Mod_Coragon_Trade (C_INFO)

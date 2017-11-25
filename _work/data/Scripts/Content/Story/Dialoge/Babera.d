@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Babera_Unheil (C_INFO)
 	information	= Info_Mod_Babera_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo schönes Kind.";
+	description	= "Witaj piekne dziecko.";
 };
 
 FUNC INT Info_Mod_Babera_Unheil_Condition()
@@ -20,11 +20,11 @@ FUNC INT Info_Mod_Babera_Unheil_Condition()
 
 FUNC VOID Info_Mod_Babera_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Babera_Unheil_15_00"); //Hallo schönes Kind.
-	AI_Output(self, hero, "Info_Mod_Babera_Unheil_16_01"); //Süßholzraspeln ist bei mir nicht. Schon gar nicht im Moment.
-	AI_Output(self, hero, "Info_Mod_Babera_Unheil_16_02"); //Ahh, diese verdammten Rückenschmerzen sind viel schlimmer geworden. Ich könnte die Wände hochlaufen ...
+	AI_Output(hero, self, "Info_Mod_Babera_Unheil_15_00"); //Witaj piekne dziecko.
+	AI_Output(self, hero, "Info_Mod_Babera_Unheil_16_01"); //W moim domu nie mam platków lukrecji. Szczególnie teraz.
+	AI_Output(self, hero, "Info_Mod_Babera_Unheil_16_02"); //Ahh, te cholera bóle z powrotem znacznie sie pogorszyly. Móglbym wzniesc sciany.....
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Babera hat starke Rückenschmerzen seit einiger Zeit.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Babera cierpi od jakiegos czasu na ciezkie bóle pleców.");
 
 	Mod_HinweiseDerBauernZuHexen += 1;
 };

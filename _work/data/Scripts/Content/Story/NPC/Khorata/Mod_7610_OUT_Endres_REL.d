@@ -1,7 +1,7 @@
 INSTANCE Mod_7610_OUT_Endres_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Endres"; 
+	name 		= "endywie"; 
 	guild 		= GIL_OUT;
 	id 			= 7610;
 	voice 		= 13;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mirza_Hi (C_INFO)
 	information	= Info_Mod_Mirza_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich denke, du bist die nächste Sprosse bei meiner Leiter zum Novizen.";
+	description	= "Mysle, ze jestes nastepnym szczeblem mojej drabiny dla nowicjusza.";
 };
 
 FUNC INT Info_Mod_Mirza_Hi_Condition()
@@ -19,28 +19,28 @@ FUNC INT Info_Mod_Mirza_Hi_Condition()
 
 FUNC VOID Info_Mod_Mirza_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_00"); //Ich denke, du bist die nächste Sprosse bei meiner Leiter zum Novizen.
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_01"); //Das stimmt. Und es ist nicht die letzte ...
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_02"); //Schade. Was darf's denn sein?
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_03"); //Ich habe da ein Problem ...
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_04"); //Bei dem ich dir helfen soll?
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_05"); //Ganz recht. Die Angelegenheit ist etwas ... heikel ...
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_06"); //Nun erzähl schon.
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_07"); //Ich habe einen wertvollen Gegenstand verloren, den mir der Hohe Rat zur Aufbewahrung anvertraut hat.
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_08"); //Um was handelt es sich?
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_09"); //Es ist ein seltenes Amulett. Unlängst war ich nachts draußen unterwegs, um die seltene Heilknospe zu suchen. Da muss es mir aus dem Beutel gefallen sein.
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_10"); //Wo warst du unterwegs?
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_11"); //Auf dem Weg vom Leuchtturm in den großen Wald. Ich ahnte nichts Böses, da ist ein Rudel Warge über mich hergefallen.
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_12"); //Ein paar konnte ich töten, aber es waren einfach zu viele. Hab dann mein Heil in der Flucht gesucht. Und seitdem ist das Teil verschwunden.
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_13"); //Warge sagst du? Gefährliche Viecher sind das.
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_14"); //Das kannst du laut sagen. Glaubst du, du findest das für mich?
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_15"); //Ich kann's versuchen. Was würdest du tun, wenn du keine Stimme zu vergeben hättest?
-	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_16"); //Gute Frage. Keine Ahnung. Aber du bekommst meine Stimme. Versprochen.
-	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_17"); //Dein Wort in Beliars Ohr!
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_00"); //Mysle, ze jestes nastepnym szczeblem mojej drabiny dla nowicjusza.
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_01"); //To prawda. I to nie ostatni....
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_02"); //Zbyt zle. Co moge Ci dostac?
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_03"); //Mam problem....
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_04"); //Z czym mam Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_05"); //Calkiem tak. Sprawa jest w pewnym sensie.... wrazliwy
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_06"); //Powiedz mi o tym.
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_07"); //Zagubilem cenna rzecz, która powierzyla mi Wysoka Rada w celu zapewnienia bezpieczenstwa.
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_08"); //O co to jest?
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_09"); //Jest to rzadki amulet. Niedawno wyszedlem w nocy szukajac rzadkiego leczniczego budka. Musialo to byc wypadniecie z mojej torby.
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_10"); //Gdzie byles na drodze?
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_11"); //W drodze z latarni morskiej do duzego lasu. Nie podejrzewalem nic zlego, przyjezdza do mnie paczka Warge.
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_12"); //Moglem zabic kilka osób, ale bylo ich zbyt wiele. Wtedy szukalem zbawienia w biegu. I od tego czasu to wszystko zniknelo.
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_13"); //Ostroznie, mówisz? To sa niebezpieczne zwierzeta.
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_14"); //Mozna to powiedziec jeszcze raz. Myslisz, ze znajdziesz to dla mnie?
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_15"); //Moge spróbowac. Co bys zrobil, gdybys nie mial glosu do przebaczenia?
+	AI_Output(self, hero, "Info_Mod_Mirza_Hi_12_16"); //Dobre pytanie. Nie wiem o tym. Ale otrzymuja panstwo mój glos. Obiecuje.
+	AI_Output(hero, self, "Info_Mod_Mirza_Hi_15_17"); //Twoje slowo w uchu Beliara!
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_AMULETT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AMULETT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_AMULETT, "Mirza hat ein Amulett im dunklen Wald verloren. Ich soll es finden. Bringt mir eine Stimme. Am Besten fange ich oben beim Leuchtturm an.");
+	B_LogEntry	(TOPIC_MOD_ASS_AMULETT, "Mirza stracil amulet w ciemnym lesie. Mam ja znalezc. Pozwól mi zabrac glos. Najlepiej zaczac od latarni morskiej na górze.");
 
 	Wld_InsertNpc	(Warg,	"NW_FOREST_PATH_33");
 	Wld_InsertNpc	(Warg,	"NW_FOREST_PATH_33");
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Mirza_Amulett (C_INFO)
 	information	= Info_Mod_Mirza_Amulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bin zurück. Mit Amulett.";
+	description	= "Wracam. Z amuletem.";
 };
 
 FUNC INT Info_Mod_Mirza_Amulett_Condition()
@@ -73,21 +73,21 @@ FUNC INT Info_Mod_Mirza_Amulett_Condition()
 
 FUNC VOID Info_Mod_Mirza_Amulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_00"); //Bin zurück. Mit Amulett.
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_00"); //Wracam. Z amuletem.
 
 	B_GiveInvItems	(hero, self, ItAm_Mirza, 1);
 
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_01"); //Wo hast du's gefunden?
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_02"); //Im Magen eines Warges.
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_03"); //Da haben wir aber Glück gehabt!
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_04"); //Wir? Du, würde ich sagen.
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_05"); //Wie auch immer. Ich stimme für dich.
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_06"); //Was ist das eigentlich für ein Amulett.
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_07"); //Das weiß ich auch nicht genau. Man munkelt, angelegt macht es unverwundbar. Aber das kann ich nicht glauben.
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_08"); //Hmm. Interessant! Vielleicht kann man mehr darüber erfahren.
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_09"); //Zu wem könnte ich noch gehen?
-	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_10"); //Probier's mal bei Aiman. Der hat immer was zu delegieren.
-	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_11"); //Ja. Mach's gut.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_01"); //Gdzie znalazles?
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_02"); //W zoladku warg.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_03"); //Mielismy szczescie!
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_04"); //My? Ja powiedzialbym.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_05"); //Jednakze. Glosuje za Toba.
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_06"); //Jaki to amulet.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_07"); //Tak naprawde nie wiem. To pogloski, wlozenie i zakladanie sprawia, ze jest to niewrazliwe. Ale nie moge w to uwierzyc.
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_08"); //Hmm. Ciekawe! Moze mozna sie o tym dowiedziec wiecej.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_09"); //Do kogo jeszcze moge sie udac?
+	AI_Output(hero, self, "Info_Mod_Mirza_Amulett_15_10"); //Wypróbuj Aimana. Zawsze ma cos do delegowania.
+	AI_Output(self, hero, "Info_Mod_Mirza_Amulett_12_11"); //Tak. Teraz nalezy zachowac ostroznosc.
 
 	B_GivePlayerXP	(100);
 
@@ -102,7 +102,7 @@ INSTANCE Info_Mod_Mirza_Blutkelch (C_INFO)
 	information	= Info_Mod_Mirza_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hab ich dich! Was wolltet ihr mit den Kelchen, sprich!";
+	description	= "Got ya! Czego chciales z pucharkami, mów!";
 };
 
 FUNC INT Info_Mod_Mirza_Blutkelch_Condition()
@@ -115,32 +115,32 @@ FUNC INT Info_Mod_Mirza_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Mirza_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_00"); //Hab ich dich! Was wolltet ihr mit den Kelchen, sprich!
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_01"); //Erbarmen! Wir sind im Auftrag unseres Anführers Norek unterwegs.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_02"); //Was für ein Auftrag?
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_03"); //Wir richten eine Außenstelle für einige unserer Leute ein. Ihnen ist es zu eng geworden hier im Lager.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_04"); //Welche Leute?
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_05"); //Nun, wir Magier ...
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_06"); //Und dazu musstet ihr den Händler erschlagen?
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_07"); //Er wohnt ganz in der Nähe. Er hätte uns bemerken können.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_08"); //Und mich wolltet ihr auch umbringen.
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_09"); //Keine Ahnung, warum Mufid dich angegriffen hat.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_10"); //Und der Kelch?
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_11"); //Ich weiß nichts von einem Kelch.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_12"); //Du lügst! Du erzählst mir jetzt alles oder du wirst nie mehr Gelegenheit haben, was zu sagen.
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_13"); //Was es mit den Kelchen auf sich hat, weiß ich wirklich nicht. Da musst du den Rat fragen.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_14"); //Und weiter?
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_15"); //Wie gesagt, Norek will, dass wir Magier uns absetzen. Dann soll Zahit, der in der Stadt ist, den Paladinen einen Tip geben, dass Assassinenkrieger sich in Nähe der Stadt befinden.
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_16"); //Norek glaubt, dass er uns Magiern damit ein Existenzrecht auf Khorinis sichern kann, damit wir uns im Land frei bewegen können und uns nicht mehr hier verstecken müssen.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_17"); //Unglaublich! Ihr wollt eure Brüder verraten.
-	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_18"); //Das ist nicht meine Idee. Norek will das. Und die meisten Magier.
-	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_19"); //Und du, wie man sieht. Dafür stirbst du, Verräter!
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_00"); //Got ya! Czego chciales z pucharkami, mów!
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_01"); //Milosierdzie! Jestesmy w imieniu naszego lidera Noreka.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_02"); //Jakiego rodzaju zadanie?
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_03"); //Dla niektórych naszych pracowników zakladamy biuro terenowe. To jest dla nich zbyt blisko w obozie.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_04"); //Jakie osoby?
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_05"); //Cóz, my czarnoksieznik....
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_06"); //I do tego trzeba bylo zabic kupca?
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_07"); //Mieszka w poblizu. Mógl nas dostrzec.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_08"); //I ja tez próbowales mnie zabic.
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_09"); //Nie wiem, dlaczego Mufid cie zaatakowal.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_10"); //I filizanka?
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_11"); //Nie wiem nic o filizance.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_12"); //Klamasz! Mówisz mi wszystko teraz lub nigdy nie bedziesz mial kolejnej szansy, aby cos powiedziec.
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_13"); //Naprawde nie wiem, na czym polegaja kielichy. Bedziesz musial zwrócic sie do Rady.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_14"); //Co dalej?
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_15"); //Jak juz powiedzialem, Norek chce, zebysmy my upuscili magów. Nastepnie Zahit, który jest w miescie, ma dac paladynom wskazówke, ze wojownicy zabójcy sa blisko miasta.
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_16"); //Norek wierzy, ze moze dac nam magów prawo do egzystencji na khorynach, abysmy mogli swobodnie poruszac sie po kraju i nie musieli juz tu sie ukrywac.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_17"); //Niewiarygodny! Chcesz zdradzic swoich braci.
+	AI_Output(self, hero, "Info_Mod_Mirza_Blutkelch_12_18"); //To nie jest mój pomysl. Norek tego chce. I wiekszosc magów.
+	AI_Output(hero, self, "Info_Mod_Mirza_Blutkelch_15_19"); //A ty, jak widac. Umrzesz za to, zdrajca!
 
 	B_GivePlayerXP	(100);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_VERSCHWOERUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_VERSCHWOERUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_VERSCHWOERUNG, "Hier ist eine Verschwörung im Gange. Die Magier wollen sich absetzen und dann die Krieger an die Paladine verraten. Ich muss unbedingt mit Mustafa sprechen. Am Besten unbelauscht.");
+	B_LogEntry	(TOPIC_MOD_ASS_VERSCHWOERUNG, "Tocza sie tu konspiracje. Magicy chca sie oderwac, a nastepnie zdradzic wojowników na paladynów. Naprawde musze porozmawiac z Mustafa. Co najwazniejsze, slychac.");
 };
 
 INSTANCE Info_Mod_Mirza_Pickpocket (C_INFO)

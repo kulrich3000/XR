@@ -1,7 +1,7 @@
 INSTANCE Mod_6001_DMR_Raven_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Raven";
+	name 		= "kruk";
 	guild 		= GIL_OUT;
 	id 			= 6001;
 	voice 		= 10;

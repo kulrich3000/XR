@@ -37,7 +37,7 @@ INSTANCE Info_OM_BUD_2_Mine (C_INFO) // E1
 	condition	= Info_OM_BUD_2_Mine_Condition;
 	information	= Info_OM_BUD_2_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "Opowiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT Info_OM_BUD_2_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_OM_BUD_2_Mine_Condition()
 
 FUNC VOID Info_OM_BUD_2_Mine_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_01"); //Es gibt einen ganzen Haufen Höhlen, in denen auch noch Erz zu holen ist. Aber die Crawler, machen die Arbeit darin unmöglich.
-	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_02"); //Zu viele Angriffe, zu viele Verluste.
+	AI_Output(other,self,"Info_OM_BUD_2_Mine_15_00"); //Opowiedz mi o mojej kopalni.
+	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_01"); //Jest tu cala masa jaskin, gdzie mozna znalezc rude. Jednak gasienice uniemozliwiaja jej prace.
+	AI_Output(self,other,"Info_OM_BUD_2_Mine_01_02"); //Zbyt wiele ataków, zbyt wiele ofiar.
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_2_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_2_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu Sagen?";
+	description = "Kto ma w tym cos do powiedzenia?";
 };                       
 
 FUNC INT Info_OM_BUD_2_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_OM_BUD_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_OM_BUD_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_OM_BUD_2_WichtigePersonen_01_01"); //Viper ist der Schmelzer. Er kennt sich mit dem Ofen aus. Er hat einen Körper aus Stahl. Ihm macht die Hitze nichts aus. Den ganzen Tag schmilzt er das Erz ein.
+	AI_Output(other,self,"Info_OM_BUD_2_WichtigePersonen_15_00"); //Kto ma cos do powiedzenia?
+	AI_Output(self,other,"Info_OM_BUD_2_WichtigePersonen_01_01"); //Wygladza sie zmija. Wie o piecu. Ma stalowy korpus. Nie przeszkadza mu cieplo. Stale topi rude przez caly dzien.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_2_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_2_DieLage_Condition;
 	information	= Info_OM_BUD_2_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_OM_BUD_2_DieLage_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_OM_BUD_2_DieLage_Condition()
 
 FUNC VOID Info_OM_BUD_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_OM_BUD_2_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_OM_BUD_2_DieLage_01_01"); //Ich muss arbeiten. Wenn die Wachen sehen, dass ich rede, dann kürzen sie meine Ration oder töten mich gleich.
+	AI_Output(other,self,"Info_OM_BUD_2_DieLage_15_00"); //Jak wyglada?
+	AI_Output(self,other,"Info_OM_BUD_2_DieLage_01_01"); //Musze pracowac. Kiedy straznicy zobacza, ze mówie, obcieli mi racje albo mnie zabija.
 };
 
 INSTANCE Info_Mod_OM_BUD_2_Pickpocket (C_INFO)

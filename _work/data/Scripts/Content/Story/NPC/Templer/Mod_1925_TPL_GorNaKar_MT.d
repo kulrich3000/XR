@@ -1,7 +1,7 @@
 instance Mod_1925_TPL_GorNaKar_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Gor Na Kar";
+	name =							"Gor Na Kar Kar";
 	npctype =						NPCTYPE_main;
 	guild =							GIL_out;
 	level =							12;

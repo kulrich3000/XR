@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Tengron_Hi (C_INFO)
 	information	= Info_Mod_Tengron_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Tengron_Hi_Condition()
@@ -16,31 +16,31 @@ FUNC INT Info_Mod_Tengron_Hi_Condition()
 
 FUNC VOID Info_Mod_Tengron_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_15_00"); //Was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Tengron_Hi_07_01"); //Aufpassen.
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_15_02"); //Meinst du nicht, Garond und die Stadtwachen schaffen das allein?
-	AI_Output(self, hero, "Info_Mod_Tengron_Hi_07_03"); //Äh ... Nein. Ich passe auf ... etwas anderes auf.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_15_00"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Tengron_Hi_07_01"); //Obserwuj swój krok.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_15_02"); //Czy nie sadzisz, ze Garond i straznicy miejscy poradza sobie z tym samodzielnie?
+	AI_Output(self, hero, "Info_Mod_Tengron_Hi_07_03"); //Uh.... Nie. Obserwuje.... cos jeszcze innego.
 
 	Info_ClearChoices	(Info_Mod_Tengron_Hi);
 
-	Info_AddChoice	(Info_Mod_Tengron_Hi, "Lass mich raten: Du überwachst Garond.", Info_Mod_Tengron_Hi_B);
-	Info_AddChoice	(Info_Mod_Tengron_Hi, "Interessiert mich nicht weiter.", Info_Mod_Tengron_Hi_A);
+	Info_AddChoice	(Info_Mod_Tengron_Hi, "Pozwólcie mi sie zgadnac, sledzicie panstwo pana Garonda.", Info_Mod_Tengron_Hi_B);
+	Info_AddChoice	(Info_Mod_Tengron_Hi, "Nie obchodzi mnie, co sie dalej dzieje.", Info_Mod_Tengron_Hi_A);
 };
 
 FUNC VOID Info_Mod_Tengron_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_00"); //Lass mich raten: Du überwachst Garond.
-	AI_Output(self, hero, "Info_Mod_Tengron_Hi_B_07_01"); //Dazu darf ich nichts sagen.
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_02"); //Er ist wohl bei Lord Hagen in Ungnade gefallen?
-	AI_Output(self, hero, "Info_Mod_Tengron_Hi_B_07_03"); //Mag sein.
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_04"); //Kein Wunder. Dann mal noch viel Spaß.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_00"); //Pozwólcie mi sie zgadnac, sledzicie panstwo pana Garonda.
+	AI_Output(self, hero, "Info_Mod_Tengron_Hi_B_07_01"); //Nie moge sie wypowiedziec na ten temat.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_02"); //Przypuszczam, ze Pan Hagen zhanbil go?
+	AI_Output(self, hero, "Info_Mod_Tengron_Hi_B_07_03"); //Moze tak.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_B_15_04"); //Nic dziwnego. Dobrze sie bawic.
 
 	Info_ClearChoices	(Info_Mod_Tengron_Hi);
 };
 
 FUNC VOID Info_Mod_Tengron_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Hi_A_15_00"); //Interessiert mich nicht weiter.
+	AI_Output(hero, self, "Info_Mod_Tengron_Hi_A_15_00"); //Nie obchodzi mnie, co sie dalej dzieje.
 
 	Info_ClearChoices	(Info_Mod_Tengron_Hi);
 };
@@ -53,7 +53,7 @@ INSTANCE Info_Mod_Tengron_WillPaladinWerden (C_INFO)
 	information	= Info_Mod_Tengron_WillPaladinWerden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nehmen wir mal an, ich wollte ein Paladin werden ...";
+	description	= "Powiedzmy, ze chcialem zostac paladyna....";
 };
 
 FUNC INT Info_Mod_Tengron_WillPaladinWerden_Condition()
@@ -63,10 +63,10 @@ FUNC INT Info_Mod_Tengron_WillPaladinWerden_Condition()
 
 FUNC VOID Info_Mod_Tengron_WillPaladinWerden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_WillPaladinWerden_15_00"); //Nehmen wir mal an, ich wollte ein Paladin werden ...
-	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_01"); //Nur die besten Milizionäre steigen zu Paladinen auf. Wir fordern absolute Treue zu Innos und zu Lord Hagen.
-	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_02"); //Außerdem muss ein Paladin mit dem Schwert umzugehen wissen.
-	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_03"); //Die Miliz findest du in der Kaserne. Lord Andre wird dich einweisen, wenn er dich für geeignet hält.
+	AI_Output(hero, self, "Info_Mod_Tengron_WillPaladinWerden_15_00"); //Powiedzmy, ze chcialem zostac paladyna....
+	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_01"); //Tylko najlepsi milicjanci wspinaja sie na paladynów. Domagamy sie calkowitej lojalnosci wobec Innosa i Lorda Hagena.
+	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_02"); //Paladyn musi równiez wiedziec, jak uzywac miecza.
+	AI_Output(self, hero, "Info_Mod_Tengron_WillPaladinWerden_07_03"); //Milicja znajduje sie w barakach. Lord Andre bedzie cie popelnil, jesli uzna cie za odpowiedniego.
 };
 
 INSTANCE Info_Mod_Tengron_Daemonisch (C_INFO)
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Tengron_Daemonisch (C_INFO)
 	information	= Info_Mod_Tengron_Daemonisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir erzählen, was im dunklen Wald vorgefallen ist.";
+	description	= "Czy moze mi Pan powiedziec, co wydarzylo sie w ciemnym lesie?";
 };
 
 FUNC INT Info_Mod_Tengron_Daemonisch_Condition()
@@ -90,21 +90,21 @@ FUNC INT Info_Mod_Tengron_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Tengron_Daemonisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_00"); //Kannst du mir erzählen, was im dunklen Wald vorgefallen ist.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_01"); //(resigniert) Ach, ist nicht so wichtig, wahrscheinlich habe ich nur den Verstand verloren ...
-	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_02"); //Nein, es interessiert mich wirklich. Es könnte von großer Wichtigkeit für die Sicherheit der Stadt sein ...
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_03"); //(etwas hellhöriger) Meinst du wirklich? Nun, ich werde dir erzählen, was ich gesehen habe ...
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_04"); //Es war zwar schon später Abend, als ich aufbrach und ich hatte keine Fackel bei mir, aber ich bediente mich des heiligen Paladinlichtes, um die Umgebung etwas zu erhellen.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_05"); //Ich trat also in das kleine Tal und konnte zunächst nichts entdecken ...
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_06"); //Als ich mich aber Umsah, so sah ich von weitem bei einer Höhle etwas Glänzendes liegen.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_07"); //Als ich näher herantrat, musste ich zu meinem Entsetzen feststellen, dass es die Paladine und Stadtwachen waren, die sich regungslos am Boden befanden.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_08"); //Gerade in diesem Augenblick erlosch mein Licht.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_09"); //Ich sammelte mein Mana um das Licht nochmals zu entzünden ... und sah mich plötzlich von dutzenden schwarzer ... Schatten umgeben, die kreischend in alle Richtungen zerstoben.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_10"); //Von entsetzlicher Angst gepackt ergriff ich die Flucht zurück zur Stadt ...
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_11"); //Tja, und wieso ich hier sitze, weißt du wahrscheinlich.
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_12"); //Meine Kameraden kamen aus dem Wald uns bezichtigten mich, sie angegriffen zu haben ...
-	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_13"); //Wer war alles unter den Männern im Wald?
-	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_14"); //Nun, unter den Paladinen ... (wird unterbrochen)
+	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_00"); //Czy moze mi Pan powiedziec, co wydarzylo sie w ciemnym lesie?
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_01"); //Och, to nie jest tak wazne, prawdopodobnie po prostu stracilem umysl....
+	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_02"); //Nie, jestem naprawde zainteresowany. Moze to miec ogromne znaczenie dla bezpieczenstwa miasta.....
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_03"); //Czy naprawde tak sadzisz? Cóz, opowiem ci co widzialem....
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_04"); //Bylo juz pózno wieczorem, kiedy wyszedlem i nie mialem przy sobie pochodni, ale uzylem swiatla swietego paladynowego, aby oswietlic otoczenie.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_05"); //Wiec wstapilem do malej doliny i na poczatku nie widzialem niczego......
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_06"); //Kiedy jednak rozejrzalem sie dookola, zobaczylem cos blyszczacego lezacego w jaskini z daleka.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_07"); //Gdy zblizylem sie blizej, przerazalo mnie odkrycie, ze to paladyni i straznicy miejscy stali bez ruchu na ziemi.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_08"); //W tej wlasnie chwili zgaslo mi swiatlo.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_09"); //Zebralem swoja mane, aby ponownie zapalic swiatlo..... i nagle zobaczylem mnie od dziesiatków lat czerni.... cienie pachnace we wszystkich kierunkach.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_10"); //Pelna strasznego strachu zabralam ucieczke z powrotem do miasta......
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_11"); //No cóz, pewnie wiesz, dlaczego tu siedze.
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_12"); //Moi koledzy wyszli z lasu i oskarzyli mnie o atakowanie ich......
+	AI_Output(hero, self, "Info_Mod_Tengron_Daemonisch_15_13"); //Kim byli wszyscy mezczyzni w lesie?
+	AI_Output(self, hero, "Info_Mod_Tengron_Daemonisch_07_14"); //No cóz, posród paladynów.... (zaklócone)
 
 	AI_StopProcessInfos	(self);
 };
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Tengron_Irdorath (C_INFO)
 	information	= Info_Mod_Tengron_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich breche demnächst mit dem Schiff zu einer Insel auf.";
+	description	= "Wkrótce wyjade na wyspe statkiem.";
 };
 
 FUNC INT Info_Mod_Tengron_Irdorath_Condition()
@@ -131,10 +131,10 @@ FUNC INT Info_Mod_Tengron_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Tengron_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath_15_00"); //Ich breche demnächst mit dem Schiff zu einer Insel auf.
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath_15_01"); //Es geht darum einen Lakaien des Xeres zu bannen, jenem Unhold, der mit dunkler Magie fast die Stadt unter seine Kontrolle gebracht hätte.
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath_07_02"); //Tatsächlich, den üblen Magier der für das alles verantwortlich war strafen?
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath_07_03"); //Nur zu gerne würde ich dich begleiten ...
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath_15_00"); //Wkrótce wyjade na wyspe statkiem.
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath_15_01"); //Chodzi o to, aby pozbyc sie braków Xeres, ogre, który prawie przyniósl miasto pod jego kontrola z ciemna magia.
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath_07_02"); //Karac zlego maga, który byl odpowiedzialny za to wszystko?
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath_07_03"); //Uwielbiam isc z Toba....
 };
 
 INSTANCE Info_Mod_Tengron_Irdorath2 (C_INFO)
@@ -145,7 +145,7 @@ INSTANCE Info_Mod_Tengron_Irdorath2 (C_INFO)
 	information	= Info_Mod_Tengron_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann komm doch einfach mit.";
+	description	= "Wtedy po prostu przyjdzcie ze mna.";
 };
 
 FUNC INT Info_Mod_Tengron_Irdorath2_Condition()
@@ -159,13 +159,13 @@ FUNC INT Info_Mod_Tengron_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Tengron_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath2_15_00"); //Dann komm doch einfach mit.
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_01"); //Das hieße aber dann meinen Posten in der Stadt zu verlassen ...
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath2_15_02"); //... genau wie damals, als du einer der wenigen warst, die die Gefahr für die Stadt erkannten.
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_03"); //Hmm, ja, du hast Recht. Hier scheint es um viel mehr zu gehen ...
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_04"); //In Ordnung, ich werde dann am Hafen auf den Aufbruch warten.
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath2_15_00"); //Wtedy po prostu przyjdzcie ze mna.
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_01"); //Ale to oznaczaloby opuszczenie mojego stanowiska w miescie.....
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath2_15_02"); //... Jak gdybys byl jedna z niewielu osób, które widzialy zagrozenie dla miasta.
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_03"); //Hmm, tak, masz racje. Wydaje sie, ze to o wiele wiecej.....
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath2_07_04"); //W porzadku, bede czekal na wylot w porcie.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Sehr gut, mit ein bisschen Überzeugungsarbeit konnte ich auch Tengron davon überzeugen, mit auf das Schiff zu kommen.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Bardzo dobrze, z odrobina perswazji udalo mi sie przekonac Tengron do przylaczenia sie do statku.");
 
 	B_GivePlayerXP	(100);
 
@@ -186,7 +186,7 @@ INSTANCE Info_Mod_Tengron_Irdorath3 (C_INFO)
 	information	= Info_Mod_Tengron_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Tengron_Irdorath3_Condition()
@@ -203,8 +203,8 @@ FUNC INT Info_Mod_Tengron_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Tengron_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath3_07_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath3_07_01"); //Zbyt zle. Wróce wtedy. Wiesz, gdzie mnie znalezc, jesli kiedykolwiek zostanie jakies miejsce.
 
 	Mod_TengronDabei = 0;
 
@@ -223,7 +223,7 @@ INSTANCE Info_Mod_Tengron_Irdorath4 (C_INFO)
 	information	= Info_Mod_Tengron_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "Moge dac ci przejazdzke.";
 };
 
 FUNC INT Info_Mod_Tengron_Irdorath4_Condition()
@@ -238,8 +238,8 @@ FUNC INT Info_Mod_Tengron_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Tengron_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath4_07_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Tengron_Irdorath4_15_00"); //Moge dac ci przejazdzke. Na statku znajduje sie pomieszczenie.
+	AI_Output(self, hero, "Info_Mod_Tengron_Irdorath4_07_01"); //Bardzo dobrze, wróce do portu.
 
 	Mod_TengronDabei = 1;
 
@@ -258,7 +258,7 @@ INSTANCE Info_Mod_Tengron_HaradLehrling (C_INFO)
 	information	= Info_Mod_Tengron_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen Harad ...";
+	description	= "Z powodu Harada....";
 };
 
 FUNC INT Info_Mod_Tengron_HaradLehrling_Condition()
@@ -272,9 +272,9 @@ FUNC INT Info_Mod_Tengron_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Tengron_HaradLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_HaradLehrling_15_00"); //Wegen Harad ...
-	AI_Output(self, hero, "Info_Mod_Tengron_HaradLehrling_07_01"); //Spar dir den Atem! Die Beweise für seine Schuld sind erbracht.
-	AI_Output(self, hero, "Info_Mod_Tengron_HaradLehrling_07_02"); //Alles Weitere liegt in Lord Andres Hand, nicht in meiner.
+	AI_Output(hero, self, "Info_Mod_Tengron_HaradLehrling_15_00"); //Z powodu Harada....
+	AI_Output(self, hero, "Info_Mod_Tengron_HaradLehrling_07_01"); //Zapisz oddech! Dowód jego winy zostal przedstawiony.
+	AI_Output(self, hero, "Info_Mod_Tengron_HaradLehrling_07_02"); //Wszystko inne jest w reku Pana Andresa, a nie moje.
 };
 
 INSTANCE Info_Mod_Tengron_BinPaladin (C_INFO)
@@ -285,7 +285,7 @@ INSTANCE Info_Mod_Tengron_BinPaladin (C_INFO)
 	information	= Info_Mod_Tengron_BinPaladin_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin jetzt auch ein Paladin.";
+	description	= "Jestem tez teraz paladyna.";
 };
 
 FUNC INT Info_Mod_Tengron_BinPaladin_Condition()
@@ -298,9 +298,9 @@ FUNC INT Info_Mod_Tengron_BinPaladin_Condition()
 
 FUNC VOID Info_Mod_Tengron_BinPaladin_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Tengron_BinPaladin_15_00"); //Ich bin jetzt auch ein Paladin.
-	AI_Output(self, hero, "Info_Mod_Tengron_BinPaladin_07_01"); //Du bist also der Neue. Hast ja einen rasanten Aufstieg hinter dir. Manche brauchen da länger. Schau dir Mario an. (lacht)
-	AI_Output(self, hero, "Info_Mod_Tengron_BinPaladin_07_02"); //Wenn Lord Hagen dir vertraut, tue ich es auch. Möge Innos dich auf deinen Wegen behüten.
+	AI_Output(hero, self, "Info_Mod_Tengron_BinPaladin_15_00"); //Jestem tez teraz paladyna.
+	AI_Output(self, hero, "Info_Mod_Tengron_BinPaladin_07_01"); //Jestes wiec nowym facetem. Miales szybki wzrost. Niektóre trwaja dluzej. Prosze spojrzec na Mario. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Tengron_BinPaladin_07_02"); //Jesli Lord Hagen jest wam zaufany, tak samo jak ja. Niech Innos strzega cie na twoich drogach.
 };
 
 INSTANCE Info_Mod_Tengron_Beliar (C_INFO)
@@ -324,7 +324,7 @@ FUNC INT Info_Mod_Tengron_Beliar_Condition()
 
 FUNC VOID Info_Mod_Tengron_Beliar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Tengron_Beliar_07_00"); //(kreischt) Ahhhhh! Nimm deine Finger von mir, Beliargezücht!
+	AI_Output(self, hero, "Info_Mod_Tengron_Beliar_07_00"); //(shrieks) Ahhhhhhhhhhhhh! Zabierzcie mnie z rak, rase Beliar!
 
 	AI_StopProcessInfos	(self);
 };

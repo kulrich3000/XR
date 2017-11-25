@@ -18,7 +18,7 @@ INSTANCE PC_Baumstamm_CoragonStuhl (C_INFO)
 	information	= PC_Baumstamm_CoragonStuhl_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Stuhl anfertigen (5 Bretter)";
+	description	= "Produkcja krzesel (5 desek)";
 };
 
 FUNC INT PC_Baumstamm_CoragonStuhl_Condition()
@@ -35,7 +35,7 @@ FUNC VOID PC_Baumstamm_CoragonStuhl_Info()
 {
 	if (Npc_HasItems(hero, ItMi_Brett) >= 5)
 	{
-		Print	("Bretter zurechtgesägt!");
+		Print	("Tablice przycinane do rozmiaru!");
 
 		Npc_RemoveInvItems	(hero, ItMi_Brett, 5);
 
@@ -43,7 +43,7 @@ FUNC VOID PC_Baumstamm_CoragonStuhl_Info()
 	}
 	else
 	{
-		Print	("Nicht genug Bretter!");
+		Print	("Nie wystarczy desek!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -57,7 +57,7 @@ INSTANCE PC_Baumstamm_MatteoFesttisch (C_INFO)
 	information	= PC_Baumstamm_MatteoFesttisch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tisch anfertigen (6 Bretter)";
+	description	= "Tworzenie stolu (6 desek)";
 };
 
 FUNC INT PC_Baumstamm_MatteoFesttisch_Condition()
@@ -74,7 +74,7 @@ FUNC VOID PC_Baumstamm_MatteoFesttisch_Info()
 {
 	if (Npc_HasItems(hero, ItMi_Brett) >= 6)
 	{
-		Print	("Bretter zurechtgesägt!");
+		Print	("Tablice przycinane do rozmiaru!");
 
 		Npc_RemoveInvItems	(hero, ItMi_Brett, 6);
 
@@ -82,7 +82,7 @@ FUNC VOID PC_Baumstamm_MatteoFesttisch_Info()
 	}
 	else
 	{
-		Print	("Nicht genug Bretter!");
+		Print	("Nie wystarczy desek!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -96,7 +96,7 @@ INSTANCE PC_Baumstamm_Schmuckkasten (C_INFO)
 	information	= PC_Baumstamm_Schmuckkasten_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schmuckkästchen anfertigen (10 Äste und 2 Bergkristalle)";
+	description	= "Wykonaj pudelka na bizuterie (10 oddzialów i 2 krysztaly skalne)";
 };
 
 FUNC INT PC_Baumstamm_Schmuckkasten_Condition()
@@ -114,7 +114,7 @@ FUNC VOID PC_Baumstamm_Schmuckkasten_Info()
 	if (Npc_HasItems(hero, ItMi_Ast) >= 10)
 	&& (Npc_HasItems(hero, ItMi_RockCrystal) >= 2)
 	{
-		Print	("Rohfassung des Schmuckkästchens fertiggestellt!");
+		Print	("Surowa wersja pudelka na bizuterie jest kompletna!");
 
 		Npc_RemoveInvItems	(hero, ItMi_Ast, 10);
 		Npc_RemoveInvItems	(hero, ItMi_RockCrystal, 2);
@@ -123,7 +123,7 @@ FUNC VOID PC_Baumstamm_Schmuckkasten_Info()
 	}
 	else
 	{
-		Print	("Nicht genug Zutaten!");
+		Print	("Nie wystarczy skladników!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -137,7 +137,7 @@ INSTANCE PC_Baumstamm_Bierkrug (C_INFO)
 	information	= PC_Baumstamm_Bierkrug_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bierkrug anfertigen (10 Äste und Rohstahl)";
+	description	= "Produkcja kubka piwnego (10 oddzialów i stali surowej)";
 };
 
 FUNC INT PC_Baumstamm_Bierkrug_Condition()
@@ -155,7 +155,7 @@ FUNC VOID PC_Baumstamm_Bierkrug_Info()
 	if (Npc_HasItems(hero, ItMi_Ast) >= 10)
 	&& (Npc_HasItems(hero, ItMiSwordRaw) >= 1)
 	{
-		Print	("Rohfassung des Bierkrug fertiggestellt!");
+		Print	("Surowa wersja kubka piwnego dopelniona!");
 
 		Npc_RemoveInvItems	(hero, ItMi_Ast, 10);
 		Npc_RemoveInvItems	(hero, ItMiSwordRaw, 1);
@@ -164,7 +164,7 @@ FUNC VOID PC_Baumstamm_Bierkrug_Info()
 	}
 	else
 	{
-		Print	("Nicht genug Zutaten!");
+		Print	("Nie wystarczy skladników!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -178,7 +178,7 @@ INSTANCE PC_Baumstamm_Karte (C_INFO)
 	information	= PC_Baumstamm_Karte_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Karte anfertigen (6 Äste und 4 Goldbrocken)";
+	description	= "Sporzadzic mape (6 oddzialów i 4 zloto)";
 };
 
 FUNC INT PC_Baumstamm_Karte_Condition()
@@ -196,7 +196,7 @@ FUNC VOID PC_Baumstamm_Karte_Info()
 	if (Npc_HasItems(hero, ItMi_Ast) >= 6)
 	&& (Npc_HasItems(hero, ItMi_GoldNugget_Addon) >= 4)
 	{
-		Print	("Rohfassung der Karte fertiggestellt!");
+		Print	("Szorstka wersja mapy zostala ukonczona!");
 
 		Npc_RemoveInvItems	(hero, ItMi_Ast, 6);
 		Npc_RemoveInvItems	(hero, ItMi_GoldNugget_Addon, 4);
@@ -205,7 +205,7 @@ FUNC VOID PC_Baumstamm_Karte_Info()
 	}
 	else
 	{
-		Print	("Nicht genug Zutaten!");
+		Print	("Nie wystarczy skladników!");
 	};
 
 	B_ENDPRODUCTIONDIALOG();
@@ -219,7 +219,7 @@ INSTANCE PC_Baumstamm_SchwererAst (C_INFO)
 	information	= PC_Baumstamm_SchwererAst_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwere Äste kleinsägen";
+	description	= "Male pilarki do ciezkich galezi";
 };
 
 FUNC INT PC_Baumstamm_SchwererAst_Condition()
@@ -240,7 +240,7 @@ FUNC VOID PC_Baumstamm_SchwererAst_Info()
 	Npc_RemoveInvItems	(hero, ItMw_1h_Bau_Mace, AstAnzahl);
 	CreateInvItems	(hero, ItMi_Ast, AstAnzahl * 5);
 
-	Print (ConcatStrings(IntToString(AstAnzahl * 5), " Äste erhalten!"));
+	Print (ConcatStrings(IntToString(AstAnzahl * 5), " Zachowaly sie filie!"));
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -253,7 +253,7 @@ INSTANCE PC_Baumstamm_Pfeile (C_INFO)
 	information	= PC_Baumstamm_Pfeile_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Pfeilschaft schnitzen";
+	description	= "Wal strzalkowy prowadzacy";
 };
 
 FUNC INT PC_Baumstamm_Pfeile_Condition()
@@ -275,7 +275,7 @@ FUNC VOID PC_Baumstamm_Pfeile_Info()
 	Npc_RemoveInvItems	(hero, ItMi_Ast, AstAnzahl);
 	CreateInvItems	(hero, Pfeilstab, AstAnzahl);
 
-	Print (ConcatStrings(IntToString(AstAnzahl), " Pfeilschäfte geschnitzt!"));
+	Print (ConcatStrings(IntToString(AstAnzahl), " Waly strzalkowe wyrzezbione!"));
 
 	B_ENDPRODUCTIONDIALOG();
 };
@@ -288,7 +288,7 @@ INSTANCE PC_Baumstamm_Drachenbogen (C_INFO)
 	information	= PC_Baumstamm_Drachenbogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Drachenbogen herstellen";
+	description	= "Utwórz smokowy guzik";
 };
 
 FUNC INT PC_Baumstamm_Drachenbogen_Condition()
@@ -321,7 +321,7 @@ INSTANCE PC_Baumstamm_Drachenarmbrust (C_INFO)
 	information	= PC_Baumstamm_Drachenarmbrust_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Drachenjägerarmbrust herstellen";
+	description	= "Stwórz krzyzówke mysliwych smoka smoków.";
 };
 
 FUNC INT PC_Baumstamm_Drachenarmbrust_Condition()
@@ -354,7 +354,7 @@ INSTANCE PC_Baumstamm_Snapperbogen (C_INFO)
 	information	= PC_Baumstamm_Snapperbogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Snapperbogen herstellen";
+	description	= "Wykonywanie kartek migawkowych";
 };
 
 FUNC INT PC_Baumstamm_Snapperbogen_Condition()

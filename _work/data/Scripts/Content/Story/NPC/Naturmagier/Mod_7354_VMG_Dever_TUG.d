@@ -1,7 +1,7 @@
 instance Mod_7354_VMG_Dever_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dever";
+	name 		= "uchwyt";
 	guild 		= GIL_out;
 	id 			= 7354;
 	voice 		= 11;

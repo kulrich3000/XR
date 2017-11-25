@@ -1,7 +1,7 @@
 instance Mod_7356_VMG_Fore_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fore";
+	name 		= "Fore Fore Fore Fore";
 	guild 		= GIL_out;
 	id 			= 7356;
 	voice 		= 1;

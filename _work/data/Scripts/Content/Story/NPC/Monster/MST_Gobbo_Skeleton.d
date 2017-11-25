@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Skeleton(C_NPC)			
 {
 	//----- Monster ----
-	name							=	"Goblin-Skelett";
+	name							=	"szkielet goblina";
 	guild							=	GIL_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_SKELETON;
 	level							=	15;
@@ -101,7 +101,7 @@ INSTANCE Gobbo_Skeleton_Eis	(Mst_Default_Gobbo_Skeleton)
 
 INSTANCE Summoned_Gobbo_Skeleton (Mst_Default_Gobbo_Skeleton)
 {
-	name							= "Beschworenes Goblin Skelett";
+	name							= "Wezwanie Goblin Szkielet Szkielet";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_SKELETON;
 	level							= 0;
@@ -120,7 +120,7 @@ INSTANCE Summoned_Gobbo_Skeleton (Mst_Default_Gobbo_Skeleton)
 
 INSTANCE Gobbo_Skeleton_Neol (Mst_Default_Gobbo_Skeleton)
 {
-	name							= "Beschworenes Goblin Skelett";
+	name							= "Wezwanie Goblin Szkielet Szkielet";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_SKELETON;
 	level							= 0;
@@ -139,7 +139,7 @@ INSTANCE Gobbo_Skeleton_Neol (Mst_Default_Gobbo_Skeleton)
 
 INSTANCE Gobbo_Skeleton_Anor (Mst_Default_Gobbo_Skeleton)
 {
-	name							= "Beschworenes Goblin Skelett";
+	name							= "Wezwanie Goblin Szkielet Szkielet";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_SKELETON;
 	level							= 0;

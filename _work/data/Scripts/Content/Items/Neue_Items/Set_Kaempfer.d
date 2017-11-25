@@ -41,12 +41,12 @@ instance ItRi_RingStaerke(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Rechter Ring des Stärke";
+	description				= "Pierscien prawy o wytrzymalosci";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= 10;
 
-	TEXT[4]			= "Set: Gewalt des Kämpfers";
+	TEXT[4]			= "Zestaw: Przemoc wojownika";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -90,12 +90,12 @@ instance ItRi_RingHiebe(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Linker Ring des Hiebe";
+	description				= "Lewy pierscien uderzen";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= 10;
 
-	TEXT[4]			= "Set: Gewalt des Kämpfers";
+	TEXT[4]			= "Zestaw: Przemoc wojownika";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;

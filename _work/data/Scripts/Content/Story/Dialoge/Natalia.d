@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Natalia_Hi (C_INFO)
 	information	= Info_Mod_Natalia_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Natalia_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Natalia_Hi_Condition()
 FUNC VOID Info_Mod_Natalia_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Natalia_Hi_16_01"); //Ich bin Natalia, eine der Zofen von Cor Cadar.
+	AI_Output(self, hero, "Info_Mod_Natalia_Hi_16_01"); //Jestem Natalia, jedna z pokojówek Cor Cadara.
 };
 
 INSTANCE Info_Mod_Natalia_Woher (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Natalia_Woher (C_INFO)
 	information	= Info_Mod_Natalia_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso warst du in der Kolonie?";
+	description	= "Dlaczego byles w kolonii?";
 };
 
 FUNC INT Info_Mod_Natalia_Woher_Condition()
@@ -41,9 +41,9 @@ FUNC INT Info_Mod_Natalia_Woher_Condition()
 
 FUNC VOID Info_Mod_Natalia_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Natalia_Woher_15_00"); //Wieso warst du in der Kolonie?
-	AI_Output(self, hero, "Info_Mod_Natalia_Woher_16_01"); //Ich habe einen Mann getötet, der mich die ganze Zeit verfolgt hat.
-	AI_Output(self, hero, "Info_Mod_Natalia_Woher_16_02"); //Dann bin ich hier ins Sumpflager gebrach worde und habe Y'Berion gedient und jetzt diene ich Cor Cadar.
+	AI_Output(hero, self, "Info_Mod_Natalia_Woher_15_00"); //Dlaczego byles w kolonii?
+	AI_Output(self, hero, "Info_Mod_Natalia_Woher_16_01"); //Zabilem czlowieka, który caly czas mnie nasladuje.
+	AI_Output(self, hero, "Info_Mod_Natalia_Woher_16_02"); //Potem zostalem wyslany tutaj do obozu bagiennego i sluzylem Y' Berionowi, a teraz sluze Cor Cadarorowi.
 };
 
 INSTANCE Info_Mod_Natalia_EXIT (C_INFO)

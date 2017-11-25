@@ -1,7 +1,7 @@
 PROTOTYPE Mst_Default_Tiger_Weiﬂ(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Weiﬂer Tiger";
+	name							=	"Bialy Tygrys";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	level							=	300;

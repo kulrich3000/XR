@@ -1,7 +1,7 @@
 INSTANCE Monster_11042_Demon_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämon";	
+	name 		= "demon";	
 	guild 		= GIL_BLOODFLY;
 	id 			= 11042;
 	voice 		= 20;

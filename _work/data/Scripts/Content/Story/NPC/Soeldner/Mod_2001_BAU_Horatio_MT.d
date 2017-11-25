@@ -2,7 +2,7 @@ instance Mod_2001_BAU_Horatio_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Horatio";
+	name 		=	"horatio";
 	npctype	 	=	npctype_main;
 	guild 		=	GIL_MIL;      
 	level 		=	8;

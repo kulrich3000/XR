@@ -1,7 +1,7 @@
 instance Mod_3001_PSINOV_Balor_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Balor";
+	name 		=		"Balon";
 	Npctype	 	=		Npctype_Main;
 	guild 		=		GIL_OUT;
 	level 		=		15;

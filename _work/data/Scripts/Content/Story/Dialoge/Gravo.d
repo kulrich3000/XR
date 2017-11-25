@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Gravo_Hi (C_INFO)
 	information	= Info_Mod_Gravo_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und du bist auf der Suche nach ...";
+	description	= "I szukasz....";
 };
 
 FUNC INT Info_Mod_Gravo_Hi_Condition()
@@ -16,44 +16,44 @@ FUNC INT Info_Mod_Gravo_Hi_Condition()
 
 FUNC VOID Info_Mod_Gravo_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_15_00"); //Und du bist auf der Suche nach ...
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_25_01"); //(eifrig) Das kann ich nicht sagen. Das heißt, ich würde ja gern, aber dann würdest du sicher versuchen, mich von hier zu vertreiben.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_25_02"); //War das jetzt schon zu viel verraten?
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_15_03"); //Keineswegs.
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_15_00"); //I szukasz....
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_25_01"); //Nie moge ci to powiedziec. To znaczy, ze kocham, ale wtedy pewnie próbowalbys mnie wyprowadzic z tego miejsca.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_25_02"); //Czy to juz bylo zbyt wiele do powiedzenia?
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_15_03"); //W ogóle nie.
 
 	Info_ClearChoices	(Info_Mod_Gravo_Hi);
 
-	Info_AddChoice	(Info_Mod_Gravo_Hi, "Viel Erfolg noch.", Info_Mod_Gravo_Hi_D);
-	Info_AddChoice	(Info_Mod_Gravo_Hi, "Du kannst dich nicht damit abfinden, nicht mehr zu schürfen?", Info_Mod_Gravo_Hi_C);
-	Info_AddChoice	(Info_Mod_Gravo_Hi, "Du bist ... auf Schatzsuche?", Info_Mod_Gravo_Hi_B);
-	Info_AddChoice	(Info_Mod_Gravo_Hi, "Du hast wohl was verloren?", Info_Mod_Gravo_Hi_A);
+	Info_AddChoice	(Info_Mod_Gravo_Hi, "Zycze powodzenia.", Info_Mod_Gravo_Hi_D);
+	Info_AddChoice	(Info_Mod_Gravo_Hi, "Nie mozesz juz dluzej nie kopac?", Info_Mod_Gravo_Hi_C);
+	Info_AddChoice	(Info_Mod_Gravo_Hi, "Ty ponownie na polowaniu na skarb?", Info_Mod_Gravo_Hi_B);
+	Info_AddChoice	(Info_Mod_Gravo_Hi, "Musiales cos stracic.", Info_Mod_Gravo_Hi_A);
 };
 
 FUNC VOID Info_Mod_Gravo_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_D_15_00"); //Viel Erfolg noch.
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_D_15_00"); //Zycze powodzenia.
 
 	Info_ClearChoices	(Info_Mod_Gravo_Hi);
 };
 
 FUNC VOID Info_Mod_Gravo_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_C_15_00"); //Du kannst dich nicht damit abfinden, nicht mehr zu schürfen?
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_C_25_01"); //(durchgeknallt) Am liebsten würde ich mit der Spitzhacke nur noch irgendwelchen Typen die Birne einschlagen.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_C_25_02"); //Ach ... so was sagt man nicht, oder?
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_C_15_00"); //Nie mozesz juz dluzej nie kopac?
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_C_25_01"); //(crazy) Przede wszystkim chcialbym rozbic zarówke pikserem tylko niektórym facetom.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_C_25_02"); //Ah.... Nie mówisz, czy to nie?
 };
 
 FUNC VOID Info_Mod_Gravo_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_00"); //Du bist ... auf Schatzsuche?
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_01"); //Psst! Hat dir Kyle auch davon erzählt?
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_02"); //Klar.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_03"); //(beleidigt) Er hat mir versprochen, es bliebe unser Geheimnis.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_04"); //Na ja, aber wenn du davon weißt, bist du doch jetzt auch sicher hinter Garaz' und Pachos' Schatz her.
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_05"); //Ähm ... ja.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_06"); //Dann wären wir ja so was wie Konkurrenten.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_07"); //Hmm ... sollte ich dich dann nicht besser sofort töten?
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_08"); //Nein, warte, immer zuerst reden, haben sie gesagt. Ich soll meine gute Ausbildung nicht vergessen.
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_00"); //Ty ponownie na polowaniu na skarb?
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_01"); //Szukaj! Czy Kyle równiez powiedzial ci o tym?
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_02"); //Pewne.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_03"); //Obiecal mi, ze bedzie to nasza tajemnica.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_04"); //Cóz, jesli wiesz o tym, to juz teraz jestes za skarbem Garaz i Pacho.
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_B_15_05"); //Um.... tak.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_06"); //Bylibysmy jak konkurenci.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_07"); //Hmm..... Czy nie powinienem cie teraz zabic?
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_B_25_08"); //Nie, czekac, zawsze mówic po raz pierwszy, mówili. Nie chcesz, abym zapomnial o moim dobrym wyksztalceniu.
 
 	Info_ClearChoices	(Info_Mod_Gravo_Hi);
 
@@ -61,14 +61,14 @@ FUNC VOID Info_Mod_Gravo_Hi_B()
 
 	Log_CreateTopic	(TOPIC_MOD_GRAVO_SCHATZ, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GRAVO_SCHATZ, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GRAVO_SCHATZ, "Der durchgeknallte Gravo hackt im Alten Lager beständig an einer Stelle neben dem Tümpel, um den Schatz zweier Ex-Buddler zu heben. Kyle soll ihn dazu angestiftet haben. Da Gravo von sich aus keinen Platz macht, werde ich einen anderen Weg finden müssen, ihn von dort zu entfernen.");
+	B_LogEntry	(TOPIC_MOD_GRAVO_SCHATZ, "Szalony Gravo nieustannie w starego obozie w miejscu obok stawu, by podniesc skarb dwóch bylych bujaków. Przypuszcza sie, ze Kyle's mial go do tego doprowadzic. Poniewaz Gravo nie robi miejsca na wlasna reke, bede musial znalezc inny sposób, aby go tam wyprowadzic.");
 };
 
 FUNC VOID Info_Mod_Gravo_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Hi_A_15_00"); //Du hast wohl was verloren?
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_A_25_01"); //Ja! Genau! Das Gefühl habe ich die ganze Zeit! Irgendetwas muss ich verloren haben.
-	AI_Output(self, hero, "Info_Mod_Gravo_Hi_A_25_02"); //Ich komm nur nicht drauf, was es war ...
+	AI_Output(hero, self, "Info_Mod_Gravo_Hi_A_15_00"); //Musiales cos stracic.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_A_25_01"); //Tak! Dokladnie! Czuje to caly czas! Musialem cos stracic.
+	AI_Output(self, hero, "Info_Mod_Gravo_Hi_A_25_02"); //Po prostu nie moge sie zorientowac, co to bylo....
 };
 
 INSTANCE Info_Mod_Gravo_WasFuerSchatz (C_INFO)
@@ -79,7 +79,7 @@ INSTANCE Info_Mod_Gravo_WasFuerSchatz (C_INFO)
 	information	= Info_Mod_Gravo_WasFuerSchatz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was war das noch gleich für ein Schatz?";
+	description	= "Co bylo tym skarbem?";
 };
 
 FUNC INT Info_Mod_Gravo_WasFuerSchatz_Condition()
@@ -92,14 +92,14 @@ FUNC INT Info_Mod_Gravo_WasFuerSchatz_Condition()
 
 FUNC VOID Info_Mod_Gravo_WasFuerSchatz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_WasFuerSchatz_15_00"); //Was war das noch gleich für ein Schatz?
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_01"); //(hämisch) Das hat dir Kyle also nicht erzählt, wie?
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_02"); //Dass Garaz und Pacho hier ihren ganzen Reichtum vergraben haben sollen, bevor sie dem Minental den Rücken gekehrt haben, um eine Musiktruppe zu gründen?
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_03"); //Dann werde ich es dir ganz bestimmt auch nicht sagen!
-	AI_Output(hero, self, "Info_Mod_Gravo_WasFuerSchatz_15_04"); //Eine Musiktruppe?
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_05"); //Das war schon immer ihr großer Traum, haben sie gesagt.
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_06"); //Einen Künstlernamen hatten sie auch schon, eine Kombination aus ihren Namen. Gazpacho oder so.
-	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_07"); //Als Snaf das gehört hat, hat er sich gar nicht mehr eingekriegt. Frag mich nicht, warum.
+	AI_Output(hero, self, "Info_Mod_Gravo_WasFuerSchatz_15_00"); //Co bylo tym skarbem?
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_01"); //Wiec Kyle nie powiedziala ci tego, czy ona?
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_02"); //Ze Garaz i Pacho podobno zakopali tu cale swoje bogactwo, zanim odwrócili sie plecami do Minentala, by zalozyc zespól?
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_03"); //Wtedy z pewnoscia nie jestem gonna powiedziec ci!
+	AI_Output(hero, self, "Info_Mod_Gravo_WasFuerSchatz_15_04"); //Czy zespól?
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_05"); //To zawsze bylo jej wielkim marzeniem, mówili.
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_06"); //Mieli juz swoja nazwe sceniczna, kombinacje nazwisk. Gazpacho lub cos innego.
+	AI_Output(self, hero, "Info_Mod_Gravo_WasFuerSchatz_25_07"); //Kiedy Snaf o tym uslyszal, nie mógl sie wsiasc. Nie pytaj mnie dlaczego.
 };
 
 INSTANCE Info_Mod_Gravo_IchHacken (C_INFO)
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Gravo_IchHacken (C_INFO)
 	information	= Info_Mod_Gravo_IchHacken_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lässt du mich auch mal kurz hacken?";
+	description	= "Czy pozwolisz mi siekac przez chwile?";
 };
 
 FUNC INT Info_Mod_Gravo_IchHacken_Condition()
@@ -123,9 +123,9 @@ FUNC INT Info_Mod_Gravo_IchHacken_Condition()
 
 FUNC VOID Info_Mod_Gravo_IchHacken_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_IchHacken_15_00"); //Lässt du mich auch mal kurz hacken?
-	AI_Output(self, hero, "Info_Mod_Gravo_IchHacken_25_01"); //Nichts da! Das hier ist mein Revier.
-	AI_Output(self, hero, "Info_Mod_Gravo_IchHacken_25_02"); //Sobald ich den Schatz gehoben habe und über alle Berge davon bin und mir von einer südländischen Schönheit Rum in den Mund träufeln lasse, kannst du's ja noch mal versuchen!
+	AI_Output(hero, self, "Info_Mod_Gravo_IchHacken_15_00"); //Czy pozwolisz mi siekac przez chwile?
+	AI_Output(self, hero, "Info_Mod_Gravo_IchHacken_25_01"); //Nic tam nie ma! To jest moje terytorium.
+	AI_Output(self, hero, "Info_Mod_Gravo_IchHacken_25_02"); //Jak tylko tylko podniose skarb i bede siegnac po wszystkie góry i pozwole mi posypac rum w ustach z poludniowego piekna, mozesz spróbowac go ponownie!
 };
 
 INSTANCE Info_Mod_Gravo_Schatz (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Gravo_Schatz (C_INFO)
 	information	= Info_Mod_Gravo_Schatz_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt keinen Schatz.";
+	description	= "Nie ma skarbu.";
 };
 
 FUNC INT Info_Mod_Gravo_Schatz_Condition()
@@ -149,14 +149,14 @@ FUNC INT Info_Mod_Gravo_Schatz_Condition()
 
 FUNC VOID Info_Mod_Gravo_Schatz_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_00"); //Es gibt keinen Schatz.
-	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_01"); //Schlechter Versuch. So einfach kriegst du mich hier nicht weg.
-	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_02"); //Es gibt wirklich keinen Schatz.
-	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_03"); //Kyle hat gelogen, damit du nicht dauernd durch seine Hütte läufst.
-	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_04"); //(enttäuscht) Tatsächlich? Und ich dachte noch, sein Pisspott in der Tür wäre bloß Zufall.
-	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_05"); //(in Rage) Am liebsten würde ich seine feuchte Scheiße nehmen und sie ihm...
-	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_06"); //(entspannter) ... zur Abfallgrube tragen.
-	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_07"); //Was soll's, finde ich halt anderswo meinen Schatz. Irgendwo wird schon einer sein.
+	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_00"); //Nie ma skarbu.
+	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_01"); //Zle spróbuj. Nie mozesz mnie tu tak latwo wyprowadzic.
+	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_02"); //Tak naprawde nie ma skarbu.
+	AI_Output(hero, self, "Info_Mod_Gravo_Schatz_15_03"); //Kyle klamal, zebys caly czas nie chodzil po jego kabinie.
+	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_04"); //(niewyznaczony) Naprawde? I pomyslalem, ze jego pissowy garnek w drzwiach to tylko przypadek.
+	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_05"); //W Rage' uwielbiam wziac jego mokry gówno i dac mu go....
+	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_06"); //(odtworzony). do kanalizacji smieci.
+	AI_Output(self, hero, "Info_Mod_Gravo_Schatz_25_07"); //W kazdym razie znajde swój skarb gdzie indziej. Musi byc gdzies.
 
 	B_GivePlayerXP	(100);
 
@@ -189,37 +189,37 @@ FUNC INT Info_Mod_Gravo_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Gravo_Lagermusik_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_00"); //(tadelnd) Na, na, na, da hat doch nicht etwa jemand meine Abwesenheit ausgenutzt?
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_01"); //Du dachtest du wohl, du könntest mich so einfach abschütteln?
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_02"); //(nachäffend) Kyle hat dich nur angeschmiert, ahahaha.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_03"); //Eigentlich sollte ich dich für diesen Verrat - he, was hast du denn da gefunden?!
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_04"); //Warte mal - das sind doch die alten Instrumente von Garaz und Pacho! Die sie nicht mehr mitnehmen konnten! Das ist also ihr Schatz!
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_00"); //No cóz, no cóz, ktos nie skorzystal z mojej nieobecnosci, czy?
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_01"); //Myslales, ze tak latwo mnie potrzasnac?
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_02"); //Kyle byl z wami tylko balaganem, ahahahahahahahaha.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_03"); //Mialem cie znalezc dla tej zdrady - hej, co tam znalazles?
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_04"); //Czekaj minute - to stare instrumenty Garaz i Pacho! Ze nie mogli zabrac! Tak wiec to jej skarb!
 
 	AI_PlayAni	(self, "T_PLUNDER");
 
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_05"); //(euphorisch) Damit kann ich endlich meine eigene Gruppe gründen! Den Jungs mal ein bisschen mit Musik anheizen.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_06"); //Ähm, du wirst mir doch helfen, Mitglieder zu finden, oder? Die meisten hier sprechen nämlich nicht mit mir.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_07"); //Vielleicht könntest du ein paar Buddler überzeugen. Die haben ja eh nichts zu tun.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_05"); //W koncu moge zalozyc wlasna grupe! Daj chlopakom odrobine muzyki, by je rozgrzac.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_06"); //Um, pomagasz mi znalezc czlonków, nie jestes? Poniewaz wiekszosc z nich nie rozmawia ze mna.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_25_07"); //Moze mozesz przekonac niektórych Buddlerów. I tak i tak nie maja nic do zrobienia.
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Gravo_Lagermusik);
 
-	Info_AddChoice	(Info_Mod_Gravo_Lagermusik, "Das schaffst du sicher auch allein.", Info_Mod_Gravo_Lagermusik_B);
-	Info_AddChoice	(Info_Mod_Gravo_Lagermusik, "Ich kann mich mal umhören.", Info_Mod_Gravo_Lagermusik_A);
+	Info_AddChoice	(Info_Mod_Gravo_Lagermusik, "Jestem pewien, ze mozesz sobie z tym poradzic samodzielnie.", Info_Mod_Gravo_Lagermusik_B);
+	Info_AddChoice	(Info_Mod_Gravo_Lagermusik, "Moge zapytac.", Info_Mod_Gravo_Lagermusik_A);
 };
 
 FUNC VOID Info_Mod_Gravo_Lagermusik_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik_B_15_00"); //Das schaffst du sicher auch allein.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_B_25_01"); //(trotzig) Ja, klar. Ich bin nicht auf deine Hilfe angewiesen.
+	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik_B_15_00"); //Jestem pewien, ze mozesz sobie z tym poradzic samodzielnie.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik_B_25_01"); //Tak, na pewno. Nie potrzebuje twojej pomocy.
 
 	Info_ClearChoices	(Info_Mod_Gravo_Lagermusik);
 };
 
 FUNC VOID Info_Mod_Gravo_Lagermusik_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik_A_15_00"); //Ich kann mich mal umhören.
+	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik_A_15_00"); //Moge zapytac.
 
 	Info_ClearChoices	(Info_Mod_Gravo_Lagermusik);
 
@@ -227,7 +227,7 @@ FUNC VOID Info_Mod_Gravo_Lagermusik_A()
 
 	Log_CreateTopic	(TOPIC_MOD_GRAVO_MUSIK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GRAVO_MUSIK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_GRAVO_MUSIK, "Den Schatz von Garaz und Pacho gab es doch - und zwar ein paar alte Musikinstrumente. Gravo kam gleich auf die Idee, eine eigene Lagergruppe ins Leben zu rufen. Ich soll mich unter den Buddlern umhören, ob jemand Interesse hat, bei ihm Mitglied zu werden.");
+	B_LogEntry	(TOPIC_MOD_GRAVO_MUSIK, "Byl skarb Garaz i Pacho - kilka starych instrumentów muzycznych. Gravo natychmiast wpadl na pomysl stworzenia wlasnej grupy obozowej. Mam zapytac wsród buddystów, czy ktokolwiek jest zainteresowany zostaniem czlonkiem tej spolecznosci.");
 };
 
 INSTANCE Info_Mod_Gravo_Lagermusik2 (C_INFO)
@@ -271,16 +271,16 @@ FUNC VOID Info_Mod_Gravo_Lagermusik2_Info()
 
 	Info_ClearChoices	(Info_Mod_Gravo_Lagermusik2);
 
-	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "Mir würde 'Unglaublich reichhaltige Kartoffelsuppe' gut gefallen.", Info_Mod_Gravo_Lagermusik2_C);
-	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "Was haltet ihr von 'Die Höllenpilze'?", Info_Mod_Gravo_Lagermusik2_B);
-	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "Wie wär's mit 'The Three G's'?", Info_Mod_Gravo_Lagermusik2_A);
+	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "Lubie 'Incredibly Rich Potato Soup'.", Info_Mod_Gravo_Lagermusik2_C);
+	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "Co sadzisz o 'Hellfungi'?", Info_Mod_Gravo_Lagermusik2_B);
+	Info_AddChoice	(Info_Mod_Gravo_Lagermusik2, "A co z Trzema Gami?", Info_Mod_Gravo_Lagermusik2_A);
 };
 
 FUNC VOID Info_Mod_Gravo_Lagermusik2_D()
 {
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_00"); //Meinetwegen. Der Name ist ja eh nicht so wichtig.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_01"); //Wir proben jetzt einen Tag und treten dann morgen Abend um 19 Uhr erstmals auf der Bühne auf.
-	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_02"); //Bis dahin muss ich mir noch einen Liedtext ausdenken...
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_00"); //Nie obchodze sie z nim. Nazwa i tak nie ma znaczenia.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_01"); //Jednego dnia cwiczymy próby, a jutro o godzinie 19 wieczorem po raz pierwszy wystepujemy na scenie.
+	AI_Output(self, hero, "Info_Mod_Gravo_Lagermusik2_D_25_02"); //Do tego czasu musze wymyslic teksty....
 
 	Info_ClearChoices	(Info_Mod_Gravo_Lagermusik2);
 
@@ -295,21 +295,21 @@ FUNC VOID Info_Mod_Gravo_Lagermusik2_D()
 
 FUNC VOID Info_Mod_Gravo_Lagermusik2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_C_15_00"); //Mir würde "Unglaublich reichhaltige Kartoffelsuppe" gut gefallen.
+	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_C_15_00"); //Mir würde "Niezwykle bogata zupa ziemniaczana" gut gefallen.
 
 	Info_Mod_Gravo_Lagermusik2_D();
 };
 
 FUNC VOID Info_Mod_Gravo_Lagermusik2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_B_15_00"); //Was haltet ihr von "Die Höllenpilze"?
+	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_B_15_00"); //Was haltet ihr von "Grzyby piekla"?
 
 	Info_Mod_Gravo_Lagermusik2_D();
 };
 
 FUNC VOID Info_Mod_Gravo_Lagermusik2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_A_15_00"); //Wie wär's mit "The Three G's"?
+	AI_Output(hero, self, "Info_Mod_Gravo_Lagermusik2_A_15_00"); //Wie wär's mit "Trzy G' s"?
 
 	Info_Mod_Gravo_Lagermusik2_D();
 };
@@ -322,7 +322,7 @@ INSTANCE Info_Mod_Gravo_KGBuddler (C_INFO)
 	information	= Info_Mod_Gravo_KGBuddler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Lust als Buddler zu arbeiten?";
+	description	= "Chcesz pracowac jako Buddler?";
 };
 
 FUNC INT Info_Mod_Gravo_KGBuddler_Condition()
@@ -336,8 +336,8 @@ FUNC INT Info_Mod_Gravo_KGBuddler_Condition()
 
 FUNC VOID Info_Mod_Gravo_KGBuddler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Gravo_KGBuddler_15_00"); //Hast du Lust als Buddler zu arbeiten?
-	AI_Output(self, hero, "Info_Mod_Gravo_KGBuddler_25_01"); //Ich habe mich schon davor gedrückt, als die Barriere noch da war, da werde ich jetzt bestimmt nicht damit anfangen ...
+	AI_Output(hero, self, "Info_Mod_Gravo_KGBuddler_15_00"); //Chcesz pracowac jako Buddler?
+	AI_Output(self, hero, "Info_Mod_Gravo_KGBuddler_25_01"); //Uniknalem go juz wtedy, gdy bariera byla jeszcze tam, z pewnoscia nie zaczne teraz......
 };
 
 INSTANCE Info_Mod_Gravo_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Morgan_Hi (C_INFO)
 	information	= Info_Mod_Morgan_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Morgan_Hi_Condition()
@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Morgan_Hi_Condition()
 FUNC VOID Info_Mod_Morgan_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Morgan_Hi_07_01"); //Ich bin Morgan, einer der drei Entertruppführer.
-	AI_Output(self, hero, "Info_Mod_Morgan_Hi_07_02"); //Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Morgan_Hi_07_01"); //Jestem Morgan, jeden z trzech liderów typu enter-troop.
+	AI_Output(self, hero, "Info_Mod_Morgan_Hi_07_02"); //Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Morgan_Entertrupp (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Morgan_Entertrupp (C_INFO)
 	information	= Info_Mod_Morgan_Entertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will in deinen Entertrupp.";
+	description	= "Chce przylaczyc sie do waszej pozycji.";
 };
 
 FUNC INT Info_Mod_Morgan_Entertrupp_Condition()
@@ -44,12 +44,12 @@ FUNC INT Info_Mod_Morgan_Entertrupp_Condition()
 
 FUNC VOID Info_Mod_Morgan_Entertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_00"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_01"); //Wenn du in meinen Entertrupp willst, dann musst du mir was besorgen.
-	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_02"); //Was soll ich dir besorgen?
-	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_03"); //Du gehst jetzt auf Alligatorenjagd. Im Talkessel solltest du noch auf ein paar der Viecher treffen.
-	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_04"); //Bring mir vier von ihren Krallen mit. Einige Leute glauben, dass ne Kette aus Alligatorenkrallen Glück bringt.
-	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_05"); //Du sollst deine Krallen bekommen.
+	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_00"); //Chce przylaczyc sie do waszej pozycji.
+	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_01"); //Jesli chcesz dolaczyc do mojego oddzialu ratownictwa, dostales cos do mnie.
+	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_02"); //Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_03"); //Teraz idziesz na polowania aligatorami. W dolinie nalezy jeszcze spotkac kilka stworzen.
+	AI_Output(self, hero, "Info_Mod_Morgan_Entertrupp_07_04"); //Przynies mi cztery pazury. Niektórzy uwazaja, ze lancuch pazurów aligatora przynosi szczescie.
+	AI_Output(hero, self, "Info_Mod_Morgan_Entertrupp_15_05"); //Chce, zebyscie mieli swoje pazury.
 
 	Wld_InsertNpc	(Alligator, "FP_ROAM_WATERHOLE_13");
 	Wld_InsertNpc	(Alligator, "FP_ROAM_WATERHOLE_09");
@@ -57,7 +57,7 @@ FUNC VOID Info_Mod_Morgan_Entertrupp_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MORGAN_ENTERTRUPP, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MORGAN_ENTERTRUPP, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MORGAN_ENTERTRUPP, "Um in Morgans Entertrupp zu kommen soll ich ihm 4 Alligatorenkrallen bringen.");
+	B_LogEntry	(TOPIC_MOD_MORGAN_ENTERTRUPP, "Ja mam mu przyniesc cztery pazury aligatorskie.");
 };
 
 INSTANCE Info_Mod_Morgan_WieKrallen (C_INFO)
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_Morgan_WieKrallen (C_INFO)
 	information	= Info_Mod_Morgan_WieKrallen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo kann ich lernen Krallen zu nehmen?";
+	description	= "Gdzie moge nauczyc sie poslugiwac pazurami?";
 };
 
 FUNC INT Info_Mod_Morgan_WieKrallen_Condition()
@@ -81,8 +81,8 @@ FUNC INT Info_Mod_Morgan_WieKrallen_Condition()
 
 FUNC VOID Info_Mod_Morgan_WieKrallen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgan_WieKrallen_15_00"); //Wo kann ich lernen Krallen zu nehmen?
-	AI_Output(self, hero, "Info_Mod_Morgan_WieKrallen_07_01"); //Ich kann dir beibringen wie du den Mistviechern ihre Krallen abnimmst.
+	AI_Output(hero, self, "Info_Mod_Morgan_WieKrallen_15_00"); //Gdzie moge nauczyc sie poslugiwac pazurami?
+	AI_Output(self, hero, "Info_Mod_Morgan_WieKrallen_07_01"); //Potrafie nauczyc Cie jak zdejmowac te dranie z paznokci.
 };
 
 INSTANCE Info_Mod_Morgan_KrallenZiehen (C_INFO)
@@ -93,12 +93,12 @@ INSTANCE Info_Mod_Morgan_KrallenZiehen (C_INFO)
 	information	= Info_Mod_Morgan_KrallenZiehen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Alligatorenkrallen nehmen (1 LP)";
+	description	= "Zdjac pazury aligatora (1 LP)";
 };
 
 FUNC INT Info_Mod_Morgan_KrallenZiehen_Condition()
 {
-	Info_Mod_Morgan_KrallenZiehen.description = B_BuildLearnString("Alligatorenkrallen nehmen", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_AlligatorClaws));
+	Info_Mod_Morgan_KrallenZiehen.description = B_BuildLearnString("przejac pazury", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_AlligatorClaws));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Morgan_WieKrallen))
 	&& (Mod_InEntertrupp == 0)
@@ -112,8 +112,8 @@ FUNC VOID Info_Mod_Morgan_KrallenZiehen_Info()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_AlligatorClaws))
 	{
-		AI_Output(self, hero, "Info_Mod_Morgan_KrallenZiehen_07_00"); //Im Grunde ist es ganz einfach. Schneide die Krallen einfach aus dem Vorderfuß raus.
-		AI_Output(self, hero, "Info_Mod_Morgan_KrallenZiehen_07_01"); //Danach noch das restliche Fleisch abkratzen und du hast die Krallen.
+		AI_Output(self, hero, "Info_Mod_Morgan_KrallenZiehen_07_00"); //To w zasadzie calkiem proste. Wystarczy wyciac pazury z przedniej czesci stopy.
+		AI_Output(self, hero, "Info_Mod_Morgan_KrallenZiehen_07_01"); //Pózniej zetrzyj reszte ciala i bedziesz mial swoje pazury.
 	};
 };
 
@@ -125,7 +125,7 @@ INSTANCE Info_Mod_Morgan_HierKrallen (C_INFO)
 	information	= Info_Mod_Morgan_HierKrallen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, deine Krallen.";
+	description	= "Tutaj, pazury.";
 };
 
 FUNC INT Info_Mod_Morgan_HierKrallen_Condition()
@@ -139,19 +139,19 @@ FUNC INT Info_Mod_Morgan_HierKrallen_Condition()
 
 FUNC VOID Info_Mod_Morgan_HierKrallen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgan_HierKrallen_15_00"); //Hier, deine Krallen.
+	AI_Output(hero, self, "Info_Mod_Morgan_HierKrallen_15_00"); //Tutaj, pazury.
 
 	B_GiveInvItems	(hero, self, ItAt_AlligatorClaw, 4);
 
-	AI_Output(self, hero, "Info_Mod_Morgan_HierKrallen_07_01"); //Sehr gut, Jungchen! Damit hast du meine Zustimmung.
+	AI_Output(self, hero, "Info_Mod_Morgan_HierKrallen_07_01"); //Bardzo dobre, dzieciak! Masz na to moja zgode.
 
 	if (Mod_InEntertrupp == 0)
 	{
-		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_MORGAN_ENTERTRUPP, "Ich hab Morgans Zustimmung für die Aufnahme in einen Entertrupp.", "Morgan ist von mir überzeugt.");
+		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_MORGAN_ENTERTRUPP, "Mam pozwolenie na dolaczenie do grupy biznesowej.", "Morgan's przekonany o mnie.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Ich hab Morgans Zustimmung für die Aufnahme in einen Entertrupp.");
+		B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Mam pozwolenie na dolaczenie do grupy biznesowej.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_MORGAN_ENTERTRUPP, LOG_SUCCESS);
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Morgan_InEntertrupp (C_INFO)
 	information	= Info_Mod_Morgan_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will in deinen Entertrupp.";
+	description	= "Chce przylaczyc sie do waszej pozycji.";
 };
 
 FUNC INT Info_Mod_Morgan_InEntertrupp_Condition()
@@ -185,13 +185,13 @@ FUNC INT Info_Mod_Morgan_InEntertrupp_Condition()
 
 FUNC VOID Info_Mod_Morgan_InEntertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgan_InEntertrupp_15_00"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Morgan_InEntertrupp_07_01"); //Du hast bewiesen, dass du als Pirat zu gebrauchen bist.
-	AI_Output(self, hero, "Info_Mod_Morgan_InEntertrupp_07_02"); //Ab sofort bist du in meinem Entertrupp.
+	AI_Output(hero, self, "Info_Mod_Morgan_InEntertrupp_15_00"); //Chce przylaczyc sie do waszej pozycji.
+	AI_Output(self, hero, "Info_Mod_Morgan_InEntertrupp_07_01"); //Sprawdziles sie jako pirat.
+	AI_Output(self, hero, "Info_Mod_Morgan_InEntertrupp_07_02"); //Od teraz jestes w moim skladzie.
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Ich bin jetzt Mitglied von Morgans Entertrupp.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Jestem teraz czlonkiem grupy Morgan.");
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_ENTERTRUPP, LOG_SUCCESS);
 
 	Mod_InEntertrupp = 1;
@@ -216,7 +216,7 @@ INSTANCE Info_Mod_Morgan_Lehrer (C_INFO)
 	information	= Info_Mod_Morgan_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Morgan_Lehrer_Condition()
@@ -233,10 +233,10 @@ FUNC VOID Info_Mod_Morgan_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Morgan_Lehrer_07_01"); //Ich kann dir den Umgang mit Einhändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Morgan_Lehrer_07_01"); //Potrafie nauczyc Cie, jak obchodzic sie z reka.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Morgan kann mir den Umgang mit Einhändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_PIRATEN, "Morgan moze nauczyc mnie, jak postepowac z ludzmi jednej reki.");
 };
 
 INSTANCE Info_Mod_Morgan_Lernen (C_INFO)
@@ -247,7 +247,7 @@ INSTANCE Info_Mod_Morgan_Lernen (C_INFO)
 	information	= Info_Mod_Morgan_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Morgan_Lernen_Condition()
@@ -262,7 +262,7 @@ FUNC INT Info_Mod_Morgan_Lernen_Condition()
 
 FUNC VOID Info_Mod_Morgan_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Morgan_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Morgan_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Morgan_Lernen);
 

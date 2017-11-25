@@ -23,7 +23,7 @@ FUNC INT Info_FM_SFB_14_Pre_Condition()
 
 FUNC VOID Info_FM_SFB_14_Pre_Info()
 {	
-	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_00"); //Was willst du hier. Ich habe keine Lust, irgendwelchen Ärger zu bekommen.
+	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_00"); //Co Pan tutaj robi? Nie mam ochoty wpadac w klopoty.
 };
 
 // *************************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_FM_SFB_14_EinerVonEuchWerden (C_INFO)
 	condition	= Info_FM_SFB_14_EinerVonEuchWerden_Condition;
 	information	= Info_FM_SFB_14_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muss ich tun, um bei euch mitzumachen?";
+	description = "Co musze zrobic, aby dolaczyc do Ciebie?";
 };                       
 
 FUNC INT Info_FM_SFB_14_EinerVonEuchWerden_Condition()
@@ -70,8 +70,8 @@ FUNC INT Info_FM_SFB_14_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_FM_SFB_14_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_EinerVonEuchWerden_15_00"); //Was muss ich tun, um bei euch mitzumachen?
-	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_01"); //Ich kann dir da nicht weiterhelfen. Ich bin hier nur 'ne kleine Nummer.
+	AI_Output(hero,self,"Info_FM_SFB_14_EinerVonEuchWerden_15_00"); //Co musze zrobic, aby dolaczyc do Ciebie?
+	AI_Output(self,hero,"Info_FM_SFB_14_EinerVonEuchWerden_14_01"); //Nie moge Ci tam pomóc. Jestem tu troche glupawy.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE Info_FM_SFB_14_WichtigePersonen(C_INFO)
 	condition	= Info_FM_SFB_14_WichtigePersonen_Condition;
 	information	= Info_FM_SFB_14_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier was zu sagen?";
+	description = "Kto ma cos do powiedzenia?";
 };                       
 
 FUNC INT Info_FM_SFB_14_WichtigePersonen_Condition()
@@ -94,8 +94,8 @@ FUNC INT Info_FM_SFB_14_WichtigePersonen_Condition()
 
 FUNC VOID Info_FM_SFB_14_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,hero,"Info_FM_SFB_14_WichtigePersonen_14_01"); //Hier in der Mine hat eigentlich niemand das Sagen.
+	AI_Output(hero,self,"Info_FM_SFB_14_WichtigePersonen_15_00"); //Kto ma cos do powiedzenia?
+	AI_Output(self,hero,"Info_FM_SFB_14_WichtigePersonen_14_01"); //Nikt tu nie prowadzi kopalni.
 };
 
 // *************************************************************************
@@ -108,7 +108,7 @@ INSTANCE Info_FM_SFB_14_DasLager(C_INFO)
 	condition	= Info_FM_SFB_14_DasLager_Condition;
 	information	= Info_FM_SFB_14_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über diese Mine erfahren.";
+	description = "Chce wiedziec wiecej o tej kopalni.";
 };                       
 
 FUNC INT Info_FM_SFB_14_DasLager_Condition()
@@ -118,8 +118,8 @@ FUNC INT Info_FM_SFB_14_DasLager_Condition()
 
 FUNC VOID Info_FM_SFB_14_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_DasLager_15_00"); //Ich will mehr über dieses Mine erfahren.
-	AI_Output(self,hero,"Info_FM_SFB_14_DasLager_14_01"); //Ich weiß nicht, ob ich dir da weiterhelfen kann, sprich am besten mit den Söldnern.
+	AI_Output(hero,self,"Info_FM_SFB_14_DasLager_15_00"); //Chce wiedziec wiecej o tej kopalni.
+	AI_Output(self,hero,"Info_FM_SFB_14_DasLager_14_01"); //Nie wiem, czy moge w tym pomóc, porozmawiac z najemnikami.
 };
 
 // *************************************************************************
@@ -132,7 +132,7 @@ INSTANCE Info_FM_SFB_14_DieLage(C_INFO)
 	condition	= Info_FM_SFB_14_DieLage_Condition;
 	information	= Info_FM_SFB_14_DieLage_Info;
 	permanent	= 1;
-	description = "Wie ist das Leben hier?";
+	description = "Jak tu wyglada zycie?";
 };                       
 
 FUNC INT Info_FM_SFB_14_DieLage_Condition()
@@ -142,11 +142,11 @@ FUNC INT Info_FM_SFB_14_DieLage_Condition()
 
 FUNC VOID Info_FM_SFB_14_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_FM_SFB_14_DieLage_15_00"); //Wie ist das Leben hier?
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_01"); //Ich will mich nicht beklagen. Wir haben alle unseren Teil zu tragen.
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_02"); //Aber zumindest ist es hier besser als im Alten Lager.
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_03"); //Kommst du aus dem Alten Lager?
-	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_04"); //Wenn du aus dem Alten Lager kommst, ich will keinen Ärger!
+	AI_Output(hero,self,"Info_FM_SFB_14_DieLage_15_00"); //Jak tu wyglada zycie?
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_01"); //Nie chce narzekac. Wszyscy mamy swój udzial.
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_02"); //Ale przynajmniej jest tu lepiej niz w starym obozie.
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_03"); //Czy jestes z starego obozu?
+	AI_Output(self,hero,"Info_FM_SFB_14_DieLage_14_04"); //Jesli jestes z dawnego obozu, nie chce klopotów!
 	AI_StopProcessInfos	(self);
 };
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sekob_Hi (C_INFO)
 	information	= Info_Mod_Sekob_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Sekob_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Sekob_Hi_Condition()
 FUNC VOID Info_Mod_Sekob_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Sekob_Hi_01_01"); //Ich bin Sekob, mir gehört dieser Hof. Was willst du von mir?
+	AI_Output(self, hero, "Info_Mod_Sekob_Hi_01_01"); //Jestem Sekobem, jestem wlascicielem tego gospodarstwa. Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Sekob_Daemonisch (C_INFO)
@@ -40,8 +40,8 @@ FUNC INT Info_Mod_Sekob_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Sekob_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sekob_Daemonisch_01_00"); //(wütend) Verdammt, zwei Monatsgehälter habe ich für mich und den Knecht in der Taverne ausgegeben.
-	AI_Output(self, hero, "Info_Mod_Sekob_Daemonisch_01_01"); //Warum hat mich niemand davon abgehalten?!
+	AI_Output(self, hero, "Info_Mod_Sekob_Daemonisch_01_00"); //Spedzilem dwa fucking miesieczne pensje na siebie i sluge w tawernie.
+	AI_Output(self, hero, "Info_Mod_Sekob_Daemonisch_01_01"); //Dlaczego nikt mnie nie powstrzymal!
 };
 
 INSTANCE Info_Mod_Sekob_Untier (C_INFO)
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Sekob_Untier (C_INFO)
 	information	= Info_Mod_Sekob_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir zufällig in den letzten Tagen ein ungewöhnliches Raubtier auf dem Hof begegnet...?";
+	description	= "Czy zdarzylo Ci sie spotkac niezwyklego drapieznika na farmie w ostatnich dniach?";
 };
 
 FUNC INT Info_Mod_Sekob_Untier_Condition()
@@ -67,13 +67,13 @@ FUNC INT Info_Mod_Sekob_Untier_Condition()
 
 FUNC VOID Info_Mod_Sekob_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sekob_Untier_15_00"); //Ist dir zufällig in den letzten Tagen ein ungewöhnliches Raubtier auf dem Hof begegnet...?
-	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_01"); //(außer sich) Ungewöhnliches Raubtier?! Ich habe ganz andere Probleme.
-	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_02"); //Diese verdammten Untoten haben sich vor kurzer Zeit aus den Gräbern erhoben und sind meinen Gehöft gefährlich nahe gekommen.
-	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_03"); //Kein Auge kann ich Nachts mehr zumachen aus Sorge, sie könnten mir irgendwann ins Schlafzimmer hereinspazieren ...
-	AI_Output(hero, self, "Info_Mod_Sekob_Untier_15_04"); //Ja, aber ...
-	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_05"); //(wütend) Wenn du auf der Suche nach Wild bist, frag doch Balthasar. Der hat irgendetwas von einer Bestie geschwafelt.
-	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_06"); //Ha, das ich nicht lache. Wahrscheinlich nur eine Ratte aus der Scheune gewesen ...
+	AI_Output(hero, self, "Info_Mod_Sekob_Untier_15_00"); //Czy zdarzylo Ci sie spotkac niezwyklego drapieznika na farmie w ostatnich dniach?
+	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_01"); //Niepowtarzalne drapiezniki! Mam rózne problemy.
+	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_02"); //Te zwariowane nieumarle osoby niedawno wyszly z grobów i niebezpiecznie zblizyly sie do moich zagród.
+	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_03"); //Noca nie moge miec otwartego oka, poniewaz obawiam sie, ze w pewnym momencie moga wejsc do mojej sypialni...
+	AI_Output(hero, self, "Info_Mod_Sekob_Untier_15_04"); //Tak, ale.....
+	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_05"); //Jesli szukasz gry, zapytaj Balthasara. Mówil o jakiejs bestii.
+	AI_Output(self, hero, "Info_Mod_Sekob_Untier_01_06"); //Ha, nie daj mi sie smiac. Prawdopodobnie tylko szczur od stodoly....
 
 	Wld_InsertNpc	(Zombie_AtSekobsHof_01, "FP_ROAM_SEKOBSZOMBIE_01");
 	Wld_InsertNpc	(Zombie_AtSekobsHof_02, "FP_ROAM_SEKOBSZOMBIE_02");
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Sekob_ZombiesTot (C_INFO)
 	information	= Info_Mod_Sekob_ZombiesTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Problem mit den Untoten gelöst.";
+	description	= "Z nieumarlym rozwiazalem problem.";
 };
 
 FUNC INT Info_Mod_Sekob_ZombiesTot_Condition()
@@ -102,10 +102,10 @@ FUNC INT Info_Mod_Sekob_ZombiesTot_Condition()
 
 FUNC VOID Info_Mod_Sekob_ZombiesTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sekob_ZombiesTot_15_00"); //Ich habe das Problem mit den Untoten gelöst.
-	AI_Output(self, hero, "Info_Mod_Sekob_ZombiesTot_01_01"); //Fabelhaft, dann werde ich jetzt wieder in Ruhe schlafen können.
-	AI_Output(hero, self, "Info_Mod_Sekob_ZombiesTot_15_02"); //Nicht so schnell. Wie viel ist dir denn dein ruhiger Schlaf wert
-	AI_Output(self, hero, "Info_Mod_Sekob_ZombiesTot_01_03"); //(leicht mürrisch) Na schön, hier hast du 50 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Sekob_ZombiesTot_15_00"); //Z nieumarlym rozwiazalem problem.
+	AI_Output(self, hero, "Info_Mod_Sekob_ZombiesTot_01_01"); //Piekny, wtedy bede mógl znów spac spokojnie.
+	AI_Output(hero, self, "Info_Mod_Sekob_ZombiesTot_15_02"); //Nie tak szybko. Ile wynosi Twój spokojny sen?
+	AI_Output(self, hero, "Info_Mod_Sekob_ZombiesTot_01_03"); //Dobrze, oto 50 zlotych monet.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Sekob_Unheil (C_INFO)
 	information	= Info_Mod_Sekob_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist in letzter Zeit etwas Sonderbares auf dem Hof bei dir vorgefallen?";
+	description	= "Czy ostatnio zdarzylo Ci sie w gospodarstwie cos dziwnego?";
 };
 
 FUNC INT Info_Mod_Sekob_Unheil_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mod_Sekob_Unheil_Condition()
 
 FUNC VOID Info_Mod_Sekob_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sekob_Unheil_15_00"); //Ist in letzter Zeit etwas Sonderbares auf dem Hof bei dir vorgefallen?
-	AI_Output(self, hero, "Info_Mod_Sekob_Unheil_01_01"); //Was?! Willst du mich zum Narren halten?! Ich jag dich gleich zu dem untoten Pack auf den Friedhof. Mach, dass du hier raus kommst!
+	AI_Output(hero, self, "Info_Mod_Sekob_Unheil_15_00"); //Czy ostatnio zdarzylo Ci sie w gospodarstwie cos dziwnego?
+	AI_Output(self, hero, "Info_Mod_Sekob_Unheil_01_01"); //Co? Próbujesz mnie oszukac! Poscigam cie na cmentarz za nieumarla paczke. Wyjdzcie stad z piekla!
 
 	AI_StopProcessInfos	(self);
 };
@@ -148,7 +148,7 @@ INSTANCE Info_Mod_Sekob_Bauer (C_INFO)
 	information	= Info_Mod_Sekob_Bauer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gibt's hier was zu tun?";
+	description	= "Cokolwiek tu zrobic?";
 };
 
 FUNC INT Info_Mod_Sekob_Bauer_Condition()
@@ -161,9 +161,9 @@ FUNC INT Info_Mod_Sekob_Bauer_Condition()
 
 FUNC VOID Info_Mod_Sekob_Bauer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sekob_Bauer_15_00"); //Gibt's hier was zu tun?
-	AI_Output(self, hero, "Info_Mod_Sekob_Bauer_01_01"); //Wenn du dich nützlich machen willst, dann sprich mal mit Balthasar.
-	AI_Output(self, hero, "Info_Mod_Sekob_Bauer_01_02"); //Er hat sicher eine Kleinigkeit für dich zu tun.
+	AI_Output(hero, self, "Info_Mod_Sekob_Bauer_15_00"); //Cokolwiek tu zrobic?
+	AI_Output(self, hero, "Info_Mod_Sekob_Bauer_01_01"); //Jesli chcesz sie przydac, porozmawiaj z Balthazar.
+	AI_Output(self, hero, "Info_Mod_Sekob_Bauer_01_02"); //Prawdopodobnie ma on troche do zrobienia.
 };
 
 INSTANCE Info_Mod_Sekob_SagittaKraeuter (C_INFO)
@@ -187,19 +187,19 @@ FUNC INT Info_Mod_Sekob_SagittaKraeuter_Condition()
 
 FUNC VOID Info_Mod_Sekob_SagittaKraeuter_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_00"); //(aufgebracht) Was willst du hier in meinem Haus?!
-	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_01"); //Ähh, ich bring dir die Medizin von Sagitta.
-	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_02"); //Was? Na dann gib schon her. Hat ja ewig gedauert.
+	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_00"); //Co robisz w moim domu?
+	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_01"); //Uh, przyniose Ci lek Sagitta.
+	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_02"); //Co? No cóz, daj mi ja. Trwalo to na zawsze.
 
 	B_GiveInvItems	(hero, self, ItPo_SekobMedizin, 1);
 
 	B_UseItem	(self, ItPo_SekobMedizin);
 
-	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_03"); //Ähh, sie meinte, dass du jeweils zwei Esslöffel am Morgen und Abend nehmen sollst.
-	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_04"); //(nicht auf den Helden achtend, zu sich selbst) Ahh, schon besser.
-	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_05"); //(wieder zum Helden) Hä, ist noch was?
-	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_06"); //Die Bezahlung.
-	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_07"); //Was? Achso. Geh zu meiner Frau.
+	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_03"); //Ona mówila, ze codziennie rano i wieczorem bierze dwie lyzki stolowe.
+	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_04"); //Nie zwracajac uwagi na bohatera, na siebie samego) Ahh, to lepiej.
+	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_05"); //(znowu bohatera) Huh, czy jest jeszcze cos innego?
+	AI_Output(hero, self, "Info_Mod_Sekob_SagittaKraeuter_15_06"); //Platnosc.
+	AI_Output(self, hero, "Info_Mod_Sekob_SagittaKraeuter_01_07"); //Co? Ach, cóz. Idz do mojej zony.
 
 	AI_StopProcessInfos	(self);
 };

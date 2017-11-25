@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Raoul_Hi (C_INFO)
 	information	= Info_Mod_Raoul_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Seit wann schiebt ihr hier Wache?";
+	description	= "Jak dlugo trzymasz zegarek?";
 };
 
 FUNC INT Info_Mod_Raoul_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Raoul_Hi_Condition()
 
 FUNC VOID Info_Mod_Raoul_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_00"); //Seit wann schiebt ihr hier Wache und warum dürfen jetzt keine aus dem Sumpflager mehr hinein, obwohl da einer drin sitzt?
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_01"); //Tja, wir sind hier die Türsteher, seitdem die neue Regel erlassen wurde, dass in der Kneipe kein Sumpfkraut mehr geraucht werden darf, und somit auch keine Sumpffritzen rein dürfen.
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_02"); //Und warum besteht dieses Verbot?
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_03"); //Lee will den unkontrollierten Konsum von Sumpfkraut eindämmen, damit die Männer mehr trainieren.
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_04"); //Und die anderen in der Kneipe sollen ja auch nicht durch den Sumpfkrautrauch in Mitleidenschaft gezogen werden, obwohl sie es vielleicht gar nicht wollen.
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_05"); //Jetzt darf nur noch außerhalb der Kneipe geraucht werden, aber wer zu oft dabei erwischt wird, bekommt eine Rüge und extra Stunden Training. (leiser, zu sich selbst) Tja, jetzt muss man vors Lager gehen, um zu rauchen.
-	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_06"); //Aber wieso ist der Typ aus dem Sumpflager ...
-	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_07"); //Tja, der war schon drin, bevor die neue Regelung in Kraft trat. Und unsere Aufgabe ist es ja nur darauf zu achten, dass keiner von denen hineinkommt.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_00"); //Od kiedy obserwowales tutaj i dlaczego nikt inny nie moze wydostac sie z obozu bagiennego, mimo ze jest tam jeden?
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_01"); //Cóz, jestesmy tu bukmacherami, poniewaz uchwalono nowa zasade, zgodnie z która w pubie nie wolno palic wiecej chwastów bagiennych, a wiec nie wolno dopuscic do blizn bagiennych.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_02"); //A dlaczego istnieje taki zakaz?
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_03"); //Lee chce powstrzymac niekontrolowana konsumpcje bagna, aby mezczyzni wiecej trenowali.
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_04"); //I na pozostalych w pubie nie powinny miec wplywu opary bagienne, choc moga nie chciec.
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_05"); //Teraz palenie jest dozwolone tylko poza lokalem, ale jesli zbyt czesto sie zlapiesz, otrzymasz nagane i dodatkowe godziny treningu. Cóz, teraz trzeba isc do obozu na palenie.
+	AI_Output(hero, self, "Info_Mod_Raoul_Hi_15_06"); //Ale dlaczego ten facet z obozu na bagnach....
+	AI_Output(self, hero, "Info_Mod_Raoul_Hi_01_07"); //No cóz, to bylo jeszcze przed wejsciem w zycie nowych przepisów. A naszym zadaniem jest upewnic sie, ze nikt z nich nie dostanie sie do srodka.
 };
 
 INSTANCE Info_Mod_Raoul_Pickpocket (C_INFO)

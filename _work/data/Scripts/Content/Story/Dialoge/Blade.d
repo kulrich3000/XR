@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Blade_Hi (C_INFO)
 	information	= Info_Mod_Blade_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das Training wartet. Geh zu Patrick.";
+	description	= "Czekanie na trening. Przejdz do Patricka.";
 };
 
 FUNC INT Info_Mod_Blade_Hi_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Blade_Hi_Condition()
 
 FUNC VOID Info_Mod_Blade_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Blade_Hi_15_00"); //Das Training wartet. Geh zu Patrick.
-	AI_Output(self, hero, "Info_Mod_Blade_Hi_11_01"); //Was? Man, ich bin doch sowieso schon einer der besten Schwertkämpfer.
-	AI_Output(hero, self, "Info_Mod_Blade_Hi_15_02"); //Regeln sind Regeln.
-	AI_Output(self, hero, "Info_Mod_Blade_Hi_11_03"); //Ja, ich mach mich ja schon auf die Socken.
+	AI_Output(hero, self, "Info_Mod_Blade_Hi_15_00"); //Czekanie na trening. Przejdz do Patricka.
+	AI_Output(self, hero, "Info_Mod_Blade_Hi_11_01"); //Co? Czlowiek, i tak juz jestem jednym z najlepszych mieczników.
+	AI_Output(hero, self, "Info_Mod_Blade_Hi_15_02"); //Zasady sa zasadami.
+	AI_Output(self, hero, "Info_Mod_Blade_Hi_11_03"); //Tak, utknelam na nogi.
 
-	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Blade zum Training zu bewegen war kein größeres Problem.");
+	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Przenoszenie ostrza do praktyki nie bylo duzym problemem.");
 
 	AI_StopProcessInfos	(self);
 
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Blade_Ambient (C_INFO)
 	information	= Info_Mod_Blade_Ambient_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_Blade_Ambient_Condition()
@@ -49,9 +49,9 @@ FUNC INT Info_Mod_Blade_Ambient_Condition()
 
 FUNC VOID Info_Mod_Blade_Ambient_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Blade_Ambient_15_00"); //Wie geht's?
-	AI_Output(self, hero, "Info_Mod_Blade_Ambient_11_01"); //Komisch heute. Hab da so ein Kribbeln im Arm.
-	AI_Output(self, hero, "Info_Mod_Blade_Ambient_11_02"); //Muss wohl mal wieder ordentlich trainieren.
+	AI_Output(hero, self, "Info_Mod_Blade_Ambient_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Blade_Ambient_11_01"); //Dzis zabawne rzeczy. Mruczylam troche w ramie.
+	AI_Output(self, hero, "Info_Mod_Blade_Ambient_11_02"); //Musza pociagnac sie prawidlowo.
 };
 
 INSTANCE Info_Mod_Blade_Pickpocket (C_INFO)

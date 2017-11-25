@@ -1,7 +1,7 @@
 INSTANCE Mod_7163_ASS_Kamal_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kamal"; 
+	name 		= "wielblad"; 
 	guild 		= GIL_OUT;
 	id 			= 7163;
 	voice 		= 11;

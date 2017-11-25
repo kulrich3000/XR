@@ -1,7 +1,7 @@
 INSTANCE GardeBeliars_1993_Gunram	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Gunram";
+	name							=	"gunram";
 	guild							=	GIL_NONE;
 	id			= 	1993;
 	voice			=	14;

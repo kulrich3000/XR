@@ -1,7 +1,7 @@
 INSTANCE Mod_7593_OUT_Handlanger_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Handlanger";
+	name 		= "sidick";
 	guild 		= GIL_OUT;
 	id 			= 7593;
 	voice 		= 1;

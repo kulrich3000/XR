@@ -1,6 +1,6 @@
 INSTANCE ItWr_Bauplan_BeliarDolch		(C_Item)
 {
-	name 				=	"Bauplan";
+	name 				=	"wzorzec";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -11,7 +11,7 @@ INSTANCE ItWr_Bauplan_BeliarDolch		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseBauplan_BeliarDolch;
 	scemeName			=	"MAP";
-	description			= 	"Bauplan: Dolch Beliars";
+	description			= 	"Plan budowy: Dagger Beliars.";
 };
 
 func void UseBauplan_BeliarDolch ()
@@ -23,10 +23,10 @@ func void UseBauplan_BeliarDolch ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Dolch Beliars"					);
+					Doc_PrintLine	( nDocID,  0, "Dagger Beliars"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Der Dolch wird aus 1 Brocken schwarzem Erz und 1 Brocken magischem Erz  erschaffen.  Von einem mächtigen Magier des dunklen Gottes muss er zuletzt seine Weihe erhalten, bevor er einmalig seine vernichtende Wirkung entfalten kann."					);
+					Doc_PrintLines	( nDocID,  0, "Sztylet powstaje z 1 brylki rudy czarnej i 1 bryly magicznej rudy. Od poteznego maga Mrocznego Boga musi on otrzymac swoja ostatnia konsekracje, zanim bedzie mógl w niepowtarzalny sposób rozwinac swój niszczycielski skutek."					);
 
 					Doc_Show		( nDocID );
 

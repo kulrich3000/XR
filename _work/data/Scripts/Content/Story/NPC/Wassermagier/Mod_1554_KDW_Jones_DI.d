@@ -1,7 +1,7 @@
 instance Mod_1554_KDW_Jones_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Jones";
+	name 		= "Jones Jones";
 	guild 		= GIL_nov;
 	id 			= 1554;
 	voice 		= 13;

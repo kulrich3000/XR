@@ -1,7 +1,7 @@
 instance Mod_904_SLD_Engardo_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Engardo"; 
+	name 		= "engardo"; 
 	guild 		= GIL_MIL;
 	id 			= 904;
 	voice 		= 13;

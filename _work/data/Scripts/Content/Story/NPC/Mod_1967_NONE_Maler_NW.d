@@ -1,7 +1,7 @@
 instance Mod_1967_NONE_Maler_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Maler";	
+	name 		= "malarka";	
 	guild 		= GIL_pal;
 	id 			= 1967;
 	voice 		= 6;

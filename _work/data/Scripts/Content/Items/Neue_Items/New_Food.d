@@ -1,6 +1,6 @@
 INSTANCE ItFo_wineberrys_01(C_Item)
 {	
-	name 				=	"Weintrauben";
+	name 				=	"winogrona";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -20,7 +20,7 @@ INSTANCE ItFo_wineberrys_01(C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 
 	TEXT[5]				= NAME_Value;					COUNT[5]	= 8;
@@ -50,7 +50,7 @@ INSTANCE ItFo_wineberrys_01(C_Item)
 
 INSTANCE ItFo_MuttonRaw (C_Item)
 {	
-	name 				=	"Rohes Fleisch";
+	name 				=	"Surowe mieso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -71,7 +71,7 @@ INSTANCE ItFo_MuttonRaw (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 	
 	TEXT[5]				= 	NAME_Value;			
@@ -103,7 +103,7 @@ INSTANCE ItFo_MuttonRaw (C_Item)
 
 INSTANCE ItFo_MuttonRaw_Scav (C_Item)
 {	
-	name 				=	"Fleisch eines Scavengers, der nicht aus einem Ei geschlüpft ist";
+	name 				=	"Mieso padlinozercy, który nie wyklul sie z jajka";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_SHOW;
@@ -125,7 +125,7 @@ INSTANCE ItFo_MuttonRaw_Scav (C_Item)
 
 INSTANCE ItFo_Mutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 {	
-	name 				=	"Gebratenes Fleisch";
+	name 				=	"Fermentacja miesa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -146,7 +146,7 @@ INSTANCE ItFo_Mutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= value;
@@ -177,7 +177,7 @@ INSTANCE ItFo_Mutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 
 INSTANCE ItFo_LammPoekelfleisch (C_Item)
 {	
-	name 				=	"gepökeltes Lammfleisch";
+	name 				=	"solony jagniecina";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -198,7 +198,7 @@ INSTANCE ItFo_LammPoekelfleisch (C_Item)
 	}
 	else
 	{
-		TEXT[1]				= 	"Unbekannte Wirkung";
+		TEXT[1]				= 	"Skutek nieznany";
 	};
 
 	TEXT[5]				= 	NAME_Value;		COUNT[5]	= value;
@@ -230,7 +230,7 @@ INSTANCE ItFo_LammPoekelfleisch (C_Item)
 
 INSTANCE ItFo_Poekelfleisch_Skip (C_Item)
 {	
-	name 				=	"gepökeltes Fleisch";
+	name 				=	"solone mieso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -248,7 +248,7 @@ INSTANCE ItFo_Poekelfleisch_Skip (C_Item)
 
 INSTANCE ItFo_Tofu (C_Item)
 {	
-	name 				=	"To-Fu";
+	name 				=	"to-fu";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

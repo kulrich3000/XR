@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Melcador_Hi (C_INFO)
 	information	= Info_Mod_Melcador_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst irgendwie ein wenig gereizt aus.";
+	description	= "Wygladasz troche poirytowany.";
 };
 
 FUNC INT Info_Mod_Melcador_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Melcador_Hi_Condition()
 
 FUNC VOID Info_Mod_Melcador_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_00"); //Du siehst irgendwie ein wenig gereizt aus.
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_01"); //Was du nicht sagst! Wenn du mit so vielen beschissenen Aufgaben betraut werden würdest wie ich, dann würdest du auch so eine Fresse ziehen.
-	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_02"); //Was hast du denn für beschissene Aufgaben?
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_03"); //Ole hat mich mit der wunderbaren Aufgabe betraut, darauf zu achten, dass jeder hier im Lager seine zugewiesene Aufgabe erfüllt.
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_04"); //Und da du hier außer Heidrek und Jerry keinen was arbeiten siehst, heißt das, dass ich meine Aufgabe nicht erfüllt habe.
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_05"); //Das ist schlussendlich dann auch der Grund, das mir dann wiederrum Ole immer in den Ohren liegt, dass ich meinen Job nicht erfülle und somit tischt er mir jetzt allen möglichen Scheiß auf, den ich zu erfüllen hab.
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_06"); //Ich kann dir sagen, hier werd ich bald noch bescheuert.
-	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_07"); //Vielleicht kann ich dir ja ein wenig bei deinen Aufgaben helfen.
-	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_08"); //Ein wenig Hilfe könnte ich natürlich gebrauchen, aber du solltest vorher mit Ole gesprochen haben, nicht dass es so aussieht, als würde ich mich vor der Arbeit drücken.
+	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_00"); //Wygladasz troche poirytowany.
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_01"); //Nie mówisz! Jesli mialoby sie powierzyc ci tyle tragicznych zadan, ile ja jestem, to przeciagnalbys twarz w ten sposób.
+	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_02"); //Jaka jest twoja praca?
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_03"); //Ole powierzyl mi wspaniale zadanie zapewnienia, aby wszyscy tu w obozie wypelniali swoje zadania.
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_04"); //A poniewaz nie widzicie tutaj nic, co by sie tu nie dzialo, oprócz Heidreka i Jerry' ego, to znaczy, ze nie wykonalem swojej pracy.
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_05"); //To wlasnie dlatego Ole jest zawsze w moich uszach, ze nie wykonuje swojej pracy i dlatego dal mi wszelkiego rodzaju gówno, co musze zrobic.
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_06"); //Moge ci powiedziec, ze wkrótce bede glupi.
+	AI_Output(hero, self, "Info_Mod_Melcador_Hi_15_07"); //Moze moge wam pomóc w waszych zadaniach.
+	AI_Output(self, hero, "Info_Mod_Melcador_Hi_06_08"); //Móglbym oczywiscie skorzystac z niewielkiej pomocy, ale najpierw powinienes byl porozmawiac z Ole, nie dlatego, ze wyglada na to, ze unikam pracy.
 };
 
 INSTANCE Info_Mod_Melcador_Buddler (C_INFO)
@@ -35,7 +35,7 @@ INSTANCE Info_Mod_Melcador_Buddler (C_INFO)
 	information	= Info_Mod_Melcador_Buddler_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir von Ole aus helfen.";
+	description	= "Mam Ci pomóc z Ole.";
 };
 
 FUNC INT Info_Mod_Melcador_Buddler_Condition()
@@ -48,13 +48,13 @@ FUNC INT Info_Mod_Melcador_Buddler_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler_15_00"); //Ich soll dir von Ole aus helfen. Also was sollst du machen?
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler_06_01"); //Ich soll mich um neue Buddler kümmern. Wenn du willst, kannst du mit ins alte Lager kommen, dort finden wir am ehesten neue Leute.
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler_15_02"); //Dann geh du vor ich folge dir.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler_15_00"); //Mam Ci pomóc z Ole. Co wiec robisz?
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler_06_01"); //Zadbam o nowe koparki. Jesli chcesz, mozesz przyjechac ze mna do starego obozu, gdzie znajdziemy nowych ludzi.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler_15_02"); //Wtedy pójdziesz dalej, a ja pójde za Toba.
 
 	Log_CreateTopic	(TOPIC_MOD_KG_BUDDLER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KG_BUDDLER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Ich soll Melcador ins alte Lager begleiten, um dort Buddler abzuwerben.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Móglbym odprowadzic Melcadora do starego obozu, aby zwabic Buddlera.");
 
 	AI_StopProcessInfos	(self);
 
@@ -84,10 +84,10 @@ FUNC INT Info_Mod_Melcador_Buddler2_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler2_06_00"); //So, ich unterhalte mich mal mit Ian, vielleicht weiß er ja, wen wir gebrauchen könnten.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler2_06_01"); //Du solltest derweil mal im Lager herum fragen, kann ja sein, dass du Glück hast und jemanden findest.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler2_06_00"); //Cóz, jestem gonna mam czat z Ianem, moze on wie, kogo mozemy uzyc.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler2_06_01"); //Powinienes w miedzyczasie zapytac o obóz, mozesz miec szczescie i znalezc kogos.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Während sich Melcador mit Ian unterhält, soll ich mich im Lager umsehen. Vielleicht finde ich ja einen Buddler für unsere Sache.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Podczas gdy Melcador rozmawia z Ianem, chce, abym rozejrzal sie po obozie. Moze znajde kopaczke do naszej sprawy.");
 
 	AI_StopProcessInfos	(self);
 
@@ -103,7 +103,7 @@ INSTANCE Info_Mod_Melcador_Buddler3 (C_INFO)
 	information	= Info_Mod_Melcador_Buddler3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab einen Buddler gefunden!";
+	description	= "Znalazlem kopaczke!";
 };
 
 FUNC INT Info_Mod_Melcador_Buddler3_Condition()
@@ -116,15 +116,15 @@ FUNC INT Info_Mod_Melcador_Buddler3_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_00"); //Ich hab einen Buddler gefunden!
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_01"); //Sehr schön, dann lass uns jetzt gehen.
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_02"); //Er braucht aber noch sein altes Buddlerbuch, um sich wieder in die Materie einzuarbeiten.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_03"); //Wäre auch zu schön gewesen. Und wo ist es?!
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_04"); //Ein Skelett hat es ihm abgenommen.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_05"); //Das wird ja immer besser. Ok, ich mach dir einen Vorschlag, du gehst vor und ich folge dir.
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_06"); //Gut folge mir.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_00"); //Znalazlem kopaczke!
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_01"); //Bardzo ladnie, przejdzmy teraz.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_02"); //Ale nadal potrzebuje swojej starej ksiazki Buddlera, aby zapoznac sie z ta sprawa.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_03"); //Byloby to zbyt wiele zabawy. A gdzie tak jest?
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_04"); //Szkielet zabral go od niego.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler3_06_05"); //To jest coraz lepsze i lepsze. Dobrze, przedstawie Ci propozycje, idz dalej, a ja pójde za Toba.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler3_15_06"); //Cóz, podazaj za mna.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Melcador wird mir zum Lager folgen.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Melcador podazy za mna do obozu.");
 
 	AI_StopProcessInfos	(self);
 
@@ -155,9 +155,9 @@ FUNC INT Info_Mod_Melcador_Buddler4_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler4_06_00"); //Na super, kein Buch da.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler4_06_01"); //Wahrscheinlich hat dieses verdammte Skelett das Buch in irgendeinen unterirdischen Tempel gebracht, wo wir uns durch Horden von Skelettkriegern kämpfen dürfen.
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler4_15_02"); //Mach doch nicht gleich so einen Wind. Der Schlüssel ist bestimmt für eine der Truhen hier.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler4_06_00"); //Wspaniala, nie ma tam ksiazki.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler4_06_01"); //Prawdopodobnie ten zwariowany szkielet zabral ksiazke do jakiejs podziemnej swiatyni, gdzie wolno nam walczyc przez hordy wojowników szkieletowych.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler4_15_02"); //Nie robie takiego zamieszania. Klucz przeznaczony jest dla jednej z nich.
 };
 
 INSTANCE Info_Mod_Melcador_Buddler5 (C_INFO)
@@ -168,7 +168,7 @@ INSTANCE Info_Mod_Melcador_Buddler5 (C_INFO)
 	information	= Info_Mod_Melcador_Buddler5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Siehst du.";
+	description	= "Widzisz?";
 };
 
 FUNC INT Info_Mod_Melcador_Buddler5_Condition()
@@ -182,10 +182,10 @@ FUNC INT Info_Mod_Melcador_Buddler5_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler5_15_00"); //Siehst du. Das Skelett hat es einfach in eine Truhe getan und in keinen gottverdammten Tempel.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler5_06_01"); //In Ordnung. Bring dem Buddler jetzt sein Buch, ich geh schon mal zum Lager zurück.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler5_15_00"); //Widzisz? Szkielet po prostu umiescic w klatce piersiowej, a nie swiatyni goddamn.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler5_06_01"); //Wszystkie sluszne, wszystkie sluszne. Wez jego ksiazke do Buddlera teraz, wróce do obozu.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Ich soll Costa nun sein Buch bringen. Melcador geht schon zurück zum Lager.");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Mam przyniesc Coste swoja ksiazke. Melcador juz wrócil do obozu.");
 
 	AI_StopProcessInfos	(self);
 
@@ -202,7 +202,7 @@ INSTANCE Info_Mod_Melcador_Buddler6 (C_INFO)
 	information	= Info_Mod_Melcador_Buddler6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Buddler wartet jetzt an der Mine.";
+	description	= "Koparka czeka teraz na koparke.";
 };
 
 FUNC INT Info_Mod_Melcador_Buddler6_Condition()
@@ -215,13 +215,13 @@ FUNC INT Info_Mod_Melcador_Buddler6_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler6_15_00"); //Der Buddler wartet jetzt an der Mine.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_01"); //Gut, allerdings bräuchten wir noch einen.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_02"); //Ich habe gehört, in einem Tal namens Relendel hier auf der Insel, soll es noch eine größere Stadt geben.
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_03"); //Vielleicht findest du dort noch jemanden, der für uns arbeitet.
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler6_15_04"); //Ok, dann werde ich mich dort mal umsehen.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler6_15_00"); //Koparka czeka teraz na koparke.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_01"); //Dobre, ale potrzebujemy jeszcze jednego.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_02"); //Slysze, ze na wyspie ma byc wieksze miasto w dolinie zwanej Relendel.
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler6_06_03"); //Byc moze znajdziesz u nas kogos innego.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler6_15_04"); //Dobrze, rozejrze sie dookola.
 
-	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Nun soll ich auch noch nach Relendel gehen und mich dort nach einem zweiten Buddler umsehen ...");
+	B_LogEntry	(TOPIC_MOD_KG_BUDDLER, "Teraz musze udac sie do Relendel i szukac tam drugiego kopacza....");
 };
 
 INSTANCE Info_Mod_Melcador_Buddler7 (C_INFO)
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Melcador_Buddler7 (C_INFO)
 	information	= Info_Mod_Melcador_Buddler7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein weiterer Buddler wartet jetzt vor der Mine!";
+	description	= "Kolejny kopacz czeka teraz poza koparka!";
 };
 
 FUNC INT Info_Mod_Melcador_Buddler7_Condition()
@@ -245,14 +245,14 @@ FUNC INT Info_Mod_Melcador_Buddler7_Condition()
 
 FUNC VOID Info_Mod_Melcador_Buddler7_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Buddler7_15_00"); //Ein weiterer Buddler wartet jetzt vor der Mine!
-	AI_Output(self, hero, "Info_Mod_Melcador_Buddler7_06_01"); //Sehr schön, du bist ja wirklich zu was zu gebrauchen. Hier hast du ein wenig Gold.
+	AI_Output(hero, self, "Info_Mod_Melcador_Buddler7_15_00"); //Kolejny kopacz czeka teraz poza koparka!
+	AI_Output(self, hero, "Info_Mod_Melcador_Buddler7_06_01"); //Bardzo dobrze, jestes naprawde przydatny. Oto troche zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_KG_VORBEREITUNGEN, "Ich habe Melcador geholfen, Buddler für die Mine zu besorgen.");
+	B_LogEntry	(TOPIC_MOD_KG_VORBEREITUNGEN, "Pomagalem Melcadorowi zdobyc Buddlera dla kopalni.");
 	B_SetTopicStatus	(TOPIC_MOD_KG_BUDDLER, LOG_SUCCESS);
 };
 
@@ -264,7 +264,7 @@ INSTANCE Info_Mod_Melcador_Trent (C_INFO)
 	information	= Info_Mod_Melcador_Trent_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hymir schickt mich, ich soll mich zur Ruhe setzen.";
+	description	= "Hymir wyslal mnie na emeryture.";
 };
 
 FUNC INT Info_Mod_Melcador_Trent_Condition()
@@ -277,16 +277,16 @@ FUNC INT Info_Mod_Melcador_Trent_Condition()
 
 FUNC VOID Info_Mod_Melcador_Trent_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Trent_15_00"); //Hymir schickt mich, ich soll mich zur Ruhe setzen.
-	AI_Output(self, hero, "Info_Mod_Melcador_Trent_06_01"); //Du Glücklicher! Hier ist der Kram den ich dir geben soll.
+	AI_Output(hero, self, "Info_Mod_Melcador_Trent_15_00"); //Hymir wyslal mnie na emeryture.
+	AI_Output(self, hero, "Info_Mod_Melcador_Trent_06_01"); //Jestes tak szczesliwy! Oto rzeczy, które powinienem ci przekazac.
 
 	CreateInvItems	(hero, ItMw_KGErzwaffe, 1);
 
 	CreateInvItems	(hero, ItFo_Beer, 6);
 
-	B_ShowGivenThings	("Königliche Erzwaffe und 6 Bier erhalten");
+	B_ShowGivenThings	("Bron królewska i 6 piwa otrzymana");
 
-	AI_Output(self, hero, "Info_Mod_Melcador_Trent_06_02"); //Lass uns darauf erst mal einen trinken.
+	AI_Output(self, hero, "Info_Mod_Melcador_Trent_06_02"); //Najpierw napój.
 
 	B_UseItem	(self, ItFo_Beer);
 	B_UseItem	(hero, ItFo_Beer);
@@ -300,7 +300,7 @@ INSTANCE Info_Mod_Melcador_Lehrer (C_INFO)
 	information	= Info_Mod_Melcador_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du kämpfst doch mit einer Einhandwaffe?!";
+	description	= "Czyz nie walczysz z bronia jednoreczna?";
 };
 
 FUNC INT Info_Mod_Melcador_Lehrer_Condition()
@@ -315,11 +315,11 @@ FUNC INT Info_Mod_Melcador_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Melcador_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_Lehrer_15_00"); //Du kämpfst doch mit einer Einhandwaffe?! Wie sieht es aus, bist du gut genug um mir was bei zu bringen?
-	AI_Output(self, hero, "Info_Mod_Melcador_Lehrer_06_01"); //Ich könnte dir schon was beibringen, aber ich weise niemanden in die Grundtechniken ein. Also komm erst zu mir, wenn du wenig Erfahrung gesammelt hast.
+	AI_Output(hero, self, "Info_Mod_Melcador_Lehrer_15_00"); //Czyz nie walczysz z bronia jednoreczna? Jak to wyglada, czy jestes na tyle dobry, ze czegos mnie nauczyles?
+	AI_Output(self, hero, "Info_Mod_Melcador_Lehrer_06_01"); //Móglbym wam cos nauczyc, ale nikogo nie ucze podstaw. Nie przychodzcie do mnie, dopóki nie zdobedziecie doswiadczenia.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Melcador kann mir den Kampf mit Einhändern beibringen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Melcador moze nauczyc mnie jak walczyc z mezczyznami jednej reki.");
 };
 
 INSTANCE Info_Mod_Melcador_LernenMelcador (C_INFO)
@@ -330,7 +330,7 @@ INSTANCE Info_Mod_Melcador_LernenMelcador (C_INFO)
 	information	= Info_Mod_Melcador_LernenMelcador_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hab ich genug Erfahrung gesammelt?";
+	description	= "Czy zdobylem wystarczajace doswiadczenie?";
 };
 
 FUNC INT Info_Mod_Melcador_LernenMelcador_Condition()
@@ -345,12 +345,12 @@ FUNC INT Info_Mod_Melcador_LernenMelcador_Condition()
 
 FUNC VOID Info_Mod_Melcador_LernenMelcador_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Melcador_LernenMelcador_15_00"); //Hab ich genug Erfahrung gesammelt?
-	AI_Output(self, hero, "Info_Mod_Melcador_LernenMelcador_06_01"); //Ja, aber vergiss nicht: Wer ein Meister im einhändigen Kampf werden will, muss viel Erfahrung investieren.
+	AI_Output(hero, self, "Info_Mod_Melcador_LernenMelcador_15_00"); //Czy zdobylem wystarczajace doswiadczenie?
+	AI_Output(self, hero, "Info_Mod_Melcador_LernenMelcador_06_01"); //Tak, ale nie zapominaj: Jesli chcesz zostac mistrzem w walce jednostronnej, musisz zainwestowac duzo doswiadczenia.
 
 	Info_ClearChoices	(Info_Mod_Melcador_LernenMelcador);
 	
-	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Zurück.", Info_Mod_Melcador_LernenMelcador_BACK);
+	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Z powrotem.", Info_Mod_Melcador_LernenMelcador_BACK);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Melcador_LernenMelcador_5);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Melcador_LernenMelcador_1);
 };
@@ -366,7 +366,7 @@ FUNC VOID Info_Mod_Melcador_LernenMelcador_5()
 
 	Info_ClearChoices	(Info_Mod_Melcador_LernenMelcador);
 
-	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Zurück.", Info_Mod_Melcador_LernenMelcador_BACK);
+	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Z powrotem.", Info_Mod_Melcador_LernenMelcador_BACK);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Melcador_LernenMelcador_5);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Melcador_LernenMelcador_1);
 };
@@ -377,7 +377,7 @@ FUNC VOID Info_Mod_Melcador_LernenMelcador_1()
 
 	Info_ClearChoices	(Info_Mod_Melcador_LernenMelcador);
 
-	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Zurück.", Info_Mod_Melcador_LernenMelcador_BACK);
+	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, "Z powrotem.", Info_Mod_Melcador_LernenMelcador_BACK);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H5, B_GetLearnCostTalent_New(hero, NPC_TALENT_1H)), Info_Mod_Melcador_LernenMelcador_5);
 	Info_AddChoice	(Info_Mod_Melcador_LernenMelcador, B_BuildLearnString(PRINT_Learn1H1, B_GetLearnCostTalent(hero, NPC_TALENT_1H, 1)), Info_Mod_Melcador_LernenMelcador_1);
 };

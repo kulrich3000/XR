@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Will_Hi_Condition()
 
 FUNC VOID Info_Mod_Will_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_00"); //Tritt herein, Freund. Gerade eben läuft mein neues revolutionäres Bühnenstück.
-	AI_Output(hero, self, "Info_Mod_Will_Hi_15_01"); //Was ist denn daran so revolutionär?
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_02"); //(euphorisch) Ich habe das ganze Stück auf seine Höhepunkte zusammengestrichen!
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_03"); //Innovation à la Will Shakesbeer!
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_04"); //Wie oft sitzt man im teatro und schaut sich ein - womöglich spannendes - pièce teatrale, ein Stück, an, fiebert mit, und doch - nach zwei Stunden, nach drei Stunden schleicht sich ein Gähnen ein;
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_05"); //man unterdrückt es, aber je weiter die Zeit fortschreitet, desto häufiger muss man dagegen ankämpfen.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_06"); //Und wahrlich niemand vermag es, mehrere Stunden ohne Brückenszenen zu füllen, Lückenbüßer, wenn Er so will, unnötig allemal.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_07"); //Dies wird sich nun ändern! Mein Konzept sieht eine Konzentration der suspense, der Spannung, vor, es geht Schlag auf Schlag, Schicksalsschlag auf Hammerschlag, oder so, wie Er will.
-	AI_Output(self, hero, "Info_Mod_Will_Hi_06_08"); //Die nächste recita, Aufführung, beginnt gleich. Für nur 100 Goldmünzen kann Er dabei sein.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_00"); //Wejdz do srodka, przyjaciel. Obecnie trwa moja nowa, rewolucyjna gra sceniczna.
+	AI_Output(hero, self, "Info_Mod_Will_Hi_15_01"); //Co jest tak rewolucyjne?
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_02"); //Cala rzecz obcielam az do kulminacji!
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_03"); //Innowacja a la Shakesbeer!
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_04"); //Jak czesto siedzisz w smoczku i ogladasz - byc moze ekscytujace - teatralne pièce teatrale, zabawe, zabawe goraczkowo, a jednak - po dwóch godzinach, po trzech godzinach wkradania sie jarzacego;
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_05"); //Jesli go usuniesz, ale dalej nadchodzi czas, tym czesciej trzeba z nim walczyc.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_06"); //I na pewno nikt nie moze wypelnic go przez kilka godzin bez sceny mostu, jesli On tak zechce, nie ma takiej potrzeby.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_07"); //Teraz to sie zmieni! Moja koncepcja zaklada koncentracje napiecia, napiecia, napiecia, uderzenia ciosem, ciosem przez cios, cios przez cios losu na uderzenie mlotkiem, lub tak, jak On chce.
+	AI_Output(self, hero, "Info_Mod_Will_Hi_06_08"); //Zaczyna sie kolejne recita, koncert. Moze byc tam za 100 zlotych monet.
 };
 
 INSTANCE Info_Mod_Will_EXIT (C_INFO)

@@ -1,7 +1,7 @@
 INSTANCE Mod_534_KDF_Milten_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Milten";
+	name 		= "mlyny";
 	guild 		= GIL_OUT;
 	id 			= 534;
 	voice 		= 3;

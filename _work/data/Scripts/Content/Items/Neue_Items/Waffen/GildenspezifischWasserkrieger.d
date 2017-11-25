@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_AdanosSchwert (C_Item)
 {
-	name 				=	"Schwert Adanos'";
+	name 				=	"Miecz miecz Adanosa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -30,7 +30,7 @@ INSTANCE ItMw_AdanosSchwert (C_Item)
 };
 INSTANCE ItMw_AdanosSchwert_Geschaerft (C_Item)
 {
-	name 				=	"Schwert Adanos' (geschärft)";
+	name 				=	"Miecz Adanos '(ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -61,7 +61,7 @@ INSTANCE ItMw_AdanosSchwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_XRSchwert_01 (C_Item)
 {	
-	name 				=	"Klinge Adanos'";
+	name 				=	"Brzeszczot Adanos";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -84,7 +84,7 @@ INSTANCE ItMw_XRSchwert_01 (C_Item)
 };
 INSTANCE ItMw_XRSChwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Klinge Adanos' (geschärft)";
+	name 				=	"Ostrze Adanos '(ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

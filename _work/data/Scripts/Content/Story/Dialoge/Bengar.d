@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bengar_Hi (C_INFO)
 	information	= Info_Mod_Bengar_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Bengar_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Bengar_Hi_Condition()
 FUNC VOID Info_Mod_Bengar_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Bengar_Hi_10_01"); //Ich bin Bengar, Bauer auf diesem Hof.
+	AI_Output(self, hero, "Info_Mod_Bengar_Hi_10_01"); //Ja jestem Bengar, gospodarzem tego gospodarstwa.
 };
 
 INSTANCE Info_Mod_Bengar_Aufgabe (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Bengar_Aufgabe (C_INFO)
 	information	= Info_Mod_Bengar_Aufgabe_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Baltram wartet auf dein Brot.";
+	description	= "Baltram czeka na Twój chleb.";
 };
 
 FUNC INT Info_Mod_Bengar_Aufgabe_Condition()
@@ -43,81 +43,81 @@ FUNC INT Info_Mod_Bengar_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Bengar_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_00"); //Baltram wartet auf dein Brot.
-	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_01"); //Ich habe erst vor ein paar Tagen Wagen und Männer bei einem Überfall verloren. Das Risiko gehe ich nicht noch mal ein!
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_02"); //Deswegen bin ich ja hier.
-	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_03"); //So? Du willst alleine und voll beladen zur Stadt laufen?
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_04"); //Wäre nicht das erstes Mal.
-	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_05"); //Na schön, wenn du meinst ... ich bekomme dann 150 Gold.
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_00"); //Baltram czeka na Twój chleb.
+	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_01"); //Kilka dni temu stracilem samochody i mezczyzn w rabunku. Nie biore tej szansy ponownie!
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_02"); //Dlatego jestem tutaj.
+	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_03"); //Lubie to? Chcesz chodzic samotnie i ladowac sie do miasta?
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_15_04"); //Nie bylby to pierwszy raz.
+	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_10_05"); //Wszystko w porzadku, jesli masz na mysli.... Dostane 150 zlota.
 
 	Info_ClearChoices	(Info_Mod_Bengar_Aufgabe);
 
 	if (Mod_Verhandlungsgeschick > 0)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "(Feilschen) Die Brote sehen nicht so wertvoll aus ...", Info_Mod_Bengar_Aufgabe_C);
+		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Chleb nie wyglada tak cennie....", Info_Mod_Bengar_Aufgabe_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 150)
 	{
-		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Hier hast du 150 Gold.", Info_Mod_Bengar_Aufgabe_B);
+		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Oto 150 zlota.", Info_Mod_Bengar_Aufgabe_B);
 	};
-	Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "So viel habe ich nicht.", Info_Mod_Bengar_Aufgabe_A);
+	Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Nie mam tak wiele.", Info_Mod_Bengar_Aufgabe_A);
 };
 
 FUNC VOID Info_Mod_Bengar_Aufgabe_C()
 {
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_C_15_00"); //Die Brote sehen nicht so wertvoll aus ...
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_C_15_00"); //Chleby nie wygladaja tak drogocennie....
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_C_10_01"); //(mürrisch) Dann eben 100 Gold. Hauptsache, du lässt mal was rüberwachsen.
+		AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_C_10_01"); //100 zlota. Najwazniejsze jest to, ze pozwalasz sobie na wzrost.
 
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 100);
 		CreateInvItems	(hero, ItFo_Bread, 30);
 
 		Mod_BengarBaltram = 1;
 
-		B_ShowGivenThings	("100 Gold gegeben und 30 Brote erhalten");
+		B_ShowGivenThings	("100 zlota i 30 bochenków chleba");
 
-		B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Bengar hat mir sein Brot überlassen.");
+		B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Bengar dal mi swój chleb.");
 
 		Info_ClearChoices	(Info_Mod_Bengar_Aufgabe);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_C_10_02"); //Verarsch mich nicht, klar?
+		AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_C_10_02"); //Czyz nie mam racji?
 
 		Info_ClearChoices	(Info_Mod_Bengar_Aufgabe);
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 150)
 		{
-			Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Hier hast du 150 Gold.", Info_Mod_Bengar_Aufgabe_B);
+			Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Oto 150 zlota.", Info_Mod_Bengar_Aufgabe_B);
 		};
-		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "So viel habe ich nicht.", Info_Mod_Bengar_Aufgabe_A);
+		Info_AddChoice	(Info_Mod_Bengar_Aufgabe, "Nie mam tak wiele.", Info_Mod_Bengar_Aufgabe_A);
 	};
 };
 
 FUNC VOID Info_Mod_Bengar_Aufgabe_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_B_15_00"); //Hier hast du 150 Gold.
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_B_15_00"); //Oto 150 zlota.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 150);
 
-	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_B_10_01"); //Und hier das Brot.
+	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_B_10_01"); //A oto chleb.
 
 	B_GiveInvItems	(self, hero, ItFo_Bread, 30);
 
 	Mod_BengarBaltram = 1;
 
-	B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Bengar hat mir sein Brot überlassen.");
+	B_LogEntry	(TOPIC_MOD_BALTRAM_WARENTRANSPORTE, "Bengar dal mi swój chleb.");
 
 	Info_ClearChoices	(Info_Mod_Bengar_Aufgabe);
 };
 
 FUNC VOID Info_Mod_Bengar_Aufgabe_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_A_15_00"); //So viel habe ich nicht.
-	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_A_10_01"); //(spöttisch) Na, das nenne ich mal Vorausplanung! Komm wieder, wenn du das Gold hast.
+	AI_Output(hero, self, "Info_Mod_Bengar_Aufgabe_A_15_00"); //Nie mam tak wiele.
+	AI_Output(self, hero, "Info_Mod_Bengar_Aufgabe_A_10_01"); //(smiesznie) No cóz, to wlasnie nazywam planowaniem wyprzedzajacym! Po otrzymaniu zlota przyjedz z powrotem.
 
 	Info_ClearChoices	(Info_Mod_Bengar_Aufgabe);
 };
@@ -143,14 +143,14 @@ FUNC INT Info_Mod_Bengar_Kakos_Condition()
 
 FUNC VOID Info_Mod_Bengar_Kakos_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_00"); //Hab vielen Dank. Unglaublich, was du an diesem Riesen geleistet hast.
-	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_01"); //Hat uns Tag und Nacht schuften lassen und uns die Haare vom Kopf gefressen, dieser Bastard.
-	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_02"); //Viel länger hätten wir das nicht mehr ausgehalten.
-	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_03"); //Hier, nimm den Schatz des Riesen zum Dank, den wir für ihn aufpolieren sollten.
+	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_00"); //Dziekuje bardzo. Nie moge uwierzyc, co zrobiles na tym gigancie.
+	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_01"); //Pracujemy dzien i noc, jedzac wlosy z glowy, tej dranie.
+	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_02"); //Nie moglismy trwac dluzej.
+	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_03"); //Tu wezmiemy skarb olbrzyma, aby mu podziekowac, który powinnismy dla niego dopracowac.
 
 	B_GiveInvItems	(self, hero, ItMi_Riesenschatz, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_04"); //(lacht gehässig) Da, wo er jetzt ist, wird er ihn nicht mehr brauchen.
+	AI_Output(self, hero, "Info_Mod_Bengar_Kakos_10_04"); //Gdzie jest teraz, juz go nie bedzie potrzebowal.
 
 	B_GivePlayerXP	(500);
 

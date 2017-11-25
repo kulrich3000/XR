@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Namib_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Namib_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_00"); //Diese Aura ... ja, ein mächtiger Dämon auf dieser Insel ist dem Schläfer, wie wir ihn kannten, nicht unähnlich.
-	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_01"); //Sie haben denselben Meister, da besteht kein Zweifel. Das spüre ich.
-	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_02"); //Mit großer Spannung warte ich darauf, was wir hier vorfinden werden.
+	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_00"); //Ta aura.... Tak, potezny demon na tej wyspie nie rózni sie od sypialni, jak go znalismy.
+	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_01"); //Masz tego samego mistrza, nie ma co do tego watpliwosci. Moge to odczuc.
+	AI_Output(self, hero, "Info_Mod_Namib_IR_Hi_02_02"); //Z niecierpliwoscia czekam na to, co tu znajdziemy.
 };
 
 INSTANCE Info_Mod_Namib_IR_GehtLos (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Namib_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Namib_IR_GehtLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Namib_IR_GehtLos_Condition()
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Namib_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Namib_IR_GehtLos_02_00"); //Ach, ich glaube dafür bin ich dann doch schon zu alt, um mitzuhalten. Ich halte hier die Position.
+	AI_Output(self, hero, "Info_Mod_Namib_IR_GehtLos_02_00"); //Ach, mysle, ze juz jestem zbyt stary, by nadazyc za tym. Tutaj utrzymam stanowisko.
 
 	AI_StopProcessInfos	(self);
 };
@@ -59,7 +59,7 @@ INSTANCE Info_Mod_Namib_IR_Kram (C_INFO)
 	information	= Info_Mod_Namib_IR_Kram_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du vielleicht etwas für mich, das mir helfen kann?";
+	description	= "Masz dla mnie cos, co moze mi pomóc?";
 };
 
 FUNC INT Info_Mod_Namib_IR_Kram_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mod_Namib_IR_Kram_Condition()
 
 FUNC VOID Info_Mod_Namib_IR_Kram_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_IR_Kram_15_00"); //Hast du vielleicht etwas für mich, das mir helfen kann?
-	AI_Output(self, hero, "Info_Mod_Namib_IR_Kram_02_01"); //Ich habe einige Spruchrollen meiner Bruderschaft bei mir.
-	AI_Output(self, hero, "Info_Mod_Namib_IR_Kram_02_02"); //Außerdem vermag ich dir zu zeigen, wie du deine magische Kraft erhöhst.
+	AI_Output(hero, self, "Info_Mod_Namib_IR_Kram_15_00"); //Masz dla mnie cos, co moze mi pomóc?
+	AI_Output(self, hero, "Info_Mod_Namib_IR_Kram_02_01"); //Mam przy sobie pewne role zaklecia w mojej wspólnocie braterskiej.
+	AI_Output(self, hero, "Info_Mod_Namib_IR_Kram_02_02"); //Poza tym, moge pokazac wam jak zwiekszyc swoja magiczna moc.
 };
 
 INSTANCE Info_Mod_Namib_IR_Lernen (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Namib_IR_Lernen (C_INFO)
 	information	= Info_Mod_Namib_IR_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Namib_IR_Lernen_Condition()
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_Namib_IR_Lernen_Condition()
 
 FUNC VOID Info_Mod_Namib_IR_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_IR_Lernen_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Namib_IR_Lernen_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Namib_IR_Lernen);
 
@@ -112,7 +112,7 @@ FUNC VOID Info_Mod_Namib_IR_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Namib_IR_Lernen_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Namib_IR_Lernen_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Namib_IR_Lernen);
 };

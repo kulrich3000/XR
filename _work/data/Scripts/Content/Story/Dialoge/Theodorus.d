@@ -15,19 +15,19 @@ FUNC INT Info_Mod_Theodorus_Hi_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_09_00"); //Halt ein!
-	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_15_01"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_09_02"); //Ich möchte dich warnen. Hinter diesem Gang lauern Gefahren.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_09_00"); //Trzymac sie dalej!
+	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_15_01"); //Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_09_02"); //Ostrzegam. Za tym przejsciem kryja sie niebezpieczenstwa.
 
 	Info_ClearChoices	(Info_Mod_Theodorus_Hi);
 
-	Info_AddChoice	(Info_Mod_Theodorus_Hi, "Davon werde ich mir schon selbst ein Bild machen.", Info_Mod_Theodorus_Hi_B);
-	Info_AddChoice	(Info_Mod_Theodorus_Hi, "Gefahren welcher Art?", Info_Mod_Theodorus_Hi_A);
+	Info_AddChoice	(Info_Mod_Theodorus_Hi, "Zobacze dla siebie.", Info_Mod_Theodorus_Hi_B);
+	Info_AddChoice	(Info_Mod_Theodorus_Hi, "Niebezpieczenstwa jakiego rodzaju?", Info_Mod_Theodorus_Hi_A);
 };
 
 FUNC VOID Info_Mod_Theodorus_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_B_15_00"); //Davon werde ich mir schon selbst ein Bild machen.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_B_15_00"); //Zobacze dla siebie.
 	
 	Info_ClearChoices	(Info_Mod_Theodorus_Hi);
 
@@ -36,12 +36,12 @@ FUNC VOID Info_Mod_Theodorus_Hi_B()
 
 FUNC VOID Info_Mod_Theodorus_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_00"); //Gefahren welcher Art?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_01"); //DAS wirst du schon sehr genau wissen! Oder warum willst du dort hin? Natürlich weißt du von Freudenspender!
-	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_02"); //Was ist daran so gefährlich?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //(nachäffend) Was ist daran so gefährlich? Es macht aus starken Männern sabbernde Spirituelle. DAS ist daran gefährlich.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_04"); //Ich habe von einer monotheistischen Religion gehört, die sich allein auf die Einnahme dieser Droge gründet.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_05"); //Willst du auch auf diese Weise die Götter beleidigen? (Pause) Ich könnte dir viel erzählen, was anständige Männer unter Wirkung von Freudenspender getrieben haben ...
+	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_00"); //Niebezpieczenstwa jakiego rodzaju?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_01"); //Z pewnoscia wiesz! A moze dlaczego chcesz tam pojechac? Oczywiscie wiesz o dawcy radosci!
+	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_02"); //Co jest w tym niebezpieczne?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //(nachäffend) Co jest w tym niebezpieczne? Es macht aus starken Männern sabbernde Spirituelle. DAS ist daran gefährlich.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_04"); //Slyszalem o religii monoteistycznej opartej wylacznie na stosowaniu tego narkotyku.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_05"); //Czy chcesz równiez obrazac bogów w ten sposób? (Pauza) Móglbym ci wiele powiedziec o tym, co przyzwoici mezczyzni zrobili pod wplywem radosnych darczynców....
 	
 	Mod_Theodorus_FreudenspenderWarnung = 1;
 
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Theodorus_FreudenspenderWarnung (C_INFO)
 	information	= Info_Mod_Theodorus_FreudenspenderWarnung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir von den Männern unter Freudenspender-Einfluss.";
+	description	= "Opowiedz mi o mezczyznach dajacych przyjemnosc - wplyw.";
 };
 
 FUNC INT Info_Mod_Theodorus_FreudenspenderWarnung_Condition()
@@ -69,15 +69,15 @@ FUNC INT Info_Mod_Theodorus_FreudenspenderWarnung_Condition()
 
 FUNC VOID Info_Mod_Theodorus_FreudenspenderWarnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_FreudenspenderWarnung_15_00"); //Erzähl mir von den Männern unter Freudenspender-Einfluss.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_01"); //Unser letzter Stadthalter, Valens - er war es übrigens, der den beknackten Rang des Stadthalters erfunden hat -, hatte die verrücktesten Halluzinationen in seinen umnachteten Phasen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_02"); //Er litt unter Verfolgungswahn. Einmal träumte er, andere Machtträger hätten Zauberei angewandt, um herauszufinden, wer sein Nachfolger werden würde.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_03"); //Er streifte daraufhin durch die Gassen Khoratas und ließ jeden Auffälligen auf der Stelle exekutieren, auch wenn der nur sein Horoskop gelesen hatte.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_04"); //Andererseits verschonte er seine Gefolgsleute auch bei schwersten Verbrechen; sie konnten morden und plündern, das drang gar nicht zu ihm vor.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_05"); //Er starb dann, als er im Rausch in ein Wasserauffangbecken in Khorata sprang, um dort zu baden - die Becken haben keine Leitern, die hinausführen, und so ersoff er wie eine Fliege in einem Eimer Wasser.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_06"); //Auch Vincent, der Jäger, ist einer von den heiklen Kandidaten.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_07"); //Wir mussten ihn letztens davon abhalten, mit Pfeil und Bogen Jagd auf seine Großmutter zu machen, weil er sie für ein Molerat hielt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_08"); //DAS sind nur zwei Beispiele für den verheerenden Zustand der Leute hier.
+	AI_Output(hero, self, "Info_Mod_Theodorus_FreudenspenderWarnung_15_00"); //Opowiedz mi o mezczyznach dajacych przyjemnosc - wplyw.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_01"); //Nasz ostatni gubernator, Valens, który wymyslil fikcyjna range gubernatora, mial najgorsze halucynacje na swoich pózniejszych etapach.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_02"); //Ucierpial z powodu przesladowan maniaków. Pewnego razu marzyl o tym, ze inni posiadacze wladzy uzyli magii, aby dowiedziec sie, kto go zastapi.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_03"); //Pózniej przejechal uliczkami Khoraty i kazdy widoczny czlowiek zostal rozstrzelany na miejscu, nawet gdyby tylko przeczytal swój horoskop.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_04"); //Z drugiej strony oszczedzil swoich zwolenników nawet w najpowazniejszych zbrodniach; Mogli mordowac i pladrowac, co nie poszlo nawet do niego.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_05"); //Nastepnie umarl, gdy w zatruciu w Khoracie przeskoczyl do zlewni w Khoracie, by tam sie kapac - w basenach nie ma drabin, które by wychodzily, wiec utonal jak mucha w wiadrze wody.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_06"); //Jednym z trudnych kandydatów jest równiez Vincent The Hunter.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_07"); //Niedawno musielismy go powstrzymac od polowania na swoja babcie lukiem i strzalka, bo myslal, ze jest molerato.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung_09_08"); //To sa tylko dwa przyklady niszczycielskiego stanu ludzi tutaj.
 	
 	Mod_Theodorus_FreudenspenderWarnung = 2;
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Theodorus_FreudenspenderWarnung2 (C_INFO)
 	information	= Info_Mod_Theodorus_FreudenspenderWarnung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso verbietet ihr Freudenspender nicht?";
+	description	= "Dlaczego nie mozesz zakazac smakoszy?";
 };
 
 FUNC INT Info_Mod_Theodorus_FreudenspenderWarnung2_Condition()
@@ -103,11 +103,11 @@ FUNC INT Info_Mod_Theodorus_FreudenspenderWarnung2_Condition()
 
 FUNC VOID Info_Mod_Theodorus_FreudenspenderWarnung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_FreudenspenderWarnung2_15_00"); //Wieso verbietet ihr Freudenspender nicht?
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_01"); //DAS hätte ich ja gern, aber die Händler weigern sich, diesen Schritt zu gehen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_02"); //Du kannst dir nicht vorstellen, wie viel Geld einige mit dem Zeug machen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_03"); //(sarkastisch) Außerdem hält es die Leute dumm - was will man mehr?
-	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_04"); //(sinniert) Irgendwann wird es Zeit für eine kleine Revolution ...
+	AI_Output(hero, self, "Info_Mod_Theodorus_FreudenspenderWarnung2_15_00"); //Dlaczego nie mozesz zakazac smakoszy?
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_01"); //Chcialbym to zrobic, ale dealerzy nie chca tego robic.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_02"); //Nie mozna sobie wyobrazic, ile pieniedzy niektórzy ludzie zarabiaja na tych rzeczach.
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_03"); //Co wiecej, trzyma ludzi glupich - czego jeszcze chcesz?
+	AI_Output(self, hero, "Info_Mod_Theodorus_FreudenspenderWarnung2_09_04"); //Pewnego dnia nadszedl czas na mala rewolucje....
 };
 
 INSTANCE Info_Mod_Theodorus_Unruhen (C_INFO)
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Theodorus_Unruhen (C_INFO)
 	information	= Info_Mod_Theodorus_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Weißt du über die neuesten Geschehnisse in Khorata Bescheid?";
+	description 	= "Czy wiesz o ostatnich wydarzeniach w Khoracie?";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Unruhen_Condition()
@@ -131,8 +131,8 @@ FUNC INT Info_Mod_Theodorus_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen_15_00"); //Weißt du über die neuesten Geschehnisse in Khorata Bescheid?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen_09_01"); //Natürlich, und weißt du was? Ich finde es absolut verständlich und begrüßenswert!
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen_15_00"); //Czy wiesz o ostatnich wydarzeniach w Khoracie?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen_09_01"); //Oczywiscie, i wiesz co wiesz? Uwazam to za calkowicie zrozumiale i mile widziane!
 };
 
 INSTANCE Info_Mod_Theodorus_Unruhen2 (C_INFO)
@@ -143,7 +143,7 @@ INSTANCE Info_Mod_Theodorus_Unruhen2 (C_INFO)
 	information	= Info_Mod_Theodorus_Unruhen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Würdest du Stadthalter von Khorata werden wollen?";
+	description 	= "Czy chcialbys byc gubernatorem Khoraty?";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Unruhen2_Condition()
@@ -157,11 +157,11 @@ FUNC INT Info_Mod_Theodorus_Unruhen2_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen2_15_00"); //Würdest du Stadthalter von Khorata werden wollen?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_01"); //Haha, das meinst du hoffentlich nicht ernst.
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen2_15_02"); //Doch, durchaus.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_03"); //(überlegt) Vielleicht wäre es sogar eine Überlegung wert. Dann gäbe es endlich eine Möglichkeit, Khorata zu ändern.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_04"); //Also, wenn du mich als Stadthalter sehen willst - ich bin dein Mann!
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen2_15_00"); //Czy chcialbys byc gubernatorem Khoraty?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_01"); //Haha, mam nadzieje, ze nie jestes powazny.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen2_15_02"); //Tak, ja tak, tak.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_03"); //Moze nawet warto sie zastanowic. Wtedy wreszcie bedzie sposób na zmiane Khoraty.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen2_09_04"); //Tak wiec, jesli chcesz zobaczyc mnie jako dyrektora - jestem Twoim mezem!
 };
 
 INSTANCE Info_Mod_Theodorus_Unruhen3 (C_INFO)
@@ -172,7 +172,7 @@ INSTANCE Info_Mod_Theodorus_Unruhen3 (C_INFO)
 	information	= Info_Mod_Theodorus_Unruhen3_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Wie sollte deiner Meinung nach der Konflikt mit den Bergleuten gelöst werden?";
+	description 	= "Jak Panstwa zdaniem nalezy rozwiazac konflikt z górnikami?";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Unruhen3_Condition()
@@ -186,11 +186,11 @@ FUNC INT Info_Mod_Theodorus_Unruhen3_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen3_15_00"); //Wie sollte deiner Meinung nach der Konflikt mit den Bergleuten gelöst werden?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen3_09_01"); //Was die Buddler fordern, ist ihr gutes Recht. Wieso sollten wir es ihnen absprechen?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen3_09_02"); //Die Städter müssen in ihre Schranken verwiesen werden.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen3_15_00"); //Jak Panstwa zdaniem nalezy rozwiazac konflikt z górnikami?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen3_09_01"); //To, czego domagaja sie buddysci, to ich prawo. Dlaczego mielibysmy z tego wymówic?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen3_09_02"); //Mieszkancy miast musza znalezc sie w ich miejscu.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Theodorus spricht sich dafür aus, die Buddler zu unterstützen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Teodor opowiada sie za wspieraniem buddystów.");
 };
 
 INSTANCE Info_Mod_Theodorus_Unruhen4 (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE Info_Mod_Theodorus_Unruhen4 (C_INFO)
 	information	= Info_Mod_Theodorus_Unruhen4_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du bist nun der Stadthalter Khoratas.";
+	description 	= "Jest pan teraz gubernatorem Khoraty.";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Unruhen4_Condition()
@@ -214,12 +214,12 @@ FUNC INT Info_Mod_Theodorus_Unruhen4_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_00"); //Du bist nun der Stadthalter Khoratas.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_01"); //Ist nicht wahr! Du veräppelst mich, richtig?
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_02"); //Komm mit, ich zeig dir deine neue Wirkungsstätte.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_03"); //Ganz ehrlich, ihr überrascht mich. Hätte nicht gedacht, dass ihr so eine riskante Entscheidung trefft. Ich bin sogar fast ein wenig gerührt.
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_04"); //Heulen kannst du später.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_05"); //In Ordnung. Lass uns gehen!
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_00"); //Jest pan teraz gubernatorem Khoraty.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_01"); //To nieprawda! Czy mnie oszukujesz, prawda?
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_02"); //Przyjedz ze mna, pokaze Ci nowe miejsce pracy.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_03"); //Szczerze mówiac, zaskoczyla mnie pani. Nie sadzilem, zebys podejmowal tak ryzykowna decyzje. Jestem nawet troche poruszony.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen4_15_04"); //Mozesz plakac pózniej.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen4_09_05"); //Wszystkie sluszne, wszystkie sluszne. Idzmy!
 
 	AI_StopProcessInfos	(self);
 
@@ -248,12 +248,12 @@ FUNC INT Info_Mod_Theodorus_Unruhen5_Condition()
 FUNC VOID Info_Mod_Theodorus_Unruhen5_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen5_15_00"); //Da wären wir.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen5_09_01"); //Danke. Ich seh mich mal um. Komm morgen wieder, dann kümmern wir uns um die ernsten Angelegenheiten.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen5_15_00"); //Oto jestesmy.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen5_09_01"); //Dzieki. Rozejrze sie dookola. Wróccie jutro, a my zajmiemy sie powazna sprawa.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Theodorus braucht einen Tag, um sich einzufinden. Dann werden wir uns um die offenen Fragen kümmern.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Teodorek potrzebuje jednego dnia na osiedlenie sie. Nastepnie zajmiemy sie pytaniami otwartymi.");
 
 	AI_StopProcessInfos	(self);
 
@@ -272,7 +272,7 @@ INSTANCE Info_Mod_Theodorus_Unruhen6 (C_INFO)
 	information	= Info_Mod_Theodorus_Unruhen6_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lass uns loslegen.";
+	description	= "Idzmy dalej.";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Unruhen6_Condition()
@@ -286,21 +286,21 @@ FUNC INT Info_Mod_Theodorus_Unruhen6_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen6_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_00"); //Lass uns loslegen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_01"); //Ganz oben auf meiner Liste steht das Problem der Bergleute.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_02"); //Die Städter müssen ihre Ansprüche zurückschrauben.
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_03"); //Was gedenkst du zu tun?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_04"); //Ich gebe dir diese Botschaft.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_00"); //Idzmy dalej.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_01"); //Na czele mojej listy znajduje sie problem górników.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_02"); //Mieszkancy miasteczka musza ograniczyc swoje roszczenia.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_03"); //Co zamierzasz zrobic?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_04"); //Przekaze ci te wiadomosc.
 
 	B_GiveInvItems	(self, hero, ItWr_TheodorusBotschaft, 1);
 
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_05"); //Auf dem Marktplatz steht dieses eigenartige Gerüst. Von dort verliest du es für alle hörbar.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_06"); //In der Zeit hole ich die Buddler ab und führe sie zurück in die Stadt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_07"); //Der Bergbau wird vorerst auf Eis gelegt, bis die Stadtbewohner zur Vernunft kommen.
-	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_08"); //Hältst du das nicht für zu provokant?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_09"); //Man muss auch mal einstecken lernen. Man sieht sich.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_05"); //Na targowisku stoi ta swoista rusztowanie. Stamtad czytasz go kazdemu.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_06"); //W tym czasie odbieram Buddlerów i zabieram ich z powrotem do miasta.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_07"); //Na razie górnictwo bedzie na pólce, dopóki mieszkancy miasta nie przyjda do ich zmyslów.
+	AI_Output(hero, self, "Info_Mod_Theodorus_Unruhen6_15_08"); //Czy nie sadzisz, ze jest to zbyt prowokacyjne?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen6_09_09"); //Trzeba nauczyc sie brac rzeczy na siebie. Do zobaczenia dookola.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Theodorus gab mir den Auftrag, der Bevölkerung Khoratas vom Gerüst auf dem Marktplatz eine Botschaft zu verlesen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Theodorus polecil mi przeczytac wiadomosc z rusztowan na rynku dla mieszkanców Khoraty.");
 
 	AI_StopProcessInfos	(self);
 
@@ -331,11 +331,11 @@ FUNC INT Info_Mod_Theodorus_Unruhen7_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Unruhen7_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_00"); //Es war zu erwarten, dass meine Ernennung Unmut hervorrufen würde. Aber dieses Ausmaß an Gewalt hätte ich mir nicht vorgestellt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_01"); //Trotzdem danke ich für für deine Hilfe. Du hast dazu beigetragen, Khorata aus einer seiner schlimmsten Krisen zu erretten.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_02"); //Auch ich selbst verdanke dir viel.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_00"); //Spodziewano sie, ze moja nominacja wzbudzi niezadowolenie. Ale nie wyobrazalabym sobie takiego poziomu przemocy.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_01"); //Niemniej jednak dziekuje panstwu za pomoc. Pomógl pan uratowac Khorate przed jednym z jego najgorszych kryzysów.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Unruhen7_09_02"); //Wiele wam zawdzieczam osobiscie.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Die Situation scheint vorläufig bereinigt zu sein. Die Bewohner Khoratas müssen sich jetzt erst mal mit ihrem neuen Stadthalter arrangieren.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Wydaje sie, ze sytuacja zostala tymczasowo naprawiona. Mieszkancy Khoratas musza sie umówic z nowym gubernatorem.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_UNRUHEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(800);
@@ -364,7 +364,7 @@ INSTANCE Info_Mod_Theodorus_Plagenquest (C_INFO)
 	information	= Info_Mod_Theodorus_Plagenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mir scheint, ihr braucht einen Kammerjäger.";
+	description	= "Wydaje mi sie, ze potrzebujesz eksterminatora.";
 };
 
 FUNC INT Info_Mod_Theodorus_Plagenquest_Condition()
@@ -379,17 +379,17 @@ FUNC INT Info_Mod_Theodorus_Plagenquest_Condition()
 FUNC VOID Info_Mod_Theodorus_Plagenquest_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST01");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_01"); //Ja, wir hatten schon einen ganzen Trupp Hammerjäger durch die Stadt geschickt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_02"); //Aber auch mit ihren Hämmern konnten sie dem Ungeziefer keinen Einhalt gebieten.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_03"); //Egal wie oft man drauf schlägt, sie kommen wieder und in Gesellschaft vieler ihrer Artgenossen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_01"); //Tak, wyslalismy juz przez miasto kilka mlotków mysliwych.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_02"); //Ale nawet mlotkami nie udalo sie powstrzymac szkodników.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_03"); //Bez wzgledu na to, jak czesto ich bijesz, wracaja oni do nas i w towarzystwie wielu swoich rodaków.
 	B_Say	(hero, self, "$PLAGENQUEST02");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_05"); //In der Tat, ich forsche gerade in den Chroniken der Stadt nach und bin da tatsächlich auf etwas gestoßen ...
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_06"); //Es wird aber noch ein Weilchen dauern, bis ich mir den Text vollständig erschlossen habe.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_05"); //W rzeczywistosci, obecnie badam kroniki miasta i spotkalem sie z czyms.....
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_06"); //Minie jednak troche czasu, zanim przejde do pelnej analizy tekstu.
 	B_Say	(hero, self, "$PLAGENQUEST03");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_08"); //Ja, du kannst mal dein Glück als Hammerjäger im Gerichtsgebäude versuchen, wo sich im Moment besonders viele Drecksviecher tummeln.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_09"); //Vielleicht hast du ja mehr Erfolg.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_08"); //Tak, mozesz spróbowac szczescia jako mlotkowiec na dworze, w którym obecnie jest wiele brudnych stworzen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_09_09"); //Moze odniesiesz wiekszy sukces.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Theodorus scheint in den Chroniken der Stadt auf Anhaltspunkte gestoßen zu sein. Bis er sie vollständig ergründet hat, soll ich mich im Gerichtsgebäude im Insektenjagen erproben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Wydaje sie, ze teodorek znalazl pewne wskazówki w kronikach miasta. Do czasu, gdy on je do konca zglebi, mam wypróbowac mnie w dworcu do polowania na owady.");
 
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
 	Wld_InsertNpc	(Insekt_01, "REL_CITY_341");
@@ -427,25 +427,25 @@ FUNC INT Info_Mod_Theodorus_Plagenquest_02_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Plagenquest_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_00"); //Ahh, gut, dass du vorbeikommst, ich habe etwas wichtiges entdeckt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_01"); //Die Plage, die zurzeit die Stadt heimsucht, hatte es bereits vor vielen Jahrhunderten gegeben – nicht lange, nach der Stadtgründung.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_02"); //Um der Stadt und ihrer Umgebung den Segen der Götter zu sichern, wurde damals den Göttern mit Tieropfern gehuldigt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_03"); //Jeder hatte die Pflicht eine bestimmte Anzahl an Tieren zu opfern.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_04"); //Einer ihrer Gründerväter war jedoch so geizig, dass er nicht Schafe oder Molerat, sondern Insekten opferte.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_05"); //Die Götter waren darüber so erzürnt, dass sie den Wunsch der Menschen nach reicher Tierpopulation vor allem auf die Insekten der Umgebung übertrugen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_00"); //Ach, dobrze, zeby cie zobaczyc, odkrylem cos waznego.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_01"); //Choroba, która obecnie dotyka miasto, istniala juz wiele stuleci temu - niedlugo po jego powstaniu.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_02"); //Aby zabezpieczyc blogoslawienstwo bogów dla miasta i jego otoczenia, w holdzie bogom uczyniono wówczas poswiecenia zwierzat.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_03"); //Kazdy mial obowiazek poswiecic pewna liczbe zwierzat.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_04"); //Jednak jeden z ich ojców zalozycieli byl tak skapy, ze zamiast owcy czy molate poswiecil owady.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_05"); //Bogowie byli tak wsciekli, ze przenosili ludzkie pragnienie bogatej populacji zwierzat na owady srodowiska.
 	B_Say	(hero, self, "$PLAGENQUEST04");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_07"); //Nun, mit der chemischen Keule.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_07"); //No cóz, z klubem chemicznym.
 	B_Say	(hero, self, "$PLAGENQUEST05");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_09"); //Ja, lange Zeit war man völlig ratlos und es schien so, als müsse man die Stadt aufgeben.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_10"); //Doch dann wurde einem rechtschaffenden und ehrbaren Bürger namens Chemos ein Traum gesandt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_11"); //Er erhielt die Anleitung zum Bau einer Waffe, welche die Plagegeister bannen konnte.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_12"); //Daher muss auch unser Brauch mit den Stadthämmern zum Kampf gegen die Insekten kommen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_13"); //Damals unterschieden sich Hämmer und Keulen nämlich noch nicht grundlegend.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_14"); //Unser Gesetz dazu stammt erst aus etwas späterer Zeit, als die Hämmer ihre charakteristische Form erhielten und die Keulen aus praktischen Gründen ablösten.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_09"); //Tak, przez dlugi czas bylo sie zupelnie bezradnym i wydawalo sie, ze trzeba sie bylo porzucic miasto.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_10"); //Ale wtedy sprawiedliwy i szanowany obywatel Chemos zostal wysypany snem.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_11"); //Otrzymal on instrukcje jak zbudowac bron, która moglaby wypedzic zaraze.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_12"); //Dlatego wlasnie nasz zwyczaj z mlotkami miejskimi musi przyjsc do walki z owadami.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_13"); //Mloty i kluby nie róznily sie wówczas zasadniczo.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_14"); //Nasze prawo w tym zakresie siega nieco pózniej, kiedy to mlotki nadano im charakterystyczny ksztalt, a kluby zostaly zastapione z powodów praktycznych.
 	B_Say	(hero, self, "$PLAGENQUEST06");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_16"); //Nein, leider nicht mehr. Und die Anfertigung einer solchen Waffe ist nicht ganz unkompliziert. Ich habe die Anleitung gefunden ...
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_16"); //Nie, juz nie boje sie. A produkcja takiej broni nie jest nieskomplikowana. Znalazlem te instrukcje.....
 	B_Say	(hero, self, "$PLAGENQUEST07");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_18"); //Hier hast du eine Abschrift davon.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_18"); //Oto jej kopia.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_ChemischeKeule, 1);
 
@@ -454,11 +454,11 @@ FUNC VOID Info_Mod_Theodorus_Plagenquest_02_Info()
 	B_HeroFakeScroll ();
 
 	B_Say	(hero, self, "$PLAGENQUEST09");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_21"); //(erfreut) Wirklich? Du würdest uns allen einen großen Dienst damit erweisen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_22"); //Sobald du alles zusammen hast, begib dich wieder hier her und händige die Materialien unserem Schmied aus.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_23"); //Und eine Keule werden wir schon irgendwo in der Stadt auftreiben. Ich danke dir.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_21"); //Czy to prawda? Bedzie pan nam wszystkim przysluzyl sie swietnie.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_22"); //Jak tylko bedziesz miec wszystko razem, wróc tutaj i oddaj materialy do naszego kowala.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_02_09_23"); //A gdzies w miescie znajdziemy klub. Dziekuje, dziekuje.
 
-	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, die Insektenplage beruht also auf einer Strafe der Götter für einen Frevel, der begangen wurde.", "Ok, ich darf mich jetzt auf die Suche nach dem Material für die chemische Keule begeben, welche die Mistviecher bannen kann. Eine Keule müssten sie in Khorata schon selbst auftreiben können ...");
+	B_LogEntry_More	(TOPIC_MOD_ADANOS_PLAGE, TOPIC_MOD_ADANOS_DRECKSVIECHER, "Aha, plaga owadów opiera sie wiec na karze dla bogów za popelnione zniewagi.", "W porzadku, teraz moge szukac chemicznego materialu klubowego, który moze wypedzic bydlo. W Khoracie powinni byc w stanie sami znalezc klub w Khoracie....");
 
 	B_GivePlayerXP	(200);
 
@@ -486,10 +486,10 @@ FUNC INT Info_Mod_Theodorus_Plagenquest_03_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Plagenquest_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_03_09_00"); //Ich habe gehört, du hast die Keule. Jetzt ist es an der Zeit die Plagegeister aus der Stadt zu verjagen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_03_09_01"); //Am Marktplatz haben sich besonders viele von den Viechern gesammelt. Nimm die chemische Keule und vernichte sie.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_03_09_00"); //Slysze, ze dostales klub. Teraz nadszedl czas, aby wypedzic szkodniki z miasta.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_03_09_01"); //Wiele zwierzat zebralo sie na targowisku. Wez klub chemiczny i zniszcz go.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Jetzt ist es an der Zeit zu testen, ob die chemische Keule etwas taugt. Ich soll die ganzen Drecksplagen erledigen, die sich am Marktplatz gesammelt haben.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Teraz nadszedl czas, aby sprawdzic, czy klub chemiczny dziala. Mam do czynienia z wszystkimi lupkami, które zebraly sie na rynku.");
 
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
 	Wld_InsertNpc	(Insekt_04, "REL_CITY_102");
@@ -514,7 +514,7 @@ INSTANCE Info_Mod_Theodorus_Plagenquest_04 (C_INFO)
 	information	= Info_Mod_Theodorus_Plagenquest_04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Keule konnte den Insekten Einhalt gebieten. Ich habe sie alle bezwungen.";
+	description	= "Klub byl w stanie powstrzymac owady. Pokonalem ich wszystkich.";
 };
 
 FUNC INT Info_Mod_Theodorus_Plagenquest_04_Condition()
@@ -532,22 +532,22 @@ FUNC INT Info_Mod_Theodorus_Plagenquest_04_Condition()
 FUNC VOID Info_Mod_Theodorus_Plagenquest_04_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST10");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_01"); //Das ist großartig und der erste Schritt um das Übel endgültig zu bannen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_01"); //To wspanialy i pierwszy krok na drodze do ostatecznego wygnania zla.
 	B_Say	(hero, self, "$PLAGENQUEST11");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_03"); //Ja, leider mussten wir feststellen, dass weiterhin neue Parasiten aus den umliegenden Wäldern kommen.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_04"); //Irgendwo dort muss die Wurzel des Übels sein ... der ominöse Riesenbug, von dem die Quellen sprachen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_03"); //Tak, niestety dowiedzielismy sie, ze nowe pasozyty nadal pochodza z okolicznych lasów.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_04"); //Gdzies tam, gdzie musi byc korzen zla...... zlowieszczy olbrzymi blad, o którym mówily zródla.
 	B_Say	(hero, self, "$PLAGENQUEST12");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_06"); //Es gibt da aber etwas, besser gesagt jemanden, der dir dabei helfen könnte.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_06"); //Jest cos, a raczej ktos, kto moze Ci w tym pomóc.
 	B_Say	(hero, self, "$PLAGENQUEST13");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_08"); //Ein Bürger unserer Stadt. Sein Name ist Axon und er trägt das chemische Blut in sich, wie ich vor ein paar Stunden herausgefunden habe.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_08"); //Obywatel naszego miasta. Jego imie jest aksonem i nosi krew chemiczna, jak dowiedzialem sie kilka godzin temu.
 	B_Say	(hero, self, "$PLAGENQUEST14");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_10"); //Nun, zum einen geben die Stammbäume klare Hinweise darauf und dann ... nun ...
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_10"); //Cóz, z jednej strony rodowody daja jasne wskazówki, a z drugiej..... no cóz.....
 	B_Say	(hero, self, "$PLAGENQUEST15");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_12"); //... dann haben wir noch die chemische Keule bei ihm gefunden. Sie hing die ganze Zeit im Wohnzimmer seines Hauses.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_12"); //... Znalezlismy z nim klub chemiczny. Caly czas wisiala w salonie jego domu.
 	B_Say	(hero, self, "$PLAGENQUEST16");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_14"); //Jedenfalls sollte er dir dabei helfen können das Käfergetier zu erspüren, den Riesenbug zu entdecken und zu vernichten. Er wartet bereits vor der Stadt auf dich.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_04_09_14"); //W kazdym razie, powinien byc w stanie pomóc Ci wyczuc chrzaszcze, odkryc i zniszczyc olbrzymi blad. On juz czeka na Ciebie poza miastem.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpf, das wird ja immer besser. Die ganze Zeit hing die chemische Keule bei Axon, einem Nachfahren des Chemos ... Nun denn, jetzt darf ich also mit ihm den Riesenbug im Wald erlegen. Axon erwartet mich vor der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Grmpff, to jest coraz lepsze i lepsze. Caly czas klub chemiczny wisial wokól Axona, potomka chemoo.... No cóz, teraz pozwolono mi strzelac z nim do wielkiego bakcyla w lesie. Axon czeka na mnie poza miastem.");
 
 	B_StartOtherRoutine	(Mod_7415_OUT_Axon_REL, "VORSTADT");
 	AI_Teleport	(Mod_7415_OUT_Axon_REL, "REL_CITY_001");
@@ -561,7 +561,7 @@ INSTANCE Info_Mod_Theodorus_Plagenquest_05 (C_INFO)
 	information	= Info_Mod_Theodorus_Plagenquest_05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es ist vollbracht. Der Riesenbug ist bezwungen.";
+	description	= "To sie dzieje. Ogromny luk zostaje pokonany.";
 };
 
 FUNC INT Info_Mod_Theodorus_Plagenquest_05_Condition()
@@ -577,10 +577,10 @@ FUNC INT Info_Mod_Theodorus_Plagenquest_05_Condition()
 FUNC VOID Info_Mod_Theodorus_Plagenquest_05_Info()
 {
 	B_Say	(hero, self, "$PLAGENQUEST17");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_05_09_01"); //Das ist großartig. Du hast unserer Stadt einen Dienst von unschätzbarem Wert erwiesen und das Übel gebannt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_05_09_02"); //Nimm, dieses Gold und den Stadthammer zum Dank. Der Segen der Götter möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_05_09_01"); //To wspaniale. Uczyniles nasze miasto sluzba o nieocenionej wartosci i rozwiales zlo.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Plagenquest_05_09_02"); //Wez to zloto i mlotek miejski jako podziekowania. Niech wam towarzyszy blogoslawienstwo bogów.
 
-	B_ShowGivenThings	("1000 Gold und Stadthammer erhalten");
+	B_ShowGivenThings	("1000 Otrzymane zloto i mlot miejski");
 
 	CreateInvItems	(hero, ItMw_Stadthammer, 1);
 	CreateInvItems	(hero, ItMi_Gold, 1000);
@@ -619,22 +619,22 @@ FUNC INT Info_Mod_Theodorus_Andre_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Andre_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_00"); //Guten Morgen, Soldat. Oder sollte ich dich lieber Hauptmann nennen?
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_00"); //Dobry poranek, zolnierz. Czy tez powinienem wezwac Pana kapitana?
 	B_Say	(hero, self, "$HEROBOTQUEST01");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_02"); //Lord Andre's Plan hat funktioniert, allerdings gab es keine Möglichkeit einen Ausgang in den Hochofen zu implementieren, deshalb hat er dich überwältigt, selbst das Kostüm angezogen und den Roboter in den Hochofen gelockt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_03"); //Wir haben einen versiegelten Umschlag neben dir gefunden. Darin erklärte Andre die ganze Angelegenheit und hat dich zu seinem Nachfolger ernannt.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_04"); //Aber hier ... die Details kannst du selbst nachlesen.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_02"); //Plan Pana Andre' a zadzialal, ale nie bylo sposobu na wyprowadzenie wyjscia do wielkiego pieca, wiec on nasycil cie, wlozyl kostium i zwabil robota do wielkiego pieca.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_03"); //Znalezlismy obok Ciebie zapieczetowana koperte. W nim Andre wyjasnil cala sprawe i mianowal cie swoim nastepca.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_04"); //Ale tutaj.... mozesz sam przeczytac szczególy.
 
 	B_GiveInvItems	(self, hero, ItWr_AndreAbschied, 1);
 
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_05"); //Und diesen Schlüssel soll ich dir geben. Vermutlich zu seiner Kiste im Hauptmannzimmer.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_05"); //A ja powinienem wam dac ten klucz. Prawdopodobnie do pudelka w pokoju kapitana.
 
 	B_GiveInvItems	(self, hero, ItKe_Andre, 1);
 
 	B_Say	(hero, self, "$HEROBOTQUEST02");
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_06"); //Genau. Die Trauerfeier hast du verpasst, du haben geschlagene 32 Stunden durchgeschlafen. Der alte Haudegen scheint in ganz guter Form gewesen zu sein.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_07"); //Wenn du dich verabschieden willst, Andre liegt mittlerweile am Friedhof. Zumindest seine Asche. Aber ruh' dich zuerst aus, er läuft dir schon nicht weg.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_08"); //Ach ja, bevor ich's vergesse: Der Betreiber des Hochofens hat nach dir gefragt, schau mal bei ihm vorbei.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_06"); //Dokladnie. Brakowalo Ci nabozenstwa, spales przez 32 godziny snu. Stary konik wydaje sie byc w bardzo dobrej formie.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_07"); //Jesli chcesz sie pozegnac, Andre jest teraz na cmentarzu. Przynajmniej jego prochy. Ale odpocznij najpierw, nie ucieknie od ciebie.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Andre_05_08"); //O tak, zanim zapomne: operator wielkiego pieca poprosil cie o to, sprawdz go.
 
 	B_Göttergefallen(1, 5);
 
@@ -642,10 +642,10 @@ FUNC VOID Info_Mod_Theodorus_Andre_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Roboter ist besiegt, jedoch musste sich Lord Andre opfern, um dies zu erreichen. Nun hat er mich zu seinem Nachfolger ernannt.", "Andre hat sich tatsächlich geopfert um den Roboter zu vernichten. In einem Schreiben hat er mich zu seinem Nachfolger ernannt und mir einen Schlüssel hinterlegt, der wahrscheinlich zu seiner Truhe in der Kaserne führt.");
+	B_LogEntry_More	(TOPIC_MOD_PAL_BOT, TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Robot jest pokonany, ale Lord Andre musial poswiecic sie, aby to osiagnac. Teraz mianowal mnie swoim nastepca.", "Andre faktycznie poswiecil sie, aby zniszczyc robota. W liscie nazwal mnie swoim nastepca i dal mi klucz, który prawdopodobnie prowadzi mnie do jego klatki piersiowej w koszarach.");
 	B_SetTopicStatus	(TOPIC_MOD_PAL_BOT, LOG_SUCCESS);
 
-	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Der Betreiber des Hochofens Robert will mich sprechen. Ich sollte dort mal vorbeischauen und fragen, worum es geht.");
+	B_LogEntry_NS	(TOPIC_MOD_MILIZ_ANDRESVERMAECHTNIS, "Operator wielkiego pieca Robert chce mnie zobaczyc. Powinienem zatrzymac sie tam i zapytac, o co chodzi.");
 };
 
 INSTANCE Info_Mod_Theodorus_Freudenspender (C_INFO)
@@ -656,7 +656,7 @@ INSTANCE Info_Mod_Theodorus_Freudenspender (C_INFO)
 	information	= Info_Mod_Theodorus_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du siehst aus, als wolltest du Freudenspender.";
+	description 	= "Wygladasz tak, jak chcesz byc dawca radosci.";
 };                       
 
 FUNC INT Info_Mod_Theodorus_Freudenspender_Condition()
@@ -671,9 +671,9 @@ FUNC INT Info_Mod_Theodorus_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Theodorus_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Theodorus_Freudenspender_15_00"); //Du siehst aus, als wolltest du Freudenspender.
-	AI_Output(self, hero, "Info_Mod_Theodorus_Freudenspender_09_01"); //(aufgebracht) WAS???
-	AI_Output(hero, self, "Info_Mod_Theodorus_Freudenspender_15_02"); //War nur 'n Witz ...
+	AI_Output(hero, self, "Info_Mod_Theodorus_Freudenspender_15_00"); //Wygladasz tak, jak chcesz byc dawca radosci.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Freudenspender_09_01"); //Co "Co"?
+	AI_Output(hero, self, "Info_Mod_Theodorus_Freudenspender_15_02"); //Jestem po prostu dzieckiem.....
 };
 
 INSTANCE Info_Mod_Theodorus_Pickpocket (C_INFO)

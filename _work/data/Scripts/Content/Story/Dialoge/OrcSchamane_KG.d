@@ -15,9 +15,9 @@ FUNC INT Info_Mod_OrcSchamane_KG_Hi_Condition()
 
 FUNC VOID Info_Mod_OrcSchamane_KG_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_00"); //Ah ... Mensch, ihr haben es geschafft Ritualstätte zu erreichen, allerdings es euch nichts mehr nützen.
-	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_01"); //Ich schon seien unsterblich, durch macht von schwarzem Herz gefüllt mit rotem Menschenblut.
-	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_02"); //Nun ich dir zeigen was Macht bedeuten.
+	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_00"); //Ah.... Czlowiek, udalo ci sie dotrzec do miejsc obrzedowych, ale nie ma juz dla ciebie nic pozytecznego.
+	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_01"); //Juz jestem niesmiertelny, wykonany przez czarne serce wypelnione czerwona krwia ludzka.
+	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_Hi_18_02"); //No cóz, pokaze wam, co oznacza sila.
 
 	AI_StopProcessInfos	(self);
 };
@@ -43,7 +43,7 @@ FUNC INT Info_Mod_OrcSchamane_KG_NichtTot_Condition()
 
 FUNC VOID Info_Mod_OrcSchamane_KG_NichtTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_NichtTot_18_01"); //Was ... Mensch leben noch, das seltsam seinen. Mensch stark, Schamane bewahren Ehre und lassen Mensch ziehen.
+	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_NichtTot_18_01"); //Co.....? Czlowiek wciaz zyje, dziwnie jego. Mocny czlowiek, szamani, szamani trzymaja sie czci i wypuszczaja czlowieka na wolnosc.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,9 +72,9 @@ FUNC INT Info_Mod_OrcSchamane_KG_KillYou_Condition()
 FUNC VOID Info_Mod_OrcSchamane_KG_KillYou_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_OrcSchamane_KG_KillYou_15_00"); //Deine letzte Stunde hat geschlagen.
-	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_KillYou_18_01"); //Was meinen Mensch mit Stunde, sollte so etwas schlagen?
-	AI_Output(hero, self, "Info_Mod_OrcSchamane_KG_KillYou_15_02"); //Ach, vergiss es, stirb!
+	AI_Output(hero, self, "Info_Mod_OrcSchamane_KG_KillYou_15_00"); //Minela Twoja ostatnia godzina.
+	AI_Output(self, hero, "Info_Mod_OrcSchamane_KG_KillYou_18_01"); //Co moja ludzka istota z godzina powinna pokonac cos takiego?
+	AI_Output(hero, self, "Info_Mod_OrcSchamane_KG_KillYou_15_02"); //Och, zapomnij, umrzyj!
 	AI_Output(self, hero, "DEFAULT"); //
 
 	self.guild = GIL_ORC;

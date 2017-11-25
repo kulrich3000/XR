@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Rock(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Felsdrache";
+	name							=	"smoek";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_ROCK;
 	level							=	400;
@@ -77,7 +77,7 @@ func void B_SetVisuals_Dragon_Rock()
 
 INSTANCE Dragon_Rock	(Mst_Default_Dragon_Rock)
 {
-	name				=	"Pedrakhan";
+	name				=	"pedrakhan";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Rock();
 
@@ -87,7 +87,7 @@ INSTANCE Dragon_Rock	(Mst_Default_Dragon_Rock)
 
 INSTANCE Summoned_DragonStone (Mst_Default_Dragon_Rock)
 {
-	name							= "Beschworener Steindrache";
+	name							= "Smok kamienny przywolany";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_STONEDRAGON;
 	level							= 0;

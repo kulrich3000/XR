@@ -19,7 +19,7 @@ INSTANCE PC_SOCKELWS_Samen (C_INFO)
 	information	= PC_SOCKELWS_Samen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Samen säen";
+	description	= "nasiona macior";
 };
 
 FUNC INT PC_SOCKELWS_Samen_Condition()
@@ -35,7 +35,7 @@ FUNC VOID PC_SOCKELWS_Samen_Info()
 {
 	Npc_RemoveInvItems	(hero, ItMi_MagicSamen, 1);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Der Samen ist gesät, jetzt müsste ich den Aufladestein einsetzen können ...");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Nasiona sa zasiane, teraz powinienem byc w stanie uzywac kamienia ladujacego.....");
 };
 
 INSTANCE PC_SOCKELWS_Einsetzen (C_INFO)
@@ -46,7 +46,7 @@ INSTANCE PC_SOCKELWS_Einsetzen (C_INFO)
 	information	= PC_SOCKELWS_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aufladestein einsetzen";
+	description	= "Wkladka bloku ladowania";
 };
 
 FUNC INT PC_SOCKELWS_Einsetzen_Condition()
@@ -68,7 +68,7 @@ FUNC VOID PC_SOCKELWS_Einsetzen_Info()
 
 	Mod_VMG_WSTrador = 1;
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Das Portal ist aktiv. Nichts wie weg hier.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Portal jest aktywny. Zejdzmy stad.");
 };
 
 INSTANCE PC_SOCKELWS_EXIT (C_INFO)

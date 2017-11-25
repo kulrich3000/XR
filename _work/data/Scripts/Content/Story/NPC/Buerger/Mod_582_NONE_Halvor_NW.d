@@ -1,7 +1,7 @@
 instance Mod_582_NONE_Halvor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Halvor"; 
+	name 		= "Halwor"; 
 	guild 		= GIL_PAL;
 	id 			= 582;
 	voice 		= 26;

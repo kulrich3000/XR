@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Berdin_Hi (C_INFO)
 	information	= Info_Mod_Berdin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hi, könntest du mir ein paar Tipps zur Jagd im Minental geben?";
+	description	= "Czesc, czy móglbys dac mi kilka wskazówek na temat polowan w Minental?";
 };
 
 FUNC INT Info_Mod_Berdin_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Berdin_Hi_Condition()
 
 FUNC VOID Info_Mod_Berdin_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Berdin_Hi_15_00"); //Hi, könntest du mir ein paar Tipps zur Jagd im Minental geben?
-	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_01"); //Na ja, eigentlich unterscheidet sich die Jagd hier nicht besonders von der Jagd wo anders.
-	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_02"); //Das einzige, was du hier wissen solltest, und das sagt eigentlich schon der Name, ist, dass du in einem Tal bist, und soweit ich weiß ist der Pass der einzige Weg hier raus.
-	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_03"); //Wenn du dich also bei der Jagd mit einem zu starken Monster anlegst und es nicht los werden kannst, bist du hier so gut wie gefangen. Das beste, was du dann machen kannst, ist in eins der vielen Lager hier zu fliehen.
-	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_04"); //Dann bist du zwar deine Trophäen los, aber du lebst immerhin.
-	AI_Output(hero, self, "Info_Mod_Berdin_Hi_15_05"); //Ja, das klingt logisch. Kannst du mir zeigen, wie ich bei der Jagd an Trophäen komme?
-	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_06"); //Ich kann dir zeigen, wie du Klauen und Zungen ziehst, aber das mache ich erst, wenn du bei uns angefangen hast.
+	AI_Output(hero, self, "Info_Mod_Berdin_Hi_15_00"); //Czesc, czy móglbys dac mi kilka wskazówek na temat polowan w Minental?
+	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_01"); //No cóz, tak naprawde polowanie nie rózni sie zbytnio od polowania gdzie indziej.
+	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_02"); //Jedyna rzecza, o której powinienes wiedziec tutaj, a tak wlasciwie jest nazwa, jest to, ze jestes w dolinie i o ile mi wiadomo, przelecz jest jedynym wyjsciem z niej.
+	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_03"); //Wiec jesli masz balagan z potwora, który jest zbyt silny i nie moze sie go pozbyc, jestes prawie uwieziony tutaj. Najlepsza rzecza, jaka mozesz wtedy zrobic, jest ucieczka do jednego z wielu obozów.
+	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_04"); //Wtedy mozesz pozbyc sie swoich trofeów, ale nadal zyjesz.
+	AI_Output(hero, self, "Info_Mod_Berdin_Hi_15_05"); //Tak, to brzmi logicznie. Czy mozesz mi pokazac jak polowac na trofea?
+	AI_Output(self, hero, "Info_Mod_Berdin_Hi_07_06"); //Potrafie pokazac ci, jak ciagnac pazury i jezyki, ale nie zrobie tego, dopóki nie zaczniesz z nami.
 };
 
 INSTANCE Info_Mod_Berdin_Jagdtalente (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Berdin_Jagdtalente (C_INFO)
 	information	= Info_Mod_Berdin_Jagdtalente_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Unterrichtest du mich jetzt?";
+	description	= "Uczysz mnie teraz?";
 };
 
 FUNC INT Info_Mod_Berdin_Jagdtalente_Condition()
@@ -47,27 +47,27 @@ FUNC INT Info_Mod_Berdin_Jagdtalente_Condition()
 
 FUNC VOID Info_Mod_Berdin_Jagdtalente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Berdin_Jagdtalente_15_00"); //Unterrichtest du mich jetzt?
+	AI_Output(hero, self, "Info_Mod_Berdin_Jagdtalente_15_00"); //Uczysz mnie teraz?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Berdin_Jagdtalente_07_01"); //Na klar, was willst du lernen?
+		AI_Output(self, hero, "Info_Mod_Berdin_Jagdtalente_07_01"); //Oczywiscie, czego chcesz sie nauczyc?
 
 		Info_AddChoice		(Info_Mod_Berdin_Jagdtalente, DIALOG_BACK, Info_Mod_Berdin_Jagdtalente_BACK);
 		
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Berdin_Jagdtalente, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  Info_Mod_Berdin_Jagdtalente_Claws);
+			Info_AddChoice	(Info_Mod_Berdin_Jagdtalente, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  Info_Mod_Berdin_Jagdtalente_Claws);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Berdin_Jagdtalente, B_BuildLearnString ("Feuerzunge", B_GetLearnCostTalent (hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  Info_Mod_Berdin_Jagdtalente_FireTongue);
+			Info_AddChoice	(Info_Mod_Berdin_Jagdtalente, B_BuildLearnString ("jezyk ognia", B_GetLearnCostTalent (hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  Info_Mod_Berdin_Jagdtalente_FireTongue);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Berdin_Jagdtalente_07_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir Leid.
+		AI_Output(self, hero, "Info_Mod_Berdin_Jagdtalente_07_02"); //Nie moge cie nauczyc wiecej niz juz wiesz. Przepraszam za to.
 	};
 };
 
@@ -80,9 +80,9 @@ FUNC VOID Info_Mod_Berdin_Jagdtalente_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Claws))
 	{
-		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_00"); //Zwierzeta nie lubia oddawac pazurów. Musisz trafic dokladnie tam, gdzie idziesz nozem.
+		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_01"); //Postawa dloni powinna byc lekko uwiklana. Z mocnym wstrzasem odciales pazur.
+		AI_Output			(self, hero, "Info_Mod_Berdin_Jagdtalente_Claws_07_02"); //Sprzet jest zawsze pozadanym srodkiem platniczym dla przedsiebiorcy.
 	};
 
 	Info_ClearChoices	(Info_Mod_Berdin_Jagdtalente);

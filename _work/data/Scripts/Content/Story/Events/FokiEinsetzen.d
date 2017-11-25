@@ -8,7 +8,7 @@ FUNC VOID FokusEinsetzen()
 
 		Wld_InsertNpc	(Mod_678_DMB_Xardas_AW,		"ADW_ENTRANCE");
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe alle 5 Foki eingesetzt. Beim Einsetzen des letzten Foki gab es ein Erdbeben. Ich sollte mal zu den Wassermagiern gehen.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Uzywalem ich wszystkich pieciu. Ostatnie miejsce zajelo trzesienie ziemi. W pewnym czasie powinienem udac sie do Magicystów Wody.");
 
 		B_GivePlayerXP	(300);
 

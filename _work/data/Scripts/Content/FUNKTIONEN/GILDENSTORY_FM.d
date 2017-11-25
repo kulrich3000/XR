@@ -29,17 +29,17 @@ FUNC VOID GILDENSTORY_FM()
 
 			if (Tojan_Counter == 5)
 			{
-				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_00"); //Wie bist du in das Kloster gekommen?
+				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_00"); //Jak dostac sie do klasztoru?
 			};
 
 			if (Tojan_Counter == 10)
 			{
-				AI_Output(Mod_1916_KDF_Magier_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_01"); //(lacht) Eine Kleinigkeit für meinen Meister.
+				AI_Output(Mod_1916_KDF_Magier_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_01"); //(smiech) Troche dla mojego mistrza.
 			};
 
 			if (Tojan_Counter == 15)
 			{
-				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_02"); //Wie bist du hier reingekommen? Und was hoffst du hier drinnen zu finden?
+				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_02"); //Jak sie tu dostales? A co masz nadzieje znalezc tutaj?
 			};
 
 			if (Tojan_Counter == 20)
@@ -54,12 +54,12 @@ FUNC VOID GILDENSTORY_FM()
 
 			if (Tojan_Counter == 30)
 			{
-				AI_Output(Mod_1916_KDF_Magier_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_05"); //(lacht) Der Feind ... ist oft näher ... als man glaubt!
+				AI_Output(Mod_1916_KDF_Magier_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_05"); //(smiech) Wróg.... jest czesto blizej.... niz myslisz!
 			};
 
 			if (Tojan_Counter == 35)
 			{
-				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_06"); //Du Wurm!
+				AI_Output(Mod_1915_KDF_Tojan_PAT_UG, NULL, "Info_Mod_Tojan_Killer_15_06"); //Robak!
 			};
 
 			if (Tojan_Counter == 40)
@@ -92,18 +92,18 @@ FUNC VOID GILDENSTORY_FM()
 
 			Mod_FM_Foki = 1;
 			
-			B_LogEntry(TOPIC_MOD_FM_FOKI, "Ich habe alle fünf Foki. Jetzt sollte ich zurück zu Nagon gehen.");
+			B_LogEntry(TOPIC_MOD_FM_FOKI, "Mam wszystkich pieciu Foki. Teraz powinienem wrócic do Nagona.");
 		};
 
 		if (Mod_FM_Foki == 1)
 		&& (Npc_IsDead(Dragon_Black))
 		&& (Npc_IsDead(Mod_1775_DMB_Beschwoerer_PAT))
 		{
-			AI_Output(hero, NULL, "Info_Mod_Hero_Beschwoerer_15_00"); //Ich sollte mal mit Tojan sprechen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_Beschwoerer_15_00"); //Powinienem porozmawiac z Tojanem.
 
 			Mod_FM_Foki = 2;
 			
-			B_LogEntry(TOPIC_MOD_FM_FOKI, "Ich sollte mal mit Tojan sprechen.");
+			B_LogEntry(TOPIC_MOD_FM_FOKI, "Powinienem porozmawiac z Tojanem.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Aaron_Hi))
@@ -135,7 +135,7 @@ FUNC VOID GILDENSTORY_FM()
 		if (Mod_FM_AtHexe == 1)
 		&& (!Npc_IsInState(Mod_1859_HEX_Hexenqueen_PAT, ZS_Talk))
 		{
-			AI_Output(Mod_1859_HEX_Hexenqueen_PAT, NULL, "Info_Mod_Hexenqueen_STOP_17_00"); //Oh nein! Ihr bleibt alle schön, wo ihr seid!
+			AI_Output(Mod_1859_HEX_Hexenqueen_PAT, NULL, "Info_Mod_Hexenqueen_STOP_17_00"); //Och, nie! Wszyscy Panstwo sa tam, gdzie jestescie!
 
 			AI_StartState	(PC_Hero, ZS_MagicFreeze, 0, "");
 			AI_StartState	(Mod_1858_KDF_Aaron_PAT, ZS_MagicFreeze, 0, "");
@@ -572,7 +572,7 @@ FUNC VOID GILDENSTORY_FM()
 		{
 			Mod_PAT_Focus_01 = 1;
 
-			B_LogEntry	(TOPIC_MOD_FM_FOKI, "Zwei Dämonen für einen Mann. Das sollte die Tugend Mut gewesen sein.");
+			B_LogEntry	(TOPIC_MOD_FM_FOKI, "Dwa demony dla jednego czlowieka. To powinna byc odwaga cnoty.");
 		};
 	};
 
@@ -603,7 +603,7 @@ FUNC VOID GILDENSTORY_FM()
 
 					B_BlessAttribute (hero, ATR_STRENGTH, 1);
 
-					B_LogEntry	(TOPIC_MOD_MARDUK_NACHTSCHICHT, "Ich habe wohl genug Weintrauben für Marduk gestampft.");
+					B_LogEntry	(TOPIC_MOD_MARDUK_NACHTSCHICHT, "Mysle, ze zrobilem wystarczajaco duzo winogron dla Marduka.");
 				};
 			};
 		};

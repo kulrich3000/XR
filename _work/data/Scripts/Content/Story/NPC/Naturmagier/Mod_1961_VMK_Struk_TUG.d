@@ -1,7 +1,7 @@
 instance Mod_1961_VMK_Struk_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Struk";	
+	name 		= "budowla";	
 	guild 		= GIL_out;
 	id 			= 1961;
 	voice 		= 13;

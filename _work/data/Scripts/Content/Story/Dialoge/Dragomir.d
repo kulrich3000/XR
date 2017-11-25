@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Dragomir_Jagdgebiete (C_INFO)
 	information	= Info_Mod_Dragomir_Jagdgebiete_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bei allen Jägern gewesen.";
+	description	= "Bylem z wszystkimi mysliwymi.";
 };
 
 FUNC INT Info_Mod_Dragomir_Jagdgebiete_Condition()
@@ -49,38 +49,38 @@ FUNC INT Info_Mod_Dragomir_Jagdgebiete_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_15_00"); //Ich bin bei allen Jägern gewesen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_12_01"); //Und, was sagen sie?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_15_00"); //Bylem z wszystkimi mysliwymi.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_12_01"); //Cóz, co mówia?
 
 	Info_ClearChoices	(Info_Mod_Dragomir_Jagdgebiete);
 	
-	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Nandor ...", Info_Mod_Dragomir_Jagdgebiete_Nandor);
-	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Grom ...", Info_Mod_Dragomir_Jagdgebiete_Grom);
-	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Grimbald ...", Info_Mod_Dragomir_Jagdgebiete_Grimbald);
-	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Gaan ...", Info_Mod_Dragomir_Jagdgebiete_Gaan);
+	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Nandor lub.....", Info_Mod_Dragomir_Jagdgebiete_Nandor);
+	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "gromantropijny", Info_Mod_Dragomir_Jagdgebiete_Grom);
+	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Grimbald.....", Info_Mod_Dragomir_Jagdgebiete_Grimbald);
+	Info_AddChoice	(Info_Mod_Dragomir_Jagdgebiete, "Gaan....", Info_Mod_Dragomir_Jagdgebiete_Gaan);
 };
 
 FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Nandor()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_00"); //Nandor gab mir diesen Brief hier für dich.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_00"); //Nandor dal mi ten list dla Ciebie.
 
 	B_GiveInvItems	(hero, self, ItWr_NandorToDragomir, 1);
 
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_01"); //Außerdem haben wir eine Gruppe Wölfe getötet, die sich ziemlich unnormal verhalten haben.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_02"); //Zeig mal her.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_01"); //Zginelismy tez kilka wilków, które zachowywaly sie raczej nienormalnie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_02"); //Pozwole sobie to zobaczyc.
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_03"); //Hm, gut. Was war mit den Wölfen?
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_04"); //Nandor meinte, dass ihre Augen wirkten, wie die eines Toten. Außerdem haben sie sich einfach anders als andere Wölfe verhalten.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_05"); //Gut, danke.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_03"); //Hm, dobrze. A co z wilkami?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Nandor_15_04"); //Nandor powiedziala, ze jej oczy wygladaly jak oczy zmarlego mezczyzny. Poza tym zachowywaly sie one po prostu inaczej niz inne wilki.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Nandor_12_05"); //Dobrze, dziekuje.
 
 	BerichtCounter += 1;
 
 	if (BerichtCounter == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //So, wie ich sehe hast du alle Jäger befragt, nicht schlecht. Es gehört schon was dazu, hier durch die Wälder zu streifen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Hier, nimm das als Belohnung für deine Mühen, es ist etwas besonderes.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //Widze wiec, ze przeprowadziles wywiad z wszystkimi mysliwymi, a nie zla. To czesc gry spacer po lesie.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Tutaj, jako nagrode za wysilki, to cos wyjatkowego.
 
 		CreateInvItems	(self, ItWr_Bauplan_Wolfsring_Ruestung, 1);
 		B_GiveInvItems	(self, hero, ItWr_Bauplan_Wolfsring_Ruestung, 1);
@@ -89,10 +89,10 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Nandor()
 
 		if (Mod_AnzahlNebengilden < MaxNebengilden)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Wenn du willst, werde ich dich jetzt in unsere Reihen aufnehmen.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Jesli zechcesz, zabiore cie teraz w nasze szeregi.
 		};
 
-		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Ich habe Dragomir von den Jägern berichtet.");
+		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Powiedzialem Dragomirowi o mysliwych.");
 		B_SetTopicStatus	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_SUCCESS);		
 
 		Info_ClearChoices	(Info_Mod_Dragomir_Jagdgebiete);
@@ -101,15 +101,15 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Nandor()
 
 FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grom()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grom_15_00"); //Grom hält sich immer noch bei den Söldnern auf, ihm ist aber zu Ohren gekommen, dass die Feldräuber den Söldnern wohl ordentlich Ärger bereiten.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grom_12_01"); //Feldräuber? (lacht kurz auf) Lästige Biester sind das, aber zum Glück ziemlich harmlos für einen fortgeschrittenen Kämpfer.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grom_15_00"); //Grom jest wciaz z najemnikami, ale slyszal, ze grabieze na polu powoduja najemnikom wiele klopotów.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grom_12_01"); //Zlodzieje polowi? (krótko) Sa to denerwujace bestie, ale na szczescie nieszkodliwe dla zaawansowanego wojownika.
 
 	BerichtCounter += 1;
 
 	if (BerichtCounter == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //So, wie ich sehe hast du alle Jäger befragt, nicht schlecht. Es gehört schon was dazu, hier durch die Wälder zu streifen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Hier, nimm das als Belohnung für deine Mühen, es ist etwas besonderes.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //Widze wiec, ze przeprowadziles wywiad z wszystkimi mysliwymi, a nie zla. To czesc gry spacer po lesie.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Tutaj, jako nagrode za wysilki, to cos wyjatkowego.
 
 		CreateInvItems	(self, ItWr_Bauplan_Wolfsring_Ruestung, 1);
 		B_GiveInvItems	(self, hero, ItWr_Bauplan_Wolfsring_Ruestung, 1);
@@ -118,10 +118,10 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grom()
 
 		if (Mod_AnzahlNebengilden < MaxNebengilden)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Wenn du willst, werde ich dich jetzt in unsere Reihen aufnehmen.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Jesli zechcesz, zabiore cie teraz w nasze szeregi.
 		};
 
-		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Ich habe Dragomir von den Jägern berichtet.");
+		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Powiedzialem Dragomirowi o mysliwych.");
 		B_SetTopicStatus	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_SUCCESS);		
 
 		Info_ClearChoices	(Info_Mod_Dragomir_Jagdgebiete);
@@ -130,19 +130,19 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grom()
 
 FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grimbald()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_00"); //Grimbald ist fasziniert von dem Troll und hat von dort aus einen hervorragenden Blick übers Tal. Er hat einen merkwürdigen Erzbrocken bei einer Gruppe Snapper gefunden, die den Schwarzen Troll angegriffen haben.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_01"); //Er hat ihn mir für dich mitgegeben, vielleicht kannst du etwas damit anfangen.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_00"); //Grimbald jest zafascynowany trolla i ma wspanialy widok na doline. Znalazl dziwny kawalek rudy w grupie snapperów, którzy zaatakowali Black Troll.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_01"); //Dal mi go dla ciebie, moze mozesz cos z tym zrobic.
 
 	B_GiveInvItems	(hero, self, ItMi_Erzbrocken_Seltsam, 1);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Grimbald_NandorGrom))
 	{
-		AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_02"); //Ach ja. Und da oben im Wald geht auch was ab.
+		AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_02"); //Oh, tak. W lesie cos sie dzieje.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_12_03"); //Merkwürdiges Zeug, das wirkt auf mich ganz und gar nicht gut. Wenn ich es nicht besser wüsste, würde ich sagen, dass von diesem Erz nichts gutes kommt.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_04"); //(skeptisch) Du meinst, der Klumpen Erz dort ist böse?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_12_05"); //He, was gibt es da zu lachen! Aber ja, so in etwa könnte man es auch ausdrücken ... Nimm den Brocken am besten wieder, vielleicht kennst du jemanden, der mehr darüber herausfinden kann.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_12_03"); //Dziwne rzeczy, wcale mi sie nie podoba. Gdybym nie wiedzial lepiej, powiedzialbym, ze z tej rudy nic dobrego nie przychodzi.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_15_04"); //Masz na mysli, ze w bryle rudy jest zlo?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Grimbald_12_05"); //Cóz, z czego sie smiejesz? Ale tak, to jest mniej wiecej taki sam sposób, w jaki mozna by to powiedziec...... Wez grude, byc moze znasz kogos, kto moze dowiedziec sie wiecej na ten temat.
 
 	B_GiveInvItems	(self, hero, ItMi_Erzbrocken_Seltsam, 1);
 
@@ -152,8 +152,8 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grimbald()
 
 	if (BerichtCounter == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //So, wie ich sehe hast du alle Jäger befragt, nicht schlecht. Es gehört schon was dazu, hier durch die Wälder zu streifen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Hier, nimm das als Belohnung für deine Mühen, es ist etwas besonderes.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //Widze wiec, ze przeprowadziles wywiad z wszystkimi mysliwymi, a nie zla. To czesc gry spacer po lesie.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Tutaj, jako nagrode za wysilki, to cos wyjatkowego.
 
 		CreateInvItems	(self, ItWr_Bauplan_Wolfsring_Ruestung, 1);
 		B_GiveInvItems	(self, hero, ItWr_Bauplan_Wolfsring_Ruestung, 1);
@@ -162,10 +162,10 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grimbald()
 
 		if (Mod_AnzahlNebengilden < MaxNebengilden)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Wenn du willst, werde ich dich jetzt in unsere Reihen aufnehmen.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Jesli zechcesz, zabiore cie teraz w nasze szeregi.
 		};
 
-		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Ich habe Dragomir von den Jägern berichtet.");
+		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Powiedzialem Dragomirowi o mysliwych.");
 		B_SetTopicStatus	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_SUCCESS);		
 
 		Info_ClearChoices	(Info_Mod_Dragomir_Jagdgebiete);
@@ -174,16 +174,16 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Grimbald()
 
 FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Gaan()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Gaan_15_00"); //Gaan beobachtet weiter den Pass, hält die Wiese dort aber sehr geeignet für die Jagd. Ein paar Snapper hat er auch gesehen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Gaan_12_01"); //Snapper? Nichts besonderes in der Gegend.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Gaan_15_03"); //Nein, wirklich nicht ...
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Gaan_15_00"); //Gaan nadal obserwuje przelecz, ale laka jest tam bardzo dobrze przygotowana do polowan. Widzial tez kilka szponiastych.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Gaan_12_01"); //Nakladka? Nie ma tu nic szczególnego.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Jagdgebiete_Gaan_15_03"); //Nie, tak naprawde nie.....
 
 	BerichtCounter += 1;
 
 	if (BerichtCounter == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //So, wie ich sehe hast du alle Jäger befragt, nicht schlecht. Es gehört schon was dazu, hier durch die Wälder zu streifen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Hier, nimm das als Belohnung für deine Mühen, es ist etwas besonderes.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_00"); //Widze wiec, ze przeprowadziles wywiad z wszystkimi mysliwymi, a nie zla. To czesc gry spacer po lesie.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_01"); //Tutaj, jako nagrode za wysilki, to cos wyjatkowego.
 
 		CreateInvItems	(self, ItWr_Bauplan_Wolfsring_Ruestung, 1);
 		B_GiveInvItems	(self, hero, ItWr_Bauplan_Wolfsring_Ruestung, 1);
@@ -192,10 +192,10 @@ FUNC VOID Info_Mod_Dragomir_Jagdgebiete_Gaan()
 
 		if (Mod_AnzahlNebengilden < MaxNebengilden)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Wenn du willst, werde ich dich jetzt in unsere Reihen aufnehmen.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Jagdgebiete_Fertig_12_02"); //Jesli zechcesz, zabiore cie teraz w nasze szeregi.
 		};
 
-		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Ich habe Dragomir von den Jägern berichtet.");
+		B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Powiedzialem Dragomirowi o mysliwych.");
 		B_SetTopicStatus	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_SUCCESS);		
 
 		Info_ClearChoices	(Info_Mod_Dragomir_Jagdgebiete);
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Dragomir_Aufnahme (C_INFO)
 	information	= Info_Mod_Dragomir_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Jäger werden.";
+	description	= "Chce byc mysliwym.";
 };
 
 FUNC INT Info_Mod_Dragomir_Aufnahme_Condition()
@@ -224,8 +224,8 @@ FUNC INT Info_Mod_Dragomir_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Aufnahme_15_00"); //Ich will Jäger werden.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Aufnahme_12_01"); //Hiermit bist du auch als Jäger aufgenommen.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Aufnahme_15_00"); //Chce byc mysliwym.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Aufnahme_12_01"); //Dzieki temu jestes równiez mysliwym.
 
 	Mod_AnzahlNebengilden += 1;
 
@@ -236,7 +236,7 @@ FUNC VOID Info_Mod_Dragomir_Aufnahme_Info()
 	B_Göttergefallen(2, 2);
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry_NS	(TOPIC_MOD_NEBENGILDEN, "Ich bin jetzt ein Mitglied der Waldläufer.");
+	B_LogEntry_NS	(TOPIC_MOD_NEBENGILDEN, "Jestem teraz czlonkiem Rangers.");
 	
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_54);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_62);
@@ -250,7 +250,7 @@ INSTANCE Info_Mod_Dragomir_ToDoChapter1 (C_INFO)
 	information	= Info_Mod_Dragomir_ToDoChapter1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch mehr für mich zu tun?";
+	description	= "Czy masz dla mnie wiecej do zrobienia?";
 };
 
 FUNC INT Info_Mod_Dragomir_ToDoChapter1_Condition()
@@ -265,41 +265,41 @@ FUNC INT Info_Mod_Dragomir_ToDoChapter1_Condition()
 
 FUNC VOID Info_Mod_Dragomir_ToDoChapter1_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_00"); //Hast du noch mehr für mich zu tun?
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_01"); //Ja, hätte ich. Wahrscheinlich hast du dich ein wenig gewundert, dass die Feldräuber bei den Söldnern so aufdringlich waren, oder?
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_02"); //Nunja, ein wenig.
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_03"); //Nun, dass kommt davon, dass wir ihrer Population ... sagen wir mal ein bisschen unterstützt haben.
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_04"); //Aha.
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_05"); //Ja, die Bauern haben immer mehr Wald abgebrannt und die Tiere getötet um ihre Felder auszuweiten. Das konnten wir einfach nicht mehr gutheißen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_06"); //Was habt ihr gemacht?
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_07"); //Wir haben unter anderem Feldräubereier in ihren Nistplätzen versteckt und die Herde ein wenig vermehrt.
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_08"); //Und was habe ich damit zu tun?
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_09"); //Nun, ich hätte hier noch ein paar und das bisschen Ärger, das sie den Söldnern zur Zeit bereiten, reicht einfach noch nicht.
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_10"); //Also soll ich ...
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_11"); //Genau. Hier, du nimm diesen Trank ein, bevor du in ihr Nest gehst. Damit werden sie dich am Geruch nicht von ihren Artgenossen unterscheiden können und nicht angreifen.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_00"); //Czy masz dla mnie wiecej do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_01"); //Tak, bym mial. Prawdopodobnie byles troche zaskoczony, ze grabieze tak popychali sie w stosunku do najemników, nie byliscie?
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_02"); //Cóz, troche troche.
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_03"); //Cóz, to dlatego, ze widzielismy ich ludnosc.... Powiedzmy, ze troche to popieralismy.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_04"); //Uh-huh.
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_05"); //Owszem, rolnicy spalali coraz wiecej lasów i zabijali zwierzeta w celu poszerzenia pól. Nie moglismy juz tego dluzej poprzec.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_06"); //Co robiliscie?
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_07"); //Ukrywalismy miedzy innymi jaja polne rabunkowe w miejscach ich gniazdowania i nieco zwiekszylismy stado.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_08"); //A co mam z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_09"); //No cóz, mam tu kilka takich rzeczy i male klopoty, które teraz powoduja najemnikom, nie wystarcza.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_10"); //Wiec powinienem....
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_11"); //Dokladnie. Tutaj wezmiesz ten eliksir przed wejsciem do gniazda. W ten sposób nie beda w stanie odróznic cie od swoich bliznich i nie beda Cie atakowac.
 
 	B_GiveInvItems	(self, hero, ItPo_Feldraeubertrank, 1);
 
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_12"); //Dann legst du in ihrem Nest diesen Eimer voller Eier ab. Das dürften noch ein paar Hundert von den Viechern sein, die in den nächsten Tagen schlüpfen müssten.
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_12"); //Nastepnie wkladasz do gniazda wiaderko pelne jaj. To powinno byc jeszcze kilkaset stworzen, które w ciagu najblizszych kilku dni beda musialy sie wykluc.
 
 	B_GiveInvItems	(self, hero, ItMi_Feldraeubereier, 1);
 
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_13"); //Oha. Ich hoffe für dich, dass der Trank funktioniert.
-	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_14"); //Was denkst du denn wie wir das beim letzten Mal gemacht haben, he?
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_15_13"); //Uh-huh. Mam nadzieje, ze eliksir bedzie dzialal dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_ToDoChapter1_12_14"); //Jak myslisz, jak myslales, ze ostatnio to zrobilismy?
 
 	Info_ClearChoices	(Info_Mod_Dragomir_ToDoChapter1);
 
-	Info_AddChoice	(Info_Mod_Dragomir_ToDoChapter1, "In Ordnung, ich mach's.", Info_Mod_Dragomir_ToDoChapter1_Ja);
-	Info_AddChoice	(Info_Mod_Dragomir_ToDoChapter1, "Ich glaub, ich lass es lieber. So ein wiederliches Zeug ...", Info_Mod_Dragomir_ToDoChapter1_Nein);
+	Info_AddChoice	(Info_Mod_Dragomir_ToDoChapter1, "Wlasciwie to zrobie.", Info_Mod_Dragomir_ToDoChapter1_Ja);
+	Info_AddChoice	(Info_Mod_Dragomir_ToDoChapter1, "Mysle, ze lepiej bym tego nie robil. Takie paskudne rzeczy......", Info_Mod_Dragomir_ToDoChapter1_Nein);
 };
 
 FUNC VOID Info_Mod_Dragomir_ToDoChapter1_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_Ja_15_00"); //In Ordnung, ich mach's.
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_Ja_15_00"); //Wlasciwie to zrobie.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_BUGS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_BUGS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_BUGS, "Ich soll für Dragomir einen Eimer mit Feldräubereiern in der Feldräubrhöhle nahe Onars Hof ausleeren.");
+	B_LogEntry	(TOPIC_MOD_JG_BUGS, "Mam opróznic wiadro polowych zlocistych jaj dla Dragomira w jaskini polowej rabunkowej niedaleko Onars Hof.");
 
 	Bug_Mission = TRUE;
 
@@ -308,13 +308,13 @@ FUNC VOID Info_Mod_Dragomir_ToDoChapter1_Ja()
 
 FUNC VOID Info_Mod_Dragomir_ToDoChapter1_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_Nein_15_00"); //Ich glaub, ich lass es lieber. So ein wiederliches Zeug ...
+	AI_Output(hero, self, "Info_Mod_Dragomir_ToDoChapter1_Nein_15_00"); //Mysle, ze lepiej bym tego nie robil. Takie paskudne rzeczy......
 
 	Npc_RemoveInvItems	(hero, ItPo_Feldraeubertrank, 1);
 
 	Npc_RemoveInvItems	(hero, ItMi_Feldraeubereier, 1);
 
-	B_ShowGivenThings	("Trank und Eimer mit Feldräubereiern gegeben");
+	B_ShowGivenThings	("Napój i wiaderko z jajami polnymi zlocistymi podawanymi");
 
 	Info_ClearChoices	(Info_Mod_Dragomir_ToDoChapter1);
 };	
@@ -327,7 +327,7 @@ INSTANCE Info_Mod_Dragomir_EimerLeer (C_INFO)
 	information	= Info_Mod_Dragomir_EimerLeer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Eimer ist in ihrem Nest.";
+	description	= "Wiaderko w gniezdzie.";
 };
 
 FUNC INT Info_Mod_Dragomir_EimerLeer_Condition()
@@ -342,8 +342,8 @@ FUNC INT Info_Mod_Dragomir_EimerLeer_Condition()
 
 FUNC VOID Info_Mod_Dragomir_EimerLeer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_EimerLeer_15_00"); //Der Eimer ist in ihrem Nest.
-	AI_Output(self, hero, "Info_Mod_Dragomir_EimerLeer_12_01"); //Sehr gut. Hier, nimm das als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Dragomir_EimerLeer_15_00"); //Wiaderko w gniezdzie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_EimerLeer_12_01"); //Bardzo dobry. Tutaj, wez to za nagrode.
 
 	B_GivePlayerXP	(100);
 
@@ -379,16 +379,16 @@ FUNC INT Info_Mod_Dragomir_BurnedLager_Condition()
 
 FUNC VOID Info_Mod_Dragomir_BurnedLager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_12_00"); //Ah, du. Endlich. Ich dachte schon, hier würde sich niemand hinwagen, außer diesen wiederlichen Viechern aus dem Wald. Sag mal, kannst du für mich was erledigen?
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_12_00"); //Ach, wy. Wreszcie. Myslalem, ze nikt nie odwazy sie tu przyjechac, z wyjatkiem tych paskudnych stworzen z lasu. Powiedz, czy mozesz cos zrobic dla mnie?
 
 	Wld_SendUntrigger	("DRAGOMIRSFEUER");
 	Wld_SendUntrigger	("DRAGOMIRSMOKE");
 	
 	Info_ClearChoices	(Info_Mod_Dragomir_BurnedLager);
 	
-	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Nein, dafür habe ich jetzt keine Zeit.", Info_Mod_Dragomir_BurnedLager_C);
-	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Was soll ich für dich tun?", Info_Mod_Dragomir_BurnedLager_B);
-	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Was macht ihr hier eigentlich in dieser Wildnis?", Info_Mod_Dragomir_BurnedLager_A);
+	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Nie, teraz nie mam na to czasu.", Info_Mod_Dragomir_BurnedLager_C);
+	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Co chcesz, abym zrobil?", Info_Mod_Dragomir_BurnedLager_B);
+	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Co ty robisz na tej pustyni?", Info_Mod_Dragomir_BurnedLager_A);
 };
 
 FUNC VOID Info_Mod_Dragomir_BurnedLager_C()
@@ -403,30 +403,30 @@ FUNC VOID Info_Mod_Dragomir_BurnedLager_C()
 
 FUNC VOID Info_Mod_Dragomir_BurnedLager_B()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_BurnedLager_B_15_00"); //Was soll ich für dich tun?
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_B_12_01"); //Gut, hör zu. Die Waldläufer und Druiden haben im Minental gerade eine Art Versammlung. Richte ihnen aus, wie es um uns steht und bitte sie, uns Verstärkung zu schicken.
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_B_12_02"); //Hier, auf der Karte habe ich ihren Aufenthaltsort für dich markiert. Beeil dich.
+	AI_Output(hero, self, "Info_Mod_Dragomir_BurnedLager_B_15_00"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_B_12_01"); //Dobrze, sluchaj. Rangerzy i Druidy maja swoisty rajd w Minental. Powiedz im, jak postepujemy i popros ich, aby wyslali nam wzmocnienia.
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_B_12_02"); //Tutaj, na mapie zaznaczylem jej miejsce zamieszkania dla Ciebie. Chodz, spiesz sie.
 
 	B_GiveInvItems	(self, hero, ItWr_EremitenCamp, 1);
 
 	Mod_Drago = 4;
 
-	B_LogEntry	(TOPIC_MOD_JG_LAGER, "Dragomir hat mir erzählt, dass das Lager von Schwarzmagiern und Banditen überfallen wurde. Er bat mich bei den Druiden und Waldläufern im Minental Verstärkung anzufordern.");
+	B_LogEntry	(TOPIC_MOD_JG_LAGER, "Dragomir powiedzial mi, ze obóz zostal zaatakowany przez czarnych magów i bandytów. Poprosil mnie o wezwanie Druidów i Rangerów w Minental do utworzenia kopii zapasowej.");
 
 	Info_ClearChoices	(Info_Mod_Dragomir_BurnedLager);
 };
 
 FUNC VOID Info_Mod_Dragomir_BurnedLager_A()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_BurnedLager_A_15_00"); //Was macht ihr hier eigentlich in dieser Wildnis?
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_01"); //Wir mussten hierhin flüchten. Einige Schwarzmagier griffen uns an, unterstützt wurden sie dazu noch von Banditen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_02"); //Wir können von Glück reden, dass sie sich in dieser Gegend nicht so gut auskennen, sonst wären wir schon längst überwältigt worden. Aber lange werden sie nichtmehr brauchen, uns aufzuspüren.
-	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_03"); //Du siehst, die Situation ist ernst, hilfst du uns nun?
+	AI_Output(hero, self, "Info_Mod_Dragomir_BurnedLager_A_15_00"); //Co ty robisz na tej pustyni?
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_01"); //Musielismy tu uciekac. Zaatakowali nas czarnoskórzy magicy, ale byli tez wspierani przez bandytów.
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_02"); //Mamy szczescie, ze nie znaja tego obszaru tak dobrze, bo inaczej juz dawno bysmy byli przytloczeni. Ale sledzenie nas nie zajmie im wiele czasu.
+	AI_Output(self, hero, "Info_Mod_Dragomir_BurnedLager_A_12_03"); //Widzisz, ze sytuacja jest powazna, czy pomozesz nam teraz?
 
 	Info_ClearChoices	(Info_Mod_Dragomir_BurnedLager);
 	
-	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Nein, dafür habe ich jetzt keine Zeit.", Info_Mod_Dragomir_BurnedLager_C);
-	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Was soll ich für dich tun?", Info_Mod_Dragomir_BurnedLager_B);
+	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Nie, teraz nie mam na to czasu.", Info_Mod_Dragomir_BurnedLager_C);
+	Info_AddChoice	(Info_Mod_Dragomir_BurnedLager, "Co chcesz, abym zrobil?", Info_Mod_Dragomir_BurnedLager_B);
 };
 
 INSTANCE Info_Mod_Dragomir_WillQuestDoch (C_INFO)
@@ -451,12 +451,12 @@ FUNC INT Info_Mod_Dragomir_WillQuestDoch_Condition()
 
 FUNC VOID Info_Mod_Dragomir_WillQuestDoch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dragomir_WillQuestDoch_12_00"); //Hast du dich doch noch dazu entschlossen, uns zu helfen?
+	AI_Output(self, hero, "Info_Mod_Dragomir_WillQuestDoch_12_00"); //Czy zdecydowales sie nam pomóc?
 	
 	Info_ClearChoices	(Info_Mod_Dragomir_WillQuestDoch);
 	
-	Info_AddChoice	(Info_Mod_Dragomir_WillQuestDoch, "Nein, dafür habe ich jetzt keine Zeit.", Info_Mod_Dragomir_BurnedLager_C);
-	Info_AddChoice	(Info_Mod_Dragomir_WillQuestDoch, "Was soll ich für dich tun?", Info_Mod_Dragomir_BurnedLager_B);
+	Info_AddChoice	(Info_Mod_Dragomir_WillQuestDoch, "Nie, teraz nie mam na to czasu.", Info_Mod_Dragomir_BurnedLager_C);
+	Info_AddChoice	(Info_Mod_Dragomir_WillQuestDoch, "Co chcesz, abym zrobil?", Info_Mod_Dragomir_BurnedLager_B);
 };
 
 INSTANCE Info_Mod_Dragomir_HilfeII (C_INFO)
@@ -467,7 +467,7 @@ INSTANCE Info_Mod_Dragomir_HilfeII (C_INFO)
 	information	= Info_Mod_Dragomir_HilfeII_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei Adanos! Was war hier los?";
+	description	= "Z Adanosem! Co sie tu dzialo?";
 };
 
 FUNC INT Info_Mod_Dragomir_HilfeII_Condition()
@@ -480,22 +480,22 @@ FUNC INT Info_Mod_Dragomir_HilfeII_Condition()
 
 FUNC VOID Info_Mod_Dragomir_HilfeII_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_00"); //Bei Adanos! Was war hier los?
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_01"); //Ich weiß es nicht! Die Meute kam aus dem dunklen Wald. Und das waren nicht die Ersten.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_02"); //Hat einer der Feinde überlebt, den man ausfragen kann.
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_03"); //Ich glaub nicht. Es rührt sich keiner mehr.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_04"); //Hm. Es hat was mit einem Khorgor zu tun. Scheinbar ein irrer Magier. Mehr wissen wir nicht.
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_05"); //Aber warum wir Jäger und Waldläufer? Wir gehören doch zu den Harmlosesten auf der Insel.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_06"); //Wir wissen es nicht genau. Aber wir werden diesen Khorgor erwischen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_07"); //Dein Wort in Adanos Ohr! Und wie geht's weiter?
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_08"); //Keine Ahnung. Ich sollte euch nur unterstützen, wenn nötig.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_09"); //Ich gehe zurück ins Minental. Habe da noch einiges zu erledigen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_10"); //Adanos mit dir! Ich halte hier die Stellung.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_11"); //Wer kümmert sich um Nandor und Ruga?
-	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_12"); //Ich lass die Kräuterhexe kommen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_13"); //Gut. Und viel Glück noch.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_00"); //Z Adanosem! Co sie tu dzialo?
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_01"); //Nie wiem! Pakiet wyszedl z ciemnego lasu. I te nie byly pierwszymi.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_02"); //Ocalony jeden z wrogów, którego mozna zadac pytanie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_03"); //Nie sadze. Nikt juz nie porusza sie.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_04"); //Hm. Ma to cos wspólnego z khorgorem. Widocznie czarodziej wsciekly. To wszystko, co wiemy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_05"); //Dlaczego jednak mysliwi i straznicy? Jestesmy jednym z najbardziej niewinnych na wyspie.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_06"); //Nie wiemy na pewno. Ale dostalismy ten Khorgor.
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_07"); //Twoje slowo w uchu Adano! Co wiec dzieje sie pózniej?
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_08"); //Nie wiem o tym. W razie potrzeby powinienem tylko Cie wesprzec.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_09"); //Wracam do Minentala. Zrobilismy troche pracy do wykonania.
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_10"); //Adanos z toba! Twierdze tutaj.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_11"); //Kto opiekuje sie Nandorem i Ruga?
+	AI_Output(self, hero, "Info_Mod_Dragomir_HilfeII_12_12"); //Przynosze ziolowa czarownice.
+	AI_Output(hero, self, "Info_Mod_Dragomir_HilfeII_15_13"); //Dobre. I szczescie.
 
-	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE2, "Hier war der Kampf in vollem Gange, als ich eintraf. Mit Mühe haben wir gesiegt. Wild ist gefallen, Nandor und Ruga sind verletzt. Ich muss das Cyrco berichten.");
+	B_LogEntry	(TOPIC_MOD_JG_DRAGOMIRHILFE2, "Tutaj walka byla w pelnym rozkwicie, kiedy przyjechalem. Z trudem wygralismy. Dzik upadl, Nandor i Ruga sa ranni. Musze zglosic sie do Cyrco.");
 
 	B_StartOtherRoutine	(Mod_1937_JGR_Nandor_NW, "KO");
 	B_StartOtherRoutine	(Mod_749_MIL_Ruga_NW, "KO");
@@ -513,7 +513,7 @@ INSTANCE Info_Mod_Dragomir_Untier (C_INFO)
 	information	= Info_Mod_Dragomir_Untier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir in letzter Zeit etwas Ungewöhnliches begegnet?";
+	description	= "Ostatnio widziales cos niezwyklego?";
 };
 
 FUNC INT Info_Mod_Dragomir_Untier_Condition()
@@ -528,10 +528,10 @@ FUNC INT Info_Mod_Dragomir_Untier_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Untier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Untier_15_00"); //Ist dir in letzter Zeit etwas Ungewöhnliches begegnet?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Untier_12_01"); //Hmm, ja, vor ein paar Tagen liefen hier einige dieser Dämonenmagier durch die Gegend und haben ihre finsteren Rituale durchgeführt.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Untier_12_02"); //Der Boden wies zunächst ungewöhnliche Veränderungen auf, aber ...
-	AI_Output(hero, self, "Info_Mod_Dragomir_Untier_15_03"); //Ja, das hatte ich schon.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Untier_15_00"); //Ostatnio widziales cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Untier_12_01"); //Hmm, owszem, kilka dni temu niektórzy z tych demonicznych magów szli tutaj i wykonywali swoje zlowieszcze rytualy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Untier_12_02"); //Gleba poczatkowo wykazywala niezwykle zmiany, ale.....
+	AI_Output(hero, self, "Info_Mod_Dragomir_Untier_15_03"); //Tak, przeszedlem przez to.
 };
 
 INSTANCE Info_Mod_Dragomir_WhoAreYou (C_INFO)
@@ -542,7 +542,7 @@ INSTANCE Info_Mod_Dragomir_WhoAreYou (C_INFO)
 	information	= Info_Mod_Dragomir_WhoAreYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer seid ihr?";
+	description	= "Kim jestes ludzmi?";
 };
 
 FUNC INT Info_Mod_Dragomir_WhoAreYou_Condition()
@@ -555,8 +555,8 @@ FUNC INT Info_Mod_Dragomir_WhoAreYou_Condition()
 
 FUNC VOID Info_Mod_Dragomir_WhoAreYou_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_WhoAreYou_15_00"); //Wer seid ihr?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WhoAreYou_12_01"); //Wir sind Jäger in den Wäldern vor Khorinis und verkaufen unsere Beute meist an die Händler in der Stadt. Hier haben wir eines unserer Lager.
+	AI_Output(hero, self, "Info_Mod_Dragomir_WhoAreYou_15_00"); //Kim jestes ludzmi?
+	AI_Output(self, hero, "Info_Mod_Dragomir_WhoAreYou_12_01"); //Jestesmy mysliwymi w lesie przed Khorinis i sprzedajemy nasza ofiare glównie handlarzom w miescie. Tutaj mamy jeden z naszych obozów.
 };
 
 INSTANCE Info_Mod_Dragomir_LohntEsSich (C_INFO)
@@ -567,7 +567,7 @@ INSTANCE Info_Mod_Dragomir_LohntEsSich (C_INFO)
 	information	= Info_Mod_Dragomir_LohntEsSich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lohnt sich die Jagd hier?";
+	description	= "Czy warto tu polowac?";
 };
 
 FUNC INT Info_Mod_Dragomir_LohntEsSich_Condition()
@@ -580,12 +580,12 @@ FUNC INT Info_Mod_Dragomir_LohntEsSich_Condition()
 
 FUNC VOID Info_Mod_Dragomir_LohntEsSich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_00"); //Lohnt sich die Jagd hier?
-	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_01"); //Oh ja. In den Wäldern hier wimmelt es von Tieren. Man darf sich nur nicht zu weit hinein wagen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_02"); //Warum nicht?
-	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_03"); //Würdest du laufende Skelette und verrückte Goblins als jagbare Tiere ansehen?
-	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_04"); //Eigentlich nicht.
-	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_05"); //Na also.
+	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_00"); //Czy warto tu polowac?
+	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_01"); //Oh, tak. Lasy sa tu znoszone przez zwierzeta. Nie zaglebiaj sie w to za daleko.
+	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_02"); //Dlaczego nie?
+	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_03"); //Czy uwazasz, ze biegajace szkielety i szalone gobliny uwazasz za zwierzeta do polowania?
+	AI_Output(hero, self, "Info_Mod_Dragomir_LohntEsSich_15_04"); //Wlasciwie nie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_LohntEsSich_12_05"); //Idziesz tam.
 };
 
 INSTANCE Info_Mod_Dragomir_WerBistDu (C_INFO)
@@ -596,7 +596,7 @@ INSTANCE Info_Mod_Dragomir_WerBistDu (C_INFO)
 	information	= Info_Mod_Dragomir_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und wer bist du?";
+	description	= "A kim jestes?";
 };
 
 FUNC INT Info_Mod_Dragomir_WerBistDu_Condition()
@@ -609,8 +609,8 @@ FUNC INT Info_Mod_Dragomir_WerBistDu_Condition()
 
 FUNC VOID Info_Mod_Dragomir_WerBistDu_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_WerBistDu_15_00"); //Und wer bist du?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WerBistDu_12_01"); //Ich heiße Dragomir und bin der Anführer dieses Lagers.
+	AI_Output(hero, self, "Info_Mod_Dragomir_WerBistDu_15_00"); //A kim jestes?
+	AI_Output(self, hero, "Info_Mod_Dragomir_WerBistDu_12_01"); //Nazywam sie Dragomir i jestem przywódca tego obozu.
 };
 
 INSTANCE Info_Mod_Dragomir_MitmachenPre (C_INFO)
@@ -621,7 +621,7 @@ INSTANCE Info_Mod_Dragomir_MitmachenPre (C_INFO)
 	information	= Info_Mod_Dragomir_MitmachenPre_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich mich den Jägern anschließen?";
+	description	= "Czy moge dolaczyc do mysliwych?";
 };
 
 FUNC INT Info_Mod_Dragomir_MitmachenPre_Condition()
@@ -635,9 +635,9 @@ FUNC INT Info_Mod_Dragomir_MitmachenPre_Condition()
 
 FUNC VOID Info_Mod_Dragomir_MitmachenPre_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_MitmachenPre_15_00"); //Kann ich mich den Jägern anschließen?
-	AI_Output(self, hero, "Info_Mod_Dragomir_MitmachenPre_12_01"); //Du bist noch etwas zu schwach. Hast ja noch nichts auf den Rippen. Bei uns geht's manchmal ruppig zu.
-	AI_Output(self, hero, "Info_Mod_Dragomir_MitmachenPre_12_02"); //Komm später wieder.
+	AI_Output(hero, self, "Info_Mod_Dragomir_MitmachenPre_15_00"); //Czy moge dolaczyc do mysliwych?
+	AI_Output(self, hero, "Info_Mod_Dragomir_MitmachenPre_12_01"); //Jestes jeszcze troche za slaby. Nie masz jeszcze nic na zeberkach. Czasami zdarzaja sie problemy z nami.
+	AI_Output(self, hero, "Info_Mod_Dragomir_MitmachenPre_12_02"); //Wróc do domu pózniej.
 };
 
 INSTANCE Info_Mod_Dragomir_Bosper (C_INFO)
@@ -648,7 +648,7 @@ INSTANCE Info_Mod_Dragomir_Bosper (C_INFO)
 	information	= Info_Mod_Dragomir_Bosper_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dich von Bosper grüßen. Er braucht neue Felle.";
+	description	= "Bospaler powiedzial powitanie. Potrzebuje nowych skór.";
 };
 
 FUNC INT Info_Mod_Dragomir_Bosper_Condition()
@@ -662,16 +662,16 @@ FUNC INT Info_Mod_Dragomir_Bosper_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Bosper_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_00"); //Ich soll dich von Bosper grüßen. Er braucht neue Felle.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Bosper_12_01"); //Ach ja. Ich hab hier einen Stapel. Könntest du ...
+	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_00"); //Bospaler powiedzial powitanie. Potrzebuje nowych skór.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Bosper_12_01"); //Oh, tak. Dostalem kupe. Móglbys/- móc
 
 	B_GiveInvItems	(self, hero, ItMi_Wolfsfelle, 1);
 
-	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_02"); //Die Ausliefern? Wenn ich dir damit einen Gefallen tue, gerne.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Bosper_12_03"); //Sag ihm, wir rechnen ab, wenn ich in die Stadt komme.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_04"); //Bin schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_02"); //Dostawszy je? Jesli mam laske, to dobrze.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Bosper_12_03"); //Powiedz mu, ze bedziemy sie osiedlac, gdy dojezdzam do miasta.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Bosper_15_04"); //Jestem na drodze.
 
-	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Ich soll die Felle von Dragomir dem Bosper bringen. Das bringt sicher Punkte für die Aufnahme.");
+	B_LogEntry	(TOPIC_MOD_BOSPER_FELLLIEFERUNG, "Mialem przywiezc Dragomira Skóry Bosper. Jestem pewien, ze przyniesie Ci to punkty za nagrywanie.");
 };
 
 INSTANCE Info_Mod_Dragomir_AllesKlar (C_INFO)
@@ -682,7 +682,7 @@ INSTANCE Info_Mod_Dragomir_AllesKlar (C_INFO)
 	information	= Info_Mod_Dragomir_AllesKlar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und kommt ihr zurecht?";
+	description	= "Czy nie chcesz byc w porzadku?";
 };
 
 FUNC INT Info_Mod_Dragomir_AllesKlar_Condition()
@@ -695,8 +695,8 @@ FUNC INT Info_Mod_Dragomir_AllesKlar_Condition()
 
 FUNC VOID Info_Mod_Dragomir_AllesKlar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_AllesKlar_15_00"); //Und kommt ihr zurecht?
-	AI_Output(self, hero, "Info_Mod_Dragomir_AllesKlar_12_01"); //Es reicht zum überleben.
+	AI_Output(hero, self, "Info_Mod_Dragomir_AllesKlar_15_00"); //Czy nie chcesz byc w porzadku?
+	AI_Output(self, hero, "Info_Mod_Dragomir_AllesKlar_12_01"); //Wystarczy przetrwac.
 };
 
 INSTANCE Info_Mod_Dragomir_Mitmachen (C_INFO)
@@ -707,7 +707,7 @@ INSTANCE Info_Mod_Dragomir_Mitmachen (C_INFO)
 	information	= Info_Mod_Dragomir_Mitmachen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich bei euch mitmachen?";
+	description	= "Czy moge dolaczyc do Ciebie?";
 };
 
 FUNC INT Info_Mod_Dragomir_Mitmachen_Condition()
@@ -722,20 +722,20 @@ FUNC INT Info_Mod_Dragomir_Mitmachen_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Mitmachen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_00"); //Kann ich bei euch mitmachen?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_01"); //Das kann ich nicht alleine entscheiden. Aber wo du gerade fragst, ich hätte da etwas, was du für mich tun könntest.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_02"); //Um was geht es?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_03"); //Einige Jäger von uns haben sich über das Land verteilt und suchen gute Jagdgebiete. Ich möchte, dass du bei ihnen vorbeischaust und sie fragst, wie es bei ihnen aussieht.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_04"); //Dann müssen sie nicht den ganzen Weg hin und her rennen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_05"); //Wo halten sich die Jäger auf?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_06"); //Es sind insgesamt vier Jäger unterwegs. Gaan, Nandor, Grimbald und Grom.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_07"); //Gaan hält sich am Pass zum Minental auf, Grom müsstest du auf Onars Hof bei den Söldnern finden, er wollte sich dort umhören.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_08"); //Nandor ist in den dunklen Wald gegangen. Soweit ich weiss, befindet sich dort irgendwo einer dieser Steinkreise, such dort nach ihm.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_09"); //Grimbald ist an einem See, in der Nähe der Höhle des schwarzen Trolles. Er wollte sich das Biest mal ansehen. Falls er die Begegnung überlebt hat, findest du ihn bestimt noch dort.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_00"); //Czy moge dolaczyc do Ciebie?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_01"); //Nie moge samodzielnie decydowac. Ale skoro pytasz, mam cos, co móglbys dla mnie zrobic.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_02"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_03"); //Niektórzy z naszych mysliwych rozsiali sie po calym kraju i szukaja dobrych terenów lowieckich. Chce, zebys zatrzymal sie przy ich domu i zapytal, jak one wygladaja.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_04"); //Wtedy nie musza biegac dalej i dalej.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Mitmachen_15_05"); //Gdzie sa mysliwi?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_06"); //Po drodze jest czterech mysliwych. Gaan, Nandor, Grimbald i Grom.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_07"); //Gaan jest na przeleczy Minentala, Grom powinien znalezc sie na farmie Onar z najemnikami, chcial zapytac tam wokól.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_08"); //Nandor wszedl do ciemnego lasu. O ile wiem, gdzies tam jest jeden z tych kamiennych kregów, szukaj.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Mitmachen_12_09"); //Grimbald lezy nad jeziorem, w poblizu jaskini czarnego trolla. Chcial zobaczyc bestie. Jesli przetrwal spotkanie, znajdziemy go na pewno.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JG_JAGDGEBIETE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Dragomir hat mich gebeten die vier Jäger Gaan, Nandor, Grimbald und Grom aufzusuchen. Gaan befindet sich am Pass zum Minental, Grom ist auf Onars Hof, Nandor ist im dunklen Wald in der Nähe eines Steinkreises und Grimbald ist an einem See in der Nähe des schwarzen Trolls.");
+	B_LogEntry	(TOPIC_MOD_JG_JAGDGEBIETE, "Dragomir poprosil mnie o wizyte u czterech mysliwych: Gaana, Nandora, Grimbalda i Groma. Gaan znajduje sie przy przeleczy do Minental, Grom jest na farmie Onars, Nandor znajduje sie w ciemnym lesie w poblizu kamiennego kola, a Grimbald jest nad jeziorem w poblizu czarnego trolla.");
 };
 
 INSTANCE Info_Mod_Dragomir_WoIst (C_INFO)
@@ -746,7 +746,7 @@ INSTANCE Info_Mod_Dragomir_WoIst (C_INFO)
 	information	= Info_Mod_Dragomir_WoIst_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wo finde ich ...";
+	description	= "Gdzie moge znalezc....";
 };
 
 FUNC INT Info_Mod_Dragomir_WoIst_Condition()
@@ -760,7 +760,7 @@ FUNC INT Info_Mod_Dragomir_WoIst_Condition()
 
 FUNC VOID Info_Mod_Dragomir_WoIst_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_15_00"); //Wo finde ich ...
+	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_15_00"); //Gdzie moge znalezc....
 
 	Info_ClearChoices	(Info_Mod_Dragomir_WoIst);
 
@@ -779,7 +779,7 @@ FUNC VOID Info_Mod_Dragomir_WoIst_BACK()
 FUNC VOID Info_Mod_Dragomir_WoIst_Nandor()
 {
 	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_Nandor_15_00"); //... Nandor?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Nandor_12_01"); //Nandor ist im dunklen Wald, irgendwo in der Nähe eines Steinkreises.
+	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Nandor_12_01"); //Nandor jest w ciemnym lesie, gdzies w poblizu kamiennego kola.
 
 	Info_ClearChoices	(Info_Mod_Dragomir_WoIst);
 
@@ -793,7 +793,7 @@ FUNC VOID Info_Mod_Dragomir_WoIst_Nandor()
 FUNC VOID Info_Mod_Dragomir_WoIst_Grom()
 {
 	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_Grom_15_00"); //... Grom?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Grom_12_01"); //Er ist auf Onars Hof bei den Söldnern.
+	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Grom_12_01"); //On jest na farmie Onar z najemnikami.
 
 	Info_ClearChoices	(Info_Mod_Dragomir_WoIst);
 
@@ -807,7 +807,7 @@ FUNC VOID Info_Mod_Dragomir_WoIst_Grom()
 FUNC VOID Info_Mod_Dragomir_WoIst_Grimbald()
 {
 	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_Grimbald_15_00"); //... Grimbald?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Grimbald_12_01"); //Grimbald ist beim See in der Nähe des schwarzen Trolls.
+	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Grimbald_12_01"); //Grimbald polozony jest nad jeziorem w poblizu czarnego trolla.
 
 	Info_ClearChoices	(Info_Mod_Dragomir_WoIst);
 
@@ -821,7 +821,7 @@ FUNC VOID Info_Mod_Dragomir_WoIst_Grimbald()
 FUNC VOID Info_Mod_Dragomir_WoIst_Gaan()
 {
 	AI_Output(hero, self, "Info_Mod_Dragomir_WoIst_Gaan_15_00"); //... Gaan?
-	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Gaan_12_01"); //Gaan ist am Pass zum Minental.
+	AI_Output(self, hero, "Info_Mod_Dragomir_WoIst_Gaan_12_01"); //Gaan jest przy Minental Pass.
 
 	Info_ClearChoices	(Info_Mod_Dragomir_WoIst);
 
@@ -840,7 +840,7 @@ INSTANCE Info_Mod_Dragomir_Pedro (C_INFO)
 	information	= Info_Mod_Dragomir_Pedro_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du einen Feuer Novizen gesehen?";
+	description	= "Widziales nowicjusza ognia?";
 };
 
 FUNC INT Info_Mod_Dragomir_Pedro_Condition()
@@ -855,16 +855,16 @@ FUNC INT Info_Mod_Dragomir_Pedro_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Pedro_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_00"); //Hast du einen Feuer Novizen gesehen?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_01"); //Natürlich hab ich einen Feuer Novizen gesehen. Ich seh jeden Tag einen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_02"); //Hast du heute auch schon einen gesehen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_03"); //Klar, dich.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_04"); //Und außer mir?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_05"); //Ach ja, jetzt erinnere ich mich. Vorhin ist ein Novize in die Taverne gerannt. Er schien es ziemlich eilig zu haben.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_06"); //Danke.
-	AI_output(self, hero, "Info_Mod_Dragomir_Pedro_12_07"); //Kein Problem.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_00"); //Widziales nowicjusza ognia?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_01"); //Oczywiscie widzialem nowicjusza pozaru. Widze jeden raz dziennie.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_02"); //Widziales go dzisiaj?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_03"); //Oczywiscie, Ty.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_04"); //A poza mna?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Pedro_12_05"); //Ach, teraz pamietam. Nowicjusz wlasnie wbiegl do tawerny. Wydawalo mu sie, ze jest w pospiechu.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Pedro_15_06"); //Dzieki.
+	AI_output(self, hero, "Info_Mod_Dragomir_Pedro_12_07"); //Bez problemu.
 
-	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Dragomir hat gesehen wie Pedro in die Taverne gerannt ist.");
+	B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Dragomir pilowal Pedro do tawerny.");
 };
 
 INSTANCE Info_Mod_Dragomir_Orlan (C_INFO)
@@ -875,7 +875,7 @@ INSTANCE Info_Mod_Dragomir_Orlan (C_INFO)
 	information	= Info_Mod_Dragomir_Orlan_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Orlan sagt, dass kein Novize in seine Taverne gegangen ist.";
+	description	= "Orlan mówi, ze zaden nowicjusz nie poszedl do tawerny.";
 };
 
 FUNC INT Info_Mod_Dragomir_Orlan_Condition()
@@ -888,10 +888,10 @@ FUNC INT Info_Mod_Dragomir_Orlan_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Orlan_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Orlan_15_00"); //Orlan sagt, dass kein Novize in seine Taverne gegangen ist.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Orlan_12_01"); //Dann hat wohl einer von uns beiden gelogen.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Orlan_15_02"); //Ich schätze mal du hast mich angelogen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Orlan_12_03"); //Na warte, sowas muss ich mir nicht gefallen lassen.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Orlan_15_00"); //Orlan mówi, ze zaden nowicjusz nie poszedl do tawerny.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Orlan_12_01"); //Wtedy chyba jeden z nas klamal.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Orlan_15_02"); //Wydaje mi sie, ze oklamal pan mnie.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Orlan_12_03"); //Poczekaj, nie musze sie z tym zniesc.
 
 	AI_StopProcessInfos	(self);
 	B_Attack	(self, hero, AR_NONE, 1);
@@ -921,17 +921,17 @@ FUNC VOID Info_Mod_Dragomir_Niederlage_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_00"); //Ok, Ok, ich hab gelogen.
-			AI_Output(hero, self, "Info_Mod_Dragomir_Niederlage_15_01"); //Also sagst du mir jetzt wo Pedro ist oder muss ich nochmal?
-			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_02"); //Jaja. Wenn du dem Weg hier folgst findest auf der rechten Seite etwas abgelegen ein Lager. Dort hält er sich versteckt.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_00"); //Dobrze, dobrze, klamalem.
+			AI_Output(hero, self, "Info_Mod_Dragomir_Niederlage_15_01"); //Wiec czy gonna powiedz mi, gdzie jest Pedro lub czy musze isc znowu?
+			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_02"); //Tak, tak, tak. Jesli podazasz ta sciezka, po prawej stronie znajdziecie zdalny obóz. Tam wlasnie ukrywa sie.
 
-			B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Pedro hält sich in einem Lager versteckt, dass sich hinter dem Lager von Dragomir befindet.");
+			B_LogEntry	(TOPIC_MOD_PARLAN_FEUERRING, "Pedro ukrywa sie w obozie za obozem Dragomira.");
 
 			B_Göttergefallen(1, 1);
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_03"); //Das nächste mal solltest du es dir zweimal überlegen bevor du mich als Lügner bezeichnest.
+			AI_Output(self, hero, "Info_Mod_Dragomir_Niederlage_12_03"); //Nastepnym razem, pomysl dwa razy zanim nazwij mnie klamca.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -951,7 +951,7 @@ INSTANCE Info_Mod_Dragomir_Plage (C_INFO)
 	information	= Info_Mod_Dragomir_Plage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du als Waldläufer hast doch bestimmt Kenntnis über die Fauna und Flora, auch die von Gewässern.";
+	description	= "Jako straznik, z pewnoscia posiada pan wiedze o faunie i florze, w tym o zbiornikach wodnych.";
 };
 
 FUNC INT Info_Mod_Dragomir_Plage_Condition()
@@ -964,34 +964,34 @@ FUNC INT Info_Mod_Dragomir_Plage_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Plage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_00"); //Du als Waldläufer hast doch bestimmt Kenntnis über die Fauna und Flora, auch die von Gewässern.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_01"); //Ja, da bist du bei mir richtig. Worum geht es?
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_02"); //Nun, aus dem See im Neuen Lager entsteigen lauter Würmer und Krabben, die die gesamte Umgebung heimsuchen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_03"); //Der See im Neuen Lager?! So weit ich mich erinnere soll dort doch ein Staudamm errichtet worden sein.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_04"); //Und die ursprüngliche Tierwelt habt ihr dort bestimmt auch ordentlich dezimiert, stimmt’s?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_05"); //Es würde mich wundern, wenn man dort noch einen einzigen Lurker finden würde.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_06"); //(verlegen) Ohh, öhh, nun ... aber woher ...?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_07"); //Wie töricht doch die Menschen sind. Verheeren ihre Umgebung und glauben, dass dies ungesühnt bliebe.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_08"); //Was meinst du, wie es kommt, dass sich so viele Sumpfhaie und Blutfliegen gerade im Sumpf finden?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_09"); //Herrliche stehende Gewässer, wo sich die Eier der Sumpffliegen und die Sporen der Sumpfhaie zu Larven entwickeln können ... und vor allem ohne ihre Fressfeinde, die Lurker.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_10"); //Ihr keilt den See in einen Staudamm ein und rottet die Lurker aus?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_11"); //Geschieht auch ganz recht, ihr seid selbst schuld, an dem, was nun mit dem See passiert.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_12"); //Aber kann man denn gar nichts machen, um das was geschieht zu stoppen?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_13"); //Tjaa ... ihr müsstet zumindest den Schaden, welchen ihr an der Tierwelt des Sees begangen habt, wieder beheben.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_14"); //Das hieße ja aber, die Lurker wieder ...
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_15"); //Ganz genau.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_16"); //Wie sollte das zu schaffen sein?
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_17"); //Ich kann schlecht ein ausgewachsenes Tier ins Lager schleifen ... und die Brutsaison ist schon um, sodass es keine Lurkereier mehr gibt.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_18"); //Deine Kenntnis über die Brutzeiten der Lurker überrascht mich ...
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_19"); //Tja, nun ...
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_20"); //Sie scheint aber nicht vollkommen zu sein.
-	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_21"); //Wie, was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_22"); //Zwar haben die Lurker im Minental und nahe Khorinis schon gebrütet, das stimmt ... aber die ihre Artgenossen im Norden der Insel, genannt Relendel, sind da einige Wochen später dran.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_23"); //Wenn du Glück hast, findest du dort nahe dem See noch einige Eier.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_24"); //Wenn du zumindest drei davon in einer Lurkerhöhle beim See des Neuen Lagers ablegst, so sollte sich der Zustand eures Gewässers in nicht allzu langer Zeit wieder normalisieren.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_25"); //Ich hoffe aber, dass dieser Zwischenfall dir und den anderen Söldnern eine Lehre von Dauer sein wird.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_00"); //Jako straznik, z pewnoscia posiada pan wiedze o faunie i florze, w tym o zbiornikach wodnych.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_01"); //Tak, znalazles sie we wlasciwym miejscu. Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_02"); //Teraz z jeziora w Nowym Obozie wylaniaja sie robaki i kraby, które nekaja caly obszar.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_03"); //Jezioro w Nowym Obozie! Z tego, co pamietam, zbudowano tam zapore.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_04"); //I musicie bylo tam zdziesiatkowac pierwotne królestwo zwierzat, prawda?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_05"); //Bylbym zaskoczony, gdyby znalezli tam jednego Lurkera.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_06"); //Ooh, ooh, ooh, ooh,.... Ale jak.....?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_07"); //Jak glupi sa ludzie. Zdewastuj ich srodowisko i wierzcie, ze pozostanie to bezkarne.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_08"); //Jak myslisz, jak to mozliwe, ze obecnie jest tak wiele rekinów bagiennych i much krwi w bagnie?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_09"); //Cudowne wody zastojowe, w których jaja bagien i zarodniki zarlacza blotnego moga rozwinac sie w larwy.... a zwlaszcza bez ich drapiezników - czarownice.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_10"); //Zamykasz jezioro do zapory i eksterminujesz ciecierzyce?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_11"); //To równiez calkiem sluszne, ze sami sa Panstwo winni za to, co dzieje sie z jeziorem.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_12"); //Ale czy nie mozna nic zrobic, aby powstrzymac to, co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_13"); //Tjaaa.... musialbys przynajmniej naprawic szkody wyrzadzone dzikiej faunie i florze jeziora.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_14"); //Oznaczaloby to jednak, ze czarownice znów by....
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_15"); //Dokladnie.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_16"); //Jak mozna to zrobic?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_17"); //Trudno mi o zmielenie w obozie calego zwierzaka...... a sezon legowy juz sie skonczyl, wiec nie ma juz jaj Lurkera.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_18"); //Twoja wiedza o sezonie legowym cielat zaskakuje mnie....
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_19"); //No cóz, no cóz....
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_20"); //Nie wydaje sie doskonala.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Plage_15_21"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_22"); //Curekarze w Minentalu i niedaleko Khorinis juz sie rodzi, to prawda.... Jednak na pólnocy wyspy, zwanej Relendel, po kilku tygodniach sa tacy, jak na pólnocy wyspy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_23"); //Jesli masz szczescie, znajdziesz tu jajka w poblizu jeziora.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_24"); //Jesli umiescisz co najmniej trzy z nich w jaskini Lurker w poblizu jeziora Nowego Obozu, stan wody powinien w krótkim czasie powrócic do normy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Plage_12_25"); //Mam jednak nadzieje, ze to wydarzenie bedzie lekcja dla was i innych najemników przez dlugi czas.
 
-	B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Dragomir meinte, dass ich beim See in Relendel noch Lurkereier finden könnte. Wenn ich drei davon in der Lurkerhöhle im Neuen Lager deponiere, müsste die Plage bald Geschichte sein. Die Eier werden sich vermutlich in einer Höhle im große See befinden. Die Stelle, wo ich tauchen muss, wird sicher durch Lurker am Strand angezeigt.");
+	B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Dragomir powiedzial, ze w Relendel moge znalezc jaja Lurkera w poblizu jeziora. Gdybym trzy z nich deponowal w jaskini Lurker w Nowym Obozie, zaraza wkrótce bylaby historia. Jaja beda prawdopodobnie znajdowaly sie w jaskini w duzym jeziorze. Miejsce, w którym musze nurkowac jest wyraznie wskazane przez Lurkera na plazy.");
 
 	Mod_NL_JeremiahHasEier = 3;
 
@@ -1006,7 +1006,7 @@ INSTANCE Info_Mod_Dragomir_Leichengase (C_INFO)
 	information	= Info_Mod_Dragomir_Leichengase_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche deine Hilfe.";
+	description	= "Potrzebuje panstwa pomocy.";
 };
 
 FUNC INT Info_Mod_Dragomir_Leichengase_Condition()
@@ -1021,62 +1021,62 @@ FUNC INT Info_Mod_Dragomir_Leichengase_Condition()
 
 FUNC VOID Info_Mod_Dragomir_Leichengase_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_00"); //Ich brauche deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_01"); //Wobei?
-	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_02"); //Ich hab hier einen Sack voll Kräuter, die ich einen Troll verfüttern muss.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_03"); //(lacht herzhaft) Du willst einem Troll dieses Gemüse verfüttern?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_04"); //Wir sprechen schon von dem gleichen Wesen, oder?
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_05"); //Drei Meter groß, ziemlich haarig, Mundgeruch wie Beliars Arsch ... und warte, da war doch noch was. Ach ja, FLEISCHFRESSER!
-	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_06"); //Wenn der Troll das Zeug einfach fressen würde, bräuchte ich wohl kaum deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_07"); //Was soll der ganze Scheiß überhaupt? Ach lass stecken, ich will’s gar nicht wissen.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_08"); //Wenn du wirklich willst, dass ein Troll dieses Grünzeug frisst dann schmier es kräftig mit Moleratfett ein!
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_09"); //Die Biester lieben den Gestank von diesem ranzigen Teufelszeug.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_00"); //Potrzebuje panstwa pomocy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_01"); //Z czym?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_02"); //Dostalem torbe ziolowa do karmienia troll.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_03"); //Chcesz karmic trolle tym warzywem?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_04"); //Mówimy o tym samym, czyz nie?
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_05"); //Trzy metry wysokie na trzy metry, dosc owlosione, nieswiezy oddech jak tylek Beliara.... i poczekac, bylo jeszcze cos innego. Ach, tak, MIESA!
+	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_06"); //Gdyby troll po prostu zjadl rzeczy, nie potrzebowalbym waszej pomocy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_07"); //Co to jednak fajnie, ze tak czy owak ten gówno? Och, zostaw go tam, nie chce wiedziec.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_08"); //Jesli naprawde chcesz, aby troll zjesc te zielone rzeczy, nasmarowac je tluszczem trzonowym!
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_09"); //Zwierzeta kochaja smród zjelczalych diabelskich rzeczy.
 
 	if (Jäger_Dabei == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_10"); //Danke.
+		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_10"); //Dzieki.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Warum nicht gleich so? Danke.
-		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_12"); //Was soll der Mist?
-		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_13"); //Mit einem Danke kann ich mich in der Taverne nicht betrinken, um das Gespräch das wir eben hatten zu vergessen.
+		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Warum nicht gleich so? Dzieki.
+		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_12"); //Co to jest ten gówno?
+		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_13"); //Dziekuje, ze nie moge sie pic w tawernie, zeby zapomniec o rozmowie, która wlasnie odbylismy.
 
 		Info_ClearChoices	(Info_Mod_Dragomir_Leichengase);
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 		{
-			Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "Hier hast du 50 Goldstücke.", Info_Mod_Dragomir_Leichengase_B);
+			Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "Oto 50 sztuk zlota.", Info_Mod_Dragomir_Leichengase_B);
 		};
 		Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "", Info_Mod_Dragomir_Leichengase_A);
 	};
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Dragomir meinte, es reiche den Beutel mit der Kräutermischung mit Moleratfett einzureiben.");
+	B_LogEntry	(TOPIC_MOD_SL_LEICHENGASE, "Dragomir pomyslal, ze bogata bedzie mieszanka ziól i tluszczu trzonowego.");
 };
 
 FUNC VOID Info_Mod_Dragomir_Leichengase_B()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_B_15_00"); //Hier hast du 50 Goldstücke.
+	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_B_15_00"); //Oto 50 sztuk zlota.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_01"); //Naja, eine leichte Amnesie wird ich mir damit wohl leisten können. Man sieht sich.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_02"); //Ach warte. Ich hab hier noch etwas altes Moleratfett, was bei mir eh nur vor sich hinfault.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_01"); //Cóz, prawdopodobnie bede mógl sobie pozwolic na lekka amnezje. Do zobaczenia dookola.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_02"); //Och, poczekaj. Nadal mam troche starego tluszczu trzonowego, który i tak odchodzi.
 
 	B_GiveInvItems	(self, hero, ItMi_MoleratLubric_MIS, 1);
 
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_03"); //Je mehr es stinkt, desto lieber ist's den Viechern.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_04"); //Aber pass auf, so ein Stück Molerattschimmel räumt selbst den stärksten Troll aus! (lacht herzhaft)
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_03"); //Im wiecej smierdzi, tym lepiej dla stworzen.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_B_12_04"); //Uwazaj jednak, nawet najsilniejszy troll pozbywa sie kawalka plesni melasy! (smiertelni zandarmowie)
 
 	Info_ClearChoices	(Info_Mod_Dragomir_Leichengase);
 };
 
 FUNC VOID Info_Mod_Dragomir_Leichengase_A()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_A_15_00"); //Ich brauche deine Hilfe.
-	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_A_12_01"); //Wobei?
+	AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_A_15_00"); //Potrzebuje panstwa pomocy.
+	AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_A_12_01"); //Z czym?
 
 	Info_ClearChoices	(Info_Mod_Dragomir_Leichengase);
 };
@@ -1089,7 +1089,7 @@ INSTANCE Info_Mod_Dragomir_AlterMann (C_INFO)
 	information	= Info_Mod_Dragomir_AlterMann_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wegen altem Mann im Wald fragen.";
+	description	= "Zapytaj o starca w lesie.";
 };
 
 FUNC INT Info_Mod_Dragomir_AlterMann_Condition()
@@ -1107,54 +1107,54 @@ FUNC VOID Info_Mod_Dragomir_AlterMann_Info()
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN01");
 
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_00"); //Ahh, du meinst den alten Mann des Waldes. Ja, etwas weiß ich über ihn.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_01"); //Er soll Jahrhunderte alt sein und die Tiere des Waldes Rund um Khorata behüten.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_02"); //Zwar sagt man, er sei blind, jedoch gleichzeitig auch magisch begabt.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_03"); //Mehr fällt mir gerade nicht ein. Vielleicht weiß ein anderer mehr.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_00"); //Ach, masz na mysli starego czlowieka z lasu. Tak, wiem o nim cos.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_01"); //Mówi sie, ze ma ona stulecia i ma chronic zwierzeta w lesie wokól Khoraty.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_02"); //Mówi sie, ze jest slepy, ale jednoczesnie ma magiczny talent.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_03"); //To wszystko, o czym moge teraz pomyslec. Moze ktos inny wie wiecej.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Von dem ersten Waldläufer erfuhr ich nicht viel Neues. Der alte Mann des Waldes, behütet die Tiere, er ist uralt, blind und magisch begabt. Vielleicht weiß ein anderer Waldläufer mehr.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Od pierwszego straznika nie dostalem wiele nowych informacji. Stary czlowiek z lasu, chroniac zwierzeta, jest starozytnym, niewidomym i magicznym. Moze inny straznik wie wiecej.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 1)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN02");
 
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_04"); //Der alte Mann des Waldes? Ja, ich hörte er solle einst ein Diener Adanos gewesen sein.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_05"); //Wobei unklar ist, ob er ein Waldläufer war wie wir, ein Magier des Wassers, oder ein Verwandlungsmagier.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_06"); //Seine magischen Fähigkeiten, wie auch seine starke Bindung zur Tier- und Pflanzenwelt zeugen davon, dass er von allem etwas hat.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_04"); //Stary czlowiek z lasu? Tak, slyszalem, ze byl kiedys sluga Adano.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_05"); //Nie wiadomo, czy byl on takim straznikiem jak my, magikiem wody, czy przemieniajacym magiem.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_06"); //Jego magiczne zdolnosci, a takze silne przywiazanie do swiata zwierzat i roslin sa dowodem na to, ze ma wszystko.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Beim 2ten Waldläufer erfuhr ich auch nicht viel wissenswertes. Der alte Mann des Waldes soll Adanos und der Schöpfung verbunden sein, allem voran der Tier und Pflanzenwelt.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "W 2. lesniczy tez nie dowiedzialem sie wiele, co warto wiedziec. Mówi sie, ze stary czlowiek lasu jest zwiazany z Adanosem i kreacja, zwlaszcza zwierzetami i roslinami.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 2)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN03");
 
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_07"); //Tja, viel kann ich dir nicht über ihn verraten.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_08"); //Das Problem besteht auch darin, dass er mit keinem Menschen spricht, nicht mal mit uns, auch, wenn wir eigentlich ähnliche Ziele verfolgen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_09"); //Allein mit den Tieren des Waldes unterhält er sich.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_10"); //Tja, wenn ich ein Keiler wäre, könnte ich dir bestimmt mehr über ihn verraten.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_07"); //Cóz, nie moge ci wiele powiedziec o nim.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_08"); //Problem polega równiez na tym, ze nie rozmawia z nikim, nawet z nami, nawet jesli dazymy do podobnych celów.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_09"); //Sam z zwierzetami lasu bawi sie sam.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_10"); //No cóz, gdybym byl dzikiem, jestem pewien, ze móglbym powiedziec ci wiecej o nim.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, das könnte ein wichtiger Hinweis gewesen sein. Der alte Mann des Waldes meidet Menschen gänzlich, spricht nur mit Tieren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Acha, to mogla byc wazna wskazówka. Stary czlowiek z lasu calkowicie unika ludzi, mówi tylko zwierzetom.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 3)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN04");
 
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_11"); //Der alte Mann des Waldes? Nun, er soll in enger Beziehung zur Tier- und Pflanzenwelt stehen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_12"); //Man sagt, er leite Rudeltiere wie Keiler, oder Wölfe dazu an, den Wald gegen Eindringlinge zu beschützen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_13"); //Selbst, so sagt man, fände man ihn häufig in Gestalt eines grünen Wolfes vor.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_11"); //Stary czlowiek z lasu? Cóz, ma byc scisle zwiazany z fauna i flora.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_12"); //Mówi sie, ze prowadzi on spakowywanie zwierzat takich jak knury czy wilki, aby chronic las przed intruzami.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_13"); //Nawet mówi sie, ze czesto wystepuje w ksztalcie zielonego wilka.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Er soll vor allem auch größere Rudeltiere wie Keiler und Wölfe dazu anleiten den Wald gegen Eindringlinge zu beschützen.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Przede wszystkim powinien on równiez poinstruowac wieksze paczki zwierzat, takie jak knury i wilki, aby chronic las przed intruzami.");
 	}
 	else if (Mod_BDT_AlterWaldMann == 4)
 	{
 		B_Say	(hero, self, "$ALTERWALDMANN05");
 
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_14"); //Du interessierst dich für Geschichten über den alten Mann des Waldes?
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_15"); //Nun, viel weiß ich nicht über diesen mystischen Kauz.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_16"); //Er soll sich meistens im dunklen Wald aufhalten, aber auch immer in der Nähe von Gewässern, wie Seen.
-		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_17"); //Selten hat ihn jemand zu Gesicht bekommen ...
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_14"); //Interesuja Cie opowiesci o starym czlowieku z lasu?
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_15"); //Cóz, nie wiem wiele o tej mistycznej dziwnej kuli.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_16"); //Podobno zamieszkuje glównie w ciemnym lesie, ale równiez w poblizu zbiorników wodnych, takich jak jeziora.
+		AI_Output(self, hero, "Info_Mod_Dragomir_AlterMann_12_17"); //Rzadko zdarza sie, ze ktos go widzial.....
 
-		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Man findet ihn höchst wahrscheinlich im dichten Wald Khorata’s in der Nähe eines Sees.");
+		B_LogEntry	(TOPIC_MOD_BDT_ALTERMANN, "Najprawdopodobniej znajduje sie on w gestym lesie Khoraty w poblizu jeziora.");
 	};
 
 	Mod_BDT_AlterWaldMann += 1;
@@ -1283,7 +1283,7 @@ INSTANCE Info_Mod_Dragomir_EXIT (C_INFO)
 	information	= Info_Mod_Dragomir_EXIT_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bis dann.";
+	description	= "Do zobaczenia dookola.";
 };
 
 FUNC INT Info_Mod_Dragomir_EXIT_Condition()
@@ -1293,7 +1293,7 @@ FUNC INT Info_Mod_Dragomir_EXIT_Condition()
 
 FUNC VOID Info_Mod_Dragomir_EXIT_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dragomir_EXIT_15_00"); //Bis dann.
+	AI_Output(hero, self, "Info_Mod_Dragomir_EXIT_15_00"); //Do zobaczenia dookola.
 
 	AI_StopProcessInfos	(hero);
 };

@@ -1,7 +1,7 @@
 INSTANCE Mod_510_DMR_Raven_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Raven";
+	name 		= "kruk";
 	guild 		= GIL_DMT;
 	id 			= 510;
 	voice 		= 10;

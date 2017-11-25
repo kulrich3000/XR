@@ -1,7 +1,7 @@
 instance Mod_1171_STT_Balam_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Balam";
+	name 		=		"balam";
 	npctype 	=		NPCTYPE_mt_schatten;
 	guild 		=		GIL_out;
 	level 		=		3;

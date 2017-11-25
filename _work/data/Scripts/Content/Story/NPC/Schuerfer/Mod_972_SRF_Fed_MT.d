@@ -1,7 +1,7 @@
 instance Mod_972_SRF_Fed_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fed";
+	name 		= "pióro";
 	guild 		= GIL_NONE;
 	id 			= 972;
 	voice 		= 8;

@@ -15,27 +15,27 @@ FUNC INT Info_Mod_Scatty_Hi_Condition()
 
 FUNC VOID Info_Mod_Scatty_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_01_00"); //Du bist doch der Kerl, der damals fast unser Ende besiegelt hätte!
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_01_00"); //Jestes facetem, który prawie zapieczetowal nasz koniec!
 
 	Log_CreateTopic	(TOPIC_MOD_ALTESLAGER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Am Eingang des alten Lagers wurde ich von meinem alten Freund Scatty begrüßt. Anscheinend gibt es das alte Lager immer noch.");
+	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Przy wejsciu do starego obozu przywital mnie stary przyjaciel Scatty. Widocznie stary obóz nadal istnieje.");
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Scatty_Hi);
 
-	Info_AddChoice	(Info_Mod_Scatty_Hi, "Reg dich ab, ihr habt doch überlebt, oder?", Info_Mod_Scatty_Hi_C);
-	Info_AddChoice	(Info_Mod_Scatty_Hi, "Wenn du ein Problem hast, dann komm doch her.", Info_Mod_Scatty_Hi_B);
-	Info_AddChoice	(Info_Mod_Scatty_Hi, "Es war nötig, außer ihr hattet vor alle zu sterben.", Info_Mod_Scatty_Hi_A);
+	Info_AddChoice	(Info_Mod_Scatty_Hi, "Odpoczynek, przezyliscie, prawda?", Info_Mod_Scatty_Hi_C);
+	Info_AddChoice	(Info_Mod_Scatty_Hi, "Jesli masz problem, przyjdz tutaj.", Info_Mod_Scatty_Hi_B);
+	Info_AddChoice	(Info_Mod_Scatty_Hi, "Bylo to konieczne, chyba ze trzeba bylo umrzec przed wszystkimi innymi.", Info_Mod_Scatty_Hi_A);
 };
 
 FUNC VOID Info_Mod_Scatty_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hi_A_15_00"); //Es war nötig, außer ihr hattet vor alle zu sterben.
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_01"); //Dann erklär mir doch mal, was nötig war.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hi_A_15_02"); //Wenn ich nicht gewesen wäre, dann wäre der Schläfer erwacht und dann würden wir uns hier nicht mehr unterhalten.
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_03"); //Ja, die Sektenspinner haben etwas in der Richtung erzählt, aber die erzählen viel, wenn es viel Sumpfkraut gibt.
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_04"); //Jemanden, der so einen Kampf überstanden hat, können wir gut brauchen.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hi_A_15_00"); //Bylo to konieczne, chyba ze trzeba bylo umrzec przed wszystkimi innymi.
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_01"); //Nastepnie wyjasnij mi co bylo konieczne.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hi_A_15_02"); //Gdybym tam nie byl, to spiaczka by sie obudzila i wtedy nie rozmawialibysmy tutaj.
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_03"); //Tak, sekciarskie blystki powiedzialy cos takiego, ale wiele mówia, kiedy jest duzo bagna.
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_A_01_04"); //Ktos, kto przezyl taka walke, mozemy dobrze wykorzystac.
 
 	Scatty_Start_DIA = 1;
 
@@ -44,8 +44,8 @@ FUNC VOID Info_Mod_Scatty_Hi_A()
 
 FUNC VOID Info_Mod_Scatty_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hi_B_15_00"); //Wenn du ein Problem hast, dann komm doch her.
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_B_01_01"); //Das lasse ich mir nicht zweimal sagen, komm her, Arschloch.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hi_B_15_00"); //Jesli masz problem, przyjdz tutaj.
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_B_01_01"); //Nie daje sie opowiedziec dwa razy, tu przyjedz, napadam.
 
 	Scatty_Start_DIA = 2;
 
@@ -58,10 +58,10 @@ FUNC VOID Info_Mod_Scatty_Hi_B()
 
 FUNC VOID Info_Mod_Scatty_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hi_C_15_00"); //Reg dich ab, ihr habt doch überlebt, oder?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_C_01_01"); //Soll das ein Witz sein? Sieh dir das Lager doch mal an, dann wirst du schon sehen, wie es uns ergangen ist.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hi_C_15_02"); //Muss ich erwähnen, dass ihr es nicht anders verdient habt?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hi_C_01_03"); //Ja, ich weiß. Aber das alte Lager ist das einzige, was wir noch haben. Auch wenn es viele Arschlöcher gibt, aber wir können nur damit leben.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hi_C_15_00"); //Odpoczynek, przezyliscie, prawda?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_C_01_01"); //Czy kochasz mnie? Spójrz na obóz, a zobaczysz jak wygladamy.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hi_C_15_02"); //Czy musze wspomniec, ze zasluguje pan na to?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hi_C_01_03"); //Tak, wiem. Ale stary obóz to wszystko, co pozostalo. Nawet jesli jest wiele asceli, mozemy zyc tylko z nimi.
 
 	Scatty_Start_DIA = 3;
 
@@ -93,16 +93,16 @@ FUNC VOID Info_Mod_Scatty_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_00"); //Oh, mein armer Schädel.
-			AI_Output(hero, self, "Info_Mod_Scatty_Umgehauen_15_01"); //Na, ich denke du weißt, dass man sich keine Probleme mit mir einhandelt.
-			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_02"); //Verdammt, du bist anscheinend immer noch ein guter Kämpfer. Jemanden wie dich können wir brauchen.
+			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_00"); //O, moja biedna czaszka.
+			AI_Output(hero, self, "Info_Mod_Scatty_Umgehauen_15_01"); //Cóz, mysle, ze wiesz, ze nie maja ze mna zadnych problemów.
+			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_02"); //Damn, wciaz jestes dobrym wojownikiem, widocznie. Mozemy uzyc kogos takiego jak Ty.
 
 			Scatty_Start_DIA = 4;
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_03"); //Bist wohl doch nur ein Großmaul.
-			AI_Output(hero, self, "Info_Mod_Scatty_Umgehauen_01_04"); //Vielleicht kannst du uns trotzdem helfen.
+			AI_Output(self, hero, "Info_Mod_Scatty_Umgehauen_01_03"); //Jestes po prostu duza usta.
+			AI_Output(hero, self, "Info_Mod_Scatty_Umgehauen_01_04"); //Moze i tak moga nam Panstwo pomóc.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -121,7 +121,7 @@ INSTANCE Info_Mod_Scatty_Hilfe (C_INFO)
 	information	= Info_Mod_Scatty_Hilfe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum sollte ich euch helfen?";
+	description	= "Dlaczego móglbym Ci pomóc?";
 };
 
 FUNC INT Info_Mod_Scatty_Hilfe_Condition()
@@ -137,38 +137,38 @@ FUNC INT Info_Mod_Scatty_Hilfe_Condition()
 
 FUNC VOID Info_Mod_Scatty_Hilfe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_15_00"); //Warum sollte ich euch helfen?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_01_01"); //Wir haben ein Problem und du warst einmal bei uns. Und du hast sicher nicht vergessen, dass wir zusammenhalten.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_15_02"); //Habt ihr vielleicht mir geholfen? Haben wir etwa zusammengehalten, als ihr mich alle umbringen wolltet?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_01_03"); //Wir dachten, du hast uns verraten. Wenn du mit dem neuen Lager paktierst, bist du für uns ein Verräter.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_15_00"); //Dlaczego móglbym Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_01_01"); //Mamy problem, a pan byl z nami kiedys. I na pewno nie zapomniales, ze trzymamy sie razem.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_15_02"); //Czy Pan pomógl mi pomóc? Czy trzymalismy sie razem, kiedy wszyscy próbowaliscie mnie zabic?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_01_03"); //Myslelismy, ze nas zdradziliscie. Jesli zawrzyniesz umowe z nowym obozem, bedziesz dla nas sprzedawczykiem.
 
 	B_StartOtherRoutine	(self, "START");
 
-	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Anscheinend sind sie immer noch so gut drauf wie beim letzten Mal, das kann ja lustig werden. Aber diesmal haben sie die Probleme. Und sie kommen mit dem 'Du warst mal einer von uns' Spruch. Ob es wohl klug wäre, ihnen zu helfen?");
+	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Najwyrazniej sa one wciaz tak samo dobre jak ostatni raz, to moze byc zabawa. Ale tym razem jednak maja problemy. I przychodza z 'ty kiedys byles jednym z nas'. Madrze byloby im pomóc?");
 
 	Info_ClearChoices	(Info_Mod_Scatty_Hilfe);
 
-	Info_AddChoice	(Info_Mod_Scatty_Hilfe, "Steckt euch eure Probleme sonst wo hin, ihr dreckigen Verräter!", Info_Mod_Scatty_Hilfe_B);
+	Info_AddChoice	(Info_Mod_Scatty_Hilfe, "Umiesc swoje problemy gdzie indziej, brudni zdrajcy!", Info_Mod_Scatty_Hilfe_B);
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		Info_AddChoice	(Info_Mod_Scatty_Hilfe, "Was soll ich für euch tun?", Info_Mod_Scatty_Hilfe_A);
+		Info_AddChoice	(Info_Mod_Scatty_Hilfe, "Co powinienem dla Ciebie zrobic?", Info_Mod_Scatty_Hilfe_A);
 	};
 };
 
 FUNC VOID Info_Mod_Scatty_Hilfe_A()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_00"); //Was soll ich für euch tun?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_01"); //Nun, wir existieren hauptsächlich durch die Arenakämpfe. Nun, leider gewinnen immer weniger Kämpfer für unser Lager, also nehmen wir nichts mehr ein.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_02"); //Und welche Rolle spiele ich dabei?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_03"); //Nun, du könntest für das alte Lager in der Arena kämpfen. Und sonstige Sachen bezüglich der Arena regeln.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_04"); //Verstehe, wo soll ich mich anmelden?
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_05"); //Für alles, was mit der Verwaltung des Lagers zusammenhängt, ist der Erzbaron Bartholo zuständig.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_06"); //(ironisch) Die Erzbarone werden sich sicher freuen, mich wieder zu sehen.
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_07"); //Ich glaube kaum, dass sie dich töten werden, ohne dich anzuhören. Schließlich sind sie in einer Lage, in der sie über jeden froh sein können.
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_08"); //Sehr beruhigend.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_00"); //Co powinienem dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_01"); //Cóz, istniejemy glównie poprzez walki na arenie. Cóz, niestety coraz mniej bojowników wygrywa do naszego obozu, wiec nic juz nie bierzemy.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_02"); //I jaka role w tym odgrywam?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_03"); //Cóz, mozna walczyc o stary obóz na arenie. I inne sprawy dotyczace areny.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_04"); //Widze, gdzie powinienem sie zarejestrowac?
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_05"); //Bartholo baron jest odpowiedzialny za wszystko, co zwiazane z administracja obozu.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_06"); //Jestem pewien, ze barony rudy z radoscia znów mnie zobacza.
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_A_01_07"); //Nie sadze, ze zabijaja Cie bez sluchania Ciebie. Wszakze znajduja sie oni w pozycji gdzie moga byc szczesliwi z kazdego.
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_A_15_08"); //Bardzo uspokajajacy.
 
-	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Ich habe mich also entschlossen, ihnen zu helfen. Ich soll für sie in der Arena kämpfen und andere Sachen 'regeln', da kann ich ja gespannt sein. Ich hoffe, das werde ich nicht bereuen. Scatty meinte, ich soll mit Bartholo reden. Der wird sich freuen mich wiederzusehen.");
+	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Postanowilem wiec im pomóc. Mam walczyc o nie na arenie i 'radzic sobie' z innymi rzeczami, wiec moge byc ciekawy. Mam nadzieje, ze nie bede tego zalowal. Scatty kazal mi porozmawiac z Bartholo. Chetnie znów mnie odwiedzi.");
 
 	Scatty_Start_DIA = 5;
 
@@ -177,10 +177,10 @@ FUNC VOID Info_Mod_Scatty_Hilfe_A()
 
 FUNC VOID Info_Mod_Scatty_Hilfe_B()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_B_15_00"); //Steckt euch eure Probleme sonst wo hin, ihr dreckigen Verräter!
-	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_B_01_01"); //Gut, dann verschwinde gefälligst!
+	AI_Output(hero, self, "Info_Mod_Scatty_Hilfe_B_15_00"); //Umiesc swoje problemy gdzie indziej, brudni zdrajcy!
+	AI_Output(self, hero, "Info_Mod_Scatty_Hilfe_B_01_01"); //Wszystko w porzadku, wyjdz stad!
 
-	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Ich habe mich dazu entschlossen, das alte Lager seinem Schicksal zu überlassen.");
+	B_LogEntry	(TOPIC_MOD_ALTESLAGER, "Postanowilem opuscic stary obóz na swój los.");
 	B_SetTopicStatus	(TOPIC_MOD_ALTESLAGER, LOG_FAILED);
 
 	Info_ClearChoices	(Info_Mod_Scatty_Hilfe);
@@ -209,7 +209,7 @@ FUNC INT Info_Mod_Scatty_ArenaFight_Condition()
 
 FUNC VOID Info_Mod_Scatty_ArenaFight_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scatty_ArenaFight_01_00"); //Werte Mitglieder unseres Lagers und der anderen Lager, heute findet ein Kampf zwischen dem ungeschlagenen Unbekannten und dem angehenden Templer Gor Karanto statt. Die Wetten sind platziert.
+	AI_Output(self, hero, "Info_Mod_Scatty_ArenaFight_01_00"); //Drodzy czlonkowie naszego obozu i innych obozów, dzisiaj toczy sie bitwa pomiedzy nieznanym i rozkolysanym Templariuszem Gorem Karanto. Zaklady zostaja wniesione.
 
 	AI_StopProcessInfos	(self);
 
@@ -228,7 +228,7 @@ INSTANCE Info_Mod_Scatty_WannaFightUB (C_INFO)
 	information	= Info_Mod_Scatty_WannaFightUB_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will gegen den Unbekannten kämpfen!";
+	description	= "Chce walczyc z nieznanym!";
 };
 
 FUNC INT Info_Mod_Scatty_WannaFightUB_Condition()
@@ -242,12 +242,12 @@ FUNC INT Info_Mod_Scatty_WannaFightUB_Condition()
 
 FUNC VOID Info_Mod_Scatty_WannaFightUB_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_00"); //Ich will gegen den Unbekannten kämpfen!
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_01"); //Gut, hast du nun also doch Lust zu kämpfen. Ich besorge dir einen Kampf mit ihm.
-	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_02"); //Trage mich auf den Namen ...
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_03"); //Schon gut, Namen sind nicht wichtig. Ich glaube, es würde zu deinem Stil passen, wenn dein Name nicht erwähnt wird.
-	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_04"); //Dann will ich kämpfen.
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_05"); //Geh in die Arena, der Unbekannte wird dich erwarten.
+	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_00"); //Chce walczyc z nieznanym!
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_01"); //Cóz, teraz masz ochote walczyc. Postaram sie o walke z nim.
+	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_02"); //Nos mi nazwisko....
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_03"); //Wszystkie prawa, nazwy nie maja znaczenia. Mysle, ze pasuje do Twojego stylu, gdyby nie wspomniano o Twoim imieniu.
+	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_15_04"); //Wtedy chce walczyc.
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_01_05"); //Idz na arene, na Ciebie czeka nieznane.
 
 	B_StartOtherRoutine	(Mod_1872_NONE_Unbekannt_MT, "ARENAFIGHT");
 
@@ -279,7 +279,7 @@ FUNC INT Info_Mod_Scatty_WannaFightUB_AK_Condition()
 
 FUNC VOID Info_Mod_Scatty_WannaFightUB_AK_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_AK_01_00"); //Der ungeschlagene Unbekannte kämpft gegen den namenlosen Kämpfer der Garde. Die Wetten sind platziert.
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_AK_01_00"); //Nieodebrane nieznane walczy z bezimiennym wojownikiem straznika. Zaklady zostaja wniesione.
 
 	AI_StopProcessInfos	(self);
 };
@@ -292,7 +292,7 @@ INSTANCE Info_Mod_Scatty_WannaFightUB_2 (C_INFO)
 	information	= Info_Mod_Scatty_WannaFightUB_2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will noch mal gegen den Unbekannten kämpfen.";
+	description	= "Chce ponownie walczyc z nieznanym.";
 };
 
 FUNC INT Info_Mod_Scatty_WannaFightUB_2_Condition()
@@ -306,8 +306,8 @@ FUNC INT Info_Mod_Scatty_WannaFightUB_2_Condition()
 
 FUNC VOID Info_Mod_Scatty_WannaFightUB_2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_2_15_00"); //Ich will noch mal gegen den Unbekannten kämpfen.
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_2_01_01"); //Gut, geh in die Arena, der Unbekannte wird dich erwarten.
+	AI_Output(hero, self, "Info_Mod_Scatty_WannaFightUB_2_15_00"); //Chce ponownie walczyc z nieznanym.
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_2_01_01"); //Wszystko w prawo, idz na arene, nieznany bedzie czekac na Ciebie.
 
 	B_StartOtherRoutine	(Mod_1872_NONE_Unbekannt_MT, "ARENAFIGHT");
 
@@ -339,7 +339,7 @@ FUNC INT Info_Mod_Scatty_WannaFightUB_AK_2_Condition()
 
 FUNC VOID Info_Mod_Scatty_WannaFightUB_AK_2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_AK_2_01_00"); //Der ungeschlagene Unbekannte kämpft gegen den namenlosen Kämpfer der Garde. Die Wetten sind platziert.
+	AI_Output(self, hero, "Info_Mod_Scatty_WannaFightUB_AK_2_01_00"); //Nieodebrane nieznane walczy z bezimiennym wojownikiem straznika. Zaklady zostaja wniesione.
 
 	AI_StopProcessInfos	(self);
 };
@@ -352,7 +352,7 @@ INSTANCE Info_Mod_Scatty_UB_Besiegt (C_INFO)
 	information	= Info_Mod_Scatty_UB_Besiegt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Unbekannten Kämpfer besiegt.";
+	description	= "Pokonalem Nieznanego Wojownika.";
 };
 
 FUNC INT Info_Mod_Scatty_UB_Besiegt_Condition()
@@ -365,9 +365,9 @@ FUNC INT Info_Mod_Scatty_UB_Besiegt_Condition()
 
 FUNC VOID Info_Mod_Scatty_UB_Besiegt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_UB_Besiegt_15_00"); //Ich habe den Unbekannten Kämpfer besiegt.
-	AI_Output(self, hero, "Info_Mod_Scatty_UB_Besiegt_01_01"); //Sehr gut, endlich mal wieder einer von unseren Kämpfern, der gewonnen hat.
-	AI_Output(self, hero, "Info_Mod_Scatty_UB_Besiegt_01_02"); //Hier hast du deinen Anteil an den Einnahmen.
+	AI_Output(hero, self, "Info_Mod_Scatty_UB_Besiegt_15_00"); //Pokonalem Nieznanego Wojownika.
+	AI_Output(self, hero, "Info_Mod_Scatty_UB_Besiegt_01_01"); //Bardzo dobry, w koncu jeden z naszych bojowników, który wygral ponownie.
+	AI_Output(self, hero, "Info_Mod_Scatty_UB_Besiegt_01_02"); //Oto Twój udzial w przychodach.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
@@ -386,7 +386,7 @@ INSTANCE Info_Mod_Scatty_AboutSabitsch (C_INFO)
 	information	= Info_Mod_Scatty_AboutSabitsch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie läuft so das Wettgeschäft.";
+	description	= "Jak wyglada dzialalnosc zakladów?";
 };
 
 FUNC INT Info_Mod_Scatty_AboutSabitsch_Condition()
@@ -399,20 +399,20 @@ FUNC INT Info_Mod_Scatty_AboutSabitsch_Condition()
 
 FUNC VOID Info_Mod_Scatty_AboutSabitsch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_AboutSabitsch_15_00"); //Wie läuft so das Wettgeschäft.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_01"); //Miserabel. Dieser neue Kämpfer, Sabitsch ist sein Name, ruiniert mir das ganze Wettgeschäft.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_02"); //Er hat bislang jeden Kampf für sich entscheiden können, ohne, dass seine Gegner jemals eine echte Chance gehabt hätten.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_03"); //Sogar so einen Typen in dunkler Kutte, der eigentlich jeden Gegner nach einigen Sekunden in den Staub schickte, hat er mit einem Schlag umgehauen.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_04"); //Zum Glück kämpft er nicht jeden Tag, sondern nur wenn sich ein Gegner findet, der bereit ist einen hohen Wetteinsatz zu zahlen.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_05"); //Und das werden, was mich hoffen lässt, immer weniger.
-	AI_Output(hero, self, "Info_Mod_Scatty_AboutSabitsch_15_06"); //Was ist so besonderes an diesem Kämpfer?
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_07"); //Er muss unglaubliche Kraft besitzen, da er die schwerste Axt mit höchstem Geschick schwingen kann.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_08"); //Selbst die stärksten Kerle, denen ich bisher begegnete, konnten so eine Waffe nur mit Mühe anlegen und führen.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_09"); //Da ist es umso überraschender, dass so ein Typ sich für Schmuck begeistert und den ganzen Tag behangen mit Amuletten und Ringen herumläuft, wie ein eitles Kaufmannsweib.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_10"); //Erst nachts habe ich gesehen - er hat seine Hütte nämlich ziemlich nahe meiner Arena – wie er zumindest einen Teil seines Krempels in der Truhe verstaut, seine schwere Rüstung ablegt und sich stattdessen in eine angenehme Bürgerkleidung hüllt, bevor er sich zur Nachtruhe begibt.
-	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_11"); //Schon komisch der Typ, aber ein guter Freund von Thorus, wie ich mitbekommen habe.
+	AI_Output(hero, self, "Info_Mod_Scatty_AboutSabitsch_15_00"); //Jak wyglada dzialalnosc zakladów?
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_01"); //Miserable. Ten nowy zawodnik Sabitsch jest jego imieniem, niszczy caly mój zaklad bukmacherski.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_02"); //Do tej pory wygral kazda walke, nie majac nigdy realnej szansy na swoich przeciwników.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_03"); //Nawet taki facet w ciemnych szatach, który po kilku sekundach posylal kazdego przeciwnika do kurzu, wrzucil go jednym ciosem.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_04"); //Na szczescie nie walczy codziennie, ale tylko wtedy, gdy jest przeciwnik, który jest gotów zaplacic wysoki zaklad.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_05"); //I co daje mi nadzieje, to coraz mniej.
+	AI_Output(hero, self, "Info_Mod_Scatty_AboutSabitsch_15_06"); //Co jest tak szczególnego dla tego wojownika?
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_07"); //Musi on posiadac niesamowita moc, jak potrafi obracac najciezsza siekiera z najwieksza umiejetnoscia.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_08"); //Nawet najsilniejsi chlopcy, których dotychczas spotkalem, nie mogliby sie juz z trudem zalozyc i prowadzic takiej broni.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_09"); //Dlatego tym bardziej zaskakujace jest to, ze taki facet jest entuzjastycznie nastawiony do bizuterii i biegnie przez caly dzien z amuletami i pierscionkami, jak daremna zona kupieckiej.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_10"); //Dopiero w nocy widzialem - ma on swoja chatke w poblizu mojej areny - jak co najmniej wtraca czesc swoich rzeczy do tulowia, zdejmuje swoja ciezka zbroje i zamiast tego owija sie w ladny cywilny strój, zanim pójdzie spac w nocy.
+	AI_Output(self, hero, "Info_Mod_Scatty_AboutSabitsch_01_11"); //Zabawny facet, ale dobry przyjaciel Thorusa ", slyszalem.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Scatty meinte, dass Sabitsch ein unglaublich starker Kämpfer sein müsse, um seine Waffe zu führen. Außerdem trägt Sabitsch den ganzen Tag über Schmuck, welchen er nur nachts zum Teil  ablegt und in seiner Truhe verstaut, um sich anschließend in Bürgerkleidung schlafen zu legen. Seine Hütte finde ich bei der Arena.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Scatty powiedzial, ze Sabitsch musi byc niezwykle silnym bojownikiem, aby prowadzic swoja bron. Poza tym Sabitsch nosi bizuterie przez caly dzien, która startuje tylko w nocy i bijaty w klatce piersiowej, aby spac w cywilnym ubraniu. Znajduje jego kabine na stadionie.");
 };
 
 INSTANCE Info_Mod_Scatty_SabitschTot (C_INFO)
@@ -435,8 +435,8 @@ FUNC INT Info_Mod_Scatty_SabitschTot_Condition()
 
 FUNC VOID Info_Mod_Scatty_SabitschTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scatty_SabitschTot_01_00"); //So spät abends noch unterwegs?
-	AI_Output(self, hero, "Info_Mod_Scatty_SabitschTot_01_01"); //Naja, ich wollte mir gerade auch noch einen grünen Novizen genehmigen.
+	AI_Output(self, hero, "Info_Mod_Scatty_SabitschTot_01_00"); //Nadal na drodze, która jest pózno w nocy?
+	AI_Output(self, hero, "Info_Mod_Scatty_SabitschTot_01_01"); //No cóz, mialem tez niedlugo miec zielona nowicjuszke.
 
 	Mod_SabitschTotPetze = 1;
 };
@@ -449,7 +449,7 @@ INSTANCE Info_Mod_Scatty_SlyArena (C_INFO)
 	information	= Info_Mod_Scatty_SlyArena_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich Sly schon bei dir gemeldet?";
+	description	= "Czy Sly wezwal cie jeszcze?";
 };
 
 FUNC INT Info_Mod_Scatty_SlyArena_Condition()
@@ -464,10 +464,10 @@ FUNC INT Info_Mod_Scatty_SlyArena_Condition()
 
 FUNC VOID Info_Mod_Scatty_SlyArena_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_SlyArena_15_00"); //Hat sich Sly schon bei dir gemeldet?
-	AI_Output(self, hero, "Info_Mod_Scatty_SlyArena_01_01"); //Klaro. Ich bin mal gespannt, wie sich der Grünschnabel schlägt. Bisher ist er mir ja nur durch sein Saufen aufgefallen.
-	AI_Output(hero, self, "Info_Mod_Scatty_SlyArena_15_02"); //Gibt es schon einen Termin für seinen ersten Kampf?
-	AI_Output(self, hero, "Info_Mod_Scatty_SlyArena_01_03"); //Jo. Nachher um 17 Uhr tritt er gegen Gor Karanto an. Das wird ein harter Kampf, sag ich mal.
+	AI_Output(hero, self, "Info_Mod_Scatty_SlyArena_15_00"); //Czy Sly wezwal cie jeszcze?
+	AI_Output(self, hero, "Info_Mod_Scatty_SlyArena_01_01"); //Oczywiscie. Ciekawe, jak walczy zielonyhorn. Jak dotad zauwazylem go dopiero po jego zakrzyczeniu.
+	AI_Output(hero, self, "Info_Mod_Scatty_SlyArena_15_02"); //Czy jest jeszcze data jego pierwszej walki?
+	AI_Output(self, hero, "Info_Mod_Scatty_SlyArena_01_03"); //Jo Jo. Pózniej o godzinie 17.00 bedzie rywalizowal z Gor Karanto. Mówie, ze to trudna walka.
 };
 
 INSTANCE Info_Mod_Scatty_Kap4 (C_INFO)
@@ -478,7 +478,7 @@ INSTANCE Info_Mod_Scatty_Kap4 (C_INFO)
 	information	= Info_Mod_Scatty_Kap4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Scatty? Du hier?";
+	description	= "Skapy? Ty tutaj?";
 };
 
 FUNC INT Info_Mod_Scatty_Kap4_Condition()
@@ -491,48 +491,48 @@ FUNC INT Info_Mod_Scatty_Kap4_Condition()
 
 FUNC VOID Info_Mod_Scatty_Kap4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_00"); //Scatty? Du hier?
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_01"); //(griesgrämig) Na, wo soll ich denn sonst sein?
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_02"); //Als Leiche im Alten Lager vielleicht, als Fraß für die Orkhunde?
-	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_03"); //Genau genommen ... ja.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_04"); //Ahh, verarschen kann ich mich selbst.
-	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_05"); //Was ist passiert?
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_06"); //Ach, als diese dreckigen Orks ins Lager einfielen habe ich mir gerade ein Bier vor der Arena gegönnt.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_07"); //Ich hörte das Geschrei und ehe ich mich versah, kam schon 'ne Horde Orks auf mich zu gerannt.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_08"); //Nach kurzem Kampf erkannte ich, dass es hoffnungslos war und lief in die andere Richtung zum Hinterausgang.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_09"); //Dort versuchte ich mit den Wachen das Tor zu öffnen, während wir uns gleichzeitig gegen einige von den grünen Bastarden zu wehr setzen mussten.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_10"); //Mit letzter Mühe gelang es mir noch ... die beiden anderen Jungs haben jedoch ins Gras gebissen.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_11"); //Als ich dann draußen herumlief überlegte ich mir wohin.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hey, die Jungs von den Sumpffritzen haben doch immer in der Arena gezeigt, aus welchem Holz sie geschnitzt sind.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //So einen wie mich können die bei den Templern bestimmt gut gebrauchen."
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_14"); //Tja, und was ist jetzt? Ich darf auf die Novizen bei der Ernte aufpassen.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_15"); //Ich weiß echt nicht, was ich hier soll ...
+	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_00"); //Skapy? Ty tutaj?
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_01"); //Gdzie jeszcze mam byc?
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_02"); //Moze jako trup w starym obozie, moze jako pokarm dla huraganów?
+	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_03"); //Wlasciwie..... tak.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_04"); //Ach, moge sie pieknac.
+	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_15_05"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_06"); //Ach, kiedy te brudne orki zaatakowaly obóz, mialem piwo przed arena.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_07"); //Slyszalem krzyk i zanim to zrozumialem, podbiegla do mnie horda orków.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_08"); //Po krótkiej walce zdalem sobie sprawe, ze to beznadziejne i biegla w przeciwnym kierunku do wyjscia z tylu.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_09"); //Tam próbowalem otworzyc brame z straza, a jednoczesnie trzeba bylo bronic sie przed niektórymi zielonymi dzbanami.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_10"); //Ostatnim wysilkiem udalo mi sie to.... ale pozostali dwaj chlopcy jednak ugryzli kurz.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_11"); //Kiedy biegalem na zewnatrz, zastanawialem sie, dokad pójsc.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hej, chlopaki z bagiennych skrybów zawsze pokazywali, z czego sa zrobione na arenie."
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_14"); //No cóz, co teraz? Moge czuwac nad nowicjuszami podczas zniwa.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_15"); //Naprawde nie wiem, co tu robie.....
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Fisk_NW_Hi))
 	&& (Mod_Fisk_LeiseHoffnung == 0)
 	{
-		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Ich habe Scatty im Sumpflager getroffen, wo er Aufpasser spielen darf.");
+		B_LogEntry	(TOPIC_MOD_LEISEHOFFNUNG, "Spotkalem sie z Scatty' m na obozie bagiennym, gdzie udaje mu sie zagrac jako obserwator.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Scatty_Kap4);
 
-	Info_AddChoice	(Info_Mod_Scatty_Kap4, "Zumindest passt die Frisur jetzt.", Info_Mod_Scatty_Kap4_B);
-	Info_AddChoice	(Info_Mod_Scatty_Kap4, "Das wird schon wieder.", Info_Mod_Scatty_Kap4_A);
+	Info_AddChoice	(Info_Mod_Scatty_Kap4, "Przynajmniej teraz pasowac.", Info_Mod_Scatty_Kap4_B);
+	Info_AddChoice	(Info_Mod_Scatty_Kap4, "Bedziesz mial racje.", Info_Mod_Scatty_Kap4_A);
 };
 
 FUNC VOID Info_Mod_Scatty_Kap4_B()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_B_15_00"); //Zumindest passt die Frisur jetzt.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_B_01_01"); //(wütend) Was?! Mach das du Land gewinnst, bevor der Blitz dich beim Kacken trifft ...
+	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_B_15_00"); //Przynajmniej teraz pasowac.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_B_01_01"); //Co? Upewnij sie, ze zdobedziesz ziemie zanim uderzisz piorunem podczas....
 
 	Info_ClearChoices	(Info_Mod_Scatty_Kap4);
 };
 
 FUNC VOID Info_Mod_Scatty_Kap4_A()
 {
-	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_A_15_00"); //Das wird schon wieder.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_A_01_01"); //Ach, der Spruch hilft mir jetzt auch nicht weiter.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_A_01_02"); //Und jetzt geh ... ich muss aufpassen, dass ja kein Novize gefressen wird ... sonst gibt’s saures vom Baal ... wie auch immer, Schlag-mich-tot.
+	AI_Output(hero, self, "Info_Mod_Scatty_Kap4_A_15_00"); //Bedziesz mial racje.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_A_01_01"); //O, powiedzenie mi teraz nie pomaga.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_A_01_02"); //Teraz odejdz..... Musze uwazac, aby nie zjesc nowicjusza.... lub bedziesz kwasny od Baala.... Bez wzgledu na to, co udalo sie przebic.
 
 	Info_ClearChoices	(Info_Mod_Scatty_Kap4);
 };

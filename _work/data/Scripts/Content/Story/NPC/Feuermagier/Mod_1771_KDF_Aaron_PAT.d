@@ -7,7 +7,7 @@ INSTANCE Mod_1771_KDF_Aaron_PAT (Npc_Default)
 	}
 	else
 	{
-		name		= "Garan";
+		name		= "gwarancja";
 	};
 
 	flags = 2;

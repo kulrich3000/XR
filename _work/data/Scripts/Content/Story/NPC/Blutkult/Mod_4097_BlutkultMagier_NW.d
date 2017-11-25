@@ -1,7 +1,7 @@
 instance Mod_4097_BlutkultMagier_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Blutkultmagier";
+	name 		=		"kultywowanie krwi mag";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_DMT;
 	level 		=		60;

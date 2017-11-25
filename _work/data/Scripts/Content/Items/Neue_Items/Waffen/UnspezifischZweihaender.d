@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_2H_Axe_L_01 (C_Item) 
 {	
-	name 				=	"Spitzhacke";
+	name 				=	"pickaxe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE | ITEM_NSPLIT;
@@ -27,7 +27,7 @@ INSTANCE ItMw_2H_Axe_L_01 (C_Item)
 
 INSTANCE ItMw_Stahlhacke(C_Item) 
 {	
-	name 				=	"Stahlhacke";
+	name 				=	"stalowy trzpien";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -52,7 +52,7 @@ INSTANCE ItMw_Stahlhacke(C_Item)
 
 INSTANCE ItMw_Zwergenhacke (C_Item) 
 {	
-	name 				=	"Spitzhacke der Minenzwerge";
+	name 				=	"pickaxe min - kamieniolomów";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE | ITEM_NSPLIT;
@@ -79,7 +79,7 @@ INSTANCE ItMw_Zwergenhacke (C_Item)
 
 INSTANCE ItMw_2H_Eminem_Goldschwert_01 (C_Item)
 {
-	name 				=	"Vergoldetes Schwert";
+	name 				=	"Miecz posypany zlotem";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -107,7 +107,7 @@ INSTANCE ItMw_2H_Eminem_Goldschwert_01 (C_Item)
 };
 INSTANCE ItMw_2H_Eminem_Goldschwert_01_Geschaerft (C_Item)
 {
-	name 				=	"Vergoldetes Schwert (geschärft)";
+	name 				=	"Miecz pokryty zlotem (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -136,7 +136,7 @@ INSTANCE ItMw_2H_Eminem_Goldschwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_2H_Eminem_Goldschwert_01_Erol (C_Item)
 {
-	name 				=	"Erols vergoldetes Schwert";
+	name 				=	"Zloty miecz posypany zlotem Erol";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -167,7 +167,7 @@ INSTANCE ItMw_2H_Eminem_Goldschwert_01_Erol (C_Item)
 
 INSTANCE ItMW_Sense_01 (C_Item)
 {	
-	name 				=	"Sense";  
+	name 				=	"kosa";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -192,7 +192,7 @@ INSTANCE ItMW_Sense_01 (C_Item)
 };
 INSTANCE ItMW_Sense_01_Geschaerft (C_Item)
 {	
-	name 				=	"Sense (geschärft)";  
+	name 				=	"kosa (naostrzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -220,7 +220,7 @@ INSTANCE ItMW_Sense_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_Zweihaender (C_Item)
 {
-	name 				=	"Zweihänder";
+	name 				=	"osoba dwureczna";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -248,7 +248,7 @@ INSTANCE ItMw_Zweihaender (C_Item)
 };
 INSTANCE ItMw_Zweihaender_Geschaerft (C_Item)
 {
-	name 				=	"Zweihänder (geschärft)";
+	name 				=	"Dwuosobowa (ostrzona)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -279,7 +279,7 @@ INSTANCE ItMw_Zweihaender_Geschaerft (C_Item)
 
 INSTANCE ItMw_Sturmbringer (C_Item)
 {	
-	name 				=	"Sturmbringer";
+	name 				=	"zapasnik burzowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -306,7 +306,7 @@ INSTANCE ItMw_Sturmbringer (C_Item)
 };
 INSTANCE ItMw_Sturmbringer_Geschaerft (C_Item)
 {	
-	name 				=	"Sturmbringer (geschärft)";
+	name 				=	"Strzemionka (ostre ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -336,7 +336,7 @@ INSTANCE ItMw_Sturmbringer_Geschaerft (C_Item)
 
 INSTANCE ItMw_Todbringer (C_Item)
 {	
-	name 				=	"Todbringer";
+	name 				=	"smiertelnik";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -363,7 +363,7 @@ INSTANCE ItMw_Todbringer (C_Item)
 };
 INSTANCE ItMw_Todbringer_Geschaerft (C_Item)
 {	
-	name 				=	"Todbringer (geschärft)";
+	name 				=	"Smierc czlowieka (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -393,7 +393,7 @@ INSTANCE ItMw_Todbringer_Geschaerft (C_Item)
 
 INSTANCE ItMw_Schlachtklinge (C_Item)
 {	
-	name 				=	"Schlachtklinge";
+	name 				=	"brzeszczot";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -420,7 +420,7 @@ INSTANCE ItMw_Schlachtklinge (C_Item)
 };
 INSTANCE ItMw_Schlachtklinge_Geschaerft (C_Item)
 {	
-	name 				=	"Schlachtklinge (geschärft)";
+	name 				=	"Ostrze rzeznicze (wyostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -450,7 +450,7 @@ INSTANCE ItMw_Schlachtklinge_Geschaerft (C_Item)
 
 INSTANCE ItMw_HeavyZweihaender (C_Item)
 {	
-	name 				=	"Schwerer Zweihänder";
+	name 				=	"Ciezki, dwurzedowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -477,7 +477,7 @@ INSTANCE ItMw_HeavyZweihaender (C_Item)
 };
 INSTANCE ItMw_HeavyZweihaender_Geschaerft (C_Item)
 {	
-	name 				=	"Schwerer Zweihänder (geschärft)";
+	name 				=	"Ciezka, dwureczna (utwardzona)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Naim_Hi (C_INFO)
 	information	= Info_Mod_Naim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen der Blutkelche besorgt.";
+	description	= "Dostalem jeden z kubków na krew.";
 };
 
 FUNC INT Info_Mod_Naim_Hi_Condition()
@@ -19,22 +19,22 @@ FUNC INT Info_Mod_Naim_Hi_Condition()
 
 FUNC VOID Info_Mod_Naim_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_00"); //Ich habe einen der Blutkelche besorgt.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_00"); //Dostalem jeden z kubków na krew.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_Richter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_01"); //Saubere Arbeit, Bursche. Wir hörten, du hast bereits den ersten Kelch gebracht.
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_02"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_03"); //Du wirst es weit bringen, wenn du so weiter machst. Ich ernennen dich hiermit zum 1. Anwärter. Hier, deine Rüstung.
-	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_04"); //Besten Dank, hoher Rat.
+	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_01"); //Lagodna praca, chlopak. Slyszelismy, ze juz przyniósles pierwszy puchar.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_02"); //Tak wlasnie jest.
+	AI_Output(self, hero, "Info_Mod_Naim_Hi_13_03"); //Jesli nadal bedziesz to robic, pójdziesz daleko. Niniejszym oswiadczam, ze jest pan pierwszy. Kandydat. Oto Twoja zbroja.
+	AI_Output(hero, self, "Info_Mod_Naim_Hi_15_04"); //Dziekuje bardzo, bardzo dobrej radzie.
 
 	if (Mod_ASS_Krieger == 1)
 	{
 		CreateInvItems	(hero, ItAr_Assassine_01, 1);
 
-		B_ShowGivenThings	("Assassinenrüstung erhalten");
+		B_ShowGivenThings	("Zbroja zabójcza otrzymana");
 
-		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_05"); //Nun melde dich bei Azhar. Er hat wohl ein Problem.
+		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_05"); //Teraz zglos sie do Azhara. Mysle, ze ma klopoty.
 
 		B_SetTopicStatus	(TOPIC_MOD_ASS_KRIEGER, LOG_SUCCESS);
 	}
@@ -42,9 +42,9 @@ FUNC VOID Info_Mod_Naim_Hi_Info()
 	{
 		CreateInvItems	(hero, ItAr_Assassine_02, 1);
 
-		B_ShowGivenThings	("Assassinenrobe erhalten");
+		B_ShowGivenThings	("Otrzymana szata zabójcy");
 
-		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_06"); //Nun melde dich bei Kais. Er hat wohl ein Problem.
+		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_06"); //Teraz zglos sie do Kais. Mysle, ze ma klopoty.
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_BLUTKELCH, LOG_SUCCESS);
@@ -72,11 +72,11 @@ FUNC INT Info_Mod_Naim_Comeback_Condition()
 
 FUNC VOID Info_Mod_Naim_Comeback_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_00"); //Wie ich höre, hast du Erstaunliches geleistet für die Gemeinschaft.
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_01"); //Wenn es uns gelingt, auf's Festland zurückzukehren, wirst du dann mitkommen? Ich würde dich in den Rat berufen.
-	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_02"); //Ein verlockendes Angebot. Sicher werde ich irgendwann in die Heimat zurückkehren.
-	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_03"); //Aber vorerst habe ich noch zu tun auf Khorinis. Danke, hoher Rat.
-	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_04"); //Deine Entscheidung, Magier. Dann entlasse ich dich hiermit aus den Diensten der Assassinen. Geh deiner Wege.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_00"); //Slysze, ze zrobiles dla spolecznosci niesamowite rzeczy.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_01"); //Jesli uda nam sie wrócic na kontynent, czy przyjedziecie z nami? Wsadzilem cie do rady.
+	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_02"); //Atrakcyjna oferta. Z pewnoscia wróce kiedys do ojczyzny.
+	AI_Output(hero, self, "Info_Mod_Naim_Comeback_15_03"); //Ale na razie mam jeszcze prace do wykonania nad khorynami. Dziekuje, dobra rada.
+	AI_Output(self, hero, "Info_Mod_Naim_Comeback_13_04"); //Twój telefon, magik. Nastepnie niniejszym zwalniam Pana/Pania ze sluzby zabójców. Idz wlasna droga.
 
 	B_GivePlayerXP	(2000);
 
@@ -107,10 +107,10 @@ FUNC INT Info_Mod_Naim_GotoAzhar_Condition()
 
 FUNC VOID Info_Mod_Naim_GotoAzhar_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_00"); //Hatte ich dir nicht gesagt, du sollst dich bei Azhar melden?
-	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_01"); //Schon. Ich war auch bei ihm, aber er wollte nichts von mir.
-	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_02"); //Jetzt schon. Scheint wichtig zu sein.
-	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_03"); //Ich eile ...
+	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_00"); //Czy nie powiedzialem wam, zebyscie zglosili sie do Azhara?
+	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_01"); //Tak jest. Ja tez bylem z nim, ale on nie chcial ode mnie niczego.
+	AI_Output(self, hero, "Info_Mod_Naim_GotoAzhar_13_02"); //Teraz to robie. Sprawy wazne.
+	AI_Output(hero, self, "Info_Mod_Naim_GotoAzhar_15_03"); //Spiesze sie....
 };
 
 INSTANCE Info_Mod_Naim_NachSchlacht (C_INFO)
@@ -133,8 +133,8 @@ FUNC INT Info_Mod_Naim_NachSchlacht_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht_13_00"); //(keucht) Schnell, ich brauche die Kelche. Sonst überleb ich das nicht.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht_15_01"); //Halte durch. Ich beeile mich.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht_13_00"); //Pospiesznie, potrzebuje kielichów. W przeciwnym razie nie przezyje.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht_15_01"); //Zawiesic sie tam. Spiesze sie.
 
 	Mod_7146_ASS_Mustafa_NW.aivar[AIV_Partymember] = FALSE;
 	Mod_7147_ASS_Naim_NW.aivar[AIV_Partymember] = FALSE;
@@ -185,7 +185,7 @@ INSTANCE Info_Mod_Naim_NachSchlacht2 (C_INFO)
 	information	= Info_Mod_Naim_NachSchlacht2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin zurück.";
+	description	= "Wracam.";
 };
 
 FUNC INT Info_Mod_Naim_NachSchlacht2_Condition()
@@ -199,12 +199,12 @@ FUNC INT Info_Mod_Naim_NachSchlacht2_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht2_15_00"); //Ich bin zurück.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_01"); //Endlich. Gib mir einen Kelch. Schnell.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht2_15_00"); //Wracam.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_01"); //Wreszcie. Daj mi filizanke. Szybko.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_Richter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_02"); //Und einen für Mustafa. Beeil dich.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht2_13_02"); //Jeden dla Mustafy. Chodz, spiesz sie.
 
 	B_GivePlayerXP	(2000);
 
@@ -221,7 +221,7 @@ INSTANCE Info_Mod_Naim_NachSchlacht3 (C_INFO)
 	information	= Info_Mod_Naim_NachSchlacht3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dir geht es gut?";
+	description	= "Masz racje?";
 };
 
 FUNC INT Info_Mod_Naim_NachSchlacht3_Condition()
@@ -235,24 +235,24 @@ FUNC INT Info_Mod_Naim_NachSchlacht3_Condition()
 
 FUNC VOID Info_Mod_Naim_NachSchlacht3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_00"); //Dir geht es gut?
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_01"); //Wie du siehst. Die Blutkelche sind unsere Rettung. Sie enthalten das Leben des getöteten vorherigen Besitzers.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_02"); //Wie ich sehe, ist Mustafa auch wieder auf den Beinen.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_03"); //Gib mir den 3. Kelch. Ich muss mir überlegen, wen ich noch ins Leben zurückhole.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_00"); //Masz racje?
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_01"); //Jak widac. Kubki krwi sa naszym zbawieniem. Zawieraja one zycie zabitego poprzedniego wlasciciela.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_02"); //Widze, jak na nogach Mustafy widze plecy Mustafy.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_03"); //Daj mi trzy. kielich. Musze sie zorientowac, kto jeszcze wróci do zycia.
 
 	B_GiveInvItems	(hero, self, ItMi_Bloodcup_MIS, 1);
 
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_04"); //Und was kann ich machen?
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_05"); //Was ist eigentlich mit unseren Gaunern?
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_06"); //Die stehen alle vor dem Lager und wissen nicht, was sie tun sollen.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_07"); //Dann schick den Anführer zu mir.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_08"); //Noch was. Du bist in der Tat ein sehr guter Krieger. Einer der Besten, die ich kenne.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_09"); //Aber ich hab den Eindruck, dass du nicht so recht zu uns passt.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_10"); //Wenn du meinst ...
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_11"); //Dann stelle ich dir frei, unsere Gilde zu verlassen. Wobei ich davon ausgehe, dass du uns nicht auch noch verrätst.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_12"); //Verstehte. Ich schicke Shakir zu dir. Und ich hab noch andere Aufgaben.
-	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_13"); //Moment. Hier, eine Belohnung für deine Hilfen.
-	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_14"); //Danke, hoher Rat.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_04"); //A co moge zrobic?
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_05"); //A co z naszymi oszustami, i tak?
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_06"); //Wszyscy stoja przed obozem i nie wiedza, co robic.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_07"); //Nastepnie przeslij do mnie przywódce.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_08"); //Jeszcze jedna rzecz. Jest pan naprawde bardzo dobrym wojownikiem. Jeden z najlepszych.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_09"); //Ale mam wrazenie, ze nie pasuje pan do nas.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_10"); //Jesli masz na mysli....
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_11"); //Wtedy uwolnie cie, zebys wyszedl z naszej gildii. Które zakladam, ze nie dadza nam Panstwo.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_12"); //Zrozumienie. Wyslemy Ci Shakir. I mam jeszcze inne rzeczy do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Naim_NachSchlacht3_13_13"); //Trzymac wlaczony, trzymac wcisniety. Tutaj nagroda za pomoc.
+	AI_Output(hero, self, "Info_Mod_Naim_NachSchlacht3_15_14"); //Dziekuje, dobra rada.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 2000);
 

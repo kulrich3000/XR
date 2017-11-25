@@ -17,7 +17,7 @@ FUNC INT DIA_PAL_9_EXIT_Condition()
 
 FUNC VOID DIA_PAL_9_EXIT_Info()
 {	
-	AI_Output(self, hero, "DIA_PAL_9_EXIT_09_00"); //Möge Innos Feuer uns zum Sieg führen!
+	AI_Output(self, hero, "DIA_PAL_9_EXIT_09_00"); //Niech ogien Inno doprowadzi nas do zwyciestwa!
 
 	AI_StopProcessInfos	(self);
 };
@@ -31,7 +31,7 @@ INSTANCE DIA_PAL_9_JOIN(C_INFO)
 	condition	= DIA_PAL_9_JOIN_Condition;
 	information	= DIA_PAL_9_JOIN_Info;
 	permanent	= TRUE;
-	description = "Wie kann ich Paladin werden?";
+	description = "Jak moge zostac Paladinem?";
 };                       
 
 FUNC INT DIA_PAL_9_JOIN_Condition()
@@ -44,9 +44,9 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_9_JOIN_15_00"); //Wie kann ich Paladin werden?
-	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_01"); //Diejenigen, die sich im Dienste Innos' oder des Königs würdig erweisen, werden erwählt!
-	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_02"); //Das heißt im Klartext: Nur die Besten werden genommen. Aber davon bist DU noch sehr weit entfernt, mein Junge!
+	AI_Output (hero, self, "DIA_PAL_9_JOIN_15_00"); //Jak moge zostac Paladinem?
+	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_01"); //Wybrani sa ci, którzy okaza sie godni poslugiwania Inno lub królowi!
+	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_02"); //Innymi slowy, brane sa tylko najlepsze. Ale Ty jestes jeszcze daleko od tego, synu!
 };
 
 // *************************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_PAL_9_PEOPLE(C_INFO)
 	condition	= DIA_PAL_9_PEOPLE_Condition;
 	information	= DIA_PAL_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Kommando?";
+	description = "Kto tu dowodzi?";
 };                       
 
 FUNC INT DIA_PAL_9_PEOPLE_Condition()
@@ -71,10 +71,10 @@ FUNC INT DIA_PAL_9_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_9_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_00"); //Wer hat hier das Kommando?
+	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_00"); //Kto tu dowodzi?
 	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
-	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_02"); //Und?
-	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_03"); //Und sonst niemand. Lord Hagen ist der Oberbefehlshaber über die ganze Insel.
+	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_02"); //A co?
+	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_03"); //I nikt inny. Lord Hagen jest dowódca na czele calej wyspy.
 };
 
 // *************************************************************************
@@ -86,7 +86,7 @@ INSTANCE DIA_PAL_9_LOCATION(C_INFO)
 	condition	= DIA_PAL_9_LOCATION_Condition;
 	information	= DIA_PAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Warum seid ihr Paladine nach Khorinis gekommen?";
+	description = "Dlaczego przyjechales Paladynów do Khorinis?";
 };                       
 
 FUNC INT DIA_PAL_9_LOCATION_Condition()
@@ -99,8 +99,8 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_9_LOCATION_15_00"); //Warum seid ihr Paladine nach Khorinis gekommen?
-	AI_Output (self, hero, "DIA_PAL_9_LOCATION_09_01"); //Das geht dich nichts an, Bursche! Für dich muss es reichen zu wissen, dass wir im Dienste Innos' und des Königs handeln!
+	AI_Output (hero, self, "DIA_PAL_9_LOCATION_15_00"); //Dlaczego przyjechales Paladynów do Khorinis?
+	AI_Output (self, hero, "DIA_PAL_9_LOCATION_09_01"); //Zadna Twoja firma, chlopak! Wystarczy wiedziec, ze sluzymy Innosowi i Królowi!
 };
 
 INSTANCE Info_Mod_PAL_9_Pickpocket (C_INFO)

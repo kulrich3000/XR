@@ -15,15 +15,15 @@ FUNC INT Info_Mod_Brendan_Hi_Condition()
 
 FUNC VOID Info_Mod_Brendan_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_00"); //Ich danke dir! Du hast mir mein Leben gerettet. Einen Tag länger und ich wäre all zu gern vom Turm gesprungen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_01"); //Aber wo bleiben meine Manieren. Mein Name ist Brendan und ich stehe in deiner schuld.
-	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_02"); //Scheint eine ziemlich gefährliche Gegend zu sein. Das waren nicht wenige Wölfe.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_03"); //Ja, stimmt, und am Pass scheint es auch nicht besser zu sein. Nachts kann man die Feuer der Orks unten im Tal vor dem Pass sehen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_04"); //Wir dachten die Orks aus dem Gebirge würden nur vereinzelt auftreten, aber mittlerweile sind sie am Pass überall anzutreffen.
-	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_05"); //Wir müssen den Kommander so bald wie möglich darüber informieren.
-	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_06"); //Dann lass uns dorthin aufbrechen, bevor noch mehr Wölfe oder Orks hier herkommen.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_00"); //Dziekuje, dziekuje! Ocaliles moje zycie. Pewnego dnia dluzej i uwielbialem skoczyc z wiezy.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_01"); //Gdzie sa moje maniery? Nazywam sie Brendan i jestem wam wdzieczny.
+	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_02"); //Wyglada jak dosc niebezpieczny obszar. Nie byly to tylko wilki.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_03"); //Tak, to prawda i podanie nie wydaje sie lepsze. Noca w dolinie przed przelecza widac ogien orków w dól.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_04"); //Myslelismy, ze orki z gór pojawia sie tylko sporadycznie, ale teraz mozna je znalezc wszedzie na przeleczy.
+	AI_Output(self, hero, "Info_Mod_Brendan_Hi_06_05"); //Musimy jak najszybciej poinformowac o tym dowódce.
+	AI_Output(hero, self, "Info_Mod_Brendan_Hi_15_06"); //Pózniej udajmy sie tam zanim wiecej wilków lub orków tu dotrze.
 
-	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Am Turm war nur noch Brendan am Leben. Ich muss ihn schleunigst zum Kommander zurückbringen.");
+	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Tylko Brendan wciaz zyl na wiezy. Musze jak najszybciej zawrócic go do dowództwa.");
 
 	B_StartOtherRoutine	(self, "FOLLOW");
 	
@@ -50,14 +50,14 @@ FUNC INT Info_Mod_Brendan_RaueSchneide_Condition()
 
 FUNC VOID Info_Mod_Brendan_RaueSchneide_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_00"); //Ich bleibe hier.
+	AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_00"); //Zostaje tutaj.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_01"); //Wenn du etwas über Einhand- oder Zweihandkampf lernen willst, komm zu mir. Ich halte Wache im Aussichtsturm der Kaserne.
+		AI_Output(self, hero, "Info_Mod_Brendan_RaueSchneide_06_01"); //Jesli chcesz sie nauczyc o walce jedna lub dwiema rekami, przyjdz do mnie. Staje na strazy w wiezy strazniczej baraków.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_EISGEBIET, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_EISGEBIET, "Brendan kann mir den Umgang mit Ein- und Zweihändern zeigen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_EISGEBIET, "Brendan moze pokazac mi, jak radzic sobie z ludzmi jedna i dwiema rekami.");
 	};
 
 	AI_StopProcessInfos	(self);
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Brendan_Lernen (C_INFO)
 	information	= Info_Mod_Brendan_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Brendan_Lernen_Condition()
@@ -89,7 +89,7 @@ FUNC INT Info_Mod_Brendan_Lernen_Condition()
 
 FUNC VOID Info_Mod_Brendan_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brendan_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Brendan_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Brendan_Lernen);
 

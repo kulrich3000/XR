@@ -1,7 +1,7 @@
 instance GardeInnos_4098_Danae (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Danae";
+	name 		=		"Danowie";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_NONE;
 	level 		=		80;

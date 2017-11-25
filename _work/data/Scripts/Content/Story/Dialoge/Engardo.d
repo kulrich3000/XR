@@ -18,33 +18,33 @@ FUNC INT Info_Mod_Engardo_Hi_Condition()
 
 FUNC VOID Info_Mod_Engardo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_00"); //Man, du hast gezeigt, dass du zuverlässig bist. Ich hätte da eine Aufgabe für dich, bei der du dir die Beine vertreten kannst, und Gold, Erz und Sumpfkraut dabei verdienst.
-	AI_Output(hero, self, "Info_Mod_Engardo_Hi_15_01"); //Hört sich gut an.
-	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_02"); //Du weißt vielleicht schon, dass einige der Wasserkrieger ehemalige Söldner sind. Einer davon ist Vanas.
-	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_03"); //Du müsstest ihm nur etwas vorbeibringen und das, was er dir gibt, zu mir bringen.
+	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_00"); //Czlowiek, pokazales, ze jestes niezawodny. Mam dla Ciebie prace do wykonania, gdzie mozesz rozciagnac nogi i zarobic zloto, rude i ambrozje.
+	AI_Output(hero, self, "Info_Mod_Engardo_Hi_15_01"); //Dobrze mi brzmi.
+	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_02"); //Byc moze wiesz juz, ze niektórzy z Wojowników Wodnych sa dawnymi najemnikami. Jednym z nich jest Vanas.
+	AI_Output(self, hero, "Info_Mod_Engardo_Hi_13_03"); //Musisz tylko przyniesc mu cos do niego i przyniesc to, co on ci daje.
 
 	B_StartOtherRoutine	(self, "START");
 
 	Info_ClearChoices	(Info_Mod_Engardo_Hi);
 
-	Info_AddChoice	(Info_Mod_Engardo_Hi, "Ne, ist mir ein zu weiter Weg.", Info_Mod_Engardo_Hi_B);
-	Info_AddChoice	(Info_Mod_Engardo_Hi, "Klar, mach ich doch mit links.", Info_Mod_Engardo_Hi_A);
+	Info_AddChoice	(Info_Mod_Engardo_Hi, "Nah, to dluga droga do przebycia.", Info_Mod_Engardo_Hi_B);
+	Info_AddChoice	(Info_Mod_Engardo_Hi, "Z pewnoscia, ja pójde w lewo.", Info_Mod_Engardo_Hi_A);
 };
 
 FUNC VOID Info_Mod_Engardo_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Hi_B_15_00"); //Ne, ist mir ein zu weiter Weg.
-	AI_Output(self, hero, "Info_Mod_Engardo_Hi_B_13_01"); //Schade. Sehr enttäuschend. Muss ich jemand anderen dafür finden.
+	AI_Output(hero, self, "Info_Mod_Engardo_Hi_B_15_00"); //Nah, to dluga droga do przebycia.
+	AI_Output(self, hero, "Info_Mod_Engardo_Hi_B_13_01"); //Zbyt zle. Bardzo rozczarowujace. Znalazlam kogos, kto by to zrobil.
 	
 	Info_ClearChoices	(Info_Mod_Engardo_Hi);
 };
 
 FUNC VOID Info_Mod_Engardo_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Hi_A_15_00"); //Klar, mach ich doch mit links.
-	AI_Output(self, hero, "Info_Mod_Engardo_Hi_A_13_01"); //Sehr gut. Hier hast du je zwölf Erbrocken und Sumpfkrautstängel für Vanas.
+	AI_Output(hero, self, "Info_Mod_Engardo_Hi_A_15_00"); //Z pewnoscia, ja pójde w lewo.
+	AI_Output(self, hero, "Info_Mod_Engardo_Hi_A_13_01"); //Bardzo dobry. Tutaj masz dwanascie kawalków dziedzicznych ziól i dwanascie lodyg bagiennych dla Vanasa.
 
-	B_ShowGivenThings	("12 Erzbrocken und 12 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("12 grudek rudy rudy i 12 lodyg zakonserwowanych ziól bagiennych");
 
 	CreateInvItems	(hero, ItMi_Nugget, 12);
 	CreateInvItems	(hero, ItMi_Joint, 12);
@@ -53,7 +53,7 @@ FUNC VOID Info_Mod_Engardo_Hi_A()
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_ENGARDO, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_ENGARDO, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Ich soll je zwölf Erbrocken und Sumpfkrautstängel zu dem Wasserkrieger Vanas bringen und die Bezahlung dann zu Engardo ins Minental befördern.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Do wodnego wojownika Vanasa mam przywiezc po dwanascie lodyg i bagnistych lodyg, a nastepnie przewiezc je do Engardo w Minentalu.");
 	
 	Info_ClearChoices	(Info_Mod_Engardo_Hi);
 };
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Engardo_Vanas (C_INFO)
 	information	= Info_Mod_Engardo_Vanas_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bei Vanas. Er hatte jedoch nicht alles dabei.";
+	description	= "Bylem z Vanasem. Ale on nie mial wszystkiego.";
 };
 
 FUNC INT Info_Mod_Engardo_Vanas_Condition()
@@ -84,21 +84,21 @@ FUNC INT Info_Mod_Engardo_Vanas_Condition()
 
 FUNC VOID Info_Mod_Engardo_Vanas_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_15_00"); //Ich war bei Vanas. Er hatte jedoch nicht alles dabei.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_15_00"); //Bylem z Vanasem. Ale on nie mial wszystkiego.
 
 	if (Mod_SLD_Engardo == 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Engardo_Vanas_15_01"); //Er gab mir einen Teil des Erzes und Sumpfkrautes zurück.
+		AI_Output(hero, self, "Info_Mod_Engardo_Vanas_15_01"); //Oddal mi czesc rudy i bagna.
 
-		B_ShowGivenThings	("Paket, 4 Erz und 4 Stängel Sumpfkraut gegeben");
+		B_ShowGivenThings	("Opakowanie, 4 rudy i 4 lodygi kapusty bagiennej podanej");
 
 		Npc_RemoveInvItems	(hero, ItMi_VanasPaket, 1);
 		Npc_RemoveInvItems	(hero, ItMi_Nugget, 4);
 		Npc_RemoveInvItems	(hero, ItMi_Joint, 4);
 
-		AI_Output(self, hero, "Info_Mod_Engardo_Vanas_13_02"); //Lass sehen ... Naja, ok, immerhin etwas. Hier hast du vier Sumpfkrautstängel und drei Erz zur Belohnung.
+		AI_Output(self, hero, "Info_Mod_Engardo_Vanas_13_02"); //Pozwólcie mi widziec.... No cóz, co najmniej cos w porzadku. Tutaj masz cztery bagienne lodygi i trzy rudy jako nagrode.
 
-		B_ShowGivenThings	("3 Erz und 4 Stängel Sumpfkraut erhalten");
+		B_ShowGivenThings	("3 ruda i 4 lodygi chwastu konserwowanego na mokradlo");
 
 		CreateInvItems	(hero, ItMi_Nugget, 3);
 		CreateInvItems	(hero, ItMi_Joint, 4);
@@ -111,31 +111,31 @@ FUNC VOID Info_Mod_Engardo_Vanas_Info()
 	{
 		B_GiveInvItems	(hero, self, ItMi_VanasPaket, 1);
 
-		AI_Output(self, hero, "Info_Mod_Engardo_Vanas_13_03"); //Lass sehen ... Und was bekomme ich zum Ausgleich?
+		AI_Output(self, hero, "Info_Mod_Engardo_Vanas_13_03"); //Pozwólcie mi widziec.... A co dostaje w zamian?
 
 		Info_ClearChoices	(Info_Mod_Engardo_Vanas);
 
-		Info_AddChoice	(Info_Mod_Engardo_Vanas, "Gar nichts.", Info_Mod_Engardo_Vanas_F);
+		Info_AddChoice	(Info_Mod_Engardo_Vanas, "Nic nie ma nic.", Info_Mod_Engardo_Vanas_F);
 
 		if (Npc_HasItems(hero, ItFo_Beer) >= 14)
 		{
-			Info_AddChoice	(Info_Mod_Engardo_Vanas, "14 Bier.", Info_Mod_Engardo_Vanas_E);
+			Info_AddChoice	(Info_Mod_Engardo_Vanas, "Czternascie piw.", Info_Mod_Engardo_Vanas_E);
 		};
 		if (Npc_HasItems(hero, ItFo_Cheese) >= 14)
 		{
-			Info_AddChoice	(Info_Mod_Engardo_Vanas, "14 Stücke Käse.", Info_Mod_Engardo_Vanas_D);
+			Info_AddChoice	(Info_Mod_Engardo_Vanas, "14 kawalków sera.", Info_Mod_Engardo_Vanas_D);
 		};
 		if (Npc_HasItems(hero, ItMi_Gold) >= 250)
 		{
-			Info_AddChoice	(Info_Mod_Engardo_Vanas, "250 Goldmünzen.", Info_Mod_Engardo_Vanas_C);
+			Info_AddChoice	(Info_Mod_Engardo_Vanas, "250 zlotych monet.", Info_Mod_Engardo_Vanas_C);
 		};
 		if (Npc_HasItems(hero, ItMi_Joint) >= 12)
 		{
-			Info_AddChoice	(Info_Mod_Engardo_Vanas, "Zwölf Stängel Sumpfkraut.", Info_Mod_Engardo_Vanas_B);
+			Info_AddChoice	(Info_Mod_Engardo_Vanas, "Dwanascie lodyg bagna.", Info_Mod_Engardo_Vanas_B);
 		};
 		if (Npc_HasItems(hero, ItMi_Nugget) >= 6)
 		{
-			Info_AddChoice	(Info_Mod_Engardo_Vanas, "Sechs Erz.", Info_Mod_Engardo_Vanas_A);
+			Info_AddChoice	(Info_Mod_Engardo_Vanas, "Szesc rudy.", Info_Mod_Engardo_Vanas_A);
 		};
 	};
 
@@ -144,9 +144,9 @@ FUNC VOID Info_Mod_Engardo_Vanas_Info()
 
 FUNC VOID Info_Mod_Engardo_Vanas_G()
 {
-	AI_Output(self, hero, "Info_Mod_Engardo_Vanas_G_13_00"); //Naja, ist ganz in Ordnung. Hier hast du fünf Sumpfkrautstängel und vier Erz zur Belohnung.
+	AI_Output(self, hero, "Info_Mod_Engardo_Vanas_G_13_00"); //No cóz, to wszystko dobrze. Tutaj masz piec bagiennych lodyg i cztery rudy jako nagrode.
 
-	B_ShowGivenThings	("4 Erz und 5 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("4 ruda i 5 lodyg chwastu konserwowanego na mokradlo");
 
 	CreateInvItems	(hero, ItMi_Nugget, 4);
 	CreateInvItems	(hero, ItMi_Joint, 5);
@@ -160,8 +160,8 @@ FUNC VOID Info_Mod_Engardo_Vanas_G()
 
 FUNC VOID Info_Mod_Engardo_Vanas_F()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_F_15_00"); //Gar nichts.
-	AI_Output(self, hero, "Info_Mod_Engardo_Vanas_F_13_01"); //Was?! Wegen dir Tölpel habe ich ein Verlustgeschäft gemacht. Geh mir aus den Augen!
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_F_15_00"); //Nic nie ma nic.
+	AI_Output(self, hero, "Info_Mod_Engardo_Vanas_F_13_01"); //Co? Zrobilem targowanie sie o straty z powodu ciebie, zderzaków. Wychodzic z moich oczu!
 
 	B_GivePlayerXP	(200);
 
@@ -170,7 +170,7 @@ FUNC VOID Info_Mod_Engardo_Vanas_F()
 
 FUNC VOID Info_Mod_Engardo_Vanas_E()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_E_15_00"); //14 Bier.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_E_15_00"); //Czternascie piw.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 14);
 	
@@ -179,7 +179,7 @@ FUNC VOID Info_Mod_Engardo_Vanas_E()
 
 FUNC VOID Info_Mod_Engardo_Vanas_D()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_D_15_00"); //14 Stücke Käse.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_D_15_00"); //14 kawalków sera.
 
 	B_GiveInvItems	(hero, self, ItFo_Cheese, 14);
 
@@ -188,7 +188,7 @@ FUNC VOID Info_Mod_Engardo_Vanas_D()
 
 FUNC VOID Info_Mod_Engardo_Vanas_C()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_C_15_00"); //250 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_C_15_00"); //250 zlotych monet.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
@@ -197,7 +197,7 @@ FUNC VOID Info_Mod_Engardo_Vanas_C()
 
 FUNC VOID Info_Mod_Engardo_Vanas_B()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_B_15_00"); //Zwölf Stängel Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_B_15_00"); //Dwanascie lodyg bagna.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 12);
 
@@ -206,7 +206,7 @@ FUNC VOID Info_Mod_Engardo_Vanas_B()
 
 FUNC VOID Info_Mod_Engardo_Vanas_A()
 {
-	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_A_15_00"); //Sechs Erz.
+	AI_Output(hero, self, "Info_Mod_Engardo_Vanas_A_15_00"); //Szesc rudy.
 
 	B_GiveInvItems	(hero, self, ItMi_Nugget, 6);
 

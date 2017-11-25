@@ -15,11 +15,11 @@ FUNC INT Info_Mod_UntoterNovize_01_Hi_Condition()
 
 FUNC VOID Info_Mod_UntoterNovize_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_UntoterNovize_01_Hi_13_00"); //Du kommst zu spät! Innos' Garde wandelt wieder unter den Lebenden!
-	AI_Output(hero, self, "Info_Mod_UntoterNovize_01_Hi_15_01"); //Was meinst du damit, du dreckige Ausgeburt der Hölle?
-	AI_Output(self, hero, "Info_Mod_UntoterNovize_01_Hi_13_02"); //Das Amulett ist zerbrochen, und die Gardisten sind frei, um Beliar zu vernichten. (lacht) Du wirst nichts machen können! Und nun stirb!
+	AI_Output(self, hero, "Info_Mod_UntoterNovize_01_Hi_13_00"); //Jestes za pózno! Straznik Innos znowu idzie miedzy zyjacymi!
+	AI_Output(hero, self, "Info_Mod_UntoterNovize_01_Hi_15_01"); //Co masz na mysli, brudny tarlo piekla?
+	AI_Output(self, hero, "Info_Mod_UntoterNovize_01_Hi_13_02"); //Amulet jest zepsuty, a straznicy moga swobodnie zniszczyc Beliara. (smiech) Nie bedziesz w stanie nic zrobic! Teraz umrzec!
 
-	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Die Novizen sind untot! Sie haben ein Ritual abgehalten, als ich gekommen bin. Einer sagte mir, dass sie Innos' Garde befreit haben. Wer das wohl sein mag? Das Amulett ist jedenfalls zerbrochen. Ich sollte es zu Myxir bringen.");
+	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Nowicjusze sa nieumarli! Kiedy przyjechalem, odbyli rytual. Jeden z nich powiedzial mi, ze wyzwolili straz Innosów. Kto moze to byc? W kazdym razie amulet jest zepsuty. Powinienem ja zabrac do Myxiru.");
 
 	AI_StopProcessInfos	(self);
 

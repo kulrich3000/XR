@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Buff_Hi (C_INFO)
 	information	= Info_Mod_Buff_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Buff?";
+	description	= "Czy masz Buff?";
 };
 
 FUNC INT Info_Mod_Buff_Hi_Condition()
@@ -19,21 +19,21 @@ FUNC INT Info_Mod_Buff_Hi_Condition()
 
 FUNC VOID Info_Mod_Buff_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_00"); //Bist du Buff?
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_01"); //Ja, der bin ich. Was kann ein alter Mann wie ich es bin für dich tun?
-	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_02"); //Ich will raus aus diesem Tal.
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_03"); //(lacht laut) HAHAHA! Aus diesem Tal gibt es kein Entkommen.
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_04"); //Wir haben hier zwar einen Teleporter, aber der funktioniert nicht.
-	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_05"); //Wo ist der Teleporter?
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_06"); //In einer Höhle den Weg runter. Aber du findest dort nur Fleischwanzen.
-	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_07"); //Wir werden ja sehen.
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_08"); //Wenn du da bist, kannst du mir dann eine handvoll Dunkelpilze mitbringen?
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_09"); //Fünf sollten genügen. Ich will daraus eine Pilzsuppe machen.
-	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_10"); //Klar.
-	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_11"); //Vielen Dank. Meine Beine sind so schwach, dass ich das ganze Gerenne nicht mehr schaffe.
+	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_00"); //Czy masz Buff?
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_01"); //Tak, jestem nim. Co moze dla ciebie zrobic stary czlowiek taki jak ja?
+	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_02"); //Chce wyjsc z tej doliny.
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_03"); //(smieje sie glosno) HAHAHAHAHAHAHA! Z tej doliny nie ma ucieczki.
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_04"); //Mamy tutaj teleportera, ale to nie dziala.
+	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_05"); //Gdzie jest teleporter?
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_06"); //W jaskini w dól drogi. Ale znajdziesz tam tylko pluskwy miesne.
+	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_07"); //Zobaczymy to.
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_08"); //Jesli jestes tam, czy mozesz przyniesc mi garsc ciemnych grzybów?
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_09"); //Piec powinno to zrobic. Chce z niej zrobic zupe grzybowa.
+	AI_Output(hero, self, "Info_Mod_Buff_Hi_15_10"); //Pewne.
+	AI_Output(self, hero, "Info_Mod_Buff_Hi_06_11"); //Dziekuje bardzo. Moje nogi sa tak slabe, ze nie moge biegac w calosci.
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Es gibt in diesem Tal einen Teleporter! Den sollte ich mir mal ansehen. Er befindet sich in einer nahe gelegenen Höhle.");
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich soll dem alten Buff fünf Dunkelpilze mitbringen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "W tej dolinie jest teleporter! Powinienem to sprawdzic. Znajduje sie on w pobliskiej jaskini.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Dla starego Buffa mam przyniesc piec ciemnych grzybów.");
 };
 
 INSTANCE Info_Mod_Buff_Pilze (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Buff_Pilze (C_INFO)
 	information	= Info_Mod_Buff_Pilze_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Pilze gefunden.";
+	description	= "Znalazlem grzyby.";
 };
 
 FUNC INT Info_Mod_Buff_Pilze_Condition()
@@ -58,17 +58,17 @@ FUNC INT Info_Mod_Buff_Pilze_Condition()
 
 FUNC VOID Info_Mod_Buff_Pilze_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_Pilze_15_00"); //Ich habe die Pilze gefunden. Hier hast du sie.
+	AI_Output(hero, self, "Info_Mod_Buff_Pilze_15_00"); //Znalazlem grzyby. Tutaj je masz.
 
 	B_GiveInvItems	(hero, self, ItPl_Mushroom_01, 5);
 
-	AI_Output(self, hero, "Info_Mod_Buff_Pilze_06_01"); //Vielen Dank. Hier, nimm einen Teller Suppe.
+	AI_Output(self, hero, "Info_Mod_Buff_Pilze_06_01"); //Dziekuje bardzo. Tutaj zjesc troche zupy.
 
 	B_GiveInvItems	(self, hero, ItFo_Pilzsuppe, 1);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe Buff die Pilze gebracht.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Przynioslem Buffa pieczarki.");
 };
 
 INSTANCE Info_Mod_Buff_TeleportSockel (C_INFO)
@@ -79,7 +79,7 @@ INSTANCE Info_Mod_Buff_TeleportSockel (C_INFO)
 	information	= Info_Mod_Buff_TeleportSockel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Neben dem Teleporter ist ein Sockel. Den hast du nicht erwähnt.";
+	description	= "Obok teleportera znajduje sie postument. Nie wspomniales o tym.";
 };
 
 FUNC INT Info_Mod_Buff_TeleportSockel_Condition()
@@ -93,19 +93,19 @@ FUNC INT Info_Mod_Buff_TeleportSockel_Condition()
 
 FUNC VOID Info_Mod_Buff_TeleportSockel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_00"); //Neben dem Teleporter ist ein Sockel. Den hast du nicht erwähnt.
-	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_01"); //Spielt das denn eine Rolle?
-	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_02"); //Ja, ich habe einen Aufladestein bei mir. Der könnte passen.
-	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_03"); //Wieso hast du das nicht gleich gesagt? Endlich gibt es Hoffnung!
-	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_04"); //Hier, nimm diese magischen Samen.
+	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_00"); //Obok teleportera znajduje sie postument. Nie wspomniales o tym.
+	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_01"); //Czy ma to znaczenie?
+	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_02"); //Tak, mam przy sobie kamien ladowania. Móglby pasowac.
+	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_03"); //Dlaczego tak sie nie stalo? Wreszcie jest nadzieja!
+	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_04"); //Tutaj wez te magiczne nasiona.
 
 	B_GiveInvItems	(self, hero, ItMi_MagicSamen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_05"); //Streue sie einfach um den Sockel. Vielleicht hilft das.
-	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_06"); //Danke, ich versuche das Portal zu aktivieren.
-	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_07"); //Trödel nicht!
+	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_05"); //Wystarczy je posypac wokól podstawy. Moze to pomoze.
+	AI_Output(hero, self, "Info_Mod_Buff_TeleportSockel_15_06"); //Dziekuje, staram sie aktywowac portal.
+	AI_Output(self, hero, "Info_Mod_Buff_TeleportSockel_06_07"); //Nie spowalniac!
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe von Buff magische Samen bekommen, die ich um den Sockel streuen soll. Danach muss ich wohl den Aufladestein einsetzen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Otrzymalem magiczne nasiona z Buffa, które mam posypywac wokól podstawy. Potem bede musial uzyc kamienia doladowania.");
 };
 
 INSTANCE Info_Mod_Buff_EXIT (C_INFO)

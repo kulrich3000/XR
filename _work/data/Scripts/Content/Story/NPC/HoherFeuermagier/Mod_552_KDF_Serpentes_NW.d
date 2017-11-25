@@ -1,7 +1,7 @@
 INSTANCE Mod_552_KDF_Serpentes_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Serpentes";
+	name 		= "serpentyny";
 	guild 		= GIL_VLK;
 	id 		= 552;
 	voice 		= 10;

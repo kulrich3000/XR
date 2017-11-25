@@ -1,6 +1,6 @@
 INSTANCE ITAR_PAL_H_HELM(C_Item)
 {
-	name					=	"Paladinhelm";
+	name					=	"kask paladynowy";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -39,7 +39,7 @@ INSTANCE ITAR_PAL_H_HELM(C_Item)
 
 INSTANCE ITAR_Wollmuetze_Male (C_Item)
 {
-	name					=	"Wollmütze";
+	name					=	"czapka";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -78,7 +78,7 @@ INSTANCE ITAR_Wollmuetze_Male (C_Item)
 
 INSTANCE ITAR_Wollmuetze_Female (C_Item)
 {
-	name					=	"Wollmütze";
+	name					=	"czapka";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -117,7 +117,7 @@ INSTANCE ITAR_Wollmuetze_Female (C_Item)
 
 INSTANCE ITAR_AlterRitterhelm (C_Item)
 {
-	name					=	"Alter Ritterhelm";
+	name					=	"Stary kask rycerski";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -156,7 +156,7 @@ INSTANCE ITAR_AlterRitterhelm (C_Item)
 
 INSTANCE ITAR_DJG_H_Helm (C_Item)
 {
-	name					=	"Drachenjägerhelm";
+	name					=	"kask smokowy";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -195,7 +195,7 @@ INSTANCE ITAR_DJG_H_Helm (C_Item)
 
 INSTANCE ITAR_Kopftuch (C_Item)
 {
-	name					=	"Kopftuch";
+	name					=	"chusta";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -234,7 +234,7 @@ INSTANCE ITAR_Kopftuch (C_Item)
 
 INSTANCE ITAR_Piratenhut_L (C_Item)
 {
-	name					=	"Piratenhut";
+	name					=	"kapelusz piracki";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -273,7 +273,7 @@ INSTANCE ITAR_Piratenhut_L (C_Item)
 
 INSTANCE ITAR_Richterhut (C_Item)
 {
-	name					=	"Richterhut";
+	name					=	"kapelusz";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -312,7 +312,7 @@ INSTANCE ITAR_Richterhut (C_Item)
 
 INSTANCE ITAR_Schlachtenhelm (C_Item)
 {
-	name					=	"Schlachtenhelm";
+	name					=	"helm rzezny";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -351,7 +351,7 @@ INSTANCE ITAR_Schlachtenhelm (C_Item)
 
 INSTANCE ITAR_Bart (C_Item)
 {
-	name					=	"Bart";
+	name					=	"trzepaczka";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -393,7 +393,7 @@ INSTANCE ITAR_Bart (C_Item)
 
 INSTANCE WOLFSKOPF(C_Item)
 {
-	name					=	"Wolfskopf";
+	name					=	"wilk";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -432,7 +432,7 @@ INSTANCE WOLFSKOPF(C_Item)
 
 INSTANCE ITAR_SleeperMask(C_Item)
 {
-	name					=	"Schläfermaske";
+	name					=	"sypialna maska";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -484,7 +484,7 @@ FUNC VOID UnEquip_Sleepermask()
 
 INSTANCE ITAR_Piratenhut(C_Item)
 {
-	name					=	"Blackbarts' Piratenhut";
+	name					=	"Paski czarno-biale 'Piracki Hat";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -508,9 +508,9 @@ INSTANCE ITAR_Piratenhut(C_Item)
 
 	description				=	name;
 	
-	TEXT[1]		= "Stärkebonus: ";
+	TEXT[1]		= "Bonus skrobiowy: ";
 	COUNT[1]	= 6;
-	TEXT[2]		= "Geschicklichkeitsbonus: ";
+	TEXT[2]		= "Bonus umiejetnosci: ";
 	COUNT[2]	= 6;
 
 	TEXT[5]					=	NAME_Value;			
@@ -535,7 +535,7 @@ FUNC VOID UnEquip_Piratenhut()
 
 INSTANCE ItAr_RedHair (C_Item)
 {
-	name					=	"rotes Haar";
+	name					=	"czerwien";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -574,7 +574,7 @@ INSTANCE ItAr_RedHair (C_Item)
 
 INSTANCE ItAr_BoeserBlickAbwender (C_Item)
 {
-	name					=	"Böser Blick-Abwender";
+	name					=	"Zly wyglad turncat";
 	
 	mainflag				=	ITEM_KAT_ARMOR;
 	flags					=	0;
@@ -598,7 +598,7 @@ INSTANCE ItAr_BoeserBlickAbwender (C_Item)
 
 	description				=	name;
 
-	TEXT[0]					=	"Dieses Krönchen schützt vor allerlei dunklen Einflüssen.";	
+	TEXT[0]					=	"Ta mala korona chroni przed wszelkiego rodzaju mrocznymi wplywami.";	
 
 	TEXT[1]					=	NAME_Prot_Edge;			
 	COUNT[1]				= 	protection	[PROT_EDGE]/1000;

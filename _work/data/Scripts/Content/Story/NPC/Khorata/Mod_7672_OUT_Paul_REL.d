@@ -1,7 +1,7 @@
 instance Mod_7672_OUT_Paul_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Paul";
+	name 		= "Pawel";
 	guild					=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	id 			= 7672;

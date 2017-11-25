@@ -37,7 +37,7 @@ INSTANCE Info_Mod_SMK_OM_6_Mine (C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_6_Mine_Condition;
 	information	= Info_Mod_SMK_OM_6_Mine_Info;
 	permanent	= 1;
-	description = "Was läuft in der Mine?";
+	description = "Co sie dzieje w kopalni?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_6_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mod_SMK_OM_6_Mine_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_6_Mine_15_00"); //Was läuft in der Mine?
-	AI_Output(self,other,"Info_Mod_SMK_OM_6_Mine_06_01"); //Die Buddler schürfen das Erz und wenn sie das nicht tun, dann gibt's was aufs Maul!
+	AI_Output(other,self,"Info_Mod_SMK_OM_6_Mine_15_00"); //Co sie dzieje w kopalni?
+	AI_Output(self,other,"Info_Mod_SMK_OM_6_Mine_06_01"); //Kopaczki kopia rude, a jesli nie kopia rudy, to jest cos w ich ustach!
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_SMK_OM_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mod_SMK_OM_6_WichtigePersonen_Condition;
 	information	= Info_Mod_SMK_OM_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_6_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mod_SMK_OM_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_6_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Mod_SMK_OM_6_WichtigePersonen_06_01"); //Kurgan ist unser Chef und kümmert sich um die ganze Organisation, Erz und Buddler.
+	AI_Output(other,self,"Info_Mod_SMK_OM_6_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,other,"Info_Mod_SMK_OM_6_WichtigePersonen_06_01"); //Kurgan jest naszym szefem i zajmuje sie cala organizacja, ruda i kopaczami.
 	
 };	
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mod_SMK_OM_6_DieLage(C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_6_DieLage_Condition;
 	information	= Info_Mod_SMK_OM_6_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht's aus?";
+	description = "Jak wyglada?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_6_DieLage_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mod_SMK_OM_6_DieLage_Condition()
 
 FUNC VOID Info_Mod_SMK_OM_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mod_SMK_OM_6_DieLage_15_00"); //Wie siehts aus?
- 	AI_Output(self,other,"Info_Mod_SMK_OM_6_DieLage_06_01"); //Ja, was glaubst du?
+	AI_Output(other,self,"Info_Mod_SMK_OM_6_DieLage_15_00"); //Jak to robimy?
+ 	AI_Output(self,other,"Info_Mod_SMK_OM_6_DieLage_06_01"); //Tak, co myslisz?
 };
 	
 // *************************************************************************

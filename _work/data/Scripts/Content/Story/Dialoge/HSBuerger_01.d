@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HSBuerger_01_Orakel (C_INFO)
 	information	= Info_Mod_HSBuerger_01_Orakel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin auf der Suche nach dem Orakel.";
+	description	= "Szukam Oracle.";
 };
 
 FUNC INT Info_Mod_HSBuerger_01_Orakel_Condition()
@@ -19,10 +19,10 @@ FUNC INT Info_Mod_HSBuerger_01_Orakel_Condition()
 
 FUNC VOID Info_Mod_HSBuerger_01_Orakel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Orakel_15_00"); //Ich bin auf der Suche nach dem Orakel.
-	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Orakel_09_01"); //Orakel? Sowas gibt es hier nicht. Du solltest das königliche Orakel fragen, wo du eines findest, das ist ziemlich klug.
-	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Orakel_15_02"); //Und wo ist das königliche Orakel?
-	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Orakel_09_03"); //Da musst du einen Termin bei dem königlichen Arsch ausmachen.
+	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Orakel_15_00"); //Szukam Oracle.
+	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Orakel_09_01"); //Oracle? Nie ma takiej rzeczy. Powinienes zapytac królewskiego wyrocznia, gdzie mozna go znalezc, to jest calkiem madre.
+	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Orakel_15_02"); //A gdzie jest królewski wyrocznia?
+	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Orakel_09_03"); //Bedziesz musial umówic sie na wizyte u króla.
 };
 
 INSTANCE Info_Mod_HSBuerger_01_Teleport (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_HSBuerger_01_Teleport (C_INFO)
 	information	= Info_Mod_HSBuerger_01_Teleport_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich suche einen kurzen Weg in den Sumpf, kennst du einen?";
+	description	= "Szukam krótkiej drogi przez bagno, znasz ja?";
 };
 
 FUNC INT Info_Mod_HSBuerger_01_Teleport_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_HSBuerger_01_Teleport_Condition()
 
 FUNC VOID Info_Mod_HSBuerger_01_Teleport_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Teleport_15_00"); //Ich suche einen kurzen Weg in den Sumpf, kennst du einen?
-	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Teleport_09_01"); //Lass mich in Ruhe mit deinem Psycho-Scheiß!
+	AI_Output(hero, self, "Info_Mod_HSBuerger_01_Teleport_15_00"); //Szukam krótkiej drogi przez bagno, znasz ja?
+	AI_Output(self, hero, "Info_Mod_HSBuerger_01_Teleport_09_01"); //Zostaw mnie sam na sam z psycho!
 };
 
 INSTANCE Info_Mod_HSBuerger_01_Pickpocket (C_INFO)

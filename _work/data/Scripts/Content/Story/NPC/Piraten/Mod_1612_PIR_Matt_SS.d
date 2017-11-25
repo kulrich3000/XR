@@ -1,7 +1,7 @@
 INSTANCE Mod_1612_PIR_Matt_SS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Matt";
+	name 		= "pospolity";
 	guild 		= GIL_out;
 	id 			= 1612;
 	voice 		= 10;

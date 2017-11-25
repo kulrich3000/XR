@@ -1,7 +1,7 @@
 INSTANCE Mod_7375_OUT_Gerichtswache_02 (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gerichtswache"; 
+	name 		= "oslona sadowa"; 
 	guild 		= GIL_OUT;
 	id 			= 7375;
 	voice 		= 7;

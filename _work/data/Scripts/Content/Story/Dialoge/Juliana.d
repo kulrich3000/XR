@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Juliana_Hi (C_INFO)
 	information	= Info_Mod_Juliana_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Juliana_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Juliana_Hi_Condition()
 
 FUNC VOID Info_Mod_Juliana_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Hi_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Juliana_Hi_35_01"); //(abwehrend) Was willst du?
+	AI_Output(hero, self, "Info_Mod_Juliana_Hi_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Juliana_Hi_35_01"); //Czego chcesz?
 };
 
 INSTANCE Info_Mod_Juliana_WasLos (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Juliana_WasLos (C_INFO)
 	information	= Info_Mod_Juliana_WasLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso so abweisend?";
+	description	= "Dlaczego tak wrogosc?";
 };
 
 FUNC INT Info_Mod_Juliana_WasLos_Condition()
@@ -42,16 +42,16 @@ FUNC INT Info_Mod_Juliana_WasLos_Condition()
 
 FUNC VOID Info_Mod_Juliana_WasLos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_WasLos_15_00"); //Wieso so abweisend?
-	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_01"); //Ich hab echt andere Sorgen, als mich dumm anquatschen zu lassen.
-	AI_Output(hero, self, "Info_Mod_Juliana_WasLos_15_02"); //Das interessiert mich jetzt aber.
-	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_03"); //(spöttisch) Du bist aber schlecht informiert. Die Klatschtanten posaunen es in jeder Gasse heraus!
-	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_04"); //Mein Mann ist gestern Früh auf dem Weg zur Arbeit verschollen. Niemand weiß, wohin.
-	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_05"); //Und nun entschuldige mich.
+	AI_Output(hero, self, "Info_Mod_Juliana_WasLos_15_00"); //Dlaczego tak wrogosc?
+	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_01"); //Mam inne rzeczy do zmartwienia, niz pozwalanie mi rozmawiac.
+	AI_Output(hero, self, "Info_Mod_Juliana_WasLos_15_02"); //To mnie teraz interesuje.
+	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_03"); //Nie jestes dobrze poinformowany. plotki graja ja w kazdej alei!
+	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_04"); //Mój maz zaginal wczoraj rano w drodze do pracy. Nikt nie wie gdzie.
+	AI_Output(self, hero, "Info_Mod_Juliana_WasLos_35_05"); //Teraz, jesli mnie wybaczycie.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_ENDRES, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_ENDRES, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana sorgt sich um das Verbleiben ihres Mannes. Sie hat mir zwar nicht ausdrücklich aufgetragen, in dem Fall zu ermitteln, aber ich werde Augen und Ohren offen halten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana martwi sie, ze jej maz zostaje. Nie polecila mi wyraznie, abym zbadala sprawe, ale bede trzymal oczy i uszy otwarte.");
 };
 
 INSTANCE Info_Mod_Juliana_Endres (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Juliana_Endres (C_INFO)
 	information	= Info_Mod_Juliana_Endres_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Endres ist tot.";
+	description	= "Koniec jest martwy.";
 };
 
 FUNC INT Info_Mod_Juliana_Endres_Condition()
@@ -75,25 +75,25 @@ FUNC INT Info_Mod_Juliana_Endres_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_00"); //Endres ist tot.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_01"); //Seine Leiche ist ins Wasserversorgungssystem gelangt und von dort in den See gespült worden.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_35_02"); //(schockiert) Nein! (Pause) Wie konnte das passieren?
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_03"); //Es sieht ganz nach Mord aus.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_04"); //Ich werde mich darum kümmern, den Übeltäter zu finden. Dafür muss ich dir ein paar Fragen stellen.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_35_05"); //(apathisch) Ja ... meinetwegen.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_00"); //Koniec jest martwy.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_01"); //Jego cialo dostalo sie do sieci wodociagowej i stamtad umylo sie do jeziora.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_35_02"); //(wstrzasy) Nie! Jak do tego doszlo?
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_03"); //Wyglada to jak morderstwo.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_15_04"); //Zajme sie znalezieniem winowajcy. Musze zadac kilka pytan.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_35_05"); //(apatyczny) Tak..... dzieki mnie.
 
 	Info_ClearChoices	(Info_Mod_Juliana_Endres);
 
-	Info_AddChoice	(Info_Mod_Juliana_Endres, "Wer könnte ein Motiv haben, ihn zu töten?", Info_Mod_Juliana_Endres_B);
-	Info_AddChoice	(Info_Mod_Juliana_Endres, "Was hat Endres in den letzten Wochen gemacht?", Info_Mod_Juliana_Endres_A);
+	Info_AddChoice	(Info_Mod_Juliana_Endres, "Kto móglby miec motywacje do zabicia go?", Info_Mod_Juliana_Endres_B);
+	Info_AddChoice	(Info_Mod_Juliana_Endres, "Co zrobil Endres w ciagu ostatnich kilku tygodni?", Info_Mod_Juliana_Endres_A);
 };
 
 FUNC VOID Info_Mod_Juliana_Endres_C()
 {
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_C_35_00"); //Bevor du Untersuchungen anstellst, solltest du zuerst zu unserem Heiler gehen.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_C_35_01"); //Er kann dir sicher sagen, was ... Endres' Todesursache gewesen ist.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_C_35_00"); //Przed rozpoczeciem badania nalezy najpierw udac sie do naszego uzdrowiciela.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_C_35_01"); //Jestem pewien, ze moze ci powiedziec co.... Przyczyna smierci.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Endres war vor seinem Tod in ein Projekt verwickelt, für das er Erz aus einer Mine schaffen ließ. Die Schürfer sollen nicht gut auf ihn zu sprechen sein. Bevor ich jedoch zu ihnen gehe, soll ich mit dem Heiler reden.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Przed jego smiercia Endres byl zaangazowany w projekt, na potrzeby którego wydobywal rude z kopalni. Nie chce, aby poszukiwacze rozmawiali z nim. Zanim jednak pójde do nich, powinienem porozmawiac z uzdrowicielem.");
 
 	B_StartOtherRoutine	(self, "HAUS");
 
@@ -117,10 +117,10 @@ FUNC VOID Info_Mod_Juliana_Endres_C()
 
 FUNC VOID Info_Mod_Juliana_Endres_B()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_B_15_00"); //Wer könnte ein Motiv haben, ihn zu töten?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_01"); //(zögerlich) Die Minenarbeiter sind unzufrieden mit ihrer Arbeit.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_02"); //Sie beschweren sich, wann sie nur können, und gaben Endres die Schuld an ihrer Situation.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_03"); //Ein paar sind dabei, denen ich ... so etwas Schreckliches zutrauen würde.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_B_15_00"); //Kto móglby miec motywacje do zabicia go?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_01"); //Górnicy sa niezadowoleni z pracy.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_02"); //Skarza sie, kiedy moga i obwiniac Endresa za swoja sytuacje.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_B_35_03"); //Jest ich kilka, które ja..... myslec, ze taka straszna rzecz by sie wydarzyla.
 
 	Mod_Juliana_Endres_02 = 1;
 
@@ -132,10 +132,10 @@ FUNC VOID Info_Mod_Juliana_Endres_B()
 
 FUNC VOID Info_Mod_Juliana_Endres_A()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres_A_15_00"); //Was hat Endres in den letzten Wochen gemacht?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_01"); //Er hatte eine großartige Idee zur Verbesserung der Wasserleitungen.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_02"); //Er fand heraus, dass Rohre aus Erz weder rosten noch giftige Stoffe ins Wasser abgeben, und veranlasste, dass eine kleine Mine in der Nähe der Stadt zum Erzabbau benutzt wurde.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_03"); //Tagsüber verbrachte er die meiste Zeit dort, und nachts war er immer zu Hause.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres_A_15_00"); //Co zrobil Endres w ciagu ostatnich kilku tygodni?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_01"); //Mial swietny pomysl na udoskonalenie rur wodnych.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_02"); //Odkryl, ze rury wykonane z rudy nie rdzewieja i nie wydzielaja toksycznych substancji do wody, a niewielka kopalnia w poblizu miasta jest wykorzystywana do wydobycia rudy.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres_A_35_03"); //W ciagu dnia spedzal tam wiekszosc czasu, a w nocy byl zawsze w domu.
 
 	Mod_Juliana_Endres_01 = 1;
 
@@ -153,7 +153,7 @@ INSTANCE Info_Mod_Juliana_Endres02 (C_INFO)
 	information	= Info_Mod_Juliana_Endres02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, du wirst erpresst.";
+	description	= "Slysze, ze jestes szantazowany.";
 };
 
 FUNC INT Info_Mod_Juliana_Endres02_Condition()
@@ -166,10 +166,10 @@ FUNC INT Info_Mod_Juliana_Endres02_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres02_15_00"); //Ich habe gehört, du wirst erpresst.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres02_35_01"); //Ach ... ach, das ist nichts.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres02_15_02"); //Ich möchte dich ein paar Sachen fragen. Wenn du unschuldig bist, hast du nichts zu befürchten.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres02_35_03"); //(zweifelnd) Wenn es hilft ...
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres02_15_00"); //Slysze, ze jestes szantazowany.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres02_35_01"); //Ah.... Ach, to nic.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres02_15_02"); //Chcialbym zadac panstwu kilka pytan. Jesli jestes niewinny, nie masz nic do zmartwienia.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres02_35_03"); //Jesli to pomaga....
 };
 
 INSTANCE Info_Mod_Juliana_Endres03 (C_INFO)
@@ -180,7 +180,7 @@ INSTANCE Info_Mod_Juliana_Endres03 (C_INFO)
 	information	= Info_Mod_Juliana_Endres03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo warst du, als Endres starb?";
+	description	= "Gdzie zginales, kiedy Endowie?";
 };
 
 FUNC INT Info_Mod_Juliana_Endres03_Condition()
@@ -193,12 +193,12 @@ FUNC INT Info_Mod_Juliana_Endres03_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres03_15_00"); //Wo warst du, als Endres starb?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres03_35_01"); //Ich habe auf ihn gewartet ... im Haus.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres03_15_02"); //Gibt es jemanden, der das bezeugen kann?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres03_35_03"); //(langsam) Nein, ich glaube nicht.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres03_15_00"); //Gdzie zginales, kiedy Endowie?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres03_35_01"); //Czekam na niego.... w domu.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres03_15_02"); //Czy jest ktos, kto moze o tym zaswiadczyc?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres03_35_03"); //Nie, nie sadze.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana war zum betreffenden Zeitpunkt allein zu Hause. Das ist natürlich nicht so gut.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana byla wówczas domem samotnym. To oczywiscie nie jest takie dobre.");
 };
 
 INSTANCE Info_Mod_Juliana_Endres04 (C_INFO)
@@ -209,7 +209,7 @@ INSTANCE Info_Mod_Juliana_Endres04 (C_INFO)
 	information	= Info_Mod_Juliana_Endres04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hältst du von Wendel?";
+	description	= "Co sadzisz o Wendel?";
 };
 
 FUNC INT Info_Mod_Juliana_Endres04_Condition()
@@ -222,10 +222,10 @@ FUNC INT Info_Mod_Juliana_Endres04_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres04_15_00"); //Was hältst du von Wendel?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres04_35_01"); //Er gibt mit seinem Wissen an, aber er ist in Ordnung. Ruhiger Typ.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres04_15_00"); //Co sadzisz o Wendel?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres04_35_01"); //Wskazuje za swoja wiedza, ale jest w porzadku. Cichy facet.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana hält Wendel für einen angeberischen, aber ruhigen Menschen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana uwaza, ze Wendel jest chwalebna, ale spokojna osoba.");
 };
 
 INSTANCE Info_Mod_Juliana_Endres05 (C_INFO)
@@ -236,7 +236,7 @@ INSTANCE Info_Mod_Juliana_Endres05 (C_INFO)
 	information	= Info_Mod_Juliana_Endres05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso erpresst dich der Heiler?";
+	description	= "Dlaczego uzdrowiciel szantazuje Cie?";
 };
 
 FUNC INT Info_Mod_Juliana_Endres05_Condition()
@@ -249,16 +249,16 @@ FUNC INT Info_Mod_Juliana_Endres05_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres05_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_00"); //Wieso erpresst dich der Heiler?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_01"); //Er braucht wohl das Geld.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_02"); //Wieso lässt du dich erpressen?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_03"); //Das kann ich nicht sagen.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_04"); //Na schön, aber das wirft ein schlechtes Licht auf dich.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_05"); //(Pause) Zwischen Endres und mir lief es nicht immer so gut.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_06"); //Ich war häufig wütend auf ihn, weil ihm seine Arbeit so wichtig war. Wichtiger als ich ...
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_07"); //Aber ich hätte ihn nie getötet!
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_00"); //Dlaczego uzdrowiciel szantazuje Cie?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_01"); //Mysle, ze potrzebuje pieniedzy.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_02"); //Dlaczego mnie szantazujesz?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_03"); //Nie moge ci to powiedziec.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres05_15_04"); //Wszystko w porzadku, ale to rzuca zle swiatlo na ciebie.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_05"); //Pomiedzy Endresem a mna sprawy nie zawsze przebiegaly tak dobrze.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_06"); //Czesto bylem na niego gniewny, poniewaz jego praca byla dla niego tak wazna. Co wazniejsze ode mnie....
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres05_35_07"); //Ale ja go nigdy bym go nie zabil!
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana beteuert, Endres nicht umgebracht zu haben, auch wenn sie in letzter Zeit häufig wütend auf ihn gewesen sei.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Juliana twierdzila, ze nie zabila Endresa, mimo ze ostatnio byla na niego bardzo wsciekla.");
 };
 
 INSTANCE Info_Mod_Juliana_Endres06 (C_INFO)
@@ -269,7 +269,7 @@ INSTANCE Info_Mod_Juliana_Endres06 (C_INFO)
 	information	= Info_Mod_Juliana_Endres06_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt da noch etwas, das mich interessieren würde.";
+	description	= "Jest jeszcze cos innego, co chcialbym wiedziec.";
 };
 
 FUNC INT Info_Mod_Juliana_Endres06_Condition()
@@ -282,13 +282,13 @@ FUNC INT Info_Mod_Juliana_Endres06_Condition()
 
 FUNC VOID Info_Mod_Juliana_Endres06_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_00"); //Es gibt da noch etwas, das mich interessieren würde.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_01"); //Inwieweit warst du eigentlich in die Pläne des Heilers eingeweiht?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_02"); //Ich wusste es. Ich wusste, dass er ihn umbringen wollte, und ich war zu dem Zeitpunkt so wütend auf Endres, dass ich ihn nicht hinderte.
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_03"); //Als ich es bereute, war es schon zu spät. Natürlich hat der Heiler das als Druckmittel gegen mich verwendet.
-	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_04"); //Was wollte er erpressen?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_05"); //Meine Verschwiegenheit. Er hat mich geliebt, wusstest du das?
-	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_06"); //Er hat alles zerstört, an dem ich sonst gehangen habe, damit ich ihn als Mittelpunkt meines Lebens annehme.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_00"); //Jest jeszcze cos innego, co chcialbym wiedziec.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_01"); //W jakim stopniu byles tak naprawde przywiazany do planów uzdrowicieli?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_02"); //Znalem to. Wiedzialem, ze on go zabije i bylem tak szalony w Endres, ze nie powstrzymalem go.
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_03"); //Kiedy zaluje, ze bylo za pózno. Oczywiscie uzdrowiciel uzyl tego jako karty przetargowej przeciwko mnie.
+	AI_Output(hero, self, "Info_Mod_Juliana_Endres06_15_04"); //Po co byl szantazowany?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_05"); //Moja tajemnica. Kochal mnie, czy wiedziales?
+	AI_Output(self, hero, "Info_Mod_Juliana_Endres06_35_06"); //Zniszczyl wszystko, na czym wisialem, abym mógl przyjac go za centrum mojego zycia.
 };
 
 INSTANCE Info_Mod_Juliana_Freudenspender (C_INFO)
@@ -299,7 +299,7 @@ INSTANCE Info_Mod_Juliana_Freudenspender (C_INFO)
 	information	= Info_Mod_Juliana_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Freudenspender gegen den Kummer?";
+	description 	= "Przyjemnosc - dawca przeciwko smutkowi?";
 };                       
 
 FUNC INT Info_Mod_Juliana_Freudenspender_Condition()
@@ -314,8 +314,8 @@ FUNC INT Info_Mod_Juliana_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Juliana_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Juliana_Freudenspender_15_00"); //Freudenspender gegen den Kummer?
-	AI_Output(self, hero, "Info_Mod_Juliana_Freudenspender_35_01"); //Vielleicht ... wieso nicht? Danke.
+	AI_Output(hero, self, "Info_Mod_Juliana_Freudenspender_15_00"); //Przyjemnosc - dawca przeciwko smutkowi?
+	AI_Output(self, hero, "Info_Mod_Juliana_Freudenspender_35_01"); //Byc moze...... Dlaczego nie? Dzieki.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

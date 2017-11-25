@@ -54,8 +54,8 @@ INSTANCE MENUITEM_XR_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_AUTOSAVE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Autosave";
-	text[1]		= 	"Autosave (aus/10 min/20 min/30 min)"; // Kommentar
+	text[0]		=	"autokaw";
+	text[1]		= 	"Automatyczne zapisywanie (od 10 min/20 min/30 min)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*-1;
 	dimx		=	3000;	dimy		=	750;
@@ -69,7 +69,7 @@ instance MENUITEM_XR_AUTOSAVE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"aus|alle 10 Minuten|alle 20 Minuten|alle 30 Minuten";
+	text[0]		= 	"co 10 minut, co 20 minut, co 30 minut.";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*-1 + MENU_CHOICE_YPLUS;
@@ -90,8 +90,8 @@ instance MENUITEM_XR_AUTOSAVE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_BALKEN(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Balken";
-	text[1]		= 	"Balkenanzeige (alt/neu/alternativ)"; // Kommentar
+	text[0]		=	"legar";
+	text[1]		= 	"Wyswietlacz paskowy (ciag dalszy/nowy/alternatywny)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -105,7 +105,7 @@ instance MENUITEM_XR_BALKEN_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"alt|neu|alternativ";
+	text[0]		= 	"stary nowy Zaluzja alternatywnie";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -126,8 +126,8 @@ instance MENUITEM_XR_BALKEN_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_ESSSYSTEM(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Esssystem";
-	text[1]		= 	"Esssystem (an/aus)"; // Kommentar
+	text[0]		=	"zywienie";
+	text[1]		= 	"System zywienia (wlaczanie/wylaczanie)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -141,7 +141,7 @@ instance MENUITEM_XR_ESSSYSTEM_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"aus|an";
+	text[0]		= 	"z|an";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -162,8 +162,8 @@ instance MENUITEM_XR_ESSSYSTEM_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_EXP (C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"EXP-Balken";
-	text[1]		= 	"Erfahrungsbalken (an/aus)"; // Kommentar
+	text[0]		=	"belka EXPORT";
+	text[1]		= 	"Pasek doswiadczenia (wlaczanie/wylaczanie)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -177,7 +177,7 @@ instance MENUITEM_XR_EXP_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"aus|an";
+	text[0]		= 	"z|an";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -198,8 +198,8 @@ instance MENUITEM_XR_EXP_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_ONLINE (C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Online-Modus";
-	text[1]		= 	"Aktiviert Online-Features (aktiviert/deaktiviert)"; // Kommentar
+	text[0]		=	"online";
+	text[1]		= 	"Wlacza funkcje online (wlaczone/wylaczone)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -213,7 +213,7 @@ instance MENUITEM_XR_ONLINE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"aktiviert|deaktiviert";
+	text[0]		= 	"uaktywnione j. m. j. wylaczone";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -234,8 +234,8 @@ instance MENUITEM_XR_ONLINE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_SAVEGAME (C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Savegame-Import";
-	text[1]		= 	"aktiviert den Import von G1-Savegames (deaktiviert/aktiviert)"; // Kommentar
+	text[0]		=	"Import gier zapisywanych";
+	text[1]		= 	"aktywuje import G1 (zaznaczenie dezaktywowane/aktywowane)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -249,7 +249,7 @@ instance MENUITEM_XR_SAVEGAME_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"deaktiviert|aktiviert";
+	text[0]		= 	"wylaczany wlaczany";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -270,8 +270,8 @@ instance MENUITEM_XR_SAVEGAME_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_DIFFICULTY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Schwierigkeit";
-	text[1]		= 	"Schwierigkeitsgrad (Einfach, Normal, Schwer)"; // Kommentar
+	text[0]		=	"predykament";
+	text[1]		= 	"Stopien trudnosci (prosty, zwykly, normalny, trudny)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -285,7 +285,7 @@ instance MENUITEM_XR_DIFFICULTY_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"Einfach|Normal|Schwer";
+	text[0]		= 	"Prosty, jJednostka normalna";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*2 + MENU_CHOICE_YPLUS;
@@ -306,8 +306,8 @@ instance MENUITEM_XR_DIFFICULTY_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_SPIELZEIT (C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Spielzeit";
-	text[1]		= 	"Spielzeitanzeige (an/aus)"; // Kommentar
+	text[0]		=	"grac";
+	text[1]		= 	"Wyswietlanie czasu odtwarzania (wlacz/wylacz)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -321,7 +321,7 @@ instance MENUITEM_XR_SPIELZEIT_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"aus|an";
+	text[0]		= 	"z|an";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -342,8 +342,8 @@ instance MENUITEM_XR_SPIELZEIT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_BLOODSPLATS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Blutspritzer";
-	text[1]		= 	"Blutspritzer (an/aus)"; // Kommentar
+	text[0]		=	"krew rozlana";
+	text[1]		= 	"Rozproszenie krwi (wlaczanie/wylaczanie)"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -357,7 +357,7 @@ instance MENUITEM_XR_BLOODSPLATS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"an|aus";
+	text[0]		= 	"off";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -375,7 +375,7 @@ instance MENUITEM_XR_BLOODSPLATS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y+500;
 	dimx		=	6192;		dimy		=	MENU_DY;
@@ -387,7 +387,7 @@ INSTANCE MENUITEM_XR_BACK(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_XR_NEXT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Nächste";
+	text[0]		=	"najblizszy";
 	// Position und Dimension
 	posx		=	4096;		posy		=	MENU_CREDITS_01_START_Y + MENU_CREDITS_01_DY*8;
 	dimx		=	4096;		dimy		=	800;

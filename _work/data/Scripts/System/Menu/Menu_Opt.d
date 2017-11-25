@@ -45,8 +45,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Spiel";
-	text[1]		= "Diverse Spieleinstellungen vornehmen.";  // Kommentar
+	text[0]		= "pasowac";
+	text[1]		= "Dokonaj róznych ustawien gry.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*-1;
@@ -62,8 +62,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Grafik";
-	text[1]		= "Sichtweite, Details und Effekte.";  // Kommentar
+	text[0]		= "grafika";
+	text[1]		= "Widocznosc, szczególy i efekty.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -79,8 +79,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Video";
-	text[1]		=	"Grafikkarte, Auflösung und Helligkeit.";  // Kommentar
+	text[0]		=	"filmik";
+	text[1]		=	"Karta graficzna, rozdzielczosc i jasnosc.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -96,8 +96,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Audio";
-	text[1]		= "Musik, Sprache und Soundeffekte.";  // Kommentar
+	text[0]		= "dzwiek";
+	text[1]		= "Muzyka, mowa i efekty dzwiekowe.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -114,8 +114,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Steuerung";
-	text[1]		= "Konfiguration der Tastenbelegung.";  // Kommentar
+	text[0]		= "regulacja";
+	text[1]		= "Konfiguracja przyporzadkowania klawiszy.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -131,8 +131,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Erweitert";
-	text[1]		= "Weitere Optionen";  // Kommentar
+	text[0]		= "rozszerzony";
+	text[1]		= "Inne opcje";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -148,8 +148,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_XR(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Speziell";
-	text[1]		= "Neue Optionen";  // Kommentar
+	text[0]		= "Szczególnie";
+	text[1]		= "Nowe opcje";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -168,8 +168,8 @@ INSTANCE MENUITEM_OPT_XR(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Performance/Qualität";
-	text[1]		= "Optimierung von Performance und Qualität.";  // Kommentar
+	text[0]		= "Wydajnosc/jakosc";
+	text[1]		= "Optymalizacja wydajnosci i jakosci.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -185,7 +185,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "benutzerdefiniert#hohe Performance|mittlere Qualität|hohe Qualität";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "niestandardowe#wysokie osiagi wysoka jakosc medialna| wysoka jakosc";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension
@@ -203,7 +203,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"Poprzedni";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y+300;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Shadowbeast(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schattenläufer";
+	name							=	"cieniarze";
 	guild							=	GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHADOWBEAST;
 	level							=	30;
@@ -156,7 +156,7 @@ INSTANCE Shadowbeast_XW_03	(Mst_Default_Shadowbeast)
 
 INSTANCE Shadowbeast_GorNaKosh	(Mst_Default_Shadowbeast)
 {
-	name = "alter verwundeter Schattenläufer";
+	name = "oszalamiajacy";
 
 	level							=	15;
 	
@@ -207,7 +207,7 @@ INSTANCE ShadowbeastNew	(Mst_Default_Shadowbeast)
 
 INSTANCE Feuerlaeufer	(Mst_Default_Shadowbeast)
 {
-	name	= "Feuerläufer";
+	name	= "piaskownica";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIRESHADOWBEAST;
 
@@ -243,7 +243,7 @@ INSTANCE Feuerlaeufer	(Mst_Default_Shadowbeast)
 
 INSTANCE Wasserlaeufer	(Mst_Default_Shadowbeast)
 {
-	name	= "Wasserläufer";
+	name	= "staw";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_WATERSHADOWBEAST;
 
@@ -277,7 +277,7 @@ INSTANCE Wasserlaeufer	(Mst_Default_Shadowbeast)
 
 INSTANCE Eislaeufer_FGE	(Mst_Default_Shadowbeast)
 {
-	name	= "Eisläufer";
+	name	= "lodowisko";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICESHADOWBEAST;
 
@@ -309,7 +309,7 @@ INSTANCE Eislaeufer_FGE	(Mst_Default_Shadowbeast)
 
 INSTANCE Eislaeufer	(Mst_Default_Shadowbeast)
 {
-	name	= "Eisläufer";
+	name	= "lodowisko";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICESHADOWBEAST;
 
@@ -341,7 +341,7 @@ INSTANCE Eislaeufer	(Mst_Default_Shadowbeast)
 
 INSTANCE Nightmare	(Mst_Default_Shadowbeast)
 {
-	name	= "Nachtmahr";
+	name	= "koszmar";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_NIGHTMARE;
 

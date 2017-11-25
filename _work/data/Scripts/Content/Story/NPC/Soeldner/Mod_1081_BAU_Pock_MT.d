@@ -2,7 +2,7 @@ instance Mod_1081_BAU_Pock_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name		=	"Pock";
+	name		=	"skarpa";
 	npctype		=	npctype_main;
 	guild 		=	GIL_MIL;    
 	level 		=	4;

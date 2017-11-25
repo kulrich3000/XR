@@ -1,7 +1,7 @@
 instance Mod_7750_OUT_Dubios_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dubiose Gestalt"; 
+	name 		= "Dublinska liczba"; 
 	guild 		= GIL_OUT;
 	id 			= 7750;
 	voice 		= 8;

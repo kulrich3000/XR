@@ -18,16 +18,16 @@ FUNC INT Info_Mod_Bruce_KesselProblem_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_00"); //(zu sich selbst, lalend) Hähä, das habe ich fantastisch hinbekommen.
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_01"); //(räuspert sich)
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_02"); //(überrascht) Hmm, hä ...? Hey, was bist du denn für einer?
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_03"); //Ich schau mich hier nur mal um.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_04"); //Ja, tu das meinetwegen. Aber mach keinen Ärger. Sonst zieh ich dir das Fell über die Ohren.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_05"); //So wie ... genau, so wie dem Schattenläufer, den ich vor kurzem in den Bergen erledigt habe. Siehst du. Echtes Schattenläuferfell.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_06"); //Das Biest ... ähh, hat einen Schürfer gefressen, hähä. Aber ich war eben einfach zu gerissen.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_07"); //So hat jeder bekommen, was er verdient hat. (lacht dreckig)
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_00"); //(....) Huhä, wykonalem fantastyczna prace.
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_01"); //(gardlo w wózkach)
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_02"); //Zaskoczony) Hmm, huh....? Hej, jaki jestes facetem?
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem_15_03"); //Po prostu rozgladam sie dookola.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_04"); //Tak, zrób to dla mnie. Nie sprawiaj jednak zadnych klopotów. Jesli tego nie zrobisz, zaweze Ci glowe.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_05"); //Tak jak..... podobnie jak ten biegnik cieni, który ostatnio wyruszylem w góry. Widzisz? Siersc realnej biegacza cieni.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_06"); //bestia.... uh, czy zjesc harcerza, huh? Ale bylem po prostu zbyt madry.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem_06_07"); //Wiec kazdy dostal to, na co zasluzyl. (smiertelnicy zabrudzeni
 
-	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Am Eingang zum Talkessel habe ich Söldner Bruce angetroffen. Er scheint ziemlich betrunken zu sein und hat selbstgefällig mit dem Fell des Schattenläufers geprahlt, welcher den Schürfer gefressen haben soll. Er schien sehrt amüsiert.");
+	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Znalazlem najemnika Bruce' a przy wejsciu do basenu. On wydaje sie byc dosc pijany i pochwalil sie samozadowoleniem z futra uciekajacego cieniem, który podobno zjadl poszukiwacza. Wydawal sie bardzo zabawny.");
 };
 
 INSTANCE Info_Mod_Bruce_KesselProblem2 (C_INFO)
@@ -53,7 +53,7 @@ FUNC INT Info_Mod_Bruce_KesselProblem2_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem2_06_00"); //Hey, verpiss dich einfach.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem2_06_00"); //Hej, po prostu piechota.
 };
 
 INSTANCE Info_Mod_Bruce_KesselProblem3 (C_INFO)
@@ -64,7 +64,7 @@ INSTANCE Info_Mod_Bruce_KesselProblem3 (C_INFO)
 	information	= Info_Mod_Bruce_KesselProblem3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hast da glaube ich paar Sachen, die sich eigentlich nicht in deinem Besitz befinden dürften.";
+	description	= "Masz juz pewne rzeczy, których nie powinienes miec w swoim posiadaniu.";
 };
 
 FUNC INT Info_Mod_Bruce_KesselProblem3_Condition()
@@ -77,10 +77,10 @@ FUNC INT Info_Mod_Bruce_KesselProblem3_Condition()
 
 FUNC VOID Info_Mod_Bruce_KesselProblem3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_00"); //Du hast da glaube ich paar Sachen, die sich eigentlich nicht in deinem Besitz befinden dürften.
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_01"); //(verdutzt) Wie, was sagst du da?
-	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_02"); //Nun, ich meine zum Beispiel das Sumpfkraut und das ...
-	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_03"); //Du hast dich gerade mit dem falschen angelegt!!!
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_00"); //Masz juz pewne rzeczy, których nie powinienes miec w swoim posiadaniu.
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_01"); //Co masz na mysli?
+	AI_Output(hero, self, "Info_Mod_Bruce_KesselProblem3_15_02"); //Cóz, mam na mysli na przyklad rdestnice bagnista i....
+	AI_Output(self, hero, "Info_Mod_Bruce_KesselProblem3_06_03"); //Po prostu pomieszales sie z niewlasciwym facetem.
 
 	CreateInvItems	(self, ItWr_KesselProblem, 1);
 

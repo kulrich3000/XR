@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Ausgestossener_Hi_Condition()
 
 FUNC VOID Info_Mod_Ausgestossener_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_00"); //(rau) Da geht sie dahin, deine Lolita. Ist mir auch mal passiert, früher.
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_01"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_02"); //Gar nichts. Nur überleben.
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_03"); //Gut.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_04"); //Wenn du uns drei Flaschen Wein und drei Brote gibst, sind wir ganz ruhig und tun dir nichts.
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_05"); //Das ist ja Erpressung.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_06"); //Wie gesagt, wir wollen nur überleben.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_00"); //Tam idzie, twoja Lolita. Raz, raz i wczesniej.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_01"); //Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_02"); //Nic nie ma nic. Tylko przetrwac.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_03"); //Dobre.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_04"); //Jesli dasz nam trzy butelki wina i trzy bochenki chleba, bedziemy cicho i nie zaszkodzimy.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Hi_15_05"); //To szantaz.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Hi_08_06"); //Jak powiedzialem, staramy sie po prostu przetrwac.
 };
 
 INSTANCE Info_Mod_Ausgestossener_Murks (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Ausgestossener_Murks (C_INFO)
 	information	= Info_Mod_Ausgestossener_Murks_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mit euch dreien werd ich doch noch fertig.";
+	description	= "Potrafie poradzic sobie z wami we trójce.";
 };
 
 FUNC INT Info_Mod_Ausgestossener_Murks_Condition()
@@ -45,10 +45,10 @@ FUNC INT Info_Mod_Ausgestossener_Murks_Condition()
 
 FUNC VOID Info_Mod_Ausgestossener_Murks_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Murks_15_00"); //Mit euch dreien werd ich doch noch fertig.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Murks_08_01"); //Wir wollen keinen Kampf. Gib uns die Sachen und wir verziehen uns.
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Murks_15_02"); //Keine Chance. Geht woanders betteln.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Murks_08_03"); //Es tut mir Leid, aber uns bleibt keine Wahl.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Murks_15_00"); //Potrafie poradzic sobie z wami we trójce.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Murks_08_01"); //Nie chcemy walczyc. Daj nam rzeczy, a wyjdziemy z tego.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Murks_15_02"); //Nie ma szans. Idz na zebractwo gdzie indziej.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Murks_08_03"); //Przykro mi, ale nie mamy wyboru.
 
 	AI_StopProcessInfos	(self);
 
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Ausgestossener_Gutmensch (C_INFO)
 	information	= Info_Mod_Ausgestossener_Gutmensch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier habt ihr, was ihr braucht.";
+	description	= "Oto czego potrzebujesz.";
 };
 
 FUNC INT Info_Mod_Ausgestossener_Gutmensch_Condition()
@@ -85,12 +85,12 @@ FUNC INT Info_Mod_Ausgestossener_Gutmensch_Condition()
 
 FUNC VOID Info_Mod_Ausgestossener_Gutmensch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Gutmensch_15_00"); //Hier habt ihr, was ihr braucht.
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Gutmensch_15_00"); //Oto czego potrzebujesz.
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 3);
 	Npc_RemoveInvItems	(hero, ItFo_Wine, 3);
 
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Gutmensch_08_01"); //Es gibt sie doch noch, wohlwollende Menschen. Ich wünsche weiterhin eine gute Reise.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Gutmensch_08_01"); //Nadal istnieja, ludzie dobroczynni. Zycze Wam dobrej podrózy.
 
 	B_GivePlayerXP	(200);
 
@@ -109,7 +109,7 @@ INSTANCE Info_Mod_Ausgestossener_Nix (C_INFO)
 	information	= Info_Mod_Ausgestossener_Nix_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab nichts dabei.";
+	description	= "Nie mam nic.";
 };
 
 FUNC INT Info_Mod_Ausgestossener_Nix_Condition()
@@ -122,9 +122,9 @@ FUNC INT Info_Mod_Ausgestossener_Nix_Condition()
 
 FUNC VOID Info_Mod_Ausgestossener_Nix_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ausgestossener_Nix_15_00"); //Ich hab nichts dabei.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Nix_08_01"); //Das haben wir schon oft zu hören gekriegt, aber dann gab es doch immer was zu holen.
-	AI_Output(self, hero, "Info_Mod_Ausgestossener_Nix_08_02"); //(lauter) Los, Jungs, den durchsuchen wir mal!
+	AI_Output(hero, self, "Info_Mod_Ausgestossener_Nix_15_00"); //Nie mam nic.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Nix_08_01"); //Slyszelismy to juz wiele razy, ale wtedy zawsze bylo cos do zdobycia.
+	AI_Output(self, hero, "Info_Mod_Ausgestossener_Nix_08_02"); //Chodzcie, chlopcy, sprawdzmy go!
 
 	AI_StopProcessInfos	(self);
 

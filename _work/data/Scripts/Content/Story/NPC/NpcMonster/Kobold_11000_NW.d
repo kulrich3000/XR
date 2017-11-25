@@ -1,6 +1,6 @@
 INSTANCE Kobold_11000_NW	(Mst_Default_Gobbo_Green)
 {
-	name	=	"Diebischer Kobold";
+	name	=	"Zlodziej Goblin";
 	
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_KOBOLD;

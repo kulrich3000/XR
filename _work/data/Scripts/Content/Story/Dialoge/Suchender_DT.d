@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Suchender_DT_Hi (C_INFO)
 	information	= Info_Mod_Suchender_DT_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ha. Wieder erwischt.";
+	description	= "Heh. Powróc do niego.";
 };
 
 FUNC INT Info_Mod_Suchender_DT_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Suchender_DT_Hi_Condition()
 
 FUNC VOID Info_Mod_Suchender_DT_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_00"); //Ha. Wieder erwischt. Jetzt weiß ich auch, was dein Zuhause ist. Diesmal entkommst du mir nicht!
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_01"); //Ha. Du schon wieder! Diesmal verschon ich dich nicht!
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_02"); //Mal langsam. Was treibt dich eigentlich um?
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_03"); //Ich bin der Diener meines Herrn, Khorgor, dem Göttlichen.
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_04"); //Was ist so göttlich an ihm?
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_05"); //Mein Herr wird Herr über das Chaos sein, wenn die Bewahrer des Gleichgewichts, die Wassermagier und die Waldleute, erst vernichtet sind.
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_00"); //Heh. Powróc do niego. Teraz wiem, jaki jest Twój dom. Tym razem nie uciekniecie ode mnie!
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_01"); //Heh. Jeszcze raz! Nie oszczedzam ci tym razem!
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_02"); //Spowolnijmy. Co Cie zwariowuje?
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_03"); //Jestem sluga mojego Pana, Khorgora Boskiego.
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Hi_15_04"); //Co jest o nim tak boskie?
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Hi_10_05"); //Mój pan bedzie panem chaosu, gdy straznicy równowagi, magowie wody i ludzie z lasów zostana zniszczeni.
 };
 
 INSTANCE Info_Mod_Suchender_DT_Option01 (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Suchender_DT_Option01 (C_INFO)
 	information	= Info_Mod_Suchender_DT_Option01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verstehe. Sag, könnte ich vielleicht eurem Verein beitreten?";
+	description	= "Widze. Powiedz, czy moge dolaczyc do Twojego klubu?";
 };
 
 FUNC INT Info_Mod_Suchender_DT_Option01_Condition()
@@ -45,10 +45,10 @@ FUNC INT Info_Mod_Suchender_DT_Option01_Condition()
 
 FUNC VOID Info_Mod_Suchender_DT_Option01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option01_15_00"); //Verstehe. Sag, könnte ich vielleicht eurem Verein beitreten?
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option01_10_01"); //Du? Ich weiß nicht ...
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option01_15_02"); //Warum nicht? Bin schon lange nicht mehr damit einverstanden, was die anderen so treiben.
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option01_10_03"); //Das muss der Meister entscheiden. Ich werde ihn fragen. Warte hier.
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option01_15_00"); //Widze. Powiedz, czy moge dolaczyc do Twojego klubu?
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option01_10_01"); //Czy? Nie wiem.....
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option01_15_02"); //Dlaczego nie? Nie zgadzam sie z tym, co robia inni przez dlugi czas.
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option01_10_03"); //To zalezy od mistrza. Pytam go. Poczekaj tutaj.
 
 	AI_GotoWP	(self, "DT_037");
 
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Suchender_DT_Option02 (C_INFO)
 	information	= Info_Mod_Suchender_DT_Option02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Aha! Deshalb seid ihr hinter uns und den Druiden her.";
+	description	= "Aha! Dlatego tez jestes za nami i druidami.";
 };
 
 FUNC INT Info_Mod_Suchender_DT_Option02_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Mod_Suchender_DT_Option02_Condition()
 
 FUNC VOID Info_Mod_Suchender_DT_Option02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option02_15_00"); //Aha! Deshalb seid ihr hinter uns und den Druiden her.
-	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option02_10_01"); //Du hast es kapiert. Nun stirb!
+	AI_Output(hero, self, "Info_Mod_Suchender_DT_Option02_15_00"); //Aha! Dlatego tez jestes za nami i druidami.
+	AI_Output(self, hero, "Info_Mod_Suchender_DT_Option02_10_01"); //Otrzymasz pomysl. Teraz umrzec!
 
 	AI_StopProcessInfos	(self);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Farim_Hi (C_INFO)
 	information	= Info_Mod_Farim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Farim_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Farim_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Farim_Hi_11_01"); //Ich bin Farim, ein Fischer. Wenn du Fische kaufen willst musst du allerdings zu Halvor.
+	AI_Output(self, hero, "Info_Mod_Farim_Hi_11_01"); //Jestem Farimem, rybakiem. Jesli chcesz kupic rybe, musisz udac sie do Halvor.
 };
 
 INSTANCE Info_Mod_Farim_Salzwasser (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Farim_Salzwasser (C_INFO)
 	information	= Info_Mod_Farim_Salzwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Salzwasser?";
+	description	= "Masz slona wode?";
 };
 
 FUNC INT Info_Mod_Farim_Salzwasser_Condition()
@@ -43,16 +43,16 @@ FUNC INT Info_Mod_Farim_Salzwasser_Condition()
 
 FUNC VOID Info_Mod_Farim_Salzwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_00"); //Hast du Salzwasser?
-	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_01"); //Wofür brauchst du denn Salzwasser?
-	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_02"); //Constantino braucht es für sein Zauberwasser.
-	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_03"); //Na wenn das so ist. Wie viel brauchst du denn?
-	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_04"); //Zwei Flaschen.
-	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_05"); //Hier hast du zwei.
+	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_00"); //Masz slona wode?
+	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_01"); //Do czego potrzebna jest slona woda?
+	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_02"); //Konstantyn potrzebuje go na swoja magiczna wode.
+	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_03"); //No cóz, w takim przypadku. Ile potrzebujesz?
+	AI_Output(hero, self, "Info_Mod_Farim_Salzwasser_15_04"); //Dwie butelki.
+	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_05"); //Tutaj masz dwie.
 
 	B_GiveInvItems	(self, hero, ItMi_Salzwasser, 2);
 
-	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_06"); //Und jetzt beeil dich, wird Zeit, dass Kardif wieder eine Lieferung bekommt.
+	AI_Output(self, hero, "Info_Mod_Farim_Salzwasser_11_06"); //Teraz spiesz sie, nadszedl czas, aby Cardif otrzymal kolejna przesylke.
 };
 
 INSTANCE Info_Mod_Farim_HalvorHolFische (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Farim_HalvorHolFische (C_INFO)
 	information	= Info_Mod_Farim_HalvorHolFische_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Halvor schickt mich.";
+	description	= "Halvor wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Farim_HalvorHolFische_Condition()
@@ -77,14 +77,14 @@ FUNC INT Info_Mod_Farim_HalvorHolFische_Condition()
 
 FUNC VOID Info_Mod_Farim_HalvorHolFische_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Farim_HalvorHolFische_15_00"); //Halvor schickt mich. Ich soll die Fische abholen.
-	AI_Output(self, hero, "Info_Mod_Farim_HalvorHolFische_11_01"); //Dann hat also wieder einen Laufburschen gefunden? Naja, mir solls egal sein.
-	AI_Output(self, hero, "Info_Mod_Farim_HalvorHolFische_11_02"); //Hier hast du zehn Fische.
+	AI_Output(hero, self, "Info_Mod_Farim_HalvorHolFische_15_00"); //Halvor wyslal mnie. Jestem tu po to, aby odebrac rybe.
+	AI_Output(self, hero, "Info_Mod_Farim_HalvorHolFische_11_01"); //Wiec znalazl innego chlopca? No cóz, nie obchodzi mnie to.
+	AI_Output(self, hero, "Info_Mod_Farim_HalvorHolFische_11_02"); //Oto dziesiec ryb.
 
 	CreateInvItems	(self, ItFo_Fish, 10);
 	B_GiveInvItems	(self, hero, ItFo_Fish, 10);
 
-	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Farim hat mir zehn Fische gegeben.");
+	B_LogEntry	(TOPIC_MOD_HALVOR_HOLFISCHE, "Farim dal mi dziesiec ryb.");
 };
 
 INSTANCE Info_Mod_Farim_Paddel (C_INFO)
@@ -95,7 +95,7 @@ INSTANCE Info_Mod_Farim_Paddel (C_INFO)
 	information	= Info_Mod_Farim_Paddel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du ein paar Paddel übrig?";
+	description	= "Zostaly jakies padoki?";
 };
 
 FUNC INT Info_Mod_Farim_Paddel_Condition()
@@ -109,14 +109,14 @@ FUNC INT Info_Mod_Farim_Paddel_Condition()
 
 FUNC VOID Info_Mod_Farim_Paddel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_00"); //Hast du ein paar Paddel übrig?
-	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_01"); //Nein. Brauch selber ein paar neue. Die halten nicht ewig im Salzwasser.
-	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_02"); //Und woher bekommst du die?
-	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_03"); //Der Schiffsbauer verkauft welche.
-	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_04"); //Danke Mann. Allzeit guten Fang!
-	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_05"); //Naja, so toll ist es nicht.
+	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_00"); //Zostaly jakies padoki?
+	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_01"); //Nie. Potrzebuja nowych. Nie trwaja wiecznie w slonej wodzie.
+	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_02"); //A gdzie je dostajesz?
+	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_03"); //Stocznia sprzedaje czesc statków.
+	AI_Output(hero, self, "Info_Mod_Farim_Paddel_15_04"); //Dzieki, czlowiek. Zawsze dobry polów!
+	AI_Output(self, hero, "Info_Mod_Farim_Paddel_11_05"); //No cóz, to nie jest takie wielkie.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Farim bezieht seine Paddel von Garvell, dem Schiffsbauer.");
+	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Farim dostaje swoje wioslo od Garvella, stoczniowca.");
 };
 
 INSTANCE Info_Mod_Farim_Flugblaetter (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Farim_Flugblaetter (C_INFO)
 	information	= Info_Mod_Farim_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Farim_Flugblaetter_Condition()
@@ -148,11 +148,11 @@ FUNC VOID Info_Mod_Farim_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Farim_Flugblaetter_11_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Farim_Flugblaetter_11_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Farim_Flugblaetter_11_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Farim_Flugblaetter_11_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

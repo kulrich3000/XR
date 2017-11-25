@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Wache_Eisgebiet_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Wache_Eisgebiet_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_00"); //Halt! (schaut ihn musternt an) Warum willst du in die Kaserne?
-	AI_Output(hero, self, "Info_Mod_Wache_Eisgebiet_01_Hi_15_01"); //Gellit schickt mich. Ich will mir euer Ansehen verdienen.
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_02"); //In Ordnung, dann bist du hier richtig. Durch deinen Militärdienst bei uns kannst du zeigen wer du bist.
-	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_03"); //Wenn du allerdings denkst, du könntest den Kommander angeifen, soll dir gesagt sein, das er sich gegen Jeden zu verteidigen weiß.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_00"); //Zatrzymaj sie! Dlaczego chcesz jechac do baraków?
+	AI_Output(hero, self, "Info_Mod_Wache_Eisgebiet_01_Hi_15_01"); //Gelit wyslal mnie. Chce zyskac Twoja reputacje.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_02"); //Wszystko w porzadku, wtedy jestes we wlasciwym miejscu. Poprzez swoja sluzbe wojskowa u nas mozesz pokazac kim jestes.
+	AI_Output(self, hero, "Info_Mod_Wache_Eisgebiet_01_Hi_06_03"); //Jesli jednak sadzisz, ze mozesz zaatakowac dowódce, powinienes wiedziec, ze on wie jak bronic sie przed wszystkimi.
 };
 
 INSTANCE Info_Mod_Wache_Eisgebiet_01_EXIT (C_INFO)

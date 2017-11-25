@@ -1,7 +1,7 @@
 INSTANCE Mod_7793_KDF_Hyglas_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hyglas";
+	name 		= "szklanki";
 	guild 		= GIL_VLK;
 	id 			= 7793;
 	voice 		= 14;

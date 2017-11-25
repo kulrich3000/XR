@@ -1,7 +1,7 @@
 instance Mod_7754_OUT_Melchior_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Melchior";	
+	name 		= "melodia";	
 	guild 		= GIL_OUT;  
 	id 			= 7754;
 	voice 		= 10;

@@ -18,11 +18,11 @@ FUNC INT Info_Mod_Frazer_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Frazer_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_00"); //Du hast mich gerettet. Brrr, kannst dir gar nicht vorstellen, was die mir alles langsam abschneiden wollten!
-	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_01"); //Da glaubt man immer, man sei ein guter Aufseher, guckt auch mal weg, wenn sie zu zweit was Unanständiges treiben - und das ist der Dank!
-	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_02"); //Na ja, um den Norman tut's mir fast Leid, der ist da sicher mit reingezogen worden. Aber der Rest soll sich zu Beliar scheren, jawohl!
-	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_03"); //Jetzt wird's wenigstens keinen Ärger mehr mit denen geben.
-	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_04"); //Also, was stehen wir hier noch rum? Ich muss dringend 'ne Runde pennen.
+	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_00"); //Uratowales mnie. Brrr, nie moze sobie wyobrazic, co chcieli mnie odciac!
+	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_01"); //Zawsze uwazasz, ze jestes dobrym przelozonym i czasami patrzysz z dystansu, kiedy robia cos nieprzyzwoitego dla dwóch - i to jest podziekowanie!
+	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_02"); //Cóz, prawie mi przykro z powodu Normana, on musial byc zaangazowany. Ale niech reszta pozostanie z Beliarem, tak!
+	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_03"); //Przynajmniej teraz nie bedzie juz wiecej problemów z nimi.
+	AI_Output(self, hero, "Info_Mod_Frazer_REL_Hi_13_04"); //A wiec po co tu stoimy? Naprawde musze sie rozbic.
 
 	B_GivePlayerXP	(300);
 

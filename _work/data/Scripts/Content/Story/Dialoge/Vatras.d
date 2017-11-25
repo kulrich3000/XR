@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vatras_Hi (C_INFO)
 	information	= Info_Mod_Vatras_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Vatras_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Vatras_Hi_Condition()
 FUNC VOID Info_Mod_Vatras_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Vatras_Hi_05_01"); //Ich bin der Wassermagier Vatras.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hi_05_01"); //Jestem magikiem wody Vatry.
 };
 
 INSTANCE Info_Mod_Vatras_Daemonisch (C_INFO)
@@ -40,9 +40,9 @@ FUNC INT Info_Mod_Vatras_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Vatras_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vatras_Daemonisch_05_00"); //Was berichtest du? Wir müssen sofort die Sicherheitsmaßnahmen verschärfen ...
+	AI_Output(self, hero, "Info_Mod_Vatras_Daemonisch_05_00"); //Co Pan (i) zglasza? Musimy natychmiast zaostrzyc srodki bezpieczenstwa.....
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "So, die Stadt wäre geschafft.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "No cóz, miasto zostalo zrobione.");
 
 	AI_StopProcessInfos	(self);
 
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Vatras_Irdorath (C_INFO)
 	information	= Info_Mod_Vatras_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich gedenke mit dem Schiff eine Insel aufzusuchen, um den Kampf gegen den finsteren Xeres fortzuführen.";
+	description	= "Zamierzam udac sie na wyspe statkiem, aby kontynuowac walke z ciemnymi Xeresami.";
 };
 
 FUNC INT Info_Mod_Vatras_Irdorath_Condition()
@@ -71,11 +71,11 @@ FUNC INT Info_Mod_Vatras_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Vatras_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath_15_00"); //Ich gedenke mit dem Schiff eine Insel aufzusuchen, um den Kampf gegen den finsteren Xeres fortzuführen.
-	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath_15_01"); //Jedoch brauche ich fähige Begleiter für diesen Exkurs.
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_02"); //Und da dachtest du an mich?
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_03"); //Ich habe miterlebt, welche üblen Formen diese Bedrohung annehmen kann, wie sie fast die Stadt verheert hätte.
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_04"); //Wenn mir die Möglichkeit geboten wird, so ist es nicht nur mein Wille dich dorthin zu begleiten, nein, es ist sogar meine Pflicht zur Errettung von ganz Khorinis.
+	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath_15_00"); //Zamierzam udac sie na wyspe statkiem, aby kontynuowac walke z ciemnymi Xeresami.
+	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath_15_01"); //Potrzebuje jednak zdolnych towarzyszów na te wycieczke.
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_02"); //I myslales o mnie?
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_03"); //Widzialam, jakie zlo moze przyjac to zagrozenie, poniewaz niemal zniszczylo ono miasto.
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath_05_04"); //Jesli zaproponowano mi mozliwosc, to nie tylko moja wola towarzyszenia wam tam, ale nawet mój obowiazek ratowania calego Khorinisa.
 };
 
 INSTANCE Info_Mod_Vatras_Irdorath2 (C_INFO)
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Vatras_Irdorath2 (C_INFO)
 	information	= Info_Mod_Vatras_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So ist es mir eine Ehre dich an Bord willkommen heißen zu dürfen.";
+	description	= "To zaszczyt powitac Cie na pokladzie.";
 };
 
 FUNC INT Info_Mod_Vatras_Irdorath2_Condition()
@@ -100,10 +100,10 @@ FUNC INT Info_Mod_Vatras_Irdorath2_Condition()
 
 FUNC VOID Info_Mod_Vatras_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath2_15_00"); //So ist es mir eine Ehre dich an Bord willkommen heißen zu dürfen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath2_05_01"); //Dann werde ich mich nun zum Hafen begeben und dort auf den Beginn unserer Reise warten.
+	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath2_15_00"); //To zaszczyt powitac Cie na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath2_05_01"); //Nastepnie udam sie teraz do portu i czekam na poczatek naszej podrózy.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Der Wassermagier Vatras wird mich begleiten.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Czarodziej wodny Vatras bedzie mi towarzyszyl.");
 
 	B_GivePlayerXP	(100);
 
@@ -124,7 +124,7 @@ INSTANCE Info_Mod_Vatras_Irdorath3 (C_INFO)
 	information	= Info_Mod_Vatras_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Vatras_Irdorath3_Condition()
@@ -144,8 +144,8 @@ FUNC INT Info_Mod_Vatras_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Vatras_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath3_05_01"); //Schade. Ich gehe dann wieder zurück. Du weißt wo du mich findest, wenn doch noch ein Platz frei werden sollte.
+	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath3_05_01"); //Zbyt zle. Wróce wtedy. Wiesz, gdzie mnie znalezc, jesli kiedykolwiek zostanie jakies miejsce.
 
 	Mod_VatrasDabei = 0;
 
@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Vatras_Irdorath4 (C_INFO)
 	information	= Info_Mod_Vatras_Irdorath4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich kann dich doch mitnehmen.";
+	description	= "Moge dac ci przejazdzke.";
 };
 
 FUNC INT Info_Mod_Vatras_Irdorath4_Condition()
@@ -179,8 +179,8 @@ FUNC INT Info_Mod_Vatras_Irdorath4_Condition()
 
 FUNC VOID Info_Mod_Vatras_Irdorath4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath4_15_00"); //Ich kann dich doch mitnehmen. Es hat sich noch ein Platz auf dem Schiff gefunden.
-	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath4_05_01"); //Sehr gut, ich bin dann wieder am Hafen.
+	AI_Output(hero, self, "Info_Mod_Vatras_Irdorath4_15_00"); //Moge dac ci przejazdzke. Na statku znajduje sie pomieszczenie.
+	AI_Output(self, hero, "Info_Mod_Vatras_Irdorath4_05_01"); //Bardzo dobrze, wróce do portu.
 
 	Mod_VatrasDabei = 1;
 
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Vatras_Novize (C_INFO)
 	information	= Info_Mod_Vatras_Novize_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Wassermagier werden.";
+	description	= "Chce zostac magikiem wody.";
 };
 
 FUNC INT Info_Mod_Vatras_Novize_Condition()
@@ -213,12 +213,12 @@ FUNC INT Info_Mod_Vatras_Novize_Condition()
 
 FUNC VOID Info_Mod_Vatras_Novize_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Novize_15_00"); //Ich will Wassermagier werden.
-	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_01"); //Bevor du einer von uns werden kannst musst du uns eine Zeit lang geholfen haben.
-	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_02"); //Wenn du eine große Aufgabe für uns erfüllst, werde ich dich aufnehmen. Dort wirst du Aufgaben für mich und die anderen Wassermagier erledigen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_03"); //Wenn du uns dann einige Zeit gedient hast werden wir dich in den Kreis des Wassers aufnehmen.
+	AI_Output(hero, self, "Info_Mod_Vatras_Novize_15_00"); //Chce zostac magikiem wody.
+	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_01"); //Zanim staniecie sie jednym z nas, musicie nam pomóc przez jakis czas.
+	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_02"); //Jesli wykonasz dla nas duza prace, zabiore Cie do pracy. Tam bedziesz wykonywal zadania dla mnie i innych magów wody.
+	AI_Output(self, hero, "Info_Mod_Vatras_Novize_05_03"); //Kiedy bedziecie nam sluzyc przez jakis czas, zabierzemy Was w krag wody.
 
-	B_LogEntry	(TOPIC_MOD_WASSERMAGIER, "Um Wassermagier zu werden muss ich den Wassermagiern eine Zeit lang dienen. Doch bevor ich aufgenommen werde, um den Wassermagiern zu dienen, muss ich eine große Aufgabe erüllen.");
+	B_LogEntry	(TOPIC_MOD_WASSERMAGIER, "Aby zostac czarodziejem wody, musze na jakis czas sluzyc magikom wody. Ale zanim zostane przyjety do sluzby magikom wody, mam przed soba wielkie zadanie do wykonania.");
 };
 
 INSTANCE Info_Mod_Vatras_Aufgabe (C_INFO)
@@ -229,7 +229,7 @@ INSTANCE Info_Mod_Vatras_Aufgabe (C_INFO)
 	information	= Info_Mod_Vatras_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das für eine Aufgabe?";
+	description	= "Jakie jest zadanie?";
 };
 
 FUNC INT Info_Mod_Vatras_Aufgabe_Condition()
@@ -243,27 +243,27 @@ FUNC INT Info_Mod_Vatras_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Vatras_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Aufgabe_15_00"); //Was ist das für eine Aufgabe?
-	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_05_01"); //In letzter Zeit werden immer mehr Leute vermisst. Finde heraus wo sie sind.
+	AI_Output(hero, self, "Info_Mod_Vatras_Aufgabe_15_00"); //Jakie jest zadanie?
+	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_05_01"); //W dzisiejszych czasach brakuje coraz wiecej ludzi. Dowiedz sie gdzie sie znajduja.
 
 	Log_CreateTopic	(TOPIC_MOD_VERMISSTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_VERMISSTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ich soll für die Wassermagier rausfinden wo sich die Vermissten Leute befinden.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Mam sie dowiedziec, gdzie znajduja sie zaginione osoby dla magów wody.");
 
 	Info_ClearChoices	(Info_Mod_Vatras_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Vatras_Aufgabe, "Wo soll ich mit meiner Suche beginnen?", Info_Mod_Vatras_Aufgabe_Wo);
+	Info_AddChoice	(Info_Mod_Vatras_Aufgabe, "Gdzie rozpoczac wyszukiwanie?", Info_Mod_Vatras_Aufgabe_Wo);
 };
 
 FUNC VOID Info_Mod_Vatras_Aufgabe_Wo()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Aufgabe_Wo_15_00"); //Wo soll ich mit meiner Suche beginnen?
-	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_Wo_05_01"); //Geh in den Hafen und sprich dort mit einem unserer Mitglieder. Sein Name ist Diego.
-	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_Wo_05_02"); //Sag ihm, dass ich dich schicke, dann wird er dir alles erzählen was er weiß.
+	AI_Output(hero, self, "Info_Mod_Vatras_Aufgabe_Wo_15_00"); //Gdzie rozpoczac wyszukiwanie?
+	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_Wo_05_01"); //Idz do portu i porozmawiaj z jednym z naszych czlonków. Nazywa sie Diego.
+	AI_Output(self, hero, "Info_Mod_Vatras_Aufgabe_Wo_05_02"); //Powiedz mu, ze cie poslalem, a on ci powie wszystko, co wie.
 
 	Info_ClearChoices	(Info_Mod_Vatras_Aufgabe);
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ich soll in den Hafen und dort mit Diego sprechen. Er wird mir alles erzählen was sie über die Vermissten wissen.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Chca, abym poszedl do portu i porozmawial z Diego. Gonna opowiada mi wszystko, co wiesz o zaginionych osobach.");
 };
 
 INSTANCE Info_Mod_Vatras_ErsteInfos (C_INFO)
@@ -274,7 +274,7 @@ INSTANCE Info_Mod_Vatras_ErsteInfos (C_INFO)
 	information	= Info_Mod_Vatras_ErsteInfos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe erste Informationen über die Vermissten.";
+	description	= "Mam wstepne informacje na temat osób zaginionych.";
 };
 
 FUNC INT Info_Mod_Vatras_ErsteInfos_Condition()
@@ -289,22 +289,22 @@ FUNC INT Info_Mod_Vatras_ErsteInfos_Condition()
 
 FUNC VOID Info_Mod_Vatras_ErsteInfos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_00"); //Ich habe erste Informationen über die Vermissten.
-	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_01"); //Berichte.
-	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_02"); //Diese Liste habe ich in der Nähe von Freds Haus gefunden.
-	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_03"); //Zeig her.
-	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_04"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_00"); //Mam wstepne informacje na temat osób zaginionych.
+	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_01"); //Sprawozdania.
+	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_02"); //Liste te znalazlem w poblizu domu Freda.
+	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_03"); //Pozwole sobie to zobaczyc.
+	AI_Output(hero, self, "Info_Mod_Vatras_ErsteInfos_15_04"); //Tutaj.
 
 	B_GiveInvItems	(hero, self, Mod_Sklavenliste_DMR, 1);
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_05"); //Sehr gut. Es sieht so aus als wäre Elvrich ihr nächstes Opfer.
-	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_06"); //Sprich mit ihm und beschatte ihn.
+	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_05"); //Bardzo dobry. Wyglada jak Elvrich jest jej kolejna ofiara.
+	AI_Output(self, hero, "Info_Mod_Vatras_ErsteInfos_05_06"); //Porozmawiaj z nim i ogonuj go.
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Vatras sagt ich solle mit Elvrich reden und ihn dann beschatten.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Vatras mówi, ze powinienem porozmawiac z Elvrichem, a potem go ogonowac.");
 
 	B_Göttergefallen(2, 1);
 };
@@ -317,7 +317,7 @@ INSTANCE Info_Mod_Vatras_Fertig (C_INFO)
 	information	= Info_Mod_Vatras_Fertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab herausgefunden wer der Entführer ist.";
+	description	= "Dowiedzialem sie, kim jest porywacz.";
 };
 
 FUNC INT Info_Mod_Vatras_Fertig_Condition()
@@ -330,21 +330,21 @@ FUNC INT Info_Mod_Vatras_Fertig_Condition()
 
 FUNC VOID Info_Mod_Vatras_Fertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_00"); //Ich hab herausgefunden wer der Entführer ist.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_01"); //Wer ist es?
-	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_02"); //Ein Dämonenritter hat Elvrich entführt. Die Vermissten werden also bei den Dämonenrittern sein.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_03"); //Wirklich? Was gibt dir diese Gewissheit?
-	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_04"); //Ich sah mit eigenen Augen, wie Elvrich in der Nacht von einem Mann entführt wurde, der eine ihrer Rüstungen trug.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_05"); //Und wie ging diese Entführung von statten?
-	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_06"); //Nun ... der Dämonenkrieger ist aus dem nichts aufgetaucht und auf gleiche Weise mit Elvrich verschwunden.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_07"); //Hmm, nun, das klingt alles noch sehr verworren.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_08"); //Und vieles bleibt in der Schwärze der Nacht verborgen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_09"); //Gewissheit werden wir erst haben, wenn du die Entführten auch gefunden hast.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_10"); //Dir wurde die Richtung gewiesen. Mach dich auf den Weg und Versuch bei den Dämonenkriegern mehr herauszufinden.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_11"); //Du findest ihr Lager irgendwo im Minental in den Bergen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_12"); //Ich hörte auch, sie sollen eine Mine besitzen. Vielleicht ist das auch ein wichtiger Anhaltspunkt ...
+	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_00"); //Dowiedzialem sie, kim jest porywacz.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_01"); //Kim to jest?
+	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_02"); //Rycerz demoniczny porwal Elwicza. Tak wiec zaginieni ludzie beda razem z Rycerzami Demonicznymi.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_03"); //Naprawde? Co daje ci taka pewnosc?
+	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_04"); //Widzialem na wlasne oczy, jak Elvrich zostal porwany tej nocy przez mezczyzne noszacego jedna z jej zbroi.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_05"); //A jak to bylo uprowadzenie?
+	AI_Output(hero, self, "Info_Mod_Vatras_Fertig_15_06"); //.... Wojownik demoniczny wyszedl znikad i zniknal podobnie jak Elvrich.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_07"); //Hmm, no cóz, ze wszystko brzmi bardzo mylaco.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_08"); //I wiele pozostaje ukrytych w ciemnosci nocy.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_09"); //Nie wiemy na pewno, dopóki nie znajdziesz porywaczy.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_10"); //Zostales skierowany. Wejdz w droge i spróbuj dowiedziec sie wiecej od wojowników demonów.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_11"); //Ich obóz znajdziesz gdzies w Minental w górach.
+	AI_Output(self, hero, "Info_Mod_Vatras_Fertig_05_12"); //Slyszalem tez, ze powinni posiadac kopalnie. Byc moze jest to równiez wazna wskazówka....
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Vatras gab mir den Auftrag, bei den Dämonenkriegern Nachforschungen über die Vermissten anzustellen. Er nannte dabei eine Mine als mögliche Anlaufstelle.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Vatras polecil mi przeprowadzic sledztwo w sprawie osób zaginionych przez Demonicznych Wojowników. Wskazal na kopalnie jako mozliwy punkt kontaktowy.");
 
 	B_Göttergefallen(2, 1);
 
@@ -359,7 +359,7 @@ INSTANCE Info_Mod_Vatras_RealInfos (C_INFO)
 	information	= Info_Mod_Vatras_RealInfos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe nun die Gewissheit (...)";
+	description	= "Mam teraz pewnosc (.....) )";
 };
 
 FUNC INT Info_Mod_Vatras_RealInfos_Condition()
@@ -372,44 +372,44 @@ FUNC INT Info_Mod_Vatras_RealInfos_Condition()
 
 FUNC VOID Info_Mod_Vatras_RealInfos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_00"); //Ich habe nun die Gewissheit, dass die Dämonenkrieger hinter allem stecken.
+	AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_00"); //Mam teraz pewnosc, ze demonowi wojownicy stoja za wszystkim.
 
 	if (Mod_WM_ElvrichImSumpf == 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_01"); //Der entführte Elvrich selbst, berichtet mir über sein Schicksal und das der anderen.
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_02"); //Was, wo befindet er sich jetzt. Noch immer in Gefangenschaft?
-		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_03"); //Nein, ihm gelang die Flucht aus der Mine, die den anderen zum Grab wurde.
-		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_04"); //Er sitzt im Minental im Lager der Sumpfgemeinschaft und genießt sein Leben in vollen Zügen.
-		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_05"); //Von ihm erfuhr ich auch, dass eine Frau die Männer an die Dämonenkrieger verriet, welche der Minenchef dann mit Teleportmagie entführte.
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_06"); //Hmm ... was du mir berichtest ist von nicht unerheblicher Bedeutung für die Sicherheit Stadt.
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_07"); //Wir werden schnellstmöglich die nötigen Schritte einleiten, um diesem üblen Treiben Einhalt zu gebieten ...
+		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_01"); //Porwany Elvrich sam opowiedzial mi o swoim losie i losie innych.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_02"); //Co, gdzie jest teraz? Nadal w niewoli?
+		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_03"); //Nie, udalo mu sie uciec z kopalni, która zamienila druga w grób.
+		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_04"); //Siedzi w Minental w obozie spolecznosci bagiennej i najpelniej cieszy sie zyciem.
+		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_05"); //Dowiedzialem sie tez od niego, ze kobieta zdradzila zolnierzy demonom, którzy zostali uprowadzeni przez szefa kopalni z magia teleportu.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_06"); //Hmm..... To, o czym jestem informowany, nie jest istotne dla miasta bezpieczenstwa.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_07"); //Jak najszybciej podejmiemy niezbedne kroki, aby polozyc kres tej zlej dzialalnosci.....
 
 		B_GivePlayerXP	(650);
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_08"); //In einem verlassenen Schacht ihrer Mine fand ich die Leichen von drei der Entführten.
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_09"); //Bei Adanos (hält kurz inne) ... ich hatte gehofft, sie weilten noch unter den Lebenden ...
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_10"); //Nun, zumindest herrscht jetzt Klarheit über ihr Schicksal und wir können alles Notwenige unternehmen, um diesem Treiben innerhalb der Stadtmauern ein Ende zu setzen ...
+		AI_Output(hero, self, "Info_Mod_Vatras_RealInfos_15_08"); //W opuszczonym wale jej kopalni znalazlem ciala trzech uprowadzonych.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_09"); //W Adanos (krótkie przerwy)? Mialem nadzieje, ze wciaz sa wsród zyjacych....
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_10"); //No cóz, przynajmniej teraz jest jasnosc co do ich losu i mozemy zrobic wszystko, co jest konieczne, aby polozyc kres temu zgielkowi w murach miasta?
 
 		B_GivePlayerXP	(400);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_11"); //Wie dem auch sei, du hast deine Sache mehr als gut gemacht und mir bewiesen, dass du unserer Gemeinschaft ein würdiger Mitbruder sein wirst.
-	AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_12"); //Deiner Aufnahme in unsere Reihen steht nun nichts mehr im Wege.
+	AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_11"); //Tak czy inaczej, wykonales swoja prace bardziej niz dobrze i udowodniles mi, ze bedziesz godnym bratem w naszej wspólnocie.
+	AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_12"); //Nic nie stoi ci na przeszkodzie, aby dolaczyc do naszych szeregów.
 
 	if (Mod_Gilde == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_13"); //Du kannst dich uns nun anschließen.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_13"); //Mozesz do nas dolaczyc juz teraz.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_14"); //Leider hast du dich bereits für einen anderen Weg entschieden.
+		AI_Output(self, hero, "Info_Mod_Vatras_RealInfos_05_14"); //Niestety, wybrales juz inna droge.
 	};
 
 	Npc_RemoveInvItems	(hero, ItWr_DraalVermisstennotiz, 1);
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ich habe Vatras alles ezählt. Ich kann mich ihnen nun anschließen.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Powiedzialem Vatrasowi wszystko. Moge teraz dolaczyc do nich.");
 
 	B_SetTopicStatus	(TOPIC_MOD_VERMISSTE, LOG_SUCCESS);
 
@@ -424,7 +424,7 @@ INSTANCE Info_Mod_Vatras_Aufnahme (C_INFO)
 	information	= Info_Mod_vatras_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin bereit mich euch anzuschließen.";
+	description	= "Jestem gotów dolaczyc do Ciebie.";
 };
 
 FUNC INT Info_Mod_vatras_Aufnahme_Condition()
@@ -439,43 +439,43 @@ FUNC INT Info_Mod_vatras_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_vatras_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_15_00"); //Ich bin bereit mich euch anzuschließen.
+	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_15_00"); //Jestem gotów dolaczyc do Ciebie.
 	
 	if (hero.level >= 5)
 	{
-		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_01"); //Du bist bereit dich uns anzuschließen.
-		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_02"); //Doch wenn du einmal eine unserer Rüstungen trägst, dann gibt es kein zurück mehr.
+		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_01"); //Jestes gotów dolaczyc do nas.
+		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_02"); //Ale gdy tylko nosisz jedna z naszych pancerzy, nie ma juz odwrotu.
 		
 		if (Mod_HatPlayerNeutraleKlamotten())
 		{
 			if (Mod_Gottstatus > 8)
 			|| (Mod_Gottstatus <= 4)
 			{
-				AI_Output(self, hero, "Info_Mod_Vatras_Aufnahme_05_05"); //Du solltest allerdings vorher noch ein paar Taten zu Gunsten von Adanos vollbringen.
+				AI_Output(self, hero, "Info_Mod_Vatras_Aufnahme_05_05"); //Powinienes jednak zrobic jeszcze kilka rzeczy na korzysc Adanosa.
 			}
 			else
 			{
 				Info_ClearChoices	(Info_Mod_Vatras_Aufnahme);
 
-				Info_AddChoice	(Info_Mod_Vatras_Aufnahme, "Ich habs mir anders überlegt.", Info_Mod_Vatras_Aufnahme_Nein);
-				Info_AddChoice	(Info_Mod_Vatras_Aufnahme, "Ich will mich euch anschließen.", Info_Mod_Vatras_Aufnahme_Ja);
+				Info_AddChoice	(Info_Mod_Vatras_Aufnahme, "Zmienilam zdanie.", Info_Mod_Vatras_Aufnahme_Nein);
+				Info_AddChoice	(Info_Mod_Vatras_Aufnahme, "Chce do Panstwa dolaczyc.", Info_Mod_Vatras_Aufnahme_Ja);
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_04"); //Su solltest dir vorher aber noch eine neutrale Rüstung besorgen.
+			AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_04"); //Najpierw powinienes zdobyc neutralna zbroje.
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_03"); //Du solltest lieber noch etwas Erfahrung sammeln.
+		AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_05_03"); //Lepiej zdobyc wiecej doswiadczenia.
 	};
 };
 
 FUNC VOID Info_Mod_vatras_Aufnahme_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Nein_15_00"); //Ich hab's mir anders überlegt.
-	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Nein_05_01"); //Wie du meinst.
+	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Nein_15_00"); //Zmienilam zdanie.
+	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Nein_05_01"); //Cokolwiek mówisz.
 
 	Info_ClearChoices	(Info_Mod_vatras_Aufnahme);
 };
@@ -491,8 +491,8 @@ FUNC VOID Info_Mod_vatras_Aufnahme_Ja()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_55);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_61);
 	
-	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Ja_15_00"); //Ich will mich euch anschließen.
-	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_01"); //Gut. Hier ist deine Robe.
+	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Ja_15_00"); //Chce do Panstwa dolaczyc.
+	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_01"); //Dobre. Oto Twoja szata.
 
 	CreateInvItems	(self, ITAR_Wassernovize1, 1);
 	B_GiveInvItems	(self, hero, ITAR_Wassernovize1, 1);
@@ -500,17 +500,17 @@ FUNC VOID Info_Mod_vatras_Aufnahme_Ja()
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Wassernovize1);
 
-	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Ja_15_02"); //Wie steht's mit einer Waffe?
-	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_03"); //Die Novizen haben bei uns einen Kampfstab. Hier ist deiner.
+	AI_Output(hero, self, "Info_Mod_vatras_Aufnahme_Ja_15_02"); //A co z pistoletem?
+	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_03"); //Nowicjusze maja u nas paleczke. Oto Twoje.
 
 	B_GiveInvItems	(self, hero, ItMw_RangerStaff_Addon, 1);
 
-	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_04"); //Wenn du eine bessere Waffe brauchst, dann musst du dir eine auf dem Marktplatz kaufen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Aufnahme_Ja_05_05"); //Diese Rune sollte dir dazu verhelfen sicher den Gefahren zu trotzen, die auf dem Weg zu meinen Mitbrüdern lauern könnten.
+	AI_Output(self, hero, "Info_Mod_vatras_Aufnahme_Ja_05_04"); //Jesli potrzebujesz lepszej broni, musisz ja kupic na rynku.
+	AI_Output(self, hero, "Info_Mod_Vatras_Aufnahme_Ja_05_05"); //Ta runa powinna pomóc ci bezpiecznie przeciwstawic sie niebezpieczenstwom, które moga czaic sie w drodze do moich braci.
 
 	B_GiveInvItems	(self, hero, ItRu_Icebolt, 1);
 
-	B_LogEntry_More	(TOPIC_MOD_WASSERMAGIER, TOPIC_MOD_GILDENAUFNAHME, "Ich bin jetzt ein Mitglied der Kreises des Wassers.", "Ich bin jetzt ein Mitglied des Kreises des Wassers.");
+	B_LogEntry_More	(TOPIC_MOD_WASSERMAGIER, TOPIC_MOD_GILDENAUFNAHME, "Jestem teraz czlonkiem kola wody.", "Jestem teraz czlonkiem kola wody.");
 	B_SetTopicStatus	(TOPIC_MOD_WASSERMAGIER, LOG_SUCCESS);
 
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_SUCCESS);
@@ -544,7 +544,7 @@ INSTANCE Info_Mod_Vatras_AkilsHof (C_INFO)
 	information	= Info_Mod_Vatras_AkilsHof_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Magier Adanos’, ich habe ein Anliegen welches eurer Heilkunst bedarf.";
+	description	= "Mage Adanos ', mam prosbe, która wymaga twoich umiejetnosci leczniczych.";
 };
 
 FUNC INT Info_Mod_Vatras_AkilsHof_Condition()
@@ -561,18 +561,18 @@ FUNC INT Info_Mod_Vatras_AkilsHof_Condition()
 
 FUNC VOID Info_Mod_Vatras_AkilsHof_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_00"); //Magier Adanos’, ich habe ein Anliegen welches eurer Heilkunst bedarf.
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_01"); //So berichte mir, was dich zu mir führt.
-	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_02"); //Auf Akil’s Hof sind schlimme Dinge vorgefallen, nachdem ein Scherge dunkler Mächte die Nacht in ihrem Haus verbracht hatte.
-	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_03"); //Egill hat in einem Anfall von Tobsucht seinem Bruder schwere Verletzungen zugefügt und die anderen sind innerhalb kürzester Zeit schwer erkrankt.
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_04"); //(erschrocken) Was sagst du?! Ein Lakai des Bösen? In diesem Fall werden meine Möglichkeiten kaum ausreichen.
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_05"); //Es dürfte sich mehr um eine Form der Besessenheit handeln, als um gewöhnliche Erkrankungen und da versagen meine Künste.
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_06"); //Du tätest gut daran dich zum Kloster der Feuermagier zu eilen dort dein Anliegen nochmals vorzutragen.
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_07"); //Achja, gegen Ehnim’s Leiden sollte dieser einfache Heiltrank helfen.
+	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_00"); //Mage Adanos ", mam prosbe, która wymaga twoich umiejetnosci leczniczych.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_01"); //Powiedz mi wiec, co cie do mnie przyprowadzi.
+	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_02"); //Zle rzeczy wydarzyly sie na farmie Akila po tym, jak popadl w noc w jej domu poplecznik o ciemnych mocach.
+	AI_Output(hero, self, "Info_Mod_Vatras_AkilsHof_15_03"); //Egill wyrzadzil bratu ciezkie obrazenia podczas ataku uzaleznienia od tytoniu, a inni ciezko choruja w bardzo krótkim czasie.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_04"); //Co Pan mówi? Brak zla? W takim przypadku moje mozliwosci nie wystarcza.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_05"); //Prawdopodobnie jest to raczej obsesja niz zwykla choroba, a moja sztuka zawodzi.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_06"); //Dobrze by bylo spieszyc sie z powrotem do klasztoru magików strazy pozarnej, aby tam recytowac zapytanie.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_07"); //Ten prosty eliksir powinien pomóc cierpiacemu Ehnimowi.
 
 	B_GiveInvItems	(self, hero, ItPo_Health_01, 1);
 
-	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_08"); //Geh jetzt, du weißt, was du zu tun hast.
+	AI_Output(self, hero, "Info_Mod_Vatras_AkilsHof_05_08"); //Przejdz teraz, wiesz co robic.
 	
 	B_GivePlayerXP	(50);
 };
@@ -585,7 +585,7 @@ INSTANCE Info_Mod_Vatras_Hexenfluch (C_INFO)
 	information	= Info_Mod_Vatras_Hexenfluch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein Problem und hoffe bei dir Hilfe zu erfahren.";
+	description	= "Mam problem i mam nadzieje uzyskac od panstwa pomoc.";
 };
 
 FUNC INT Info_Mod_Vatras_Hexenfluch_Condition()
@@ -598,34 +598,34 @@ FUNC INT Info_Mod_Vatras_Hexenfluch_Condition()
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_15_00"); //Ich habe ein Problem und hoffe bei dir Hilfe zu erfahren.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_01"); //Ja, ich spüre durchaus, dass du im Bann eines üblen Zaubers zu sein scheinst. Was ist geschehen?
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_15_02"); //Eine Frau in Orlans Taverne hat tückische Magie auf mich gewirkt.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_03"); //Was?! Eine Frau?! Das hört sich für mich ganz nach ... einer Hexe an.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_15_00"); //Mam problem i mam nadzieje uzyskac od panstwa pomoc.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_01"); //Tak, czuje, ze wydaje mi sie Pan byc pod czara zlego zaklecia. Co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_15_02"); //Kobieta w tawernie Orlana rzucila na mnie zdradliwa magie.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_03"); //Co? Kobieta? To brzmi dla mnie tak samo...... czarownicy.
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_04"); //(nachdenklich zu sich selbst) Hier auf Khorinis ...
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_04"); //Tutaj na Khorinis....
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_05"); //(wieder zum Helden) Was genau ist vorgefallen?
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_05_05"); //Co dokladnie sie stalo?
 
 	Info_ClearChoices	(Info_Mod_Vatras_Hexenfluch);
 
 	if (Mod_AttraktiveFrau == 2)
 	{
-		Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Ähh ... sie sprach mich an und machte mir anzügliche Angebote.", Info_Mod_Vatras_Hexenfluch_C);
+		Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Uh.... i zlozyly sugestywne oferty.", Info_Mod_Vatras_Hexenfluch_C);
 	};
-	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Sie sprach mich an und ich war ihr plötzlich verfallen.", Info_Mod_Vatras_Hexenfluch_B);
-	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Nicht viel. Sie sprach mir nur an und ich war plötzlich in diesem Zustand.", Info_Mod_Vatras_Hexenfluch_A);
+	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Rozmawiala ze mna i nagle upadlem za nia.", Info_Mod_Vatras_Hexenfluch_B);
+	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Niewiele. Mówila do mnie i nagle bylem w tym stanie.", Info_Mod_Vatras_Hexenfluch_A);
 };
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_C()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_C_15_00"); //Ähh ... sie sprach mich an und machte mir anzügliche Angebote. Es tut mir leid. Ich war töricht mich darauf einzulassen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_C_05_01"); //Was?! Ja, wirklich unwürdig hast du dich gebärdet. (Etwas ruhiger) Aber ich halte dir zu gute, dass du mir die Wahrheit sagst.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_C_05_02"); //Ich hoffe, dass du aus deinem Fehler gelernt hast. Begib dich jetzt ins Kloster zu Pyrokar, da ich dir bei diesem Anliegen leider nicht helfen kann.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_C_15_00"); //Uh.... i zlozyly sugestywne oferty. Przykro mi z tego powodu. Bylem glupi, gdy sie zaangazowalem.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_C_05_01"); //Co? Tak, dzialales naprawde niegodnie. Nieco spokojniejszy) Ale mysle, ze to dobrze, ze mówisz mi prawde.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_C_05_02"); //Mam nadzieje, ze wyciagneliscie wnioski z tego bledu. Przejdzcie teraz do klasztoru Pyrokar, poniewaz nie moge wam pomóc w tej sprawie.
 
 	B_GivePlayerXP	(100);
 
@@ -634,20 +634,20 @@ FUNC VOID Info_Mod_Vatras_Hexenfluch_C()
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_B()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_B_15_00"); //Sie sprach mich an und ich war ihr plötzlich verfallen. Ich konnte nichts machen und war ihrem Willen unterworfen.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_B_15_00"); //Rozmawiala ze mna i nagle upadlem za nia. Nie moglem nic zrobic i podlegalem jej woli.
 
 	if (Mod_AttraktiveFrau == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_01"); //Ja, ist dem so? Es könnte tatsächlich sein, da Hexen zu solchem Werk in der Lage sind. Ich kann aber dennoch nicht erkennen, dass es der Wahrheit entspricht.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_02"); //Wenn du dich schon auf unsittliche Weise mit dämonischen Dirnen einlässt – und das aus freien Stücken - so gestehe es wenigstens.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_03"); //Und während du ins Kloster zu Pyrokar gehst, der dir bei deinem Anliegen helfen kann solltest du gut über dein Verhalten nachdenken.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_04"); //Und jetzt geh mir aus den Augen.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_01"); //Czyz to prawda? Moze to wynikac z tego, ze czarownice sa zdolne do takiej pracy. Nie widze jednak, by bylo to prawda.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_02"); //Jesli angazujesz sie w niemoralne prostytutki demoniczne - i z wlasnej wolnej woli - przynajmniej wyznaj to.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_03"); //A gdy idziesz do klasztoru do Pyrokar, który moze Ci pomóc w odpowiedzi na twoja prosbe, powinienes uwaznie pomyslec o swoim zachowaniu.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_04"); //Teraz wyjdz z oczu.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_05"); //Hmm, ich kann in deinen Augen erkennen, dass du die Wahrheit sagst.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_06"); //Es entspricht auch tatsächlich dem Wesen der Hexen Einfluss auf ihre Opfer nehmen zu können.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_07"); //Leider bin ich nicht dazu in der Lage dir bei diesem Anliegen zu helfen. Begib dich am besten auf direktem Weg ins Kloster zu Pyrokar.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_05"); //Hmm, widze w waszych oczach, ze mówicie prawde.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_06"); //Faktycznie odpowiada to charakterowi czarownic, aby móc oddzialywac na ich ofiary.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_B_05_07"); //Niestety, nie jestem w stanie pomóc w tej sprawie. Najlepiej udac sie bezposrednio do Klasztoru Pyrokar.
 
 		B_GivePlayerXP	(150);
 	};
@@ -657,40 +657,40 @@ FUNC VOID Info_Mod_Vatras_Hexenfluch_B()
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_A()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_A_15_00"); //Nicht viel. Sie sprach mir nur an und ich war plötzlich in diesem Zustand.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_A_05_01"); //(streng) Ich kann nicht erkennen, dass du mir die Wahrheit sagst.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_A_05_02"); //Wenn du dich schon auf unsittliche Weise mit dämonischen Dirnen einlässt, so gestehe es wenigstens.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_A_15_00"); //Niewiele. Mówila do mnie i nagle bylem w tym stanie.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_A_05_01"); //Nie widze jak mówisz mi prawde.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_A_05_02"); //Jesli angazujesz sie w niemoralne prostytutki demoniczne, przynajmniej wyznaj to.
 
 	Info_ClearChoices	(Info_Mod_Vatras_Hexenfluch);
 
-	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Ja, du hast recht, es tut mir Leid.", Info_Mod_Vatras_Hexenfluch_E);
-	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Es tut mir Leid. Sie sprach mich an und ich war ihr plötzlich verfallen.", Info_Mod_Vatras_Hexenfluch_D);
+	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Tak, masz racje, przepraszam.", Info_Mod_Vatras_Hexenfluch_E);
+	Info_AddChoice	(Info_Mod_Vatras_Hexenfluch, "Przykro mi z tego powodu. Rozmawiala ze mna i nagle upadlem za nia.", Info_Mod_Vatras_Hexenfluch_D);
 };
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_E()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_E_15_00"); //Ja, du hast recht, es tut mir Leid.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_E_05_01"); //Ich will sehr für dich hoffen, dass du aus deinen Fehlern lernst.
-	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_E_05_02"); //Geh jetzt ins Kloster zu Pyrokar. Bei ihm wirst du Hilfe finden.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_E_15_00"); //Tak, masz racje, przepraszam.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_E_05_01"); //Naprawde mam nadzieje, ze dla waszego dobra nauczycie sie Panstwo uczyc na wlasnych bledach.
+	AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_E_05_02"); //Teraz udaj sie do klasztoru Pyrokar. Znajdziesz u niego pomoc.
 
 	Info_ClearChoices	(Info_Mod_Vatras_Hexenfluch);
 };
 
 FUNC VOID Info_Mod_Vatras_Hexenfluch_D()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_D_15_00"); //Es tut mir Leid. Sie sprach mich an und ich war ihr plötzlich verfallen. Ich konnte nichts machen und war ihrem Willen unterworfen.
+	AI_Output(hero, self, "Info_Mod_Vatras_Hexenfluch_D_15_00"); //Przykro mi z tego powodu. Rozmawiala ze mna i nagle upadlem za nia. Nie moglem nic zrobic i podlegalem jej woli.
 
 	if (Mod_AttraktiveFrau == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_01"); //Ja, wirklich? Ich bin tief betrübt wie auch erzürnt, dass du mich erneut so schamlos belügst.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_02"); //Und jetzt geh mir aus den Augen dreckiger Lügner.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_01"); //Tak, naprawde? Jestem gleboko smutny i gniewny, ze znowu klamia panstwo na mnie tak bezwstydnie.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_02"); //Teraz wyjdz mi z oczu, brudny klamca.
 
 		B_GivePlayerXP	(-100);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_03"); //Hmm, ich spüre zumindest darin Wahrheit in deinen Worten. Nun, du hättest gut daran getan gleich aufrichtig zu sein.
-		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_04"); //Gehe jetzt ins Kloster zu Pyrokar. Er kann dir bei deinem Problem  helfen.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_03"); //Hmm, wyczuwam przynajmniej prawde w waszych slowach. No cóz, zrobilbys dobrze, gdybys od razu byl szczery.
+		AI_Output(self, hero, "Info_Mod_Vatras_Hexenfluch_D_05_04"); //Przejdz do klasztoru Pyrokar. On moze Ci pomóc w rozwiazaniu problemu.
 	};
 
 	Info_ClearChoices	(Info_Mod_Vatras_Hexenfluch);
@@ -704,7 +704,7 @@ INSTANCE Info_Mod_Vatras_NovizenTrank (C_INFO)
 	information	= Info_Mod_Vatras_NovizenTrank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll eine Medizin für die Feuer Novizen abholen.";
+	description	= "Mam odebrac lekarstwo dla nowicjuszy ognia.";
 };
 
 FUNC INT Info_Mod_Vatras_NovizenTrank_Condition()
@@ -718,15 +718,15 @@ FUNC INT Info_Mod_Vatras_NovizenTrank_Condition()
 
 FUNC VOID Info_Mod_Vatras_NovizenTrank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_00"); //Ich soll eine Medizin für die Feuer Novizen abholen.
-	AI_Output(self, hero, "Info_Mod_Vatras_NovizenTrank_05_01"); //Eine Medizin für die Feuer Novizen? Welches Leiden gilt es zu kurieren?
-	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_02"); //Es scheint ein starkes Fieber im Kloster umzugehen, welches die Novizen befallen hat.
-	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_03"); //Die Magie Innos' reicht nicht aus, die Novizen zu heilen, deshalb wird deine Heilkunst benötigt.
-	AI_Output(self, hero, "Info_Mod_Vatras_NovizenTrank_05_04"); //Ah, das schwarze Fieber. Nimm diesen Trank, er sollte helfen.
+	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_00"); //Mam odebrac lekarstwo dla nowicjuszy ognia.
+	AI_Output(self, hero, "Info_Mod_Vatras_NovizenTrank_05_01"); //Lek dla nowicjuszy pozaru? Jakie cierpienia trzeba wyleczyc?
+	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_02"); //Wydaje sie, ze w klasztorze panuje goraczka, która zainfekowala nowicjuszy.
+	AI_Output(hero, self, "Info_Mod_Vatras_NovizenTrank_15_03"); //Magia Inno nie wystarczy, aby uzdrowic nowicjuszy, wiec potrzebne sa twoje uzdrawiajace umiejetnosci.
+	AI_Output(self, hero, "Info_Mod_Vatras_NovizenTrank_05_04"); //Ah, czarna goraczka. Wez ten eliksir, powinien pomóc.
 
 	B_GiveInvItems	(self, hero, VatrasNovizenTrunk, 1);
 
-	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Vatras hat mir die Medizin gegeben.");
+	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Vatras dal mi lekarstwo.");
 };
 
 INSTANCE Info_Mod_Vatras_TempelDicht (C_INFO)
@@ -737,7 +737,7 @@ INSTANCE Info_Mod_Vatras_TempelDicht (C_INFO)
 	information	= Info_Mod_Vatras_TempelDicht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme mit dringenden Neuigkeiten von deinen Brüdern.";
+	description	= "Przybywam z pilna wiadomoscia o waszych braciach.";
 };
 
 FUNC INT Info_Mod_Vatras_TempelDicht_Condition()
@@ -751,22 +751,22 @@ FUNC INT Info_Mod_Vatras_TempelDicht_Condition()
 
 FUNC VOID Info_Mod_Vatras_TempelDicht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_00"); //Ich komme mit dringenden Neuigkeiten von deinen Brüdern.
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_01"); //Sprich, mein Sohn.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_02"); //Die Wassermagier wurden angegriffen und gefangen genommen in ihrem eigenen Tempel.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_03"); //Der Zugang wurde durch eine Barriere versiegelt, die nur durch einen magischen Schlüssel geöffnet werden kann.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_04"); //Riordian meinte, dass du wüsstest wo sich dieser Schlüssel befindet.
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_05"); //Das sind wahrlich schreckliche Neuigkeiten. Ich würde dir den Schlüssel gerne geben, doch leider wurde er vor einiger Zeit geraubt.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_06"); //Was? Wer hat den Schlüssel gestohlen?
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_07"); //Es war ein Mitglied des ominösen Blutkultes. Der Blutkult ist eine Gruppe abscheulicher Wesen, die eine Störung des Gleichgewichtes herbeisinnen.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_08"); //Wohin kann der Dieb geflohens sein?
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_09"); //Es gibt eine Höhle nahe Orlans Taverne. Wenn ich mich recht entsinne ist dort eines der Verstecke des Blutkultes. Versuche dort dein Glück.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_10"); //Danke für den Hinweis.
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_11"); //Eins noch! Der Blutkult hat unbekannte Fähigkeiten und Kräfte, die sogar uns beängstigen. Du solltest vorsichtig sein.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_12"); //Das werde ich. Ich werde nun aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_13"); //Mögest du heil zurückkehren!
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_00"); //Przybywam z pilna wiadomoscia o waszych braciach.
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_01"); //Mów, synu.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_02"); //Magicy wodni zostali zaatakowani i ujeci we wlasnej swiatyni.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_03"); //Dostep zostal zaplombowany przez bariere, która mozna otworzyc tylko za pomoca magicznego klucza.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_04"); //Riordian powiedzial, ze wiesz, gdzie to klucz.
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_05"); //To naprawde straszna wiadomosc. Chcialbym podac klucz, ale niestety jakis czas temu zostal on skradziony.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_06"); //Co? Kto ukradl klucz?
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_07"); //Byl czlonkiem zlowieszczego kultu krwi. Kult krwi jest grupa nikczemnych istot, które wyczarowuja zaburzenia równowagi.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_08"); //Gdzie zlodziej moze uciec?
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_09"); //W poblizu tawerny Orlanu znajduje sie jaskinia. Jesli dobrze pamietam, jest jedna z kryjówek kultów krwi. Spróbuj szczescia tam.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_10"); //Dziekujemy za koncówke.
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_11"); //Jeszcze jedno! Kult krwi ma nieznane zdolnosci i moce, które przerazaja nawet nas. Nalezy zachowac ostroznosc.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht_15_12"); //Bede, to zrobie. Wyjezdzam teraz.
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht_05_13"); //Obys wrócil bezpiecznie!
 
-	B_LogEntry	(TOPIC_MOD_BEL_TEMPEL, "Der magische Schlüssel wurde vor einiger Zeit von einem Anhänger des Blutkultes gestohlen. Dieser soll sich in der Nähe von Orlans Taverne in einer Höhle befinden. Vatras warnte mich außerdem, dass der Blutkult sehr mächtig ist. Ich sollte auf der Hut sein.");
+	B_LogEntry	(TOPIC_MOD_BEL_TEMPEL, "Czarodziejski klucz zostal jakis czas temu skradziony przez zwolennika kultu krwi. Podobno znajduje sie w poblizu tawerny Orlanu w jaskini. Vatras ostrzegl mnie równiez, ze kult krwi jest bardzo potezny. Bede na bacznosci.");
 
 	AI_StopProcessInfos	(self);
 
@@ -786,7 +786,7 @@ INSTANCE Info_Mod_Vatras_TempelDicht2 (C_INFO)
 	information	= Info_Mod_Vatras_TempelDicht2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe den Schlüssel gefunden!";
+	description	= "Klucz znalazlem!";
 };
 
 FUNC INT Info_Mod_Vatras_TempelDicht2_Condition()
@@ -801,10 +801,10 @@ FUNC INT Info_Mod_Vatras_TempelDicht2_Condition()
 
 FUNC VOID Info_Mod_Vatras_TempelDicht2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht2_15_00"); //Ich habe den Schlüssel gefunden!
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht2_05_01"); //Sehr gut, mein Sohn. Du bist ein außergewöhnlicher Krieger.
-	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht2_15_02"); //Ich werde nun gleich zu Riordian aufbrechen um die Anderen zu retten.
-	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht2_05_03"); //Tu dies, aber beeile dich. Die Zeit ist nicht unser Verbündeter.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht2_15_00"); //Klucz znalazlem!
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht2_05_01"); //Bardzo dobry, syn. Jest pan niezwyklym wojownikiem.
+	AI_Output(hero, self, "Info_Mod_Vatras_TempelDicht2_15_02"); //Ide teraz do Riordiana i ratuje pozostalych.
+	AI_Output(self, hero, "Info_Mod_Vatras_TempelDicht2_05_03"); //Zrób to, ale spiesz sie. Czas nie jest naszym sojusznikiem.
 	
 	AI_StopProcessInfos	(self);
 
@@ -819,7 +819,7 @@ INSTANCE Info_Mod_Vatras_Kristall (C_INFO)
 	information	= Info_Mod_Vatras_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe dir den Kristall der Paladine.";
+	description	= "Przynosze wam krysztal Paladynu.";
 };
 
 FUNC INT Info_Mod_Vatras_Kristall_Condition()
@@ -833,16 +833,16 @@ FUNC INT Info_Mod_Vatras_Kristall_Condition()
 
 FUNC VOID Info_Mod_Vatras_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Kristall_15_00"); //Ich bringe dir den Kristall der Paladine.
+	AI_Output(hero, self, "Info_Mod_Vatras_Kristall_15_00"); //Przynosze wam krysztal Paladynu.
 	
 	B_GiveInvItems	(hero, self, Mod_PaladinKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Vatras_Kristall_05_01"); //Ein wertvoller Gegenstand. Ich werde dafür sorgen, dass er seinen rechtmäßigen Platz einnimmt.
-	AI_Output(self, hero, "Info_Mod_Vatras_Kristall_05_02"); //Diese Tat ermöglicht es dir, dich uns anzuschließen.
+	AI_Output(self, hero, "Info_Mod_Vatras_Kristall_05_01"); //Cenny przedmiot. Postaram sie, aby zajal nalezne mu miejsce.
+	AI_Output(self, hero, "Info_Mod_Vatras_Kristall_05_02"); //Ten akt umozliwia dolaczenie do nas.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry_More	(TOPIC_MOD_WASSERMAGIER, TOPIC_MOD_SÖLDNER, "Vatras sagt, dass ich mich dem Kreis des Wassers anschließen kann.", "Ich hab den Kristall Vatras gegeben. Torlof wird das sicherlich nicht sehr gefallen.");
+	B_LogEntry_More	(TOPIC_MOD_WASSERMAGIER, TOPIC_MOD_SÖLDNER, "Vatras mówi, ze moge dolaczyc do kola wody.", "Podalem krysztal Vatrasom. Torlof nie spodoba sie zbytnio.");
 
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_FAILED);
 
@@ -857,7 +857,7 @@ INSTANCE Info_Mod_Vatras_Sweetwater (C_INFO)
 	information	= Info_Mod_Vatras_Sweetwater_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du willst mich sprechen?";
+	description	= "Chcesz mnie zobaczyc?";
 };
 
 FUNC INT Info_Mod_Vatras_Sweetwater_Condition()
@@ -870,12 +870,12 @@ FUNC INT Info_Mod_Vatras_Sweetwater_Condition()
 
 FUNC VOID Info_Mod_Vatras_Sweetwater_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Sweetwater_15_00"); //Du willst mich sprechen?
-	AI_Output(self, hero, "Info_Mod_Vatras_Sweetwater_05_01"); //Ganz recht. Ich habe Kunde erhalten, dass Saturas deine Hilfe braucht.
-	AI_Output(self, hero, "Info_Mod_Vatras_Sweetwater_05_02"); //Ist schon etwas her. Du solltest dich beeilen.
-	AI_Output(hero, self, "Info_Mod_Vatras_Sweetwater_15_03"); //Bin schon unterwegs ...
+	AI_Output(hero, self, "Info_Mod_Vatras_Sweetwater_15_00"); //Chcesz mnie zobaczyc?
+	AI_Output(self, hero, "Info_Mod_Vatras_Sweetwater_05_01"); //Calkiem tak. Otrzymalem wiadomosc, ze Saturas potrzebuje Twojej pomocy.
+	AI_Output(self, hero, "Info_Mod_Vatras_Sweetwater_05_02"); //Minelo troche czasu. Lepiej sie spieszyc.
+	AI_Output(hero, self, "Info_Mod_Vatras_Sweetwater_15_03"); //Jestem juz na drodze.....
 
-	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Vatras schickt mich zu Saturas. Es eilt wieder mal ...");
+	B_LogEntry	(TOPIC_MOD_JG_SWEETWATER, "Vatras wysyla mnie do Satur. Jest to znowu pilne......");
 };
 
 INSTANCE Info_Mod_Vatras_Zeremoniendolch (C_INFO)
@@ -886,7 +886,7 @@ INSTANCE Info_Mod_Vatras_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Vatras_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Adanos zum Gruß. Man sagt, du weißt etwas über einen Zeremoniendolch.";
+	description	= "Adanos, powitanie. Mówia, ze wiesz cos o uroczystym sztylecie.";
 };
 
 FUNC INT Info_Mod_Vatras_Zeremoniendolch_Condition()
@@ -899,23 +899,23 @@ FUNC INT Info_Mod_Vatras_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Vatras_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_00"); //Adanos zum Gruß. Man sagt, du weißt etwas über einen Zeremoniendolch.
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_01"); //Nur soviel, dass in Jharkendar Aufzeichnungen über ein solches Relikt gefunden wurden. Du kennst Jharkendar?
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_02"); //Ja, ich habe doch das Portal geöffnet.
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_03"); //Dann rede mit Merdarion. Er kann dir sicher mehr sagen.
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_04"); //Danke, Magier.
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_05"); //Moment noch. Wenn du rübergehst, kannst du gleich paar Dinge mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_06"); //Normalerweise macht Cavalon das, aber der ist lange nicht mehr hier gewesen.
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_07"); //Der ist im Portaltempel und steht sich dort die Beine in den Bauch.
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_08"); //Dann sag ihm, er soll gefälligst hier erscheinen. Ich habe noch mehr zu transportieren.
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_09"); //Das mach ich doch. Was soll ich mitnehmen?
-	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_10"); //Hier. Diesen Beutel gibst du dem Magier Cronos.
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_00"); //Adanos, powitanie. Mówia, ze wiesz cos o uroczystym sztylecie.
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_01"); //Tyle tylko, ze zapisy takiej relikwii znaleziono w Jharkendarzu. Znasz Jharkendara?
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_02"); //Tak, otworzylem portal.
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_03"); //Nastepnie porozmawiaj z Merdarionem. Jestem pewien, ze moze ci powiedziec wiecej.
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_04"); //Dziekuje, magikowi.
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_05"); //Trzymac przez sekunde. Jesli pójdziesz tam, mozesz zabrac ze soba kilka rzeczy.
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_06"); //Zazwyczaj robi to Cavalon, ale nie byl tu od dawna.
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_07"); //Jest w swiatyni portalu i stoi tam nogi w brzuchu.
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_08"); //Potem powiedz mu, zeby sie tu pojawil. Mam wiecej do transportu.
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_09"); //To wlasnie robie. Co powinienem zabrac ze soba?
+	AI_Output(self, hero, "Info_Mod_Vatras_Zeremoniendolch_05_10"); //Tutaj. Przekazujesz te torbe magikowi Cronosowi.
 
 	B_GiveInvItems	(self, hero, ItMi_CronosBeutel, 1);
 
-	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_11"); //Wird erledigt.
+	AI_Output(hero, self, "Info_Mod_Vatras_Zeremoniendolch_15_11"); //To juz wszystko.
 
-	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Vatras schickt mich zu Merdarion. Für Cronos soll ich einen Beutel mitnehmen und Cavalon zurückschicken.");
+	B_LogEntry	(TOPIC_MOD_ASS_ZEREMONIENDOLCH, "Vatras wysyla mnie do Merdarion. Mam wziac torbe dla Cronosa i odeslac Cavalon z powrotem.");
 };
 
 INSTANCE Info_Mod_Vatras_BosperLehrling (C_INFO)
@@ -926,7 +926,7 @@ INSTANCE Info_Mod_Vatras_BosperLehrling (C_INFO)
 	information	= Info_Mod_Vatras_BosperLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche eine Tinktur, die bei Berührung zurückverwandelt.";
+	description	= "Potrzebuje nalewki, która przemienia sie z powrotem po dotknieciu.";
 };
 
 FUNC INT Info_Mod_Vatras_BosperLehrling_Condition()
@@ -939,29 +939,29 @@ FUNC INT Info_Mod_Vatras_BosperLehrling_Condition()
 
 FUNC VOID Info_Mod_Vatras_BosperLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_00"); //Ich brauche eine Tinktur, die bei Berührung zurückverwandelt.
+	AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_00"); //Potrzebuje nalewki, która przemienia sie z powrotem po dotknieciu.
 
 	if (hero.guild != GIL_KDF)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_01"); //Tinkturen sind nicht mein Spezialgebiet.
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_02"); //Ich kann dir eine Rückverwandlungs-Spruchrolle geben, die du dann noch von einem Alchemiekundigen in ihre Bestandteile zerlegen lassen musst.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_01"); //Tkaniny nie sa moja specjalnoscia.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_02"); //Moge podac wam role odwrotu, który nastepnie trzeba miec alchemika rozbitego na jego czesci skladowe.
 
 		B_GiveInvItems	(self, hero, ItSc_Rueckverwandlung, 1);
 
-		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_03"); //Das hilft mir auch schon weiter. Danke.
+		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_03"); //To bardzo mi pomaga. Dzieki.
 
 		Mod_Bosper_Tinktur = 1;
 
-		B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Vatras hatte nur eine Rückverwandlungsspruchrolle für mich, die ich von einem Alchemisten zerlegen lassen muss, damit daraus eine Tinktur hergestellt werden kann.");
+		B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Vatras mialem tylko role retroversion, która musialem zdemontowac przez alchemika, aby z niej zrobic nalewke.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_04"); //Du glaubst doch nicht ernsthaft, dass ich einem Satansanhänger wie dir helfe?
-		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_05"); //Es geht hier nicht um eine Glaubensfrage. Bosper wird gerade von Gewissensbissen verfolgt.
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_06"); //(zweifelnd) Na ja, Tinkturen sind nicht mein Spezialgebiet.
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_07"); //Ich könnte dir eine Rückverwandlungs-Spruchrolle verkaufen, die du dann noch von einem Alchemiekundigen in ihre Bestandteile zerlegen lassen müsstest.
-		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_08"); //Wie viel willst du haben?
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_09"); //300 Goldstücke. Und keine Verhandlungen.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_04"); //Nie sadzisz, ze pomóglbym pomóc takiemu diabelskiemu wisiorkowi jak ty?
+		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_05"); //Nie jest to kwestia wiary. Bospalarnia jest przedmiotem wyrzutów sumienia.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_06"); //(zweifelnd) Na ja, Tkaniny nie sa moja specjalnoscia.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_07"); //Móglbym ci sprzedac zaklecie zwrotne, w którym musialbys miec alchemika rozbijajacego sie na jego czesci skladowe.
+		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_08"); //Ile chcesz?
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_05_09"); //300 sztuk zlota. I nie ma negocjacji.
 	};
 };
 
@@ -973,7 +973,7 @@ INSTANCE Info_Mod_Vatras_BosperLehrling2 (C_INFO)
 	information	= Info_Mod_Vatras_BosperLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In Ordnung, gib mit die Spruchrolle.";
+	description	= "Wszystko w prawo, daj mi przewijac.";
 };
 
 FUNC INT Info_Mod_Vatras_BosperLehrling2_Condition()
@@ -988,7 +988,7 @@ FUNC INT Info_Mod_Vatras_BosperLehrling2_Condition()
 
 FUNC VOID Info_Mod_Vatras_BosperLehrling2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling2_15_00"); //In Ordnung, gib mit die Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling2_15_00"); //Wszystko w prawo, daj mi przewijac.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 300);
 
@@ -996,7 +996,7 @@ FUNC VOID Info_Mod_Vatras_BosperLehrling2_Info()
 
 	Mod_Bosper_Tinktur = 1;
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Vatras hatte nur eine Rückverwandlungsspruchrolle für mich, die ich von einem Alchemisten zerlegen lassen muss, damit daraus eine Tinktur hergestellt werden kann.");
+	B_LogEntry	(TOPIC_MOD_LEHRLING_BOSPER_FOUR, "Vatras mialem tylko role retroversion, która musialem zdemontowac przez alchemika, aby z niej zrobic nalewke.");
 };
 
 INSTANCE Info_Mod_Vatras_Kreis1	(C_INFO)
@@ -1007,7 +1007,7 @@ INSTANCE Info_Mod_Vatras_Kreis1	(C_INFO)
 	information	= Info_Mod_Vatras_Kreis1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den ersten Kreis der Magie.";
+	description	= "Naucz mnie pierwszego kola magii.";
 };
 FUNC INT Info_Mod_Vatras_Kreis1_Condition()
 {	
@@ -1024,12 +1024,12 @@ FUNC INT Info_Mod_Vatras_Kreis1_Condition()
 };
 FUNC VOID Info_Mod_Vatras_Kreis1_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis1_15_00"); //Lehre mich den ersten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis1_15_00"); //Naucz mnie pierwszego kola magii.
 	
 	if B_TeachMagicCircle (self, hero, 1)
 	{
-		AI_Output (self, hero, "Info_Mod_Vatras_Kreis1_05_01"); //Der erste Kreis erlaubt es dir, Runen, die du erschaffen hast, anzuwenden.
-		AI_Output (self, hero, "Info_Mod_Vatras_Kreis1_05_02"); //Du kannst jetzt die Formeln der Zaubersprüche lernen, um deine eigenen Runen herzustellen.
+		AI_Output (self, hero, "Info_Mod_Vatras_Kreis1_05_01"); //Pierwsze kolo pozwala na uzycie utworzonych przez Ciebie run.
+		AI_Output (self, hero, "Info_Mod_Vatras_Kreis1_05_02"); //Mozesz teraz nauczyc sie formul zaklec, aby tworzyc wlasne runy.
 
 		Mod_MagieKreis = 1;
 	};
@@ -1045,7 +1045,7 @@ INSTANCE Info_Mod_Vatras_Kreis2		(C_INFO)
 	information	= Info_Mod_Vatras_Kreis2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den zweiten Kreis der Magie.";
+	description	= "Naucz mnie drugiego kola magii.";
 };
 FUNC INT Info_Mod_Vatras_Kreis2_Condition ()
 {	
@@ -1061,20 +1061,20 @@ FUNC INT Info_Mod_Vatras_Kreis2_Condition ()
 };
 FUNC VOID Info_Mod_Vatras_Kreis2_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis2_15_00"); //Lehre mich den zweiten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis2_15_00"); //Naucz mnie drugiego kola magii.
 	
 	if (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self, hero, 2)
 		{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis2_05_01"); //Tritt nun in den zweiten Kreis und lerne, noch mächtigere Zauber zu wirken.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis2_05_01"); //Wejdz do drugiego kola i naucz sie rzucac jeszcze mocniejsze czary.
 
 			Mod_MagieKreis = 2;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Vatras_Kreis2_05_02"); //Die Zeit ist noch nicht gekommen.
+		AI_Output (self, hero, "Info_Mod_Vatras_Kreis2_05_02"); //Nadszedl jeszcze czas.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -1088,7 +1088,7 @@ INSTANCE Info_Mod_Vatras_Kreis3		(C_INFO)
 	information	= Info_Mod_Vatras_Kreis3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den dritten Kreis der Magie.";
+	description	= "Naucz mnie trzeciego kola magii.";
 };
 FUNC INT Info_Mod_Vatras_Kreis3_Condition ()
 {	
@@ -1101,20 +1101,20 @@ FUNC INT Info_Mod_Vatras_Kreis3_Condition ()
 };
 FUNC VOID Info_Mod_Vatras_Kreis3_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis3_15_00"); //Lehre mich den dritten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis3_15_00"); //Naucz mnie trzeciego kola magii.
 	
 	if (Kapitel >= 3)
 	{
 		if B_TeachMagicCircle (self, hero, 3)
 		{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis3_05_01"); //Ja, die Zeit ist gekommen. Tritt ein in den dritten Kreis der Magie. Neue Zauber erwarten dich.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis3_05_01"); //Tak, nadszedl czas. Wprowadz trzecie kolo magii. Czekaja na Ciebie nowe zaklecia.
 
 			Mod_MagieKreis = 3;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Vatras_Kreis3_05_02"); //Es ist noch nicht an der Zeit für dich, den dritten Kreis zu lernen.
+		AI_Output (self, hero, "Info_Mod_Vatras_Kreis3_05_02"); //Nie nadszedl jeszcze czas, aby nauczyc sie trzeciego kola.
 	};
 };		
 
@@ -1126,7 +1126,7 @@ INSTANCE Info_Mod_Vatras_Kreis4 (C_INFO)
 	information	= Info_Mod_Vatras_Kreis4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den vierten Kreis der Magie lernen.";
+	description	= "Chce poznac czwarte kolo magii.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis4_Condition()
@@ -1140,20 +1140,20 @@ FUNC INT Info_Mod_Vatras_Kreis4_Condition()
 };
 FUNC VOID Info_Mod_Vatras_Kreis4_Info ()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis4_15_00"); //Ich will den vierten Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis4_15_00"); //Chce poznac czwarte kolo magii.
 	
 	if (Kapitel >= 4)
 	{
 		if B_TeachMagicCircle (self,hero, 4)
 		{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis4_05_01"); //Gut. Alle Zeichen sind erfüllt. Tritt nun ein in den vierten Kreis, auf dass dir die Macht der neuen Zauber inne ist.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis4_05_01"); //Dobre. Wszystkie znaki sa wypelnione. Teraz wejdz w czwarte kolo, abys mial moc nowych zaklec.
 
 			Mod_MagieKreis = 4;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis4_05_02"); //Noch ist es nicht soweit.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis4_05_02"); //Jeszcze nie.
 	};
 };
 
@@ -1165,7 +1165,7 @@ INSTANCE Info_Mod_Vatras_Kreis5 (C_INFO)
 	information	= Info_Mod_Vatras_Kreis5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will den fünften Kreis der Magie lernen.";
+	description	= "Chce poznac piate kolo magii.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis5_Condition()
@@ -1179,20 +1179,20 @@ FUNC INT Info_Mod_Vatras_Kreis5_Condition()
 
 FUNC VOID Info_Mod_Vatras_Kreis5_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis5_15_00"); //Ich will den fünften Kreis der Magie lernen.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis5_15_00"); //Chce poznac piate kolo magii.
 	
 	if (Kapitel >= 5)
 	{
 		if B_TeachMagicCircle (self,hero, 5)
 		{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis5_05_01"); //Dann tritt nun ein, in den fünften Kreis der Magie. Du wirst nun mächtigere Zauber als je zuvor beherrschen.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis5_05_01"); //Nastepnie dolacz do piatego kola magii. Teraz opanujesz mocniejsze czary niz kiedykolwiek wczesniej.
 
 			Mod_MagieKreis = 5;
 		};
 	}
 	else
 	{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis5_05_02"); //Die Zeit ist noch nicht reif dafür.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis5_05_02"); //Nadszedl jeszcze czas.
 	};
 };
 
@@ -1204,7 +1204,7 @@ INSTANCE Info_Mod_Vatras_Kreis6	(C_INFO)
 	information	= Info_Mod_Vatras_Kreis6_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich den letzten Kreis der Magie.";
+	description	= "Naucz mnie ostatniego kola magii.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis6_Condition()
@@ -1218,23 +1218,23 @@ FUNC INT Info_Mod_Vatras_Kreis6_Condition()
 
 FUNC VOID Info_Mod_Vatras_Kreis6_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Vatras_Kreis6_15_00"); //Lehre mich den letzten Kreis der Magie.
+	AI_Output (hero, self, "Info_Mod_Vatras_Kreis6_15_00"); //Naucz mnie ostatniego kola magii.
 	
 	if (Kapitel >= 6)
 	{
 		if B_TeachMagicCircle (self,hero, 6)  
 		{
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_01"); //Viel Zeit ist vergangen, seit du den Bund mit Innos eingegangen bist. Viel ist geschehen und wir finden keine Ruhe.
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_02"); //Du bist der Erwählte Adanos'. Und als solcher wirst du alle Kraft brauchen, um deine Kämpfe zu bestehen.
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_03"); //Ich weihe dich nun, Erwählter. Du trittst in den sechsten Kreis.
-			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_04"); //Die Zauberformeln des letzten Kreises kannst du nun von Nefarius lernen, wenn du es wünscht.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_01"); //Wiele czasu minelo od czasu, kiedy zawarles przymierze z Innosem. Wiele sie wydarzylo i nie znajdujemy pokoju.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_02"); //Jestes Wybranym Adanosem ". W ten sposób bedziesz potrzebowal calej sily, aby przetrwac swoje walki.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_03"); //Poswiecam pana teraz, prosze pania wybrac. Wprowadzasz szóste kolo.
+			AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_04"); //Jesli chcesz, mozesz teraz nauczyc sie zaklec ostatniego kola od Nefariusa.
 
 			Mod_MagieKreis = 6;
 		};
 	}
 	else
 	{
-		AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_05"); //Noch ist es nicht an der Zeit dafür. Wenn du ein Stück weiter auf dem Weg gegangen bist, den Beliar dir zeigt, dann werde ich dich unterweisen.
+		AI_Output (self, hero, "Info_Mod_Vatras_Kreis6_05_05"); //To jeszcze nie czas. Jesli poszedles troche dalej po drodze Beliar cie pokaze, a ja cie poucze.
 	};
 };
 
@@ -1246,7 +1246,7 @@ INSTANCE Info_Mod_Vatras_Lehrer (C_INFO)
 	information	= Info_Mod_Vatras_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer kann mir beibringen meine magische Kraft zu erhöhen?";
+	description	= "Kto moze mnie nauczyc jak zwiekszyc swoja magiczna moc?";
 };
 
 FUNC INT Info_Mod_Vatras_Lehrer_Condition()
@@ -1263,11 +1263,11 @@ FUNC INT Info_Mod_Vatras_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Vatras_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Lehrer_15_00"); //Wer kann mir beibringen meine magische Kraft zu erhöhen?
-	AI_Output(self, hero, "Info_Mod_Vatras_Lehrer_05_01"); //Ich kann dir dabei sicher behilflich sein.
+	AI_Output(hero, self, "Info_Mod_Vatras_Lehrer_15_00"); //Kto moze mnie nauczyc jak zwiekszyc swoja magiczna moc?
+	AI_Output(self, hero, "Info_Mod_Vatras_Lehrer_05_01"); //Z pewnoscia moge panu w tym pomóc.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Vatras kann mir beibringen meine MANA zu steigern.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Vatras moze nauczyc mnie, jak wychowywac MANA.");
 };
 
 INSTANCE Info_Mod_Vatras_Lernen (C_INFO)
@@ -1278,7 +1278,7 @@ INSTANCE Info_Mod_Vatras_Lernen (C_INFO)
 	information	= Info_Mod_Vatras_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir was bei.";
+	description	= "Naucz mnie czegos.";
 };
 
 FUNC INT Info_Mod_Vatras_Lernen_Condition()
@@ -1296,7 +1296,7 @@ FUNC INT Info_Mod_Vatras_Lernen_Condition()
 
 FUNC VOID Info_Mod_Vatras_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Lernen_15_00"); //Bring mir was bei.
+	AI_Output(hero, self, "Info_Mod_Vatras_Lernen_15_00"); //Naucz mnie czegos.
 
 	Info_ClearChoices	(Info_Mod_Vatras_Lernen);
 
@@ -1309,7 +1309,7 @@ FUNC VOID Info_Mod_Vatras_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX]	>=	300)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Lernen_BACK_05_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Vatras_Lernen_BACK_05_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Vatras_Lernen);
 };
@@ -1344,7 +1344,7 @@ INSTANCE Info_Mod_Vatras_Ruestung (C_INFO)
 	information	= Info_Mod_Vatras_Ruestung_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir eine bessere Robe bekommen?";
+	description	= "Czy moge uzyskac lepsza szate?";
 };
 
 FUNC INT Info_Mod_Vatras_Ruestung_Condition()
@@ -1360,13 +1360,13 @@ FUNC INT Info_Mod_Vatras_Ruestung_Condition()
 
 FUNC VOID Info_Mod_Vatras_Ruestung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_15_00"); //Kann ich bei dir eine bessere Robe bekommen?
+	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_15_00"); //Czy moge uzyskac lepsza szate?
 
 	if (Kapitel > 1)
 	&& (Mod_ErsteVerbesserung == FALSE)
 	&& (Mod_Gilde < 10)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_05_02"); //Ich hab gehört, dass beim See nordwestlich der Ausgrabungsstätte ein Rudel Wassersnapper hausen soll. Mit deren Haut könnte ich deine Wasser Novizenrobe sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_05_02"); //Slyszalem, ze podobno w poblizu jeziora na pólnocny zachód od miejsca wykopaliska mieszka paczka lapanek wodnych. Z ich skóra z pewnoscia moge poprawic swoja nowicjuszowa szate wodna troche.
 	
 		Mod_ErsteVerbesserung = TRUE;
 	
@@ -1375,20 +1375,20 @@ FUNC VOID Info_Mod_Vatras_Ruestung_Info()
 		Wld_InsertNpc	(Wassersnapper,	"NW_TROLLAREA_PATH_72");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Beim See nordwestlich der Ausgrabungsstätte soll sich ein Rudel Wassersnapper befinden, mit deren Haut Vatras meine Wasser Novizenrobe verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "W poblizu jeziora na pólnocny zachód od miejsca wykopalisk znajduje sie stado wodniaków, z których skóra Vatras moze poprawic moja nowicjuszowska szate wodna.");
 	};
 
 	if (Kapitel > 3)
 	&& (Mod_ZweiteVerbesserung == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_05_03"); //Ich hab gehört, dass beim Weg zur Ausgrabungsstätte ein Wasserläufer sein soll. Mit dessen Fell könnte ich deine Wassermagierrobe sicher ein wenig verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_05_03"); //Slysze, ze w drodze na miejsce wykopu znajduje sie lyzwiarka wodna. Z jego futrem z pewnoscia móglbym troche poprawic wasza wodna magiczna szate.
 	
 		Mod_ZweiteVerbesserung = TRUE;
 	
 		Wld_InsertNpc	(Wasserlaeufer,	"FP_MAGICGOLEM");
 
 		Log_CreateTopic	(TOPIC_MOD_RUESTUNGSUPGADSE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "Auf dem Weg zur Ausgrabungsstätte der Wassermagier soll sich ein Wasserläufer befinden, mit dessen Fell Vatras meine Wassermagierrobe verbessern kann.");
+		B_LogEntry	(TOPIC_MOD_RUESTUNGSUPGADSE, "W drodze do miejsca wykopaliska maga wodnego znajduje sie nieznajomy w wodzie obcy, którego futro Vatras moze wykorzystac do poprawy mojej magicznej szaty wodnej.");
 	};
 
 	Info_ClearChoices	(Info_Mod_Vatras_Ruestung);
@@ -1403,7 +1403,7 @@ FUNC VOID Info_Mod_Vatras_Ruestung_Info()
 	&& (Npc_HasItems(hero, ItAr_KDW_L_ADDON) == 0)
 	&& (Mod_Gilde < 10)
 	{
-		Info_AddChoice	(Info_Mod_Vatras_Ruestung, "Wasser Novizenrobe verbessern", Info_Mod_Vatras_Ruestung_WNOV_S);
+		Info_AddChoice	(Info_Mod_Vatras_Ruestung, "Udoskonalic robie Woda Novice Robe", Info_Mod_Vatras_Ruestung_WNOV_S);
 	};
 
 	if (Mod_ZweiteVerbesserung == TRUE)
@@ -1413,7 +1413,7 @@ FUNC VOID Info_Mod_Vatras_Ruestung_Info()
 	|| (Mod_Gilde == 17)
 	|| (Mod_Gilde == 18))
 	{
-		Info_AddChoice	(Info_Mod_Vatras_Ruestung, "Wassermagierrobe verbessern", Info_Mod_Vatras_Ruestung_KDW_S);
+		Info_AddChoice	(Info_Mod_Vatras_Ruestung, "Ulepsz wodociagi Magic Robe", Info_Mod_Vatras_Ruestung_KDW_S);
 	};
 };
 
@@ -1424,12 +1424,12 @@ FUNC VOID Info_Mod_Vatras_Ruestung_BACK ()
 
 FUNC VOID Info_Mod_Vatras_Ruestung_WNOV_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_WNOV_S_15_00"); //Verbessere meine Wasser Novizenrobe.
+	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_WNOV_S_15_00"); //Ulepsz moja suknie wodna.
 
 	if (Npc_HasItems(hero, ItAt_WassersnapperHaut) >= 1)
 	&& (Npc_HasItems(hero, ItAr_Wassernovize1) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_01"); //Wszystko jasne.
 
 		Npc_RemoveInvItems	(hero, ItAt_WassersnapperHaut, 1);
 		
@@ -1448,11 +1448,11 @@ FUNC VOID Info_Mod_Vatras_Ruestung_WNOV_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_Wassernovize1) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_02"); //Du musst schon eine Wasser Novizenrobe haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_02"); //Musisz miec nowa próbke wody lub nie bede w stanie naprawic jej dla Ciebie.
 	}
 	else if (Npc_HasItems(hero, ItAt_Wassersnapperhaut) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_03"); //Wenn du nicht die Snapperhaut hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_WNOV_S_05_03"); //Nie moge poprawic zbroi, jesli nie masz skóry na szpicke.
 	};
 
 	Info_ClearChoices	(Info_Mod_Vatras_Ruestung);
@@ -1460,12 +1460,12 @@ FUNC VOID Info_Mod_Vatras_Ruestung_WNOV_S ()
 
 FUNC VOID Info_Mod_Vatras_Ruestung_KDW_S ()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_KDW_S_15_00"); //Verbessere meine Wassermagierrobe.
+	AI_Output(hero, self, "Info_Mod_Vatras_Ruestung_KDW_S_15_00"); //Udoskonal moja magiczna szate wodna.
 
 	if (Npc_HasItems(hero, ItAt_WaterShadowFur) == 1)
 	&& (Npc_HasItems(hero, ItAr_KDW_L_ADDON) == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_KDW_S_05_01"); //Alles klar.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_KDW_S_05_01"); //Wszystko jasne.
 
 		Npc_RemoveInvItems	(hero, ItAt_WaterShadowFur, 1);
 		
@@ -1484,11 +1484,11 @@ FUNC VOID Info_Mod_Vatras_Ruestung_KDW_S ()
 	}
 	else if (Npc_HasItems(hero, ItAr_KDW_L_ADDON) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_RIT_S_05_02"); //Du musst schon eine Wassermagierrobe haben, sonst kann ich sie dir nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_RIT_S_05_02"); //Musisz miec czarodziejska szate wodna lub nie bede w stanie ja dla ciebie naprawic.
 	}
 	else if (Npc_HasItems(hero, ItAt_WaterShadowFur) == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_RIT_S_05_03"); //Wenn du nicht das Wasserläuferfell hast, kann ich deine Rüstung nicht verbessern.
+		AI_Output(self, hero, "Info_Mod_Vatras_Ruestung_RIT_S_05_03"); //Jesli nie masz plaszcza odbijajacego, nie moge poprawic pancerza.
 	};
 
 	Info_ClearChoices	(Info_Mod_Vatras_Ruestung);

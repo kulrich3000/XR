@@ -15,14 +15,14 @@ FUNC INT Info_Mod_Jesper_REL_Hi_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_00"); //Ah, gut, dass du endlich kommst.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_Hi_15_01"); //Was gibt’s zu tun?
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_02"); //Gerüchte streuen. Es gibt da nämlich ein verlassenes Haus am Marktplatz, was ideal für eine neue Unterkunft wäre.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_03"); //Nur leider interessieren sich seit kurzem der Braumeister und der Metzger für das Gebäude.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_04"); //Sie haben Pläne, dort ein Gourmet-Restaurant zu eröffnen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_05"); //Nun geht es darum, in der Kneipe das Gerücht zu sähen, es würde dort spuken.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_Hi_15_06"); //Ich verstehe. Sobald die Einwohner anfangen das Gebäude zu meiden, werden die willigen Käufer schon das Interesse daran verlieren.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_07"); //Ganz genau. Also immer schön laut und dick auftragen. Auf geht’s.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_00"); //Ach, dobrze od ciebie przyjsc.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_Hi_15_01"); //Co nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_02"); //Rozprzestrzenily sie rumory. Na rynku znajduje sie opuszczony dom, który bylby idealny do nowego zakwaterowania.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_03"); //Niestety, wlasciciel piwowarstwa i rzeznik ostatnio zainteresowali sie budynkiem.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_04"); //Maja oni plany otwarcia w nim wykwintnej restauracji.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_05"); //Teraz chodzi o to, aby widziec plotke w pubie, ze bedzie to straszyc.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_Hi_15_06"); //Rozumiem. Gdy tylko mieszkancy zaczna omijac budynek, zainteresowani kupujacy straca zainteresowanie nim.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Hi_36_07"); //Dokladnie. Nalóz wiec zawsze glosno i grubo. Chodzcie dalej, odejdzmy.
 
 	AI_StopProcessInfos	(self);
 
@@ -50,28 +50,28 @@ FUNC INT Info_Mod_Jesper_REL_InTaverne_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_00"); //Ah, gut dich zu sehen.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_01"); //Ja, mein Freund, auch ich freue mich dich hier anzutreffen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_02"); //Dies ist ja wirklich eine sehr schöne Stadt mit netten und intelligenten Leuten.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_03"); //Ja, wenn es doch nur dieses Haus nicht gäbe ... du weißt ja, das verlassene am Marktplatz, wo sie jetzt das Restaurant eröffnen wollen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_04"); //Stimmt es also, was man darüber hört ... dass es dort spukt?
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_05"); //Das ist noch gar kein Ausdruck ... so manches Grauenhafte habe ich schon von so vielen Leuten gehört.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_06"); //Ich wollt’s zuerst selbst nicht glauben, hab’s dann aber mit den eigenen Augen gesehen.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_07"); //Man muss schon seines Lebens müde sein, dorthin zu gehen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_08"); //Ja, erzähl mehr, was es damit auf sich hat.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_00"); //Ach, dobrze widziec cie.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_01"); //Tak, mój przyjaciel, ciesze sie, ze równiez tutaj moge sie z Toba spotkac.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_02"); //To naprawde piekne miasto z ladnymi i inteligentnymi ludzmi.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_03"); //Tak, jesli tylko ten dom nie istnieje.... wiesz, ze porzuconego na rynku, gdzie wkrótce otworza restauracje.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_04"); //Tak to jest prawda, co o tym slyszysz.... ze jest nawiedzony?
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_05"); //To nie jest nawet wyrazenie..... Slyszalem tyle strasznych rzeczy o tak wielu ludziach.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_06"); //Na poczatku nie chcialem sobie w to uwierzyc, ale potem widzialem to na wlasne oczy.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_15_07"); //Musisz byc zmeczony zyciem, aby tam pojechac.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_36_08"); //Tak, powiedz mi wiecej o tym, o co chodzi.
 
 	Info_ClearChoices	(Info_Mod_Jesper_REL_InTaverne);
 
-	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Ein Portal zu Beliars grauenvollem Reich selbst soll sich dort befinden.", Info_Mod_Jesper_REL_InTaverne_D);
-	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Die Überreste einiger frevelhafter Verbrecher sind in den Wänden des Gebäudes eingemauert.", Info_Mod_Jesper_REL_InTaverne_C);
-	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Einst hat eine Gemeinschaft von Okkultisten dort finstere Rituale abgehalten.", Info_Mod_Jesper_REL_InTaverne_B);
-	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Die Gebeine einer garstigen Hexe sollen dort begraben liegen.", Info_Mod_Jesper_REL_InTaverne_A);
+	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Mówi sie, ze tam znajduje sie portal o przerazajacym imperium Beliara.", Info_Mod_Jesper_REL_InTaverne_D);
+	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "W scianach budynku zamurowane sa szczatki zloczynców.", Info_Mod_Jesper_REL_InTaverne_C);
+	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Spolecznosc okultystów, w której kiedys odbywaly sie mroczne obrzedy.", Info_Mod_Jesper_REL_InTaverne_B);
+	Info_AddChoice	(Info_Mod_Jesper_REL_InTaverne, "Mówi sie, ze kosci wrogiej czarownicy sa tam pochowane.", Info_Mod_Jesper_REL_InTaverne_A);
 };
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_E()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_E_36_00"); //Das ist ja grauenvoll. Adanos behüte mich vor diesem Gebäude! Ich werde seine Nähe meiden.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_E_15_01"); //Ja, du tust auch gut daran. Bis zum nächsten Wiedersehen, mein Freund.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InTaverne_E_36_00"); //To okropne. Adanos powstrzymuje mnie od tego budynku! Unikne jego obecnosci.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_E_15_01"); //Tak, dobrze bys zrobil. Do nastepnego pozegnania przyjaciel.
 
 	Info_ClearChoices	(Info_Mod_Jesper_REL_InTaverne);
 
@@ -81,37 +81,37 @@ FUNC VOID Info_Mod_Jesper_REL_InTaverne_E()
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_D()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_00"); //Ein Portal zu Beliars grauenvollem Reich selbst soll sich dort befinden.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_01"); //Ein Besucher des Hauses könnte Gefahr laufen, von den dunklen Mächten übermannt zu werden ... und für den Rest aller Tage als Untoter zu wandeln.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_02"); //Manch einem soll ja dieses Schicksal schon zugestoßen sein.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_03"); //Und wenn man genau lauscht, kann man auch das Ächzen der Verfluchten hören.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_00"); //Mówi sie, ze tam znajduje sie portal o przerazajacym imperium Beliara.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_01"); //Gosc odwiedzajacy dom moze byc narazony na ryzyko, ze zostanie przytloczony przez ciemne sily.... Wiecej i przejsc przez reszte dnia jako nieumarli.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_02"); //Mówi sie, ze niektórzy ludzie doswiadczyli tego losu.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_D_15_03"); //A jesli sluchasz uwaznie, slyszysz równiez jeki przeklenstw.
 
 	Info_Mod_Jesper_REL_InTaverne_E();
 };
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_C()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_00"); //Die Überreste einiger frevelhafter Verbrecher sind in den Wänden des Gebäudes eingemauert.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_01"); //Sie hatten sich gegen Adanos selbst versündigt und wurden dafür von ihm zu ewigem Untotendasein verflucht.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_02"); //Man müsste des Wahnsinns sein, das Gebäude zu betreten, denn die fauligen Gebeine würden ohne Zweifel von allen Seiten nach dem Eindringling greifen und ihn zu packen kriegen.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_00"); //W scianach budynku zamurowane sa szczatki zloczynców.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_01"); //Oni zgrzeszyli przeciwko samemu Adanosowi i zostali przekleci przez niego do wiecznej nieumarlosci.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_C_15_02"); //Trzeba byloby byc szalonym, zeby wejsc do budynku, bo zgnile kosci bez watpienia zlapalyby intruza ze wszystkich stron i chwytaly go.
 
 	Info_Mod_Jesper_REL_InTaverne_E();
 };
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_00"); //Einst hat eine Gemeinschaft von Okkultisten dort finstere Rituale abgehalten, Beschwörungen dämonischer Geschöpfe ... und sogar Menschenopfer dargebracht.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_01"); //Sie sollen den Unglückseligen das Herz bei lebendigem Leib herausgerissen haben.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_02"); //Ihre ruhelosen Seelen hausen jetzt in dem Gebäude und lassen jeden Besucher in den Wahnsinn verfallen, der dort einen Fuß hineinsetzt.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_00"); //Niegdys wspólnota okultystów utrzymywala tam zlowieszcze rytualy, zaklecia demonicznych stworzen...... a nawet ludzkie ofiary.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_01"); //Mówi sie, ze wyrwali serce nieszczescia z ich ciala zywcem.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_B_15_02"); //Ich niespokojne dusze mieszkaja teraz w budynku i pozwalaja kazdemu odwiedzajacemu popasc w szalenstwo, który stawia w nim stope.
 
 	Info_Mod_Jesper_REL_InTaverne_E();
 };
 
 FUNC VOID Info_Mod_Jesper_REL_InTaverne_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_00"); //Die Gebeine einer garstigen Hexe sollen dort begraben liegen.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_01"); //Sie wurde einst in Khorata gerichtet und sinnt nun ruhelos auf Rache an ihren Henkern.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_02"); //Und jedes Mal, wenn ein Unwissender das Gebäude betritt, packen ihn die bleichen Knochen der Hexe und ziehen seine unglückliche Seele in die Tiefe.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_00"); //Mówi sie, ze kosci wrogiej czarownicy sa tam pochowane.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_01"); //Niegdys zostala osadzona w Khoracie, a teraz niespokojnie szuka zemsty na swoich oprawcach.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_InTaverne_A_15_02"); //I za kazdym razem, gdy ktos ignorancki wchodzi do budynku, blade kosci czarownicy chwytaja go i wciagaja nieszczesliwa dusze do glebi.
 
 	Info_Mod_Jesper_REL_InTaverne_E();
 };
@@ -136,8 +136,8 @@ FUNC INT Info_Mod_Jesper_REL_InHaus_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_InHaus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InHaus_36_00"); //Mann, hast du die ganzen Gesichter gesehen, als wir das Gruselmärchen über das Haus erzählt haben?
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_InHaus_36_01"); //Ich hätte loslachen können ...
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InHaus_36_00"); //Czlowiek, czy widziales wszystkie te twarze, kiedy opowiadalismy te straszna historie o domu?
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_InHaus_36_01"); //Móglbym sie smiac.....
 
 	AI_StopProcessInfos	(self);
 
@@ -164,8 +164,8 @@ FUNC INT Info_Mod_Jesper_REL_Glorie_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie_36_00"); //(flüstert) Gut, alles gelaufen wie geplant.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie_36_01"); //Der Bücherwurm sollte dir nun hoffentlich alles aushändigen.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie_36_00"); //W porzadku, wszystko poszlo zgodnie z planem.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie_36_01"); //Miejmy nadzieje, ze ksiazka powinna teraz przekazac to wszystko wam.
 
 	AI_StopProcessInfos	(self);
 };
@@ -190,13 +190,13 @@ FUNC INT Info_Mod_Jesper_REL_Glorie2_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Glorie2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_00"); //(leise zum Helden) So, nichts wie raus mit dir.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_01"); //Ich werde währenddessen den Bibliothekar ablenken, um sicherzugehen, dass er es nicht bemerkt.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_00"); //Dobrze, wyprowadzimy Cie z tego miejsca.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_01"); //Bede rozpraszac bibliotekarza, gdy bede przy nim, zeby sie upewnic, ze nie zauwazy.
 
 	AI_TurnToNpc	(self, Mod_7278_OUT_Bibliothekar_REL);
 
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_02"); //(laut zum Bibliothekar) Ich hörte, Ihr sucht nach Eurer Sehhilfe?
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_03"); //Ich glaube, ich habe da hinten etwas glänzen sehen.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_02"); //Slysze, ze szukasz pomocy wizualnej?
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie2_36_03"); //Mysle, ze widzialem tam cos blyszczacego.
 
 	AI_StopProcessInfos	(self);
 
@@ -226,10 +226,10 @@ FUNC INT Info_Mod_Jesper_REL_Glorie3_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Glorie3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_00"); //Ah, da bist du ja endlich.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_01"); //Das war vielleicht ein Tumult in der Bibliothek, als der Diebstahl der Unterlagen aufflog, sag ich dir.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_02"); //Der Stadthalter hat gleich alle Wachen herbeigeholt und nach dem Gelehrten suchen lassen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_03"); //Das kann noch was werden (lacht) ... obwohl es mich doch in meiner Diebesehre etwas kränken würde, falls er jetzt den ganzen Ruhm dafür einstreicht.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_00"); //Ach, tam pan wreszcie jest.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_01"); //To byc moze bylo zamieszka w bibliotece, kiedy odkryto kradziez zapisów, powiem wam.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_02"); //Gubernator natychmiast zadzwonil do wszystkich strazników i zlecil im poszukiwanie uczonego.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie3_36_03"); //Moze to nadal stac sie czyms (smiech). chociaz jako zlodziej obrazaloby mnie troche na moja czesc, gdyby teraz wzial na siebie caly zaslugi.
 
 	AI_StopProcessInfos	(self);
 };
@@ -254,7 +254,7 @@ FUNC INT Info_Mod_Jesper_REL_Glorie4_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Glorie4_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie4_36_00"); //Scheiße, was ist das?
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie4_36_00"); //Co to za fuck?
 
 	AI_StopProcessInfos	(self);
 
@@ -285,10 +285,10 @@ FUNC INT Info_Mod_Jesper_REL_Glorie5_Condition()
 
 FUNC VOID Info_Mod_Jesper_REL_Glorie5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_00"); //Oh, ach, du bist’s. Hätte mir vor Schreck fast in die Hosen gemacht.
-	AI_Output(hero, self, "Info_Mod_Jesper_REL_Glorie5_15_01"); //Du hier?
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_02"); //Wo sonst? Seitdem der Alte im Knast sitzt, kann man in seinem Anwesen seelenruhig plündern. Das ist doch unsere Berufung. Schauen, wo es was zu holen gibt und zugreifen.
-	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_03"); //Also, immer schön die Augen offen halten.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_00"); //Och, oh, to ty. Przerazyl mnie pieklo.
+	AI_Output(hero, self, "Info_Mod_Jesper_REL_Glorie5_15_01"); //Ty tutaj?
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_02"); //Gdzie jeszcze? Od czasu osadzenia w wiezieniu starca mozna spokojnie pladrowac majatek. Takie jest nasze powolanie. Zobacz, gdzie mozna cos podniesc i zlapac.
+	AI_Output(self, hero, "Info_Mod_Jesper_REL_Glorie5_36_03"); //Cóz, trzymaj oczy otwarte.
 
 	AI_StopProcessInfos	(self);
 

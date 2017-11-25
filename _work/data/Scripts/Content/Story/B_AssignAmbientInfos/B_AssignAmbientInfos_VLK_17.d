@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_17_JOIN(C_INFO)
 	condition	= DIA_VLK_17_JOIN_Condition;
 	information	= DIA_VLK_17_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muss ich tun, um Bürger dieser Stadt zu werden?";
+	description = "Co musze zrobic, aby zostac obywatelem tego miasta?";
 };                       
 
 FUNC INT DIA_VLK_17_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_17_JOIN_Condition()
 
 FUNC VOID DIA_VLK_17_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_JOIN_15_00"); //Was muss ich tun, um Bürger dieser Stadt zu werden?
-	AI_Output (self, hero, "DIA_VLK_17_JOIN_17_01"); //Die Handwerksmeister in der Unterstadt haben großen Einfluss hier in Khorinis. Du solltest mit einem von ihnen reden.
+	AI_Output (hero, self, "DIA_VLK_17_JOIN_15_00"); //Co musze zrobic, aby zostac obywatelem tego miasta?
+	AI_Output (self, hero, "DIA_VLK_17_JOIN_17_01"); //Glówni rzemieslnicy w dolnym miescie maja tu duzy wplyw na Khorinis. Powinienes porozmawiac z jednym z nich.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_17_PEOPLE(C_INFO)
 	condition	= DIA_VLK_17_PEOPLE_Condition;
 	information	= DIA_VLK_17_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer sind die wichtigsten Persönlichkeiten dieser Stadt?";
+	description = "Kim sa najwazniejsi ludzie w tym miescie?";
 };                       
 
 FUNC INT DIA_VLK_17_PEOPLE_Condition()
@@ -66,9 +66,9 @@ FUNC INT DIA_VLK_17_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_17_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_PEOPLE_15_00"); //Wer sind die wichtigsten Persönlichkeiten dieser Stadt?
-	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_01"); //Lord Andre vertritt das Gesetz. Du findest ihn in der Kaserne.
-	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_02"); //Aber solange du nicht gegen das Gesetz verstoßen hast, oder dich der Miliz anschließen willst, brauchst du nicht zu ihm zu gehen.
+	AI_Output (hero, self, "DIA_VLK_17_PEOPLE_15_00"); //Kim sa najwazniejsi ludzie w tym miescie?
+	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_01"); //Pan Andre reprezentuje prawo. Znajdziesz go w baraku.
+	AI_Output (self, hero, "DIA_VLK_17_PEOPLE_17_02"); //Ale dopóki nie zlamiesz prawa lub nie chcesz dolaczyc do milicji, nie musisz isc do niego.
 };
 
 INSTANCE Info_VLK_17_Flugblaetter (C_INFO) // E1
@@ -77,7 +77,7 @@ INSTANCE Info_VLK_17_Flugblaetter (C_INFO) // E1
 	condition	= Info_VLK_17_Flugblaetter_Condition;
 	information	= Info_VLK_17_Flugblaetter_Info;
 	permanent	= 1;
-	description = "Ich hab hier ein Flugblatt für dich.";
+	description = "Mam dla Ciebie ulotke.";
 };                       
 
 FUNC INT Info_VLK_17_Flugblaetter_Condition()
@@ -97,11 +97,11 @@ FUNC VOID Info_VLK_17_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_VLK_17_Flugblaetter_17_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -114,7 +114,7 @@ INSTANCE Info_VLK_17_Rangar (C_INFO) // E1
 	condition	= Info_VLK_17_Rangar_Condition;
 	information	= Info_VLK_17_Rangar_Info;
 	permanent	= 0;
-	description = "Wusstest du schon ...";
+	description = "Czy wiedziales juz, ze....";
 };                       
 
 FUNC INT Info_VLK_17_Rangar_Condition()
@@ -133,14 +133,14 @@ FUNC INT Info_VLK_17_Rangar_Condition()
 
 FUNC VOID Info_VLK_17_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_00"); //Wusstest du schon, dass Rangar eine Affäre hat?
-	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_01"); //Echt? Mit wem denn?
-	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_02"); //Mit einem von Alwins Schafen!
-	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_03"); //Bist du sicher? Das muss ich sofort weitererzählen.
+	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_00"); //Czy wiedziales, ze Rangar ma romans?
+	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_01"); //Naprawde? Z kim?
+	AI_Output(hero, self, "Info_Mod_VLK_17_Rangar_15_02"); //Z jedna z owiec Alwin!
+	AI_Output(self, hero, "Info_Mod_VLK_17_Rangar_17_03"); //Czy jestes pewien tego? Bede musial od razu isc dalej.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Ein Gerücht ist im Umlauf, da wird Den zufrieden sein.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Wokól krazy plotka, wiec Den bedzie zadowolony.");
 };
 
 // *************************************************************************
@@ -152,7 +152,7 @@ INSTANCE DIA_VLK_17_LOCATION(C_INFO)
 	condition	= DIA_VLK_17_LOCATION_Condition;
 	information	= DIA_VLK_17_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was sind die interessantesten Orte hier in Khorinis?";
+	description = "Jakie sa najciekawsze miejsca w Khorinis?";
 };                       
 
 FUNC INT DIA_VLK_17_LOCATION_Condition()
@@ -162,9 +162,9 @@ FUNC INT DIA_VLK_17_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_17_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_17_LOCATION_15_00"); //Was sind die interessantesten Orte hier in Khorinis?
-	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_01"); //(lacht) Vielleicht solltest du das besser einen Mann fragen. Wenn dir nach Unterhaltung ist, solltest du dich am Hafen umsehen.
-	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_02"); //Aber wenn es dir darum geht, etwas zu kaufen, geh zum Marktplatz am Osttor oder in die Unterstadt.
+	AI_Output (hero, self, "DIA_VLK_17_LOCATION_15_00"); //Jakie sa najciekawsze miejsca w Khorinis?
+	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_01"); //(smiech) Byc moze lepiej zapytac o to mezczyzne. Jesli szukasz rozrywki, powinienes sprawdzic port.
+	AI_Output (self, hero, "DIA_VLK_17_LOCATION_17_02"); //Ale jesli chcesz cos kupic, przejdz na rynek przy wschodniej bramie lub w dolnym miescie.
 };
 
 INSTANCE Info_Mod_VLK_17_Pickpocket (C_INFO)

@@ -15,27 +15,27 @@ FUNC INT Info_Mod_Klinger_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Klinger_Lehrer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_00"); //Tritt näher, Freund. Hier steht Klinger, der Herr der tödlichen Klinge.
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_01"); //Der Rächer der Betrogenen und Enterbten. Der Held des mörderischen Kampfes.
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_02"); //Der König unter den Kriegern.
-	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_03"); //Gut gebrüllt, Löwe!
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_04"); //Löwe?
-	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_05"); //Ein Tier, das auf dem Festland vorkommt. Brüllt wie ein Troll und ist genau so gefährlich.
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_06"); //Kenne ich nicht. Ich komme aus dem hohen Norden.
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_07"); //Mein Vater war der Geachtetste im Clan, meine Mutter die Schönste unter den Weibern und ich der mutigste Jüngling unter der Sonne.
-	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_08"); //Wie kommst du dann hier her?
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_09"); //Eine Intrige! Eine infame Verleumdung von einem niederträchtigen Nebenbuhler!
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_10"); //Die holde Maid war mir versprochen!
-	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_11"); //Eines Tages kamen die Schergen des Königs, verschleppten mich und warfen mich in die Barriere!
-	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_12"); //Das tut mir aber leid.
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_00"); //Podejdz prosto do góry, przyjaciel. Tutaj stoi Klinger, mistrz smiertelnego ostrza.
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_01"); //Wscieklosc zdradzonego i uwiklanego. Bohater morderczej walki.
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_02"); //Król wsród wojowników.
+	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_03"); //Dobrze oczyszczony, lew!
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_04"); //Leo?
+	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_05"); //Zwierze znalezione na ladzie stalym. Mówi sie jak troll i jest równie niebezpieczny.
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_06"); //Nigdy o nim nie slyszalem. Jestem z pólnocy.
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_07"); //Mój ojciec byl najstarszy w klanie, moja matka najpiekniejsza wsród kobiet i ja najodwazniejsza mlodosc pod sloncem.
+	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_08"); //Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_09"); //Intryga! Nieslawny oszczerca podlego rywala!
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_10"); //Obiecano mi panne na targach!
+	AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_11"); //Pewnego dnia przyszli poplecznicy króla, zabrali mnie i wrzucili do zapory!
+	AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_12"); //Przykro mi z tego powodu.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_13"); //Sag, kannst du mir was beibringen?
-		AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_14"); //Welche Frage! Ich bin der beste Nahkämpfer, den es gibt. Was solls sein?
+		AI_Output(hero, self, "Info_Mod_Klinger_Lehrer_15_13"); //Powiedz mi, czy mozesz mnie czegos nauczyc?
+		AI_Output(self, hero, "Info_Mod_Klinger_Lehrer_06_14"); //Jakie pytanie! Jestem najlepszym bojownikiem na swiecie. Co to moze byc?
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_WALDIS, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Klinger kann mir den Umgang mit Einhänder beibringen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_WALDIS, "Klinger moze nauczyc mnie obslugiwac ludzi jedna reka.");
 	};
 };
 
@@ -47,7 +47,7 @@ INSTANCE Info_Mod_Klinger_Lernen (C_INFO)
 	information	= Info_Mod_Klinger_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Klinger_Lernen_Condition()
@@ -61,7 +61,7 @@ FUNC INT Info_Mod_Klinger_Lernen_Condition()
 
 FUNC VOID Info_Mod_Klinger_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Klinger_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Klinger_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Klinger_Lernen);
 

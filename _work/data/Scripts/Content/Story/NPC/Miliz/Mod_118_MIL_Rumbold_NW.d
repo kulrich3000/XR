@@ -1,7 +1,7 @@
 instance Mod_118_MIL_Rumbold_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rumbold";	
+	name 		= "rumplet";	
 	guild 		= GIL_PAL;	
 	id 			= 118;
 	voice 		= 10;

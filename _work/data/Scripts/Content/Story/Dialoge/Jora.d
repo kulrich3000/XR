@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Jora_Hi_Condition()
 
 FUNC VOID Info_Mod_Jora_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jora_Hi_08_00"); //Hey du. Brauchst du 'ne Waffe oder sonst was? Ich kann dir was verkaufen.
+	AI_Output(self, hero, "Info_Mod_Jora_Hi_08_00"); //Hej, Ty. Potrzebujesz pistoletu lub czegos? Moge cos wam sprzedac.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Jora verkauft Waffen und andere Sachen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Jora sprzedaje bron i inne przedmioty.");
 };
 
 INSTANCE Info_Mod_Jora_MatteoLehrling1 (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Jora_MatteoLehrling1 (C_INFO)
 	information	= Info_Mod_Jora_MatteoLehrling1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hat sich da unter deinem Stand gerade etwas bewegt? (Apfel platzieren)";
+	description	= "Czy cos sie po prostu poruszylo pod twoimi stopami? (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Jora_MatteoLehrling1_Condition()
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Jora_MatteoLehrling2 (C_INFO)
 	information	= Info_Mod_Jora_MatteoLehrling2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, wird der da drüben nicht gesucht? (Apfel platzieren)";
+	description	= "Hej, nie szukaja go tam? (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Jora_MatteoLehrling2_Condition()
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Jora_MatteoLehrling3 (C_INFO)
 	information	= Info_Mod_Jora_MatteoLehrling3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schöne Äpfel hast du da ... (Apfel platzieren)";
+	description	= "Mile jablka, które tam masz.... (miescic jablko)";
 };
 
 FUNC INT Info_Mod_Jora_MatteoLehrling3_Condition()
@@ -130,7 +130,7 @@ INSTANCE Info_Mod_Jora_Blutkelch (C_INFO)
 	information	= Info_Mod_Jora_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie immer gut sortiert, dein Angebot.";
+	description	= "Jak zawsze dobrze posortowane, Twoja oferta.";
 };
 
 FUNC INT Info_Mod_Jora_Blutkelch_Condition()
@@ -144,9 +144,9 @@ FUNC INT Info_Mod_Jora_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Jora_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jora_Blutkelch_15_00"); //Wie immer gut sortiert, dein Angebot. Hast du vielleicht auch einen Blutkelch?
-	AI_Output(self, hero, "Info_Mod_Jora_Blutkelch_08_01"); //Nie gehört. Was soll das sein?
-	AI_Output(hero, self, "Info_Mod_Jora_Blutkelch_15_02"); //Weiß ich auch nicht genau. Bis ein andermal.
+	AI_Output(hero, self, "Info_Mod_Jora_Blutkelch_15_00"); //Jak zawsze dobrze posortowane, Twoja oferta. Masz kubek krwi?
+	AI_Output(self, hero, "Info_Mod_Jora_Blutkelch_08_01"); //Nigdy o tym nie slyszalem. Co to ma byc?
+	AI_Output(hero, self, "Info_Mod_Jora_Blutkelch_15_02"); //Tak naprawde nie wiem. Do zobaczenia nastepnym razem.
 };
 
 INSTANCE Info_Mod_Jora_Anschlagtafel (C_INFO)
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Jora_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Jora_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "Widzialem twój plakat na billboardzie....";
 };
 
 FUNC INT Info_Mod_Jora_Anschlagtafel_Condition()
@@ -194,12 +194,12 @@ FUNC VOID Info_Mod_Jora_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItFo_Schafswurst, Mod_Anschlagtafel_Khorinis_Jora_Schafswurst);
 		Npc_RemoveInvItems	(hero, ItRw_Arrow, Mod_Anschlagtafel_Khorinis_Jora_Pfeil);
 
-		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_00"); //Co? Pokaz mi.... W rzeczywistosci to wszystko. Bardzo dobrze wykonane.
+		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_01"); //Oto Twoja nagroda.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Jora_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Jora_Anschlagtafel_08_02"); //Mile robienie interesów z Toba.
 
 		if (Mod_Anschlagtafel_Khorinis_Jora_Gold < 200)
 		{

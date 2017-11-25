@@ -143,7 +143,7 @@ func int ZS_MM_Attack_Loop()
 		&& (Mod_TeleportZuFestung == 1)
 		{	
 			AI_Teleport(hero, "LOCATION_19_03_PATH_RUIN7");
-			B_LogEntry	(TOPIC_MOD_XERES, "Xeres hat mich wieder besiegt obwohl ich die Klaue Beliars bei mir hatte.");
+			B_LogEntry	(TOPIC_MOD_XERES, "Xeres pokonal mnie ponownie, mimo ze mialem pazur Beliarsa.");
 			Npc_RemoveInvItems	(hero, ItAm_Xardas_SchutzVorXeres, 1);
 		};
 	};

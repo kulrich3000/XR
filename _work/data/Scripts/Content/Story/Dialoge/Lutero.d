@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Lutero_Hi_Condition()
 
 FUNC VOID Info_Mod_Lutero_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lutero_Hi_13_00"); //Hey Fremder, suchst du was bestimmtest? Ich hab ein paar seltene Sachen hier.
+	AI_Output(self, hero, "Info_Mod_Lutero_Hi_13_00"); //Hej, czy szukasz czegos wyjatkowego? Dostalem tu kilka rzadkich rzeczy.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Lutero verkauft seltene Sachen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Lutero sprzedaje rzadkie rzeczy.");
 };
 
 INSTANCE Info_Mod_Lutero_Lutero (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Lutero_Lutero (C_INFO)
 	information	= Info_Mod_Lutero_Lutero_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Lutero_Lutero_Condition()
@@ -42,20 +42,20 @@ FUNC INT Info_Mod_Lutero_Lutero_Condition()
 
 FUNC VOID Info_Mod_Lutero_Lutero_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_01"); //Was willst d ... du bist von der Miliz? Was kann ich für dich tun?
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_02"); //Ich suche Lutero.
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_03"); //Oh… äh der ist fort. Ich bin Junur, sein Bruder.
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_04"); //Wohin ist Lutero gegangen?
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_05"); //Der? Ähm… Ich weiß es nicht. Vielleicht ins Minental. Ich bin erst heute angekommen und fand sein Haus leer vor.
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_06"); //Okay. Ich wollte mit ihm über etwas Wichtiges sprechen.
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_07"); //Etwas… Wichtiges?
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_08"); //Ja, es geht um den Erfinder.
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_09"); //U-u-um den Erfinder? Um was geht es genau? Habt ihr etwas über sein Verschwinden rausgefunden?
-	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_10"); //Woher weißt du vom Verschwinden des Erfinders? Du bist doch erst heute angekommen?
-	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_11"); //Ich … äh… ähm… Scheiße!
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_01"); //Co.....? Jestes milicja? Co moge dla Ciebie zrobic?
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_02"); //Szukam Lutero.
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_03"); //Och.... uh, on juz nie ma. Ja jestem Junur, jego brat.
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_04"); //Gdzie pojechal Lutero?
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_05"); //Kim? Um.... Nie wiem. Moze Minentalowi. Wlasnie przybylem dzis i znalazlem jego dom pusty.
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_06"); //Okay. Chcialem z nim porozmawiac o czyms waznym.
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_07"); //Cos waznego?
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_08"); //Tak, chodzi o wynalazce.
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_09"); //U-u-u-u - o wynalazcy? O co dokladnie chodzi? Czy dowiedziales sie czegos o jego zniknieciu?
+	AI_Output(hero, self, "Info_Mod_Lutero_Lutero_15_10"); //Skad wiesz o zniknieciu wynalazcy? Przyjechales tu dzis, czyz nie?
+	AI_Output(self, hero, "Info_Mod_Lutero_Lutero_13_11"); //Jestem, uh, um, um, gówno!
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Lutero ist abgehauen, er scheint gemerkt zu haben, dass ich sein Spiel durchschaut habe. Vielleicht sollte ich mich hier mal umsehen, es könnte sein, dass er hier irgendeine Notiz oder so hat liegen lassen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Lutero uciekl, jak sie wydaje, zauwazyl, ze widzialem przez jego gre. Moze powinienem rozejrzec sie dookola, moze zostawil troche uwagi lub cos tutaj.");
 
 	AI_StopProcessInfos	(self);
 	
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Lutero_SonjaFreier (C_INFO)
 	information	= Info_Mod_Lutero_SonjaFreier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du Sonja früher regelmäßig besucht?";
+	description	= "Czy regularnie odwiedzales Sonje?";
 };
 
 FUNC INT Info_Mod_Lutero_SonjaFreier_Condition()
@@ -89,10 +89,10 @@ FUNC INT Info_Mod_Lutero_SonjaFreier_Condition()
 
 FUNC VOID Info_Mod_Lutero_SonjaFreier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lutero_SonjaFreier_15_00"); //Hast du Sonja früher regelmäßig besucht?
-	AI_Output(self, hero, "Info_Mod_Lutero_SonjaFreier_13_01"); //Ein, zwei Mal vielleicht. Aber Nadja gefiel mir schon immer besser.
-	AI_Output(self, hero, "Info_Mod_Lutero_SonjaFreier_13_02"); //(vertraulich) Ich hatte ihr sogar mal versprochen, sie zu heiraten. Hoffentlich hat sie es vergessen.
-	AI_Output(hero, self, "Info_Mod_Lutero_SonjaFreier_15_03"); //Dann bist du auch nicht der, den ich suche.
+	AI_Output(hero, self, "Info_Mod_Lutero_SonjaFreier_15_00"); //Czy regularnie odwiedzales Sonje?
+	AI_Output(self, hero, "Info_Mod_Lutero_SonjaFreier_13_01"); //Moze raz lub dwa razy. Ale Nadja zawsze mi sie jednak lepiej podobalo.
+	AI_Output(self, hero, "Info_Mod_Lutero_SonjaFreier_13_02"); //Obiecalem ja nawet kiedys poslubic. Mam nadzieje, ze zapomniala.
+	AI_Output(hero, self, "Info_Mod_Lutero_SonjaFreier_15_03"); //Wtedy nie jestes tym, kogo szukam.
 };
 
 INSTANCE Info_Mod_Lutero_Blutkelch (C_INFO)
@@ -103,7 +103,7 @@ INSTANCE Info_Mod_Lutero_Blutkelch (C_INFO)
 	information	= Info_Mod_Lutero_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist doch Raritätenhändler?";
+	description	= "Jestes dealerem rzadkosci, czy nie?";
 };
 
 FUNC INT Info_Mod_Lutero_Blutkelch_Condition()
@@ -117,15 +117,15 @@ FUNC INT Info_Mod_Lutero_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Lutero_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_00"); //Du bist doch Raritätenhändler?
-	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_01"); //Wohl war. Leider, könnte man sagen.
-	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_02"); //Warum leider?
-	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_03"); //Die Leute hier in der Stadt interessieren sich kaum für Raritäten.
-	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_04"); //Nicht mal meine Seide werde ich hier los. Feinste Ware vom Festland ...
-	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_05"); //Dann solltest du mal nach Relendel gehen. In Khorata gibt's einen Raritätenverkäufer, dem reißen die Leute die Ware aus den Händen.
-	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_06"); //Ist nicht wahr! Relendel sagst du? Soll ziemlich weit sein. Hmm ... Vielleicht sollte ich ...
-	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_07"); //Vielleicht kommen wir ins Geschäft. Einen Kelch suche ich. Einen Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_08"); //Nie von sowas gehört. Außerdem handle ich nicht mit Trinkgefäßen.
+	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_00"); //Jestes dealerem rzadkosci, czy nie?
+	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_01"); //Bylo dobrze. Niestety, mozna powiedziec.
+	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_02"); //Dlaczego niestety?
+	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_03"); //Mieszkancy miasta nie sa zainteresowani rzadkoscia.
+	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_04"); //Nie moge nawet pozbyc sie jedwabiu. Wyroby finalne z ladu stalego....
+	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_05"); //Nastepnie nalezy udac sie do Relendel. W Khoracie jest sprzedawca rarytasów, ludzie wyrywaja towar z rak.
+	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_06"); //To nieprawda! Powiedziales, ze powinienes sie przylaczyc? To ma byc dosc daleko. Hmm..... Moze powinienem.....
+	AI_Output(hero, self, "Info_Mod_Lutero_Blutkelch_15_07"); //Moze uda nam sie zawrzec porozumienie. Szukam filizanki. Filizanka krwi.
+	AI_Output(self, hero, "Info_Mod_Lutero_Blutkelch_13_08"); //Nigdy o tym nie slyszalem. Poza tym nie zajmuje sie na statkach do picia.
 };
 
 INSTANCE Info_Mod_Lutero_Anschlagtafel (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Lutero_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Lutero_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "Widzialem twój plakat na billboardzie....";
 };
 
 FUNC INT Info_Mod_Lutero_Anschlagtafel_Condition()
@@ -179,12 +179,12 @@ FUNC VOID Info_Mod_Lutero_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItAt_DemonHeart, Mod_Anschlagtafel_Khorinis_Lutero_Daemonenherz);
 		Npc_RemoveInvItems	(hero, ItMi_GoldRing, Mod_Anschlagtafel_Khorinis_Lutero_Goldring);
 
-		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_00"); //Co? Pokaz mi.... W rzeczywistosci to wszystko. Bardzo dobrze wykonane.
+		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_01"); //Oto Twoja nagroda.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Lutero_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Lutero_Anschlagtafel_13_02"); //Mile robienie interesów z Toba.
 
 		if (Mod_Anschlagtafel_Khorinis_Lutero_Gold < 200)
 		{

@@ -1,7 +1,7 @@
 instance Mod_1962_OUT_Lorforn_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lorforn";
+	name 		= "Worforn";
 	guild 		= GIL_OUT;
 	id 			= 1962;
 	voice 		= 6;

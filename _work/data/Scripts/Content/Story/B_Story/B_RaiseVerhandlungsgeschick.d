@@ -4,13 +4,13 @@ FUNC VOID B_RaiseHandelsgeschick (var int wert)
 
 	if (Mod_Verhandlungsgeschick+wert > 100)
 	{
-		Text = ConcatStrings("Handelsgeschick: +", IntToString(100-Mod_Verhandlungsgeschick));
+		Text = ConcatStrings("Umiejetnosci handlowe: + + + + +", IntToString(100-Mod_Verhandlungsgeschick));
 
 		Mod_Verhandlungsgeschick = 100;
 	}
 	else
 	{
-		Text = ConcatStrings("Handelsgeschick: +", IntToString(wert));
+		Text = ConcatStrings("Umiejetnosci handlowe: + + + + +", IntToString(wert));
 
 		Mod_Verhandlungsgeschick += wert;
 	};

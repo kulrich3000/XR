@@ -1,7 +1,7 @@
 instance Mod_7703_OUT_Froppi_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Froppi"; 
+	name 		= "fropka"; 
 	guild 		= GIL_OUT;
 	id 			= 7703;
 	voice 		= 9;

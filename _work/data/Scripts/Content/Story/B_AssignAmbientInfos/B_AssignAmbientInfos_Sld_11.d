@@ -37,7 +37,7 @@ INSTANCE Info_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will ein Söldner werden.";
+	description = "Chce byc najemnikiem.";
 };                       
 
 FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
@@ -50,12 +50,12 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Ich will ein Söldner werden.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Das ist nicht schwer. Wenn du für unsere Sache kämpfen willst, wird Lee dich nehmen.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Aber er nimmt nur Leute, die gut mit dem Schwert umgehen können. Wie sieht's damit bei dir aus?
-	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Nun ...
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Dachte ich mir. Wenn es dir wirklich ernst ist, rede mit Cord. Er hat schon mal einen Frischling ausgebildet.
-	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Vielleicht hast du ja Glück und er macht sich auch bei dir die Mühe.
+	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Chce byc najemnikiem.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Nie jest to trudne. Jesli chcesz walczyc o nasza sprawe, Lee cie zabierze.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Ale on bierze tylko ludzi, którzy sa dobrzy z mieczem. A co z tym?
+	AI_Output(hero,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //....
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Pomyslalem, ze mozesz. Jesli jestes powazny, porozmawiaj z Cordem. Pewnego razu wyszkolil swiezca.
+	AI_Output(self,hero,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Byc moze masz szczescie, a on równiez Cie zatroszczy.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT Info_Sld_11_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,hero,"Info_Sld_11_WichtigePersonen_11_01"); //Im Grunde regelt Lee alles. Er ist unser Anführer.
+	AI_Output(hero,self,"Info_Sld_11_WichtigePersonen_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output(self,hero,"Info_Sld_11_WichtigePersonen_11_01"); //Zasadniczo Lee zajmuje sie wszystkim. On jest naszym przywódca.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Sld_11_DasLager(C_INFO)
 	condition	= Info_Sld_11_DasLager_Condition;
 	information	= Info_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Gibt es Probleme hier im Lager?";
+	description = "Czy jest tu problem w obozie?";
 };                       
 
 FUNC INT Info_Sld_11_DasLager_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Sld_11_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_DasLager_15_00"); //Gibt es Probleme hier im Lager?
-	AI_Output(self,hero,"Info_Sld_11_DasLager_11_01"); //Junge, hier gibt es immer Probleme.
+	AI_Output(hero,self,"Info_Sld_11_DasLager_15_00"); //Czy jest tu problem w obozie?
+	AI_Output(self,hero,"Info_Sld_11_DasLager_11_01"); //Chlopiec, zawsze jest tu klopot.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Sld_11_DieLage_Condition;
 	information	= Info_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Alles klar bei dir?";
+	description = "Wszystko jest w porzadku?";
 };                       
 
 FUNC INT Info_Sld_11_DieLage_Condition()
@@ -126,11 +126,11 @@ FUNC INT Info_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Sld_11_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Sld_11_DieLage_15_00"); //Alles klar bei dir?
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_01"); //Noch ist alles ruhig ...
-	AI_Output(hero,self,"Info_Sld_11_DieLage_15_02"); //Noch?
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_03"); //Wenn die ehemaligen Banditen weiter Artos' Konvois überfallen, steht er irgendwann mit seiner Armee hier vor dem Tor.
-	AI_Output(self,hero,"Info_Sld_11_DieLage_11_04"); //Und das wird bestimmt kein Spaß.
+	AI_Output(hero,self,"Info_Sld_11_DieLage_15_00"); //Wszystko jest w porzadku?
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_01"); //Wszystko jest jeszcze spokojne....
+	AI_Output(hero,self,"Info_Sld_11_DieLage_15_02"); //Nadal jednak?
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_03"); //Jesli byli bandyci nadal atakuja konwoje Artosa, on i jego armia stana przed brama.
+	AI_Output(self,hero,"Info_Sld_11_DieLage_11_04"); //I to nie jest zabawa.
 };
 
 INSTANCE Info_Mod_SLD_11_Pickpocket (C_INFO)

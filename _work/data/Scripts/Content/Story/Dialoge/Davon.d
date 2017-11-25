@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Davon_Hi (C_INFO)
 	information	= Info_Mod_Davon_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Davon_Hi_Condition()
@@ -18,8 +18,8 @@ FUNC VOID Info_Mod_Davon_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Davon_Hi_24_01"); //Ich bin bei Friedel in der Ausbildung. Ich will später ein guter Soldat werden!
-	AI_Output(self, hero, "Info_Mod_Davon_Hi_24_02"); //Frag Friedel, wenn du gut im Schwertkampf werden willst.
+	AI_Output(self, hero, "Info_Mod_Davon_Hi_24_01"); //Szkole sie z Friedelem. Chce pózniej byc dobrym zolnierzem!
+	AI_Output(self, hero, "Info_Mod_Davon_Hi_24_02"); //Popros Friedela, jesli chcesz byc dobry podczas mieczenia.
 };
 
 INSTANCE Info_Mod_Davon_Wettstreit (C_INFO)
@@ -45,34 +45,34 @@ FUNC INT Info_Mod_Davon_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Davon_Wettstreit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit_24_00"); //He, du bist echt gut, Mann. (verlegen) Allerdings habe ich eine kleine Bitte.
-	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_15_01"); //Was für eine Bitte?
-	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit_24_02"); //Überlass mir das Preisgeld. Ich bekomme kein Gehalt und habe Gold wirklich nötig.
+	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit_24_00"); //Hej, jestes naprawde dobry, czlowiek. Mam jednak mala prosbe.
+	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_15_01"); //Jakie zapytanie?
+	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit_24_02"); //Pozostaw mi pieniadze na nagrody. Nie dostaje pensji i naprawde potrzebuje zlota.
 
 	Info_ClearChoices	(Info_Mod_Davon_Wettstreit);
 
-	Info_AddChoice	(Info_Mod_Davon_Wettstreit, "Das Gold brauche ich selbst.", Info_Mod_Davon_Wettstreit_B);
-	Info_AddChoice	(Info_Mod_Davon_Wettstreit, "Ich werde dir das Preisgeld bringen.", Info_Mod_Davon_Wettstreit_A);
+	Info_AddChoice	(Info_Mod_Davon_Wettstreit, "Sama potrzebuje zlota.", Info_Mod_Davon_Wettstreit_B);
+	Info_AddChoice	(Info_Mod_Davon_Wettstreit, "Dostane Ci nagrode pieniezna.", Info_Mod_Davon_Wettstreit_A);
 };
 
 FUNC VOID Info_Mod_Davon_Wettstreit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_B_15_00"); //Das Gold brauche ich selbst.
+	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_B_15_00"); //Sama potrzebuje zlota.
 
 	Info_ClearChoices	(Info_Mod_Davon_Wettstreit);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Davon hat mich um das Preisgeld von Friedel gebeten, aber das brauche ich selbst.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "To wlasnie o nagrode pieniezna od Friedela poprosilem mnie, ale sama jej potrzebuje.");
 };
 
 FUNC VOID Info_Mod_Davon_Wettstreit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_A_15_00"); //Ich werde dir das Preisgeld bringen.
+	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit_A_15_00"); //Dostane Ci nagrode pieniezna.
 
 	Mod_REL_Wettstreit_Gold = 1;
 
 	Info_ClearChoices	(Info_Mod_Davon_Wettstreit);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Ich habe Davon versprochen, ihm das Preisgeld von Friedel zu überlassen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "Obiecalem im, ze daje mu pieniadze na nagrody Friedela.");
 };
 
 INSTANCE Info_Mod_Davon_Wettstreit2 (C_INFO)
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Davon_Wettstreit2 (C_INFO)
 	information	= Info_Mod_Davon_Wettstreit2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du das Preisgeld.";
+	description	= "Oto nagrody pieniezne.";
 };
 
 FUNC INT Info_Mod_Davon_Wettstreit2_Condition()
@@ -99,11 +99,11 @@ FUNC INT Info_Mod_Davon_Wettstreit2_Condition()
 
 FUNC VOID Info_Mod_Davon_Wettstreit2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit2_15_00"); //Hier hast du das Preisgeld.
+	AI_Output(hero, self, "Info_Mod_Davon_Wettstreit2_15_00"); //Oto nagrody pieniezne.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit2_24_01"); //Vielen Dank! Davon werde ich in nächster Zeit leben können. Du bist ein guter Kerl.
+	AI_Output(self, hero, "Info_Mod_Davon_Wettstreit2_24_01"); //Bardzo dziekuje! W niedalekiej przyszlosci bede mógl to zrobic. Jestes dobrym facetem.
 
 	B_GivePlayerXP	(100);
 
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Davon_Unruhen (C_INFO)
 	information	= Info_Mod_Davon_Unruhen_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Ich brauche dich im Kampf gegen die Aufrührer.";
+	description 	= "Potrzebuje pana do walki z powstancami.";
 };                       
 
 FUNC INT Info_Mod_Davon_Unruhen_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Mod_Davon_Unruhen_Condition()
 
 FUNC VOID Info_Mod_Davon_Unruhen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Davon_Unruhen_15_00"); //Ich brauche dich im Kampf gegen die Aufrührer.
-	AI_Output(self, hero, "Info_Mod_Davon_Unruhen_24_01"); //Meine erste Bewährungsprobe! Ich bin schon ganz aufgeregt ...
+	AI_Output(hero, self, "Info_Mod_Davon_Unruhen_15_00"); //Potrzebuje pana do walki z powstancami.
+	AI_Output(self, hero, "Info_Mod_Davon_Unruhen_24_01"); //Mój pierwszy test! Jestem juz bardzo podekscytowany.....
 
 	AI_StopProcessInfos	(self);
 
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Davon_Freudenspender (C_INFO)
 	information	= Info_Mod_Davon_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Brauchst du Entspannung? Ich hätte da was ...";
+	description 	= "Musisz sie zrelaksowac? Dostalem cos.....";
 };                       
 
 FUNC INT Info_Mod_Davon_Freudenspender_Condition()
@@ -165,8 +165,8 @@ FUNC INT Info_Mod_Davon_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Davon_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Davon_Freudenspender_15_00"); //Brauchst du Entspannung? Ich hätte da was ...
-	AI_Output(self, hero, "Info_Mod_Davon_Freudenspender_24_01"); //Hey, du hast Freudenspender? Gib schnell her, bevor Friedel was bemerkt.
+	AI_Output(hero, self, "Info_Mod_Davon_Freudenspender_15_00"); //Musisz sie zrelaksowac? Dostalem cos.....
+	AI_Output(self, hero, "Info_Mod_Davon_Freudenspender_24_01"); //Hej, dostales przysmaki? Daj mi ja, zanim Friedel cokolwiek zauwazy.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

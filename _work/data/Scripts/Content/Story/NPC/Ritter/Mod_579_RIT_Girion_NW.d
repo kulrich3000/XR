@@ -1,7 +1,7 @@
 instance Mod_579_RIT_Girion_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Girion";
+	name 		= "dziewczynka";
 	guild 		= GIL_PAL;
 	id 			= 579;
 	voice 		= 8;

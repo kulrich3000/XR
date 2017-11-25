@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Guru_Gelaber (C_INFO)
 	information	= Info_Mod_Guru_Gelaber_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey.";
+	description	= "Hej.";
 };
 
 FUNC INT Info_Mod_Guru_Gelaber_Condition()
@@ -19,17 +19,17 @@ FUNC INT Info_Mod_Guru_Gelaber_Condition()
 
 FUNC VOID Info_Mod_Guru_Gelaber_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_00"); //Hey.
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_01"); //AAAAHHH! Ein neues paar Ohren für meine BOOOOTSCHAFT. So höre denn:
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_02"); //Nicht länger müsst ihr euch vorm Schläfer fürchten. Der schläft. Angst und Grauen solltet ihr jedoch empfinden vor dem einen, dem WÄCHTER! Er wacht! ERWACHT WÄCHTER!
-	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_03"); //Ganz ruhig, komm mal mit.
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_04"); //Wage es nicht mich, der ich wache, anzufassen, Schlafender!
-	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_05"); //Muss ich dich aus der Stadt prügeln?
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_06"); //Fass mich nicht an!
+	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_00"); //Hej.
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_01"); //AAAAHHH! Nowa para uszu dla mojego BOOOOTSCHAFT. Sluchaj:
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_02"); //Nie musisz sie juz bac sypialni. On spi. Ale powinienes poczuc strach i przerazenie przed ta jedyna, GUARDA! On jest na strazy! BUDZI WIECEJ OBUDZENIA!
+	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_03"); //Wezcie to latwo, przyjdzcie ze mna.
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_04"); //Nie osmielisz sie mnie dotknac, senny!
+	AI_Output(hero, self, "Info_Mod_Guru_Gelaber_15_05"); //Czy musze cie pokonac poza miastem?
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_06"); //Nie dotykaj mnie!
 
 	B_ReadySpell	(self, SPL_FireRain, SPL_Cost_Firerain);
 
-	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_07"); //Niahahahaha! Ihr werdet alle in einem Feuerregen sterben! Doch keine Angst, ICH werde euch wiedererwecken und wir werden zusammen wachen!
+	AI_Output(self, hero, "Info_Mod_Guru_Gelaber_11_07"); //Niahahahahahahahahaha! Wszyscy umrzesz w deszczu ognia! Ale nie martwcie sie, wskrzesze was i obudzimy sie razem!
 
 	Wld_InsertNpc	(HeroBot_NW, "NW_CITY_MERCHANT_PATH_29");
 

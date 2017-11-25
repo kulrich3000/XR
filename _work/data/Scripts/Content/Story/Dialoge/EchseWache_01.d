@@ -29,7 +29,7 @@ func int Info_Mod_EchseWache_01_FirstWarn_Condition()
 
 func void Info_Mod_EchseWache_01_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_EchseWache_01_FirstWarn_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_01_FirstWarn_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, EchseWache_01_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -75,7 +75,7 @@ FUNC INT Info_Mod_EchseWache_01_SecondWarn_Condition()
 
 func void Info_Mod_EchseWache_01_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_EchseWache_01_SecondWarn_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_01_SecondWarn_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,EchseWache_01_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -113,7 +113,7 @@ func void Info_Mod_EchseWache_01_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_EchseWache_01_Attack_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
+	AI_Output (self, hero,"Info_Mod_EchseWache_01_Attack_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
 
 	AI_StopProcessInfos	(self);	
 

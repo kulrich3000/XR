@@ -1,7 +1,7 @@
 INSTANCE Mod_516_SNOV_Bodo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bodo";
+	name 		= "bodo";
 	guild 		= GIL_OUT;
 	id 			= 516;
 	voice 		= 36;

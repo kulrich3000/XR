@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Snapper(C_Npc)			
 {
 	//---- Monster ----
-	name							=	"Snapper";
+	name							=	"snaper";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SNAPPER;
 	level							=	12;
@@ -193,7 +193,7 @@ INSTANCE JaegerSnapper2	(Mst_Default_Snapper)
 
 INSTANCE FeuerSnapper	(Mst_Default_Snapper)
 {
-	name	= "Feuersnapper";
+	name	= "ogniotrwaly";
 
 	level = 45;
 
@@ -222,7 +222,7 @@ INSTANCE FeuerSnapper	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "lapacz wody";
 
 	level = 15;
 	effect	= "SPELLFX_ICEARMOR";
@@ -235,7 +235,7 @@ INSTANCE WasserSnapper	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_01	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "lapacz wody";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -251,7 +251,7 @@ INSTANCE WasserSnapper_Joe_01	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_02	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "lapacz wody";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -267,7 +267,7 @@ INSTANCE WasserSnapper_Joe_02	(Mst_Default_Snapper)
 
 INSTANCE WasserSnapper_Joe_03	(Mst_Default_Snapper)
 {
-	name	= "Wassersnapper";
+	name	= "lapacz wody";
 	guild = GIL_SHEEP;
 
 	level = 15;
@@ -283,7 +283,7 @@ INSTANCE WasserSnapper_Joe_03	(Mst_Default_Snapper)
 
 INSTANCE SchattenSnapper	(Mst_Default_Snapper)
 {
-	name	= "Schattensnapper";
+	name	= "cieniowanie";
 
 	level = 45;
 

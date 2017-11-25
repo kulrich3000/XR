@@ -1,7 +1,7 @@
 instance Mod_7700_PAL_Paladin_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Paladin";
+	name 		= "paladyn";
 	guild 		= GIL_OUT;
 	id 			= 7700;
 	voice 		= 3;

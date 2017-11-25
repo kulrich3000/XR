@@ -15,16 +15,16 @@ FUNC INT Info_Mod_HofstaatKoenig_MT_AtStrand_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_MT_AtStrand_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_00"); //Es ist ... Unbeschreiblich schön. Ich würde alles tun um ein Bündnis mit diesem stolzen Land zu erzielen.
-	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_MT_AtStrand_15_01"); //Dazu müsst ihr lediglich dem stolzen Volk des Sumpfes absolute finanzielle Sicherheit gewähren.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_02"); //So sei es! Kehrwisch, ihr habt mich nicht enttäuscht. Ihr habt eurem König wieder glücklich gemacht!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_03"); //Kommt nachts wieder, da werden wir ein Fest feiern, wie noch nie zuvor ein Fest gefeiert wurde!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_00"); //To..... Niepoznawalne piekne. Zrobie wszystko, aby zawrzec sojusz z tym dumnym krajem.
+	AI_Output(hero, self, "Info_Mod_HofstaatKoenig_MT_AtStrand_15_01"); //Wystarczy dac dumnym mieszkancom bagna absolutne bezpieczenstwo finansowe.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_02"); //Wiec niech tak bedzie! Flip-flop, nie zawiódles mnie. Uszczesliwiles sie ponownie!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_AtStrand_06_03"); //Wracajac w nocy, bedziemy mieli impreze jak nigdy wczesniej!
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "FEST");
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Der König ist begeistert und möchte ein Fest feiern. Ich soll nachts wieder kommen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_KING, "Król jest zachwycony i chce swietowac. Wracam w nocy.");
 };
 
 INSTANCE Info_Mod_HofstaatKoenig_MT_Fest (C_INFO)
@@ -48,11 +48,11 @@ FUNC INT Info_Mod_HofstaatKoenig_MT_Fest_Condition()
 
 FUNC VOID Info_Mod_HofstaatKoenig_MT_Fest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_00"); //Kehrwisch! Da seid ihr ja! Seht ihr das? Alles zu euren Ehren!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_01"); //Wir feiern hier jetzt nicht nur das Bündnis der Bruderschaft des Sumpfes und de, Hofstaat.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_02"); //Wir feiern auch eure Beförderung! Der Höchste Titel des Reiches soll euch nun zieren.
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_03"); //Von diesem Tag an und bis in alle Ewigkeit sollt ihr bekannt sein als der königliche Bademeister!
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_04"); //Und nun lasst uns feiern als ob es kein morgen gäbe, hier an diesem Strand ... dem Freistrand!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_00"); //Zrzuty! Jestes! Widzisz to? Wszystko na Twoja czesc!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_01"); //Nie tylko swietujemy sojusz Braterskiego Bractwa Swamp i Sadu.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_02"); //Swietujemy równiez Twoja promocje! Najwyzszy tytul królestwa zdobi cie teraz.
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_03"); //Od tego dnia do wiecznosci bedziesz znany jako królewski ratownik!
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_MT_Fest_06_04"); //A teraz swietujmy jak gdyby nie bylo jutro, tu na tej plazy..... Bezplatna plaza!
 
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, LOG_SUCCESS);
 	B_GivePlayerXP	(1500);

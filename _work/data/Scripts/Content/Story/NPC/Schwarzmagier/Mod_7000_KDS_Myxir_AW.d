@@ -1,7 +1,7 @@
 INSTANCE Mod_7000_KDS_Myxir_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Myxir";
+	name 		= "mikser";
 	guild 		= GIL_KDF; 
 	id 			= 7000;
 	voice 		= 28;

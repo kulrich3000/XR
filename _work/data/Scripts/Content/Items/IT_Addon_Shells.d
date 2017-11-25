@@ -70,7 +70,7 @@ FUNC VOID B_OpenShell()
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Shell_01(C_Item)
 {
-	name 		=	"Klappmuschel";
+	name 		=	"malz";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;
@@ -99,7 +99,7 @@ FUNC VOID Use_Shell_01()
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Shell_02(C_Item)
 {
-	name 		=	"Hornmuschel";
+	name 		=	"tuba";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;

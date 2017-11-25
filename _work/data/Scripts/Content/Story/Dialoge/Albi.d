@@ -18,109 +18,109 @@ FUNC INT Info_Mod_Albi_Hi_Condition()
 
 FUNC VOID Info_Mod_Albi_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_23_00"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_15_01"); //Könntest du das vielleicht wiederholen?
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_23_02"); //Schhhhschshshshshshshshhhhhhhhhhhhh.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_23_00"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_15_01"); //Czy móglbys to powtarzac?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_23_02"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshsh.
 
 	Info_ClearChoices	(Info_Mod_Albi_Hi);
 
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Versuch's nochmal gaaaaaaaaaaaaaaaaaanz laaaaaaaangsam.", Info_Mod_Albi_Hi_B);
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Ich verstehe kein Wort.", Info_Mod_Albi_Hi_A);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Ponownie spróbuj, ufaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", Info_Mod_Albi_Hi_B);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Nie rozumiem slowa.", Info_Mod_Albi_Hi_A);
 };
 
 FUNC VOID Info_Mod_Albi_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_00"); //Verstehst du mich?
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_C_15_01"); //Du sprichst die Sprache der Erbauer?
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_02"); //Hast du verstanden, was ich gesagt habe?
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_C_15_03"); //Ja ... du hast mich gefragt ob ich dich verstehe ...?
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_04"); //(energisch) Ich meinte davor!
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_00"); //Czy rozumiesz mnie?
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_C_15_01"); //Mówisz jezykiem budowniczych?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_02"); //Rozumiesz, co mówie?
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_C_15_03"); //Tak..... zapytales mnie, czy rozumiem....?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_C_23_04"); //Mialem na mysli wczesniej!
 
 	Info_ClearChoices	(Info_Mod_Albi_Hi);
 
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Ahm ... sowas wie Schhcschsh?", Info_Mod_Albi_Hi_E);
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Nein, kein Wort.", Info_Mod_Albi_Hi_D);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Um.... jak szhcsh?", Info_Mod_Albi_Hi_E);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Nie, nie slowo.", Info_Mod_Albi_Hi_D);
 };
 
 FUNC VOID Info_Mod_Albi_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_B_15_00"); //Versuch's nochmal gaaaaaaaaaaaaaaaaaanz laaaaaaaangsam.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_B_15_00"); //Ponownie spróbuj, ufaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 	Info_Mod_Albi_Hi_C();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_A_15_00"); //Ich verstehe kein Wort.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_A_15_00"); //Nie rozumiem slowa.
 
 	Info_Mod_Albi_Hi_C();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_F()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_F_23_00"); //Ich habe dir deine Freiheit angeboten, wenn du mir sagen kannst, welche Farbe meine Schuppen haben.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_F_23_00"); //Zaproponowalem Ci wolnosc, jesli mozesz mi powiedziec jaki jest mój lupiez.
 
 	Info_ClearChoices	(Info_Mod_Albi_Hi);
 
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Weiß!!!!", Info_Mod_Albi_Hi_H);
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Warum?", Info_Mod_Albi_Hi_G);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Zapraszamy!", Info_Mod_Albi_Hi_H);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Dlaczego?", Info_Mod_Albi_Hi_G);
 };
 
 FUNC VOID Info_Mod_Albi_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_E_15_00"); //Ahm ... sowas wie Schhcschsh?
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_E_15_00"); //Um.... jak szhcsh?
 
 	Info_Mod_Albi_Hi_F();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_D_15_00"); //Nein, kein Wort.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_D_15_00"); //Nie, nie slowo.
 
 	Info_Mod_Albi_Hi_F();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_I()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_I_23_00"); //Ich musste herrausfinden, ob du unsere Sprache sprichst. Offensichtlich nicht.
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_I_15_01"); //Ich wiederhole mich, aber Warum?!
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_I_23_02"); //Ich brauche deine Hilfe. Und nur jemand, der unsere Sprache nicht spricht, kann mir helfen.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_I_23_00"); //Musialem sie dowiedziec, czy mówisz naszym jezykiem. Oczywiscie nie.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_I_15_01"); //Powtarzam sie, ale dlaczego?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_I_23_02"); //Potrzebuje panstwa pomocy. Tylko ktos, kto nie mówi w naszym jezyku, moze mi pomóc.
 
 	Info_ClearChoices	(Info_Mod_Albi_Hi);
 
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Wie kommst du darauf, dass ich dir helfe?", Info_Mod_Albi_Hi_K);
-	Info_AddChoice	(Info_Mod_Albi_Hi, "Worum geht es?", Info_Mod_Albi_Hi_J);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Co sprawia, ze myslisz, ze pomagam ci?", Info_Mod_Albi_Hi_K);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "Co o tym chodzi?", Info_Mod_Albi_Hi_J);
 };
 
 FUNC VOID Info_Mod_Albi_Hi_H()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_H_15_00"); //Weiß!!!!
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_H_23_01"); //Schweig!
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_H_15_00"); //Zapraszamy!
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_H_23_01"); //Wylaczyc!
 
 	Info_Mod_Albi_Hi_I();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_G()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_G_15_00"); //Warum?
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_G_15_00"); //Dlaczego?
 
 	Info_Mod_Albi_Hi_I();
 };
 
 FUNC VOID Info_Mod_Albi_Hi_J()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_J_15_00"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_01"); //Du musst zur anderen Seite des Sumpfes. Aber ich werde dir morgen genaueres sagen.
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_02"); //Ruh dich aus und komm morgen zum Ausgang der Stadt.
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_03"); //Aber such dir zum Schlafen ein Lager außerhalb der Hütten!
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_J_15_04"); //Na gut ...
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_05"); //Hier, nimm das.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_J_15_00"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_01"); //Musisz udac sie na druga strone bagna. Ale jutro powiem ci wiecej.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_02"); //Przygotuj troche odpoczynku i przyjdz jutro do wyjscia z miasta.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_03"); //Ale znajdz miejsce do spania poza chatkami!
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_J_15_04"); //Wszystko w porzadku....
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_05"); //Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_MerkwuerdigesDing, 1);
 
 	B_Say	(hero, self, "$WASISTDAS");
 
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_06"); //Lege es ins Feuer in der Schmiede. Nimm, was übrigbleibt. Davon kannst du beim Echsenhändler Heilkräuter kaufen. Du wirst sie brauchen. Geh jetzt.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_J_23_06"); //Wlóz go do ognia w kuzni. Wez to, co zostalo. Ziola mozna kupic u sprzedawcy jaszczurki. Potrzebujesz go. Odejdz teraz.
 
 	Mod_EchsenTag = Wld_GetDay();
 
@@ -132,15 +132,15 @@ FUNC VOID Info_Mod_Albi_Hi_J()
 
 	B_StartOtherRoutine	(self, "HUT");
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Albi, scheinbar das Oberhaupt der Echsenmenschen, hat eine wichtige Aufgabe für mich. Leider haben sie auch meine komplette Ausrüstung beschlagnahmt. Er hat mir ein merkwürdiges Ding gegeben. Ich soll es ins Feuer in der Schmiede legen und das nehmen, was übrig bleibt. Davon kann ich dann beim Echsenhändler Heilkräuter kaufen. Morgen soll ich zum Ausgang der Stadt gehen, wo Albi mir näheres zu meiner Aufgabe erklären wird.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Albi, najwyrazniej glowa jaszczurki, ma dla mnie wazne zadanie. Niestety, skonfiskowali tez caly mój sprzet. Dal mi dziwne rzeczy. Mam go podpalic w kuzni i zabrac to, co zostalo. Ziola lecznicze moge kupic u sprzedawcy jaszczurki. Jutro udam sie na wyjscie z miasta, gdzie Albi opowie mi wiecej o moim zadaniu.");
 };
 
 FUNC VOID Info_Mod_Albi_Hi_K()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_K_15_00"); //Wie kommst du darauf, dass ich dir helfe?
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_K_23_01"); //Zum einen haben wir deine gesamten Besitztümer.
-	AI_Output(self, hero, "Info_Mod_Albi_Hi_K_23_02"); //Zum anderen bist du ein Gefangener und wenn du uns nicht hilfst, werden wir dich zu den Haien stecken.
-	AI_Output(hero, self, "Info_Mod_Albi_Hi_K_15_03"); //Überredet.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_K_15_00"); //Co sprawia, ze myslisz, ze pomagam ci?
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_K_23_01"); //Po pierwsze, mamy wszystkie wasze mienie.
+	AI_Output(self, hero, "Info_Mod_Albi_Hi_K_23_02"); //Z drugiej strony jestes wiezniem, a jesli nam nie pomozesz, bedziemy Cie z rekinami.
+	AI_Output(hero, self, "Info_Mod_Albi_Hi_K_15_03"); //Przekonani.
 
 	Info_Mod_Albi_Hi_J();
 };
@@ -165,13 +165,13 @@ FUNC INT Info_Mod_Albi_Wuerdebeweis_Condition()
 
 FUNC VOID Info_Mod_Albi_Wuerdebeweis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebeweis_23_00"); //Du musst ein Ritual überstehen. Besiege den Hai und du bist würdig!
-	AI_Output(hero, self, "Info_Mod_Albi_Wuerdebeweis_15_01"); //Und wo sind meine Rüstung und meine Waffe?
-	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebeweis_23_02"); //DU sollst ihn besiegen und nicht dein Schwert! Kämpfe jetzt!
+	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebeweis_23_00"); //Trzeba przejsc przez rytual. Pokryj rekina i jestes godzien!
+	AI_Output(hero, self, "Info_Mod_Albi_Wuerdebeweis_15_01"); //A gdzie moja zbroja i bron?
+	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebeweis_23_02"); //UZYTKOWNIK JEGO pokona, a nie twój miecz! Walczyc teraz!
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Ich soll beweisen, dass ich würdig bin, indem ich einen Sumpfhai ohne Rüstung und Waffe töte. Na das kann ja lustig werden ...");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Mam udowodnic, ze jestem godzien zabicia rekina bagiennego bez zbroi i broni. Cóz, to moze byc zabawa....");
 
 	Wld_InsertNpc	(Sumpfhai_11023_AW,	"BL_DOWN_01");
 };
@@ -197,18 +197,18 @@ FUNC INT Info_Mod_Albi_Wuerdebewiesen_Condition()
 
 FUNC VOID Info_Mod_Albi_Wuerdebewiesen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebewiesen_23_00"); //Du bist würdig. Hier, nimm das. Du darfst dich nun frei im Sumpf bewegen.
+	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebewiesen_23_00"); //Jestes godzien. Wez to tutaj. Mozesz teraz swobodnie poruszac sie po bagnie.
 
 	B_GiveInvItems	(self, hero, ItAr_Echsi_01, 1);
 
 	AI_EquipArmor	(hero, ItAr_Echsi_01);
 
-	AI_Output(hero, self, "Info_Mod_Albi_Wuerdebewiesen_15_01"); //Du meinst ich darf gehen?
-	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebewiesen_23_02"); //Ich sagte IM Sumpf. Komm zu meiner Hütte. Dort reden wir weiter.
+	AI_Output(hero, self, "Info_Mod_Albi_Wuerdebewiesen_15_01"); //Czy to znaczy, ze moge isc?
+	AI_Output(self, hero, "Info_Mod_Albi_Wuerdebewiesen_23_02"); //Powiedzialem bagno. Przyjdz do mojej kabiny. Bedziemy tam rozmawiac.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Ich habe bewiesen, dass ich würdig bin. Merkwürdigerweise war der Sumpfhai aber schon sehr stark geschwächt ... Naja, jedenfalls darf ich mich jetzt frei im Sumpf bewegen. Verlassen darf ich ihn aber wohl noch nicht. Ich soll zu Albi in seine Hütte kommen, dort wird er mir wohl weiteres erklären.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Udowodnilam, ze jestem godzien. Co dziwne, rekin bagienny byl juz bardzo oslabiony.... Wiecej No cóz, tak czy owak wolno mi teraz swobodnie poruszac sie po bagnie. Ale nie moge go jeszcze opuscic. Chce, abym przyjechal do chaty Albi, gdzie prawdopodobnie wyjasni cos wiecej.");
 
 	B_GivePlayerXP	(500);
 
@@ -226,7 +226,7 @@ INSTANCE Info_Mod_Albi_AtHut (C_INFO)
 	information	= Info_Mod_Albi_AtHut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sollte das?";
+	description	= "O co to bylo chodzilo?";
 };
 
 FUNC INT Info_Mod_Albi_AtHut_Condition()
@@ -241,23 +241,23 @@ FUNC INT Info_Mod_Albi_AtHut_Condition()
 
 FUNC VOID Info_Mod_Albi_AtHut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_00"); //Was sollte das?
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_01"); //Der Kampf? Eine Art Initiationsritus.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_02"); //Unsere jungen dürfen die Stadt erst verlassen, wenn sie einen Sumpfhai im Kampf bezwingen, unbewaffnet.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_03"); //Auf diese Weise habe ich den Argwohn zumindest ein bisschen von dir genommen.
-	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_04"); //Wozu der ganze Schwindel? Der Sumpfhai war doch schon halbtot als sie ihn hergeführt haben.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_05"); //Hörst du mir nicht zu oder verstehst du mich nicht?
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_06"); //Ich BRAUCHE dich. Und zwar nicht hier in der Stadt und nicht als Sumpfhaifutter, als was du ohne deine Stahlhaut und deine Eisenkrallen geendet wärst.
-	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_07"); //Warum ich? Warum schickst du keine Echse?
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_08"); //Schweig! Du bist nicht in der Position Fragen zu stellen.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_09"); //Du wirst jetzt in den südlichen Teil des Sumpfes gehen, dieser Teil wird von Sumpfgolems bewohnt.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_10"); //Dort wirst du meinen Bruder suchen.
-	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_11"); //Eine andere Echse?
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_12"); //Eine andere weiße Echse. Du MUSST sie finden. Nicht nur dein Leben hängt davon ab.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_13"); //Sollte er noch am Leben sein, bring ihn unbedingt mit hierher.
-	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_14"); //Sollte er tot sein, bring mir unter allen Umständen den Schlüssel mit, den er bei sich trägt.
+	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_00"); //O co to bylo chodzilo?
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_01"); //Walka? Jakis rodzaj rytualu przejscia.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_02"); //Nasi mlodzi ludzie nie moga opuscic miasta, dopóki nie pokonaja bezbronnego rekina bagiennego.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_03"); //W ten sposób odcialem ci podejrzliwosc, przynajmniej troche.
+	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_04"); //Jaka jest calosc? Gdy przywiezli go tutaj, rekin bagienny byl pól umarly.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_05"); //Nie sluchasz mnie lub nie rozumiesz mnie?
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_06"); //I NEED YOU. I nie tutaj w miescie i nie jako pozywienie dla rekinów bagiennych, tak jak to, co skonczyloby sie bez Twojej stalowej skóry i zelaznych pazurów.
+	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_07"); //Dlaczego ja? Dlaczego nie wysylasz jaszczurki?
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_08"); //Wylaczyc! Nie jestes w stanie zadawac pytan.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_09"); //Teraz udamy sie na poludniowa czesc bagna, która jest zamieszkana przez golemy bagienne.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_10"); //Tutaj bedziesz szukal mojego brata.
+	AI_Output(hero, self, "Info_Mod_Albi_AtHut_15_11"); //Jeszcze inna jaszczurka?
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_12"); //Inna jaszczurka biala. Musisz ja znalezc. Od tego zalezy nie tylko twoje zycie.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_13"); //Jesli jeszcze zyje, koniecznie musisz go tutaj przyniesc.
+	AI_Output(self, hero, "Info_Mod_Albi_AtHut_23_14"); //Jesli umarl, nie zapomnij przyniesc mi klucz, który nosi.
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Der ganze Schwindel mit dem Sumphaikampf diente dazu, dass mich die anderen Echsis akzeptieren und ich das Lager verlassen kann. Albi hat eine Aufgabe im Sumpf für mich, für die er scheinbar keine normale Echse abstellen kann. Ich soll im südlichen Bereich des Sumpfes, wo die Sumpfgolems leben, nach seinem Bruder suchen. Wenn er noch lebt, soll ich ihn in die Stadt bringen, andernfalls auf jedenfall den Schlüssel zu Albi bringen, der er bei sich trägt.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Caly swindle z bójka sumfaic sluzyly do tego, aby inne jaszczurki mnie zaakceptowaly i moge opuscic obóz. Albi ma dla mnie zadanie w bagnie, dla którego najwyrazniej nie moze zaparkowac jaszczurki. Szukam jego brata w poludniowej czesci bagna, gdzie mieszkaja golemy bagienne. Jesli jeszcze zyje, zabiore go do miasta, bo w przeciwnym razie zabiore klucz do Albi, który go nosi.");
 
 	Wld_InsertNpc	(Mod_12006_DRA_Echse_AW,	"ADW_SWAMP_07");
 
@@ -287,18 +287,18 @@ FUNC INT Info_Mod_Albi_KeyGefunden_Condition()
 
 FUNC VOID Info_Mod_Albi_KeyGefunden_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_00"); //Da bist du ja endlich! Hast du meinen Bruder gefunden?
-	AI_Output(hero, self, "Info_Mod_Albi_KeyGefunden_15_01"); //Ja, leider haben ihn die Golems wohl vor mir gefunden. Hier, der Schlüssel.
+	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_00"); //Jestes tam nareszcie! Znalazles mojego brata?
+	AI_Output(hero, self, "Info_Mod_Albi_KeyGefunden_15_01"); //Tak, obawiam sie, ze Golems musialby go znalezc. Oto klucz.
 
 	B_GiveInvItems	(hero, self, ItKe_EchsenKey, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_02"); //Schhhhhhhhhhhhhhhhhhhhhhhhhzzz.
-	AI_Output(hero, self, "Info_Mod_Albi_KeyGefunden_15_03"); //Kann ich jetzt gehen?
-	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_04"); //Ja, geh. Deine Sachen sind in der Truhe dort. Hier ist der Schlüssel.
+	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_02"); //Shhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhzzzzz.
+	AI_Output(hero, self, "Info_Mod_Albi_KeyGefunden_15_03"); //Czy moge isc teraz?
+	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_04"); //Tak, odejsc. Twoje rzeczy sa tam w bagazniku. Oto klucz.
 
 	B_GiveInvItems	(self, hero, ITKE_Addon_Thorus, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_05"); //Und hier ... Trage diese Rüstung und die Wachen am Tor werden dich passieren lassen.
+	AI_Output(self, hero, "Info_Mod_Albi_KeyGefunden_23_05"); //I tutaj..... Zalozyc te zbroje, a straznicy przy bramie pozwola ci przejsc.
 
 	AI_UnequipArmor	(hero);
 
@@ -308,7 +308,7 @@ FUNC VOID Info_Mod_Albi_KeyGefunden_Info()
 
 	AI_EquipArmor	(hero, ItAr_Echsi_02);
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN, "Albi scheint über den Tod seines Bruders nicht erfreut zu sein, doch kann ich den Sumpf nun verlassen.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN, "Albi zdaje sie byc niezadowolony z smierci brata, ale moge teraz opuscic bagno.");
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN, LOG_SUCCESS);
 
 	Mod_12000_DRA_Wache_AW.aivar[AIV_PASSGATE] = TRUE;
@@ -325,7 +325,7 @@ INSTANCE Info_Mod_Albi_FokusEinsetzen (C_INFO)
 	information	= Info_Mod_Albi_FokusEinsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du dafür sorgen, dass ich in den oberen Bereich der Stadt kann?";
+	description	= "Czy mozesz miec pewnosc, ze dotre na szczyt miasta?";
 };
 
 FUNC INT Info_Mod_Albi_FokusEinsetzen_Condition()
@@ -339,20 +339,20 @@ FUNC INT Info_Mod_Albi_FokusEinsetzen_Condition()
 
 FUNC VOID Info_Mod_Albi_FokusEinsetzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_00"); //Kannst du dafür sorgen, dass ich in den oberen Bereich der Stadt kann?
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_01"); //Natürlich, aber nur Echsen, die erwachsen sind dürfen in die Oberstadt.
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_02"); //Du bist jetzt zwar eine Echse, aber noch nicht erwachsen.
-	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_03"); //Ich hätte schwören können es war andersrum.
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_04"); //Schweig! Wenn du in die Oberstadt willst dann verdiene es dir und mach dich nützlich!
-	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_05"); //Es ist schwierig mich nützlich zu machen, wenn ich niemanden verstehe.
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_06"); //Ich werde mit den Echsen reden. Sprich morgen mit ihnen, wenn sie etwas für dich zu tun haben, dann werden sie dir einen Zettel geben.
-	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_07"); //Wäre es nicht einfacher, wenn ich eure Sprache lernen würde?
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_08"); //DU DARFST unsre Sprache nicht lernen, und jetzt lass mich in Ruhe, ich gehe in die Oberstadt.
-	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_09"); //Wenn du dich als würdig erwiesen hast, dann werde ich vor dem Tor auf dich warten.
+	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_00"); //Czy mozesz miec pewnosc, ze dotre na szczyt miasta?
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_01"); //Oczywiscie, ale tylko dorosle jaszczurki sa dozwolone w górnym miescie.
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_02"); //Mozesz byc jaszczurek teraz, ale nie jestes jeszcze dorosly.
+	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_03"); //Móglbym ja zaprzysiezyc, gdyby byla odwrotnie.
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_04"); //Wylaczyc! Jesli chcesz jechac do górnego miasta, zarobic na to i sprawic, ze bedziesz sie dobrze bawil!
+	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_05"); //Ciezko jest mi sprawic, ze bede uzyteczna, gdy nie rozumiem nikogo.
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_06"); //Porozmawiam z jaszczurkami. Porozmawiaj z nimi jutro, jesli beda mieli cos do zrobienia, przekaza ci notatke.
+	AI_Output(hero, self, "Info_Mod_Albi_FokusEinsetzen_15_07"); //Czy nie byloby latwiej, gdybym nauczyl sie twojego jezyka?
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_08"); //UZYTKOWNIK MOZE nie uczyc sie naszego jezyka i zostawic mnie samotnie, pójde do górnego miasta.
+	AI_Output(self, hero, "Info_Mod_Albi_FokusEinsetzen_23_09"); //Jesli udowodniles, ze jestes godzien siebie, czekam na Ciebie poza brama.
 
 	Log_CreateTopic	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Um in die obere Stadt der Echsen zu kommen, muss ich deren Vertrauen gewinnen. Morgen werden mir die Echsen, die eine Aufgabe für mich haben, einen Zettel geben. Habe ich genug Aufträge erfüllt, wird Albi mich erwarten.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Aby dostac sie do górnego miasta jaszczurek, musze zdobyc ich zaufanie. Jutro jaszczurki, które maja dla mnie prace, dadza mi notatke. Jesli wykonalem juz wystarczajaco duzo pracy, Albi bedzie mnie oczekiwal.");
 
 	Mod_Albi_VertrauensTag = Wld_GetDay();
 
@@ -383,18 +383,18 @@ FUNC INT Info_Mod_Albi_VertrauenGewonnen_Condition()
 
 FUNC VOID Info_Mod_Albi_VertrauenGewonnen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_00"); //Du hast dich scheinbar wirklich nützlich gemacht. Es ist fast alles so weit. Du darfst gehen.
-	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_01"); //Was?
-	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_02"); //Du bist frei den Sumpf zu verlassen! Jetzt Geh.
-	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_03"); //Aber ich muss in die Oberstadt!
-	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_04"); //Die Oberstadt? Ich sagte doch, dass nur Erwachsene in die Oberstadt dürfen. Was willst du überhaupt dort?
-	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_05"); //Ich will diesen blauen Stein auf einen Sockel vor dem Tempel legen.
+	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_00"); //Wyglada na to, ze uczyniles sie naprawde przydatny. Prawie wszystko jest gotowe. Mozesz odejsc.
+	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_01"); //Co?
+	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_02"); //Mozesz swobodnie opuscic bagno! Teraz idz.
+	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_03"); //Ale musze jechac do górnego miasta!
+	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_04"); //Górne miasto? Powiedzialem wam, ze w górnym miescie moga przebywac tylko dorosli. Co tam i tak robisz?
+	AI_Output(hero, self, "Info_Mod_Albi_VertrauenGewonnen_15_05"); //Chce umiescic ten niebieski kamien na cokole przed swiatynia.
 
 	B_GiveInvItems	(hero, self, ItMi_Focus_Kloster, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_06"); //Nun gut, du hast mir sehr geholfen, ich werde das für dich erledigen, aber nicht jetzt, ich habe zu tun!
+	AI_Output(self, hero, "Info_Mod_Albi_VertrauenGewonnen_23_06"); //No cóz, bardzo mi pomógles, zrobie to dla ciebie, ale nie teraz, mam prace do roboty!
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Ich habe das Vertrauen der Echsen gewonnen und Albi wird den Fokus für mich in der Oberstadt einsetzen.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Zdobylem zaufanie jaszczurek i Albi skupi sie na mnie w Górnym Miescie.");
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(1000);
@@ -426,20 +426,20 @@ FUNC INT Info_Mod_Albi_Kap4Stab_Condition()
 
 FUNC VOID Info_Mod_Albi_Kap4Stab_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_00"); //Du bist zurück ...
-	AI_Output(hero, self, "Info_Mod_Albi_Kap4Stab_15_01"); //Ich muss zum Tempel.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_02"); //Nur vollwertige Krieger dürfen zum Tempel ... doch du bist zur richtigen Zeit gekommen, wir stehen kurz vor einer Schlacht.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_03"); //Kämpfst du mit, werden dich die Wachen zum Tempel lassen.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_04"); //Ich lasse die in die Schlacht ziehen, dafür erledigst du eine Aufgabe für mich.
-	AI_Output(hero, self, "Info_Mod_Albi_Kap4Stab_15_05"); //Na gut. Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_06"); //Du brauchst eine Waffe. Keine der kleinen Menschenwaffen, du brauchst einen Kriegerdolch.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_07"); //Dazu musst du jeder Schwarzen Echse des Stammes einen Sumpfhaizahn bringen.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_08"); //Außerdem Brauchst du die Wirbelsäule eines Sumpfcrawlers.
-	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_09"); //Dazu musst du in eine Höhle im nördlichen Sumpf. Dort steht eine Wache, sie wird dich einlassen.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_00"); //Wracasz......
+	AI_Output(hero, self, "Info_Mod_Albi_Kap4Stab_15_01"); //Musze udac sie do swiatyni.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_02"); //Tylko pelnoprawni wojownicy moga isc do swiatyni.... ale przyszedles we wlasciwym czasie, jestesmy na skraju bitwy.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_03"); //Jesli walczysz, straznicy zabiora cie do swiatyni.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_04"); //Puscimy je do walki, ale ty robisz dla mnie prace.
+	AI_Output(hero, self, "Info_Mod_Albi_Kap4Stab_15_05"); //Wszystkie sluszne, wszystkie sluszne. Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_06"); //Potrzebujesz pistoletu. Zadna z broni recznej, nie potrzebujesz sztyletu wojownika.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_07"); //Do kazdego czarnego jaszczura w plemieniu trzeba przywiezc zab rekina bagiennego.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_08"); //Poza tym potrzebny jest kregoslup gasienicy bagiennej.
+	AI_Output(self, hero, "Info_Mod_Albi_Kap4Stab_23_09"); //Bedziesz musial pójsc do jaskini w pólnocnym bagnie. Tam jest straznik, on cie wpusci.
 
 	Log_CreateTopic	(TOPIC_MOD_ECHSEN_SCHLACHT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SCHLACHT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Albi will, dass ich für mir einen Kriegerdolch besorge. Dazu soll ich jeder schwarzen Echse einen Sumpfhaizahn bringen. Zusätzlich brauche ich die Wirbelsäule eines Sumpfcrawlers. Ein solches Exemplar finde ich in einer Höhle nördlich der Sumpfhaifarm.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Albi chce, abym zmuszony zostal wojownikiem sztyletem. Do kazdego czarnego jaszczura mam przynosic zab rekina bagiennego. Ponadto potrzebuje kregoslupa gasienicy bagiennej. Taki okaz znajduje sie w jaskini na pólnoc od hodowli rekina.");
 
 	Mod_12017_DRA_Wache_AW.aivar[AIV_PASSGATE] = TRUE;
 
@@ -454,7 +454,7 @@ INSTANCE Info_Mod_Albi_Schlacht (C_INFO)
 	information	= Info_Mod_Albi_Schlacht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, die Wirbelsäule.";
+	description	= "Tutaj kregoslup.";
 };
 
 FUNC INT Info_Mod_Albi_Schlacht_Condition()
@@ -469,19 +469,19 @@ FUNC INT Info_Mod_Albi_Schlacht_Condition()
 
 FUNC VOID Info_Mod_Albi_Schlacht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht_15_00"); //Hier, die Wirbelsäule.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht_15_00"); //Tutaj kregoslup.
 
 	B_GiveInvItems	(hero, self, ItAt_Wirbelsaeule, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_01"); //Gut. Komm nachts zu meiner Hütte, dann wirst du zu einem Anwärter erhoben.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_02"); //Ziehst du dann mit uns in die Schlacht, darfst du in den Tempel. Geh jetzt.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_01"); //Dobre. Przyjedz do mojej kabiny noca, a bedziesz awansowany na zawodnika.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_02"); //Jesli pójdziesz z nami do walki, mozesz wejsc do swiatyni. Odejdz teraz.
 
 	if (Mod_ECHSI_SumpfhaiZaehne < 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_03"); //Und vergiss nicht, den schwarzen Echsen die Sumpfhaizähne zu bringen.
+		AI_Output(self, hero, "Info_Mod_Albi_Schlacht_23_03"); //I nie zapomnij zabrac czarnego jaszczurka do rekina bagiennego.
 	};
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Ich soll heute nacht wieder zu Albi kommen, dann werde ich zu einem Anwärter.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Powróce dzis wieczorem do Albi, a potem bede kandydowal.");
 };
 
 INSTANCE Info_Mod_Albi_Schlacht2 (C_INFO)
@@ -506,34 +506,34 @@ FUNC INT Info_Mod_Albi_Schlacht2_Condition()
 
 FUNC VOID Info_Mod_Albi_Schlacht2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_00"); //Du bist bereit für die Schlacht.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_00"); //Jestes gotowy do walki.
 
 	B_GiveInvItems	(self, hero, ItMw_EchsenKriegerDolch, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_01"); //Jetzt gibt es nur noch ein Problem mit den Golems.
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_02"); //Golems? Ich habe keinen einzigen gesehen, als ich herkam.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_03"); //Genau das ist das Problem.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_04"); //Der Krieg zwischen den Echsen und den Golems ist genauso alt, wie unsere beiden Rassen.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_05"); //Der Sumpf selbst spuckt die schleimigen Bestien aus, wir Echsen schlüpfen aus Eiern.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_06"); //Doch dazu benötigen wir die Golems.
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_07"); //Ihr benötigt eure Feinde um euch fortzupflanzen? Klingt nach Hassliebe.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_08"); //SCHWEIG! Wir sind nicht wie ihr Menschen, wir sind ein Kriegervolk.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_09"); //Unsere Weibchen leben außerhalb der Stadt, unter der Oberfläche des Sumpfes.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_10"); //Wir kämpfen gegen die Golems, die Krieger, die in der Schlacht fallen, spenden den Samen.
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_11"); //Also ohne Golems keine Nachkommen.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_12"); //Ja. Und solange keine neuen Echsen schlüpfen, bleibe ich die einzige weiße Echse ...
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_13"); //Fühlst du dich einsam oder was ist dein Problem? Und überhaupt, woher soll ich Sumpfgolems nehmen?
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_14"); //Hüte deine Zunge, Mensch! Meine Gründe gehen dich nichts an.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_15"); //Du musst für mich in den Sumpf. Hier.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_01"); //Teraz jest tylko jeden problem z golemami.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_02"); //olemy? Kiedy przyjechalem tu po raz pierwszy nie widzialem zadnego z nich.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_03"); //To jest problem.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_04"); //Wojna miedzy jaszczurami a golemami jest tak stara jak nasze dwie rasy.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_05"); //Sam bagno wyrzuca sliskie bestie, jaszczurki wyleguja jaja.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_06"); //Ale do tego potrzebujemy Golemów.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_07"); //Potrzebujesz swoich wrogów do prokreacji? Brzmi jak milosc, relacja nienawisci.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_08"); //SCHWEIG! Nie jestesmy tacy jak ty, jestesmy wojownikami.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_09"); //Nasze kobiety mieszkaja poza miastem, pod powierzchnia bagna.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_10"); //Walczymy z golemami, wojownikami, którzy w walce walcza, przekazujemy ziarno.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_11"); //Tak wiec bez Golemów, bez potomków.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_12"); //Tak. I dopóki nie wylegnie sie nowa jaszczurka, pozostane jedyna jaszczurka biala......
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_13"); //Czujesz sie samotny lub co jest Twoim problemem? A skad tak czy owak powinienem siegnac po golemy bagienne?
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_14"); //Zobacz swój jezyk, czlowiek! Moje powody nie leza po stronie Ciebie.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_15"); //Musze, zebys dostal sie na bagno. Tutaj.
 
 	B_GiveInvItems	(self, hero, ItKe_EchsenKey2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_16"); //Der Schlüssel öffnet eine Tür im Süden des Sumpfes.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_17"); //Du wirst sie öffnen und dann wirst du dich umdrehen und hierher zurückrennen.
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_18"); //Ist das ein Befehl?
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_19"); //Nein, das ist nur ein Rat. Die Schlacht beginnt, wenn du die Tür geöffnet hast.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_16"); //Klucz otwiera drzwi na poludnie od bagna.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_17"); //Jestes gonna go otworzyc, a nastepnie jestes gonna obrócic sie i uciekac z powrotem tutaj.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht2_15_18"); //Czy to jest zamówienie?
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht2_23_19"); //Nie, to tylko rada. Bitwa rozpoczyna sie po otwarciu drzwi.
 
-	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Ich soll heute nacht wieder zu Albi kommen, dann werde ich zu einem Anwärter.");
+	B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Powróce dzis wieczorem do Albi, a potem bede kandydowal.");
 };
 
 INSTANCE Info_Mod_Albi_Schlacht3 (C_INFO)
@@ -558,12 +558,12 @@ FUNC INT Info_Mod_Albi_Schlacht3_Condition()
 
 FUNC VOID Info_Mod_Albi_Schlacht3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_00"); //Die Schlacht ist vorbei, du hast gut gekämpft ... für einen Menschen.
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_01"); //Du darfst in den oberen Teil der Stadt.
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht3_15_02"); //Was ist mit dem Tempel?
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_03"); //Der Tempel? Was soll damit sein?
-	AI_Output(hero, self, "Info_Mod_Albi_Schlacht3_15_04"); //Kann ich rein?
-	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_05"); //Du kannst es versuchen, doch die Türen sind dick. Sieh sie dir ruhig an.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_00"); //Walka sie skonczyla, walczyles dobrze.... dla czlowieka.
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_01"); //Mozna wybrac sie do górnej czesci miasta.
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht3_15_02"); //A co z swiatynia?
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_03"); //Swiatynia? Co jest z tym nie tak?
+	AI_Output(hero, self, "Info_Mod_Albi_Schlacht3_15_04"); //Czy moge wejsc?
+	AI_Output(self, hero, "Info_Mod_Albi_Schlacht3_23_05"); //Mozna spróbowac, ale drzwi sa grube. Przyjrzyjcie sie im dobrze.
 
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SCHLACHT, LOG_SUCCESS);
 
@@ -595,22 +595,22 @@ FUNC INT Info_Mod_Albi_Mutantengolem_Condition()
 
 FUNC VOID Info_Mod_Albi_Mutantengolem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_00"); //Das war knapp ... du hast gut gekämpft. Für einen Mensch.
-	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_15_01"); //Was war das für ein Ding?
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_02"); //Ein Sumpfgolem ... etwas hat ihn aber verändert. Ich muss der Sache nachgehen ...
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_03"); //Ich kann nur hoffen, dass bei dem nächsten Wurf weiße Echsen schlüpfen.
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_00"); //To bylo blisko.... walczyles dobrze. Dla czlowieka.
+	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_15_01"); //Co to bylo?
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_02"); //Gleba bagienna.... Ale cos go jednak zmienilo. Musze sie temu przyjrzec......
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_23_03"); //Mam tylko nadzieje, ze kolejny miot, jaszczurki biale wylegna sie.
 
 	Info_ClearChoices	(Info_Mod_Albi_Mutantengolem);
 
-	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Was hat es mit euch weißen Echsen und den Golems auf sich?", Info_Mod_Albi_Mutantengolem_C);
-	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Kann ich was für dich tun?", Info_Mod_Albi_Mutantengolem_B);
-	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Wie auch immer, ich geh in den Tempel.", Info_Mod_Albi_Mutantengolem_A);
+	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Co ma to wspólnego z Toba z bialymi jaszczurami i golemami?", Info_Mod_Albi_Mutantengolem_C);
+	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Wszystko, co moge dla Ciebie zrobic?", Info_Mod_Albi_Mutantengolem_B);
+	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "W kazdym razie ide do swiatyni.", Info_Mod_Albi_Mutantengolem_A);
 };
 
 FUNC VOID Info_Mod_Albi_Mutantengolem_C()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_C_15_00"); //Was hat es mit euch weißen Echsen und den Golems auf sich? Da stimmt doch was nicht.
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_C_23_01"); //Du sollst es erfahren, aber nicht hier. Ich brauche Ruhe, komm die nächsten Tage in meine Hütte.
+	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_C_15_00"); //Co ma to wspólnego z Toba z bialymi jaszczurami i golemami? Cos jest nie tak.
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_C_23_01"); //Chce, zeby pan o tym wiedzial, ale nie tutaj. Potrzebuje troche odpoczynku, przychodze do kabiny na najblizsze dni.
 
 	Mod_Echsis_Geheimnis_Tag = Wld_GetDay();
 
@@ -619,8 +619,8 @@ FUNC VOID Info_Mod_Albi_Mutantengolem_C()
 
 FUNC VOID Info_Mod_Albi_Mutantengolem_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_B_15_00"); //Kann ich was für dich tun?
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_B_23_01"); //Ja ... aber noch nicht. Komm morgen in meine Hütte.
+	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_B_15_00"); //Wszystko, co moge dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_B_23_01"); //Tak..... ale jeszcze nie. Przyjdz jutro do mojej kabiny.
 
 	Mod_Echsis_Geheimnis_Tag = Wld_GetDay();
 
@@ -629,8 +629,8 @@ FUNC VOID Info_Mod_Albi_Mutantengolem_B()
 
 FUNC VOID Info_Mod_Albi_Mutantengolem_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_A_15_00"); //Wie auch immer, ich geh in den Tempel.
-	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_A_23_01"); //Tu das. Wenn du Zeit findest, es gibt noch viel zu tun.
+	AI_Output(hero, self, "Info_Mod_Albi_Mutantengolem_A_15_00"); //W kazdym razie ide do swiatyni.
+	AI_Output(self, hero, "Info_Mod_Albi_Mutantengolem_A_23_01"); //Zrób to. Jesli masz czas, jest jeszcze wiele do zrobienia.
 
 	Mod_Echsis_Geheimnis_Tag = Wld_GetDay();
 
@@ -645,7 +645,7 @@ INSTANCE Info_Mod_Albi_Geheimnis (C_INFO)
 	information	= Info_Mod_Albi_Geheimnis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du für mich zu tun?";
+	description	= "Co musisz dla mnie zrobic?";
 };
 
 FUNC INT Info_Mod_Albi_Geheimnis_Condition()
@@ -660,14 +660,14 @@ FUNC INT Info_Mod_Albi_Geheimnis_Condition()
 
 FUNC VOID Info_Mod_Albi_Geheimnis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis_15_00"); //Was hast du für mich zu tun?
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_01"); //Das wichtigste jetzt sind die Eier. Sie sollten mittlerweile im Sumpf schwimmen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_02"); //Sammel sie ein. Es sollten mindestens zehn Stück sein!
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_03"); //Bring sie der Wache am Brutloch im oberen Stadtteil.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis_15_00"); //Co musisz dla mnie zrobic?
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_01"); //Najwazniejsza rzecza jest teraz jaja. Do tej pory powinni plywac w bagnie.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_02"); //Podnies je do góry. Powinna ich byc co najmniej dziesiec!
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis_23_03"); //Wez go do straznika Brutloch w górnej czesci miasta.
 
 	Log_CreateTopic	(TOPIC_MOD_ECHSIS_EIERSUCHE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSIS_EIERSUCHE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Ich soll im Sumpf Echseneier einsammeln gehen. Sie schwimmen dort scheinbar im Wasser. Wenn ich mindestens zehn Stück habe, soll ich sie der Wache am Brutloch im oberen Stadtteil geben.");
+	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Mam podnosic jaja jaszczurki w bagnie. Wydaje sie, ze plywaja w wodzie. Jesli mam co najmniej dziesiec kawalków, oddam je straznikowi przy wylegu w górnej czesci miasta.");
 
 	Wld_InsertItem	(ItMi_EchsenEgg,	"FP_ITEM_ECHSENEGG_01");
 	Wld_InsertItem	(ItMi_EchsenEgg,	"FP_ITEM_ECHSENEGG_02");
@@ -699,7 +699,7 @@ INSTANCE Info_Mod_Albi_Geheimnis2 (C_INFO)
 	information	= Info_Mod_Albi_Geheimnis2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Eier sind in der Bruthöhle.";
+	description	= "Jaja znajduja sie w jaskini wylegu.";
 };
 
 FUNC INT Info_Mod_Albi_Geheimnis2_Condition()
@@ -713,12 +713,12 @@ FUNC INT Info_Mod_Albi_Geheimnis2_Condition()
 
 FUNC VOID Info_Mod_Albi_Geheimnis2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis2_15_00"); //Die Eier sind in der Bruthöhle. Aber es sind außergewöhnlich viele Golems im Sumpf.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_01"); //Das habe ich befürchtet ... Aber ich kann nichts machen solange keine weiteren weißen Echsen geschlüpft sind.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_02"); //Aber wenn wir das Problem mit den Golems nicht kontrollieren, werden sie uns überrennen. Ich werde die Krieger ins Grenzgebiet schicken.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_03"); //Bis die Eier ausgeschlüpft sind, dauert es noch. Wenn du dich nützlich machen willst, töte Golems.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis2_15_00"); //Jaja znajduja sie w jaskini wylegu. Ale w bagnie znajduje sie niezwykle duza liczba golemów.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_01"); //Tego wlasnie sie obawialem..... Ale nic nie moge zrobic, dopóki inna jaszczurka nie wyladuje.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_02"); //Ale jesli nie opanujemy problemu z golemami, oni nas omina. Wyslemy wojowników na pogranicze.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis2_23_03"); //Uplynie troche czasu zanim jaja wylegnie sie. Jesli chcesz byc uzyteczny, zabij Golemy.
 
-	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Es dauert noch ein wenig, bis die neuen Echsen schlüpfen. Solange soll ich im Sumpf Golems töten.");
+	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "To zajmie troche czasu, zanim nowe jaszczurki wylegna sie. Tak dlugo, jak dlugo musze zabijac Golemy w bagnie.");
 
 	Wld_InsertNpc	(Swampgolem,	"ADW_SWAMP_BF_NEST_08");
 	Wld_InsertNpc	(Swampgolem,	"ADW_SWAMP_BF_NEST_02");
@@ -779,37 +779,37 @@ FUNC INT Info_Mod_Albi_Geheimnis3_Condition()
 
 FUNC VOID Info_Mod_Albi_Geheimnis3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_00"); //Da bist du ja. Wir hatten Glück, wir haben zwei neue weiße Echsen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_01"); //Du bist würdig, eingeweiht zu werden. Ich habe ihnen unsere Geschichte schon erzählt.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_02"); //Wenn du sie wissen willst setzt dich nieder und höre zu.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_00"); //Och, tam jestescie. Mielismy szczescie, dostalismy dwie nowe jaszczurki biale.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_01"); //Jestes godny byc inicjowany. Opowiedzialem im juz nasza historie.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_02"); //Jesli chcesz ja poznac, usiadz i posluchaj.
 
 	AI_PlayAniBS (hero, "T_STAND_2_SIT", BS_SIT);
 
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_03"); //Der Krieg zwischen den Echsen und den Golems dauert schon viele Schlachten lang, doch er ist für uns unabdingbar, da wir uns sonst nicht fortpflanzen könnten.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_04"); //Außerdem werden nur Echsen erwachsen, die im Krieg erfahren haben, was es heißt, zu leben und dem Tod ins Auge zu blicken.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_05"); //Zu Beginn der Geschichte war ungewiss, wer den Krieg für sich entscheiden würde, doch bereits vor Äonen haben unsere Ahnen ihn gewonnen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_06"); //Die Folge war Zwietracht, Stammeskriege, Neid ... der Fluch, mit dem wir den Sieg bezahlten war mannigfaltig.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_07"); //Also entschlossen sich die Stammesführer dazu, neue Golems zu züchten.
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_08"); //Zu züchten?
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_09"); //Ja. Sie hatten herausgefunden, dass die Sumpfgolems aus Knospen bestimmter Pflanzen heranreifen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_10"); //Im Weißen Garten züchteten sie Golems heran, dass der Krieg gegen sie uns wieder vereine.
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_11"); //Und warum spielen die weißen Echsen eine so große Rolle?
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_12"); //Die Golems sehen unsere Schuppen im Zwielicht nicht. Wir können uns frei unter ihnen bewegen. Das heißt wir konnten uns frei unter ihnen bewegen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_13"); //Kurz, bevor du ankamst, kehrten meine Brüder nicht mehr wieder, die Golems erschlugen sie.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_14"); //Da der weiße Garten verschlossen war, konnten keine Golems mehr hinaus, doch durfte ich als letzter Weißer die Stadt nicht verlassen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_15"); //Jetzt wuchern die Golems jedoch ungehindert, keiner von uns kann sie stutzen. Wenn wir nichts unternehmen, werden sie uns auslöschen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_16"); //Weiße Echsen sind keine Krieger, und da unsere Tarnung nicht mehr funktioniert können wir nicht ohne Hilfe in den Garten. Du musst uns helfen.
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_17"); //Warum lässt du deine Krieger nicht hinziehen?
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_18"); //Narr! Glaubst du sie wissen, dass der Kampf schon lange vorbei ist?
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_19"); //Der Glaube an unseren Feind hält uns zusammen. Würden sie die Wahrheit kennen, wäre unsre Rasse verdammt.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_20"); //Hilfst du uns?
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_21"); //Na gut.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_22"); //Wir sind dir zu großem Dank verpflichtet. Ich werde eine Schlacht organisieren. Das wird den Großteil der Golems ablenken.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_23"); //Nimm die beiden hier mit. Mindesten einer von ihnen muss sicher am Garten ankommen, um die Falle zu deaktivieren.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_24"); //Tötet die Golems und findet heraus, was sie so verändert hat!
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_25"); //Wir werden vor dem Tor warten, wenn du bereit bist, triff uns dort.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_03"); //Wojna miedzy jaszczurami a golemami toczy sie od wielu bitew, ale jest to dla nas nieodzowne, bo inaczej nie bylibysmy w stanie odtworzyc.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_04"); //Ponadto dorastaja tylko jaszczurki, które doswiadczyly tego, co znaczy zyc i stawiac czola smierci w czasie wojny.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_05"); //Na poczatku historii nie bylo pewnosci, kto wygra wojne, ale jeszcze przed eonami wygrali ja nasi przodkowie.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_06"); //Rezultatem tego byly konflikty, wojny plemienne, zawisc.... Wiecej przeklenstwo, z którym sie wywalczylismy bylo wielorakie.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_07"); //Tak wiec plemienne przywódcy postanowili wyhodowac nowe golematy.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_08"); //Rodzic sie?
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_09"); //Tak. Odkryli, ze golemy bagienne dojrzewaja z buds pewnych roslin.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_10"); //W Bialym Ogrodzie wyhodowali Golemy, aby wojna z nimi ponownie nas zjednoczyla.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_11"); //Dlaczego tak wazne sa jaszczurki biale?
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_12"); //Golemowie nie widza naszych szop w zmierzchu. Mozemy sie miedzy nimi swobodnie przemieszczac. Oznacza to, ze mozemy sie miedzy nimi swobodnie przemieszczac.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_13"); //Na krótko przed waszym przybyciem, moi bracia nigdy nie wrócili, Golemowie ich zabili.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_14"); //Poniewaz bialy ogród byl zamkniety, zadne golematy nie mogly wyjsc, ale jako ostatni bialy mezczyzna nie wolno mi bylo opuscic miasta.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_15"); //Ale teraz Oleje rozmnazaja sie bez przeszkód, nikt z nas nie moze ich obciac. Jesli nic nie zrobimy, oni zmyja nas.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_16"); //Jaszczurki biale nie sa wojownikami, a poniewaz nasz kamuflaz przestal dzialac, nie mozemy bez pomocy dostac sie do ogrodu. Musicie nam Panstwo pomóc.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_17"); //Dlaczego nie pozwolisz swoim wojownikom sie tam przeniesc?
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_18"); //Fool! Czy myslisz, ze wiedza, ze walka juz dawno minela?
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_19"); //Wiara w naszego wroga trzyma nas razem. Gdyby oni znali prawde, nasza rasa bylaby potepiona.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_20"); //Pomozecie nam Panstwo pomóc?
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis3_15_21"); //Wszystkie sluszne, wszystkie sluszne.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_22"); //Jestesmy Panstwu winni dlug wdziecznosci. Zorganizuje bitwe. To rozpraszy wiekszosc golemów.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_23"); //Wez te dwie rzeczy razem z toba. Przynajmniej jedna z nich musi przybyc bezpiecznie do ogrodu, aby wylaczyc pulapke.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_24"); //Zabijaj golemów i sprawdz, co je zmienilo!
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis3_23_25"); //Czekamy na nas poza brama, jesli bedziecie gotowi, spotkamy sie z nami.
 
-	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Ich soll zusammen mit den zwei neuen weißen Echsen zum weißen Garten, dem Ursprungsort der Sumpfgolems, aufbrechen und den Grund für ihre Mutation finden. Mindestens eine der weißen Echsen muss den Weg lebendig überstehen, um die Falle am Eingang zu deaktivieren. Albi und die weißen Echsen bereiten nun eine Schlacht vor und erwarten mich dann beim Eingang der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Razem z dwoma nowymi jaszczurami bialymi mam wyruszyc do bialego ogrodu, miejsca pochodzenia golemów bagiennych i znalezc powód ich mutacji. Przynajmniej jeden z jaszczurów bialych musi przezyc zywa droge, aby wylaczyc pulapke przy wejsciu. Albi i jaszczurki biale przygotowuja teraz bitwe i czekaja na mnie przy wejsciu do miasta.");
 
 	AI_StopProcessInfos	(self);
 
@@ -861,7 +861,7 @@ INSTANCE Info_Mod_Albi_Geheimnis4 (C_INFO)
 	information	= Info_Mod_Albi_Geheimnis4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin bereit.";
+	description	= "Jestem gotowy.";
 };
 
 FUNC INT Info_Mod_Albi_Geheimnis4_Condition()
@@ -876,11 +876,11 @@ FUNC INT Info_Mod_Albi_Geheimnis4_Condition()
 
 FUNC VOID Info_Mod_Albi_Geheimnis4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis4_15_00"); //Ich bin bereit.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis4_23_01"); //Sehr gut. Die Schlacht kann beginnen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis4_23_02"); //Die zwei werden dir folgen, pass gut auf sie auf.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis4_15_00"); //Jestem gotowy.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis4_23_01"); //Bardzo dobry. Bitwa moze sie rozpoczac.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis4_23_02"); //Ci dwaj przyjda za toba, zajma sie nimi.
 
-	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Ich soll zusammen mit den zwei neuen weißen Echsen zum weißen Garten, dem Ursprungsort der Sumpfgolems, aufbrechen und den Grund für ihre Mutation finden. Mindestens eine der weißen Echsen muss den Weg lebendig überstehen, um die Falle am Eingang zu deaktivieren. Albi und die weißen Echsen bereiten nun eine Schlacht vor und erwarten mich dann beim Eingang der Stadt.");
+	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Razem z dwoma nowymi jaszczurami bialymi mam wyruszyc do bialego ogrodu, miejsca pochodzenia golemów bagiennych i znalezc powód ich mutacji. Przynajmniej jeden z jaszczurów bialych musi przezyc zywa droge, aby wylaczyc pulapke przy wejsciu. Albi i jaszczurki biale przygotowuja teraz bitwe i czekaja na mnie przy wejsciu do miasta.");
 
 	B_StartOtherRoutine	(self, "HUT");
 	B_StartOtherRoutine	(Mod_12021_DRA_Albino_AW, "FOLLOW");
@@ -914,7 +914,7 @@ INSTANCE Info_Mod_Albi_Geheimnis5 (C_INFO)
 	information	= Info_Mod_Albi_Geheimnis5_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir waren erfolgreich.";
+	description	= "Mielismy sukces.";
 };
 
 FUNC INT Info_Mod_Albi_Geheimnis5_Condition()
@@ -930,12 +930,12 @@ FUNC INT Info_Mod_Albi_Geheimnis5_Condition()
 
 FUNC VOID Info_Mod_Albi_Geheimnis5_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis5_15_00"); //Wir waren erfolgreich. Im Garten war eine Alraune.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_01"); //Das erklärt die Mutationen der Golems. Du hast unsere Rasse vor dem Untergang bewahrt. Du bist unsrer Stadt jederzeit willkommen.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_02"); //Außerdem hast du dir das Recht des Kriegführers verdient.
-	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_03"); //Wenn du in die Schlacht ziehen willst, sag mir bescheid. Ich werde die Krieger bereitstellen und die Golems reifen lassen.
+	AI_Output(hero, self, "Info_Mod_Albi_Geheimnis5_15_00"); //Mielismy sukces. W ogrodzie byl mandarak.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_01"); //To tlumaczy mutacje golemów. Uratowales nasza rase przed zniszczeniem. W naszym miescie zawsze jestes mile widziany.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_02"); //Poza tym zdobyles prawo wojownika.
+	AI_Output(self, hero, "Info_Mod_Albi_Geheimnis5_23_03"); //Jesli chcesz rozpoczac walke, daj mi znac. Dostane wojowników i pozwole golemnikom dojrzec.
 
-	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Das Problem mit den Golems ist beseitigt und ich bin jetzt ein Kriegsführer der Echsen. Ich kann jetzt jederzeit auf die Jagd nach Golems gehen, wenn mir danach ist.");
+	B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Problem z golemami zostaje rozwiazany i jestem teraz panem jaszczurów. Moge polowac na Golemy w kazdej chwili, kiedy tylko czuje sie do tego przyzwyczajony.");
 	B_SetTopicStatus	(TOPIC_MOD_ECHSIS_EIERSUCHE, LOG_SUCCESS);
 	
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_18);
@@ -951,7 +951,7 @@ INSTANCE Info_Mod_Albi_Unbewaffnet (C_INFO)
 	information	= Info_Mod_Albi_Unbewaffnet_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll unbewaffnet zu den Golems gehen?";
+	description	= "Chcesz, abym poszedl do nieuzbrojonych golemów?";
 };
 
 FUNC INT Info_Mod_Albi_Unbewaffnet_Condition()
@@ -965,14 +965,14 @@ FUNC INT Info_Mod_Albi_Unbewaffnet_Condition()
 
 FUNC VOID Info_Mod_Albi_Unbewaffnet_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Unbewaffnet_15_00"); //Ich soll unbewaffnet zu den Golems gehen? Da hättest du mich gleich vom Sumpfhai zerreissen lassen können.
-	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_01"); //Hier, Golemherzen.
+	AI_Output(hero, self, "Info_Mod_Albi_Unbewaffnet_15_00"); //Chcesz, abym poszedl do nieuzbrojonych golemów? Mozna bylo pozwolic, aby ten rekin bagienny rozerwal mnie na strzepy.
+	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_01"); //Tutaj Golemherzen.
 
 	B_GiveInvItems	(self, hero, ItAt_SwampGolemHeart, 2);
 
-	AI_Output(hero, self, "Info_Mod_Albi_Unbewaffnet_15_02"); //Was soll ich mit Golemherzen?
-	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_03"); //Das gleiche wie mit dem letzten, das ich dir gab.
-	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_04"); //Lege es ins Feuer, nimm die Herzfragmente und kauf dir eine Waffe und Heilkräuter!
+	AI_Output(hero, self, "Info_Mod_Albi_Unbewaffnet_15_02"); //Co mam zrobic z sercami golema?
+	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_03"); //Tak samo jak z ostatnim, który wam dalem.
+	AI_Output(self, hero, "Info_Mod_Albi_Unbewaffnet_23_04"); //Wlóz go do ognia, wez serce odlamki i kup bron i ziola!
 };
 
 INSTANCE Info_Mod_Albi_EigeneSachen (C_INFO)
@@ -983,7 +983,7 @@ INSTANCE Info_Mod_Albi_EigeneSachen (C_INFO)
 	information	= Info_Mod_Albi_EigeneSachen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich vielleicht MEINE Sachen zurückbekommen?";
+	description	= "Czy moge odebrac Moje rzeczy?";
 };
 
 FUNC INT Info_Mod_Albi_EigeneSachen_Condition()
@@ -997,8 +997,8 @@ FUNC INT Info_Mod_Albi_EigeneSachen_Condition()
 
 FUNC VOID Info_Mod_Albi_EigeneSachen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_EigeneSachen_15_00"); //Kann ich vielleicht MEINE Sachen zurückbekommen?
-	AI_Output(self, hero, "Info_Mod_Albi_EigeneSachen_23_01"); //Nein.
+	AI_Output(hero, self, "Info_Mod_Albi_EigeneSachen_15_00"); //Czy moge odebrac Moje rzeczy?
+	AI_Output(self, hero, "Info_Mod_Albi_EigeneSachen_23_01"); //Nie.
 };
 
 INSTANCE Info_Mod_Albi_Schluessel (C_INFO)
@@ -1009,7 +1009,7 @@ INSTANCE Info_Mod_Albi_Schluessel (C_INFO)
 	information	= Info_Mod_Albi_Schluessel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wozu ist der Schlüssel?";
+	description	= "Jaki jest do tego klucz?";
 };
 
 FUNC INT Info_Mod_Albi_Schluessel_Condition()
@@ -1023,9 +1023,9 @@ FUNC INT Info_Mod_Albi_Schluessel_Condition()
 
 FUNC VOID Info_Mod_Albi_Schluessel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_Schluessel_15_00"); //Wozu ist der Schlüssel?
-	AI_Output(self, hero, "Info_Mod_Albi_Schluessel_23_01"); //Zu einem Tor im Sumpf, mehr musst du nicht wissen.
-	AI_Output(self, hero, "Info_Mod_Albi_Schluessel_23_02"); //Suche es nicht, du würdest nur den Tod finden. Und jetzt geh!
+	AI_Output(hero, self, "Info_Mod_Albi_Schluessel_15_00"); //Jaki jest do tego klucz?
+	AI_Output(self, hero, "Info_Mod_Albi_Schluessel_23_01"); //Do bramy w bagnie, to wszystko, co trzeba wiedziec.
+	AI_Output(self, hero, "Info_Mod_Albi_Schluessel_23_02"); //Nie szukaj tego, tylko znajdziesz smierc. Teraz odejdzmy!
 };
 
 INSTANCE Info_Mod_Albi_WarumNichtSelbst (C_INFO)
@@ -1036,7 +1036,7 @@ INSTANCE Info_Mod_Albi_WarumNichtSelbst (C_INFO)
 	information	= Info_Mod_Albi_WarumNichtSelbst_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum gehst du nicht selbst?";
+	description	= "Dlaczego nie idziesz sam?";
 };
 
 FUNC INT Info_Mod_Albi_WarumNichtSelbst_Condition()
@@ -1050,11 +1050,11 @@ FUNC INT Info_Mod_Albi_WarumNichtSelbst_Condition()
 
 FUNC VOID Info_Mod_Albi_WarumNichtSelbst_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albi_WarumNichtSelbst_15_00"); //Warum gehst du nicht selbst?
-	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_01"); //Ich bin die letzte weiße Echse, ich darf die Stadt nicht verlassen.
-	AI_Output(hero, self, "Info_Mod_Albi_WarumNichtSelbst_15_02"); //Und warum schickst du keinen der Krieger oder Späher.
-	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_03"); //Weil du unsere Sprache nicht sprichst, und dir sowieso niemand glauben würde.
-	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_04"); //Jetzt geh mir aus den Augen.
+	AI_Output(hero, self, "Info_Mod_Albi_WarumNichtSelbst_15_00"); //Dlaczego nie idziesz sam?
+	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_01"); //Jestem ostatnia jaszczurka biala, nie moge opuscic miasta.
+	AI_Output(hero, self, "Info_Mod_Albi_WarumNichtSelbst_15_02"); //A dlaczego nie wysylasz wojowników czy harcerzy?
+	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_03"); //Poniewaz nie mówisz w naszym jezyku i nikt i tak nie uwierzylby w ciebie.
+	AI_Output(self, hero, "Info_Mod_Albi_WarumNichtSelbst_23_04"); //Teraz wyjdz z oczu.
 };
 
 INSTANCE Info_Mod_Albi_EXIT (C_INFO)

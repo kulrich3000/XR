@@ -1,7 +1,7 @@
 INSTANCE Mod_1546_PIR_Francis_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Francis";
+	name 		= "Franciszek";
 	guild 		= GIL_out;
 	id 			= 1546;
 	voice 		= 13;

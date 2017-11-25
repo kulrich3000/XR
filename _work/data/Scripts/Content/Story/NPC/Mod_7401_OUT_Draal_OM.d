@@ -1,7 +1,7 @@
 instance Mod_7401_OUT_Draal_OM  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Draal";
+	name 		= "drenaz";
 	guild 		= GIL_OUT;
 	id 			= 7401;
 	voice 		= 3;

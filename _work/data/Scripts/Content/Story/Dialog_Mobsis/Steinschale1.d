@@ -29,7 +29,7 @@ INSTANCE PC_Steinschale1_Rein (C_Info)
 	condition		= PC_Steinschale1_Rein_Condition;
 	information		= PC_Steinschale1_Rein_Info;
 	permanent		= 0;
-	description		= "Grünen Erzbrocken hineinlegen"; 
+	description		= "Wlóz zielone kawalki rudy."; 
 };
 
 FUNC INT PC_Steinschale1_Rein_Condition ()
@@ -69,7 +69,7 @@ INSTANCE PC_Steinschale1_Raus (C_Info)
 	condition		= PC_Steinschale1_Raus_Condition;
 	information		= PC_Steinschale1_Raus_Info;
 	permanent		= 0;
-	description		= "Grünen Erzbrocken herausnehmen"; 
+	description		= "Usuwanie zielonych odlamków rudy"; 
 };
 
 FUNC INT PC_Steinschale1_Raus_Condition ()

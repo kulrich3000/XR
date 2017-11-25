@@ -1,7 +1,7 @@
 INSTANCE Monster_11048_DemonWolf_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonischer Wolf";	
+	name 		= "Demonston Wolf";	
 	guild 		= GIL_DEMON;
 	id 			= 11048;
 	voice 		= 20;

@@ -1,7 +1,7 @@
 INSTANCE SwampGolem_100001_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Heulender Sumpfmensch";
+	name 		= "Czlowiek z bagna kregielni";
 	guild 		= GIL_SUMMONED_GOLEM;
 	id 			= 100001;
 	voice 		= 18;

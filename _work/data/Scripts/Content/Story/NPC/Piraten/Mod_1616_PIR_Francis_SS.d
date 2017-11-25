@@ -1,7 +1,7 @@
 INSTANCE Mod_1616_PIR_Francis_SS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Francis";
+	name 		= "Franciszek";
 	guild 		= GIL_out;
 	id 			= 1616;
 	voice 		= 13;

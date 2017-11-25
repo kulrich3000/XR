@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Bromor_Hi (C_INFO)
 	information	= Info_Mod_Bromor_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Bromor_Hi_Condition()
@@ -18,8 +18,8 @@ FUNC VOID Info_Mod_Bromor_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Bromor_Hi_07_01"); //Ich bin Bromor, mir gehört dieses Bordell.
-	AI_Output(self, hero, "Info_Mod_Bromor_Hi_07_02"); //Was kann ich für dich tun?
+	AI_Output(self, hero, "Info_Mod_Bromor_Hi_07_01"); //Jestem Bromor, jestem wlascicielem tego domu publicznego.
+	AI_Output(self, hero, "Info_Mod_Bromor_Hi_07_02"); //Co moge dla Ciebie zrobic?
 };
 
 INSTANCE Info_Mod_Bromor_Bilgot (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Bromor_Bilgot (C_INFO)
 	information	= Info_Mod_Bromor_Bilgot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört hier gibt es Probleme.";
+	description	= "Slysze tutaj klopoty.";
 };
 
 FUNC INT Info_Mod_Bromor_Bilgot_Condition()
@@ -45,8 +45,8 @@ FUNC INT Info_Mod_Bromor_Bilgot_Condition()
 
 FUNC VOID Info_Mod_Bromor_Bilgot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_Bilgot_15_00"); //Ich hab gehört hier gibt es Probleme.
-	AI_Output(self, hero, "Info_Mod_Bromor_Bilgot_07_01"); //Ja, einer unserer Kunde will nicht zahlen. Sein Name ist Bartok.
+	AI_Output(hero, self, "Info_Mod_Bromor_Bilgot_15_00"); //Slysze tutaj klopoty.
+	AI_Output(self, hero, "Info_Mod_Bromor_Bilgot_07_01"); //Tak, jeden z naszych klientów nie zaplaci. Nazywa sie Bartok.
 };
 
 INSTANCE Info_Mod_Bromor_Bartok (C_INFO)
@@ -57,7 +57,7 @@ INSTANCE Info_Mod_Bromor_Bartok (C_INFO)
 	information	= Info_Mod_Bromor_Bartok_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab das Geld (500 Gold geben)";
+	description	= "Dalem pieniadze (500 zlota)";
 };
 
 FUNC INT Info_Mod_Bromor_Bartok_Condition()
@@ -71,11 +71,11 @@ FUNC INT Info_Mod_Bromor_Bartok_Condition()
 
 FUNC VOID Info_Mod_Bromor_Bartok_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_Bartok_15_00"); //Ich hab das Geld.
+	AI_Output(hero, self, "Info_Mod_Bromor_Bartok_15_00"); //Dostalem pieniadze.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Bromor_Bartok_07_01"); //Danke.
+	AI_Output(self, hero, "Info_Mod_Bromor_Bartok_07_01"); //Dzieki.
 
 	Mod_BilgotBromorBartok = 1;
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Bromor_Vanja (C_INFO)
 	information	= Info_Mod_Bromor_Vanja_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab gehört du schlägst deine Mädchen?";
+	description	= "Slysze, ze bijesz swoje dziewczyny.";
 };
 
 FUNC INT Info_Mod_Bromor_Vanja_Condition()
@@ -104,14 +104,14 @@ FUNC INT Info_Mod_Bromor_Vanja_Condition()
 
 FUNC VOID Info_Mod_Bromor_Vanja_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_00"); //Ich hab gehört du schlägst deine Mädchen?
-	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_01"); //Wer hat das gesagt?
-	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_02"); //Vanja sagt das.
-	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_03"); //(zu sich) Na die kann was erleben ... (zum Held) Was willst du noch hier? Verschwinde!
-	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_04"); //Ich will, dass du Vanja nicht mehr schlägst.
-	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_05"); //Es geht dich überhaupt nichts an, wie ich meine Mädchen behandel.
-	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_06"); //Ich glaube, ich sollte dir mal ne Lektion erteilen.
-	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_07"); //Dann komm doch her!
+	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_00"); //Slysze, ze bijesz swoje dziewczyny.
+	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_01"); //Kto ci to powiedzial?
+	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_02"); //Vanja to mówi.
+	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_03"); //Cóz, moze cos doswiadczyc.... Co nadal robicie? Wyjsc stad!
+	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_04"); //Chce, zebys przestal bic Vanje.
+	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_05"); //Nie mam nic wspólnego z tym, jak ja traktuje moje dziewczyny.
+	AI_Output(self, hero, "Info_Mod_Bromor_Vanja_07_06"); //Mysle, ze powinienem cie nauczyc.
+	AI_Output(hero, self, "Info_Mod_Bromor_Vanja_15_07"); //A potem tutaj!
 
 	AI_StopProcessInfos	(self);
 
@@ -142,11 +142,11 @@ FUNC VOID Info_Mod_Bromor_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_00"); //Oh, mein Schädel.
-			AI_Output(hero, self, "Info_Mod_Bromor_Umgehauen_15_01"); //Lässt du Vanja jetzt in Frieden?
-			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_02"); //Ja, ist ja gut, aber verzieh' dich.
+			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_00"); //O, moja czaszka.
+			AI_Output(hero, self, "Info_Mod_Bromor_Umgehauen_15_01"); //Wyjezdzasz z Vanji samotnie teraz?
+			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_02"); //Tak, to dobrze, ale zgubic sie.
 
-			B_LogEntry	(TOPIC_MOD_VANJA_BROMOR, "Bromor sagt, er lässt Vanja jetzt in Ruhe.");
+			B_LogEntry	(TOPIC_MOD_VANJA_BROMOR, "Bromor mówi, ze teraz opuszcza Vanje samotnie.");
 
 			Mod_Vanja_BromorKO = 1;
 
@@ -154,7 +154,7 @@ FUNC VOID Info_Mod_Bromor_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_03"); //Große Sprüche klopfen und nichts dahinter. Jetzt verzieh dich und misch dich nicht in meine Angelegenheiten ein.
+			AI_Output(self, hero, "Info_Mod_Bromor_Umgehauen_04_03"); //Duze powiedzenia zapukaja i nic za tym nie stoi. Teraz zgubisz sie i nie ingeruj w mój biznes.
 
 			B_SetTopicStatus	(TOPIC_MOD_VANJA_BROMOR, LOG_FAILED);
 		};
@@ -189,7 +189,7 @@ FUNC INT Info_Mod_Bromor_Gardist_Condition()
 
 FUNC VOID Info_Mod_Bromor_Gardist_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bromor_Gardist_07_00"); //Du bist hier unerwünscht, verzieh dich.
+	AI_Output(self, hero, "Info_Mod_Bromor_Gardist_07_00"); //Tu nie chcesz, wyjdz stad.
 
 	AI_GotoWP	(hero, "NW_CITY_HABOUR_PUFF_ENTRANCE");
 
@@ -206,7 +206,7 @@ INSTANCE Info_Mod_Bromor_Aufgeben (C_INFO)
 	information	= Info_Mod_Bromor_Aufgeben_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hörst du auf, zu versuchen, uns zu ruinieren?";
+	description	= "Czy przestanie Pan próbowac nas zniszczyc?";
 };
 
 FUNC INT Info_Mod_Bromor_Aufgeben_Condition()
@@ -220,10 +220,10 @@ FUNC INT Info_Mod_Bromor_Aufgeben_Condition()
 
 FUNC VOID Info_Mod_Bromor_Aufgeben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_Aufgeben_15_00"); //Hörst du auf, zu versuchen, uns zu ruinieren?
-	AI_Output(self, hero, "Info_Mod_Bromor_Aufgeben_07_01"); //Ja, aber bringt das ganze hier wieder in Ordnung. Dann hört ihr nichts mehr von mir.
+	AI_Output(hero, self, "Info_Mod_Bromor_Aufgeben_15_00"); //Czy przestanie Pan próbowac nas zniszczyc?
+	AI_Output(self, hero, "Info_Mod_Bromor_Aufgeben_07_01"); //Tak, ale to wszystko naprawic. Wtedy mnie nie uslyszysz.
 
-	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Bromor hat zugestimmt. Er lässt uns in Ruhe, wenn wir alles wieder in Ordnung bringen.");
+	B_LogEntry	(TOPIC_MOD_AL_LAGERHAUS, "Bromor wyrazil zgode. Opusci nas sam, kiedy wszystko naprawimy.");
 };
 
 INSTANCE Info_Mod_Bromor_Shakir (C_INFO)
@@ -234,7 +234,7 @@ INSTANCE Info_Mod_Bromor_Shakir (C_INFO)
 	information	= Info_Mod_Bromor_Shakir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tag, großer Zuhälter.";
+	description	= "Wi, duzy pimp.";
 };
 
 FUNC INT Info_Mod_Bromor_Shakir_Condition()
@@ -248,17 +248,17 @@ FUNC INT Info_Mod_Bromor_Shakir_Condition()
 
 FUNC VOID Info_Mod_Bromor_Shakir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_00"); //Tag, großer Zuhälter.
-	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_01"); //Was heißt hier Zuhälter? Ich halte auf. Und zwar meinen Beutel. 100 Gold die Dame.
-	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_02"); //Abgemacht. Aber ich möchte die Person mit nach Hause nehmen.
-	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_03"); //So schön auf Wargenfell, am offenen Feuer, eine gute Flasche Klosterwein. Du weißt schon.
-	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_04"); //Wo denkst du hin? Ich lasse meine Mädchen nicht aus den Augen.
-	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_05"); //Und wenn ich das Doppelte zahle?
-	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_06"); //Vergiss es. Die bleiben im Haus. Such dir doch 'ne Straßendirne.
-	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_07"); //Dann kommen wir nicht ins Geschäft.
-	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_08"); //So sehe ich das auch.
+	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_00"); //Wi, duzy pimp.
+	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_01"); //Co masz na mysli, pimp? Wstrzymam sie. To moja torebka. 100 zlota królowa.
+	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_02"); //Ladunek. Chce jednak zabrac osobe do domu.
+	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_03"); //Tak piekna na Wargenfell, przy otwartym ogniu, dobra butelka klasztornego wina. Wiesz, co mam na mysli.
+	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_04"); //O czym myslisz? Nie pozwalam, aby moje dziewczyny byly z oczu.
+	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_05"); //Co zrobic, jesli zaplace podwójnie?
+	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_06"); //Zapomnij o tym. Pozostaja w domu.
+	AI_Output(hero, self, "Info_Mod_Bromor_Shakir_15_07"); //Wtedy nie mozemy robic interesów.
+	AI_Output(self, hero, "Info_Mod_Bromor_Shakir_07_08"); //Tak wlasnie to widze.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Bromor will mir keine Frau mitgeben. Ich soll 'ne Straßendirne suchen. Hm ... Mal Moe fragen, der kennt sich hier aus.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Bromor nie da mi zony.");
 };
 
 INSTANCE Info_Mod_Bromor_NadjaBeiDexter (C_INFO)
@@ -269,7 +269,7 @@ INSTANCE Info_Mod_Bromor_NadjaBeiDexter (C_INFO)
 	information	= Info_Mod_Bromor_NadjaBeiDexter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, wie läuft das Geschäft?";
+	description	= "Wiec jak to dziala?";
 };
 
 FUNC INT Info_Mod_Bromor_NadjaBeiDexter_Condition()
@@ -282,9 +282,9 @@ FUNC INT Info_Mod_Bromor_NadjaBeiDexter_Condition()
 
 FUNC VOID Info_Mod_Bromor_NadjaBeiDexter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bromor_NadjaBeiDexter_15_00"); //Und, wie läuft das Geschäft?
-	AI_Output(self, hero, "Info_Mod_Bromor_NadjaBeiDexter_07_01"); //Miserabel. Mein bestes Mädchen Nadja hat sich aus dem Staub gemacht.
-	AI_Output(self, hero, "Info_Mod_Bromor_NadjaBeiDexter_07_02"); //Sie hockt jetzt bei irgendeinem neureichen Bastard, der kürzlich durch das Erzgeschäft zu großem Reichtum kam. Verdammter Scheißdreck!
+	AI_Output(hero, self, "Info_Mod_Bromor_NadjaBeiDexter_15_00"); //Wiec jak to dziala?
+	AI_Output(self, hero, "Info_Mod_Bromor_NadjaBeiDexter_07_01"); //Miserable. Moja najlepsza dziewczyna Nadja wyszla z rezerwacji.
+	AI_Output(self, hero, "Info_Mod_Bromor_NadjaBeiDexter_07_02"); //Teraz siedzi z nowa, bogata w nowe bogactwo bastardem, który niedawno zyskal ogromne bogactwo dzieki dzialalnosci gospodarczej w sektorze rudy. Rozpalanie byków!
 };
 
 INSTANCE Info_Mod_Bromor_Pickpocket (C_INFO)

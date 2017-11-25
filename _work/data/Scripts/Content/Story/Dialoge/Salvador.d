@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Salvador_Hi (C_INFO)
 	information	= Info_Mod_Salvador_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Salvador_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Salvador_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Salvador_Hi_04_01"); //Ich bin Salvador, Trainer der Wasserkrieger und Hüter.
+	AI_Output(self, hero, "Info_Mod_Salvador_Hi_04_01"); //Jestem Salwadorem, trener wojska wodnego i opiekunów.
 };
 
 INSTANCE Info_Mod_Salvador_Teacher (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Salvador_Teacher (C_INFO)
 	information	= Info_Mod_Salvador_Teacher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Salvador_Teacher_Condition()
@@ -48,11 +48,11 @@ FUNC VOID Info_Mod_Salvador_Teacher_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Salvador_Teacher_04_01"); //Ja, ich kann dir zeigen wie du stärker wirst.
-	AI_Output(self, hero, "Info_Mod_Salvador_Teacher_04_02"); //Außerdem kann ich dir den Umgang mit Ein- und Zweihandwaffen beibringen.
+	AI_Output(self, hero, "Info_Mod_Salvador_Teacher_04_01"); //Tak, pokaze wam jak sie wzmocnic.
+	AI_Output(self, hero, "Info_Mod_Salvador_Teacher_04_02"); //Poza tym, moge nauczyc Cie jak uzywac broni jednej i drugiej reki.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_WASSERKRIEGER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_WASSERKRIEGER, "Salvador kann mir beibringen wie ich stärker werde und wie ich mit Ein- und Zweihandwaffen umgehe.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_WASSERKRIEGER, "Salwador moze nauczyc mnie jak stac sie silniejsza i jak obchodzic sie z bronia jednoreczna i dwureczna.");
 };
 
 INSTANCE Info_Mod_Salvador_Lernen (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Salvador_Lernen (C_INFO)
 	information	= Info_Mod_Salvador_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Salvador_Lernen_Condition()
@@ -80,15 +80,15 @@ FUNC INT Info_Mod_Salvador_Lernen_Condition()
 
 FUNC VOID Info_Mod_Salvador_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Salvador_Lernen_15_00"); //Ich will lernen.
-	AI_Output(self, hero, "Info_Mod_Salvador_Lernen_04_01"); //Was willst du lernen?
+	AI_Output(hero, self, "Info_Mod_Salvador_Lernen_15_00"); //Chce sie uczyc.
+	AI_Output(self, hero, "Info_Mod_Salvador_Lernen_04_01"); //Czego chcesz sie nauczyc?
 
 	Info_ClearChoices	(Info_Mod_Salvador_Lernen);
 
 	Info_AddChoice	(Info_Mod_Salvador_Lernen, DIALOG_BACK, Info_Mod_Salvador_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Zweihandkampf)", Info_Mod_Salvador_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Einhandkampf)", Info_Mod_Salvador_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Stärke)", Info_Mod_Salvador_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka dwureczna)", Info_Mod_Salvador_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka jednoreczna)", Info_Mod_Salvador_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(wytrzymalosc)", Info_Mod_Salvador_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Salvador_Lernen_BACK()
@@ -110,9 +110,9 @@ FUNC VOID Info_Mod_Salvador_Lernen_Zweihand_BACK()
 	Info_ClearChoices	(Info_Mod_Salvador_Lernen);
 
 	Info_AddChoice	(Info_Mod_Salvador_Lernen, DIALOG_BACK, Info_Mod_Salvador_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Zweihandkampf)", Info_Mod_Salvador_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Einhandkampf)", Info_Mod_Salvador_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Stärke)", Info_Mod_Salvador_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka dwureczna)", Info_Mod_Salvador_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka jednoreczna)", Info_Mod_Salvador_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(wytrzymalosc)", Info_Mod_Salvador_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Salvador_Lernen_Zweihand_5()
@@ -153,9 +153,9 @@ FUNC VOID Info_Mod_Salvador_Lernen_Einhand_BACK()
 	Info_ClearChoices	(Info_Mod_Salvador_Lernen);
 
 	Info_AddChoice	(Info_Mod_Salvador_Lernen, DIALOG_BACK, Info_Mod_Salvador_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Zweihandkampf)", Info_Mod_Salvador_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Einhandkampf)", Info_Mod_Salvador_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Stärke)", Info_Mod_Salvador_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka dwureczna)", Info_Mod_Salvador_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka jednoreczna)", Info_Mod_Salvador_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(wytrzymalosc)", Info_Mod_Salvador_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Salvador_Lernen_Einhand_5()
@@ -196,9 +196,9 @@ FUNC VOID Info_Mod_Salvador_Lernen_Staerke_BACK()
 	Info_ClearChoices	(Info_Mod_Salvador_Lernen);
 
 	Info_AddChoice	(Info_Mod_Salvador_Lernen, DIALOG_BACK, Info_Mod_Salvador_Lernen_BACK);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Zweihandkampf)", Info_Mod_Salvador_Lernen_Zweihand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Einhandkampf)", Info_Mod_Salvador_Lernen_Einhand);
-	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(Stärke)", Info_Mod_Salvador_Lernen_Staerke);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka dwureczna)", Info_Mod_Salvador_Lernen_Zweihand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(walka jednoreczna)", Info_Mod_Salvador_Lernen_Einhand);
+	Info_AddChoice	(Info_Mod_Salvador_Lernen, "(wytrzymalosc)", Info_Mod_Salvador_Lernen_Staerke);
 };
 
 FUNC VOID Info_Mod_Salvador_Lernen_Staerke_5()

@@ -37,7 +37,7 @@ INSTANCE Info_Bud_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_3_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Wie kann ich mich diesem Lager anschliessen?";
+	description = "Jak dolaczyc do tego obozu?";
 };                       
 
 FUNC INT Info_Bud_3_EinerVonEuchWerden_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Bud_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Bud_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(hero,self,"Info_Bud_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschließen?
-	AI_Output(self,hero,"Info_Bud_3_EinerVonEuchWerden_03_01"); //Ich bin nur ein Buddler. Wir haben hier gar nichts zu sagen. Du solltest mit den Gardisten oder mit den Schatten reden.
+	AI_Output(hero,self,"Info_Bud_3_EinerVonEuchWerden_15_00"); //Jak dolaczyc do tego obozu?
+	AI_Output(self,hero,"Info_Bud_3_EinerVonEuchWerden_03_01"); //Jestem po prostu kopaczka. Nie mamy tu nic do powiedzenia. Powinienes porozmawiac z straznikami lub cieniami.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_Bud_3_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_3_WichtigePersonen_Condition;
 	information	= Info_Bud_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist hier der Boss?";
+	description = "Kim jest szef?";
 };                       
 
 FUNC INT Info_Bud_3_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_Bud_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bud_3_WichtigePersonen_Info()
 {
-	AI_Output(hero,self,"Info_Bud_3_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,hero,"Info_Bud_3_WichtigePersonen_03_01"); //Thorus. Er lebt in der Burg. Aber wir Buddler haben immer nur mit seinen Gardisten zu tun.
-	AI_Output(self,hero,"Info_Bud_3_WichtigePersonen_03_02"); //Am besten ist es, wenn sie dich gar nicht bemerken. Sobald du hier auffällst, hast du ein Problem.
+	AI_Output(hero,self,"Info_Bud_3_WichtigePersonen_15_00"); //Kim jest szef?
+	AI_Output(self,hero,"Info_Bud_3_WichtigePersonen_03_01"); //Thorus. Mieszka w zamku. Ale my Buddler mamy do czynienia tylko z jego straznikami.
+	AI_Output(self,hero,"Info_Bud_3_WichtigePersonen_03_02"); //Najlepiej jest, jesli cie nawet nie zauwaza. Jak tylko przyciagniesz uwage, bedziesz mial problem.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE Info_Bud_3_DasLager(C_INFO)
 	condition	= Info_Bud_3_DasLager_Condition;
 	information	= Info_Bud_3_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "Jakie sa interesujace miejsca?";
 };                       
 
 FUNC INT Info_Bud_3_DasLager_Condition()
@@ -106,9 +106,9 @@ FUNC INT Info_Bud_3_DasLager_Condition()
 
 FUNC VOID Info_Bud_3_DasLager_Info()
 {
-	AI_Output(hero,self,"Info_Bud_3_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
-	AI_Output(self,hero,"Info_Bud_3_DasLager_03_01"); //Nun, wenn du wetten willst, geh abends in die Arena. Wenn du Sachen kaufen willst, gehst du am besten zum Marktplatz.
-	AI_Output(self,hero,"Info_Bud_3_DasLager_03_02"); //Da kriegt du fast alles. Außer Karten. Wenn du Karten kaufen willst, geh zu Graham. Seine Hütte ist schräg gegenüber dem Burgtor.
+	AI_Output(hero,self,"Info_Bud_3_DasLager_15_00"); //Jakie sa interesujace miejsca?
+	AI_Output(self,hero,"Info_Bud_3_DasLager_03_01"); //Cóz, jesli chcesz sie obstawiac, idz na arene w nocy. Jesli chcesz kupic rzeczy, przejdz na targowisko.
+	AI_Output(self,hero,"Info_Bud_3_DasLager_03_02"); //Dostaniesz prawie wszystko. Z wyjatkiem kart. Jesli chcesz kupic bilety, udaj sie do Grahama. Jego chata jest ukosnie naprzeciwko bramy zamkowej.
 };
 
 // *************************************************************************
@@ -121,7 +121,7 @@ INSTANCE Info_Bud_3_DieLage(C_INFO) // E1
 	condition	= Info_Bud_3_DieLage_Condition;
 	information	= Info_Bud_3_DieLage_Info;
 	permanent	= 1;
-	description = "Wie steht's?";
+	description = "Jaki jest wynik?";
 };                       
 
 FUNC INT Info_Bud_3_DieLage_Condition()
@@ -131,9 +131,9 @@ FUNC INT Info_Bud_3_DieLage_Condition()
 
 FUNC VOID Info_Bud_3_DieLage_Info()
 {
-	AI_Output(hero,self,"Info_Bud_3_DieLage_15_00"); //Wie steht's?
-	AI_Output(self,hero,"Info_Bud_3_DieLage_03_01"); //Du wirst es auch noch lernen. Immer wachsam bleiben. Selbst nachts.
-	AI_Output(self,hero,"Info_Bud_3_DieLage_03_02"); //Ich habe schon seit Tagen nicht mehr richtig geschlafen. Und wer hier nicht schläft, sitzt die doppelte Zeit ab!
+	AI_Output(hero,self,"Info_Bud_3_DieLage_15_00"); //Jaki jest wynik?
+	AI_Output(self,hero,"Info_Bud_3_DieLage_03_01"); //Nauczysz sie równiez. Badz zawsze czujny. Nawet w nocy.
+	AI_Output(self,hero,"Info_Bud_3_DieLage_03_02"); //Nie spalem wlasciwie w ciagu dni. A jesli nie spisz tutaj, podwoisz swój czas!
 };
 
 INSTANCE Info_Mod_BUD_3_Pickpocket (C_INFO)

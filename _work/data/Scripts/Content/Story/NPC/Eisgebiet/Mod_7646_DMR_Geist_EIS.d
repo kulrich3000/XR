@@ -1,7 +1,7 @@
 INSTANCE Mod_7646_DMR_Geist_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Geist";
+	name 		= "postawa";
 	guild 		= GIL_DMT;
 	id 			= 7646;
 	voice 		= 10;

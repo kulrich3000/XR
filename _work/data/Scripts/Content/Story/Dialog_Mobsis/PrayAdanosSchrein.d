@@ -59,7 +59,7 @@ INSTANCE PC_PrayAdanosSchrein_Pray (C_Info)
 	condition		= PC_PrayAdanosSchrein_Pray_Condition;
 	information		= PC_PrayAdanosSchrein_Pray_Info;
 	permanent		= TRUE;
-	description		= "Beten"; 
+	description		= "modlitwy"; 
 };
 
 FUNC INT PC_PrayAdanosSchrein_Pray_Condition ()
@@ -75,15 +75,15 @@ FUNC VOID PC_PrayAdanosSchrein_Pray_Info()
 	Info_ClearChoices (PC_PrayAdanosSchrein_Pray);
 	Info_AddChoice (PC_PrayAdanosSchrein_Pray,Dialog_Back,PC_PrayAdanosSchrein_Pray_Back);
 
-	Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Ich will beten und opfere nichts.",PC_PrayAdanosSchrein_Pray_NoPay);
+	Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Chce sie modlic i niczego nie poswiecac.",PC_PrayAdanosSchrein_Pray_NoPay);
 			
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Ich will beten und opfere 100 Gold.",PC_PrayAdanosSchrein_Pray_100);
+		Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Chce sie modlic i poswiecic 100 zlota.",PC_PrayAdanosSchrein_Pray_100);
 	};	
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Ich will beten und opfere 50 Gold.",PC_PrayAdanosSchrein_Pray_50);
+		Info_AddChoice (PC_PrayAdanosSchrein_Pray,"Bede sie modlic i poswiece 50 zlota.",PC_PrayAdanosSchrein_Pray_50);
 	};
 }; 
 
@@ -135,7 +135,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		{
 			hero.lp += 1;
 
-			PrintScreen	("Adanos gewährt dir einen Lernpunkt", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos zapewnia punkt edukacyjny", -1, 5, FONT_SCREEN, 2);
 		}
 		else
 		{
@@ -143,7 +143,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 			hero.protection[PROT_EDGE] += 1000;
 			hero.protection[PROT_POINT] += 1000;
 
-			PrintScreen	("Adanos gewährt dir mehr Schutz", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos zapewnia wieksza ochrone", -1, 5, FONT_SCREEN, 2);
 		};
 	}
 	else if (AdanosGoldGesamt >= 2000)
@@ -154,7 +154,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		hero.attribute[ATR_MANA_MAX] += 10;
 		hero.attribute[ATR_MANA] += 10;
 
-		PrintScreen	("Adanos gewährt dir 10 Mana", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje Ci dotacje 10 Mana", -1, 5, FONT_SCREEN, 2);
 	}
 	else if (AdanosGoldGesamt >= 3000)
 	&& (AdanosZusatzBonus == 2)
@@ -163,7 +163,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 
 		EXPi += 2000;
 
-		PrintScreen	("Adanos gewährt dir zusätzliche 2000 Erfahrungspunkte", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje dodatkowe 2000 punktów doswiadczenia.", -1, 5, FONT_SCREEN, 2);
 	}
 	else if (AdanosGoldGesamt >= 4000)
 	&& (AdanosZusatzBonus == 3)
@@ -174,7 +174,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		{
 			hero.lp += 5;
 
-			PrintScreen	("Adanos gewährt dir 5 Lernpunkte", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos udziela 5 punktów uczenia sie", -1, 5, FONT_SCREEN, 2);
 		}
 		else
 		{
@@ -182,7 +182,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 			hero.protection[PROT_EDGE] += 5000;
 			hero.protection[PROT_POINT] += 5000;
 
-			PrintScreen	("Adanos gewährt dir mehr Schutz", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos zapewnia wieksza ochrone", -1, 5, FONT_SCREEN, 2);
 		};
 	}
 	else if (AdanosGoldGesamt >= 5000)
@@ -195,7 +195,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		B_RaiseFightTalent	(hero, NPC_TALENT_BOW, 2);
 		B_RaiseFightTalent	(hero, NPC_TALENT_CROSSBOW, 2);
 
-		PrintScreen	("Adanos gewährt dir 2% Bonus auf alle deine Kampffertigkeiten", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje Ci 2% bonusu do wszystkich umiejetnosci bojowych.", -1, 5, FONT_SCREEN, 2);
 	}
 	else if (AdanosGoldGesamt >= 6500)
 	&& (AdanosZusatzBonus == 5)
@@ -205,7 +205,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		hero.attribute[ATR_MANA_MAX] += 15;
 		hero.attribute[ATR_MANA] += 15;
 
-		PrintScreen	("Adanos gewährt dir 15 Mana", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje Ci dotacje 15 Mana", -1, 5, FONT_SCREEN, 2);
 	}
 	else if (AdanosGoldGesamt >= 8000)
 	&& (AdanosZusatzBonus == 6)
@@ -216,7 +216,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		{
 			hero.lp += 10;
 
-			PrintScreen	("Adanos gewährt dir 10 Lernpunkte", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos przyznaje Ci 10 punktów uczenia sie.", -1, 5, FONT_SCREEN, 2);
 		}
 		else
 		{
@@ -224,7 +224,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 			hero.protection[PROT_EDGE] += 10000;
 			hero.protection[PROT_POINT] += 10000;
 
-			PrintScreen	("Adanos gewährt dir mehr Schutz", -1, 5, FONT_SCREEN, 2);
+			PrintScreen	("Adanos zapewnia wieksza ochrone", -1, 5, FONT_SCREEN, 2);
 		};
 	}
 	else if (AdanosGoldGesamt >= 10000)
@@ -234,7 +234,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 
 		EXPi += 15000;
 
-		PrintScreen	("Adanos gewährt dir zusätzliche 15000 Erfahrungspunkte", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje dodatkowe 15000 punktów doswiadczenia.", -1, 5, FONT_SCREEN, 2);
 	}
 	else if (AdanosGoldGesamt >= 14000)
 	&& (AdanosZusatzBonus == 8)
@@ -246,7 +246,7 @@ FUNC VOID B_PrayAdanos (var int Goldi, var int EXPi)
 		B_RaiseFightTalent	(hero, NPC_TALENT_BOW, 5);
 		B_RaiseFightTalent	(hero, NPC_TALENT_CROSSBOW, 5);
 
-		PrintScreen	("Adanos gewährt dir 5% Bonus auf alle deine Kampffertigkeiten", -1, 5, FONT_SCREEN, 2);
+		PrintScreen	("Adanos przyznaje ci 5% premie do wszystkich umiejetnosci bojowych.", -1, 5, FONT_SCREEN, 2);
 	};
 
 	if (EXPi > 0)
@@ -311,7 +311,7 @@ INSTANCE PC_PrayAdanosSchrein_Reg (C_Info)
 	condition		= PC_PrayAdanosSchrein_Reg_Condition;
 	information		= PC_PrayAdanosSchrein_Reg_Info;
 	permanent		= TRUE;
-	description		= "Regeneration erlangen"; 
+	description		= "ozywiac sie"; 
 };
 
 FUNC INT PC_PrayAdanosSchrein_Reg_Condition ()
@@ -332,11 +332,11 @@ FUNC VOID PC_PrayAdanosSchrein_Reg_Info()
 	{
 		if (Mod_Schwierigkeit == 4)
 		{
-			Info_AddChoice (PC_PrayAdanosSchrein_Reg,"Manaregeneration (7000 Gold)",PC_PrayAdanosSchrein_Reg_Mana);
+			Info_AddChoice (PC_PrayAdanosSchrein_Reg,"Regeneracja Mana (7000 zloty)",PC_PrayAdanosSchrein_Reg_Mana);
 		}
 		else
 		{
-			Info_AddChoice (PC_PrayAdanosSchrein_Reg,"Manaregeneration (20 LP und 5000 Gold)",PC_PrayAdanosSchrein_Reg_Mana);
+			Info_AddChoice (PC_PrayAdanosSchrein_Reg,"Regeneracja Mana (20 LP i 5000 zlota)",PC_PrayAdanosSchrein_Reg_Mana);
 		};
 	};
 }; 

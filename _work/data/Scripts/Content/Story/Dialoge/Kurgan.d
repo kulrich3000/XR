@@ -21,13 +21,13 @@ FUNC VOID Info_Mod_Kurgan_Angebot_Info()
 {
 	AI_UnequipWeapons	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_00"); //Hey, was willst du?
-	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_01"); //Ich komme vom Alten Lager und will Raven ein Angebot machen.
-	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_02"); //Raven ist nicht da und hat mich solange zum Anführer der Dämonenritter gemacht.
-	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_03"); //Das Alte Lager will euch einen Teil der Mine abkaufen, schließlich gehört sie uns rechtmäßig.
-	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_04"); //(lacht dreckig) Unsere Mine abkaufen. Richte deinen Erzbaronen aus, dass sie darauf sehr lange warten können.
-	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_05"); //Entweder ihr stimmt zu oder wir müssen härtere Maßnahmen ergreifen.
-	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_06"); //Na warte, dir zeig ichs!
+	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_00"); //Hej, czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_01"); //Jestem z Starego Obozu i chce, aby oferta Raven byla dla mnie bardzo atrakcyjna.
+	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_02"); //Raven jest nieobecny i od tak dawna czyni mnie przywódca Rycerzy Demonicznych.
+	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_03"); //Stary obóz chce wykupic czesc kopalni, wszakze legalnie nalezaca do nas.
+	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_04"); //Kup nasza kopalnie. Powiedz baronom rudy, aby dlugo na to czekac.
+	AI_Output(hero, self, "Info_Mod_Kurgan_Angebot_15_05"); //Albo sie pan zgadza, albo musimy podjac bardziej rygorystyczne srodki.
+	AI_Output(self, hero, "Info_Mod_Kurgan_Angebot_10_06"); //Poczekaj, pokaze Ci!
 
 	AI_StopProcessInfos	(self);
 

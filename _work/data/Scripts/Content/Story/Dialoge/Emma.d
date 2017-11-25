@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Emma_Hi (C_INFO)
 	information	= Info_Mod_Emma_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, du. Komm doch mal mit, ich will dir was zeigen.";
+	description	= "Hej, Ty. Przyjedzcie ze mna, chce wam cos pokazac.";
 };
 
 FUNC INT Info_Mod_Emma_Hi_Condition()
@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Emma_Hi_Condition()
 
 FUNC VOID Info_Mod_Emma_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Emma_Hi_15_00"); //Na, du. Komm doch mal mit, ich will dir was zeigen.
+	AI_Output(hero, self, "Info_Mod_Emma_Hi_15_00"); //Hej, Ty. Przyjedzcie ze mna, chce wam cos pokazac.
 
 	B_LieselMaeh();
 
@@ -52,13 +52,13 @@ FUNC VOID Info_Mod_Emma_Dank_Info()
 {
 	B_LieselMaeh();
 
-	AI_Output(hero, self, "Info_Mod_Emma_Dank_15_00"); //Hallo! Was hast du denn da im Maul?
+	AI_Output(hero, self, "Info_Mod_Emma_Dank_15_00"); //Witaj! Co to jest w ustach?
 
 	B_LieselMaeh();
 
 	B_GiveInvItems	(self, hero, ItPl_Perm_Herb, 1);
 
-	AI_Output(hero, self, "Info_Mod_Emma_Dank_15_01"); //Das hast du mir gepflückt? Vielen Dank!
+	AI_Output(hero, self, "Info_Mod_Emma_Dank_15_01"); //Wybrales to dla mnie? Bardzo dziekuje!
 
 	B_LieselMaeh();
 };

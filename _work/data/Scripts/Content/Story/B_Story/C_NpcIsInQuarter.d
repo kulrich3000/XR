@@ -76,7 +76,7 @@ func int C_GetDistToCenter (var C_NPC slf, var int quarter)
 	}
 	else
 	{
-		printplus ("WRONG Q-PARAMETER!");
+		printplus ("ZLY Q-PARAMETR!");
 	};	
 	
 	return dist;

@@ -1,6 +1,6 @@
 INSTANCE Bloodfly_Hero	(Mst_Default_Bloodfly)
 {
-	name	=	"Ich";
+	name	=	"I";
 	B_SetVisuals_Bloodfly();
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLOODFLY;

@@ -69,7 +69,7 @@ func int ZS_MagicShrink_Loop ()
 
 			AI_Teleport	(self, "TOT");
 
-			B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Ich habe ein Monster gefangen und sollte jetzt zu Argez zurückkehren.");
+			B_LogEntry	(TOPIC_MOD_MAGISCHEMARKIERUNG, "Zlapalem potwora i teraz powinienem wrócic do Argeza.");
 		}
 		else
 		{

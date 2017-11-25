@@ -1,7 +1,7 @@
 instance Mod_7465_NONE_Cassia_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cassia"; 
+	name 		= "Kassia"; 
 	guild 		= GIL_OUT;
 	id 			= 7465;
 	voice 		= 16;

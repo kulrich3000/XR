@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Anselm_Hi (C_INFO)
 	information	= Info_Mod_Anselm_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Anselm_Hi_Condition()
@@ -18,11 +18,11 @@ FUNC VOID Info_Mod_Anselm_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_00"); //Ich bin der Stadthalter von Khorata!
-	AI_Output(hero, self, "Info_Mod_Anselm_Hi_15_01"); //Der Statthalter? Wer ist denn dein Vorgesetzter?
-	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_02"); //Nein, das verstehst du falsch. Ich bin der Stadthalter. Ich halte die Stadt in Schuss, aber ich diene niemandem.
-	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_03"); //Aber was für eine glückliche Fügung, dass mir das Schicksal dich beschert hat!
-	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_04"); //Ich habe doch glatt gerade eben die Idee gehabt, Khorata und Umgebung vermessen zu lassen, damit ich endlich weiß, wie groß mein Reich ist.
+	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_00"); //Jestem gubernatorem Khoraty!
+	AI_Output(hero, self, "Info_Mod_Anselm_Hi_15_01"); //Gubernator? Kim jest Twój przelozony?
+	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_02"); //Nie, zle rozumiesz. Jestem gubernatorem. Utrzymam miasto w dobrej kondycji, ale nikomu nie sluze.
+	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_03"); //Ale jaki szczesliwy zbieg okolicznosci, który los ci dal!
+	AI_Output(self, hero, "Info_Mod_Anselm_Hi_32_04"); //Mialem wlasnie pomysl, aby przebadac Khorate i okolice, aby w koncu wiedziec, jak wielkie jest moje imperium.
 };
 
 INSTANCE Info_Mod_Anselm_Landvermessung (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Anselm_Landvermessung (C_INFO)
 	information	= Info_Mod_Anselm_Landvermessung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du benötigst meine Hilfe?";
+	description	= "Potrzebujesz mojej pomocy?";
 };
 
 FUNC INT Info_Mod_Anselm_Landvermessung_Condition()
@@ -46,15 +46,15 @@ FUNC INT Info_Mod_Anselm_Landvermessung_Condition()
 
 FUNC VOID Info_Mod_Anselm_Landvermessung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Landvermessung_15_00"); //Du benötigst meine Hilfe?
-	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_01"); //Genau richtig! Ich scheine ja einen richtigen Schnelldenker erwischt zu haben!
-	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_02"); //Als Erstes gehst du also zu Vincent, das ist der Jäger vor der Stadt.
-	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_03"); //Er jagt überall, also wird er auch wissen, wie groß das Umland von Khorata ist.
-	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_04"); //Wenn du das erledigt hast, brauchen wir nur noch die Fläche von Khorata in Erfahrung zu bringen. Brillant!
+	AI_Output(hero, self, "Info_Mod_Anselm_Landvermessung_15_00"); //Potrzebujesz mojej pomocy?
+	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_01"); //Dokladnie w porzadku! Wydaje mi sie, ze zlapalem prawdziwego mysliciela!
+	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_02"); //Tak wiec pierwsza rzecza, która zrobisz jest udanie sie do Vincenta, czyli mysliwego poza miastem.
+	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_03"); //Poluje wszedzie, wiec bedzie wiedzial jak duza jest okolica Khoraty.
+	AI_Output(self, hero, "Info_Mod_Anselm_Landvermessung_32_04"); //Kiedy juz to zrobisz, jedyne co musimy zrobic to dowiedziec sie wiecej o obszarze Khoraty. Znakomity!
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Anselm, der ausdrücklich Stadthalter von Khorata genannt werden möchte, will Khorata und Umland vermessen lassen. Dazu soll ich zu Vincent, einem Jäger außerhalb der Stadt, gehen und ihn um eine Schätzung bitten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Anselm, który chce zostac wyraznie nazwany gubernatorem Khoraty, chce, aby badano Khorate i okolice. Mam jechac do Vincenta, mysliwego poza miastem i poprosic go o szacunkowa wycene.");
 };
 
 INSTANCE Info_Mod_Anselm_LandvermessungVincent (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Anselm_LandvermessungVincent (C_INFO)
 	information	= Info_Mod_Anselm_LandvermessungVincent_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Neuigkeiten.";
+	description	= "Mam wiadomosci.";
 };
 
 FUNC INT Info_Mod_Anselm_LandvermessungVincent_Condition()
@@ -78,14 +78,14 @@ FUNC INT Info_Mod_Anselm_LandvermessungVincent_Condition()
 
 FUNC VOID Info_Mod_Anselm_LandvermessungVincent_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVincent_15_00"); //Ich habe Neuigkeiten. Das Umland von Khorata hat eine Fläche von fünf Quadratmeilen. Sagt Vincent.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_01"); //Perfekt! Sogar noch mehr, als ich mir erhofft habe.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_02"); //Nun fehlt uns noch die Fläche der Stadt. Da fragst du am besten Hubert.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_03"); //Der läuft berufsbedingt viel in Khorata herum und kennt sich aus wie kein zweiter.
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVincent_15_00"); //Mam wiadomosci. Okoliczny obszar Khorata ma powierzchnie pieciu mil kwadratowych. Mówi Vincent.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_01"); //Doskonaly! Jeszcze wiecej niz sie spodziewalem.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_02"); //Teraz nadal brakuje nam obszaru miasta. Lepiej zapytac Huberta.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVincent_32_03"); //Ze wzgledu na swoja prace duzo biegnie wokól Khoraty i zna swoja droge jak nikt inny.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Nun soll ich noch einen gewissen Hubert nach der Fläche Khoratas fragen ...");
+	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Teraz musze poprosic pewnego Huberta o teren Khoraty....");
 
 	B_StartOtherRoutine	(Mod_7380_OUT_Hubert_REL, "STREUNER");
 };
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Anselm_LandvermessungHubert (C_INFO)
 	information	= Info_Mod_Anselm_LandvermessungHubert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe mit Hubert gesprochen.";
+	description	= "Rozmawialam z Hubertem.";
 };
 
 FUNC INT Info_Mod_Anselm_LandvermessungHubert_Condition()
@@ -111,15 +111,15 @@ FUNC INT Info_Mod_Anselm_LandvermessungHubert_Condition()
 
 FUNC VOID Info_Mod_Anselm_LandvermessungHubert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungHubert_15_00"); //Ich habe mit Hubert gesprochen.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_01"); //Was sagt er?
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungHubert_15_02"); //Khorata sei so groß wie sieben Stoppelfelder.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_03"); //Ja? Wirklich? Das hätte ich nämlich auch geschätzt.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_04"); //Das hast du ganz toll gemacht. (pathetisch) Ich stehe tief in deiner Schuld. Ganz Khorata wird dir auf ewig dankbar sein.
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungHubert_15_00"); //Rozmawialam z Hubertem.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_01"); //Co on mówi?
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungHubert_15_02"); //Khorata jest tak duza jak siedem sciernisk.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_03"); //Tak? Naprawde? Bylabym tego równiez zadowolona.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungHubert_32_04"); //Wykonal pan wspaniala prace. Jestem Wam gleboko zawdzieczam. Cala Khorata bedzie Panstwu wiecznie wdzieczna.
 
 	B_GivePlayerXP	(150);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Jetzt habe ich also diesen komischen Auftrag beendet. Den Göttern sei Dank!");
+	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Wiec teraz skonczylem te dziwna prace. Dziekuje Bogom!");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -135,7 +135,7 @@ INSTANCE Info_Mod_Anselm_LandvermessungVerarsche (C_INFO)
 	information	= Info_Mod_Anselm_LandvermessungVerarsche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sag mal ...";
+	description	= "Mówic.....";
 };
 
 FUNC INT Info_Mod_Anselm_LandvermessungVerarsche_Condition()
@@ -148,31 +148,31 @@ FUNC INT Info_Mod_Anselm_LandvermessungVerarsche_Condition()
 
 FUNC VOID Info_Mod_Anselm_LandvermessungVerarsche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_00"); //Sag mal ...
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_01"); //Was gibt es denn noch?
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_02"); //Kann es vielleicht sein, dass du mich verarschst?
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_03"); //(entrüstet) Ich?!
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_04"); //Genau.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_05"); //Nichts steht mir ferner!
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_06"); //Der Jäger lacht mich aus, ich soll einen Alkoholiker befragen und du bist mit jedem Schwachsinn als Antwort zufrieden.
-	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_07"); //Hey! So darfst du das nicht sehen!
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_00"); //Mówic.....
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_01"); //Co jeszcze jest?
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_02"); //Czy to moze mnie oszukujesz?
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_03"); //Oto ja!
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_04"); //Dokladnie.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_05"); //Nic mnie dalej nie stanie sie nic!
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_15_06"); //Lowca smieje sie z mnie, powinienem zadac pytanie alkoholikowi i ciesze sie z kazdej odpowiedzi byków.
+	AI_Output(self, hero, "Info_Mod_Anselm_LandvermessungVerarsche_32_07"); //Hej! Nie patrzcie na to tak!
 
 	Info_ClearChoices	(Info_Mod_Anselm_LandvermessungVerarsche);
 
-	Info_AddChoice	(Info_Mod_Anselm_LandvermessungVerarsche, "Na gut ...", Info_Mod_Anselm_LandvermessungVerarsche_B);
-	Info_AddChoice	(Info_Mod_Anselm_LandvermessungVerarsche, "Ich glaube, es ist Zeit für eine Tracht Prügel (...)", Info_Mod_Anselm_LandvermessungVerarsche_A);
+	Info_AddChoice	(Info_Mod_Anselm_LandvermessungVerarsche, "Wszystko w porzadku....", Info_Mod_Anselm_LandvermessungVerarsche_B);
+	Info_AddChoice	(Info_Mod_Anselm_LandvermessungVerarsche, "Mysle, ze nadszedl czas na bicie (....). )", Info_Mod_Anselm_LandvermessungVerarsche_A);
 };
 
 FUNC VOID Info_Mod_Anselm_LandvermessungVerarsche_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_B_15_00"); //Na gut ...
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_B_15_00"); //Wszystko w porzadku....
 
 	Info_ClearChoices	(Info_Mod_Anselm_LandvermessungVerarsche);
 };
 
 FUNC VOID Info_Mod_Anselm_LandvermessungVerarsche_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_A_15_00"); //Ich glaube, es ist Zeit für eine Tracht Prügel, meinst du nicht auch?
+	AI_Output(hero, self, "Info_Mod_Anselm_LandvermessungVerarsche_A_15_00"); //Mysle, ze nadszedl czas na bicie, czy nie myslisz?
 	AI_Output(self, hero, "DEFAULT"); //
 
 	Info_ClearChoices	(Info_Mod_Anselm_LandvermessungVerarsche);
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Anselm_Ornament (C_INFO)
 	information	= Info_Mod_Anselm_Ornament_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du etwas über ein Ornamentstück?";
+	description	= "Czy wiesz cos o dziele zdobniczym?";
 };
 
 FUNC INT Info_Mod_Anselm_Ornament_Condition()
@@ -207,19 +207,19 @@ FUNC INT Info_Mod_Anselm_Ornament_Condition()
 
 FUNC VOID Info_Mod_Anselm_Ornament_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_00"); //Weißt du etwas über ein Ornamentstück?
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_01"); //(verdutzt) Über ein was? Meinst du was Altes?
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_02"); //Es ist das Bruchstück eines Ringes, welches der Gründer der Stadt bei sich gehabt haben müsste.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_03"); //Ah, jetzt weiß ich, was du meinst: Die Sage von der Entstehung Khoratas. Sprich doch nicht so geschwollen zu mir!
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_04"); //Kann ich das Bruchstück haben? Es ist wichtig.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_05"); //Wofür brauchst du es denn?
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_06"); //Die Wassermagier haben ein Portal in die Heimatwelt des Gründers gefunden.
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_07"); //Es lässt sich jedoch nur mit einem Portalring öffnen, und ein Teil davon soll in Relendel zu finden sein.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_08"); //Klingt ja wichtig, mein Junge. Leider habe ich dieses Bruchstück nicht selbst, aber ich könnte dir sagen, wo du es der Sage nach finden müsstest.
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_09"); //Wo denn?
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_10"); //Wenn du ein Bürger Khoratas wärst, würde ich es dir sofort erzählen, sonst kostet die Information 2000 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_00"); //Czy wiesz cos o dziele zdobniczym?
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_01"); //Co o czym? Masz na mysli cos starego?
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_02"); //Jest to fragment pierscienia, który zalozyciel miasta musial miec przy sobie.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_03"); //Ach, teraz wiem, co masz na mysli: saga o pochodzeniu khoraty. Nie badz przy mnie puchnacy!
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_04"); //Czy moge miec ten fragment? To wazne.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_05"); //Po co ci to jest potrzebne?
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_06"); //Magicy wody znalezli portal do swiata rodzinnego zalozyciela.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_07"); //Mozna go jednak otworzyc tylko z pierscieniem portalowym, a jego czesc nalezy znalezc w Relendel.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_08"); //Dzwieki wazne, mój chlopiec. Niestety, sam nie mam tego fragmentu, ale moge powiedziec, gdzie go znalezc zgodnie z legenda.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament_15_09"); //Gdzie?
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament_32_10"); //Gdybys byl obywatelem khoraty, powiedzialbym ci od razu, w przeciwnym razie informacja kosztowalaby 2000 zlotych monet.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Anselm sagt mir erst etwas über den Verbleib des Ornamentes, wenn ich Bürger Khoratas bin oder 2000 Goldmünzen gezahlt habe.");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Anselm mówi mi tylko o miejscu, w którym znajduje sie ornament, kiedy jestem obywatelem Khoratasa lub gdy zaplacilem za 2000 zlotych monet.");
 };
 
 INSTANCE Info_Mod_Anselm_Ornament2 (C_INFO)
@@ -230,7 +230,7 @@ INSTANCE Info_Mod_Anselm_Ornament2 (C_INFO)
 	information	= Info_Mod_Anselm_Ornament2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Über das Ornament sprechen ...";
+	description	= "Rozmowa o ornamencie.....";
 };
 
 FUNC INT Info_Mod_Anselm_Ornament2_Condition()
@@ -250,28 +250,28 @@ FUNC VOID Info_Mod_Anselm_Ornament2_Info()
 
 	if (Mod_REL_Buerger == 1)
 	{
-		Info_AddChoice(Info_Mod_Anselm_Ornament2, "Ich bin ein Bürger Khoratas.", Info_Mod_Anselm_Ornament2_C);
+		Info_AddChoice(Info_Mod_Anselm_Ornament2, "Jestem obywatelem khoraty.", Info_Mod_Anselm_Ornament2_C);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 2000)
 	{
-		Info_AddChoice(Info_Mod_Anselm_Ornament2, "2000 Gold ... hier.", Info_Mod_Anselm_Ornament2_B);
+		Info_AddChoice(Info_Mod_Anselm_Ornament2, "Zloto 2000 zloto.... tu.", Info_Mod_Anselm_Ornament2_B);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 1000)
 	&& (Mod_Verhandlungsgeschick > 0)
 	{
-		Info_AddChoice(Info_Mod_Anselm_Ornament2, "(Feilschen) 1000 Gold müssten doch auch reichen.", Info_Mod_Anselm_Ornament2_A);
+		Info_AddChoice(Info_Mod_Anselm_Ornament2, "Tysiac zlota powinno wystarczyc.", Info_Mod_Anselm_Ornament2_A);
 	};
 };
 
 FUNC VOID Info_Mod_Anselm_Ornament2_D()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_00"); //Sehr gut ... Den Überlieferungen nach war ein Flüchtling aus Jharkendar Mitbegründer unserer Dynastie.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_01"); //Er hauste in einem Lager westlich von Khorata, das zu einer Siedlung heranwuchs, jedoch von einem Feuer vernichtet wurde.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_02"); //Vom Pass aus musst du dem Weg nach links folgen, dann kannst du die Ruine gar nicht verfehlen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_03"); //Wenn der Flüchtling einen Teil des Portalrings mit sich führte, dann findest du ihn sicher dort.
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_D_15_04"); //Ich mache mich sofort auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_00"); //Bardzo dobry.... Zgodnie z tradycja, uchodzca z Jharkendara byl wspólzalozycielem naszej dynastii.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_01"); //Mieszkal w obozie na zachód od Khoraty, który przerodzil sie w osade, ale zostal zniszczony przez pozar.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_02"); //Z przeleczy trzeba podazac droga w lewo, nie mozna przegapic ruin.
+	AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_D_32_03"); //Jesli uciekinier przeniósl czesc portalu, znajdziesz go tam.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_D_15_04"); //Bede w drodze od razu.
 
-	B_LogEntry	(TOPIC_MOD_PORTAL, "Anselm hat mir gesagt, dass das Ornamentstück in der Ruine westlich von Khorata zu finden sein könnte. Vom Pass aus müsste ich dazu dem Weg nach links folgen ...");
+	B_LogEntry	(TOPIC_MOD_PORTAL, "Anselm powiedzial mi, ze ornament mozna znalezc w ruinach na zachód od Khoraty. Z przeleczy musialabym podazac sciezka w lewo....");
 
 	Wld_InsertItem	(ItMi_Ornament_Priester, "FP_ITEM_ORNAMENT_PRIESTER");
 
@@ -287,14 +287,14 @@ FUNC VOID Info_Mod_Anselm_Ornament2_BACK()
 
 FUNC VOID Info_Mod_Anselm_Ornament2_C()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_C_15_00"); //Ich bin ein Bürger Khoratas.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_C_15_00"); //Jestem obywatelem khoraty.
 
 	Info_Mod_Anselm_Ornament2_D();
 };
 
 FUNC VOID Info_Mod_Anselm_Ornament2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_B_15_00"); //2000 Gold ... hier.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_B_15_00"); //Zloto 2000 zloto.... tu.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 2000);
 
@@ -303,11 +303,11 @@ FUNC VOID Info_Mod_Anselm_Ornament2_B()
 
 FUNC VOID Info_Mod_Anselm_Ornament2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_A_15_00"); //1000 Gold müssten doch auch reichen.
+	AI_Output(hero, self, "Info_Mod_Anselm_Ornament2_A_15_00"); //Tysiac zlota powinno wystarczyc.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_A_32_01"); //Selbstverständlich. Eigentlich könnte ich dir die Information auch schenken, aber ich habe ja auch meine Ausgaben, die gedeckt werden wollen.
+		AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_A_32_01"); //Oczywiscie oczywiscie. Wlasciwie móglbym równiez podac panstwu informacje, ale mam tez swoje wydatki, które chce pokryc.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 	
@@ -319,7 +319,7 @@ FUNC VOID Info_Mod_Anselm_Ornament2_A()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_A_32_02"); //Hmm, du solltest jetzt nicht versuchen, meinen guten Willen heute auszunutzen. Sei froh, dass ich überhaupt anbiete, dir die Informationen zu verkaufen.
+		AI_Output(self, hero, "Info_Mod_Anselm_Ornament2_A_32_02"); //Hmm, nie powinienes próbowac dzisiaj korzystac z mojej dobrej woli. Cieszcie sie, ze proponuje Panstwu w ogóle sprzedac informacje.
 	};
 };
 
@@ -344,13 +344,13 @@ FUNC INT Info_Mod_Anselm_AnnaBefreit_Condition()
 
 FUNC VOID Info_Mod_Anselm_AnnaBefreit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_00"); //Mir ist zu Ohren gekommen, dass du mitverantwortlich für den Tod meiner Justizmänner bist.
-	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_01"); //Ich hätte mir wirklich etwas mehr Fingerspitzengefühl von dir erhofft. (seufzt)
-	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_02"); //Ich will es bei einer kleinen Strafe belassen. 500 Goldmünzen, jetzt.
+	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_00"); //Slyszalem, ze jestes czesciowo odpowiedzialny za smierc moich sedziów.
+	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_01"); //Naprawde mialem nadzieje, ze pan cos jeszcze takt. (golen)
+	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_02"); //Zostawie to na mala grzywne. Teraz 500 zlotych monet.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_03"); //Und nächstes Mal passt du besser auf, in welche Geschäfte du dich einmischst, ja? Das ist nämlich ein Geschäft für Erwachsene.
+	AI_Output(self, hero, "Info_Mod_Anselm_AnnaBefreit_32_03"); //A nastepnym razem lepiej przyjrzec sie Twojemu biznesowi, czy to Ty? To dorosly biznes.
 };
 
 INSTANCE Info_Mod_Anselm_UlrichKO (C_INFO)
@@ -373,16 +373,16 @@ FUNC INT Info_Mod_Anselm_UlrichKO_Condition()
 
 FUNC VOID Info_Mod_Anselm_UlrichKO_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_00"); //Da bist du ja. Der Richter hat mir alles erzählt. Du hast dich tapfer geschlagen.
-	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_01"); //Khorata kann stolz sein, einen Helden wie dich zu besitzen.
-	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_02"); //Ach ja, deine Belohnung. Hier, nimm.
+	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_00"); //Och, tam jestescie. Sedzia mi wszystko powiedzial. Odwaznie walczyliscie.
+	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_01"); //Khorata moze byc dumna z posiadania takiego bohatera jak Ty.
+	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_02"); //Och, Twoja nagroda. Wez to tutaj.
 
 	CreateInvItems	(hero, ItMi_Gold, 800);
 	CreateInvItems	(hero, ItMI_Freudenspender, 5);
 
-	B_ShowGivenThings	("800 Gold und 5 Fläschchen Freudenspender erhalten");
+	B_ShowGivenThings	("800 zlota i 5 butelek radosnego darczyncy - otrzymane");
 
-	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_03"); //Versüß dir damit den Tag, Süßer.
+	AI_Output(self, hero, "Info_Mod_Anselm_UlrichKO_32_03"); //Slodki dzien, slodki.
 };
 
 INSTANCE Info_Mod_Anselm_Unfrieden (C_INFO)
@@ -393,7 +393,7 @@ INSTANCE Info_Mod_Anselm_Unfrieden (C_INFO)
 	information	= Info_Mod_Anselm_Unfrieden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe eine zwielichtige Angelegenheit zu melden.";
+	description	= "Mam niejasna sprawe do zgloszenia.";
 };
 
 FUNC INT Info_Mod_Anselm_Unfrieden_Condition()
@@ -407,9 +407,9 @@ FUNC INT Info_Mod_Anselm_Unfrieden_Condition()
 
 FUNC VOID Info_Mod_Anselm_Unfrieden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Unfrieden_15_00"); //Ich habe eine zwielichtige Angelegenheit zu melden.
-	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_01"); //Oho! Bist ein guter Mann! Worum handelt es sich?
-	AI_Output(hero, self, "Info_Mod_Anselm_Unfrieden_15_02"); //Diesen Brief soll ich dem Richter in Leonhards Namen übergeben.
+	AI_Output(hero, self, "Info_Mod_Anselm_Unfrieden_15_00"); //Mam niejasna sprawe do zgloszenia.
+	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_01"); //Oho! Jestes dobrym czlowiekiem! O co to jest?
+	AI_Output(hero, self, "Info_Mod_Anselm_Unfrieden_15_02"); //Mam przekazac ten list sedziemu w imieniu Leonharda.
 
 	B_GiveInvItems	(hero, self, ItWr_LeonhardRichter, 1);
 
@@ -417,8 +417,8 @@ FUNC VOID Info_Mod_Anselm_Unfrieden_Info()
 
 	B_GiveInvItems	(self, hero, ItWr_LeonhardRichter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_03"); //Du erlaubst dir aber Späße! Wahllos Buchstaben auf einen Zettel kritzeln und mich dann glauben machen, dass ein Sinn dahinter steckt.
-	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_04"); //(belustigt) Aus dem Alter bin ich raus, mein Junge.
+	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_03"); //Jestes zabawny! Na kartce papieru sypia przypadkowe litery, a potem przekonuja mnie, ze kryje sie za tym cel.
+	AI_Output(self, hero, "Info_Mod_Anselm_Unfrieden_32_04"); //Nie jestem na starosc, synu.
 };
 
 INSTANCE Info_Mod_Anselm_RuprechtRing (C_INFO)
@@ -441,16 +441,16 @@ FUNC INT Info_Mod_Anselm_RuprechtRing_Condition()
 
 FUNC VOID Info_Mod_Anselm_RuprechtRing_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_00"); //Wie mir zu Ohren gekommen ist, wolltest du einen angesehenen Fremden bestehlen.
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_01"); //Das darf ich leider nicht unbestraft lassen, du verstehst?
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_02"); //Deine Aufgabe wird es also sein, dem Gemeinnutz zu dienen.
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_03"); //Und wie es der Zufall will, habe ich gerade ein Rundschreiben an die Bürger Khoratas verfasst.
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_04"); //30 Schreiben habe ich bereits kopieren lassen, die bekommst du mit.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_00"); //Jak uslyszalem, jak próbowales "okradac szanowanego nieznajomego.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_01"); //Nie moge zostawic tego bezkarnego, nie rozumiem?
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_02"); //Wiec twoim zadaniem bedzie sluzyc wspólnemu dobru.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_03"); //A przez przypadek wlasnie napisalem okólnik do obywateli Khoraty.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_04"); //30 listów, które juz skopiowalem, dostaniesz je.
 
 	B_GiveInvItems	(self, hero, ItWr_AnselmRundschreiben, 30);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_05"); //Die wirst du innerhalb kürzester Zeit an Khoratas ehrbare Bewohner verteilen.
-	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_06"); //Um den Rest wird sich jemand anderes kümmern.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_05"); //Szybko rozdasz je honorowym mieszkancom Khoraty.
+	AI_Output(self, hero, "Info_Mod_Anselm_RuprechtRing_32_06"); //Pozostala czesc zajmie ktos inny.
 };
 
 INSTANCE Info_Mod_Anselm_FrazerPakete (C_INFO)
@@ -461,7 +461,7 @@ INSTANCE Info_Mod_Anselm_FrazerPakete (C_INFO)
 	information	= Info_Mod_Anselm_FrazerPakete_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier einige Erzpakete.";
+	description	= "Mam tu kilka pakietów rudy.";
 };
 
 FUNC INT Info_Mod_Anselm_FrazerPakete_Condition()
@@ -475,17 +475,17 @@ FUNC INT Info_Mod_Anselm_FrazerPakete_Condition()
 
 FUNC VOID Info_Mod_Anselm_FrazerPakete_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_FrazerPakete_15_00"); //Ich habe hier einige Erzpakete.
+	AI_Output(hero, self, "Info_Mod_Anselm_FrazerPakete_15_00"); //Mam tu kilka pakietów rudy.
 
 	B_GiveInvItems	(hero, self, ItMi_ErzPaketFrazer, 10);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_FrazerPakete_32_01"); //Die hast du ganz allein getragen? Respekt! Dafür sollst du fürstlich entlohnt werden!
+	AI_Output(self, hero, "Info_Mod_Anselm_FrazerPakete_32_01"); //Noszyles to wszystko samemu? Szacunek! Za to zostaniesz nagrodzony ksiaze!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 20);
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ERZPAKETE, "Ich habe das Erz abgeliefert und bin 'fürstlich' entlohnt worden.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ERZPAKETE, "Dostalem rude i otrzymalem wynagrodzenie 'ksiazece'.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_ERZPAKETE, LOG_SUCCESS);
 
 	CurrentNQ += 1;
@@ -501,7 +501,7 @@ INSTANCE Info_Mod_Anselm_Endres (C_INFO)
 	information	= Info_Mod_Anselm_Endres_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Du sollst Frazer Bescheid geben, dass mir zu trauen ist.";
+	description	= "Chce, zebys poinformowal Frazera, ze moge byc zaufany.";
 };
 
 FUNC INT Info_Mod_Anselm_Endres_Condition()
@@ -516,24 +516,24 @@ FUNC INT Info_Mod_Anselm_Endres_Condition()
 
 FUNC VOID Info_Mod_Anselm_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_00"); //Du sollst Frazer Bescheid geben, dass mir zu trauen ist.
-	AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_01"); //Aha! Das wäre ja fix erledigt, so ein Schreiben. Aber hast du mir im Gegenzug schon einmal geholfen?
+	AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_00"); //Chce, zebys poinformowal Frazera, ze moge byc zaufany.
+	AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_01"); //Aha! To jest szybka poprawka, taki list. Ale czy kiedykolwiek pomógles mi w powrocie?
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Anselm_LandvermessungHubert))
 	{
-		AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_02"); //Ja, ich war dir bei der "Vermessung" Khoratas behilflich.
-		AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_03"); //Du hast Recht, dafür schulde ich dir auch einen Gefallen! (singt) Nimm und geh!
+		AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_02"); //Ja, ich war dir bei der "geodezja" Khoratas behilflich.
+		AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_03"); //Masz racje, ja równiez jestem ci za to wdzieczny! Wezcie to idzcie!
 
 		B_GiveInvItems	(self, hero, ItWr_AnselmForFrazer, 1);
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich sollte nun mit dem Schreiben zu Frazer zurückkehren.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Powrócmy teraz listem do Frazera.");
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_04"); //Bestimmt ...
-		AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_05"); //Komm wieder, wenn du dich konkret erinnerst!
+		AI_Output(hero, self, "Info_Mod_Anselm_Endres_15_04"); //Prawdopodobnie.....
+		AI_Output(self, hero, "Info_Mod_Anselm_Endres_32_05"); //Wróc, jesli pamietasz konkretnie!
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich werde die Versicherung Anselms erst erhalten, nachdem ich ihm geholfen habe.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Nie otrzymam ubezpieczenia Anselmsa, dopóki nie pomoze mu.");
 	};
 };
 
@@ -558,8 +558,8 @@ FUNC INT Info_Mod_Anselm_Endres02_Condition()
 
 FUNC VOID Info_Mod_Anselm_Endres02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Endres02_32_00"); //Respekt. Hinter dem Heiler hätte ich als letztes einen kaltblütigen Mörder vermutet.
-	AI_Output(self, hero, "Info_Mod_Anselm_Endres02_32_01"); //Danke, dass du den Jungs und mir Arbeit abgenommen hast.
+	AI_Output(self, hero, "Info_Mod_Anselm_Endres02_32_00"); //Szacunek. Jako ostatni podejrzewalem zabójce zimnokrwistego za uzdrowicielem.
+	AI_Output(self, hero, "Info_Mod_Anselm_Endres02_32_01"); //Dziekuje za prace chlopców i mnie.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 };
@@ -587,10 +587,10 @@ FUNC INT Info_Mod_Anselm_Dorn_Condition()
 
 FUNC VOID Info_Mod_Anselm_Dorn_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_00"); //Wie ich hört, warst du in einen Mordfall verwickelt. Was sagst du dazu?
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn_15_01"); //Es geschah nach Adanos' Willen!
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_02"); //(lacht) Du kleiner Spaßvogel.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_03"); //Aber unter uns, den Feuermagiern weint niemand eine Träne nach. Mit ein bisschen Glück bleiben sie jetzt weg.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_00"); //Rozumiem, ze bral Pan udzial w sprawie dotyczacej zabójstwa. Co sadzisz o tym?
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn_15_01"); //Stalo sie tak dzieki woli Adanosa!
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_02"); //(smiech) Niewielki zartownica.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn_32_03"); //Ale miedzy wami a mna nikt nie placze lzem dla magów ognia. Przy odrobinie szczescia pozostana z dala.
 };
 
 INSTANCE Info_Mod_Anselm_Dorn2 (C_INFO)
@@ -601,7 +601,7 @@ INSTANCE Info_Mod_Anselm_Dorn2 (C_INFO)
 	information	= Info_Mod_Anselm_Dorn2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin auf deine Hilfe angewiesen.";
+	description	= "Potrzebuje panstwa pomocy.";
 };
 
 FUNC INT Info_Mod_Anselm_Dorn2_Condition()
@@ -615,41 +615,41 @@ FUNC INT Info_Mod_Anselm_Dorn2_Condition()
 
 FUNC VOID Info_Mod_Anselm_Dorn2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_15_00"); //Ich bin auf deine Hilfe angewiesen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_32_01"); //Das freut mich! Wo drückt denn der Schuh?
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_15_02"); //Idrico versucht, die Feuermagier aus der Stadt zu treiben.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_32_03"); //Und wo genau liegt jetzt das Problem?
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_15_00"); //Potrzebuje panstwa pomocy.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_32_01"); //Ciesze sie, ze Pan to zrobil! Gdzie jest but?
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_15_02"); //Idrico próbuje wyprowadzic magów z miasta.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_32_03"); //A co dokladnie jest teraz problemem?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Dorn2);
 
-	Info_AddChoice	(Info_Mod_Anselm_Dorn2, "Siehst du das nicht, Mann?!", Info_Mod_Anselm_Dorn2_B);
-	Info_AddChoice	(Info_Mod_Anselm_Dorn2, "Ich fürchte, Idricos Geist ist vernebelt.", Info_Mod_Anselm_Dorn2_A);
+	Info_AddChoice	(Info_Mod_Anselm_Dorn2, "Nie widzisz tego czlowieka?", Info_Mod_Anselm_Dorn2_B);
+	Info_AddChoice	(Info_Mod_Anselm_Dorn2, "Obawiam sie, ze umysl Idrico jest zatarty.", Info_Mod_Anselm_Dorn2_A);
 };
 
 FUNC VOID Info_Mod_Anselm_Dorn2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_B_15_00"); //Siehst du das nicht, Mann?!
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_B_32_01"); //Nicht in diesem Ton, Freundchen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_B_32_02"); //Sei froh, dass ich gut gelaunt bin, sonst würde ich dir eine Lektion erteilen.
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_B_15_00"); //Nie widzisz tego czlowieka?
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_B_32_01"); //Nie w tym tonie, przyjaciel.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_B_32_02"); //Badzcie szczesliwi, ze jestem w dobrym nastroju lub naucze Was lekcji.
 
 	Info_ClearChoices	(Info_Mod_Anselm_Dorn2);
 };
 
 FUNC VOID Info_Mod_Anselm_Dorn2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_00"); //Ich fürchte, Idricos Geist ist vernebelt.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_01"); //Ich gebe zu, er ist ein bisschen kauzig. Aber was kann ich dagegen tun?
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_02"); //Da wirst du schon deine Helferlein haben.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_03"); //(unschlüssig) Und was habe ich davon, wenn ich es mir mit einem einflussreichen Klatschverbreiter verscherze?
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_04"); //Such dir was aus.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_05"); //Hmm, ja, eine Tributzahlung der Feuermagier würde mich sicherlich in eine gnädigere Stimmung versetzen.
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_06"); //Ich kümmere mich darum.
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_00"); //Obawiam sie, ze umysl Idrico jest zatarty.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_01"); //Przyznaje, ze jest troche dziwny. Ale co moge z tym zrobic?
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_02"); //Bedziesz mial tam swoich malych pomocników.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_03"); //I co jest dobre dla mnie, gdy splywalem go z wplywowym rozsiewaczem plotek?
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_04"); //Wybierz swój wybór.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn2_A_32_05"); //Hmm, tak, doplata plemienna od Strazaków z pewnoscia wprowadzi mnie w laskawszy nastrój.
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn2_A_15_06"); //Zajme sie tym.
 
 	Info_ClearChoices	(Info_Mod_Anselm_Dorn2);
 
 	Mod_REL_IdricoDorn = 4;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Anselm hilft mir nur, wenn er eine Tributzahlung der Feuermagier erhält.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Anselm pomoze mi tylko wtedy, gdy otrzyma plemienna zaplate od Strazaków.");
 };
 
 INSTANCE Info_Mod_Anselm_Dorn3 (C_INFO)
@@ -660,7 +660,7 @@ INSTANCE Info_Mod_Anselm_Dorn3 (C_INFO)
 	information	= Info_Mod_Anselm_Dorn3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind 50 Goldmünzen von den Feuermagiern.";
+	description	= "Oto 50 zlotych monet od magików strazy pozarnej.";
 };
 
 FUNC INT Info_Mod_Anselm_Dorn3_Condition()
@@ -675,13 +675,13 @@ FUNC INT Info_Mod_Anselm_Dorn3_Condition()
 
 FUNC VOID Info_Mod_Anselm_Dorn3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn3_15_00"); //Hier sind 50 Goldmünzen von den Feuermagiern.
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn3_15_00"); //Oto 50 zlotych monet od magików strazy pozarnej.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_01"); //Die Angelegenheit scheint ja nicht sehr dringend zu sein.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_02"); //50 Gold für meine Hilfe finde ich doch leicht beleidigend.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_03"); //Ich glaube nicht, dass wir so ins Geschäft kommen.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_01"); //Sprawa nie wydaje sie byc bardzo pilna.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_02"); //50 zlote za moja pomoc jest nieco obrazliwe.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn3_32_03"); //Nie sadze, aby tak wlasnie postepowalismy.
 
 	Mod_REL_IdricoDorn = 5;
 
@@ -696,7 +696,7 @@ INSTANCE Info_Mod_Anselm_Dorn4 (C_INFO)
 	information	= Info_Mod_Anselm_Dorn4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind die 500 Gold der Feuermagier.";
+	description	= "Oto 500 zlotych magów ognia.";
 };
 
 FUNC INT Info_Mod_Anselm_Dorn4_Condition()
@@ -711,16 +711,16 @@ FUNC INT Info_Mod_Anselm_Dorn4_Condition()
 
 FUNC VOID Info_Mod_Anselm_Dorn4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Dorn4_15_00"); //Hier sind die 500 Gold der Feuermagier.
+	AI_Output(hero, self, "Info_Mod_Anselm_Dorn4_15_00"); //Oto 500 zlotych magów ognia.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn4_32_01"); //Eine stattliche Summe! In Ordnung, Idrico wird seine Lektion erleben.
-	AI_Output(self, hero, "Info_Mod_Anselm_Dorn4_32_02"); //Und dann das Maul halten.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn4_32_01"); //Ogromna suma! Wlasciwie, Idrico bedzie mial swoja lekcje.
+	AI_Output(self, hero, "Info_Mod_Anselm_Dorn4_32_02"); //A potem sie zamknal.
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Anselm will dafür sorgen, dass Idrico Ruhe gibt.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_DORN, "Anselm chce utrzymac Idrico w spokoju.");
 
 	Mod_REL_IdricoDorn = 6;
 };
@@ -745,8 +745,8 @@ FUNC INT Info_Mod_Anselm_Wettstreit_Condition()
 
 FUNC VOID Info_Mod_Anselm_Wettstreit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Wettstreit_32_00"); //(feierlich) Du bist der große Held der diesjährigen Rattenjagd.
-	AI_Output(self, hero, "Info_Mod_Anselm_Wettstreit_32_01"); //Für deine Verdienste möchte ich dir einen Orden schenken. Trage ihn mit Stolz.
+	AI_Output(self, hero, "Info_Mod_Anselm_Wettstreit_32_00"); //Jestes wielkim bohaterem tegorocznego polowania na szczury.
+	AI_Output(self, hero, "Info_Mod_Anselm_Wettstreit_32_01"); //Chcialbym wam wreczyc medal za wasze zaslugi. Nosic go z duma.
 
 	B_GiveInvItems	(self, hero, ItAm_HalskettederEhre, 1);
 };
@@ -759,7 +759,7 @@ INSTANCE Info_Mod_Anselm_Buerger (C_INFO)
 	information	= Info_Mod_Anselm_Buerger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich auch ein Bürger Khoratas werden?";
+	description	= "Czy moge równiez zostac obywatelem Khoraty?";
 };
 
 FUNC INT Info_Mod_Anselm_Buerger_Condition()
@@ -772,17 +772,17 @@ FUNC INT Info_Mod_Anselm_Buerger_Condition()
 
 FUNC VOID Info_Mod_Anselm_Buerger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger_15_00"); //Kann ich auch ein Bürger Khoratas werden?
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_01"); //Hmm, was? Du willst dir wohl ein paar Privilegien abzwacken? Abgezocktes Bürschchen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_02"); //Aber ... ja, es sollte schon möglich sein, dass du die Stadtsbürgerschaft erhältst.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_03"); //Da du allerdings der Erste bist, der darum bittet, muss ich mir erst noch ein Verfahren ausdenken, mit dem ich sicher stelle, dass du zu uns passt.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_04"); //Du kannst dich in der Zwischenzeit einleben.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_05"); //Wenn ich mit der Arbeit fertig bin, und sehe, dass du dich engagierst, werde ich dich ansprechen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_06"); //Also, worauf wartest du?
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger_15_00"); //Czy moge równiez zostac obywatelem Khoraty?
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_01"); //Hmm, huh? Chcesz zniszczyc niektóre przywileje? Chlopiec zdarty.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_02"); //Ale.... Tak, powinna istniec mozliwosc nadania Ci obywatelstwa.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_03"); //Poniewaz jednak jako pierwszy prosil pan o to, musze zastanowic sie nad procedura, aby upewnic sie, ze jest pan do nas dopasowany.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_04"); //W miedzyczasie mozesz sie osiedlic.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_05"); //Kiedy wykonam prace i zobacze, ze sie angazujesz, porozmawiam z Toba.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger_32_06"); //Na co wiec czekasz?
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_BUERGER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_BUERGER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Ich habe bei Anselm die Bürgerschaft für Khorata beantragt. Er braucht noch Zeit, um ein geeignetes Verfahren für mich zu finden. So lange soll ich mich nützlich machen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Zwrócilem sie do Anselma o obywatelstwo Khoraty. Nadal potrzebuje czasu, aby znalezc dla mnie odpowiednia procedure. Tak dlugo mialam byc przydatna.");
 };
 
 INSTANCE Info_Mod_Anselm_Buerger2 (C_INFO)
@@ -806,14 +806,14 @@ FUNC INT Info_Mod_Anselm_Buerger2_Condition()
 
 FUNC VOID Info_Mod_Anselm_Buerger2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_00"); //Da bist du ja! Ich habe gesehen, dass du nicht untätig warst und dir ein paar Freunde gemacht hast.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_01"); //Deswegen bekommst du nun diesen Fragebogen. Diese Fragen musst du beantworten können, wenn wir uns das nächste Mal sehen.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_02"); //Die Lösungen findest du alle innerhalb der Stadtmauern Khoratas. Oder in der Nähe.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_03"); //(pathetisch) Frage und forsche, und du wirst fündig.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_00"); //Jestes! Widzialem, ze nie byles bezczynny i zaprzyjaznilem sie.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_01"); //Dlatego wlasnie podaje Panstwu ten kwestionariusz. Musisz byc w stanie odpowiedziec na te pytania przy nastepnym spotkaniu.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_02"); //Wszystkie rozwiazania znajdziesz w murach miasta Khorata. Lub w poblizu.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger2_32_03"); //(patetyczne) Pytania i badania, a znajdziesz je.
 
 	B_GiveInvItems	(self, hero, ItWr_Fragebogen, 1);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Anselm hat mir nun einen Fragebogen ausgehändigt. Die Antworten auf die Fragen will er in einem persönlichen Gespräch von mir erfahren. Ich sollte mir also gut merken, was ich herausfinde.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Anselm przekazal mi teraz kwestionariusz. Chce poznac odpowiedzi na moje pytania w osobistej rozmowie. Wiec powinienem pamietac, co sie dowiaduje.");
 };
 
 INSTANCE Info_Mod_Anselm_Buerger3 (C_INFO)
@@ -824,7 +824,7 @@ INSTANCE Info_Mod_Anselm_Buerger3 (C_INFO)
 	information	= Info_Mod_Anselm_Buerger3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich fühle mich für die Prüfung bereit.";
+	description	= "Czuje sie gotowy do testu.";
 };
 
 FUNC INT Info_Mod_Anselm_Buerger3_Condition()
@@ -838,49 +838,49 @@ FUNC INT Info_Mod_Anselm_Buerger3_Condition()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_15_00"); //Ich fühle mich für die Prüfung bereit.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_32_01"); //Sehr gut! Lass uns gleich beginnen. Eine Frage falsch beantwortet, und die Prüfung gilt als nicht bestanden.
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_32_02"); //Erste Frage: In welchem Gebäude befindet sich der einzige Abort Khoratas?
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_15_00"); //Czuje sie gotowy do testu.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_32_01"); //Bardzo dobrze! Zacznijmy od razu. Na jedno pytanie udzielono nieprawidlowej odpowiedzi i egzamin nie zostal zdany.
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_32_02"); //Pierwsze pytanie: W którym budynku jest tylko jeden z poronien Khoraty?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Buerger3);
 
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "In Margarethes Haus.", Info_Mod_Anselm_Buerger3_A5);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "In Friedels Haus.", Info_Mod_Anselm_Buerger3_A4);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Im Haus der Feuermagier.", Info_Mod_Anselm_Buerger3_A3);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Im Haus des Heilers.", Info_Mod_Anselm_Buerger3_A2);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Im Wirtshaus.", Info_Mod_Anselm_Buerger3_A1);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Dom Margaret.", Info_Mod_Anselm_Buerger3_A5);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Dom Friedla.", Info_Mod_Anselm_Buerger3_A4);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "W Domu Strazników.", Info_Mod_Anselm_Buerger3_A3);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Dom uzdrowiciela.", Info_Mod_Anselm_Buerger3_A2);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "W karczmie.", Info_Mod_Anselm_Buerger3_A1);
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_A_32_00"); //Zweite Frage: Wie hießen meine drei Ratten?
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_A_32_00"); //Pytanie drugie: Co nazywalo sie moimi trzema szczurami?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Buerger3);
 
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Oleg, Pinky und Fievel.", Info_Mod_Anselm_Buerger3_B5);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Rémy, Fievel und Oleg.", Info_Mod_Anselm_Buerger3_B4);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Fievel, Pinky und Rémy.", Info_Mod_Anselm_Buerger3_B3);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Rémy, Feivel und Pinky.", Info_Mod_Anselm_Buerger3_B2);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Oleg, Rémy und Pinky.", Info_Mod_Anselm_Buerger3_B1);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Oleg, Pinky i Fievel.", Info_Mod_Anselm_Buerger3_B5);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Rémy, Fievel i Oleg.", Info_Mod_Anselm_Buerger3_B4);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Fantastyczne, pyszne i odprezajace.", Info_Mod_Anselm_Buerger3_B3);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Rémy, Feivel i Pinky.", Info_Mod_Anselm_Buerger3_B2);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Oleg, Rémy i Pinky.", Info_Mod_Anselm_Buerger3_B1);
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A5()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A5_15_00"); //In Margarethes Haus.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A5_15_00"); //Dom Margaret.
 
 	Info_Mod_Anselm_Buerger3_A();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A4()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A4_15_00"); //In Friedels Haus.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A4_15_00"); //Dom Friedla.
 
 	Info_Mod_Anselm_Buerger3_A();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A3()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A3_15_00"); //Im Haus der Feuermagier.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A3_15_00"); //W Domu Strazników.
 
 	Mod_REL_BuergerFragen += 1;
 
@@ -889,34 +889,34 @@ FUNC VOID Info_Mod_Anselm_Buerger3_A3()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A2()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A2_15_00"); //Im Haus des Heilers.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A2_15_00"); //Dom uzdrowiciela.
 
 	Info_Mod_Anselm_Buerger3_A();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_A1()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A1_15_00"); //Im Wirtshaus.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_A1_15_00"); //W karczmie.
 
 	Info_Mod_Anselm_Buerger3_A();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_B_32_00"); //Dritte Frage: Warum trennten sich die Hofstaatler damals von der restlichen Gemeinschaft?
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_B_32_00"); //Trzecie pytanie: Dlaczego wówczas rzady Trybunalu rozdzielily sie od reszty Wspólnoty?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Buerger3);
 
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Ein Fanatiker verführte sie, mit ihm zu kommen.", Info_Mod_Anselm_Buerger3_C5);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sie waren die einzigen, die Freudenspender anbauen wollten.", Info_Mod_Anselm_Buerger3_C4);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sie kamen in der Gemeinschaft nicht zurecht.", Info_Mod_Anselm_Buerger3_C3);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sie wollten der Beobachtung Beliars entgehen.", Info_Mod_Anselm_Buerger3_C2);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sie wurden bei einer Naturkatastrophe voneinander getrennt.", Info_Mod_Anselm_Buerger3_C1);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Fanatyk uwiedzil ja, ze przychodzi z nim.", Info_Mod_Anselm_Buerger3_C5);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Tylko oni chcieli sie rozkoszowac.", Info_Mod_Anselm_Buerger3_C4);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Nie byli oni w stanie poradzic sobie we Wspólnocie.", Info_Mod_Anselm_Buerger3_C3);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Chcieli uciec od obserwacji Beliara.", Info_Mod_Anselm_Buerger3_C2);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Oddzielono je w przypadku kleski zywiolowej.", Info_Mod_Anselm_Buerger3_C1);
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B5()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B5_15_00"); //Oleg, Pinky und Fievel.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B5_15_00"); //Oleg, Pinky i Fievel.
 
 	Mod_REL_BuergerFragen += 1;
 
@@ -925,69 +925,69 @@ FUNC VOID Info_Mod_Anselm_Buerger3_B5()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B4()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B4_15_00"); //Rémy, Fievel und Oleg.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B4_15_00"); //Rémy, Fievel i Oleg.
 
 	Info_Mod_Anselm_Buerger3_B();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B3()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B3_15_00"); //Fievel, Pinky und Rémy.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B3_15_00"); //Fantastyczne, pyszne i odprezajace.
 
 	Info_Mod_Anselm_Buerger3_B();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B2()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B2_15_00"); //Rémy, Feivel und Pinky.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B2_15_00"); //Rémy, Feivel i Pinky.
 
 	Info_Mod_Anselm_Buerger3_B();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_B1()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B1_15_00"); //Oleg, Rémy und Pinky.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_B1_15_00"); //Oleg, Rémy i Pinky.
 
 	Info_Mod_Anselm_Buerger3_B();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_C_32_00"); //Vierte Frage: Wie viele Händler haben ihren Stand am Marktplatz von Khorata?
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_C_32_00"); //Czwarte pytanie: Ilu dealerów ma swoja pozycje na rynku Khoraty?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Buerger3);
 
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sieben.", Info_Mod_Anselm_Buerger3_D5);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Sechs.", Info_Mod_Anselm_Buerger3_D4);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Fünf.", Info_Mod_Anselm_Buerger3_D3);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Vier.", Info_Mod_Anselm_Buerger3_D2);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Drei.", Info_Mod_Anselm_Buerger3_D1);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Siedem.", Info_Mod_Anselm_Buerger3_D5);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Szesc.", Info_Mod_Anselm_Buerger3_D4);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Piec.", Info_Mod_Anselm_Buerger3_D3);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Cztery.", Info_Mod_Anselm_Buerger3_D2);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Trzy.", Info_Mod_Anselm_Buerger3_D1);
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C5()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C5_15_00"); //Ein Fanatiker verführte sie, mit ihm zu kommen.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C5_15_00"); //Fanatyk uwiedzil ja, ze przychodzi z nim.
 
 	Info_Mod_Anselm_Buerger3_C();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C4()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C4_15_00"); //Sie waren die einzigen, die Freudenspender anbauen wollten.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C4_15_00"); //Tylko oni chcieli sie rozkoszowac.
 
 	Info_Mod_Anselm_Buerger3_C();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C3()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C3_15_00"); //Sie kamen in der Gemeinschaft nicht zurecht.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C3_15_00"); //Nie byli oni w stanie poradzic sobie we Wspólnocie.
 
 	Info_Mod_Anselm_Buerger3_C();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C2()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C2_15_00"); //Sie wollten der Beobachtung Beliars entgehen.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C2_15_00"); //Chcieli uciec od obserwacji Beliara.
 
 	Mod_REL_BuergerFragen += 1;
 
@@ -996,41 +996,41 @@ FUNC VOID Info_Mod_Anselm_Buerger3_C2()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_C1()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C1_15_00"); //Sie wurden bei einer Naturkatastrophe voneinander getrennt.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_C1_15_00"); //Oddzielono je w przypadku kleski zywiolowej.
 
 	Info_Mod_Anselm_Buerger3_C();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D()
 {
-	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_D_32_00"); //Fünfte Frage: Wer hat dafür zu sorgen, dass die Wasserversorgung reibungslos läuft?
+	AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_D_32_00"); //Piate pytanie: Kto musi zapewnic sprawne funkcjonowanie systemu zaopatrzenia w wode?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Buerger3);
 
 	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Idrico.", Info_Mod_Anselm_Buerger3_E5);
 	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Hubert.", Info_Mod_Anselm_Buerger3_E4);
 	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Friedel.", Info_Mod_Anselm_Buerger3_E3);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Lukas.", Info_Mod_Anselm_Buerger3_E2);
-	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Wendel.", Info_Mod_Anselm_Buerger3_E1);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Lukasz.", Info_Mod_Anselm_Buerger3_E2);
+	Info_AddChoice	(Info_Mod_Anselm_Buerger3, "Spirala.", Info_Mod_Anselm_Buerger3_E1);
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D5()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D5_15_00"); //Sieben.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D5_15_00"); //Siedem.
 
 	Info_Mod_Anselm_Buerger3_D();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D4()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D4_15_00"); //Sechs.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D4_15_00"); //Szesc.
 
 	Info_Mod_Anselm_Buerger3_D();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D3()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D3_15_00"); //Fünf.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D3_15_00"); //Piec.
 
 	Mod_REL_BuergerFragen += 1;
 
@@ -1039,14 +1039,14 @@ FUNC VOID Info_Mod_Anselm_Buerger3_D3()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D2()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D2_15_00"); //Vier.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D2_15_00"); //Cztery.
 
 	Info_Mod_Anselm_Buerger3_D();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_D1()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D1_15_00"); //Drei.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_D1_15_00"); //Trzy.
 
 	Info_Mod_Anselm_Buerger3_D();
 };
@@ -1055,16 +1055,16 @@ FUNC VOID Info_Mod_Anselm_Buerger3_E()
 {
 	if (Mod_REL_BuergerFragen == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_00"); //Ja, das hast du gut gemacht. Du hast alle Fragen richtig beantwortet.
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_01"); //Tja, gut. Du darfst dich jetzt Bürger Khoratas nennen und alles mit Freudenspender machen, was du willst.
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_02"); //Das ist doch was, oder?
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_03"); //Du solltest auch mal bei Friedel vorbeischauen. Ich lasse ihm ausrichten, dass er dir etwas Startkapital aushändigen soll.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_00"); //Tak, czyniles dobrze. Odpowiedzial pan prawidlowo na wszystkie pytania.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_01"); //No cóz, to dobrze. Mozesz teraz nazwac sie obywatelem khorat i robic wszystko z radoscia, cokolwiek zechcesz.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_02"); //To cos takiego, prawda?
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_03"); //Nalezy zatrzymac sie równiez przy Friedel' s. Daje mu znac, zeby dal ci troche zalazkowych pieniedzy.
 
 		Mod_REL_Buerger = 1;
 
 		B_GivePlayerXP	(200);
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Ich bin nun ein Bürger Khoratas.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_BUERGER, "Jestem teraz obywatelem khoraty.");
 		B_SetTopicStatus	(TOPIC_MOD_KHORATA_BUERGER, LOG_SUCCESS);
 		
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_21);
@@ -1073,9 +1073,9 @@ FUNC VOID Info_Mod_Anselm_Buerger3_E()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_04"); //Schade, mindestens eine der Antworten war nicht richtig.
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_05"); //Aber in meiner unendlichen Gutmütigkeit will ich dir noch eine Chance einräumen.
-		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_06"); //Komm wieder, wenn du meinst, den Aufgaben gewachsen zu sein.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_04"); //Zbyt zle, co najmniej jedna z odpowiedzi byla niewlasciwa.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_05"); //Ale w mojej nieskonczonej uprzejmosci chce dac wam kolejna szanse.
+		AI_Output(self, hero, "Info_Mod_Anselm_Buerger3_E_32_06"); //Jesli uwazasz, ze mozesz wykonac zadanie, wróc do domu.
 	};
 
 	Mod_REL_BuergerFragen = 0;
@@ -1106,14 +1106,14 @@ FUNC VOID Info_Mod_Anselm_Buerger3_E3()
 
 FUNC VOID Info_Mod_Anselm_Buerger3_E2()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_E2_15_00"); //Lukas.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_E2_15_00"); //Lukasz.
 
 	Info_Mod_Anselm_Buerger3_E();
 };
 
 FUNC VOID Info_Mod_Anselm_Buerger3_E1()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_E1_15_00"); //Wendel.
+	AI_Output(hero, self, "Info_Mod_Anselm_Buerger3_E1_15_00"); //Spirala.
 
 	Mod_REL_BuergerFragen += 1;
 
@@ -1128,7 +1128,7 @@ INSTANCE Info_Mod_Anselm_Bierhexen (C_INFO)
 	information	= Info_Mod_Anselm_Bierhexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte von einem Verbrechen berichten.";
+	description	= "Chce zglosic przestepstwo.";
 };
 
 FUNC INT Info_Mod_Anselm_Bierhexen_Condition()
@@ -1141,36 +1141,36 @@ FUNC INT Info_Mod_Anselm_Bierhexen_Condition()
 
 FUNC VOID Info_Mod_Anselm_Bierhexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_15_00"); //Ich möchte von einem Verbrechen berichten.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_32_01"); //Na, immer her damit! Mein Tag war bisher langweilig genug.
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_15_02"); //Leonhard gibt zu, dass er des Nachts das Bier des Braumeisters getrunken und in seine Gerste uriniert hat.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_32_03"); //(Pause) Hmm, das war es schon? So ein Dummer-Junge-Streich?
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_15_00"); //Chce zglosic przestepstwo.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_32_01"); //No cóz, daj mi ja! Mój dotychczasowy dzien byl dosc nudny.
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_15_02"); //Leonhard przyznaje, ze w nocy wypil piwo warzelnika i upuscil je do jeczmienia.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_32_03"); //Hmm, czy to jest? Cóz za glupi maly zart?
 
 	Info_ClearChoices	(Info_Mod_Anselm_Bierhexen);
 
-	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "So etwas muss bestraft werden!", Info_Mod_Anselm_Bierhexen_C);
-	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "Wegen Leonhard gibt es seit Wochen kein frisches Bier mehr!", Info_Mod_Anselm_Bierhexen_B);
-	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "Der Braumeister hat seit diesem Vorfall einen seelischen Schaden.", Info_Mod_Anselm_Bierhexen_A);
+	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "Taka rzecz musi byc karana!", Info_Mod_Anselm_Bierhexen_C);
+	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "Dzieki Leonhardowi od tygodni nie mamy swiezego piwa!", Info_Mod_Anselm_Bierhexen_B);
+	Info_AddChoice	(Info_Mod_Anselm_Bierhexen, "Od tego czasu piwowar doznal szkód psychologicznych.", Info_Mod_Anselm_Bierhexen_A);
 };
 
 FUNC VOID Info_Mod_Anselm_Bierhexen_C()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_C_15_00"); //So etwas muss bestraft werden!
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_C_32_01"); //Gut, dass du nicht die Gesetze von Khorata zu beaufsichtigen hast.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_C_32_02"); //Manche Menschen brauchen eben etwas mehr Freiraum als andere, das kann ich ihnen doch nicht verwehren.
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_C_15_00"); //Taka rzecz musi byc karana!
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_C_32_01"); //Dobrze, ze nie musisz nadzorowac praw khoraty.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_C_32_02"); //Niektórzy ludzie potrzebuja troche wiecej miejsca niz inni, nie moge im tego zaprzeczyc.
 };
 
 FUNC VOID Info_Mod_Anselm_Bierhexen_B()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_00"); //Wegen Leonhard gibt es seit Wochen kein frisches Bier mehr!
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_01"); //(nachdenklich) Daran habe ich ja noch gar nicht gedacht.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_02"); //Ein nicht unerheblicher Schaden an der heimischen Wirtschaft also.
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_03"); //Die Vorräte sollen schon knapp werden.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_04"); //(schockiert) Das kann doch nicht wahr sein! Was fällt diesem Lümmel eigentlich ein?
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_05"); //Es muss möglichst schnell für neue Gerste gesorgt werden.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_06"); //Vollkommen richtig! Und ich weiß auch, wer die Gerste eigenhändig ernten und in die Stadt tragen wird!
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_07"); //Gute Idee. Mehr wollte ich auch gar nicht.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_08"); //Aber bleib mir ab jetzt mit solchen Horrormeldungen fort!
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_00"); //Dzieki Leonhardowi od tygodni nie mamy swiezego piwa!
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_01"); //W ogóle o tym nie myslalem.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_02"); //Nieznaczna szkoda dla krajowej gospodarki.
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_03"); //Dostawy sa juz niewystarczajace.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_04"); //Nie moze to byc prawda! O czym mysli ta posciel?
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_05"); //Nowy jeczmien musi byc dostarczony jak najszybciej.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_06"); //Absolutnie sluszne! Wiem tez, kto bedzie recznie zbieral jeczmien i przenosil go do miasta!
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_B_15_07"); //Dobry pomysl. To wszystko, czego chcialem.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_B_32_08"); //Ale od tej pory trzymaj sie z dala od mnie z przerazajacymi oredziami!
 
 	Info_ClearChoices	(Info_Mod_Anselm_Bierhexen);
 
@@ -1187,9 +1187,9 @@ FUNC VOID Info_Mod_Anselm_Bierhexen_B()
 
 FUNC VOID Info_Mod_Anselm_Bierhexen_A()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_A_15_00"); //Der Braumeister hat seit diesem Vorfall einen seelischen Schaden.
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_A_32_01"); //(ironisch) Wie dramatisch! Ein seelischer Schaden!
-	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_A_32_02"); //Wir können ihn ja zum Heiler bringen, der bohrt dann sein Gehirn an und stellt wieder Ordnung her.
+	AI_Output(hero, self, "Info_Mod_Anselm_Bierhexen_A_15_00"); //Od tego czasu piwowar doznal szkód psychologicznych.
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_A_32_01"); //(ironiczne) Jakze dramatyczne! Uszkodzenia psychiczne!
+	AI_Output(self, hero, "Info_Mod_Anselm_Bierhexen_A_32_02"); //Mozemy go zabrac do uzdrowiciela, który nastepnie wykonuje cwiczenia mózgu i przywraca porzadek.
 };
 
 INSTANCE Info_Mod_Anselm_DickeLuft (C_INFO)
@@ -1225,62 +1225,62 @@ FUNC VOID Info_Mod_Anselm_DickeLuft_Info()
 	AI_TurnToNpc	(Anselm, Hedwig);
 	AI_TurnToNpc	(Hedwig, Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_00"); //Na, na! Wieso störst du meine wichtigen Geschäfte? Wolltest du nicht bei Ditmar ausharren, bis ... äh, was war das noch gleich?
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_00"); //No cóz, cóz! Dlaczego przerywaja Panstwo moja wazna dzialalnosc? Nie chciales spedzac czasu z Ditmarem do....? Co to bylo znowu?
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_01"); //(lautstark) Bis du Nichtsnutz endlich mal anfängst, mir bei der Hausarbeit unter die Arme zu greifen.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_01"); //Dopóki w koncu nie zaczniesz mi pomagac w pracach domowych.
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_02"); //(murmelt) Dir greif ich nirgendwo mehr hin.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_02"); //Nie moge sie do ciebie ponownie do ciebie nie dotrzec.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_03"); //Und, wie sieht es aus? Hast du langsam deine Meinung geändert?
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_03"); //Jaka jest wiec sytuacja? Zaczynasz zmieniac zdanie?
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_04"); //Innos verhüte das! Geh nur wieder zurück ins Gasthaus und streike dort.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_04"); //Innos zabrania tego! Wystarczy wrócic do karczmy i dokonac strajku.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_05"); //Es macht dir wohl gar nichts aus, dass ich dort jeden störe?
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_05"); //Nie przeszkadza Ci to, zebym wszystkim tam przeszkadzal?
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_06"); //(tut, als würde er überlegen) Damit komme ich schon klar.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_06"); //(prawdopodobnie jak on mysli) potrafie sobie z tym poradzic.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_07"); //Schön. Dann werde ich mir ein neues Druckmittel ausdenken müssen.
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_08"); //Wie wär's damit: Ich setze mich genau hier hin.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_07"); //Grzywna. Wtedy bede musial wymyslic nowa dzwignie.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_08"); //A co z tym: siedze tutaj.
 
 	AI_UseMob	(self, "THRONE", 1);
 
 	AI_TurnToNpc	(Anselm, self);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_09"); //Und niemand wird mich hier weg kriegen, solange du zu Hause keinen Finger krümmst!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_09"); //I nikogo nie zabierzcie mnie z tego miejsca, chyba ze podniesiesz palec w domu!
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_10"); //(seufzt) Wenn's dir Spaß macht.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_10"); //Jesli sie podoba.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_11"); //Oh ja!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_11"); //Och, tak!
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_12"); //Was macht eigentlich das Schaf hier drin? Sollte das nicht besser zum Metzger?
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_12"); //Co robia tu owce? Czyz nie byloby to lepsze dla rzeznika?
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_13"); //(erbost) Ich warne dich!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_26_13"); //Ostrzegam!
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_14"); //(ruft) Jim! Komm doch mal her!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft_32_14"); //Krzyki! Dlaczego tutaj nie przyjdziesz?
 
 	TRIA_Finish();
 
@@ -1320,24 +1320,24 @@ FUNC VOID Info_Mod_Anselm_DickeLuft2_Info()
 	AI_TurnToNpc	(Anselm, Hedwig);
 	AI_TurnToNpc	(Hedwig, Anselm);
 
-	AI_Output(hero, self, "Info_Mod_Anselm_DickeLuft2_15_00"); //Kümmert euch gar nicht um mich.
+	AI_Output(hero, self, "Info_Mod_Anselm_DickeLuft2_15_00"); //Nie martw sie o mnie wcale.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_01"); //Aber...!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_01"); //Ale....!
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_32_02"); //(schmalzig) Du wurdest ausgetrickst, Liebste, Teuerste. Aber jetzt bist du ja bei mir, und ich werde dich beschützen.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_32_02"); //Zostales oszukany, najdrozszy i najdrozszy. Ale teraz jestes ze mna i bede Cie bronil.
 
 	TRIA_Next(Hedwig);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_03"); //Das könnte dir so passen! Ich gehe jetzt und schließe mich ein, jawohl!
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_04"); //Ich will niemanden von euch mehr sehen!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_03"); //Mozesz go uzywac! Pójde teraz i zablokuje sie, tak!
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_16_04"); //Nie chce, aby juz nikt z Was wiecej nie widzial!
 
 	TRIA_Next(Anselm);
 
-	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_32_05"); //(erleichtert) Danke für deine Hilfe. Jetzt kann ich abends endlich wieder was trinken gehen.
+	AI_Output(self, hero, "Info_Mod_Anselm_DickeLuft2_32_05"); //Dziekuje za pomoc. Teraz wieczorem moge wreszcie udac sie na kolejny napój.
 
 	TRIA_Finish();
 
@@ -1345,7 +1345,7 @@ FUNC VOID Info_Mod_Anselm_DickeLuft2_Info()
 
 	B_GivePlayerXP	(250);
 
-	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Ich habe Hedwig zu Anselm gelockt und es gab eine Aussprache. Na ja, so eine Art. Jedenfalls sollte sie jetzt nicht mehr ins Gasthaus zurückkehren. Das wird Irmgard und Ditmar sicher freuen zu erfahren.");
+	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Zwabilem Hedwiga do Anselm i odbyla sie debata. No cóz, rodzaj. Tak czy inaczej, nie powinna teraz wracac do karczmy. Irmgard i Ditmar chetnie sie o tym dowiedza.");
 };
 
 INSTANCE Info_Mod_Anselm_WoHubert (C_INFO)
@@ -1356,7 +1356,7 @@ INSTANCE Info_Mod_Anselm_WoHubert (C_INFO)
 	information	= Info_Mod_Anselm_WoHubert_Info;
 	permanent	= 1;
 	important	= 0;
-	description 	= "Wo finde ich Hubert genau?";
+	description 	= "Gdzie moge znalezc Huberta?";
 };                       
 
 FUNC INT Info_Mod_Anselm_WoHubert_Condition()
@@ -1370,8 +1370,8 @@ FUNC INT Info_Mod_Anselm_WoHubert_Condition()
 
 FUNC VOID Info_Mod_Anselm_WoHubert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_WoHubert_15_00"); //Wo finde ich Hubert genau?
-	AI_Output(self, hero, "Info_Mod_Anselm_WoHubert_32_01"); //Unterschiedlich, aber niemals weit weg von seinem Lebenselixier. Manchmal lungert er am Tor rum, aber meistens ist er in der Nähe des Gasthauses oder der Brauerei zu finden.
+	AI_Output(hero, self, "Info_Mod_Anselm_WoHubert_15_00"); //Gdzie moge znalezc Huberta?
+	AI_Output(self, hero, "Info_Mod_Anselm_WoHubert_32_01"); //Rózne, ale nie dalekie od zycia eliksiru. Czasami czai sie przy bramie, ale przez wiekszosc czasu mozna go znalezc w poblizu karczmy lub browaru.
 };
 
 INSTANCE Info_Mod_Anselm_Freudenspender (C_INFO)
@@ -1382,7 +1382,7 @@ INSTANCE Info_Mod_Anselm_Freudenspender (C_INFO)
 	information	= Info_Mod_Anselm_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Freudenspender für den großartigen Stadthalter?";
+	description 	= "Przyjemnosc dla wielkiego gubernatora?";
 };                       
 
 FUNC INT Info_Mod_Anselm_Freudenspender_Condition()
@@ -1397,8 +1397,8 @@ FUNC INT Info_Mod_Anselm_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Anselm_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Anselm_Freudenspender_15_00"); //Freudenspender für den großartigen Stadthalter?
-	AI_Output(self, hero, "Info_Mod_Anselm_Freudenspender_32_01"); //Oh, ein vortreffliches Angebot, das ich schlecht ablehnen kann.
+	AI_Output(hero, self, "Info_Mod_Anselm_Freudenspender_15_00"); //Przyjemnosc dla wielkiego gubernatora?
+	AI_Output(self, hero, "Info_Mod_Anselm_Freudenspender_32_01"); //Oh, wspanialej oferty, której nie moge odmówic.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

@@ -1,6 +1,6 @@
 INSTANCE Knucker_11001_NW	(Mst_Default_Dragon_Fire)
 {
-	name	=	"Knucker";
+	name	=	"rzeznik konski";
 	
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_ROCK;

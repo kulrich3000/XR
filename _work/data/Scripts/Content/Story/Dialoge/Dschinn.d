@@ -1,6 +1,6 @@
 FUNC VOID B_DschinnBesetzteMine ()
 {
-	AI_Output(self, hero, "Info_Mod_Dschinn_MineBesetzt_10_00"); //Diese Mine ist bereits besetzt.
+	AI_Output(self, hero, "Info_Mod_Dschinn_MineBesetzt_10_00"); //Kopalnia ta jest juz zajeta.
 };
 
 INSTANCE Info_Mod_Dschinn_FM_Hi (C_INFO)
@@ -68,7 +68,7 @@ FUNC INT Info_Mod_Dschinn_VM_Hi_Condition()
 
 FUNC VOID Info_Mod_Dschinn_VM_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dschinn_VM_Hi_10_00"); //Eine verlassene Erzmine. Das wird meinen Meister überaus freuen.
+	AI_Output(self, hero, "Info_Mod_Dschinn_VM_Hi_10_00"); //Odrzucona kopalnia rudy. Mój pan bedzie zachwycony.
 
 	Mod_NL_Dschinn_VM = 2;
 

@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Garett_Hi_Condition()
 
 FUNC VOID Info_Mod_Garett_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garett_Hi_09_00"); //Hey Neuer, brauchst 'ne Waffe?
+	AI_Output(self, hero, "Info_Mod_Garett_Hi_09_00"); //Hej, nowy facet, potrzebuje pistoletu?
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Garett scheint Waffen zu verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Wydaje sie, ze Garett sprzedaje bron.");
 };
 
 INSTANCE Info_Mod_Garett_Befreiung (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Garett_Befreiung (C_INFO)
 	information	= Info_Mod_Garett_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich etwas für dich tun?";
+	description	= "Czy jest cos, co moge dla Ciebie zrobic?";
 };
 
 FUNC INT Info_Mod_Garett_Befreiung_Condition()
@@ -42,20 +42,20 @@ FUNC INT Info_Mod_Garett_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Garett_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_00"); //Kann ich etwas für dich tun?
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_01"); //Wieso?
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_02"); //Greg hat mich gebeten, euch unter die Arme zu greifen, damit hier alles wieder in Gang kommt.
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_03"); //(lacht) Achso. Das ist ja was Anderes.
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_04"); //Also hast du etwas?
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_05"); //Allerdings. Wenn es wieder zu einem Angriff der Untoten kommen sollte, haben wir kaum Waffen um uns zu verteidigen.
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_06"); //Ich benötige zehn Entermesser, um wieder genug Vorrat zu haben.
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_07"); //Woher bekomm ich die Entermesser?
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_08"); //Geh' am Strand entlang, dort liegen noch einige Waffen herum. Da müsstest du fündig werden.
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_09"); //Dann mach ich mich mal auf die Suche.
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_00"); //Czy jest cos, co moge dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_01"); //Dlaczego?
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_02"); //Greg poprosil mnie, abym pomógl Wam znów w zalatwieniu sprawy.
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_03"); //(smiech) Oh, no cóz. No cóz, inaczej.
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_04"); //Wiec dostales cos?
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_05"); //Tak, rzeczywiscie. Jesli nieumarli zostana ponownie zaatakowani, mamy mala bron do obrony.
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_06"); //Potrzebuje dziesieciu kordelasów, aby odebrac mi wystarczajaca ilosc zapasów.
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_07"); //Skad moge siegnac po sztucce?
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung_09_08"); //Zejdz na plaze, dookola znajduje sie jeszcze bron. Powinnas byc w stanie ja znalezc.
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung_15_09"); //Jestem gonna szukac.
 	
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRGARETT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRGARETT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRGARETT, "Garett braucht neue Waffen. Am Strand sollen noch welche herumliegen.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRGARETT, "Garett potrzebuje nowej broni. Na plazy sa jeszcze niektóre z nich.");
 
 	Wld_InsertItem	(ItMw_Addon_PIR1hSword, "FP_ITEM_ENTERMESSER_01");
 	Wld_InsertItem	(ItMw_Addon_PIR1hSword, "FP_ITEM_ENTERMESSER_02");
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Garett_Befreiung2 (C_INFO)
 	information	= Info_Mod_Garett_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deine zehn Entermesser.";
+	description	= "Oto dziesiec twoich dziesiatek.";
 };
 
 FUNC INT Info_Mod_Garett_Befreiung2_Condition()
@@ -91,13 +91,13 @@ FUNC INT Info_Mod_Garett_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Garett_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garett_Befreiung2_15_00"); //Hier hast du deine zehn Entermesser.
+	AI_Output(hero, self, "Info_Mod_Garett_Befreiung2_15_00"); //Oto dziesiec twoich dziesiatek.
 
 	B_GiveInvItems	(hero, self, ItMw_Addon_PIR1hSword, 10);
 
-	AI_Output(self, hero, "Info_Mod_Garett_Befreiung2_09_01"); //Danke, hier hast du eine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Garett_Befreiung2_09_01"); //Oto nagroda.
 
-	B_ShowGivenThings	("120 Gold und 15 Grog erhalten");
+	B_ShowGivenThings	("120 zlota i 15 groszy otrzymane");
 
 	CreateInvItems	(hero, ItMi_Gold, 120);
 	CreateInvItems	(hero, ItFo_Addon_Grog, 15);
@@ -106,7 +106,7 @@ FUNC VOID Info_Mod_Garett_Befreiung2_Info()
 
 	Mod_Piratenbefreiung += 1;
 	
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRGARETT, TOPIC_MOD_BEL_PIRATENLAGER, "Garett ist wieder mit Vorräten versorgt.", "Garett ist wieder mit Vorräten versorgt.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRGARETT, TOPIC_MOD_BEL_PIRATENLAGER, "Garett dostarczany jest ponownie z materialami eksploatacyjnymi.", "Garett dostarczany jest ponownie z materialami eksploatacyjnymi.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRGARETT, LOG_SUCCESS);
 };
 
@@ -118,7 +118,7 @@ INSTANCE Info_Mod_Garett_Blutkelch (C_INFO)
 	information	= Info_Mod_Garett_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du vielleicht eine besonders harte Hacke im Sortiment?";
+	description	= "Czy masz w swoim asortymencie szczególnie twarde motyki?";
 };
 
 FUNC INT Info_Mod_Garett_Blutkelch_Condition()
@@ -131,9 +131,9 @@ FUNC INT Info_Mod_Garett_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Garett_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garett_Blutkelch_15_00"); //Hast du vielleicht eine besonders harte Hacke im Sortiment?
-	AI_Output(self, hero, "Info_Mod_Garett_Blutkelch_09_01"); //Was soll das sein. Ich kenne nur die gemeine Spitzhacke. Und davon hab ich keine.
-	AI_Output(hero, self, "Info_Mod_Garett_Blutkelch_15_02"); //Schon gut. War nur ne Frage.
+	AI_Output(hero, self, "Info_Mod_Garett_Blutkelch_15_00"); //Czy masz w swoim asortymencie szczególnie twarde motyki?
+	AI_Output(self, hero, "Info_Mod_Garett_Blutkelch_09_01"); //Co to ma byc? Znam tylko srednie piksele. A ja tego nie mam.
+	AI_Output(hero, self, "Info_Mod_Garett_Blutkelch_15_02"); //Wszystkie sluszne, wszystkie sluszne. Tylko pytanie.
 };
 
 INSTANCE Info_Mod_Garett_Trade (C_INFO)

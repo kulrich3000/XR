@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Ranck_FreudenspenderMachtBlind_Condition()
 
 FUNC VOID Info_Mod_Ranck_FreudenspenderMachtBlind_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_00"); //Ganz nett, was du hier abziehst, aber so wirst du nie fertig.
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_00"); //To ladne z tego, co tu robisz, ale nigdy nie skonczysz.
 
 	B_Say	(hero, self, "$WASMEINSTDU");
 
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_01"); //Genau das, was ich sage. Ich mach dir ein Angebot.
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_02"); //Gib mir, sagen wir 1000 Goldstücke und ich werde dir unter die Arme greifen.
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_01"); //Dokladnie to, co mówie. Zloze Ci oferte.
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderMachtBlind_12_02"); //Daj mi, powiedzmy 1000 kawalków zlota, a dam ci reke.
 
 	Mod_SL_PartBlind = 2;
 
-	B_LogEntry	(TOPIC_MOD_SL_BLIND, "Ein Typ namens Ranck hat mir wegen den Gerüchten über Freudenspender seine Hiilfe angeboten. Ich soll ihm dafür allerdings 1000 Goldmünzen geben.");
+	B_LogEntry	(TOPIC_MOD_SL_BLIND, "Chlopak o imieniu Ranck zaoferowal mi swoja pomoc z powodu poglosek o darczyncach lubiacych przyjemnosc. Ale mam mu wreczyc tysiac zlotych monet.");
 };
 
 INSTANCE Info_Mod_Ranck_FreudenspenderHelper (C_INFO)
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Ranck_FreudenspenderHelper (C_INFO)
 	information	= Info_Mod_Ranck_FreudenspenderHelper_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na gut, hier.";
+	description	= "Wszystko w porzadku, tutaj.";
 };
 
 FUNC INT Info_Mod_Ranck_FreudenspenderHelper_Condition()
@@ -53,20 +53,20 @@ FUNC INT Info_Mod_Ranck_FreudenspenderHelper_Condition()
 
 FUNC VOID Info_Mod_Ranck_FreudenspenderHelper_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ranck_FreudenspenderHelper_15_00"); //Na gut, hier.
+	AI_Output(hero, self, "Info_Mod_Ranck_FreudenspenderHelper_15_00"); //Wszystko w porzadku, tutaj.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
 
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_01"); //Gut, lass mich nur machen.
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_02"); //(laut) Hallo? Hallo?! Wie spät ist es?
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_03"); //Es ist alles so dunkel, aber ich spüre doch die Sonne auf meiner Haut!
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_04"); //Ist hier jemand?! Ich sehe nichts (immer panischer werdend) Ich ... Ich ... ICH BIN BLIND!
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_05"); //Verdammtes Freudenspender, hätte ich doch die Finger davon gelassen. Man hat mich doch gewarnt, dass es blind macht.
-	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_06"); //Ohhh, ich armer Tor! Adieu grausame Welt, so kann ich nicht Leben!
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_01"); //Dobrze, prosze pozwolic mi to zrobic.
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_02"); //(glosno) Witaj? Witaj! Jaki jest czas na to?
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_03"); //To wszystko jest tak ciemne, ale czuje slonce na skórze!
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_04"); //Ktos tu? Nie widze niczego (ciagle coraz bardziej paniki) I.... l-- I AM BLIND!
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_05"); //Goddamn dawca radosci, nie pozwolilbym na to. Ostrzezono mnie, ze bedzie pan slepy.
+	AI_Output(self, hero, "Info_Mod_Ranck_FreudenspenderHelper_12_06"); //Och, biedny glupiec! Pozegnanie z okrutnym swiatem, nie moge tak zyc!
 
 	Mod_SL_PartBlind = 3;
 
-	B_LogEntry	(TOPIC_MOD_SL_BLIND, "Ranck hat eine ganz schöne Show abgezogen. Das sollte die Leute in Khorata überzeugt haben.");
+	B_LogEntry	(TOPIC_MOD_SL_BLIND, "Ranck wystawil calkiem sporo spektaklu. To powinno przekonac mieszkanców Khoraty.");
 
 	AI_StopProcessInfos	(self);
 

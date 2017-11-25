@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Den_Hi (C_INFO)
 	information	= Info_Mod_Den_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Den_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Den_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Den_Hi_05_01"); //Ich bin Den, Stadtwache von Khorinis.
+	AI_Output(self, hero, "Info_Mod_Den_Hi_05_01"); //Ja jestem Den, City Watch of Khorinis.
 };
 
 INSTANCE Info_Mod_Den_Stadtwache (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Den_Stadtwache (C_INFO)
 	information	= Info_Mod_Den_Stadtwache_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist also bei der Stadtwache?";
+	description	= "Wiec jestes na strazy miejskiej?";
 };
 
 FUNC INT Info_Mod_Den_Stadtwache_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Den_Stadtwache_Condition()
 
 FUNC VOID Info_Mod_Den_Stadtwache_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_00"); //Du bist also bei der Stadtwache?
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_01"); //He, warum der vorwurfsvolle Unterton?
-	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_02"); //Welcher vorwurfsvolle Unterton?
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_03"); //Meinst wohl, das höre ich nicht? Aber wir sind gar nicht alle so schlimm bei der Miliz, nur die wenigsten arbeiten mit der Diebesgilde zusammen und mit den Diebstählen vor drei Tagen habe ich nicht das geringste zu tun!
-	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_04"); //Na, dann brauchst du ja keine Angst vor meinen Fragen zu haben.
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_05"); //Ich will mir bloß nichts anhängen lassen! Meine Methoden sind absolut sauber und ich habe mir in meiner knapp dreijährigen Dienstzeit noch nichts zuschulden kommen lassen!
+	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_00"); //Wiec jestes na strazy miejskiej?
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_01"); //Cóz, dlaczego podnioslo sie wyrzuty sumienia?
+	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_02"); //Jaki haniebny wydzwiek?
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_03"); //Mysle, ze nie slysze tego? Ale nie wszyscy jestesmy tak zli z milicja, tylko niewielu z nas pracuje z zlodziejska gildia i nie mam nic wspólnego z kradziezami trzy dni temu!
+	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_04"); //No cóz, nie musisz sie obawiac moich pytan.
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_05"); //Nie chce byc za nic oskarzany! Moje metody sa absolutnie czyste i nie bylem winny niczego podczas mojej trzyletniej sluzby!
 };
 
 INSTANCE Info_Mod_Den_Raeuber (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Den_Raeuber (C_INFO)
 	information	= Info_Mod_Den_Raeuber_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hilda hat mir von einer Räuberbande vor Khorinis erzählt.";
+	description	= "Hilda opowiedziala mi o zespole rabusiów poza Khorinis.";
 };
 
 FUNC INT Info_Mod_Den_Raeuber_Condition()
@@ -72,16 +72,16 @@ FUNC INT Info_Mod_Den_Raeuber_Condition()
 
 FUNC VOID Info_Mod_Den_Raeuber_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_00"); //Hilda hat mir von einer Räuberbande vor Khorinis erzählt. Was weißt du darüber?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_01"); //Kaum etwas. Hilda hat uns nicht ausreichend genug in ihren leckeren Fleischpasteten wühlen lassen, damit wir nennenswerte Hinweise finden konnten.
-	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_02"); //Was hat Fleischpastete mit dem Stehlen von Schafen zu tun?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_03"); //Das kann man vorher ja nicht wissen.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_04"); //Und ohne Einsichtnahme in die Fleischpasteten war die Hausdurchsuchung nicht vollständig, und somit konnte ich keinen Abschlussbericht schreiben, was uns auf der Suche nach den Verbrechern auch nicht gerade weiterhilft!
-	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_05"); //Was wisst ihr denn jetzt überhaupt von den Räubern?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_06"); //Eine einfache Bande von Vogelfreien, die seit ein paar Monaten in der Gegend umherstreift und in der letzten Zeit offensichtlich ein eigenes Lager gefunden hat.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_07"); //Wie viele Überfälle genau auf ihr Konto gehen, wissen wir nicht. Generell unterscheiden sie sich von den anderen Banditen dadurch, dass sie keinen Ehrenkodex haben.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_08"); //Ich kenne jemanden, der auch jemanden kennt, der kurzfristigen Kontakt zu den Dieben in dieser Stadt hatte und der erfahren hat, dass selbst die Diebe diese Räuber verachten.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_09"); //Diese Halunken machen sich also keine Freunde, und wenn sie keine Verbindungsmänner finden, wird es dauerhaft schwierig für sie, oh ja.
+	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_00"); //Hilda opowiedziala mi o zespole rabusiów poza Khorinis. Co wiesz o tym?
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_01"); //Zaledwie nic. Hilda nie pozwolila nam wykopac sobie w jej pysznych miesnych placków, aby znalezc jakies istotne wskazówki.
+	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_02"); //Co pieprz miesny ma wspólnego z kradzieza owiec?
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_03"); //Nie mozna tego wczesniej wiedziec.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_04"); //I bez zaglebienia sie w kaszanki miesne, przeszukiwanie domu nie bylo zakonczone, wiec nie moglem napisac raportu koncowego, co nie pomoglo nam w poszukiwaniu przestepców!
+	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_05"); //Co wiesz o bandytach i tak?
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_06"); //Prosty gang ptaków, które wedruja po okolicy od kilku miesiecy i najwyrazniej niedawno zalozyly wlasny obóz.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_07"); //Nie wiemy dokladnie, za ile dokladnie jestes odpowiedzialny. Ogólnie rzecz biorac, róznia sie od innych bandytów tym, ze nie maja kodeksu honorowego.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_08"); //Znam kogos, kto zna kogos, kto zna kogos, kto ma krótkotrwaly kontakt z zlodziejami w tym miescie i kto dowiedzial sie, ze nawet zlodzieje gardza tymi zlodziejami.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_09"); //Te podbójki nie robia sobie nawzajem przyjazni, a jesli nie znajda sobie kolegów z braterstwa, staje sie dla nich na stale trudne.
 };
 
 INSTANCE Info_Mod_Den_Dienstzeit (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Den_Dienstzeit (C_INFO)
 	information	= Info_Mod_Den_Dienstzeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Seit drei Jahren im Amt? Was hast du vorher gemacht?";
+	description	= "Pelni funkcje przez trzy lata? Co robiles wczesniej?";
 };
 
 FUNC INT Info_Mod_Den_Dienstzeit_Condition()
@@ -105,11 +105,11 @@ FUNC INT Info_Mod_Den_Dienstzeit_Condition()
 
 FUNC VOID Info_Mod_Den_Dienstzeit_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_00"); //Seit drei Jahren im Amt? Was hast du vorher gemacht?
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_01"); //(abwehrend) Gar nichts! Gar nichts Schlimmes! Die Sache mit der Diebesgilde, das war was Einmaliges!
-	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_02"); //Du standest mit der Diebesgilde in Kontakt?
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_03"); //Ich komme aus dem Hafenviertel, da muss man sehen, wo man bleibt. Es wird keiner zugeben, aber die Diebesgilde kontrolliert weite Teile des Viertels.
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_04"); //Jeder dort kommt früher oder später mit ihr in Kontakt.
+	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_00"); //Pelni funkcje przez trzy lata? Co robiles wczesniej?
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_01"); //Nie ma nic! Nic powaznego! To zlodziejskie gildie, to bylo wyjatkowe!
+	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_02"); //Masz kontakt z cecha zlodziei?
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_03"); //Jestem z nadbrzeza, musisz zobaczyc dokad zmierzasz. Nikt nie przyzna sie do tego, ale zlodziej gildia kontroluje duza czesc terenu.
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_04"); //Wszyscy maja z nia kontakt predzej czy pózniej.
 };
 
 INSTANCE Info_Mod_Den_Problem (C_INFO)
@@ -133,41 +133,41 @@ FUNC INT Info_Mod_Den_Problem_Condition()
 
 FUNC VOID Info_Mod_Den_Problem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_00"); //Pst! Hör mal!
-	AI_Output(hero, self, "Info_Mod_Den_Problem_15_01"); //Meinst du mich?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_02"); //Ja, genau. Du hast mich doch letztens so ausgefragt.
-	AI_Output(hero, self, "Info_Mod_Den_Problem_15_03"); //Wenn du es so nennen willst.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_04"); //Ich hab dir alles erzählt, was du hören wolltest. Im Gegenzug könntest du mir vielleicht einen Gefallen tun - nichts Großes, keine Angst.
-	AI_Output(hero, self, "Info_Mod_Den_Problem_15_05"); //Worum geht's?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_06"); //Ich hab so langsam das Patrouillieren satt. Jeden Tag latsch ich mir die Füße platt, das sollte was für die jungen Greenhorns sein.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_07"); //In der Kaserne ist jetzt eine Stelle frei geworden, Ruga ist abgehauen. Tja, aber nicht ich bin der heißeste Anwärter auf den Posten, sondern Rangar, der faule Drecksack.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_08"); //Rangar hat garantiert Dreck am Stecken, aber komischerweise will Lord Andre davon nichts wissen. Da müssen ihm mal die Augen geöffnet werden.
-	AI_Output(hero, self, "Info_Mod_Den_Problem_15_09"); //Was schwebt dir da vor?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_10"); //Du sollst ein schlechtes Licht auf Rangar werfen. Verbreite Gerüchte über ihn, schmuggle verbotene Waren in seine Truhe, und dann berichte Lord Andre davon.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_11"); //Kriegst du das hin?
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_00"); //Szukaj! Sluchaj!
+	AI_Output(hero, self, "Info_Mod_Den_Problem_15_01"); //Rozmawiasz do mnie?
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_02"); //Tak, to prawda. Poprosil mnie pan, ze pewnego dnia.
+	AI_Output(hero, self, "Info_Mod_Den_Problem_15_03"); //Jesli tak wlasnie chcesz to nazwac.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_04"); //Powiedzialem panu wszystko, co chcial pan uslyszec. W zamian, moze móglbys mi zrobic laske - nic wielkiego, nie leku.
+	AI_Output(hero, self, "Info_Mod_Den_Problem_15_05"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_06"); //Jestem zmeczony patrolowaniem. Kazdego dnia policzam sobie mieszkanie, które powinno byc czyms dla mlodych zieleni.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_07"); //W barakach jest otwór, Ruga odeszla. Cóz, nie jestem najgoretszym pretendentem do pracy, ale Rangar, leniwy skumbag.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_08"); //Rangar jest pewny, ze ma brud na rekach, ale jak dziwnym jest, ze Lord Andre nie chce nic wiedziec o tym. Musi otworzyc oczy.
+	AI_Output(hero, self, "Info_Mod_Den_Problem_15_09"); //Czym sie zajmujesz?
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_10"); //Chce, abyscie rzucili zle swiatlo na Rangar. Rozpowszechniac plotki o nim, przemycac nielegalne towary do jego klatki piersiowej, a nastepnie powiedziec Lord Andre o tym.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_05_11"); //Czy mozna to zrobic?
 
 	Info_ClearChoices	(Info_Mod_Den_Problem);
 
-	Info_AddChoice	(Info_Mod_Den_Problem, "Zu gefährlich. Damit will ich nichts zu tun haben.", Info_Mod_Den_Problem_B);
-	Info_AddChoice	(Info_Mod_Den_Problem, "Klar. Aber das ist dir doch sicher auch was wert ...", Info_Mod_Den_Problem_A);
+	Info_AddChoice	(Info_Mod_Den_Problem, "Zbyt niebezpieczne. Nie chce z tym nic wspólnego.", Info_Mod_Den_Problem_B);
+	Info_AddChoice	(Info_Mod_Den_Problem, "Pewne. Ale na pewno jest to cos warte równiez dla Ciebie.....", Info_Mod_Den_Problem_A);
 };
 
 FUNC VOID Info_Mod_Den_Problem_B()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Problem_B_15_00"); //Zu gefährlich. Damit will ich nichts zu tun haben.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_B_05_01"); //Du bist ja nicht gerade ein guter Freund.
+	AI_Output(hero, self, "Info_Mod_Den_Problem_B_15_00"); //Zbyt niebezpieczne. Nie chce z tym nic wspólnego.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_B_05_01"); //Nie jestes dobrym przyjacielem.
 
 	Info_ClearChoices	(Info_Mod_Den_Problem);
 };
 
 FUNC VOID Info_Mod_Den_Problem_A()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Problem_A_15_00"); //Klar. Aber das ist dir doch sicher auch was wert ...
-	AI_Output(self, hero, "Info_Mod_Den_Problem_A_05_01"); //Ein paar Münzen würden für dich als Bezahlung rausspringen.
+	AI_Output(hero, self, "Info_Mod_Den_Problem_A_15_00"); //Pewne. Ale na pewno jest to cos warte równiez dla Ciebie.....
+	AI_Output(self, hero, "Info_Mod_Den_Problem_A_05_01"); //Kilka monet wyjdzie jako zaplata za ciebie.
 
 	Log_CreateTopic	(TOPIC_MOD_DENSPROBLEM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DENSPROBLEM, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Der Milizsoldat Den wartet vergeblich auf eine Beförderung, da Rangar ihn scheinbar bei Lord Andre schlecht macht. Ich soll jetzt das Gleiche mit Rangar machen: Gerüchte über ihn verbreiten, verbotene Waren in seine Truhe schmuggeln und ihn dann bei Lord Andre anschwärzen.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Zolnierz milicji Den Den Den na prózno czeka na awans, poniewaz Rangar najwyrazniej potepia go u Pana Andre. Teraz zrobie to samo z Rangarem: szerzyc pogloski o nim, przemycac zakazane towary do jego klatki piersiowej, a nastepnie potepic go z Panem Andrem.");
 
 	Info_ClearChoices	(Info_Mod_Den_Problem);
 
@@ -182,7 +182,7 @@ INSTANCE Info_Mod_Den_Verbotenes (C_INFO)
 	information	= Info_Mod_Den_Verbotenes_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für verbotene Waren meinst du?";
+	description	= "Jaki rodzaj nielegalnych towarów oznacza Pan/Pani?";
 };
 
 FUNC INT Info_Mod_Den_Verbotenes_Condition()
@@ -198,12 +198,12 @@ FUNC INT Info_Mod_Den_Verbotenes_Condition()
 
 FUNC VOID Info_Mod_Den_Verbotenes_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Verbotenes_15_00"); //Was für verbotene Waren meinst du?
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_01"); //Ein Stängel Sumpfkraut würde schon reichen. Lord Andre hat uns das Zeug untersagt.
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_02"); //Wenn er jemanden von der Miliz damit erwischt, dann gibt das richtig Ärger.
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_03"); //Noch besser wäre natürlich ein ganzes Paket Sumpfkraut, aber da kommst du nicht so leicht ran.
+	AI_Output(hero, self, "Info_Mod_Den_Verbotenes_15_00"); //Jaki rodzaj nielegalnych towarów oznacza Pan/Pani?
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_01"); //Zrobilby to bagnisty lodyga. Pan Andre powiedzial nam, abysmy nie robili tego samego.
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_02"); //Jesli przylapuje kogos z milicji, to gonna jest klopotem.
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_03"); //Jeszcze lepszym rozwiazaniem byloby cale opakowanie bogweedów, ale nie latwo sie tam dostaniesz.
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Bei den verbotenen Waren, die Den vorschweben, handelt es sich um Sumpfkraut. Ein Stängel sollte schon reichen, ein ganzes Paket wäre aber noch besser. Den meint nur, dass man da nicht so leicht ran kommen wird.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Towary zakazane, o których mowa w Den Den, sa chwastami. Jeden trzon powinien wystarczyc, ale caly pakiet bylby jeszcze lepszy. Po prostu uwaza, ze nie bedzie tak latwo.");
 };
 
 INSTANCE Info_Mod_Den_RangarsTruhe (C_INFO)
@@ -214,7 +214,7 @@ INSTANCE Info_Mod_Den_RangarsTruhe (C_INFO)
 	information	= Info_Mod_Den_RangarsTruhe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich Rangars Truhe?";
+	description	= "Gdzie moge znalezc klatke piersiowa Rangara?";
 };
 
 FUNC INT Info_Mod_Den_RangarsTruhe_Condition()
@@ -230,10 +230,10 @@ FUNC INT Info_Mod_Den_RangarsTruhe_Condition()
 
 FUNC VOID Info_Mod_Den_RangarsTruhe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_RangarsTruhe_15_00"); //Wo finde ich Rangars Truhe?
-	AI_Output(self, hero, "Info_Mod_Den_RangarsTruhe_05_01"); //Die steht in seiner Nähe, an der Mauer beim Freibierstand.
+	AI_Output(hero, self, "Info_Mod_Den_RangarsTruhe_15_00"); //Gdzie moge znalezc klatke piersiowa Rangara?
+	AI_Output(self, hero, "Info_Mod_Den_RangarsTruhe_05_01"); //Jest blisko niego, przy scianie przy stoisku piwnym.
 
-	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Rangars Truhe finde ich in seiner Nähe, an der Mauer beim Freibierstand.");
+	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "Skrzynka Rangara znajduje sie obok sciany przy bezplatnym stoisku piwnym.");
 };
 
 INSTANCE Info_Mod_Den_Rangar (C_INFO)
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Den_Rangar (C_INFO)
 	information	= Info_Mod_Den_Rangar_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab mit Lord Andre gesprochen.";
+	description	= "Rozmawialem z Panem Andre.";
 };
 
 FUNC INT Info_Mod_Den_Rangar_Condition()
@@ -257,10 +257,10 @@ FUNC INT Info_Mod_Den_Rangar_Condition()
 
 FUNC VOID Info_Mod_Den_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_00"); //Ich hab mit Lord Andre gesprochen.
-	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_01"); //Und was hat er gesagt?
-	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_02"); //Er wird die Sachen überprüfen.
-	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_03"); //Sehr gut, hier ist deine Belohnung.
+	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_00"); //Rozmawialem z Panem Andre.
+	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_01"); //I co on powiedzial?
+	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_02"); //Sprawdzi rzeczy.
+	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_03"); //Bardzo dobrze, tutaj jest Twoja nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
@@ -279,7 +279,7 @@ INSTANCE Info_Mod_Den_Checker (C_INFO)
 	information	= Info_Mod_Den_Checker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du weißt ja wirklich gut Bescheid ...";
+	description	= "Doskonale wiesz, ze....";
 };
 
 FUNC INT Info_Mod_Den_Checker_Condition()
@@ -292,8 +292,8 @@ FUNC INT Info_Mod_Den_Checker_Condition()
 
 FUNC VOID Info_Mod_Den_Checker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Checker_15_00"); //Du weißt ja wirklich gut Bescheid ...
-	AI_Output(self, hero, "Info_Mod_Den_Checker_05_01"); //He, ich erledige meinen Job eben gewissenhaft! So viel Wissen kann man sich auch aneignen, ohne jahrelang Botengänge für die Diebesgilde erledigt zu haben!
+	AI_Output(hero, self, "Info_Mod_Den_Checker_15_00"); //Doskonale wiesz, ze....
+	AI_Output(self, hero, "Info_Mod_Den_Checker_05_01"); //Hej, wykonuje swoja prace sumiennie! Tak wiele wiedzy mozna zdobyc bez spedzania lat na bieganiu spraw dla zlodziei!
 };
 
 INSTANCE Info_Mod_Den_Lernen_Armbrust (C_INFO)
@@ -304,7 +304,7 @@ INSTANCE Info_Mod_Den_Lernen_Armbrust (C_INFO)
 	information	= Info_Mod_Den_Lernen_Armbrust_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Armbrustschießen bei.";
+	description	= "Naucz mnie strzelaniny kuszy.";
 };
 
 FUNC INT Info_Mod_Den_Lernen_Armbrust_Condition()
@@ -321,11 +321,11 @@ FUNC INT Info_Mod_Den_Lernen_Armbrust_Condition()
 
 FUNC VOID Info_Mod_Den_Lernen_Armbrust_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Den_Lernen_Armbrust_15_00"); //Bring mir Armbrustschießen bei.
+	AI_Output(hero, self, "Info_Mod_Den_Lernen_Armbrust_15_00"); //Naucz mnie strzelaniny kuszy.
 
 	Info_ClearChoices	(Info_Mod_Den_Lernen_Armbrust);
 	
-	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Zurück.", Info_Mod_Den_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Z powrotem.", Info_Mod_Den_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Den_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Den_Lernen_Armbrust_1);
 };
@@ -341,7 +341,7 @@ FUNC VOID Info_Mod_Den_Lernen_Armbrust_5()
 
 	Info_ClearChoices	(Info_Mod_Den_Lernen_Armbrust);
 
-	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Zurück.", Info_Mod_Den_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Z powrotem.", Info_Mod_Den_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Den_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Den_Lernen_Armbrust_1);
 };
@@ -352,7 +352,7 @@ FUNC VOID Info_Mod_Den_Lernen_Armbrust_1()
 
 	Info_ClearChoices	(Info_Mod_Den_Lernen_Armbrust);
 
-	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Zurück.", Info_Mod_Den_Lernen_Armbrust_BACK);
+	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, "Z powrotem.", Info_Mod_Den_Lernen_Armbrust_BACK);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_CrossBow)), Info_Mod_Den_Lernen_Armbrust_5);
 	Info_AddChoice	(Info_Mod_Den_Lernen_Armbrust, B_BuildLearnString(PRINT_LearnCrossBow1, B_GetLearnCostTalent(hero, NPC_TALENT_CrossBow, 1)), Info_Mod_Den_Lernen_Armbrust_1);
 };

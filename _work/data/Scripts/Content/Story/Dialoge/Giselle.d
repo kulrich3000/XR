@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Giselle_RLMord (C_INFO)
 	information	= Info_Mod_Giselle_RLMord_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist Giselle?";
+	description	= "Jestes Giselle?";
 };
 
 FUNC INT Info_Mod_Giselle_RLMord_Condition()
@@ -19,65 +19,65 @@ FUNC INT Info_Mod_Giselle_RLMord_Condition()
 
 FUNC VOID Info_Mod_Giselle_RLMord_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_00"); //Du bist Giselle?
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_01"); //In Fleisch und Blut, mein Hübscher.
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_02"); //Was geschah letzte Nacht?
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_03"); //Nun, Jason kam, wie jeden Monat, zu mir und wollte das Übliche.
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_04"); //Da kam plötzlich jemand in das Zimmer hineingestürmt und Streckte Jason ohne Vorwarnung nieder.
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_05"); //Danach verschwand er einfach wieder, ohne ein Wort zu sagen. Gleich darauf rief weckte ich Bromor, den Besitzer, der die Miliz verständigte.
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_06"); //Was ist „Das Übliche“?
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_07"); //Nur Gutes über die Toten. Wir in der roten Laterne sind diskret.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_00"); //Jestes Giselle?
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_01"); //Miazsz i krew, przystojny.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_02"); //Co wydarzylo sie wczoraj wieczorem?
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_03"); //No cóz, jak co miesiac, Jason przyszedl do mnie i chcial zwyczaju.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_04"); //Nagle ktos wpadl do pokoju i uderzyl w Jasona bez ostrzezenia.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_05"); //Potem wlasnie zniknal bez slowa. Natychmiast potem obudzilem Bromora, wlasciciela, który zadzwonil do milicji.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_15_06"); //Co jest typowe?
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_17_07"); //Tylko dobre rzeczy o zmarlych. My w czerwonej latarni jestesmy dyskretni.
 
 	B_StartOtherRoutine	(Mod_744_MIL_Pablo_NW, "ZIMMER");
 
 	Info_ClearChoices	(Info_Mod_Giselle_RLMord);
 
-	Info_AddChoice	(Info_Mod_Giselle_RLMord, "Wenn du es mir nicht augenblicklich sagst (...)", Info_Mod_Giselle_RLMord_C);
+	Info_AddChoice	(Info_Mod_Giselle_RLMord, "Jesli nie powiesz mi natychmiast (....) )", Info_Mod_Giselle_RLMord_C);
 
 	if (Npc_HasItems(hero, ItMi_GoldRing) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Giselle_RLMord, "Sag's mir Bitte!", Info_Mod_Giselle_RLMord_B);
+		Info_AddChoice	(Info_Mod_Giselle_RLMord, "Prosze mi powiedziec, prosze!", Info_Mod_Giselle_RLMord_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Giselle_RLMord, "Jason wird’s nicht mehr stören, wo er jetzt ist.", Info_Mod_Giselle_RLMord_A);
+	Info_AddChoice	(Info_Mod_Giselle_RLMord, "Jason nie bedzie mial nic przeciwko temu, gdzie jest teraz.", Info_Mod_Giselle_RLMord_A);
 };
 
 FUNC VOID Info_Mod_Giselle_RLMord_D()
 {
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_00"); //Er stand auf Brutalitäten, wollte geschlagen verletzt werden. Einmal hat er sogar extra 'ne Feuerball-Spruchrolle mitgebracht.
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_01"); //Er selbst hat mich aber nie angerührt, war immer passiv.
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_D_15_02"); //Ich seh' mich mal am Tatort um. Ihr wart in Zimmer 2?
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_03"); //Genau Süßer.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_00"); //Byl brutalny, chcial byc bity i ranny. Pewnego razu przyniósl nawet zwój do pilki noznej.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_01"); //Ale on nigdy nie dotykal mnie, zawsze byl bierny.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_D_15_02"); //Zobacze miejsce zbrodni. Byles w pokoju 2?
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_D_17_03"); //To jest sluszne, slodkie.
 	
 	Info_ClearChoices	(Info_Mod_Giselle_RLMord);
 };
 
 FUNC VOID Info_Mod_Giselle_RLMord_C()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_C_15_00"); //Wenn du es mir nicht augenblicklich sagst, lass ich dich wegen „Behinderung der Ermittlungsarbeiten“ in den Kerker werfen.
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_C_17_01"); //Ist ja schon gut, ich sag’s dir ja.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_C_15_00"); //Jesli juz nie powiesz mi teraz, wrzuce cie do wiezienia za utrudnianie pracy sledczej.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_C_17_01"); //Mówie ci, ze to dobrze.
 	
 	Info_Mod_Giselle_RLMord_D();
 };
 
 FUNC VOID Info_Mod_Giselle_RLMord_B()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_B_15_00"); //Sag's mir Bitte!
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_01"); //Wenn man mich so nett bittet kann ich kaum Nein sagen ...
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_02"); //Ich mach dir n Vorschlag, du bringst mir ein kleines Zeichen deiner Wertschätzung, dann sag ich's dir.
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_B_15_03"); //Hier ist ein goldener Ring.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_B_15_00"); //Prosze mi powiedziec, prosze!
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_01"); //Jesli tak ladnie mnie zapytaja, trudno mi powiedziec nie......
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_02"); //Zrobie wam sugestie, przynosicie mi troche wyraz waszego uznania, a potem powiem wam.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_B_15_03"); //Oto zloty pierscien.
 
 	B_GiveInvItems	(hero, self, ItMi_GoldRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_04"); //Der ist ja wunderschön. Na gut, ich werde es dir erzählen.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_B_17_04"); //To piekne, czyz nie? Wlasciwie, powiem wam.
 	
 	Info_Mod_Giselle_RLMord_D();
 };
 
 FUNC VOID Info_Mod_Giselle_RLMord_A()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_A_15_00"); //Jason wird’s nicht mehr stören, wo er jetzt ist.
-	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_A_17_01"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Giselle_RLMord_A_15_00"); //Jason nie bedzie mial nic przeciwko temu, gdzie jest teraz.
+	AI_Output(self, hero, "Info_Mod_Giselle_RLMord_A_17_01"); //Wszystkie sluszne, wszystkie sluszne.
 	
 	Info_Mod_Giselle_RLMord_D();
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Giselle_Jason (C_INFO)
 	information	= Info_Mod_Giselle_Jason_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du dir sicher, dass Jason überrascht wurde?";
+	description	= "Czy jestes pewien, ze Jason byl zaskoczony?";
 };
 
 FUNC INT Info_Mod_Giselle_Jason_Condition()
@@ -103,16 +103,16 @@ FUNC INT Info_Mod_Giselle_Jason_Condition()
 
 FUNC VOID Info_Mod_Giselle_Jason_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_00"); //Bist du dir sicher, dass Jason überrascht wurde?
-	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_01"); //Natürlich. Wenn ich etwas kann, dann ist es die ganze Aufmerksamkeit eines Mannes auf mich zu lenken.
-	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_02"); //Warum hatte er dann seine Waffe gezogen, bevor er starb?
-	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_03"); //Er hatte ...? Na ... weil ... er auf Rollenspiele stand und sein Schwert dabei gerne gezogen hatte.
-	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_04"); //Das klingt aber nicht nach dem „Üblichem“ von dem du mir vorhin erzählt hast.
-	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_05"); //Ich ... ah ...
+	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_00"); //Czy jestes pewien, ze Jason byl zaskoczony?
+	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_01"); //Oczywiscie tak jest. Jesli moge cos zrobic, to zwrócic na mnie uwage czlowieka.
+	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_02"); //Dlaczego wiec wyciagnal karabin zanim umarl?
+	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_03"); //Mial....? .... poniewaz.... Mial rozgrywki fabularne i lubil rysowac miecz.
+	AI_Output(hero, self, "Info_Mod_Giselle_Jason_15_04"); //To nie brzmi jak "zwykla" rzecz, o której wczesniej mi powiedziales.
+	AI_Output(self, hero, "Info_Mod_Giselle_Jason_17_05"); //l-- ah.....
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Giselle hat sich nun im Zimmer von Bromor versteckt. Sie scheint etwas zu verbergen. Ich sollte Pablo Bescheid geben.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Giselle kryje sie teraz w pokoju Bromora. Wydaje sie, ze cos ukryla. Powinienem powiedziec Pablo.");
 
 	B_StartOtherRoutine	(self, "ZIMMER");
 };
@@ -137,21 +137,21 @@ FUNC INT Info_Mod_Giselle_Galf_Condition()
 
 FUNC VOID Info_Mod_Giselle_Galf_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_00"); //Ihr habt Galf? Lasst ihn in  Ruhe, ihr Schweine!
-	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_01"); //Du kennst ihn?
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_02"); //Er ist mein Bruder ... dieser Dummkopf hätte schon lange abhauen sollen.
-	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_03"); //Was wird hier gespielt?
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_04"); //Na schön, du hast gewonnen. Jason kommt schon lange zu mir und Galf hatte die Idee, ihn zu erpressen. Also kam er letzte Nacht ins Zimmer und drohte Jason, die Miliz zu rufen.
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_05"); //Ihr Idioten hättet ihn natürlich achtkantig aus eurem Verein geworfen, wenn ihr erfahren hättet was er hier treibt. Also wurde er aggressiv, nahm sein Schwert und wollte auf Galf losgehen.
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_06"); //Da kam jedoch eine dunkle Gestalt zur Türe herein, streckte Jason nieder und verschwand wieder, mitsamt Jasons Uniform. Und dann ...
-	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_07"); //Habt ihr euch diese Geschichte ausgedacht, um von euch abzulenken.
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_08"); //Genau ... aber das hat ja wohl nicht so gut funktioniert, Süßer.
-	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_09"); //Aber warum hast du auch die Sache mit der dunklen Gestalt verschwiegen?
-	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_10"); //Weil ihr einer Hure das wirklich abkaufen würdet? Da musst du doch selbst lachen.
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_00"); //Masz pologu? Zostaw go sam, dranie!
+	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_01"); //Znasz go?
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_02"); //To mój brat..... ten glupiec powinien byl uciekac dawno temu.
+	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_03"); //Co sie tu dzieje?
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_04"); //Dobrze, wygrasz. Jason przyjezdzal do mnie przez dlugi czas i Galf wpadl na pomysl szantazowania go. Przyszedl wiec wczoraj wieczorem i grozil wezwac milicje na Jason.
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_05"); //Ty idiotysci wyrzucilbys go z twojego klubowego osmiokata, gdybys dowiedzial sie, co on tu robi. Wiec stal sie agresywny, wzial miecz i chcial pójsc za Galfem.
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_06"); //Ale wtedy do drzwi przyszla ciemna figura, Jason polozyl i zniknal znowu, wraz z mundurkiem Jasona. A potem.....
+	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_07"); //Czy wymysliles te historie, aby odwrócic uwage od siebie?
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_08"); //Dokladnie.... Ale to nie sprawdzilo sie tak dobrze, slodycze.
+	AI_Output(hero, self, "Info_Mod_Giselle_Galf_15_09"); //Dlaczego jednak nic mi nie powiedziales o ciemnej figurze?
+	AI_Output(self, hero, "Info_Mod_Giselle_Galf_17_10"); //Bo kupilbys go od dziwki? Trzeba sie smiac.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Giselle hat mir die wahre Geschichte erzählt. Ich sollte jetzt zu Lord Andre gehen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Giselle opowiedziala mi prawdziwa historie. Teraz powinienem isc do Pana Andre' a.");
 };
 
 INSTANCE Info_Mod_Giselle_Satz (C_INFO)
@@ -174,31 +174,31 @@ FUNC INT Info_Mod_Giselle_Satz_Condition()
 
 FUNC VOID Info_Mod_Giselle_Satz_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_00"); //Du kommst mich besuchen? Wie überaus reizend von dir.
-	AI_Output(hero, self, "Info_Mod_Giselle_Satz_15_01"); //Ich hab eine Frage.
-	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_02"); //Ich bin normalerweise herzlichere Begrüßungen von Männern gewohnt. Worum geht's?
-	AI_Output(hero, self, "Info_Mod_Giselle_Satz_15_03"); //Hat die Dunkle Gestalt, die Jason getötet hat, irgendetwas gesagt?
-	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_04"); //Schon möglich ...
+	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_00"); //Przychodzisz, zeby mnie zobaczyc? Jak najbardziej Cie urocza.
+	AI_Output(hero, self, "Info_Mod_Giselle_Satz_15_01"); //Prosze pozwolic mi prosic panstwa o cos.
+	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_02"); //Przywyklem do serdeczniejszych powitan od mezczyzn. Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Giselle_Satz_15_03"); //Czy ciemna postac, która zabila Jasona, powiedziala cos?
+	AI_Output(self, hero, "Info_Mod_Giselle_Satz_17_04"); //Jest to mozliwe......
 
 	Info_ClearChoices	(Info_Mod_Giselle_Satz);
 
-	Info_AddChoice	(Info_Mod_Giselle_Satz, "Was willst du?", Info_Mod_Giselle_Satz_C);
-	Info_AddChoice	(Info_Mod_Giselle_Satz, "Vielleicht würde das ein harter Schlag auf den Hinterkopf auch schaffen.", Info_Mod_Giselle_Satz_B);
-	Info_AddChoice	(Info_Mod_Giselle_Satz, "Wenn du es mir nicht sofort sagst brech ich deinem Bruder beide Beine.", Info_Mod_Giselle_Satz_A);
+	Info_AddChoice	(Info_Mod_Giselle_Satz, "Czego chcesz?", Info_Mod_Giselle_Satz_C);
+	Info_AddChoice	(Info_Mod_Giselle_Satz, "Byc moze ciezki cios w tyl glowy zrobilby sztuczke.", Info_Mod_Giselle_Satz_B);
+	Info_AddChoice	(Info_Mod_Giselle_Satz, "Jesli nie mówisz mi teraz, to zlamamam obie nogi twojego brata.", Info_Mod_Giselle_Satz_A);
 };
 
 FUNC VOID B_SayBotSentenceGiselle()
 {
 	AI_Output(self, hero, "Info_Mod_Giselle_Satz_Say_17_00"); //Er hat etwas gesagt wie "Milizen ist es in ihrer Vorbildwirkung nicht erlaubt unlautere Taten auszuüben".
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der Satz des Roboters, den Giselle gehört hat, ist 'Milizen ist es in ihrer Vorbildwirkung nicht erlaubt unlautere Taten auszuüben'.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Wyrokiem wydanym przez robota, którego Giselle wysluchal, jest 'milicja nie moze dokonywac nieuczciwych czynów'.");
 
 	Mod_PAL_HeroBot = 3;
 };
 
 FUNC VOID Info_Mod_Giselle_Satz_D()
 {
-	AI_Output(self, hero, "Info_Mod_Giselle_Satz_D_17_00"); //Jaja ... schon gut, ich wollte ja nicht viel. Auf deine brutale Art steh' ich überhaupt nicht, Süßer.
+	AI_Output(self, hero, "Info_Mod_Giselle_Satz_D_17_00"); //Tak, tak, tak..... Wlasciwie, nie chcialem wiele. Nie podoba mi sie nawet twoja brutalnosc, slodycz.
 
 	Info_ClearChoices	(Info_Mod_Giselle_Satz);
 
@@ -207,24 +207,24 @@ FUNC VOID Info_Mod_Giselle_Satz_D()
 
 FUNC VOID Info_Mod_Giselle_Satz_C()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_Satz_C_15_00"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Giselle_Satz_C_17_01"); //Ich will eine Kerze ... du glaubst nicht, wie dunkel es nachts in einem Kerker ist.
+	AI_Output(hero, self, "Info_Mod_Giselle_Satz_C_15_00"); //Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Giselle_Satz_C_17_01"); //Chce swiecy.... jak ciemno jest w nocy w lochu.
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Bevor mir Giselle etwas zum Roboter verrät, soll ich ihr eine Kerze bringen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Zanim Giselle powie mi cokolwiek o robocie, przyniose jej swiece.");
 	
 	Info_ClearChoices	(Info_Mod_Giselle_Satz);
 };
 
 FUNC VOID Info_Mod_Giselle_Satz_B()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_Satz_B_15_00"); //Vielleicht würde das ein harter Schlag auf den Hinterkopf auch schaffen.
+	AI_Output(hero, self, "Info_Mod_Giselle_Satz_B_15_00"); //Byc moze ciezki cios w tyl glowy zrobilby sztuczke.
 	
 	Info_Mod_Giselle_Satz_D();
 };
 
 FUNC VOID Info_Mod_Giselle_Satz_A()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_Satz_A_15_00"); //Wenn du es mir nicht sofort sagst brech ich deinem Bruder beide Beine.
+	AI_Output(hero, self, "Info_Mod_Giselle_Satz_A_15_00"); //Jesli nie mówisz mi teraz, to zlamamam obie nogi twojego brata.
 	
 	Info_Mod_Giselle_Satz_D();
 };
@@ -237,7 +237,7 @@ INSTANCE Info_Mod_Giselle_Kerze (C_INFO)
 	information	= Info_Mod_Giselle_Kerze_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier eine Kerze für dich.";
+	description	= "Mam dla pana swieczke.";
 };
 
 FUNC INT Info_Mod_Giselle_Kerze_Condition()
@@ -252,12 +252,12 @@ FUNC INT Info_Mod_Giselle_Kerze_Condition()
 
 FUNC VOID Info_Mod_Giselle_Kerze_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Giselle_Kerze_15_00"); //Ich habe hier eine Kerze für dich.
+	AI_Output(hero, self, "Info_Mod_Giselle_Kerze_15_00"); //Mam dla pana swieczke.
 
 	B_GiveInvItems	(hero, self, ItMi_Kerze, 1);
 
-	AI_Output(self, hero, "Info_Mod_Giselle_Kerze_17_01"); //Danke, jetzt habe ich hier wenigstens ein Licht in dieser dunklen Stunde.
-	AI_Output(hero, self, "Info_Mod_Giselle_Kerze_15_02"); //Was hat der Mörder nun gesagt?
+	AI_Output(self, hero, "Info_Mod_Giselle_Kerze_17_01"); //Dziekuje, przynajmniej teraz mam tu swiatlo w tej ciemnej godzinie.
+	AI_Output(hero, self, "Info_Mod_Giselle_Kerze_15_02"); //Co powiedzial zabójca?
 
 	B_GivePlayerXP	(250);
 

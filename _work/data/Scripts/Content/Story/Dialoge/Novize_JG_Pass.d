@@ -15,31 +15,31 @@ FUNC INT Info_Mod_Novize_JG_Pass_Hi_Condition()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_03_00"); //(wimmernd) Habt Gnade mit mir, ich werde auch nichts mehr tun, ehrlich.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_03_00"); //Milosierdzie mam na mnie, nie jestem gonna nic zrobic, szczerze mówiac.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Warum hast du mich angegriffen?", Info_Mod_Novize_JG_Pass_Hi_B);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Vergiss es, stirb.", Info_Mod_Novize_JG_Pass_Hi_A);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Dlaczego mnie zaatakowales?", Info_Mod_Novize_JG_Pass_Hi_B);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Zapomnij, umrzec.", Info_Mod_Novize_JG_Pass_Hi_A);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_00"); //Warum hast du mich angegriffen?
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_01"); //Ich ... ich konnte nicht anders. Er hat mich dazu gezwungen.
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_02"); //Wer hat Dich dazu gezwungen?
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_03"); //Mein Meister. Bitte lasst mich Leben.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_00"); //Dlaczego mnie zaatakowales?
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_01"); //l-- Nie moglem sobie pomóc. Zmusil mnie do tego.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_B_15_02"); //Kto Cie zmusil?
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_B_03_03"); //Mistrz mój. Prosze pozwolic mi zyc.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Vor deinem Tod hättest du wenigstens dein Gewissen (...)", Info_Mod_Novize_JG_Pass_Hi_D);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Gut, ich werde dir nichts mehr tun. Nun sage mir, (...)", Info_Mod_Novize_JG_Pass_Hi_C);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Przed smiercia bedziesz mial przynajmniej swoje sumienie (....). )", Info_Mod_Novize_JG_Pass_Hi_D);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Dobrze, nie zaszkodze juz dluzej. Powiedz mi teraz (....). )", Info_Mod_Novize_JG_Pass_Hi_C);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_D_15_00"); //Vor deinem Tod hättest du wenigstens dein Gewissen erleichtern können. Stirb.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_D_03_01"); //Meister ...
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_D_15_00"); //Zanim umrzesz, przynajmniej mógles uwolnic swoje sumienie. Die.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_D_03_01"); //majster
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -53,18 +53,18 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_D()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_C_15_00"); //Gut, ich werde dir nichts mehr tun. Nun sage mir, wer dein Meister ist.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_C_03_01"); //Ich kann nicht, er bringt mich dafür um. Lasst mich bitte gehen.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_C_15_00"); //Dobrze, nie zaszkodze juz dluzej. Teraz powiedz mi, kim jest twój pan.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_C_03_01"); //Nie moge, on mnie za to zabija. Prosze pozwolic mi odejsc.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Nein. Sirb.", Info_Mod_Novize_JG_Pass_Hi_F);
-	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Verschwinde und lass dich nicht wieder blicken, Feigling.", Info_Mod_Novize_JG_Pass_Hi_E);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Nie. Sirb.", Info_Mod_Novize_JG_Pass_Hi_F);
+	Info_AddChoice	(Info_Mod_Novize_JG_Pass_Hi, "Wejdz stad i nie wracaj, tchórz.", Info_Mod_Novize_JG_Pass_Hi_E);
 };
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_F()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_F_15_00"); //Nein. Sirb.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_F_15_00"); //Nie. Sirb.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -78,11 +78,11 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_F()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_E_15_00"); //Verschwinde und lass dich nicht wieder blicken, Feigling.
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_E_15_00"); //Wejdz stad i nie wracaj, tchórz.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_E_03_01"); //Stirb du Narr. Niemals könnte ich so unter die Augen meines Meister treten.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_E_03_01"); //Glupicie umieracie. Nigdy nie bylbym w stanie stac pod oczami mojego mistrza tak jak teraz.
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 
@@ -96,8 +96,8 @@ FUNC VOID Info_Mod_Novize_JG_Pass_Hi_E()
 
 FUNC VOID Info_Mod_Novize_JG_Pass_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_A_15_00"); //Vergiss es, stirb.
-	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_A_03_01"); //Neeeeeeein!
+	AI_Output(hero, self, "Info_Mod_Novize_JG_Pass_Hi_A_15_00"); //Zapomnij, umrzec.
+	AI_Output(self, hero, "Info_Mod_Novize_JG_Pass_Hi_A_03_01"); //Nope!
 
 	Info_ClearChoices	(Info_Mod_Novize_JG_Pass_Hi);
 

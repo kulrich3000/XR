@@ -18,22 +18,22 @@ FUNC INT Info_Mod_Jana_BerndTot_Condition()
 
 FUNC VOID Info_Mod_Jana_BerndTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_00"); //AAAAAAAAAAAAAAHHHHH!!!
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_01"); //Beruhige dich, ist ja schon gut! Ich bin von der Miliz.
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_02"); //Das hab ich mir bei IHM auch gedacht!
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_03"); //Wovon redest du?
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_04"); //Na von dem Typ, der Bernd abgeschlachtet hat!
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_05"); //Das war ein Milize?
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_06"); //Ja, hörst du mir eigentlich nicht zu, dass du alles nochmal fragst? Das war so 'n dunkler Typ, der eine Milizuniform trug!
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_07"); //Der ist einfach rein spaziert und hat Bernd niedergestreckt?
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_08"); //Ja, glaubt du ich hätte mich ihm in den Weg gestellt? War ja selbst damit beschäftigt mich Bernd zu erwehren und der Typ sah um einiges gefährlicher aus.
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_09"); //Geht’s auch etwas genauer als "Dunkler Typ mit Milizuniform"?
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_10"); //Nein, das ist alles was ich noch weiß, ich hätte ja beinahe 'nen Herzinfarkt bekommen.
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_11"); //Na gut ... Ich werde dem Hauptmann Bescheid sagen. Kannst du dich sonst noch an etwas erinnern?
-	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_12"); //Jetzt wo du’s sagst ... er hat irgendein komisches Zeug gelabert. Irgendwas von wegen "Ein Guter Milize schützt stets die Schwächeren.", das hat er immer wieder wiederholt.
-	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_13"); //Hmm ... Danke für die Information.
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_00"); //AAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHH!
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_01"); //Spokojne, to wszystko dobrze! Jestem milicja.
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_02"); //Tak tez myslalem o nim!
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_03"); //O czym Pan mówi?
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_04"); //Chlopak, który zabil Bernda!
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_05"); //To byla milicja?
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_06"); //Tak, czy wlasciwie nie slyszysz mnie o ponowne pytanie? Byl czarnym facetem w milicyjnym mundurze!
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_07"); //Po prostu wszedl i uderzyl Bernda?
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_08"); //Tak, myslisz, ze stalem na jego drodze? Sam bylem zajety, rywalizujac z Berndem, a gosc wygladal znacznie bardziej niebezpiecznie.
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_09"); //Geht’s auch etwas genauer als "Typ ciemny z umundurowaniem milicyjnym"?
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_10"); //Niemal mialem atak serca.
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_11"); //Wszystko w porzadku.... O tym poinformuje kapitana. Czy pamietasz cokolwiek innego?
+	AI_Output(self, hero, "Info_Mod_Jana_BerndTot_16_12"); //Jetzt wo du’s sagst ... er hat irgendein komisches Zeug gelabert. Irgendwas von wegen "Dobra milicja zawsze chroni slabych.", das hat er immer wieder wiederholt.
+	AI_Output(hero, self, "Info_Mod_Jana_BerndTot_15_13"); //Hmm..... Dziekujemy za informacje.
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Bernd wurde von einer dunklen Gestalt in Milizuniform ermordet. Jana konnte sich nur an einen Satz erinnern, welchen der Täter ständig wiederholt hat: 'Ein Guter Milize schützt stets die Schwächeren.'");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Bernd zostal zamordowany przez ciemna postac w milicyjnym mundurze. Jana pamietal tylko jedno zdanie, które ciagle powtarzal:'Dobra milicja zawsze chroni slabszych. '");
 };
 
 INSTANCE Info_Mod_Jana_Shakir (C_INFO)
@@ -44,7 +44,7 @@ INSTANCE Info_Mod_Jana_Shakir (C_INFO)
 	information	= Info_Mod_Jana_Shakir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Guten Tag, schöne Frau. Worauf wartest du?";
+	description	= "Dobre popoludnie, piekna kobieta. Na co czekasz?";
 };
 
 FUNC INT Info_Mod_Jana_Shakir_Condition()
@@ -57,19 +57,19 @@ FUNC INT Info_Mod_Jana_Shakir_Condition()
 
 FUNC VOID Info_Mod_Jana_Shakir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_00"); //Guten Tag, schöne Frau. Worauf wartest du?
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_01"); //Auf dich sicher nicht. Und was geht's dich an?
-	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_02"); //Nun, ich suche eine Dame für ... gewissermaßen ... zur Entspannung ...
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_03"); //(laut) Scher dich, du Strolch, und mach's dir selber!
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_04"); //Ich bin eine ehrbare Frau, die auf ihren Mann wartet.
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_05"); //Wenn der zurückkommt, kannst du was erleben!
-	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_06"); //Bitte vielmals um Entschuldigung. Ich dachte nur ...
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_07"); //Ist offensichtlich nicht deine starke Seite.
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_08"); //Probiers oben in der Unterstadt. Die Nichte von Thorben, die Gritta, braucht immer Geld. Hat überall Schulden.
-	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_09"); //(laut) Aber sag nicht, dass ich das gesagt habe!
-	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_10"); //Entschuldigung nochmal.
+	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_00"); //Dobre popoludnie, piekna kobieta. Na co czekasz?
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_01"); //Nie do ciebie, jestem pewien. A czym sie opiekujesz?
+	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_02"); //Cóz, szukam pani do.... rodzaj.... dla relaksacji......
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_03"); //Wychodzac z tego miejsca, szumisz i rób to sam!
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_04"); //Jestem uczciwa kobieta czekajaca na meza.
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_05"); //Kiedy wróci, bedziesz mial klopoty!
+	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_06"); //Prosze mi wybaczyc wiele. Myslalem tylko o.....
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_07"); //To oczywiscie nie jest Twoja mocna strona.
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_08"); //Wypróbuj w dolnym miescie. Bratanica Thorbena, Gritta, zawsze potrzebuje pieniedzy. Dlug wszedzie.
+	AI_Output(self, hero, "Info_Mod_Jana_Shakir_16_09"); //Ale nie powiedz mi, ze to powiedzialem!
+	AI_Output(hero, self, "Info_Mod_Jana_Shakir_15_10"); //Przepraszamy ponownie.
 
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Jana war stinksauer. Sie sei eine ehrbare Frau. Was man von Gritta, Thorbens Nichte, nicht behaupten könne. Mal sehen.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Jana zostal podekscytowany. Byla uczciwa kobieta. Nie da sie tego powiedziec o Gritcie, siostrzenicy Thorbena. Zobaczmy teraz.");
 };
 
 INSTANCE Info_Mod_Jana_Beutel (C_INFO)
@@ -93,45 +93,45 @@ FUNC INT Info_Mod_Jana_Beutel_Condition()
 
 FUNC VOID Info_Mod_Jana_Beutel_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel_16_00"); //Junger Mann, bleib' doch kurz stehen.
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel_16_00"); //Mlody czlowiek, zatrzymaj sie na chwile.
 
 	Info_ClearChoices	(Info_Mod_Jana_Beutel);
 
-	Info_AddChoice	(Info_Mod_Jana_Beutel, "Keine Zeit.", Info_Mod_Jana_Beutel_B);
-	Info_AddChoice	(Info_Mod_Jana_Beutel, "Was gibt's?", Info_Mod_Jana_Beutel_A);
+	Info_AddChoice	(Info_Mod_Jana_Beutel, "No time.", Info_Mod_Jana_Beutel_B);
+	Info_AddChoice	(Info_Mod_Jana_Beutel, "Co sie dzieje?", Info_Mod_Jana_Beutel_A);
 };
 
 FUNC VOID Info_Mod_Jana_Beutel_B()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Beutel_B_15_00"); //Keine Zeit.
+	AI_Output(hero, self, "Info_Mod_Jana_Beutel_B_15_00"); //No time.
 
 	Info_ClearChoices	(Info_Mod_Jana_Beutel);
 };
 
 FUNC VOID Info_Mod_Jana_Beutel_A()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Beutel_A_15_00"); //Was gibt's?
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel_A_16_01"); //Ich war gerade einkaufen, und nun ist mein Einkaufsbeutel so schwer, dass ich ihn nicht mehr tragen kann.
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel_A_16_02"); //Wärst du so freundlich, ihn mir nach Hause zu bringen?
+	AI_Output(hero, self, "Info_Mod_Jana_Beutel_A_15_00"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel_A_16_01"); //Wlasnie kupowalem, a teraz moja torba na zakupy jest tak ciezka, ze nie moge jej juz nosic.
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel_A_16_02"); //Czy bylbys mi tak uprzejmy, ze móglbym doprowadzic go do domu?
 
 	Info_ClearChoices	(Info_Mod_Jana_Beutel);
 
-	Info_AddChoice	(Info_Mod_Jana_Beutel, "Ich bin doch kein Packesel!", Info_Mod_Jana_Beutel_D);
-	Info_AddChoice	(Info_Mod_Jana_Beutel, "Kein Problem. Wo wohnst du denn?", Info_Mod_Jana_Beutel_C);
+	Info_AddChoice	(Info_Mod_Jana_Beutel, "Nie jestem burro!", Info_Mod_Jana_Beutel_D);
+	Info_AddChoice	(Info_Mod_Jana_Beutel, "Bez problemu. Gdzie mieszkasz?", Info_Mod_Jana_Beutel_C);
 };
 
 FUNC VOID Info_Mod_Jana_Beutel_D()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Beutel_D_15_00"); //Ich bin doch kein Packesel!
+	AI_Output(hero, self, "Info_Mod_Jana_Beutel_D_15_00"); //Nie jestem burro!
 
 	Info_ClearChoices	(Info_Mod_Jana_Beutel);
 };
 
 FUNC VOID Info_Mod_Jana_Beutel_C()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Beutel_C_15_00"); //Kein Problem. Wo wohnst du denn?
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel_C_16_01"); //Im Hafenviertel, im Haus zwischen Fellan und der Lagerhalle.
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel_C_16_02"); //Stell den Beutel einfach irgendwo ab.
+	AI_Output(hero, self, "Info_Mod_Jana_Beutel_C_15_00"); //Bez problemu. Gdzie mieszkasz?
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel_C_16_01"); //W dzielnicy portowej, w domu miedzy Fellanem a magazynem.
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel_C_16_02"); //Wystarczy wlozyc torbe gdzies w dól.
 
 	B_GiveInvItems	(self, hero, ItMi_JanaBeutel, 1);
 
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Jana_Beutel_C()
 
 	Log_CreateTopic	(TOPIC_MOD_JANA_BEUTEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_JANA_BEUTEL, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Mann, das Ding ist wirklich verdammt schwer. Ich sollte sehen, dass ich es möglichst schnell in der Hütte zwischen Fellan und der Lagerhalle ablege.");
+	B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Czlowiek, to jest naprawde fucking ciezki. Powinienem zobaczyc, ze jak najszybciej wlozylem ja do chaty miedzy Fellan a magazynem.");
 
 	AI_SetWalkMode	(hero, NPC_WALK);
 
@@ -155,7 +155,7 @@ INSTANCE Info_Mod_Jana_Beutel2 (C_INFO)
 	information	= Info_Mod_Jana_Beutel2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Einkaufsbeutel befindet sich nun in deinem Haus.";
+	description	= "Torba na zakupy jest teraz w Twoim domu.";
 };
 
 FUNC INT Info_Mod_Jana_Beutel2_Condition()
@@ -168,8 +168,8 @@ FUNC INT Info_Mod_Jana_Beutel2_Condition()
 
 FUNC VOID Info_Mod_Jana_Beutel2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jana_Beutel2_15_00"); //Der Einkaufsbeutel befindet sich nun in deinem Haus.
-	AI_Output(self, hero, "Info_Mod_Jana_Beutel2_16_01"); //Ich danke dir, junger Mann. Nimm diese Münzen als Dank.
+	AI_Output(hero, self, "Info_Mod_Jana_Beutel2_15_00"); //Torba na zakupy jest teraz w Twoim domu.
+	AI_Output(self, hero, "Info_Mod_Jana_Beutel2_16_01"); //Dziekuje, mlodemu mezczyznie. Wez te monety jako podziekowania.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 

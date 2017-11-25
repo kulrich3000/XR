@@ -1,7 +1,7 @@
 instance Mod_971_RIT_Fajeth_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fajeth";
+	name 		= "Fajet";
 	guild 		= GIL_PAL;
 	id 			= 971;
 	voice 		= 12;

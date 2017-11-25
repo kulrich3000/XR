@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Sagitta_IR_Bones (C_INFO)
 	information	= Info_Mod_Sagitta_IR_Bones_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hmm, du weißt nicht zufällig, was mit Bones los ist?";
+	description	= "Hmm, nie wiesz, co sie dzieje z Kosciami, czy ty?";
 };
 
 FUNC INT Info_Mod_Sagitta_IR_Bones_Condition()
@@ -21,10 +21,10 @@ FUNC INT Info_Mod_Sagitta_IR_Bones_Condition()
 
 FUNC VOID Info_Mod_Sagitta_IR_Bones_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sagitta_IR_Bones_15_00"); //Hmm, du weißt nicht zufällig, was mit Bones los ist?
-	AI_Output(self, hero, "Info_Mod_Sagitta_IR_Bones_26_01"); //Ach, du meinst diesen unerwünschten Verehrer.
-	AI_Output(self, hero, "Info_Mod_Sagitta_IR_Bones_26_02"); //Nun, er schien mir etwas zu triebhaft ... nach etwas Rizinuswurzel in seinem Essen war er gleich umgänglicher.
-	AI_Output(hero, self, "Info_Mod_Sagitta_IR_Bones_15_03"); //(zu sich) Na toll, in dem Zustand ist er als Kämpfer nicht mehr zu gebrauchen.
+	AI_Output(hero, self, "Info_Mod_Sagitta_IR_Bones_15_00"); //Hmm, nie wiesz, co sie dzieje z Kosciami, czy ty?
+	AI_Output(self, hero, "Info_Mod_Sagitta_IR_Bones_26_01"); //Och, masz na mysli tego niechcianego wielbiciela.
+	AI_Output(self, hero, "Info_Mod_Sagitta_IR_Bones_26_02"); //Cóz, wydawal mi sie troche zbyt impulsywny.... po jakims oleju rycynowego w jego jedzeniu, byl bardziej towarzyski.
+	AI_Output(hero, self, "Info_Mod_Sagitta_IR_Bones_15_03"); //(do samego siebie) Dobrze, w tym stanie nie nadaje sie juz jako wojownik.
 };
 
 INSTANCE Info_Mod_Sagitta_IR_Trade (C_INFO)

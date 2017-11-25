@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Joru_Hi_Condition()
 
 FUNC VOID Info_Mod_Joru_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joru_Hi_07_00"); //Oh, du bist zurück? Hier hat sich einiges getan, seit du das letzte Mal da warst.
+	AI_Output(self, hero, "Info_Mod_Joru_Hi_07_00"); //Ach, wracasz? Od czasu panskiej ostatniej wizyty tutaj wiele sie zmienilo.
 };
 
 INSTANCE Info_Mod_Joru_Sumpfmensch (C_INFO)
@@ -38,12 +38,12 @@ FUNC INT Info_Mod_Joru_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Joru_Sumpfmensch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_00"); //Da bist du ja! Sieh dir nur diesen Schlamassel an!!!
-	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch_15_01"); //Was ist denn los?
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_02"); //Es wurde gestorben und der Templer hier war involviert! Vielmehr weiß ich auch noch nicht! Die Leute hier sprechen alle von dem "heulenden Sumpfmenschen".
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_03"); //Und dann schreien sie mir ins Ohr! Was soll das alles überhaupt? Und ich hab' heute noch nicht einmal einen Stängel geraucht. Als wegen des "Heulenden Sumpfmenschen".
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_04"); //VERDAMMT! Ich brauch jetzt unbedingt etwas Sumpfkraut, das hält ja der sturste Steintroll nicht aus!
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_05"); //Kümmer dich doch bitte um diese unschöne Sache, ja?
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_00"); //Jestes! Spójrz na ten balagan!
+	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_02"); //Es wurde gestorben und der Templer hier war involviert! Vielmehr weiß ich auch noch nicht! Die Leute hier sprechen alle von dem "bagna ludzie wycie".
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_03"); //Und dann schreien sie mir ins Ohr! Was soll das alles überhaupt? Und ich hab' heute noch nicht einmal einen Stängel geraucht. Als wegen des "Ludnosc zamieszkujaca bagna kregle".
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_04"); //VERDAMMT! Naprawde potrzebuje troche ziól bagiennych teraz, bo najbardziej uporczywe kontrolowanie skal nie wytrzyma!
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch_07_05"); //Troszczcie sie o te nieprzyjemna rzecz, czy mozecie?
 
 	AI_StopProcessInfos	(self);
 
@@ -70,13 +70,13 @@ FUNC INT Info_Mod_Joru_Sumpfmensch2_Condition()
 
 FUNC VOID Info_Mod_Joru_Sumpfmensch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch2_15_00"); //...und dann habe ich ihn hierher gebracht.
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_01"); //Das wird ja immer verworrener und verwirrender, da schlägt meine Migräne wieder zu... Aus Darrion werden wir wohl in naher Zukunft nichts raus kriegen.
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_02"); //Diesen Schlüssel hat er verloren. Vielleicht hilft er dir bei deiner Suche nach Informationen.
+	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch2_15_00"); //... a potem go tu przywiozlem.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_01"); //To jest coraz bardziej dezorientujacy i mylacy jak moja migrena uderza ponownie...... Nie sadze, ze w najblizszym czasie nic nie wydobywamy z Darrionu.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_02"); //Stracil ten klucz. Moze pomoze Ci on znalezc informacje.
 	
 	B_GiveInvItems(self, hero, ItKe_Darrion, 1);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_03"); //Am besten versuchst du ein paar seiner Freunde zu befragen, während ich mich um diesen fürchterlichen Migräneanfall kümmere.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch2_07_03"); //Lepiej spróbowac zapytac niektórych z jego przyjaciól, podczas gdy ja troszcze sie o ten straszny atak migreny.
 	
 	B_UseItem(self, ItMi_Joint);
 
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Joru_Sumpfmensch2_Info()
 
 	B_StartOtherRoutine	(self, "START");
 	
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion ist im Sumpf K.O. gegangen. Ich sollte mich ein wenig mich ein wenig umhören. Vielleicht hat Fortuno noch ein paar Informationen über Darrion.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion w bagnie K. O. po lewej stronie. Chcialbym zapytac troche. Byc moze Fortuno ma jeszcze jakies informacje o Darrionie.");
 };
 
 INSTANCE Info_Mod_Joru_Sumpfmensch3 (C_INFO)
@@ -115,36 +115,36 @@ FUNC VOID Info_Mod_Joru_Sumpfmensch3_Info()
 
 	TRIA_Next(Joru);
 	
-	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch3_15_00"); //... und wir sind mit dem Golem hierhergekommen um dir Bericht zu erstatten.
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_01"); //Soso, verzwickt, verzwackt, verzwuckt, die ganze Geschichte, aber durchaus spannend mit der einen oder anderen Wendung.
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_02"); //Aber Fakt ist, dass das hier ein Sumpfgolem ist. Ein Monster. Wir müssen es töten. Wobei... eine Frage habe ich noch. Warum heult das Ding überhaupt?
+	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch3_15_00"); //... i przyjechalismy tu z golemem, zeby sie do pana zglosic.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_01"); //Soso, trudne, trudne, trudne, trudne, trudne, cala historia, ale dosc ekscytujace z jednym lub drugim skretem.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_02"); //Ale faktem jest, ze jest to golem podmokly. Potwór. Musimy go zabic. Gdzie..... Mam jeszcze jedno pytanie. Dlaczego to nawet placze?
 	
 	TRIA_Next(Darrion);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_03"); //Naja... als ich mit ihm Freundschaft geschlossen habe, habe ich ihm einen Namen gegeben... den meines alten Captains.
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_04"); //Und Ich glaube, er hat versucht, diesen Namen auszusprechen... mehr als Heulen ist aber nie daraus geworden...
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_03"); //.... Kiedy zaprzyjaznilem sie z nim, dalem mu nazwisko.... mój stary kapitan.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_04"); //Mysle, ze staral sie wymówic to imie.... ale nigdy nie stala sie czyms wiecej niz tylko wycieleniem.....
 
 	TRIA_Next(Joru);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_05"); //WAS? Das Ding hat einen Namen? Wie heißt es?
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_05"); //WAS? To cos ma nazwe? Co tak sie nazywa?
 	
 	TRIA_Next(Darrion);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_06"); //Roger...
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_06"); //....
 
 	TRIA_Next(Joru);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_07"); //Soso... Fakt ist, das Ding hat einen Namen, es heißt Roger... das heißt, ich kann nicht mehr Monster zu ihm sagen... Roger zu töten wäre eine bodenlose Gemeinheit... da gibt es nur ein Problem...
-	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch3_15_08"); //Welches?
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_09"); //Ich glaube nicht, dass wir eine Novizenrobe in seiner Größe haben.
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_07"); //Soso... Fakt ist, das Ding hat einen Namen, es heißt .... das heißt, ich kann nicht mehr Monster zu ihm sagen... Roger zu töten wäre eine bodenlose Gemeinheit... da gibt es nur ein Problem...
+	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch3_15_08"); //Który z nich?
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_09"); //Nie sadze, bysmy mieli próbe jego wielkosci.
 	
 	TRIA_Next(Darrion);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_10"); //Du meinst, Roger kann bleiben und ihr werdet ihm nichts tun?
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_11_10"); //To znaczy, ze Roger moze zostac i nie zaszkodzisz mu?
 
 	TRIA_Next(Joru);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_11"); //Natürlich nicht! Er muss uns vor den Monstern beschützten. ER MUSS DIE MONSTER TÖTEN! DIE MOOOOOOOOONSTER TÖÖÖÖTEN!
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_11"); //Oczywiscie nie! Musi nas chronic przed potworami. MUSI ZABIC POTWORY! MOOOOOOOOOOOOOOONSTER DO ZABIJANIA!
 
 	TRIA_Finish();
 
@@ -159,7 +159,7 @@ INSTANCE Info_Mod_Joru_GotoTempel (C_INFO)
 	information	= Info_Mod_Joru_GotoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du wirst am Tempel erwartet.";
+	description	= "Jestescie oczekiwani w swiatyni.";
 };
 
 FUNC INT Info_Mod_Joru_GotoTempel_Condition()
@@ -173,7 +173,7 @@ FUNC INT Info_Mod_Joru_GotoTempel_Condition()
 
 FUNC VOID Info_Mod_Joru_GotoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joru_GotoTempel_15_00"); //Du wirst am Tempel erwartet.
+	AI_Output(hero, self, "Info_Mod_Joru_GotoTempel_15_00"); //Jestescie oczekiwani w swiatyni.
 
 	AI_StopProcessInfos	(hero);
 
@@ -188,7 +188,7 @@ INSTANCE Info_Mod_Joru_Woher (C_INFO)
 	information	= Info_Mod_Joru_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso haben sie dich in die Kolonie gesteckt?";
+	description	= "Dlaczego umiescili cie w kolonii?";
 };
 
 FUNC INT Info_Mod_Joru_Woher_Condition()
@@ -201,10 +201,10 @@ FUNC INT Info_Mod_Joru_Woher_Condition()
 
 FUNC VOID Info_Mod_Joru_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Joru_Woher_15_00"); //Wieso haben sie dich in die Kolonie gesteckt?
-	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_01"); //Weil ich damals, als ich die Prüfung des Feuers abgelegt habe, einen meiner Mitstreiter getötet habe.
-	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_02"); //In der Kolonie hab ich mich dann mit Tondral angefreundet und bin mit ihm zusammen dann in die Bruderschaft eingetreten.
-	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_03"); //Tondral wurde schon bald zum Baal, ich musste bis zum Tode Y'Berions warten.
+	AI_Output(hero, self, "Info_Mod_Joru_Woher_15_00"); //Dlaczego umiescili cie w kolonii?
+	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_01"); //Poniewaz kiedy zdalem próbe ognia, zabilem jednego z moich towarzyszy broni.
+	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_02"); //W kolonii zaprzyjaznilam sie z Tondralem, a nastepnie wraz z nim dolaczylam do braterstwa.
+	AI_Output(self, hero, "Info_Mod_Joru_Woher_07_03"); //Tondral wkrótce zostal Baalem, musialem czekac az do smierci Y' Beriona.
 };
 
 INSTANCE Info_Mod_Joru_Pickpocket (C_INFO)

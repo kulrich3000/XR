@@ -1,7 +1,7 @@
 prototype Mst_Default_Gobbo_Neu (C_NPC)			
 {
 	// ------ Monster -----
-	name							=	"Goblin Dämon";
+	name							=	"Goblin Demon";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	level							=	10;

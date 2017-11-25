@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Hermy_Hi (C_INFO)
 	information	= Info_Mod_Hermy_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hi. Ich bin neu hier.";
+	description	= "Hi. Jestem tu nowy.";
 };
 
 FUNC INT Info_Mod_Hermy_Hi_Condition()
@@ -16,16 +16,16 @@ FUNC INT Info_Mod_Hermy_Hi_Condition()
 
 FUNC VOID Info_Mod_Hermy_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_00"); //Hi. Ich bin neu hier.
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_01"); //Sei mir gegrüßt. Endlich bin ich hier nicht mehr der Neue. (lacht)
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_02"); //Mein Name ist Hermann, aber alle hier nennen mit Hermy.
-	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_03"); //Was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_04"); //Ich handle mit Verwandlungsspruchrollen. Ich kann dir ein paar einfache Rollen anbieten, aber die wertvollen Sprüche verkaufe ich nur an Mitglieder.
-	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_05"); //Ich komm darauf zurück.
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_06"); //Bei mir bist du immer wollkommen.
+	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_00"); //Hi. Jestem tu nowy.
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_01"); //Powitanie mnie. Na koniec, nie jestem tu nowym facetem. (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_02"); //Nazywam sie Hermann, ale wszyscy tutaj dzwonia z Hermym.
+	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_03"); //Co Pan tutaj robi?
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_04"); //Zajmuje sie rolami transformacji. Moge wam zaproponowac kilka prostych ról, ale sprzedaje cenne powiedzenia tylko czlonkom.
+	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_05"); //Wróce do tego.
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_06"); //Ze mna zawsze jestes mile widziany.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_VM, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Hermy verkauft Verwandlungsspruchrollen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Kólka samonastawne Hermy' ego do przestawiania sprzedazy.");
 };
 
 INSTANCE Info_Mod_Hermy_QuestHermy (C_INFO)
@@ -49,102 +49,102 @@ FUNC INT Info_Mod_Hermy_QuestHermy_Condition()
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_00"); //Du musst der Neue sein. Ich bin Hermann, aber nenn' mich doch bitte Hermy.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_01"); //Faice schickt dich, hab' ich Recht?
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_00"); //Musisz byc nowym facetem. Jestem Hermannem, ale prosze zadzwon do mnie Hermy' ego.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_01"); //Wiara wysyla ci, prawda?
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Du bist aber ein ganz Schlauer.", Info_Mod_Hermy_QuestHermy_B);
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "So ist es.", Info_Mod_Hermy_QuestHermy_A);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Jestes bardzo madry.", Info_Mod_Hermy_QuestHermy_B);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Tak wlasnie jest.", Info_Mod_Hermy_QuestHermy_A);
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_B_15_00"); //Du bist aber ein ganz Schlauer.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_B_05_01"); //Hey, ich merke es, wenn man mich verarschen will.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_B_15_00"); //Jestes bardzo madry.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_B_05_01"); //Hej, moge powiedziec, czy mnie oszukujesz.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Und was sagt dir dein Gefühl?", Info_Mod_Hermy_QuestHermy_D);
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Ich wollte dich ja nicht verarschen.", Info_Mod_Hermy_QuestHermy_C);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "A jak sie z tym czujesz?", Info_Mod_Hermy_QuestHermy_D);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Nie mialem zamiaru cie bac.", Info_Mod_Hermy_QuestHermy_C);
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_E()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_00"); //Also es ist so, dass es einer Studie zufolge unter der Alten Bibliothek, dort wo sich diese stinkenden Orks niedergelassen haben, einen Stollen geben soll.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_01"); //Dort sollen noch ein paar Spruchrollen "Verwandlung Harpie" zu finden sein.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_00"); //Tak wiec tak jest w przypadku, jak wynika z badan, powinien byc tunel pod Stara Biblioteka, gdzie osiedlili sie ci smierdzacy orkowie.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_01"); //Dort sollen noch ein paar Spruchrollen "Harpie Transformacja Harpie" zu finden sein.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Was habe ich mit dem Ganzen zu tun?", Info_Mod_Hermy_QuestHermy_G);
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Und ich soll sie holen, habe ich Recht?", Info_Mod_Hermy_QuestHermy_F);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Co mam z tym zrobic?", Info_Mod_Hermy_QuestHermy_G);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "No i mam to sobie radzic?", Info_Mod_Hermy_QuestHermy_F);
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_A_15_00"); //So ist es.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_A_15_00"); //Tak wlasnie jest.
 
 	Info_Mod_Hermy_QuestHermy_E();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_D()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_00"); //Und was sagt dir dein Gefühl?
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_D_05_01"); //Du wolltest mich nicht verarschen.
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_02"); //Richtig. Was gibt es denn jetzt so wichtiges?
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_00"); //A jak sie z tym czujesz?
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_D_05_01"); //Nie oszukiwales mnie.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_02"); //Prawo. Co jest teraz tak wazne?
 
 	Info_Mod_Hermy_QuestHermy_E();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_C()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_C_15_00"); //Ich wollte dich ja nicht verarschen.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_C_05_01"); //Das habe ich gemerkt.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_C_15_00"); //Nie mialem zamiaru cie bac.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_C_05_01"); //Zauwazylem to.
 
 	Info_Mod_Hermy_QuestHermy_E();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_H()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_00"); //Es wäre unheimlich nett, wenn du dich für uns dorthin begibst.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_01"); //Außerdem bringt es dich bei deiner Aufnahme voran.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_00"); //Byloby milo, gdybyscie udali sie tam dla nas.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_01"); //Poza tym, pomoze Ci to w rozwoju nagrywania.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Ich bin aber nicht interessiert.", Info_Mod_Hermy_QuestHermy_J);
-	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Okay, ich mach's.", Info_Mod_Hermy_QuestHermy_I);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Ale nie interesuje mnie.", Info_Mod_Hermy_QuestHermy_J);
+	Info_AddChoice	(Info_Mod_Hermy_QuestHermy, "Dobrze, zrobie to.", Info_Mod_Hermy_QuestHermy_I);
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_G()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_G_15_00"); //Was habe ich mit dem Ganzen zu tun?
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_G_15_00"); //Co mam z tym zrobic?
 
 	Info_Mod_Hermy_QuestHermy_H();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_F()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_F_15_00"); //Und ich soll sie holen, habe ich Recht?
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_F_05_01"); //Richtig. Wir sind zur Zeit leider sehr beschäftigt.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_F_15_00"); //No i mam to sobie radzic?
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_F_05_01"); //Prawo. Obecnie jestesmy bardzo zajeci.
 
 	Info_Mod_Hermy_QuestHermy_H();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_J()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_J_15_00"); //Ich bin aber nicht interessiert.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_J_05_01"); //Das ist sehr schade. Aber du kannst jederzeit wiederkommen, falls du dich anders entscheidest.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_J_15_00"); //Ale nie interesuje mnie.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_J_05_01"); //To szkoda. Ale zawsze mozesz wrócic, jesli zdecydujesz inaczej.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_I()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_I_15_00"); //Okay, ich mach's.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_01"); //Sehr gut. Begib dich zur Alten Bibliothek und sprich dort mit diesen stinkenden Kreaturen.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_02"); //Sie können dir hoffentlich mehr sagen als unsere alten Schriftrollen.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_I_15_00"); //Dobrze, zrobie to.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_01"); //Bardzo dobry. Idz do Starej Biblioteki i porozmawiaj z tymi smierdzacymi istotami.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_02"); //Mam nadzieje, ze beda mogli powiedziec wiecej niz nasze stare zwoje.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich habe den Auftrag, zur Felsenfestung zu gehen und dort die Orks nach einem möglichen Stollen zu befragen, da sich dort der Verwandlungszauber zur Harpie befinden soll.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Mam za zadanie pójsc do skalnej twierdzy i zapytac orki o ewentualny tunel, poniewaz tam ma byc zaklecie transformacji do harfy.");
 
 	Mod_Hermy_KnowsQuest = 1;
 
@@ -161,7 +161,7 @@ INSTANCE Info_Mod_Hermy_QuestHermyDoch (C_INFO)
 	information	= Info_Mod_Hermy_QuestHermyDoch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich werde doch zu den Orks gehen.";
+	description	= "Pójde do Orków.";
 };
 
 FUNC INT Info_Mod_Hermy_QuestHermyDoch_Condition()
@@ -175,10 +175,10 @@ FUNC INT Info_Mod_Hermy_QuestHermyDoch_Condition()
 
 FUNC VOID Info_Mod_Hermy_QuestHermyDoch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermyDoch_15_00"); //Ich werde doch zu den Orks gehen.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermyDoch_05_01"); //Prima. Dann geh zur Bergfestung und Rede dort mit den Orks.
+	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermyDoch_15_00"); //Pójde do Orków.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermyDoch_05_01"); //To obrzek. Nastepnie udaj sie do twierdzy górskiej i porozmawiaj z orkami.
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Ich habe den Auftrag, zur Felsenfestung zu gehen und dort die Orks nach einem möglichen Stollen zu befragen, da sich dort der Verwandlungszauber zur Harpie befinden soll.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "Mam za zadanie pójsc do skalnej twierdzy i zapytac orki o ewentualny tunel, poniewaz tam ma byc zaklecie transformacji do harfy.");
 
 	Mod_Hermy_KnowsQuest = 1;
 
@@ -207,39 +207,39 @@ FUNC INT Info_Mod_Hermy_Harpie_Condition()
 
 FUNC VOID Info_Mod_Hermy_Harpie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_00"); //Und? Wie sieht's aus? Hast du den Zauber?
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_15_01"); //Selbstverständlich.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_02"); //Kann ich ihn sehen? Ich werde ihn anschließend zu Faice bringen.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_00"); //A co? Jak wyglada? Czy masz zaklecie?
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_15_01"); //Oczywiscie oczywiscie.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_02"); //Czy moge go zobaczyc? Zabiore go do domu Faice.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Hier hast du ihn.", Info_Mod_Hermy_Harpie_B);
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Und den ganzen Ruhm einheimsen? Nein danke, ich gehe selbst.", Info_Mod_Hermy_Harpie_A);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Tutaj ja masz.", Info_Mod_Hermy_Harpie_B);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "I wziac cala chwale? Nie, dziekuje, pójde samemu.", Info_Mod_Hermy_Harpie_A);
 };
 
 FUNC VOID Info_Mod_Hermy_Harpie_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_B_15_00"); //Hier hast du ihn.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_B_15_00"); //Tutaj ja masz.
 
 	B_GiveInvItems	(hero, self, ItSc_TrfHarpie, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_B_05_01"); //Danke, du kannst gehen.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_B_05_01"); //Dzieki, ze mozesz sie udac.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Okay, wir sehen uns.", Info_Mod_Hermy_Harpie_D);
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Das war ein ganz schön hartes Abenteuer ...", Info_Mod_Hermy_Harpie_E);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Dobrze, widzisz dookola.", Info_Mod_Hermy_Harpie_D);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "To byla dosc trudna przygoda.....", Info_Mod_Hermy_Harpie_E);
 };
 
 FUNC VOID Info_Mod_Hermy_Harpie_E()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_00"); //Das war ein ganz schön hartes Abenteuer ...
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_01"); //Hier hast du 500 Goldmünzen. Mehr gibt es nicht.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_00"); //To byla dosc trudna przygoda.....
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_01"); //Oto 500 zlotych monet. To wszystko, co jest.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_02"); //Vielen Dank.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_03"); //Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_02"); //Dziekuje bardzo.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_03"); //Dbaj o siebie.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -252,19 +252,19 @@ FUNC VOID Info_Mod_Hermy_Harpie_E()
 
 FUNC VOID Info_Mod_Hermy_Harpie_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_A_15_00"); //Und den ganzen Ruhm einheimsen? Nein danke, ich gehe selbst.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_A_05_01"); //Es geht hier nicht um Ruhm. Jetzt sei vernünftig und gib mir die Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_A_15_00"); //I wziac cala chwale? Nie, dziekuje, pójde samemu.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_A_05_01"); //Nie chodzi tu o chwale. Teraz badzcie rozsadni i powiedzcie mi role czaru.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Hier hast du ihn.", Info_Mod_Hermy_Harpie_B);
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Ich denke gar nicht daran.", Info_Mod_Hermy_Harpie_C);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Tutaj ja masz.", Info_Mod_Hermy_Harpie_B);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Nie mysle nawet o tym.", Info_Mod_Hermy_Harpie_C);
 };
 
 FUNC VOID Info_Mod_Hermy_Harpie_D()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_D_15_00"); //Okay, wir sehen uns.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_D_05_01"); //Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_D_15_00"); //Dobrze, widzisz dookola.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_D_05_01"); //Dbaj o siebie.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -277,19 +277,19 @@ FUNC VOID Info_Mod_Hermy_Harpie_D()
 
 FUNC VOID Info_Mod_Hermy_Harpie_C()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_00"); //Ich denke gar nicht daran.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_01"); //Sei doch vernünftig. Willst du Gold?
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_02"); //Besser als nichts.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_03"); //Hier hast du 500 Goldmünzen. Mehr gibt es nicht.
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_00"); //Nie mysle nawet o tym.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_01"); //Badz rozsadny. Chcesz zlota?
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_02"); //Lepsze niz nic.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_03"); //Oto 500 zlotych monet. To wszystko, co jest.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_04"); //Bekomme ich jetzt den Zauber?
-	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_05"); //Hier hast du ihn.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_04"); //Czy teraz dostaje zaklecie?
+	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_05"); //Tutaj ja masz.
 
 	B_GiveInvItems	(hero, self, ItSc_TrfHarpie, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_06"); //Danke. Du kannst gehen.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_06"); //Dzieki. Mozesz przejsc teraz.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -308,7 +308,7 @@ INSTANCE Info_Mod_Hermy_Faice01 (C_INFO)
 	information	= Info_Mod_Hermy_Faice01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du in letzter Zeit irgendetwas Verdächtiges beobachtet?";
+	description	= "Czy ostatnio widziales cos podejrzanego?";
 };
 
 FUNC INT Info_Mod_Hermy_Faice01_Condition()
@@ -322,8 +322,8 @@ FUNC INT Info_Mod_Hermy_Faice01_Condition()
 
 FUNC VOID Info_Mod_Hermy_Faice01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Faice01_15_00"); //Hast du in letzter Zeit irgendetwas Verdächtiges beobachtet?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice01_05_01"); //Hm, jetzt, da du es sagst. Furt benimmt sich in letzter Zeit etwas komisch.
+	AI_Output(hero, self, "Info_Mod_Hermy_Faice01_15_00"); //Czy ostatnio widziales cos podejrzanego?
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice01_05_01"); //Hm, teraz to mówisz. Ostatnio Furt gral troche dziwacznie.
 };
 
 INSTANCE Info_Mod_Hermy_Faice02 (C_INFO)
@@ -334,7 +334,7 @@ INSTANCE Info_Mod_Hermy_Faice02 (C_INFO)
 	information	= Info_Mod_Hermy_Faice02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du etwas über die Vergiftung der Spruchrolle von Faice?";
+	description	= "Czy wiesz o zatruciu roli Fa?";
 };
 
 FUNC INT Info_Mod_Hermy_Faice02_Condition()
@@ -348,8 +348,8 @@ FUNC INT Info_Mod_Hermy_Faice02_Condition()
 
 FUNC VOID Info_Mod_Hermy_Faice02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Faice02_15_00"); //Weißt du etwas über die Vergiftung der Spruchrolle von Faice?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice02_05_01"); //Nicht mehr als du, schätze ich.
+	AI_Output(hero, self, "Info_Mod_Hermy_Faice02_15_00"); //Czy wiesz o zatruciu roli Fa?
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice02_05_01"); //Wydaje mi sie, ze nie wiecej niz ty.
 };
 
 INSTANCE Info_Mod_Hermy_Faice03 (C_INFO)
@@ -360,7 +360,7 @@ INSTANCE Info_Mod_Hermy_Faice03 (C_INFO)
 	information	= Info_Mod_Hermy_Faice03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir an irgendjemandem etwas aufgefallen?";
+	description	= "Czy zauwazyles cos o kims?";
 };
 
 FUNC INT Info_Mod_Hermy_Faice03_Condition()
@@ -374,8 +374,8 @@ FUNC INT Info_Mod_Hermy_Faice03_Condition()
 
 FUNC VOID Info_Mod_Hermy_Faice03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hermy_Faice03_15_00"); //Ist dir an irgendjemandem etwas aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice03_05_01"); //Sprich mal mit Furt. Er könnte vielleicht mehr wissen.
+	AI_Output(hero, self, "Info_Mod_Hermy_Faice03_15_00"); //Czy zauwazyles cos o kims?
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice03_05_01"); //Porozmawiaj z Furtem. Moze wiedziec wiecej.
 };
 
 INSTANCE Info_Mod_Hermy_Trade (C_INFO)

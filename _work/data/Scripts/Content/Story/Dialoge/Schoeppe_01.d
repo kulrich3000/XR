@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schoeppe_01_Hi (C_INFO)
 	information	= Info_Mod_Schoeppe_01_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Magst du deinen Beruf?";
+	description	= "Lubisz swój zawód?";
 };
 
 FUNC INT Info_Mod_Schoeppe_01_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Schoeppe_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Schoeppe_01_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Schoeppe_01_Hi_15_00"); //Magst du deinen Beruf?
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_01"); //Beruf? Nein, ich mache das ehrenamtlich, um dem größeren Wohl zu dienen.
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_02"); //Ich persönlich hasse ja diese stinkenden Menschen, die stinkenden Verbrechen und die stinkenden Ausreden.
-	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_03"); //Aber ich muss dafür sorgen, dass wir in Zukunft von solchem Pack verschont bleiben.
+	AI_Output(hero, self, "Info_Mod_Schoeppe_01_Hi_15_00"); //Lubisz swój zawód?
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_01"); //Zawód? Nie, robie to na zasadzie dobrowolnosci, aby sluzyc lepszemu dobru.
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_02"); //Osobiscie nienawidze tych smierdzacych ludzi, miazdzacych zbrodni i nieprzyjemnych wymówek.
+	AI_Output(self, hero, "Info_Mod_Schoeppe_01_Hi_31_03"); //Musze jednak upewnic sie, ze w przyszlosci oszczedzimy nam takiego balaganu.
 };
 
 INSTANCE Info_Mod_Schoeppe_01_Pickpocket (C_INFO)

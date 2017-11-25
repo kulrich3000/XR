@@ -2,7 +2,7 @@ const int Value_Rezept = 100;
 
 INSTANCE ItWr_Rezept_Fischragout		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -13,7 +13,7 @@ INSTANCE ItWr_Rezept_Fischragout		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Fischragout;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Fischragout";
+	description			= 	"Wzór: Ryby ragout";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -31,8 +31,8 @@ func void UseRezept_Fischragout ()
 					Doc_PrintLine	( nDocID,  0, "Fischragout"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "2x Fisch"					);
-					Doc_PrintLines	( nDocID,  0, "1x Waldbeere"					);
+					Doc_PrintLines	( nDocID,  0, "2 x ryba"					);
+					Doc_PrintLines	( nDocID,  0, "1x jagoda lesna"					);
 
 					Doc_Show		( nDocID );
 
@@ -41,13 +41,13 @@ func void UseRezept_Fischragout ()
 		Rezept_Fischragout = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Fischragout: 2x Fisch, 1x Waldbeere");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Ryby ragout: 2x ryby, 1x lesne jagody.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Fischsuppe		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -58,7 +58,7 @@ INSTANCE ItWr_Rezept_Fischsuppe		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Fischsuppe;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Fischsuppe";
+	description			= 	"Zalecenie: Zupa rybna";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -76,7 +76,7 @@ func void UseRezept_Fischsuppe ()
 					Doc_PrintLine	( nDocID,  0, "Fischsuppe"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Fisch"					);
+					Doc_PrintLines	( nDocID,  0, "1x Ryby"					);
 
 					Doc_Show		( nDocID );
 
@@ -85,13 +85,13 @@ func void UseRezept_Fischsuppe ()
 		Rezept_Fischsuppe = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Fischsuppe: 1x Fisch");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Zupa rybna: 1x ryby");
 	};
 };
 
 INSTANCE ItWr_Rezept_Fleischwanzenragout		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -102,7 +102,7 @@ INSTANCE ItWr_Rezept_Fleischwanzenragout		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Fleischwanzenragout;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Fleischwanzenragout";
+	description			= 	"Rysunek: Rgout z pluskwy miesnej";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -120,8 +120,8 @@ func void UseRezept_Fleischwanzenragout ()
 					Doc_PrintLine	( nDocID,  0, "Fleischwanzenragout"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "2x Dunkelpilz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Wanzenfleisch"					);
+					Doc_PrintLines	( nDocID,  0, "2x grzyb ciemny"					);
+					Doc_PrintLines	( nDocID,  0, "1x Mieso pluskwy"					);
 
 					Doc_Show		( nDocID );
 
@@ -130,13 +130,13 @@ func void UseRezept_Fleischwanzenragout ()
 		Rezept_Fleischwanzenragout = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Fleischwanzenragout: 2x Dunkelpilz, 1x Wanzenfleisch");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Grzybek miesny ragout: 2x grzyby ciemne, 1 x mieso pluskwy");
 	};
 };
 
 INSTANCE ItWr_Rezept_Pilzsuppe		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -147,7 +147,7 @@ INSTANCE ItWr_Rezept_Pilzsuppe		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Pilzsuppe;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Pilzsuppe";
+	description			= 	"Przepisy: Zupa grzybowa";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -165,8 +165,8 @@ func void UseRezept_Pilzsuppe ()
 					Doc_PrintLine	( nDocID,  0, "Pilzsuppe"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "2x Dunkelpilz"					);
-					Doc_PrintLines	( nDocID,  0, "1x Buddlerfleisch"					);
+					Doc_PrintLines	( nDocID,  0, "2x grzyb ciemny"					);
+					Doc_PrintLines	( nDocID,  0, "1x Mieso Buddlera"					);
 
 					Doc_Show		( nDocID );
 
@@ -175,13 +175,13 @@ func void UseRezept_Pilzsuppe ()
 		Rezept_Pilzsuppe = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Pilzsuppe: 2x Dunkelpilz, 1x Buddlerfleisch");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Zupa grzybowa: 2 x ciemny grzybek, 1 x mieso Buddlera.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Fleischeintopf		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -192,7 +192,7 @@ INSTANCE ItWr_Rezept_Fleischeintopf		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Fleischeintopf;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Fleischeintopf";
+	description			= 	"Recepcja: gulasz miesny";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -210,9 +210,9 @@ func void UseRezept_Fleischeintopf ()
 					Doc_PrintLine	( nDocID,  0, "Fleischeintopf"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "2x rohes Fleisch"					);
-					Doc_PrintLines	( nDocID,  0, "1x Feldrübe"					);
-					Doc_PrintLines	( nDocID,  0, "1x Waldbeere"					);
+					Doc_PrintLines	( nDocID,  0, "2x surowe mieso surowe"					);
+					Doc_PrintLines	( nDocID,  0, "1x rzepa"					);
+					Doc_PrintLines	( nDocID,  0, "1x jagoda lesna"					);
 
 					Doc_Show		( nDocID );
 
@@ -221,13 +221,13 @@ func void UseRezept_Fleischeintopf ()
 		Rezept_Fleischeintopf = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Fleischeintopf: 2x rohes Fleisch, 1x Feldrübe, 1x Waldbeere");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Gulasz miesny: 2x surowe mieso, 1x rzepa, 1x dzikie jagody.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Orkbier		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -238,7 +238,7 @@ INSTANCE ItWr_Rezept_Orkbier		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Orkbier;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Orkbier";
+	description			= 	"Recepta: Orcbeer";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -256,9 +256,9 @@ func void UseRezept_Orkbier ()
 					Doc_PrintLine	( nDocID,  0, "Orkbier"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Bier"					);
-					Doc_PrintLines	( nDocID,  0, "1x Wacholder"					);
-					Doc_PrintLines	( nDocID,  0, "1x Buddlerfleisch"					);
+					Doc_PrintLines	( nDocID,  0, "1x piwo"					);
+					Doc_PrintLines	( nDocID,  0, "1x jalowiec"					);
+					Doc_PrintLines	( nDocID,  0, "1x Mieso Buddlera"					);
 
 					Doc_Show		( nDocID );
 
@@ -267,13 +267,13 @@ func void UseRezept_Orkbier ()
 		Rezept_Orkbier = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Orkbier: 1x Bier, 1x Wacholder, 1x Buddlerfleisch");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Piwo orkowe: 1x piwo, 1x jalowiec, 1x mieso Buddlera.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Fangheuschreckensuppe		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -284,7 +284,7 @@ INSTANCE ItWr_Rezept_Fangheuschreckensuppe		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Fangheuschreckensuppe;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Fangheuschreckensuppe";
+	description			= 	"Zalecenie: zupa Fangheuschreck.";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -302,9 +302,9 @@ func void UseRezept_Fangheuschreckensuppe ()
 					Doc_PrintLine	( nDocID,  0, "Fangheuschreckensuppe"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Fangheuschreckenkopf"					);
-					Doc_PrintLines	( nDocID,  0, "2x Wasser"					);
-					Doc_PrintLines	( nDocID,  0, "1x Fisch"					);
+					Doc_PrintLines	( nDocID,  0, "1x glówka szaranczy plaszczowej"					);
+					Doc_PrintLines	( nDocID,  0, "woda"					);
+					Doc_PrintLines	( nDocID,  0, "1x Ryby"					);
 
 					Doc_Show		( nDocID );
 
@@ -313,13 +313,13 @@ func void UseRezept_Fangheuschreckensuppe ()
 		Rezept_Fangheuschreckensuppe = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Fangheuschreckensuppe: 1x Fisch, 1x Wasser, 1x Fangheuschreckenkopf");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Polów zupy konopiarki: 1x ryby, 1x woda, 1x glówka mantrony");
 	};
 };
 
 INSTANCE ItWr_Rezept_Rumtopf		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -330,7 +330,7 @@ INSTANCE ItWr_Rezept_Rumtopf		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Rumtopf;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Rumtopf";
+	description			= 	"Tresc: Rumtopff";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -349,8 +349,8 @@ func void UseRezept_Rumtopf ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "1x Rum"					);
-					Doc_PrintLines	( nDocID,  0, "1x Zucker"					);
-					Doc_PrintLines	( nDocID,  0, "3x Waldbeere"					);
+					Doc_PrintLines	( nDocID,  0, "1 x cukier"					);
+					Doc_PrintLines	( nDocID,  0, "3x jagoda lesna"					);
 
 					Doc_Show		( nDocID );
 
@@ -359,13 +359,13 @@ func void UseRezept_Rumtopf ()
 		Rezept_Rumtopf = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Rumtopf: 1x Rum, 1x Zucker, 3x Waldbeere");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Pokrój Rum: 1 x rum, 1 x cukier, 3 x lesne jagody.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Blutkult		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -376,7 +376,7 @@ INSTANCE ItWr_Rezept_Blutkult		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Blutkult;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Dämoneneintopf der Verdammnis";
+	description			= 	"Sposób uzycia: Demonuj duszek damski.";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -394,11 +394,11 @@ func void UseRezept_Blutkult ()
 					Doc_PrintLine	( nDocID,  0, "Dämoneneintopf der Verdammnis"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1x Dämonenherz"					);
-					Doc_PrintLines	( nDocID,  0, "2x Feuerzunge"					);
-					Doc_PrintLines	( nDocID,  0, "3x Fliegenpilz"					);
-					Doc_PrintLines	( nDocID,  0, "2x Zombiefleisch"					);
-					Doc_PrintLines	( nDocID,  0, "4x Blut"					);
+					Doc_PrintLines	( nDocID,  0, "1x Demontaz"					);
+					Doc_PrintLines	( nDocID,  0, "2x jezyk ognia"					);
+					Doc_PrintLines	( nDocID,  0, "3x Z agaryka lotna"					);
+					Doc_PrintLines	( nDocID,  0, "2x mieso zombie"					);
+					Doc_PrintLines	( nDocID,  0, "4x krew"					);
 
 					Doc_Show		( nDocID );
 
@@ -407,13 +407,13 @@ func void UseRezept_Blutkult ()
 		Rezept_Blutkult = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Dämoneneintopf der Verdammnis: 1x Dämonenherz, 2x Feuerzunge, 3x Fliegenpilz, 2x Zombiefleisch, 4x Blut");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Demoniczny dusz zaplodnienia: 1x serce demona, 2x jezyk ognia, 3x muszka muszkatolowa, 2x cialo zombie, 4x krew.");
 	};
 };
 
 INSTANCE ItWr_Rezept_Iwan		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -424,7 +424,7 @@ INSTANCE ItWr_Rezept_Iwan		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseRezept_Iwan;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Heilige Geschosse";
+	description			= 	"Zalecenie: Wielkie Bulle";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -439,10 +439,10 @@ func void UseRezept_Iwan ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Heilige Geschosse"					);
+					Doc_PrintLine	( nDocID,  0, "Kulki swiete"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Man löse 2 silberne Ringe in einem Fläschchen Salpetersäure auf, und mische eine Flasche Weihwasser hinzu. Klingen und Pfeile, die man mit dieser Tinktur benetzt, können untote und dämonische Geschöpfe schwer versehren."					);
+					Doc_PrintLines	( nDocID,  0, "Rozpuscic 2 srebrne pierscienie w butelce kwasu azotowego i dodac butelke swietej wody. Ostrza i strzalki zwilzone ta nalewka moga spowodowac powazne szkody dla nieumarlych i demonicznych stworzen."					);
 
 					Doc_Show		( nDocID );
 
@@ -451,13 +451,13 @@ func void UseRezept_Iwan ()
 			Rezept_Iwan = TRUE;
 
 			Log_CreateTopic	(TOPIC_MOD_PFEILE, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_PFEILE, "Ich kann meine Pfeile an einem Alchemietisch mit Weihwasser segnen. Sie verursachen dann mehr Schaden gegen Kreaturen des Bösen. Für die Tinktur benötige ich zwei silberne Ringe und normales Weihwasser.");
+			B_LogEntry	(TOPIC_MOD_PFEILE, "Moge blogoslawic swoje strzaly przy stole alchemii swieta woda. Pózniej zadaja wiecej szkód stworzeniom zla. Do nalewki potrzebuje dwóch srebrnych pierscieni i zwyklej swietej wody.");
 		};
 };
 
 INSTANCE ItWr_DrachensudManaverbrennung		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -468,7 +468,7 @@ INSTANCE ItWr_DrachensudManaverbrennung		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseDrachensudManaverbrennung;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Drachensud der Manaverbrennung";
+	description			= 	"Pokrój: Smocza zupa do spalania maniku";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -486,12 +486,12 @@ func void UseDrachensudManaverbrennung ()
 					Doc_PrintLine	( nDocID,  0, "Drachensud der Manaverbrennung"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "4x Drachenei");
-					Doc_PrintLines	( nDocID,  0, "1x Drachenwurzel");
-					Doc_PrintLines	( nDocID,  0, "2x Drachenblut");
-					Doc_PrintLines	( nDocID,  0, "1x zerriebene Drachenschuppe");
+					Doc_PrintLines	( nDocID,  0, "4x Jajka smocza");
+					Doc_PrintLines	( nDocID,  0, "1x Korzen smoczy");
+					Doc_PrintLines	( nDocID,  0, "2x krew smocza");
+					Doc_PrintLines	( nDocID,  0, "1x starta waga smocza");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Köcheln, bis sich ein zäher Sud daraus gebildet hat.");
+					Doc_PrintLines	( nDocID,  0, "Gotowac az do uformowania sie z niego grubego bulionu.");
 
 					Doc_Show		( nDocID );
 
@@ -500,13 +500,13 @@ func void UseDrachensudManaverbrennung ()
 		DrachensudManaverbrennung = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_KOCHREZEPTE, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Drachensud der Manaverbrennung: 4x Drachenei, 1x Drachenwurzel, 2x Drachenblut, 1x zerriebene Drachenschuppe");
+		B_LogEntry	(TOPIC_MOD_KOCHREZEPTE, "Zupa smokowa z managiem spalonym: 4x jajko smoka, 1x korzen smoka, 2x krew smoka, 1x rozgniatana waga smocza.");
 	};
 };
 
 INSTANCE ItWr_Weisenchronik		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -517,7 +517,7 @@ INSTANCE ItWr_Weisenchronik		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseWeisenchronik;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Weisenchronik";
+	description			= 	"Postac: Wise Chronicle";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -535,9 +535,9 @@ func void UseWeisenchronik ()
 					Doc_PrintLine	( nDocID,  0, "Weisenchronik"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Das Kraut eines schwarzen Weisen und eines Traumrufes in starken Alkohol mischen, das ganze 5min in geschlossener Flasche erhitzen.");
+					Doc_PrintLines	( nDocID,  0, "Wymieszac ziolo czarnego medrca i wymarzone wezwanie do silnego alkoholu, ogrzac cale 5min w zamknietej butelce.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Am besten vor dem Schlafengehen zu genießen.");
+					Doc_PrintLines	( nDocID,  0, "Najlepiej sie bawic przed snem.");
 
 					Doc_Show		( nDocID );
 
@@ -546,7 +546,7 @@ func void UseWeisenchronik ()
 
 INSTANCE ItWr_Rezept_FolgsamkeitSnapper		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -557,7 +557,7 @@ INSTANCE ItWr_Rezept_FolgsamkeitSnapper		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseFolgsamkeitSnapper;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Folgsamkeit des Snappers";
+	description			= 	"Postac: posluszenstwo na snachowców";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -572,14 +572,14 @@ func void UseFolgsamkeitSnapper ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Folgsamkeit des Snappers"					);
+					Doc_PrintLine	( nDocID,  0, "Szacunek dla snapera"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "1 Menschenblut");
-					Doc_PrintLines	( nDocID,  0, "1 Hexenblut");
-					Doc_PrintLines	( nDocID,  0, "1 Drachensnapperhorn");
+					Doc_PrintLines	( nDocID,  0, "krew ludzka");
+					Doc_PrintLines	( nDocID,  0, "1 krew szamana");
+					Doc_PrintLines	( nDocID,  0, "1 Smoczy klakson smokowy");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Das Horn zerreiben und alle Ingredienzien am Labortisch zu einem Trank vereinen. Er besitzt nicht nur die Eigenschaft Snapper zu Kampfgenossen zu machen ... (zerrissen)");
+					Doc_PrintLines	( nDocID,  0, "Zetrzyj tube i polacz wszystkie skladniki w jeden napój przy stole laboratoryjnym. Nie tylko ma on mozliwosc zamieniac sie w slimaka na towarzyszy broni.... (pekniety)");
 
 					Doc_Show		( nDocID );
 
@@ -588,7 +588,7 @@ func void UseFolgsamkeitSnapper ()
 
 INSTANCE ItWr_Rezept_Purpurmond		(C_Item)
 {
-	name 				=	"Rezept";
+	name 				=	"recepta";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -599,7 +599,7 @@ INSTANCE ItWr_Rezept_Purpurmond		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UsePurpurmond;
 	scemeName			=	"MAPSEALED";
-	description			= 	"Rezept: Purpurmond";
+	description			= 	"Recepta: Fioletowy ksiezyc";
 	
 	TEXT[5]				= 	NAME_Value;			
 	COUNT[5]			= 	value;
@@ -614,12 +614,12 @@ func void UsePurpurmond ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Purpurmond"					);
+					Doc_PrintLine	( nDocID,  0, "fioletowy ksiezyc"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Einen Fliegenpilz und das Kraut zweier Stängel 10min in Milch aufkochen.");
+					Doc_PrintLines	( nDocID,  0, "Doprowadz agaryke muchowa i ziolo dwóch lodyg do wrzenia w mleku przez 10 minut.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Am besten vor dem Schlafengehen zu genießen.");
+					Doc_PrintLines	( nDocID,  0, "Najlepiej sie bawic przed snem.");
 
 					Doc_Show		( nDocID );
 

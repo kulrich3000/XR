@@ -1,7 +1,7 @@
 instance Mod_7398_OUT_Dichter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dichter";
+	name 		= "autor";
 	guild 		= GIL_OUT;
 	id 			= 7398;
 	voice 		= 34;

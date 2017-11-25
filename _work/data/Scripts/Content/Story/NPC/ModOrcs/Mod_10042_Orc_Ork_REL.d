@@ -1,7 +1,7 @@
 INSTANCE Mod_10042_Orc_Ork_REL (Npc_Default)			
 {
 	//----- Monster -----
-	name							=	"Ork";
+	name							=	"ork";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10042;
 	voice							=	18;

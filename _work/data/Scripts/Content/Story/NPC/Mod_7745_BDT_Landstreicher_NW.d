@@ -1,7 +1,7 @@
 instance Mod_7745_BDT_Landstreicher_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Landstreicher"; 
+	name 		= "wlóczega"; 
 	guild 		= GIL_OUT;
 	id 			= 7745;
 	voice 		= 7;

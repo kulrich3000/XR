@@ -1,7 +1,7 @@
 instance Mod_571_NONE_Cornelius_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cornelius";
+	name 		= "Korneliusz";
 	guild 		= GIL_NONE;		//Hoshi:Ich muss ihn umhauen können, ohne das mir die PALs auf den Sack gehen.
 	id 			= 571;
 	voice 		= 13;

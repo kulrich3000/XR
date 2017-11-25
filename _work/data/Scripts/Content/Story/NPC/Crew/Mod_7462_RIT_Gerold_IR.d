@@ -1,7 +1,7 @@
 instance Mod_7462_RIT_Gerold_IR  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gerold";
+	name 		= "geodka";
 	guild 		= GIL_OUT;
 	id 			= 7462;
 	voice 		= 12;

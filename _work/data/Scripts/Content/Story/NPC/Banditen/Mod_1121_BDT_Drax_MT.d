@@ -2,7 +2,7 @@ instance Mod_1121_BDT_Drax_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Drax";
+	name =							"draks";
 	Npctype =				Npctype_Main;
 	guild =							GIL_OUT;      
 	level =							3;

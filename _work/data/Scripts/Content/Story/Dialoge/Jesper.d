@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Jesper_Dieb (C_INFO)
 	information	= Info_Mod_Jesper_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Diebeszeichen zeigen)";
+	description	= "(Pokaz znak zlodziejstwa)";
 };
 
 FUNC INT Info_Mod_Jesper_Dieb_Condition()
@@ -20,14 +20,14 @@ FUNC INT Info_Mod_Jesper_Dieb_Condition()
 FUNC VOID Info_Mod_Jesper_Dieb_Info()
 {
 	AI_PlayAni (hero, "T_YES");
-	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_00"); //Wie ich sehe, bist du einer von uns.
-	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_01"); //Als Willkommensgruß kriegst du einen Tipp von mir: Lern dich richtig zu bewegen!
-	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_02"); //Du stakst wie ein Storch durch die Gegend. Ich kann dich hören, egal in welchem Raum du dich hier befindest.
-	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_03"); //Wenn du jemanden brauchst, der dir geschmeidige Bewegungen beibringt, melde dich bei mir.
-	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_04"); //Damit hättest du sicher bessere Chancen, dich lautlos anzuschleichen.
+	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_00"); //Widze, ze jestes jednym z nas.
+	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_01"); //Jako powitanie powitalne otrzymasz od mnie wskazówke: Naucz sie poruszac!
+	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_02"); //Straszyles sie jak bocian. Slysze Cie bez wzgledu na to, w jakim pomieszczeniu jestes.
+	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_03"); //Jesli potrzebujesz kogos, kto nauczylby Cie plynnych ruchów, skontaktuj sie ze mna.
+	AI_Output(self, hero, "Info_Mod_Jesper_Dieb_36_04"); //Móglbys miec wieksza szanse na ciche wkradanie sie.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Jesper kann mir beibringen zu schleichen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Jesper moze mnie nauczyc wymykac sie.");
 };
 
 INSTANCE Info_Mod_Jesper_WieLangDabei (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Jesper_WieLangDabei (C_INFO)
 	information	= Info_Mod_Jesper_WieLangDabei_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie lange bist du schon dabei?";
+	description	= "Jak dlugo jestes obecny/a?";
 };
 
 FUNC INT Info_Mod_Jesper_WieLangDabei_Condition()
@@ -51,10 +51,10 @@ FUNC INT Info_Mod_Jesper_WieLangDabei_Condition()
 
 FUNC VOID Info_Mod_Jesper_WieLangDabei_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_WieLangDabei_15_00"); //Wie lange bist du schon dabei?
-	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_01"); //Ich hab nie was anderes gemacht. Meine Kinder- und Jugendstreiche waren noch planlos, ich habe mir immer gerade das genommen, was ich zum Überleben brauchte.
-	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_02"); //Mit Cassia hat sich das geändert. Ohne sie wäre ich ein kleiner Gauner geblieben, aber heute leben wir weit über das Notwendigste hinaus.
-	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_03"); //Gerade bei großen Unternehmungen ist es unabdinglich, im Team zu arbeiten. Deshalb hoffe ich, dass du dich gut einzubringen weißt.
+	AI_Output(hero, self, "Info_Mod_Jesper_WieLangDabei_15_00"); //Jak dlugo jestes obecny/a?
+	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_01"); //Nigdy nie zrobilem nic wiecej. Moje dziecinstwo i mlodziencze zabawy byly wciaz nieplanowane, zawsze bralem to, co trzeba bylo przezyc.
+	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_02"); //Z Cassia to sie zmienilo. Bez nich pozostalbym malym oszustem, ale dzis zyjemy daleko poza tym, co jest konieczne.
+	AI_Output(self, hero, "Info_Mod_Jesper_WieLangDabei_36_03"); //Szczególnie w duzych firmach bardzo wazna jest praca zespolowa. Mam wiec nadzieje, ze wie pan, jak sie zaangazowac.
 };
 
 INSTANCE Info_Mod_Jesper_Tipps (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Jesper_Tipps (C_INFO)
 	information	= Info_Mod_Jesper_Tipps_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du noch mehr Tipps für mich?";
+	description	= "Otrzymales wiecej wskazówek dla mnie?";
 };
 
 FUNC INT Info_Mod_Jesper_Tipps_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Mod_Jesper_Tipps_Condition()
 
 FUNC VOID Info_Mod_Jesper_Tipps_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_Tipps_15_00"); //Hast du noch mehr Tipps für mich?
-	AI_Output(self, hero, "Info_Mod_Jesper_Tipps_36_01"); //Das Schleichen ist meine Spezialität. Wenn dich verschlossene Truhen interessieren, sprich mit Ramirez.
-	AI_Output(self, hero, "Info_Mod_Jesper_Tipps_36_02"); //Cassia hat dir sicher schon gesagt, dass sie es wie keine zweite versteht, den ahnungslosen Bürgern den Geldbeutel abzuschneiden.
+	AI_Output(hero, self, "Info_Mod_Jesper_Tipps_15_00"); //Otrzymales wiecej wskazówek dla mnie?
+	AI_Output(self, hero, "Info_Mod_Jesper_Tipps_36_01"); //Okradanie sie to moja specjalnosc. Jesli jestes zainteresowany zablokowanymi pniami, porozmawiaj z Ramirez.
+	AI_Output(self, hero, "Info_Mod_Jesper_Tipps_36_02"); //Jestem pewien, ze Cassia juz powiedziala panstwu, ze wie lepiej niz ktokolwiek inny, jak odciac pieniadze od niczego nie podejrzewajacych obywateli.
 };
 
 INSTANCE Info_Mod_Jesper_Coup (C_INFO)
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Jesper_Coup (C_INFO)
 	information	= Info_Mod_Jesper_Coup_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was war dein größter Coup?";
+	description	= "Jaki byl Twój najwiekszy wynik?";
 };
 
 FUNC INT Info_Mod_Jesper_Coup_Condition()
@@ -104,13 +104,13 @@ FUNC INT Info_Mod_Jesper_Coup_Condition()
 
 FUNC VOID Info_Mod_Jesper_Coup_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_Coup_15_00"); //Was war dein größter Coup?
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_01"); //Da muss ich nicht lange überlegen, obwohl es schon ein paar Jahre her ist!
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_02"); //Ramirez war bei einem Einbruch aufgeflogen und im Kerker gelandet. Cassia und ich mussten schnell sein, bevor die Miliz irgendetwas über uns herausfinden konnte.
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_03"); //Der Weg an dem Wachtposten vor den Zellen vorbei war für uns unmöglich - das hätten wir nicht ungesehen schaffen können.
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_04"); //Also haben wir uns die ganze Nacht Zeit genommen und die Mauer von der anderen Seite Stein für Stein abgetragen. Wir mussten dabei verdammt leise und vorsichtig sein - aber wir haben es geschafft.
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_05"); //Am Ende konnte sich Ramirez verdrücken, als die Wache gerade Pinkelpause machte. So einen Ausbruch hatte man in der Stadt noch nicht gesehen, und er war wochenlang im Gespräch.
-	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_06"); //Natürlich war es in der Zeit danach noch schwieriger für uns, weil alle Patrouillen und Kontrollen verstärkt wurden. Seitdem passen wir noch besser auf, dass wir nicht erwischt werden.
+	AI_Output(hero, self, "Info_Mod_Jesper_Coup_15_00"); //Jaki byl Twój najwiekszy wynik?
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_01"); //Nie musze o tym dlugo myslec, chociaz minelo kilka lat!
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_02"); //Ramirez zostal wysadzony w powietrze i wyladowal w lochu. Cassia i ja i Cassia musielismy byc szybcy, zanim milicja mogla sie o nas przekonac.
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_03"); //Sposób, w jaki minelismy posterunek strazy przed celami byl dla nas niemozliwy - nie udalo nam sie to bez jego obejrzenia.
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_04"); //Wzielismy wiec cala noc i usunelismy mur z drugiego kamienia po kamieniu. Musielismy byc spokojni i ostrozni - ale to zrobilismy.
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_05"); //W koncu Ramirezowi udalo sie uciec, gdy straznik zrobil przerwe na pszczólke. Takiego wybuchu nigdy wczesniej nie zaobserwowano w miescie, a on rozmawial przez wiele tygodni.
+	AI_Output(self, hero, "Info_Mod_Jesper_Coup_36_06"); //Oczywiscie pózniej bylo nam to jeszcze trudniejsze, poniewaz wzmocniono wszystkie patrole i kontrole. Od tamtej pory uwazalismy, zeby nie zlapac sie.
 };
 
 INSTANCE Info_Mod_Jesper_AndreVermaechtnis (C_INFO)
@@ -135,7 +135,7 @@ FUNC VOID Info_Mod_Jesper_AndreVermaechtnis_Info()
 {
 	AI_TurnToNpc	(self, Mod_598_MIL_Mika_NW);
 
-	AI_Output(self, hero, "Info_Mod_Jesper_AndreVermaechtnis_36_00"); //Na schön, dann eben nur 40 Goldmünzen. Nimm das Scheißding ... Halsabschneider. Aber ... wer zum Teufel ...
+	AI_Output(self, hero, "Info_Mod_Jesper_AndreVermaechtnis_36_00"); //Wszystkie prawa, wiec tylko 40 zlotych monet. Wezcie to, co placze..... Cutroat. Ale.... Kto pieklo....?
 
 	AI_TurnToNpc	(self, hero);
 
@@ -150,12 +150,12 @@ INSTANCE Info_Mod_Jesper_Lernen (C_INFO)
 	information	= Info_Mod_Jesper_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schleichen lernen (5 LP)";
+	description	= "Nauka sneakingu (5 MP)";
 };
 
 FUNC INT Info_Mod_Jesper_Lernen_Condition()
 {
-	Info_Mod_Jesper_Lernen.description = B_BuildLearnString("Schleichen lernen", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
+	Info_Mod_Jesper_Lernen.description = B_BuildLearnString("Nauczyc sie wymykac", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Jesper_Dieb))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
@@ -166,7 +166,7 @@ FUNC INT Info_Mod_Jesper_Lernen_Condition()
 
 FUNC VOID Info_Mod_Jesper_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Jesper_Lernen_15_00"); //Bring mir bei, wie man schleicht.
+	AI_Output(hero, self, "Info_Mod_Jesper_Lernen_15_00"); //Naucz mnie, jak ukrasc sie.
 
 	B_TeachThiefTalent (self, hero, NPC_TALENT_SNEAK);
 };

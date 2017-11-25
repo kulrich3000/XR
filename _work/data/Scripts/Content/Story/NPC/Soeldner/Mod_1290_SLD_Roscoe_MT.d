@@ -2,7 +2,7 @@ instance Mod_1290_SLD_Roscoe_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Roscoe";
+	name =					"rozeta";
 	Npctype =				Npctype_Main;
 	guild =					GIL_mil;   	
 	voice =					10;

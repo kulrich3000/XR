@@ -5,55 +5,55 @@
 // ***************************
 
 //-------- Addon Missionen ---------
-const string TOPIC_Addon_RatHunt		= 	"Rattenjagd";
-const string TOPIC_Addon_BringMeat		=	"Fleisch für Morgan";
-const string TOPIC_Addon_BanditsTower 	=	"Der Turm";
-const string TOPIC_Addon_HolOwen		= 	"Holz für die Palisade";
-const string TOPIC_Addon_Kompass		=	"Garetts Kompass";
-const string TOPIC_Addon_RoastGrog		=	"Grog für den Koch";
-const string TOPIC_Addon_BrandonBooze	=	"Ein Drink für Brandon";
-const string TOPIC_Addon_MorganBeach	=	"Der Strand im Norden";
-const string TOPIC_Addon_AngusHank		=	"Angus und Hank";
-const string TOPIC_Addon_SkipsGrog		=	"Skip ist auf dem Trockenen";
-const string TOPIC_Addon_KillJuan		= 	"Der Mörder von Angus und Hank";
-const string TOPIC_Addon_ClearCanyon	=	"Razorjagd";
-const string TOPIC_Addon_ScoutBandits	=	"Spioniere bei den Banditen.";
+const string TOPIC_Addon_RatHunt		= 	"szczur";
+const string TOPIC_Addon_BringMeat		=	"Mieso Morganu";
+const string TOPIC_Addon_BanditsTower 	=	"Wieza";
+const string TOPIC_Addon_HolOwen		= 	"Drewno do palisady";
+const string TOPIC_Addon_Kompass		=	"Kompas Garett' a";
+const string TOPIC_Addon_RoastGrog		=	"Srutownica do gotowania";
+const string TOPIC_Addon_BrandonBooze	=	"Napój dla marki Brandon";
+const string TOPIC_Addon_MorganBeach	=	"Plaza na pólnocy kraju";
+const string TOPIC_Addon_AngusHank		=	"Angus i Hankus";
+const string TOPIC_Addon_SkipsGrog		=	"Pomijac na sucho";
+const string TOPIC_Addon_KillJuan		= 	"Morderca Angusa i Hank";
+const string TOPIC_Addon_ClearCanyon	=	"zyletka";
+const string TOPIC_Addon_ScoutBandits	=	"Spytaj sie z bandytami.";
 const string TOPIC_Addon_MalcomsStunt	=	"Malcom";
 
 
 //-------- Addon Händler -----------
 
-const string Topic_Addon_PIR_Trader  = "Händler bei den Piraten";	
+const string Topic_Addon_PIR_Trader  = "Dealerzy z piratami";	
 
 //-------- Addon Lehrer ------------
-const string Topic_Addon_PIR_Teacher = "Lehrer bei den Piraten";
+const string Topic_Addon_PIR_Teacher = "Nauczyciele piratów";
 
 
 
 //Inhalte:
 
-const string Log_Text_Addon_ScoutBandits	=	"Die Banditen haben eine Goldmine. Das ist also der Grund, warum sie hier sind.";
+const string Log_Text_Addon_ScoutBandits	=	"Bandyci maja kopalnie zlota. Dlatego tez sa tutaj.";
 
 //Teacher
 
-const string Log_Text_Addon_HenryTeach		=	"Henry kann mir zeigen, wie man mit Zweihandwaffen und der Armbrust kämpft.";
-const string Log_Text_Addon_MorganTeach		=	"Morgan kann mir zeigen, wie man mit Einhandwaffen kämpft.";
-const string Log_Text_Addon_BrandonTeach	=	"Brandon kann mir zeigen, wie ich stärker und geschickter werde.";
+const string Log_Text_Addon_HenryTeach		=	"Henryk moze pokazac mi, jak walczyc z bronia dwureczna i kusza.";
+const string Log_Text_Addon_MorganTeach		=	"Morgan pokazuje mi, jak walczyc z bronia jednoreczna.";
+const string Log_Text_Addon_BrandonTeach	=	"Brandon moze mi pokazac, jak stac sie silniejszym i bardziej umiejetnym.";
 
 //Trader
 
-const string Log_Text_Addon_GarettTrade	=	"Garret ist der Händler bei den Piraten. Bei ihm bekomme ich alles, außer Schnaps.";
+const string Log_Text_Addon_GarettTrade	=	"Garret handlarz dla piratów. Z nim dostaje wszystko oprócz gorzalki.";
 
-const string Log_Text_Addon_SamuelTrade	=	"Samuel ist der Schnapsbrenner. Bei ihm bekomme ich jegliche Art von Alkohol.";
+const string Log_Text_Addon_SamuelTrade	=	"Gorzelnikiem jest Samuel. Dostalem, ze dostaje wszelkiego rodzaju gorzalke.";
 
 //	Sprüche
 
-const string Log_Text_Addon_TalentRune_Whirlwind	="Zutaten für die Rune 'Wirbelwind´: 1 Flügel";
-const string Log_Text_Addon_TalentRune_Icelance		="Zutaten für die Rune 'Eislanze': 1 Gletscherquartz";
-const string Log_Text_Addon_TalentRune_Geyser		="Zutaten für die Rune 'Geysir': 1 Aquamarin";
-const string Log_Text_Addon_TalentRune_Zerfleischen		="Zutaten für die Rune 'Zerfleischen': 1 Pech";
-const string Log_Text_Addon_TalentRune_Waterfist	="Zutaten für die Rune 'Wasserfaust': 1 Aquamarin und 1 Bergkristall";
-const string Log_Text_Addon_TalentRune_Thunderstorm	="Zutaten für die Rune 'Unwetter': 1 Gletscherquartz und 1 Flügel";
+const string Log_Text_Addon_TalentRune_Whirlwind	="Skladniki na wiatr Rune' a: 1 skrzydlo?";
+const string Log_Text_Addon_TalentRune_Icelance		="Skladniki dla runa 'Eislanze': 1 Gletscherquartz";
+const string Log_Text_Addon_TalentRune_Geyser		="Skladniki runa 'Geysir': 1 Akwamarynka";
+const string Log_Text_Addon_TalentRune_Zerfleischen		="Skladniki dla runa 'Zerfleischen': 1 pecha";
+const string Log_Text_Addon_TalentRune_Waterfist	="Skladniki runa 'Wasserfaust': 1 akwamarynka i 1 krysztal skalny";
+const string Log_Text_Addon_TalentRune_Thunderstorm	="Skladniki runa 'sztorm': 1 kwarc lodowca i 1 skrzydlo";
 
 //##########################################
 //		Gothic 2
@@ -64,10 +64,10 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Zutaten für die Rune 'Unwe
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Bennet sitzt im Knast";
-const string Topic_Ship				=	"Ich brauche ein Schiff";
-const string Topic_Crew				=	"Ohne Mannschaft keine Reise"; 
-const string Topic_Captain			=	"Wer wird mein Kapitän?"; 	
+const string TOPIC_RescueBennet		=	"Bennet w wiezieniu.";
+const string Topic_Ship				=	"Potrzebuje statku";
+const string Topic_Crew				=	"Brak rejsu bez zalogi"; 
+const string Topic_Captain			=	"Kim bedzie mój kapitan?"; 	
 
 // ------ Kapitel 4 ------
 // ------ Kapitel 5 ------

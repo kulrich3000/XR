@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Drax_Hi (C_INFO)
 	information	= Info_Mod_Drax_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir etwas über die Jagd beibringen?";
+	description	= "Czy mozesz mnie nauczyc o polowaniach?";
 };
 
 FUNC INT Info_Mod_Drax_Hi_Condition()
@@ -16,27 +16,27 @@ FUNC INT Info_Mod_Drax_Hi_Condition()
 
 FUNC VOID Info_Mod_Drax_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drax_Hi_15_00"); //Kannst du mir etwas über die Jagd beibringen?
+	AI_Output(hero, self, "Info_Mod_Drax_Hi_15_00"); //Czy mozesz mnie nauczyc o polowaniach?
 
 	if (Banditen_Dabei == FALSE)
 	{
-		AI_Output(self, hero, "Info_Mod_Drax_Hi_30_01"); //Könnte ich, aber du gehörst nicht zu uns.
+		AI_Output(self, hero, "Info_Mod_Drax_Hi_30_01"); //Moglem, ale Ty nie jestes jednym z nas.
 	}
 	else
 	{
 		if (Mod_Schwierigkeit != 4)
 		{
-			AI_Output(self, hero, "Info_Mod_Drax_Hi_30_02"); //Hmm, da du einer von uns bist, werde ich dir etwas über die Jagd und das Bogenschießen beibringen.
+			AI_Output(self, hero, "Info_Mod_Drax_Hi_30_02"); //Hmm, poniewaz jestes jednym z nas, ucze Cie o polowaniach i lucznictwie.
 
 			Log_CreateTopic	(TOPIC_MOD_LEHRER_BANDITEN, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Von Drax kann ich diverse Jagdtalente sowie das Bogenschießen lernen.");
+			B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Od Draxu moge nauczyc sie róznych talentów lowieckich i lucznictwa.");
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Drax_Hi_30_03"); //Hmm, da du einer von uns bist, werde ich dir etwas über die Jagd beibringen.
+			AI_Output(self, hero, "Info_Mod_Drax_Hi_30_03"); //Hmm, poniewaz jestes jednym z nas, ucze Cie o polowaniach.
 
 			Log_CreateTopic	(TOPIC_MOD_LEHRER_BANDITEN, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Von Drax kann ich diverse Jagdtalente lernen.");
+			B_LogEntry	(TOPIC_MOD_LEHRER_BANDITEN, "Od Draxu moge nauczyc sie róznych talentów lowieckich.");
 		};
 	};
 };
@@ -49,7 +49,7 @@ INSTANCE Info_Mod_Drax_Fokus (C_INFO)
 	information	= Info_Mod_Drax_Fokus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht's dir?";
+	description	= "Jak sie czujesz?";
 };
 
 FUNC INT Info_Mod_Drax_Fokus_Condition()
@@ -62,14 +62,14 @@ FUNC INT Info_Mod_Drax_Fokus_Condition()
 
 FUNC VOID Info_Mod_Drax_Fokus_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_00"); //Wie geht's dir?
-	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_01"); //(nach Atem ringend) Keine Ahnung. Zuerst haben mir die Viecher einen Mordsschrecken versetzt, aber bei der anschließenden Jagd hatte ich einen Spaß wie nie zuvor.
-	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_02"); //Sind das hier alle restlichen Warge?
-	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_03"); //Ich hab jedenfalls keinen entkommen sehen. Aber wieso willst du das wissen?
-	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_04"); //Einer von ihnen hat etwas, das ich suche.
-	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_05"); //Das blaue funkelnde Ding? Ist sicher 'ne Menge wert, oder?
-	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_06"); //Nicht in Gold.
-	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_07"); //(enttäuscht) Na dann... Schau doch rum, einer von denen wird's schon noch bei sich haben.
+	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_00"); //Jak sie czujesz?
+	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_01"); //(walka o oddech) Nie wiem. Poczatkowo stwory przestraszyly mnie z gówno, ale jak nigdy wczesniej bawilem sie z nastepnymi polowaniami.
+	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_02"); //Czy to jest cala reszta Warge?
+	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_03"); //Nie widzialem zadnej ucieczki. Ale po co chcesz wiedziec?
+	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_04"); //Jeden z nich ma cos, czego szukam.
+	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_05"); //Niebieski lsniacy? Czy musi byc duzo warta, huh?
+	AI_Output(hero, self, "Info_Mod_Drax_Fokus_15_06"); //Nie w zlocie.
+	AI_Output(self, hero, "Info_Mod_Drax_Fokus_30_07"); //(wylaczony) No cóz, to....... Rozejrzyjmy sie dookola, jeden z nich nadal bedzie mial go z nim.
 
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_1120_BDT_Ratford_MT, "START");
@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Drax_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Drax_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Bring mir Bogenschießen bei.";
+	description	= "Naucz mnie lucznictwa.";
 };
 
 FUNC INT Info_Mod_Drax_Lernen_Bogen_Condition()
@@ -99,11 +99,11 @@ FUNC INT Info_Mod_Drax_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Drax_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drax_Lernen_Bogen_15_00"); //Bring mir Bogenschießen bei.
+	AI_Output(hero, self, "Info_Mod_Drax_Lernen_Bogen_15_00"); //Naucz mnie lucznictwa.
 
 	Info_ClearChoices	(Info_Mod_Drax_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Zurück.", Info_Mod_Drax_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Z powrotem.", Info_Mod_Drax_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Drax_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Drax_Lernen_Bogen_1);
 };
@@ -119,7 +119,7 @@ FUNC VOID Info_Mod_Drax_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Drax_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Zurück.", Info_Mod_Drax_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Z powrotem.", Info_Mod_Drax_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Drax_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Drax_Lernen_Bogen_1);
 };
@@ -130,7 +130,7 @@ FUNC VOID Info_Mod_Drax_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Drax_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Zurück.", Info_Mod_Drax_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, "Z powrotem.", Info_Mod_Drax_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Drax_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Drax_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Drax_Lernen_Bogen_1);
 };
@@ -143,7 +143,7 @@ INSTANCE Info_Mod_Drax_Jagdtalente (C_INFO)
 	information	= Info_Mod_Drax_Jagdtalente_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was kannst du mir beibringen?";
+	description	= "Czego mozesz mnie nauczyc?";
 };
 
 FUNC INT Info_Mod_Drax_Jagdtalente_Condition()
@@ -157,37 +157,37 @@ FUNC INT Info_Mod_Drax_Jagdtalente_Condition()
 
 FUNC VOID Info_Mod_Drax_Jagdtalente_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Drax_Jagdtalente_15_00"); //Was kannst du mir beibringen?
+	AI_Output(hero, self, "Info_Mod_Drax_Jagdtalente_15_00"); //Czego mozesz mnie nauczyc?
 
 	if ((PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ReptileSkin] == FALSE)
 	||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE))
 	{
-		AI_Output(self, hero, "Info_Mod_Drax_Jagdtalente_30_01"); //Kommt darauf an, was du wissen willst.
+		AI_Output(self, hero, "Info_Mod_Drax_Jagdtalente_30_01"); //Zalezy od tego, co chcesz wiedziec.
 
 		Info_AddChoice		(Info_Mod_Drax_Jagdtalente, DIALOG_BACK, Info_Mod_Drax_Jagdtalente_BACK);
 		
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("Zähne reissen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  Info_Mod_Drax_Jagdtalente_Teeth);
+			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("rozdarte zeby",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  Info_Mod_Drax_Jagdtalente_Teeth);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("Klauen hacken",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  Info_Mod_Drax_Jagdtalente_Claws);
+			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("pazury",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  Info_Mod_Drax_Jagdtalente_Claws);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("Fell abziehen",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  Info_Mod_Drax_Jagdtalente_Fur);
+			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("skórka",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  Info_Mod_Drax_Jagdtalente_Fur);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ReptileSkin] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("Häuten von Reptilien",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)),  Info_Mod_Drax_Jagdtalente_ReptileSkin);
+			Info_AddChoice	(Info_Mod_Drax_Jagdtalente, B_BuildLearnString ("Skinowanie gadów",B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)),  Info_Mod_Drax_Jagdtalente_ReptileSkin);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Drax_Jagdtalente_30_02"); //Ich kann dir im Moment nicht mehr beibringen, als du ohnehin schon weißt. Tut mir leid.
+		AI_Output(self, hero, "Info_Mod_Drax_Jagdtalente_30_02"); //Nie moge cie nauczyc wiecej niz juz wiesz. Przepraszam za to.
 	};
 };
 
@@ -200,9 +200,9 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Claws))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_00"); //Tiere geben ihre Klauen nicht sehr gerne her. Du musst schon sehr genau den Punkt treffen, an dem du mit deinem Messer ansetzt.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_01"); //Die Haltung deiner Hand sollte etwas verschränkt sein. Mit einem kräftigen Ruck trennst du dann die Klaue ab.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_02"); //Klauen sind immer ein begehrtes Zahlungsmittel bei einem Händler.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_00"); //Zwierzeta nie lubia oddawac pazurów. Musisz trafic dokladnie tam, gdzie idziesz nozem.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_01"); //Postawa dloni powinna byc lekko uwiklana. Z mocnym wstrzasem odciales pazur.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_30_02"); //Sprzet jest zawsze pozadanym srodkiem platniczym dla przedsiebiorcy.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);
@@ -213,8 +213,8 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Teeth))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Teeth_30_00"); //Das Einfachste, was du Tieren entnehmen kannst, sind seine Zähne. Du fährst mit deinem Messer in seinem Maul um das Gebiss.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Teeth_30_01"); //Dann trennst du es geschickt mit einem Ruck vom Schädel des Tieres.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Teeth_30_00"); //Najprostsza rzecza, która mozna wziac od zwierzat jest ich zeby. Jezdzisz nozem dookola protezy w ustach.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Teeth_30_01"); //Potem umiejetnie odciac go od czaszki zwierzecia.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);
@@ -224,8 +224,8 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Fur))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_30_00"); //Felle ziehst du am besten ab, indem du einen tiefen Schnitt an den Hinterläufen des Tieres vornimmst.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_30_01"); //Dann kannst du das Fell von vorne nach hinten eigentlich immer sehr leicht abziehen.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_30_00"); //Najlepszym sposobem usuniecia siersci jest wykonanie glebokiego ciecia na tylnych nogach zwierzecia.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_30_01"); //Dzieki temu zawsze mozna latwo sciagnac futro z przodu do tylu.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);
@@ -235,7 +235,7 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_ReptileSkin()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_ReptileSkin))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_BFSting_30_00"); //Wenn du die Haut an den Seiten anschneidest, löst sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu häuten.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_BFSting_30_00"); //Po przecieciu skóry po bokach, skóra sie rozprezy. Od teraz nie powinno sie miec problemu z skórowaniem jaszczurek.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);

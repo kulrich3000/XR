@@ -99,7 +99,7 @@ var int nextRespawnIndex3;
 var int nextRespawnIndex4;
 var int nextRespawnIndex5;
 
-const string RespawnObject_Struct = "auto|4";
+const string RespawnObject_Struct = "samochód";
 
 instance RespawnObject@(RespawnObject);
 

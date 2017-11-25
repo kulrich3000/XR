@@ -2,7 +2,7 @@ instance Mod_1625_VMG_Neol_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Neol";
+	name =							"neol";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							3;

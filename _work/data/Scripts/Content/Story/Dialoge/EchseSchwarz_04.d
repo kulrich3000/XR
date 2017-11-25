@@ -6,7 +6,7 @@ INSTANCE Info_Mod_EchseSchwarz_04_Sumpfhaizahn (C_INFO)
 	information	= Info_Mod_EchseSchwarz_04_Sumpfhaizahn_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Sumpfhaizahn geben)";
+	description	= "(nadajac wlosy bagienne)";
 };
 
 FUNC INT Info_Mod_EchseSchwarz_04_Sumpfhaizahn_Condition()
@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_EchseSchwarz_04_Sumpfhaizahn_Info()
 
 	if (Mod_ECHSI_SumpfhaiZaehne == 5)
 	{
-		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Jede schwarze Echse hat nun einen Sumpfhaizahn bekommen.");
+		B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Kazda jaszczurka czarna ma teraz bagienny zab rekina.");
 	};
 };
 

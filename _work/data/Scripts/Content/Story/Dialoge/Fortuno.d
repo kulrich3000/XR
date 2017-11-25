@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Fortuno_Hi_Condition()
 
 FUNC VOID Info_Mod_Fortuno_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fortuno_Hi_13_00"); //Hallo, wenn du was brauchst, kannst du es bei mir bekommen.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Hi_13_00"); //Witaj, jesli potrzebujesz czegos, mozesz odebrac to od mnie.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PSICAMP, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Fortuno handelt mit allerlei Kleinkram.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PSICAMP, "Fortuno sprzedaje wszelkiego rodzaju drobne rzeczy.");
 };
 
 INSTANCE Info_Mod_Fortuno_Sumpfmensch (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Fortuno_Sumpfmensch (C_INFO)
 	information	= Info_Mod_Fortuno_Sumpfmensch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nette Geschichte.";
+	description	= "Ladna historia.";
 };
 
 FUNC INT Info_Mod_Fortuno_Sumpfmensch_Condition()
@@ -42,15 +42,15 @@ FUNC INT Info_Mod_Fortuno_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Fortuno_Sumpfmensch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_00"); //Nette Geschichte.
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_01"); //Das kann nur jemand behaupten, der dem heulenden Sumpfmenschen noch nicht begegnet ist.
-	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_02"); //Und du bist ihm begegnet?
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_03"); //Wenn dem  so wäre, würde ich wohl kaum vor dir stehen.
-	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_04"); //Also hat noch niemand diesen heulenden Sumpfmenschen gesehen?
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_05"); //Doch. Ein Novize namens Regahn, und der zittert seitdem wie Espenlaub. Und Regahn ist nicht einfach irgendein schwächlicher Novize, der sich beim Anblick einer Sumpfratte in die Hose macht.
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_06"); //Der Typ war früher Pirat, der verspeist Sumpfhaie zum Frühstück!
+	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_00"); //Ladna historia.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_01"); //Mozna to powiedziec tylko przez kogos, kto jeszcze nie spotkal placzacego bagna.
+	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_02"); //I go poznales?
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_03"); //Gdyby tak bylo, to bym nie byl przed wami.
+	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch_15_04"); //Wiec nikt nigdy wczesniej nie widzial, ze placz mokradla?
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_05"); //Tak, tak. Nowicjusz o nazwisku Regahn i od tego czasu drzy jak lisc osiki. A Regahn nie jest tylko pewnym slabym nowicjuszem, który sciaga swoje spodnie na widok szczura bagiennego.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch_13_06"); //Gosc byl kiedys piratem, jadl rekiny bagienne na sniadanie!
 
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Offenbar hat bisher nur Darrion den Sumpfmensch gesehen. Ich sollte mal mit ihm sprechen.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Najwyrazniej tylko Darrion widzial jeszcze czlowieka bagna. Powinienem z nim porozmawiac.");
 };
 
 INSTANCE Info_Mod_Fortuno_Sumpfmensch2 (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Fortuno_Sumpfmensch2 (C_INFO)
 	information	= Info_Mod_Fortuno_Sumpfmensch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, weißt du irgendwas über Darrion?";
+	description	= "O co wiesz o Darrionie?";
 };
 
 FUNC INT Info_Mod_Fortuno_Sumpfmensch2_Condition()
@@ -74,12 +74,12 @@ FUNC INT Info_Mod_Fortuno_Sumpfmensch2_Condition()
 
 FUNC VOID Info_Mod_Fortuno_Sumpfmensch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch2_15_00"); //Hey, weißt du irgendwas über Darrion?
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch2_13_01"); //Niemand hier weiß wirklich etwas über ihn. Vielleicht solltest du mal bei seinen ehemaligen Arbeitsgebern vorbeischauen.
-	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch2_15_02"); //Wen meinst du?
-	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch2_13_03"); //Die Piraten natürlich. Das einzige, was man über ihn weiß, ist, dass er früher ein Pirat war. Vielleicht weiß einer von denen was über ihn.
+	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch2_15_00"); //O co wiesz o Darrionie?
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch2_13_01"); //Nikt nie wie o nim naprawde nic. Moze powinienes sprawdzic jego bylych pracodawców.
+	AI_Output(hero, self, "Info_Mod_Fortuno_Sumpfmensch2_15_02"); //Kogo rozumiesz?
+	AI_Output(self, hero, "Info_Mod_Fortuno_Sumpfmensch2_13_03"); //Oczywiscie piraci. Jedyne, co wiesz, to fakt, ze byl on wczesniej piratem. Moze jeden z nich cos o nim wie.
 
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion war früher Pirat. Ich sollte wohl mal bei den Piraten vorbei schauen, um mehr Informationen über ihn zu erhalten.");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Darrion byl kiedys piratem. Prawdopodobnie powinienem zatrzymac sie przy piratach, aby dowiedziec sie wiecej o nim.");
 };
 
 INSTANCE Info_Mod_Fortuno_Woher (C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_Mod_Fortuno_Woher (C_INFO)
 	information	= Info_Mod_Fortuno_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso bist du in diesem Lager?";
+	description	= "Dlaczego jestes w tym obozie?";
 };
 
 FUNC INT Info_Mod_Fortuno_Woher_Condition()
@@ -103,11 +103,11 @@ FUNC INT Info_Mod_Fortuno_Woher_Condition()
 
 FUNC VOID Info_Mod_Fortuno_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fortuno_Woher_15_00"); //Wieso bist du in diesem Lager?
-	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_01"); //Das Sumpfkraut ist an allem Schuld.
-	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_02"); //Es begann alles in Geldern. Ich war dort Lehrling eines Alchemisten und kam dort erstmals in Kontakt mit Sumpfkraut.
-	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_03"); //Kurz darauf war ich süchtig und wurde in die Kolonie geworfen. Als ich dann erfahren habe, dass es hier Sumpfkraut gibt, bin ich sofort hierher gekommen.
-	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_04"); //Seitdem lebe ich in diesem Lager und verwalte die Vorräte.
+	AI_Output(hero, self, "Info_Mod_Fortuno_Woher_15_00"); //Dlaczego jestes w tym obozie?
+	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_01"); //Bagatnik jest wina za wszystko.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_02"); //Wszystko zaczelo sie w Geldern. Bylem tam praktykantem alchemika i po raz pierwszy zetknalem sie z bagnem.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_03"); //Wkrótce potem bylem uzalezniony i wrzucony do kolonii. Kiedy dowiedzialem sie, ze jest tu bagienne ziolo, od razu przyjechalem.
+	AI_Output(self, hero, "Info_Mod_Fortuno_Woher_13_04"); //Od tego czasu mieszkam w tym obozie i zarzadzam zaopatrzeniem.
 };
 
 INSTANCE Info_Mod_Fortuno_Trade (C_INFO)

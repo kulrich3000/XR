@@ -1,7 +1,7 @@
 instance Mod_798_SLD_Wolf_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wolf";
+	name 		= "nóz";
 	guild 		= GIL_MIL;
 	id 			= 798;
 	voice 		= 31;

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Shadowbeast_Skeleton(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Schattenläuferskelett";
+	name							=	"szkielet cienia";
 	guild							=	GIL_SHADOWBEAST_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHADOWBEAST_SKELETON;
 	level							=	40;
@@ -77,7 +77,7 @@ INSTANCE Shadowbeast_Skeleton	(Mst_Default_Shadowbeast_Skeleton)
 
 INSTANCE Nightmare_Skeleton	(Mst_Default_Shadowbeast_Skeleton)
 {
-	name	= "Nachtmahrskelett";
+	name	= "koszmarny szkielet szkieletowy";
 
 	aivar[AIV_MM_REAL_ID]			= 	ID_NIGHTMARE;
 

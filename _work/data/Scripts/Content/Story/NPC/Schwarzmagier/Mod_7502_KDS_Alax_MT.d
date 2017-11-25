@@ -1,7 +1,7 @@
 instance Mod_7502_KDS_Alax_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Alax"; 
+	name 		= "lenistwo"; 
 	guild 		= GIL_KDF;
 	id 			= 7502;
 	voice 		= 14;

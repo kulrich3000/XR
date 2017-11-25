@@ -1,7 +1,7 @@
 instance Mod_1172_STT_Omid_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Omid";
+	name 		=		"omen";
 	npctype 	=		NPCTYPE_mt_schatten;
 	guild 		=		GIL_out;
 	level 		=		3;

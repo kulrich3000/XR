@@ -90,12 +90,12 @@ FUNC VOID Gifte ()
 				{
 					Pflanzengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pflanzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne roslin.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -105,7 +105,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -203,12 +203,12 @@ FUNC VOID Gifte ()
 				{
 					Pilzgift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pilzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne grzybów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -218,7 +218,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -301,12 +301,12 @@ FUNC VOID Gifte ()
 				{
 					Pflanzengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pflanzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne roslin.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -316,7 +316,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -414,12 +414,12 @@ FUNC VOID Gifte ()
 				{
 					Pilzgift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pilzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne grzybów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -429,7 +429,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -511,12 +511,12 @@ FUNC VOID Gifte ()
 				{
 					Pilzgift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pilzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne grzybów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -526,7 +526,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -624,12 +624,12 @@ FUNC VOID Gifte ()
 				{
 					Pflanzengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pflanzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne roslin.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -639,7 +639,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -737,12 +737,12 @@ FUNC VOID Gifte ()
 				{
 					Pflanzengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pflanzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne roslin.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -752,7 +752,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -850,12 +850,12 @@ FUNC VOID Gifte ()
 				{
 					Pilzgift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Pilzen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne grzybów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Gewaechsgift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Gewächsgiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla odpornosc na toksyny roslinne.", -1, -1, FONT_SCREEN, 2);
 
 					Gewaechsgift += 1;
 
@@ -865,7 +865,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -962,12 +962,12 @@ FUNC VOID Gifte ()
 				{
 					Blutfliegengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Blutfliegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na jadowitosc much krwi.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 3)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -977,7 +977,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1059,12 +1059,12 @@ FUNC VOID Gifte ()
 				{
 					Sumpfgasdrohnengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Sumpfgasdrohnen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne wywolana przez bezzalogowe samoloty na gaz bagienny.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1074,7 +1074,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1199,12 +1199,12 @@ FUNC VOID Gifte ()
 				{
 					Minecrawlergift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Minecrawlern.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne minecrawlerów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1214,7 +1214,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1307,12 +1307,12 @@ FUNC VOID Gifte ()
 				{
 					Minecrawlergift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Minecrawlern.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne minecrawlerów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1322,7 +1322,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1400,12 +1400,12 @@ FUNC VOID Gifte ()
 				{
 					Sumpfhaigift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Sumpfhaien.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne rekinów bagiennych.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1415,7 +1415,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1493,12 +1493,12 @@ FUNC VOID Gifte ()
 				{
 					Sumpfgasdrohnengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Sumpfgasdrohnen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne wywolana przez bezzalogowe samoloty na gaz bagienny.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1508,7 +1508,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1586,12 +1586,12 @@ FUNC VOID Gifte ()
 				{
 					Blutfliegengift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Blutfliegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na jadowitosc much krwi.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1601,7 +1601,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1679,12 +1679,12 @@ FUNC VOID Gifte ()
 				{
 					Minecrawlergift += 1;
 
-					PrintScreen	("Du bist Immun gegenüber dem Gift von Minecrawlern.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Jestes odporny na trucizne minecrawlerów.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Tiergift < 4)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber Tiergiften sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na toksyny zwierzece.", -1, -1, FONT_SCREEN, 2);
 
 					Tiergift += 1;
 
@@ -1694,7 +1694,7 @@ FUNC VOID Gifte ()
 						{
 							Gift += 1;
 
-							PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+							PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 						};
 					};
 				};
@@ -1725,7 +1725,7 @@ FUNC VOID Gifte ()
 			{
 				if (Giftdampf < 3)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 
 					Giftdampf += 1;
 				}
@@ -1733,7 +1733,7 @@ FUNC VOID Gifte ()
 				{
 					Giftdampf += 1;
 
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Najwyzsza odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1742,7 +1742,7 @@ FUNC VOID Gifte ()
 					{
 						Gift += 1;
 
-						PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+						PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 					};
 				};
 			};
@@ -1772,7 +1772,7 @@ FUNC VOID Gifte ()
 			{
 				if (Giftdampf < 3)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 
 					Giftdampf += 1;
 				}
@@ -1780,7 +1780,7 @@ FUNC VOID Gifte ()
 				{
 					Giftdampf += 1;
 
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Najwyzsza odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1789,7 +1789,7 @@ FUNC VOID Gifte ()
 					{
 						Gift += 1;
 
-						PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+						PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 					};
 				};
 			};
@@ -1819,7 +1819,7 @@ FUNC VOID Gifte ()
 			{
 				if (Giftdampf < 3)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 
 					Giftdampf += 1;
 				}
@@ -1827,7 +1827,7 @@ FUNC VOID Gifte ()
 				{
 					Giftdampf += 1;
 
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Najwyzsza odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1836,7 +1836,7 @@ FUNC VOID Gifte ()
 					{
 						Gift += 1;
 
-						PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+						PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 					};
 				};
 			};
@@ -1866,7 +1866,7 @@ FUNC VOID Gifte ()
 			{
 				if (Giftdampf < 3)
 				{
-					PrintScreen	("Deine Resistenzen gegenüber giftigen Dämpfen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Twoja odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 
 					Giftdampf += 1;
 				}
@@ -1874,7 +1874,7 @@ FUNC VOID Gifte ()
 				{
 					Giftdampf += 1;
 
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber giftigen Dämpfen erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Najwyzsza odpornosc na trujace opary.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if ((Gewaechsgift+Tiergift+Giftdampf)%3 == 0)
@@ -1883,7 +1883,7 @@ FUNC VOID Gifte ()
 					{
 						Gift += 1;
 
-						PrintScreen	("Deine Widerstandskraft gegenüber Giften ist gestiegen.", -1, -1, FONT_SCREEN, 2);
+						PrintScreen	("Wzrosla Wasza odpornosc na toksyny.", -1, -1, FONT_SCREEN, 2);
 					};
 				};
 			};
@@ -1914,7 +1914,7 @@ FUNC VOID Gifte ()
 			hero.attribute[ATR_STRENGTH] -= BissDerFaeulnis_Stufe01_STR;
 			hero.attribute[ATR_DEXTERITY] -= BissDerFaeulnis_Stufe01_DEX;
 
-			Print	("Du spürst, wie der Biss der Fäulnis dein Blut vergiftet!");
+			Print	("Czujesz zgryz zatrucia krwi!");
 
 			BissDerFaeulnis_Time -= 30;
 		};
@@ -2014,14 +2014,14 @@ FUNC VOID Gifte ()
 
 				if (KBDF == 4)
 				{
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber Biss der Fäulnis erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Masz najwieksza odpornosc na zgryz.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Krankheit < 4)
 				{
 					Krankheit += 1;
 
-					PrintScreen	("Deine Resistenzen gegenüber Erkrankungen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Pani odpornosc na choroby.", -1, -1, FONT_SCREEN, 2);
 				};
 			};
 		};
@@ -2047,7 +2047,7 @@ FUNC VOID Gifte ()
 			hero.attribute[ATR_STRENGTH] -= HauchDerPestilenz_Stufe01_STR;
 			hero.attribute[ATR_DEXTERITY] -= HauchDerPestilenz_Stufe01_DEX;
 
-			Print	("Der Hauch der Pestilenz durchdringt deine Adern!");
+			Print	("Tchnienie zarazy przenika do twoich zyl!");
 
 			HauchDerPestilenz_Time -= 30;
 		};
@@ -2147,14 +2147,14 @@ FUNC VOID Gifte ()
 
 				if (KHDP == 4)
 				{
-					PrintScreen	("Du hast die höchste Widerstandkraft gegenüber Hauch der Pestilenz erreicht.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Osiagnales najwyzsza odpornosc na zarazy.", -1, -1, FONT_SCREEN, 2);
 				};
 
 				if (Krankheit < 4)
 				{
 					Krankheit += 1;
 
-					PrintScreen	("Deine Resistenzen gegenüber Erkrankungen sind gestiegen.", -1, -1, FONT_SCREEN, 2);
+					PrintScreen	("Wzrosla Pani odpornosc na choroby.", -1, -1, FONT_SCREEN, 2);
 				};
 			};
 		};

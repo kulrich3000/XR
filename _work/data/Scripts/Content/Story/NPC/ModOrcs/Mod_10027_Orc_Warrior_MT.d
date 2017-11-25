@@ -1,7 +1,7 @@
 INSTANCE Mod_10027_Orc_Warrior_MT(Mst_Default_OrcWarrior)			
 {
 	//----- Monster -----
-	name							=	"Ork Krieger";
+	name							=	"Wojownik orkowy";
 	guild							=	GIL_FRIENDLY_ORC;
 	id			= 	10027;
 	voice							=	18;

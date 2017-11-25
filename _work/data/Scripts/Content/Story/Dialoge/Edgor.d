@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Edgor_Hi_Condition()
 
 FUNC VOID Info_Mod_Edgor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Edgor_Hi_31_00"); //Was willst du hier? Verschwinde.
+	AI_Output(self, hero, "Info_Mod_Edgor_Hi_31_00"); //Co Pan tutaj robi? Wyjsc stad.
 
 	AI_StopProcessInfos	(self);
 };
@@ -41,7 +41,7 @@ FUNC INT Info_Mod_Edgor_Ring_Condition()
 
 FUNC VOID Info_Mod_Edgor_Ring_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Edgor_Ring_31_00"); //Woher hast du diesen Ring?
+	AI_Output(self, hero, "Info_Mod_Edgor_Ring_31_00"); //Gdzie otrzymasz ten pierscien?
 };
 
 INSTANCE Info_Mod_Edgor_Tom (C_INFO)
@@ -52,7 +52,7 @@ INSTANCE Info_Mod_Edgor_Tom (C_INFO)
 	information	= Info_Mod_Edgor_Tom_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Tom hat ihn mir gegeben.";
+	description	= "Tomek mi ja dal.";
 };
 
 FUNC INT Info_Mod_Edgor_Tom_Condition()
@@ -65,11 +65,11 @@ FUNC INT Info_Mod_Edgor_Tom_Condition()
 
 FUNC VOID Info_Mod_Edgor_Tom_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_Tom_15_00"); //Tom hat ihn mir gegeben. Er hat mich damit zu dir geschickt, damit du mir die erste Hälfte des Losungswortes gibst.
-	AI_Output(self, hero, "Info_Mod_Edgor_Tom_31_01"); //Und du denkst, ich verrate es dir jetzt einfach so? Das hättest du wohl gerne.
-	AI_Output(self, hero, "Info_Mod_Edgor_Tom_31_02"); //Wenn du die erste Hälfte haben willst, dann musst du auch was dafür machen.
+	AI_Output(hero, self, "Info_Mod_Edgor_Tom_15_00"); //Tomek mi ja dal. Wyslal mnie, aby podac Ci pierwsza polowe hasla.
+	AI_Output(self, hero, "Info_Mod_Edgor_Tom_31_01"); //I myslisz, ze po prostu mówie ci teraz? Chcesz to sobie wyobrazic, czy nie?
+	AI_Output(self, hero, "Info_Mod_Edgor_Tom_31_02"); //Jesli potrzebujesz pierwszej polowy, musisz cos z tym zrobic.
 
-	B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Edgor will mir die erste Hälfte des Losungswortes nicht verraten. Ich soll erst etwas für ihn machen.");
+	B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Edgor nie powie mi pierwszej polowie hasla. Najpierw powinienem cos dla niego zrobic.");
 };
 
 INSTANCE Info_Mod_Edgor_Aufgabe (C_INFO)
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Edgor_Aufgabe (C_INFO)
 	information	= Info_Mod_Edgor_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was soll ich für dich machen?";
+	description	= "Co mam dla Ciebie zrobic?";
 };
 
 FUNC INT Info_Mod_Edgor_Aufgabe_Condition()
@@ -93,17 +93,17 @@ FUNC INT Info_Mod_Edgor_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Edgor_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_Aufgabe_15_00"); //Was soll ich für dich machen?
-	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_01"); //Besorge mir, ähh ... zwölf Stängel Sumpfkraut, sechs Flaschen Wacholder, vier Flaschen Wein, drei Bier, einen Schinken, fünf gebratene Fleischstücke, drei Stück Käse, zwei Flaschen Milch ... und ...
-	AI_Output(hero, self, "Info_Mod_Edgor_Aufgabe_15_02"); //(ungläubig) Sonst noch was?
-	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_03"); //Wo du schon fragst ... 300 Goldmünzen wären auch nicht schlecht ...
+	AI_Output(hero, self, "Info_Mod_Edgor_Aufgabe_15_00"); //Co mam dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_01"); //Pozwól mi, abym.... dwanascie lodyg ziól bagiennych, szesc butelek jalowca, cztery butelki wina, trzy piwa, jedna szynka, piec kawalków prazonego miesa, trzy kawalki sera, dwie butelki mleka..... oraz..... i...
+	AI_Output(hero, self, "Info_Mod_Edgor_Aufgabe_15_02"); //Wszystko inne?
+	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_03"); //Poniewaz pytasz.... 300 zlotych monet tez nie byloby zle....
 	AI_Output(hero, self, "Info_Mod_Edgor_Aufgabe_15_04"); //...
-	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_05"); //Hey, jetzt sieh mich nicht so an. Von irgendwas muss ich ja auch leben.
-	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_06"); //Habe schon damals nur wenig aus dem Minental mitbringen können ... und zudem haben sich noch diese verdammten Räuber um Khorinis breit gemacht und lassen uns Banditen nur wenig zum Plündern übrig.
+	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_05"); //Hej, nie patrz na mnie tak jak teraz. Musze sie z czegos utrzymac.
+	AI_Output(self, hero, "Info_Mod_Edgor_Aufgabe_31_06"); //Juz w tym czasie moglem sprowadzic tylko troche z doliny Kopalni.... Wiecej a poza tym, ci zwariowani rabusie rozprzestrzenili sie na Khorinis i zostawili nam bandytów z mala iloscia czasu na grabiez.
 
 	Log_CreateTopic	(TOPIC_MOD_EDGORSGOLD, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_EDGORSGOLD, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_EDGORSGOLD, "Ich soll Edgor zwölf Stängel Sumpfkraut, sechs Flaschen Wacholder, vier Flaschen Wein, drei Bier, einen Schinken, fünf gebratene Fleischstücke, drei Stück Käse, zwei Flaschen Milch und 300 Goldmünzen bringen, dann verrät er mir die erste Hälfte des Losungswortes.");
+	B_LogEntry	(TOPIC_MOD_EDGORSGOLD, "Mam przyniesc Edgor dwanascie lodyg kapusty bagiennej, szesc butelek jalowca, cztery butelki wina, trzy piwa, jedna szynke, piec kawalków miesa palonego, trzy kawalki sera, dwie butelki mleka i 300 zlotych monet, wtedy on mówi mi pierwsza polowe hasla.");
 };
 
 INSTANCE Info_Mod_Edgor_Raeuber (C_INFO)
@@ -114,7 +114,7 @@ INSTANCE Info_Mod_Edgor_Raeuber (C_INFO)
 	information	= Info_Mod_Edgor_Raeuber_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Räuber sind Geschichte ...";
+	description	= "Zlodzieje sa historia....";
 };
 
 FUNC INT Info_Mod_Edgor_Raeuber_Condition()
@@ -135,29 +135,29 @@ FUNC INT Info_Mod_Edgor_Raeuber_Condition()
 
 FUNC VOID Info_Mod_Edgor_Raeuber_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_Raeuber_15_00"); //Die Räuber sind Geschichte ...
-	AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_01"); //Echt? Na, ist die Miliz ja also doch zu was zu gebrauchen. (lacht)
-	AI_Output(hero, self, "Info_Mod_Edgor_Raeuber_15_02"); //Ähm ...
-	AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_03"); //Dann werde ich auch bald wieder die vollen Taschen und Wägen der fetten Händler plündern können, die hier vorbeiziehen. (lacht)
+	AI_Output(hero, self, "Info_Mod_Edgor_Raeuber_15_00"); //Zlodzieje sa historia....
+	AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_01"); //Naprawde? No cóz, przeciez milicja jest dobra na cos. (smiertelnicy)
+	AI_Output(hero, self, "Info_Mod_Edgor_Raeuber_15_02"); //Um....
+	AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_03"); //Wtedy wkrótce bede w stanie pladrowac pelne kieszenie i wagony przejezdzajacych tu kupców tluszczu. (smiertelnicy)
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Edgor_Gold))
 	{
-		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_04"); //Nichts für ungut. Hier, nimm für die tolle Neuigkeit den fetten Schinken, der mir noch geblieben ist, 'n Bier und die 2 Stängel.
+		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_04"); //Bez twardych uczuc. Tutaj, na wspaniala wiadomosc, wez tlusta szynke, która zostawilem, piwo i dwie lodygi.
 
-		B_ShowGivenThings	("Schinken, Bier und 2 Stängel Sumpfkraut erhalten");
+		B_ShowGivenThings	("Szynka, piwo i 2 lodygi konserwowanej kapusty bagiennej");
 
 		CreateInvItems	(hero, ItFo_Bacon, 1);
 		CreateInvItems	(hero, ItFo_Beer, 1);
 		CreateInvItems	(hero, ItMi_Joint, 2);
 
-		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_05"); //Viel Spaß damit.
+		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_05"); //Zabawa z tym.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_06"); //Für diese tolle Nachricht verrate ich dir die erste Hälfte des Losungswortes. Sie heißt: Dex.
-		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_07"); //Die zweite Hälfte wird dir Senyan geben. Er befindet sich in der Nähe von Sekobs Hof.
+		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_06"); //Dla tej wspanialej wiadomosci podam Ci pierwsza polowe hasla. Jej imieniem Dex.
+		AI_Output(self, hero, "Info_Mod_Edgor_Raeuber_31_07"); //Druga polowa da Ci Senyan. Znajduje sie w poblizu miejscowosci Sekobs Hof.
 
-		B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_EDGORSGOLD, "Die erste Hälfte heißt: Dex. Die zweite Hälfte hat Senyan, der sich in der Nähe von Sekobs Hof befindet.", "Ich hab Edgor von den erledigten Räubern berichtet. Das hat ihm offenbar gereicht ...");
+		B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_EDGORSGOLD, "Pierwsza polowa nazywana jest Dex. Druga polowa ma Senyan, który znajduje sie w poblizu placu Sekobs.", "Powiedzialem Edgorowi o zabitych bandytach. To bylo dla niego oczywiscie wystarczajace.....");
 		B_SetTopicStatus	(TOPIC_MOD_EDGORSGOLD, LOG_SUCCESS);
 
 		B_Göttergefallen(3, 1);
@@ -174,7 +174,7 @@ INSTANCE Info_Mod_Edgor_Gold (C_INFO)
 	information	= Info_Mod_Edgor_Gold_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die Sachen.";
+	description	= "Dostalem rzeczy.";
 };
 
 FUNC INT Info_Mod_Edgor_Gold_Condition()
@@ -197,7 +197,7 @@ FUNC INT Info_Mod_Edgor_Gold_Condition()
 
 FUNC VOID Info_Mod_Edgor_Gold_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_Gold_15_00"); //Ich hab die Sachen.
+	AI_Output(hero, self, "Info_Mod_Edgor_Gold_15_00"); //Dostalem rzeczy.
 
 	Npc_RemoveInvItems	(hero, ItFo_Booze, 6);
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 400);
@@ -209,16 +209,16 @@ FUNC VOID Info_Mod_Edgor_Gold_Info()
 	Npc_RemoveInvItems	(hero, ItFo_Cheese, 3);
 	Npc_RemoveInvItems	(hero, ItFo_Milk, 2);
 
-	B_ShowGivenThings	("Edgors Sachen gegeben");
+	B_ShowGivenThings	("Edgor's Things Gave");
 
-	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_01"); //Endlich wieder ein wenig was zu essen und zu trinken.
-	AI_Output(hero, self, "Info_Mod_Edgor_Gold_15_02"); //Verrätst du mir jetzt den ersten Teil?
-	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_03"); //Gut, du hast mir meine Sachen gebracht und dafür werde ich dir jetzt helfen.
-	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_04"); //Die erste Hälfte heißt: Dex. Die zweite Hälfte wird dir Senyan geben. Er befindet sich in der Nähe von Sekobs Hof.
+	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_01"); //Na koniec cos do jedzenia i picia.
+	AI_Output(hero, self, "Info_Mod_Edgor_Gold_15_02"); //Czy powie mi pan teraz pierwsza czesc?
+	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_03"); //No cóz, przyniesliscie mi moje rzeczy i teraz bede w tym pomóc.
+	AI_Output(self, hero, "Info_Mod_Edgor_Gold_31_04"); //Pierwsza polowa nazywana jest Dex. Druga polowa da Ci Senyan. Znajduje sie w poblizu miejscowosci Sekobs Hof.
 
 	B_GivePlayerXP	(300);
 
-	B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_EDGORSGOLD, "Die erste Hälfte heißt: Dex. Die zweite Hälfte hat Senyan, der sich in der Nähe von Sekobs Hof befindet.", "Ich hab Edgor seine Sachen gegeben.");
+	B_LogEntry_More	(TOPIC_MOD_AUFNAHME_BANDITEN, TOPIC_MOD_EDGORSGOLD, "Pierwsza polowa nazywana jest Dex. Druga polowa ma Senyan, który znajduje sie w poblizu placu Sekobs.", "Dalem Edgorowi jego rzeczy.");
 	B_SetTopicStatus	(TOPIC_MOD_EDGORSGOLD, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);
@@ -232,7 +232,7 @@ INSTANCE Info_Mod_Edgor_Skinner (C_INFO)
 	information	= Info_Mod_Edgor_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier etwas für dich. Mit schönem Gruß von Skinner.";
+	description	= "Mam tu cos dla panstwa. Powitania od Skinnera.";
 };
 
 FUNC INT Info_Mod_Edgor_Skinner_Condition()
@@ -246,16 +246,16 @@ FUNC INT Info_Mod_Edgor_Skinner_Condition()
 
 FUNC VOID Info_Mod_Edgor_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_Skinner_15_00"); //Ich habe hier etwas für dich. Mit schönem Gruß von Skinner.
-	AI_Output(self, hero, "Info_Mod_Edgor_Skinner_31_01"); //Dieser dreckige Hundesohn. Erst raucht er mir nachts vor meiner Abreise mein halbes Sumpfkraut weg, säuft meine Schnapsreserven leer und jetzt schickt er einen Laufburschen mit drei lumpigen Stängeln Sumpfkraut.
-	AI_Output(hero, self, "Info_Mod_Edgor_Skinner_15_02"); //Willst du jetzt das Sumpfkraut oder nicht?
-	AI_Output(self, hero, "Info_Mod_Edgor_Skinner_31_03"); //Ach, gib schon her.
+	AI_Output(hero, self, "Info_Mod_Edgor_Skinner_15_00"); //Mam tu cos dla panstwa. Powitania od Skinnera.
+	AI_Output(self, hero, "Info_Mod_Edgor_Skinner_31_01"); //Ten brudny syn suki. Poczatkowo palil w nocy przed moim wyjazdem moja polówke bagna, wypil moje zapasy likieru pustego i teraz wysyla zdenerwowanego chlopca z trzema lodygami rabu bagnistego.
+	AI_Output(hero, self, "Info_Mod_Edgor_Skinner_15_02"); //Chcesz ziól bagiennych czy nie?
+	AI_Output(self, hero, "Info_Mod_Edgor_Skinner_31_03"); //Och, daj mi go.
 
 	B_GiveInvItems	(hero, self, ItMi_Addon_Joint_01, 3);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Edgor hat seine Stängel bekommen.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Edgor otrzymal lodygi.");
 };
 
 INSTANCE Info_Mod_Edgor_IstBandit (C_INFO)
@@ -279,19 +279,19 @@ FUNC INT Info_Mod_Edgor_IstBandit_Condition()
 
 FUNC VOID Info_Mod_Edgor_IstBandit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_31_00"); //Mann, wie langweilig, die ganze Zeit nur am Lagerfeuer rumsitzen. Es muss endlich mal wieder ein Überfall her.
-	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_31_01"); //Jetzt wäre ein guter Zeitpunkt, um die Schafe auf dem Weidenplateau abzuschlachten. Mit dem Hirten und seinem Hund sollten wir locker fertigwerden. Bist du dabei?
+	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_31_00"); //Czlowiek, jak nudny, caly czas siedzacy wokól ogniska. Czas na kolejny rabunek.
+	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_31_01"); //Bylby to dobry czas na ubój owiec na plaskowyzu pastwiskowym. Z pasterzem i jego psem powinnismy poradzic sobie latwo. Czy jestes?
 	
 	Info_ClearChoices	(Info_Mod_Edgor_IstBandit);
 
-	Info_AddChoice	(Info_Mod_Edgor_IstBandit, "Ich habe wirklich Besseres zu tun (...)", Info_Mod_Edgor_IstBandit_B);
-	Info_AddChoice	(Info_Mod_Edgor_IstBandit, "Ja, natürlich, den Spaß lasse ich mir nicht entgehen.", Info_Mod_Edgor_IstBandit_A);
+	Info_AddChoice	(Info_Mod_Edgor_IstBandit, "Naprawde mam lepsze rzeczy do zrobienia (.....). )", Info_Mod_Edgor_IstBandit_B);
+	Info_AddChoice	(Info_Mod_Edgor_IstBandit, "Oczywiscie, nie bede przegapil zabawy.", Info_Mod_Edgor_IstBandit_A);
 };
 
 FUNC VOID Info_Mod_Edgor_IstBandit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_IstBandit_B_15_00"); //Ich habe wirklich Besseres zu tun, als einem Bauern die Schafe auf der Weide abzuschlachten.
-	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_B_31_01"); //Dann eben nicht.
+	AI_Output(hero, self, "Info_Mod_Edgor_IstBandit_B_15_00"); //Naprawde mam wiecej do zrobienia niz ubój owiec rolnika na polu.
+	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_B_31_01"); //Nie badz.
 	
 	Info_ClearChoices	(Info_Mod_Edgor_IstBandit);
 
@@ -300,8 +300,8 @@ FUNC VOID Info_Mod_Edgor_IstBandit_B()
 
 FUNC VOID Info_Mod_Edgor_IstBandit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Edgor_IstBandit_A_15_00"); //Ja, natürlich, den Spaß lasse ich mir nicht entgehen.
-	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_A_31_01"); //Na, dann lass uns losziehen.
+	AI_Output(hero, self, "Info_Mod_Edgor_IstBandit_A_15_00"); //Oczywiscie, nie bede przegapil zabawy.
+	AI_Output(self, hero, "Info_Mod_Edgor_IstBandit_A_31_01"); //No cóz, przejdzmy wiec.
 	
 	Info_ClearChoices	(Info_Mod_Edgor_IstBandit);
 
@@ -309,7 +309,7 @@ FUNC VOID Info_Mod_Edgor_IstBandit_A()
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_EDGOR, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_EDGOR, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_EDGOR, "Da Edgor langweilig ist, werde ich mit ihm und Franco die Schafe auf dem Weideplateau abschlachten.");
+	B_LogEntry	(TOPIC_MOD_BDT_EDGOR, "Poniewaz Edgor jest nudny, wraz z nim i Franco dokonam uboju owiec na pastwiskach.");
 
 	AI_StopProcessInfos	(self);
 
@@ -344,7 +344,7 @@ FUNC INT Info_Mod_Edgor_SchafeTot_Condition()
 
 FUNC VOID Info_Mod_Edgor_SchafeTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Edgor_SchafeTot_31_00"); //Na, das war ein Spaß. Die Schafskeulen lassen wir uns jetzt gut schmecken und die Felle werden wir bestimmt irgendwo für ein paar Goldmünzen los. Hier ist dein Anteil.
+	AI_Output(self, hero, "Info_Mod_Edgor_SchafeTot_31_00"); //No cóz, to byla zabawa. Owcze uda pozwolilismy nam teraz spróbowac dobrego smaku, a skóra, która z pewnoscia pozbedziemy sie gdzies za kilka zlotych monet. Oto Twój udzial.
 	
 	CreateInvItems	(hero, ItFo_MuttonRaw, 3);
 	CreateInvItems	(hero, ItAt_SheepFur, 2);

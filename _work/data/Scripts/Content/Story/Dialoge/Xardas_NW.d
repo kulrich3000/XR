@@ -18,21 +18,21 @@ FUNC INT Info_Mod_Xardas_NW_Hallo_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Hallo_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_00"); //Was?! Bei Beliar! Du hier?! Wie ist das möglich? Es ist jetzt drei Wochen her, seitdem du den Schläfer verbannt hast.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_01"); //Ich war mir sicher, du seiest tot ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_02"); //So war es auch.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_03"); //Was sagst du? Das musst du mir erklären ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_04"); //Nachdem deine Diener das Geröll zur Seite geschafft hatten, erwachte ich zu neuem Bewusstsein.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_05"); //Ich vermochte zwar meinen Körper zu lenken, musste jedoch schnell feststellen, dass er im Begriff war zu verwesen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_06"); //Das ist höchst ungewöhnlich. Wobei ... mir fällt da eine antike Überlieferung ein, nach welcher der Träger einer magischen Rüstung in einer Schlacht selbst dann den Kampf fortführte, ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_07"); //... als sein Körper von unzähligen Waffen durchbohrt und von Flammen verbrannt worden war.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_08"); //Sein Geist wurde scheinbar durch die magische Rüstung im toten Leib zurückgehalten, wie in einem Käfig. Das Gleiche muss auch bei dir geschehen sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_09"); //Die magische Explosion nach dem Fall der Barriere mag auch ihren Anteil daran gehabt haben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_10"); //Hmm ... aber wie ist es dann möglich, dass du wieder lebendig vor mir stehst? Was ist geschehen?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_11"); //In den Trümmern fand ich ein Buch, das eine Formel preisgab, mit welcher Rüstung und Heilrune gekoppelt werden konnten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_12"); //Mit der magischen Energie der Rüstung kann auf diesem Weg eine völlige Heilung des Trägers erwirkt werden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_13"); //(erstaunt) Du hattest großes Glück, dass dir solch ein Buch in die Hände fiel. Bücher, die solch altes Wissen enthalten, sind höchst selten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_14"); //Wie dem auch sei, so stehst du jetzt wieder lebend vor mir.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_00"); //Co? Beliar! Ty tutaj! Jak to jest mozliwe? Mijaja trzy tygodnie od czasu, kiedy wypedziles sypialnia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_01"); //Bylem pewien, ze umarles....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_02"); //Tak bylo.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_03"); //Co mówisz? Potrzebuje, aby wytlumaczyc....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_04"); //Po tym, jak wasze slugusy usunely gruz, obudzilem sie do nowej swiadomosci.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_05"); //Udalo mi sie sterowac moim cialem, ale szybko zorientowalem sie, ze ma sie ono wkrótce rozkladac.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_06"); //Jest to niezwykle niezwykle. Gdzie..... Pamietam starozytna tradycje, zgodnie z która nosiciel magicznej zbroi kontynuowal walke w bitwie nawet wtedy,......
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_07"); //... gdy jego cialo zostalo przebite przez niezliczona ilosc broni i spalone plomieniami.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_08"); //Jego duch zostal najwyrazniej zatrzymany przez magiczna zbroje w martwym ciele, jak klatka. To samo musialo ci sie przydarzyc.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_09"); //Jego role odegrala równiez magiczna eksplozja po upadku bariery.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_10"); //Hmm..... Ale jak to mozliwe, ze stoisz przed mna znowu zywy? Co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_11"); //W gruzach znalazlem ksiazke, która ujawnila formule laczenia zbroi z leczniczymi runami.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Hallo_15_12"); //Dzieki magicznej energii pancerza mozliwe jest calkowite uzdrowienie uzytkownika.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_13"); //Masz szczescie miec taka ksiazke w rekach. Ksiazki zawierajace taka starozytna wiedze sa niezwykle rzadkie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Hallo_14_14"); //Tak czy inaczej, teraz znów stoisz przed mna zywy.
 
 	B_GivePlayerXP	(100);
 
@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Xardas_NW_Hallo_Info()
 
 	Npc_SetTalentSkill (hero, NPC_TALENT_GOTTSTATUS, 8);
 
-	B_LogEntry	(TOPIC_MOD_ANFANG, "Ich habe Xardas gefunden und ihm meine Geschichte erzählt. Jetzt werde ich hoffentlich erfahren, wie es weitergeht.");
+	B_LogEntry	(TOPIC_MOD_ANFANG, "Znalazlem Xardasa i opowiedzialem mu swoja historie. Teraz mam nadzieje, ze teraz dowiemy sie, co stanie sie pózniej.");
 	B_SetTopicStatus	(TOPIC_MOD_ANFANG, LOG_SUCCESS);
 
 	if (Mod_OT_Geheimkammer == 1) {
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Xardas_NW_WasJetzt (C_INFO)
 	information	= Info_Mod_Xardas_NW_WasJetzt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was soll ich jetzt machen?";
+	description	= "Co mam teraz zrobic?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WasJetzt_Condition()
@@ -83,9 +83,9 @@ FUNC INT Info_Mod_Xardas_NW_WasJetzt_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WasJetzt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasJetzt_15_00"); //Was soll ich jetzt machen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasJetzt_14_01"); //Du hast den Schläfer verbannt und die Barriere vernichtet. Ein unbedarfter Beobachter würde nun vielleicht meinen, alles sei friedlich.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasJetzt_14_02"); //Aber der Friede ist trügerisch.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasJetzt_15_00"); //Co mam teraz zrobic?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasJetzt_14_01"); //Wyrzuciles sypialnie i zniszczyles zapore. Nieoczekiwany obserwator moze teraz myslec, ze wszystko jest pokojowe.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasJetzt_14_02"); //Ale pokój jest zwodniczy.
 };
 
 INSTANCE Info_Mod_Xardas_NW_Vorahnung (C_INFO)
@@ -96,7 +96,7 @@ INSTANCE Info_Mod_Xardas_NW_Vorahnung (C_INFO)
 	information	= Info_Mod_Xardas_NW_Vorahnung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Woher willst du das wissen?";
+	description	= "Skad to wiesz?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Vorahnung_Condition()
@@ -109,20 +109,20 @@ FUNC INT Info_Mod_Xardas_NW_Vorahnung_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Vorahnung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_00"); //Woher willst du das wissen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_01"); //In den letzten Tagen wurde ich öfters von Visionen geplagt. Eine dunkle Gestalt streifte über Khorinis und verbreitete Unheil.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_02"); //Das klingt nicht gut. Weißt du denn nichts Genaueres?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_03"); //Nein, bisher habe ich nur diese Visionen. Jedoch forsche ich in meinen Büchern nach Informationen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_04"); //Kann ich dir dabei helfen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_05"); //In deinem geschwächten Zustand kannst du mir kaum eine Hilfe sein. Du solltest erst wieder Kräfte sammeln.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_06"); //Sicherlich wäre es von Vorteil, wenn du dich dazu einer der Gilden hier anschließt. Die haben immer noch die besten Lehrer.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_00"); //Skad to wiesz?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_01"); //W ciagu ostatnich kilku dni dreczyly mnie wizje. Ciemna figura szumiaca nadhoryna i rozprzestrzeniajaca katastrofe.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_02"); //To nie brzmi dobrze. Nie wiesz nic bardziej szczególowego?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_03"); //Nie, jak dotad mam tylko te wizje. Jednak badam informacje zawarte w moich ksiazkach.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Vorahnung_15_04"); //Czy moge w tym pomóc?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_05"); //W waszym oslabionym stanie nie mozecie mi pomóc. Najpierw powinienes odzyskac sile.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Vorahnung_14_06"); //Z pewnoscia dobrym pomyslem byloby dolaczenie tutaj do jednego z cechów. Maja najlepszych nauczycieli.
 
 	Log_CreateTopic	(TOPIC_MOD_DIEBEDROHUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DIEBEDROHUNG, LOG_RUNNING);
 	
 	Log_CreateTopic	(TOPIC_MOD_GILDENAUFNAHME, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DIEBEDROHUNG, "Xardas hat gesagt ich solle zuerst Kräfte sammeln und mich dazu einer Gilde anschließen.", "Xardas hat in letzter Zeit einige Visionen gehabt. Eine dunkle Gestalt wird Unheil über Khorinis verbreiten. Xardas forscht derzeit in seinen Büchern noch Informationen. Bis er etwas neues herausgefunden hat soll ich mich einer Gilde anschließen.");
+	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DIEBEDROHUNG, "Xardas kazal mi najpierw zdobyc sile i dolaczyc do gildii.", "Ostatnio Xardas mial kilka wizji. Ciemna figura rozposciera sie nad khorynami. Xardas wciaz poszukuje informacji w swoich ksiazkach. Dopóki on nie dowie sie czegos nowego, musze dolaczyc do gildii.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_WasFuerGilden (C_INFO)
@@ -133,7 +133,7 @@ INSTANCE Info_Mod_Xardas_NW_WasFuerGilden (C_INFO)
 	information	= Info_Mod_Xardas_NW_WasFuerGilden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was für Gilden gibt es?";
+	description	= "Jakie sa tam gildie?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WasFuerGilden_Condition()
@@ -146,16 +146,16 @@ FUNC INT Info_Mod_Xardas_NW_WasFuerGilden_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WasFuerGilden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasFuerGilden_15_00"); //Was für Gilden gibt es?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_01"); //Es gibt in der Stadt die Miliz, welche sich gut aufs Kämpfen versteht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_02"); //Ich habe gehört, dass auf einem Bauernhof ein paar Söldner sind. Ich glaube, dass du sie kennst.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_03"); //In einem Kloster leben Feuermagier. Auch ihnen kannst du dich anschließen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_04"); //Außerdem gibt es noch die Wassermagier, die sich momentan an einer alten Ruine zu schaffen machen. Einer von ihnen soll sich jedoch in der Stadt aufhalten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_05"); //Oder aber du entscheidest dich für den Weg Beliars.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasFuerGilden_15_00"); //Jakie sa tam gildie?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_01"); //W miescie sa milicje, które potrafia walczyc.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_02"); //Slysze, ze na farmie jest kilku najemników. Mysle, ze ja znasz.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_03"); //Magicy ognia zyja w klasztorze. Mozesz równiez do nich dolaczyc.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_04"); //Sa tez magowie wody, którzy obecnie manipuluja starymi ruinami. Jeden z nich mówi sie, ze jest w miescie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasFuerGilden_14_05"); //Lub wybierz sciezke Beliara.
 
 	Mod_Gilde	=	0;
 
-	B_LogEntry	(TOPIC_MOD_GILDENAUFNAHME, "Ich kann entweder ein Mitglied der Miliz, ein Söldner, ein Feuer Novize, ein Wasser Novize oder ein Schwarzer Novize werden.");
+	B_LogEntry	(TOPIC_MOD_GILDENAUFNAHME, "Moge zostac czlonkiem milicji, najemnikiem, nowicjuszem ognia, nowicjuszem wody lub czarnym nowicjuszem.");
 
 	Mil_310_schonmalreingelassen = TRUE;
 
@@ -170,11 +170,11 @@ FUNC VOID Info_Mod_Xardas_NW_WasFuerGilden_Info()
 	Log_CreateTopic	(TOPIC_MOD_WASSERMAGIER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_WASSERMAGIER, LOG_RUNNING);
 
-	B_LogEntry_NS	(TOPIC_MOD_MILIZ, "Ich kann mich der Miliz in der Stadt anschließen.");
-	B_LogEntry_NS	(TOPIC_MOD_SÖLDNER, "Die Söldner finde ich auf einem Bauernhof. Xardas meint, dass ich sie kenne.");
-	B_LogEntry_NS	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bei Xardas kann ich mich den schwarzen Novizen anschließen.");
-	B_LogEntry_NS	(TOPIC_MOD_FEUERMAGIER, "In einem Kloster auf der Insel leben die Feuermagier, denen ich mich anschließen kann.");
-	B_LogEntry_NS	(TOPIC_MOD_WASSERMAGIER, "Die Wassermagier sind in einer alten Ruine im Norden der Insel. Jedoch soll einer in der Stadt Khorinis zu finden sein.");
+	B_LogEntry_NS	(TOPIC_MOD_MILIZ, "Moge dolaczyc do milicji w miescie.");
+	B_LogEntry_NS	(TOPIC_MOD_SÖLDNER, "Znalazlem najemników na farmie. Xardas oznacza, ze ja znam.");
+	B_LogEntry_NS	(TOPIC_MOD_DAEMONENBESCHWOERER, "Z Xardasem moge dolaczyc do czarnych nowicjuszy.");
+	B_LogEntry_NS	(TOPIC_MOD_FEUERMAGIER, "W klasztorze na wyspie zyja magowie ognia, do których moge dolaczyc.");
+	B_LogEntry_NS	(TOPIC_MOD_WASSERMAGIER, "Magicy wody znajduja sie w starozytnej ruinie na pólnocy wyspy. Mówi sie jednak, ze jest jeden w miescie Khorini.");
 
 	B_Kapitelwechsel (1, NEWWORLD_ZEN);
 
@@ -204,14 +204,14 @@ FUNC INT Info_Mod_Xardas_NW_Urnol_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Urnol_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_00"); //Ahh. Da bist du ja. Bist du einer Gilde beigetreten?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol_15_01"); //Ja. Aber es war nicht ganz einfach.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_02"); //Sehr schön. Und hast du auch den dunklen Pilger gesprochen?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol_15_03"); //Bis jetzt noch nicht. Er ist mir immer einen Schritt voraus.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_04"); //(zornig) Papperlapapp! Wir müssen unbedingt wissen, was ihn umtreibt. Mir schwant Schlimmes.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_05"); //Geh und finde diesen Pilger. Und dann berichte mir.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_00"); //Ahh. Och, tam jestescie. Czy dolaczyles do gildii?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol_15_01"); //Tak. Ale nie bylo to latwe.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_02"); //Bardzo ladne. I czy rozmawiales tez z mrocznym pielgrzymem?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol_15_03"); //Jeszcze nie, jak dotad. Zawsze wyprzedza mnie o krok.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_04"); //Fiddlesticki! Musimy wiedziec, co go prowadzi. Czuje sie okropny.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol_14_05"); //Idz znalezc tego pielgrzyma. Nastepnie zglos sie do mnie.
 
-	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "Es scheint, als wäre der Pilger wichtig. Xardas will, dass ich ihn unbedingt aufsuche.");
+	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "Wydaje sie, ze pielgrzym jest wazny. Xardas chce, abym za wszelka cene pojechal do niego.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Urnol1 (C_INFO)
@@ -222,7 +222,7 @@ INSTANCE Info_Mod_Xardas_NW_Urnol1 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Urnol1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe einen Schattenlord getroffen.";
+	description	= "Spotkalem pana cienia.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Urnol1_Condition()
@@ -236,30 +236,30 @@ FUNC INT Info_Mod_Xardas_NW_Urnol1_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Urnol1_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_00"); //Ich habe einen Schattenlord getroffen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_01"); //Dann scheint die Bedrohung schon näher zu sein, als ich erwartet hatte. Was hat er dir erzählt?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_02"); //Er hat gesagt, dass sein Meister zurückkehren würde, um mich zu töten, weil ich einen seiner Diener getötet hätte.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_03"); //Und der Diener war wahrscheinlich der Schläfer.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_04"); //Ja, das hat der Schattenlord gesagt. Aber der Schläfer war doch der Gott der Orks und wurde auch von ihnen erschaffen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_05"); //Das dachte ich auch, doch scheinbar war ich nicht richtig informiert. Ich werde versuchen, mehr über die Sache rauszufinden.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_00"); //Spotkalem pana cienia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_01"); //Wtedy zagrozenie wydaje sie byc blizsze niz sie spodziewalem. Co wam powiedzial?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_02"); //Powiedzial, ze jego pan wróci, aby mnie zabic, poniewaz zabilem jednego z jego slug.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_03"); //A sluga byl chyba sypialnia.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Urnol1_15_04"); //Tak, to wlasnie powiedzial pan cieni. Ale sypialnia byla bogiem orków i zostala przez nich stworzona?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_05"); //Myslalem tez tak, ale najwyrazniej nie bylem dobrze poinformowany. Postaram sie dowiedziec wiecej na ten temat.
 
 	if (Mod_Gilde == 0)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_06"); //Schließ du dich erstmal einer Gilde an.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_06"); //Dolacz najpierw do gildii.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_07"); //Komm morgen wieder, dann habe ich sicher Neuigkeiten für dich.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_07"); //Wróc jutro, a ja mam dla ciebie wiesci.
 
 		Mod_HS_UrnolXardas_NextDay = Wld_GetDay();
 	};
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_08"); //Übrigens: Diese dunkle Kreatur ist nicht das Einzige, was mich beschäftigt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_09"); //Auf einem Streifzug durch  Khorinis bin ich einem weiteren Wanderer begegnet.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_10"); //Er nannte sich Argez, konnte mir aber nicht sagen, woher er kam.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_11"); //Das Gespräch hätte nicht meine Aufmerksamkeit erregt, wenn ich nicht das dumpfe Gefühl hätte, den Namen schon einmal gehört zu haben. Vor einer langen Zeit ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_12"); //Es kann gut sein, dass er in nebligen Spiel, das momentan mit uns gespielt wird, eine wichtige Figur ist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_13"); //Vielleicht triffst du ihn ja; er wollte nach Khorinis.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_08"); //Tak na marginesie, to ciemne stworzenie nie jest jedyna rzecza, która mnie niepokoi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_09"); //Podczas spaceru przez Khorinis spotkalem innego wedrowca.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_10"); //Nazywal sie Argezem, ale nie potrafil mi powiedziec skad pochodzil.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_11"); //Rozmowa nie przyciagnelaby mojej uwagi, gdybym nie czul sie nudny slyszac wczesniej nazwisko. Dawno temu.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_12"); //Moze byc tak, ze jest on wazna postacia w mglistej grze, która jest obecnie grana z nami.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Urnol1_14_13"); //Moze go spotkasz; jadl do Khorinisa.
 
 	B_GivePlayerXP	(250);
 
@@ -269,7 +269,7 @@ FUNC VOID Info_Mod_Xardas_NW_Urnol1_Info()
 		B_SetTopicStatus	(TOPIC_MOD_ARGEZ, LOG_RUNNING);
 	};
 
-	B_LogEntry_More	(TOPIC_MOD_DIEBEDROHUNG, TOPIC_MOD_ARGEZ, "Nachdem ich Xardas von dem Treffen mit Urnol berichtet hatte, war dieser sehr überrascht, doch sein verdacht schien sich bestätigt zu haben. Besonders erstaunt hat ihn die Tatsache mit dem Schläfer.", "Xardas sprach von einer möglichen Schlüsselfigur bei seiner Vorahnung, die sich Argez nennt. Als Xardas ihn traf, war er gerade auf dem Weg nach Khorinis.");
+	B_LogEntry_More	(TOPIC_MOD_DIEBEDROHUNG, TOPIC_MOD_ARGEZ, "Po tym, jak opowiedzialem Xardasowi o spotkaniu z Urnolem, byl bardzo zaskoczony, ale jego podejrzliwosc zdawala sie byc potwierdzona. Byl on szczególnie zaskoczony faktem spiacego.", "Xardas mówil o ewentualnej kluczowej postaci w swoim przedmowie, zwanej Argezem. Gdy Xardas spotkal go, byl w drodze do Khorinis.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_InGilde (C_INFO)
@@ -294,19 +294,19 @@ FUNC INT Info_Mod_Xardas_NW_InGilde_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_InGilde_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_00"); //Ah, gut, dass du kommst. Ich hab ein paar Sachen rausgefunden.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_01"); //Das hatte ich gehofft.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_02"); //Nun, ich fürchte beinahe, die Bedrohung ist größer als erwartet.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_03"); //Geht's auch etwas konkreter?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_04"); //Fürs Erste: nein. Ich bin zwar auf eine Spur gestoßen, aber ich möchte dich nicht mit Dingen belasten, bei denen ich mir nicht sicher bin, ob sie überhaupt existieren.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_05"); //Du kannst mir allerdings einen großen Gefallen tun und den Wassermagiern an ihrer Ausgrabungsstätte helfen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_06"); //Wenn ich richtig liege, wird uns das Portal, das sie entdeckt haben, einige wichtige Fragen beantworten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_07"); //(klagt) Aber meine wichtigen Fragen willst du nicht beantworten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_08"); //Dafür lasse ich dich an einem historischen Moment teilhaben. Nicht jeder darf in seinem Leben ein Jahrtausende altes Portal durchqueren.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_09"); //Es gehörte auch bisher nicht zu meinen Lebenszielen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_10"); //(streng) Aber jetzt!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_00"); //Ach, dobrze od ciebie przyjsc. Odkrylem kilka rzeczy.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_01"); //Na to wlasnie mialem nadzieje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_02"); //Cóz, obawiam sie, ze zagrozenie jest wieksze niz oczekiwano.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_03"); //Czy jest cos bardziej konkretnego?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_04"); //Na razie nie. Byc moze znalazlem szlak, ale nie chce Cie obciazac rzeczami, których nawet nie jestem pewien.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_05"); //Ale mozesz mi zrobic wielka przysluge i pomóc magikom wody w miejscu ich wykopalisk.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_06"); //Jesli mam racje, odkryty portal odpowie na kilka waznych pytan.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_07"); //Ale nie chcesz odpowiadac na moje wazne pytania.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_08"); //W zamian pozwole Ci podzielic sie historycznym momentem. Nie kazdy moze przejsc przez portal, który liczy sobie tysiace lat.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_InGilde_15_09"); //Do tej pory nie byl to jeden z moich celów zyciowych.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_InGilde_14_10"); //(wytrzymalosc) Ale teraz!
 
-	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "Xardas hat mich damit beauftragt, mit den Wassermagiern das Portal, welches sie entdeckt haben, zu durchschreiten.");
+	B_LogEntry	(TOPIC_MOD_DIEBEDROHUNG, "Xardas polecil mi chodzic z magami wody przez portal, który odkryli.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Saturas (C_INFO)
@@ -317,7 +317,7 @@ INSTANCE Info_Mod_Xardas_NW_Saturas (C_INFO)
 	information	= Info_Mod_Xardas_NW_Saturas_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Wassermagier werden mich sicher nicht mitnehmen wollen.";
+	description	= "Magicy wodni nie chca mnie z nimi zabrac.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Saturas_Condition()
@@ -333,8 +333,8 @@ FUNC INT Info_Mod_Xardas_NW_Saturas_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Saturas_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Saturas_15_00"); //Die Wassermagier werden mich sicher nicht mitnehmen wollen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Saturas_14_01"); //Dann übergib Saturas diese Botschaft von mir.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Saturas_15_00"); //Magicy wodni nie chca mnie z nimi zabrac.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Saturas_14_01"); //Nastepnie dajcie mi poselstwo szatana.
 
 	B_GiveInvItems	(self, hero, XardasLetterForSaturas, 1);
 };
@@ -360,8 +360,8 @@ FUNC INT Info_Mod_Xardas_NW_XeresLebt_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_XeresLebt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_00"); //Hast du Xeres vernichten können?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_XeresLebt_15_01"); //Nein, er hat mich wieder besiegt. Ich lebe nur dank deinem Amulett noch.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_00"); //Czy niszczyles Xeres?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_XeresLebt_15_01"); //Nie, znów mnie pobil. Nadal zyje dzieki waszemu amuletowi.
 
 	Log_CreateTopic	(TOPIC_MOD_MAGIERRAT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MAGIERRAT, LOG_RUNNING);
@@ -369,29 +369,29 @@ FUNC VOID Info_Mod_Xardas_NW_XeresLebt_Info()
 	if (hero.guild == GIL_VLK)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Aaron_BarriereWeg))
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_02"); //Ich muss den Rat wieder einberufen. Jedoch werden meine Untergebenen, die zur Zeit in Patherion sind, dem nicht zustimmen.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_03"); //Du musst dafür sorgen, dass das Problem dort beseitigt wird, ehe ich den Rat einberufen kann.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_02"); //Musze przypomniec sobie rade. Jednak moi podwladni, którzy obecnie przebywaja w Patherionie, nie zgodza sie.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_03"); //Zanim bede mógl zadzwonic do Rady, musi pan zapewnic rozwiazanie tego problemu.
 
-		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas will den Rat wieder einberufen, doch vorher muss ich die Probleme in Patherion lösen.");
+		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas chce ponownie zwolac Rade, ale najpierw musze rozwiazac problemy w Patherionie.");
 	}
 	else if (hero.guild == GIL_KDF)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Xardas_AW_Bshydal))
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_04"); //Ich muss den Rat wieder einberufen. Jedoch gibt es derzeit Dringlicheres.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_05"); //Du musst aber vorher noch etwas für Myxir erledigen. Komm wieder, wenn du es erledigt hast.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_04"); //Musze przypomniec sobie rade. Obecnie jest jednak cos pilniejszego.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_05"); //Ale najpierw trzeba cos zrobic dla Myxiru. Wróc, kiedy to zrobisz.
 
-		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas will den Rat wieder einberufen, doch vorher muss ich noch etwas für Myxir erledigen.");
+		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas chce odwolac rade, ale wczesniej musze cos zrobic dla Myxiru.");
 
 		B_StartOtherRoutine	(self, "BUMMEL");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_06"); //Ich werde den Magierrat wieder einberufen. Ich mache mich sofort auf den Weg.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_07"); //Er wird im Klosterkeller stattfinden. Wir treffen uns dann dort. Nimm diesen Ring, er wird dich dorthin bringen.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_06"); //Przypominam sobie rade magika. Bede w drodze od razu.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_07"); //Odbedzie sie ona w piwnicy klasztornej. Spotkam cie tam. Wez ten pierscionek, to cie tam zaprowadzi.
 
 		B_GiveInvItems	(self, hero, Mod_XardasBeamRing, 1);
 
-		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas hat sich auf den Weg zur Einberufung des Magierrates gemacht. Dieser findet im Klosterkeller statt. Er hat mir einen Ring gegeben, welcher mich dorthin bringen wird.");
+		B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas postanowil zwolac Rade magów. Odbywa sie to w piwnicy klasztornej. Dal mi pierscionek, który mnie tam zaprowadzi.");
 
 		if (Mod_Gilde != 2)
 		&& (Mod_Gilde != 19)
@@ -401,7 +401,7 @@ FUNC VOID Info_Mod_Xardas_NW_XeresLebt_Info()
 		&& (Mod_Gilde != 15)
 		&& (Mod_Gilde != 17)
 		{
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_08"); //Allerdings solltest du erst den nächsthöheren Rang deiner Gilde erlangen.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_XeresLebt_14_08"); //Najpierw jednak powinienes siegnac do nastepnego stopnia swojej gildii.
 		};
 
 		Mod_HS_XardasRat = 1;
@@ -456,7 +456,7 @@ INSTANCE Info_Mod_Xardas_NW_PatherionOk (C_INFO)
 	information	= Info_Mod_Xardas_NW_PatherionOk_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Patherion ist sicher.";
+	description	= "Bezpieczny Patherion.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_PatherionOk_Condition()
@@ -471,13 +471,13 @@ FUNC INT Info_Mod_Xardas_NW_PatherionOk_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_PatherionOk_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_PatherionOk_15_00"); //Patherion ist sicher und die Schwarzmagier geschlagen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_PatherionOk_14_01"); //Das ist gut. Nun kann ich den Magierrat wieder einberufen. Ich werde sofort aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_PatherionOk_14_02"); //Wir werden uns im Klosterkeller treffen. Mit diesem Ring kommst du dort hin.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_PatherionOk_15_00"); //Patherion jest bezpieczny i czarne magowie sa pokonywani.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_PatherionOk_14_01"); //To dobra wiadomosc. Teraz moge przypomniec sobie Rade Czarnoksieznika. Natychmiast odejde.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_PatherionOk_14_02"); //Spotkamy sie w klasztornej piwnicy. Mozna sie tam dostac za pomoca tego pierscienia.
 
 	B_GiveInvItems	(self, hero, Mod_XardasBeamRing, 1);
 
-	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas hat sich auf den Weg zur Einberufung des Magierrates gemacht. Dieser findet im Klosterkeller statt. Er hat mir einen Ring gegeben, welcher mich dorthin bringen wird.");
+	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas postanowil zwolac Rade magów. Odbywa sie to w piwnicy klasztornej. Dal mi pierscionek, który mnie tam zaprowadzi.");
 
 	Mod_HS_XardasRat = 1;
 
@@ -505,7 +505,7 @@ INSTANCE Info_Mod_Xardas_NW_BshydalOk (C_INFO)
 	information	= Info_Mod_Xardas_NW_BshydalOk_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du jetzt den Rat einberufen?";
+	description	= "Czy mozecie teraz zadzwonic do rady?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_BshydalOk_Condition()
@@ -520,13 +520,13 @@ FUNC INT Info_Mod_Xardas_NW_BshydalOk_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_BshydalOk_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_BshydalOk_15_00"); //Kannst du jetzt den Rat einberufen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_BshydalOk_14_01"); //Ja, ich werde sofort aufbrechen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_BshydalOk_14_02"); //Wir werden uns im Klosterkeller treffen. Mit diesem Ring kommst du dort hin.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_BshydalOk_15_00"); //Czy mozecie teraz zadzwonic do rady?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_BshydalOk_14_01"); //Tak, odejde natychmiast.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_BshydalOk_14_02"); //Spotkamy sie w klasztornej piwnicy. Mozna sie tam dostac za pomoca tego pierscienia.
 
 	B_GiveInvItems	(self, hero, Mod_XardasBeamRing, 1);
 
-	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas hat sich auf den Weg zur Einberufung des Magierrates gemacht. Dieser findet im Klosterkeller statt. Er hat mir einen Ring gegeben, welcher mich dorthin bringen wird.");
+	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas postanowil zwolac Rade magów. Odbywa sie to w piwnicy klasztornej. Dal mi pierscionek, który mnie tam zaprowadzi.");
 
 	Mod_HS_XardasRat = 1;
 
@@ -568,12 +568,12 @@ FUNC INT Info_Mod_Xardas_NW_Rat_Dragon_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rat_Dragon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_00"); //(aufgebracht) Diese engstirnigen Ignoranten ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rat_Dragon_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_02"); //Ach, die Feuermagier haben Zweifel daran, ob die Bedrohung wirklich so groß ist, dass sie ihr Schicksal in die Hände eine "gottlosen Söldners und Delinquenten aus der Strafkolonie" legen müssten, wie sie es nannten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_03"); //Es muss wohl erst etwas Fatales geschehen, was sie von der Unmittelbarkeit der Gefahr überzeugt ...
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_00"); //(uderzone) Te ciasno myslace zapalniki....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rat_Dragon_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_02"); //Ach, die Feuermagier haben Zweifel daran, ob die Bedrohung wirklich so groß ist, dass sie ihr Schicksal in die Hände eine "Bezbozni najemnicy i przestepcy z kolonii karnej" legen müssten, wie sie es nannten.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon_14_03"); //Najpierw musi zdarzyc sie cos smiertelnego, co przekona ich o natychmiastowym niebezpieczenstwie.....
 
-	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas ist zwar beim Rat, der Rest will jedoch nicht teilnehmen, weil er die Bedrohung nicht wahrhaben will.");
+	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Xardas jest z Rada, ale reszta nie chce w niej uczestniczyc, poniewaz nie chce stawic czola zagrozeniu.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Rat_Dragon2 (C_INFO)
@@ -598,11 +598,11 @@ FUNC INT Info_Mod_Xardas_NW_Rat_Dragon2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rat_Dragon2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_00"); //(süffisant) So, der Überfall dämonischer Kreaturen auf das Kloster hat die Feuermagier doch noch von der Dringlichkeit unseres Anliegens überzeugen können.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_01"); //Bevor sie jedoch die weiterführenden Schritte im Kampf gegen Xeres erörtern werden, möchten sie die Gefahr gebannt sehen, die ihr Kloster heimgesucht hat.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_02"); //Du weißt vermutlich, was zu tun ist.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_00"); //Tak wiec atak demonicznych stworzen na klasztor przekonal Strazaków o pilnosci naszej sprawy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_01"); //Zanim jednak omówimy dalsze kroki w walce z Xeresem, chca oni zostac pozbawieni zagrozenia, jakie dotknelo ich klasztor.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Dragon2_14_02"); //Prawdopodobnie wiesz, co robic.
 
-	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Bevor die Feuermagier zum Treffen kommen, muss die Sache mit Drachen geklärt werden.");
+	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Zanim na spotkanie przyjda strazacy, nalezy rozstrzygnac sprawe smoków.");
 
 	Mod_HSNL_RatProblem = 0;
 };
@@ -629,11 +629,11 @@ FUNC INT Info_Mod_Xardas_NW_Rat_Unheil_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rat_Unheil_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_00"); //Leider sind wir noch nicht vollständig und können somit auch die weiteren Schritte im Kampf gegen Xeres nicht erörtern.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_01"); //Saturas sieht sich bei den Geschehnissen auf dem Weidenplateau mit nicht minder Bedrohlichem konfrontiert und wird erst zu uns stoßen, wenn diese Gefahr gebannt ist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_02"); //Du solltest ihn dabei nach deinen Möglichkeiten unterstützen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_00"); //Niestety, nie jestesmy jeszcze gotowi i dlatego nie mozemy dyskutowac o dalszych krokach w walce z Xeresem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_01"); //Satura jest konfrontowana z nie mniej groznymi wydarzeniami na plaskowyzu pastwiskowym i dolaczy do nas tylko wtedy, gdy to niebezpieczenstwo zostanie wyeliminowane.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Unheil_14_02"); //Powinienes go wspierac jak najwiecej.
 
-	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Saturas wird erst zum Rat stoßen, wenn die Probleme auf dem Weidenplateau beseitigt sind.");
+	B_LogEntry	(TOPIC_MOD_MAGIERRAT, "Satura nie pojawi sie w Radzie, dopóki problemy na plaskowyzu pastwiskowym nie zostana rozwiazane.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Rat_Ende (C_INFO)
@@ -715,15 +715,15 @@ FUNC INT Info_Mod_Xardas_NW_Rat_Ende_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rat_Ende_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Ende_14_00"); //Wir haben nur noch eine Möglichkeit. Wir brauchen Uriziel. Du wirst in den Schläfertempel gehen und es holen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Ende_14_01"); //Nur damit haben wir jetzt noch eine Chance. Nimm diese Teleportrune, damit kommst du hier raus und vor das Kloster.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Ende_14_00"); //Pozostala nam tylko jedna opcja. Potrzebujemy Uriziel. Pójdziesz do swiatyni sypialnej i dostaniesz ja.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rat_Ende_14_01"); //Tylko w ten sposób mamy teraz szanse. Wez ten teleport i wyjdz z niego i wejdz do klasztoru.
 
 	B_GiveInvItems	(self, hero, ItRu_TeleportMonastery, 1);
 
 	Log_CreateTopic	(TOPIC_MOD_URIZIEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_URIZIEL, LOG_RUNNING);
 	B_SetTopicStatus	(TOPIC_MOD_MAGIERRAT, LOG_SUCCESS);
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas sagt, dass ich Uriziel aus dem Schläfertempel holen muss. Es ist unsere einzige Chance.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas mówi, ze musze wyprowadzic Uriziel z podpodlogowej swiatyni. To nasza jedyna szansa.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_WoTempel (C_INFO)
@@ -734,7 +734,7 @@ INSTANCE Info_Mod_Xardas_NW_WoTempel (C_INFO)
 	information	= Info_Mod_Xardas_NW_WoTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo war doch gleih der Eingang zum Tempel?";
+	description	= "Gdzie bylo wejscie do swiatyni?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WoTempel_Condition()
@@ -747,9 +747,9 @@ FUNC INT Info_Mod_Xardas_NW_WoTempel_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WoTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoTempel_15_00"); //Wo war doch gleich der Eingang zum Tempel?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoTempel_14_01"); //In der Stadt der Orks. Dort wirst du einen Platz mit einer Säule finden. Von dort aus bist du in Xeres' Kammer gelangt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoTempel_14_02"); //Dort ist jedenfalls ein Gitter, hinter welchem sich der Schläfertempel erstreckt.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoTempel_15_00"); //Gdzie bylo wejscie do swiatyni?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoTempel_14_01"); //W miescie orków. Tam znajduje sie miejsce z kolumna. Stamtad dotarles do komory Xeres.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoTempel_14_02"); //W kazdym razie jest tu kratownica, za która rozciaga sie swiatynia sypialna.
 };
 
 INSTANCE Info_Mod_Xardas_NW_WieInTempel (C_INFO)
@@ -760,7 +760,7 @@ INSTANCE Info_Mod_Xardas_NW_WieInTempel (C_INFO)
 	information	= Info_Mod_Xardas_NW_WieInTempel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie soll ich in den Tempel kommen?";
+	description	= "Jak dojsc do swiatyni?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WieInTempel_Condition()
@@ -773,9 +773,9 @@ FUNC INT Info_Mod_Xardas_NW_WieInTempel_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WieInTempel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WieInTempel_15_00"); //Wie soll ich in den Tempel kommen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WieInTempel_14_01"); //Du musst vorsichtig sein, die Orks wurden stark von Xeres beeinflusst. Sie werden dein Ulu-Mulu nicht mehr anerkennen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WieInTempel_14_02"); //Ich weiß auch nicht, wie es im Tempel aussieht, also sei auf der Hut.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WieInTempel_15_00"); //Jak dojsc do swiatyni?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WieInTempel_14_01"); //Musisz byc ostrozny, orki sa pod silnym wplywem Xeresów. Nie rozpoznaja juz twojego Ulu-Mulu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WieInTempel_14_02"); //Nie wiem, jak to wyglada w swiatyni, wiec uwazajcie.
 };
 
 INSTANCE Info_Mod_Xardas_NW_UrizielKaputt (C_INFO)
@@ -786,7 +786,7 @@ INSTANCE Info_Mod_Xardas_NW_UrizielKaputt (C_INFO)
 	information	= Info_Mod_Xardas_NW_UrizielKaputt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Uriziel ist zerstört.";
+	description	= "Uriziel zostaje zniszczony.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_UrizielKaputt_Condition()
@@ -800,30 +800,30 @@ FUNC INT Info_Mod_Xardas_NW_UrizielKaputt_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_UrizielKaputt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_00"); //Uriziel ist zerstört.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_01"); //Das ist nicht gut. Uriziel war meine letzte und größte Hoffnung. Wir sind Xeres nun schutzlos ausgeliefert.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_02"); //Nicht unbedingt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_03"); //Was meinst du?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_04"); //Ich habe im Tempel einen Schamanen getroffen und er hat mir gesagt, dass Uriziel zerbrochen wurde.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_00"); //Uriziel zostaje zniszczony.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_01"); //To nie jest dobre. Uriziel byl moja ostatnia i najwieksza nadzieja. Jestesmy teraz bezbronni na lasce Xeres.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_02"); //Niekoniecznie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_03"); //Co myslisz?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_04"); //W swiatyni spotkalem szamana i powiedzial mi, ze Uriziel zostal zlamany.
 
 	B_GiveInvItems	(hero, self, ItMi_UrizielKaputt, 1);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_05"); //Er meinte auch, dass nun die Macht der drei Götter gebrochen sei. Was bedeutet das?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_06"); //Das bedeutet, dass wir noch eine Chance haben. Wie ich dir erzählt habe, gibt es den Göttern geweihte Waffen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_07"); //Wenn wir nun von jedem Gott eine Waffe haben und diese vereinen ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_08"); //... dann können wir Uriziel wieder herstellen. Was ist also zu tun?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_09"); //Wir brauchen die restlichen zwei Götterwaffen. Du musst sie suchen. Wir werde versuchen, eine Methode zu finden, um sie zu vereinen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_10"); //Geh zu Saturas, er hat sich mit der Geschichte der Götterwaffen beschäftigt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_11"); //Hier habe ich noch einige Beschwörungsspruchrollen, die dir vielleicht bei deiner Suche behilflich sein könnten.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_05"); //Powiedzial równiez, ze potega trzech bogów zostala teraz zlamana. Co to oznacza?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_06"); //Oznacza to, ze mamy jeszcze szanse. Jak wam powiedzialem, daja bogom swiecona bron.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_07"); //Jesli mamy teraz bron od kazdego Boga i zjednoczyc je.....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrizielKaputt_15_08"); //... wówczas mozemy przywrócic Uriziel. Co zatem nalezy zrobic?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_09"); //Potrzebujemy pozostalych dwóch boskich broni. Trzeba ja znalezc. Postaramy sie znalezc sposób na ich jednoczenie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_10"); //Idzcie do Satura, studiuje historie broni bogów.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_11"); //Oto kilka ról, które moga pomóc Ci w wyszukiwaniu.
 
-	B_ShowGivenThings	("7 Spruchrollen erhalten");
+	B_ShowGivenThings	("7 Przechowywanie rolek banerów");
 
 	CreateInvItems	(hero, ItSc_SumSkel, 5);
 	CreateInvItems	(hero, ItSc_SumRabbit, 2);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_12"); //Und dann gibt es noch etwas, was ich unter vier Augen mit dir besprechen möchte.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrizielKaputt_14_12"); //Jest jeszcze cos innego, co chce przedyskutowac z wami prywatnie.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas hat eine Idee, wie wir Uriziel wiederherstellen können. Dazu brauchen wir allerdings noch die restlichen zwei Götterwaffen. Saturas weiß mehr darüber.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas ma pomysl jak odnowic Uriziel. W tym celu jednak nadal potrzebujemy dwóch pozostalych rodzajów broni bogów. Saturas wie o tym wiecej.");
 
 	AI_StopProcessInfos	(self);
 
@@ -838,7 +838,7 @@ INSTANCE Info_Mod_Xardas_NW_UrnolKap4 (C_INFO)
 	information	= Info_Mod_Xardas_NW_UrnolKap4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ja, ich bin ganz Ohr.";
+	description	= "Tak, jestem uchem.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_UrnolKap4_Condition()
@@ -852,16 +852,16 @@ FUNC INT Info_Mod_Xardas_NW_UrnolKap4_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_UrnolKap4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_00"); //Ja, ich bin ganz Ohr.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_01"); //Ich kann spüren, dass Urnol sich auf Khorinis befindet ... und erscheint sich frei umherzubewegen, auch in bewohnten Gebieten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_02"); //Was?! Und es ist keinem etwas aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_03"); //Das ist ja eben das Beunruhigende. Er muss einen Weg gefunden zu haben, sich zu tarnen, zu verbergen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_04"); //Und dann kann ich noch zahlreiche andere diffuse dämonische Energien spüren, die ebenfalls zu Tag, als auch bei Nacht ihren Standort wechseln ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_05"); //Es scheinen merkwürdige Dinge im Verborgenen abzulaufen. Du musst versuchen zu ergründen, was vor sich geht. Nur so kannst du Urnol finden.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_06"); //Gut, ich verstehe ... hmm, wo sollte ich am besten meine Suche beginnen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_07"); //Benutze deinen Verstand. Dort, wo viele Menschen aufeinander treffen, ist auch die Chance am größten, dass jemandem etwas auffällt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_08"); //Tavernen sind immer eine gute Anlaufstelle. Höre und schaue dich aber auch in der Stadt und den Bauernhöfen um.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_09"); //Aber sei vorsichtig ... das Böse könnte in nächster Nähe lauern, ohne, dass es sich als solches zu erkennen gibt.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_00"); //Tak, jestem uchem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_01"); //Moge odczuc, ze Urnol jest na Khorinisie.... i wydaje sie poruszac swobodnie, nawet na obszarach zamieszkalych.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_02"); //Co? I nikt niczego nie zauwazyl?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_03"); //To jest niepokojace. Musial znalezc sposób na zamaskowanie sie, ukrycie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_04"); //Potem odczuwam wiele innych rozproszonych energii demonicznych, które zmieniaja ich polozenie zarówno w dzien jak i w nocy.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_05"); //Dziwne rzeczy wydaja sie dzielic w tajemnicy. Trzeba sie zastanowic, co sie dzieje. Tylko w ten sposób mozna znalezc Urnol.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_UrnolKap4_15_06"); //Zupelnie slusznie, rozumiem, ze.... hmm, gdzie powinienem rozpoczac wyszukiwanie?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_07"); //Uzywaj mózgu. Gdziekolwiek spotykaja sie ludzie, jest równiez najwieksza szansa, ze ktos cos zauwazy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_08"); //Tawerny sa zawsze dobrym miejscem do wyjscia. Sluchaj i rozejrzyj sie po miescie i gospodarstwach rolnych.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_UrnolKap4_14_09"); //Badz jednak ostrozny..... Zlo mogloby czaic sie w poblizu, nie uznajac sie za takie.
 
 	AI_StopProcessInfos	(self);
 
@@ -873,7 +873,7 @@ FUNC VOID Info_Mod_Xardas_NW_UrnolKap4_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_DAEMONISCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DAEMONISCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Xardas spürt Urnols Anwesenheit auf bewohntem Terrain um Khorinis, wie auch andere diffuse dämonische Energien. Ich soll mich umhören und umsehen, ob mir ungewöhnliche Dinge auffallen, und ihm dann Bericht erstatten. Ich sollte mich bei Tavernen, aber auch auf den Bauernhöfen und in der Stadt umhören.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Xardas wyczuwa obecnosc Urnola na zamieszkalym terenie wokól Khorinis, a takze inne rozproszone sily demoniczne. Mialem wiec zapytac i zobaczyc, czy zauwazylem cos niezwyklego, a nastepnie zglosic sie do niego. Powinienem zapytac o to przy tawernach, ale takze w gospodarstwach rolnych i w miescie.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Daemonisch (C_INFO)
@@ -884,7 +884,7 @@ INSTANCE Info_Mod_Xardas_NW_Daemonisch (C_INFO)
 	information	= Info_Mod_Xardas_NW_Daemonisch_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe Neues zu berichten.";
+	description	= "Mam doniesienia.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Daemonisch_Condition()
@@ -898,36 +898,36 @@ FUNC INT Info_Mod_Xardas_NW_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_00"); //Ich habe Neues zu berichten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_01"); //Ja, was hast du herausgefunden?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_00"); //Mam doniesienia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_01"); //Tak, czego sie dowiedziales?
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Rosi_Daemonisch))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_02"); //Leute verändern sich schlagartig, wenn sie in der Dunkelheit unterwegs waren.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_02"); //Ludzie zmieniaja sie nagle, gdy podrózuja w ciemnosci.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Babo_Daemonisch))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Opolos_Daemonisch))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_03"); //In Zusammenhang mit dem Klosterwein gibt es Seltsames zu erzählen.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_03"); //W polaczeniu z klasztornym winem sa dziwne rzeczy do powiedzenia.
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Babo_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_04"); //Der Novize Dyrian starb plötzlich, nachdem er in der Messe Klosterwein genossen hatte.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_05"); //Ein anderer Novize hat dabei gesehen, wie schwarzer Rauch aus ihm ausgetreten ist.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_04"); //Novice Dyrian zmarl nagle po spozyciu klasztornego wina na Mszy sw.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_05"); //Inny nowicjusz zobaczyl, jak wylal sie z niego czarny dym.
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_06"); //Rukhar trank viel Klosterwein, bevor er einige Leute abends nach draußen begleitete.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_07"); //Er kam alleine in die Taverne zurückgelaufen und war völlig verstört.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_08"); //Seine Begleiter kamen nach ihm unversehrt zurück.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_09"); //Am nächsten Morgen war Rukhar tot.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_10"); //In Orlans Taverne trinkt kaum noch jemand den Wein des Klosters.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_06"); //Rukhar wypil mnóstwo klasztornego wina, a wieczorem towarzyszyl niektórym ludziom na zewnatrz.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_07"); //Wrócil sam do tawerny i zostal calkowicie zaklócony.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_08"); //Jego towarzysze wrócili po nim bez obrazen.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_09"); //Nastepnego ranka Rukhar zmarl.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_10"); //W tawernie w Orlanie prawie nikt nie pije wina klasztornego.
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Opolos_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_11"); //Im Kloster sollen viele Novizen an Magenerkrankungen leiden und können keinen Klosterwein mehr genießen.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_11"); //W klasztorze wielu nowicjuszy cierpi na zaburzenia zoladkowe i nie moze juz cieszyc sie klasztornym winem.
 		};
 	};
 
@@ -935,8 +935,8 @@ FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 	|| (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Coragon_Daemonisch))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_12"); //Es gibt zahlreiche Menschen, die ungewöhnlich viel essen.
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_13"); //Und dennoch erscheinen sie alle ausgezehrt, verfallen körperlich zusehends.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_12"); //Jest wielu ludzi, którzy jedza wyjatkowo duzo.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_13"); //A jednak wszystkie wydaja sie wycienczone, wyraznie pogarszajace sie fizycznie.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Tengron_Daemonisch))
@@ -944,50 +944,50 @@ FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 	|| (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Pepe_Daemonisch))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_14"); //Einige Menschen wollen schwarze Schatten im Dunkeln erblickt haben.
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_15"); //Doch diesen Augenzeugen ergeht es zumeist nicht gut.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_14"); //Niektórzy ludzie chca czarnych cieni widocznych w ciemnosci.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_15"); //Ale ci naoczni swiadkowie zwykle nie radza sobie dobrze.
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Tengron_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_16"); //Tengron sitzt im Kerker.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_16"); //Tengron jest w lochu.
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Brian_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_17"); //Brian wurde von Paladinen getötet.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_17"); //Brian zostal zabity przez paladynów.
 
 			if (Mod_HQ_BrianDaemonisch == 2)
 			{
-				AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_18"); //Mich versuchten sie auch zu töten, als sie erfuhren, was Brian mir berichtet hatte.
+				AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_18"); //Próbowali mnie zabic, kiedy dowiedzieli sie, co Brian mi powiedzial.
 			};
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_19"); //Rukhar ist tot.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_19"); //Rukhar jest martwy.
 		};
 		if (Npc_KnowsInfo(hero, Info_Mod_Pepe_Daemonisch))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_20"); //Pepe hält sich versteckt und fürchtet um sein Leben.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_20"); //Pepe utrzymuje sie w ukryciu i obawy o swoje zycie.
 		};
 	};
 
 	if (Mod_HQ_PaladineDaemonisch == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_21"); //Ich sah untote Paladine nahe der Stadt, die nicht lange zuvor noch lebendig waren.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_21"); //Widzialem nieumarlych paladynów w poblizu miasta, którzy jeszcze niedlugo zyli.
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Tengron_Daemonisch))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Pepe_Daemonisch))
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_22"); //Manche sahen sogar, wie Menschen unter dem Einfluss der Schatten zu Boden sanken, zunächst wie leblos schienen und sich dann zuckend erhoben.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_22"); //Niektórzy zobaczyli nawet, ze pod wplywem cieni ludzie opadli na ziemie, poczatkowo wydawalo sie, ze nie maja zycia, a potem wyrastaja w twitch.
 	};
 
 	if (Mod_HQ_SPGesehen == TRUE)
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_23"); //Ich begegnete selbst schwarzen Schatten in der Nacht, die mich attackierten.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_23"); //Spotkalem nawet czarne cienie w nocy, która zaatakowala mnie.
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Rupert_Daemonisch3))
 		{
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_24"); //Der Bürger Rupert war es sogar, der mich zu ihnen lockte und davon sprach, ich würde ihnen beitreten, oder sterben.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_24"); //Nawet obywatel Rupert zwabil mnie i powiedzial, ze przylacze sie do nich lub umre.
 		};
 	};
 
@@ -995,42 +995,42 @@ FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 	|| (Npc_KnowsInfo(hero, Info_Mod_Pepe_Daemonisch))
 	|| (Mod_HQ_SPGesehen == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_25"); //Bei Beliar, wir schweben alle in größter Gefahr.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_26"); //Selbst ich hätte den Wald vor lauter Bäumen nicht gesehen ...
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_27"); //Wovon sprichst du?
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_28"); //Während wir unsere Augen auf die orkischen Horden im Minental richten und uns auf eine kriegerische Auseinandersetzung vorbereiten, infiltriert Xeres unbemerkt mit seinen Schattenwesen ganz Khorinis.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_29"); //Sie ergreifen Besitz von jedem Menschen, der ihnen begegnet, kontrollieren ihn und zehren ihn allmählich aus.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_30"); //Was zum Schluss bleibt, ist die leblose Hülle, die zum Untoten wird.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_31"); //Wenn wir uns nicht beeilen, wird bald jede Siedlung unter Xeres' Einfluss stehen.
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_32"); //Was können wir tun, um die Schattenwesen aufzuhalten?
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_25"); //Beliar sprawia, ze wszyscy jestesmy powaznie zagrozeni.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_26"); //Nawet ja nawet nie widzialbym lasu drzew....
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_27"); //O czym Pan mówi?
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_28"); //Odwracajac wzrok na orkiestrowe hordy w dolinie Minentala i przygotowujac sie do wojennej konfrontacji, Xeres przenika niezauwazalnie cieniste istoty w calym Khorini.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_29"); //Przejmuja posiadanie kazdej osoby, która spotykaja, kontroluja i stopniowo konsumuja.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_30"); //Pozostaje bezzyciowa powloka, która staje sie nieumarla.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_31"); //Jesli sie nie spieszymy, kazda osada znajdzie sie wkrótce pod wplywem Xeres.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_32"); //Co mozemy zrobic, aby powstrzymac cienie istot?
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Babo_Daemonisch))
 		|| (Npc_KnowsInfo(hero, Info_Mod_Orlan_Daemonisch))
 		|| (Npc_KnowsInfo(hero, Info_Mod_Opolos_Daemonisch))
 		{
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_33"); //Nun, deine Ausführungen in Zusammenhang mit dem Klosterwein lassen gesegnete Getränke als Möglichkeit erkennen, die Besessenen von ihrem Parasiten zu befreien.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_34"); //Soll ich jetzt etwa zu jedem hinrennen und ihn zu einem Schluck Klosterwein oder "Heilung der Besessenheit" überreden?
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_35"); //Um Beliars Willen, nein, natürlich nicht. Jetzt ist auch nicht der rechte Zeitpunkt für Possen.
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_36"); //Die Verbundenheit der Schattenwesen mit der Lebenskraft ihrer Wirte ist zu stark.
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_37"); //Ein so starker Trank würde zwar schlagartig den Dämonen bannen, aber auch das Leben der Betroffenen erlöschen lassen.
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_38"); //Versuche es ihnen unbemerkt in einer der Gaststätten beizumischen, oder die Nahrung an einem Alchemietisch damit zu tränken.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_39"); //(unwillig) In Ordnung, dann darf ich jetzt also einige Tränke zur Heilung von Besessenheit auftreiben.
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_40"); //Das wird glaube ich nicht notwendig sein. Hier.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_33"); //Otóz panskie uwagi w zwiazku z winem klasztornym wskazuja, ze blogoslawione napoje sa sposobem na uwolnienie obsesyjnych od pasozytów.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_34"); //Soll ich jetzt etwa zu jedem hinrennen und ihn zu einem Schluck Klosterwein oder "Uzdrowienie obsesji" überreden?
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_35"); //Dla Beliara nie, oczywiscie nie. Teraz nie czas na wybryki.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_36"); //Powiazanie istot cieni z sila zyciowa ich gospodarzy jest zbyt silne.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_37"); //Tak mocny eliksir nagle wypedzilby demony, ale jednoczesnie zgasilby zycie poszkodowanych.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_38"); //Spróbuj wymieszac je niezauwazalnie w jednej z restauracji lub nasaczyc jedzenie przy stole alchemii.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_39"); //(umyslnie) Wszystko w porzadku, wiec teraz moge dostac eliksiry do uzdrowienia obsesji.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_40"); //Nie sadze, by bylo to konieczne. Tutaj.
 
 			B_GiveInvItems	(self, hero, ItMi_HolyWater, 3);
 
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_41"); //Und was soll ich jetzt damit?
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_42"); //An einem Alchemietisch einen Feldknöterich zu den geweihten Wässerchen mischen und damit drei Tränke zur Heilung der Besessenheit erhalten ...
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_43"); //Woher ...
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_44"); //Ich war einst selbst Feuermagier - vergiss das nicht - und weiß somit Bescheid, woraus sich die überteuerten Tränke des Klosters zusammensetzen.
-			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_45"); //Ach so, stimmt, vergesse ich bisweilen, da ich dich bisher immer nur in der dunklen Robe zu Gesicht bekam ...
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_46"); //Und vergiss nicht, sowohl bei der Stadt als auch bei Orlan und Großbauernhof vorbeizuschauen ... und vergewissere dich jeweils, ob du auch Erfolg hattest.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_41"); //Co mam z tym zrobic?
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_42"); //Na stole alchemicznym, wymieszaj chwast pola z poswieconymi malymi wodami, aby uzyskac trzy mikstury dla uzdrowienia obsesji....
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_43"); //Jak.....?
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_44"); //Kiedys sam bylem czarodziejem ognia - nie zapominajmy o tym - i dlatego wiem, na co skladaja sie drogocenne eliksiry klasztoru.
+			AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch_15_45"); //O, to prawda, czasami zapominam, bo do tej pory widzialem cie tylko w ciemnej szacie......
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_46"); //I nie zapomnij zwiedzic miasta, Orlanu i wielkiego gospodarstwa rolnego.... i sprawdzic, czy odniesliscie sukces.
 
 			Mod_HQ_Daemonisch = 1;
 
 			B_GivePlayerXP	(800);
 
-			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Aha, also übernehmen die Schattenwesen die Kontrolle über Menschen. Ich soll bei der Gaststätte in der Stadt, bei Orlan und dem Großbauernhof vorbeischauen, um geheiligte Tränke ins Essen und Trinken zu mischen. Das sollte die Parasiten aus ihren Wirten bannen ... wovon ich mich aber jedes Mal selbst überzeugen sollte.");
+			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Uh-huh, wiec istoty cieni przejmuja kontrole nad ludzmi. Zamierzam zatrzymac sie przy pubie w miescie, Orlanie i wielkiej farmie, aby mieszac swiete eliksiry z jedzeniem i napojem. Powinno to zakazac pasozytom przebywania u ich zywicieli.... co powinienem sobie za kazdym razem zobaczyc.");
 
 			if (Npc_KnowsInfo(hero, Info_Mod_Babo_Daemonisch))
 			{
@@ -1039,10 +1039,10 @@ FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_47"); //Nun, das weiß ich selbst leider noch nicht so genau.
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_48"); //Du musst unbedingt versuchen, noch mehr bei Gaststätten und Siedlungen in der Umgebung herauszufinden.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_47"); //Cóz, ja jeszcze nie wiem.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_48"); //Konieczne jest, aby dowiedziec sie wiecej o restauracjach i osadach w okolicy.
 
-			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Ich muss versuchen, noch mehr bei Siedlungen und Gaststätten der Umgebung in Erfahrung zu bringen.");
+			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Musze spróbowac dowiedziec sie wiecej o miejscowosciach i restauracjach w okolicy.");
 		};
 	}
 	else if (Npc_KnowsInfo(hero, Info_Mod_Tengron_Daemonisch))
@@ -1051,11 +1051,11 @@ FUNC VOID Info_Mod_Xardas_NW_Daemonisch_Info()
 	|| (Npc_KnowsInfo(hero, Info_Mod_Pepe_Daemonisch))
 	|| (Mod_HQ_PaladineDaemonisch == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_49"); //Was du mir berichtest, ist äußert beunruhigend. Versuch unbedingt mehr zu erfahren. Mir schwant Böses ...
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_49"); //To, co mi mówisz, jest niezwykle niepokojace. Spróbuj dowiedziec sie wiecej. Slubuje zlo....
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_50"); //Sehr mysteriös. Das könnten wichtige Anhaltspunkte sein. Versuch mehr herauszufinden.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch_14_50"); //Bardzo tajemniczy. Moga to byc wazne wskazówki. Spróbuj dowiedziec sie wiecej.
 	};
 };
 
@@ -1067,7 +1067,7 @@ INSTANCE Info_Mod_Xardas_NW_Daemonisch2 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Daemonisch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Tränke an die Befallenen gebracht.";
+	description	= "Przynioslem eliksiry zarazonym osobom.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Daemonisch2_Condition()
@@ -1081,16 +1081,16 @@ FUNC INT Info_Mod_Xardas_NW_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Daemonisch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch2_15_00"); //Ich habe die Tränke an die Befallenen gebracht. Die Gefahr sollte somit erkannt und gebannt sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_01"); //Wirklich, gebannt? Sehr nachlässig, während doch noch die Horden dieser Seelenpeiniger durch die Nacht streifen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch2_15_02"); //Ich soll doch nicht etwa ...?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_03"); //Doch, du sollst ... und bei der Gelegenheit kannst du dich gleich noch nach Hinweisen umblicken.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_04"); //Urnol treibt sich noch immer hier irgendwo umher, vergiss das nicht ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_05"); //Und denk daran, die Schatten meiden das Licht. Nutze dieses Wissen, wenn du ihnen gegenübertrittst.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch2_15_00"); //Przynioslem eliksiry zarazonym osobom. W ten sposób nalezy rozpoznawac i zapobiegac zagrozeniom.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_01"); //Naprawde, zakazane? Bardzo nieostrozni, zas hordy tych dreczycieli duszy ciagle wedruja po nocy.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch2_15_02"); //Nie powinienem....?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_03"); //Tak, powinienes..... i przy tej okazji mozna jeszcze rozejrzec sie za wskazówkami.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_04"); //Urnol wciaz sie tu gdzies kreci, nie zapominajmy o tym....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch2_14_05"); //I pamietaj, cienie unikaja swiatla. Wykorzystaj te wiedze, kiedy sie z nimi spotkasz.
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Xardas will, dass ich die Seelenpeiniger besiege und dabei gleich nach weiteren Hinweisen Ausschau halte. Schließlich treibt sich Urnol noch immer irgendwo hier herum.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Xardas chce, abym pokonal dreczycieli duszy i szukal dalszych wskazówek. Wszakze Urnol ciagle tu wisi.");
 
 	Mod_HQ_Daemonisch = 3;
 
@@ -1122,20 +1122,20 @@ FUNC INT Info_Mod_Xardas_NW_Daemonisch3_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Daemonisch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_00"); //Ich spüre Urnols Präsenz nicht mehr in der Umgebung. Folglich warst du erfolgreich?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch3_15_01"); //Ja, seine Maskerade hat ein Ende. Er sprach davon, Xeres’ Armeen zu befehligen und dürfte sich zurück ins Minental begeben haben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_02"); //Ausgezeichnet. Sobald du alle Götterwaffen bei dir hast, sollte dem Ende von Xeres' Lakaien nichts mehr im Wege stehen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_00"); //Nie czuje juz obecnosci Urnola w okolicy. Czyli odniesliscie sukces?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Daemonisch3_15_01"); //Tak, jego maskarada. Mówil o dowodzeniu armiami Xeresa i musial wrócic do Minentala.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_02"); //Doskonaly. Kiedy masz juz wszystkie boskie bronie z wami, nic nie powinno stac na drodze do konca kluczy Xeres' a. Niech nic nie stoi na przeszkodzie.
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_03"); //Hmm, Urnol sprach also von der orkischen Armee.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_04"); //Wie ich gehört habe, machten sie das alte Lager nieder und richteten dort ihren neuen Stützpunkt ein. Vielleicht wirst du ihn dort vorfinden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_05"); //Hier hast du eine Teleportspruchrolle in das Alte Lager und Spruchrollen, welche dafür sorgen werden, dass du unerkannt bleibst.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_03"); //Hmm, Urnol mówil o armii orkiestrowej.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_04"); //Jak slyszalem, zniszczyli stary obóz i zalozyli tam swoja nowa baze. Moze go tam znajdziesz.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_05"); //Tutaj masz teleport mówiacy role w starej roli w starej obozie i role zaklecia, co sprawi, ze pozostaniesz niezauwazony.
 
 	CreateInvItems	(hero, ItSc_TeleportOldcamp, 1);
 	CreateInvItems	(hero, ItSc_TrfSkeleton, 2);
 
-	B_ShowGivenThings	("3 Spruchrollen erhalten");	
+	B_ShowGivenThings	("3 Utrzymywanie listew rolkowych");	
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_06"); //Viel Erfolg.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Daemonisch3_14_06"); //Powodzenia.
 
 	B_GivePlayerXP	(400);
 
@@ -1155,7 +1155,7 @@ INSTANCE Info_Mod_Xardas_NW_HolyHammer (C_INFO)
 	information	= Info_Mod_Xardas_NW_HolyHammer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du den Heiligen Hammer noch?";
+	description	= "Czy nadal masz swiety mlotek?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_HolyHammer_Condition()
@@ -1169,13 +1169,13 @@ FUNC INT Info_Mod_Xardas_NW_HolyHammer_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_HolyHammer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HolyHammer_15_00"); //Hast du den Heiligen Hammer noch?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HolyHammer_14_01"); //Natürlich habe ich den Hammer noch. Du denkst doch nicht etwa, dass ich nicht weiß, was es mit ihm auf sich hat.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HolyHammer_14_02"); //Schließlich war ich vor der Erschaffung der Barriere Oberhaupt der Feuermagier. Hier ist er.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HolyHammer_15_00"); //Czy nadal masz swiety mlotek?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HolyHammer_14_01"); //Oczywiscie nadal mam mloteczek. Nie wydaje mi sie, ze nie wiem, co on ma do roboty.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HolyHammer_14_02"); //Wszakze przed stworzeniem zapory bylem szefem Strazaków. Tutaj jest, Panie Panu.
 
 	B_GiveInvItems	(self, hero, Holy_Hammer_MIS, 1);
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas hat mit den heiligen Hammer gegeben.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Xardas dal swietym mlotkiem.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Goetterschwerter (C_INFO)
@@ -1186,7 +1186,7 @@ INSTANCE Info_Mod_Xardas_NW_Goetterschwerter (C_INFO)
 	information	= Info_Mod_Xardas_NW_Goetterschwerter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab die drei Waffen.";
+	description	= "Dostalem trzy pistolety.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Goetterschwerter_Condition()
@@ -1242,46 +1242,46 @@ FUNC INT Info_Mod_Xardas_NW_Goetterschwerter_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Goetterschwerter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_00"); //Ich hab die drei Waffen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_01"); //Ausgezeichnet! Mit der Macht der drei Götter sollten wir prinzipiell dazu in der Lage sein, Uriziel wiederherzustellen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_02"); //Gut. Wann werdet ihr das Ritual vollziehen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_03"); //Nun ... die Frage sollte viel eher lauten, "wo".
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_04"); //Wir haben intensiv nach einem geeigneten Ritualplatz gesucht ... sind jedoch nicht fündig geworden auf Khorinis.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_05"); //Was? Wie kann das sein? Jharkendar ist doch der Ursprung der alten Kultur.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_06"); //Ja, zweifelsohne gab es hier auch einst solche Ritualstätten ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_07"); //Während der Schreckensherrschaft von Xeres müssen diese jedoch zerstört worden sein ... oder von den Gezeiten abgetragen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_08"); //Und wie wollen wir dann Uriziel wiederherstellen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_09"); //Darauf wollte ich gerade zu sprechen kommen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_10"); //Quellen geben preis, dass viele Erbauer sich der Verfolgung durch Xeres entzogen, indem sie Portale zu anderen Regionen der Welt öffneten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_11"); //Unter ihnen waren auch einige Priester und Gelehrte, welche dem Morden entkommen waren.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_12"); //Ohne sie wären die Teleportationsvorgänge über große Distanz so vieler Menschen auch nicht möglich gewesen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_13"); //Wir konnten die Zielkoordinaten eines ihrer Portale entschlüsseln und glauben, dass es sich um eine Insel handeln muss, weitab vom Festland.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_14"); //Und ihr erhofft euch nun, dort die benötigte Ritualstätte zu finden?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_15"); //Ja, so unsere Erwartung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_16"); //Wir haben nun unter großem Aufwand Foki aus magischem Erz so justiert, dass sie den Teleport nachvollziehen sollten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_17"); //Dann muss man also nur noch die Teleportflamme durchschreiten und sich dort umsehen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_18"); //Genau. Vorerst kann jedoch nur eine Person hindurchgehen. Das magische Gefüge ist noch sehr instabil.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_19"); //Dieser Pionier müsste dann eine der Teleportplattformen aktivieren, die sich zweifelsohne auf der Insel befinden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_20"); //Dann bestünde nämlich eine stabile magische Verbindung zwischen hier und dort.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_21"); //Ach so. Ich vermute mal, dass die Wahl auf mich gefallen ist?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_22"); //Genau. Wir wissen nämlich nicht genau, was uns dort erwartet.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_23"); //Die Insel ist aller Voraussicht nach seit langem wieder verlassen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_24"); //Es könnten dort viele Gefahren lauern, Kreaturen längst vergangener Zeit, magische Geschöpfe und Wächter.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_25"); //Auch heißt es, die Insel sei aus Feuer geboren, welches den Tiefen des Ozeans entsprang.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_26"); //Es könnte sich also als Umgebung herausstellen, der nicht jeder gewachsen ist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_27"); //Da wir jedoch möglicherweise nur einen einzigen Versuch haben, fiel unsere Wahl auf den Mann, der sich schon oft durch seine Taten hervorgehoben hat, denjenigen, der dem Tode viele Male entrann und dem die Götter stets gewogen waren. Auf dich.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_28"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_29"); //Wir haben bereits einen magischen Fokus aus Erz durch die Teleportflamme geschickt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_30"); //Sobald du dort bist, musst du nur noch eine Teleportplattform finden und sie mit dem Fokus aktivieren ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_31"); //In Ordnung. Wann soll ich losgehen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_32"); //Die Teleportflamme steht für dich bereit und du kannst jederzeit durchgehen, wenn du dich so weit fühlst.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_33"); //Hier hast du den Schlüssel zur Tür, damit du den Teleporter erreichen kannst.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_00"); //Dostalem trzy pistolety.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_01"); //Doskonaly! Majac moc trzech bogów, powinnismy w zasadzie byc w stanie przywrócic Uriziel.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_02"); //Dobre. Kiedy przeprowadzisz rytual rytualu?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_03"); //.... die Frage sollte viel eher lauten, "gdzie".
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_04"); //Intensywnie szukalismy odpowiedniego miejsca na rytual.... nie stwierdzono u Khorinis.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_05"); //Co? Jak to moze byc mozliwe? Jharkendar jest zródlem starej kultury.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_06"); //Tak, bez watpienia byly tu kiedys takie miejsca rytualu.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_07"); //Za panowania Xeres' a terroru musialy one jednak zostac zniszczone..... lub oslabione przez plywy.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_08"); //A jak mamy zamiar przywrócic Uriziel?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_09"); //Wlasnie o tym wlasnie mówilem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_10"); //Zródla ujawniaja, ze wielu budowniczych unikalo przesladowan Xeres, otwierajac portale do innych regionów swiata.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_11"); //Wsród nich byli takze kaplani i uczeni, którzy uciekli przed morderstwami.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_12"); //Bez nich nie bylyby mozliwe procesy teleportacyjne na duzych odleglosciach tak wielu ludzi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_13"); //Bylismy w stanie rozszyfrowac wspólrzedne docelowe jednego z ich portali i sadzimy, ze musi to byc wyspa daleko od ladu.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_14"); //A teraz masz nadzieje znalezc tam niezbedne miejsce obrzedowe?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_15"); //Tak, wiec nasze oczekiwania.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_16"); //Teraz dostosowalismy ostrosc magicznej rudy, aby mogli sledzic teleporty.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_17"); //Wtedy wystarczy tylko przejsc przez plomien teleportów i rozejrzec sie dookola.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_18"); //Dokladnie. Na razie jednak tylko jedna osoba moze przejsc. Magiczna struktura jest wciaz bardzo niestabilna.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_19"); //Ten pionier musialby wtedy aktywowac jedna z platform teleportowych, które bez watpienia znajduja sie na wyspie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_20"); //Potem bedzie stabilny magiczny zwiazek pomiedzy tu i tam.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_21"); //Och, widze. Przypuszczam, ze wybór byl mój?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_22"); //Dokladnie. Nie wiemy dokladnie, co nas tam czeka.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_23"); //Wyspa jest prawdopodobnie od dawna opuszczona.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_24"); //Mogloby sie tam kryc wiele niebezpieczenstw, stworzen dawnych czasów, magicznych istot i opiekunów.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_25"); //Mówi sie równiez, ze wyspa zrodzila sie z ognia, który pochodzil z glebin oceanu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_26"); //Moze sie wiec okazac, ze jest to srodowisko, z którym nie kazdy moze sobie poradzic.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_27"); //Jednak, jak mozemy miec tylko jedna próbe, wybralismy czlowieka, który czesto wyróznial sie swoimi czynami, czlowieka, który wielokrotnie uciekal przed smiercia i do którego zawsze wazono bogów. Oto dla Ciebie.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_28"); //Widze.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_29"); //Juz wyslalismy magiczne ognisko rudy przez plomien teleportu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_30"); //Kiedy juz tam jestes, wystarczy tylko znalezc platforme teleportowa i aktywowac ja z ostroscia....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Goetterschwerter_15_31"); //Wszystkie sluszne, wszystkie sluszne. Kiedy chcesz abym wyjechal?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_32"); //Plomien teleportowy jest gotowy dla Ciebie i mozesz przejsc w kazdej chwili, kiedy czujesz sie tak daleko.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_33"); //Oto klucz do drzwi, dzieki któremu mozna dotrzec do teleportera.
 
 	B_GiveInvItems	(self, hero, ItKe_RitualsinselDoor, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_34"); //Der Segen der Götter möge dich begleiten.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Goetterschwerter_14_34"); //Niech wam towarzyszy blogoslawienstwo bogów.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Na schön, das Ritual soll auf einer fernen Insel erfolgen. Dazu muss ich jedoch durch die Teleportflamme im Klosterkeller und eine Teleportplattform auf der Insel aktivieren. Der magische Fokus dafür befindet sich bereits vor Ort.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Dobrze, ze rytual odbywa sie na odleglej wyspie. W tym celu musze jednak aktywowac sie poprzez plomien teleportowy w piwnicy klasztornej i platforme teleportowa na wyspie. Magiczny punkt ciezkosci jest juz na miejscu.");
 
 	B_GivePlayerXP	(1000);
 
@@ -1320,27 +1320,27 @@ FUNC INT Info_Mod_Xardas_NW_Trimedron_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Trimedron_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_00"); //Du bist zurück! Ich darf also annehmen, dass du erfolgreich warst?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_01"); //Ja, der Teleporter ist aktiviert. Und ich konnte Neues in Erfahrung bringen ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_02"); //Berichte ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_03"); //Auf der Insel befindet sich tatsächlich eine Zeremoniestätte.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_04"); //Diese wird von einem Geist der alten Kultur bewacht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_05"); //Ein potentieller Zeuge vorangegangener Jahrhunderte? Vortrefflich! Erzähl weiter ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_06"); //Er berichtete mir, dass die Kultur auf der Insel durch eine Naturkatastrophe ausgelöscht wurde. Ihre Siedlung ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_07"); //(unterbricht) Das ist tragisch ... aber von größerer Wichtigkeit als diese Einzelheiten ist der Zugang zur Ritualstätte. Wie steht es darum?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_08"); //Er hat Bedingungen gestellt, ehe er uns Einlass gewährt.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_09"); //Ich soll ihm als Zeugnis der drohenden Gefahr die Seelensteine der Machtträger bringen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_10"); //Die fünf Machtträger?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_11"); //Nun, da wir uns ihrer früher oder später hätten entledigen müssen, wird es nur bedeuten, diese Aufgabe vorzuziehen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_12"); //Den Seelenstein des Schläfers werden wir jedoch schwerlich bergen können.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_13"); //Er wird der Zwischenwelt nicht mehr so schnell entrinnen können.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_14"); //Was ist mit den anderen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_15"); //Nun, ein weiterer Machtträger, war, wie schon erwähnt, schwächlicher Art.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_16"); //Dies geben die lückenhaften Quellen von Xeres' Gefolgsleuten aus der Zeit seiner Schreckensherrschaft preis.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_17"); //Jedoch können wir nichts Näheres zu diesem Geschöpf sagen ... weder, wo es sich zur Zeit befindet, noch, ob es überhaupt erwacht ist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_18"); //Geh zu Pyrokar, er hat sich mehr mit den Machtträgern befasst.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_00"); //Wracasz! Wiec biore to za to, ze miales odniesc sukces?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_01"); //Tak, teleporter jest aktywny. I poznalem cos nowego....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_02"); //sprawozdania.....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_03"); //Na wyspie znajduje sie miejsce ceremonialne.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_04"); //Strzeze go duch starozytnej kultury.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_05"); //Potencjalne swiadectwo minionych stuleci? Doskonaly! Idz dalej.....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_06"); //Powiedzial mi, ze kultura wyspy zostala zniszczona przez kleske zywiolowa. Ich osada....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_07"); //(przerwania) To jest tragiczne w skutkach..... ale wazniejszy niz te szczególy jest dostep do miejsca obrzedowego. Jaki jest wynik?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_08"); //Zrobil warunki zanim nas wpuscil.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_09"); //Mam go przywiezc duszy tych, którzy sprawuja wladze jako swiadectwo zblizajacego sie niebezpieczenstwa.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_10"); //Pieciu Powerbearers?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_11"); //Teraz, gdy predzej czy pózniej powinnismy sie ich wczesniej czy pózniej pozbyc, bedzie to oznaczac tylko, ze to zadanie jest lepsze.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_12"); //Nie bedziemy jednak w stanie odzyskac kamienia duszy spiwora.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_13"); //Nie bedzie w stanie tak szybko uciec przed swiatem posrednim.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trimedron_15_14"); //A co z innymi?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_15"); //Cóz, inny nosnik energii byl, jak juz wspomniano, slaby.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_16"); //Ujawniaja to niejednolite zródla zwolenników Xeresa z czasów jego panowania terroru.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_17"); //Nie mozemy jednak juz nic wiecej powiedziec o tym stworzeniu..... ani to, gdzie sie obecnie znajduje, ani czy w ogóle sie obudzil.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_18"); //Idz do Pyrokar, bardziej interesowal sie uprawnieniami, które mu sie naleza.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Pyrokar kann mir hoffentlich mehr über die Aufenthaltsorte der Machtträger sagen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Mam nadzieje, ze Pyrokar bedzie mógl opowiedziec mi wiecej o miejscu, w którym znajduja sie ci, którzy sprawuja wladze.");
 
 	if (Mod_Gilde == 2)
 	{
@@ -1357,14 +1357,14 @@ FUNC VOID Info_Mod_Xardas_NW_Trimedron_Info()
 	if (hero.guild == GIL_VLK)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Aaron_Party))
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_19"); //Pyrokar will Khorinis übrigens erst verlassen, wenn er Patherion in Sicherheit weiß.
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_20"); //Du solltest dich also noch darum kümmern, bevor wir Khorinis verlassen werden.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_19"); //Pyrokar nie chce opuscic Khorinisa, dopóki nie wie, ze Patherion jest bezpieczny.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_20"); //Wiec powinienes sie tym zajac zanim opuscimy Khorinis.
 	}
 	else
 	{
 		AUFSUCHENACHSEELENSTEINE = 1;
 
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_21"); //Wir werden uns dann schon auf den Weg zur Insel machen. Triff mich dort, wenn du den Aufenthaltsort der Ritualstätte gefunden hast.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Trimedron_14_21"); //Udamy sie na wyspe. Spotkaj mnie tam, gdy znajdziesz lokalizacje strony obrzedowej.
 	};
 };
 
@@ -1388,16 +1388,16 @@ FUNC INT Info_Mod_Xardas_NW_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Irdorath_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_00"); //Für den Seelenstein auf der Insel wirst du ein Schiff und eine Mannschaft brauchen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Irdorath_15_01"); //Schiff und Mannschaft?! Wo soll ich das auf die Schnelle herbekommen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_02"); //Nun, im Hafen der Stadt Khorinis liegt ein Schiff vor Anker.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_03"); //Die Feuermagier des Klosters könnten versuchen positiv auf die Paladine einzuwirken, sodass sie es dir zur Verfügung stellen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_04"); //Und eine Mannschaft ... nun, der Besuch der Insel wird wohl kein leichtes Unterfangen werden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_05"); //Neben Männern, die im Kampf mit dem Schwert geschult sind, solltest du unter allen Umständen auch Magier mit an Bord haben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_06"); //Deine Weggefährten aus der Strafkolonie sollten dir auf jeden Fall bei der Suche nach geeigneten Leuten helfen können.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Irdorath_15_07"); //Gut, dann kann ich also daran gehen, Leute anzuheuern.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_08"); //Ja, mach das ... von meiner Seite kann ich dich noch auf Myxir und Raven hinweisen, als mögliche Begleiter ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_09"); //Nun gut. Beliar möge dich bei deiner Suche unterstützen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_00"); //Do kamienia duszy na wyspie potrzebny bedzie statek i zaloga.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Irdorath_15_01"); //Statek i zaloga! Gdzie mam to zrobic w pospiechu?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_02"); //Cóz, w porcie miasta Khorinis znajduje sie statek na kotwicy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_03"); //Magicy klasztoru mogliby spróbowac pozytywnie wplynac na paladynów, aby mogli oddac je do waszego dyspozycji.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_04"); //A zaloga.... Dobrze, zwiedzanie wyspy nie bedzie latwym przedsiewzieciem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_05"); //Oprócz mezczyzn, którzy sa przeszkoleni w grach miecznikowych, nalezy miec magów na pokladzie w kazdych okolicznosciach.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_06"); //Twoi towarzysze z kolonii karnej powinni byc w stanie pomóc Ci znalezc odpowiednie osoby.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Irdorath_15_07"); //No cóz, wtedy moge zaczac zatrudniac ludzi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_08"); //Tak, zrób to.... z mojej strony nadal moge wskazac Ci Myxir i Raven, jak to mozliwe, towarzyszy....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Irdorath_14_09"); //Bardzo dobrze. Niech Beliar pomoze Ci w wyszukiwaniu.
 
 	Pal_213_Schiffswache.aivar[AIV_PASSGATE] = TRUE;
 
@@ -1413,7 +1413,7 @@ FUNC VOID Info_Mod_Xardas_NW_Irdorath_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_HQ_CREW, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_HQ_CREW, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Ok, dann darf ich mir also eine Mannschaft zusammensuchen, mit welcher ich zur Insel aufbreche, um den Seelenstein zu bergen. Xardas riet mir, auch Magier mitzunehmen und bei der Suche nach fähigen Leuten meine Freunde Milten, Gorn, Diego und Lester zu konsultieren. Er selbst schlug mir noch Myxir und Raven als mögliche Kandidaten vor.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Ok, wtedy moge odebrac zespól, z którym udaje sie na wyspe, aby odzyskac dusze kamienia. Xardas radzil mi zabrac ze soba magików i skonsultowac sie z moimi przyjaciólmi Miltenem, Gorn, Diego i Lester w poszukiwaniu zdolnych ludzi. Sam zaproponowal Myxir i Raven jako potencjalnych kandydatów.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Kap6 (C_INFO)
@@ -1436,19 +1436,19 @@ FUNC INT Info_Mod_Xardas_NW_Kap6_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Kap6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_00"); //Freust du dich über meine kleine Überraschung?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Kap6_15_01"); //Es ist schon beruhigend, nicht allein zu sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_02"); //Ich habe da aber noch etwas für dich.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_00"); //Cieszy Cie moja mala niespodzianka?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Kap6_15_01"); //To pocieszajace, ze nie mozna byc samotnym.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_02"); //Mam jeszcze cos dla Ciebie.
 
 	B_GiveInvItems	(self, hero, ItRu_TeleportUW, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_03"); //Das ist das Produkt langer schweißtreibender Nächte. Ich habe einen Weg gefunden, wie ich euch direkt in Xeres' Welt bringen kann.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_04"); //Wenn meine Berechnungen stimmen, solltet ihr ganz in der Nähe von Xeres' Tempel materialisieren. Der Rest liegt dann an euch.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Kap6_15_05"); //Solange wir nicht direkt in seiner Arena auftauchen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_06"); //Das wird schon nicht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_07"); //(holt tief Luft) Damit ist nun alles gesagt. Mögen die Götter mit euch sein.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_03"); //Jest to efekt dlugich spoconych nocy. Znalazlem sposób, abys trafil do swiata Xeres.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_04"); //Jesli moje wyliczenia sa poprawne, powinienes zmaterializowac sie w poblizu swiatyni Xeres. Reszta zalezy od Ciebie.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Kap6_15_05"); //Chyba ze pojawimy sie bezposrednio na jego arenie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_06"); //To sie nie zdarzylo.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Kap6_14_07"); //Teraz wszystko zostalo powiedziane. Niech bogowie beda z wami.
 
-	B_LogEntry	(TOPIC_MOD_XERES, "Diego, Lester, Milten und Gorn sind zu meiner Unterstützung herangeeilt. Xardas hat uns alle mit Teleportern in die Nähe von Xeres' Tempel ausgestattet. Nun kann es losgehen!");
+	B_LogEntry	(TOPIC_MOD_XERES, "Diego, Lester, Milten i Gorn przyszli mi z pomoca. Xardas wyposazyl nas wszystkich w teleporterów niedaleko swiatyni Xeres. Teraz mozemy zaczac!");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Argez (C_INFO)
@@ -1459,7 +1459,7 @@ INSTANCE Info_Mod_Xardas_NW_Argez (C_INFO)
 	information	= Info_Mod_Xardas_NW_Argez_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Argez getroffen.";
+	description	= "Spotkalem Argeza.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Argez_Condition()
@@ -1473,8 +1473,8 @@ FUNC INT Info_Mod_Xardas_NW_Argez_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Argez_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argez_15_00"); //Ich habe Argez getroffen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argez_14_01"); //Sehr gut! Behalte ihn, wenn möglich, im Auge.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argez_15_00"); //Spotkalem Argeza.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argez_14_01"); //Bardzo dobrze! Jesli jest to mozliwe, zwróc na niego uwage.
 
 	B_GivePlayerXP	(50);
 };
@@ -1500,13 +1500,13 @@ FUNC INT Info_Mod_Xardas_NW_NachAufnahmeQuest_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_NachAufnahmeQuest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_00"); //Du kommst mir genau richtig. Ich habe etwas entdeckt, was mit diesem Buch, welches du Ryan abgenommen hast, zu tun hat.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_15_01"); //Um was geht es?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_02"); //Auf dem Buch scheint ein Schutzzauber zu liegen, welcher verhindern soll, dass man es lesen kann. Dieser Zauber macht den Inhalt nur noch interessanter.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_03"); //Deshalb brauche ich deine Hilfe.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_15_04"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_05"); //Das Buch kann nur durch einen passenden Bannbrecher geöffnet werden. Dazu fehlt mir aber hier das nötige Wissen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_06"); //Ironischerweise befindet sich die Lösung, wie der Schutzzauber zu brechen ist, in einem weiteren Buch, einem Almanach.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_00"); //Jestes na czasie. Odkrylem cos z ta ksiazka, która zdjales Ryan.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_15_01"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_02"); //Wydaje sie, ze na ksiazce widnieje zaklecie ochronne, które ma uniemozliwic przeczytanie ksiazki. Ten zaklecie tylko sprawia, ze tresc staje sie bardziej interesujaca.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_03"); //Dlatego potrzebuje Twojej pomocy.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_15_04"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_05"); //Ksiazke mozna otworzyc tylko przez odpowiedni wylacznik. Ale nie posiadam niezbednej wiedzy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_14_06"); //Jak na ironie, rozwiazanie zlamania czaru mozna znalezc w innej ksiazce, Almanachu.
 
 	AI_StopProcessInfos	(self);
 
@@ -1516,25 +1516,25 @@ FUNC VOID Info_Mod_Xardas_NW_NachAufnahmeQuest_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_ALMANACH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_ALMANACH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Das Buch, welches ich bei meiner Aufnahmeprüfung Ryan abgenommen habe, ist magisch versiegelt. Um es zu öffnen, braucht Xardas einen Almanach, in dem der passende Bannbrecher steht. Dieses Buch wurde jedoch von Orks bei einem Überfall gestohlen. Die Orks sollen sich im Wald bei Lobarts Hof aufhalten.");
+	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Ksiazka, która wzialem na egzaminie wstepnym, Ryan, jest magicznie zapieczetowana. Aby go otworzyc, Xardas potrzebuje almanachu, w którym stoi odpowiedni mlot. Ksiazka ta zostala jednak skradziona przez orki w rajdzie. Orki sa uwazane za znajdujace sie w lesie niedaleko farmy Lobart.");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_NachAufnahmeQuest);
 
-	Info_AddChoice	(Info_Mod_Xardas_NW_NachAufnahmeQuest, "Wo finde ich den Schinken?", Info_Mod_Xardas_NW_NachAufnahmeQuest_B);
-	Info_AddChoice	(Info_Mod_Xardas_NW_NachAufnahmeQuest, "Woher weißt du, was in dem Almanach steht?", Info_Mod_Xardas_NW_NachAufnahmeQuest_A);
+	Info_AddChoice	(Info_Mod_Xardas_NW_NachAufnahmeQuest, "Gdzie moge znalezc szynke?", Info_Mod_Xardas_NW_NachAufnahmeQuest_B);
+	Info_AddChoice	(Info_Mod_Xardas_NW_NachAufnahmeQuest, "Skad wiesz, co mówi almanach?", Info_Mod_Xardas_NW_NachAufnahmeQuest_A);
 };
 
 FUNC VOID Info_Mod_Xardas_NW_NachAufnahmeQuest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_00"); //Wo finde ich den Schinken?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_01"); //Jetzt wird es spannend. Der fahrende Händler, der die Bücher verliehen hat, wurde - sicher rein zufällig - gestern ganz in der Nähe von Orks überfallen, und sein ganzer Bestand geraubt.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_02"); //Orks? Hier? Und Bücher gestohlen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_03"); //Merkwürdig, nicht wahr?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_04"); //Dann muss ich die Orks finden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_05"); //Du hast es verstanden. Die Bauern auf Lobarts Hof berichteten mir, dass die Orks im Wald vor den Stadtmauern verschwunden sind.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_06"); //Und ich fürchte, sie haben dort Ärgeres vor, als einen Lesewettbewerb zu veranstalten. Vielleicht treffen sie sich dort mit einem Auftraggeber.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_07"); //Du musst sie sofort verfolgen und ihnen das Buch abnehmen!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_08"); //Dann werde ich sofort aufbrechen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_00"); //Gdzie moge znalezc szynke?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_01"); //Teraz jest to ekscytujace. Podrózujacy kupiec, który pozyczyl ksiazki, zostal wczoraj - prawdopodobnie przypadkowo - zaatakowany w poblizu orków i ograbiony z calego zasobu.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_02"); //Orki? Oto? I ukradl ksiazki?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_03"); //Dziwne, czyz nie?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_04"); //Potem musze znalezc orki.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_05"); //Otrzymasz wiadomosc. Rolnicy na farmie Lobarta powiedzieli mi, ze orki zniknely w lesie poza murami miasta.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_06"); //I obawiam sie, ze beda tam mieli klopoty niz miec konkurs na czytanie. Moze spotkaja sie tam z wykonawca.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_14_07"); //Musisz pójsc za nimi teraz i zabrac im ksiazke!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_B_15_08"); //Wtedy natychmiast odejde.
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_NachAufnahmeQuest);
 
@@ -1546,14 +1546,14 @@ FUNC VOID Info_Mod_Xardas_NW_NachAufnahmeQuest_B()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_ALMANACH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_ALMANACH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Das Buch, welches ich bei meiner Aufnahmeprüfung Ryan abgenommen habe, ist magisch versiegelt. Um es zu öffnen, braucht Xardas einen Almanach, in dem der passende Bannbrecher steht. Dieses Buch wurde jedoch von Orks bei einem Überfall gestohlen. Die Orks sollen sich im Wald bei Lobarts Hof aufhalten.");
+	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Ksiazka, która wzialem na egzaminie wstepnym, Ryan, jest magicznie zapieczetowana. Aby go otworzyc, Xardas potrzebuje almanachu, w którym stoi odpowiedni mlot. Ksiazka ta zostala jednak skradziona przez orki w rajdzie. Orki sa uwazane za znajdujace sie w lesie niedaleko farmy Lobart.");
 };
 
 FUNC VOID Info_Mod_Xardas_NW_NachAufnahmeQuest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_15_00"); //Woher weißt du, was in dem Almanach steht?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_14_01"); //Weil ich ihn früher selbst besessen habe. Ich habe ihn dann irgendwann einmal, als ich ausgemistet habe, einer Wanderbibliothek vermacht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_14_02"); //Wer konnte schon ahnen, dass ich ihn später mal brauchen würde?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_15_00"); //Skad wiesz, co mówi almanach?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_14_01"); //Bo ja sam ja posiadalem. Potem w pewnym momencie, kiedy sprzatalem biblioteke podrózna, zostawilem ja w spadku.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_NachAufnahmeQuest_A_14_02"); //Kto wiedzial, ze potrzebuje go pózniej?
 };
 
 INSTANCE Info_Mod_Xardas_NW_HabAlmanach (C_INFO)
@@ -1564,7 +1564,7 @@ INSTANCE Info_Mod_Xardas_NW_HabAlmanach (C_INFO)
 	information	= Info_Mod_Xardas_NW_HabAlmanach_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Da bin ich wieder.";
+	description	= "Tu znów jestem.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_HabAlmanach_Condition()
@@ -1579,24 +1579,24 @@ FUNC INT Info_Mod_Xardas_NW_HabAlmanach_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_HabAlmanach_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_00"); //Da bin ich wieder.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_01"); //Und hast du den Almanach?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_02"); //Ja, hier ist er.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_00"); //Tu znów jestem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_01"); //I czy masz almanach?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_02"); //Tak, tu jest.
 
 	B_GiveInvItems	(hero, self, ItWr_XardasAlmanach, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_03"); //Gut, dann werde ich gleich mit der Öffnung beginnen!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_04"); //Da ist noch etwas.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_05"); //Um was geht es?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_06"); //Als ich das Buch geborgen hatte und an deinem Turm angekommen bin, wurde ich von einem Schattenkrieger aufgehalten, der behauptet hat, dass er zu einer Gruppe von sechs Kriegern gehört.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_07"); //Danach wollte er die Bücher und hat mich angegriffen. Nachdem ich ihn besiegt hatte, verschwand er und erklärte, dass die Krieger nun kommen werden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_08"); //Bei Beliar! Die alten Krieger sind zurück!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_09"); //Was meinst du damit?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_10"); //Die sechs Krieger sind die Leibgarde eines Abtrünnigen. Sie kommen nur zum Vorschein, wenn etwas Wichtiges zu erledigen ist. Anscheinend sind sie es, die hinter dem Buch her sind.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_11"); //Gib mir einen Tag Zeit und ich habe das Buch geöffnet und herausgefunden, weshalb es so wichtig für die Krieger ist.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_12"); //Gut, dann bis morgen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_03"); //No cóz, to zaczynam otwierac sie od razu!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_04"); //Jest jeszcze cos innego.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_05"); //Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_06"); //Kiedy odzyskalem ksiazke i dotarlem do waszej wiezy, zostalem zatrzymany przez wojownika Shadow Warrior, który twierdzil, ze nalezy do grupy szesciu wojowników.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_07"); //Potem chcial ksiazek i zaatakowal mnie. Po tym jak go pokonalem, zaginal i wyjasnil, ze teraz przyjda wojownicy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_08"); //Beliar! Starzy wojownicy sa z powrotem!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_09"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_10"); //Szesciu wojowników jest ochroniarzami renegaty. Wychodza tylko wtedy, gdy jest cos waznego do zrobienia. Najwyrazniej to oni sa po ksiazce.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAlmanach_14_11"); //Daj mi dzien i otworzylem ksiazke i przekonalem sie, dlaczego jest ona tak wazna dla wojowników.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAlmanach_15_12"); //Cóz, do zobaczenia jutro.
 
-	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Ich hab Xardas den Almanach gegeben und auch von Drach berichtet. Ich soll morgen wieder kommen.");
+	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Dalem Xardasa almanachowi i opowiedzialem mu o Drachu. Chca, abym wrócil jutro.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_ALMANACH, LOG_SUCCESS);
 
 	OpenRyanBook = Wld_GetDay();
@@ -1614,7 +1614,7 @@ INSTANCE Info_Mod_Xardas_NW_AlmanachOffen (C_INFO)
 	information	= Info_Mod_Xardas_NW_AlmanachOffen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du fertig?";
+	description	= "Czy jestes gotowy?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_AlmanachOffen_Condition()
@@ -1628,22 +1628,22 @@ FUNC INT Info_Mod_Xardas_NW_AlmanachOffen_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_AlmanachOffen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_00"); //Bist du fertig?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_01"); //Gut, dass du kommst. Es ist schrecklich, was ich entdeckt habe!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_02"); //Was hast du herausgefunden?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_03"); //In dem Buch steht eine genaue Beschreibung, wie man es schaffen kann, an die Axt des Untergangs zu kommen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_04"); //Die was?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_05"); //Die Axt des Untergangs! Diese Waffe ist ein uraltes Stück Macht Beliars. Sie wurde damals von einem mächtigen Schwarzmagier geschaffen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_06"); //Er erkannte aber den dämonischen Eigenwillen der Waffe und verbarg sie vor dem Rest der Welt mit einem Rätsel. Nur, wer dieses Rätsel lösen kann, ist bereit die Waffe zu tragen!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_07"); //Deshalb sind die Krieger hinter ihr her.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_08"); //Was für ein Rätsel ist das?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_09"); //Der Schwarzmagier hat die Axt an einem sicheren Ort verwahrt und sechs Almanache hinterlassen, in denen steht, wo sich der nächste Almanach befindet. Allerdings in einem Rätsel, das nur durch logisches Denken gelöst werden kann.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_10"); //Im letzten Almanach steht, wo sich die Axt des Untergangs befindet. In dem Buch, das ich geöffnet habe, steht der Standort des ersten Almanachs.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_11"); //Dein Auftrag wird es sein das Rätsel zu lösen, die sechs Krieger zu töten, die ebenfalls hinter der Axt her sind, und die Axt schließlich zu sichern.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_12"); //(zynisch) Das mach ich doch mit Links!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_13"); //(ärgerlich) Ich weiß, die Aufgabe ist schwer, aber somit können wir ihnen eine mächtige Waffe entreißen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_14"); //(seufzt) Dann werde ich schnell aufbrechen!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_15"); //Gut, und sei vorsichtig! Sie sind hinterhältig! Hier ist das Buch mit dem ersten Rätsel!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_00"); //Czy jestes gotowy?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_01"); //Ciesze sie, ze przyszedles. To straszne, co odkrylem!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_02"); //Co sie dowiedziales/as?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_03"); //Ksiazka zawiera szczególowy opis jak dotrzec do siekiery zguby.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_04"); //Co?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_05"); //siekiera kary smierci! Ta bron jest starozytnym kawalkiem mocy Beliara. Stworzyl go potezny czarny magik.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_06"); //Zdawal sobie jednak sprawe z demonicznej woli broni i ukrywal ja przed reszta swiata z tajemnica. Tylko ci, którzy potrafia rozwiazac te zagadke sa gotowi niesc bron!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_07"); //Dlatego wojownicy sa po niej.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_08"); //Jaki jest to rodzaj zagadki?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_09"); //Czarny mag utrzymal siekiere w bezpiecznym miejscu i pozostawil szesc almanachów, gdzie znajduje sie najblizszy almanach. Jednak w zagadce, która moze byc rozwiazana tylko przez logiczne myslenie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_10"); //W ostatnich stoiskach almanachu, gdzie znajduje sie siekiera zaglady. W ksiazce, która otworzylem, zapisana jest lokalizacja pierwszego almanachu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_11"); //Twoja misja bedzie rozwiazac tajemnice zabicia szesciu wojowników, którzy sa równiez za toporem i zabezpieczeniem siekiery.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_12"); //To wlasnie robie z Linksem!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_13"); //Wiem, ze to zadanie jest trudne, ale dzieki temu mozemy wyciagnac z nich potezna bron.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlmanachOffen_15_14"); //Wtedy szybko odejde!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlmanachOffen_14_15"); //Dobrze, badzcie ostrozni! Jestes podstepny! Oto ksiazka z pierwsza zagadka!
 
 	B_GiveInvItems	(self, hero, ItWr_AxtAlmanach_Pre, 1);
 
@@ -1653,7 +1653,7 @@ FUNC VOID Info_Mod_Xardas_NW_AlmanachOffen_Info()
 	B_SetTopicStatus	(TOPIC_MOD_BEL_RAETSEL, LOG_RUNNING);
 	Log_CreateTopic	(TOPIC_MOD_BEL_AXT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_AXT, LOG_RUNNING);
-	B_LogEntry_NMore	(TOPIC_MOD_BEL_RAETSEL, TOPIC_MOD_BEL_AXT, TOPIC_MOD_BEL_FIVEKNIGHTS, "Xardas hat den Almanach geöffnet. Darin ist ein Rätsel, welches mir den Weg zur Axt des Untergangs eröffnet. Ich sollte das Buch lesen und das Rätsel lösen.", "In dem Almanach stand etwas über die Axt des Untergangs. Diese Waffe scheint sehr mächtig zu sein. Xardas will, dass ich sie finde.", "Wie es scheint sind die sechs Krieger hinter der Axt des Untergangs her. Ich muss ihnen zuvorkommen.");
+	B_LogEntry_NMore	(TOPIC_MOD_BEL_RAETSEL, TOPIC_MOD_BEL_AXT, TOPIC_MOD_BEL_FIVEKNIGHTS, "Ksardas otworzyl Almanaca. Wewnatrz jest tajemnica, która otwiera droge do siekiery zguby. Powinienem przeczytac ksiazke i rozwiazac zagadke.", "Almanach powiedzial cos o siekierze zguby. Bron ta wydaje sie byc bardzo potezna. Xardas chce, abym ja znalazl.", "Najwyrazniej szesciu wojowników jest za siekiera zguby. Musze je przescignac.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_HabAxt (C_INFO)
@@ -1664,7 +1664,7 @@ INSTANCE Info_Mod_Xardas_NW_HabAxt (C_INFO)
 	information	= Info_Mod_Xardas_NW_HabAxt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin wieder da!";
+	description	= "Wracam!";
 };
 
 FUNC INT Info_Mod_Xardas_NW_HabAxt_Condition()
@@ -1678,11 +1678,11 @@ FUNC INT Info_Mod_Xardas_NW_HabAxt_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_HabAxt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_00"); //Ich bin wieder da!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_01"); //Und was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_02"); //Ich habe alles gemacht, was du gesagt hast. Die dunkle Garde ist vernichtet, das Rätsel gelöst und die Axt gesichert.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_03"); //Zeig die Axt her!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_04"); //Hier.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_00"); //Wracam!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_01"); //A co sie stalo?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_02"); //Zrobilem wszystko, co Pan powiedzial. Ciemna Gwardia zostaje zniszczona, tajemnica zostaje rozwiazana, a siekiera zabezpieczona.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_03"); //Pokaz mi topór!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_04"); //Tutaj.
 
 	B_GiveInvItems	(hero, self, ItMw_AxtDesUntergangs, 1);
 
@@ -1694,7 +1694,7 @@ FUNC VOID Info_Mod_Xardas_NW_HabAxt_Info()
 
 	AI_PlayAni	(self, "T_1HSINSPECT");
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_05"); //Was für eine Macht. Ich habe nachgedacht, als du weg warst, und habe entschieden, dass du die Axt behalten sollst.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_HabAxt_14_05"); //Jaka moc. Myslalem, kiedy odszedles, i postanowilem utrzymac siekiere.
 
 	AI_RemoveWeapon	(self);
 
@@ -1704,9 +1704,9 @@ FUNC VOID Info_Mod_Xardas_NW_HabAxt_Info()
 
 	AI_EquipBestMeleeWeapon	(self);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_06"); //Danke, ich werde gut auf sie achten.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_HabAxt_15_06"); //Dzieki, bede sie nia dobrze opiekowal.
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_AXT, TOPIC_MOD_BEL_FIVEKNIGHTS, "Ich hab die Axt des Untergangs geborgen und Xardas will, dass ich sie bewahre.", "Die sechs Krieger sind Geschichte. Wieder ein Problem weniger.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_AXT, TOPIC_MOD_BEL_FIVEKNIGHTS, "Ocalilem siekiere zguby, a Xardas chce, abym ja zatrzymal.", "Szesciu wojowników to historia. Inny problem mniej.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_RAETSEL, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_AXT, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_FIVEKNIGHTS, LOG_SUCCESS);
@@ -1724,7 +1724,7 @@ INSTANCE Info_Mod_Xardas_NW_Argibast (C_INFO)
 	information	= Info_Mod_Xardas_NW_Argibast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin zurück.";
+	description	= "Wracam.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Argibast_Condition()
@@ -1737,22 +1737,22 @@ FUNC INT Info_Mod_Xardas_NW_Argibast_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Argibast_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_00"); //Ich bin zurück.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_01"); //Und?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_02"); //Die Belagerung ist beendet und einer der sechs Gardisten Innos' hat das Zeitliche gesegnet!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_03"); //Sehr gut. Was hat der Gardist gesagt?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_04"); //Nicht viel. Er sprach wie immer über die unentwegte Macht seines Meisters und etwas von einer mächtigen Waffe, die die anderen Gardisten suchen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_05"); //(scharf) Was für eine Waffe soll das sein?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_06"); //Er nannte sie das Schwert Innos'.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_07"); //Bei Beliar. Schlimmer konnte es nicht kommen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_08"); //Was hat es damit auf sich?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_09"); //Vor 1000 Jahren, zu der Zeit, als die Garde Beliars und die Garde Innos' entstanden und dann verbannt wurden, entstanden auch zwei göttliche Waffen mit ihnen, die das Gleichgewicht der Welt bedrohten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_10"); //Ich nehme an du sprichst von der Axt des Untergangs und dem Schwert Innos'?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_11"); //Ja, das tue ich. Adanos versiegelte die beiden Waffen, um die Welt vor dem Chaos zu bewahren. Die Axt hast du bereits geborgen, doch das Schwert Innos' ist wohl ebenfalls auf Khorinis und die Garde Innos' sucht danach.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_12"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_13"); //Du must das Schwert Innos' erbeuten, um es vor den Händen des Bösen zu schützen. Desweiteren musst du die Garde Innos' aufhalten, um somit Khorinis vor einer weiteren Bedrohung zu bewahren.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_14"); //Wo soll ich anfangen zu suchen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_15"); //Das ist das Rätsel, welches du lösen musst. Wir wissen es nicht genau. Jedoch hat sich die Aktivität magischer Energie im Tal der Wassermagier drastisch verstärkt, was beunruhigend ist. Beginne dort mit deiner Suche.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_00"); //Wracam.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_01"); //A co?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_02"); //Oblezenie juz sie skonczylo i jeden z szesciu strazników Inno poblogoslawil doczesnego!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_03"); //Bardzo dobry. Co powiedzial straznik?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_04"); //Niewiele. Mówil, jak zawsze, o niezachwianej mocy swego Mistrza i czyms o poteznej broni, której poszukuja inni straznicy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_05"); //Jaka jest to bron?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_06"); //Nazywal ja miecz Innosem ".
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_07"); //W Beliar' s. Nie moglo sie to pogorszyc.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_08"); //O co w tym wszystkim chodzi?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_09"); //Tysiac lat temu, w czasie, gdy powstali Beliars i Gwardia Innosów, a nastepnie zostali wygnani, stworzono z nimi dwie boskie bron, zagrazajace równowadze swiata.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_10"); //Przypuszczam, ze mówisz o siekierze zguby i mieczu Innos'?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_11"); //Tak, panie posle. Adanos zapieczetowal dwie bron, aby uchronic swiat przed chaosem. Juz odzyskales topór, ale miecz Innos' jest prawdopodobnie równiez na Khorinis i wartownik Innos szuka go.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_12"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_13"); //Musisz przechwycic miecz Innosa, aby uchronic go przed zlem. Nalezy równiez zatrzymac straz Innoska, aby uchronic Khorinisa przed kolejnym zagrozeniem.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Argibast_15_14"); //Gdzie chcesz, abym zaczal szukac?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Argibast_14_15"); //To jest zagadka, która trzeba rozwiazac. Nie wiemy na pewno. Jednak gwaltownie wzrosla aktywnosc magicznej energii w Dolinie Magików Wody, co jest niepokojace. Rozpocznij tam wyszukiwanie.
 
 	B_GivePlayerXP	(250);
 
@@ -1760,7 +1760,7 @@ FUNC VOID Info_Mod_Xardas_NW_Argibast_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Es scheint so, als würde die Garde Innos' nach dem mächtigen Schwert Innos' suchen. Ich muss das Schwert vor ihnen finden. Wo es zu finden ist, weiß jedoch nicht mal Xardas, allerdings gibt es Andeutungen auf Jharkendar.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Wydaje sie, ze straz Innos szuka poteznego miecza Innos. Musze znalezc przed nimi miecz. Jednak Xardas nie wie nawet, gdzie go znalezc, ale sa wskazówki na temat Jharkendend.");
 
 	Wld_InsertNpc	(Mod_4085_HoherUntoterMagier_NW,	"TAVERNE");
 	Wld_InsertNpc	(Mod_4084_UntoterEliteNovize_NW,	"TAVERNE");
@@ -1807,12 +1807,12 @@ FUNC INT Info_Mod_Xardas_NW_Uriela_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Uriela_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_00"); //Zwei in der Runenmagie begabte Hexen hatten das Gesuch gestellt, in die Reihen der Schwarzmagier einzutreten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_01"); //Ich habe sie gewähren lassen, da wir in der gegenwärtigen Situation auf Unterstützung jedweder Art angewiesen sind und das Wissen um die Hexenmagie uns im Kampf gegen Xeres sicher bereichern kann.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_02"); //Aber irgendwie habe ich den starken Verdacht, dass du deine Finger mit im Spiel hattest.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Uriela_15_03"); //Nun ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_04"); //(drohend) Ich warne dich. Die Kunst Runen zu wirken wird nicht leichtfertig an Dritte weitergegeben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_05"); //Im dem Umgang mit Magie sollte man etwas mehr Ernsthaftigkeit walten lassen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_00"); //Dwie czarownice obdarzone magia runów poprosily o dolaczenie do grona czarnych magów.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_01"); //Pozwolilem sobie na ich przyznanie, poniewaz w obecnej sytuacji jestesmy uzaleznieni od wszelkiego rodzaju wsparcia, a znajomosc magii czarownic moze z pewnoscia wzbogacic nas w walce z Xeresem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_02"); //Ale jakos mam silne podejrzenie, ze miales w grze swoje palce.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Uriela_15_03"); //....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_04"); //Ostrzegam cie. Sztuka pracy nie jest latwo przekazywana osobom trzecim.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Uriela_14_05"); //W obchodzeniu sie z magia, trzeba byc nieco powazniejszym.
 };
 
 INSTANCE Info_Mod_Xardas_NW_Randolph (C_INFO)
@@ -1823,7 +1823,7 @@ INSTANCE Info_Mod_Xardas_NW_Randolph (C_INFO)
 	information	= Info_Mod_Xardas_NW_Randolph_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche deinen Rat.";
+	description	= "Potrzebuje Panstwa rady.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Randolph_Condition()
@@ -1837,33 +1837,33 @@ FUNC INT Info_Mod_Xardas_NW_Randolph_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Randolph_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_15_00"); //Ich brauche deinen Rat. Der Bauer Randolph scheint nicht nur unter dämonischer Kontrolle zu stehen, nein, er scheint selbst zu einem zu werden.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_15_01"); //Horden von Dämonen hat er um sich geschart und bedroht die Stadt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_14_02"); //Nun, dann wirst du einen Weg finden müssen ihn zu vernichten, um dieser Bedrohung Herr zu werden.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_15_00"); //Potrzebuje Panstwa rady. Farmer Randolph wydaje sie byc nie tylko pod demoniczna kontrola, ale wydaje sie byc jednym.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_15_01"); //Zebral hordy demonów wokól siebie i zagraza miastu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_14_02"); //Cóz, wtedy bedziesz musial znalezc sposób, aby go zniszczyc, aby poradzic sobie z tym zagrozeniem.
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 
-	Info_AddChoice	(Info_Mod_Xardas_NW_Randolph, "Aber kann man ihm denn nicht helfen?", Info_Mod_Xardas_NW_Randolph_B);
-	Info_AddChoice	(Info_Mod_Xardas_NW_Randolph, "Ok, das werde ich tun.", Info_Mod_Xardas_NW_Randolph_A);
+	Info_AddChoice	(Info_Mod_Xardas_NW_Randolph, "Ale czy nie mozesz mu pomóc?", Info_Mod_Xardas_NW_Randolph_B);
+	Info_AddChoice	(Info_Mod_Xardas_NW_Randolph, "Dobrze, zrobie to.", Info_Mod_Xardas_NW_Randolph_A);
 };
 
 FUNC VOID Info_Mod_Xardas_NW_Randolph_B()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_B_15_00"); //Aber kann man ihm denn nicht helfen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_01"); //Nun, in dem Stadion der Verbundenheit mit dem Dämonischen kommt wohl jede Hilfe zu spät.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_02"); //Und selbst wenn noch ein Funken seines ursprünglichen Wesens in ihm existieren sollte, so würdest du ihn doch kaum dazu bewegen können Pyrokars Trank einzunehmen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_03"); //Folglich wirst du dieses Wesen - auch wenn noch ein Rest Menschlichkeit ihn ihm sein sollte - vernichten müssen, da du nicht über die Mittel verfügst, selektiv das Dämonische aus ihm zu bannen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_B_15_00"); //Ale czy nie mozesz mu pomóc?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_01"); //No cóz, na stadionie pokrewienstwa z Demonikiem jakakolwiek pomoc przyjdzie za pózno.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_02"); //I nawet jesli iskra jego pierwotnego bytu nadal istnieje w nim, trudno byloby przekonac go do wziecia eliksiru Pyrokara.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_03"); //W zwiazku z tym bedziecie musieli zniszczyc te istote - nawet jesli wciaz pozostaje mu reszta ludzkosci - poniewaz nie macie srodków, by wybiórczo od niego wyrzucic demona.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas meint, ich solle Randoplh, oder das, wozu er geworden ist, vernichten. Wenn es denn keine andere Möglichkeit gibt ...");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randoplha lub to, czym on sie stal. Jesli nie ma innej drogi.....");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
 
 FUNC VOID Info_Mod_Xardas_NW_Randolph_A()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_A_15_00"); //Ok, das werde ich tun.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_A_15_00"); //Dobrze, zrobie to.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas meint, ich solle Randoplh, oder das, wozu er geworden ist, vernichten. Wenn es denn keine andere Möglichkeit gibt ...");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randoplha lub to, czym on sie stal. Jesli nie ma innej drogi.....");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
@@ -1876,7 +1876,7 @@ INSTANCE Info_Mod_Xardas_NW_RandolphGeheilt (C_INFO)
 	information	= Info_Mod_Xardas_NW_RandolphGeheilt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich konnte Randolph doch retten.";
+	description	= "Udalo mi sie uratowac Randolpha.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_RandolphGeheilt_Condition()
@@ -1890,12 +1890,12 @@ FUNC INT Info_Mod_Xardas_NW_RandolphGeheilt_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_RandolphGeheilt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_RandolphGeheilt_15_00"); //Ich konnte Randolph doch retten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_01"); //Hmm, dann hast du dich also der Magie der Paladine bedient.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_RandolphGeheilt_15_02"); //Was?! Du wusstest von der Möglichkeit?! Aber warum ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_03"); //Du musst verstehen. Die Aussicht auf Erfolg war gering.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_04"); //Ich wollte dich davon abhalten weiter Zeit, Mühen und Risiken für ein Menschenleben aufzuwenden und damit ganz Khorinis in Gefahr zu bringen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_05"); //Wenn es denn fehlgeschlagen wäre ...
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_RandolphGeheilt_15_00"); //Udalo mi sie uratowac Randolpha.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_01"); //Hmm, wiec uzywales magii paladynów.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_RandolphGeheilt_15_02"); //Co? Wiedziales o mozliwosci? Ale dlaczego....?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_03"); //Musisz zrozumiec. Perspektywa sukcesu byla szczupla.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_04"); //Chcialem, zebys nie spedzal wiecej czasu, wysilku i ryzyka dla ludzkiego zycia, narazajac cale zycie Khoriniego.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_RandolphGeheilt_14_05"); //W przypadku niepowodzenia....
 };
 
 INSTANCE Info_Mod_Xardas_NW_Gidan1 (C_INFO)
@@ -1906,7 +1906,7 @@ INSTANCE Info_Mod_Xardas_NW_Gidan1 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Gidan1_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du diese Pergamenthälften zusammensetzen?";
+	description	= "Czy mozna polaczyc te polówki pergaminu?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Gidan1_Condition()
@@ -1922,16 +1922,16 @@ FUNC INT Info_Mod_Xardas_NW_Gidan1_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Gidan1_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gidan1_15_00"); //Kannst du diese Pergamenthälften zusammensetzen?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gidan1_15_00"); //Czy mozna polaczyc te polówki pergaminu?
 
-	AI_PrintScreen	("Pergamenthälften gegeben!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
+	AI_PrintScreen	("Podane polówki pergaminu!", -1, YPOS_GoldGiven, FONT_ScreenSmall, 2);
 
 	Npc_RemoveInvItems	(hero, ItWr_SektisTeleport2, 1);
 	Npc_RemoveInvItems	(hero, ItWr_SektisTeleport1, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan1_14_01"); //Das sollte kein Problem sein. Komm später wieder.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan1_14_01"); //To nie powinno byc problemem. Wróc do domu pózniej.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Xardas wird die zwei Pergamenthälften zusammen setzen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Xardas polaczy dwie polówki pergaminu.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Gidan2 (C_INFO)
@@ -1955,18 +1955,18 @@ FUNC INT Info_Mod_Xardas_NW_Gidan2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Gidan2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_00"); //Hier hast du deine Spruchrolle.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_00"); //Oto Twoja historia.
 
 	B_GiveInvItems	(self, hero, ItWr_SektisTeleport3, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_01"); //Es scheint allerdings so, als hätte sie eine lokale Abghängigkeit.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_02"); //Also muss sie an einem bestimmten Ort gesprochen werden, damit sie funktioniert.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gidan2_15_03"); //Ich hab auch schon eine Vermutung, wo.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_04"); //Dann mach dich auf den Weg, ich hab zu tun.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_01"); //Wydaje sie jednak, ze ma ona lokalna zaleznosc.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_02"); //Tak wiec musi on byc wypowiadany w okreslonym miejscu, aby dzialal.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gidan2_15_03"); //Mam przeczucie gdzies tam.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gidan2_14_04"); //Potem ruszam, jestem zajety.
 
 	Mod_PalaKapitel3 = 5;
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Es handelt sich um eine Spruchrolle, die aber nur an einem bestimmten Ort benutzt werden kann. Ich sollte es mal am Leuchtturm versuchen.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Jest to rola zaklecia, ale moze byc uzyta tylko w okreslonym miejscu. Powinienem spróbowac latarni morskiej.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Namib (C_INFO)
@@ -1977,7 +1977,7 @@ INSTANCE Info_Mod_Xardas_NW_Namib (C_INFO)
 	information	= Info_Mod_Xardas_NW_Namib_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier einen Brief, den ich euch von Baal Namib überstellen soll.";
+	description	= "Mam tutaj list od Baala Namiba do Pana.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Namib_Condition()
@@ -1992,8 +1992,8 @@ FUNC INT Info_Mod_Xardas_NW_Namib_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Namib_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Namib_15_00"); //Ich habe hier einen Brief, den ich dir von Baal Namib überstellen soll.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Namib_14_01"); //Gib den Brief Karras in unserer Festung. Er ist für so was zuständig.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Namib_15_00"); //Mam list, który mam Ci dostarczyc od Baala Namiba.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Namib_14_01"); //Wrecz list do Karry w naszej twierdzy. Odpowiada za takie rzeczy.
 };
 
 INSTANCE Info_Mod_Xardas_NW_Drachen (C_INFO)
@@ -2016,38 +2016,38 @@ FUNC INT Info_Mod_Xardas_NW_Drachen_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Drachen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_00"); //Ahh, gut, dass ich dich noch rechtzeitig erreiche. Du solltest das Buch nämlich unter keinen Umständen öffnen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_01"); //Ähh, Xardas ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_02"); //Wie ich im Rahmen meiner Nachforschungen herausgefunden habe, besteht auch gar nicht die Notwendigkeit.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_03"); //Indem wir nämlich einen Spalt im Raum Zeitgefüge des Buches erzeugen ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_04"); //(energischer) Xardas, das Buch ist bereits geöffnet!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_05"); //Ohh ... nun in dem Fall sollte das Chromaninbuch seine Botschaft wiedererlangt haben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_06"); //Und mit den anderen Folgen durch das Öffnen des Buches – nun – müssen wir uns wohl irgendwie arrangieren.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_07"); //Was zum Teufel ist da geschehen? Ich hatte den Eindruck, als würde mir der Himmel gleich auf den Kopf fallen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_08"); //Nun, das werde ich dir erklären.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_09"); //Wie ich inzwischen herausgefunden habe, war Pondaros ein mächtiger Magier, der vor Äonen gelebt hat, kurz nach dem Zeitpunkt, als die Gottheit Radanos auf der Erde zu wirken begann.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_10"); //Er erschuf dieses Buch, welches im Stande ist magische Energien zu absorbieren und verbannte darin zahlreiche Kreaturen, die magischen Ursprungs waren.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_11"); //Magische Kreaturen? Welcher Art?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_12"); //Nun, alles vom Bodensatz magischer Geschöpfe, über Kobolde und Magier bis hin zu mächtigen Wesen wie ... Drachen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_13"); //(ungläubig) Drachen?!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_14"); //Ja, Drachen, Feuer speiende Wesen von uralter Macht, die jetzt mit ihrer Präsenz alle menschlichen Siedlungen und Städte auf Khorinis gefährden könnten ... und Xeres bei der Umsetzung seiner Ziele somit von nicht unerheblichem Nutzen sein würden.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_15"); //Xeres ... Und das Buch in den Händen seines Lakaien. Was hat das alles zu bedeuten?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_16"); //Hätte der Schamane nicht schon viel früher die Siegel brechen und diesen Ungeheuern ihre Freiheit schenken können?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_17"); //Das hätte er mit Bestimmtheit, wenn es in seiner Macht gelegen hätte.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_18"); //Aber zweifelsfrei hatte Pondaros die Steinkreise mit Schutzmechanismen versehen, die im Besondern Geschöpfen der Finsternis – wie diesem untoten Ork – das Vorhaben vereitelt hätten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_19"); //Diesem Schamanen, Herrscher über Geister, Elemente und belebte Natur und ein Scherge der Finsternis, wäre es nicht vergönnt gewesen, auch nur das Erste der drei Siegel zu brechen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_20"); //So, nun aber genug der Worte. Ganz gleich, was du aus dem Buch entfesselt haben magst, versuche deine Aufmerksamkeit weiterhin vor allem auf das eine Ziel zu richten: Xeres' Vernichtung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_21"); //Hier etwas Gold für deine Ausrüstung.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_00"); //Ach, ciesze sie, ze dotarlem do Ciebie na czas. Bo pod zadnym pozorem nie nalezy otwierac ksiazki.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_01"); //Uh, Xardas.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_02"); //Jak dowiedzialem sie w swoich badaniach, nie ma zadnej potrzeby.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_03"); //Tworzac szczeline w strukturze czasowej ksiazki.....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_04"); //(Energy) Xardas, ksiazka jest juz otwarta!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_05"); //Ohh..... teraz w takim przypadku, dziennik chromaniny powinien byl odzyskac swój komunikat.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_06"); //A wraz z innymi konsekwencjami otwarcia ksiazki - teraz musimy dojsc do jakiegos rodzaju aranzacji.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_07"); //Co sie tam stalo? Czulem, ze niebosklon wkrótce spadnie na glowe.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_08"); //No cóz, wyjasnie to.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_09"); //Jak dowiedzialem sie w miedzyczasie, Pondaros byl poteznym magikiem, który zyl przed eonami, krótko po tym, jak bóstwo Radano zaczelo dzialac na Ziemi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_10"); //Stworzyl on ta ksiazke, która jest w stanie pochlonac magiczne energie i wygnac wiele stworzen o magicznym pochodzeniu.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_11"); //Magiczne stworzenia? Jaki rodzaj?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_12"); //Cóz, wszystko poczawszy od osadów magicznych stworzen, poprzez gobliny i magów, az po potezne stworzenia jak.... Smok.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_13"); //(wiara) Smok?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_14"); //Tak, smoki, oddychajace ogniem istoty starozytnej potegi, których obecnosc moglaby zagrozic wszystkim ludzkim osadom i miastom na Khorinis? i Xeres odniosloby zatem znaczne korzysci z realizacji jego celów.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_15"); //Xeres.... I ksiazka w rekach jego szalonego stopmana. O co to wszystko chodzi?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Drachen_15_16"); //Czy szaman nie zdolalby znacznie wczesniej zlamac fok i dac tym potworom wolnosc?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_17"); //Na pewno by to byl w jego mocy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_18"); //Niewatpliwie jednak Pondaros dostarczyl kamiennym kregom mechanizmów ochronnych, które w szczególnosci uniemozliwilyby projekt stworzenia ciemnosci - jak ten nieumarly ork.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_19"); //Ten szaman, wladca duchów, zywiolów i ozywionej natury oraz poplecznik ciemnosci, nie mógl zlamac nawet pierwszej z trzech pieczeci.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_20"); //Wystarczajaca ilosc slów. Bez wzgledu na to, co byc moze wydobyliscie z ksiazki, nadal skupicie swoja uwage na jednym celu: zniszczeniu Xeres.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_21"); //Oto troche zlota na sprzet.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 400);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_22"); //Nun solltest du aber machen, dass du hier wegkommst, bevor dir üble Geschöpfe begegnen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_23"); //Ich teleportiere dich sicher zu Orlans Taverne.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_22"); //Teraz powinienes wyjsc z niego, zanim natkniesz sie na zle istoty.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Drachen_14_23"); //Jestem pewien, ze moge Cie teleportowac do tawerny Orlana.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_DRACHEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_DRACHEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Na toll. Wenn Xardas es sich angewöhnen würde nur eine Minute früher zu erscheinen ... Dass Drachen und andere Ungetüme dem Buch entkommen sind, scheint ihn ja nicht sonderlich zu berühren. Einfach weiter Xeres jagen, als ob nichts wäre. Na ja, zumindest bin ich Chromanin einen entscheidenden Schritt näher gekommen.");
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Dann werde ich mal Xardas Rat befolgen und mich aus der akuten Gefahrenzone herausteleportieren, bevor ich noch über einen dieser Drachen stolpere ... Orlans Taverne, da bin ich. Aber verdammt, was ist das? Ich ... mir ... schwinden die Sinne ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Och, wielki. Gdyby Xardas przyzwyczail sie do pojawienia o minute wczesniej.... Fakt, ze smoki i inne potwory uciekly przed ksiazka, wydaje sie nie bardzo go dotykac. Po prostu scigaj Xeres' a jak nic zlego. No cóz, przynajmniej zrobilem duzy krok blizej chromaniny.");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Wtedy postapie zgodnie z rada Xardy i wydostane sie z ostrej strefy zagrozenia, zanim natknalem sie na jeden z tych smoków..... Tawerna Orlana, tam jestem. Ale co to za fuck? l-- me--- zmysly zanikaja......");
 
 	AI_StopProcessInfos	(self);
 
@@ -2066,7 +2066,7 @@ INSTANCE Info_Mod_Xardas_NW_Lich (C_INFO)
 	information	= Info_Mod_Xardas_NW_Lich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein untoter Magier treibt sein Unwesen auf Khorinis.";
+	description	= "Nieumarly magik jest na Khorinis.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Lich_Condition()
@@ -2079,13 +2079,13 @@ FUNC INT Info_Mod_Xardas_NW_Lich_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Lich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_00"); //Ein untoter Magier treibt sein Unwesen auf Khorinis.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_01"); //Im Kampf vermochte ich ihm nichts anzuhaben und hätte fast mein Leben dabei gelassen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_02"); //Er sprach davon, man bräuchte viel und doch wenig, ihn zu vernichten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_03"); //(ungeduldig) Nun, ich darf annehmen, dass du nicht von Xeres sprichst, sondern von einem der Geschöpf aus dem Buch.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_04"); //Wenn du ihn nicht bezwingen kannst, dann gehe ihm aus dem Weg ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_05"); //Da ich aber auch weiß, dass du dich nicht durch meine Worte von weiteren Narreteien abhalten lässt: Begib dich in unsere Festung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_06"); //Dort wirst du in der Bibliothek ein Buch finden, das dir die Antworten geben sollte, nach denen du suchst.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_00"); //Nieumarly magik jest na Khorinis.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_01"); //W walce nie moglam z nim nic wspólnego i niemal opuscilam z nim zycie.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lich_15_02"); //Mówil o potrzebie zniszczenia go wiele, ale niewiele.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_03"); //(impatycznie) Cóz, moge przypuszczac, ze nie mówisz o Xeres, ale o jednym z stworzen z ksiazki.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_04"); //Jesli nie mozesz go pokonac, wyjdz z drogi....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_05"); //Ale poniewaz wiem tez, ze moje slowa nie pozwola ci powstrzymac sie od dalszej glupoty: Idz do naszej fortecy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Lich_14_06"); //W bibliotece znajduje sie ksiazka, która powinna dac Ci odpowiedzi, których szukasz.
 };
 
 INSTANCE Info_Mod_Xardas_NW_Gormgniez (C_INFO)
@@ -2096,7 +2096,7 @@ INSTANCE Info_Mod_Xardas_NW_Gormgniez (C_INFO)
 	information	= Info_Mod_Xardas_NW_Gormgniez_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es gibt da etwas, das mir keine Ruhe lässt ...";
+	description	= "Jest cos, co mnie nie zostawi w spokoju....";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Gormgniez_Condition()
@@ -2109,24 +2109,24 @@ FUNC INT Info_Mod_Xardas_NW_Gormgniez_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Gormgniez_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_00"); //Es gibt da etwas, das mir keine Ruhe lässt ... Was haben Drachen, Schlaf und Sprechen miteinander gemeinsam?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_01"); //Mit sonderbaren Fragen beschäftigst du dich, wo du doch eigentlich Xeres bezwingen solltest.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_02"); //Nun, ein kleiner Dämon hat mir so ein Geheimnis verraten ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_03"); //Geheimnis eines Dämonen, Drachen, sprechen und Schlaf?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_04"); //Hmm, ich beginne zu begreifen und werde auf deine Frage eingehen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_05"); //Wie jedes Lebewesen benötigen auch Drachen hin und wieder Schlaf.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_06"); //Jedoch ist ihr Schlaf immer dann besonders fest und beständig, wenn sie auf Raubzug waren, erschöpft durch die Anstrengungen, zufrieden über reiche Beute.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_07"); //Reiche Beute?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_08"); //Gold, Silber und Edelsteine. Güter, die beispielsweise Gläubige in Massen den Stellvertretern ihres Gottes Innos übereignen ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_09"); //... die sich in nicht unerheblicher Menge in ihrer Residenz angehäuft haben. Ich verstehe.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_10"); //(nachdenklicher) Hmm, und nicht unweit, westlich vom Kloster spüre ich auch eine starke magische Präsenz.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_11"); //Was wohl wäre, wenn jemand dem Informationsfluss unter den Dämonen etwas, nun ja, helfen würde ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_12"); //(wieder zum Helden) Ich hoffe, ich konnte alle Fragen damit zu deiner Zufriedenheit beantworten.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_00"); //Jest cos, co mnie nie zostawi w spokoju.... Co laczy smoki, sen i mowe?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_01"); //Zajmujesz sie dziwne pytaniami, kiedy masz podbic Xeres.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_02"); //Cóz, maly demon powiedzial mi taka tajemnice.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_03"); //Tajemnica demona, smoka, mowy i snu?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_04"); //Hmm, zaczynam rozumiec i odpowiem na twoje pytanie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_05"); //Jak kazde zywe stworzenie, smoki potrzebuja snu od czasu do czasu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_06"); //Jednak ich sen jest szczególnie ciezki i staly, gdy byli na rajdzie, wyczerpani wysilkiem, zadowoleni z bogatej ofiary.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_07"); //Bogaty lup?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_08"); //Zlote, srebrne i szlachetne kamienie. Towary, które, na przyklad, wierzacy przenosza w mszy do przedstawicieli swojego boga Innos....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Gormgniez_15_09"); //... zgromadzonych w miejscu zamieszkania w niewielkich ilosciach. Rozumiem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_10"); //Przemyslany) Hmm, i niedaleko, na zachód od klasztoru, czuje tez silna magiczna obecnosc.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_11"); //Co by bylo, gdyby ktos pomógl przeplyw informacji pomiedzy demonami?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Gormgniez_14_12"); //(znowu bohaterowi) Mam nadzieje, ze z przyjemnoscia odpowiem na wszystkie pytania.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_DRAGON, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_DRAGON, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Von Xardas erfuhr ich, dass Drachen immer nach erfolgreichen Raubzügen besonders fest schlafen. Das Innoskloster mit seinen Schätzen wäre dabei prädestiniert für einen solchen Raubzug, hatte Xardas zu verstehen gegeben.");
-	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Der im Schlaf sprechende Drache würde sich das bestimmt nicht entgehen lassen, wenn er davon wüsste ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Nauczylem sie od Xardasa, ze smoki spia szczególnie dobrze po udanych najazdach. Klasztor Innos z jego skarbami mial byc predestynowany na taki nalot, wskazal Xardas.");
+	B_LogEntry	(TOPIC_MOD_NL_DRAGON, "Smok mówiacy we snie z pewnoscia nie przegapilby tego, gdyby wiedzial o tym......");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Moorhexe (C_INFO)
@@ -2137,7 +2137,7 @@ INSTANCE Info_Mod_Xardas_NW_Moorhexe (C_INFO)
 	information	= Info_Mod_Xardas_NW_Moorhexe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es hat geklappt, der Drache gab einiges preis.";
+	description	= "Wygladalo to tak, ze smok duzo sie rozdawal.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Moorhexe_Condition()
@@ -2151,20 +2151,20 @@ FUNC INT Info_Mod_Xardas_NW_Moorhexe_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Moorhexe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_00"); //Es hat geklappt, der Drache gab einiges preis.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_01"); //(leicht höhnisch) Ja, ich hörte, was sich im Kloster ereignet hat.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_02"); //Nur war ich eben nicht in der Lage alles in Erfahrung zu bringen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_03"); //Er sprach von "dem Land des Korns der Mutter" und von einem Moor und seiner Bewohnerin.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_04"); //Hmm, Land des Korns der Mutter ... es dürfte sich um eine Umschreibung für ein Gebiet im Norden von Khorinis gehandelt haben: Relendel.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_05"); //Und ein Moor ... ja, tatsächlich, ich hörte mal von einem, auf dem ein Fluch lasten soll.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_06"); //Was für ein Fluch, und wo liegt dieses Moor genau?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_07"); //Beim besten Willen, über alles bin ich nun auch nicht in der Lage Auskunft zu erteilen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_08"); //Frag jemanden, der mit der Region im Norden bestens vertraut ist, zum Beispiel einen Waldläufer. Beim schwarzen Troll soll ja einer ansässig sein.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_09"); //Gut, dann sprach der Drache aber noch von einer Bewohnerin, welche sich dem Mächtigen verbergen soll.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_10"); //(uninteressiert) Sehr rätselhaft, aber die Bibliothek unserer Festung ist umfangreich. Dort kannst du Rat finden.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_11"); //Ich muss nun Andokai mit einigen Nachforschungen unterstützen, Wissen erschließen, das in den Büchern dieser Festung verborgen liegt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_12"); //Er erwarb einige Spruchrollen und Runen der Verwandlungsmagier.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_13"); //Wir wollen versuchen zu ergründen, ob sich daraus Plagen-Zauber generieren lassen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_00"); //Wygladalo to tak, ze smok duzo sie rozdawal.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_01"); //Tak, slyszalem, co sie stalo w klasztorze.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_02"); //Poza tym nie moglem dowiedziec sie wszystkiego.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_03"); //Er sprach von "grunty, na których uprawia sie ziarno matki" und von einem Moor und seiner Bewohnerin.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_04"); //Hmm, kraj zboza matki.... musi byc parafraza dla obszaru na pólnocy Khorinis: Relendel.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_05"); //I torfowisko.... Tak, wlasciwie, slyszalem o kims przekletym.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_06"); //Co to jest przeklenstwo i gdzie dokladnie jest to wrzosowisko?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_07"); //Dla najlepszych intencji nie jestem w stanie dostarczyc informacji na temat wszystkiego.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_08"); //Zapytaj kogos, kto bardzo dobrze zna region na pólnocy, na przyklad straznika. Czarny troll ma miec mieszkanca.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe_15_09"); //No cóz, wtedy smok mówil o kobiecie mieszkance, która ma ukrywac sie przed poteznymi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_10"); //Bardzo tajemniczy, ale biblioteka naszej twierdzy jest obszerna. Mozna tam znalezc porade.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_11"); //Teraz musze wesprzec Andokai badaniami, rozwinac wiedze, która jest ukryta w ksiegach tej fortecy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_12"); //Zdobyl kilka ról w zakleciach i runy przemieniajacych sie magów.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe_14_13"); //Spróbujmy sie dowiedziec, czy mozesz z niego generowac zaklecia dzumy.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Lich_Hi))
 	{
@@ -2184,8 +2184,8 @@ FUNC VOID Info_Mod_Xardas_NW_Moorhexe_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_NL_MOORHEXE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_MOORHEXE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Xardas sprach von dem Gebiet Relendel im Norden von Khorinis, wo ein Moor zu finden sei. Den Weg dorthin könnte mir vermutlich ein Waldläufer beim schwarzen Troll zeigen.");
-	B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Xardas versucht mit Andokai einige Zauber der Verwandlungsmagier zu Plagen-Zaubern umsetzen. Er verwies mich daher wegen meiner restlichen Fragen an die Bibliothek der Schwarzmagier.");
+	B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Xardas mówil o obszarze Relendel na pólnocy Khorinis, gdzie znajdowano moczar. Prawdopodobnie wiezyczka przy czarnym trollu moglaby mi tam pokazac droge.");
+	B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Xardas próbuje wraz z Andokai zamienic niektóre zaklecia magów przeksztalcajacych sie w zaklecia dzumy. Wiec zwrócil mi sie do Biblioteki Czarnych Magicystów z pozostalymi pytaniami.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Moorhexe2 (C_INFO)
@@ -2196,7 +2196,7 @@ INSTANCE Info_Mod_Xardas_NW_Moorhexe2 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Moorhexe2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Drache hat noch etwas erwähnt...";
+	description	= "Smok wspomnial o czyms innym....";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Moorhexe2_Condition()
@@ -2210,24 +2210,24 @@ FUNC INT Info_Mod_Xardas_NW_Moorhexe2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Moorhexe2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe2_15_00"); //Der Drache hat noch etwas erwähnt...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_01"); //Ja?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe2_15_02"); //Er sprach davon, dass sich das, was immer sich im Moor aufhält, vor den Mächtigen verbirgt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_03"); //Hm, das könnte dein Unterfangen erschweren.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_04"); //Vielleicht offenbart sich des Rätsels Lösung nur, wenn du eine schwache Gestalt annimmst.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe2_15_00"); //Smok wspomnial o czyms innym....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_01"); //Tak?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Moorhexe2_15_02"); //Powiedzial, ze to, co jest w bagnie, ukrywa sie przed poteznymi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_03"); //Hm, moze to skomplikowac twoje przedsiewziecie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_04"); //Byc moze rozwiazanie tajemnicy zostanie ujawnione tylko wtedy, gdy przyjmiemy slaba forme.
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Andokai_Moorhexe)) {
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_05"); //Wie ich hörte, warst du bereits bei Andokai.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_05"); //Slyszalem, ze byles juz z Andokai.
 		if (Npc_KnowsInfo(hero, Info_Mod_Andokai_PyrmansStab)) {
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_06"); //Er wird dir sicherlich einen nützlichen Zauber gegeben haben.
-			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Möglicherweise wird sich mir das Geheimnis des Moors nicht offenbaren, wenn ich dort in meiner Gestalt herumlaufe. Xardas empfahl mir eine schwache Gestalt. Ich sollte den Verwandlungszauber von Andokai verwenden.");
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_06"); //Musial rzucic ci uzyteczny czar.
+			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Byc moze tajemnica wrzosowiska nie objawi sie mi, gdy bede chodzil w mojej formie. Xardas zalecal slaba figure. Powinienem uzyc zaklecia metamorfozy Andokai.");
 		} else {
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_07"); //Er wird sicherlich etwas nützliches für dich haben, wenn du ihm gebracht hast, wonach er verlangt.
-			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Möglicherweise wird sich mir das Geheimnis des Moors nicht offenbaren, wenn ich dort in meiner Gestalt herumlaufe. Xardas empfahl mir eine schwache Gestalt. Andokai wird etwas für mich haben, wenn ich seinen Auftrag erfüllt habe.");
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_07"); //On z pewnoscia bedzie mial cos pozytecznego dla Ciebie, jesli przyniósl go, co chce.
+			B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Byc moze tajemnica wrzosowiska nie objawi sie mi, gdy bede chodzil w mojej formie. Xardas zalecal slaba figure. Andokai bedzie mial cos dla mnie, kiedy wykonam swoja prace.");
 		};
 	} else {
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_08"); //Andokai wird dir dabei behilflich sein können.
-		B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Möglicherweise wird sich mir das Geheimnis des Moors nicht offenbaren, wenn ich dort in meiner Gestalt herumlaufe. Xardas empfahl mir eine schwache Gestalt. Andokai sollte mir weiterhelfen können.");
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Moorhexe2_14_08"); //Andokai bedzie w stanie Ci w tym pomóc.
+		B_LogEntry	(TOPIC_MOD_NL_MOORHEXE, "Byc moze tajemnica wrzosowiska nie objawi sie mi, gdy bede chodzil w mojej formie. Xardas zalecal slaba figure. Andokai powinien mi pomóc.");
 	};
 };
 
@@ -2239,7 +2239,7 @@ INSTANCE Info_Mod_Xardas_NW_WasMussIchTun (C_INFO)
 	information	= Info_Mod_Xardas_NW_WasMussIchTun_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Weg Beliars? Wie kann ich den einschlagen?";
+	description	= "Droga Beliara? Jak trafic?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WasMussIchTun_Condition()
@@ -2253,14 +2253,14 @@ FUNC INT Info_Mod_Xardas_NW_WasMussIchTun_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WasMussIchTun_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasMussIchTun_15_00"); //Der Weg Beliars? Wie kann ich den einschlagen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_01"); //Ich fürchte, dazu muss ich zuerst ein Geheimnis lüften.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_02"); //Du erinnerst dich sicher an die drei Lager im Minental, also das Alte Lager, das Neue Lager und das Sumpflager.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_03"); //Tatsache ist, dass es ein viertes Lager gab.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasMussIchTun_15_04"); //(skeptisch) Und wo soll das gelegen haben?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_05"); //Hoch oben in den Bergen, in der Nähe des Neuen Lagers.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_06"); //In der Zeit des ersten Orkkrieges wurde in dieser unwirtlichen Gegend eine Festung errichtet.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_07"); //Nach der Erschaffung der Barriere siedelten dort die Menschen an, die gute Gründe dafür hatten, nicht mit den anderen Lagern in Kontakt zu kommen - Anhänger Beliars.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasMussIchTun_15_00"); //Droga Beliara? Jak trafic?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_01"); //Obawiam sie, ze najpierw musze odkryc tajemnice.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_02"); //Pamietasz trzy obozy w dolinie rzeki Minental, Stary Obóz, Nowy Obóz i Obóz Szantowy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_03"); //Faktem jest, ze istnial czwarty obóz.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasMussIchTun_15_04"); //I gdzie by to bylo?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_05"); //Wysoko w górach, w poblizu Nowego Obozu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_06"); //W czasie I wojny lukowej na tym niegoscinnym terenie zbudowano twierdze.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasMussIchTun_14_07"); //Po stworzeniu bariery osiedlili sie tam ludzie, którzy mieli dobre powody, aby nie miec kontaktu z innymi obozami - wyznawcami Beliara.
 };
 
 INSTANCE Info_Mod_Xardas_NW_WasDuMitGruppe (C_INFO)
@@ -2271,7 +2271,7 @@ INSTANCE Info_Mod_Xardas_NW_WasDuMitGruppe (C_INFO)
 	information	= Info_Mod_Xardas_NW_WasDuMitGruppe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du mit der Gruppe zu tun?";
+	description	= "Co masz do czynienia z grupa?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WasDuMitGruppe_Condition()
@@ -2284,11 +2284,11 @@ FUNC INT Info_Mod_Xardas_NW_WasDuMitGruppe_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WasDuMitGruppe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasDuMitGruppe_15_00"); //Was hast du mit der Gruppe zu tun?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_01"); //Sie existierte schon, bevor ich mich von den Feuermagiern abwandte, aber ich kann nicht leugnen, dass ich dort großen Einfluss gewonnen habe.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_02"); //Du kannst dir meine Überraschung vorstellen, als ich zufällig auf diese Gruppierung stieß.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_03"); //Nach dem Fall der Barriere hat sie größere Bekanntheit erlangt, und einige namhafte Magier und Krieger der Kolonie sind zu ihr gestoßen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_04"); //Den einen oder anderen dürftest auch du noch gut im Gedächtnis haben, auch wenn es andersrum nicht der Fall sein wird.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WasDuMitGruppe_15_00"); //Co masz do czynienia z grupa?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_01"); //Istnialo ono juz zanim odwrócilem sie od Strazaków, ale nie moge zaprzeczyc, ze zyskalem tam duzy wplyw.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_02"); //Mozesz sobie wyobrazic moje zaskoczenie, kiedy natknalem sie na to ugrupowanie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_03"); //Po upadku Bariery, stal sie bardziej znany i dolaczyli do niego znani magowie i wojownicy kolonii.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WasDuMitGruppe_14_04"); //Niektóre z nich mozna dobrze zapamietac, nawet jesli nie bedzie odwrotnie.
 };
 
 INSTANCE Info_Mod_Xardas_NW_WarumNovize (C_INFO)
@@ -2299,7 +2299,7 @@ INSTANCE Info_Mod_Xardas_NW_WarumNovize (C_INFO)
 	information	= Info_Mod_Xardas_NW_WarumNovize_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Angenommen, ich wollte diesem Verein beitreten ...";
+	description	= "Przypuscmy, ze chcialem dolaczyc do tego klubu.....";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WarumNovize_Condition()
@@ -2313,11 +2313,11 @@ FUNC INT Info_Mod_Xardas_NW_WarumNovize_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WarumNovize_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WarumNovize_15_00"); //Angenommen, ich wollte diesem Verein beitreten ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WarumNovize_14_01"); //Wende dich an Andokai. Er ist der oberste Schwarzmagier der Festung und zuständig für die Rekrutierung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WarumNovize_14_02"); //Wenn du ihm sagst, dass ich dir vertraue, wird er dich gut behandeln.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WarumNovize_15_00"); //Przypuscmy, ze chcialem dolaczyc do tego klubu.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WarumNovize_14_01"); //Przejdz do Andokai. Jest on glównym czarnym magiem fortecy i jest odpowiedzialny za rekrutacje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WarumNovize_14_02"); //Jesli powiesz mu, ze ufam, on cie dobrze potraktuje.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Wenn ich mich den Beliaranhängern anschließen will, soll ich mich an Andokai wenden, den obersten Schwarzmagier der alten Festung.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Jesli chce przylaczyc sie do zwolenników Beliarana, powinienem zwrócic sie do Andokai, najwyzszego czarnego maga starej twierdzy.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_WelcherVorteil (C_INFO)
@@ -2328,7 +2328,7 @@ INSTANCE Info_Mod_Xardas_NW_WelcherVorteil (C_INFO)
 	information	= Info_Mod_Xardas_NW_WelcherVorteil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hätte ich davon, ein Beliaranhänger zu sein?";
+	description	= "Co wydostaloby sie z bycia przyczepa Beliaran?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WelcherVorteil_Condition()
@@ -2342,13 +2342,13 @@ FUNC INT Info_Mod_Xardas_NW_WelcherVorteil_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WelcherVorteil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WelcherVorteil_15_00"); //Was hätte ich davon, ein Beliaranhänger zu sein?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_01"); //(belehrend) Du wendest deine Gebete nicht an Beliar, weil du dir davon etwas versprichst, sondern weil du von seiner Lehre überzeugt bist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_02"); //Abgesehen davon... Auch unsere Krieger sind in der Magieanwendung geschult.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_03"); //Die Grundausbildung besteht aus den ersten beiden Kreisen der Magie.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_04"); //Erst danach musst du dich für eine Spezialisierung entscheiden. Die mächtigen Kampfzauber kannst du aber nur als Magier erlernen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WelcherVorteil_15_00"); //Co wydostaloby sie z bycia przyczepa Beliaran?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_01"); //(nauczanie) Nie zwracasz swoje modlitwy do Beliara, poniewaz jestes pewien, ale dlatego, ze jestes przekonany o jego nauczaniu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_02"); //Poza tym.... Nasi wojownicy sa równiez przeszkoleni w poslugiwaniu sie magia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_03"); //Szkolenie podstawowe sklada sie z pierwszych dwóch kregów magii.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WelcherVorteil_14_04"); //Dopiero wtedy trzeba wybrac specjalizacje. Jednak mozesz nauczyc sie tylko poteznych zaklec bojowych jak mag.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Bei den Beliaranhängern erlernt jeder Novize die zwei ersten Magiekreise, bevor er sich zu einem Krieger oder Magier spezialisiert.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Kazdy nowicjusz uczy sie dwóch pierwszych czarodziejów wisiorków Beliaranu, zanim specjalizuje sie w roli wojownika lub maga.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_WoSindAndere (C_INFO)
@@ -2359,7 +2359,7 @@ INSTANCE Info_Mod_Xardas_NW_WoSindAndere (C_INFO)
 	information	= Info_Mod_Xardas_NW_WoSindAndere_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie komme ich zu dieser Bergfestung?";
+	description	= "Jak dotrzec do tej twierdzy górskiej?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_WoSindAndere_Condition()
@@ -2373,19 +2373,19 @@ FUNC INT Info_Mod_Xardas_NW_WoSindAndere_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WoSindAndere_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoSindAndere_15_00"); //Wie komme ich zu dieser Bergfestung?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoSindAndere_15_00"); //Jak dotrzec do tej twierdzy górskiej?
 
 	if (Npc_GetDistToWP(self, "NW_XARDAS_TOWER_IN1_22") < 500 || Npc_GetDistToWP(self, "WP_XARDAS_PREACH_02") < 500) {
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_01"); //Die Frage lässt sich ganz einfach beantworten. Schau mal hier oben. Dort steht mein eigener Schrein.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_01"); //Odpowiedz na to pytanie jest prosta. Spójrz tutaj. Jest moja wlasna swiatynia.
 	} else {
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_02"); //Die Frage lässt sich ganz einfach beantworten. Schau mal ein Stockwerk höher. Dort steht mein eigener Schrein.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_02"); //Odpowiedz na to pytanie jest prosta. Spogladaj na góre. Jest moja wlasna swiatynia.
 	};
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoSindAndere_15_03"); //Und weiter? Ich wollte nicht beten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_04"); //(spöttisch) Dir sei deine freche Unwissenheit noch einmal verziehen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_05"); //Wir benutzen die Beliarschreine als Teleporter. Du musst jeden Schrein aktivieren, um damit reisen zu können, aber dann kannst du zwischen ihnen wechseln, wie du willst.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_06"); //Mein Schrein ist bisher nur mit dem der Festung verbunden. Du kannst sie also gar nicht verfehlen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WoSindAndere_15_03"); //Co dalej? Nie chcialem sie modlic.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_04"); //Wybaczcie jeszcze raz za swoja niezrozumiala ignorancje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_05"); //Jako teleporterzy korzystamy z sanktuariów Beliar. Musisz aktywowac kazda kapliczke, aby podrózowac z nia, ale wtedy mozesz przelaczac sie miedzy nimi tak jak chcesz.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_06"); //Moja swiatynia jest do tej pory zwiazana tylko z twierdza. Nie mozna tego przegapic.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Die Festung der Beliaranhänger erreiche ich über den Beliarschrein in Xardas' Turm, der gleichzeitig als Teleporter funktioniert.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Do twierdzy przyczep Beliaranu docieram do twierdzy Beliar przez swiatynie Beliar w wiezy Xardas, która pelni równiez funkcje teleportera.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_VonWemKannIchLernen (C_INFO)
@@ -2396,7 +2396,7 @@ INSTANCE Info_Mod_Xardas_NW_VonWemKannIchLernen (C_INFO)
 	information	= Info_Mod_Xardas_NW_VonWemKannIchLernen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bei wem kann ich was lernen?";
+	description	= "Kto moze mnie nauczyc, co?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_VonWemKannIchLernen_Condition()
@@ -2410,11 +2410,11 @@ FUNC INT Info_Mod_Xardas_NW_VonWemKannIchLernen_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_VonWemKannIchLernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_VonWemKannIchLernen_15_00"); //Bei wem kann ich was lernen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_VonWemKannIchLernen_14_01"); //Ich kann dir etwas über die Magie beibringen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_VonWemKannIchLernen_15_00"); //Kto moze mnie nauczyc, co?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_VonWemKannIchLernen_14_01"); //Moge Cie nauczyc o magii.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BELIARFESTUNG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Xardas kann mir helfen mein Mana zu steigern.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Xardas moze mi pomóc zwiekszyc moja mane.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_GomezHier (C_INFO)
@@ -2425,7 +2425,7 @@ INSTANCE Info_Mod_Xardas_NW_GomezHier (C_INFO)
 	information	= Info_Mod_Xardas_NW_GomezHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum lebt Gomez noch?";
+	description	= "Dlaczego Gomez wciaz zyje?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_GomezHier_Condition()
@@ -2438,13 +2438,13 @@ FUNC INT Info_Mod_Xardas_NW_GomezHier_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_GomezHier_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_00"); //Warum lebt Gomez noch?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_01"); //Er ist einer unserer Krieger.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_02"); //Aber ich habe ihn und die anderen im Alten Lager damals umgebracht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_03"); //Auf eine gewisse Weise schon. Aber vom endgültigen Tod war er noch weit entfernt.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_04"); //Und warum erinnert er sich nicht an mich?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_05"); //Ich habe über ihn und seine Handlanger einen starken Vergessenszauber gelegt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_06"); //Sie haben alles vergessen, was im Minental passiert ist.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_00"); //Dlaczego Gomez wciaz zyje?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_01"); //Jest jednym z naszych wojowników.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_02"); //Ale ja go zabilem, a inni wrócili do starego obozu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_03"); //W pewnym sensie, tak. Ale byl jeszcze daleki od ostatecznej smierci.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_GomezHier_15_04"); //Dlaczego mnie nie pamieta?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_05"); //Wyrzucilem na niego i jego popleczników potezne zapomnienie.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_GomezHier_14_06"); //Zapomniales o wszystkim, co wydarzylo sie w Minentalu.
 };
 
 INSTANCE Info_Mod_Xardas_NW_WannNovize (C_INFO)
@@ -2455,7 +2455,7 @@ INSTANCE Info_Mod_Xardas_NW_WannNovize (C_INFO)
 	information	= Info_Mod_Xardas_NW_WannNovize_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Andokai ist von mir überzeugt und würde mich aufnehmen.";
+	description	= "Andokai jest o mnie przekonany i chce mnie przyjac.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_wannNovize_Condition()
@@ -2468,12 +2468,12 @@ FUNC INT Info_Mod_Xardas_NW_wannNovize_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_WannNovize_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_00"); //Andokai ist von mir überzeugt und würde mich aufnehmen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_01"); //Er meint aber, er brauche noch deine Zustimmung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_02"); //Du weißt, dass ich viel von dir halte, und dass ich dich nicht erst auf die Probe stellen muss, um das herauszufinden.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_03"); //Danke. Aber?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_04"); //Es wäre anderen Bewerbern gegenüber unfair, dich bevorzugt zu behandeln. Deshalb werde ich dir noch eine Prüfung auftragen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_05"); //Daran, dass sie anspruchsvoll ist, siehst du, dass ich dir vertraue.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_00"); //Andokai jest o mnie przekonany i chce mnie przyjac.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_01"); //Mówi, ze nadal potrzebuje Pani zgody.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_02"); //Wiesz, ze mysle o Tobie bardzo wiele i nie musze Cie wystawiac na próbe.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_WannNovize_15_03"); //Dzieki. Ale?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_04"); //Niesprawiedliwe byloby preferencyjne traktowanie innych wnioskodawców. Dlatego tez daje ci jeszcze jeden test.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_WannNovize_14_05"); //Poniewaz jest wyszukana, widzisz, ze ufam Tobie.
 };
 
 INSTANCE Info_Mod_Xardas_NW_LetzterTest (C_INFO)
@@ -2484,7 +2484,7 @@ INSTANCE Info_Mod_Xardas_NW_LetzterTest (C_INFO)
 	information	= Info_Mod_Xardas_NW_LetzterTest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Schön, was soll das für eine Prüfung sein?";
+	description	= "Cóz, jaki jest to rodzaj testu?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_LetzterTest_Condition()
@@ -2498,31 +2498,31 @@ FUNC INT Info_Mod_Xardas_NW_LetzterTest_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_LetzterTest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_00"); //Schön, was soll das für eine Prüfung sein?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_01"); //Es geht um eine Splittergruppe von Gläubigen, die sich unter der Führung eines gewissen Ryan zusammengefunden hat.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_02"); //Wo denn?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_03"); //Im Allerheiligsten der Feuermagier, der Höhle der Feuerprüfung, ganz im Norden von Khorinis gelegen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_04"); //Eigentlich sollte uns das nicht stören, sondern viel eher belustigen - würden Ryan und seine Gruppe nicht einen verderblichen Einfluss ausüben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_05"); //Mit seinen sadistischen Ritualen, die er im Namen Beliars ausführt, lästert er unserem Gott.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_06"); //Wie ich hören musste, sind sogar zwei unserer Novizen zu ihm übergelaufen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_07"); //Es wird also Zeit, Ryan Einhalt zu gebieten. Allerdings hat Ryan auch gemerkt, dass er zu weit gegangen ist, und schützt sich mit starken Zaubern.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_08"); //Wie mir unser Spion mitteilte, gibt es nur eine Waffe, die imstande ist, ihm signifikant Schaden zuzufügen - und die besitzt ausgerechnet der Priester der Sekte.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_09"); //Es handelt sich um den Drei-Götter-Stab.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_10"); //Oho.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_11"); //Eine schreckliche Götterlästerung, nicht wahr? Mit diesem Stecken verhauen sich die notgeilen Spinner ihre Ärsche und rufen dabei Beliar an!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_12"); //Du musst dir also diesen Stab besorgen und Ryan damit beseitigen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_00"); //Cóz, jaki jest to rodzaj testu?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_01"); //Chodzi o rozbita grupe wierzacych, którzy zebrali sie pod przywództwem pewnego Ryana.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_02"); //Gdzie?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_03"); //W Najswietszym Sakramencie Strazaków, Jaskinia Testów Pozarnych, polozona na dalekiej pólnocy Khorinis.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_04"); //Tak naprawde nie powinno nam to przeszkadzac, ale raczej zachwycac nas - Ryan i jego grupa nie wywarliby na nas nietrwalego wplywu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_05"); //Swoimi sadystycznymi rytualami, które wykonuje w imie Beliarsa, bluznierczy przeciwko naszemu Bogu.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_06"); //Slyszalem, ze dwóch z naszych nowicjuszy przeszlo do niego.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_07"); //Czas wiec zatrzymac Ryana. Ryan zauwazyl jednak równiez, ze poszedl za daleko i chroni sie przed silnymi zakleciami.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_08"); //Jak powiedzial mi nasz szpieg, jest tylko jedna bron, która moze wyrzadzic mu powazne szkody - a kaplan sekty jest jej wlascicielem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_09"); //To trzema Bogami.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_15_10"); //Oho!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_11"); //Straszne bluznierstwo bogów, czyz nie? Z tym kijem, rogate blystki dostaja beat i dzwonia do Beliara!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_14_12"); //Wiec jestes gonna trzeba dostac ten kij i wyciagnac Ryan z niego.
 
-	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Xardas hat mir einem abtrünnigen Magier namens Ryan erzählt, der in der Höhle der Feuerprüfung der Feuermagier dunkle Rituale abhält. Ich soll ihn aufhalten. Um ihn zu töten, benötige ich jedoch den sogenannten Drei-Götter-Stab. Diesen trägt laut Xardas der Priester der Gruppe bei sich.");
+	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Xardas opowiedzial mi o czarodziejce renegatowej o nazwisku Ryan, który w Jaskini Testów Pozarnych Magistra Ognia trzyma ciemne rytualy. Mam go zatrzymac. Aby go jednak zabic, potrzebuje tak zwanej Trzech Bogów rózdzki. Wedlug kardasów, kaplani grupy niosa ja razem z nimi.");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_LetzterTest);
 
-	Info_AddChoice	(Info_Mod_Xardas_NW_LetzterTest, "Ich werde sehen, was ich tun kann.", Info_Mod_Xardas_NW_LetzterTest_B);
-	Info_AddChoice	(Info_Mod_Xardas_NW_LetzterTest, "Kann ich Ryan nicht anders überzeugen als mit dem Schwert?", Info_Mod_Xardas_NW_LetzterTest_A);
+	Info_AddChoice	(Info_Mod_Xardas_NW_LetzterTest, "Zobacze, co moge zrobic.", Info_Mod_Xardas_NW_LetzterTest_B);
+	Info_AddChoice	(Info_Mod_Xardas_NW_LetzterTest, "Czy nie moge przekonac Ryana inaczej niz mieczem?", Info_Mod_Xardas_NW_LetzterTest_A);
 };
 
 FUNC VOID Info_Mod_Xardas_NW_LetzterTest_B()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_B_15_00"); //Ich werde sehen, was ich tun kann.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_B_15_00"); //Zobacze, co moge zrobic.
 
 	Wld_InsertNpc	(Mod_1942_Ryan_NW, "TAVERNE");
 	Wld_InsertNpc	(Mod_1943_Waechter_01_NW, "TAVERNE");
@@ -2540,10 +2540,10 @@ FUNC VOID Info_Mod_Xardas_NW_LetzterTest_B()
 
 FUNC VOID Info_Mod_Xardas_NW_LetzterTest_A()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_A_15_00"); //Kann ich Ryan nicht anders überzeugen als mit dem Schwert?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_01"); //Nein. Ryan hat sein Ende selbst gewählt. Er hat gewusst, worauf er sich einlässt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_02"); //Du musst als Anhänger Beliars lernen, dass der Tod nur ein Bestandteil der Natur ist.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_03"); //Dies ist nicht die schrecklichste Bestrafung, die wir uns für Ryan einfallen lassen könnten.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_A_15_00"); //Czy nie moge przekonac Ryana inaczej niz mieczem?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_01"); //Nie. Ryan sam wybral swój koniec. Wiedzial, do czego sie dostaje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_02"); //Jako wyznawca Beliara, musisz sie dowiedziec, ze smierc jest tylko czescia natury.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_A_14_03"); //To nie jest najstraszniejsza kara, jaka moglibysmy wymyslic dla Ryana.
 };
 
 INSTANCE Info_Mod_Xardas_NW_LetzterTest_Success (C_INFO)
@@ -2554,7 +2554,7 @@ INSTANCE Info_Mod_Xardas_NW_LetzterTest_Success (C_INFO)
 	information	= Info_Mod_Xardas_NW_LetzterTest_Success_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ryan ist tot und seine Sekte zerschlagen.";
+	description	= "Ryan's dead and his sect is crushed.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_LetzterTest_Success_Condition()
@@ -2568,15 +2568,15 @@ FUNC INT Info_Mod_Xardas_NW_LetzterTest_Success_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_LetzterTest_Success_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_Success_15_00"); //Ryan ist tot und seine Sekte zerschlagen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_Success_15_00"); //Ryan's dead and his sect is crushed.
 
 	if (Npc_HasItems(hero, Ryans_Almanach) == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_Success_15_01"); //Das habe ich dort gefunden. Es enthält sicher einige lasterhafte Praktiken.
+		AI_Output(hero, self, "Info_Mod_Xardas_NW_LetzterTest_Success_15_01"); //Znalazlem to tam. Z pewnoscia zawiera ona pewne zle praktyki.
 
 		B_GiveInvItems	(hero, self, Ryans_Almanach, 1);
 
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_Success_14_02"); //Ein wertvolles Überbleibsel eines falschen Glaubens. Du tatest richtig daran, es mitzubringen.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_Success_14_02"); //Cenny resztka falszywej wiary. Mial pan racje, zabierajac ja ze soba.
 
 		B_GivePlayerXP	(400);
 	}
@@ -2586,9 +2586,9 @@ FUNC VOID Info_Mod_Xardas_NW_LetzterTest_Success_Info()
 		B_GivePlayerXP	(300);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_Success_14_03"); //Wie ich erwartet habe, hast du diese Prüfung mit Bravour bestanden. Deiner Aufnahme als Schwarzer Novize steht damit nichts mehr im Weg.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_LetzterTest_Success_14_03"); //Jak sie spodziewalem, zdales ten test z latajacymi kolorami. Nic nie stoi na przeszkodzie, aby nagranie stalo sie Black Novice.
 
-	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DAEMONENBESCHWOERER, "Ich kann jetzt Schwarzer Novize werden.", "Ich kann jetzt Schwarzer Novize werden.");
+	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DAEMONENBESCHWOERER, "Moge teraz zostac czarna nowicjuszka.", "Moge teraz zostac czarna nowicjuszka.");
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
@@ -2603,7 +2603,7 @@ INSTANCE Info_Mod_Xardas_NW_Rasend (C_INFO)
 	information	= Info_Mod_Xardas_NW_Rasend_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ein gigantischer Dämon hat auf Khorinis gewütet.";
+	description	= "Na Khorinis szaleje gigantyczny demon.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Rasend_Condition()
@@ -2616,47 +2616,47 @@ FUNC INT Info_Mod_Xardas_NW_Rasend_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rasend_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_00"); //Ein gigantischer Dämon hat auf Khorinis gewütet und verheerende Blutbäder unter den Paladinen in der Stadt, dem Kloster und der Ausgrabungsstätte der Wassermagier angerichtet.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_01"); //Was hat das zu bedeuten? Warum gezielt die Diener Innos' und Adanos'?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_02"); //Mir ist nicht zu Ohren gekommen, dass er auch die Magier und Krieger Beliars heimgesucht hätte ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_03"); //Was, ein mächtiges dämonisches Wesen, sagst du? Dann hat mich also meine Wahrnehmung nicht getäuscht ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_04"); //Wovon sprichst du?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_05"); //Ich spürte die Präsenz eben dieses gewaltigen Dämons in der Umgebung und kann sie immer noch wahrnehmen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_06"); //Wenn ich mich nicht täusche, ist es ein mächtiger Diener Beliars, genannt Shivar.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_07"); //Und du berichtest, er hätte persönlich das alles zu verantworten?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_08"); //Keine Dienerkreaturen oder dergleichen, die ihn unterstützt hätten?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_09"); //Ja, so wie ich es berichte.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_10"); //Das ist mehr als ungewöhnlich.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_11"); //Er ist ein Fürst unter den Dämonen und verfügt über einen riesigen Stab an niederen Dienerkreaturen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_12"); //Dass er selbst in Erscheinung tritt und solches Übel verbreitet, wirft viele Fragen auf ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_13"); //Lass mich nachdenken. (überlegt) Ich hörte von seltsamen Vorkommnissen auf dem Weidenplateau und der Umgebung.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_14"); //Böden wurden gesegnet und verflucht und dann traten Ungetüme in Erscheinung ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_15"); //Du kannst mir doch bestimmt mehr darüber berichten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_16"); //Ja, ich hatte tatsächlich einen unmittelbaren Einfluss auf diese Geschehnisse.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_17"); //Im Auftrag der Wassermagier reinigte ich die Böden von den Einflüssen der beiden Gottheiten wieder.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_18"); //Und dann bemächtigte sich eine finstere Macht der freigesetzten Kräfte und rief damit die Kreaturen auf dem Weidenplateau herbei.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_19"); //Die Magie der beiden Gottheiten absorbiert und damit die Geschöpfe beschworen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_20"); //Das ist höchst interessant und könnte wichtige Rückschlüsse auf die jetzigen Ereignisse geben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_21"); //Ich hatte nämlich davon gelesen, dass die Diener des Xeres die Macht dazu besessen hätten, Kontrolle über Magie anderer Gottheiten und damit auch über ihre magischen Geschöpfe an sich zu reißen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_22"); //(erschüttert) Willst du damit sagen, dass dieser grauenvolle Dämon jetzt unter dem Einfluss von Xeres steht?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_23"); //Dann wäre es in der tat schlecht um uns alle bestellt ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_24"); //Ich weiß es nicht. Hat Xeres' Einfluss so zugenommen, dass er sogar Kontrolle über die ergebensten Geschöpfe Beliars erlangen kann?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_25"); //Ich wage es mir kaum vorzustellen. Es würde auch immer noch einige Widersprüche und Fragen aufwerfen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_26"); //Warum kam er ohne Dienerkreaturen und weshalb ließ er bislang die Anhänger Beliars gänzlich verschont ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_27"); //Die Hauptsache ist, dass ich eine Möglichkeit finden kann, seinem Treiben ein Ende zu setzen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_28"); //Wenn es nicht anders geht, werde ich wohl mit Schwert und Magie gegen ihn vorrücken müssen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_29"); //Shivar im Kampf bezwingen? Dies zu versuchen wäre glatter Wahnsinn.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_30"); //Er ist weit mächtiger, als jeder Gegner, dem du bislang im direkten Kampf gegenüberstandest.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_31"); //Du würdest vermutlich nicht mal nahe genug an ihn herankommen können, um eine einzige Attacke gegen ihn führen zu können ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_32"); //Aber irgendetwas muss ich doch tun können. Nur tatenlos zusehen, wie er auf Khorinis mordet?!
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_33"); //Gibt es wirklich nichts, was mir bei dem Aufeinandertreffen mit ihm helfen könnte?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_34"); //Nun, er ist ein Dämon voll Hybris und toleriert nur seinesgleichen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_35"); //Selbst ich als hoher Würdenträger der Dämonenmagier könnte mir nicht sicher sein, ob er sich nicht auch gegen mich wendet ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_36"); //Du müsstest folglich einen Teil dämonischer Macht in dich selbst aufnehmen. Die Diener des Xeres sollen dazu in der Lage gewesen sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_37"); //Schaue dich also in der Nähe des Weidenplateaus um, ob du nicht irgendwelche wichtigen Anhaltspunkte dazu findest.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_38"); //Wenn du etwas gefunden hast, komm wieder zu mir.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_00"); //Gigantyczny demon wpadl na Khorinis i spowodowal spustoszenie wsród paladynów w miescie, klasztoru i wykopalisk magów wodnych.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_01"); //Jakie ma to znaczenie? Czemu sluzyly slugom Innos i Adanos?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_02"); //Nie slyszalem, ze odwiedzil on równiez magów i wojowników Beliarów.... Wiecej
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_03"); //Co, powie pan, ze to potezna istota demoniczna? Wtedy wiec moje postrzeganie mnie nie oszukiwalo....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_04"); //O czym Pan mówi?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_05"); //Czulem obecnosc tego poteznego demona w srodowisku i nadal moge to dostrzec.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_06"); //Jesli sie nie myle, to jest to potezny sluga Beliarów, zwany Shivar.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_07"); //A ty mówisz, ze on byl osobiscie odpowiedzialny za to wszystko?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_08"); //Zaden sluga nie wspieralby go ani zadne inne istoty, ani takie, które by go nie wspieraly?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_09"); //Tak, jak ja to podaje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_10"); //To wiecej niz niezwykle.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_11"); //Jest ksieciem wsród demonów i ma ogromny sztab nizszych sluzebnic.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_12"); //Fakt, ze on sam pojawia sie i rozprzestrzenia takie zlo rodzi wiele pytan....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_13"); //Prosze pozwolic mi pomyslec o tym. Slyszalem o dziwnych wydarzeniach na plaskowyzu pastwiskowym i w okolicy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_14"); //Gleby byly blogoslawione i przeklete, a potem pojawily sie potwory....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_15"); //Jestem pewien, ze mozesz mi powiedziec wiecej na ten temat.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_16"); //Tak, mialem bezposredni wplyw na te wydarzenia.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_17"); //Na polecenie magików wody oczyszczalem gleby z wplywów obu bóstw.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_18"); //I wtedy ciemna sila zlapala uwolnione sily i nazwala je istotami na plaskowyzu pastwiskowym.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_19"); //Magia tych dwóch bóstw wchlonela i w ten sposób przywoluje stworzenia?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_20"); //Jest to niezwykle interesujace i moze dostarczyc waznych informacji o aktualnych wydarzeniach.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_21"); //Czytalem, ze sludzy Xeres mieli moc przejac kontrole nad magia innych bóstw, a tym samym nad ich magicznymi stworzeniami.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_22"); //Czy mówi pan, ze ten straszliwy demon jest teraz pod wplywem Xeres?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_23"); //Wtedy byloby to naprawde zle dla nas wszystkich.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_24"); //Nie wiem, panie posle. Czy wplyw Xeres' a zwiekszyl sie do takiego stopnia, ze moze on nawet zdobyc kontrole nad najbardziej oddanymi stworzeniami Beliara?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_25"); //Nie mam odwagi sobie wyobrazic. W dalszym ciagu podnosiloby to równiez pewne sprzecznosci i pytania.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_26"); //Dlaczego przyszedl bez istot slugi i dlaczego zostawil zwolenników Beliara zupelnie nietknietych?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_27"); //Najwazniejsze jest to, ze moge znalezc sposób, aby polozyc kres jego zgielkowi.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_28"); //Jesli nie ma innej drogi, prawdopodobnie bede musial posunac sie przeciwko niemu z mieczem i magia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_29"); //Zdobadz Shivar w bitwie? Próba zrobienia tego bylaby zwyklym szalenstwem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_30"); //Jest o wiele potezniejszy niz jakikolwiek przeciwnik, z którym walczyles w bezposredniej walce.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_31"); //Prawdopodobnie nie bedziesz w stanie zblizyc sie do siebie na tyle, aby przeprowadzic pojedynczy atak przeciwko niemu......
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_32"); //Musze miec cos, co moge zrobic. Wystarczy stac z tylu i obserwowac go zabic khorinis?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend_15_33"); //Czy naprawde nie ma nic, co mogloby mi pomóc w starciu z nim?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_34"); //Cóz, jest on demonem pelnym pychy i toleruje tylko swój wlasny rodzaj.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_35"); //Nawet ja, jako wysoki dostojnik magików demonicznych, nie moglem byc pewien, ze on nie odwróci sie przeciwko mnie.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_36"); //Musisz wiec wchlonac czesc sily demonicznej. Mówi sie, ze slugom Xeres udalo sie to zrobic.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_37"); //Rozejrzyj sie wiec wokól wierzby plaskowyzu, aby zobaczyc, czy znajdziesz jakies wazne wskazówki.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend_14_38"); //Kiedy cos znajdziesz, wróc do mnie.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Xardas forderte mich dazu auf, in der Nähe des Weidenplateaus nach einem Mittel zu suchen, dass dämonische Kräfte in mir wecken könnte. Die Schöpfer der Ungetüme auf dem Plateau könnten so etwas besitzen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Xardas poprosil mnie, abym szukal sposobu na rozbudzenie sil demonicznych w poblizu wierzbowego plaskowyzu. Twórcy potworów na plaskowyzu mogliby miec cos takiego.");
 
 	Wld_InsertNpc	(Mod_7497_BlutkultMagier_NW, "TAVERNE");
 
@@ -2673,7 +2673,7 @@ INSTANCE Info_Mod_Xardas_NW_Rasend02 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Rasend02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich war bereits im 'Genuss' eines solchen Mittels.";
+	description	= "Bylem juz w 'przyjemnosci' takiego srodka zaradczego.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Rasend02_Condition()
@@ -2687,26 +2687,26 @@ FUNC INT Info_Mod_Xardas_NW_Rasend02_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Rasend02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_00"); //Ich war bereits im 'Genuss' eines solchen Mittels, mit welchem ich einige Zeit selbst zum teildämonischen Wesen wurde.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_01"); //Die Schergen des Xeres hatten es bei sich.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_02"); //Tatsächlich? Ja, du sprichst wahr, ich kann immer noch einen kleinen, aber deutlichen dämonischen Funken in dir wahrnehmen. Es scheint von Bestand zu sein ...
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_03"); //Und wie kann ich das jetzt für mich nutzen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_04"); //Hmm, Dämonen solcher Macht, wie Shivar, sind immer von einer starken Aura umgeben.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_05"); //Wenn du in seine Nähe gelangst und dich fest auf das Dämonische in dir fokussierst, könntest du zumindest für eine Weile das Dämonische in seiner ganzen Blüte zum Vorschein kommen lassen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_06"); //Blüte des Dämonischen?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_00"); //Bylem juz w "przyjemnosci" takiego srodka, z którym przez jakis czas stalem sie czesciowo demoniczna istota.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_01"); //Sukiennik mial go z nimi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_02"); //Czy tak jest? Tak, mówicie prawde, wciaz moge wam dostrzec mala, ale wyrazna iskre demoniczna. Wydaje sie, ze trwala....
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_03"); //A jak moge to teraz wykorzystac dla siebie?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_04"); //Hmm, demony takich poteg jak Shivar zawsze otoczone sa silna aura.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_05"); //Jesli zblizysz sie do niego i skupisz sie na demonice, mozesz przynajmniej pozwolic demonikowi wyjsc na chwile w pelnym rozkwicie.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_06"); //Bloom of the Demonic?
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_07"); //(zu sich selbst) So eine Umschreibung kann auch nur einem Dämonenmagier in den Sinn kommen.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_07"); //Parafraza taka jak ta przychodzi nam do glowy tylko dla maga demona.
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_08"); //(wieder zu Xardas) Zum Dämonen zu werden empfinde ich zwar nicht als besonders erstrebenswert, aber wenn es meine einzige Möglichkeit ist ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_09"); //Es würde dir auf jeden Fall neue Möglichkeiten eröffnen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_10"); //Wenn du so weit bist, versuche mit Shivar in den Dialog zu treten und zu erfahren, was vor sich geht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_11"); //Beliar möge dich behüten.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Rasend02_15_08"); //Ponownie do Xardasa) Stanie sie demonem nie czuje sie szczególnie pozadany, ale jesli jest to moja jedyna mozliwosc......
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_09"); //Z pewnoscia otworzyloby to przed Toba nowe mozliwosci.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_10"); //Kiedy bedziesz gotowy, spróbuj nawiazac dialog z Shivar i dowiedziec sie, co sie dzieje.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Rasend02_14_11"); //Beliar, bezpieczniej.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Na schön. Da das Dämonische nach dem Eintopf der Blutkultfritzen immer noch in mir weilt, soll ich mich in der Nähe des Dämonen Shivar voll darauf konzentrieren, um zum vollwertigen Dämonen zu werden. Anschließend könnte ich so manches von ihm erfahren ...");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "A zatem wszystko w porzadku. Skoro demonik wciaz jeszcze w mnie zyje za duszem zakletych kultów krwi, powinienem skoncentrowac sie calkowicie na tym, aby stac sie pelnoprawnym demonem w poblizu demona Siwara. Potem moglem sie o nim wiele dowiedziec....");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Trent (C_INFO)
@@ -2717,7 +2717,7 @@ INSTANCE Info_Mod_Xardas_NW_Trent (C_INFO)
 	information	= Info_Mod_Xardas_NW_Trent_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "In der verlassenen Mine hab ich das hier gefunden. Es hat einen Paladin verzaubert, sodass er mich töten wollte.";
+	description	= "Znalazlem to w opuszczonej kopalni. Zaczarowalo to paladyne, wiec próbowal mnie zabic.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Trent_Condition()
@@ -2731,19 +2731,19 @@ FUNC INT Info_Mod_Xardas_NW_Trent_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Trent_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent_15_00"); //In der verlassenen Mine hab ich das hier gefunden. Es hat einen Paladin verzaubert, sodass er mich töten wollte.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent_15_00"); //Znalazlem to w opuszczonej kopalni. Zaczarowalo to paladyne, wiec próbowal mnie zabic.
 
 	B_GiveInvItems	(hero, self, ItMi_SchwarzesErz_Trent, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_01"); //Das ist wirklich interessant ... dieses Erz scheint verflucht zu sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_02"); //Wenn ich die genauen Eigenschaften herausfinden kann, könnten es eine starke Waffe gegen deine Feinde sein.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_03"); //Komm in ein paar Tagen wieder, dann werde ich mehr wissen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_01"); //To naprawde interesujace.... ruda ta wydaje sie byc przekleta.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_02"); //Jesli moge dowiedziec sie dokladnych cech, moze to byc potezna bron przeciwko wrogom.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent_14_03"); //Wróccie za kilka dni, wtedy bede wiedzial wiecej.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent_15_04"); //(zu sich selbst) Hm, dann solle ich jetzt wohl zu Lord Andre gehen ...
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent_15_04"); //(do samego siebie) No cóz, wtedy chyba powinienem pójsc do Pana Andre' a....
 
-	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Xardas wird das schwarze Erz untersuchen. Ich sollte derweil zu Lord André gehen.");
+	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Xardas bedzie badal czarna rude. W miedzyczasie zobacze Pana André.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Trent2 (C_INFO)
@@ -2754,7 +2754,7 @@ INSTANCE Info_Mod_Xardas_NW_Trent2 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Trent2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas über das Erz erfahren?";
+	description	= "Czy slyszales cokolwiek o rudie?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Trent2_Condition()
@@ -2767,21 +2767,21 @@ FUNC INT Info_Mod_Xardas_NW_Trent2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Trent2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_00"); //Hast du etwas über das Erz erfahren? Ich bin gerade an einem Punkt, wo ich eine Wunderwaffe gebrauchen könnte.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_01"); //Leider ist es nicht so mächtig, wie ich gedacht habe. Gegen Xeres wird es uns nichts bringen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_02"); //Allerdings kannst du damit gegen gewisse Wesen Unsterblichkeit erlangen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_03"); //Und wenn ich bereits eine Waffe habe, die das Gleiche kann? Könnte das Erz die Wirkung dann nicht auflösen?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_04"); //Ja ... an sich schon, aber was wäre das denn für ein Zufall ... Hast du noch so ein Erz gefunden?
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_05"); //Ja und nein. Ein unsterblicher Orkschamane hat mir etwas von einer schwarzen Lunge mit Menschenblut erzählt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_06"); //Nun, so würde es wohl ein Ork nennen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_07"); //Nun gut, auch wenn wir das hier auch anders einsetzen könnten, haben wir wohl keine andere Wahl. Ein unbesiegbarer Schamane ist zu gefährlich.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_08"); //Nimm diesen Ring, ich habe ihn aus dem Erz machen lassen. Damit sollte deine Waffe ihm schaden können.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_00"); //Czy slyszales cokolwiek o rudie? Jestem w punkcie, w którym moglem uzyc broni cudownej.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_01"); //Niestety, nie jest tak potezny jak sadzilem. Nie uczyni nam to nic dobrego przeciwko Xeresowi.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_02"); //Mozna jednak osiagnac niesmiertelnosc przeciwko pewnym istotom.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_03"); //Co zrobic, jesli mam juz pistolet, który moze zrobic to samo? Czy nie mozna wtedy rozpuscic efektu?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_04"); //Tak..... przez sama siebie, ale co to za zbieg okolicznosci...... Czy znalazles taka rude?
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_05"); //Tak i nie. Niesmiertelny szaman z orka powiedzial mi cos o czarnych plucach z ludzka krwia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_06"); //No cóz, chyba tak wlasnie by ork nazwal.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_07"); //Cóz, nawet gdybysmy mogli wykorzystac to w inny sposób, nie mielibysmy innego wyboru. Niezwyciezony szaman jest zbyt niebezpieczny.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Trent2_14_08"); //Wezmy ten pierscionek, mam go zrobiony z rudy. To powinno sprawic, ze bron mu zaszkodzi.
 
 	B_GiveInvItems	(self, hero, ItRi_SchwarzesErz, 1);
 
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_09"); //Hoffentlich klappt es!
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Trent2_15_09"); //Miejmy nadzieje, ze to dziala!
 
-	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Um den Schamanen töten zu können, muss ich den Ring, den Xardas aus dem schwarzen Erz hergestellt hat, anlegen und ihm dann gegenüber treten.");
+	B_LogEntry	(TOPIC_MOD_KG_RITUAL, "Zeby móc zabic szamana, musze zalozyc pierscien, który Xardas zrobil z czarnej rudy, a nastepnie postawic mu twarza w twarz.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Aufnahme (C_INFO)
@@ -2792,7 +2792,7 @@ INSTANCE Info_Mod_Xardas_NW_Aufnahme (C_INFO)
 	information	= Info_Mod_Xardas_NW_Aufnahme_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich möchte Schwarzer Novize werden.";
+	description	= "Chce byc czarna nowicjuszka.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Aufnahme_Condition()
@@ -2806,40 +2806,40 @@ FUNC INT Info_Mod_Xardas_NW_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_15_00"); //Ich möchte Schwarzer Novize werden.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_15_00"); //Chce byc czarna nowicjuszka.
 	
 	if (hero.level >= 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_01"); //Du weißt, dass es kein Zurück gibt? Dass deine Entscheidung endgültig ist?
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_01"); //Wiesz, ze nie ma powrotu? Czy panska decyzja jest ostateczna?
 		
 		if (Mod_HatPlayerNeutraleKlamotten())
 		{
 			if (Mod_Gottstatus > 4)
 			{
-				AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_02"); //Du solltest allerdings vorher noch ein paar Taten zu Gunsten von Beliar vollbringen.
+				AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_02"); //Jednak najpierw powinienes zrobic kilka rzeczy na korzysc Beliara.
 			}
 			else
 			{
 				Info_ClearChoices	(Info_Mod_Xardas_NW_Aufnahme);
 
-				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Gib mir doch noch etwas Zeit.", Info_Mod_Xardas_NW_Aufnahme_Nein);
-				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Ja.", Info_Mod_Xardas_NW_Aufnahme_Ja);
+				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Dlaczego mi nie dales troche czasu?", Info_Mod_Xardas_NW_Aufnahme_Nein);
+				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Tak.", Info_Mod_Xardas_NW_Aufnahme_Ja);
 			};
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_03"); //Du solltest dir vorher aber noch eine neutrale Rüstung besorgen.
+			AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_03"); //Najpierw powinienes zdobyc neutralna zbroje.
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_04"); //Sammle noch etwas Erfahrung, dann werde ich dich mit Freuden aufnehmen.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_14_04"); //Zebrajcie wiecej doswiadczenia i z przyjemnoscia powitam Was.
 	};
 };
 
 FUNC VOID Info_Mod_Xardas_NW_Aufnahme_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_Nein_15_00"); //Gib mir doch noch etwas Zeit.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_Nein_15_00"); //Dlaczego mi nie dales troche czasu?
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Aufnahme);
 };
@@ -2850,24 +2850,24 @@ FUNC VOID Info_Mod_Xardas_NW_Aufnahme_Ja()
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_55);
 	Spine_UnlockAchievement(SPINE_ACHIEVEMENT_60);
 	
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_Ja_15_00"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_01"); //Dann darf ich dich hiermit stellvertretend für Andokai willkommen heißen!
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_02"); //Er wird es mir schon nicht übelnehmen, wenn ich dir deine Rüstung und die traditionelle Waffe übergebe.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Aufnahme_Ja_15_00"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_01"); //Wtedy chcialbym powitac pana tutaj w imieniu Andokai!
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_02"); //On nie bedzie mnie obwinial, jesli dam wam swoja zbroje i tradycyjna bron.
 
 	CreateInvItems	(hero, ITAR_NOV_DMB_01, 1);
 	CreateInvItems	(hero, ItMw_1h_SNov_Mace, 1);
 
-	B_ShowGivenThings	("Schwarze Novizenrobe und Kampfstab erhalten");
+	B_ShowGivenThings	("Czarna, nowicjuszska szate i paleczke otrzymano");
 
 	AI_UnequipArmor	(hero);
 	AI_EquipArmor	(hero, ItAr_Nov_DMB_01);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_03"); //Du solltest dich damit besser nicht in der Nähe dieser Innosanbeter in der Stadt und im Innoskloster zeigen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_04"); //Wenn du eine bessere Waffe brauchst, dann solltest du zu Scar gehen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_05"); //Zu deinen Rechten und Pflichten sprich aber wirklich besser mit Andokai.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_06"); //Ich werde dich nun in Magie unterweisen, wenn du wünschst.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_03"); //Lepiej nie pojawiac sie w poblizu tych wiernych Inno w miescie i klasztorze Innos.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_04"); //Jesli potrzebujesz lepszej broni, powinienes udac sie do Scar' s.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_05"); //Ale z waszymi prawami i obowiazkami naprawde lepiej rozmawiac z Andokai.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Aufnahme_Ja_14_06"); //Bede Cie teraz pouczal w magii, jesli tylko zechcesz.
 
-	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DAEMONENBESCHWOERER, "Ich bin jetzt ein Schwarzer Novize.", "Ich bin jetzt ein Schwarzer Novize.");
+	B_LogEntry_More	(TOPIC_MOD_GILDENAUFNAHME, TOPIC_MOD_DAEMONENBESCHWOERER, "Jestem czarna nowicjuszka.", "Jestem czarna nowicjuszka.");
 	B_SetTopicStatus	(TOPIC_MOD_GILDENAUFNAHME, LOG_SUCCESS);
 	B_SetTopicStatus	(TOPIC_MOD_DAEMONENBESCHWOERER, LOG_SUCCESS);
 
@@ -2902,7 +2902,7 @@ INSTANCE Info_Mod_Xardas_NW_AxtDesUntergangs (C_INFO)
 	information	= Info_Mod_Xardas_NW_AxtDesUntergangs_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was genau bewirkt die Axt denn?";
+	description	= "Co dokladnie robi siekiera?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_AxtDesUntergangs_Condition()
@@ -2915,10 +2915,10 @@ FUNC INT Info_Mod_Xardas_NW_AxtDesUntergangs_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_AxtDesUntergangs_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AxtDesUntergangs_15_00"); //Was genau bewirkt die Axt denn? Besonders stark sieht sie nicht aus ...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AxtDesUntergangs_14_01"); //Momentan ist sie ihrer Stärke beraubt. Du wirst sie häufig benutzen müssen, um ihre ehemalige Stärke wiederzuerlangen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AxtDesUntergangs_14_02"); //Sie entzieht jedem getöteten Feind einen Teil seiner Kraft und wird immer stärker.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AxtDesUntergangs_15_03"); //Klingt interessant.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AxtDesUntergangs_15_00"); //Co dokladnie robi siekiera? Nie wyglada na szczególnie silna.....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AxtDesUntergangs_14_01"); //Obecnie pozbawiona jest sily. Bedziesz musial ich czesto uzywac, aby odzyskac dawna sile.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AxtDesUntergangs_14_02"); //Z kazdego zabitego wroga wycofa czesc swojej sily i staje sie coraz silniejsza.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AxtDesUntergangs_15_03"); //Ciekawe brzmienie.
 };
 
 INSTANCE Info_Mod_Xardas_NW_MilizVorTurm (C_INFO)
@@ -2941,8 +2941,8 @@ FUNC INT Info_Mod_Xardas_NW_MilizVorTurm_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_MilizVorTurm_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_MilizVorTurm_14_00"); //Sofern du dich über die Kreaturen vor meinem Turm wunderst ... ein kleiner Mob aus der Stadt war unterwegs zu meinem Turm.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_MilizVorTurm_14_01"); //Meine Delegation hat sie gebührend begrüßt.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_MilizVorTurm_14_00"); //Jesli zastanawiasz sie nad istotami poza moja wieza.... Maly tlum z miasta byl w drodze do mojej wiezy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_MilizVorTurm_14_01"); //Moja delegacja nalezycie je powitala.
 };
 
 INSTANCE Info_Mod_Xardas_NW_AlteMineQuest (C_INFO)
@@ -2966,14 +2966,14 @@ FUNC INT Info_Mod_Xardas_NW_AlteMineQuest_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_AlteMineQuest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_00"); //In der alten Mine haben sich beunruhigende Dinge ergeben, wie ich gerade erfuhr.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_01"); //Mord und Totschlag ohne erkennbare Motive ... Näheres weiß ich noch nicht.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_02"); //Ich denke jedoch, dass deine Fertigkeiten und Kenntnisse in der Situation dort von Nutzen sein könnten.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest_15_03"); //Gut, ich werde beizeiten dort vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_00"); //W dawnej kopalni wydarzylo sie cos niepokojacego, o czym wlasnie slyszalem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_01"); //Zabójstwo i zabójstwo bez rozpoznawalnych motywów.... To wszystko, co wiem.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest_14_02"); //Mysle jednak, ze wasze umiejetnosci i wiedza moga byc przydatne w tej sytuacji.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest_15_03"); //Wszystko w porzadku, w odpowiednim czasie rzuce sie tam w pore.
 
 	Log_CreateTopic	(TOPIC_MOD_XARDAS_ALTEMINE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_XARDAS_ALTEMINE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "Xardas bat mich darum in der Alten Mine vorbeizuschauen. Scheinbar hat es dort einige ungewöhnliche Gewalttaten gegeben.");
+	B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "Xardas poprosil mnie, abym zatrzymal sie przy starej kopalni. Najwyrazniej doszlo do kilku niezwyklych aktów przemocy.");
 
 	Wld_InsertNpc	(Mod_7713_DMR_Daemonenritter_NW, "BIGFARM");
 };
@@ -2986,7 +2986,7 @@ INSTANCE Info_Mod_Xardas_NW_AlteMineQuest2 (C_INFO)
 	information	= Info_Mod_Xardas_NW_AlteMineQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Xeres hatte wieder einmal seine Finger im Spiel.";
+	description	= "Xeres znów mial palce w piersiach.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_AlteMineQuest2_Condition()
@@ -2999,17 +2999,17 @@ FUNC INT Info_Mod_Xardas_NW_AlteMineQuest2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_AlteMineQuest2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_00"); //Xeres hatte wieder einmal seine Finger im Spiel.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_01"); //Ich habe jedoch seine dunklen Machenschaften in der Alten Mine vereitelt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_02"); //Ja, ich habe gerade von den Ereignissen gehört.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_03"); //Den Weg über die Alte Mine wollte er sich erschließen, um seine Streitkräfte nach Khorinis zu bringen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_04"); //Sehr gerissen ... immer dort, wo es niemand erwartet.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_05"); //Stimmt ... alle Augen waren auf den Pass gerichtet.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_06"); //Nun, es ist müßig zu erwähnen, dass du nicht nur unsere Gemeinschaft, sondern ganz Khorinis wieder einmal vor einer Bedrohung bewahrt hast.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_07"); //Die Hinterlassenschaften des Feindes bei dieser Geschichte waren zudem nicht ganz wertlos.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_08"); //Ich habe unseren Schmied daher dazu angewiesen, dir etwas Schönes daraus anzufertigen.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_09"); //Wie meinst du das?
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_10"); //Unwichtig. Wenn du dich in unsere Festung begibst, wirst du es erfahren.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_00"); //Xeres znów mial palce w piersiach.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_01"); //Ale zawilem jego ciemne machinacje w starej kopalni.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_02"); //Tak, wlasnie uslyszalem o wydarzeniach.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_03"); //Chcial przebic sie przez stara kopalnie, aby sprowadzic swoje sily zbrojne na Khorinis.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_04"); //Bardzo sprytny.... gdzie nikt sie tego nie spodziewa.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_05"); //Prawo.... wszystkie oczy byly na przepustce.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_06"); //Cóz, nie ma sensu wspominac, ze po raz kolejny uratowaliscie nie tylko nasza wspólnote, ale cala Khorini od zagrozenia.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_07"); //Co wiecej, dziedzictwo wroga w tej historii nie bylo zupelnie bezwartosciowe.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_08"); //Polecilem nasz kowalowi, zebyscie uczynili dla Was cos pieknego.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_AlteMineQuest2_15_09"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_AlteMineQuest2_14_10"); //Niewazne. Jesli pójdziesz do naszej fortecy, bedziesz o tym wiedzial.
 
 	B_SetTopicStatus	(TOPIC_MOD_XARDAS_ALTEMINE, LOG_SUCCESS);
 
@@ -3026,7 +3026,7 @@ INSTANCE Info_Mod_Xardas_NW_Schreine (C_INFO)
 	information	= Info_Mod_Xardas_NW_Schreine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Teleport vom Beliarschrein aus hat funktioniert.";
+	description	= "Pracowal teleport z bialoruskiego sanktuarium.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Schreine_Condition()
@@ -3039,15 +3039,15 @@ FUNC INT Info_Mod_Xardas_NW_Schreine_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Schreine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine_15_00"); //Der Teleport vom Beliarschrein aus hat funktioniert.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_01"); //Ich habe nichts anderes erwartet.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_02"); //Da das System recht jung ist, sind noch nicht viele Beliarschreine untereinander vernetzt.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_03"); //Deshalb bitte ich dich, auf deinen Reisen nach bisher nicht angeschlossenen Schreinen Ausschau zu halten.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_04"); //Sollte es dir gelingen, alle Schreine zu aktivieren, werde ich mir eine kleine Belohnung für dich ausdenken.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine_15_00"); //Pracowal teleport z bialoruskiego sanktuarium.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_01"); //Nie spodziewalem sie niczego wiecej.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_02"); //Poniewaz system jest dosc mlody, nie wiele sanktuariów beliarskich jest polaczonych w siec.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_03"); //Dlatego prosze o zwrócenie uwagi na wczesniej niepowiazane swiatynie w podrózy.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine_14_04"); //Jesli uda ci sie aktywowac wszystkie kapliczki, wymyslim dla ciebie mala nagrode.
 
 	Log_CreateTopic	(TOPIC_MOD_BELIAR_SCHREINE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BELIAR_SCHREINE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BELIAR_SCHREINE, "Xardas hat mir aufgetragen, alle Beliarschreine zu aktivieren, die ich auf meinem Weg finde. Sobald ich alle verfügbaren Schreine angeschlossen habe, will er sich eine Belohnung für mich ausdenken.");
+	B_LogEntry	(TOPIC_MOD_BELIAR_SCHREINE, "Xardas kazal mi aktywowac wszystkie znalezione w drodze beliarskie swiatynie. Po podlaczeniu wszystkich dostepnych sanktuariów, chce mi wymyslic nagrode.");
 };
 
 INSTANCE Info_Mod_Xardas_NW_Schreine2 (C_INFO)
@@ -3058,7 +3058,7 @@ INSTANCE Info_Mod_Xardas_NW_Schreine2 (C_INFO)
 	information	= Info_Mod_Xardas_NW_Schreine2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich glaube, ich habe alle Beliarschreine untereinander angeschlossen.";
+	description	= "Mysle, ze polaczylem wszystkie beliarskie sanktuaria.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Schreine2_Condition()
@@ -3071,15 +3071,15 @@ FUNC INT Info_Mod_Xardas_NW_Schreine2_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Schreine2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine2_15_00"); //Ich glaube, ich habe alle Beliarschreine untereinander angeschlossen.
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_01"); //Das nenne ich eine respektable Leistung. Ich bin dir zu großem Dank verpflichtet.
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine2_15_02"); //Du erwähntest eine Belohnung...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_03"); //Richtig. (sucht) Ich hatte ihn doch letztens noch hier irgendwo...
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_04"); //Ah, genau. Hier ist er.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine2_15_00"); //Mysle, ze polaczylem wszystkie beliarskie sanktuaria.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_01"); //To wlasnie nazywam godnym szacunku osiagnieciem. Jestem panstwu gleboko zadluzony.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Schreine2_15_02"); //Wspomnial pan o nagrodzie....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_03"); //Prawo. (szukajac) Pewnego dnia mialem go tu gdzies tam, gdzies innego dnia....
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_04"); //Ah, to prawda. Tutaj jest, Panie Panu.
 
 	B_GiveInvItems	(self, hero, ItPo_Perm_Mana, 1);
 
-	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_06"); //Den Trank habe ich schon seit Ewigkeiten. Ich hoffe, er wirkt noch.
+	AI_Output(self, hero, "Info_Mod_Xardas_NW_Schreine2_14_06"); //Mialem ten eliksir od wieków. Mam nadzieje, ze nadal dziala.
 
 	B_SetTopicStatus	(TOPIC_MOD_BELIAR_SCHREINE, LOG_SUCCESS);
 };
@@ -3109,17 +3109,17 @@ FUNC INT Info_Mod_Xardas_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Xardas_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Xardas_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Xardas_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Xardas_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Xardas_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Xardas_LastPetzCounter);
 		
@@ -3134,42 +3134,42 @@ FUNC VOID Info_Mod_Xardas_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Xardas_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Xardas_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Xardas_LastPetzCrime == CRIME_THEFT)
 		|| ( (Xardas_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Xardas_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Xardas_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Xardas_Schulden			= 0;
 			Xardas_LastPetzCounter 	= 0;
@@ -3177,9 +3177,9 @@ FUNC VOID Info_Mod_Xardas_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Xardas_Schulden);
-			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Xardas_PMSchulden_14_14"); //Co to jest?
 		};
 	};
 	
@@ -3188,27 +3188,27 @@ FUNC VOID Info_Mod_Xardas_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Xardas_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Ile to znów bylo?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Xardas_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Xardas_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Xardas_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Xardas_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Xardas_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Xardas_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Xardas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"Ile to znów bylo?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Xardas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Xardas_PETZMASTER_PayNow);
 	};
 };
 
@@ -3236,8 +3236,8 @@ FUNC VOID Info_Mod_Xardas_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Xardas_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -3245,41 +3245,41 @@ FUNC VOID Info_Mod_Xardas_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_06"); //Nie interesuje mnie to, ze moge panstwa umiescic na szubienicy.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_07"); //Ale nie bedzie latwo sprawic, by ludzie znów byli laskawi.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_08"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_09"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_10"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_11"); //Ich werde so ein Verhalten hier nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_11"); //Nie bede tolerowal takich zachowan tutaj!
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_12"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Xardas_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_13"); //Wenn du dich mit der Miliz oder den Feuermagiern herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_14"); //Aber wenn du unsere Leute angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_13"); //Jesli walczysz z milicja lub magikami ognia, to jest jedna rzecz....
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_14"); //Ale jesli zaatakujesz naszych ludzi, bede musial Cie pociagnac do odpowiedzialnosci.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_15"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_16"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_17"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Xardas_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -3287,14 +3287,14 @@ FUNC VOID Info_Mod_Xardas_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_18"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_19"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_14_20"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Xardas_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_15_21"); //Ile?
 	
 	if (Xardas_Schulden > 1000)	{	Xardas_Schulden = 1000;	};
 		
@@ -3302,18 +3302,18 @@ FUNC VOID Info_Mod_Xardas_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Xardas_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Xardas_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Xardas_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Xardas_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Xardas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Xardas_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Xardas_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Xardas_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Xardas_Schulden);
-	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayNow_14_01"); //Gut! Ich werde dafür sorgen, dass es jeder von uns erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayNow_14_01"); //Dobrze! Doloze wszelkich staran, aby kazdy z nas sie o tym dowiedzial - wiec Twoja reputacja zostanie w rozsadny sposób przywrócona.
 
 	B_GrantAbsolution (LOC_SMCAMP);
 	
@@ -3327,9 +3327,9 @@ func void Info_Mod_Xardas_PETZMASTER_PayNow()
 
 func void Info_Mod_Xardas_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayLater_14_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayLater_14_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Xardas_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayLater_14_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Xardas_PETZMASTER_PayLater_14_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Xardas_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Xardas_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -3345,7 +3345,7 @@ INSTANCE Info_Mod_Xardas_NW_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Xardas_NW_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Lernen_MANA_Condition()
@@ -3360,7 +3360,7 @@ FUNC INT Info_Mod_Xardas_NW_Lernen_MANA_Condition()
 
 FUNC VOID Info_Mod_Xardas_NW_Lernen_MANA_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lernen_MANA_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Xardas_NW_Lernen_MANA_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Lernen_MANA);
 
@@ -3373,7 +3373,7 @@ FUNC VOID Info_Mod_Xardas_NW_Lernen_MANA_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Xardas_NW_Lernen_MANA_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Xardas_NW_Lernen_MANA_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Lernen_MANA);
@@ -3409,7 +3409,7 @@ INSTANCE Info_Mod_Xardas_NW_Lehrer (C_INFO)
 	information	= Info_Mod_Xardas_NW_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir lernen?";
+	description	= "Czy moge sie z Toba uczyc?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Lehrer_Condition()
@@ -3427,7 +3427,7 @@ FUNC INT Info_Mod_Xardas_NW_Lehrer_Condition()
 };
 FUNC VOID Info_Mod_Xardas_NW_Lehrer_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Xardas_NW_Lehrer_15_00"); //Kann ich bei dir lernen?
+	AI_Output (hero, self, "Info_Mod_Xardas_NW_Lehrer_15_00"); //Czy moge sie z Toba uczyc?
 	
 	if (Mod_Gilde == 12)
 	|| (Mod_Gilde == 13)
@@ -3435,14 +3435,14 @@ FUNC VOID Info_Mod_Xardas_NW_Lehrer_Info()
 	|| (Mod_Gilde == 15)
 	|| (Mod_Gilde == 16)
 	{
-		AI_Output (self, hero, "Info_Mod_Xardas_NW_Lehrer_14_01"); //Ich werde dich in die Geheimnisse der Alchemie einweihen.
+		AI_Output (self, hero, "Info_Mod_Xardas_NW_Lehrer_14_01"); //Pozwólcie sie na tajemnice alchemii.
 		
 		if (Mod_XardasAlchemie == FALSE)
 		{
 			Mod_XardasAlchemie = TRUE;
 
 			Log_CreateTopic	(TOPIC_MOD_LEHRER_BELIARFESTUNG, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Xardas kann mir etwas über die Alchemie beibringen.");
+			B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Xardas moze mnie nauczyc o alchemii.");
 		};
 
 		Info_ClearChoices 	(Info_Mod_Xardas_NW_Lehrer);
@@ -3451,19 +3451,19 @@ FUNC VOID Info_Mod_Xardas_NW_Lehrer_Info()
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice 		(Info_Mod_Xardas_NW_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Xardas_NW_Lehrer_HEALTH_01);
+			Info_AddChoice 		(Info_Mod_Xardas_NW_Lehrer,B_BuildLearnString ("Istota uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Xardas_NW_Lehrer_HEALTH_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Xardas_NW_Lehrer_Health_02);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Ekstrakt z ekstraktu leczniczego", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Xardas_NW_Lehrer_Health_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Xardas_NW_Lehrer_Health_03);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Eliksir uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Xardas_NW_Lehrer_Health_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
@@ -3471,42 +3471,42 @@ FUNC VOID Info_Mod_Xardas_NW_Lehrer_Info()
 		&& (Mod_LehrlingBei != 1)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Elixier des Lebens", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Xardas_NW_Lehrer_Perm_Health);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Eliksir zycia", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Xardas_NW_Lehrer_Perm_Health);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Xardas_NW_Lehrer_Mana_01);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Xardas_NW_Lehrer_Mana_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Xardas_NW_Lehrer_Mana_02);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("ekstrakt z maneny", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Xardas_NW_Lehrer_Mana_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Xardas_NW_Lehrer_Mana_03);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Xardas_NW_Lehrer_Mana_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Elixier des Geistes", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Xardas_NW_Lehrer_Perm_Mana);
+			Info_AddChoice	  (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Eliksir Ducha Swietego", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Xardas_NW_Lehrer_Perm_Mana);
 		};                                                                                                                                                                                   
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 		&& (Kapitel >= 4)
 		{                                                                                                                                                                                     
-			Info_AddChoice (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Elixier der Stärke", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Xardas_NW_Lehrer_PermSTR);               
+			Info_AddChoice (Info_Mod_Xardas_NW_Lehrer, B_BuildLearnString ("Skrobia Eliksir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Xardas_NW_Lehrer_PermSTR);               
 		};
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice (Info_Mod_Xardas_NW_Lehrer,B_BuildLearnString ("Elixier der Geschicklichkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Xardas_NW_Lehrer_Perm_DEX);
+			Info_AddChoice (Info_Mod_Xardas_NW_Lehrer,B_BuildLearnString ("Eliksir umiejetnosci", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Xardas_NW_Lehrer_Perm_DEX);
 		};		
 	};
 };

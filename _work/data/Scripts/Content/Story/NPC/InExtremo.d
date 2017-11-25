@@ -4,7 +4,7 @@ instance Charlotte (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 						=	"Charlotte";
+	name 						=	"Charlotta";
 	npctype						= 	npctype_main;
 	guild 						=	GIL_OUT;
 	level 						=	1;

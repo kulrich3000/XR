@@ -1,7 +1,7 @@
 INSTANCE Mod_1080_PIR_PIRAT_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Koch";
+	name 		= "kucharka";
 	guild 		= GIL_PIR;
 	id 			= 1080;
 	voice 		= 6;

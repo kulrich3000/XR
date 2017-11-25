@@ -454,7 +454,7 @@ func int Spine_Init(var int modules) {
 	};
 	
 	if (STR_Len(Spine_FirstStart) == 0) {
-		Spine_FirstStart = "Initialized";
+		Spine_FirstStart = "inicjowany";
 		
 		if (modules & SPINE_MODULE_GAMEPAD) {
 			Spine_InitEarthquakeHooks();
@@ -486,7 +486,7 @@ func int Spine_Init(var int modules) {
 // if played without account/login, empty string is returned
 func string Spine_GetCurrentUsername() {
 	if (Spine_Initialized && Spine_GetUsernameFunc) {
-		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+		const string STR_BUFFER = "";
 
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL__cdecl(Spine_GetUsernameFunc);

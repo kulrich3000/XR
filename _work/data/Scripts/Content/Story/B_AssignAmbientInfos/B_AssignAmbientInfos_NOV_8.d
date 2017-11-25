@@ -29,7 +29,7 @@ INSTANCE DIA_NOV_8_JOIN(C_INFO)
 	condition	= DIA_NOV_8_JOIN_Condition;
 	information	= DIA_NOV_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "Was muß ich tun, um Magier zu werden?";
+	description = "Co musze zrobic, aby zostac magikiem?";
 };                       
 
 FUNC INT DIA_NOV_8_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_NOV_8_JOIN_Condition()
 
 FUNC VOID DIA_NOV_8_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_8_JOIN_15_00"); //Was muß ich tun, um Magier zu werden?
-	AI_Output (self, hero, "DIA_NOV_8_JOIN_08_01"); //Ein Erwählter Innos' wirst du erst, wenn die Hohen Magier des Feuers es zulassen.
+	AI_Output (hero, self, "DIA_NOV_8_JOIN_15_00"); //Co musze zrobic, aby zostac magikiem?
+	AI_Output (self, hero, "DIA_NOV_8_JOIN_08_01"); //Zostaniesz elekt Innosem dopiero wtedy, gdy zezwola na to Wysokie Magicy Ognia.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_NOV_8_PEOPLE(C_INFO)
 	condition	= DIA_NOV_8_PEOPLE_Condition;
 	information	= DIA_NOV_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer leitet das Kloster?";
+	description = "Kto prowadzi klasztor?";
 };                       
 
 FUNC INT DIA_NOV_8_PEOPLE_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_NOV_8_PEOPLE_Condition()
 
 FUNC VOID DIA_NOV_8_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_8_PEOPLE_15_00"); //Wer leitet das Kloster?
-	AI_Output (self, hero, "DIA_NOV_8_PEOPLE_08_01"); //Der hohe Rat der Feuermagier. Er wird gebildet von den drei mächtigsten Magiern unseres Ordens. Sie beraten sich täglich in der Kirche.
-	AI_Output (self, hero, "DIA_NOV_8_PEOPLE_08_02"); //Die Erwählten Innos' sind allesamt Magier. Innos hat sie mit dieser Gabe ausgestattet, damit sie seinen Willen auf Erden durchsetzen können.
+	AI_Output (hero, self, "DIA_NOV_8_PEOPLE_15_00"); //Kto prowadzi klasztor?
+	AI_Output (self, hero, "DIA_NOV_8_PEOPLE_08_01"); //Wysoki Radca Strazaków. Jest on uformowany przez trzech najsilniejszych magów naszego zakonu. Codziennie konsultuja sie ze soba w kosciele.
+	AI_Output (self, hero, "DIA_NOV_8_PEOPLE_08_02"); //Wszyscy wybrani Innos "to magicy. Innos obdarzyl ich tym darem, aby mogli wyrazic Jego wole na ziemi.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_NOV_8_LOCATION(C_INFO)
 	condition	= DIA_NOV_8_LOCATION_Condition;
 	information	= DIA_NOV_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir etwas über dieses Kloster.";
+	description = "Powiedz mi o tym klasztorze.";
 };                       
 
 FUNC INT DIA_NOV_8_LOCATION_Condition()
@@ -89,10 +89,10 @@ FUNC INT DIA_NOV_8_LOCATION_Condition()
 
 FUNC VOID DIA_NOV_8_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_8_LOCATION_15_00"); //Erzähl mir etwas über dieses Kloster.
-	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_01"); //Es ist uralt. Es stammt noch aus der Zeit vor Rhobar, dem Ersten.
-	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_02"); //Unter dem Kloster sind die Katakomben. Sie erstrecken sich bis tief in den Berg hinein.
-	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die höchsten Geweihten Innos' Zutritt.
+	AI_Output (hero, self, "DIA_NOV_8_LOCATION_15_00"); //Powiedz mi o tym klasztorze.
+	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_01"); //Jest starozytna. Pochodzi przed pierwszym przed Rhobarem.
+	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_02"); //Pod klasztorem znajduja sie katakumby. Rozciagaja sie one gleboko w glab góry.
+	AI_Output (self, hero, "DIA_NOV_8_LOCATION_08_03"); //Ale tylko najwyzsi konsekrowani maja dostep do najnizszego poziomu.
 };
 
 INSTANCE Info_Mod_NOV_8_Pickpocket (C_INFO)

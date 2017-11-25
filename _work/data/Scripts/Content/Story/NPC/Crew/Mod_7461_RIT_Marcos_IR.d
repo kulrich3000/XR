@@ -1,7 +1,7 @@
 instance Mod_7461_RIT_Marcos_IR  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Marcos";
+	name 		= "lepy";
 	guild 		= GIL_OUT;
 	id 			= 7461;
 	voice 		= 4;

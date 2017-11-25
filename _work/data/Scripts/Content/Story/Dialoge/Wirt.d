@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wirt_Hi_Condition()
 
 FUNC VOID Info_Mod_Wirt_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wirt_Hi_29_00"); //Komm näher, Fremder! Trink einen mit uns, ist heute alles umsonst!
+	AI_Output(self, hero, "Info_Mod_Wirt_Hi_29_00"); //Przyjedz blizej, przyjdz blizej, obcy! Napic sie u nas, wszystko jest darmowe juz dzis!
 
 	CreateInvItems	(self, ItFo_Beer, 3);
 
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Wirt_Spender (C_INFO)
 	information	= Info_Mod_Wirt_Spender_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer ist der wohltätige Spender?";
+	description	= "Kim jest darczynca charytatywny?";
 };
 
 FUNC INT Info_Mod_Wirt_Spender_Condition()
@@ -43,26 +43,26 @@ FUNC INT Info_Mod_Wirt_Spender_Condition()
 
 FUNC VOID Info_Mod_Wirt_Spender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_Spender_15_00"); //Wer ist der wohltätige Spender?
-	AI_Output(self, hero, "Info_Mod_Wirt_Spender_29_01"); //Matteo! Sein Geschäft läuft gut, und er hat sich kräftig verguckt! (lacht dröhnend)
+	AI_Output(hero, self, "Info_Mod_Wirt_Spender_15_00"); //Kim jest darczynca charytatywny?
+	AI_Output(self, hero, "Info_Mod_Wirt_Spender_29_01"); //Matteo! Jego interesy ida dobrze, a on ma wielki miazdzy! (zlobienia zagli)
 
 	Info_ClearChoices	(Info_Mod_Wirt_Spender);
 
-	Info_AddChoice	(Info_Mod_Wirt_Spender, "Den Tratsch muss ich mir nicht antun.", Info_Mod_Wirt_Spender_B);
-	Info_AddChoice	(Info_Mod_Wirt_Spender, "Erzähl mehr.", Info_Mod_Wirt_Spender_A);
+	Info_AddChoice	(Info_Mod_Wirt_Spender, "Nie musze tego robic dla siebie.", Info_Mod_Wirt_Spender_B);
+	Info_AddChoice	(Info_Mod_Wirt_Spender, "Powiedz mi wiecej.", Info_Mod_Wirt_Spender_A);
 };
 
 FUNC VOID Info_Mod_Wirt_Spender_B()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_Spender_B_15_00"); //Den Tratsch muss ich mir nicht antun.
+	AI_Output(hero, self, "Info_Mod_Wirt_Spender_B_15_00"); //Nie musze tego robic dla siebie.
 
 	Info_ClearChoices	(Info_Mod_Wirt_Spender);
 };
 
 FUNC VOID Info_Mod_Wirt_Spender_A()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_Spender_A_15_00"); //Erzähl mehr.
-	AI_Output(self, hero, "Info_Mod_Wirt_Spender_A_29_01"); //(verschwörerisch) Valentine aus dem Oberen Viertel ist seine Angebetete. Er hat mir verraten, dass er sich mit ihr verloben will.
+	AI_Output(hero, self, "Info_Mod_Wirt_Spender_A_15_00"); //Powiedz mi wiecej.
+	AI_Output(self, hero, "Info_Mod_Wirt_Spender_A_29_01"); //Walentynka z Górnej Dzielnicy jest jego ukochana. Powiedzial mi, ze angazuje sie w nia.
 
 	Mod_Wirt_Freibier = 1;
 
@@ -77,7 +77,7 @@ INSTANCE Info_Mod_Wirt_Bild (C_INFO)
 	information	= Info_Mod_Wirt_Bild_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was erzählt man sich sonst so?";
+	description	= "Co jeszcze slyszysz?";
 };
 
 FUNC INT Info_Mod_Wirt_Bild_Condition()
@@ -115,7 +115,7 @@ FUNC INT Info_Mod_Wirt_Bild2_Condition()
 
 FUNC VOID Info_Mod_Wirt_Bild2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wirt_Bild2_29_00"); //(lacht) Und Wilfried, kennst du den? Halt dich fern von ihm.
+	AI_Output(self, hero, "Info_Mod_Wirt_Bild2_29_00"); //(smiech) I Wilfried, czy go znasz? Badz z dala od niego.
 };
 
 INSTANCE Info_Mod_Wirt_Wilfried (C_INFO)
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Wirt_Wilfried (C_INFO)
 	information	= Info_Mod_Wirt_Wilfried_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit Wilfried?";
+	description	= "A co z Wilfriedem?";
 };
 
 FUNC INT Info_Mod_Wirt_Wilfried_Condition()
@@ -139,17 +139,17 @@ FUNC INT Info_Mod_Wirt_Wilfried_Condition()
 
 FUNC VOID Info_Mod_Wirt_Wilfried_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_00"); //Was ist mit Wilfried?
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_01"); //Tagaus, tagein hör ich Geschichten über ihn.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_02"); //Ich glaube kaum, dass es jemanden in Khorinis gibt, den er noch nicht beschissen hat.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_03"); //Ganz recht, dass er jetzt einsam in seiner Hütte im Hafenviertel schmort!
-	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_04"); //Werd ich mir merken.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_05"); //Ach, da hätte ich doch fast das Stadtgespräch schlechthin vergessen, den Untergang der Minna, einem Fischkutter aus Myrtana!
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_06"); //Muss ein Spektakel gewesen sein, die ganzen Toten trieben im Wasser, und alle wollten sie sehen.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_07"); //Es soll sogar ein weltberühmter Maler an Deck gewesen sein, tja.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_08"); //Wenn du noch nicht mit Moe gesprochen hast, solltest du das nachholen, der weiß sicher noch mehr darüber.
-	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_09"); //Danke für das Gespräch.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_10"); //Einen noch!
+	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_00"); //A co z Wilfriedem?
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_01"); //Codziennie slysze o nim opowiesci.
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_02"); //
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_03"); //To prawda, ze teraz gotuje sam w swoim domku w dzielnicy portowej!
+	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_04"); //Pamietam to.
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_05"); //Och, prawie zapomnialem wspomniec o przemówieniu miasta, upadku Minny, lodzi rybackiej z Myrtany!
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_06"); //Musialo byc widowisko, wszyscy umarli unosza sie w wodzie i wszyscy chcieli ich zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_07"); //Mówi sie, ze byl on znanym na calym swiecie malarzem na pokladzie, no cóz.
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_08"); //Jesli jeszcze nie rozmawiales z Moe' em, powinienes to nadrobic, prawdopodobnie wie o tym wiecej.
+	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_09"); //Dziekujemy za wywiad.
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_10"); //Jeszcze jedno!
 
 	CreateInvItems	(self, ItFo_Beer, 3);
 
@@ -167,7 +167,7 @@ INSTANCE Info_Mod_Wirt_WacholderDieb (C_INFO)
 	information	= Info_Mod_Wirt_WacholderDieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du etwas über den Diebstahl bei Coragon?";
+	description	= "Czy wiesz cos o kradziezy Coragon?";
 };
 
 FUNC INT Info_Mod_Wirt_WacholderDieb_Condition()
@@ -181,12 +181,12 @@ FUNC INT Info_Mod_Wirt_WacholderDieb_Condition()
 
 FUNC VOID Info_Mod_Wirt_WacholderDieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_15_00"); //Weißt du etwas über den Diebstahl bei Coragon?
-	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_29_01"); //Selbst wenn, wieso sollte ich dir was sagen?
-	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_15_02"); //Weil ich dir vielleicht Geld anbieten könnte.
-	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_29_03"); //Dann würde ich 200 Goldstücke verlangen.
+	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_15_00"); //Czy wiesz cos o kradziezy Coragon?
+	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_29_01"); //Nawet gdybym to zrobil, dlaczego mialabym Ci cos powiedziec?
+	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_15_02"); //Poniewaz moge byc w stanie zaoferowac Ci pieniadze.
+	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_29_03"); //Zadalbym wtedy 200 sztuk zlota.
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Der Wirt will für Informationen 200 Goldstücke.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Wynajmujacy chce uzyskac informacje o 200 szt. zlota.");
 };
 
 INSTANCE Info_Mod_Wirt_WacholderDieb_Pay (C_INFO)
@@ -197,7 +197,7 @@ INSTANCE Info_Mod_Wirt_WacholderDieb_Pay (C_INFO)
 	information	= Info_Mod_Wirt_WacholderDieb_Pay_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist das Gold. Nun erzähl mir, was du weißt.";
+	description	= "Oto zloto. Teraz powiedz mi, co wiesz.";
 };
 
 FUNC INT Info_Mod_Wirt_WacholderDieb_Pay_Condition()
@@ -211,16 +211,16 @@ FUNC INT Info_Mod_Wirt_WacholderDieb_Pay_Condition()
 
 FUNC VOID Info_Mod_Wirt_WacholderDieb_Pay_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_Pay_15_00"); //Hier ist das Gold. Nun erzähl mir, was du weißt.
+	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_Pay_15_00"); //Oto zloto. Teraz powiedz mi, co wiesz.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_01"); //Am Tag des Diebstahls lungerte die ganze Zeit ein Typ namens Rukhar vor Coragons Taverne herum.
-	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_02"); //Der sitzt normalerweise aber in Orlans Taverne und besäuft sich. Sehr merkwürdig, oder?
-	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_Pay_15_03"); //Mag sein. Danke für den Tipp!
-	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_04"); //(grinst) Wenn du mal wieder Informationen brauchst, dann weißt du ja, bei wem du sie bekommst!
+	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_01"); //W dniu kradziezy, caly czas wokól tawerny Coragon wisial Rukhar.
+	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_02"); //Zazwyczaj siedzi w tawernie Orlana i pija sie. Bardzo dziwne, czyz nie?
+	AI_Output(hero, self, "Info_Mod_Wirt_WacholderDieb_Pay_15_03"); //Moze tak. Dziekuje za napiwek!
+	AI_Output(self, hero, "Info_Mod_Wirt_WacholderDieb_Pay_29_04"); //(grinning) Jesli znów potrzebujesz informacji, wiesz skad je otrzymasz!
 
-	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Rukhar, welcher sich normalerweise in der Taverne von Orlan aufhält, soll am Tag des Diebstahls vor Coragons Kneipe herumgelungert haben. Ich sollte mal zu ihm gehen und überprüfen, ob diese Information die 200 Goldstücke wert war.");
+	B_LogEntry	(TOPIC_MOD_CORAGON_WACHOLDER, "Rukhar, który zwykle przebywa w tawernie Orlanu, podobno w dniu kradziezy wisial wokól pubu Coragon. Powinienem go zobaczyc i sprawdzic, czy ta informacja byla warta 200 sztuk zlota.");
 };
 
 INSTANCE Info_Mod_Wirt_Pickpocket (C_INFO)

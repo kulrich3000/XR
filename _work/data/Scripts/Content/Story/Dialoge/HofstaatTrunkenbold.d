@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HofstaatTrunkenbold_Hi (C_INFO)
 	information	= Info_Mod_HofstaatTrunkenbold_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du der Trunkenbold?";
+	description	= "Jestes pijakiem?";
 };
 
 FUNC INT Info_Mod_HofstaatTrunkenbold_Hi_Condition()
@@ -19,9 +19,9 @@ FUNC INT Info_Mod_HofstaatTrunkenbold_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatTrunkenbold_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Hi_15_00"); //Bist du der Trunkenbold?
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Hi_15_00"); //Jestes pijakiem?
 	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Hi_04_01"); //...
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Hi_15_02"); //Hallo?
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Hi_15_02"); //Czy chcesz?
 	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Hi_04_01"); //...
 	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Hi_15_03"); //HALLO?!
 
@@ -77,31 +77,31 @@ FUNC INT Info_Mod_HofstaatTrunkenbold_Geliebte_Condition()
 
 FUNC VOID Info_Mod_HofstaatTrunkenbold_Geliebte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_00"); //(gähnt) Guten Morgen Majestät. Ist schon wieder die Zeit des Festes?
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_01"); //Jaja, Trunkenbold. Zu was anderem, weißt du noch, wie du die königliche ... äh ... meine Geliebte verführt hast?
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_02"); //Jaja, das weiß ich noch (gähnt) Da hat sie von meinem Spezialtrunken gekostet, hehe. Niemand verträgt meinen Spezialtrunken.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_03"); //Gib ihn mir.
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_04"); //Nein.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_05"); //Was nein.
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_06"); //Geht nicht. Hab keinen mehr.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_07"); //Dann mach welchen.
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_08"); //Natürlich, sobald ich richtig wach bin. Den zu machen dauert aber ein Weilchen.
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_00"); //(jaskinia) Dobry poranek, Twoja Wysokosc. Czy nadszedl czas, aby ponownie swietowac?
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_01"); //Tak, pijak. Cos innego, pamietasz, kiedy zobaczyles króla.... uh..... Uwiodla moja kochanke?
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_02"); //No tak, pamietam jak krzyknela, skosztowala mojego specjalnego napoju, heja. Nikt nie moze zabrac mojego pijaka.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_03"); //Daj mi ja.
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_04"); //Nie.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_05"); //Co nie?
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_06"); //Nie moge tego zrobic. Nie mam juz wiecej.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_15_07"); //Potem je zrobic.
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_04_08"); //Oczywiscie, jak tylko sie obudze. Zajmie to troche czasu.
 
 	Info_ClearChoices	(Info_Mod_HofstaatTrunkenbold_Geliebte);
 
-	Info_AddChoice	(Info_Mod_HofstaatTrunkenbold_Geliebte, "Nein, sag mir lieber wie du ihn machst.", Info_Mod_HofstaatTrunkenbold_Geliebte_B);
-	Info_AddChoice	(Info_Mod_HofstaatTrunkenbold_Geliebte, "Na gut.", Info_Mod_HofstaatTrunkenbold_Geliebte_B);
+	Info_AddChoice	(Info_Mod_HofstaatTrunkenbold_Geliebte, "Nie, lepiej powiesz mi, jak to robisz.", Info_Mod_HofstaatTrunkenbold_Geliebte_B);
+	Info_AddChoice	(Info_Mod_HofstaatTrunkenbold_Geliebte, "Wszystkie sluszne, wszystkie sluszne.", Info_Mod_HofstaatTrunkenbold_Geliebte_B);
 };
 
 FUNC VOID Info_Mod_HofstaatTrunkenbold_Geliebte_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_00"); //Nein, sag mir lieber wie du ihn machst.
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_01"); //Jawohl Hoheit. Ihr braucht Trunken, viiiieeel Trunken.  Dann braucht ihr eine seltsame, grüne Frucht, das ist alles.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_02"); //Woher bekomme ich den Trunken?
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_03"); //Den bekommt man in einer Stadt. Die Ausländer nennen Trunken "Schnaps" oder auch "Wacholder". Ts ... lächerlich.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_04"); //Was für eine grüne Frucht?
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_05"); //Sie wird "Melone" genannt. Ihr bekommst sie in Khorata. Schüttet den Trunken an einem Alchemietisch in die Melone.
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_06"); //Du bist ja noch gar nicht richtig wach. Hier, nimm ein wenig Freudenspender.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_00"); //Nie, lepiej powiesz mi, jak to robisz.
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_01"); //Tak, twój Wysoki! Potrzebujesz pijanstwa, pijanstwa, pijanstwa. Potem potrzebujesz dziwnego zielonego owocu, to wszystko.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_02"); //Gdzie moge znalezc pijaka?
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_03"); //Mozna ja dostac w miescie. Cudzoziemcy dzwonia do napojów alkoholowych lub jalowca. .... niedorzeczny.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_04"); //Jaki zielony owoc?
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_04_05"); //Nazywany jest melonem. Otrzymasz je w Khoracie. Wlac pijanego do melona przy stole z alchemia.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_B_15_06"); //Jeszcze nie zbudzisz sie. Oto kilka przysmaków.
 
 	CreateInvItems	(self, ItMi_Freudenspender, 1);
 
@@ -111,18 +111,18 @@ FUNC VOID Info_Mod_HofstaatTrunkenbold_Geliebte_B()
 
 	Mod_SL_PartGeliebte = 3;
 
-	B_LogEntry	(TOPIC_MOD_SL_GELIEBTE, "Für den Spezialtrunken, mit dem der Trunkenbold damals die königliche Geliebte verführt hat, brauche ich jede Menge Trunken und eine Melone. Trunken ist bei Ausländern auch als Wacholder bekannt. Beides kann ich in Khorata bekommen.");
+	B_LogEntry	(TOPIC_MOD_SL_GELIEBTE, "Do specjalnego napoju, którym pijak uwodzil ówczesnego królewskiego kochanka, potrzebuje duzo pijanego i melona. Pijak znany jest równiez obcokrajowcom jako jalowiec. Moge dostac sie w Khoracie.");
 };
 
 FUNC VOID Info_Mod_HofstaatTrunkenbold_Geliebte_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_15_00"); //Na gut.
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_04_01"); //Gut,gut. (gähnt) Ich mach' mich auf den Weg.
+	AI_Output(hero, self, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_15_00"); //Wszystkie sluszne, wszystkie sluszne.
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_04_01"); //Dobre, dobre, dobre, dobre. Ja jestem w drodze.
 
 	AI_GotoWP	(self, "REL_262");
 	AI_GotoWP	(self, "REL_272");
 
-	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_04_02"); //Es ist nicht die Zeit des Festes ... und du bist nicht der König! STIIRB!
+	AI_Output(self, hero, "Info_Mod_HofstaatTrunkenbold_Geliebte_A_04_02"); //To nie jest czas festiwalu.... Nie jestes królem! STIIRB!
 
 	Info_ClearChoices	(Info_Mod_HofstaatTrunkenbold_Geliebte);
 

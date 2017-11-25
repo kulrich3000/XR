@@ -21,16 +21,16 @@ FUNC INT Info_Mod_Sentenza_Hi_Condition()
 
 FUNC VOID Info_Mod_Sentenza_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_00"); //Ich habe gehört, dass du einige Sumpfkrautstängel von Baal Kagan bekommen hast. Lass mal sehen.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_01"); //(zu sich selbst) Ahh, 10 Stängel.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_00"); //Slyszalem, ze z Baala Kagana dostaliscie jakies bagienne lodygi. Pozwole sobie spojrzec.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_01"); //Aah, 10 lodyg.
 
 	Npc_RemoveInvItems	(hero, ItMi_Addon_Joint_01, 5);
 	Npc_RemoveInvItems	(hero, ItMi_Addon_Joint_02, 4);
 	Npc_RemoveInvItems	(hero, ItMi_Traumruf, 1);
 
-	B_ShowGivenThings	("10 Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("10 lodyg roslin bagiennych podanych");
 
-	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_02"); //(Zu dem Helden) Ok, du kannst jetzt weitermachen.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Hi_09_02"); //(do bohatera) Okay, mozesz kontynuowac teraz.
 };
 
 INSTANCE Info_Mod_Sentenza_Killer (C_INFO)
@@ -53,22 +53,22 @@ FUNC INT Info_Mod_Sentenza_Killer_Condition()
 
 FUNC VOID Info_Mod_Sentenza_Killer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_00"); //Du brauchst nichts zu sagen, ich weiß bereits, worum es geht. Weißt du, vielleicht können wir den Angriff noch abwenden.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_01"); //Du brauchst nur dieses blutige Schwert und dieses Schreiben zu nehmen und beides in Cutters Truhe zu schmuggeln und Gerüchte über ihn zu verbreiten, damit seine Truhe auch auf jeden Fall inspiziert wird.
-	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_15_02"); //Ich hatte gar nicht erwähnt, dass Cutter der Zeuge ... du hast den Mord verübt.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_03"); //Na und wenn schon.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_04"); //Wenn du dicht hältst, Lee kein Sterbenswörtchen von der ganzen Sache erzählst und schön deine Aufgabe erledigst, kommt keiner zu Schaden und für dich springt dabei auch was raus. Also?
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_00"); //Nie musisz nic mówic, juz wiem o co chodzi. Wiesz, moze jeszcze mozemy zapobiec atakowi.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_01"); //Wszystko co musisz zrobic, to wziac ten krwawy miecz i ten list i przemycic je zarówno do klatki piersiowej Cuttera i szerzyc plotki o nim, tak aby jego klatka piersiowa moze byc kontrolowana w kazdym przypadku.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_15_02"); //Nie wspomnialem nawet, ze redaktorka swiadka.... popelniles morderstwo.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_03"); //Co wiec zrobic?
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_09_04"); //Jesli trzymasz usta zamkniete, Lee nie mówi nic na temat calej sprawy, a jesli dobrze wykonasz swoja prace, nikt nie dozna obrazen i bedziesz mial duzo zabawy. Zatem?
 
 	Info_ClearChoices	(Info_Mod_Sentenza_Killer);
 
-	Info_AddChoice	(Info_Mod_Sentenza_Killer, "Nein, für solche dreckigen Spielchen lasse ich mich nicht einspannen.", Info_Mod_Sentenza_Killer_B);
-	Info_AddChoice	(Info_Mod_Sentenza_Killer, "Ok, ich mach’s.", Info_Mod_Sentenza_Killer_A);
+	Info_AddChoice	(Info_Mod_Sentenza_Killer, "Nie, nie daje sie zaangazowac w takie brudne gry.", Info_Mod_Sentenza_Killer_B);
+	Info_AddChoice	(Info_Mod_Sentenza_Killer, "Dobrze, zrobie to.", Info_Mod_Sentenza_Killer_A);
 };
 
 FUNC VOID Info_Mod_Sentenza_Killer_B()
 {
-	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_B_15_00"); //Nein, für solche dreckigen Spielchen lasse ich mich nicht einspannen.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_B_09_01"); //Na schön. Aber das wirst du noch bereuen.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_B_15_00"); //Nie, nie daje sie zaangazowac w takie brudne gry.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_B_09_01"); //A zatem wszystko w porzadku. Bedziesz jednak tego zalowal.
 
 	Mod_SLD_Spy = 1;
 	
@@ -77,17 +77,17 @@ FUNC VOID Info_Mod_Sentenza_Killer_B()
 
 FUNC VOID Info_Mod_Sentenza_Killer_A()
 {
-	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_A_15_00"); //Ok, ich mach’s.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_A_09_01"); //Gut. Du weißt, was du zu tun hast.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Killer_A_15_00"); //Dobrze, zrobie to.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Killer_A_09_01"); //Dobre. Wiesz, co musisz zrobic.
 
 	CreateInvItems	(hero, ItMw_BloodySword, 1);
 	CreateInvItems	(hero, ItWr_SentenzaForCutter, 1);
 
-	B_ShowGivenThings	("Blutiges Schwert und Zettel erhalten");
+	B_ShowGivenThings	("Krwawy miecz i notatka otrzymana");
 
 	Mod_SLD_Spy = 5;
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Ich habe von Sentenza ein blutiges Schwert erhalten und ein Schreiben, welche ich in Cutters Truhe schmuggeln soll. Danach muss ich unter den Schatten nur noch das Gerücht verbreiten, Cutter hätte selbst etwas mit Bullit’s Ableben zu tun.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Otrzymalem krwawy miecz z Sentenzy i list, który mam przemycic do klatki piersiowej Cuttera. Potem musze tylko pogloski, ze Cutter mial cos wspólnego z smiercia Bullita.");
 	
 	Info_ClearChoices	(Info_Mod_Sentenza_Killer);
 };
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Sentenza_Cutter (C_INFO)
 	information	= Info_Mod_Sentenza_Cutter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alles getan, wie du mir aufgetragen hast.";
+	description	= "Zrobilem wszystko, co nakazal mi pan zrobic.";
 };
 
 FUNC INT Info_Mod_Sentenza_Cutter_Condition()
@@ -113,17 +113,17 @@ FUNC INT Info_Mod_Sentenza_Cutter_Condition()
 
 FUNC VOID Info_Mod_Sentenza_Cutter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sentenza_Cutter_15_00"); //Ich habe alles getan, wie du mir aufgetragen hast.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Cutter_09_01"); //Sehr gut. Das wird einigen Ärger ersparen. Hier, nimm das Gold als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Cutter_15_00"); //Zrobilem wszystko, co nakazal mi pan zrobic.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Cutter_09_01"); //Bardzo dobry. Oszczedzi to troche klopotów. Tutaj wez zloto jako nagrode.
 
-	B_ShowGivenThings	("400 Gold und 12 Erz erhalten");
+	B_ShowGivenThings	("400 zlota i 12 zlota zakonserwowanych rudy");
 
 	CreateInvItems	(hero, ItMi_Gold, 400);
 	CreateInvItems	(hero, ItMi_Nugget, 12);
 
 	Mod_SLD_Spy = 8;
 
-	AI_Output(self, hero, "Info_Mod_Sentenza_Cutter_09_02"); //Deiner Aufnahme in die Reihen der Orkjäger bist du damit ein ganzes Stücke näher gekommen. Weiter so.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Cutter_09_02"); //Wstep do grona mysliwych luczników Orc zblizyl Cie znacznie bardziej. Droga do pójscia.
 
 	B_GivePlayerXP	(600);
 
@@ -150,22 +150,22 @@ FUNC INT Info_Mod_Sentenza_Bruce_Condition()
 
 FUNC VOID Info_Mod_Sentenza_Bruce_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_00"); //Hey, du bist doch ein fitter Bursche, oder? Ja, das bist du. Viel herumgekommen und kampferfahren.
-	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_01"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_02"); //Nun, vor einiger Zeit war ich vor dem Lager Viecher jagen. Da ist mir einer dieser Bluthunde begegnet.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_03"); //Ich bin sofort mit dem Schwert auf das Vieh los, und habe es ihm in den Körper gerammt.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_04"); //Leider hat das Dreckvieh sich dabei ruckartig weggedreht und ist mit samt meinem Schwert im Körper weggelaufen.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_05"); //Es hat den Weg vor unserem Lager nach oben genommen, hat sich wahrscheinlich in seiner Höhle verkrochen.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_06"); //Nun war dieses Schwert aber ein Familienerbstück, habe seit meiner Jugend nur damit gekämpft.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_07"); //Ich möchte es unbedingt wiederhaben.
-	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_08"); //Und ich soll es dir beschaffen.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_09"); //Ja, genau. Ich würde dafür auch einen fetten Batzen Erz springen lassen ... das ist mir die Klinge allemal Wert.
-	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_10"); //Ok, mal schauen was sich machen lässt.
-	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_11"); //Großartig! Ich zähl auf dich.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_00"); //Hej, jestes dobrym wspólpracownikiem, czyz nie jestes? Tak, jestes. Duza ilosc spotkan i doswiadczen w walce.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_01"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_02"); //No cóz, jakis czas temu bylem przed obozowym goniacym zwierzeta. Widzialem jeden z tych kopców.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_03"); //Natychmiast uderzylem bydlo mieczem i wrzucilem je do jego ciala.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_04"); //Niestety, brudna istota odwrócila sie nagle i uciekla moim mieczem w jego ciele.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_05"); //Wzial sie on przed naszym obozem, prawdopodobnie ukrywajac sie w jaskini.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_06"); //Ale teraz ten miecz byl dziedziczeniem rodzinnym, z nim walczylem dopiero od mlodosci.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_07"); //Chce, zeby to wrócilo tak zle.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_08"); //I mam ja dostac dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_09"); //Tak, to prawda. Puscilabym tez za to duza kawalkiem rudy..... ostrze jest dla mnie warte.
+	AI_Output(hero, self, "Info_Mod_Sentenza_Bruce_15_10"); //Dobrze, zobaczmy, co mozemy zrobic.
+	AI_Output(self, hero, "Info_Mod_Sentenza_Bruce_09_11"); //Wspanialy! Licze na Ciebie.
 
 	Log_CreateTopic	(TOPIC_MOD_NL_SENTENZAKLINGE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_SENTENZAKLINGE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NL_SENTENZAKLINGE, "Sentenza hat mir davon berichtet, dass er bei einem Kampf sein geliebtes Schwert in einen Bluthund bohrte und das Vieh mitsamt seinem Schwert davon lief. Es soll den Weg vor dem Lager nach oben genommen haben und sitzt dort wahrscheinlich in einer Höhle. Er versprach mir eine große Belohnung, wenn ich ihm die Waffe wiederbesorge, da er sehr an ihr zu hängen scheint.");
+	B_LogEntry	(TOPIC_MOD_NL_SENTENZAKLINGE, "Sentenza powiedzial mi, ze podczas walki wywiercil swój ukochany miecz we krwi, a bydlo i jego miecz uciekly. Mówi sie, ze przeszedl on przed obozem i prawdopodobnie siedzi tam w jaskini. Obiecal mi wielka nagrode za zwrot broni, bo wydaje mi sie byc bardzo przywiazany do niej.");
 
 	Wld_InsertNpc	(Mod_7641_BUD_Buddler_MT, "OC1");
 	B_KillNpc	(Mod_7641_BUD_Buddler_MT);

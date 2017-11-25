@@ -28,7 +28,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"Wie geht's denn so?";
+	description	 = 	"Jak to robisz?";
 };
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 {	
@@ -39,15 +39,15 @@ func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 };
 func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Wie geht's denn so?
+	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Jak to robisz?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Ich kann nicht klagen. Ich verrichte meine Pflicht, so wie Innos es von mir verlangt.
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Nie moge narzekac. Bede wykonywal swoje obowiazki zgodnie z zadaniami Inno.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hey, versuch hier nicht die 'Hey, wie geht's'-Nummer abzuziehen. Geh mir einfach aus den Augen, okay?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hej, nie próbuj ciagnac "hey, jak ty robisz". Wystarczy wyjsc z oczu, dobrze?
 	};
 	 
 	AI_StopProcessInfos (self);

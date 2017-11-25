@@ -1,7 +1,7 @@
 instance Mod_1119_PSINOV_Shrat_MT (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Shrat";
+	name 		=		"hrat";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_OUT;
 	level 		=		3;

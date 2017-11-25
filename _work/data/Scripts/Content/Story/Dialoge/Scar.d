@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Scar_Belagerung (C_INFO)
 	information	= Info_Mod_Scar_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles überstanden?";
+	description	= "Zrobiles to przez Ciebie?";
 };
 
 FUNC INT Info_Mod_Scar_Belagerung_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Scar_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Scar_Belagerung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_00"); //Alles überstanden?
-	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_01"); //(sarkastisch) Ja, alles bestens. Uns sind bei der Schlacht fast alle Waffen abhanden gekommen oder zerstört worden.
-	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_02"); //Kann ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_03"); //Wenn du mich so fragst, ja. In der Bibliothek steht eine Kiste, in der eine Anleitung ist, wie man Stahlkampfstäbe herstellen kann.
-	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_04"); //Besorg mir die Bauanleitung. Doch Vorsicht! Es haben sich mehrere untote Novizen dort verschanzt!
-	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_05"); //In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_00"); //Zrobiles to przez Ciebie?
+	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_01"); //Tak, wszystko jest w porzadku. Stracilismy lub zniszczylismy prawie cala bron w walce.
+	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_02"); //Czy moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_03"); //Jesli mnie pan zapyta, tak. W bibliotece znajduje sie pudelko z instrukcja jak wykonac stalowe sztabki bojowe.
+	AI_Output(self, hero, "Info_Mod_Scar_Belagerung_10_04"); //Popros mnie o instrukcje dotyczace budynku. Ale wystrzegaj sie! Kilku nieumarlych nowicjuszy zakorzenilo sie tam!
+	AI_Output(hero, self, "Info_Mod_Scar_Belagerung_15_05"); //Wszystkie sluszne, wszystkie sluszne.
 
 	Wld_InsertNpc	(Mod_4009_UntoterNovize_10_MT, "LABYRINTH_71");
 	Wld_InsertNpc	(Mod_4010_UntoterNovize_11_MT, "LABYRINTH_71");
@@ -35,7 +35,7 @@ FUNC VOID Info_Mod_Scar_Belagerung_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_STAEBE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_STAEBE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Scar will, dass ich ihm die Bauanleitung für Stahlkampfstäbe aus der Bibliothek bringen. Ich soll mich jedoch vor den untoten Novizen dort in acht nehmen.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Scar chce, abym wyprowadzil go z biblioteki wraz z instrukcja budowy stalowych pretów. Bede jednak uwazac na nieumarlych nowicjuszy.");
 };
 
 INSTANCE Info_Mod_Scar_TruheMage (C_INFO)
@@ -46,7 +46,7 @@ INSTANCE Info_Mod_Scar_TruheMage (C_INFO)
 	information	= Info_Mod_Scar_TruheMage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bekomme die Truhe nicht auf.";
+	description	= "Nie moge otworzyc tulowia.";
 };
 
 FUNC INT Info_Mod_Scar_TruheMage_Condition()
@@ -60,10 +60,10 @@ FUNC INT Info_Mod_Scar_TruheMage_Condition()
 
 FUNC VOID Info_Mod_Scar_TruheMage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_TruheMage_15_00"); //Ich bekomme die Truhe nicht auf. Sie ist anscheinend magisch geschützt!
-	AI_Output(self, hero, "Info_Mod_Scar_TruheMage_10_01"); //Mist, das hatte ich vergessen. Ich hatte mir gedacht, dass die Bauanleitung geschützt ist. Wende dich an Gomez, er kennt sich mit so etwas aus!
+	AI_Output(hero, self, "Info_Mod_Scar_TruheMage_15_00"); //Nie moge otworzyc tulowia. Wydaje sie, ze jest chroniona magia!
+	AI_Output(self, hero, "Info_Mod_Scar_TruheMage_10_01"); //Shit, zapomnialem o tym. Myslalem, ze instrukcje budowlane sa chronione. Zwróccie sie do Gomeza, wie o tych rzeczach!
 
-	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Gomez wird mir bei der verschlossenen Truhe weiterhelfen können, meint Scar. Hoffentlich hat er Recht.");
+	B_LogEntry	(TOPIC_MOD_BEL_STAEBE, "Gomez bedzie mógl mi pomóc z zamknieta klatka piersiowa, mówi Scar. Mam nadzieje, ze ma racje.");
 };
 
 INSTANCE Info_Mod_Scar_HabBauanleitung (C_INFO)
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_Scar_HabBauanleitung (C_INFO)
 	information	= Info_Mod_Scar_HabBauanleitung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist die Bauanleitung.";
+	description	= "Oto instrukcje.";
 };
 
 FUNC INT Info_Mod_Scar_HabBauanleitung_Condition()
@@ -88,20 +88,20 @@ FUNC INT Info_Mod_Scar_HabBauanleitung_Condition()
 
 FUNC VOID Info_Mod_Scar_HabBauanleitung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_HabBauanleitung_15_00"); //Hier ist die Bauanleitung. Ich hoffe, das war die Mühe wert.
+	AI_Output(hero, self, "Info_Mod_Scar_HabBauanleitung_15_00"); //Oto instrukcje. Mam nadzieje, ze bylo to warte wysilku.
 
 	B_GiveInvItems	(hero, self, ItWr_StahlkampfAnleitung, 1);
 
-	AI_Output(self, hero, "Info_Mod_Scar_HabBauanleitung_10_01"); //Danke. Hier hast du eine Belohnung.
+	AI_Output(self, hero, "Info_Mod_Scar_HabBauanleitung_10_01"); //Dzieki. Oto nagroda.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
-	AI_Output(hero, self, "Info_Mod_Scar_HabBauanleitung_15_02"); //Gut, danke.
-	AI_Output(self, hero, "Info_Mod_Scar_HabBauanleitung_10_03"); //Ich werde nun die Waffen schmieden lassen. Erledige deine Aufgaben!
+	AI_Output(hero, self, "Info_Mod_Scar_HabBauanleitung_15_02"); //Dobrze, dziekuje.
+	AI_Output(self, hero, "Info_Mod_Scar_HabBauanleitung_10_03"); //Bede teraz kute karabiny. Uzupelnij swoje zadania!
 
 	B_GivePlayerXP	(800);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_STAEBE, TOPIC_MOD_BEL_BELAGERUNG, "Ich hab Scar die Bauanleitung überreicht und eine Belohnung bekommen.", "Scar habe ich jetzt geholfen. Mal sehen, ob einer der anderen noch Hilfe braucht.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_STAEBE, TOPIC_MOD_BEL_BELAGERUNG, "Przekazalem instrukcje budowlane Scar' owi i dostalem nagrode.", "Pomagalem teraz Scar' owi. Zobaczmy, czy ktos inny potrzebuje pomocy.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_STAEBE, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);
@@ -115,7 +115,7 @@ INSTANCE Info_Mod_Scar_ToteNovizen (C_INFO)
 	information	= Info_Mod_Scar_ToteNovizen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab ein paar Fragen an dich.";
+	description	= "Mam do pana kilka pytan.";
 };
 
 FUNC INT Info_Mod_Scar_ToteNovizen_Condition()
@@ -128,14 +128,14 @@ FUNC INT Info_Mod_Scar_ToteNovizen_Condition()
 
 FUNC VOID Info_Mod_Scar_ToteNovizen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_00"); //Ich hab ein paar Fragen an dich.
-	AI_Output(self, hero, "Info_Mod_Scar_ToteNovizen_10_01"); //Um was geht es?
-	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_02"); //In den letzten zwei Nächten wurden zwei unserer Novizen tot aufgefunden. Ich muss den Mörder finden, bevor er sich noch jemanden holt.
-	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_03"); //Hast du etwas beobachtet?
-	AI_Output(self, hero, "Info_Mod_Scar_ToteNovizen_10_04"); //Ja, letzte Nacht habe ich eine Art Flattern vernommen. Als ich nach draußen kam, war da jedoch nichts. Mehr weiß ich auch nicht.
-	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_05"); //Gut, danke für die Information.
+	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_00"); //Mam do pana kilka pytan.
+	AI_Output(self, hero, "Info_Mod_Scar_ToteNovizen_10_01"); //Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_02"); //Dwóch z naszych nowicjuszy zostalo znalezionych zmarlych na dwie ostatnie noce. Musze znalezc zabójce, zanim dostanie kogos innego.
+	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_03"); //Widziales cos?
+	AI_Output(self, hero, "Info_Mod_Scar_ToteNovizen_10_04"); //Tak, wczoraj wieczorem uslyszalem jakis rodzaj drzenia. Kiedy wyszedlem, nic nie bylo. To wszystko, co wiem.
+	AI_Output(hero, self, "Info_Mod_Scar_ToteNovizen_15_05"); //Cóz, dziekuje za informacje.
 
-	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Scar hat ein Flattern gehört, als er jedoch nach draußen kam, war nicht mehr zu sehen.");
+	B_LogEntry	(TOPIC_MOD_BEL_DAEMON, "Scar uslyszal drzenie, ale kiedy wyszedl juz nie bylo widac.");
 };
 
 INSTANCE Info_Mod_Scar_Jagdtrophaeen_SollIch (C_INFO)
@@ -146,7 +146,7 @@ INSTANCE Info_Mod_Scar_Jagdtrophaeen_SollIch (C_INFO)
 	information	= Info_Mod_Scar_Jagdtrophaeen_SollIch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Myxir sagt, du hast Probleme mit einem Jäger.";
+	description	= "Myxir mówi, ze masz klopoty z mysliwym.";
 };
 
 FUNC INT Info_Mod_Scar_Jagdtrophaeen_SollIch_Condition()
@@ -159,15 +159,15 @@ FUNC INT Info_Mod_Scar_Jagdtrophaeen_SollIch_Condition()
 
 FUNC VOID Info_Mod_Scar_Jagdtrophaeen_SollIch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_Jagdtrophaeen_SollIch_15_00"); //Myxir sagt, du hast Probleme mit einem Jäger.
-	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_01"); //Mit Bartok, richtig. Gerüchteweise vergnügt er sich den ganzen Tag in der Roten Laterne.
-	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_02"); //Wer könnte es ihm schon verübeln? Hier im Lager ist ja mit Frauen tote Hose.
-	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_03"); //Ändert aber nix dran, dass mal wieder jemand den Schattenläufern die Hörner stutzen muss. Sonst sitz ich hier weiter auf dem Trockenen.
-	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_04"); //Wenn du ihn wieder zum Arbeiten kriegst, mach ich dir gute Preise, versprochen.
+	AI_Output(hero, self, "Info_Mod_Scar_Jagdtrophaeen_SollIch_15_00"); //Myxir mówi, ze masz klopoty z mysliwym.
+	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_01"); //Z Bartokiem, prawda. Plotka mówi, ze przez caly dzien cieszyl sie czerwona latarnia.
+	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_02"); //Kto móglby mu winic? W obozie znajduja sie spizarnie dla zmarlych kobiet.
+	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_03"); //Nie zmieniaj jednak faktu, ze ktos musi znów przycinac rogi biegaczy cieni. W przeciwnym razie usadowie sie tutaj na suchej ziemi.
+	AI_Output(self, hero, "Info_Mod_Scar_Jagdtrophaeen_SollIch_10_04"); //Jesli przywrócisz go do pracy, dam ci dobre ceny, obiecuje.
 
 	Log_CreateTopic	(TOPIC_MOD_FAULERJÄGER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FAULERJÄGER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "Scar will mir seine Jagdtrophäen erst verkaufen, wenn ich seinen Gehilfen Bartok dazu gebracht habe, wieder jagen zu gehen. Bartok hält sich die meiste Zeit in der Stadt und dort in der 'Roten Laterne' auf.");
+	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "Scar nie sprzeda mi swoich trofeów mysliwskich, dopóki nie otrzymam jego pomocnika Bartok' a, aby ponownie udal sie na polowanie. Bartok spedza wiekszosc czasu w miescie i tam w 'Czerwonej Lampce'.");
 };
 
 INSTANCE Info_Mod_Scar_BartokArbeitetWieder (C_INFO)
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Scar_BartokArbeitetWieder (C_INFO)
 	information	= Info_Mod_Scar_BartokArbeitetWieder_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bartok arbeitet jetzt wieder.";
+	description	= "Bartok wraca do pracy.";
 };
 
 FUNc INT Info_Mod_Scar_BartokArbeitetWieder_Condition()
@@ -191,16 +191,16 @@ FUNc INT Info_Mod_Scar_BartokArbeitetWieder_Condition()
 
 FUNC VOID Info_Mod_Scar_BartokArbeitetWieder_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_BartokArbeitetWieder_15_00"); //Bartok arbeitet jetzt wieder.
-	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_01"); //Danke, du hast mir damit einen großen Gefallen getan.
-	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_02"); //Ab sofort kann ich dir meine Jagdtrophäen verkaufen.
-	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_03"); //Nimm dieses Gold als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Scar_BartokArbeitetWieder_15_00"); //Bartok wraca do pracy.
+	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_01"); //Dzieki, ze mnie pan bardzo mi to przysluzyl.
+	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_02"); //Od teraz moge sprzedac wam moje trofea mysliwskie.
+	AI_Output(self, hero, "Info_Mod_Scar_BartokArbeitetWieder_10_03"); //Wez to zloto jako nagrode.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "Scar verkauft mir jetzt Jagdtrophäen. Ich hoffe, dass er ein Schattenläuferhorn hat.");
+	B_LogEntry	(TOPIC_MOD_FAULERJÄGER, "Scar sprzedaje mi teraz trofea mysliwskie. Mam nadzieje, ze ma cien rogu lyzwiarskiego.");
 	B_SetTopicStatus	(TOPIC_MOD_FAULERJÄGER, LOG_SUCCESS);
 
 	CreateInvItems	(self, ItAt_ShadowHorn, 1);
@@ -231,11 +231,11 @@ FUNc INT Info_Mod_Scar_AlteMineQuest_Condition()
 
 FUNC VOID Info_Mod_Scar_AlteMineQuest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_00"); //Verdammt, schon wieder einer dieser Verrückten.
-	AI_Output(hero, self, "Info_Mod_Scar_AlteMineQuest_15_01"); //Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_02"); //In der Mine sind alle durchgedreht.
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_03"); //Sie haben erst angefangen sich gegenseitig umzubringen, und nun greifen sie uns an.
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_04"); //Was zum Teufel geht da bloß vor ...
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_00"); //Damn, znów jeden z tych szalenców.
+	AI_Output(hero, self, "Info_Mod_Scar_AlteMineQuest_15_01"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_02"); //Wszyscy szaleja w kopalni.
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_03"); //Wlasnie zaczeli sie zabijac, a teraz atakuja nas.
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest_10_04"); //Co dzieje sie w piekle?
 
 	AI_StopProcessInfos	(self);
 };
@@ -260,11 +260,11 @@ FUNc INT Info_Mod_Scar_AlteMineQuest2_Condition()
 
 FUNC VOID Info_Mod_Scar_AlteMineQuest2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest2_10_00"); //Du hast die Mine tatsächlich von den Wahnsinnigen befreit?
-	AI_Output(hero, self, "Info_Mod_Scar_AlteMineQuest2_15_01"); //Ja, der Spuk hat ein Ende.
-	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest2_10_02"); //Du bist ein Teufelskerl. Hier, nimm ein paar Trophäen und einen guten Schluck zur Belohnung.
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest2_10_00"); //Czy rzeczywiscie oczyszcziles kopalnie szalenców?
+	AI_Output(hero, self, "Info_Mod_Scar_AlteMineQuest2_15_01"); //Tak, szpikulka ma koniec.
+	AI_Output(self, hero, "Info_Mod_Scar_AlteMineQuest2_10_02"); //Jestes pieklem faceta. Tutaj wez kilka trofeów i lyk nagrody.
 
-	B_ShowGivenThings	("Dämonenherz, schwarze Perle, 3 Skelettknochen und 2 reinen Alkohol erhalten");
+	B_ShowGivenThings	("Serce demoniczne, czarna perla, 3 kosci szkieletowe i 2 zakonserwowane alkoholi czystych");
 
 	CreateInvItems	(hero, ItAt_DemonHeart, 1);
 	CreateInvItems	(hero, ItMi_DarkPearl, 1);
@@ -284,7 +284,7 @@ INSTANCE Info_Mod_Scar_AlterFreund (C_INFO)
 	information	= Info_Mod_Scar_AlterFreund_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Na, alter Freund!";
+	description	= "Cóz, stary przyjaciel!";
 };
 
 FUNc INT Info_Mod_Scar_AlterFreund_Condition()
@@ -294,28 +294,28 @@ FUNc INT Info_Mod_Scar_AlterFreund_Condition()
 
 FUNC VOID Info_Mod_Scar_AlterFreund_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_15_00"); //Na, alter Freund!
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_10_01"); //(stutzt) Alter Freund?
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_15_02"); //(gespielt überrascht) Du erkennst mich nicht wieder? Wir waren einst die besten Kumpel!
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_10_03"); //Mag sein. Ich hab in der Barriere wohl zu viel gesoffen. Kann mich an gar nichts mehr erinnern. (lacht dreckig)
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_15_00"); //Cóz, stary przyjaciel!
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_10_01"); //Stary przyjaciel?
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_15_02"); //Nie rozpoznajesz mnie? Bylismy kiedys najlepszymi kolegami!
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_10_03"); //Moze tak. Musialem miec zbyt wiele do picia w barierze. Nic nie pamietaja. (smiertelnicy zabrudzeni
 
 	Info_ClearChoices	(Info_Mod_Scar_AlterFreund);
 
 	if (Npc_HasItems(hero, ItFo_Beer) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Lass uns einen auf die alten Zeiten heben!", Info_Mod_Scar_AlterFreund_B);
+		Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Wrócmy do dawnych czasów!", Info_Mod_Scar_AlterFreund_B);
 	};
 
-	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Du hattest mir damals was versprochen...", Info_Mod_Scar_AlterFreund_A);
+	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Obiecal mi pan wtedy cos jeszcze wtedy obiecal....", Info_Mod_Scar_AlterFreund_A);
 };
 
 FUNC VOID Info_Mod_Scar_AlterFreund_B()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_B_15_00"); //Lass uns einen auf die alten Zeiten heben!
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_B_15_00"); //Wrócmy do dawnych czasów!
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_B_10_01"); //(verwirrt) Meinetwegen. Auf unsere Freundschaft!
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_B_10_01"); //(Zmieszane) Dla mnie. Do naszej przyjazni!
 
 	B_UseItem	(hero, ItFo_Beer);
 	B_UseItem	(self, ItFo_Beer);
@@ -325,21 +325,21 @@ FUNC VOID Info_Mod_Scar_AlterFreund_B()
 
 FUNC VOID Info_Mod_Scar_AlterFreund_A()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_A_15_01"); //Du hattest mir damals was versprochen...
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_A_10_02"); //(düster) Das kann ja nichts Gutes bedeuten.
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_A_15_01"); //Obiecal mi pan wtedy cos jeszcze wtedy obiecal....
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_A_10_02"); //To nie moze byc dobre.
 
 	Info_ClearChoices	(Info_Mod_Scar_AlterFreund);
 
-	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Du schuldest mir noch Gold. Ich hab eine Wette gewonnen.", Info_Mod_Scar_AlterFreund_D);
-	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Du wolltest mir eine Waffe besorgen.", Info_Mod_Scar_AlterFreund_C);
+	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Nadal jestes mi winien zloto. Zwyciezylem zaklad.", Info_Mod_Scar_AlterFreund_D);
+	Info_AddChoice	(Info_Mod_Scar_AlterFreund, "Byles gonna dostalem mi bron.", Info_Mod_Scar_AlterFreund_C);
 };
 
 FUNC VOID Info_Mod_Scar_AlterFreund_D()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_D_15_00"); //Du schuldest mir noch Gold. Ich hab eine Wette gewonnen.
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_D_10_01"); //(misstrauisch) Gold? Ich dachte, in der Barriere wurde mir Erz gehandelt?
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_D_15_02"); //Mein ich ja.
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_D_10_03"); //(lacht) Na, mein Erz kannst du gern haben. Ist eh nicht mehr viel. Und wenn du dann zufrieden bist...
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_D_15_00"); //Nadal jestes mi winien zloto. Zwyciezylem zaklad.
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_D_10_01"); //Zloto? Myslalem, ze dostalem rude w barierze?
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_D_15_02"); //Mysle, ze tak, tak.
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_D_10_03"); //(smiech) No cóz, mozna miec moja rude. Tak czy owak niewiele pozostalo. A kiedy jestes zadowolony....
 
 	B_GiveInvItems	(self, hero, ItMi_Nugget, 1);
 
@@ -348,9 +348,9 @@ FUNC VOID Info_Mod_Scar_AlterFreund_D()
 
 FUNC VOID Info_Mod_Scar_AlterFreund_C()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_C_15_00"); //Du wolltest mir eine Waffe besorgen.
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_C_10_01"); //Hmm, wenn es nur das ist. Davon hab ich genug.
-	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_C_10_02"); //Nimm die hier, dann sind wir aber auch quitt!
+	AI_Output(hero, self, "Info_Mod_Scar_AlterFreund_C_15_00"); //Byles gonna dostalem mi bron.
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_C_10_01"); //Hmm, jesli to po prostu. Mialem juz to dosc.
+	AI_Output(self, hero, "Info_Mod_Scar_AlterFreund_C_10_02"); //Wezmy to pod uwage, a my bedziemy na równi!
 
 	B_GiveInvItems	(self, hero, ItMw_1h_Mil_Sword, 1);
 
@@ -365,7 +365,7 @@ INSTANCE Info_Mod_Scar_VieleSchwerter (C_INFO)
 	information	= Info_Mod_Scar_VieleSchwerter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du schleppst aber viele Schwerter mit dir rum!";
+	description	= "Przenosisz z soba mnóstwo mieczy!";
 };
 
 FUNc INT Info_Mod_Scar_VieleSchwerter_Condition()
@@ -375,11 +375,11 @@ FUNc INT Info_Mod_Scar_VieleSchwerter_Condition()
 
 FUNC VOID Info_Mod_Scar_VieleSchwerter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_VieleSchwerter_15_00"); //Du schleppst aber viele Schwerter mit dir rum!
-	AI_Output(self, hero, "Info_Mod_Scar_VieleSchwerter_10_01"); //Ja, sind ganz schön schwer. Aber Andokai hat gemeint, dass ich ja für irgendwas gut sein muss, deswegen verkaufe ich die jetzt.
+	AI_Output(hero, self, "Info_Mod_Scar_VieleSchwerter_15_00"); //Przenosisz z soba mnóstwo mieczy!
+	AI_Output(self, hero, "Info_Mod_Scar_VieleSchwerter_10_01"); //Tak, sa ciezkie. Ale Andokai powiedzial, ze musze byc dobry na cos, wiec sprzedaje go teraz.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, "Scar handelt mit Waffen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_BELIARFESTUNG, "Blizna w pistoletach.");
 };
 
 INSTANCE Info_Mod_Scar_Befoerderung (C_INFO)
@@ -390,7 +390,7 @@ INSTANCE Info_Mod_Scar_Befoerderung (C_INFO)
 	information	= Info_Mod_Scar_Befoerderung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Dämonenritter werden.";
+	description	= "Chce byc rycerzem demonicznym.";
 };
 
 FUNC INT Info_Mod_Scar_Befoerderung_Condition()
@@ -405,10 +405,10 @@ FUNC INT Info_Mod_Scar_Befoerderung_Condition()
 
 FUNC VOID Info_Mod_Scar_Befoerderung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Scar_Befoerderung_15_00"); //Ich will Dämonenritter werden.
-	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_01"); //Dämonenritter werden nur die Besten von uns. Doch du hast dir diesen Rang verdient.
-	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_02"); //Ich werde dich in den Rang des Dämonenritters erheben.
-	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_03"); //Hier ist deine Rüstung.
+	AI_Output(hero, self, "Info_Mod_Scar_Befoerderung_15_00"); //Chce byc rycerzem demonicznym.
+	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_01"); //Demoniczni rycerze staja sie tylko naszym najlepszym. Ale zdobyles te range.
+	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_02"); //Podniose cie do rangi Demon Knight.
+	AI_Output(self, hero, "Info_Mod_Scar_Befoerderung_10_03"); //Oto Twoja zbroja.
 
 	CreateInvItems	(hero, ITAR_Raven_Addon, 1);
 

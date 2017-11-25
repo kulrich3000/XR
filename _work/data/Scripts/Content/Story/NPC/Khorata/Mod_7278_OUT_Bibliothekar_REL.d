@@ -1,7 +1,7 @@
 INSTANCE Mod_7278_OUT_Bibliothekar_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bibliothekar";
+	name 		= "bibliotekarz";
 	guild 		= GIL_OUT;
 	id 			= 7278;
 	voice 		= 1;

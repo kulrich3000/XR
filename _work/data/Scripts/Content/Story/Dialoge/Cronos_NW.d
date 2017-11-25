@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Cronos_Hi_Condition()
 
 FUNC VOID Info_Mod_Cronos_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cronos_Hi_04_00"); //Du wieder? Hätte nicht gedacht, dass ich dich noch mal wieder sehe.
-	AI_Output(self, hero, "Info_Mod_Cronos_Hi_04_01"); //Wenn du was brauchst, komm zu mir. Ich kann dir ein paar Spruchrollen und Tränke verkaufen.
+	AI_Output(self, hero, "Info_Mod_Cronos_Hi_04_00"); //Ponownie? Nie sadze, ze znów cie zobaczylabym.
+	AI_Output(self, hero, "Info_Mod_Cronos_Hi_04_01"); //Jesli czegos potrzebujesz, przyjdz do mnie. Moge Ci sprzedac kilka rolek i eliksirów.
 	
 	Log_CreateTopic	(TOPIC_MOD_HÄNDLER_WASSERMAGIER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HÄNDLER_WASSERMAGIER, "Cronos verkauft Magiezubehör.");
+	B_LogEntry	(TOPIC_MOD_HÄNDLER_WASSERMAGIER, "Cronos sprzedaje akcesoria magiczne.");
 };
 
 INSTANCE Info_Mod_Cronos_Angriff_01 (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Cronos_Angriff_01 (C_INFO)
 	information	= Info_Mod_Cronos_Angriff_01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich glaube, wir können nun den Angriff starten und das Plateau säubern.";
+	description	= "Mysle, ze mozemy teraz rozpoczac atak i oczyscic plaskowyz.";
 };
 
 FUNC INT Info_Mod_Cronos_Angriff_01_Condition()
@@ -45,8 +45,8 @@ FUNC INT Info_Mod_Cronos_Angriff_01_Condition()
 
 FUNC VOID Info_Mod_Cronos_Angriff_01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_Angriff_01_15_00"); //Ich glaube, wir können nun den Angriff starten und das Plateau säubern.
-	AI_Output(self, hero, "Info_Mod_Cronos_Angriff_01_04_01"); //Na dann ... Adanos stehe uns bei.
+	AI_Output(hero, self, "Info_Mod_Cronos_Angriff_01_15_00"); //Mysle, ze mozemy teraz rozpoczac atak i oczyscic plaskowyz.
+	AI_Output(self, hero, "Info_Mod_Cronos_Angriff_01_04_01"); //No cóz, wiec.... Adanos stoi przy nas.
 
 	if (Npc_IsDead(Mod_1538_WKR_Wasserkrieger_NW))
 	{
@@ -137,7 +137,7 @@ FUNC INT Info_Mod_Cronos_Angriff_02_Condition()
 
 FUNC VOID Info_Mod_Cronos_Angriff_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cronos_Angriff_02_04_00"); //Bei Adanos! Wir haben es tatsächlich geschafft. Lass uns nun zurückgehen.
+	AI_Output(self, hero, "Info_Mod_Cronos_Angriff_02_04_00"); //Z Adanosem! Tak naprawde to uczynilismy. Wrócmy teraz.
 
 	AI_StopProcessInfos	(self);	
 

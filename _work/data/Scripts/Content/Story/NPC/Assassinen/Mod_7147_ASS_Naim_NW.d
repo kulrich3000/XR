@@ -1,7 +1,7 @@
 INSTANCE Mod_7147_ASS_Naim_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Na'im"; 
+	name 		= "Na 'im"; 
 	guild 		= GIL_OUT;
 	id 			= 7147;
 	voice 		= 13;

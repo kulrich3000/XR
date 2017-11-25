@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1h_MISC_Sword (C_Item) 
 {	
-	name 				=	"Rostiges Schwert";  //STANDARDOBJEKTIERUNG
+	name 				=	"Miecz zardzewialy";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -26,7 +26,7 @@ INSTANCE ItMw_1h_MISC_Sword (C_Item)
 };
 INSTANCE ItMw_1h_MISC_Sword_Geschaerft (C_Item) 
 {	
-	name 				=	"Rostiges Schwert (geschärft)";  //STANDARDOBJEKTIERUNG
+	name 				=	"zardzewialy miecz (ostrzony)";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -53,7 +53,7 @@ INSTANCE ItMw_1h_MISC_Sword_Geschaerft (C_Item)
 
 INSTANCE ItMw_2H_Sword_M_01 (C_Item) 
 {	
-	name 				=	"Rostiger Zweihänder"; //STANDARDOBJEKTIERUNG
+	name 				=	"Model zardzewialy, dwureczny"; //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -77,7 +77,7 @@ INSTANCE ItMw_2H_Sword_M_01 (C_Item)
 };
 INSTANCE ItMw_2H_Sword_M_01_Geschaerft (C_Item) 
 {	
-	name 				=	"Rostiger Zweihänder (geschärft)"; //STANDARDOBJEKTIERUNG
+	name 				=	"zardzewiale dwie rece (ostre)"; //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -102,7 +102,7 @@ INSTANCE ItMw_2H_Sword_M_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_SentenzaRost (C_Item) 
 {	
-	name 				=	"Rostiger Zweihänder"; //STANDARDOBJEKTIERUNG
+	name 				=	"Model zardzewialy, dwureczny"; //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	

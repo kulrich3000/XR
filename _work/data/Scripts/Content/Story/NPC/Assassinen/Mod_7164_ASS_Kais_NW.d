@@ -1,7 +1,7 @@
 INSTANCE Mod_7164_ASS_Kais_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kais"; 
+	name 		= "nabrzeza"; 
 	guild 		= GIL_OUT;
 	id 			= 7164;
 	voice 		= 1;

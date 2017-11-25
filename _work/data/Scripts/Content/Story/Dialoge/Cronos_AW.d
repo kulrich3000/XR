@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cronos_AW_Artefakt_01 (C_INFO)
 	information	= Info_Mod_Cronos_AW_Artefakt_01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, ihr wäret einem Artefakt auf der Spur ...";
+	description	= "Slyszalem, jak wy wysledziliscie artifakty....";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Artefakt_01_Condition()
@@ -20,66 +20,66 @@ FUNC INT Info_Mod_Cronos_AW_Artefakt_01_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_15_00"); //Ich habe gehört, ihr wäret einem Artefakt auf der Spur ...
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_04_01"); //Ahh, Saturas hat dir davon berichtet ... Nun, es sind eher Vermutungen, leise Hoffnungen, als echte Spuren.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_04_02"); //Ach, es ist eigentlich sehr unwahrscheinlich, fast töricht ernsthaft in Erwägung zu ziehen, dass etwas dran sein könnte.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_15_00"); //Slyszalem, jak wy wysledziliscie artifakty....
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_04_01"); //Ahh, Saturas opowiedzial ci o tym.... Cóz, to wiecej spekulacji, miekkich nadziei niz prawdziwych przywódców.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_04_02"); //Ach, to w rzeczywistosci bardzo malo prawdopodobne, niemal glupie myslenie, ze cos moze byc prawda.
 
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Meine Neugier wurde geweckt.", Info_Mod_Cronos_AW_Artefakt_01_B);
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Verstehe. Dann gehe ich mal weiter meinen Pflichten nach.", Info_Mod_Cronos_AW_Artefakt_01_A);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Moja ciekawosc rozbudzilem.", Info_Mod_Cronos_AW_Artefakt_01_B);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Widze. Wróce wtedy do swoich obowiazków.", Info_Mod_Cronos_AW_Artefakt_01_A);
 };
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_D()
 {
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_00"); //Die Umschreibungen über dieses Untier erinnerten mich an Geschehnisse, die bereits mehr als 200 Jahre zurückliegen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_01"); //Die Überlieferungen geben preis, dass damals ein mächtiges Artefakt – der Kristall der Absorption - in einem Adanostempel auf der Insel Khorinis gelagert gewesen sein soll.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_02"); //Doch ein trügerischer und gieriger Novize bemächtigte sich der Schätze des Tempels, brachte den Hüter dieser Heiligtümer um und verscharrte seinen Leichnam in der Wildnis.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_03"); //Als die anderen Adanosmagier nun den Raub der Schätze bemerkten und das Verschwinden ihres Hüters, kamen viele zu der Vermutung, dass er es war, der den Schatz raubte und dann floh.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_04"); //Doch einem der Wassermagier sandte Adanos einen Traum, in welchem der Ermordete sein Schicksal beklagte: dass er von einem Diener Adanos gemeuchelt und seine sterblichen Überreste dem Verzehr von wilden Tieren preisgegeben worden waren.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_05"); //Infolge dessen leitete man eine Untersuchung ein, in welcher sich die Hinweise auf den schändlichen Novizen verdichteten.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_06"); //Als man diesen nun verhörte, schwor er, nichts von allem zu wissen und beschwor offen Adanos, er möge doch Zeugnis von seinem reinen Wesen abgeben.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_07"); //Adanos soll durch das frevelhafte Verhalten des Novizen so erzürnt gewesen sein, dass er ihn im gleichen Augenblick vor den Augen aller in die blutrünstige Bestie verwandelte, die seinem Wesen entsprach.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_08"); //Die Magier richteten erschrocken ihre Magie gegen das Untier, was jedoch keine Wirkung zu haben schien.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_09"); //Fauchend nahm es Reißaus und entfloh in die umliegenden Wälder. Dort soll es noch einige Male Jägern begegnet sein, deren Waffen ebenfalls wirkungslos blieben.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_10"); //Unter den Sachen des Novizen fanden die Magier indessen einige der geraubten Schätze, jedoch nicht das bedeutsame Artefakt.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_D_15_11"); //Folglich muss es sich noch im Besitz des Novizen, ähh, Untiers befinden?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_12"); //Ja, so die Vermutung. Nur verschwand das Untier nach einigen Jahren spurlos.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_13"); //Und jetzt, nach so vielen Jahrzehnten, der erste mögliche Hinweis, obwohl doch so unwahrscheinlich.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_14"); //Das Wesen könnte ja einen völlig anderen Ursprung haben, und selbst wenn es dem der Überlieferungen entsprechen sollte, wäre es immer noch fraglich, ob das Artefakt sich noch in seinem Besitz befindet.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_15"); //Abgesehen davon, dass der göttliche Schutzzauber verhindert, seiner elenden Existenz ein Ende zu bereiten ...
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_00"); //Opisy tej bestii przypomnialy mi o wydarzeniach, które mialy miejsce ponad 200 lat temu.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_01"); //Zgodnie z tradycja potezny artefakt - krysztal absorpcji - zostal przechowywany w swiatyni adano na wyspie Khorinis.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_02"); //Ale zwodniczy i chciwy nowicjusz zdobyl skarby swiatyni, zabil opiekuna tych sanktuariów i pochowal swoje cialo na pustyni.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_03"); //Kiedy drugi Adanoszmage zauwazyl rabunek skarbu i znikniecie ich opiekuna, wielu z nich przyjelo zalozenie, ze to on rabowal skarb, a nastepnie uciekl.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_04"); //Ale Adanos wyslal sen do jednego z magów wodnych, w którym zamordowany narzekal na swój los: ze zostal zamordowany przez sluge Adanosa i ze jego smiertelne szczatki zostaly narazone na spozycie dzikich zwierzat.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_05"); //W rezultacie wszczeto dochodzenie, w którym skonsolidowano dowody haniebnych nowicjuszy.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_06"); //Kiedy byl przesluchiwany, przysiegal, ze nic o wszystkim nie wiedzial i otwarcie blagal Adanosa, aby swiadczyl o swojej czystej naturze.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_07"); //Mówi sie, ze Adanos byl tak podekscytowany swietym zachowaniem nowicjusza, ze w tym samym momencie uczynil go krwiozerczym bestia przed oczami wszystkich, co odpowiadalo jego naturze.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_08"); //Magicy z przerazeniem obrócili swoja magie przeciwko bestii, ale to wydawalo sie nie miec zadnego efektu.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_09"); //Uciekl do okolicznych lasów. Mówi sie, ze kilka razy spotkalo tam mysliwych, których bron byla równiez nieskuteczna.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_10"); //Wsród nowicjuszy jednak wsród rzeczy, magowie znalezli niektóre z kradzionych skarbów, ale nie wazne artefakty.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_D_15_11"); //W zwiazku z tym, musi on byc jeszcze w posiadaniu nowicjusza, uh, bestii?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_12"); //Tak, takie jest zalozenie. Dopiero po kilku latach bestia zniknela bez sladu.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_13"); //A teraz, po tak wielu dziesiecioleciach, pierwsza wskazówka, choc malo prawdopodobna.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_14"); //Istota moze miec zupelnie inne pochodzenie, a nawet gdyby odpowiadala tradycji, nadal watpliwe byloby, czy artefakt jest jeszcze w jego posiadaniu.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_D_04_15"); //Oprócz faktu, ze boski zaklecie ochrony uniemozliwia jej zakonczenie nieszczesliwego istnienia.... Wiecej
 	
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Und selbst wenn die Wahrscheinlichkeit noch so gering scheint (...)", Info_Mod_Cronos_AW_Artefakt_01_F);
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Dann sollte man sich lieber den anderen Dingen widmen (...)", Info_Mod_Cronos_AW_Artefakt_01_E);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "I nawet jesli prawdopodobienstwo wydaje sie niskie (....). )", Info_Mod_Cronos_AW_Artefakt_01_F);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Wtedy raczej nalezy sie poswiecic innym rzeczom (.....)'. )", Info_Mod_Cronos_AW_Artefakt_01_E);
 };
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_B_15_00"); //Meine Neugier wurde geweckt. Was ist das für ein geheimnisvoller Sachverhalt, der dich beschäftigt?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_01"); //Nun, zuerst waren es nur Gerüchte, die von einer blutrünstigen Bestie berichteten, welche mit einem unbändigen Appetit auf Fleisch über das Land ziehen soll.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_02"); //Es wurde berichtet, sie würde weder durch gewöhnliche Waffen noch durch von Menschen gewirkte Magie Schaden erleiden.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_03"); //Ich schenkte diesen Berichten zunächst nicht viel Beachtung, hielt es für Hirngespinste und Flunkereien einfacher Leute.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_04"); //Aber in letzter Zeit häuften sich solche Meldungen und sogar Bauernhöfe rund um die Stadt und Onars Hof sollen schon von der Bestie überfallen worden sein.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_B_15_00"); //Moja ciekawosc rozbudzilem. Jaka jest ta tajemnicza sytuacja, z jaka mamy do czynienia?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_01"); //Cóz, na poczatku bylo tylko pogloski, ze bylo doniesienia o krwiozerczej bestii, która podobno ma niepohamowany apetyt na mieso.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_02"); //Zgloszono, ze nie zaszkodzi jej zwykla bron ani magia stworzona przez czlowieka.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_03"); //Poczatkowo nie zwracalem na te reportaze wiekszej uwagi, myslalem, ze to fantazja i nonsens zwyklych ludzi.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_B_04_04"); //Ostatnio jednak takie doniesienia zostaly ostatnio zlozone, a nawet farmy w miescie i na dworze Onar mówi sie, ze zostaly zaatakowane przez bestie.
 
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "(weiter)", Info_Mod_Cronos_AW_Artefakt_01_D);
-	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Aber was hat das nun alles mit einem Artefakt zu tun?", Info_Mod_Cronos_AW_Artefakt_01_C);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "(wiecej)", Info_Mod_Cronos_AW_Artefakt_01_D);
+	Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_01, "Ale co to wszystko ma wspólnego z artefaktem?", Info_Mod_Cronos_AW_Artefakt_01_C);
 };
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_C()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_C_15_00"); //Aber was hat das nun alles mit einem Artefakt zu tun?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_C_04_01"); //So hab doch ein wenig Geduld. Ich wollte gerade darauf zu sprechen kommen.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_C_15_00"); //Ale co to wszystko ma wspólnego z artefaktem?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_C_04_01"); //Miec troche cierpliwosci. Wlasnie o tym mówilem.
 	
 	Info_Mod_Cronos_AW_Artefakt_01_D();
 };
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_A_15_00"); //Verstehe. Dann gehe ich mal weiter meinen Pflichten nach.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_A_15_00"); //Widze. Wróce wtedy do swoich obowiazków.
 
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
@@ -90,33 +90,33 @@ FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_A()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_F()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_F_15_00"); //Und selbst wenn die Wahrscheinlichkeit noch so gering scheint: für ein Artefakt, das dazu verhelfen kann, den Willen unseres Herrn Adanos zu wirken, müssen auch Risiken und Mühen aufgeboten werden. Ich werde mich auf die Suche danach begeben.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_01"); //(erfreut) Im Stillen hatte ich gehofft, dass du dich dazu bereit erklären würdest. Aber setze dich bei deiner Suche um Adanos willen keinen unnötigen Risiken aus.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_02"); //Versuch zunächst bei den kleineren Bauernhöfen und den Jägern der Umgebung mehr in Erfahrung zu bringen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_03"); //Vielleicht stellt sich ja dann schon heraus, ob überhaupt etwas an der Sache dran ist, oder nicht. Aber falls doch ... hier hast du einige Spruchrollen und Tränke, die dir auf der Suche bestimmt nützlich sein werden.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_F_15_00"); //I bez wzgledu na to, jak niskie moze sie wydawac prawdopodobienstwo: dla artefaktu, który moze pomóc w realizacji woli naszego Pana Adanosa, ryzyko i wysilki musza byc równiez wezwane. Bede go szukal.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_01"); //Mialem potajemna nadzieje, ze zgodzi sie pan to zrobic. Nie podejmuj jednak niepotrzebnego ryzyka w poszukiwaniu Adano.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_02"); //Spróbuj dowiedziec sie wiecej z mniejszych gospodarstw i mysliwych w okolicy.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_03"); //Moze wtedy stanie sie jasne, czy jest w nim cos zlego, czy tez nie. Ale jesli tak sie stanie...... Tutaj masz kilka rolek zaklec i eliksirów, które z pewnoscia przydadza sie Ci podczas wyszukiwania.
 
-	B_ShowGivenThings ("10 Tränke und 7 Spruchrollen erhalten");
+	B_ShowGivenThings ("Otrzymano 10 eliksirów i 7 rolek zaklec");
 
 	CreateInvItems	(hero, ItPo_Mana_01, 7);
 	CreateInvItems	(hero, ItPo_Speed, 3);
 	CreateInvItems	(hero, ItSc_Icecube, 4);
 	CreateInvItems	(hero, ItSc_LightHeal, 3);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_04"); //Und vergiss nicht, dieses Wesen soll jeder Art von Menschenhand gewirkter Magie und geführter Waffen standhalten können.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_05"); //Deine Wassermagie wird ihm also – wenn überhaupt - nur kurze Zeit Einhalt gebieten können ...
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_06"); //Und nun wünsche ich dir viel Erfolg. Adanos möge dich auf deinen Wegen behüten.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_04"); //I nie zapominajmy, ze to stworzenie powinno wytrzymac kazdy rodzaj sztucznej magii i broni kierowanej.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_05"); //Wiec Twoja magia wody bedzie w stanie powstrzymac go - jesli w ogóle - tylko przez krótki czas.....
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_F_04_06"); //A teraz zycze panstwu wszelkich sukcesów. Niech Adanos zapewni Ci bezpieczenstwo na twoich drogach.
 	
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
 	Mod_Cronos_Artefakt = 1;
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Ich soll mich auf den Bauernhöfen der Umgebung und den Jägern umhören, um so vielleicht auf die Spur eines Untieres zu stoßen, das gegen Magie und gewöhnliche Waffen resistent sein soll, um ihm den Kristall der Absorption zu entreißen – sofern es ihn noch bei sich trägt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_NOVIZE, "Ja powinienem odwiedzic okoliczne farmy i mysliwych, aby znalezc szlak bestii, która podobno jest odporna na magie i zwykla bron, aby wyrwac z niej krysztal wchlaniania - jesli nadal ja nosi.");
 };
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_01_E()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_E_15_00"); //Dann sollte man sich lieber den anderen Dingen widmen, die unsere Aufmerksamkeit und Hingabe erfordern.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_E_04_01"); //(enttäuscht) Ja, du hast wohl Recht, es ist vernünftiger ...
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_01_E_15_00"); //Wtedy trzeba sie raczej poswiecic innym rzeczom, które wymagaja naszej uwagi i oddania.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_01_E_04_01"); //Tak, przypuszczam, ze masz racje, to jest bardziej rozsadne....
 	
 	Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_01);
 
@@ -133,7 +133,7 @@ INSTANCE Info_Mod_Cronos_AW_Artefakt_02 (C_INFO)
 	information	= Info_Mod_Cronos_AW_Artefakt_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Artefakt.";
+	description	= "Mam artefakt.";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Artefakt_02_Condition()
@@ -149,17 +149,17 @@ FUNC INT Info_Mod_Cronos_AW_Artefakt_02_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_02_15_00"); //Ich habe das Artefakt.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_01"); //(ungläubig) Was?! Du willst mich doch auf den Arm nehmen ...
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_02_15_00"); //Mam artefakt.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_01"); //Co? Musisz mnie oszukiwac....
 
 	B_GiveInvItems	(hero, self, ItMi_AbsorbKristall, 1);
 
 	Npc_RemoveInvItems	(self, ItMi_AbsorbKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_02"); //Nicht möglich ... wo, wie ...
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_02_15_03"); //Zwischen viel Unrat und Schmutz.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_04"); //Ich weiß nicht, was ich sagen soll. Den Wert dieses Dienstes, den du der Gemeinschaft Adanos' erwiesen hast, kann ich kaum in Worte fassen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_05"); //Ich muss mich darüber mit meinen Brüdern beraten. Komm morgen wieder.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_02"); //Brak mozliwosci..... gdzie, podobnie jak
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_02_15_03"); //Pomiedzy duza iloscia brudów i brudu.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_04"); //Nie wiem, co powiedziec. Wartosc tej uslugi, jaka obdarzyles wspólnote Adanos, nie moge wyrazic w slowach.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_02_04_05"); //Musze to omówic z moimi bracmi. Wróc jutro.
 
 	B_GivePlayerXP	(400);
 
@@ -191,14 +191,14 @@ FUNC INT Info_Mod_Cronos_AW_Artefakt_03_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_00"); //Wie wir feststellen mussten, hat der Kristall zwar leider mittlerweile seine Kraft eingebüßt.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_01"); //Aber die Möglichkeiten, ihm wieder seine Kraft zu schenken, haben wir noch kaum ergründet.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_02"); //Nun aber zu deiner mehr als verdienten Belohnung. Myxir hat zuletzt einige alte Schriften übersetzt und daraus diese Anleitung zum Schmieden eines magischen Ringes unseres Herrn gewonnen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_03"); //Hier, du sollst der Erste sein, dem die Macht dieses Ringes zuteil wird.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_00"); //Niestety, jak sie dowiedzielismy, w miedzyczasie krysztal stracil swoja moc.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_01"); //Jednak mozliwosci przywrócenia mu sil do zycia nie zostaly jeszcze zbadane.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_02"); //Ale teraz za wasza wiecej niz zasluzona nagrode. Myxir niedawno przetlumaczyl kilka starych skryptów i od nich zdobyl ten przewodnik, aby stworzyc magiczny pierscien naszego Pana.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_03"); //Tutaj jako pierwszy otrzymasz moc tego pierscienia.
 
 	B_GiveInvItems	(self, hero, ItWr_Bauplan_AdanosRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_04"); //Ansonsten überlasse ich dir noch als würdigen Diener Adanos’ einige unserer wertvollen Spruchrollen und Tränke. Nutze sie weise.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_04"); //Poza tym, zostawiam Cie jako godna sluge Adanosa niektóre z naszych cennych powiedzen i eliksirów. Uzywaj go madrze.
 
 	CreateInvItems	(hero, ItPo_Mana_01, 5);
 	CreateInvItems	(hero, ItPo_Mana_02, 5);
@@ -208,23 +208,23 @@ FUNC VOID Info_Mod_Cronos_AW_Artefakt_03_Info()
 	CreateInvItems	(hero, ItSc_IceRain, 1);
 	CreateInvItems	(hero, ItSc_Thunderball, 3);
 
-	B_ShowGivenThings ("15 Tränke und 9 Spruchrollen erhalten");
+	B_ShowGivenThings ("Otrzymano 15 eliksirów i 9 rolek zaklec");
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_05"); //Achso, wie töricht von mir, bei aller Aufregung um den Kristall unseres Herrn vergaß ich ganz, mich nach dem Schicksal des verfluchten Novizen zu erkundigen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_06"); //So berichte: Wie steht es um die verwünschte Kreatur.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_05"); //Och, jak glupi o mnie, z podnieceniem o krysztalu naszego Pana, zapomnialem zapytac o losy przekletego nowicjusza.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_06"); //Tak wiec raport: A co z przekletym stworzeniem?
 
 	if (Mod_Untier_Tot == FALSE)
 	{
-		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_07"); //Sie fristet ihr Dasein in einer Höhle auf einem Berg im Nordosten von Khorinis.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_08"); //Hmm, ich will hoffen, dass sie die Umgebung in Zukunft nicht zu sehr verheeren wird ...
+		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_07"); //Zyje w jaskini na górze w pólnocno-wschodniej czesci Khorinis.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_08"); //Hmm, mam nadzieje, ze w przyszlosci nie zniszczy zbytnio srodowiska naturalnego....
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_09"); //Sie wird kein Unheil mehr anrichten.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_10"); //Du willst doch damit nicht etwas sagen, dass du sie bezwingen konntest?
-		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_11"); //Nicht allen Mitteln vermochte der Schutzzauber zu widerstehen.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_12"); //Erneut macht mich deine Kühnheit fast sprachlos. Damit hast du ganz Khornis einen großen Dienst erwiesen.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_13"); //Hier, nimm diesen Trank und eine Rune deiner Wahl als Belohnung.
+		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_09"); //Nie zaszkodzi.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_10"); //Nie mówisz, ze móglbys je pokonac, czy jestes?
+		AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_03_15_11"); //Czar ochronny nie mógl oprzec sie wszystkim srodkom.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_12"); //Ponownie, wasza zuchwalosc sprawia, ze prawie mi zabraklo mowy. Zrobiles wspaniala obsluge dla wszystkich Khornis.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_03_04_13"); //Tutaj skorzystaj z tego eliksiru i rundy, która wybierzesz jako nagrode.
 
 		B_GivePlayerXP	(350);
 
@@ -232,12 +232,12 @@ FUNC VOID Info_Mod_Cronos_AW_Artefakt_03_Info()
 
 		Info_ClearChoices	(Info_Mod_Cronos_AW_Artefakt_03);
 
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Eislanze", Info_Mod_Cronos_AW_Artefakt_03_H);
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Eisball", Info_Mod_Cronos_AW_Artefakt_03_G);
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Leichte Wunden heilen", Info_Mod_Cronos_AW_Artefakt_03_E);
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Wolf rufen", Info_Mod_Cronos_AW_Artefakt_03_D);
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Blitz", Info_Mod_Cronos_AW_Artefakt_03_B);
-		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Licht", Info_Mod_Cronos_AW_Artefakt_03_A);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "lód", Info_Mod_Cronos_AW_Artefakt_03_H);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "lód lód", Info_Mod_Cronos_AW_Artefakt_03_G);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Lekkie rany lecznicze", Info_Mod_Cronos_AW_Artefakt_03_E);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "Wolf call", Info_Mod_Cronos_AW_Artefakt_03_D);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "blyskawica", Info_Mod_Cronos_AW_Artefakt_03_B);
+		Info_AddChoice	(Info_Mod_Cronos_AW_Artefakt_03, "jasny", Info_Mod_Cronos_AW_Artefakt_03_A);
 	};
 
 	B_Göttergefallen(2, 2);
@@ -307,7 +307,7 @@ INSTANCE Info_Mod_Cronos_AW_Artefakt_04 (C_INFO)
 	information	= Info_Mod_Cronos_AW_Artefakt_04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich könnte deinen Rat gebrauchen.";
+	description	= "Móglbym skorzystac z Panstwa rady.";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Artefakt_04_Condition()
@@ -321,25 +321,25 @@ FUNC INT Info_Mod_Cronos_AW_Artefakt_04_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_00"); //Ich könnte deinen Rat gebrauchen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_01"); //Worum geht es?
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_02"); //Den Kristall der Absorption. Saturas berichtete mir, dass nur ein göttlicher Bote dazu in der Lage wäre, seine Macht wieder herzustellen.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_03"); //Was hat es mit diesem göttlichen Boten auf sich und wo kann ich einen solchen finden?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_04"); //Das dürfte ein schweres Unterfangen werden. Die letzte Spur eines göttlichen Boten weist nach Jharkendar. Es scheint viele Jahrhunderte zurückzuliegen, vor dem Untergang der alten Kultur.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_05"); //Ich konnte aus ihren alten Schriften entnehmen, dass ein mächtiger Gott – welcher, konnte ich nicht entziffern - einst seinen Blick auf die Erde schweifen ließ und Ausschau nach jemandem hielt, der würdig sein konnte, das Gleichgewicht auf der Erde zu erhalten.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_06"); //Er musste jedoch feststellen, dass jeder der einen oder anderen Seite mehr zugeneigt war. Doch dann fiel sein Blick und seine Gunst auf jemanden, den er zu seinem Diener erwählte und einen Teil seiner göttlichen Macht zukommen ließ.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_07"); //Leider sind an dieser Stelle die Schriften stark verwittert. Das Symbol könnte für ein Landlebewesen stehen, vermutlich ein Tier, welches vielleicht eine Art Wappentier seines erwählten Dieners sein könnte.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_08"); //Und gegeben der Fall, ich wollte diesen göttlichen Boten dennoch finden. Wie müsste ich vorgehen?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_09"); //Hmm, du müsstest dazu einen Opferaltar des alten Volkes ausfindig machen und ein Opferritual ausführen. Ich habe ein altes Rezept zu Teilen entschlüsseln können, das dazu diente, übernatürliche Wesen und Geister herbeizurufen.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_10"); //Leider konnte ich die letzte Zutat nicht entziffern. Aber es sollte sich um etwas Essbares handeln. Du müsstest schon etwas herumprobieren und darauf hoffen, keine bösen Geister und dämonischen Wesen auf den Plan zu rufen.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_00"); //Móglbym skorzystac z Panstwa rady.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_01"); //Co o tym chodzi?
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_02"); //Krysztal absorpcji. Saturas powiedzial mi, ze tylko boski poslannik bedzie w stanie przywrócic jego moc.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_03"); //Co to jest z tym boskim poslannikiem i gdzie moge go znalezc?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_04"); //To powinno byc trudne przedsiewziecie. Ostatni slad boskiego poslannika wskazuje na Jharkendar. Wydaje sie, ze siega ona wielu stuleci wstecz, przed upadkiem starej kultury.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_05"); //Móglbym z ich starozytnych pism wywnioskowac, ze potezny Bóg - którego, nie moglem rozszyfrowac - kiedys pozwolil, aby jego wzrok wedrowal po ziemi i szukal kogos, kto móglby byc godnym utrzymania równowagi na ziemi.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_06"); //Musial jednak zdac sobie sprawe, ze kazdy byl bardziej sklonny do jednej lub drugiej strony. Ale wtedy jego spojrzenie i laska padly na kogos, kogo wybral jako swego sluge i dal czesc jego boskiej mocy.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_07"); //Niestety, czcionki tutaj sa mocno zachmurzone. Symbol ten móglby byc symbolem stworzenia ladowego, przypuszczalnie zwierzecia, które mogloby byc rodzajem heraldycznego zwierzecia wybranego przez niego slugi.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_04_15_08"); //A biorac pod uwage ten przypadek, i tak chcialem znalezc tego boskiego poslanca. Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_09"); //Hmm, trzeba byloby znalezc oltarz ofiarny starozytnych ludzi i wykonac rytual ofiarniczy. Bylem w stanie rozszyfrowac starozytny przepis na dzielenie sie, który sluzyl do nazwania nadprzyrodzonych istot i duchów.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_10"); //Niestety, nie moglem rozszyfrowac ostatniego skladnika. Ale powinno to byc cos jadalnego. Musicie spróbowac czegos dookola i miec nadzieje, ze nie bedziecie nazywac zlych duchów i demonicznych istot na planie.
 
 	B_GiveInvItems	(self, hero, ItWr_CronosAbsorbKristall, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_11"); //Aber falls du es wirklich versuchen solltest, übergebe ich dir hiermit den Kristall. Gib gut auf ihn acht.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_04_04_11"); //Ale jesli naprawde spróbujecie, niniejszym oddaje krysztal. Zadbaj o niego.
 
 	B_GiveInvItems	(self, hero, ItMi_AbsorbKristall, 1);
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Von Cronos habe ich den Kristall der Absorption erhalten, sowie ein Rezept, mit dessen Hilfe ich einen göttlichen Boten herbeirufen kann. Das Ritual muss an einem Opferaltar der alten Kultur erfolgen, wobei die letzte Zutat unbekannt ist, wohl aber etwas Essbares sein wird. Cronos meinte, dass für den göttlichen Boten das Symbol für ein Landlebewesen abgebildet wurde, welches seiner Vermutung nach ein Wappentier sein könnte.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Od Cronosa otrzymalem krysztal wchlaniania i przepis, którego moge uzyc, aby nazwac boskiego poslannika. Rytual musi byc wykonany na oltarzu ofiarnym kultury starozytnej, gdzie ostatni skladnik jest nieznany, ale bedzie czyms jadalnym. Cronos powiedzial, ze boski poslannik zostal przedstawiony jako symbol stworzenia ladowego, co do którego podejrzewal, ze moze byc zwiastunem heraldycznym.");
 };
 
 INSTANCE Info_Mod_Cronos_AW_Artefakt_05 (C_INFO)
@@ -350,7 +350,7 @@ INSTANCE Info_Mod_Cronos_AW_Artefakt_05 (C_INFO)
 	information	= Info_Mod_Cronos_AW_Artefakt_05_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Macht des Kristalles ist wiederhergestellt.";
+	description	= "Moc krysztalu zostaje przywrócona.";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Artefakt_05_Condition()
@@ -364,8 +364,8 @@ FUNC INT Info_Mod_Cronos_AW_Artefakt_05_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Artefakt_05_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_05_15_00"); //Die Macht des Kristalles ist wiederhergestellt.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_05_04_01"); //Was?! Nicht möglich ... Bring ihn schnell zu Satruras. Er kann eine mächtige waffe im kampf gegen die Ungetüme sein.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Artefakt_05_15_00"); //Moc krysztalu zostaje przywrócona.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Artefakt_05_04_01"); //Co? Brak mozliwosci..... Szybko zabierz go do Satrurasu. Moze byc potezna bronia w walce z potworami.
 };
 
 INSTANCE Info_Mod_Cronos_AW_Zeremoniendolch (C_INFO)
@@ -376,7 +376,7 @@ INSTANCE Info_Mod_Cronos_AW_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Cronos_AW_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, dieser Beutel ist von Vatras.";
+	description	= "Tu ta torba jest z Vatras.";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Zeremoniendolch_Condition()
@@ -390,16 +390,16 @@ FUNC INT Info_Mod_Cronos_AW_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_00"); //Hier, dieser Beutel ist von Vatras.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_00"); //Tu ta torba jest z Vatras.
 
 	B_GiveInvItems	(hero, self, ItMi_CronosBeutel, 1);
 
 	Npc_RemoveInvItems	(self, ItMi_CronosBeutel, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Zeremoniendolch_04_01"); //Adanos sei Dank! Uns geht die Verpflegung aus.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_02"); //Vatras wird sicher bald mehr schicken können.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_Zeremoniendolch_04_03"); //Das ist gut, danke.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_04"); //Keine Ursache.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Zeremoniendolch_04_01"); //Dziekujemy Adanosowi! Brakuje nam jedzenia.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_02"); //Jestem pewien, ze Vatras bedzie w stanie wyslac wkrótce wiecej.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_Zeremoniendolch_04_03"); //To dobrze, dziekuje.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_Zeremoniendolch_15_04"); //Nie wspominajmy o tym.
 
 	B_GivePlayerXP	(100);
 };
@@ -412,18 +412,18 @@ INSTANCE Info_Mod_Cronos_AW_Gast (C_INFO)
 	information	= Info_Mod_Cronos_AW_Gast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du überhaupt mitgekommen?";
+	description	= "Dlaczego i tak przybyles?";
 };
 
 FUNC INT Info_Mod_Cronos_AW_Gast_Condition()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		Info_Mod_Cronos_AW_Gast.description = "Hast du etwas vom Diebstahl mitbekommen?";
+		Info_Mod_Cronos_AW_Gast.description = "Czy slyszales cos o kradziezy?";
 	}
 	else
 	{
-		Info_Mod_Cronos_AW_Gast.description = "Ist dir heute Nacht etwas aufgefallen?";
+		Info_Mod_Cronos_AW_Gast.description = "Czy zauwazyles cokolwiek dzis wieczorem?";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_UngebeterBesucher))
@@ -437,20 +437,20 @@ FUNC VOID Info_Mod_Cronos_AW_Gast_Info()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Cronos_AW_Gast_15_00"); //Hast du etwas vom Diebstahl mitbekommen?
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_01"); //Nein, aber ich bin erbost über die Dreistigkeit, mit der uns vor unseren Augen wichtiges Material entwendet wird.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_02"); //Ohne die Laborwasserflaschen kann ich nicht arbeiten!
+		AI_Output(hero, self, "Info_Mod_Cronos_AW_Gast_15_00"); //Czy slyszales cos o kradziezy?
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_01"); //Nie, ale jestem jednak gniewny na zuchwalosc, z jaka na naszych oczach kradziony jest wazny material.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_02"); //Nie moge pracowac bez butelek z woda laboratoryjna!
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Cronos_AW_Gast_15_03"); //Ist dir heute Nacht etwas aufgefallen? Ein Dieb hat euch beklaut.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_04"); //Beklaut? Hier? Aber ich habe tatsächlich etwas gesehen.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_05"); //Ich konnte die ganze Nacht schlecht schlafen.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_06"); //Merdarion schnarcht wie verrückt und Riordian grunzt und stöhnt.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_07"); //Einmal meinte ich ein leises Rascheln zu hören, also habe ich mich umgedreht und eine Bewegung dort hinten in den Ruinen gesehen.
-		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_08"); //Wenn das der Dieb war, kann er was erleben!
+		AI_Output(hero, self, "Info_Mod_Cronos_AW_Gast_15_03"); //Czy zauwazyles cokolwiek dzis wieczorem? Zlodziej cie zrabowal.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_04"); //Stolica? Oto? Ale tak naprawde cos widzialem.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_05"); //Calej nocy nie moglem dobrze spac.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_06"); //Merdarion drazni jak szalone i riordyjskie grunty i jeki.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_07"); //Pewnego razu pomyslalem, ze slyszalem miekki szelest, wiec odwrócilem sie i zobaczylem tam ruch w ruinach.
+		AI_Output(self, hero, "Info_Mod_Cronos_AW_Gast_04_08"); //Jesli to zlodziej, to on sie skrzywdzi!
 
-		B_LogEntry	(TOPIC_MOD_SATURAS_NACHTGAST, "Cronos hat eine Bewegung in den Ruinen wahrgenommen. Vielleicht findet sich dort ein Anhaltspunkt für den Dieb.");
+		B_LogEntry	(TOPIC_MOD_SATURAS_NACHTGAST, "Cronos widzial ruch w ruinach. Byc moze jest wskazówka dla zlodzieja.");
 
 		Mod_Saturas_Gast_Fortschritt = 1;
 
@@ -466,7 +466,7 @@ INSTANCE Info_Mod_Cronos_AW_TiereZaehmen (C_INFO)
 	information	= Info_Mod_Cronos_AW_TiereZaehmen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du vielleicht, wie man wilde Tiere zähmt?";
+	description	= "Czy wiesz jak oswajac dzikie zwierzeta?";
 };
 
 FUNC INT Info_Mod_Cronos_AW_TiereZaehmen_Condition()
@@ -481,15 +481,15 @@ FUNC INT Info_Mod_Cronos_AW_TiereZaehmen_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_TiereZaehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_00"); //Weißt du vielleicht, wie man wilde Tiere zähmt?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_01"); //Du willst Tiere zähmen? Hmm, das ist nicht ganz leicht.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_02"); //Besonders Tiere die dem Menschen feindlich gesonnen sind, stellen selbst für erfahrene Magier eine Herausforderung dar ...
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_03"); //Wie sieht es mit Wildziegen aus?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_04"); //Diese Geschöpfe sind so lange neutral, bis man sie angreift. Das macht es wesentlich leichter auf ihren Geist einzuwirken.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_05"); //Ich könnte dir Spruchrollen für diesen Zweck herstellen. Dafür bräuchte ich allerdings einige Zutaten.
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_06"); //Was benötigst du?
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_07"); //Hmm, es könnte eigentlich schon reichen, wenn du mir zwei Stück rohes Ziegenfleisch und ein Ziegenfell besorgst.
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_08"); //Hier in den Bergen habe ich irgendwo Wildziegen blöken hören ...
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_00"); //Czy wiesz jak oswajac dzikie zwierzeta?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_01"); //Chcesz oswoic zwierzeta? Hmm, to nie jest latwe.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_02"); //Szczególnie zwierzeta, które sa wrogo nastawione do ludzi, stanowia wyzwanie nawet dla doswiadczonych magów....
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_03"); //A co z dzikimi kozami?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_04"); //Istoty te sa neutralne az do momentu zaatakowania. Ulatwia to wplyw na ich umysly.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_05"); //Moge w tym celu naklonic Was do zaklecia zaklec. Potrzebowalabym jednak pewnych skladników.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen_15_06"); //Czego potrzebujesz?
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_07"); //Hmm, byc moze wystarczy odebrac mi dwa kawalki surowego miesa koziego i koziej skóry.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen_04_08"); //Tu w górach slyszalem dzikie kozy krwawiace.....
 
 	Wld_InsertNpc	(Wild_Ziege,	"FP_ITEM_ENTRANCE_06");
 };
@@ -502,7 +502,7 @@ INSTANCE Info_Mod_Cronos_AW_TiereZaehmen2 (C_INFO)
 	information	= Info_Mod_Cronos_AW_TiereZaehmen2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Zutaten für die Spruchrolle.";
+	description	= "Mam skladniki na zaklecie.";
 };
 
 FUNC INT Info_Mod_Cronos_AW_TiereZaehmen2_Condition()
@@ -517,14 +517,14 @@ FUNC INT Info_Mod_Cronos_AW_TiereZaehmen2_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_TiereZaehmen2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen2_15_00"); //Ich habe die Zutaten für die Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Cronos_AW_TiereZaehmen2_15_00"); //Mam skladniki na zaklecie.
 
 	Npc_RemoveInvItems	(hero, ItFo_MuttonRaw, 2);
 	Npc_RemoveInvItems	(hero, ItAt_ZiegenFur, 1);
 
-	B_ShowGivenThings	("2 Stück rohes Fleisch und Ziegenfell gegeben");
+	B_ShowGivenThings	("Podane 2 sztuki surowego miesa i skóry koziej");
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen2_04_01"); //Sehr gut. Komm morgen wieder, dann sollte die Herstellung abgeschlossen sein.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen2_04_01"); //Bardzo dobry. Jutro wróc, produkcja powinna sie zakonczyc.
 
 	Mod_Cronos_ZiegenScroll = Wld_GetDay();
 };
@@ -550,15 +550,15 @@ FUNC INT Info_Mod_Cronos_AW_TiereZaehmen3_Condition()
 
 FUNC VOID Info_Mod_Cronos_AW_TiereZaehmen3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen3_04_00"); //Gut, dass du kommst. Hier hast du die Spruchrolle.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen3_04_00"); //Ciesze sie, ze przyszedles. Oto Twoja historia.
 
 	B_GiveInvItems	(self, hero, ItSc_ZiegeZaehmen, 1);
 
-	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen3_04_01"); //War einfacher, als gedacht die Zutaten mit dem Papier zu verbinden.
+	AI_Output(self, hero, "Info_Mod_Cronos_AW_TiereZaehmen3_04_01"); //Laczenie skladników z papierem bylo prostsze niz sie spodziewano.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_TalentScrolls, "Zutaten für die Spruchrolle ´ZIEGE ZÄHMEN´: 2 rohes Fleisch, 1 Ziegenfell");
+	B_LogEntry	(TOPIC_TalentScrolls, "Skladniki do walca pisowni ZIEGE ZÄHMEN: 2 surowe mieso, 1 kozia skóra, 2 surowe mieso, 1 kozia skóra.");
 
 	PLAYER_TALENT_SCROLLS[SCROLL_ZIEGEZAEHMEN] = TRUE;
 };

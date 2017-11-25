@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Endres_Hi (C_INFO)
 	information	= Info_Mod_Endres_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Amulett zeigen) Schau mal, was ich dir mitgebracht habe!";
+	description	= "Spójrz, co cie przynioslem!";
 };
 
 FUNC INT Info_Mod_Endres_Hi_Condition()
@@ -19,8 +19,8 @@ FUNC INT Info_Mod_Endres_Hi_Condition()
 
 FUNC VOID Info_Mod_Endres_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Endres_Hi_15_00"); //Schau mal, was ich dir mitgebracht habe!
-	AI_Output(self, hero, "Info_Mod_Endres_Hi_09_01"); //(kreischt auf)
+	AI_Output(hero, self, "Info_Mod_Endres_Hi_15_00"); //Spójrzcie, co wam przynioslem!
+	AI_Output(self, hero, "Info_Mod_Endres_Hi_09_01"); //Zagrozenia
 };
 
 INSTANCE Info_Mod_Endres_EXIT (C_INFO)

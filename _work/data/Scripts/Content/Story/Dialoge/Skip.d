@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Skip_Hi (C_INFO)
 	information	= Info_Mod_Skip_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Skip_Hi_Condition()
@@ -17,12 +17,12 @@ FUNC INT Info_Mod_Skip_Hi_Condition()
 FUNC VOID Info_Mod_Skip_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_01"); //Ich bin Skip.
-	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_02"); //Solltest du irgendwelche Waren brauchen, dann kannst du zu mir kommen.
-	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_03"); //Waffen gibt es aber nur bei Garrett.
+	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_01"); //Pomine sie.
+	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_02"); //Jesli potrzebujesz jakichkolwiek towarów, mozesz do mnie przyjechac.
+	AI_Output(self, hero, "Info_Mod_Skip_Hi_08_03"); //Bron jest dostepna tylko w Garrett' s.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_PIRATEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Skip handelt mit allem möglichen außer mit Waffen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_PIRATEN, "Pominac cos poza bronia.");
 };
 
 INSTANCE Info_Mod_Skip_Malcom (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Skip_Malcom (C_INFO)
 	information	= Info_Mod_Skip_Malcom_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann kannst du sicher dafür sorgen, dass der Malcom draußen was zu Essen bekommt.";
+	description	= "Wtedy mozesz sie upewnic, ze Malcom dostaje jedzenie na zewnatrz.";
 };
 
 FUNC INT Info_Mod_Skip_Malcom_Condition()
@@ -47,12 +47,12 @@ FUNC INT Info_Mod_Skip_Malcom_Condition()
 
 FUNC VOID Info_Mod_Skip_Malcom_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Malcom_15_00"); //Dann kannst du sicher dafür sorgen, dass der Malcom draußen was zu Essen bekommt.
-	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_01"); //Ich werde dafür sorgen, dass er was bekommt. Immerhin ist der einer der Fleißigsten vom Lager.
-	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_02"); //Die meisten gammeln eh nur hier rum. Willst du vielleicht ...?
-	AI_Output(hero, self, "Info_Mod_Skip_Malcom_15_03"); //Tut mir leid. Ich will auch Pirat werden und muss mich um meine Aufnahme kümmern.
-	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_04"); //Da wirst du wohl einiges zu tun bekommen. Lass dich nicht aufhalten.
-	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_05"); //Ich schaff das schon.
+	AI_Output(hero, self, "Info_Mod_Skip_Malcom_15_00"); //Wtedy mozesz sie upewnic, ze Malcom dostaje jedzenie na zewnatrz.
+	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_01"); //Upewnie sie, ze cos dostanie. Jest przeciez jednym z najbardziej ruchliwych w obozie.
+	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_02"); //Wiekszosc z nich tak czy owak sie tu przytlacza. Próbujesz....?
+	AI_Output(hero, self, "Info_Mod_Skip_Malcom_15_03"); //Przepraszam za to. Ja równiez chce byc piratem i musze zajac sie swoim nagraniem.
+	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_04"); //Mysle, ze czeka Cie wiele pracy. Nie pozwólcie, ze zatrzymam sie.
+	AI_Output(self, hero, "Info_Mod_Skip_Malcom_08_05"); //Moge sobie z tym poradzic.
 
 	B_GivePlayerXP	(50);
 
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Skip_Francis (C_INFO)
 	information	= Info_Mod_Skip_Francis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Francis schickt mich.";
+	description	= "Franciszek poslal mnie.";
 };
 
 FUNC INT Info_Mod_Skip_Francis_Condition()
@@ -84,48 +84,48 @@ FUNC INT Info_Mod_Skip_Francis_Condition()
 
 FUNC VOID Info_Mod_Skip_Francis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_00"); //Ahoi Landratte. Stimmt es, dass es einen Weg nach Khorinis gibt. Henry labert sowas.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_01"); //Ja, im Nu ist man drüben.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_02"); //Das trifft sich gut. Mit dem Boot brauch ich jedesmal 'nen halben Tag.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_03"); //Und das auch nur, wenn der Wind günstig steht.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_04"); //Francis hat mir gesagt, dass du nicht mehr mit seinem Entertrupp handelst.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_05"); //Beim Klabautermann! Diese Strolche haben doch meine Paddel verheizt. Zu faul, um Feuerholz zu besorgen.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_06"); //Und ohne Paddel lauf ich nicht aus. Was soll ich denn bei Windstille machen, eh?
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_07"); //Kann ich das irgendwie wieder gut machen?
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_08"); //Du könntest jetzt die Lieferung übernehmen, dann würde ich wieder mit Francis und seinen Jungs handeln.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_09"); //Na gut, was soll ich machen?
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_10"); //Bring dieses Paket voller Rum nach Khorinis. Der Wirt in der Kneipe des Hafenviertels wartet bereits darauf.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_00"); //Duch, gospodyni. Czy to prawda, ze istnieje droga do Khorinis? Henry mówi tak.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_01"); //Tak, to sie skonczy.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_02"); //To dobrze. Zawsze trwa mnie to pól dnia na lodzi.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_03"); //Tylko wtedy, gdy wiatr jest korzystny.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_04"); //Franciszek powiedzial mi, ze nie handlujesz juz z jego straznikiem.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_05"); //Klabautermann! Te dranie spalaly moje wiosla. Zbyt leniwy, aby dostac drewno opalowe.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_06"); //I nie moge sie obejsc bez wiosla. Co mam robic, gdy nie ma wiatru, eh?
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_07"); //Czy w jakis sposób moge to zrobic dla Ciebie?
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_08"); //Móglbys przejac poród, potem znów z Franciszkiem i jego chlopcami.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_09"); //Co powinienem zrobic?
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_10"); //Wez ten pakiet rumu do Khorinis. Karczmarz w pubie dzielnicy portowej juz czeka na niego.
 
 	B_GiveInvItems	(self, hero, Mod_RumPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_11"); //Dieses Paket Grog bringst du zu einem der Söldner, der auf Onars Hof stationiert ist.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_11"); //Zabierasz te paczke Grog do jednego z najemników stacjonujacych na farmie Onar.
 	
 	B_GiveInvItems	(self, hero, Mod_GrogPaket, 1);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_12"); //Und dieses Paket mit verschiednen Sachen bringst du zu Lehmar, dem Geldleiher.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_12"); //I wez ten pakiet róznych rzeczy do Lehmar, pozyczkodawcy pieniedzy.
 
 	B_GiveInvItems	(self, hero, Mod_KleinodPaket, 1);
 
 	if (Assassinen_Dabei)
 	{
-		AI_Output(hero, self, "Info_Mod_Skip_Francis_15_13"); //Lehmar werde ich nichts mehr bringen können, der ist tot.
-		AI_Output(self, hero, "Info_Mod_Skip_Francis_08_14"); //Dann lass dir was einfallen, wie du an sein Gold kommst.
+		AI_Output(hero, self, "Info_Mod_Skip_Francis_15_13"); //Nie bede mógl przyprowadzic Lehmara, on umarl.
+		AI_Output(self, hero, "Info_Mod_Skip_Francis_08_14"); //Nastepnie wymysl sposób na zdobycie zlota.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_15"); //Du bringst mir insgesamt 1500 Goldstücke zurück, was die Leute mehr bezahlen gehört dir.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_16"); //Du kennst diese ganzen Leute?
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_17"); //Gewiss. Bin doch regelmäßig mit dem Boot in Khorinis gewesen. Verkleidet natürlich.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_18"); //Hier gibt's doch nichts außer Fleisch und Wasser.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_19"); //Und eure Schnäpse ...
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_20"); //Auch beigeschafft. Oder siehst du hier irgendwo ein Zuckerrohrfeld oder einen Kartoffelacker?
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_21"); //Hast recht.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_08_22"); //Bin schon wieder so gut wie zurück.
-	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_23"); //Moment! Vielleicht kannst du mir in der Stadt ein paar neue Paddel besorgen.
-	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_24"); //Will sehen, was ich tun kann.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_15"); //Oddajesz mi 1500 sztuk zlota, które ludzie placa wiecej, to twoje.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_16"); //Znasz wszystkich tych ludzi?
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_17"); //Oczywiscie. Regularnie przyjezdzalem do Khorinis lodzia. Oczywiscie ukryte.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_18"); //Nie ma tu nic poza miesem i woda.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_19"); //I twoja gorzala zartobliwosc.....
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_20"); //Dostarczone równiez. A moze widzisz pole trzciny cukrowej lub pole ziemniaczane?
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_21"); //Masz racje.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_08_22"); //Jestem równie dobry jak z powrotem.
+	AI_Output(self, hero, "Info_Mod_Skip_Francis_08_23"); //Poczekaj minute! Moze mozesz mnie dostac nowe wiosla w centrum miasta.
+	AI_Output(hero, self, "Info_Mod_Skip_Francis_15_24"); //Chcesz zobaczyc, co moge zrobic.
 
 	Log_CreateTopic	(TOPIC_MOD_SKIP_PADDEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SKIP_PADDEL, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_FRANCIS_ENTERTRUPP, TOPIC_MOD_SKIP_PADDEL, "Ich soll für Skip ein paar Sachen ausliefern: Ein Paket mit Rum für den Wirt im Hafenviertel von Khorinis, ein Paket voller Grog für einen der Söldner auf Onars Hof und ein Paket mit allen möglichen Sachen für Lehmar, den Geldverleiher.", "Ich soll Skip neue Paddel besorgen. Hm ... wer könnte sowas haben? Jemand im Hafen ...");
+	B_LogEntry_More	(TOPIC_MOD_FRANCIS_ENTERTRUPP, TOPIC_MOD_SKIP_PADDEL, "Mam dostarczyc Skipowi kilka rzeczy: pakiet rumu dla wlasciciela w dzielnicy portowej Khorinis, pakiet pelen grogów dla jednego z najemników na farmie Onar i pakiet wszelkiego rodzaju rzeczy dla Lehmar, pozyczkodawcy pieniedzy.", "Pomin nowe padliny. Hm.... Kto móglby to miec? Ktos w porcie....");
 };
 
 INSTANCE Info_Mod_Skip_Geld (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Skip_Geld (C_INFO)
 	information	= Info_Mod_Skip_Geld_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier ist das Gold.";
+	description	= "Oto zloto.";
 };
 
 FUNC INT Info_Mod_Skip_Geld_Condition()
@@ -152,22 +152,22 @@ FUNC INT Info_Mod_Skip_Geld_Condition()
 
 FUNC VOID Info_Mod_Skip_Geld_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Geld_15_00"); //Hier ist das Gold.
+	AI_Output(hero, self, "Info_Mod_Skip_Geld_15_00"); //Oto zloto.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 1500);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_01"); //Sehr gut, Jungchen! Damit ist der Streit mit Francis wieder vergessen.
-	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_02"); //Und die Paddel hast du auch.
+	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_01"); //Bardzo dobre, dzieciak! Tak wiec spór z Franciszkiem zostaje zapomniany.
+	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_02"); //Masz tez wiosla.
 
 	B_GiveInvItems	(hero, self, ItMi_Paddel, 2);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_03"); //Dann kann ich ja wieder in See stechen. Was schulde ich dir?
-	AI_Output(hero, self, "Info_Mod_Skip_Geld_15_04"); //Ich habe 200 dafür bezahlt. Und du könntest mich mal auf euer Schiff bringen ...
-	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_05"); //Hmm. Da musst du den Käpt'n fragen. Hier, dein Gold.
+	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_03"); //Potem moge znów wyplynac na morze. Co ci zawdzieczam?
+	AI_Output(hero, self, "Info_Mod_Skip_Geld_15_04"); //Za to zaplacilem 200. No i moze mnie zabrac na swój statek gdzies tam....
+	AI_Output(self, hero, "Info_Mod_Skip_Geld_08_05"); //Hmm. Bedziesz musial zapytac kapitana. Oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 200);
 
-	B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Skip ist zufrieden und wird jetzt wieder mit Francis und dessen Entertrupp handeln.");
+	B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Pominiecie jest satysfakcjonujace i teraz znów bedzie handlowac z Franciszkiem i jego porywca.");
 	B_SetTopicStatus	(TOPIC_MOD_SKIP_PADDEL, LOG_SUCCESS);
 
 	B_GivePlayerXP	(200);
@@ -183,7 +183,7 @@ INSTANCE Info_Mod_Skip_Schatzsuche (C_INFO)
 	information	= Info_Mod_Skip_Schatzsuche_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg schickt mich.";
+	description	= "Greg mnie wyslal.";
 };
 
 FUNC INT Info_Mod_Skip_Schatzsuche_Condition()
@@ -197,15 +197,15 @@ FUNC INT Info_Mod_Skip_Schatzsuche_Condition()
 
 FUNC VOID Info_Mod_Skip_Schatzsuche_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Schatzsuche_15_00"); //Greg schickt mich. Er will demnächst auslaufen. Kann ich dir irgendwie helfen?
-	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_01"); //Ja, unsre Fleischvorräte gehen langsam zur Neige.
-	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_02"); //Bring mir 30 Stücke rohes Fleisch, Beisser oder Ratte.
-	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_03"); //Kein Razorfleisch. Das ist zäh und lässt sich schlecht pökeln.
-	AI_Output(hero, self, "Info_Mod_Skip_Schatzsuche_15_04"); //Bin schon unterwegs.
+	AI_Output(hero, self, "Info_Mod_Skip_Schatzsuche_15_00"); //Greg mnie wyslal. Wkrótce ma on wygasnac. Czy moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_01"); //Tak, nasze dostawy miesa sa niskie.
+	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_02"); //Przynies mi 30 kawalków surowego miesa, ugryzien lub szczurów.
+	AI_Output(self, hero, "Info_Mod_Skip_Schatzsuche_08_03"); //No Razorfleisch. Jest ciezki i trudny do wyleczenia.
+	AI_Output(hero, self, "Info_Mod_Skip_Schatzsuche_15_04"); //Jestem na drodze.
 
 	Log_CreateTopic	(TOPIC_MOD_SKIP_VORRÄTE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SKIP_VORRÄTE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Ich soll Skip 30 Stück rohes Fleisch bringen.");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Mam przywiezc Skip 30 kawalków surowego miesa.");
 
 	Wld_InsertNpc	(Giant_DesertRat,	"FP_ROAM_CANYON_MONSTER_36A");
 	Wld_InsertNpc	(Giant_DesertRat,	"FP_ROAM_CANYON_MONSTER_36");
@@ -266,7 +266,7 @@ INSTANCE Info_Mod_Skip_Fleisch (C_INFO)
 	information	= Info_Mod_Skip_Fleisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich hab dein Fleisch.";
+	description	= "Tutaj dostalem wasze mieso.";
 };
 
 FUNC INT Info_Mod_Skip_Fleisch_Condition()
@@ -280,11 +280,11 @@ FUNC INT Info_Mod_Skip_Fleisch_Condition()
 
 FUNC VOID Info_Mod_Skip_Fleisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Fleisch_15_00"); //Hier, ich hab dein Fleisch.
-	AI_Output(self, hero, "Info_Mod_Skip_Fleisch_08_01"); //Bring's zu Samuel. Er soll es Pökeln. Und sich beeilen.
-	AI_Output(hero, self, "Info_Mod_Skip_Fleisch_15_02"); //Mach ich doch.
+	AI_Output(hero, self, "Info_Mod_Skip_Fleisch_15_00"); //Tutaj dostalem wasze mieso.
+	AI_Output(self, hero, "Info_Mod_Skip_Fleisch_08_01"); //Zabierz ja do Samuela. Powiedz mu, zeby wzial go na rece. I spiesz sie.
+	AI_Output(hero, self, "Info_Mod_Skip_Fleisch_15_02"); //Robie to.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Nun soll ich das Fleisch zu Samuel bringen, welcher es pökeln wird.");
+	B_LogEntry	(TOPIC_MOD_SKIP_VORRÄTE, "Teraz zabiore cialo do Samuela, który go osoli.");
 };
 
 INSTANCE Info_Mod_Skip_Fleisch2 (C_INFO)
@@ -295,7 +295,7 @@ INSTANCE Info_Mod_Skip_Fleisch2 (C_INFO)
 	information	= Info_Mod_Skip_Fleisch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier dein Proviant. Du sollst es noch trocknen lassen.";
+	description	= "Oto Twoje przepisy. Powiedzialem, ze pozwole mu wyschnac.";
 };
 
 FUNC INT Info_Mod_Skip_Fleisch2_Condition()
@@ -309,19 +309,19 @@ FUNC INT Info_Mod_Skip_Fleisch2_Condition()
 
 FUNC VOID Info_Mod_Skip_Fleisch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Fleisch2_15_00"); //Hier dein Proviant. Du sollst es noch trocknen lassen
+	AI_Output(hero, self, "Info_Mod_Skip_Fleisch2_15_00"); //Oto Twoje przepisy. Pozostaw go do wyschniecia.
 
 	B_GiveInvItems	(hero, self, ItFo_Poekelfleisch_Skip, 30);
 
 	Npc_RemoveInvItems	(self, ItFo_Poekelfleisch_Skip, 30);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Fleisch2_08_01"); //Schon gut. Weiß Bescheid.
+	AI_Output(self, hero, "Info_Mod_Skip_Fleisch2_08_01"); //Wszystkie sluszne, wszystkie sluszne. Wiem o tym.
 
 	Mod_PiratenVorbereitungen += 1;
 
 	B_SetTopicStatus	(TOPIC_MOD_SKIP_VORRÄTE, LOG_SUCCESS);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Ich habe für Skip einige Vorräte besorgt.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_SCHATZSUCHE, "Dostalem troche zapasów na Skip.");
 
 	B_GivePlayerXP	(200);
 
@@ -336,7 +336,7 @@ INSTANCE Info_Mod_Skip_AllesFertig (C_INFO)
 	information	= Info_Mod_Skip_AllesFertig_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg will wissen, ob alles an Bord ist.";
+	description	= "Greg chce wiedziec, czy wszystko jest na pokladzie.";
 };
 
 FUNC INT Info_Mod_Skip_AllesFertig_Condition()
@@ -349,8 +349,8 @@ FUNC INT Info_Mod_Skip_AllesFertig_Condition()
 
 FUNC VOID Info_Mod_Skip_AllesFertig_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_AllesFertig_15_00"); //Greg will wissen, ob alles an Bord ist.
-	AI_Output(self, hero, "Info_Mod_Skip_AllesFertig_08_01"); //Ich denke schon. Alles bis auf die Mannschaft.
+	AI_Output(hero, self, "Info_Mod_Skip_AllesFertig_15_00"); //Greg chce wiedziec, czy wszystko jest na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Skip_AllesFertig_08_01"); //Mysle, ze tak, tak. Z wyjatkiem zalogi.
 };
 
 INSTANCE Info_Mod_Skip_AufbruchSchatzsuche (C_INFO)
@@ -375,7 +375,7 @@ FUNC INT Info_Mod_Skip_AufbruchSchatzsuche_Condition()
 
 FUNC VOID Info_Mod_Skip_AufbruchSchatzsuche_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skip_AufbruchSchatzsuche_08_00"); //Wir warten auf dich. Die Anderen sind schon an Bord.
+	AI_Output(self, hero, "Info_Mod_Skip_AufbruchSchatzsuche_08_00"); //Czekamy na Ciebie. Pozostali sa juz na pokladzie.
 
 	AI_StopProcessInfos	(self);
 
@@ -404,7 +404,7 @@ FUNC INT Info_Mod_Skip_Schatzaufteilung_Condition()
 
 FUNC VOID Info_Mod_Skip_Schatzaufteilung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Skip_Schatzaufteilung_08_00"); //Hey, du bist ja aufgewacht. Greg erwartet dich, geh zu ihm!
+	AI_Output(self, hero, "Info_Mod_Skip_Schatzaufteilung_08_00"); //Hej, obudziles sie. Oczekujac ciebie, idz do niego!
 
 	AI_StopProcessInfos	(self);
 
@@ -433,7 +433,7 @@ INSTANCE Info_Mod_Skip_Befreiung (C_INFO)
 	information	= Info_Mod_Skip_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Alles in Ordnung?";
+	description	= "Czy masz racje?";
 };
 
 FUNC INT Info_Mod_Skip_Befreiung_Condition()
@@ -447,17 +447,17 @@ FUNC INT Info_Mod_Skip_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Skip_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_00"); //Alles in Ordnung?
-	AI_Output(self, hero, "Info_Mod_Skip_Befreiung_08_01"); //(stöhnt) Nein. Beim Kamf wurde ich von einem Feurball getroffen, was eine schlimme Fleischwunde ausgelöst hat. Ich weiß nicht, wie lange ich noch durchalte.
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_02"); //Wie kann ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Skip_Befreiung_08_03"); //Geh' zu Samuel. Er kann vielleicht helfen.
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_04"); //Alles klar, ich werde mich beeilen.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_00"); //Czy masz racje?
+	AI_Output(self, hero, "Info_Mod_Skip_Befreiung_08_01"); //(grozy) Nr. Kiedy przyjechalem do Kamf, uderzyl mnie ogien, który spowodowal straszliwa rane ciala. Nie wiem, jak dlugo moge dluzej trwac.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_02"); //Jak moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Skip_Befreiung_08_03"); //Przejdz do Samuela. Moze byc w stanie pomóc.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung_15_04"); //Dobrze, bede szybki.
 
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRSKIP, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRSKIP, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Skip liegt schwer verwundet in seiner Hütte. Ein Feuerball hat ihn während des Kampfes getroffen. Nun soll ich zu Samuel und sehen, ob er helfen kann.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRSKIP, "Skip lezy ciezko ranny w jego chacie. Podczas walki uderzyla go strazaka. Teraz powinienem zobaczyc Samuela i sprawdzic, czy moze pomóc.");
 };
 
 INSTANCE Info_Mod_Skip_Befreiung2 (C_INFO)
@@ -468,7 +468,7 @@ INSTANCE Info_Mod_Skip_Befreiung2 (C_INFO)
 	information	= Info_Mod_Skip_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Trink das.";
+	description	= "Pic to.";
 };
 
 FUNC INT Info_Mod_Skip_Befreiung2_Condition()
@@ -482,26 +482,26 @@ FUNC INT Info_Mod_Skip_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Skip_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_00"); //Trink das. Dieser Trank wird dir helfen.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_00"); //Pic to. Ten eliksir pomoze Ci.
 
 	B_GiveInvItems	(hero, self, ItPo_AdanosWohltat, 1);
 	B_UseItem	(self, ItPo_AdanosWohltat);
 
-	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_01"); //Danke. Dieses Zeug hat mir echt geholfen.
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_02"); //Also bist du wieder fit?
-	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_03"); //Ja, hab mich nie besser gefühlt. Nimm das als Zeichen meiner Dankbarkeit.
+	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_01"); //Dzieki. To naprawde mi pomoglo.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_02"); //Wiec znów jestes w dobrej kondycji?
+	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_03"); //Tak, nigdy nie czulem sie lepiej. Wezmy to za dowód mojej wdziecznosci.
 
 	CreateInvItems	(self, ItMi_Gold, 300);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_04"); //Danke. Ich geh dann mal.
-	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_05"); //Man sieht sich.
+	AI_Output(hero, self, "Info_Mod_Skip_Befreiung2_15_04"); //Dzieki. Bede wiec jechal.
+	AI_Output(self, hero, "Info_Mod_Skip_Befreiung2_08_05"); //Do zobaczenia dookola.
 
 	AI_StopProcessInfos	(self);
 
 	B_StartOtherRoutine	(self, "PRESTART");
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRSKIP, TOPIC_MOD_BEL_PIRATENLAGER, "Skip ist dank des Trankes wieder fit.", "Skip ist wieder fit.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRSKIP, TOPIC_MOD_BEL_PIRATENLAGER, "Dzieki eliksirowi pomylka znów pasuje do siebie.", "Pomin ponownie dopasowanie.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRSKIP, LOG_SUCCESS);
 
 	Mod_Piratenbefreiung += 1;
@@ -517,7 +517,7 @@ INSTANCE Info_Mod_Skip_Sumpfmensch (C_INFO)
 	information	= Info_Mod_Skip_Sumpfmensch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Greg meinte, du könntest mir vielleicht helfen.";
+	description	= "Greg powiedzial, ze moze pomóglbys mi pomóc.";
 };
 
 FUNC INT Info_Mod_Skip_Sumpfmensch_Condition()
@@ -530,30 +530,30 @@ FUNC INT Info_Mod_Skip_Sumpfmensch_Condition()
 
 FUNC VOID Info_Mod_Skip_Sumpfmensch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_00"); //Greg meinte, du könntest mir vielleicht helfen.
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Na klar, was gibt's?
-	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_02"); //Was weißt du über Darrion?
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Darrion... du meinst den alten Entertruppführer? Nicht viel, um ehrlich zu sein. Niemand weiß viel über ihn.
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Der hat schon als aktiver Entertruppführer nicht viel von sich erzählt und als Greg zum Captain ernannt wurde, war das einzige, das man aus ihm rausbekam hin und wieder die letzten paar Becher, wenn er es mit dem Grog mal wieder übertrieben hat.
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Zu mir ist er nur gekommen, um zu handeln.
-	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_04"); //Irgendwas bestimmtes?
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Das übliche. Grog, Waffen, Sumpfkraut; der hatte ein bisschen einen Faible für solche Drogen.
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Ach ja, und ein paar Wochen bevor er verschwunden ist, hat er mir den gesamten Salpetervorrat abgekauft!
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Frag mich nicht, was der damit vorhatte. Ich dachte schon, der wolle den Turm da oben sprengen. Geknallt hat's aber nie.
-	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_04"); //Okay. Danke.
+	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_00"); //Greg powiedzial, ze moze pomóglbys mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Oczywiscie, co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_02"); //Co wiesz o Darrionie?
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Darrion..... Masz na mysli starszego porywacza? Niewiele, szczerze mówiac. Nikt nie wie o nim wiele.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Jako aktywny przedsiebiorca-lider nie mówil wiele o sobie i kiedy Greg zostal mianowany kapitanem, jedyne, co mozna bylo wydostac sie z niego, to bylo kilka ostatnich pucharów od czasu do czasu, kiedy ponownie przesadzal z grogiem.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_03"); //Przyszedl do mnie tylko do handlu.
+	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_04"); //Cokolwiek w szczególnosci?
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Zwykly. Grot, pistolety, chwast bagienny; którzy mieli troche miekkiej plamki na takie narkotyki jak ten.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Ach, a kilka tygodni przed jego zaginieciem, kupil mój kompletny sól do picia!
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_05"); //Nie pytaj mnie, co on z tym robil. Myslalem, ze wieze tam wysadzi w powietrze. Nigdy jednak nie wysadzil sie w powietrze.
+	AI_Output(hero, self, "Info_Mod_Skip_Sumpfmensch_15_04"); //Okay. Dzieki.
 	
 	AI_TurnAway(hero, self);
 	
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Warte! Da fällt mir noch was ein.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Poczekac! Pomysle o czyms innym.
 	
 	AI_TurnToNpc(hero, self);
 	
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Ich musste für ihn so einen Stinkekäse auftreiben.
-	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Er hat gemeint, er brauche ihn für einen Einsiedler, der irgendwo hier 'ne  Hütte hat. Vielleicht weiß der Typ ja mehr über Darrion.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Musialam znalezc mu jakis zapachowy ser.
+	AI_Output(self, hero, "Info_Mod_Skip_Sumpfmensch_08_01"); //Powiedzial, ze potrzebowal go dla pustelnika, który ma tu gdzies kabine. Moze ten facet wie wiecej o Darrionie.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Skip hat erzählt, dass Darrion jede Menge Salpeter gekauft hat und damit in dem Turm verschwunden ist. Außerdem hat er Stinkekäse für den Einsiedler gebraucht. Vielleicht komme ich damit weiter?");
+	B_LogEntry	(TOPIC_MOD_SL_SUMPFMENSCH, "Skip powiedzial mi, ze Darrion kupil duzo soli i zniknal w wiezy. Dla pustelnika potrzebowal takze sera zwinietego. Moze moge uciec przed tym?");
 };
 
 INSTANCE Info_Mod_Skip_Trade (C_INFO)

@@ -1,7 +1,7 @@
 INSTANCE Mod_528_SLD_Cord_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cord";
+	name 		= "przewód";
 	guild 		= GIL_MIL;
 	id 			= 528;
 	voice 		= 14;

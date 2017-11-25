@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Silas_Hi (C_INFO)
 	information	= Info_Mod_Silas_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bekommst doch bestimmt einiges mit in der Kneipe.";
+	description	= "Jestem pewien, ze z baru dostaniesz duzo.";
 };
 
 FUNC INT Info_Mod_Silas_Hi_Condition()
@@ -20,75 +20,75 @@ FUNC INT Info_Mod_Silas_Hi_Condition()
 
 FUNC VOID Info_Mod_Silas_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_15_00"); //Du bekommst doch bestimmt einiges mit in der Kneipe.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_06_01"); //Wenn ich dir was über das Lager erzählen soll, musst du schon 100 Goldmünzen springen lassen oder ...
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_15_00"); //Jestem pewien, ze z baru dostaniesz duzo.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_06_01"); //Jesli chcialbys, abym opowiedzial Ci cos o obozie, musisz pozwolic skoczyc 100 zlotych monet lub.....
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_06_02"); //(in leiserem Ton) ... hast du vielleicht drei Stängel Sumpfkraut?
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_06_02"); //cichszy ton) Czy masz trzy lodygi rabu bagiennego?
 
 	Info_ClearChoices	(Info_Mod_Silas_Hi);
 
-	Info_AddChoice	(Info_Mod_Silas_Hi, "Leider nicht ...", Info_Mod_Silas_Hi_D);
+	Info_AddChoice	(Info_Mod_Silas_Hi, "Niestety nie.....", Info_Mod_Silas_Hi_D);
 
 	if (Npc_HasItems(hero, ItMi_Joint) >= 3)
 	{
-		Info_AddChoice	(Info_Mod_Silas_Hi, "Hier hast du drei Stängel.", Info_Mod_Silas_Hi_B);
+		Info_AddChoice	(Info_Mod_Silas_Hi, "Oto trzy lodygi.", Info_Mod_Silas_Hi_B);
 	};
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Silas_Hi, "Hier hast du 100 Goldmünzen.", Info_Mod_Silas_Hi_A);
+		Info_AddChoice	(Info_Mod_Silas_Hi, "Oto 100 zlotych monet.", Info_Mod_Silas_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Silas_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_00"); //Also, wie sieht’s im Lager aus?
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_01"); //Tja, seit dem Fall der Barriere hat sich so manches verändert im Lager, was auch nicht so verwundern sollte, da ja genau das das ursprüngliche Ziel war, auf welchem der Zusammenhalt des Lagers gründete.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_02"); //Und als auch die Wassermagier weggingen, die viel Autorität, im Lager verkörpert hatten, drohte das Lager auseinander zufallen.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_03"); //Lee, wohl nach wie vor besessen von dem Wunsch Rache an dem König zu üben, wollte das mit allen Mitteln verhindern.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_04"); //Er will  die Kontrolle über so viele kampferprobte Männer nicht so einfach abgeben, da er es als Werkzeug seiner Rache an dem geschwächten König betrachten dürfte.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_05"); //Er überzeugte die Söldner mit davon, dass sie niemals Freiheit erfahren könnten, ehe der König nicht tot sei – na ja, das viele Erz, das die freie Mine nach wie vor abwirft, dürfte einige wohl auch zum Bleiben bewogen haben.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_06"); //Jetzt, da keine Barriere mehr in die Luft gejagt werden muss, dient es als Sold und der Anschaffung neuer Ausrüstung, um eine kampfstarke Truppe aufzubauen.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_07"); //Dazu führte er auch strenge Regeln ein – wie die Einschränkung des Sumpfkrautkonsums – neue Hierarchien und einen harten Drill für die Kämpfer.
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_08"); //Was ist mit diesem Sylvio?
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_09"); //Lee hatte ihm den Posten des 2. Offiziers und den Oberbefehl über die Orkjäger gegeben, da Sylvio ein zäher Kämpfer ist und es versteht mit einer Atmosphäre der Angst die Söldner zu noch mehr Disziplin zu bewegen.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_10"); //Sylvio selbst ist jedoch ein korruptes Drecksschwein und hat von allen mit Abstand den meisten Drecken am Stecken.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_11"); //Er unterschlägt Erz und Nahrungsmittel, welche zum Beispiel für die Bauern gedacht waren und lässt seine Jungs Geschäfte mit dem Alten Lager machen.
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_12"); //Und warum lässt Lee so etwas zu?
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_13"); //Lee hat vor allem seine Rache im Kopf. Vor anderen Dingen scheint er die Augen zu verschließen, solange sie nur irgendwie funktionieren.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_14"); //Außerdem kann man Sylvio auch schwer etwas nachweisen, da er bei allen Missetaten eben seine Jungs vorschickt und sich selbst die Hände nicht schmutzig macht.
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_15"); //Nun, das waren wohl die wichtigsten Dinge, die du über das Lager wissen solltest.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_00"); //Co wiec z obozem?
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_01"); //Cóz, od upadku zapory w obozie zmienilo sie wiele rzeczy, co nie powinno dziwic, bo to byl pierwotny cel, na którym opierala sie spójnosc obozu.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_02"); //A kiedy magicy wodni, którzy ucielesnili w obozie wiele autorytetów, równiez opuscili obóz, grozilo, ze sie rozpadnie.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_03"); //Lee, prawdopodobnie nadal obsesyjnie obsesyjnie nastawiony do checi zemsty na króla, chcial temu zapobiec wszelkimi sposobami.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_04"); //Nie chce tak latwo zrezygnowac z kontroli nad tak licznymi mezczyznami, ze moze uznac to za narzedzie zemsty na oslabionym królu.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_05"); //Przekonal najemników, ze nigdy nie beda w stanie doswiadczyc wolnosci, dopóki król nie umrze - no cóz, wiele rud, które nadal opuszczaja wolne kopalnie, musialo przekonac czesc z nich do pozostania.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_06"); //Teraz, gdy nie ma juz bariery do wysadzenia w powietrze, sluzy ona jako zaplata i zakup nowego sprzetu do budowania silnej sily.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_07"); //W tym celu wprowadzil równiez surowe zasady - takie jak ograniczenie ziól bagiennych - nowe hierarchie i twarda wiertarke dla bojowników.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_08"); //A co z tym facetem Sylvio?
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_09"); //Lee dal mu drugie stanowisko. Sylvio jest ciezkim wojownikiem i wie, jak pozyskac najemników do jeszcze wiekszej dyscypliny z atmosfera strachu.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_10"); //Jednak sama Sylvio jest skorumpowana, brudna swinia i ma zdecydowanie najwieksza ilosc brudnego brudu.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_11"); //Tlumi rude i jedzenie, które byly przeznaczone na przyklad dla rolników i pozwala chlopcom zalatwic sprawy z dawnym obozem.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_C_15_12"); //A dlaczego Lee pozwolil cos takiego sie wydarzyc?
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_13"); //Lee ma zemste w glowie. On zdaje sie zamykac oczy na inne rzeczy tak dlugo, jak one tylko funkcjonuja jakos.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_14"); //Poza tym, Sylvio równiez trudno jest cos udowodnic, poniewaz wysyla chlopców we wszystkich swoich czynach i nie zabrudza mu rak.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_C_06_15"); //Cóz, to byly chyba najwazniejsze rzeczy, które powinienes wiedziec o obozie.
 
 	Info_ClearChoices	(Info_Mod_Silas_Hi);
 };
 
 FUNC VOID Info_Mod_Silas_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_D_15_00"); //Leider nicht ...
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_D_06_01"); //Dann habe ich auch leider keine Informationen für dich.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_D_15_00"); //Niestety nie.....
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_D_06_01"); //Wtedy nie mam dla Ciebie zadnych informacji.
 
 	Info_ClearChoices	(Info_Mod_Silas_Hi);
 };
 
 FUNC VOID Info_Mod_Silas_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_B_15_00"); //Hier hast du drei Stängel.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_B_15_00"); //Oto trzy lodygi.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 3);
 
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_B_06_01"); //Ahh, fabelhaft.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_B_06_01"); //Ahhh, bajkowy.
 
 	Info_Mod_Silas_Hi_C();
 };
 
 FUNC VOID Info_Mod_Silas_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Silas_Hi_A_15_00"); //Hier hast du 100 Goldmünzen.
+	AI_Output(hero, self, "Info_Mod_Silas_Hi_A_15_00"); //Oto 100 zlotych monet.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Silas_Hi_A_06_01"); //Ok, gut.
+	AI_Output(self, hero, "Info_Mod_Silas_Hi_A_06_01"); //Dobry, dobry.
 
 	Info_Mod_Silas_Hi_C();
 };
@@ -120,7 +120,7 @@ FUNC VOID Info_Mod_Silas_Trade_Info()
 		Mod_SilasTrader = 1;
 
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_SOELDNER, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_SOELDNER, "Bei Silas kann ich allerlei Lebensmittel kaufen.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_SOELDNER, "Od Silasa moge kupowac wszelkiego rodzaju artykuly spozywcze.");
 	};
 
 	Backup_Questitems();

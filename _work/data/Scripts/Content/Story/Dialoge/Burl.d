@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Burl_Rattenquest (C_INFO)
 	information	= Info_Mod_Burl_Rattenquest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Burl?";
+	description	= "Czy jestes burla?";
 };
 
 FUNC INT Info_Mod_Burl_Rattenquest_Condition()
@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Burl_Rattenquest_Condition()
 
 FUNC VOID Info_Mod_Burl_Rattenquest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_00"); //Bist du Burl?
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_01"); //Oh man, mein Schädel brummt noch von gestern Nacht könntest du mich nicht noch schlafen lassen?
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_02"); //Nein, soviel Zeit hab ich nicht.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_03"); //Ok, schon in Ordnung, wie kann ich dir denn helfen?
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_04"); //Der Wirt meinte du wüsstest wo man hier Ratten findet.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_05"); //Ja, ich weiß wo sich in letzter Zeit eine Menge von denen aufhalten. Hab mich schon gewundet, warum die ausgerechnet in einem so kalten Gebiet sind.
-	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_06"); //Ein gutes Stück westlich von hier, auf dem Berg über der Mine, dort habe ich sie gesehen. Hier ist eine Karte.
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_00"); //Czy jestes burla?
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_01"); //Ach, czlowiek, glowa moja od wczorajszej nocy, czy nie pozwolilbys mi spac?
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_02"); //Nie, nie mam tyle czasu.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_03"); //Dobrze, jak moge Ci pomóc?
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_04"); //Karczmarz powiedzial ci, ze wiesz gdzie znalezc szczury.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_05"); //Tak, wiem, gdzie ostatnio jest ich wiele. Mam juz bóle gardla, dlaczego sa w tak zimnym miejscu.
+	AI_Output(self, hero, "Info_Mod_Burl_Rattenquest_08_06"); //Duza czesc na zachód od niej, na górze nad kopalnia, tam je widzialem. Oto mapa.
 
 	B_GiveInvItems	(self, hero, ItWr_Map_Eisgebiet_Richard, 1);
 
-	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_07"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Burl_Rattenquest_15_07"); //Dzieki.
 
-	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Burl hat mir gesagt, wo ich die Ratten finde. Im Westen auf dem Berg über der Mine sollte ich mich also mal umsehen. Er hat mir auch eine Karte gegeben, wo der Ort markiert ist.");
+	B_LogEntry	(TOPIC_MOD_RATTENQUEST, "Burl powiedzial mi gdzie znalezc szczury. Na zachodzie na górze nad kopalnia powinienem rozejrzec sie dookola. Dal mi równiez mape miejsca, w którym zaznaczono miejsce.");
 
 	Mod_RattenQuest = 6;
 

@@ -14,7 +14,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe den Fokus aus der Klosterruine geborgen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ocalilem ostrosc od ruin klasztoru.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Focus_Meer) == 1)
@@ -25,7 +25,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe den Fokus von der Meeresklippe geborgen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ocalilem ostrosc od skaly morskiej.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Focus_Troll) == 1)
@@ -36,7 +36,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe den Fokus aus der Trollschlucht geborgen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ocalilem ostrosc od wawozu Troll Canyon.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Focus_Stonehenge) == 1)
@@ -47,7 +47,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe den Fokus des Stonehenges von Ranad bekommen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Skupilem sie na Stoneheng z Ranadu.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Focus_Bergfestung) == 1)
@@ -58,7 +58,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(500);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich konnte Hosh Pak den Fokus der Bergfestung abnehmen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Udalo mi sie skupic uwage Hosha Paka na górach.");
 		};
 
 		if (Mod_Fokus_Bergfestung == 1)
@@ -72,7 +72,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(2000);
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe alle fünf Foki. Ich sollte jetzt nach Jharkendar zurückkehren und dort die Foki einsetzen. Vorher sollte ich allerdings nochmal mit Saturas sprechen.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Mam wszystkich pieciu Foki. Powinienem teraz wrócic do Jharkendend i skupic sie na tym zagadnieniu. Wczesniej powinienem jeszcze raz porozmawiac z Saturami.");
 		};
 
 		// Tore im Minental öffnen und schließen
@@ -174,7 +174,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_Klaue_TB = 1;
 
-			B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Ich habe dem Skelett die Klaue Beliars abgenommen und sollte nun zu Xardas gehen.");
+			B_LogEntry	(TOPIC_MOD_ERSTEWAFFE, "Zdjalem pazur Beliara z szkieletu i teraz powinienem udac sie do Xardas.");
 		};
 
 		// Ratford und Drax wegen Fokus verschwinden lassen
@@ -219,7 +219,7 @@ FUNC VOID HAUPTQUESTS()
 
 			AI_StandUP	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_PortalTempelOut_15_00"); //Der Ausgang ist versperrt. Irgendwie muss man ihn öffnen können. Vielleicht gibt es einen Schalter oder einen Hebel hier irgendwo?
+			AI_Output(hero, NULL, "Info_Mod_Hero_PortalTempelOut_15_00"); //Wyjscie jest zablokowane. Jakos trzeba umiec go otworzyc. Moze jest tu gdzies przelacznik lub dzwignia?
 		};
 
 		// Die Echsen im Sumpf
@@ -269,7 +269,7 @@ FUNC VOID HAUPTQUESTS()
 
 			Snd_Play	("GOL_STEPBOOM");
 
-			B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Das war eine ziemlich große Gruppe an Golems, die mich hier umgerannt hat. Ich sollte schleunigst zu den Echsen und ihnen bei der Schlacht helfen.");
+			B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "To byla dosc duza grupa biegnacych tu golemów. Powinienem isc do jaszczurów i pomóc im w bitwie.");
 
 			// Echsen vor Stadt wegen Schlacht
 
@@ -345,7 +345,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HQ_AlraunenTor = 3;
 
-			B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Die Schlacht ist gewonnen und alle Golems besiegt. Ich sollte nun zu Albi zurückkehren.");
+			B_LogEntry	(TOPIC_MOD_ECHSEN_SCHLACHT, "Bitwa wygrywa sie i wszyscy Golemi zostaja pokonani. Powinienem teraz powrócic do Albi.");
 
 			B_StartOtherRoutine	(Mod_12002_DRA_Patroullie_AW, "START");
 			B_StartOtherRoutine	(Mod_12004_DRA_Wache_AW, "START");
@@ -543,8 +543,8 @@ FUNC VOID HAUPTQUESTS()
 			Mod_Uriziel_Piece8 = Button_CreatePxl(r_Max(Print_Screen[PS_X] - 33), r_Max(Print_Screen[PS_Y] - 153), 33, 153, "P8.TGA", Button_Null, Button_Null, PuzzleButton_Click);
 			Button_Show(Mod_Uriziel_Piece8);
 			
-			var string descriptionText1; descriptionText1 = "Verschiebe die Teile mit der Maus an ihren Platz.";
-			var string descriptionText2; descriptionText2 = "Ein Mausklick hebt ein Teil auf, ein weiterer legt es wieder ab.";
+			var string descriptionText1; descriptionText1 = "Przesun czesci mysza na ich miejsce.";
+			var string descriptionText2; descriptionText2 = "Jedno klikniecie myszka zaznacza czesc, drugie ponownie ja odklada.";
 			Mod_Uriziel_PuzzleDescription1 = View_CreatePxl(0, 0, Print_Screen[PS_X], Print_Screen[PS_Y]);
 			Mod_Uriziel_PuzzleDescription2 = View_CreatePxl(0, 50, Print_Screen[PS_X], Print_Screen[PS_Y] - 50);
 			View_AddText(Mod_Uriziel_PuzzleDescription1, 0, 0, descriptionText1, FONT_ScreenSmall);
@@ -569,7 +569,7 @@ FUNC VOID HAUPTQUESTS()
 
 			B_GivePlayerXP	(50);
 
-			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Was haben wir denn hier ... ein Söldner, der offensichtlich mit einer Söldnerwaffe durchbohrt am Boden liegt.");
+			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Co my tutaj mamy? najemnik najemnik, który oczywiscie nudzi sie na ziemi najemnikiem.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Milten_Daemonisch))
@@ -786,7 +786,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HQ_Daemonisch = 2;
 
-			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "So, das waren alle drei. Jetzt wieder zu Xardas.");
+			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Tak wiec to byly wszystkie trzy z nich. Teraz wrócmy do Xardas.");
 		};
 
 		if (Mod_HQ_Daemonisch == 3)
@@ -815,15 +815,15 @@ FUNC VOID HAUPTQUESTS()
 
 				if (Mod_HQ_Daemonisch_SP == 1)
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Gotowy magazyn.");
 				}
 				else if (Mod_HQ_Daemonisch_SP == 2)
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Gotowy magazyn.");
 				}
 				else
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Gotowy magazyn.");
 				};
 			};
 			if (Mod_HQ_Daemonisch_SP_02 == 0)
@@ -841,15 +841,15 @@ FUNC VOID HAUPTQUESTS()
 
 					if (Mod_HQ_Daemonisch_SP == 1)
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Gotowy magazyn.");
 					}
 					else if (Mod_HQ_Daemonisch_SP == 2)
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Gotowy magazyn.");
 					}
 					else
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Gotowy magazyn.");
 					};
 				}
 				else if (Npc_GetDistToWP(Mod_13009_SP_Seelenpeiniger_NW, "NW_BIGFARM_FOREST_03_NAVIGATION") > 2000)
@@ -867,15 +867,15 @@ FUNC VOID HAUPTQUESTS()
 
 					if (Mod_HQ_Daemonisch_SP == 1)
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Gotowy magazyn.");
 					}
 					else if (Mod_HQ_Daemonisch_SP == 2)
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Gotowy magazyn.");
 					}
 					else
 					{
-						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Lager erledigt.");
+						B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Gotowy magazyn.");
 					};
 				};
 			};
@@ -901,15 +901,15 @@ FUNC VOID HAUPTQUESTS()
 
 				if (Mod_HQ_Daemonisch_SP == 1)
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "1. Gotowy magazyn.");
 				}
 				else if (Mod_HQ_Daemonisch_SP == 2)
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "2. Gotowy magazyn.");
 				}
 				else
 				{
-					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Lager erledigt.");
+					B_LogEntry	(TOPIC_MOD_DAEMONISCH, "3. Gotowy magazyn.");
 				};
 			};
 
@@ -938,7 +938,7 @@ FUNC VOID HAUPTQUESTS()
 		|| (Mod_HQ_Daemonisch_SP_02 == 2)
 		|| (Mod_HQ_Daemonisch_SP_03 == 2))
 		{
-			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Aha, Taverne ... nur welche?");
+			B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Uh-huh, tawerna.... Tylko które z nich?");
 
 			Mod_HQ_Daemonisch = 5;
 		};
@@ -965,74 +965,74 @@ FUNC VOID HAUPTQUESTS()
 					AI_TurnToNpc	(Mod_7422_NONE_Frau_NW, Mod_753_NOV_Ulf_NW);
 					AI_TurnToNpc	(Mod_753_NOV_Ulf_NW, Mod_7422_NONE_Frau_NW);
 
-					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_00"); //Ich ... ich kann das nicht mehr tun. Warum verlangst du das von mir?
+					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_00"); //l-- Nie moge juz tego robic. Dlaczego prosze mnie o to?
 				}
 				else if (Mod_HQ_Daemonisch_SP_02 == 2)
 				{
 					AI_TurnToNpc	(Mod_7422_NONE_Frau_NW, Mod_541_NONE_Till_NW);
 					AI_TurnToNpc	(Mod_541_NONE_Till_NW, Mod_7422_NONE_Frau_NW);
 
-					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_01"); //Ich ... ich kann das nicht mehr tun. Warum verlangst du das von mir?
+					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_01"); //l-- Nie moge juz tego robic. Dlaczego prosze mnie o to?
 				}
 				else
 				{
 					AI_TurnToNpc	(Mod_7422_NONE_Frau_NW, Mod_754_NONE_Valentino_NW);
 					AI_TurnToNpc	(Mod_754_NONE_Valentino_NW, Mod_7422_NONE_Frau_NW);
 
-					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_02"); //Ich ... ich kann das nicht mehr tun. Warum verlangst du das von mir?
+					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_02"); //l-- Nie moge juz tego robic. Dlaczego prosze mnie o to?
 				};
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 5)
 			{
 				if (Mod_HQ_Daemonisch_SP_01 == 2)
 				{
-					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_03"); //Vorher bin ich dem Mann begegnet, den ich töten sollte ... ich konnte es nicht.
+					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_03"); //Zanim poznalem mezczyzne, mialem zabic.... Nie moglem tego zrobic.
 				}
 				else if (Mod_HQ_Daemonisch_SP_02 == 2)
 				{
-					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_04"); //Vorher bin ich dem Mann begegnet, den ich töten sollte ... ich konnte es nicht.
+					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_04"); //Zanim poznalem mezczyzne, mialem zabic.... Nie moglem tego zrobic.
 				}
 				else
 				{
-					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_05"); //Vorher bin ich dem Mann begegnet, den ich töten sollte ... ich konnte es nicht.
+					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_05"); //Zanim poznalem mezczyzne, mialem zabic.... Nie moglem tego zrobic.
 				};
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 10)
 			{
 				if (Mod_HQ_Daemonisch_SP_01 == 2)
 				{
-					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_06"); //Ich will doch einfach nur unsere Liebe leben.
+					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_06"); //Chce tylko zyc nasza miloscia.
 				}
 				else if (Mod_HQ_Daemonisch_SP_02 == 2)
 				{
-					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_07"); //Ich will doch einfach nur unsere Liebe leben.
+					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_07"); //Chce tylko zyc nasza miloscia.
 				}
 				else
 				{
-					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_08"); //Ich will doch einfach nur unsere Liebe leben.
+					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_08"); //Chce tylko zyc nasza miloscia.
 				};
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 15)
 			{
-				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_17_09"); //Ach, du hast recht. Das darf so nicht weitergehen.
+				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_17_09"); //Och, masz racje. Nie moze sie to odbywac w ten sposób.
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 20)
 			{
-				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_17_10"); //Daher ... wird sich jetzt einer der Schattendiener deiner annehmen ... sonst nützt du mir ja doch nichts mehr.
+				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_17_10"); //Stad..... jeden z waszych cieni bedzie teraz opiekowal sie soba..... albo nie jestes juz dla mnie dobry.
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 25)
 			{
 				if (Mod_HQ_Daemonisch_SP_01 == 2)
 				{
-					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_11"); //Was ... nein, aber ich liebe dich doooch ...
+					AI_Output(Mod_753_NOV_Ulf_NW, NULL, "Info_Mod_UrnolKap4_Ulf_28_11"); //Co.....? Nie, ale tak bardzo cie kocham....
 				}
 				else if (Mod_HQ_Daemonisch_SP_02 == 2)
 				{
-					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_12"); //Was ... nein, aber ich liebe dich doooch ...
+					AI_Output(Mod_541_NONE_Till_NW, NULL, "Info_Mod_UrnolKap4_Till_24_12"); //Co.....? Nie, ale tak bardzo cie kocham....
 				}
 				else
 				{
-					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_13"); //Was ... nein, aber ich liebe dich doooch ...
+					AI_Output(Mod_754_NONE_Valentino_NW, NULL, "Info_Mod_UrnolKap4_Valentino_03_13"); //Co.....? Nie, ale tak bardzo cie kocham....
 				};
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 30)
@@ -1069,7 +1069,7 @@ FUNC VOID HAUPTQUESTS()
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 35)
 			{
-				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_14_14"); //Und außerdem bist du auch gar nicht mein Typ, harharhar ... Trottel.
+				AI_Output(Mod_7422_NONE_Frau_NW, NULL, "Info_Mod_UrnolKap4_Urnol_14_14"); //A poza tym, nie jestes mój typ w ogóle, harharharharharhar.... Moron.
 			};
 			if (Mod_HQ_Daemonisch_Sequenz == 39)
 			{
@@ -1138,7 +1138,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_CedricLos = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_CREW, "Gut, mit Milten als Feuermagier sollte Cedric zufrieden sein.");
+			B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cóz, Cedric powinien byc zadowolony z Miltena jako maga pozarniczego.");
 		};
 
 		// Frauen für Bones
@@ -1148,7 +1148,7 @@ FUNC VOID HAUPTQUESTS()
 		|| (Mod_SagittaDabei == 1))
 		&& (Mod_BonesOk == 0)
 		{
-			B_LogEntry	(TOPIC_MOD_HQ_CREW, "Eine Frau für Bones hätte ich also schonmal ...");
+			B_LogEntry	(TOPIC_MOD_HQ_CREW, "Wiec mialabym zone za kosci, gdybym nie mial....");
 
 			Mod_BonesOk = 1;
 		};
@@ -1158,7 +1158,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HatOrnamentHeiler = 1;
 
-			B_LogEntry	(TOPIC_MOD_PORTAL, "Ich hab das Ornamentstück des Heilers.");
+			B_LogEntry	(TOPIC_MOD_PORTAL, "Mam ornament uzdrowiciela.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Ornament_Krieger) == 1)
@@ -1166,7 +1166,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HatOrnamentKrieger= 1;
 
-			B_LogEntry	(TOPIC_MOD_PORTAL, "Ich hab das Ornamentstück des Kriegers.");
+			B_LogEntry	(TOPIC_MOD_PORTAL, "Mam ornament wojownika.");
 		};
 
 		if (Npc_HasItems(hero, ItMi_Ornament_Totenwaechter) == 1)
@@ -1174,7 +1174,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HatOrnamentTotenwaechter = 1;
 
-			B_LogEntry	(TOPIC_MOD_PORTAL, "Ich hab das Ornamentstück des Totenwächters.");
+			B_LogEntry	(TOPIC_MOD_PORTAL, "Dostalem ornament ochroniarza.");
 		};
 
 		// Seelenpeiniger rechtzeitig teleportieren ;)
@@ -1605,7 +1605,7 @@ FUNC VOID HAUPTQUESTS()
 			{
 				Mod_Argez = 2;
 
-				B_LogEntry	(TOPIC_MOD_DUNKLEMAGIE, "Die Vision hat Argez gezeigt, als er seinen ungeplanten Zauber ausstieß. Ungeplant? Oder spielt er die ganze Zeit über nur mit uns?");
+				B_LogEntry	(TOPIC_MOD_DUNKLEMAGIE, "Argez pokazal wizje, kiedy rzucil nieplanowany czar. Nieplanowany? A moze po prostu bawi sie z nami caly czas?");
 
 				PlayVideo ("Xeres\XR_ArgezVision.bik");
 			};
@@ -1642,67 +1642,67 @@ FUNC VOID HAUPTQUESTS()
 				AI_TurnToNpc	(PC_Friend_NW, Mod_774_KDW_Saturas_NW);
 				AI_TurnToNpc	(Mod_774_KDW_Saturas_NW, PC_Friend_NW);
 
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_00"); //Du musst Argez sein, der Mann ohne Vergangenheit.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_00"); //Musisz byc Argezem, czlowiekiem bez przeszlosci.
 			};
 			if (Mod_Argez_Counter == 2)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_01"); //Und Ihr müsst Saturas sein, Meister der Magie.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_01"); //I musisz byc mistrzem magii Saturas.
 			};
 			if (Mod_Argez_Counter == 7)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_02"); //Jedoch ist dieser Meister nicht zu dem imstande, was du geleistet hast.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_02"); //Jednak ten mistrz nie jest w stanie osiagnac tego, co pan osiagnal.
 			};
 			if (Mod_Argez_Counter == 12)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_03"); //Mich würde interessieren, wie man in den Besitz dieser Kräfte gelangt.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_03"); //Chcialbym wiedziec, jak zdobyc te uprawnienia.
 			};
 			if (Mod_Argez_Counter == 17)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_04"); //Das ist auch für mich ein Mysterium. Wenn ich sie Euch lehren könnte, würde ich es sofort tun.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_04"); //To jest dla mnie tajemnica. Gdybym mógl cie nauczyc, zrobilbym to juz teraz.
 			};
 			if (Mod_Argez_Counter == 22)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_05"); //Du missverstehst mich. Ich will nicht selbst über diese Kräfte gebieten.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_05"); //Rozumiesz mnie zle. Ja sam nie chce sprawowac tych uprawnien.
 			};
 			if (Mod_Argez_Counter == 27)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_06"); //Ich sehe bloß einen groben Verstoß gegen das göttliche Gleichgewicht und will dies in Zukunft verhindern.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_06"); //Dostrzegam jedynie razace naruszenie boskiej równowagi i chce temu zapobiec w przyszlosci.
 			};
 			if (Mod_Argez_Counter == 32)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_07"); //Inwiefern habe ich gegen das Gleichgewicht verstoßen?
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_07"); //Jak zlamalem równowage?
 			};
 			if (Mod_Argez_Counter == 37)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_08"); //Dein Spruch war ein primitiver, aber mächtiger Beliarzauber. Er hätte einen Großteil unserer Zauberer auf der Stelle kampfunfähig gemacht.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_08"); //Twój czar byl prymitywnym, ale poteznym zakleciem Beliara. Unieaktywnilby wiekszosc naszych czarnoksiezników na miejscu.
 			};
 			if (Mod_Argez_Counter == 42)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_09"); //Ich kann nur versuchen, es in Zukunft nicht noch einmal so weit kommen zu lassen.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_09"); //Moge tylko spróbowac nie pozwolic, aby w przyszlosci tak daleko poszlo.
 			};
 			if (Mod_Argez_Counter == 47)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_10"); //Ich versichere Euch, es stand nicht in meiner Absicht, zu einer Bedrohung zu werden.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_10"); //Zapewniam panstwa, nie mialem zamiaru stac sie zagrozeniem.
 			};
 			if (Mod_Argez_Counter == 52)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_11"); //Und doch wirst du es bleiben, bis deine Vergangenheit entschlüsselt ist.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_11"); //A jednak pozostaniecie tak do czasu, az wasza przeszlosc zostanie odszyfrowana.
 			};
 			if (Mod_Argez_Counter == 57)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_12"); //Mit Eurer Erlaubnis, Meister, werde ich so lange in diesem Tempel helfen. Ich habe das unbestimmte Gefühl, ihn schon mal gesehen zu haben.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_12"); //Za wasza zgoda, panem, bede pomagal w tej swiatyni tak dlugo. Mam mgliste wrazenie, ze go widzialem.
 			};
 			if (Mod_Argez_Counter == 62)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_13"); //Vielleicht finde ich hier Hinweise auf mein altes Leben.
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_13"); //Moze znajde tu jakies wskazówki dotyczace mojego starego zycia.
 			};
 			if (Mod_Argez_Counter == 67)
 			{
-				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_14"); //Das kommt meinen Vorstellungen entgegen.
+				AI_Output(Mod_774_KDW_Saturas_NW, NULL, "Info_Mod_ArgezSaturas_14_14"); //Tego wlasnie chcialem.
 			};
 			if (Mod_Argez_Counter == 72)
 			{
-				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_15"); //(hintergründig) Kann ich mir vorstellen ...
+				AI_Output(PC_Friend_NW, NULL, "Info_Mod_ArgezSaturas_37_15"); //(w tle) Moge sobie wyobrazic......
 			};
 			if (Mod_Argez_Counter == 77)
 			{
@@ -1764,7 +1764,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HatOrnamentPriester = 1;
 
-			B_LogEntry	(TOPIC_MOD_PORTAL, "Ich hab das Ornamentstück des Priesters.");
+			B_LogEntry	(TOPIC_MOD_PORTAL, "Mam ornament kaplana.");
 		};
 	};
 
@@ -1777,7 +1777,7 @@ FUNC VOID HAUPTQUESTS()
 		{
 			Mod_HasUrizielKaputt = 1;
 
-			B_LogEntry	(TOPIC_MOD_URIZIEL, "Verdammt, Uriziel ist tatsächlich zerstört. Was Xardas wohl dazu sagen wird? Hmm, aber was meinte der Schamane mit der Macht der drei Götter?");
+			B_LogEntry	(TOPIC_MOD_URIZIEL, "Damn, Uriziel jest wlasciwie zniszczony. Zastanawiam sie, co powie Xardas. Hmm, ale co szaman znaczyl przez moc trzech bogów?");
 		};
 
 		// Anfangsmonolog, wenn Dokument von Xardas gelesen und Teleport nicht funzt
@@ -2131,9 +2131,9 @@ FUNC VOID HAUPTQUESTS()
 		{
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_GDG_Plattform_15_00"); //Was für ein Glück, da ist ja schon die Plattform. Aber wo ist der dazugehörige Sockel? Mist.
+			AI_Output(hero, NULL, "Info_Mod_Hero_GDG_Plattform_15_00"); //Na szczescie jest platforma. Gdzie jednak znajduje sie odpowiedni postument? Ciaglosc.
 
-			B_LogEntry	(TOPIC_MOD_URIZIEL, "Na super. Zwar war die Plattform gleich in der Nähe, aber leider fehlt der Sockel. Ich werde mich also umschauen müssen.");
+			B_LogEntry	(TOPIC_MOD_URIZIEL, "To wspaniale. Platforma byla blisko, ale niestety brakuje cokolu. Wiec bede musial rozejrzec sie dookola.");
 
 			Mod_GDG_Plattform = 1;
 		};
@@ -2323,7 +2323,7 @@ FUNC VOID HAUPTQUESTS()
 		if (Mod_Seelenstein_Urnol && Mod_Seelenstein_Formwandler && Mod_Seelenstein_UD) {
 			Mod_Seelenstein_Complete = TRUE;
 			
-			B_LogEntry(TOPIC_MOD_URIZIEL, "Ich habe alle Seelensteine gefunden. Jetzt sollte ich wohl mit Trimedron sprechen...");
+			B_LogEntry(TOPIC_MOD_URIZIEL, "Znalazlem wszystkie kamienie duszy. Teraz powinienem prawdopodobnie porozmawiac z Trimedronem....");
 		};
 	};
 };

@@ -1,7 +1,7 @@
 INSTANCE Mod_7555_JG_Klinger_JL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Klinger";
+	name 		= "klan";
 	guild 		= GIL_OUT;
 	id 			= 7555;
 	voice 		= 6;

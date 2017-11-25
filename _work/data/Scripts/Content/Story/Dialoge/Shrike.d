@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Shrike_Hi (C_INFO)
 	information	= Info_Mod_Shrike_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, Patrick meinte, du sollst mal wieder bei ihm zum Training vorbeischauen.";
+	description	= "Hey, Patrick kazal ci zatrzymac sie przy jego miejscu na treningu.";
 };
 
 FUNC INT Info_Mod_Shrike_Hi_Condition()
@@ -19,36 +19,36 @@ FUNC INT Info_Mod_Shrike_Hi_Condition()
 
 FUNC VOID Info_Mod_Shrike_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_15_00"); //Hey, Patrick meinte, du sollst mal wieder bei ihm zum Training vorbeischauen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_07_01"); //(genervt) Ich habe aber keine Lust.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_15_00"); //Hey, Patrick kazal ci zatrzymac sie przy jego miejscu na treningu.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_07_01"); //Ale ja tego nie czuje.
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Shrike_Hi, "Du bekommst auch 100 Goldmünzen.", Info_Mod_Shrike_Hi_B);
+		Info_AddChoice	(Info_Mod_Shrike_Hi, "Otrzymasz takze 100 zlotych monet.", Info_Mod_Shrike_Hi_B);
 	};
-	Info_AddChoice	(Info_Mod_Shrike_Hi, "Dann muss ich dich mit Schlägen zu ihm hintreiben.", Info_Mod_Shrike_Hi_A);
+	Info_AddChoice	(Info_Mod_Shrike_Hi, "Wtedy bede musial cie do niego poprowadzic moimi ciosami.", Info_Mod_Shrike_Hi_A);
 };
 
 FUNC VOID Info_Mod_Shrike_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_B_15_00"); //Du bekommst auch 100 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_B_07_01"); //Für 100 Goldmünzen setze ich doch nicht mal meinen Fuß vor die Höhle.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_B_15_00"); //Otrzymasz takze 100 zlotych monet.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_B_07_01"); //Na 100 zlotych monet nie postawie nawet stopy przed jaskinia.
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Shrike_Hi, "Ok, wie wäre es mit 200 Goldmünzen.", Info_Mod_Shrike_Hi_C);
+		Info_AddChoice	(Info_Mod_Shrike_Hi, "Okay, jak okolo 200 zlotych monet?", Info_Mod_Shrike_Hi_C);
 	};
-	Info_AddChoice	(Info_Mod_Shrike_Hi, "Dann muss ich dich mit Schlägen zu ihm hintreiben.", Info_Mod_Shrike_Hi_A);
+	Info_AddChoice	(Info_Mod_Shrike_Hi, "Wtedy bede musial cie do niego poprowadzic moimi ciosami.", Info_Mod_Shrike_Hi_A);
 };
 
 FUNC VOID Info_Mod_Shrike_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_A_15_00"); //Dann muss ich dich mit Schlägen zu ihm hintreiben.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_A_07_01"); //Achja?! Kannst es ja mal versuchen.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_A_15_00"); //Wtedy bede musial cie do niego poprowadzic moimi ciosami.
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_A_07_01"); //Czyz? Dlaczego nie spróbowac?
 
 	Info_ClearChoices	(Info_Mod_Shrike_Hi);
 
@@ -59,13 +59,13 @@ FUNC VOID Info_Mod_Shrike_Hi_A()
 
 FUNC VOID Info_Mod_Shrike_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_00"); //Ok, wie wäre es mit 200 Goldmünzen.
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_01"); //200 Goldmünzen?! Ok, gib her!
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_00"); //Okay, jak okolo 200 zlotych monet?
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_01"); //200 zlotych monet! Dobrze, daj mi to!
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_02"); //Und was ist jetzt?
-	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_03"); //Nichts ist. Ich habe dein Gold, gehe aber trotzdem nicht auf den Felsen.
+	AI_Output(hero, self, "Info_Mod_Shrike_Hi_C_15_02"); //A co teraz z tym?
+	AI_Output(self, hero, "Info_Mod_Shrike_Hi_C_07_03"); //Nic nie jest. Dostalem wasze zloto, ale jeszcze nie ruszam na skaly.
 
 	Info_Mod_Shrike_Hi_A();
 };
@@ -94,19 +94,19 @@ FUNC VOID Info_Mod_Shrike_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_00"); //Ohh, meine Knochen. Du Mistkerl ...
-			AI_Output(hero, self, "Info_Mod_Shrike_Umgehauen_15_01"); //Na, Lust auf weitere Sperenzchen?
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_02"); //(widerwillig) Ja, ich gehe ja schon ...
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_00"); //Och, moje kosci. Jestes synem suki....
+			AI_Output(hero, self, "Info_Mod_Shrike_Umgehauen_15_01"); //Co zrobic, zeby cos wiecej rozmawiac?
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_02"); //(niechec) Tak, juz wyjezdzam....
 
 			Mod_SLD_Shrike = 1;
 
-			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Ok, Shrike hat eine Abreibung erhalten und ist unterwegs zu Patrick.");
+			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Okay, Shrike pobil i jest na jego drodze do zobaczenia Patryka.");
 
 			B_StartOtherRoutine	(self, "SMOKING");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_03"); //Schwächling.
+			AI_Output(self, hero, "Info_Mod_Shrike_Umgehauen_07_03"); //Slabe strony.
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -125,7 +125,7 @@ INSTANCE Info_Mod_Shrike_NoSmokingNow (C_INFO)
 	information	= Info_Mod_Shrike_NoSmokingNow_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hatte ich dir nicht gesagt, dass du zum Training sollst?!";
+	description	= "Czy nie powiedzialem ci, zebys poszedl do praktyki?";
 };
 
 FUNC INT Info_Mod_Shrike_NoSmokingNow_Condition()
@@ -138,8 +138,8 @@ FUNC INT Info_Mod_Shrike_NoSmokingNow_Condition()
 
 FUNC VOID Info_Mod_Shrike_NoSmokingNow_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shrike_NoSmokingNow_15_00"); //Hatte ich dir nicht gesagt, dass du zum Training sollst?!
-	AI_Output(self, hero, "Info_Mod_Shrike_NoSmokingNow_07_01"); //Was?! Ohh, scheiße, du bist es. Ja, ich mach mich sofort auf den Weg.
+	AI_Output(hero, self, "Info_Mod_Shrike_NoSmokingNow_15_00"); //Czy nie powiedzialem ci, zebys poszedl do praktyki?
+	AI_Output(self, hero, "Info_Mod_Shrike_NoSmokingNow_07_01"); //Co? Och, gówno, to ty. Tak, od razu bede w drodze.
 
 	AI_StopProcessInfos	(self);
 

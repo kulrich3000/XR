@@ -11,7 +11,7 @@ var int BUCHLABYRINTH_TRUHE2;
 var int BUCHLABYRINTH_TRUHE3;
 var int BUCHLABYRINTH_TRUHE4;
 
-CONST STRING MOBNAME_LABYRINTHTRUHE			= "Schatztruhe";					//Kisten
+CONST STRING MOBNAME_LABYRINTHTRUHE			= "skrzynia skarbców";					//Kisten
 
 FUNC VOID ENTER_EVT_OLDWORLDMONSTER ()
 {
@@ -314,7 +314,7 @@ FUNC VOID EVT_FOKUS_TROLL ()
 	{
 		Wld_SpawnNpcRange(hero, Gobbo_Warrior_Weg, 5, 500);
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Nanu? Anscheinend war eine Gruppe Goblins ebenfalls hinter dem Fokusstein im Norden her. Was könnten die damit vorhaben?");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Hu? Najwyrazniej za kamieniem Focus Stone na pólnocy znajdowala sie grupa goblinów. Co mogliby z tym zrobic?");
 	};
 };
 
@@ -333,7 +333,7 @@ func void Set_SKELETRazor_Visuals()
 
 INSTANCE SKELETRazor (Mst_Default_Razor)
 {
-	name = "Dino-Skelett";
+	name = "szkielet nosorozec";
 
 	Set_SKELETRazor_Visuals();
 	Npc_SetToFistMode(self);
@@ -356,7 +356,7 @@ INSTANCE Schattenwark	(Mst_Default_StonePuma)
 
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -386,7 +386,7 @@ INSTANCE Schattenwark_XW_01	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -418,7 +418,7 @@ INSTANCE Schattenwark_XW_02	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -450,7 +450,7 @@ INSTANCE Schattenwark_XW_03	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -482,7 +482,7 @@ INSTANCE Schattenwark_XW_04	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -514,7 +514,7 @@ INSTANCE Schattenwark_XW_05	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -546,7 +546,7 @@ INSTANCE Schattenwark_XW_06	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -578,7 +578,7 @@ INSTANCE Schattenwark_XW_07	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -610,7 +610,7 @@ INSTANCE Schattenwark_XW_08	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -642,7 +642,7 @@ INSTANCE Schattenwark_XW_09	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -674,7 +674,7 @@ INSTANCE Schattenwark_XW_10	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -706,7 +706,7 @@ INSTANCE Schattenwark_XW_11	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -738,7 +738,7 @@ INSTANCE Schattenwark_XW_12	(Mst_Default_StonePuma)
 	CreateInvItems	(self, ItFo_MuttonRaw, 2);
 
 	//----- Monster ----
-	name							=	"Schattenwarg";
+	name							=	"kos";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -779,7 +779,7 @@ func void B_SetVisuals_Hauertroll()
 //***********
 INSTANCE Hauertroll	(Mst_Default_Troll)
 {
-	name							=	"Hauertroll";
+	name							=	"rozchodnik";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -811,7 +811,7 @@ INSTANCE Hauertroll	(Mst_Default_Troll)
 
 INSTANCE Hauertroll_XW_01	(Mst_Default_Troll)
 {
-	name							=	"Hauertroll";
+	name							=	"rozchodnik";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -841,7 +841,7 @@ INSTANCE Hauertroll_XW_01	(Mst_Default_Troll)
 
 INSTANCE Hauertroll_XW_02	(Mst_Default_Troll)
 {
-	name							=	"Hauertroll";
+	name							=	"rozchodnik";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -872,7 +872,7 @@ INSTANCE Hauertroll_XW_02	(Mst_Default_Troll)
 
 INSTANCE Hauertroll_XW_03	(Mst_Default_Troll)
 {
-	name							=	"Hauertroll";
+	name							=	"rozchodnik";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30
@@ -903,7 +903,7 @@ INSTANCE Hauertroll_XW_03	(Mst_Default_Troll)
 
 INSTANCE Hauertroll_XW_04	(Mst_Default_Troll)
 {
-	name							=	"Hauertroll";
+	name							=	"rozchodnik";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	50; //30

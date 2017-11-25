@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Martin_Hi (C_INFO)
 	information	= Info_Mod_Martin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Martin_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Martin_Hi_Condition()
 
 FUNC VOID Info_Mod_Martin_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Martin_Hi_15_00"); //Wer bist du?
-	AI_Output(self, hero, "Info_Mod_Martin_Hi_07_01"); //Ich bin Martin, Proviantmeister der Miliz. Was kann ich für dich tun?
+	AI_Output(hero, self, "Info_Mod_Martin_Hi_15_00"); //Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Martin_Hi_07_01"); //Jestem Marcinem, burmistrzem milicji. Co moge dla Ciebie zrobic?
 };
 
 INSTANCE Info_Mod_Martin_Rasend (C_INFO)
@@ -40,26 +40,26 @@ FUNC INT Info_Mod_Martin_Rasend_Condition()
 
 FUNC VOID Info_Mod_Martin_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_00"); //Gut, dass du kommst ...
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_01"); //Bei Beliar ... was hat es denn hier für ein Massaker gegeben?
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_02"); //Ein übler Dämon ist dafür verantwortlich.
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_03"); //Was?! Ein einziger Dämon hat diese ganzen Paladine und Stadtbewohner getötet?
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_04"); //Wie genau ist das alles vor sich gegangen?
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_05"); //Nun, ich  werde dir erzählen, was ich bisher mitbekommen habe. Ich war nämlich gerade am Marktplatz etwas einkaufen.
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_06"); //Plötzlich hörte man unmenschliches Brüllen vom Hafen, vernahm, Schreie und Kampfgeräusche.
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_07"); //Ich lief los, um nachzusehen, aber ehe ich noch ankam, sah ich einen gigantischen Dämon in die Höhe steigen, über das Osttor fliegen und in der Ferne verschwinden.
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_08"); //Ja, das muss wirklich ein Ungetüm gewesen sein, so, wie es hier gewütet hat.
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_09"); //Gibt es schon irgendwelche Anhaltspunkte, was es damit auf sich hat, oder wohin der Dämon verschwunden ist?
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_10"); //Nein, noch gar nichts. Es ist ja wirklich noch nicht lange her, dass das alles geschehen ist ...
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_11"); //Ich habe aber jemanden davon sprechen hören, dass der Feuermagier Daron überaus beunruhigt schien und sich weg teleportierte ...
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_12"); //(zu sich selbst) Hmm, genau im Osten liegt ja das Kloster der Feuermagier.
-	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_13"); //Ok, danke für die Informationen. Ich mache mich dann auf den Weg, um vielleicht mehr über das alles zu Erfahren.
-	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_14"); //Ok, pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_00"); //Ciesze sie, ze przyszedles....
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_01"); //Z Beliarem.... Jaka byla tam masakra?
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_02"); //Przykry demon jest odpowiedzialny.
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_03"); //Co? Jeden demon zabil wszystkich paladynów i mieszkanców miast?
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_04"); //Jak dokladnie to wszystko sie stalo?
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_05"); //Cóz, opowiem ci to, co do tej pory slyszalem. Wlasnie kupowalem na targowisku.
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_06"); //Nagle uslyszelismy nieludzki ryk z portu, uslyszelismy krzyki i szumy.
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_07"); //Podbieglem go szukac, ale zanim przyjechalem zobaczylem wznoszacego sie gigantycznego demona, lecacego nad wschodnia brama i znikajacego w oddali.
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_08"); //Tak, to musialo byc naprawde potwór, sposób, w jaki tu szaleje.
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_09"); //Czy sa jakies wskazówki, o co to wszystko chodzi, czy gdzie demon zniknal?
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_10"); //Nie, na razie nic. Nie tak dawno temu to wszystko sie wydarzylo....
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_11"); //Ale slyszalem, jak ktos powiedzial, ze magik ognia Daron wydawal sie bardzo zmartwiony i teleportowany......
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_12"); //(do samego siebie) Hmm, klasztor magów ognia znajduje sie na wschodzie.
+	AI_Output(hero, self, "Info_Mod_Martin_Rasend_15_13"); //Okay, dziekuje za informacje. Bede wtedy ruszyl, aby dowiedziec sie wiecej o tym wszystkim.
+	AI_Output(self, hero, "Info_Mod_Martin_Rasend_07_14"); //Dobrze, zadbaj o siebie.
 
 	Log_CreateTopic	(TOPIC_MOD_ADANOS_RASEND, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ADANOS_RASEND, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Beim Hafen der Stadt ist etwas Schreckliches vorgefallen.");
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Ich erfuhr von Martin, dass ein riesiger Dämon die ganzen Paladine am Hafen abgeschlachtet hat und danach nach Osten hin verschwand. Der Feuermagier Daron teleportierte sich anschließend sehr beunruhigt weg.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Cos strasznego wydarzylo sie w porcie miejskim.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Dowiedzialem sie od Martina, ze wielki demon zabil cala paladyne w porcie, a nastepnie zniknal na wschód. Czarodziej pozarny Daron bardzo sie wówczas martwil.");
 
 	B_StartOtherRoutine	(Mod_523_KDF_Daron_NW, "LIFEKLOSTER");
 
@@ -75,7 +75,7 @@ INSTANCE Info_Mod_Martin_Flugblaetter (C_INFO)
 	information	= Info_Mod_Martin_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Martin_Flugblaetter_Condition()
@@ -92,15 +92,15 @@ FUNC INT Info_Mod_Martin_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Martin_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Martin_Flugblaetter_15_00"); //Ich hab hier ein Flugblatt für dich.
+	AI_Output(hero, self, "Info_Mod_Martin_Flugblaetter_15_00"); //Mam dla Ciebie ulotke.
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Martin_Flugblaetter_07_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Martin_Flugblaetter_07_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Martin_Flugblaetter_07_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Martin_Flugblaetter_07_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

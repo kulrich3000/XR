@@ -1,7 +1,7 @@
 instance Mod_1410_BAU_Bobo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bobo";
+	name 		= "kokarda";
 	guild 		= GIL_out;
 	id 			= 1410;
 	voice 		= 13;

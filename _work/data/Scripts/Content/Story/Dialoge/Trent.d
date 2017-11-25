@@ -15,17 +15,17 @@ FUNC INT Info_Mod_Trent_Hi_Condition()
 
 FUNC VOID Info_Mod_Trent_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_00"); //Ah, sehr gut, ein helfendes Schwert kommt mir gerade gelegen.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_01"); //Mein Name ist Trent, Ritter des großen Königs Rhobar und selbst gekürter Abenteuer. Auf zweiteres kann man wenigstens Stolz sein.
-	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_02"); //Klingt so, als wärest du nicht unbedingt ein Ritter aus Leidenschaft.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_03"); //Tja, da hast du wohl Recht. Sonderlich viel Leidenschaft hat wohl keiner, wenn er den ganzen Tag Tore bewachen darf oder beim Krieg in die erste Reihe gestellt wird.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_04"); //Allein die Tatsache, dass im Hafen eine ganze Armee Paladine nichts tut, während die Bauern auf ihren Höfen von Feldräubern zerrissen werden, zeigt doch, dass hier was nicht passt.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_05"); //Nein, noch einen Ritter, der dort unnötig rumsteht, braucht diese Insel wirklich nicht.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_06"); //Meine Leidenschaft gehört dem Erkunden neuer Länder.
-	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_07"); //Irgendwie geht es mir ziehlich ähnlich.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_08"); //Wenn du willst, kannst du mir helfen dem Schattenläufer dort vorne den garaus zu machen.
-	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_09"); //Klar, warum nicht.
-	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_10"); //Wunderbar!
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_00"); //Ach, bardzo dobry, pomocny miecz jest dla mnie wygodny.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_01"); //Nazywam sie Trent, rycerz wielkiego króla Rhobara i samozwancza przygoda. Z tego ostatniego mozna byc przynajmniej dumnym.
+	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_02"); //Brzmi to tak, jakbys nie byl rycerzem pasji.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_03"); //Cóz, chyba masz racje. Nikt nie ma szczególnej pasji, jesli pozwala sie mu pilnowac bram przez caly dzien lub jesli podczas wojny jest w pierwszym rzedzie.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_04"); //Sam fakt, ze cala armia paladynów nie robi nic w porcie, podczas gdy rolnicy na ich farmach sa rozdarci przez polowych rabusiów, pokazuje, ze cos nie pasuje do nich.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_05"); //Nie, nie ma potrzeby, aby wokól wyspy stal kolejny rycerz.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_06"); //Moja pasja jest eksploracja nowych krajów.
+	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_07"); //Jakos mi sie to podoba.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_08"); //Jesli chcesz, mozesz pomóc mi wydobyc tamten cien.
+	AI_Output(hero, self, "Info_Mod_Trent_Hi_15_09"); //Jasne, dlaczego nie.
+	AI_Output(self, hero, "Info_Mod_Trent_Hi_06_10"); //Wspaniale!
 
 	self.aivar[AIV_Partymember] = TRUE;
 
@@ -55,19 +55,19 @@ FUNC INT Info_Mod_Trent_Shadowbeast_Condition()
 
 FUNC VOID Info_Mod_Trent_Shadowbeast_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_00"); //So, das wär's ... nur aus Neugier: was hast du eigentlich hier gesucht?
-	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_01"); //Ich sollte dich von Kommandant Andre aufsuchen. Du sollst mir bei einem kleinen Problem in einer Mine helfen.
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_02"); //Was ist denn mit der Mine?
-	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_03"); //Wir haben ein kleines Problem mit den Monstern dort und zu wenig Männer.
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_04"); //In Ordnung, du hast mir geholfen, dann helf ich auch dir. Was für eine Mine ist es denn?
-	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_05"); //Die am Eingang zum Minental. Weißt du überhaupt, wo das ist?
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_06"); //Natürlich, ich kenne die Insel wie meine Westentasche.
-	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_07"); //Ich dachte, du warst noch nie hier?
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_08"); //Die Überfahrten zwischen den Inseln sind teilweise so langweilig, da studiere ich meistens die Karten der Inseln.
-	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_09"); //Na dann, Kommandant Andre wollte dich allerdings vorher noch sehen. Er wollte ... (wird unterbrochen)
-	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_10"); //Das kann warten. Diese Kommandanten reden meistens sowieso nur um den heißen Brei rum. Wir sehen uns dann in der Mine.
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_00"); //No cóz, to wlasnie..... tylko z ciekawosci: co Pan tutaj robil?
+	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_01"); //Powinienem cie zobaczyc od komendanta Andre' a. Chce, aby pomógl mi pan w rozwiazaniu problemu w kopalni.
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_02"); //A co z kopalnia?
+	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_03"); //Mamy tam maly problem z potworami i nie mamy wystarczajacej liczby mezczyzn.
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_04"); //Dobrze, pomógles mi, a ja tez ci pomoze. Jaki to jest mój rodzaj?
+	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_05"); //Ten przy wejsciu do Minentala. Czy wiesz nawet, gdzie tak jest?
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_06"); //Oczywiscie, znam te wyspe jak tylna czesc mojej reki.
+	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_07"); //Myslalem, ze nigdy wczesniej nie byles tutaj.
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_08"); //Czasami przeprawy miedzy wyspami sa takie nudne, poniewaz studiuje glównie mapy tych wysp.
+	AI_Output(hero, self, "Info_Mod_Trent_Shadowbeast_15_09"); //No cóz, komendant Andre chcial cie najpierw zobaczyc. Chcial.... (zaklócone)
+	AI_Output(self, hero, "Info_Mod_Trent_Shadowbeast_06_10"); //To moze czekac. Dowódcy ci i tak zwykle rozmawiaja wokól krzaka. Zobacze cie w kopalni.
 
-	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent ist vorausgeeilt und wird in der Mine auf mich warten.");
+	B_LogEntry	(TOPIC_MOD_KG_STEINMONSTER, "Trent pospieszyl i czeka na mnie w kopalni.");
 
 	self.aivar[AIV_Partymember] = FALSE;
 

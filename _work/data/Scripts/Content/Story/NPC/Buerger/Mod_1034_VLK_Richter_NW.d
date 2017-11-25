@@ -1,7 +1,7 @@
 instance Mod_1034_VLK_Richter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Richter";
+	name 		= "jurorzy";
 	guild 		= GIL_PAL;
 	id 			= 1034;
 	voice 		= 10;

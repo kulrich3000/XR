@@ -1,7 +1,7 @@
 INSTANCE Mod_521_NONE_Erol_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Erol";
+	name 		= "erol";
 	guild 		= GIL_OUT;
 	id 			= 521;
 	voice 		= 10;

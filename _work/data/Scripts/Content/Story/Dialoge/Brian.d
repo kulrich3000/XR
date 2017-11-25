@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Brian_Hi (C_INFO)
 	information	= Info_Mod_Brian_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Harads Lehrling, nehme ich an?";
+	description	= "Praktyka Harada, przypuszczam, ze to uczen?";
 };
 
 FUNC INT Info_Mod_Brian_Hi_Condition()
@@ -16,14 +16,14 @@ FUNC INT Info_Mod_Brian_Hi_Condition()
 
 FUNC VOID Info_Mod_Brian_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_00"); //Harads Lehrling, nehme ich an?
-	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_01"); //(wütend) Gerade eben noch, ja!
-	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_02"); //Gerade eben noch?
-	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_03"); //Sollte noch die geringste Kleinigkeit vorfallen, bin ich die längste Zeit sein Lehrling gewesen. Dann kann er mich mal.
-	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_04"); //Wieso bist du so erbost?
-	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_05"); //Weil Harad ein komplettes Arschloch ist, jawohl.
-	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_06"); //Heult mich den ganzen Tag mit seinen Wehwehchen voll und kritisiert im gleichen Atemzug alles, was ich mache.
-	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_07"); //Dem Egoisten kann man einfach nichts recht machen!
+	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_00"); //Praktyka Harada, przypuszczam, ze to uczen?
+	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_01"); //Jeszcze przed chwila, tak!
+	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_02"); //Jeszcze przed chwila?
+	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_03"); //Jesli najmniejszy szczegól, to juz od dluzszego czasu jestem jego praktykantem. Przykrec mu wiec.
+	AI_Output(hero, self, "Info_Mod_Brian_Hi_15_04"); //Dlaczego jestes tak zly?
+	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_05"); //Poniewaz Harad Harad jest kompletny, tak.
+	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_06"); //Placzac przez caly dzien bólem i bólami, krytykuje wszystko, co robie w tym samym oddechu.
+	AI_Output(self, hero, "Info_Mod_Brian_Hi_27_07"); //Nie mozesz zadowolic egoisty!
 };
 
 INSTANCE Info_Mod_Brian_HaradLehrling (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Brian_HaradLehrling (C_INFO)
 	information	= Info_Mod_Brian_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich würde gern Schmiedelehrling werden.";
+	description	= "Chcialbym byc kowalem praktykantem.";
 };
 
 FUNC INT Info_Mod_Brian_HaradLehrling_Condition()
@@ -48,37 +48,37 @@ FUNC INT Info_Mod_Brian_HaradLehrling_Condition()
 
 FUNC VOID Info_Mod_Brian_HaradLehrling_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_15_00"); //Ich würde gern Schmiedelehrling werden.
-	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_15_01"); //Aber Harad meint, dass er nur einen Lehrling gleichzeitig unterrichten will.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_02"); //Ha! Da kenne ich doch eine ganz einfache Lösung!
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_03"); //Lieber werde ich Fischer, als dass ich mich hier noch länger ausnutzen lasse.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_04"); //Also - werd ruhig sein Lehrling. Ich wünsche dir viel Erfolg und dass du ihm von mir ein paar aufs Maul gibst.
+	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_15_00"); //Chcialbym byc kowalem praktykantem.
+	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_15_01"); //Ale Harad mówi, ze chce uczyc tylko jednego ucznia na raz.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_02"); //Ha! Znam bardzo proste rozwiazanie!
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_03"); //Wolalbym raczej stac sie rybakiem niz pozwalac sie dluzej eksploatowac.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_27_04"); //Badzcie uczniami. Zycze Wam wszelkich sukcesów i mam nadzieje, ze dasz mu kilka z nich na szczece.
 
 	Mod_Brian_KeinLehrling_Day = Wld_GetDay();
 
 	Info_ClearChoices	(Info_Mod_Brian_HaradLehrling);
 
-	Info_AddChoice	(Info_Mod_Brian_HaradLehrling, "Willst du es dir nicht noch mal überlegen?", Info_Mod_Brian_HaradLehrling_B);
-	Info_AddChoice	(Info_Mod_Brian_HaradLehrling, "Äh... danke.", Info_Mod_Brian_HaradLehrling_A);
+	Info_AddChoice	(Info_Mod_Brian_HaradLehrling, "Nie chcesz ponownie sie zastanawiac?", Info_Mod_Brian_HaradLehrling_B);
+	Info_AddChoice	(Info_Mod_Brian_HaradLehrling, "Uh.... dziekuje.", Info_Mod_Brian_HaradLehrling_A);
 };
 
 FUNC VOID Info_Mod_Brian_HaradLehrling_B()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_B_15_00"); //Willst du es dir nicht noch mal überlegen?
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_01"); //Da gibt es nichts mehr zu überdenken. Jeden Tag habe ich mir gewünscht, eine andere Lehre begonnen zu haben.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_02"); //Und dazu gibst du mir jetzt die Möglichkeit. Das lasse ich nicht einfach verstreichen.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_03"); //Noch heute Abend bin ich ein freier Mann!
+	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_B_15_00"); //Nie chcesz ponownie sie zastanawiac?
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_01"); //Nie ma juz o czym myslec. Kazdego dnia zyczylam sobie, ze rozpoczalam inna nauke.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_02"); //A teraz dajesz mi szanse. Nie przepuszczam tego.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_B_27_03"); //Dzis wieczorem jestem wolnym czlowiekiem!
 
 	Info_ClearChoices	(Info_Mod_Brian_HaradLehrling);
 };
 
 FUNC VOID Info_Mod_Brian_HaradLehrling_A()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_A_15_00"); //Äh... danke.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_01"); //Du musst mir nicht danken.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_02"); //Wenn ich dir wirklich helfen wollte, würde ich dich mit Händen und Füßen davon abhalten, Harads Lehrling zu werden.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_03"); //Aber mir ist es ziemlich egal. Entweder bist du leidensfähig, setzt dich gegen ihn durch oder hörst nach kurzer Zeit entnervt auf.
-	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_04"); //Ich werde jetzt sofort kündigen.
+	AI_Output(hero, self, "Info_Mod_Brian_HaradLehrling_A_15_00"); //Uh.... dziekuje.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_01"); //Nie musisz mi dziekowac.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_02"); //Gdybym naprawde chcial Ci pomóc, powstrzymywalbym Cie przed zostaniem uczniem Harada z moimi rekami i stopami.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_03"); //Ale nie obchodzi mnie tak naprawde. Albo jestes w stanie cierpiec, mozesz usiasc przeciwko niemu lub po krótkim czasie posluchac go bez nerwów.
+	AI_Output(self, hero, "Info_Mod_Brian_HaradLehrling_A_27_04"); //Teraz koncze gonna.
 
 	Info_ClearChoices	(Info_Mod_Brian_HaradLehrling);
 };
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Brian_KeinLehrlingMehr01 (C_INFO)
 	information	= Info_Mod_Brian_KeinLehrlingMehr01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was macht die Arbeit?";
+	description	= "Jak dziala?";
 };
 
 FUNC INT Info_Mod_Brian_KeinLehrlingMehr01_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mod_Brian_KeinLehrlingMehr01_Condition()
 
 FUNC VOID Info_Mod_Brian_KeinLehrlingMehr01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_KeinLehrlingMehr01_15_00"); //Was macht die Arbeit?
-	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr01_27_01"); //Ich liebe die Ruhe beim Fischfang. Einfach zu warten und die Gedanken schweifen zu lassen ...
+	AI_Output(hero, self, "Info_Mod_Brian_KeinLehrlingMehr01_15_00"); //Jak dziala?
+	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr01_27_01"); //Uwielbiam spokój wedkarstwa. Latwosc konserwacji i pozwalanie, aby twoje mysli wedrowaly.....
 };
 
 INSTANCE Info_Mod_Brian_KeinLehrlingMehr02 (C_INFO)
@@ -116,7 +116,7 @@ INSTANCE Info_Mod_Brian_KeinLehrlingMehr02 (C_INFO)
 	information	= Info_Mod_Brian_KeinLehrlingMehr02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Handelst du noch?";
+	description	= "Ciagle handel?";
 };
 
 FUNC INT Info_Mod_Brian_KeinLehrlingMehr02_Condition()
@@ -129,9 +129,9 @@ FUNC INT Info_Mod_Brian_KeinLehrlingMehr02_Condition()
 
 FUNC VOID Info_Mod_Brian_KeinLehrlingMehr02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Brian_KeinLehrlingMehr02_15_00"); //Handelst du noch?
-	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr02_27_01"); //Da Harad mich nach unserem Gespräch rausgeworfen hat, habe ich noch einigen Krempel von früher bei mir.
-	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr02_27_02"); //Den kannst du mir gern abkaufen.
+	AI_Output(hero, self, "Info_Mod_Brian_KeinLehrlingMehr02_15_00"); //Ciagle handel?
+	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr02_27_01"); //Poniewaz Harad wykopal mnie po naszej rozmowie, wciaz mam przy sobie rzeczy z dawnych dni.
+	AI_Output(self, hero, "Info_Mod_Brian_KeinLehrlingMehr02_27_02"); //Zapraszamy do zakupu.
 };
 
 INSTANCE Info_Mod_Brian_Daemonisch (C_INFO)
@@ -154,11 +154,11 @@ FUNC INT Info_Mod_Brian_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Brian_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_00"); //(aufgeregt) Wie, was machst du hier? Du bist doch nicht einer von ihnen? Sei gewarnt, ich werde bis zum Tod kämpfen.
-	AI_Output(hero, self, "Info_Mod_Brian_Daemonisch_15_01"); //Beruhig dich erst einmal. Wovon sprichst du?
-	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_02"); //(etwas ruhiger) Du scheinst nicht zu ihnen zu gehören.
-	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_03"); //Die schwarzen Schatten ... du musst wissen, dass die Stadt ...
-	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_04"); //(mit verklingender Stimme) Rupert, er ... Hüte dich vor der Finsternis ...
+	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_00"); //Co ty tu robisz? Nie jestes jednym z nich, czy jestes? Badzcie ostrzegani, bede walczyc do smierci.
+	AI_Output(hero, self, "Info_Mod_Brian_Daemonisch_15_01"); //Spokój na razie. O czym Pan mówi?
+	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_02"); //Nie wydaje sie, zebys byl jednym z nich.
+	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_03"); //Czarne cienie.... musisz wiedziec, ze miasto....
+	AI_Output(self, hero, "Info_Mod_Brian_Daemonisch_27_04"); //Rupert,.... Uwazaj na ciemnosc....
 
 	AI_StopProcessInfos	(self);
 
@@ -195,7 +195,7 @@ FUNC VOID Info_Mod_Brian_Trade_Info()
 		Mod_Brian_Trader = TRUE;
 		
 		Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Brian kann mir etwas Schmiedezubehör verkaufen.");
+		B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Brian moze mi sprzedac pewne towary.");
 	};
 	
 	Backup_Questitems();

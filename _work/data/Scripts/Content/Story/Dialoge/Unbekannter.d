@@ -21,7 +21,7 @@ FUNC INT Info_Mod_Unbekannter_LetsFight_Condition()
 
 FUNC VOID Info_Mod_Unbekannter_LetsFight_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Unbekannter_LetsFight_05_00"); //Dich mach ich fertig.
+	AI_Output(self, hero, "Info_Mod_Unbekannter_LetsFight_05_00"); //Porusze sie.
 
 	AI_StopProcessInfos	(self);
 
@@ -55,7 +55,7 @@ FUNC INT Info_Mod_Unbekannter_LetsFight_2_Condition()
 
 FUNC VOID Info_Mod_Unbekannter_LetsFight_2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Unbekannter_LetsFight_2_05_00"); //Du schon wieder? Denkst du, du hast jetzt eine Chance?
+	AI_Output(self, hero, "Info_Mod_Unbekannter_LetsFight_2_05_00"); //Ponownie? Masz teraz szanse?
 
 	AI_StopProcessInfos	(self);
 

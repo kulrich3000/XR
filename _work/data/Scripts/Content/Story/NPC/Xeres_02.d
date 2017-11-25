@@ -1,7 +1,7 @@
 INSTANCE Xeres_02	(Npc_Default)
 {
 	//----- Monster ----
-	name							=	"Xeres";
+	name							=	"Xeze";
 	guild							=	GIL_DMT;
 	id			= 	1560;
 	level							=	10000;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Milten_IR_Hi (C_INFO)
 	information	= Info_Mod_Milten_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, was hältst du von der Sache bisher?";
+	description	= "A zatem, co sadzicie o tym do tej pory?";
 };
 
 FUNC INT Info_Mod_Milten_IR_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Milten_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Milten_IR_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Milten_IR_Hi_15_00"); //Und, was hältst du von der Sache bisher?
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_01"); //Nun, dieser finstere Ort macht dem Magier Xeres alle Ehre.
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_02"); //Innos erhellendes Feuer ist es, was diesem Ort schon lange gefehlt hat.
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_03"); //Sein Segen wird uns hoffentlich gute Dienste leisten, wenn es darum geht die dämonische Brut zu bannen, welche hier nistet.
-	AI_Output(hero, self, "Info_Mod_Milten_IR_Hi_15_04"); //Ohh, ganz ungewohnte Töne. Du sprichst wie ein Feuermagier aus ganzem Willen.
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_05"); //Nunja, es ist sicher die Kälte und sie Finsternis, die mich Innos umso näher bringt.
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_06"); //Hier merke ich, was ich an ihm habe.
+	AI_Output(hero, self, "Info_Mod_Milten_IR_Hi_15_00"); //A zatem, co sadzicie o tym do tej pory?
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_01"); //Cóz, to ciemne miejsce zawdziecza czarownikowi Xeresowi.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_02"); //To, czego od dawna brakuje w tym miejscu, to oswietlajacy ogien Inno.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_03"); //Miejmy nadzieje, ze jego blogoslawienstwo bedzie nam dobrze sluzylo, gdy przychodzi do wygnania demonicznego wylegu, który tu gniezdzi.
+	AI_Output(hero, self, "Info_Mod_Milten_IR_Hi_15_04"); //Oh, bardzo niezwykle dzwieki. Mówisz jak magik ognia wlasnej wolnej woli.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_05"); //No cóz, to z pewnoscia chlód i ciemnosc zbliza mnie do Inno.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hi_03_06"); //Tutaj dostrzegam, co w nim mam.
 };
 
 INSTANCE Info_Mod_Milten_IR_Hebel (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Milten_IR_Hebel (C_INFO)
 	information	= Info_Mod_Milten_IR_Hebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du den einen Hebel dort benutzen, während ich den anderen bewege?";
+	description	= "Czy mozesz uzyc jednej dzwigni, gdy poruszam druga?";
 };
 
 FUNC INT Info_Mod_Milten_IR_Hebel_Condition()
@@ -50,7 +50,7 @@ FUNC VOID Info_Mod_Milten_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Hebel_03_00"); //Natürlich. Wenn wir dadurch vielleicht weiterkommen ...
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Hebel_03_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -79,8 +79,8 @@ FUNC INT Info_Mod_Milten_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Milten_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Ambient01_03_00"); //Asche zu Asche, und Staub zu Staub. Innos Feuer führt die Gebeine dieser Untoten ihrer rechten Bestimmung zu.
-	AI_Output(hero, self, "Info_Mod_Milten_IR_Ambient01_15_01"); //Ja, das Feuer Innos leistet ganze Arbeit dabei, die vertrockneten Gebeine dieser Unholde in Asche zu verwandeln.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Ambient01_03_00"); //Popiól do popiolów i pyl do kurzu. Ogien Inno prowadzi kosci tych nieumarlych do ich wlasciwego przeznaczenia.
+	AI_Output(hero, self, "Info_Mod_Milten_IR_Ambient01_15_01"); //Tak, ogien Inno doklada wszelkich staran, aby suszone kosci tych pasjonatów zamienic w popioly.
 
 	AI_StopProcessInfos	(hero);
 };
@@ -93,7 +93,7 @@ INSTANCE Info_Mod_Milten_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Milten_IR_GehtLos_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Milten_IR_GehtLos_Condition()
@@ -112,7 +112,7 @@ FUNC VOID Info_Mod_Milten_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Milten_IR_GehtLos_03_00"); //Natürlich werde ich dich begleiten. Möge Innos Feuer den Unholden ordentlich einheizen.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_GehtLos_03_00"); //Oczywiscie pójde z wami. Niech ogien Inno podpalil pasjonatów.
 
 	Mod_IR_Dabei += 1;
 
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Milten_IR_GehBack (C_INFO)
 	information	= Info_Mod_Milten_IR_GehBack_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Geh wieder zurück zum Schiff.";
+	description	= "Wróc do statku.";
 };
 
 FUNC INT Info_Mod_Milten_IR_GehBack_Condition()
@@ -148,7 +148,7 @@ FUNC VOID Info_Mod_Milten_IR_GehBack_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHBACK");
 
-	AI_Output(self, hero, "Info_Mod_Milten_IR_GehBack_03_00"); //Gut, wenn du mich brauchst, weißt du ja, wo du mich findest.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_GehBack_03_00"); //Cóz, jesli mnie potrzebujesz, wiesz, gdzie mnie znalezc.
 
 	Mod_IR_Dabei -= 1;
 
@@ -167,7 +167,7 @@ INSTANCE Info_Mod_Milten_IR_Kram (C_INFO)
 	information	= Info_Mod_Milten_IR_Kram_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Milten_IR_Kram_Condition()
@@ -182,8 +182,8 @@ FUNC VOID Info_Mod_Milten_IR_Kram_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Kram_03_01"); //Ja, natürlich. Ich kann dich lehren deine magische Kraft zu steigern.
-	AI_Output(self, hero, "Info_Mod_Milten_IR_Kram_03_02"); //Außerdem habe ich noch einige Spruchrollen des Klosters bei mir, falls du mal einen Blick darauf werfen willst.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Kram_03_01"); //Tak, oczywiscie. Moge cie nauczyc, jak zwiekszyc swoja magiczna moc.
+	AI_Output(self, hero, "Info_Mod_Milten_IR_Kram_03_02"); //Mam tez kilka zaklec klasztoru, jesli chcesz je obejrzec.
 };
 
 INSTANCE Info_Mod_Milten_IR_Lernen (C_INFO)
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Milten_IR_Lernen (C_INFO)
 	information	= Info_Mod_Milten_IR_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Milten_IR_Lernen_Condition()
@@ -208,7 +208,7 @@ FUNC INT Info_Mod_Milten_IR_Lernen_Condition()
 
 FUNC VOID Info_Mod_Milten_IR_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Milten_IR_Lernen_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Milten_IR_Lernen_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Milten_IR_Lernen);
 
@@ -221,7 +221,7 @@ FUNC VOID Info_Mod_Milten_IR_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Milten_IR_Lernen_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Milten_IR_Lernen_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Milten_IR_Lernen);
 };
@@ -281,7 +281,7 @@ INSTANCE Info_Mod_Milten_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Milten_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Milten_IR_Heiltrank_Condition()
@@ -301,31 +301,31 @@ FUNC VOID Info_Mod_Milten_IR_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Milten_IR_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Milten_IR_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Elixier der Heilung", Info_Mod_Milten_IR_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Milten_IR_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Extrakt der Heilung", Info_Mod_Milten_IR_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Milten_IR_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Essenz der Heilung", Info_Mod_Milten_IR_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Istota uzdrawiania", Info_Mod_Milten_IR_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Trank der leichten Heilung", Info_Mod_Milten_IR_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Milten_IR_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Leichter Heiltrank", Info_Mod_Milten_IR_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Milten_IR_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Milten_IR_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Milten_IR_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Milten_IR_Heiltrank_Health_05);
 	};
 };
 

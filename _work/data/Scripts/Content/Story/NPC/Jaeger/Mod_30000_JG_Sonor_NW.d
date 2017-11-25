@@ -1,7 +1,7 @@
 instance Mod_30000_JG_Sonor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Sonor"; 
+	name 		= "sonor"; 
 	guild 		= GIL_OUT;
 	id 			= 30000;
 	voice 		= 6;

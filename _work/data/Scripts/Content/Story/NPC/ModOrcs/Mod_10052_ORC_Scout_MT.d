@@ -1,7 +1,7 @@
 INSTANCE Mod_10052_ORC_Scout_MT (Mst_Default_OrcWarrior)			
 {
 	//----- Monster -----
-	name							=	"Ork Späher";
+	name							=	"Harcerka ork";
 	guild							=	GIL_ORC;
 	id			= 	10052;
 	voice							=	18;

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_MinecrawlerWarrior(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Minecrawler Warrior";
+	name							=	"Minecrawler Warator";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLERWARRIOR;
 	level							=	18;
@@ -106,7 +106,7 @@ INSTANCE MinecrawlerWarrior	(Mst_Default_MinecrawlerWarrior)
 
 INSTANCE MinecrawlerWarrior_Undead	(Mst_Default_MinecrawlerWarrior)
 {
-	name = "stinkender Minecrawler";
+	name = "smierdzacy minekrawler";
 
 	B_SetVisuals_MinecrawlerWarriorUndead();
 	Npc_SetToFistMode(self);
@@ -114,7 +114,7 @@ INSTANCE MinecrawlerWarrior_Undead	(Mst_Default_MinecrawlerWarrior)
 
 INSTANCE SwampCrawler	(Mst_Default_MinecrawlerWarrior)
 {
-	name = "Sumpfcrawler";
+	name = "Marsh Bagienka";
 
 	level							=	26;
 	
@@ -144,7 +144,7 @@ INSTANCE SwampCrawler	(Mst_Default_MinecrawlerWarrior)
 
 instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)			
 {
-	name							=	"Tempel Minecrawler";
+	name							=	"Swiatynia Minekrawler";
 	level							=	25;
 
 	B_SetVisuals_OTMinecrawlerWarrior();
@@ -179,7 +179,7 @@ instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)
 
 instance RedCrab (Mst_Default_MinecrawlerWarrior)			
 {
-	name							=	"Rote Krabbe";
+	name							=	"krab czerwony";
 	level							=	1;
 
 	B_SetVisuals_RedCrab();

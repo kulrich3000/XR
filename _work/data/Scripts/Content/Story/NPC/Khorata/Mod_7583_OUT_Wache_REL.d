@@ -1,7 +1,7 @@
 instance Mod_7583_OUT_Wache_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wache"; 
+	name 		= "wartownik"; 
 	guild 		= GIL_OUT;
 	id 			= 7583;
 	voice 		= 6;

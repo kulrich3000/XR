@@ -2,7 +2,7 @@ instance Mod_1289_SLD_Bruce_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Bruce";
+	name =							"bruzda";
 	Npctype =						NPCTYPE_main;
 	guild =							GIL_mil;      
 	level =							11;

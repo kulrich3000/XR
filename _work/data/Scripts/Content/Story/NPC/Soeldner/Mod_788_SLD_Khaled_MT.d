@@ -1,7 +1,7 @@
 instance Mod_788_SLD_Khaled_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Khaled"; 
+	name 		= "kaledowany"; 
 	guild 		= GIL_MIL;
 	id 			= 788;
 	voice 		= 11;

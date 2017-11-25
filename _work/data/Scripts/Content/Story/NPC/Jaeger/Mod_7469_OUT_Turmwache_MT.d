@@ -1,7 +1,7 @@
 instance Mod_7469_OUT_Turmwache_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Turmwache";
+	name 		= "zegarek";
 	guild 		= GIL_OUT;
 	id 			= 7469;
 	voice 		= 32;

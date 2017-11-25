@@ -1,7 +1,7 @@
 instance Mod_786_BAU_Hodges_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hodges";
+	name 		= "hodowniki";
 	guild 		= GIL_NONE;
 	id 			= 786;
 	voice 		= 3;

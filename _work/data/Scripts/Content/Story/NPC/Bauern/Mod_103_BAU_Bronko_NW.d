@@ -1,7 +1,7 @@
 instance Mod_103_BAU_Bronko_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bronko";
+	name 		= "braz";
 	guild 		= GIL_NONE;
 	id 			= 103;
 	voice 		= 6;

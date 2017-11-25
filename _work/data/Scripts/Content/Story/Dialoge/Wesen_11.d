@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_11_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_11_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_11_Hi_18_00"); //Das Meer ist eigentlich nur ein groﬂer See und die Gesellschaft ... nur ein groﬂes Individuum.
+	AI_Output(self, hero, "Info_Mod_Wesen_11_Hi_18_00"); //W rzeczywistosci morze jest tylko duze jezioro i spoleczenstwo..... wielkiej jednostki.
 
 	AI_StopProcessInfos	(self);
 };

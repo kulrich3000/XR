@@ -1,7 +1,7 @@
 instance Mod_755_MIL_Wambo_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wambo";	
+	name 		= "dambo";	
 	guild 		= GIL_PAL;
 	id 			= 755;
 	voice 		= 3;

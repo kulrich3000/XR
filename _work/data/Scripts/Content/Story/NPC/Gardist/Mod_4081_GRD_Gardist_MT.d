@@ -1,7 +1,7 @@
 instance Mod_4081_GRD_Gardist_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gardist"; 
+	name 		= "gwardzista"; 
 	guild 		= GIL_NONE;
 	id 			= 4081;
 	voice 		= 1;

@@ -1,7 +1,7 @@
 instance Mod_7539_SLD_Hock_JG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hock"; 
+	name 		= "kucac"; 
 	guild 		= GIL_OUT;
 	id 			= 7539;
 	voice 		= 34;

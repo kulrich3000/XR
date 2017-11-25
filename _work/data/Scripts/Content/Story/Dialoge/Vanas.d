@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vanas_Hi (C_INFO)
 	information	= Info_Mod_Vanas_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich bringe dir Erz und Sumpfkraut von Engardo.";
+	description	= "Witam, przywiozlem cie z Engardo.";
 };
 
 FUNC INT Info_Mod_Vanas_Hi_Condition()
@@ -21,48 +21,48 @@ FUNC INT Info_Mod_Vanas_Hi_Condition()
 
 FUNC VOID Info_Mod_Vanas_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_00"); //Hallo, ich bringe dir Erz und Sumpfkraut von Engardo.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_00"); //Witam, przywiozlem cie z Engardo.
 
-	B_ShowGivenThings	("12 Erzbrocken und 12 Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("12 dodanych grudek rudy i 12 lodyg roslin bagiennych");
 
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 12);
 	Npc_RemoveInvItems	(hero, ItMi_Joint, 12);
 
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_01"); //Ahh, ausgezeichnet. Meinen Vorrat an magischer Energie habe ich kürzlich aufgebraucht. Das kommt mir sehr gelegen.
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_02"); //Hast du was für mich?
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_03"); //Ohh, ja, die Bezahlung.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_01"); //Ahh, doskonaly. Niedawno wyczerpalem swój zapas magicznej energii. To wygodne dla mnie.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_15_02"); //Dostales cos dla mnie?
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_03"); //Oh, tak, platnosc.
 
 	B_GiveInvItems	(self, hero, ItMi_VanasPaket, 1);
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_04"); //(etwas leiser) Ich habe gerade leider nicht alles dabei. Fünf Stück Käse, eine Eispfeilspruchrolle und sechs Bier fehlen im Packet.
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_05"); //Aber für jemanden, der in der Kunst Erz zu Schmieden begabt ist, habe ich vielleicht etwas Interessantes für dich.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_04"); //(nieco cichszy) Nie mam wszystkiego. W opakowaniu brakuje pieciu kawalków sera, rolki lodu i szesciu piwa.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_06_05"); //Ale dla kogos, kto jest utalentowany w sztuce kucia rudy, moge miec cos interesujacego dla Ciebie.
 
 	Info_ClearChoices	(Info_Mod_Vanas_Hi);
 
-	Info_AddChoice	(Info_Mod_Vanas_Hi, "Das weckt meine Neugierde. Worum geht’s?", Info_Mod_Vanas_Hi_B);
-	Info_AddChoice	(Info_Mod_Vanas_Hi, "Kein Interesse. Gib mir einen Teil des Erzes und des Sumpfkrauts zurück.", Info_Mod_Vanas_Hi_A);
+	Info_AddChoice	(Info_Mod_Vanas_Hi, "To budzi moja ciekawosc. Co o tym chodzi?", Info_Mod_Vanas_Hi_B);
+	Info_AddChoice	(Info_Mod_Vanas_Hi, "Brak zainteresowania. Oddaj mi czesc rudy i ziola bagiennego.", Info_Mod_Vanas_Hi_A);
 };
 
 FUNC VOID Info_Mod_Vanas_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_B_15_00"); //Das weckt meine Neugierde. Worum geht’s?
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_B_06_01"); //Mein Wasserkriegerkollege Everaldo hat einen Schmiedeplan der alten Kultur übersetzt. Geh zu ihm und sag ihm, dass du von mir kommst.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_B_15_00"); //To budzi moja ciekawosc. Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_B_06_01"); //Mój kolega Everaldo, wojownik wodny, przelozyl swój plan tworzenia starej kultury. Idz do niego i powiedz mu, ze przychodzisz od mnie.
 	
 	Info_ClearChoices	(Info_Mod_Vanas_Hi);
 
 	Mod_SLD_Engardo = 2;
 
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas hatte nicht alle Waren dabei. Dafür hat der Wasserkrieger Everaldo einen interessanten Schmiedebauplan für mich.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas nie posiadal wszystkich towarów. Wodny wojownik Everaldo ma dla mnie ciekawy plan.");
 };
 
 FUNC VOID Info_Mod_Vanas_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Vanas_Hi_A_15_00"); //Kein Interesse. Gib mir einen Teil des Erzes und des Sumpfkrauts zurück.
-	AI_Output(self, hero, "Info_Mod_Vanas_Hi_A_06_01"); //Schade. Da entgeht dir was. Hier hast du je vier Erz und Sumpfkraut zurück.
+	AI_Output(hero, self, "Info_Mod_Vanas_Hi_A_15_00"); //Brak zainteresowania. Oddaj mi czesc rudy i ziola bagiennego.
+	AI_Output(self, hero, "Info_Mod_Vanas_Hi_A_06_01"); //Zbyt zle. Brakuje Ci czegos. Tutaj masz cztery rudy rudy i po cztery bagna.
 
-	B_ShowGivenThings	("4 Erzbrocken und 4 Stängel Sumpfkraut erhalten");
+	B_ShowGivenThings	("4 bulki rudy i 4 lodygi chwastu zakonserwowanego chwastu");
 
 	CreateInvItems	(hero, ItMi_Nugget, 4);
 	CreateInvItems	(hero, ItMi_Joint, 4);
@@ -71,7 +71,7 @@ FUNC VOID Info_Mod_Vanas_Hi_A()
 
 	Mod_SLD_Engardo = 3;
 
-	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas hatte nicht alle Waren dabei. Ich habe einen Teil des Sumpfkrauts und des Erzes zurückgefordert und auch bekommen.");
+	B_LogEntry	(TOPIC_MOD_SLD_ENGARDO, "Vanas nie posiadal wszystkich towarów. Odzyskalem i otrzymalem czesc ziól bagiennych i rudy.");
 };
 
 INSTANCE Info_Mod_Vanas_Pickpocket (C_INFO)

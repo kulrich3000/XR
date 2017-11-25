@@ -1,7 +1,7 @@
 instance Mod_504_PAL_Parcival_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Parcival";
+	name 		= "paraliz";
 	guild 		= GIL_OUT;
 	id 			= 504;
 	voice 		= 13;

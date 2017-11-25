@@ -1,7 +1,7 @@
 INSTANCE Mod_9001_KDW_Cronos_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cronos";
+	name 		= "kronos";
 	guild 		= GIL_NOV;
 	id 			= 9001;
 	voice 		= 4; 

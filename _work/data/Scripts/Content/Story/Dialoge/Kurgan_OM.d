@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Kurgan_OM_Hi (C_INFO)
 	information	= Info_Mod_Kurgan_OM_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Kurgan_OM_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Kurgan_OM_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Kurgan_OM_Hi_01_01"); //Ich bin Kurgan, der Wächter der Mine.
+	AI_Output(self, hero, "Info_Mod_Kurgan_OM_Hi_01_01"); //Jestem Kurganem, straznikiem kopalni.
 };
 
 INSTANCE Info_Mod_Kurgan_OM_AlteMineQuest (C_INFO)
@@ -41,9 +41,9 @@ FUNC INT Info_Mod_Kurgan_OM_AlteMineQuest_Condition()
 
 FUNC VOID Info_Mod_Kurgan_OM_AlteMineQuest_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Kurgan_OM_AlteMineQuest_15_00"); //Gott sei Dank einer, der noch nicht den Verstand verloren hat.
-	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_01"); //(überrascht) Dir ist es gelungen, dich bis hierhin durchzuschlagen?
-	AI_Output(hero, self, "Info_Mod_Kurgan_OM_AlteMineQuest_15_02"); //Ja, es war nicht ganz leicht, aber nun bin ich hier. Was ist geschehen?
+	AI_Output(hero, self, "Info_Mod_Kurgan_OM_AlteMineQuest_15_00"); //Dziekuje Bogu komus, kto nie zgubil umyslu.
+	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_01"); //Udalo sie pan to zrobic tutaj?
+	AI_Output(hero, self, "Info_Mod_Kurgan_OM_AlteMineQuest_15_02"); //Tak, nie bylo latwo, ale tu jestem. Co sie stalo?
 
 	CreateInvItems	(self, Ritual_Krieger, 1);
 
@@ -51,8 +51,8 @@ FUNC VOID Info_Mod_Kurgan_OM_AlteMineQuest_Info()
 
 	AI_EquipArmor (self, Ritual_Krieger);
 
-	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_03"); //Das wirst du nicht mehr erfahren, einfälltiger Narr.
-	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_04"); //Dein Leichnam wird uns aber noch von wertvollem Nutzen sein, falls es dir ein Trost ist. (lacht)
+	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_03"); //Nie dowiesz sie, leniwy glupiec.
+	AI_Output(self, hero, "Info_Mod_Kurgan_OM_AlteMineQuest_01_04"); //Ale twoje zwloki beda dla nas nadal cenne, jesli to pocieszenie dla ciebie. (smiertelnicy)
 
 	AI_StopProcessInfos	(self);
 

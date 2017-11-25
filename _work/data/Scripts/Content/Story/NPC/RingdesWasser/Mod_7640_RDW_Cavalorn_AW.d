@@ -1,7 +1,7 @@
 instance Mod_7640_RDW_Cavalorn_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cavalorn";
+	name 		= "swobodny";
 	guild 		= GIL_NOV;
 	id 			= 7640;
 	voice 		= 36;

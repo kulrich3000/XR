@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HeroBot_Gelaber (C_INFO)
 	information	= Info_Mod_HeroBot_Gelaber_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist Kolam's Kampfroboter!";
+	description	= "Jestes robotem walki Kolama!";
 };
 
 FUNC INT Info_Mod_HeroBot_Gelaber_Condition()
@@ -19,13 +19,13 @@ FUNC INT Info_Mod_HeroBot_Gelaber_Condition()
 
 FUNC VOID Info_Mod_HeroBot_Gelaber_Info()
 {
-	AI_Output(hero, self, "Info_Mod_HeroBot_Gelaber_15_00"); //Du bist Kolams Kampfroboter!
-	AI_Output(self, hero, "Info_Mod_HeroBot_Gelaber_33_01"); //"Das Androhen von Gewalt gegenüber einem Individuum oder der Allgemeinheit als solche ist als Straftat anzusehen."
-	AI_Output(hero, self, "Info_Mod_HeroBot_Gelaber_15_02"); //Das beenden wir jetzt ein für alle Mal.
+	AI_Output(hero, self, "Info_Mod_HeroBot_Gelaber_15_00"); //Jestes robotem bitewnym Kolama!
+	AI_Output(self, hero, "Info_Mod_HeroBot_Gelaber_33_01"); //"Zagrozenie przemoca wobec jednostki lub ogólu spoleczenstwa jako takie jest przestepstwem karnym."
+	AI_Output(hero, self, "Info_Mod_HeroBot_Gelaber_15_02"); //Koniec tego raz na zawsze.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der verrückte Guru wurde von Kolams Roboter getötet. Jetzt werde ich ihn endgültig vernichten.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Szalony guru zostal zabity przez robota Kolama. Teraz bede go raz na zawsze miazdzyc.");
 };
 
 INSTANCE Info_Mod_HeroBot_Weg (C_INFO)
@@ -48,11 +48,11 @@ FUNC INT Info_Mod_HeroBot_Weg_Condition()
 
 FUNC VOID Info_Mod_HeroBot_Weg_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HeroBot_Weg_33_00"); //Auftrag erledigt. Suchvorgang iniziiert.
+	AI_Output(self, hero, "Info_Mod_HeroBot_Weg_33_00"); //Misja zostala zrealizowana. Rozpoczeto wyszukiwanie.
 	
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_PAL_RL, "Der Roboter ist verschwunden. Ich konnte ihn nicht mal ankratzen.");
+	B_LogEntry	(TOPIC_MOD_PAL_RL, "Robot zniknal. Nie moglem jej nawet dotknac.");
 
 	B_StartOtherRoutine	(self, "TOT");
 

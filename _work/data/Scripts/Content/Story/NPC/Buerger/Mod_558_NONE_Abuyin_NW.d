@@ -1,7 +1,7 @@
 INSTANCE MOD_558_NONE_Abuyin_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Abuyin"; 
+	name 		= "Abuyna"; 
 	guild 		= GIL_NONE;
 	id 			= 558;
 	voice 		= 31;

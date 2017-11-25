@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Minotaurus(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Minotaurus";
+	name							= "Minotaur";
 	guild							= GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= ID_Minotaurus;
 	level							= 150;
@@ -78,7 +78,7 @@ INSTANCE Minotaurus	(Mst_Default_Minotaurus)
 
 INSTANCE Minotaurus_Xeres	(Mst_Default_Minotaurus)
 {
-	name		= "Xeres";
+	name		= "Xeze";
 
 	attribute	[ATR_STRENGTH]		= 600;
 	attribute	[ATR_HITPOINTS_MAX]	= 2000;

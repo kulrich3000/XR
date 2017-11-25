@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Rosi_Hi_Condition()
 
 FUNC VOID Info_Mod_Rosi_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rosi_Hi_17_00"); //Hey, suchst du was zu essen?
+	AI_Output(self, hero, "Info_Mod_Rosi_Hi_17_00"); //Hej, szukasz czegos do jedzenia?
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_ONAR, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Rosi kann mir Lebensmittel verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_ONAR, "Rosi moze sprzedac mi niektóre artykuly spozywcze.");
 };
 
 INSTANCE Info_Mod_Rosi_Daemonisch (C_INFO)
@@ -41,14 +41,14 @@ FUNC INT Info_Mod_Rosi_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Rosi_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_00"); //Was führt dich denn hier her?
-	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch_15_01"); //Ich wollte mich nur umhören, ob es besondere Veränderungen, oder Ungewöhnliches in letzter Zeit gab.
-	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_02"); //Hmm, ja, wo du davon sprichst ... wie soll ich sagen ... irgendwie ist mein Sekob nicht mehr derselbe. Er hat sich verändert.
-	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch_15_03"); //Naja, wer hätte ihm das nicht gewünscht.
-	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_04"); //Nein, er ist ... es ist nicht mehr mein Sekob.
-	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_05"); //Seit dem er spät abends mit einem Knecht in den Wald ging, um sich davon ein Bild zu machen, wo die Knechte am besten Holz schlagen sollen, ist es nicht mehr mein Sekob ...
+	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_00"); //Co przynosi ci tutaj?
+	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch_15_01"); //Chcialem tylko zapytac, czy ostatnio nastapily jakies zmiany lub rzeczy niezwykle.
+	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_02"); //Hmm, tak, od kiedy o tym mówisz.... jak moge to ujac.... Jakos juz nie jest tak samo. Zmienil sie.
+	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch_15_03"); //Cóz, kto by mu tego nie zyczyl.
+	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_04"); //Nie, on jest --- To juz nie jest moje oddzielenie.
+	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch_17_05"); //Póznym wieczorem udal sie z sluga do lasu, aby uzyskac obraz tego, gdzie slugom najlepiej scinac drewno, to juz nie jest mój secob....
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Rosi hat große Veränderungen an ihrem Mann Sekob bemerkt, seitdem er im Wald war.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Rosi zauwazyla powazne zmiany w swoim mezu Sekobie od czasu jego pobytu w lesie.");
 
 	B_GivePlayerXP	(100);
 };
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Rosi_Daemonisch2 (C_INFO)
 	information	= Info_Mod_Rosi_Daemonisch2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie geht’s?";
+	description	= "Jak to robisz?";
 };
 
 FUNC INT Info_Mod_Rosi_Daemonisch2_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Mod_Rosi_Daemonisch2_Condition()
 
 FUNC VOID Info_Mod_Rosi_Daemonisch2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch2_15_00"); //Wie geht’s?
-	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch2_17_01"); //(erfreut) Ach, mein Sekob ist wieder ganz der alte.
+	AI_Output(hero, self, "Info_Mod_Rosi_Daemonisch2_15_00"); //Jak to robisz?
+	AI_Output(self, hero, "Info_Mod_Rosi_Daemonisch2_17_01"); //Och, moje odosobnienie znów jest takie samo.
 };
 
 INSTANCE Info_Mod_Rosi_Unheil (C_INFO)
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Rosi_Unheil (C_INFO)
 	information	= Info_Mod_Rosi_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sei gegrüßt. Gab es in letzter Zeit irgendwelche merkwürdigen Vorkommnisse?";
+	description	= "Powitania. Czy ostatnio mialy miejsce jakies dziwne wydarzenia?";
 };
 
 FUNC INT Info_Mod_Rosi_Unheil_Condition()
@@ -101,12 +101,12 @@ FUNC INT Info_Mod_Rosi_Unheil_Condition()
 
 FUNC VOID Info_Mod_Rosi_Unheil_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rosi_Unheil_15_00"); //Sei gegrüßt. Gab es in letzter Zeit irgendwelche merkwürdigen Vorkommnisse?
-	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_01"); //Na, du bist mir gut. Der ganze Friedhof vor unserem Bauernhof wimmelt nur so vor üblen Untoten.
-	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_02"); //Ach, als ob es nicht schon alles schlimm genug gewesen wäre dieses Jahr. Zuerst wochenlange Trockenheit, dann immer diese Hagelschauer.
-	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_03"); //Wie soll das nur weitergehen.
+	AI_Output(hero, self, "Info_Mod_Rosi_Unheil_15_00"); //Powitania. Czy ostatnio mialy miejsce jakies dziwne wydarzenia?
+	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_01"); //Cóz, jestes dla mnie dobry. Caly cmentarz przed naszym gospodarstwem tetni zyciem.
+	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_02"); //Ach, jak to nie wszystko bylo za zle w tym roku. Poczatkowo byl suszony przez tygodnie, potem gradobicie.
+	AI_Output(self, hero, "Info_Mod_Rosi_Unheil_17_03"); //Jak to sie dzieje?
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Rosi hat sich über ungünstige Wetterverhältnisse und Hagelschauer seit Beginn der Saison beklagt.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Rosi narzekal na niekorzystne warunki pogodowe i gradobicie od poczatku sezonu.");
 
 	Mod_HinweiseDerBauernZuHexen += 1;
 };
@@ -131,14 +131,14 @@ FUNC INT Info_Mod_Rosi_SagittaKraeuter_Condition()
 
 FUNC VOID Info_Mod_Rosi_SagittaKraeuter_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_00"); //Hier, ich habe das Paket für Sagitta schon gerichtet.
+	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_00"); //Tutaj juz naprawilem pakiet dla Sagitty.
 
 	B_GiveInvItems	(self, hero, ItMi_SekobSagitta, 1);
 
-	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_01"); //Und hab vielen Dank, dass du ihm seine Medizin gebracht hast.
-	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_02"); //Es war schier unerträglich mit ihm in den letzten Tagen.
+	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_01"); //I dziekuje ci tak bardzo za przyniesienie mu jego lekarstwa.
+	AI_Output(self, hero, "Info_Mod_Rosi_SagittaKraeuter_17_02"); //W ostatnich dniach bylo to dla niego niemal nie do zniesienia.
 
-	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "Ich habe Sekob die Medizin gebracht und das Paket für Sagitta bei mir.");
+	B_LogEntry	(TOPIC_MOD_SAGITTA_KRAEUTER, "Przynióslem Sekobowi lekarstwa i pakiet dla Sagitty.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -164,21 +164,21 @@ FUNC INT Info_Mod_Rosi_Kleinvieh_Condition()
 
 FUNC VOID Info_Mod_Rosi_Kleinvieh_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_00"); //Gut, dass du da bist. Ich könnte deine Hilfe bei einigem ekligen Ungetier brauchen.
-	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh_15_01"); //Was gilt es zu bezwingen? Orks, Trolle, Untote?
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_02"); //Ich habe mitbekommen, dass du auf Balthasars Schafe aufgepasst hast und sie gegen junge Wölfe verteidigt hast.
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_03"); //Daher bist du bestimmt auch dazu in der Lage unsere Scheune von den widerlichen fetten Ratten zu säubern, die sich dort ausgebreitet haben.
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_04"); //Ich trau mich dort gar nicht mehr hinein.
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_00"); //Ciesze sie, ze jestes tutaj. Móglbym uzyc waszej pomocy z odrazajaca bestia.
+	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh_15_01"); //Co mozna pokonac? Orki, trolly, nieumarle?
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_02"); //Slyszalem, jak patrzyliscie na owce Balthazara i broniliscie ich przed mlodymi wilkami.
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_03"); //Dlatego tez na pewno bedziesz w stanie oczyscic nasza stodole z obrzydliwych szczurów, które sie tam rozsypaly.
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_04"); //Nie odwazylem sie juz tam wejsc.
 
 	AI_TurnAway	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_05"); //(halblaut zu sich selbst) ... und ich müsste doch mal wieder an die Vorräte in der Truhe ...
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh_17_05"); //(pólbrzmiacy do siebie) a ja bym musial wrócic do zaopatrzenia w tulów....
 
 	AI_TurnToNpc	(self, hero);
 
 	Log_CreateTopic	(TOPIC_MOD_ROSI_KLEINVIEH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ROSI_KLEINVIEH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ROSI_KLEINVIEH, "Rosi beklagte, dass sich in der Scheune Ratten breit gemacht haben. Ich soll sie erledigen.");
+	B_LogEntry	(TOPIC_MOD_ROSI_KLEINVIEH, "Rosi narzekal, ze szczury rozprzestrzeniaja sie w stodole. Mam ja zabic.");
 
 	Wld_InsertNpc	(Giant_Rat_Rosi_01, "FP_ROAM_SEKOBSRATTE_02");
 
@@ -200,7 +200,7 @@ INSTANCE Info_Mod_Rosi_Kleinvieh2 (C_INFO)
 	information	= Info_Mod_Rosi_Kleinvieh2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Viecher sind platt.";
+	description	= "Istoty sa plaskie.";
 };
 
 FUNC INT Info_Mod_Rosi_Kleinvieh2_Condition()
@@ -220,12 +220,12 @@ FUNC INT Info_Mod_Rosi_Kleinvieh2_Condition()
 
 FUNC VOID Info_Mod_Rosi_Kleinvieh2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh2_15_00"); //Die Viecher sind platt.
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh2_17_01"); //Ich danke dir. Du bist wirklich mutig.
-	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh2_15_02"); //Hmpf ...
-	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh2_17_03"); //Hier hast du etwas Essen zur Stärkung und einige Goldstücke als Dankeschön.
+	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh2_15_00"); //Istoty sa plaskie.
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh2_17_01"); //Dziekuje, dziekuje. Jestes naprawde odwazny.
+	AI_Output(hero, self, "Info_Mod_Rosi_Kleinvieh2_15_02"); //Hmph.....
+	AI_Output(self, hero, "Info_Mod_Rosi_Kleinvieh2_17_03"); //Tutaj masz do jedzenia troche jedzenia i kilka zlotych kawalków dziekujemy.
 
-	B_ShowGivenThings	("30 Gold, Brot, Milch, Käse und gebratenes Fleisch erhalten");
+	B_ShowGivenThings	("30 Otrzymane zloto, chleb, mleko, sery i prazone mieso");
 
 	CreateInvItems	(hero, ItMi_Gold, 30);
 	CreateInvItems	(hero, ItFo_Bread, 1);

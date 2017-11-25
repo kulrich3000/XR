@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Aaron_Fake_DoorIn_Condition()
 
 FUNC VOID Info_Mod_Aaron_Fake_DoorIn_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Aaron_Fake_DoorIn_11_00"); //Los, treten wir der Hexenkönigin in den Hintern!
+	AI_Output(self, hero, "Info_Mod_Aaron_Fake_DoorIn_11_00"); //Chodzmy dalej, kopnijmy tylek czarownicy królowej!
 
 	AI_StopProcessInfos	(self);
 

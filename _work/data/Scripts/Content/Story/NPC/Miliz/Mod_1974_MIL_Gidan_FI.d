@@ -1,7 +1,7 @@
 instance Mod_1974_MIL_Gidan_FI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gidan";
+	name 		= "gidan";
 	guild 		= GIL_DMT;
 	id 			= 1974;
 	voice 		= 13;

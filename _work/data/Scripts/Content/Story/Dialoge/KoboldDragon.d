@@ -15,9 +15,9 @@ FUNC INT Info_Mod_KoboldDragon_Hi_Condition()
 
 FUNC VOID Info_Mod_KoboldDragon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Hi_20_00"); //Ahh, du bist es. Mein Meister erwartet dich bereits. Er weiß von deinen Taten und es wäre ihm eine Freude, dich zu sprechen.
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Hi_20_00"); //Ach, to ty. Mój pan juz oczekuje cie. On zna twoje czyny i z przyjemnoscia porozmawia z toba.
 
-	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Der Meister des Kobolds, vermutlich ein Drache, weiß von meinen Taten? Fragt sich nur von welchen ...");
+	B_LogEntry	(TOPIC_MOD_NL_DRACHEN, "Mistrz goblinów, prawdopodobnie smok, wie, co zrobilem? Po prostu zastanawiamy sie, który....");
 
 	AI_StopProcessInfos	(self);
 
@@ -44,24 +44,24 @@ FUNC INT Info_Mod_KoboldDragon_Stab_Condition()
 
 FUNC VOID Info_Mod_KoboldDragon_Stab_Info()
 {
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_00"); //Puhh, die ganzen Schätze wiegen gar nicht so wenig ...
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_01"); //Was?! Du hier, Mensch?! Was willst du?
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_00"); //Phew, wszystkie skarby nie waza tak malo....
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_01"); //Co? Ty tu, czlowiek! Czego chcesz?
 
 	Info_ClearChoices	(Info_Mod_KoboldDragon_Stab);
 
-	Info_AddChoice	(Info_Mod_KoboldDragon_Stab, "Einen goldenen Stab, den du vermutlich mitgenommen hast.", Info_Mod_KoboldDragon_Stab_B);
-	Info_AddChoice	(Info_Mod_KoboldDragon_Stab, "Dich töten.", Info_Mod_KoboldDragon_Stab_A);
+	Info_AddChoice	(Info_Mod_KoboldDragon_Stab, "Zloty kij, który prawdopodobnie zabrales ze soba.", Info_Mod_KoboldDragon_Stab_B);
+	Info_AddChoice	(Info_Mod_KoboldDragon_Stab, "Zabijaj cie.", Info_Mod_KoboldDragon_Stab_A);
 };
 
 FUNC VOID Info_Mod_KoboldDragon_Stab_B()
 {
-	AI_Output(hero, self, "Info_Mod_KoboldDragon_Stab_B_15_00"); //Einen goldenen Stab, den du vermutlich mitgenommen hast.
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_01"); //Goldenen Stab? Sollst du haben.
+	AI_Output(hero, self, "Info_Mod_KoboldDragon_Stab_B_15_00"); //Zloty kij, który prawdopodobnie zabrales ze soba.
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_01"); //Zlota kadra? Powinien pan to miec.
 
 	B_GiveInvItems	(self, hero, ItMw_PyrmansStab, 1);
 
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_02"); //So bin ich weniger beladen und weiß auf meiner Seite den vermeintlichen Diener meines einstigen Herrn.
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_03"); //Viel Glück noch, Mensch.
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_02"); //Wiec jestem mniej obciazony i znam po mojej stronie rzekomego sluge mojego bylego mistrza.
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_B_20_03"); //Zycze powodzenia, czlowiek.
 
 	B_GivePlayerXP	(200);
 
@@ -72,8 +72,8 @@ FUNC VOID Info_Mod_KoboldDragon_Stab_B()
 
 FUNC VOID Info_Mod_KoboldDragon_Stab_A()
 {
-	AI_Output(hero, self, "Info_Mod_KoboldDragon_Stab_A_15_00"); //Dich töten.
-	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_A_20_01"); //Garstiger Mensch ... aber wie du willst. Du hast dein Los selbst gewählt.
+	AI_Output(hero, self, "Info_Mod_KoboldDragon_Stab_A_15_00"); //Zabijaj cie.
+	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_A_20_01"); //Niesamowity czlowiek.... ale jak wam sie podoba. Wybrales swój wlasny bilet.
 
 	CreateInvItems	(self, ItMw_PyrmansStab, 1);
 	CreateInvItems	(self, ItMi_Gold, 1436);

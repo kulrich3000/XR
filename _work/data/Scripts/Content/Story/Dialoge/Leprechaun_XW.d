@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Leprechaun_XW_Hi_Condition()
 
 FUNC VOID Info_Mod_Leprechaun_XW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_Hi_20_00"); //Schon wieder ein Neuer! Ha, dich kennt Leprechaun doch!
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_Hi_20_00"); //Kolejny nowy! Leprechaun Cie wie!
 };
 
 INSTANCE Info_Mod_Leprechaun_XW_Antworten (C_INFO)
@@ -26,7 +26,7 @@ INSTANCE Info_Mod_Leprechaun_XW_Antworten (C_INFO)
 	information	= Info_Mod_Leprechaun_XW_Antworten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist mir ein paar Antworten schuldig.";
+	description	= "Zawdziecza mi pan kilka odpowiedzi.";
 };
 
 FUNC INT Info_Mod_Leprechaun_XW_Antworten_Condition()
@@ -39,8 +39,8 @@ FUNC INT Info_Mod_Leprechaun_XW_Antworten_Condition()
 
 FUNC VOID Info_Mod_Leprechaun_XW_Antworten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leprechaun_XW_Antworten_15_00"); //Du bist mir ein paar Antworten schuldig.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_Antworten_20_01"); //Er kann sich nicht erinnern, dir etwas zu schulden. Der Steinwächter sollte doch alles beglichen haben. (lacht meckernd)
+	AI_Output(hero, self, "Info_Mod_Leprechaun_XW_Antworten_15_00"); //Zawdziecza mi pan kilka odpowiedzi.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_Antworten_20_01"); //Nic nie pamieta dzieki Tobie. Za wszystko mial zaplacic straznik kamienia. (smiertelne jeki)
 };
 
 INSTANCE Info_Mod_Leprechaun_XW_TuerAuf (C_INFO)
@@ -51,7 +51,7 @@ INSTANCE Info_Mod_Leprechaun_XW_TuerAuf (C_INFO)
 	information	= Info_Mod_Leprechaun_XW_TuerAuf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du nicht die Tür aufmachen?";
+	description	= "Czy nie otwierasz drzwi?";
 };
 
 FUNC INT Info_Mod_Leprechaun_XW_TuerAuf_Condition()
@@ -64,10 +64,10 @@ FUNC INT Info_Mod_Leprechaun_XW_TuerAuf_Condition()
 
 FUNC VOID Info_Mod_Leprechaun_XW_TuerAuf_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Leprechaun_XW_TuerAuf_15_00"); //Willst du nicht die Tür aufmachen? Ich tu dir auch nichts.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_01"); //Ja, wieso eigentlich nicht? Er müsste ja nur den Schlüssel hervorholen, den er immer bei sich hat, ihn in das Schloss stecken und drei Mal umdrehen - stimmt's?
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_02"); //Keine schwierige Aufgabe also. Dazu wäre sogar er in der Lage.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_03"); //Aber weißt du was? So würde das doch gar keinen Spaß machen!
+	AI_Output(hero, self, "Info_Mod_Leprechaun_XW_TuerAuf_15_00"); //Czy nie otwierasz drzwi? Ja tez nie ranie cie.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_01"); //Tak, dlaczego bym nie byl? Wystarczy tylko wyjac klucz, który zawsze ma przy sobie, wlozyc go do zamka i przekrecic trzy razy - w prawo?
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_02"); //Nie jest to wiec trudne zadanie. Nawet on bylby w stanie to zrobic.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_TuerAuf_20_03"); //Ale wiesz co wiesz? Nie zabawa!
 };
 
 INSTANCE Info_Mod_Leprechaun_XW_EXIT (C_INFO)
@@ -88,8 +88,8 @@ FUNC INT Info_Mod_Leprechaun_XW_EXIT_Condition()
 
 FUNC VOID Info_Mod_Leprechaun_XW_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_EXIT_20_00"); //Jetzt gibt's noch lecker Happi-Happi und dann muss Leprechaun auch schon wieder gehen.
-	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_EXIT_20_01"); //Er wünscht euch einen gesegneten Appetit. Hähähä!
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_EXIT_20_00"); //Teraz jest smaczny Happi-Happi, a potem Leprechaun musi znów jechac.
+	AI_Output(self, hero, "Info_Mod_Leprechaun_XW_EXIT_20_01"); //Zyczylby ci blogoslawionego apetytu. Hu!
 
 	AI_StopProcessInfos	(self);
 

@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_1h_Bau_Mace (C_Item)
 {	
-	name 				=	"Schwerer Ast";  
+	name 				=	"Galazka ciezka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_1h_Bau_Mace (C_Item)
 
 INSTANCE ItMw_Matronenkeule (C_Item)
 {	
-	name 				=	"Oberschenkelknochen";  
+	name 				=	"feministka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -56,7 +56,7 @@ INSTANCE ItMw_Matronenkeule (C_Item)
 
 INSTANCE ItMw_1H_quantarie_Schwert_01 (C_Item)
 {	
-	name 				=	"Schwert";
+	name 				=	"brzeszczot";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -80,7 +80,7 @@ INSTANCE ItMw_1H_quantarie_Schwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_quantarie_Schwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Schwert (geschärft)";
+	name 				=	"Miecz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -107,7 +107,7 @@ INSTANCE ItMw_1H_quantarie_Schwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Eminem_AchillesSchwert_01 (C_Item)
 {
-	name 				=	"Edles Kurzschwert";
+	name 				=	"Wysokiej jakosci krótki miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -135,7 +135,7 @@ INSTANCE ItMw_1H_Eminem_AchillesSchwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_Eminem_AchillesSchwert_01_Geschaerft (C_Item)
 {
-	name 				=	"Edles Kurzschwert (geschärft)";
+	name 				=	"Szorstki, krótki miecz (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -166,7 +166,7 @@ INSTANCE ItMw_1H_Eminem_AchillesSchwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_Bastardschwert (C_Item)
 {
-	name 				=	"Bastardschwert";
+	name 				=	"miecz kanaliacki";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -194,7 +194,7 @@ INSTANCE ItMw_Bastardschwert (C_Item)
 };
 INSTANCE ItMw_Bastardschwert_Geschaerft (C_Item)
 {
-	name 				=	"Bastardschwert (geschärft)";
+	name 				=	"Miecz kastardowy (ostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -225,7 +225,7 @@ INSTANCE ItMw_Bastardschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_quantarie_Fantasyschwert_01 (C_Item)
 {	
-	name 				=	"Edles Schwert";
+	name 				=	"Szlachetny miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -252,7 +252,7 @@ INSTANCE ItMw_1H_quantarie_Fantasyschwert_01 (C_Item)
 };
 INSTANCE ItMw_1H_quantarie_Fantasyschwert_01_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Schwert (geschärft)";
+	name 				=	"Szlachetny miecz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -282,7 +282,7 @@ INSTANCE ItMw_1H_quantarie_Fantasyschwert_01_Geschaerft (C_Item)
 
 INSTANCE ItMw_SharpSchwert (C_Item)
 {	
-	name 				=	"Scharfes Schwert";
+	name 				=	"Ostry miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -309,7 +309,7 @@ INSTANCE ItMw_SharpSchwert (C_Item)
 };
 INSTANCE ItMw_SharpSchwert_Geschaerft (C_Item)
 {	
-	name 				=	"Scharfes Schwert (geschärft)";
+	name 				=	"Ostry miecz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -339,7 +339,7 @@ INSTANCE ItMw_SharpSchwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Langschwert (C_Item)
 {	
-	name 				=	"Langschwert";
+	name 				=	"dlugopisy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -366,7 +366,7 @@ INSTANCE ItMw_Langschwert (C_Item)
 };
 INSTANCE ItMw_Langschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Langschwert (geschärft)";
+	name 				=	"Dlugi miecz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -396,7 +396,7 @@ INSTANCE ItMw_Langschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Light (C_Item)
 {	
-	name 				=	"Edles Langschwert";
+	name 				=	"Dlugi, dlugi miecz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -423,7 +423,7 @@ INSTANCE ItMw_Light (C_Item)
 };
 INSTANCE ItMw_Light_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Langschwert (geschärft)";
+	name 				=	"Szorstki dlugi miecz (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

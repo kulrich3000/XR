@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Glenn_Nahrungsversorgung (C_INFO)
 	information	= Info_Mod_Glenn_Nahrungsversorgung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du siehst aus, als könntest du einen Job und ein ordentliches Bad vertragen.";
+	description	= "Wyglada na to, ze mozna skorzystac z pracy i dobrej kapieli.";
 };
 
 FUNC INT Info_Mod_Glenn_Nahrungsversorgung_Condition()
@@ -19,18 +19,18 @@ FUNC INT Info_Mod_Glenn_Nahrungsversorgung_Condition()
 
 FUNC VOID Info_Mod_Glenn_Nahrungsversorgung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_00"); //Du siehst aus, als könntest du einen Job und ein ordentliches Bad vertragen.
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_01"); //Was soll man machen, nicht mal im Hafen bekommt man noch einen Job als Koch.
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_02"); //Ich würde sogar für die Ratten kochen, wenn ich dafür Gold sehen würde.
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_03"); //Ich bräuchte einen Koch. Was sagst du, wenn ich dir 150 Gold im voraus geben würde?
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_04"); //Das hört sich gut an, allerdings bräuchte ich dafür dann noch einen Kochlöffel.
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_05"); //Allerdings nicht so einen billigen, wie die, die auf dem Markt verkauft werden. Ich koche nur mit meinem.
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_06"); //Und wo soll der sein?
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_07"); //Ich vermute mal, dass er mir beim Kampf mit ein paar Feldräubern verloren gegangen ist.
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_08"); //Das war in nördlicher Richtung auf dem Berg direkt vor dem Stadttor.
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_09"); //Na, wenn du den unbedingt brauchst, werde ich ihn schon für dich finden.
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_00"); //Wyglada na to, ze mozna skorzystac z pracy i dobrej kapieli.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_01"); //Co robic, nawet w porcie nie ma pracy jako kucharz.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_02"); //Gdybym nawet ugotowal dla szczurów, gdybym widzial zloto na to.
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_03"); //Móglbym uzyc kucharza. Co powiedzielibyscie, gdybym dal wam 150 zlota z góry?
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_04"); //To brzmi dobrze, ale potrzebowalbym do tego lyzki.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_05"); //Jednak nie sa one tak tanie jak te, które sa sprzedawane na rynku. Tylko gotowanie z moja kopalnia.
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_06"); //I gdzie by to bylo?
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_07"); //Zdaje mi sie, ze zgubil sie w walce z jakimis polnymi grabiezcami.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung_06_08"); //Bylo to na pólnoc od góry bezposrednio przed brama miejska.
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung_15_09"); //Cóz, jesli naprawde tego potrzebujesz, znajde ja dla Ciebie.
 
-	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Glenn würde als Koch mitkommen, will dafür allerdings seinen eigenen Kochlöffel. Den hat er wohl auf dem Berg nördlich vom Osttor verloren.");
+	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Glenn przychodzil jako kucharz, ale chce wlasnej lyzki. Zgubil go na górze na pólnoc od wschodniej bramy.");
 
 	Wld_InsertItem	(ItMi_Scoop_Glenn, "FP_ITEM_KOCHLOEFFEL_GLENN");
 
@@ -48,7 +48,7 @@ INSTANCE Info_Mod_Glenn_Nahrungsversorgung2 (C_INFO)
 	information	= Info_Mod_Glenn_Nahrungsversorgung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deinen Kochlöffel und 150 Goldmünzen.";
+	description	= "Oto lyzka do gotowania i 150 zlotych monet.";
 };
 
 FUNC INT Info_Mod_Glenn_Nahrungsversorgung2_Condition()
@@ -63,18 +63,18 @@ FUNC INT Info_Mod_Glenn_Nahrungsversorgung2_Condition()
 
 FUNC VOID Info_Mod_Glenn_Nahrungsversorgung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung2_15_00"); //Hier hast du deinen Kochlöffel und 150 Goldmünzen. Arbeitest du jetzt für mich?
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung2_15_00"); //Oto lyzka do gotowania i 150 zlotych monet. Pracujesz dla mnie teraz?
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 150);
 	Npc_RemoveInvItems	(hero, ItMi_Scoop_Glenn, 1);
 
-	B_ShowGivenThings	("150 Gold und Glenns Kochlöffel gegeben");
+	B_ShowGivenThings	("150 Dodane lyzki do gotowania zlote i plenne");
 
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung2_06_01"); //Natürlich, wo soll ich für dich Kochen?
-	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung2_15_02"); //Geh ins Minental und warte vor dem Eingang der verlassenen Mine auf mich.
-	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung2_06_03"); //Ok, dann mach ich mich mal auf den Weg.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung2_06_01"); //Gdzie oczywiscie powinienem gotowac dla Ciebie?
+	AI_Output(hero, self, "Info_Mod_Glenn_Nahrungsversorgung2_15_02"); //Idzcie do Minentala i poczekajcie na mnie przy wejsciu do opuszczonej kopalni.
+	AI_Output(self, hero, "Info_Mod_Glenn_Nahrungsversorgung2_06_03"); //Dobrze, bede na drodze.
 
-	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Glenn macht sich auf den Weg zur verlassenen Mine.");
+	B_LogEntry	(TOPIC_MOD_KG_NAHRUNGSVERSORGUNG, "Glenn zmierza w kierunku opuszczonej kopalni.");
 
 	B_StartOtherRoutine	(self, "TOT");
 };

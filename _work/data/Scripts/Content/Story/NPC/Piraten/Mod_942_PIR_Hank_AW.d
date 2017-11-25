@@ -1,7 +1,7 @@
 INSTANCE Mod_942_PIR_Hank_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hank";
+	name 		= "motek";
 	guild 		= GIL_NONE;
 	id 			= 942;
 	voice 		= 6;

@@ -2,7 +2,7 @@ instance Mod_1430_BUD_Gravo_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Gravo";
+	name =							"gravo";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							4;

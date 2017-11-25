@@ -1,7 +1,7 @@
 instance Mod_969_MIL_Den_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Den"; 
+	name 		= "The"; 
 	guild 		= GIL_PAL;
 	id 			= 969;
 	voice 		= 5;

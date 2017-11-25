@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Maysara_Hi (C_INFO)
 	information	= Info_Mod_Maysara_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo. Wo kann man hier was Einkaufen?";
+	description	= "Witaj. Gdzie moge cos tutaj kupic?";
 };
 
 FUNC INT Info_Mod_Maysara_Hi_Condition()
@@ -16,10 +16,10 @@ FUNC INT Info_Mod_Maysara_Hi_Condition()
 
 FUNC VOID Info_Mod_Maysara_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maysara_Hi_15_00"); //Hallo. Wo kann man hier was Einkaufen?
-	AI_Output(self, hero, "Info_Mod_Maysara_Hi_06_01"); //Bei mir natürlich. Nur beste Waffen. Und trainieren könnte ich dich auch.
-	AI_Output(hero, self, "Info_Mod_Maysara_Hi_15_02"); //Training wäre gut.
-	AI_Output(self, hero, "Info_Mod_Maysara_Hi_06_03"); //Was willst Du üben?
+	AI_Output(hero, self, "Info_Mod_Maysara_Hi_15_00"); //Witaj. Gdzie moge cos tutaj kupic?
+	AI_Output(self, hero, "Info_Mod_Maysara_Hi_06_01"); //Oczywiscie ze mna. Tylko najlepsza bron. Moglabym tez cie szkolic.
+	AI_Output(hero, self, "Info_Mod_Maysara_Hi_15_02"); //Szkolenia bylyby dobre.
+	AI_Output(self, hero, "Info_Mod_Maysara_Hi_06_03"); //Co chcesz praktykowac?
 };
 
 INSTANCE Info_Mod_Maysara_Lernen (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Maysara_Lernen (C_INFO)
 	information	= Info_Mod_Maysara_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Maysara_Lernen_Condition()
@@ -44,7 +44,7 @@ FUNC INT Info_Mod_Maysara_Lernen_Condition()
 
 FUNC VOID Info_Mod_Maysara_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Maysara_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Maysara_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Maysara_Lernen);
 

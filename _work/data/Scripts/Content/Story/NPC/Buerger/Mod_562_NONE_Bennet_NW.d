@@ -1,7 +1,7 @@
 INSTANCE Mod_562_NONE_Bennet_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bennet";
+	name 		= "bennet";
 	guild 		= GIL_NONE;
 	id 			= 562;
 	voice 		= 30;

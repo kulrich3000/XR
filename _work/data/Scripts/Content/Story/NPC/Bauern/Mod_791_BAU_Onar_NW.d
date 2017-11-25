@@ -1,7 +1,7 @@
 instance Mod_791_BAU_Onar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Onar";
+	name 		= "stawik";
 	guild 		= GIL_NONE;
 	id 			= 791;
 	voice 		= 32;

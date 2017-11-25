@@ -1,7 +1,7 @@
 INSTANCE Mod_7694_BDT_Bandit_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Landstreicher";
+	name 		= "wlóczega";
 	guild 		= GIL_out;
 	id 			= 7694;
 	voice 		= 03;

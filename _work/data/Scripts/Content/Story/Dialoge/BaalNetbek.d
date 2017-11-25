@@ -6,7 +6,7 @@ INSTANCE Info_Mod_BaalNetbek_Hi (C_INFO)
 	information	= Info_Mod_BaalNetbek_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, ich glaube nicht, dass du derjenige bist, mit dem ich sprechen will.";
+	description	= "Uh, nie sadze, zebys byl tym, z kim chce porozmawiac.";
 };
 
 FUNC INT Info_Mod_BaalNetbek_Hi_Condition()
@@ -36,7 +36,7 @@ INSTANCE Info_Mod_BaalNetbek_Kristall (C_INFO)
 	information	= Info_Mod_BaalNetbek_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, bist du zufällig ein göttlicher Bote?";
+	description	= "Ach, czy przez przypadek jestes boskim poslannikiem?";
 };
 
 FUNC INT Info_Mod_BaalNetbek_Kristall_Condition()
@@ -52,8 +52,8 @@ FUNC VOID Info_Mod_BaalNetbek_Kristall_Info()
 {
 	B_Say	(hero, self, "$GODLYBOTE02");
 
-	AI_Output(self, hero, "Info_Mod_BaalNetbek_Kristall_12_01"); //Ich?! Ich bin Baal Netbek, der Guru des Sumpfes und ...
-	AI_Output(hero, self, "Info_Mod_BaalNetbek_Kristall_15_02"); //(unterbricht) Ähh, das hatten wir glaube ich schon mal.
+	AI_Output(self, hero, "Info_Mod_BaalNetbek_Kristall_12_01"); //Oto ja! Jestem Baalem Netbkiem, guru bagna i...
+	AI_Output(hero, self, "Info_Mod_BaalNetbek_Kristall_15_02"); //(przerwanie) Uh, mysle, ze mielismy to juz wczesniej.
 
 	AI_StopProcessInfos	(self);
 

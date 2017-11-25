@@ -2,7 +2,7 @@ instance Mod_1017_KGD_Granmar_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Granmar";
+	name 		=	"babcia";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
 	voice 		=	26;

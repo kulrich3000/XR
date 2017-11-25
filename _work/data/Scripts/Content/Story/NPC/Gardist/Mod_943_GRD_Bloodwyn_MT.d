@@ -1,7 +1,7 @@
 instance Mod_943_GRD_Bloodwyn_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bloodwyn";
+	name 		= "krew";
 	guild 		= GIL_OUT;
 	id 			= 943;
 	voice 		= 4;//Stimme Lee

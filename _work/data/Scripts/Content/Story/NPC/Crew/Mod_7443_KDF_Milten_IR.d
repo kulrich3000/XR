@@ -1,7 +1,7 @@
 INSTANCE Mod_7443_KDF_Milten_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Milten";
+	name 		= "mlyny";
 	guild 		= GIL_OUT;
 	id 			= 7443;
 	voice 		= 3;

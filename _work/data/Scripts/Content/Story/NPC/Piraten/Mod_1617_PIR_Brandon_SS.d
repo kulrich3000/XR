@@ -1,7 +1,7 @@
 INSTANCE Mod_1617_PIR_Brandon_SS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Brandon";
+	name 		= "ognisko";
 	guild 		= GIL_out;
 	id 			= 1617;
 	voice 		= 4;

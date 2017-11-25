@@ -1,7 +1,7 @@
 INSTANCE Mod_7156_ASS_Mirza_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Mirza"; 
+	name 		= "Mira"; 
 	guild 		= GIL_OUT;
 	id 			= 7156;
 	voice 		= 12;

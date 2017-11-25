@@ -59,7 +59,7 @@ instance ItRi_Wolfsring_Ruestung(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Wolfsring der Rüstung";
+	description				= "Pierscien wilka pancernika";
 	
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= 3;
@@ -67,7 +67,7 @@ instance ItRi_Wolfsring_Ruestung(C_Item)
 	TEXT[3]					= NAME_Prot_Point;
 	COUNT[3]				= 3;
 
-	TEXT[4]			= "Set: Wolfsbündnis";
+	TEXT[4]			= "Zestaw: Wolfsbündnis";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -115,12 +115,12 @@ instance ItRi_Wolfsring_Leben(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Wolfsring des Lebens";
+	description				= "wilczy pierscien zycia";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= 10;
 
-	TEXT[4]			= "Set: Wolfsbündnis";
+	TEXT[4]			= "Zestaw: Wolfsbündnis";
 	
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
@@ -170,7 +170,7 @@ INSTANCE  ItAm_Wolfsamulett (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amulett der Lebenskraft";
+	description		= "Amulet witalnosci";
 
 	TEXT[2]			= NAME_Bonus_Str;
 	COUNT[2]		= 3;
@@ -178,7 +178,7 @@ INSTANCE  ItAm_Wolfsamulett (C_Item)
 	TEXT[3]			= NAME_Bonus_Dex;
 	COUNT[3]		= 3;
 
-	TEXT[4]			= "Set: Wolfsbündnis";
+	TEXT[4]			= "Zestaw: Wolfsbündnis";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;

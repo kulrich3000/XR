@@ -1,7 +1,7 @@
 INSTANCE Mod_1614_PIR_Garett_SS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Garett";
+	name 		= "nakladka";
 	guild 		= GIL_out;
 	id 			= 1614;
 	voice 		= 9;

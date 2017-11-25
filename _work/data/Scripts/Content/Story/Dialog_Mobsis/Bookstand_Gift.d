@@ -24,33 +24,33 @@ FUNC VOID Use_Bookstand_Gift_01_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 
@@ -77,33 +77,33 @@ FUNC VOID Use_Bookstand_Gift_02_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 
@@ -130,33 +130,33 @@ FUNC VOID Use_Bookstand_Gift_03_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 
@@ -183,33 +183,33 @@ FUNC VOID Use_Bookstand_Gift_04_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 
@@ -236,33 +236,33 @@ FUNC VOID Use_Bookstand_Gift_05_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 
@@ -289,33 +289,33 @@ FUNC VOID Use_Bookstand_Gift_06_S1()
 
 			if (GiftCounter == 1)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "... in den Körper gelangen und ihre schädliche Wirkung entfalten. Die Gesundheit erleidet dabei über eine gewisse Zeitdauer konstanten Schaden, bis das Gift vom Organismus neutralisiert oder ausgeschieden wurde.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Die Gifte unterteilen sich in verschiedene Gruppen. Gewächse kennzeichnen eine davon. Ob giftige Pilze oder Pflanzen wirken sie beim Verzehr mit einer gewissen Verzögerung, da sie erst allmählich aufgenommen werden.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "... dotrzec do ciala i rozwinac ich szkodliwe dzialanie. Zdrowie doznaje stalych obrazen przez pewien okres czasu, az do momentu zneutralizowania lub wyeliminowania trucizny przez organizm.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Toksyny dzieli sie na rózne grupy. Woski identyfikuja jeden z nich. Bez wzgledu na to, czy sa to trujace grzyby czy rosliny, ich spozycie nastepuje z pewnym opóznieniem, poniewaz sa one stopniowo wchlaniane.");
 			}
 			else if (GiftCounter == 2)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Gelangen sie jedoch direkt in den Blutkreislauf, ist ihre Wirkung unmittelbar. Sie wirken ungleich stärker, dafür jedoch auch kürzer. Es wird berichtet, dass einige Menschen und andere vernunftbegabte Wesen ihre Waffen bewusst damit benetzen, um Widersacher im Kampf zu vergiften.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Übersteht ein Mensch jedoch mehrere Vergiftungen, so erlangt er zunehmende Resistenz. Der Körper erlernt das spezielle Gift schneller abzubauen, bis er nach zahlreichen Vergiftungen völlig immun wird. Zudem reduziert sich die schädliche Wirkung auch anderer Gewächsgifte, da sie ähnlich zusammengesetzt sind.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak bezposrednio przedostana sie one do krwioobiegu, ich dzialanie jest natychmiastowe. Wydaje sie, ze sa one znacznie silniejsze, ale krótsze. Podaje sie, ze niektórzy ludzie i inne racjonalnie utalentowane istoty celowo uzywaja swojej broni do zatrucia przeciwników w walce.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jesli jednak ktos przezyje kilka zatruc, staje sie coraz bardziej odporny. Cialo uczy sie szybciej niszczyc specjalna trucizne, az stanie sie calkowicie odporne na zatrucia. Ponadto zmniejsza sie równiez szkodliwe dzialanie innych toksyn roslinnych, poniewaz sa one podobnie skomponowane.");
 			}
 			else if (GiftCounter == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Eine andere Gruppe von Giften entstammt dem Tierreich. Meist durch Insekten übertragen, gelangen sie durch Stacheln und Zangen des Getiers sofort in den Blutkreislauf. Die Wirkung ist meist kürzer, dafür etwas intensiver, als bei Gewächsgiften. Auf den Klingen von Waffen finden sich Tiergifte ungleich seltener, da die Beschaffung aufwändiger ist.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch hier können sich mit steigender Anzahl von Vergiftungen wachsende Resistenzen zeigen. Ähnlich, wie bei den Pflanzengiften, nimmt die Wirkungsdauer bei einem bestimmten Tiergift bis zur völligen Immunität ab. Gleichzeitig lässt der schädliche Effekt aller Tiergifte nach, da sie auf ähnliche Mechanismen beruhen und der Organismus ihrer Wirkung besser entgegenzuwirken lernt.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Inna grupa trucizn pochodzi z królestwa zwierzat. Przewaznie przenoszone przez owady, natychmiast przedostaja sie do krwioobiegu przez kolce i szczypce zwierzecia. Efekt jest zwykle krótszy, ale nieco bardziej intensywny niz w przypadku toksyn roslinnych. Toksyny zwierzece sa znacznie rzadziej spotykane na ostrzach broni, poniewaz zaopatrzenie jest drozsze.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Równiez w tym przypadku rosnacy opór widziec mozna jako wzrost zatruc. Podobnie jak w przypadku toksyn roslinnych, czas dzialania zmniejsza sie wraz z pewnymi trucizna zwierzeca w celu uzyskania pelnej odpornosci. Jednoczesnie zmniejsza sie szkodliwy wplyw wszystkich toksyn zwierzecych, poniewaz opieraja sie one na podobnych mechanizmach, a organizm uczy sie lepiej przeciwdzialac ich skutkom.");
 			}
 			else if (GiftCounter == 4)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Als letzte wichtige Gruppe zu nennen sind giftige Dämpfe. Ihr Effekt ist äußert unmittelbar und heftig, wenn auch meist nur auf wenige Sekunden beschränkt. Zwar kann auch hier der Körper mit der Zeit Resistenzen erlangen, jedoch haben die Dämpfe zusätzlich eine ätzende Wirkung und rauben dem Betroffenen die Luft zum atmen, sodass man nie völlig schadlos davonkommt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ganz gleich jedoch, welcher Form von Giften der Körper ausgesetzt war, steigt die Erfahrung darum, die Chance Vergiftungen jeder Art zu entgehen.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Ostatnia wazna grupa, o której nalezy wspomniec, sa toksyczne opary. Ich dzialanie jest natychmiastowe i intensywne, nawet jesli zwykle ograniczone do kilku sekund. Mimo, ze organizm moze równiez stac sie odporny z czasem, opary maja dodatkowy efekt korozyjny i rabuja poszkodowanego z powietrza do oddychania, dzieki czemu nigdy nie ucieka sie calkowicie nieszkodliwie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak bez wzgledu na to, z jaka forma toksyn organizm zostal narazony, doswiadczenie zwieksza sie, aby uniknac wszelkiego rodzaju zatruc.");
 			}
 			else if (GiftCounter == 5)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Ist jedoch einmal eine Vergiftung eingetreten, ist es mit einer simplen Heilpflanze nicht getan, da das Gift im Körper verbleibt.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Von einer Pflanze namens Heilknospe wird jedoch berichtet, dass sie den Effekt jeder Vergiftung schlagartig aufzuheben vermag.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednak po zatruciu nie wystarczy zwykla roslina lecznicza, poniewaz trucizna pozostaje w organizmie.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Roslina nazywana leczniczym buds leczniczy jest jednak zglaszana, aby nagle zniwelowac efekt zatrucia.");
 			}
 			else if (GiftCounter == 6)
 			{
-				B_LogEntry	(TOPIC_MOD_GIFT, "Auch kundige Alchemisten sind in der Lage Gegengifte herzustellen, welche bestehende Vergiftungen nicht nur aufheben, sondern auch noch eine kurze Zeit nachwirken und Schutz vor weiteren Vergiftungen bieten.");
-				B_LogEntry	(TOPIC_MOD_GIFT, "Stehen jedoch diese Mittel nicht zur Verfügung, so kann zumindest die Zufuhr von reichlich Flüssigkeit dabei helfen, das Gift schneller aus dem Körper zu spülen ...");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Nawet doswiadczeni alchemicy potrafia przeciwdzialac zatruciom, które nie tylko niweluja istniejace zatrucia, ale takze maja krótkotrwaly efekt powypadkowy i zapewniaja ochrone przed dalszymi zatruciami.");
+				B_LogEntry	(TOPIC_MOD_GIFT, "Jednakze, jesli te srodki zaradcze nie sa dostepne, przynajmniej spozycie duzej ilosci plynu moze pomóc w szybszym wyplukaniu trucizny z organizmu....");
 			};
 		};
 

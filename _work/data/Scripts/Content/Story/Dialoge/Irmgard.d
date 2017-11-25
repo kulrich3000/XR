@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Irmgard_Hi (C_INFO)
 	information	= Info_Mod_Irmgard_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Eigentlich willst du doch schon lange hier raus, oder?";
+	description	= "Czyz nie chciales sie tu wydostac od dawna, czyz nie?";
 };
 
 FUNC INT Info_Mod_Irmgard_Hi_Condition()
@@ -19,9 +19,9 @@ FUNC INT Info_Mod_Irmgard_Hi_Condition()
 
 FUNC VOID Info_Mod_Irmgard_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Irmgard_Hi_15_00"); //Eigentlich willst du doch schon lange hier raus, oder?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Hi_17_01"); //(seufzt) Liebend gern. Wie kann man sich nur freiwillig in dieser Räuberhöhle aufhalten? Da oben in der Ecke ... Spinnweben!
-	AI_Output(self, hero, "Info_Mod_Irmgard_Hi_17_02"); //Aber Hedwig sagt, das ist der einzige Weg, dass sich unsere Männer ändern. Und ich will, dass sich mein Mann ändert.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Hi_15_00"); //Czyz nie chciales sie tu wydostac od dawna, czyz nie?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Hi_17_01"); //Kocham. Jak mozesz ochotniczo pozostac w tej lonie rabusiów? Tam w rogu.... Pajeczyny!
+	AI_Output(self, hero, "Info_Mod_Irmgard_Hi_17_02"); //Ale Hedwig mówi, ze to jedyny sposób, w jaki zmienia sie nasi mezczyzni. I chce, zeby mój maz sie zmienil.
 };
 
 INSTANCE Info_Mod_Irmgard_Kneipe (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Irmgard_Kneipe (C_INFO)
 	information	= Info_Mod_Irmgard_Kneipe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte einen Vorschlag für dich.";
+	description	= "Mam dla pana propozycje.";
 };
 
 FUNC INT Info_Mod_Irmgard_Kneipe_Condition()
@@ -45,29 +45,29 @@ FUNC INT Info_Mod_Irmgard_Kneipe_Condition()
 
 FUNC VOID Info_Mod_Irmgard_Kneipe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_00"); //Ich hätte einen Vorschlag für dich.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_01"); //Wenn ich verspreche, ich sorge dafür, dass sich dein Wunsch erfüllt - würdest du mir dann helfen, Hedwig und Berta hier herauszubekommen?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_02"); //Na, ich weiß nicht. Hedwig wird nicht so einfach aufgeben.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_03"); //Es wird doch wohl eine Möglichkeit geben, sie aus dem Gasthaus zu locken?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_04"); //Mir fällt da nichts ein.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_05"); //Denk doch mal nach. Was müsste passieren, damit Hedwig das Haus verlassen würde?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_06"); //Na ja, sie liebt Schafe über alles. Wenn sie eines sieht, läuft sie immer sofort hin und streichelt es.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_07"); //Das ist doch mal ein Anfang. Das Schaf müsste dann, bevor Hedwig es erreicht, flüchten.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_08"); //So könnten wir dafür sorgen, dass sie sich aus dem Gasthaus entfernt.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_09"); //Und dann?
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_10"); //Dann müsste sie zu Anselm gelockt werden, damit die beiden sich mal aussprechen können.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_11"); //Die beiden werden sich doch irgendwie einigen können.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_12"); //Nicht unbedingt.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_13"); //Lass es uns probieren.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_14"); //Woher nehmen wir das Schaf und bringen es dazu, das zu tun, was wir wollen?
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_15"); //Ich könnte mich ja verwandeln ...
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_16"); //Woher kann ich denn hier Verwandlungsspruchrollen bekommen?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_17"); //Versuch's auf dem Marktplatz bei Daniel oder im Haus der Feuermagier.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_18"); //Gut. Bist du dabei?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_19"); //Na schön.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_20"); //Dann bis später!
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_00"); //Mam dla pana propozycje.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_01"); //Jesli obiecuje, ze twoje zyczenie zostanie spelnione - czy pomóglbys mi wydobyc z tego miejsca Hedwig i Berte?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_02"); //No cóz, nie wiem. Hedwig nie podda sie tak latwo.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_03"); //Musi byc jakas droga, aby ja wydostac z zajazdu, prawda?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_04"); //Nie moge o niczym myslec.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_05"); //Dlaczego o tym nie myslisz? Co by sie stalo, gdyby Hedwig wyszla z domu?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_06"); //Cóz, kocha przede wszystkim owce. Za kazdym razem, gdy ja zobaczy, zawsze od razu idzie tam i uderza.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_07"); //To poczatek. Owce musialyby wtedy uciec zanim Hedwig dotrze do niej.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_08"); //W ten sposób moglismy sie upewnic, ze ona wyjdzie z zajazdu.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_09"); //A co wiec?
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_10"); //Wtedy trzeba by ja zwabic do Anselm, zeby oboje mieli cos do powiedzenia.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_11"); //W jakis sposób uda im sie dojsc do porozumienia.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_12"); //Niekoniecznie.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_13"); //Spróbujmy.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_14"); //Gdzie dostajemy owce i naklaniamy je do zrobienia tego, czego chcemy?
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_15"); //Móglbym zamienic sie w.....
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_16"); //Gdzie moge zdobyc role konwersji?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_17"); //Wypróbuj targowisko w Daniel's lub Fire Magic House.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_18"); //Dobre. Czy jestes?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe_17_19"); //A zatem wszystko w porzadku.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe_15_20"); //Do zobaczenia pózniej!
 
-	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Hedwig liebt Schafe über alles, deshalb mein Plan, mich in eines zu verwandeln und sie zu Anselm zu locken, damit die beiden sich aussprechen. Eine Verwandlungsspruchrolle bekomme ich vielleicht bei Daniel auf dem Marktplatz oder im Haus der Feuermagier.");
+	B_LogEntry	(TOPIC_MOD_DITMAR_DICKELUFT, "Hedwigi bardziej uwielbia owce niz cokolwiek innego, wiec moim zamiarem jest zamienic mnie w jedna owce i zwabic ja do Anselm, aby mogla sie wyrazic. Moge byc w stanie przeobrazac sie na rynku Daniela lub w Domu Strazaków.");
 
 	CreateInvItems	(Mod_7378_OUT_Daniel_REL, ItSc_TrfSheep, 3);
 };
@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Irmgard_Kneipe2 (C_INFO)
 	information	= Info_Mod_Irmgard_Kneipe2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hedwig hat die Aktion abgeblasen.";
+	description	= "Hedwig odwolal akcje.";
 };
 
 FUNC INT Info_Mod_Irmgard_Kneipe2_Condition()
@@ -93,14 +93,14 @@ FUNC INT Info_Mod_Irmgard_Kneipe2_Condition()
 
 FUNC VOID Info_Mod_Irmgard_Kneipe2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_00"); //Hedwig hat die Aktion abgeblasen.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_01"); //(skeptisch) Sie hat sich umstimmen lassen? Das passt ja gar nicht zu ihr.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_02"); //Anselms und meinen guten Argumenten hatte sie dann doch nichts entgegenzusetzen.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_03"); //Du kannst also gehen. Und nimm Berta gleich mit.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_04"); //Ja, die Gute wird erst mal ordentlich ausschlafen müssen.
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_05"); //Und ich rede heute noch meinem Mann ins Gewissen.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_06"); //Soll ich dir dabei helfen?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_07"); //Nein, ich glaube doch nicht, dass das eine gute Idee wäre. Aber trotzdem nett von dir, dass du uns geholfen hast.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_00"); //Hedwig odwolal akcje.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_01"); //(sceptycznie) Daj sie przekonac? To nie jej sie nie podoba.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_02"); //Anselms i moje dobre argumenty nie mialy nic przeciwko temu.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_03"); //Wiec mozesz isc teraz. I zabierz Berte z toba.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_04"); //Tak, dobra gonna dobry facet musi sie dobrze przespac.
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_05"); //I do dzis nadal rozmawiam z mezem.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe2_15_06"); //Chce, abym ci w tym pomogla?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe2_17_07"); //Nie, nie sadze, zeby to byl dobry pomysl. Ale nadal milo o Tobie pomóc.
 
 	CurrentNQ += 1;
 
@@ -124,7 +124,7 @@ INSTANCE Info_Mod_Irmgard_Kneipe3 (C_INFO)
 	information	= Info_Mod_Irmgard_Kneipe3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie ist das Gespräch mit deinem Mann gelaufen?";
+	description	= "Jak odbyla sie rozmowa z mezem?";
 };
 
 FUNC INT Info_Mod_Irmgard_Kneipe3_Condition()
@@ -138,9 +138,9 @@ FUNC INT Info_Mod_Irmgard_Kneipe3_Condition()
 
 FUNC VOID Info_Mod_Irmgard_Kneipe3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe3_15_00"); //Wie ist das Gespräch mit deinem Mann gelaufen?
-	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe3_17_01"); //Wir haben einen guten Kompromiss gefunden: Er hat angeboten, etwas mehr zu arbeiten, damit wir uns eine Haushälterin leisten können.
-	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe3_15_02"); //Na dann ...
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe3_15_00"); //Jak odbyla sie rozmowa z mezem?
+	AI_Output(self, hero, "Info_Mod_Irmgard_Kneipe3_17_01"); //Znalezlismy dobry kompromis: zaproponowal on nieco wiecej pracy, abysmy mogli sobie pozwolic na dozorce.
+	AI_Output(hero, self, "Info_Mod_Irmgard_Kneipe3_15_02"); //No cóz, wiec....
 };
 
 INSTANCE Info_Mod_Irmgard_Pickpocket (C_INFO)

@@ -1,7 +1,7 @@
 PROTOTYPE Mst_Default_Rabbit (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Hase";
+	name							=	"królik";
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Rabbit;
 	level							=	1;

@@ -15,12 +15,12 @@ FUNC INT Info_Mod_SchwarzerKriegerElvrich_Hi_Condition()
 
 FUNC VOID Info_Mod_SchwarzerKriegerElvrich_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_00"); //Hey, hast du hier zufällig irgendwo einen Buddler in der Nähe herumrennen sehen?
-	AI_Output(hero, self, "Info_Mod_SchwarzerKriegerElvrich_Hi_15_01"); //Nicht, dass ich wüsste.
-	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_02"); //(zu sich selbst) Verdammt, das gibt Ärger von Kurgan, wenn ich diesen Stadtlümmel nicht wieder einfange.
-	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_03"); //Ich hätte nicht so offen vom Sumpfkraut und dem Lager schwärmen sollen.
+	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_00"); //Hej, czy zdarzylo Ci sie zobaczyc kopacza biegnacego gdzies w poblizu?
+	AI_Output(hero, self, "Info_Mod_SchwarzerKriegerElvrich_Hi_15_01"); //Nie wiem o tym.
+	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_02"); //Damn, Kurgan bedzie w klopotach, jesli nie odzyskam tego miejskiego tlumu.
+	AI_Output(self, hero, "Info_Mod_SchwarzerKriegerElvrich_Hi_13_03"); //Nie powinienem byl tak otwarcie rojac sie o blotniaku i karczmie.
 
-	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Ein Dämonenkrieger sucht einen entlaufenen Buddler, der aus der Stadt stammen könnte. Er klagte darüber, ihn mit zu vielen Ausschweifen über ein gewisses Lager und Sumpfkraut auf dumme Gedanken gebracht zu haben.");
+	B_LogEntry	(TOPIC_MOD_VERMISSTE, "Wojownik demoniczny szuka uciekajacego kopacza, który móglby przyjechac z miasta. Narzekl, ze przy zbyt wielu debauzjach o danym obozie i bzu bagnistym, dal mu zbyt wiele glupich mysli.");
 
 	Mod_WM_ElvrichImSumpf = 2;
 };

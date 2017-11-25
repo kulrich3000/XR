@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Wolf_Rotkaeppchen_Hi (C_INFO)
 	information	= Info_Mod_Wolf_Rotkaeppchen_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich verstehen?";
+	description	= "Czy potrafisz mnie zrozumiec?";
 };
 
 FUNC INT Info_Mod_Wolf_Rotkaeppchen_Hi_Condition()
@@ -19,15 +19,15 @@ FUNC INT Info_Mod_Wolf_Rotkaeppchen_Hi_Condition()
 
 FUNC VOID Info_Mod_Wolf_Rotkaeppchen_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_00"); //Kannst du mich verstehen?
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_01"); //Sehe ich etwa schwerhörig aus?
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_02"); //Äh, nein. Hör mal, das Mädchen dort hinten fühlt sich von dir belästigt.
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_03"); //Kein Wunder. Ich verfolge es so lange, bis ihm die Kräfte ausgehen und ich meine Zähne in sein junges Fleisch graben kann.
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_04"); //Das klingt aber gemein!
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_05"); //(nachdenklich) Ich weiß nicht, was "gemein" bedeutet. Aber es muss eine ähnliche Bedeutung wie "wohlschmeckend" haben.
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_06"); //Wie wär's, wenn ich dir einen Ersatz für das Mädchenfleisch anbiete?
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_07"); //Es geht mir nicht nur um das Fressen. Ich will meinen Jagdinstinkt ausleben und mich wohl in meinem Körper fühlen.
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_08"); //Was also könntest du mir als Ersatz anbieten?
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_00"); //Czy potrafisz mnie zrozumiec?
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_01"); //Czy wygladam slabo slysze?
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_02"); //Uh, nie. Sluchaj tej dziewczyny tamtejszej czuje sie, jakbys ja niepokoil.
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_03"); //Nic dziwnego. Ja podazam za nim az skonczy mu sie energia i moge wykopac zeby w jego mlode cialo.
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_04"); //To brzmi bardzo zle!
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_05"); //(nachdenklich) Ich weiß nicht, was "szkorbut" bedeutet. Aber es muss eine ähnliche Bedeutung wie "smakowity" haben.
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_Hi_15_06"); //Jak moge zaoferowac Ci zastepstwo dla miesa dziewczyny?
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_07"); //Nie chodzi tylko o jedzenie. Chce przezywac moje instynkty lowieckie i czuc sie komfortowo w moim ciele.
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_Hi_18_08"); //Wiec co móglbys mi zaoferowac jako substytut?
 };
 
 INSTANCE Info_Mod_Wolf_Rotkaeppchen_NimmMich (C_INFO)
@@ -38,7 +38,7 @@ INSTANCE Info_Mod_Wolf_Rotkaeppchen_NimmMich (C_INFO)
 	information	= Info_Mod_Wolf_Rotkaeppchen_NimmMich_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nimm doch mich!";
+	description	= "Dlaczego mnie nie zabierasz?";
 };
 
 FUNC INT Info_Mod_Wolf_Rotkaeppchen_NimmMich_Condition()
@@ -51,9 +51,9 @@ FUNC INT Info_Mod_Wolf_Rotkaeppchen_NimmMich_Condition()
 
 FUNC VOID Info_Mod_Wolf_Rotkaeppchen_NimmMich_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_15_00"); //Nimm doch mich!
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_18_01"); //Du versprichst eine gute Herausforderung zu sein.
-	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_18_02"); //Ich werde also zuerst dich fressen, und dann vielleicht das Mädchen verschonen.
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_15_00"); //Dlaczego mnie nie zabierasz?
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_18_01"); //Obiecuje pan, ze bedzie pan dobrym wyzwaniem.
+	AI_Output(self, hero, "Info_Mod_Wolf_Rotkaeppchen_NimmMich_18_02"); //Wiec jestem gonna najpierw zjesc cie, a pózniej moze oszczedzic dziewczyne.
 
 	AI_StopProcessInfos	(self);
 	
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_Wolf_Rotkaeppchen_NimmSie (C_INFO)
 	information	= Info_Mod_Wolf_Rotkaeppchen_NimmSie_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Vergiss es. Guten Hunger.";
+	description	= "Zapomnij o tym. Dobry apetyt.";
 };
 
 FUNC INT Info_Mod_Wolf_Rotkaeppchen_NimmSie_Condition()
@@ -81,7 +81,7 @@ FUNC INT Info_Mod_Wolf_Rotkaeppchen_NimmSie_Condition()
 
 FUNC VOID Info_Mod_Wolf_Rotkaeppchen_NimmSie_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_NimmSie_15_00"); //Vergiss es. Guten Hunger.
+	AI_Output(hero, self, "Info_Mod_Wolf_Rotkaeppchen_NimmSie_15_00"); //Zapomnij o tym. Dobry apetyt.
 
 	B_KillNpc	(Mod_7556_OUT_Rotkaeppchen_REL);
 

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ehnim_Hi (C_INFO)
 	information	= Info_Mod_Ehnim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, nimm den Heiltrank.";
+	description	= "Tutaj wez eliksir leczniczy.";
 };
 
 FUNC INT Info_Mod_Ehnim_Hi_Condition()
@@ -25,41 +25,41 @@ FUNC INT Info_Mod_Ehnim_Hi_Condition()
 
 FUNC VOID Info_Mod_Ehnim_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ehnim_Hi_15_00"); //Hier, nimm den Heiltrank.
+	AI_Output(hero, self, "Info_Mod_Ehnim_Hi_15_00"); //Tutaj wez eliksir leczniczy.
 
 	Info_ClearChoices	(Info_Mod_Ehnim_Hi);
 
 	if (Npc_HasItems(hero, ItPo_Health_03) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Elixier der Heilung", Info_Mod_Ehnim_Hi_F);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Eliksir uzdrawiania", Info_Mod_Ehnim_Hi_F);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Extrakt der Heilung", Info_Mod_Ehnim_Hi_E);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Ehnim_Hi_E);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Essenz der Heilung", Info_Mod_Ehnim_Hi_D);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Istota uzdrawiania", Info_Mod_Ehnim_Hi_D);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Trank der leichten Heilung", Info_Mod_Ehnim_Hi_C);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Napój lekkiego leczenia", Info_Mod_Ehnim_Hi_C);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Leichter Heiltrank", Info_Mod_Ehnim_Hi_B);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Lekki eliksir leczniczy", Info_Mod_Ehnim_Hi_B);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Trank der schnellen Heilung", Info_Mod_Ehnim_Hi_A);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Napoje szybko lecznicze", Info_Mod_Ehnim_Hi_A);
 	};
 };
 
 FUNC VOID Info_Mod_Ehnim_Hi_G()
 {
-	AI_Output(self, hero, "Info_Mod_Ehnim_Hi_G_12_00"); //Ahh, hab Dank. Durch deine Hilfe geht es mir schon viel besser.
+	AI_Output(self, hero, "Info_Mod_Ehnim_Hi_G_12_00"); //Ach, dziekuje. Z wasza pomoca znacznie lepiej sie czuje.
 
-	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Ehnim konnte ich mit einem Heiltrank Linderung verschaffen.");
+	B_LogEntry	(TOPIC_MOD_AKILSHOF, "Udalo mi sie uwolnic Ehnima od eliksiru uzdrawiajacego.");
 
 	Info_ClearChoices	(Info_Mod_Ehnim_Hi);
 };

@@ -1,7 +1,7 @@
 instance Mod_7571_OUT_Bandit_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Fremder"; 
+	name 		= "kosmitka"; 
 	guild 		= GIL_STRF;
 	id 			= 7571;
 	voice 		= 6;

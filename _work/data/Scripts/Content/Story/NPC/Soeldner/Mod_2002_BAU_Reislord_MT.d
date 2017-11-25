@@ -2,7 +2,7 @@ instance Mod_2002_BAU_Ricelord_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Reislord";
+	name 		=	"ryz";
 	npctype 	=	NPCTYPE_MAIN;	
 	guild 		=	GIL_MIL;      
 	level 		=	10;

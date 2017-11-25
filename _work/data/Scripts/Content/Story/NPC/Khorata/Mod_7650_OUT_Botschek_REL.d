@@ -1,7 +1,7 @@
 instance Mod_7650_OUT_Botschek_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Botschek";
+	name 		= "ambasador";
 	guild 		= GIL_OUT;
 	id 			= 7650;
 	voice 		= 28;

@@ -16,7 +16,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_HatBeutelWilfried == 0)
 		&& (Npc_HasItems(hero, ItSe_WilfriedsBeutel) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe den Geldbeutel gefunden... allerdings ist nicht mehr sehr viel von dem Inhalt übrig geblieben. Was Wilfried wohl dazu sagen wird?");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Znalazlem torebke...... ale nie pozostalo wiele tresci. Zastanawiam sie, co powie Wilfried.");
 
 			Mod_HatBeutelWilfried = 1;
 		};
@@ -26,7 +26,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 4;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Wilfried hat seine Wohnung plötzlich verlassen und ist unauffindbar.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Wilfried nagle opuscil swoje mieszkanie i jest nie do odnalezienia.");
 		};
 
 		if (Npc_IsDead(Mod_544_NONE_Wilfried_NW))
@@ -34,7 +34,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 6;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Ich habe Wilfried in seiner Höhle gefunden... bei unserem Gespräch drehte er urplötzlich durch und griff mich an - mir blieb nur die Notwehr. Nun ist der Spuk vorbei. Vielleicht gibt es noch eine Möglichkeit, die Opfer Wilfrieds zu entschädigen.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Znalazlem Wilfrieda w jego jaskini..... W czasie naszej rozmowy nagle szalal i atakowal mnie, a ja mialem tylko samoobrone. Spoczka sie skonczyla. Moze jest inny sposób na zrekompensowanie ofiarom smierci Wilfrieda.");
 		};
 
 		if (Npc_HasItems(hero, ItWr_WilfriedsListe) == 1)
@@ -42,7 +42,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_WilfriedsQuest = 7;
 
-			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Der Schatz Wilfrieds ist gehoben. Ich sollte den Betrag Lord Andre übergeben, der sich um die gerechte Verteilung kümmern kann.");
+			B_LogEntry	(TOPIC_MOD_WILFRIED_GOLD, "Wywyzszony jest skarb Wilfrieda. Powinnam przekazac te pieniadze lorda Andre' owi, który moze zadbac o sprawiedliwa dystrybucje.");
 		};
 
 		// Der Schatz des Johannes Port
@@ -116,7 +116,7 @@ FUNC VOID NEBENQUESTS()
 			if (Mod_Allievo_Zusatzpower == 0)
 			&& (Npc_IsDead(Mod_7033_OUT_Allievo_NW))
 			{
-				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Ich habe Allievo ausgeschaltet, einen Schüler von Canthar. Hoffentlich konnte ich ihm damit einen  Schlag versetzen.");
+				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Wyprowadzilem Allievo, ucznia Kantaru. Miejmy nadzieje, ze móglbym mu to zadac cios.");
 
 				Mod_Allievo_Zusatzpower = 2;
 			}
@@ -125,7 +125,7 @@ FUNC VOID NEBENQUESTS()
 			&& (Npc_IsDead(Mod_7034_OUT_Bruno_NW))
 			&& (Npc_IsDead(Mod_7035_OUT_Grima_NW))
 			{
-				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Ich habe Allievo ausgeschaltet, einen Schüler von Canthar. Hoffentlich konnte ich ihm damit einen  Schlag versetzen.");
+				B_LogEntry	(TOPIC_MOD_CANTHAR_GESCHAEFTE, "Wyprowadzilem Allievo, ucznia Kantaru. Miejmy nadzieje, ze móglbym mu to zadac cios.");
 
 				Mod_Allievo_Zusatzpower = 2;
 			};
@@ -139,7 +139,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_KnowsTonakZombie = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_AKILSHOF, "Lauter Untote ... und einer von ihnen Tonak. Da kommt jede Rettung zu spät.");
+			B_LogEntry	(TOPIC_MOD_AKILSHOF, "Wszyscy nieumarli.... i jeden z nich Tonak. Kazde ratowanie przychodzi zbyt pózno.");
 		};
 
 		if (Npc_GetDistToWP(Mod_902_BAU_Egill_NW, "WP_EGILL_SELBSTMORD_NEWVERSION") < 500)
@@ -304,7 +304,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7169_OUT_Mann_NW, "ATTAVERNE");
 				B_StartOtherRoutine	(Mod_7170_OUT_Mann_NW, "ATTAVERNE");
 
-				B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "So, die Belianer machen sich auf den Weg zu ihrer neuen Bleibe. Jetzt brauche ich nur noch Telbor bescheid zu geben, dass das Haus wieder frei ist.");
+				B_LogEntry	(TOPIC_MOD_TELBOR_HAUSBESETZER, "No cóz, Belianie zmierzaja do swojego nowego domu. Teraz musze tylko poinformowac Telbora, ze dom jest ponownie wolny.");
 			};
 		};
 
@@ -449,7 +449,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_MoeDontTalk = 5;
 
-				B_LogEntry	(TOPIC_MOD_MOE_TALK, "Eine ziemlich unlustige Idee von Canthar, mich durch ganz Khorinis zu schicken. Vielleicht sollte ich den ganzen unnötigen Ballast an bekritzeltem Papier bei Moe abladen, mein Inventar ist schließlich schon voll genug ...");
+				B_LogEntry	(TOPIC_MOD_MOE_TALK, "Dosc nieprzyjemny pomysl Canthara, aby wyslac mnie przez wszystkiehorinów. Byc moze powinienem rozladowac w Moe's caly zbedny balast zeszklonego papieru, mój stan inwentaryzacyjny jest juz wystarczajaco pelny......");
 			};
 		};
 
@@ -483,43 +483,43 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_00"); //Bist du uns also brav in die Falle gelaufen, was?
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_00"); //Wiec wpadles nam w dobra pulapke, huh?
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 10)
 			{
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_01"); //Höhähöhö!
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_01"); //Wysokosc!
 
 				B_StartOtherRoutine	(Mod_7213_NONE_Schlaeger_NW, "WEG");
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 15)
 			{
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_02"); //Als ob Moe irgendetwas herausgefunden hätte! Pah! Hast du das wirklich geglaubt? (Pause) Was sagst du dazu: Ich habe die Nachricht geschrieben! Hä? (Pause)
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_02"); //Jak Moe dowiedzial sie czegos! Pah! Czy naprawde w to wierzyliscie? (Pauza) Co Pan mówi do tego: Napisalem wiadomosc! Hu? (pauza)
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 20)
 			{
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_03"); //Hihihö.
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_03"); //Hooray.
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 25)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, Mod_7212_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_04"); //Schnauze!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_04"); //Wylaczyc sie!
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 30)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_05"); //Canthar wird dich schon zum Reden bringen. (verschlagen) Er hat da so seine Methoden ...
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_05"); //Canthar zmusi cie do rozmowy. Ma tam swoje metody....
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 35)
 			{
-				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_06"); //Wieso kommt er nicht persönlich und schickt so ein Aas wie euch vor?
+				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_06"); //Dlaczego nie przyszedl osobiscie i nie wyslales takiego padlina jak wczesniej?
 
 				B_StartOtherRoutine	(Mod_7213_NONE_Schlaeger_NW, "NAH");
 			};
@@ -528,19 +528,19 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, Mod_7211_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_07"); //(eingeschüchtert) Er hat nicht gesagt, dass wir Aas sind ...
+				AI_Output(Mod_7212_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_11_07"); //Nie powiedzial, ze jestesmy padlina....
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 45)
 			{
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, Mod_7212_NONE_Schlaeger_NW);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_08"); //(gereizt) He, gerate nicht in eine defensive Position, hat Canthar ausdrücklich befohlen!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_08"); //Hej, nie wpadaj w pozycje defensywna, Canthar wyraznie nakazal!
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 50)
 			{
-				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_09"); //(murmelt) Amateure ...
+				AI_Output(hero, NULL, "Info_Mod_CantharSchlaeger_Talk_15_09"); //(mumbuly) Amatorzy.....
 			};
 
 			if (Mod_CantharSchlaeger_Counter == 55)
@@ -548,7 +548,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7211_NONE_Schlaeger_NW, hero);
 				AI_TurnToNpc	(Mod_7212_NONE_Schlaeger_NW, hero);
 
-				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_10"); //Das muss ich mir nicht bieten lassen! Gehen wir!
+				AI_Output(Mod_7211_NONE_Schlaeger_NW, NULL, "Info_Mod_CantharSchlaeger_Talk_01_10"); //Nie musze sie z tym zniesc! Idzmy!
 
 				Mod_Schlaeger_SaveHeroHP = hero.attribute[ATR_HITPOINTS];
 
@@ -623,7 +623,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_GarvellDa == 1)
 		&& (Npc_IsDead(Mod_577_NONE_Garvell_NW))
 		{
-			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Ein Attentatsversuch von Garvell ist missglückt. Er muss die 'Überraschung' gewesen sein, von der Canthar gesprochen hat. Damit dürfte dieses Kapitel endgültig abgeschlossen sein.");
+			B_LogEntry	(TOPIC_MOD_MOE_DEAD, "Zabójstwo Garvella nie powiodlo sie. Z pewnoscia byl zaskoczeniem, o czym mówil Canthar. Powinno to doprowadzic ten rozdzial do ostatecznego wniosku.");
 			B_SetTopicStatus	(TOPIC_MOD_MOE_DEAD, LOG_SUCCESS);
 			B_SetTopicStatus	(TOPIC_MOD_CANTHAR_GESCHAEFTE, LOG_SUCCESS);
 
@@ -650,15 +650,15 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_Flugblaetter == 20)
 			{
-				Print ("Alle Flugblätter verteilt!");
+				Print ("Wszystkie rozdawane ulotki!");
 
-				B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Ich habe alle Flugblätter verteilt und sollte Matteo Bescheid sagen.");
+				B_LogEntry	(TOPIC_MOD_MATTEOFLUGBLATT, "Rozdalem wszystkie ulotki i powinienem dac Matteo znac.");
 			}
 			else
 			{
 				var string FlugblattMeldung;
-				FlugblattMeldung = ConcatStrings("Noch ", IntToString(20-Mod_Flugblaetter));
-				FlugblattMeldung = ConcatStrings(FlugblattMeldung, " Flugblätter zu verteilen!");
+				FlugblattMeldung = ConcatStrings("jeszcze ", IntToString(20-Mod_Flugblaetter));
+				FlugblattMeldung = ConcatStrings(FlugblattMeldung, " rozprowadzac ulotki!");
 
 				Print (FlugblattMeldung);
 			};
@@ -671,7 +671,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_KristallDiego == 0)
 		&& (Npc_HasItems(hero, Mod_PaladinKristall) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Ich habe den Kristall. Entweder gehe ich jetzt zu Lothar oder ich bringe ihn zu jemand anderem. Die anderen Gildenanführer wären über diesen wertvollen Kristall sicher sehr erfreut.");
+			B_LogEntry	(TOPIC_MOD_DIEGO_KRISTALL, "Dostalem krysztal. Albo ide teraz do Lothara, albo zabieram go do kogos innego. Inni liderzy gildii byliby zachwyceni tym szlachetnym krysztalem.");
 			B_SetTopicStatus	(TOPIC_MOD_DIEGO_KRISTALL, LOG_SUCCESS);
 
 			Mod_KristallDiego = 1;
@@ -689,7 +689,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_JackHW = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Naja, Bennet ist als Schmied auch ein Handwerker. Ich hoffe, Jack lässt das durchgehen.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Cóz, kowal Benneta, jest takze rzemieslnikiem. Mam nadzieje, ze Jack nie wypusci tego.");
 		};
 
 		if (Mod_SagittaSS == 0)
@@ -698,7 +698,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_SagittaSS = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, ich habe den salzigen Sprießling. Jetzt aber nichts wie weg.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Wiec dostalem slona kielki. Teraz wyjdzmy z tego.");
 
 			B_GivePlayerXP	(100);
 		};
@@ -709,7 +709,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_SagittaHK = 1;
 
-			B_LogEntry	(TOPIC_MOD_HQ_JACK, "So, ich habe die stinkende Harpienkralle.");
+			B_LogEntry	(TOPIC_MOD_HQ_JACK, "Wiec mam smierdzaca koziolke harpie.");
 
 			B_GivePlayerXP	(100);
 		};
@@ -730,7 +730,7 @@ FUNC VOID NEBENQUESTS()
 
 			Npc_RemoveInvItems	(hero, ItMi_Mehlsack_Bronko, 5);
 
-			B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "Die Mehlsäcke sind jetzt in der Höhle. Ich sollte zu Bronko zurückkehren.");
+			B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "W jaskini znajduja sie teraz worki z maka. Powróce do Bronka.");
 
 			Mod_BronkoMehlsack = 2;
 		};
@@ -796,7 +796,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Thorben_Geschenk = 1;
 
-				B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "Ich habe Thorben etwas wirklich Nettes gebastelt. Mal schauen, ob er sich drüber freuen kann.");
+				B_LogEntry	(TOPIC_MOD_LEHRLING_THORBEN_FOUR, "Dla Thorbena zrobilem cos naprawde milego. Zobaczmy, czy moze byc z tego zadowolony.");
 
 				B_StartOtherRoutine	(Mod_536_NONE_Thorben_NW, "GROGGY");
 			};
@@ -818,7 +818,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Schlecht, 1);
 
-				Print	("Fauler Apfel!");
+				Print	("Lagodne jablko!");
 
 				Mod_Matteo_SchlechteApples += 1;
 			}
@@ -826,7 +826,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Gut, 1);
 
-				Print	("Knackiger Apfel!");
+				Print	("Kruche jablko!");
 
 				Mod_Matteo_GuteApples += 1;
 			}
@@ -834,7 +834,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Schlecht, 1);
 
-				Print	("Fauler Apfel!");
+				Print	("Lagodne jablko!");
 
 				Mod_Matteo_SchlechteApples += 1;
 			}
@@ -842,7 +842,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				CreateInvItems	(hero, ItFo_Apple_Matteo_Gut, 1);
 
-				Print	("Knackiger Apfel!");
+				Print	("Kruche jablko!");
 
 				Mod_Matteo_GuteApples += 1;
 			};
@@ -872,7 +872,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_PlayAni	(hero, "T_PLUNDER");
 
-			B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Puh, endlich bin ich die Last los.");
+			B_LogEntry	(TOPIC_MOD_JANA_BEUTEL, "Phew, w koncu pozbylem sie ladunku.");
 		};
 
 		if (Mod_Jana_Beutel == 2)
@@ -1048,7 +1048,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Vino_Brennerei = 1;
 
-				B_LogEntry	(TOPIC_MOD_VINO_WO, "So, die kleinen Spinnenviecher bei der Plattform sind beseitigt.");
+				B_LogEntry	(TOPIC_MOD_VINO_WO, "Tak wiec male pajakowo-zwierzeta na platformie sa eliminowane.");
 
 				B_StartOtherRoutine	(Mod_1937_JGR_Nandor_NW,	"START");
 			};
@@ -1076,7 +1076,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_SenyanTom_Kraut = 2;				
 
-				PrintScreen ("Kurze Zeit später", -1, YPOS_LevelUp, FONT_Screen, 2);
+				PrintScreen ("Krótki czas pózniej", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 				Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 			};
@@ -1225,7 +1225,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Lobart_Unkraut = 2;
 
-			B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "So, die Felder sind vom Unkraut befreit.");
+			B_LogEntry	(TOPIC_MOD_LOBART_UNKRAUT, "Tak wiec pola sa oczyszczane z chwastów.");
 		};
 
 		// Nagur kommt wieder frei
@@ -1281,7 +1281,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Nagur_Geschaeft = 1;
 
-			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich habe das Paket in den Kisten verstaut.");
+			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Umiescilem paczke w skrzynkach.");
 		};
 
 		if (Mod_Nagur_Geschaeft == 1)
@@ -1312,7 +1312,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Nagur_Geschaeft = 6;
 
-			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Ich kann jetzt Nagur davon berichten, dass seine Konkurrenten beseitigt wurden.");
+			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "Moge teraz poinformowac Nagura, ze jego konkurenci zostali wyeliminowani.");
 		};
 
 		if (Mod_Nagur_Geschaeft == 6)
@@ -1434,7 +1434,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_TurnToNpc	(hero, Swampshark_Weiss);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_WeisserSumpfhai_15_00"); //Da ist er!
+			AI_Output(hero, NULL, "Info_Mod_Hero_WeisserSumpfhai_15_00"); //On jest!
 
 			B_StartOtherRoutine	(Swampshark_Weiss, "TOT");
 			B_StartOtherRoutine	(Mod_12012_DRA_Echse_AW, "TOT");
@@ -1442,7 +1442,7 @@ FUNC VOID NEBENQUESTS()
 			B_StartOtherRoutine	(Mod_12014_DRA_Echse_AW, "TOT");
 			B_StartOtherRoutine	(Mod_12015_DRA_Echse_AW, "TOT");
 
-			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "Ich habe einen weißen Sumpfhai gefunden.", "Wir haben einen weißen Sumpfhai gefunden und die jungen Echsen folgen ihm. Das sollte reichen.");
+			B_LogEntry_More	(TOPIC_MOD_ECHSEN_VERTRAUEN, TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, "Znalazlem rekina bagiennego.", "Znalezlismy bialego rekina bagiennego i mloda jaszczurka podaza za nim. To powinno byc mozliwe.");
 			B_SetTopicStatus	(TOPIC_MOD_ECHSEN_SUMPFHAIFINDEN, LOG_SUCCESS);
 
 			B_GivePlayerXP	(500);
@@ -1477,7 +1477,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Echsis_Geheimnis = 1;
 
-			B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Das sollte für's erste reichen. Jetzt sollte ich bei Albi vorbeischauen.");
+			B_LogEntry	(TOPIC_MOD_ECHSIS_EIERSUCHE, "Na razie to powinno byc mozliwe. Teraz powinienem zatrzymac sie przy Albi' s.");
 
 			// Spawnen der zwei neuen Echsen
 
@@ -1528,7 +1528,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Eremit_Harpien = 1;
 
-				B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "Das sollten wohl alle Flattermänner ... oder Flatterfrauen ... wie auch immer gewesen sein.");
+				B_LogEntry	(TOPIC_MOD_EREMIT_HARPIEN, "Przypuszczam, ze to wlasnie powinni robic wszyscy trzepotajacy...... .... lub klapki.... w jakikolwiek sposób.");
 			};
 		};
 
@@ -1659,7 +1659,7 @@ FUNC VOID NEBENQUESTS()
 
 				B_GivePlayerXP	(100);
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Ich habe Ulrich aufgehalten.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Zatrzymalem Ulricha.");
 				B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_SUCCESS);
 
 				B_StartOtherRoutine	(Mod_7371_OUT_Richter_REL, "START");
@@ -1676,7 +1676,7 @@ FUNC VOID NEBENQUESTS()
 
 					B_GivePlayerXP	(100);
 
-					B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Ich habe Ulrich gewähren lassen und mitgeholfen, Anna zu befreien.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Pozwalalem Ulrichowi otrzymac nagrode i pomoglem uwolnic Anne.");
 					B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_SUCCESS);
 				};
 			};
@@ -1702,7 +1702,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_GivePlayerXP	(50);
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Henrik sollte zufrieden sein, die Molerats baden jetzt in ihrem eigenen Blut.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_SCHWEINE, "Henrik powinien byc zadowolony, Moleraty kapia sie teraz we wlasnej krwi.");
 		};
 
 		// Henker nur im Faustkampf verwundbar
@@ -1724,7 +1724,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_LeonhardRuprecht = 2;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Ich habe Ruprechts Truhe geleert.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Opróznilem klatke piersiowa Ruprechta.");
 		};
 
 		// Ein rätselhaftes Verschwinden
@@ -1743,7 +1743,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_EndresIndizien = 1;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich sollte mit meinen Erkenntnissen zum Richter gehen und ihm den Fall erklären.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Powinienem isc do sedziego z moimi ustaleniami i wyjasnic mu sprawe.");
 
 			Wld_InsertNpc	(Mod_7492_OUT_Roman_REL, "REL_CITY_294");
 		};
@@ -1781,13 +1781,13 @@ FUNC VOID NEBENQUESTS()
 			{
 				if (Mod_REL_Hasenfuss == 4) // Gemeinsam
 				{
-					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan und ich haben die Graslandscavenger gemeinsam erlegt.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ivan i ja razem zastrzelilismy gospodarzy lak.");
 
 					Mod_REL_Hasenfuss = 8;
 				}
 				else if (Mod_REL_Hasenfuss == 5) // Alleine
 				{
-					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Ich habe die Graslandscavenger allein erlegt.");
+					B_LogEntry	(TOPIC_MOD_KHORATA_HASENFUSS, "Strzelilem Graslandscavenger' a na wlasna reke.");
 
 					Mod_REL_Hasenfuss = 9;
 				};
@@ -1804,7 +1804,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_FakeGeist = 1;
 
-			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Von einer Seele ist auf dem Friedhof weit und breit nichts zu sehen. Ich sollte in einer anderen Nacht wiederkommen, wenn jemand in Khorata gestorben ist.");
+			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Na calym cmentarzu nie ma nic, co mozna by zobaczyc na duszy. Powinienem wrócic kolejnej nocy, kiedy ktos zmarl w Khoracie.");
 		};
 
 		if (Mod_Jim_Schutz == 1)
@@ -1813,7 +1813,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_Schutz = 2;
 
-			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Das Amulett funktioniert einwandfrei.");
+			B_LogEntry	(TOPIC_MOD_JIM_SCHUTZ, "Amulet dziala doskonale.");
 
 			B_RemoveNpc	(Mod_7610_OUT_Endres_REL);
 		};
@@ -1838,7 +1838,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Jim_Freudenspender = 3;
 
-			B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "Ich habe das Paket Freudenspender aus dem Lagerhaus entwendet.");
+			B_LogEntry	(TOPIC_MOD_JIM_FREUDENSPENDER, "Skradam paczke przysmaków z magazynu.");
 		};
 
 		if (Mod_Jim_Freudenspender == 5)
@@ -1859,7 +1859,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_REL_Kandidat = 1;
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ich kann mir nun ein Bild von allen drei Kandidaten machen und sollte August mitteilen, welche Entscheidung ich getroffen habe.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Moge teraz uzyskac obraz wszystkich trzech kandydatów i powiedziec sierpniowi, jaka decyzje podjalem.");
 			};
 		};
 
@@ -1883,35 +1883,35 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_REL_TheodorusS_Counter == 1)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_00"); //Verkündigung im Namen des Theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_00"); //Ogloszenie w imieniu Teodoru
 			};
 			if (Mod_REL_TheodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_01"); //Bürger Khoratas, ich, der neue Stadthalter, informiere euch hiermit über unverzüglich in Kraft tretende Änderungen im Streik der Bergleute.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_01"); //Obywatele Khoratasa, ja, nowy gubernator, niniejszym informujemy Panstwa o wszelkich zmianach w strajku górniczym, które natychmiast wejda w zycie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 11)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_02"); //Die von ihnen zurecht vorgetragenen Beschwerden werden einer eingehenden Prüfung unterzogen;
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_02"); //Skargi, które slusznie zlozyli, podlegaja szczególowej analizie;
 			};
 			if (Mod_REL_TheodorusS_Counter == 16)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_03"); //erst dann werde ich entscheiden, ob die Arbeit in der Mine unter neuen Bedingungen wieder aufgenommen wird.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_03"); //tylko wtedy zdecyduje, czy wznowic prace w kopalni na nowych warunkach.
 			};
 			if (Mod_REL_TheodorusS_Counter == 21)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_04"); //Die bisher zu verzeichnenden Todesfälle sind tragisch, doch ich werde einen Weg finden, die betroffenen Familien zu entschädigen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_04"); //Dotychczasowe smierci sa tragiczne, ale znajde sposób na zrekompensowanie rodzinom, które ucierpialy.
 			};
 			if (Mod_REL_TheodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_05"); //Ich bitte euch inständig, die Bergleute nicht euren eventuell angestauten Zorn spüren zu lassen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_05"); //Blagam, zebyscie nie pozwolili górnikom poczuc wasza mozliwa zlosc.
 			};
 			if (Mod_REL_TheodorusS_Counter == 31)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_06"); //In Hochachtung,
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_06"); //Odpowiednio,
 			};
 			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //Theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //teatry
 			};
 			if (Mod_REL_TheodorusS_Counter == 41)
 			{
@@ -1919,7 +1919,7 @@ FUNC VOID NEBENQUESTS()
 
 				CutsceneAn = FALSE;
 
-				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Ich habe die Botschaft verlesen.");
+				B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Czytam wiadomosc.");
 
 				B_GivePlayerXP	(100);
 
@@ -1927,7 +1927,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7516_OUT_Lukas_REL,	"THEODORUS");
 				AI_Teleport	(Mod_7516_OUT_Lukas_REL,	"REL_CITY_106");
 
-				// Theodorus' Versammlung vor Stadttor
+				// teatry' Versammlung vor Stadttor
 
 				B_StartOtherRoutine	(Mod_7620_OUT_Wache_REL, "THEODORUS");
 				B_StartOtherRoutine	(Mod_7621_OUT_Wache_REL, "THEODORUS");
@@ -1968,31 +1968,31 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 				AI_TurnToNpc	(hero, Mod_7382_OUT_Theodorus_REL);
 
-				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_TheodorusTor_09_00"); //Hast du noch ein letztes Mal Zeit? Wir stehen hier von einem kleinen Problem.
+				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_teatryTor_09_00"); //Masz ostatni raz? Jestesmy tutaj o malym problemie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_01"); //Worum geht's?
+				AI_Output(hero, NULL, "Info_Mod_Hero_teatryTor_15_01"); //Co o tym chodzi?
 			};
 			if (Mod_REL_TheodorusS_Counter == 11)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_02"); //(murmelt) Anselm scheint noch in den Gehirnen gewisser Leute fortzuleben ...
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_teatryTor_13_02"); //(umbles) Anselm nadal zdaje sie zyc w mózgu niektórych ludzi.... Wiecej
 			};
 			if (Mod_REL_TheodorusS_Counter == 16)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, Mod_7385_OUT_August_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_03"); //Schnauze!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_03"); //Wylaczyc sie!
 			};
 			if (Mod_REL_TheodorusS_Counter == 21)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_04"); //(zum Helden) Ich warne dich, misch dich nicht ein.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_04"); //Ostrzegam, nie wtracajcie sie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_05"); //Klingt ja fast wie eine Einladung.
+				AI_Output(hero, NULL, "Info_Mod_Hero_teatryTor_15_05"); //Brzmi to niemal jak zaproszenie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 31)
 			{
@@ -2000,15 +2000,15 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, Mod_7620_OUT_Wache_REL);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, Mod_7620_OUT_Wache_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_06"); //Ihr wollt's wohl nicht begreifen, wie? Verpisst euch aus unserer Stadt, ihr Schlappschwänze, sonst gibt's aufs Maul.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_06"); //Nie chcesz zrozumiec, czy? Wyrzuc fuzje z naszego miasta, wyskakujesz, albo rzuce cie w usta.
 			};
 			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_07"); //Ihr seid hoffnungslos in der Unterzahl.
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_teatryTor_13_07"); //Jestes beznadziejnie liczniejszy.
 			};
 			if (Mod_REL_TheodorusS_Counter == 41)
 			{
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_08"); //(lacht hämisch) Das wollen wir ja mal sehen. Zeigen wir den Verrätern, wer Herr im Haus ist!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_08"); //(smiech zwawo) Tego wlasnie chcemy. Pokazmy sprzedawczyków, którzy sa mistrzem domu!
 
 				B_StartOtherRoutine	(Mod_7375_OUT_Gerichtswache_02, "STADTTOR");
 				AI_Teleport	(Mod_7375_OUT_Gerichtswache_02, Mod_7375_OUT_Gerichtswache_02.wp);
@@ -2054,19 +2054,19 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_00"); //Zieh deine Waffe, Unwürdiger! Du hattest es schon lange in der Hand, die Arbeitsbedingungen für uns Buddler zu erleichtern!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_00"); //Narysuj swoja bron, niegodnego czlowieka! Miales go w reku przez dlugi czas, aby ulatwic nam prace kopaczom!
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_01"); //(beschwichtigend) Der Erzabbau geschah auf Anweisung Anselms. Ich wusste nichts von euren Bedingungen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_01"); //Wydobycie rudy wykonano na zlecenie firmy Anselm. Nie wiedzialem o waszych warunkach.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_02"); //Pah, Lügner! (hustet) Bist du zu feige, mir im Kampf entgegen zu treten?
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_02"); //Cokolwiek, klamca! (kaszel) Czy jestes zbyt tchórzliwy, aby stawic czola mnie w walce?
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_03"); //Beruhig dich. Wir sind hier, um eure Situation zu ändern.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_03"); //Spokojny, spokojny. Jestesmy tutaj, aby zmienic Twoja sytuacje.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
@@ -2099,7 +2099,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_04"); //Na gut, schön. Was schlägst du also vor?
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_04"); //Wszystkie sluszne, grzywny. Co Pan zatem sugeruje?
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2132,7 +2132,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_05"); //Es tut mir Leid, wenn ich meinen Teil dazu beigetragen habe. Aber es geht hier nicht darum, einen Schuldigen zu finden, sondern aus den Fehlern zu lernen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_05"); //Przykro mi, ze bralem udzial. Nie chodzi jednak o to, aby znalezc winnych, ale o uczenie sie na bledach.
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2150,27 +2150,27 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_REL_WendelS_Counter == 1)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_06"); //Mein Vorschlag ist, dass die Arbeit der Buddler gesetzlich verankert wird.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_06"); //Proponuje, aby praca buddystów byla zapisana w prawie.
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_07"); //Bisher gab es weder eine schriftliche Bestätigung über das Gehalt, noch feste Arbeitszeiten. Das muss geändert werden.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_07"); //Dotychczas nie bylo pisemnego potwierdzenia wynagrodzenia lub ustalonego czasu pracy. Nalezy to zmienic.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_08"); //Das reicht nicht! Viele von uns arbeiten gezwungenermaßen, wir hatten nie die Wahl, zu unserer alten Arbeit zurückzukehren.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_08"); //To nie wystarczy! Wielu z nas jest zmuszonych do pracy, nigdy nie mielismy wyboru powrotu do starej pracy.
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_09"); //(hustet) Jeder soll entscheiden können, ob er im Bergbau bleiben will oder nicht.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_09"); //Kaszel) Kazdy powinien miec mozliwosc decydowania o tym, czy chce pozostac w górnictwie.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_10"); //Ich würde es gern umsetzen, aber ...
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_10"); //Chcialbym to przelozyc na praktyke, ale.....
 			};
 			if (Mod_REL_WendelS_Counter == 26)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_11"); //Kein Aber! Das ist meine oberste Forderung!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_11"); //Ale nie! To jest moje pierwsze zadanie!
 			};
 			if (Mod_REL_WendelS_Counter == 31)
 			{
@@ -2203,11 +2203,11 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_12"); //Dann brauchen wir auf jeden Fall eine bessere Bezahlung! Ich arbeite nicht so wie bisher weiter!
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_12"); //Wtedy na pewno potrzebujemy lepszej zaplaty! Nie bede dalej pracowac tak dalej!
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_13"); //Das ist es, was ich mir vorgestellt habe. Wärst du damit zufrieden?
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_13"); //To wlasnie sobie wyobrazalem. Czy bylby Pan z tego zadowolony?
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
@@ -2240,7 +2240,7 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7480_OUT_Wendel_REL, Mod_7492_OUT_Roman_REL);
 				AI_TurnToNpc	(Mod_7492_OUT_Roman_REL, Mod_7480_OUT_Wendel_REL);
 
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_14"); //(niedergeschlagen) In Ordnung, die Bergarbeiter sollen die Wahl haben. Bist du dann zufrieden?
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_14"); //Górnicy powinni miec wybór. Czy bedziecie Panstwo zadowoleni?
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
@@ -2258,19 +2258,19 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Mod_REL_WendelS_Counter == 1)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_15"); //Für das erlittene Unrecht ist natürlich noch eine Entschädigung fällig. (hustet)
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_15"); //Oczywiscie nadal nalezne jest odszkodowanie za doznana krzywde. (kaszel)
 			};
 			if (Mod_REL_WendelS_Counter == 6)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_16"); //(ächzt) Entschädigung? Ich habe einen Blick auf die Finanzen der Stadt geworfen.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_16"); //Odszkodowanie? Ogladalem finanse miasta.
 			};
 			if (Mod_REL_WendelS_Counter == 11)
 			{
-				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_17"); //Wir haben so viele Schulden, dass wir kein einziges Goldstück mehr ausgeben dürften.
+				AI_Output(Mod_7480_OUT_Wendel_REL, NULL, "Info_Mod_Hero_WendelRoman_01_17"); //Mamy tyle dlugów, ze nie powinnismy byc w stanie wydac ani jednej zlotej monety.
 			};
 			if (Mod_REL_WendelS_Counter == 16)
 			{
-				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_18"); //Das Geld ist dir also wichtiger als die Bergleute. Verstehe. Ich denke, dazu gibt es nichts mehr zu sagen.
+				AI_Output(Mod_7492_OUT_Roman_REL, NULL, "Info_Mod_Hero_WendelRoman_08_18"); //Wiec pieniadze sa dla Ciebie wazniejsze niz górnicy. Widze. Nie sadze, aby pozostalo mi nic do powiedzenia.
 			};
 			if (Mod_REL_WendelS_Counter == 21)
 			{
@@ -2298,7 +2298,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_REL_LukasS = 1;
 
-			B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Die Buddler eröffneten das Feuer. Alle niedergemacht.");
+			B_LogEntry	(TOPIC_MOD_KHORATA_UNRUHEN, "Buddlerzy otworzyli ogien. Zabijaj ich wszystkich.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Fuego_Unruhen))
@@ -2327,7 +2327,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Dam_Spawned = 2;
 
-			B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "Ich habe das Amulett. Dam scheint tatsächlich der Verdammnis anheim gefallen zu sein.");
+			B_LogEntry	(TOPIC_MOD_SANCHO_DAM, "Mam amulet. Wydaje sie, ze zapora w rzeczywistosci popadla w potepienie.");
 		};
 
 		// Unkraut und Äpfel
@@ -2341,7 +2341,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Botschek_Gaertner = 1;
 
-				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "Und jetzt die Äpfel. Aber ... Augenblick mal!");
+				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "A teraz jablka. Ale.... Odczekaj minute, poczekaj chwile!");
 
 				Apfelbaum_Botschek_01.guild = GIL_STONEGUARDIAN;
 				Npc_SetTrueGuild (Apfelbaum_Botschek_01, GIL_STONEGUARDIAN);
@@ -2367,7 +2367,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Botschek_Gaertner = 2;
 
-				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "So, das war ein Massaker ... aber ich habe die Äpfel.");
+				B_LogEntry	(TOPIC_MOD_BOTSCHEK_GAERTNER, "Byla to wiec masakra..... ale ja mam jablka.");
 			};
 		};
 
@@ -2379,7 +2379,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Viran_Sumpfbeeren = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "Ich habe die Sumpfbeeren.");
+			B_LogEntry	(TOPIC_MOD_VIRAN_SUMPFBEEREN, "Dostalem morwy.");
 		};
 
 		if (Mod_SumpfbeerenTraum == 0)
@@ -2420,7 +2420,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 2)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Frost) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Interessant. Viele Schätze hat er bei sich ... und diesen sonderbaren Dolch.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_WASSERLEICHEN, "Ciekawe. Ma z soba wiele skarbów.... i dziwaczny sztylet.");
 
 			Mod_Botschek_Wasserleichen = 3;
 		};
@@ -2428,7 +2428,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 3)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Seuche) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Bei einer Stelle im Moor mit Gräbern und Folterinstrumenten habe ich einer dämonischen Gestalt einen weiteren Dolch abgenommen. Ich sollte Botschek darüber unterrichten.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "W miejscu w moczarze z grobami i narzedziami tortur wzialem kolejny sztylet z demonicznej figury. Poinformowano mnie o tym fakcie Botschek.");
 
 			Mod_Botschek_Wasserleichen = 4;
 		};
@@ -2436,7 +2436,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 4)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Gift) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Der Giftmischer wäre Geschichte. Auf zu Botschek.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Truciarzem bylaby historia. Wylaczony do Botscheku.");
 
 			Mod_Botschek_Wasserleichen = 5;
 		};
@@ -2445,7 +2445,7 @@ FUNC VOID NEBENQUESTS()
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Versengen) == 1)
 		&& (!Npc_IsInState(Mod_7650_OUT_Botschek_REL, ZS_Talk))
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Ich habe den Dolch.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Mam sztylet.");
 
 			Mod_Botschek_Wasserleichen = 6;
 		};
@@ -2453,7 +2453,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 6)
 		&& (Npc_HasItems(hero, ItMw_Ritualdolch_Blut) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Der letzte Dolch. Nun sollte ich den Zugang öffnen können.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Ostatni sztylet. Teraz powinienem móc otworzyc wejscie.");
 
 			Mod_Botschek_Wasserleichen = 7;
 		};
@@ -2512,7 +2512,7 @@ FUNC VOID NEBENQUESTS()
 		if (Mod_Botschek_Wasserleichen == 12)
 		&& (Npc_HasItems(hero, ItMi_Focus_Moor) == 1)
 		{
-			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Dem lebendigen Podest entriss ich einen grünen Fokus. Ob er was mit der früheren Siedlung und der Macht des Sumpfes zu tun hat? Ich muss Botschek dazu befragen.");
+			B_LogEntry	(TOPIC_MOD_BOTSCHEK_SEUCHENDOLCH, "Z zywej platformy wyrylam zielona ostrosc. Zastanawiam sie, czy ma to cos wspólnego z dawnym osadnictwem i potega bagna. Musze o to zapytac Botscheka.");
 
 			Mod_Botschek_Wasserleichen = 13;
 		};
@@ -2589,7 +2589,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Herek_Zombie = 1;
 
-				B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Von Schätzen nichts zu sehen. Herek kann was erleben!");
+				B_LogEntry	(TOPIC_MOD_HEREK_GOLD, "Nic z skarbów. Herek moze cos zrobic!");
 
 				B_StartOtherRoutine	(Mod_7670_STT_Herek_REL, "TOT");
 			};
@@ -2697,7 +2697,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_AlvarDead = 4;
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Ich habe die Rüstung. Jetzt muss ich schnell zurück zu Thys.");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Mam zbroje. Teraz musze wrócic do Thysa w pospiechu.");
 		};
 
 		if (Mod_AlvarKristall == 0)
@@ -2707,7 +2707,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_Say_Overlay	(hero, NULL, "$ALVARKRISTALL02");
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Ich habe den Kristall. Jetzt zurück zu Thys.");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Dostalem krysztal. Teraz wróc do Thys.");
 
 			AI_Teleport	(Mod_7564_OUT_Knatus_EIS, "EIS_76");
 			AI_Teleport	(Mod_7563_OUT_Brutus_EIS, "EIS_76");
@@ -2742,7 +2742,7 @@ FUNC VOID NEBENQUESTS()
 
 			B_Say_Overlay	(hero, NULL, "$ALVARKRISTALL03");
 
-			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Obwohl ich den Beweis ihrer Schuld erbracht habe, schenkten die Bewohner diesem keine Beachtung und warfen mich raus. Aber was ist das? Ein Pfeil mit Botschaft ...");
+			B_LogEntry	(TOPIC_MOD_EIS_UNSCHULDIG, "Mimo ze udowodnilem swoja wine, mieszkancy nie zwracali na to uwagi i wyrzucili mnie. Ale co to jest? Strzalka z komunikatem....");
 
 			Wld_SendTrigger	("EVT_MESSAGE_ALVARKRISTALL");
 		};
@@ -2778,22 +2778,22 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_7565_HEX_Hexe_EIS, hero);
 
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_00"); //So, wen haben wir denn hier? Doch nicht etwa jemanden, der die Pläne meiner Schwestern vereiteln will?
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_00"); //A wiec kto nas tutaj ma? Kto nie chce udaremnic planów moich sióstr?
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 8)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_01"); //Dachtest du wirklich, dass du so einfach Zugang zu diesem mächtigen Werkzeug bekommen könntest? Du Narr!
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_01"); //Czy naprawde myslales, ze tak latwo mozesz uzyskac dostep do tego poteznego narzedzia? Zludzasz!
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 13)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_02"); //Dem Einfluss der Eriskünste magst du zwar widerstanden haben, aber echter Hexenmagie wirst du nichts entgegensetzen können.
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_02"); //Byc moze oparles sie wplywowi sztuk lodowcowych, ale nie bedziesz w stanie oprzec sie prawdziwej magii czarownic.
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 18)
 			{
-				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_03"); //Und nun bereite dich darauf vor zu sterben.
+				AI_Output(Mod_7565_HEX_Hexe_EIS, NULL, "Info_Mod_Traenenkristall_17_03"); //Teraz przygotuj sie na smierc.
 			};
 
 			if (Mod_Traenenkristall_Sequenz == 23)
@@ -2812,7 +2812,7 @@ FUNC VOID NEBENQUESTS()
 
 				Mod_AlvarKristall = 8;
 
-				Mod_7561_OUT_Alvar_EIS.name = "Unbekannter";
+				Mod_7561_OUT_Alvar_EIS.name = "nieznajomy";
 			};
 
 			Mod_Traenenkristall_Sequenz += 1;
@@ -2835,7 +2835,7 @@ FUNC VOID NEBENQUESTS()
 			AI_TurnToNpc	(hero, Mod_7561_OUT_Alvar_EIS);
 			AI_GotoNpc	(hero, Mod_7561_OUT_Alvar_EIS);
 
-			Mod_7561_OUT_Alvar_EIS.name = "Unbekannter";
+			Mod_7561_OUT_Alvar_EIS.name = "nieznajomy";
 		};
 
 		// Sicheres Geleit
@@ -2889,7 +2889,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_Herkuleskraut = 1;
 
-			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "Ich habe die Pflanzen.");
+			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHKRAUT, "Mam rosliny.");
 		};
 
 		// Den Lurkern keine Ruhe lassen ...
@@ -2900,7 +2900,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_Herkuleskraut = 2;
 
-			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "So, das sollten alle gewesen sein. Damit ist der See um eine Art ärmer ...");
+			B_LogEntry	(TOPIC_MOD_SLD_JEREMIAHLURKER, "Cóz, to powinien byc kazdy. W ten sposób jezioro jest ubozsze o cos w rodzaju....");
 		};
 
 		// Morastwürmer und Sumpfkrabben
@@ -2910,7 +2910,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_NL_JeremiahHasEier = 5;
 
-			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Ich habe drei Eier. Jetzt nur noch ins Neue Lager damit.");
+			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Mam trzy jajka. Teraz tylko do nowego magazynu.");
 		};
 
 		if (Mod_NL_JeremiahHasEier == 5)
@@ -2926,7 +2926,7 @@ FUNC VOID NEBENQUESTS()
 
 			AI_PlayAni	(hero, "T_PLUNDER");
 
-			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Ok, das wäre geschafft. Mal sehen, was in den nächsten Tagen passiert.");
+			B_LogEntry	(TOPIC_MOD_NL_PLAGE, "Dobrze, to sie stalo. Zobaczmy, co dzieje sie w ciagu najblizszych kilku dni.");
 		};
 
 		// Der flüchtige Bauer
@@ -2964,8 +2964,8 @@ FUNC VOID NEBENQUESTS()
 
 				Mod_NL_TalkesselProblem = 3;
 
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce trifft sich offenbar regelmäßig mit Fester. Scheint, als würde es um schmutzige Geschäfte mit Sumpfkraut gehen.");
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Soso, ich sollte mal ein Schwätzchen mit Fester halten.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce wydaje sie regularnie spotykac z firma Fester. Wyglada to tak, jakby chodzilo o brudne transakcje na bagnie.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Soso, powinienem porozmawiac z Festerem.");
 			};
 		};
 
@@ -2976,11 +2976,11 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_NL_TalkesselProblem = 4;
 
-				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Das gibt ein klares Bild. Lee sollte davon erfahren.");
+				B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Daje to jasny obraz sytuacji. Lee powinien o tym wiedziec.");
 
 				AI_StandUP	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_KesselProblem_15_00"); //Das gibt ein klares Bild. Lee sollte davon erfahren.
+				AI_Output(hero, NULL, "Info_Mod_Hero_KesselProblem_15_00"); //Daje to jasny obraz sytuacji. Lee powinien o tym wiedziec.
 			};
 		};
 
@@ -3021,42 +3021,42 @@ FUNC VOID NEBENQUESTS()
 
 			if (Mod_NL_BruceTot_Counter == 3)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_00"); //Tja, hast wohl nicht das gefunden, was du erwartet hast, oder?
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_00"); //Cóz, chyba nie znalazlem tego, czego sie spodziewales, czy ja?
 			};
 
 			if (Mod_NL_BruceTot_Counter == 8)
 			{
-				AI_Output(hero, NULL, "Info_Mod_SentenzaBullco_Ueberfall_15_01"); //Was zum Teufel ...?
+				AI_Output(hero, NULL, "Info_Mod_SentenzaBullco_Ueberfall_15_01"); //Cóz za pieklo....?
 			};
 
 			if (Mod_NL_BruceTot_Counter == 13)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_02"); //Aber ich bin so freundlich. Das rostige Schwert beim Schürfer darfst du für deine Mühen behalten, buahaha.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_02"); //Ale jestem bardzo zyczliwy. Mozesz zachowac zardzewialy miecz przez poszukiwacza dla twojego ucisku, buahahahaha.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 18)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_03"); //Du wirst dich ohnehin gleich zu ihm Gesellen dürfen, du einfältiger Spinner.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_03"); //Bedziesz mógl sie do niego dolaczyc w krótkim czasie, glupi glupiec.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 23)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_04"); //Ich sülze dir etwas über ein Familienschwert vor und du Idiot läufst tatsächlich los.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_04"); //Skocze cie o miecz rodzinny, a ty idiotka uciekasz.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 28)
 			{
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_05"); //Hatte eigentlich erwartet, dass es hier genug Viecher gäbe, die dich in Stücke reißen würden ... umso mehr Bruce die Leiche hier heruntergeworfen hatte.
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_05"); //Faktycznie spodziewano sie, ze tu bedzie wystarczajaco duzo zwierzat, aby cie rozerwac.... Im wiecej Bruce rzucil tu cialo.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 33)
 			{
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_06"); //Tja, da schaust du, hä. Hast du wirklich gedacht, Bruce hätte das alleine hinbekommen? Der größte Teil davon ist in unsere Taschen geflossen.
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_06"); //No cóz, tam patrzysz, huh? Czy naprawde sadzisz, ze Bruce mogla to zrobic samodzielnie? Wiekszosc trafila do naszych kieszeni.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 38)
 			{
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_07"); //Aber wegen dir sitzen wir jetzt auf dem Trockenen. Und  das wirst du jetzt büßen.
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_06_07"); //Ale dzieki Tobie jestesmy teraz na suchej ziemi. I za to zaplacisz.
 
 				B_StartOtherRoutine	(Mod_1290_SLD_Roscoe_MT, "UEBERFALL");
 				B_StartOtherRoutine	(Mod_525_SLD_Lee_MT, "UEBERFALL");
@@ -3071,14 +3071,14 @@ FUNC VOID NEBENQUESTS()
 			{
 				AI_TurnToNpc	(Mod_525_SLD_Lee_MT, Mod_796_SLD_Sentenza_MT);
 
-				AI_Output(Mod_525_SLD_Lee_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_04_08"); //Das glaube ich nicht. Und ja, das war alles, was ich wissen wollte.
+				AI_Output(Mod_525_SLD_Lee_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_04_08"); //Nie sadze. I tak, to wszystko, co chcialem wiedziec.
 			};
 
 			if (Mod_NL_BruceTot_Counter == 48)
 			{
 				AI_TurnToNpc	(Mod_796_SLD_Sentenza_MT, Mod_779_SLD_Bullco_MT);
 
-				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_09"); //Verdammt, kämpf um dein Leben!!!
+				AI_Output(Mod_796_SLD_Sentenza_MT, NULL, "Info_Mod_SentenzaBullco_Ueberfall_09_09"); //Obamuj, walcz o swoje zycie!
 			};
 
 			if (Mod_NL_BruceTot_Counter == 53)
@@ -3115,11 +3115,11 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Urs_Hund = 1;
 
-				B_LogEntry	(TOPIC_MOD_URS_HUND, "So, eigentlich habe ich jetzt alles zusammen.");
+				B_LogEntry	(TOPIC_MOD_URS_HUND, "No cóz, wlasciwie to wszystko mam teraz razem.");
 
 				AI_StandUp	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Urs_Hund_15_00"); //So, eigentlich habe ich jetzt alles zusammen.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Urs_Hund_15_00"); //No cóz, wlasciwie to wszystko mam teraz razem.
 
 				Wld_InsertItem	(ItWr_UrsNotiz,	"FP_ITEM_URS_NOTIZ");
 
@@ -3167,7 +3167,7 @@ FUNC VOID NEBENQUESTS()
 
 			if (Mod_Urs_Hund_Counter == 12)
 			{
-				AI_Output (Mod_7649_OUT_Urs_MT, NULL, "Info_Mod_Urs_Ritual_12_00"); //(erschöpft) Puhh, das war vielleicht ein Kraftakt. (wieder entschlossener) So, aber nun wollen wir mal sehen.
+				AI_Output (Mod_7649_OUT_Urs_MT, NULL, "Info_Mod_Urs_Ritual_12_00"); //(Zuzyty) Phew, to byl dosc wyczyny sily. Tam, ale zobaczmy.
 			};
 
 			if (Mod_Urs_Hund_Counter == 18)
@@ -3243,7 +3243,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Fingers_Nek = 1;
 
-			B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Ich habe das Amulett.");
+			B_LogEntry	(TOPIC_MOD_FINGERS_NEK, "Mam amulet.");
 		};
 
 		// Was die Finsternis hervorbringt
@@ -3272,7 +3272,7 @@ FUNC VOID NEBENQUESTS()
 			{
 				Mod_Erol_Fahrender = 7;
 
-				B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Aha. Das wird es wohl sein, was die Feuerleute wollen. Gleich mal zu Erol ...");
+				B_LogEntry	(TOPIC_MOD_EROL_FEUERMAGIER, "Uh-huh. Przypuszczam, ze tego wlasnie chca strazacy. Od razu do Erol.....");
 			};
 		};
 
@@ -3659,7 +3659,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Halfmar_Pflanzen = 1;
 
-			B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Ich habe die Kräuter für Halfmar.");
+			B_LogEntry	(TOPIC_MOD_ALFANS_HALFMAR, "Mam ziola dla Halfmara.");
 		};
 
 		if (Npc_GetDistToWP(hero, "SUEDMINE_15") < 1000)
@@ -3679,7 +3679,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			Mod_Geist_EIS_Bruder = 2;
 
-			B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Strewaks Notizen! Es scheint, als hätte ich das Geheimnis um seinen Verbleib gelüftet. Die eisige Kälte des Eisriesen wurde ihm zum Verhängnis und verhinderte, dass sein Körper jemals zerfiel und ins Erdreich einging. Sobald ich dem ruhelosen Geist seines Bruders davon berichtet habe, sollte er endlich Frieden finden.");
+			B_LogEntry	(TOPIC_MOD_GEIST_BRUDER, "Nuty Strewaka! Wyglada na to, ze odkrylem tajemnice jego miejsca pobytu. Lodowate zimno lodowego olbrzyma stalo sie jego upadkiem i uniemozliwilo mu rozpadniecie sie jego ciala i wejscie na ziemie. Gdy tylko powiedzialem o tym niespokojnego ducha swego brata, powinien on wreszcie znalezc pokój.");
 		};
 
 		if (Npc_IsDead(Monster_11068_Eisriese_EIS))
@@ -3829,7 +3829,7 @@ FUNC VOID NEBENQUESTS()
 				};
 			}; /*end while*/
 
-			B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "Die Gefahr in der Mine dürfte gebannt sein. Ich sollte Xardas davon berichten.");
+			B_LogEntry	(TOPIC_MOD_XARDAS_ALTEMINE, "Niebezpieczenstwo w kopalni powinno byc wyeliminowane. Powinienem o tym powiedziec Xardasowi.");
 
 			Mod_AMQ_Viper_Day = Wld_GetDay();
 		};

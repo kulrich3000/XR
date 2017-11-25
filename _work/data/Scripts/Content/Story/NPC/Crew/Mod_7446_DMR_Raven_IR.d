@@ -1,7 +1,7 @@
 INSTANCE Mod_7446_DMR_Raven_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Raven";
+	name 		= "kruk";
 	guild 		= GIL_OUT;
 	id 			= 7446;
 	voice 		= 10;

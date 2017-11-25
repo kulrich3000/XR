@@ -1,7 +1,7 @@
 instance Mod_7442_SLD_Torlof_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Torlof";
+	name 		= "torflada";
 	guild 		= GIL_NONE;
 	id 			= 7442;
 	voice 		= 1;

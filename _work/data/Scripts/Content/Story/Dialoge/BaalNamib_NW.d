@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Namib_NW_Irdorath3 (C_INFO)
 	information	= Info_Mod_Namib_NW_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Namib_NW_Irdorath3_Condition()
@@ -23,8 +23,8 @@ FUNC INT Info_Mod_Namib_NW_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Namib_NW_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Namib_NW_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Namib_NW_Irdorath3_02_01"); //Schade. Ich gehe dann wieder zurück ins Lager.
+	AI_Output(hero, self, "Info_Mod_Namib_NW_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Namib_NW_Irdorath3_02_01"); //Zbyt zle. Wróce do obozu.
 
 	Mod_NamibDabei = 3;
 
@@ -53,7 +53,7 @@ FUNC INT Info_Mod_Namib_NW_EXIT_Condition()
 
 FUNC VOID Info_Mod_Namib_NW_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Namib_NW_EXIT_02_00"); //Dem Ziel entgegen!
+	AI_Output(self, hero, "Info_Mod_Namib_NW_EXIT_02_00"); //Do celu!
 
 	AI_StopProcessInfos	(self);
 };

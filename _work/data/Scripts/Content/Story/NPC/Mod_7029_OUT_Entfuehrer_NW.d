@@ -1,7 +1,7 @@
 instance Mod_7029_OUT_Entfuehrer_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Entführer"; 
+	name 		= "porywacze"; 
 	guild 		= GIL_OUT;
 	id 			= 7029;
 	voice 		= 1;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Myxir_AW_Hi (C_INFO)
 	information	= Info_Mod_Myxir_AW_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Myxir? Wie kommst du hierher?";
+	description	= "Myxir? Jak sie tu dostales?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Myxir_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_00"); //Myxir? Wie kommst du hierher?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_01"); //Xardas hatte angeordnet, dass ich ein Auge auf dich werfe und verhindere, dass du zu Schaden kommst.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_02"); //Ein Glück für dich, sonst hätte dich diese Gardistin sicher kalt gestellt.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_03"); //(verlegen) Ja, ähm ... danke. Wieso sind wir im Lager der Piraten?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_04"); //Weil das zufällig der einzige Ort in Jharkendar ist, an dem die Garde Innos' noch nicht eingedrungen ist.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_05"); //Was ist mit den Leichen?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_06"); //Untote und der Blutkult griffen uns an. Ich hatte hier bei Greg Stellung bezogen und ihn beim Angriff unterstützt.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_07"); //Es kamen einige um, doch noch können die Piraten standhalten. Aber für wie lange noch?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_08"); //Das Wichtigste ist jetzt, dass wir die Garde Innos' aufhalten, ehe sie Innos' Schwert in ihren Besitz bringen.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_00"); //Myxir? Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_01"); //Xardas kazal mi miec oko na ciebie i zapobiec ci zranienia.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_02"); //Szczescie dla ciebie, albo ta strazniczka na pewno by cie scigala.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_03"); //Tak, um...... dziekuje. Dlaczego jestesmy w obozie Piratów?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_04"); //Bo tak sie sklada, ze jest to jedyne miejsce w Jharkendarze, gdzie Gwardia Innos nie zostala jeszcze najechana.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_Hi_15_05"); //A co z cialami?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_06"); //Nieumarli i zaatakowal nas kult krwi. Stoilem tu z Gregiem i wspieralem go w ataku.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_07"); //Niektórzy ludzie zgineli, ale piraci moga jeszcze przezyc. Ale na ile dluzej?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_Hi_28_08"); //Najwazniejsze jest teraz to, ze zatrzymujemy straz Innosów zanim zajma miecz Innosa.
 
 	Mod_934_PIR_Henry_AW.aivar[AIV_PASSGATE] = TRUE;
 };
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Myxir_AW_WhatNow (C_INFO)
 	information	= Info_Mod_Myxir_AW_WhatNow_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was soll ich tun?";
+	description	= "Co chcesz, abym zrobil?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_WhatNow_Condition()
@@ -50,18 +50,18 @@ FUNC INT Info_Mod_Myxir_AW_WhatNow_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_WhatNow_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_00"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_01"); //Das ist das Anspruchsvolle. Die Gardisten haben es geschafft, ihre Rüstungen so zu verzaubern, dass sie unverwundbar sind.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_02"); //Deshalb benötigen wir eine spezielle Waffe, um die Rüstung zu durchdringen, den Dolch Beliars.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_03"); //Beliars Dolch?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_04"); //Ja. Er kann nur von mächtigen Schwarzmagiern geschmiedet werden und ist vernichtend. Mit einem Schlag kann man die Rüstung eines Gardisten Innos' durchdringen.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_05"); //Jedoch wirkt er nur ein Mal. Die Bauanleitung muss sich irgendwo in Jharkendar befinden. Du musst sie bergen, damit wir den Dolch herstellen können.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_06"); //Wo soll ich anfangen zu suchen?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_07"); //Schwierig zu sagen. Jedoch gibt es im Tal mehrere Herrenhäuser der Erbauer. Am besten versuchst du dort dein Glück.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_00"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_01"); //To wyrafinowana rzecz. Straznikom udalo sie zaczarowac pancerz tak, ze jest on nieskazitelny.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_02"); //Dlatego potrzebujemy specjalnej broni, aby wniknac w pancerz, sztylet Beliara.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_03"); //Sztylet Beliara?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_04"); //Tak. Moze byc kuty tylko przez poteznych czarnych magów i jest niszczycielski. Za jednym ciosem mozna wniknac w pancerz wartownika Innosa ".
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_05"); //Dziala jednak tylko raz. Instrukcja budynku musi znajdowac sie gdzies w Jharkendarzu. Musisz je odzyskac, abysmy mogli zrobic sztylet.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNow_15_06"); //Gdzie chcesz, abym zaczal szukac?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNow_28_07"); //Trudno to powiedziec. W dolinie znajduje sie jednak kilka posiadlosci budowniczych. Lepiej tam spróbowac szczescia.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_BELIARDOLCH, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BELIARDOLCH, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Um die unverwundbaren Gardisten doch besiegen zu können, brauche ich den Dolch Beliars. Diesen kann man nur ein Mal benutzen, doch er zerstört jede Rüstung mit nur einem Schlag. Die Bauanleitung dafür soll sich irgendwo in Jharkendar befinden. Myxir riet mir, die Herrenhäuser zu durchsuchen.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Aby pokonac nieskazitelnych strazników, potrzebuje sztyletu Beliara. Moze byc uzyty tylko raz, ale niszczy kazda zbroje jednym uderzeniem. Instrukcje budowlane mozna znalezc gdzies w Jharkendarzu. Myxir poradzil mi przeszukac rezydencje.");
 };
 
 INSTANCE Info_Mod_Myxir_AW_WhatNext (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_Myxir_AW_WhatNext (C_INFO)
 	information	= Info_Mod_Myxir_AW_WhatNext_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist das Nächste?";
+	description	= "Co dalej?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_WhatNext_Condition()
@@ -85,12 +85,12 @@ FUNC INT Info_Mod_Myxir_AW_WhatNext_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_WhatNext_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNext_15_00"); //Was kommt als nächstes?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_01"); //Wir müssen mehr über das Schwert Innos' herausfinden. Die Erbauer sammelten viele alte Schriften zu mächtigen Artefakten.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_02"); //Du musst eine dieser alten Schriften finden. Vermutlich liegt diese in der Bibliothek der Erbauer im Canyon.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_03"); //Gehe dorthin und finde die Schrift. Sei aber vorsichtig. Die Orks im Canyon haben sich mit der Garde befreundet und bewachen die Bibliothek.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatNext_15_00"); //Co dalej?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_01"); //Musimy dowiedziec sie wiecej o mieczu Innos. Twórcy zgromadzili wiele starozytnych pism, tworzac potezne artefakty.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_02"); //Musisz znalezc jeden z tych starych skryptów. Prawdopodobnie znajduje sie w bibliotece budowniczych kanionu.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatNext_28_03"); //Idz tam i znajdz pismo swiete. Badz jednak ostrozny. Orki w kanionie zaprzyjaznily sie z straznikami i pilnowaly biblioteki.
 
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Wir müssen mehr über das Schwert Innos' herausfinden. Ich soll in der alten Bibliothek der Erbauer im Canyon nachsehen, ob ich alte Aufzeichnungen darüber finden kann. Die Bibliothek soll allerdings von Orks bewacht werden.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Musimy dowiedziec sie wiecej o mieczu Innos. Mam sprawdzic stara biblioteke budowniczych w kanionie, czy moge znalezc jakies stare rekordy. Biblioteke maja jednak pilnowac orki.");
 };
 
 INSTANCE Info_Mod_Myxir_AW_WhatLast (C_INFO)
@@ -101,7 +101,7 @@ INSTANCE Info_Mod_Myxir_AW_WhatLast (C_INFO)
 	information	= Info_Mod_Myxir_AW_WhatLast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Noch etwas?";
+	description	= "Wszystko inne?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_WhatLast_Condition()
@@ -114,14 +114,14 @@ FUNC INT Info_Mod_Myxir_AW_WhatLast_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_WhatLast_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatLast_15_00"); //Noch etwas?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatLast_28_01"); //Ja. Wir müssen Jharkendar zurückgewinnen. Greg hat vor, es zu befreien.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatLast_28_02"); //Sprich mit ihm darüber. Er hat die Pläne.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatLast_15_03"); //Gut, ich werde sofort aufbrechen.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatLast_15_00"); //Wszystko inne?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatLast_28_01"); //Tak. Musimy odzyskac Jharkendend. Greg zamierza ja uwolnic.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_WhatLast_28_02"); //Porozmawiaj z nim o tym. On ma plany.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_WhatLast_15_03"); //Wszystko w porzadku, odejde natychmiast.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_BEFREIUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BEFREIUNG, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Greg will Jharkendar von der Garde Innos' zurückerobern. Ich soll zu ihm gehen, da er die Pläne hat.");
+	B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Greg chce odebrac Jharkendara z gwardii Innos. Chce, abym poszla na jego miejsce, bo ma plany.");
 };
 
 INSTANCE Info_Mod_Myxir_AW_LightHeal (C_INFO)
@@ -132,7 +132,7 @@ INSTANCE Info_Mod_Myxir_AW_LightHeal (C_INFO)
 	information	= Info_Mod_Myxir_AW_LightHeal_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du ein Rune der leichten Wundheilung für mich?";
+	description	= "Masz dla mnie runo lekkich ran gojacych sie?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_LightHeal_Condition()
@@ -145,14 +145,14 @@ FUNC INT Info_Mod_Myxir_AW_LightHeal_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_LightHeal_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_00"); //Hast du ein Rune der leichten Wundheilung für mich?
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_LightHeal_28_01"); //Was willst du damit?
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_02"); //Der Pirat Skip liegt im Sterben, und ohne diese Rune kann der Heiltrank nicht gebraut werden.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_LightHeal_28_03"); //Einen Verbündeten zu verlieren können wir uns nicht leisten. Hier hast du eine.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_00"); //Masz dla mnie runo lekkich ran gojacych sie?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_LightHeal_28_01"); //Co chcesz z nim zrobic?
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_02"); //Piratowy Skip umiera i bez tej runy nie da sie zaparzyc eliksiru uzdrawiajacego.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_LightHeal_28_03"); //Nie mozemy sobie pozwolic na utrate sojusznika. Tutaj masz jeden.
 
 	B_GiveInvItems	(self, hero, ItRu_LightHeal, 1);
 
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_04"); //Danke.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_LightHeal_15_04"); //Dzieki.
 };
 
 INSTANCE Info_Mod_Myxir_AW_BeliarDolch (C_INFO)
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Myxir_AW_BeliarDolch (C_INFO)
 	information	= Info_Mod_Myxir_AW_BeliarDolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe die Bauanleitung gefunden.";
+	description	= "Znalazlem instrukcje budowlane.";
 };
 
 FUNC INT Info_Mod_Myxir_AW_BeliarDolch_Condition()
@@ -176,14 +176,14 @@ FUNC INT Info_Mod_Myxir_AW_BeliarDolch_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_BeliarDolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolch_15_00"); //Ich habe die Bauanleitung gefunden.
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolch_28_01"); //Unglaublich ... zeig her ...
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolch_15_00"); //Znalazlem instrukcje budowlane.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolch_28_01"); //Niewiarygodne.... pokazac mi.....
 
 	B_GiveInvItems	(hero, self, ItWr_Bauplan_BeliarDolch, 1);
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolch_28_02"); //Aha, ein Brocken davon und ein Brocken hiervon. Hmm, nun, du hast nicht zufällig je einen Brocken magisches und schwarzes Erz bei dir?
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolch_28_02"); //Aha, jej bryla i bryla. Hmm, cóz, nie zdarzyloby Ci sie miec z toba bryly magii i czarnej rudy?
 };
 
 INSTANCE Info_Mod_Myxir_AW_BeliarDolchZutaten (C_INFO)
@@ -194,7 +194,7 @@ INSTANCE Info_Mod_Myxir_AW_BeliarDolchZutaten (C_INFO)
 	information	= Info_Mod_Myxir_AW_BeliarDolchZutaten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind sie.";
+	description	= "Oto one.";
 };
 
 FUNC INT Info_Mod_Myxir_AW_BeliarDolchZutaten_Condition()
@@ -209,21 +209,21 @@ FUNC INT Info_Mod_Myxir_AW_BeliarDolchZutaten_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_BeliarDolchZutaten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolchZutaten_15_00"); //Hier sind sie.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolchZutaten_15_00"); //Oto one.
 
 	Npc_RemoveInvItems	(hero, ItMi_Nugget, 1);
 	Npc_RemoveInvItems	(hero, ItMi_Zeitspalt_Addon, 1);
 
-	B_ShowGivenThings	("1 Erz und 1 schwarzes Erz gegeben");
+	B_ShowGivenThings	("1 ruda i 1 ruda czarna podane");
 
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchZutaten_28_01"); //Ausgezeichnet. Ich mache mich gleich an die Arbeit. In wenigen Stunden müsste ich fertig sein.
-	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolchZutaten_15_02"); //Hoffentlich haben wir noch einige Stunden Zeit.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchZutaten_28_01"); //Doskonaly. Bede mial prawo do pracy. Bede gotowy za kilka godzin.
+	AI_Output(hero, self, "Info_Mod_Myxir_AW_BeliarDolchZutaten_15_02"); //Mam nadzieje, ze mamy jeszcze kilka godzin.
 
 	AI_StopProcessInfos	(self);
 
 	Npc_SetRefuseTalk (self, 3600);
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Myxir hat die Zutaten für den Dolch und wird eine Weile brauchen, bis er fertig ist.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Myxir ma skladniki dla sztyletu i wystarczy troche czasu, aby go wykonczyc.");
 };
 
 INSTANCE Info_Mod_Myxir_AW_BeliarDolchFertig (C_INFO)
@@ -247,7 +247,7 @@ FUNC INT Info_Mod_Myxir_AW_BeliarDolchFertig_Condition()
 
 FUNC VOID Info_Mod_Myxir_AW_BeliarDolchFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchFertig_28_00"); //Hier, nimm den Dolch.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchFertig_28_00"); //Tu wez sztylet.
 
 	B_GiveInvItems	(self, hero, ItMw_BeliarDolch, 1);
 
@@ -259,11 +259,11 @@ FUNC VOID Info_Mod_Myxir_AW_BeliarDolchFertig_Info()
 
 	AI_PlayAni	(hero, "T_1HSINSPECT");
 
-	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchFertig_28_01"); //(aufgebracht) Jetzt ist nicht die Zeit, dir das Ding in jedem Detail anzusehen. Lauf los und töte die Bastarde.
+	AI_Output(self, hero, "Info_Mod_Myxir_AW_BeliarDolchFertig_28_01"); //Teraz nie czas przyjrzec sie temu zagadnieniu w kazdym szczególe. Idz dalej i zabij dranie.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Ich habe den Dolch und sollte nun gewappnet sein der Gardistin gegenüberzutreten.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Mam sztylet i teraz powinienem byc przygotowany na straznika.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BELIARDOLCH, LOG_SUCCESS);
 
 	B_Göttergefallen(3, 1);

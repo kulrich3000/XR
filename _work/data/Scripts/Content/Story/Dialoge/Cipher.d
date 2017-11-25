@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Cipher_Hi (C_INFO)
 	information	= Info_Mod_Cipher_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Cipher_Hi_Condition()
@@ -16,15 +16,15 @@ FUNC INT Info_Mod_Cipher_Hi_Condition()
 
 FUNC VOID Info_Mod_Cipher_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cipher_Hi_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_01"); //Hallo.
-	AI_Output(hero, self, "Info_Mod_Cipher_Hi_15_02"); //Handelst du immer noch mit Sumpfkraut?
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_03"); //(leise) Psst, nicht so laut. Es sind keine leichten Zeiten für den Handel mit Sumpfkraut.
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_04"); //Ähhm, du hast nicht zufällig wieder mal einige Sumpfkrautpflanzen oder einige Sumpfkrautstängel bei dir?
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_05"); //Je 10 würden mir echt weiterhelfen und ich würde dir einen guten Preis dafür geben.
+	AI_Output(hero, self, "Info_Mod_Cipher_Hi_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_01"); //Witaj.
+	AI_Output(hero, self, "Info_Mod_Cipher_Hi_15_02"); //Nadal handlujesz roslina bagnista?
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_03"); //Shh, nie tak glosne. Nie jest to latwy czas na handel ambrozja bagienna.
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_04"); //Um, nie zdarzyloby Ci sie miec z toba zadnych roslin kapusty bagiennej lub lodygi ziól bagiennych, czy ty?
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_32_05"); //Dziesiec osób bardzo mi pomoglo, a ja dalbym za to dobra cene.
 	
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_SOELDNER, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_SOELDNER, "Cipher wird mit mir handeln.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_SOELDNER, "Cipher's gonna radzi sobie ze mna.");
 
 	if (Npc_HasItems(hero, ItMi_Joint) >= 10)
 	|| (Npc_HasItems(hero, ItPl_SwampHerb) >= 10)
@@ -34,26 +34,26 @@ FUNC VOID Info_Mod_Cipher_Hi_Info()
 		if (Npc_HasItems(hero, ItPl_SwampHerb) >= 10)
 		&& (Npc_HasItems(hero, ItMi_Joint) >= 10)
 		{
-			Info_AddChoice	(Info_Mod_Cipher_Hi, "Hier hast du 10 Sumpfkrautpflanzen und 10 Stängel.", Info_Mod_Cipher_Hi_D);
+			Info_AddChoice	(Info_Mod_Cipher_Hi, "Tutaj masz 10 roslin bagiennych i 10 lodyg.", Info_Mod_Cipher_Hi_D);
 		};
 		if (Npc_HasItems(hero, ItMi_Joint) >= 10)
 		{
-			Info_AddChoice	(Info_Mod_Cipher_Hi, "Hier hast du 10 Sumpfkrautstängel.", Info_Mod_Cipher_Hi_B);
+			Info_AddChoice	(Info_Mod_Cipher_Hi, "Oto dziesiec lodyg ziól bagiennych.", Info_Mod_Cipher_Hi_B);
 		};
 		if (Npc_HasItems(hero, ItPl_SwampHerb) >= 10)
 		{
-			Info_AddChoice	(Info_Mod_Cipher_Hi, "Hier hast du 10 Sumpfkrautpflanzen.", Info_Mod_Cipher_Hi_A);
+			Info_AddChoice	(Info_Mod_Cipher_Hi, "Oto dziesiec roslin bagiennych.", Info_Mod_Cipher_Hi_A);
 		};
 	};
 };
 
 FUNC VOID Info_Mod_Cipher_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_C_32_00"); //Hey, vielen Dank. Hier hast du 200 Gold und 5 Erz.
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_C_32_00"); //Hej, bardzo dziekuje. Oto 200 zlota i piec rud.
 
 	B_GivePlayerXP	(100);
 
-	B_ShowGivenThings	("200 Gold und 5 Erz erhalten");
+	B_ShowGivenThings	("200 zlota i 5 rudy uzyskano");
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItMi_Nugget, 5);
@@ -63,18 +63,18 @@ FUNC VOID Info_Mod_Cipher_Hi_C()
 
 FUNC VOID Info_Mod_Cipher_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Cipher_Hi_D_15_00"); //Hier hast du 10 Sumpfkrautpflanzen und 10 Stängel.
+	AI_Output(hero, self, "Info_Mod_Cipher_Hi_D_15_00"); //Tutaj masz 10 roslin bagiennych i 10 lodyg.
 
 	Npc_RemoveInvItems	(hero, ItMi_Joint, 10);
 	Npc_RemoveInvItems	(hero, ItPl_SwampHerb, 10);
 
-	B_ShowGivenThings	("10 Sumpfkraut und 10 Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("10 ziól torfowiskowych i 10 lodyg dodanych ziól bagiennych");
 
-	AI_Output(self, hero, "Info_Mod_Cipher_Hi_D_32_01"); //Hey, vielen Dank. Hier hast du 400 Gold und 10 Erz.
+	AI_Output(self, hero, "Info_Mod_Cipher_Hi_D_32_01"); //Hej, bardzo dziekuje. Oto 400 zlota i 10 rud.
 
 	B_GivePlayerXP	(200);
 
-	B_ShowGivenThings	("400 Gold und 10 Erz erhalten");
+	B_ShowGivenThings	("400 zlota i 10 konserwowanych rudy");
 
 	CreateInvItems	(hero, ItMi_Gold, 400);
 	CreateInvItems	(hero, ItMi_Nugget, 10);
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_Cipher_Hi_D()
 
 FUNC VOID Info_Mod_Cipher_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Cipher_Hi_B_15_00"); //Hier hast du 10 Sumpfkrautstängel.
+	AI_Output(hero, self, "Info_Mod_Cipher_Hi_B_15_00"); //Oto dziesiec lodyg ziól bagiennych.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 10);
 	
@@ -93,7 +93,7 @@ FUNC VOID Info_Mod_Cipher_Hi_B()
 
 FUNC VOID Info_Mod_Cipher_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Cipher_Hi_A_15_00"); //Hier hast du 10 Sumpfkrautpflanzen.
+	AI_Output(hero, self, "Info_Mod_Cipher_Hi_A_15_00"); //Oto dziesiec roslin bagiennych.
 
 	B_GiveInvItems	(hero, self, ItPl_SwampHerb, 10);
 	
@@ -108,7 +108,7 @@ INSTANCE Info_Mod_Cipher_Skinner (C_INFO)
 	information	= Info_Mod_Cipher_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du grüne Novizen?";
+	description	= "Chcesz nowicjuszy zieleni?";
 };
 
 FUNC INT Info_Mod_Cipher_Skinner_Condition()
@@ -124,19 +124,19 @@ FUNC INT Info_Mod_Cipher_Skinner_Condition()
 
 FUNC VOID Info_Mod_Cipher_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Cipher_Skinner_15_00"); //Willst du grüne Novizen?
-	AI_Output(self, hero, "Info_Mod_Cipher_Skinner_32_01"); //Das kann meinem Geschäft nur gut tun, also immer her mit dem Zeug.
-	AI_Output(hero, self, "Info_Mod_Cipher_Skinner_15_02"); //Hier, nimm.
+	AI_Output(hero, self, "Info_Mod_Cipher_Skinner_15_00"); //Chcesz nowicjuszy zieleni?
+	AI_Output(self, hero, "Info_Mod_Cipher_Skinner_32_01"); //To moze tylko zrobic mój biznes, wiec dostac to rzeczy tutaj.
+	AI_Output(hero, self, "Info_Mod_Cipher_Skinner_15_02"); //Wez to tutaj.
 
 	B_GiveInvItems	(hero, self, ItMi_Addon_Joint_01, Npc_HasItems(hero, ItMi_Addon_Joint_01));
 
-	AI_Output(self, hero, "Info_Mod_Cipher_Skinner_32_03"); //Hier dein Gold.
+	AI_Output(self, hero, "Info_Mod_Cipher_Skinner_32_03"); //Oto Twoje zloto.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, Npc_HasItems(self, ItMi_Addon_Joint_01)*30);
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "So, damit bin ich bei Cipher die ganzen grünen Novizen losgeworden.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Tak wiec pozbylem sie wszystkich zielonych nowicjuszy w Cipher.");
 };
 
 INSTANCE Info_Mod_Cipher_Trade (C_INFO)

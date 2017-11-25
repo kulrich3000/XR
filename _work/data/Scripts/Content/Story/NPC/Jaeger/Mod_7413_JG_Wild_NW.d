@@ -1,7 +1,7 @@
 instance Mod_7413_JG_Wild_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wild"; 
+	name 		= "zabawa"; 
 	guild 		= GIL_OUT;
 	id 			= 7413;
 	voice 		= 6;

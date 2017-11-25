@@ -1,7 +1,7 @@
 instance Mod_7314_Ziel_AW (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Plattform";
+	name 		= "pomost";
 	guild		= GIL_NONE;
 	id			= 7314;
 	voice = 1;

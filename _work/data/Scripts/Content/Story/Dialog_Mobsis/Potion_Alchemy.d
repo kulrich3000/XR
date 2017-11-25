@@ -19,7 +19,7 @@ INSTANCE PC_PotionAlchemy_PermHealth_Oeffnen (C_Info)
 	condition		= PC_PotionAlchemy_PermHealth_Oeffnen_Condition;
 	information		= PC_PotionAlchemy_PermHealth_Oeffnen_Info;
 	permanent		= 1;
-	description		= "Flasche öffnen und Pflanzenreste entfernen"; 
+	description		= "Otworzyc butelke i usunac pozostalosci roslin."; 
 };
 
 FUNC INT PC_PotionAlchemy_PermHealth_Oeffnen_Condition ()
@@ -62,7 +62,7 @@ INSTANCE PC_PotionAlchemy_Kakos (C_Info)
 	condition		= PC_PotionAlchemy_Kakos_Condition;
 	information		= PC_PotionAlchemy_Kakos_Info;
 	permanent		= 0;
-	description		= "Wacholder für Kakos vergiften"; 
+	description		= "Jalowiec dla zatrucia Kakos."; 
 };
 
 FUNC INT PC_PotionAlchemy_Kakos_Condition ()
@@ -93,7 +93,7 @@ INSTANCE PC_PotionAlchemy_Daemonisch (C_Info)
 	condition		= PC_PotionAlchemy_Daemonisch_Condition;
 	information		= PC_PotionAlchemy_Daemonisch_Info;
 	permanent		= 0;
-	description		= "Heilung der Besessenheit herstellen"; 
+	description		= "Wyleczyc obsesje"; 
 };
 
 FUNC INT PC_PotionAlchemy_Daemonisch_Condition ()
@@ -114,7 +114,7 @@ FUNC VOID PC_PotionAlchemy_Daemonisch_Info()
 
 	CreateInvItems	(hero, ItPo_HealBesessenheit, 3);
 
-	Print	("3x Heilung der Besessenheit hergestellt!");
+	Print	("3x wyleczenie powstalych obsesji!");
 };
 
 // Pökelfleisch behandeln
@@ -126,7 +126,7 @@ INSTANCE PC_PotionAlchemy_CoragonDaemonisch (C_Info)
 	condition		= PC_PotionAlchemy_CoragonDaemonisch_Condition;
 	information		= PC_PotionAlchemy_CoragonDaemonisch_Info;
 	permanent		= 0;
-	description		= "Pökelfleisch mit Klosterwein behandeln"; 
+	description		= "Obróbka miesa peklowanego winem klasztornym"; 
 };
 
 FUNC INT PC_PotionAlchemy_CoragonDaemonisch_Condition ()
@@ -155,7 +155,7 @@ INSTANCE PC_PotionAlchemy_CoragonDaemonisch2 (C_Info)
 	condition		= PC_PotionAlchemy_CoragonDaemonisch2_Condition;
 	information		= PC_PotionAlchemy_CoragonDaemonisch2_Info;
 	permanent		= 0;
-	description		= "Pökelfleisch mit Trank 'Heilung der Besessenheit' behandeln"; 
+	description		= "Doprawianie solonego miesa eliksirem 'uzdrawianie obsesji'."; 
 };
 
 FUNC INT PC_PotionAlchemy_CoragonDaemonisch2_Condition ()
@@ -186,7 +186,7 @@ INSTANCE PC_PotionAlchemy_Tofu (C_Info)
 	condition		= PC_PotionAlchemy_Tofu_Condition;
 	information		= PC_PotionAlchemy_Tofu_Info;
 	permanent		= 1;
-	description		= "To-Fu herstellen"; 
+	description		= "Twórz do przodu To-Fu"; 
 };
 
 FUNC INT PC_PotionAlchemy_Tofu_Condition ()
@@ -202,9 +202,9 @@ FUNC INT PC_PotionAlchemy_Tofu_Condition ()
 FUNC VOID PC_PotionAlchemy_Tofu_Info()
 {
 	if (Npc_HasItems(hero, ItMi_SojaSchote) < 30) {
-		Print("Dazu fehlen mir So-Ja-Schoten");
+		Print("Nie mam na to zadnych straków So-Ja.");
 	} else if (Npc_HasItems(hero, ItMi_SalzNugget) == 0) {
-		Print("Dazu fehlt mir Salz");
+		Print("W tym celu brakuje mi soli.");
 	} else {
 		Npc_RemoveInvItems	(hero, ItMi_SojaSchote, 30);
 		Npc_RemoveInvItems	(hero, ItMi_SalzNugget, 1);
@@ -224,7 +224,7 @@ INSTANCE PC_PotionAlchemy_Spezialtrunken (C_Info)
 	condition		= PC_PotionAlchemy_Spezialtrunken_Condition;
 	information		= PC_PotionAlchemy_Spezialtrunken_Info;
 	permanent		= 0;
-	description		= "Spezialtrunken herstellen"; 
+	description		= "Stworzenie szczególnego pijanstwa"; 
 };
 
 FUNC INT PC_PotionAlchemy_Spezialtrunken_Condition ()
@@ -245,7 +245,7 @@ FUNC VOID PC_PotionAlchemy_Spezialtrunken_Info()
 
 	CreateInvItems	(hero, ItFo_Spezialtrunken, 1);
 
-	B_LogEntry	(TOPIC_MOD_SL_GELIEBTE, "Ich habe den Spezialtrunken und sollte jetzt zur königlichen Geliebten gehen und mein Glück versuchen.");
+	B_LogEntry	(TOPIC_MOD_SL_GELIEBTE, "Mam specjalnego pijaka i powinienem udac sie do królewskiego kochanka i spróbowac szczescia.");
 
 	Mod_SL_PartGeliebte = 4;
 };
@@ -259,7 +259,7 @@ INSTANCE PC_PotionAlchemy_Health (C_Info)
 	condition		= PC_PotionAlchemy_Health_Condition;
 	information		= PC_PotionAlchemy_Health_Info;
 	permanent		= TRUE;
-	description		= "Heiltränke brauen"; 
+	description		= "eliksir leczniczy piwowarski"; 
 };
 
 FUNC INT PC_PotionAlchemy_Health_Condition ()
@@ -283,20 +283,20 @@ FUNC VOID PC_PotionAlchemy_Health_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_04] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Heiltrunk (max. Menge)", PC_PotionAlchemy_Health_04_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Heiltrunk (3 Essenzen der Heilung, 1 Feldknöterich)", PC_PotionAlchemy_Health_04);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Eliksir leczniczy (max.). ilosc)", PC_PotionAlchemy_Health_04_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Eliksir leczniczy (3 esencje gojenia, 1 wezel chwast)", PC_PotionAlchemy_Health_04);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Elixier der Heilung (max. Menge)", PC_PotionAlchemy_Health_03_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Elixier der Heilung (2 Heilwurzeln, 1 Feldknöterich)", PC_PotionAlchemy_Health_03);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Eliksir gojenia (max. ilosc)", PC_PotionAlchemy_Health_03_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Eliksir gojenia (2 lecznicze korzenie, 1 rdestnica)", PC_PotionAlchemy_Health_03);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Extrakt der Heilung (max. Menge)", PC_PotionAlchemy_Health_02_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Extrakt der Heilung (2 Heilkräuter, 1 Feldknöterich)", PC_PotionAlchemy_Health_02);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Ekstrakt z gojenia (max. ilosc)", PC_PotionAlchemy_Health_02_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Ekstrakt leczniczy (2 ziola lecznicze, 1 rdestnica)", PC_PotionAlchemy_Health_02);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
@@ -305,27 +305,27 @@ FUNC VOID PC_PotionAlchemy_Health_Info()
 		if (Mod_Darf_Health_01 == TRUE)
 		|| (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice	(PC_PotionAlchemy_Health, "Essenz der Heilung (max. Menge)", PC_PotionAlchemy_Health_01_Alle);
+			Info_AddChoice	(PC_PotionAlchemy_Health, "Essence of Healing (max.). ilosc)", PC_PotionAlchemy_Health_01_Alle);
 		};
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Essenz der Heilung (2 Heilplanzen, 1 Feldknöterich)", PC_PotionAlchemy_Health_01);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Esencja lecznicza (2 rosliny lecznicze, 1 chwast)", PC_PotionAlchemy_Health_01);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_07] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Trank der leichten Heilung (max. Menge)", PC_PotionAlchemy_Health_07_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Trank der leichten Heilung (2 Heilkräuter, 1 Wacholder)", PC_PotionAlchemy_Health_07);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Napój lekkiego gojenia sie (max. ilosc)", PC_PotionAlchemy_Health_07_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Napój lekkiego gojenia (2 ziola lecznicze, 1 jalowiec)", PC_PotionAlchemy_Health_07);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_06] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Leichter Heiltrank (max. Menge)", PC_PotionAlchemy_Health_06_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Leichter Heiltrank (4 Heilplanzen, 1 Wacholder)", PC_PotionAlchemy_Health_06);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Lekki eliksir leczniczy (max. ilosc)", PC_PotionAlchemy_Health_06_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Lekki eliksir leczniczy (4 ziola, 1 jalowiec)", PC_PotionAlchemy_Health_06);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Trank der schnellen Heilung (max. Menge)", PC_PotionAlchemy_Health_05_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Trank der schnellen Heilung (3 Heilplanzen, 1 Wasser)", PC_PotionAlchemy_Health_05);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Szybki eliksir leczniczy (max. ilosc)", PC_PotionAlchemy_Health_05_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Napój do szybkiego gojenia sie (3 ziola, 1 woda)", PC_PotionAlchemy_Health_05);
 	};
 };
 
@@ -381,7 +381,7 @@ FUNC VOID PC_PotionAlchemy_Health_04_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_Addon_04.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -466,7 +466,7 @@ FUNC VOID PC_PotionAlchemy_Health_03_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_03.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -551,7 +551,7 @@ FUNC VOID PC_PotionAlchemy_Health_02_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_02.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -638,7 +638,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_01.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -676,8 +676,8 @@ FUNC VOID PC_PotionAlchemy_Health_01 ()
 
 			Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-			Info_AddChoice	(PC_PotionAlchemy_Health, "Heilpflanze in den Mörser geben", PC_PotionAlchemy_Health_01_B);
-			Info_AddChoice	(PC_PotionAlchemy_Health, "Feldknöterich in den Mörser geben", PC_PotionAlchemy_Health_01_A);
+			Info_AddChoice	(PC_PotionAlchemy_Health, "Wlóz rosline lecznicza do zaprawy.", PC_PotionAlchemy_Health_01_B);
+			Info_AddChoice	(PC_PotionAlchemy_Health, "Wlóz rdestnice do zaprawy.", PC_PotionAlchemy_Health_01_A);
 		};
 	}
 	else 
@@ -699,7 +699,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_B ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Im Wasser erhitzen", PC_PotionAlchemy_Health_01_C);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Ogrzewanie w wodzie", PC_PotionAlchemy_Health_01_C);
 	}
 	else
 	{
@@ -707,7 +707,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_B ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Feldknöterich in den Mörser geben", PC_PotionAlchemy_Health_01_A);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Wlóz rdestnice do zaprawy.", PC_PotionAlchemy_Health_01_A);
 	};
 };
 
@@ -721,7 +721,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_A ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Im Wasser erhitzen", PC_PotionAlchemy_Health_01_C);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Ogrzewanie w wodzie", PC_PotionAlchemy_Health_01_C);
 	}
 	else
 	{
@@ -729,7 +729,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_A ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Heilpflanze in den Mörser geben", PC_PotionAlchemy_Health_01_B);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Wlóz rosline lecznicza do zaprawy.", PC_PotionAlchemy_Health_01_B);
 	};
 };
 
@@ -737,7 +737,7 @@ FUNC VOID PC_PotionAlchemy_Health_01_C ()
 {
 	Info_ClearChoices	(PC_PotionAlchemy_Health);
 
-	Info_AddChoice	(PC_PotionAlchemy_Health, "In Laborwasserflasche abfüllen", PC_PotionAlchemy_Health_01_D);
+	Info_AddChoice	(PC_PotionAlchemy_Health, "Napelnianie w butelce wody laboratoryjnej", PC_PotionAlchemy_Health_01_D);
 };
 
 FUNC VOID PC_PotionAlchemy_Health_01_D ()
@@ -815,7 +815,7 @@ FUNC VOID PC_PotionAlchemy_Health_07_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_07.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -900,7 +900,7 @@ FUNC VOID PC_PotionAlchemy_Health_06_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_06.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -985,7 +985,7 @@ FUNC VOID PC_PotionAlchemy_Health_05_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Health_05.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1032,7 +1032,7 @@ INSTANCE PC_PotionAlchemy_Mana (C_Info)
 	condition		= PC_PotionAlchemy_Mana_Condition;
 	information		= PC_PotionAlchemy_Mana_Info;
 	permanent		= TRUE;
-	description		= "Manatränke brauen"; 
+	description		= "Eliksiry z many browarskiej"; 
 };
 
 FUNC INT PC_PotionAlchemy_Mana_Condition ()
@@ -1055,20 +1055,20 @@ FUNC VOID PC_PotionAlchemy_Mana_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_04] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Manatrunk (max. Menge)", PC_PotionAlchemy_Mana_04_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Manatrunk (3 Mana Essenzen, 1 Feldknöterich)", PC_PotionAlchemy_Mana_04);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Napój Mana (max.). ilosc)", PC_PotionAlchemy_Mana_04_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Manatrunk (3 esencje manekina, 1 trzcine wezlowa)", PC_PotionAlchemy_Mana_04);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixier (max. Menge)", PC_PotionAlchemy_Mana_03_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixier (2 Feuerwurzeln, 1 Feldknöterich)", PC_PotionAlchemy_Mana_03);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixir (maks. ilosc)", PC_PotionAlchemy_Mana_03_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixir (2 korzenie ognia, 1 rdestnica)", PC_PotionAlchemy_Mana_03);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Extrakt (max. Menge)", PC_PotionAlchemy_Mana_02_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Extrakt (2 Feuerkraut, 1 Feldknöterich)", PC_PotionAlchemy_Mana_02);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Ekstrakt mana (max. ilosc)", PC_PotionAlchemy_Mana_02_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Ekstrakt z mana (2 chwast paleniska, 1 wezel chwast)", PC_PotionAlchemy_Mana_02);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
@@ -1077,21 +1077,21 @@ FUNC VOID PC_PotionAlchemy_Mana_Info()
 		if (Mod_Darf_Mana_01 == TRUE)
 		|| (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essenz (max. Menge)", PC_PotionAlchemy_Mana_01_Alle);
+			Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essence (max. ilosc)", PC_PotionAlchemy_Mana_01_Alle);
 		};
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essenz (2 Feuernesseln, 1 Feldknöterich)", PC_PotionAlchemy_Mana_01);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essence (2 pokrzywy, 1 wezel chwast)", PC_PotionAlchemy_Mana_01);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_06] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Trank des leichten Mana (max. Menge)", PC_PotionAlchemy_Mana_06_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Trank des leichten Mana (2 Feuerwurzel, 1 Alkohol)", PC_PotionAlchemy_Mana_06);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Pic lekka mane (maks. ilosc)", PC_PotionAlchemy_Mana_06_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "pic lekka mane (2 korzenie ognia, 1 alkohol)", PC_PotionAlchemy_Mana_06);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_05] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Leichter Manatrank (max. Menge)", PC_PotionAlchemy_Mana_05_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Leichter Manatrank (3 Feuernesseln, 1 Alkohol)", PC_PotionAlchemy_Mana_05);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Eliksir mana lekka (max.). ilosc)", PC_PotionAlchemy_Mana_05_Alle);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Eliksir do maniku lekkiego (3 pokrzywy przeciwpozarowe, 1 alkohol)", PC_PotionAlchemy_Mana_05);
 	};
 };
 
@@ -1147,7 +1147,7 @@ FUNC VOID PC_PotionAlchemy_Mana_04_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_Addon_04.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1232,7 +1232,7 @@ FUNC VOID PC_PotionAlchemy_Mana_03_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_03.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1316,7 +1316,7 @@ FUNC VOID PC_PotionAlchemy_Mana_02_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_02.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1403,7 +1403,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_01.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1441,8 +1441,8 @@ FUNC VOID PC_PotionAlchemy_Mana_01 ()
 
 			Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-			Info_AddChoice	(PC_PotionAlchemy_Mana, "Feuernessel in den Mörser geben", PC_PotionAlchemy_Mana_01_B);
-			Info_AddChoice	(PC_PotionAlchemy_Mana, "Feldknöterich in den Mörser geben", PC_PotionAlchemy_Mana_01_A);
+			Info_AddChoice	(PC_PotionAlchemy_Mana, "Umiescic pokrzywe ogniowa w mozdzierzu.", PC_PotionAlchemy_Mana_01_B);
+			Info_AddChoice	(PC_PotionAlchemy_Mana, "Wlóz rdestnice do zaprawy.", PC_PotionAlchemy_Mana_01_A);
 		};
 	}
 	else 
@@ -1464,7 +1464,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_B ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Im Wasser erhitzen", PC_PotionAlchemy_Mana_01_C);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Ogrzewanie w wodzie", PC_PotionAlchemy_Mana_01_C);
 	}
 	else
 	{
@@ -1472,7 +1472,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_B ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Feldknöterich in den Mörser geben", PC_PotionAlchemy_Mana_01_A);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Wlóz rdestnice do zaprawy.", PC_PotionAlchemy_Mana_01_A);
 	};
 };
 
@@ -1486,7 +1486,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_A ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Im Wasser erhitzen", PC_PotionAlchemy_Mana_01_C);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Ogrzewanie w wodzie", PC_PotionAlchemy_Mana_01_C);
 	}
 	else
 	{
@@ -1494,7 +1494,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_A ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Feuernessel in den Mörser geben", PC_PotionAlchemy_Mana_01_B);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Umiescic pokrzywe ogniowa w mozdzierzu.", PC_PotionAlchemy_Mana_01_B);
 	};
 };
 
@@ -1502,7 +1502,7 @@ FUNC VOID PC_PotionAlchemy_Mana_01_C ()
 {
 	Info_ClearChoices	(PC_PotionAlchemy_Mana);
 
-	Info_AddChoice	(PC_PotionAlchemy_Mana, "In Laborwasserflasche abfüllen", PC_PotionAlchemy_Mana_01_D);
+	Info_AddChoice	(PC_PotionAlchemy_Mana, "Napelnianie w butelce wody laboratoryjnej", PC_PotionAlchemy_Mana_01_D);
 };
 
 FUNC VOID PC_PotionAlchemy_Mana_01_D ()
@@ -1580,7 +1580,7 @@ FUNC VOID PC_PotionAlchemy_Mana_06_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_06.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1665,7 +1665,7 @@ FUNC VOID PC_PotionAlchemy_Mana_05_Alle ()
 
 		Meldung = ConcatStrings(IntToString(MakePotion), "x ");
 		Meldung = ConcatStrings(Meldung, ItPo_Mana_05.description);
-		Meldung = ConcatStrings(Meldung, " gebraut");
+		Meldung = ConcatStrings(Meldung, " zaparzony");
 
 		Print (Meldung);
 	}
@@ -1712,7 +1712,7 @@ INSTANCE PC_PotionAlchemy_Special (C_Info)
 	condition		= PC_PotionAlchemy_Special_Condition;
 	information		= PC_PotionAlchemy_Special_Info;
 	permanent		= TRUE;
-	description		= "Spezielle Tränke brauen"; 
+	description		= "Specjalne napary ceramiczne"; 
 };
 
 FUNC INT PC_PotionAlchemy_Special_Condition ()
@@ -1748,87 +1748,87 @@ FUNC VOID PC_PotionAlchemy_Special_Info()
 
 	if (Weisenchronik == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Weisenchronik (1 schwarzer Weise, 1 Traumrauf, 1 Wacholder)", PC_PotionAlchemy_Special_Weisenchronik);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Kronika madra (1 czarny medrzec, 1 wymarzony, 1 jalowiec)", PC_PotionAlchemy_Special_Weisenchronik);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank der Geschwindigkeit (1 Snapperkraut, 1 Feldknöterich)", PC_PotionAlchemy_Special_Speed);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Napój z predkoscia (1 Snapperkraut, 1 chwast)", PC_PotionAlchemy_Special_Speed);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Genesung] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank der Genesung (1 Extrakt der Heilung, 1 Wacholder, 4 Heilpflanzen, 1 Feldknöterich)", PC_PotionAlchemy_Special_Genesung);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Napój w procesie regeneracji (1 wyciag z gojenia, 1 jalowiec, 4 rosliny lecznicze, 1 rdestnica)", PC_PotionAlchemy_Special_Genesung);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank der Stärke (1 Drachenwurzel, 1 Kronstöckl)", PC_PotionAlchemy_Special_Str);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Napój o wysokiej wytrzymalosci (1 smoczy korzen, 1 koronowa trzcina)", PC_PotionAlchemy_Special_Str);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank des Geschicks (1 Goblin Beere, 1 Kronstöckl)", PC_PotionAlchemy_Special_Dex);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Piwo Skill (1 Berry Goblin, 1 Kronstöckl)", PC_PotionAlchemy_Special_Dex);
 	};
 
 	if (FolgsamkeitSnapper == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank der Folgsamkeit des Snappers (1 Menschenblut, 1 Hexenblut, 3 Drachensnapperhorn)", PC_PotionAlchemy_Special_FolgsamkeitSnapper);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Picie posluszenstwa snapera (1 krew ludzka, 1 krew czarownicy, 3 rogi smoka)", PC_PotionAlchemy_Special_FolgsamkeitSnapper);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Regeneration] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Regenerationstrank (1 Milch, 10 Blauflieder)", PC_PotionAlchemy_Special_Regeneration);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Eliksir regenerujacy (1 mleko, 10 niebieskich piosenek)", PC_PotionAlchemy_Special_Regeneration);
 	};
 
 	if (Purpurmond == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Purpurmond (1 Fliegenpilz, 2 Sumpfkraut, 1 Milch)", PC_PotionAlchemy_Special_Purpurmond);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Fioletowy ksiezyc (1 muchomor, 2 ziola bagienne, 1 mleko)", PC_PotionAlchemy_Special_Purpurmond);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Gegengift] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Gegengift (1 Elixier der Heilung, 1 Heilknospe, 2 Feldknöterich)", PC_PotionAlchemy_Special_Gegengift);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Antidotum (1 leczy eliksir, 1 leczniczy bud, 2 chwast polny)", PC_PotionAlchemy_Special_Gegengift);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixier des Geistes (1 Feuerwurzel, 1 Kronstöckl)", PC_PotionAlchemy_Special_PermMana);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Eliksir Ducha (1 Ognista knajpa, 1 Trzcina koronowa)", PC_PotionAlchemy_Special_PermMana);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixier des Lebens (1 Heilwurzel, 1 Kronstöckel)", PC_PotionAlchemy_Special_PermHealth);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Eliksir zycia (1 korzen leczniczy, 1 korona)", PC_PotionAlchemy_Special_PermHealth);
 	};
 
 	if (Knows_MCELIXIER == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixier der Geistveränderung", PC_PotionAlchemy_Special_Geist);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Eliksir duchowej zmiany", PC_PotionAlchemy_Special_Geist);
 	};
 
 	if (DrachensudManaverbrennung == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Drachensud (4 Drachenei, 1 Drachenwurzel, 2 Drachenblut, 1 Drachenschuppe)", PC_PotionAlchemy_Special_Drachensud);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Zupa smokowa (4 jajeczka smocze, 1 korzen smoka, 2 krwia smoka, 1 waga smocza)", PC_PotionAlchemy_Special_Drachensud);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_MegaDrink] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Dracheneitrunk (10 Drachenei, 1 schwarze Perle, 1 Schwefel)", PC_PotionAlchemy_Special_MegaDrink);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Dracheneitrunk (10 jaj smoków, 1 czarna perla, 1 siarka)", PC_PotionAlchemy_Special_MegaDrink);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_AdanosWohltat] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Adanos Wohltat (1 Leichte Wundheilung, 1 Trollkirsche, 1 Kronstöckl, 5 Feuernesseln, 4 Heilpflanzen)", PC_PotionAlchemy_Special_AdanosWohltat);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Adano's boon (1 lekkie gojenie ran, 1 wisnia trollowa, 1 pólksiezyc, 5 pokrzywek, 4 rosliny lecznicze)", PC_PotionAlchemy_Special_AdanosWohltat);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_GiftNeutralisierer] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Trank der temporären Giftimmunität (3 Winterrute, 2 Heilknospe, 1 Zwillingsdorn)", PC_PotionAlchemy_Special_GiftNeutralisierer);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Tymczasowa odpornosc na picie trucizny (3 wedki zimowe, 2 paki lecznicze, 1 kregoslup blizniaczy)", PC_PotionAlchemy_Special_GiftNeutralisierer);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_AdanosWohltat] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Mischgift (5 Blutfliegenstachel, 5 Fliegenpilze, 5 Höllenpilze)", PC_PotionAlchemy_Special_Gift);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Trucizna mieszana (5 kolców krwi, 5 grzybów agarycznych, 5 grzybów psyllium)", PC_PotionAlchemy_Special_Gift);
 	};
 };
 
@@ -2050,9 +2050,9 @@ FUNC VOID PC_PotionAlchemy_Special_Speed ()
 
 			Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-			Info_AddChoice	(PC_PotionAlchemy_Special, "Feldknöterich im Mörser zerstoßen", PC_PotionAlchemy_Special_Speed_C);
-			Info_AddChoice	(PC_PotionAlchemy_Special, "Snapperkraut in heißes Wasser legen", PC_PotionAlchemy_Special_Speed_B);
-			Info_AddChoice	(PC_PotionAlchemy_Special, "Snapperkraut über den Mörser hängen", PC_PotionAlchemy_Special_Speed_A);
+			Info_AddChoice	(PC_PotionAlchemy_Special, "Chwast pola zgniatania w mozdzierzu", PC_PotionAlchemy_Special_Speed_C);
+			Info_AddChoice	(PC_PotionAlchemy_Special, "Umiescic kapuste kiszona w goracej wodzie.", PC_PotionAlchemy_Special_Speed_B);
+			Info_AddChoice	(PC_PotionAlchemy_Special, "Kapusta zbozowa wiszaca nad mozdzierzem", PC_PotionAlchemy_Special_Speed_A);
 		};
 	}
 	else 
@@ -2074,7 +2074,7 @@ FUNC VOID PC_PotionAlchemy_Special_Speed_C ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Snapperkraut verbrennen", PC_PotionAlchemy_Special_Speed_D);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Spalanie kapusty glowiastej", PC_PotionAlchemy_Special_Speed_D);
 	}
 	else if (Mod_TrankFirstStep > 0)
 	{
@@ -2094,7 +2094,7 @@ FUNC VOID PC_PotionAlchemy_Special_Speed_B ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Snapperkraut verbrennen", PC_PotionAlchemy_Special_Speed_D);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Spalanie kapusty glowiastej", PC_PotionAlchemy_Special_Speed_D);
 	}
 	else if (Mod_TrankFirstStep > 0)
 	{
@@ -2118,7 +2118,7 @@ FUNC VOID PC_PotionAlchemy_Special_Speed_A ()
 
 		Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Snapperkraut verbrennen", PC_PotionAlchemy_Special_Speed_D);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Spalanie kapusty glowiastej", PC_PotionAlchemy_Special_Speed_D);
 	}
 	else if (Mod_TrankFirstStep > 0)
 	{
@@ -2136,14 +2136,14 @@ FUNC VOID PC_PotionAlchemy_Special_Speed_D ()
 {
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Mit Knöterich vermischen und erhitzen", PC_PotionAlchemy_Special_Speed_E);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "Mieszac i podgrzewac mieszanine z chwastem wezlowym", PC_PotionAlchemy_Special_Speed_E);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_Speed_E ()
 {
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Feste Bestandteile heraussieben und abfüllen", PC_PotionAlchemy_Special_Speed_F);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "Wysuwanie i napelnianie czesci stalych", PC_PotionAlchemy_Special_Speed_F);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_Speed_F ()
@@ -2255,7 +2255,7 @@ FUNC VOID PC_PotionAlchemy_Special_PermHealth ()
 
 			Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-			Info_AddChoice	(PC_PotionAlchemy_Special, "Pflanzen in der Flasche erhitzen", PC_PotionAlchemy_Special_PermHealth_A);
+			Info_AddChoice	(PC_PotionAlchemy_Special, "Rosliny grzewcze w butelce", PC_PotionAlchemy_Special_PermHealth_A);
 		};
 	}
 	else 
@@ -2274,59 +2274,59 @@ FUNC VOID PC_PotionAlchemy_Special_PermHealth_A ()
 
 	Mod_PermHealth_Wrong = 1;
 
-	PrintScreen	("Das Wasser erwärmt sich", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Woda ogrzewa sie", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Flasche verschließen", PC_PotionAlchemy_Special_PermHealth_C);
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Warten", PC_PotionAlchemy_Special_PermHealth_B);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "zamkniety", PC_PotionAlchemy_Special_PermHealth_C);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "czekanie", PC_PotionAlchemy_Special_PermHealth_B);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_PermHealth_B ()
 {
 	Mod_PermHealth_Wrong = 1;
 
-	PrintScreen	("Das Wasser erwärmt sich", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Woda ogrzewa sie", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Flasche verschließen", PC_PotionAlchemy_Special_PermHealth_C);
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Warten", PC_PotionAlchemy_Special_PermHealth_D);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "zamkniety", PC_PotionAlchemy_Special_PermHealth_C);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "czekanie", PC_PotionAlchemy_Special_PermHealth_D);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_PermHealth_D ()
 {
 	Mod_PermHealth_Wrong = 1;
 
-	PrintScreen	("Das Wasser ist heiß", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Woda jest goraca", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Flasche verschließen", PC_PotionAlchemy_Special_PermHealth_C);
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Warten", PC_PotionAlchemy_Special_PermHealth_E);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "zamkniety", PC_PotionAlchemy_Special_PermHealth_C);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "czekanie", PC_PotionAlchemy_Special_PermHealth_E);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_PermHealth_E ()
 {
 	Mod_PermHealth_Wrong = 0;
 
-	PrintScreen	("Erste Luftblasen steigen auf", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Pierwsze pecherzyki wznoszace sie", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Flasche verschließen", PC_PotionAlchemy_Special_PermHealth_C);
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Warten", PC_PotionAlchemy_Special_PermHealth_F);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "zamkniety", PC_PotionAlchemy_Special_PermHealth_C);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "czekanie", PC_PotionAlchemy_Special_PermHealth_F);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_PermHealth_F ()
 {
 	Mod_PermHealth_Wrong = 1;
 
-	PrintScreen	("Wilde Luftblasenentwicklung", -1, -1, FONT_SCREEN, 2);
+	PrintScreen	("Dziki rozwój pecherzyka powietrza", -1, -1, FONT_SCREEN, 2);
 
 	Info_ClearChoices	(PC_PotionAlchemy_Special);
 
-	Info_AddChoice	(PC_PotionAlchemy_Special, "Flasche verschließen", PC_PotionAlchemy_Special_PermHealth_C);
+	Info_AddChoice	(PC_PotionAlchemy_Special, "zamkniety", PC_PotionAlchemy_Special_PermHealth_C);
 };
 
 FUNC VOID PC_PotionAlchemy_Special_PermHealth_C ()
@@ -2470,7 +2470,7 @@ INSTANCE PC_PotionAlchemy_Beer (C_Info)
 	condition		= PC_PotionAlchemy_Beer_Condition;
 	information		= PC_PotionAlchemy_Beer_Info;
 	permanent		= TRUE;
-	description		= "Bier brauen"; 
+	description		= "piwo"; 
 };
 
 FUNC INT PC_PotionAlchemy_Beer_Condition ()
@@ -2489,7 +2489,7 @@ FUNC VOID PC_PotionAlchemy_Beer_Info()
 
 	if (Rezept_Orkbier == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Beer, "Orkbier brauen", PC_PotionAlchemy_Beer_Orkbier);
+		Info_AddChoice	(PC_PotionAlchemy_Beer, "Orkiebejczyk", PC_PotionAlchemy_Beer_Orkbier);
 	};
 };
 
@@ -2530,7 +2530,7 @@ INSTANCE PC_PotionAlchemy_Geschosse (C_Info)
 	condition		= PC_PotionAlchemy_Geschosse_Condition;
 	information		= PC_PotionAlchemy_Geschosse_Info;
 	permanent		= TRUE;
-	description		= "Geschosse präparieren"; 
+	description		= "Przygotowywanie pocisków"; 
 };
 
 FUNC INT PC_PotionAlchemy_Geschosse_Condition ()
@@ -2550,39 +2550,39 @@ FUNC VOID PC_PotionAlchemy_Geschosse_Info()
 	if (Npc_HasItems(hero, ItPo_Tiergift) >= 1)
 	&& (Npc_HasItems(hero, ItRw_Arrow) >= 10)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Tiergiftpfeile herstellen", PC_PotionAlchemy_Geschosse_TiergiftArrow);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "produkowac strzalki trujace dla zwierzat", PC_PotionAlchemy_Geschosse_TiergiftArrow);
 	};
 	if (Npc_HasItems(hero, ItPo_Tiergift) >= 1)
 	&& (Npc_HasItems(hero, ItRw_Bolt) >= 10)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Tiergiftbolzen herstellen", PC_PotionAlchemy_Geschosse_TiergiftBolt);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "produkowac trzpienie trucizny zwierzece", PC_PotionAlchemy_Geschosse_TiergiftBolt);
 	};
 	if (Npc_HasItems(hero, ItMi_Coal) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Sulfur) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Salpeter) >= 1)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Bosper_LehrlingQuest5))
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Sprengstoff herstellen", PC_PotionAlchemy_Geschosse_Sprengstoff);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "wytwarzanie materialów wybuchowych", PC_PotionAlchemy_Geschosse_Sprengstoff);
 	};
 	if (Rezept_Iwan == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Heilige Pfeile herstellen", PC_PotionAlchemy_Geschosse_HolyArrow);
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Heilige Bolzen herstellen", PC_PotionAlchemy_Geschosse_HolyBolt);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Wykonywanie Swietych Strzalek", PC_PotionAlchemy_Geschosse_HolyArrow);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Tworzenie sw.", PC_PotionAlchemy_Geschosse_HolyBolt);
 	};
 	if (Npc_HasItems(hero, ItPo_Pflanzengift) >= 1)
 	&& (Npc_HasItems(hero, ItRw_Arrow) >= 10)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Pflanzengiftpfeile herstellen", PC_PotionAlchemy_Geschosse_GewaechsgiftArrow);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "produkowac trujace strzaly roslinne", PC_PotionAlchemy_Geschosse_GewaechsgiftArrow);
 	};
 	if (Npc_HasItems(hero, ItPo_Pflanzengift) >= 1)
 	&& (Npc_HasItems(hero, ItRw_Bolt) >= 10)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Pflanzengiftbolzen herstellen", PC_PotionAlchemy_Geschosse_GewaechsgiftBolt);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "produkowac trzpienie trucizny roslinne", PC_PotionAlchemy_Geschosse_GewaechsgiftBolt);
 	};
 	if (Npc_HasItems(hero, ItMi_Rueckverwandlungstinktur) == 1)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Rückverwandlungs-Pfeil herstellen", PC_PotionAlchemy_Geschosse_RueckverwandlungsArrow);
-		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Rückverwandlungs-Bolzen herstellen", PC_PotionAlchemy_Geschosse_RueckverwandlungsBolt);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Utwórz strzalke przetransformacji wstecznej", PC_PotionAlchemy_Geschosse_RueckverwandlungsArrow);
+		Info_AddChoice	(PC_PotionAlchemy_Geschosse, "Sruby zwrotne do produkcji", PC_PotionAlchemy_Geschosse_RueckverwandlungsBolt);
 	};
 };
 
@@ -2640,7 +2640,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_RueckverwandlungsBolt()
 	{
 		Npc_RemoveInvItems (self, ItRw_Bolt, 1);
 		
-		Print ("Rückverwandlungsbolzen hergestellt");
+		Print ("Wykonane sruby do transformacji tylnej");
 
 		CreateInvItems (self, ItRw_RueckverwandlungsBolt, 1);
 	}
@@ -2660,7 +2660,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_RueckverwandlungsArrow()
 	{
 		Npc_RemoveInvItems (self, ItRw_Arrow, 1);
 		
-		Print ("Rückverwandlungspfeil hergestellt");
+		Print ("Wytwarzana tylna strzalka przeksztalcania");
 
 		CreateInvItems (self, ItRw_RueckverwandlungsArrow, 1);
 	}
@@ -2680,7 +2680,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_Tiergiftarrow()
 
 	CreateInvItems	(hero, ItRw_TiergiftArrow, 10);
 
-	Print	("10 Tiergiftpfeile hergestellt");
+	Print	("Wytworzonych 10 strzalek trujacych dla zwierzat");
 
 	B_ENDPRODUCTIONDIALOG ();
 };
@@ -2692,7 +2692,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_TiergiftBolt()
 
 	CreateInvItems	(hero, ItRw_TiergiftBolt, 10);
 
-	Print	("10 Tiergiftbolzen hergestellt");
+	Print	("10 wytworzonych srub trucizny zwierzecej");
 
 	B_ENDPRODUCTIONDIALOG ();
 };
@@ -2705,7 +2705,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_Sprengstoff()
 
 	CreateInvItems	(hero, ItMi_Sprengstoff, 10);
 
-	Print	("10 Einheiten Sprengstoff hergestellt");
+	Print	("10 wyprodukowanych jednostek wybuchowych");
 
 	B_ENDPRODUCTIONDIALOG ();
 };
@@ -2717,7 +2717,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_Gewaechsgiftarrow()
 
 	CreateInvItems	(hero, ItRw_GewaechsgiftArrow, 10);
 
-	Print	("10 Pflanzengiftpfeile hergestellt");
+	Print	("10 strzalek trucizny roslinnej");
 
 	B_ENDPRODUCTIONDIALOG ();
 };
@@ -2729,7 +2729,7 @@ FUNC VOID PC_PotionAlchemy_Geschosse_GewaechsgiftBolt()
 
 	CreateInvItems	(hero, ItRw_GewaechsgiftBolt, 10);
 
-	Print	("10 Pflanzengiftbolzen hergestellt");
+	Print	("10 produkowanych srub trucizny roslinnej");
 
 	B_ENDPRODUCTIONDIALOG ();
 };
@@ -2743,7 +2743,7 @@ INSTANCE PC_PotionAlchemy_Booze (C_Info)
 	condition		= PC_PotionAlchemy_Booze_Condition;
 	information		= PC_PotionAlchemy_Booze_Info;
 	permanent		= TRUE;
-	description		= "Schnaps brennen"; 
+	description		= "sznapy"; 
 };
 
 FUNC INT PC_PotionAlchemy_Booze_Condition ()
@@ -2762,27 +2762,27 @@ FUNC VOID PC_PotionAlchemy_Booze_Info()
 
 	if (Knows_SchnellerHering == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Schnellen Hering mixen.", PC_PotionAlchemy_Booze_SchnellerHering);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Wymieszaj szybkie sledzie.", PC_PotionAlchemy_Booze_SchnellerHering);
 	};
 
 	if (Rezept_Rumtopf == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Rumtopf mixen.", PC_PotionAlchemy_Booze_Rumtopf);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Wymieszac rum.", PC_PotionAlchemy_Booze_Rumtopf);
 	};
 
 	if (Knows_Schlafhammer == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Lou's Hammer mit doppelter Menge Rum.", PC_PotionAlchemy_Booze_Schlaf);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Mlot Lou's z podwójnym rumem.", PC_PotionAlchemy_Booze_Schlaf);
 	};
 
 	if (Knows_LousHammer == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Lou's Hammer versuchen ...", PC_PotionAlchemy_Booze_Lou);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Mlotek Lou's spróbuje....", PC_PotionAlchemy_Booze_Lou);
 	};
 
 	if (Mod_PCKenntGrogRezept == 1)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Grog versuchen ...", PC_PotionAlchemy_Booze_Grog);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Spróbuj....", PC_PotionAlchemy_Booze_Grog);
 	};
 };
 
@@ -2915,7 +2915,7 @@ INSTANCE PC_PotionAlchemy_Sekret (C_INFO)
 	information	= PC_PotionAlchemy_Sekret_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Sekrete/Gifte abfüllen";
+	description	= "Wydzieliny/toksyny napelniajace";
 };
 
 FUNC INT PC_PotionAlchemy_Sekret_Condition()
@@ -2934,43 +2934,43 @@ FUNC VOID PC_PotionAlchemy_Sekret_Info()
 
 	if (Npc_HasItems(hero, ItAt_CrawlerMandibles) >= 3)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Minecrawler-Sekret aus 3 Zange abfüllen", PC_PotionAlchemy_Sekret_SekretZange);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Napelnianie sekretem minecrawera z 3 szczypiec.", PC_PotionAlchemy_Sekret_SekretZange);
 	};
 
 	if (Npc_HasItems(hero, ItAt_Crawlerqueen) > 0)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Minecrawler-Sekret aus Ei abfüllen", PC_PotionAlchemy_Sekret_SekretEi);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Napelnianie wydzielin minekrawera z jajka", PC_PotionAlchemy_Sekret_SekretEi);
 	};
 
 	if (Npc_HasItems(hero, ItAt_GigantHeart) > 0)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Giftige Eingeweide abfüllen", PC_PotionAlchemy_Sekret_Gigant);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Napelnianie trujacych jelit", PC_PotionAlchemy_Sekret_Gigant);
 	};
 
 	if (Npc_HasItems(hero, ItAt_Sting) > 0)
 	&& (Knows_Bloodfly == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Gift der Blutfliege abfüllen", PC_PotionAlchemy_Sekret_Blutfliege);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "Napelnianie jadu muchowego", PC_PotionAlchemy_Sekret_Blutfliege);
 	};
 
 	if (Npc_HasItems(hero, ItAt_SpiderMandibles) >= 2)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 Spinnenzangen zu Tiergift abfüllen", PC_PotionAlchemy_Sekret_SpinneTiergift);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 szczypce pajakowe do napelniania trucizny zwierzecej", PC_PotionAlchemy_Sekret_SpinneTiergift);
 	};
 
 	if (Npc_HasItems(hero, ItAt_CrawlerMandibles) >= 2)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 Minecrawlerzangen zu Tiergift abfüllen", PC_PotionAlchemy_Sekret_MinecrawlerTiergift);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 szczypce do mieszadel do mieszadel do napelniania trucizny zwierzecej", PC_PotionAlchemy_Sekret_MinecrawlerTiergift);
 	};
 
 	if (Npc_HasItems(hero, ItAt_Sting) >= 3)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "3 Blufliegenstachel zu Tiergift abfüllen", PC_PotionAlchemy_Sekret_BlutfliegeTiergift);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "3 Wypelnianie Blufliegenstachel do trucizny zwierzecej", PC_PotionAlchemy_Sekret_BlutfliegeTiergift);
 	};
 
 	if (Npc_HasItems(hero, ItPl_Mushroom_03) >= 2)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 Fliegenpilze zu Pflanzengift abfüllen", PC_PotionAlchemy_Sekret_FliegenpilzGewaechsgift);
+		Info_AddChoice	(PC_PotionAlchemy_Sekret, "2 Napelnianie grzybów trucizna roslinna", PC_PotionAlchemy_Sekret_FliegenpilzGewaechsgift);
 	};
 };
 
@@ -3071,7 +3071,7 @@ INSTANCE PC_PotionAlchemy_WaffeVergiften (C_INFO)
 	information	= PC_PotionAlchemy_WaffeVergiften_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Waffe vergiften";
+	description	= "bron trucizny";
 };
 
 FUNC INT PC_PotionAlchemy_WaffeVergiften_Condition()
@@ -3091,11 +3091,11 @@ FUNC VOID PC_PotionAlchemy_WaffeVergiften_Info()
 
 	if (Npc_HasItems(hero, ItPo_Tiergift) >= 1)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_WaffeVergiften, "mit Tiergift", PC_PotionAlchemy_WaffeVergiften_Tiergift);
+		Info_AddChoice	(PC_PotionAlchemy_WaffeVergiften, "trucizna dla zwierzat", PC_PotionAlchemy_WaffeVergiften_Tiergift);
 	};
 	if (Npc_HasItems(hero, ItPo_Pflanzengift) >= 1)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_WaffeVergiften, "mit Gewächsgift", PC_PotionAlchemy_WaffeVergiften_Gewaechsgift);
+		Info_AddChoice	(PC_PotionAlchemy_WaffeVergiften, "trucizna roslinna", PC_PotionAlchemy_WaffeVergiften_Gewaechsgift);
 	};
 };
 
@@ -3131,7 +3131,7 @@ INSTANCE PC_PotionAlchemy_Joint (C_Info)
 	condition		= PC_PotionAlchemy_Joint_Condition;
 	information		= PC_PotionAlchemy_Joint_Info;
 	permanent		= TRUE;
-	description		= "Stängel drehen"; 
+	description		= "skret"; 
 };
 
 FUNC INT PC_PotionAlchemy_Joint_Condition ()
@@ -3150,20 +3150,20 @@ FUNC VOID PC_PotionAlchemy_Joint_Info()
 
 	if (Rezept_Traumruf == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Joint, "Traumruf herstellen (1 Stängel)", PC_PotionAlchemy_Joint_Traumruf);
+		Info_AddChoice	(PC_PotionAlchemy_Joint, "Utwórz wymarzony znak wywolawczy (1 lodyga)", PC_PotionAlchemy_Joint_Traumruf);
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Jeremiah_Kraut))
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Joint, "Herkulesstängel herstellen (1 Stängel)", PC_PotionAlchemy_Joint_Herkulesstengel);
+		Info_AddChoice	(PC_PotionAlchemy_Joint, "Produkcja pni herculesowych (1 ped)", PC_PotionAlchemy_Joint_Herkulesstengel);
 	};
 
 	if (Green_Extrem == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Joint, "Grünen Novizen herstellen (1 Stängel)", PC_PotionAlchemy_Joint_GrNovize);
+		Info_AddChoice	(PC_PotionAlchemy_Joint, "Czynienie zielonych nowicjuszy (1 lodyga)", PC_PotionAlchemy_Joint_GrNovize);
 	};
 
-	Info_AddChoice	(PC_PotionAlchemy_Joint, "Sumpfkraut verarbeiten (1 Stängel)", PC_PotionAlchemy_Joint_Normal);
+	Info_AddChoice	(PC_PotionAlchemy_Joint, "Przetwórcze ziele bagienne (1 lodyga)", PC_PotionAlchemy_Joint_Normal);
 };
 
 FUNC VOID PC_PotionAlchemy_Joint_EXIT()
@@ -3262,7 +3262,7 @@ INSTANCE PC_PotionAlchemy_Tabak (C_Info)
 	condition		= PC_PotionAlchemy_Tabak_Condition;
 	information		= PC_PotionAlchemy_Tabak_Info;
 	permanent		= TRUE;
-	description		= "Tabak mischen"; 
+	description		= "mieszanka"; 
 };
 
 FUNC INT PC_PotionAlchemy_Tabak_Condition ()
@@ -3284,15 +3284,15 @@ FUNC VOID PC_PotionAlchemy_Tabak_Info()
 
 	if (Npc_HasItems(hero, ItFo_Honey) >= 1)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Tabak,"...mit Honig",PC_PotionAlchemy_Tabak_Honey);
+		Info_AddChoice	(PC_PotionAlchemy_Tabak,"... z miodem",PC_PotionAlchemy_Tabak_Honey);
 	};
 	if (Npc_HasItems(hero, ItPl_SwampHerb) >= 1)
 	{
-		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"...mit Sumpfkraut",PC_PotionAlchemy_Tabak_Swampherb);
+		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... z zaglem",PC_PotionAlchemy_Tabak_Swampherb);
 	};
 	if (Npc_HasItems(hero, ItPl_Mushroom_01) >= 1)
 	{
-		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"...mit Dunkelpilz",PC_PotionAlchemy_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... z ciemnym grzybem",PC_PotionAlchemy_Tabak_Mushroom_01);
 	};
 };
 
@@ -3339,7 +3339,7 @@ INSTANCE PC_PotionAlchemy_Tinktur (C_Info)
 	condition		= PC_PotionAlchemy_Tinktur_Condition;
 	information		= PC_PotionAlchemy_Tinktur_Info;
 	permanent		= TRUE;
-	description		= "Tinktur herstellen"; 
+	description		= "Utwórz nalewke"; 
 };
 
 FUNC INT PC_PotionAlchemy_Tinktur_Condition ()

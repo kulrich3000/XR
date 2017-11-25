@@ -1,7 +1,7 @@
 INSTANCE Mod_9000_KDW_Saturas_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Saturas";
+	name 		= "Satura";
 	guild 		= GIL_NOV; 
 	id 			= 9000;
 	voice 		= 14;

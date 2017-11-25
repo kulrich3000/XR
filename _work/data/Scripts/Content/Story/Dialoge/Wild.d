@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Wild_Hi_Condition()
 
 FUNC VOID Info_Mod_Wild_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wild_Hi_06_00"); //Wenn du was von uns möchtes, geh zu Dragomir.
+	AI_Output(self, hero, "Info_Mod_Wild_Hi_06_00"); //Jesli chcesz cos od nas, przejdz do Dragomiru.
 };
 
 INSTANCE Info_Mod_Wild_BretTot (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Wild_BretTot (C_INFO)
 	information	= Info_Mod_Wild_BretTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du machst keinen glücklichen Eindruck.";
+	description	= "Nie wydaje Ci sie pan zadowolony.";
 };
 
 FUNC INT Info_Mod_Wild_BretTot_Condition()
@@ -43,13 +43,13 @@ FUNC INT Info_Mod_Wild_BretTot_Condition()
 
 FUNC VOID Info_Mod_Wild_BretTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_00"); //Du machst keinen glücklichen Eindruck.
-	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_01"); //Wie könnte ich? Wo doch mein Bruder gefallen ist.
-	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_02"); //Bret war dein Bruder? Das wusste ich nicht.
-	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_03"); //Woher auch. Nicht mal begraben konnten wir ihn. So ein verdammtes Pack.
-	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_04"); //Wir Jäger tun doch niemandem etwas.
-	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_05"); //Da muss irgend was dahinterstecken. Aber die Leute in der Taverne werden ihn sicher begraben.
-	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_06"); //Adanos sei Dank! Wenigstens etwas.
+	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_00"); //Nie wydaje Ci sie pan zadowolony.
+	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_01"); //Jak moge? Gdzie upadl mój brat.
+	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_02"); //Byl twój brat? Nie wiedzialem tego.
+	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_03"); //Jak on mógl? Nie moglismy go nawet pochowac. Taki krwawy balagan.
+	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_04"); //My mysliwi nikogo nie ranimy.
+	AI_Output(hero, self, "Info_Mod_Wild_BretTot_15_05"); //Za tym musi kryc sie cos. Ale ludzie w tawernie prawdopodobnie go pochowac.
+	AI_Output(self, hero, "Info_Mod_Wild_BretTot_06_06"); //Dziekujemy Adanosowi! Przynajmniej cos.
 };
 
 INSTANCE Info_Mod_Wild_Pickpocket (C_INFO)

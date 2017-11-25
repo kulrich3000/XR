@@ -1,6 +1,6 @@
 INSTANCE ItMi_Kokosnuss (C_Item)
 {	
-	name 				=	"Kokosnuss";
+	name 				=	"kokos";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -28,7 +28,7 @@ INSTANCE ItMi_Kokosnuss (C_Item)
 
 INSTANCE ItFo_Kokosnussfleisch (C_Item)
 {	
-	name 				=	"Kokosnussfleisch";
+	name 				=	"mieso kokosowe";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

@@ -16,7 +16,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			AI_StandUp	(hero);
 
-			AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderLawrenceFollow_15_00"); //Ich sollte ihm folgen!
+			AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderLawrenceFollow_15_00"); //Bede za nim podazac!
 
 			Mod_MitLawrenceGesprochen = 2;
 		};
@@ -32,65 +32,65 @@ FUNC VOID GILDENSTORY_PAL()
 			};
 			if (Mod_MitLawrence_Counter == 5)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_00"); //Das Fehlen des Erfinders ist aufgefallen! Die Miliz sucht ihn.
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_00"); //Zauwazono brak wynalazcy! Szukajaca go milicja.
 			};
 			if (Mod_MitLawrence_Counter == 8)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_01"); //Verdammt. Woher weißt du das?
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_01"); //Damn go. Skad to wiesz?
 			};
 			if (Mod_MitLawrence_Counter == 13)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_02"); //Da war so ein Typ in seinem Haus und hat nach jemandem gesucht dessen Name mit L beginnt. Vielleicht hat er ja den Brief gefunden?
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_02"); //W jego domu znajdowal sie facet szukajacy kogos, kto zaczyna nazywac sie L. Moze znalazl list?
 			};
 			if (Mod_MitLawrence_Counter == 19)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_03"); //Hmm... dann werden wir vermutlich unsere Namen leicht verändern müssen.
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_03"); //Hmm..... wtedy prawdopodobnie bedziemy musieli nieco zmienic swoje nazwy.
 			};
 			if (Mod_MitLawrence_Counter == 24)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_04"); //Ähm… das wird leider nicht mehr gehen…
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_04"); //Um.... Niestety, to juz nie zadziala....
 			};
 			if (Mod_MitLawrence_Counter == 26)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_05"); //Wieso nicht?
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_05"); //Dlaczego nie?
 			};
 			if (Mod_MitLawrence_Counter == 31)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_06"); //Naja, ich hab ihm deinen, meinen und Luteros Namen genannt…
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_06"); //No cóz, dalem mu swoje, moje i nazwisko Luteros.....
 			};
 			if (Mod_MitLawrence_Counter == 36)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_07"); //Du Idiot! Glaubst du er war schon bei Lutero?
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_07"); //Idiota! Czy sadzisz, ze byl w Lutero?
 			};
 			if (Mod_MitLawrence_Counter == 41)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_08"); //Ich weiss es nicht! Ich werde gleich zu ihm gehen und ihn warnen.
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_08"); //Nie wiem! Bede teraz isc i ostrzec go.
 			};
 			if (Mod_MitLawrence_Counter == 44)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_09"); //Du hast auch nur einen Kopf, damit’s dir nicht in den Hals regnet.
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_09"); //Masz tylko jedna glowe, wiec nie bedzie deszczu w dól gardla.
 			};
 			if (Mod_MitLawrence_Counter == 49)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_10"); //Wenn der Typ jetzt sieht, dass du zu Lutero gehst, dann wird er garantiert skeptisch! Leg ihm diesen Brief an den Austauschpunkt.
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_10"); //Jesli ten facet widzi, ze idziesz teraz do Lutero, to z pewnoscia bedzie sceptyczny! Prosze umiescic ten list w punkcie wymiany.
 			};
 			if (Mod_MitLawrence_Counter == 54)
 			{
-				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_11"); //Okay. Der Schläfer erwache!
+				AI_Output(Mod_1730_MIL_Lawrence_NW, NULL, "Info_Mod_Lawrence_Larius_06_11"); //Okay. Pedro budzi sie!
 			};
 			if (Mod_MitLawrence_Counter == 56)
 			{
-				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_12"); //Pssst! Der Schläfer erwache!
+				AI_Output(Mod_591_NONE_Larius_NW, NULL, "Info_Mod_Lawrence_Larius_01_12"); //Shush! Pedro budzi sie!
 			};
 			if (Mod_MitLawrence_Counter == 61)
 			{
-				AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderLawrence_15_00"); //Ich sollte jetzt verschwinden! Aber ich sollte Lawrence im Auge behalten.
+				AI_Output(PC_Hero, NULL, "Info_Mod_Hero_ErfinderLawrence_15_00"); //Powinienem sie z tego wyprowadzic! Ale powinienem zwrócic uwage na Lawrence' a.
 			};
 			if (Mod_MitLawrence_Counter == 66)
 			{
 				AI_GotoWP	(PC_Hero, "NW_CITY_CITYHALL_01");
 
-				B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Es scheint ganz so, als würden die drei Personen zusammengehören. Sicherlich haben sie auch etwas mit dem Verschwinden des Erfinders zu tun. Ich sollte mich mal an Lawrence halten.");
+				B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Wydaje sie, ze te trzy osoby naleza do siebie. Z pewnoscia maja one cos wspólnego z zanikiem wynalazcy. Powinienem trzymac sie Lawrence' a.");
 
 				B_StartOtherRoutine (Mod_591_NONE_Larius_NW, "START");
 				B_StartOtherRoutine (Mod_1730_MIL_Lawrence_NW, "AFTER");
@@ -161,7 +161,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (Mod_LuteroLiestBrief == 3)
 			{
-				B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Ich sollte erst mal mit Lutero sprechen, bevor ich zu diesem Treffen gehe.");
+				B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Powinienem porozmawiac z Lutero, zanim pójde na to spotkanie.");
 
 				Mod_MitLawrenceGesprochen = 7;
 
@@ -177,11 +177,11 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_ErfinderLutero_15_00"); //Ich sollte mich mal in der Nähe seines Handelspostens umsehen, vielleicht hat er dort eine Notiz liegen lassen.
+			AI_Output(hero, NULL, "Info_Mod_Hero_ErfinderLutero_15_00"); //Ja powinienem rozejrzec sie w poblizu jego punktu handlowego, moze zostawil tam notatke.
 
 			Wld_InsertItem	(ItWr_ErfinderLuteroNotiz, "FP_LUTEROSNOTIZ");
 
-			B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Hm, Lutero ist ziemlich schnell verschwunden. Ich sollte mich bei seinem Handelsposten umsehen, vielleicht finde ich dort etwas verdächtiges ...");
+			B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Hm, Lutero szybko zniknal. Powinnam przyjrzec sie jego punktowi handlowemu, moze znajde tam cos podejrzanego.....");
 
 			Mod_MitLawrenceGesprochen = 9;
 		};
@@ -193,7 +193,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_ErfinderNotiz_15_00"); //Noch nicht!
+			AI_Output(hero, NULL, "Info_Mod_Hero_ErfinderNotiz_15_00"); //Jeszcze nie!
 		};
 
 		if (Npc_IsDead(Mod_591_NONE_Larius_NW))
@@ -203,7 +203,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			Mod_MitLawrenceGesprochen = 12;
 
-			B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Ich habe Larius, Lawrence und Lutero getötet. Ich sollte sie durchsuchen, vielleicht hat einer von ihnen weitere Hinweise auf den Hintermann.");
+			B_LogEntry	(TOPIC_MOD_MILIZ_WISSENSCHAFTLER, "Zabilem Lariusa, Lawrence' a i Lutero. Powinienem ja przeszukac, moze jeden z nich ma jeszcze jakies wskazówki na temat mezczyzny za nia.");
 		};
 
 		if (Mod_PalaKapitel3 == 3)
@@ -221,32 +221,32 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (Gidan_Counter == 5)
 			{
-				AI_Output(Mod_1745_PSIGUR_Guru_NW, NULL, "Info_Mod_PSIGUR_12_00"); //Ihr seid zurück, Meister?
+				AI_Output(Mod_1745_PSIGUR_Guru_NW, NULL, "Info_Mod_PSIGUR_12_00"); //Jestes z powrotem, mistrz?
 			};
 
 			if (Gidan_Counter == 10)
 			{
-				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_01"); //Ja! Es ist jetzt nicht mehr nötig, mich als Miliz auszugeben. Ich habe den Feind hierher gelockt.
+				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_01"); //Tak! Nie trzeba juz teraz podszywac sie pod milicje. Zwabilem tutaj wroga.
 			};
 
 			if (Gidan_Counter == 15)
 			{
-				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_02"); //Er wird früher oder später kommen. Ihr könnt die hiesigen Lager abbrechen.
+				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_02"); //Bedzie tu wczesniej czy pózniej. Mozna tu rozbic obozy.
 			};
 
 			if (Gidan_Counter == 20)
 			{
-				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_03"); //Wir werden ihn in der Festung erwarten! Sein Blut wird es sein, dass den Schläfer wiedererweckt.
+				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_03"); //Czekamy na niego w twierdzy! Jego krew wskrzesi sypialnego.
 			};
 
 			if (Gidan_Counter == 25)
 			{
-				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_04"); //Der Schläfer erwache!
+				AI_Output(Mod_1723_MIL_Gidan_NW, NULL, "Info_Mod_PSIGUR_13_04"); //Pedro budzi sie!
 			};
 
 			if (Gidan_Counter == 28)
 			{
-				AI_Output(Mod_1745_PSIGUR_Guru_NW, NULL, "Info_Mod_PSIGUR_12_05"); //Der Schläfer erwache!
+				AI_Output(Mod_1745_PSIGUR_Guru_NW, NULL, "Info_Mod_PSIGUR_12_05"); //Pedro budzi sie!
 			};
 
 			if (Gidan_Counter == 31)
@@ -290,15 +290,15 @@ FUNC VOID GILDENSTORY_PAL()
 
 				CutsceneAn = FALSE;
 
-				B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Gidan gehört zu den Fanatikern? Ich muss ihm folgen, doch ich weiß nicht, wo ihr Teleport hinging.");
+				B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Gidan nalezy do fanatyków? Musze go sledzic, ale nie wiem, gdzie byl jej teleport.");
 
 				if (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Gidan1))
 				{
-					B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Xardas ist sicher mit den zwei Pergamenthälften fertig. Vielleicht hilft mir das ja weiter.");
+					B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Prawdopodobnie Xardas jest wykonywany z dwiema polówkami pergaminu. Moze mi to pomoze.");
 				}
 				else
 				{
-					B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Vielleicht bringen mich die zwei Pergamenthälften, die ich gefunden habe, weiter. Ich sollte sehen, ob mir die nicht jemand zusammen setzen kann. Bestimmt ist ein Magier dazu fähig.");
+					B_LogEntry	(TOPIC_MOD_MILIZ_GIDAN, "Byc moze dwie polówki pergaminu zabralem mnie dalej. Powinienem sie przekonac, czy ktos moze je polaczyc. Jestem pewien, ze magik jest w stanie to zrobic.");
 				};
 			};
 
@@ -333,7 +333,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			Mod_PAL_Galf = 1;
 
-			PrintScreen ("Galf stürmt aus dem Zimmer", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("Zle burze poza pomieszczeniem", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 		
@@ -384,7 +384,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			B_StartOtherRoutine	(HeroBot_NW, "TOT");
 
-			PrintScreen ("Der Roboter hat dich verloren!", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("Robot straciles!", -1, YPOS_LevelUp, FONT_Screen, 2);
 		};
 
 		if (Mod_PAL_HeroBot == 17)
@@ -514,7 +514,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			Log_CreateTopic	(TOPIC_MOD_PAL_FI, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_PAL_FI, LOG_RUNNING);
-			B_LogEntry	(TOPIC_MOD_PAL_FI, "Ich bin auf einer fliegenden Insel gelandet. Ich sollte dem Weg folgen und sehen, wohin er mich führt.");
+			B_LogEntry	(TOPIC_MOD_PAL_FI, "Wyladowalem na latajacej wyspie. Powinnam podazac ta droga i zobaczyc dokad ona prowadzi mnie.");
 
 			Mod_FI_Quest = TRUE;
 		};
@@ -616,29 +616,29 @@ FUNC VOID GILDENSTORY_PAL()
 				AI_TurnToNpc	(Gidan_FI, Kolam);
 				AI_TurnToNpc	(hero, Kolam);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_00"); //Da bist du ja!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_00"); //Jestes!
 			};
 
 			if (FI_Rede == 5)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_01"); //Onkel!
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_01"); //Wujek!
 			};
 
 			if (FI_Rede == 10)
 			{
 				AI_TurnToNpc	(Kolam, Gidan_FI);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_02"); //Schweig! Ich begrüße gerade unseren Gast.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_02"); //Wylaczyc! Witam naszego goscia.
 			};
 
 			if (FI_Rede == 15)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_03"); //Lass ihn uns töten! Mit seinem Blut können wir den Schläfer endlich wiedererwecken!
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_03"); //Zabijmy go! Jego krwia mozemy wreszcie wskrzesic sypialnia!
 			};
 
 			if (FI_Rede == 20)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_04"); //(lacht) Den Schläfer? SIEH IN DIR AN!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_04"); //sypialnia? SPOJRZEC NA SIEBIE!
 			};
 
 			if (FI_Rede == 23)
@@ -671,39 +671,39 @@ FUNC VOID GILDENSTORY_PAL()
 				AI_TurnToNpc	(Gidan_FI, Kolam);
 				AI_TurnToNpc	(hero, Kolam);
 
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_05"); //Wie ... Wie ... Wie ist das möglich? Der Schläfer ist zu uns zurückgekehrt? Heil dem Schläfer!
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_05"); //Tak jak..... Tak jak..... Jak to jest mozliwe? Najemca wrócil do nas? Zdjac spiwora!
 			};
 
 			if (FI_Rede == 40)
 			{
 				AI_TurnToNpc	(Kolam, Gidan_FI);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_06"); //Halt's Maul!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_06"); //Wylaczyc fuck up!
 			};
 
 			if (FI_Rede == 45)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_07"); //Was?
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_07"); //Co?
 			};
 
 			if (FI_Rede == 50)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_08"); //Dass du Idiot deinen eigenen "Gott" nicht erkennst!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_08"); //Dass du Idiot deinen eigenen "Bóg" nicht erkennst!
 			};
 
 			if (FI_Rede == 55)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_09"); //Wie meinst du das?
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_09"); //Co masz na mysli?
 			};
 
 			if (FI_Rede == 60)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_10"); //Das ist nur ein Roboter! Aber durch ihn konnte ich all diese dummen Sektenspinner kontrollieren!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_10"); //To tylko robot! Ale przez niego moglem kontrolowac te wszystkie glupie sekciarskie nerdy!
 			};
 
 			if (FI_Rede == 65)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_11"); //Allerdings brauch ich die jetzt nicht mehr.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_11"); //Nie potrzebuje ich juz jednak.
 			};
 
 			if (FI_Rede == 70)
@@ -715,57 +715,57 @@ FUNC VOID GILDENSTORY_PAL()
 			{
 				Wld_SendTrigger	("REDE_05");
 
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_12"); //Was soll das? Willst du denn den Schläfer nicht wiedererwecken?
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_12"); //Co robisz? Nie chcesz obudzic sypialni?
 			};
 
 			if (FI_Rede == 77)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_13"); //Du verstehst es nicht oder? Man kann den Schläfer nicht wiedererwecken. Er wurde verbannt! Der einzige der das könnte ist Beliar selbst!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_13"); //Nie dostajesz tego, czy? Nie mozesz ponownie obudzic sypialni. Zostal wygnany! Jedynym, kto mógl to zrobic, jest sam Beliar!
 			};
 
 			if (FI_Rede == 82)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_14"); //Was du vor dir siehst ist ein Roboter!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_14"); //To, na co patrzysz, to robot!
 			};
 
 			if (FI_Rede == 87)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_15"); //Ein Roboter ...? Dann hat der Erfinder ihn dir gebaut?
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_15"); //A robot? Wiec wynalazca zbudowal go dla Ciebie?
 			};
 
 			if (FI_Rede == 92)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_16"); //Haha ganz recht, der ominöse Erfinder.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_16"); //Haha ma racje, zlowieszczy wynalazca.
 			};
 
 			if (FI_Rede == 97)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_17"); //Also hast das alles nur ... inszeniert?
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_17"); //Wiec masz tylko to wszystko.... inscenizacja?
 			};
 
 			if (FI_Rede == 102)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_18"); //Ja! Du bist doch genauso verrückt wie mein fehlgeleiteter Bruder!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_18"); //Tak! Jestes tak zwariowany jak mój mylony brat!
 			};
 
 			if (FI_Rede == 107)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_19"); //Aber ... Aber ...
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_19"); //Ale.... Ale....
 			};
 
 			if (FI_Rede == 112)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_20"); //Stotter hier nicht rum!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_20"); //Nie zacinaj sie tutaj!
 			};
 
 			if (FI_Rede == 117)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_21"); //Aber Onkel! Du hast gesagt du willst den Tod meines Vaters, deines Bruders rächen und uns den Schläfer wiedergeben!
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_21"); //Aber Wujek! Du hast gesagt du willst den Tod meines Vaters, deines Bruders rächen und uns den Schläfer wiedergeben!
 			};
 
 			if (FI_Rede == 122)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_22"); //Da hast du deinen Schläfer, du Idiot. SCHLÄFER1.0 ANGRIFF INITIALISIEREN!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_22"); //Jest twój sen, ty idiota. SCHLÄFER1. 0 INICJUJ ATAK!
 
 				B_Attack	(Sleeper, Gidan_FI, AR_None, 0);
 			};
@@ -815,7 +815,7 @@ FUNC VOID GILDENSTORY_PAL()
 		&& (NpC_KnowsInfo(hero, Info_Mod_Kolam_SleeperDead))
 		&& (!Npc_IsInState(Mod_1981_Kolam_FI, ZS_Talk))
 		{
-			PrintScreen ("Gidan stürmt heran und stürzt zusammen mit Cor Kolam und dem Helden-Bot über die Klippe", -1, YPOS_LevelUp, FONT_Screen, 2);
+			PrintScreen ("Gidan wraz z Cor Kolamem i bohaterem botem rozpada sie nad skala.", -1, YPOS_LevelUp, FONT_Screen, 2);
 
 			Wld_PlayEffect("BLACK_SCREEN", hero, hero, 0, 0, 0, TRUE);
 
@@ -835,9 +835,9 @@ FUNC VOID GILDENSTORY_PAL()
 
 			CreateInvItems	(hero, ItWr_SektisTeleport3, 1);
 
-			PrintScreen ("Teleport-Spruchrolle erhalten", -1, -1, FONT_Screen, 2);
+			PrintScreen ("Otrzymanie roli powiedzenia teleportu", -1, -1, FONT_Screen, 2);
 
-			B_LogEntry	(TOPIC_MOD_PAL_FI, "Gidan hat sich geopfert und Cor Kolam und den Helden-Bot mit in die Tiefe gerissen. Ich sollte jetzt zurück nach Khorinis gehen und Lord Andre informieren. Vielleicht funktioniert die Spruchrolle, die mich hierher gebracht hat, auch wieder zurück?");
+			B_LogEntry	(TOPIC_MOD_PAL_FI, "Gidan oddal sie w ofierze i zabral Cor Kolam i bohatera z nim. Powinienem teraz wrócic do Khorinis i poinformowac Pana Andre' a. Moze ta czesc powiedzenia, które przyprowadzilo mnie tutaj, znowu zadziala?");
 		};
 	};
 
@@ -907,7 +907,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			AI_TurnToNpc	(Mod_7240_PAL_Andre_REL, hero);
 
-			AI_Output(Mod_7240_PAL_Andre_REL, NULL, "Info_Mod_Andre_REL_Sorry_08_00"); //Tut mir leid, Junge, das mit dem Ausgang hat nicht wirklich funktioniert.
+			AI_Output(Mod_7240_PAL_Andre_REL, NULL, "Info_Mod_Andre_REL_Sorry_08_00"); //Przepraszam, dzieciak, wyjscie nie wyszlo na dobre.
 
 			Mod_PAL_HeroBot = 9;
 		};

@@ -63,7 +63,7 @@ func void EnforceSavingPolicy() {
 	
 	if (!saveMenuItemPtr) {
 		//wtf?
-		var string err; err = "EnforceSavingPolicy: MENUITEM_MAIN_SAVEGAME_SAVE not found!?";
+		var string err; err = "EgzekwowanieSavingPolicy: MENUITEM_MAIN_SAVEGAME_SAVE nie znaleziono?";
 		Print (err); PrintDebug (err);
 		return;
 	};

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_RazorSkelett(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Dino-Skelett";
+	name							=	"szkielet nosorozec";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_RazorSkelett;
 	level							=	40;

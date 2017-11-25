@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Fahim_Hi (C_INFO)
 	information	= Info_Mod_Fahim_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Fahim_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Fahim_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Fahim_Hi_10_01"); //Ich bin Fahim.
+	AI_Output(self, hero, "Info_Mod_Fahim_Hi_10_01"); //Jestem Fahim.
 };
 
 INSTANCE Info_Mod_Fahim_Belagerung (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Fahim_Belagerung (C_INFO)
 	information	= Info_Mod_Fahim_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Fahim_Belagerung_Condition()
@@ -43,21 +43,21 @@ FUNC INT Info_Mod_Fahim_Belagerung_Condition()
 
 FUNC VOID Info_Mod_Fahim_Belagerung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_00"); //Hast du etwas zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_01"); //Allerdings!
-	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_02"); //Was ist zu machen?
-	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_03"); //Beim Angriff wurde die magische Kraft des Beliar Schreins deaktiviert. Somit können wir uns hier nicht wegtelepotieren. Wir müssen den Schrein reparieren.
-	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_04"); //Wie soll ich das anstellen?
-	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_05"); //Der Beliarschrein hat seine Kraft von einem Stein aus schwarzem Erz bezogen. Dieser ist zerstört. Wir brauchen einen neuen Stein!
-	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_06"); //Woher bekommt man einen solchen Stein denn?
-	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_07"); //Hinten, in der alten Bibliothek, soll es einen solchen Stein geben. Versuche dein Glück dort!
-	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_08"); //Dann werde ich suchen gehen!
+	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_00"); //Masz dla mnie cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_01"); //Tak, rzeczywiscie!
+	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_02"); //Co mozna zrobic?
+	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_03"); //Podczas ataku zostala wylaczona magiczna moc sanktuarium beliarskiego. Nie mozemy stad uciec stad. Musimy naprawic swiatynie.
+	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_04"); //Jak mam to zrobic?
+	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_05"); //Kapliczka Beliarchów wziela swoja moc z kamienia rudy czarnej. Ten jest zniszczony. Potrzebujemy nowego kamienia!
+	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_06"); //Skad pochodzi taki kamien?
+	AI_Output(self, hero, "Info_Mod_Fahim_Belagerung_10_07"); //Taki kamien ma byc na tylach starej biblioteki. Spróbuj szczescia tam!
+	AI_Output(hero, self, "Info_Mod_Fahim_Belagerung_15_08"); //Wtedy bede szukal!
 
 	Wld_InsertItem	(ItMi_Beliarstein_Unloaded, "FP_ITEM_GREATPEASANT_STPLATE_05");
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_BELIARSCHREIN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BELIARSCHREIN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Fahim hat erzählt, dass der Stein aus schwarzem Erz des Beliarschreins zerstört ist. Ich muss einen Neuen finden, damit wir den Schrein wieder aktivieren können.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Fahim powiedzial nam, ze kamien z rudy czarnej z beliarskiej swiatyni zostal zniszczony. Musze znalezc nowy, abysmy mogli reaktywowac swiatynie.");
 };
 
 INSTANCE Info_Mod_Fahim_HabStein (C_INFO)
@@ -68,7 +68,7 @@ INSTANCE Info_Mod_Fahim_HabStein (C_INFO)
 	information	= Info_Mod_Fahim_HabStein_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Stein gefunden.";
+	description	= "Znalazlem kamien.";
 };
 
 FUNC INT Info_Mod_Fahim_HabStein_Condition()
@@ -82,21 +82,21 @@ FUNC INT Info_Mod_Fahim_HabStein_Condition()
 
 FUNC VOID Info_Mod_Fahim_HabStein_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_00"); //Ich hab den Stein gefunden.
+	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_00"); //Znalazlem kamien.
 
 	B_GiveInvItems	(hero, self, ItMi_Beliarstein_Unloaded, 1);
 
-	AI_Output(self, hero, "Info_Mod_Fahim_HabStein_10_01"); //Etwas stimmt nicht damit. Der Stein scheint keine magische Energie mehr zu besitzen!
-	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_02"); //Das habe ich bereits gemerkt. Was können wir tun?
-	AI_Output(self, hero, "Info_Mod_Fahim_HabStein_10_03"); //Der Stein ist aus schwarzem Erz angefertigt. Frag mal Eduard, ob er den Stein reparieren kann.
+	AI_Output(self, hero, "Info_Mod_Fahim_HabStein_10_01"); //Jest w tym cos zlego. Kamien nie ma juz zadnej magicznej energii!
+	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_02"); //Juz to zauwazylem. Co mozemy zrobic?
+	AI_Output(self, hero, "Info_Mod_Fahim_HabStein_10_03"); //Kamien wykonany jest z rudy czarnej. Zapytaj Eduarda, czy potrafi naprawic kamien.
 
 	B_GiveInvItems	(self, hero, ItMi_Beliarstein_Unloaded, 1);
 
-	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_04"); //Dann werde ich mal gehen!
+	AI_Output(hero, self, "Info_Mod_Fahim_HabStein_15_04"); //Bede wiec jechal!
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Der Stein, den ich gefunden habe, hatte keine magische Energie mehr. Jetzt soll ich ihn zu Eduard bringen, in der Hoffnung, dass er ihn reparieren kann.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Znaleziony kamien nie posiadal magicznej energii. Teraz mam go zabrac do Eduarda, majac nadzieje, ze potrafi go naprawic.");
 };
 
 INSTANCE Info_Mod_Fahim_SteinRepariert (C_INFO)
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Fahim_SteinRepariert (C_INFO)
 	information	= Info_Mod_Fahim_SteinRepariert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Stein funktioniert wieder prächtig!";
+	description	= "Kamien znów dziala swietnie!";
 };
 
 FUNC INT Info_Mod_Fahim_SteinRepariert_Condition()
@@ -121,16 +121,16 @@ FUNC INT Info_Mod_Fahim_SteinRepariert_Condition()
 
 FUNC VOID Info_Mod_Fahim_SteinRepariert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_00"); //Der Stein funktioniert wieder prächtig!
-	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_01"); //Das ist wunderbar!
-	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_02"); //Was bleibt noch zu tun?
-	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_03"); //Verbinde den Stein nur noch mit dem Beliarschrein. Dabei fixiere deine magische Kraft vor dem Schrein Beliars und opfere einen Teil.
-	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_04"); //Nun wird sich der Stein automatisch in den Schrein einfügen und diesen wieder in Gang bringen.
-	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_05"); //Wenns weiter nichts ist.
+	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_00"); //Kamien znów dziala swietnie!
+	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_01"); //To wspaniale!
+	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_02"); //Co jeszcze pozostaje do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_03"); //Teraz wystarczy tylko polaczyc kamien z beliarska swiatynia. Umocuj swoja magiczna moc przed Sanktuarium Beliars i poswiec jej czesc.
+	AI_Output(self, hero, "Info_Mod_Fahim_SteinRepariert_10_04"); //Teraz kamien automatycznie wstawi sie do swiatyni i przywróci ja do ruchu.
+	AI_Output(hero, self, "Info_Mod_Fahim_SteinRepariert_15_05"); //Jesli to wszystko.
 
 	B_GivePlayerXP	(100);
 
-	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Ich soll zum Schrein gehen und dort meine magische Kraft fixieren und einen Teil davon opfern. Der Rest geht von alleine.");
+	B_LogEntry	(TOPIC_MOD_BEL_BELIARSCHREIN, "Ide do sanktuarium, naprawie tam swoja magiczna moc i poswiece jej czesc. Reszta z nich idzie sama.");
 };
 
 INSTANCE Info_Mod_Fahim_SchreinRepariert (C_INFO)
@@ -141,7 +141,7 @@ INSTANCE Info_Mod_Fahim_SchreinRepariert (C_INFO)
 	information	= Info_Mod_Fahim_SchreinRepariert_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Der Schrein ist repariert!";
+	description	= "Kapliczka jest stala!";
 };
 
 FUNC INT Info_Mod_Fahim_SchreinRepariert_Condition()
@@ -155,15 +155,15 @@ FUNC INT Info_Mod_Fahim_SchreinRepariert_Condition()
 
 FUNC VOID Info_Mod_Fahim_SchreinRepariert_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fahim_SchreinRepariert_15_00"); //Der Schrein ist repariert!
-	AI_Output(self, hero, "Info_Mod_Fahim_SchreinRepariert_10_01"); //(erfreut) Wunderbar! Hier nimm dieses Gold als Belohnung! Ich werde Raven Bericht erstatten!
+	AI_Output(hero, self, "Info_Mod_Fahim_SchreinRepariert_15_00"); //Kapliczka jest stala!
+	AI_Output(self, hero, "Info_Mod_Fahim_SchreinRepariert_10_01"); //(propleased) Cudowny! Wez to zloto jako nagrode! Zglosze sie do Raven!
 	
 	CreateInvItems	(self, ItMi_Gold, 1000);
 	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
 	B_GivePlayerXP	(700);
 
-	B_LogEntry_More	(TOPIC_MOD_BEL_BELIARSCHREIN, TOPIC_MOD_BEL_BELAGERUNG, "Der Schrein ist repariert, Fahim ist informiert und ich habe meine Belohnung erhalten.", "Ich habe Fahim geholfen, den Beliarschrein wieder zu aktivieren.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_BELIARSCHREIN, TOPIC_MOD_BEL_BELAGERUNG, "Sanktuarium jest stale, Fahim zostaje poinformowany i otrzymalem moja nagrode.", "Pomagalem Fahimowi w reaktywacji bialoruskiego sanktuarium.");
 
 	B_SetTopicStatus	(TOPIC_MOD_BEL_BELIARSCHREIN, LOG_SUCCESS);
 
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Fahim_Lehrer (C_INFO)
 	information	= Info_Mod_Fahim_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Fahim_Lehrer_Condition()
@@ -197,10 +197,10 @@ FUNC VOID Info_Mod_Fahim_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Fahim_Lehrer_10_00"); //Ich kann dir den Umgang mit Einhändern beibringen.
+	AI_Output(self, hero, "Info_Mod_Fahim_Lehrer_10_00"); //Potrafie nauczyc Cie, jak obchodzic sie z reka.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BELIARFESTUNG, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Fahim kann mich im Kampf mit Einhändern unterweisen.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BELIARFESTUNG, "Fahim moze nauczyc mnie jak walczyc z mezczyznami jednej reki.");
 };
 
 INSTANCE Info_Mod_Fahim_Lernen (C_INFO)
@@ -211,7 +211,7 @@ INSTANCE Info_Mod_Fahim_Lernen (C_INFO)
 	information	= Info_Mod_Fahim_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will lernen.";
+	description	= "Chce sie uczyc.";
 };
 
 FUNC INT Info_Mod_Fahim_Lernen_Condition()
@@ -228,7 +228,7 @@ FUNC INT Info_Mod_Fahim_Lernen_Condition()
 
 FUNC VOID Info_Mod_Fahim_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fahim_Lernen_15_00"); //Ich will lernen.
+	AI_Output(hero, self, "Info_Mod_Fahim_Lernen_15_00"); //Chce sie uczyc.
 
 	Info_ClearChoices	(Info_Mod_Fahim_Lernen);
 

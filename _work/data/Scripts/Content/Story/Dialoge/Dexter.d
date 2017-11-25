@@ -18,35 +18,35 @@ FUNC INT Info_Mod_Dexter_Hi_Condition()
 
 FUNC VOID Info_Mod_Dexter_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_00"); //Was hast du hier verloren?
-	AI_Output(hero, self, "Info_Mod_Dexter_Hi_15_01"); //Ich bin gekommen um mich euch anzuschließen.
+	AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_00"); //Co ty tu robisz?
+	AI_Output(hero, self, "Info_Mod_Dexter_Hi_15_01"); //Przyszedlem do Ciebie dolaczyc.
 
 	if (Gardist_Dabei == TRUE)
 	|| (Mod_AnzahlNebengilden >= MaxNebengilden)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_02"); //Ok, du hast unser Losungswort.
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_02"); //Dobrze, masz nasze haslo.
 
 		if (Gardist_Dabei == TRUE)
 		{
-			AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_03"); //Mir ist aber zu Ohren gekommen, dass du schon Teil des Alten Lagers bist.
+			AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_03"); //Slyszalem jednak, ze jestescie juz czescia Starego Obozu.
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_04"); //Mir ist aber zu Ohren gekommen, dass du schon Teil vieler anderer Lager bist.
+			AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_04"); //Slyszalem jednak, ze jestescie juz czescia wielu innych obozów.
 		};
 
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_05"); //Ein echter Bandit kannst du nun nicht mehr werden. Die Gefahr, dass du Informationen von uns weitergibst ist mir zu groß.
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_06"); //Es steht dir aber frei unser Lager zu betreten und mit den Jungs zu handeln.
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_07"); //Mach aber keinen Ärger, ok?
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_05"); //Nie mozna juz stac sie prawdziwym bandytem. Niebezpieczenstwo przekazywania informacji od nas jest dla mnie zbyt duze.
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_06"); //Mozesz swobodnie wejsc do naszego obozu i zajac sie chlopcami.
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_07"); //Nie sprawiaj zadnych klopotów, dobrze?
 
 		B_SetTopicStatus	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_FAILED);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_08"); //Wie es scheint hast du ja ein paar von uns bereits überzeugt, sonst wärst du hier gar nicht lebend reingekommen.
-		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_09"); //Wenn du willst, kannst du jetzt also einer von uns werden.
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_08"); //Wyglada na to, ze przekonales juz kilku z nas, bo inaczej nie przyszedlbys tu zywy.
+		AI_Output(self, hero, "Info_Mod_Dexter_Hi_09_09"); //Tak wiec, jesli chcecie, mozecie stac sie jednym z nas teraz.
 
-		B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Dexter wird mich jetzt aufnehmen, wenn ich möchte.");
+		B_LogEntry	(TOPIC_MOD_AUFNAHME_BANDITEN, "Gonna Dextera zabierz mnie teraz, jesli chce.");
 	};
 
 	B_GivePlayerXP	(150);
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Dexter_Aufnahme (C_INFO)
 	information	= Info_Mod_Dexter_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Bandit werden.";
+	description	= "Chce byc bandyta.";
 };
 
 FUNC INT Info_Mod_Dexter_Aufnahme_Condition()
@@ -75,11 +75,11 @@ FUNC INT Info_Mod_Dexter_Aufnahme_Condition()
 
 FUNC VOID Info_Mod_Dexter_Aufnahme_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_Aufnahme_15_00"); //Ich will Bandit werden.
-	AI_Output(self, hero, "Info_Mod_Dexter_Aufnahme_09_01"); //Hier ist deine Rüstung. Du kannst dich jetzt im Lager nützlich machen.
+	AI_Output(hero, self, "Info_Mod_Dexter_Aufnahme_15_00"); //Chce byc bandyta.
+	AI_Output(self, hero, "Info_Mod_Dexter_Aufnahme_09_01"); //Oto Twoja zbroja. Mozesz teraz wykorzystac sie w obozie.
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry_More	(TOPIC_MOD_NEBENGILDEN, TOPIC_MOD_AUFNAHME_BANDITEN, "Dexter hat mich bei den Banditen aufgenommen.", "Dexter hat mich aufgenommen und mir eine Rüstung gegeben.");
+	B_LogEntry_More	(TOPIC_MOD_NEBENGILDEN, TOPIC_MOD_AUFNAHME_BANDITEN, "Dexter zabral mnie z bandytami.", "Wzial mnie do srodka i dal mi pancerz.");
 	B_SetTopicStatus	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_SUCCESS);
 
 	B_GivePlayerXP	(400);
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Dexter_WhatToDo (C_INFO)
 	information	= Info_Mod_Dexter_WhatToDo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was sind meine Aufgaben als Bandit?";
+	description	= "Jakie sa moje obowiazki jako bandyta?";
 };
 
 FUNC INT Info_Mod_Dexter_WhatToDo_Condition()
@@ -119,14 +119,14 @@ FUNC INT Info_Mod_Dexter_WhatToDo_Condition()
 
 FUNC VOID Info_Mod_Dexter_WhatToDo_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_WhatToDo_15_00"); //Was sind meine Aufgaben als Bandit?
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_01"); //Die sind sehr vielfältig und abwechslungsreich.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_02"); //Natürlich planen und führen wir in erster Linie Überfälle aus und schauen sonst, wo es etwas zu holen gibt mit etwas Geschick.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_03"); //Erst vor wenigen Tagen haben wir einem kleinen Trupp feindlicher Orks aufgelauert, die auf dem Weg in die Orkstadt im Südwesten waren.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_04"); //Dabei fiel uns ein recht wertvolles Artefakt in die Hände. Aber darauf gehe ich ein andermal näher ein.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_05"); //Jedenfalls würde uns ohne Abnehmer und Hehler, an welche wir unsere erbeuteten Güter weiterverkaufen könnten, eine zentrale Einnahmequelle fehlen.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_06"); //Wir haben Kontakte und Abnehmer in ganz Khorinis. Wir fungieren daher auch als Händler, Boten, und nehmen hin und wieder sogar Aufträge an, die anderen zu heiß sind.
-	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_07"); //Wenn du dich erst mal im Lager bewährt hast, wird für dich auch manch guter Fisch abfallen. Das Leben als Bandit wird dir gefallen.
+	AI_Output(hero, self, "Info_Mod_Dexter_WhatToDo_15_00"); //Jakie sa moje obowiazki jako bandyta?
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_01"); //Sa one bardzo zróznicowane i zróznicowane.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_02"); //Oczywiscie planujemy i przeprowadzamy rozboje przede wszystkim i patrzymy gdzie indziej, gdzie jest cos do zdobycia z odrobina umiejetnosci.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_03"); //Zaledwie kilka dni temu stloczylismy mala grupe wrogich orków w drodze do Orc City na poludniowym zachodzie.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_04"); //Dosc cenny artefakt wpadl w nasze rece. Ale zajme sie tym innym razem.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_05"); //W kazdym razie bez kupujacych i odbiorców, którym moglibysmy odsprzedac przechwycone towary, nie mielibysmy centralnego zródla dochodu.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_06"); //Mamy kontakty i klientów w calym Khorinis. Dlatego dzialamy równiez jako handlowcy, poslancy, a czasami nawet przyjmujemy zamówienia, które sa zbyt gorace dla innych.
+	AI_Output(self, hero, "Info_Mod_Dexter_WhatToDo_09_07"); //Po sprawdzeniu sie w obozie, bedziecie mieli dla Was dobre ryby. Bedziesz cieszyc sie zyciem jako bandyta.
 };
 
 INSTANCE Info_Mod_Dexter_Job (C_INFO)
@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Dexter_Job (C_INFO)
 	information	= Info_Mod_Dexter_Job_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du was zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Dexter_Job_Condition()
@@ -150,14 +150,14 @@ FUNC INT Info_Mod_Dexter_Job_Condition()
 
 FUNC VOID Info_Mod_Dexter_Job_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_Job_15_00"); //Hast du was zu tun für mich?
-	AI_Output(self, hero, "Info_Mod_Dexter_Job_09_01"); //Vorerst nicht. Komm vielleicht in paar Tagen wieder.
+	AI_Output(hero, self, "Info_Mod_Dexter_Job_15_00"); //Masz dla mnie cos do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Dexter_Job_09_01"); //Nie na razie. Moze wrócic za kilka dni.
 
 	Mod_DextersJob = Wld_GetDay();
 
 	Log_CreateTopic	(TOPIC_MOD_BDT_ORKS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BDT_ORKS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter hat vorerst nichts zu tun für mich. Ich sollte noch mal in paar Tagen bei ihm vorbeischauen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Na razie Dexter nie ma dla mnie nic do zrobienia. Powinienem zatrzymac sie przy jego miejscu za kilka dni.");
 };
 
 INSTANCE Info_Mod_Dexter_TimeOver (C_INFO)
@@ -186,68 +186,68 @@ FUNC VOID Info_Mod_Dexter_TimeOver_Info()
 	|| (Mod_Banditenueberfall_Esteban == 11)
 	|| (Mod_Orks_Morgahard == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_00"); //Du hast unserem Lager schon gute Dienste erwiesen und dich als geschickter und würdiger Bandit gezeigt.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_01"); //Daher habe ich eine äußerst wichtige Aufgabe für dich.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_00"); //Juz dobrze sluzyles naszemu obozowi i pokazales sie jako umiejetny i godny bandyta.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_01"); //Mam wiec dla pana bardzo wazne zadanie.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_02"); //Bislang hast du noch nichts wirklich Großes für unser Lager geleistet.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_03"); //Da du aber das alte Lager von früher gut kennst und keiner von deiner Zugehörigkeit zu uns weiß, kannst du endlich mal etwas Wichtiges für uns tun.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_02"); //Do tej pory nie zrobiles nic wielkiego dla naszego obozu.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_03"); //Ale poniewaz znacie Panstwo stary obóz dawnych czasów i nikt nie wie o waszym zwiazku z nami, mozecie wreszcie zrobic cos waznego dla nas.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_04"); //Worum geht es?
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_05"); //Ich hatte dir ja bereits vor einigen Tagen in unserem Gespräch davon erzählt, dass wir ein bedeutendes Artefakt von den Orks erbeutet hatten.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_06"); //Nun, bei diesem Gegenstand handelte es sich um ein magisches Amulett.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_07"); //Aus einem Buch über verschollene Schätze aus den alten Tagen erfuhren wir, dass dieses Schmuckstück einer Reihe mächtiger Gegenstände angehörte, die einst auf göttliche Weisung in den Schmelzöfen Nordmars geschaffen worden sein sollen, lange vor der Gründung der Clans.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_08"); //Wir traten darüber in Verhandlung mit den Verwandlungsmagiern, die großes Interesse an dem Amulett zeigten.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_09"); //Sie gaben uns sogar vor Ort bereits einige wertvolle Spruchrollen, um den Handel zu besiegeln.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_10"); //Nun sollte Quentin gestern das Amulett zu ihnen bringen, nachdem Oschust ihm noch frischen Glanz verliehen hatte. Er ist eigentlich ein fähiger Mann und einer unser besten Kämpfer.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_11"); //Unterwegs machte er aber noch halt im Alten Lager, um bei einigen Arenakämpfen zuzusehen. Dabei Trank er den einen oder anderen Schluck und geriet mit einem fremden Kämpfer in Streit.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_12"); //Na ja, um auf den Punkt zu kommen, sie überboten sich mit ihren Wetteinsätzen, den anderen auf den Arenaboden schicken zu können und dieser Idiot Quentin bot zuletzt das Amulett an.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_13"); //Der Kampf dauerte nicht lange, Quentin sank nach wenigen Hieben seines Gegners in den Staub und war das Amulett los.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_14"); //Das ist ein schwerer Schlag für unser gesamtes Lager, denn einige der Spruchrollen, die uns die Magier gaben, haben wir bei einer Aufklärungsmission verbraucht.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_15"); //So lässt sich das Geschäft nicht einfach rückgängig machen und der Ruf unserer Zuverlässigkeit steht auf dem Spiel.
+	AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_04"); //Co o tym chodzi?
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_05"); //Kilka dni temu powiedzialem w naszej rozmowie, ze udalo nam sie uchwycic wazny artefakt z orków.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_06"); //Cóz, punkt ten byl magicznym amuletem.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_07"); //Z ksiazki o utraconych skarbach z dawnych czasów dowiedzielismy sie, ze ten kawalek bizuterii nalezal do serii poteznych przedmiotów, które kiedys mialy byc stworzone przez boska instrukcje w piecach hutniczych Nordmarów, na dlugo przed zalozeniem klanów.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_08"); //Rozpoczelismy negocjacje z magikami transformujacymi, którzy wykazali duze zainteresowanie amuletem.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_09"); //Oni nawet dali nam kilka cennych zaklec na miejscu, aby przypieczetowac umowe.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_10"); //Teraz Quentin mial wczoraj przywiezc im amulet, po tym jak Oschust dal mu swiezy polysk. Jest zdolnym czlowiekiem i jednym z naszych najlepszych bojowników.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_11"); //Po drodze zatrzymal sie w starym obozie, aby obejrzec kilka walk na arenach. Wypil jeden lub drugi lyka i wszedl w spór z zagranicznym wojownikiem.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_12"); //Cóz, aby dotrzec do punktu, oni przescigneli sie w swoich zakladach, aby móc wyslac druga osobe na parkiecie areny, a ta idiotyczna Quentin zaoferowala nareszcie amulet.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_13"); //Walka nie trwala dlugo, Quentin zatopil sie w prochu po kilku uderzeniach przeciwnika i amulet byl luzny.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_14"); //To jest ciezki cios dla calego naszego obozu, poniewaz niektóre z podawanych nam przez magów rzutów zaklec zostaly zuzyte podczas misji zwiadowczej.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_15"); //Nie jest to latwy sposób na odwrócenie interesów, a w gre wchodzi reputacja naszej niezawodnosci.
 
 	if (Kapitel >= 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_16"); //Und dass das alte Lager nun in den Händen der Orks ist, macht es eben auch nicht gerade einfacher.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_16"); //A to, ze stary obóz jest teraz w rekach orków nie ulatwia tego.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_17"); //Und ich soll das Amulett wiederbeschaffen?
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_18"); //Genau, du verstehst schon, worum es geht.
+	AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_17"); //I mam odzyskac amulet?
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_18"); //To prawda, dostajesz punkt wyjscia.
 
 	B_Say	(hero, self, "$WIESOLLICHVORGEHEN");
 
 	if (Kapitel >= 4)
 	{
-		AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_19"); //Nett anklopfen und fragen, ob jemand zufällig das Amulett gesehen hat?
+		AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_19"); //Knock ladnie i zapytac, czy ktos widzial amulet przez przypadek?
 	};
 
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_20"); //Wir haben in Erfahrung gebracht, dass der Kämpfer den Namen Sabitsch trägt und ein alter Bekannter von Thorus ist, aus den Tagen vor der Kolonie.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_21"); //Er war viel unterwegs und soll schon in zahlreichen Arenen der bekannten Welt Siege errungen haben.
-	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_22"); //Nachdem er von dem Fall der Barriere erfuhr und von der Herrschaft seines alten Freundes Thorus über das Lager, kam er wohl als Glücksritter hierher, um sich einen Teil der Schätze dieses Tales zu holen.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_20"); //Dowiedzielismy sie, ze wojownik nazywa sie Sabitsch i jest starym przyjacielem Thorusa z dni poprzedzajacych kolonie.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_21"); //Byl on na drodze wiele razy i podobno wygral zwyciestwa na wielu arenach na calym swiecie.
+	AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_22"); //Po tym, jak uslyszal o upadku zapory i panowaniu nad obozem dawnego przyjaciela Thorusa, musial przyjechac tu jako rycerz fortuny, aby wziac niektóre skarby tej doliny.
 
 	if (Kapitel < 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_23"); //Es ist also viel Fingerspitzenfertigkeit gefordert bei deiner Aufgabe, da er nicht nur ein berüchtigter Kämpfer, sondern auch ein guter Bekannter von Thorus ist und wir wollen es uns nicht mit dem Alten Lager verscherzen.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_24"); //Versuch am besten so viel über ihn zu erfahren, wie möglich, sprich mit den Leuten, die oft mit ihm zu tun haben – natürlich nicht gerade mit Thorus.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_25"); //Und dann tue alles, um wieder in den Besitz des Amulettes zu kommen ... vorallem hinterlasse möglichst wenig spuren, wenn es auf eine Art geschehen müsste, die zu Konflikten führen könnte mit dem Alten Lager.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_23"); //Wiec duzo zrecznosci jest potrzebne do twojego zadania, poniewaz jest nie tylko slawnym bojownikiem, ale równiez dobrym przyjacielem Thorusa i nie chcemy go pomieszac z starym obozem.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_24"); //Spróbuj dowiedziec sie o nim jak najwiecej, porozmawiaj z ludzmi, którzy czesto maja z nim do czynienia - oczywiscie nie z Thorusem.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_25"); //A potem zrobic wszystko, co w twojej mocy, aby wrócic do posiadania amuletu.... pozostawic jak najmniej sladu, jesli ma to nastapic w sposób, który móglby prowadzic do konfliktów ze Starym Obozem.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter hat mir die Aufgabe gegeben das Amulett zurückzuholen, welches Quentin an Sabitsch verlor. Dabei muss ich sehr geschickt vorgehen, da Sabitsch, welchen ich im Alten Lager finden werde, ein formidabler Kämpfer und ein guter Freund von Thorus ist.");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter powierzyl mi zadanie odzyskania amuletu, który stracil Quentin na rzecz Sabitscha. Musze postepowac bardzo umiejetnie, poniewaz Sabitsch, którego znajde w starym obozie, jest wspanialym wojownikiem i dobrym przyjacielem Thorusa.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_26"); //Tja, ist wohl nicht so gut gelaufen für ihn, wie er gehofft hat.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_27"); //Obwohl er ein exzellenter Kämpfer war, dürfte er wohl kaum eine Chance gegen die 200 Orks gehabt haben, die dort jetzt rumsitzen.
-		AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_28"); //Acha, und was soll ich da jetzt ausrichten?
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_29"); //Reingehen, die Arena finden, die Leiche durchwühlen, das Amulett bergen und zu uns bringen.
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_30"); //Jedoch vielleicht lieber in einer weniger auffälligen Gestalt.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_26"); //No cóz, nie poszedl za niego tak dobrze, jak oczekiwal.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_27"); //Choc byl doskonalym bojownikiem, prawdopodobnie nie mial szans na to, by zmierzyc sie z siedzacymi tam 200 orkami.
+		AI_Output(hero, self, "Info_Mod_Dexter_TimeOver_15_28"); //Acha, co mam zrobic?
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_29"); //Wejdz, znajdz arene, wykup ciala, sciagnij amulet i przynies go do nas.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_30"); //Byc moze jednak w mniej widocznej formie.
 
 		B_Say	(hero, self, "$WASMEINSTDU");
 
-		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_31"); //Sprich mit Quentin. Er hat etwas für dich.
+		AI_Output(self, hero, "Info_Mod_Dexter_TimeOver_09_31"); //Porozmawiaj z Quentinem. On ma cos dla Ciebie.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter hat mir die Aufgabe gegeben das Amulett zurückzuholen, welches Quentin an Sabitsch verlor. Diese könnte im Orkversuchten Lager immer noch bei der Arena in bei seiner Leiche zu finden sein. Dexter meinte, dass Quentin etwas bei sich hätte, damit ich im Lager nicht so Auffalle.");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter powierzyl mi zadanie odzyskania amuletu, który stracil Quentin na rzecz Sabitscha. Mozna to znalezc jeszcze w obozie orkowym na arenie niedaleko jego ciala. Dexter powiedzial, ze Quentin ma cos na sobie, wiec nie wyróznie sie w obozie.");
 	};
 
 	Wld_InsertNpc	(Mod_7024_OUT_Sabitsch_MT,	"OC1");
@@ -266,7 +266,7 @@ INSTANCE Info_Mod_Dexter_AmulettBack (C_INFO)
 	information	= Info_Mod_Dexter_AmulettBack_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Amulett.";
+	description	= "Mam amulet.";
 };
 
 FUNC INT Info_Mod_Dexter_AmulettBack_Condition()
@@ -280,7 +280,7 @@ FUNC INT Info_Mod_Dexter_AmulettBack_Condition()
 
 FUNC VOID Info_Mod_Dexter_AmulettBack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_AmulettBack_15_00"); //Ich habe das Amulett.
+	AI_Output(hero, self, "Info_Mod_Dexter_AmulettBack_15_00"); //Mam amulet.
 
 	B_GiveInvItems	(hero, self, ItAm_MegaAmulett, 1);
 
@@ -288,36 +288,36 @@ FUNC VOID Info_Mod_Dexter_AmulettBack_Info()
 	{
 		if (Mod_SabitschArenaLooser < 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_01"); //Sehr gut. Damit hast du unserem Lager einen großen Dienst erwiesen.
-			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_02"); //Nimm das als Belohnung.
+			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_01"); //Bardzo dobry. Zrobiles wspaniala przysluge dla naszego obozu.
+			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_02"); //Wykorzystaj to jako nagrode.
 
 			CreateInvItems	(hero, ItMi_Gold, 500);
 			CreateInvItems	(hero, ItMi_Nugget, 20);
 
-			B_ShowGivenThings	("500 Gold und 20 Erzbrocken erhalten");
+			B_ShowGivenThings	("500 zlota i 20 sztuk konserwowanej rudy");
 
-			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter war sehr zufrieden mit meinem Erfolg und hat mich großzügig entlohnt.");
+			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter byl bardzo zadowolony z mojego sukcesu i hojnie mnie nagrodzil.");
 
 			B_GivePlayerXP	(600);
 		}
 		else if (Mod_SabitschAmulettGeklaut == 2)
 		{
-			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_03"); //Nun, du wurdest zwar bei dem Diebstahl erwischt, aber das regelt sich schon irgendwann von selbst und Hauptsache, wir haben das Amulett.
-			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_04"); //Du hast dir eine Belohnung verdient.
+			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_03"); //No cóz, zlapano cie na kradziezy amuletu, ale to jest samobójcze i najwazniejsza rzecza jest to, ze mamy amulet.
+			AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_04"); //Zarobiles sobie nagrode.
 
 			CreateInvItems	(hero, ItMi_Gold, 300);
 			CreateInvItems	(hero, ItMi_Nugget, 14);
 
-			B_ShowGivenThings	("300 Gold und 14 Erzbrocken erhalten");
+			B_ShowGivenThings	("300 zlota i 14 sztuk konserwowanej rudy");
 
-			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter war trotz des entdeckten Diebstahles zufrieden mit mir und hat mich angemessen entlohnt.");
+			B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter byl z mnie zadowolony, mimo odkrytej kradziezy, i odpowiednio mnie wynagrodzil.");
 
 			B_GivePlayerXP	(200);
 		};
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_05"); //Erstaunlich! Dir ist es wirklich gelungen. Damit hast du unserem Lager einen großen Dienst erwiesen. Nimm das als Belohnung.
+		AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_05"); //Erstaunlich! Dir ist es wirklich gelungen. Damit hast du unserem Lager einen großen Dienst erwiesen. Wykorzystaj to jako nagrode.
 
 		CreateInvItems	(hero, ItMi_Gold, 500);
 		CreateInvItems	(hero, ItMi_Nugget, 20);
@@ -325,14 +325,14 @@ FUNC VOID Info_Mod_Dexter_AmulettBack_Info()
 
 		B_GivePlayerXP	(400);
 
-		B_ShowGivenThings	("500 Gold, 20 Erzbrocken und 2 Spruchrollen erhalten");
+		B_ShowGivenThings	("500 zlota, 20 kawalków rudy i 2 zachowanych wladców");
 	};
 
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_06"); //Jedenfalls werde ich Quentin eine zweite Chance geben. Er wird das Amulett zu den Magiern bringen und den Handel abschließen.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_09_06"); //W kazdym razie, jestem gonna dac drugiej szansy kwentinie. Przywiezie amulet do magów i zakonczy handel.
 
 	Mod_DextersJob = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter hat Quentin erneut das Amulett übergeben, damit dieser es den Magiern überbringt. Diesmal läuft hoffentlich alles glatt.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter zwrócil amulet Quentin, aby dostarczyc go magikom. Miejmy nadzieje, ze tym razem wszystko bedzie przebiegalo plynnie.");
 };
 
 INSTANCE Info_Mod_Dexter_QuentinsBack (C_INFO)
@@ -356,19 +356,19 @@ FUNC INT Info_Mod_Dexter_QuentinsBack_Condition()
 
 FUNC VOID Info_Mod_Dexter_QuentinsBack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_00"); //Verdammter Mist.
-	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_01"); //Was ist geschehen.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_02"); //Als Quentin das Amulett dem Magier Albert übergab, begutachtete dieser das Stück einige Minuten.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_03"); //Dann warf er des Quentin plötzlich vor die Füße, war außer sich, sprach von Täuschung und Betrug.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_04"); //Er könne zwar noch den Rest magischer Aura des echten Amulettes spüren, das sei aber eindeutig eine Fälschung.
-	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_05"); //Wie ist das möglich?
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_06"); //Nun, völlig dämlich bin ich auch nicht. Ich bin alles noch mal durchgegangen und zu dem einzigen Schluss gekommen, dass dieser dreckige Oschust dahinter stecken muss.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_07"); //Als wir ihm das Amulett zum Aufpolieren gaben, muss er noch in selber Nacht eine exakte Kopie erstellt haben, welche er uns dann am nächsten Tag übergab.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_08"); //Das Original muss er irgendwo versteckt haben. Ich kann jetzt aber nicht einfach zu ihm gehen und ihn in stücke hauen. Wir brauchen ihn noch.
-	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_09"); //Was bleibt zu tun?
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_10"); //Das überlasse ich dir. Kümmere du dich um Oschust. Bringe ihn mit etwas "Diplomatie" dazu, dir Auskunft über den Standort des Amulettes zu geben.
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_11"); //Aber er soll danach noch weiterhin dazu in der Lage sein, seinem Fälscherhandwerk nachzugehen. Du verstehst?
-	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_12"); //Gut. Erstatte mir danach wieder Bericht.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_00"); //Pieklo piekielne.
+	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_01"); //Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_02"); //Kiedy Quentin przekazal amulet magikowi Albertowi, przez kilka minut badal ten utwór.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_03"); //Potem nagle rzucil Quentin na nogi, byl zdenerwowany, mówil o oszustwie i oszustwie.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_04"); //Ciagle czul jeszcze reszte magicznej aury prawdziwego amuletu, ale jest to oczywiscie falszerstwo.
+	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_05"); //Jak to jest mozliwe?
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_06"); //No cóz, nie jestem tez zupelnie glupi. Poszedlem na wszystko znowu i doszedlem do jedynego wniosku, ze ten brudny Oschust musi byc za nim.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_07"); //Kiedy dalismy mu amulet do wypolerowania, musial on wykonac w tej samej nocy dokladna kopie, która potem przekazal nam nastepnego dnia.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_08"); //Gdzies ukrywal oryginal. Nie moge do niego pójsc teraz i pociac go na kawalki. Wciaz go potrzebujemy.
+	AI_Output(hero, self, "Info_Mod_Dexter_QuentinsBack_15_09"); //Co jeszcze pozostaje do zrobienia?
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_10"); //Das überlasse ich dir. Kümmere du dich um Oschust. Bringe ihn mit etwas "dyplomacja" dazu, dir Auskunft über den Standort des Amulettes zu geben.
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_11"); //Powinien on jednak byc w stanie pózniej kontynuowac swój handel podrabianiem towarów. Rozumiesz?
+	AI_Output(self, hero, "Info_Mod_Dexter_QuentinsBack_09_12"); //Dobre. Zglos sie pózniej do mnie.
 
 	Wld_InsertNpc	(Mod_10012_ORC_Scout_MT,	"OC1");
 	Wld_InsertNpc	(Mod_10013_ORC_Scout_MT,	"OC1");
@@ -387,7 +387,7 @@ INSTANCE Info_Mod_Dexter_FakeAmulett (C_INFO)
 	information	= Info_Mod_Dexter_FakeAmulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo ist das gefälschte Amulett jetzt?";
+	description	= "Gdzie jest teraz falszywy amulet?";
 };
 
 FUNC INT Info_Mod_Dexter_FakeAmulett_Condition()
@@ -400,12 +400,12 @@ FUNC INT Info_Mod_Dexter_FakeAmulett_Condition()
 
 FUNC VOID Info_Mod_Dexter_FakeAmulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_FakeAmulett_15_00"); //Wo ist das gefälschte Amulett jetzt?
-	AI_Output(self, hero, "Info_Mod_Dexter_FakeAmulett_09_01"); //Ich trage es bei mir. Hier, du kannst es haben, da du es auch dem Alten Lager entrissen hast.
+	AI_Output(hero, self, "Info_Mod_Dexter_FakeAmulett_15_00"); //Gdzie jest teraz falszywy amulet?
+	AI_Output(self, hero, "Info_Mod_Dexter_FakeAmulett_09_01"); //Nosze go przy sobie. Tutaj mozna go miec, bo zabrales go ze starego obozu.
 
 	B_GiveInvItems	(self, hero, ItAm_MegaAmulett, 1);
 
-	AI_Output(self, hero, "Info_Mod_Dexter_FakeAmulett_09_02"); //Für uns hat es keinen Wert mehr.
+	AI_Output(self, hero, "Info_Mod_Dexter_FakeAmulett_09_02"); //Nie ma juz dla nas zadnej wartosci.
 };
 
 INSTANCE Info_Mod_Dexter_OschustAmulett (C_INFO)
@@ -416,7 +416,7 @@ INSTANCE Info_Mod_Dexter_OschustAmulett (C_INFO)
 	information	= Info_Mod_Dexter_OschustAmulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe von Oschust erfahren, wo sich das Amulett befindet.";
+	description	= "Nauczylem sie od Oschusta, gdzie znajduje sie amulet.";
 };
 
 FUNC INT Info_Mod_Dexter_OschustAmulett_Condition()
@@ -429,25 +429,25 @@ FUNC INT Info_Mod_Dexter_OschustAmulett_Condition()
 
 FUNC VOID Info_Mod_Dexter_OschustAmulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_00"); //Ich habe von Oschust erfahren, wo sich das Amulett befindet. Nicht weit von hier in einer Höhle.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_01"); //Sehr gut. Wie kooperativ war Oschust?
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_02"); //Nun, ich musste meiner Position etwas Nachdruck verleihen. Ähhm, da gibt es aber noch ein Problem.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_03"); //Ja?
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_04"); //In der Höhle wimmelt es jetzt von Orks und Warg.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_05"); //Was, schon wieder die Orks?! So nah am Lager ... das ist nicht gut.
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_06"); //Und was unternehmen wir wegen des Amulettes?
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_07"); //(nachdenklich) Für einen frontalen Angriff haben wir nicht genügend Schlagkraft ... und ein nächtlicher Überfall würde an den wachsamen Orkhunden scheitern.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_08"); //Außerdem brauche ich meine Männer hier zum Schutz des Lagers, so häufig, wie sich zurzeit hier Orks herumtreiben ...
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_09"); //Heißt das, ich wäre mal wieder auf mich allein gestellt?
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_10"); //(nachdenlich) Nun… nicht zwangsläufig. Du könntest zum einen versuchen einige Orkjäger im Neuen Lager anzuheuern.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_11"); //Wird aber nicht billig. Hier hast du etwas Gold.
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_00"); //Nauczylem sie od Oschusta, gdzie znajduje sie amulet. Niedaleko stad w jaskini.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_01"); //Bardzo dobry. Jaka byla wspólpraca z Oschustem?
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_02"); //Cóz, musialem polozyc nacisk na moje stanowisko. Jest jeszcze inny problem.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_03"); //Tak?
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_04"); //Jaskinia jest pelna orków i wojen.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_05"); //Co jeszcze orki? Tak blisko magazynu.... to nie jest dobre.
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_06"); //A co robimy z amuletem?
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_07"); //Nie mamy wystarczajaco duzo sily przebicia, aby dokonac czolowego ataku.... i nocny rabunek z powodu pilnych psów.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_08"); //Potrzebuje tu równiez moich mezczyzn, aby chronic obóz, tak czesto jak orki, które w tej chwili sie rozchodza......
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustAmulett_15_09"); //Czy to oznacza, ze znów jestem sam?
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_10"); //No cóz.... nie koniecznie. Mozesz spróbowac wynajac Orchunterów w Nowym Obozie.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_11"); //Nie przychodzi tanio. Oto troche zlota.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_12"); //Vielleicht gelingt es dir aber auch einen Bekloppten zu finden, der Lockvogel spielt und die Orks aus der Höhle herauslockt.
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_13"); //Naja, ich bin mir sicher du findest einen Weg. Viel Glück!
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_12"); //Byc moze znajdziemy równiez szalenca, który gra wabikiem i wyciaga orki z jaskini.
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustAmulett_09_13"); //Cóz, jestem pewien, ze znajdziecie sposób. Powodzenia!
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter kann keine Leute im Lager entbehren zur Bergung des Amulettes und gab mir den Ratschlag eventuell einige Orksöldner anzuheuern, um gewaltsam das Schmuckstück zu erbeuten. Er meinte auch, dass ich alternativ einen Leichsinnigen finden könnte, der die Orks aus der Höhle herauslocken würde. Ob mir da jemand einfällt?");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter nie moze oszczedzic zadnych ludzi w obozie, aby odzyskac amulet i ostatecznie poradzil mi zatrudnic orkiestry do przymusowego przechwytywania bizuterii. Powiedzial tez, ze moge znalezc alternatywnie lekkomyslnego, który zwabi orkiestry z jaskini. Zastanawiam sie, czy moge o kimkolwiek pomyslec.");
 
 	B_StartOtherRoutine	(Mod_7022_BDT_Oschust_MT, "TOT");
 	AI_Teleport	(Mod_7022_BDT_Oschust_MT, "TOT");
@@ -461,7 +461,7 @@ INSTANCE Info_Mod_Dexter_OschustTot (C_INFO)
 	information	= Info_Mod_Dexter_OschustTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ähh, ich habe versucht Oschust zu befragen. Leider ist er dabei verstorben und ...";
+	description	= "Uh, próbowalem zadac pytanie oschusty. Niestety, odszedl i....";
 };
 
 FUNC INT Info_Mod_Dexter_OschustTot_Condition()
@@ -477,10 +477,10 @@ FUNC INT Info_Mod_Dexter_OschustTot_Condition()
 
 FUNC VOID Info_Mod_Dexter_OschustTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_OschustTot_15_00"); //Ähh, ich habe versucht Oschust zu befragen. Leider ist er dabei verstorben und ...
-	AI_Output(self, hero, "Info_Mod_Dexter_OschustTot_09_01"); //(außer sich) Was ...?! Das hast du ja toll hinbekommen. Nun ... da du so schlau warst: viel Spaß beim Suchen!
+	AI_Output(hero, self, "Info_Mod_Dexter_OschustTot_15_00"); //Uh, próbowalem zadac pytanie oschusty. Niestety, odszedl i....
+	AI_Output(self, hero, "Info_Mod_Dexter_OschustTot_09_01"); //Co....? Wykonal pan wspaniala prace. .... od kiedy byles tak madry: dobrze szukaj!
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter war wenig erfreut über Oschusts Ableben. Das Amulett jetzt zu finden wird ein schweres Unterfangen. Ich werde mich wohl alleine auf die Suche machen müssen ...");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter byl niezadowolony z upadku Oschusta. Znalezienie amuletu teraz bedzie trudnym przedsiewzieciem. Zapewne bede musial szukac siebie samotnie......");
 
 	B_StartOtherRoutine	(Mod_7022_BDT_Oschust_MT, "TOT");
 	AI_Teleport	(Mod_7022_BDT_Oschust_MT, "TOT");
@@ -494,7 +494,7 @@ INSTANCE Info_Mod_Dexter_Amulett2Gefunden (C_INFO)
 	information	= Info_Mod_Dexter_Amulett2Gefunden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe das Amulett geborgen.";
+	description	= "Ocalilem amulet.";
 };
 
 FUNC INT Info_Mod_Dexter_Amulett2Gefunden_Condition()
@@ -509,10 +509,10 @@ FUNC INT Info_Mod_Dexter_Amulett2Gefunden_Condition()
 
 FUNC VOID Info_Mod_Dexter_Amulett2Gefunden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_Amulett2Gefunden_15_00"); //Ich habe das Amulett geborgen.
-	AI_Output(self, hero, "Info_Mod_Dexter_Amulett2Gefunden_09_01"); //Ausgezeichnet. Gehe nun auf direktem Wege zu dem Verwandlungsmagier Albert und übergib es ihm.
+	AI_Output(hero, self, "Info_Mod_Dexter_Amulett2Gefunden_15_00"); //Ocalilem amulet.
+	AI_Output(self, hero, "Info_Mod_Dexter_Amulett2Gefunden_09_01"); //Doskonaly. Teraz przejdz bezposrednio do maga transformacji Alberta i daj mu go.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Ich soll das Amulett der Extension jetzt dem Verwandlungsmagier Albert überbringen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Mam wniesc amulet przedluzacza do przemieniajacego sie magika Alberta.");
 };
 
 INSTANCE Info_Mod_Dexter_AmulettAbgegeben (C_INFO)
@@ -523,7 +523,7 @@ INSTANCE Info_Mod_Dexter_AmulettAbgegeben (C_INFO)
 	information	= Info_Mod_Dexter_AmulettAbgegeben_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Albert hat das Amulett erhalten.";
+	description	= "Albert otrzymal amulet.";
 };
 
 FUNC INT Info_Mod_Dexter_AmulettAbgegeben_Condition()
@@ -536,31 +536,31 @@ FUNC INT Info_Mod_Dexter_AmulettAbgegeben_Condition()
 
 FUNC VOID Info_Mod_Dexter_AmulettAbgegeben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_15_00"); //Albert hat das Amulett erhalten.
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_09_01"); //Sehr gut. Hat er dir den Rest des vereinbarten Preises gegeben?
+	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_15_00"); //Albert otrzymal amulet.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_09_01"); //Bardzo dobry. Czy dal ci reszte uzgodnionej ceny?
 
 	Info_ClearChoices	(Info_Mod_Dexter_AmulettAbgegeben);
 
-	Info_AddChoice	(Info_Mod_Dexter_AmulettAbgegeben, "Nein, er war noch wütend wegen des gefälschten Schmuckstückes.", Info_Mod_Dexter_AmulettAbgegeben_B);
+	Info_AddChoice	(Info_Mod_Dexter_AmulettAbgegeben, "Nie, jeszcze sie zloscil na sztuczna bizuterie.", Info_Mod_Dexter_AmulettAbgegeben_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 300)
 	&& (Npc_HasItems(hero, ItSc_TrfSheep) >= 1)
 	&& (Npc_HasItems(hero, ItSc_TrfKeiler) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Dexter_AmulettAbgegeben, "Ja, hier hast du alles.", Info_Mod_Dexter_AmulettAbgegeben_A);
+		Info_AddChoice	(Info_Mod_Dexter_AmulettAbgegeben, "Tak, dostales tu wszystko.", Info_Mod_Dexter_AmulettAbgegeben_A);
 	};
 };
 
 FUNC VOID Info_Mod_Dexter_AmulettAbgegeben_C()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_00"); //Wie dem auch sei, nachdem ganzen Ärger die letzten Tage muss erst mal ein Ausgleich her. Hier, trink einen Schluck.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_00"); //Tak czy inaczej, mimo wszystkich klopotów w ciagu ostatnich kilku dni, musimy nadrobic to wszystko. Tutaj napój sie.
 
 	CreateInvItems	(hero, ItFo_Addon_Grog, 1);
 
 	B_UseItem	(hero, ItFo_Addon_Grog);
 
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_01"); //Echter guter Seemannsgrog, den unsere Jungs mal einem Händler auf Khorinis abgenommen haben.
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_02"); //Dazu gibt’s noch exquisiten Schinken und knusprig gebratenes Fleisch. Heute Nacht wird durchgezecht ohne Pardon. (lacht)
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_01"); //Prawdziwy dobry grog zeglarski, który nasi chlopcy przyjeli od kupca na Khorinis.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_C_09_02"); //Ponadto sa tam równiez wykwintne szynki i chrupiace pieczone mieso. Dzis wieczorem nie bedzie zadnego usprawiedliwienia. (smiertelnicy)
 
 	CreateInvItems	(self, ItFo_Addon_Grog, 1);
 
@@ -575,21 +575,21 @@ FUNC VOID Info_Mod_Dexter_AmulettAbgegeben_C()
 
 FUNC VOID Info_Mod_Dexter_AmulettAbgegeben_B()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_B_15_00"); //Nein, er war noch wütend wegen des gefälschten Schmuckstückes.
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_B_09_01"); //Verdammt, das hatte ich fast befürchtet. Naja, trotzdem danke für deine Bemühungen.
+	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_B_15_00"); //Nie, jeszcze sie zloscil na sztuczna bizuterie.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_B_09_01"); //Damn, prawie sie tego obawialem. Cóz, dziekuje za panskie wysilki i tak.
 
 	Info_Mod_Dexter_AmulettAbgegeben_C();
 };
 
 FUNC VOID Info_Mod_Dexter_AmulettAbgegeben_A()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_A_15_00"); //Ja, hier hast du alles.
+	AI_Output(hero, self, "Info_Mod_Dexter_AmulettAbgegeben_A_15_00"); //Tak, dostales tu wszystko.
 
-	B_ShowGivenThings	("300 Gold und 2 Spruchrollen gegeben");
+	B_ShowGivenThings	("300 szt. zlota i 2 szt.");
 
-	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_A_09_01"); //Ausgezeichnet. Zur Belohnung für deine Dienste um das Lager darfst du die Keilerspruchrolle und 200 Gold behalten.
+	AI_Output(self, hero, "Info_Mod_Dexter_AmulettAbgegeben_A_09_01"); //Doskonaly. Nagroda za uslugi swiadczone w obozie jest zachowanie zaklecia knurów i 200 zlota.
 
-	B_ShowGivenThings	("200 Gold und 1 Spruchrollen erhalten");
+	B_ShowGivenThings	("Zachowane 200 rolek zlota i 1 zaklecie");
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 100);
 	Npc_RemoveInvItems	(hero, ItSc_TrfSheep, 1);
@@ -619,32 +619,32 @@ FUNC INT Info_Mod_Dexter_BanditenKidnapped_Condition()
 
 FUNC VOID Info_Mod_Dexter_BanditenKidnapped_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_00"); //Was ist geschehen, wo sind die anderen Banditen?
-	AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_01"); //Es war alles ein Hinterhalt. Oschust hat uns an die Orks verraten.
+	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_00"); //Co sie stalo, gdzie sa inni bandyci?
+	AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_01"); //To bylo wszystko zasadzka. Oschust zdradzil nas do orków.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Dexter_OschustTot))
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_02"); //Was wie ist das möglich? Ich dachte er sei tot ...
-		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_03"); //Nein, die Orks hatten ihn mit magischen Artefakten ausgestattet, die ihn davor bewahrten, endgültig in Beliar’s Reich hinab zu fahren.
+		AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_02"); //Jak to jest mozliwe? Myslalem, ze nie zyje....
+		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_03"); //Nie, orki wyposazyly go w magiczne artefakty, które uratowaly go od zejscia w koncu do królestwa Beliara.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_04"); //Die anderen Banditen wurden gefangen genommen, ich konnte mich gerade noch meiner Haut erwehren.
-	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_05"); //Verdammt, das ist eine Katastrophe. Ich muss nachdenken ... Also, es gibt keine Zeit zu verlieren, da unser stark geschwächtes Lager jeder Zeit angegriffen werden kann.
-	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_06"); //Begib dich schnell zur alten Bergfestung. Dort findest du Orks, mit welchen wir in Handlesbeziehungen stehen.
-	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_07"); //Wende dich an Ur Shak. Vielleicht können wir mehr von ihm erfahren.
+	AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_04"); //Inni bandyci zostali zlapani, ledwie moglem oprzec sie mojej skórze.
+	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_05"); //Damn, to jest katastrofa. Musze pomyslec...... Nie ma wiec czasu do stracenia, poniewaz nasz oslabiony obóz moze zostac zaatakowany w dowolnym momencie.
+	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_06"); //Pospiesz sie do starej twierdzy górskiej. Znajdziesz tam orki, z którymi mamy do czynienia.
+	AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_07"); //Przejdz na Ur Shak. Moze mozemy sie od niego nauczyc wiecej.
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Oschust_BadOne_Gnade))
 	|| (Npc_KnowsInfo(hero, Info_Mod_Oschust_BadOne_Plan))
 	{
-		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_08"); //Ich konnte bereits einiges von Oschust erfahren. Er hat tatsächlich vor bald unser Lager anzugreifen und will sich im Anschluss das Amulett von den Magiern zurückholen.
-		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_09"); //Und den gefangenen Banditen wird es schlecht ergehen ...
-		AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_10"); //Hmm, in diesem Fall kannst du dich auch sofort an die Verwandlungsmagier wenden. Sprich mit Albert, aber beeil dich.
+		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_08"); //Wiele juz dowiedzialem sie o Oschust. On rzeczywiscie planowal wkrótce zaatakowac nasz obóz i chce odzyskac amulet od magów.
+		AI_Output(hero, self, "Info_Mod_Dexter_BanditenKidnapped_15_09"); //A pochwyceni bandyci beda zle cierpiec.... Wiecej
+		AI_Output(self, hero, "Info_Mod_Dexter_BanditenKidnapped_09_10"); //Hmm, w tym przypadku mozna równiez od razu zwrócic sie do magów transformacyjnych. Porozmawiaj z Albertem, ale spiesz sie.
 
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Ich sollte mich an den Verwandlungsmagier Albert wenden, um ihm von der Gefahr zu berichten, die auch seinem Lager droht. Vielleicht kriege ich auf diesem Wege Unterstützung ...");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Powinienem zwrócic sie do przemieniajacego sie magika Alberta, aby opowiedzial mu o niebezpieczenstwach zagrazajacych jego obozowi. Moze tak wlasnie moge uzyskac wsparcie....");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter riet mir, mich an Ur Shak in der alten Bergfestung zu wenden um mehr über die weiteren Pläne zu erfahren.");
+		B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dexter poradzil mi skontaktowac sie z Ur Shak w starej twierdzy górskiej, aby dowiedziec sie wiecej o planach na przyszlosc.");
 	};
 };
 
@@ -668,21 +668,21 @@ FUNC INT Info_Mod_Dexter_AngriffVorbei_Condition()
 
 FUNC VOID Info_Mod_Dexter_AngriffVorbei_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_00"); //(außer Atem) Das war im allerletzten Augenblick, aber ihr habt es geschafft.
+	AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_00"); //Bylo to w ostatniej chwili, ale pan to zrobil.
 	
 	var int Mod_Survivors;
 	Mod_Survivors = 8 - Mod_OC_Esteban - Mod_OC_Miguel - Mod_OC_Logan - Mod_OC_Juan - Mod_OC_Skinner - Mod_OC_Morgahard - Mod_OC_Bandit_01 - Mod_OC_Bandit_02;
 
 	if (Mod_Survivors >= 6)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_01"); //Ausgezeichnet, wie ich sehe konntest du auch die meisten retten.
-		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_02"); //Ja, es war nicht einfach, aber mit viel Geschick und der Unterstützung der Verwandlungsmagier ist es geglückt.
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_03"); //Großartige Leistung. Hier hast du 500 Goldmünzen.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_01"); //Doskonale, widze, ze wiekszosc z nich udalo sie wam uratowac.
+		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_02"); //Tak, nie bylo to latwe, ale przy duzej ilosci umiejetnosci i wsparciu magów transformacji udalo sie to osiagnac.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_03"); //Wielkie osiagniecie. Oto 500 zlotych monet.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_04"); //Das muss gefeiert werden. Aber nicht heute.
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_05"); //So ein Gefecht wie heute reibt sogar den stärksten Banditen auf.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_04"); //Nalezy to swietowac. Ale nie dzisiaj.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_05"); //Bitwa taka, jak dzisiejsza, nawet wyciera najsilniejszy bandyta.
 
 		Mod_AlbertTransforms = 8;
 
@@ -690,9 +690,9 @@ FUNC VOID Info_Mod_Dexter_AngriffVorbei_Info()
 	}
 	else if (Mod_Survivors >= 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_06"); //Ohh, wie ich sehe haben es leider einige nicht geschafft.
-		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_07"); //Die Orks haben uns sehr zugesetzt und einige fanden den Tod.
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_08"); //Sehr bedauerlich, viele gute Männer. Aber im Kampf gegen Horden von Orks ist natürlich mit Verlusten zu rechnen.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_06"); //Och, widze, ze niektórzy z nich tego nie zrobili.
+		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_07"); //Orki zrodzily na nas wielki ciezar, a niektórzy umarli.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_08"); //Bardzo niefortunny, wielu dobrych mezczyzn. Ale w walce z hordy orków nalezy sie spodziewac strat.
 
 		Mod_AlbertTransforms = 9;
 
@@ -700,9 +700,9 @@ FUNC VOID Info_Mod_Dexter_AngriffVorbei_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_09"); //Aber wo sind die anderen Banditen. Konntest du den gar keinen von ihnen retten?
-		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_10"); //Es waren einfach zu viele Orks, die uns angriffen.
-		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_11"); //Das ist eine Katastrophe! Verfluchte Orks! Wie soll es jetzt nur weiter mit unserem Lager gehen ...
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_09"); //Ale gdzie sa inni bandyci? Nie da sie ich uratowac?
+		AI_Output(hero, self, "Info_Mod_Dexter_AngriffVorbei_15_10"); //Zbyt wiele orków nas atakowalo.
+		AI_Output(self, hero, "Info_Mod_Dexter_AngriffVorbei_09_11"); //To jest katastrofa! Fucking orki! Jak mozemy isc z naszym magazynem.....
 
 		Mod_AlbertTransforms = 7;
 
@@ -711,7 +711,7 @@ FUNC VOID Info_Mod_Dexter_AngriffVorbei_Info()
 
 	CreateInvItems	(hero, ItAr_BDT_H_01, 1);
 
-	B_ShowGivenThings	("Schwere Banditenrüstung erhalten");
+	B_ShowGivenThings	("Otrzymanie ciezkiej zbroi bandytów");
 
 	if (Mod_OC_Miguel == 0)
 	{
@@ -778,9 +778,9 @@ FUNC VOID Info_Mod_Dexter_AngriffVorbei_Info()
 
 FUNC VOID B_Dexter_SayNewArmor()
 {
-	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_00"); //Diese alte Banditenrüstung mag äußerlich sicherlich nicht den besten Eindruck machen, ist aber wie geschaffen für längere Raubzüge auch in schwierigem Terrain ... und du bist ja viel unterwegs.
-	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_01"); //Sie ist aus widerstandsfähigem Material und dicht gewebt, sodass sie allen Einflüssen von Außen gleichermaßen standhält.
-	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_02"); //Viel Spaß damit!
+	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_00"); //Ten stary pancerz bandyta moze nie robi najlepszego wrazenia na zewnatrz, ale jest idealny na dluzsze naloty nawet w trudnym terenie..... i duzo podrózujesz.
+	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_01"); //Wykonany jest z odpornego materialu i gesto tkany, dzieki czemu w równym stopniu wytrzymuje wszelkie wplywy zewnetrzne.
+	AI_Output(self, hero, "B_Dexter_SayNewArmor_09_02"); //Baw sie z tym dobrze!
 
 	B_GiveInvItems	(self, hero, ItAr_BDT_XL, 1);
 };
@@ -806,14 +806,14 @@ FUNC INT Info_Mod_Dexter_PartyNachRettung_Condition()
 
 FUNC VOID Info_Mod_Dexter_PartyNachRettung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_00"); //(leicht ironisch) Ahh, unser Erretter. Komm her und trink einen Schluck.
+	AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_00"); //(nieco ironiczny) Ahhh, nasz Zbawiciel. Przyjedz tutaj i napój.
 
 	if (Mod_Import_Dexter == LOG_SUCCESS)
 	|| (Mod_Import_Dexter == -1)
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_01"); //Ach übrigens: Es hat etwas gedauert, aber ich habe dich doch erkannt.
-		AI_Output(hero, self, "Info_Mod_Dexter_PartyNachRettung_15_02"); //Dann weißt du, dass ich damals den Schl ...
-		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_03"); //Ja, wie du mir damals das Rezept für den Trank  vom verrückten Kalom besorgt hast. Ich habe hier etwas davon. Nimm einen Schluck ...
+		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_01"); //Nawiasem mówiac, zajelo mi to troche czasu, ale ja cie poznalem.
+		AI_Output(hero, self, "Info_Mod_Dexter_PartyNachRettung_15_02"); //Wtedy wiesz, ze znasz to z powrotem,
+		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_03"); //Tak, tak jak wtedy dostalem przepis na ten eliksir z Crazy Kalom. Dostalem cos tutaj. Miec lyk....
 
 		B_GiveInvItems	(self, hero, ItPo_KalomsTrank, 1);
 
@@ -825,7 +825,7 @@ FUNC VOID Info_Mod_Dexter_PartyNachRettung_Info()
 
 		B_UseItem	(hero, ItFo_Booze);
 
-		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_04"); //Ich habe da etwas Nettes für dich herausgestöbert.
+		AI_Output(self, hero, "Info_Mod_Dexter_PartyNachRettung_09_04"); //Znalazlem dla Ciebie cos milego.
 
 		B_Dexter_SayNewArmor();
 	};
@@ -854,7 +854,7 @@ FUNC INT Info_Mod_Dexter_Wolkenwelt_Condition()
 
 FUNC VOID Info_Mod_Dexter_Wolkenwelt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Wolkenwelt_09_00"); //Da bist du ja wieder. Während du im Land der Träume unterwegs warst, habe ich etwas Nettes für dich herausgestöbert.
+	AI_Output(self, hero, "Info_Mod_Dexter_Wolkenwelt_09_00"); //Tam znów pan jest. Kiedy byles na drodze w krainie marzen, wydobywalem cos milego dla Ciebie.
 
 	B_Dexter_SayNewArmor();
 
@@ -881,9 +881,9 @@ FUNC INT Info_Mod_Dexter_Alissandro_Condition()
 
 FUNC VOID Info_Mod_Dexter_Alissandro_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Alissandro_09_00"); //Was geht hier vor?
-	AI_Output(hero, self, "Info_Mod_Dexter_Alissandro_15_01"); //Die Wache will mich nicht reinlassen ohne Passwort.
-	AI_Output(self, hero, "Info_Mod_Dexter_Alissandro_09_02"); //Ich kenne dich, du kannst reinkommen. Lass uns ins Lager gehen, dort können wir besser reden.
+	AI_Output(self, hero, "Info_Mod_Dexter_Alissandro_09_00"); //Co sie tu dzieje?
+	AI_Output(hero, self, "Info_Mod_Dexter_Alissandro_15_01"); //Straznik nie wpusci mnie bez hasla.
+	AI_Output(self, hero, "Info_Mod_Dexter_Alissandro_09_02"); //Wiem, ze mozesz wejsc. Idzmy do obozu, gdzie mozemy lepiej porozmawiac.
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -896,7 +896,7 @@ INSTANCE Info_Mod_Dexter_Botschaft (C_INFO)
 	information	= Info_Mod_Dexter_Botschaft_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe eine Botschaft von Alissandro.";
+	description	= "Mam wiadomosc od Alissandro.";
 };
 
 FUNC INT Info_Mod_Dexter_Botschaft_Condition()
@@ -911,15 +911,15 @@ FUNC INT Info_Mod_Dexter_Botschaft_Condition()
 
 FUNC VOID Info_Mod_Dexter_Botschaft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_Botschaft_15_00"); //Ich habe eine Botschaft von Alissandro.
+	AI_Output(hero, self, "Info_Mod_Dexter_Botschaft_15_00"); //Mam wiadomosc od Alissandro.
 
 	B_GiveInvItems	(hero, self, ItWr_AliBotschaft, 1);
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Dexter_Botschaft_09_01"); //Gut, was ist mit dem eigentlichen Botschafter passiert?
-	AI_Output(hero, self, "Info_Mod_Dexter_Botschaft_15_02"); //Er lag tot vor dem Lager. Das ist der Grund warum ich hier bin. Habt ihr etwas bemerkt?
-	AI_Output(self, hero, "Info_Mod_Dexter_Botschaft_09_03"); //Bartholos Leute wollten uns auch schon auf ihre Seite ziehen und waren vor wenigen Tagen hier.
+	AI_Output(self, hero, "Info_Mod_Dexter_Botschaft_09_01"); //Cóz, co sie stalo z obecnym ambasadorem?
+	AI_Output(hero, self, "Info_Mod_Dexter_Botschaft_15_02"); //Przed obozem lezal martwy. Dlatego jestem tutaj. Czy zauwazyles cos?
+	AI_Output(self, hero, "Info_Mod_Dexter_Botschaft_09_03"); //Bartolosowie chcieli nas zabrac po swojej stronie i byli tu kilka dni temu.
 
 	B_RemoveNpc	(Mod_943_GRD_Bloodwyn_MT);
 
@@ -936,7 +936,7 @@ INSTANCE Info_Mod_Dexter_Plan (C_INFO)
 	information	= Info_Mod_Dexter_Plan_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du einen Plan?";
+	description	= "Masz plan?";
 };
 
 FUNC INT Info_Mod_Dexter_Plan_Condition()
@@ -949,16 +949,16 @@ FUNC INT Info_Mod_Dexter_Plan_Condition()
 
 FUNC VOID Info_Mod_Dexter_Plan_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_00"); //Hast du einen Plan?
-	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_01"); //Unter Umständen, ist allerdings ziemlich riskant.
-	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_02"); //Und wie lautet er?
-	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_03"); //Gegen alle Gardisten zusammen haben wir keine Chance, wir müssen sie alle auf einen Streich töten.
-	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_04"); //Und wie sollen wir das schaffen?
-	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_05"); //Mach einfach das, was ich sage. Als erstes lockst du einen Gardisten zu mir. Ich belege ihn mit einer "Schlaf" Spruchrolle.
-	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_06"); //Wie soll ich ihn anlocken?
-	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_07"); //Alle Gardisten bewachen den Eingang, deshalb ist es schwer, einen wegzulocken. Allerdings ist einer etwas innerhalb des Lagers und sieht nach dem Rechten. Greif ihn an und locke ihn zu mir.
+	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_00"); //Masz plan?
+	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_01"); //W pewnych okolicznosciach jest jednak dosc ryzykowne.
+	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_02"); //I co to jest?
+	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_03"); //Nie mamy szans na to, aby wszyscy razem straznicy mieli szanse, musimy ich wszystkich zabic na raz.
+	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_04"); //A jak mamy to zrobic?
+	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_05"); //Mach einfach das, was ich sage. Als erstes lockst du einen Gardisten zu mir. Ich belege ihn mit einer "ukosnik" Spruchrolle.
+	AI_Output(hero, self, "Info_Mod_Dexter_Plan_15_06"); //Jak go zwabic?
+	AI_Output(self, hero, "Info_Mod_Dexter_Plan_09_07"); //Wszyscy pilnuja wejscia, wiec trudno Cie odciagnac. Jest sie jednak czyms w obozie i szuka wlasciwej rzeczy. Atakuj go i zwabij do mnie.
 
-	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "Dexter hat einen Plan: Ich soll erstmal den Gardisten, der Wache hält, angreifen und zu Dexter locken.");
+	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "Dexter's dostal plan: Mam zaatakowac straznika, który pelni dyzur i zwabic straznika do Dextera.");
 };
 
 INSTANCE Info_Mod_Dexter_Gardist (C_INFO)
@@ -981,8 +981,8 @@ FUNC INT Info_Mod_Dexter_Gardist_Condition()
 
 FUNC VOID Info_Mod_Dexter_Gardist_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Gardist_09_00"); //So, nun müssen wir warten, bis seine Kollegen nachschauen, was mit ihm passiert ist. In der Zeit brauchen wir eine "Feuerregen" Spruchrolle. Ich habe für Notfälle eine in meiner Truhe.
-	AI_Output(self, hero, "Info_Mod_Dexter_Gardist_09_01"); //Meine Truhe steht in der Höhle. Ich bleibe in der Zeit hier und warte auf die Gardisten. Wenn ich das Signal gebe, zündest du die Spruchrolle.
+	AI_Output(self, hero, "Info_Mod_Dexter_Gardist_09_00"); //So, nun müssen wir warten, bis seine Kollegen nachschauen, was mit ihm passiert ist. In der Zeit brauchen wir eine "pozar" Spruchrolle. Ich habe für Notfälle eine in meiner Truhe.
+	AI_Output(self, hero, "Info_Mod_Dexter_Gardist_09_01"); //Moja klatka piersiowa jest w jaskini. Zostane tu na czas i czekam na strazników. Kiedy daje sygnal, zapala pan czesc wypowiedzi.
 
 	Mob_CreateItems	("DEXTERSTRUHE", ItSc_FireRain, 1);
 
@@ -1033,7 +1033,7 @@ FUNC INT Info_Mod_Dexter_Jetzt_Condition()
 
 FUNC VOID Info_Mod_Dexter_Jetzt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Jetzt_09_00"); //Jetzt, ich versteck mich solange in der Höhle.
+	AI_Output(self, hero, "Info_Mod_Dexter_Jetzt_09_00"); //Teraz tak dlugo ukrywam sie w jaskini.
 	
 	B_StartOtherRoutine	(self, "HOEHLE");
 };
@@ -1073,7 +1073,7 @@ FUNC INT Info_Mod_Dexter_Feuerregen_Condition()
 
 FUNC VOID Info_Mod_Dexter_Feuerregen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Feuerregen_09_00"); //Wir haben gewonnen! Wir werden uns Alissandro anschliessen. Gehe zu ihm und berichte ihm das.
+	AI_Output(self, hero, "Info_Mod_Dexter_Feuerregen_09_00"); //Zwyciezylismy! Dolaczymy do Alissandro. Idz do niego i opowiedz mu o tym.
 	
 	B_StartOtherRoutine	(self, "START");
 	B_StartOtherRoutine	(Mod_964_BDT_Skinner_MT, "START");
@@ -1084,7 +1084,7 @@ FUNC VOID Info_Mod_Dexter_Feuerregen_Info()
 	B_StartOtherRoutine	(Mod_955_BDT_Juan_MT, "START");
 	B_StartOtherRoutine	(Mod_7023_BDT_Quentin_MT, "START");
 
-	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "Ich habe den Feuerregen gezündet, alle Gardisten sind tot. Dexter und seine Leute schliessen sich uns an. Ich werde das Alissandro berichten.");
+	B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "Wyruszam z deszczu ognia, wszyscy straznicy nie zyja. Dexter i jego faceci dolaczaja do nas. Opowiem o Alissandro.");
 };
 
 INSTANCE Info_Mod_Dexter_Eroberung_05 (C_INFO)
@@ -1107,7 +1107,7 @@ FUNC INT Info_Mod_Dexter_Eroberung_05_Condition()
 
 FUNC VOID Info_Mod_Dexter_Eroberung_05_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Eroberung_05_09_00"); //Dann dringen wir ...
+	AI_Output(self, hero, "Info_Mod_Dexter_Eroberung_05_09_00"); //Potem przenikamy przez....
 
 	AI_StopProcessInfos	(self);
 };
@@ -1132,7 +1132,7 @@ FUNC INT Info_Mod_Dexter_Eroberung_07_Condition()
 
 FUNC VOID Info_Mod_Dexter_Eroberung_07_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dexter_Eroberung_07_09_00"); //... und treten Bartholo und seinen Leuten in den Arsch.
+	AI_Output(self, hero, "Info_Mod_Dexter_Eroberung_07_09_00"); //... i kopanie Bartholo i jego ludzi w osla.
 };
 
 var int Dexter_LastPetzCounter;
@@ -1160,17 +1160,17 @@ FUNC INT Info_Mod_Dexter_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Dexter_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Dexter_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Dexter_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Dexter_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Dexter_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Dexter_LastPetzCounter);
 		
@@ -1185,42 +1185,42 @@ FUNC VOID Info_Mod_Dexter_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Dexter_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Dexter_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Dexter_LastPetzCrime == CRIME_THEFT)
 		|| ( (Dexter_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Dexter_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Dexter_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Dexter_Schulden			= 0;
 			Dexter_LastPetzCounter 	= 0;
@@ -1228,9 +1228,9 @@ FUNC VOID Info_Mod_Dexter_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Dexter_Schulden);
-			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Dexter_PMSchulden_09_14"); //Co to jest?
 		};
 	};
 	
@@ -1239,27 +1239,27 @@ FUNC VOID Info_Mod_Dexter_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Dexter_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Ile to znów bylo?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Dexter_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Dexter_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Dexter_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Dexter_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Dexter_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Dexter_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Dexter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"Ile to znów bylo?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Dexter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Dexter_PETZMASTER_PayNow);
 	};
 };
 
@@ -1287,8 +1287,8 @@ FUNC VOID Info_Mod_Dexter_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Dexter_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -1296,41 +1296,41 @@ FUNC VOID Info_Mod_Dexter_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_06"); //Ich habe kein Interesse daran, dich an den Galgen zu bringen.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_07"); //Aber es wird nicht leicht sein, die Leute wieder gnädig zu stimmen.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_08"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_06"); //Nie interesuje mnie to, ze moge panstwa umiescic na szubienicy.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_07"); //Ale nie bedzie latwo sprawic, by ludzie znów byli laskawi.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_08"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_09"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_09"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_10"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_10"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_11"); //Ich werde so ein Verhalten hier nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_12"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_11"); //Nie bede tolerowal takich zachowan tutaj!
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_12"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Dexter_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_13"); //Wenn du dich mit der Miliz oder sonstwem herumprügelst, ist das eine Sache ...
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_14"); //Aber wenn du unsere Leute angreifst, muss ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_13"); //Jesli walczysz z milicja lub cokolwiek innego, to jedno....
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_14"); //Ale jesli zaatakujesz naszych ludzi, bede musial Cie pociagnac do odpowiedzialnosci.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_15"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_15"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_16"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_17"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_16"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_17"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Dexter_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -1338,14 +1338,14 @@ FUNC VOID Info_Mod_Dexter_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_18"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_19"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_20"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_18"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_19"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_09_20"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Dexter_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_15_21"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_15_21"); //Ile?
 	
 	if (Dexter_Schulden > 1000)	{	Dexter_Schulden = 1000;	};
 		
@@ -1353,18 +1353,18 @@ FUNC VOID Info_Mod_Dexter_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Dexter_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Dexter_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Dexter_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Dexter_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Dexter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Dexter_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Dexter_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Dexter_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Dexter_Schulden);
-	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayNow_09_01"); //Gut! Ich werde dafür sorgen, dass es jeder von uns erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayNow_09_01"); //Dobrze! Doloze wszelkich staran, aby kazdy z nas sie o tym dowiedzial - wiec Twoja reputacja zostanie w rozsadny sposób przywrócona.
 
 	B_GrantAbsolution (LOC_BANDIT);
 	
@@ -1378,9 +1378,9 @@ func void Info_Mod_Dexter_PETZMASTER_PayNow()
 
 func void Info_Mod_Dexter_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_09_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_09_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_09_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_09_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Dexter_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Dexter_LastPetzCrime		= B_GetGreatestPetzCrime(self);

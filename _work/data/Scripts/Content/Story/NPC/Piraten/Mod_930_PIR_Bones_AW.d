@@ -1,7 +1,7 @@
 INSTANCE Mod_930_PIR_Bones_AW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bones";
+	name 		= "kosci";
 	guild 		= GIL_NONE;
 	id 			= 930;
 	voice 		= 1;

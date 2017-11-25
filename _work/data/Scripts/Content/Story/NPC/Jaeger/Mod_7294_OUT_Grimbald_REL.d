@@ -1,7 +1,7 @@
 INSTANCE Mod_7294_OUT_Grimbald_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Grimbald";
+	name 		= "grimbald";
 	guild 		= GIL_OUT;
 	id 			= 7294;
 	voice 		= 7;

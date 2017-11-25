@@ -1,7 +1,7 @@
 instance Mod_7556_OUT_Rotkaeppchen_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rotkäppchen";
+	name 		= "Mala czerwona czerwona kaptur";
 	guild 		= GIL_OUT;
 	id 			= 7556;
 	voice 		= 17;

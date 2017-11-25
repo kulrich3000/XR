@@ -1,7 +1,7 @@
 instance Mod_749_MIL_Ruga_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ruga";	
+	name 		= "ruga";	
 	guild 		= GIL_PAL;
 	id 			= 749;
 	voice 		= 11;

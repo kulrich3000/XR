@@ -86,7 +86,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 				AI_StandUp	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_IgnazDead_15_00"); //Verdammt, er ist tot! Wo soll ich diese Novizen suchen? An welchem Steinkreis?
+				AI_Output(hero, NULL, "Info_Mod_Hero_IgnazDead_15_00"); //Zaprawde, on umarl! Gdzie powinienem szukac tych nowicjuszy? Jakie kamienne kolo?
 			};
 		};
 
@@ -121,52 +121,52 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(hero, Mod_513_DMB_Xardas_NW);
 				AI_TurnToNpc	(Mod_513_DMB_Xardas_NW, hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_00"); //Xardas, ich bringe eine dringende Nachricht von Myxir!
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_00"); //Xardas, przekazuje pilna wiadomosc od Myxir!
 			};
 
 			if (GardeCutscene_Counter == 5)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_01"); //Berichte.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_01"); //Sprawozdania.
 			};
 
 			if (GardeCutscene_Counter == 10)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_02"); //Ich sollte für Myxir ein altes Amulett bergen, das Kräfte Innos' besitzen soll. Ich suchte danach und fand es bei ein paar untoten Novizen.
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_02"); //Mialem odzyskac stary amulet do Myxiru, który powinien posiadac moc Innosa. Szukalem jej i znalazlem ja u niektórych nieumarlych nowicjuszy.
 			};
 
 			if (GardeCutscene_Counter == 15)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_03"); //Diese schwafelten davon, dass die Garde Innos' wieder befreit sei und Beliar vernichten würde.
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_03"); //Oskarzali o to, ze straznicy Innosa zostali uwolnieni i zniszczyli Beliara.
 			};
 
 			if (GardeCutscene_Counter == 20)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_04"); //Als ich das Myxir gesagt habe, hat er mich sofort zu dir geschickt.
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_04"); //Kiedy powiedzialem mi Myxir, poslal mnie prosto do ciebie.
 			};
 
 			if (GardeCutscene_Counter == 25)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_05"); //Die Garde Innos'? Schlimmer hätte es nicht kommen können!
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_05"); //Straz Innosów? Nie moglo byc gorzej!
 			};
 
 			if (GardeCutscene_Counter == 30)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_06"); //(verärgert) Was ist denn die Garde Innos'?
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_06"); //Czym jest Gwardia Inno?
 			};
 
 			if (GardeCutscene_Counter == 35)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_07"); //Vor tausend Jahren erwählten die Götter Innos und Beliar sechs göttliche Streiter für sich. Dies war ihre persönliche Garde. Die Götter bekämpften sich und die Gardisten brachten Leid über das Land.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_07"); //Tysiac lat temu bogowie Innos i Beliar wybrali dla siebie szesciu boskich bojowników. To byl twój osobisty straznik. Bóstwa walczyly przeciwko sobie nawzajem, a straznicy zaszkodzili ziemi.
 			};
 
 			if (GardeCutscene_Counter == 40)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_08"); //Adanos beendete dies und verbannte die Gardisten. Die Garde Beliars hast du bereits vernichtet und die Axt des Untergangs erbeutet.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_08"); //Adanos zakonczyl to i wygnal strazników. Zniszczyles juz strazników Beliara i zlapales siekiere zguby.
 			};
 
 			if (GardeCutscene_Counter == 45)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_09"); //Doch nun wandelt die viel stärkere Garde Innos' unter uns. Ihr Ziel ist es unseren Gott zu besiegen. Wir müssen sie aufhalten.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_09"); //Teraz jednak Inno jest wsród nas znacznie silniejsza straza. Ich celem jest pokonanie naszego Boga. Musimy ich powstrzymac.
 			};
 
 			if (GardeCutscene_Counter == 50)
@@ -180,27 +180,27 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_513_DMB_Xardas_NW, Mod_1998_SNOV_Novize_NW);
 				AI_TurnToNpc	(Mod_1998_SNOV_Novize_NW, Mod_513_DMB_Xardas_NW);
 
-				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_10"); //Meister Xardas, es gibt schreckliche Nachrichten!
+				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_10"); //Master Xardas, jest straszna nowina!
 			};
 
 			if (GardeCutscene_Counter == 57)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_11"); //Was gibt es?
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_11"); //Co sie dzieje?
 			};
 
 			if (GardeCutscene_Counter == 62)
 			{
-				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_12"); //Die Garde Innos' hat eine Belagerung der Feste unserer Ritter begonnen und droht damit, uns zu vernichten!
+				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_12"); //Gwardia Innos rozpoczela oblezenie biesiad naszych rycerskich uczt i grozi nam zniszczeniem!
 			};
 
 			if (GardeCutscene_Counter == 67)
 			{
-				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_13"); //Was sollen wir tun, Meister?
+				AI_Output(Mod_1998_SNOV_Novize_NW, NULL, "Info_Mod_Xardas_GardeInnos_11_13"); //Co robimy, mistrzowie?
 			};
 
 			if (GardeCutscene_Counter == 72)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_14"); //Sag Raven, dass ich sofort Maßnahmen einleiten werde. Geh!
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_14"); //Powiedz Ravenowi, podejme natychmiastowe dzialania. Idzcie!
 			};
 
 			if (GardeCutscene_Counter == 77)
@@ -213,27 +213,27 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(hero, Mod_513_DMB_Xardas_NW);
 				AI_TurnToNpc	(Mod_513_DMB_Xardas_NW, hero);
 
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_15"); //Du hast mitbekommen, was sich nun abspielt, oder?
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_15"); //Slyszales, co sie dzieje, prawda?
 			};
 
 			if (GardeCutscene_Counter == 83)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_16"); //Natürlich, ich bin ja nicht dumm!
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_16"); //Oczywiscie nie jestem glupi!
 			};
 
 			if (GardeCutscene_Counter == 88)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_17"); //Die Situation ist schlimmer als erwartet. Ich werde dich sofort zu den Dämonenrittern telepotieren, und du musst ihnen helfen.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_17"); //Sytuacja jest gorsza niz oczekiwano. Od razu bede Cie telepostowal do Rycerzy Demonicznych, a ty musisz im pomóc.
 			};
 
 			if (GardeCutscene_Counter == 93)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_17"); //Verstanden!
+				AI_Output(hero, NULL, "Info_Mod_Xardas_GardeInnos_15_17"); //Rozumiem!
 			};
 
 			if (GardeCutscene_Counter == 98)
 			{
-				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_18"); //Gut, dann viel Glück.
+				AI_Output(Mod_513_DMB_Xardas_NW, NULL, "Info_Mod_Xardas_GardeInnos_14_18"); //Cóz, powodzenia.
 			};
 
 			if (GardeCutscene_Counter == 103)
@@ -250,7 +250,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 				Log_CreateTopic	(TOPIC_MOD_BEL_BELAGERUNG, LOG_MISSION);
 				B_SetTopicStatus	(TOPIC_MOD_BEL_BELAGERUNG, LOG_RUNNING);
-				B_LogEntry_More	(TOPIC_MOD_BEL_GARDEINNOS, TOPIC_MOD_BEL_BELAGERUNG, "Die Garde Innos' war einst die Leibwache Innos'. Sie wollen jetzt Beliar töten. Wir müssen sie unbedingt aufhalten.", "Die Festung der Dämonenritter wird von der Garde Innos' belagert. Xardas will, dass ich sie unterstütze.");
+				B_LogEntry_More	(TOPIC_MOD_BEL_GARDEINNOS, TOPIC_MOD_BEL_BELAGERUNG, "Straznik Innos 'byl kiedys ochroniarzem Innosem'. Chca teraz zabic Beliara. Musimy ich powstrzymac.", "Twierdza rycerska dla demonów jest oblegana przez straz Innos. Xardas chce, abym ja wspieral.");
 			};
 
 			GardeCutscene_Counter += 1;
@@ -264,7 +264,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 			Log_CreateTopic	(TOPIC_MOD_BEL_ADANOS, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_BEL_ADANOS, LOG_RUNNING);
-			B_LogEntry	(TOPIC_MOD_BEL_ADANOS, "Bei der Ausgrabungsstätte tobt ein Kampf der Wasserkrieger mit Untoten. Ich sollte sehen, ob ich helfen kann.");
+			B_LogEntry	(TOPIC_MOD_BEL_ADANOS, "Na miejscu wykopalisk szaleje bitwa wojownika wodnego z nieumarlymi. Powinienem zobaczyc, czy moge pomóc.");
 		};
 	};
 
@@ -330,7 +330,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 				Wld_InsertNpc	(Stoneguardian_Giant, "WP_AW_BEL_10");
 				Wld_InsertNpc	(Stoneguardian_Giant, "WP_AW_BEL_09");
 
-				B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Gerade hat sich die Gardistin Innos’ aus der Bibliothek herausteleportiert. Sie sprach davon, das Schwert bald zu besitzen und meinte es durch Teleportmagie zu erreichen.");
+				B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Straznik Innos wlasnie wyteleportowala sie z biblioteki. Mówila o tym, ze wkrótce opanowala miecz i chciala to osiagnac za pomoca magii teleportu.");
 			};
 
 			if (Mod_BEL_Josephina_Bib_Counter == 10)
@@ -352,7 +352,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 			Mod_BEL_Josephina_Bib = 1;
 
-			AI_Output(GardeInnos_4099_Josephina, NULL, "Info_Mod_Josephina_Mono_17_00"); //Ja, nicht mehr lange und das Schwert befindet sich in meinen Händen. Mit etwas Teleportmagie sollte es zu erlangen sein.
+			AI_Output(GardeInnos_4099_Josephina, NULL, "Info_Mod_Josephina_Mono_17_00"); //Tak, nie na dlugo, a miecz jest w moich rekach. Z pewna magia teleportowa, powinna ona byc osiagalna.
 		};
 
 		// Aktivierung des Portals
@@ -384,11 +384,11 @@ FUNC VOID GILDENSTORY_BELIAR()
 				{
 					Mod_BEL_FirstPortal = 1;
 
-					B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Da hat sich doch eben ein Portal aufgetan. Aber leider war es nicht stabil genug, als dass ich hätte hindurchlaufen können. Ich sollte vielleicht die Wassermagier fragen ...");
+					B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Portal jest wlasnie otwarty. Niestety, niestety nie bylo to wystarczajaco stabilne, abym mógl przejsc przez nie. Chyba powinienem zapytac magów wody.....");
 
 					AI_StandUP (hero);
 
-					AI_Output(hero, NULL, "Info_Mod_Hero_Mono_Portal_AW_15_00"); //Hmm, ich sollte vielleicht die Wassermagier fragen.
+					AI_Output(hero, NULL, "Info_Mod_Hero_Mono_Portal_AW_15_00"); //Hmm, prawdopodobnie powinienem zapytac Magistrów Wody.
 				};
 			};
 		};
@@ -412,7 +412,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 		{
 			Mod_BEL_BeliarDoch_Gefunden = 1;
 
-			B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Ich habe die Bauanleitung und sollte Myxir jetzt damit aufsuchen.");
+			B_LogEntry	(TOPIC_MOD_BEL_BELIARDOLCH, "Mam instrukcje dotyczace budowy i teraz powinienem zobaczyc Myxir.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Bshydal_Hi))
@@ -539,69 +539,69 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 			if (Mod_BEL_GregOwen_Counter == 1)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_00"); //Ich werde sie ablenken.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_00"); //Odwróce ich uwage.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 6)
 			{
 				AI_TurnToNpc	(Mod_764_PIR_Greg_AW, Mod_939_PIR_Owen_AW);
 
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_01"); //Was meinst du, Junge?
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_01"); //Co myslisz, chlopiec?
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 11)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_02"); //Alligator Jack hat sich für mich geopfert. Jetzt ist es das mindeste, dass ich diese Aufgabe übernehme.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_02"); //Alligator Jack poswiecil sie dla mnie. To minimum, co moge zrobic teraz.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 16)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_03"); //Nee, du weißt wohl nicht, was du das redest. Außerdem bist du sowieso noch geschwächt.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_03"); //Nah, nie wiesz o czym mówisz. Poza tym i tak jestes wciaz slaby.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 21)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_04"); //Die drei Mistkerle hätten dich im Nu erwischt und dich gevierteilt.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_04"); //Trzej synowie suk zlapaliby cie w jiffie i zadziwialiby cie.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 26)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_05"); //Ich weiß sehr wohl, worauf ich mich da einlasse.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_05"); //Doskonale wiem, do czego dochodze.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 31)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_06"); //Ich mag geschwächt sein, umso mehr braucht ihr beim Ausbruch aus dem Lager jeden starken, kampffähigen Mann.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_06"); //Moge byc oslabiony, ale tym bardziej bedziesz potrzebowal, aby uciec z obozu.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 36)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_07"); //Außerdem war ich sowieso immer ein guter Läufer und mit Samuels schnellem Hering hätte ich durchaus eine Chance, ihnen zu entkommen ... oder zumindest sie lange genug abzulenken.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_07"); //Poza tym i tak bylem zawsze dobrym biegaczem i z pospiechem Samuela mialem szanse uciec przed nimi.... lub co najmniej wystarczajaco dlugo je rozpraszac.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 41)
 			{
-				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_08"); //Mein Entschluss steht fest.
+				AI_Output(Mod_939_PIR_Owen_AW, NULL, "Info_Mod_GregOwen_31_08"); //Moja decyzja zostala podjeta.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 46)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_09"); //Nu hör sich das mal einer an. Mut nenn ich das, sich für so ein Himmelfahrtskommando zu melden. Respekt, Junge, Respekt.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_09"); //Cóz, ktos to slucha. Odwage, wzywam, aby zglosic sie do misji samobójczej. Szanse, chlopiec, szacunek.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 51)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_10"); //Wenn du so darauf brennst, werde ich dich auch ganz bestimmt nicht aufhalten wollen ...
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_10"); //Jesli jestes tak chetny, na pewno nie bede chcial cie zatrzymac....
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 56)
 			{
-				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_11"); //Viel Glück, Junge. Du wirst es brauchen.
+				AI_Output(Mod_764_PIR_Greg_AW, NULL, "Info_Mod_GregOwen_01_11"); //Zycze szczescia, synu. Potrzebujesz go.
 			};
 
 			if (Mod_BEL_GregOwen_Counter == 61)
 			{
-				B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Owen will sich opfern und den Versuch unternehmen, die drei lange genug abzulenken, bis wir das Artefakt zerstört haben. Samuels schneller Hering wird hoffentlich halten, was er verspricht ...");
+				B_LogEntry	(TOPIC_MOD_BEL_BEFREIUNG, "Owen chce sie poswiecic i spróbowac rozpraszac trzy wystarczajaco dlugo, aby zniszczyc ten artefakt. Miejmy nadzieje, ze szybkie sledz Samuela dostarczy to, co obiecuje.... Wiecej");
 
 				B_StartOtherRoutine	(Mod_764_PIR_Greg_AW, "SAMMELN");
 				B_StartOtherRoutine	(Mod_1079_PIR_PIRAT_AW, "SAMMELN");
@@ -655,7 +655,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 			View_AddText	(View_GomezTimer, 0, 0, IntToString(Mod_Gomez_Timer), FONT_Screen);
 
 			View_DeleteText	(View_GomezKillsIch);
-			View_AddText	(View_GomezKillsIch, 0, 0, ConcatStrings("Ich: ", IntToString(Mod_Gomez_HasenKiller2 / 2)), FONT_Screen);
+			View_AddText	(View_GomezKillsIch, 0, 0, ConcatStrings("Ja: ", IntToString(Mod_Gomez_HasenKiller2 / 2)), FONT_Screen);
 
 			View_DeleteText	(View_GomezKills);
 			View_AddText	(View_GomezKills, 0, 0, ConcatStrings("Gomez: ", IntToString(Mod_Gomez_HasenKiller)), FONT_Screen);
@@ -752,32 +752,32 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_520_DMR_Raven_MT, hero);
 				AI_TurnToNpc	(hero, Mod_520_DMR_Raven_MT);
 
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_00"); //Gut, dass du da bist. Ich muss dir noch etwas Dringendes mitteilen.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_00"); //Ciesze sie, ze jestes tutaj. Jest jeszcze cos innego, co musze wam powiedziec.
 			};
 
 			if (Talkessel_Counter == 5)
 			{
-				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_01"); //Was ist?
+				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_01"); //Co to jest?
 			};
 
 			if (Talkessel_Counter == 10)
 			{
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_02"); //Die Untoten werden von einem der sechs Gardisten Innos' angeführt. Diesen musst du besiegen.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_02"); //Nieumarlych prowadzi jeden z szesciu strazników Innosów. Musisz go pokonac.
 			};
 
 			if (Talkessel_Counter == 15)
 			{
-				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_03"); //Ich habe gewusst, dass so etwas kommt.
+				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_03"); //Wiedzialem, ze to przyjdzie.
 			};
 
 			if (Talkessel_Counter == 20)
 			{
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_04"); //Sei vorsichtig, die Garde Innos' ist sehr stark.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_04"); //Badz ostrozny, straznik Innos' jest bardzo silny.
 			};
 
 			if (Talkessel_Counter == 25)
 			{
-				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_05"); //Das bin ich schon gewohnt.
+				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_05"); //Przywyklem do tego.
 			};
 
 			if (Talkessel_Counter == 30)
@@ -785,22 +785,22 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_779_SLD_Bullco_MT, hero);
 				AI_TurnToNpc	(hero, Mod_779_SLD_Bullco_MT);
 
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_BS_Rede_06_06"); //Los, lass uns diesen Pennern ordentlich in den Arsch treten.
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_BS_Rede_06_06"); //Chodzmy dalej, kopnijmy troche tylków z tymi wlóczegami.
 			};
 
 			if (Talkessel_Counter == 35)
 			{
-				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_07"); //Nichts lieber als das.
+				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_07"); //Nic lepszego niz to.
 			};
 
 			if (Talkessel_Counter == 40)
 			{
-				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_BS_Rede_06_08"); //(lacht) Wie in den alten Zeiten, oder?
+				AI_Output(Mod_779_SLD_Bullco_MT, NULL, "Info_Mod_BS_Rede_06_08"); //(smiech) Tak jak dawne czasy, prawda?
 			};
 
 			if (Talkessel_Counter == 45)
 			{
-				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_09"); //Ja, wie in den alten Zeiten.
+				AI_Output(hero, NULL, "Info_Mod_BS_Rede_15_09"); //Tak, jak za dawnych czasów.
 			};
 
 			if (Talkessel_Counter == 50)
@@ -808,7 +808,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_520_DMR_Raven_MT, Mod_517_DMR_Gomez_MT);
 				AI_TurnToNpc	(hero, Mod_520_DMR_Raven_MT);
 
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_10"); //Der Zeitpunkt des Angriffes ist nun gekommen. Attacke!
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_10"); //Nadszedl czas na atak. Atakuj!
 			};
 
 			if (Talkessel_Counter == 55)
@@ -918,7 +918,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 			{
 				Mod_BeliarBibScene = 4;
 
-				B_LogEntry	(TOPIC_MOD_BELIAR_UNGEHEUER, "Die Bibliothek sollte wieder gesäubert sein. Andokai sollte davon erfahren.");
+				B_LogEntry	(TOPIC_MOD_BELIAR_UNGEHEUER, "Biblioteka powinna byc ponownie oczyszczona. Andokai powinien o tym wiedziec.");
 			};
 		};
 	};

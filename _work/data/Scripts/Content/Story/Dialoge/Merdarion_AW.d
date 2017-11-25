@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Merdarion_AW_Hi_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_00"); //Adanos sei Dank, du bist endlich aufgewacht.
-	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_01"); //(verwirrt) Aber ... aufgewacht? Was ist geschehen?
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_02"); //Wir fanden dich bewusstlos auf der anderen Seite des Portales vor. Du musst einem Schutzzauber zum Opfer gefallen sein.
-	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_03"); //Schutzzauber?!
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_04"); //Ja, vermutlich wollten die Erbauer damit einst mögliche Eindringlinge betäuben.
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_05"); //Vielleicht war der Mechanismus aber früher auch tödlich, hat jedoch über die Jahrhunderte einen großen Teil seiner Magie eingebüßt.
-	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_06"); //Sehr beruhigend ...
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_07"); //Achja, sprich am besten gleich mit Saturas. Er hat etwas neues herausgefunden.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_00"); //Dziekujemy Adanosowi, wreszcie sie obudziles.
+	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_01"); //(zmieszane) Ale...... Zbudzic sie? Co sie stalo?
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_02"); //Znalezlismy cie nieprzytomnym po drugiej stronie portalu. Musisz pasc ofiara zaklecia ochronnego.
+	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_03"); //Ochrona?
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_04"); //Tak, prawdopodobnie budowniczowie chcieli uzyc go do ogluszenia ewentualnych intruzów.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_05"); //Mechanizm ten mógl byc zabójczy w przeszlosci, ale w ciagu wieków stracil wiele z jego magii.
+	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Hi_15_06"); //Bardzo uspokajajacy.....
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Hi_06_07"); //Ach, cóz, lepiej zaczac rozmawiac z Saturami. Dowiedzial sie czegos nowego.
 
 	AI_StopProcessInfos	(self);
 
@@ -41,7 +41,7 @@ INSTANCE Info_Mod_Merdarion_AW_Nefarius (C_INFO)
 	information	= Info_Mod_Merdarion_AW_Nefarius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Saturas schickt mich.";
+	description	= "Szatan wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_Nefarius_Condition()
@@ -54,18 +54,18 @@ FUNC INT Info_Mod_Merdarion_AW_Nefarius_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_Nefarius_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Nefarius_15_00"); //Saturas schickt mich. Er hat mir aufgetragen die Böden In Khorinis zu reinigen.
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_01"); //Ahh, sehr gut. Das wird die Dämonenmagier hoffentlich von weiteren Dummheiten abhalten.
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_02"); //Hier hast du sechs magische Wasserperlen und eine Karte, auf welcher die betroffenen Gebiete markiert sind.
+	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Nefarius_15_00"); //Szatan wyslal mnie. Kazal mi wyczyscic podloge w khorynie.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_01"); //Ahh, bardzo dobry. Miejmy nadzieje, ze zapobiegnie to dalszemu glupocie magów demonów.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_02"); //Tutaj znajduje sie szesc magicznych perel wodnych i mapa przedstawiajaca dotkniete obszary.
 
 	CreateInvItems	(hero, ItMi_Wasserperle, 6);
 	CreateInvItems	(hero, ItWr_Map_Perlenkram, 1);
 
-	B_ShowGivenThings	("6 Wasserperlen und Karte erhalten");
+	B_ShowGivenThings	("6 otrzymanych perelek wodnych i karty");
 
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_03"); //Möge Adanos dich schützen.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Nefarius_06_03"); //Niech Adanos Cie ochroni.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "So, jetzt muss ich nur noch den Markierungen auf der Karte folgen und die Wasserperlen an den entsprechenden Stellen fallen lassen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Teraz musze tylko isc za znakami na mapie i upuscic perelki wody w odpowiednie miejsca.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -90,16 +90,16 @@ FUNC INT Info_Mod_Merdarion_AW_Perlen_02_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_Perlen_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Perlen_02_06_00"); //Ahh, ich wurde bereits informiert und habe alles nötige für dich beisammen.
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_Perlen_02_06_00"); //Ach, zostalem juz o tym poinformowany i mam wszystko, co wam potrzebne.
 	
 	CreateInvItems	(hero, ItMi_Wasserperle, 3);
 	CreateInvItems	(hero, ItWr_Map_Perlenkram_02, 1);
 
-	B_ShowGivenThings	("3 Wasserperlen und Karte erhalten");
+	B_ShowGivenThings	("3 otrzymane perly wodne i karta");
 
-	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Perlen_02_15_01"); //Ja, es scheint langsam zur Routine zu werden ...
+	AI_Output(hero, self, "Info_Mod_Merdarion_AW_Perlen_02_15_01"); //Tak, wydaje sie, ze staje sie coraz bardziej rutynowe....
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "So, jetzt wieder den Markierungen auf der Karte folgen.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_BOEDEN, "Teraz ponownie podazaj za oznaczeniami na mapie.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -112,7 +112,7 @@ INSTANCE Info_Mod_Merdarion_AW_Zeremoniendolch (C_INFO)
 	information	= Info_Mod_Merdarion_AW_Zeremoniendolch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Adanos zum Gruß. Ich möchte etwas über einen Zeremoniendolch wissen.";
+	description	= "Adanos, powitanie. Chce wiedziec o uroczystym sztylecie.";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_Zeremoniendolch_Condition()
@@ -125,9 +125,9 @@ FUNC INT Info_Mod_Merdarion_AW_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_Zeremoniendolch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Merdarion_Zeremoniendolch_15_00"); //Adanos zum Gruß. Ich möchte etwas über einen Zeremoniendolch wissen.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Zeremoniendolch_06_01"); //Dann geh zu Riordian. Er hat neue Inschriften entziffern können.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Zeremoniendolch_06_02"); //Danke, Meister.
+	AI_Output(hero, self, "Info_Mod_Merdarion_Zeremoniendolch_15_00"); //Adanos, powitanie. Chce wiedziec o uroczystym sztylecie.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Zeremoniendolch_06_01"); //Nastepnie udaj sie do Riordian' s. Potrafil rozszyfrowac nowe inskrypcje.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Zeremoniendolch_06_02"); //Dziekuje panu, panie posle.
 };
 
 INSTANCE Info_Mod_Merdarion_AW_CavalornZuVatras (C_INFO)
@@ -138,7 +138,7 @@ INSTANCE Info_Mod_Merdarion_AW_CavalornZuVatras (C_INFO)
 	information	= Info_Mod_Merdarion_AW_CavalornZuVatras_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Cavalon in die Stadt geschickt. Vatras braucht ihn.";
+	description	= "Wyslalem Kawalon do miasta. Potrzebuje go Vatras.";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_CavalornZuVatras_Condition()
@@ -151,8 +151,8 @@ FUNC INT Info_Mod_Merdarion_AW_CavalornZuVatras_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_CavalornZuVatras_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Merdarion_CavalornZuVatras_15_00"); //Ich habe Cavalon in die Stadt geschickt. Vatras braucht ihn.
-	AI_Output(self, hero, "Info_Mod_Merdarion_CavalornZuVatras_06_01"); //Ist in Ordnung.
+	AI_Output(hero, self, "Info_Mod_Merdarion_CavalornZuVatras_15_00"); //Wyslalem Kawalon do miasta. Potrzebuje go Vatras.
+	AI_Output(self, hero, "Info_Mod_Merdarion_CavalornZuVatras_06_01"); //To wszystko jest w porzadku, panie posle.
 
 	B_GivePlayerXP	(100);
 };
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Merdarion_AW_NefariusKey (C_INFO)
 	information	= Info_Mod_Merdarion_AW_NefariusKey_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nefarius schickt mich.";
+	description	= "Nefarius mnie poslal.";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_NefariusKey_Condition()
@@ -179,17 +179,17 @@ FUNC INT Info_Mod_Merdarion_AW_NefariusKey_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_NefariusKey_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Merdarion_Nefarius_15_00"); //Nefarius schickt mich. Ich soll bei dir vorbeischauen.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_01"); //Gut, dass du gekommen bist. Es gibt in den Ruinen auf Khorinis einen Teleporter. Mit diesem Schlüssel kommt du durch die Tür.
+	AI_Output(hero, self, "Info_Mod_Merdarion_Nefarius_15_00"); //Nefarius mnie poslal. Mam zatrzymac sie przy Twoim miejscu.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_01"); //Ciesze sie, ze przyszedles. W ruinach Khorinis znajduje sie teleporter. Za pomoca tego przycisku mozna przejsc przez drzwi.
 
 	B_GiveInvItems	(self, hero, ItKe_PORTALTEMPELWALKTHROUGH_ADDON, 1);
 
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_02"); //Dann gibt es noch einen weiteren Teleporter in der Nähe der Taverne "Zur toten Harpie". Auch dieser Teleporter ist durch eine Tür geschützt.
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_03"); //Mit diesem Schlüssel kannst du die Tür öffnen.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_02"); //Dann gibt es noch einen weiteren Teleporter in der Nähe der Taverne "Do martwej harfy". Auch dieser Teleporter ist durch eine Tür geschützt.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_03"); //Za pomoca tego przycisku mozna otworzyc drzwi.
 
 	B_GiveInvItems	(self, hero, ITKE_ORLAN_TELEPORTSTATION, 1);
 
-	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_04"); //Und nun beeile dich.
+	AI_Output(self, hero, "Info_Mod_Merdarion_Nefarius_06_04"); //Teraz spieszyc sie.
 };
 
 INSTANCE Info_Mod_Merdarion_AW_Gast (C_INFO)
@@ -200,18 +200,18 @@ INSTANCE Info_Mod_Merdarion_AW_Gast (C_INFO)
 	information	= Info_Mod_Merdarion_AW_Gast_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum bist du überhaupt mitgekommen?";
+	description	= "Dlaczego i tak przybyles?";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_Gast_Condition()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		Info_Mod_Merdarion_AW_Gast.description = "Kannst du mir bei der Suche nach dem Dieb helfen?";
+		Info_Mod_Merdarion_AW_Gast.description = "Czy mozesz pomóc mi znalezc zlodziej?";
 	}
 	else
 	{
-		Info_Mod_Merdarion_AW_Gast.description = "Hast du heute Nacht etwas Ungewöhnliches gesehen?";
+		Info_Mod_Merdarion_AW_Gast.description = "Widziales cos niezwyklego dzis wieczorem?";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_UngebeterBesucher))
@@ -225,12 +225,12 @@ FUNC VOID Info_Mod_Merdarion_AW_Gast_Info()
 {
 	if (Mod_Saturas_Gast == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_00"); //Kannst du mir bei der Suche nach dem Dieb helfen?
-		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_01"); //Vielleicht. Vielleicht auch nicht.
-		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_02"); //Als ich vor ein paar Stunden meinen Blick schweifen ließ, beobachtete ich aus den Augenwinkeln eine Bewegung dort drüben bei den Ruinen.
-		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_03"); //Wahrscheinlich handelte es sich um irgendein Tier.
+		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_00"); //Czy mozesz pomóc mi znalezc zlodziej?
+		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_01"); //Moze. Moze nie.
+		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_02"); //Kiedy kilka godzin temu pozwolilem na wedrówke spojrzenia, z zakatków oczu patrzylem na ruch w ruinach.
+		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_03"); //To bylo chyba jakies zwierze.
 
-		B_LogEntry	(TOPIC_MOD_SATURAS_TAGGAST, "Merdarion hat eine Bewegung zwischen den Ruinen wahrgenommen. Könnte also sein, dass ich dort eine Spur finde.");
+		B_LogEntry	(TOPIC_MOD_SATURAS_TAGGAST, "Merdarion widzial ruch miedzy ruinami. Moge wiec znalezc tam wiodaca role.");
 
 		Mod_Saturas_Gast_Fortschritt = 1;
 
@@ -238,10 +238,10 @@ FUNC VOID Info_Mod_Merdarion_AW_Gast_Info()
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_04"); //Hast du heute Nacht etwas Ungewöhnliches gesehen?
-		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_05"); //(verärgert) Ja, allerdings! Ich habe gerade von vielen schönen Frauen geträumt, bevor du mich geweckt hast!
-		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_06"); //Jemand hat euch bestohlen.
-		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_07"); //Das interessiert mich im Moment herzlich wenig. Gute Nacht!
+		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_04"); //Widziales cos niezwyklego dzis wieczorem?
+		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_05"); //Tak, rzeczywiscie! Marzylem o wielu pieknych kobietach, zanim mnie obudziles!
+		AI_Output(hero, self, "Info_Mod_Merdarion_AW_Gast_15_06"); //Ktos cie ukradl.
+		AI_Output(self, hero, "Info_Mod_Merdarion_AW_Gast_06_07"); //Nie interesuje mnie to w tej chwili zbytnio. Dobra noc!
 	};
 };
 
@@ -263,7 +263,7 @@ FUNC INT Info_Mod_Merdarion_AW_EXIT_Condition()
 
 FUNC VOID Info_Mod_Merdarion_AW_EXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Merdarion_AW_EXIT_06_00"); //Möge für immer das Gleichgewicht gegeben sein!
+	AI_Output(self, hero, "Info_Mod_Merdarion_AW_EXIT_06_00"); //Niech zachowa sie równowaga na zawsze!
 
 	AI_StopProcessInfos	(self);
 };

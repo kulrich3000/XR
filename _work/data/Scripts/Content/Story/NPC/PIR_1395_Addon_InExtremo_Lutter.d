@@ -5,7 +5,7 @@ instance PIR_1395_Addon_InExtremo_Lutter(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Lutter";
+	name =					"migawka";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

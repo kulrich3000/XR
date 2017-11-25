@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Shakir_Hi (C_INFO)
 	information	= Info_Mod_Shakir_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bist du Shakir, der Anführer der Gauner?";
+	description	= "Czy jestes Shakir, przywódca oszustów?";
 };
 
 FUNC INT Info_Mod_Shakir_Hi_Condition()
@@ -19,16 +19,16 @@ FUNC INT Info_Mod_Shakir_Hi_Condition()
 
 FUNC VOID Info_Mod_Shakir_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_00"); //Bist du Shakir, der Anführer der Gauner?
-	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_01"); //Ja, das bin ich. Aber wer bist du denn? Dich habe ich hier noch nie gesehen!
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_02"); //Ich bin ...
-	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_03"); //Auch egal. Ich frage mich nur, was du hier zu suchen hast.
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_04"); //Amir hat mich zu eurem Lager geführt, da ich ihm einen Gefallen getan habe.
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_05"); //Er meinte, dass ich mich euch anschließen sollte.
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_06"); //Am Tor habe ich dann mit Zahit darüber gesprochen, der am Ende gemeint hat, dass ich dich aufsuchen sollte.
-	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_07"); //(grinst) Ah, Frischfleisch. Bevor du dich uns anschließen kannst, musst du noch aber einiges tun.
-	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_08"); //Ich sage dir, da hast du dir einiges vorgenommen.
-	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_09"); //Etwas ähnliches sagte mir schon Zahit.
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_00"); //Czy jestes Shakir, przywódca oszustów?
+	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_01"); //Tak, to ja. Ale kim jestes? Nigdy nie widzialem Cie tutaj!
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_02"); //Jestem.....
+	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_03"); //Nie ma to znaczenia. Zastanawiam sie tylko, co tu robisz.
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_04"); //Amir zaprowadzil mnie do waszego obozu, poniewaz zrobilem mu laske.
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_05"); //Powiedzial, ze powinienem sie do pana przylaczyc.
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_06"); //Przy bramce rozmawialem o tym z Zahitem, który na koniec powiedzial, ze powinienem do ciebie przyjsc.
+	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_07"); //Ah, swieze mieso. Zanim jednak do nas dolaczysz, jest jeszcze wiele do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Shakir_Hi_31_08"); //Mówie ci, masz duzo na glowie.
+	AI_Output(hero, self, "Info_Mod_Shakir_Hi_15_09"); //Cos podobnego juz mi powiedzial Zahit.
 };
 
 INSTANCE Info_Mod_Shakir_GaunerWerden (C_INFO)
@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Shakir_GaunerWerden (C_INFO)
 	information	= Info_Mod_Shakir_GaunerWerden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was muss ich tun, um ein Gauner werden zu können?";
+	description	= "Co musze zrobic, aby zostac oszustem?";
 };
 
 FUNC INT Info_Mod_Shakir_GaunerWerden_Condition()
@@ -52,21 +52,21 @@ FUNC INT Info_Mod_Shakir_GaunerWerden_Condition()
 
 FUNC VOID Info_Mod_Shakir_GaunerWerden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_00"); //Was muss ich tun, um ein Gauner werden zu können?
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_01"); //Im Grunde ist es ganz einfach. Du musst hier in unserem Viertel alle wichtigen Gauner auf deine Seite bringen.
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_02"); //Und was heißt das konkret?
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_03"); //Erfülle für jeden eine Aufgabe, um so Stimmen zu sammeln.
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_04"); //Wenn du alle Gauner überzeugt hast, auch mich, kannst du dich bei mir melden und ich nehme dich bei uns auf.
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_05"); //Dann wirst du zur Assassinengemeinschaft gehören.
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_06"); //Wer gehört alles zu den Gaunern, die ich überzeugen muss?
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_07"); //Folgende Mitglieder musst du überzeugen: Zeki, Ramsi, Aabid, Yasin, Yussuf und natürlich mich.
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_08"); //Das sind ja eine ganze Menge Leute.
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_09"); //(lacht) Du willst unser Vertrauen, also musst du auch etwas dafür tun.
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_10"); //(seufzt) Na gut, dann werde ich mich darum kümmern.
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_11"); //(hämisch) Viel Spaß beim Stimmen sammeln.
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_12"); //(trocken) Den werde ich haben.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_00"); //Co musze zrobic, aby zostac oszustem?
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_01"); //To w zasadzie calkiem proste. Tu w naszym sasiedztwie musisz zebrac wszystkich waznych oszustów.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_02"); //A co to konkretnie oznacza?
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_03"); //Wykonanie zadania polegajacego na zebraniu glosów przez wszystkich.
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_04"); //Jesli przekonales wszystkich oszustów, w tym mnie, mozesz skontaktowac sie ze mna, a ja cie zabiore.
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_05"); //Wtedy staniesz sie czescia spolecznosci Assassina.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_06"); //Kto jest jednym z oszustów, których musze przekonac?
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_07"); //Trzeba przekonac nastepujacych czlonków: Zeki, Ramsi, Aabid, Yasin, Yussuf i oczywiscie mnie.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_08"); //To wiele osób.
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_09"); //(smiech) Chcesz naszego zaufania, wiec musisz cos z tym zrobic.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_10"); //Wlasciwie, zajme sie tym.
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden_31_11"); //Zabawne zbieranie glosów.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden_15_12"); //Ja to ja bede mial.
 
-	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Ich habe nun mit Shakir gesprochen, der bereit ist, mich bei den Gaunern aufzunehmen, aber nur unter einer Bedingung. Ich soll alle wichtigen Gauner im Viertel überzeugen, damit ich mich ihnen anschließen kann. Wenn ich das getan habe, soll ich mich wieder bei Shakir melden.");
+	B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Rozmawialem teraz z Shakirem, który jest gotów przyjac mnie z oszustami, ale tylko pod jednym warunkiem. Mialem przekonac wszystkich waznych oszustów w okolicy, aby do nich dolaczyli. Kiedy to uczynilem, chcialbys, abym opowiedzial o tym Shakirowi.");
 };
 
 INSTANCE Info_Mod_Shakir_Frau (C_INFO)
@@ -94,41 +94,41 @@ FUNC INT Info_Mod_Shakir_Frau_Condition()
 
 FUNC VOID Info_Mod_Shakir_Frau_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_00"); //Da bist du ja. Hab bis jetzt nur Gutes über dich gehört.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_00"); //Och, tam jestescie. Do tej pory slyszalem tylko o Tobie dobre rzeczy.
 
 	if (Mod_ASS_Yussuf == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_01"); //Das freut mich. Aber mit Yussuf bin ich nicht einig geworden.
-		AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_02"); //Will heißen?
-		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_03"); //Seine Aufgabe fand ich nicht nicht korrekt. Den anderen gegenüber.
-		AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_04"); //Hoppla! Ein Gauner mit Gewissen! Was ganz was Neues hier.
+		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_01"); //Ciesze sie, ze Pan to zrobil. Ale nie moglem sie zgodzic z Jusufem.
+		AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_02"); //Jakie jest Twoje imie?
+		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_03"); //Nie uznalem jego zadania za poprawne. W poprzek z drugiej strony.
+		AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_04"); //Oops! Chlopak z sumieniem! Tutaj cos nowego.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_05"); //Freut mich. Den Yussuf hab ich noch nicht. Hat keine Zeit, sagt er.
-		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_06"); //Muss selbst Aufträge für die Krieger machen, sagt er.
+		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_05"); //Nicosc na spotkanie. Nie mam jeszcze Jusufa. Nie ma czasu, mówi.
+		AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_06"); //Musi rozkazywac samemu wojownikom, mówi.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_07"); //Nun gut erst mal. Höre, was meine Prüfung ist:
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_08"); //Zuerst 'ne Frage: Wann hast du das letzte Mal mit 'ner Frau geschlafen?
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_09"); //O Himmel! Das war in meinem letzten Leben. Da hatte ich mal Bromor besucht.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_10"); //Den Puff im Hafen?
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_11"); //Genau. Ich hab's nicht bereut.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_12"); //Da sind wir beim Problem. Du musst wissen, dass ich in Varant zwei Frauen hatte.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_13"); //Nun geht mir hier einiges ab. Du weißt schon, was ich meine ...
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_14"); //Gewiss. Ich soll dir nun Frauen beschaffen.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_15"); //Also eine würde schon reichen.
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_16"); //Warum gehst du dann nicht in die Stadt? Ihr habt doch sicher noch Verkleidungen.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_17"); //Das ist nicht das Problem. Aber man kennt mich dort. Vor allem die Miliz.
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_18"); //Aha. Schon unangenehm aufgefallen.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_19"); //Das will ich meinen. Du bringst die Schöne in die Höhle vom Getränkepanscher hier in der Nähe.
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_20"); //Und der kann dann schon mal ...
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_21"); //Bist du verrückt? Der macht eh nichts, ist viel zu beschäftigt.
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_22"); //Alles klar. Will sehen, was ich für dich machen kann.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_07"); //Wszystko teraz. Sluchajcie co to jest mój test:
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_08"); //Kiedy ostatni raz spales z kobieta?
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_09"); //Och, niebo! To bylo w moim ostatnim zyciu. Raz poszedlem do Bromoru.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_10"); //Dom w porcie?
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_11"); //Dokladnie. Nie zaluje.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_12"); //Oto problem. Musisz wiedziec, ze mialem dwie zony w Varant.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_13"); //Teraz trace tu wiele rzeczy. Wiesz, co mam na mysli?
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_14"); //Oczywiscie. Chce cie teraz zabrac do siebie kobiety.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_15"); //Jeden wystarczy.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_16"); //Dlaczego wiec nie pójdziesz do miasta? Wciaz musisz miec przebrania.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_17"); //To nie jest problem. Ale mnie tam znaja. Szczególnie milicja.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_18"); //Uh-huh. Jest to juz nieprzyjemnie zauwazone.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_19"); //Tak wlasnie rozumiem. Piekno wbija sie w jaskinie mieszadla do napojów.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_20"); //I moze to zrobic raz na jakis czas.....
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau_31_21"); //Czy nie masz zamiaru? Nie ma jednak znaczenia, jest zbyt zajety.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau_15_22"); //Wszystko jasne. Chce zobaczyc, co moge dla Ciebie zrobic.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_SHAKIR_FRAU, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_SHAKIR_FRAU, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Für Shakir soll ich eine Frau für gewisse Stunden auftreiben. Was denen alles einfällt. Am besten, ich rede mal mit Bromor. Wenn ich eine habe, soll ich sie zu einer Höhle in der Nähe des Assassinenlagers bringen, wo ein Alchemist zu hausen scheint.");
+	B_LogEntry	(TOPIC_MOD_ASS_SHAKIR_FRAU, "Dla Shakir' a musze znalezc kobiete na pewne godziny. O czym moga pomyslec. Lepiej porozmawiac z Bromorem. Jesli ja mam, zabiore ja do jaskini w poblizu obozu Assassin, gdzie zdaje sie mieszkac alchemik.");
 };
 
 INSTANCE Info_Mod_Shakir_Frau2 (C_INFO)
@@ -139,7 +139,7 @@ INSTANCE Info_Mod_Shakir_Frau2 (C_INFO)
 	information	= Info_Mod_Shakir_Frau2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Melde mich zurück.";
+	description	= "Zglos sie do mnie z powrotem.";
 };
 
 FUNC INT Info_Mod_Shakir_Frau2_Condition()
@@ -152,14 +152,14 @@ FUNC INT Info_Mod_Shakir_Frau2_Condition()
 
 FUNC VOID Info_Mod_Shakir_Frau2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_00"); //Melde mich zurück. Ich hab dir eine schöne junge Frau besorgt. Sie wartet unten in der Höhle.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau2_31_01"); //Wirklich? Du bist ein Mordskerl.
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_02"); //Ich hab ihr dieses Kleid versprochen. Hier, nimm.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_00"); //Zglos sie do mnie z powrotem. Dostalem piekna mloda kobiete. Czeka w jaskini.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau2_31_01"); //Naprawde? Jestes pieklem faceta.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_02"); //Obiecalem jej te sukienke. Wez to tutaj.
 
 	B_GiveInvItems	(hero, self, ItAr_GrittasKleid, 1);
 
-	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_03"); //Und beeil dich. Bevor sie sich's anders überlegt.
-	AI_Output(self, hero, "Info_Mod_Shakir_Frau2_31_04"); //Bin schon weg. Du wartest hier.
+	AI_Output(hero, self, "Info_Mod_Shakir_Frau2_15_03"); //I spiesz sie. Zanim zmieni zdanie.
+	AI_Output(self, hero, "Info_Mod_Shakir_Frau2_31_04"); //Juz nie jestem. Czekacie tutaj.
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_SHAKIR_FRAU, LOG_SUCCESS);
 
@@ -192,31 +192,31 @@ FUNC INT Info_Mod_Shakir_GaunerWerden2_Condition()
 
 FUNC VOID Info_Mod_Shakir_GaunerWerden2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_00"); //Wow! Das war's. Aber hallo!
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_00"); //Wow! To wszystko. Ale powitanie!
 
 	if (Mod_ASS_Yussuf == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden2_15_01"); //Freut mich. Ich habe nun alle Aufgaben erledigt. Wie geht es weiter?
-		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_02"); //Ich bin über alles unterrichtet und halte dich für absolut geeignet, unserem Verein beizutreten.
+		AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden2_15_01"); //Nicosc na spotkanie. Ukonczylem wszystkie zadania. Jaki jest nastepny krok?
+		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_02"); //Zostalem poinformowany o wszystkim i mysle, ze jestescie Panstwo doskonale przygotowani do przylaczenia sie do naszego stowarzyszenia.
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden2_15_03"); //Freut mich. Ich habe noch den Yussuf.
-		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_04"); //Vergiss ihn. Du bist erst kurz bei uns und hast schon so viel erledigt. Schneller als sonst ein Anwärter.
-		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_05"); //Ich halte dich für absolut geeignet, unserem Verein beizutreten.
+		AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden2_15_03"); //Nicosc na spotkanie. Wciaz mam Jusuf.
+		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_04"); //Zapomnij o nim. Jestes z nami tylko przez krótki czas i zrobiles juz tak wiele. Szybciej niz jakikolwiek inny kandydat.
+		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_05"); //Mysle, ze jestes doskonale przygotowany do przylaczenia sie do naszego stowarzyszenia.
 
 		B_SetTopicStatus	(TOPIC_MOD_ASS_YUSSUF_HILFE, LOG_SUCCESS);
 	};
 
 	if (Mod_AnzahlNebengilden < MaxNebengilden)
 	{
-		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_06"); //Wenn du willst, kannst du dich uns nun anschließen.
+		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_06"); //Jesli chcesz, mozesz dolaczyc do nas juz teraz.
 
-		B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Shakir war voll begeistert von meiner Vermittlung. Er hat mir die Prüfung von Yussuf erlassen und mir die Möglichkeit gegeben, Gauner zu werden.");
+		B_LogEntry	(TOPIC_MOD_ASS_VERTRAUEN, "Shakir byl bardzo podekscytowany moja praca. Mój egzamin jusufowy zdal i dal mi mozliwosc zostania kanciarzem.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_07"); //Leider gehörst du schon zu vielen Gemeinschaften an.
+		AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden2_31_07"); //Niestety, juz teraz nalezysz do wielu spolecznosci.
 	};
 
 	B_GivePlayerXP	(250);
@@ -234,7 +234,7 @@ INSTANCE Info_Mod_Shakir_GaunerWerden3 (C_INFO)
 	information	= Info_Mod_Shakir_GaunerWerden3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will Gauner werden.";
+	description	= "Chce byc oszustem.";
 };
 
 FUNC INT Info_Mod_Shakir_GaunerWerden3_Condition()
@@ -248,17 +248,17 @@ FUNC INT Info_Mod_Shakir_GaunerWerden3_Condition()
 
 FUNC VOID Info_Mod_Shakir_GaunerWerden3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden3_15_00"); //Ich will Gauner werden.
-	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden3_31_01"); //Hier hast du deine Gaunerkluft. Du meldest dich bei dem Krieger Masut.
+	AI_Output(hero, self, "Info_Mod_Shakir_GaunerWerden3_15_00"); //Chce byc oszustem.
+	AI_Output(self, hero, "Info_Mod_Shakir_GaunerWerden3_31_01"); //Oto Twoja przepasc. Zglaszasz sie do wojownika Masuta.
 
 	CreateInvItems	(hero, ITAR_Gauner, 1);
 
-	B_ShowGivenThings	("Gaunerkluft erhalten");
+	B_ShowGivenThings	("Udanie sie w powietrze oszusta");
 
 	B_GivePlayerXP	(250);
 
 	Log_CreateTopic	(TOPIC_MOD_NEBENGILDEN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Ich gehöre jetzt zu den Assassinen.");
+	B_LogEntry	(TOPIC_MOD_NEBENGILDEN, "Jestem teraz zabójca.");
 
 	Mod_7117_ASS_Krieger_NW.aivar[AIV_PASSGATE] = TRUE;
 
@@ -290,8 +290,8 @@ FUNC INT Info_Mod_Shakir_Assassinengold_Condition()
 
 FUNC VOID Info_Mod_Shakir_Assassinengold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shakir_Assassinengold_31_00"); //Willkommen zurück. Warst du erfolgreich?
-	AI_Output(hero, self, "Info_Mod_Shakir_Assassinengold_15_01"); //Ich glaube schon. Mal sehen.
+	AI_Output(self, hero, "Info_Mod_Shakir_Assassinengold_31_00"); //Witam powitaj, panie posle. Czy odniesliscie sukces?
+	AI_Output(hero, self, "Info_Mod_Shakir_Assassinengold_15_01"); //Mysle, ze tak, tak. Zobaczmy teraz.
 };
 
 INSTANCE Info_Mod_Shakir_Zeremoniendolch (C_INFO)
@@ -314,13 +314,13 @@ FUNC INT Info_Mod_Shakir_Zeremoniendolch_Condition()
 
 FUNC VOID Info_Mod_Shakir_Zeremoniendolch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_00"); //Gibt's was Neues?
-	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_01"); //Nein. Hast du was?
-	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_02"); //Und ob! Da hinten braut sich was zusammen, denke ich.
-	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_03"); //Wie meinst du das?
-	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_04"); //Die Krieger sind irgendwie unruhig. Immer wieder rennt hier einer raus oder kommt zurückgehastet. Sogar tagsüber.
-	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_05"); //Wo doch sonst kaum jemand am Tag das Lager verlässt ...
-	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_06"); //Ich schau mal.
+	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_00"); //Cokolwiek nowego?
+	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_01"); //Nie. Dostales cos?
+	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_02"); //Mozesz sie zalozyc! Mysle, ze jest tam cos warzacego.
+	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_03"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_04"); //Wojownicy sa jakos niespokojni. Zawsze ktos ucieka z tego miejsca lub wraca. Nawet w ciagu dnia.
+	AI_Output(self, hero, "Info_Mod_Shakir_Zeremoniendolch_31_05"); //Kiedy nikt inny nie opuszcza obozu w ciagu dnia......
+	AI_Output(hero, self, "Info_Mod_Shakir_Zeremoniendolch_15_06"); //Zobacze.
 };
 
 INSTANCE Info_Mod_Shakir_Blutkelch (C_INFO)
@@ -331,7 +331,7 @@ INSTANCE Info_Mod_Shakir_Blutkelch (C_INFO)
 	information	= Info_Mod_Shakir_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Shakir_Blutkelch_Condition()
@@ -344,16 +344,16 @@ FUNC INT Info_Mod_Shakir_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Shakir_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_01"); //In Kriegerrüstung! Hätte dich fast nicht erkannt. Wie hast du ...?
-	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_02"); //Tut jetzt nichts zur Sache. Sag, sind dir auch Magier aufgefallen, die nachts aus dem Lager gehen?
-	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_03"); //Ja, da ist erst mal der Mufid, und dann noch einer. Weiß allerdings nicht, wie der heißt.
-	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_04"); //Die waren schon halbe Nächte unterwegs.
-	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_05"); //Aha. Und, haben die was gesagt?
-	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_06"); //Nee, hatten es nur eilig.
-	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_07"); //Hmm ... danke.
+	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_01"); //W pancerzu wojennym! Prawie Cie nie rozpoznawal. Jak Pan....?
+	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_02"); //Nie ma to teraz znaczenia. Powiedz mi, czy zauwazyles czarodziejów opuszczajacych obóz w nocy?
+	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_03"); //Tak, najpierw jest Mufid, a potem jeszcze jeden. Nie znam jednak jego nazwiska.
+	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_04"); //Mieli pól nocy na drodze.
+	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_05"); //Uh-huh. Czy oni cos mówili?
+	AI_Output(self, hero, "Info_Mod_Shakir_Blutkelch_31_06"); //Nah, w pospiechu.
+	AI_Output(hero, self, "Info_Mod_Shakir_Blutkelch_15_07"); //Hmm..... dziekuje.
 
-	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Habe erfahren, dass nachts einige Magier das Lager verlassen. Das hat bestimmt mit dem Kelch zu tun.");
+	B_LogEntry	(TOPIC_MOD_ASS_LASTBLUTKELCH, "Dowiedzialem sie, ze niektórzy magowie opuszczaja obóz w nocy. Musi miec cos wspólnego z kielichem.");
 };
 
 INSTANCE Info_Mod_Shakir_NachSchlacht (C_INFO)
@@ -364,7 +364,7 @@ INSTANCE Info_Mod_Shakir_NachSchlacht (C_INFO)
 	information	= Info_Mod_Shakir_NachSchlacht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du sollst zum Rat kommen.";
+	description	= "Chce, abyscie przyszli do rady.";
 };
 
 FUNC INT Info_Mod_Shakir_NachSchlacht_Condition()
@@ -377,9 +377,9 @@ FUNC INT Info_Mod_Shakir_NachSchlacht_Condition()
 
 FUNC VOID Info_Mod_Shakir_NachSchlacht_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Shakir_NachSchlacht_15_00"); //Du sollst zum Rat kommen.
-	AI_Output(self, hero, "Info_Mod_Shakir_NachSchlacht_31_01"); //Was ist bloß los da drinnen?
-	AI_Output(hero, self, "Info_Mod_Shakir_NachSchlacht_15_02"); //Du wirst schon sehen. Mach hin.
+	AI_Output(hero, self, "Info_Mod_Shakir_NachSchlacht_15_00"); //Chce, abyscie przyszli do rady.
+	AI_Output(self, hero, "Info_Mod_Shakir_NachSchlacht_31_01"); //Co sie tam dzieje?
+	AI_Output(hero, self, "Info_Mod_Shakir_NachSchlacht_15_02"); //Dowiesz sie. Idz na to.
 
 	B_StartOtherRoutine	(Mod_7105_ASS_Aabid_NW,	"START");
 	B_StartOtherRoutine	(Mod_7106_ASS_Ramsi_NW,	"START");

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Garvell_Hi (C_INFO)
 	information	= Info_Mod_Garvell_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Garvell_Hi_Condition()
@@ -17,9 +17,9 @@ FUNC INT Info_Mod_Garvell_Hi_Condition()
 FUNC VOID Info_Mod_Garvell_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Garvell_Hi_04_01"); //Ich bin Garvell.
-	AI_Output(hero, self, "Info_Mod_Garvell_Hi_15_02"); //Und was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Garvell_Hi_04_03"); //Ich baue ein Schiff, damit ich aufs Festland kann sobald der Krieg mit den Orks vorbei ist.
+	AI_Output(self, hero, "Info_Mod_Garvell_Hi_04_01"); //Jestem Garvell.
+	AI_Output(hero, self, "Info_Mod_Garvell_Hi_15_02"); //A co tu robisz?
+	AI_Output(self, hero, "Info_Mod_Garvell_Hi_04_03"); //Zbuduje okret, aby dostac sie na kontynent, gdy tylko skonczy sie wojna z orkami.
 };
 
 INSTANCE Info_Mod_Garvell_Irdorath (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Garvell_Irdorath (C_INFO)
 	information	= Info_Mod_Garvell_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe, du verstehst dein Handwerk.";
+	description	= "Widze, ze znasz handel.";
 };
 
 FUNC INT Info_Mod_Garvell_Irdorath_Condition()
@@ -44,39 +44,39 @@ FUNC INT Info_Mod_Garvell_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Garvell_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_15_00"); //Ich sehe, du verstehst dein Handwerk.
-	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_15_01"); //Was würdest du davon halten, eine Seereise auf dem Schiff der Paladine zu unternehmen ...?
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_04_02"); //Was?! Wieso sollte ich das machen?
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_04_03"); //Ich habe hier noch mehr als genug zu tun an meinem eigenen Schiff ...
+	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_15_00"); //Widze, ze znasz handel.
+	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_15_01"); //Co myslisz o rejsie statkiem Paladynu....?
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_04_02"); //Co? Dlaczego bym to zrobil?
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_04_03"); //Mam tu na wlasnym statku wiecej niz wystarczajaco duzo do zrobienia......
 
 	Info_ClearChoices	(Info_Mod_Garvell_Irdorath);
 
-	Info_AddChoice	(Info_Mod_Garvell_Irdorath, "Du könntest bestimmt viel durch das Schiff der Paladine über den Bootsbau lernen.", Info_Mod_Garvell_Irdorath_B);
-	Info_AddChoice	(Info_Mod_Garvell_Irdorath, "Khorinis befindet sich in großer Gefahr und wenn wir die Seereise zu dieser Insel unternehmen (...)", Info_Mod_Garvell_Irdorath_A);
+	Info_AddChoice	(Info_Mod_Garvell_Irdorath, "Jestem pewien, ze mozna sie wiele nauczyc od statku Paladina.", Info_Mod_Garvell_Irdorath_B);
+	Info_AddChoice	(Info_Mod_Garvell_Irdorath, "Khorinis jest w wielkim niebezpieczenstwie i jesli udamy sie na te wyspe (....). )", Info_Mod_Garvell_Irdorath_A);
 };
 
 FUNC VOID Info_Mod_Garvell_Irdorath_B()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_B_15_00"); //Du könntest bestimmt viel durch das Schiff der Paladine über den Bootsbau lernen.
-	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_B_15_01"); //Das wäre doch eine Gelegenheit ...
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_02"); //Was soll dieser Unsinn? Glaubst du vielleicht, ich hätte noch nie ein Schiff von innen gesehen?
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_03"); //Mit so einem Angebot könntest du vielleicht einen Knaben beeindrucken ... also wirklich ...
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_04"); //Und jetzt stör mich nicht weiter bei der Arbeit.
+	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_B_15_00"); //Jestem pewien, ze mozna sie wiele nauczyc od statku Paladina.
+	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_B_15_01"); //Bedzie to okazja....
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_02"); //O czym Pan mówi? Czy myslisz, ze moze nigdy wczesniej nie widzialem statku z wnetrza?
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_03"); //Z taka oferta mozesz zaimponowac chlopcu..... tak naprawde.....
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_B_04_04"); //Teraz juz nie martw sie o prace.
 
 	Info_ClearChoices	(Info_Mod_Garvell_Irdorath);
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Tja, das mit Bootsbauer Garvell wird wohl nichts.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "No cóz, nie bedzie wspólpracowac z firma Garvell, konstruktorem lodzi.");
 };
 
 FUNC VOID Info_Mod_Garvell_Irdorath_A()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_A_15_00"); //Khorinis befindet sich in großer Gefahr, und wenn wir die Seereise zu dieser Insel unternehmen, könnten wir das drohende Unheil abwenden.
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_A_04_01"); //Was, drohendes Unheil?
-	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_A_04_02"); //Dann sollte ich mich umso mehr mit dem Bau meines Schiffes beeilen, um rechtzeitig fertig zu werden ...
+	AI_Output(hero, self, "Info_Mod_Garvell_Irdorath_A_15_00"); //Khorinis jest w wielkim niebezpieczenstwie, a jesli udamy sie w podróz na te wyspe, mozemy zapobiec zagrozeniu katastrofa.
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_A_04_01"); //Co grozi katastrofa?
+	AI_Output(self, hero, "Info_Mod_Garvell_Irdorath_A_04_02"); //Potem powinienem jeszcze bardziej spieszyc sie z budowa mojego statku, zeby przygotowac sie na czas......
 
 	Info_ClearChoices	(Info_Mod_Garvell_Irdorath);
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Tja, das mit Bootsbauer Garvell wird wohl nichts.");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "No cóz, nie bedzie wspólpracowac z firma Garvell, konstruktorem lodzi.");
 };
 
 INSTANCE Info_Mod_Garvell_Paddel (C_INFO)
@@ -87,7 +87,7 @@ INSTANCE Info_Mod_Garvell_Paddel (C_INFO)
 	information	= Info_Mod_Garvell_Paddel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du verkaufst Paddel?";
+	description	= "Sprzedajesz wiosla?";
 };
 
 FUNC INT Info_Mod_Garvell_Paddel_Condition()
@@ -102,29 +102,29 @@ FUNC INT Info_Mod_Garvell_Paddel_Condition()
 
 FUNC VOID Info_Mod_Garvell_Paddel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_00"); //Du verkaufst Paddel?
-	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_01"); //Wohl wahr. Beste Qualität. Aus Zedernholz vom Festland. Extra großes exklusives Blatt. Und besonders leicht dazu.
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_02"); //Schon gut. Gib mir halt zwei Paddel.
-	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_03"); //Hier. 200 Gold das Stück.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_00"); //Sprzedajesz wiosla?
+	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_01"); //To wystarczy. Najlepsza jakosc. Cedr z ladu. Bardzo duzy ekskluzywny arkusz. Szczególnie latwo to zrobic.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_02"); //Wszystkie sluszne, wszystkie sluszne. Daj mi dwie wiosla.
+	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_03"); //Tutaj. 200 zlota za sztuke.
 
 	B_GiveInvItems	(self, hero, ItMi_Paddel, 2);
 
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_04"); //Was? Da kann ich mir ja welche aus Goldtellern machen. Mit Silberleuchter als Griff. Hier, 100.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_04"); //Co? Moge je wykonac z zlotych talerzy. Z srebrna zyrandolka jako rekojescia. Tutaj 100.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_05"); //Bist du von Sinnen? Das ist erstklassige Ware. Aber ich will nicht streiten. 300 für beide.
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_06"); //Farim sagt, dass er sie auch für 100 Gold von dir bekommt ...
-	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_07"); //Das war auch Ausschussware. Bestimmt sind die bald hinüber.
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_08"); //Das stimmt allerdings. Hier sind nochmal 100 Gold. Mehr hab ich nicht.
+	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_05"); //Czy nie masz zamiaru? Jest to towar najwyzszej jakosci. Ale nie chce sie spierac. 300 dla obu z nich.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_06"); //Farim mówi, ze za 100 zl....
+	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_07"); //To równiez odrzucono. Jestem pewien, ze wkrótce sie skonczy.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_08"); //To prawda. Oto kolejne 100 zlota. To wszystko, co dostalem.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_09"); //Sonst kannst du mit den Dingern Suppe löffeln.
-	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_10"); //Du treibst mich in den Ruin. Hier die Paddel. Und komm ja nicht wieder.
-	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_11"); //Keine Angst.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_09"); //W przeciwnym razie mozna zupe lyzka z tymi rzeczami.
+	AI_Output(self, hero, "Info_Mod_Garvell_Paddel_04_10"); //Zrujnowales mnie. Oto padliny. I nie wracaj.
+	AI_Output(hero, self, "Info_Mod_Garvell_Paddel_15_11"); //Nie bój sie.
 
-	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Ich habe zwei Paddel. Hat mich ganze 200 Goldstücke gekostet.");
+	B_LogEntry	(TOPIC_MOD_SKIP_PADDEL, "Mam dwie wiosla. Kosztowalam 200 sztuk zlota.");
 
 	B_GivePlayerXP	(100);
 };
@@ -150,40 +150,40 @@ FUNC INT Info_Mod_Garvell_Fenia_Condition()
 
 FUNC VOID Info_Mod_Garvell_Fenia_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_04_00"); //Hey, du. Du kannst mit Magie umgehen, richtig?
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_04_00"); //Hej, Ty. Mozesz radzic sobie z magia, prawda?
 
 	Info_ClearChoices	(Info_Mod_Garvell_Fenia);
 
-	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Da siehst du wohl was falsch.", Info_Mod_Garvell_Fenia_B);
-	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Aber sicher doch.", Info_Mod_Garvell_Fenia_A);
+	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Masz zly pomysl.", Info_Mod_Garvell_Fenia_B);
+	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Oczywiscie tak sie dzieje.", Info_Mod_Garvell_Fenia_A);
 };
 
 FUNC VOID Info_Mod_Garvell_Fenia_B()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_B_15_00"); //Da siehst du wohl was falsch.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_B_04_01"); //In Ordnung, schönen Tag noch.
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_B_15_00"); //Masz zly pomysl.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_B_04_01"); //Wszystko w porzadku, mily dzien.
 
 	Info_ClearChoices	(Info_Mod_Garvell_Fenia);
 };
 
 FUNC VOID Info_Mod_Garvell_Fenia_A()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_A_15_00"); //Aber sicher doch.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_01"); //In dem Fall hätte ich nämlich eine kleine Bitte an dich.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_02"); //Ich hab hier diese Telekinese-Spruchrolle ... erworben.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_03"); //Könntest du Fenia in einem unbeobachteten Moment damit ihren (hüstelt) Büstenhalter nehmen?
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_04"); //Sie wird auch garantiert nichts merken ...
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_A_15_00"); //Oczywiscie tak sie dzieje.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_01"); //W takim przypadku mam dla pana mala prosbe.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_02"); //Mam te czesc telekinezy tutaj..... nabyte.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_03"); //Móglbys zabrac Fenie w niezachwiana chwile z jej (husteltowym) biustonoszem?
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_A_04_04"); //Nie zauwazy tez niczego.....
 
 	Info_ClearChoices	(Info_Mod_Garvell_Fenia);
 
-	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Ähm... nein.", Info_Mod_Garvell_Fenia_D);
-	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Das wird ein Spaß!", Info_Mod_Garvell_Fenia_C);
+	Info_AddChoice	(Info_Mod_Garvell_Fenia, "Um.... nie", Info_Mod_Garvell_Fenia_D);
+	Info_AddChoice	(Info_Mod_Garvell_Fenia, "To zabawa!", Info_Mod_Garvell_Fenia_C);
 };
 
 FUNC VOID Info_Mod_Garvell_Fenia_D()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_D_15_00"); //Ähm... nein.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_D_04_01"); //Oh, wie schade. Dann muss ich ein anderes Opfer finden.
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_D_15_00"); //Um.... nie
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_D_04_01"); //Ach, co wstyd. Wtedy bede musial znalezc kolejna ofiare.
 
 	B_GivePlayerXP	(50);
 
@@ -192,8 +192,8 @@ FUNC VOID Info_Mod_Garvell_Fenia_D()
 
 FUNC VOID Info_Mod_Garvell_Fenia_C()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_C_15_00"); //Das wird ein Spaß!
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_C_04_01"); //Hier hast du die Spruchrolle. Viel Erfolg!
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia_C_15_00"); //To zabawa!
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia_C_04_01"); //Oto Twoja historia. Powodzenia!
 
 	B_GiveInvItems	(self, hero, ItSc_Telekinese, 1);
 
@@ -214,7 +214,7 @@ INSTANCE Info_Mod_Garvell_Fenia2 (C_INFO)
 	information	= Info_Mod_Garvell_Fenia2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, was sollte das jetzt?!";
+	description	= "A wiec o co to wszystko chodzilo!";
 };
 
 FUNC INT Info_Mod_Garvell_Fenia2_Condition()
@@ -227,12 +227,12 @@ FUNC INT Info_Mod_Garvell_Fenia2_Condition()
 
 FUNC VOID Info_Mod_Garvell_Fenia2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_00"); //So, was sollte das jetzt?!
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_01"); //(lacht ausgiebig) Herrlich, herrlich!
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_02"); //Du hast mich also einfach nur verarscht?
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_03"); //So ist es. Ein Mordsspaß, sag ich dir. (lacht)
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_04"); //Na, ich hab ja die Spruchrolle. Mal sehen, was bei dir zu holen ist.
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_05"); //Wa...?
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_00"); //A wiec o co to wszystko chodzilo!
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_01"); //(ogromna smierc) Wspaniale, cudownie!
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_02"); //Wiec po prostu sie ze mna modliles?
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_03"); //Tak wlasnie jest. Mówie ci, ze to wybuch. (smiertelnicy)
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia2_15_04"); //No cóz, mam czesc przemówienia. Zobaczmy co dostales.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia2_04_05"); //Czy....?
 
 	AI_StopProcessInfos	(self);
 };
@@ -257,8 +257,8 @@ FUNC INT Info_Mod_Garvell_Fenia3_Condition()
 
 FUNC VOID Info_Mod_Garvell_Fenia3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garvell_Fenia3_04_00"); //Gib mir sofort mein Gold zurück!
-	AI_Output(hero, self, "Info_Mod_Garvell_Fenia3_15_01"); //Das ist die Bezahlung für meinen Arbeitsaufwand. Nichts für ungut, aber ich muss jetzt weiter.
+	AI_Output(self, hero, "Info_Mod_Garvell_Fenia3_04_00"); //Oddaj mi zloto!
+	AI_Output(hero, self, "Info_Mod_Garvell_Fenia3_15_01"); //To jest oplata za moje obciazenie praca. Nie popelniam zadnego wykroczenia, ale musze teraz odejsc.
 
 	B_SetTopicStatus	(TOPIC_MOD_GARVELL_FENIA, LOG_SUCCESS);
 
@@ -273,7 +273,7 @@ INSTANCE Info_Mod_Garvell_Flugblaetter (C_INFO)
 	information	= Info_Mod_Garvell_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Garvell_Flugblaetter_Condition()
@@ -294,11 +294,11 @@ FUNC VOID Info_Mod_Garvell_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Garvell_Flugblaetter_04_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Garvell_Flugblaetter_04_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Garvell_Flugblaetter_04_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Garvell_Flugblaetter_04_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };

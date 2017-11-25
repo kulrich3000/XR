@@ -1,7 +1,7 @@
 INSTANCE Mod_12022_DRA_Albino_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"Weiﬂe Echse";
+	name	=	"Biala Lizardka";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12022;
 	level	=	35;

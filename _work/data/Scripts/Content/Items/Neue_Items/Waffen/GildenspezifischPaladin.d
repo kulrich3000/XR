@@ -2,7 +2,7 @@
 
 INSTANCE ItMw_Paladinschwert (C_Item)
 {	
-	name 				=	"Paladinschwert";  
+	name 				=	"paladyn";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -29,7 +29,7 @@ INSTANCE ItMw_Paladinschwert (C_Item)
 };
 INSTANCE ItMw_Paladinschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Paladinschwert (geschärft)";  
+	name 				=	"Miecz paladynowy (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	

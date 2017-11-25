@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ignaz_Hi (C_INFO)
 	information	= Info_Mod_Ignaz_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Ignaz_Hi_Condition()
@@ -18,55 +18,55 @@ FUNC VOID Info_Mod_Ignaz_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_01"); //Niemand im Besonderen - nur im Dunkeln pflügt der Vogel.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_15_02"); //Verstehe.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_03"); //Schon lange her, dass jemand das zu mir gesagt hat! (lacht) Verhängnisvoll schwebt die Matratze über kaltem Wind.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_04"); //Sag mal - hast du noch Bargeld?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_01"); //Nikt w szczególnosci nie - tylko w ciemnosci zaoruje sie ptakiem.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_15_02"); //Widze.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_03"); //Dawno temu ktos mi to powiedzial! (smiech) Smiertelny materac unosi sie nad zimnym wiatrem.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_14_04"); //Czy masz wiecej gotówki?
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Das wird mir zu blöd.", Info_Mod_Ignaz_Hi_B);
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Du hast sie nicht mehr alle?", Info_Mod_Ignaz_Hi_A);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "To staje sie zbyt glupie.", Info_Mod_Ignaz_Hi_B);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Czy nie myslisz?", Info_Mod_Ignaz_Hi_A);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_B_15_00"); //Das wird mir zu blöd.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_B_15_00"); //To staje sie zbyt glupie.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_A_15_00"); //Du hast sie nicht mehr alle?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_A_14_01"); //Sie alle, von der Made bis zum Maultier, nennen mich verrückt.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_A_15_00"); //Czy nie myslisz?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_A_14_01"); //Wszyscy nazywaja mnie szalonymi, od magty do mulu.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Warum bist du verrückt?", Info_Mod_Ignaz_Hi_D);
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Kann man denn nichts dagegen tun?", Info_Mod_Ignaz_Hi_C);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Dlaczego jestes zwariowany?", Info_Mod_Ignaz_Hi_D);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Czy nie istnieje cos, co mozesz z tym zrobic?", Info_Mod_Ignaz_Hi_C);
 };
 
 FUNC VOID Info_Mod_Ignaz_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_00"); //Warum bist du verrückt?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_01"); //Ich bin nicht verrückt!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_02"); //Was denn dann?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_03"); //Ich bin unendlich weise! Denke in Zukunft und Vergangenheit, in alle erdenklichen Dimensionen - ein leckerer Eintopf, diese Schraube - verflucht, nimm deine Augen aus meinem Karren!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_04"); //Ernst zu sein ist schwierig mit erhobenem Bein.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_05"); //Und woher stammt diese ... unendliche Weisheit?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_06"); //Du, gegen den Fußpilz hilft nur noch der Stein der Weisen.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_07"); //Du hast ihn gefunden, den Stein der Weisen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_08"); //Gefunden? Gebraut, gegessen, verdaut, geschissen! Ahahaha!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_09"); //(ernst) Mein Bruder läuft in den Abgrund.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_10"); //Wer ist dein Bruder?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_11"); //Constantino, der fahrende Reisende ... der reisende Fahrer? Hoffentlich gibt's Klopse dazu.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_12"); //Constantino ist dein Bruder?!
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_13"); //Ein Zwillingsgestirn, sagen die Grubenarbeiter.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_14"); //Und was meinst du damit, dass er in den Abgrund läuft?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_15"); //Ballspielen macht Spaß.
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_16"); //Die unendliche Weisheit scheint dich ziemlich zu überfordern.
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_17"); //Für mich und meine drei Katzen ist das kein Problem.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_00"); //Dlaczego jestes zwariowany?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_01"); //Nie zwariowalem!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_02"); //Co zatem?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_03"); //Jestem nieskonczenie madry! Pomysl w przyszlosci i przeszlosci, we wszystkich mozliwych wymiarach - przekletym pysznym gulaszu, przekletym wkretem, wyciagnij oczy z mojego wózka!
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_04"); //Ciezkosc ciezkosci ciezko jest zabrac z noga w góre.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_05"); //A gdzie to robi.... nieskonczona madrosc?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_06"); //Tylko kamien filozoficzny moze pomóc stopie zawodnika.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_07"); //Znalazles go, Kamien Filozofowski?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_08"); //Zalozyciel? Zaparzone, zjadane, strawione, gówno! Ahahahahaha!
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_09"); //Naprawde, mój brat wpadl w otchlan.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_10"); //Kim jest twój brat?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_11"); //Constantino, podróznik..... kierowca podrózujacy? Miejmy nadzieje, ze beda kule miesne.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_12"); //Konstantyn jest twoim bratem?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_13"); //Jak mówia górnicy, jedna blizniacza gwiazda.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_14"); //A co masz na mysli, on idzie w otchlan?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_15"); //Gra w pilke to zabawa.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_D_15_16"); //Nieskonczona madrosc zdaje sie Cie przeplacac.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_D_14_17"); //Dla mnie i moich trzech kotów nie stanowi to zadnego problemu.
 
 	Mod_Ignaz_Bruder = 1;
 
@@ -75,13 +75,13 @@ FUNC VOID Info_Mod_Ignaz_Hi_D()
 
 FUNC VOID Info_Mod_Ignaz_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_C_15_00"); //Kann man denn nichts dagegen tun?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_01"); //Wieso? Im Speziellen ist es äußerst praktisch, verrückt zu sein. Eigentlich ist es verrückt, nicht verrückt zu sein. (lacht ausgelassen, dann sofort wieder nüchtern)
-	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_02"); //Das versteh ich jetzt nicht.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Hi_C_15_00"); //Czy nie istnieje cos, co mozesz z tym zrobic?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_01"); //Dlaczego? W szczególnosci bardzo praktyczne jest szalenstwo. Wlasciwie to szalenstwo, zeby nie zwariowac. (smiech pominiety, a nastepnie natychmiast znowu stonowany)
+	AI_Output(self, hero, "Info_Mod_Ignaz_Hi_C_14_02"); //Nie rozumiem tego teraz.
 
 	Info_ClearChoices	(Info_Mod_Ignaz_Hi);
 
-	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Warum bist du verrückt?", Info_Mod_Ignaz_Hi_D);
+	Info_AddChoice	(Info_Mod_Ignaz_Hi, "Dlaczego jestes zwariowany?", Info_Mod_Ignaz_Hi_D);
 };
 
 INSTANCE Info_Mod_Ignaz_Handel (C_INFO)
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Ignaz_Handel (C_INFO)
 	information	= Info_Mod_Ignaz_Handel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Verkaufst du Alchemiezubehör?";
+	description	= "Sprzedajesz dostawy alchemiczne?";
 };
 
 FUNC INT Info_Mod_Ignaz_Handel_Condition()
@@ -102,11 +102,11 @@ FUNC INT Info_Mod_Ignaz_Handel_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Handel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Handel_15_00"); //Verkaufst du Alchemiezubehör?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Handel_14_01"); //Ja, ja, steht doch alles hier rum. Oder sehe ich das falsch?
+	AI_Output(hero, self, "Info_Mod_Ignaz_Handel_15_00"); //Sprzedajesz dostawy alchemiczne?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Handel_14_01"); //Tak, tak, tak, tu wszystko. A moze sie myle?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Ignaz kann mir Tränke verkaufen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Ignaz moze sprzedac mi eliksiry.");
 };
 
 INSTANCE Info_Mod_Ignaz_Lehrer (C_INFO)
@@ -117,7 +117,7 @@ INSTANCE Info_Mod_Ignaz_Lehrer (C_INFO)
 	information	= Info_Mod_Ignaz_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Ignaz_Lehrer_Condition()
@@ -127,9 +127,9 @@ FUNC INT Info_Mod_Ignaz_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_00"); //Kannst du mir was beibringen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Lehrer_14_01"); //Ich kann dir zeigen, wie du deine zehn Magier auf dem Spielfeld platzieren musst, um zu gewinnen! Und wie du Spruchrollen herstellst!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_02"); //Dann zeig mir lieber das mit den Spruchrollen.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_00"); //Czy mozesz mnie czegos nauczyc?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Lehrer_14_01"); //Moge pokazac Ci, jak umiescic 10 magów na polu, aby wygrac! I jak robisz zaklecia na rolkach!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Lehrer_15_02"); //Wtedy lepiej pokazac mi ten z rolkami zaklecia.
 };
 
 INSTANCE Info_Mod_Ignaz_Irdorath (C_INFO)
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Ignaz_Irdorath (C_INFO)
 	information	= Info_Mod_Ignaz_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo Meister von Alchemie, Tränke- und Pflanzenkunde.";
+	description	= "Witaj mistrza alchemii, eliksiru i botaniki.";
 };
 
 FUNC INT Info_Mod_Ignaz_Irdorath_Condition()
@@ -154,11 +154,11 @@ FUNC INT Info_Mod_Ignaz_Irdorath_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_00"); //Hallo Meister von Alchemie, Tränke- und Pflanzenkunde, ich wollte ...
-	AI_Output(self, hero, "Info_Mod_Ignaz_Irdorath_14_01"); //Tränke und Pflanzen? Nein, ich bin vor allem mit Spruchrollen und Tierbestandteilen vertraut ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_02"); //Ach, hat sich erledigt.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_00"); //Witaj Mistrz alchemii, eliksirów i botaniki, chcialem....
+	AI_Output(self, hero, "Info_Mod_Ignaz_Irdorath_14_01"); //Napoje i rosliny? Nie, szczególnie znam sie na mówieniu ról i komponentów zwierzecych....
+	AI_Output(hero, self, "Info_Mod_Ignaz_Irdorath_15_02"); //Ach, to juz sie stalo.
 
-	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Ignaz ist nicht der Alchemist, den ich suche ...");
+	B_LogEntry	(TOPIC_MOD_HQ_JACK, "Ignaz nie jest alchemikiem, którego szukam....");
 };
 
 INSTANCE Info_Mod_Ignaz_Amulett (C_INFO)
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Ignaz_Amulett (C_INFO)
 	information	= Info_Mod_Ignaz_Amulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist mit dir passiert?";
+	description	= "Co sie stalo z Toba?";
 };
 
 FUNC INT Info_Mod_Ignaz_Amulett_Condition()
@@ -183,13 +183,13 @@ FUNC INT Info_Mod_Ignaz_Amulett_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Amulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_00"); //Was ist mit dir passiert?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_01"); //(stöhnt) Mä ... Männner! Novizen ... sie haben mich ... bestohlen ... und geprügelt ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_02"); //Was haben sie gestohlen?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_03"); //Ein altes Amulett!
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_04"); //Das Amulett? Wo wollten sie damit hin?
-	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_05"); //Ein Steinkreis ... großer Wald ... Ritual ...
-	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_06"); //Was ist los, alter Mann?
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_00"); //Co sie stalo z Toba?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_01"); //(grozy) Mä...... Mezczyzni! nowicjusze Oni maja mnie...... skradziony i pobity......
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_02"); //Co kradna?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_03"); //Stary amulet!
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_04"); //Amulet? Gdzie oni to robili?
+	AI_Output(self, hero, "Info_Mod_Ignaz_Amulett_14_05"); //Kamienne kolo..... duzy las..... rytualny
+	AI_Output(hero, self, "Info_Mod_Ignaz_Amulett_15_06"); //Co to jest sprawa, stary czlowiek?
 
 	Wld_InsertNpc	(Mod_1995_UntoterNovize_01_NW, "BIGFARM");
 	Wld_InsertNpc	(Mod_1996_UntoterNovize_02_NW, "BIGFARM");
@@ -199,7 +199,7 @@ FUNC VOID Info_Mod_Ignaz_Amulett_Info()
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Ignaz ist dem Tode nahe und das Amulett wurde von Novizen gestohlen. Sie sind scheinbar bei einem Steinkreis in einem großen Wald.");
+	B_LogEntry	(TOPIC_MOD_BEL_SUCHE, "Ignaz jest bliski smierci, a amulet zostal skradziony przez nowicjuszy. Wydaje sie, ze sa na kamiennym kole w duzym lesie.");
 };
 
 INSTANCE Info_Mod_Ignaz_MangelQuest (C_INFO)
@@ -210,7 +210,7 @@ INSTANCE Info_Mod_Ignaz_MangelQuest (C_INFO)
 	information	= Info_Mod_Ignaz_MangelQuest_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fungizid kaufen (80 Gold)";
+	description	= "Zakup srodka grzybobójczego (80 zl)";
 };
 
 FUNC INT Info_Mod_Ignaz_MangelQuest_Condition()
@@ -239,7 +239,7 @@ INSTANCE Info_Mod_Ignaz_Flugblaetter (C_INFO)
 	information	= Info_Mod_Ignaz_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Ignaz_Flugblaetter_Condition()
@@ -256,15 +256,15 @@ FUNC INT Info_Mod_Ignaz_Flugblaetter_Condition()
 
 FUNC VOID Info_Mod_Ignaz_Flugblaetter_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ignaz_Flugblaetter_15_00"); //Ich hab hier ein Flugblatt für dich.
+	AI_Output(hero, self, "Info_Mod_Ignaz_Flugblaetter_15_00"); //Mam dla Ciebie ulotke.
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Ignaz_Flugblaetter_14_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };
@@ -277,7 +277,7 @@ INSTANCE Info_Mod_Ignaz_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Ignaz_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "Widzialem twój plakat na billboardzie....";
 };
 
 FUNC INT Info_Mod_Ignaz_Anschlagtafel_Condition()
@@ -324,12 +324,12 @@ FUNC VOID Info_Mod_Ignaz_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItSc_Fear, Mod_Anschlagtafel_Khorinis_Ignaz_Angstzauber);
 		Npc_RemoveInvItems	(hero, ItMi_Sulfur, Mod_Anschlagtafel_Khorinis_Ignaz_Schwefel);
 
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_00"); //Co? Pokaz mi.... W rzeczywistosci to wszystko. Bardzo dobrze wykonane.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_01"); //Oto Twoja nagroda.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Ignaz_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Ignaz_Anschlagtafel_14_02"); //Mile robienie interesów z Toba.
 
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Gold < 200)
 		{
@@ -367,12 +367,12 @@ INSTANCE Info_Mod_Ignaz_LearnScrolls (C_INFO)
 	information	= Info_Mod_Ignaz_LearnScrolls_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString ("Spruchrollen herstellen", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
+	description	= B_BuildLearnString ("jalowcy", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
 };
 
 FUNC INT Info_Mod_Ignaz_LearnScrolls_Condition()
 {
-	Info_Mod_Ignaz_LearnScrolls.description = B_BuildLearnString ("Spruchrollen herstellen", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
+	Info_Mod_Ignaz_LearnScrolls.description = B_BuildLearnString ("jalowcy", B_GetLearnCostTalent (hero, NPC_TALENT_SCROLLS, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Ignaz_Lehrer))
 	&& (Npc_GetTalentSkill(hero, NPC_TALENT_SCROLLS) == FALSE)
@@ -385,10 +385,10 @@ FUNC VOID Info_Mod_Ignaz_LearnScrolls_Info()
 {
 	if (B_TeachPlayerTalentScrolls(self, hero, 1))
 	{
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_00"); //Um eine Spruchrolle herzustellen benötigst du zunächst einmal einen Rune der jeweiligen Magierichtung.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_01"); //Die Wirkung der Rune übeträgst du mittels Runenstein und der Zutaten des Zaubers auf ein Blatt Papier.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_02"); //Du kannst aber aus einer Rune nicht nur einen Zauber machen, sondern auch stärkere, jedoch brauchst du dafür das Rezept und auch alle Zutaten der einzelnen Zwischenschritte.
-		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_03"); //Wenn du also eine Feuerballspruchrolle herstellen willst, benötigst du alles, was du für die Feuerballspruchrolle brauchst ebenso wie alles für einen Feuerpfeil.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_00"); //Aby stworzyc zaklecie, najpierw potrzebujesz runy odpowiedniego kierunku magii.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_01"); //Efekt runa mozna cwiczyc na kartce papieru uzywajac kamienia runowego i skladników zaklecia.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_02"); //Jednakze, mozna zrobic runa nie tylko czar, ale takze mocniejszy, ale bedzie trzeba przepis i wszystkie skladniki kazdego etapu posredniego.
+		AI_Output(self, hero, "Info_Mod_Ignaz_LearnScrolls_14_03"); //Wiec jesli chcesz stworzyc rolke fireballowa, potrzebujesz wszystkiego, czego potrzebujesz dla rolki fireballowej, jak równiez wszystkiego, czego potrzebujesz do stworzenia strzaly przeciwpozarowej.
 	};
 };
 

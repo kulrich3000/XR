@@ -18,15 +18,15 @@ FUNC INT Info_Mod_Bronko_Hi_Condition()
 
 FUNC VOID Info_Mod_Bronko_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bronko_Hi_06_00"); //Du da, hast du mal kurz Zeit?
-	AI_Output(hero, self, "Info_Mod_Bronko_Hi_15_01"); //Natürlich.
-	AI_Output(self, hero, "Info_Mod_Bronko_Hi_06_02"); //Sag Till mal, dass er seinen Arsch auf das Feld bewegen soll. Er macht jetzt schon den ganzen Tag Pause.
+	AI_Output(self, hero, "Info_Mod_Bronko_Hi_06_00"); //Tam dostales minute?
+	AI_Output(hero, self, "Info_Mod_Bronko_Hi_15_01"); //Oczywiscie tak jest.
+	AI_Output(self, hero, "Info_Mod_Bronko_Hi_06_02"); //Powiedz Till, aby przeniesc jego tylek na pole. Caly dzien robi przerwe.
 
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic	(TOPIC_MOD_BRONKO_STREIT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BRONKO_STREIT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Anscheinend drückt sich Till vor der Arbeit. Mal sehen, was er dazu zu sagen hat.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Widocznie konczy sie koniec pracy Tilla. Zobaczmy, co ma do powiedzenia.");
 };
 
 INSTANCE Info_Mod_Bronko_Streit02 (C_INFO)
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Bronko_Streit02 (C_INFO)
 	information	= Info_Mod_Bronko_Streit02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Till meinte, du sollst das selbst machen.";
+	description	= "Do tej pory nakazal ci zrobic to samemu.";
 };
 
 FUNC INT Info_Mod_Bronko_Streit02_Condition()
@@ -51,12 +51,12 @@ FUNC INT Info_Mod_Bronko_Streit02_Condition()
 
 FUNC VOID Info_Mod_Bronko_Streit02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Streit02_15_00"); //Till meinte, du sollst das selbst machen.
-	AI_Output(self, hero, "Info_Mod_Bronko_Streit02_06_01"); //Der sollte sich erstmal die Nase putzen!
+	AI_Output(hero, self, "Info_Mod_Bronko_Streit02_15_00"); //Do tej pory nakazal ci zrobic to samemu.
+	AI_Output(self, hero, "Info_Mod_Bronko_Streit02_06_01"); //Najpierw powinien oczyscic nos!
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Till soll sich erstmal die Nase putzen.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Niech najpierw oczysci nos.");
 };
 
 INSTANCE Info_Mod_Bronko_Streit03 (C_INFO)
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Bronko_Streit03 (C_INFO)
 	information	= Info_Mod_Bronko_Streit03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Till fragt sich, ob du Eins und Eins zusammenzählen kannst.";
+	description	= "Do tej pory zastanawiasz sie, czy mozesz dodac jedna i druga razem.";
 };
 
 FUNC INT Info_Mod_Bronko_Streit03_Condition()
@@ -81,12 +81,12 @@ FUNC INT Info_Mod_Bronko_Streit03_Condition()
 
 FUNC VOID Info_Mod_Bronko_Streit03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Streit03_15_00"); //Till fragt sich, ob du Eins und Eins zusammenzählen kannst.
-	AI_Output(self, hero, "Info_Mod_Bronko_Streit03_06_01"); //Natürlich kann ich das! Das sind ... ähm Elf. Sag ihm das.
+	AI_Output(hero, self, "Info_Mod_Bronko_Streit03_15_00"); //Do tej pory zastanawiasz sie, czy mozesz dodac jedna i druga razem.
+	AI_Output(self, hero, "Info_Mod_Bronko_Streit03_06_01"); //Oczywiscie moge! To sa.... um, jedenascie. Powiedz mu to.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Bronko hat eins und eins zusammen gezählt und elf herausbekommen");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Bronko polozyl razem jeden i jeden i wymyslil jedenascie.");
 };
 
 INSTANCE Info_Mod_Bronko_Streit04 (C_INFO)
@@ -97,7 +97,7 @@ INSTANCE Info_Mod_Bronko_Streit04 (C_INFO)
 	information	= Info_Mod_Bronko_Streit04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir noch sagen, dass du ein Mistkerl bist.";
+	description	= "Chce powiedziec, ze jestes synem suki.";
 };
 
 FUNC INT Info_Mod_Bronko_Streit04_Condition()
@@ -111,12 +111,12 @@ FUNC INT Info_Mod_Bronko_Streit04_Condition()
 
 FUNC VOID Info_Mod_Bronko_Streit04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Streit04_15_00"); //Ich soll dir noch sagen, dass du ein Mistkerl bist.
-	AI_Output(self, hero, "Info_Mod_Bronko_Streit04_06_01"); //So? Kommt das von Till? Der kann was erleben. Sag ihm das.
+	AI_Output(hero, self, "Info_Mod_Bronko_Streit04_15_00"); //Chce powiedziec, ze jestes synem suki.
+	AI_Output(self, hero, "Info_Mod_Bronko_Streit04_06_01"); //Lubie to? Czy jest to od Till? Bedzie mial klopoty. Powiedz mu to.
 
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Ich soll Till sagen, dass er was erleben kann.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_STREIT, "Musze powiedziec, ze Till jest w klopotach.");
 };
 
 INSTANCE Info_Mod_Bronko_Ambient (C_INFO)
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Bronko_Ambient (C_INFO)
 	information	= Info_Mod_Bronko_Ambient_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was hast du denn heute schon gearbeitet?";
+	description	= "Jaka prace wykonales/as dzisiaj?";
 };
 
 FUNC INT Info_Mod_Bronko_Ambient_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_Mod_Bronko_Ambient_Condition()
 
 FUNC VOID Info_Mod_Bronko_Ambient_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Ambient_15_00"); //Was hast du denn heute schon gearbeitet?
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient_06_01"); //Ich sorge hier allgemein für Ruhe und Sicherheit. Das erfordert meine ständige Aufmerksamkeit.
+	AI_Output(hero, self, "Info_Mod_Bronko_Ambient_15_00"); //Jaka prace wykonales/as dzisiaj?
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient_06_01"); //Ogólnie rzecz biorac, zapewniam tutaj pokój i bezpieczenstwo. Wymaga to mojej stalej uwagi.
 };
 
 INSTANCE Info_Mod_Bronko_Ambient01 (C_INFO)
@@ -166,36 +166,36 @@ FUNC INT Info_Mod_Bronko_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Bronko_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_06_00"); //(schleimend) Es ist uns eine Ehre, so rechtgläubigen Besuch auf unserem bescheidenen Bauernhof begrüßen zu dürfen.
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_06_01"); //Vielleicht hättest du die Güte, uns gegen die räuberischen Söldner zu verteidigen?
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_06_00"); //To dla nas zaszczyt powitac tak wierna wizyte w naszej skromnej farmie.
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_06_01"); //Moze bys mial dobroc bronic nas przed drapieznymi najemnikami?
 
 	Info_ClearChoices	(Info_Mod_Bronko_Ambient01);
 
-	Info_AddChoice	(Info_Mod_Bronko_Ambient01, "Betet zu Innos, und er wird euch helfen.", Info_Mod_Bronko_Ambient01_B);
-	Info_AddChoice	(Info_Mod_Bronko_Ambient01, "Wo liegt das Problem?", Info_Mod_Bronko_Ambient01_A);
+	Info_AddChoice	(Info_Mod_Bronko_Ambient01, "Módlcie sie do Innos, a on wam pomoze.", Info_Mod_Bronko_Ambient01_B);
+	Info_AddChoice	(Info_Mod_Bronko_Ambient01, "Jaki jest problem?", Info_Mod_Bronko_Ambient01_A);
 };
 
 FUNC VOID Info_Mod_Bronko_Ambient01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_B_15_00"); //Betet zu Innos, und er wird euch helfen.
+	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_B_15_00"); //Módlcie sie do Innos, a on wam pomoze.
 
 	Info_ClearChoices	(Info_Mod_Bronko_Ambient01);
 };
 
 FUNC VOID Info_Mod_Bronko_Ambient01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_A_15_00"); //Wo liegt das Problem?
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_01"); //(jammernd) Diese Schurken fressen uns alles weg, was wir anbauen. Das muss doch mal ein Ende haben!
-	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_A_15_02"); //Soll ich also Onars Bauernhof ausradieren?
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_03"); //Nein, nein, so weit müssen wir nicht gehen. Es reicht ja schon, wenn die Söldner keine Vorräte mehr bei uns finden.
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_04"); //Nördlich des Sees auf dem Weg zu Orlans Taverne findest du eine Höhle.
-	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_05"); //In den großen Eingangsbereich stellst du dann diese fünf Mehlsäcke, und uns ist für die nächste Zeit geholfen.
+	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_A_15_00"); //Jaki jest problem?
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_01"); //Te oszolomy zjadaja wszystko, co uprawiamy. Trzeba polozyc temu kres!
+	AI_Output(hero, self, "Info_Mod_Bronko_Ambient01_A_15_02"); //Czy powinienem wiec usunac farme Onar?
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_03"); //Nie, nie, nie musimy isc tak daleko. Wystarczy, ze najemnicy nie znajda u nas juz wiecej zapasów.
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_04"); //Na pólnoc od jeziora w drodze do tawerny Orlanu znajduje sie jaskinia.
+	AI_Output(self, hero, "Info_Mod_Bronko_Ambient01_A_06_05"); //W duzym obszarze wejsciowym wlozymy te piec worków na make do duzego wejscia, a na razie bedziemy nam pomagac.
 
 	B_GiveInvItems	(self, hero, ItMi_Mehlsack_Bronko, 5);
 
 	Log_CreateTopic	(TOPIC_MOD_BRONKO_MEHLSACK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BRONKO_MEHLSACK, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "Bronko von Sekobs Hof hat mir Mehlsäcke anvertraut, die ich in den Eingangsbereich der Höhle nördlich des Sees auf dem Weg zu Orlans Taverne legen soll.");
+	B_LogEntry	(TOPIC_MOD_BRONKO_MEHLSACK, "Bronko von Sekobs Hof powierzyl mi worki na make, które mialem umiescic w strefie wejscia do jaskini na pólnoc od jeziora w drodze do tawerny Orlanu.");
 
 	Mod_BronkoMehlsack = 1;
 
@@ -224,8 +224,8 @@ FUNC VOID Info_Mod_Bronko_Ambient02_Info()
 {
 	if (Mod_BronkoMehlsack == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_00"); //Bist du fertig? Jetzt können die Penner ruhig kommen. (lacht)
-		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_01"); //Hast du gut gemacht.
+		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_00"); //Czy jestes gotowy? Teraz moga przyjsc wlóczedzy. (smiertelnicy)
+		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_01"); //Wykonal pan dobra prace.
 
 		B_GivePlayerXP	(100);
 
@@ -237,8 +237,8 @@ FUNC VOID Info_Mod_Bronko_Ambient02_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_02"); //Was erlaubst du dir? Denkst du, ich seh nicht, wie du schnurstracks Richtung Onars Pennerhof rennst?
-		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_03"); //Ist nicht einmal mehr auf Innos verlass?
+		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_02"); //Co myslisz, ze robisz? Wydaje mi sie, ze nie widzisz jak biegniesz prosto do Pennerhofu Onar' s?
+		AI_Output(self, hero, "Info_Mod_Bronko_Ambient02_06_03"); //Nie mozna juz nawet polegac na Innosie?
 
 		B_SetTopicStatus	(TOPIC_MOD_BRONKO_MEHLSACK, LOG_FAILED);
 	};
@@ -252,7 +252,7 @@ INSTANCE Info_Mod_Bronko_Lehrer (C_INFO)
 	information	= Info_Mod_Bronko_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Bronko_Lehrer_Condition()
@@ -268,10 +268,10 @@ FUNC VOID Info_Mod_Bronko_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Bronko_Lehrer_06_00"); //Nun, ich hab 'nen ganz ordentlichen Schlag drauf. Vielleicht kann ich dir helfen ein wenig stärker zu werden.
+	AI_Output(self, hero, "Info_Mod_Bronko_Lehrer_06_00"); //No cóz, dostalem dosc dobry cios. Moze pomoze wam troche mocniejszy.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_BAUERN, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_BAUERN, "Bronko kann mir helfen stärker zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_BAUERN, "Bronko moze mi pomóc wzmocnic sie.");
 };
 
 INSTANCE Info_Mod_Bronko_Lernen (C_INFO)
@@ -282,7 +282,7 @@ INSTANCE Info_Mod_Bronko_Lernen (C_INFO)
 	information	= Info_Mod_Bronko_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir wie ich stärker werde.";
+	description	= "Pokaz mi, jak sie poteguje.";
 };
 
 FUNC INT Info_Mod_Bronko_Lernen_Condition()
@@ -297,7 +297,7 @@ FUNC INT Info_Mod_Bronko_Lernen_Condition()
 
 FUNC VOID Info_Mod_Bronko_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bronko_Lernen_15_00"); //Zeig mir wie ich Stärker werde.
+	AI_Output(hero, self, "Info_Mod_Bronko_Lernen_15_00"); //Pokaz mi, jak byc silniejszym.
 
 	Info_ClearChoices	(Info_Mod_Bronko_Lernen);
 

@@ -2,7 +2,7 @@ instance Mod_1291_SLD_Silas_MT (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Silas";
+	name =					"silos";
 	Npctype =				Npctype_Main;
 	guild =					GIL_mil;      
 	level =					15;

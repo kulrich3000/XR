@@ -1,7 +1,7 @@
 INSTANCE Mod_7036_NONE_Pilger_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dunkler Pilger";
+	name 		= "Ciemni pielgrzymi";
 	guild 		= GIL_DMT;
 	id 			= 7036;
 	voice 		= 4;

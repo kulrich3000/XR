@@ -18,10 +18,10 @@ FUNC INT Info_Mod_Hakon_Hi_Condition()
 
 FUNC VOID Info_Mod_Hakon_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hakon_Hi_12_00"); //Hallo Fremder, ich bin Hakon der Waffenhändler. Wenn du ein Schwert brauchst bist du bei mir richtig.
+	AI_Output(self, hero, "Info_Mod_Hakon_Hi_12_00"); //Witajcie nieznajomego, jestem Hakonem dealerem broni. Jesli potrzebujesz miecza, trafiles we wlasciwe miejsce.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Hakon verkauft am Marktplatz Waffen.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_STADT, "Hakon sprzedaje bron na rynku.");
 };
 
 INSTANCE Info_Mod_Hakon_Ueberfall (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Hakon_Ueberfall (C_INFO)
 	information	= Info_Mod_Hakon_Ueberfall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Hakon zu einer Schlägerei provozieren)";
+	description	= "(Hakon prowokujacy bijatyke)";
 };
 
 FUNC INT Info_Mod_Hakon_Ueberfall_Condition()
@@ -47,13 +47,13 @@ FUNC INT Info_Mod_Hakon_Ueberfall_Condition()
 
 FUNC VOID Info_Mod_Hakon_Ueberfall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_00"); //Du verkaufst hier nur den letzten Schrott! Mit deinen Waffen könnte ich mir nicht mal den Dreck zwischen meinen Zehen wegmachen.
-	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_01"); //He, pass auf, was du sagst. Ich habe hier nur hochwertige Ware.
-	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_02"); //Als ob du das irgendwie beurteilen könntest. Ich sehe doch auf einen Blick, dass du zu schwächlich bist, um auch nur eine deiner Waffen selbst zu führen.
-	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_03"); //Also, blas dich nicht so auf, sonst setzt gleich was hinter die Löffel.
-	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_04"); //Junge, du überspannst hier gerade den Bogen. Pass bloß auf, sonst passiert was!
-	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_05"); //Jaja, nicht zornig werden, Kleiner. Ich geh dann mal über den Marktplatz und verbreite unter den Leuten, was für eine Lachnummer du bist. Das stört dich doch sicher nicht. Kannst ohnehin nichts dagegen machen.
-	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_06"); //Ok, jetzt reicht's!
+	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_00"); //Wlasnie sprzedajesz ostatni kawalek smieci! Przy pomocy twoich karabinów nie moglam pozbyc sie brudu pomiedzy palcami palców.
+	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_01"); //Hej, obserwuj swoje usta. Jedyne, co tu mam, to towar wysokiej jakosci.
+	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_02"); //Jakby mozna bylo to ocenic. Na pierwszy rzut oka widze, ze jestes zbyt slaby, aby nosic nawet jedna z wlasnych broni.
+	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_03"); //No cóz, nie dmuchajcie sie w ten sposób, bo za lyzkami bede cos wkladal.
+	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_04"); //Chlopak, tu przeciagasz luk. Lepiej ogladac siebie lub cos sie wydarzy!
+	AI_Output(hero, self, "Info_Mod_Hakon_Ueberfall_15_05"); //Tak, nie zloscijcie sie, dzieciak. Pójde na targowisko i rozbudze posmiewisko wokól ludzi. Jestem pewien, ze nie przeszkadza ci to. Nie moze nic z tym zrobic.
+	AI_Output(self, hero, "Info_Mod_Hakon_Ueberfall_12_06"); //Wszystko w porzadku, to wystarczy!
 	
 	AI_StopProcessInfos	(self);
 
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Hakon_Weglocken (C_INFO)
 	information	= Info_Mod_Hakon_Weglocken_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, ich habe da was Interessantes vor der Stadt gefunden (...)";
+	description	= "Hej, znalazlem cos ciekawego poza miastem. )";
 };
 
 FUNC INT Info_Mod_Hakon_Weglocken_Condition()
@@ -84,20 +84,20 @@ FUNC INT Info_Mod_Hakon_Weglocken_Condition()
 
 FUNC VOID Info_Mod_Hakon_Weglocken_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_15_00"); //Hey, ich habe da was Interessantes vor der Stadt gefunden, was du dir unbedingt ansehen musst.
-	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_12_01"); //Ja, was ist es?
+	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_15_00"); //Hej, znalazlem cos ciekawego poza miastem, co trzeba zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_12_01"); //Tak, co to jest?
 
 	Info_ClearChoices	(Info_Mod_Hakon_Weglocken);
 
-	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "Das kann ich dir hier nicht verraten. Du musst es dir schon ansehen.", Info_Mod_Hakon_Weglocken_C);
-	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "In einer Höhle vor der Stadt fand ich einen großen Schatz.", Info_Mod_Hakon_Weglocken_B);
-	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "In einer Höhle vor der Stadt fand ich einige Waffen.", Info_Mod_Hakon_Weglocken_A);
+	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "Nie moge ci to powiedziec tutaj. Musisz go najpierw zobaczyc.", Info_Mod_Hakon_Weglocken_C);
+	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "W jaskini przed miastem znalazlem wielki skarb.", Info_Mod_Hakon_Weglocken_B);
+	Info_AddChoice	(Info_Mod_Hakon_Weglocken, "W jaskini poza miastem znalazlem bron.", Info_Mod_Hakon_Weglocken_A);
 };
 
 FUNC VOID Info_Mod_Hakon_Weglocken_C()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_C_15_00"); //Das kann ich dir hier nicht verraten. Du musst es dir schon ansehen.
-	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_C_12_01"); //Was noch?! Als ob ich nichts besseres zu tun hätte, mir etwas vor der Stadt anzuschauen ...
+	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_C_15_00"); //Nie moge ci to powiedziec tutaj. Musisz go najpierw zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_C_12_01"); //Co jeszcze! Tak jak ja nie mam nic lepszego do zrobienia niz spojrzec na cos poza miastem....
 
 	Info_ClearChoices	(Info_Mod_Hakon_Weglocken);
 
@@ -108,16 +108,16 @@ FUNC VOID Info_Mod_Hakon_Weglocken_C()
 
 FUNC VOID Info_Mod_Hakon_Weglocken_B()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_B_15_00"); //In einer Höhle vor der Stadt fand ich einen großen Schatz. Leider sind zwei Riesenratten aufgetaucht und haben mich vertrieben. Kannst du mir helfen den Schatz zu bergen?
-	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_B_12_01"); //Ein großer Schatz in einer Höhle vor der Stadt? Ne, Jungchen, Märchenstunde ist erst heute Abend.
+	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_B_15_00"); //W jaskini przed miastem znalazlem wielki skarb. Niestety, dwoje olbrzymich szczurów pojawilo sie i scigalo mnie. Czy mozesz pomóc mi odzyskac skarb?
+	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_B_12_01"); //Duzy skarb w jaskini poza miastem? Nie, chlopak, chlopiec, bajkowa godzina po prostu dzis wieczorem.
 
 	Info_ClearChoices	(Info_Mod_Hakon_Weglocken);
 };
 
 FUNC VOID Info_Mod_Hakon_Weglocken_A()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_A_15_00"); //In einer Höhle vor der Stadt fand ich einige Waffen. Leider sind zwei Goblin’s aufgetaucht und haben mich vertrieben. Kannst du mir helfen die Waffen zu bergen?
-	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_A_12_01"); //Zwei Gobbos? Ha, lächerlich. Bring mich zu der Höhle. Die Waffen muss ich mir unbedingt ansehen.
+	AI_Output(hero, self, "Info_Mod_Hakon_Weglocken_A_15_00"); //W jaskini poza miastem znalazlem bron. Niestety, dwóch goblinów pojawilo sie i scigalo mnie. Czy mozesz pomóc mi odzyskac bron?
+	AI_Output(self, hero, "Info_Mod_Hakon_Weglocken_A_12_01"); //Dwa gobosy? Huh, smieszny. Wez mnie do jaskini. Musze przyjrzec sie tym dzialom.
 
 	Info_ClearChoices	(Info_Mod_Hakon_Weglocken);
 
@@ -148,7 +148,7 @@ FUNC INT Info_Mod_Hakon_Neugier_Condition()
 
 FUNC VOID Info_Mod_Hakon_Neugier_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hakon_Neugier_12_00"); //Ähh, na ja, vielleicht doch ein kurzer Blick. Bring mich hin. Aber wehe, es ist nichts Interessantes.
+	AI_Output(self, hero, "Info_Mod_Hakon_Neugier_12_00"); //Dobrze, moze na pierwszy rzut oka. Wez mnie tam. Ale biada, ze to nic ciekawego.
 
 	Mod_HakonUeberfall = 4;
 
@@ -181,16 +181,16 @@ FUNC VOID Info_Mod_Hakon_Falle_Info()
 {
 	if (Mod_HakonUeberfall == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_00"); //Also, wo ist jetzt die Höhle mit Waffen und Goblin’s?
-		AI_Output(hero, self, "Info_Mod_Hakon_Falle_15_01"); //Ach, die Waffen sind schon hier nur Goblins waren es doch nicht sondern ... ein Bandit.
+		AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_00"); //Gdzie wiec jaskinia z pistoletami i goblinem?
+		AI_Output(hero, self, "Info_Mod_Hakon_Falle_15_01"); //Ach, bron jest tu juz tylko Goblins nie byly, ale.... bandyta.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_02"); //Also, wo ist jetzt das, was du mir zeigen wolltest?
-		AI_Output(hero, self, "Info_Mod_Hakon_Falle_15_03"); //Einen Banditen.
+		AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_02"); //Gdzie wiec chciales mi pokazac?
+		AI_Output(hero, self, "Info_Mod_Hakon_Falle_15_03"); //A bandyta.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_04"); //Was, wo?
+	AI_Output(self, hero, "Info_Mod_Hakon_Falle_12_04"); //Co, gdzie, gdzie?
 
 	Mod_HakonUeberfall = 1;
 
@@ -215,7 +215,7 @@ INSTANCE Info_Mod_Hakon_Blutkelch (C_INFO)
 	information	= Info_Mod_Hakon_Blutkelch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich suche einen sogenannten Blutkelch.";
+	description	= "Szukam tak zwanego kubka na krew.";
 };
 
 FUNC INT Info_Mod_Hakon_Blutkelch_Condition()
@@ -229,9 +229,9 @@ FUNC INT Info_Mod_Hakon_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Hakon_Blutkelch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Hakon_Blutkelch_15_00"); //Ich suche einen sogenannten Blutkelch.
-	AI_Output(self, hero, "Info_Mod_Hakon_Blutkelch_12_01"); //Da kann ich dir auch nicht helfen. Ich handle mit Waffen.
-	AI_Output(hero, self, "Info_Mod_Hakon_Blutkelch_15_02"); //Danke trotzdem.
+	AI_Output(hero, self, "Info_Mod_Hakon_Blutkelch_15_00"); //Szukam tak zwanego kubka na krew.
+	AI_Output(self, hero, "Info_Mod_Hakon_Blutkelch_12_01"); //Nie moge Ci tez pomóc. Zajmuje sie bronia.
+	AI_Output(hero, self, "Info_Mod_Hakon_Blutkelch_15_02"); //W kazdym razie dziekuje.
 };
 
 INSTANCE Info_Mod_Hakon_Mario (C_INFO)
@@ -255,11 +255,11 @@ FUNC INT Info_Mod_Hakon_Mario_Condition()
 
 FUNC VOID Info_Mod_Hakon_Mario_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_00"); //Oh Mann, bin ich gerade sauer. Irgendein Idiot hat mich angezeigt, dass ich gestohlene Ware verkaufen würde.
-	AI_Output(hero, self, "Info_Mod_Hakon_Mario_15_01"); //Solche Störenfriede gibt es immer wieder.
-	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_02"); //Das Problem ist, dass ich tatsächlich nicht ganz ... legale Waffen dabei hatte.
-	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_03"); //Aber ich hatte sie nicht einmal ausgelegt. Einer meiner Mittelsmänner muss geplaudert haben. So ein Schwein!
-	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_04"); //Jetzt durfte ich erst mal ordentlich Strafgeld blechen.
+	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_00"); //Oh, czlowiek, jestem teraz podniecony. Pewien idiota donosil mi, ze sprzedaje skradzione towary.
+	AI_Output(hero, self, "Info_Mod_Hakon_Mario_15_01"); //Wichrzyciele tacy ciagle istnieja.
+	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_02"); //Problem polega na tym, ze wlasciwie nie jestem do konca..... z legalna bronia.
+	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_03"); //Ale nawet nie polozylem go. Jeden z moich posredników musial miec czat. Co za swinia!
+	AI_Output(self, hero, "Info_Mod_Hakon_Mario_12_04"); //Teraz pozwolono mi zaplacic grzywne.
 };
 
 INSTANCE Info_Mod_Hakon_Anschlagtafel (C_INFO)
@@ -270,7 +270,7 @@ INSTANCE Info_Mod_Hakon_Anschlagtafel (C_INFO)
 	information	= Info_Mod_Hakon_Anschlagtafel_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich habe deinen Aushang an der Anschlagtafel gesehen ...";
+	description	= "Widzialem twój plakat na billboardzie....";
 };
 
 FUNC INT Info_Mod_Hakon_Anschlagtafel_Condition()
@@ -301,12 +301,12 @@ FUNC VOID Info_Mod_Hakon_Anschlagtafel_Info()
 		Npc_RemoveInvItems	(hero, ItRi_Str_01, Mod_Anschlagtafel_Khorinis_Hakon_RingKraft);
 		Npc_RemoveInvItems	(hero, ItMw_1H_quantarie_Schwert_01, Mod_Anschlagtafel_Khorinis_Hakon_Schwert);
 
-		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_00"); //Was? Zeig her ... Tatsächlich, alles dabei. Ausgesprochen gut gemacht.
-		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_01"); //Hier ist deine Entlohnung.
+		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_00"); //Co? Pokaz mi.... W rzeczywistosci to wszystko. Bardzo dobrze wykonane.
+		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_01"); //Oto Twoja nagroda.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, Mod_Anschlagtafel_Khorinis_Hakon_Gold);
 
-		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_02"); //Hat mich gefreut mit dir Geschäfte zu machen.
+		AI_Output(self, hero, "Info_Mod_Hakon_Anschlagtafel_12_02"); //Mile robienie interesów z Toba.
 
 		if (Mod_Anschlagtafel_Khorinis_Hakon_Gold < 200)
 		{

@@ -1,7 +1,7 @@
 INSTANCE Mod_1549_PIR_Malcom_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Malcom";
+	name 		= "malkom";
 	guild 		= GIL_out;
 	id 			= 1549;
 	voice 		= 4;

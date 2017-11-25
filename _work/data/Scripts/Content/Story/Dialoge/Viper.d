@@ -15,10 +15,10 @@ FUNC INT Info_Mod_Viper_Hi_Condition()
 
 FUNC VOID Info_Mod_Viper_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_00"); //Sieh an, wen haben wir den hier.
-	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_01"); //Jemand hat sich tief in die Finsternis gewagt.
-	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_02"); //Was, du fürchtest sie nicht? Das solltest du aber.
-	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_03"); //(krächzt) Ewige Dunkelheit möge dich umgeben.
+	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_00"); //Cóz, spójrz, kto jest tutaj.
+	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_01"); //Ktos wpadl gleboko w ciemnosc.
+	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_02"); //Co nie boisz sie jej? Powinienes byc.
+	AI_Output(self, hero, "Info_Mod_Viper_Hi_02_03"); //Niech ciemnosc wieczna otacza ciebie.
 
 	AI_StopProcessInfos	(self);
 

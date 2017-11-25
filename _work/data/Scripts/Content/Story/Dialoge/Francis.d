@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Francis_Hi (C_INFO)
 	information	= Info_Mod_Francis_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Francis_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Francis_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Francis_Hi_13_01"); //Ich bin Francis und einer der drei Entertruppführer.
+	AI_Output(self, hero, "Info_Mod_Francis_Hi_13_01"); //Jestem Franciszkiem i jestem jednym z trzech liderów przedsiebiorczosci.
 };
 
 INSTANCE Info_Mod_Francis_Entertrupp (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Francis_Entertrupp (C_INFO)
 	information	= Info_Mod_Francis_Entertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will in deinen Entertrupp.";
+	description	= "Chce przylaczyc sie do waszej pozycji.";
 };
 
 FUNC INT Info_Mod_Francis_Entertrupp_Condition()
@@ -44,15 +44,15 @@ FUNC INT Info_Mod_Francis_Entertrupp_Condition()
 
 FUNC VOID Info_Mod_Francis_Entertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Francis_Entertrupp_15_00"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_01"); //Und du willst meine Zustimmung? Na gut, dann kannst du mir vielleicht bei einem Problem helfen:
-	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_02"); //Die Jungs aus meinem Entertrupp haben bei Skip ziemlichen Ärger gemacht und deshalb will er nicht mehr mit uns Handeln.
-	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_03"); //Geh zu ihm und mach das wieder gut.
-	AI_Output(hero, self, "Info_Mod_Francis_Entertrupp_15_04"); //Werd's probieren.
+	AI_Output(hero, self, "Info_Mod_Francis_Entertrupp_15_00"); //Chce przylaczyc sie do waszej pozycji.
+	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_01"); //Chcesz uzyskac moja aprobate? No cóz, byc moze wiec mozesz mi pomóc w rozwiazaniu problemu:
+	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_02"); //Chlopaki z mojego Entertruppuppa mieli wiele klopotów z Skipem i dlatego juz nie chce handlowac z nami.
+	AI_Output(self, hero, "Info_Mod_Francis_Entertrupp_13_03"); //Idz do niego i zalatwic mu sprawe.
+	AI_Output(hero, self, "Info_Mod_Francis_Entertrupp_15_04"); //Spróbuje.
 
 	Log_CreateTopic	(TOPIC_MOD_FRANCIS_ENTERTRUPP, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FRANCIS_ENTERTRUPP, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Um in Francis Entertrupp zu kommen soll ich dafür sorgen, dass Skip wieder mit ihm und seinen Leuten handelt.");
+	B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Aby dostac sie do Franciszka Entertruppa, powinienem upewnic sie, ze Skip znowu obchodzi sie z nim i jego ludzmi.");
 };
 
 INSTANCE Info_Mod_Francis_Skip (C_INFO)
@@ -63,7 +63,7 @@ INSTANCE Info_Mod_Francis_Skip (C_INFO)
 	information	= Info_Mod_Francis_Skip_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Skip wird wieder mit dir und deinen Jungs handeln.";
+	description	= "Skipowa gonna znów poradzi sobie z Toba i Twoimi chlopcami.";
 };
 
 FUNC INT Info_Mod_Francis_Skip_Condition()
@@ -77,17 +77,17 @@ FUNC INT Info_Mod_Francis_Skip_Condition()
 
 FUNC VOID Info_Mod_Francis_Skip_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Francis_Skip_15_00"); //Skip wird wieder mit dir und deinen Jungs handeln.
-	AI_Output(self, hero, "Info_Mod_Francis_Skip_13_01"); //Gut, damit hast du deinen Teil der Abmachung eingehalten.
-	AI_Output(self, hero, "Info_Mod_Francis_Skip_13_02"); //Von mir aus kannst du dich einem der Trupps anschließen.
+	AI_Output(hero, self, "Info_Mod_Francis_Skip_15_00"); //Skipowa gonna znów poradzi sobie z Toba i Twoimi chlopcami.
+	AI_Output(self, hero, "Info_Mod_Francis_Skip_13_01"); //No cóz, zachowales swoja date zakonczenia transakcji.
+	AI_Output(self, hero, "Info_Mod_Francis_Skip_13_02"); //Mozesz dolaczyc do jednego z oddzialów.
 
 	if (Mod_InEntertrupp == 0)
 	{
-		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_FRANCIS_ENTERTRUPP, "Francis gibt mir seine Zustimmung mich einem Entertrupp anzuschließen.", "Francis ist zufrieden mit mir und gibt mir seine Zustimmung.");
+		B_LogEntry_More	(TOPIC_MOD_PIRATEN_ENTERTRUPP, TOPIC_MOD_FRANCIS_ENTERTRUPP, "Franciszek daje mi swoja zgode na dolaczenie do grupy.", "Franciszek jest zadowolony ze mnie i wyraza na to zgode.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Francis ist zufrieden mit mir und gibt mir seine Zustimmung.");
+		B_LogEntry	(TOPIC_MOD_FRANCIS_ENTERTRUPP, "Franciszek jest zadowolony ze mnie i wyraza na to zgode.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_FRANCIS_ENTERTRUPP, LOG_SUCCESS);
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Francis_InEntertrupp (C_INFO)
 	information	= Info_Mod_Francis_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will in deinen Entertrupp.";
+	description	= "Chce przylaczyc sie do waszej pozycji.";
 };
 
 FUNC INT Info_Mod_Francis_InEntertrupp_Condition()
@@ -121,13 +121,13 @@ FUNC INT Info_Mod_Francis_InEntertrupp_Condition()
 
 FUNC VOID Info_Mod_Francis_InEntertrupp_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Francis_InEntertrupp_15_00"); //Ich will in deinen Entertrupp.
-	AI_Output(self, hero, "Info_Mod_Francis_InEntertrupp_13_01"); //Du hast bewiesen, dass du als Pirat zu gebrauchen bist.
-	AI_Output(self, hero, "Info_Mod_Francis_InEntertrupp_13_02"); //Ab sofort bist du in meinem Entertrupp.
+	AI_Output(hero, self, "Info_Mod_Francis_InEntertrupp_15_00"); //Chce przylaczyc sie do waszej pozycji.
+	AI_Output(self, hero, "Info_Mod_Francis_InEntertrupp_13_01"); //Sprawdziles sie jako pirat.
+	AI_Output(self, hero, "Info_Mod_Francis_InEntertrupp_13_02"); //Od teraz jestes w moim skladzie.
 
 	B_GivePlayerXP	(400);
 
-	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Ich bin jetzt Mitglied von Francis Entertrupp.");
+	B_LogEntry	(TOPIC_MOD_PIRATEN_ENTERTRUPP, "Jestem teraz czlonkiem Francis Enterprise.");
 	B_SetTopicStatus	(TOPIC_MOD_PIRATEN_ENTERTRUPP, LOG_SUCCESS);
 
 	Mod_InEntertrupp = 1;
@@ -152,7 +152,7 @@ INSTANCE Info_Mod_Francis_Befreiung (C_INFO)
 	information	= Info_Mod_Francis_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du etwas zu tun für mich?";
+	description	= "Masz dla mnie cos do zrobienia?";
 };
 
 FUNC INT Info_Mod_Francis_Befreiung_Condition()
@@ -165,19 +165,19 @@ FUNC INT Info_Mod_Francis_Befreiung_Condition()
 
 FUNC VOID Info_Mod_Francis_Befreiung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_00"); //Hast du etwas zu tun für mich? Ich soll helfen hier wieder alles in Gang zu kriegen, damit ich anschließend der Garde Innos' den letzten Schlag versetzen kann.
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_01"); //(wütend) Was? Siehst du denn nicht, dass ich versuche Holz für die Palisade zu sägen.
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_02"); //(verduzt) Seit wann musst du das machen?
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_03"); //(Verärgert) Genau das ist es. Ich müsste eigentlich die Arbeiten beaufsichtigen anstatt zu sägen.
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_04"); //Angus und Hank, diese faulen Säcke, müssten das eigentlich tun, aber sie machen sich einen schönen Tag in der Sonne.
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_05"); //(grinst) Soll ich dir helfen?
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_06"); //(wütend) Eigentich sollte ich dir für dein freches Grinsen das Maul stopfen, aber ja, du kannst mir helfen.
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_07"); //Vermöble das faule Pack, damit sie wieder die Sägen schwingen, dann richte ich Greg aus, dass wir wieder genug Holz für die Palisade haben.
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_08"); //Ok.
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_00"); //Masz dla mnie cos do zrobienia? Mam za zadanie pomóc mi wszystko znowu ruszyc, abym mógl dac straznikowi Innosowi ostatni cios.
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_01"); //(liber) Co? Czy nie widzisz, ze próbuje ciac drewno na palisade?
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_02"); //Od kiedy musisz to zrobic?
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_03"); //Tak wlasnie jest. Zamiast pilowania musialabym nadzorowac prace.
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_04"); //Angus i Hank, te leniwe dranie, musieliby to zrobic, ale maja ladny dzien w sloncu.
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_05"); //Chcesz mi pomóc?
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_06"); //Powinienem zamknac usta na twój policzkowy usmiech, ale tak, mozesz mi pomóc.
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung_13_07"); //Zdobadz leniwy paczke, aby znów pily znowu kolysaly sie, a ja powiem Gregowi, ze znów bedziemy mieli wystarczajaca ilosc drewna na palisade.
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung_15_08"); //Okay.
 	
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRFRANCIS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRFRANCIS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_PIRFRANCIS, "Angus und Hank machen sich einen schönen Tag in der Sonne, statt Holz für die Palisade zu sägen. Francis will, dass ich die beiden wieder zur Arbeit bewege.");
+	B_LogEntry	(TOPIC_MOD_BEL_PIRFRANCIS, "Angus i Hank maja ladny dzien w sloncu zamiast pilowac drewno na palisade. Franciszek chce, abym przywrócil oboje do pracy.");
 };
 
 INSTANCE Info_Mod_Francis_Befreiung2 (C_INFO)
@@ -188,7 +188,7 @@ INSTANCE Info_Mod_Francis_Befreiung2 (C_INFO)
 	information	= Info_Mod_Francis_Befreiung2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deine Arbeiter sind nun wieder anwesend.";
+	description	= "Panstwa pracownicy znów powracaja.";
 };
 
 FUNC INT Info_Mod_Francis_Befreiung2_Condition()
@@ -202,19 +202,19 @@ FUNC INT Info_Mod_Francis_Befreiung2_Condition()
 
 FUNC VOID Info_Mod_Francis_Befreiung2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung2_15_00"); //Deine Arbeiter sind nun wieder anwesend.
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung2_13_01"); //Gut gemacht. Hätt nicht gedacht das du die beiden wieder zur Vernuft bringen kannst. Hier nimm das als Belohnung.
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung2_15_00"); //Panstwa pracownicy znów powracaja.
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung2_13_01"); //Dobrze wykonane. Nie sadziles, ze mozesz je przywrócic. Tutaj, wez to za nagrode.
 
 	B_GiveInvItems	(self, hero, ItPl_Perm_Herb, 1);
 
-	AI_Output(hero, self, "Info_Mod_Francis_Befreiung2_15_02"); //Danke, ich werde nun gehen.
-	AI_Output(self, hero, "Info_Mod_Francis_Befreiung2_13_03"); //Tu das.
+	AI_Output(hero, self, "Info_Mod_Francis_Befreiung2_15_02"); //Dziekuje, ide teraz.
+	AI_Output(self, hero, "Info_Mod_Francis_Befreiung2_13_03"); //Zrób to.
 
 	B_GivePlayerXP	(300);
 
 	Mod_Piratenbefreiung += 1;
 	
-	B_LogEntry_More	(TOPIC_MOD_BEL_PIRFRANCIS, TOPIC_MOD_BEL_PIRATENLAGER, "Francis weiß Bescheid wegen Angus und Hank.", "Francis weiß Bescheid wegen Angus und Hank.");
+	B_LogEntry_More	(TOPIC_MOD_BEL_PIRFRANCIS, TOPIC_MOD_BEL_PIRATENLAGER, "Franciszek zna Angus i Hank.", "Franciszek zna Angus i Hank.");
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRFRANCIS, LOG_SUCCESS);
 };
 

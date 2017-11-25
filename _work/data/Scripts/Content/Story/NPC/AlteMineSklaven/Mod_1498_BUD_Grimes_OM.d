@@ -2,7 +2,7 @@ instance Mod_1498_BUD_Grimes_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Grimes";
+	name =							"bóle";
 	npctype =						npctype_main;
 	guild =							GIL_OUT;      
 	level =							5;

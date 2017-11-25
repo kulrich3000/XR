@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Neoras_Hi (C_INFO)
 	information	= Info_Mod_Neoras_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Neoras_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Neoras_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Neoras_Hi_01_01"); //Ich bin Neoras, der Meister der Tränke.
+	AI_Output(self, hero, "Info_Mod_Neoras_Hi_01_01"); //Jestem Neoraszem, mistrzem eliksirów.
 };
 
 INSTANCE Info_Mod_Neoras_Aufgabe (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Neoras_Aufgabe (C_INFO)
 	information	= Info_Mod_Neoras_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich dir irgendwie behilflich sein?";
+	description	= "Czy moge Ci pomóc?";
 };
 
 FUNC INT Info_Mod_Neoras_Aufgabe_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_Mod_Neoras_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Neoras_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neoras_Aufgabe_15_00"); //Kann ich dir irgendwie behilflich sein?
-	AI_Output(self, hero, "Info_Mod_Neoras_Aufgabe_01_01"); //Ich brauche keine Hilfe. Geh zu den anderen Magiern, vielleicht haben die was für dich zu tun.
+	AI_Output(hero, self, "Info_Mod_Neoras_Aufgabe_15_00"); //Czy moge Ci pomóc?
+	AI_Output(self, hero, "Info_Mod_Neoras_Aufgabe_01_01"); //Nie potrzebuje zadnej pomocy. Idz do innych magów, byc moze maja dla Ciebie cos do zrobienia.
 };
 
 INSTANCE Info_Mod_Neoras_HabTrank (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Neoras_HabTrank (C_INFO)
 	information	= Info_Mod_Neoras_HabTrank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier einen Trank für dich (Trank geben).";
+	description	= "Mam dla pana tutaj eliksir.";
 };
 
 FUNC INT Info_Mod_Neoras_HabTrank_Condition()
@@ -70,15 +70,15 @@ FUNC INT Info_Mod_Neoras_HabTrank_Condition()
 
 FUNC VOID Info_Mod_Neoras_HabTrank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neoras_HabTrank_15_00"); //Ich hab hier einen Trank für dich.
+	AI_Output(hero, self, "Info_Mod_Neoras_HabTrank_15_00"); //Mam dla Ciebie eliksir.
 
 	B_GiveInvItems	(hero, self, NeorasTrankVonMilten, 1);
 
-	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_01"); //Auf diesen Trank warte ich schon lange. Woher hast du ihn?
-	AI_Output(hero, self, "Info_Mod_Neoras_HabTrank_15_02"); //Ich habe Milten geholfen ihn herzustellen.
-	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_03"); //Damit hast du mir bewiesen, dass du würdig bist ein Novize zu werden. Nimm dieses Gold als Belohnung.
+	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_01"); //Na ten eliksir dlugo czekalem. Gdzie otrzymasz?
+	AI_Output(hero, self, "Info_Mod_Neoras_HabTrank_15_02"); //Pomagalem Miltenowi w jego produkcji.
+	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_03"); //Udowodniles mi, ze jestes godzien zostac nowicjuszem. Wez to zloto jako nagrode.
 
-	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_NEORAS_TRANK, "Neoras hält mich für würdig ein Novize zu werden.", "Ich habe Neoras den Trank gebracht.");
+	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_NEORAS_TRANK, "Neoras uwaza, ze warto byc nowicjuszem.", "Przywiózlem eliksir do Neorasa.");
 	B_SetTopicStatus	(TOPIC_MOd_NEORAS_TRANK, LOG_SUCCESS);
 
 	B_GivePlayerXP	(150);
@@ -109,23 +109,23 @@ FUNC INT Info_Mod_Neoras_Mitgift_Condition()
 
 FUNC VOID Info_Mod_Neoras_Mitgift_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_00"); //Du bist doch der Novize, der mir diesen Trank gebracht hat.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_01"); //Ich hätte vielleicht noch eine Aufgabe für jemanden mit deinen Fähigkeiten.
-	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_02"); //Ich bin ganz Ohr.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_03"); //Wie dir vielleicht schon aufgefallen ist, stellen wir hier im Kloster Gegengifte her.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_04"); //Das ist notwendig, da es da draußen viel giftiges Getier und Gewächs gibt.
-	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_05"); //Ja, damit hatte auch ich schon Bekanntschaft gemacht.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_06"); //Genau. Du begreifst also ihren Zweck, so weit so gut.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_07"); //Aber in letzter Zeit gab es auf Khorinis immer häufiger Todesfälle durch schwere Vergiftungen.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_08"); //Jedoch wurden diese nicht etwa durch Tiere, oder Pflanzen hervorgerufen, sondern durch von Menschenhand geschaffene Waffen ... Schwerter und Pfeile.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_09"); //Es scheint gedungene Mörder zu geben, die ihre Klingen und Spitzen damit bestreichen, um ihre Opfer damit einem erbarmungslosen Tode zuzuführen.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_10"); //Dafür scheinen sie besonders konzentrierte Gifte zu verwenden.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_11"); //Ich möchte dich nun darum bitten, mir je ein Fläschchen tierisches und pflanzliches Gift zu beschaffen, damit ich meine Forschungen auf dem Gebiet intensivieren kann.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_12"); //Begib dich dafür am besten zu Alchemisten oder Kräuterkundigen. Dort könntest du mit etwas Glück fündig werden.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_00"); //Jestes nowicjuszem, który przyniósl mi ten eliksir.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_01"); //Moge miec kolejne zadanie dla kogos z twoimi umiejetnosciami.
+	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_02"); //Jestem uszy.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_03"); //Jak zapewne zauwazyliscie, produkujemy tu w klasztorze antidotum.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_04"); //Jest to konieczne, poniewaz jest tam duzo trujacych zwierzat i roslin.
+	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_05"); //Tak, zapoznalem sie juz z nia.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_06"); //Dokladnie. Rozumiesz wiec jego cel, jak dotad bardzo dobrze.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_07"); //Ostatnio jednak w Khorini coraz wiecej osób umiera z powodu powaznych zatruc.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_08"); //Nie byly one jednak spowodowane przez zwierzeta czy rosliny, ale przez bron stworzona przez czlowieka.... Wiecej Miecze i strzalki.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_09"); //
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_10"); //Wydaje sie, ze w tym celu uzywaja szczególnie skoncentrowanych toksyn.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_11"); //Chcialbym teraz poprosic o butelke trucizny zwierzecej i roslinnej, aby zintensyfikowac badania w tej dziedzinie.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_12"); //Najlepszym sposobem na to jest wizyta u alchemików lub zielarzy. Móglbys tam znalezc, gdybys mial szczescie.
 
 	Log_CreateTopic	(TOPIC_MOD_NEORAS_MITGIFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NEORAS_MITGIFT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_NEORAS_MITGIFT, "Ich soll Neoras zu Forschungszwecken je ein Fläschen Tier- und Gewächsgift besorgen. Er meinte, dass ich mich bei Kräuterkundigen und Alchemisten umschauen solle.");
+	B_LogEntry	(TOPIC_MOD_NEORAS_MITGIFT, "Mam otrzymac Neorasa butelke trucizny zwierzecej i roslinnej do celów badawczych. Powiedzial mi, zebym rozejrzal sie za zielalistami i alchemikami.");
 };
 
 INSTANCE Info_Mod_Neoras_Mitgift2 (C_INFO)
@@ -136,7 +136,7 @@ INSTANCE Info_Mod_Neoras_Mitgift2 (C_INFO)
 	information	= Info_Mod_Neoras_Mitgift2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "So, hier ein Fläschchen Gewächsgift und das Fläschchen Tiergift.";
+	description	= "Oto wiec butelka trucizny roslinnej i butelka trucizny zwierzecej.";
 };
 
 FUNC INT Info_Mod_Neoras_Mitgift2_Condition()
@@ -151,26 +151,26 @@ FUNC INT Info_Mod_Neoras_Mitgift2_Condition()
 
 FUNC VOID Info_Mod_Neoras_Mitgift2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift2_15_00"); //So, hier ein Fläschchen Gewächsgift und das Fläschchen Tiergift.
+	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift2_15_00"); //Oto wiec butelka trucizny roslinnej i butelka trucizny zwierzecej.
 
 
-	B_ShowGivenThings	("Tier-  und Gewächsgift gegeben");
+	B_ShowGivenThings	("Podane trucizny na zwierzetach i roslinach");
 
 	Npc_RemoveInvItems	(hero, ItPo_Tiergift, 1);
 	Npc_RemoveInvItems	(hero, ItPo_Pflanzengift, 1);
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Constantino_Mitgift2))
 	{
-		AI_Output(hero, self, "Info_Mod_Neoras_Mitgift2_15_01"); //Mit schönen Grüßen von Constantino.
+		AI_Output(hero, self, "Info_Mod_Neoras_Mitgift2_15_01"); //Z wyrazami uznania dla Constantino.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_02"); //Ahh, vortrefflich. Das ist erst mal genügend Material für meine Forschungen. Du hast deine Aufgabe wieder einmal gut gemacht.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_03"); //Hier, nimm etwas Gold für deine Aufwendungen und einige Gegengifte.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_02"); //Ahh, doskonaly. To material wystarczajacy do moich badan. Zrealizowales swoja prace dobrze.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_03"); //Tutaj wez troche zlota na swoje wydatki i odtrutki.
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItPo_Gegengift, 3);
 
-	B_ShowGivenThings	("200 Gold und 3 Gegengifte erhalten");
+	B_ShowGivenThings	("200 zlota i 3 konserwowane antyoksydacyjne");
 
 	B_GivePlayerXP	(350);
 
@@ -185,7 +185,7 @@ INSTANCE Info_Mod_Neoras_Lehrer (C_INFO)
 	information	= Info_Mod_Neoras_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Kann ich bei dir lernen?";
+	description	= "Czy moge sie z Toba uczyc?";
 };
 
 FUNC INT Info_Mod_Neoras_Lehrer_Condition()
@@ -201,18 +201,18 @@ FUNC INT Info_Mod_Neoras_Lehrer_Condition()
 };
 FUNC VOID Info_Mod_Neoras_Lehrer_Info()
 {
-	AI_Output (hero, self, "Info_Mod_Neoras_Lehrer_15_00"); //Kann ich bei dir lernen?
+	AI_Output (hero, self, "Info_Mod_Neoras_Lehrer_15_00"); //Czy moge sie z Toba uczyc?
 	
 	if (Mod_Gilde == 6)
 	|| (Mod_Gilde == 7)
 	|| (Mod_Gilde == 8)
 	{
-		AI_Output (self, hero, "Info_Mod_Neoras_Lehrer_01_01"); //Ich werde dich in die Geheimnisse der Alchemie einweihen.
+		AI_Output (self, hero, "Info_Mod_Neoras_Lehrer_01_01"); //Pozwólcie sie na tajemnice alchemii.
 		
 		if (!Npc_KnowsInfo(hero, Info_Mod_Neoras_Lehrer))
 		{
 			Log_CreateTopic	(TOPIC_MOD_LEHRER_KLOSTER, LOG_NOTE);
-			B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Neoras kann mir etwas über die Alchemie beibringen.");
+			B_LogEntry	(TOPIC_MOD_LEHRER_KLOSTER, "Neory moga mnie nauczyc o alchemii.");
 		};
 
 		Info_ClearChoices 	(Info_Mod_Neoras_Lehrer);
@@ -220,25 +220,25 @@ FUNC VOID Info_Mod_Neoras_Lehrer_Info()
 	
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Gegengift] == FALSE)
 		{
-			Info_AddChoice 		(Info_Mod_Neoras_Lehrer,B_BuildLearnString ("Gegengift", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Gegengift)),Info_Mod_Neoras_Lehrer_Gegengift);
+			Info_AddChoice 		(Info_Mod_Neoras_Lehrer,B_BuildLearnString ("antidotum", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Gegengift)),Info_Mod_Neoras_Lehrer_Gegengift);
 		};
 	
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice 		(Info_Mod_Neoras_Lehrer,B_BuildLearnString ("Essenz der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Neoras_Lehrer_HEALTH_01);
+			Info_AddChoice 		(Info_Mod_Neoras_Lehrer,B_BuildLearnString ("Istota uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_01)),Info_Mod_Neoras_Lehrer_HEALTH_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Extrakt der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Neoras_Lehrer_Health_02);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Ekstrakt z ekstraktu leczniczego", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_02)), Info_Mod_Neoras_Lehrer_Health_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Elixier der Heilung", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Neoras_Lehrer_Health_03);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Eliksir uzdrawiania", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_03)), Info_Mod_Neoras_Lehrer_Health_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
@@ -246,42 +246,42 @@ FUNC VOID Info_Mod_Neoras_Lehrer_Info()
 		&& (Mod_LehrlingBei != 1)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Elixier des Lebens", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Neoras_Lehrer_Perm_Health);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Eliksir zycia", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), Info_Mod_Neoras_Lehrer_Perm_Health);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 		&& (Mod_LehrlingBei != 1)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Mana Essenz", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Neoras_Lehrer_Mana_01);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_01)), Info_Mod_Neoras_Lehrer_Mana_01);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Mana Extrakt", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Neoras_Lehrer_Mana_02);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("ekstrakt z maneny", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_02)), Info_Mod_Neoras_Lehrer_Mana_02);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Mana Elixier", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Neoras_Lehrer_Mana_03);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Mana_03)), Info_Mod_Neoras_Lehrer_Mana_03);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Elixier des Geistes", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Neoras_Lehrer_Perm_Mana);
+			Info_AddChoice	  (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Eliksir Ducha Swietego", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), Info_Mod_Neoras_Lehrer_Perm_Mana);
 		};                                                                                                                                                                            
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 		&& (Kapitel >= 4)
 		{                                                                                                                                                                                     
-			Info_AddChoice (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Elixier der Stärke", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Neoras_Lehrer_PermSTR);               
+			Info_AddChoice (Info_Mod_Neoras_Lehrer, B_BuildLearnString ("Skrobia Eliksir", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), Info_Mod_Neoras_Lehrer_PermSTR);               
 		};
 		if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 		&& (Kapitel >= 4)
 		{
-			Info_AddChoice (Info_Mod_Neoras_Lehrer,B_BuildLearnString ("Elixier der Geschicklichkeit", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Neoras_Lehrer_Perm_DEX);
+			Info_AddChoice (Info_Mod_Neoras_Lehrer,B_BuildLearnString ("Eliksir umiejetnosci", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), Info_Mod_Neoras_Lehrer_Perm_DEX);
 		};
 		
 	};

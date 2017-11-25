@@ -1,7 +1,7 @@
 INSTANCE Mod_765_NONE_Grimbald_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Grimbald";
+	name 		= "grimbald";
 	guild 		= GIL_NONE;
 	id 			= 765;
 	voice 		= 7;

@@ -1,7 +1,7 @@
 instance Mod_7407_OUT_Wirt_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Wirt";
+	name 		= "karczmarz";
 	guild 		= GIL_OUT;
 	id 			= 7407;
 	voice 		= 14;

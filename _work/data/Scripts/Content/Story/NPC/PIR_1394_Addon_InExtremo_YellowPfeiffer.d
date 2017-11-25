@@ -5,7 +5,7 @@ instance PIR_1394_Addon_InExtremo_YellowPfeiffer (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Yellow Pfeiffer";
+	name =					"Zólty Pfeffer";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

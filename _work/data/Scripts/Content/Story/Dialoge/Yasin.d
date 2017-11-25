@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Yasin_Hi (C_INFO)
 	information	= Info_Mod_Yasin_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und, alles fit?";
+	description	= "Czy masz racje?";
 };
 
 FUNC INT Info_Mod_Yasin_Hi_Condition()
@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Yasin_Hi_Condition()
 
 FUNC VOID Info_Mod_Yasin_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_00"); //Und, alles fit?
-	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_01"); //(wütend) Verschwinde gefälligst.
-	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_02"); //Hey, bleib locker. Ich wollte nur wissen, wie es dir geht.
-	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_03"); //(faucht) Toll, das siehst du doch. Was willst du denn?
-	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_04"); //Gehörst du zu den Gaunern hier?
-	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_05"); //(grummelt) Ja, mein Name ist Yasin. Aber vielleicht werde ich nicht mehr lange zu dieser Gemeinschaft gehören.
+	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_00"); //Czy masz racje?
+	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_01"); //Wyjmij z niego pieklo.
+	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_02"); //Hej, wez to latwo. Chcialem tylko wiedziec, jak pan to robi.
+	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_03"); //Wspaniale, widac to. Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Yasin_Hi_15_04"); //Jestes tu jednym z oszustów?
+	AI_Output(self, hero, "Info_Mod_Yasin_Hi_13_05"); //Tak, nazywam sie Yasin. Ale byc moze nie bede na dlugo w tej spolecznosci.
 };
 
 INSTANCE Info_Mod_Yasin_Aufgabe (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Yasin_Aufgabe (C_INFO)
 	information	= Info_Mod_Yasin_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso das denn?";
+	description	= "Dlaczego bys to zrobil?";
 };
 
 FUNC INT Info_Mod_Yasin_Aufgabe_Condition()
@@ -46,35 +46,35 @@ FUNC INT Info_Mod_Yasin_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Yasin_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_00"); //Wieso das denn?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_01"); //(wütend) Ich habe vor einiger Zeit krumme Geschäfte mit einigen der Stadtwachen dieser Stadt gemacht.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_02"); //Einem von diesen Kerlen haben meine Sachen nicht gefallen und er hat mich überall angeschwärzt.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_03"); //Ich musste aus der Stadt fliehen.
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_04"); //Was ist so schlimm daran?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_05"); //(aufbrausend) Kannst du denn nicht logisch denken oder bist du so blöd?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_06"); //Der Kerl hat mich verfolgt und hat gesehen, wie ich hier verschwunden bin.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_07"); //Er kennt unser Versteck und wenn wir Pech haben steht hier bald die Miliz auf der Matte.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_08"); //Unsere Anführere sind entsprechend begeistert.
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_09"); //Das ist nicht gut.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_10"); //(verärgert) Ja, das ist nicht gut. Du hast ja alles mitbekommen, also ist die Märchenstunde nun beendet. Kannst du nun gehen?
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_11"); //Kann ich dir bei deinem Problem helfen?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_12"); //(argwöhnisch) So, wieso solltest du das tun?
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_13"); //Ich bin auf der Suche nach Stimmen, um mich euch anschließen zu können
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_14"); //(überlegt) Ein ehrenwertes Anliegen. Hm ...
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_15"); //Wenn du mir helfen kannst, dann werde ich dir meine Stimme sicherlich geben können.
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_16"); //Was soll ich tun?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_17"); //Erledige diese schmierige Stadtwache für mich, wie es sich für einen wahren Assassinen gehört.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_18"); //Wenn du ihn tötest bin ich mein Problem los und du hast eine Stimme mehr.
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_19"); //Welche Stadtwache ist das genau?
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_20"); //Mika heißt der Mistkerl. Der steht Tag und Nacht vor dem Tor.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_21"); //Das dumme ist, dass immer einige Torwachen bei ihm stehen.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_22"); //Du musst ihn weglocken und ausschalten. Die Höhle mit dem Teleporter wäre der perfekte Ort dafür.
-	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_23"); //Alles klar, der Kerl ist so gut wie erledigt.
-	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_24"); //Beeil dich, sonst wird mich unser Rat sicher bald rauswerfen.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_00"); //Dlaczego bys to zrobil?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_01"); //(gorzkie) jakis czas temu prowadzilem nieuczciwe interesy z niektórymi straznikami miejskimi.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_02"); //Jeden z tych chlopaków nie lubil moich rzeczy, a on mnie wszedzie czarowal.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_03"); //Musialem uciec z miasta.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_04"); //Jaka jest wielka oferta?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_05"); //Czy nie myslisz logicznie, czy jestes glupi?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_06"); //Gosci mnie scigal, a on zobaczyl, ze mnie tu wydostaje sie.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_07"); //On zna nasza kryjówke, a jesli bedziemy szczesliwi, to wkrótce tutaj bedzie milicja.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_08"); //Nasi liderzy sa pod tym wzgledem zachwyceni.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_09"); //To nie jest dobre.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_10"); //Tak, to nie jest dobre. Slyszales juz wszystko, wiec lekcja bajki sie skonczyla. Czy mozecie pójsc teraz?
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_11"); //Czy moge pomóc w rozwiazaniu problemu?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_12"); //Dlaczego wiec mielibyscie to zrobic?
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_13"); //Szukam glosów, które dolacza do Ciebie.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_14"); //Godna przyczyna. Hm....
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_15"); //Jezeli moga mi panstwo pomóc, z pewnoscia bede mógl oddac swój glos.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_16"); //Co chcesz, abym zrobil?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_17"); //Troszczcie sie o te elegancka straz miejska, jak przystalo na prawdziwego zabójce.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_18"); //Jesli go zabijesz, pozbedziem sie mojego problemu i masz jeszcze jeden glos.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_19"); //Która straz miejska jest dokladnie taka?
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_20"); //Mika jest synem suki. Staje przed brama w dzien i noc.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_21"); //Glupia rzecza jest to, ze zawsze stoja u niego bracia.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_22"); //Trzeba go odciagnac i zabrac. Idealnym miejscem bylaby jaskinia z teleporterami.
+	AI_Output(hero, self, "Info_Mod_Yasin_Aufgabe_15_23"); //Dobrze, ten facet jest tak dobry, jak dobrze.
+	AI_Output(self, hero, "Info_Mod_Yasin_Aufgabe_13_24"); //Pospiesz sie, bo niedlugo wyjde z sadu.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_YASIN_MIKA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_YASIN_MIKA, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_ASS_YASIN_MIKA, "Ich habe nun mit dem Gauner Yasin geredet. Dieser berichtete mir, dass Milizsoldat Mika vor der Stadt durch einen Fehler Yasins über das Versteck der Assassinen Bescheid weiß. Wenn Mika nicht bald erledigt ist, werden die Assassinen sicher von der Miliz angegriffen. Ich soll den Mistkerl für Yasin töten, und zwar, wenn es Nacht ist. Ich soll ihn dazu in die Höhle mit dem Teleporter locken und im Geheimen töten.");
+	B_LogEntry	(TOPIC_MOD_ASS_YASIN_MIKA, "Rozmawialem z cichym Yasinem. Powiedzial mi, ze milicjant Mika wie o kryjówce zabójców z powodu pomylki Yasina. Jesli Mika nie skonczy sie wkrótce, zabójcy zostana zaatakowani przez milicje. Móglbym zabic tego syna z suki dla Yasina, kiedy to juz noc. Z teleporterem mam go wabic do jaskini i potajemnie go zabic.");
 };
 
 INSTANCE Info_Mod_Yasin_MikaTot (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Yasin_MikaTot (C_INFO)
 	information	= Info_Mod_Yasin_MikaTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dieser Mika kann nichts mehr erzählen. Ich hab ihn erledigt.";
+	description	= "Nie ma juz nic wiecej do powiedzenia temu Mice. Zabralem go.";
 };
 
 FUNC INT Info_Mod_Yasin_MikaTot_Condition()
@@ -99,10 +99,10 @@ FUNC INT Info_Mod_Yasin_MikaTot_Condition()
 
 FUNC VOID Info_Mod_Yasin_MikaTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Yasin_MikaTot_15_00"); //Dieser Mika kann nichts mehr erzählen. Ich hab ihn erledigt.
-	AI_Output(self, hero, "Info_Mod_Yasin_MikaTot_13_01"); //Sicher?
-	AI_Output(hero, self, "Info_Mod_Yasin_MikaTot_15_02"); //Glaubst du mir etwa nicht?
-	AI_Output(self, hero, "Info_Mod_Yasin_MikaTot_13_04"); //Doch, doch, natürlich. Jetzt bin ich aber beruhigt. Jemand wie dich kann man brauchen. Meine Stimme hast du.
+	AI_Output(hero, self, "Info_Mod_Yasin_MikaTot_15_00"); //Nie ma juz nic wiecej do powiedzenia temu Mice. Zabralem go.
+	AI_Output(self, hero, "Info_Mod_Yasin_MikaTot_13_01"); //Czy jestes pewien?
+	AI_Output(hero, self, "Info_Mod_Yasin_MikaTot_15_02"); //Nie uwierzysz mi?
+	AI_Output(self, hero, "Info_Mod_Yasin_MikaTot_13_04"); //Tak, oczywiscie tak. Teraz jestem spokojny. Ktos taki jak Ty moze byc przydatny. Masz mój glos.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 100);
 

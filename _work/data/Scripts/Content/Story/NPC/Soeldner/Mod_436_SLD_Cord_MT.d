@@ -1,7 +1,7 @@
 INSTANCE Mod_436_SLD_Cord_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Cord";
+	name 		= "przewód";
 	guild 		= GIL_MIL;
 	id 			= 436;
 	voice 		= 14;

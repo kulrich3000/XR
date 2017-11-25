@@ -31,7 +31,7 @@
 // *****************************************************
 INSTANCE ItMw_1H_Mace_02 (C_Item)
 {	
-	name 				=	"Stachelkeule";
+	name 				=	"zad";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -56,7 +56,7 @@ INSTANCE ItMw_1H_Mace_02 (C_Item)
 
 INSTANCE ItMw_Brot (C_Item)
 {	
-	name 				=	"Verzaubertes Brot";
+	name 				=	"Chleb zaczarowany";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -81,7 +81,7 @@ INSTANCE ItMw_Brot (C_Item)
 
 INSTANCE ItMw_EchsenKriegerDolch (C_Item)
 {	
-	name 				=	"Kriegerdolch";
+	name 				=	"wojownik";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -106,7 +106,7 @@ INSTANCE ItMw_EchsenKriegerDolch (C_Item)
 
 INSTANCE ItMw_1H_Sword_03 (C_Item)
 {	
-	name 				=	"Gardeschwert";
+	name 				=	"miecz ogrodowy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -130,7 +130,7 @@ INSTANCE ItMw_1H_Sword_03 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_03_Geschaerft (C_Item)
 {	
-	name 				=	"Gardeschwert (geschärft)";
+	name 				=	"Miecz ogrodowy (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -155,7 +155,7 @@ INSTANCE ItMw_1H_Sword_03_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Sword_Long_04 (C_Item)
 {	
-	name 				=	"Siegbringer";
+	name 				=	"zdobywca";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -179,7 +179,7 @@ INSTANCE ItMw_1H_Sword_Long_04 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_Long_04_Geschaerft (C_Item)
 {	
-	name 				=	"Siegbringer (geschärft)";
+	name 				=	"Pielegniarka (o ostrzeniu)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -204,7 +204,7 @@ INSTANCE ItMw_1H_Sword_Long_04_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Sword_Long_05 (C_Item)
 {	
-	name 				=	"Todbringer";
+	name 				=	"smiertelnik";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -228,7 +228,7 @@ INSTANCE ItMw_1H_Sword_Long_05 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_Long_05_Geschaerft (C_Item)
 {	
-	name 				=	"Todbringer (geschärft)";
+	name 				=	"Smierc czlowieka (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -253,7 +253,7 @@ INSTANCE ItMw_1H_Sword_Long_05_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Sword_Broad_04 (C_Item) 
 {	
-	name 				=	"Gardistenhand";
+	name 				=	"dlon straznika";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -277,7 +277,7 @@ INSTANCE ItMw_1H_Sword_Broad_04 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_Broad_04_Geschaerft (C_Item) 
 {	
-	name 				=	"Gardistenhand (geschärft)";
+	name 				=	"Reka straznicza (otwarta)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -302,7 +302,7 @@ INSTANCE ItMw_1H_Sword_Broad_04_Geschaerft (C_Item)
 
 INSTANCE ItMw_1H_Sword_Bastard_03 (C_Item) 
 {	
-	name 				=	"Vollstrecker";
+	name 				=	"wykonawca";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -326,7 +326,7 @@ INSTANCE ItMw_1H_Sword_Bastard_03 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_Bastard_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Vollstrecker (geschärft)";
+	name 				=	"Egzemplarz (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -351,7 +351,7 @@ INSTANCE ItMw_1H_Sword_Bastard_03_Geschaerft (C_Item)
 
 INSTANCE ItMw_2H_Axe_Old_02 (C_Item)
 {	
-	name 				=	"Bluternter";  
+	name 				=	"hemofilia";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -375,7 +375,7 @@ INSTANCE ItMw_2H_Axe_Old_02 (C_Item)
 };
 INSTANCE ItMw_2H_Axe_Old_02_Geschaerft (C_Item)
 {	
-	name 				=	"Bluternter (geschärft)";  
+	name 				=	"Hemofiliak (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -400,7 +400,7 @@ INSTANCE ItMw_2H_Axe_Old_02_Geschaerft (C_Item)
 
 INSTANCE ItMw_2H_Sword_Light_02 (C_Item) 
 {	
-	name 				=	"Templerklinge";
+	name 				=	"templariusz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -424,7 +424,7 @@ INSTANCE ItMw_2H_Sword_Light_02 (C_Item)
 };
 INSTANCE ItMw_2H_Sword_Light_02_Geschaerft (C_Item) 
 {	
-	name 				=	"Templerklinge (geschärft)";
+	name 				=	"Szablon ostrzony";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -449,7 +449,7 @@ INSTANCE ItMw_2H_Sword_Light_02_Geschaerft (C_Item)
 
 INSTANCE ItMw_AlteHueterklinge_1H (C_Item) 
 {	
-	name 				=	"Alte Hüterklinge";
+	name 				=	"Stary Ostrzyk Opiekun";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -473,7 +473,7 @@ INSTANCE ItMw_AlteHueterklinge_1H (C_Item)
 };
 INSTANCE ItMw_AlteHueterklinge_1H_Geschaerft (C_Item) 
 {	
-	name 				=	"Alte Hüterklinge (geschärft)";
+	name 				=	"Stare ostrze stary ostrze (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -498,7 +498,7 @@ INSTANCE ItMw_AlteHueterklinge_1H_Geschaerft (C_Item)
 
 INSTANCE ItMw_AlteHueterklinge_2H (C_Item) 
 {	
-	name 				=	"Alte Hüterklinge";
+	name 				=	"Stary Ostrzyk Opiekun";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -522,7 +522,7 @@ INSTANCE ItMw_AlteHueterklinge_2H (C_Item)
 };
 INSTANCE ItMw_AlteHueterklinge_2H_Geschaerft (C_Item) 
 {	
-	name 				=	"Alte Hüterklinge (geschärft)";
+	name 				=	"Stare ostrze stary ostrze (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -547,7 +547,7 @@ INSTANCE ItMw_AlteHueterklinge_2H_Geschaerft (C_Item)
 
 INSTANCE ItMw_FalscheHueterklinge_1H (C_Item) 
 {	
-	name 				=	"Falsche Hüterklinge";
+	name 				=	"Nieprawidlowe przechowywanie ostrza";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -571,7 +571,7 @@ INSTANCE ItMw_FalscheHueterklinge_1H (C_Item)
 };
 INSTANCE ItMw_FalscheHueterklinge_1H_Geschaerft (C_Item) 
 {	
-	name 				=	"Falsche Hüterklinge (geschärft)";
+	name 				=	"Niewlasciwe ostrze straznika (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -596,7 +596,7 @@ INSTANCE ItMw_FalscheHueterklinge_1H_Geschaerft (C_Item)
 
 INSTANCE ItMw_FalscheHueterklinge_2H (C_Item) 
 {	
-	name 				=	"Falsche Hüterklinge";
+	name 				=	"Nieprawidlowe przechowywanie ostrza";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -620,7 +620,7 @@ INSTANCE ItMw_FalscheHueterklinge_2H (C_Item)
 };
 INSTANCE ItMw_FalscheHueterklinge_2H_Geschaerft (C_Item) 
 {	
-	name 				=	"Falsche Hüterklinge (geschärft)";
+	name 				=	"Niewlasciwe ostrze straznika (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -645,7 +645,7 @@ INSTANCE ItMw_FalscheHueterklinge_2H_Geschaerft (C_Item)
 
 INSTANCE ItMw_Hueterklinge_1H (C_Item) 
 {	
-	name 				=	"Hüterklinge";
+	name 				=	"ostrze straznika";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -669,7 +669,7 @@ INSTANCE ItMw_Hueterklinge_1H (C_Item)
 };
 INSTANCE ItMw_Hueterklinge_1H_Geschaerft (C_Item) 
 {	
-	name 				=	"Hüterklinge (geschärft)";
+	name 				=	"Ostrza straznicze (ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -694,7 +694,7 @@ INSTANCE ItMw_Hueterklinge_1H_Geschaerft (C_Item)
 
 INSTANCE ItMw_Hueterklinge_2H (C_Item) 
 {	
-	name 				=	"Hüterklinge";
+	name 				=	"ostrze straznika";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -718,7 +718,7 @@ INSTANCE ItMw_Hueterklinge_2H (C_Item)
 };
 INSTANCE ItMw_Hueterklinge_2H_Geschaerft (C_Item) 
 {	
-	name 				=	"Hüterklinge (geschärft)";
+	name 				=	"Ostrza straznicze (ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -743,7 +743,7 @@ INSTANCE ItMw_Hueterklinge_2H_Geschaerft (C_Item)
 
 INSTANCE Delirium_Dolch (C_Item)
 {	
-	name 				=	"Deliriumdolch";  
+	name 				=	"sztylet";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -795,7 +795,7 @@ INSTANCE ItMw_Andramo (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_01 (C_Item)
 {	
-	name 				=	"Schürhaken";  
+	name 				=	"poker";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -819,7 +819,7 @@ INSTANCE ItMw_1H_Mace_L_01 (C_Item)
 };
 INSTANCE ItMw_1H_Mace_L_01_Geschaerft (C_Item)
 {	
-	name 				=	"Schürhaken (geschärft)";  
+	name 				=	"Poker (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -844,7 +844,7 @@ INSTANCE ItMw_1H_Mace_L_01_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Bau_Axe (C_Item)
 {	
-	name 				=	"Sichel";  
+	name 				=	"sierp";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -868,7 +868,7 @@ INSTANCE ItMw_1h_Bau_Axe (C_Item)
 };
 INSTANCE ItMw_1h_Bau_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Sichel (geschärft)";  
+	name 				=	"Lekkie (poddane ostrzeniu)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -893,7 +893,7 @@ INSTANCE ItMw_1h_Bau_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Mace (C_Item)
 {	
-	name 				=	"Gehstock";  
+	name 				=	"chodzenie";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -918,7 +918,7 @@ INSTANCE ItMw_1h_Vlk_Mace (C_Item)
 // *****************************************************
 INSTANCE ItMw_Schlagstock (C_Item)
 {	
-	name 				=	"Schlagstock";  
+	name 				=	"nocnik";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -943,7 +943,7 @@ INSTANCE ItMw_Schlagstock (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_03 (C_Item)
 {	
-	name 				=	"Belegnagel";  
+	name 				=	"plakietka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -968,7 +968,7 @@ INSTANCE ItMw_1H_Mace_L_03 (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Vlk_Axe (C_Item)
 {	
-	name 				=	"Beil";  
+	name 				=	"siekiera";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -992,7 +992,7 @@ INSTANCE ItMw_1h_Vlk_Axe (C_Item)
 };
 INSTANCE ItMw_1h_Vlk_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Beil (geschärft)";  
+	name 				=	"Hatchet (szlifowany)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1017,7 +1017,7 @@ INSTANCE ItMw_1h_Vlk_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Mace_L_04 (C_Item)
 {	
-	name 				=	"Schmiedehammer";  
+	name 				=	"odkuwka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1042,7 +1042,7 @@ INSTANCE ItMw_1H_Mace_L_04 (C_Item)
 // *****************************************************
 INSTANCE ItMw_FeurigerHammer (C_Item)
 {	
-	name 				=	"Feuriger Hammer";  
+	name 				=	"Mlotek ogniotrwaly";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE | ITEM_SHOW;	
@@ -1059,7 +1059,7 @@ INSTANCE ItMw_FeurigerHammer (C_Item)
 	visual 				=	"ItMw_010_1h_sledgehammer_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Feuerschaden";				COUNT[1]	= 3;
+	TEXT[1]				= "pozar";				COUNT[1]	= 3;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
@@ -1068,7 +1068,7 @@ INSTANCE ItMw_FeurigerHammer (C_Item)
 // *****************************************************
 INSTANCE ItMw_Stadthammer (C_Item)
 {	
-	name 				=	"Stadthammer";  
+	name 				=	"mlotek miejski";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1093,7 +1093,7 @@ INSTANCE ItMw_Stadthammer (C_Item)
 // *****************************************************
 INSTANCE ItMw_ShortSword1 (C_Item)
 {	
-	name 				=	"Kurzschwert der Miliz";  
+	name 				=	"Krótki miecz milicji";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1117,7 +1117,7 @@ INSTANCE ItMw_ShortSword1 (C_Item)
 };
 INSTANCE ItMw_ShortSword1_Geschaerft (C_Item)
 {	
-	name 				=	"Kurzschwert der Miliz (geschärft)";  
+	name 				=	"Krótki miecz milicji (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1141,7 +1141,7 @@ INSTANCE ItMw_ShortSword1_Geschaerft (C_Item)
 };
 INSTANCE ItMw_EchsenSchwertStr (C_Item)
 {	
-	name 				=	"Echsenschwert";  
+	name 				=	"jaszczurka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1166,7 +1166,7 @@ INSTANCE ItMw_EchsenSchwertStr (C_Item)
 // *****************************************************
 INSTANCE ItMw_Nagelknueppel (C_Item)
 {	
-	name 				=	"Nagelknüppel";  //für Banditen
+	name 				=	"palka";  //für Banditen
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1191,7 +1191,7 @@ INSTANCE ItMw_Nagelknueppel (C_Item)
 // *****************************************************
 INSTANCE ItMw_1H_Sword_L_03 (C_Item)
 {	
-	name 				=	"Wolfsklinge";  
+	name 				=	"ostrze wilka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1215,7 +1215,7 @@ INSTANCE ItMw_1H_Sword_L_03 (C_Item)
 };
 INSTANCE ItMw_1H_Sword_L_03_Geschaerft (C_Item)
 {	
-	name 				=	"Wolfsklinge (geschärft)";  
+	name 				=	"Ostrze Wolf (ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1240,7 +1240,7 @@ INSTANCE ItMw_1H_Sword_L_03_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_ShortSword2 (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert";  
+	name 				=	"Gruby, krótki miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1264,7 +1264,7 @@ INSTANCE ItMw_ShortSword2 (C_Item)
 };
 INSTANCE ItMw_ShortSword2_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Kurzschwert (geschärft)";  
+	name 				=	"Krótki, gruboziarnisty miecz (ostry)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1289,7 +1289,7 @@ INSTANCE ItMw_ShortSword2_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_FurtsSchwert (C_Item)
 {	
-	name 				=	"Furts Schwert";  
+	name 				=	"Miecz Furtowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1314,7 +1314,7 @@ INSTANCE ItMw_FurtsSchwert (C_Item)
 // *****************************************************
 INSTANCE ItMw_Sense (C_Item)
 {	
-	name 				=	"Kleine Sense";  
+	name 				=	"Mala kosa";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1338,7 +1338,7 @@ INSTANCE ItMw_Sense (C_Item)
 };
 INSTANCE ItMw_Sense_Geschaerft (C_Item)
 {	
-	name 				=	"Kleine Sense (geschärft)";  
+	name 				=	"Mala kosa wlosia (oslodzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1363,7 +1363,7 @@ INSTANCE ItMw_Sense_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Nov_Mace (C_Item)
 {	
-	name 				=	"Kampfstab der Feuer Novizen";  
+	name 				=	"Sztab Bojowy Nowicjuszy Pozarniczych";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1389,7 +1389,7 @@ INSTANCE ItMw_1h_Nov_Mace (C_Item)
 
 INSTANCE ItMw_1h_SNov_Mace (C_Item)
 {	
-	name 				=	"Kampfstab der Schwarzen Novizen";  
+	name 				=	"Kadra pracowników czarnych nowicjuszy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -1415,7 +1415,7 @@ INSTANCE ItMw_1h_SNov_Mace (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Bau_Axe (C_Item)
 {	
-	name 				=	"Holzfälleraxt";  
+	name 				=	"drwal";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1439,7 +1439,7 @@ INSTANCE ItMw_2h_Bau_Axe (C_Item)
 };
 INSTANCE ItMw_2h_Bau_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Holzfälleraxt (geschärft)";  
+	name 				=	"Osie drwala (oslony ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1466,7 +1466,7 @@ INSTANCE ItMw_2h_Bau_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Misc_Axe (C_Item)
 {	
-	name 				=	"Rostige Axt";  //STANDARDOBJEKTIERUNG
+	name 				=	"Rustysta Axy";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1490,7 +1490,7 @@ INSTANCE ItMw_1h_Misc_Axe (C_Item)
 };
 INSTANCE ItMw_1h_Misc_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Rostige Axt (geschärft)";  //STANDARDOBJEKTIERUNG
+	name 				=	"Aksamitna rdza (ostrozona)";  //STANDARDOBJEKTIERUNG
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1517,7 +1517,7 @@ INSTANCE ItMw_1h_Misc_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Mil_Sword (C_Item)
 {	
-	name 				=	"Grobes Breitschwert";  //NUR MILIZ
+	name 				=	"Haslo szerokie grube";  //NUR MILIZ
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1541,7 +1541,7 @@ INSTANCE ItMw_1h_Mil_Sword (C_Item)
 };
 INSTANCE ItMw_1h_Mil_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Breitschwert (geschärft)";  //NUR MILIZ
+	name 				=	"Haslo szerokie (do ostrzenia)";  //NUR MILIZ
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1566,7 +1566,7 @@ INSTANCE ItMw_1h_Mil_Sword_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Sld_Axe (C_Item)
 {	
-	name 				=	"Grobes Kriegsbeil";  //SÖLDNER
+	name 				=	"Szorstka siekiera";  //SÖLDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1590,7 +1590,7 @@ INSTANCE ItMw_1h_Sld_Axe (C_Item)
 };
 INSTANCE ItMw_1h_Sld_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Kriegsbeil (geschärft)";  //SÖLDNER
+	name 				=	"siekiera gruboziarnista (oslodzona)";  //SÖLDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1615,7 +1615,7 @@ INSTANCE ItMw_1h_Sld_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Sld_Sword (C_Item)
 {	
-	name 				=	"Grobes Schwert";  //SÖLDNER
+	name 				=	"Gruby miecz";  //SÖLDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1639,7 +1639,7 @@ INSTANCE ItMw_1h_Sld_Sword (C_Item)
 };
 INSTANCE ItMw_1h_Sld_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Schwert (geschärft)";  //SÖLDNER
+	name 				=	"Miecz szorstki (ostrozony)";  //SÖLDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1664,7 +1664,7 @@ INSTANCE ItMw_1h_Sld_Sword_Geschaerft (C_Item)
 
 INSTANCE ItMw_EchsenZweihaender (C_Item)
 {	
-	name 				=	"Echsenzweihänder";  //SÖLDNER
+	name 				=	"jaszczurka dwureczna";  //SÖLDNER
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1690,7 +1690,7 @@ INSTANCE ItMw_EchsenZweihaender (C_Item)
 // ****** folgende Waffen sind eigentlich zu gut für Kapitel 1, NSCs sind aber noch VIEL zu stark ******
 INSTANCE ItMw_2h_Sld_Axe (C_Item)
 {	
-	name 				=	"Grobe Kriegsaxt";  
+	name 				=	"Gruba wojna";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1714,7 +1714,7 @@ INSTANCE ItMw_2h_Sld_Axe (C_Item)
 };
 INSTANCE ItMw_2h_Sld_Axe_Geschaerft (C_Item)
 {	
-	name 				=	"Grobe Kriegsaxt (geschärft)";  
+	name 				=	"Grube waraxe (ostre ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1739,7 +1739,7 @@ INSTANCE ItMw_2h_Sld_Axe_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Sld_Sword (C_Item)
 {	
-	name 				=	"Grober Zweihänder";  
+	name 				=	"Szorstka reka obureczna";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1763,7 +1763,7 @@ INSTANCE ItMw_2h_Sld_Sword (C_Item)
 };
 INSTANCE ItMw_2h_Sld_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Grober Zweihänder (geschärft)";  
+	name 				=	"Szorstka, dwureczna (ostrozona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -1788,7 +1788,7 @@ INSTANCE ItMw_2h_Sld_Sword_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_1h_Pal_Sword (C_Item)
 {	
-	name 				=	"Paladinschwert";  //NUR PALADIN 
+	name 				=	"paladyn";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1812,7 +1812,7 @@ INSTANCE ItMw_1h_Pal_Sword (C_Item)
 };
 INSTANCE ItMw_1h_Pal_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Paladinschwert (geschärft)";  //NUR PALADIN 
+	name 				=	"Miecz paladynowy (wyostrzony)";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1837,7 +1837,7 @@ INSTANCE ItMw_1h_Pal_Sword_Geschaerft (C_Item)
 // *****************************************************
 INSTANCE ItMw_2h_Pal_Sword (C_Item)
 {	
-	name 				=	"Paladin-Zweihänder";  //NUR PALADIN 
+	name 				=	"Paladyn paladyn dwureczny";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1861,7 +1861,7 @@ INSTANCE ItMw_2h_Pal_Sword (C_Item)
 };
 INSTANCE ItMw_2h_Pal_Sword_Geschaerft (C_Item)
 {	
-	name 				=	"Paladin-Zweihänder (geschärft)";  //NUR PALADIN 
+	name 				=	"Paladyn dwureczna paladynowa (otwarta)";  //NUR PALADIN 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1892,7 +1892,7 @@ INSTANCE ItMw_2h_Pal_Sword_Geschaerft (C_Item)
 // ************************************
 INSTANCE ItMw_2H_OrcAxe_01 (C_Item)
 {	
-	name 				=	"Krush Pach";
+	name 				=	"Krusz Pach Pacha";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1916,7 +1916,7 @@ INSTANCE ItMw_2H_OrcAxe_01 (C_Item)
 };
 INSTANCE ItMw_2H_OrcAxe_01_Geschaerft (C_Item)
 {	
-	name 				=	"Krush Pach (geschärft)";
+	name 				=	"Krush Pach (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1965,7 +1965,7 @@ INSTANCE ItMw_2H_OrcAxe_02 (C_Item)
 };
 INSTANCE ItMw_2H_OrcAxe_02_Geschaerft (C_Item)
 {	
-	name 				=	"Krush UrRok (geschärft)";
+	name 				=	"Krush UrRok (utwardzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1990,7 +1990,7 @@ INSTANCE ItMw_2H_OrcAxe_02_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcAxe_03 (C_Item)
 {	
-	name 				=	"Krush Agash";
+	name 				=	"Krusz Agash";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2014,7 +2014,7 @@ INSTANCE ItMw_2H_OrcAxe_03 (C_Item)
 };
 INSTANCE ItMw_2H_OrcAxe_03_Geschaerft (C_Item)
 {	
-	name 				=	"Krush Agash (geschärft)";
+	name 				=	"Krush Agash (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2063,7 +2063,7 @@ INSTANCE ItMw_2H_OrcAxe_04 (C_Item)
 };
 INSTANCE ItMw_2H_OrcAxe_04_Geschaerft (C_Item)
 {	
-	name 				=	"Krush BrokDar (geschärft)";
+	name 				=	"Krush BrokDar (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2088,7 +2088,7 @@ INSTANCE ItMw_2H_OrcAxe_04_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcSword_01 (C_Item) // *** für Drakonier!!! ***
 {	
-	name 				=	"Krush Varrok"; 
+	name 				=	"Krusz Warrok"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2112,7 +2112,7 @@ INSTANCE ItMw_2H_OrcSword_01 (C_Item) // *** für Drakonier!!! ***
 };
 INSTANCE ItMw_2H_OrcSword_01_Geschaerft (C_Item) // *** für Drakonier!!! ***
 {	
-	name 				=	"Krush Varrok (geschärft)"; 
+	name 				=	"Krush Varrok (utwardzony)"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2137,7 +2137,7 @@ INSTANCE ItMw_2H_OrcSword_01_Geschaerft (C_Item) // *** für Drakonier!!! ***
 /********************************************************************************/
 INSTANCE ItMw_2H_OrcSword_02 (C_Item) // *** für Orcritter!!! ***
 {	
-	name 				=	"Orkisches Kriegschwert"; 
+	name 				=	"Orkiszowy miecz wojenny"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2161,7 +2161,7 @@ INSTANCE ItMw_2H_OrcSword_02 (C_Item) // *** für Orcritter!!! ***
 };
 INSTANCE ItMw_2H_OrcSword_02_Geschaerft (C_Item) // *** für Orcritter!!! ***
 {	
-	name 				=	"Orkisches Kriegschwert (geschärft)"; 
+	name 				=	"Orkiszowy miecz wojenny (utwardzony)"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -2190,7 +2190,7 @@ INSTANCE ItMw_2H_OrcSword_02_Geschaerft (C_Item) // *** für Orcritter!!! ***
 // *******************
 INSTANCE ItMw_ShortSword3 (C_Item)
 {	
-	name 				=	"Kurzschwert";  
+	name 				=	"krótki miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2214,7 +2214,7 @@ INSTANCE ItMw_ShortSword3 (C_Item)
 };
 INSTANCE ItMw_ShortSword3_Geschaerft (C_Item)
 {	
-	name 				=	"Kurzschwert (geschärft)";  
+	name 				=	"Krótki miecz (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2239,7 +2239,7 @@ INSTANCE ItMw_ShortSword3_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Nagelkeule (C_Item)
 {	
-	name 				=	"Nagelkeule";  
+	name 				=	"noga paznokci";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2264,7 +2264,7 @@ INSTANCE ItMw_Nagelkeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_ShortSword4 (C_Item)
 {	
-	name 				=	"Wolfszahn";  
+	name 				=	"wilk";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2288,7 +2288,7 @@ INSTANCE ItMw_ShortSword4 (C_Item)
 };
 INSTANCE ItMw_ShortSword4_Geschaerft (C_Item)
 {	
-	name 				=	"Wolfszahn (geschärft)";  
+	name 				=	"Wilgotny zab (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2313,7 +2313,7 @@ INSTANCE ItMw_ShortSword4_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegskeule (C_Item)
 {	
-	name 				=	"Kriegskeule";  
+	name 				=	"klub wojenny";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2338,7 +2338,7 @@ INSTANCE ItMw_Kriegskeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Richtstab (C_Item)
 {	
-	name 				=	"Richtstab";  
+	name 				=	"pret prostujacy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -2362,7 +2362,7 @@ INSTANCE ItMw_Richtstab (C_Item)
 };
 INSTANCE ItMw_Richtstab_Geschaerft (C_Item)
 {	
-	name 				=	"Richtstab (geschärft)";  
+	name 				=	"Prostownik (utwardzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -2387,7 +2387,7 @@ INSTANCE ItMw_Richtstab_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_ShortSword5 (C_Item)
 {	
-	name 				=	"edles Kurzschwert";  
+	name 				=	"szlachetny, krótki miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2411,7 +2411,7 @@ INSTANCE ItMw_ShortSword5 (C_Item)
 };
 INSTANCE ItMw_ShortSword5_Geschaerft (C_Item)
 {	
-	name 				=	"edles Kurzschwert (geschärft)";  
+	name 				=	"szlachetny, krótki miecz (ostry)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2436,7 +2436,7 @@ INSTANCE ItMw_ShortSword5_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegshammer1 (C_Item) 
 {	
-	name 				=	"Kriegshammer";
+	name 				=	"rozgrzewacz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2461,7 +2461,7 @@ INSTANCE ItMw_Kriegshammer1 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Hellebarde (C_Item) 
 {	
-	name 				=	"Hellebarde";
+	name 				=	"halbert";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2485,7 +2485,7 @@ INSTANCE ItMw_Hellebarde (C_Item)
 };
 INSTANCE ItMw_Hellebarde_Geschaerft (C_Item) 
 {	
-	name 				=	"Hellebarde (geschärft)";
+	name 				=	"Halberd (wyostrzony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2510,7 +2510,7 @@ INSTANCE ItMw_Hellebarde_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Nagelkeule2 (C_Item)
 {	
-	name 				=	"Schwere Nagelkeule";  
+	name 				=	"Ciezka noga paznokciowa";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2535,7 +2535,7 @@ INSTANCE ItMw_Nagelkeule2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schiffsaxt (C_Item)
 {	
-	name 				=	"Schiffsaxt";  
+	name 				=	"topór statku";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2559,7 +2559,7 @@ INSTANCE ItMw_Schiffsaxt (C_Item)
 };
 INSTANCE ItMw_Schiffsaxt_Geschaerft (C_Item)
 {	
-	name 				=	"Schiffsaxt (geschärft)";  
+	name 				=	"Axe okretowe (osie ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -2584,7 +2584,7 @@ INSTANCE ItMw_Schiffsaxt_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Piratensaebel (C_Item)
 {	
-	name 				=	"Piratensäbel";  
+	name 				=	"szable pirackie";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2610,7 +2610,7 @@ INSTANCE ItMw_Piratensaebel (C_Item)
 };
 INSTANCE ItMw_Piratensaebel_Geschaerft (C_Item)
 {	
-	name 				=	"Piratensäbel (geschärft)";  
+	name 				=	"Szabla piracka (oslabiona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2635,7 +2635,7 @@ INSTANCE ItMw_Piratensaebel_Geschaerft (C_Item)
 
 INSTANCE ItMw_Piratensaebel_Greg (C_Item)
 {	
-	name 				=	"Gregs alter Piratensäbel";  
+	name 				=	"Greki stary szabla piratów";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_SHOW;	
@@ -2660,7 +2660,7 @@ INSTANCE ItMw_Piratensaebel_Greg (C_Item)
 
 INSTANCE ItMw_Piratensaebel_Greg_Gut (C_Item)
 {	
-	name 				=	"Gregs Piratensäbel";  
+	name 				=	"Greki szable pirackie";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2685,7 +2685,7 @@ INSTANCE ItMw_Piratensaebel_Greg_Gut (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert (C_Item)
 {	
-	name 				=	"Grobes Langschwert";  
+	name 				=	"Gruby dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2711,7 +2711,7 @@ INSTANCE ItMw_Schwert (C_Item)
 };
 INSTANCE ItMw_Schwert_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Langschwert (geschärft)";  
+	name 				=	"Szorstki miecz dlugi (ostry ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2736,7 +2736,7 @@ INSTANCE ItMw_Schwert_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_HakonSchwert_01 (C_Item)
 {	
-	name 				=	"Grobes Langschwert von Hakon";  
+	name 				=	"Gruby miecz od Hakon.";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -2761,7 +2761,7 @@ INSTANCE ItMw_HakonSchwert_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_HakonSchwert_02 (C_Item)
 {	
-	name 				=	"Grobes Langschwert von Hakon";  
+	name 				=	"Gruby miecz od Hakon.";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3006,7 +3006,7 @@ INSTANCE ItMw_1H_Common_01_StarkMeisterschmied (C_Item)
 
 INSTANCE ItMw_HaradSchwert (C_Item) 
 {	
-	name 				=	"Harads Schwert";
+	name 				=	"Miecz Harada";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_SHOW;	
@@ -3034,7 +3034,7 @@ INSTANCE ItMw_HaradSchwert (C_Item)
 // *******************
 INSTANCE ItMw_Stabkeule (C_Item) 
 {	
-	name 				=	"Stabkeule";
+	name 				=	"bar";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -3059,7 +3059,7 @@ INSTANCE ItMw_Stabkeule (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender1 (C_Item) 
 {	
-	name 				=	"Leichter Zweihänder";
+	name 				=	"Lekki, obureczny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -3083,7 +3083,7 @@ INSTANCE ItMw_Zweihaender1 (C_Item)
 };
 INSTANCE ItMw_Zweihaender1_Geschaerft (C_Item) 
 {	
-	name 				=	"Leichter Zweihänder (geschärft)";
+	name 				=	"Lekkie dwie rece (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -3108,7 +3108,7 @@ INSTANCE ItMw_Zweihaender1_Geschaerft (C_Item)
 
 INSTANCE ItMw_2H_Sword_Light_01 (C_Item) 
 {	
-	name 				=	"Leichter Zweihänder";
+	name 				=	"Lekki, obureczny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -3132,7 +3132,7 @@ INSTANCE ItMw_2H_Sword_Light_01 (C_Item)
 };
 INSTANCE ItMw_2H_Sword_Light_01_Geschaerft (C_Item) 
 {	
-	name 				=	"Leichter Zweihänder (geschärft)";
+	name 				=	"Lekkie dwie rece (ostre)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -3157,7 +3157,7 @@ INSTANCE ItMw_2H_Sword_Light_01_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Steinbrecher (C_Item)
 {	
-	name 				=	"Steinbrecher";  
+	name 				=	"kruszarka do kamienia";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3184,7 +3184,7 @@ INSTANCE ItMw_Steinbrecher (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Spicker (C_Item)
 {	
-	name 				=	"Schädelspicker";  
+	name 				=	"Pobornik czaszkowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3211,7 +3211,7 @@ INSTANCE ItMw_Spicker (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitaxt1 (C_Item) 
 {	
-	name 				=	"Leichte Streitaxt";
+	name 				=	"Lekka bojówka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -3235,7 +3235,7 @@ INSTANCE ItMw_Streitaxt1 (C_Item)
 };
 INSTANCE ItMw_Streitaxt1_Geschaerft (C_Item) 
 {	
-	name 				=	"Leichte Streitaxt (geschärft)";
+	name 				=	"Lekkie osie bitewne (utwardzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -3260,7 +3260,7 @@ INSTANCE ItMw_Streitaxt1_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert1 (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3287,7 +3287,7 @@ INSTANCE ItMw_Schwert1 (C_Item)
 };
 INSTANCE ItMw_Schwert1_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Schwert (geschärft)";  
+	name 				=	"Szlachetny miecz (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3314,7 +3314,7 @@ INSTANCE ItMw_Schwert1_Geschaerft (C_Item)
 };
 INSTANCE ItMw_Schwert1_Stark (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3341,7 +3341,7 @@ INSTANCE ItMw_Schwert1_Stark (C_Item)
 };
 INSTANCE ItMw_Schwert1_Bonus (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3368,7 +3368,7 @@ INSTANCE ItMw_Schwert1_Bonus (C_Item)
 };
 INSTANCE ItMw_Schwert1_BonusMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3395,7 +3395,7 @@ INSTANCE ItMw_Schwert1_BonusMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert1_Meisterschmied (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3422,7 +3422,7 @@ INSTANCE ItMw_Schwert1_Meisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert1_StarkBonus (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3449,7 +3449,7 @@ INSTANCE ItMw_Schwert1_StarkBonus (C_Item)
 };
 INSTANCE ItMw_Schwert1_StarkMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3476,7 +3476,7 @@ INSTANCE ItMw_Schwert1_StarkMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert1_StarkBonusMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Schwert";  
+	name 				=	"Szlachetny miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3504,7 +3504,7 @@ INSTANCE ItMw_Schwert1_StarkBonusMeisterschmied (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert2 (C_Item)
 {	
-	name 				=	"Langschwert";  
+	name 				=	"dlugopisy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3530,7 +3530,7 @@ INSTANCE ItMw_Schwert2 (C_Item)
 };
 INSTANCE ItMw_Schwert2_Geschaerft (C_Item)
 {	
-	name 				=	"Langschwert (geschärft)";  
+	name 				=	"Dlugi miecz (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3557,7 +3557,7 @@ INSTANCE ItMw_Schwert2_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Doppelaxt (C_Item) 
 {	
-	name 				=	"Doppelaxt";
+	name 				=	"podwójna siekiera";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3583,7 +3583,7 @@ INSTANCE ItMw_Doppelaxt (C_Item)
 };
 INSTANCE ItMw_Doppelaxt_Geschaerft (C_Item) 
 {	
-	name 				=	"Doppelaxt (geschärft)";
+	name 				=	"Podwójna os (o ostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3610,7 +3610,7 @@ INSTANCE ItMw_Doppelaxt_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Bartaxt (C_Item) 
 {	
-	name 				=	"Bartaxt";
+	name 				=	"siekiera brody";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3636,7 +3636,7 @@ INSTANCE ItMw_Bartaxt (C_Item)
 };
 INSTANCE ItMw_Bartaxt_Geschaerft (C_Item) 
 {	
-	name 				=	"Bartaxt (geschärft)";
+	name 				=	"Osie brody (ostrozone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3663,7 +3663,7 @@ INSTANCE ItMw_Bartaxt_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Morgenstern (C_Item)
 {	
-	name 				=	"Morgenstern";  
+	name 				=	"poranek";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -3690,7 +3690,7 @@ INSTANCE ItMw_Morgenstern (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert3 (C_Item)
 {	
-	name 				=	"Grobes Bastardschwert";  
+	name 				=	"Szorstki miecz lakowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3716,7 +3716,7 @@ INSTANCE ItMw_Schwert3 (C_Item)
 };
 INSTANCE ItMw_Schwert3_Geschaerft (C_Item)
 {	
-	name 				=	"Grobes Bastardschwert (geschärft)";  
+	name 				=	"Szorstki miecz kanardonowy (ostry)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3741,7 +3741,7 @@ INSTANCE ItMw_Schwert3_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert4 (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3770,7 +3770,7 @@ INSTANCE ItMw_Schwert4 (C_Item)
 };
 INSTANCE ItMw_Schwert4_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Langschwert (geschärft)";  
+	name 				=	"Szorstki dlugi miecz (ostrozony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3797,7 +3797,7 @@ INSTANCE ItMw_Schwert4_Geschaerft (C_Item)
 };
 INSTANCE ItMw_Schwert4_Stark (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3826,7 +3826,7 @@ INSTANCE ItMw_Schwert4_Stark (C_Item)
 };
 INSTANCE ItMw_Schwert4_Bonus (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3855,7 +3855,7 @@ INSTANCE ItMw_Schwert4_Bonus (C_Item)
 };
 INSTANCE ItMw_Schwert4_BonusMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3884,7 +3884,7 @@ INSTANCE ItMw_Schwert4_BonusMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert4_Meisterschmied (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3913,7 +3913,7 @@ INSTANCE ItMw_Schwert4_Meisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert4_StarkBonus (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3942,7 +3942,7 @@ INSTANCE ItMw_Schwert4_StarkBonus (C_Item)
 };
 INSTANCE ItMw_Schwert4_StarkMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -3971,7 +3971,7 @@ INSTANCE ItMw_Schwert4_StarkMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Schwert4_StarkBonusMeisterschmied (C_Item)
 {	
-	name 				=	"Edles Langschwert";  
+	name 				=	"Dlugi, dlugi miecz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4064,7 +4064,7 @@ INSTANCE ItMw_2H_Special_01 (C_Item)
 // *******************
 INSTANCE ItMw_Rapier (C_Item) 
 {	
-	name 				=	"Rapier";
+	name 				=	"rapier";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4093,7 +4093,7 @@ INSTANCE ItMw_Rapier (C_Item)
 };
 INSTANCE ItMw_Rapier_Geschaerft (C_Item) 
 {	
-	name 				=	"Rapier (geschärft)";
+	name 				=	"Szybszy (szlifowany)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4123,7 +4123,7 @@ INSTANCE ItMw_Rapier_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Rubinklinge (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4152,7 +4152,7 @@ INSTANCE ItMw_Rubinklinge (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_Geschaerft (C_Item) 
 {	
-	name 				=	"Rubinklinge (geschärft)";
+	name 				=	"Ostre ostrze rózyczkowe (wyostrzone)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4181,7 +4181,7 @@ INSTANCE ItMw_Rubinklinge_Geschaerft (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_Stark (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4210,7 +4210,7 @@ INSTANCE ItMw_Rubinklinge_Stark (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_Bonus (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4239,7 +4239,7 @@ INSTANCE ItMw_Rubinklinge_Bonus (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_BonusMeisterschmied (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4268,7 +4268,7 @@ INSTANCE ItMw_Rubinklinge_BonusMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_Meisterschmied (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4297,7 +4297,7 @@ INSTANCE ItMw_Rubinklinge_Meisterschmied (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_StarkBonus (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4326,7 +4326,7 @@ INSTANCE ItMw_Rubinklinge_StarkBonus (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_StarkMeisterschmied (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4355,7 +4355,7 @@ INSTANCE ItMw_Rubinklinge_StarkMeisterschmied (C_Item)
 };
 INSTANCE ItMw_Rubinklinge_StarkBonusMeisterschmied (C_Item) 
 {	
-	name 				=	"Rubinklinge";
+	name 				=	"ostrze rubinowe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4385,7 +4385,7 @@ INSTANCE ItMw_Rubinklinge_StarkBonusMeisterschmied (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Prunkschwert (C_Item) 
 {	
-	name 				=	"Prunkschwert";
+	name 				=	"miecz swietnosci";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4415,7 +4415,7 @@ INSTANCE ItMw_Prunkschwert (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitkolben (C_Item)
 {	
-	name 				=	"Streitkolben";  
+	name 				=	"maces";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -4442,7 +4442,7 @@ INSTANCE ItMw_Streitkolben (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender2 (C_Item) 
 {	
-	name 				=	"Zweihänder";
+	name 				=	"osoba dwureczna";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4468,7 +4468,7 @@ INSTANCE ItMw_Zweihaender2 (C_Item)
 };
 INSTANCE ItMw_Zweihaender2_Geschaerft (C_Item) 
 {	
-	name 				=	"Zweihänder (geschärft)";
+	name 				=	"Dwuosobowa (ostrzona)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4495,7 +4495,7 @@ INSTANCE ItMw_Zweihaender2_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Runenschwert (C_Item)
 {	
-	name 				=	"Runenschwert";  
+	name 				=	"miecz runowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4521,7 +4521,7 @@ INSTANCE ItMw_Runenschwert (C_Item)
 };
 INSTANCE ItMw_Runenschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Runenschwert (geschärft)";  
+	name 				=	"Runesaber (naostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4548,7 +4548,7 @@ INSTANCE ItMw_Runenschwert_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Rabenschnabel (C_Item)
 {	
-	name 				=	"Rabenschnabel";  
+	name 				=	"Eumpill";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -4575,7 +4575,7 @@ INSTANCE ItMw_Rabenschnabel (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schwert5 (C_Item)
 {	
-	name 				=	"Edles Bastardschwert";  
+	name 				=	"Szlachetny miecz kanardowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4601,7 +4601,7 @@ INSTANCE ItMw_Schwert5 (C_Item)
 };
 INSTANCE ItMw_Schwert5_Geschaerft (C_Item)
 {	
-	name 				=	"Edles Bastardschwert (geschärft)";  
+	name 				=	"Szlachecki miecz bastardowy (wyostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -4628,7 +4628,7 @@ INSTANCE ItMw_Schwert5_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Inquisitor (C_Item)
 {	
-	name 				=	"Inquisitor";  
+	name 				=	"inkwizytor";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -4655,7 +4655,7 @@ INSTANCE ItMw_Inquisitor (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Streitaxt2 (C_Item)
 {	
-	name 				=	"Streitaxt";  
+	name 				=	"bitaksja";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -4681,7 +4681,7 @@ INSTANCE ItMw_Streitaxt2 (C_Item)
 };
 INSTANCE ItMw_Streitaxt2_Geschaerft (C_Item)
 {	
-	name 				=	"Streitaxt (gschärft)";  
+	name 				=	"Osie bojowe gorace";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -4708,7 +4708,7 @@ INSTANCE ItMw_Streitaxt2_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender3 (C_Item)
 {	
-	name 				=	"Runenmacht";  
+	name 				=	"moc pobiegla";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4734,7 +4734,7 @@ INSTANCE ItMw_Zweihaender3 (C_Item)
 };
 INSTANCE ItMw_Zweihaender3_Geschaerft (C_Item)
 {	
-	name 				=	"Runenmacht (geschärft)";  
+	name 				=	"Uzywanie statków do sztauowania (naostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -4853,7 +4853,7 @@ INSTANCE ItMw_ElBastardo (C_Item)
 };
 INSTANCE ItMw_ElBastardo_Geschaerft (C_Item)
 {	
-	name 				=	"El Bastardo (geschärft)";  
+	name 				=	"El Bastardo (wyostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -5086,7 +5086,7 @@ INSTANCE ItMw_ElBastardo_Meisterschmied (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Kriegshammer2 (C_Item)
 {	
-	name 				=	"Schwerer Kriegshammer";  
+	name 				=	"Ciezki rozgrzewacz";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -5113,7 +5113,7 @@ INSTANCE ItMw_Kriegshammer2 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Folteraxt (C_Item)
 {	
-	name 				=	"Folteraxt";  
+	name 				=	"topór tortur";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -5139,7 +5139,7 @@ INSTANCE ItMw_Folteraxt (C_Item)
 };
 INSTANCE ItMw_Folteraxt_Geschaerft (C_Item)
 {	
-	name 				=	"Folteraxt (geschärft)";  
+	name 				=	"Osie tortur (ostrozone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -5166,7 +5166,7 @@ INSTANCE ItMw_Folteraxt_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Zweihaender4 (C_Item)
 {	
-	name 				=	"Schwerer Zweihänder";  
+	name 				=	"Ciezki, dwurzedowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5192,7 +5192,7 @@ INSTANCE ItMw_Zweihaender4 (C_Item)
 };
 INSTANCE ItMw_Zweihaender4_Geschaerft (C_Item)
 {	
-	name 				=	"Schwerer Zweihänder (geschärft)";  
+	name 				=	"Ciezka, dwureczna (utwardzona)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5219,7 +5219,7 @@ INSTANCE ItMw_Zweihaender4_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Schlachtaxt (C_Item)
 {	
-	name 				=	"Schlachtaxt";  
+	name 				=	"topór bojowy";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5245,7 +5245,7 @@ INSTANCE ItMw_Schlachtaxt (C_Item)
 };
 INSTANCE ItMw_Schlachtaxt_Geschaerft (C_Item)
 {	
-	name 				=	"Schlachtaxt (geschärft)";  
+	name 				=	"Osie rzezne (o ostrzone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5272,7 +5272,7 @@ INSTANCE ItMw_Schlachtaxt_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Krummschwert (C_Item)
 {	
-	name 				=	"Krummschwert";  
+	name 				=	"scimitor";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5298,7 +5298,7 @@ INSTANCE ItMw_Krummschwert (C_Item)
 };
 INSTANCE ItMw_Krummschwert_Geschaerft (C_Item)
 {	
-	name 				=	"Krummschwert (geschärft)";  
+	name 				=	"Miecz krzywoliniowy (ostrzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5325,7 +5325,7 @@ INSTANCE ItMw_Krummschwert_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_Barbarenstreitaxt (C_Item)
 {	
-	name 				=	"Barbarenstreitaxt";  
+	name 				=	"bitwa barbarzynska";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5351,7 +5351,7 @@ INSTANCE ItMw_Barbarenstreitaxt (C_Item)
 };
 INSTANCE ItMw_Barbarenstreitaxt_Geschaerft (C_Item)
 {	
-	name 				=	"Barbarenstreitaxt (geschärft)";  
+	name 				=	"Bitwy barbarzynskie (ostrozone)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5387,7 +5387,7 @@ INSTANCE ItMw_Barbarenstreitaxt_Geschaerft (C_Item)
 // *******************
 INSTANCE ItMw_Berserkeraxt (C_Item)//Joly:Auf Dracheninsel beim Schwarzmagiernovizen
 {	
-	name 				=	"Berserkeraxt";  
+	name 				=	"siekiera berserkera";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5413,7 +5413,7 @@ INSTANCE ItMw_Berserkeraxt (C_Item)//Joly:Auf Dracheninsel beim Schwarzmagiernov
 };
 INSTANCE ItMw_Berserkeraxt_Geschaerft (C_Item)//Joly:Auf Dracheninsel beim Schwarzmagiernovizen
 {	
-	name 				=	"Berserkeraxt (geschärft)";  
+	name 				=	"Berserkeraxt (oslodzony)";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -5443,7 +5443,7 @@ INSTANCE ItMw_Berserkeraxt_Geschaerft (C_Item)//Joly:Auf Dracheninsel beim Schwa
 // ************************
 INSTANCE ItMw_1H_Blessed_01 (C_Item) 
 {	
-	name 				=	"Rohe Erzklinge";
+	name 				=	"Brzeszczot rudy rudy surowej";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -5460,7 +5460,7 @@ INSTANCE ItMw_1H_Blessed_01 (C_Item)
 	visual 				=	"itmw_030_1h_PAL_sword_bastard_RAW_01.3ds";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 30;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 30;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
@@ -5469,7 +5469,7 @@ INSTANCE ItMw_1H_Blessed_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_1H_Blessed_02 (C_Item) 
 {	
-	name 				=	"Gesegnete Erzklinge";
+	name 				=	"Brazowy nóz rudy rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -5488,7 +5488,7 @@ INSTANCE ItMw_1H_Blessed_02 (C_Item)
 	visual 				=	"ItMw_030_1h_PAL_sword_bastard_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 40;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 40;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
@@ -5497,7 +5497,7 @@ INSTANCE ItMw_1H_Blessed_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_1H_Blessed_03 (C_Item) 
 {	
-	name 				=	"Gesegnete Erzklinge";
+	name 				=	"Brazowy nóz rudy rudy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -5516,7 +5516,7 @@ INSTANCE ItMw_1H_Blessed_03 (C_Item)
 	visual 				=	"ItMw_030_1h_PAL_sword_bastard_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 50;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 50;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
@@ -5525,7 +5525,7 @@ INSTANCE ItMw_1H_Blessed_03 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_1H_Blessed_03_Geschaerft (C_Item) 
 {	
-	name 				=	"Innos Zorn (geschärft)";
+	name 				=	"Gniew Innos (ostrozony)";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD | ITEM_MISSION;	
@@ -5544,7 +5544,7 @@ INSTANCE ItMw_1H_Blessed_03_Geschaerft (C_Item)
 	visual 				=	"ItMw_030_1h_PAL_sword_bastard_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 50;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 50;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_OneHanded;
@@ -5553,7 +5553,7 @@ INSTANCE ItMw_1H_Blessed_03_Geschaerft (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_01 (C_Item) 
 {	
-	name 				=	"Rohe Erzklinge";
+	name 				=	"Brzeszczot rudy rudy surowej";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5570,7 +5570,7 @@ INSTANCE ItMw_2H_Blessed_01 (C_Item)
 	visual 				=	"ItMw_040_2h_PAL_sword_heavy_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 30;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 30;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_TwoHanded;
@@ -5579,7 +5579,7 @@ INSTANCE ItMw_2H_Blessed_01 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_02 (C_Item) 
 {	
-	name 				=	"Ordensschwert";
+	name 				=	"miecz religijny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5598,7 +5598,7 @@ INSTANCE ItMw_2H_Blessed_02 (C_Item)
 	visual 				=	"ItMw_040_2h_PAL_sword_heavy_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 40;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 40;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_TwoHanded;
@@ -5607,7 +5607,7 @@ INSTANCE ItMw_2H_Blessed_02 (C_Item)
 /********************************************************************************/
 INSTANCE ItMw_2H_Blessed_03 (C_Item) 
 {	
-	name 				=	"Heiliger Vollstrecker";
+	name 				=	"Wykonawca Swiety";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -5626,7 +5626,7 @@ INSTANCE ItMw_2H_Blessed_03 (C_Item)
 	visual 				=	"ItMw_040_2h_PAL_sword_heavy_RAW_01.3DS";
 
 	description			= name;
-	TEXT[1]				= "Bonus gegen Dämonen und Untote";		COUNT[1]	= 50;
+	TEXT[1]				= "Premia od demonów i nieumarlych";		COUNT[1]	= 50;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
 	TEXT[4] 			= NAME_TwoHanded;

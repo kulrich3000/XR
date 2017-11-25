@@ -15,7 +15,7 @@ FUNC INT Info_Mod_HofstaatRaufbold_Hi_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Hi_13_00"); //Hallo!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Hi_13_00"); //Witaj!
 
 	AI_StopProcessInfos	(self);
 
@@ -44,12 +44,12 @@ FUNC INT Info_Mod_HofstaatRaufbold_KoenigSorge_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_KoenigSorge_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_00"); //Halt, hier kannst du nicht weiter. Der König ist am Fluss und sorgt sich.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_01"); //Er will dabei nicht gestört werden, schon gar nicht von einem Mädchen für alles.
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_02"); //Königliches Mädchen für alles, wenn ich bitten darf, und das bin ich nicht mehr. Ich bin mittlerweile königlicher Kehrwisch!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_03"); //Egal, du kommst hier nicht durch, das ist königlicher Befehl.
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_04"); //Ich hab dir schon einmal den Hintern versohlt, ich mach es auch gerne nochmal.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_05"); //Pass dir bloß auf, ich habe im Moment nur drei verschiedene Rauschmittel intus.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_00"); //Zatrzymaj sie, tutaj nie mozesz isc dalej. Król przez niepokojaca rzeke.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_01"); //Nie chce byc zaklócany, zwlaszcza przez dziewczyne za wszystko.
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_02"); //Królewska dziewczyna za wszystko, jesli moge zapytac, a ja nie jestem. Stalem sie królewskim zamachowcem!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_03"); //Tak czy inaczej, nie mozna sie tu dostac, to królewski porzadek.
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_KoenigSorge_15_04"); //Bilem cie raz wczesniej i ciesze sie, ze moge to zrobic jeszcze raz.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigSorge_13_05"); //Spójrz, mam tylko trzy rózne narkotyki.
 
 	AI_StopProcessInfos	(self);
 
@@ -76,12 +76,12 @@ FUNC INT Info_Mod_HofstaatRaufbold_KoenigHilfe_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_KoenigHilfe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_00"); //Der König sorgt sich ... Wir müssen was unternehmen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_01"); //Du solltest das königliche Orakel aufsuchen, es wird dir bestimmt sagen, wie du den König wieder glücklich machen kannst!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_02"); //Ich werde mir inzwischen den Fluss vorknöpfen der den König traurig macht!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_03"); //Einer von uns muss Erfolg haben und glaub' mir, dieser Fluss wird sich wünschen, nie geboren worden zu sein.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_00"); //Król niepokoi sie.... Musimy cos zrobic.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_01"); //Powinienes odwiedzic królewska wyrocznie, powie ci ona, jak sprawic, by król znów byl szczesliwy!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_02"); //Bede jechal rzeka, która sprawia, ze król jest smutny!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_KoenigHilfe_13_03"); //Jedna z nas musi odniesc sukces i wierzcie mi, ta rzeka zyczy sobie, aby nigdy sie nie narodzila.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Der Raufbold riet mir, das königliche Orakel aufzusuchen. Wo ich das wohl finde?");
+	B_LogEntry	(TOPIC_MOD_SEKTE_ENTSCHEIDUNG, "Szorstka kark poradzila mi odwiedzic królewska wyrocznie. Zastanawiam sie, gdzie moge ja znalezc.");
 
 	AI_StopProcessInfos	(self);
 
@@ -108,26 +108,26 @@ FUNC INT Info_Mod_HofstaatRaufbold_Meer_Condition()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_00"); //Du hast gewonnen ... Hast du die Antwort gefunden?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_01"); //Moment mal, wie bist du aus dem Fluss gekommen?
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_02"); //Eine Otterfamilie hat mich gerettet! Aber das tut jetzt doch nichts zur Sache. Sprich schon, was hast du gesehen?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_03"); //Der Sumpf. Im alten Minental. Er behauptete die Antwort zu sein.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_04"); //Natürlich! Es ist alles sonnenklar! Der Sumpf ist die Antwort. Auf was eigentlich?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_05"); //Der König hat sich ein Meer gewünscht. Vielleicht gibt es eine Möglichkeit, den Sumpf zu einem Teil des Staates zu machen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_06"); //WIR EROBERN IHN! Wenn das den König wieder glücklich macht dann metzeln wir dort alles nieder was und im Weg ist und nehmen den Sumpf mit hierher.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_00"); //Ty wygrales/as..... Czy znalazles odpowiedz?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_01"); //Poczekaj chwile, jak wyszedles z rzeki?
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_02"); //Uratowala mnie rodzina wydrów! Ale to teraz nie ma znaczenia. Mówcie, co widzieliscie?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_03"); //bagno. W dawnym Minental. Twierdzil on, ze jest odpowiedzia.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_04"); //Oczywiscie! Jest jasne jak swiatlo dzienne! Odpowiedzia jest bagno. Do czego tak naprawde?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_15_05"); //Król zyczyl sobie morza. Byc moze jest sposób na uczynienie bagna czescia panstwa.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_13_06"); //PODEJMIEMY GO! Jesli to sprawi, ze król znów stanie sie szczesliwy, zabijemy wszystko to, co jest na drodze i zabierzemy z nami bagno.
 
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Der Fluss hat gesagt du stinkst.", Info_Mod_HofstaatRaufbold_Meer_D);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Was immer du nimmst, nimm weniger ... oder mehr.", Info_Mod_HofstaatRaufbold_Meer_C);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Wie schnell kannst du eigentlich von hier bis zur Stadt rennen?", Info_Mod_HofstaatRaufbold_Meer_B);
-	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Sei still und lass mich das machen.", Info_Mod_HofstaatRaufbold_Meer_A);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Rzeka powiedziala ci, ze masz zapach.", Info_Mod_HofstaatRaufbold_Meer_D);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Cokolwiek bierzesz, bierz mniej.... lub wiecej.", Info_Mod_HofstaatRaufbold_Meer_C);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Jak szybko mozna uciec z tego miejsca do miasta?", Info_Mod_HofstaatRaufbold_Meer_B);
+	Info_AddChoice	(Info_Mod_HofstaatRaufbold_Meer, "Zamknij sie i pozwólcie mi to zrobic.", Info_Mod_HofstaatRaufbold_Meer_A);
 };
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_D()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_D_15_00"); //Der Fluss hat gesagt du stinkst.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_D_13_01"); //Hast du immer noch nicht genug, verdammter Fluss?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_D_15_00"); //Rzeka powiedziala ci, ze masz zapach.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_D_13_01"); //Jeszcze nie masz dosc, goddamn River?
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -136,8 +136,8 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_D()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_C()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_C_15_00"); //Was immer du nimmst, nimm weniger ... oder mehr.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_C_13_01"); //Ich fang gleich damit an!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_C_15_00"); //Cokolwiek bierzesz, bierz mniej.... lub wiecej.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_C_13_01"); //Zaczne od razu!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -148,10 +148,10 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_C()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_B()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_00"); //Wie schnell kannst du eigentlich von hier bis zur Stadt rennen? Renn' mal rauf, ich stopp deine Zeit!
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_01"); //Glaubst du ich bin so blöd auf sowas anzuspringen oder was?
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_02"); //Eins, zwei, drei, vier ...
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_03"); //Haaalt, ich bin noch gar nicht losgelaufen!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_00"); //Jak szybko mozna uciec z tego miejsca do miasta? Biegaj na górze, zaoszczedze Ci czas!
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_01"); //Sadzisz, ze jestem tak glupi skaczac na cos takiego lub co?
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_B_15_02"); //Jeden, dwa, dwa, trzy, cztery....
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_B_13_03"); //Jeszcze nie ucieklam!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 
@@ -162,8 +162,8 @@ FUNC VOID Info_Mod_HofstaatRaufbold_Meer_B()
 
 FUNC VOID Info_Mod_HofstaatRaufbold_Meer_A()
 {
-	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_A_15_00"); //Sei still und lass mich das machen.
-	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_A_13_01"); //Welche Unverfrorenheit! Zur Strafe musst du auf meine weitere Gesellschaft verzichten!
+	AI_Output(hero, self, "Info_Mod_HofstaatRaufbold_Meer_A_15_00"); //Zamknij sie i pozwólcie mi to zrobic.
+	AI_Output(self, hero, "Info_Mod_HofstaatRaufbold_Meer_A_13_01"); //Co za zdumienie! Jako kara, musisz zrezygnowac z mojego dalszego towarzystwa!
 	
 	Info_ClearChoices	(Info_Mod_HofstaatRaufbold_Meer);
 

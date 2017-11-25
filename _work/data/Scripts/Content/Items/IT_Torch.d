@@ -9,7 +9,7 @@ const int	Value_Fackel			=	2;
 // ************************************************************************************************
 INSTANCE ItLsTorch(C_Item)
 {
-	name 				=	"Fackel";
+	name 				=	"flary";
 
 	mainflag 			=	ITEM_KAT_NONE;
 
@@ -28,7 +28,7 @@ INSTANCE ItLsTorch(C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= 	name;
-	TEXT[3]				=   "Eine Fackel";
+	TEXT[3]				=   "latarka";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= 	value;
 
 };
@@ -36,7 +36,7 @@ INSTANCE ItLsTorch(C_Item)
 /******************************************************************************************/
 INSTANCE ItLsTorchburning(C_Item)
 {
-	name 				=	"Brennende Fackel";
+	name 				=	"Palenie palenisko";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_TORCH;
@@ -47,13 +47,13 @@ INSTANCE ItLsTorchburning(C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= 	name;
-	TEXT[3]				=   "Eine Fackel";
+	TEXT[3]				=   "latarka";
 };
 
 /******************************************************************************************/
 INSTANCE ItLsTorchburned(C_Item)
 {
-	name 				=	"Fackel";
+	name 				=	"flary";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_TORCH|ITEM_MULTI;
@@ -62,7 +62,7 @@ INSTANCE ItLsTorchburned(C_Item)
 
 	visual 				=	"ItLs_Torchburned_01.3ds";
 	material 			=	MAT_WOOD;
-	TEXT[3]				=   "Eine ausgebrannte Fackel";
+	TEXT[3]				=   "Palona latarka";
 	description			= 	name;
 };
 // *****************
@@ -71,7 +71,7 @@ INSTANCE ItLsTorchburned(C_Item)
 
 INSTANCE ItLsTorchFirespit(C_Item)
 {
-	name 				=	"Fackel";
+	name 				=	"flary";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_TORCH;

@@ -1,7 +1,7 @@
 INSTANCE Mod_7280_OUT_Buerger_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bürger";
+	name 		= "mieszczanie";
 	guild 		= GIL_OUT;
 	id 			= 7280;
 	voice 		= 8;

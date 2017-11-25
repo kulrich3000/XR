@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Fester_Hi (C_INFO)
 	information	= Info_Mod_Fester_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo.";
+	description	= "Witaj.";
 };
 
 FUNC INT Info_Mod_Fester_Hi_Condition()
@@ -19,29 +19,29 @@ FUNC INT Info_Mod_Fester_Hi_Condition()
 
 FUNC VOID Info_Mod_Fester_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_Hi_15_00"); //Hallo.
-	AI_Output(self, hero, "Info_Mod_Fester_Hi_31_01"); //Hey, du bist doch neu im Lager. Du willst doch bestimmt schnell aufsteigen und es bei uns zu was bringen.
-	AI_Output(hero, self, "Info_Mod_Fester_Hi_15_02"); //Sicher, warum nicht.
-	AI_Output(self, hero, "Info_Mod_Fester_Hi_31_03"); //Sehr gut. Dann müsstest du nur mich und zwei andere Jungs auf die Jagd begleiten, paar Molerat und Scavenger erlegen, gar nicht schwer. Was sagst du?
+	AI_Output(hero, self, "Info_Mod_Fester_Hi_15_00"); //Witaj.
+	AI_Output(self, hero, "Info_Mod_Fester_Hi_31_01"); //Hej, jestes nowy w obozie. Chcesz szybko podnosic sie do góry i robic z nami róznice.
+	AI_Output(hero, self, "Info_Mod_Fester_Hi_15_02"); //Jasne, dlaczego nie.
+	AI_Output(self, hero, "Info_Mod_Fester_Hi_31_03"); //Bardzo dobry. Wtedy po prostu musialbys towarzyszyc mi i dwóm innym chlopcom na polowaniu, zabic troche Molerata i Scavengera, wcale nie ciezko. Co mówisz?
 
 	Info_ClearChoices	(Info_Mod_Fester_Hi);
 
-	Info_AddChoice	(Info_Mod_Fester_Hi, "Nö, ist mir zu öde.", Info_Mod_Fester_Hi_B);
-	Info_AddChoice	(Info_Mod_Fester_Hi, "Klar, bin dabei.", Info_Mod_Fester_Hi_A);
+	Info_AddChoice	(Info_Mod_Fester_Hi, "Nah, to dla mnie zbyt nudne.", Info_Mod_Fester_Hi_B);
+	Info_AddChoice	(Info_Mod_Fester_Hi, "Oczywiscie, jestem na tym.", Info_Mod_Fester_Hi_A);
 };
 
 FUNC VOID Info_Mod_Fester_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_Hi_B_15_00"); //Nö, ist mir zu öde.
-	AI_Output(self, hero, "Info_Mod_Fester_Hi_B_31_01"); //So, so, aber bestimmt der Erste, der herumjammert, wenn es nichts im Lager zu essen gibt. Tse, tse, tse, so ein Taugenichts.
+	AI_Output(hero, self, "Info_Mod_Fester_Hi_B_15_00"); //Nah, to dla mnie zbyt nudne.
+	AI_Output(self, hero, "Info_Mod_Fester_Hi_B_31_01"); //Wiec tak, ale o tym zadecyduje pierwszy, który jawi sie, gdy w obozie nie ma nic do jedzenia. Ose, tse, tse, tse, taki dobry dla niczego.
 	
 	Info_ClearChoices	(Info_Mod_Fester_Hi);
 };
 
 FUNC VOID Info_Mod_Fester_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_Hi_A_15_00"); //Klar, bin dabei.
-	AI_Output(self, hero, "Info_Mod_Fester_Hi_A_31_01"); //Fantastisch. Engardo und Nodrak sollten eigentlich schon losgelaufen sein und vor dem Lager auf uns warten. Los geht’s.
+	AI_Output(hero, self, "Info_Mod_Fester_Hi_A_15_00"); //Oczywiscie, jestem na tym.
+	AI_Output(self, hero, "Info_Mod_Fester_Hi_A_31_01"); //Fantastyczne. Engardo i Nodrak mieli juz zaczac biegac i czekac na nas przed obozem. Idzmy tu idzmy.
 	
 	Info_ClearChoices	(Info_Mod_Fester_Hi);
 
@@ -56,7 +56,7 @@ FUNC VOID Info_Mod_Fester_Hi_A()
 
 	Log_CreateTopic	(TOPIC_MOD_SLD_FESTER, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SLD_FESTER, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Ich laufe jetzt mit Fester vor das Lager, um dort mit ihm, Engardo und Nodrak jagen zu gehen.");
+	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Biegalem teraz z Festerem do obozu, aby pojechac z nim na polowania, Engardo i Nodrak.");
 };
 
 INSTANCE Info_Mod_Fester_VorLager (C_INFO)
@@ -81,7 +81,7 @@ FUNC INT Info_Mod_Fester_VorLager_Condition()
 
 FUNC VOID Info_Mod_Fester_VorLager_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fester_VorLager_31_00"); //Auf geht’s.
+	AI_Output(self, hero, "Info_Mod_Fester_VorLager_31_00"); //Chodzcie dalej, odejdzmy.
 
 	AI_StopProcessInfos	(self);
 
@@ -115,17 +115,17 @@ FUNC INT Info_Mod_Fester_AtSmallCave_Condition()
 
 FUNC VOID Info_Mod_Fester_AtSmallCave_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_00"); //Ahh, hier ist ein gutes Plätzchen.
-	AI_Output(hero, self, "Info_Mod_Fester_AtSmallCave_15_01"); //Hä, wollen wir uns hier auf die Lauer legen?
-	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_02"); //Ähh, ja, so ähnlich.
+	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_00"); //Ahh, tutaj jest dobre miejsce.
+	AI_Output(hero, self, "Info_Mod_Fester_AtSmallCave_15_01"); //Huh, czy bedziemy tu czekac?
+	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_02"); //Uh, tak, tak, cos takiego.
 
 	CreateInvItems	(self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_03"); //Ahh, herrlich.
-	AI_Output(hero, self, "Info_Mod_Fester_AtSmallCave_15_04"); //Ähh, was ist nun ...
-	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_05"); //Ach so, die Jagd. Tja, siehst du die wohlgenährten Scavenger und Molerats dort hinten? Erlege sie und bringe mir jeweils zehn Scavenger- und Moleratkeulen. Noch Fragen?
+	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_03"); //Ahh, piekny.
+	AI_Output(hero, self, "Info_Mod_Fester_AtSmallCave_15_04"); //A co jest teraz....?
+	AI_Output(self, hero, "Info_Mod_Fester_AtSmallCave_31_05"); //Och, polowanie. Cóz, widzisz tam te dobrze odzywione padlinozercy i Moleraty? Poluj na nich i przyprowadz mnie po dziesiec padlinozerców i dziesiec Moleratkeulen kazdy. Jakies pytania?
 
 	AI_StopProcessInfos	(self);
 
@@ -133,7 +133,7 @@ FUNC VOID Info_Mod_Fester_AtSmallCave_Info()
 	B_StartOtherRoutine	(Mod_904_SLD_Engardo_MT, "SMOKEPAUSE");
 	B_StartOtherRoutine	(Mod_1275_SLD_Nodrak_MT, "SMOKEPAUSE");
 
-	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Na toll. Während sich die drei bekiffen, darf ich die wohlgenährten Scavenger und Molerats erlegen und je zehn Fleischkeulen der Viecher zu Fester bringen.");
+	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Och, wielki. Podczas gdy trzy z nich sa ukamienowywane, wolno mi zabic dobrze odzywionych padlinozerców i moleratów i przywiezc po dziesiec platków miesa do Fester.");
 
 	Wld_InsertNpc	(Scavenger_Fett_01, "SPAWN_OW_WARAN_NC_03");
 	Wld_InsertNpc	(Scavenger_Fett_02, "SPAWN_OW_WARAN_NC_03");
@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Fester_HabFleisch (C_INFO)
 	information	= Info_Mod_Fester_HabFleisch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier sind je zehn Scavenger- und Moleratkeulen.";
+	description	= "Kazdy z nich ma dziesiec kijów padlinozercy i dziesiec kijów molowych.";
 };
 
 FUNC INT Info_Mod_Fester_HabFleisch_Condition()
@@ -180,14 +180,14 @@ FUNC INT Info_Mod_Fester_HabFleisch_Condition()
 
 FUNC VOID Info_Mod_Fester_HabFleisch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_HabFleisch_15_00"); //Hier sind je zehn Scavenger- und Moleratkeulen.
+	AI_Output(hero, self, "Info_Mod_Fester_HabFleisch_15_00"); //Kazdy z nich ma dziesiec kijów padlinozercy i dziesiec kijów molowych.
 
-	B_ShowGivenThings	("20 rohes Fleisch gegeben");
+	B_ShowGivenThings	("20 surowego miesa, które");
 
 	Npc_RemoveInvItems	(hero, ItFo_MuttonRaw, 20);
 
-	AI_Output(self, hero, "Info_Mod_Fester_HabFleisch_31_01"); //(benommen) Wäs? Ach so, das Fleisch. Gut gemacht, Jungchen.
-	AI_Output(self, hero, "Info_Mod_Fester_HabFleisch_31_02"); //Nun gehen wir noch ein Stückchen weiter, um etwas anderes in einer Höhle zu erlegen.
+	AI_Output(self, hero, "Info_Mod_Fester_HabFleisch_31_01"); //Pranie? Oh, mieso. Dobrze zrobione, dzieciak.
+	AI_Output(self, hero, "Info_Mod_Fester_HabFleisch_31_02"); //Teraz idziemy nieco dalej, zeby polowac w jaskini cos innego.
 
 	AI_StopProcessInfos	(self);
 
@@ -219,10 +219,10 @@ FUNC INT Info_Mod_Fester_AtGreatCave_Condition()
 
 FUNC VOID Info_Mod_Fester_AtGreatCave_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_AtGreatCave_15_00"); //Ähh, und was wollen wir hier erlegen?
-	AI_Output(self, hero, "Info_Mod_Fester_AtGreatCave_31_01"); //(bekifft) Habe ich erlegen gesagt? Ich meinte selbstverständlich erledigen.
-	AI_Output(self, hero, "Info_Mod_Fester_AtGreatCave_31_02"); //Ähh, aber einen Augenblick mal. Da haben sich einige riesenfette Orks in der Höhle eingenistet. Geh rein und erledige sie.
-	AI_Output(hero, self, "Info_Mod_Fester_AtGreatCave_15_03"); //Ähh, sieht mir mehr nach einigen jungen Goblins aus ... ach, egal.
+	AI_Output(hero, self, "Info_Mod_Fester_AtGreatCave_15_00"); //Uh, a co próbujemy tu zabic?
+	AI_Output(self, hero, "Info_Mod_Fester_AtGreatCave_31_01"); //Czy powiedzialem strzal? Chodzilo mi o to.
+	AI_Output(self, hero, "Info_Mod_Fester_AtGreatCave_31_02"); //Uh, ale tylko minuta. W jaskini osiedlily sie olbrzymie orki. Wejdz do srodka i zadbaj o nia.
+	AI_Output(hero, self, "Info_Mod_Fester_AtGreatCave_15_03"); //Uh, wyglada bardziej jak kilka mlodych goblinów do mnie.... oh, nigdy nie przeszkadza.
 	
 	AI_StopProcessInfos	(self);
 
@@ -230,7 +230,7 @@ FUNC VOID Info_Mod_Fester_AtGreatCave_Info()
 	B_StartOtherRoutine	(Mod_904_SLD_Engardo_MT, "WAITING");
 	B_StartOtherRoutine	(Mod_1275_SLD_Nodrak_MT, "WAITING");
 
-	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Jetzt darf ich die drei jungen Goblins in der Höhle erledigen.");
+	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Teraz zabic trzech mlodych goblinów w jaskini.");
 
 	Wld_InsertNpc	(Gobbo_Fester_01, "LOCATION_23_CAVE_1_02");
 	Wld_InsertNpc	(Gobbo_Fester_02, "LOCATION_23_CAVE_1_02");
@@ -260,7 +260,7 @@ FUNC INT Info_Mod_Fester_GobbosTot_Condition()
 
 FUNC VOID Info_Mod_Fester_GobbosTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fester_GobbosTot_31_00"); //Seeehr gut, jetzt können wir etwas Sumpfkraut herstell ... ähh, uns in der Alchemie üben. Warte ne Minute, bis wie fertig sind.
+	AI_Output(self, hero, "Info_Mod_Fester_GobbosTot_31_00"); //Bardzo dobrze, teraz mozemy teraz zrobic troche strzebli.... uh, cwiczymy alchemie. Czekaj minute, az sie skonczy.
 
 	AI_StopProcessInfos	(self);
 
@@ -268,7 +268,7 @@ FUNC VOID Info_Mod_Fester_GobbosTot_Info()
 	B_StartOtherRoutine	(Mod_904_SLD_Engardo_MT, "POTIONPAUSE");
 	B_StartOtherRoutine	(Mod_1275_SLD_Nodrak_MT, "POTIONPAUSE");
 
-	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Jetzt darf ich auch noch auf die drei warten, bis sie neue Sumfkrautstängel hergestellt haben.");
+	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Teraz moge czekac na trzy z nich, dopóki nie zrobia nowych lodyg bagiennych.");
 };
 
 INSTANCE Info_Mod_Fester_PotionReady (C_INFO)
@@ -291,7 +291,7 @@ FUNC INT Info_Mod_Fester_PotionReady_Condition()
 
 FUNC VOID Info_Mod_Fester_PotionReady_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fester_PotionReady_31_00"); //So, jetzt kann’s zurückgehen. Geh vor, wie folgen dir.
+	AI_Output(self, hero, "Info_Mod_Fester_PotionReady_31_00"); //Tam mozna wrócic. Idz dalej, podazamy za Toba.
 
 	AI_StopProcessInfos	(self);
 
@@ -301,7 +301,7 @@ FUNC VOID Info_Mod_Fester_PotionReady_Info()
 
 	Wld_InsertNpc	(Gobbo_Fester_04, "OW_PATH_161");
 
-	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Grmpf, zuletzt darf ich noch Geleitschutz für die zugedröhnten Jungs zum Lager spielen.");
+	B_LogEntry	(TOPIC_MOD_SLD_FESTER, "Grmpf, ostatnia, ale nie mniej wazna sprawa jest to, ze pozwolono mi grac w obozie na eskorte dla pijanych chlopców.");
 
 	Wld_InsertItem	(ItWr_Weisenchronik,	"FP_ITEM_FESTER_WEISENCHRONIK");
 };
@@ -327,10 +327,10 @@ FUNC INT Info_Mod_Fester_BackAtCamp_Condition()
 
 FUNC VOID Info_Mod_Fester_BackAtCamp_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fester_BackAtCamp_31_00"); //Hey, du hast deine Sache echt gut gemacht ... für einen Neuling. Werde Lee und Sylvio davon berichten, dass du dich einigermaßen gut angestellt hast.
-	AI_Output(self, hero, "Info_Mod_Fester_BackAtCamp_31_01"); //Hier hast du etwas Sumpfkraut und Erz zur Belohnung.
+	AI_Output(self, hero, "Info_Mod_Fester_BackAtCamp_31_00"); //Hej, zrobiles naprawde dobra robote.... na debiutant. Czy Lee i Sylvio poinformuja Cie, ze zrobiles to dosc dobrze.
+	AI_Output(self, hero, "Info_Mod_Fester_BackAtCamp_31_01"); //Oto troche chwastów i rudy za Twoja nagrode.
 
-	B_ShowGivenThings	("4 Stängel Sumpfkraut und 3 Erz erhalten");
+	B_ShowGivenThings	("4 lodygi kapusty bagiennej i 3 rudy konserwowane");
 
 	CreateInvItems	(hero, ItMi_Joint, 4);
 	CreateInvItems	(hero, ItMi_Nugget, 3);
@@ -358,7 +358,7 @@ INSTANCE Info_Mod_Fester_KesselProblem (C_INFO)
 	information	= Info_Mod_Fester_KesselProblem_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, Fester. Heute Abend wieder einen Spaziergang?";
+	description	= "Witaj, Fester. Jeszcze dzis wieczorem?";
 };
 
 FUNC INT Info_Mod_Fester_KesselProblem_Condition()
@@ -371,32 +371,32 @@ FUNC INT Info_Mod_Fester_KesselProblem_Condition()
 
 FUNC VOID Info_Mod_Fester_KesselProblem_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_00"); //Hallo, Fester. Heute Abend wieder einen Spaziergang?
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_01"); //(beunruhigt) Was ...?! Wer bist du denn und was willst du?
-	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_02"); //Die Frage ist, was du mir zu sagen hast ... über deine kleinen Geschäfte.
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_03"); //(erschrocken) Was ...?! Verdammt! Hey, Mann, mach mir bloß keinen Ärger.
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_04"); //Ich habe bloß ein paar Sachen gegen Erz getauscht.
-	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_05"); //Paar Sachen?
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_06"); //Ja, gut, etwas Sumpfkraut. Mann, was ist schon dabei.
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_07"); //Das meiste habe ich ja mit anderem Krempel verdient, zum Beispiel diesem Schattenläuferfell, das er haben wollte.
+	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_00"); //Witaj, Fester. Jeszcze dzis wieczorem?
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_01"); //Co....? Kim jestes i czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_02"); //Pytanie brzmi: co mi Pan powie, co mi powie.... o malych firmach.
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_03"); //Co....? Damn to! Hej, czlowiek, nie daj mi zadnych klopotów.
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_04"); //Po prostu sprzedalem kilka rzeczy na rude.
+	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_05"); //Pary rzeczy?
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_06"); //No tak, cóz, brudny. Czlowiek, co to jest wielki problem?
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_07"); //Zaslugiwalem na wiekszosc z innymi rzeczami, na przyklad na futro biegacza cieni.
 
 	AI_TurnAway	(hero, self);
 
-	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_08"); //(zu sich selbst) Was, das Schattenläuferfell? Dann ...
+	AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_08"); //Co, cien biegacza? Wtedy.....
 
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_09"); //Hey, komm. Erzähl das mit dem Sumpfkraut bloß nicht herum.
-	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_10"); //Wenn du dicht hältst, wirst du es auch nicht bereuen.
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_09"); //Hej, przyjdz dalej. Nie mówcie o tym, co bagniste.
+	AI_Output(self, hero, "Info_Mod_Fester_KesselProblem_31_10"); //Jesli trzymasz usta zamkniete, nie bedziesz tego zalowal.
 
 	if (Npc_HasItems(hero, ItWr_KesselProblem) == 0)
 	{
 		AI_TurnAway	(hero, self);
 
-		AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_11"); //Ich sollte Bruce mal zur Rede stellen.
+		AI_Output(hero, self, "Info_Mod_Fester_KesselProblem_15_11"); //Powinienem skonfrontowac sie z Bruce' em.
 	};
 
-	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce hat gar keinen Schattenläufer erschlagen. Er hat das Fell gegen Erz erstanden.");
+	B_LogEntry	(TOPIC_MOD_NL_TALKESSELPROB, "Bruce nie zabil zadnych biegaczy cieni. Kupil futro za rude.");
 };
 
 INSTANCE Info_Mod_Fester_KesselProblem2 (C_INFO)
@@ -421,28 +421,28 @@ FUNC VOID Info_Mod_Fester_KesselProblem2_Info()
 {
 	if (Mod_NL_TalkesselProblem == 5)
 	{
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_00"); //Puh, vielen Dank, dass du Lee nichts von dem Kraut erzählt hast.
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_01"); //Da bin ich gerade noch mit einem blauen Auge davongekommen.
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_02"); //Naja, in nächster Zeit muss ich etwas vorsichtiger sein. Daher ... hier, nimm das Kraut.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_00"); //Phew, dziekuje ci tak wiele za to, ze nie mówie Lee o ziolach.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_01"); //Ledwo ucieklam czarnym okiem.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_02"); //Cóz, teraz musze byc nieco bardziej ostrozny. Stad..... Tutaj wez ziolo.
 
-		B_ShowGivenThings	("2 schwarzer Weise, 2 grüne Novizen, 1 Traumruf und 5 Stängel erhalten");
+		B_ShowGivenThings	("2 czarna droga, 2 zielone nowicjusze, 1 znak snu i 5 lodyg.");
 
 		CreateInvItems	(hero, ItMi_Joint, 5);
 		CreateInvItems	(hero, ItMi_Addon_Joint_01, 2);
 		CreateInvItems	(hero, ItMi_Addon_Joint_02, 2);
 		CreateInvItems	(hero, ItMi_Traumruf, 1);
 
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_03"); //Und ... ähh ... noch ein kleines Rezept.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_03"); //I.... er er..... kolejny maly przepis.
 
 		B_GiveInvItems	(self, hero, ItWr_Weisenchronik, 1);
 
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_04"); //Am besten vor dem Schlafen ... dann wirst du eine superentspannte Nacht haben und am nächsten Morgen gut drauf sein.
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_05"); //Viel Spaß damit. Aber nicht übertreiben, hähä.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_04"); //Preferowane przed snem..... wtedy masz super zrelaksowana noc, a nastepnego ranka rano bedziesz w dobrej formie.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_05"); //Zabawa z tym. Ale nie przesadzajcie, huh?
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_06"); //(verärgert) Super, wegen dir darf ich jetzt die nächsten Wochen von früh bis spät schuften.
-		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_07"); //Hast du wirklich großartig gemacht ... Mistkerl!
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_06"); //Wspaniale, dzieki Tobie moge pracowac przez kilka tygodni od rana do nocy.
+		AI_Output(self, hero, "Info_Mod_Fester_KesselProblem2_31_07"); //Czy naprawde wykonywales swietna prace..... Syn suki!
 	};
 };
 

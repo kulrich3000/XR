@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Dichter_Hi (C_INFO)
 	information	= Info_Mod_Dichter_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was machst du hier?";
+	description	= "Co Pan tutaj robi?";
 };
 
 FUNC INT Info_Mod_Dichter_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Dichter_Hi_Info()
 {
 	B_Say	(hero, self, "$WASMACHSTDUHIER");
 
-	AI_Output(self, hero, "Info_Mod_Dichter_Hi_34_01"); //(nervös) Tja, ich ... äh, schreibe. Gedichte und so weiter.
+	AI_Output(self, hero, "Info_Mod_Dichter_Hi_34_01"); //Cóz, nerwowy, l-- uh, napisz. Wiersze i tak dalej.
 };
 
 INSTANCE Info_Mod_Dichter_Unzufrieden (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Dichter_Unzufrieden (C_INFO)
 	information	= Info_Mod_Dichter_Unzufrieden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du klingst nicht sehr zufrieden.";
+	description	= "Nie brzmi to zbyt dobrze.";
 };
 
 FUNC INT Info_Mod_Dichter_Unzufrieden_Condition()
@@ -42,31 +42,31 @@ FUNC INT Info_Mod_Dichter_Unzufrieden_Condition()
 
 FUNC VOID Info_Mod_Dichter_Unzufrieden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_00"); //Du klingst nicht sehr zufrieden.
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_01"); //Sollte ich das etwa? Kann ich stolz auf mich sein?
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_02"); //(neidisch) Leute wie du stehen immer im Mittelpunkt ...
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_03"); //Nicht immer ganz freiwillig ...
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_04"); //Und ich sitze in einer finsteren Bude und schreibe von Dingen, die ich noch nie gesehen habe!
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_05"); //Von Tätigkeiten, die ich noch nie ausgeübt habe!
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_06"); //Wie soll ich mich denn da beweisen?
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_07"); //Wem willst du dich beweisen?
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_08"); //Mir selbst natürlich.
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_09"); //Wirklich?
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_10"); //(herumdrucksend) Naja, es gibt da noch Margarethe ...
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_11"); //Dachte ich's mir doch.
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_12"); //Was soll ich nur tun?
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_00"); //Nie brzmi to zbyt dobrze.
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_01"); //Czy mam? Czy moge byc dumny z siebie?
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_02"); //Ludzie tacy jak ty sa zawsze w centrum uwagi....
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_03"); //Nie zawsze calkowicie dobrowolne.....
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_04"); //Siedze w ciemnej dendzie, piszac o rzeczach, których nigdy wczesniej nie widzialem!
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_05"); //Z zajec, których nigdy wczesniej nie robilem!
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_06"); //Jak mam sie udowodnic?
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_07"); //Do kogo próbujesz sie udowodnic?
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_08"); //Ja oczywiscie.
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_09"); //Naprawde?
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_10"); //Cóz, jest Malgaretka....
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_15_11"); //To wlasnie pomyslalem.
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_34_12"); //Co ja robie?
 
 	Info_ClearChoices	(Info_Mod_Dichter_Unzufrieden);
 
-	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Vergiss sie.", Info_Mod_Dichter_Unzufrieden_C);
-	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Zieh aus und lern die Welt kennen.", Info_Mod_Dichter_Unzufrieden_B);
-	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Zeig ihr deine Gedichte.", Info_Mod_Dichter_Unzufrieden_A);
+	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Zapomnij o niej.", Info_Mod_Dichter_Unzufrieden_C);
+	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Wyrusz i poznaj swiat.", Info_Mod_Dichter_Unzufrieden_B);
+	Info_AddChoice	(Info_Mod_Dichter_Unzufrieden, "Pokaz jej swoje wiersze.", Info_Mod_Dichter_Unzufrieden_A);
 };
 
 FUNC VOID Info_Mod_Dichter_Unzufrieden_C()
 {
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_C_15_00"); //Vergiss sie.
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_C_34_01"); //(deprimiert) Habe ich mir gedacht ...
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_C_15_00"); //Zapomnij o niej.
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_C_34_01"); //(wycisniety) Pomyslalem, ze tak....
 
 	Mod_REL_Dichter = 3;
 
@@ -75,8 +75,8 @@ FUNC VOID Info_Mod_Dichter_Unzufrieden_C()
 
 FUNC VOID Info_Mod_Dichter_Unzufrieden_B()
 {
-	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_B_15_00"); //Zieh aus und lern die Welt kennen.
-	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_B_34_01"); //Einfach nicht weiter nachdenken, ja? Gut, ich mach's.
+	AI_Output(hero, self, "Info_Mod_Dichter_Unzufrieden_B_15_00"); //Wyrusz i poznaj swiat.
+	AI_Output(self, hero, "Info_Mod_Dichter_Unzufrieden_B_34_01"); //Po prostu nie myslec dalej, dobrze? Wlasciwie to zrobie.
 
 	Info_ClearChoices	(Info_Mod_Dichter_Unzufrieden);
 
@@ -117,7 +117,7 @@ FUNC INT Info_Mod_Dichter_AtMargarethe_Condition()
 
 FUNC VOID Info_Mod_Dichter_AtMargarethe_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Dichter_AtMargarethe_34_00"); //Dein Tipp hat mir geholfen! Vielen Dank!
+	AI_Output(self, hero, "Info_Mod_Dichter_AtMargarethe_34_00"); //Twoja wskazówka pomogla mi! Bardzo dziekuje!
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 };
@@ -130,7 +130,7 @@ INSTANCE Info_Mod_Dichter_Freudenspender (C_INFO)
 	information	= Info_Mod_Dichter_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Willst du Freudenspender für mehr Inspiration?";
+	description 	= "Chcesz dac wiecej inspiracji?";
 };                       
 
 FUNC INT Info_Mod_Dichter_Freudenspender_Condition()
@@ -145,10 +145,10 @@ FUNC INT Info_Mod_Dichter_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Dichter_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Dichter_Freudenspender_15_00"); //Willst du Freudenspender für mehr Inspiration?
-	AI_Output(self, hero, "Info_Mod_Dichter_Freudenspender_34_01"); //Meinst du, das hilft?
-	AI_Output(hero, self, "Info_Mod_Dichter_Freudenspender_15_02"); //Bestimmt.
-	AI_Output(self, hero, "Info_Mod_Dichter_Freudenspender_34_03"); //Dann nehm ich was. Danke.
+	AI_Output(hero, self, "Info_Mod_Dichter_Freudenspender_15_00"); //Chcesz dac wiecej inspiracji?
+	AI_Output(self, hero, "Info_Mod_Dichter_Freudenspender_34_01"); //Myslisz, ze to Ci sie pomoze?
+	AI_Output(hero, self, "Info_Mod_Dichter_Freudenspender_15_02"); //Oczywiscie.
+	AI_Output(self, hero, "Info_Mod_Dichter_Freudenspender_34_03"); //Wtedy bede mial troche. Dzieki.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 

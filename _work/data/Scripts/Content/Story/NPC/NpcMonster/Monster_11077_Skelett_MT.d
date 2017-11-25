@@ -1,7 +1,7 @@
 INSTANCE Monster_11077_Skelett_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skelett - Arbeiter";	
+	name 		= "Szkielet - Pracownik";	
 	guild							=	GIL_STRF;
 	level							=	20;
 	flags = 2;

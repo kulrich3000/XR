@@ -1,7 +1,7 @@
 instance Mod_7362_OUT_Buff_TUG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Buff"; 
+	name 		= "zderzak"; 
 	guild 		= GIL_OUT;
 	id 			= 7362;
 	voice 		= 6;

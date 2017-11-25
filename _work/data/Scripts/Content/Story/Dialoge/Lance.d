@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Lance_Kristall (C_INFO)
 	information	= Info_Mod_Lance_Kristall_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich möchte den Magiern des Wassers (...)";
+	description	= "Chce uczyc magików wody (....). )";
 };
 
 FUNC INT Info_Mod_Lance_Kristall_Condition()
@@ -21,21 +21,21 @@ FUNC INT Info_Mod_Lance_Kristall_Condition()
 
 FUNC VOID Info_Mod_Lance_Kristall_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_Kristall_15_00"); //Ich möchte den Magiern des Wassers diesen magischen Kristall wie auch dieses Schreiben überbringen.
+	AI_Output(hero, self, "Info_Mod_Lance_Kristall_15_00"); //Chcialbym wniesc ten magiczny krysztal jak i ten list do magów wody.
 
-	B_ShowGivenThings	("Kristall und Brief gegeben");
+	B_ShowGivenThings	("Krysztal i list przekazany");
 
 	Npc_RemoveInvItems	(hero, ItWr_TorlofForSaturas, 1);
 	Npc_RemoveInvItems	(hero, Mod_PaladinKristall, 1);
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_01"); //Acha, magischer Kristall ... Entgelt.
-	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_02"); //(zum Held) Gut, ich werde den Wassermagiern beides übergeben. Komm morgen wieder.
+	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_01"); //Acha, magiczny krysztal.... Oplaty.
+	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_02"); //Wlasciwie oddam obie te rzeczy magikom wody. Wróc jutro.
 
 	Mod_LanceKristall = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Na toll. Jetzt darf ich einen ganzen Tag warten, bis die Wassermagier sich über die Bezahlung geeinigt haben.");
+	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Och, wielki. Teraz moge poczekac caly dzien, az Magicysci Wody zgodza sie na zaplate.");
 
 	B_GivePlayerXP	(100);
 };
@@ -61,15 +61,15 @@ FUNC INT Info_Mod_Lance_KristallEntgelt_Condition()
 
 FUNC VOID Info_Mod_Lance_KristallEntgelt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_00"); //Die Wassermagier waren sehr erfreut über das Artefakt.
-	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_01"); //Sie gaben mir 1000 Goldstücke und dieses Paket voller nützlicher magischer Gegenstände für euch mit. Bring beides am besten gleich zu Torlof.
+	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_00"); //Magowie wody byli bardzo zadowoleni z artefaktu.
+	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_01"); //Dali mi 1000 sztuk zlota i ten zestaw przydatnych magicznych przedmiotów. Przejdzmy teraz do Torlof.
 
-	B_ShowGivenThings	("1000 Gold und Paket erhalten");
+	B_ShowGivenThings	("1000 Otrzymane zloto i paczka");
 
 	CreateInvItems	(hero, ItMi_Gold, 1000);
 	CreateInvItems	(hero, ItMi_MagicPaket, 1);
 
-	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Ich habe die Entlohnung der Wassermagier und sollte sie nun zu Torlof bringen.");
+	B_LogEntry	(TOPIC_MOD_NL_KRISTALL, "Mam zaplate magów wody i powinienem ich zabrac do Torlof.");
 
 	B_GivePlayerXP	(100);
 };
@@ -82,7 +82,7 @@ INSTANCE Info_Mod_Lance_Soeldner (C_INFO)
 	information	= Info_Mod_Lance_Soeldner_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich bin Söldner.";
+	description	= "Jestem najemnikiem.";
 };
 
 FUNC INT Info_Mod_Lance_Soeldner_Condition()
@@ -96,7 +96,7 @@ FUNC INT Info_Mod_Lance_Soeldner_Condition()
 
 FUNC VOID Info_Mod_Lance_Soeldner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_Soeldner_15_00"); //Ich bin Söldner.
+	AI_Output(hero, self, "Info_Mod_Lance_Soeldner_15_00"); //Jestem najemnikiem.
 
 	var C_ITEM SLDRuessi;
 	SLDRuessi = Npc_GetEquippedArmor(hero);
@@ -104,7 +104,7 @@ FUNC VOID Info_Mod_Lance_Soeldner_Info()
 	if (Hlp_IsItem(SLDRuessi, ItAr_SLD_L) == TRUE)
 	|| (Hlp_IsItem(SLDRuessi, ItAr_SLD_M) == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_01"); //Die Söldner und Wassermagier haben damals im Minental zusammengearbeitet und einige der Wasserkrieger sind ehemalige Söldner. In Ordnung, du kannst rein.
+		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_01"); //najemnicy i magowie wody pracowali razem w Dolinie Kopalni, a niektórzy z wojowników wodnych sa bylymi najemnikami. Wszystko w porzadku, mozna wejsc.
 
 		Mod_PortalLance	= TRUE;
 
@@ -114,7 +114,7 @@ FUNC VOID Info_Mod_Lance_Soeldner_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_02"); //Ach ja, und woran soll man das bitte erkennen?
+		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_02"); //Oh, a co tam mi powiedziec?
 	};
 };
 
@@ -126,7 +126,7 @@ INSTANCE Info_Mod_Lance_RDW (C_INFO)
 	information	= Info_Mod_Lance_RDW_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich gehöre zu euch.";
+	description	= "Jestem z wami.";
 };
 
 FUNC INT Info_Mod_Lance_RDW_Condition()
@@ -139,8 +139,8 @@ FUNC INT Info_Mod_Lance_RDW_Condition()
 
 FUNC VOID Info_Mod_Lance_RDW_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_RDW_15_00"); //Ich gehöre zu euch.
-	AI_Output(self, hero, "Info_Mod_Lance_RDW_03_01"); //Ein neuer. Na dann geh mal rein.
+	AI_Output(hero, self, "Info_Mod_Lance_RDW_15_00"); //Jestem z wami.
+	AI_Output(self, hero, "Info_Mod_Lance_RDW_03_01"); //Nowy. Cóz, wlaczaj sie.
 
 	Mod_PortalLance = TRUE;
 
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Lance_Brief (C_INFO)
 	information	= Info_Mod_Lance_Brief_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich hab einen Brief für Saturas.";
+	description	= "Mam list do Satur.";
 };
 
 FUNC INT Info_Mod_Lance_Brief_Condition()
@@ -173,26 +173,26 @@ FUNC INT Info_Mod_Lance_Brief_Condition()
 
 FUNC VOID Info_Mod_Lance_Brief_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_Brief_15_00"); //Ich hab hier einen Brief für Saturas.
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_03_01"); //Zeig ihn mir mal.
+	AI_Output(hero, self, "Info_Mod_Lance_Brief_15_00"); //Mam tutaj list do Satur.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_03_01"); //Pozwole sobie to zobaczyc.
 
 	Info_ClearChoices	(Info_Mod_Lance_Brief);
 
-	Info_AddChoice	(Info_Mod_Lance_Brief, "Nein, der Brief ist nur für Saturas.", Info_Mod_Lance_Brief_Nein);
-	Info_AddChoice	(Info_Mod_Lance_Brief, "Hier ist er.", Info_Mod_Lance_Brief_Ja);
+	Info_AddChoice	(Info_Mod_Lance_Brief, "Nie, list jest tylko dla Saturas.", Info_Mod_Lance_Brief_Nein);
+	Info_AddChoice	(Info_Mod_Lance_Brief, "Tutaj jest, Panie Panu.", Info_Mod_Lance_Brief_Ja);
 };
 
 FUNC VOID Info_Mod_Lance_Brief_Nein()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_Brief_Nein_15_00"); //Nein, der Brief ist nur für Saturas.
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Nein_03_01"); //Wenn ich nicht weiß worum es geht darf ich dich nicht reinlassen.
+	AI_Output(hero, self, "Info_Mod_Lance_Brief_Nein_15_00"); //Nie, list jest tylko dla Saturas.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Nein_03_01"); //Jesli nie wiem o co chodzi, nie moge Cie wpuscic.
 
 	Info_ClearChoices	(Info_Mod_Lance_Brief);
 };
 
 FUNC VOID Info_Mod_Lance_Brief_Ja()
 {
-	AI_Output(hero, self, "Info_Mod_Lance_Brief_Ja_15_00"); //Hier ist er.
+	AI_Output(hero, self, "Info_Mod_Lance_Brief_Ja_15_00"); //Tutaj jest, Panie Panu.
 	
 	if (Npc_HasItems(hero, XardasLetterForSaturas) == 1)
 	{
@@ -209,11 +209,11 @@ FUNC VOID Info_Mod_Lance_Brief_Ja()
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_01"); //Sieht wichtig aus. Hier ist der Brief wieder.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_01"); //Wyglada na wazny. Oto znów litera.
 
 	B_GiveInvItems	(self, hero, XardasLetterForSaturas_Geoeffnet, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_02"); //Du kannst durch gehen.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_02"); //Mozesz przejsc.
 
 	Mod_PortalLance	= TRUE;
 	Mod_LanceXardasBrief = TRUE;
@@ -246,14 +246,14 @@ FUNC INT Info_Mod_Lance_Erol_Condition()
 
 FUNC VOID Info_Mod_Lance_Erol_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_00"); //Halt! Ihr könnt hier nicht rein.
-	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_01"); //Nicht schon wieder! Ich darf doch mittlerweile durch, oder?
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_02"); //Du schon, aber der Andere nicht.
-	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_03"); //Ich hab keine Zeit mehr. Und dieser Mann muss mit Cavalorn reden. Lass ihn durch, ich bürge für ihn.
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_04"); //Ich bekomme Probleme mit den Magiern ...
-	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_05"); //Quatsch. Ich bin Saturas engster Vertrauter. Das geht in Ordnung.
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_06"); //Ich vertrau dir mal. Aber wenn ich Ärger bekomme, dann lass dich nicht mehr hier sehen!
-	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_07"); //Ich benutze normal eh die Teleporter ...
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_00"); //Zatrzymaj sie! Nie mozna tu przyjechac.
+	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_01"); //Nie znów! Czy wolno mi przebijac sie, czy nie?
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_02"); //Ty to robisz, ale druga nie.
+	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_03"); //Brakuje mi czasu. I ten czlowiek musi porozmawiac z Cavalorn. Pozwólcie mu przez niego przejsc, porusze sie po niego.
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_04"); //Mam problemy z magami.....
+	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_05"); //Nonsens. Jestem najblizszym powiernikiem Szatana. To wszystko jest w porzadku.
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_06"); //Ufam panstwu raz. Ale jesli popadniem w klopoty, nie pozwólcie, ze zobacze Was tutaj ponownie!
+	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_07"); //Zazwyczaj i tak korzystam z teleporterów.....
 };
 
 const string Lance_Checkpoint	= "NW_TROLLAREA_PORTALTEMPEL_04";	//WP hinter City-Tor vom Spielstart aus!
@@ -287,7 +287,7 @@ func int Info_Mod_Lance_FirstWarn_Condition()
 
 func void Info_Mod_Lance_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lance_FirstWarn_03_00"); //HALT! Du darfst hier nicht rein.
+	AI_Output (self, hero,"Info_Mod_Lance_FirstWarn_03_00"); //HALT! Nie mozna tu przyjechac.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Lance_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -320,7 +320,7 @@ FUNC INT Info_Mod_Lance_SecondWarn_Condition()
 
 func void Info_Mod_Lance_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lance_SecondWarn_03_00"); //Ich sag's dir zum letzten Mal. Einen Schritt weiter und du begibst dich in die Welt des Schmerzes!
+	AI_Output (self, hero,"Info_Mod_Lance_SecondWarn_03_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Lance_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -358,7 +358,7 @@ func void Info_Mod_Lance_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Lance_Attack_03_00"); //Du hast es so gewollt ...
+	AI_Output (self, hero,"Info_Mod_Lance_Attack_03_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

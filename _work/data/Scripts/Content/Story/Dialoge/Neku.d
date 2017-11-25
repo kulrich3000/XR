@@ -15,25 +15,25 @@ FUNC INT Info_Mod_Neku_Hi_Condition()
 
 FUNC VOID Info_Mod_Neku_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_00"); //Du willst im Sumpf die Foki einsetzen?
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_01"); //Ja, warum?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_02"); //Die beiden Fokusplätze sind extrem gefährlich.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_03"); //Der Nördlichere liegt vor einem alten Tempel. Der Südlichere liegt nahe einer Felswand im Herzen des Sumpfes.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_04"); //Vor einem Verfluchten, von Dämonen belagerten, Zombies bewohnten und Geistern besessenen Tempel, nehme ich an?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_05"); //Ne, ein stinknormaler Tempel. Bis auf die Monster, die vor dem Tempel leben.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_06"); //Was für Monster?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_07"); //Keine Ahnung. Ich habe sie nur von der Anhöhe gesehen.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_08"); //Aufrechtgehende Gestalten, Klingen in den Händen und Feuer in den Augen ...
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_09"); //Und was ist in der Mitte des Sumpfes so gefährliches?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_10"); //Das wüsste ich auch gerne.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_11"); //Silhouetten von seltsamen Gestalten tauchen zwischen den Bäumen auf und verschwinden wieder zwischen ihnen ... man könnte glauben, es sind die Bäume selbst, die wandern ...
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_12"); //Na gut, ich werde aufpassen, wenn ich rein gehe.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_13"); //Das wirst du nicht müssen.
-	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_14"); //Warum nicht?
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_15"); //Du wirst nicht reinkommen. Die Monster, die bei dem Tempel leben, haben eine Barrikade und einen Wachtrupp am Eingang des Sumpfes aufgestellt.
-	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_16"); //Die sehen nicht gerade nach einem Empfangskomitee aus. Naja, trotzdem viel Glück!
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_00"); //Chcesz skupic sie na bagnie?
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_01"); //Tak, dlaczego?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_02"); //Te dwa punkty ostrosci sa niezwykle niebezpieczne.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_03"); //Pólnocny znajduje sie przed stara swiatynia. Polozony jest w poblizu skalnej skaly w sercu bagna.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_04"); //Przed przekletym, obleganym demonem, zombie zamieszkalym i spogladajacym na ducha swiatynia, przypuszczam?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_05"); //Nie, normalna swiatynia. Z wyjatkiem potworów, które zyja przed swiatynia.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_06"); //Jakie potwory?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_07"); //Nie wiem o tym. Widzialem je tylko z góry.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_08"); //Proste figury, ostrza w rekach i ogniem w oczach.....
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_09"); //A co jest tak niebezpieczne na srodku bagna?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_10"); //Chcialbym to równiez wiedziec.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_11"); //Pomiedzy drzewami pojawiaja sie sylwetki dziwacznych postaci, które znikaja miedzy nimi..... Mozna by pomyslec, ze to same drzewa migruja......
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_12"); //Dobrze, bede uwazny, jesli wejde.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_13"); //Nie musisz tego robic.
+	AI_Output(hero, self, "Info_Mod_Neku_Hi_15_14"); //Dlaczego nie?
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_15"); //Nie przychodzisz. Potwory zyjace przy swiatyni maja barykade i straznik przy wejsciu na bagno.
+	AI_Output(self, hero, "Info_Mod_Neku_Hi_09_16"); //Nie wygladaja jak komitet powitalny. No cóz, szczescie i tak!
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Der Sumpf ist von einer Barrikade umgeben und der einzige Eingang wird von seltsamen Kriegern bewacht, die auch einen Tempel im Sumpf bei einem Fokusplatz bewachen. Der andere Fokusplatz im Sumpf wird von merkwürdigen Gestalten besiedelt, die wandernden Bäumen ähneln sollen. Mal sehen, wie ich dorthin komme ...");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Bagno otoczone jest barykada, a jedynym wejsciem jest strzezone przez dziwnych wojowników, którzy strzega swiatyni w bagnie w poblizu ogniska. Drugi punkt ogniskowy w bagnie zamieszkuja dziwne stworzenia, które maja przypominac wedrujace drzewa. Zobaczmy, jak do tego dojde....");
 };
 
 INSTANCE Info_Mod_Neku_Giftdrache (C_INFO)
@@ -56,12 +56,12 @@ FUNC INT Info_Mod_Neku_Giftdrache_Condition()
 
 FUNC VOID Info_Mod_Neku_Giftdrache_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_00"); //Hey, warte! Wenn du in den Sumpf gehst würde ich aufpassen.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_01"); //Wenn mich meine Augen nicht getrügt haben, sah ich eine Echse ...
-	AI_Output(hero, self, "Info_Mod_Neku_Giftdrache_15_02"); //(ungeduldig unterbricht) Ja, viele Echsenmenschen im Sumpf, das hatten wir glaube ich schon.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_03"); //(ärgerlich) Hmpf, nein, so lass mich doch ausreden. Also, ich sah eine Echse vom Himmel herabsteigen, die war mindestens fünf Meter hoch.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_04"); //Sie ist irgendwo südlich in der Nähe der Palisaden des Sumpfes gelandet.
-	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_05"); //Seitdem kommen bei ungünstigem Wind von dort immer wieder abscheuliche Dämpfe, die einem fast den Atem rauben.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_00"); //Hej, czekaj! Jesli poszedles na bagno, to bym uwazal.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_01"); //Jesli moje oczy nie oszukaly mnie, zobaczylam jaszczurke.... Wiecej
+	AI_Output(hero, self, "Info_Mod_Neku_Giftdrache_15_02"); //Tak, sadze, ze wiele jaszczurek w bagnie.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_03"); //Nie, nie, skonczcie. Widzialem wiec jaszczurke schodzaca z nieba, co najmniej piec metrów wysokosci.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_04"); //Wyladowala gdzies na poludnie w poblizu palisady bagna.
+	AI_Output(self, hero, "Info_Mod_Neku_Giftdrache_09_05"); //Od tego czasu, w niesprzyjajacych wiatrach, od czasu do czasu przychodza z niego coraz czesciej okropne opary, niemal zapierajace dech w piersiach.
 };
 
 INSTANCE Info_Mod_Neku_Pickpocket (C_INFO)

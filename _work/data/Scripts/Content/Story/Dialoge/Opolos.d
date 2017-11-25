@@ -19,19 +19,19 @@ FUNC INT Info_Mod_Opolos_Daemonisch_Condition()
 
 FUNC VOID Info_Mod_Opolos_Daemonisch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_00"); //Hmm, ja Babo, hat sich wirklich rasch erholt. Nur etwas frische Luft schnappen und er ist wie ausgewechselt.
-	AI_Output(hero, self, "Info_Mod_Opolos_Daemonisch_15_01"); //Frische Luft schnappen? Was meinst du?
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_02"); //Na ja, andere Novizen haben ihn, glaube ich, zu einem kleinen Spaziergang ermuntert. Und danach war er wie neu ...
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_03"); //Ja, ja, die Jungs gehen in letzter Zeit ziemlich oft raus, irgendwelche Erledigungen in der Taverne oder der Stadt.
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_04"); //Ich jedoch muss hier bleiben und die Schafe hüten. Na ja, wenigstens hat mich die Magenerkrankung nicht erwischt.
-	AI_Output(hero, self, "Info_Mod_Opolos_Daemonisch_15_05"); //Magenerkrankung?
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_06"); //Ja, einige Novizen haben seit ein paar Tagen Magenprobleme und können kaum noch was Essen.
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_07"); //Sogar den Klosterwein nach dem Gebet vertragen sie vorläufig nicht.
-	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_08"); //Sind wegen der Sache auch etwas abgemagert und können nur noch leichte Aufgaben erfüllen, wie eben die Botengänge.
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_00"); //Hmm, tak Babo, bardzo szybko sie odzyskal. Wystarczy troche swiezego powietrza, a on sie zmienil.
+	AI_Output(hero, self, "Info_Mod_Opolos_Daemonisch_15_01"); //Uzyskac swieze powietrze? Co myslisz?
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_02"); //Cóz, mysle, ze inni nowicjusze zachecili go do spaceru. I wtedy byl tak dobry jak nowy....
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_03"); //Tak, tak, tak, chlopaki wyszli ostatnio duzo, jakis rodzaj tawerny czy miasta.
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_04"); //Ale musze tu pozostac i zajac sie owcami. No cóz, przynajmniej choroba zoladka nie przylapala mnie.
+	AI_Output(hero, self, "Info_Mod_Opolos_Daemonisch_15_05"); //Choroba zoladka?
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_06"); //Tak, niektórzy nowicjusze maja problemy z zoladkiem juz od kilku dni i nie moga nic zjesc.
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_07"); //Oni nawet nie toleruja na razie wina klasztoru po modlitwie.
+	AI_Output(self, hero, "Info_Mod_Opolos_Daemonisch_31_08"); //Lekko wycienczony z powodu zaistnialej sytuacji i zdolny do wykonywania tylko lekkich zadan, jak np. spraw.
 
 	B_GivePlayerXP	(200);
 
-	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Aha. Ein kurzer abendlicher Spaziergang soll Babo also wieder auf die Beine geholfen haben, zu welchem ihn andere Novizen ermuntert hatten. Derweil hindert eine Magenerkrankung viele Novizen daran den Klosterwein zu trinken. Sie sollen auch merklich an Körperfülle verloren haben, wie Opolos berichtet.");
+	B_LogEntry	(TOPIC_MOD_DAEMONISCH, "Uh-huh. Mówi sie, ze krótki wieczorny spacer pomógl Babo w powrocie na nogi, do czego zachecali go inni nowicjusze. W miedzyczasie choroba zoladka uniemozliwia wielu nowicjuszom spozywanie wina klasztornego. Mówi sie, ze maja zauwazalnie zmniejszona mase ciala, mówi Opolos.");
 };
 
 INSTANCE Info_Mod_Opolos_Drachenangriff (C_INFO)
@@ -42,7 +42,7 @@ INSTANCE Info_Mod_Opolos_Drachenangriff (C_INFO)
 	information	= Info_Mod_Opolos_Drachenangriff_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, was machst du denn hier?";
+	description	= "Witaj, co tu robisz?";
 };
 
 FUNC INT Info_Mod_Opolos_Drachenangriff_Condition()
@@ -56,11 +56,11 @@ FUNC INT Info_Mod_Opolos_Drachenangriff_Condition()
 
 FUNC VOID Info_Mod_Opolos_Drachenangriff_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Opolos_Drachenangriff_15_00"); //Hallo, was machst du denn hier? Solltest du nicht im Kloster deinen Aufgaben nachgehen?
-	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_01"); //(betrunken) Meinen Aufgaben?!
-	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_02"); //Als die Horde Dämonen über unser Kloster hereinbrach, wurden alle Schafe gefressen, die ich doch behüten sollte.
-	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_03"); //Man hat mich nun aus dem Kloster geworfen, da man mir vorwarf, dass ich meiner Aufgabe nicht gewissenhaft genug nachgekommen sei.
-	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_04"); //(kurze Pause) Ach, Innos scheint in diesen finsteren Tagen wirklich fern zu sein.
+	AI_Output(hero, self, "Info_Mod_Opolos_Drachenangriff_15_00"); //Witaj, co tu robisz? Czy nie powinienes odrobic pracy domowej w klasztorze?
+	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_01"); //Moje obowiazki!
+	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_02"); //Kiedy horda demonów przyszla na nasz klasztor, wszystkie owce, które mialem chronic, zostaly zjedzone.
+	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_03"); //Zostalem teraz wyrzucony z klasztoru, poniewaz oskarzono mnie, ze nie wypelnialem tego zadania wystarczajaco sumiennie.
+	AI_Output(self, hero, "Info_Mod_Opolos_Drachenangriff_31_04"); //(krótka pauza) Oh, Innos wydaje sie byc bardzo daleko w te ciemne dni.
 };
 
 INSTANCE Info_Mod_Opolos_Unkraut (C_INFO)
@@ -83,16 +83,16 @@ FUNC INT Info_Mod_Opolos_Unkraut_Condition()
 
 FUNC VOID Info_Mod_Opolos_Unkraut_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_00"); //He, wie ich gesehen habe, hast du das ganze Unkraut um die Weinreben rausgerissen.
-	AI_Output(hero, self, "Info_Mod_Opolos_Unkraut_15_01"); //Ja, wieso?
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_02"); //Nun, weil sie meinen Schafen sehr gut schmecken. Wie du siehst, findest du auch auf der Wiese kein einziges Unkrautpflänzchen.
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_03"); //Zu den Reben konnte ich sie natürlich nicht schicken, da sie diese sonst mit gefressen hätten.
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_04"); //Aber da du sie ja alle rausgerissen hast ...
-	AI_Output(hero, self, "Info_Mod_Opolos_Unkraut_15_05"); //Natürlich, ich brauche sie nicht ... hier hast du sie.
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_00"); //Hej, jak widzialem, wyrwaliscie wszystkie chwasty wokól winorosli.
+	AI_Output(hero, self, "Info_Mod_Opolos_Unkraut_15_01"); //Tak, dlaczego?
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_02"); //Cóz, poniewaz bardzo dobrze smakuja z moja owca. Jak widac, na lace nie ma chwastów.
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_03"); //Oczywiscie nie moglem ich wyslac do winorosli, bo w przeciwnym razie zjedliby je.
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_04"); //Ale od czasu, gdy je wszystkie wyryles....
+	AI_Output(hero, self, "Info_Mod_Opolos_Unkraut_15_05"); //Oczywiscie, nie potrzebuje ich..... tu masz ja.
 
 	B_GiveInvItems	(hero, self, ItPl_Unkraut_Gorax, 8);
 
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_06"); //Super.
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_06"); //Wspanialy.
 
 	AI_GotoNpc	(self, Sheep_Opolos_01);
 
@@ -104,7 +104,7 @@ FUNC VOID Info_Mod_Opolos_Unkraut_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_07"); //Ja, das schmeckt ihnen... Danke dir.
+	AI_Output(self, hero, "Info_Mod_Opolos_Unkraut_31_07"); //Tak, podoba im sie...... Dziekuje, dziekuje.
 
 	B_GivePlayerXP	(80);
 };

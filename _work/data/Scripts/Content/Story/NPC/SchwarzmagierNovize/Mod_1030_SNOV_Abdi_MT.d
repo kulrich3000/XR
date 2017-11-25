@@ -1,7 +1,7 @@
 INSTANCE Mod_1030_SNOV_Abdi_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Abdi";
+	name 		= "ab abied";
 	guild 		= GIL_KDF;
 	id 			= 1030;
 	voice 		= 31;

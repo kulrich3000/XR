@@ -1,7 +1,7 @@
 instance PC_Seele (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Seele";
+	name 		= "dusza";
 	guild		= GIL_NONE;
 	id			= 4023;
 	voice		= 15;

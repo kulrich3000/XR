@@ -6,7 +6,7 @@ instance Info_Mod_HagenWache_Larius (C_INFO)
 	information	= Info_Mod_HagenWache_Larius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich muss dringend zu Larius.";
+	description	= "Musze pilnie zobaczyc Lariusa.";
 };                       
 
 func int Info_Mod_HagenWache_Larius_Condition()
@@ -20,8 +20,8 @@ func int Info_Mod_HagenWache_Larius_Condition()
 
 func void Info_Mod_HagenWache_Larius_Info()
 {
-	AI_Output (hero, self, "Info_Mod_HagenWache_Larius_15_00"); //Ich muss dringend zu Larius.
-	AI_Output (self, hero, "Info_Mod_HagenWache_Larius_09_01"); //Läuft hier im Viertel rum. Aber weiß nicht, wo. Musste gucken.
+	AI_Output (hero, self, "Info_Mod_HagenWache_Larius_15_00"); //Musze pilnie zobaczyc Lariusa.
+	AI_Output (self, hero, "Info_Mod_HagenWache_Larius_09_01"); //Bieganie po okolicy. Ale nie wiem gdzie. Musial wygladac.
 };
 
 const string HagenWache_Checkpoint	= "NW_CITY_CITYHALL_IN";	//WP hinter City-Tor vom Spielstart aus!
@@ -59,11 +59,11 @@ func int Info_Mod_HagenWache_FirstWarn_Condition()
 
 func void Info_Mod_HagenWache_FirstWarn_Info()
 {
-	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_00"); //(lispelt) Hier kein Zugang!
-	AI_Output (hero, self, "Info_Mod_HagenWache_FirstWarn_15_01"); //Was ist das für ein Gebäude?
-	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_02"); //(lispelt) Ist Lord Hagen drinne. Nur Ritter und Paladine dürfen zu ihm.
-	AI_Output (hero, self, "Info_Mod_HagenWache_FirstWarn_15_03"); //Kannst du keine Ausnahme machen?
-	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_04"); //(entschuldigend) Nee, geht nicht. Nur wenn Lord Hagen sagt, kann ich Ausnahme machen.
+	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_00"); //Brak dostepu!
+	AI_Output (hero, self, "Info_Mod_HagenWache_FirstWarn_15_01"); //Jaki jest to rodzaj budynku?
+	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_02"); //Czy Pan Hagen tam jest? Tylko rycerze i paladynowie moga z nim przebywac.
+	AI_Output (hero, self, "Info_Mod_HagenWache_FirstWarn_15_03"); //Czy nie mozesz zrobic wyjatku?
+	AI_Output (self, hero, "Info_Mod_HagenWache_FirstWarn_09_04"); //Nie, nie moge. Tylko jesli Lord Hagen powie, ze moge zrobic wyjatek.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, HagenWache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -96,7 +96,7 @@ FUNC INT Info_Mod_HagenWache_SecondWarn_Condition()
 
 func void Info_Mod_HagenWache_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_HagenWache_SecondWarn_09_00"); //He! Nicht nett! Geh wieder weg!
+	AI_Output (self, hero,"Info_Mod_HagenWache_SecondWarn_09_00"); //Hej! Nie fajny! Udajcie sie ode mnie!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,HagenWache_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -134,7 +134,7 @@ func void Info_Mod_HagenWache_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_HagenWache_Attack_09_00"); //(lispelt) Das darfst du nicht. Ich muss dich jetzt verhauen.
+	AI_Output (self, hero,"Info_Mod_HagenWache_Attack_09_00"); //Nie mozesz tego zrobic. Teraz musze pana pobic.
 
 	AI_StopProcessInfos	(self);	
 

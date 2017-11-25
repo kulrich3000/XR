@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Ian_Hi_Condition()
 
 FUNC VOID Info_Mod_Ian_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ian_Hi_13_00"); //Du lebst noch? Dass ich dich wiedersehen würde, hätte ich nicht gedacht.
-	AI_Output(hero, self, "Info_Mod_Ian_Hi_15_01"); //Gleichfalls. Du hast den Einsturz der Mine also überlebt?
-	AI_Output(self, hero, "Info_Mod_Ian_Hi_13_02"); //(lacht freudlos) Es gab keinen Einsturz.
+	AI_Output(self, hero, "Info_Mod_Ian_Hi_13_00"); //Ty wciaz zyjesz? Nigdy nie pomyslalem, ze znów cie zobacze.
+	AI_Output(hero, self, "Info_Mod_Ian_Hi_15_01"); //Podobnie. Przezyles wiec upadek kopalni?
+	AI_Output(self, hero, "Info_Mod_Ian_Hi_13_02"); //Nie doszlo do upadku.
 };
 
 INSTANCE Info_Mod_Ian_AlteMine (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Ian_AlteMine (C_INFO)
 	information	= Info_Mod_Ian_AlteMine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist in der Alten Mine passiert?";
+	description	= "Co wydarzylo sie w starej kopalni?";
 };
 
 FUNC INT Info_Mod_Ian_AlteMine_Condition()
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Ian_AlteMine_Condition()
 
 FUNC VOID Info_Mod_Ian_AlteMine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine_15_00"); //Was ist in der Alten Mine passiert?
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_01"); //Wir wurden überfallen. Und zwar nicht von den Bastarden aus dem Neuen Lager, sondern von schwarzen Kriegern und Magiern.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine_15_00"); //Co wydarzylo sie w starej kopalni?
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_01"); //Bylismy przytuleni. Nie przez dranie z Nowego Obozu, ale przez czarnych wojowników i magów.
 
 	var C_ITEM arm;
 	
@@ -55,11 +55,11 @@ FUNC VOID Info_Mod_Ian_AlteMine_Info()
 	|| (Hlp_IsItem(arm, Schwarzmagierrobe) == TRUE)
 	|| (Hlp_IsItem(arm, ItAr_NOV_DMB_01) == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_02"); //(misstrauisch) Manche von ihnen trugen genau so eine Rüstung, wie du es tust.
+		AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_02"); //Niektóre z nich nosily tyle samo zbroi, co ty.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine_15_03"); //Die Beliaranhänger haben die Mine übernommen?
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_04"); //Kann man wohl sagen. Unsere Leute wurden wie die Wanzen niedergemetzelt.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine_15_03"); //Przyczepy Beliaranu przejely kopalnie?
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine_13_04"); //Na pewno mozna to powiedziec. Nasi ludzie zostali zabici jak robaki.
 };
 
 INSTANCE Info_Mod_Ian_AlteMine2 (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Ian_AlteMine2 (C_INFO)
 	information	= Info_Mod_Ian_AlteMine2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie konntest du überleben?";
+	description	= "Jak przetrwales?";
 };
 
 FUNC INT Info_Mod_Ian_AlteMine2_Condition()
@@ -83,13 +83,13 @@ FUNC INT Info_Mod_Ian_AlteMine2_Condition()
 
 FUNC VOID Info_Mod_Ian_AlteMine2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine2_15_00"); //Wie konntest du überleben?
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_01"); //Ich befand mich gerade unter der Plattform zum Eingang der Mine, als ich von oben Schreie und Waffengeklirr hörte.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_02"); //Im nächsten Moment schon fiel mir Drake vor die Füße, von einem Zauber über die Brüstung geschleudert.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_03"); //Ich habe Alarm geschlagen, die Beine in die Hände genommen und mir ein sicheres Versteck gesucht.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_04"); //Aber da ging meine Odyssee erst los. Erst musste ich mit anhören, wie einer nach dem hingeschlachtet wurde, und dann durfte ich mich tagelang kaum rühren.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_05"); //Überlebt habe ich nur, weil ich Wasser von der Minenwand lecken konnte. Mir ist es in meinem ganzen Leben noch nicht so dreckig gegangen.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_06"); //Natürlich habe ich Pläne zur Flucht geschmiedet. Und dann habe ich eine Wachablösung am Tor genutzt, um mich aus dem Staub zu machen.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine2_15_00"); //Jak przetrwales?
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_01"); //Bylem tuz pod platforma przy wejsciu do kopalni, gdy uslyszalem krzyki i ostrzal z góry.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_02"); //Nastepna chwila Drake upadla przed moja stopa, rzucona zakleciem nad balustrada.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_03"); //Dzwonilem na alarm, wzialem nogi w rece i szukalem bezpiecznej kryjówki.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_04"); //Ale wtedy zaczela sie moja odyseja. Najpierw musialem sluchac jednego z nich, który potem zostal zabity, a potem nie wolno mi bylo sie poruszac przez kilka dni.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_05"); //Przezylem tylko dlatego, ze moglem wylizywac wode z muru kopalni. Nigdy nie bylem tak brudny w calym moim zyciu.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine2_13_06"); //Oczywiscie planowalem ucieczke. A potem uzylem zmiany wartownika przy bramie, aby mnie wyprowadzic z drogi.
 };
 
 INSTANCE Info_Mod_Ian_AlteMine3 (C_INFO)
@@ -100,7 +100,7 @@ INSTANCE Info_Mod_Ian_AlteMine3 (C_INFO)
 	information	= Info_Mod_Ian_AlteMine3_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du hättest die Mine verteidigen müssen!";
+	description	= "Powinienes byl bronic kopalni!";
 };
 
 FUNC INT Info_Mod_Ian_AlteMine3_Condition()
@@ -113,11 +113,11 @@ FUNC INT Info_Mod_Ian_AlteMine3_Condition()
 
 FUNC VOID Info_Mod_Ian_AlteMine3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine3_15_00"); //Du hättest die Mine verteidigen müssen!
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_01"); //(verächtlich) Tu nicht so, als würdest du etwas davon verstehen. Mit den paar verstreuten Gardisten und Templern hätte ich keine koordinierte Gegenwehr leisten können.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_02"); //Wir waren dem Untergang geweiht.
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine3_15_03"); //Gibt es denn noch andere Überlebende?
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_04"); //Nicht dass ich wüsste.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine3_15_00"); //Powinienes byl bronic kopalni!
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_01"); //Nie udawaj, ze rozumiesz to wszystko. Z nielicznymi rozproszonymi straznikami i Templarami nie moglem stawic skoordynowanego oporu.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_02"); //Zostalismy skazani na zgube.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine3_15_03"); //Czy sa jeszcze inne ocalale osoby?
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine3_13_04"); //Nie wiem o tym.
 };
 
 INSTANCE Info_Mod_Ian_AlteMine4 (C_INFO)
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Ian_AlteMine4 (C_INFO)
 	information	= Info_Mod_Ian_AlteMine4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe hier gar keinen Trupp, der unterwegs ist, die Mine (...)";
+	description	= "Nie widze tu zadnego wojska w drodze, kopalni (....). )";
 };
 
 FUNC INT Info_Mod_Ian_AlteMine4_Condition()
@@ -141,8 +141,8 @@ FUNC INT Info_Mod_Ian_AlteMine4_Condition()
 
 FUNC VOID Info_Mod_Ian_AlteMine4_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_AlteMine4_15_00"); //Ich sehe hier gar keinen Trupp, der unterwegs ist, die Mine zurückzuerobern.
-	AI_Output(self, hero, "Info_Mod_Ian_AlteMine4_13_01"); //Thorus hält die Mine momentan für verzichtbar. Ohne seine Unterstützung werde ich nicht losziehen.
+	AI_Output(hero, self, "Info_Mod_Ian_AlteMine4_15_00"); //Nie widze zadnych zolnierzy na drodze do odzyskania kopalni.
+	AI_Output(self, hero, "Info_Mod_Ian_AlteMine4_13_01"); //Thorus uwaza, ze kopalnia nie jest obecnie konieczna. Nie odejde bez jego wsparcia.
 };
 
 INSTANCE Info_Mod_Ian_SLDSpy (C_INFO)
@@ -153,7 +153,7 @@ INSTANCE Info_Mod_Ian_SLDSpy (C_INFO)
 	information	= Info_Mod_Ian_SLDSpy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was gibt es Neues zu berichten?";
+	description	= "Co nowego nalezy zglosic?";
 };
 
 FUNC INT Info_Mod_Ian_SLDSpy_Condition()
@@ -169,44 +169,44 @@ FUNC INT Info_Mod_Ian_SLDSpy_Condition()
 
 FUNC VOID Info_Mod_Ian_SLDSpy_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_15_00"); //Was gibt es Neues zu berichten?
-	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_13_01"); //Hey, ich wusste gar nicht, dass du jetzt wieder Schatten bei uns bist.
+	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_15_00"); //Co nowego nalezy zglosic?
+	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_13_01"); //Hej, nie wiedzialem, ze jestes w cieniu.
 
 	Info_ClearChoices	(Info_Mod_Ian_SLDSpy);
 
-	Info_AddChoice	(Info_Mod_Ian_SLDSpy, "Bin ich auch nicht. Ich spioniere hier für das Neue Lager.", Info_Mod_Ian_SLDSpy_B);
-	Info_AddChoice	(Info_Mod_Ian_SLDSpy, "Ich war einige Zeit bei den Sumpfspinnern um zu spionieren.", Info_Mod_Ian_SLDSpy_A);
+	Info_AddChoice	(Info_Mod_Ian_SLDSpy, "Ja tez nie jestem. Chwytam sie tutaj za Nowy Obóz.", Info_Mod_Ian_SLDSpy_B);
+	Info_AddChoice	(Info_Mod_Ian_SLDSpy, "Spedzilem troche czasu z matkami marshów, które szpiegowaly.", Info_Mod_Ian_SLDSpy_A);
 };
 
 FUNC VOID Info_Mod_Ian_SLDSpy_C()
 {
-	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_C_13_00"); //Naja, wo waren wir stehen geblieben? Achja, was gibt’s so Neues. Ich hörte, dass Bullit angeblich von einem Typen aus dem Neuen Lager kalt gemacht worden sein soll.
-	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_C_13_01"); //Thorus soll ziemlich außer sich, wegen der Sache sein. Na, wenn das mal nicht nach Rache riecht.
+	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_C_13_00"); //No cóz, gdzie bylismy? No cóz, jaka jest ta wiadomosc? Slyszalem, ze facet z Nowego Obozu rzekomo zabil Bullita.
+	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_C_13_01"); //Thorus jest pod tym wzgledem dosc zdenerwowany. No cóz, jesli nie pachnie jak zemsta.
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Ian hat mir erzählt, dass der Gardist Bullit von jemandem aus dem Neuen Lager ermordet worden sein soll. Thorus könnte eine Racheaktion in Erwägung ziehen.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Ian powiedzial mi, ze straznik Bullit rzekomo zostal zamordowany przez kogos z Nowego Obozu. Thorus móglby rozwazyc wziecie zemsty.");
 
 	Info_ClearChoices	(Info_Mod_Ian_SLDSpy);
 };
 
 FUNC VOID Info_Mod_Ian_SLDSpy_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_B_15_00"); //Bin ich auch nicht. Ich spioniere hier für das Neue Lager.
-	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_B_13_01"); //(lacht) Du Scherzbold. Du bist in Ordnung.
+	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_B_15_00"); //Ja tez nie jestem. Chwytam sie tutaj za Nowy Obóz.
+	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_B_13_01"); //(smiech) Joker. Masz racje.
 
 	Info_Mod_Ian_SLDSpy_C();
 };
 
 FUNC VOID Info_Mod_Ian_SLDSpy_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_A_15_00"); //Ich war einige Zeit bei den Sumpfspinnern um zu spionieren. Hier, nimm einen Stängel.
+	AI_Output(hero, self, "Info_Mod_Ian_SLDSpy_A_15_00"); //Spedzilem troche czasu z matkami marshów, które szpiegowaly. Tutaj wez lodyge.
 
-	B_ShowGivenThings	("Stängel Sumpfkraut gegeben");
+	B_ShowGivenThings	("Podane mokradlo");
 
 	CreateInvItems	(self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_A_13_01"); //Ahh, Sumpfkraut Du bist ok.
+	AI_Output(self, hero, "Info_Mod_Ian_SLDSpy_A_13_01"); //Ach, kapusta bagienna, jestes w porzadku.
 
 	Info_Mod_Ian_SLDSpy_C();
 };
@@ -219,7 +219,7 @@ INSTANCE Info_Mod_Ian_CutterBad (C_INFO)
 	information	= Info_Mod_Ian_CutterBad_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey, da ist mir was eingefallen, als du von dem Mord an Bullit erzählt hast.";
+	description	= "Hej, pomyslalem o czyms, kiedy opowiedziales mi o bullitym morderstwie.";
 };
 
 FUNC INT Info_Mod_Ian_CutterBad_Condition()
@@ -234,14 +234,14 @@ FUNC INT Info_Mod_Ian_CutterBad_Condition()
 
 FUNC VOID Info_Mod_Ian_CutterBad_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_CutterBad_15_00"); //Hey, da ist mir was eingefallen, als du von dem Mord an Bullit erzählt hast.
-	AI_Output(self, hero, "Info_Mod_Ian_CutterBad_13_01"); //Ja?
-	AI_Output(hero, self, "Info_Mod_Ian_CutterBad_15_02"); //Ich habe Cutter nachts mit einem ganzen Haufen von Bullits Krempel durch das Lager gehen sehen.
-	AI_Output(self, hero, "Info_Mod_Ian_CutterBad_13_03"); //Das ist ja interessant. (zu sich selbst) Wird bestimmt einige der Gardisten interessieren.
+	AI_Output(hero, self, "Info_Mod_Ian_CutterBad_15_00"); //Hej, pomyslalem o czyms, kiedy opowiedziales mi o bullitym morderstwie.
+	AI_Output(self, hero, "Info_Mod_Ian_CutterBad_13_01"); //Tak?
+	AI_Output(hero, self, "Info_Mod_Ian_CutterBad_15_02"); //W nocy widzialem, jak Cutter przechadzal sie po obozie z cala gromada smieci Bullita.
+	AI_Output(self, hero, "Info_Mod_Ian_CutterBad_13_03"); //To ciekawe. (do siebie) Jestem pewien, ze niektórzy straznicy beda zainteresowani.
 
 	Mod_SLD_Spy = 6;
 
-	B_LogEntry	(TOPIC_MOD_SLD_SPY, "So, das wäre erledigt. Jetzt sollten die Gardisten bald in Cutter’s Truhe schauen.");
+	B_LogEntry	(TOPIC_MOD_SLD_SPY, "Cóz, tak sie stalo. Teraz straznik powinien juz wkrótce przyjrzec sie klatce piersiowej kutra.");
 };
 
 INSTANCE Info_Mod_Ian_Woher (C_INFO)
@@ -252,7 +252,7 @@ INSTANCE Info_Mod_Ian_Woher (C_INFO)
 	information	= Info_Mod_Ian_Woher_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso hast du dich dem alten Lager angeschlossen?";
+	description	= "Dlaczego dolaczyles do starego obozu?";
 };
 
 FUNC INT Info_Mod_Ian_Woher_Condition()
@@ -265,9 +265,9 @@ FUNC INT Info_Mod_Ian_Woher_Condition()
 
 FUNC VOID Info_Mod_Ian_Woher_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_Woher_15_00"); //Wieso hast du dich dem alten Lager angeschlossen?
-	AI_Output(self, hero, "Info_Mod_Ian_Woher_13_01"); //Früher lebte ich in Varant. Als der König Varant besetzt hat und dort seine Männer eingesetzt hat, hab ich den Statthalter angegriffen.
-	AI_Output(self, hero, "Info_Mod_Ian_Woher_13_02"); //Dafür haben sie mich natürlich in die Kolonie geworfen. Ich bin dann ins alte Lager und hab dort als Buddler gearbeitet, aber die Erzbarone haben bald gemerkt, dass ich zu mehr Tauge und mich als Aufseher der alten Mine eingesetzt.
+	AI_Output(hero, self, "Info_Mod_Ian_Woher_15_00"); //Dlaczego dolaczyles do starego obozu?
+	AI_Output(self, hero, "Info_Mod_Ian_Woher_13_01"); //Mieszkalem kiedys w Varant. Kiedy król Varant okupowal Varant i umiescil tam swoich mezczyzn, zaatakowalem gubernatora.
+	AI_Output(self, hero, "Info_Mod_Ian_Woher_13_02"); //Oczywiscie rzucili mnie w kolonie za to. Pózniej poszedlem do starego obozu i tam pracowalem jako kopaczka, ale baronowie rudy szybko zorientowali sie, ze ja i Tauge wykorzystuje do nadzorowania starej kopalni.
 };
 
 INSTANCE Info_Mod_Ian_PruefungDesVertrauens (C_INFO)
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Ian_PruefungDesVertrauens (C_INFO)
 	information	= Info_Mod_Ian_PruefungDesVertrauens_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Was war deine Prüfung des Vertrauens?";
+	description	= "Jaka byla Twoja próba zaufania?";
 };
 
 FUNC INT Info_Mod_Ian_PruefungDesVertrauens_Condition()
@@ -291,8 +291,8 @@ FUNC INT Info_Mod_Ian_PruefungDesVertrauens_Condition()
 
 FUNC VOID Info_Mod_Ian_PruefungDesVertrauens_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_PruefungDesVertrauens_15_00"); //Was war deine Prüfung des Vertrauens?
-	AI_Output(self, hero, "Info_Mod_Ian_PruefungDesVertrauens_13_01"); //Ich musste einen Ork fangen, als Sklaven für die Mine. War nicht gerade leicht.
+	AI_Output(hero, self, "Info_Mod_Ian_PruefungDesVertrauens_15_00"); //Jaka byla Twoja próba zaufania?
+	AI_Output(self, hero, "Info_Mod_Ian_PruefungDesVertrauens_13_01"); //Musialem zlapac orka jako niewolników dla kopalni. Nie bylo to latwe.
 };
 
 INSTANCE Info_Mod_Ian_Mine (C_INFO)
@@ -303,7 +303,7 @@ INSTANCE Info_Mod_Ian_Mine (C_INFO)
 	information	= Info_Mod_Ian_Mine_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wieso bist du eigentlich nicht mehr in der Mine?";
+	description	= "Jak juz nie jestes w kopalni?";
 };
 
 FUNC INT Info_Mod_Ian_Mine_Condition()
@@ -316,9 +316,9 @@ FUNC INT Info_Mod_Ian_Mine_Condition()
 
 FUNC VOID Info_Mod_Ian_Mine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ian_Mine_15_00"); //Wieso bist du eigentlich nicht mehr in der Mine?
-	AI_Output(self, hero, "Info_Mod_Ian_Mine_13_01"); //Nachdem Xardas mit seinen Dämonen die Mine überfallen hatte wurde ich, wie fast alle, festgenommen.
-	AI_Output(self, hero, "Info_Mod_Ian_Mine_13_02"); //Doch irgendwann hab ich es geschafft zu fliehen und habe Thorus, der zu dem Zeitpunkt Erzbaron war, alles berichtet.
+	AI_Output(hero, self, "Info_Mod_Ian_Mine_15_00"); //Jak juz nie jestes w kopalni?
+	AI_Output(self, hero, "Info_Mod_Ian_Mine_13_01"); //Po tym, jak Xardas i jego demony zaatakowali kopalnie, zostalem aresztowany jak prawie wszyscy.
+	AI_Output(self, hero, "Info_Mod_Ian_Mine_13_02"); //Pewnego dnia jednak udalo mi sie uciec i powiedzialem Thorusowi, który byl wówczas arcybaronem, wszystko.
 };
 
 INSTANCE Info_Mod_Ian_Pickpocket (C_INFO)

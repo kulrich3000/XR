@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Daron_Hi (C_INFO)
 	information	= Info_Mod_Daron_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Daron_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Daron_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Daron_Hi_10_01"); //Ich bin der Feuermagier Daron. Was kann ich für dich tun, Fremder?
+	AI_Output(self, hero, "Info_Mod_Daron_Hi_10_01"); //Jestem magikiem ognia Daronem. Co moge zrobic dla Ciebie, nieznajomego?
 };
 
 INSTANCE Info_Mod_Daron_ZugangZumKloster (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Daron_ZugangZumKloster (C_INFO)
 	information	= Info_Mod_Daron_ZugangZumKloster_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir Zugang zum Kloster gewähren?";
+	description	= "Czy mozecie dac mi dostep do klasztoru?";
 };
 
 FUNC INT Info_Mod_Daron_ZugangZumKloster_Condition()
@@ -43,51 +43,51 @@ FUNC INT Info_Mod_Daron_ZugangZumKloster_Condition()
 
 FUNC VOID Info_Mod_Daron_ZugangZumKloster_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_15_00"); //Kannst du mir Zugang zum Kloster gewähren?
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_10_01"); //Was willst du in unserem Kloster?
+	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_15_00"); //Czy mozecie dac mi dostep do klasztoru?
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_10_01"); //Czego chcesz w naszym klasztorze?
 
 	Info_ClearChoices	(Info_Mod_Daron_ZugangZumKloster);
 	
 	if (Npc_KnowsInfo(hero, Info_Mod_Andokai_Hi))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Andokai_Hammer))
 	{
-		Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Ich soll für die Dämonenbeschwörer den Heiligen Hammer stehlen.", Info_Mod_Daron_ZugangZumKloster_Witz);
+		Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Mialem ukrasc swietego mlotka za przywolywaczy demonów.", Info_Mod_Daron_ZugangZumKloster_Witz);
 	};
-	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Ich will ein Feuer Novize werden.", Info_Mod_Daron_ZugangZumKloster_Novize);
+	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Chce byc nowicjuszem ognia.", Info_Mod_Daron_ZugangZumKloster_Novize);
 };
 
 FUNC VOID Info_Mod_Daron_ZugangZumKloster_Witz()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Witz_15_00"); //Ich soll für die Dämonenbeschwörer den Heiligen Hammer stehlen.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Witz_10_01"); //Wie ich sehe hast du Humor. Aber wir Magier sind ernste Leute und wollen nicht lachen.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Witz_10_02"); //Nun sage mir weshalb du Einlass in unser Kloster erbittest.
+	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Witz_15_00"); //Mialem ukrasc swietego mlotka za przywolywaczy demonów.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Witz_10_01"); //Widze, ze masz poczucie humoru. Ale my, magowie, jestesmy powaznymi ludzmi i nie chcemy sie smiac.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Witz_10_02"); //Teraz powiedz mi, dlaczego prosimy o przylaczenie sie do naszego klasztoru.
 };
 
 FUNC VOID Info_Mod_Daron_ZugangZumKloster_Novize()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Novize_15_00"); //Ich will ein Feuer Novize werden.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Novize_10_01"); //Wenn dies wirklich dein begehren ist, dann sollst du deine Bitte gewährt bekommen.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Novize_10_02"); //Doch werde ich dir erst den Schlüssel zu unseren heiligen Pforte erst übergeben, wenn du mir einen Gefallen getan hast.
+	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Novize_15_00"); //Chce byc nowicjuszem ognia.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Novize_10_01"); //Jesli to jest twoim pragnieniem, otrzymasz prosbe.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Novize_10_02"); //Ale nie daje wam klucza do naszej swietej bramy, dopóki nie uczynicie mi laski.
 
-	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Um ein Feuer Novize zu werden muss ich zuerst Zugang zum Kloster bekommen. Daron wird mir den Schlüssel geben, wenn ich ihm einen Gefallen tue.");
+	B_LogEntry	(TOPIC_MOD_FEUERMAGIER, "Aby zostac nowicjuszem ognia, musze najpierw uzyskac dostep do klasztoru. Daron da mi klucz, jesli uczynie mu laske.");
 
 	Info_ClearChoices	(Info_Mod_Daron_ZugangZumKloster);
 
-	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Was soll ich für dich machen?", Info_Mod_Daron_ZugangZumKloster_Gefallen);
+	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "Co mam dla Ciebie zrobic?", Info_Mod_Daron_ZugangZumKloster_Gefallen);
 };
 
 FUNC VOID Info_Mod_Daron_ZugangZumKloster_Gefallen()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Gefallen_15_00"); //Was soll ich für dich machen?
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_01"); //Pyrokar, der oberste Feuermagier, hat mich in die Stadt geschickt, damit ich ein Mittel gegen eine Krankheit, die schon einige unserer Novizen befallen hat, besorge.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_02"); //Diese Krankheit hat ein starkes Fieber ausgelöst, das unsere Magie nicht zu heilen vermag.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_03"); //Ein Heilmittel dafür gibt es beim Wassermagier Vatras, der an seinem kleinen Tempel hier in der Stadt seine Predigten hält.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_04"); //Doch mein Stolz als Feuermagier lässt es nicht zu, dass ich einen Wassermagier um Hilfe bitte.
-	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_05"); //Du würdest mir wirklich einen Gefallen tun, wenn du die Medizin von ihm abholen würdest.
+	AI_Output(hero, self, "Info_Mod_Daron_ZugangZumKloster_Gefallen_15_00"); //Co mam dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_01"); //Pyrokar, glówny magik strazy pozarnej, wyslal mnie do miasta, aby dostac lekarstwo na chorobe, która zainfekowala niektórych z naszych nowicjuszy.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_02"); //Choroba ta wywolala goraczke, której nasza magia nie jest w stanie wyleczyc.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_03"); //Lekarstwo na to mozna znalezc w wodnym magikiem Vatrasie, który wyglasza kazania w swojej malej swiatyni w miescie.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_04"); //Ale moja duma z bycia magikiem ognia nie pozwala mi prosic maga wodnego o pomoc.
+	AI_Output(self, hero, "Info_Mod_Daron_ZugangZumKloster_Gefallen_10_05"); //Bylbys mi naprawde laska, gdybys odebral lekarstwo od niego.
 
 	Log_CreateTopic	(TOPIC_MOD_DARONSGEFALLEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DARONSGEFALLEN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Ich soll für Daron eine Medizin vom Wassermagier Vatras besorgen.");
+	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Mam otrzymac od maga wodnego Vatrasa lekarstwo od Darona.");
 
 	Info_ClearChoices	(Info_Mod_Daron_ZugangZumKloster);
 
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Daron_HabTrank (C_INFO)
 	information	= Info_Mod_Daron_HabTrank_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab den Trank von Vatras (Trank geben)";
+	description	= "Mam eliksir Vatrasa.";
 };
 
 FUNC INT Info_Mod_Daron_HabTrank_Condition()
@@ -121,23 +121,23 @@ FUNC INT Info_Mod_Daron_HabTrank_Condition()
 
 FUNC VOID Info_Mod_Daron_HabTrank_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_HabTrank_15_00"); //Ich hab den Trank von Vatras.
+	AI_Output(hero, self, "Info_Mod_Daron_HabTrank_15_00"); //Mam eliksir Vatrasa.
 
 	B_GiveInvItems	(hero, self, VatrasNovizenTrunk, 1);
 
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_01"); //Danke. Wenn du willst, kann ich dich jetzt zum Kloster geleiten.
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_02"); //Eine Sache gibt es jedoch noch, die mich am Aufbruch hindert.
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_03"); //Der Novize Akahasch ist seit einigen Tagen verschwunden.
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_04"); //Zuletzt wurde er im Hafenviertel in der Taverne gesehen ... man könnte dort vielleicht Informationen über seinen Verbleib bekommen ... ich selbst würde mich ungern dorthin begeben wenn du verstehst.
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_05"); //Wenn du also ...
-	AI_Output(hero, self, "Info_Mod_Daron_HabTrank_15_06"); //(die Augen verdrehend) Ja, ich verstehe schon. Ich werde mich umhören.
-	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_07"); //Sehr gut. Sobald du ihn gefunden hast, bring ihn zu mir.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_01"); //Dzieki. Jesli chcecie, moge teraz zabrac Was do klasztoru.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_02"); //Ale jest jeszcze jedna rzecz, która uniemozliwia mi wyjazd.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_03"); //Nowicjuszka Akahasch zniknela kilka dni temu.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_04"); //Ostatnio byl on widoczny w dzielnicy portowej w tawernie.... byc moze bedziesz w stanie uzyskac informacje o miejscu pobytu.... Nienawidzilabym sie, gdybys sam poszedl tam, jesli wiesz, co mam na mysli.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_05"); //Wiec jesli....
+	AI_Output(hero, self, "Info_Mod_Daron_HabTrank_15_06"); //(ocze skrecenie) Tak, rozumiem. Pytam.
+	AI_Output(self, hero, "Info_Mod_Daron_HabTrank_10_07"); //Bardzo dobry. Jak tylko go odnajdziesz, przyprowadz go do mnie.
 
 	B_GivePlayerXP	(50);
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_AUFNAHME, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AUFNAHME, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_DARONSGEFALLEN, TOPIC_MOD_ASS_AUFNAHME, "Ich habe Daron den Trank gegeben.", "Damit Daron mich zum Kloster begleitet, muss ich erst den Verbleib des Novizen Akahasch in Erfahrung bringen. Zuletzt wurde er bei der Taverne im Hafenviertel gesehen. Sobald ich ihn gefunden habe, soll ich ihn zu Daron geleiten.");
+	B_LogEntry_More	(TOPIC_MOD_DARONSGEFALLEN, TOPIC_MOD_ASS_AUFNAHME, "Dalem Daronowi eliksir.", "Zeby Daron towarzyszyl mi w klasztorze, musze najpierw poznac miejsce pobytu nowicjusza Akahascha. Ostatnio byl widoczny w tawernie w dzielnicy portowej. Jak tylko go znajde, zabiore go do Darona.");
 
 	B_Göttergefallen(1, 1);
 };
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Daron_Akahasch (C_INFO)
 	information	= Info_Mod_Daron_Akahasch_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Akahasch gefunden.";
+	description	= "Znalazlem Akahascha.";
 };
 
 FUNC INT Info_Mod_Daron_Akahasch_Condition()
@@ -166,26 +166,26 @@ FUNC INT Info_Mod_Daron_Akahasch_Condition()
 
 FUNC VOID Info_Mod_Daron_Akahasch_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_00"); //Ich habe Akahasch gefunden.
+	AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_00"); //Znalazlem Akahascha.
 
 	if (Mod_Akahasch_Guiding == 1)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Akahasch_AtKloster))
 	{
-		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_01"); //Ahh, wie ich sehe ist er bei dir. Lass uns gleich zum Kloster gehen, den Rest können wird dort besprechen.
+		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_01"); //Ach, widze, ze on jest z toba. Przejdzmy prosto do klasztoru, reszte mozna tam omówic.
 	}
 	else if (Mod_Akahasch_Guiding == 1)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Akahasch_AtKloster))
 	{
-		AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_02"); //Ich habe ihn wieder ins Kloster gebracht.
-		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_03"); //Ja? Das ist gut. Dann können wir ja sofort aufbrechen.
+		AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_02"); //Przywiózlem go z powrotem do klasztoru.
+		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_03"); //Tak? To dobra wiadomosc. Wtedy mozemy natychmiast odjechac.
 	}
 	else if (Mod_Akahasch_Guiding == 0)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Akahasch_AtKloster))
 	{
-		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_04"); //Wo ist er?
-		AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_05"); //Er lag tot in der Nähe des Leuchtturmes ... wilde Tiere müssen ihn erwischt haben.
-		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_06"); //Was sagst du? Innos sei seiner Seele gnädig. Aber was hatte er auch mitten in der Wildnis verloren?
-		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_07"); //Wie dem auch sei, nun hält mich nichts mehr in der Stadt. Brechen wir also zum Kloster auf.
+		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_04"); //Gdzie jest?
+		AI_Output(hero, self, "Info_Mod_Daron_Akahasch_15_05"); //Zmarl w poblizu latarni morskiej.... Wiecej dzikie zwierzeta musza go zlapac.
+		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_06"); //Co mówisz? Innos ma milosierdzie na jego duszy. Ale co on stracil w srodku pustyni?
+		AI_Output(self, hero, "Info_Mod_Daron_Akahasch_10_07"); //Tak czy inaczej, nie ma juz nic, co bym mial w miescie. Przejdzmy wiec do klasztoru.
 	};
 
 	B_GivePlayerXP	(150);
@@ -203,7 +203,7 @@ INSTANCE Info_Mod_Daron_KlosterGuide (C_INFO)
 	information	= Info_Mod_Daron_KlosterGuide_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Bring mich zum Kloster.";
+	description	= "Zabierz mnie do klasztoru.";
 };
 
 FUNC INT Info_Mod_Daron_KlosterGuide_Condition()
@@ -216,8 +216,8 @@ FUNC INT Info_Mod_Daron_KlosterGuide_Condition()
 
 FUNC VOID Info_Mod_Daron_KlosterGuide_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_KlosterGuide_15_00"); //Bring mich zum Kloster.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterGuide_10_01"); //Gut, folge mir.
+	AI_Output(hero, self, "Info_Mod_Daron_KlosterGuide_15_00"); //Zabierz mnie do klasztoru.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterGuide_10_01"); //Wszystko w porzadku, podazaj za mna.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 
@@ -279,19 +279,19 @@ FUNC INT Info_Mod_Daron_Akahasch2_Condition()
 
 FUNC VOID Info_Mod_Daron_Akahasch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_10_00"); //Nun würde mich noch interessieren, was Akahasch in der Wildnis verloren hatte?
+	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_10_00"); //Teraz chcialbym wiedziec, co Akahash stracil na pustyni?
 
 	Info_ClearChoices	(Info_Mod_Daron_Akahasch2);
 
-	Info_AddChoice	(Info_Mod_Daron_Akahasch2, "Ein paar Verrückte in der Stadt und stellten ihm nach.", Info_Mod_Daron_Akahasch2_B);
-	Info_AddChoice	(Info_Mod_Daron_Akahasch2, "Er hatte Wettschulden und ist abgehauen.", Info_Mod_Daron_Akahasch2_A);
+	Info_AddChoice	(Info_Mod_Daron_Akahasch2, "Gromada dziwaków goniacych za nim w miescie.", Info_Mod_Daron_Akahasch2_B);
+	Info_AddChoice	(Info_Mod_Daron_Akahasch2, "Zlozyl zaklad i wystartowal.", Info_Mod_Daron_Akahasch2_A);
 };
 
 FUNC VOID Info_Mod_Daron_Akahasch2_B()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_Akahasch2_B_15_00"); //Ein paar Verrückte in der Stadt und stellten ihm nach.
-	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_B_10_01"); //Ja?! Hmm ... bisweilen müssen die ehrwürdigen Diener des höchsten der Götter Anfeindungen Unwürdiger trotzen.
-	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_B_10_02"); //Akahasch hat die ihm auferlegten Prüfung ertragen und soll die nächsten Wochen im Kloster zur Erholung von Körper und Geist nutzen.
+	AI_Output(hero, self, "Info_Mod_Daron_Akahasch2_B_15_00"); //Gromada dziwaków goniacych za nim w miescie.
+	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_B_10_01"); //Tak! Hmm..... czcigodni sludzy najwyzszego bogów musza czasami sprzeciwiac sie wrogosciom niegodnych.
+	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_B_10_02"); //Akahasch przetrwal nalozony na niego test i ma wykorzystac nastepne tygodnie w klasztorze do odzyskania ciala i umyslu.
 
 	Info_ClearChoices	(Info_Mod_Daron_Akahasch2);
 
@@ -300,9 +300,9 @@ FUNC VOID Info_Mod_Daron_Akahasch2_B()
 
 FUNC VOID Info_Mod_Daron_Akahasch2_A()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_Akahasch2_A_15_00"); //Er hatte Wettschulden und ist abgehauen, als ihm der Boden unter den Füßen heiß wurde.
-	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_A_10_01"); //(erbost) So ist das?! Dann wird harte Arbeit für ein paar Wochen ihn bestimmt von weiteren Sperenzchen abhalten.
-	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_A_10_02"); //Der soll mich kennenlernen ...
+	AI_Output(hero, self, "Info_Mod_Daron_Akahasch2_A_15_00"); //Pieniadze zawdzieczal i uciekl, gdy ziemia rozgrzala sie pod nogami.
+	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_A_10_01"); //Tak jest? Wtedy ciezka praca przez kilka tygodni z pewnoscia uniemozliwi mu mówienie wiecej jezyków.
+	AI_Output(self, hero, "Info_Mod_Daron_Akahasch2_A_10_02"); //Powinien mnie poznac.....
 
 	Info_ClearChoices	(Info_Mod_Daron_Akahasch2);
 
@@ -334,13 +334,13 @@ FUNC INT Info_Mod_Daron_ImKloster_Condition()
 
 FUNC VOID Info_Mod_Daron_ImKloster_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Daron_ImKloster_10_00"); //So, da sind wir. Bring Pyrokar die Medizin.
+	AI_Output(self, hero, "Info_Mod_Daron_ImKloster_10_00"); //Cóz, tutaj jestesmy. Wez lek do Pyrokar.
 	
 	B_GiveInvItems	(self, hero, VatrasNovizenTrunk, 1);
 
-	AI_Output(self, hero, "Info_Mod_Daron_ImKloster_10_01"); //Ich werde nun meiner Arbeit nachgehen.
+	AI_Output(self, hero, "Info_Mod_Daron_ImKloster_10_01"); //Bede wykonywal swoja prace.
 
-	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Daron hat mich zum Kloster gebracht, ich soll die Medizin nun zu Pyrokar bringen.");
+	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Daron zabral mnie do klasztoru, abym wzial leki do Pyrokar.");
 
 	AI_StopProcessInfos	(self);
 
@@ -370,7 +370,7 @@ FUNC INT Info_Mod_Daron_FeuerGegenEis_Condition()
 
 FUNC VOID Info_Mod_Daron_FeuerGegenEis_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Daron_FeuerGegenEis_10_00"); //Gut, dass du kommst. Du musst sofort mit Pyrokar sprechen. Begib dich ohne Verzug zu ihm.
+	AI_Output(self, hero, "Info_Mod_Daron_FeuerGegenEis_10_00"); //Ciesze sie, ze przyszedles. Teraz musisz porozmawiac z Pyrokar. Niezwlocznie udaj sie do niego.
 
 	AI_StopProcessInfos	(self);
 };
@@ -383,7 +383,7 @@ INSTANCE Info_Mod_Daron_Drachen (C_INFO)
 	information	= Info_Mod_Daron_Drachen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist dir in letzter Zeit Ungewöhnliches aufgefallen?";
+	description	= "Czy ostatnio zauwazyles cos niezwyklego?";
 };
 
 FUNC INT Info_Mod_Daron_Drachen_Condition()
@@ -398,11 +398,11 @@ FUNC INT Info_Mod_Daron_Drachen_Condition()
 
 FUNC VOID Info_Mod_Daron_Drachen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Daron_Drachen_15_00"); //Ist dir in letzter Zeit Ungewöhnliches aufgefallen?
-	AI_Output(self, hero, "Info_Mod_Daron_Drachen_10_01"); //Das will ich meinen. Jede Nacht wird auf dem Gebirge westlich vom Kloster immer wieder ein helles Lodern erkennbar.
-	AI_Output(self, hero, "Info_Mod_Daron_Drachen_10_02"); //(nachdenklich) Was mag da nur vor sich gehen ...
+	AI_Output(hero, self, "Info_Mod_Daron_Drachen_15_00"); //Czy ostatnio zauwazyles cos niezwyklego?
+	AI_Output(self, hero, "Info_Mod_Daron_Drachen_10_01"); //Tak wlasnie rozumiem. Kazda noc w górach na zachód od klasztoru roztacza sie kazdego wieczoru jaskrawy blask.
+	AI_Output(self, hero, "Info_Mod_Daron_Drachen_10_02"); //Co moze sie tam dziac?
 
-	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Daron erzählte von hellem Lodern auf den Gebirgen westlich vom Kloster.");
+	B_LogEntry	(TOPIC_MOD_DARONSGEFALLEN, "Daron opowiedzial o jasnym plomieniu w górach na zachód od klasztoru.");
 };
 
 INSTANCE Info_Mod_Daron_KlosterAngegriffen (C_INFO)
@@ -426,15 +426,15 @@ FUNC INT Info_Mod_Daron_KlosterAngegriffen_Condition()
 
 FUNC VOID Info_Mod_Daron_KlosterAngegriffen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_00"); //Bei Innos, was für ein Alptraum.
-	AI_Output(hero, self, "Info_Mod_Daron_KlosterAngegriffen_15_01"); //Hallo, gibt es was Neues?
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_02"); //(erzürnt) Ob es etwas Neues gibt?! Bei Anbruch der Nacht überfielen Horden feuriger Dämonen unser Kloster.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_03"); //Es passierte so plötzlich, dass wir gar nicht wussten, wie uns geschah.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_04"); //Nach kurzem Kampf mussten wir uns der Übermacht geschlagen geben und flüchteten in die inneren Räume.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_05"); //Wir waren zuerst überrascht und glücklich zu sehen, dass wir alle mit dem Leben davongekommen waren, was sicher auch auf unsere Erfahrung im Umgang mit Feuer zurückzuführen ist.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_06"); //(Außer sich) Am nächsten morgen mussten wir jedoch feststellen, dass die Bastarde den größten Teil unserer Reichtümer und Vorräte gestohlen hatten.
-	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_07"); //Frevler, Untiere, Ausgeburten ...
-	AI_Output(hero, self, "Info_Mod_Daron_KlosterAngegriffen_15_08"); //(halblaut) Ja, dann will ich dich mal nicht weiter stören.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_00"); //Z Innosem koszmar.
+	AI_Output(hero, self, "Info_Mod_Daron_KlosterAngegriffen_15_01"); //Czy jest cos nowego?
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_02"); //Czy bedzie cos nowego! W nocy na nasz klasztor wkroczyly hordy ognistych demonów.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_03"); //Zdarzylo sie to tak nagle, ze nawet nie wiedzielismy, co sie z nami stalo.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_04"); //Po krótkiej walce musielismy poddac sie wyzszosci i ucieklismy do wewnetrznych pomieszczen.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_05"); //Poczatkowo bylismy zaskoczeni i szczesliwi widzac, ze wszyscy odeszlismy od zycia, co z pewnoscia zawdzieczamy naszemu doswiadczeniu w walce z ogniem.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_06"); //Nastepnego ranka odkrylismy jednak, ze dranie skradzily wiekszosc naszych bogactw i zapasów.
+	AI_Output(self, hero, "Info_Mod_Daron_KlosterAngegriffen_10_07"); //Niesprawiedliwi, bestie, zwierzeta, ogniska.....
+	AI_Output(hero, self, "Info_Mod_Daron_KlosterAngegriffen_15_08"); //Nie chce juz wiecej Cie niepokoic.
 
 	AI_StopProcessInfos	(self);
 };
@@ -463,7 +463,7 @@ FUNC VOID Info_Mod_Daron_Katar_Info()
 {
 	AI_TurnToNpc	(self, Mod_1190_NOV_Katar_NW);
 
-	AI_Output(self, hero, "Info_Mod_Daron_Katar_10_00"); //Was soll denn das? Auch Innos kann nicht immer vergeben! Das bedeutet Strafarbeit.
+	AI_Output(self, hero, "Info_Mod_Daron_Katar_10_00"); //Co robisz? Innos nie zawsze moze przebaczyc! To oznacza kare.
 
 	AI_StopProcessInfos	(self);
 };
@@ -488,16 +488,16 @@ FUNC INT Info_Mod_Daron_Rasend_Condition()
 
 FUNC VOID Info_Mod_Daron_Rasend_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_00"); //(bestürzt) So, viele Brüder sehe ich hier vor mir liegen. Hinweggerafft durch die Hand eines verfluchten Dämonen.
-	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_01"); //Was ist geschehen? Schon wieder der Dämon?
-	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_02"); //Ja, dasselbe abscheuliche Untier, das für das Blutbad in der Stadt verantwortlich ist.
-	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_03"); //Er kam aus dem nichts und hatte – ehe jemand begriff, was eigentlich vor sich ging – schon viele meiner Brüder erschlagen.
-	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_04"); //Sie hatten keine Chance ...
-	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_05"); //Und wo befindet sich der Dämon jetzt, wohin ist er danach verschwunden?
-	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_06"); //Als er seine Gier nach Töten endlich gestillt hatte, erhob er sich wieder in die Luft und flog in die selbe Richtung weiter, die er von der Stadt aus zu uns genommen hatte, nach Osten.
-	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_07"); //Nach Osten ... Aber damit würde er ja genau ... die Ausgrabungsstätte der Wassermagier! Ich muss unbedingt weiter.
+	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_00"); //Widze, jak wielu braci lezy tu przede mna. Gotowy reka przekletego demona.
+	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_01"); //Co sie stalo? Po raz kolejny zademonstrowac?
+	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_02"); //Tak, ta sama ohydna bestia odpowiedzialna za masakre miasta.
+	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_03"); //Zniknal znikad i zanim ktos zrozumial, co sie dzieje, zabil juz wielu moich braci.
+	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_04"); //Nie miales szansy....
+	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_05"); //A gdzie teraz jest demon, gdzie potem zniknal?
+	AI_Output(self, hero, "Info_Mod_Daron_Rasend_10_06"); //Kiedy w koncu ugasil swoja chciwosc do zabicia, wstal znowu w powietrze i lecial na wschód w tym samym kierunku, w którym odszedl z miasta.
+	AI_Output(hero, self, "Info_Mod_Daron_Rasend_15_07"); //Na wschód.... Ale z tym wlasnie bylby dokladnie..... wykopalisko magów wody! Musze isc dalej.
 
-	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Auch im Kloster hat der Dämon wie ein Berserker gewütet. Was mich aber vor allem mehr als beunruhigt ist die Tatsache, dass er nach Osten weitergeflogen ist… ziemlich genau in die Richtung, der Ausgrabungsstätte.");
+	B_LogEntry	(TOPIC_MOD_ADANOS_RASEND, "Nawet w klasztorze demon szaleje jak berserk. Ale to, co mnie bardziej martwi niz cokolwiek innego, to fakt, ze leci na wschód.... dosc wiele w kierunku miejsca wykopu.");
 
 	B_KillNpc	(Mod_1535_WKR_Wasserkrieger_NW);
 	B_KillNpc	(Mod_1534_WKR_Wasserkrieger_NW);

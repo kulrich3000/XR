@@ -2,7 +2,7 @@ instance Mod_7507_BUD_Sterling_REL (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Sterling";
+	name =							"funt szterling";
 	npctype =						npctype_MAIN;
 	guild =							GIL_out;      
 	level =							2;

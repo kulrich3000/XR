@@ -1,7 +1,7 @@
 INSTANCE Monster_11053_Demonlord_IR (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dämonenlord";	
+	name 		= "demon";	
 	guild 		= GIL_DEMON;
 	id 			= 11053;
 	voice 		= 20;

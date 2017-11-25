@@ -34,7 +34,7 @@ func int Wld_GetPortalRoom (var string portalName) {
 		MEM_StackPos.position = loop;
 	};
 	
-	MEM_Warn (ConcatStrings ("Wld_GetPortalRoom failed. No such portal: ", portalName));
+	MEM_Warn (ConcatStrings ("Wld_GetPortalRoom zawiodla. Brak takiego portalu: ", portalName));
 	return 0;
 };
 

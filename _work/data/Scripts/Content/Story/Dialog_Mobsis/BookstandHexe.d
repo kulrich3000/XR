@@ -23,16 +23,16 @@ FUNC VOID Use_BookstandHexe1_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Die Riesen der Vorzeit"					);
+					Doc_PrintLine	( nDocID,  0, "Giganci prehistorii"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Nicht weit im Osten residiert der Riese Talos. Sein Körper ist fest wie Eisen, seine Widerstandskraft gegen Magie, Waffen, Eis und Feuer immens. Die Legende besagt, dass auf jenen, der ihn bezwingen kann, ein Teil seiner Macht übergeht."						);
+					Doc_PrintLines	( nDocID,  0, "Niedaleko wschodu znajduje sie olbrzymi Talos. Jego cialo jest solidne jak zelazo, jego odpornosc na magie, bron, lód i ogien jest ogromna. Legenda glosi, ze czesc jego wladzy przechodzi na tych, którzy potrafia go pokonac."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Im Westen wiederum erhebt sich der Frostriese über die Umgebung. Seine Aura lässt alles in der Nähe zu Eis erstarren, so heißt es. Schon viele Unglückliche, die ihm sich nährten, ereilte das Verderben ..."						);
+					Doc_PrintLine	( nDocID,  1, "Na zachodzie nad okolica wznosi sie mróz olbrzymi. Jego aura powoduje, ze wszystko umacnia sie w poblizu lodu, mówi sie. Wielu nieszczesliwych ludzi, którzy go karmili, zostalo juz uwiklanych w psucie.... Wiecej"						);
 					Doc_Show		( nDocID );
 					
 					if (Hexe_1_permanent == FALSE)

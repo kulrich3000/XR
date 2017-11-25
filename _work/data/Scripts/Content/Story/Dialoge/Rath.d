@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rath_Hi (C_INFO)
 	information	= Info_Mod_Rath_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Rath_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Rath_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Rath_Hi_08_01"); //Ich bin Rath. Was willst du?
+	AI_Output(self, hero, "Info_Mod_Rath_Hi_08_01"); //Jestem Rath. Czego chcesz?
 };
 
 INSTANCE Info_Mod_Rath_Sumpfkraut (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Rath_Sumpfkraut (C_INFO)
 	information	= Info_Mod_Rath_Sumpfkraut_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier 'ne Lieferung Sumpfkraut.";
+	description	= "Dostalem tu ladunek chwastów bagiennych.";
 };
 
 FUNC INT Info_Mod_Rath_Sumpfkraut_Condition()
@@ -44,21 +44,21 @@ FUNC INT Info_Mod_Rath_Sumpfkraut_Condition()
 
 FUNC VOID Info_Mod_Rath_Sumpfkraut_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_00"); //Ich hab hier 'ne Lieferung Sumpfkraut.
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_01"); //Sumpfkraut? Was will ich mit dem Scheiß?
-	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_02"); //Baal Namib hat gesagt, ich solle es bei dir abliefern.
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_03"); //(lacht, bricht mitten drin aber ab) Du meinst das ernst, oder?
-	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_04"); //Wenn dem so wäre?
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_05"); //Das ist zu komisch (lacht) Kein Mensch raucht heute noch Sumpfkraut!
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_06"); //Das Zeug ist schweineteuer und du bist danach gerade mal für 'ne Stunde high.
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_07"); //Ich sag's dir, die Zukunft liegt in Freudenspender.
-	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_08"); //Freudenspender? Was ist das schon wieder?
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_09"); //Wohnst du hinterm Mond? Freudenspender ist DIE neue Droge. Billig, stark und schnell.
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_10"); //Da kann Sumpfkraut in keiner Beziehung mithalten!
-	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_11"); //Soso ... und woher bekommt ihr dieses Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_12"); //In Khorata wird dir das Ganze nachgeschmissen. Da ist so 'n Typ am Marktplatz, der das so gut wie verschenkt.
+	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_00"); //Dostalem tu ladunek chwastów bagiennych.
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_01"); //Swamport? Czego chce z tym gówno?
+	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_02"); //Baal Namib kazal mi zrzucic go na miejsce.
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_03"); //Jestes powazny, prawda?
+	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_04"); //Jesli tak, to czy tak bylo?
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_05"); //To zbyt smieszne (smiech) Nikt dzis nie pali!
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_06"); //To jest kosztowne, a potem przez godzine bedziesz wysoki.
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_07"); //Mówie, ze przyszlosc jest w radosnym dozowniku.
+	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_08"); //Przyjemnosc dla dawcy? Co to jest znów?
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_09"); //Czy zyjesz za ksiezycem? Przyjemnosc jest nowym narkotykiem. Tanie, mocne i szybkie.
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_10"); //Podmiana nie moze w zaden sposób konkurowac!
+	AI_Output(hero, self, "Info_Mod_Rath_Sumpfkraut_15_11"); //Sooso.... skad czerpiesz te radosc?
+	AI_Output(self, hero, "Info_Mod_Rath_Sumpfkraut_08_12"); //W Khorata, jestes usciskany. Na targowisku jest czlowiek, który praktycznie go rozdaje.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_DEALER, "Rath findet es sehr amüsant, dass ich ihm Sumpfkraut verkaufen wollte. Er meint, dass Sumpfkraut nicht mehr geraucht wird, da es viel zu teuer ist. Die neue Droge heißt Freudenspender, welches ein Typ auf dem Marktplatz von Khorata verkauft. Ich sollte Baal Namib davon berichten.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_DEALER, "Rath uwaza za bardzo zabawne, ze próbowalem go sprzedac. Mówi, ze ziolo bagienne nie jest juz wedzone, poniewaz jest o wiele za drogie. Nowy lek nosi nazwe Freudenspender, który gosc sprzedaje na rynku Khorata. Mialem o tym opowiedziec Baalowi Namibowi.");
 };
 
 INSTANCE Info_Mod_Rath_Training (C_INFO)
@@ -69,7 +69,7 @@ INSTANCE Info_Mod_Rath_Training (C_INFO)
 	information	= Info_Mod_Rath_Training_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das Training bei Patrick wartet.";
+	description	= "Na Ciebie czeka szkolenie Patricka.";
 };
 
 FUNC INT Info_Mod_Rath_Training_Condition()
@@ -82,23 +82,23 @@ FUNC INT Info_Mod_Rath_Training_Condition()
 
 FUNC VOID Info_Mod_Rath_Training_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Training_15_00"); //Das Training bei Patrick wartet.
-	AI_Output(self, hero, "Info_Mod_Rath_Training_08_01"); //Ohh, man, das muss jetzt aber echt nicht sein. Ich geh ein andermal.
+	AI_Output(hero, self, "Info_Mod_Rath_Training_15_00"); //Na Ciebie czeka szkolenie Patricka.
+	AI_Output(self, hero, "Info_Mod_Rath_Training_08_01"); //Och, czlowiek, nie musisz byc. Pójde jeszcze raz.
 
 	Info_ClearChoices	(Info_Mod_Rath_Training);
 
-	Info_AddChoice	(Info_Mod_Rath_Training, "Dann muss ich deinem Willen vielleicht mit einigen Schlägen nachhelfen.", Info_Mod_Rath_Training_B);
+	Info_AddChoice	(Info_Mod_Rath_Training, "Wtedy byc moze bede musial ci pomóc kilka razy.", Info_Mod_Rath_Training_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Rath_Training, "Ich gebe dir 100 Goldmünzen. Was sagst du?", Info_Mod_Rath_Training_A);
+		Info_AddChoice	(Info_Mod_Rath_Training, "Daje ci 100 zlotych monet. Co mówisz?", Info_Mod_Rath_Training_A);
 	};
 };
 
 FUNC VOID Info_Mod_Rath_Training_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Training_B_15_00"); //Dann muss ich deinem Willen vielleicht mit einigen Schlägen nachhelfen.
-	AI_Output(self, hero, "Info_Mod_Rath_Training_B_08_01"); //Du Wicht willst dich mit mir anlegen?! Komm her!
+	AI_Output(hero, self, "Info_Mod_Rath_Training_B_15_00"); //Wtedy byc moze bede musial ci pomóc kilka razy.
+	AI_Output(self, hero, "Info_Mod_Rath_Training_B_08_01"); //Chcesz sie ze mna zamieszac? Zapraszamy tutaj!
 
 	Info_ClearChoices	(Info_Mod_Rath_Training);
 
@@ -111,8 +111,8 @@ FUNC VOID Info_Mod_Rath_Training_B()
 
 FUNC VOID Info_Mod_Rath_Training_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Training_A_15_00"); //Ich gebe dir 100 Goldmünzen. Was sagst du?
-	AI_Output(self, hero, "Info_Mod_Rath_Training_A_08_01"); //100 Goldmünzen? Was will ich damit. Ne, wenn du mir 5 grüne Novizen, oder 12 normale Sumpfkrautstängel besorgst, bin ich dabei.
+	AI_Output(hero, self, "Info_Mod_Rath_Training_A_15_00"); //Daje ci 100 zlotych monet. Co mówisz?
+	AI_Output(self, hero, "Info_Mod_Rath_Training_A_08_01"); //Sto setek zlotych monet? Co chce z tym zrobic? Nie, jesli dostajesz mnie pieciu nowicjuszy zielonych lub 12 czystych bagnistych lodyg, jestem w srodku.
 
 	Info_ClearChoices	(Info_Mod_Rath_Training);
 
@@ -127,7 +127,7 @@ INSTANCE Info_Mod_Rath_Joints (C_INFO)
 	information	= Info_Mod_Rath_Joints_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Hier hast du ...";
+	description	= "Tutaj masz.....";
 };
 
 FUNC INT Info_Mod_Rath_Joints_Condition()
@@ -141,7 +141,7 @@ FUNC INT Info_Mod_Rath_Joints_Condition()
 
 FUNC VOID Info_Mod_Rath_Joints_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Joints_15_00"); //Hier hast du ...
+	AI_Output(hero, self, "Info_Mod_Rath_Joints_15_00"); //Tutaj masz.....
 	
 	Info_ClearChoices	(Info_Mod_Rath_Joints);
 
@@ -149,11 +149,11 @@ FUNC VOID Info_Mod_Rath_Joints_Info()
 
 	if (Npc_HasItems(hero, ItMi_Joint) >= 12)
 	{
-		Info_AddChoice	(Info_Mod_Rath_Joints, "... 12 Stängel Sumpfkraut", Info_Mod_Rath_Joints_B);
+		Info_AddChoice	(Info_Mod_Rath_Joints, "... 12 lodyg chwastów bagiennych", Info_Mod_Rath_Joints_B);
 	};
 	if (Npc_HasItems(hero, ItMi_Addon_Joint_01) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Rath_Joints, "... 5 grüne Novizen", Info_Mod_Rath_Joints_A);
+		Info_AddChoice	(Info_Mod_Rath_Joints, "... 5 zielonych nowicjuszy", Info_Mod_Rath_Joints_A);
 	};
 };
 
@@ -164,7 +164,7 @@ FUNC VOID Info_Mod_Rath_Joints_C()
 
 FUNC VOID Info_Mod_Rath_Joints_D()
 {
-	AI_Output(self, hero, "Info_Mod_Rath_Joints_D_08_00"); //Ausgezeichnet. Du scheinst tatsächlich noch nicht lange im Lager zu sein. Für so viel Sumpfkraut würde ich es sogar mit zwei Trollen auf einmal aufnehmen.
+	AI_Output(self, hero, "Info_Mod_Rath_Joints_D_08_00"); //Doskonaly. Tak naprawde nie wydaje sie, zebys przez dlugi czas byl w obozie. Za te bagnista ambrozje bralem nawet na siebie dwa trolle.
 
 	Info_ClearChoices	(Info_Mod_Rath_Joints);
 
@@ -172,14 +172,14 @@ FUNC VOID Info_Mod_Rath_Joints_D()
 
 	Mod_SLD_Rath = 3;
 
-	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "So, mit etwas Überredungskunst ist Rath unterwegs zum Training.");
+	B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Wiec z odrobina perswazji, Rath jest na jego drodze do praktyki.");
 
 	B_StartOtherRoutine	(self, "TRAINING");
 };
 
 FUNC VOID Info_Mod_Rath_Joints_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Joints_B_15_00"); //... 12 Stängel Sumpfkraut.
+	AI_Output(hero, self, "Info_Mod_Rath_Joints_B_15_00"); //... 12 lodyg bagna.
 
 	B_GiveInvItems	(hero, self, ItMi_Joint, 12);
 
@@ -188,7 +188,7 @@ FUNC VOID Info_Mod_Rath_Joints_B()
 
 FUNC VOID Info_Mod_Rath_Joints_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rath_Joints_A_15_00"); //... 5 grüne Novizen.
+	AI_Output(hero, self, "Info_Mod_Rath_Joints_A_15_00"); //... 5 zielonych nowicjuszy.
 
 	B_GiveInvItems	(hero, self, ItMi_Addon_Joint_01, 5);
 
@@ -220,19 +220,19 @@ FUNC VOID Info_Mod_Rath_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_00"); //Verdammt, mein Rücken ...
-			AI_Output(hero, self, "Info_Mod_Rath_Umgehauen_15_01"); //Na, ein bisschen Training wird deinem Rücken bestimmt gut tun.
-			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_02"); //Jaja, ich geh ja schon.
+			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_00"); //Uderza, kregoslup, plecy....
+			AI_Output(hero, self, "Info_Mod_Rath_Umgehauen_15_01"); //No cóz, troche trening zrobi ci dobrze na plecach.
+			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_02"); //Tak, tak, tak, ide.
 
 			Mod_SLD_Rath = 3;
 
-			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "So, mit etwas Überredungskunst ist Rath unterwegs zum Training.");
+			B_LogEntry	(TOPIC_MOD_SLD_PATRICK, "Wiec z odrobina perswazji, Rath jest na jego drodze do praktyki.");
 
 			B_StartOtherRoutine	(self, "TRAINING");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_03"); //Nichts mit Trainig.
+			AI_Output(self, hero, "Info_Mod_Rath_Umgehauen_08_03"); //Nic z treningiem.
 
 			Mod_SLD_Rath = 1;
 		};

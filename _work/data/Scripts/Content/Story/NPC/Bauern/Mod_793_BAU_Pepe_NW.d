@@ -1,7 +1,7 @@
 instance Mod_793_BAU_Pepe_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Pepe";
+	name 		= "podglad";
 	guild 		= GIL_NONE;
 	id 			= 793;
 	voice 		= 28;

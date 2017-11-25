@@ -1,7 +1,7 @@
 INSTANCE Zombie_11017_FM (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Zombie - Schürfer";	
+	name 		= "Zombie - Digger";	
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	20;

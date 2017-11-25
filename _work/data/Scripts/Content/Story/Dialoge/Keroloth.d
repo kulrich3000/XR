@@ -19,10 +19,10 @@ FUNC INT Info_Mod_Keroloth_Mario_Condition()
 FUNC VOID Info_Mod_Keroloth_Mario_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
-	AI_Output(hero, self, "Info_Mod_Keroloth_Mario_15_00"); //(schreit) Nein!
-	AI_Output(self, hero, "Info_Mod_Keroloth_Mario_07_01"); //Das hat er schon verdient, muss ich sagen.
-	AI_Output(hero, self, "Info_Mod_Keroloth_Mario_15_02"); //Wieso ...?
-	AI_Output(self, hero, "Info_Mod_Keroloth_Mario_07_03"); //Allgemein, meine ich. Und er hätte sich von Garond nicht provozieren lassen dürfen.
+	AI_Output(hero, self, "Info_Mod_Keroloth_Mario_15_00"); //(smieci) Nie!
+	AI_Output(self, hero, "Info_Mod_Keroloth_Mario_07_01"); //Musze powiedziec, ze zasluguje na to juz teraz.
+	AI_Output(hero, self, "Info_Mod_Keroloth_Mario_15_02"); //Dlaczego....?
+	AI_Output(self, hero, "Info_Mod_Keroloth_Mario_07_03"); //Ogólnie rzecz biorac, mam na mysli. I on nie powinien byl pozwolic Garondowi go sprowokowac.
 
 	AI_StopProcessInfos	(self);
 
@@ -51,10 +51,10 @@ FUNC INT Info_Mod_Keroloth_Mario2_Condition()
 
 FUNC VOID Info_Mod_Keroloth_Mario2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_00"); //Verdammt, jetzt ist aber Schluss mit den Duellen!
-	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_01"); //Sonst haben wir in ein paar Tagen gar keine Männer mehr!
-	AI_Output(hero, self, "Info_Mod_Keroloth_Mario2_15_02"); //Keine Sorge.
-	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_03"); //Keine Sorge ist gut, Mann. Und wer ... entfernt jetzt die Leichen und das ganze Blut?
+	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_00"); //Damn, to wystarczy pojedynki!
+	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_01"); //W przeciwnym razie za kilka dni nie bedziemy mieli mezczyzn!
+	AI_Output(hero, self, "Info_Mod_Keroloth_Mario2_15_02"); //Nie martw sie o to.
+	AI_Output(self, hero, "Info_Mod_Keroloth_Mario2_07_03"); //Nie martw sie o to, czlowiek. Kto....? Teraz usun ciala i cala krew?
 
 	AI_StopProcessInfos	(self);
 

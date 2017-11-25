@@ -42,15 +42,15 @@ FUNC INT Info_Mod_Orakel_Nagon_Condition()
 
 FUNC VOID Info_Mod_Orakel_Nagon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_00"); //Ich habe dich erwartet! Du suchst einen Weg die Foki zu erlangen.
-	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_01"); //Woher weißt du ...?
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_02"); //Ich bin das Orakel. Ich habe mein Wissen von Innos selbst erlangt.
-	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_03"); //Also wie komm ich jetzt an die Foki?
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_04"); //Du musst fünf Eigenschaften besitzen: Mut, List, Vernunft, Glaube und Ehrlichkeit.
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_05"); //Für jeden der Foki musst du eine dieser Eigenschaften nutzen, nur so kannst du alle erlangen.
-	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_06"); //Nun geh und erfülle deine Aufgabe!
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_00"); //Oczekiwalem Ciebie! Szukasz sposobu na skupienie uwagi.
+	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_01"); //Skad wiesz.....?
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_02"); //Jestem Oracle. Swoja wiedze zdobylem od samego Innosa.
+	AI_Output(hero, self, "Info_Mod_Orakel_Nagon_15_03"); //Jak wiec teraz skupic sie na tym zagadnieniu?
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_04"); //Musicie miec piec cech: odwage, spryt, rozum, wiare i uczciwosc.
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_05"); //Dla kazdego z Foki musisz uzyc jednej z tych funkcji, co jest jedynym sposobem, aby uzyskac je wszystkie.
+	AI_Output(self, hero, "Info_Mod_Orakel_Nagon_07_06"); //Teraz wykonaj swoja prace!
 
-	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Das Orakel hat gesagt, dass ich fünf Eigenschaften brauche, um die Foki zu erlangen: Mut, List, Vernunft, Glaube und Ehrlichkeit.");
+	B_LogEntry	(TOPIC_MOD_FM_FOKI, "Oracle powiedzial, ze potrzebuje pieciu cech: odwagi, spryt, rozumu, wiary i uczciwosci.");
 
 	B_GivePlayerXP	(500);
 

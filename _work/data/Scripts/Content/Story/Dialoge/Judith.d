@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Judith_Hi (C_INFO)
 	information	= Info_Mod_Judith_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Erzähl mir was von dir.";
+	description	= "Powiedz mi o sobie.";
 };
 
 FUNC INT Info_Mod_Judith_Hi_Condition()
@@ -16,11 +16,11 @@ FUNC INT Info_Mod_Judith_Hi_Condition()
 
 FUNC VOID Info_Mod_Judith_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Hi_15_00"); //Erzähl mir was von dir.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_01"); //Was soll ich groß von mir erzählen?
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_02"); //Ich habe mir vorgenommen, regelmäßig lange Abendspaziergänge zu machen.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_03"); //Den ganzen Tag in der Küche stehen, den Haushalt in Schuss halten - da braucht man auch mal etwas Abwechslung, um den Kopf frei zu bekommen.
-	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_04"); //Wenn es das war, was du hören wolltest ...
+	AI_Output(hero, self, "Info_Mod_Judith_Hi_15_00"); //Powiedz mi o sobie.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_01"); //Co mam powiedziec o sobie samym?
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_02"); //Planowalem regularne dlugie wieczorne spacery.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_03"); //Stojac w kuchni przez caly dzien, utrzymujac gospodarstwo domowe w dobrej kondycji - aby uzyskac czysta glowe, potrzebna jest takze niewielka zmiana.
+	AI_Output(self, hero, "Info_Mod_Judith_Hi_06_04"); //Jesli to wlasnie chciales uslyszec....
 };
 
 INSTANCE Info_Mod_Judith_Pavillon (C_INFO)
@@ -43,30 +43,30 @@ FUNC INT Info_Mod_Judith_Pavillon_Condition()
 
 FUNC VOID Info_Mod_Judith_Pavillon_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_06_00"); //(leise) Bist du es, Liebling?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_06_00"); //Czy to ty, ulubieniec?
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "(säuseln) Ja, mein Schatz.", Info_Mod_Judith_Pavillon_B);
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Wie bitte?", Info_Mod_Judith_Pavillon_A);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Tak, moje ulubienie.", Info_Mod_Judith_Pavillon_B);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Prosze o wybaczenie?", Info_Mod_Judith_Pavillon_A);
 };
 
 FUNC VOID Info_Mod_Judith_Pavillon_B()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_B_15_00"); //(säuseln) Ja, mein Schatz.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_01"); //Ich muss dir unbedingt erzählen, was vorhin passiert ist.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_02"); //Ich glaube, Lukas hat Verdacht geschöpft.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_B_15_00"); //Tak, moje ulubienie.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_01"); //Naprawde musze panstwu powiedziec, co wydarzylo sie wczesniej.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_B_06_02"); //Mysle, ze lucas stal sie podejrzliwy.
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Von was hat er Verdacht geschöpft?", Info_Mod_Judith_Pavillon_D);
-	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Wollen wir nicht gleich zur Sache kommen?", Info_Mod_Judith_Pavillon_C);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Co podejrzewal?", Info_Mod_Judith_Pavillon_D);
+	Info_AddChoice	(Info_Mod_Judith_Pavillon, "Czy mamy ciec do poscigu?", Info_Mod_Judith_Pavillon_C);
 };
 
 FUNC VOID Info_Mod_Judith_Pavillon_A()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_A_15_00"); //Wie bitte?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_A_06_01"); //(erschrocken) Gar nichts. Ich muss wohl schlafwandeln.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_A_15_00"); //Prosze o wybaczenie?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_A_06_01"); //Nic nie ma nic. Musze byc spiaczka.
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -77,15 +77,15 @@ FUNC VOID Info_Mod_Judith_Pavillon_A()
 
 FUNC VOID Info_Mod_Judith_Pavillon_D()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_00"); //Von was hat er Verdacht geschöpft?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_01"); //Na, dass ich mich mit dir treffe.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_02"); //Als ich ihm sagte, dass ich noch mal kurz an die frische Luft müsste, weil mir übel sei, hat er geantwortet, Hauptsache, ich lande nicht beim Peter.
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_03"); //Ich bin Peter?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_04"); //(ironisch) Sicher, mit dem würd ich mich auch gerade um diese Uhrzeit hier herumtreiben.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_05"); //(neckisch) Treib nur deine Spielchen mit mir!
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_06"); //(mir ironischem Unterton) Du kennst mich doch!
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_07"); //Jetzt aber genug von Lukas. Ich muss nur etwas vorsichtiger sein.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_08"); //Machen wir es uns ein wenig gemütlich!
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_00"); //Co podejrzewal?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_01"); //No cóz, ze cie widze.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_02"); //Kiedy powiedzialem mu, ze znowu musze odrobine swiezego powietrza, bo bylem chory, odpowiedzial:"Dopóki nie skonczy sie na Piotrze.
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_03"); //Jestem Piotrem?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_04"); //(ironiczne) No z pewnoscia, o tej godzinie spedzilem z nim czas.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_05"); //Po prostu graj w gry przy mnie!
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_D_15_06"); //Ty mnie znasz, znasz mnie!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_07"); //Teraz wystarczy Lukasza. Musze byc tylko nieco ostrozny.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_D_06_08"); //Uczynmy sie komfortowymi!
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -96,14 +96,14 @@ FUNC VOID Info_Mod_Judith_Pavillon_D()
 
 FUNC VOID Info_Mod_Judith_Pavillon_C()
 {
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_00"); //Wollen wir nicht gleich zur Sache kommen?
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_01"); //Zu welcher Sache?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_02"); //Na ja ... was wir sonst auch immer machen.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_03"); //Immer? Das ist unser drittes Treffen! Langsam habe ich das Gefühl ...
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_00"); //Czy mamy ciec do poscigu?
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_01"); //Do jakiej przyczyny?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon_C_15_02"); //.... cokolwiek jeszcze robimy.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_03"); //Zawsze? To nasze trzecie spotkanie! Zaczynam odczuwac....
 
 	AI_GotoNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_04"); //Ah! Du bist nicht ... nicht der Richtige!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon_C_06_04"); //Ach! Nie jestes..... Nie wlasciwy czlowiek!
 
 	Info_ClearChoices	(Info_Mod_Judith_Pavillon);
 
@@ -133,11 +133,11 @@ FUNC INT Info_Mod_Judith_Pavillon2_Condition()
 
 FUNC VOID Info_Mod_Judith_Pavillon2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_00"); //Wann sehen wir uns wieder?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_01"); //Wann immer du willst.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_02"); //Morgen, gleiche Zeit?
-	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_03"); //Gern. Aber vielleicht bin ich nicht pünktlich.
-	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_04"); //(lacht) Das sagst du immer. Und bist dann doch immer pünktlich. Bis morgen!
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_00"); //Kiedy spotkamy sie ponownie?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_01"); //Kiedykolwiek chcesz.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_02"); //Ten sam czas jutro?
+	AI_Output(hero, self, "Info_Mod_Judith_Pavillon2_15_03"); //Wyraznie. Ale moze nie jestem na czas.
+	AI_Output(self, hero, "Info_Mod_Judith_Pavillon2_06_04"); //To zawsze mówisz. I zawsze jestes na czas. Do zobaczenia jutro!
 
 	AI_StopProcessInfos	(self);
 

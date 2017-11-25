@@ -14,7 +14,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel, VAR INT aktuelles_Level_Zen)
 	if (neues_Kapitel == 1)
 	{
 		// ------ Bild einblenden ------
-		IntroduceChapter (KapWechsel_1,"Die Bedrohung","chapter1.tga","chapter_01.wav", 6000);
+		IntroduceChapter (KapWechsel_1,"Zagrozenie","chapter1.tga","chapter_01.wav", 6000);
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_1);
 	}
 	
@@ -24,7 +24,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel, VAR INT aktuelles_Level_Zen)
 	else if	(neues_Kapitel == 2)
 	{
 		// ------ Bild einblenden ------
-		IntroduceChapter (KapWechsel_2,"Die Foki","chapter2.tga","chapter_01.wav", 6000);
+		IntroduceChapter (KapWechsel_2,"Foki","chapter2.tga","chapter_01.wav", 6000);
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_2);
 	}
 	
@@ -44,7 +44,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel, VAR INT aktuelles_Level_Zen)
 	else if (neues_Kapitel == 4)
 	{
 		// ------ Bild einblenden ------
-		IntroduceChapter (KapWechsel_4,"Die Macht der 3 Götter","chapter4.tga","chapter_01.wav", 6000);
+		IntroduceChapter (KapWechsel_4,"Moc 3 Bogów","chapter4.tga","chapter_01.wav", 6000);
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_4);
 	}
 	
@@ -64,7 +64,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel, VAR INT aktuelles_Level_Zen)
 	else if (neues_Kapitel == 6)
 	{
 		// ------ Bild einblenden ------
-		IntroduceChapter (KapWechsel_6,"Die Arena","chapter6.tga","chapter_01.wav", 6000);
+		IntroduceChapter (KapWechsel_6,"Arena","chapter6.tga","chapter_01.wav", 6000);
 		Spine_UnlockAchievement(SPINE_ACHIEVEMENT_6);
 	};
 	

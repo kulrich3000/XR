@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Balrog(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Balrog";
+	name							= "balkon";
 	guild							= GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= ID_BALROG;
 	level							= 150;
@@ -78,7 +78,7 @@ INSTANCE Balrog	(Mst_Default_Balrog)
 
 INSTANCE Balrog_Xeres	(Mst_Default_Balrog)
 {
-	name		= "Xeres";
+	name		= "Xeze";
 
 	attribute	[ATR_STRENGTH]		= 600;
 	attribute	[ATR_HITPOINTS_MAX]	= 2000;

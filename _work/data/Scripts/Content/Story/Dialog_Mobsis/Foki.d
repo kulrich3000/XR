@@ -28,7 +28,7 @@ FUNC VOID B_ActivateFokus ()
 
 		Wld_InsertNpc	(Mod_678_DMB_Xardas_AW,		"ADW_ENTRANCE");
 
-		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Ich habe alle fünf Foki eingesetzt. Beim Einsetzen des letzten Foki gab es ein Erdbeben. Ich sollte mal zu den Wassermagiern gehen.");
+		B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Wlozylem ich wszystkich piec. Ostatnie miejsce zajelo trzesienie ziemi. W pewnym czasie powinienem udac sie do Magicystów Wody.");
 
 		B_GivePlayerXP	(300);
 
@@ -55,7 +55,7 @@ FUNC VOID B_ActivateFokus ()
 
 			FokusBlockade = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Verdammt, wie bin ich hier gelandet? Irgendwas muss mit den Teleporterplattformen schiefgelaufen sein.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Jak skonczylo sie pieklo? Cos z platformami teleportacyjnymi musialo pójsc nie tak.");
 
 			Wld_InsertNpc	(Menschenfresser, "AW_CAVE_MENSCHENFRESSER_03");
 		};
@@ -64,7 +64,7 @@ FUNC VOID B_ActivateFokus ()
 		{
 			FokusBlockade = TRUE;
 
-			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Nicht schon wieder. Und diesmal eine recht peinliche Situation.");
+			B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Jeszcze raz. I tym razem wstydliwa sytuacja.");
 
 			B_SetLevelchange ("NewWorld\NewWorld.zen", "NW_CITY_LARIUS_BED");
 		};
@@ -79,7 +79,7 @@ INSTANCE PC_Fokus1_Einsetzen (C_INFO)
 	information	= PC_Fokus1_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fokus einsetzen";
+	description	= "Uzywanie ostrosci";
 };
 
 FUNC INT PC_Fokus1_Einsetzen_Condition()
@@ -129,7 +129,7 @@ INSTANCE PC_Fokus2_Einsetzen (C_INFO)
 	information	= PC_Fokus2_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fokus einsetzen";
+	description	= "Uzywanie ostrosci";
 };
 
 FUNC INT PC_Fokus2_Einsetzen_Condition()
@@ -180,7 +180,7 @@ INSTANCE PC_Fokus3_Einsetzen (C_INFO)
 	information	= PC_Fokus3_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fokus einsetzen";
+	description	= "Uzywanie ostrosci";
 };
 
 FUNC INT PC_Fokus3_Einsetzen_Condition()
@@ -230,7 +230,7 @@ INSTANCE PC_Fokus4_Einsetzen (C_INFO)
 	information	= PC_Fokus4_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fokus einsetzen";
+	description	= "Uzywanie ostrosci";
 };
 
 FUNC INT PC_Fokus4_Einsetzen_Condition()
@@ -285,7 +285,7 @@ INSTANCE PC_Fokus5_Einsetzen (C_INFO)
 	information	= PC_Fokus5_Einsetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Fokus einsetzen";
+	description	= "Uzywanie ostrosci";
 };
 
 FUNC INT PC_Fokus5_Einsetzen_Condition()

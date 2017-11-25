@@ -1,7 +1,7 @@
 INSTANCE Mod_7516_OUT_Lukas_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lukas";
+	name 		= "Lukasz";
 	guild 		= GIL_OUT;
 	id 			= 7516;
 	voice 		= 6;

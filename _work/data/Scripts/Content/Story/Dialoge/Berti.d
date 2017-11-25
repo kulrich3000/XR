@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Berti_Hi (C_INFO)
 	information	= Info_Mod_Berti_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie gefällt dir das Stück?";
+	description	= "Jak podoba Ci sie ta sztuka?";
 };
 
 FUNC INT Info_Mod_Berti_Hi_Condition()
@@ -16,13 +16,13 @@ FUNC INT Info_Mod_Berti_Hi_Condition()
 
 FUNC VOID Info_Mod_Berti_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Berti_Hi_15_00"); //Wie gefällt dir das Stück?
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_01"); //Sauber geschrieben vielleicht - aber inhaltlich ist das doch Kokolores.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_02"); //Der gute Will geht mit den Zuschauern um, als wären sie unmündige kleine Kinder. Diese unverhohlenen Moralbelehrungen!
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_03"); //Er verkennt nun mal, dass das heutige Theater anderen Ansprüchen gerecht werden muss.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_04"); //Ich will keine Lehrmeinungen vorgesetzt bekommen, ich will selbst reflektieren und analysieren!
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_05"); //Und nun brüstet er sich mit seinen Neuerungen, winzige Änderungen im Vergleich zu dem, was mir vorschwebt.
-	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_06"); //Seine Zeit ist vorbei, und meine wird kommen.
+	AI_Output(hero, self, "Info_Mod_Berti_Hi_15_00"); //Jak podoba Ci sie ta sztuka?
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_01"); //Czysto napisane, byc moze - ale pod wzgledem tresci jest to Kokolores.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_02"); //Dobra wola traktuje widzów jak maloletnich. Te razace moralne nauki!
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_03"); //Rozumie, ze wspólczesny teatr musi spelniac inne wymagania.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_04"); //Nie chce byc przedstawiany z zadna doktryna, chce sie zastanowic i przeanalizowac!
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_05"); //A teraz szczyci sie swoimi innowacjami, drobnymi zmianami w stosunku do tego, co mam na mysli.
+	AI_Output(self, hero, "Info_Mod_Berti_Hi_06_06"); //Jego czas uplywa, a ja przyjdzie.
 };
 
 INSTANCE Info_Mod_Berti_EXIT (C_INFO)

@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Nodrak_Hi_Condition()
 
 FUNC VOID Info_Mod_Nodrak_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nodrak_Hi_08_00"); //Ich bin Nodrak, was willst du?
+	AI_Output(self, hero, "Info_Mod_Nodrak_Hi_08_00"); //Jestem Nodrakiem, czego chcesz?
 };
 
 INSTANCE Info_Mod_Nodrak_Infos (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Nodrak_Infos (C_INFO)
 	information	= Info_Mod_Nodrak_Infos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hätte von dir gerne was gewusst.";
+	description	= "Chcialbym cos o Tobie wiedziec.";
 };
 
 FUNC INT Info_Mod_Nodrak_Infos_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Nodrak_Infos_Condition()
 
 FUNC VOID Info_Mod_Nodrak_Infos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nodrak_Infos_15_00"); //Ich hätte von dir gerne was gewusst.
-	AI_Output(self, hero, "Info_Mod_Nodrak_Infos_08_01"); //Ich bin heute nicht in Stimmung, komm morgen wieder.
+	AI_Output(hero, self, "Info_Mod_Nodrak_Infos_15_00"); //Chcialbym cos o Tobie wiedziec.
+	AI_Output(self, hero, "Info_Mod_Nodrak_Infos_08_01"); //Dzis nie jestem w nastroju, wróce jutro.
 };
 
 INSTANCE Info_Mod_Nodrak_BierInfos (C_INFO)
@@ -58,7 +58,7 @@ INSTANCE Info_Mod_Nodrak_BierInfos (C_INFO)
 	information	= Info_Mod_Nodrak_BierInfos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, ich möchte dir ein Bier ausgeben.";
+	description	= "Tutaj chce Ci kupic piwo.";
 };
 
 FUNC INT Info_Mod_Nodrak_BierInfos_Condition()
@@ -75,24 +75,24 @@ FUNC INT Info_Mod_Nodrak_BierInfos_Condition()
 
 FUNC VOID Info_Mod_Nodrak_BierInfos_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_00"); //Hier, ich möchte dir ein Bier ausgeben.
+	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_00"); //Tutaj chce Ci kupic piwo.
 
 	B_GiveInvItems	(hero, self, ItFo_Beer, 1);
 	B_UseItem	(self, ItFo_Beer);
 
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_01"); //Hey, danke. Wie kommt es dazu?
-	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_02"); //Der Torwächter hat gemeint, dass du vorletzte Nacht auf der Wache beschossen wurdest.
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_03"); //Das stimmt, verdammten Bastarde. Hätte mich beinahe erwischt. Wenn ich nicht zufällig gestolpert wäre ...
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_04"); //Ich habe auch ganz genau gesehen, wie sie wieder im Dunkeln verschwanden, diese Feiglinge! Als die Verstärkung kam waren sie bereits über alle Berge!
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_05"); //(aufbrausend) Aber mit einem Pfeil im Arm konnte ich ja nichts machen!
-	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_06"); //Wohin sind sie denn geflüchtet?
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_07"); //In Richtung der Alten Mine. Sobald ich wieder ein Schwert führen kann, werde ich sie dafür bezahlen lassen, wer immer das auch war!
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_08"); //Falls du sie vor mir treffen solltest, verpass ihnen ordentlich einen von mir, diese dreckigen Feiglinge.
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_09"); //Sind bestimmt Banditen oder diese Waldläufer. Wer benutzt in diesem Tal denn sonst noch solche Pfeile, he?
-	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_10"); //Alles klar.
-	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_11"); //Pass auf dich auf.
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_01"); //Hej, dziekuje. Jak do tego doszlo?
+	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_02"); //Straznik powiedzial, ze zostales zastrzelony na strazy przed ostatnia noca.
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_03"); //To jest sluszne, pukajace dranie. Prawie sie zlapalem. Gdybym nie natknal sie przypadkiem.....
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_04"); //Zobaczylem tez dokladnie, jak oni znów znikneli w ciemnosci, tchórze! Kiedy nadeszly zbroje, byly juz na wszystkich górach!
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_05"); //Ale strzalka w ramieniu nie moglem nic zrobic!
+	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_06"); //Do czego uciekli?
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_07"); //Do Starej Kopalni. Jak tylko znowu bede mógl wladac mieczem, zaplace im za to, kim byl!
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_08"); //Jesli spotkasz ich przed mna, daj im mojego, tego brudnego tchórza.
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_09"); //Musza to byc bandyci lub straznicy. Kto jeszcze uzywa tych strzal w tej dolinie, huh?
+	AI_Output(hero, self, "Info_Mod_Nodrak_BierInfos_15_10"); //Wszystko jasne.
+	AI_Output(self, hero, "Info_Mod_Nodrak_BierInfos_08_11"); //Dbaj o siebie.
 
-	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Die Angreifer, die Nodrak attackiert haben, sind Richtung alte Mine geflohen ...");
+	B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Napastnicy, którzy zaatakowali Nodrak uciekli do dawnej kopalni.... Wiecej");
 
 	Wld_InsertNpc	(Mod_1972_GRD_Hecta_MT, "OC1");
 	Wld_InsertNpc	(Mod_1973_GRD_Achil_MT, "OC1");

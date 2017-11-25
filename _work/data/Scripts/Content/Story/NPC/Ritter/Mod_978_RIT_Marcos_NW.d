@@ -1,7 +1,7 @@
 instance Mod_978_RIT_Marcos_NW  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Marcos";
+	name 		= "lepy";
 	guild 		= GIL_PAL;
 	id 			= 978;
 	voice 		= 4;

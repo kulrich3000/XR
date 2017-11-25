@@ -16,7 +16,7 @@ INSTANCE Info_Mod_Bullit_Dieb (C_INFO)
 	information	= Info_Mod_Bullit_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sachen aus dem Haus der Erzbarone sind verschwunden ...";
+	description	= "Rzeczy z domu baronów zniknely.....";
 };
 
 FUNC INT Info_Mod_Bullit_Dieb_Condition()
@@ -31,8 +31,8 @@ FUNC INT Info_Mod_Bullit_Dieb_Condition()
 
 FUNC VOID Info_Mod_Bullit_Dieb_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullit_Dieb_15_00"); //Sachen aus dem Haus der Erzbarone sind verschwunden und ich glaube, dass du was damit zu tun hast.
-	AI_Output(self, hero, "Info_Mod_Bullit_Dieb_06_01"); //Du bist doch der Kerl, den ich damals in der Kolonie begrüßt habe. Und du willst mir jetzt einen Diebstahl anhängen?
+	AI_Output(hero, self, "Info_Mod_Bullit_Dieb_15_00"); //i mysle, ze mial pan z tym cos wspólnego.
+	AI_Output(self, hero, "Info_Mod_Bullit_Dieb_06_01"); //Jestes facetem, do którego powitalem w kolonii. A ty mnie naladowales za kradziez teraz?
 
 	B_Say_HeroBullit_Batschen();
 };
@@ -45,7 +45,7 @@ INSTANCE Info_Mod_Bullit_Frage (C_INFO)
 	information	= Info_Mod_Bullit_Frage_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hast du schon gehört ...";
+	description	= "Czy slyszales to....?";
 };
 
 FUNC INT Info_Mod_Bullit_Frage_Condition()
@@ -60,8 +60,8 @@ FUNC INT Info_Mod_Bullit_Frage_Condition()
 
 FUNC VOID Info_Mod_Bullit_Frage_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullit_Frage_15_00"); //Hast du schon gehört, dass den Erzbaronen Sachen gestohlen werden?
-	AI_Output(self, hero, "Info_Mod_Bullit_Frage_06_01"); //Du bist doch der Kerl, den ich damals in der Kolonie begrüßt habe. Warum soll ich dir etwas über den Diebstahl erzählen?
+	AI_Output(hero, self, "Info_Mod_Bullit_Frage_15_00"); //Czy slyszales/as kradziez baronów?
+	AI_Output(self, hero, "Info_Mod_Bullit_Frage_06_01"); //Jestes facetem, do którego powitalem w kolonii. Dlaczego mam powiedziec ci o kradziezy?
 
 	B_Say_HeroBullit_Batschen();
 };
@@ -74,7 +74,7 @@ INSTANCE Info_Mod_Bullit_Dealer (C_INFO)
 	information	= Info_Mod_Bullit_Dealer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mal angenommen ...";
+	description	= "Powiedzmy, ze....";
 };
 
 FUNC INT Info_Mod_Bullit_Dealer_Condition()
@@ -89,17 +89,17 @@ FUNC INT Info_Mod_Bullit_Dealer_Condition()
 
 FUNC VOID Info_Mod_Bullit_Dealer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_00"); //Mal angenommen, ich will "besondere" Waren kaufen: Wo müsste ich dann hingehen?
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_01"); //Du bist doch der Kerl, den ich damals in der Kolonie begrüßt habe. Du fragst mich nach heißer Ware?
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_02"); //Nun, ich würde es mal bei Fisk versuchen.
-	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_03"); //Gut, ich werde es versuchen.
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_04"); //Gut, mach das. Viel Spaß! (lacht)
+	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_00"); //Mal angenommen, ich will "wybredny" Waren kaufen: Wo müsste ich dann hingehen?
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_01"); //Jestes facetem, do którego powitalem w kolonii. Pytasz mnie o gorace rzeczy?
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_02"); //No cóz, spróbowalabym Fisk.
+	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_03"); //Dobrze, spróbuje.
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_04"); //Dobrze, zrób to. Baw sie dobrze! (smiertelnicy)
 
 	Mod_PDV_Bullit_Infos = 1;
 
 	Mod_PDV_Genug_Infos += 1;
 
-	B_LogEntry	(TOPIC_MOD_PDV, "Bullit meint, bei Fisk könnte ich Informationen bekommen.");
+	B_LogEntry	(TOPIC_MOD_PDV, "Bullit mysli, ze Fisk moze dac mi pewne informacje.");
 };
 
 INSTANCE Info_Mod_Bullit_Umgehauen (C_INFO)
@@ -129,17 +129,17 @@ FUNC VOID Info_Mod_Bullit_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_00"); //Schon gut, schon gut. Ich kann dir nicht helfen, aber ich würde es mal bei Fisk versuchen.
+			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_00"); //Wszystkie sluszne, wszystkie sluszne, wszystkie sluszne. Nie moge ci pomóc, ale chcialbym spróbowac Fisk.
 
 			Mod_PDV_Bullit_Infos	=	1;
 
 			Mod_PDV_Genug_Infos += 1;
 
-			B_LogEntry	(TOPIC_MOD_PDV, "Bullit meint, bei Fisk könnte ich Informationen bekommen.");
+			B_LogEntry	(TOPIC_MOD_PDV, "Bullit mysli, ze Fisk moze dac mi pewne informacje.");
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_01"); //Und wieder hattest du keine Chance. Jetzt verzieh dich!
+			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_01"); //Ponownie nie mial pan zadnych szans. Teraz zgubic sie!
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -158,7 +158,7 @@ INSTANCE Info_Mod_Bullit_Crime (C_INFO)
 	information	= Info_Mod_Bullit_Crime_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum haben sie dich in die Kolonie geworfen?";
+	description	= "Dlaczego rzucili cie w kolonie?";
 };
 
 FUNC INT Info_Mod_Bullit_Crime_Condition()
@@ -168,13 +168,13 @@ FUNC INT Info_Mod_Bullit_Crime_Condition()
 
 FUNC VOID Info_Mod_Bullit_Crime_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_00"); //Warum haben sie dich in die Kolonie geworfen?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_01"); //Weil ich den armen Leuten in Myrtana immer bei ihrer Arbeit geholfen habe.
-	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_02"); //Wirklich?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_03"); //Natürlich nicht, du Idiot! Ich war Bandit und wurde dann von Lee, dem jetztigen Anführer der Söldner, erwischt.
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_04"); //Seitdem sitze ich hier fest. Und seit die Barriere weg ist, kann ich nicht mal mehr Neuankömmlinge taufen.
-	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_05"); //Also stehst du mit Lee auf Kriegsfuß?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_06"); //Mit dem Schlappschwanz sowieso.
+	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_00"); //Dlaczego rzucili cie w kolonie?
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_01"); //Bo zawsze pomagalem ubogim ludziom w Myrtanie w ich pracy.
+	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_02"); //Naprawde?
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_03"); //Oczywiscie nie, idiota! Bylem bandyta, a potem zlapal mnie Lee, obecny przywódca najemników.
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_04"); //Od tamtej pory utknelam. A poniewaz bariera zniknela, nie moge nawet ochrzcic przybyszów.
+	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_05"); //Wiec walczysz z Lee?
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_06"); //W kazdym razie z mieczakiem.
 };
 
 INSTANCE Info_Mod_Bullit_EXIT (C_INFO)

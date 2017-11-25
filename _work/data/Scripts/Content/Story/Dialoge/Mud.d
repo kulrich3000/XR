@@ -5,7 +5,7 @@ INSTANCE Info_Mod_Mud_ShutUp (C_INFO)
 	condition	= Info_Mod_Mud_ShutUp_Condition;
 	information	= Info_Mod_Mud_ShutUp_Info;
 	permanent	= 1;
-	description	= "Kannst du mal BITTE einen Moment die Klappe halten?";
+	description	= "Czy moze pani zamknac sie na chwile, prosze?";
 };
 
 FUNC INT Info_Mod_Mud_ShutUp_Condition()
@@ -20,8 +20,8 @@ FUNC INT Info_Mod_Mud_ShutUp_Condition()
 
 FUNC VOID Info_Mod_Mud_ShutUp_Info()
 {
-	AI_Output (hero, self,"Info_Mod_Mud_ShutUp_15_00"); //Kannst du mal BITTE einen Moment die Klappe halten?
-	AI_Output (self, hero,"Info_Mod_Mud_ShutUp_03_01"); //Klar.
+	AI_Output (hero, self,"Info_Mod_Mud_ShutUp_15_00"); //Czy moze pani zamknac sie na chwile, prosze?
+	AI_Output (self, hero,"Info_Mod_Mud_ShutUp_03_01"); //Pewne.
 	Npc_SetRefuseTalk(self, 300);
 };
 
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Mud_GetLost (C_INFO)
 	condition	= Info_Mod_Mud_GetLost_Condition;
 	information	= Info_Mod_Mud_GetLost_Info;
 	permanent	= 1;
-	description	= "Verpiss dich!";
+	description	= "Wyciagnij z tego fuge!";
 };                       
 
 FUNC INT Info_Mod_Mud_GetLost_Condition()
@@ -46,8 +46,8 @@ FUNC INT Info_Mod_Mud_GetLost_Condition()
 
 FUNC VOID Info_Mod_Mud_GetLost_Info()
 {
-	AI_Output (hero, self,"Info_Mod_Mud_GetLost_15_00"); //Verpiss dich!
-	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_01"); //Willst 'nen Moment allein sein, hm? Kann ich verstehen ... Ich halt mich im Hintergrund ...
+	AI_Output (hero, self,"Info_Mod_Mud_GetLost_15_00"); //Wyciagnij z tego fuge!
+	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_01"); //Chcesz chwile samotnie, huh? Potrafie zrozumiec..... Pozostane w tle.....
 };
 
 INSTANCE Info_Mod_Mud_Defeated (C_INFO)
@@ -72,9 +72,9 @@ FUNC INT Info_Mod_Mud_Defeated_Condition()
 
 FUNC VOID Info_Mod_Mud_Defeated_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_00"); //Hey, Mann, du hast mich geschlagen! Was sollte das?
-	AI_Output (hero, self,"Info_Mod_Mud_GetLost_15_01"); //Ich schlag' dich gleich noch mal! Ich steh' auf Schlagen!
-	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_02"); //Mann, was bist DU denn für'n Freak! Mit dir will ich nichts mehr zu tun haben!
+	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_00"); //Hej, Panie, Ty mnie uderzyles! O co to bylo chodzilo?
+	AI_Output (hero, self,"Info_Mod_Mud_GetLost_15_01"); //Jeszcze raz ci uderzylem! Lubie wykrawanie!
+	AI_Output (self, hero,"Info_Mod_Mud_GetLost_03_02"); //Czlowiek, czym jestes! Nie chce juz z wami nic wspólnego!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"START");
@@ -105,7 +105,7 @@ FUNC INT Info_Mod_Mud_Nerve_0_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_0_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_0_03_00"); //Ach, schön mit dir wieder umherzuziehen. Wir werden sicher wieder so gute Freunde wie früher.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_0_03_00"); //Ach, milo mi sie znowu ruszac razem z toba. Jestem pewien, ze znów bedziemy równie dobrymi przyjaciólmi.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 1;
 	AI_StopProcessInfos	( self );
@@ -136,7 +136,7 @@ FUNC INT Info_Mod_Mud_Nerve_1_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_1_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_1_03_00"); //Na, findest du es nicht anstrengend, die ganze Zeit rumzulaufen? Willst du dich etwas hinlegen? In meiner Hütte hätte ich noch Platz.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_1_03_00"); //No cóz, czy nie jest ci trudno chodzic caly czas? Chcesz sie polozyc? W mojej kabinie jest pokój.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 2;
 	Mud_NerveRealized = TRUE;
@@ -168,7 +168,7 @@ FUNC INT Info_Mod_Mud_Nerve_2_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_2_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_2_03_00"); //Seit diese Kuppel nicht mehr da ist, dürfen wir Buddler das Lager nicht mehr verlassen. Aber jetzt, wo du wieder hier bist, wird es mir ja nicht langweilig.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_2_03_00"); //Poniewaz ta kopula juz tam nie jest, nie wolno nam opuscic obozu. Ale teraz, gdy tu znowu jestes, nie nudze sie.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 3;
 	AI_StopProcessInfos	( self );
@@ -199,7 +199,7 @@ FUNC INT Info_Mod_Mud_Nerve_3_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_3_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_3_03_00"); //Findest du es nicht auch etwas gefährlich, dass diese Leute aus den anderen Lagern in der Arena kämpfen? Aber ich habe keine Angst, du bist ja bei mir.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_3_03_00"); //Czy nie sadzisz, ze to jest troche niebezpieczne, ze ci ludzie z innych obozów walcza na arenie? Ale nie boje sie, jestes ze mna.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 4;
 	AI_StopProcessInfos	( self );
@@ -230,7 +230,7 @@ FUNC INT Info_Mod_Mud_Nerve_4_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_4_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_4_03_00"); //Jetzt, wo wieder mehr Leute in das Lager kommen, wollen sie sich immer noch nicht mit mir unterhalten. Aber macht ja nichts, du genügst mir als Freund.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_4_03_00"); //Teraz, gdy wiecej ludzi wraca do obozu, nie chca do mnie porozmawiac. Ale nie martw sie, jestes dla mnie jako przyjaciela.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 5;
 	AI_StopProcessInfos	( self );
@@ -261,7 +261,7 @@ FUNC INT Info_Mod_Mud_Nerve_5_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_5_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_5_03_00"); //Weißt du was? Ich bin wirklich froh, mal wieder mit dir etwas zu unternehmen. Was willst du tun? Kennst du eine Schafherde in der Nähe, die sind so süß.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_5_03_00"); //Wiesz cos wiesz? Bardzo sie ciesze, ze moge z Toba zrobic cos jeszcze raz. Co robisz? Wiesz stado owiec w sasiedztwie, sa tak slodkie.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 6;
 	AI_StopProcessInfos	( self );
@@ -292,7 +292,7 @@ FUNC INT Info_Mod_Mud_Nerve_6_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve_6_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve_6_03_00"); //Sag mal, hast du eigentlich irgendwas außerhalb des Lagers vor? Das mögen die Gardisten nicht so gerne. Aber wenn ich bei dir bin passt das schon.
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve_6_03_00"); //Masz plany na wszystko poza obozem? Straznikom sie to nie podoba. Ale jesli jestem z wami, to dobrze.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 0;
 	AI_StopProcessInfos	( self );
@@ -321,18 +321,18 @@ FUNC INT Info_Mod_Mud_FirstEXIT_Condition()
 
 FUNC VOID Info_Mod_Mud_FirstEXIT_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mud_FirstEXIT_03_00"); //Hallo, schön dich wieder zu sehen. Seit dem die Barriere gefallen ist, bekam ich öfter Besuch, aber die wollten sich alle nicht mit mir abgeben.
-	AI_Output(self, hero, "Info_Mod_Mud_FirstEXIT_03_01"); //Aber jetzt bist du ja wieder da, das wird schön mit uns, wie früher.
+	AI_Output(self, hero, "Info_Mod_Mud_FirstEXIT_03_00"); //Witaj, dobrze, aby cie ponownie zobaczyc. Odkad zapora upadla, odwiedzano mnie czesciej, ale oni nie chcieli byc ze mna.
+	AI_Output(self, hero, "Info_Mod_Mud_FirstEXIT_03_01"); //Ale teraz wrócisz, bedzie milo z nami, tak jak wczesniej.
 
 	Info_ClearChoices(Info_Mod_Mud_FirstEXIT);
-	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Verpiss dich!"			,Info_Mod_Mud_FirstEXIT_Verpiss);
-	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Warum nicht - komm mit!"	,Info_Mod_Mud_FirstEXIT_Komm);
+	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Wyciagnij z tego fuge!"			,Info_Mod_Mud_FirstEXIT_Verpiss);
+	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Dlaczego nie - przyjdzcie ze mna!"	,Info_Mod_Mud_FirstEXIT_Komm);
 };
 
 func void Info_Mod_Mud_FirstEXIT_Verpiss()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_FirstEXIT_Verpiss_15_00"); //Verpiss dich!
-	AI_Output (self, hero, "Info_Mod_Mud_FirstEXIT_Verpiss_03_01"); //Bist heute nicht so gut drauf, was? Ich glaub', ich komm' mal besser mit ...
+	AI_Output (hero, self, "Info_Mod_Mud_FirstEXIT_Verpiss_15_00"); //Wyciagnij z tego fuge!
+	AI_Output (self, hero, "Info_Mod_Mud_FirstEXIT_Verpiss_03_01"); //Nie w tak dobrym nastroju dzisiaj, huh? Mysle, ze powinienem przyjsc z wami kiedys....
 
 	Info_ClearChoices(Info_Mod_Mud_FirstEXIT);
 
@@ -343,8 +343,8 @@ func void Info_Mod_Mud_FirstEXIT_Verpiss()
 
 func void Info_Mod_Mud_FirstEXIT_Komm()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_FirstEXIT_Komm_15_00"); //Warum nicht - komm mit!
-	AI_Output (self, hero, "Info_Mod_Mud_FirstEXIT_Komm_03_01"); //Großartig! Wir können uns ja auf dem Weg etwas unterhalten.
+	AI_Output (hero, self, "Info_Mod_Mud_FirstEXIT_Komm_15_00"); //Dlaczego nie - przyjdzcie ze mna!
+	AI_Output (self, hero, "Info_Mod_Mud_FirstEXIT_Komm_03_01"); //Wspanialy! Mozemy rozmawiac po drodze.
 
 	Info_ClearChoices(Info_Mod_Mud_FirstEXIT);
 
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_Mud_OrkJagd (C_INFO)
 	information	= Info_Mod_Mud_OrkJagd_Info;
 	permanent	= 0;
 	important 	= 0;
-	description	= "Hallo Mud, wollen wir etwas zusammen unternehmen.";
+	description	= "Czesc, bloto, zróbmy cos wspólnie.";
 };                       
 
 FUNC INT Info_Mod_Mud_OrkJagd_Condition()
@@ -376,19 +376,19 @@ FUNC INT Info_Mod_Mud_OrkJagd_Condition()
 
 FUNC VOID Info_Mod_Mud_OrkJagd_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mud_OrkJagd_15_00"); //Hallo Mud, wollen wir etwas zusammen unternehmen.
-	AI_Output(self, hero, "Info_Mod_Mud_OrkJagd_03_01"); //Au ja, du bist doch mein Freund und Freunde machen doch alles zusammen. Was wollen wir machen?
+	AI_Output(hero, self, "Info_Mod_Mud_OrkJagd_15_00"); //Czesc, bloto, zróbmy cos wspólnie.
+	AI_Output(self, hero, "Info_Mod_Mud_OrkJagd_03_01"); //Och, jestes moim chlopakiem i przyjaciólmi, którzy robia wszystko razem. Co robimy?
 
 	Info_ClearChoices(Info_Mod_Mud_OrkJagd);
-	Info_AddChoice	 (Info_Mod_Mud_OrkJagd, "Wir könnten zusammen einen Spaziergang in den Wald machen."			,Info_Mod_Mud_OrkJagd_Verpiss);
-	Info_AddChoice	 (Info_Mod_Mud_OrkJagd, "Halt die Klappe und komm mit."	,Info_Mod_Mud_OrkJagd_Komm);
+	Info_AddChoice	 (Info_Mod_Mud_OrkJagd, "Moglibysmy razem pójsc na spacer po lesie."			,Info_Mod_Mud_OrkJagd_Verpiss);
+	Info_AddChoice	 (Info_Mod_Mud_OrkJagd, "Zamknij sie i przyjdz ze mna."	,Info_Mod_Mud_OrkJagd_Komm);
 };
 
 func void Info_Mod_Mud_OrkJagd_Verpiss()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_OrkJagd_Verpiss_15_00"); //Wir könnten zusammen einen Spaziergang in den Wald machen. Da gibt es eine nette Höhle.
-	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Verpiss_03_01"); //Au ja, das wird bestimmt lustig, da können wir uns unterwegs noch über tolle Dinge unterhalten und näher kennen lernen.
-	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Verpiss_03_02"); //Obwohl ich etwas Angst im Wald habe, aber du bist ja bei mir.
+	AI_Output (hero, self, "Info_Mod_Mud_OrkJagd_Verpiss_15_00"); //Moglibysmy razem pójsc na spacer po lesie. Jest tu ladna jaskinia.
+	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Verpiss_03_01"); //Bedzie to zabawa, bedziemy mogli rozmawiac o wielkich rzeczach i poznawac sie nawzajem po drodze.
+	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Verpiss_03_02"); //Chociaz troche sie boje w lesie, ale ty jestem ze mna.
 
 	Info_ClearChoices(Info_Mod_Mud_OrkJagd);
 
@@ -399,8 +399,8 @@ func void Info_Mod_Mud_OrkJagd_Verpiss()
 
 func void Info_Mod_Mud_OrkJagd_Komm()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_OrkJagd_Komm_15_00"); //Halt die Klappe und komm mit.
-	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Komm_03_01"); //Ok, wie du meinst, das wird bestimmt toll.
+	AI_Output (hero, self, "Info_Mod_Mud_OrkJagd_Komm_15_00"); //Zamknij sie i przyjdz ze mna.
+	AI_Output (self, hero, "Info_Mod_Mud_OrkJagd_Komm_03_01"); //Dobrze, cokolwiek sie powie, to jest wspaniale.
 
 	Info_ClearChoices(Info_Mod_Mud_OrkJagd);
 
@@ -419,7 +419,7 @@ INSTANCE Info_Mod_Mud_Lagermusik (C_INFO)
 	information	= Info_Mod_Mud_Lagermusik_Info;
 	permanent	= 0;
 	important 	= 0;
-	description	= "Du hast nicht zufällig Lust, berühmt zu werden?";
+	description	= "Nie chcialbys stac sie slawny, czy móglbys?";
 };                       
 
 FUNC INT Info_Mod_Mud_Lagermusik_Condition()
@@ -432,12 +432,12 @@ FUNC INT Info_Mod_Mud_Lagermusik_Condition()
 
 FUNC VOID Info_Mod_Mud_Lagermusik_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_00"); //Du hast nicht zufällig Lust, berühmt zu werden?
-	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_01"); //Kommt drauf an, was ich dafür tun muss. Dich würde ich dafür natürlich nicht verlassen.
-	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_02"); //Du müsstest ein Instrument spielen. Gravo will eine Gruppe ins Leben rufen.
-	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_03"); //Die Trommel hat mir schon immer gefallen. Solange ich den Schlägel in der Hand hatte, wurden mir nicht so viele böse Dinge zugerufen.
-	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_04"); //Perfekt! Geh am besten gleich zu Gravo.
-	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_05"); //Ich lasse dich ungern im Stich, aber ich muss meiner Karriere eine Chance geben. Man sieht sich bestimmt bald wieder!
+	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_00"); //Nie chcialbys stac sie slawny, czy móglbys?
+	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_01"); //Zalezy od tego, co musze zrobic. Oczywiscie nie zostawilabym pana na to.
+	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_02"); //Musisz grac na instrumencie. Gravo chce zalozyc grupe.
+	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_03"); //Zawsze podobal mi sie ten beben. Dopóki mialem mlotka w reku, nie dostalem zbyt wielu zlych rzeczy.
+	AI_Output(hero, self, "Info_Mod_Mud_Lagermusik_15_04"); //Doskonaly! Dlaczego nie idziesz prosto do Gravo.
+	AI_Output(self, hero, "Info_Mod_Mud_Lagermusik_03_05"); //Nienawidze, zeby cie zawiesc, ale musze dac szanse mojej karierze. Zobacze cie wkrótce!
 
 	AI_StopProcessInfos	(self);
 
@@ -471,7 +471,7 @@ FUNC INT Info_Mod_Mud_Nerve2_0_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_0_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_0_03_00"); //Sollen wir uns an ein flauschiges Plätzchen setzen und uns miteinander unterhalten und so? ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_0_03_00"); //Czy powinnismy usiasc w puchatym miejscu i rozmawiac ze soba nawzajem? ...
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 1;
 	AI_StopProcessInfos	( self );
@@ -502,7 +502,7 @@ FUNC INT Info_Mod_Mud_Nerve2_1_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_1_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_1_03_00"); //... oder wir könnten Blumen auf einer Wiese pflücken. Ich mag Blumen so, die duften so schön und da gibt’s auch hoppelnde Kaninchen, die haben so ein flauschiges Fell ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_1_03_00"); //... albo moglismy zbierac kwiaty na lace. Lubie takie kwiaty jak te, pachna tak ladnie i sa tez spiewajace króliki, maja tak puszyste futro....
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 2;
 	AI_StopProcessInfos	( self );
@@ -533,7 +533,7 @@ FUNC INT Info_Mod_Mud_Nerve2_2_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_2_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_2_03_00"); //... oder wir könnten zusammen im Wasser plantschen, das mag ich auch voll und das macht so Spaß ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_2_03_00"); //... albo moglibysmy rozpryskac sie razem w wodzie, ja tez mi sie to podoba i to jest taka frajda.....
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 3;
 	AI_StopProcessInfos	( self );
@@ -564,7 +564,7 @@ FUNC INT Info_Mod_Mud_Nerve2_3_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_3_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_3_03_00"); //... wir könnten auch zwischen die Büsche gehen und verstecken spielen, oder andere lustige Dinge machen. Au ja, das wird bestimmt toll und das Laub kitzelt immer so schön ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_3_03_00"); //... Moglibysmy tez isc miedzy krzaki i bawic sie w ukrycie i szukac lub robic inne zabawne rzeczy. Ach, bedzie swietnie, a liscie beda zawsze tak ladnie kopac......
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 4;
 	AI_StopProcessInfos	( self );
@@ -595,7 +595,7 @@ FUNC INT Info_Mod_Mud_Nerve2_4_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_4_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_4_03_00"); //... weißt du, du bist mein bester Freund, ich hab dich richtig gern. Ich habe das Gefühl das du mich auch voll magst ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_4_03_00"); //... wiesz, ze jestes moim najlepszym przyjacielem, bardzo Ci sie podoba. Mam wrazenie, ze podoba mi sie równiez pani.....
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 5;
 	AI_StopProcessInfos	( self );
@@ -626,7 +626,7 @@ FUNC INT Info_Mod_Mud_Nerve2_5_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_5_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_5_03_00"); //... in meiner Hütte ist immer noch ein Plätzchen für dich frei. Da wären wir die ganze Zeit zusammen und könnten reden und andere tolle Dinge machen ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_5_03_00"); //... W mojej kabinie jest jeszcze wolne miejsce dla Ciebie. Tam caly czas jestesmy razem i moglismy rozmawiac i robic inne wielkie rzeczy......
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 6;
 	AI_StopProcessInfos	( self );
@@ -657,7 +657,7 @@ FUNC INT Info_Mod_Mud_Nerve2_6_Condition()
 
 FUNC VOID Info_Mod_Mud_Nerve2_6_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_6_03_00"); //... oder wir könnten uns auch draußen vergnügen. Im Lager mag mich nämlich fast keiner ...
+	AI_Output (self, hero,"Info_Mod_Mud_Nerve2_6_03_00"); //... albo mozemy miec dobry czas na zewnatrz. W obozie prawie nikt mnie nie lubi....
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve2 = 0;
 	AI_StopProcessInfos	( self );
@@ -684,21 +684,21 @@ FUNC INT Info_Mod_Mud_OrkHoehle_Condition()
 
 FUNC VOID Info_Mod_Mud_OrkHoehle_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_00"); //Jetzt sind wir so lange zusammen herumgelaufen und haben uns toll miteinander unterhalten.
-	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_01"); //Wir sind jetzt allein im dunklen Wald. Was wollen wir als nächstes machen?
-	AI_Output (hero, self,"Info_Mod_Mud_OrkHoehle_15_02"); //Öhh, geh mal in die Höhle dort.
-	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_03"); //Ja, was gibt’s da? Eine Überraschung? Ich mag Überraschungen ...
+	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_00"); //Teraz juz od tak dawna razem chodzimy i swietnie sie bawilismy.
+	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_01"); //Jestesmy teraz sami w ciemnym lesie. Co robimy dalej?
+	AI_Output (hero, self,"Info_Mod_Mud_OrkHoehle_15_02"); //Ooh, idz tam do tej jaskini.
+	AI_Output (self, hero,"Info_Mod_Mud_OrkHoehle_03_03"); //Tak, co sie dzieje? Niespodzianka? Lubie niespodzianki.....
 
 	Info_ClearChoices	(Info_Mod_Mud_OrkHoehle);
 
-	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Dort lauert eine Horde blutrünstiger Orks, die dich hoffentlich in Stücke reißen.", Info_Mod_Mud_OrkHoehle_C);
-	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Wenn ich es verraten würde, dann wäre es ja keine Überraschung mehr.", Info_Mod_Mud_OrkHoehle_B);
-	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Dort gibt es schöne Blumen, die kannst du für mich pflücken.", Info_Mod_Mud_OrkHoehle_A);
+	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Tam czai sie horda krwiozerczych orków, które, miejmy nadzieje, rozerwa cie na strzepy.", Info_Mod_Mud_OrkHoehle_C);
+	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Gdybym ci powiedzial, to nie byloby zaskoczeniem.", Info_Mod_Mud_OrkHoehle_B);
+	Info_AddChoice	(Info_Mod_Mud_OrkHoehle, "Sa tam piekne kwiaty, mozesz je wybrac dla mnie.", Info_Mod_Mud_OrkHoehle_A);
 };
 
 FUNC VOID Info_Mod_Mud_OrkHoehle_D()
 {
-	AI_Output(self, hero, "Info_Mod_Mud_OrkHoehle_D_03_00"); //Ohh, toll, da gehe ich gleich hinein.
+	AI_Output(self, hero, "Info_Mod_Mud_OrkHoehle_D_03_00"); //O, swietnie, jade tam wlasnie.
 
 	Info_ClearChoices	(Info_Mod_Mud_OrkHoehle);
 
@@ -709,21 +709,21 @@ FUNC VOID Info_Mod_Mud_OrkHoehle_D()
 
 FUNC VOID Info_Mod_Mud_OrkHoehle_C()
 {
-	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_C_15_00"); //Dort lauert eine ... ähh, Herde niedlicher Schafe.
+	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_C_15_00"); //Jest tak, ze uh, stado slodkich owiec.
 
 	Info_Mod_Mud_OrkHoehle_D();
 };
 
 FUNC VOID Info_Mod_Mud_OrkHoehle_B()
 {
-	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_B_15_00"); //Wenn ich es verraten würde, dann wäre es ja keine Überraschung mehr.
+	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_B_15_00"); //Gdybym ci powiedzial, to nie byloby zaskoczeniem.
 
 	Info_Mod_Mud_OrkHoehle_D();
 };
 
 FUNC VOID Info_Mod_Mud_OrkHoehle_A()
 {
-	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_A_15_00"); //Dort gibt es schöne Blumen, die kannst du für mich pflücken.
+	AI_Output(hero, self, "Info_Mod_Mud_OrkHoehle_A_15_00"); //Sa tam piekne kwiaty, mozesz je wybrac dla mnie.
 
 	Info_Mod_Mud_OrkHoehle_D();
 };
@@ -749,8 +749,8 @@ FUNC INT Info_Mod_Mud_OrksHunted_Condition()
 
 FUNC VOID Info_Mod_Mud_OrksHunted_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Mud_OrksHunted_03_00"); //Hallo, das wirst du mir nicht glauben. Da waren plötzlich ganz viele böse, gemeine Orks.
-	AI_Output (self, hero,"Info_Mod_Mud_OrksHunted_03_01"); //Leider konnte ich deshalb nicht in die Höhle gehen. Aber wir können ja noch andere tolle Dinge unternehmen.
+	AI_Output (self, hero,"Info_Mod_Mud_OrksHunted_03_00"); //Witaj, nie uwierzysz mi. Nagle bylo duzo zlych, srednich orków.
+	AI_Output (self, hero,"Info_Mod_Mud_OrksHunted_03_01"); //Niestety, dlatego nie moglem pójsc do jaskini. Ale mozemy robic inne wielkie rzeczy.
 
 	B_StartOtherRoutine	(self, "START");
 };
@@ -775,321 +775,321 @@ FUNC INT Info_Mod_Mud_VMG_Condition()
 
 FUNC VOID Info_Mod_Mud_VMG_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Mud_VMG_03_00"); //Hey du, ich kenne dich doch. Du hast mich vor den fiesen Typen im Neuen Lager beschützt und uns alle gerettet.
-	AI_Output(self, hero, "Info_Mod_Mud_VMG_03_01"); //Ich wusste genau, dass ...
+	AI_Output(self, hero, "Info_Mod_Mud_VMG_03_00"); //Hej, Ty, Ty, Ja Cie znam. Ochraniales mnie przed zlymi facetami w Nowym Obozie i uratowales nas wszystkich.
+	AI_Output(self, hero, "Info_Mod_Mud_VMG_03_01"); //Wiedzialem dokladnie, ze....
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja? Erzähl weiter.", Info_Mod_Mud_VMG_A);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak? Idz dalej, idz dalej.", Info_Mod_Mud_VMG_A);
 };
 
 func void Info_Mod_Mud_VMG_C()
 {
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_C_03_00"); //... dass du es schaffst. Du musst wissen, die Anderen haben mich immer herumgeschubst, aber als ich ihnen gesagt habe, dass du auf mich aufpasst, da haben sie ganz schnell die Klappen gehalten.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_C_03_01"); //Sie ...
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_C_03_00"); //... ze mozna to zrobic. Wiesz, inni pchali mnie dookola, ale kiedy powiedzialem im, ze patrzycie na mnie, bardzo szybko zamykaly usta.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_C_03_01"); //Ty - Ty Ty
 };
 
 func void Info_Mod_Mud_VMG_F()
 {
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_F_03_00"); //Sie fürchten sich vor dir, glaube ich. Aber ich wollte nicht mehr abhängig sein, deshalb habe ich beschlossen, Magier zu werden. Ist doch klug, oder?
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_F_03_00"); //Mysle, ze boja sie Ciebie. Ale juz nie chcialem byc uzalezniony, wiec postanowilem zostac magikiem. To madre, czyz nie?
 };
 
 func void Info_Mod_Mud_VMG_I()
 {
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_I_03_00"); //Und so stehe ich jetzt hier vor dir. Du kannst doch sicherlich ein gutes Wort für mich einlegen, oder?
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_I_03_01"); //Es wäre nämlich super, wenn wir hier zusammen als Magier die Gegend unsicher machen, oder etwa nicht?
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_I_03_00"); //Tak wlasnie teraz stoje. Z cala pewnoscia mozesz umiescic dla mnie dobre slowo, czy nie?
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_I_03_01"); //Byloby wspaniale, gdybysmy tutaj razem jako magicy czynili ten obszar niebezpiecznym, czy nie?
 };
 
 func void Info_Mod_Mud_VMG_B()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Halt mal die Luft an.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Ich wusste es. Keiner mag mich.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Trzymaj oddech.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Znalem to. Nikt mi nie lubi.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Das stimmt doch gar nicht.", Info_Mod_Mud_VMG_M);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Stimmt genau.", Info_Mod_Mud_VMG_L);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To wcale nie jest prawda.", Info_Mod_Mud_VMG_M);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To jest calkowicie sluszne.", Info_Mod_Mud_VMG_L);
 };
 
 func void Info_Mod_Mud_VMG_B2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Halt mal die Luft an.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Ich wusste es. Keiner mag mich.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Trzymaj oddech.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Znalem to. Nikt mi nie lubi.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Das stimmt doch gar nicht.", Info_Mod_Mud_VMG_M2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Stimmt genau.", Info_Mod_Mud_VMG_L2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To wcale nie jest prawda.", Info_Mod_Mud_VMG_M2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To jest calkowicie sluszne.", Info_Mod_Mud_VMG_L2);
 };
 
 func void Info_Mod_Mud_VMG_B3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Halt mal die Luft an.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Ich wusste es. Keiner mag mich.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_B_15_00"); //Trzymaj oddech.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_B_03_01"); //Znalem to. Nikt mi nie lubi.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Das stimmt doch gar nicht.", Info_Mod_Mud_VMG_M3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Stimmt genau.", Info_Mod_Mud_VMG_L3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To wcale nie jest prawda.", Info_Mod_Mud_VMG_M3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "To jest calkowicie sluszne.", Info_Mod_Mud_VMG_L3);
 };
 
 func void Info_Mod_Mud_VMG_M()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //Das stimmt doch gar nicht.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //To wcale nie jest prawda.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_C();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja?", Info_Mod_Mud_VMG_E);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak?", Info_Mod_Mud_VMG_E);
 };
 
 func void Info_Mod_Mud_VMG_L()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //Stimmt genau.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Magst du mich etwa nicht mehr?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //To jest calkowicie sluszne.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Nie lubisz mnie juz wiecej?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Doch, doch.", Info_Mod_Mud_VMG_O);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ich mochte dich noch nie.", Info_Mod_Mud_VMG_N);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, tak, tak, tak, tak.", Info_Mod_Mud_VMG_O);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Nigdy wczesniej nie podobal mi sie Pan wczesniej.", Info_Mod_Mud_VMG_N);
 };
 
 func void Info_Mod_Mud_VMG_M2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //Das stimmt doch gar nicht.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //To wcale nie jest prawda.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_F();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Hätte ich genauso gemacht.", Info_Mod_Mud_VMG_G);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja bym zrobil to samo.", Info_Mod_Mud_VMG_G);
 };
 
 func void Info_Mod_Mud_VMG_L2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //Stimmt genau.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Magst du mich etwa nicht mehr?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //To jest calkowicie sluszne.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Nie lubisz mnie juz wiecej?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Doch, doch.", Info_Mod_Mud_VMG_O2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ich mochte dich noch nie.", Info_Mod_Mud_VMG_N2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, tak, tak, tak, tak.", Info_Mod_Mud_VMG_O2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Nigdy wczesniej nie podobal mi sie Pan wczesniej.", Info_Mod_Mud_VMG_N2);
 };
 
 func void Info_Mod_Mud_VMG_M3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //Das stimmt doch gar nicht.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_M_15_00"); //To wcale nie jest prawda.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_I();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja, das wäre super.", Info_Mod_Mud_VMG_J);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, to byloby wspaniale.", Info_Mod_Mud_VMG_J);
 };
 
 func void Info_Mod_Mud_VMG_L3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //Stimmt genau.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Magst du mich etwa nicht mehr?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_L_15_00"); //To jest calkowicie sluszne.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_L_03_01"); //Nie lubisz mnie juz wiecej?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Doch, doch.", Info_Mod_Mud_VMG_O);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ich mochte dich noch nie.", Info_Mod_Mud_VMG_N);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, tak, tak, tak, tak.", Info_Mod_Mud_VMG_O);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Nigdy wczesniej nie podobal mi sie Pan wczesniej.", Info_Mod_Mud_VMG_N);
 };
 
 func void Info_Mod_Mud_VMG_N()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Ich mochte dich noch nie.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Boah, das sage ich aber dem ganz Obersten hier. Dem ganz Obersten!
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Nigdy wczesniej nie podobal mi sie Pan wczesniej.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Cóz, o tym mówie tutaj do samego najwyzszego czlowieka. Najwyzszy pulkownik!
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Okay, beruhige dich.", Info_Mod_Mud_VMG_Q);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dann sieh mal zu, wie du zu ihm kommst.", Info_Mod_Mud_VMG_P);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dobrze, spokojnie.", Info_Mod_Mud_VMG_Q);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Cóz, zobacz, jak sie do niego dostac.", Info_Mod_Mud_VMG_P);
 };
 
 func void Info_Mod_Mud_VMG_N2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Ich mochte dich noch nie.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Boah, das sage ich aber dem ganz Obersten hier. Dem ganz Obersten!
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Nigdy wczesniej nie podobal mi sie Pan wczesniej.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Cóz, o tym mówie tutaj do samego najwyzszego czlowieka. Najwyzszy pulkownik!
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Okay, beruhige dich.", Info_Mod_Mud_VMG_Q);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dann sieh mal zu, wie du zu ihm kommst.", Info_Mod_Mud_VMG_P);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dobrze, spokojnie.", Info_Mod_Mud_VMG_Q);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Cóz, zobacz, jak sie do niego dostac.", Info_Mod_Mud_VMG_P);
 };
 
 func void Info_Mod_Mud_VMG_N3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Ich mochte dich noch nie.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Boah, das sage ich aber dem ganz Obersten hier. Dem ganz Obersten!
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_N_15_00"); //Nigdy wczesniej nie podobal mi sie Pan wczesniej.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_N_03_01"); //Cóz, o tym mówie tutaj do samego najwyzszego czlowieka. Najwyzszy pulkownik!
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Okay, beruhige dich.", Info_Mod_Mud_VMG_Q);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dann sieh mal zu, wie du zu ihm kommst.", Info_Mod_Mud_VMG_P);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dobrze, spokojnie.", Info_Mod_Mud_VMG_Q);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Cóz, zobacz, jak sie do niego dostac.", Info_Mod_Mud_VMG_P);
 };
 
 func void Info_Mod_Mud_VMG_Q()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Okay, beruhige dich.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Dobrze, spokojnie.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_C();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja?", Info_Mod_Mud_VMG_E);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak?", Info_Mod_Mud_VMG_E);
 };
 
 func void Info_Mod_Mud_VMG_O()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Doch, doch.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Tak, tak, tak, tak, tak.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_C();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja?", Info_Mod_Mud_VMG_E);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak?", Info_Mod_Mud_VMG_E);
 };
 
 func void Info_Mod_Mud_VMG_P()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Dann sieh mal zu, wie du zu ihm kommst.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Werde ich. (beleidigt) Und ich dachte, du wärst mein Freund.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Cóz, zobacz, jak sie do niego dostac.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Bede. I pomyslalem, ze jestes moim przyjacielem.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 };
 
 func void Info_Mod_Mud_VMG_Q2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Okay, beruhige dich.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Dobrze, spokojnie.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_F();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Hätte ich genauso gemacht.", Info_Mod_Mud_VMG_G);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja bym zrobil to samo.", Info_Mod_Mud_VMG_G);
 };
 
 func void Info_Mod_Mud_VMG_O2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Doch, doch.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Tak, tak, tak, tak, tak.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_F();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Hätte ich genauso gemacht.", Info_Mod_Mud_VMG_G);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja bym zrobil to samo.", Info_Mod_Mud_VMG_G);
 };
 
 func void Info_Mod_Mud_VMG_P2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Dann sieh mal zu, wie du zu ihm kommst.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Werde ich. (beleidigt) Und ich dachte, du wärst mein Freund.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Cóz, zobacz, jak sie do niego dostac.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Bede. I pomyslalem, ze jestes moim przyjacielem.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 };
 
 func void Info_Mod_Mud_VMG_Q3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Okay, beruhige dich.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Q_15_00"); //Dobrze, spokojnie.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_I();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja, das wäre super.", Info_Mod_Mud_VMG_J);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, to byloby wspaniale.", Info_Mod_Mud_VMG_J);
 };
 
 func void Info_Mod_Mud_VMG_O3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Doch, doch.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Ich habe mich wohl verhört.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_O_15_00"); //Tak, tak, tak, tak, tak.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Q_03_01"); //Musze byc zle zrozumiany.
 
 	Info_Mod_Mud_VMG_I();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja, das wäre super.", Info_Mod_Mud_VMG_J);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, to byloby wspaniale.", Info_Mod_Mud_VMG_J);
 };
 
 func void Info_Mod_Mud_VMG_P3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Dann sieh mal zu, wie du zu ihm kommst.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Werde ich. (beleidigt) Und ich dachte, du wärst mein Freund.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_P_15_00"); //Cóz, zobacz, jak sie do niego dostac.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_P_03_01"); //Bede. I pomyslalem, ze jestes moim przyjacielem.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 };
 
 func void Info_Mod_Mud_VMG_A()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_A_15_00"); //Ja? Erzähl weiter.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_A_15_00"); //Tak? Idz dalej, idz dalej.
 
 	Info_Mod_Mud_VMG_C();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja?", Info_Mod_Mud_VMG_E);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak?", Info_Mod_Mud_VMG_E);
 };
 
 func void Info_Mod_Mud_VMG_E()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_E_15_00"); //Ja?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_E_15_00"); //Tak?
 
 	Info_Mod_Mud_VMG_F();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Hätte ich genauso gemacht.", Info_Mod_Mud_VMG_G);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja bym zrobil to samo.", Info_Mod_Mud_VMG_G);
 };
 
 func void Info_Mod_Mud_VMG_G()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_G_15_00"); //Hätte ich genauso gemacht.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_G_15_00"); //Ja bym zrobil to samo.
 
 	Info_Mod_Mud_VMG_I();
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Halt mal die Luft an.", Info_Mod_Mud_VMG_B3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Ja, das wäre super.", Info_Mod_Mud_VMG_J);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Trzymaj oddech.", Info_Mod_Mud_VMG_B3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Tak, to byloby wspaniale.", Info_Mod_Mud_VMG_J);
 };
 
 func void Info_Mod_Mud_VMG_J()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_J_15_00"); //Ja, das wäre super.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_J_03_01"); //Also, was machst du hier? Sollst du mir die Aufgaben stellen?
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_J_15_02"); //Ja. Bist du bereit?
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_J_03_03"); //Okay, schieß los, Kumpel.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_J_15_00"); //Tak, to byloby wspaniale.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_J_03_01"); //A wiec co pan tutaj robi? Chcesz mi przekazac zadania?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_J_15_02"); //Tak. Czy jestes gotowy?
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_J_03_03"); //Dobrze, ruszaj naprzód, przyjaciel.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir eine Spruchrolle 'Verwandlung Blutfliege'.", Info_Mod_Mud_VMG_V);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Außerhalb der Barriere hat einer der Magier etwas verloren. Such das bitte.", Info_Mod_Mud_VMG_U);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir ein paar Scavengerkeulen. Fünf dürften genügen.", Info_Mod_Mud_VMG_T);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dort hinten in dem Wald haust ein Schattenläufer.", Info_Mod_Mud_VMG_S);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi role 'transformacji muchy krwi'.", Info_Mod_Mud_VMG_V);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Poza bariera, jeden z magów cos stracil. Znajdz to, prosze.", Info_Mod_Mud_VMG_U);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi kilka klubów padlinozerców. Piec powinno wystarczyc.", Info_Mod_Mud_VMG_T);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "W lesie jest biegacz cieni.", Info_Mod_Mud_VMG_S);
 	if (Npc_HasItems(hero, ItSc_TrfSheep) > 0)
 	{
 		//Info_AddChoice	 (Info_Mod_Mud_VMG, "Nimm diese Spruchrolle und führe den Zauber durch.", Info_Mod_Mud_VMG_R);
@@ -1098,13 +1098,13 @@ func void Info_Mod_Mud_VMG_J()
 
 func void Info_Mod_Mud_VMG_V()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_V_15_00"); //Bring mir eine Spruchrolle 'Verwandlung Blutfliege'.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_V_03_01"); //Das ist ja lustig. Zufällig habe ich ein dabei. Hier.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_V_15_00"); //Przynies mi role "transformacji muchy krwi".
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_V_03_01"); //To smieszne, czyz nie? Tak sie sklada, ze tak sie sklada. Tutaj.
 
 	B_GiveInvItems	(self, hero, ItSc_TrfBloodfly, 1);
 
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_V_15_02"); //Gut, äh, dann bist du dabei.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_V_03_02"); //Toll, du bist ein echter Freund.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_V_15_02"); //No cóz, wtedy jestes.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_V_03_02"); //Wspaniale, jestes prawdziwym przyjacielem.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1113,21 +1113,21 @@ func void Info_Mod_Mud_VMG_V()
 
 func void Info_Mod_Mud_VMG_U()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_U_15_00"); //Außerhalb der Barriere hat einer der Magier etwas verloren. Such das bitte.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_U_03_01"); //Willst du mich verarschen, Mann? Wie soll ich denn da hinkommen?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_U_15_00"); //Poza bariera, jeden z magów cos stracil. Znajdz to, prosze.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_U_03_01"); //Czy kochasz mnie, mezczyzne? Jak mam sie tam dostac?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Du willst doch Magier werden, oder nicht?", Info_Mod_Mud_VMG_X2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Du hast Recht. Ich stelle dir eine andere Aufgabe.", Info_Mod_Mud_VMG_W2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Chcesz byc magikiem, czy nie?", Info_Mod_Mud_VMG_X2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Masz racje, masz racje. Dam ci jeszcze jedno zadanie.", Info_Mod_Mud_VMG_W2);
 };
 
 func void Info_Mod_Mud_VMG_X2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_X2_15_00"); //Du willst doch Magier werden, oder nicht?
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_X2_03_01"); //Okay, ich mach’s. Wo soll ich anfangen?
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_X2_15_02"); //Am besten am Austauschplatz.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_X2_03_03"); //Was soll ich eigentlich suchen?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_X2_15_00"); //Chcesz byc magikiem, czy nie?
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_X2_03_01"); //Dobrze, zrobie to. Gdzie mam zaczac?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_X2_15_02"); //Najlepiej na miejscu wymiany.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_X2_03_03"); //Czego szukam?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1135,16 +1135,16 @@ func void Info_Mod_Mud_VMG_X2()
 
 	B_StartOtherRoutine	(self, "TRADE");
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Eine Schriftrolle.", Info_Mod_Mud_VMG_Y3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Einen magischen Ring.", Info_Mod_Mud_VMG_Y2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Eine magische Robe.", Info_Mod_Mud_VMG_Y1);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przewijanie.", Info_Mod_Mud_VMG_Y3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Czarny pierscien.", Info_Mod_Mud_VMG_Y2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Magiczna szata.", Info_Mod_Mud_VMG_Y1);
 };
 
 func void Info_Mod_Mud_VMG_Y3()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y3_15_00"); //Eine Schriftrolle.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y3_03_01"); //(zuversichtlich) Ich denke, ich werde sie finde.
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Viel Glück.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y3_15_00"); //Przewijanie.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y3_03_01"); //Mysle, ze ja znajde.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Zycze powodzenia.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1153,9 +1153,9 @@ func void Info_Mod_Mud_VMG_Y3()
 
 func void Info_Mod_Mud_VMG_Y2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y2_15_00"); //Einen magischen Ring.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y2_03_01"); //(niedergeschlagen) Das wird dauern.
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Viel Glück.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y2_15_00"); //Czarny pierscien.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y2_03_01"); //To zajmie troche czasu.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Zycze powodzenia.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1164,9 +1164,9 @@ func void Info_Mod_Mud_VMG_Y2()
 
 func void Info_Mod_Mud_VMG_Y1()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y1_15_00"); //Eine magische Robe.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y1_03_01"); //(fröhlich) Okay, die wird leicht zu finden sein.
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Viel Glück.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y1_15_00"); //Magiczna szata.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_Y1_03_01"); //Okay, to bedzie latwe do znalezienia.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_Y_15_02"); //Zycze powodzenia.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1175,22 +1175,22 @@ func void Info_Mod_Mud_VMG_Y1()
 
 func void Info_Mod_Mud_VMG_W2()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_W2_15_00"); //Du hast Recht. Ich stelle dir eine andere Aufgabe.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_W2_15_00"); //Masz racje, masz racje. Dam ci jeszcze jedno zadanie.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir eine Spruchrolle Verwandlung Blutfliege.", Info_Mod_Mud_VMG_V);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir ein paar Scavengerkeulen. Fünf dürften genügen.", Info_Mod_Mud_VMG_T);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Dort hinten in dem Wald haust ein Schattenläufer.", Info_Mod_Mud_VMG_S);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi zaklecie metamorfoz krwi.", Info_Mod_Mud_VMG_V);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi kilka klubów padlinozerców. Piec powinno wystarczyc.", Info_Mod_Mud_VMG_T);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "W lesie jest biegacz cieni.", Info_Mod_Mud_VMG_S);
 };
 
 func void Info_Mod_Mud_VMG_T()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_T_15_00"); //Bring mir ein paar Scavengerkeulen. Fünf dürften genügen.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_01"); //Okay, das sollte nicht so schwierig sein. Ich seh’ mich mal ein wenig um.
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_T_15_02"); //(lacht) Viel Spaß.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_03"); //Ich mache mich dann auf den Weg. Oh, Die Wache da vorne winkt, gehe besser zu ihr.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_04"); //Naja, man sieht sich, mein Freund.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_T_15_00"); //Przynies mi kilka klubów padlinozerców. Piec powinno wystarczyc.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_01"); //Dobrze, to nie powinno byc zbyt trudne. Rozejrze sie troche dookola.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_T_15_02"); //(smiech) Dobra zabawa.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_03"); //Bede wtedy w drodze. Och, straznik tam jest faluje, lepiej isc do niej.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_T_03_04"); //Cóz, zobaczcie dookola, mój przyjaciel.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1203,19 +1203,19 @@ func void Info_Mod_Mud_VMG_T()
 
 func void Info_Mod_Mud_VMG_S()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_S_15_00"); //Dort hinten in dem Wald haust ein Schattenläufer. Bring mir sein Fell, dann lass ich dich weiter.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_S_03_01"); //Meinst du das ernsthaft?
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_S_15_00"); //W lesie jest biegacz cieni. Przynies mi jego futro, a ja pozwole ci jechac.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_S_03_01"); //Czy jestes powazny?
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Natürlich, und jetzt mach dich auf den Weg.", Info_Mod_Mud_VMG_X);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Nein, war nur Spaß.", Info_Mod_Mud_VMG_W);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Oczywiscie, i teraz zaczynamy dzialac.", Info_Mod_Mud_VMG_X);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Nie, myslalem.", Info_Mod_Mud_VMG_W);
 };
 
 func void Info_Mod_Mud_VMG_X()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_X_15_00"); //Natürlich, und jetzt mach dich auf den Weg.
-	AI_Output (self, hero, "Info_Mod_Mud_VMG_X_03_01"); //Wenn du das sagst ...
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_X_15_00"); //Oczywiscie, i teraz zaczynamy dzialac.
+	AI_Output (self, hero, "Info_Mod_Mud_VMG_X_03_01"); //Jesli tak powiesz, to....
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
@@ -1228,13 +1228,13 @@ func void Info_Mod_Mud_VMG_X()
 
 func void Info_Mod_Mud_VMG_W()
 {
-	AI_Output (hero, self, "Info_Mod_Mud_VMG_W_15_00"); //Nein, war nur Spaß.
+	AI_Output (hero, self, "Info_Mod_Mud_VMG_W_15_00"); //Nie, myslalem.
 
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir eine Spruchrolle Verwandlung Blutfliege.", Info_Mod_Mud_VMG_V);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Außerhalb der Barriere hat einer der Magier etwas verloren. Such das bitte.", Info_Mod_Mud_VMG_U);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "Bring mir ein paar Scavengerkeulen. Fünf dürften genügen.", Info_Mod_Mud_VMG_T);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi zaklecie metamorfoz krwi.", Info_Mod_Mud_VMG_V);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Poza bariera, jeden z magów cos stracil. Znajdz to, prosze.", Info_Mod_Mud_VMG_U);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "Przynies mi kilka klubów padlinozerców. Piec powinno wystarczyc.", Info_Mod_Mud_VMG_T);
 };
 
 INSTANCE Info_Mod_Mud_Pickpocket (C_INFO)

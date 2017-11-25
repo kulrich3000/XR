@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_StonePuma(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Puma";
+	name							=	"cukierek";
 	guild							=	GIL_Gargoyle;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Gargoyle;
 	level							=	20;
@@ -100,7 +100,7 @@ INSTANCE Puma	(Mst_Default_StonePuma)
 
 INSTANCE StonePuma	(Mst_Default_StonePuma)
 {
-	name = "Steinpuma";
+	name = "czarno-skrzydly sumiacy ptak";
 
 	B_SetVisuals_StonePuma();
 	Npc_SetToFistMode(self);

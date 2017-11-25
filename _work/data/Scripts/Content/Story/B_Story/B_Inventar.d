@@ -20,7 +20,7 @@ FUNC VOID B_ShowPlunderedItem (var C_NPC victm, var C_NPC plunder, var C_Item pl
 	{
 		var string PlunderItem;
 		//PlunderItem = ConcatStrings(IntToString(plunderamount), "x ");
-		PlunderItem = ConcatStrings(plunderthing.name, " erhalten");
+		PlunderItem = ConcatStrings(plunderthing.name, " uzyskiwany");
 
 		Print (PlunderItem);
  	};

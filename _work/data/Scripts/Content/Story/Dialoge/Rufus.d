@@ -18,22 +18,22 @@ FUNC INT Info_Mod_Rufus_Hi_Condition()
 
 FUNC VOID Info_Mod_Rufus_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rufus_Hi_02_00"); //Was, wer bist du, was machst du hier?
-	AI_Output(hero, self, "Info_Mod_Rufus_Hi_15_01"); //Die Frage ist doch: was machst du hier und wohin soll es denn gehen?
-	AI_Output(self, hero, "Info_Mod_Rufus_Hi_02_02"); //Ähhm ... ja ist ja schon gut, ich bin abgehauen vom Reisfeld. Ich wollte mich zum Ausgang des Minentals durchschlagen, aber da sind so viele Viecher.
+	AI_Output(self, hero, "Info_Mod_Rufus_Hi_02_00"); //Co, kim jestes, co tu robisz?
+	AI_Output(hero, self, "Info_Mod_Rufus_Hi_15_01"); //Pytanie brzmi: co tu robisz i dokad chcesz sie udac?
+	AI_Output(self, hero, "Info_Mod_Rufus_Hi_02_02"); //Um.... Tak, to prawda, ucieklem z pola ryzowego. Chcialem dotrzec do konca Doliny Kopalni, ale jest tak wiele zwierzat.
 
 	self.flags = 0;
 
 	Info_ClearChoices	(Info_Mod_Rufus_Hi);
 
-	Info_AddChoice	(Info_Mod_Rufus_Hi, "Ich kann dir aus dem Minental heraushelfen.", Info_Mod_Rufus_Hi_B);
-	Info_AddChoice	(Info_Mod_Rufus_Hi, "Na dann gehen wir doch am besten wieder zurück aufs Reisfeld.", Info_Mod_Rufus_Hi_A);
+	Info_AddChoice	(Info_Mod_Rufus_Hi, "Moge Ci pomóc wydostac sie z Minentala.", Info_Mod_Rufus_Hi_B);
+	Info_AddChoice	(Info_Mod_Rufus_Hi, "Dlaczego nie wrócimy do pola ryzowego?", Info_Mod_Rufus_Hi_A);
 };
 
 FUNC VOID Info_Mod_Rufus_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rufus_Hi_B_15_00"); //Ich kann dir aus dem Minental heraushelfen.
-	AI_Output(self, hero, "Info_Mod_Rufus_Hi_B_02_01"); //Ehrlich? Ich wüsste nicht, wie ich das wieder gut machen sollte. In Ordnung, ich Folge dir.
+	AI_Output(hero, self, "Info_Mod_Rufus_Hi_B_15_00"); //Moge Ci pomóc wydostac sie z Minentala.
+	AI_Output(self, hero, "Info_Mod_Rufus_Hi_B_02_01"); //Uczciwie? Nie wiedzialabym, jak to zrobic. Dobrze, ja pójde za Toba.
 
 	Info_ClearChoices	(Info_Mod_Rufus_Hi);
 
@@ -48,8 +48,8 @@ FUNC VOID Info_Mod_Rufus_Hi_B()
 
 FUNC VOID Info_Mod_Rufus_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rufus_Hi_A_15_00"); //Na dann gehen wir doch am besten wieder zurück aufs Reisfeld.
-	AI_Output(self, hero, "Info_Mod_Rufus_Hi_A_02_01"); //Was?! Unter keinen Umständen. Mich kriegst du nicht wieder dorthin.
+	AI_Output(hero, self, "Info_Mod_Rufus_Hi_A_15_00"); //Dlaczego nie wrócimy do pola ryzowego?
+	AI_Output(self, hero, "Info_Mod_Rufus_Hi_A_02_01"); //Co? W zadnych okolicznosciach. Nie mozesz mnie tam cofnac.
 
 	Info_ClearChoices	(Info_Mod_Rufus_Hi);
 
@@ -82,17 +82,17 @@ FUNC INT Info_Mod_Rufus_WrongGuide_Condition()
 
 FUNC VOID Info_Mod_Rufus_WrongGuide_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rufus_WrongGuide_02_00"); //He, halt, hier geht es zum neuen Lager.
+	AI_Output(self, hero, "Info_Mod_Rufus_WrongGuide_02_00"); //Hej, czekaj, az do nowego obozu.
 
 	Info_ClearChoices	(Info_Mod_Rufus_WrongGuide);
 
-	Info_AddChoice	(Info_Mod_Rufus_WrongGuide, "Ich habe es mir anders Überlegt, wir gehen zurück auf Reisfeld.", Info_Mod_Rufus_WrongGuide_B);
-	Info_AddChoice	(Info_Mod_Rufus_WrongGuide, "Achso, entschuldige, die andere Richtung.", Info_Mod_Rufus_WrongGuide_A);
+	Info_AddChoice	(Info_Mod_Rufus_WrongGuide, "Wracamy do pola ryzowego.", Info_Mod_Rufus_WrongGuide_B);
+	Info_AddChoice	(Info_Mod_Rufus_WrongGuide, "Prosze mi wybaczyc, na odwrót.", Info_Mod_Rufus_WrongGuide_A);
 };
 
 FUNC VOID Info_Mod_Rufus_WrongGuide_B()
 {
-	AI_Output(hero, self, "Info_Mod_Rufus_WrongGuide_B_15_00"); //Ich habe es mir anders Überlegt, wir gehen zurück auf Reisfeld.
+	AI_Output(hero, self, "Info_Mod_Rufus_WrongGuide_B_15_00"); //Wracamy do pola ryzowego.
 	
 	Info_ClearChoices	(Info_Mod_Rufus_WrongGuide);
 
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Rufus_WrongGuide_B()
 
 FUNC VOID Info_Mod_Rufus_WrongGuide_A()
 {
-	AI_Output(hero, self, "Info_Mod_Rufus_WrongGuide_A_15_00"); //Achso, entschuldige, die andere Richtung.
+	AI_Output(hero, self, "Info_Mod_Rufus_WrongGuide_A_15_00"); //Prosze mi wybaczyc, na odwrót.
 	
 	Info_ClearChoices	(Info_Mod_Rufus_WrongGuide);
 
@@ -136,7 +136,7 @@ FUNC INT Info_Mod_Rufus_WrongGuide02_Condition()
 
 FUNC VOID Info_Mod_Rufus_WrongGuide02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rufus_WrongGuide02_02_00"); //Du willst mich wohl verarschen. Na warte!
+	AI_Output(self, hero, "Info_Mod_Rufus_WrongGuide02_02_00"); //Zaczeliscie mnie oszukiwac. Cóz, poczekaj!
 
 	AI_StopProcessInfos	(self);
 
@@ -171,9 +171,9 @@ FUNC VOID Info_Mod_Rufus_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_00"); //Verdammt, meine Knochen ...
-			AI_Output(hero, self, "Info_Mod_Rufus_Umgehauen_15_01"); //Na, wie sieht es jetzt aus mit ein bisschen Arbeit auf dem Reisfeld?
-			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_02"); //Verdammt, ja, ich gehe ja schon zurück.
+			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_00"); //Damn, moje kosci.....
+			AI_Output(hero, self, "Info_Mod_Rufus_Umgehauen_15_01"); //No cóz, co zrobic na polu ryzowym?
+			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_02"); //Pieklo, tak, wracam.
 
 			Mod_SLD_Rufus = 3;
 
@@ -181,7 +181,7 @@ FUNC VOID Info_Mod_Rufus_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_03"); //Tja, das war wohl nichts.
+			AI_Output(self, hero, "Info_Mod_Rufus_Umgehauen_02_03"); //No cóz, to bylo nic.
 
 			B_StartOtherRoutine	(self, "FLUCHT");
 		};
@@ -216,11 +216,11 @@ FUNC INT Info_Mod_Rufus_RightGuide_Condition()
 
 FUNC VOID Info_Mod_Rufus_RightGuide_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Rufus_RightGuide_02_00"); //Hab vielen Dank. Ohne dich hätte ich es nie geschafft. Es ist nicht viel, was ich dir geben kann ... aber hier.
+	AI_Output(self, hero, "Info_Mod_Rufus_RightGuide_02_00"); //Dziekuje bardzo. Bez Ciebie nie móglbym tego zrobic. Niewiele moge Ci dac.... ale tutaj.
 
 	B_GiveInvItems	(self, hero, ItRi_WaermeRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Rufus_RightGuide_02_01"); //Diesen Ring habe ich vor meiner Zeit in der Kolonie in einem See gefunden. Es war mir, als hätte er mir an kalten Tagen immer Wärme und Zuversicht gespendet. Mach's gut.
+	AI_Output(self, hero, "Info_Mod_Rufus_RightGuide_02_01"); //Znalezilem ten pierscionek w kolonii w jeziorze przed czasem. To bylo tak, jakby zawsze dawal mi cieplo i pewnosc siebie w zimne dni. Teraz nalezy zachowac ostroznosc.
 
 	AI_StopProcessInfos	(self);
 
@@ -243,7 +243,7 @@ INSTANCE Info_Mod_Rufus_Heiltrank (C_INFO)
 	information	= Info_Mod_Rufus_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Rufus_Heiltrank_Condition()
@@ -262,31 +262,31 @@ FUNC VOID Info_Mod_Rufus_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Essenz der Heilung", Info_Mod_Rufus_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Istota uzdrawiania", Info_Mod_Rufus_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Elixier der Heilung", Info_Mod_Rufus_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Rufus_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Extrakt der Heilung", Info_Mod_Rufus_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Rufus_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Essenz der Heilung", Info_Mod_Rufus_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Istota uzdrawiania", Info_Mod_Rufus_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Trank der leichten Heilung", Info_Mod_Rufus_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Rufus_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Leichter Heiltrank", Info_Mod_Rufus_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Rufus_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Rufus_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Rufus_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Rufus_Heiltrank_Health_05);
 	};
 };
 

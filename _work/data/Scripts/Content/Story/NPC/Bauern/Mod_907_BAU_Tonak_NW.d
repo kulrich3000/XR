@@ -1,7 +1,7 @@
 instance Mod_907_BAU_Tonak_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Tonak"; 
+	name 		= "gliniany"; 
 	guild 		= GIL_NONE;
 	id 			= 907;
 	voice 		= 3;

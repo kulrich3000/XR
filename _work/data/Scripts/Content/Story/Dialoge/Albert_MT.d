@@ -19,36 +19,36 @@ FUNC INT Info_Mod_Albert_Hi_Condition()
 
 FUNC VOID Info_Mod_Albert_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Hi_32_00"); //Ich wurde schon informiert. Du bist wohl der Typ, der sich um eine Aufnahme bei uns bemüht.
-	AI_Output(self, hero, "Info_Mod_Albert_Hi_32_01"); //Der Teleporter funktioniert folgendermaßen: Ich gebe dir gleich einen Stein, den du auf das Podest dort legen musst, um den Teleporter zu aktivieren. Hast du das soweit verstanden?
+	AI_Output(self, hero, "Info_Mod_Albert_Hi_32_00"); //Zostalem juz o tym poinformowany. Wydaje mi sie, ze to Ty jestes facetem, który próbuje dostac strzal do nas.
+	AI_Output(self, hero, "Info_Mod_Albert_Hi_32_01"); //Teleporter dziala tak: daje ci kamien, który musisz umiescic na platformie, aby aktywowac Teleportera. Czy rozumiesz to bardzo dobrze?
 	
 	Info_ClearChoices	(Info_Mod_Albert_Hi);
 
-	Info_AddChoice	(Info_Mod_Albert_Hi, "Nein, bitte wiederhole das.", Info_Mod_Albert_Hi_B);
-	Info_AddChoice	(Info_Mod_Albert_Hi, "Ja, erzähl weiter.", Info_Mod_Albert_Hi_A);
+	Info_AddChoice	(Info_Mod_Albert_Hi, "Nie, prosze to powtórzyc.", Info_Mod_Albert_Hi_B);
+	Info_AddChoice	(Info_Mod_Albert_Hi, "Idzcie dalej.", Info_Mod_Albert_Hi_A);
 };
 
 FUNC VOID Info_Mod_Albert_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Hi_B_15_00"); //Nein, bitte wiederhole das.
-	AI_Output(self, hero, "Info_Mod_Albert_Hi_B_32_01"); //Ich gebe dir gleich einen Stein, den du auf das Podest dort legen musst, um den Teleporter zu aktivieren. Hast du das soweit verstanden?
+	AI_Output(hero, self, "Info_Mod_Albert_Hi_B_15_00"); //Nie, prosze to powtórzyc.
+	AI_Output(self, hero, "Info_Mod_Albert_Hi_B_32_01"); //Dam ci kamien do umieszczenia tam na platformie, aby aktywowac teleportera. Czy rozumiesz to bardzo dobrze?
 	
 	Info_ClearChoices	(Info_Mod_Albert_Hi);
 
-	Info_AddChoice	(Info_Mod_Albert_Hi, "Nein, bitte wiederhole das.", Info_Mod_Albert_Hi_B);
-	Info_AddChoice	(Info_Mod_Albert_Hi, "Ja, erzähl weiter.", Info_Mod_Albert_Hi_A);
+	Info_AddChoice	(Info_Mod_Albert_Hi, "Nie, prosze to powtórzyc.", Info_Mod_Albert_Hi_B);
+	Info_AddChoice	(Info_Mod_Albert_Hi, "Idzcie dalej.", Info_Mod_Albert_Hi_A);
 };
 
 FUNC VOID Info_Mod_Albert_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Hi_A_15_00"); //Ja, erzähl weiter.
-	AI_Output(self, hero, "Info_Mod_Albert_Hi_A_32_01"); //Wenn du an unserem Heimatort bist, solltest du sofort mit Genn sprechen, er wird dir alles über die Goblinplage erzählen.
-	AI_Output(hero, self, "Info_Mod_Albert_Hi_A_15_02"); //Okay. Gib mir den Stein.
-	AI_Output(self, hero, "Info_Mod_Albert_Hi_A_32_03"); //Hier hast du ihn.
+	AI_Output(hero, self, "Info_Mod_Albert_Hi_A_15_00"); //Idzcie dalej.
+	AI_Output(self, hero, "Info_Mod_Albert_Hi_A_32_01"); //Jesli jestes w naszym rodzinnym miescie, powinienes natychmiast porozmawiac z Genn, on opowie ci wszystko o dzumie goblinowej.
+	AI_Output(hero, self, "Info_Mod_Albert_Hi_A_15_02"); //Okay. Daj mi kamien.
+	AI_Output(self, hero, "Info_Mod_Albert_Hi_A_32_03"); //Tutaj ja masz.
 	
 	B_GiveInvItems	(self, hero, ItMi_TugettsoStein, 1);
 
-	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Jetzt kann ich den Teleporter mit Hilfe des Aufladesteins aktivieren.");
+	B_LogEntry	(TOPIC_MOD_FERCO_GOBLIN, "Teraz moge aktywowac teleporter za pomoca kamienia ladujacego.");
 
 	Info_ClearChoices	(Info_Mod_Albert_Hi);
 };
@@ -73,9 +73,9 @@ FUNC INT Info_Mod_Albert_Matronen_Condition()
 
 FUNC VOID Info_Mod_Albert_Matronen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Matronen_32_00"); //Und? Wie ist es gelaufen?
-	AI_Output(hero, self, "Info_Mod_Albert_Matronen_15_01"); //Es ist gut gelaufen. Ich habe den Nachwuchs der Goblins gestoppt. Den Rest bekommen sie dort alleine hin.
-	AI_Output(self, hero, "Info_Mod_Albert_Matronen_32_02"); //Das freut mich. Geh am Besten zu Turendil und erzähle ihm die guten Neuigkeiten.
+	AI_Output(self, hero, "Info_Mod_Albert_Matronen_32_00"); //A co? Jak to sie stalo?
+	AI_Output(hero, self, "Info_Mod_Albert_Matronen_15_01"); //To poszlo dobrze. Zatrzymalem potomstwo goblinów. Pozostala czesc mozna tam dostac na wlasna reke.
+	AI_Output(self, hero, "Info_Mod_Albert_Matronen_32_02"); //Ciesze sie, ze Pan to zrobil. Lepiej udac sie do Turendila i powiedziec mu dobra wiadomosc.
 
 	Wld_SendTrigger	("TRIGGERLIST_VMG_TUGETTSO");
 	Wld_SendUnTrigger	("STAENDER_VMG_PFX");
@@ -104,18 +104,18 @@ FUNC INT Info_Mod_Albert_Faice_Condition()
 
 FUNC VOID Info_Mod_Albert_Faice_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Faice_32_00"); //Schnell, wir haben nicht viel Zeit.
+	AI_Output(self, hero, "Info_Mod_Albert_Faice_32_00"); //Spieszyc sie, nie mamy duzo czasu.
 	
 	Info_ClearChoices	(Info_Mod_Albert_Faice);
 
-	Info_AddChoice	(Info_Mod_Albert_Faice, "Ich muss vorher noch etwas erledigen.", Info_Mod_Albert_Faice_B);
-	Info_AddChoice	(Info_Mod_Albert_Faice, "Gib mir den Stein und ich mache mich sofort auf den Weg.", Info_Mod_Albert_Faice_A);
+	Info_AddChoice	(Info_Mod_Albert_Faice, "Jest cos, co musze zrobic najpierw.", Info_Mod_Albert_Faice_B);
+	Info_AddChoice	(Info_Mod_Albert_Faice, "Daj mi kamien i od razu bede w drodze.", Info_Mod_Albert_Faice_A);
 };
 
 FUNC VOID Info_Mod_Albert_Faice_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Faice_B_15_00"); //Ich muss vorher noch etwas erledigen.
-	AI_Output(self, hero, "Info_Mod_Albert_Faice_B_32_01"); //Dann beeile dich.
+	AI_Output(hero, self, "Info_Mod_Albert_Faice_B_15_00"); //Jest cos, co musze zrobic najpierw.
+	AI_Output(self, hero, "Info_Mod_Albert_Faice_B_32_01"); //Pózniej spiesz sie.
 	
 	Info_ClearChoices	(Info_Mod_Albert_Faice);
 
@@ -124,12 +124,12 @@ FUNC VOID Info_Mod_Albert_Faice_B()
 
 FUNC VOID Info_Mod_Albert_Faice_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Faice_A_15_00"); //Gib mir den Stein und ich mache mich sofort auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Albert_Faice_A_32_01"); //Hier hast du ihn. Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Albert_Faice_A_15_00"); //Daj mi kamien i od razu bede w drodze.
+	AI_Output(self, hero, "Info_Mod_Albert_Faice_A_32_01"); //Tutaj ja masz. Dbaj o siebie.
 	
 	B_GiveInvItems	(self, hero, ItMi_TugettsoStein, 1);
 
-	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Ich sollte nun nach Tugettso und dort mit Genn sprechen, vielleicht weiß er mehr über die Heilpflanze, die ich suche.");
+	B_LogEntry	(TOPIC_MOD_FAICE_HEILUNG, "Teraz powinienem udac sie do Tugettso i porozmawiac z Genn tam, moze on wie wiecej o roslinie leczniczej, której szukam.");
 
 	Info_ClearChoices	(Info_Mod_Albert_Faice);
 
@@ -159,9 +159,9 @@ FUNC INT Info_Mod_Albert_Mendulus_Condition()
 
 FUNC VOID Info_Mod_Albert_Mendulus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Mendulus_32_00"); //Schnell, du musst dich beeilen. Faice geht es gar nicht gut. Rede mit Turendil, er ist bei Faice.
-	AI_Output(hero, self, "Info_Mod_Albert_Mendulus_15_01"); //Ich mache mich sofort auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Albert_Mendulus_32_02"); //Bitte beeile dich.
+	AI_Output(self, hero, "Info_Mod_Albert_Mendulus_32_00"); //Pospiesz sie, musisz sie spieszyc. Faice nie czuje sie dobrze. Porozmawiaj z Turendilem, jest z Faice' em.
+	AI_Output(hero, self, "Info_Mod_Albert_Mendulus_15_01"); //Bede w drodze od razu.
+	AI_Output(self, hero, "Info_Mod_Albert_Mendulus_32_02"); //Prosze sie spieszyc.
 
 	Wld_SendTrigger	("TRIGGERLIST_VMG_TUGETTSO");
 	Wld_SendUnTrigger	("STAENDER_VMG_PFX");
@@ -190,18 +190,18 @@ FUNC INT Info_Mod_Albert_Gift_Condition()
 
 FUNC VOID Info_Mod_Albert_Gift_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Gift_32_00"); //Wieder nach Tugettso, mein Freund?
+	AI_Output(self, hero, "Info_Mod_Albert_Gift_32_00"); //Wróc do Tugettso ponownie, mój przyjaciel?
 	
 	Info_ClearChoices	(Info_Mod_Albert_Gift);
 
-	Info_AddChoice	(Info_Mod_Albert_Gift, "Ich komme später wieder.", Info_Mod_Albert_Gift_B);
-	Info_AddChoice	(Info_Mod_Albert_Gift, "So sieht es aus. Kann ich einen Aufladestein haben?", Info_Mod_Albert_Gift_A);
+	Info_AddChoice	(Info_Mod_Albert_Gift, "Wróce pózniej.", Info_Mod_Albert_Gift_B);
+	Info_AddChoice	(Info_Mod_Albert_Gift, "Tak wlasnie wyglada. Czy moge miec kamien ladowania?", Info_Mod_Albert_Gift_A);
 };
 
 FUNC VOID Info_Mod_Albert_Gift_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Gift_B_15_00"); //Ich komme später wieder.
-	AI_Output(self, hero, "Info_Mod_Albert_Gift_B_32_01"); //Wir sehen uns.
+	AI_Output(hero, self, "Info_Mod_Albert_Gift_B_15_00"); //Wróce pózniej.
+	AI_Output(self, hero, "Info_Mod_Albert_Gift_B_32_01"); //Zobacze cie dookola.
 	
 	Info_ClearChoices	(Info_Mod_Albert_Gift);
 
@@ -210,12 +210,12 @@ FUNC VOID Info_Mod_Albert_Gift_B()
 
 FUNC VOID Info_Mod_Albert_Gift_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Gift_A_15_00"); //So sieht es aus. Kann ich einen Aufladestein haben?
-	AI_Output(self, hero, "Info_Mod_Albert_Gift_A_32_01"); //Hier hast du ihn. Pass auf dich auf.
+	AI_Output(hero, self, "Info_Mod_Albert_Gift_A_15_00"); //Tak wlasnie wyglada. Czy moge miec kamien ladowania?
+	AI_Output(self, hero, "Info_Mod_Albert_Gift_A_32_01"); //Tutaj ja masz. Dbaj o siebie.
 	
 	B_GiveInvItems	(self, hero, ItMi_TugettsoStein, 1);
 
-	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Auf nach Tugettso. Ich werde dort von Genn vielleicht mehr erfahren.");
+	B_LogEntry	(TOPIC_MOD_FAICE_GIFT, "Do Tugettso. Moge sie tam dowiedziec wiecej od Genna.");
 
 	Info_ClearChoices	(Info_Mod_Albert_Gift);
 
@@ -244,7 +244,7 @@ FUNC INT Info_Mod_Albert_Trador_Condition()
 
 FUNC VOID Info_Mod_Albert_Trador_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Trador_32_00"); //Na endlich kommst du, Turendil wartet schon auf dich.
+	AI_Output(self, hero, "Info_Mod_Albert_Trador_32_00"); //Turendil czeka na Ciebie.
 
 	Wld_SendTrigger	("TRIGGERLIST_VMG_TUGETTSO");
 	Wld_SendUnTrigger	("STAENDER_VMG_PFX");
@@ -259,7 +259,7 @@ INSTANCE Info_Mod_Albert_TeleporterFurt (C_INFO)
 	information	= Info_Mod_Albert_TeleporterFurt_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich brauche einen neuen Aufladestein.";
+	description	= "Potrzebuje nowego kamienia zasilajacego.";
 };
 
 FUNC INT Info_Mod_Albert_TeleporterFurt_Condition()
@@ -272,36 +272,36 @@ FUNC INT Info_Mod_Albert_TeleporterFurt_Condition()
 
 FUNC VOID Info_Mod_Albert_TeleporterFurt_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_15_00"); //Ich brauche einen neuen Aufladestein.
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_01"); //Ähm ...
-	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_15_02"); //Gibt es ein Problem?
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_03"); //Ja, so Leid es mir tut.
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_04"); //Aufgrund der Störungen, die in letzter Zeit öfter vorgekommen sind, kann ich es nicht mit meinem Gewissen vereinbaren, dich in den möglicherweise sicheren Tod zu schicken.
+	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_15_00"); //Potrzebuje nowego kamienia zasilajacego.
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_01"); //Um....
+	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_15_02"); //Czy jest jakis problem?
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_03"); //Przykro mi jednak.
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_32_04"); //Ze wzgledu na czeste ostatnio zaklócenia, nie moge pogodzic mojego sumienia z posylaniem was na ewentualna smierc.
 	
 	Info_ClearChoices	(Info_Mod_Albert_TeleporterFurt);
 
-	Info_AddChoice	(Info_Mod_Albert_TeleporterFurt, "Alles klar. Wann kann ich denn voraussichtlich durch das Portal?", Info_Mod_Albert_TeleporterFurt_B);
-	Info_AddChoice	(Info_Mod_Albert_TeleporterFurt, "Aber Turendil hat ...", Info_Mod_Albert_TeleporterFurt_A);
+	Info_AddChoice	(Info_Mod_Albert_TeleporterFurt, "Wszystko jasne. Kiedy prawdopodobnie bede mógl korzystac z portalu?", Info_Mod_Albert_TeleporterFurt_B);
+	Info_AddChoice	(Info_Mod_Albert_TeleporterFurt, "Ale Turendil ma....", Info_Mod_Albert_TeleporterFurt_A);
 };
 
 FUNC VOID Info_Mod_Albert_TeleporterFurt_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_B_15_00"); //Alles klar. Wann kann ich denn voraussichtlich durch das Portal?
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_01"); //Das weiß ich noch nicht. Aber in der Zwischenzeit kannst du nachsehen, ob du Furt findest.
+	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_B_15_00"); //Wszystko jasne. Kiedy prawdopodobnie bede mógl korzystac z portalu?
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_01"); //Jeszcze nie wiem. Ale w miedzyczasie mozna zobaczyc, czy mozna znalezc Furt.
 
 	if (Mod_VMG_FaiceGifty_Gift == 13)
 	{
-		AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_02"); //Ich habe gesehen, wie er in Richtung Altes Lager davon gerannt ist.
+		AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_02"); //Widzialem go uciekajacego do Starego Obozu.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_03"); //Ich habe gehört, dass er in der Nähe des Alten Lagers gesehen worden ist. Schau mal dort 	nach.
+		AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_03"); //Slyszalem, ze widziano go w poblizu starego obozu. Sprawdz to tam.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_B_15_04"); //Ich mache mich sofort auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_05"); //Ich werde dir Bescheid geben, wenn das Portal sicher ist.
+	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_B_15_04"); //Bede w drodze od razu.
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_B_32_05"); //Dowiem ci, kiedy portal jest bezpieczny.
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Der Teleporter ist zu unsicher. Ich soll erstmal in der Nähe des Alten Lagers nach Furt sehen. Ich sollte die Umgebung dort absuchen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Teleporter jest zbyt niebezpieczny. Szukam Furta w poblizu starego obozu. Mialem sprawdzic obwód.");
 	
 	Info_ClearChoices	(Info_Mod_Albert_TeleporterFurt);
 
@@ -314,8 +314,8 @@ FUNC VOID Info_Mod_Albert_TeleporterFurt_B()
 
 FUNC VOID Info_Mod_Albert_TeleporterFurt_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_A_15_00"); //Aber Turendil hat ...
-	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_A_32_01"); //(unterbricht) Das ist mir egal. Es geht hier um Menschenleben.
+	AI_Output(hero, self, "Info_Mod_Albert_TeleporterFurt_A_15_00"); //Ale Turendil ma....
+	AI_Output(self, hero, "Info_Mod_Albert_TeleporterFurt_A_32_01"); //(przerwania) Nie obchodze sie. Chodzi o ludzkie zycie.
 	
 	Info_Mod_Albert_TeleporterFurt_B();
 };
@@ -328,7 +328,7 @@ INSTANCE Info_Mod_Albert_FurtTot (C_INFO)
 	information	= Info_Mod_Albert_FurtTot_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe Furt gefunden.";
+	description	= "Znalazlem Furt.";
 };
 
 FUNC INT Info_Mod_Albert_FurtTot_Condition()
@@ -342,24 +342,24 @@ FUNC INT Info_Mod_Albert_FurtTot_Condition()
 
 FUNC VOID Info_Mod_Albert_FurtTot_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_00"); //Ich habe Furt gefunden.
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_01"); //Wo ist er denn?
-	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_02"); //Er ist tot. Ich habe ihn auf einer Insel in der Nähe des Alten Lagers gefunden.
-	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_03"); //Hier ist seine Waffe als Beweis.
+	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_00"); //Znalazlem Furt.
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_01"); //Gdzie wiec on jest?
+	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_02"); //On nie zyje. Znalazlem go na wyspie niedaleko Starego Obozu.
+	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_03"); //Oto dowód jego broni.
 
 	B_GiveInvItems	(hero, self, ItMw_FurtsSchwert, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_04"); //Ich weiß ehrlich gesagt nicht, ob ich mich freuen oder ob ich betrübt sein soll.
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_05"); //Immerhin habe ich ihn einige Zeit lang geglaubt zu kennen. Ich werde Turendil davon berichten.
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_06"); //Danke, dass du zu mir gekommen bist.
-	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_07"); //Wie sieht es mit dem Aufladestein aus?
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_08"); //Komm am Besten morgen wieder, dann kann ich dich vielleicht schon teleportieren.
-	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_09"); //Alles klar.
-	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_10"); //Wir sehen uns.
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_04"); //Szczerze mówiac, nie wiem, czy byc szczesliwym czy smutnym.
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_05"); //Myslalem przeciez, ze znalem go na jakis czas. Powiem Turendilowi o tym.
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_06"); //Dziekuje za przybycie do mnie.
+	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_07"); //A co z kamieniem zasilajacym?
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_08"); //Lepiej wróce jutro, wtedy byc moze bede mógl Cie teleportowac.
+	AI_Output(hero, self, "Info_Mod_Albert_FurtTot_15_09"); //Wszystko jasne.
+	AI_Output(self, hero, "Info_Mod_Albert_FurtTot_32_10"); //Zobacze cie dookola.
 
 	Mod_VMG_AlbertFurtTot = Wld_GetDay();
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich habe Albert von Furts Tod erzählt. Er meinte, ich solle mich einen Tag ausruhen, dann könnte ich in den Teleporter gehen.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Opowiedzialem Albertowi o smierci Furt. Powiedzial mi, zebym odpoczal dzien, wtedy moglem udac sie do teleportera.");
 };
 
 INSTANCE Info_Mod_Albert_TeleportWaldschluchtAktiv (C_INFO)
@@ -370,7 +370,7 @@ INSTANCE Info_Mod_Albert_TeleportWaldschluchtAktiv (C_INFO)
 	information	= Info_Mod_Albert_TeleportWaldschluchtAktiv_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie sieht es aus?";
+	description	= "Jak to wyglada?";
 };
 
 FUNC INT Info_Mod_Albert_TeleportWaldschluchtAktiv_Condition()
@@ -384,15 +384,15 @@ FUNC INT Info_Mod_Albert_TeleportWaldschluchtAktiv_Condition()
 
 FUNC VOID Info_Mod_Albert_TeleportWaldschluchtAktiv_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_TeleportWaldschluchtAktiv_15_00"); //Wie sieht es aus?
-	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_01"); //Ich denke, wir können einen Versuch wagen. Bist du bereit?
-	AI_Output(hero, self, "Info_Mod_Albert_TeleportWaldschluchtAktiv_15_02"); //Ja. Gib mir den Stein.
-	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_03"); //Ich habe das Portal bereits aktiviert. Du musst es nur noch durschreiten.
-	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_04"); //Hier hast du trotzdem noch einen Aufladestein.
+	AI_Output(hero, self, "Info_Mod_Albert_TeleportWaldschluchtAktiv_15_00"); //Jak to wyglada?
+	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_01"); //Mysle, ze mozemy dac jej strzal. Czy jestes gotowy?
+	AI_Output(hero, self, "Info_Mod_Albert_TeleportWaldschluchtAktiv_15_02"); //Tak. Daj mi kamien.
+	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_03"); //Uaktywnilem juz portal. Jedyne co musisz zrobic, to przejsc przez nie.
+	AI_Output(self, hero, "Info_Mod_Albert_TeleportWaldschluchtAktiv_32_04"); //Wciaz jednak masz tutaj kamien zasilajacy.
 
 	B_GiveInvItems	(self, hero, ItMi_TugettsoStein, 1);
 
-	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Ich werde den Teleporter ausprobieren. Hoffentlich komme ich auch wirklich in Tugettso raus.");
+	B_LogEntry	(TOPIC_MOD_TURENDIL_GOLEM, "Spróbuje teleportera. Mam nadzieje, ze równiez wyjde z Tugettso.");
 
 	Wld_SendTrigger	("STAENDER_VMG_PFX");
 	Wld_SendTrigger	("PLATTFORM_VMG_PFX");
@@ -419,7 +419,7 @@ FUNC INT Info_Mod_Albert_WaldschluchtBack_Condition()
 
 FUNC VOID Info_Mod_Albert_WaldschluchtBack_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_WaldschluchtBack_32_00"); //Ah, es scheint geklappt zu haben.
+	AI_Output(self, hero, "Info_Mod_Albert_WaldschluchtBack_32_00"); //Wydaje sie, ze to zadzialalo.
 
 	Wld_SendUnTrigger	("STAENDER_VMG_PFX");
 	Wld_SendUnTrigger	("PLATTFORM_VMG_PFX");
@@ -438,7 +438,7 @@ INSTANCE Info_Mod_Albert_Pruefung (C_INFO)
 	information	= Info_Mod_Albert_Pruefung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hi. Ich brauche einen neuen Aufladestein.";
+	description	= "Hi. Potrzebuje nowego kamienia zasilajacego.";
 };
 
 FUNC INT Info_Mod_Albert_Pruefung_Condition()
@@ -451,13 +451,13 @@ FUNC INT Info_Mod_Albert_Pruefung_Condition()
 
 FUNC VOID Info_Mod_Albert_Pruefung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Pruefung_15_00"); //Hi. Ich brauche einen neuen Aufladestein.
-	AI_Output(self, hero, "Info_Mod_Albert_Pruefung_32_01"); //Ich habe schon gehört, dass du endlich unsere Techniken erlernst, um ein geachtetes Mitglied zu werden. Sehr lobenswert. Hier ist der Stein.
+	AI_Output(hero, self, "Info_Mod_Albert_Pruefung_15_00"); //Hi. Potrzebuje nowego kamienia zasilajacego.
+	AI_Output(self, hero, "Info_Mod_Albert_Pruefung_32_01"); //Slyszalem, ze wreszcie uczysz sie naszych technik, aby stac sie szanowanym czlonkiem. Bardzo godny pochwaly. Oto kamien.
 	
 	B_GiveInvItems	(self, hero, ItMi_TugettsoStein, 1);
 
-	AI_Output(hero, self, "Info_Mod_Albert_Pruefung_15_02"); //Gut, ich mache mich dann auf den Weg.
-	AI_Output(self, hero, "Info_Mod_Albert_Pruefung_32_03"); //Viel Erfolg!
+	AI_Output(hero, self, "Info_Mod_Albert_Pruefung_15_02"); //Dobrze, bede na drodze.
+	AI_Output(self, hero, "Info_Mod_Albert_Pruefung_32_03"); //Powodzenia!
 };
 
 INSTANCE Info_Mod_Albert_Skinner (C_INFO)
@@ -468,7 +468,7 @@ INSTANCE Info_Mod_Albert_Skinner (C_INFO)
 	information	= Info_Mod_Albert_Skinner_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe die Spruchrollen, die ihr wolltet (...)";
+	description	= "Przynosze ci role, które chciales grac (..... )";
 };
 
 FUNC INT Info_Mod_Albert_Skinner_Condition()
@@ -485,24 +485,24 @@ FUNC INT Info_Mod_Albert_Skinner_Condition()
 
 FUNC VOID Info_Mod_Albert_Skinner_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Skinner_15_00"); //Ich bringe die Spruchrollen, die ihr wolltet, Magus der Gestaltenwandlung.
+	AI_Output(hero, self, "Info_Mod_Albert_Skinner_15_00"); //Przynosze wladcom, o które prosiles, zmieniajacy ksztalt mag.
 
 	Npc_RemoveInvItems	(hero, ItSc_SumWolf, 1);
 	Npc_RemoveInvItems	(hero, ItSc_SumGol, 1);
 	Npc_RemoveInvItems	(hero, ItSc_SumDemon, 1);
 
-	B_ShowGivenThings	("Spruchrollen gegeben");
+	B_ShowGivenThings	("Rola przypisana na pismie");
 
-	AI_Output(self, hero, "Info_Mod_Albert_Skinner_32_01"); //(erfreut) Ahh, fabelhaft, dann können wir endlich mit unseren Studien beginnen. Hier ist die vereinbarte Bezahlung, mit einer Spruchrolle zusätzlich für den zuverlässigen Boten.
+	AI_Output(self, hero, "Info_Mod_Albert_Skinner_32_01"); //(joyful) Ahh, bajkowy, wtedy wreszcie mozemy zaczac studia. Oto uzgodniona platnosc, z dodatkowa rola zaklecia dla niezawodnego poslanca.
 
 	CreateInvItems	(hero, ItMi_Gold, 800);
 	CreateInvItems	(hero, ItSc_TrfRabbit, 2);
 
-	B_ShowGivenThings	("Gold und Spruchrollen erhalten");
+	B_ShowGivenThings	("Odbiór zwojów zlota i sloganów");
 
 	B_GivePlayerXP	(350);
 
-	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Ich war bei Albert, der mir noch eine Spruchrolle zusätzlich gegeben hat. Jetzt brauche ich nur noch mit Skinner den Rest zu regeln.");
+	B_LogEntry	(TOPIC_MOD_BDT_SKINNER, "Bylem z Albertem, który dal mi dodatkowa czesc powiedzenia. Teraz musze tylko wypracowac reszte z Skinnerem.");
 };
 
 INSTANCE Info_Mod_Albert_Amulett (C_INFO)
@@ -513,7 +513,7 @@ INSTANCE Info_Mod_Albert_Amulett (C_INFO)
 	information	= Info_Mod_Albert_Amulett_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo werter Magier. Ich bitte den Vorfall zu entschuldigen.";
+	description	= "Witaj, szanowny magik. Przepraszam za ten incydent.";
 };
 
 FUNC INT Info_Mod_Albert_Amulett_Condition()
@@ -527,22 +527,22 @@ FUNC INT Info_Mod_Albert_Amulett_Condition()
 
 FUNC VOID Info_Mod_Albert_Amulett_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Amulett_15_00"); //Hallo werter Magier. Ich bitte den Vorfall zu entschuldigen. Ich habe das richtige Amulett ausfindig gemacht und trage es bei mir.
-	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_01"); //(ungeduldig) Zeig her.
+	AI_Output(hero, self, "Info_Mod_Albert_Amulett_15_00"); //Witaj, szanowny magik. Przepraszam za ten incydent. Znalazlem wlasciwy amulet i nosze go razem ze mna.
+	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_01"); //(Przypominajaco) Pokaz mi.
 
 	B_GiveInvItems	(hero, self, ItAm_MegaAmulett2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_02"); //Hmm ... bei Adanos, tatsächlich, das ist es. Meine Brüder werden sehr erfreut darüber sein.
-	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_03"); //Da es unserer Gemeinschaft von großem Nutzen sein wird, werde ich dir den Rest der Bezahlung trotz des Vorfalls geben.
-	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_04"); //Ich hoffe aber, dass so etwas in Zukunft nicht mehr vorkommen wird.
+	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_02"); //Hmm..... Z Adanosem tak wlasnie. Moi bracia beda z tego bardzo zadowoleni.
+	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_03"); //Poniewaz bedzie to bardzo korzystne dla naszej spolecznosci, oddam wam reszte wynagrodzenia pomimo tego incydentu.
+	AI_Output(self, hero, "Info_Mod_Albert_Amulett_32_04"); //Mam jednak nadzieje, ze nie powtórzy sie to w przyszlosci.
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
 	CreateInvItems	(hero, ItSc_TrfSheep, 1);
 	CreateInvItems	(hero, ItSc_TrfKeiler, 1);
 
-	B_ShowGivenThings	("300 Gold und 2 Spruchrollen erhalten");
+	B_ShowGivenThings	("300 zlota i 2 kolowrotków zakonserwowanych");
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Ich habe das Amulett Albert übergeben und sollte Dexter darüber in Kenntnis setzen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dalem amulet Albertowi i powinienem poinformowac o tym Dextera.");
 };
 
 INSTANCE Info_Mod_Albert_Oschust (C_INFO)
@@ -553,7 +553,7 @@ INSTANCE Info_Mod_Albert_Oschust (C_INFO)
 	information	= Info_Mod_Albert_Oschust_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bin gekommen eure Unterstützung zu erbitten.";
+	description	= "Przyszedlem poprosic Pana o wsparcie.";
 };
 
 FUNC INT Info_Mod_Albert_Oschust_Condition()
@@ -576,14 +576,14 @@ FUNC INT Info_Mod_Albert_Oschust_Condition()
 
 FUNC VOID Info_Mod_Albert_Oschust_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_00"); //Ich bin gekommen eure Unterstützung zu erbitten. Unsere beiden Gemeinschaften schweben in großer Gefahr.
-	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_01"); //Wie das? So berichte mir, was vorgefallen ist.
-	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_02"); //Ein Verräter aus unserem Lager, derselbe, der auch das Amulett gefälscht hat, ist für alles verantwortlich.
-	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_03"); //Er hat uns einen Hinterhalt bereitet, durch welchen viele unserer Männer in die Gefangenschaft der Orks gerieten, mit welchen er gemeinsame Sache macht.
-	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_04"); //Was?! Welche Niedertracht sich mit diesen üblen Kreaturen einzulassen.
-	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_05"); //Aber in wie fern betrifft das alles uns? Wollen die Orks uns jetzt womöglich das Amulett entreißen?
-	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_06"); //Euer Scharfsinn ehrt euch, Magier. Genau das ist es, was die Unholde im Sinn haben.
-	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_07"); //Dann gibt es keine Zeit zu verlieren. Warte hier, ich werde meinen Brüdern bescheid geben.
+	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_00"); //Przyszedlem poprosic Pana o wsparcie. Dwie nasze wspólnoty sa bardzo zagrozone.
+	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_01"); //Jak to zrobic? Powiedz mi wiec, co sie stalo.
+	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_02"); //Zdrajca z naszego obozu, ten sam, który sfalszowal amulet, jest odpowiedzialny za wszystko.
+	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_03"); //Stworzyl on dla nas zasadzke, dzieki której wielu naszych mezczyzn zostalo ujetych przez orki, z którymi tworzy wspólna sprawe.
+	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_04"); //Co? Jaka podstawowosc aby sie zaangazowac w te szatanskie istoty.
+	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_05"); //Ale jak daleko jest od nas to wszystko o nas? Czy orkowie chca teraz od nas odepchnac amulet?
+	AI_Output(hero, self, "Info_Mod_Albert_Oschust_15_06"); //Twoja zuchwalosc czci ciebie, maga. Wlasnie o tym mysla ogry.
+	AI_Output(self, hero, "Info_Mod_Albert_Oschust_32_07"); //Nie ma wiec czasu do stracenia. Czekajcie tutaj, poinformuje moich braci.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Ferco_QuestThree))
 	{
@@ -616,7 +616,7 @@ FUNC INT Info_Mod_Albert_KommeMit_Condition()
 
 FUNC VOID Info_Mod_Albert_KommeMit_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_32_00"); //Nun denn, ich habe mich mit meinen Brüdern beraten und wir haben beschlossen, dass ich dich begleite, deine Freunde zu retten.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_32_00"); //No cóz, skonsultowalem sie z bracmi i postanowilismy, ze bede wam towarzyszyc, aby ocalic waszych przyjaciól.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Ferco_QuestThree))
 	{
@@ -625,21 +625,21 @@ FUNC VOID Info_Mod_Albert_KommeMit_Info()
 
 	Info_ClearChoices	(Info_Mod_Albert_KommeMit);
 
-	Info_AddChoice	(Info_Mod_Albert_KommeMit, "Was, nur wir zu zweit?", Info_Mod_Albert_KommeMit_B);
-	Info_AddChoice	(Info_Mod_Albert_KommeMit, "In Ordnung.", Info_Mod_Albert_KommeMit_A);
+	Info_AddChoice	(Info_Mod_Albert_KommeMit, "Cóz, co to za dwoje z nas?", Info_Mod_Albert_KommeMit_B);
+	Info_AddChoice	(Info_Mod_Albert_KommeMit, "Wszystkie sluszne, wszystkie sluszne.", Info_Mod_Albert_KommeMit_A);
 };
 
 FUNC VOID Info_Mod_Albert_KommeMit_C()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_00"); //Hierzu kommt jetzt das Amulett der Extension zum Einsatz.
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_01"); //Es hat folgende Eigenschaft: Jeden Zauber, den der Träger auf sich wirkt, erfahren auch alle seine Kampfgefährten, was es zu einem äußerst mächtigen Werkzeug macht.
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_02"); //Ohne weiter Worte zu verlieren: Ich werde uns in Blutfliegen verwandeln. Folge mir einfach, ich bringe uns auf dem schnellsten Weg in die Orkstadt.
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_03"); //Nach allem was ich aus meinen bisherigen Exkursionen als Blutfliege weiß, gibt es dort ein unterirdisches Höhlensystem, wo sich eigentlich deine Freunde befinden sollte ... falls sie noch, sollte es Adanos Wille sein, am Leben sind.
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_04"); //Und jetzt lass uns ohne Verzug aufbrechen.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_00"); //Do tego celu sluzy teraz amulet przedluzacza.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_01"); //Ma on nastepujace cechy: Kazdy zaklecie rzucane przez nosiciela jest doswiadczany przez wszystkich swoich towarzyszy bojowych, czyniac go niezwykle poteznym narzedziem.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_02"); //Bez dalszej adorowania przeksztalce nas w muchy krwi. Wystarczy isc za mna, zabiore nas do Orc City po najszybszej drodze.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_03"); //Przeciez z moich poprzednich wypraw wiem, jak przelatywala krew, jest podziemny system jaskiniowy, w którym wasi przyjaciele powinni byc.... Jesli jeszcze zyja, powinna to byc wola Adano.
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_C_32_04"); //Teraz odejdzmy bez zwloki.
 	
 	Info_ClearChoices	(Info_Mod_Albert_KommeMit);
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Das hat es also mit dem Amulett auf sich. Jeder Zauber, den der Träger auf sich wirkt, erfolgt auch auf alle seine Kampfgenossen.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "O to wlasnie chodzi w amulecie. Kazdy zaklecie rzucane przez przewoznika rzucany jest na wszystkich swoich towarzyszy broni bojowej.");
 
 	AI_StopProcessInfos	(self);
 
@@ -650,15 +650,15 @@ FUNC VOID Info_Mod_Albert_KommeMit_C()
 
 FUNC VOID Info_Mod_Albert_KommeMit_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_KommeMit_B_15_00"); //Was, nur wir zu zweit?
-	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_B_32_01"); //Hier ist es auch keine rohe Gewalt, die uns zum Erfolg verhelfen kann, sondern der geschickte Einsatz von Magie.
+	AI_Output(hero, self, "Info_Mod_Albert_KommeMit_B_15_00"); //Cóz, co to za dwoje z nas?
+	AI_Output(self, hero, "Info_Mod_Albert_KommeMit_B_32_01"); //Tutaj to nie brutalna sila moze nam pomóc odniesc sukces, ale umiejetne wykorzystanie magii.
 	
 	Info_Mod_Albert_KommeMit_C();
 };
 
 FUNC VOID Info_Mod_Albert_KommeMit_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_KommeMit_A_15_00"); //In Ordnung.
+	AI_Output(hero, self, "Info_Mod_Albert_KommeMit_A_15_00"); //Wszystkie sluszne, wszystkie sluszne.
 	
 	Info_Mod_Albert_KommeMit_C();
 };
@@ -685,10 +685,10 @@ FUNC INT Info_Mod_Albert_OrkCity_Condition()
 
 FUNC VOID Info_Mod_Albert_OrkCity_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_OrkCity_32_00"); //So, hier müsste sich wohl der Eingang ins unterirdische Höhlensystem befinden.
-	AI_Output(self, hero, "Info_Mod_Albert_OrkCity_32_01"); //Geh voran, du bist der stärkere Kämpfer. Ich folge dir.
+	AI_Output(self, hero, "Info_Mod_Albert_OrkCity_32_00"); //Cóz, to powinno byc wejscie do podziemnej jaskini.
+	AI_Output(self, hero, "Info_Mod_Albert_OrkCity_32_01"); //Idz dalej, jestes silniejszym wojownikiem. Bede Cie sledzil.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dank Alberts magischer Künste und dem Amulett der Extension begeben wir uns jetzt in das unterirdische Höhlensystem der Orks, um die Gefangenen zu finden.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Dzieki magicznym sztukom Alberta i amuletowi przedluzki wkraczamy teraz do podziemnej jaskini Orków, by odnalezc wiezniów.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -714,7 +714,7 @@ FUNC INT Info_Mod_Albert_FluchtHappy_Condition()
 
 FUNC VOID Info_Mod_Albert_FluchtHappy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_FluchtHappy_32_00"); //So, von hier aus kann ich uns alle mit dieser Teleportspruchrolle und dem Amulett aus der Orkstadt herausteleportieren.
+	AI_Output(self, hero, "Info_Mod_Albert_FluchtHappy_32_00"); //Stad z tego miejsca moge nas wszystkich teleportowac poza orkowe miasto z teleportem zwój i amulet.
 
 	if (Npc_HasItems(hero, ItAm_MegaAmulett2) > 0)
 	{
@@ -752,9 +752,9 @@ FUNC INT Info_Mod_Albert_Safety_Condition()
 
 FUNC VOID Info_Mod_Albert_Safety_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Safety_32_00"); //(erleichtert) So, das wäre geschafft. Ich werde nun rasch zu meinen Brüdern zurückkehren, ihnen von dem Vorgefallenen berichten und uns auf einen möglichen Angriff einstellen.
-	AI_Output(self, hero, "Info_Mod_Albert_Safety_32_01"); //Ihr wiederum tätet gut daran ebenfalls zu eurem Lager eilen, da der Feind jeder Zeit zuschlagen kann.
-	AI_Output(hero, self, "Info_Mod_Albert_Safety_15_02"); //Ich danke dir für deine Unterstützung. Jetzt ist aber tatsächlich nicht die Zeit zur Muße. So lasst uns denn ohne Verzug aufbrechen.
+	AI_Output(self, hero, "Info_Mod_Albert_Safety_32_00"); //No cóz, to oklad. Bede teraz szybko wracal do moich braci, opowiadalem im o tym, co sie wydarzylo i przygotowywalem sie do ewentualnego ataku.
+	AI_Output(self, hero, "Info_Mod_Albert_Safety_32_01"); //Wy, z drugiej strony, dobrze byscie spieszyli sie do waszego obozu, poniewaz wróg moze uderzyc w kazdej chwili.
+	AI_Output(hero, self, "Info_Mod_Albert_Safety_15_02"); //Dziekuje za wsparcie. Ale teraz nie jest to czas na wypoczynek. Pozostawmy wiec niezwlocznie.
 
 	AI_StopProcessInfos	(self);
 
@@ -810,7 +810,7 @@ INSTANCE Info_Mod_Albert_Hexen (C_INFO)
 	information	= Info_Mod_Albert_Hexen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wir, die Gemeinschaft des Wassers, sind in großer Bedrängnis und könnten die Macht des Amulettes gut brauchen.";
+	description	= "My, wspólnota wody, jestesmy w wielkim cierpieniu i mozemy potrzebowac mocy amuletu.";
 };
 
 FUNC INT Info_Mod_Albert_Hexen_Condition()
@@ -825,9 +825,9 @@ FUNC INT Info_Mod_Albert_Hexen_Condition()
 
 FUNC VOID Info_Mod_Albert_Hexen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Hexen_15_00"); //Wir, die Gemeinschaft des Wassers, sind in großer Bedrängnis und könnten die Macht des Amulettes gut brauchen.
-	AI_Output(self, hero, "Info_Mod_Albert_Hexen_32_01"); //Unseren naturverbundenen Brüdern bin ich gerne bereit zu helfen.
-	AI_Output(self, hero, "Info_Mod_Albert_Hexen_32_02"); //Ich will dich jedoch darum bitten, uns das Amulett wieder zurückzubringen, wenn ihr euer Problem bewältigt habt.
+	AI_Output(hero, self, "Info_Mod_Albert_Hexen_15_00"); //My, wspólnota wody, jestesmy w wielkim cierpieniu i mozemy potrzebowac mocy amuletu.
+	AI_Output(self, hero, "Info_Mod_Albert_Hexen_32_01"); //Chetnie pomagam naszym braciom kochajacym przyrode.
+	AI_Output(self, hero, "Info_Mod_Albert_Hexen_32_02"); //Chcialbym jednak prosic panstwa o zwrócenie nam amuletu, gdy juz przezwyciezyli panstwo swój problem.
 
 	B_GiveInvItems	(self, hero, ItAm_MegaAmulett2, 1);
 };
@@ -840,7 +840,7 @@ INSTANCE Info_Mod_Albert_HexenBack (C_INFO)
 	information	= Info_Mod_Albert_HexenBack_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich bringe dir das Amulett zurück.";
+	description	= "Przynosze ci amulet z powrotem.";
 };
 
 FUNC INT Info_Mod_Albert_HexenBack_Condition()
@@ -855,11 +855,11 @@ FUNC INT Info_Mod_Albert_HexenBack_Condition()
 
 FUNC VOID Info_Mod_Albert_HexenBack_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_HexenBack_15_00"); //Ich bringe dir das Amulett zurück.
+	AI_Output(hero, self, "Info_Mod_Albert_HexenBack_15_00"); //Przynosze ci amulet z powrotem.
 
 	B_GiveInvItems	(hero, self, ItAm_MegaAmulett2, 1);
 
-	AI_Output(self, hero, "Info_Mod_Albert_HexenBack_32_01"); //Ich danke dir. Wie es scheint, hat es euch sehr geholfen.
+	AI_Output(self, hero, "Info_Mod_Albert_HexenBack_32_01"); //Dziekuje, dziekuje. Wydaje sie, ze bardzo ci to pomoglo.
 };
 
 INSTANCE Info_Mod_Albert_Asylanten (C_INFO)
@@ -870,7 +870,7 @@ INSTANCE Info_Mod_Albert_Asylanten (C_INFO)
 	information	= Info_Mod_Albert_Asylanten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wieso seid ihr ins Minental gekommen?";
+	description	= "Dlaczego przyjechales do Minental?";
 };
 
 FUNC INT Info_Mod_Albert_Asylanten_Condition()
@@ -883,36 +883,36 @@ FUNC INT Info_Mod_Albert_Asylanten_Condition()
 
 FUNC VOID Info_Mod_Albert_Asylanten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_15_00"); //Wieso seid ihr ins Minental gekommen?
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_32_01"); //In unserer Heimatdimension wurden wir von einer wahren Armee von Goblins heimgesucht.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_32_02"); //Durch einen alten Teleporter konnte sich ein Großteil von uns hierher absetzen und sucht nun nach Hilfe.
+	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_15_00"); //Dlaczego przyjechales do Minental?
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_32_01"); //W wymiarze ojczystym uderzyla nas prawdziwa armia goblinów.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_32_02"); //Dzieki starym teleporterom wiekszosc z nas byla w stanie wyróznic sie i szukac pomocy.
 
 	Info_ClearChoices	(Info_Mod_Albert_Asylanten);
 
-	Info_AddChoice	(Info_Mod_Albert_Asylanten, "Ihr seht nicht aus, als würdet ihr nach Hilfe suchen.", Info_Mod_Albert_Asylanten_B);
-	Info_AddChoice	(Info_Mod_Albert_Asylanten, "Was machen die Zurückgebliebenen?", Info_Mod_Albert_Asylanten_A);
+	Info_AddChoice	(Info_Mod_Albert_Asylanten, "Nie wyglada na to, ze szukasz pomocy.", Info_Mod_Albert_Asylanten_B);
+	Info_AddChoice	(Info_Mod_Albert_Asylanten, "Co robi opózniony?", Info_Mod_Albert_Asylanten_A);
 };
 
 FUNC VOID Info_Mod_Albert_Asylanten_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_B_15_00"); //Ihr seht nicht aus, als würdet ihr nach Hilfe suchen.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_01"); //Es ist aussichtslos. Wir sind hier in einem Gebiet mit einem sonderbaren Menschenschlag geraten.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_02"); //Die erste Gruppe, auf die wir stießen, verbirgt sich flussabwärts hinter einer hohen Palisade.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_03"); //Der Wächter, der uns fragte, weshalb wir kämen, lachte uns schallend aus und wünschte uns Beliar an den Hals.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_04"); //Eine andere Gruppierung empfing uns herzlich und lauschte unserem Wehklagen, zog sich dann rauchend zu einer Besprechung zurück und schickte uns mit ernster Miene nach Hause.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_05"); //Abgesehen von einzelnen Jägern oder Gesetzlosen konnten wir sonst niemanden ausmachen, den wir hätten bitten können.
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_06"); //Seitdem bleibt uns nichts übrig, als zu hoffen.
-	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_B_15_07"); //Das klingt nicht beneidenswert.
+	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_B_15_00"); //Nie wyglada na to, ze szukasz pomocy.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_01"); //To beznadziejne. Znajdujemy sie w obszarze o dziwnej rasie ludzkiej.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_02"); //Pierwsza grupa, z która mielismy do czynienia, kryje sie za wysoka palisada.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_03"); //Straznik, który zapytal nas, dlaczego przyjechalismy tu glosno sie smial i zyczyl nam Beliara.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_04"); //Inna grupa przywitala nas serdecznie i wysluchala naszego lamentów, potem wycofala sie z powrotem na spotkanie i wyslala nas do domu z gróbem.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_05"); //Poza indywidualnymi mysliwymi czy zakazami, nie moglismy znalezc nikogo innego do zapytania.
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_B_32_06"); //Od tego czasu nie mielismy innego wyboru niz miec nadzieje.
+	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_B_15_07"); //To nie budzi pozazdroszczenia.
 
-	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "In der Ruine am Meer haben sich Verwandlungsmagier niedergelassen, die dort auf Hilfe für ihre Heimatwelt warten. Sie scheinen enttäuscht zu sein vom Alten Lager und der Bruderschaft, zeigen aber kein aggressives Potenzial.");
+	B_LogEntry	(TOPIC_MOD_HAGEN_ASYLANTEN, "Ruiny nad morzem sa domem dla magów zmian, którzy czekaja na pomoc w ich ojczystym swiecie. Wydaje sie, ze sa rozczarowani Starym Obozem i Bractwem, ale nie wykazuja zadnego agresywnego potencjalu.");
 
 	Info_ClearChoices	(Info_Mod_Albert_Asylanten);
 };
 
 FUNC VOID Info_Mod_Albert_Asylanten_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_A_15_00"); //Was machen die Zurückgebliebenen?
-	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_A_32_01"); //Sie verteidigen unser Dorf, wenn es sein muss. Wir werden es nicht kampflos aufgeben!
+	AI_Output(hero, self, "Info_Mod_Albert_Asylanten_A_15_00"); //Co robi opózniony?
+	AI_Output(self, hero, "Info_Mod_Albert_Asylanten_A_32_01"); //Oni beda bronic naszej wioski, jesli beda musieli. Nie poddajemy sie bez walki!
 
 	Info_Mod_Albert_Asylanten_B();
 };
@@ -938,26 +938,26 @@ FUNC INT Info_Mod_Albert_Fokus_Condition()
 
 FUNC VOID Info_Mod_Albert_Fokus_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_00"); //Was suchst du hier oben?
-	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_01"); //Ich bin auf der Suche nach einem magischen Fokus. Die Wassermagier hatten ihn auf dem Sockel bei der Plattform abgelegt, ich kann ihn jedoch nicht sehen.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_02"); //Oh ja, an den erinnere ich mich gut. Der hat uns einige Probleme bereitet.
-	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_03"); //Es liegt ein Schutzzauber auf ihm. Ansonsten ist er vollkommen ungefährlich.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_04"); //Gut zu wissen. Mehrere von uns haben versucht, ihn vom Sockel zu heben, und haben Blessuren und sogar Knochenbrüche davon getragen.
-	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_05"); //Wo ist der Fokus jetzt?
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_06"); //Wir haben ihn den Felsen hinab ins Meer geworfen.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_07"); //Jedenfalls hätten wir es getan, wenn es nach mir gegangen wäre.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_08"); //So haben wir einfach eine Kiste drüber gestülpt und danach fest verschlossen. Es ist eine der Truhen dort drüben.
-	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_09"); //Darf ich den Fokus mitnehmen?
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_10"); //Warte mal. Das war noch nicht das einzige Problem, das wir hatten.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_11"); //Gestern kam dann plötzlich eine unheimliche Gestalt des Wegs und fragte uns nach dem Teil.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_12"); //Mir wurde ganz schwummrig, als der Typ aufkreuzte. Dem hätte ich nie verraten, dass wir den Fokus noch besitzen!
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_13"); //Deswegen habe ich ihm vorgelogen, wir hätten ihn tatsächlich ins Meer geschmissen. Da ist er dann wieder abgezogen.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_14"); //Drittes Problem: Wir wollten den Fokus danach selbst so schnell wie möglich loswerden.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_15"); //Zwei von uns haben sich die Truhe gegriffen, nur um dann merken zu müssen, dass der Schutzzauber nun auf sie übergesprungen ist!
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_16"); //Die beiden sind meterweit geflogen.
-	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_17"); //Wenn du es also schaffst, den Zauber zu brechen, dann bitte, bitte, nimm den Fokus mit.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_00"); //Co Pan tutaj robi?
+	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_01"); //Szukam magicznego ostrosci. Magicy wodni umiescili ja na cokole obok podestu, ale ja tego nie widze.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_02"); //Ach, tak, dobrze go pamietam. Spowodowal nam jakies klopoty.
+	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_03"); //Jest na nim zaklecie ochronne. W przeciwnym razie jest calkowicie nieszkodliwe.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_04"); //Dobra znajomosc. Kilkoro z nas próbowalo podniesc go z piedestalu i stluczylo, a nawet zlamalo kosci.
+	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_05"); //Gdzie sie teraz skupiamy?
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_06"); //Wrzucilismy ja w dól do morza.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_07"); //W kazdym razie zrobilibysmy to, gdyby poszla za mna.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_08"); //Wiec po prostu umiescilismy nad nim pudelko, a potem zamknelismy je szczelnie. To jedna z tych skrzyn.
+	AI_Output(hero, self, "Info_Mod_Albert_Fokus_15_09"); //Czy moge skupic sie na mnie?
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_10"); //Trzymac przez sekunde. To nie byl jedyny problem, jaki mielismy.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_11"); //Wczoraj nagle przyszla dziwaczna postac sciezki i zapytala nas o te czesc.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_12"); //Kiedy pojawil sie facet, dostalem zawrotów glowy. Nigdy nie powiedzialbym mu, ze nadal skupiamy sie na tym!
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_13"); //Dlatego klamalem mu, zeby wrzucil go do morza. Tam odszedl.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_14"); //Trzeci problem: chcielismy jak najszybciej pozbyc sie skupienia.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_15"); //Dwoje z nas chwycilismy klatke piersiowa, zeby pamietac, ze zaklecie ochronne przeskoczylo do nich!
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_16"); //Przeplynely one przez licznik.
+	AI_Output(self, hero, "Info_Mod_Albert_Fokus_32_17"); //Wiec jesli uda Ci sie zlamac zaklecie, prosze, prosze, zwróc uwage na to.
 
-	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Beim Fokus in der Klosterruine wäre mir fast eine unheimliche Gestalt zuvorgekommen. Der Fokus ruht in einer der Truhen bei Albert. Um daran zu gelangen, muss ich aber erst den Schutzzauber brechen, der auf die Truhe übergesprungen ist.");
+	B_LogEntry	(TOPIC_MOD_FOKUSSUCHE, "Skupiajac sie na ruinach klasztoru, mialem przed soba niemal pelzajaca sylwetke. Skupia sie on na jednej z skrzyn Alberta. Aby jednak do tego dojsc, musze najpierw przerwac zaklecie ochronne, które przeskoczylo do klatki piersiowej.");
 };
 
 INSTANCE Info_Mod_Albert_WerBistDu (C_INFO)
@@ -968,7 +968,7 @@ INSTANCE Info_Mod_Albert_WerBistDu (C_INFO)
 	information	= Info_Mod_Albert_WerBistDu_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Albert_WerBistDu_Condition()
@@ -980,21 +980,21 @@ FUNC VOID Info_Mod_Albert_WerBistDu_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_00"); //Mein Name ist Albert. Ich bewache diese Plattform.
-	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_15_01"); //Was ist das für eine Plattform?
-	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_02"); //Früher war es eine Fassung für die Fokussteine, hab ich gehört.
-	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_03"); //Wir benutzen es jedoch als 	Teleporter nach Tugettso und wieder zurück.
+	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_00"); //Nazywam sie Albert. Strzege tej platformy.
+	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_15_01"); //Jaka jest to platforma?
+	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_02"); //Slyszalem, ze to byla rama dla kamieni ostrosciowych.
+	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_32_03"); //Uzywamy go jako teleportera do Tugettso i z powrotem.
 
 	Info_ClearChoices	(Info_Mod_Albert_WerBistDu);
 
-	Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Wie funktioniert der Teleporter?", Info_Mod_Albert_WerBistDu_B);
-	Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Was ist Tugettso?", Info_Mod_Albert_WerBistDu_A);
+	Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Jak dziala Teleporter?", Info_Mod_Albert_WerBistDu_B);
+	Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Czym jest Tugettso?", Info_Mod_Albert_WerBistDu_A);
 };
 
 FUNC VOID Info_Mod_Albert_WerBistDu_B()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_B_15_00"); //Wie funktioniert der Teleporter?
-	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_B_32_01"); //Das zeige ich dir, wenn du bereit bist.
+	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_B_15_00"); //Jak dziala Teleporter?
+	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_B_32_01"); //Pokaze Ci, kiedy bedziesz gotowy.
 
 	Mod_Albert_WBD += 1;
 
@@ -1002,14 +1002,14 @@ FUNC VOID Info_Mod_Albert_WerBistDu_B()
 
 	if (Mod_Albert_WBD == 1)
 	{
-		Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Was ist Tugettso?", Info_Mod_Albert_WerBistDu_A);
+		Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Czym jest Tugettso?", Info_Mod_Albert_WerBistDu_A);
 	};
 };
 
 FUNC VOID Info_Mod_Albert_WerBistDu_A()
 {
-	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_A_15_00"); //Was ist Tugettso?
-	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_A_32_01"); //Unser Heimatdorf. Wenn du mehr darüber wissen willst, frag Turendil danach.
+	AI_Output(hero, self, "Info_Mod_Albert_WerBistDu_A_15_00"); //Czym jest Tugettso?
+	AI_Output(self, hero, "Info_Mod_Albert_WerBistDu_A_32_01"); //Nasza rodzinna wioska. Jesli chcesz dowiedziec sie wiecej, zapytaj Turendil.
 
 	Mod_Albert_WBD += 1;
 
@@ -1017,7 +1017,7 @@ FUNC VOID Info_Mod_Albert_WerBistDu_A()
 
 	if (Mod_Albert_WBD == 1)
 	{
-		Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Wie funktioniert der Teleporter?", Info_Mod_Albert_WerBistDu_B);
+		Info_AddChoice	(Info_Mod_Albert_WerBistDu, "Jak dziala Teleporter?", Info_Mod_Albert_WerBistDu_B);
 	};
 };
 
@@ -1031,7 +1031,7 @@ INSTANCE Info_Mod_Albert_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Albert_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Albert_Lernen_MANA_Condition()
@@ -1051,10 +1051,10 @@ FUNC VOID Info_Mod_Albert_Lernen_MANA_Info()
 		Mod_Knows_AlbertTeacher = TRUE;
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_VM, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Albert kann mir helfen meine magische Kraft zu steigern.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_VM, "Albert moze mi pomóc zwiekszyc moja magiczna moc.");
 	};
 
-	AI_Output(hero, self, "Info_Mod_Albert_Lernen_MANA_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Albert_Lernen_MANA_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Albert_Lernen_MANA);
 
@@ -1067,7 +1067,7 @@ FUNC VOID Info_Mod_Albert_Lernen_MANA_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Albert_Lernen_MANA_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Albert_Lernen_MANA_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 
 	Info_ClearChoices	(Info_Mod_Albert_Lernen_MANA);

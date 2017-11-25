@@ -15,7 +15,7 @@ INSTANCE VatrasNovizenTrunk(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Heilmittel für Novizen";
+	description		= 	"Srodki zaradcze dla nowicjuszy";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;

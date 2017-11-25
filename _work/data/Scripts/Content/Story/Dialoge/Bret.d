@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Bret_Hi_Condition()
 
 FUNC VOID Info_Mod_Bret_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bret_Hi_08_00"); //Wenn du was von uns möchtest, geh zu Dragomir.
+	AI_Output(self, hero, "Info_Mod_Bret_Hi_08_00"); //Jesli chcesz cos od nas, przejdz do Dragomiru.
 };
 
 INSTANCE Info_Mod_Bret_PreJaeger (C_INFO)
@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Bret_PreJaeger (C_INFO)
 	information	= Info_Mod_Bret_PreJaeger_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Mach ich. Aber ich möchte auch was von dir wissen.";
+	description	= "Wlasciwie, bede. Chce jednak wiedziec cos o Tobie.";
 };
 
 FUNC INT Info_Mod_Bret_PreJaeger_Condition()
@@ -43,18 +43,18 @@ FUNC INT Info_Mod_Bret_PreJaeger_Condition()
 
 FUNC VOID Info_Mod_Bret_PreJaeger_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_00"); //Mach ich. Aber ich möchte auch was von dir wissen.
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_01"); //Und das wäre?
-	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_02"); //Wie kommst du hierher?
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_03"); //Dumme Frage. Bin von der Stadt hergelaufen.
-	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_04"); //Das meine ich nicht. Warum bist du in diesem Lager?
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_05"); //Als ich alt genug war, hat mich Meister Bosper in die Lehre genommen.
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_06"); //Genau so, wie meinen Bruder und früher meinen Vater.
-	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_07"); //Dann bist du hier geboren?
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_08"); //Ja, wie die meisten Jäger auf der Insel.
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_09"); //Und nach der Lehre hab ich mich dem Trupp von Dragomir hier angeschlossen. Ist noch gar nicht so lange her.
-	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_10"); //Willst du denn auch zu den Jägern?
-	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_11"); //Weiß ich noch nicht. Mal sehen.
+	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_00"); //Wlasciwie, bede. Chce jednak wiedziec cos o Tobie.
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_01"); //I co to jest?
+	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_02"); //Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_03"); //Glupie pytanie. Spacer z miasta.
+	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_04"); //Nie o to chodzi. Dlaczego jestes w tym obozie?
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_05"); //Kiedy mialem wystarczajaco duzo lat, Mistrz Bosper mnie nauczyl.
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_06"); //Tak jak mój brat i ojciec.
+	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_07"); //Urodziles sie tutaj?
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_08"); //Tak, jak wiekszosc mysliwych na wyspie.
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_09"); //A po odbyciu praktyki wstapilem tutaj do Dragomira. Nie tak dawno temu.
+	AI_Output(self, hero, "Info_Mod_Bret_PreJaeger_08_10"); //Chcesz dolaczyc do mysliwych?
+	AI_Output(hero, self, "Info_Mod_Bret_PreJaeger_15_11"); //Nie zdecydowalem sie jeszcze na to. Zobaczmy teraz.
 };
 
 INSTANCE Info_Mod_Bret_Ambient (C_INFO)
@@ -65,7 +65,7 @@ INSTANCE Info_Mod_Bret_Ambient (C_INFO)
 	information	= Info_Mod_Bret_Ambient_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Jetzt bin ich bei den Jägern aufgenommen worden.";
+	description	= "Teraz zostalem przyjety przez mysliwych.";
 };
 
 FUNC INT Info_Mod_Bret_Ambient_Condition()
@@ -79,11 +79,11 @@ FUNC INT Info_Mod_Bret_Ambient_Condition()
 
 FUNC VOID Info_Mod_Bret_Ambient_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_00"); //Jetzt bin ich bei den Jägern aufgenommen worden.
-	AI_Output(self, hero, "Info_Mod_Bret_Ambient_08_01"); //(unmotiviert) Ich seh's. Willkommen.
-	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_02"); //Irgendwelche Tipps, die du mir mit auf den Weg geben willst?
-	AI_Output(self, hero, "Info_Mod_Bret_Ambient_08_03"); //Geh zu Dragomir, er wird bestimmt einen Auftrag für dich haben.
-	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_04"); //Ach ja.
+	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_00"); //Teraz zostalem przyjety przez mysliwych.
+	AI_Output(self, hero, "Info_Mod_Bret_Ambient_08_01"); //(motywowany) Widze to. Witamy, witamy.
+	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_02"); //Jakies wskazówki, które chcialbys mi przekazac w drodze?
+	AI_Output(self, hero, "Info_Mod_Bret_Ambient_08_03"); //Idz do Dragomir, on bedzie mial misje dla Ciebie.
+	AI_Output(hero, self, "Info_Mod_Bret_Ambient_15_04"); //Oh, tak.
 };
 
 INSTANCE Info_Mod_Bret_Pickpocket (C_INFO)

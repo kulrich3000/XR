@@ -1,7 +1,7 @@
 instance FeldarbeiterSkelett_Akil (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Skelett";
+	name 		= "szkielet";
 	guild 		= GIL_SUMMONED_SKELETON;
 	id 			= 7172;
 	voice 		= 3;

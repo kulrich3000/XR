@@ -18,23 +18,23 @@ FUNC INT Info_Mod_HSBauer_04_Hi_Condition()
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_00"); //HEY! Pass doch auf!
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_15_01"); //Was ist los?
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_02"); //Hier kannst du nich durch, hier ist 'ne Baustelle!
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_15_03"); //Wo?
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_04"); //UM GOTTES WILLEN, NIMM DAS KIND DA WEG!
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_00"); //HEY! Uwazaj!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_15_01"); //Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_02"); //Tutaj nie mozna przejsc, jest plac budowy!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_15_03"); //Gdzie?
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_05_04"); //DLA BOGA, ABY TAM TO DZIECIAK!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 
-	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Pass auf! Hinter dir bricht ein Gerüst ein!", Info_Mod_HSBauer_04_Hi_C);
-	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Bleib stehen, wo du bist, oder ich ...", Info_Mod_HSBauer_04_Hi_B);
-	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Ach verpiss dich!", Info_Mod_HSBauer_04_Hi_A);
+	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Uwazaj! Za toba rozklada sie rusztowanie!", Info_Mod_HSBauer_04_Hi_C);
+	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Trzymaj sie tam, gdzie jestes, lub Ja mam prawo.", Info_Mod_HSBauer_04_Hi_B);
+	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Ach!", Info_Mod_HSBauer_04_Hi_A);
 };
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_C()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_C_15_00"); //Pass auf! Hinter dir bricht ein Gerüst ein!
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_C_05_01"); //NEEEIN! Ich habe 6 Tage an diesem Gerüst gearbeitet. 6 TAGE!!!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_C_15_00"); //Uwazaj! Za toba rozklada sie rusztowanie!
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_C_05_01"); //NEEEIN! Nad tym rusztowaniem pracuje od szesciu dni. 6 TAGE!!!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 
@@ -43,19 +43,19 @@ FUNC VOID Info_Mod_HSBauer_04_Hi_C()
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_B()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_B_15_00"); //Bleib stehen, wo du bist, oder ich ... beiße ihm den Kopf ab!
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_B_05_01"); //He, Mann! Es kann doch nichts dafür! Mach nichts was du später bereuen würdest! Ich liebe dieses Kind wie mein Eigenes!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_B_15_00"); //Trzymaj sie tam, gdzie jestes, lub Ja mam prawo. Ukasic mu glowe!
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_B_05_01"); //Hej, czlowiek! To nie Twoja wina! Nie rób niczego, czego bedziesz zalowal pózniej! Uwielbiam to dziecko jak moje wlasne!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 
-	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Na gut ... hier hast du es.", Info_Mod_HSBauer_04_Hi_E);
-	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Hast du mal etwas Senf?", Info_Mod_HSBauer_04_Hi_D);
+	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Wszystko w porzadku.... tu masz ja.", Info_Mod_HSBauer_04_Hi_E);
+	Info_AddChoice	(Info_Mod_HSBauer_04_Hi, "Masz jakas musztarde?", Info_Mod_HSBauer_04_Hi_D);
 };
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_A()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_A_15_00"); //Ach verpiss dich!
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_A_05_01"); //Sag nicht, ich hätte dich nicht gewarnt, wenn dir ein Kantholz auf den Kopf fliegt!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_A_15_00"); //Ach!
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_A_05_01"); //Nie mów mi, ze nie ostrzegalbym cie, gdyby na glowe lecial kantówka!
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 
@@ -64,9 +64,9 @@ FUNC VOID Info_Mod_HSBauer_04_Hi_A()
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_E()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_E_15_00"); //Na gut ... hier hast du es.
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_E_05_01"); //Danke, edler Herr. Ich bin euch mit meiner Mutterliebe zu ewigem Dank verpflichtet.
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_E_15_02"); //Schon Okay ...
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_E_15_00"); //Wszystko w porzadku.... tu masz ja.
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_E_05_01"); //Dziekuje, szlachetnym szlachetnym siostrom. Jestem wam nieskonczenie dluzna z moja macierzynska miloscia.
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_E_15_02"); //To w porzadku....
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 
@@ -75,14 +75,14 @@ FUNC VOID Info_Mod_HSBauer_04_Hi_E()
 
 FUNC VOID Info_Mod_HSBauer_04_Hi_D()
 {
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_00"); //Hast du mal etwas Senf?
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_01"); //Ja, hier. Wozu? ... nein du wirst doch nicht etwa ...
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_02"); //Mahlzeit. (nimmt einen Imaginären Biss)
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_03"); //NEEEEEEIN! MEIN BABY ... Jetzt musst du mir ein Neues machen!
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_04"); //Das ist doch nicht dein Ernst?
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_05"); //(weinerlich) Findest du mich etwa nicht attraktiv? Ist es das? Oh, du hast doch sicher eine Affäre, Schatz! Denk doch mal an unseren Sohn, hä?!
-	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_06"); //Den hab ich gegessen ...
-	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_07"); //Ach ja ... wenn das so ist, tut es mir Leid, sie behelligt zu haben Sir ... äh ... weitermachen.
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_00"); //Masz jakas musztarde?
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_01"); //Tak, tutaj. Po co? ... Nie, nie idziesz do....
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_02"); //Posilek. (ulega ukaszeniu)
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_03"); //NEEEEEEIN! MEIN BABY... Teraz musisz mnie uczynic nowym!
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_04"); //Nie mozesz byc powazny?
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_05"); //Nie uwazasz mnie za atrakcyjnego? Czy to jest? Ach, musicie miec romans, miód! Pomysl o naszym synu, eh?
+	AI_Output(hero, self, "Info_Mod_HSBauer_04_Hi_D_15_06"); //Ja jadlem to.....
+	AI_Output(self, hero, "Info_Mod_HSBauer_04_Hi_D_05_07"); //Oh, tak, tak.... Przykro mi, ze w tym przypadku martwie sie, panie posle.... uh..... kontynuowac.
 
 	Info_ClearChoices	(Info_Mod_HSBauer_04_Hi);
 

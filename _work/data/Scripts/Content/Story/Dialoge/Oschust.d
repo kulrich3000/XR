@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Oschust_Hi (C_INFO)
 	information	= Info_Mod_Oschust_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo, ich bin neu im Lager.";
+	description	= "Czesc, jestem nowy w obozie.";
 };
 
 FUNC INT Info_Mod_Oschust_Hi_Condition()
@@ -19,11 +19,11 @@ FUNC INT Info_Mod_Oschust_Hi_Condition()
 
 FUNC VOID Info_Mod_Oschust_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Hi_15_00"); //Hallo, ich bin neu im Lager. Was verrichtest du für Aufgaben an Schmiede und Alchemietisch?
-	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_01"); //Ahh, ein neues Gesicht. Komm nur näher und schaue einem meisterhaften Fälscher und Alchemisten bei seinem Handwerk zu.
-	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_02"); //Ich mache rostige Klingen wieder neu, präge Falschgeld und vergolde minderwertige Metalle. An meinen Betrügereien verdient unser Lager nicht gerade schlecht.
-	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_03"); //Wenn du silberne Ringe hast, so werde ich sie dir auch gegen ein geringes Entgelt von 10 Münzen vergolden, sodass du sie jedem Händler für einen viel höheren Preis ihres eigentlichen Wertes veräußern kannst.
-	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_04"); //Auch rostige Schwerter werde ich dir für nur 2 Goldmünzen mit meiner Säurespezialmischung wieder im Nu erneuern.
+	AI_Output(hero, self, "Info_Mod_Oschust_Hi_15_00"); //Czesc, jestem nowy w obozie. Co robisz kucie i stoly alchemiczne?
+	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_01"); //Ahh, nowe oblicze. Wystarczy zblizyc sie i zobaczyc w swoim rzemiosle mistrza podróbki i alchemika.
+	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_02"); //Robie zardzewiale ostrza, podrobione pieniadze i zlote metale. Nasz obóz nie zarabia zle na moich oszustwach.
+	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_03"); //Jesli masz srebrne pierscienie, zloce je równiez za niewielka oplata 10 monet, aby mozna je sprzedac dowolnemu sprzedawcy za duzo wyzsza cene ich rzeczywistej wartosci.
+	AI_Output(self, hero, "Info_Mod_Oschust_Hi_04_04"); //Równiez zardzewiale miecze odnawiam cie tylko na 2 zlote monety z moja specjalna mieszanka kwasów w krótkim czasie.
 };
 
 INSTANCE Info_Mod_Oschust_Amulett_A (C_INFO)
@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Oschust_Amulett_A (C_INFO)
 	information	= Info_Mod_Oschust_Amulett_A_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Das Amulett hat sich als Fälschung entpuppt.";
+	description	= "Amulet okazal sie falszywy.";
 };
 
 FUNC INT Info_Mod_Oschust_Amulett_A_Condition()
@@ -49,14 +49,14 @@ FUNC INT Info_Mod_Oschust_Amulett_A_Condition()
 
 FUNC VOID Info_Mod_Oschust_Amulett_A_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_00"); //Das Amulett hat sich als Fälschung entpuppt. Kannst du mir etwas dazu sagen?
-	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_01"); //Was? Es eine Fälschung? Dann war der ganze Aufwand also völlig umsonst?
-	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_02"); //Kannst du mir nicht etwas mehr dazu verraten?
-	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_03"); //Wieso, was meinst du damit? Mehr kann ich auch nicht sagen.
-	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_04"); //Der Magier konnte noch deutlich die Aura des echten Amulettes spüren. Es muss also vor kurzem noch ganz in der Nähe gewesen sein.
-	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_05"); //Ähm, ich kann dir da wirklich nicht weiterhelfen. Ich habe es nur etwas poliert, ihm neuen Glanz verliehen. Sonst hatte ich nichts damit zu tun.
-	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_06"); //Du verstehst dich doch aufs Fälscherhandwerk und hattest das Amulett einige Zeit bei dir.
-	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_07"); //Was?! So was muss ich mir nicht anhören. Lass mich in Ruhe.
+	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_00"); //Amulet okazal sie falszywy. Czy mozesz mi cos o tym powiedziec?
+	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_01"); //Co? To jest falsz? Wiec caly wysilek zostal calkowicie zmarnowany?
+	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_02"); //Czy nie mozesz mi o tym opowiedziec wiecej?
+	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_03"); //Dlaczego, co masz na mysli? To wszystko, co moge powiedziec.
+	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_04"); //Czarnoksieznik jeszcze wyraznie wyczuwal aure prawdziwego amuletu. Musialo to byc wiec bliskie tej sytuacji przed chwila.
+	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_05"); //Um, naprawde nie moge Ci w tym pomóc. Po prostu tylko troche to polerowalem, nadalem mu nowy blask. Nie mialem z tym nic wspólnego.
+	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_A_15_06"); //Rozumiesz sztuke podrabiania i przez jakis czas miales u siebie amulet.
+	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_A_04_07"); //Co? Nie musze tego sluchac. Nie martw sie o mnie.
 
 	AI_StopProcessInfos	(self);
 
@@ -73,7 +73,7 @@ INSTANCE Info_Mod_Oschust_Amulett_B (C_INFO)
 	information	= Info_Mod_Oschust_Amulett_B_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sag mir, wo sich das richtige Amulett befindet ...";
+	description	= "Powiedz mi gdzie znalezc prawy amulet....";
 };
 
 FUNC INT Info_Mod_Oschust_Amulett_B_Condition()
@@ -88,8 +88,8 @@ FUNC INT Info_Mod_Oschust_Amulett_B_Condition()
 
 FUNC VOID Info_Mod_Oschust_Amulett_B_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_B_15_00"); //Sag mir, wo sich das richtige Amulett befindet, oder ich schlage dir die Zähne ein.
-	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_B_04_01"); //Was?! Lass mich in Ruhe. Ich weiß nicht, was du willst.
+	AI_Output(hero, self, "Info_Mod_Oschust_Amulett_B_15_00"); //Powiedz mi gdzie jest prawdziwy amulet, albo wbije Ci zeby.
+	AI_Output(self, hero, "Info_Mod_Oschust_Amulett_B_04_01"); //Co? Nie martw sie o mnie. Nie wiem, czego chcesz.
 
 	AI_StopProcessInfos	(self);
 
@@ -106,7 +106,7 @@ INSTANCE Info_Mod_Oschust_Umgehauen (C_INFO)
 	information	= Info_Mod_Oschust_Umgehauen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Sagst du mir jetzt, wo das Amulett ist, oder muss ich ...";
+	description	= "Czy powiesz mi teraz, gdzie jest amulet, czy musze....";
 };
 
 FUNC INT Info_Mod_Oschust_Umgehauen_Condition()
@@ -121,25 +121,25 @@ FUNC INT Info_Mod_Oschust_Umgehauen_Condition()
 
 FUNC VOID Info_Mod_Oschust_Umgehauen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_00"); //Sagst du mir jetzt, wo das Amulett ist, oder muss ich ...
+	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_00"); //Czy powiesz mi teraz, gdzie jest amulet, czy musze....
 
 	AI_ReadyMeleeWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_01"); //Warte, ich will ja schon alles sagen.
-	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_02"); //Ich höre ...
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_01"); //Poczekaj, chce powiedziec wszystko.
+	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_02"); //Slysze.....
 
 	AI_RemoveWeapon	(hero);
 
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_03"); //Ja, es tut mir Leid, ich habe das echte Amulett bekommen und die Kopie davon erstellt.
-	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_04"); //Na also, geht doch. Und für Reue ist es etwas spät. Wo ist das Amulett jetzt?
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_05"); //Ich habe es in einer Höhle versteckt, nicht weit von hier. Unterhalb des Lagers einige Meter Richtung Mine und du wirst sie nicht verfehlen.
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_06"); //Das Problem ist nur, dass sich dort eine Gruppe Orks mit ihren Kötern eingenistet hat.
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_07"); //Ich ... ich hätte das Amulett sonst schon längst zurückgeholt und meinen Fehler wieder gut gemacht.
-	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_08"); //Ja, sicher. Hmm, mit den Orks muss ich wohl irgendwie fertig werden ...
-	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_09"); //Wenn du wirklich den Versuch unternehmen willst an das Amulett zu kommen, so musst du ganz hinten in der Höhle den Boden mit einer Spitzhacke beackern, um es zu finden.
-	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_10"); //Nun gut, ich schaue dann mal.
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_03"); //Tak, przepraszam, dostalem prawdziwy amulet i wykonalem jego kopie.
+	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_04"); //Tam sie udajecie. A dla wyrzutów sumienia jest juz troche pózno. Gdzie jest teraz amulet?
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_05"); //Ukrylem ja w jaskini niedaleko stad. Ponizej obozu kilka metrów w kierunku kopalni i nie przegapisz.
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_06"); //Jedynym problemem jest to, ze grupa orków i ich psy osiedlily sie tam.
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_07"); //l-- W przeciwnym razie juz bym odzyskal amulet i nadrobil blad.
+	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_08"); //Tak, na pewno. Cóz, chyba jakos bede musial sobie poradzic z orkiestrami....
+	AI_Output(self, hero, "Info_Mod_Oschust_Umgehauen_04_09"); //Jesli naprawde chcesz spróbowac dostac sie do amuletu, aby go znalezc, musisz pospacerowac po dnie jaskini z pikselem.
+	AI_Output(hero, self, "Info_Mod_Oschust_Umgehauen_15_10"); //Dobrze, spojrze.
 
-	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Ich habe von Oschust erfahren, dass er das Amulett in einer Höhle ganz hinten vergraben hat, welche unterhalb des Lagers Richtung Mine gelegen ist. Jedoch sollen sich dort auch einige Orks eingenistet haben. Ich sollte nun Dexter darüber informieren.");
+	B_LogEntry	(TOPIC_MOD_BDT_ORKS, "Z Oschusta dowiedzialem sie, ze zakopal amulet w jaskini na samym koncu, która znajduje sie pod obozem w kierunku kopalni. Czesc orków jest jednak podobno osiedlonych. Powinienem teraz poinformowac firme Dexter.");
 		
 	self.aivar[AIV_ArenaFight] = AF_NONE;
 		
@@ -155,7 +155,7 @@ INSTANCE Info_Mod_Oschust_WegenRingen (C_INFO)
 	information	= Info_Mod_Oschust_WegenRingen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wegen den Ringen ...";
+	description	= "Dzieki pierscieniom....";
 };
 
 FUNC INT Info_Mod_Oschust_WegenRingen_Condition()
@@ -168,7 +168,7 @@ FUNC INT Info_Mod_Oschust_WegenRingen_Condition()
 
 FUNC VOID Info_Mod_Oschust_WegenRingen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_WegenRingen_15_00"); //Wegen den Ringen ...
+	AI_Output(hero, self, "Info_Mod_Oschust_WegenRingen_15_00"); //Dzieki pierscieniom....
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenRingen);
 
@@ -177,14 +177,14 @@ FUNC VOID Info_Mod_Oschust_WegenRingen_Info()
 	if (Npc_HasItems(hero, ItRi_SkinnersRing) > 0)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 35)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "Was ist mit diesem verwitterten Orkring?", Info_Mod_Oschust_WegenRingen_Skinner_C);
+		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "A co z tym wietrznym pierscieniem orkowym?", Info_Mod_Oschust_WegenRingen_Skinner_C);
 	};
 
 	if (Npc_HasItems(hero, ItMi_SilverRing) > 0)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "Alle Silberringe vergolden", Info_Mod_Oschust_WegenRingen_Silber_B);
-		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "Einen Silberring vergolden", Info_Mod_Oschust_WegenRingen_Silber_A);
+		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "Wszystkie srebrne pierscienie pozlacane", Info_Mod_Oschust_WegenRingen_Silber_B);
+		Info_AddChoice	(Info_Mod_Oschust_WegenRingen, "Powlekanie zlotem srebrnego pierscienia", Info_Mod_Oschust_WegenRingen_Silber_A);
 	};
 };
 
@@ -195,14 +195,14 @@ FUNC VOID Info_Mod_Oschust_WegenRingen_BACK()
 
 FUNC VOID Info_Mod_Oschust_WegenRingen_Skinner_C()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_WegenRingen_Skinner_C_15_00"); //Was ist mit diesem verwitterten Orkring?
+	AI_Output(hero, self, "Info_Mod_Oschust_WegenRingen_Skinner_C_15_00"); //A co z tym wietrznym pierscieniem orkowym?
 
 	B_GiveInvItems	(hero, self, ItRi_SkinnersRing, 1);
 
 	Npc_RemoveInvItems	(self, ItRi_SkinnersRing, 1);
 
-	AI_Output(self, hero, "Info_Mod_Oschust_WegenRingen_Skinner_C_04_01"); //Hmm, in sehr schlechtem Zustand. Das wird etwas länger dauern und ein wenig mehr kosten.
-	AI_Output(self, hero, "Info_Mod_Oschust_WegenRingen_Skinner_C_04_02"); //Für 35 Goldmünzen ist er morgen aber wieder wie neu.
+	AI_Output(self, hero, "Info_Mod_Oschust_WegenRingen_Skinner_C_04_01"); //Hmm, w bardzo zlym stanie. Trwa to troche dluzej i bedzie kosztowac nieco wiecej.
+	AI_Output(self, hero, "Info_Mod_Oschust_WegenRingen_Skinner_C_04_02"); //Ale dla 35 zlotych monet bedzie tak samo dobre jak nowe jutro.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 35);
 
@@ -219,7 +219,7 @@ FUNC VOID Info_Mod_Oschust_WegenRingen_Silber_B()
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 5*Npc_HasItems(hero, ItMi_SilverRing));
 		CreateInvItems	(hero, ItMi_GoldRing, Npc_HasItems(hero, ItMi_SilverRing));
 
-		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMi_SilverRing)), " Silberringe vergoldet"));
+		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMi_SilverRing)), " Pierscienie srebrne zlocone"));
 
 		Npc_RemoveInvItems	(hero, ItMi_SilverRing, Npc_HasItems(hero, ItMi_SilverRing));
 	}
@@ -233,7 +233,7 @@ FUNC VOID Info_Mod_Oschust_WegenRingen_Silber_B()
 		CreateInvItems	(hero, ItMi_GoldRing, GoldForRinge);
 		Npc_RemoveInvItems	(hero, ItMi_SilverRing, GoldForRinge);
 
-		Print	(ConcatStrings(IntToString(GoldForRinge), " Silberringe vergoldet"));
+		Print	(ConcatStrings(IntToString(GoldForRinge), " Pierscienie srebrne zlocone"));
 	};
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenRingen);
@@ -245,7 +245,7 @@ FUNC VOID Info_Mod_Oschust_WegenRingen_Silber_A()
 	CreateInvItems	(hero, ItMi_GoldRing, 1);
 	Npc_RemoveInvItems	(hero, ItMi_SilverRing, 1);
 
-	Print	("Einen Silberring vergoldet");
+	Print	("Pierscien srebrny zlocony");
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenRingen);
 };
@@ -258,7 +258,7 @@ INSTANCE Info_Mod_Oschust_WegenSchwertern (C_INFO)
 	information	= Info_Mod_Oschust_WegenSchwertern_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Wegen den Schwertern ...";
+	description	= "Z powodu mieczy....";
 };
 
 FUNC INT Info_Mod_Oschust_WegenSchwertern_Condition()
@@ -271,7 +271,7 @@ FUNC INT Info_Mod_Oschust_WegenSchwertern_Condition()
 
 FUNC VOID Info_Mod_Oschust_WegenSchwertern_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_WegenSchwertern_15_00"); //Wegen den Schwertern ...
+	AI_Output(hero, self, "Info_Mod_Oschust_WegenSchwertern_15_00"); //Z powodu mieczy....
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
 
@@ -280,26 +280,26 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_Info()
 	if (Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Alle geschärften rostigem Zweihänder entrosten", Info_Mod_Oschust_WegenSchwertern_H);
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Einen geschärften rostigen Zweihänder entrosten", Info_Mod_Oschust_WegenSchwertern_G);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Pyl wszystkie zardzewiale, zardzewiale dlonie dwie rece.", Info_Mod_Oschust_WegenSchwertern_H);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Odkurzanie zardzewialych rdzawych dloni dwiema rekami", Info_Mod_Oschust_WegenSchwertern_G);
 	};
 	if (Npc_HasItems(hero, ItMw_2H_Sword_M_01) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Alle rostigen Zweihänder entrosten", Info_Mod_Oschust_WegenSchwertern_F);
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Einen rostigen Zweihänder entrosten", Info_Mod_Oschust_WegenSchwertern_E);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Pyl wszystkich zardzewialych dwurecznych ludzi.", Info_Mod_Oschust_WegenSchwertern_F);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Odkurzanie zardzewialej osoby z dwiema rekami", Info_Mod_Oschust_WegenSchwertern_E);
 	};
 	if (Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Alle geschärften rostigen Schwerter entrosten", Info_Mod_Oschust_WegenSchwertern_D);
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Ein geschärftes rostiges Schwert entrosten", Info_Mod_Oschust_WegenSchwertern_C);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Wszystkie ostre zardzewiale miecze drwiace z zardzewialych mieczy", Info_Mod_Oschust_WegenSchwertern_D);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Odkurzanie zardzewialego rdzawego miecza", Info_Mod_Oschust_WegenSchwertern_C);
 	};
 	if (Npc_HasItems(hero, ItMw_1h_MISC_Sword) >= 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Alle rostigen Schwerter entrosten", Info_Mod_Oschust_WegenSchwertern_B);
-		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Ein rostiges Schwert entrosten", Info_Mod_Oschust_WegenSchwertern_A);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Zabrudzenie wszystkich zardzewialych mieczy", Info_Mod_Oschust_WegenSchwertern_B);
+		Info_AddChoice	(Info_Mod_Oschust_WegenSchwertern, "Wstrzasanie zardzewialego miecza", Info_Mod_Oschust_WegenSchwertern_A);
 	};
 };
 
@@ -315,7 +315,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_H()
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 2*Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft));
 		CreateInvItems	(hero, ItMw_Zweihaender_Geschaerft, Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft));
 
-		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft)), " Zweihänder entrostet"));
+		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft)), " Dwuosobowy, nieufny"));
 
 		Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01_Geschaerft, Npc_HasItems(hero, ItMw_2H_Sword_M_01_Geschaerft));
 	}
@@ -329,7 +329,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_H()
 		CreateInvItems	(hero, ItMw_Zweihaender_Geschaerft, GoldForSchwerter);
 		Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01_Geschaerft, GoldForSchwerter);
 
-		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Zweihänder entrostet"));
+		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Dwuosobowy, nieufny"));
 	};
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
@@ -341,7 +341,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_G()
 	CreateInvItems	(hero, ItMw_Zweihaender, 1);
 	Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01, 1);
 
-	Print	("Einen Zweihänder entrostet");
+	Print	("Odkurzanie dwurecznego mezczyzny");
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
 };
@@ -353,7 +353,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_F()
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 2*Npc_HasItems(hero, ItMw_2H_Sword_M_01));
 		CreateInvItems	(hero, ItMw_Zweihaender, Npc_HasItems(hero, ItMw_2H_Sword_M_01));
 
-		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01)), " Zweihänder entrostet"));
+		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_2H_Sword_M_01)), " Dwuosobowy, nieufny"));
 
 		Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01, Npc_HasItems(hero, ItMw_2H_Sword_M_01));
 	}
@@ -367,7 +367,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_F()
 		CreateInvItems	(hero, ItMw_Zweihaender, GoldForSchwerter);
 		Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01, GoldForSchwerter);
 
-		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Zweihänder entrostet"));
+		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Dwuosobowy, nieufny"));
 	};
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
@@ -379,7 +379,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_E()
 	CreateInvItems	(hero, ItMw_Zweihaender, 1);
 	Npc_RemoveInvItems	(hero, ItMw_2H_Sword_M_01, 1);
 
-	Print	("Einen Zweihänder entrostet");
+	Print	("Odkurzanie dwurecznego mezczyzny");
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
 };
@@ -391,7 +391,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_D()
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 2*Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft));
 		CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01_Geschaerft, Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft));
 
-		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft)), " Schwerter entrostet"));
+		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft)), " Sworznie w derustrach"));
 
 		Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword_Geschaerft, Npc_HasItems(hero, ItMw_1h_MISC_Sword_Geschaerft));
 	}
@@ -405,7 +405,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_D()
 		CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01_Geschaerft, GoldForSchwerter);
 		Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword_Geschaerft, GoldForSchwerter);
 
-		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Schwerter entrostet"));
+		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Sworznie w derustrach"));
 	};
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
@@ -417,7 +417,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_C()
 	CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01_Geschaerft, 1);
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword_Geschaerft, 1);
 
-	Print	("Ein Schwert entrostet");
+	Print	("Miecz zardzewialy");
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
 };
@@ -429,7 +429,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_B()
 		Npc_RemoveInvItems	(hero, ItMi_Gold, 2*Npc_HasItems(hero, ItMw_1h_MISC_Sword));
 		CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01, Npc_HasItems(hero, ItMw_1h_MISC_Sword));
 
-		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword)), " Schwerter entrostet"));
+		Print	(ConcatStrings(IntToString(Npc_HasItems(hero, ItMw_1h_MISC_Sword)), " Sworznie w derustrach"));
 
 		Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword, Npc_HasItems(hero, ItMw_1h_MISC_Sword));
 	}
@@ -443,7 +443,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_B()
 		CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01, GoldForSchwerter);
 		Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword, GoldForSchwerter);
 
-		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Schwerter entrostet"));
+		Print	(ConcatStrings(IntToString(GoldForSchwerter), " Sworznie w derustrach"));
 	};
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
@@ -455,7 +455,7 @@ FUNC VOID Info_Mod_Oschust_WegenSchwertern_A()
 	CreateInvItems	(hero, ItMw_1H_quantarie_Schwert_01, 1);
 	Npc_RemoveInvItems	(hero, ItMw_1h_MISC_Sword, 1);
 
-	Print	("Ein Schwert entrostet");
+	Print	("Miecz zardzewialy");
 
 	Info_ClearChoices	(Info_Mod_Oschust_WegenSchwertern);
 };
@@ -481,9 +481,9 @@ FUNC INT Info_Mod_Oschust_OrkringFertig_Condition()
 
 FUNC VOID Info_Mod_Oschust_OrkringFertig_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_00"); //Der Ring ist fertig und ein wahres Prachtstück geworden.
-	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_01"); //Ich habe stundenlang daran gearbeitet und konnte dabei sogar seltsame Runenzeichen wieder sichtbar herausarbeiten, die in den Ring graviert waren.
-	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_02"); //Hier, sein Wert dürfte jetzt um einiges gestiegen sein.
+	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_00"); //Pierscien jest gotowy i stal sie prawdziwym klejnotem.
+	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_01"); //Pracowalem nad nim przez wiele godzin, a nawet udalo mi sie wypracowac dziwne znaki runic, które zostaly wygrawerowane w ringu.
+	AI_Output(self, hero, "Info_Mod_Oschust_OrkringFertig_04_02"); //W tym przypadku jego wartosc musiala juz znacznie wzrosnac.
 
 	B_GiveInvItems	(self, hero, ItRi_SkinnersRing_Gold, 1);
 };
@@ -496,7 +496,7 @@ INSTANCE Info_Mod_Oschust_Piraten (C_INFO)
 	information	= Info_Mod_Oschust_Piraten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du diesen Säbel reparieren?";
+	description	= "Czy mozesz naprawic szable?";
 };
 
 FUNC INT Info_Mod_Oschust_Piraten_Condition()
@@ -512,8 +512,8 @@ FUNC INT Info_Mod_Oschust_Piraten_Condition()
 
 FUNC VOID Info_Mod_Oschust_Piraten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Piraten_15_00"); //Kannst du diesen Säbel reparieren?
-	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_01"); //Zeig mal her ...
+	AI_Output(hero, self, "Info_Mod_Oschust_Piraten_15_00"); //Czy mozesz naprawic szable?
+	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_01"); //Pozwole sobie to zobaczyc....
 
 	B_GiveInvItems	(hero, self, ItMw_Piratensaebel_Greg, 1);
 
@@ -524,10 +524,10 @@ FUNC VOID Info_Mod_Oschust_Piraten_Info()
 	AI_RemoveWeapon	(self);
 	AI_UnequipWeapons	(self);
 
-	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_02"); //Das sieht nach einem guten Säbel aus.
-	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_03"); //Morgen ist wieder wie neu.
+	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_02"); //Wyglada to jak dobry szabla.
+	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_03"); //Jutro bedzie tak dobrze jak nowe.
 
-	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_05"); //Da du zu uns gehört kostet es dich nichts.
+	AI_Output(self, hero, "Info_Mod_Oschust_Piraten_04_05"); //Poniewaz nalezysz do nas, nie bedzie Cie to kosztowalo.
 
 	Mod_MachtSäbel = 1;
 	
@@ -542,7 +542,7 @@ INSTANCE Info_Mod_Oschust_Saebel (C_INFO)
 	information	= Info_Mod_Oschust_Saebel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ist der Säbel fertig?";
+	description	= "Czy szabla jest gotowa?";
 };
 
 FUNC INT Info_Mod_Oschust_Saebel_Condition()
@@ -557,8 +557,8 @@ FUNC INT Info_Mod_Oschust_Saebel_Condition()
 
 FUNC VOID Info_Mod_Oschust_Saebel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Oschust_Saebel_15_00"); //Ist der Säbel fertig?
-	AI_Output(self, hero, "Info_Mod_Oschust_Saebel_04_01"); //Ja, er ist wieder wie neu. Hier ist er.
+	AI_Output(hero, self, "Info_Mod_Oschust_Saebel_15_00"); //Czy szabla jest gotowa?
+	AI_Output(self, hero, "Info_Mod_Oschust_Saebel_04_01"); //Tak, jest tak dobry jak nowy. Tutaj jest, Panie Panu.
 
 	B_GiveInvItems	(self, hero, ItMw_Piratensaebel_Greg_Gut, 1);
 };

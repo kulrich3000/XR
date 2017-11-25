@@ -1,7 +1,7 @@
 instance Mod_7388_Signalfeuer_AW (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Signalfeuer";
+	name 		= "beacony";
 	guild		= GIL_NONE;
 	id			= 7388;
 	voice = 1;

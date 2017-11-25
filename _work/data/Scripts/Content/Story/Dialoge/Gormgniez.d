@@ -15,16 +15,16 @@ FUNC INT Info_Mod_Gormgniez_Hi_Condition()
 
 FUNC VOID Info_Mod_Gormgniez_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_00"); //Was?! Du hier, Mensch?! Nie wirst du mich aufhalten und an mein Erz kommen.
-	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_01"); //Du kleine Ausgeburt bist es also, die für dieses schändliche Treiben verantwortlich ist. Dem werde ich nun ein Ende bereiten.
-	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_02"); //Verschone mich.
-	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_03"); //Warum sollte ich das tun? Ganz gleich ob Drache oder Kobold, Missetäter wie euch werde ich zugrunde richten.
-	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_04"); //Die Drachen, du weißt es? Ein Geheimnis kann ich dir verraten, das dir helfen kann.
-	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_05"); //Wovon sprichst du?
-	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_06"); //Der große Drache spricht im Schlaf.
-	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_07"); //Ja, aber was hat das ... ach, verdammt.
+	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_00"); //Co? Ty tu, czlowiek! Nigdy nie zatrzymasz mnie i przyjdziesz do mojej rudy.
+	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_01"); //Tak wiec to wy, male dziecko, jestescie odpowiedzialni za te haniebna dzialalnosc. Zakoncze to teraz.
+	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_02"); //Daj mi przerwe.
+	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_03"); //Dlaczego bym to zrobil? Bez wzgledu na to, czy smok czy goblin, zniszcze takich winowajców jak ty.
+	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_04"); //Smoki, które znasz? Potrafie powiedziec panu sekret, który moze panu pomóc.
+	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_05"); //O czym Pan mówi?
+	AI_Output(self, hero, "Info_Mod_Gormgniez_Hi_20_06"); //Wielki smok mówi we snie.
+	AI_Output(hero, self, "Info_Mod_Gormgniez_Hi_15_07"); //Tak, ale co to jest? oh, zwariowac.
 
-	B_LogEntry_More	(TOPIC_MOD_NL_DRACHEN, TOPIC_MOD_NL_CRAWLER, "Verdammt, er ist mir entwischt. Was meinte er mit 'Der große Drache Spricht im Schlaf?' Ob mir Xardas dazu mehr verraten kann?", "Aha, dieser Kobold ist also für den ganzen Schrecken in der Mine verantwortlich.");
+	B_LogEntry_More	(TOPIC_MOD_NL_DRACHEN, TOPIC_MOD_NL_CRAWLER, "Damn, odszedl ode mnie. Co mial na mysli 'Wielki Smok mówi we snie'? 'Czy Xardas moze mi o tym opowiedziec wiecej?", "Wiec ten goblin jest odpowiedzialny za cala groze w mojej kopalni.");
 
 	AI_StopProcessInfos	(self);
 

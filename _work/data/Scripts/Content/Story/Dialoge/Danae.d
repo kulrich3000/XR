@@ -15,11 +15,11 @@ FUNC INT Info_Mod_Danae_Hi_Condition()
 
 FUNC VOID Info_Mod_Danae_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_00"); //Seht, wer gekommen ist. Der Anhänger Beliars, der bereits einen von uns getötet hat.
-	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_01"); //Du kommst zu spät! Die Anderen sind bereits auf der anderen Seite und werden Innos' Schwert bergen. Euer Untergang ist besiegelt.
-	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_02"); //Wenn ich euch getötet habe, werden wir Khorinis einnehmen.
-	AI_Output(hero, self, "Info_Mod_Danae_Hi_15_03"); //Hör' auf zu quatschen und lass uns zur Sache kommen!
-	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_04"); //Wie du willst!
+	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_00"); //Prosze spojrzec, kto jest tutaj. Beliars, który zabil juz jednego z nas.
+	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_01"); //Jestes za pózno! Inni sa juz po drugiej stronie i pobieraja miecz Innosa. Twoja kara jest zapieczetowana.
+	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_02"); //Kiedy cie zabije, wezmiemy khoryne.
+	AI_Output(hero, self, "Info_Mod_Danae_Hi_15_03"); //Zacznijmy mówic i zejdzmy do mosieznych kluczy!
+	AI_Output(self, hero, "Info_Mod_Danae_Hi_02_04"); //Dopasuj sie do siebie!
 
 	AI_StopProcessInfos	(self);
 

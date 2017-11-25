@@ -1,7 +1,7 @@
 INSTANCE Mod_916_NOV_Garwig_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Garwig";
+	name 		= "Garwigig";
 	guild 		= GIL_VLK;
 	id 			= 916;
 	voice 		= 6;

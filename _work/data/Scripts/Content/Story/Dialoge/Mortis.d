@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mortis_Hi (C_INFO)
 	information	= Info_Mod_Mortis_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Mortis_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Mortis_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Mortis_Hi_13_01"); //Ich bin Mortis, Mitglied der Miliz und Schmied.
+	AI_Output(self, hero, "Info_Mod_Mortis_Hi_13_01"); //Jestem Mortisem, czlonkiem milicji i kowalstwa.
 };
 
 INSTANCE Info_Mod_Mortis_Join (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Mortis_Join (C_INFO)
 	information	= Info_Mod_Mortis_Join_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich will mich der Miliz anschließen.";
+	description	= "Chce dolaczyc do milicji.";
 };
 
 FUNC INT Info_Mod_Mortis_Join_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_Mod_Mortis_Join_Condition()
 
 FUNC VOID Info_Mod_Mortis_Join_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mortis_Join_15_00"); //Ich will mich der Miliz anschließen.
-	AI_Output(self, hero, "Info_Mod_Mortis_Join_13_01"); //Dann geh zu Lord Andre.
+	AI_Output(hero, self, "Info_Mod_Mortis_Join_15_00"); //Chce dolaczyc do milicji.
+	AI_Output(self, hero, "Info_Mod_Mortis_Join_13_01"); //Nastepnie idz do Pana Andre' a.
 };
 
 INSTANCE Info_Mod_Mortis_Andre (C_INFO)
@@ -55,7 +55,7 @@ INSTANCE Info_Mod_Mortis_Andre (C_INFO)
 	information	= Info_Mod_Mortis_Andre_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Lord Andre schickt mich.";
+	description	= "Pan Andre poslal mnie.";
 };
 
 FUNC INT Info_Mod_Mortis_Andre_Condition()
@@ -70,17 +70,17 @@ FUNC INT Info_Mod_Mortis_Andre_Condition()
 
 FUNC VOID Info_Mod_Mortis_Andre_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_00"); //Lord Andre schickt mich.
-	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_01"); //Willst du dich immer noch der Miliz anschließen?
-	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_02"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_03"); //Und ich soll dir jetzt einen Auftrag geben?
-	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_04"); //Ja.
-	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_05"); //Nagut. Geh zu Olav, Pablo und Bilgot und frage wie es steht. Wenn du bei allen warst, dann komm zu mir und berichte mir was sie gesagt haben.
+	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_00"); //Pan Andre poslal mnie.
+	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_01"); //Chcesz dolaczyc do milicji?
+	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_02"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_03"); //I teraz powinienem dac ci prace?
+	AI_Output(hero, self, "Info_Mod_Mortis_Andre_15_04"); //Tak.
+	AI_Output(self, hero, "Info_Mod_Mortis_Andre_13_05"); //No cóz. Idz do Olawia, Pablo i Bilgot i zapytaj ich, jak to jest. Jesli byles z kazdym, to przyjdz do mnie i powiedz mi, co mówili.
 
 	Log_CreateTopic	(TOPIC_MOD_MORTIS_KONTROLLE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MORTIS_KONTROLLE, LOG_RUNNING);
 
-	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MORTIS_KONTROLLE, "Ich soll für Mortis einen Kontrollgang zu 3 Milizen in der Stadt machen.", "Ich soll zu Olav, Pablo und Bilgot gehen und fragen wie es steht.");
+	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MORTIS_KONTROLLE, "Mialem patrolowac trzy bojówki w miescie na hipoteze.", "Mam jechac do Olowa, Pablo i Bilgot i pytac ich, jak to jest.");
 };
 
 INSTANCE Info_Mod_Mortis_OK (C_INFO)
@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Mortis_OK (C_INFO)
 	information	= Info_Mod_Mortis_OK_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe alle Milizen aufgesucht.";
+	description	= "Odwiedzilem wszystkie milicje.";
 };
 
 FUNC INT Info_Mod_Mortis_OK_Condition()
@@ -106,12 +106,12 @@ FUNC INT Info_Mod_Mortis_OK_Condition()
 
 FUNC VOID Info_Mod_Mortis_OK_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mortis_OK_15_00"); //Ich habe alle Milizen aufgesucht.
-	AI_Output(self, hero, "Info_Mod_Mortis_OK_13_01"); //Und?
-	AI_Output(hero, self, "Info_Mod_Mortis_OK_15_02"); //Alles in Ordnung.
-	AI_Output(self, hero, "Info_Mod_Mortis_OK_13_03"); //Sehr gut, du kannst jetzt zu Lord Andre und ihm sagen, dass du meinen Auftrag erfüllt hast.
+	AI_Output(hero, self, "Info_Mod_Mortis_OK_15_00"); //Odwiedzilem wszystkie milicje.
+	AI_Output(self, hero, "Info_Mod_Mortis_OK_13_01"); //A co?
+	AI_Output(hero, self, "Info_Mod_Mortis_OK_15_02"); //Wszystko jest w porzadku.
+	AI_Output(self, hero, "Info_Mod_Mortis_OK_13_03"); //Bardzo dobrze, teraz mozesz powiedziec Panu Andreowi i mu, ze wykonywales moja prace.
 
-	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MORTIS_KONTROLLE, "Mortis ist zufrieden mit mir und hat mich zu Lord Andre geschickt.", "Ich hab Mortis bescheid gesagt, dass alles in Ordnung ist.");
+	B_LogEntry_More	(TOPIC_MOD_MILIZ, TOPIC_MOD_MORTIS_KONTROLLE, "Mortis jest zadowolony ze mnie i poslal mnie do Pana Andre' a.", "Powiedzialem, ze wszystko jest w porzadku.");
 
 	B_GivePlayerXP	(150);
 
@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Mortis_Lehrer (C_INFO)
 	information	= Info_Mod_Mortis_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mich trainieren?";
+	description	= "Czy mozesz mnie szkolic?";
 };
 
 FUNC INT Info_Mod_Mortis_Lehrer_Condition()
@@ -142,25 +142,25 @@ FUNC INT Info_Mod_Mortis_Lehrer_Condition()
 
 FUNC VOID Info_Mod_Mortis_Lehrer_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mortis_Lehrer_15_00"); //Kannst du mich trainieren?
+	AI_Output(hero, self, "Info_Mod_Mortis_Lehrer_15_00"); //Czy mozesz mnie szkolic?
 	
 	if (Mod_Gilde == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_01"); //Du bist bereits ein Ritter. Ich kann dich nicht mehr unterweisen. Du musst dir einen neuen Lehrer suchen.
+		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_01"); //Jestes juz rycerzem. Juz nie moge cie uczyc. Musisz znalezc nowego nauczyciela.
 	}
 	else if (Mod_Gilde == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_02"); //Da du bei der Miliz bist werde ich dich trainieren.
+		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_02"); //Poniewaz jestes oficerem milicji, bede cie szkolil.
 
-		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Mortis wird mich in Stärke trainieren, solange ich ein Ritter bin.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Mortis wytrenuje mnie w sile, gdy bede rycerzem.");
 	}
 	else if (Mod_Gilde == 3)
 	{
-		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_03"); //Du bist bereits ein Paladin. Ich kann dich nicht mehr unterweisen. Du musst dir einen neuen Lehrer suchen.
+		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_03"); //Jestes juz paladyna. Juz nie moge cie uczyc. Musisz znalezc nowego nauczyciela.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_04"); //Ich trainiere nur Milizsoldaten.
+		AI_Output(self, hero, "Info_Mod_Mortis_Lehrer_13_04"); //Szkole tylko zolnierzy milicji.
 	};
 };
 
@@ -172,7 +172,7 @@ INSTANCE Info_Mod_Mortis_Lernen (C_INFO)
 	information	= Info_Mod_Mortis_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Zeig mir wie ich Stärker werde.";
+	description	= "Pokaz mi, jak byc silniejszym.";
 };
 
 FUNC INT Info_Mod_Mortis_Lernen_Condition()
@@ -188,7 +188,7 @@ FUNC INT Info_Mod_Mortis_Lernen_Condition()
 
 FUNC VOID Info_Mod_Mortis_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mortis_Lernen_15_00"); //Zeig mir wie ich Stärker werde.
+	AI_Output(hero, self, "Info_Mod_Mortis_Lernen_15_00"); //Pokaz mi, jak byc silniejszym.
 
 	Info_ClearChoices	(Info_Mod_Mortis_Lernen);
 

@@ -1,7 +1,7 @@
 instance Mod_1724_PSINOV_Dusty_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dusty"; 
+	name 		= "pyszny"; 
 	guild 		= GIL_OUT;
 	id 			= 1724;
 	voice 		= 14;

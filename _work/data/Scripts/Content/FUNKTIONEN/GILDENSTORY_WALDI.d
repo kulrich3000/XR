@@ -68,7 +68,7 @@ FUNC VOID GILDENSTORY_WALDI()
 			{
 				Mod_Drago = 6;
 
-				B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Die Späher sind tot und bei ihnen liegt die Leiche eines Gardisten. Ich sollte das schnell Torgan berichten.");
+				B_LogEntry	(TOPIC_MOD_JG_TORGANSINFOS, "Harcerze sa umarli, a wraz z nimi znajduje sie straznik. Powinienem to szybko zglosic Torganowi.");
 			};
 		};
 
@@ -118,7 +118,7 @@ FUNC VOID GILDENSTORY_WALDI()
 			AI_StandUP	(hero);
 			Npc_ClearAIQueue	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_JG_MinenHoehle_15_00"); //So Leute, ich trage hier ein Amulett. Damit kann ich ich wahrscheinlich eine Höhle ausmachen, auch wenn sie versteckt oder unsichtbar gemacht ist. Bleibt dicht hinter mir.
+			AI_Output(hero, NULL, "Info_Mod_Hero_JG_MinenHoehle_15_00"); //Chlopaki, nosze tu amulet. Za jego pomoca moge zapewne zidentyfikowac jaskinie, nawet jesli jest ona ukryta lub niewidoczna. Badz blisko za mna.
 		};
 
 		if (Mod_JG_MinenPart == 2)
@@ -129,7 +129,7 @@ FUNC VOID GILDENSTORY_WALDI()
 			AI_StandUP	(hero);
 			Npc_ClearAIQueue	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_JG_MinenHoehleTeleport_15_00"); //(zu sich selbst) Hmm ... das Ding funktioniert wohl nicht. Mal Cyrco fragen. (dann laut) Leute, wir sind hier fertig. Ich laufe schon mal voraus. Ihr könnt ja noch etwas jagen auf dem Rückweg.
+			AI_Output(hero, NULL, "Info_Mod_Hero_JG_MinenHoehleTeleport_15_00"); //(do siebie) Hmm..... Wydaje sie, ze to nie dziala. Zapytaj Cyrco. Ludzie, jestesmy tutaj. Bede biegac przed Toba. Mozesz polowac na cos w drodze powrotnej.
 
 			B_StartOtherRoutine	(Mod_7433_JG_Zelar_MT, "START");
 			B_StartOtherRoutine	(Mod_7432_JG_Sonor_MT, "START");
@@ -137,7 +137,7 @@ FUNC VOID GILDENSTORY_WALDI()
 			Mod_7432_JG_Sonor_MT.aivar[AIV_PARTYMEMBER] = FALSE;
 			Mod_7433_JG_Zelar_MT.aivar[AIV_PARTYMEMBER] = FALSE;
 
-			B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Das war ja halb so schlimm. Aber diese Plattform ist sicher wichtig. Bin gespannt, was Cyrco sagt.");
+			B_LogEntry	(TOPIC_MOD_JG_GARDISTEN, "Nie bylo tak zle. Ale ta platforma jest z pewnoscia wazna. Zastanawiam sie, co mówi Cyrco.");
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Orun_Cyrco))
@@ -203,9 +203,9 @@ FUNC VOID GILDENSTORY_WALDI()
 		&& (!Npc_IsInState(Mod_7542_OUT_Raritaetenhaendler_REL, ZS_Talk))
 		&& (Mod_JG_Finder == 0)
 		{
-			AI_Output(hero, NULL, "Info_Mod_Hero_Rune02_15_00"); //Hoppla! Hat der doch tatsächlich eine halbe Rune im Sortiment.
+			AI_Output(hero, NULL, "Info_Mod_Hero_Rune02_15_00"); //Oops! Wlasciwie ma w swoim asortymencie pól runy.
 
-			B_LogEntry	(TOPIC_MOD_JG_PENNER, "Das Runenstück muss ich haben. Koste es, was es wolle!");
+			B_LogEntry	(TOPIC_MOD_JG_PENNER, "Musze miec runa. Cokolwiek trzeba!");
 
 			Mod_JG_Finder = 1;
 		};
@@ -219,14 +219,14 @@ FUNC VOID GILDENSTORY_WALDI()
 		{
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_Drachental_15_00"); //Hoppla! Eine neue Gegend. Da bin ich besser vorsichtig ...
+			AI_Output(hero, NULL, "Info_Mod_Hero_Drachental_15_00"); //Oops! Nowy obszar. Lepiej bylbym ostrozny......
 
 			Mod_JG_Drachental = 1;
 
 			Log_CreateTopic	(TOPIC_MOD_JG_DRACHENTAL, LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_MOD_JG_DRACHENTAL, LOG_RUNNING);
 			B_SetTopicStatus	(TOPIC_MOD_JG_RUNENZAUBER, LOG_SUCCESS);
-			B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Eine neue Gegend ... wo ich hier wohl gelandet bin?");
+			B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Nowy obszar.... Zastanawiam sie, gdzie skonczylem?");
 		};
 
 		// Wenn Suchender tot, dann beim ersten Mal zu den Waldis teleportieren
@@ -240,7 +240,7 @@ FUNC VOID GILDENSTORY_WALDI()
 
 				AI_Teleport	(hero, "GOTOWALDIS");
 
-				B_LogEntry	(TOPIC_MOD_JG_SUCHENDER, "So. Dieser Finsterling ist Geschichte. Hetzt niemand mehr gegen friedliche Leute auf. Wenn ich gerade hier bin, sollte ich Cyrco Bericht erstatten. Und vielleicht hat er noch Tipp's für mich.");
+				B_LogEntry	(TOPIC_MOD_JG_SUCHENDER, "Tam. Ta ciemnosc jest historia. Nikt nigdy wiecej nie bedzie znowu przeciwstawiac sie pokojowym ludziom. Kiedy jestem tutaj, powinienem zglosic sie do Cyrco. I moze nadal ma dla mnie wskazówki.");
 				B_SetTopicStatus	(TOPIC_MOD_JG_SUCHENDER, LOG_SUCCESS);
 			};
 		};
@@ -250,7 +250,7 @@ FUNC VOID GILDENSTORY_WALDI()
 		{
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_Drachental_15_01"); //Hoppla! Jetzt ist sie wieder kaputt. Wie komme ich zurück?
+			AI_Output(hero, NULL, "Info_Mod_Hero_Drachental_15_01"); //Oops! Teraz jest znowu zepsuty. Jak powrócic?
 
 			Mod_JG_Drachental = 2;
 
@@ -266,9 +266,9 @@ FUNC VOID GILDENSTORY_WALDI()
 
 			AI_StandUp	(hero);
 
-			AI_Output(hero, NULL, "Info_Mod_Hero_Opferschale_15_00"); //Hmm. Das könnte die Opferschale sein, die ich schon lange suche. Was war damit noch mal zu machen?
+			AI_Output(hero, NULL, "Info_Mod_Hero_Opferschale_15_00"); //Hmm. To moze byc miska ofiarnicza, której szukam. Co moglibysmy z tym zrobic?
 
-			B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Jetzt fehlt nur noch Khorgor ...");
+			B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Teraz brakuje tylko Khorgora.....");
 			B_SetTopicStatus	(TOPIC_MOD_JG_OPFERSCHALE, LOG_SUCCESS);
 		};
 
@@ -282,9 +282,9 @@ FUNC VOID GILDENSTORY_WALDI()
 
 				AI_StandUp	(hero);
 
-				AI_Output(hero, NULL, "Info_Mod_Hero_Khorgor_15_00"); //Der Kopf des Irren! Cyrco wird zufrieden sein.
+				AI_Output(hero, NULL, "Info_Mod_Hero_Khorgor_15_00"); //Glowa szalenca! Cyrco bedzie zadowolony.
 
-				B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Khorgor ist erledigt. Jetzt muss ich nur noch aus diesem Tal verschwinden.");
+				B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Khorgor jest gotowy. Teraz musze tylko wydostac sie z tej doliny.");
 			};
 		};
 	};

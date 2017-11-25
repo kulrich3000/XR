@@ -1,6 +1,6 @@
 INSTANCE Minenzwerg_01	(Npc_Default)
 {
-	name	=	"Minenzwerg";
+	name	=	"skrzat";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_GREEN;
 	id = 7207;

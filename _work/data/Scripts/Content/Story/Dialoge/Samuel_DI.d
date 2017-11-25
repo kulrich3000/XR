@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Samuel_DI_Brunhild (C_INFO)
 	information	= Info_Mod_Samuel_DI_Brunhild_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du willst mich sprechen.";
+	description	= "Chcecie mnie panstwo zobaczyc.";
 };
 
 FUNC INT Info_Mod_Samuel_DI_Brunhild_Condition()
@@ -19,12 +19,12 @@ FUNC INT Info_Mod_Samuel_DI_Brunhild_Condition()
 
 FUNC VOID Info_Mod_Samuel_DI_Brunhild_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_00"); //Du willst mich sprechen.
-	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_01"); //So ist es. Du hast doch diese Frau angebracht.
-	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_02"); //Ja, und?
-	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_03"); //Also, kochen kann sie besser als ich. Aber sie hast dir nicht die Wahrheit erzählt.
-	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_04"); //Woher willst du das wissen?
-	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_05"); //Hat sie mir selbst gestanden. Sie ist in der Küche.
+	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_00"); //Chcecie mnie panstwo zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_01"); //Tak wlasnie jest. Posadziles te kobiete.
+	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_02"); //Tak, i?
+	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_03"); //Cóz, potrafi gotowac lepiej niz ja. Ale nie powiedziala ci prawdy.
+	AI_Output(hero, self, "Info_Mod_Samuel_DI_Brunhild_15_04"); //Skad to wiesz?
+	AI_Output(self, hero, "Info_Mod_Samuel_DI_Brunhild_14_05"); //Przyznala sie do siebie. Jest w kuchni.
 };
 
 INSTANCE Info_Mod_Samuel_DI_EXIT (C_INFO)

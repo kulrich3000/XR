@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Vatras_IR_Hi_Condition()
 
 FUNC VOID Info_Mod_Vatras_IR_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Vatras_IR_Hi_04_00"); //Adanos hat uns sicher hierher geleitet.
-	AI_Output(self, hero, "Info_Mod_Vatras_IR_Hi_04_01"); //Ich hoffe, wir können uns auch weiterhin seiner schützenden Hand gewahr sein.
-	AI_Output(hero, self, "Info_Mod_Vatras_IR_Hi_15_02"); //Ja, mir ist der Segen jeder der drei Gottheiten willkommen. Brauchen werden wir sie in diesem finsteren Loch bestimmt.
+	AI_Output(self, hero, "Info_Mod_Vatras_IR_Hi_04_00"); //Adanos musial nas tu poprowadzic.
+	AI_Output(self, hero, "Info_Mod_Vatras_IR_Hi_04_01"); //Mam nadzieje, ze nadal bedziemy swiadomi jego ochronnej reki.
+	AI_Output(hero, self, "Info_Mod_Vatras_IR_Hi_15_02"); //Tak, z zadowoleniem przyjmuje blogoslawienstwo kazdego z trzech bóstw. Na pewno bedziemy ich potrzebowac w tej ciemnej dziurze.
 };
 
 INSTANCE Info_Mod_Vatras_IR_GehtLos (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Vatras_IR_GehtLos (C_INFO)
 	information	= Info_Mod_Vatras_IR_GehtLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Es geht los. Wirst du mich auf die Insel begleiten?";
+	description	= "Idzmy dalej. Czy odprowadzisz mnie na wyspe?";
 };
 
 FUNC INT Info_Mod_Vatras_IR_GehtLos_Condition()
@@ -46,8 +46,8 @@ FUNC VOID Info_Mod_Vatras_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Vatras_IR_GehtLos_04_00"); //Nun, die Tage jugendlicher Gewandtheit und  schneller Beine liegen bei mir viele Jahre zurück.
-	AI_Output(self, hero, "Info_Mod_Vatras_IR_GehtLos_04_01"); //Ich werde hier verweilen, für den Erfolg der Mission beten und über das Schiff wachen. Adanos möge euch behüten.
+	AI_Output(self, hero, "Info_Mod_Vatras_IR_GehtLos_04_00"); //Cóz, czasy mlodzienczej zrecznosci i szybkosci nóg leza u mnie wiele lat wstecz.
+	AI_Output(self, hero, "Info_Mod_Vatras_IR_GehtLos_04_01"); //Zostane tu, pomodle sie za sukces misji i bede pilnowal statku. Niech Adanos zapewni Ci bezpieczenstwo.
 
 	AI_StopProcessInfos	(self);
 };
@@ -60,7 +60,7 @@ INSTANCE Info_Mod_Vatras_IR_Kram (C_INFO)
 	information	= Info_Mod_Vatras_IR_Kram_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie kannst du mich unterstützen?";
+	description	= "Jak moge mnie poprzec?";
 };
 
 FUNC INT Info_Mod_Vatras_IR_Kram_Condition()
@@ -73,8 +73,8 @@ FUNC INT Info_Mod_Vatras_IR_Kram_Condition()
 
 FUNC VOID Info_Mod_Vatras_IR_Kram_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_IR_Kram_15_00"); //Wie kannst du mich unterstützen?
-	AI_Output(self, hero, "Info_Mod_Vatras_IR_Kram_04_01"); //Ich kann dir helfen deine magische Kraft zu mehren und dir einige meiner Spruchrollen und Tränke zur Verfügung stellen.
+	AI_Output(hero, self, "Info_Mod_Vatras_IR_Kram_15_00"); //Jak moge mnie poprzec?
+	AI_Output(self, hero, "Info_Mod_Vatras_IR_Kram_04_01"); //Moge Ci pomóc zwiekszyc swoja magiczna moc i dostarczyc ci niektóre moje zaklecia w rolkach i eliksirach.
 };
 
 INSTANCE Info_Mod_Vatras_IR_Lernen (C_INFO)
@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Vatras_IR_Lernen (C_INFO)
 	information	= Info_Mod_Vatras_IR_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will meine magischen Kräfte steigern.";
+	description	= "Chce zwiekszyc swoja magiczna moc.";
 };
 
 FUNC INT Info_Mod_Vatras_IR_Lernen_Condition()
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_Vatras_IR_Lernen_Condition()
 
 FUNC VOID Info_Mod_Vatras_IR_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vatras_IR_Lernen_15_00"); //Ich will meine magischen Kräfte steigern.
+	AI_Output(hero, self, "Info_Mod_Vatras_IR_Lernen_15_00"); //Chce zwiekszyc swoja magiczna moc.
 
 	Info_ClearChoices	(Info_Mod_Vatras_IR_Lernen);
 
@@ -112,7 +112,7 @@ FUNC VOID Info_Mod_Vatras_IR_Lernen_BACK()
 {
 	if (hero.attribute[ATR_MANA_MAX] >= 300)
 	{
-		AI_Output(self, hero, "Info_Mod_Vatras_IR_Lernen_BACK_14_01"); //Deine magischen Kenntnisse sind jetzt so gut, dass ich dir nichts mehr beibringen kann.
+		AI_Output(self, hero, "Info_Mod_Vatras_IR_Lernen_BACK_14_01"); //Twoje magiczne umiejetnosci sa teraz tak dobre, ze nie moge cie niczego nauczyc.
 	};
 	Info_ClearChoices	(Info_Mod_Vatras_IR_Lernen);
 };

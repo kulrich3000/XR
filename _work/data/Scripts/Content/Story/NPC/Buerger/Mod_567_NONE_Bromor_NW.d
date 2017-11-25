@@ -1,7 +1,7 @@
 INSTANCE Mod_567_NONE_Bromor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bromor"; 
+	name 		= "brom"; 
 	guild 		= GIL_NONE;
 	id 			= 567;
 	voice 		= 7;

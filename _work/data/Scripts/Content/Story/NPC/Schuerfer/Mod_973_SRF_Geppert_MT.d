@@ -1,7 +1,7 @@
 instance Mod_973_SRF_Geppert_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Geppert"; 
+	name 		= "Rupy"; 
 	guild 		= GIL_NONE;
 	id 			= 973;
 	voice 		= 10;

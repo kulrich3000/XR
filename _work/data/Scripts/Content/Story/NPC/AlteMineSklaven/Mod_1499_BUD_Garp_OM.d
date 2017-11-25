@@ -2,7 +2,7 @@ instance Mod_1499_BUD_Garp_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Garp";
+	name =							"garb";
 	npctype =						npctype_main;
 	guild =							GIL_OUT;      
 	level =							5;

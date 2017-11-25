@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Esteban_OC_Hi_Condition()
 
 FUNC VOID Info_Mod_Esteban_OC_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Esteban_OC_Hi_07_00"); //(freudig erstaunt) Du hier?! Ich glaube es ja nicht. Wie ... ?
-	AI_Output(hero, self, "Info_Mod_Esteban_OC_Hi_15_01"); //Nun, auf die Details können wir später eingehen. Wir müssen erst mal schauen, wie wir hier wieder heil herauskommen.
-	AI_Output(self, hero, "Info_Mod_Esteban_OC_Hi_07_02"); //Ahh, und hier steht auch ein Fass mit unseren Waffen.
+	AI_Output(self, hero, "Info_Mod_Esteban_OC_Hi_07_00"); //Ty tutaj! Nie wierze. Tak jak..... ?
+	AI_Output(hero, self, "Info_Mod_Esteban_OC_Hi_15_01"); //Cóz, pózniej mozemy zaglebic sie w szczególy. Musimy zobaczyc, w jaki sposób wydostajemy sie z tego miejsca w jednym kawalku.
+	AI_Output(self, hero, "Info_Mod_Esteban_OC_Hi_07_02"); //Ah, tu tez jest beczka naszej broni.
 
 	Wld_InsertNpc	(OrcWarrior_Roam, "WP_OCC_105");
 	Wld_InsertNpc	(OrcWarrior_Roam, "WP_OCC_105");

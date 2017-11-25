@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Icewolf(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Eiswolf";
+	name							=	"mineral lodowy";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Icewolf;
 	level							=	12;		
@@ -85,7 +85,7 @@ INSTANCE Icewolf	(Mst_Default_Icewolf)
 
 INSTANCE Summoned_EisWolf	(Mst_Default_IceWolf)
 {
-	name							=	"Beschworener Eiswolf";
+	name							=	"Wezwanie wilkolaka lodowego";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10	

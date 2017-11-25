@@ -1,7 +1,7 @@
 instance Mod_7330_Meer_HAL (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Meer";
+	name 		= "ocean";
 	guild		= GIL_NONE;
 	id			= 7330;
 	level		= 0;

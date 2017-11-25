@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Myxir_NW_Irdorath3 (C_INFO)
 	information	= Info_Mod_Myxir_NW_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Myxir_NW_Irdorath3_Condition()
@@ -24,20 +24,20 @@ FUNC INT Info_Mod_Myxir_NW_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Myxir_NW_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_15_00"); //Tut mir leid, aber es scheint, dass wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_28_01"); //Wie war das? Ich rate dir ganz genau zu überlegen, was du jetzt sagst ...
+	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze jest nas zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_28_01"); //Jak to bylo? Radze dokladnie przemyslec to, co zamierzasz powiedziec....
 
 	Info_ClearChoices	(Info_Mod_Myxir_NW_Irdorath3);
 
-	Info_AddChoice	(Info_Mod_Myxir_NW_Irdorath3, "Nein, es geht leider wirklich nicht. Die Plätze sind voll.", Info_Mod_Myxir_NW_Irdorath3_B);
-	Info_AddChoice	(Info_Mod_Myxir_NW_Irdorath3, "Ähm, war nur ein organisatorisches Missverständnis.", Info_Mod_Myxir_NW_Irdorath3_A);
+	Info_AddChoice	(Info_Mod_Myxir_NW_Irdorath3, "Nie, naprawde nie moge tego zrobic. Miejsca sa pelne.", Info_Mod_Myxir_NW_Irdorath3_B);
+	Info_AddChoice	(Info_Mod_Myxir_NW_Irdorath3, "Um, bylo to tylko nieporozumienie organizacyjne.", Info_Mod_Myxir_NW_Irdorath3_A);
 };
 
 FUNC VOID Info_Mod_Myxir_NW_Irdorath3_B()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_B_15_00"); //Nein, es geht leider wirklich nicht. Die Plätze sind voll.
-	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_B_28_01"); //(zornig) In Ordnung, es ist dein Entschluss.
-	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_B_28_02"); //Ich werde aber nicht so einfach gehen, ohne dir noch ein Präsent zu hinterlassen. Viel Spaß damit.
+	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_B_15_00"); //Nie, naprawde nie moge tego zrobic. Miejsca sa pelne.
+	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_B_28_01"); //To Twoja decyzja.
+	AI_Output(self, hero, "Info_Mod_Myxir_NW_Irdorath3_B_28_02"); //Nie odejde bez pozostawienia ci innego prezentu. Zabawa z tym.
 
 	Info_ClearChoices	(Info_Mod_Myxir_NW_Irdorath3);
 
@@ -57,7 +57,7 @@ FUNC VOID Info_Mod_Myxir_NW_Irdorath3_B()
 
 FUNC VOID Info_Mod_Myxir_NW_Irdorath3_A()
 {
-	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_A_15_00"); //Ähm, war nur ein organisatorisches Missverständnis.
+	AI_Output(hero, self, "Info_Mod_Myxir_NW_Irdorath3_A_15_00"); //Um, bylo to tylko nieporozumienie organizacyjne.
 
 	Info_ClearChoices	(Info_Mod_Myxir_NW_Irdorath3);
 };

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ruediger_Hi (C_INFO)
 	information	= Info_Mod_Ruediger_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Warum sitzt du hier allein herum?";
+	description	= "Dlaczego siedzisz tutaj samodzielnie?";
 };
 
 FUNC INT Info_Mod_Ruediger_Hi_Condition()
@@ -16,8 +16,8 @@ FUNC INT Info_Mod_Ruediger_Hi_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Hi_15_00"); //Warum sitzt du hier allein herum?
-	AI_Output(self, hero, "Info_Mod_Ruediger_Hi_09_01"); //Ich warte darauf, dass jemand vorbeikommt, der an einem guten Spiel interessiert ist.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Hi_15_00"); //Dlaczego siedzisz tutaj samodzielnie?
+	AI_Output(self, hero, "Info_Mod_Ruediger_Hi_09_01"); //Czekam na przyjscie kogos, kto jest zainteresowany dobra gra.
 };
 
 INSTANCE Info_Mod_Ruediger_WasFuerSpiel (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Ruediger_WasFuerSpiel (C_INFO)
 	information	= Info_Mod_Ruediger_WasFuerSpiel_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Und was für ein Spiel ist das?";
+	description	= "I jaka to jest gra?";
 };
 
 FUNC INT Info_Mod_Ruediger_WasFuerSpiel_Condition()
@@ -41,11 +41,11 @@ FUNC INT Info_Mod_Ruediger_WasFuerSpiel_Condition()
 
 FUNC VOID Info_Mod_Ruediger_WasFuerSpiel_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_WasFuerSpiel_15_00"); //Und was für ein Spiel ist das?
-	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_01"); //Einen festen Namen hat es nicht. Ich nenne es das Wettlaufspiel. Aber manche, gerade die, die zu viel getrunken haben, nennen es auch gern Schagby.
-	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_02"); //Jeder der beiden Spieler besitzt auf einem Spielfeld eine Reihe von Monstern.
-	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_03"); //Die Monster stehen sich gegenüber, und Ziel ist es, einen eigenen Spielstein hinter die gegnerische Reihe zu befördern.
-	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_04"); //Lust auf eine Partie?
+	AI_Output(hero, self, "Info_Mod_Ruediger_WasFuerSpiel_15_00"); //I jaka to jest gra?
+	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_01"); //Nie ma stalej nazwy. Nazywam to gra wyscigowa. Ale niektórzy, zwlaszcza ci, którzy zbytnio pili, równiez lubia nazywac to Schagby.
+	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_02"); //Kazdy z dwóch graczy ma na boisku mnóstwo potworów.
+	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_03"); //Potwory stoja naprzeciwko siebie, a celem jest przemieszczenie wlasnego kamienia za rzedem przeciwnika.
+	AI_Output(self, hero, "Info_Mod_Ruediger_WasFuerSpiel_09_04"); //A co z gra?
 };
 
 INSTANCE Info_Mod_Ruediger_HabKeineFiguren (C_INFO)
@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Ruediger_HabKeineFiguren (C_INFO)
 	information	= Info_Mod_Ruediger_HabKeineFiguren_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Halt - ich habe doch gar keine Spielsteine!";
+	description	= "Zatrzymaj sie - nie mam zadnych warcaby!";
 };
 
 FUNC INT Info_Mod_Ruediger_HabKeineFiguren_Condition()
@@ -69,19 +69,19 @@ FUNC INT Info_Mod_Ruediger_HabKeineFiguren_Condition()
 
 FUNC VOID Info_Mod_Ruediger_HabKeineFiguren_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_HabKeineFiguren_15_00"); //Halt - ich habe doch gar keine Spielsteine!
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_01"); //Das lässt sich ändern.
+	AI_Output(hero, self, "Info_Mod_Ruediger_HabKeineFiguren_15_00"); //Zatrzymaj sie - nie mam zadnych warcaby!
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_01"); //Mozna to zmienic.
 
-	B_ShowGivenThings	("Anfängerset erhalten");
+	B_ShowGivenThings	("Uzyskac poczatkujacy zestaw");
 
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_02"); //Das ist die Anfängerkonstellation, fünf herkömmliche Spielsteine.
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_03"); //Insgesamt gibt es zehn Figuren, aus denen der Spieler für jedes Spiel neu fünf Figuren auswählen darf.
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_04"); //Allerdings habe nicht mal ich selbst alle unterschiedlichen Spielsteine.
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_05"); //Die kannst du nur erhalten, wenn du diejenigen Meister besiegst, die sie selbst erfunden haben.
-	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_06"); //Mit den ersten fünf Figuren bist du jedoch schon gut bedient.
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_02"); //Jest to konstelacja poczatkujacego, piec standardowych sztuk.
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_03"); //Ogólem jest dziesiec cyfr, z których gracz moze wybrac piec nowych cyfr dla kazdej gry.
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_04"); //Jednak sam nie mam nawet wszystkich róznych utworów.
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_05"); //Mozesz je otrzymac tylko wtedy, gdy pokonasz tych mistrzów, którzy sami je wymyslili.
+	AI_Output(self, hero, "Info_Mod_Ruediger_HabKeineFiguren_09_06"); //Ale pierwsze piec cyfr to juz pierwsze piec.
 
 	Log_CreateTopic	(TOPIC_MOD_SCHAGBY, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_SCHAGBY, "Bei Schagby handelt es sich um ein Brettspiel, bei dem es um eine taktische Platzierung von Monsterfiguren geht. Ich habe fünf Figuren erhalten, insgesamt gibt es aber zehn, die ich bei den Meistern des Spiels gewinnen kann.");
+	B_LogEntry	(TOPIC_MOD_SCHAGBY, "Schagby to taktyczne umiejscowienie potworów. Otrzymalem piec utworów, ale w sumie jest ich dziesiec, które moge wygrac od mistrzów gry.");
 
 	PlayerHas_Troll = 1;
 	PlayerHas_Schaf = 1;
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Ruediger_Regeln (C_INFO)
 	information	= Info_Mod_Ruediger_Regeln_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wie lauten denn die Regeln des Spiels?";
+	description	= "Jakie sa zasady gry?";
 };
 
 FUNC INT Info_Mod_Ruediger_Regeln_Condition()
@@ -111,16 +111,16 @@ FUNC INT Info_Mod_Ruediger_Regeln_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Regeln_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Regeln_15_00"); //Wie lauten denn die Regeln des Spiels?
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_01"); //Die Positionierung der Figuren verläuft abwechselnd.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_02"); //Der zufällig bestimmte erste Spieler wählt eine Figur und setzt sie irgendwo auf seine Angriffsreihe, danach setzt der andere Spieler seinen ersten Spielstein, und so fort, bis beide Spiele alle ihre Figuren platziert haben.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_03"); //Dann beginnt das eigentliche Spiel. In jedem Zug müssen alle Figuren bewegt werden.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_04"); //Jeder Spielstein hat unterschiedliche Fähigkeiten; die zeige ich dir während des Spiels.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_05"); //Hat ein Spieler alle Figuren bewegt, ist sein Gegner dran.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_06"); //Stößt während des Spiels eine Figur auf ihrem Zielfeld auf eine andere, gewinnt der angreifende Stein, und der unterliegende wird aus dem Spiel entfernt.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_07"); //Der Spieler, der es zuerst schafft, eins seiner Monster auf die dunkel gefärbte Reihe hinter der Angriffslinie des Gegners zu rücken, gewinnt.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Regeln_15_00"); //Jakie sa zasady gry?
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_01"); //Pozycjonowanie figur odbywa sie naprzemiennie.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_02"); //Losowo wybrany pierwszy gracz wybiera kawalek i umieszcza go gdzies na linii ataku, a nastepnie drugi gracz kontynuuje swój pierwszy kawalek i tak dalej, dopóki obie gry nie umiesci wszystkich swoich kawalków.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_03"); //Nastepnie rozpoczyna sie gra. Wszystkie elementy musza byc przesuwane w kazdym kroku.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_04"); //Kazdy kamien ma inne mozliwosci; Pokaze Ci to podczas gry.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_05"); //Gdy gracz przesunie wszystkie kawalki, bedzie to zalezalo od jego przeciwnika.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_06"); //Jesli podczas gry jeden kawalek uderzy w drugie pole celowe, wygrywa atakujacy kamien, a jeden kawalek zostaje usuniety z gry.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Regeln_09_07"); //Gracz, który jako pierwszy udaje sie przeniesc jednego z jego potworów w ciemny rzad za linia ataku przeciwnika wygrywa.
 
-	B_LogEntry	(TOPIC_MOD_SCHAGBY, "Spielverlauf: Die Positionierung der Figuren verläuft abwechselnd.                             Der zufällig bestimmte erste Spieler wählt eine Figur und setzt sie irgendwo auf seine Angriffsreihe, danach setzt der andere Spieler seinen ersten Spielstein, und so fort, bis beide Spiele alle ihre Figuren platziert haben.                      Dann beginnt das eigentliche Spiel. In jedem Zug müssen alle Figuren bewegt werden. Jeder Spielstein hat unterschiedliche Fähigkeiten.                       Hat ein Spieler alle Figuren bewegt, ist sein Gegner dran. Stößt während des Spiels eine Figur auf ihrem Zielfeld auf eine andere, gewinnt der angreifende Stein, und der unterliegende wird aus dem Spiel entfernt.                       Der Spieler, der es zuerst schafft, eins seiner Monster auf die dunkel gefärbte Reihe hinter der Angriffslinie des Gegners zu rücken, gewinnt.");
+	B_LogEntry	(TOPIC_MOD_SCHAGBY, "Rozgrywka: Pozycjonowanie figur odbywa sie na przemian. Losowo wybrany pierwszy gracz wybiera kawalek i umieszcza go gdzies na linii ataku, a nastepnie drugi gracz kontynuuje swój pierwszy kawalek i tak dalej, dopóki obie gry nie umiesci wszystkich swoich kawalków. Nastepnie rozpoczyna sie gra. Wszystkie elementy musza byc przesuwane w kazdym kroku. Kazdy kamien ma inne mozliwosci. Gdy gracz przesunie wszystkie kawalki, bedzie to zalezalo od jego przeciwnika. Jesli podczas gry jeden kawalek uderzy w drugie pole celowe, wygrywa atakujacy kamien, a jeden kawalek zostaje usuniety z gry. Gracz, który jako pierwszy udaje sie przeniesc jednego z jego potworów w ciemny rzad za linia ataku przeciwnika wygrywa.");
 };
 
 INSTANCE Info_Mod_Ruediger_Preis (C_INFO)
@@ -131,7 +131,7 @@ INSTANCE Info_Mod_Ruediger_Preis (C_INFO)
 	information	= Info_Mod_Ruediger_Preis_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Um welchen Preis wird gespielt?";
+	description	= "Po jakiej cenie jest odtwarzana?";
 };
 
 FUNC INT Info_Mod_Ruediger_Preis_Condition()
@@ -144,9 +144,9 @@ FUNC INT Info_Mod_Ruediger_Preis_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Preis_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Preis_15_00"); //Um welchen Preis wird gespielt?
-	AI_Output(self, hero, "Info_Mod_Ruediger_Preis_09_01"); //Der Preis ist verhandelbar. Da du ein Neuling bist, sollten wir nicht um allzu viel Gold spielen.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Preis_09_02"); //Wenn du es schaffst, ein Mal gegen mich zu gewinnen, würde ich dir allerdings die Figur geben, die meine eigene Kreation ist.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Preis_15_00"); //Po jakiej cenie jest odtwarzana?
+	AI_Output(self, hero, "Info_Mod_Ruediger_Preis_09_01"); //Cena jest negocjowalna. Poniewaz jestes swiezym czlowiekiem, nie powinnismy grac za duzo zlota.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Preis_09_02"); //Jesli uda ci sie wygrac przeciwko mnie raz, dalbym ci postac, która jest moja wlasna kreacja.
 };
 
 INSTANCE Info_Mod_Ruediger_Meister (C_INFO)
@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Ruediger_Meister (C_INFO)
 	information	= Info_Mod_Ruediger_Meister_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wo finde ich die Meister?";
+	description	= "Gdzie moge znalezc mistrzów?";
 };
 
 FUNC INT Info_Mod_Ruediger_Meister_Condition()
@@ -170,10 +170,10 @@ FUNC INT Info_Mod_Ruediger_Meister_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Meister_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Meister_15_00"); //Wo finde ich die Meister?
-	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_01"); //Einer sitzt genau vor dir. Ich habe den Steinwächter entworfen. Zugegeben, wirklich stolz kann ich nicht auf ihn sein.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_02"); //Wo sich die anderen Meister aufhalten, kann ich dir nicht genau sagen. Allerdings ist die Chance, sie in Gasthäusern zu finden, am größten.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_03"); //So viel, wie du rumkommst, wirst du schon noch auf den einen oder anderen stoßen.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Meister_15_00"); //Gdzie moge znalezc mistrzów?
+	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_01"); //Przed toba jest jedna prawa. Zaprojektowalem straznik kamienny. Oczywiscie nie moge byc z niego dumny.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_02"); //Nie moge powiedziec wam dokladnie, gdzie sa inni mistrzowie. Jednak najlepsza szansa na ich znalezienie sa karczmy.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Meister_09_03"); //Tak samo jak dookola mozna znalezc jeszcze kilka innych.
 };
 
 FUNC VOID B_MG_Start_Ruediger()
@@ -191,7 +191,7 @@ INSTANCE Info_Mod_Ruediger_Spielstart01 (C_INFO)
 	information	= Info_Mod_Ruediger_Spielstart01_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns eine Runde spielen.";
+	description	= "Grajmy w gre.";
 };
 
 FUNC INT Info_Mod_Ruediger_Spielstart01_Condition()
@@ -206,27 +206,27 @@ FUNC INT Info_Mod_Ruediger_Spielstart01_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Spielstart01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_15_00"); //Lass uns eine Runde spielen.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_09_01"); //Gern. Der Einsatz beträgt zehn Goldmünzen. Der Sieger erhält alles.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_15_00"); //Grajmy w gre.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_09_01"); //Wyraznie. Stawka to dziesiec zlotych monet. Zwyciezca dostaje wszystko.
 
 	Info_ClearChoices	(Info_Mod_Ruediger_Spielstart01);
 
-	Info_AddChoice	(Info_Mod_Ruediger_Spielstart01, "Ich bin gerade etwas klamm ...", Info_Mod_Ruediger_Spielstart01_B);
-	Info_AddChoice	(Info_Mod_Ruediger_Spielstart01, "Ich riskier's.", Info_Mod_Ruediger_Spielstart01_A);
+	Info_AddChoice	(Info_Mod_Ruediger_Spielstart01, "Jestem teraz troche zgorzknialy....", Info_Mod_Ruediger_Spielstart01_B);
+	Info_AddChoice	(Info_Mod_Ruediger_Spielstart01, "Skorzystam z mozliwosci.", Info_Mod_Ruediger_Spielstart01_A);
 };
 
 FUNC VOID Info_Mod_Ruediger_Spielstart01_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_B_15_00"); //Ich bin gerade etwas klamm ...
-	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_B_09_01"); //Kein Problem, ich sitze auch noch länger hier.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_B_15_00"); //Jestem teraz troche zgorzknialy....
+	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_B_09_01"); //Nie ma problemu, siedze tu jeszcze dluzej.
 
 	Info_ClearChoices	(Info_Mod_Ruediger_Spielstart01);
 };
 
 FUNC VOID Info_Mod_Ruediger_Spielstart01_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_A_15_00"); //Ich riskier's.
-	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_A_09_01"); //Möge der mit der besseren Taktik gewinnen!
+	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart01_A_15_00"); //Skorzystam z mozliwosci.
+	AI_Output(self, hero, "Info_Mod_Ruediger_Spielstart01_A_09_01"); //Niech wygra ten z lepsza taktyka!
 
 	Info_ClearChoices	(Info_Mod_Ruediger_Spielstart01);
 
@@ -259,24 +259,24 @@ FUNC VOID Info_Mod_Ruediger_Spielende01_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_00"); //Knappe Niederlage. Aber mit ein bisschen Übung kann das noch etwas werden.
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_00"); //Krótka porazka. Ale przy odrobinie praktyki moze to byc cos innego.
 
 		B_GiveInvItems	(hero, self, ItMi_Gold, 10);
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_01"); //Verdammt! Ich bin auch so blöd!
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_01"); //Damn to! Ja tez jestem tak glupi!
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 10);
 
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_02"); //Es war zwar größtenteils Glück, aber ich muss mein Versprechen einhalten und dir nun einen Steinwächter-Spielstein abgeben.
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_02"); //To bylo przewaznie szczescie, ale musze dotrzymac obietnicy i dac ci kamienny zeton wartownika.
 
-		B_ShowGivenThings	("Steinwächter-Figur erhalten");
+		B_ShowGivenThings	("Utrzymanie pozycji oslony przed kamieniem");
 
 		PlayerHas_Stoneguardian = 1;
 
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_03"); //Du scheinst mir ein ebenbürtiger Gegner zu sein.
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_04"); //Hast du Lust auf noch eine Runde mit verdoppeltem Einsatz?
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_03"); //Wydaje mi sie pan równorzednym przeciwnikiem.
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende01_09_04"); //Czy jestes na kolejna runde zakladów podwójnych?
 
 		B_GivePlayerXP	(100);
 
@@ -297,7 +297,7 @@ INSTANCE Info_Mod_Ruediger_Spielstart02 (C_INFO)
 	information	= Info_Mod_Ruediger_Spielstart02_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns eine weitere Partie mit verdoppeltem Einsatz spielen.";
+	description	= "Zagrajmy kolejna gre z podwójnym stosem.";
 };
 
 FUNC INT Info_Mod_Ruediger_Spielstart02_Condition()
@@ -311,7 +311,7 @@ FUNC INT Info_Mod_Ruediger_Spielstart02_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Spielstart02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart02_15_00"); //Lass uns eine weitere Partie mit verdoppeltem Einsatz spielen.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart02_15_00"); //Zagrajmy kolejna gre z podwójnym stosem.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -344,7 +344,7 @@ FUNC VOID Info_Mod_Ruediger_Spielende02_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_00"); //Wusste ich's doch, dass dein erster Sieg unverdient war!
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_00"); //Wiedzialem, ze Twoja pierwsza wygrana byla niezasluzona!
 
 		if (MG_Ruediger_Runde == 1)
 		{
@@ -365,7 +365,7 @@ FUNC VOID Info_Mod_Ruediger_Spielende02_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_01"); //Das gibt es doch nicht! Schon wieder bin ich überrumpelt!
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_01"); //Nie ma czegos takiego! Jeszcze raz jestem zaskoczony!
 
 		if (MG_Ruediger_Runde == 1)
 		{
@@ -386,12 +386,12 @@ FUNC VOID Info_Mod_Ruediger_Spielende02_Info()
 
 		if (MG_Ruediger_Runde < 4)
 		{
-			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_02"); //Du lernst wirklich schnell. Aber es wäre doch gelacht, wenn ich da nicht mithalten könnte.
+			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_02"); //Nauka jest szybka. Ale smialoby sie, gdybym nie mógl dotrzymac kroku.
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_03"); //Schluss, Schluss! Jetzt reicht es aber wirklich!
-			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_04"); //Das macht doch keinen Spaß mehr. Ab jetzt spiele ich nicht mehr um Gold mir dir.
+			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_03"); //Wystarczy! Wystarczy wystarczy!
+			AI_Output(self, hero, "Info_Mod_Ruediger_Spielende02_09_04"); //To juz nie jest przyjemnoscia. Od teraz nie bede z Toba grac zlota.
 		};
 
 		B_GivePlayerXP	(50);
@@ -411,7 +411,7 @@ INSTANCE Info_Mod_Ruediger_Spielstart03 (C_INFO)
 	information	= Info_Mod_Ruediger_Spielstart03_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lass uns eine weitere Partie spielen.";
+	description	= "Zagrajmy kolejna gre.";
 };
 
 FUNC INT Info_Mod_Ruediger_Spielstart03_Condition()
@@ -424,7 +424,7 @@ FUNC INT Info_Mod_Ruediger_Spielstart03_Condition()
 
 FUNC VOID Info_Mod_Ruediger_Spielstart03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart03_15_00"); //Lass uns eine weitere Partie spielen.
+	AI_Output(hero, self, "Info_Mod_Ruediger_Spielstart03_15_00"); //Zagrajmy kolejna gre.
 	AI_Output(self, hero, "DEFAULT"); //
 
 	AI_StopProcessInfos	(self);
@@ -456,12 +456,12 @@ FUNC VOID Info_Mod_Ruediger_Spielende03_Info()
 {
 	if (MG_SiegState == 2)
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_00"); //Wusste ich's doch, dass dein erster Sieg unverdient war!
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_00"); //Wiedzialem, ze Twoja pierwsza wygrana byla niezasluzona!
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_01"); //Das gibt es doch nicht! Schon wieder bin ich überrumpelt!
-		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_02"); //Du lernst wirklich schnell. Aber es wäre doch gelacht, wenn ich da nicht mithalten könnte.
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_01"); //Nie ma czegos takiego! Jeszcze raz jestem zaskoczony!
+		AI_Output(self, hero, "Info_Mod_Ruediger_Spielende03_09_02"); //Nauka jest szybka. Ale smialoby sie, gdybym nie mógl dotrzymac kroku.
 
 		MG_Ruediger_Runde += 1;
 	};

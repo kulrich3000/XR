@@ -29,7 +29,7 @@ INSTANCE DIA_FM_SLD_9_JOIN(C_INFO)
 	condition	= DIA_FM_SLD_9_JOIN_Condition;
 	information	= DIA_FM_SLD_9_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "Chce do Ciebie dolaczyc!";
 };                       
 
 FUNC INT DIA_FM_SLD_9_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_FM_SLD_9_JOIN_Condition()
 
 FUNC VOID DIA_FM_SLD_9_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_9_JOIN_15_00"); //Ich will mich euch anschließen!
-	AI_Output(self, hero, "DIA_FM_SLD_9_JOIN_07_01"); //Dann geh zu Lares, er kümmert sich um die Neuen.
+	AI_Output (other, self, "DIA_FM_SLD_9_JOIN_15_00"); //Chce do Ciebie dolaczyc!
+	AI_Output(self, hero, "DIA_FM_SLD_9_JOIN_07_01"); //Potem pójdzie do Lares, on zajmie sie nowymi.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_FM_SLD_9_PEOPLE(C_INFO)
 	condition	= DIA_FM_SLD_9_PEOPLE_Condition;
 	information	= DIA_FM_SLD_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Sagen?";
+	description = "Kto jest tu odpowiedzialny?";
 };                       
 
 FUNC INT DIA_FM_SLD_9_PEOPLE_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_FM_SLD_9_PEOPLE_Condition()
 
 FUNC VOID DIA_FM_SLD_9_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_9_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_FM_SLD_9_PEOPLE_07_01"); //Lee ist unser Anführer. Lares ist seine rechte Hand. Die meisten Männer folgen ihm, denn er hat sie schon damals in der Kolonie angeführt.
-	AI_Output(self, hero, "DIA_FM_SLD_9_PEOPLE_07_02"); //Hier in der Mine jedoch gibt es eigentlich keinen Anführer.
+	AI_Output (other, self, "DIA_FM_SLD_9_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output (self, other, "DIA_FM_SLD_9_PEOPLE_07_01"); //Lee jest naszym liderem. Lares jest jego prawa reka. Wiekszosc mezczyzn podaza za nim, poniewaz juz wtedy prowadzil ich w kolonii.
+	AI_Output(self, hero, "DIA_FM_SLD_9_PEOPLE_07_02"); //W kopalni nie ma jednak lidera.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_FM_SLD_9_LOCATION(C_INFO)
 	condition	= DIA_FM_SLD_9_LOCATION_Condition;
 	information	= DIA_FM_SLD_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Erzähl mir was über die Mine.";
+	description = "Powiedz mi o mojej kopalni.";
 };                       
 
 FUNC INT DIA_FM_SLD_9_LOCATION_Condition()
@@ -89,8 +89,8 @@ FUNC INT DIA_FM_SLD_9_LOCATION_Condition()
 
 FUNC VOID DIA_FM_SLD_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_FM_SLD_9_LOCATION_15_00"); //Erzähl mir was über die Mine.
-	AI_Output (self, other, "DIA_FM_SLD_9_LOCATION_07_01"); //Hier gibts ne Menge Erz. Die Schürfer bauen es ab und wir lagern das ganze im Lager. Jeder bekommt natürlich einen Teil davon ab.
+	AI_Output (other, self, "DIA_FM_SLD_9_LOCATION_15_00"); //Powiedz mi o mojej kopalni.
+	AI_Output (self, other, "DIA_FM_SLD_9_LOCATION_07_01"); //Jest tu duzo rudy. Poszukiwacze zdemontowali ja i przechowujemy w obozie. Kazdy dostaje oczywiscie swój udzial.
 };
 
 INSTANCE Info_Mod_FM_SLD_9_Pickpocket (C_INFO)

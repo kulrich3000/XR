@@ -1,7 +1,7 @@
 instance Mod_104_BAU_Rega_NW  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Rega";
+	name 		= "zregenerowac sie";
 	guild 		= GIL_DMT;
 	id 			= 104;
 	voice 		= 17;

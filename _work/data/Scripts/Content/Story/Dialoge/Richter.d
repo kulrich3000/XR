@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Richter_Hi (C_INFO)
 	information	= Info_Mod_Richter_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Richter_Hi_Condition()
@@ -18,9 +18,9 @@ FUNC VOID Info_Mod_Richter_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_01"); //Wir sind die oberste Gerichtsinstanz Khoratas.
-	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_02"); //Wir entscheiden über Wohlstand und Armut, Hass und Rache, Leben und Tod.
-	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_03"); //Doch gerade jetzt entscheiden Wir nur über den nächsten Gang bei Unserem Mahl.
+	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_01"); //Jestesmy najwyzszym sadem Khoraty.
+	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_02"); //Decydujemy o bogactwie i ubóstwie, nienawisci i zemscie, zyciu i smierci.
+	AI_Output(self, hero, "Info_Mod_Richter_Hi_10_03"); //Ale wlasnie teraz decydujemy tylko o kolejnym posilku.
 };
 
 INSTANCE Info_Mod_Richter_UlrichVerpetzen (C_INFO)
@@ -31,7 +31,7 @@ INSTANCE Info_Mod_Richter_UlrichVerpetzen (C_INFO)
 	information	= Info_Mod_Richter_UlrichVerpetzen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ulrich hat vor, den Prozess von Anna zu sabotieren.";
+	description	= "Ulrich zamierza sabotowac proces Anny.";
 };
 
 FUNC INT Info_Mod_Richter_UlrichVerpetzen_Condition()
@@ -45,19 +45,19 @@ FUNC INT Info_Mod_Richter_UlrichVerpetzen_Condition()
 
 FUNC VOID Info_Mod_Richter_UlrichVerpetzen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_00"); //Ulrich hat vor, den Prozess von Anna zu sabotieren.
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_01"); //Ja? Ist ihm durchaus zuzutrauen. Was will er tun?
-	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_02"); //Er will euch alle töten, solltet ihr Anna verurteilen.
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_03"); //Hmm ... Dann wirst du ihm Einhalt gebieten.
-	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_04"); //Wieso ich?
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_05"); //Wir sind nicht ausgebildet im Kämpfen ... Wir haben Wichtigeres zu tun.
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_06"); //Sollte dieser Ulrich also wirklich versuchen, handgreiflich zu werden, wirst du ihn mit Hilfe Unserer Wachen niederschlagen.
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_07"); //Hast du das gehört?
-	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_08"); //Ja. Bis dann.
+	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_00"); //Ulrich zamierza sabotowac proces Anny.
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_01"); //Tak? Z pewnoscia mozna mu zaufac. Co robi gonna?
+	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_02"); //On chce cie wszystkich zabic, jesli powinienes potepic Anne.
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_03"); //Hmm..... Wtedy go zatrzymacie.
+	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_04"); //Dlaczego ja?
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_05"); //Nie szkolimy sie w walce..... Mamy jeszcze wazniejsze rzeczy do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_06"); //Wiec jesli Ulrich naprawde bedzie staral sie byc agresywny, pokonasz go z pomoca Naszych Gwardii.
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichVerpetzen_10_07"); //Slyszysz to?
+	AI_Output(hero, self, "Info_Mod_Richter_UlrichVerpetzen_15_08"); //Tak. Do zobaczenia dookola.
 
 	Mod_AnnaQuestRichter = 1;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Der Richter trägt mir auf, Ulrichs Aufstand niederzuschlagen. Da muss ich mich wohl für eine Seite entscheiden ...");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Sedzia kazal mi stlumic powstanie Ulricha. Musze wybrac jedna strone....");
 
 	AI_StopProcessInfos	(self);
 };
@@ -82,7 +82,7 @@ FUNC INT Info_Mod_Richter_UlrichKO_Condition()
 
 FUNC VOID Info_Mod_Richter_UlrichKO_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_UlrichKO_10_00"); //Adanos war uns wohlgesonnen. Hol dir deine Belohnung beim Stadthalter ab.
+	AI_Output(self, hero, "Info_Mod_Richter_UlrichKO_10_00"); //Adanos byl dla nas zyczliwy. Podejmij nagrode od dyrektora.
 
 	B_GivePlayerXP	(50);
 
@@ -123,40 +123,40 @@ FUNC INT Info_Mod_Richter_Plagenquest_Condition()
 
 FUNC VOID Info_Mod_Richter_Plagenquest_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_00"); //Du hast gegen die Gesetze unserer Stadt verstoßen.
-	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_01"); //Wie bitte?! Was habe ich denn falsches gemacht?
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_02"); //Vor Unseren Augen hast du Insekten gejagt.
-	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_03"); //Aber wieso habe ich damit gegen geltendes Stadtrecht verstoßen?
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_04"); //In unseren Gesetzesbüchern steht geschrieben, dass das Jagen von Insekten innerhalb der Stadtgrenzen nur mit den eigens dafür vorgesehenen Stadthämmern gestattet ist.
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_05"); //Da du kein Bewohner der Stadt bist, kannst du einen solchen Hammer garnicht besitzen ... andernfalls hättest du dich des Diebstahles schuldig gemacht.
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_06"); //Hast du etwas zu deiner Verteidigung zu sagen?
-	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_07"); //Ich ...
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_08"); //Die Gesetze werden in aller strenge ausgelegt und das Urteil wird augenblicklich vollstreckt. Du erhälst ...
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_00"); //Naruszyles prawa naszego miasta.
+	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_01"); //Prosze mi wybaczyc! Co zrobilem zle?
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_02"); //Polowales na owady przed naszymi oczami.
+	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_03"); //Ale dlaczego zlamalem prawo miejskie?
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_04"); //W naszych ksiegach prawniczych jest napisane, ze polowanie na owady w granicach miasta jest dozwolone tylko przy pomocy mlotków przeznaczonych do tego celu.
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_05"); //Poniewaz nie jestescie mieszkancami miasta, nie mozecie miec takiego mlotka w ogóle.... w przeciwnym razie winni bylibyscie kradziezy.
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_06"); //Masz cos do powiedzenia w swojej obronie?
+	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_07"); //l--
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_08"); //Przepisy prawa sa interpretowane rygorystycznie, a wyrok jest natychmiast egzekwowany. Otrzymasz......
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_09"); //... die Todesstrafe. Gerichtsdiener!
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_10"); //Ohh, halt, bin einige Zeilen verrutscht.
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_09"); //... kare smierci. komornik!
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_10"); //Zatrzymajcie sie, poslizgnalem kilka linii.
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_11"); //Ähhm, also, das Urteil lautet ... verdammt, das kann ich nicht lesen, zu alt und ausgewaschen ...
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_12"); //Hmm, in dem Fall erlaubt es mir der Willkürparagraph zu entscheiden, dass du ähhh ...
-	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_13"); //Nun wird es mir aber langsam zu bunt ... Was soll überhaupt dieser Unsinn mit den Hämmern und dem Insektenjagen?
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_14"); //Frevler, spotte nicht unseren Stadtgesetzten. Das Stadthammergesetz existiert schon fast so lange, wie unsere Stadt steht ...
-	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_15"); //Und nun ... ach verdammt, du hast mich aus dem Konzept gebracht. Geh mir aus den Augen.
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_11"); //Um, cóz, werdykt jest.... cholernie, nie potrafie tego odczytac, za stary i wyplukany....
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_12"); //Hmm, w tym przypadku, arbitralny paragraf pozwala mi zdecydowac, ze ty,....
+	AI_Output(hero, self, "Info_Mod_Richter_Plagenquest_15_13"); //Teraz zaczynam byc zbyt kolorowa.... Jaki jest ten nonsens w przypadku mlotów i i tak polowan na owady?
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_14"); //Niesprawiedliwi, nie osmieszaj naszych mieszczan. Prawo miejskie o mlotach mlotkowych istnieje prawie tak dlugo, jak nasze miasto istnieje......
+	AI_Output(self, hero, "Info_Mod_Richter_Plagenquest_10_15"); //A teraz..... Ach, pieklo, usunales mnie z mojej rockerki. Wyjdz z oczu.
 
 	if (Mod_REL_Stadthalter == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Na das ist mal wieder eine Spinnerei ... Stadthammergesetz ... und die Insekten sind auch wieder da. Ich sollte zu Theodorus gehen und schauen, ob er nicht etwas neues herausgefunden hat.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Cóz, jest to kolejna wirówka.... Ustawa o mlotach miejskich.... i owady powracaja. Powinienem zobaczyc Theodorus i sprawdzic, czy znalazl cos nowego.");
 	}
 	else if (Mod_REL_Stadthalter == 2)
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Na das ist mal wieder eine Spinnerei ... Stadthammergesetz ... und die Insekten sind auch wieder da. Ich sollte zu Wendel gehen und schauen, ob er nicht etwas neues herausgefunden hat.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Cóz, jest to kolejna wirówka.... Ustawa o mlotach miejskich.... i owady powracaja. Powinienem zobaczyc Wendla i sprawdzic, czy znalazl cos nowego.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Na das ist mal wieder eine Spinnerei ... Stadthammergesetz ... und die Insekten sind auch wieder da. Ich sollte zu Lukas gehen und schauen, ob er nicht etwas neues herausgefunden hat.");
+		B_LogEntry	(TOPIC_MOD_ADANOS_DRECKSVIECHER, "Cóz, jest to kolejna wirówka.... Ustawa o mlotach miejskich.... i owady powracaja. Powinienem zobaczyc lucasy i sprawdzic, czy nie dowiedzial sie czegos nowego.");
 	};
 
 	AI_StopProcessInfos	(self);
@@ -186,7 +186,7 @@ INSTANCE Info_Mod_Richter_Unfrieden (C_INFO)
 	information	= Info_Mod_Richter_Unfrieden_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir das hier aushändigen.";
+	description	= "Mam Ci to przekazac.";
 };
 
 FUNC INT Info_Mod_Richter_Unfrieden_Condition()
@@ -200,7 +200,7 @@ FUNC INT Info_Mod_Richter_Unfrieden_Condition()
 
 FUNC VOID Info_Mod_Richter_Unfrieden_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Unfrieden_15_00"); //Ich soll dir das hier aushändigen.
+	AI_Output(hero, self, "Info_Mod_Richter_Unfrieden_15_00"); //Mam Ci to przekazac.
 
 	B_GiveInvItems	(hero, self, ItWr_LeonhardRichter, 1);
 
@@ -208,13 +208,13 @@ FUNC VOID Info_Mod_Richter_Unfrieden_Info()
 	
 	B_UseFakeScroll ();
 
-	AI_Output(self, hero, "Info_Mod_Richter_Unfrieden_10_01"); //O Adanos, beschütze Uns! Das kann doch nicht sein Ernst sein!
-	AI_Output(hero, self, "Info_Mod_Richter_Unfrieden_15_02"); //Wirst du die Männer freilassen?
-	AI_Output(self, hero, "Info_Mod_Richter_Unfrieden_10_03"); //(nervös) Umgehend! Wir sind sicher, weitere complicaciones lassen sich vermeiden!
+	AI_Output(self, hero, "Info_Mod_Richter_Unfrieden_10_01"); //O Adanos, chron nas! On nie moze byc powazny!
+	AI_Output(hero, self, "Info_Mod_Richter_Unfrieden_15_02"); //Czy zwolnisz mezczyzn?
+	AI_Output(self, hero, "Info_Mod_Richter_Unfrieden_10_03"); //Natychmiastowo! Jestesmy pewni, ze mozna uniknac dalszych komplikacji!
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Ich habe dem Richter die Nachricht überbracht. Dann sollte ich jetzt meinen Lohn abholen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_UNFRIEDEN, "Przekazalem wiadomosc sedziemu. Wtedy teraz powinienem odebrac moja wyplate.");
 
 	Wld_InsertNpc	(Mod_7420_OUT_Michael_REL, "REL_CITY_001");
 	Wld_InsertNpc	(Mod_7421_OUT_Philipp_REL, "REL_CITY_001");
@@ -228,7 +228,7 @@ INSTANCE Info_Mod_Richter_Endres (C_INFO)
 	information	= Info_Mod_Richter_Endres_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich versuche den Mörder von Endres zu ermitteln.";
+	description	= "Próbuje dowiedziec sie, kto zabil Endresa.";
 };
 
 FUNC INT Info_Mod_Richter_Endres_Condition()
@@ -241,81 +241,81 @@ FUNC INT Info_Mod_Richter_Endres_Condition()
 
 FUNC VOID Info_Mod_Richter_Endres_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_15_00"); //Ich versuche den Mörder von Endres zu ermitteln.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_01"); //Ja? Wir haben von diesem blutrünstigen Ereignis erfahren. Was konntest du herausfinden?
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_15_02"); //Es gibt drei Verdächtige, die ich allesamt verhört habe.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_03"); //Zu welchen Schlüssen führen dich die Unterredungen? Lege dich fest und überlege wohl, bevor du antwortest.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_04"); //Die Gerichtsverhandlungen ersparen Wir Uns heute nämlich, weil Wir eine leichte Müdigkeit verspüren.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_15_00"); //Próbuje dowiedziec sie, kto zabil Endresa.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_01"); //Tak? Dowiedzielismy sie o tym krwiozerczym wydarzeniu. Co móglbys dowiedziec?
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_15_02"); //Sa trzy podejrzane osoby, które mnie wszystkich przesluchalem.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_03"); //Do jakich wniosków sklaniaja Cie wywiady? Wystarczy sie polozyc i zastanowic zanim odpowiesz.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_10_04"); //Oszczedzono nam procesu sadowego, poniewaz odczuwamy lekkie zmeczenie.
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Ich weiß es noch nicht.", Info_Mod_Richter_Endres_D);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "Jeszcze nie wiem.", Info_Mod_Richter_Endres_D);
 
 	if (Mod_RichterEndres_Juliana == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana ist unschuldig.", Info_Mod_Richter_Endres_C);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana jest niewinna.", Info_Mod_Richter_Endres_C);
 	};
 	if (Mod_RichterEndres_Arzt == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Der Heiler ist unschuldig.", Info_Mod_Richter_Endres_B);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "uzdrowiciel jest niewinny.", Info_Mod_Richter_Endres_B);
 	};
 	if (Mod_RichterEndres_Wendel == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel ist unschuldig.", Info_Mod_Richter_Endres_A);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel jest niewinny.", Info_Mod_Richter_Endres_A);
 	};
 };
 
 FUNC VOID Info_Mod_Richter_Endres_E()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_E_10_00"); //Woher weißt du das?
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_E_10_00"); //Skad to wiesz?
 };
 
 FUNC VOID Info_Mod_Richter_Endres_H()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_H_10_00"); //Und wer ist noch unschuldig?
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_H_10_00"); //A kto inny jest niewinny?
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Ich weiß es noch nicht.", Info_Mod_Richter_Endres_D);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "Jeszcze nie wiem.", Info_Mod_Richter_Endres_D);
 
 	if (Mod_RichterEndres_Juliana == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana ist unschuldig.", Info_Mod_Richter_Endres_C);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana jest niewinna.", Info_Mod_Richter_Endres_C);
 	};
 	if (Mod_RichterEndres_Arzt == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Der Heiler ist unschuldig.", Info_Mod_Richter_Endres_B);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "uzdrowiciel jest niewinny.", Info_Mod_Richter_Endres_B);
 	};
 	if (Mod_RichterEndres_Wendel == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel ist unschuldig.", Info_Mod_Richter_Endres_A);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel jest niewinny.", Info_Mod_Richter_Endres_A);
 	};
 };
 
 FUNC VOID Info_Mod_Richter_Endres_I()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_I_10_00"); //Dann könnte der Heiler der Täter sein?
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_I_15_01"); //So ist es.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_I_10_02"); //Dann gehe hin und finde Beweise!
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_I_10_00"); //Wtedy uzdrowiciel moze byc winowajca?
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_I_15_01"); //Tak wlasnie jest.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_I_10_02"); //Idzcie i znajdzcie dowody!
 
 	Mod_EndresIndizien = 2;
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich soll nun Beweise dafür finden, dass der Heiler der Täter ist.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Mam znalezc dowód, ze to uzdrowiciel jest winowajca.");
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 };
 
 FUNC VOID Info_Mod_Richter_Endres_D()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_D_15_00"); //Ich weiß es noch nicht.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_D_10_01"); //Dann bring es in Erfahrung!
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_D_15_00"); //Jeszcze nie wiem.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_D_10_01"); //Sprawdz!
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 };
 
 FUNC VOID Info_Mod_Richter_Endres_C()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_C_15_00"); //Juliana ist unschuldig.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_C_15_00"); //Juliana jest niewinna.
 
 	Info_Mod_Richter_Endres_E();
 
@@ -323,25 +323,25 @@ FUNC VOID Info_Mod_Richter_Endres_C()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Roman_REL_Hi))
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Der Täter ist männlich.", Info_Mod_Richter_Endres_G);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Za winowajce uwaza sie mezczyzne.", Info_Mod_Richter_Endres_G);
 	};
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Das sagt mir mein Gefühl.", Info_Mod_Richter_Endres_F);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "To sprawia, ze czuje sie dobrze.", Info_Mod_Richter_Endres_F);
 };
 
 FUNC VOID Info_Mod_Richter_Endres_B()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_B_15_00"); //Der Heiler ist unschuldig.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_B_15_00"); //uzdrowiciel jest niewinny.
 
 	Info_Mod_Richter_Endres_E();
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Das sagt mir mein Gefühl.", Info_Mod_Richter_Endres_F);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "To sprawia, ze czuje sie dobrze.", Info_Mod_Richter_Endres_F);
 };
 
 FUNC VOID Info_Mod_Richter_Endres_A()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_A_15_00"); //Wendel ist unschuldig.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_A_15_00"); //Wendel jest niewinny.
 
 	Info_Mod_Richter_Endres_E();
 
@@ -349,14 +349,14 @@ FUNC VOID Info_Mod_Richter_Endres_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Monteur_Endres))
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Er hat ein Alibi.", Info_Mod_Richter_Endres_J);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "On ma alibi.", Info_Mod_Richter_Endres_J);
 	};
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Das sagt mir mein Gefühl.", Info_Mod_Richter_Endres_F);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "To sprawia, ze czuje sie dobrze.", Info_Mod_Richter_Endres_F);
 };
 
 FUNC VOID Info_Mod_Richter_Endres_G()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_G_15_00"); //Der Täter ist männlich.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_G_15_00"); //Za winowajce uwaza sie mezczyzne.
 
 	Mod_RichterEndres_Juliana = 1;
 
@@ -372,7 +372,7 @@ FUNC VOID Info_Mod_Richter_Endres_G()
 
 FUNC VOID Info_Mod_Richter_Endres_J()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_J_15_00"); //Er hat ein Alibi.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_J_15_00"); //On ma alibi.
 
 	Mod_RichterEndres_Wendel = 1;
 
@@ -388,24 +388,24 @@ FUNC VOID Info_Mod_Richter_Endres_J()
 
 FUNC VOID Info_Mod_Richter_Endres_F()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Endres_F_15_00"); //Das sagt mir mein Gefühl.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres_F_10_01"); //Dein Gefühl ist nicht gut genug!
+	AI_Output(hero, self, "Info_Mod_Richter_Endres_F_15_00"); //To sprawia, ze czuje sie dobrze.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres_F_10_01"); //Nie czujesz sie wystarczajaco dobrze!
 
 	Info_ClearChoices	(Info_Mod_Richter_Endres);
 
-	Info_AddChoice	(Info_Mod_Richter_Endres, "Ich weiß es noch nicht.", Info_Mod_Richter_Endres_D);
+	Info_AddChoice	(Info_Mod_Richter_Endres, "Jeszcze nie wiem.", Info_Mod_Richter_Endres_D);
 
 	if (Mod_RichterEndres_Juliana == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana ist unschuldig.", Info_Mod_Richter_Endres_C);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Juliana jest niewinna.", Info_Mod_Richter_Endres_C);
 	};
 	if (Mod_RichterEndres_Arzt == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Der Heiler ist unschuldig.", Info_Mod_Richter_Endres_B);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "uzdrowiciel jest niewinny.", Info_Mod_Richter_Endres_B);
 	};
 	if (Mod_RichterEndres_Wendel == 0)
 	{
-		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel ist unschuldig.", Info_Mod_Richter_Endres_A);
+		Info_AddChoice	(Info_Mod_Richter_Endres, "Wendel jest niewinny.", Info_Mod_Richter_Endres_A);
 	};
 };
 
@@ -432,36 +432,36 @@ FUNC VOID Info_Mod_Richter_Endres02_Info()
 {
 	if (Mod_EndresIndizien == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_00"); //(übellaunig) Du hast zwar einen Verbrecher gestellt, aber Fingerspitzengefühl hast du nicht bewiesen.
+		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_00"); //Byc moze byles przestepca, ale nie okazywales instynktu.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_01"); //(wohlwollend) Wir müssen dir für deine Hilfe in diesem Fall danken. So etwas Entsetzliches darf nicht wieder passieren.
+		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_01"); //Musimy podziekowac panstwu za pomoc w tym przypadku. Ta okropna rzecz nie moze sie zdarzyc ponownie.
 	};
 
-	AI_Output(hero, self, "Info_Mod_Richter_Endres02_15_02"); //Was geschieht nun mit dem Heiler?
-	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_03"); //Wir lassen ihn vierteilen, hängen oder köpfen, je nach Unserer Laune.
-	AI_Output(hero, self, "Info_Mod_Richter_Endres02_15_04"); //Muss er mit dem Tod gestraft werden?
-	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_05"); //Die Leute wollen es so, glaube Uns. Wie unzufrieden wären sie, könnten sie den Schuldigen nicht büßen sehen.
-	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_06"); //Nun aber lass uns nicht mehr darüber reden.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres02_15_02"); //Co dzieje sie z uzdrowicielem?
+	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_03"); //W zaleznosci od nastroju bedzie ona cieta na cztery czesci, wiszaca lub scieta.
+	AI_Output(hero, self, "Info_Mod_Richter_Endres02_15_04"); //Czy trzeba go ukarac smiercia?
+	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_05"); //Ludzie chca tego w ten sposób, wierzcie nam. Jak bardzo byliby niezadowoleni, gdyby nie widzieli winnych pokrzywdzonych.
+	AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_06"); //Teraz juz o tym nie mówmy.
 
 	if (Mod_EndresIndizien == 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_07"); //Die  Klatschweiber werden es noch ausführlich tun.
+		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_07"); //Zrobia to szczególowo plotki.
 
 		B_GivePlayerXP	(200);
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich habe den Heiler selbstständig zur Strecke gebracht.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ja sam zabralem uzdrowiciela.");
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_08"); //Es gibt denkbar Erfreulicheres. Anselm hat verfügt, dass du diesen Trank als Belohnung für deine Dienste erhalten sollst.
+		AI_Output(self, hero, "Info_Mod_Richter_Endres02_10_08"); //Jest wiecej przyjemnych rzeczy. Anselm oglosil, ze powinienes otrzymac ten eliksir jako nagrode za swoja sluzbe.
 
 		B_GiveInvItems	(self, hero, ItPo_Perm_Health, 1);
 
 		B_GivePlayerXP	(400);
 
-		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Ich habe den mörderischen Heiler an die Justiz übergeben.");
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Przekazalem morderczego uzdrowiciela sadownictwu.");
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_ENDRES, LOG_SUCCESS);
@@ -491,7 +491,7 @@ FUNC INT Info_Mod_Richter_Glorie_Condition()
 
 FUNC VOID Info_Mod_Richter_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Richter_Glorie_10_00"); //Ahh, schön euch zu treffen, Gelehrter. Ich wollte noch unbedingt etwas mit euch erörtern.
+	AI_Output(self, hero, "Info_Mod_Richter_Glorie_10_00"); //Ach, milo Ci sie spotkac, uczony. Naprawde chcialem cos z wami omówic.
 
 	AI_StopProcessInfos	(self);
 
@@ -507,7 +507,7 @@ INSTANCE Info_Mod_Richter_Freudenspender (C_INFO)
 	information	= Info_Mod_Richter_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Lust auf Freudenspender?";
+	description 	= "Poczuj sie jak danie radosci?";
 };                       
 
 FUNC INT Info_Mod_Richter_Freudenspender_Condition()
@@ -522,8 +522,8 @@ FUNC INT Info_Mod_Richter_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Richter_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Richter_Freudenspender_15_00"); //Lust auf Freudenspender?
-	AI_Output(self, hero, "Info_Mod_Richter_Freudenspender_10_01"); //Wir hätten lieber ein gutes Essen und eine spannende Verhandlung.
+	AI_Output(hero, self, "Info_Mod_Richter_Freudenspender_15_00"); //Poczuj sie jak danie radosci?
+	AI_Output(self, hero, "Info_Mod_Richter_Freudenspender_10_01"); //Wolimy raczej miec dobry posilek i ekscytujace negocjacje.
 };
 
 var int Richter_LastPetzCounter;
@@ -551,17 +551,17 @@ FUNC INT Info_Mod_Richter_PMSchulden_Condition()
 
 FUNC VOID Info_Mod_Richter_PMSchulden_Info()
 {
-	AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_00"); //Bist du gekommen, um deine Strafe zu zahlen?
+	AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_00"); //Czy przyszedles/as zaplacic grzywne?
 
 	if (B_GetTotalPetzCounter(self) > Richter_LastPetzCounter)
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_01"); //Ich hatte mich schon gefragt, ob du es überhaupt noch wagst, hierher zu kommen!
-		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_02"); //Anscheinend ist es nicht bei den letzten Anschuldigungen geblieben!
+		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_01"); //Zastanawialem sie, czy nawet nie osmieliscie sie tu przyjechac!
+		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_02"); //Najwyrazniej nie sa to ostatnie oskarzenia!
 
 		if (Richter_Schulden < 1000)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_03"); //Ich hatte dich gewarnt! Die Strafe, die du jetzt zahlen musst, ist höher!
-			AI_Output (hero, self, "Info_Mod_Richter_PMAdd_15_00"); //Wieviel?
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_03"); //Ostrzegam cie! Grzywna, która musisz zaplacic jest teraz wyzsza!
+			AI_Output (hero, self, "Info_Mod_Richter_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Richter_LastPetzCounter);
 		
@@ -576,42 +576,42 @@ FUNC VOID Info_Mod_Richter_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_04"); //Du hast mich schwer enttäuscht!
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_04"); //Zapusciles mnie tak zle!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Richter_LastPetzCrime)
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_05"); //Es haben sich einige neue Dinge ergeben.
+		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_05"); //Pojawily sie nowe rzeczy.
 		
 		if (Richter_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_06"); //Plötzlich gibt es niemanden mehr, der dich des Mordes bezichtigt.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_06"); //Nagle nie ma juz nikogo, kto oskarzalby cie o morderstwo.
 		};
 		
 		if (Richter_LastPetzCrime == CRIME_THEFT)
 		|| ( (Richter_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_07"); //Niemand erinnert sich mehr, dich bei einem Diebstahl gesehen zu haben.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_07"); //Nikt nie pamieta, ze widzisz sie przy kradziezy.
 		};
 		
 		if (Richter_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Richter_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_08"); //Es gibt keine Zeugen mehr dafür, dass du jemals in eine Schlägerei verwickelt warst.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_08"); //Nie ma juz zadnych swiadków tego, ze kiedykolwiek walczyles.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_09"); //Anscheinend haben sich alle Anklagen gegen dich in Wohlgefallen aufgelöst.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_09"); //Widocznie wszystkie zarzuty przeciwko Tobie zniknely.
 		};
 		
-		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_10"); //Ich weiß nicht, was da gelaufen ist, aber ich warne dich: Spiel keine Spielchen mit mir.
+		AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_10"); //Nie wiem, co sie stalo, ale ostrzegam: nie graj ze mna.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_11"); //Ich habe mich jedenfalls entschieden, dir deine Schulden zu erlassen.
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_12"); //Sieh zu, dass du nicht wieder in Schwierigkeiten kommst.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_11"); //Zrezygnowalem z waszego zadluzenia.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_12"); //Upewnij sie, ze nie popadniesz ponownie w klopoty.
 	
 			Richter_Schulden			= 0;
 			Richter_LastPetzCounter 	= 0;
@@ -619,9 +619,9 @@ FUNC VOID Info_Mod_Richter_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_13"); //Damit eins klar ist: Deine Strafe musst du trotzdem in voller Höhe zahlen.
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_13"); //Jedno jest pewne: nadal trzeba zaplacic kare w calosci.
 			B_Say_Gold (self, hero, Richter_Schulden);
-			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_14"); //Also, was ist?
+			AI_Output (self, hero, "Info_Mod_Richter_PMSchulden_10_14"); //Co to jest?
 		};
 	};
 	
@@ -630,27 +630,27 @@ FUNC VOID Info_Mod_Richter_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Richter_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Richter_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Richter_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Richter_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Richter_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Ile to znów bylo?",Info_Mod_Richter_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Richter_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Richter_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Richter_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Richter_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Richter_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void Info_Mod_Richter_PMSchulden_HowMuchAgain()
 {
-	AI_Output (hero, self, "Info_Mod_Richter_PMSchulden_HowMuchAgain_15_00"); //Wie viel war es noch mal?
+	AI_Output (hero, self, "Info_Mod_Richter_PMSchulden_HowMuchAgain_15_00"); //Ile to znów bylo?
 	B_Say_Gold (self, hero, Richter_Schulden);
 
 	Info_ClearChoices  	(Info_Mod_Richter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Richter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Ich habe nicht genug Gold!",Info_Mod_Richter_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Wieviel war es nochmal?",Info_Mod_Richter_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Richter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Richter_PMSchulden,"Ile to znów bylo?",Info_Mod_Richter_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Richter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Richter_PMSchulden,"Ich will die Strafe zahlen.",Info_Mod_Richter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Richter_PMSchulden,"Chce zaplacic grzywne.",Info_Mod_Richter_PETZMASTER_PayNow);
 	};
 };
 
@@ -678,8 +678,8 @@ FUNC VOID Info_Mod_Richter_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_01"); //Gut, dass du zu mir kommst, bevor alles noch schlimmer für dich wird.
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_02"); //Mord ist ein schweres Vergehen!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_01"); //Ciesze sie, ze przyszedles do mnie, zanim sytuacja sie pogorszyla.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_02"); //Morderstwo jest powaznym wykroczeniem!
 
 		Richter_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
 
@@ -687,40 +687,40 @@ FUNC VOID Info_Mod_Richter_PETZMASTER_Info()
 
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_03"); //Ganz zu schweigen von den anderen Sachen, die du angerichtet hast.
+			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_03"); //Nie wspominajac o innych rzeczach, które zrobiles.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_04"); //Die Wachen haben Befehl, jeden Mörder auf der Stelle zu richten.
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_05"); //Und auch die meisten Bürger werden einen Mörder im Lager nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_06"); //Du könntest deine Reue zeigen, indem du eine Strafe zahlst - natürlich muss die Strafe angemessen hoch sein.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_04"); //Straznicy maja rozkaz osadzania kazdego mordercy na miejscu.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_05"); //Równiez wiekszosc mieszkanców obozu nie toleruje mordercy!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_06"); //Mozesz okazac swoja pokute placac grzywne - oczywiscie kara musi byc odpowiednia.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_07"); //Gut, dass du kommst! Du wirst des Diebstahls bezichtigt! Es gibt Zeugen!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_07"); //Dobrze! Jestes oskarzony o kradziez! Sa swiadkowie!
 
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_08"); //Von den anderen Dingen, die mir zu Ohren gekommen sind, will ich gar nicht erst reden.
+			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_08"); //Nie chce nawet mówic o innych rzeczach, które slyszalem.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_09"); //Ich werde so ein Verhalten im Lager nicht dulden!
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_10"); //Du wirst eine Strafe zahlen müssen, um dein Verbrechen wieder gutzumachen!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_09"); //Nie bede tolerowal takiego zachowania w obozie!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_10"); //Bedziesz musial zaplacic grzywne za swoje przestepstwo!
 		
 		Richter_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_11"); //Du kannst nicht einfach wahllos Leute angreifen. Dafür werde ich dich zur Rechenschaft ziehen.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_11"); //Nie mozna po prostu bezkrytycznie atakowac ludzi. Bede panu za to odpowiadal.
 
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_12"); //Und die Sache mit den Schafen musste wohl auch nicht sein.
+			AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_12"); //I nie sadze, aby tak bylo w przypadku owiec.
 		};
 
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_13"); //Wenn ich dir das durchgehen lasse, macht hier bald jeder, was er will.
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_14"); //Also wirst du eine angemessene Strafe zahlen - und die Sache ist vergessen.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_13"); //Jesli pozwole wam sie z tym uporac, wszyscy beda robic to, co chca.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_14"); //Placi sie wiec odpowiednia grzywne - a cala sprawa zostanie zapomniana.
 		
 		Richter_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
@@ -728,14 +728,14 @@ FUNC VOID Info_Mod_Richter_PETZMASTER_Info()
 	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_15"); //Mir ist zu Ohren gekommen, du hättest dich an unseren Schafen vergriffen.
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_16"); //Dir ist klar, dass ich das nicht durchgehen lassen kann.
-		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_17"); //Du wirst eine Entschädigung zahlen müssen!
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_15"); //Slyszalem, ze balaganiles sie z naszymi owcami.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_16"); //Zdajesz sobie sprawe, ze nie moge tego przepuscic.
+		AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_10_17"); //Bedziesz musial wyplacic odszkodowanie!
 		
 		Richter_Schulden = 100;
 	};
 	
-	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_15_18"); //Wie viel?
+	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_15_18"); //Ile?
 	
 	if (Richter_Schulden > 1000)	{	Richter_Schulden = 1000;	};
 		
@@ -743,18 +743,18 @@ FUNC VOID Info_Mod_Richter_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Richter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Richter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Richter_PETZMASTER,"Ich habe nicht genug Gold!",Info_Mod_Richter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Richter_PETZMASTER,"Nie mam wystarczajaco duzo zlota!",Info_Mod_Richter_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Richter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Richter_PETZMASTER,"Ich will die Strafe zahlen.",Info_Mod_Richter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Richter_PETZMASTER,"Chce zaplacic grzywne.",Info_Mod_Richter_PETZMASTER_PayNow);
 	};
 };
 
 func void Info_Mod_Richter_PETZMASTER_PayNow()
 {
-	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_PayNow_15_00"); //Ich will die Strafe zahlen!
+	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_PayNow_15_00"); //Chce zaplacic grzywne!
 	B_GiveInvItems (hero, self, itmi_gold, Richter_Schulden);
-	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayNow_10_01"); //Gut! Ich werde dafür sorgen, dass es jeder in der Stadt erfährt - damit wäre dein Ruf einigermaßen wiederhergestellt.
+	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayNow_10_01"); //Dobrze! Doloze wszelkich staran, aby wszyscy w miescie dowiedzieli sie o tym - wiec Twoja reputacja zostanie w rozsadny sposób przywrócona.
 
 	B_GrantAbsolution (LOC_KHORATA);
 	
@@ -768,9 +768,9 @@ func void Info_Mod_Richter_PETZMASTER_PayNow()
 
 func void Info_Mod_Richter_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_PayLater_15_00"); //Ich habe nicht genug Gold!
-	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayLater_10_01"); //Dann sieh zu, dass du das Gold so schnell wie möglich beschaffst.
-	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayLater_10_02"); //Und ich warne dich: Wenn du dir noch was zu schulden kommen lässt, wird die Sache noch schlimmer für dich!
+	AI_Output (hero, self, "Info_Mod_Richter_PETZMASTER_PayLater_15_00"); //Nie mam wystarczajaco duzo zlota!
+	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayLater_10_01"); //Nastepnie zobacz, ze zloto dostaniesz jak najszybciej.
+	AI_Output (self, hero, "Info_Mod_Richter_PETZMASTER_PayLater_10_02"); //I ostrzegam cie, ze jesli cokolwiek zawdzieczasz sobie, to bedzie ci gorzej.
 	
 	Richter_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Richter_LastPetzCrime		= B_GetGreatestPetzCrime(self);

@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_4_JOIN(C_INFO)
 	condition	= DIA_PAL_4_JOIN_Condition;
 	information	= DIA_PAL_4_JOIN_Info;
 	permanent	= TRUE;
-	description = "Wie werde ich Paladin?";
+	description = "Jak zostac Paladinem?";
 };                       
 
 FUNC INT DIA_PAL_4_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_4_JOIN_Condition()
 
 FUNC VOID DIA_PAL_4_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_4_JOIN_15_00"); //Wie werde ich Paladin?
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_01"); //Wenn es dir wirklich ernst ist, solltest du dich in den Dienst der Paladine stellen.
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_02"); //Geh zur Kaserne und rede mit Lord Andre. Lass dich in die Miliz aufnehmen.
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_03"); //Vielleicht bekommst du dann eine Chance, dich als würdig zu erweisen.
+	AI_Output (hero, self, "DIA_PAL_4_JOIN_15_00"); //Jak zostac Paladinem?
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_01"); //Jesli jestes naprawde powazny, powinienes oddac sie w sluzbe paladynom.
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_02"); //Idz do koszar i porozmawiaj z Panem Andre. Wciel sie do milicji.
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_03"); //Byc moze bedziesz mial szanse, aby okazac sie godnym siebie.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_PAL_4_PEOPLE(C_INFO)
 	condition	= DIA_PAL_4_PEOPLE_Condition;
 	information	= DIA_PAL_4_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer hat hier das Kommando?";
+	description = "Kto tu dowodzi?";
 };                       
 
 FUNC INT DIA_PAL_4_PEOPLE_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_4_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, hero, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen ist der Oberbefehlshaber über alle Truppen auf der Insel.
-	AI_Output (self, hero, "DIA_PAL_4_PEOPLE_04_02"); //Aber er ist sehr beschäftigt. Wenn du etwas zu klären hast, geh zur Kaserne und rede mit Lord Andre.
+	AI_Output (hero, self, "DIA_PAL_4_PEOPLE_15_00"); //Kto tu dowodzi?
+	AI_Output (self, hero, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen jest dowódca armii na wyspie.
+	AI_Output (self, hero, "DIA_PAL_4_PEOPLE_04_02"); //Ale on jest bardzo zajety. Jesli masz cokolwiek do osiedlenia, udaj sie do baraków i porozmawiaj z Panem Andre.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_4_LOCATION(C_INFO)
 	condition	= DIA_PAL_4_LOCATION_Condition;
 	information	= DIA_PAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was macht ihr Paladine hier in Khorinis?";
+	description = "Co robicie tu paladyni whorynie?";
 };                       
 
 FUNC INT DIA_PAL_4_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_4_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_4_LOCATION_15_00"); //Was macht ihr Paladine hier in Khorinis?
-	AI_Output (self, hero, "DIA_PAL_4_LOCATION_04_01"); //Ich bin nicht befugt, dir das zu sagen.
+	AI_Output (hero, self, "DIA_PAL_4_LOCATION_15_00"); //Co robicie tu paladyni whorynie?
+	AI_Output (self, hero, "DIA_PAL_4_LOCATION_04_01"); //Nie jestem do tego upowazniony.
 };
 
 INSTANCE Info_Mod_PAL_4_Pickpocket (C_INFO)

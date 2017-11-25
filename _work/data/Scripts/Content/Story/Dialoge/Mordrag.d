@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Mordrag_Hi (C_INFO)
 	information	= Info_Mod_Mordrag_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich komme von Lee.";
+	description	= "Jestem z Lee.";
 };
 
 FUNC INT Info_Mod_Mordrag_Hi_Condition()
@@ -19,14 +19,14 @@ FUNC INT Info_Mod_Mordrag_Hi_Condition()
 
 FUNC VOID Info_Mod_Mordrag_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Mordrag_Hi_15_00"); //Ich komme von Lee. Du sollst mir die Schattenrüstung geben.
-	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_01"); //Klar. Einen Augenblick, ich muss sie nur gerade aus meinen Sachen herauskramen ... ja, hier ist sie.
+	AI_Output(hero, self, "Info_Mod_Mordrag_Hi_15_00"); //Jestem z Lee. Chce, zebys dal mi pancerz cieni.
+	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_01"); //Pewne. Chwile po prostu musze wydobywac je z ubran.... Wiecej Tak, tu jest.
 
-	B_ShowGivenThings	("Schattenrüstung erhalten");
+	B_ShowGivenThings	("uzyskac pancerz cieniowany");
 
 	CreateInvItems	(hero, ItAr_Stt_Mordrag, 1);
 
-	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_02"); //Ein gutes Stück. Habe sie damals beim Glücksspiel einem Schatten abgenommen und dann einigen Ärger mit den Gardisten bekommen.
+	AI_Output(self, hero, "Info_Mod_Mordrag_Hi_11_02"); //Dobry kawalek. Zrobic to w tym czasie z hazardem cien, a nastepnie dostal troche klopotów z strazników.
 };
 
 INSTANCE Info_Mod_Mordrag_Pickpocket (C_INFO)

@@ -6,7 +6,7 @@ FUNC VOID Salzhacken_S1 ()
 	{	
 		if (Npc_HasItems(hero, ItMw_2H_Axe_L_01) == 0)
 		{
-			Print	("Ohne Spitzhacke geht das nicht!");
+			Print	("Nie mozna tego zrobic bez pickaxe!");
 
 			AI_UseMob (hero, "ORE", -1);
 			return;
@@ -37,7 +37,7 @@ INSTANCE PC_Salzhacken_Hacken (C_INFO)
 	information	= PC_Salzhacken_Hacken_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Einfach mal hacken.";
+	description	= "Wystarczy je pokroic.";
 };
 
 FUNC INT PC_Salzhacken_Hacken_Condition()
@@ -81,32 +81,32 @@ FUNC VOID PC_Salzhacken_Hacken_Info()
 			if (SalzAnzahl < 60)
 			{
 				CreateInvItems	(hero, ItMi_SalzNugget, 1);
-				PrintScreen	("1 Salzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("1 kawalk soli siekany!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			}
 			else if (SalzAnzahl < 80)
 			{
 				CreateInvItems	(hero, ItMi_SalzNugget, 2);
-				PrintScreen	("2 Salzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("2 siekane kawalki soli!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			}
 			else
 			{
 				CreateInvItems	(hero, ItMi_SalzNugget, 3);
-				PrintScreen	("3 Salzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+				PrintScreen	("3 siekane kawalki soli!", -1, -1, FONT_ScreenSmall, 2);
 				Truemmer_Count = 0;
 			};
 		}
 		else
 		{
 			CreateInvItems	(hero, ItMi_SalzNugget, 1);
-			PrintScreen	("1 Salzbrocken gehackt!", -1, -1, FONT_ScreenSmall, 2);
+			PrintScreen	("1 kawalk soli siekany!", -1, -1, FONT_ScreenSmall, 2);
 			Truemmer_Count = 0;		
 		};
 	}
 	else
 	{
-		PrintScreen ("Hier gibt's Nichts mehr zu holen.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("Nie ma tu nic do zrobienia.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
@@ -118,7 +118,7 @@ INSTANCE PC_Salzhacken_Chance (C_Info)
 	condition		= PC_Salzhacken_Chance_Condition;
 	information		= PC_Salzhacken_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Eigene Fähigkeit prüfen)"; 
+	description		= "(Kontrola wlasnej zdolnosci)"; 
 };
 
 FUNC INT PC_Salzhacken_Chance_Condition ()
@@ -135,34 +135,34 @@ FUNC VOID PC_Salzhacken_Chance_Info()
 	
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("blutiger Anfänger (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("poczatkujacy absolutny (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("ganz passabler Schürfer (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("calkiem rozsadny poszukiwacz (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("erfahrener Goldschürfer (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("doswiadczony poszukiwacz (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("waschechter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Buddler prawdziwy ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("verdammt guter Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("dobry kopacz ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Meister Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("Buddler glówny ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
 		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
 	};
 	
-	ConcatText = ConcatStrings (concatText, " Prozent)");
+	ConcatText = ConcatStrings (concatText, " procent");
 	
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };

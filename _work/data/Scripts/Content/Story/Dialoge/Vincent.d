@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Vincent_Hi (C_INFO)
 	information	= Info_Mod_Vincent_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Vincent_Hi_Condition()
@@ -18,14 +18,14 @@ FUNC VOID Info_Mod_Vincent_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Vincent_Hi_36_01"); //Hehe, ich bin Vincent, Jäger von Beruf.
+	AI_Output(self, hero, "Info_Mod_Vincent_Hi_36_01"); //Hey, jestem Vincent, zawodowy mysliwy.
 
 	if (Mod_Schwierigkeit != 4)
 	{
-		AI_Output(self, hero, "Info_Mod_Vincent_Hi_36_02"); //Wenn du willst, kannst du von mir lernen, geschickter den Bogen zu führen.
+		AI_Output(self, hero, "Info_Mod_Vincent_Hi_36_02"); //Jesli chcesz, mozesz nauczyc sie od mnie byc bardziej umiejetny.
 
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_RELENDEL, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_RELENDEL, "Der Jäger Vincent kann mir beim Umgang mit dem Bogen helfen.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_RELENDEL, "Hunter Vincent Vincent pomoze mi radzic sobie z lukiem.");
 	};
 };
 
@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Vincent_Landvermessung (C_INFO)
 	information	= Info_Mod_Vincent_Landvermessung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Anselm schickt mich.";
+	description	= "Anselm mnie wyslal.";
 };
 
 FUNC INT Info_Mod_Vincent_Landvermessung_Condition()
@@ -51,15 +51,15 @@ FUNC INT Info_Mod_Vincent_Landvermessung_Condition()
 
 FUNC VOID Info_Mod_Vincent_Landvermessung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_00"); //Anselm schickt mich. Ich soll für ihn in Erfahrung bringen, was für eine Fläche Khoratas Umland hat.
-	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_01"); //(leise) Hihihihihi ...
-	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_02"); //Was ist?
-	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_03"); //(lauter) Hahahaha ...
+	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_00"); //Anselm mnie wyslal. Chce, abym dowiedzial sie, jaki jest obszar otoczenia Khoraty.
+	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_01"); //cichy) Hihihihihihihihihihihihihihihihihi......
+	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_02"); //Co to jest?
+	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_03"); //Hahahahahahahahahahahahahahaha.....
 	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_04"); //WAS IST???
-	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_05"); //Nichts, nein, gar nichts ... hohoho ... (unterdrückt mühsam einen Lachanfall) Du kannst ... hehe ... sag ihm, Khoratas Umland hat eine Fläche von fünf Quadratmeilen. (Pause, dann prustet er los)
-	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_06"); //Na schön.
+	AI_Output(self, hero, "Info_Mod_Vincent_Landvermessung_36_05"); //Nic, nic, nic, nic, nic..... hustawki Nie mozesz..... ..... Powiedz mu, ze obwód Khoracie ma powierzchnie pieciu mil kwadratowych. (pauza, potem zaczyna snortowac)
+	AI_Output(hero, self, "Info_Mod_Vincent_Landvermessung_15_06"); //A zatem wszystko w porzadku.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Fünf Quadratmeilen. Wie lustig.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_LANDVERMESSUNG, "Piec kilometrów kwadratowych. Jak smieszne.");
 };
 
 INSTANCE Info_Mod_Vincent_Schweine (C_INFO)
@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Vincent_Schweine (C_INFO)
 	information	= Info_Mod_Vincent_Schweine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe gehört, du arbeitest nicht mehr richtig.";
+	description	= "Slysze, ze juz nie pracujesz prawidlowo.";
 };
 
 FUNC INT Info_Mod_Vincent_Schweine_Condition()
@@ -84,19 +84,19 @@ FUNC INT Info_Mod_Vincent_Schweine_Condition()
 
 FUNC VOID Info_Mod_Vincent_Schweine_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vincent_Schweine_15_00"); //Ich habe gehört, du arbeitest nicht mehr richtig.
-	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_01"); //Kann sein. Egal! Hihihi.
-	AI_Output(hero, self, "Info_Mod_Vincent_Schweine_15_02"); //Irgendjemand muss aber deine Arbeit übernehmen.
-	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_03"); //Ja, wirklich? (Pause) Ich hab 'ne tolle Idee: Du übernimmst das!
-	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_04"); //Hier!
+	AI_Output(hero, self, "Info_Mod_Vincent_Schweine_15_00"); //Slysze, ze juz nie pracujesz prawidlowo.
+	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_01"); //Moze. Nigdy nie martwcie sie! Hihihihihi.
+	AI_Output(hero, self, "Info_Mod_Vincent_Schweine_15_02"); //Ktos musi wykonac twoja prace.
+	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_03"); //Tak, naprawde? Mam swietny pomysl, a Ty przejmiesz!
+	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_04"); //Tutaj!
 
 	B_GiveInvItems	(self, hero, ItRw_Bow_L_03, 1);
 
-	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_05"); //Und hier!
+	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_05"); //I tu!
 
 	B_GiveInvItems	(self, hero, ItRw_Arrow, 30);
 
-	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_06"); //Und keine Widerrede! Lass mich in Ruhe! (kichert)
+	AI_Output(self, hero, "Info_Mod_Vincent_Schweine_36_06"); //I nie klóc sie ze mna! Udajcie sie ode mnie! (igly)
 };
 
 INSTANCE Info_Mod_Vincent_Freudenspender (C_INFO)
@@ -107,7 +107,7 @@ INSTANCE Info_Mod_Vincent_Freudenspender (C_INFO)
 	information	= Info_Mod_Vincent_Freudenspender_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "Du brauchst doch sicher noch Freudenspender-Nachschub.";
+	description 	= "Jestem pewien, ze bedziesz potrzebowal wiecej rozkoszy.";
 };                       
 
 FUNC INT Info_Mod_Vincent_Freudenspender_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_Mod_Vincent_Freudenspender_Condition()
 
 FUNC VOID Info_Mod_Vincent_Freudenspender_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vincent_Freudenspender_15_00"); //Du brauchst doch sicher noch Freudenspender-Nachschub.
-	AI_Output(self, hero, "Info_Mod_Vincent_Freudenspender_36_01"); //Richtig - haha! Dann muss ich ja heute gar nicht mehr in die Stadt.
+	AI_Output(hero, self, "Info_Mod_Vincent_Freudenspender_15_00"); //Jestem pewien, ze bedziesz potrzebowal wiecej rozkoszy.
+	AI_Output(self, hero, "Info_Mod_Vincent_Freudenspender_36_01"); //W prawo - haha! Wtedy juz dzis nie musze isc do miasta.
 
 	B_GiveInvItems	(hero, self, ItMi_Freudenspender, 1);
 
@@ -140,7 +140,7 @@ INSTANCE Info_Mod_Vincent_Lernen_Bogen (C_INFO)
 	information	= Info_Mod_Vincent_Lernen_Bogen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Lehre mich, geschickter im Umgang mit dem Bogen zu werden.";
+	description	= "Naucz mnie umiejetnosci poslugiwania sie lukiem.";
 };
 
 FUNC INT Info_Mod_Vincent_Lernen_Bogen_Condition()
@@ -155,11 +155,11 @@ FUNC INT Info_Mod_Vincent_Lernen_Bogen_Condition()
 
 FUNC VOID Info_Mod_Vincent_Lernen_Bogen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Vincent_Lernen_Bogen_15_00"); //Lehre mich, geschickter im Umgang mit dem Bogen zu werden.
+	AI_Output(hero, self, "Info_Mod_Vincent_Lernen_Bogen_15_00"); //Naucz mnie umiejetnosci poslugiwania sie lukiem.
 
 	Info_ClearChoices	(Info_Mod_Vincent_Lernen_Bogen);
 	
-	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Zurück.", Info_Mod_Vincent_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Z powrotem.", Info_Mod_Vincent_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Vincent_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Vincent_Lernen_Bogen_1);
 };
@@ -175,7 +175,7 @@ FUNC VOID Info_Mod_Vincent_Lernen_Bogen_5()
 
 	Info_ClearChoices	(Info_Mod_Vincent_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Zurück.", Info_Mod_Vincent_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Z powrotem.", Info_Mod_Vincent_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Vincent_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Vincent_Lernen_Bogen_1);
 };
@@ -186,7 +186,7 @@ FUNC VOID Info_Mod_Vincent_Lernen_Bogen_1()
 
 	Info_ClearChoices	(Info_Mod_Vincent_Lernen_Bogen);
 
-	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Zurück.", Info_Mod_Vincent_Lernen_Bogen_BACK);
+	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, "Z powrotem.", Info_Mod_Vincent_Lernen_Bogen_BACK);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow5, B_GetLearnCostTalent_New(hero, NPC_TALENT_BOW)), Info_Mod_Vincent_Lernen_Bogen_5);
 	Info_AddChoice	(Info_Mod_Vincent_Lernen_Bogen, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(hero, NPC_TALENT_BOW, 1)), Info_Mod_Vincent_Lernen_Bogen_1);
 };

@@ -18,18 +18,18 @@ FUNC VOID Info_Mod_Drach_Hi_Info()
 	Wld_PlayEffect("DEMENTOR_FX",  self, self, 0, 0, 0, FALSE );
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_00"); //Keinen Schritt weiter, Mensch!
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_01"); //Was willst du?
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_02"); //Xardas und du, ihr habt etwas, was mein Meister will! GIB MIR DEN ALMANACH!
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_03"); //Vergiss es!
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_00"); //Nie wykonuj kolejnego kroku, czlowieka!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_01"); //Czego chcesz?
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_02"); //Ty i Xardas macie cos, czego chce mój mistrz! DAJ MI TEGO ALMANACHU!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_03"); //Zapomnij o tym!
 
 	AI_ReadyMeleeWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_04"); //Dann werde ich dich töten!
+	AI_Output(self, hero, "Info_Mod_Drach_Hi_14_04"); //Wtedy cie zabije!
 
 	AI_ReadyMeleeWeapon	(hero);
 
-	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_05"); //Versuch's doch!
+	AI_Output(hero, self, "Info_Mod_Drach_Hi_15_05"); //Wypróbuj to samodzielnie!
 };
 
 INSTANCE Info_Mod_Drach_WerBistDu (C_INFO)
@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Drach_WerBistDu_Info()
 
 	B_Attack	(self, hero, AR_NONE, 0);
 
-	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Vor Xardas' Turm hab ich einen Krieger namens Drach getroffen. Er wollte den Almanach für seinen Meister. Ich werde ihn wohl töten müssen.");
+	B_LogEntry	(TOPIC_MOD_BEL_ALMANACH, "Przed wieza kardaska spotkalem wojownika o imieniu Smok. Chcial almanachu dla swego mistrza. Mysle, ze bede musial go zabic.");
 };
 
 INSTANCE Info_Mod_Drach_Besiegt (C_INFO)
@@ -82,7 +82,7 @@ FUNC INT Info_Mod_Drach_Besiegt_Condition()
 
 FUNC VOID Info_Mod_Drach_Besiegt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drach_Besiegt_14_00"); //(zischt) Verdammt! Jetzt magst du gewonnen haben, aber ich komme wieder, und mit mir die anderen fünf Krieger.
+	AI_Output(self, hero, "Info_Mod_Drach_Besiegt_14_00"); //(Bizz) Damn it! Byc moze wygrales, ale wróce, a wraz ze mna pozostalych pieciu wojowników.
 
 	self.aivar[AIV_Partymember] = 0;
 
@@ -94,7 +94,7 @@ FUNC VOID Info_Mod_Drach_Besiegt_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_FIVEKNIGHTS, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_FIVEKNIGHTS, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Drach ist geflohen und kündigte seine Rückkehr mit weiteren fünf Kriegern an. Das kann ja lustig werden.");
+	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Drach uciekl i oglosil swój powrót z piecioma innymi wojownikami. To moze byc zabawa.");
 };
 
 INSTANCE Info_Mod_Drach_AtAlmanach (C_INFO)
@@ -117,11 +117,11 @@ FUNC INT Info_Mod_Drach_AtAlmanach_Condition()
 
 FUNC VOID Info_Mod_Drach_AtAlmanach_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_00"); //(triumphierend) Ah, du bist es, kleiner Mensch. Du kommst zu spät! Die anderen sind bereits auf der Suche nach der Axt.
-	AI_Output(hero, self, "Info_Mod_Drach_AtAlmanach_15_01"); //(irritiert) Wie hast du herausgefunden, was im Buch steht?
-	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_02"); //(lacht) Wir haben unsere Augen und Ohren überall! Und nun stirb!
+	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_00"); //Ach, to ty, maly czlowiek. Jestes za pózno! Inni juz szukaja siekiery.
+	AI_Output(hero, self, "Info_Mod_Drach_AtAlmanach_15_01"); //Jak dowiedziales sie, co mówi ksiazka?
+	AI_Output(self, hero, "Info_Mod_Drach_AtAlmanach_14_02"); //(smiech) Mamy oczy i uszy wszedzie! Teraz umrzec!
 
-	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Ich habe Drach wieder getroffen. Ich muss ihn diesmal wirklich töten.");
+	B_LogEntry	(TOPIC_MOD_BEL_FIVEKNIGHTS, "Znów spotkalem sie z Drachiem. Naprawde musze go tym razem zabic.");
 
 	CreateInvItems	(self, ItWr_AxtAlmanach_01, 1);
 

@@ -1,7 +1,7 @@
 INSTANCE Mod_6006_SLD_Lee_GDG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Lee";
+	name 		= "osada";
 	guild 		= GIL_NONE;
 	id 			= 6006;
 	voice 		= 4;																		//NPC_FLAG_IMMORTAL oder 0

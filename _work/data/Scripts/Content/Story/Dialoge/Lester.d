@@ -15,17 +15,17 @@ FUNC INT Info_Mod_Lester_Hi_Condition()
 
 FUNC VOID Info_Mod_Lester_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_00"); //Beim Schläfer! Das ist ja eine Überraschung!
-	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_01"); //Lester! Wie kommst du hierher?
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_02"); //Das Gleiche wollte ich gerade dich fragen. Im einen Moment glaube ich dich noch verschüttet im Schläfertempel - im nächsten stehst du schon vor mir.
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_03"); //Was ist passiert?
-	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_04"); //Du hast es eigentlich ganz gut zusammengefasst. Ich muss mich erst wieder an die frische Luft gewöhnen.
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_05"); //Dann hat doch sicher Xardas seine Finger im Spiel. Ihm gehört doch der Turm, oder? Sein düsterer Stil ist unverkennbar.
-	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_06"); //Auch das ist ganz richtig. Aber was machst du hier?
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_07"); //Ich merk schon, du bist immer noch nicht der große Erzähler geworden.
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_08"); //Was mich betrifft, bin ich mit einem Auftrag Baal Namibs gelandet, eben wegen des dunklen Turms.
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_09"); //Es gibt anscheinend einen Zusammenhang zwischen dem Wachstum des Sumpfkrauts und der Präsenz schwarzer Magie, den ich zu ergründen suche.
-	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_10"); //Aber es ist noch zu früh, mehr darüber zu spekulieren. Ich beobachte. Und rauche ab und an mal eine.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_00"); //Przez sypialnie! To niespodzianka!
+	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_01"); //Wczoraj! Jak sie tu dostales?
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_02"); //Mialem po prostu zapytac pana o to samo. Minuty mysle, ze wciaz jestes uwieziony w swiatyni podkladowców - kolejna jestes juz przed mna.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_03"); //Co sie dzieje?
+	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_04"); //Wlasciwie to wszystko jest w porzadku. Musze znów przyzwyczaic sie do swiezego powietrza.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_05"); //Wtedy z pewnoscia Xardas ma swój palec w piersiach. Czyz nie jest wlascicielem wiezy? Jego mroczny styl jest oczywisty.
+	AI_Output(hero, self, "Info_Mod_Lester_Hi_15_06"); //To równiez calkiem sluszne. Ale co tu robicie?
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_07"); //Zdaje sobie sprawe, ze wciaz jeszcze nie stales sie wielkim gawedziarzem.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_08"); //Jesli o mnie chodzi, to z powodu ciemnej wiezy wyladowalem na misji Baala Namiba.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_09"); //Wydaje sie, ze istnieje zwiazek pomiedzy wzrostem rdestnicy bagiennej a obecnoscia czarnej magii, która staram sie zglebic.
+	AI_Output(self, hero, "Info_Mod_Lester_Hi_13_10"); //Ale jest jeszcze zbyt wczesnie, aby spekulowac wiecej na ten temat. Obserwuje. I palic od czasu do czasu.
 };
 
 INSTANCE Info_Mod_Lester_Goetterwaffen (C_INFO)
@@ -48,14 +48,14 @@ FUNC INT Info_Mod_Lester_Goetterwaffen_Condition()
 
 FUNC VOID Info_Mod_Lester_Goetterwaffen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_00"); //Schön dich zu sehen, ich habe hier etwas für dich.
-	AI_Output(hero, self, "Info_Mod_Lester_Goetterwaffen_15_01"); //Ja, Milten hat mich geschickt.
-	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_02"); //Nun, dann weißt du, dass ich ein paar Spruchrollen für dich verändert habe.
-	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_03"); //Hier hast du fünf Exemplare.
+	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_00"); //Dobrze Cie widziec, dostalem cos dla Ciebie.
+	AI_Output(hero, self, "Info_Mod_Lester_Goetterwaffen_15_01"); //Tak, Milten wyslal mnie.
+	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_02"); //No cóz, wtedy wiesz, ze zmienilem kilka ról zaklec dla Ciebie.
+	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_03"); //Oto piec egzemplarzy.
 
 	B_GiveInvItems	(self, hero, ItSc_SumRabbit, 5);
 
-	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_04"); //Damit kannst du einige Häschen beschwören. Ist zwar nicht grade fein, aber sie eignen sich gut, um Fallen zu entdecken.
+	AI_Output(self, hero, "Info_Mod_Lester_Goetterwaffen_13_04"); //Mozna z nim przywolac kilka króliczków. To niezbyt dobrze, ale to dobry sposób na wykrycie pulapek.
 };
 
 INSTANCE Info_Mod_Lester_Irdorath (C_INFO)
@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Lester_Irdorath (C_INFO)
 	information	= Info_Mod_Lester_Irdorath_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Sache mit Xeres führt mich diesmal auf eine Insel und ich suche erfahrene Leute für meine Mannschaft.";
+	description	= "Sprawa z Xeres prowadzi mnie tym razem na wyspe i szukam doswiadczonych ludzi dla mojej zalogi.";
 };
 
 FUNC INT Info_Mod_Lester_Irdorath_Condition()
@@ -81,25 +81,25 @@ FUNC INT Info_Mod_Lester_Irdorath_Condition()
 
 FUnc VOID Info_Mod_Lester_Irdorath_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Irdorath_15_00"); //Die Sache mit Xeres führt mich diesmal auf eine Insel und ich suche erfahrene Leute für meine Mannschaft. Wüsstest du da jemanden?
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_01"); //(erstaunt) Mannschaft und Insel? Jetzt also sogar über das Meer ...
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_02"); //Nun, ich bin mir sicher, dass Cor Angar sich dafür begeistern kann.
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_03"); //Zu Zeiten der Barriere hattest du ja bereits mit ihm nicht unerheblichen Anteil an dem weiteren Schicksal des Lagers.
+	AI_Output(hero, self, "Info_Mod_Lester_Irdorath_15_00"); //Sprawa z Xeres prowadzi mnie tym razem na wyspe i szukam doswiadczonych ludzi dla mojej zalogi. Czy znasz kogos?
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_01"); //Zaloga i wyspa? Teraz nawet nad morzem....
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_02"); //Cóz, jestem pewien, ze Cor Angar zachwyci sie tym.
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_03"); //W czasie, gdy szlaban miales juz z nim znaczacy udzial w dalszych losach obozu.
 
 	if (Templer_Dabei == 1)
 	|| (Guru_Dabei == 1)
 	{
-		AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_04"); //Tja, und dann noch vielleicht Baal Namib. Unter den Baals ist er noch der mit dem größten Drang nach Neuem und Unbekannten.
-		AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_05"); //Nicht umsonst steht er am Eingang des Lagers.
+		AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_04"); //No cóz, a potem byc moze Baal Namib. Wsród Baalsów jest to nadal ten, który ma najwieksza potrzebe czegos nowego i nieznanego.
+		AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_05"); //Nie za nic stoi przy wejsciu do obozu.
 
-		B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cor Angar und Baal Namib könnten sich für die Seereise erwärmen, wie mir Lester verriet.");
+		B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cor Angar i Baal Namib mogli sie rozgrzac do podrózy, jak powiedzial mi Lester.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cor Angar könnte sich für die Seereise erwärmen, wie mir Lester verriet.");
+		B_LogEntry	(TOPIC_MOD_HQ_CREW, "Cor Angar mógl sie rozgrzac do podrózy, jak powiedzial mi Lester.");
 	};
 
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_06"); //Und dann, nun, würde ich mich glücklich schätzen, wenn ich mit von der Partie wäre auf diesem Abenteuer.
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath_13_06"); //A potem, cóz, uwazalbym sie za szczesliwy, gdybym byl czescia tej przygody.
 };
 
 INSTANCE Info_Mod_Lester_Irdorath2 (C_INFO)
@@ -110,7 +110,7 @@ INSTANCE Info_Mod_Lester_Irdorath2 (C_INFO)
 	information	= Info_Mod_Lester_Irdorath2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Dann heiße ich dich hiermit an Bord unseres Schiffes willkommen.";
+	description	= "Wtedy witam Was na pokladzie naszego statku.";
 };
 
 FUNC INT Info_Mod_Lester_Irdorath2_Condition()
@@ -124,10 +124,10 @@ FUNC INT Info_Mod_Lester_Irdorath2_Condition()
 
 FUnc VOID Info_Mod_Lester_Irdorath2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Irdorath2_15_00"); //Dann heiße ich dich hiermit an Bord unseres Schiffes willkommen. Treffpunkt ist der Hafen in Khorinis.
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath2_13_01"); //Großartig. Bis dahin.
+	AI_Output(hero, self, "Info_Mod_Lester_Irdorath2_15_00"); //Wtedy witam Was na pokladzie naszego statku. Miejscem spotkan jest port w Khorinis.
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath2_13_01"); //Wspanialy. Do tego czasu.
 
-	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Sehr gut, mein Weggefährte Lester ist mit an Bord.");
+	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Bardzo dobrze, mój towarzysz Lester jest na pokladzie.");
 
 	B_GivePlayerXP	(150);
 
@@ -159,7 +159,7 @@ INSTANCE Info_Mod_Lester_Irdorath3 (C_INFO)
 	information	= Info_Mod_Lester_Irdorath3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Tut mir leid, aber es scheint das wir zu viele sind.";
+	description	= "Przykro mi, ale wydaje mi sie, ze to zbyt wiele.";
 };
 
 FUNC INT Info_Mod_Lester_Irdorath3_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_Mod_Lester_Irdorath3_Condition()
 
 FUNC VOID Info_Mod_Lester_Irdorath3_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Irdorath3_15_00"); //Tut mir leid, aber es scheint das wir zu viele sind. Ich kann dich doch nicht mitnehmen.
-	AI_Output(self, hero, "Info_Mod_Lester_Irdorath3_13_01"); //Schade. Ich gehe dann wieder zurück ins Minental.
+	AI_Output(hero, self, "Info_Mod_Lester_Irdorath3_15_00"); //Przykro mi, ale wydaje mi sie, ze to zbyt wiele. Nie moge cie zabrac ze soba.
+	AI_Output(self, hero, "Info_Mod_Lester_Irdorath3_13_01"); //Zbyt zle. Wróce do Minentala.
 
 	Mod_LesterDabei = 3;
 
@@ -196,7 +196,7 @@ INSTANCE Info_Mod_Lester_Fanatiker (C_INFO)
 	information	= Info_Mod_Lester_Fanatiker_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hey Lester!";
+	description	= "Hej, Lester!";
 };
 
 FUNC INT Info_Mod_Lester_Fanatiker_Condition()
@@ -211,15 +211,15 @@ FUNC INT Info_Mod_Lester_Fanatiker_Condition()
 
 FUnc VOID Info_Mod_Lester_Fanatiker_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_00"); //Hey Lester!
-	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_01"); //Hallo, mein Freund. Was führt dich zu mir?
-	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_02"); //Weißt du was aus dem Rest der Bruderschaft geworden ist?
-	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_03"); //Nach dem Fall der Barriere? Sie sind nach Khorinis gezogen. Die meisten halten immer noch am Schläfer fest.
-	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_04"); //Hast du 'ne Ahnung wie ich etwas über sie herausfinden könnte?
-	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_05"); //Hmm ... soweit ich weiß ist der ehemalige Templer Cor Gar in Khorinis. Geht in dem Wald auf die Jagd und lebt ihm Hotel. Du triffst ihn sicher abends bei den Wasserpfeifen an.
-	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_06"); //Am besten bringst du ihm auch etwas Sumpfkraut mit, dann wird er dir sicher gerne weiterhelfen. Ach ja, er nennt sich seit dem Fall des Schläfers Josef.
+	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_00"); //Hej, Lester!
+	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_01"); //Witaj, mój przyjaciel. Co cie do mnie sprowadza?
+	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_02"); //Czy wiesz, co sie stalo z reszta braterstwa?
+	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_03"); //Po upadku bariery? Przeniesli sie do Khorinis. Wiekszosc z nich nadal trzyma sie na sypialni.
+	AI_Output(hero, self, "Info_Mod_Lester_Fanatiker_15_04"); //Czy masz jakies wyobrazenie, jak moge sie o niej dowiedziec?
+	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_05"); //Hmm..... o ile mi wiadomo, dawny Templar Cor Gar w Khorinis. Idz na polowanie w lesie i mieszkac go hotel. Jestem pewna, ze wieczorem spotkacie go na hookach.
+	AI_Output(self, hero, "Info_Mod_Lester_Fanatiker_13_06"); //Najlepszym wyjsciem jest przyniesienie mu jakiejs chwasty, a on chetnie ci pomoze. Tak, nazywa sie Józefem od upadku sypialni.
 
-	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Lester hat erzählt, dass die Anhänger des Schläfers nach Khorinis gezogen sind. Ein ehemalgier Templer namens Cor Gar, welcher sich jetzt allerdings Josef nennt, wird mir mehr dazu sagen können - vorausgesetzt ich habe etwas Sumpfkraut für ihn.");
+	B_LogEntry	(TOPIC_MOD_MILIZ_SEKTENSPINNER, "Lester powiedzial, ze przyczepy sypialne przenosza sie dohorynu. Dawny templariusz o imieniu Cor Gar, który teraz nazywa sie Josefem, bedzie mógl mi o tym opowiedziec - pod warunkiem, ze mam dla niego bagnista barszcz.");
 };
 
 INSTANCE Info_Mod_Lester_Sekte (C_INFO)
@@ -230,7 +230,7 @@ INSTANCE Info_Mod_Lester_Sekte (C_INFO)
 	information	= Info_Mod_Lester_Sekte_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Die Bruderschaft existiert noch?";
+	description	= "Bractwo nadal istnieje?";
 };
 
 FUNC INT Info_Mod_Lester_Sekte_Condition()
@@ -243,9 +243,9 @@ FUNC INT Info_Mod_Lester_Sekte_Condition()
 
 FUnc VOID Info_Mod_Lester_Sekte_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Sekte_15_00"); //Die Bruderschaft existiert noch? Ich dachte ihr wolltet unbedingt die Kolonie verlassen?
-	AI_Output(self, hero, "Info_Mod_Lester_Sekte_13_01"); //Ursprünglich wollten wir das, das ist richtig. Doch nachdem die Barriere gefallen ist und wir erfahren haben, was auf dem Festland los ist, haben wir beschlossen im Minental zu bleiben.
-	AI_Output(self, hero, "Info_Mod_Lester_Sekte_13_02"); //Außerdem haben wir hier ein paar Abnehmer für unser Kraut. Das ist in Khorinis sehr beliebt.
+	AI_Output(hero, self, "Info_Mod_Lester_Sekte_15_00"); //Bractwo nadal istnieje? Myslalem, ze zdesperowales sie opuscic kolonie?
+	AI_Output(self, hero, "Info_Mod_Lester_Sekte_13_01"); //Pierwotnie chcielismy, to prawda. Ale po upadku bariery i tym, co dzieje sie na ladzie, postanowilismy pozostac w Minental.
+	AI_Output(self, hero, "Info_Mod_Lester_Sekte_13_02"); //Mamy równiez kilka kupujacych nasze ziola. Jest to bardzo popularne w Khorinis.
 };
 
 INSTANCE Info_Mod_Lester_Aufnehmen (C_INFO)
@@ -256,7 +256,7 @@ INSTANCE Info_Mod_Lester_Aufnehmen (C_INFO)
 	information	= Info_Mod_Lester_Aufnehmen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kann ich mich euch anschließen?";
+	description	= "Czy moge dolaczyc do Ciebie?";
 };
 
 FUNC INT Info_Mod_Lester_Aufnehmen_Condition()
@@ -269,13 +269,13 @@ FUNC INT Info_Mod_Lester_Aufnehmen_Condition()
 
 FUNC VOID Info_Mod_Lester_Aufnehmen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Aufnehmen_15_00"); //Kann ich mich euch anschließen?
-	AI_Output(self, hero, "Info_Mod_Lester_Aufnehmen_13_01"); //Natürlich, aber dazu musst du erst ins Minental. Du solltest auch wissen, dass wir keine der großen Gemeinschaften, wie die Miliz oder die Söldner, sind.
-	AI_Output(self, hero, "Info_Mod_Lester_Aufnehmen_13_02"); //Du kannst uns auch beitreten, wenn du bereits in einer anderen Gemeinschaft bist. Sprich am besten mit Baal Namib, sobald du im Sumpflager ankommst.
+	AI_Output(hero, self, "Info_Mod_Lester_Aufnehmen_15_00"); //Czy moge dolaczyc do Ciebie?
+	AI_Output(self, hero, "Info_Mod_Lester_Aufnehmen_13_01"); //Oczywiscie, ale trzeba najpierw udac sie do Minentala. Powinniscie równiez wiedziec, ze nie jestesmy jedna z wielkich spolecznosci, jak milicja czy najemnicy.
+	AI_Output(self, hero, "Info_Mod_Lester_Aufnehmen_13_02"); //Mozesz równiez dolaczyc do nas, jesli jestes juz w innej spolecznosci. Porozmawiaj z Baalem Namibem, jak tylko dotrzesz do obozu bagiennego.
 
 	Log_CreateTopic	(TOPIC_MOD_SEKTE_AUFNAHME, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SEKTE_AUFNAHME, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich kann mich der Bruderschaft im Minental anschließen. Dazu soll ich mit Baal Namib sprechen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Moge dolaczyc do Bractwa w Minental. Rozmawiam o tym z Baalem Namibem.");
 };
 
 INSTANCE Info_Mod_Lester_Namib (C_INFO)
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Lester_Namib (C_INFO)
 	information	= Info_Mod_Lester_Namib_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Baal Namib schickt mich.";
+	description	= "Baal Namib mnie wyslal.";
 };
 
 FUNC INT Info_Mod_Lester_Namib_Condition()
@@ -299,8 +299,8 @@ FUNC INT Info_Mod_Lester_Namib_Condition()
 
 FUNC VOID Info_Mod_Lester_Namib_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_00"); //Baal Namib schickt mich. Ich soll ein Paket bei dir abholen und es zu Constantino bringen.
-	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_01"); //Sehr gut, dann kann ich mich weiter meinen ... Forschungen widmen.
+	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_00"); //Baal Namib mnie wyslal. Mam odebrac paczke w twoim miejscu i zabrac ja do Constantino.
+	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_01"); //Bardzo dobrze, wiec moge nadal myslec.... przeznaczenie na badania naukowe.
 
 	B_GiveInvItems	(self, hero, ItMi_LesterPaket, 1);
 
@@ -308,13 +308,13 @@ FUNC VOID Info_Mod_Lester_Namib_Info()
 
 	B_UseItem	(self, ItMi_Joint);
 
-	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_02"); //Ich soll außerdem einen Lagebericht abholen.
-	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_03"); //Einen Lagebericht? Wenn das so ist ... dazu brauche ich aber eine Flasche Zauberwasser für ... für ... für das Sumpfkraut!
-	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_04"); //Woher bekomme ich Zauberwasser?
-	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_05"); //Constantino braut es. Du wirst es bei ihm bekommen. Sag ihm, er soll es auf die Rechnung setzen.
-	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_06"); //Na gut.
+	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_02"); //Odbiore równiez raport z postepów.
+	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_03"); //Raport statusowy? Cóz, w takim przypadku..... Do tego potrzebuje butelki magicznej wody do..... dla...... dla chwastów!
+	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_04"); //Skad pochodzi magiczna woda?
+	AI_Output(self, hero, "Info_Mod_Lester_Namib_13_05"); //Browaruje ja Constantino. Otrzymasz go od niego. Powiedz mu, aby umiescil to na rachunku.
+	AI_Output(hero, self, "Info_Mod_Lester_Namib_15_06"); //Wszystkie sluszne, wszystkie sluszne.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Das Paket hab ich, aber für den Lagebericht braucht Lester noch eine Flasche Zauberwasser. Er hat gesagt, dass Constantino das Zauberwasser herstellt und verkauft.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Dostalem pakiet, ale Lester potrzebuje butelki magicznej wody do sprawozdania z sytuacji. Powiedzial, ze Constantino produkuje i sprzedaje magiczna wode.");
 };
 
 INSTANCE Info_Mod_Lester_Zauberwasser (C_INFO)
@@ -325,7 +325,7 @@ INSTANCE Info_Mod_Lester_Zauberwasser (C_INFO)
 	information	= Info_Mod_Lester_Zauberwasser_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier, Zauberwasser.";
+	description	= "Tutaj magiczna woda.";
 };
 
 FUNC INT Info_Mod_Lester_Zauberwasser_Condition()
@@ -338,41 +338,41 @@ FUNC INT Info_Mod_Lester_Zauberwasser_Condition()
 
 FUNC VOID Info_Mod_Lester_Zauberwasser_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_00"); //Hier, Zauberwasser.
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_00"); //Tutaj magiczna woda.
 
 	B_GiveInvItems	(hero, self, ItMi_Zauberwasser, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_01"); //Gut, endlich hab ich mein Zauberwasser.
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_01"); //Dobrze, wreszcie mam moja magiczna wode.
 
 	if (Mod_ConstantinoZauberwasser == 1)
 	{
-		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_02"); //Ich musste arbeiten, um deine Schulden zu bezahlen!
+		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_02"); //Musialem splacic twój dlug!
 	}
 	else if (Mod_ConstantinoZauberwasser == 2)
 	{
-		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_03"); //Ich musste Constantino die Flasche Zauberwasser aus seiner Truhe stehlen.
+		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_03"); //Musialem ukrasc Constantino butelke magicznej wody z jego klatki piersiowej.
 	}
 	else if (Mod_ConstantinoZauberwasser == 3)
 	{
-		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_04"); //Ich musste deine Schulden bei Constantino bezahlen.
+		AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_04"); //Musialem splacic twój dlug konstantynowi.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_05"); //Danke! Das werde ich mir merken.
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_06"); //Wofür brauchst du dieses Zauberwasser eigentlich?
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_07"); //Nun, es gibt nichts Besseres, als einen harten Arbeitstag mit einem Stängel Sumpfkraut und einer Flasche Zauberwasser zu beenden.
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_05"); //Dziekuje! Bede o tym pamietac.
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_06"); //Do czego potrzebujesz tej magicznej wody?
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_07"); //Cóz, nie ma nic innego jak zakonczenie ciezkiej pracy z lodyga bagna i butelka magicznej wody.
 
 	CreateInvItems	(self, ItMi_Joint, 1);
 
 	B_UseItem	(self, ItMi_Joint);
 	B_UseItem	(self, ItMi_Zauberwasser);
 
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_08"); //Warte mal ... das heißt Zauberwasser ist ein Getränk?
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_09"); //(lacht) Was dachtest du denn? Das es so was wie ein Wunderdünger ist?
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_10"); //Du ... ach egal, was ist mit dem Lagebericht?
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_11"); //Ah ja. Sag Baal Namib, dass das Sumpfkraut den Umständen entsprechend sehr gut gedeiht.
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_12"); //Obwohl die Luft nicht feucht genug ist und hier keine Sonne scheint, wächst es sehr gut.
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_08"); //Odczekac minute..... Co oznacza, ze magiczna woda jest napojem?
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_09"); //(smiech) Co sadziles/as? Ze to jak cudowny nawóz?
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_15_10"); //Ty....... A co z raportem o postepach?
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_11"); //Ah tak. Powiedz Baalowi Namibowi, ze lojotok rosnie bardzo dobrze w zaleznosci od okolicznosci.
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_13_12"); //Mimo ze powietrze nie jest wystarczajaco wilgotne i nie ma naslonecznienia, swietnie rosnie.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Ich hab Lester das Zauberwasser gegeben und es hat sich herausgestellt, dass es sich dabei um ein normales Getränk handelt. Jedenfalls hab ich jetzt den Lagebericht und sollte zu Baal Namib zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Dalem Lester magiczna wode i okazalo sie, ze jest to zwykly napój. Tak czy owak, dostalem raport z sytuacji i powinienem powrócic do Baal Namib.");
 
 	B_GivePlayerXP	(150);
 };
@@ -385,7 +385,7 @@ INSTANCE Info_Mod_Lester_Zauberwasser_MIS (C_INFO)
 	information	= Info_Mod_Lester_Zauberwasser_MIS_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe hier jede Menge Zauberwasser.";
+	description	= "Mam tu mnóstwo magicznej wody.";
 };
 
 FUNC INT Info_Mod_Lester_Zauberwasser_MIS_Condition()
@@ -398,14 +398,14 @@ FUNC INT Info_Mod_Lester_Zauberwasser_MIS_Condition()
 
 FUNC VOID Info_Mod_Lester_Zauberwasser_MIS_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_00"); //Ich habe hier jede Menge Zauberwasser.
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_01"); //Wo hast du es her?
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_02"); //Constantino wollte, dass ich es an verschiedene Händler verteile, um deine Schulden abzuarbeiten.
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_03"); //Äh ... dann liefere das Zauberwasser besser aus und bring mir nur eine, wenn du damit fertig bist.
-	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_04"); //Bist du sicher, dass du keine von denen hier willst?
-	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_05"); //Ja, wer weiß, was Constantino mit uns anstellt, wenn wir uns an seiner Lieferung vergreifen.
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_00"); //Mam tu mnóstwo magicznej wody.
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_01"); //Gdzie dostales?
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_02"); //Constantino chcialem, abym wreczyl je róznym dealerom, aby umorzyc twój dlug.
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_03"); //Uh.... i przyprowadz mnie, gdy juz z tym zrobisz.
+	AI_Output(hero, self, "Info_Mod_Lester_Zauberwasser_MIS_15_04"); //Na pewno nie chcesz zadnego z nich?
+	AI_Output(self, hero, "Info_Mod_Lester_Zauberwasser_MIS_13_05"); //Tak, kto wie, co Constantino uczyni dla nas, jesli my pójdziemy zle z jego dostawy.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Lester wollte kein Zauberwasser von den Lieferungen, die ich für Constantino ausliefern soll. Ich muss sie also wohl wirklich wegbringen und mir die Flasche Zauberwasser von Constantino verdienen.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Lester nie chcial magicznej wody z przesylek, które mialem dostarczyc do Constantino. Wiec naprawde musze je zabrac i zarobic butelke magicznej wody z Constantino.");
 };
 
 INSTANCE Info_Mod_Lester_Treffen (C_INFO)
@@ -416,7 +416,7 @@ INSTANCE Info_Mod_Lester_Treffen (C_INFO)
 	information	= Info_Mod_Lester_Treffen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Gorn schickt mich.";
+	description	= "Gorn wyslal mnie.";
 };
 
 FUNC INT Info_Mod_Lester_Treffen_Condition()
@@ -429,10 +429,10 @@ FUNC INT Info_Mod_Lester_Treffen_Condition()
 
 FUNC VOID Info_Mod_Lester_Treffen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Treffen_15_00"); //Gorn schickt mich. Ich soll dir sagen, dass ihr euch in der Taverne 'Zur Toten Harpie' trefft.
-	AI_Output(self, hero, "Info_Mod_Lester_Treffen_13_01"); //Oh, danke. Ich mach mich sofort auf den Weg. Du kannst doch auch vorbeikommen, du gehörst schließlich auch zu uns.
+	AI_Output(hero, self, "Info_Mod_Lester_Treffen_15_00"); //Gorn wyslal mnie. Powinienem powiedziec Wam, zebyscie spotkali sie w tawernie Dead Harpie.
+	AI_Output(self, hero, "Info_Mod_Lester_Treffen_13_01"); //Dziekuje, dziekuje. Bede w drodze od razu. W koncu jestes jednym z nas.
 
-	B_LogEntry	(TOPIC_MOD_TREFFEN, "Ich habe Lester vom Treffen bescheid gesagt, er wird sich sofort dorthin begeben.");
+	B_LogEntry	(TOPIC_MOD_TREFFEN, "Opowiedzialem Lesterowi o spotkaniu, on natychmiast tam pojedzie.");
 
 	AI_StopProcessInfos	(self);
 
@@ -451,7 +451,7 @@ INSTANCE Info_Mod_Lester_Karras (C_INFO)
 	information	= Info_Mod_Lester_Karras_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll dir Bescheid geben, dass du ins Minental kannst.";
+	description	= "Chcesz, abym dal ci znac, ze mozesz udac sie do Minental.";
 };
 
 FUNC INT Info_Mod_Lester_Karras_Condition()
@@ -464,10 +464,10 @@ FUNC INT Info_Mod_Lester_Karras_Condition()
 
 FUNC VOID Info_Mod_Lester_Karras_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Karras_15_00"); //Ich soll dir Bescheid geben, dass du ins Minental kannst.
-	AI_Output(self, hero, "Info_Mod_Lester_Karras_13_01"); //Wurde auch Zeit, dieses Höhlenleben bekommt mir nicht gut.
+	AI_Output(hero, self, "Info_Mod_Lester_Karras_15_00"); //Chcesz, abym dal ci znac, ze mozesz udac sie do Minental.
+	AI_Output(self, hero, "Info_Mod_Lester_Karras_13_01"); //Nadszedl czas, to zycie w jaskini nie robi mi nic dobrego.
 
-	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Lester wird jetzt ins Minental zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Lester powróci teraz do Minentala.");
 
 	AI_StopProcessInfos	(self);
 
@@ -482,7 +482,7 @@ INSTANCE Info_Mod_Lester_Crawlersekret (C_INFO)
 	information	= Info_Mod_Lester_Crawlersekret_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Weißt du, wo es Minecrawler-Sekret gibt?";
+	description	= "Czy wiesz, gdzie jest sekretarz Minecrawler?";
 };
 
 FUNC INT Info_Mod_Lester_Crawlersekret_Condition()
@@ -497,12 +497,12 @@ FUNC INT Info_Mod_Lester_Crawlersekret_Condition()
 
 FUNC VOID Info_Mod_Lester_Crawlersekret_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_00"); //Weißt du, wo es Minecrawler-Sekret gibt?
-	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_01"); //Minecrawler-Sekret? Cor Kalom hat es früher aus den Zangen der Minecrawler extrahiert.
-	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_02"); //Ich brauche stärkeres Sekret als das der Zangen.
-	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_03"); //Wie das aus den Eiern der Königin, welche du uns damals gebracht hast?
-	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_04"); //Genau das.
-	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_05"); //Dann solltest du dir Eier besorgen und das Sekret abfüllen. Wenn du Glück hast, gibt es im Lager auch noch bereits abgefülltes Sekret.
+	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_00"); //Czy wiesz, gdzie jest sekretarz Minecrawler?
+	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_01"); //Sekretariat Minekrawerów? Cor Kalom wydobywal ja z szczypiec miniwalników.
+	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_02"); //Potrzebuje silniejszego wydzielania niz kleszcze.
+	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_03"); //W ten sposób z kul królowej przywiózles nas z powrotem?
+	AI_Output(hero, self, "Info_Mod_Lester_Crawlersekret_15_04"); //To tylko to.
+	AI_Output(self, hero, "Info_Mod_Lester_Crawlersekret_13_05"); //Nastepnie powinienes dostac jajka i wypelnic tajemnice. Jesli masz szczescie, w obozie jest tez wydzielina wypchana.
 };
 
 INSTANCE Info_Mod_Lester_ZeichenDerBruderschaft (C_INFO)
@@ -525,11 +525,11 @@ FUNC INT Info_Mod_Lester_ZeichenDerBruderschaft_Condition()
 
 FUNC VOID Info_Mod_Lester_ZeichenDerBruderschaft_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_ZeichenDerBruderschaft_13_00"); //Was sehe ich da? Du trägst das Zeichen der alten Bruderschaft bei dir? Ich denke, ich nehme es mal besser an mich.
+	AI_Output(self, hero, "Info_Mod_Lester_ZeichenDerBruderschaft_13_00"); //Na co patrze? Przynosisz znak starego braterstwa z wami? Mysle, ze lepiej bym to sobie wzial.
 
 	B_GiveInvItems	(hero, self, ItMi_ZeichenDerBruderschaft, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lester_ZeichenDerBruderschaft_13_01"); //Unter der Bruderschaft gibt es nämlich immer noch vereinzelte Fanatiker, die es als Provokation ansehen könnten, wenn du dieses Zeichen bei dir trägst.
+	AI_Output(self, hero, "Info_Mod_Lester_ZeichenDerBruderschaft_13_01"); //Pod Bractwem jest jeszcze kilku fanatyków, którzy moga postrzegac to jako prowokacje, jesli nosicie ten znak razem z wami.
 
 	B_GivePlayerXP	(150);
 };
@@ -542,7 +542,7 @@ INSTANCE Info_Mod_Lester_WillstMitMir (C_INFO)
 	information	= Info_Mod_Lester_WillstMitMir_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du nicht mit mir mitkommen?";
+	description	= "Nie chcesz przyjechac do mnie?";
 };
 
 FUNC INT Info_Mod_Lester_WillstMitMir_Condition()
@@ -555,8 +555,8 @@ FUNC INT Info_Mod_Lester_WillstMitMir_Condition()
 
 FUNC VOID Info_Mod_Lester_WillstMitMir_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_WillstMitMir_15_00"); //Willst du nicht mit mir mitkommen?
-	AI_Output(self, hero, "Info_Mod_Lester_WillstMitMir_13_01"); //Der Auftrag ist für das Sumpflager extrem wichtig, davon kann ich mich nicht ohne Weiteres lossagen. Wenn es was Dringendes gibt, stehe ich dir natürlich zur Seite.
+	AI_Output(hero, self, "Info_Mod_Lester_WillstMitMir_15_00"); //Nie chcesz przyjechac do mnie?
+	AI_Output(self, hero, "Info_Mod_Lester_WillstMitMir_13_01"); //Zadanie jest niezwykle wazne dla obozu bagiennego, nie moge sie go pozbyc bez dalszych ado. Jesli jest cos pilnego, oczywiscie bede przy Tobie stal.
 };
 
 INSTANCE Info_Mod_Lester_GornDiegoMilten (C_INFO)
@@ -567,7 +567,7 @@ INSTANCE Info_Mod_Lester_GornDiegoMilten (C_INFO)
 	information	= Info_Mod_Lester_GornDiegoMilten_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Was ist aus Gorn, Diego und Milten geworden?";
+	description	= "Co sie stalo z Gorn, Diego i Milten?";
 };
 
 FUNC INT Info_Mod_Lester_GornDiegoMilten_Condition()
@@ -580,11 +580,11 @@ FUNC INT Info_Mod_Lester_GornDiegoMilten_Condition()
 
 FUNC VOID Info_Mod_Lester_GornDiegoMilten_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_GornDiegoMilten_15_00"); //Was ist aus Gorn, Diego und Milten geworden?
-	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_01"); //Nach dem Fall der Barriere haben wir uns beraten, was zu tun sei. Milten hat vorgeschlagen, dass wir eine eigene Gruppierung gründen könnten, die sich als Mittler zwischen den Sträflingen aus dem Minental und den Gilden in Khorinis ansieht.
-	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_02"); //Na ja, manchmal ist er eben doch ein wenig naiv. Diego hat es ihm gleich ausgeredet, und wir haben beschlossen, dass jeder fürs Erste selbst sein Glück suchen soll.
-	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_03"); //Und so ist es dann gekommen: Milten wollte zu den Feuermagiern, Gorn hat sich einigen seiner Freunde angeschlossen, um sich als Söldner zu verdingen, und Diego hat mich nach Khorinis begleitet.
-	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_04"); //Nach meinem letzten Stand ist er da auch geblieben.
+	AI_Output(hero, self, "Info_Mod_Lester_GornDiegoMilten_15_00"); //Co sie stalo z Gorn, Diego i Milten?
+	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_01"); //Po upadku bariery rozmawialismy o tym, co nalezy zrobic. Milten zasugerowal, ze mozemy zalozyc wlasne ugrupowanie, które postrzega siebie jako posrednika miedzy skazanymi z Doliny Kopalni a cechami w Khorinis.
+	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_02"); //No cóz, czasem jest on przeciez troche naiwny. Diego natychmiast wymówil go z tego, a my zdecydowalismy, ze kazdy powinien na razie szukac wlasnego szczescia.
+	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_03"); //I tak sie stalo: Milten chcial dolaczyc do magików strazy pozarnej, Gorn dolaczyl do kilku swoich przyjaciól, by sluzyc jako najemnik, a Diego towarzyszyl mi w Khorinis.
+	AI_Output(self, hero, "Info_Mod_Lester_GornDiegoMilten_13_04"); //Ostatnio sprawdzilem, on tam zostal.
 };
 
 INSTANCE Info_Mod_Lester_DefenseBreak (C_INFO)
@@ -610,11 +610,11 @@ FUNC INT Info_Mod_Lester_DefenseBreak_Condition()
 
 FUNC VOID Info_Mod_Lester_DefenseBreak_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_00"); //Hey! Gestern Abend hab ich zu viel Sumpfkraut geraucht, und da ist mir in der Nacht ein System eingefallen, wie man blockende Gegner überwinden kann.
-	AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak_15_01"); //Du denkst über Sachen nach ...
-	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_02"); //Ich war zu dem Zeitpunkt nicht zurechnungsfähig!
-	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_03"); //Ich habe auch andere Sachen geträumt, von denen willst du gar nichts wissen.
-	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_04"); //Wie dem auch sei: Wenn du willst, sage ich dir, wie die Technik funktioniert.
+	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_00"); //Hej! Wczoraj wieczorem palilem zbyt duza ambrozje bagnista i tam mialem nocny system, jak przezwyciezyc blokowanie wrogów.
+	AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak_15_01"); //Myslisz o rzeczach.....
+	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_02"); //Nie bylem wtedy zdenerwowany!
+	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_03"); //Marzylem o innych rzeczach, nie chcesz nic wiedziec o nich.
+	AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak_12_04"); //W kazdym razie, jesli chcesz, opowiem ci jak dziala ta technika.
 };
 
 INSTANCE Info_Mod_Lester_DefenseBreak2 (C_INFO)
@@ -631,11 +631,11 @@ FUNC INT Info_Mod_Lester_DefenseBreak2_Condition()
 {
 	if (Mod_Schwierigkeit == 4)
 	{
-		Info_Mod_Lester_DefenseBreak2.description = "Wie kann ich einen Block brechen? (500 Gold)";
+		Info_Mod_Lester_DefenseBreak2.description = "Jak moge zlamac blok? (500 zloto)";
 	}
 	else
 	{
-		Info_Mod_Lester_DefenseBreak2.description = "Wie kann ich einen Block brechen? (5 LP)";
+		Info_Mod_Lester_DefenseBreak2.description = "Jak moge zlamac blok? (5 LP)";
 	};
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Lester_DefenseBreak))
@@ -647,19 +647,19 @@ FUNC INT Info_Mod_Lester_DefenseBreak2_Condition()
 
 FUNC VOID Info_Mod_Lester_DefenseBreak2_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_00"); //Wie kann ich einen Block brechen?
+	AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_00"); //Jak moge zlamac blok?
 
 	if ((Mod_Schwierigkeit == 4)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 500))
 	|| ((Mod_Schwierigkeit != 4)
 	&& (hero.lp >= 5))
 	{
-		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_01"); //Du musst den Gegner glauben lassen, dass du auf seine Beine zielst.
-		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_02"); //Dein Blick und deine Körperstellung muss ganz darauf ausgerichtet sein.
-		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_03"); //Im letzten Moment ziehst du das Schwert hoch. Wenn du Finte klappt, ist sein Oberkörper ungeschützt.
-		AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_04"); //Das wird aber sicher nicht jedes Mal klappen.
-		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_05"); //Wenn du ein besseres Rezept kennst ...
-		AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_06"); //Schon gut. Danke für den Ratschlag.
+		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_01"); //Musisz sprawic, aby nieprzyjaciel uwierzyl, ze zmierzasz do jego nóg.
+		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_02"); //Twoje spojrzenie i pozycja ciala musza byc calkowicie skupione na nim.
+		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_03"); //W ostatniej chwili pociagnac za miecz. Jesli zrobisz sztuczke, jego tulów nie bedzie chroniony.
+		AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_04"); //Nie za kazdym razem bedzie to jednak dzialac.
+		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_05"); //Jesli znasz lepszy przepis.....
+		AI_Output(hero, self, "Info_Mod_Lester_DefenseBreak2_15_06"); //Wszystkie sluszne, wszystkie sluszne. Dziekujemy za rade.
 
 		DefenseBreak_Perk = TRUE;
 
@@ -674,7 +674,7 @@ FUNC VOID Info_Mod_Lester_DefenseBreak2_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_07"); //Komm wieder, wenn du bereit bist.
+		AI_Output(self, hero, "Info_Mod_Lester_DefenseBreak2_12_07"); //Wróc do domu, gdy bedziesz gotowy.
 	};
 };
 
@@ -813,5 +813,5 @@ FUNC VOID Info_Mod_Lester_EXIT_Info()
 {
 	AI_StopProcessInfos	(self);
 
-	AI_Output(self, hero, "Info_Mod_Lester_EXIT_13_00"); //Dem Ziel entgegen!
+	AI_Output(self, hero, "Info_Mod_Lester_EXIT_13_00"); //Do celu!
 };

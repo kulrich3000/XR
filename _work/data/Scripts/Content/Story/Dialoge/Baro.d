@@ -18,15 +18,15 @@ FUNC INT Info_Mod_Baro_Hi_Condition()
 
 FUNC VOID Info_Mod_Baro_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_00"); //Wer stört mich bei meiner Arbeit?
-	AI_Output(hero, self, "Info_Mod_Baro_Hi_15_01"); //Du arbeitest sehr hart, warum gönnst du dir nicht mal eine Pause?
-	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_02"); //Weil ich dann noch länger hier draußen bin.
-	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_03"); //Ich bin für die Holzversorgung des Dorfs zuständig. Das bedeutet auch im Winter noch Bäume zu fällen.
-	AI_Output(hero, self, "Info_Mod_Baro_Hi_15_04"); //Scheint so, dass du mit deiner Arbeit für dieses Jahr fertig wärst. Der Kommander will dich sprechen.
-	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_05"); //Endlich, ich habe schon gedacht ich erfriere, obwohl ich dafür sorge das alle es warm haben.
-	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_06"); //Wenn du wieder in das Dorf kommt, schau gerne bei mir vorbei, ich mache das beste Bier hier.
+	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_00"); //Kto przerywa moja prace?
+	AI_Output(hero, self, "Info_Mod_Baro_Hi_15_01"); //Pracujesz bardzo ciezko, dlaczego nie robisz przerwy?
+	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_02"); //Poniewaz bede tu dluzej.
+	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_03"); //Jestem odpowiedzialny za zaopatrzenie wsi w drewno. Oznacza to równiez wycinanie drzew zima.
+	AI_Output(hero, self, "Info_Mod_Baro_Hi_15_04"); //Wyglada na to, ze wykonales swoja prace w tym roku. Dowódca chce cie zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_05"); //W koncu myslalam, ze zamarznalem na smierc, mimo ze czulam sie cieplo.
+	AI_Output(self, hero, "Info_Mod_Baro_Hi_04_06"); //Kiedy wrócisz do wioski, poczuj sie swobodnie, zeby wstapic na mnie, a ja zrobie tutaj najlepsze piwo.
 
-	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Baro wird jetzt erstmal wieder ins Dorf zurückkehren.");
+	B_LogEntry	(TOPIC_MOD_EIS_RAUESCHNEIDE, "Baro wróci teraz do wsi.");
 
 	B_StartOtherRoutine	(self, "DORF");
 };
@@ -51,19 +51,19 @@ FUNC INT Info_Mod_Baro_Orkring_Condition()
 
 FUNC VOID Info_Mod_Baro_Orkring_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_00"); //Ah, ausgezeichnet. Ich freue mich, dich zu sehen. Ich muss mit dir über die Orks reden.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_01"); //Anfangs waren es noch sehr wenige. Sie kammen aus den Bergen und gehörten einer sehr alten Kaste der Orks an.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_02"); //Aber wie es aussieht haben sie in den tiefen der umliegenden Berge eine alte Macht entflammt.
-	AI_Output(hero, self, "Info_Mod_Baro_Orkring_15_03"); //Warum weißt du soviel über diese Orks? Du scheinst der Einzige zu sein.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_04"); //Ich habe einen speziellen Freund. Meine Familie kennt ihn schon sehr lange.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_05"); //Als wir noch im Gebirge lebten, wohnten wir direkt neben seiner Orkhöhle.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_06"); //Wir sind zusammen groß geworden und ich erfahre viel von ihm über die Orks.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_07"); //Sein Name ist Garunh und er lebt in einem Orkzelt auf der anderen Seite des Berges. Ich muss mit ihm über die hohe Anzahl der Orks reden.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_08"); //Dann wird er auch bestimmt deine Fragen beantworten.
-	AI_Output(hero, self, "Info_Mod_Baro_Orkring_15_09"); //Wenn dein Freund soviel weiß, dann sollten wir ihn nicht warten lassen.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_10"); //Perfekt, ich habe ihm schon eine Nachricht geschickt. Er wird uns erwarten. Folge mir.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_00"); //Ah, swietnie. Ciesze sie, ze moge Cie zobaczyc. Musze porozmawiac z panstwem o orkach.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_01"); //Na poczatku bylo ich bardzo niewiele. Pochodzili z gór i nalezeli do bardzo starej kasty orków.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_02"); //Wyglada jednak na to, ze w glebi okolicznych gór zapalila sie stara moc.
+	AI_Output(hero, self, "Info_Mod_Baro_Orkring_15_03"); //Skad tak wiele wiesz o tych orkach? Wydaje sie, ze jest pan jedynym.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_04"); //Mam specjalnego przyjaciela. Rodzina zna go od dawna.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_05"); //Kiedy jeszcze zylismy w górach, mieszkalismy obok jego groty orkowej.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_06"); //Dorastalismy razem i wiele sie od niego ucze o orkach.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_07"); //Nazywa sie Garunh i mieszka w namiocie orkowym po drugiej stronie góry. Musze z nim porozmawiac o duzej liczbie orków.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_08"); //Wtedy z pewnoscia odpowie na Panstwa pytania.
+	AI_Output(hero, self, "Info_Mod_Baro_Orkring_15_09"); //Jesli Twój chlopak wie o tym duzo, nie powinnismy go czekac.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring_04_10"); //Doskonale, juz wyslalem mu wiadomosc. Bedzie nas oczekiwal. Podazaj za mna, idz za mna.
 
-	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Baro bezieht seine Informationen über die Orks von einem Ork namens Garunh. Er wird mich zu ihm führen.");
+	B_LogEntry	(TOPIC_MOD_EIS_ORKRING, "Baro otrzymuje informacje o orkach od orka o nazwisku Garunh. On mnie do niego poprowadzi.");
 
 	AI_StopProcessInfos	(self);
 
@@ -91,7 +91,7 @@ FUNC INT Info_Mod_Baro_Orkring2_Condition()
 
 FUNC VOID Info_Mod_Baro_Orkring2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring2_04_00"); //Warte einen Moment. Ich sage ihm Bescheid, das noch jemand dabei ist.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring2_04_00"); //Trzymac przez sekunde. Daje mu znac, ze jest jeszcze ktos inny.
 
 	AI_GotoNpc	(self, Mod_10045_Orc_Garunh_EIS);
 
@@ -100,7 +100,7 @@ FUNC VOID Info_Mod_Baro_Orkring2_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring2_04_01"); //Er ist bereit mit dir zu reden. Folge mir in sein Zelt.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring2_04_01"); //Jest gotów porozmawiac z Toba. Sledz mnie do jego namiotu.
 
 	AI_StopProcessInfos	(self);
 };
@@ -125,8 +125,8 @@ FUNC INT Info_Mod_Baro_Orkring3_Condition()
 
 FUNC VOID Info_Mod_Baro_Orkring3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring3_04_00"); //Ich gehe zum Dorf zurück. Wenn du Garunh geholfen hast, komm zu meinem Haus. Ich lade dich zum Essen ein.
-	AI_Output(self, hero, "Info_Mod_Baro_Orkring3_04_01"); //In den kalten Wintermonaten sollte man nicht an Hunger leiden.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring3_04_00"); //Wracam do wsi. Jesli pomagales Garunhowi, przyjdz do mojego domu. Kupie Ci obiad.
+	AI_Output(self, hero, "Info_Mod_Baro_Orkring3_04_01"); //W mroznych miesiacach zimowych nie nalezy cierpiec glodu.
 
 	AI_StopProcessInfos	(self);
 
@@ -153,21 +153,21 @@ FUNC INT Info_Mod_Baro_UntoteOrks_Condition()
 
 FUNC VOID Info_Mod_Baro_UntoteOrks_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_00"); //Ah, du bist zurück. Konntest du Garunh helfen und noch wichtiger: Was hat er dir über die Orks am Pass erzählt?
-	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_01"); //So wie es aussieht haben wir es mit toten Orks zu tun.
-	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_02"); //Ein Schamane Namens Asek hat anscheinend seine Leute vom Friedhof rekrutiert.
-	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_03"); //Garunh wußte allerdings auch nicht, wo der Tempel ist, in dem sich Asek aufhält.
-	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_04"); //Wir brauchen einen Ork-Anfüher, den wir verhören können, und Garunh meinte du kennst jemanden, der die Orksprache beherrscht.
-	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_05"); //Ich kenne jemanden, aber bevor du ihn aufsuchst, solltest du zu Willingham gehen.
-	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_06"); //Der Mann, den du suchst, heißt Melchior und untersteht dem Kommander. Er wird auch wissen, wo er stationiert ist.
-	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_07"); //Das Essen sollten wir verschieben. Hier, nimm eins meiner Biere und ein Stück Schinken, damit du mir nicht umfällst.
+	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_00"); //Ach, wróciles. Czy móglbys pomóc Garunhowi i co wazniejsze, co powiedzial o Orkach na przeleczy?
+	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_01"); //Wyglada na to, ze mamy do czynienia z martwymi orkami.
+	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_02"); //Widocznie szaman o imieniu Asek zatrudnil swoich ludzi z cmentarza.
+	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_03"); //Garunh nie wiedzial gdzie jest swiatynia, w której Asek.
+	AI_Output(hero, self, "Info_Mod_Baro_UntoteOrks_15_04"); //Potrzebujemy orkowego lidera, którego mozemy przesluchac, a Garunh powiedzial, ze znasz kogos, kto mówi jezykiem orkowym.
+	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_05"); //Znam kogos, ale zanim pójdziesz do niego, powinienes udac sie do Willingham.
+	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_06"); //Czlowiek, którego szukasz, nazywa sie Melchior i podlega dowódcy. Bedzie tez wiedzial, gdzie sie znajduje.
+	AI_Output(self, hero, "Info_Mod_Baro_UntoteOrks_04_07"); //Powinnismy odlozyc kolacje. Tutaj wez jedno z moich piwa i kawalek szynki, zebys na mnie nie spadl.
 
 	CreateInvItems	(hero, ItFo_Beer, 1);
 	CreateInvItems	(hero, ItFo_Bacon, 1);
 
-	B_ShowGivenThings	("Bier und Schinken erhalten");
+	B_ShowGivenThings	("Piwo i szynka konserwowane");
 
-	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Meine gesuchte Kontaktperson heißt Melchior und untersteht Kommander Willingham. Ich sollte also zuerst mit diesem sprechen.");
+	B_LogEntry	(TOPIC_MOD_EIS_UNTOTEORKS, "Moja poszukiwana osoba kontaktowa jest Melchior i podlega dowódcy Willingham. Powinienem wiec najpierw porozmawiac na ten temat.");
 };
 
 INSTANCE Info_Mod_Baro_Heiltrank (C_INFO)
@@ -178,7 +178,7 @@ INSTANCE Info_Mod_Baro_Heiltrank (C_INFO)
 	information	= Info_Mod_Baro_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Heiltrank geben)";
+	description	= "(goraczka lecznicza)";
 };
 
 FUNC INT Info_Mod_Baro_Heiltrank_Condition()
@@ -197,31 +197,31 @@ FUNC VOID Info_Mod_Baro_Heiltrank_Info()
 
 	if (Npc_HasItems(hero, ItPo_Health_Addon_04) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Essenz der Heilung", Info_Mod_Baro_Heiltrank_Health_04);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Istota uzdrawiania", Info_Mod_Baro_Heiltrank_Health_04);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Elixier der Heilung", Info_Mod_Baro_Heiltrank_Health_03);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Eliksir uzdrawiania", Info_Mod_Baro_Heiltrank_Health_03);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_02) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Extrakt der Heilung", Info_Mod_Baro_Heiltrank_Health_02);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Ekstrakt z ekstraktu leczniczego", Info_Mod_Baro_Heiltrank_Health_02);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Essenz der Heilung", Info_Mod_Baro_Heiltrank_Health_01);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Istota uzdrawiania", Info_Mod_Baro_Heiltrank_Health_01);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_07) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Trank der leichten Heilung", Info_Mod_Baro_Heiltrank_Health_07);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Napój lekkiego leczenia", Info_Mod_Baro_Heiltrank_Health_07);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_06) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Leichter Heiltrank", Info_Mod_Baro_Heiltrank_Health_06);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Lekki eliksir leczniczy", Info_Mod_Baro_Heiltrank_Health_06);
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Trank der schnellen Heilung", Info_Mod_Baro_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Baro_Heiltrank, "Napoje szybko lecznicze", Info_Mod_Baro_Heiltrank_Health_05);
 	};
 };
 

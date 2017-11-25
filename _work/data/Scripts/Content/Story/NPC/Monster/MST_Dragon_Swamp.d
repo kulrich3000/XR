@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Sumpfdrache";
+	name							=	"bagno smok";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_SWAMP;
 	level							=	300;
@@ -76,7 +76,7 @@ func void B_SetVisuals_Dragon_Swamp()
 //*****************
 INSTANCE Dragon_Swamp	(Mst_Default_Dragon_Swamp)
 {
-	name		=	"Pandrodor";
+	name		=	"Pandrodrodor";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	fight_tactic	=	FAI_DRAGON;
 	B_SetVisuals_Dragon_Swamp();
@@ -87,7 +87,7 @@ INSTANCE Dragon_Swamp	(Mst_Default_Dragon_Swamp)
 
 INSTANCE SwampDragon	(Mst_Default_Dragon_Swamp)
 {
-	name		=	"Sumpfdrache";
+	name		=	"bagno smok";
 	//flags				   			= 	NPC_FLAG_IMMORTAL;
 	fight_tactic	=	FAI_DRAGON;
 	B_SetVisuals_Dragon_Swamp();

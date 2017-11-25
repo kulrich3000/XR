@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Ursula_Hi (C_INFO)
 	information	= Info_Mod_Ursula_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Ursula_Hi_Condition()
@@ -18,10 +18,10 @@ FUNC VOID Info_Mod_Ursula_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Ursula_Hi_17_00"); //Schau dich doch mal um! Ich bin die Gerberin.
+	AI_Output(self, hero, "Info_Mod_Ursula_Hi_17_00"); //Rozejrzyj sie dookola! Jestem zarodnikiem.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Ursula, die Gerberin, kann mit mir handeln.");
+	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Ursula, tannereczka, moze handlowac ze mna.");
 };
 
 INSTANCE Info_Mod_Ursula_Aufgabe (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Ursula_Aufgabe (C_INFO)
 	information	= Info_Mod_Ursula_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Suchst du noch Felle?";
+	description	= "Nadal szukasz futer?";
 };
 
 FUNC INT Info_Mod_Ursula_Aufgabe_Condition()
@@ -45,33 +45,33 @@ FUNC INT Info_Mod_Ursula_Aufgabe_Condition()
 
 FUNC VOID Info_Mod_Ursula_Aufgabe_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_15_00"); //Suchst du noch Felle?
-	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_01"); //Sicher doch! Ich nehme dir deine Felle für gute Preise ab, ist immer noch günstiger, als wenn ich sie bei den Wucherern vom Marktplatz kaufe.
-	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_02"); //Ich benötige auch noch dringend Schafsfelle. Davon gibt's nämlich hier nur wenige.
-	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_03"); //Für 15 Schafsfelle würde ich dir eine großzügige Belohnung auszahlen. Was meinst du?
+	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_15_00"); //Nadal szukasz futer?
+	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_01"); //Oczywiscie robisz! Zdejmuje twój skórek za dobra cene, jest jeszcze tanszy niz kupujac je u sprzedawców na rynku.
+	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_02"); //Pilnie potrzebuje równiez kozuchów. Jest ich tylko kilka.
+	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_17_03"); //Za 15 jagniat zaplace Ci wspaniala nagrode. Co myslisz?
 
 	Info_ClearChoices	(Info_Mod_Ursula_Aufgabe);
 
-	Info_AddChoice	(Info_Mod_Ursula_Aufgabe, "Das wäre mir zu anstrengend.", Info_Mod_Ursula_Aufgabe_B);
-	Info_AddChoice	(Info_Mod_Ursula_Aufgabe, "Ich kümmere mich darum.", Info_Mod_Ursula_Aufgabe_A);
+	Info_AddChoice	(Info_Mod_Ursula_Aufgabe, "To byloby zbyt duzym klopotem.", Info_Mod_Ursula_Aufgabe_B);
+	Info_AddChoice	(Info_Mod_Ursula_Aufgabe, "Zajme sie tym.", Info_Mod_Ursula_Aufgabe_A);
 };
 
 FUNC VOID Info_Mod_Ursula_Aufgabe_B()
 {
-	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_B_15_00"); //Das wäre mir zu anstrengend.
+	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_B_15_00"); //To byloby zbyt duzym klopotem.
 
 	Info_ClearChoices	(Info_Mod_Ursula_Aufgabe);
 };
 
 FUNC VOID Info_Mod_Ursula_Aufgabe_A()
 {
-	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_A_15_00"); //Ich kümmere mich darum.
-	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_A_17_01"); //(ironisch) Aber nicht wildern gehen, klar?
-	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_A_15_02"); //Würde ich nicht im Traum drauf kommen.
+	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_A_15_00"); //Zajme sie tym.
+	AI_Output(self, hero, "Info_Mod_Ursula_Aufgabe_A_17_01"); //Ale czy nie idzcie dziko, dobrze?
+	AI_Output(hero, self, "Info_Mod_Ursula_Aufgabe_A_15_02"); //Nie marzylbym o tym.
 
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_SCHAFSFELLE, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_SCHAFSFELLE, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_SCHAFSFELLE, "Ursula, die Gerberin in Khorata, sucht dringend nach Schafsfellen. Für 15 Stück würde sie mich gut entlohnen.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_SCHAFSFELLE, "Ursula, tanneczka w Khoracie, pilnie poszukuje kozuchów. Ona placilaby mi dobrze za 15 z nich.");
 
 	Mod_Ursula_SchafsfellQuest = 1;
 
@@ -86,7 +86,7 @@ INSTANCE Info_Mod_Ursula_HabSchafsfelle (C_INFO)
 	information	= Info_Mod_Ursula_HabSchafsfelle_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hier hast du deine Felle.";
+	description	= "Oto Twoja skóra.";
 };
 
 FUNC INT Info_Mod_Ursula_HabSchafsfelle_Condition()
@@ -101,7 +101,7 @@ FUNC INT Info_Mod_Ursula_HabSchafsfelle_Condition()
 
 FUNC VOID Info_Mod_Ursula_HabSchafsfelle_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ursula_HabSchafsfelle_15_00"); //Hier hast du deine Felle.
+	AI_Output(hero, self, "Info_Mod_Ursula_HabSchafsfelle_15_00"); //Oto Twoja skóra.
 
 	var int fellcounter;
 	fellcounter = 0;
@@ -129,11 +129,11 @@ FUNC VOID Info_Mod_Ursula_HabSchafsfelle_Info()
 		};
 	};
 
-	AI_Output(self, hero, "Info_Mod_Ursula_HabSchafsfelle_17_01"); //Das reicht, danke. Vielleicht hast du noch weiter Lust zu handeln ...?
+	AI_Output(self, hero, "Info_Mod_Ursula_HabSchafsfelle_17_01"); //To wystarczy, dziekuje. Moze chcialbys dzialac jeszcze bardziej....?
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_SCHAFSFELLE, "Ich habe die Felle übergeben und meine Bezahlung erhalten.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_SCHAFSFELLE, "Przekazalem skóry i otrzymalem zaplate.");
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_SCHAFSFELLE, LOG_SUCCESS);
 
 	B_GivePlayerXP	(100);

@@ -1,7 +1,7 @@
 instance Mod_101_BAU_Balthasar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Balthasar";
+	name 		= "Balthazar";
 	guild 		= GIL_NONE;
 	id 			= 101;
 	voice 		= 5;

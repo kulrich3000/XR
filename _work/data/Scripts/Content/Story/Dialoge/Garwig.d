@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Garwig_Hi (C_INFO)
 	information	= Info_Mod_Garwig_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Garwig_Hi_Condition()
@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Garwig_Hi_Condition()
 FUNC VOID Info_Mod_Garwig_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
-	AI_Output(self, hero, "Info_Mod_Garwig_Hi_06_01"); //Ich bin Garwig, Novize hier im Kloster und Schützer des Heiligen Hammers.
+	AI_Output(self, hero, "Info_Mod_Garwig_Hi_06_01"); //Jestem Garwigiem, nowicjuszem w klasztorze i opiekunem sw.
 };
 
 INSTANCE Info_Mod_Garwig_Genehmigung (C_INFO)
@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Garwig_Genehmigung (C_INFO)
 	information	= Info_Mod_Garwig_Genehmigung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich soll den Hammer holen.";
+	description	= "Mlot ma sie dostac.";
 };
 
 FUNC INT Info_Mod_Garwig_Genehmigung_Condition()
@@ -42,12 +42,12 @@ FUNC INT Info_Mod_Garwig_Genehmigung_Condition()
 
 FUNC VOID Info_Mod_Garwig_Genehmigung_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Garwig_Genehmigung_15_00"); //Ich soll den Hammer holen.
-	AI_Output(self, hero, "Info_Mod_Garwig_Genehmigung_06_01"); //Wer sagt das?
-	AI_Output(hero, self, "Info_Mod_Garwig_Genehmigung_15_02"); //Pyrokar schickt mich.
-	AI_Output(self, hero, "Info_Mod_Garwig_Genehmigung_06_03"); //Gut, nimm ihn.
+	AI_Output(hero, self, "Info_Mod_Garwig_Genehmigung_15_00"); //Mlot ma sie dostac.
+	AI_Output(self, hero, "Info_Mod_Garwig_Genehmigung_06_01"); //Mówi kto kogo?
+	AI_Output(hero, self, "Info_Mod_Garwig_Genehmigung_15_02"); //Pyrokar wyslal mnie.
+	AI_Output(self, hero, "Info_Mod_Garwig_Genehmigung_06_03"); //Dobrze, wez to dobrze.
 
-	B_LogEntry	(TOPIC_MOD_URIZIEL, "Ich habe Garwig Bescheid gesagt und kann den heiligen Hammer nun mitnehmen.");
+	B_LogEntry	(TOPIC_MOD_URIZIEL, "Powiedzialem Garwigowi i moge wziac swiety mlotek ze mna.");
 };
 
 INSTANCE Info_Mod_Garwig_HammerKlau (C_INFO)
@@ -71,7 +71,7 @@ FUNC INT Info_Mod_Garwig_HammerKlau_Condition()
 
 FUNC VOID Info_Mod_Garwig_HammerKlau_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Garwig_HammerKlau_06_00"); //Hey, so geht das aber nicht. Gib den Hammer her.
+	AI_Output(self, hero, "Info_Mod_Garwig_HammerKlau_06_00"); //Hej, nie tak to dziala. Daj mi mlotek.
 
 	B_GiveInvItems	(hero, self, Holy_Hammer_MIS, 1);
 	

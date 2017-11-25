@@ -2,7 +2,7 @@ instance Mod_1497_BUD_Aleph_OM (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Aleph";
+	name =							"Alef";
 	npctype =						npctype_main;
 	guild =							GIL_OUT;      
 	level =							5;	

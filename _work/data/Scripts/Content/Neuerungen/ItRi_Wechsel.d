@@ -17,7 +17,7 @@ instance ItRi_Wechsel(C_Item) //in einem von Halvors Fischen
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Wechselring";
+	description				= "wymienny pierscien";
 	
 	
 	TEXT[5]					= NAME_Value;

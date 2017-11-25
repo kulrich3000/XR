@@ -1,7 +1,7 @@
 instance Mod_7591_OUT_Hannes_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Hannes";
+	name 		= "Hanness";
 	guild 		= GIL_out;
 	id 			= 7591;
 	voice 		= 10;

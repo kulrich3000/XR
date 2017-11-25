@@ -16,12 +16,12 @@ FUNC INT Info_Mod_Raritaetenhaendler_Hi_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_00"); //Hallo Freund. Tritt näher!
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_01"); //Freund? Kennen wir uns?
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_02"); //Noch nicht. Mein Name ist Finder. Ich handle mit Raritäten.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_03"); //Raritäten. Das sind doch seltene Dinge.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_04"); //Genau. Seltene, wunderliche, gar einmalige Sachen.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_05"); //Dann lass mal sehen.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_00"); //Witaj znajomego. Krok blizej!
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_01"); //Przyjacielu? Czy znamy sie nawzajem?
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_02"); //Jeszcze nie. Nazywam sie Finder. Zajmuje sie rzadkoscia.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_03"); //Rzadkosci. To rzadkie rzeczy.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Hi_04_04"); //Dokladnie. Rzadkie, dziwne, a nawet wyjatkowe rzeczy.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Hi_15_05"); //Przyjrzyjmy sie.
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Rune (C_INFO)
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich sehe hier 'ne kaputte Rune.";
+	description	= "Widze tu zlamana rune.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune_Condition()
@@ -46,11 +46,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_00"); //Ich sehe hier 'ne kaputte Rune. Das Teil interessiert mich.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_01"); //Aber gerne. Für 500 kannst du sie haben.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_02"); //Bist du verrückt? 500 Gold für diesen Klumpen Erz?
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_03"); //Ist doch bestenfalls als Dekoration zu gebrauchen. Ich gebe dir 100.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_04"); //Spinnst du? Das ist eine absolute Rarität. Nicht unter 400 zu haben.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_00"); //Widze tu zlamana rune. To mnie interesuje.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_01"); //Bylbym szczesliwy. Mozesz go miec za 500 sztuk.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_02"); //Czy nie masz zamiaru? 500 zlota za te bryle rudy?
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune_15_03"); //W najlepszym przypadku dla dekoracji. Podam Ci 100.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune_04_04"); //Czy nie masz zamiaru? Jest to absolutna rzadkosc. Nie mniej niz 400.
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Rune01 (C_INFO)
@@ -61,7 +61,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune01 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Also gut. Hier 400 Münzen. Die pure Abzocke ist das.";
+	description	= "A zatem wszystko w porzadku. Tu 400 monet. Czyste zdzieranie jest takie.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune01_Condition()
@@ -76,11 +76,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune01_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune01_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune01_15_00"); //Also gut. Hier 400 Münzen. Die pure Abzocke ist das.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune01_15_00"); //A zatem wszystko w porzadku. Tu 400 monet. Czyste zdzieranie jest takie.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 400);
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune01_04_01"); //Angebot und Nachfrage ist das. Hier. Viel Vergnügen.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune01_04_01"); //Jest to popyt i podaz. Tutaj. Dobrze sie bawic.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -88,11 +88,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune01_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapil pól teleportune u sprzedawcy rzadkosci. Teraz potrzebuje reszty posladków z powrotem. Nie powinien byc zbyt twardy.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Zrobilismy to! Mam obie czesci. Moze rune mozna naprawic. Zapytaj eksperta. Zastanawiam sie, czy jest tutaj magik. Zapytajmy. Moze Daniel, on zajmuje sie magia.");
 	};
 };
 
@@ -104,7 +104,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune02 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Absolute Rarität? Schau mal, was ich hier habe.";
+	description	= "Rarytas absolutny? Spójrz, co tu dostalem.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune02_Condition()
@@ -120,11 +120,11 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune02_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune02_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_00"); //Absolute Rarität? Schau mal, was ich hier habe.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_01"); //Oh. Eine halbe Rune.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_02"); //Genau. Die liegen hier so in der Gegend rum.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_03"); //Also gut. Ich gehe auf 250 runter.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_04"); //Weil du's bist. Hier 250 Gold.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_00"); //Rarytas absolutny? Spójrz, co tu dostalem.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_01"); //Oh. Pól runy.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_02"); //Dokladnie. Oni sa tam gdzies.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune02_04_03"); //A zatem wszystko w porzadku. Zejde do 250.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune02_15_04"); //Bo to Ty. 250 zlota tutaj.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
@@ -134,11 +134,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune02_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapil pól teleportune u sprzedawcy rzadkosci. Teraz potrzebuje reszty posladków z powrotem. Nie powinien byc zbyt twardy.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Zrobilismy to! Mam obie czesci. Moze rune mozna naprawic. Zapytaj eksperta. Zastanawiam sie, czy jest tutaj magik. Zapytajmy. Moze Daniel, on zajmuje sie magia.");
 	};
 };
 
@@ -150,7 +150,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune03 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab aber nur 200 im Beutel. Mehr geht nicht.";
+	description	= "Mam tylko 200 w torbie. To wszystko, co moge zrobic.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune03_Condition()
@@ -166,16 +166,16 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune03_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune03_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_00"); //Ich hab aber nur 200 im Beutel. Mehr geht nicht.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_01"); //Dann kommen wir nicht ins Geschäft. Tut mir leid.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_02"); //Ich könnte dir noch einen Aquamarin dazugeben. Erstklassige Qualität.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_00"); //Mam tylko 200 w torbie. To wszystko, co moge zrobic.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_01"); //Wtedy nie mozemy robic interesów. Przepraszam za to.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune03_15_02"); //Moglem dodac kolejna akwamaryne. Najwyzszej jakosci.
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 200);
 	Npc_RemoveInvItems	(hero, ItMi_Aquamarine, 1);
 
-	B_ShowGivenThings	("200 Gold und Aquamarin gegeben");
+	B_ShowGivenThings	("200 Zloto i Akwamaryna z dodatkiem");
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_03"); //Abgemacht. Hier, die Rune.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune03_04_03"); //Ladunek. Tutaj runa.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -183,11 +183,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune03_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapil pól teleportune u sprzedawcy rzadkosci. Teraz potrzebuje reszty posladków z powrotem. Nie powinien byc zbyt twardy.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Zrobilismy to! Mam obie czesci. Moze rune mozna naprawic. Zapytaj eksperta. Zastanawiam sie, czy jest tutaj magik. Zapytajmy. Moze Daniel, on zajmuje sie magia.");
 	};
 };
 
@@ -199,7 +199,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_Rune04 (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_Rune04_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Nachfrage! Was heißt hier Nachfrage? Diesen Schrott nimmt dir doch eh keiner ab.";
+	description	= "Zapotrzebowanie! Co oznacza popyt? Nikt nigdy nie zabiera cie tak czy inaczej.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_Rune04_Condition()
@@ -216,21 +216,21 @@ FUNC INT Info_Mod_Raritaetenhaendler_Rune04_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_Rune04_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_00"); //Nachfrage! Was heißt hier Nachfrage? Diesen Schrott nimmt dir doch eh keiner ab.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_01"); //Denkst du. Fast jeder fragt mich, was es auf sich hat mit der Rune.
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_02"); //Und du sagst natürlich: keine Ahnung. Hier. 200 Gold.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_00"); //Zapotrzebowanie! Co oznacza popyt? Nikt nigdy nie zabiera cie tak czy inaczej.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_01"); //Tak myslisz. Prawie wszyscy pytaja mnie co sie dzieje z runem.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_02"); //I oczywiscie mówisz:"Nie wiem". Tutaj. 200 zlota.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_03"); //Mein letztes Wort. 250. Ich muss auch leben. Und die Frau und die sieben Kinder ...
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_04"); //Hab aber nur 200. Ich geb dir drei Brote und drei Teller Suppe dazu. Für die Familie ...
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_03"); //Moje ostatnie slowo. 250. Ja równiez musze zyc. I zona i siedmioro dzieci....
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_Rune04_15_04"); //Mam tylko 200. Daje wam trzy bochenki chleba i trzy talerze zupy. Dla rodziny....
 
 	Npc_RemoveInvItems	(hero, ItFo_Bread, 3);
 	Npc_RemoveInvItems	(hero, ItFo_FishSoup, 3);
 
-	B_ShowGivenThings	("3 Brote und 3 Teller Suppe gegeben");
+	B_ShowGivenThings	("3 bochenki chleba i 3 talerze zupy");
 
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_05"); //Du bist ein Verbrecher. Hier. Die Rune.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_Rune04_04_05"); //Jestes przestepca. Tutaj. runa.
 
 	B_GiveInvItems	(self, hero, ItMi_BrokenRune02, 1);
 
@@ -238,11 +238,11 @@ FUNC VOID Info_Mod_Raritaetenhaendler_Rune04_Info()
 	
 	if (Npc_HasItems(Mod_7540_OUT_Penner_REL, ItMi_BrokenRune01) == 1)
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Habe dem Raritätenhändler 'ne halbe Teleportrune abgeschwatzt. Jetzt brauche ich den Rest vom Penner zurück. Sollte nicht allzu schwer sein.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Swapil pól teleportune u sprzedawcy rzadkosci. Teraz potrzebuje reszty posladków z powrotem. Nie powinien byc zbyt twardy.");
 	}
 	else
 	{
-		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Geschafft! Ich habe beide Teile. Vielleicht kann man die Rune reparieren. Am besten einen Fachmann fragen. Ob's hier einen Magier gibt? Mal fragen. Vielleicht Daniel, der handelt doch mit Magie.");
+		B_LogEntry	(TOPIC_MOD_JG_PENNER, "Zrobilismy to! Mam obie czesci. Moze rune mozna naprawic. Zapytaj eksperta. Zastanawiam sie, czy jest tutaj magik. Zapytajmy. Moze Daniel, on zajmuje sie magia.");
 	};
 };
 
@@ -254,7 +254,7 @@ INSTANCE Info_Mod_Raritaetenhaendler_BrokenRune (C_INFO)
 	information	= Info_Mod_Raritaetenhaendler_BrokenRune_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hallo noch mal.";
+	description	= "Witaj ponownie.";
 };
 
 FUNC INT Info_Mod_Raritaetenhaendler_BrokenRune_Condition()
@@ -269,20 +269,20 @@ FUNC INT Info_Mod_Raritaetenhaendler_BrokenRune_Condition()
 
 FUNC VOID Info_Mod_Raritaetenhaendler_BrokenRune_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_00"); //Hallo noch mal.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_01"); //Was? Du schon wieder? Was willst Du?
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_02"); //Ich komme von Daniel. Er hat dir eine Adanosfigur verkauft.
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_03"); //Das mag sein. Ein schönes Teil. Ganz aus Aquamarin geschnitzt.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_00"); //Witaj ponownie.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_01"); //Co? Ponownie? Czego chcesz?
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_02"); //Jestem z Daniela. Sprzedal ci postac adanosowa.
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_03"); //To moze byc prawda. Mila praca. Wykonany w calosci w akwamarynie.
 
 	B_GiveInvItems	(self, hero, ItMi_AdanosStatue, 1);
 
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_04"); //Genau das möchte ich kaufen. Du weißt ja, als Dekoration ...
-	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_05"); //Gewiss. 500 Gold ...
-	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_06"); //Nicht schon wieder. Das ist höchstens 200 wert.
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_04"); //To wlasnie chce kupic. Wiesz, jako dekoracja....
+	AI_Output(self, hero, "Info_Mod_Raritaetenhaendler_BrokenRune_04_05"); //Oczywiscie. 500 zlota....
+	AI_Output(hero, self, "Info_Mod_Raritaetenhaendler_BrokenRune_15_06"); //Jeszcze raz. Wartosc ta wynosi maksymalnie 200 sztuk.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 200);
 
-	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Ich habe jetzt die Adanosfigur. Muss zum Magier zurück.");
+	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Mam teraz postac Adanos. Gota wraca do maga.");
 };
 
 INSTANCE Info_Mod_Raritaetenhaendler_Pickpocket (C_INFO)

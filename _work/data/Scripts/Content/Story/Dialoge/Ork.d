@@ -18,12 +18,12 @@ FUNC INT Info_Mod_Ork_Hi_Condition()
 
 FUNC VOID Info_Mod_Ork_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_00"); //Jetzt ist er tatsächlich tot. Was mach ich denn jetzt?
-	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_01"); //Du bist frei! Du kannst tun, was du willst.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_02"); //Ach ja? Und was macht man dann so, wenn man frei ist?
-	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_03"); //Alles.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_04"); //(stöhnt) Klingt schrecklich kompliziert.
-	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_05"); //Ich warte lieber, ob Vater nicht doch wieder aufsteht, dann können wir weitersuchen.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_00"); //Teraz on juz nie zyje. Co mam teraz zrobic?
+	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_01"); //Jestes wolny! Mozesz robic wszystko, co chcesz.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_02"); //Ach, tak? A co robisz, gdy jestes wolny?
+	AI_Output(hero, self, "Info_Mod_Ork_Hi_15_03"); //Wszystko.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_04"); //Dzwieki niezwykle skomplikowane.
+	AI_Output(self, hero, "Info_Mod_Ork_Hi_18_05"); //Wolalbym raczej poczekac, zeby zobaczyc, czy ojciec przeciez nie wstanie, to mozemy dalej szukac.
 };
 
 INSTANCE Info_Mod_Ork_EXIT (C_INFO)

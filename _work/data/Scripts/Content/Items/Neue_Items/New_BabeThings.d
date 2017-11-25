@@ -1,6 +1,6 @@
 INSTANCE ItMiBrush(C_Item)
 {
-	name 				=	"Bürste";
+	name 				=	"szczotka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -19,7 +19,7 @@ INSTANCE ItMiBrush(C_Item)
 // Für Babe-Luftzufächeln
 INSTANCE ItMiWedel(C_Item)
 {
-	name 				=	"Palmwedel";
+	name 				=	"fronton dloni";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

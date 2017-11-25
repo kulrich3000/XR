@@ -1,7 +1,7 @@
 instance Mod_7414_JG_Bret_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bret"; 
+	name 		= "ret"; 
 	guild 		= GIL_OUT;
 	id 			= 7414;
 	voice 		= 8;

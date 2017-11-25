@@ -1,7 +1,7 @@
 instance Mod_7397_PSINOV_Turgor_REL (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Turgor";
+	name 		=		"turgor";
 	Npctype 		=	Npctype_MAIN;
 	guild 		=		GIL_out;
 	level 		=		9;	

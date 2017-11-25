@@ -1,7 +1,7 @@
 instance Mod_7365_OUT_Margarethe_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Margarethe";
+	name 		= "margaretka";
 	guild 		= GIL_OUT;
 	id 			= 7365;
 	voice 		= 17;

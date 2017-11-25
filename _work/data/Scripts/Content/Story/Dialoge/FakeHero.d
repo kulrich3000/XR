@@ -6,7 +6,7 @@ INSTANCE Info_Mod_FakeHero_Hi (C_INFO)
 	information	= Info_Mod_FakeHero_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_FakeHero_Hi_Condition()
@@ -18,10 +18,10 @@ FUNC VOID Info_Mod_FakeHero_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 	B_Say (self, hero, "$WHOAREYOU");
-	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_02"); //Was soll das?
-	AI_Output(self, hero, "Info_Mod_FakaHero_Hi_15_03"); //Was soll das?
-	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_04"); //Das reicht, jetzt bist du dran!
-	AI_Output(self, hero, "Info_Mod_FakeHero_Hi_15_05"); //Das reicht, jetzt bist du dran!
+	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_02"); //Co robisz?
+	AI_Output(self, hero, "Info_Mod_FakaHero_Hi_15_03"); //Co robisz?
+	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_04"); //To wystarczy, teraz to Twoja kolej!
+	AI_Output(self, hero, "Info_Mod_FakeHero_Hi_15_05"); //To wystarczy, teraz to Twoja kolej!
 
 	AI_StopProcessInfos	(self);
 

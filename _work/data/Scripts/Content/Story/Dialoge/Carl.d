@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Carl_Hi (C_INFO)
 	information	= Info_Mod_Carl_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Wer bist du?";
+	description	= "Kim jestes?";
 };
 
 FUNC INT Info_Mod_Carl_Hi_Condition()
@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Carl_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Carl_Hi_05_00"); //Ich bin Carl, der Schmied.
+	AI_Output(self, hero, "Info_Mod_Carl_Hi_05_00"); //Jestem Carlem, kowalem.
 };
 
 INSTANCE Info_Mod_Carl_Flugblaetter (C_INFO)
@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Carl_Flugblaetter (C_INFO)
 	information	= Info_Mod_Carl_Flugblaetter_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich hab hier ein Flugblatt für dich.";
+	description	= "Mam dla Ciebie ulotke.";
 };
 
 FUNC INT Info_Mod_Carl_Flugblaetter_Condition()
@@ -50,11 +50,11 @@ FUNC VOID Info_Mod_Carl_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Carl_Flugblaetter_05_01"); //Oh danke. Mal sehen ...
+	AI_Output(self, hero, "Info_Mod_Carl_Flugblaetter_05_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Carl_Flugblaetter_05_02"); //Ah ja. Vielleicht werd ich mal bei Matteo vorbeischauen.
+	AI_Output(self, hero, "Info_Mod_Carl_Flugblaetter_05_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };
@@ -67,7 +67,7 @@ INSTANCE Info_Mod_Carl_Lehrer (C_INFO)
 	information	= Info_Mod_Carl_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Kannst du mir was beibringen?";
+	description	= "Czy mozesz mnie czegos nauczyc?";
 };
 
 FUNC INT Info_Mod_Carl_Lehrer_Condition()
@@ -83,11 +83,11 @@ FUNC VOID Info_Mod_Carl_Lehrer_Info()
 {
 	B_Say	(hero, self, "$KANNSTDUMIRWASBEIBRINGEN");
 
-	AI_Output(self, hero, "Info_Mod_Carl_Lehrer_05_00"); //Ich kann dir nur zeigen wie du stärker wirst, das Schmieden kann ich dir nicht beibringen.
-	AI_Output(self, hero, "Info_Mod_Carl_Lehrer_05_01"); //Wenn du das lernen willst, dann musst du zu Harad gehen.
+	AI_Output(self, hero, "Info_Mod_Carl_Lehrer_05_00"); //Moge tylko pokazac ci, jak sie wzmocnic, nie potrafie cie nauczyc, jak sie kulec.
+	AI_Output(self, hero, "Info_Mod_Carl_Lehrer_05_01"); //Jesli chcesz sie tego nauczyc, musisz udac sie do Haradu.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_STADT, LOG_NOTE);
-	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Carl kann mir helfen stärker zu werden.");
+	B_LogEntry	(TOPIC_MOD_LEHRER_STADT, "Carl pomaga mi wzmocnic sie.");
 };
 
 INSTANCE Info_Mod_Carl_Lernen (C_INFO)
@@ -98,7 +98,7 @@ INSTANCE Info_Mod_Carl_Lernen (C_INFO)
 	information	= Info_Mod_Carl_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Ich will stärker werden!";
+	description	= "Chce byc silniejszy!";
 };
 
 FUNC INT Info_Mod_Carl_Lernen_Condition()
@@ -113,7 +113,7 @@ FUNC INT Info_Mod_Carl_Lernen_Condition()
 
 FUNC VOID Info_Mod_Carl_Lernen_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Carl_Lernen_15_00"); //Ich will stärker werden!
+	AI_Output(hero, self, "Info_Mod_Carl_Lernen_15_00"); //Chce byc silniejszy!
 
 	Info_ClearChoices	(Info_Mod_Carl_Lernen);
 

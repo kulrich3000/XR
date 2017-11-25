@@ -1,7 +1,7 @@
 instance Mod_776_NONE_Orlan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Orlan";
+	name 		= "orlan";
 	guild 		= GIL_NONE;
 	id 			= 776;
 	voice 		= 32;

@@ -6,7 +6,7 @@ INSTANCE Info_Mod_HFFrau_Heiraten_01 (C_INFO)
 	information	= Info_Mod_HFFrau_Heiraten_01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Willst du mich heiraten?";
+	description	= "Czy poslubisz mnie?";
 };
 
 FUNC INT Info_Mod_HFFrau_Heiraten_01_Condition()
@@ -22,7 +22,7 @@ FUNC VOID Info_Mod_HFFrau_Heiraten_01_Info()
 {
 	B_Say (hero, self, "$WANNAMARRY");
 
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_01_16_01"); //Nein.
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_01_16_01"); //Nie.
 };
 
 INSTANCE Info_Mod_HFFrau_Heiraten_02 (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE Info_Mod_HFFrau_Heiraten_02 (C_INFO)
 	information	= Info_Mod_HFFrau_Heiraten_02_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Du bist die Frau des Hundefutters?";
+	description	= "Jestes zona karmy dla psów?";
 };
 
 FUNC INT Info_Mod_HFFrau_Heiraten_02_Condition()
@@ -50,18 +50,18 @@ FUNC INT Info_Mod_HFFrau_Heiraten_02_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_00"); //Du bist die Frau des Hundefutters?
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_01"); //Ja ...
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_02"); //... das heißt, ich war es.
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_03"); //Dein Verlust tut mir schrecklich Leid. Willst du ein bisschen Freudenspender zum Trost.
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_04"); //Ja ... gerne.
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_00"); //Jestes zona karmy dla psów?
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_01"); //Tak.....
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_02"); //... to wlasnie ja.
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_03"); //Przykro mi, ze strasznie zaluje Twojej straty. Chcesz troche radosci pocieszyc.
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_04"); //Tak..... gerne.
 
 	B_GiveInvItems	(hero, self, ItFo_Trunken, 1);
 
 	B_UseItem	(self, ItFo_Trunken);
 
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Jetzt, da du Single bist, würdest du mich gerne heiraten?
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_06"); //Heiraten? Ja ... aber ich heirate nur noch jemanden der seinen eigenen Grund besitzt ... Tust du das?
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Teraz, gdy jestes samotny, chcialbys mnie poslubic?
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_16_06"); //Heiraten? Tak..... aber ich heirate nur noch jemanden der seinen eigenen Grund besitzt ... Tust du das?
 };
 
 INSTANCE Info_Mod_HFFrau_Heiraten_03 (C_INFO)
@@ -72,7 +72,7 @@ INSTANCE Info_Mod_HFFrau_Heiraten_03 (C_INFO)
 	information	= Info_Mod_HFFrau_Heiraten_03_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Ich habe ein Haus.";
+	description	= "Mam dom.";
 };
 
 FUNC INT Info_Mod_HFFrau_Heiraten_03_Condition()
@@ -91,8 +91,8 @@ FUNC INT Info_Mod_HFFrau_Heiraten_03_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_15_00"); //Ich habe ein Haus.
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_16_01"); //Wunderbar, dann lass uns heiraten!
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_15_00"); //Mam dom.
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_16_01"); //Wspaniale, slubujmy sie!
 
 	AI_StopProcessInfos	(self);
 

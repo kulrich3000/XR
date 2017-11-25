@@ -18,13 +18,13 @@ FUNC INT Info_Mod_Melchior_Hi_Condition()
 
 FUNC VOID Info_Mod_Melchior_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_00"); //Endlich ist die Verstärkung da. Ich habe schon geglaubt, der Kommander hätte mich vergessen.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_01"); //Eigentlich sollst du mich Verstärken. Ich brauch jemanden, der die Orks verhören kann. Du sprichst doch ihre Sprache?!
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_02"); //Ja, aber alle Orks hier in der Gegend sind untot. Sie haben meinen Freund Jacoby im Wald erschlagen.
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_03"); //Es waren so viele, dass ich fliehen musste. Ich glaube nicht, dass wir sie befragen können.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_04"); //Ihre Anführer sind aber immer noch lebendig. Es muss doch einen geben, der ein wenig von der Masse getrennt ist.
-	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_05"); //Da gibt es einen. Er entsendet von einer alten Ruine seine Spähtruppen ins Eisgebiet.
-	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_06"); //Marcus wird für dich hier übernehmen und du zeigst mir diese Ruine.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_00"); //W koncu sa tu wreszcie informacje. Myslalem, ze dowódca mnie zapomnial.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_01"); //Wlasciwie powinienes mnie wzmocnic. Potrzebuje kogos, kto bedzie mógl przesluchiwac orki. Mówisz jej jezyk, czy nie?
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_02"); //Tak, ale wszystkie orki wokól nie umarly. Zabiles mojego przyjaciela Jacoby' ego w lesie.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_03"); //Bylo ich tyle, ze musialem uciekac. Mysle, ze nie mozemy ich kwestionowac.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_04"); //Jednak ich przywódcy nadal zyja. Musi byc ktos, kto jest troche oddzielony od mas.
+	AI_Output(self, hero, "Info_Mod_Melchior_Hi_10_05"); //Jest jeden. Swoje oddzialy zwiadowcze wysyla z ruiny na lodowisko.
+	AI_Output(hero, self, "Info_Mod_Melchior_Hi_15_06"); //Marcus zajmie sie dla Ciebie tutaj, a Ty pokazesz mi te ruine.
 
 	B_StartOtherRoutine	(self, "GUIDETORUINE");
 	B_StartOtherRoutine	(Mod_7754_OUT_Melchior_EIS, "ATMELCHIOR");

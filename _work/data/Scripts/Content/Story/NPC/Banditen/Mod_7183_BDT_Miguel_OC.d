@@ -1,7 +1,7 @@
 instance Mod_7183_BDT_Miguel_OC (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Miguel";
+	name 		= "migrujacy";
 	guild 		= GIL_OUT;
 	id 			= 7183;
 	voice 		= 11;

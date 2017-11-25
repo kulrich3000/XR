@@ -1,11 +1,11 @@
 FUNC VOID Info_Mod_Dubios_Hi()
 {
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_00"); //(zum anderen) Hähähä,… was läuft dieser reiche Sack hier auch mitten in der Wildnis herum. Da muss er doch damit rechnen überfallen zu werden.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_01"); //Und der Penner hing so hartnäckig an seinem Ring ... da habe ich ihm den zum fressen gegeben habe.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_02"); //Hatte ja mehr als genug an Gold und Silber. Den konnte der den ruhig mit in sein nasses Grab nehmen.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_03"); //(zum Helden) Aber wen haben wir den hier. Noch einen Goldesel? Auf ihn!
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_00"); //.... co to jest ten bogaty worek biegnacy posrodku dzikiej przyrody. Musi oczekiwac, ze zostanie zaatakowany.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_01"); //A posladki tak uporczywie wisialy na jego pierscieniu.... Dalem mu to jesc.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_02"); //Mial wiecej niz wystarczajaco duzo zlota i srebra. Z latwoscia mógl go z nim zabrac do swojego wilgotnego grobu.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_03"); //Ale kto tu mamy? Kolejny osiolek? Do niego!
 
-	B_LogEntry	(TOPIC_MOD_HEROLD_SIEGELRING, "Es sieht aus als hätten die zwei dubiosen Gestalten meinen Räuber selbst ausgeraubt. Den Ring haben sie ihm wohl gelassen. Er ist jetzt in seinem nassen Grab ...");
+	B_LogEntry	(TOPIC_MOD_HEROLD_SIEGELRING, "Wyglada na to, ze dwie watpliwe postacie rabowaly mnie samych. Musieli opuscic mu pierscien. Teraz jest w swoim mokrym grobie....");
 };
 
 INSTANCE Info_Mod_Dubios_REL_Hi (C_INFO)

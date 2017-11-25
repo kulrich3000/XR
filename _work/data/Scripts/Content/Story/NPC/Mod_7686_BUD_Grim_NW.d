@@ -2,7 +2,7 @@ instance Mod_7686_BUD_Grim_NW (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Grim";
+	name =							"ponury";
 	npctype =						npctype_main;
 	guild =							GIL_out;      
 	level =							5;

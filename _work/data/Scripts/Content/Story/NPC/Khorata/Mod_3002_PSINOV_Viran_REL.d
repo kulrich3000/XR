@@ -1,7 +1,7 @@
 instance Mod_3002_PSINOV_Viran_REL (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Viran";
+	name 		=		"wirus";
 	Npctype	 	=		Npctype_Main;
 	guild 		=		GIL_OUT;
 	level 		=		15;

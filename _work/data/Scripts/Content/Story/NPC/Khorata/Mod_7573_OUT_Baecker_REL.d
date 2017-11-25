@@ -1,7 +1,7 @@
 instance Mod_7573_OUT_Baecker_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Bäcker"; 
+	name 		= "piekarz"; 
 	guild 		= GIL_OUT;
 	id 			= 7573;
 	voice 		= 1;
