@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Felicita_Hi_Condition()
 
 FUNC VOID Info_Mod_Felicita_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Felicita_Hi_16_00"); //A word, stranger. You look so tidy. Would you do me a favor?
+	AI_Output(self, hero, "Info_Mod_Felicita_Hi_19_00"); //A word, stranger. You look so tidy. Would you do me a favor?
 };
 
 INSTANCE Info_Mod_Felicita_AufgabeJa (C_INFO)
@@ -45,13 +45,13 @@ FUNC VOID Info_Mod_Felicita_AufgabeJa_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_00"); //I'd be happy to help such a beautiful woman. Besides, I have some time.
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_01"); //What can I do for you?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_02"); //I am Felicita, August's wife, the gatekeeper.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_03"); //Now the women in my neighborhood are whispering, he would not only guard the gate when it gets dark in the evening.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_04"); //I'd like to know if there's anything true.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_02"); //I am Felicita, August's wife, the gatekeeper.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_03"); //Now the women in my neighborhood are whispering, he would not only guard the gate when it gets dark in the evening.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_04"); //I'd like to know if there's anything true.
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_05"); //I can do that. But why don't you check yourself?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_06"); //I'm afraid of the dark. When I was a kid, I had--
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_06"); //I'm afraid of the dark. When I was a kid, I had--
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_07"); //I see. I'll take care of it.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_08"); //Thank you very much. You'll find me in the old quarter, back right.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_08"); //Thank you very much. You'll find me in the old quarter, back right.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_FELICITA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_RUNNING);
@@ -112,17 +112,17 @@ FUNC INT Info_Mod_Felicita_Belauscht_Condition()
 FUNC VOID Info_Mod_Felicita_Belauscht_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_00"); //I'm afraid I can't say good evening.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_01"); //So you caught my husband?
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_01"); //So you caught my husband?
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_02"); //Not in flagrant. I heard him talking to a woman. Under the big birch tree outside.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_03"); //That's good enough for me. That rascal! Ever since he's swallowed all this evil stuff, he's been like a complete replacement.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_03"); //That's good enough for me. That rascal! Ever since he's swallowed all this evil stuff, he's been like a complete replacement.
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_04"); //You mean this giver of joy?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_05"); //Exactly. It's enough now. I'll get a divorce and throw him out of my house.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_06"); //Here, I'll give you this gold ring.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_05"); //Exactly. It's enough now. I'll get a divorce and throw him out of my house.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_06"); //Here, I'll give you this gold ring.
 
 	B_GiveInvItems	(self, hero, ItMi_Hochzeitsring, 1);
 
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_07"); //Your wedding ring?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_08"); //He used to be. Take it!
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_08"); //He used to be. Take it!
 
 	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Caught the gatekeeper August with another woman and told Felicita. She gave me her wedding ring for it.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_SUCCESS);

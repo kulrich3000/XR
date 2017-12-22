@@ -453,6 +453,19 @@ func int Spine_Init(var int modules) {
 		Spine_GetFriendNameFunc = 0;
 	};
 	
+	if (modules & SPINE_MODULE_STATISTICS) {
+		MEM_Info("Spine: Loading updateStatistic function");
+		Spine_UpdateStatisticFunc = GetProcAddress(Spine_Dll, "updateStatistic");
+		
+		if (!Spine_UpdateStatisticFunc) {
+			MEM_Info("Spine: updateStatistic function not found");
+			FreeLibrary(Spine_Dll);
+			return FALSE;
+		};
+	} else {
+		Spine_UpdateStatisticFunc = 0;
+	};
+	
 	if (STR_Len(Spine_FirstStart) == 0) {
 		Spine_FirstStart = "Initialized";
 		
@@ -486,7 +499,7 @@ func int Spine_Init(var int modules) {
 // if played without account/login, empty string is returned
 func string Spine_GetCurrentUsername() {
 	if (Spine_Initialized && Spine_GetUsernameFunc) {
-		const string STR_BUFFER = "";
+		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL__cdecl(Spine_GetUsernameFunc);

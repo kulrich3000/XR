@@ -76,7 +76,7 @@ instance MENU_ITEM_NEXTMENU(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "More keys...";
-	text[1]		= "Set additional Gothic 2 buttons";  // Kommentar
+	text[1]		= "Configure further Gothic 2 control keys";  // Kommentar
 
 	// Positionen  und Dimensionen
 	posx		=	ctrl_sp1_1 + 2500;		posy		=	ctrl_y_start + ctrl_y_step * 21 + CTRL_GROUP6;
@@ -388,7 +388,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_EXTKEYS_HEADLINE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ADVANCED CONTROL";
+	text[0]		=	"EXTENDED CONTROLS";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;
@@ -419,7 +419,7 @@ INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Reverse";
+	text[0]			=	"Backward";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -441,7 +441,7 @@ INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Rotate right";
+	text[0]			=	"Turn right";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 
@@ -477,7 +477,7 @@ INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"leaping";
+	text[0]			=	"Jump";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP1;
 
@@ -490,7 +490,7 @@ INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Walking/Running";
+	text[0]			=	"Walk toggle";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP1;
 
@@ -518,7 +518,7 @@ INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"campaign";
+	text[0]			=	"Action";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 
@@ -530,7 +530,7 @@ INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"draw a weapon";
+	text[0]			=	"Draw weapon";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 
@@ -573,7 +573,7 @@ INSTANCE MENU_ITEM_KEY_PRISMA(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"look around";
+	text[0]			=	"Look around";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 
@@ -585,7 +585,7 @@ INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"FirstPerson";
+	text[0]			=	"First person";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 
@@ -601,7 +601,7 @@ INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"inventory";
+	text[0]			=	"Inventory";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 
@@ -613,7 +613,7 @@ INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"player status";
+	text[0]		=	"Player stats";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 
@@ -626,7 +626,7 @@ INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Missions/Notes";
+	text[0]		=	"Quest log";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP4;
 
@@ -949,8 +949,8 @@ INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"default setting";
-	text[1]		=	"Activates the default setting."; // Kommentar
+	text[0]		=	"Default settings";
+	text[1]		=	"Set controls to default configuration"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 19 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -961,8 +961,8 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"alternative setting";
-	text[1]		=	"Activates an alternative standard configuration."; // Kommentar
+	text[0]		=	"Alternative settings";
+	text[1]		=	"Set controls to an alternative configuration"; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 20 + CTRL_GROUP5;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;

@@ -250,7 +250,7 @@ FUNC VOID B_SetVisual_Zom()
 
 INSTANCE Zombie_Tonak		(Mst_Default_Zombie)
 {
-	name = "clay";
+	name = "Tonak";
 
 	B_SetVisuals_Zombie01();
 	Npc_SetToFistMode(self);

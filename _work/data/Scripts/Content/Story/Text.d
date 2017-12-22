@@ -1028,7 +1028,7 @@ const string NAME_ADDON_PRAYIDOL_GIVENOTHING			= "I will pray and offer nothing.
 const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT1			= "I will pray and offer 1 life energy.";
 const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT2			= "I will pray and offer 2 life energy.";
 const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT3			= "I will pray and offer 3 life energy.";
-const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "I want to pray and give 1 mana.";
+const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "I will pray and offer 1 mana.";
 							
 
 // *************************************************************
@@ -1230,7 +1230,7 @@ const string Print_BlessAdanosMana_Hit			= "You feel reborn.";
 const string Print_BlessAdanosNone				= "Adanos thanks you for your prayer.";
 
 const string Print_NotEnoughGold			= "Not enough gold.";
-const string Bless_Sword					= "Schwert weihen";
+const string Bless_Sword					= "consecrate a sword";
 const string Bless_Sword2					= "Consecrate Sword (Tears of Innos)";
 
 const string Pray_Paladin1					= "... Innos, extend your hand over your vassals ..." ;

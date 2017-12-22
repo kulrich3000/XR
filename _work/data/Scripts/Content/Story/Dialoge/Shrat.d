@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Shrat_Hi_Condition()
 
 FUNC VOID Info_Mod_Shrat_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shrat_Hi_02_00"); //Don't disturb my peace!
+	AI_Output(self, hero, "Info_Mod_Shrat_Hi_09_00"); //Don't disturb my peace!
 };
 
 INSTANCE Info_Mod_Shrat_Woher (C_INFO)
@@ -40,11 +40,11 @@ FUNC INT Info_Mod_Shrat_Woher_Condition()
 FUNC VOID Info_Mod_Shrat_Woher_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Shrat_Woher_15_00"); //Why are you alone in a cabin in the swamp?
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_01"); //Because I want to be left alone. I've never been in peace.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_02"); //First I had to work all day on Onar's farm until I ran away with one of his sheep.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_03"); //When they threw me into the colony, I thought the swamp camp was cosy.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_04"); //But there I was allowed to stomp bog cabbage all day long and that was not what I wanted.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_05"); //Then I ran away and built a small hut here and finally I have my peace.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_01"); //Because I want to be left alone. I've never been in peace.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_02"); //First I had to work all day on Onar's farm until I ran away with one of his sheep.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_03"); //When they threw me into the colony, I thought the swamp camp was cosy.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_04"); //But there I was allowed to stomp bog cabbage all day long and that was not what I wanted.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_05"); //Then I ran away and built a small hut here and finally I have my peace.
 };
 
 INSTANCE Info_Mod_Shrat_Pickpocket (C_INFO)

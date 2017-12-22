@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Gorn_IR_Hi_Condition()
 FUNC VOID Info_Mod_Gorn_IR_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Gorn_IR_Hi_15_00"); //And what do you think of the island?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_12_01"); //Oh, I don't know how to handle all the magical frills... but I'm sure I can use my axe to kick some serious ass on those undead demonic bastards.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_03_01"); //Oh, I don't know how to handle all the magical frills... but I'm sure I can use my axe to kick some serious ass on those undead demonic bastards.
 };
 
 INSTANCE Info_Mod_Gorn_IR_Hebel (C_INFO)
@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Gorn_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_12_00"); //Of course it is. Maybe if it's going to get us somewhere...
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_03_00"); //Of course it is. Maybe if it's going to get us somewhere...
 
 	Mod_IR_Hebel = 1;
 
@@ -74,9 +74,9 @@ FUNC INT Info_Mod_Gorn_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Gorn_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_00"); //Man, ohh, man, the undead and demons may be tough and pushy.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_03_00"); //Man, ohh, man, the undead and demons may be tough and pushy.
 	AI_Output(hero, self, "Info_Mod_Gorn_IR_Ambient01_15_01"); //I hope you're still holding out?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_02"); //Are you kidding me? It was high time they got one with the heavy piece of steel on their hat.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_03_02"); //Are you kidding me? It was high time they got one with the heavy piece of steel on their hat.
 
 	AI_StopProcessInfos	(self);
 };
@@ -108,7 +108,7 @@ FUNC VOID Info_Mod_Gorn_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_12_00"); //Sure. Before my axe is completely eaten up by salt water, it should split the skull of some undead.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_03_00"); //Sure. Before my axe is completely eaten up by salt water, it should split the skull of some undead.
 
 	Mod_IR_Dabei += 1;
 
@@ -163,7 +163,7 @@ INSTANCE Info_Mod_Gorn_IR_Heiltrank (C_INFO)
 	information	= Info_Mod_Gorn_IR_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(healing potion)";
+	description	= "(give healing potion)";
 };
 
 FUNC INT Info_Mod_Gorn_IR_Heiltrank_Condition()

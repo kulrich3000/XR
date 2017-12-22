@@ -17,9 +17,9 @@ FUNC INT Info_Mod_Raven_IR_Hi_Condition()
 FUNC VOID Info_Mod_Raven_IR_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Raven_IR_Hi_15_00"); //And, wasn't the voyage an experience for all the senses?
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_01"); //What, are you mocking me?!
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_02"); //The only experience I had was my stomach, the whole trip.
-	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_10_03"); //Now get out of my sight.
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_03_01"); //What, are you mocking me?!
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_03_02"); //The only experience I had was my stomach, the whole trip.
+	AI_Output(self, hero, "Info_Mod_Raven_IR_Hi_03_03"); //Now get out of my sight.
 };
 
 INSTANCE Info_Mod_Raven_IR_GehtLos (C_INFO)
@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Raven_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Raven_IR_GehtLos_10_00"); //No! Xardas may have instructed me to come along. But there was no talk of fighting.
+	AI_Output(self, hero, "Info_Mod_Raven_IR_GehtLos_03_00"); //No! Xardas may have instructed me to come along. But there was no talk of fighting.
 
 	AI_StopProcessInfos	(self);
 };

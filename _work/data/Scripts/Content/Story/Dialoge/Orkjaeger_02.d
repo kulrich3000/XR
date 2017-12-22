@@ -25,28 +25,28 @@ FUNC INT Info_Mod_Orkjaeger_02_Condition()
 FUNC VOID Info_Mod_Orkjaeger_02_Info()
 {
 	AI_Output(hero,self,"Info_Mod_Orkjaeger_02_15_00"); //I could use some support on an orc problem.
-	AI_Output(self,hero,"Info_Mod_Orkjaeger_02_11_01"); //What's this about?
+	AI_Output(self,hero,"Info_Mod_Orkjaeger_02_08_01"); //What's this about?
 	AI_Output(hero,self,"Info_Mod_Orkjaeger_02_15_02"); //In a cave in the forest near the bandit camp a handful of hairy contemporaries are camping.
 
 	if (Mod_Gilde == 4)
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_11_03"); //Hmm, that doesn't sound easy. But if you let some ridiculous 200 gold coins jump - you belong to our camp - and find at least one other man for the action, I'll be there.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_08_03"); //Hmm, that doesn't sound easy. But if you let some ridiculous 200 gold coins jump - you belong to our camp - and find at least one other man for the action, I'll be there.
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_11_04"); //Hmm, that doesn't sound easy. But if you let 150 gold coins jump - you are one of us - and at least find another man for the action, I'll be there.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_08_04"); //Hmm, that doesn't sound easy. But if you let 150 gold coins jump - you are one of us - and at least find another man for the action, I'll be there.
 	}
 	else if ((Mod_Gilde == 5)
 	|| (Mod_Gilde == 19))
 	&& (Npc_KnowsInfo(hero, Info_Mod_Lee_HabPfeife))
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_11_05"); //Hmm, that doesn't sound easy. But if you, as my boss, pay me 100 gold coins and at least find another man for the action, I'll be there.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_08_05"); //Hmm, that doesn't sound easy. But if you, as my boss, pay me 100 gold coins and at least find another man for the action, I'll be there.
 	}
 	else
 	{
-		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_11_06"); //Hmm, that doesn't sound easy. But if you jump 250 coins and find at least one more man for the action, I'll be there.
+		AI_Output(self,hero,"Info_Mod_Orkjaeger_02_08_06"); //Hmm, that doesn't sound easy. But if you jump 250 coins and find at least one more man for the action, I'll be there.
 	};
 
 	Info_ClearChoices	(Info_Mod_Orkjaeger_02);
@@ -81,7 +81,7 @@ FUNC VOID Info_Mod_Orkjaeger_02_Info()
 FUNC VOID Info_Mod_Orkjaeger_02_B()
 {
 	AI_Output(hero,self,"Info_Mod_Orkjaeger_02_B_15_00"); //No, it's too expensive.
-	AI_Output(self,hero,"Info_Mod_Orkjaeger_02_B_11_01"); //If you change your mind, you know where to find me.
+	AI_Output(self,hero,"Info_Mod_Orkjaeger_02_B_08_01"); //If you change your mind, you know where to find me.
 	
 	Info_ClearChoices	(Info_Mod_Orkjaeger_02);
 };
@@ -113,7 +113,7 @@ FUNC VOID Info_Mod_Orkjaeger_02_A()
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 250);
 
-	AI_Output(self, hero, "Info_Mod_Orkjaeger_02_A_11_01"); //All right, I'll see you at the passage in front of the forest.
+	AI_Output(self, hero, "Info_Mod_Orkjaeger_02_A_08_01"); //All right, I'll see you at the passage in front of the forest.
 	
 	Info_ClearChoices	(Info_Mod_Orkjaeger_02);
 

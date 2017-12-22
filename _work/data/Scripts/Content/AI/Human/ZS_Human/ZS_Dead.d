@@ -496,12 +496,12 @@ func void ZS_Dead ()
 
 		if (Mod_FM_Hexencounter > 1)
 		{
-			Hexentext = ConcatStrings("still ", IntToString (Mod_FM_Hexencounter));
+			Hexentext = ConcatStrings("Still ", IntToString (Mod_FM_Hexencounter));
 			Hexentext = ConcatStrings(Hexentext, " Witches left!");
 		}
 		else if (Mod_FM_Hexencounter == 1)
 		{
-			Hexentext = ConcatStrings("still ", IntToString (Mod_FM_Hexencounter));
+			Hexentext = ConcatStrings("Still ", IntToString (Mod_FM_Hexencounter));
 			Hexentext = ConcatStrings(Hexentext, " Witch left!");
 		}
 		else

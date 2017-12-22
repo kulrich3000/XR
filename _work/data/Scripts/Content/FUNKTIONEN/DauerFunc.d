@@ -1,5 +1,6 @@
 var int Mod_SaveOther;
 var C_Npc Mod_SaveNpc;
+var int Mod_LastStatsChapter;
 
 FUNC VOID DAUERFUNC_01()
 {
@@ -1493,6 +1494,8 @@ FUNC VOID DAUERFUNC_01()
 		&& (Npc_GetDistToWP(hero, "LORE_MINE") < 1000)
 		{
 			AI_PlayAni	(hero, "T_SIT_2_STAND");
+			
+			RidingLorry = FALSE;
 
 			LoreEisgebietMine01 = 3;
 		};
@@ -1530,6 +1533,8 @@ FUNC VOID DAUERFUNC_01()
 		&& (Npc_GetDistToWP(hero, "LORE_START") < 2000)
 		{
 			AI_PlayAni	(hero, "T_SIT_2_STAND");
+			
+			RidingLorry = FALSE;
 
 			LoreEisgebietMine01 = 0;
 		};
@@ -1551,6 +1556,8 @@ FUNC VOID DAUERFUNC_01()
 		&& (Npc_GetDistToWP(hero, "LORE_SW") < 1000)
 		{
 			AI_PlayAni	(hero, "T_SIT_2_STAND");
+			
+			RidingLorry = FALSE;
 
 			LoreEisgebietSW01 = 3;
 		};
@@ -1588,6 +1595,8 @@ FUNC VOID DAUERFUNC_01()
 		&& (Npc_GetDistToWP(hero, "LORE_START") < 3000)
 		{
 			AI_PlayAni	(hero, "T_SIT_2_STAND");
+			
+			RidingLorry = FALSE;
 
 			LoreEisgebietSW01 = 0;
 		};
@@ -1790,6 +1799,12 @@ FUNC VOID DAUERFUNC_01()
 				MG_WaitingForMatch = FALSE;
 			};
 		};
+	};
+	
+	if (Mod_LastStatsChapter != Kapitel && Hlp_IsValidNpc(hero)) {
+		Mod_LastStatsChapter = Kapitel;
+		
+		Spine_UpdateChapterStatistics(hero, Kapitel);
 	};
 
 	Wld_SendTrigger	("DAUERTRIGGER");

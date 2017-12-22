@@ -1,10 +1,10 @@
 instance Mod_7673_MIL_Miliz_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "errand boy";	
+	name 		= "Errand Boy";	
 	guild 		= GIL_OUT;
 	id 			= 7673;
-	voice 		= 6;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_nw_miliz;
 	

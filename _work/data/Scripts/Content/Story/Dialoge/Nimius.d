@@ -85,7 +85,7 @@ FUNC INT Info_Mod_Nimius_WilfriedTot_Condition()
 
 FUNC VOID Info_Mod_Nimius_WilfriedTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_01"); //Wilfried's dead? You did a good job.
+	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_00"); //Wilfried's dead? You did a good job.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 };

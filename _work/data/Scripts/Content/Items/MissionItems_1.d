@@ -17,7 +17,7 @@ INSTANCE ItKe_Xardas(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"A key to a chest";
-	TEXT[3]				=   "from Xardas";
+	TEXT[3]				=   "belonging to Xardas";
 	
 };
 //**********************************************************************************
@@ -37,7 +37,7 @@ INSTANCE ItWr_Canthars_KomproBrief_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_Canthars_KomproBrief;
 	scemeName			=	"MAP";
-	description			= 	"Canthar's letter for the retailer Sarah";
+	description			= 	"Canthar's letter to the merchant Sarah";
 };
 func void Use_Canthars_KomproBrief ()
 {   
@@ -219,7 +219,7 @@ INSTANCE ItKe_Dexter(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"A key to a chest";
-	TEXT[3]				=   "from Dexter";
+	TEXT[3]				=   "belonging to Dexter";
 	
 };
 //**********************************************************************************
@@ -239,7 +239,7 @@ INSTANCE ItWr_Kraeuterliste (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_Kraeuterliste;
 	scemeName			=	"MAP";
-	description			= 	"Constantinos Herbal List";
+	description			= 	"Constantino's list of herbs";
 };
 func void Use_Kraeuterliste ()
 {   
@@ -290,7 +290,7 @@ INSTANCE ItWr_ManaRezept (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_ManaRezept;
 	scemeName			=	"MAP";
-	description			= 	"Recipe of the magic essence";
+	description			= 	"Recipe for magical essence";
 };
 func void Use_ManaRezept ()
 {   
@@ -337,7 +337,7 @@ INSTANCE ItWr_Passierschein	(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[3]				=	"These papers permit me to";
-	TEXT[4]				=   "I pass the city guards.";
+	TEXT[4]				=   "pass the city guards";
 };
 func void UsePassierschein ()
 {   
@@ -389,7 +389,7 @@ INSTANCE ItMi_HerbPaket(C_Item)
 	
 	description			= 	name;
 	TEXT[2]				= 	"A heavy, sticky package that";
-	TEXT[3]				=	"that reeks of bogweed.";
+	TEXT[3]				=	"stinks of swampweed";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	200;
@@ -414,7 +414,7 @@ INSTANCE ItKe_Storage(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"The key to the harbor";
-	TEXT[3]				=   "Warehouse at the harbour";
+	TEXT[3]				=   "storehouse";
 	
 };
 const int HP_Hering = 20;
@@ -522,7 +522,7 @@ INSTANCE ItWr_VatrasMessage	(C_Item)
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
 	TEXT[2]				=   "A message from Vatras";
-	TEXT[3]				=   "for the magicians of fire";
+	TEXT[3]				=   "to the Fire Mages";
 };
 func void UseVatrasMessage ()
 {   
@@ -536,9 +536,9 @@ func void UseVatrasMessage ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Dear Isgaroth,"					);
-					Doc_PrintLines	( nDocID,  0, "I feel more and more the presence of another power."					);
-					Doc_PrintLines	( nDocID,  0, "A power that is not unknown to us. May it be that servants are near to Beliars?"					);
-					Doc_PrintLines	( nDocID,  0, "Maybe I'm wrong, but I think it would be appropriate for Father Pyrokar to deal with the matter. "					);
+					Doc_PrintLines	( nDocID,  0, "I sense the ever-growing presence of another force."					);
+					Doc_PrintLines	( nDocID,  0, "It's a force so far unknown to us. Can it be that there are vassals of Beliar near?"					);
+					Doc_PrintLines	( nDocID,  0, "I could be mistaken, but I believe Father Pyrokar would be wise to take the matter in hand. "					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "May our prayers be answered."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -565,8 +565,8 @@ INSTANCE ItWr_VatrasMessage_Open	(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[2]				=   "A message from Vatras";
-	TEXT[3]				=   "for the magicians of fire";
-	TEXT[4]				=   "The seal is broken";
+	TEXT[3]				=   "to the Fire Mages";
+	TEXT[4]				=   "The seal was broken.";
 };
 func void UseVatrasMessageOpen ()
 {   
@@ -580,9 +580,9 @@ func void UseVatrasMessageOpen ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book		   		); 	
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Dear Isgaroth,"					);
-					Doc_PrintLines	( nDocID,  0, "I feel more and more the presence of another power."					);
-					Doc_PrintLines	( nDocID,  0, "A power that is not unknown to us. May it be that servants are near to Beliars?"					);
-					Doc_PrintLines	( nDocID,  0, "Maybe I'm wrong, but I think it would be appropriate for Father Pyrokar to deal with the matter. "					);
+					Doc_PrintLines	( nDocID,  0, "I sense the ever-growing presence of another force."					);
+					Doc_PrintLines	( nDocID,  0, "It's a force so far unknown to us. Can it be that there are vassals of Beliar near?"					);
+					Doc_PrintLines	( nDocID,  0, "I could be mistaken, but I believe Father Pyrokar would be wise to take the matter in hand. "					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "May our prayers be answered."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -607,7 +607,7 @@ INSTANCE ItKe_Hotel(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"The room key";
-	TEXT[3]				=   "from the hotel";
+	TEXT[3]				=   "room.";
 	
 };
 //****************************************************
@@ -627,7 +627,7 @@ INSTANCE ItKe_ThiefGuildKey_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Sea salt has corroded this key.";
+	TEXT[2]				=	"This key has been damaged by salty seawater.";
 	
 };
 //****************************************************
@@ -647,7 +647,7 @@ INSTANCE ItKe_ThiefGuildKey_Hotel_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The cellar key of the hotel";
+	TEXT[2]				=	"The key to the hotel cellar.";
 	
 };
 //****************************************************
@@ -667,8 +667,8 @@ INSTANCE ItKe_Innos_MIS(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The key to the gate";
-	TEXT[3]				=   "of the Innos Monastery";
+	TEXT[2]				=	"The key to the portal of the";
+	TEXT[3]				=   "monastery of Innos.";
 	
 };
 //****************************************************************************
@@ -690,7 +690,7 @@ INSTANCE ItKe_KlosterSchatz(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"The key to ";
-	TEXT[3]				=   "Treasury in the monastery";
+	TEXT[3]				=   "treasury.";
 	
 };
 //****************************************************************************
@@ -712,7 +712,7 @@ INSTANCE ItKe_KlosterStore(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"The key to ";
-	TEXT[3]				=   "pantry in the monastery";
+	TEXT[3]				=   "larder.";
 	
 };
 //****************************************************************************
@@ -733,8 +733,8 @@ INSTANCE ItKe_KDFPlayer(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The key to the ";
-	TEXT[3]				=   "Cloister in the monastery";
+	TEXT[2]				=	"The key to the chamber ";
+	TEXT[3]				=   "in the monastery.";
 	
 };
 //****************************************************************************
@@ -756,7 +756,7 @@ INSTANCE ItKe_KlosterBibliothek(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"The key to ";
-	TEXT[3]				=   "Library in the monastery";
+	TEXT[3]				=   "library.";
 	
 };
 //****************************************************************************
@@ -807,7 +807,7 @@ INSTANCE ItPo_Perm_LittleMana(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_MANAPOTION"; 
 
-	description		= 	"Essence of the Spirit";
+	description		= 	"Essence of Spirit";
 	TEXT[1]			= 	NAME_Bonus_ManaMax;			
 	COUNT[1]		= 	3;
 	TEXT[5]			= 	NAME_Value;					
@@ -845,10 +845,10 @@ INSTANCE Holy_Hammer_MIS (C_Item)
 
 	description			=  name;
 	//FIXME_Noki: TAB
-	TEXT[2]				=  "Damage to:?";
-	TEXT[3] 			=  "Required thickness:?";
+	TEXT[2]				=  "Damage:                 ??";
+	TEXT[3] 			=  "Strength required:        ??";
 	TEXT[4] 			=  "Two-Handed Weapon             ";
-	TEXT[5]				=  "Value:  cannot be estimated";					
+	TEXT[5]				=  "Value:  unable to determine";					
 	/*
 	description			= name;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
@@ -880,7 +880,7 @@ INSTANCE ItKe_MagicChest(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"An old iron key.";
-	TEXT[3]				=   "He could go to a hospital. ";
+	TEXT[3]				=   "It could belong to a ";
 	TEXT[4]				=	"padlock.";
 };
 //****************************************************************************
@@ -901,8 +901,8 @@ INSTANCE ItWr_Passage_MIS	(C_Item)
 	on_state[0]			=   UsePassage;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[3]				=	"With this bill, ";
-	TEXT[4]				=   "Lord Hagen will be admitted";
+	TEXT[3]				=	"With this note I should be able to ";
+	TEXT[4]				=   "see Lord Hagen";
 };
 func void UsePassage ()
 {   
@@ -917,16 +917,16 @@ func void UsePassage ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 
 					Doc_PrintLine	( nDocID,  0, ""								);
-					Doc_PrintLine	( nDocID,  0, "Honorable Lord Hagen,"			);
+					Doc_PrintLine	( nDocID,  0, "Honored Lord Hagen,"			);
 					Doc_PrintLine	( nDocID,  0, ""								);
-					Doc_PrintLines	( nDocID,  0, "We both know the situation you're in. I therefore propose the following trade: " 	);
-					Doc_PrintLines	( nDocID,  0, "You give me and all my men a general absolution from Innos and the king. "				);
-					Doc_PrintLines	( nDocID,  0, "In return, we offer our services for the defence of the city and the surrounding countryside. " );
-					Doc_PrintLines	( nDocID,  0, "I will also see to it that my men stay away from the surrounding courtyards - except, of course, the Onar courtyard, where we will continue to be stationed." );
-					Doc_PrintLines	( nDocID,  0, "I know that there is still room for me and some of my men on the ship with which you will leave for the mainland. When you set sail, I want to be on board." );
-					Doc_PrintLines	( nDocID,  0, "I beseech you, make your decision with all the wisdom given to you. " );
+					Doc_PrintLines	( nDocID,  0, "We are both aware of your situation. I therefore propose the following arrangement: " 	);
+					Doc_PrintLines	( nDocID,  0, "Grant my men and myself total absolution before Innos and before the King. "				);
+					Doc_PrintLines	( nDocID,  0, "In return, we offer to assist you in the defense of the town and the surrounding lands. " );
+					Doc_PrintLines	( nDocID,  0, "Moreover, I personally shall see to it that my men steer clear of the surrounding farms - except, of course, that of Onar, where we will continue to be stationed." );
+					Doc_PrintLines	( nDocID,  0, "I am aware that there is enough room for myself and some of my men on the ship aboard which you will depart to the mainland. When you set sail, I want to be on board." );
+					Doc_PrintLines	( nDocID,  0, "I beseech you: Make your decision with all the wisdom given to you. " );
 					Doc_PrintLine	( nDocID,  0, ""								);
-					Doc_PrintLine	( nDocID,  0, ""		);
+					Doc_PrintLine	( nDocID,  0, "Signed   General Lee"		);
 					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   				);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
 				
 					Doc_Show		( nDocID );
@@ -977,24 +977,24 @@ func void UseBanditLetter ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "Stop all men, "							);
-					Doc_PrintLine	(nDocID,  0, " coming from the mountains."						);
-					Doc_PrintLine	(nDocID,  0, "In case someone comes along the pass, "				);
-					Doc_PrintLine	(nDocID,  0, " it's probably an old man."			);
+					Doc_PrintLine	(nDocID,  0, "Stop all men who come "							);
+					Doc_PrintLine	(nDocID,  0, " from the mountains."						);
+					Doc_PrintLine	(nDocID,  0, "If someone comes along the pass, "				);
+					Doc_PrintLine	(nDocID,  0, " it will probably be an old man."			);
 					Doc_PrintLine	(nDocID,  0, "Don't let him fool you - "				);
-					Doc_PrintLine	(nDocID,  0, " he's a dangerous sorcerer.   "				);
-					Doc_PrintLine	(nDocID,  0, "Keep an eye on the guy."						);
+					Doc_PrintLine	(nDocID,  0, " he is a dangerous sorcerer.   "				);
+					Doc_PrintLine	(nDocID,  0, "Keep an eye on him."						);
 					Doc_PrintLine	(nDocID,  0, "     "											);
 					Doc_PrintLine	(nDocID,  0, "It's a good thing the guy we're looking for, "		);
-					Doc_PrintLine	(nDocID,  0, " to get in touch with him. "						);
-					Doc_PrintLine	(nDocID,  0, "With this letter I send you "				);
-					Doc_PrintLine	(nDocID,  0, " Thirty pieces of gold. "							);
-					Doc_PrintLine	(nDocID,  0, "They get thirty more, "				);
+					Doc_PrintLine	(nDocID,  0, " will contact him. "						);
+					Doc_PrintLine	(nDocID,  0, "With this letter I'm sending you "				);
+					Doc_PrintLine	(nDocID,  0, " thirty pieces of gold. "							);
+					Doc_PrintLine	(nDocID,  0, "I will give another thirty to anyone "				);
 					Doc_PrintLine	(nDocID,  0, " who kills the man. "							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "Take his head to the old mine, the big farmer's.");
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "..... D."											);
+					Doc_PrintLine	(nDocID,  0, ".....D."											);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetMargins	(nDocID, -1, 200, 50, 50, 50, 1);
 					Doc_Show		(nDocID);
@@ -1186,7 +1186,7 @@ INSTANCE ItRw_Bow_L_03_MIS (C_Item)
 	description			= name;
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Dex_needed;				COUNT[3]	= cond_value[2];
-	TEXT[4]				= "Bosper's hunting bow";
+	TEXT[4]				= "Bosper's hunting bow.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
 };
 //****************************************************************************
@@ -1254,9 +1254,9 @@ INSTANCE ItMi_EddasStatue (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				= 	"Innos Lord of Justice ";
-	TEXT[3]				= 	"bless and keep me";
-	TEXT[4]				= 	"to which no evil shall befall me";
+	TEXT[2]				= 	"Innos, Lord of Justice ";
+	TEXT[3]				= 	"bless and guard me,";
+	TEXT[4]				= 	"and spare me from harm.";
 	
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
@@ -1280,7 +1280,7 @@ INSTANCE ItKe_EVT_CRYPT_01(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The Key of the Skeleton in Room 1";
+	TEXT[2]				=	"The key from the skeleton in room 1";
 	
 };
 
@@ -1298,7 +1298,7 @@ INSTANCE ItKe_EVT_CRYPT_02(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The Key of the Skeleton in Room 2";
+	TEXT[2]				=	"The key from the skeleton in room 2";
 	
 };
 
@@ -1316,7 +1316,7 @@ INSTANCE ItKe_EVT_CRYPT_03(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The Key of the Skeleton Room 3";
+	TEXT[2]				=	"The key from the skeleton in room 3";
 	
 };
 
@@ -1380,8 +1380,8 @@ INSTANCE ItKe_Valentino(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The chest key";
-	TEXT[3]				=   "from Valentino";
+	TEXT[2]				=	"The key to a chest";
+	TEXT[3]				=   "belonging to Valentino.";
 	
 };
 //****************************************************************************
@@ -1402,7 +1402,7 @@ INSTANCE ItKe_Buerger(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Was laying around on a window sill";
+	TEXT[2]				=	"It was lying around on a windowsill.";
 	TEXT[3]				=   "";
 	
 };
@@ -1424,8 +1424,8 @@ INSTANCE ItKe_Richter(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The chest key";
-	TEXT[3]				=   "of the judge";
+	TEXT[2]				=	"The key to a chest";
+	TEXT[3]				=   "belonging to the judge.";
 	
 };
 //****************************************************************************
@@ -1446,7 +1446,7 @@ INSTANCE ItKe_Salandril(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"by Salandril the alchemist";
+	TEXT[2]				=	"belonging to Salandril the Alchemist.";
 	TEXT[3]				=   "";
 	
 };
@@ -1511,7 +1511,7 @@ INSTANCE ItKe_Fingers(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"A rusty door wrench";
+	TEXT[2]				=	"A rusty door key";
 	TEXT[3]				=   "from the sewerage system";
 	
 };
@@ -1532,7 +1532,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Lehmar's debt book";
+	description				= 	"Lehmar's book of debts.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseSchuldBuch;
@@ -1553,7 +1553,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Transactions and debts"	);
+					Doc_PrintLines	( nDocID,  0, "Deals and Debts"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_PrintLines	( nDocID,  0, "I Master Thorben, carpenter of Khorinis, owe 200 gold coins to the honourable Mr. Lehmar.");
@@ -1626,7 +1626,7 @@ INSTANCE ITKE_ORLAN_HOTELZIMMER(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"To the dead harpie?";
+	TEXT[2]				=	"from the tavern 'The Dead Harpy'.";
 	TEXT[3]				=   "";
 	
 };

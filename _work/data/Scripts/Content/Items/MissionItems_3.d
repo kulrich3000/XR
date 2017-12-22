@@ -28,7 +28,7 @@ INSTANCE  ItMi_InnosEye_MIS (C_ITEM)
 	on_equip			=	Equip_InnosEye;
 	on_unequip			=	UnEquip_InnosEye;
 
-	TEXT	[0]			=	"The eye pulsates full of energy";
+	TEXT	[0]			=	"Energy pulses through the Eye";
 
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -76,7 +76,7 @@ INSTANCE ItMi_InnosEye_Discharged_Mis (C_Item)
 
 	description			= 	name;
 	on_equip			=	Equip_ItMi_InnosEye_Discharged_Mis;
-	TEXT	[0]			=	"The eye is matte and without shine";
+	TEXT	[0]			=	"The Eye is faded and does not shine";
 	
 	INV_ZBIAS				= INVCAM_ENTF_AMULETTE_STANDARD;
 	
@@ -227,7 +227,7 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 
 	scemeName				=	"MAP";
 	description				= 	"Tagebuch";
-	TEXT	[0]				=	"Cornelius' diary";
+	TEXT	[0]				=	"The diary of Cornelius";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseCorneliusTagebuch;
@@ -256,7 +256,7 @@ INSTANCE ItWr_CorneliusTagebuch_Mis (C_ITEM)
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "He offered me 20000 pieces of gold if I make sure one of the mercenaries gets convicted. I'd know when it was time."	);
+					Doc_PrintLines	( nDocID,  1, "He offered me 20,000 pieces of gold to make sure one of the mercenaries gets convicted. He said I'd know what he meant when it happened."	);
 					Doc_PrintLines	( nDocID,  1, "Of course I agreed right away, those mercenaries don't deserve any better anyway. If it weren't for them everything would be just fine for me here. And the gold will let me settle down to a comfortable retirement."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "It's happened, they've arrested one of those mercenaries. It should be easy to keep my word.");
@@ -392,7 +392,7 @@ func void Use_PyrokarsObsessionList ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "The possessed"					);
+					Doc_PrintLine	( nDocID,  0, "The Possessed"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 	
 					if (Kapitel >= 3)
@@ -454,7 +454,7 @@ INSTANCE ItPo_HealHilda_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Black fever cure";
+	description		= 	"Healing of the Black Fever";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -538,8 +538,8 @@ INSTANCE ItMw_MalethsGehstock_MIS (C_Item)
 	visual 				=	"Itmw_008_1h_pole_01.3ds";
 
 	description			= 	name;
-	TEXT[0]				= 	"At his headboard";
-	TEXT[1]				= 	"the letter  is carved in";					
+	TEXT[0]				= 	"The letter 'M' has been";
+	TEXT[1]				= 	"engraved at the top.";					
 
 	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
 	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
@@ -627,7 +627,7 @@ INSTANCE ItWr_BabosLetter_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_BabosLetter;
 	scemeName			=	"MAP";
-	description			= "Letter to Babo.";
+	description			= "A letter to Babo.";
 };
 func void Use_BabosLetter ()
 {   
@@ -639,10 +639,10 @@ func void Use_BabosLetter ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		); 
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Dear Babo!"					);
+					Doc_PrintLine	( nDocID,  0, "Dear Babo,"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "You're probably wondering how we get to write you this letter. We put all the money together and asked Master Marlas to write these lines here. So we wish you good luck on your way and hope you don't forget your friends. As a farewell gift, we have packed another picture so that you always remember us and the nights in the monastery do not become too long for you.");
-					Doc_PrintLines	( nDocID,  0, "Good luck in the monastery and have fun with the picture.");
+					Doc_PrintLines	( nDocID,  0, "No doubt you're wondering how we came to write you this letter. We took all our savings to Master Marlas and asked him to write these lines for you. We wish you all the best for the future and are sending you a picture as a farewell gift, so that you'll always remember us during those long nights at the monastery.");
+					Doc_PrintLines	( nDocID,  0, "Good luck. Hope you like the picture.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Feht and Bonka.");
 					
@@ -669,7 +669,7 @@ INSTANCE ItWr_BabosPinUp_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_BabosPinUp;
 	scemeName			=	"MAP";
-	description			= "A picture of a naked woman";
+	description			= "A picture of a nacked woman";
 };
 func void Use_BabosPinUp ()
 {   
@@ -699,8 +699,8 @@ INSTANCE ItWr_BabosDocs_MIS	(C_Item)
 	on_state[0]			=   Use_BabosDocs;
 	scemeName			=	"MAPSEALED";
 	description			= 	name;
-	TEXT[2]				=   "Several rolled up";
-	TEXT[3]				=   "documents";
+	TEXT[2]				=   "Several documents rolled";
+	TEXT[3]				=   "together.";
 };
 func void Use_BabosDocs ()
 {   
@@ -728,8 +728,8 @@ INSTANCE ItKe_IgarazChest_Mis(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"The key to";
-	TEXT[3]				=   "the chest of Igaraz";
+	TEXT[2]				=	"The key to a chest";
+	TEXT[3]				=   "belonging to Igaraz.";
 	
 }; 
 
@@ -777,12 +777,12 @@ FUNC VOID Use_Astronomy()
 					Doc_SetFont 	( nDocID,  -1, FONT_Book	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels					
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "... But if now the power of the ox unites itself with the principles of the warrior, let all be warned of the events that may come.");
-					Doc_PrintLines	( nDocID,  0, "The unbridled power of the ox and the warrior's determination is capable of shattering the ancient balance of power. The cosmic boundary between the dimensions is becoming so weak that the shadow creatures of Beliar can easily move into our world. ");
+					Doc_PrintLines	( nDocID,  0, "... but when the strength of an ox is combined with the principles of a warrior, then beware of the events that may come to pass.");
+					Doc_PrintLines	( nDocID,  0, "The unbound strength of the ox and the determination of the warrior can shatter the ancient balance of the forces. The cosmic border between the dimensions grows weak - so weak that it becomes easy for the shadow creatures of Beliar to enter our world. ");
 					//2.Seite
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "What such a thing means is shown to us by the wars of the early days, when the bond between the worlds was even stronger. The henchmen of evil brought death and destruction to the world, and only with the help of Inno's and his chosen one was it possible for man to defeat disaster. "	);
+					Doc_PrintLines	( nDocID,  1, "What this means is shown to us by the wars of the past, when the link between the worlds was still strong. The henchmen of Evil brought death and destruction to the world, and only with the help of Innos and the Chosen One it was possible to prevent harm from mankind "	);
 					Doc_PrintLines	( nDocID,  1, "If it ever happens again, Innos may protect us, because there hasn't been an elected Innos for more than a hundred years."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "");
@@ -812,7 +812,7 @@ INSTANCE ItPo_HealObsession_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Healing the obsession";
+	description		= 	"Healing of Possession";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -871,7 +871,7 @@ INSTANCE ItSe_Golemchest_Mis	(C_Item)
 	material 			=	MAT_METAL;
 	on_state[0]			=   Use_GolemChest;
 	
-	description			= 	"One leather bag";
+	description			= 	"A leather bag";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
@@ -990,7 +990,7 @@ INSTANCE ItSe_DiegosTreasure_Mis(C_Item)
 	scemename			=	"MAPSEALED";	
 	material 			=	MAT_METAL;
 	on_state[0]			=   Use_DiegosTreasure;
-	description			= 	"Diego's old leather bag";
+	description			= 	"Diego's old leather bag.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -1075,10 +1075,10 @@ func void Use_MinenAnteil_Mis ()
 					Doc_PrintLines	(nDocID,  0, "The owner of this letter is permitted, according to the Royal Decree on the Acquisition of Property from Reichsgrund, to act as a prospector on royal property.");
 					Doc_PrintLines	(nDocID,  0, "His prospecting activities must be limited to the area of a royal parcel of land.");
 					Doc_PrintLines	(nDocID,  0, "Reichsklein parcels are defined by the decree on the size of prospecting ground on an area of 16 legal steps, in the flat, and no more than 3 steps in the increasing extension.");
-					Doc_PrintLines	(nDocID,  0, "The Reichsprospector is exempted from all obligations regarding the free access and protection of prospecting plots.");
+					Doc_PrintLines	(nDocID,  0, "The Prospector of the Realm is unbound by any duties of free access and protection of scraping cells.");
 					Doc_PrintLines	(nDocID,  0, "If it is not possible for the tenant to pay the due levies on time, all rights to land and property are returned to the Reich.");
-					Doc_PrintLine	(nDocID,  0, "     plotted"									);
-					Doc_PrintLine	(nDocID,  0, "     royal prospector"						);
+					Doc_PrintLine	(nDocID,  0, "     Signed"									);
+					Doc_PrintLine	(nDocID,  0, "     Prospector of the King"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "          Salandril"								);
 					Doc_Show		(nDocID);
@@ -1188,13 +1188,13 @@ func void Use_RichterKomproBrief ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Morgahard, you bum! Do what I tell you to do, or I will wind up other sides and you will all be arrested.");
-					Doc_PrintLines	( nDocID,  0, "This thing's going down tomorrow night. Larius is getting suspicious. ");
-					Doc_PrintLines	( nDocID,  0, "If we don't get the money out of his pocket now, there may not be another chance. I'll make sure you meet him tonight in the marketplace. ");
+					Doc_PrintLines	( nDocID,  0, "It's gotta happen tomorrow night. Larius is getting suspicious. ");
+					Doc_PrintLines	( nDocID,  0, "If we don't drag the money out of his pockets now, it may be too late. I'll make sure you meet him on the marketplace this evening. ");
 					Doc_PrintLines	( nDocID,  0, "Don't make a fuss, or the militia will beat you before you know what's going on.");
-					Doc_PrintLines	( nDocID,  0, "By the way, if he gets killed in the process, I don't mind."									);
+					Doc_PrintLines	( nDocID,  0, "By the way: If he happens to peg out in the process, that's fine by me."									);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "          Supreme Judge and "		);
-					Doc_PrintLine	( nDocID,  0, "          royal secretary"		);
+					Doc_PrintLine	( nDocID,  0, "          Chief Judge and "		);
+					Doc_PrintLine	( nDocID,  0, "          King's Secretary"		);
 					Doc_PrintLine	( nDocID,  0, ""			);
 					
 					Doc_Show		( nDocID );
@@ -1235,7 +1235,7 @@ func void Use_MorgahardTip ()
 					Doc_PrintLines	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, "I went ahead of you once before. I hope we'll all see each other in a bit more quiet times.");
 					Doc_PrintLines	(nDocID,  0, "Don't worry, boys. If all the strings are broken, I'll ask Onar to take care of it for us.");
-					Doc_PrintLines	(nDocID,  0, "Everything's gonna be all right."					);
+					Doc_PrintLines	(nDocID,  0, "It'll be all right."					);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "     M."											);

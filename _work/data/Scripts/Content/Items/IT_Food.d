@@ -62,7 +62,7 @@ INSTANCE ItFo_Apple (C_Item)
 	};
 	
 	TEXT[3]				=    "A fresh apple";
-	TEXT[4]				=    "crisp and juicy";
+	TEXT[4]				=    "firm and juicy";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 
@@ -145,7 +145,7 @@ INSTANCE ItFo_AppleErika (C_Item)
 	};
 	
 	TEXT[3]				=    "A fresh apple";
-	TEXT[4]				=    "crisp and juicy";
+	TEXT[4]				=    "firm and juicy";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 

@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Erntehelfer_01_Hi_Condition()
 FUNC VOID Info_Mod_Erntehelfer_01_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_Hi_15_00"); //What does work say?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_Hi_06_01"); //Nothing special. You go through it and you're done with it.
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_Hi_01_01"); //Nothing special. You go through it and you're done with it.
 };
 
 INSTANCE Info_Mod_Erntehelfer_01_AndererJob (C_INFO)
@@ -39,9 +39,9 @@ FUNC INT Info_Mod_Erntehelfer_01_AndererJob_Condition()
 FUNC VOID Info_Mod_Erntehelfer_01_AndererJob_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_00"); //Never dreamed of pursuing another profession before?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_01"); //Yes, it is. I always wanted to be a watcher in Khorata. But Anselm didn't take me.
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_01_01"); //Yes, it is. I always wanted to be a watcher in Khorata. But Anselm didn't take me.
 	AI_Output(hero, self, "Info_Mod_Erntehelfer_01_AndererJob_15_02"); //And why weren't you hired?
-	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_06_03"); //He said he was having a bad day and he didn't want to listen to shit like that.
+	AI_Output(self, hero, "Info_Mod_Erntehelfer_01_AndererJob_01_03"); //He said he was having a bad day and he didn't want to listen to shit like that.
 };
 
 INSTANCE Info_Mod_Erntehelfer_01_Pickpocket (C_INFO)

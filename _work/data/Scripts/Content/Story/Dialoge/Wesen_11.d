@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_11_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_11_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_11_Hi_18_00"); //The sea is actually just a big lake and society... just a great individual.
+	AI_Output(self, hero, "Info_Mod_Wesen_11_Hi_10_00"); //The sea is actually just a big lake and society... just a great individual.
 
 	AI_StopProcessInfos	(self);
 };

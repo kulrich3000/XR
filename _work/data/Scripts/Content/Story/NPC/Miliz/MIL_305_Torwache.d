@@ -1,10 +1,10 @@
 instance Mil_305_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "English"; 	
+	name 		= "Engor"; 	
 	guild 		= GIL_PAL;
 	id 			= 305;
-	voice 		= 3;
+	voice		= 9;
 	flags       = NPC_FLAG_IMMORTAL;																
 	npctype		= NPCTYPE_MAIN;
 	

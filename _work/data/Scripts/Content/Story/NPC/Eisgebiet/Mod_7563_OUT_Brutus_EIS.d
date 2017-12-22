@@ -1,10 +1,10 @@
 INSTANCE Mod_7563_OUT_Brutus_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "breeding"; 	
+	name 		= "Brutus"; 	
 	guild 		= GIL_OUT;
 	id 			= 7563;
-	voice 		= 8;																	
+	voice		= 0;																	
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ Attribute ------

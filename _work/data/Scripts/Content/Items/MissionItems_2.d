@@ -55,7 +55,7 @@ func void UsePaladinLetter ()
 					Doc_PrintLines	( nDocID,  0, "The expedition to the Valley of Mines failed. We suffered many losses. The survivors are trapped in the castle, surrounded by orcs. ");
 					Doc_PrintLines	( nDocID,  0, "We have been attacked by dragons many times. They have devastated the lands around the castle. With Innos' help we shall prevail until reinforcements arrive. A sortie is impossible. ");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Innos protect us all");
+					Doc_PrintLine	( nDocID,  0, "May Innos keep us all");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Garond");
 					Doc_Show		( nDocID );
@@ -168,7 +168,7 @@ INSTANCE ITKE_ErzBaronFlur(C_Item)
 
 	description			= 	"For the first door";
 	
-	TEXT[2]				= 	"A name is engraved";
+	TEXT[2]				= 	"There is a name engraved on it";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -190,7 +190,7 @@ INSTANCE ITKE_ErzBaronRaum(C_Item)
 
 	description			= 	"For the second door";
 	
-	TEXT[2]				= 	"A name is engraved";
+	TEXT[2]				= 	"There is a name engraved on it";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -231,7 +231,7 @@ INSTANCE ItMi_GornsTreasure_MIS(C_Item)
 	material 			=	MAT_METAL;
 	on_state[0]			=   UseGornsTreasure;
 	
-	description			= 	"Gorn's Leather Bags";
+	description			= 	"Gorn's leather bag";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -275,7 +275,7 @@ func void UseItwr_Silvestro ()
 				Doc_PrintLines	( nDocID,  0, "Diego's the only one of us who knows his way round here. I have to trust him. He'll take the chests to safety - but I'm not letting him go alone.");	
 				Doc_PrintLines	( nDocID,  0, "The ore must be protected at all costs, so I'm sending two knights to go with Diego.");	
 				Doc_PrintLine	( nDocID,  0, "");
-				Doc_PrintLine	( nDocID,  0, "Long live the king");
+				Doc_PrintLine	( nDocID,  0, "Long live the King");
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLine	( nDocID,  0, "silvestro");
 				Doc_Show		( nDocID );
@@ -324,7 +324,7 @@ INSTANCE ItSe_Olav	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"A few coins strum in it";
+	TEXT[2]				= 	"There are a few coins jingling inside";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -369,7 +369,7 @@ INSTANCE ItKe_Pass_MIS(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	"A small key";
-	TEXT[1]				= 	"Opens the gate at the pass";
+	TEXT[1]				= 	"Opens the gate to the pass";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
@@ -388,7 +388,7 @@ INSTANCE ItKe_Bromor(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	"The room key";
-	TEXT[1]				= 	"from the brothel owner";
+	TEXT[1]				= 	"of the bordel owner";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
@@ -406,11 +406,11 @@ INSTANCE ITKE_RUNE_MIS(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"A small chest key";
+	description			= 	"A small key to a chest";
 	
 	TEXT[1]				= 	"The chest this key belongs to";
-	TEXT[2]				= 	"stands under a bridge";
-	TEXT[3]				= 	"and contains a rune stone";
+	TEXT[2]				= 	"is under a bridge";
+	TEXT[3]				= 	"and contains a runestone";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -491,15 +491,15 @@ func void UsePfandbrief ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "To repay outstanding debts  "					);
-					Doc_PrintLine	( nDocID,  0, "a pledge is suspended which, with its net value of"					);
-					Doc_PrintLine	( nDocID,  0, "corresponds to the amount of the debt."					);
+					Doc_PrintLine	( nDocID,  0, "For payment of outstanding debts a  "					);
+					Doc_PrintLine	( nDocID,  0, "pawned item shall be accepted, whose value"					);
+					Doc_PrintLine	( nDocID,  0, "equals that of the debts."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Deposit: Decorated goblet of gold "					);
-					Doc_PrintLines	( nDocID,  0, "from the collection of blood cups");
+					Doc_PrintLine	( nDocID,  0, "Pawned: A decorated gold chalice "					);
+					Doc_PrintLines	( nDocID,  0, "of the Blood Chalice collection");
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "marked");
-					Doc_PrintLine	( nDocID,  0, "Lutero, Dealer  "					);
+					Doc_PrintLine	( nDocID,  0, "signed");
+					Doc_PrintLine	( nDocID,  0, "Lutero, merchant  "					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Lehmar, pawnbroker"					);
 					Doc_Show		( nDocID );
@@ -558,7 +558,7 @@ INSTANCE ItWr_Manowar		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseManowar;
 	scemeName			=	"MAP";
-	description			=   "A lyrics";
+	description			=   "Song lyrics.";
 };
 func void UseManowar ()
 {   
@@ -571,17 +571,17 @@ func void UseManowar ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Dominique's Reputation");
+					Doc_PrintLines	( nDocID,  0, "Dominique's Cry");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "We will reap his glory ");
-					Doc_PrintLines	( nDocID,  0, "Innos stands by me and my brothers");					
-					Doc_PrintLines	( nDocID,  0, "I will slaughter them all like sheep on my way"					);
-					Doc_PrintLines	( nDocID,  0, "for he is the fire in my heart"					);
-					Doc_PrintLines	( nDocID,  0, "My blade is dedicated only to him  "					);
-					Doc_PrintLines	( nDocID,  0, "that day his name will resound"					);
-					Doc_PrintLines	( nDocID,  0, "Anyone who stands in my way"					);
-					Doc_PrintLines	( nDocID,  0, "will die by my hand");
-					Doc_PrintLines	( nDocID,  0, "for I am a warrior Innos"					);
+					Doc_PrintLines	( nDocID,  0, "We shall reap His glory. ");
+					Doc_PrintLines	( nDocID,  0, "Innos stands by me and my brothers.");					
+					Doc_PrintLines	( nDocID,  0, "I will slay all who would stop me like sheep"					);
+					Doc_PrintLines	( nDocID,  0, "for He is the fire inside my heart."					);
+					Doc_PrintLines	( nDocID,  0, "My blade serves Him alone.  "					);
+					Doc_PrintLines	( nDocID,  0, "On this day His name will echo forth."					);
+					Doc_PrintLines	( nDocID,  0, "Any man who opposes me"					);
+					Doc_PrintLines	( nDocID,  0, "will die at my hand");
+					Doc_PrintLines	( nDocID,  0, "for I am a warrior of Innos."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -604,7 +604,7 @@ INSTANCE ItWr_KDWLetter		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseKDWLetter;
 	scemeName			=	"MAP";
-	description			=  "A message";
+	description			=  "A message.";
 };
 func void UseKDWLetter ()
 {   
@@ -618,11 +618,11 @@ func void UseKDWLetter ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "We have left the camp. Now that the barrier has finally fallen, we will go to the centre of destruction. Perhaps we will find the answers that we have been looking for for so many years. Only Adanos knows where our journey will take us."					);
+					Doc_PrintLines	( nDocID,  0, "We have left the camp. Now that the Barrier has fallen, we will seek out the center of the destruction. Maybe we will find there the answers we have sought for so many years. Adanos alone knows where our journey will take us."					);
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Adanos is with us"					);
+					Doc_PrintLines	( nDocID,  0, "Adanos is with us."					);
 					Doc_PrintLine	( nDocID,  0, "Saturas");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
@@ -646,7 +646,7 @@ INSTANCE ItWr_GilbertLetter		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseGilbertLetter;
 	scemeName			=	"MAP";
-	description			=  "A message";
+	description			=  "A message.";
 };
 func void UseGilbertLetter ()
 {   
@@ -661,8 +661,8 @@ func void UseGilbertLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "I've had enough. I've been hiding out here long enough. And if I got it right, the barrier has finally been removed.  "					);
-					Doc_PrintLines	( nDocID,  0, "I don't think there's gonna be anybody looking for me anymore. I'm sick of this cave and the whole valley. About time I got home.");
+					Doc_PrintLines	( nDocID,  0, "I'm fed up. I've been hiding here long enough. And if I heard rightly, the Barrier's finally fallen.  "					);
+					Doc_PrintLines	( nDocID,  0, "It seems unlikely anyone will look for me now. I've had enough of this cave and the whole damn valley. It's time I went home.");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);

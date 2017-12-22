@@ -15,9 +15,9 @@ FUNC INT Info_Mod_AufgebrachteBuergerin_Hi_Condition()
 
 FUNC VOID Info_Mod_AufgebrachteBuergerin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_00"); //Iih! That's him!
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_19_00"); //Iih! That's him!
 	AI_Output(hero, self, "Info_Mod_AufgebrachteBuergerin_Hi_15_01"); //Calm down, calm down! Who's what?
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_02"); //You're the butcher! Murderer, murderer!
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_19_02"); //You're the butcher! Murderer, murderer!
 
 	AI_StopProcessInfos	(self);
 

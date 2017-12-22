@@ -29,7 +29,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Stoneguardian", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Erzguardian)) {
-			Spine_OverallSaveSetInt("Archguardian", 1);
+			Spine_OverallSaveSetInt("Erzguardian", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Shadowbeast_Fire)) {
 			Spine_OverallSaveSetInt("Shadowbeast_Fire", 1);
@@ -47,25 +47,25 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Riesenkeiler", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Icewolf) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(IcewolfEISGEBIET)) {
-			Spine_OverallSaveSetInt("ice wolf", 1);
+			Spine_OverallSaveSetInt("Icewolf", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Gobbo_Warrior) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Gobbo_Warrior_Visir)) {
 			Spine_OverallSaveSetInt("Gobbo_Warrior", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Giant_DesertRat)) {
-			Spine_OverallSaveSetInt("Giant_Desert Council", 1);
+			Spine_OverallSaveSetInt("Giant_DesertRat", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Bloodhound)) {
 			Spine_OverallSaveSetInt("Bloodhound", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Blattcrawler)) {
-			Spine_OverallSaveSetInt("foliar crawler", 1);
+			Spine_OverallSaveSetInt("Blattcrawler", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Erznager)) {
 			Spine_OverallSaveSetInt("Erznager", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_INSEKT) {
-			Spine_OverallSaveSetInt("insect", 1);
+			Spine_OverallSaveSetInt("Insect", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Alligator)) {
 			Spine_OverallSaveSetInt("Alligator", 1);
@@ -74,7 +74,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Zombie", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_ZIEGE) {
-			Spine_OverallSaveSetInt("goat", 1);
+			Spine_OverallSaveSetInt("Ziege", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Wolf) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(YWolf)) {
 			Spine_OverallSaveSetInt("Wolf", 1);
@@ -83,7 +83,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Riesenwolf", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Wisp)) {
-			Spine_OverallSaveSetInt("wisp", 1);
+			Spine_OverallSaveSetInt("Wisp", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Warg)) {
 			Spine_OverallSaveSetInt("Warg", 1);
@@ -101,7 +101,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Troll_Black", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Troll_Silber)) {
-			Spine_OverallSaveSetInt("Troll_Silver", 1);
+			Spine_OverallSaveSetInt("Troll_Silber", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Troll)) {
 			Spine_OverallSaveSetInt("Troll", 1);
@@ -119,19 +119,19 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Lindwurm", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Wurm)) {
-			Spine_OverallSaveSetInt("maggot", 1);
+			Spine_OverallSaveSetInt("Wurm", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(StoneGolem)) {
 			Spine_OverallSaveSetInt("StoneGolem", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_ERZGOLEM) {
-			Spine_OverallSaveSetInt("ore golem", 1);
+			Spine_OverallSaveSetInt("ErzGolem", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(EisenGolem)) {
-			Spine_OverallSaveSetInt("iron golem", 1);
+			Spine_OverallSaveSetInt("EisenGolem", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Spider) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Spider_01) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Spider_Lib)) {
-			Spine_OverallSaveSetInt("spider", 1);
+			Spine_OverallSaveSetInt("Spider", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Spider_Big) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Riesenspinne_XW_01) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Riesenspinne_XW_02) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Riesenspinne_XW_03) || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Riesenspinne_XW_04)) {
 			Spine_OverallSaveSetInt("Spider_Big", 1);
@@ -146,16 +146,16 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Snapper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(FeuerSnapper)) {
-			Spine_OverallSaveSetInt("Fire snapper", 1);
+			Spine_OverallSaveSetInt("FeuerSnapper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(WasserSnapper)) {
-			Spine_OverallSaveSetInt("Water snapper", 1);
+			Spine_OverallSaveSetInt("WasserSnapper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SchattenSnapper)) {
-			Spine_OverallSaveSetInt("Shadow snapper", 1);
+			Spine_OverallSaveSetInt("SchattenSnapper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Sleeper)) {
-			Spine_OverallSaveSetInt("sleeper", 1);
+			Spine_OverallSaveSetInt("Sleeper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SkeletonMage)) {
 			Spine_OverallSaveSetInt("SkeletonMage", 1);
@@ -167,7 +167,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Skeleton_Lord_Ghost", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Skeleton)) {
-			Spine_OverallSaveSetInt("skeleton", 1);
+			Spine_OverallSaveSetInt("Skeleton", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SkeletonWarrior)) {
 			Spine_OverallSaveSetInt("SkeletonWarrior", 1);
@@ -176,7 +176,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Lesser_Skeleton", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Sheep)) {
-			Spine_OverallSaveSetInt("sheep", 1);
+			Spine_OverallSaveSetInt("Sheep", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Hammel)) {
 			Spine_OverallSaveSetInt("Hammel", 1);
@@ -191,16 +191,16 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Shadowbeast", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Feuerlaeufer)) {
-			Spine_OverallSaveSetInt("runner", 1);
+			Spine_OverallSaveSetInt("Feuerlaeufer", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Wasserlaeufer)) {
-			Spine_OverallSaveSetInt("water runner", 1);
+			Spine_OverallSaveSetInt("Wasserlaeufer", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Eislaeufer)) {
-			Spine_OverallSaveSetInt("ice skater", 1);
+			Spine_OverallSaveSetInt("Eislaeufer", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Nightmare)) {
-			Spine_OverallSaveSetInt("nightmare", 1);
+			Spine_OverallSaveSetInt("Nightmare", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Scavenger_Ice)) {
 			Spine_OverallSaveSetInt("Scavenger_Ice", 1);
@@ -212,10 +212,10 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Scavenger", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Rabbit)) {
-			Spine_OverallSaveSetInt("rabbit", 1);
+			Spine_OverallSaveSetInt("Rabbit", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Orcdog)) {
-			Spine_OverallSaveSetInt("orcdog", 1);
+			Spine_OverallSaveSetInt("Orcdog", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Molerat)) {
 			Spine_OverallSaveSetInt("Molerat", 1);
@@ -224,10 +224,10 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Minotaurus", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(MinecrawlerWarrior)) {
-			Spine_OverallSaveSetInt("Minecrawler Warrior", 1);
+			Spine_OverallSaveSetInt("MinecrawlerWarrior", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(MinecrawlerWarrior_Undead)) {
-			Spine_OverallSaveSetInt("MinecrawlerWarrior_Undad", 1);
+			Spine_OverallSaveSetInt("MinecrawlerWarrior_Undead", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(RedCrab)) {
 			Spine_OverallSaveSetInt("RedCrab", 1);
@@ -272,10 +272,10 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Gobbo_Black", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Giant_Rat)) {
-			Spine_OverallSaveSetInt("Giant_Council", 1);
+			Spine_OverallSaveSetInt("Giant_Rat", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Rat)) {
-			Spine_OverallSaveSetInt("tip", 1);
+			Spine_OverallSaveSetInt("Rat", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Giant_Bug)) {
 			Spine_OverallSaveSetInt("Giant_Bug", 1);
@@ -284,25 +284,25 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("FireWaran", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(EisWaran)) {
-			Spine_OverallSaveSetInt("Ice monitor", 1);
+			Spine_OverallSaveSetInt("EisWaran", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_FIREGOLEM) {
 			Spine_OverallSaveSetInt("FireGolem", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Erdgigant)) {
-			Spine_OverallSaveSetInt("earth giant", 1);
+			Spine_OverallSaveSetInt("Erdgigant", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Eisdrachensnapper)) {
 			Spine_OverallSaveSetInt("Eisdrachensnapper", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(DungeonHarpie)) {
-			Spine_OverallSaveSetInt("Dungeon Harpie", 1);
+			Spine_OverallSaveSetInt("DungeonHarpie", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(DragonSnapper)) {
 			Spine_OverallSaveSetInt("DragonSnapper", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_RazorSkelett || Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SKELETRazor)) {
-			Spine_OverallSaveSetInt("Razor skeleton", 1);
+			Spine_OverallSaveSetInt("RazorSkelett", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(DemonLord)) {
 			Spine_OverallSaveSetInt("DemonLord", 1);
@@ -311,7 +311,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("DemonHigh", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Demon)) {
-			Spine_OverallSaveSetInt("demo", 1);
+			Spine_OverallSaveSetInt("Demon", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(LessDemon)) {
 			Spine_OverallSaveSetInt("LessDemon", 1);
@@ -320,7 +320,7 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Blutgolem", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Bloodfly)) {
-			Spine_OverallSaveSetInt("bloodfly", 1);
+			Spine_OverallSaveSetInt("Bloodfly", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Balrog)) {
 			Spine_OverallSaveSetInt("Balrog", 1);
@@ -329,19 +329,19 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Alraune", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Swamprat)) {
-			Spine_OverallSaveSetInt("swamprat", 1);
+			Spine_OverallSaveSetInt("Swamprat", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_SWAMPGOLEM) {
 			Spine_OverallSaveSetInt("SwampGolem", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SwampDrone)) {
-			Spine_OverallSaveSetInt("SwampDron", 1);
+			Spine_OverallSaveSetInt("SwampDrone", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Puma)) {
 			Spine_OverallSaveSetInt("Puma", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(StonePuma)) {
-			Spine_OverallSaveSetInt("Stone Puma", 1);
+			Spine_OverallSaveSetInt("StonePuma", 1);
 		};
 		if (opfer.aivar[AIV_MM_REAL_ID] == ID_APFELBAUM) {
 			Spine_OverallSaveSetInt("Apfelbaum", 1);
@@ -359,13 +359,13 @@ FUNC VOID B_EXPVerteiler (var C_NPC opfer, var C_NPC taeter)
 			Spine_OverallSaveSetInt("Hauertroll", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Schattenwark)) {
-			Spine_OverallSaveSetInt("shadow wind", 1);
+			Spine_OverallSaveSetInt("Schattenwark", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(Zombie_Eisschnee)) {
-			Spine_OverallSaveSetInt("Zombie_ice_snow", 1);
+			Spine_OverallSaveSetInt("Zombie_Eisschnee", 1);
 		};
 		if (Hlp_GetInstanceID(opfer) == Hlp_GetInstanceID(SchneeHase)) {
-			Spine_OverallSaveSetInt("SnowHare", 1);
+			Spine_OverallSaveSetInt("SchneeHase", 1);
 		};
 		CheckMonsterHunterAchievement();
 	};

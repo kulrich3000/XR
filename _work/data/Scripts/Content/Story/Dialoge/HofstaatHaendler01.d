@@ -21,12 +21,12 @@ FUNC INT Info_Mod_HofstaatHaendler01_Hi_Condition()
 FUNC VOID Info_Mod_HofstaatHaendler01_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_00"); //Is this place yours?
-	AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_01"); //Yeah.
+	AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_24_01"); //Yeah.
 	AI_Output(hero, self, "Info_Mod_HofstaatHaendler01_Hi_15_02"); //Give it to me.
 
 	if (self.aivar[AIV_Verhandlung] == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_03"); //Okay.
+		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_24_03"); //Okay.
 
 		Mod_Sekte_TraderHaus01 = 1;
 
@@ -40,7 +40,7 @@ FUNC VOID Info_Mod_HofstaatHaendler01_Hi_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_08_04"); //No, I'd rather not.
+		AI_Output(self, hero, "Info_Mod_HofstaatHaendler01_Hi_24_04"); //No, I'd rather not.
 	};
 };
 

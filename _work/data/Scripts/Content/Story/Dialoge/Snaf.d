@@ -17,15 +17,15 @@ FUNC VOID Info_Mod_Snaf_Hi_Info()
 {
 	if (Mod_Import_Snaf == LOG_SUCCESS)
 	{
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_00"); //Hey, I know you. You brought me the ingredients for my meatbug ragout once.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_06_00"); //Hey, I know you. You brought me the ingredients for my meatbug ragout once.
 		AI_Output(hero, self, "Info_Mod_Snaf_Hi_15_01"); //Yes...
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_02"); //I have to thank you again for that. I made a good living with the meatbug ragout.
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_03"); //In return, I'll sell you some of my new merchandise. Of course, I also have meatbug ragout.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_06_02"); //I have to thank you again for that. I made a good living with the meatbug ragout.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_06_03"); //In return, I'll sell you some of my new merchandise. Of course, I also have meatbug ragout.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_04"); //Hey, new guy. If you're hungry, you can drop by my place, I have some real specialties for you.
-		AI_Output(self, hero, "Info_Mod_Snaf_Hi_01_05"); //Among other things, my famous meatbug ragout.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_06_04"); //Hey, new guy. If you're hungry, you can drop by my place, I have some real specialties for you.
+		AI_Output(self, hero, "Info_Mod_Snaf_Hi_06_05"); //Among other things, my famous meatbug ragout.
 	};
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_OLDCAMP, LOG_NOTE);
@@ -51,8 +51,8 @@ FUNC INT Info_Mod_Snaf_WoherZutaten_Condition()
 FUNC VOID Info_Mod_Snaf_WoherZutaten_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Snaf_WoherZutaten_15_00"); //Where do you get all the ingredients from?
-	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_01"); //There's always plenty of meat bugs. The hunters also bring enough green fodder from their hunts.
-	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_01_02"); //And otherwise... what you find. Sometimes it's better not to think too much about what's inside.
+	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_06_01"); //There's always plenty of meat bugs. The hunters also bring enough green fodder from their hunts.
+	AI_Output(self, hero, "Info_Mod_Snaf_WoherZutaten_06_02"); //And otherwise... what you find. Sometimes it's better not to think too much about what's inside.
 };
 
 INSTANCE Info_Mod_Snaf_Lagermusik (C_INFO)
@@ -77,11 +77,11 @@ FUNC INT Info_Mod_Snaf_Lagermusik_Condition()
 FUNC VOID Info_Mod_Snaf_Lagermusik_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_00"); //What do you think of camp music?
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_01"); //Oh, you don't know how I miss such a thing.
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_02"); //One of them beats the strings, one the drum, and everyone sings something melancholic about the cheerful life at the king's court.
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_06_01"); //Oh, you don't know how I miss such a thing.
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_06_02"); //One of them beats the strings, one the drum, and everyone sings something melancholic about the cheerful life at the king's court.
 	AI_Output(hero, self, "Info_Mod_Snaf_Lagermusik_15_03"); //Gravo wants to build a whole group. Do you want to participate?
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_04"); //He wants to perform properly? Nah, I don't have time for that. I can't ignore my cooking pot.
-	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_01_05"); //But he can be sure who will be the first visitor of his performances!
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_06_04"); //He wants to perform properly? Nah, I don't have time for that. I can't ignore my cooking pot.
+	AI_Output(self, hero, "Info_Mod_Snaf_Lagermusik_06_05"); //But he can be sure who will be the first visitor of his performances!
 };
 
 INSTANCE Info_Mod_Snaf_Trade (C_INFO)

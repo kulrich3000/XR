@@ -1,6 +1,6 @@
 INSTANCE ItWr_Bauplan_BeliarDolch		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;

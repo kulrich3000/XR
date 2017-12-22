@@ -1,7 +1,7 @@
 INSTANCE Mod_12006_DRA_Echse_AW	(C_NPC)
 {
 	//----- Monster ----
-	name	=	"lizard";
+	name	=	"Lizard";
 	guild	=	GIL_DRACONIAN;
 	id	= 	12006;
 	level	=	35;

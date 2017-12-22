@@ -1,10 +1,10 @@
 instance Mod_574_NONE_Fellan_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "fur"; 
+	name 		= "Fellan"; 
 	guild 		= GIL_OUT;
 	id 			= 574;
-	voice 		= 6;
+	voice		= 8;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

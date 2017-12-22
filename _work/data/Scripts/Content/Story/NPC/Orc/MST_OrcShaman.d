@@ -156,7 +156,7 @@ INSTANCE OrcPeasantDance (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"orc";
+	name			=	"Orc";
 
 	//-------- visuals --------
 	B_SetVisuals_OrcSlave();
@@ -174,7 +174,7 @@ INSTANCE OrcPeasantDrum (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"orc";
+	name			=	"Orc";
 
 	//-------- visuals --------
 	B_SetVisuals_OrcSlave();

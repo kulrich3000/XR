@@ -28,7 +28,7 @@ func int clamp(var int value, var int lo, var int hi) {
 // frees a library
 func void FreeLibrary (var int ptr) {
 	var int freelib;
-	freelib = FindKernelDllFunction("free library");
+	freelib = FindKernelDllFunction("FreeLibrary");
 
 	if (!freelib) {
 		return;

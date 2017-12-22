@@ -1,10 +1,10 @@
 instance Mod_581_NONE_Hakon_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "hook";
+	name 		= "Hakon";
 	guild 		= GIL_PAL;
 	id 			= 581;
-	voice 		= 12;
+	voice		= 3;
 	flags       = 0;																	
 	npctype		= NPCTYPE_MAIN;
 	

@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Bones_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Bones_Hi_01_01"); //I'm Bones. Anything else important?
+	AI_Output(self, hero, "Info_Mod_Bones_Hi_04_01"); //I'm Bones. Anything else important?
 };
 
 INSTANCE Info_Mod_Bones_Irdorath (C_INFO)
@@ -46,21 +46,21 @@ FUNC VOID Info_Mod_Bones_Irdorath_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_00"); //I'm planning an excursion on the Paladin's ship.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_01"); //It goes to an island of the magician Xeres....
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_02"); //What's it got to do with me?
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_02"); //What's it got to do with me?
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_03"); //You could join my team.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_04"); //There's bound to be something to get, and Greg won't mind.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_05"); //Oh, is that so... Well, um, why not...
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_06"); //I have only one condition...
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_05"); //Oh, is that so... Well, um, why not...
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_06"); //I have only one condition...
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_07"); //Well, that was obvious... What do you want?
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_08"); //Women!
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_08"); //Women!
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_09"); //How?
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_10"); //Well, pictures of women on board.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_11"); //The Paladin's ship is anchored in the port city.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_12"); //I'm sure you can get me some for the trip.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_13"); //(lüstern) Wäre doch sonst langweilig ... solange auf See und dann nicht mal Schiffe mit "quarry" zum Entern.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_14"); //You have to have everything you need with you.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_10"); //Well, pictures of women on board.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_11"); //The Paladin's ship is anchored in the port city.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_12"); //I'm sure you can get me some for the trip.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_13"); //(lüstern) Wäre doch sonst langweilig ... solange auf See und dann nicht mal Schiffe mit "quarry" zum Entern.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_14"); //You have to have everything you need with you.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_15"); //Um... I'll see what I can do.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_16"); //I'll go to the harbour town. And woe betide you didn't organize any women until you left.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_16"); //I'll go to the harbour town. And woe betide you didn't organize any women until you left.
 
 	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Ohh man. Now I'm supposed to get Bones some serious women to accompany us on our journey. Hmm, where can I find women who would be tough enough to go on a sea voyage with dangerous adventures, and then with Bones on board....");
 
@@ -96,15 +96,15 @@ FUNC INT Info_Mod_Bones_Befreiung_Condition()
 FUNC VOID Info_Mod_Bones_Befreiung_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_00"); //What's the news?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_01"); //My axe is gone, that's it!
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_01"); //My axe is gone, that's it!
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_02"); //How did this happen?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_03"); //The attack was swarming with undead warriors. I was knocked down and this pack took my axe.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_03"); //The attack was swarming with undead warriors. I was knocked down and this pack took my axe.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_04"); //Where did these guys go?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_05"); //I don't know about that. But a few of them went up to Greg's cabin when they realized they were outnumbered. They're up that mountain.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_05"); //I don't know about that. But a few of them went up to Greg's cabin when they realized they were outnumbered. They're up that mountain.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_06"); //I'll take a look around.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_07"); //You want to help me?
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_07"); //You want to help me?
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_08"); //Yeah.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_09"); //Thank you man, but please hurry up.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_09"); //Thank you man, but please hurry up.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRBONES, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBONES, LOG_RUNNING);
@@ -150,9 +150,9 @@ FUNC VOID Info_Mod_Bones_Befreiung2_Info()
 
 	AI_DrawWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_01_01"); //(satisfied) Thank you. You can tell Greg that I'm ready to fight again.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_04_01"); //(satisfied) Thank you. You can tell Greg that I'm ready to fight again.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung2_15_02"); //All clear.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_01_03"); //Here, take these two bottles of grog and this quick herring.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_04_03"); //Here, take these two bottles of grog and this quick herring.
 
 	B_ShowGivenThings	("2 Grog and fast herring preserved");
 
@@ -189,7 +189,7 @@ FUNC INT Info_Mod_Bones_Beerdigung_Condition()
 
 FUNC VOID Info_Mod_Bones_Beerdigung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bones_Beerdigung_01_00"); //And what is there to eat?
+	AI_Output(self, hero, "Info_Mod_Bones_Beerdigung_04_00"); //And what is there to eat?
 
 	AI_StopProcessInfos	(self);
 };

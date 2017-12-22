@@ -4,7 +4,7 @@ instance Mod_7285_HS_Koenig_REL (Npc_Default)
 	name 		= "king"; 
 	guild 		= GIL_OUT;
 	id 			= 7285;
-	voice 		= 6;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

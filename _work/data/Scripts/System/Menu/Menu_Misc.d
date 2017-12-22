@@ -1,4 +1,4 @@
-	
+
 // *********************************************************************
 // leave game menu
 // *********************************************************************
@@ -33,7 +33,7 @@ INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "yes";
+	text[0]		= "Yes";
 	text[1]		= "Yes, I want to leave Xeres's return."; // Kommentar
 	
 	// Position und Dimension	
@@ -49,7 +49,7 @@ INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "nay";
+	text[0]		= "No";
 	text[1]		= "No, I want to resume playing."; // Kommentar
 	
 	// Position und Dimension	
@@ -89,7 +89,7 @@ INSTANCE MENUITEM_REALLY_NEWGAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_REALLY_NEWGAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "yes";
+	text[0]		= "Yes";
 	text[1]		= "Yes, I want to start a new game."; // Kommentar
 	
 	// Position und Dimension	
@@ -105,7 +105,7 @@ INSTANCE MENUITEM_REALLY_NEWGAME_YES(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_REALLY_NEWGAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "nay";
+	text[0]		= "No";
 	text[1]		= "No, I don't want to start a new game."; // Kommentar
 	
 	// Position und Dimension	

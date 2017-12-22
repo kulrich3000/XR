@@ -17,11 +17,11 @@ FUNC INT Info_Mod_Jerry_Hi_Condition()
 FUNC VOID Info_Mod_Jerry_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_00"); //Hi.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_01"); //Hey.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_01_01"); //Hey.
 	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_02"); //You seem to have a lot of work to do.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_03"); //This is exactly the kind of work you get here as a new soldier.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_04"); //They didn't want me to join the militia, but the commander-in-chief of the militia said there was a way for me to support the military.
-	AI_Output(self, hero, "Info_Mod_Jerry_Hi_04_05"); //And now look where I landed, at the front, and I'm allowed to repair the camp.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_01_03"); //This is exactly the kind of work you get here as a new soldier.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_01_04"); //They didn't want me to join the militia, but the commander-in-chief of the militia said there was a way for me to support the military.
+	AI_Output(self, hero, "Info_Mod_Jerry_Hi_01_05"); //And now look where I landed, at the front, and I'm allowed to repair the camp.
 	AI_Output(hero, self, "Info_Mod_Jerry_Hi_15_06"); //I have the feeling to be at the front too...
 };
 
@@ -49,8 +49,8 @@ FUNC INT Info_Mod_Jerry_Lehrer_Condition()
 FUNC VOID Info_Mod_Jerry_Lehrer_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Jerry_Lehrer_15_00"); //Can you train me?
-	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_01"); //Sure, we newcomers should stick together.
-	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_04_02"); //If you want, I can show you a few things in one-handed combat.
+	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_01_01"); //Sure, we newcomers should stick together.
+	AI_Output(self, hero, "Info_Mod_Jerry_Lehrer_01_02"); //If you want, I can show you a few things in one-handed combat.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_KG, LOG_NOTE);
 	B_LogEntry	(TOPIC_MOD_LEHRER_KG, "Jerry can teach me how to handle a hand.");

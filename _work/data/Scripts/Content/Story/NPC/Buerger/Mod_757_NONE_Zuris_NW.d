@@ -1,7 +1,7 @@
 instance Mod_757_NONE_Zuris_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "zuris";
+	name 		= "Zuris";
 	guild 		= GIL_PAL;
 	id 			= 757;
 	voice 		= 30;

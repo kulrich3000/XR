@@ -18,9 +18,9 @@ FUNC INT Info_Mod_Buster_Hi_Condition()
 
 FUNC VOID Info_Mod_Buster_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Buster_Hi_13_00"); //Hey, you look pretty stiff again, like you haven't been stretching your limbs for a long time.
+	AI_Output(self, hero, "Info_Mod_Buster_Hi_06_00"); //Hey, you look pretty stiff again, like you haven't been stretching your limbs for a long time.
 	AI_Output(hero, self, "Info_Mod_Buster_Hi_15_01"); //Yeah, a couple of weeks under stones...
-	AI_Output(self, hero, "Info_Mod_Buster_Hi_13_02"); //I could help you get your agility back on track.
+	AI_Output(self, hero, "Info_Mod_Buster_Hi_06_02"); //I could help you get your agility back on track.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER, LOG_NOTE);
 	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER, "Buster can teach me how to move better.");
@@ -54,9 +54,9 @@ FUNC VOID Info_Mod_Buster_Lernen_Info()
 
 	if (B_TeachThiefTalent (self, hero, NPC_TALENT_ACROBAT))
 	{
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_01"); //If you control your body, you will be able to jump much further.
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_02"); //You'll learn to roll yourself up and land properly from the fall. But remember, you're not immortal!
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_03"); //Also in combat acrobatics is very helpful. You can change your distance to the opponent very quickly. Good luck to you!
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_01"); //If you control your body, you will be able to jump much further.
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_02"); //You'll learn to roll yourself up and land properly from the fall. But remember, you're not immortal!
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_03"); //Also in combat acrobatics is very helpful. You can change your distance to the opponent very quickly. Good luck to you!
 	};
 };
 

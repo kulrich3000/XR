@@ -52,7 +52,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"The magical runes accessible to me are divided into circles. I cannot use a saying with a higher circle than I have mastered."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"The magic runes I have access to are divided into Circles. I can't use a spell that requires a higher Circle than the ones I've mastered."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)

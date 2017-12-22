@@ -30,7 +30,7 @@ func void Spine_OverallSaveSetInt(var string key, var int value) {
 // returns an empty string if not initialized or key not found, otherwise the value stored for the key
 func string Spine_OverallSaveGetString(var string key) {
 	if (Spine_Initialized && Spine_OverallSaveGetStringFunc) {
-		const string STR_BUFFER = "";
+		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL_cStringPtrParam(key);

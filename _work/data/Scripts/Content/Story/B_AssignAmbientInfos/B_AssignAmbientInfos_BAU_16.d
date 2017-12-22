@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_JOIN_15_00"); //I want to know more about the mercenaries!
-	AI_Output (self, hero, "DIA_BAU_16_JOIN_16_01"); //They hang around the yard all day long, get in a fight every now and then and find it funny.
+	AI_Output (hero, self, "DIA_BAU_43_JOIN_15_00"); //I want to know more about the mercenaries!
+	AI_Output (self, hero, "DIA_BAU_43_JOIN_43_01"); //They hang around the yard all day long, get in a fight every now and then and find it funny.
 };
 
 // *************************************************************************
@@ -68,8 +68,8 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_PEOPLE_15_00"); //Who's in charge here?
-	AI_Output (self, hero, "DIA_BAU_16_PEOPLE_16_01"); //Onar is the boss of all the farms, but each of the small farms has another tenant who makes sure that everything on his farm works.
+	AI_Output (hero, self, "DIA_BAU_43_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output (self, hero, "DIA_BAU_43_PEOPLE_43_01"); //Onar is the boss of all the farms, but each of the small farms has another tenant who makes sure that everything on his farm works.
 };
 
 // *************************************************************************
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_LOCATION_15_00"); //What can you tell me about this neighborhood?
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
+	AI_Output (hero, self, "DIA_BAU_43_LOCATION_15_00"); //What can you tell me about this neighborhood?
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
 };
 
 INSTANCE Info_Mod_BAU_16_Pickpocket (C_INFO)

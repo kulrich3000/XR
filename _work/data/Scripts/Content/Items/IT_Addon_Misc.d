@@ -247,7 +247,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		B_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"At Cavalorn's hut in the Minental I found a bag of ore. I'm sure Cavalorn, the old rascal, forgot it here.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"I found a bag with a lump of magic ore near Cavalorn's hut in the Valley of Mines. That old rogue must have forgotten it here.");
 };
 
 INSTANCE ItMi_Scavengerdung	(C_Item)

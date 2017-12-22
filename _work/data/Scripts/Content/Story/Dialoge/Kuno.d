@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Kuno_Hi_Condition()
 FUNC VOID Info_Mod_Kuno_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kuno_Hi_15_00"); //Are you trading?
-	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_01"); //(lightly crazy) Not every day, not every product. Do you have anything funny to play with or to eat? You got anything unusual?
-	AI_Output(self, hero, "Info_Mod_Kuno_Hi_09_02"); //Then we can act, negotiate, negotiate, negotiate, treat? (mumbles incomprehensible things)
+	AI_Output(self, hero, "Info_Mod_Kuno_Hi_11_01"); //(lightly crazy) Not every day, not every product. Do you have anything funny to play with or to eat? You got anything unusual?
+	AI_Output(self, hero, "Info_Mod_Kuno_Hi_11_02"); //Then we can act, negotiate, negotiate, negotiate, treat? (mumbles incomprehensible things)
 };
 
 INSTANCE Info_Mod_Kuno_Pickpocket (C_INFO)

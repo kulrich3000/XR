@@ -4,7 +4,7 @@ instance Mod_7750_OUT_Dubios_MT (Npc_Default)
 	name 		= "Dubious figure"; 
 	guild 		= GIL_OUT;
 	id 			= 7750;
-	voice 		= 8;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

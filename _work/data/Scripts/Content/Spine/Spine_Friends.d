@@ -16,7 +16,7 @@ func int Spine_GetFriendCount() {
 // index has to be in range [0;Spine_GetFriendCount() - 1]
 func string Spine_GetFriendName(var int index) {
 	if (Spine_Initialized && Spine_GetFriendNameFunc) {
-		const string STR_BUFFER = "";
+		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 		
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL_IntParam(index);

@@ -1020,15 +1020,15 @@ func void UseDominiquesRuf ()
 					Doc_PrintLines	( nDocID,  0, "Dominique's Call"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "We will reap his glory"					);
-					Doc_PrintLines	( nDocID,  0, "Innos stands by me and my brothers"					);
-					Doc_PrintLines	( nDocID,  0, "I will slaughter them all like sheep on my way"					);
-					Doc_PrintLines	( nDocID,  0, "for he is the fire in my heart"					);
-					Doc_PrintLines	( nDocID,  0, "My blade is dedicated only to him"					);
-					Doc_PrintLines	( nDocID,  0, "that day his name will resound"					);
-					Doc_PrintLines	( nDocID,  0, "Anyone who stands in my way"					);
-					Doc_PrintLines	( nDocID,  0, "will die by my hand"					);
-					Doc_PrintLines	( nDocID,  0, "for I am a warrior Innos"					);
+					Doc_PrintLines	( nDocID,  0, "We shall reap His glory."					);
+					Doc_PrintLines	( nDocID,  0, "Innos stands by me and my brothers."					);
+					Doc_PrintLines	( nDocID,  0, "I will slay all who would stop me like sheep"					);
+					Doc_PrintLines	( nDocID,  0, "for He is the fire inside my heart."					);
+					Doc_PrintLines	( nDocID,  0, "My blade serves Him alone."					);
+					Doc_PrintLines	( nDocID,  0, "On this day His name will echo forth."					);
+					Doc_PrintLines	( nDocID,  0, "Any man who opposes me"					);
+					Doc_PrintLines	( nDocID,  0, "will die at my hand"					);
+					Doc_PrintLines	( nDocID,  0, "for I am a warrior of Innos."					);
 					Doc_PrintLines	( nDocID,  0, "executor of his will"					);
 					
 					Doc_Show		( nDocID );
@@ -1492,7 +1492,7 @@ func void UsePetuniaZettel ()
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "When you see a candidate, strike down and pour him the added potion. He will dream that he will find the beautiful petal where the goblin matrons were. You must take the prepared petal there. The candidate will then take the sheet to his client and we finally know who our main goal is. Turn off the candidate and the client and return to me."					);
+					Doc_PrintLines	( nDocID,  0, "When you see a candidate, strike him down and infuse him with the added potion. He will dream that he will find the beautiful petal where the goblin matrons were. You must take the prepared petal there. The candidate will then take the sheet to his client and we finally know who our main goal is. Turn off the candidate and the client and return to me."					);
 					Doc_PrintLine	( nDocID,  0, "P."					);
 					
 					Doc_Show		( nDocID );
@@ -1562,7 +1562,7 @@ INSTANCE ItWr_TheodorusBotschaft		(C_Item)
 	on_state[0]			=   UseTheodorusBotschaft;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]		=	"soll ich auf dem Gerüst am Marktplatz vorlesen";
+	TEXT[0]		=	"I shall read aloud on the scaffolding in the marketplace";
 };
 func void UseTheodorusBotschaft ()
 {
@@ -7351,8 +7351,8 @@ instance ItWr_Map_HagenAL (C_Item)
 	on_state[0]	= Use_Map_HagenAL;
 
 	description	= name;
-	TEXT[0]		= "Lord Hagen hat die Stellen eingezeichnet,";
-	TEXT[1]		= "wo Sträflinge aus dem Minental sein sollen";
+	TEXT[0]		= "Lord Hagen drew the lines,";
+	TEXT[1]		= "where convicts are said to be from the Mine Valley";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
 };
@@ -7502,7 +7502,7 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	description				= 	"Southern Defense Art";
 	
 	TEXT[2] 				=  "A book on the art of";
-	TEXT[3] 				=  "with one-handed weapons";
+	TEXT[3] 				=  "one-handed fighting";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseEinhandBuch;
@@ -7569,7 +7569,7 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 	description				= 	"Double Blocks";
 	
 	TEXT[2] 				=  "A book on the art of";
-	TEXT[3] 				=  "two-handed weapons";
+	TEXT[3] 				=  "two-handed fighting";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseZweihandBuch;

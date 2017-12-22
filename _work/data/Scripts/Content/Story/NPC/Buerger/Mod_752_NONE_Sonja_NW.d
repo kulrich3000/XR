@@ -1,10 +1,10 @@
 instance Mod_752_NONE_Sonja_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "sonya";	
+	name 		= "Sonja";	
 	guild 		= GIL_PAL;
 	id 			= 752;
-	voice 		= 16;
+	voice		= 43;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

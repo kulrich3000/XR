@@ -327,6 +327,13 @@ FUNC VOID GILDENSTORY_PAL()
 			B_KillNpc	(Mod_1178_MIL_Jason_NW);
 		};
 
+		if (FI_Story == 12)
+		&& (Npc_KnowsInfo(hero, Info_Mod_Neron_Hi))
+		&& (!Npc_KnowsInfo(hero, Info_Mod_Andre_RLMord))
+		{
+			Info_Mod_Andre_RLMord.description = "Neron sent me.";
+		};
+
 		if (Mod_PAL_Galf == 0)
 		&& (Npc_KnowsInfo(hero, Info_Mod_Galf_Hi))
 		&& (!Npc_IsInState(Mod_7235_NONE_Galf_NW, ZS_Talk))
@@ -616,7 +623,7 @@ FUNC VOID GILDENSTORY_PAL()
 				AI_TurnToNpc	(Gidan_FI, Kolam);
 				AI_TurnToNpc	(hero, Kolam);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_00"); //There you are!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_00"); //There you are!
 			};
 
 			if (FI_Rede == 5)
@@ -628,7 +635,7 @@ FUNC VOID GILDENSTORY_PAL()
 			{
 				AI_TurnToNpc	(Kolam, Gidan_FI);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_02"); //Shut up! I'm greeting our guest.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_02"); //Shut up! I'm greeting our guest.
 			};
 
 			if (FI_Rede == 15)
@@ -638,7 +645,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 20)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_04"); //The sleeper? LOOK AT YOURSELF!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_04"); //The sleeper? LOOK AT YOURSELF!
 			};
 
 			if (FI_Rede == 23)
@@ -678,7 +685,7 @@ FUNC VOID GILDENSTORY_PAL()
 			{
 				AI_TurnToNpc	(Kolam, Gidan_FI);
 
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_06"); //Shut the fuck up!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_06"); //Shut the fuck up!
 			};
 
 			if (FI_Rede == 45)
@@ -688,7 +695,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 50)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_08"); //Dass du Idiot deinen eigenen "God" nicht erkennst!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_08"); //Dass du Idiot deinen eigenen "God" nicht erkennst!
 			};
 
 			if (FI_Rede == 55)
@@ -698,12 +705,12 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 60)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_10"); //It's just a robot! But through him, I could control all those stupid sectarian nerds!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_10"); //It's just a robot! But through him, I could control all those stupid sectarian nerds!
 			};
 
 			if (FI_Rede == 65)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_11"); //I don't need them anymore, though.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_11"); //I don't need them anymore, though.
 			};
 
 			if (FI_Rede == 70)
@@ -720,12 +727,12 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 77)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_13"); //You don't get it, do you? You can't wake the sleeper again. He was banished! The only one who could do that is Beliar himself!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_13"); //You don't get it, do you? You can't wake the sleeper again. He was banished! The only one who could do that is Beliar himself!
 			};
 
 			if (FI_Rede == 82)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_14"); //What you're looking at is a robot!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_14"); //What you're looking at is a robot!
 			};
 
 			if (FI_Rede == 87)
@@ -735,7 +742,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 92)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_16"); //Haha quite right, the ominous inventor.
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_16"); //Haha quite right, the ominous inventor.
 			};
 
 			if (FI_Rede == 97)
@@ -745,7 +752,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 102)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_18"); //Yes! You're just as crazy as my misguided brother!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_18"); //Yes! You're just as crazy as my misguided brother!
 			};
 
 			if (FI_Rede == 107)
@@ -755,7 +762,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 112)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_20"); //Don't stutter around here!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_20"); //Don't stutter around here!
 			};
 
 			if (FI_Rede == 117)
@@ -765,7 +772,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 122)
 			{
-				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_02_22"); //There's your sleeper, you idiot. SCHLÄFER1. 0 INITIALIZE ATTACK!
+				AI_Output(Kolam, NULL, "Info_Mod_FI_Rede_03_22"); //There's your sleeper, you idiot. SCHLÄFER1. 0 INITIALIZE ATTACK!
 
 				B_Attack	(Sleeper, Gidan_FI, AR_None, 0);
 			};
@@ -907,7 +914,7 @@ FUNC VOID GILDENSTORY_PAL()
 		{
 			AI_TurnToNpc	(Mod_7240_PAL_Andre_REL, hero);
 
-			AI_Output(Mod_7240_PAL_Andre_REL, NULL, "Info_Mod_Andre_REL_Sorry_08_00"); //Sorry, kid, the exit didn't really work out.
+			AI_Output(Mod_7240_PAL_Andre_REL, NULL, "Info_Mod_Andre_REL_Sorry_40_00"); //Sorry, kid, the exit didn't really work out.
 
 			Mod_PAL_HeroBot = 9;
 		};

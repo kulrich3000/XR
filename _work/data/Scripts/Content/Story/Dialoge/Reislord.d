@@ -18,8 +18,8 @@ FUNC INT Info_Mod_Reislord_Hi_Condition()
 
 FUNC VOID Info_Mod_Reislord_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Reislord_Hi_12_00"); //Ahh, I heard you helped us. I'll put a good word in with Sylvio for you. Then you'll take it to the Orchunter sometime.
-	AI_Output(self, hero, "Info_Mod_Reislord_Hi_12_01"); //And here, take the gold.
+	AI_Output(self, hero, "Info_Mod_Reislord_Hi_11_00"); //Ahh, I heard you helped us. I'll put a good word in with Sylvio for you. Then you'll take it to the Orchunter sometime.
+	AI_Output(self, hero, "Info_Mod_Reislord_Hi_11_01"); //And here, take the gold.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 300);
 
@@ -53,16 +53,16 @@ FUNC INT Info_Mod_Reislord_RufusDa_Condition()
 
 FUNC VOID Info_Mod_Reislord_RufusDa_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_12_00"); //Hey, you're the guy who got Rufus to come back. The peasants will now consider running away a second time.
-	AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_12_01"); //Here, take this gold and ore.
+	AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_11_00"); //Hey, you're the guy who got Rufus to come back. The peasants will now consider running away a second time.
+	AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_11_01"); //Here, take this gold and ore.
 
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_12_02"); //Sylvio will only get good things to hear about you.
+		AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_11_02"); //Sylvio will only get good things to hear about you.
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_12_03"); //Good work.
+		AI_Output(self, hero, "Info_Mod_Reislord_RufusDa_11_03"); //Good work.
 	};
 
 	CreateInvItems	(hero, ItMi_Gold, 300);
@@ -106,22 +106,22 @@ FUNC INT Info_Mod_Reislord_RufusTot_Condition()
 FUNC VOID Info_Mod_Reislord_RufusTot_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Reislord_RufusTot_15_00"); //I wanted to report that Rufus is dead.
-	AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_01"); //Really?! How did this happen?
+	AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_01"); //Really?! How did this happen?
 
 	if (Mod_SLD_Rufus == 5)
 	{
 		AI_Output(hero, self, "Info_Mod_Reislord_RufusTot_15_02"); //I killed him.
-		AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_03"); //Well, better than if he'd escaped.
+		AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_03"); //Well, better than if he'd escaped.
 
 		if (hero.guild == GIL_MIL)
 		{
-			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_04"); //Sylvio will love hearing about this.
-			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_05"); //And the peasants won't dare to flee. Here, take the gold.
+			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_04"); //Sylvio will love hearing about this.
+			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_05"); //And the peasants won't dare to flee. Here, take the gold.
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_06"); //Excellent work. The peasants won't dare to flee.
-			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_07"); //Here, take the gold.
+			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_06"); //Excellent work. The peasants won't dare to flee.
+			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_07"); //Here, take the gold.
 		};
 
 		CreateInvItems	(hero, ItMi_Gold, 300);
@@ -134,13 +134,13 @@ FUNC VOID Info_Mod_Reislord_RufusTot_Info()
 	else
 	{
 		AI_Output(hero, self, "Info_Mod_Reislord_RufusTot_15_08"); //He was torn apart by wild animals.
-		AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_09"); //Good. His fate will be a warning to the other peasants. Here, take the gold as a reward.
+		AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_09"); //Good. His fate will be a warning to the other peasants. Here, take the gold as a reward.
 
 		B_GiveInvItems	(self, hero, ItMi_Gold, 250);
 
 		if (hero.guild == GIL_MIL)
 		{
-			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_12_10"); //Sylvio will only get good things to hear about you.
+			AI_Output(self, hero, "Info_Mod_Reislord_RufusTot_11_10"); //Sylvio will only get good things to hear about you.
 		};
 
 		B_GivePlayerXP	(300);
@@ -177,11 +177,11 @@ FUNC INT Info_Mod_Reislord_OJGBoss_Condition()
 
 FUNC VOID Info_Mod_Reislord_OJGBoss_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_12_00"); //Ahh, there you are. I'm glad you made it this far and are the leader of the Orchunters.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_12_01"); //From the moment I saw you, I knew it was a real warhorse...
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_11_00"); //Ahh, there you are. I'm glad you made it this far and are the leader of the Orchunters.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_11_01"); //From the moment I saw you, I knew it was a real warhorse...
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_15_02"); //Come on, get to the point.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_12_03"); //(subservient) Yes, immediately.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_12_04"); //Well, now that you've taken Sylvios place, you're entitled to our share of the profits. Gold, ore and some good stuff to eat.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_11_03"); //(subservient) Yes, immediately.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_11_04"); //Well, now that you've taken Sylvios place, you're entitled to our share of the profits. Gold, ore and some good stuff to eat.
 
 	Info_ClearChoices	(Info_Mod_Reislord_OJGBoss);
 
@@ -192,10 +192,10 @@ FUNC VOID Info_Mod_Reislord_OJGBoss_Info()
 FUNC VOID Info_Mod_Reislord_OJGBoss_B()
 {
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_B_15_00"); //What do you mean revenue?
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_12_01"); //Well... er... for the work we do here, we get our share of ore, gold and merchandise from outside.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_12_02"); //But such a farmer is actually quite frugal and doesn't need that much.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_12_03"); //And we will take our modest share of that.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_12_04"); //And of course, you are entitled to a worthy part of it in your important position in the camp.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_11_01"); //Well... er... for the work we do here, we get our share of ore, gold and merchandise from outside.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_11_02"); //But such a farmer is actually quite frugal and doesn't need that much.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_11_03"); //And we will take our modest share of that.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_B_11_04"); //And of course, you are entitled to a worthy part of it in your important position in the camp.
 
 	Info_ClearChoices	(Info_Mod_Reislord_OJGBoss);
 
@@ -206,10 +206,10 @@ FUNC VOID Info_Mod_Reislord_OJGBoss_B()
 FUNC VOID Info_Mod_Reislord_OJGBoss_C()
 {
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_C_15_00"); //You know what-- you give the peasants what they really deserve.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_C_12_01"); //Uh, what-- such as....
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_C_11_01"); //Uh, what-- such as....
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_C_15_02"); //And from the last and next shipment, you give the farmers the amount of money they would normally give you and your boys to compensate for their losses.
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_C_15_03"); //Do we understand each other?
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_C_12_04"); //(paralysed) Uh, uh... yes.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_C_11_04"); //(paralysed) Uh, uh... yes.
 
 	B_GivePlayerXP	(200);
 
@@ -222,7 +222,7 @@ FUNC VOID Info_Mod_Reislord_OJGBoss_C()
 FUNC VOID Info_Mod_Reislord_OJGBoss_A()
 {
 	AI_Output(hero, self, "Info_Mod_Reislord_OJGBoss_A_15_00"); //I won't say no to that. My bags feel so empty and something sparkling metal in them would certainly not be missed.
-	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_A_12_01"); //Of course, as you deserve. I realize that with you everything will continue to go as it should, hehe. Here you are. Have fun with that.
+	AI_Output(self, hero, "Info_Mod_Reislord_OJGBoss_A_11_01"); //Of course, as you deserve. I realize that with you everything will continue to go as it should, hehe. Here you are. Have fun with that.
 
 	B_ShowGivenThings	("230 gold, 17 ore, 2 wine and ham preserved");
 

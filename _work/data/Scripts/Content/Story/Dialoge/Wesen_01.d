@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_01_Hi_18_00"); //You know, coal dust glistening in the midday sun is brighter than a white leaf at full moon.
+	AI_Output(self, hero, "Info_Mod_Wesen_01_Hi_10_00"); //You know, coal dust glistening in the midday sun is brighter than a white leaf at full moon.
 
 	AI_StopProcessInfos	(self);
 };

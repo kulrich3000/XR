@@ -1,10 +1,10 @@
 instance Mod_973_SRF_Geppert_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ripped"; 
+	name 		= "Geppert"; 
 	guild 		= GIL_NONE;
 	id 			= 973;
-	voice 		= 10;
+	voice		= 0;
 	flags       = 0;							//NPC_FLAG_IMMORTAL oder 0
 	npctype		= NPCTYPE_MAIN;
 	

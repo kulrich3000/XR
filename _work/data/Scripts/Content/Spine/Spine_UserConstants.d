@@ -157,7 +157,7 @@ const string SPINE_ACHIEVEMENT_NAMES[MAX_ACHIEVEMENTS] = {
 	"Great Northern Grebe",
 	"Lightweight",
 	"instrument",
-	"Heavy"
+	"Hard"
 };
 
 const string SPINE_ACHIEVEMENT_DESCRIPTIONS[MAX_ACHIEVEMENTS] = {
@@ -211,7 +211,7 @@ const string SPINE_ACHIEVEMENT_DESCRIPTIONS[MAX_ACHIEVEMENTS] = {
 	"Apprenticeship at Thorben completed",
 	"Get maximum guild armor",
 	"Obtaining the Paladin crystal without help",
-	"20 NPCs im Faustkampf besiegt",
+	"20 NPCs defeated in a fistfight",
 	"Guild image by paladin crystal",
 	"Guild admission by quest",
 	"Joined a side guild",
@@ -555,5 +555,5 @@ const int SPINE_SCORE_2 = 1;
 
 const string SPINE_SCORE_NAMES[2] = {
 	"Level",
-	"Gelöste Quests"
+	"Solved Quests"
 };

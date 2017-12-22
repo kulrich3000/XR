@@ -4,7 +4,7 @@ instance Mod_7422_NONE_Frau_NW (Npc_Default)
 	name 		= "Mrs.";
 	guild 		= GIL_DMT;
 	id 			= 7422;
-	voice 		= 17;
+	voice		= 43;
 	flags       = 0;																	
 	npctype		= NPCTYPE_MAIN;
 	

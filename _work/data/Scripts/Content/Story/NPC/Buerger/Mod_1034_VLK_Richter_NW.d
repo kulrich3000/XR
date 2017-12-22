@@ -1,10 +1,10 @@
 instance Mod_1034_VLK_Richter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "judges";
+	name 		= "Judge";
 	guild 		= GIL_PAL;
 	id 			= 1034;
-	voice 		= 10;
+	voice		= 0;
 	flags       = NPC_FLAG_IMMORTAL;																
 	npctype		= NPCTYPE_MAIN;
 	

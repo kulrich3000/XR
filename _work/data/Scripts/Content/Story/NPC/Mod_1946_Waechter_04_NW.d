@@ -1,12 +1,12 @@
 instance Mod_1946_Waechter_04_NW (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"custodians";
+	name 		=		"Sentinel";
 	Npctype 		=		Npctype_main;
 	guild 		=		GIL_out;
 	level 		=		20;
 	 	
-	voice 		=		2;
+	voice		= 0;
 	id 			=		1946;
 		
 	//-------- abilities --------

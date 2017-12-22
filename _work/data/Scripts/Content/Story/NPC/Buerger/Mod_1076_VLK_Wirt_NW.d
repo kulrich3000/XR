@@ -1,7 +1,7 @@
 instance Mod_1076_VLK_Wirt_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "innkeeper";
+	name 		= "Landlord";
 	guild 		= GIL_PAL;
 	id 			= 1076;
 	voice 		= 29;

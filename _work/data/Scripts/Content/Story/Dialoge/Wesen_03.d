@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_03_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_03_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_03_Hi_18_00"); //A challenge is what you grow the most... Wax up, young shoot!
+	AI_Output(self, hero, "Info_Mod_Wesen_03_Hi_10_00"); //A challenge is what you grow the most... Wax up, young shoot!
 
 	AI_StopProcessInfos	(self);
 };

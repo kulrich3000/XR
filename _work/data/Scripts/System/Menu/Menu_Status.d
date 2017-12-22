@@ -182,7 +182,7 @@ instance MENU_ITEM_PLAYERGUILD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*0;
-	text[0]		= "stage";	
+	text[0]		= "Level";	
 	fontName	= STAT_FONT_DEFAULT;		
 	flags		= flags & ~IT_SELECTABLE; //Selectable wird mit &! rausgeworfen - alle andern Flags bleiben, wie sie sind
 };
@@ -205,7 +205,7 @@ instance MENU_ITEM_TALENT_7_TITLE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_TALENT_7_CIRCLE(C_MENU_ITEM_DEF) 
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*1;	
-	text[0]		= "circle"; 
+	text[0]		= "Circle"; 
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE; 
 };
@@ -220,7 +220,7 @@ instance MENU_ITEM_TALENT_7_SKILL(C_MENU_ITEM_DEF)
 instance MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*2;	
-	text[0]		= "experience"; 
+	text[0]		= "Experience"; 
 	fontName 	= STAT_FONT_DEFAULT;	
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -236,7 +236,7 @@ INSTANCE MENU_ITEM_EXP(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*3;	
-	text[0]		= "Next level";
+	text[0]		= "Next Level";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -273,7 +273,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATRHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "ATTRIBUTE";	
+	text[0]		= "ATTRIBUTES";	
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -282,7 +282,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*0;
-	text[0]		= "starch";
+	text[0]		= "Strength";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -299,7 +299,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_1(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*1;
-	text[0]		= "fortunes";
+	text[0]		= "Dexterity";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -316,7 +316,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*2;
-	text[0]		= "mana";
+	text[0]		= "Mana";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -332,7 +332,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*3;
-	text[0]		= "vital energy";
+	text[0]		= "Hitpoints";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -432,7 +432,7 @@ INSTANCE MENU_ITEM_TALENTS_HEADING(C_MENU_ITEM_DEF)
 
 	posx		= STAT_B_X1; 				posy = STAT_TALHEAD_Y;
 	dimx 		= STAT_B_X4 - STAT_B_X1;	dimy = STAT_DY;
-	text[0]		= "TALENTE";
+	text[0]		= "SKILLS";
 	fontName	= STAT_FONT_DEFAULT;	
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };

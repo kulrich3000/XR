@@ -2118,7 +2118,7 @@ INSTANCE ItPl_Perm_Herb(C_Item)
 
 INSTANCE ItPl_Rabenkraut(C_Item)
 {	
-	name 				=	"raven herb";
+	name 				=	"Raven Weed";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

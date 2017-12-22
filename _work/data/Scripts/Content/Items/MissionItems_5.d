@@ -29,18 +29,18 @@ func void Use_XardasLetterToOpenBook ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "I had suspected that one of the dragons in the Minental was the source of the evil power."					);
-					Doc_PrintLines	( nDocID,  0, "I was mistaken."					);
-					Doc_PrintLines	( nDocID,  0, "If everything has come as I suspect, "					);
-					Doc_PrintLines	( nDocID,  0, "you will now search for the halls of Irdorath. "					);
-					Doc_PrintLines	( nDocID,  0, "The book you gave Pyrokar contains all the clues you need."					);
-					Doc_PrintLines	( nDocID,  0, "I should have known why the seekers"					);
-					Doc_PrintLines	( nDocID,  0, " wanted to put it in their possession."					);
-					Doc_PrintLines	( nDocID,  0, "You have to get it back!"					);
-					Doc_PrintLines	( nDocID,  0, "The words' XARAK BENDARDO' will open it. Don't tell anyone!"					);
-					Doc_PrintLines	( nDocID,  0, "I'm going to focus on more important things now."					);
-					Doc_PrintLines	( nDocID,  0, "I can't help you with your last task - only you can defeat the source of evil."					);
-					Doc_PrintLines	( nDocID,  0, "We'll meet again! "					);
+					Doc_PrintLines	( nDocID,  0, "I suspected one of the dragons in the Valley of Mines was the source of Evil."					);
+					Doc_PrintLines	( nDocID,  0, "I was wrong."					);
+					Doc_PrintLines	( nDocID,  0, "If everything has come to pass as I expect, "					);
+					Doc_PrintLines	( nDocID,  0, "you should now be seeking the Halls of Irdorath. "					);
+					Doc_PrintLines	( nDocID,  0, "The book you gave to Pyrokar contains all the clues you need."					);
+					Doc_PrintLines	( nDocID,  0, "I should have known why the Seekers wanted it"					);
+					Doc_PrintLines	( nDocID,  0, " so badly."					);
+					Doc_PrintLines	( nDocID,  0, "You must get it back!"					);
+					Doc_PrintLines	( nDocID,  0, "The words 'XARAK BENDARDO' open it. Don't tell anyone about this!"					);
+					Doc_PrintLines	( nDocID,  0, "I will attend to more important things now."					);
+					Doc_PrintLines	( nDocID,  0, "I can't help you with your last task. Only you can defeat the source of Evil."					);
+					Doc_PrintLines	( nDocID,  0, "We shall meet again! "					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
@@ -49,7 +49,7 @@ func void Use_XardasLetterToOpenBook ()
 
 	if(MIS_Xardas_SCCanOpenIrdorathBook == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"In his letter, Xardas explained to me the name of the words used to open the book THE HALLS OF IRDORATH."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"In his letter, Xardas informed me what words to speak in order to open the book The Halls of Irdorath."); 
 	};
 
 	MIS_Xardas_SCCanOpenIrdorathBook  = TRUE;	//Joly:  Spieler kann nun das Buch im Kloster lesen und findet so die geheime Bibliothek!
@@ -74,7 +74,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 	description			= 	name;
 	
-	TEXT[0]				= 	"from the book The Halls of Irdorath?";
+	TEXT[0]				= 	"from the book 'The Halls of Irdorath'";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -117,7 +117,7 @@ FUNC VOID Use_HallsofIrdorath ()
 			Print	(PRINT_IrdorathBookHiddenKey);
 			ItWr_HallsofIrdorathIsOpen = TRUE;
 			
-			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"I was able to open Xarda's book. There was a secret message and a strange key in it. Who knows what else I'll find in the basement of the monastery down there."); 
+			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"I was able to open Xardas' book. It contained a secret message and a strange key. Who knows what I might find in the monastery's cellar."); 
 		}
 		else
 		{
@@ -156,7 +156,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 {   	 
 	if (ItWr_SCReadsHallsofIrdorath == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"I read Xarda's book. There is talk of a secret library. She must be somewhere in the basement of the monastery."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"I have read Xardas' book. It mentions a secret library. It must be somewhere here in the cellar of the monastery."); 
 	};
 	
 	ItWr_SCReadsHallsofIrdorath = TRUE;
@@ -176,8 +176,8 @@ FUNC VOID Use_HallsofIrdorath_Open ()
  					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "... and so I hid the access to the library behind a secret door to protect my records of Beliar's temples. ");
-					Doc_PrintLines	( nDocID,  0, "If my fellow believers had known of the existence of these records, these deluded fools would certainly have destroyed everything.");		
+					Doc_PrintLines	( nDocID,  0, "... and so I concealed the entrance to the library behind a secret door, to protect my records of Beliar's temples. ");
+					Doc_PrintLines	( nDocID,  0, "If my brothers had known of these records, those fools would probably have destroyed them all.");		
 					
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -185,10 +185,10 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 					Doc_PrintLine	( nDocID,  1, ""					);										
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Now they don't know more than that these temples existed once."	);
+					Doc_PrintLines	( nDocID,  1, "Now, all they know is that these temples used to exist."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "To be on the safe side, I have summoned some servants to protect the library.");
+					Doc_PrintLines	( nDocID,  1, "Just to be sure, I have sworn some servants to protect the library.");
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
 					Doc_PrintLine	( nDocID,  1, ""					);
@@ -239,45 +239,45 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
  					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "... I am now certain that this building is the halls of Irdorath. You are currently on an island not far from Khorini's harbour. Beliar's interest in the ore mines is becoming more and more apparent...");
+					Doc_PrintLines	( nDocID,  0, "... I am now certain that the building is the Halls of Irdorath. They are located on an island quite near the harbor of Khorinis. Beliar's interest in the ore mines is obvious ...");
 					Doc_PrintLines	( nDocID,  0, "");		
 	
 					if (hero.guild == GIL_PAL)
 					{
-						Doc_PrintLines	( nDocID,  0, "... the stronger they are, the sooner they seem to be worthy of serving him as the undead. Such a converted paladin is difficult for a fighter to defeat. One of them fell into my hands. I hope the others won't notice his presence down here....");		
+						Doc_PrintLines	( nDocID,  0, "... The stronger they are, the more valuable they seem to be to him as undead servants. These converted paladins are very hard for any warrior to defeat. One of them has fallen into my hands. I only hope the others won't notice his presence down here ...");		
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... the converted Paladin, no longer seems to respond to any stimuli. I've stowed his armour and other belongings in the back room. The door can only be opened from the inside. I built a teleportrune to get into the room. I have put the instructions in the almanac, so that he can find one of them..."	);
+						Doc_PrintLines	( nDocID,  1, "...the converted paladin no longer seems to react to any stimuli. I have stored his armor and the rest of his belongings in the back room. The door can only be opened from inside. I have built a teleport rune to get into the room. I have placed the instructions for it in the almanac so that the One can find them..."	);
 					};
 					
 					if (hero.guild == GIL_KDF)
 					{
-						Doc_PrintLines	( nDocID,  0, "... the signs are clear! When the one comes, he will need all the help we can give him, Beliar is already too strong. I have managed to acquire some very valuable artifacts and will keep them for the case of the cases below. I'm assuming that the chosen one is from our line-up. ");
+						Doc_PrintLines	( nDocID,  0, "... The signs are unmistakable! When the One comes, he will need all the help we can give him. Beliar is already too strong. If have succeeded in obtaining some valuable artifacts which I will keep down here just in case. I suspect the Chosen One will come from among our ranks, ");
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "I wrote him some instructions in the almanac."					);
+						Doc_PrintLines	( nDocID,  1, "so I have written instructions in the almanac for him."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... I'm sure now. We can't stop destiny. As soon as Beliar feels strong enough, he will rise up and reach for the dominion of the world. I have to find the one or we'll be lost."); 
+						Doc_PrintLines	( nDocID,  1, "... I am certain now. We cannot stop fate. As soon as Beliar feels strong enough, he will arise and seek to rule the world. I must find the One, or we are all doomed."); 
 					};
 					
 					if (hero.guild == GIL_DJG)
 					{
-						Doc_PrintLines	( nDocID,  0, "... there will be a war, a war for the fate of the world. I seem to be the only one who can read the signs. Everyone around me seems to ignore them. One will come and with his appearance the war has begun. This war is as old as time, but a decision seems to be taking shape.  ");
+						Doc_PrintLines	( nDocID,  0, "... There will be war, a war for the fate of the world. I seem to be the only one capable of interpreting the signs. All around me seem to ignore them. The One will come, and his coming will herald the beginning of the war. It is a war as old as time itself, but the end appears to be coming into view.  ");
 						
 						//2.Seite
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "and I will not stand idly by and watch others take the fate of the world into their hands."					);
+						Doc_PrintLines	( nDocID,  1, "I will not stand idly by and watch as others take the fate of the world into their hands."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "... I have studied the ancient scripts and found instructions on how to make the legendary weapons of the ancient Dragon Lords. However, I can't imagine where to get the ingredients. To be on the safe side, I have laid down the recipe in the almanac, which of us can already say what the future may bring us, perhaps even dragons."); 
+						Doc_PrintLines	( nDocID,  1, "... I have studied the ancient writings and I have found out how to create the legendary weapons of the ancient Dragon Lords. However, I have no idea how to obtain the ingredients. I have entered the recipe in the almanac just in case. Who knows what terrors the future may bring - maybe even dragons."); 
 					};					
 					
 					Doc_Show		( nDocID );
@@ -303,7 +303,7 @@ INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 	on_state[0]			=   UseItWr_UseLampIdiot_Mis;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"from the book The Halls of Irdorath?";
+	TEXT[0]				=	"from the book 'The Halls of Irdorath'";
 };
 func void UseItWr_UseLampIdiot_Mis ()
 {   
@@ -320,8 +320,8 @@ func void UseItWr_UseLampIdiot_Mis ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "     The lamp brings light "						);
-					Doc_PrintLine	(nDocID,  0, "     in the lowlands"						);
+					Doc_PrintLine	(nDocID,  0, "     The lamp carries light "						);
+					Doc_PrintLine	(nDocID,  0, "     into the lower regions"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -411,7 +411,7 @@ INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[3]				=	"Ermächtigungsschreiben";
-	TEXT[4]				=   "for the ship of the Paladin";
+	TEXT[4]				=   "for the paladins' ship.";
 };
 func void UseITWr_ForgedShipLetter_MIS ()
 {   
@@ -438,7 +438,7 @@ func void UseITWr_ForgedShipLetter_MIS ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     royal seal"							);
+					Doc_PrintLine	(nDocID,  0, "     Royal Seal"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -496,7 +496,7 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"The Tears of Inno";
+	description		= 	"The Tears of Innos";
 	
 	TEXT[1]			= 	"The magicians of fire give this potion undreamt-of powers.";
 	Text[2]			=   "Everyone else will find death.";
@@ -591,7 +591,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"The Tears of Inno";
+	description		= 	"The Tears of Innos";
 	TEXT[1]			= 	"The magicians of fire give this potion undreamt-of powers.";
 	Text[2]			=   "Everyone else will find death.";
 	
@@ -623,7 +623,7 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Inno's divine aura";
+	description		= "The divine aura of Innos.";
 	
 	TEXT[2]			= "This amulet lends the wearer ";
 	TEXT[3]			= "Protection from any damage.";
@@ -678,7 +678,7 @@ INSTANCE ItPo_HealRandolph_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Healing the addiction";
+	description		= 	"Healing of Addiction";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;

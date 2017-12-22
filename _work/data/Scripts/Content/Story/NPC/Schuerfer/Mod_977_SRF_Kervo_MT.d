@@ -1,10 +1,10 @@
 instance Mod_977_SRF_Kervo_MT (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "kervo"; 
+	name 		= "Kervo"; 
 	guild 		= GIL_NONE;
 	id 			= 977;
-	voice 		= 13;
+	voice		= 0;
 	flags       = 0;							//NPC_FLAG_IMMORTAL oder 0
 	npctype		= NPCTYPE_MAIN;
 	

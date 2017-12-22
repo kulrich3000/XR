@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Inside, the name? Valley? is burnt in.";
+	TEXT[0]				= 	"The name Talbin's been branded on the inside";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -188,7 +188,7 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 
 	description				=	name;
 	TEXT[0]					=	"The egg is warm, and there's";
-	TEXT[1]					=	"you hear a soft scratch";
+	TEXT[1]					=	"a scratching noise on the inside";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -208,7 +208,7 @@ INSTANCE ItAt_DragonEgg_Giftdrache	(C_ITEM)
 
 	description				=	name;
 	TEXT[0]					=	"The egg is warm, and there's";
-	TEXT[1]					=	"you hear a soft scratch";
+	TEXT[1]					=	"a scratching noise on the inside";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -237,7 +237,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	description				= 	name;
 
 	TEXT[0]					=	"The ring is rough and seems";
-	TEXT[1]					=	"strange cold from";
+	TEXT[1]					=	"strangely cold";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -281,7 +281,7 @@ INSTANCE ItRi_SkinnersRing(C_Item)
 	description				= 	name;
 
 	TEXT[0]					=	"The ring is rough and seems";
-	TEXT[1]					=	"strange cold from";
+	TEXT[1]					=	"strangely cold";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -332,7 +332,7 @@ INSTANCE ItRi_SkinnersRing_Gold(C_Item)
 	description				= 	name;
 
 	TEXT[0]					=	"The ring is rough and seems";
-	TEXT[1]					=	"strange cold from";
+	TEXT[1]					=	"strangely cold";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;

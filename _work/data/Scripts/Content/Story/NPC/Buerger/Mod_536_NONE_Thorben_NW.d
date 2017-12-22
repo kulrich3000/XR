@@ -1,10 +1,10 @@
 INSTANCE Mod_536_NONE_Thorben_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "thorn";
+	name 		= "Thorben";
 	guild 		= GIL_PAL;
 	id 			= 536;
-	voice 		= 6;
+	voice		= 11;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

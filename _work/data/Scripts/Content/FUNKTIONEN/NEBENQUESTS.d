@@ -657,7 +657,7 @@ FUNC VOID NEBENQUESTS()
 			else
 			{
 				var string FlugblattMeldung;
-				FlugblattMeldung = ConcatStrings("still ", IntToString(20-Mod_Flugblaetter));
+				FlugblattMeldung = ConcatStrings("Still ", IntToString(20-Mod_Flugblaetter));
 				FlugblattMeldung = ConcatStrings(FlugblattMeldung, " to distribute flyers!");
 
 				Print (FlugblattMeldung);

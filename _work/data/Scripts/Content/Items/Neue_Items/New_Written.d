@@ -34,7 +34,7 @@ INSTANCE Mod_XardasBriefAnKarras (C_ITEM)
 	on_state[0]	=	Use_XardasBriefAnKarras_Versiegelt;
 	scemeName	=	"MAPSEALED";
 	description	=	name;
-	TEXT[2]		=	"This message has been carefully sealed.";
+	TEXT[2]		=	"This message was carefully sealed.";
 };
 var int Use_XardasBriefAnKarras_OneTime;
 FUNC VOID Use_XardasBriefAnKarras()
@@ -78,7 +78,7 @@ INSTANCE ItWr_OleForAndre (C_ITEM)
 	visual		=	"ItWr_Scroll_02.3DS";
 	material	=	MAT_LEATHER;
 	description	=	name;
-	TEXT[2]		=	"This message has been carefully sealed.";
+	TEXT[2]		=	"This message was carefully sealed.";
 };
 
 INSTANCE ItWr_NamibForBeliar (C_ITEM)
@@ -93,7 +93,7 @@ INSTANCE ItWr_NamibForBeliar (C_ITEM)
 	visual		=	"ItWr_Scroll_02.3DS";
 	material	=	MAT_LEATHER;
 	description	=	name;
-	TEXT[2]		=	"This message has been carefully sealed.";
+	TEXT[2]		=	"This message was carefully sealed.";
 };
 
 INSTANCE ItWr_GDG_Almanach (C_ITEM)
@@ -577,10 +577,14 @@ FUNC VOID Use_OTZauberformel()
 		B_RemoveNpc	(Monster_11056_Skelett_OT);
 
 		Autosave_Counter = Mod_Autosave*600;
-	}
-	else
-	{
+	} else {
+		B_Say(hero, NULL, "$MISSINGITEM");
 		CreateInvItems	(hero, ItWr_OTZauberformel, 1);
+		if (Npc_HasItems(hero, ItRu_LightHeal) == 0) {
+			Print ("Healer is missing.");
+		} else {
+			Print ("No ore armament.");
+		};
 	};
 };
 
@@ -818,7 +822,7 @@ INSTANCE XardasLetterForSaturas (C_ITEM)
 	on_state[0]	=	Use_XardasLetterForSaturas_Versiegelt;
 	scemeName	=	"MAPSEALED";
 	description	=	name;
-	TEXT[2]		=	"This message has been carefully sealed.";
+	TEXT[2]		=	"This message was carefully sealed.";
 	TEXT[3]		=	"I am to deliver them to Saturnas.";
 };
 var int Use_XardasLetterForSaturas_OneTime;

@@ -1,9 +1,9 @@
 FUNC VOID Info_Mod_Dubios_Hi()
 {
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_00"); //(opposite) Hähähä,... what is this rich bag running around in the middle of the wilderness. He must expect to be attacked.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_01"); //And the bum was so persistently hanging on his ring... I gave him this to eat.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_02"); //Had more than enough gold and silver. He could easily take it with him into his wet grave.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_03"); //But who do we have here? Another donkey? To him!
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_00"); //(opposite) Hähähä,... what is this rich bag running around in the middle of the wilderness. He must expect to be attacked.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_01"); //And the bum was so persistently hanging on his ring... I gave him this to eat.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_02"); //Had more than enough gold and silver. He could easily take it with him into his wet grave.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_03"); //But who do we have here? Another donkey? To him!
 
 	B_LogEntry	(TOPIC_MOD_HEROLD_SIEGELRING, "Looks like the two dubious characters robbed my robber themselves. They must have left the ring to him. He is now in his wet grave....");
 };

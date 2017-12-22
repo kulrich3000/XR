@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_08_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_08_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_08_Hi_18_00"); //Pictures of the past glow.... or are they images of the future?
+	AI_Output(self, hero, "Info_Mod_Wesen_08_Hi_10_00"); //Pictures of the past glow.... or are they images of the future?
 
 	AI_StopProcessInfos	(self);
 };

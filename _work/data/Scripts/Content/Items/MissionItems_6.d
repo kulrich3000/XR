@@ -20,9 +20,9 @@ INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"In the bag seem to be";
-	TEXT[2]				= 	"a hard object ";
-	TEXT[3]				= 	"and be a document.";
+	TEXT[1]				= 	"The bag seems to";
+	TEXT[2]				= 	"contain a hard object ";
+	TEXT[3]				= 	"and a document.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -70,8 +70,8 @@ func void Use_XardasErmahnungFuerIdioten ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "My young protégé, you have disappointed me bitterly. How could you leave without the eye Innos in your luggage?"					);
-					Doc_PrintLines	( nDocID,  0, "I can only hope that your negligence has its limits. Otherwise you will never free the world from the evil of this world and I will have to kill you personally for your stupidity."					);
+					Doc_PrintLines	( nDocID,  0, "My young protege, you disappoint me greatly. How could you leave on the ship and not take The Eye of Innos?"					);
+					Doc_PrintLines	( nDocID,  0, "I can only hope that there are limits to your negligence. Otherwise you will never rid the world of Evil and I will be forced to personally execute you for your stupidity."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -101,7 +101,7 @@ INSTANCE ItWr_Krypta_Garon		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 
-	TEXT[3]				= 	"shaky";
+	TEXT[3]				= 	"in shaky handwriting.";
 };
 func void Use_Krypta_Garon ()
 {   
@@ -115,14 +115,14 @@ func void Use_Krypta_Garon ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "I failed. My efforts to bring Inubis back to the path of the righteous were in vain. "					);
-					Doc_PrintLines	( nDocID,  0, "At first I thought I was dead. But there is still power in the old bones of Ivan. "					);
-					Doc_PrintLines	( nDocID,  0, "Inubis has risen from the dead. Banished from the old order of the Paladins, he only seeks revenge for his curse."					);
-					Doc_PrintLines	( nDocID,  0, "Many of his followers followed him. I don't know how it could have happened that a commander like Inubis would fall for evil. "					);
-					Doc_PrintLines	( nDocID,  0, "I found his grave in this crypt. But whether I can ever tell a person about it is not certain. Therefore, I write these lines in the hope that they will be found."					);
-					Doc_PrintLines	( nDocID,  0, "Be warned. A mighty enemy stretches its claws to the souls of the righteous. Inubis will not be the last."					);
+					Doc_PrintLines	( nDocID,  0, "I have failed. In vain I have tried to keep Inubis on the path of Good. "					);
+					Doc_PrintLines	( nDocID,  0, "At first I believed I was dead. But there is strength left yet in Ivan's old bones. "					);
+					Doc_PrintLines	( nDocID,  0, "Inubis has arisen from the dead. Banished by the ancient order of the paladins, he now seeks revenge for his curse."					);
+					Doc_PrintLines	( nDocID,  0, "Many of his followers are with him. I have no idea how a warlord like Inubis could become so evil. "					);
+					Doc_PrintLines	( nDocID,  0, "I found his tomb in this crypt. But I am uncertain whether I will ever be able to report my find. Therefore I write these lines and hope that they may be found."					);
+					Doc_PrintLines	( nDocID,  0, "Be warned. A mighty enemy is reaching out for the souls of the just. Inubis will not be the last."					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "May Innos protect your souls."					);
+					Doc_PrintLine	( nDocID,  0, "May Innos save your souls."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "                                 Ivan");
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -254,14 +254,14 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS ()
 					Doc_PrintLine	( nDocID,  0, "EMEM KADAR"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "The Eye of Power enlightens your path");
+					Doc_PrintLine	( nDocID,  0, "The Eye of Power illuminate your path.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
 				
 					Doc_Show		( nDocID );
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"The words KHADOSH EMEM KADAR were written in the Scroll of the Black Mage. That sounds like an incantation, but what can this be applied to and what is the Eye of Power?"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"The black magician's scroll contained the words KHADOSH EMEM KADAR. It sounds like some kind of magic formula, but what is it used for - and what is the Eye of Power?"); 
 };
 //**********************************************************************************
 //	Schlüssel zur Truhe in der Kammer des OberDementors.
@@ -317,14 +317,14 @@ func void Use_RezeptFuerMegaTrank ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "I was able to bring a very old art back to life. I'm afraid Feodaron wouldn't be very uplifted by my findings."					);
-					Doc_PrintLines	( nDocID,  0, "It would simply mean that I would have to process his entire brood into a potion in my laboratory. If he wasn't sitting on his balls all the time like a chicken, I'd have tried it by now. But I still have a little respect for his breath."					);
+					Doc_PrintLines	( nDocID,  0, "I have revived an ancient art. I fear Feodaron would not be impressed with my achievement."					);
+					Doc_PrintLines	( nDocID,  0, "It means, quite simply, that I would have to mix his entire brood in my laboratory into a potion. If only he didn't sit on his eggs like some chicken all the time, I'd have tried it out. But he still inspires me with some respect."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Embarla Firgasto:"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "10 dragon eggs, a crushed black pearl and a pinch of sulphur."					);
-					Doc_PrintLines	( nDocID,  0, "The emulsion is brought to the boil and then driven through the distiller under constant stirring."					);
-					Doc_PrintLines	( nDocID,  0, "Use the elixir with caution. It's got heavy side movements. The entire mana budget will be confused."					);
+					Doc_PrintLines	( nDocID,  0, "10 dragon eggs, one powderized black pearl and a pinch of sulfur."					);
+					Doc_PrintLines	( nDocID,  0, "The emulsion is brought to the boil and must be stirred constantly as it passes through the distiller."					);
+					Doc_PrintLines	( nDocID,  0, "The elixir must be used with care. It has strong side effects and can upset the entire mana system."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -369,22 +369,22 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "I am already waiting 36 days for my convocation. I don't think they're gonna take me in anymore. I've already done everything they asked me to do. I carried everything after them."					);
+					Doc_PrintLines	( nDocID,  0, "I've been waiting to be called up for 36 days now. I'm beginning to doubt they'll take me on. But I've done all they asked me to. I've fetched and carried for them like some old housemaid."					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "The keymaster ordered me to seal the bars. I haven't gotten around to it yet. If it goes on like this, someone else will be able to just walk through the gate.");
-					Doc_PrintLines	( nDocID,  0, "Too bad I can't remember the combinations. ");
+					Doc_PrintLines	( nDocID,  0, "The key master instructed me to seal the bars. I still haven't gotten around to it. If things go on this way, anyone might just stroll in through the gate.");
+					Doc_PrintLines	( nDocID,  0, "It's a shame I can't remember the combinations. ");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "I would have been secretly in the great hall by now. I can't wait to see the master. Do you think they'll let me join him once I'm one of them?"	);
+					Doc_PrintLines	( nDocID,  1, "I'd have sneaked into the great Hall ages ago. I can hardly wait to see the Master. I wonder if they'll let me see him once I'm one of them."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Tried my luck last night. But I already failed at the two lever chambers before I could push the three switches of the west wing in the correct order. The dog has locked the chambers. Tomorrow I'll try to take the key from him....");
+					Doc_PrintLines	( nDocID,  1, "I tried my luck yesterday. But I failed the two lever chambers before I could even press the three switches in the west wing in the right order. That dog locked the chambers! Tomorrow I'm going to try and get the key off him ...");
 					Doc_Show		( nDocID );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"The diary of the black magic novice talks about lever chambers, keymasters, switch combinations and other stuff. Should I keep in mind, maybe it'll help me later."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"The diary of the novice black magician talks about lever chambers, key masters, switch combinations and other things. I should keep that in the back of my mind, it could be useful later."); 
 };
 
 //**********************************************************************************
@@ -421,12 +421,12 @@ func void Use_ZugBruecke ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "I don't care if you can cross the bridge from the other side or not. If it were up to me, you'd all burn in hell anyway."					);
-					Doc_PrintLines	( nDocID,  0, "I'll have the bridge moved in while I'm in my residence. If I catch someone else shooting bow and arrow at the switches to come over, then I'll hang the shooter on the next tree by my own hand."	);
+					Doc_PrintLines	( nDocID,  0, "I don't care if you can cross the bridge from the other side or not. If I had any say, you'd all rot in hell."					);
+					Doc_PrintLines	( nDocID,  0, "I'm gonna leave the bridge drawn in as long as I'm in my domain. And if I catch one more person trying to hit the switches with a bow and arrow to get over, I will personally hang the idiot from the nearest tree!"	);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "                      archipelago"					);
+					Doc_PrintLine	( nDocID,  0, "                      Archol"					);
 					
 					Doc_Show		( nDocID );
 };

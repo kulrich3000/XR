@@ -17,7 +17,7 @@ func void B_AddCityGuideChoices()
 	};
 	if (!C_IsQuarterNearest(self, Q_TEMPEL))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "To the Adanos Temple", DIA_CITYGUIDE_TEMPEL);
+		Info_AddChoice (DIA_CITYGUIDE, "To the temple of Adanos.", DIA_CITYGUIDE_TEMPEL);
 	};
 	if (!C_IsQuarterNearest(self, Q_MARKT))
 	{
@@ -25,7 +25,7 @@ func void B_AddCityGuideChoices()
 	};
 	if (!C_IsQuarterNearest(self, Q_GALGEN))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "To the gallows", DIA_CITYGUIDE_GALGEN);
+		Info_AddChoice (DIA_CITYGUIDE, "To the gallows square.", DIA_CITYGUIDE_GALGEN);
 	};
 	if (!C_IsQuarterNearest(self, Q_KASERNE))
 	{
@@ -33,10 +33,10 @@ func void B_AddCityGuideChoices()
 	};
 	if (!C_IsQuarterNearest(self, Q_HAFEN))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "To the waterfront.", DIA_CITYGUIDE_HAFEN);
+		Info_AddChoice (DIA_CITYGUIDE, "To the harbor district.", DIA_CITYGUIDE_HAFEN);
 	};
 	
-	Info_AddChoice (DIA_CITYGUIDE, "Thank you - that's all I wanted to know!", DIA_CITYGUIDE_BACK);
+	Info_AddChoice (DIA_CITYGUIDE, "Thanks - that was all I wanted to know!", DIA_CITYGUIDE_BACK);
 };
 
 INSTANCE DIA_CITYGUIDE (C_INFO)

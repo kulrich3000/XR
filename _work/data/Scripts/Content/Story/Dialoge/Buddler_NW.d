@@ -18,14 +18,14 @@ FUNC INT Info_Mod_Buddler_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Buddler_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_00"); //I have a message from Alissandro to the boss here.
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_00"); //I have a message from Alissandro to the boss here.
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_01"); //That must be me, then.
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_02"); //The old man gave me this note for you.
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_02"); //The old man gave me this note for you.
 
 	B_GiveInvItems	(self, hero, ItWr_BuddlerNachrichtVonAL, 1);
 
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_03"); //Good, is there anything else?
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_04"); //No, the old man just told me to make myself useful. Is there any work here for me?
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_04"); //No, the old man just told me to make myself useful. Is there any work here for me?
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_05"); //Ask Whistler.
 
 	B_StartOtherRoutine	(self, "ARBEIT");

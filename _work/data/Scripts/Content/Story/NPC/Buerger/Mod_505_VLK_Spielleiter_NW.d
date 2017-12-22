@@ -1,7 +1,7 @@
 instance Mod_505_VLK_Spielleiter_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= ""; 
+	name 		= "quizmaster"; 
 	guild 		= GIL_OUT;
 	id 			= 505;
 	voice 		= 1;

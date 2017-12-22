@@ -1,10 +1,10 @@
 instance Mod_7668_MIL_Miliz_REL (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "militia";	
+	name 		= "Militia";	
 	guild 		= GIL_OUT;
 	id 			= 7668;
-	voice 		= 6;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

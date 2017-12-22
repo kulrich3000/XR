@@ -20,8 +20,8 @@ FUNC INT Info_Mod_SchwarzerNovizeKaninchen_Hi_Condition()
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_15_00"); //So you're responsible for the excessive rabbit population....
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_01"); //Yeah, I'm on a mission from the demon magicians to test Pest spells.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_11_02"); //And what are you gonna do about it?
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_24_01"); //Yeah, I'm on a mission from the demon magicians to test Pest spells.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_24_02"); //And what are you gonna do about it?
 
 	B_GivePlayerXP	(250);
 
@@ -38,7 +38,7 @@ FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_Info()
 FUNC VOID Info_Mod_SchwarzerNovizeKaninchen_Hi_B()
 {
 	AI_Output(hero, self, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_15_00"); //Spank your butt if you don't stop.
-	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_11_01"); //Well, come over here.
+	AI_Output(self, hero, "Info_Mod_SchwarzerNovizeKaninchen_Hi_B_24_01"); //Well, come over here.
 
 	Info_ClearChoices	(Info_Mod_SchwarzerNovizeKaninchen_Hi);
 

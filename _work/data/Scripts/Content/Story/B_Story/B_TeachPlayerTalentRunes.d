@@ -43,7 +43,7 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	};
 	
 	Log_CreateTopic (TOPIC_TalentRunes, LOG_NOTE);
-	B_LogEntry (TOPIC_TalentRunes, "In order to create a rune, I need different ingredients for each rune in addition to the role of the desired spell. With these ingredients and a rune blank I can create the desired rune at the rune table.");
+	B_LogEntry (TOPIC_TalentRunes, "To create a rune I need the scroll for the spell and certain ingredients for each rune. Using those ingredients and a blank runestone I can create the desired rune at a rune table.");
 	
 	var C_NPC ScrollTrader;
 	

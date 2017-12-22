@@ -1481,7 +1481,7 @@ INSTANCE DIA_CH_Strength (C_INFO)
 	condition	= DIA_CH_Strength_Condition;
 	information	= DIA_CH_Strength_Info;
 	permanent	= TRUE;
-	description = "increase strength";
+	description = "Increase Strength";
 };                       
 
 FUNC INT DIA_CH_Strength_Condition()
@@ -1565,7 +1565,7 @@ INSTANCE DIA_CH_Dex (C_INFO)
 	condition	= DIA_CH_Dex_Condition;
 	information	= DIA_CH_Dex_Info;
 	permanent	= TRUE;
-	description = "Increase dexterity";
+	description = "Increase Dexterity";
 };                       
 
 FUNC INT DIA_CH_Dex_Condition()
@@ -1580,10 +1580,10 @@ FUNC VOID DIA_CH_Dex_Info()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice 	  (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 FUNC VOID DIA_CH_Dex_BACK()
 {
@@ -1598,10 +1598,10 @@ func void DIA_CH_DEX_1()
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 
 // ------ 5 Geschick ------
@@ -1612,10 +1612,10 @@ func void DIA_CH_DEX_5()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 // ------ 10 Geschick ------
 func void DIA_CH_DEX_10()
@@ -1625,10 +1625,10 @@ func void DIA_CH_DEX_10()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 // ------ 20 Geschick ------
 func void DIA_CH_DEX_20()
@@ -1638,10 +1638,10 @@ func void DIA_CH_DEX_20()
 	Info_ClearChoices (DIA_CH_Dex);
 	Info_AddChoice (DIA_CH_Dex, DIALOG_BACK, DIA_CH_Dex_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
-	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Skill + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 20"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*20)		,DIA_CH_DEX_20);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 10"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*10)		,DIA_CH_DEX_10);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 5"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY)*5)		,DIA_CH_DEX_5);
+	Info_AddChoice		(DIA_CH_Dex, B_BuildLearnString("Dexterity + 1"			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))		,DIA_CH_DEX_1);
 };
 
 //******************************************************************************************
@@ -1657,7 +1657,7 @@ INSTANCE DIA_CH_MAGIE (C_INFO)
 	condition	= DIA_CH_MAGIE_Condition;
 	information	= DIA_CH_MAGIE_Info;
 	permanent	= TRUE;
-	description = "MAGIE: Mana, Runes, Circles";
+	description = "MAGIC: Mana, Runes, Circles";
 };                       
 
 FUNC INT DIA_CH_MAGIE_Condition()
@@ -1712,7 +1712,7 @@ INSTANCE DIA_CH_Mana (C_INFO)
 	condition	= DIA_CH_Mana_Condition;
 	information	= DIA_CH_Mana_Info;
 	permanent	= TRUE;
-	description = "Mana increase";
+	description = "Increase Mana";
 };                       
 
 FUNC INT DIA_CH_Mana_Condition()
@@ -1818,11 +1818,11 @@ FUNC VOID DIA_CH_KREISE_Info()
 	//Info_AddChoice	  (DIA_CH_KREISE,"Paladin-Runen",  CH_Training_Runen_Paladin);
 	
 	Info_AddChoice 	  (DIA_CH_KREISE,"Sixth Circle",CH_KREISE_6);
-	Info_AddChoice 	  (DIA_CH_KREISE,"fifth circle", CH_KREISE_5);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Fourth circle", CH_KREISE_4);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Fifth Circle", CH_KREISE_5);
+	Info_AddChoice 	  (DIA_CH_KREISE,"Fourth Circle", CH_KREISE_4);
 	Info_AddChoice 	  (DIA_CH_KREISE,"Third Circle", CH_KREISE_3);
-	Info_AddChoice 	  (DIA_CH_KREISE,"Second circle", CH_KREISE_2);
-	Info_AddChoice 	  (DIA_CH_KREISE,"First circle",  CH_KREISE_1);  
+	Info_AddChoice 	  (DIA_CH_KREISE,"Second Circle", CH_KREISE_2);
+	Info_AddChoice 	  (DIA_CH_KREISE,"First Circle",  CH_KREISE_1);  
 	
 };
 //***************************************************************************
@@ -1879,7 +1879,7 @@ INSTANCE DIA_CH_Runen (C_INFO)
 	condition	= DIA_CH_Runen_Condition;
 	information	= DIA_CH_Runen_Info;
 	permanent	= TRUE;
-	description = "Tinkering runes";
+	description = "Create Runes";
 };                       
 
 FUNC INT DIA_CH_Runen_Condition()
@@ -1897,27 +1897,27 @@ FUNC VOID DIA_CH_Runen_Info()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("6. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_CH_Runen_6);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("6th Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 6))			,DIA_CH_Runen_6);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 4)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("5. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_CH_Runen_5);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("5th Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 5))			,DIA_CH_Runen_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 3)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("4. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_CH_Runen_4);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("4th Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 4))			,DIA_CH_Runen_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 2)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("3. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_CH_Runen_3);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("3rd Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 3))			,DIA_CH_Runen_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) == 1)
 	{
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("2. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_CH_Runen_2);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("2nd Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 2))			,DIA_CH_Runen_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) < 1)
 	{ 
-		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("1. Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_CH_Runen_1);
+		Info_AddChoice		(DIA_CH_Runen, B_BuildLearnString("1st Circle of Magic"	, B_GetLearnCostTalent(other, NPC_TALENT_MAGE, 1))			,DIA_CH_Runen_1);
 	};
 };
 //**********************************************************
@@ -2261,7 +2261,7 @@ INSTANCE DIA_CH_Kampf_Start (C_INFO)
 	condition	= DIA_CH_Kampf_Start_Condition;
 	information	= DIA_CH_Kampf_Start_Info;
 	permanent	= TRUE;
-	description = "Combat talents (close combat and ranged combat)";
+	description = "Fighting Skills (Closed and Far Combat)";
 };                       
 
 FUNC INT DIA_CH_Kampf_Start_Condition()
@@ -2314,7 +2314,7 @@ INSTANCE DIA_CH_Kampf_Einhand (C_INFO)
 	condition	= DIA_CH_Kampf_Einhand_Condition;
 	information	= DIA_CH_Kampf_Einhand_Info;
 	permanent	= TRUE;
-	description = "hand guns";
+	description = "One-Handed Weapons";
 };                       
 
 FUNC INT DIA_CH_Kampf_Einhand_Condition()
@@ -2329,10 +2329,10 @@ FUNC VOID DIA_CH_Kampf_Einhand_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Einhand);
 	Info_AddChoice	  (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
 };
 FUNC VOID DIA_CH_Kampf_Einhand_BACK()
 {
@@ -2346,10 +2346,10 @@ func void CH_Training_Combat_1H_1()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)		,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))		,CH_Training_Combat_1H_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2360,10 +2360,10 @@ func void CH_Training_Combat_1H_5()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2374,10 +2374,10 @@ func void CH_Training_Combat_1H_10()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 
 // ------20% Waffentalent ------
@@ -2388,10 +2388,10 @@ func void CH_Training_Combat_1H_20()
 	Info_ClearChoices	(DIA_CH_Kampf_Einhand);
 	Info_AddChoice	    (DIA_CH_Kampf_Einhand, DIALOG_BACK, DIA_CH_Kampf_Einhand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-hand weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*20)		,CH_Training_Combat_1H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*10)		,CH_Training_Combat_1H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1)*5)			,CH_Training_Combat_1H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Einhand, B_BuildLearnString("One-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_1H, 1))			,CH_Training_Combat_1H_1);
 };
 //******************************************************************************************
 //Kampf Zweihand
@@ -2403,7 +2403,7 @@ INSTANCE DIA_CH_Kampf_Zweihand (C_INFO)
 	condition	= DIA_CH_Kampf_Zweihand_Condition;
 	information	= DIA_CH_Kampf_Zweihand_Info;
 	permanent	= TRUE;
-	description = "two-handed weapons";
+	description = "Two-Handed Weapons";
 };                       
 
 FUNC INT DIA_CH_Kampf_Zweihand_Condition()
@@ -2418,10 +2418,10 @@ FUNC VOID DIA_CH_Kampf_Zweihand_Info()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("two-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 FUNC VOID DIA_CH_Kampf_Zweihand_BACK()
 {
@@ -2435,10 +2435,10 @@ func void CH_Training_Combat_2H_1()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("two-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------ 5% Waffentalent ------
@@ -2449,10 +2449,10 @@ func void CH_Training_Combat_2H_5()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("two-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------ 10% Waffentalent ------
@@ -2463,10 +2463,10 @@ func void CH_Training_Combat_2H_10()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("two-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 
 // ------20% Waffentalent ------
@@ -2477,10 +2477,10 @@ func void CH_Training_Combat_2H_20()
 	Info_ClearChoices (DIA_CH_Kampf_Zweihand );
 	Info_AddChoice	  (DIA_CH_Kampf_Zweihand , DIALOG_BACK, DIA_CH_Kampf_Zweihand_BACK);
 	
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("two-handed weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
-	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-handed weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 20"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*20)			,CH_Training_Combat_2H_20);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 10"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*10)			,CH_Training_Combat_2H_10);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 5"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1)*5)				,CH_Training_Combat_2H_5);
+	Info_AddChoice		(DIA_CH_Kampf_Zweihand, B_BuildLearnString("Two-wanded weapons + 1"	, B_GetLearnCostTalent(other, NPC_TALENT_2H, 1))				,CH_Training_Combat_2H_1);
 };
 //***************************************************************************************************************************************
 // FERNKAMPF Bogen und Armbrust
@@ -2682,7 +2682,7 @@ INSTANCE DIA_CH_Dieb_Start (C_INFO)
 	condition	= DIA_CH_Dieb_Start_Condition;
 	information	= DIA_CH_Dieb_Start_Info;
 	permanent	= TRUE;
-	description = "theft talents";
+	description = "Thief Skills";
 };                       
 
 FUNC INT DIA_CH_Dieb_Start_Condition()
@@ -2804,7 +2804,7 @@ FUNC VOID DIA_CH_Dieb_Picklock_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Picklock );
 	Info_AddChoice 		(DIA_CH_Dieb_Picklock ,DIALOG_BACK,DIA_CH_Dieb_Picklock_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("pick locks"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
+	Info_AddChoice		(DIA_CH_Dieb_Picklock , B_BuildLearnString("Pick locks"	, B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1))		,CH_Training_Thief_Picklock);
 };
 //*********************************************
 //Alle Diebestalente auf einen Schlag 
@@ -2816,7 +2816,7 @@ INSTANCE DIA_CH_Dieb_Alle (C_INFO)
 	condition	= DIA_CH_Dieb_Alle_Condition;
 	information	= DIA_CH_Dieb_Alle_Info;
 	permanent	= TRUE;
-	description = "Learn all the theft talents";
+	description = "Learn all thief skills";
 };                       
 
 FUNC INT DIA_CH_Dieb_Alle_Condition()
@@ -2839,7 +2839,7 @@ FUNC VOID DIA_CH_Dieb_Alle_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Alle );
 	Info_AddChoice 		(DIA_CH_Dieb_Alle ,DIALOG_BACK,DIA_CH_Dieb_Alle_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Alle , B_BuildLearnString("All the theft talents", kosten_alle), CH_Training_Thief_Alle);
+	Info_AddChoice		(DIA_CH_Dieb_Alle , B_BuildLearnString("All Thief Skills", kosten_alle), CH_Training_Thief_Alle);
 };
 //***************************************************************************
 // Talente Diebesfähigkeiten
@@ -2900,7 +2900,7 @@ INSTANCE DIA_CH_Misc_Start (C_INFO)
 	condition	= DIA_CH_Misc_Start_Condition;
 	information	= DIA_CH_Misc_Start_Info;
 	permanent	= TRUE;
-	description = "Miscellaneous (drinks, trophies, forges, paladin runes, language)";
+	description = "Misc (Potions,Trophies,Forging,Paladin Runes,Language)";
 };                       
 
 FUNC INT DIA_CH_Misc_Start_Condition()
@@ -2960,7 +2960,7 @@ INSTANCE DIA_CH_Misc_Alchemie (C_INFO)
 	condition	= DIA_CH_Misc_Alchemie_Condition;
 	information	= DIA_CH_Misc_Alchemie_Info;
 	permanent	= TRUE;
-	description = "Alchemy - the art of brewing potions";
+	description = "Alchemy - the art to brew potions";
 };                       
 
 FUNC INT DIA_CH_Misc_Alchemie_Condition()
@@ -3012,7 +3012,7 @@ INSTANCE DIA_CH_Misc_Health (C_INFO)
 	condition	= DIA_CH_Misc_Health_Condition;
 	information	= DIA_CH_Misc_Health_Info;
 	permanent	= TRUE;
-	description = "Healing potions of all kinds";
+	description = "Healing Potions of all kind";
 };                       
 
 FUNC INT DIA_CH_Misc_Health_Condition()
@@ -3078,7 +3078,7 @@ INSTANCE DIA_CH_Misc_Mana (C_INFO)
 	condition	= DIA_CH_Misc_Mana_Condition;
 	information	= DIA_CH_Misc_Mana_Info;
 	permanent	= TRUE;
-	description = "Manatee potions of all kinds";
+	description = "Mana Potions of all kind";
 };                       
 
 FUNC INT DIA_CH_Misc_Mana_Condition()
@@ -3095,19 +3095,19 @@ FUNC VOID DIA_CH_Misc_Mana_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Permanent mana potion"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), CH_Training_Alchemy_POTION_Perm_Mana);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Permanent Mana Potion"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), CH_Training_Alchemy_POTION_Perm_Mana);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Manaelixir", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), CH_Training_Alchemy_POTION_Mana_03);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Mana Elixir", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), CH_Training_Alchemy_POTION_Mana_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("mana extract", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), CH_Training_Alchemy_POTION_Mana_02);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Mana Extract", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), CH_Training_Alchemy_POTION_Mana_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("mana essence", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), CH_Training_Alchemy_POTION_Mana_01);
+		Info_AddChoice	  (DIA_CH_Misc_Mana, B_BuildLearnString ("Mana Essence", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), CH_Training_Alchemy_POTION_Mana_01);
 	};
 };
 FUNC VOID DIA_CH_Misc_Mana_BACK()
@@ -3144,7 +3144,7 @@ INSTANCE DIA_CH_Misc_Special (C_INFO)
 	condition	= DIA_CH_Misc_Special_Condition;
 	information	= DIA_CH_Misc_Special_Info;
 	permanent	= TRUE;
-	description = "Special drinkers";
+	description = "Special Potions";
 };                       
 
 FUNC INT DIA_CH_Misc_Special_Condition()
@@ -3161,7 +3161,7 @@ FUNC VOID DIA_CH_Misc_Special_Info()
 	
 	if ( PLAYER_TALENT_ALCHEMY[CHARGE_INNOSEYE] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Eye recharge", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, CHARGE_Innoseye)), CH_Training_Alchemy_Charge_InnosEye);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Charge Eye", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, CHARGE_Innoseye)), CH_Training_Alchemy_Charge_InnosEye);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
@@ -3173,7 +3173,7 @@ FUNC VOID DIA_CH_Misc_Special_Info()
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("dexterity potion"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), CH_Training_Alchemy_POTION_Perm_DEX);
+		Info_AddChoice	  (DIA_CH_Misc_Special, B_BuildLearnString ("Dexterity Potion"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), CH_Training_Alchemy_POTION_Perm_DEX);
 	};
 	
 };
@@ -3214,7 +3214,7 @@ INSTANCE DIA_CH_Misc_SmithStart (C_INFO)
 	condition	= DIA_CH_Misc_SmithStart_Condition;
 	information	= DIA_CH_Misc_SmithStart_Info;
 	permanent	= TRUE;
-	description = "Forging - Men's Group";
+	description = "Forging - Men Group";
 };                       
 FUNC INT DIA_CH_Misc_SmithStart_Condition()
 {
@@ -3311,7 +3311,7 @@ INSTANCE DIA_CH_Misc_SmithHoch (C_INFO)
 	condition	= DIA_CH_Misc_SmithHoch_Condition;
 	information	= DIA_CH_Misc_SmithHoch_Info;
 	permanent	= TRUE;
-	description = "The last four weapons";
+	description = "The last 4 weapons";
 };                       
 
 FUNC INT DIA_CH_Misc_SmithHoch_Condition()
@@ -3468,7 +3468,7 @@ INSTANCE DIA_CH_Misc_Animal_allg (C_INFO)
 	condition	= DIA_CH_Misc_Animal_allg_Condition;
 	information	= DIA_CH_Misc_Animal_allg_Info;
 	permanent	= TRUE;
-	description = "Teeth, fur, claws, hearts";
+	description = "Teeth, Fur, Claws, Hearts";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_allg_Condition()
@@ -3485,19 +3485,19 @@ FUNC VOID DIA_CH_Misc_Animal_allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Teeth torn",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("pull teeth",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  CH_Training_TROPHYS_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Chipping claws",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  CH_Training_TROPHYS_Claws);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("chop claws",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  CH_Training_TROPHYS_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("skin",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  CH_Training_TROPHYS_Fur);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Skin hide",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  CH_Training_TROPHYS_Fur);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("take hearts",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  CH_Training_TROPHYS_Heart);
+		Info_AddChoice	(DIA_CH_Misc_Animal_allg, B_BuildLearnString ("Remove hearts",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  CH_Training_TROPHYS_Heart);
 	};
 };
 
@@ -3532,7 +3532,7 @@ INSTANCE DIA_CH_Misc_Animal_Speziell (C_INFO)
 	condition	= DIA_CH_Misc_Animal_Speziell_Condition;
 	information	= DIA_CH_Misc_Animal_Speziell_Info;
 	permanent	= TRUE;
-	description = "Wings, pricks, pliers, plates";
+	description = "Stingers, wings, plates, mandibles";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_Speziell_Condition()
@@ -3549,19 +3549,19 @@ FUNC VOID DIA_CH_Misc_Animal_Speziell_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Blood fly spine",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  CH_Training_TROPHYS_BFSting);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Bloodfly Stinger",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  CH_Training_TROPHYS_BFSting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("blood fly wing",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Bloodfly Wings",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  CH_Training_TROPHYS_BFWing);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Take crawler plates",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  CH_Training_TROPHYS_CrawlerPlate	);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Detach crawler plates",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  CH_Training_TROPHYS_CrawlerPlate	);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("cut out pliers",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  CH_Training_TROPHYS_Mandibles	);
+		Info_AddChoice	(DIA_CH_Misc_Animal_Speziell, B_BuildLearnString ("Cut off mandibles",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  CH_Training_TROPHYS_Mandibles	);
 	};
 };
 //--------------------------------------------
@@ -3612,16 +3612,16 @@ FUNC VOID DIA_CH_Misc_Animal_other_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn of the Shadow Runner",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn of the Shadowbeast",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  CH_Training_TROPHYS_ShadowHorn );
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("tongue of fire",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  CH_Training_TROPHYS_FireTongue);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Fire Tongue",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  CH_Training_TROPHYS_FireTongue);
 	};
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("dragon snapperhorn",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  CH_Training_TROPHYS_DrgSnapperHorn);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Horn of a Dragonsnapper",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  CH_Training_TROPHYS_DrgSnapperHorn);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 	{ 

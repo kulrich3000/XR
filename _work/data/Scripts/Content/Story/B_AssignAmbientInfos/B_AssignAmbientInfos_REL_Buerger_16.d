@@ -40,7 +40,7 @@ FUNC INT Info_REL_Buerger_16_Rundschreiben_Condition()
 
 FUNC VOID Info_REL_Buerger_16_Rundschreiben_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_16_Rundschreiben_15_00"); //I've got a newsletter for you.
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_43_Rundschreiben_15_00"); //I've got a newsletter for you.
 
 	B_GiveInvItems	(hero, self, ItWr_AnselmRundschreiben, 1);
 
@@ -71,12 +71,12 @@ FUNC INT Info_REL_Buerger_16_FreudenspenderMachtBlind_Condition()
 
 FUNC VOID Info_REL_Buerger_16_FreudenspenderMachtBlind_Info()
 {
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_15_00"); //You take joy dispensers?
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_16_01"); //Yes...
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_15_02"); //Aren't you scared?
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_16_03"); //From what?
-	AI_Output(hero, self, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_15_04"); //Well, you know.... Pleasure giver makes blind.
-	AI_Output(self, hero, "Info_Mod_REL_Buerger_16_FreudenspenderMachtBlind_16_05"); //What??? That shit!
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_15_00"); //You take joy dispensers?
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_43_01"); //Yes...
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_15_02"); //Aren't you scared?
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_43_03"); //From what?
+	AI_Output(hero, self, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_15_04"); //Well, you know.... Pleasure giver makes blind.
+	AI_Output(self, hero, "Info_Mod_REL_Buerger_43_FreudenspenderMachtBlind_43_05"); //What??? That shit!
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = Wld_GetDay();
 

@@ -1,10 +1,10 @@
 instance Mod_548_NONE_Canthar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "canthar"; 
+	name 		= "Canthar"; 
 	guild 		= GIL_DMT;
 	id 			= 548;
-	voice 		= 9;
+	voice		= 0;
 	flags       = 2;																
 	npctype		= NPCTYPE_MAIN;
 	

@@ -1,10 +1,10 @@
 instance Mod_908_BAU_Telbor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "telborine"; 
+	name 		= "Telbor"; 
 	guild 		= GIL_NONE;
 	id 			= 908;
-	voice 		= 12;
+	voice		= 0;
 	flags       = 0;							
 	npctype		= NPCTYPE_MAIN;
 	

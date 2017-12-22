@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Valentino_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Valentino_Hi_03_01"); //What do you want from me?
+	AI_Output(self, hero, "Info_Mod_Valentino_Hi_09_01"); //What do you want from me?
 };
 
 INSTANCE Info_Mod_Valentino_Kidnapped (C_INFO)
@@ -43,7 +43,7 @@ FUNC INT Info_Mod_Valentino_Kidnapped_Condition()
 
 FUNC VOID Info_Mod_Valentino_Kidnapped_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_03_00"); //You did a great job of it. Do you think the bloodstains ever go out?
+	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_09_00"); //You did a great job of it. Do you think the bloodstains ever go out?
 
 	B_GivePlayerXP	(300);
 
@@ -118,7 +118,7 @@ FUNC INT Info_Mod_Valentino_Mitternachtsspuk_Condition()
 {
 	if (Mod_Fernando_Mitternachtsspuk == 1)
 	&& (Wld_IsTime(22,00,07,45))
-	&& (Npc_GetDistToWP(hero, "NW_CITY_UPTOWN_HUT_03_04") < 500)
+	&& (Npc_GetDistToWP(hero, "NW_CITY_UPTOWN_HUT_09_04") < 500)
 	{
 		return 1;
 	};
@@ -126,17 +126,17 @@ FUNC INT Info_Mod_Valentino_Mitternachtsspuk_Condition()
 
 FUNC VOID Info_Mod_Valentino_Mitternachtsspuk_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_00"); //Whoops, what are you doing?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_00"); //Whoops, what are you doing?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_01"); //I caught someone there.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_02"); //So what's the difference? Nothing forbidden.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_02"); //So what's the difference? Nothing forbidden.
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_03"); //Let's see if her husband agrees.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_04"); //What the fuck do you want from me?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_04"); //What the fuck do you want from me?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_05"); //Do you hang out here at night more often? And does it sometimes happen wild?
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_06"); //Of course not!
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_06"); //Of course not!
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_07"); //I'm not going to tell anyone. But Fernando doesn't sleep well because of you.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_08"); //Yeah, we're here now and then. Is that enough?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_08"); //Yeah, we're here now and then. Is that enough?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_09"); //(indulgent) Of course.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_10"); //Then get the fuck out of here!
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_10"); //Then get the fuck out of here!
 
 	B_LogEntry	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, "Valentino and a citizen are involuntarily causing Fernando's nightmares.");
 };
@@ -164,9 +164,9 @@ FUNC INT Info_Mod_Valentino_SonjaFreier_Condition()
 FUNC VOID Info_Mod_Valentino_SonjaFreier_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_00"); //Did you visit Sonja regularly before?
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_01"); //What, that bitch? Is that what she says?
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_09_01"); //What, that bitch? Is that what she says?
 	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_02"); //No, just calm down.
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_03"); //I only go out with well-off citizens of this town. Most of the time. So leave me alone with that whore!
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_09_03"); //I only go out with well-off citizens of this town. Most of the time. So leave me alone with that whore!
 };
 
 INSTANCE Info_Mod_Valentino_Pickpocket (C_INFO)

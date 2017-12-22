@@ -49,8 +49,8 @@ INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Texture Details";
-	text[1]		= 	"Detail level of the textures."; // Kommentar
+	text[0]		=	"Texture details";
+	text[1]		= 	"Select texture level of detail"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -84,8 +84,8 @@ INSTANCE MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Model Details";
-	text[1]		= 	"Detail level of objects."; // Kommentar
+	text[0]		=	"Model details";
+	text[1]		= 	"Select level of detail of objects."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -121,8 +121,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "visibility";
-	text[1]		= "Adjustment of the visibility in percent."; // Kommentar
+	text[0]		= "Range of view";
+	text[1]		= "Select range of view in percent."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -153,8 +153,8 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Visibility Obj";
-	text[1]		= "Control of object visibility in percent"; // Kommentar
+	text[0]		= "Object fading";
+	text[1]		= "Select range of view for objects in percent"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -190,8 +190,8 @@ INSTANCE MENUITEM_VOB_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"heavenly effects";
-	text[1]		= 	"Heavenly effects on and off, respectively switch off."; // Kommentar
+	text[0]		=	"Sky effects";
+	text[1]		= 	"Toggle sky effects on/off."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;

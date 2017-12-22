@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Den_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Den_Hi_05_01"); //I'm Den, City Watch of Khorinis.
+	AI_Output(self, hero, "Info_Mod_Den_Hi_01_01"); //I'm Den, City Watch of Khorinis.
 };
 
 INSTANCE Info_Mod_Den_Stadtwache (C_INFO)
@@ -43,11 +43,11 @@ FUNC INT Info_Mod_Den_Stadtwache_Condition()
 FUNC VOID Info_Mod_Den_Stadtwache_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_00"); //So you're with the city guard?
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_01"); //Hey, why the reproachful undertone?
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_01_01"); //Hey, why the reproachful undertone?
 	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_02"); //What reproachful undertone?
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_03"); //You think I can't hear that? But we are not all so bad with the militia, only very few of us work with the thief guild and I have nothing to do with the thefts three days ago!
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_01_03"); //You think I can't hear that? But we are not all so bad with the militia, only very few of us work with the thief guild and I have nothing to do with the thefts three days ago!
 	AI_Output(hero, self, "Info_Mod_Den_Stadtwache_15_04"); //Well, then you don't have to be afraid of my questions.
-	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_05_05"); //I just don't want to be accused of anything! My methods are absolutely clean and I haven't been guilty of anything during my three years of service!
+	AI_Output(self, hero, "Info_Mod_Den_Stadtwache_01_05"); //I just don't want to be accused of anything! My methods are absolutely clean and I haven't been guilty of anything during my three years of service!
 };
 
 INSTANCE Info_Mod_Den_Raeuber (C_INFO)
@@ -73,15 +73,15 @@ FUNC INT Info_Mod_Den_Raeuber_Condition()
 FUNC VOID Info_Mod_Den_Raeuber_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_00"); //Hilda told me about a band of robbers outside Khorinis. What do you know about it?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_01"); //Hardly anything. Hilda didn't let us dig enough in her delicious meat pies to find any noteworthy clues.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_01"); //Hardly anything. Hilda didn't let us dig enough in her delicious meat pies to find any noteworthy clues.
 	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_02"); //What does meat pie have to do with stealing sheep?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_03"); //You can't know that beforehand.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_04"); //And without looking into the meat pasties, the house search was not complete, and so I couldn't write a final report, which doesn't help us in our search for the criminals!
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_03"); //You can't know that beforehand.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_04"); //And without looking into the meat pasties, the house search was not complete, and so I couldn't write a final report, which doesn't help us in our search for the criminals!
 	AI_Output(hero, self, "Info_Mod_Den_Raeuber_15_05"); //What do you know about the robbers anyway?
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_06"); //A simple gang of birds who have been roaming the area for a few months and have apparently found their own camp recently.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_07"); //We don't know exactly how many robberies you're responsible for. Generally speaking, they differ from the other bandits in that they have no code of honour.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_08"); //I know someone who also knows someone who has had short-term contact with the thieves in this city and who has learned that even the thieves despise these robbers.
-	AI_Output(self, hero, "Info_Mod_Den_Raeuber_05_09"); //These scoundrels don't make each other friends, and if they don't find any fraternity mates, it becomes permanently difficult for them, oh yes.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_06"); //A simple gang of birds who have been roaming the area for a few months and have apparently found their own camp recently.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_07"); //We don't know exactly how many robberies you're responsible for. Generally speaking, they differ from the other bandits in that they have no code of honour.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_08"); //I know someone who also knows someone who has had short-term contact with the thieves in this city and who has learned that even the thieves despise these robbers.
+	AI_Output(self, hero, "Info_Mod_Den_Raeuber_01_09"); //These scoundrels don't make each other friends, and if they don't find any fraternity mates, it becomes permanently difficult for them, oh yes.
 };
 
 INSTANCE Info_Mod_Den_Dienstzeit (C_INFO)
@@ -106,10 +106,10 @@ FUNC INT Info_Mod_Den_Dienstzeit_Condition()
 FUNC VOID Info_Mod_Den_Dienstzeit_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_00"); //In office for three years? What did you do before?
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_01"); //(defensive) Nothing at all! Nothing serious! The thief guild thing, that was unique!
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_01_01"); //(defensive) Nothing at all! Nothing serious! The thief guild thing, that was unique!
 	AI_Output(hero, self, "Info_Mod_Den_Dienstzeit_15_02"); //You've been in contact with the guild of thieves?
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_03"); //I'm from the waterfront. You have to see where you're going. No one will admit it, but the thief guild controls large parts of the area.
-	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_05_04"); //Everyone there comes into contact with her sooner or later.
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_01_03"); //I'm from the waterfront. You have to see where you're going. No one will admit it, but the thief guild controls large parts of the area.
+	AI_Output(self, hero, "Info_Mod_Den_Dienstzeit_01_04"); //Everyone there comes into contact with her sooner or later.
 };
 
 INSTANCE Info_Mod_Den_Problem (C_INFO)
@@ -133,18 +133,18 @@ FUNC INT Info_Mod_Den_Problem_Condition()
 
 FUNC VOID Info_Mod_Den_Problem_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_00"); //Shh! Listen!
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_00"); //Shh! Listen!
 	AI_Output(hero, self, "Info_Mod_Den_Problem_15_01"); //Are you talking to me?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_02"); //Yeah, that's right. You asked me out like that the other day.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_02"); //Yeah, that's right. You asked me out like that the other day.
 	AI_Output(hero, self, "Info_Mod_Den_Problem_15_03"); //If that's what you want to call it.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_04"); //I told you everything you wanted to hear. In return, maybe you could do me a favor - nothing big, no fear.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_04"); //I told you everything you wanted to hear. In return, maybe you could do me a favor - nothing big, no fear.
 	AI_Output(hero, self, "Info_Mod_Den_Problem_15_05"); //What's this about?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_06"); //I'm getting tired of patrolling. Every day I slap my feet flat, that should be something for the young greenhorns.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_07"); //There's an opening in the barracks, Ruga's gone. Well, I'm not the hottest contender for the job, but Rangar, the lazy scumbag.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_08"); //Rangar is guaranteed to have dirt on his hands, but strangely, Lord Andre doesn't want to know anything about it. He needs to get his eyes open.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_06"); //I'm getting tired of patrolling. Every day I slap my feet flat, that should be something for the young greenhorns.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_07"); //There's an opening in the barracks, Ruga's gone. Well, I'm not the hottest contender for the job, but Rangar, the lazy scumbag.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_08"); //Rangar is guaranteed to have dirt on his hands, but strangely, Lord Andre doesn't want to know anything about it. He needs to get his eyes open.
 	AI_Output(hero, self, "Info_Mod_Den_Problem_15_09"); //What are you up to?
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_10"); //I want you to cast a bad light on Rangar. Spread rumors about him, smuggle illicit goods into his chest, and then tell Lord Andre about it.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_05_11"); //Can you do that?
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_10"); //I want you to cast a bad light on Rangar. Spread rumors about him, smuggle illicit goods into his chest, and then tell Lord Andre about it.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_01_11"); //Can you do that?
 
 	Info_ClearChoices	(Info_Mod_Den_Problem);
 
@@ -155,7 +155,7 @@ FUNC VOID Info_Mod_Den_Problem_Info()
 FUNC VOID Info_Mod_Den_Problem_B()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Problem_B_15_00"); //Too dangerous. I don't want anything to do with that.
-	AI_Output(self, hero, "Info_Mod_Den_Problem_B_05_01"); //You're not exactly a good friend.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_B_01_01"); //You're not exactly a good friend.
 
 	Info_ClearChoices	(Info_Mod_Den_Problem);
 };
@@ -163,7 +163,7 @@ FUNC VOID Info_Mod_Den_Problem_B()
 FUNC VOID Info_Mod_Den_Problem_A()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Problem_A_15_00"); //Sure. But surely that's worth something to you, too...
-	AI_Output(self, hero, "Info_Mod_Den_Problem_A_05_01"); //A couple of coins would come out as pay for you.
+	AI_Output(self, hero, "Info_Mod_Den_Problem_A_01_01"); //A couple of coins would come out as pay for you.
 
 	Log_CreateTopic	(TOPIC_MOD_DENSPROBLEM, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_DENSPROBLEM, LOG_RUNNING);
@@ -199,9 +199,9 @@ FUNC INT Info_Mod_Den_Verbotenes_Condition()
 FUNC VOID Info_Mod_Den_Verbotenes_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Verbotenes_15_00"); //What kind of illegal goods do you mean?
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_01"); //A marshy stem would do. Lord Andre told us not to do that stuff.
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_02"); //If he catches someone from the militia with this, it's gonna be trouble.
-	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_05_03"); //Even better would be a whole package of bogweed, but you won't get there so easily.
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_01_01"); //A marshy stem would do. Lord Andre told us not to do that stuff.
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_01_02"); //If he catches someone from the militia with this, it's gonna be trouble.
+	AI_Output(self, hero, "Info_Mod_Den_Verbotenes_01_03"); //Even better would be a whole package of bogweed, but you won't get there so easily.
 
 	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "The prohibited goods that Den Den have in mind are bogweed. One stem should be enough, but a whole package would be even better. He just thinks it won't be that easy.");
 };
@@ -231,7 +231,7 @@ FUNC INT Info_Mod_Den_RangarsTruhe_Condition()
 FUNC VOID Info_Mod_Den_RangarsTruhe_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_RangarsTruhe_15_00"); //Where can I find Rangar's chest?
-	AI_Output(self, hero, "Info_Mod_Den_RangarsTruhe_05_01"); //It's near him, by the wall at the beer stand.
+	AI_Output(self, hero, "Info_Mod_Den_RangarsTruhe_01_01"); //It's near him, by the wall at the beer stand.
 
 	B_LogEntry	(TOPIC_MOD_DENSPROBLEM, "I find Rangar's chest near the wall by the free beer stand.");
 };
@@ -258,9 +258,9 @@ FUNC INT Info_Mod_Den_Rangar_Condition()
 FUNC VOID Info_Mod_Den_Rangar_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_00"); //I spoke to Lord Andre.
-	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_01"); //And what did he say?
+	AI_Output(self, hero, "Info_Mod_Den_Rangar_01_01"); //And what did he say?
 	AI_Output(hero, self, "Info_Mod_Den_Rangar_15_02"); //He'll check the stuff.
-	AI_Output(self, hero, "Info_Mod_Den_Rangar_05_03"); //Very well, here's your reward.
+	AI_Output(self, hero, "Info_Mod_Den_Rangar_01_03"); //Very well, here's your reward.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
@@ -293,7 +293,7 @@ FUNC INT Info_Mod_Den_Checker_Condition()
 FUNC VOID Info_Mod_Den_Checker_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Den_Checker_15_00"); //You know very well...
-	AI_Output(self, hero, "Info_Mod_Den_Checker_05_01"); //Hey, I'm doing my job conscientiously! So much knowledge can be acquired without having spent years running errands for the guild of thieves!
+	AI_Output(self, hero, "Info_Mod_Den_Checker_01_01"); //Hey, I'm doing my job conscientiously! So much knowledge can be acquired without having spent years running errands for the guild of thieves!
 };
 
 INSTANCE Info_Mod_Den_Lernen_Armbrust (C_INFO)

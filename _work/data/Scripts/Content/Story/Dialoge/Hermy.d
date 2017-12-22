@@ -17,12 +17,12 @@ FUNC INT Info_Mod_Hermy_Hi_Condition()
 FUNC VOID Info_Mod_Hermy_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_00"); //Hi. I'm new here.
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_01"); //Greetings to me. Finally, I'm not the new guy here. (laughs)
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_02"); //My name is Hermann, but everyone here calls with Hermy.
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_01_01"); //Greetings to me. Finally, I'm not the new guy here. (laughs)
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_01_02"); //My name is Hermann, but everyone here calls with Hermy.
 	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_03"); //What are you doing here?
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_04"); //I deal in transformation roles. I can offer you a few simple roles, but I only sell the valuable sayings to members.
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_01_04"); //I deal in transformation roles. I can offer you a few simple roles, but I only sell the valuable sayings to members.
 	AI_Output(hero, self, "Info_Mod_Hermy_Hi_15_05"); //I'll come back to that.
-	AI_Output(self, hero, "Info_Mod_Hermy_Hi_05_06"); //With me, you're always welcome.
+	AI_Output(self, hero, "Info_Mod_Hermy_Hi_01_06"); //With me, you're always welcome.
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_VM, LOG_NOTE);
 	B_LogEntry	(TOPIC_MOD_HAENDLER_VM, "Hermy's selling conversion castors.");
@@ -49,8 +49,8 @@ FUNC INT Info_Mod_Hermy_QuestHermy_Condition()
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_00"); //You must be the new guy. I'm Hermann, but please call me Hermy.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_05_01"); //Faice sends you, right?
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_01_00"); //You must be the new guy. I'm Hermann, but please call me Hermy.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_01_01"); //Faice sends you, right?
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_Info()
 FUNC VOID Info_Mod_Hermy_QuestHermy_B()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_B_15_00"); //You're a very smart one.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_B_05_01"); //Hey, I can tell if you're kidding me.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_B_01_01"); //Hey, I can tell if you're kidding me.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
@@ -71,8 +71,8 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_B()
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_E()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_00"); //So it is the case that, according to a study, there should be a tunnel underneath the Old Library, where these stinking orcs have settled.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_05_01"); //Dort sollen noch ein paar Spruchrollen "Harpie Transformation" zu finden sein.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_01_00"); //So it is the case that, according to a study, there should be a tunnel underneath the Old Library, where these stinking orcs have settled.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_E_01_01"); //Dort sollen noch ein paar Spruchrollen "Harpie Transformation" zu finden sein.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
@@ -90,7 +90,7 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_A()
 FUNC VOID Info_Mod_Hermy_QuestHermy_D()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_00"); //And how do you feel about it?
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_D_05_01"); //You weren't kidding me.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_D_01_01"); //You weren't kidding me.
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_D_15_02"); //Right. What's so important now?
 
 	Info_Mod_Hermy_QuestHermy_E();
@@ -99,15 +99,15 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_D()
 FUNC VOID Info_Mod_Hermy_QuestHermy_C()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_C_15_00"); //I didn't mean to bullshit you.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_C_05_01"); //I've noticed that.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_C_01_01"); //I've noticed that.
 
 	Info_Mod_Hermy_QuestHermy_E();
 };
 
 FUNC VOID Info_Mod_Hermy_QuestHermy_H()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_00"); //It would be really nice of you to go there for us.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_05_01"); //Besides, it'll help you advance on your recording.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_01_00"); //It would be really nice of you to go there for us.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_H_01_01"); //Besides, it'll help you advance on your recording.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 
@@ -125,7 +125,7 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_G()
 FUNC VOID Info_Mod_Hermy_QuestHermy_F()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_F_15_00"); //And I'm supposed to get it, right?
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_F_05_01"); //Right. We are very busy at the moment.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_F_01_01"); //Right. We are very busy at the moment.
 
 	Info_Mod_Hermy_QuestHermy_H();
 };
@@ -133,7 +133,7 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_F()
 FUNC VOID Info_Mod_Hermy_QuestHermy_J()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_J_15_00"); //But I'm not interested.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_J_05_01"); //That's a pity. But you can always come back if you decide otherwise.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_J_01_01"); //That's a pity. But you can always come back if you decide otherwise.
 
 	Info_ClearChoices	(Info_Mod_Hermy_QuestHermy);
 };
@@ -141,8 +141,8 @@ FUNC VOID Info_Mod_Hermy_QuestHermy_J()
 FUNC VOID Info_Mod_Hermy_QuestHermy_I()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermy_I_15_00"); //Okay, I'll do it.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_01"); //Very good. Very good. Go to the Old Library and talk to those stinking creatures.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_05_02"); //I hope they can tell you more than our old scrolls.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_01_01"); //Very good. Very good. Go to the Old Library and talk to those stinking creatures.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermy_I_01_02"); //I hope they can tell you more than our old scrolls.
 
 	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "I have the task to go to the rock fortress and ask the orcs about a possible tunnel, because there the transformation spell to the harpie is supposed to be there.");
 
@@ -176,7 +176,7 @@ FUNC INT Info_Mod_Hermy_QuestHermyDoch_Condition()
 FUNC VOID Info_Mod_Hermy_QuestHermyDoch_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_QuestHermyDoch_15_00"); //I'll go to the Orcs.
-	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermyDoch_05_01"); //That's swell. Then go to the mountain fortress and talk to the orcs.
+	AI_Output(self, hero, "Info_Mod_Hermy_QuestHermyDoch_01_01"); //That's swell. Then go to the mountain fortress and talk to the orcs.
 
 	B_LogEntry	(TOPIC_MOD_FAICE_HARPIE, "I have the task to go to the rock fortress and ask the orcs about a possible tunnel, because there the transformation spell to the harpie is supposed to be there.");
 
@@ -207,9 +207,9 @@ FUNC INT Info_Mod_Hermy_Harpie_Condition()
 
 FUNC VOID Info_Mod_Hermy_Harpie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_00"); //And? How's it looking? Have you got the spell?
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_01_00"); //And? How's it looking? Have you got the spell?
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_15_01"); //Of course, of course.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_05_02"); //Can I see him? I'll take him to Faice's house.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_01_02"); //Can I see him? I'll take him to Faice's house.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -223,7 +223,7 @@ FUNC VOID Info_Mod_Hermy_Harpie_B()
 
 	B_GiveInvItems	(hero, self, ItSc_TrfHarpie, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_B_05_01"); //Thanks, you can go.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_B_01_01"); //Thanks, you can go.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -234,12 +234,12 @@ FUNC VOID Info_Mod_Hermy_Harpie_B()
 FUNC VOID Info_Mod_Hermy_Harpie_E()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_00"); //That was quite a tough adventure....
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_01"); //Here's 500 gold coins. That's all there is.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_01_01"); //Here's 500 gold coins. That's all there is.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_E_15_02"); //Thank you very much.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_05_03"); //Take care of yourself.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_E_01_03"); //Take care of yourself.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -253,7 +253,7 @@ FUNC VOID Info_Mod_Hermy_Harpie_E()
 FUNC VOID Info_Mod_Hermy_Harpie_A()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_A_15_00"); //And take all the glory? No, thanks, I'll go myself.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_A_05_01"); //This isn't about glory. Now be reasonable and give me the role of spell.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_A_01_01"); //This isn't about glory. Now be reasonable and give me the role of spell.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -264,7 +264,7 @@ FUNC VOID Info_Mod_Hermy_Harpie_A()
 FUNC VOID Info_Mod_Hermy_Harpie_D()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_D_15_00"); //Okay, see you around.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_D_05_01"); //Take care of yourself.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_D_01_01"); //Take care of yourself.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -278,18 +278,18 @@ FUNC VOID Info_Mod_Hermy_Harpie_D()
 FUNC VOID Info_Mod_Hermy_Harpie_C()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_00"); //I'm not even thinking about it.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_01"); //Be reasonable. You want some gold?
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_01_01"); //Be reasonable. You want some gold?
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_02"); //Better than nothing.
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_03"); //Here's 500 gold coins. That's all there is.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_01_03"); //Here's 500 gold coins. That's all there is.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_04"); //Do I get the spell now?
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_01_04"); //Do I get the spell now?
 	AI_Output(hero, self, "Info_Mod_Hermy_Harpie_C_15_05"); //Here you have it.
 
 	B_GiveInvItems	(hero, self, ItSc_TrfHarpie, 1);
 
-	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_05_06"); //Thanks. You can go now.
+	AI_Output(self, hero, "Info_Mod_Hermy_Harpie_C_01_06"); //Thanks. You can go now.
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
@@ -323,7 +323,7 @@ FUNC INT Info_Mod_Hermy_Faice01_Condition()
 FUNC VOID Info_Mod_Hermy_Faice01_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Faice01_15_00"); //Have you seen anything suspicious lately?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice01_05_01"); //Hm, now that you're saying it. Furt's been acting a little weird lately.
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice01_01_01"); //Hm, now that you're saying it. Furt's been acting a little weird lately.
 };
 
 INSTANCE Info_Mod_Hermy_Faice02 (C_INFO)
@@ -349,7 +349,7 @@ FUNC INT Info_Mod_Hermy_Faice02_Condition()
 FUNC VOID Info_Mod_Hermy_Faice02_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Faice02_15_00"); //Do you know about the poisoning of Faice's role?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice02_05_01"); //No more than you, I guess.
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice02_01_01"); //No more than you, I guess.
 };
 
 INSTANCE Info_Mod_Hermy_Faice03 (C_INFO)
@@ -375,7 +375,7 @@ FUNC INT Info_Mod_Hermy_Faice03_Condition()
 FUNC VOID Info_Mod_Hermy_Faice03_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Hermy_Faice03_15_00"); //Have you noticed anything about anyone?
-	AI_Output(self, hero, "Info_Mod_Hermy_Faice03_05_01"); //Talk to Furt. He might know more.
+	AI_Output(self, hero, "Info_Mod_Hermy_Faice03_01_01"); //Talk to Furt. He might know more.
 };
 
 INSTANCE Info_Mod_Hermy_Trade (C_INFO)

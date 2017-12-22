@@ -2,7 +2,7 @@ const int Value_Bauplan = 100;
 
 INSTANCE ItWr_Bauplan_Snapperring		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -44,7 +44,7 @@ func void UseBauplan_Snapperring ()
 
 INSTANCE ItWr_Bauplan_Wolfsring_Ruestung		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -86,7 +86,7 @@ func void UseBauplan_Wolfsring_Ruestung ()
 
 INSTANCE ItWr_Bauplan_Wolfsring_Leben		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -128,7 +128,7 @@ func void UseBauplan_Wolfsring_Leben ()
 
 INSTANCE ItWr_Bauplan_Wolfsamulett		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -172,7 +172,7 @@ func void UseBauplan_Wolfsamulett ()
 
 INSTANCE ItWr_Bauplan_AdanosRing		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -216,7 +216,7 @@ func void UseBauplan_AdanosRing ()
 
 INSTANCE ItWr_Bauplan_AdanosBelt		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -261,7 +261,7 @@ func void UseBauplan_AdanosBelt ()
 
 INSTANCE ItWr_Bauplan_AdanosAmulett		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -306,7 +306,7 @@ func void UseBauplan_AdanosAmulett ()
 
 INSTANCE ItWr_Bauplan_DJG_M		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -343,7 +343,7 @@ func void UseBauplan_DJG_M ()
 
 INSTANCE ItWr_Bauplan_DJG_H		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -381,7 +381,7 @@ func void UseBauplan_DJG_H ()
 
 INSTANCE ItWr_Bauplan_ChemischeKeule		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -424,7 +424,7 @@ func void UseBauplan_ChemischeKeule ()
 
 INSTANCE ItWr_Bauplan_RingGewandtheit		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -467,7 +467,7 @@ func void UseBauplan_RingGewandtheit ()
 
 INSTANCE ItWr_Bauplan_RingAusdauer		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -510,7 +510,7 @@ func void UseBauplan_RingAusdauer ()
 
 INSTANCE ItWr_Bauplan_RingStaerke		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -553,7 +553,7 @@ func void UseBauplan_RingStaerke ()
 
 INSTANCE ItWr_Bauplan_RingHiebe		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -596,7 +596,7 @@ func void UseBauplan_RingHiebe ()
 
 INSTANCE ItWr_Bauplan_Snapperbogen		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;

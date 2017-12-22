@@ -17,8 +17,8 @@ FUNC INT Info_Mod_Daniel_Hi_Condition()
 FUNC VOID Info_Mod_Daniel_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Hi_15_00"); //You're a dealer?
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_01"); //That is correct. My offer includes all items that you can find useful as a magician.
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_11_02"); //Want to hear my special offer?
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_08_01"); //That is correct. My offer includes all items that you can find useful as a magician.
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_08_02"); //Want to hear my special offer?
 
 	Log_CreateTopic	(TOPIC_MOD_HAENDLER_KHORATA, LOG_NOTE);
 	B_LogEntry	(TOPIC_MOD_HAENDLER_KHORATA, "Daniel sells various items for magicians.");
@@ -39,7 +39,7 @@ FUNC VOID Info_Mod_Daniel_Hi_B()
 FUNC VOID Info_Mod_Daniel_Hi_A()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Hi_A_15_00"); //Yes, please.
-	AI_Output(self, hero, "Info_Mod_Daniel_Hi_A_11_01"); //I've received an excessive supply of ice rolls. Ice lance, ice arrow, ice block and ice wave can be bought at half price. Interested?
+	AI_Output(self, hero, "Info_Mod_Daniel_Hi_A_08_01"); //I've received an excessive supply of ice rolls. Ice lance, ice arrow, ice block and ice wave can be bought at half price. Interested?
 
 	Info_ClearChoices	(Info_Mod_Daniel_Hi);
 };
@@ -66,8 +66,8 @@ FUNC INT Info_Mod_Daniel_Nagelnachschub_Condition()
 FUNC VOID Info_Mod_Daniel_Nagelnachschub_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Nagelnachschub_15_00"); //Do you have any nails, by any chance?
-	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_01"); //I'm sorry, I can't help you with that.
-	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_11_02"); //But I'm sure my little.... coarse colleagues can help you. (triggers the nose)
+	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_08_01"); //I'm sorry, I can't help you with that.
+	AI_Output(self, hero, "Info_Mod_Daniel_Nagelnachschub_08_02"); //But I'm sure my little.... coarse colleagues can help you. (triggers the nose)
 };
 
 INSTANCE Info_Mod_Daniel_BrokenRune (C_INFO)
@@ -94,12 +94,12 @@ FUNC INT Info_Mod_Daniel_BrokenRune_Condition()
 FUNC VOID Info_Mod_Daniel_BrokenRune_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_00"); //Hi, I have a question.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_01"); //You want to buy something? I'll show you my goods.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_08_01"); //You want to buy something? I'll show you my goods.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_02"); //No, no, no. I'm actually looking for a magician. You got one in town.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_03"); //Well, there's Fuego, a fire magician. You'll find him in the Fire Magic House.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_08_03"); //Well, there's Fuego, a fire magician. You'll find him in the Fire Magic House.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_04"); //Thanks, man. I'll have a look.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_05"); //Slowly. Then there's a water magician. A strange fellow.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_11_06"); //Lives somewhere in the slum. Where exactly, I don't know.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_08_05"); //Slowly. Then there's a water magician. A strange fellow.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune_08_06"); //Lives somewhere in the slum. Where exactly, I don't know.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune_15_07"); //Jo. Thank you again.
 
 	Log_CreateTopic	(TOPIC_MOD_JG_RUNENZAUBER, LOG_MISSION);
@@ -129,12 +129,12 @@ FUNC INT Info_Mod_Daniel_BrokenRune2_Condition()
 FUNC VOID Info_Mod_Daniel_BrokenRune2_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_00"); //Good day. I see you have all kinds of magic to offer.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_01"); //Was well. What can I get you? A potion? A part? Or an herb?
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_08_01"); //Was well. What can I get you? A potion? A part? Or an herb?
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_02"); //Nothing there. I'm looking for the Adanos figure the water magician sold you.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_03"); //Yeah, a rarely beautiful thing. Unfortunately, I don't have it anymore.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_08_03"); //Yeah, a rarely beautiful thing. Unfortunately, I don't have it anymore.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_04"); //And who did you sell it to?
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_05"); //Let me think about it.... Yes, the colleague who deals in rarities.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_11_06"); //And I don't think that everything he sells is real...
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_08_05"); //Let me think about it.... Yes, the colleague who deals in rarities.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune2_08_06"); //And I don't think that everything he sells is real...
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune2_15_07"); //Thanks for the tip.
 
 	B_LogEntry	(TOPIC_MOD_JG_RUNENZAUBER, "Daniel sold the Adanos figure to the rarity dealer.");
@@ -164,9 +164,9 @@ FUNC INT Info_Mod_Daniel_BrokenRune3_Condition()
 FUNC VOID Info_Mod_Daniel_BrokenRune3_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_00"); //Hm. Could you negotiate this thing for me?
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_01"); //Why. Do you think it'll be cheaper? I'm a trader, too.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_08_01"); //Why. Do you think it'll be cheaper? I'm a trader, too.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_02"); //No, no, no. Just, I probably annoyed him a little bit earlier....
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_03"); //I can try. Plus 25 percent for me.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_08_03"); //I can try. Plus 25 percent for me.
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_04"); //It's okay, it's okay.
 
 	AI_GotoWP	(self, "REL_CITY_102");
@@ -175,12 +175,12 @@ FUNC VOID Info_Mod_Daniel_BrokenRune3_Info()
 	AI_TurnToNpc	(self, hero);
 	AI_TurnToNpc	(hero, self);
 
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_05"); //There. Here's the figure. It cost 100. That means 150 gold for me.
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_08_05"); //There. Here's the figure. It cost 100. That means 150 gold for me.
 
 	B_GiveInvItems	(self, hero, ItMi_AdanosStatue, 1);
 
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_06"); //But that's 50 percent.
-	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_11_07"); //Yeah, and? Isn't it cheap enough? Besides, I've got a wife and seven--
+	AI_Output(self, hero, "Info_Mod_Daniel_BrokenRune3_08_07"); //Yeah, and? Isn't it cheap enough? Besides, I've got a wife and seven--
 	AI_Output(hero, self, "Info_Mod_Daniel_BrokenRune3_15_08"); //... seven children. I know. Here's your gold.
 
 	B_GiveInvItems	(hero, self, ItMi_Gold, 150);
@@ -212,9 +212,9 @@ FUNC INT Info_Mod_Daniel_Kissen_Condition()
 FUNC VOID Info_Mod_Daniel_Kissen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_00"); //I'm looking for a fragrant softener.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_01"); //Never heard of it. What's this supposed to be?
+	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_08_01"); //Never heard of it. What's this supposed to be?
 	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_02"); //I don't really know. Could be a tincture or something.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_11_03"); //Then I'd try the alchemist. Or at Morpheus over there, selling rarities.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kissen_08_03"); //Then I'd try the alchemist. Or at Morpheus over there, selling rarities.
 	AI_Output(hero, self, "Info_Mod_Daniel_Kissen_15_04"); //Thanks.
 };
 
@@ -242,9 +242,9 @@ FUNC INT Info_Mod_Daniel_Kimon_Condition()
 FUNC VOID Info_Mod_Daniel_Kimon_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_00"); //You have all kinds of potions and plants. I'm sure there's also a giver of joy.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_01"); //You think wrong. I only lead what makes honest alchemy. Not this monstrous flutter. You'll have to go to the court bailiffs.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_08_01"); //You think wrong. I only lead what makes honest alchemy. Not this monstrous flutter. You'll have to go to the court bailiffs.
 	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_02"); //I can't get in there.
-	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_11_03"); //That's fine, too. I can't help you anyway.
+	AI_Output(self, hero, "Info_Mod_Daniel_Kimon_08_03"); //That's fine, too. I can't help you anyway.
 	AI_Output(hero, self, "Info_Mod_Daniel_Kimon_15_04"); //Could have been. See you another time.
 };
 
@@ -272,8 +272,8 @@ FUNC INT Info_Mod_Daniel_Freudenspender_Condition()
 FUNC VOID Info_Mod_Daniel_Freudenspender_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Daniel_Freudenspender_15_00"); //Do you need joy dispensers?
-	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_01"); //I'm sorry, but I'm not allowed to let my mind get clouded.
-	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_11_02"); //You'll have to turn to others.
+	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_08_01"); //I'm sorry, but I'm not allowed to let my mind get clouded.
+	AI_Output(self, hero, "Info_Mod_Daniel_Freudenspender_08_02"); //You'll have to turn to others.
 };
 
 INSTANCE Info_Mod_Daniel_Trade (C_INFO)

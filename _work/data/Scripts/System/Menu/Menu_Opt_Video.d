@@ -50,8 +50,8 @@ INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"video card";
-	text[1]		=	"Gothic must be restarted for this option!"; // Kommentar
+	text[0]		=	"Graphic card";
+	text[1]		=	"You need to restart Gothic to make changes take effect."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "liquidation";
-	text[1]		= "Confirm the selected resolution with RETURN."; // Kommentar
+	text[0]		= "Resolution";
+	text[1]		= "Select desired resolution and PRESS RETURN."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -124,8 +124,8 @@ INSTANCE MENUITEM_VID_RESOLUTION_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_BRIGHTNESS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "brightness";
-	text[1]		= "brightness"; // Kommentar
+	text[0]		= "Brightness";
+	text[1]		= "Brightness"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
@@ -159,8 +159,8 @@ INSTANCE MENUITEM_VID_BRIGHTNESS_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_CONTRAST(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "contrast";
-	text[1]		= "contrast"; // Kommentar
+	text[0]		= "Contrast";
+	text[1]		= "Contrast"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
@@ -194,8 +194,8 @@ INSTANCE MENUITEM_VID_CONTRAST_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_GAMMA(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "gamma";
-	text[1]		= "gamma"; // Kommentar
+	text[0]		= "Gamma";
+	text[1]		= "Gamma"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;

@@ -179,7 +179,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 10)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_02"); //There's nothing to worry about. We're well guarded and they don't know the guards' positions.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_02"); //There's nothing to worry about. We're well guarded and they don't know the guards' positions.
 			};
 
 			if (Mod_GespraechCounter_BB == 15)
@@ -189,7 +189,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 22)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_04"); //I can give you the plan, it's really time to prepare us.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_04"); //I can give you the plan, it's really time to prepare us.
 			};
 
 			if (Mod_GespraechCounter_BB == 27)
@@ -199,7 +199,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 31)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_06"); //Where are you going to keep it?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_06"); //Where are you going to keep it?
 			};
 
 			if (Mod_GespraechCounter_BB == 36)
@@ -209,7 +209,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 41)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_08"); //It probably will, but there are no guards there at night to guard him.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_08"); //It probably will, but there are no guards there at night to guard him.
 			};
 
 			if (Mod_GespraechCounter_BB == 46)
@@ -454,12 +454,12 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 6)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_00"); //Well, then these rats have been trapped. I could kill you like the Buddler, I could also throw you to the snapper for food, like the cooks.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_03_00"); //Well, then these rats have been trapped. I could kill you like the Buddler, I could also throw you to the snapper for food, like the cooks.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 11)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_01"); //But since I've had such a high-ranking visitor, I want to ask you a few questions. Where do the old man and his followers have their quarters?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_03_01"); //But since I've had such a high-ranking visitor, I want to ask you a few questions. Where do the old man and his followers have their quarters?
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 16)
@@ -469,12 +469,12 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 21)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_00"); //Good Bloodwyn, take a guard and our two friends here and go to the mountain fort, I'll send reinforcements later.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_03_00"); //Good Bloodwyn, take a guard and our two friends here and go to the mountain fort, I'll send reinforcements later.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 26)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_01"); //I'm sure the two of them will enjoy seeing their cronies destroyed.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_03_01"); //I'm sure the two of them will enjoy seeing their cronies destroyed.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 31)

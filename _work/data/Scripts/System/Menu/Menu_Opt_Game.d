@@ -59,7 +59,7 @@ INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Subtitles";
-	text[1]		= 	"Visual display of dialogues."; // Kommentar
+	text[1]		= 	"Visual display of dialogs on/off."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -122,7 +122,7 @@ INSTANCE MENUITEM_GAME_FIGHTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Combat focus";
-	text[1]		= 	"Degree of display of combat focus"; // Kommentar
+	text[1]		= 	"Configure highlighting of the current combat target"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*1;
 	dimx		=	4000;	dimy		=	750;
@@ -136,7 +136,7 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"no|square|brighten up both";
+	text[0]		= 	"none|box|lighten|both";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*1 + MENU_CHOICE_YPLUS;
@@ -153,8 +153,8 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_INTERACTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Interact. focus";
-	text[1]		= 	"Degree of display of interaction focus"; // Kommentar
+	text[0]		=	"Object focus";
+	text[1]		= 	"Toggle highlighting of the focussed object"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -192,8 +192,8 @@ instance MENUITEM_GAME_INTERACTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"look back";
-	text[1]		= 	"Inverse camera control."; // Kommentar
+	text[0]		=	"Invert camera";
+	text[1]		= 	"Inverted camera movement."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -228,8 +228,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"mouse";
-	text[1]		= 	"Activates mouse control"; // Kommentar
+	text[0]		=	"Mouse";
+	text[1]		= 	"Toggle mouse controls"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*4;
 	dimx		=	4000;	dimy		=	750;
@@ -264,7 +264,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Mouse Sensitivity.";
+	text[0]		=	"Mouse sensitivity";
 	text[1]		= 	""; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -338,8 +338,8 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_OLDCONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Gothic 1 controls";
-	text[1]		= 	"Activate old control in battle"; // Kommentar
+	text[0]		=	"Gothic I controls";
+	text[1]		= 	"Use old combat controls"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
 	dimx		=	4000;	dimy		=	750;

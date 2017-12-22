@@ -17,10 +17,10 @@ FUNC INT Info_Mod_Bibliothekar_Hi_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_00"); //What books do you have?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_01"); //(Absent) The History of the Court State Part 1, The History of the Court State Part 2, The History of the Court State Part 3, The History of the Court State...
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_01"); //(Absent) The History of the Court State Part 1, The History of the Court State Part 2, The History of the Court State Part 3, The History of the Court State...
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_02"); //I see, exciting bedtime reading.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_03"); //Yes, yes, yes. (mumbles) 101 herbal recipes for the elderly mother of the day, who had lent it to her? Right, Regina.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_04"); //Is there anything else I can do for you?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_03"); //Yes, yes, yes. (mumbles) 101 herbal recipes for the elderly mother of the day, who had lent it to her? Right, Regina.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_04"); //Is there anything else I can do for you?
 };
 
 INSTANCE Info_Mod_Bibliothekar_Ausleihen (C_INFO)
@@ -42,7 +42,7 @@ FUNC INT Info_Mod_Bibliothekar_Ausleihen_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Ausleihen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Ausleihen_15_00"); //Can I borrow the books, too?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_01_01"); //Get your hands off me!
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_11_01"); //Get your hands off me!
 };
 
 INSTANCE Info_Mod_Bibliothekar_Buerger (C_INFO)
@@ -67,15 +67,15 @@ FUNC INT Info_Mod_Bibliothekar_Buerger_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Buerger_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_00"); //Do you have a book about the beginnings of khorata?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_01"); //Yes, really very nice weather outside....
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_02"); //(shredded) How? Somebody ask me for a book?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_01"); //Yes, really very nice weather outside....
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_02"); //(shredded) How? Somebody ask me for a book?
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_03"); //Yes, indeed.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_04"); //I have to think about that.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_05"); //You should be able to work with that. I've got it double, so keep it quiet.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_04"); //I have to think about that.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_05"); //You should be able to work with that. I've got it double, so keep it quiet.
 
 	B_GiveInvItems	(self, hero, ItWr_KhorataGeschichte, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_06"); //And if you're interested in more, just come by, it's all there!
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_06"); //And if you're interested in more, just come by, it's all there!
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_07"); //I'll keep that in mind. Thanks.
 };
 
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Bibliothekar_Glorie_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_00"); //Where the hell did I leave the damn thing...
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_01"); //You're the one? Ohh, pardon me, I'm in a hurry.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_00"); //Where the hell did I leave the damn thing...
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_01"); //You're the one? Ohh, pardon me, I'm in a hurry.
 
 	AI_GotoWP	(self, "REL_CITY_150");
 
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_02"); //Here you are, sir.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_02"); //Here you are, sir.
 
 	B_GiveInvItems	(self, hero, ItWr_DiebDokumente, 1);
 

@@ -65,7 +65,7 @@ func int Spine_GetScoreForUsername(var int identifier, var string username) {
 // if no score exists for the rank/identifier combination, empty string is returned
 func string Spine_GetUsernameForRank(var int identifier, var int rank) {
 	if (Spine_Initialized && Spine_GetUsernameForRankFunc) {
-		const string STR_BUFFER = "";
+		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 		
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL_IntParam(rank);

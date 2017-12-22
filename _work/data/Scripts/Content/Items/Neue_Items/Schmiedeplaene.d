@@ -1,6 +1,6 @@
 INSTANCE ItWr_Bauplan_Erzschwert_Wasser		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -35,7 +35,7 @@ func void UseBauplan_Erzschwert_Wasser ()
 
 INSTANCE ItWr_Bauplan_Erzschwert_Feuer		(C_Item)
 {
-	name 				=	"blueprint";
+	name 				=	"Blueprint";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;

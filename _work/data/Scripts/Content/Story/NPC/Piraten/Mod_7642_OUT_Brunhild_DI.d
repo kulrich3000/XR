@@ -4,7 +4,7 @@ instance Mod_7642_OUT_Brunhild_DI (Npc_Default)
 	name 		= "bruncheon";	
 	guild 		= GIL_OUT;
 	id 			= 7642;
-	voice 		= 17;
+	voice		= 21;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

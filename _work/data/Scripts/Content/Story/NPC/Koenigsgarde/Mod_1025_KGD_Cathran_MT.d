@@ -5,7 +5,7 @@ instance Mod_1025_KGD_Cathran_MT (Npc_Default)
 	name 		=	"cathran";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_OUT;
-	voice 		=	6;
+	voice		= 0;
 	id 			=	1025;
 		
 	

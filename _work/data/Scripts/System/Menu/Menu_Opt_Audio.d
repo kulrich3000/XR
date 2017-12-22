@@ -61,8 +61,8 @@ INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Sound volume.";
-	text[1]		= "Volume of sound effects and speech output."; // Kommentar
+	text[0]		= "Sound volume";
+	text[1]		= "Volume of sound effects and speech."; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		= MENU_START_SOUND_Y + MENU_SOUND_DY*0;
@@ -98,7 +98,7 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Music volume";
-	text[1]		= "Sound strength of the background music."; // Kommentar
+	text[1]		= "Background music volume."; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*1;
@@ -133,7 +133,7 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "music";
+	text[0]		= "Music";
 	text[1]		= "Toggle background music on/off."; // Kommentar
 
 	// Position und Dimension
@@ -242,8 +242,8 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Hall effect";
-	text[1]		= "Do you want to activate hall effects in caves?"; // Kommentar
+	text[0]		= "Reverb effect";
+	text[1]		= "Shall reverb effects in caves be activated?"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -276,7 +276,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Speech reverb";
-	text[1]		= "Do you want to activate reverb effects for voice output?";
+	text[1]		= "Shall reverb effects for speech be activated?";
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -291,7 +291,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "not a little bit much";
+	text[0]		=   "none|few|much";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6 + MENU_CHOICE_YPLUS;

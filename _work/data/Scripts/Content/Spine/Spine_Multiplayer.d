@@ -114,7 +114,7 @@ func int Spine_GetPlayerCount() {
 // returns the username of the player at position position
 func string Spine_GetPlayerUsername(var int position) {
 	if (Spine_Initialized && Spine_GetPlayerUsernameFunc) {
-		const string STR_BUFFER = "";
+		const string STR_BUFFER = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
 
 		CALL_cStringPtrParam(STR_BUFFER);
 		CALL_IntParam(position);

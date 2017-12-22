@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_Hi_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_08_00"); //Hey! Since when do pussies get lost here?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_06_00"); //Hey! Since when do pussies get lost here?
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Bereuen (C_INFO)
@@ -40,7 +40,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_Bereuen_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_Bereuen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Bereuen_15_00"); //You're about to regret what you said.
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_08_01"); //(laughs) I want to see that.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_06_01"); //(laughs) I want to see that.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_WiesoHier_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_WiesoHier_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_WiesoHier_15_00"); //Why are you here?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_08_01"); //Man, what kind of question is that? This is our camp. Tell me what you're looking for before I cut your head off.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_06_01"); //Man, what kind of question is that? This is our camp. Tell me what you're looking for before I cut your head off.
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Anschluss (C_INFO)
@@ -97,9 +97,9 @@ FUNC INT Info_Mod_Bandit_AtXardas_Anschluss_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_Anschluss_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_00"); //Can I join you guys?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_01"); //No. We're not taking on diaper wearers here, understand?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_06_01"); //No. We're not taking on diaper wearers here, understand?
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_02"); //All right, I'll just go... again.
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_03"); //It's too late for that, buddy. I'm gonna go see if you've got something valuable with you.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_06_03"); //It's too late for that, buddy. I'm gonna go see if you've got something valuable with you.
 
 	AI_StopProcessInfos	(self);
 

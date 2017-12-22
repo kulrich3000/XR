@@ -21,6 +21,8 @@ func void INIT_GLOBAL()
 {
 	// wird fuer jede Welt aufgerufen (vor INIT_<LevelName>)
 	Game_InitGerman();
+			
+	RidingLorry = FALSE;
 
 	Cursor_Hndl = 0;
 
@@ -33,9 +35,11 @@ func void INIT_GLOBAL()
 
 	gameloaded = Hlp_GetNpc(0);
 	
-	LeGo_Init(LeGo_PrintS | LeGo_HookEngine | LeGo_AI_Function | LeGo_Trialoge | LeGo_FrameFunctions | LeGo_Cursor | LeGo_Random | LeGo_Bloodsplats | LeGo_Saves | LeGo_PermMem | LeGo_Anim8 | LeGo_View | LeGo_Interface | LeGo_Bars | LeGo_Buttons | LeGo_Timer);
+	LeGo_Init(LeGo_PrintS | LeGo_HookEngine | LeGo_AI_Function | LeGo_Trialoge | LeGo_FrameFunctions | LeGo_Cursor | LeGo_Random | LeGo_Bloodsplats | LeGo_Saves | LeGo_PermMem | LeGo_Anim8 | LeGo_View | LeGo_Interface | LeGo_Bars | LeGo_Buttons | LeGo_Timer | GFA_LEGO_FLAGS);
 	
-	Spine_Init(SPINE_MODULE_GETCURRENTUSERNAME | SPINE_MODULE_ACHIEVEMENTS | SPINE_MODULE_SCORES | SPINE_MODULE_MULTIPLAYER | SPINE_MODULE_OVERALLSAVE | SPINE_MODULE_GAMEPAD);
+	Spine_Init(SPINE_MODULE_GETCURRENTUSERNAME | SPINE_MODULE_ACHIEVEMENTS | SPINE_MODULE_SCORES | SPINE_MODULE_MULTIPLAYER | SPINE_MODULE_OVERALLSAVE | SPINE_MODULE_GAMEPAD | SPINE_MODULE_STATISTICS);
+	
+	GFA_Init(GFA_ALL & ~GFA_REUSE_PROJECTILES);
 
 	MEM_SetShowDebug (0);
 
@@ -5719,7 +5723,7 @@ FUNC VOID STARTUP_Minental ()
 
 FUNC VOID INIT_Minental ()
 {
-	Spine_OverallSaveSetInt("Minental Visited", 1);
+	Spine_OverallSaveSetInt("MinentalVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Morgens
@@ -6514,6 +6518,13 @@ FUNC VOID INIT_Minental ()
 		B_RemoveNpc(Mod_520_DMR_Raven_MT);
 	};
 	
+	if (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_AlteMineQuest))
+	&& (Mod_AMQ_DRM_Spawned == FALSE)	{
+		Mod_AMQ_DRM_Spawned = TRUE;
+		
+		Wld_InsertNpc(Mod_7713_DMR_Daemonenritter_MT, "OC1");
+	};
+	
 	var zCListSort liste;
 	var int loopStart;
 	var C_Npc temp;
@@ -6668,7 +6679,7 @@ FUNC VOID STARTUP_AbandonedMine ()
 
 FUNC VOID INIT_AbandonedMine ()
 {
-	Spine_OverallSaveSetInt("DiscontinuedMineVisited", 1);
+	Spine_OverallSaveSetInt("AbandonedMineVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(ABANDONEDMINE_ZEN);
@@ -7038,7 +7049,7 @@ var int Monster_GDG_Spawned;
 
 FUNC VOID INIT_GdG_World()
 {
-	Spine_OverallSaveSetInt("Ritual IslandVisited", 1);
+	Spine_OverallSaveSetInt("RitualinselVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	if (Monster_GDG_Spawned == FALSE)
@@ -7125,7 +7136,7 @@ FUNC VOID STARTUP_DieInsel()
 
 FUNC VOID INIT_DieInsel()
 {
-	Spine_OverallSaveSetInt("Treasure IslandVisited", 1);
+	Spine_OverallSaveSetInt("SchatzinselVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DIEINSEL_ZEN);
@@ -8110,7 +8121,7 @@ FUNC VOID STARTUP_Bergwelt()
 
 FUNC VOID INIT_Bergwelt()
 {
-	Spine_OverallSaveSetInt("Mountain worldVisited", 1);
+	Spine_OverallSaveSetInt("BergweltVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(BERGWELT_ZEN); 
@@ -8731,7 +8742,7 @@ FUNC VOID STARTUP_Relendel()
 
 FUNC VOID INIT_Relendel()
 {
-	Spine_OverallSaveSetInt("Relendel Visited", 1);
+	Spine_OverallSaveSetInt("RelendelVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	// Laternen in der Stadt
@@ -9131,7 +9142,7 @@ FUNC VOID STARTUP_Halluzination()
 
 FUNC VOID INIT_Halluzination()
 {
-	Spine_OverallSaveSetInt("HallucinationVisited", 1);
+	Spine_OverallSaveSetInt("HalluzinationVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(HALLUZINATION_ZEN);
@@ -9174,7 +9185,7 @@ FUNC VOID STARTUP_Wald_Schlucht()
 
 FUNC VOID INIT_Wald_Schlucht()
 {
-	Spine_OverallSaveSetInt("Forest Gorge Visited", 1);
+	Spine_OverallSaveSetInt("WaldschluchtVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(WALDSCHLUCHT_ZEN);
@@ -9211,7 +9222,7 @@ FUNC VOID STARTUP_Drachental()
 
 FUNC VOID INIT_Drachental()
 {
-	Spine_OverallSaveSetInt("DragonVisited", 1);
+	Spine_OverallSaveSetInt("DrachentalVisited", 1);
 	CheckWorldTravelerAchievement();
 	
 	OldLevel(DRACHENTAL_ZEN);

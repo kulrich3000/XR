@@ -34,7 +34,7 @@ FUNC VOID ChaniAbenteurerScene()
 
 	if (Mod_ChaniAbenteurerScene_Counter == 12)
 	{
-		AI_Output(Mod_1623_OUT_Chani_REL, NULL, "Info_Mod_ChaniAbenteurerScene_16_01"); //What now, you slipper hero?!
+		AI_Output(Mod_1623_OUT_Chani_REL, NULL, "Info_Mod_ChaniAbenteurerScene_19_01"); //What now, you slipper hero?!
 	};
 
 	if (Mod_ChaniAbenteurerScene_Counter == 18)

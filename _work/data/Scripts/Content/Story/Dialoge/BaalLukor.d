@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Lukor_Hi_Condition()
 
 FUNC VOID Info_Mod_Lukor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_00"); //There's the infidel fool who banished my master.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_00"); //There's the infidel fool who banished my master.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_01"); //What, are you still alive?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_02"); //You may have banished him. But before that, I was given some of his power.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_02"); //You may have banished him. But before that, I was given some of his power.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_03"); //What, what are you talking about?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_04"); //All of them follow foreign idols, gods or the simple mammon. They will all pay with their blood.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_04"); //All of them follow foreign idols, gods or the simple mammon. They will all pay with their blood.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_05"); //Seems kind of familiar.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_06"); //(as possessed) Meanwhile, I have meditated days and weeks, incessantly, and learned to release and use powers that go far beyond those of an ordinary magician or even fighter.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_06"); //(as possessed) Meanwhile, I have meditated days and weeks, incessantly, and learned to release and use powers that go far beyond those of an ordinary magician or even fighter.
 
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 
@@ -32,9 +32,9 @@ FUNC VOID Info_Mod_Lukor_Hi_Info()
 
 FUNC VOID Info_Mod_Lukor_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_00"); //And now I finally met allies, servants who are loyal to their Master and Creator.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_01"); //Yes, my master.... And here is the unbeliever who banished him....
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_02"); //With your blood I will water the altar now. Die!
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_00"); //And now I finally met allies, servants who are loyal to their Master and Creator.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_01"); //Yes, my master.... And here is the unbeliever who banished him....
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_02"); //With your blood I will water the altar now. Die!
 	
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 

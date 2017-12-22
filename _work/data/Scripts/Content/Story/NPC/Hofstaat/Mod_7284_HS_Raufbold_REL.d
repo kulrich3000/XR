@@ -4,7 +4,7 @@ INSTANCE Mod_7284_HS_Raufbold_REL (Npc_Default)
 	name 		= "Royal Knight from and to Raufbold"; 
 	guild 		= GIL_OUT;
 	id 			= 7284;
-	voice 		= 13;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

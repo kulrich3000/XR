@@ -1,10 +1,10 @@
 instance Mil_309_Stadtwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "parlaf";	
+	name 		= "Parlaf";	
 	guild 		= GIL_PAL;
 	id 			= 309;
-	voice 		= 6;
+	voice		= 0;
 	flags       = NPC_FLAG_IMMORTAL;																	
 	npctype		= NPCTYPE_MAIN;
 	

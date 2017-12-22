@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Entfuehrer_Pisser_Hi_Condition()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_01_00"); //Stop! What do you want from me?
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_05_00"); //Stop! What do you want from me?
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
@@ -28,10 +28,10 @@ FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_Info()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_00"); //You're the one we're looking for. I could call out loud and attack you now. You wouldn't have a chance.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_00"); //You're the one we're looking for. I could call out loud and attack you now. You wouldn't have a chance.
 	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_C_15_01"); //And why don't you do it?
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_02"); //I have three children to feed, and with a sword in my chest it is hard to make money.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_03"); //I suggest you let me go, and I won't call for help.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_02"); //I have three children to feed, and with a sword in my chest it is hard to make money.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_03"); //I suggest you let me go, and I won't call for help.
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_B()
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_A()
 {
 	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_A_15_00"); //I was wondering if you could help me pick flowers.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_01_01"); //(untouched) Ha-ha. (pause)
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_05_01"); //(untouched) Ha-ha. (pause)
 
 	Info_Mod_Entfuehrer_Pisser_Hi_C();
 };

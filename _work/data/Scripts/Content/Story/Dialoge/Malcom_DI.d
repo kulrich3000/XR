@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Malcom_DI_Heiltrank (C_INFO)
 	information	= Info_Mod_Malcom_DI_Heiltrank_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(healing potion)";
+	description	= "(give healing potion)";
 };
 
 FUNC INT Info_Mod_Malcom_DI_Heiltrank_Condition()

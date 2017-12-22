@@ -4,7 +4,7 @@ instance Mod_7546_OUT_Wache_DT (Npc_Default)
 	name 		= "Guard"; 
 	guild 		= GIL_STRF;
 	id 			= 7546;
-	voice 		= 1;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_AMBIENT;
 	

@@ -72,9 +72,9 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I can forge a noble sword now."); };
+	B_LogEntry (TOPIC_TalentSmith,"I can now forge a fine sword."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"I can now also forge a noble longsword."); };
+	B_LogEntry (TOPIC_TalentSmith,"I can now forge a fine longsword."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"I can even forge a ruby blade now."); };
 	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;

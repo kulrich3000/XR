@@ -1,10 +1,10 @@
 INSTANCE Mod_567_NONE_Bromor_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "bromine"; 
+	name 		= "Bromor"; 
 	guild 		= GIL_NONE;
 	id 			= 567;
-	voice 		= 7;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

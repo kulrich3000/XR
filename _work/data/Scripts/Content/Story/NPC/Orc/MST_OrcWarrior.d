@@ -292,7 +292,7 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcWarrior)
 {
 	//-------- general data --------
 	guild			=	GIL_ORC;
-	name			=	"orc";
+	name			=	"Orc";
 
 	level = 15;
 

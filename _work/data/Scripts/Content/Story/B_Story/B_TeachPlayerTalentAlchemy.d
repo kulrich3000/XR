@@ -56,16 +56,16 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? ELIXIATION OF HEALING?: 2 healing roots and 1 knotweed.");  };
 	
 	if (potion == POTION_Mana_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_01] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? MANA ESSENZ?: 2 fire nettles and 1 knotweed.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA ESSENCE': 2 Fire Nettles and 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Mana_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_02] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? MANA EXTRAKT?: 2 red cabbage and 1 knotweed.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'MANA EXTRACT': 2 Fireweed and 1 Meadow Knotweed.");  };
 	
 	if (potion == POTION_Mana_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_03] 		= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? MANA ELIXIER?: 2 fire roots and 1 knotweed");  };
 	
 	if (potion == POTION_Speed)			{	PLAYER_TALENT_ALCHEMY[POTION_Speed] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? DRINK OF SPEED?: 1 Snapwort and 1 knotweed");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'SPEED POTION': 1 Snapperweed and 1 Meadow Knotweed");  };
 	
 	if (potion == POTION_Perm_STR)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] 		= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? Elixir of Strength?: 1 Dragon Root and 1 Crown.");  };

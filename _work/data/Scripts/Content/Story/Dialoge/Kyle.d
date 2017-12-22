@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Kyle_Hi_Condition()
 FUNC VOID Info_Mod_Kyle_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_Hi_15_00"); //Kyle! How you doing, old buddy?
-	AI_Output(self, hero, "Info_Mod_Kyle_Hi_10_01"); //How am I doing? Absolutely fucked up! From morning to night I work my back to the hump, and we haven't harvested anything edible yet.
+	AI_Output(self, hero, "Info_Mod_Kyle_Hi_01_01"); //How am I doing? Absolutely fucked up! From morning to night I work my back to the hump, and we haven't harvested anything edible yet.
 };
 
 INSTANCE Info_Mod_Kyle_WarumArbeit (C_INFO)
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Kyle_WarumArbeit_Condition()
 FUNC VOID Info_Mod_Kyle_WarumArbeit_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_WarumArbeit_15_00"); //Why do you work so hard? It's not like you.
-	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_10_01"); //Shut your mouth. Thorus thinks it'll break me up. But he cut himself with it.
-	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_10_02"); //Will it be clear whether it was such a good idea to let me work so close to his throne....
+	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_01_01"); //Shut your mouth. Thorus thinks it'll break me up. But he cut himself with it.
+	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_01_02"); //Will it be clear whether it was such a good idea to let me work so close to his throne....
 };
 
 INSTANCE Info_Mod_Kyle_SchatzImSchlammsee (C_INFO)
@@ -68,10 +68,10 @@ FUNC INT Info_Mod_Kyle_SchatzImSchlammsee_Condition()
 FUNC VOID Info_Mod_Kyle_SchatzImSchlammsee_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_SchatzImSchlammsee_15_00"); //Listen here. This thing with the treasure...
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_01"); //You don't have it, that should be obvious!
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_02"); //I just whispered that to Gravo so he wouldn't run through my hut a thousand times a day.
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_03"); //I was able to tell the others, but with Gravo it didn't help that I put my chamber pot in the one door.
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_04"); //Let him dig a long time after something. Who knows, maybe he'll find a water vein someday!
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_01"); //You don't have it, that should be obvious!
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_02"); //I just whispered that to Gravo so he wouldn't run through my hut a thousand times a day.
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_03"); //I was able to tell the others, but with Gravo it didn't help that I put my chamber pot in the one door.
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_04"); //Let him dig a long time after something. Who knows, maybe he'll find a water vein someday!
 
 	B_LogEntry	(TOPIC_MOD_GRAVO_SCHATZ, "Kyle made up the treasure to get rid of Gravo.");
 };
@@ -98,12 +98,12 @@ FUNC INT Info_Mod_Kyle_Lagermusik_Condition()
 FUNC VOID Info_Mod_Kyle_Lagermusik_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_00"); //Gravo really did find something. The place you sent him to.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_01"); //An old coin or what?
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_01"); //An old coin or what?
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_02"); //No. Garaz and Pacho have stored their musical instruments there.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_03"); //Maybe I should work as a fortune teller?
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_04"); //Here's my next prediction: Gravo will once again walk through my hut every day as before.
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_03"); //Maybe I should work as a fortune teller?
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_04"); //Here's my next prediction: Gravo will once again walk through my hut every day as before.
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_05"); //I don't think so. He wants to switch to making music now.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_06"); //Yes? That would be fantastic. Hopefully, far away from me.
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_06"); //Yes? That would be fantastic. Hopefully, far away from me.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Kyle_SchatzImSchlammsee))	{
 		B_GivePlayerXP	(100);
@@ -137,8 +137,8 @@ FUNC INT Info_Mod_Kyle_KGBuddler_Condition()
 FUNC VOID Info_Mod_Kyle_KGBuddler_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_KGBuddler_15_00"); //You want to work as a digger again?
-	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_10_01"); //Just stop it! That eternal grind in the old mine was terrible.
-	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_10_02"); //On the other hand, fieldwork is a pure recovery.
+	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_01_01"); //Just stop it! That eternal grind in the old mine was terrible.
+	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_01_02"); //On the other hand, fieldwork is a pure recovery.
 };
 
 INSTANCE Info_Mod_Kyle_Pickpocket (C_INFO)

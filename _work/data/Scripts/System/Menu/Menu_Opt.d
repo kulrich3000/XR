@@ -45,8 +45,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "match";
-	text[1]		= "Make various game settings.";  // Kommentar
+	text[0]		= "Game";
+	text[1]		= "Configure the gameplay settings.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*-1;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "graphic";
+	text[0]		= "Graphic";
 	text[1]		= "Range of sight, details and effects.";  // Kommentar
 
 	// Position und Dimension
@@ -79,8 +79,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"video";
-	text[1]		=	"Graphics card, resolution and brightness.";  // Kommentar
+	text[0]		=	"Video";
+	text[1]		=	"Graphic adapter, resolution and brightness.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -96,7 +96,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "audio";
+	text[0]		= "Audio";
 	text[1]		= "Music, speech and sound effects.";  // Kommentar
 
 	// Position und Dimension
@@ -115,7 +115,7 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Controls";
-	text[1]		= "Configuration of key assignment.";  // Kommentar
+	text[1]		= "Configure keyboard and mouse.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -131,7 +131,7 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Extended";
+	text[0]		= "Advanced";
 	text[1]		= "Some further settings";  // Kommentar
 
 	// Position und Dimension
@@ -169,7 +169,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Performance/Quality";
-	text[1]		= "Optimization of performance and quality.";  // Kommentar
+	text[1]		= "Optimize your performance and quality.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;

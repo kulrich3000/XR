@@ -287,5 +287,20 @@ FUNC VOID GILDENSTORY_WALDI()
 				B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Khorgor is finished. Now all I have to do is get out of this valley.");
 			};
 		};
+		
+		if (Mod_JG_RaetselWand == 1) {
+			var int raetselSteinPtr; raetselSteinPtr = MEM_SearchVobByName ("RAETSELSTEIN");
+			if (raetselSteinPtr) {
+				var oCMob raetselSteinMob;
+				MEM_AssignInst (raetselSteinMob, raetselSteinPtr);
+				raetselSteinMob.name = IntToString(Mod_JG_Raetselstein_Wert);
+			};
+		};
+		
+		if (Mod_JG_Gitter < 2) {
+			if (Npc_GetDistToWP(Wasserdrache_11054_DT, Wasserdrache_11054_DT.wp) > 1000) {
+				AI_Teleport(Wasserdrache_11054_DT, Wasserdrache_11054_DT.wp);
+			};
+		};
 	};
 };

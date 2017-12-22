@@ -18,7 +18,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Fluffy_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Fluffy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Fluffy_26_00"); //Well, the king has his dog under control...
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Fluffy_19_00"); //Well, the king has his dog under control...
 
 	Mod_SL_PartFluffy = 4;
 
@@ -45,7 +45,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Lochgraeber_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Lochgraeber_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Lochgraeber_26_00"); //Did you hear that? Some kind of greenbill dug a hole a hundred times deeper than that of our grave in just one night!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Lochgraeber_19_00"); //Did you hear that? Some kind of greenbill dug a hole a hundred times deeper than that of our grave in just one night!
 
 	Mod_SL_PartLochgraeber = 3;
 
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Geliebte_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Geliebte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geliebte_26_00"); //Did you hear that? Apparently, some young bung has managed to seduce the royal mistress!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geliebte_19_00"); //Did you hear that? Apparently, some young bung has managed to seduce the royal mistress!
 
 	Mod_SL_PartGeliebte = 7;
 
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Blind_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Blind_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Blind_26_00"); //Have you heard?! In Khorata we can't sell any more delights! They think it's blind!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Blind_19_00"); //Have you heard?! In Khorata we can't sell any more delights! They think it's blind!
 
 	Mod_SL_PartBlind = 4;
 
@@ -128,7 +128,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Brunnen_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Brunnen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Brunnen_26_00"); //Did you take a closer look at the castle? It's kind of shabby and not at all pompous.
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Brunnen_19_00"); //Did you take a closer look at the castle? It's kind of shabby and not at all pompous.
 
 	Mod_SL_PartBrunnen = 2;
 
@@ -155,7 +155,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Geschwaecht_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Geschwaecht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geschwaecht_26_00"); //So... there's been a lot of things going wrong lately!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geschwaecht_19_00"); //So... there's been a lot of things going wrong lately!
 
 	Mod_SL_Schwaechen = 3;
 

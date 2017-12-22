@@ -25,7 +25,7 @@ FUNC INT Info_Mod_Bones_NW_Irdorath3_Condition()
 FUNC VOID Info_Mod_Bones_NW_Irdorath3_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bones_NW_Irdorath3_15_00"); //I'm sorry, but it seems we're too many. I can't take you with me.
-	AI_Output(self, hero, "Info_Mod_Bones_NW_Irdorath3_01_01"); //Too bad. I'm going back to Greg's.
+	AI_Output(self, hero, "Info_Mod_Bones_NW_Irdorath3_04_01"); //Too bad. I'm going back to Greg's.
 
 	Mod_BonesDabei = 3;
 

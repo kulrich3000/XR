@@ -453,7 +453,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel), " Blood fly spine"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Blutfliegenstachel), " Bloodfly Stinger"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Minecrawlerzangen > 0)
 		{
