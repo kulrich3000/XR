@@ -25,7 +25,7 @@ const int MENU_CREDITS_03_START_Y	= 2000;
 
 INSTANCE MENUITEM_CREDITS_03_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"MATERIAL - STRONA 3";
+	text[0]		=	"MATERIA£Y - STRONA 3";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -38,8 +38,8 @@ INSTANCE MENUITEM_CREDITS_03_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_THECAMPER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "_Camper²";
-	text[1]		= "dla Magii Transformacji, Magii Ognistego i Wodnego Magii, jak równiez dla Zbroi Gladkiej i Lancuchowej.";  // Kommentar
+	text[0]		= "The_Camper²";
+	text[1]		= "für die Verwandlungsmagier-, die hohe Feuermagier- und Wassermagier-, sowie die Heilmagierrobe und die Kettenrüstung";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*0;
@@ -57,7 +57,7 @@ INSTANCE MENUITEM_CREDITS_03_THIELHATER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "ThielHater";
-	text[1]		= "za jego teksture latka";  // Kommentar
+	text[1]		= "für seinen Texturenpatch";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*1;
@@ -74,8 +74,8 @@ INSTANCE MENUITEM_CREDITS_03_THIELHATER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_ZIRROR(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "marazm";
-	text[1]		= "dla przynety uzbrojenie";  // Kommentar
+	text[0]		= "Zirror";
+	text[1]		= "für die Lurkerrüstung";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*2;
@@ -93,7 +93,7 @@ instance MENUITEM_CREDITS_03_CEEX(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"CeeX";
-	text[1]		=	"zbroja oraz niektóre przedmioty i bron od Czarnego Bruta";  // Kommentar
+	text[1]		=	"für die Rüstungen und einige Items und Waffen aus 'Dunkle Brut'";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*3;
@@ -109,8 +109,8 @@ instance MENUITEM_CREDITS_03_CEEX(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_CROSSHEAD(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "trawers";
-	text[1]		= "dla niektórych tekstur pancerza";  // Kommentar
+	text[0]		= "Crosshead";
+	text[1]		= "für einige Rüstungstexturen";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*4;
@@ -128,7 +128,7 @@ INSTANCE MENUITEM_CREDITS_03_ELVEON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "elveon";
-	text[1]		= "za jego teksture latka";  // Kommentar
+	text[1]		= "für seinen Texturenpatch";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*5;
@@ -146,7 +146,7 @@ INSTANCE MENUITEM_CREDITS_03_FIZZBAN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Fizzban";
-	text[1]		= "za jego skryptowy poprawka do scenariusza";  // Kommentar
+	text[1]		= "für seinen Scriptpatch";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*6;
@@ -164,7 +164,7 @@ INSTANCE MENUITEM_CREDITS_03_FREDDY(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Freddy";
-	text[1]		= "kropelki wody z Khorany, wylesniarka lesna i jej plaster tekstury G1";  // Kommentar
+	text[1]		= "für die Wassertropfen aus Khorana, den Wald-Scavenger und seinen G1 Texturenpatch";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*0;
@@ -182,7 +182,7 @@ INSTANCE MENUITEM_CREDITS_03_GARRIKLORAN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Garrik Loran";
-	text[1]		= "dla niektórych przedmiotów z Sciezki ciemnosci.";  // Kommentar
+	text[1]		= "für einige Gegenstände aus 'Trails of Darkness'";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*1;
@@ -199,8 +199,8 @@ INSTANCE MENUITEM_CREDITS_03_GARRIKLORAN(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_GOLDENAGE (C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zloty wiek";
-	text[1]		= "szlachetna konsystencja grzybów i trumny";  // Kommentar
+	text[0]		= "Golden Age";
+	text[1]		= "für die Edelpilz-Textur und den Sarg";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*2;
@@ -217,8 +217,8 @@ INSTANCE MENUITEM_CREDITS_03_GOLDENAGE (C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_GOTHIC2005(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Gotycki2005 r.";
-	text[1]		= "dla systemu efektów roslinnych";  // Kommentar
+	text[0]		= "Gothic2005";
+	text[1]		= "für sein Pflanzenwirkungssystem";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*3;
@@ -235,8 +235,8 @@ INSTANCE MENUITEM_CREDITS_03_GOTHIC2005(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_GOTHICFAN359(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "gotyk 3599";
-	text[1]		= "dla krysztalu paladynskiego";  // Kommentar
+	text[0]		= "gothicfan359";
+	text[1]		= "für den Paladinkristall";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*4;
@@ -253,8 +253,8 @@ INSTANCE MENUITEM_CREDITS_03_GOTHICFAN359(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_GOTHIC_MODER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "nowoczesny";
-	text[1]		= "dla kilku budynków nalezacych do MDB";  // Kommentar
+	text[0]		= "gothic-moder";
+	text[1]		= "für ein paar Gebäude aus der MDB";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*5;
@@ -271,8 +271,8 @@ INSTANCE MENUITEM_CREDITS_03_GOTHIC_MODER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_HAGELNACHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "gradobicie w nocy";
-	text[1]		= "ma muszkatolowa agaryczna konsystencje i poszukiwania Liselotte.";  // Kommentar
+	text[0]		= "Hagelnacht";
+	text[1]		= "für seine Fliegenpilz-Textur und die Quest von Liselotte";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*6;
@@ -289,7 +289,7 @@ INSTANCE MENUITEM_CREDITS_03_HAGELNACHT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_LAST(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Poprzedni";
+	text[0]		=	"Wstecz";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_02_START_Y + MENU_CREDITS_02_DY*8;
 	dimx		=	4096;		dimy		=	800;
@@ -303,7 +303,7 @@ INSTANCE MENUITEM_CREDITS_03_LAST(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Poprzedni";
+	text[0]		=	"Wstecz";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*8;
 	dimx		=	8192;		dimy		=	800;
@@ -317,7 +317,7 @@ INSTANCE MENUITEM_CREDITS_03_BACK(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_03_NEXT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"najblizszy";
+	text[0]		=	"Dalej";
 	// Position und Dimension
 	posx		=	4096;		posy		=	MENU_CREDITS_03_START_Y + MENU_CREDITS_03_DY*8;
 	dimx		=	4096;		dimy		=	800;

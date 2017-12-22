@@ -164,7 +164,7 @@ const int STAT_DY =  300;
 // ---------------
 instance MENU_ITEM_STATUS_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	 	= "PROFIL";
+	text[0]	 	= "POSTAÆ";
 	posx		= STAT_A_X1;				posy = STAT_PLYHEAD_Y;	
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
 	fontName	= STAT_FONT_DEFAULT;
@@ -182,7 +182,7 @@ instance MENU_ITEM_PLAYERGUILD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*0;
-	text[0]		= "scena";	
+	text[0]		= "Poz.";	
 	fontName	= STAT_FONT_DEFAULT;		
 	flags		= flags & ~IT_SELECTABLE; //Selectable wird mit &! rausgeworfen - alle andern Flags bleiben, wie sie sind
 };
@@ -205,7 +205,7 @@ instance MENU_ITEM_TALENT_7_TITLE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_TALENT_7_CIRCLE(C_MENU_ITEM_DEF) 
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*1;	
-	text[0]		= "okrag"; 
+	text[0]		= "Kr¹g"; 
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE; 
 };
@@ -220,7 +220,7 @@ instance MENU_ITEM_TALENT_7_SKILL(C_MENU_ITEM_DEF)
 instance MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*2;	
-	text[0]		= "doznanie"; 
+	text[0]		= "Doœwiadczenie"; 
 	fontName 	= STAT_FONT_DEFAULT;	
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -236,7 +236,7 @@ INSTANCE MENU_ITEM_EXP(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*3;	
-	text[0]		= "Poziom nastepny";
+	text[0]		= "Nast. Poziom";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -252,7 +252,7 @@ INSTANCE MENU_ITEM_LEVEL_NEXT(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEARN_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*4;	
-	text[0]		= "uczenie sie";	
+	text[0]		= "Punkty nauki";	
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -273,7 +273,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATRHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "ATTRIBUTE";	
+	text[0]		= "ATRYBUTY";	
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -282,7 +282,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*0;
-	text[0]		= "krochmal";
+	text[0]		= "Si³a";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -299,7 +299,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_1(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*1;
-	text[0]		= "majatki";
+	text[0]		= "Zrêcznoœæ";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -316,7 +316,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*2;
-	text[0]		= "mana";
+	text[0]		= "Mana";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -332,7 +332,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*3;
-	text[0]		= "energia zyciowa";
+	text[0]		= "Punkty trafieñ";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -353,7 +353,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARMHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "";
+	text[0]		= "OCHRONA";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -362,7 +362,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*0;
-	text[0]		= "przed bronia";
+	text[0]		= "Broñ";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_ARMOR_1(C_MENU_ITEM_DEF)
 instance MENU_ITEM_ARMOR_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*1;	
-	text[0]		= "w pociskach";
+	text[0]		= "Pociski";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -394,7 +394,7 @@ INSTANCE MENU_ITEM_ARMOR_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*2;
-	text[0]		= "przed pozarem smoka";
+	text[0]		= "Smoczy ogieñ";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -410,7 +410,7 @@ INSTANCE MENU_ITEM_ARMOR_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*3;
-	text[0]		= "przed magia";
+	text[0]		= "Magia";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -432,7 +432,7 @@ INSTANCE MENU_ITEM_TALENTS_HEADING(C_MENU_ITEM_DEF)
 
 	posx		= STAT_B_X1; 				posy = STAT_TALHEAD_Y;
 	dimx 		= STAT_B_X4 - STAT_B_X1;	dimy = STAT_DY;
-	text[0]		= "TALENTE";
+	text[0]		= "UMIEJÊTNOŒCI";
 	fontName	= STAT_FONT_DEFAULT;	
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -509,7 +509,7 @@ instance MENU_ITEM_TALENT_19_SKILL(C_MENU_ITEM_DEF)  { posx = STAT_B_X2;posy = S
 INSTANCE MENU_ITEM_GIFT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_B_X1; 				posy = STAT_TAL_Y + 14*STAT_DY;
-	text[0]		= "opór trucizny";
+	text[0]		= "Odp. na trucizny";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -523,7 +523,7 @@ INSTANCE MENU_ITEM_GIFT_WERT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_KRANKHEIT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_B_X1; 				posy = STAT_TAL_Y + 15*STAT_DY;
-	text[0]		= "Badanie przesiewowe.";
+	text[0]		= "Odp. na choroby";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };

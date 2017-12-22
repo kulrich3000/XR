@@ -29,7 +29,7 @@ const int MENU_CREDITS_04_START_Y	= 2000;
 
 INSTANCE MENUITEM_CREDITS_04_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"ALPHATESTER";
+	text[0]		=	"ALFA TESTERZY";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -42,7 +42,7 @@ INSTANCE MENUITEM_CREDITS_04_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_DERALTE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Stare";
+	text[0]		= "DerAlte";
 	text[1]		= "";  // Kommentar
 
 	// Position und Dimension
@@ -78,7 +78,7 @@ INSTANCE MENUITEM_CREDITS_04_ELLIBERTADOR(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_ESSAH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Esea";
+	text[0]		= "Essah";
 	text[1]		= "";  // Kommentar
 
 	// Position und Dimension
@@ -96,7 +96,7 @@ INSTANCE MENUITEM_CREDITS_04_ESSAH(C_MENU_ITEM_DEF)
 instance MENUITEM_CREDITS_04_JEOREN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"dzinsy";
+	text[0]		=	"Jeoren";
 	text[1]		=	"";  // Kommentar
 
 	// Position und Dimension
@@ -113,7 +113,7 @@ instance MENUITEM_CREDITS_04_JEOREN(C_MENU_ITEM_DEF)
 instance MENUITEM_CREDITS_04_MICHADD(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"MichaDDD";
+	text[0]		=	"MichaDD";
 	text[1]		=	"";  // Kommentar
 
 	// Position und Dimension
@@ -130,7 +130,7 @@ instance MENUITEM_CREDITS_04_MICHADD(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_NINEINCHNAIL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "DziewiecInchNail";
+	text[0]		= "NineInchNail";
 	text[1]		= "";  // Kommentar
 
 	// Position und Dimension
@@ -148,7 +148,7 @@ INSTANCE MENUITEM_CREDITS_04_NINEINCHNAIL(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_THANATOS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "tanatosy";
+	text[0]		= "Thanatos";
 	text[1]		= "";  // Kommentar
 
 	// Position und Dimension
@@ -166,8 +166,8 @@ INSTANCE MENUITEM_CREDITS_04_THANATOS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_PRAIDEN(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "modlitwy";
-	text[1]		= "w przypadku miecza grodziowego";  // Kommentar
+	text[0]		= "Praiden";
+	text[1]		= "für das Schütterschwert";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*6;
@@ -184,8 +184,8 @@ INSTANCE MENUITEM_CREDITS_04_PRAIDEN(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_RAMMON(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "rammon";
-	text[1]		= "dla jaskini z jego 'Wyspy z Dungeonem' z MDB";  // Kommentar
+	text[0]		= "Rammon";
+	text[1]		= "für die Höhle aus seiner 'Insel mit Dungeon' aus der MDB";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*0;
@@ -202,8 +202,8 @@ INSTANCE MENUITEM_CREDITS_04_RAMMON(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_ROXTAR(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "roXar";
-	text[1]		= "do spiacej maski i kosy";  // Kommentar
+	text[0]		= "roXtar";
+	text[1]		= "für die Schläfermaske und die Sensen";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*1;
@@ -220,8 +220,8 @@ INSTANCE MENUITEM_CREDITS_04_ROXTAR(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_SEKTENSPINNER (C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Blysteczka sekty i lord cieni34";
-	text[1]		= "dla pancerza skórzanego z Velaya";  // Kommentar
+	text[0]		= "Sektenspinner und Schattenlord34";
+	text[1]		= "für die Lederrüstung aus Velaya";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*2;
@@ -238,8 +238,8 @@ INSTANCE MENUITEM_CREDITS_04_SEKTENSPINNER (C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_SILVESTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "srebro";
-	text[1]		= "dla lochów w starej kopalni";  // Kommentar
+	text[0]		= "Silvestro";
+	text[1]		= "für den Dungeon bei der alten Mine";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*3;
@@ -256,8 +256,8 @@ INSTANCE MENUITEM_CREDITS_04_SILVESTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_SUMPFKRAUTJUNKIE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ziolo bagienne junkie";
-	text[1]		= "w przypadku wiazki i bagiennego pecherza moczowego";  // Kommentar
+	text[0]		= "Sumpfkrautjunkie";
+	text[1]		= "für seinen Balken und die Moorblase";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*4;
@@ -274,8 +274,8 @@ INSTANCE MENUITEM_CREDITS_04_SUMPFKRAUTJUNKIE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_SWEIL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "bluza";
-	text[1]		= "dla tekstur Lurkera z Przymierza Bogów.";  // Kommentar
+	text[0]		= "Sweil";
+	text[1]		= "für die Lurker-Texturen aus 'Das Bündnis der Götter'";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*5;
@@ -292,8 +292,8 @@ INSTANCE MENUITEM_CREDITS_04_SWEIL(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_TENAX(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "tenis";
-	text[1]		= "dla dwóch potwornych tekstur";  // Kommentar
+	text[0]		= "Tenax";
+	text[1]		= "für zwei Monstertexturen";  // Kommentar
 
 	// Position und Dimension
 	posx		= 4096;		posy		= MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*6;
@@ -310,7 +310,7 @@ INSTANCE MENUITEM_CREDITS_04_TENAX(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_LAST(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Poprzedni";
+	text[0]		=	"Wstecz";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*8;
 	dimx		=	4096;		dimy		=	800;
@@ -324,7 +324,7 @@ INSTANCE MENUITEM_CREDITS_04_LAST(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Poprzedni";
+	text[0]		=	"Wstecz";
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*8;
 	dimx		=	8192;		dimy		=	800;
@@ -338,7 +338,7 @@ INSTANCE MENUITEM_CREDITS_04_BACK(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_NEXT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"najblizszy";
+	text[0]		=	"Dalej";
 	// Position und Dimension
 	posx		=	4096;		posy		=	MENU_CREDITS_04_START_Y + MENU_CREDITS_04_DY*8;
 	dimx		=	4096;		dimy		=	800;
