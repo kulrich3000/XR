@@ -85,7 +85,7 @@ FUNC INT Info_Mod_Nimius_WilfriedTot_Condition()
 
 FUNC VOID Info_Mod_Nimius_WilfriedTot_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_01"); //Martwy Wilfried? Wykonal pan dobra prace.
+	AI_Output(self, hero, "Info_Mod_Nimius_WilfriedTot_01_00"); //Martwy Wilfried? Wykonal pan dobra prace.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 50);
 };

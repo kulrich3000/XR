@@ -211,7 +211,7 @@ const string SPINE_ACHIEVEMENT_DESCRIPTIONS[MAX_ACHIEVEMENTS] = {
 	"Ukonczenie praktyki w Thorben",
 	"Uzyskaj maksymalna zbroje gildii.",
 	"Uzyskanie krysztalu Paladynu bez pomocy",
-	"20 NPCs im Faustkampf besiegt",
+	"20 KPK pokonanych w walce piesciowej",
 	"Obraz gildii przez krysztal paladynowy",
 	"Wstep do gildii przez misje misji",
 	"Laczenie cechu bocznego",
@@ -554,6 +554,6 @@ const int SPINE_SCORE_1 = 0;
 const int SPINE_SCORE_2 = 1;
 
 const string SPINE_SCORE_NAMES[2] = {
-	"Level",
-	"Gelöste Quests"
+	"poziom",
+	"Królowie rozwiazani"
 };

@@ -15,14 +15,14 @@ FUNC INT Info_Mod_Straschiduo_Hi_Condition()
 
 FUNC VOID Info_Mod_Straschiduo_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_29_00"); //Co? Kto osmiela sie wejsc do swietych sal naszego Bractwa Kultów Krwi?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_23_00"); //Co? Kto osmiela sie wejsc do swietych sal naszego Bractwa Kultów Krwi?
 
 	if (Mod_WM_Blutkultinfos == 0)
 	{
 		B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Aha, wspólnota, która nazywa sie 'kultem krwi', wydaje sie miec palce w piersiach.");
 	};
 
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_29_01"); //Gdybym nie byl tak zdumiony twoim wygladem, zabilbym cie teraz. Mówie wiec szybko: Kim jestes i co robisz tutaj?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_23_01"); //Gdybym nie byl tak zdumiony twoim wygladem, zabilbym cie teraz. Mówie wiec szybko: Kim jestes i co robisz tutaj?
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 
@@ -34,7 +34,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_Info()
 FUNC VOID Info_Mod_Straschiduo_Hi_C()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_C_15_00"); //Chce dolaczyc do waszej poteznej spolecznosci.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_C_29_01"); //Zaskoczyla mnie pani i zadala kilka pytan. Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_C_23_01"); //Zaskoczyla mnie pani i zadala kilka pytan. Kim jestes?
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_C()
 FUNC VOID Info_Mod_Straschiduo_Hi_B()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_B_15_00"); //Po prostu natknalem sie tutaj przypadkowo. Co sie tu dzieje?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_B_29_01"); //Próbujesz mojej cierpliwosci. Jestesmy magicznie utalentowana i niezwykle wplywowa wspólnota kultu krwi. To na razie powinno wystarczyc! A teraz mów!
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_B_23_01"); //Próbujesz mojej cierpliwosci. Jestesmy magicznie utalentowana i niezwykle wplywowa wspólnota kultu krwi. To na razie powinno wystarczyc! A teraz mów!
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 
@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_B()
 FUNC VOID Info_Mod_Straschiduo_Hi_A()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_A_15_00"); //Jestem tutaj, aby pozbyc sie nieszczesliwych stworzen.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_A_29_01"); //Hahahaha, nie smieje sie. Chcesz nas zniszczyc? Bedziemy karmic sie Twoja krwia. Chodzcie, bracia, porzuccie go na kawalki!
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_A_23_01"); //Hahahaha, nie smieje sie. Chcesz nas zniszczyc? Bedziemy karmic sie Twoja krwia. Chodzcie, bracia, porzuccie go na kawalki!
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -70,7 +70,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_A()
 FUNC VOID Info_Mod_Straschiduo_Hi_F()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_F_15_00"); //Jestem poszukiwaczem przygód od poludnia.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_F_29_01"); //Hmm, tak powiedziec: Do jakiego Boga oddajesz czesc?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_F_23_01"); //Hmm, tak powiedziec: Do jakiego Boga oddajesz czesc?
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_F()
 FUNC VOID Info_Mod_Straschiduo_Hi_E()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_E_15_00"); //Jestem oddanym sluga Beliarów.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_E_29_01"); //Sluga oddany Bogu? Brak kwalifikacji, które przemawiaja za Ciebie.... Chodz, bracia, zabijajcie te bogobojna flunke.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_E_23_01"); //Sluga oddany Bogu? Brak kwalifikacji, które przemawiaja za Ciebie.... Chodz, bracia, zabijajcie te bogobojna flunke.
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_E()
 FUNC VOID Info_Mod_Straschiduo_Hi_D()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_D_15_00"); //Jestem czcigodnym sluga Adanosa.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_D_29_01"); //Co? Sluga Adanosa osmiela sie zniszczyc nasze swiete sale? Chodzcie, bracia, wyjmijcie go!
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_D_23_01"); //Co? Sluga Adanosa osmiela sie zniszczyc nasze swiete sale? Chodzcie, bracia, wyjmijcie go!
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -106,8 +106,8 @@ FUNC VOID Info_Mod_Straschiduo_Hi_D()
 
 FUNC VOID Info_Mod_Straschiduo_Hi_K()
 {
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_K_29_00"); //Tak, to sa sprzyjajace warunki. A skoro nawet do nas dotarles, dostarczyles juz godnego dowodu swoich umiejetnosci.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_K_29_01"); //Cóz, zanim jednak przyjmiemy pana do naszych szeregów, poddam pana kilku malym testom, które dostarcza ostatecznego dowodu waszej woli sluzenia naszej spolecznosci i korzystania z jej poteznych zasobów.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_K_23_00"); //Tak, to sa sprzyjajace warunki. A skoro nawet do nas dotarles, dostarczyles juz godnego dowodu swoich umiejetnosci.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_K_23_01"); //Cóz, zanim jednak przyjmiemy pana do naszych szeregów, poddam pana kilku malym testom, które dostarcza ostatecznego dowodu waszej woli sluzenia naszej spolecznosci i korzystania z jej poteznych zasobów.
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 };
@@ -129,7 +129,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_I()
 FUNC VOID Info_Mod_Straschiduo_Hi_H()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_H_15_00"); //Jedyny Bóg.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_H_29_01"); //Hmm, ze po tak dlugim czasie sa jeszcze zwolennicy tego spinnertum....? No cóz, nie na dlugo.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_H_23_01"); //Hmm, ze po tak dlugim czasie sa jeszcze zwolennicy tego spinnertum....? No cóz, nie na dlugo.
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -141,7 +141,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_H()
 FUNC VOID Info_Mod_Straschiduo_Hi_G()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_G_15_00"); //Innos.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_G_29_01"); //Tam tam. Ale najdluzszy czas. wspólbracia.....
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_G_23_01"); //Tam tam. Ale najdluzszy czas. wspólbracia.....
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -153,7 +153,7 @@ FUNC VOID Info_Mod_Straschiduo_Hi_G()
 FUNC VOID Info_Mod_Straschiduo_Hi_M()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_M_15_00"); //Chce wejsc do Twojej poteznej spolecznosci.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_M_29_01"); //Czy to prawda? Odpowiedz na kilka pytan! Kim jestes?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_M_23_01"); //Czy to prawda? Odpowiedz na kilka pytan! Kim jestes?
 
 	Info_ClearChoices	(Info_Mod_Straschiduo_Hi);
 
@@ -165,9 +165,9 @@ FUNC VOID Info_Mod_Straschiduo_Hi_M()
 FUNC VOID Info_Mod_Straschiduo_Hi_L()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Hi_L_15_00"); //Wlasnie wychodzilem.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_29_01"); //Hahahaha, nie smieje sie.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_29_02"); //Ci, którzy przechodza nasza droge, nie moga uniknac zlozenia holdu.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_29_03"); //Chodzcie, bracia, porabajcie go!
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_23_01"); //Hahahaha, nie smieje sie.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_23_02"); //Ci, którzy przechodza nasza droge, nie moga uniknac zlozenia holdu.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Hi_L_23_03"); //Chodzcie, bracia, porabajcie go!
 
 	Mod_WM_BlutkultAttack = 1;
 
@@ -199,10 +199,10 @@ FUNC INT Info_Mod_Straschiduo_WhatToDo_Condition()
 FUNC VOID Info_Mod_Straschiduo_WhatToDo_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_WhatToDo_15_00"); //Co powinienem zrobic?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_29_01"); //Do naszych rytualów potrzebujemy zawsze swiezej krwi. Przynies mi wiec piec butelek krwi zabitych ludzi.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_29_02"); //Zeby rytualy przyniosly pozadany efekt, musimy najpierw zabrac muchy z grzybów agarycznych. Przynies mi szesc z nich.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_29_03"); //Tak, a potem sa tacy denerwujacy magicy wody swoimi slugusami.... znalezc jednego z twoich magów lub wojowników, zabic go i przyniesc mi swoja bron.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_29_04"); //Kiedy to zrobicie, uzyskacie dostep do naszych innych pokoi i zblizycie sie o wiele blizej do naszego braterstwa.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_23_01"); //Do naszych rytualów potrzebujemy zawsze swiezej krwi. Przynies mi wiec piec butelek krwi zabitych ludzi.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_23_02"); //Zeby rytualy przyniosly pozadany efekt, musimy najpierw zabrac muchy z grzybów agarycznych. Przynies mi szesc z nich.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_23_03"); //Tak, a potem sa tacy denerwujacy magicy wody swoimi slugusami.... znalezc jednego z twoich magów lub wojowników, zabic go i przyniesc mi swoja bron.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_WhatToDo_23_04"); //Kiedy to zrobicie, uzyskacie dostep do naszych innych pokoi i zblizycie sie o wiele blizej do naszego braterstwa.
 
 	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "A zatem wszystko w porzadku. Mam dostac piec butelek ludzkiej krwi, szesc muchowych grzybów agarycznych i wreszcie bron wodnego wojownika czy maga.");
 };
@@ -281,8 +281,8 @@ FUNC VOID Info_Mod_Straschiduo_AllesDa_Info()
 		Npc_RemoveInvItems	(hero, ItMW_Addon_Stab03, 1);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Straschiduo_AllesDa_29_01"); //Bardzo dobrze, zobaczmy. Piec fiolek krwi, toadiole, wszystkie w prawo, a nastepnie - w rzeczywistosci - bron w kolbie wody. Mniej nieszczesliwy sluga Adanosa.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_AllesDa_29_02"); //Tak, teraz masz dostep do naszych pozostalych pokoi i mozna rozpoczac koncowe przygotowania do rytualu nagrania.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_AllesDa_23_01"); //Bardzo dobrze, zobaczmy. Piec fiolek krwi, toadiole, wszystkie w prawo, a nastepnie - w rzeczywistosci - bron w kolbie wody. Mniej nieszczesliwy sluga Adanosa.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_AllesDa_23_02"); //Tak, teraz masz dostep do naszych pozostalych pokoi i mozna rozpoczac koncowe przygotowania do rytualu nagrania.
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 
@@ -313,14 +313,14 @@ FUNC INT Info_Mod_Straschiduo_LetzteVorbereitungen_Condition()
 FUNC VOID Info_Mod_Straschiduo_LetzteVorbereitungen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_LetzteVorbereitungen_15_00"); //Przygotowania koncowe?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_29_01"); //Tak, wez te zeby archdemonu, zasiewaj je na czerwonym miejscu pola Sekoba i zbieraj to, co rosnie z ziemi.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_23_01"); //Tak, wez te zeby archdemonu, zasiewaj je na czerwonym miejscu pola Sekoba i zbieraj to, co rosnie z ziemi.
 
 	B_GiveInvItems	(self, hero, ItAt_ErzdemonTooth, 1);
 
 	Wld_SendTrigger	("EVT_BLUTKULT_SAATMARKIERUNG");
 
-	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_29_02"); //Przynies mi wszystko i stan sie jednym z naszych braci.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_29_03"); //Uzyj tego pickaxe, aby ulatwic wysiew nasion.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_23_02"); //Przynies mi wszystko i stan sie jednym z naszych braci.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_LetzteVorbereitungen_23_03"); //Uzyj tego pickaxe, aby ulatwic wysiew nasion.
 
 	B_GiveInvItems	(self, hero, ItMw_2H_AXe_L_01, 1);
 
@@ -349,17 +349,17 @@ FUNC INT Info_Mod_Straschiduo_Gemeinschaft_Condition()
 FUNC VOID Info_Mod_Straschiduo_Gemeinschaft_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Gemeinschaft_15_00"); //Czy mozesz opowiedziec mi troche wiecej o swojej spolecznosci?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_01"); //Wszystko w porzadku, choc oczywiscie nie moge Wam powiedziec wszystkiego.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_02"); //Nie jestes jeszcze pelnoprawnym czlonkiem naszej spolecznosci, a poza tym po prostu mamy przed soba wielki projekt, który wymaga naszej pelnej uwagi i nie pozwala na zadne duze dygresje.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_03"); //A zatem wszystko w porzadku. Jestesmy starozytna wspólnota, znacznie starsza niz mozna sobie wyobrazic w tym czasie. Pierwotnie mieszkalismy w innej czesci Khorinis.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_04"); //Ale kultura, która kiedys tam mieszkala, wymarla z zlych powodów, tak, ze nie znalezlismy ofiar dla naszych rytualów - na razie nie nosimy na razie nazwy kult krwi za nic.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_05"); //Cóz, musze przyznac, ze moglismy równiez odegrac nasza role w upadku tej kultury. (smiertelni zle oblakani)
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_06"); //Z tego powodu przespalismy sie przez wieki, az poczulismy zycie i magiczna energie w tej czesci Khorinisa i przyjechalismy tutaj.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_07"); //Musielismy jednak zdac sobie sprawe, ze warunki nie spelnily jeszcze naszych potrzeb i musielismy znów odpoczywac przez wiele lat, az do czasu, gdy wielki magiczny szok wyparl nas z snu.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_08"); //Wibracje tego rodzaju, miejmy nadzieje, ze dojdzie do upadku w strukture swiata, co moze dostarczyc nam krwi i energii wielu istot zyjacych, a tym samym dac nadzieje na dobre warunki.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_09"); //Tak, a potem ktos inny nawiazal kontakt z nami, który jest prawie tak stary jak my.....
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_01"); //Wszystko w porzadku, choc oczywiscie nie moge Wam powiedziec wszystkiego.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_02"); //Nie jestes jeszcze pelnoprawnym czlonkiem naszej spolecznosci, a poza tym po prostu mamy przed soba wielki projekt, który wymaga naszej pelnej uwagi i nie pozwala na zadne duze dygresje.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_03"); //A zatem wszystko w porzadku. Jestesmy starozytna wspólnota, znacznie starsza niz mozna sobie wyobrazic w tym czasie. Pierwotnie mieszkalismy w innej czesci Khorinis.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_04"); //Ale kultura, która kiedys tam mieszkala, wymarla z zlych powodów, tak, ze nie znalezlismy ofiar dla naszych rytualów - na razie nie nosimy na razie nazwy kult krwi za nic.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_05"); //Cóz, musze przyznac, ze moglismy równiez odegrac nasza role w upadku tej kultury. (smiertelni zle oblakani)
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_06"); //Z tego powodu przespalismy sie przez wieki, az poczulismy zycie i magiczna energie w tej czesci Khorinisa i przyjechalismy tutaj.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_07"); //Musielismy jednak zdac sobie sprawe, ze warunki nie spelnily jeszcze naszych potrzeb i musielismy znów odpoczywac przez wiele lat, az do czasu, gdy wielki magiczny szok wyparl nas z snu.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_08"); //Wibracje tego rodzaju, miejmy nadzieje, ze dojdzie do upadku w strukture swiata, co moze dostarczyc nam krwi i energii wielu istot zyjacych, a tym samym dac nadzieje na dobre warunki.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_09"); //Tak, a potem ktos inny nawiazal kontakt z nami, który jest prawie tak stary jak my.....
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Gemeinschaft_15_10"); //O kim mówisz?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_29_11"); //Um wyjasnie to przy innej okazji. Teraz odrabiaj swoja prace domowa. Wiesz, co musisz zrobic.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Gemeinschaft_23_11"); //Um wyjasnie to przy innej okazji. Teraz odrabiaj swoja prace domowa. Wiesz, co musisz zrobic.
 };
 
 INSTANCE Info_Mod_Straschiduo_Ernte (C_INFO)
@@ -388,11 +388,11 @@ FUNC INT Info_Mod_Straschiduo_Ernte_Condition()
 FUNC VOID Info_Mod_Straschiduo_Ernte_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Ernte_15_00"); //Tutaj sa pozadane..... er er..... Uprawy.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_29_01"); //Wybitny. Jest jeszcze jedna rzecz, która musisz zrobic.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_23_01"); //Wybitny. Jest jeszcze jedna rzecz, która musisz zrobic.
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Ernte_15_02"); //(Wyczerpane) Wszystko inne? Kto lub co tym razem zabic, zabic i rabuc?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_29_03"); //(smiech) Nie, tym razem nic takiego. Teraz, aby cos zmienic, poznasz przyjemnosci podniebienia.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_23_03"); //(smiech) Nie, tym razem nic takiego. Teraz, aby cos zmienic, poznasz przyjemnosci podniebienia.
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Ernte_15_04"); //(joyfuluj) Co za smaczny posilek, naprawde moglem teraz skorzystac z przekasek.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_29_05"); //Widzisz, ze to równiez jest cos, czego nie przegapimy. Oto przepis...... i cztery butelki z krwia plus trzy toadiole, których potrzebujesz.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_23_05"); //Widzisz, ze to równiez jest cos, czego nie przegapimy. Oto przepis...... i cztery butelki z krwia plus trzy toadiole, których potrzebujesz.
 
 	CreateInvItems	(hero, ItPo_Blood, 4);
 	CreateInvItems	(hero, ItPl_Mushroom_03, 3);
@@ -401,8 +401,8 @@ FUNC VOID Info_Mod_Straschiduo_Ernte_Info()
 	Wld_SendUnTrigger	("EVT_BLUTKULT_SAATMARKIERUNG");
 
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Ernte_15_06"); //Jak?
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_29_07"); //Po jego przygotowaniu i spozyciu, musisz wrócic do mnie, abys mógl stac sie pelnoprawnym czlonkiem naszej wspólnoty.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_29_08"); //I, tak, zanim ja zjedziesz, upewnij sie, ze twoje zapasy energii zyciowej sa dobrze wypelnione. Mogloby to zaszkodzic Twojemu umyslowi.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_23_07"); //Po jego przygotowaniu i spozyciu, musisz wrócic do mnie, abys mógl stac sie pelnoprawnym czlonkiem naszej wspólnoty.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Ernte_23_08"); //I, tak, zanim ja zjedziesz, upewnij sie, ze twoje zapasy energii zyciowej sa dobrze wypelnione. Mogloby to zaszkodzic Twojemu umyslowi.
 
 	B_LogEntry	(TOPIC_MOD_ADANOS_UNHEIL, "Ooh, toadstoole, krew.... . To moze byc gratka dla podniebienia. Cóz, gotuj, ugotuj, ulóz - zwróc wczesniej uwage na dostateczna witalnosc - i straschiduo na koncowy rytual.");
 
@@ -432,18 +432,18 @@ FUNC INT Info_Mod_Straschiduo_Halbinfernalischer_Condition()
 FUNC VOID Info_Mod_Straschiduo_Halbinfernalischer_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Halbinfernalischer_15_00"); //Jadlem posilek.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_01"); //Ahh, doskonaly. Poczuj demoniczne sily w Tobie?
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_01"); //Ahh, doskonaly. Poczuj demoniczne sily w Tobie?
 	AI_Output(hero, self, "Info_Mod_Straschiduo_Halbinfernalischer_15_02"); //Uh, mysle, ze tak.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_03"); //Potem wejdzmy posród nas.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_04"); //Bracia (dla widzów) nadszedl czas, aby powitac nowych towarzyszy broni w naszej wspólnocie, który naprawde dowiódl swojej wartosci.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_05"); //Tak, Aeony, ostatnio przywitalismy nowego czlonka.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_06"); //A po tym, jak jeden z naszych braci wyjechal do Minental, aby szukac mozliwosci smierci i zniszczenia, kolejny brat jest tym bardziej mile widziany.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_07"); //(About the Hero) No cóz, wiedz, ze jestesmy odpowiedzialni za wyglad stworzen na plaskowyzu, nawet jesli pewnie sam doszedles do tego zalozenia.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_08"); //Stworzylismy te stworzenia pracujac razem z czarownicami, przyjmujac energie Beliarów i Innosów i ksztaltujac z nich te stworzenia.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_09"); //Taki glupiec wodniak nieswiadomie gral w nasze rece, wykonujac rytual oczyszczenia blogoslawionego i przekletego terenu. (smiertelni zle oblakani)
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_10"); //(mocks) Ha, zachowanie równowagi. Nie tak dlugo, jak dlugo jestesmy w poblizu. Cóz, tak czy owak, niestety, kontakt z czarownicami jest jakos zerwany.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_11"); //Twoim pierwszym zadaniem bedzie dowiedziec sie, co sie stalo. A potem, jako poslannik, odwiedzicie tego, pod którego kierownictwem zostalo uformowane nasze przymierze z czarownicami i który umozliwil w pierwszej kolejnosci te chwalebnie ohydna prace.
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_29_12"); //Ale to wszystko dopiero po rytuale. Zacznijmy teraz.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_03"); //Potem wejdzmy posród nas.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_04"); //Bracia (dla widzów) nadszedl czas, aby powitac nowych towarzyszy broni w naszej wspólnocie, który naprawde dowiódl swojej wartosci.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_05"); //Tak, Aeony, ostatnio przywitalismy nowego czlonka.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_06"); //A po tym, jak jeden z naszych braci wyjechal do Minental, aby szukac mozliwosci smierci i zniszczenia, kolejny brat jest tym bardziej mile widziany.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_07"); //(About the Hero) No cóz, wiedz, ze jestesmy odpowiedzialni za wyglad stworzen na plaskowyzu, nawet jesli pewnie sam doszedles do tego zalozenia.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_08"); //Stworzylismy te stworzenia pracujac razem z czarownicami, przyjmujac energie Beliarów i Innosów i ksztaltujac z nich te stworzenia.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_09"); //Taki glupiec wodniak nieswiadomie gral w nasze rece, wykonujac rytual oczyszczenia blogoslawionego i przekletego terenu. (smiertelni zle oblakani)
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_10"); //(mocks) Ha, zachowanie równowagi. Nie tak dlugo, jak dlugo jestesmy w poblizu. Cóz, tak czy owak, niestety, kontakt z czarownicami jest jakos zerwany.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_11"); //Twoim pierwszym zadaniem bedzie dowiedziec sie, co sie stalo. A potem, jako poslannik, odwiedzicie tego, pod którego kierownictwem zostalo uformowane nasze przymierze z czarownicami i który umozliwil w pierwszej kolejnosci te chwalebnie ohydna prace.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Halbinfernalischer_23_12"); //Ale to wszystko dopiero po rytuale. Zacznijmy teraz.
 
 	B_GivePlayerXP	(200);
 
@@ -478,7 +478,7 @@ FUNC INT Info_Mod_Straschiduo_RitualDontWork_Condition()
 
 FUNC VOID Info_Mod_Straschiduo_RitualDontWork_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Straschiduo_RitualDontWork_29_00"); //Damn, cos wydaje sie blokowac rytual. Prosze pozwolic mi pomyslec o tym.
+	AI_Output(self, hero, "Info_Mod_Straschiduo_RitualDontWork_23_00"); //Damn, cos wydaje sie blokowac rytual. Prosze pozwolic mi pomyslec o tym.
 
 	AI_StopProcessInfos	(self);
 
@@ -507,7 +507,7 @@ FUNC INT Info_Mod_Straschiduo_Adanos_Condition()
 
 FUNC VOID Info_Mod_Straschiduo_Adanos_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Straschiduo_Adanos_29_00"); //Sama obecnosc Adano moglaby powstrzymac rytual. Sluga Adanosa!
+	AI_Output(self, hero, "Info_Mod_Straschiduo_Adanos_23_00"); //Sama obecnosc Adano moglaby powstrzymac rytual. Sluga Adanosa!
 
 	AI_StopProcessInfos	(self);
 
@@ -544,8 +544,8 @@ FUNC VOID Info_Mod_Straschiduo_Blut_Info()
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Blood))
 	{
-		AI_Output (self, other, "Info_Mod_Straschiduo_Blut_29_01"); //Dobre. Posluchaj. To w zasadzie calkiem proste.
-		AI_Output (self, other, "Info_Mod_Straschiduo_Blut_29_02"); //Podnosisz ostre ostrze i tniesz cialo gdzies, najlepiej na aorty. Nastepnie trzymasz butelke pod spodem i pobierasz krew.
+		AI_Output (self, other, "Info_Mod_Straschiduo_Blut_23_01"); //Dobre. Posluchaj. To w zasadzie calkiem proste.
+		AI_Output (self, other, "Info_Mod_Straschiduo_Blut_23_02"); //Podnosisz ostre ostrze i tniesz cialo gdzies, najlepiej na aorty. Nastepnie trzymasz butelke pod spodem i pobierasz krew.
 	};
 };
 
@@ -577,7 +577,7 @@ FUNC VOID Info_Mod_Straschiduo_Zunge_Info()
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_FireTongue))
 	{
-		AI_Output (self, other, "Info_Mod_Straschiduo_Zunge_29_01"); //Za pomoca noza wycietego z ust podczas trzymania go druga reka uderza sie w jezyk monitora przeciwpozarowego.
+		AI_Output (self, other, "Info_Mod_Straschiduo_Zunge_23_01"); //Za pomoca noza wycietego z ust podczas trzymania go druga reka uderza sie w jezyk monitora przeciwpozarowego.
 	};
 };
 
@@ -609,7 +609,7 @@ FUNC VOID Info_Mod_Straschiduo_Herz_Info()
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Heart))
 	{
-		AI_Output (self, other, "Info_Mod_Straschiduo_Herz_29_01"); //Serce usuwa sie z zwierzecia za pomoca sprytnego naciecia w klatce piersiowej. Jednak czesto oplaca sie to tylko dla wyjatkowych zwierzat lub magicznych istot.
+		AI_Output (self, other, "Info_Mod_Straschiduo_Herz_23_01"); //Serce usuwa sie z zwierzecia za pomoca sprytnego naciecia w klatce piersiowej. Jednak czesto oplaca sie to tylko dla wyjatkowych zwierzat lub magicznych istot.
 	};
 };
 
@@ -644,7 +644,7 @@ func int Info_Mod_Straschiduo_FirstWarn_Condition()
 
 func void Info_Mod_Straschiduo_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Straschiduo_FirstWarn_29_00"); //HALT! Jeszcze nie mozna sie zatrzymac.
+	AI_Output (self, hero,"Info_Mod_Straschiduo_FirstWarn_23_00"); //HALT! Jeszcze nie mozna sie zatrzymac.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Straschiduo_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -677,7 +677,7 @@ FUNC INT Info_Mod_Straschiduo_SecondWarn_Condition()
 
 func void Info_Mod_Straschiduo_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Straschiduo_SecondWarn_29_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i umrzesz!
+	AI_Output (self, hero,"Info_Mod_Straschiduo_SecondWarn_23_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i umrzesz!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Straschiduo_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -715,7 +715,7 @@ func void Info_Mod_Straschiduo_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Straschiduo_Attack_29_00"); //Poprosil pan o to.....
+	AI_Output (self, hero,"Info_Mod_Straschiduo_Attack_23_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

@@ -4,7 +4,7 @@ INSTANCE Mod_4027_NONE_Port_NW (Npc_Default)
 	name 		= "Port Johannes";
 	guild 		= GIL_OUT;
 	id 			= 4027;
-	voice 		= 1;
+	voice		= 0;
 	flags       = 0;																	
 	npctype		= NPCTYPE_MAIN;
 	

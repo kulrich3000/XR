@@ -1,7 +1,7 @@
 instance Mod_509_VLK_Spielleiter_EIS (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Spielleiter"; 
+	name 		= "quizman"; 
 	guild 		= GIL_OUT;
 	id 			= 509;
 	voice 		= 1;

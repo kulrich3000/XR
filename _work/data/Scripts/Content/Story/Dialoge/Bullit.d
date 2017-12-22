@@ -1,7 +1,7 @@
 FUNC VOID B_Say_HeroBullit_Batschen ()
 {
 	AI_Output(hero, self, "Info_Mod_Bullit_Batschen_15_00"); //Du sagst mir jetzt, was du weißt, oder du bekommst ein paar aufs Maul.
-	AI_Output(self, hero, "Info_Mod_Bullit_Batschen_06_01"); //Dann komm doch her!
+	AI_Output(self, hero, "Info_Mod_Bullit_Batschen_04_01"); //Dann komm doch her!
 
 	AI_StopProcessInfos	(self);
 
@@ -32,7 +32,7 @@ FUNC INT Info_Mod_Bullit_Dieb_Condition()
 FUNC VOID Info_Mod_Bullit_Dieb_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bullit_Dieb_15_00"); //i mysle, ze mial pan z tym cos wspólnego.
-	AI_Output(self, hero, "Info_Mod_Bullit_Dieb_06_01"); //Jestes facetem, do którego powitalem w kolonii. A ty mnie naladowales za kradziez teraz?
+	AI_Output(self, hero, "Info_Mod_Bullit_Dieb_04_01"); //Jestes facetem, do którego powitalem w kolonii. A ty mnie naladowales za kradziez teraz?
 
 	B_Say_HeroBullit_Batschen();
 };
@@ -61,7 +61,7 @@ FUNC INT Info_Mod_Bullit_Frage_Condition()
 FUNC VOID Info_Mod_Bullit_Frage_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bullit_Frage_15_00"); //Czy slyszales/as kradziez baronów?
-	AI_Output(self, hero, "Info_Mod_Bullit_Frage_06_01"); //Jestes facetem, do którego powitalem w kolonii. Dlaczego mam powiedziec ci o kradziezy?
+	AI_Output(self, hero, "Info_Mod_Bullit_Frage_04_01"); //Jestes facetem, do którego powitalem w kolonii. Dlaczego mam powiedziec ci o kradziezy?
 
 	B_Say_HeroBullit_Batschen();
 };
@@ -90,10 +90,10 @@ FUNC INT Info_Mod_Bullit_Dealer_Condition()
 FUNC VOID Info_Mod_Bullit_Dealer_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_00"); //Mal angenommen, ich will "wybredny" Waren kaufen: Wo müsste ich dann hingehen?
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_01"); //Jestes facetem, do którego powitalem w kolonii. Pytasz mnie o gorace rzeczy?
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_02"); //No cóz, spróbowalabym Fisk.
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_04_01"); //Jestes facetem, do którego powitalem w kolonii. Pytasz mnie o gorace rzeczy?
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_04_02"); //No cóz, spróbowalabym Fisk.
 	AI_Output(hero, self, "Info_Mod_Bullit_Dealer_15_03"); //Dobrze, spróbuje.
-	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_06_04"); //Dobrze, zrób to. Baw sie dobrze! (smiertelnicy)
+	AI_Output(self, hero, "Info_Mod_Bullit_Dealer_04_04"); //Dobrze, zrób to. Baw sie dobrze! (smiertelnicy)
 
 	Mod_PDV_Bullit_Infos = 1;
 
@@ -129,7 +129,7 @@ FUNC VOID Info_Mod_Bullit_Umgehauen_Info()
 	{
 		if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_LOST)
 		{
-			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_00"); //Wszystkie sluszne, wszystkie sluszne, wszystkie sluszne. Nie moge ci pomóc, ale chcialbym spróbowac Fisk.
+			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_04_00"); //Wszystkie sluszne, wszystkie sluszne, wszystkie sluszne. Nie moge ci pomóc, ale chcialbym spróbowac Fisk.
 
 			Mod_PDV_Bullit_Infos	=	1;
 
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Bullit_Umgehauen_Info()
 		}
 		else if (B_GetAivar(self, AIV_LastFightAgainstPlayer) == FIGHT_WON)
 		{
-			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_06_01"); //Ponownie nie mial pan zadnych szans. Teraz zgubic sie!
+			AI_Output(self, hero, "Info_Mod_Bullit_Umgehauen_04_01"); //Ponownie nie mial pan zadnych szans. Teraz zgubic sie!
 		};
 							
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -169,12 +169,12 @@ FUNC INT Info_Mod_Bullit_Crime_Condition()
 FUNC VOID Info_Mod_Bullit_Crime_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_00"); //Dlaczego rzucili cie w kolonie?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_01"); //Bo zawsze pomagalem ubogim ludziom w Myrtanie w ich pracy.
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_04_01"); //Bo zawsze pomagalem ubogim ludziom w Myrtanie w ich pracy.
 	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_02"); //Naprawde?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_03"); //Oczywiscie nie, idiota! Bylem bandyta, a potem zlapal mnie Lee, obecny przywódca najemników.
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_04"); //Od tamtej pory utknelam. A poniewaz bariera zniknela, nie moge nawet ochrzcic przybyszów.
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_04_03"); //Oczywiscie nie, idiota! Bylem bandyta, a potem zlapal mnie Lee, obecny przywódca najemników.
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_04_04"); //Od tamtej pory utknelam. A poniewaz bariera zniknela, nie moge nawet ochrzcic przybyszów.
 	AI_Output(hero, self, "Info_Mod_Bullit_Crime_15_05"); //Wiec walczysz z Lee?
-	AI_Output(self, hero, "Info_Mod_Bullit_Crime_06_06"); //W kazdym razie z mieczakiem.
+	AI_Output(self, hero, "Info_Mod_Bullit_Crime_04_06"); //W kazdym razie z mieczakiem.
 };
 
 INSTANCE Info_Mod_Bullit_EXIT (C_INFO)

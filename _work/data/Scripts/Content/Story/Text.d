@@ -1230,7 +1230,7 @@ const string Print_BlessAdanosMana_Hit			= "Czujesz, ze sie odrodziles.";
 const string Print_BlessAdanosNone				= "Adanos dziekuje za modlitwe.";
 
 const string Print_NotEnoughGold			= "Zbyt malo zlota.";
-const string Bless_Sword					= "Schwert weihen";
+const string Bless_Sword					= "poswiecic miecze";
 const string Bless_Sword2					= "Blogoslawiony miecz (Tears Innos)";
 
 const string Pray_Paladin1					= "... Innos, trzymaj ochronna dlon nad rywalami...." ;

@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Abuyin_Hi_Condition()
 
 FUNC VOID Info_Mod_Abuyin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_00"); //Obcy, przychodza do Abuyin w królestwie tysiaca zmyslów.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_01"); //Tutaj mozesz palic tyton i zdobywac nowe doswiadczenia.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_31_02"); //Wystarczy usiasc w jednej z rur wody i wybrac jeden z niezrównanych smaków.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_06_00"); //Obcy, przychodza do Abuyin w królestwie tysiaca zmyslów.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_06_01"); //Tutaj mozesz palic tyton i zdobywac nowe doswiadczenia.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Hi_06_02"); //Wystarczy usiasc w jednej z rur wody i wybrac jeden z niezrównanych smaków.
 };
 
 INSTANCE Info_Mod_Abuyin_NewTabak (C_INFO)
@@ -41,8 +41,8 @@ FUNC INT Info_Mod_Abuyin_NewTabak_Condition()
 
 FUNC VOID Info_Mod_Abuyin_NewTabak_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_00"); //Syn przeznaczenia, bedziesz zainteresowany, aby uslyszec, ze moja oferta jest rozszerzona.
-	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_31_01"); //Zrób sobie przerwe i ciesz sie nowym tytoniem z odleglej Varant.
+	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_06_00"); //Syn przeznaczenia, bedziesz zainteresowany, aby uslyszec, ze moja oferta jest rozszerzona.
+	AI_Output(self, hero, "Info_Mod_Abuyin_NewTabak_06_01"); //Zrób sobie przerwe i ciesz sie nowym tytoniem z odleglej Varant.
 };
 
 INSTANCE Info_Mod_Abuyin_Flugblaetter (C_INFO)
@@ -74,8 +74,8 @@ FUNC VOID Info_Mod_Abuyin_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_01"); //Spodziewalem sie, ze przyjdziesz.
-	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_31_02"); //Moze zatrzymam sie przy Matteo' s.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_06_01"); //Spodziewalem sie, ze przyjdziesz.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Flugblaetter_06_02"); //Moze zatrzymam sie przy Matteo' s.
 
 	Mod_Flugblaetter += 1;
 };
@@ -106,9 +106,9 @@ FUNC INT Info_Mod_Abuyin_Plagenquest_Condition()
 FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_00"); //Masz silny tyton? I nie mam na mysli tytoniu jablkowego....
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_01"); //Tak, jestem tez w posiadaniu takiego syna Okolicznosci, jesli poczujesz przyjemnosc pózniej.....
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_01"); //Tak, jestem tez w posiadaniu takiego syna Okolicznosci, jesli poczujesz przyjemnosc pózniej.....
 	AI_Output(hero, self, "Info_Mod_Abuyin_Plagenquest_15_02"); //Ile kosztuja dwie porcje tego tytoniu?
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_03"); //100 zlotych monet. Ale wiem jednak, ze z przyjemnoscia zaplacicie te kwote.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_03"); //100 zlotych monet. Ale wiem jednak, ze z przyjemnoscia zaplacicie te kwote.
 
 	if (Mod_Verhandlungsgeschick > 0)
 	{
@@ -116,8 +116,8 @@ FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 
 		if (self.aivar[AIV_Verhandlung] == TRUE)
 		{
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_05"); //Czy powiedzialem 100 zlotych monet? Mówilem oczywiscie o 50.
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_06"); //Abuyin nigdy sie nie myli.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_05"); //Czy powiedzialem 100 zlotych monet? Mówilem oczywiscie o 50.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_06"); //Abuyin nigdy sie nie myli.
 
 			B_GiveInvItems	(hero, self, ItMi_Gold, 50);
 
@@ -125,7 +125,7 @@ FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 		}
 		else
 		{
-			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_07"); //Oczywiscie nie.
+			AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_07"); //Oczywiscie nie.
 
 			B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 		};
@@ -137,7 +137,7 @@ FUNC VOID Info_Mod_Abuyin_Plagenquest_Info()
 		B_GiveInvItems	(hero, self, ItMi_Gold, 100);
 	};
 
-	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_31_09"); //Tutaj jestes.
+	AI_Output(self, hero, "Info_Mod_Abuyin_Plagenquest_06_09"); //Tutaj jestes.
 
 	B_GiveInvItems	(self, hero, ItMi_StarkerTabak, 2);
 };

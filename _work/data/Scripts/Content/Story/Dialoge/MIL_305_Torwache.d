@@ -44,10 +44,10 @@ FUNC INT Info_Mod_Engor_PassAsCitizen_Condition()
 FUNC VOID Info_Mod_Engor_PassAsCitizen_Info()
 {
 	AI_Output (hero, self, "Info_Mod_Engor_PassAsCitizen_15_00"); //Jestem teraz obywatelem miasta. Czy moge przejsc?
-	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_03_01"); //Zadne prawo nie zabrania tego.
-	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_03_02"); //Uwazaj jednak: jesli zaatakujesz obcy majatek lub dzwiek, odwet bedzie delikatny.
-	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_03_03"); //Ci, którzy mieszkaja w górnym okregu maja zazwyczaj wystarczajaco duzy wplyw, aby zapewnic, ze nie zostana ukarani grzywna.
-	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_03_04"); //Teraz wejdz do salonu!
+	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_09_01"); //Zadne prawo nie zabrania tego.
+	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_09_02"); //Uwazaj jednak: jesli zaatakujesz obcy majatek lub dzwiek, odwet bedzie delikatny.
+	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_09_03"); //Ci, którzy mieszkaja w górnym okregu maja zazwyczaj wystarczajaco duzy wplyw, aby zapewnic, ze nie zostana ukarani grzywna.
+	AI_Output (self, hero, "Info_Mod_Engor_PassAsCitizen_09_04"); //Teraz wejdz do salonu!
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -107,33 +107,33 @@ func int Info_Mod_Engor_FirstWarn_Condition()
 
 func void Info_Mod_Engor_FirstWarn_Info()
 {
-	AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_00"); //HALT!
+	AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_00"); //HALT!
 
 	// ------ PETZMASTER LIGHT und Personal CRIMES -------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_01"); //Chcesz byc w miescie za morderstwo! Nie moge wpuscic cie do górnej dzielnicy, dopóki ta sprawa nie zostanie zalatwiona.
+			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_01"); //Chcesz byc w miescie za morderstwo! Nie moge wpuscic cie do górnej dzielnicy, dopóki ta sprawa nie zostanie zalatwiona.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_02"); //Dopóki masz naladowany ladunek kradziezy, nie mozesz isc na góre!
+			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_02"); //Dopóki masz naladowany ladunek kradziezy, nie mozesz isc na góre!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_03"); //Nie moge wpuscic takiego awanturnika jak ty do górnej dzielnicy.
+			AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_03"); //Nie moge wpuscic takiego awanturnika jak ty do górnej dzielnicy.
 		};
 	
-		AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_04"); //Idzcie do Pana Andre i zalatwiajcie to!
+		AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_04"); //Idzcie do Pana Andre i zalatwiajcie to!
 	}
 	
 	// ------ normales Reinkommen ------
 	else 
 	{
-		AI_Output (self, other,"Info_Mod_Engor_FirstWarn_03_05"); //Górna dzielnice wkraczaja tylko mieszkancy miasta i wojska królewskie!
+		AI_Output (self, other,"Info_Mod_Engor_FirstWarn_09_05"); //Górna dzielnice wkraczaja tylko mieszkancy miasta i wojska królewskie!
 	};
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_305_Checkpoint);
@@ -167,7 +167,7 @@ FUNC INT Info_Mod_Engor_SecondWarn_Condition()
 
 func void Info_Mod_Engor_SecondWarn_Info()
 {
-	AI_Output (self, other,"Info_Mod_Engor_SecondWarn_03_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
+	AI_Output (self, other,"Info_Mod_Engor_SecondWarn_09_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_305_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -205,7 +205,7 @@ func void Info_Mod_Engor_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"Info_Mod_Engor_Attack_03_00"); //Poprosil pan o to.....
+	AI_Output (self, other,"Info_Mod_Engor_Attack_09_00"); //Poprosil pan o to.....
 	AI_StopProcessInfos	(self);	
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
 };
@@ -230,10 +230,10 @@ FUNC INT Info_Mod_Engor_ToHagen_Condition()
 
 func void Info_Mod_Engor_ToHagen_Info()
 {
-	AI_Output (self, other,"Info_Mod_Engor_ToHagen_03_00"); //Zatrzymaj sie!
-	AI_Output (self, other,"Info_Mod_Engor_ToHagen_03_01"); //Obywatel Bodo powiedzial nam, ze jestes pozadanym bandyta Minentala.
+	AI_Output (self, other,"Info_Mod_Engor_ToHagen_09_00"); //Zatrzymaj sie!
+	AI_Output (self, other,"Info_Mod_Engor_ToHagen_09_01"); //Obywatel Bodo powiedzial nam, ze jestes pozadanym bandyta Minentala.
 	AI_Output (hero, self,"Info_Mod_Engor_ToHagen_15_02"); //Co? Mam wazna prosbe o Paladynów. Idz do Lord Hagen i powiedz mu, ze Alissandro mnie poslal, zobaczy mnie bezpiecznie.
-	AI_Output (self, other,"Info_Mod_Engor_ToHagen_03_03"); //Och, nie, ja tego nie robie. Jestes potrzebny na nakaz, znajomy i dlatego przychodzisz ze mna.
+	AI_Output (self, other,"Info_Mod_Engor_ToHagen_09_03"); //Och, nie, ja tego nie robie. Jestes potrzebny na nakaz, znajomy i dlatego przychodzisz ze mna.
 
 	AI_StopProcessInfos	(self);	
 
@@ -275,8 +275,8 @@ func int Info_Mod_Engor_Ausnahme_Condition ()
 func void Info_Mod_Engor_Ausnahme_Info ()
 {
 	AI_Output (other, self, "Info_Mod_Engor_Ausnahme_15_00"); //Czy nie mozemy zrobic wyjatku?
-	AI_Output (self, other, "Info_Mod_Engor_Ausnahme_03_01"); //Co? W tym miescie obowiazuja zasady! Zasady, które obowiazuja wszystkich bez wyjatku!
-	AI_Output (self, other, "Info_Mod_Engor_Ausnahme_03_02"); //Jezeli zlamiemy te zasady, bedziemy postepowac niesprawiedliwie wobec wszystkich tych, którzy ich przestrzegaja.
+	AI_Output (self, other, "Info_Mod_Engor_Ausnahme_09_01"); //Co? W tym miescie obowiazuja zasady! Zasady, które obowiazuja wszystkich bez wyjatku!
+	AI_Output (self, other, "Info_Mod_Engor_Ausnahme_09_02"); //Jezeli zlamiemy te zasady, bedziemy postepowac niesprawiedliwie wobec wszystkich tych, którzy ich przestrzegaja.
 };	
 
 INSTANCE Info_Mod_Engor_PERM (C_INFO)
@@ -304,19 +304,19 @@ FUNC VOID Info_Mod_Engor_PERM_Info()
 	
 	if (other.guild == GIL_PAL) 
 	{
-		AI_Output (self, other,"Info_Mod_Engor_PERM_03_01"); //To wszystko jest w porzadku, towarzysz!
+		AI_Output (self, other,"Info_Mod_Engor_PERM_09_01"); //To wszystko jest w porzadku, towarzysz!
 	}
 	else if (other.guild == GIL_VLK)
 	{
-		AI_Output (self, other,"Info_Mod_Engor_PERM_03_02"); //Tutaj po prostu wykonujemy swój obowiazek. Dziekuje za zwrócenie uwagi na mnie, ulubiencie!
+		AI_Output (self, other,"Info_Mod_Engor_PERM_09_02"); //Tutaj po prostu wykonujemy swój obowiazek. Dziekuje za zwrócenie uwagi na mnie, ulubiencie!
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other,"Info_Mod_Engor_PERM_03_03"); //Musze Cie wpuscic, ale nie musze z Toba rozmawiac!
+		AI_Output (self, other,"Info_Mod_Engor_PERM_09_03"); //Musze Cie wpuscic, ale nie musze z Toba rozmawiac!
 	}
 	else //GIL_None 
 	{
-		AI_Output (self, other,"Info_Mod_Engor_PERM_03_04"); //Czego chcesz?
+		AI_Output (self, other,"Info_Mod_Engor_PERM_09_04"); //Czego chcesz?
 	};
 	
 	AI_StopProcessInfos	(self);

@@ -17,10 +17,10 @@ FUNC INT Info_Mod_Bibliothekar_Hi_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_00"); //Jakie masz ksiazki?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_01"); //(Absent) Historia panstwa sadu, czesc 1, Historia panstwa sadu, czesc 2, Historia panstwa sadu, czesc 3, Historia panstwa trybunalu, czesc 3, Historia panstwa sadu, czesc 2.....
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_01"); //(Absent) Historia panstwa sadu, czesc 1, Historia panstwa sadu, czesc 2, Historia panstwa sadu, czesc 3, Historia panstwa trybunalu, czesc 3, Historia panstwa sadu, czesc 2.....
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Hi_15_02"); //Widze, ekscytujace czytanie nocne.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_03"); //Tak, tak, tak, tak, tak. 101 ziolowych receptur dla starszej matki, która ja pozyczyla? Po prawej, Regina.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_01_04"); //Czy jest jeszcze cos, co moge dla Ciebie zrobic?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_03"); //Tak, tak, tak, tak, tak. 101 ziolowych receptur dla starszej matki, która ja pozyczyla? Po prawej, Regina.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Hi_11_04"); //Czy jest jeszcze cos, co moge dla Ciebie zrobic?
 };
 
 INSTANCE Info_Mod_Bibliothekar_Ausleihen (C_INFO)
@@ -42,7 +42,7 @@ FUNC INT Info_Mod_Bibliothekar_Ausleihen_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Ausleihen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Ausleihen_15_00"); //Czy moge wypozyczyc ksiazki?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_01_01"); //Zdejmij mi rece!
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Ausleihen_11_01"); //Zdejmij mi rece!
 };
 
 INSTANCE Info_Mod_Bibliothekar_Buerger (C_INFO)
@@ -67,15 +67,15 @@ FUNC INT Info_Mod_Bibliothekar_Buerger_Condition()
 FUNC VOID Info_Mod_Bibliothekar_Buerger_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_00"); //Masz ksiazke o poczatkach khoraty?
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_01"); //Tak, naprawde bardzo ladna pogoda na zewnatrz.....
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_02"); //W jaki sposób? Ktos pyta mnie o ksiazke?
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_01"); //Tak, naprawde bardzo ladna pogoda na zewnatrz.....
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_02"); //W jaki sposób? Ktos pyta mnie o ksiazke?
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_03"); //Tak, rzeczywiscie.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_04"); //Musze sie nad tym zastanowic.
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_05"); //Powinnas byc w stanie z tym pracowac. Mam go dwukrotnie, wiec zachowaj spokój.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_04"); //Musze sie nad tym zastanowic.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_05"); //Powinnas byc w stanie z tym pracowac. Mam go dwukrotnie, wiec zachowaj spokój.
 
 	B_GiveInvItems	(self, hero, ItWr_KhorataGeschichte, 1);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_01_06"); //A jesli jestes zainteresowany, po prostu przyjdz!
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Buerger_11_06"); //A jesli jestes zainteresowany, po prostu przyjdz!
 	AI_Output(hero, self, "Info_Mod_Bibliothekar_Buerger_15_07"); //Bede o tym pamietac. Dzieki.
 };
 
@@ -99,8 +99,8 @@ FUNC INT Info_Mod_Bibliothekar_Glorie_Condition()
 
 FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_00"); //Gdzie to pieklo zrobilem, zostawiam te cholerna rzecz....
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_01"); //Jestes tym samym? Prosze mi wybaczyc, spiesze sie.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_00"); //Gdzie to pieklo zrobilem, zostawiam te cholerna rzecz....
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_01"); //Jestes tym samym? Prosze mi wybaczyc, spiesze sie.
 
 	AI_GotoWP	(self, "REL_CITY_150");
 
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Bibliothekar_Glorie_Info()
 
 	AI_TurnToNpc	(self, hero);
 
-	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_01_02"); //Oto jestes, panie posle.
+	AI_Output(self, hero, "Info_Mod_Bibliothekar_Glorie_11_02"); //Oto jestes, panie posle.
 
 	B_GiveInvItems	(self, hero, ItWr_DiebDokumente, 1);
 

@@ -4,7 +4,7 @@ instance Mod_7198_HEX_AttraktiveFrau_NW (Npc_Default)
 	name 		= "Atrakcyjna kobieta";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7198;
-	voice 		= 17;
+	voice		= 21;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

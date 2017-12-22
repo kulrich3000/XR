@@ -20,7 +20,7 @@ FUNC INT Info_Mod_Gardist_Zuflucht_01_Hi_Condition()
 FUNC VOID Info_Mod_Gardist_Zuflucht_01_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Gardist_Zuflucht_01_Hi_15_00"); //Alissandro wyslal mnie do obozu kultowego.
-	AI_Output(self, hero, "Info_Mod_Gardist_Zuflucht_01_Hi_13_01"); //Dobrze, od razu bede w drodze.
+	AI_Output(self, hero, "Info_Mod_Gardist_Zuflucht_01_Hi_01_01"); //Dobrze, od razu bede w drodze.
 
 	B_StartOtherRoutine	(self, "PSICAMP");
 

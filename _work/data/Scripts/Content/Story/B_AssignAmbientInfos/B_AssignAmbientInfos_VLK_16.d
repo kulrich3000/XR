@@ -43,9 +43,9 @@ FUNC INT DIA_VLK_16_JOIN_Condition()
 
 FUNC VOID DIA_VLK_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_JOIN_15_00"); //Chce byc mieszkancem tego miasta!
-	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_01"); //Chcesz pomóc nam obronic miasto przed orkami?
-	AI_Output (self, hero, "DIA_VLK_16_JOIN_16_02"); //Jesli jestes obywatelem Khorinis, mozesz dolaczyc do milicji - powinienes porozmawiac z jednym z strazników miasta.
+	AI_Output (hero, self, "DIA_VLK_43_JOIN_15_00"); //Chce byc mieszkancem tego miasta!
+	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_01"); //Chcesz pomóc nam obronic miasto przed orkami?
+	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_02"); //Jesli jestes obywatelem Khorinis, mozesz dolaczyc do milicji - powinienes porozmawiac z jednym z strazników miasta.
 };
 
 // *************************************************************************
@@ -67,8 +67,8 @@ FUNC INT DIA_VLK_16_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_16_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_PEOPLE_15_00"); //Kim sa wazne osobowosci tego miasta?
-	AI_Output (self, hero, "DIA_VLK_16_PEOPLE_16_01"); //Paladyny w górnej cwiartce.
+	AI_Output (hero, self, "DIA_VLK_43_PEOPLE_15_00"); //Kim sa wazne osobowosci tego miasta?
+	AI_Output (self, hero, "DIA_VLK_43_PEOPLE_43_01"); //Paladyny w górnej cwiartce.
 };
 
 INSTANCE Info_VLK_16_Flugblaetter (C_INFO) // E1
@@ -97,11 +97,11 @@ FUNC VOID Info_VLK_16_Flugblaetter_Info()
 
 	B_GiveInvItems	(hero, self, MatteoFlugblaetter, 1);
 
-	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
+	AI_Output(self, hero, "Info_Mod_VLK_43_Flugblaetter_43_01"); //Dziekuje, dziekuje. Zobaczmy jak.....
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_VLK_16_Flugblaetter_16_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
+	AI_Output(self, hero, "Info_Mod_VLK_43_Flugblaetter_43_02"); //Ah tak. Moze zatrzymam sie przy Matteo' s.
 
 	self.aivar[AIV_FLUGBLATTVERTEILT] = 1;
 
@@ -120,10 +120,10 @@ INSTANCE Info_VLK_16_Rangar (C_INFO) // E1
 FUNC INT Info_VLK_16_Rangar_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Den_Problem))
-	&& (!Npc_KnowsInfo(hero, Info_VLK_1_Rangar))
+	&& (!Npc_KnowsInfo(hero, Info_VLK_19_Rangar))
 	&& (!Npc_KnowsInfo(hero, Info_VLK_6_Rangar))
 	&& (!Npc_KnowsInfo(hero, Info_VLK_8_Rangar))
-	&& (!Npc_KnowsInfo(hero, Info_VLK_17_Rangar))
+	&& (!Npc_KnowsInfo(hero, Info_VLK_21_Rangar))
 	&& (Mod_DenVerpfiffen == 0)
 	&& (!Npc_KnowsInfo(hero, Info_Mod_Andre_Rangar))
 	{
@@ -133,10 +133,10 @@ FUNC INT Info_VLK_16_Rangar_Condition()
 
 FUNC VOID Info_VLK_16_Rangar_Info()
 {
-	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_00"); //Czy wiedziales, ze Rangar ma romans?
-	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_01"); //Naprawde? Z kim?
-	AI_Output(hero, self, "Info_Mod_VLK_16_Rangar_15_02"); //Z jedna z dziewczyn Bromora!
-	AI_Output(self, hero, "Info_Mod_VLK_16_Rangar_16_03"); //Czy jestes pewien tego? Bede musial od razu isc dalej.
+	AI_Output(hero, self, "Info_Mod_VLK_43_Rangar_15_00"); //Czy wiedziales, ze Rangar ma romans?
+	AI_Output(self, hero, "Info_Mod_VLK_43_Rangar_43_01"); //Naprawde? Z kim?
+	AI_Output(hero, self, "Info_Mod_VLK_43_Rangar_15_02"); //Z jedna z dziewczyn Bromora!
+	AI_Output(self, hero, "Info_Mod_VLK_43_Rangar_43_03"); //Czy jestes pewien tego? Bede musial od razu isc dalej.
 
 	Mod_DensGeruechtVerbreitet = TRUE;
 
@@ -162,8 +162,8 @@ FUNC INT DIA_VLK_16_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_16_LOCATION_15_00"); //Co tu widzimy?
-	AI_Output (self, hero, "DIA_VLK_16_LOCATION_16_01"); //Na rynku mozna zobaczyc wszystkie rodzaje towarów.
+	AI_Output (hero, self, "DIA_VLK_43_LOCATION_15_00"); //Co tu widzimy?
+	AI_Output (self, hero, "DIA_VLK_43_LOCATION_43_01"); //Na rynku mozna zobaczyc wszystkie rodzaje towarów.
 };
 
 INSTANCE Info_Mod_VLK_16_Pickpocket (C_INFO)

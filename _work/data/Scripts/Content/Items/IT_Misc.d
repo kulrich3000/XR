@@ -2481,7 +2481,7 @@ INSTANCE ItMi_JackalTabak_13 (C_Item)//steht drin, weil auch in Welt verteilt!!
 
 INSTANCE ItMi_Piratenschatz(C_Item)//steht drin, weil auch in Welt verteilt!!
 {
-	name 				=	"Piratenschatz";
+	name 				=	"skarb pirata";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -2493,8 +2493,8 @@ INSTANCE ItMi_Piratenschatz(C_Item)//steht drin, weil auch in Welt verteilt!!
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UsePiratenschatz;
 	description			= 	name;
-	TEXT[2]				= 	"Ein Schatz";
-	TEXT[3]				=   "Unter dem Wasserfall in Relendel gefunden";
+	TEXT[2]				= 	"Skarb";
+	TEXT[3]				=   "Znaleziony pod wodospadem w Relendel.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 

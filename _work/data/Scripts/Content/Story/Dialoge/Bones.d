@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Bones_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Bones_Hi_01_01"); //Jestem Kosci. Wszystko inne jest wazne?
+	AI_Output(self, hero, "Info_Mod_Bones_Hi_04_01"); //Jestem Kosci. Wszystko inne jest wazne?
 };
 
 INSTANCE Info_Mod_Bones_Irdorath (C_INFO)
@@ -46,21 +46,21 @@ FUNC VOID Info_Mod_Bones_Irdorath_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_00"); //Planuje wycieczke statkiem Paladina.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_01"); //Idzie na wyspe magika Xeres.....
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_02"); //Co to z mna trzeba zrobic?
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_02"); //Co to z mna trzeba zrobic?
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_03"); //Mozesz dolaczyc do mojego zespolu.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_04"); //Jest cos do zdobycia, a Greg nie bedzie mial nic przeciwko temu.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_05"); //Och, to jest tak, ze tak.... No cóz, um, dlaczego nie....
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_06"); //Mam tylko jeden warunek....
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_05"); //Och, to jest tak, ze tak.... No cóz, um, dlaczego nie....
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_06"); //Mam tylko jeden warunek....
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_07"); //No cóz, to bylo oczywiste.... Czego chcesz?
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_08"); //Kobiety!
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_08"); //Kobiety!
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_09"); //Jak?
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_10"); //Cóz, zdjecia kobiet na pokladzie.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_11"); //Statek Paladyn jest zakotwiczony w miescie portowym.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_12"); //Jestem pewien, ze mozesz mnie zabrac na wycieczke.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_13"); //(lüstern) Wäre doch sonst langweilig ... solange auf See und dann nicht mal Schiffe mit "odkrywka" zum Entern.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_14"); //Musisz miec przy sobie wszystko, czego potrzebujesz.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_10"); //Cóz, zdjecia kobiet na pokladzie.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_11"); //Statek Paladyn jest zakotwiczony w miescie portowym.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_12"); //Jestem pewien, ze mozesz mnie zabrac na wycieczke.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_13"); //(lüstern) Wäre doch sonst langweilig ... solange auf See und dann nicht mal Schiffe mit "odkrywka" zum Entern.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_14"); //Musisz miec przy sobie wszystko, czego potrzebujesz.
 	AI_Output(hero, self, "Info_Mod_Bones_Irdorath_15_15"); //Um.... Zobacze, co moge zrobic.
-	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_01_16"); //Jade do portu. I biada sie zalozyc, ze nie organizowales zadnych kobiet dopóki nie opusciles.
+	AI_Output(self, hero, "Info_Mod_Bones_Irdorath_04_16"); //Jade do portu. I biada sie zalozyc, ze nie organizowales zadnych kobiet dopóki nie opusciles.
 
 	B_LogEntry	(TOPIC_MOD_HQ_CREW, "Oh czlowiek. Teraz mam poprosic Koscioly, by towarzyszyly nam w podrózy powazne kobiety. Hmm, gdzie moge znalezc kobiety, które bylyby wystarczajaco ciezkie, aby wyruszyc w morska podróz z niebezpiecznymi przygódami, a nastepnie z Kosciami na pokladzie......");
 
@@ -96,15 +96,15 @@ FUNC INT Info_Mod_Bones_Befreiung_Condition()
 FUNC VOID Info_Mod_Bones_Befreiung_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_00"); //Co to sa wiadomosci?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_01"); //Moja siekiera zniknela, to juz nie ma!
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_01"); //Moja siekiera zniknela, to juz nie ma!
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_02"); //Jak do tego doszlo?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_03"); //Atak byl rój z nieumarlymi wojownikami. Zostalem zburzony i ta paczka wziela moja siekiere.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_03"); //Atak byl rój z nieumarlymi wojownikami. Zostalem zburzony i ta paczka wziela moja siekiere.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_04"); //Gdzie poszli ci mezczyzni?
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_05"); //Nie wiem o tym. Ale kilku z nich poszlo do kabiny Greg, kiedy zdali sobie sprawe, ze ich liczba jest wieksza. Sa na górze.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_05"); //Nie wiem o tym. Ale kilku z nich poszlo do kabiny Greg, kiedy zdali sobie sprawe, ze ich liczba jest wieksza. Sa na górze.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_06"); //Rozejrze sie dookola.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_07"); //Chcesz mi pomóc?
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_07"); //Chcesz mi pomóc?
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung_15_08"); //Tak.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_01_09"); //Dziekuje wam, ale prosze spieszyc sie.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung_04_09"); //Dziekuje wam, ale prosze spieszyc sie.
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_PIRBONES, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_PIRBONES, LOG_RUNNING);
@@ -150,9 +150,9 @@ FUNC VOID Info_Mod_Bones_Befreiung2_Info()
 
 	AI_DrawWeapon	(self);
 
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_01_01"); //(zadowolony) Dziekuje. Mozesz powiedziec Gregowi, ze jestem gotów znów walczyc.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_04_01"); //(zadowolony) Dziekuje. Mozesz powiedziec Gregowi, ze jestem gotów znów walczyc.
 	AI_Output(hero, self, "Info_Mod_Bones_Befreiung2_15_02"); //Wszystko jasne.
-	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_01_03"); //Tutaj wez te dwie butelki grog i ten szybki sledz.
+	AI_Output(self, hero, "Info_Mod_Bones_Befreiung2_04_03"); //Tutaj wez te dwie butelki grog i ten szybki sledz.
 
 	B_ShowGivenThings	("2 Konserwowane sledzie scierne i szybkie");
 
@@ -189,7 +189,7 @@ FUNC INT Info_Mod_Bones_Beerdigung_Condition()
 
 FUNC VOID Info_Mod_Bones_Beerdigung_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bones_Beerdigung_01_00"); //A co tam zjesc?
+	AI_Output(self, hero, "Info_Mod_Bones_Beerdigung_04_00"); //A co tam zjesc?
 
 	AI_StopProcessInfos	(self);
 };

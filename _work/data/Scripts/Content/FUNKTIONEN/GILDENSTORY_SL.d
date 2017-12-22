@@ -19,7 +19,7 @@ FUNC VOID GILDENSTORY_SL()
 			{
 				AI_TurnToNpc	(Mod_7011_HS_Alex_REL, hero);
 
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_00"); //Zatrzymaj sie!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_00"); //Zatrzymaj sie!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 5)
@@ -34,7 +34,7 @@ FUNC VOID GILDENSTORY_SL()
 			{
 				AI_TurnToNpc	(Mod_7011_HS_Alex_REL, hero);
 
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_02"); //W dól!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_02"); //W dól!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 15)
@@ -44,7 +44,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 20)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_04"); //Nie mozesz powiedziec? Kopie!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_04"); //Nie mozesz powiedziec? Kopie!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 25)
@@ -54,7 +54,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 30)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_06"); //Jop.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_06"); //Jop.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 35)
@@ -64,7 +64,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 40)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_08"); //Cóz, jestem królewskim grobowcem.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_08"); //Cóz, jestem królewskim grobowcem.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 45)
@@ -74,7 +74,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 50)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_10"); //Royal Punch!
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_10"); //Royal Punch!
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 55)
@@ -84,7 +84,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 60)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_12"); //Jak widac, dziura jest tutaj bardzo gleboka.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_12"); //Jak widac, dziura jest tutaj bardzo gleboka.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 65)
@@ -94,7 +94,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 70)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_14"); //Nie.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_14"); //Nie.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 75)
@@ -104,7 +104,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 80)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_16"); //Chcialem tylko pokazac wam moja dziure.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_16"); //Chcialem tylko pokazac wam moja dziure.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 85)
@@ -114,7 +114,7 @@ FUNC VOID GILDENSTORY_SL()
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 90)
 			{
-				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_08_18"); //Do zobaczenia pózniej.
+				AI_Output(Mod_7011_HS_Alex_REL, NULL, "Info_Mod_Alex_Hofstaat_Intro_01_18"); //Do zobaczenia pózniej.
 			};
 
 			if (Mod_Hofstaat_Alex_Intro_Counter == 95)
@@ -326,7 +326,7 @@ FUNC VOID GILDENSTORY_SL()
 		&& (!Npc_IsInState(Mod_7330_Meer_HAL, ZS_Talk))
 		{
 			AI_Teleport	(hero, "HALU_04");
-			Spine_OverallSaveSetInt("Hallusz", 1);
+			Spine_OverallSaveSetInt("HalluHS", 1);
 			CheckHalluAchievement();
 		};
 	};

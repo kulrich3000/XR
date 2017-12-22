@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Gardist2_Hi_Condition()
 
 FUNC VOID Info_Mod_Gardist2_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gardist2_Hi_13_00"); //Ha, wiedzialem, ze wiedzialam, ze puszczanie szczurów wróci do miejsca, w którym zlapalismy starego mezczyzne.
+	AI_Output(self, hero, "Info_Mod_Gardist2_Hi_08_00"); //Ha, wiedzialem, ze wiedzialam, ze puszczanie szczurów wróci do miejsca, w którym zlapalismy starego mezczyzne.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -44,7 +44,7 @@ FUNC INT Info_Mod_Gardist2_Jackal_Condition()
 
 FUNC VOID Info_Mod_Gardist2_Jackal_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gardist2_Jackal_13_00"); //Tak, a ja zrobie to z wami i wezme te nagrode, poniewaz Bartholo chcial publicznie wykonac egzekucje Alissandro osobiscie, moge zajac sie wami.
+	AI_Output(self, hero, "Info_Mod_Gardist2_Jackal_08_00"); //Tak, a ja zrobie to z wami i wezme te nagrode, poniewaz Bartholo chcial publicznie wykonac egzekucje Alissandro osobiscie, moge zajac sie wami.
 	
 	AI_StopProcessInfos	(self);
 

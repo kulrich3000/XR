@@ -186,6 +186,10 @@ FUNC VOID EVT_STEINSCRIPT05_S0 ()
 
 					Wld_SendTrigger	("EVT_RAETSELWAND_CAM");
 					Wld_SendTrigger	("EVT_RAETSELSTEINWAND");
+				} else if (Mod_JG_Raetselstein_Counter == 2) {
+					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "Raz w porzadku. Ale to nie wydaje sie wystarczajace.....");
+				} else if (Mod_JG_Raetselstein_Counter == 3) {
+					B_LogEntry	(TOPIC_MOD_JG_RAETSELWAND, "Nadal nie ma racji....");
 				};
 			}
 			else

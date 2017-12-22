@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Neoras_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Neoras_Hi_01_01"); //Jestem Neoraszem, mistrzem eliksirów.
+	AI_Output(self, hero, "Info_Mod_Neoras_Hi_04_01"); //Jestem Neoraszem, mistrzem eliksirów.
 };
 
 INSTANCE Info_Mod_Neoras_Aufgabe (C_INFO)
@@ -44,7 +44,7 @@ FUNC INT Info_Mod_Neoras_Aufgabe_Condition()
 FUNC VOID Info_Mod_Neoras_Aufgabe_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Neoras_Aufgabe_15_00"); //Czy moge Ci pomóc?
-	AI_Output(self, hero, "Info_Mod_Neoras_Aufgabe_01_01"); //Nie potrzebuje zadnej pomocy. Idz do innych magów, byc moze maja dla Ciebie cos do zrobienia.
+	AI_Output(self, hero, "Info_Mod_Neoras_Aufgabe_04_01"); //Nie potrzebuje zadnej pomocy. Idz do innych magów, byc moze maja dla Ciebie cos do zrobienia.
 };
 
 INSTANCE Info_Mod_Neoras_HabTrank (C_INFO)
@@ -74,9 +74,9 @@ FUNC VOID Info_Mod_Neoras_HabTrank_Info()
 
 	B_GiveInvItems	(hero, self, NeorasTrankVonMilten, 1);
 
-	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_01"); //Na ten eliksir dlugo czekalem. Gdzie otrzymasz?
+	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_04_01"); //Na ten eliksir dlugo czekalem. Gdzie otrzymasz?
 	AI_Output(hero, self, "Info_Mod_Neoras_HabTrank_15_02"); //Pomagalem Miltenowi w jego produkcji.
-	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_01_03"); //Udowodniles mi, ze jestes godzien zostac nowicjuszem. Wez to zloto jako nagrode.
+	AI_Output(self, hero, "Info_Mod_Neoras_HabTrank_04_03"); //Udowodniles mi, ze jestes godzien zostac nowicjuszem. Wez to zloto jako nagrode.
 
 	B_LogEntry_More	(TOPIC_MOD_FEUERMAGIER, TOPIC_MOD_NEORAS_TRANK, "Neoras uwaza, ze warto byc nowicjuszem.", "Przywiózlem eliksir do Neorasa.");
 	B_SetTopicStatus	(TOPIC_MOd_NEORAS_TRANK, LOG_SUCCESS);
@@ -109,19 +109,19 @@ FUNC INT Info_Mod_Neoras_Mitgift_Condition()
 
 FUNC VOID Info_Mod_Neoras_Mitgift_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_00"); //Jestes nowicjuszem, który przyniósl mi ten eliksir.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_01"); //Moge miec kolejne zadanie dla kogos z twoimi umiejetnosciami.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_00"); //Jestes nowicjuszem, który przyniósl mi ten eliksir.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_01"); //Moge miec kolejne zadanie dla kogos z twoimi umiejetnosciami.
 	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_02"); //Jestem uszy.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_03"); //Jak zapewne zauwazyliscie, produkujemy tu w klasztorze antidotum.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_04"); //Jest to konieczne, poniewaz jest tam duzo trujacych zwierzat i roslin.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_03"); //Jak zapewne zauwazyliscie, produkujemy tu w klasztorze antidotum.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_04"); //Jest to konieczne, poniewaz jest tam duzo trujacych zwierzat i roslin.
 	AI_Output(hero, self, "Info_Mod_Neoras_Mitgift_15_05"); //Tak, zapoznalem sie juz z nia.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_06"); //Dokladnie. Rozumiesz wiec jego cel, jak dotad bardzo dobrze.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_07"); //Ostatnio jednak w Khorini coraz wiecej osób umiera z powodu powaznych zatruc.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_08"); //Nie byly one jednak spowodowane przez zwierzeta czy rosliny, ale przez bron stworzona przez czlowieka.... Wiecej Miecze i strzalki.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_09"); //
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_10"); //Wydaje sie, ze w tym celu uzywaja szczególnie skoncentrowanych toksyn.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_11"); //Chcialbym teraz poprosic o butelke trucizny zwierzecej i roslinnej, aby zintensyfikowac badania w tej dziedzinie.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_01_12"); //Najlepszym sposobem na to jest wizyta u alchemików lub zielarzy. Móglbys tam znalezc, gdybys mial szczescie.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_06"); //Dokladnie. Rozumiesz wiec jego cel, jak dotad bardzo dobrze.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_07"); //Ostatnio jednak w Khorini coraz wiecej osób umiera z powodu powaznych zatruc.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_08"); //Nie byly one jednak spowodowane przez zwierzeta czy rosliny, ale przez bron stworzona przez czlowieka.... Wiecej Miecze i strzalki.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_09"); //
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_10"); //Wydaje sie, ze w tym celu uzywaja szczególnie skoncentrowanych toksyn.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_11"); //Chcialbym teraz poprosic o butelke trucizny zwierzecej i roslinnej, aby zintensyfikowac badania w tej dziedzinie.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_12"); //Najlepszym sposobem na to jest wizyta u alchemików lub zielarzy. Móglbys tam znalezc, gdybys mial szczescie.
 
 	Log_CreateTopic	(TOPIC_MOD_NEORAS_MITGIFT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NEORAS_MITGIFT, LOG_RUNNING);
@@ -164,8 +164,8 @@ FUNC VOID Info_Mod_Neoras_Mitgift2_Info()
 		AI_Output(hero, self, "Info_Mod_Neoras_Mitgift2_15_01"); //Z wyrazami uznania dla Constantino.
 	};
 
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_02"); //Ahh, doskonaly. To material wystarczajacy do moich badan. Zrealizowales swoja prace dobrze.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_01_03"); //Tutaj wez troche zlota na swoje wydatki i odtrutki.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_04_02"); //Ahh, doskonaly. To material wystarczajacy do moich badan. Zrealizowales swoja prace dobrze.
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift2_04_03"); //Tutaj wez troche zlota na swoje wydatki i odtrutki.
 
 	CreateInvItems	(hero, ItMi_Gold, 200);
 	CreateInvItems	(hero, ItPo_Gegengift, 3);
@@ -207,7 +207,7 @@ FUNC VOID Info_Mod_Neoras_Lehrer_Info()
 	|| (Mod_Gilde == 7)
 	|| (Mod_Gilde == 8)
 	{
-		AI_Output (self, hero, "Info_Mod_Neoras_Lehrer_01_01"); //Pozwólcie sie na tajemnice alchemii.
+		AI_Output (self, hero, "Info_Mod_Neoras_Lehrer_04_01"); //Pozwólcie sie na tajemnice alchemii.
 		
 		if (!Npc_KnowsInfo(hero, Info_Mod_Neoras_Lehrer))
 		{

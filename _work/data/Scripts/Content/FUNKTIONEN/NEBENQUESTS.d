@@ -1911,7 +1911,7 @@ FUNC VOID NEBENQUESTS()
 			};
 			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //teatry
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //Theodorus
 			};
 			if (Mod_REL_TheodorusS_Counter == 41)
 			{
@@ -1927,7 +1927,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7516_OUT_Lukas_REL,	"THEODORUS");
 				AI_Teleport	(Mod_7516_OUT_Lukas_REL,	"REL_CITY_106");
 
-				// teatry' Versammlung vor Stadttor
+				// Theodorus' Versammlung vor Stadttor
 
 				B_StartOtherRoutine	(Mod_7620_OUT_Wache_REL, "THEODORUS");
 				B_StartOtherRoutine	(Mod_7621_OUT_Wache_REL, "THEODORUS");
@@ -1968,31 +1968,31 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 				AI_TurnToNpc	(hero, Mod_7382_OUT_Theodorus_REL);
 
-				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_teatryTor_09_00"); //Masz ostatni raz? Jestesmy tutaj o malym problemie.
+				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_TheodorusTor_09_00"); //Masz ostatni raz? Jestesmy tutaj o malym problemie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_teatryTor_15_01"); //Co o tym chodzi?
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_01"); //Co o tym chodzi?
 			};
 			if (Mod_REL_TheodorusS_Counter == 11)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_teatryTor_13_02"); //(umbles) Anselm nadal zdaje sie zyc w mózgu niektórych ludzi.... Wiecej
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_02"); //(umbles) Anselm nadal zdaje sie zyc w mózgu niektórych ludzi.... Wiecej
 			};
 			if (Mod_REL_TheodorusS_Counter == 16)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, Mod_7385_OUT_August_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_03"); //Wylaczyc sie!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_03"); //Wylaczyc sie!
 			};
 			if (Mod_REL_TheodorusS_Counter == 21)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_04"); //Ostrzegam, nie wtracajcie sie.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_04"); //Ostrzegam, nie wtracajcie sie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_teatryTor_15_05"); //Brzmi to niemal jak zaproszenie.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_05"); //Brzmi to niemal jak zaproszenie.
 			};
 			if (Mod_REL_TheodorusS_Counter == 31)
 			{
@@ -2000,15 +2000,15 @@ FUNC VOID NEBENQUESTS()
 				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, Mod_7620_OUT_Wache_REL);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, Mod_7620_OUT_Wache_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_06"); //Nie chcesz zrozumiec, czy? Wyrzuc fuzje z naszego miasta, wyskakujesz, albo rzuce cie w usta.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_06"); //Nie chcesz zrozumiec, czy? Wyrzuc fuzje z naszego miasta, wyskakujesz, albo rzuce cie w usta.
 			};
 			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_teatryTor_13_07"); //Jestes beznadziejnie liczniejszy.
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_07"); //Jestes beznadziejnie liczniejszy.
 			};
 			if (Mod_REL_TheodorusS_Counter == 41)
 			{
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_teatryTor_07_08"); //(smiech zwawo) Tego wlasnie chcemy. Pokazmy sprzedawczyków, którzy sa mistrzem domu!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_08"); //(smiech zwawo) Tego wlasnie chcemy. Pokazmy sprzedawczyków, którzy sa mistrzem domu!
 
 				B_StartOtherRoutine	(Mod_7375_OUT_Gerichtswache_02, "STADTTOR");
 				AI_Teleport	(Mod_7375_OUT_Gerichtswache_02, Mod_7375_OUT_Gerichtswache_02.wp);

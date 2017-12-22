@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_03_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_03_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_03_Hi_18_00"); //Wyzwaniem jest to, co rosnie najbardziej.... Woskuj, mlode pedy!
+	AI_Output(self, hero, "Info_Mod_Wesen_03_Hi_10_00"); //Wyzwaniem jest to, co rosnie najbardziej.... Woskuj, mlode pedy!
 
 	AI_StopProcessInfos	(self);
 };

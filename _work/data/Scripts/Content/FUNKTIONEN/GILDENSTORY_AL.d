@@ -179,7 +179,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 10)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_02"); //Nic sie nie martwic. Jestesmy dobrze strzezeni i oni nie znaja stanowisk strazników.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_02"); //Nic sie nie martwic. Jestesmy dobrze strzezeni i oni nie znaja stanowisk strazników.
 			};
 
 			if (Mod_GespraechCounter_BB == 15)
@@ -189,7 +189,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 22)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_04"); //Potrafie podac plan, to naprawde czas przygotowac nas.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_04"); //Potrafie podac plan, to naprawde czas przygotowac nas.
 			};
 
 			if (Mod_GespraechCounter_BB == 27)
@@ -199,7 +199,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 31)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_06"); //Gdzie zamierzasz go zatrzymac?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_06"); //Gdzie zamierzasz go zatrzymac?
 			};
 
 			if (Mod_GespraechCounter_BB == 36)
@@ -209,7 +209,7 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_GespraechCounter_BB == 41)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_12_08"); //Prawdopodobnie tak sie stanie, ale w nocy nie ma tam strazników, którzy by go pilnowali.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bloodwyn_Bartholo_Plan_03_08"); //Prawdopodobnie tak sie stanie, ale w nocy nie ma tam strazników, którzy by go pilnowali.
 			};
 
 			if (Mod_GespraechCounter_BB == 46)
@@ -454,12 +454,12 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 6)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_00"); //No cóz, potem te szczury zostaly uwiezione. Móglbym cie zabic jak Buddlera, móglbym tez rzucic cie do snappera po jedzenie, jak kucharze.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_03_00"); //No cóz, potem te szczury zostaly uwiezione. Móglbym cie zabic jak Buddlera, móglbym tez rzucic cie do snappera po jedzenie, jak kucharze.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 11)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_12_01"); //Ale skoro mam tak wysokiego rangi goscia, chce zadac kilka pytan. Gdzie starszy czlowiek i jego zwolennicy maja swoje kwatery?
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_WoQuartier_03_01"); //Ale skoro mam tak wysokiego rangi goscia, chce zadac kilka pytan. Gdzie starszy czlowiek i jego zwolennicy maja swoje kwatery?
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 16)
@@ -469,12 +469,12 @@ FUNC VOID GILDENSTORY_AL()
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 21)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_00"); //Dobry Bloodwyn, wezcie tu strazników i naszych dwóch przyjaciól i udaje sie do twierdzy górskiej, pózniej wyslemy zbrojen.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_03_00"); //Dobry Bloodwyn, wezcie tu strazników i naszych dwóch przyjaciól i udaje sie do twierdzy górskiej, pózniej wyslemy zbrojen.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 26)
 			{
-				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_12_01"); //Jestem pewien, ze dwoje z nich ucieszy sie widzac, jak ich kolesie zostana zniszczone.
+				AI_Output(Mod_1106_EBR_Bartholo_MT, NULL, "Info_Mod_Bartholo_BloodwynGut_03_01"); //Jestem pewien, ze dwoje z nich ucieszy sie widzac, jak ich kolesie zostana zniszczone.
 			};
 
 			if (Mod_AL_BloodwynBartholoGefangen_Counter == 31)

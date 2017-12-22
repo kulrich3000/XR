@@ -17,12 +17,12 @@ FUNC INT Info_Mod_Yussuf_Hi_Condition()
 FUNC VOID Info_Mod_Yussuf_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_00"); //Dzien. Szukam Jusufa.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_01"); //Stoisz przed nim. Co sie dzieje?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_05_01"); //Stoisz przed nim. Co sie dzieje?
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_02"); //Szukam glosów na moje nagranie.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_03"); //To dobrze, bo ja równiez szukam glosów. Pragnie dolaczyc do wojowników. Znudzily mnie te ramy.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_05_03"); //To dobrze, bo ja równiez szukam glosów. Pragnie dolaczyc do wojowników. Znudzily mnie te ramy.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_15_04"); //Ale trzeba zapytac wojowników, a nie mnie.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_05"); //Tak jest. Ale mozesz mi pomóc w trudnym zadaniu.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_13_06"); //Jesli otrzymam glosowanie za jego przyjeciem, dostajesz moja.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_05_05"); //Tak jest. Ale mozesz mi pomóc w trudnym zadaniu.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_05_06"); //Jesli otrzymam glosowanie za jego przyjeciem, dostajesz moja.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
 
@@ -33,7 +33,7 @@ FUNC VOID Info_Mod_Yussuf_Hi_Info()
 FUNC VOID Info_Mod_Yussuf_Hi_B()
 {
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_B_15_00"); //To brzmi dla mnie dobrze. Mozemy to zrobic.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_B_13_01"); //Zadzwonie do Ciebie, kiedy bede cie potrzebowal.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_B_05_01"); //Zadzwonie do Ciebie, kiedy bede cie potrzebowal.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
 
@@ -47,10 +47,10 @@ FUNC VOID Info_Mod_Yussuf_Hi_B()
 FUNC VOID Info_Mod_Yussuf_Hi_A()
 {
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_00"); //Nie wiem o tym. Ale to nie jest prawda.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_01"); //I po co nam kibice?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_05_01"); //I po co nam kibice?
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_02"); //Nie. Wole nie. Gdy to sie wyda, umarlam.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_03"); //A moze myslisz, ze po prostu pozwola mi jakos tak znów jechac?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_13_04"); //Nie sadze. Ale wtedy nie ma nic z moim glosem. I to sie skonczylo.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Hi_A_05_04"); //Nie sadze. Ale wtedy nie ma nic z moim glosem. I to sie skonczylo.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Hi_A_15_05"); //Pewne.
 
 	Info_ClearChoices	(Info_Mod_Yussuf_Hi);
@@ -79,17 +79,17 @@ FUNC INT Info_Mod_Yussuf_Blutkelch_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_00"); //Co Pan tutaj robi? Nie mam jeszcze mojego glosu.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_00"); //Co Pan tutaj robi? Nie mam jeszcze mojego glosu.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_01"); //Tak dobrze sluzylem Szakirowi, ze oddal on swój glos i wyslal mnie prosto do Masuta.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_02"); //Stary geek! Ale tym razem moglibysmy pracowac razem.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_02"); //Stary geek! Ale tym razem moglibysmy pracowac razem.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_03"); //Przypuszczam, ze mozemy. Musze wziac kielich krwi od sedziego w Khorinisie.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_04"); //To dobrze. Musze isc do centrum miasta.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_04"); //To dobrze. Musze isc do centrum miasta.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_05"); //A co trzeba zrobic?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_06"); //Jestem tutaj, aby zagrabic skrzynie na podwórzu od kupca Matteo. Wysoka Rada podejrzewa tam ubrania, moglibysmy je uzyc.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_06"); //Jestem tutaj, aby zagrabic skrzynie na podwórzu od kupca Matteo. Wysoka Rada podejrzewa tam ubrania, moglibysmy je uzyc.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_07"); //Czy nie ma tam wartownika?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_08"); //Tak, ale to nie jest dla mnie problemem.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_08"); //Tak, ale to nie jest dla mnie problemem.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch_15_09"); //Czy masz przebranie?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_13_10"); //Oczywiscie tak jest. Idzmy dalej. Najpierw sprawdzimy ubrania.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch_05_10"); //Oczywiscie tak jest. Idzmy dalej. Najpierw sprawdzimy ubrania.
 
 	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Spotkalem sie z Jusufem. Tym razem chcemy wspólpracowac. Z kupieckiej farmy Matteo otrzymuje cywilne ubrania.");
 
@@ -125,7 +125,7 @@ FUNC INT Info_Mod_Yussuf_Blutkelch2_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch2_13_00"); //Rycerz moze tu cos zauwazyc. Trzeba go rozpraszac. Zrobie reszte.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch2_05_00"); //Rycerz moze tu cos zauwazyc. Trzeba go rozpraszac. Zrobie reszte.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch2_15_01"); //Bez problemu.
 
 	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Musze odwrócic uwage Garonda, aby Yussuf mógl wyciagnac ubrania z obozu.");
@@ -153,11 +153,11 @@ FUNC INT Info_Mod_Yussuf_Blutkelch3_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch3_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_00"); //To bylo latwe. Wyjdzmy stad, zanim ktos inny zauwazy.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_05_00"); //To bylo latwe. Wyjdzmy stad, zanim ktos inny zauwazy.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_01"); //Dlaczego nie idziemy prosto do górnego miasta?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_02"); //Wiesz, gdzie jest sedzia?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_05_02"); //Wiesz, gdzie jest sedzia?
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_03"); //Oczywiscie. W domu jest jednak straznik.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_13_04"); //Móglbym ich tym razem rozproszyc.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch3_05_04"); //Móglbym ich tym razem rozproszyc.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch3_15_05"); //Dobry pomysl. Chodzcie dalej, odejdzmy!
 
 	B_LogEntry	(TOPIC_MOD_ASS_BLUTKELCH, "Yussufowie dostali ubrania, teraz musimy zobaczyc sedziego.");
@@ -189,7 +189,7 @@ FUNC VOID Info_Mod_Yussuf_Blutkelch4_Info()
 {
 	AI_Output(self, hero, "DEFAULT"); //
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch4_15_00"); //Kiedy straznik powróci, bedziesz musial go rozproszyc. Wchodze do srodka.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch4_13_01"); //Rozumiem.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch4_05_01"); //Rozumiem.
 
 	AI_StopProcessInfos	(self);
 
@@ -218,9 +218,9 @@ FUNC INT Info_Mod_Yussuf_Blutkelch5_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch5_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_00"); //Uludzilismy go calkiem dobrze. Jak jest sedzia?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_05_00"); //Uludzilismy go calkiem dobrze. Jak jest sedzia?
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_01"); //Zly. Jest teraz przed sedzia.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_13_02"); //Jestes pieklem faceta.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch5_05_02"); //Jestes pieklem faceta.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch5_15_03"); //Mozna to przyjac doslownie. (smiertelnicy)
 };
 
@@ -245,9 +245,9 @@ FUNC INT Info_Mod_Yussuf_Blutkelch6_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Blutkelch6_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_00"); //Jestem gonna upuszczam ubrania.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_05_00"); //Jestem gonna upuszczam ubrania.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Blutkelch6_15_01"); //Ide do Wysokiej Rady. Do zobaczenia nastepnym razem.
-	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_13_02"); //Oto teraz!
+	AI_Output(self, hero, "Info_Mod_Yussuf_Blutkelch6_05_02"); //Oto teraz!
 
 	AI_UnEquipArmor	(self);
 
@@ -278,9 +278,9 @@ FUNC INT Info_Mod_Yussuf_Assassinengold_Condition()
 
 FUNC VOID Info_Mod_Yussuf_Assassinengold_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_00"); //Syn dziala! Jestes gwiazda obozu. Jak to zrobic?
+	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_05_00"); //Syn dziala! Jestes gwiazda obozu. Jak to zrobic?
 	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_01"); //Czy slyszales kiedys o motywacji?
-	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_13_02"); //Eh. Nie.
+	AI_Output(self, hero, "Info_Mod_Yussuf_Assassinengold_05_02"); //Eh. Nie.
 	AI_Output(hero, self, "Info_Mod_Yussuf_Assassinengold_15_03"); //Pomyslalem, ze mozesz.
 };
 

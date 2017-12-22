@@ -4,7 +4,7 @@ INSTANCE Mod_522_NONE_Vanja_NW (Npc_Default)
 	name 		= "Wanya";
 	guild 		= GIL_PAL;
 	id 			= 522;
-	voice 		= 17;
+	voice		= 43;
 	flags       = 0;				
 	npctype		= NPCTYPE_MAIN;
 	

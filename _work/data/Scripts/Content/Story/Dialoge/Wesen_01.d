@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_01_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_01_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_01_Hi_18_00"); //Wiesz, pyl weglowy lsniacy w poludniowym sloncu jest jasniejszy niz bialy lisc na pelnym ksiezycu.
+	AI_Output(self, hero, "Info_Mod_Wesen_01_Hi_10_00"); //Wiesz, pyl weglowy lsniacy w poludniowym sloncu jest jasniejszy niz bialy lisc na pelnym ksiezycu.
 
 	AI_StopProcessInfos	(self);
 };

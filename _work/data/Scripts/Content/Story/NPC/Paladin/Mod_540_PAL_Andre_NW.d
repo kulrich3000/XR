@@ -4,7 +4,7 @@ INSTANCE Mod_540_PAL_Andre_NW (Npc_Default)
 	name 		= "Pan Andrzej";	
 	guild 		= GIL_DMT;
 	id 			= 540;
-	voice 		= 8;
+	voice		= 40;
 	flags       = NPC_FLAG_IMMORTAL;	//Joly: NPC_FLAG_IMMORTAL																	
 	npctype		= NPCTYPE_MAIN;
 	

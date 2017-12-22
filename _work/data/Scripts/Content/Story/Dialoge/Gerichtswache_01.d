@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Gerichtswache_01_AnnaProzess_Condition()
 
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_11_00"); //Co ty tu robisz?
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_06_00"); //Co ty tu robisz?
 
 	B_StartOtherRoutine	(Mod_7370_OUT_Ulrich_REL, "ATPROZESS");
 
@@ -38,7 +38,7 @@ FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_Info()
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_C()
 {
 	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_C_15_00"); //Chce, abym skazal Ulricha za próbe morderstwa.
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_C_11_01"); //Wszystkie sluszne, wszystkie sluszne. Wydaje mi sie, ze to wlasnie ten sedzia próbowal nam powiedziec swoim, dziwnym jezykiem.
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_C_06_01"); //Wszystkie sluszne, wszystkie sluszne. Wydaje mi sie, ze to wlasnie ten sedzia próbowal nam powiedziec swoim, dziwnym jezykiem.
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 };
@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_C()
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_B()
 {
 	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_B_15_00"); //Ktos wpadl do jeziora i prosi o pomoc!
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_B_11_01"); //Co wiec? Nie koncze pracy na to stanowisko.
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_B_06_01"); //Co wiec? Nie koncze pracy na to stanowisko.
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 };
@@ -54,7 +54,7 @@ FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_B()
 FUNC VOID Info_Mod_Gerichtswache_01_AnnaProzess_A()
 {
 	AI_Output(hero, self, "Info_Mod_Gerichtswache_01_AnnaProzess_A_15_00"); //Przy bramie miejskiej powstalo zaklócenie!
-	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_A_11_01"); //Co sie tam dzieje?
+	AI_Output(self, hero, "Info_Mod_Gerichtswache_01_AnnaProzess_A_06_01"); //Co sie tam dzieje?
 
 	Info_ClearChoices	(Info_Mod_Gerichtswache_01_AnnaProzess);
 

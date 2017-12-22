@@ -21,8 +21,8 @@ FUNC INT Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Condition()
 FUNC VOID Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_15_00"); //Co myslales o zlozeniu rak na modlitwe w Kosciele Panskim?
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_01"); //Hmm, tak, modlitwa w kosciele. Dziekuje za przypomnienie mi, bratu. Moja ostatnia wizyta byla zbyt dluga.
-	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_06_02"); //Potem z pewnoscia bede mógl kontynuowac prace spokojniejsza reka. Bede w drodze od razu.
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_11_01"); //Hmm, tak, modlitwa w kosciele. Dziekuje za przypomnienie mi, bratu. Moja ostatnia wizyta byla zbyt dluga.
+	AI_Output(self, hero, "Info_Mod_Ordenspriester_PAT_Alchemist_MangelQuest_11_02"); //Potem z pewnoscia bede mógl kontynuowac prace spokojniejsza reka. Bede w drodze od razu.
 
 	AI_StopProcessInfos	(self);
 

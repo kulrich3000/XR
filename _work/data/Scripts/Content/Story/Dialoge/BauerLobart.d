@@ -1,11 +1,11 @@
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei()
 {
 	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_00"); //Slysze, ze Vino od jakiegos czasu brakowalo Vino. Czy wiesz cos o tym?
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_01"); //(niepewny) Uh, cóz, nie wiem.... (osobiscie) ale jesli cos mu sie przydarzylo (....).
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_04_01"); //(niepewny) Uh, cóz, nie wiem.... (osobiscie) ale jesli cos mu sie przydarzylo (....).
 	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei_15_02"); //Wyrzuc go juz teraz. Moze moge pomóc.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_03"); //(budzacy) No cóz.... Vino zalozylo gorzelnie w duzym lesie.... Mysle, ze w poblizu kamiennego kola.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_04"); //Co jakis czas udaje sie tam, by zarobic w miescie kilka dodatkowych monet z wypiekanym domem.... lub przyniesc nam prace na wieczór.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_14_05"); //Wiec teraz wiesz. Ale prosze nikomu nie mówic.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_04_03"); //(budzacy) No cóz.... Vino zalozylo gorzelnie w duzym lesie.... Mysle, ze w poblizu kamiennego kola.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_04_04"); //Co jakis czas udaje sie tam, by zarobic w miescie kilka dodatkowych monet z wypiekanym domem.... lub przyniesc nam prace na wieczór.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei_04_05"); //Wiec teraz wiesz. Ale prosze nikomu nie mówic.
 
 	B_LogEntry	(TOPIC_MOD_VINO_WO, "Jak slyszalem od innego rolnika, Vino zalozylo gorzelnie w duzym lesie, w poblizu kamiennego kola.");
 };
@@ -13,17 +13,17 @@ FUNC VOID Info_Mod_BauerLobart_VinoBrennerei()
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei2()
 {
 	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei2_15_00"); //Dlaczego nikomu nie powiesz? Mógl byc w wielu klopotach....
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_01"); //Tak, wiem. Kto by jednak powiedzial?
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_02"); //Lobart wyrzucilby z niego pieklo, gdyby wiedzial, ze.... Mika i Mika, którzy maja oko na rzeczy poza miastem, nie jest dokladnie squeamish, jesli chodzi o narkotyki.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_14_03"); //Vino moze za to isc prosto do wiezienia....
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_04_01"); //Tak, wiem. Kto by jednak powiedzial?
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_04_02"); //Lobart wyrzucilby z niego pieklo, gdyby wiedzial, ze.... Mika i Mika, którzy maja oko na rzeczy poza miastem, nie jest dokladnie squeamish, jesli chodzi o narkotyki.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei2_04_03"); //Vino moze za to isc prosto do wiezienia....
 };
 
 FUNC VOID Info_Mod_BauerLobart_VinoBrennerei3()
 {
 	AI_Output(hero, self, "Info_Mod_BauerLobart_VinoBrennerei3_15_00"); //Rolnik samotnie przez skazony potworami las? To jest szalenstwo.....
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_01"); //Oh, prawda, nie wspomnialem o tym.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_02"); //Zglosil kiedys znalezienie dziwnej platformy za latarnia Jacka.
-	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_14_03"); //Ma on zabrac go bezposrednio do tej zacisznej jaskini, za wszystkie potwory.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_04_01"); //Oh, prawda, nie wspomnialem o tym.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_04_02"); //Zglosil kiedys znalezienie dziwnej platformy za latarnia Jacka.
+	AI_Output(self, hero, "Info_Mod_BauerLobart_VinoBrennerei3_04_03"); //Ma on zabrac go bezposrednio do tej zacisznej jaskini, za wszystkie potwory.
 };
 
 INSTANCE Info_Mod_BauerLobart_01_VinoBrennerei (C_INFO)

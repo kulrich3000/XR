@@ -4,7 +4,7 @@ instance Mod_1739_KDF_Ordenspriester_PAT (Npc_Default)
 	name 		= "monastyczny chemik";	
 	guild 		= GIL_vlk;
 	id 			= 1739;
-	voice 		= 6;
+	voice		= 16;
 	flags       = 0;																
 	npctype		= NPCTYPE_main;
 	

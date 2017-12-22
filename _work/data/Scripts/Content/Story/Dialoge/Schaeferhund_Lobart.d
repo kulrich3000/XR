@@ -20,7 +20,8 @@ FUNC INT Info_Mod_Schaeferhund_Lobart_Hi_Condition()
 FUNC VOID Info_Mod_Schaeferhund_Lobart_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Schaeferhund_Lobart_Hi_15_00"); //Idz do mistrza!
-	AI_Output(self, hero, "Info_Mod_Schaeferhund_Lobart_Hi_13_01"); //Ruff.
+
+	B_Say_Dog_Wau();
 
 	AI_StopProcessInfos	(self);
 

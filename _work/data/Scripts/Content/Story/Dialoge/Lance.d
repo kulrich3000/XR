@@ -30,8 +30,8 @@ FUNC VOID Info_Mod_Lance_Kristall_Info()
 
 	B_UseFakeScroll	();
 
-	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_01"); //Acha, magiczny krysztal.... Oplaty.
-	AI_Output(self, hero, "Info_Mod_Lance_Kristall_03_02"); //Wlasciwie oddam obie te rzeczy magikom wody. Wróc jutro.
+	AI_Output(self, hero, "Info_Mod_Lance_Kristall_01_01"); //Acha, magiczny krysztal.... Oplaty.
+	AI_Output(self, hero, "Info_Mod_Lance_Kristall_01_02"); //Wlasciwie oddam obie te rzeczy magikom wody. Wróc jutro.
 
 	Mod_LanceKristall = Wld_GetDay();
 
@@ -61,8 +61,8 @@ FUNC INT Info_Mod_Lance_KristallEntgelt_Condition()
 
 FUNC VOID Info_Mod_Lance_KristallEntgelt_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_00"); //Magowie wody byli bardzo zadowoleni z artefaktu.
-	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_03_01"); //Dali mi 1000 sztuk zlota i ten zestaw przydatnych magicznych przedmiotów. Przejdzmy teraz do Torlof.
+	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_01_00"); //Magowie wody byli bardzo zadowoleni z artefaktu.
+	AI_Output(self, hero, "Info_Mod_Lance_KristallEntgelt_01_01"); //Dali mi 1000 sztuk zlota i ten zestaw przydatnych magicznych przedmiotów. Przejdzmy teraz do Torlof.
 
 	B_ShowGivenThings	("1000 Otrzymane zloto i paczka");
 
@@ -104,7 +104,7 @@ FUNC VOID Info_Mod_Lance_Soeldner_Info()
 	if (Hlp_IsItem(SLDRuessi, ItAr_SLD_L) == TRUE)
 	|| (Hlp_IsItem(SLDRuessi, ItAr_SLD_M) == TRUE)
 	{
-		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_01"); //najemnicy i magowie wody pracowali razem w Dolinie Kopalni, a niektórzy z wojowników wodnych sa bylymi najemnikami. Wszystko w porzadku, mozna wejsc.
+		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_01_01"); //najemnicy i magowie wody pracowali razem w Dolinie Kopalni, a niektórzy z wojowników wodnych sa bylymi najemnikami. Wszystko w porzadku, mozna wejsc.
 
 		Mod_PortalLance	= TRUE;
 
@@ -114,7 +114,7 @@ FUNC VOID Info_Mod_Lance_Soeldner_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_03_02"); //Oh, a co tam mi powiedziec?
+		AI_Output(self, hero, "Info_Mod_Lance_Soeldner_01_02"); //Oh, a co tam mi powiedziec?
 	};
 };
 
@@ -140,7 +140,7 @@ FUNC INT Info_Mod_Lance_RDW_Condition()
 FUNC VOID Info_Mod_Lance_RDW_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Lance_RDW_15_00"); //Jestem z wami.
-	AI_Output(self, hero, "Info_Mod_Lance_RDW_03_01"); //Nowy. Cóz, wlaczaj sie.
+	AI_Output(self, hero, "Info_Mod_Lance_RDW_01_01"); //Nowy. Cóz, wlaczaj sie.
 
 	Mod_PortalLance = TRUE;
 
@@ -174,7 +174,7 @@ FUNC INT Info_Mod_Lance_Brief_Condition()
 FUNC VOID Info_Mod_Lance_Brief_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Lance_Brief_15_00"); //Mam tutaj list do Satur.
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_03_01"); //Pozwole sobie to zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_01_01"); //Pozwole sobie to zobaczyc.
 
 	Info_ClearChoices	(Info_Mod_Lance_Brief);
 
@@ -185,7 +185,7 @@ FUNC VOID Info_Mod_Lance_Brief_Info()
 FUNC VOID Info_Mod_Lance_Brief_Nein()
 {
 	AI_Output(hero, self, "Info_Mod_Lance_Brief_Nein_15_00"); //Nie, list jest tylko dla Saturas.
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Nein_03_01"); //Jesli nie wiem o co chodzi, nie moge Cie wpuscic.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Nein_01_01"); //Jesli nie wiem o co chodzi, nie moge Cie wpuscic.
 
 	Info_ClearChoices	(Info_Mod_Lance_Brief);
 };
@@ -209,11 +209,11 @@ FUNC VOID Info_Mod_Lance_Brief_Ja()
 
 	B_UseFakeScroll();
 
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_01"); //Wyglada na wazny. Oto znów litera.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_01_01"); //Wyglada na wazny. Oto znów litera.
 
 	B_GiveInvItems	(self, hero, XardasLetterForSaturas_Geoeffnet, 1);
 
-	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_03_02"); //Mozesz przejsc.
+	AI_Output(self, hero, "Info_Mod_Lance_Brief_Ja_01_02"); //Mozesz przejsc.
 
 	Mod_PortalLance	= TRUE;
 	Mod_LanceXardasBrief = TRUE;
@@ -246,13 +246,13 @@ FUNC INT Info_Mod_Lance_Erol_Condition()
 
 FUNC VOID Info_Mod_Lance_Erol_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_00"); //Zatrzymaj sie! Nie mozna tu przyjechac.
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_01_00"); //Zatrzymaj sie! Nie mozna tu przyjechac.
 	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_01"); //Nie znów! Czy wolno mi przebijac sie, czy nie?
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_02"); //Ty to robisz, ale druga nie.
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_01_02"); //Ty to robisz, ale druga nie.
 	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_03"); //Brakuje mi czasu. I ten czlowiek musi porozmawiac z Cavalorn. Pozwólcie mu przez niego przejsc, porusze sie po niego.
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_04"); //Mam problemy z magami.....
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_01_04"); //Mam problemy z magami.....
 	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_05"); //Nonsens. Jestem najblizszym powiernikiem Szatana. To wszystko jest w porzadku.
-	AI_Output(self, hero, "Info_Mod_Lance_Erol_03_06"); //Ufam panstwu raz. Ale jesli popadniem w klopoty, nie pozwólcie, ze zobacze Was tutaj ponownie!
+	AI_Output(self, hero, "Info_Mod_Lance_Erol_01_06"); //Ufam panstwu raz. Ale jesli popadniem w klopoty, nie pozwólcie, ze zobacze Was tutaj ponownie!
 	AI_Output(hero, self, "Info_Mod_Lance_Erol_15_07"); //Zazwyczaj i tak korzystam z teleporterów.....
 };
 
@@ -287,7 +287,7 @@ func int Info_Mod_Lance_FirstWarn_Condition()
 
 func void Info_Mod_Lance_FirstWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lance_FirstWarn_03_00"); //HALT! Nie mozna tu przyjechac.
+	AI_Output (self, hero,"Info_Mod_Lance_FirstWarn_01_00"); //HALT! Nie mozna tu przyjechac.
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(hero, Lance_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_FirstWarnGiven;
@@ -320,7 +320,7 @@ FUNC INT Info_Mod_Lance_SecondWarn_Condition()
 
 func void Info_Mod_Lance_SecondWarn_Info()
 {
-	AI_Output (self, hero,"Info_Mod_Lance_SecondWarn_03_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
+	AI_Output (self, hero,"Info_Mod_Lance_SecondWarn_01_00"); //Opowiem ci to po raz ostatni. Jeszcze jeden krok i wejdziesz w swiat bólu!
 
 	hero.aivar[AIV_LastDistToWP] = Npc_GetDistToWP (hero,Lance_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;	
@@ -358,7 +358,7 @@ func void Info_Mod_Lance_Attack_Info()
 	hero.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, hero,"Info_Mod_Lance_Attack_03_00"); //Poprosil pan o to.....
+	AI_Output (self, hero,"Info_Mod_Lance_Attack_01_00"); //Poprosil pan o to.....
 
 	AI_StopProcessInfos	(self);	
 

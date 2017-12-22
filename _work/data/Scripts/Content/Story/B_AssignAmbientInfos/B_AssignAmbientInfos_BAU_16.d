@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_JOIN_15_00"); //Chce wiedziec wiecej o najemnikach!
-	AI_Output (self, hero, "DIA_BAU_16_JOIN_16_01"); //Wisza na podwórku przez caly dzien, co jakis czas walcza i sa zabawni.
+	AI_Output (hero, self, "DIA_BAU_43_JOIN_15_00"); //Chce wiedziec wiecej o najemnikach!
+	AI_Output (self, hero, "DIA_BAU_43_JOIN_43_01"); //Wisza na podwórku przez caly dzien, co jakis czas walcza i sa zabawni.
 };
 
 // *************************************************************************
@@ -68,8 +68,8 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
-	AI_Output (self, hero, "DIA_BAU_16_PEOPLE_16_01"); //Onar jest szefem wszystkich gospodarstw, ale kazde z malych gospodarstw ma innego najemce, który dba o to, aby wszystko w jego gospodarstwie dzialalo.
+	AI_Output (hero, self, "DIA_BAU_43_PEOPLE_15_00"); //Kto jest tu odpowiedzialny?
+	AI_Output (self, hero, "DIA_BAU_43_PEOPLE_43_01"); //Onar jest szefem wszystkich gospodarstw, ale kazde z malych gospodarstw ma innego najemce, który dba o to, aby wszystko w jego gospodarstwie dzialalo.
 };
 
 // *************************************************************************
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_16_LOCATION_15_00"); //Co mozesz mi powiedziec o tej okolicy?
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_01"); //Sa tu trzy gospodarstwa rolne. Naars na wschodzie i Sekobs na pólnocy doliny.
-	AI_Output (self, hero, "DIA_BAU_16_LOCATION_16_02"); //Na poludniowym zachodzie znajduje sie klatka schodowa do plaskowyzu. Znajduje sie tu gospodarstwo Bengara.
+	AI_Output (hero, self, "DIA_BAU_43_LOCATION_15_00"); //Co mozesz mi powiedziec o tej okolicy?
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_01"); //Sa tu trzy gospodarstwa rolne. Naars na wschodzie i Sekobs na pólnocy doliny.
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_02"); //Na poludniowym zachodzie znajduje sie klatka schodowa do plaskowyzu. Znajduje sie tu gospodarstwo Bengara.
 };
 
 INSTANCE Info_Mod_BAU_16_Pickpocket (C_INFO)

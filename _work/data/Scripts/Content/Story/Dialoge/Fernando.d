@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Fernando_Hi_Condition()
 FUNC VOID Info_Mod_Fernando_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Fernando_Hi_15_00"); //A kim jestes?
-	AI_Output(self, hero, "Info_Mod_Fernando_Hi_14_01"); //Fernando. Prosze przepraszam za zmeczenie, nie spie teraz dobrze.
+	AI_Output(self, hero, "Info_Mod_Fernando_Hi_11_01"); //Fernando. Prosze przepraszam za zmeczenie, nie spie teraz dobrze.
 };
 
 INSTANCE Info_Mod_Fernando_BadSleep (C_INFO)
@@ -45,15 +45,15 @@ FUNC VOID Info_Mod_Fernando_BadSleep_Info()
 
 	AI_PlayAni	(self, "T_SEARCH");
 
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_01"); //Dom po drugiej stronie ulicy jest nawiedzony! Pod sypialnia Paladina.
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_01"); //Dom po drugiej stronie ulicy jest nawiedzony! Pod sypialnia Paladina.
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep_15_02"); //Oh, tak.
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_03"); //Naprawde nie! Od czasu smierci starego czlowieka, do którego dom nalezal, dom trzeszczyl i wrzaskal w nim noca, tak jak w królestwie Beliara!
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_04"); //Jak tylko sie przytaknelo, zaczyna sie, czasami na kilka godzin.
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_03"); //Naprawde nie! Od czasu smierci starego czlowieka, do którego dom nalezal, dom trzeszczyl i wrzaskal w nim noca, tak jak w królestwie Beliara!
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_04"); //Jak tylko sie przytaknelo, zaczyna sie, czasami na kilka godzin.
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep_15_05"); //Dlaczego nie sprawdzisz, co powoduje halas?
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_06"); //Nie mozesz tego zrobic! Ja, cóz, czy to jest duch starego czlowieka? A moze inny diabelski szatan?
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_06"); //Nie mozesz tego zrobic! Ja, cóz, czy to jest duch starego czlowieka? A moze inny diabelski szatan?
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep_15_07"); //Co sadza straznicy miasta?
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_08"); //Nie chcesz w to wierzyc! Usmiech mi sie policzkowo lub smiac!
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_14_09"); //I wyglada na to, ze codziennie rano zrywam. Czy zajmie sie pan ta sprawa?
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_08"); //Nie chcesz w to wierzyc! Usmiech mi sie policzkowo lub smiac!
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_11_09"); //I wyglada na to, ze codziennie rano zrywam. Czy zajmie sie pan ta sprawa?
 
 	Info_ClearChoices	(Info_Mod_Fernando_BadSleep);
 
@@ -71,7 +71,7 @@ FUNC VOID Info_Mod_Fernando_BadSleep_B()
 FUNC VOID Info_Mod_Fernando_BadSleep_A()
 {
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep_A_15_00"); //Zobacze.
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_A_14_01"); //Dziekuje, dziekuje! Zaprzestancie tego!
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep_A_11_01"); //Dziekuje, dziekuje! Zaprzestancie tego!
 
 	Log_CreateTopic	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, LOG_RUNNING);
@@ -107,7 +107,7 @@ FUNC INT Info_Mod_Fernando_BadSleep2_Condition()
 
 FUNC VOID Info_Mod_Fernando_BadSleep2_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep2_14_00"); //(screams) Pomoc, pomoc! Oh Innos! Och, to tylko ty. (jaja)
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep2_11_00"); //(screams) Pomoc, pomoc! Oh Innos! Och, to tylko ty. (jaja)
 };
 
 INSTANCE Info_Mod_Fernando_BadSleep3 (C_INFO)
@@ -132,18 +132,18 @@ FUNC INT Info_Mod_Fernando_BadSleep3_Condition()
 FUNC VOID Info_Mod_Fernando_BadSleep3_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep3_15_00"); //Rozwiazywalem zagadke nawiedzonej dzielnicy.
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_14_01"); //Tak?
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_11_01"); //Tak?
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep3_15_02"); //Malzonkowie, zakochani, przeniesli sie tam w zamilowanie.
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_14_03"); //Czy....? Oh.
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_11_03"); //Czy....? Oh.
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep3_15_04"); //Czy mozna lepiej spac z wiedza?
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_14_05"); //Oczywiscie. (mumbuly) Zbierz sie razem......
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_14_06"); //Uh, oczywiscie zasluguje pan na nagrode. Wez to tutaj.
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_11_05"); //Oczywiscie. (mumbuly) Zbierz sie razem......
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_11_06"); //Uh, oczywiscie zasluguje pan na nagrode. Wez to tutaj.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 150);
 
 	if (Wld_IsTime(22,05,07,59))
 	{
-		AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_14_07"); //A teraz potrzebuje dobrego snu.
+		AI_Output(self, hero, "Info_Mod_Fernando_BadSleep3_11_07"); //A teraz potrzebuje dobrego snu.
 	};
 
 	Mod_FernandoBlubber = Wld_GetDay();
@@ -178,9 +178,9 @@ FUNC INT Info_Mod_Fernando_SonjaFreier_Condition()
 FUNC VOID Info_Mod_Fernando_SonjaFreier_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Fernando_SonjaFreier_15_00"); //Jestes jednym z freelancerów Sonji?
-	AI_Output(self, hero, "Info_Mod_Fernando_SonjaFreier_14_01"); //Szukaj! Nie tak glosno!
+	AI_Output(self, hero, "Info_Mod_Fernando_SonjaFreier_11_01"); //Szukaj! Nie tak glosno!
 	AI_Output(hero, self, "Info_Mod_Fernando_SonjaFreier_15_02"); //Tak wiec, tak?
-	AI_Output(self, hero, "Info_Mod_Fernando_SonjaFreier_14_03"); //Cichy) Czasy juz minely. Moja zona.... zauwazyla cos. Nie, nie, czasy juz minely.
+	AI_Output(self, hero, "Info_Mod_Fernando_SonjaFreier_11_03"); //Cichy) Czasy juz minely. Moja zona.... zauwazyla cos. Nie, nie, czasy juz minely.
 
 	Mod_Sonja_Freier = 2;
 
@@ -210,7 +210,7 @@ FUNC INT Info_Mod_Fernando_BadSleep4_Condition()
 FUNC VOID Info_Mod_Fernando_BadSleep4_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Fernando_BadSleep4_15_00"); //Czy spisz dobrze teraz?
-	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep4_14_01"); //Wiekszosc czasu. Nie tylko wtedy, gdy w nastepnym pokoju sa zbyt dzikie.
+	AI_Output(self, hero, "Info_Mod_Fernando_BadSleep4_11_01"); //Wiekszosc czasu. Nie tylko wtedy, gdy w nastepnym pokoju sa zbyt dzikie.
 };
 
 INSTANCE Info_Mod_Fernando_Pickpocket (C_INFO)

@@ -4,7 +4,7 @@ instance Mod_7030_OUT_Entfuehrer_NW (Npc_Default)
 	name 		= "porywacze"; 
 	guild 		= GIL_OUT;
 	id 			= 7030;
-	voice 		= 1;
+	voice		= 5;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_Hi_Condition()
 
 FUNC VOID Info_Mod_Bandit_AtXardas_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_08_00"); //Hej! Od kiedy cipki gubia sie tutaj?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Hi_06_00"); //Hej! Od kiedy cipki gubia sie tutaj?
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Bereuen (C_INFO)
@@ -40,7 +40,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_Bereuen_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_Bereuen_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Bereuen_15_00"); //Niedlugo bedziesz zalowal tego, co powiedziales.
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_08_01"); //(smiech) Chce to zobaczyc.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Bereuen_06_01"); //(smiech) Chce to zobaczyc.
 
 	AI_StopProcessInfos	(self);
 
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_Bandit_AtXardas_WiesoHier_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_WiesoHier_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_WiesoHier_15_00"); //Dlaczego tu jestes?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_08_01"); //Czlowiek, jakie to pytanie? To jest nasz obóz. Powiedz mi, czego szukasz, zanim odetne glowe.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_WiesoHier_06_01"); //Czlowiek, jakie to pytanie? To jest nasz obóz. Powiedz mi, czego szukasz, zanim odetne glowe.
 };
 
 INSTANCE Info_Mod_Bandit_AtXardas_Anschluss (C_INFO)
@@ -97,9 +97,9 @@ FUNC INT Info_Mod_Bandit_AtXardas_Anschluss_Condition()
 FUNC VOID Info_Mod_Bandit_AtXardas_Anschluss_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_00"); //Czy moge dolaczyc do Ciebie?
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_01"); //Nie. Nie bierzemy nosicieli pieluszek, nie rozumiemy?
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_06_01"); //Nie. Nie bierzemy nosicieli pieluszek, nie rozumiemy?
 	AI_Output(hero, self, "Info_Mod_Bandit_AtXardas_Anschluss_15_02"); //W porzadku, po prostu pójde.... znowu.
-	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_08_03"); //Jest na to za pózno, przyjaciel. Jestem gonna zobacze, czy masz przy sobie cos wartosciowego.
+	AI_Output(self, hero, "Info_Mod_Bandit_AtXardas_Anschluss_06_03"); //Jest na to za pózno, przyjaciel. Jestem gonna zobacze, czy masz przy sobie cos wartosciowego.
 
 	AI_StopProcessInfos	(self);
 

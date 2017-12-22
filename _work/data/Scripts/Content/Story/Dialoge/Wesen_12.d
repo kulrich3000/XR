@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Wesen_12_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_12_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_12_Hi_18_00"); //.... HEY... slyszy, ze on bedzie poskromil czasy...... czosnek.... chcesz miec...... hahahahahahahahahahahahahahahahahahahahahaha..... Dobry zart?
-	AI_Output(self, hero, "Info_Mod_Wesen_12_Hi_18_01"); //Yoo-ho! LEEEBEEBEEBEN! ... HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.....
+	AI_Output(self, hero, "Info_Mod_Wesen_12_Hi_10_00"); //.... HEY... slyszy, ze on bedzie poskromil czasy...... czosnek.... chcesz miec...... hahahahahahahahahahahahahahahahahahahahahaha..... Dobry zart?
+	AI_Output(self, hero, "Info_Mod_Wesen_12_Hi_10_01"); //Yoo-ho! LEEEBEEBEEBEN! ... HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA.....
 
 	AI_StopProcessInfos	(self);
 };

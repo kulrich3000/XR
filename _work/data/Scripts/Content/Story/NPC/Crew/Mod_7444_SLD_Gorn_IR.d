@@ -4,7 +4,7 @@ INSTANCE Mod_7444_SLD_Gorn_IR (Npc_Default)
 	name 		= "hejnal";
 	guild 		= GIL_OUT;
 	id 			= 7444;
-	voice 		= 12;
+	voice		= 0;
 	flags       = 2;																	
 	npctype		= NPCTYPE_FRIEND;
 	

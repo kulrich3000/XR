@@ -18,14 +18,14 @@ FUNC INT Info_Mod_Buddler_NW_Hi_Condition()
 
 FUNC VOID Info_Mod_Buddler_NW_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_00"); //Mam wiadomosc od Alissandro do szefa tutaj.
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_00"); //Mam wiadomosc od Alissandro do szefa tutaj.
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_01"); //Tak wiec musze byc ja.
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_02"); //Stary czlowiek dal mi te notatke dla ciebie.
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_02"); //Stary czlowiek dal mi te notatke dla ciebie.
 
 	B_GiveInvItems	(self, hero, ItWr_BuddlerNachrichtVonAL, 1);
 
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_03"); //Dobrze, czy jest jeszcze cos innego?
-	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_11_04"); //Nie, stary czlowiek po prostu powiedzial mi, zebym sie przydal. Czy jest dla mnie jakas praca?
+	AI_Output(self, hero, "Info_Mod_Buddler_NW_Hi_01_04"); //Nie, stary czlowiek po prostu powiedzial mi, zebym sie przydal. Czy jest dla mnie jakas praca?
 	AI_Output(hero, self, "Info_Mod_Buddler_NW_Hi_15_05"); //Zapytaj Whistler.
 
 	B_StartOtherRoutine	(self, "ARBEIT");

@@ -4,7 +4,7 @@ instance Mod_969_MIL_Den_NW (Npc_Default)
 	name 		= "The"; 
 	guild 		= GIL_PAL;
 	id 			= 969;
-	voice 		= 5;
+	voice		= 1;
 	flags       = 0;							
 	npctype		= NPCTYPE_MAIN;
 	

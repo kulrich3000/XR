@@ -4,7 +4,7 @@ instance Mod_7596_HS_Bauer_REL (Npc_Default)
 	name 		= "stanik sadowy"; 
 	guild 		= GIL_OUT;
 	id 			= 7596;
-	voice 		= 9;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

@@ -15,8 +15,8 @@ FUNC INT Info_Mod_Wesen_04_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_04_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_04_Hi_18_00"); //Zycie jest czasem niczym innym jak dziwnym snem.
-	AI_Output(self, hero, "Info_Mod_Wesen_04_Hi_18_01"); //Ale jakie marzenie moze byc bardziej dziwne niz zycie?
+	AI_Output(self, hero, "Info_Mod_Wesen_04_Hi_10_00"); //Zycie jest czasem niczym innym jak dziwnym snem.
+	AI_Output(self, hero, "Info_Mod_Wesen_04_Hi_10_01"); //Ale jakie marzenie moze byc bardziej dziwne niz zycie?
 
 	AI_StopProcessInfos	(self);
 };

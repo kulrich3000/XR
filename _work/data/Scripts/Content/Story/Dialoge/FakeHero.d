@@ -19,9 +19,9 @@ FUNC VOID Info_Mod_FakeHero_Hi_Info()
 	B_Say (hero, self, "$WHOAREYOU");
 	B_Say (self, hero, "$WHOAREYOU");
 	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_02"); //Co robisz?
-	AI_Output(self, hero, "Info_Mod_FakaHero_Hi_15_03"); //Co robisz?
-	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_04"); //To wystarczy, teraz to Twoja kolej!
-	AI_Output(self, hero, "Info_Mod_FakeHero_Hi_15_05"); //To wystarczy, teraz to Twoja kolej!
+	AI_Output(self, hero, "Info_Mod_FakaHero_Hi_15_02"); //Co robisz?
+	AI_Output(hero, self, "Info_Mod_FakeHero_Hi_15_03"); //To wystarczy, teraz to Twoja kolej!
+	AI_Output(self, hero, "Info_Mod_FakeHero_Hi_15_03"); //To wystarczy, teraz to Twoja kolej!
 
 	AI_StopProcessInfos	(self);
 

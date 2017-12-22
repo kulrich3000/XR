@@ -752,7 +752,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_520_DMR_Raven_MT, hero);
 				AI_TurnToNpc	(hero, Mod_520_DMR_Raven_MT);
 
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_00"); //Ciesze sie, ze jestes tutaj. Jest jeszcze cos innego, co musze wam powiedziec.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_03_00"); //Ciesze sie, ze jestes tutaj. Jest jeszcze cos innego, co musze wam powiedziec.
 			};
 
 			if (Talkessel_Counter == 5)
@@ -762,7 +762,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 			if (Talkessel_Counter == 10)
 			{
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_02"); //Nieumarlych prowadzi jeden z szesciu strazników Innosów. Musisz go pokonac.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_03_02"); //Nieumarlych prowadzi jeden z szesciu strazników Innosów. Musisz go pokonac.
 			};
 
 			if (Talkessel_Counter == 15)
@@ -772,7 +772,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 
 			if (Talkessel_Counter == 20)
 			{
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_04"); //Badz ostrozny, straznik Innos' jest bardzo silny.
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_03_04"); //Badz ostrozny, straznik Innos' jest bardzo silny.
 			};
 
 			if (Talkessel_Counter == 25)
@@ -808,7 +808,7 @@ FUNC VOID GILDENSTORY_BELIAR()
 				AI_TurnToNpc	(Mod_520_DMR_Raven_MT, Mod_517_DMR_Gomez_MT);
 				AI_TurnToNpc	(hero, Mod_520_DMR_Raven_MT);
 
-				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_10_10"); //Nadszedl czas na atak. Atakuj!
+				AI_Output(Mod_520_DMR_Raven_MT, NULL, "Info_Mod_BS_Rede_03_10"); //Nadszedl czas na atak. Atakuj!
 			};
 
 			if (Talkessel_Counter == 55)

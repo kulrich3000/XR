@@ -20,8 +20,8 @@ FUNC INT Info_Mod_Patient_Endres_Condition()
 FUNC VOID Info_Mod_Patient_Endres_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Patient_Endres_15_00"); //Czy to prawda, ze uzdrowiciel byl z Toba, kiedy Endres zostal zamordowany?
-	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_01"); //Nie moge powiedziec na pewno. Tego dnia zasnalem w poludnie i tylko obudzilem sie wieczorem.
-	AI_Output(self, hero, "Info_Mod_Patient_Endres_04_02"); //Lecz uzdrowiciel byl tam zanim zasnalem i po obudzeniu sie obudzilem.
+	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_01"); //Nie moge powiedziec na pewno. Tego dnia zasnalem w poludnie i tylko obudzilem sie wieczorem.
+	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_02"); //Lecz uzdrowiciel byl tam zanim zasnalem i po obudzeniu sie obudzilem.
 
 	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Pacjent przeszedl przez wiekszosc dnia dosc dziwnie. Wiec alibi uzdrowiciela jest kiepski.");
 };
@@ -45,7 +45,7 @@ FUNC INT Info_Mod_Patient_WasFehlt_Condition()
 FUNC VOID Info_Mod_Patient_WasFehlt_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_15_00"); //Cóz, czego nam brakuje?
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_04_01"); //Narkotyczny. Masz na sobie cos ciezkiego?
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_01_01"); //Narkotyczny. Masz na sobie cos ciezkiego?
 
 	Info_ClearChoices	(Info_Mod_Patient_WasFehlt);
 
@@ -69,7 +69,7 @@ FUNC VOID Info_Mod_Patient_WasFehlt_B()
 FUNC VOID Info_Mod_Patient_WasFehlt_A()
 {
 	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_A_15_00"); //Oczywiscie.
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_A_04_01"); //Co masz na mysli?
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_A_01_01"); //Co masz na mysli?
 
 	Info_ClearChoices	(Info_Mod_Patient_WasFehlt);
 
@@ -91,14 +91,14 @@ FUNC VOID Info_Mod_Patient_WasFehlt_F(var C_Item itm)
 {
 	B_GiveInvItems	(hero, self, itm, 1);
 
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_00"); //Dzieki, czlowiek.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_01_00"); //Dzieki, czlowiek.
 
 	B_UseItem	(self, itm);
 
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_01"); //Ten pieprzacy zabieg chirurgii piersi naprawde idzie na moje nerki.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_01_01"); //Ten pieprzacy zabieg chirurgii piersi naprawde idzie na moje nerki.
 	AI_Output(hero, self, "Info_Mod_Patient_WasFehlt_F_15_02"); //Jaka operacja piersia?
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_03"); //Moja watroba wydaje sie rozkladac. Tak mówi uzdrowiciel.
-	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_04_04"); //Ale czulem sie lepiej, gdy jeszcze nie bylo mnie tutaj.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_01_03"); //Moja watroba wydaje sie rozkladac. Tak mówi uzdrowiciel.
+	AI_Output(self, hero, "Info_Mod_Patient_WasFehlt_F_01_04"); //Ale czulem sie lepiej, gdy jeszcze nie bylo mnie tutaj.
 
 	B_GivePlayerXP	(50);
 

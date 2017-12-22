@@ -14,8 +14,7 @@ INSTANCE MENU_MAIN(C_MENU_DEF)
 	items[4]		= "MENUITEM_MAIN_SAVEGAME_SAVE";
 	items[5]		= "MENUITEM_MAIN_RESUME";
 	items[6]		= "MENUITEM_MAIN_OPTIONS";
-	//items[7]		= "MENUITEM_MAIN_INTRO";
-	//items[7]		= "MENUITEM_MAIN_TEAM";
+	items[7]		= "MENUITEM_MAIN_INTRO";
 	items[8]		= "MENUITEM_MAIN_CREDITS";
 	items[9]		= "MENUITEM_MAIN_EXIT";
 	
@@ -44,7 +43,7 @@ instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF)
 	dimx		= 8100;		dimy		=  750;
 	// Aktionen
 	onSelAction[0]	= SEL_ACTION_STARTMENU;
-	onSelAction_S[0]= "MENU_REALLY_NEWGAME";
+	onSelAction_S[0]= "MENU_NEWGAME";
 	// Weitere Eigenschaften
 	flags			= flags | IT_TXT_CENTER;
 };

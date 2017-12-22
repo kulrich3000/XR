@@ -4,7 +4,7 @@ INSTANCE Gnom_11005_NW (Npc_Default)
 	name 		= "Pijak Gnome";
 	guild 		= GIL_OUT;
 	id 			= 11005;
-	voice 		= 11;
+	voice		= 0;
 	flags = 2;
 	npctype		= NPCTYPE_MAIN;
 	

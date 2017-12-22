@@ -4,7 +4,7 @@ INSTANCE Mod_7295_OUT_Moorhexe_REL (Npc_Default)
 	name 		= "torfowisko";
 	guild 		= GIL_DMT;
 	id 			= 7295;
-	voice 		= 17;
+	voice		= 19;
 	flags       = 0;				
 	npctype		= NPCTYPE_MAIN;
 	

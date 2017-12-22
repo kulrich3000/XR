@@ -4,7 +4,7 @@ INSTANCE Mod_7284_HS_Raufbold_REL (Npc_Default)
 	name 		= "Rycerz królewski od i do Raufold"; 
 	guild 		= GIL_OUT;
 	id 			= 7284;
-	voice 		= 13;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

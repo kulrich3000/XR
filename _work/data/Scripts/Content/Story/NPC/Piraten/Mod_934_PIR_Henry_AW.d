@@ -4,7 +4,7 @@ INSTANCE Mod_934_PIR_Henry_AW (Npc_Default)
 	name 		= "Henryka";
 	guild 		= GIL_NONE;
 	id 			= 934;
-	voice 		= 4;
+	voice		= 0;
 	flags       = FALSE;												
 	npctype		= NPCTYPE_MAIN;
 	

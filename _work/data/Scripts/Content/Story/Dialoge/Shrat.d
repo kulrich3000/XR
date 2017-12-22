@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Shrat_Hi_Condition()
 
 FUNC VOID Info_Mod_Shrat_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Shrat_Hi_02_00"); //Nie zaklócaj mojego spokoju!
+	AI_Output(self, hero, "Info_Mod_Shrat_Hi_09_00"); //Nie zaklócaj mojego spokoju!
 };
 
 INSTANCE Info_Mod_Shrat_Woher (C_INFO)
@@ -40,11 +40,11 @@ FUNC INT Info_Mod_Shrat_Woher_Condition()
 FUNC VOID Info_Mod_Shrat_Woher_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Shrat_Woher_15_00"); //Dlaczego jestes sam w kabinie w bagnie?
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_01"); //Poniewaz chce zostac sam. Nigdy nie bylem w pokoju.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_02"); //Najpierw musialem pracowac caly dzien na farmie Onar, az ucieklem z jedna z jego owiec.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_03"); //Kiedy wrzucili mnie do kolonii, pomyslalem, ze obóz bagienny jest przytulny.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_04"); //Ale tam przez caly dzien wolno mi bylo strapac kapuste bagienna i nie tego chcialem.
-	AI_Output(self, hero, "Info_Mod_Shrat_Woher_02_05"); //Potem ucieklem i zbudowalem tu mala chatke, a w koncu mam spokój.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_01"); //Poniewaz chce zostac sam. Nigdy nie bylem w pokoju.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_02"); //Najpierw musialem pracowac caly dzien na farmie Onar, az ucieklem z jedna z jego owiec.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_03"); //Kiedy wrzucili mnie do kolonii, pomyslalem, ze obóz bagienny jest przytulny.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_04"); //Ale tam przez caly dzien wolno mi bylo strapac kapuste bagienna i nie tego chcialem.
+	AI_Output(self, hero, "Info_Mod_Shrat_Woher_09_05"); //Potem ucieklem i zbudowalem tu mala chatke, a w koncu mam spokój.
 };
 
 INSTANCE Info_Mod_Shrat_Pickpocket (C_INFO)

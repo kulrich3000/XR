@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon 	= 1300;
 // ******************************************************
 INSTANCE ITAR_PIR_L_Addon (C_Item)
 {
-	name 					=	"ubranie pirackie";
+	name 					=	"Pirackie ubranie";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -92,7 +92,7 @@ INSTANCE ITAR_PIR_Zombie (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_M_Addon (C_Item)
 {
-	name 					=	"pirat uzbrojenie";
+	name 					=	"Piracka zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -133,7 +133,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Kapitan Odziez";
+	name 					=	"Ubranie kapitana";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

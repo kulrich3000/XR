@@ -4,7 +4,7 @@ instance Mod_7283_HS_Arsch_REL (Npc_Default)
 	name 		= "Royal Asset";	
 	guild 		= GIL_OUT;
 	id 			= 7283;
-	voice 		= 16;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

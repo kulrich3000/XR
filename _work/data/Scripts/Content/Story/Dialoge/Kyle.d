@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Kyle_Hi_Condition()
 FUNC VOID Info_Mod_Kyle_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_Hi_15_00"); //Kyle! Jak robisz, starszy przyjaciel?
-	AI_Output(self, hero, "Info_Mod_Kyle_Hi_10_01"); //Jak to robie? Absolutnie przepalony! Od rana do nocy pracuje plecami do garbu i nie zebralismy jeszcze niczego jadalnego.
+	AI_Output(self, hero, "Info_Mod_Kyle_Hi_01_01"); //Jak to robie? Absolutnie przepalony! Od rana do nocy pracuje plecami do garbu i nie zebralismy jeszcze niczego jadalnego.
 };
 
 INSTANCE Info_Mod_Kyle_WarumArbeit (C_INFO)
@@ -42,8 +42,8 @@ FUNC INT Info_Mod_Kyle_WarumArbeit_Condition()
 FUNC VOID Info_Mod_Kyle_WarumArbeit_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_WarumArbeit_15_00"); //Dlaczego tak ciezko pracujesz? To nie jest tak jak Ty.
-	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_10_01"); //Zamknac usta. Thorus uwaza, ze mnie to rozbije. Ale wycial sie z nim.
-	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_10_02"); //Czy jest jasne, czy to byl taki dobry pomysl, ze pozwolil mi pracowac tak blisko jego tronu......
+	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_01_01"); //Zamknac usta. Thorus uwaza, ze mnie to rozbije. Ale wycial sie z nim.
+	AI_Output(self, hero, "Info_Mod_Kyle_WarumArbeit_01_02"); //Czy jest jasne, czy to byl taki dobry pomysl, ze pozwolil mi pracowac tak blisko jego tronu......
 };
 
 INSTANCE Info_Mod_Kyle_SchatzImSchlammsee (C_INFO)
@@ -68,10 +68,10 @@ FUNC INT Info_Mod_Kyle_SchatzImSchlammsee_Condition()
 FUNC VOID Info_Mod_Kyle_SchatzImSchlammsee_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_SchatzImSchlammsee_15_00"); //Sluchaj tutaj. Ta rzecz z skarbem....
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_01"); //Nie masz go, to powinno byc oczywiste!
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_02"); //Po prostu szeptalem to do Gravo, zeby nie biegal przez moja chate tysiac razy dziennie.
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_03"); //Moglem powiedziec innym, ale z Gravo nie pomoglo mi, ze umiescilem mój kameralny garnek w jednym drzwiach.
-	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_10_04"); //Niech dlugo po czyms kopie. Kto wie, moze kiedys znajdzie zyle wodna!
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_01"); //Nie masz go, to powinno byc oczywiste!
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_02"); //Po prostu szeptalem to do Gravo, zeby nie biegal przez moja chate tysiac razy dziennie.
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_03"); //Moglem powiedziec innym, ale z Gravo nie pomoglo mi, ze umiescilem mój kameralny garnek w jednym drzwiach.
+	AI_Output(self, hero, "Info_Mod_Kyle_SchatzImSchlammsee_01_04"); //Niech dlugo po czyms kopie. Kto wie, moze kiedys znajdzie zyle wodna!
 
 	B_LogEntry	(TOPIC_MOD_GRAVO_SCHATZ, "Kyle stworzyl skarb, aby pozbyc sie Gravo.");
 };
@@ -98,12 +98,12 @@ FUNC INT Info_Mod_Kyle_Lagermusik_Condition()
 FUNC VOID Info_Mod_Kyle_Lagermusik_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_00"); //Gravo naprawde cos znalazl. Miejsce, do którego go wyslales.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_01"); //Stara moneta, a moze co?
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_01"); //Stara moneta, a moze co?
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_02"); //Nie. Garaz i Pacho przechowali tam swoje instrumenty muzyczne.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_03"); //Moze powinienem pracowac jako sprzedawca fortuny?
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_04"); //Oto moja nastepna przepowiednia: Gravo bedzie raz jeszcze przechodzic przez chate codziennie, jak poprzednio.
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_03"); //Moze powinienem pracowac jako sprzedawca fortuny?
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_04"); //Oto moja nastepna przepowiednia: Gravo bedzie raz jeszcze przechodzic przez chate codziennie, jak poprzednio.
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_05"); //Nie sadze. Teraz chce przejsc do tworzenia muzyki.
-	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_10_06"); //Tak? To byloby fantastyczne. Miejmy nadzieje, ze daleko ode mnie.
+	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_06"); //Tak? To byloby fantastyczne. Miejmy nadzieje, ze daleko ode mnie.
 
 	if (!Npc_KnowsInfo(hero, Info_Mod_Kyle_SchatzImSchlammsee))	{
 		B_GivePlayerXP	(100);
@@ -137,8 +137,8 @@ FUNC INT Info_Mod_Kyle_KGBuddler_Condition()
 FUNC VOID Info_Mod_Kyle_KGBuddler_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Kyle_KGBuddler_15_00"); //Chcesz ponownie pracowac jako kopaczka?
-	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_10_01"); //Zatrzymajmy sie! Ten wieczny rozdrobnienie w dawnej kopalni bylo straszne.
-	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_10_02"); //Z drugiej strony, praca w terenie to czysta regeneracja.
+	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_01_01"); //Zatrzymajmy sie! Ten wieczny rozdrobnienie w dawnej kopalni bylo straszne.
+	AI_Output(self, hero, "Info_Mod_Kyle_KGBuddler_01_02"); //Z drugiej strony, praca w terenie to czysta regeneracja.
 };
 
 INSTANCE Info_Mod_Kyle_Pickpocket (C_INFO)

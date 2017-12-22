@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Alvro_Hi_Condition()
 
 FUNC VOID Info_Mod_Alvro_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvro_Hi_02_00"); //Wyjsc stad!
+	AI_Output(self, hero, "Info_Mod_Alvro_Hi_01_00"); //Wyjsc stad!
 
 	AI_StopProcessInfos	(self);
 };
@@ -46,11 +46,11 @@ FUNC INT Info_Mod_Alvro_Melasse_Condition()
 FUNC VOID Info_Mod_Alvro_Melasse_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_00"); //Slysze, ze dostales melase.
-	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_01"); //Zadnego z Twoich interesów!
+	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_01_01"); //Zadnego z Twoich interesów!
 	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_02"); //Jestem piratem i potrzebuje rzeczy.
-	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_02_03"); //Jestes piratem?
+	AI_Output(self, hero, "Info_Mod_Alvro_Melasse_01_03"); //Jestes piratem?
 	AI_Output(hero, self, "Info_Mod_Alvro_Melasse_15_04"); //No tak, cóz, tu wyprowadzmy melase.
-	AI_Output(self, hero, "Info_MOd_Alvro_Melasse_02_05"); //I-I nie moge - nie moge.
+	AI_Output(self, hero, "Info_MOd_Alvro_Melasse_01_05"); //I-I nie moge - nie moge.
 
 	CreateInvItems	(self, ItFo_Melasse, 15);
 	CreateInvItems	(self, Mod_BillsRumRezept, 1);

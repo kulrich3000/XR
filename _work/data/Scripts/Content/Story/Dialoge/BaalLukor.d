@@ -15,13 +15,13 @@ FUNC INT Info_Mod_Lukor_Hi_Condition()
 
 FUNC VOID Info_Mod_Lukor_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_00"); //Jest niewierny glupiec, który wypedzil mojego mistrza.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_00"); //Jest niewierny glupiec, który wypedzil mojego mistrza.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_01"); //Co jeszcze zyjesz?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_02"); //Byc moze go wyrzuciles. Wczesniej jednak dostalem czesc jego mocy.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_02"); //Byc moze go wyrzuciles. Wczesniej jednak dostalem czesc jego mocy.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_03"); //O czym pan mówi?
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_04"); //Wszyscy oni podazaja za obcymi idolami, bogami lub zwyklym mamonem. Wszyscy zaplaca swoja krwia.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_04"); //Wszyscy oni podazaja za obcymi idolami, bogami lub zwyklym mamonem. Wszyscy zaplaca swoja krwia.
 	AI_Output(hero, self, "Info_Mod_Lukor_Hi_15_05"); //Wyglada na typ znajomego.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_31_06"); //W miedzyczasie medytowalem nad dniami i tygodniami, nieustannie nauczylem sie uwalniac i wykorzystywac sily, które wykraczaja daleko poza mozliwosci zwyklego maga, a nawet bojownika.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_08_06"); //W miedzyczasie medytowalem nad dniami i tygodniami, nieustannie nauczylem sie uwalniac i wykorzystywac sily, które wykraczaja daleko poza mozliwosci zwyklego maga, a nawet bojownika.
 
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 
@@ -32,9 +32,9 @@ FUNC VOID Info_Mod_Lukor_Hi_Info()
 
 FUNC VOID Info_Mod_Lukor_Hi_D()
 {
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_00"); //Teraz wreszcie spotkalem sojuszników, slug, którzy sa lojalni wobec swego Mistrza i Stwórcy.
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_01"); //Tak, mój pan..... I oto jest niewiernym, który go wygnal.....
-	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_31_02"); //Z wasza krwia podleje teraz oltarz. Die!
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_00"); //Teraz wreszcie spotkalem sojuszników, slug, którzy sa lojalni wobec swego Mistrza i Stwórcy.
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_01"); //Tak, mój pan..... I oto jest niewiernym, który go wygnal.....
+	AI_Output(self, hero, "Info_Mod_Lukor_Hi_D_08_02"); //Z wasza krwia podleje teraz oltarz. Die!
 	
 	Info_ClearChoices	(Info_Mod_Lukor_Hi);
 

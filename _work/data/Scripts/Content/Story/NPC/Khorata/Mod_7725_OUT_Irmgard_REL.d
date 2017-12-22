@@ -4,7 +4,7 @@ instance Mod_7725_OUT_Irmgard_REL (Npc_Default)
 	name 		= "Irmard";	//Halvors Frau
 	guild 		= GIL_OUT;
 	id 			= 7725;
-	voice 		= 17;
+	voice		= 0;
 	flags       = 0;																
 	npctype		= NPCTYPE_MAIN;
 	

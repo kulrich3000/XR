@@ -22,17 +22,17 @@ FUNC VOID Info_Mod_Bones_IR_Hi_Info()
 	|| (Mod_CassiaDabei > 0)
 	{
 		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_01"); //Dlaczego wygladasz tak skromnie?
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_02"); //Um, oh, nie, nie, nie tak wazne....
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_04_02"); //Um, oh, nie, nie, nie tak wazne....
 		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_03"); //Miales piekna kobiete, której chciales na pokladzie.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_04"); //(ujednolicone) Uh....... ona nie byla moim typem..... Dokladnie.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_04_04"); //(ujednolicone) Uh....... ona nie byla moim typem..... Dokladnie.
 	}
 	else if (Mod_SagittaDabei > 0)
 	|| (Mod_UrielaDabei > 0)
 	{
 		AI_Output(hero, self, "Info_Mod_Bones_IR_Hi_15_05"); //Och, nie wygladasz tak dobrze....
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_06"); //Och, tylko sie zamknal.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_07"); //Najpierw jedyna kobieta na pokladzie to stara ciotka ziolowa, a potem nie moge nawet dostac sie, aby pokazac jej, czym jestem, poniewaz moje trawienie nagle szaleje.
-		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_01_08"); //Dopiero teraz zaczynam sie czuc lepiej.....
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_04_06"); //Och, tylko sie zamknal.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_04_07"); //Najpierw jedyna kobieta na pokladzie to stara ciotka ziolowa, a potem nie moge nawet dostac sie, aby pokazac jej, czym jestem, poniewaz moje trawienie nagle szaleje.
+		AI_Output(self, hero, "Info_Mod_Bones_IR_Hi_04_08"); //Dopiero teraz zaczynam sie czuc lepiej.....
 	};
 };
 
@@ -62,7 +62,7 @@ FUNC VOID Info_Mod_Bones_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Bones_IR_GehtLos_01_00"); //Co? Po tym zlego rejsu! Zapomnij o tym! Nie stawiam nogi na wyspie.....
+	AI_Output(self, hero, "Info_Mod_Bones_IR_GehtLos_04_00"); //Co? Po tym zlego rejsu! Zapomnij o tym! Nie stawiam nogi na wyspie.....
 
 	AI_StopProcessInfos	(self);
 };

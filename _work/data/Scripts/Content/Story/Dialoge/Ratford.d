@@ -35,7 +35,7 @@ FUNC VOID Info_Mod_Ratford_Hi_Info()
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_05"); //Nie mozesz byc powazny!
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_28_05"); //Nie mozesz byc powazny!
 
 	TRIA_Next(Ratford);
 
@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Ratford_Hi_Info()
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_30_09"); //Ja równiez ja. Zróbmy kilka piwa.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_28_09"); //Ja równiez ja. Zróbmy kilka piwa.
 
 	TRIA_Next(Ratford);
 
@@ -99,7 +99,7 @@ FUNC VOID Info_Mod_Ratford_Hi_B()
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_30_02"); //Tak, pieklo!
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_B_28_02"); //Tak, pieklo!
 
 	TRIA_Next(Ratford);
 
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Ratford_Hi_A()
 
 	TRIA_Next(Drax);
 
-	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_06_04"); //Dopóki pozwalaja nam zrobic to, co robimy w pokoju.
+	AI_Output(self, hero, "Info_Mod_Ratford_Hi_A_28_04"); //Dopóki pozwalaja nam zrobic to, co robimy w pokoju.
 
 	TRIA_Next(Ratford);
 

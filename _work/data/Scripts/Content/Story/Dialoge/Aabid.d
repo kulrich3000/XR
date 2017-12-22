@@ -18,11 +18,11 @@ FUNC VOID Info_Mod_Aabid_Hi_Info()
 {
 	B_Say	(hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_00"); //Nazywam sie Aabid. Jestem tu jednym z oszustów i jednoczesnie handlarzem niezwyklymi odmianami tytoniu i lodyg ziól bagiennych.
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_01_00"); //Nazywam sie Aabid. Jestem tu jednym z oszustów i jednoczesnie handlarzem niezwyklymi odmianami tytoniu i lodyg ziól bagiennych.
 	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_01"); //Ciekawe. Czy moge zobaczyc Panstwa oferte?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_02"); //Nie, nie moge tego zrobic.
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_01_02"); //Nie, nie moge tego zrobic.
 	AI_Output(hero, self, "Info_Mod_Aabid_Hi_15_03"); //Dlaczego nie?
-	AI_Output(self, hero, "Info_Mod_Aabid_Hi_09_04"); //Czekam od jakiegos czasu na dostawe trzech paczek, ale wydaje mi sie, ze chlopaki mnie zapomnieli i po prostu nie moge wyjsc z ukrycia.
+	AI_Output(self, hero, "Info_Mod_Aabid_Hi_01_04"); //Czekam od jakiegos czasu na dostawe trzech paczek, ale wydaje mi sie, ze chlopaki mnie zapomnieli i po prostu nie moge wyjsc z ukrycia.
 };
 
 INSTANCE Info_Mod_Aabid_Aufgabe (C_INFO)
@@ -48,16 +48,16 @@ FUNC INT Info_Mod_Aabid_Aufgabe_Condition()
 FUNC VOID Info_Mod_Aabid_Aufgabe_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_00"); //Czy przyniose wam pakiety chwastów?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_01"); //To byloby naprawde dobre, gdybyscie to zrobili. Ale dlaczego chcialbys to zrobic?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_01_01"); //To byloby naprawde dobre, gdybyscie to zrobili. Ale dlaczego chcialbys to zrobic?
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_02"); //Chcialbym dolaczyc do oszustów. Potrzebuje jednak panstwa glosu.
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_03"); //Czy chcialbys oddac glos po tym zadaniu?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_04"); //Jesli otrzymasz wszystkie pakiety, oddam oczywiscie mój glos.
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_01_04"); //Jesli otrzymasz wszystkie pakiety, oddam oczywiscie mój glos.
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_05"); //Ladunek. Gdzie nalezy odebrac paczki?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_06"); //W miescie mozna znalezc wszystkich trzech dealerów. Jej imiona to Meldor, Borka i wreszcie Jason, militaman.
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_01_06"); //W miescie mozna znalezc wszystkich trzech dealerów. Jej imiona to Meldor, Borka i wreszcie Jason, militaman.
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_07"); //Ktos z milicji handlujacej bagnista ambrozja?
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_08"); //Czy uwazasz, ze wszyscy oni przestrzegaja swoich zasad?
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_01_08"); //Czy uwazasz, ze wszyscy oni przestrzegaja swoich zasad?
 	AI_Output(hero, self, "Info_Mod_Aabid_Aufgabe_15_09"); //Nie. Wszystko w porzadku, zobacze je trzy razy.
-	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_09_10"); //Dobre. Wróc po otrzymaniu pakietów.
+	AI_Output(self, hero, "Info_Mod_Aabid_Aufgabe_01_10"); //Dobre. Wróc po otrzymaniu pakietów.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_AABID_PAKET, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_RUNNING);
@@ -87,19 +87,19 @@ FUNC INT Info_Mod_Aabid_HabPakete_Condition()
 FUNC VOID Info_Mod_Aabid_HabPakete_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_00"); //Otrzymalem wszystkie paczki.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_01"); //To ty mnie oszukujesz!
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_01_01"); //To ty mnie oszukujesz!
 	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_02"); //Nie, tutaj sa.
 
 	B_GiveInvItems	(hero, self, ItMi_HerbPaket, 3);
 	Npc_RemoveInvItems(self, ItMi_HerbPaket, 3);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_04"); //Oni wszyscy, jak to zrobiliscie?
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_01_04"); //Oni wszyscy, jak to zrobiliscie?
 	AI_Output(hero, self, "Info_Mod_Aabid_HabPakete_15_05"); //Powiedzialbym: Czysta intuicja.
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_06"); //Nie moge Ci wystarczajaco podziekowac. Tutaj wezmy to zloto jako znak mojej wdziecznosci.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_01_06"); //Nie moge Ci wystarczajaco podziekowac. Tutaj wezmy to zloto jako znak mojej wdziecznosci.
 
 	B_GiveInvItems	(self, hero, ItMi_Gold, 500);
 
-	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_09_07"); //Poza tym otrzymuje mój glos.
+	AI_Output(self, hero, "Info_Mod_Aabid_HabPakete_01_07"); //Poza tym otrzymuje mój glos.
 
 	B_LogEntry	(TOPIC_MOD_ASS_AABID_PAKET, "Przynioslam Aabid wszystkie pakty i byl bardzo zadowolony z mojego wystepu. Najwyrazniej nie spodziewal sie tego. No cóz, to dobrze, bo teraz mam jeden glos i 500 zlotych monet bogatszych.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_AABID_PAKET, LOG_SUCCESS);

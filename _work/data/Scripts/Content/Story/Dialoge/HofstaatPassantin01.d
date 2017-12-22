@@ -18,7 +18,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Fluffy_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Fluffy_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Fluffy_26_00"); //Cóz, król ma swojego psa pod kontrola....
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Fluffy_19_00"); //Cóz, król ma swojego psa pod kontrola....
 
 	Mod_SL_PartFluffy = 4;
 
@@ -45,7 +45,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Lochgraeber_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Lochgraeber_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Lochgraeber_26_00"); //Slyszysz to? Jakis zielony grobowiec w jedna noc wykopal dziure stukrotnie glebiej niz nasz grób!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Lochgraeber_19_00"); //Slyszysz to? Jakis zielony grobowiec w jedna noc wykopal dziure stukrotnie glebiej niz nasz grób!
 
 	Mod_SL_PartLochgraeber = 3;
 
@@ -72,7 +72,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Geliebte_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Geliebte_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geliebte_26_00"); //Slyszysz to? Najwyrazniej niektóre mlode korony zdolaly uwiesc królewska kochanke!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geliebte_19_00"); //Slyszysz to? Najwyrazniej niektóre mlode korony zdolaly uwiesc królewska kochanke!
 
 	Mod_SL_PartGeliebte = 7;
 
@@ -99,7 +99,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Blind_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Blind_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Blind_26_00"); //Czy slyszales? W Khoracie juz nie mozemy sprzedawac przysmaków! Sadza, ze to slepe!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Blind_19_00"); //Czy slyszales? W Khoracie juz nie mozemy sprzedawac przysmaków! Sadza, ze to slepe!
 
 	Mod_SL_PartBlind = 4;
 
@@ -128,7 +128,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Brunnen_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Brunnen_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Brunnen_26_00"); //Czy blizej przyjrzales sie zamkowi? Jest to swego rodzaju szarpana i nie pompatyczna.
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Brunnen_19_00"); //Czy blizej przyjrzales sie zamkowi? Jest to swego rodzaju szarpana i nie pompatyczna.
 
 	Mod_SL_PartBrunnen = 2;
 
@@ -155,7 +155,7 @@ FUNC INT Info_Mod_HofstaatPassantin01_Geschwaecht_Condition()
 
 FUNC VOID Info_Mod_HofstaatPassantin01_Geschwaecht_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geschwaecht_26_00"); //Tak wiec.... Ostatnio wiele rzeczy dzieje sie zle!
+	AI_Output(self, hero, "Info_Mod_HofstaatPassantin01_Geschwaecht_19_00"); //Tak wiec.... Ostatnio wiele rzeczy dzieje sie zle!
 
 	Mod_SL_Schwaechen = 3;
 

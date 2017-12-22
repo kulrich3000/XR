@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Entfuehrer_Pisser_Hi_Condition()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_01_00"); //Zatrzymaj sie! Czego od mnie oczekujesz?
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_05_00"); //Zatrzymaj sie! Czego od mnie oczekujesz?
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
@@ -28,10 +28,10 @@ FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_Info()
 
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_C()
 {
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_00"); //Jestes tym, którego szukamy. Móglbym panstwa teraz wezwac na glos i zaatakowac. Nie mielibysmy zadnych szans.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_00"); //Jestes tym, którego szukamy. Móglbym panstwa teraz wezwac na glos i zaatakowac. Nie mielibysmy zadnych szans.
 	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_C_15_01"); //I dlaczego tego nie zrobisz?
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_02"); //Mam troje dzieci do wyzywienia, a z mieczem w klatce piersiowej ciezko zarabiac pieniadze.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_01_03"); //Sugeruje, zebyscie pozwolili mi odejsc i nie bede apelowal o pomoc.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_02"); //Mam troje dzieci do wyzywienia, a z mieczem w klatce piersiowej ciezko zarabiac pieniadze.
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_C_05_03"); //Sugeruje, zebyscie pozwolili mi odejsc i nie bede apelowal o pomoc.
 
 	Info_ClearChoices	(Info_Mod_Entfuehrer_Pisser_Hi);
 
@@ -49,7 +49,7 @@ FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_B()
 FUNC VOID Info_Mod_Entfuehrer_Pisser_Hi_A()
 {
 	AI_Output(hero, self, "Info_Mod_Entfuehrer_Pisser_Hi_A_15_00"); //Zastanawialem sie, czy mozesz mi pomóc wybrac kwiaty.
-	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_01_01"); //(niedotkniete) Ha-ha. (pauza)
+	AI_Output(self, hero, "Info_Mod_Entfuehrer_Pisser_Hi_A_05_01"); //(niedotkniete) Ha-ha. (pauza)
 
 	Info_Mod_Entfuehrer_Pisser_Hi_C();
 };

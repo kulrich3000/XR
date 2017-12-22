@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Gorn_IR_Hi_Condition()
 FUNC VOID Info_Mod_Gorn_IR_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Gorn_IR_Hi_15_00"); //A co sadzisz o wyspie?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_12_01"); //Nie wiem, jak radzic sobie z magiczna falbanka.... ale jestem pewien, ze moge uzyc siekiery, by kopnac ciezka osade na nieumarlych dranie demoniczne.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hi_03_01"); //Nie wiem, jak radzic sobie z magiczna falbanka.... ale jestem pewien, ze moge uzyc siekiery, by kopnac ciezka osade na nieumarlych dranie demoniczne.
 };
 
 INSTANCE Info_Mod_Gorn_IR_Hebel (C_INFO)
@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Gorn_IR_Hebel_Info()
 {
 	B_Say	(hero, self, "$IRDORATHHEBEL");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_12_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Hebel_03_00"); //Oczywiscie tak jest. Moze to moze, ze gdzies nas zaprowadzi....
 
 	Mod_IR_Hebel = 1;
 
@@ -74,9 +74,9 @@ FUNC INT Info_Mod_Gorn_IR_Ambient01_Condition()
 
 FUNC VOID Info_Mod_Gorn_IR_Ambient01_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_00"); //Czlowiek, oh, czlowiek, nieumarly i demony moga byc trudne i pchajace.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_03_00"); //Czlowiek, oh, czlowiek, nieumarly i demony moga byc trudne i pchajace.
 	AI_Output(hero, self, "Info_Mod_Gorn_IR_Ambient01_15_01"); //Mam nadzieje, ze nadal sie trzymasz?
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_12_02"); //Czy kochasz mnie? Najwyzszy czas nadszedl najwyzszy czas, aby dostali na kapeluszu ciezki kawalek stali.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_Ambient01_03_02"); //Czy kochasz mnie? Najwyzszy czas nadszedl najwyzszy czas, aby dostali na kapeluszu ciezki kawalek stali.
 
 	AI_StopProcessInfos	(self);
 };
@@ -108,7 +108,7 @@ FUNC VOID Info_Mod_Gorn_IR_GehtLos_Info()
 {
 	B_Say	(hero, self, "$IRDORATHGEHTLOS");
 
-	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_12_00"); //Pewne. Zanim zas mój topór zostanie calkowicie zjedzony przez slona wode, wówczas czaszka jakiejs nieumarlej czaszki powinna sie rozbic.
+	AI_Output(self, hero, "Info_Mod_Gorn_IR_GehtLos_03_00"); //Pewne. Zanim zas mój topór zostanie calkowicie zjedzony przez slona wode, wówczas czaszka jakiejs nieumarlej czaszki powinna sie rozbic.
 
 	Mod_IR_Dabei += 1;
 

@@ -15,9 +15,9 @@ FUNC INT Info_Mod_AufgebrachteBuergerin_Hi_Condition()
 
 FUNC VOID Info_Mod_AufgebrachteBuergerin_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_00"); //Zaprawde! To on!
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_19_00"); //Zaprawde! To on!
 	AI_Output(hero, self, "Info_Mod_AufgebrachteBuergerin_Hi_15_01"); //Spokojny, spokojny! Kto jest kim?
-	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_16_02"); //Jestes rzeznikiem! Morderca, zabójca!
+	AI_Output(self, hero, "Info_Mod_AufgebrachteBuergerin_Hi_19_02"); //Jestes rzeznikiem! Morderca, zabójca!
 
 	AI_StopProcessInfos	(self);
 

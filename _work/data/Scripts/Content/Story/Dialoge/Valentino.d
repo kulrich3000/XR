@@ -18,7 +18,7 @@ FUNC VOID Info_Mod_Valentino_Hi_Info()
 {
 	B_Say (hero, self, "$WHOAREYOU");
 
-	AI_Output(self, hero, "Info_Mod_Valentino_Hi_03_01"); //Czego od mnie oczekujesz?
+	AI_Output(self, hero, "Info_Mod_Valentino_Hi_09_01"); //Czego od mnie oczekujesz?
 };
 
 INSTANCE Info_Mod_Valentino_Kidnapped (C_INFO)
@@ -43,7 +43,7 @@ FUNC INT Info_Mod_Valentino_Kidnapped_Condition()
 
 FUNC VOID Info_Mod_Valentino_Kidnapped_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_03_00"); //Wykonal pan wspaniala prace. Czy sadzisz, ze plamy krwi kiedykolwiek zniknely?
+	AI_Output(self, hero, "Info_Mod_Valentino_Kidnapped_09_00"); //Wykonal pan wspaniala prace. Czy sadzisz, ze plamy krwi kiedykolwiek zniknely?
 
 	B_GivePlayerXP	(300);
 
@@ -118,7 +118,7 @@ FUNC INT Info_Mod_Valentino_Mitternachtsspuk_Condition()
 {
 	if (Mod_Fernando_Mitternachtsspuk == 1)
 	&& (Wld_IsTime(22,00,07,45))
-	&& (Npc_GetDistToWP(hero, "NW_CITY_UPTOWN_HUT_03_04") < 500)
+	&& (Npc_GetDistToWP(hero, "NW_CITY_UPTOWN_HUT_09_04") < 500)
 	{
 		return 1;
 	};
@@ -126,17 +126,17 @@ FUNC INT Info_Mod_Valentino_Mitternachtsspuk_Condition()
 
 FUNC VOID Info_Mod_Valentino_Mitternachtsspuk_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_00"); //Kto, co ty robisz?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_00"); //Kto, co ty robisz?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_01"); //Zlapalem tam kogos.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_02"); //Jaka jest wiec róznica? Nic nie jest zabronione.
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_02"); //Jaka jest wiec róznica? Nic nie jest zabronione.
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_03"); //Zobaczmy, czy jej maz sie zgadza.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_04"); //Jakiego fuku od mnie oczekujesz?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_04"); //Jakiego fuku od mnie oczekujesz?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_05"); //Czy czesciej spedzasz tu noca? I czy czasami zdarza sie to dziko?
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_06"); //Oczywiscie nie!
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_06"); //Oczywiscie nie!
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_07"); //Nikogo nie powiem. Ale Fernando nie spi z twojego powodu.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_08"); //Tak, jestesmy tu od czasu do czasu. Czy to wystarczy?
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_08"); //Tak, jestesmy tu od czasu do czasu. Czy to wystarczy?
 	AI_Output(hero, self, "Info_Mod_Valentino_Mitternachtsspuk_15_09"); //Oczywiscie.
-	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_03_10"); //Potem wyjmij z tego fuge!
+	AI_Output(self, hero, "Info_Mod_Valentino_Mitternachtsspuk_09_10"); //Potem wyjmij z tego fuge!
 
 	B_LogEntry	(TOPIC_MOD_FERNANDO_MITTERNACHTSSPUK, "Valentino i obywatel bezwiednie powoduja koszmary Fernando.");
 };
@@ -164,9 +164,9 @@ FUNC INT Info_Mod_Valentino_SonjaFreier_Condition()
 FUNC VOID Info_Mod_Valentino_SonjaFreier_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_00"); //Czy regularnie odwiedzales Sonje?
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_01"); //Co to za suka? Czy to mówi?
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_09_01"); //Co to za suka? Czy to mówi?
 	AI_Output(hero, self, "Info_Mod_Valentino_SonjaFreier_15_02"); //Nie, po prostu spokojny.
-	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_03_03"); //Wychodze tylko z zamoznymi mieszkancami tego miasta. Wiekszosc czasu. Wiec zostaw mnie sam na sam z ta dziwka!
+	AI_Output(self, hero, "Info_Mod_Valentino_SonjaFreier_09_03"); //Wychodze tylko z zamoznymi mieszkancami tego miasta. Wiekszosc czasu. Wiec zostaw mnie sam na sam z ta dziwka!
 };
 
 INSTANCE Info_Mod_Valentino_Pickpocket (C_INFO)

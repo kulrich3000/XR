@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Sharky_Hi_Condition()
 FUNC VOID Info_Mod_Sharky_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Sharky_Hi_15_00"); //Hej, dostales cos dla mnie?
-	AI_Output(self, hero, "Info_Mod_Sharky_Hi_10_01"); //Tak, za dobra rude i zloto mozna od mnie kupic kilka przydatnych rzeczy.
+	AI_Output(self, hero, "Info_Mod_Sharky_Hi_01_01"); //Tak, za dobra rude i zloto mozna od mnie kupic kilka przydatnych rzeczy.
 };
 
 INSTANCE Info_Mod_Sharky_Trade (C_INFO)
@@ -43,7 +43,7 @@ FUNC INT Info_Mod_Sharky_Trade_Condition()
 FUNC VOID Info_Mod_Sharky_Trade_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Sharky_Trade_15_00"); //Zobaczmy co masz do zaoferowania.
-	AI_Output(self, hero, "Info_Mod_Sharky_Trade_10_01"); //Wszystko, czego potrzebujesz, aby przetrwac.
+	AI_Output(self, hero, "Info_Mod_Sharky_Trade_01_01"); //Wszystko, czego potrzebujesz, aby przetrwac.
 
 	Backup_Questitems();
 

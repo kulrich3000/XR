@@ -15,7 +15,7 @@ FUNC INT Info_Mod_Wesen_10_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_10_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_10_Hi_18_00"); //Nie milcze jak grobowiec, grób, grób, milcze jak grób, grób, grób, grób, milcze, milcze.... Cisze...
+	AI_Output(self, hero, "Info_Mod_Wesen_10_Hi_10_00"); //Nie milcze jak grobowiec, grób, grób, milcze jak grób, grób, grób, grób, milcze, milcze.... Cisze...
 
 	AI_StopProcessInfos	(self);
 };

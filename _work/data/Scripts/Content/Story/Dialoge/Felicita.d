@@ -18,7 +18,7 @@ FUNC INT Info_Mod_Felicita_Hi_Condition()
 
 FUNC VOID Info_Mod_Felicita_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Felicita_Hi_16_00"); //Slowo, nieznajomy. Wygladasz tak schludnie. Czy chcialbys mnie laski?
+	AI_Output(self, hero, "Info_Mod_Felicita_Hi_19_00"); //Slowo, nieznajomy. Wygladasz tak schludnie. Czy chcialbys mnie laski?
 };
 
 INSTANCE Info_Mod_Felicita_AufgabeJa (C_INFO)
@@ -45,13 +45,13 @@ FUNC VOID Info_Mod_Felicita_AufgabeJa_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_00"); //Chetnie pomoze tak pieknej kobiecie. Poza tym mam troche czasu.
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_01"); //Co moge dla Ciebie zrobic?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_02"); //Jestem Felicita, zona Augusta, strazniczka.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_03"); //Teraz kobiety w mojej okolicy szepcza, on nie tylko pilnuje bramy, gdy wieczorem robi sie ciemno.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_04"); //Chcialbym wiedziec, czy cos jest prawda.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_02"); //Jestem Felicita, zona Augusta, strazniczka.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_03"); //Teraz kobiety w mojej okolicy szepcza, on nie tylko pilnuje bramy, gdy wieczorem robi sie ciemno.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_04"); //Chcialbym wiedziec, czy cos jest prawda.
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_05"); //Moge to zrobic. Dlaczego jednak nie sprawdzasz sie sam?
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_06"); //Boje sie ciemnosci. Kiedy bylem dzieckiem, mialem - mialem
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_06"); //Boje sie ciemnosci. Kiedy bylem dzieckiem, mialem - mialem
 	AI_Output(hero, self, "Info_Mod_Felicita_AufgabeJa_15_07"); //Widze. Zajme sie tym.
-	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_16_08"); //Dziekuje bardzo. Znajdziesz mnie w starej dzielnicy z prawej strony.
+	AI_Output(self, hero, "Info_Mod_Felicita_AufgabeJa_19_08"); //Dziekuje bardzo. Znajdziesz mnie w starej dzielnicy z prawej strony.
 
 	Log_CreateTopic	(TOPIC_MOD_ASS_FELICITA, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_RUNNING);
@@ -112,17 +112,17 @@ FUNC INT Info_Mod_Felicita_Belauscht_Condition()
 FUNC VOID Info_Mod_Felicita_Belauscht_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_00"); //Obawiam sie, ze nie moge powiedziec dobrego wieczoru.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_01"); //Wiec zlapales mojego meza?
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_01"); //Wiec zlapales mojego meza?
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_02"); //Nie w jaskrawy sposób. Slyszalem, jak rozmawial z kobieta. Pod duza brzoza na zewnatrz.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_03"); //To jest dla mnie wystarczajaco dobre. Ten szal! Odkad polknal wszystkie te zle rzeczy, byl jak zupelny zastepca.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_03"); //To jest dla mnie wystarczajaco dobre. Ten szal! Odkad polknal wszystkie te zle rzeczy, byl jak zupelny zastepca.
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_04"); //Masz na mysli tego dawce radosci?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_05"); //Dokladnie. Juz wystarczy. Bede sie rozwiesc i wyrzuce go z domu.
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_06"); //Tutaj dam ci ten zloty pierscien.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_05"); //Dokladnie. Juz wystarczy. Bede sie rozwiesc i wyrzuce go z domu.
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_06"); //Tutaj dam ci ten zloty pierscien.
 
 	B_GiveInvItems	(self, hero, ItMi_Hochzeitsring, 1);
 
 	AI_Output(hero, self, "Info_Mod_Felicita_Belauscht_15_07"); //Twoja pierscien slubny?
-	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_16_08"); //Dawniej byl. Wez to pod uwage!
+	AI_Output(self, hero, "Info_Mod_Felicita_Belauscht_19_08"); //Dawniej byl. Wez to pod uwage!
 
 	B_LogEntry	(TOPIC_MOD_ASS_FELICITA, "Poszedl do stróza sierpnia z inna kobieta i powiedzial Felicita. Dala mi za to pierscionek weselny.");
 	B_SetTopicStatus	(TOPIC_MOD_ASS_FELICITA, LOG_SUCCESS);

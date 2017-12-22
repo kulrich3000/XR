@@ -18,9 +18,9 @@ FUNC INT Info_Mod_Buster_Hi_Condition()
 
 FUNC VOID Info_Mod_Buster_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Buster_Hi_13_00"); //Hej, znowu wygladasz dosc sztywnie, tak jak nie rozciagales konczyn od dluzszego czasu.
+	AI_Output(self, hero, "Info_Mod_Buster_Hi_06_00"); //Hej, znowu wygladasz dosc sztywnie, tak jak nie rozciagales konczyn od dluzszego czasu.
 	AI_Output(hero, self, "Info_Mod_Buster_Hi_15_01"); //Tak, kilka tygodni pod kamieniami....
-	AI_Output(self, hero, "Info_Mod_Buster_Hi_13_02"); //Móglbym Ci pomóc w przywróceniu Twojej zwinnosci.
+	AI_Output(self, hero, "Info_Mod_Buster_Hi_06_02"); //Móglbym Ci pomóc w przywróceniu Twojej zwinnosci.
 
 	Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER, LOG_NOTE);
 	B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER, "Buster moze mnie nauczyc, jak sie lepiej poruszac.");
@@ -54,9 +54,9 @@ FUNC VOID Info_Mod_Buster_Lernen_Info()
 
 	if (B_TeachThiefTalent (self, hero, NPC_TALENT_ACROBAT))
 	{
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_01"); //Jesli kontrolujesz swoje cialo, bedziesz mógl przeskoczyc znacznie dalej.
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_02"); //Nauczysz sie sam sie nawijac i ladujesz prawidlowo od jesieni. Pamietaj jednak, ze nie jestes niesmiertelny!
-		AI_Output(self, hero, "Info_Mod_Buster_Lernen_13_03"); //Równiez w walce z akrobatyka jest bardzo pomocne. Mozesz szybko zmienic dystans do przeciwnika. Powodzenia!
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_01"); //Jesli kontrolujesz swoje cialo, bedziesz mógl przeskoczyc znacznie dalej.
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_02"); //Nauczysz sie sam sie nawijac i ladujesz prawidlowo od jesieni. Pamietaj jednak, ze nie jestes niesmiertelny!
+		AI_Output(self, hero, "Info_Mod_Buster_Lernen_06_03"); //Równiez w walce z akrobatyka jest bardzo pomocne. Mozesz szybko zmienic dystans do przeciwnika. Powodzenia!
 	};
 };
 

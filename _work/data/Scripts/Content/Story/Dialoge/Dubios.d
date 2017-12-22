@@ -1,9 +1,9 @@
 FUNC VOID Info_Mod_Dubios_Hi()
 {
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_00"); //.... co to jest ten bogaty worek biegnacy posrodku dzikiej przyrody. Musi oczekiwac, ze zostanie zaatakowany.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_01"); //A posladki tak uporczywie wisialy na jego pierscieniu.... Dalem mu to jesc.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_02"); //Mial wiecej niz wystarczajaco duzo zlota i srebra. Z latwoscia mógl go z nim zabrac do swojego wilgotnego grobu.
-	AI_Output(self, hero, "Info_Mod_Dubios_Hi_08_03"); //Ale kto tu mamy? Kolejny osiolek? Do niego!
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_00"); //.... co to jest ten bogaty worek biegnacy posrodku dzikiej przyrody. Musi oczekiwac, ze zostanie zaatakowany.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_01"); //A posladki tak uporczywie wisialy na jego pierscieniu.... Dalem mu to jesc.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_02"); //Mial wiecej niz wystarczajaco duzo zlota i srebra. Z latwoscia mógl go z nim zabrac do swojego wilgotnego grobu.
+	AI_Output(self, hero, "Info_Mod_Dubios_Hi_09_03"); //Ale kto tu mamy? Kolejny osiolek? Do niego!
 
 	B_LogEntry	(TOPIC_MOD_HEROLD_SIEGELRING, "Wyglada na to, ze dwie watpliwe postacie rabowaly mnie samych. Musieli opuscic mu pierscien. Teraz jest w swoim mokrym grobie....");
 };

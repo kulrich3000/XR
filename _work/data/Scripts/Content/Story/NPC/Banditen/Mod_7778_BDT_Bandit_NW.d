@@ -4,7 +4,7 @@ instance Mod_7778_BDT_Bandit_NW (Npc_Default)
 	name 		= "szef zbójni";
 	guild 		= GIL_STRF;
 	id 			= 7778;
-	voice 		= 12;
+	voice		= 0;
 	flags      	= 0;
 	npctype		= NPCTYPE_MAIN;
 	

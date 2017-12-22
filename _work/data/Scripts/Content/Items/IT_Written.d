@@ -1492,7 +1492,7 @@ func void UsePetuniaZettel ()
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Kiedy widzisz kandydata, uderzyles w niego i wylej go dodatkowym eliksirem. Bedzie marzyl, ze znajdzie piekny platek, w którym znajdowaly sie goblinowe matrony. Tam nalezy wziac przygotowany platek. Kandydat nastepnie wezmie arkusz do klienta i w koncu wiemy, kto jest naszym glównym celem. Wylacz kandydata i klienta i wróc do mnie."					);
+					Doc_PrintLines	( nDocID,  0, "Kiedy widzisz kandydata, uderzaj go i dodaj mu eliksiru. Bedzie marzyl, ze znajdzie piekny platek, w którym znajdowaly sie goblinowe matrony. Tam nalezy wziac przygotowany platek. Kandydat nastepnie wezmie arkusz do klienta i w koncu wiemy, kto jest naszym glównym celem. Wylacz kandydata i klienta i wróc do mnie."					);
 					Doc_PrintLine	( nDocID,  0, "P."					);
 					
 					Doc_Show		( nDocID );
@@ -1562,7 +1562,7 @@ INSTANCE ItWr_TheodorusBotschaft		(C_Item)
 	on_state[0]			=   UseTheodorusBotschaft;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]		=	"soll ich auf dem Gerüst am Marktplatz vorlesen";
+	TEXT[0]		=	"Na rusztowaniach na rynku przeczytam glosno";
 };
 func void UseTheodorusBotschaft ()
 {
@@ -7351,8 +7351,8 @@ instance ItWr_Map_HagenAL (C_Item)
 	on_state[0]	= Use_Map_HagenAL;
 
 	description	= name;
-	TEXT[0]		= "Lord Hagen hat die Stellen eingezeichnet,";
-	TEXT[1]		= "wo Sträflinge aus dem Minental sein sollen";
+	TEXT[0]		= "Pan Hagen narysowal linie,";
+	TEXT[1]		= "gdzie podobno sa skazani z Doliny Kopalni.";
 	TEXT[5]		= NAME_Value;
 	COUNT[5]	= value;
 };

@@ -18,13 +18,16 @@ AI\AI_INTERN\Species.d
 AI\AI_INTERN\PrintDebug.d
 AI\AI_INTERN\PrintPlus.d
 
+GFA\GFA_G2.src
+
+Neuerungen\HeroInventarWert.d
+
 Spine\Spine.src
 
 FUNKTIONEN\Erfolge_Func.d
 
 STORY\Events\B_AWAKE_STONEGUARDIAN.d
 
-NEUERUNGEN\Wld_StopEffect_Ext.d
 NEUERUNGEN\Respawn.d
 
 NEUERUNGEN\PortalRooms.d
@@ -115,7 +118,6 @@ NEUERUNGEN\B_EXPVerteiler.d
 
 FUNKTIONEN\Mod_Funktionen.d
 Neuerungen\B_Betrunken.d
-Neuerungen\HeroInventarWert.d
 Neuerungen\B_GetNextRuebe.d
 
 STORY\EVENTS\EVT_KLOSTEREINGANG.d
@@ -504,6 +506,8 @@ STORY\B_Content\B_Addon_PiratesGoHome.d
 
 
 STORY\DIALOGE\*.d
+STORY\DIALOGE\InProgress\*.d
+STORY\DIALOGE\ToDo\*.d
 STORY\B_AssignAmbientInfos\B_*.d
 
 

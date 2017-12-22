@@ -15,9 +15,9 @@ FUNC INT Info_Mod_Wesen_05_Hi_Condition()
 
 FUNC VOID Info_Mod_Wesen_05_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_00"); //Cokolwiek widzisz, cokolwiek slyszysz, czujesz i smakujesz, nie jest to prawda.
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_01"); //Nie ma prawdy, jest tylko percepcja.
-	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_18_02"); //Widzisz to, co nazywasz prawda.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_10_00"); //Cokolwiek widzisz, cokolwiek slyszysz, czujesz i smakujesz, nie jest to prawda.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_10_01"); //Nie ma prawdy, jest tylko percepcja.
+	AI_Output(self, hero, "Info_Mod_Wesen_05_Hi_10_02"); //Widzisz to, co nazywasz prawda.
 
 	AI_StopProcessInfos	(self);
 };
