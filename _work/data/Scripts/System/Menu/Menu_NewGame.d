@@ -21,7 +21,7 @@ INSTANCE MENU_NEWGAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_NEWGAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"START NEW GAME";
+	text[0]		=	"NOWA GRA";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y-500;
@@ -73,7 +73,7 @@ instance MENUITEM_NEWGAME_DIFFICULTY_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_NEWGAME_START(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"start";
+	text[0]		=	"Start";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	6192;		dimy		=	MENU_DY;
