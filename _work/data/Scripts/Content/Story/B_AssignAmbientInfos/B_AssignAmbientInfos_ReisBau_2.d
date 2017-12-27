@@ -110,7 +110,7 @@ INSTANCE Info_ReisBau_2_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_2_DieLage_Condition;
 	information	= Info_ReisBau_2_DieLage_Info;
 	permanent	= 1;
-	description = "Everything okay with you?";
+	description = "Everything all right with you?";
 };                       
 
 FUNC INT Info_ReisBau_2_DieLage_Condition()

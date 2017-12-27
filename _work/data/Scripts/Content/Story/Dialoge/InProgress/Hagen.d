@@ -1693,7 +1693,7 @@ INSTANCE Info_Mod_Hagen_Asylanten4 (C_INFO)
 	information	= Info_Mod_Hagen_Asylanten4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "What are you going to do now?";
+	description	= "What are you planning to do now?";
 };
 
 FUNC INT Info_Mod_Hagen_Asylanten4_Condition()

@@ -161,7 +161,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Just chop it. "; 
+	description		= "Just chop a little. "; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -212,7 +212,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("Three lumps of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("3 gold nuggets mined!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -220,27 +220,27 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("Two pieces of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("2 gold nuggets mined!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("1 lump of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("1 gold nugget mined!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Gold splinters fly through the area....", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Gold splinters fly everywhere...", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("There's nothing left to get here.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("There's nothing else to be had here.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
@@ -254,7 +254,7 @@ INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= ""; 
+	description		= "Give it a really good whack."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_TSchlag_Condition ()
@@ -285,7 +285,7 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("Three lumps of gold, chopped!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("3 gold nuggets mined!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
@@ -314,7 +314,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Check own ability)"; 
+	description		= "(assess own ability)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()
@@ -331,31 +331,31 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("absolute beginner (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A beginner scraper (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("quite reasonable prospector (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An adequate scraper (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("experienced prospector (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An experienced scraper (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("genuine Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A competent scraper ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("damn good digger ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An accomplished scraper ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Master Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A master scraper ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
-		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A guru scraper ( ", IntToString (ErzHackChance));
 	};
 	
 	ConcatText = ConcatStrings (concatText, " percent)");

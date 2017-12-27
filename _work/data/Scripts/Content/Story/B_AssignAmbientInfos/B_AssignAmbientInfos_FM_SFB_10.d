@@ -112,7 +112,7 @@ INSTANCE Info_FM_SFB_10_DieLage(C_INFO)
 	condition	= Info_FM_SFB_10_DieLage_Condition;
 	information	= Info_FM_SFB_10_DieLage_Info;
 	permanent	= 1;
-	description = "How's it looking?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DieLage_Condition()

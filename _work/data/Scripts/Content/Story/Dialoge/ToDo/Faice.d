@@ -305,7 +305,7 @@ FUNC VOID Info_Mod_Faice_Ritual_Info()
 	Info_ClearChoices	(Info_Mod_Faice_Ritual);
 
 	Info_AddChoice	(Info_Mod_Faice_Ritual, "There's something I have to do.", Info_Mod_Faice_Ritual_B);
-	Info_AddChoice	(Info_Mod_Faice_Ritual, "Yeah.", Info_Mod_Faice_Ritual_A);
+	Info_AddChoice	(Info_Mod_Faice_Ritual, "Yes.", Info_Mod_Faice_Ritual_A);
 };
 
 FUNC VOID Info_Mod_Faice_Ritual_B()

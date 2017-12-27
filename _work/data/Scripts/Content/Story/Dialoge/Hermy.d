@@ -213,7 +213,7 @@ FUNC VOID Info_Mod_Hermy_Harpie_Info()
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Here you have it.", Info_Mod_Hermy_Harpie_B);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Here, take it.", Info_Mod_Hermy_Harpie_B);
 	Info_AddChoice	(Info_Mod_Hermy_Harpie, "And take all the glory? No, thanks, I'll go myself.", Info_Mod_Hermy_Harpie_A);
 };
 
@@ -257,7 +257,7 @@ FUNC VOID Info_Mod_Hermy_Harpie_A()
 
 	Info_ClearChoices	(Info_Mod_Hermy_Harpie);
 
-	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Here you have it.", Info_Mod_Hermy_Harpie_B);
+	Info_AddChoice	(Info_Mod_Hermy_Harpie, "Here, take it.", Info_Mod_Hermy_Harpie_B);
 	Info_AddChoice	(Info_Mod_Hermy_Harpie, "I'm not even thinking about it.", Info_Mod_Hermy_Harpie_C);
 };
 

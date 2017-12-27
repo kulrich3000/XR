@@ -25,7 +25,7 @@ FUNC VOID Info_Mod_HSBauer_03_Hi_Info()
 
 	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "I' M NOT CRAZY!", Info_Mod_HSBauer_03_Hi_C);
 	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "No.", Info_Mod_HSBauer_03_Hi_B);
-	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Yeah.", Info_Mod_HSBauer_03_Hi_A);
+	Info_AddChoice	(Info_Mod_HSBauer_03_Hi, "Yes.", Info_Mod_HSBauer_03_Hi_A);
 };
 
 FUNC VOID Info_Mod_HSBauer_03_Hi_C()

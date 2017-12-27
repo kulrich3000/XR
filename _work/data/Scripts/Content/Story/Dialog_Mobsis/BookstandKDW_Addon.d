@@ -22,11 +22,11 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Die Kreise des Wassers"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "The runes of water and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of Water and the ingredients necessary for their creation. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "twister");
-					Doc_PrintLine	( nDocID,  0, "Wings of a blood fly");
+					Doc_PrintLine	( nDocID,  0, "Whirlwind");
+					Doc_PrintLine	( nDocID,  0, "Wings of a bloodfly");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Ice Lance");
@@ -39,7 +39,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "Storm");
 					Doc_PrintLine	( nDocID,  0, "glacier quartz");
-					Doc_PrintLine	( nDocID,  0, "Bluflie wing");
+					Doc_PrintLine	( nDocID,  0, "Wings of a bloodfly");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Waterfist");
@@ -51,11 +51,11 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 	};
 };

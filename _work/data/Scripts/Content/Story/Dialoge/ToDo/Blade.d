@@ -39,7 +39,7 @@ INSTANCE Info_Mod_Blade_Ambient (C_INFO)
 	information	= Info_Mod_Blade_Ambient_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How are you doing?";
+	description	= "How's it going?";
 };
 
 FUNC INT Info_Mod_Blade_Ambient_Condition()

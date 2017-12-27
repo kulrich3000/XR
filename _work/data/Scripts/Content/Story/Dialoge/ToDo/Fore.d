@@ -76,7 +76,7 @@ INSTANCE Info_Mod_Fore_Lehrer (C_INFO)
 	information	= Info_Mod_Fore_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Can I study with you?";
+	description	= "Can I learn from you?";
 };
 
 FUNC INT Info_Mod_Fore_Lehrer_Condition()

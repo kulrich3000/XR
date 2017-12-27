@@ -28,7 +28,7 @@ FUNC VOID Info_Mod_Kagan_Hi_Info()
 
 	Info_ClearChoices	(Info_Mod_Kagan_Hi);
 
-	Info_AddChoice	(Info_Mod_Kagan_Hi, "I'm not interested.", Info_Mod_Kagan_Hi_B);
+	Info_AddChoice	(Info_Mod_Kagan_Hi, "That doesn't concern me.", Info_Mod_Kagan_Hi_B);
 	Info_AddChoice	(Info_Mod_Kagan_Hi, "Maybe I can help you....", Info_Mod_Kagan_Hi_A);
 };
 

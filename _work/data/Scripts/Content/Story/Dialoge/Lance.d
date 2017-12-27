@@ -179,7 +179,7 @@ FUNC VOID Info_Mod_Lance_Brief_Info()
 	Info_ClearChoices	(Info_Mod_Lance_Brief);
 
 	Info_AddChoice	(Info_Mod_Lance_Brief, "No, the letter is for Saturas only.", Info_Mod_Lance_Brief_Nein);
-	Info_AddChoice	(Info_Mod_Lance_Brief, "Here he is, sir.", Info_Mod_Lance_Brief_Ja);
+	Info_AddChoice	(Info_Mod_Lance_Brief, "Here it is.", Info_Mod_Lance_Brief_Ja);
 };
 
 FUNC VOID Info_Mod_Lance_Brief_Nein()

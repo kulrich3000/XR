@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_Joseppe_Hi_Info()
 	Info_ClearChoices	(Info_Mod_Joseppe_Hi);
 
 	Info_AddChoice	(Info_Mod_Joseppe_Hi, "No.", Info_Mod_Joseppe_Hi_B);
-	Info_AddChoice	(Info_Mod_Joseppe_Hi, "Yeah.", Info_Mod_Joseppe_Hi_A);
+	Info_AddChoice	(Info_Mod_Joseppe_Hi, "Yes.", Info_Mod_Joseppe_Hi_A);
 };
 
 FUNC VOID Info_Mod_Joseppe_Hi_B()

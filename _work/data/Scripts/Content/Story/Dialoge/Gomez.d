@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Gomez_Belagerung (C_INFO)
 	information	= Info_Mod_Gomez_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You got something to do for me?";
+	description	= "Have you got something for me to do?";
 };
 
 FUNC INT Info_Mod_Gomez_Belagerung_Condition()
@@ -297,7 +297,7 @@ FUNC VOID Info_Mod_Gomez_Jagd03_Info()
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
 
 	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "No. I never met you.", Info_Mod_Gomez_Jagd03_B);
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Yeah.", Info_Mod_Gomez_Jagd03_A);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "Yes.", Info_Mod_Gomez_Jagd03_A);
 };
 
 FUNC VOID Info_Mod_Gomez_Jagd03_C()
@@ -313,7 +313,7 @@ FUNC VOID Info_Mod_Gomez_Jagd03_C()
 
 	Info_ClearChoices	(Info_Mod_Gomez_Jagd03);
 
-	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "I'm ready.", Info_Mod_Gomez_Jagd03_G);
+	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "I am ready!", Info_Mod_Gomez_Jagd03_G);
 	Info_AddChoice	(Info_Mod_Gomez_Jagd03, "What is the reward?", Info_Mod_Gomez_Jagd03_F);
 };
 

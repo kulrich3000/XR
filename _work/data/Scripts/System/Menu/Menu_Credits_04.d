@@ -238,7 +238,7 @@ INSTANCE MENUITEM_CREDITS_04_SEKTENSPINNER (C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_04_SILVESTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "silvestro";
+	text[0]		= "Silvestro";
 	text[1]		= "for the dungeon at the old mine";  // Kommentar
 
 	// Position und Dimension

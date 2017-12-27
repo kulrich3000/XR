@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Roman_Hi (C_INFO)
 	information	= Info_Mod_Roman_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's it going?";
+	description	= "What's up?";
 };
 
 FUNC INT Info_Mod_Roman_Hi_Condition()

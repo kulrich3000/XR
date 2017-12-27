@@ -362,7 +362,6 @@ func void UseOTGeheimkammer01 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "I found part of a note where Cor Kalom seems to have written down how to get into a hidden room. However, I still need two more parts to solve the puzzle.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer02		(C_Item)
@@ -412,7 +411,6 @@ func void UseOTGeheimkammer02 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "I found part of a note where Cor Kalom seems to have written down how to get into a hidden room. However, I still need two more parts to solve the puzzle.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer03		(C_Item)
@@ -458,6 +456,7 @@ func void UseOTGeheimkammer03 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "... twice, the right three times. Then the left one time, the right two times, the left two times. And finally the right (unreadable) mark. In the opposite room, the hole that you hit quickly now opens."					);
 					
 					Doc_Show		( nDocID );
@@ -470,7 +469,6 @@ func void UseOTGeheimkammer03 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "I found part of a note where Cor Kalom seems to have written down how to get into a hidden room. However, I still need two more parts to solve the puzzle.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer04		(C_Item)
@@ -506,7 +504,195 @@ func void UseOTGeheimkammer04 ()
 					Doc_PrintLines	( nDocID,  0, "I was faster! Gez. M. A. D."					);
 					
 					Doc_Show		( nDocID );
+};
 
+INSTANCE ItWr_OTGeheimkammer05		(C_Item)
+{
+	name 				=	"Zettelteil 1 und 2";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer05;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Information on the Secret Chamber";
+	TEXT[1]				=	"Obere zwei Drittel";
+};
+
+func void UseOTGeheimkammer05 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_obenmitte.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, "Since the twisted combination for the two switches doesn't go into your head, I wrote it down here. But don't even think about carrying the whole note around with you! The orcs don't need to know where we stored our treasures. Divide it into three parts, and only this one you keep with you - the rest you hide and only get it out when you need it, do you understand?"					);
+					Doc_PrintLines	( nDocID,  0, "You open the chamber with the two switches decorated with skulls. You will find them in the right-hand corridor of the two aisles that leave the room with the large statue of the sleeper. You have to use the two switches in the right combination: First the left one time, then the right one, then the left one..."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer06		(C_Item)
+{
+	name 				=	"Zettelteil 1 und 3";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer06;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Information on the Secret Chamber";
+	TEXT[1]				=	"Oberes und unteres Drittel";
+};
+
+func void UseOTGeheimkammer06 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_obenunten.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, "Since the twisted combination for the two switches doesn't go into your head, I wrote it down here. But don't even think about carrying the whole note around with you! The orcs don't need to know where we stored our treasures. Divide it into three parts, and only this one you keep with you - the rest you hide and only get it out when you need it, do you understand?"					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "... twice, the right three times. Then the left one time, the right two times, the left two times. And finally the right (unreadable) mark. In the opposite room, the hole that you hit quickly now opens."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer07		(C_Item)
+{
+	name 				=	"Zettelteil 2 und 3";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer07;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Information on the Secret Chamber";
+	TEXT[1]				=	"Untere zwei Drittel";
+};
+
+func void UseOTGeheimkammer07 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_mitteunten.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "You open the chamber with the two switches decorated with skulls. You will find them in the right-hand corridor of the two aisles that leave the room with the large statue of the sleeper. You have to use the two switches in the right combination: First the left one time, then the right one, then the left one..."					);
+					Doc_PrintLines	( nDocID,  0, "... twice, the right three times. Then the left one time, the right two times, the left two times. And finally the right (unreadable) mark. In the opposite room, the hole that you hit quickly now opens."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer08		(C_Item)
+{
+	name 				=	"chit";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer08;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Information on the Secret Chamber";
+	TEXT[1]				=	"Komplett zusammengesetzt";
+};
+
+func void UseOTGeheimkammer08 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_complete.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "Since the twisted combination for the two switches doesn't go into your head, I wrote it down here. But don't even think about carrying the whole note around with you! The orcs don't need to know where we stored our treasures. Divide it into three parts, and only this one you keep with you - the rest you hide and only get it out when you need it, do you understand?"					);
+					Doc_PrintLines	( nDocID,  0, "You open the chamber with the two switches decorated with skulls. You will find them in the right-hand corridor of the two aisles that leave the room with the large statue of the sleeper. You have to use the two switches in the right combination: First the left one time, then the right one, then the left one..."					);
+					Doc_PrintLines	( nDocID,  0, "... twice, the right three times. Then the left one time, the right two times, the left two times. And finally the right (unreadable) mark. In the opposite room, the hole that you hit quickly now opens."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe eine Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt.");
+	};
 };
 
 INSTANCE ItWr_Akahasch		(C_Item)

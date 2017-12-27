@@ -303,7 +303,7 @@ FUNC VOID Info_Mod_Leonhard_Endres02_Info()
 	{
 		Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Here's a little something for you. (10 give gold)", Info_Mod_Leonhard_Endres02_B);
 	};
-	Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Forget about it.", Info_Mod_Leonhard_Endres02_A);
+	Info_AddChoice	(Info_Mod_Leonhard_Endres02, "Forget it.", Info_Mod_Leonhard_Endres02_A);
 };
 
 FUNC VOID Info_Mod_Leonhard_Endres02_C()

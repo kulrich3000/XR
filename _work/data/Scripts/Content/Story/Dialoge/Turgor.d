@@ -66,7 +66,7 @@ INSTANCE Info_Mod_Turgor_WieLaeufts (C_INFO)
 	information	= Info_Mod_Turgor_WieLaeufts_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's it going?";
+	description	= "What's up?";
 };
 
 FUNC INT Info_Mod_Turgor_WieLaeufts_Condition()

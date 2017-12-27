@@ -164,7 +164,7 @@ INSTANCE Info_Mod_Gorax_Aufgabe (C_INFO)
 	information	= Info_Mod_Gorax_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You got something to do for me?";
+	description	= "Have you got something for me to do?";
 };
 
 FUNC INT Info_Mod_Gorax_Aufgabe_Condition()

@@ -43,7 +43,7 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	};
 	
 	Log_CreateTopic (TOPIC_TalentAlchemy,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentAlchemy,"To brew a potion, I need an empty laboratory bottle and the necessary ingredients for the desired potion. With these ingredients you can prepare the desired drink at an alchemy table."); 
+	B_LogEntry (TOPIC_TalentAlchemy,"To brew a potion I need an empty laboratory flask and the ingredients required to make the potion. Using these ingredients on the alchemist's table I can prepare the desired potion."); 
 	
 	// ------ Trank brauen lernen ------
 	if (potion == POTION_Health_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_01] 	= TRUE;	
@@ -71,7 +71,7 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? Elixir of Strength?: 1 Dragon Root and 1 Crown.");  };
 	
 	if (potion == POTION_Perm_DEX)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"INGREDIENT? ELIXIATES OF SKILLS?: 1 goblin berry and 1 crescent.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients 'ELIXIR OF DEXTERITY': 1 Goblin Berry and 1 King's Sorrel.");  };
 	
 	if (potion == POTION_Perm_Mana)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] 	= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredients? ELIXIATION OF THE SPIRIT?: 1 fire root and 1 crown stick.");  };

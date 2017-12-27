@@ -125,7 +125,7 @@ FUNC VOID Info_Mod_Sancho_GardistenInfos_G()
 	Info_ClearChoices	(Info_Mod_Sancho_GardistenInfos);
 
 	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "You'll regret this, you son of a bitch!", Info_Mod_Sancho_GardistenInfos_I);
-	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "I'll see you again.", Info_Mod_Sancho_GardistenInfos_H);
+	Info_AddChoice	(Info_Mod_Sancho_GardistenInfos, "We'll meet again.", Info_Mod_Sancho_GardistenInfos_H);
 };
 
 FUNC VOID Info_Mod_Sancho_GardistenInfos_I()

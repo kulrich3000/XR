@@ -4,10 +4,10 @@
 // (für LOG_NOTE)
 // *******************
 // ------ Händler ------
-const string	TOPIC_Trader_OC				=   "Merchants in the castle.";
-const string	TOPIC_CityTrader			=	"Dealers in Khorinis.";
-const string	Topic_OutTrader				=	"Outside world dealers";
-const string	Topic_SoldierTrader			=	"Dealers on Onar's farm.";
+const string	TOPIC_Trader_OC				=   "Trade in the castle.";
+const string	TOPIC_CityTrader			=	"Trade in Khorinis.";
+const string	Topic_OutTrader				=	"Trade in the outer world.";
+const string	Topic_SoldierTrader			=	"Trade on Onar's farm.";
 
 
 // ------ Lehrer ------
@@ -20,16 +20,16 @@ const string	TOPIC_CityTeacher			=	"Teacher in Khorinis.";
 const string	TOPIC_Addon_KDWTeacher		=	"Teachers of Water Magicians";
 
 // ------ Micro - Talente ------
-const string	TOPIC_TalentSmith			=	"The Forging";
-const string	TOPIC_TalentRunes			=	"The Runes";
+const string	TOPIC_TalentSmith			=	"Forging";
+const string	TOPIC_TalentRunes			=	"Runes";
 const string	TOPIC_TalentScrolls			=	"The spelling roles";
-const string	TOPIC_TalentAlchemy			=	"The potions";
-const string	TOPIC_TalentAnimalTrophy	=	"The use of animals";
+const string	TOPIC_TalentAlchemy			=	"Potions";
+const string	TOPIC_TalentAnimalTrophy	=	"Animal Processing";
 const string	TOPIC_TalentMagicCircle		= 	"The Circles of Magic";
-const string	TOPIC_WispDetector			= 	"The Seeking Wisp";
-const string	TOPIC_Language				= 	"The language of the builder";
+const string	TOPIC_WispDetector			= 	"The searching will-o'-the-wisp";
+const string	TOPIC_Language				= 	"The language of the builders";
 
 // ------ Sonstiges ------
-const string	Topic_Bonus					=	"special"; //z.B. täglich essen abholen...
-const string	Topic_Diebesgilde			=	"thief guild"; 
+const string	Topic_Bonus					=	"Specials"; //z.B. täglich essen abholen...
+const string	Topic_Diebesgilde			=	"Thieves' Guild"; 
 

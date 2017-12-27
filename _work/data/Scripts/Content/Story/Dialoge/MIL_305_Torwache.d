@@ -263,7 +263,7 @@ instance Info_Mod_Engor_Ausnahme (C_INFO)
 	condition	 = 	Info_Mod_Engor_Ausnahme_Condition;
 	information	 = 	Info_Mod_Engor_Ausnahme_Info;
 	permanent    =  TRUE;
-	description	 = 	"Can't we make an exception?";
+	description	 = 	"Couldn't we make an exception?";
 };
 func int Info_Mod_Engor_Ausnahme_Condition ()
 {	
@@ -286,7 +286,7 @@ INSTANCE Info_Mod_Engor_PERM (C_INFO)
 	condition	= Info_Mod_Engor_PERM_Condition;
 	information	= Info_Mod_Engor_PERM_Info;
 	permanent	= TRUE;
-	description	= "What's the score?";
+	description	= "How's it going?";
 };        
          
 FUNC INT Info_Mod_Engor_PERM_Condition()

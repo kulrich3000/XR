@@ -29,7 +29,7 @@ INSTANCE DIA_NOV_8_JOIN(C_INFO)
 	condition	= DIA_NOV_8_JOIN_Condition;
 	information	= DIA_NOV_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "What do I have to do to become a magician?";
+	description = "What must I do to become a magician?";
 };                       
 
 FUNC INT DIA_NOV_8_JOIN_Condition()
@@ -55,7 +55,7 @@ INSTANCE DIA_NOV_8_PEOPLE(C_INFO)
 	condition	= DIA_NOV_8_PEOPLE_Condition;
 	information	= DIA_NOV_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Who runs the monastery?";
+	description = "Who is in charge of this monastery?";
 };                       
 
 FUNC INT DIA_NOV_8_PEOPLE_Condition()

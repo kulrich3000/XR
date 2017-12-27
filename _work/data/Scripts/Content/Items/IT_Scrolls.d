@@ -197,7 +197,7 @@ INSTANCE ItSc_Telekinese (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_RED";
 
-	description			=	"telekinesis";
+	description			=	"Telekinesis";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_scroll;
@@ -2492,7 +2492,7 @@ INSTANCE ItSc_Pyrokinesis_g1 (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"pyrokinesis";
+	description			=	"Pyrokinesis";
 	
 	TEXT	[0]			=	Name_MageScroll	;
 	
@@ -3042,7 +3042,7 @@ INSTANCE ItSc_TrfMeatbug (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"metamorphosis meat bug";
+	description			=	"Transform into Meatbug";
 
 	TEXT	[0]			=	Name_MageScroll	;
 

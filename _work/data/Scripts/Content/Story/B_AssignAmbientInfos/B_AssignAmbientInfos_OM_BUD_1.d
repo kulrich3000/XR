@@ -86,7 +86,7 @@ INSTANCE Info_OM_BUD_1_DieLage(C_INFO) // E1
 	condition	= Info_OM_BUD_1_DieLage_Condition;
 	information	= Info_OM_BUD_1_DieLage_Info;
 	permanent	= 1;
-	description = "How's it looking?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_OM_BUD_1_DieLage_Condition()

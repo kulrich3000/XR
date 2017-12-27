@@ -165,12 +165,12 @@ INSTANCE Info_Mod_Bosper_FellLernen (C_INFO)
 	information	= Info_Mod_Bosper_FellLernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("Remove the skins", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
+	description	= B_BuildLearnString("Skinning", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
 };
 
 FUNC INT Info_Mod_Bosper_FellLernen_Condition()
 {
-	Info_Mod_Bosper_FellLernen.description = B_BuildLearnString("Remove the skins", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
+	Info_Mod_Bosper_FellLernen.description = B_BuildLearnString("Skinning", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Bosper_Fell))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
@@ -734,7 +734,7 @@ INSTANCE Info_Mod_Bosper_LehrlingQuest7 (C_INFO)
 	information	= Info_Mod_Bosper_LehrlingQuest7_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's it going?";
+	description	= "What's up?";
 };
 
 FUNC INT Info_Mod_Bosper_LehrlingQuest7_Condition()
@@ -1220,7 +1220,7 @@ INSTANCE Info_Mod_Bosper_MehrFelle (C_INFO)
 	information	= Info_Mod_Bosper_MehrFelle_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I got some skins here for you....";
+	description	= "I've got a few skins for you ...";
 };
 
 FUNC INT Info_Mod_Bosper_MehrFelle_Condition()

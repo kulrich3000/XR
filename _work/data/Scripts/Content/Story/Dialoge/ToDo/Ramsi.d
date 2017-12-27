@@ -70,7 +70,7 @@ INSTANCE Info_Mod_Ramsi_AufgabeLos (C_INFO)
 	information	= Info_Mod_Ramsi_AufgabeLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I'm ready.";
+	description	= "I am ready!";
 };
 
 FUNC INT Info_Mod_Ramsi_AufgabeLos_Condition()

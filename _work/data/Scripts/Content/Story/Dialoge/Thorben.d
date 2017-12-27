@@ -486,7 +486,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest2 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You got something to do for me?";
+	description	= "Have you got something for me to do?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest2_Condition()
@@ -787,7 +787,7 @@ INSTANCE Info_Mod_Thorben_LehrlingQuest9 (C_INFO)
 	information	= Info_Mod_Thorben_LehrlingQuest9_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What's the score?";
+	description	= "How's it going?";
 };
 
 FUNC INT Info_Mod_Thorben_LehrlingQuest9_Condition()

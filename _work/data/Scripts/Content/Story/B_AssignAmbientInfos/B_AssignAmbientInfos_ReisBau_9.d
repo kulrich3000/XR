@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_9_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_9_DieLage_Condition;
 	information	= Info_ReisBau_9_DieLage_Info;
 	permanent	= 1;
-	description = "What's the score?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_ReisBau_9_DieLage_Condition()

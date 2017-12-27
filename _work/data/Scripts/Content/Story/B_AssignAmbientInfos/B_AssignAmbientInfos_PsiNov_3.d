@@ -143,7 +143,7 @@ INSTANCE Info_PsiNov_3_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_3_DieLage_Condition;
 	information	= Info_PsiNov_3_DieLage_Info;
 	permanent	= 1;
-	description = "What's the score?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_PsiNov_3_DieLage_Condition()

@@ -73,7 +73,7 @@ FUNC VOID Info_Mod_Daron_ZugangZumKloster_Novize()
 
 	Info_ClearChoices	(Info_Mod_Daron_ZugangZumKloster);
 
-	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "What am I supposed to do for you?", Info_Mod_Daron_ZugangZumKloster_Gefallen);
+	Info_AddChoice	(Info_Mod_Daron_ZugangZumKloster, "What do you want me to do for you?", Info_Mod_Daron_ZugangZumKloster_Gefallen);
 };
 
 FUNC VOID Info_Mod_Daron_ZugangZumKloster_Gefallen()

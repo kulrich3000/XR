@@ -36,7 +36,7 @@ FUNC VOID Info_Mod_Margarethe_Hi_C()
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 
 	Info_AddChoice	(Info_Mod_Margarethe_Hi, "Anna will not have been taken away without reason.", Info_Mod_Margarethe_Hi_E);
-	Info_AddChoice	(Info_Mod_Margarethe_Hi, "What can we do?", Info_Mod_Margarethe_Hi_D);
+	Info_AddChoice	(Info_Mod_Margarethe_Hi, "What can we do now?", Info_Mod_Margarethe_Hi_D);
 };
 
 FUNC VOID Info_Mod_Margarethe_Hi_E()

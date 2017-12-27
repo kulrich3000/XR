@@ -81,7 +81,7 @@ FUNC VOID Info_Mod_Torgan_Zwischenzeit_Info()
 
 	Info_ClearChoices	(Info_Mod_Torgan_Zwischenzeit);
 
-	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "All right, all right.", Info_Mod_Torgan_Zwischenzeit_B);
+	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "All right.", Info_Mod_Torgan_Zwischenzeit_B);
 	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "All right, what do I get for it?", Info_Mod_Torgan_Zwischenzeit_A);
 };
 
@@ -115,7 +115,7 @@ FUNC VOID Info_Mod_Torgan_Zwischenzeit_A()
 
 	Info_ClearChoices	(Info_Mod_Torgan_Zwischenzeit);
 
-	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "All right, all right.", Info_Mod_Torgan_Zwischenzeit_B);
+	Info_AddChoice	(Info_Mod_Torgan_Zwischenzeit, "All right.", Info_Mod_Torgan_Zwischenzeit_B);
 };
 
 INSTANCE Info_Mod_Torgan_SpaeherTot (C_INFO)

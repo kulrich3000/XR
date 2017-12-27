@@ -298,7 +298,7 @@ INSTANCE Info_Mod_Greg_Aufgabe (C_INFO)
 	information	= Info_Mod_Greg_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You got something to do for me?";
+	description	= "Have you got something for me to do?";
 };
 
 FUNC INT Info_Mod_Greg_Aufgabe_Condition()
@@ -502,7 +502,7 @@ FUNC VOID Info_Mod_Greg_GehtsLos_Info()
 	Info_ClearChoices	(Info_Mod_Greg_GehtsLos);
 
 	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "There's something I have to do.", Info_Mod_Greg_GehtsLos_Nein);
-	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "I'm ready.", Info_Mod_Greg_GehtsLos_Ja);
+	Info_AddChoice	(Info_Mod_Greg_GehtsLos, "I am ready!", Info_Mod_Greg_GehtsLos_Ja);
 };
 
 FUNC VOID Info_Mod_Greg_GehtsLos_Nein ()

@@ -81,7 +81,7 @@ INSTANCE DIA_BAU_7_LOCATION(C_INFO)
 	condition	= DIA_BAU_7_LOCATION_Condition;
 	information	= DIA_BAU_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Tell me more about the neighborhood.";
+	description = "Tell me more about the area.";
 };                       
 
 FUNC INT DIA_BAU_7_LOCATION_Condition()

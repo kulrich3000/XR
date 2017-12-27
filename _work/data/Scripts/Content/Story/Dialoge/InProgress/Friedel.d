@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_Friedel_Wettstreit_Info()
 	Info_ClearChoices	(Info_Mod_Friedel_Wettstreit);
 
 	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "I'll be right back.", Info_Mod_Friedel_Wettstreit_B);
-	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "I'm ready.", Info_Mod_Friedel_Wettstreit_A);
+	Info_AddChoice	(Info_Mod_Friedel_Wettstreit, "I am ready!", Info_Mod_Friedel_Wettstreit_A);
 };
 
 FUNC VOID Info_Mod_Friedel_Wettstreit_B()

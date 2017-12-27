@@ -187,13 +187,14 @@ CONST STRING MOBNAME_Holzsarg		= "wooden coffin";
 CONST STRING MOBNAME_Steinsarg		= "stone coffin";					
 CONST STRING MOBNAME_Buch		= "Buch";				
 CONST STRING MOBNAME_Opferschale	= "sacrificial bowl";
-CONST STRING MOBNAME_Mumie		= "mummy";
+CONST STRING MOBNAME_Mumie		= "Mummy";
 CONST STRING MOBNAME_Werkbank		= "workbench";
 CONST STRING MOBNAME_Shrine		= "coffin";
 CONST STRING MOBNAME_Trinkfass		= "cask";
 CONST STRING MOBNAME_SANTINOSTRUHE	= "Santino's chest";
 CONST STRING MOBNAME_SOJA	= "soybean plant";
 CONST STRING MOBNAME_PRISMA	= "prism";
+CONST STRING MOBNAME_NAGURVERSTECK	= "Nagurs Versteck";
 
 // XR - Ladenschilder
 
@@ -474,7 +475,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	"Summon Dragon",
 	"Summon Ice Goblin",
 	"Summon Goblin Warrior",
-	"pyrokinesis",
+	"Pyrokinesis",
 	"By Patherion",
 	"ice ball",
 	"withdrawal",
@@ -534,7 +535,7 @@ const string TXT_SPELLS[MAX_SPELL] =
 	"Skelett",
 	"to the orc cemetery",
 	"poisoning",
-	"telekinesis",
+	"Telekinesis",
 	"to Genn",
 	"Aura of frost",
 	"Aura of burning",
@@ -590,7 +591,7 @@ const string NAME_SPL_TeleportTaverne		= "Teleport to Tavern";
 const string NAME_SPL_TeleportRELHofstaat		= "Teleport to the court";
 const string NAME_SPL_Teleport_3			= "NAME_SPL_TELEPORT_3";
 const string NAME_SPL_TeleportDemonTower			= "Teleport to the Demon Tower";
-const string NAME_SPL_TeleportPsicamp	= "Teleport to the marsh camp";
+const string NAME_SPL_TeleportPsicamp	= "Teleport to the Swamp Camp";
 const string NAME_SPL_TeleportOldcamp		= "Teleport to the old warehouse";
 const string NAME_SPL_TeleportNewcamp			= "Teleport to the new warehouse";
 const string NAME_SPL_Teleport_Pat			= "Teleport to Patherion";
@@ -669,7 +670,7 @@ const string NAME_SPL_EarthquakeNew				= "Earthquake";
 // Scrolls
 const string NAME_SPL_TrfSheep				= "Transform into Sheep";
 const string NAME_SPL_TrfScavenger			= "Transform into Scavenger";
-const string NAME_SPL_TrfGiantRat			= "metamorphosis meat bug";
+const string NAME_SPL_TrfGiantRat			= "Transform into Meatbug";
 const string NAME_SPL_TrfGiantBug			= "Transform into Field Raider";
 const string NAME_SPL_TrfWolf				= "Transform into Wolf";
 const string NAME_SPL_TrfWaran				= "Transform into Lizard";
@@ -867,7 +868,7 @@ const string NAME_Buddler	= "Digger";
 const string NAME_Organisator	= "Mercenary";
 const string NAME_Schlaeger	= "Schläger";
 const string NAME_Wasserkrieger	= "water warriors";
-const string NAME_Schuerfer	= "prospector";
+const string NAME_Schuerfer	= "Scraper";
 const string NAME_SchwarzerKrieger	= "Black Warrior";
 const string NAME_SchwarzerMagier	= "Black Mage";
 const string NAME_Firemage	= "fire magician";

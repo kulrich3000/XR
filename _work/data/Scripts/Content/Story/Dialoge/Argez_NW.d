@@ -19,7 +19,7 @@ FUNC VOID Info_Mod_Argez_NW_Hi_Info()
 
 	Info_ClearChoices	(Info_Mod_Argez_NW_Hi);
 
-	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "None of your business.", Info_Mod_Argez_NW_Hi_B);
+	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "That's none of your business.", Info_Mod_Argez_NW_Hi_B);
 	Info_AddChoice	(Info_Mod_Argez_NW_Hi, "With a former prisoner of the Mine Valley.", Info_Mod_Argez_NW_Hi_A);
 };
 

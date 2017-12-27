@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_19_JOIN(C_INFO)
 	condition	= DIA_VLK_19_JOIN_Condition;
 	information	= DIA_VLK_19_JOIN_Info;
 	permanent	= TRUE;
-	description = "How can I become a citizen of this city?";
+	description = "How can I become a citizen of this town?";
 };                       
 
 FUNC INT DIA_VLK_19_JOIN_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_VLK_19_PEOPLE(C_INFO)
 	condition	= DIA_VLK_19_PEOPLE_Condition;
 	information	= DIA_VLK_19_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Who are the important personalities here?";
+	description = "Who are the important figures around here?";
 };                       
 
 FUNC INT DIA_VLK_19_PEOPLE_Condition()

@@ -508,7 +508,7 @@ INSTANCE Info_Mod_Bennet_HaradLehrling (C_INFO)
 	information	= Info_Mod_Bennet_HaradLehrling_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's it going?";
+	description	= "What's up?";
 };
 
 FUNC INT Info_Mod_Bennet_HaradLehrling_Condition()
@@ -556,8 +556,8 @@ func void Info_Mod_Bennet_Lehrer_Info ()
 	AI_Output (self, hero, "Info_Mod_Bennet_Lehrer_30_02"); //That's gonna cost a little something. Let's say 30 gold pieces.
 	
 	Info_ClearChoices	(Info_Mod_Bennet_Lehrer);
-	Info_AddChoice	(Info_Mod_Bennet_Lehrer, "Later, maybe.", Info_Mod_Bennet_Lehrer_Later);
-	Info_AddChoice	(Info_Mod_Bennet_Lehrer, "Well, here's 30.", Info_Mod_Bennet_Lehrer_Pay);
+	Info_AddChoice	(Info_Mod_Bennet_Lehrer, "Maybe later.", Info_Mod_Bennet_Lehrer_Later);
+	Info_AddChoice	(Info_Mod_Bennet_Lehrer, "Fine. Here's 30 for you.", Info_Mod_Bennet_Lehrer_Pay);
 };
 
 func void Info_Mod_Bennet_Lehrer_Pay()
@@ -570,7 +570,7 @@ func void Info_Mod_Bennet_Lehrer_Pay()
 		
 		Bennet_TeachCommon = 1;
 		Log_CreateTopic	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, LOG_NOTE);
-		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Bennet can teach me forging.");
+		B_LogEntry	(TOPIC_MOD_LEHRER_SOELDNER_ONAR, "Bennet can teach me a blacksmith's craft.");
 	}
 	else
 	{
@@ -651,7 +651,7 @@ instance Info_Mod_Bennet_TeachCOMMON (C_INFO)
 	condition	= Info_Mod_Bennet_TeachCOMMON_Condition;
 	information	= Info_Mod_Bennet_TeachCOMMON_Info;
 	permanent	= TRUE;
-	description	= B_BuildLearnString("Learning to forge", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
+	description	= B_BuildLearnString("Learn to forge", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
 };
 
 func int Info_Mod_Bennet_TeachCOMMON_Condition ()
@@ -731,7 +731,7 @@ instance Info_Mod_Bennet_TeachSmith		(C_INFO)
 	information	= Info_Mod_Bennet_TeachSmith_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to know more about forging magical ore weapons.";
+	description	= "I want to know more about forging magic ore weapons.";
 };
 
 func int Info_Mod_Bennet_TeachSmith_Condition ()

@@ -125,7 +125,7 @@ FUNC VOID Info_Mod_Asko_Pruefung_Info()
 	Info_ClearChoices	(Info_Mod_Asko_Pruefung);
 
 	Info_AddChoice	(Info_Mod_Asko_Pruefung, "There's something I have to do.", Info_Mod_Asko_Pruefung_B);
-	Info_AddChoice	(Info_Mod_Asko_Pruefung, "I'm ready.", Info_Mod_Asko_Pruefung_A);
+	Info_AddChoice	(Info_Mod_Asko_Pruefung, "I am ready!", Info_Mod_Asko_Pruefung_A);
 };
 
 FUNC VOID Info_Mod_Asko_Pruefung_B()

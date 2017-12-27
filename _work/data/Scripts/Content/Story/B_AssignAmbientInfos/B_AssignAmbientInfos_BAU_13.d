@@ -31,7 +31,7 @@ INSTANCE DIA_BAU_13_JOIN(C_INFO)
 	condition	= DIA_BAU_13_JOIN_Condition;
 	information	= DIA_BAU_13_JOIN_Info;
 	permanent	= TRUE;
-	description = "I want to know more about the mercenaries!";
+	description = "Tell me more about those mercenaries!";
 };                       
 
 FUNC INT DIA_BAU_13_JOIN_Condition()
@@ -84,7 +84,7 @@ INSTANCE DIA_BAU_13_LOCATION(C_INFO)
 	condition	= DIA_BAU_13_LOCATION_Condition;
 	information	= DIA_BAU_13_LOCATION_Info;
 	permanent	= TRUE;
-	description = "What can you tell me about this neighborhood?";
+	description = "What can you tell me about this area?";
 };                       
 
 FUNC INT DIA_BAU_13_LOCATION_Condition()

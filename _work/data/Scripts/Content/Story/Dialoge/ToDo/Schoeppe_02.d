@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Schoeppe_02_Hi (C_INFO)
 	information	= Info_Mod_Schoeppe_02_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How are you doing?";
+	description	= "How's it going?";
 };
 
 FUNC INT Info_Mod_Schoeppe_02_Hi_Condition()

@@ -194,7 +194,7 @@ FUNC VOID Info_Mod_Gestath_Lernen_Info()
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] == FALSE)
 		{ 
-			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("skin animals", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Gestath_Lernen_ReptileSkin);
+			Info_AddChoice	(Info_Mod_Gestath_Lernen, B_BuildLearnString("Skin animals", B_GetLearnCostTalent (hero,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ReptileSkin)), Info_Mod_Gestath_Lernen_ReptileSkin);
 		};
 		if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] == FALSE)
 		{ 

@@ -55,7 +55,7 @@ INSTANCE DIA_MIL_7_PEOPLE(C_INFO)
 	condition	= DIA_MIL_7_PEOPLE_Condition;
 	information	= DIA_MIL_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "What do you know about the Paladins?";
+	description = "What do you know about the paladins?";
 };                       
 
 FUNC INT DIA_MIL_7_PEOPLE_Condition()

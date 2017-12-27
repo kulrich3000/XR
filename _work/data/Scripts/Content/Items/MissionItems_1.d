@@ -985,14 +985,14 @@ func void UseBanditLetter ()
 					Doc_PrintLine	(nDocID,  0, " he is a dangerous sorcerer.   "				);
 					Doc_PrintLine	(nDocID,  0, "Keep an eye on him."						);
 					Doc_PrintLine	(nDocID,  0, "     "											);
-					Doc_PrintLine	(nDocID,  0, "It's a good thing the guy we're looking for, "		);
+					Doc_PrintLine	(nDocID,  0, "It's very possible the guy we're looking for "		);
 					Doc_PrintLine	(nDocID,  0, " will contact him. "						);
 					Doc_PrintLine	(nDocID,  0, "With this letter I'm sending you "				);
 					Doc_PrintLine	(nDocID,  0, " thirty pieces of gold. "							);
 					Doc_PrintLine	(nDocID,  0, "I will give another thirty to anyone "				);
 					Doc_PrintLine	(nDocID,  0, " who kills the man. "							);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "Take his head to the old mine, the big farmer's.");
+					Doc_PrintLine	(nDocID,  0, "Bring his head to the old mine near  Onar's farm");
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ".....D."											);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -1212,7 +1212,7 @@ INSTANCE ItRi_Prot_Point_01_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				=  "Protection of wood ";
+	description				=  "Protection of the wood ";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint;
@@ -1470,7 +1470,7 @@ INSTANCE ItKe_PaladinTruhe(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"A small brass key";
-	TEXT[3]				=   "from the House of the Paladins";
+	TEXT[3]				=   "from the house of the paladins.";
 	
 };
 //****************************************************************************
@@ -1512,7 +1512,7 @@ INSTANCE ItKe_Fingers(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"A rusty door key";
-	TEXT[3]				=   "from the sewerage system";
+	TEXT[3]				=   "from the sewers";
 	
 };
 //**********************************************************************************
@@ -1556,12 +1556,12 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Deals and Debts"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "I Master Thorben, carpenter of Khorinis, owe 200 gold coins to the honourable Mr. Lehmar.");
+					Doc_PrintLines	( nDocID,  0, "I, Master Thorben, carpenter of Khorinis, owe the honorable Lehmar a debt of 200 gold coins.");
 					Doc_PrintLine	( nDocID,  0, ""					);		
 					Doc_PrintLine	( nDocID,  0, "             Thorben");
 					Doc_PrintLine	( nDocID,  0, ""					);	
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "I Coragon, landlord in Khorinis, owe the honourable Mr. Lehmar 150 gold coins");
+					Doc_PrintLines	( nDocID,  0, "I, Coragon, innkeeper of Khorinis, owe the honorable Lehmar a debt of 150  gold.");
 					Doc_PrintLine	( nDocID,  0, ""					);		
 					Doc_PrintLine	( nDocID,  0, "             Coragon");										
 					//Absatz
@@ -1576,7 +1576,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "I, Hanna, owner of the hotel in Khorinis, owe Mr. Lehmar 250 gold coins.");
+					Doc_PrintLines	( nDocID,  1, "I, Hanna, hotelier of Khorinis, owe the honorable Lehmar a debt of 250 goldcoins.");
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "               Hanna");
 					//Absatz

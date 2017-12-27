@@ -233,7 +233,7 @@ INSTANCE Info_Mod_Xardas_GDG_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Xardas_GDG_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to increase my magical powers.";
+	description	= "I want to increase my magic powers.";
 };
 
 FUNC INT Info_Mod_Xardas_GDG_Lernen_MANA_Condition()

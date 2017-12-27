@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Morgan_Entertrupp (C_INFO)
 	information	= Info_Mod_Morgan_Entertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to join your posse.";
+	description	= "I want to join your raiding troop.";
 };
 
 FUNC INT Info_Mod_Morgan_Entertrupp_Condition()
@@ -169,7 +169,7 @@ INSTANCE Info_Mod_Morgan_InEntertrupp (C_INFO)
 	information	= Info_Mod_Morgan_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to join your posse.";
+	description	= "I want to join your raiding troop.";
 };
 
 FUNC INT Info_Mod_Morgan_InEntertrupp_Condition()

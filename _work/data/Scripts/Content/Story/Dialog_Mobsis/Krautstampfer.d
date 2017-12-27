@@ -42,11 +42,11 @@ FUNC VOID PC_Krautstampfer_Tabak_Info()
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with bogweed", PC_Krautstampfer_Tabak_Swampherb);
+		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with swampweed", PC_Krautstampfer_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
-		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with dark mushroom", PC_Krautstampfer_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_Krautstampfer_Tabak, "... with murky mushroom", PC_Krautstampfer_Tabak_Mushroom_01);
 	};
 	
 };

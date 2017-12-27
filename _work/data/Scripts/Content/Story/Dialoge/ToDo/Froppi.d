@@ -90,7 +90,7 @@ FUNC VOID Info_Mod_Froppi_Hi_Info()
 	Info_ClearChoices	(Info_Mod_Froppi_Hi);
 
 	Info_AddChoice	(Info_Mod_Froppi_Hi, "No.", Info_Mod_Froppi_Hi_B);
-	Info_AddChoice	(Info_Mod_Froppi_Hi, "Yeah.", Info_Mod_Froppi_Hi_A);
+	Info_AddChoice	(Info_Mod_Froppi_Hi, "Yes.", Info_Mod_Froppi_Hi_A);
 };
 
 FUNC VOID Info_Mod_Froppi_Hi_B()

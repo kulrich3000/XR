@@ -33,7 +33,7 @@ FUNC VOID Info_Mod_Cassia_REL_VorTaverne_Info()
 	Info_ClearChoices	(Info_Mod_Cassia_REL_VorTaverne);
 
 	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "Does a summon spell work?", Info_Mod_Cassia_REL_VorTaverne_B);
-	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "All clear.", Info_Mod_Cassia_REL_VorTaverne_A);
+	Info_AddChoice	(Info_Mod_Cassia_REL_VorTaverne, "All right.", Info_Mod_Cassia_REL_VorTaverne_A);
 };
 
 FUNC VOID Info_Mod_Cassia_REL_VorTaverne_C()

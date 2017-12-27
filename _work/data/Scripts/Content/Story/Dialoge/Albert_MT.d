@@ -626,7 +626,7 @@ FUNC VOID Info_Mod_Albert_KommeMit_Info()
 	Info_ClearChoices	(Info_Mod_Albert_KommeMit);
 
 	Info_AddChoice	(Info_Mod_Albert_KommeMit, "What, just the two of us?", Info_Mod_Albert_KommeMit_B);
-	Info_AddChoice	(Info_Mod_Albert_KommeMit, "All right, all right.", Info_Mod_Albert_KommeMit_A);
+	Info_AddChoice	(Info_Mod_Albert_KommeMit, "All right.", Info_Mod_Albert_KommeMit_A);
 };
 
 FUNC VOID Info_Mod_Albert_KommeMit_C()
@@ -1031,7 +1031,7 @@ INSTANCE Info_Mod_Albert_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Albert_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to increase my magical powers.";
+	description	= "I want to increase my magic powers.";
 };
 
 FUNC INT Info_Mod_Albert_Lernen_MANA_Condition()

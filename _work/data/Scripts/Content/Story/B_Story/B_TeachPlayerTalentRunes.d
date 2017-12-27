@@ -69,11 +69,11 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_TeleportOC)			{	PLAYER_TALENT_RUNES[SPL_TeleportOC] 			= TRUE;	};		
 	// Teleport-Joker fehlen
 	if (spell == SPL_LIGHT)					{	PLAYER_TALENT_RUNES[SPL_LIGHT] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_LIGHT, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? LIGHT?: 1 gold coin.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´LIGHT´: 1 goldcoin.");	};		
 	if (spell == SPL_Firebolt)				{	PLAYER_TALENT_RUNES[SPL_Firebolt] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firebolt, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? fire arrow?: 1 sulphur.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´FIRE ARROW´: 1 Sulfur.");	};		
 	if (spell == SPL_Icebolt)				{	PLAYER_TALENT_RUNES[SPL_Icebolt] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Icebolt, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? ice arrow?: 1 glacier quartz");};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´ICE ARROW´: 1 Glacier Quartz");};		
 	if (spell == SPL_LightHeal)				{	PLAYER_TALENT_RUNES[SPL_LightHeal] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_LightHeal, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? LIGHT WOUNDS HEALING?: 1 medicinal plant.");	};		
 	if (spell == SPL_SummonGoblinSkeleton)	{	PLAYER_TALENT_RUNES[SPL_SummonGoblinSkeleton] 	= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumGobSkel, 1);				
@@ -81,29 +81,29 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_InstantIceball)		{	PLAYER_TALENT_RUNES[SPL_InstantIceball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_InstantIceball, 1);			
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? ICE BALL?: 1 pitch");	};	
 	if (spell == SPL_InstantFireball)		{	PLAYER_TALENT_RUNES[SPL_InstantFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_InstantFireball, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? FIREBALL?: 1 pitch pitch");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´FIREBALL ´: 1 Pitch");	};	
 	if (spell == SPL_Zap)					{	PLAYER_TALENT_RUNES[SPL_Zap] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Zap, 1);						
 	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_SummonWolf)			{	PLAYER_TALENT_RUNES[SPL_SummonWolf]				= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumWolf, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? WOLF RUFEN?: 1 wolf fur.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´SUMMON WOLF´: 1 Fur of a Wolf.");	};		
 	if (spell == SPL_WINDFIST)				{	PLAYER_TALENT_RUNES[SPL_WINDFIST] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_WINDFIST, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune: 1 piece of coal.");	};		
 	if (spell == SPL_Sleep)					{	PLAYER_TALENT_RUNES[SPL_Sleep] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Sleep, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Sleep`: 1 Swampweed. This is also a way to use that stuff.");	};		
 	if (spell == SPL_MediumHeal)			{	PLAYER_TALENT_RUNES[SPL_MediumHeal] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_MediumHeal, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? MEDIUM WOUNDS HEALING?: 1 Herb.");	};		
 	if (spell == SPL_LightningFlash)		{	PLAYER_TALENT_RUNES[SPL_LightningFlash] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_LightningFlash, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? BLITZSCHLAG?: 1 rock crystal and 1 glacier quartz.");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´LIGHTNING STRIKE´: 1 Rock Crystal and 1 Glacier Quartz.");	};	
 	if (spell == SPL_ChargeFireball)		{	PLAYER_TALENT_RUNES[SPL_ChargeFireball] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_ChargeFireball, 1);			
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? LARGE FIREBALL?: 1 sulphur and 1 pitch.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Large Fireball´: 1 Sulfur and 1 Pitch.");	};		
 	if (spell == SPL_SummonSkeleton)		{	PLAYER_TALENT_RUNES[SPL_SummonSkeleton] 		= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumSkel, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? SKELET DEMONS?: 1 skeleton bone.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Create Skeleton´: 1 Skeletonbone.");	};		
 	if (spell == SPL_Fear)					{	PLAYER_TALENT_RUNES[SPL_Fear] 					= TRUE;	CreateInvItems (ScrollTrader, ItSc_Fear, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune?ANGST?: 1 black pearl.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´FEAR´: 1 Black Pearl.");	};		
 	if (spell == SPL_IceCube)				{	PLAYER_TALENT_RUNES[SPL_IceCube] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_IceCube, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for Rune? EISBLOCK?: 1 glacier Quartz and 1 Aquamarine.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´ICE BLOCK´: 1 Glacier Quartz and 1 Aquamarine.");	};		
 	if (spell == SPL_ChargeZap)				{	PLAYER_TALENT_RUNES[SPL_ChargeZap] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_ThunderBall, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? ball lightning?: 1 sulphur and 1 rock crystal.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´BALL LIGHTNING´: 1 Sulfur and 1 Rock Crystal.");	};		
 	if (spell == SPL_SummonGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonGolem] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumGol, 1);					
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune: 1 stone golem heart.");	};	
 	if (spell == SPL_SummonFireGolem)			{	PLAYER_TALENT_RUNES[SPL_SummonFireGolem] 			= TRUE;					
@@ -113,19 +113,19 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_DestroyUndead)			{	PLAYER_TALENT_RUNES[SPL_DestroyUndead] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_HarmUndead, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? BEAUTY?: 1 holy water.");	};		
 	if (spell == SPL_Pyrokinesis)			{	PLAYER_TALENT_RUNES[SPL_Pyrokinesis] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_Pyrokinesis, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune `LARGE FIRESTORM´: 1 Sulfur and 1 Tongue of a Fire Lizard.");	};		
 	if (spell == SPL_Firestorm)				{	PLAYER_TALENT_RUNES[SPL_Firestorm] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firestorm, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? firestorm?: 1 sulphur and 1 pitch.");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Small Fire Storm´: 1 Sulfur and 1 Pitch.");	};		
 	if (spell == SPL_Pyrokinesis_g1)			{	PLAYER_TALENT_RUNES[SPL_Pyrokinesis_g1] 			= TRUE;					
 	B_LogEntry (TOPIC_TalentRunes,"");	};		
 	if (spell == SPL_IceWave)				{	PLAYER_TALENT_RUNES[SPL_IceWave] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_IceWave, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for Rune? ice wave?: 1 glacier quartz and 1 aquamarine");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Wave of Ice´: 1 Glacier Quartz and 1 Aquamarin");	};		
 	if (spell == SPL_SummonDemon)			{	PLAYER_TALENT_RUNES[SPL_SummonDemon] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumDemon, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? DÄMON DEMONS?: 1 demon heart");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Summon Demon´: 1 Heart of a Demon");	};		
 	if (spell == SPL_FullHeal)				{	PLAYER_TALENT_RUNES[SPL_FullHeal] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_FullHeal, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune HEAVY WOUNDS HEALING? 1 healing root");	};	
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Heal Heavy Wounds´ 1 Heilwurzel");	};	
 	if (spell == SPL_Firerain)				{	PLAYER_TALENT_RUNES[SPL_Firerain] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Firerain, 1);				
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? FIRE RAIN?: 1 pitch and one tongue from a fire monitor");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Rain of Fire´: 1 Pitch and 1 Tongue of a Fire Lizard.");	};		
 	if (spell == SPL_BreathOfDeath)			{	PLAYER_TALENT_RUNES[SPL_BreathOfDeath]			= TRUE;	CreateInvItems (ScrollTrader, ItSc_BreathOfDeath, 1);			
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? TODESHAUCH?: 1 charcoal and 1 black pearl");	};		
 	if (spell == SPL_MassDeath)				{	PLAYER_TALENT_RUNES[SPL_MassDeath] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_MassDeath, 1);				
@@ -137,7 +137,7 @@ func int B_TeachPlayerTalentRunes (var C_NPC slf, var C_NPC oth, var int spell)
 	if (spell == SPL_SummonDragon)			{	PLAYER_TALENT_RUNES[SPL_SummonDragon] 			= TRUE;	CreateInvItems (ScrollTrader, ItSc_SumDemon, 1);				
 	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune? daredevil?: 1 dragon egg");	};		
 	if (spell == SPL_Shrink)				{	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;	CreateInvItems (ScrollTrader, ItSc_Shrink, 1);					
-	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? MONSTER SCHRUMPFEN?: 1 goblin bone and 1 troll tooth");	};		
+	B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune ´Shrink Monster´: 1 Goblinbone and 1 Trolltooth");	};		
 	
 	//Addon
 	

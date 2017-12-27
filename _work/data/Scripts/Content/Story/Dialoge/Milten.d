@@ -313,7 +313,7 @@ INSTANCE Info_Mod_Milten_Aufgabe (C_INFO)
 	information	= Info_Mod_Milten_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Do you have a job for me?";
+	description	= "Do you have an assignment for me?";
 };
 
 FUNC INT Info_Mod_Milten_Aufgabe_Condition()

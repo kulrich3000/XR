@@ -786,7 +786,7 @@ FUNC VOID Info_Mod_Genn_Pruefung_B()
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
 	Info_AddChoice	(Info_Mod_Genn_Pruefung, "There's something I have to do.", Info_Mod_Genn_Pruefung_D);
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I'm ready.", Info_Mod_Genn_Pruefung_C);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I am ready!", Info_Mod_Genn_Pruefung_C);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_A()
@@ -797,7 +797,7 @@ FUNC VOID Info_Mod_Genn_Pruefung_A()
 	Info_ClearChoices	(Info_Mod_Genn_Pruefung);
 
 	Info_AddChoice	(Info_Mod_Genn_Pruefung, "There's something I have to do.", Info_Mod_Genn_Pruefung_D);
-	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I'm ready.", Info_Mod_Genn_Pruefung_C);
+	Info_AddChoice	(Info_Mod_Genn_Pruefung, "I am ready!", Info_Mod_Genn_Pruefung_C);
 };
 
 FUNC VOID Info_Mod_Genn_Pruefung_D()

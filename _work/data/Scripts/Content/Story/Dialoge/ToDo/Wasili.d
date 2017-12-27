@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Wasili_Verbannt_01_Info()
 
 	Info_ClearChoices	(Info_Mod_Wasili_Verbannt_01);
 
-	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "I'm not interested.", Info_Mod_Wasili_Verbannt_01_B);
+	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "That doesn't concern me.", Info_Mod_Wasili_Verbannt_01_B);
 	Info_AddChoice	(Info_Mod_Wasili_Verbannt_01, "What can be done?", Info_Mod_Wasili_Verbannt_01_A);
 };
 

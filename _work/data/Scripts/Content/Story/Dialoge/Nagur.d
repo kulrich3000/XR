@@ -11,8 +11,6 @@ INSTANCE Info_Mod_Nagur_Hi (C_INFO)
 FUNC INT Info_Mod_Nagur_Hi_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Daron_HabTrank))
-	|| (Mod_IstLehrling > 0)
-	|| (Npc_KnowsInfo(hero, Info_Mod_Ulf_WieGehts))
 	{
 		return 1;
 	};
@@ -27,10 +25,7 @@ FUNC VOID Info_Mod_Nagur_Hi_Info()
 	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_04"); //If something were to happen to him, I would generously reward the person who brings me the contents of his pockets.
 	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_05"); //(to oneself) That would be a warning to the others to settle their debts in time.
 
-	if (Npc_KnowsInfo(hero, Info_Mod_Daron_HabTrank))
-	{
-		B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Probably Akahasch is up towards the lighthouse. He seems to be in debt. Nagur wishes his death and offers a reward for the contents of his bags.");
-	};
+	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Probably Akahasch is up towards the lighthouse. He seems to be in debt. Nagur wishes his death and offers a reward for the contents of his bags.");
 
 	Wld_InsertNpc	(Mod_4016_NOV_Akahasch_NW, "LIGHTHOUSE");
 };

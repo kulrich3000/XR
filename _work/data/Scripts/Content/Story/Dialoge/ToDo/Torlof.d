@@ -187,7 +187,7 @@ INSTANCE Info_Mod_Torlof_NeueAufgabe (C_INFO)
 	information	= Info_Mod_Torlof_NeueAufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Do you have another job for me?";
+	description	= "Have you got another assignment for me?";
 };
 
 FUNC INT Info_Mod_Torlof_NeueAufgabe_Condition()

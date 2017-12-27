@@ -243,7 +243,7 @@ FUNC VOID Info_Mod_Robert_Dietriche_Info()
 	if (Npc_HasItems(hero, ItMiSwordRaw) >= 5)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 100)
 	{
-		Info_AddChoice	(Info_Mod_Robert_Dietriche, "Yeah.", Info_Mod_Robert_Dietriche_A);
+		Info_AddChoice	(Info_Mod_Robert_Dietriche, "Yes.", Info_Mod_Robert_Dietriche_A);
 	};
 };
 

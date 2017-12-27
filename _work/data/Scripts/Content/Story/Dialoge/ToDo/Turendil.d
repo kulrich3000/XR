@@ -27,7 +27,7 @@ FUNC VOID Info_Mod_Turendil_Hi_Info()
 
 	Info_ClearChoices	(Info_Mod_Turendil_Hi);
 
-	Info_AddChoice	(Info_Mod_Turendil_Hi, "I'm not interested.", Info_Mod_Turendil_Hi_B);
+	Info_AddChoice	(Info_Mod_Turendil_Hi, "That doesn't concern me.", Info_Mod_Turendil_Hi_B);
 	Info_AddChoice	(Info_Mod_Turendil_Hi, "What plague?", Info_Mod_Turendil_Hi_A);
 };
 
@@ -799,7 +799,7 @@ INSTANCE Info_Mod_Turendil_Woher (C_INFO)
 	information	= Info_Mod_Turendil_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Where are you from?";
+	description	= "Where do you come from?";
 };
 
 FUNC INT Info_Mod_Turendil_Woher_Condition()
@@ -825,7 +825,7 @@ INSTANCE Info_Mod_Turendil_WasHier (C_INFO)
 	information	= Info_Mod_Turendil_WasHier_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What are you guys doing here?";
+	description	= "What are you doing here?";
 };
 
 FUNC INT Info_Mod_Turendil_WasHier_Condition()

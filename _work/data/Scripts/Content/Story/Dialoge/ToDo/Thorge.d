@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Thorge_KommMit (C_INFO)
 	information	= Info_Mod_Thorge_KommMit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Come with me.";
+	description	= "Come along.";
 };
 
 FUNC INT Info_Mod_Thorge_KommMit_Condition()

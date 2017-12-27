@@ -83,7 +83,7 @@ INSTANCE Info_Mod_Bennet_IR_Staerke (C_INFO)
 	information	= Info_Mod_Bennet_IR_Staerke_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to be stronger.";
+	description	= "I want to get stronger.";
 };
 
 FUNC INT Info_Mod_Bennet_IR_Staerke_Condition()

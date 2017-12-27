@@ -44,15 +44,15 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_Info ()
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NONE] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need gold, keys and utensils", Info_Mod_Irrlicht_DetectItems_NONE );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need gold, keys and utensils.", Info_Mod_Irrlicht_DetectItems_NONE );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need ranged weapons and ammunition.", Info_Mod_Irrlicht_DetectItems_FF );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need long-range weapons and ammunition.", Info_Mod_Irrlicht_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
-		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need melee weapons.", Info_Mod_Irrlicht_DetectItems_NF );
+		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need close combat weapons.", Info_Mod_Irrlicht_DetectItems_NF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FOOD] 	== TRUE)		
 	{	
@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_Irrlicht_DetectItems_Info ()
 		Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "I need all kinds of potions.", Info_Mod_Irrlicht_DetectItems_POTIONS );
 	};
 
-	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Just find everything you can.", Info_Mod_Irrlicht_DetectItems_ALL );
+	Info_AddChoice	(Info_Mod_Irrlicht_DetectItems, "Get me anything you can find!", Info_Mod_Irrlicht_DetectItems_ALL );
 };
 
 FUNC VOID Info_Mod_Irrlicht_DetectItems_Follow ()

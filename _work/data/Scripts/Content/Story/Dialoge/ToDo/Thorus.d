@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_Thorus_Schlecht_Info()
 	Info_ClearChoices	(Info_Mod_Thorus_Schlecht);
 
 	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "No.", Info_Mod_Thorus_Schlecht_Nein);
-	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "Yeah.", Info_Mod_Thorus_Schlecht_Ja);
+	Info_AddChoice	(Info_Mod_Thorus_Schlecht, "Yes.", Info_Mod_Thorus_Schlecht_Ja);
 };
 
 FUNC VOID Info_Mod_Thorus_Schlecht_Nein()
@@ -562,7 +562,7 @@ INSTANCE Info_Mod_Thorus_WasLos (C_INFO)
 	information	= Info_Mod_Thorus_WasLos_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What's going on?";
+	description	= "What's the matter?";
 };
 
 FUNC INT Info_Mod_Thorus_WasLos_Condition()
@@ -745,11 +745,11 @@ FUNC VOID Info_Mod_Thorus_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was it again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I haven't got enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was that again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the penalty!",Info_Mod_Thorus_PETZMASTER_PayNow);
 		};
 	};
 };
@@ -761,11 +761,11 @@ func void Info_Mod_Thorus_PMSchulden_HowMuchAgain()
 
 	Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was it again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"I haven't got enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Thorus_PMSchulden,"How much was that again?",Info_Mod_Thorus_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Thorus_PMSchulden,"I want to pay the penalty!",Info_Mod_Thorus_PETZMASTER_PayNow);
 	};
 };
 
@@ -861,10 +861,10 @@ FUNC VOID Info_Mod_Thorus_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Thorus_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Thorus_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Thorus_PETZMASTER,"I don't have enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Thorus_PETZMASTER,"I haven't got enough gold!",Info_Mod_Thorus_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Thorus_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Thorus_PETZMASTER,"I want to pay the fine.",Info_Mod_Thorus_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Thorus_PETZMASTER,"I want to pay the penalty!",Info_Mod_Thorus_PETZMASTER_PayNow);
 	};
 };
 
@@ -904,7 +904,7 @@ INSTANCE Info_Mod_Thorus_Lehrer (C_INFO)
 	information	= Info_Mod_Thorus_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can I learn from you?";
+	description	= "Can you teach me?";
 };
 
 FUNC INT Info_Mod_Thorus_Lehrer_Condition()

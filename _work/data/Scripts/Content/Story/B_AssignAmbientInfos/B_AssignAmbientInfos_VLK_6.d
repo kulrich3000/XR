@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_6_JOIN(C_INFO)
 	condition	= DIA_VLK_6_JOIN_Condition;
 	information	= DIA_VLK_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "How do I become a citizen of this city?";
+	description = "How do I go about becoming a citizen of this town?";
 };                       
 
 FUNC INT DIA_VLK_6_JOIN_Condition()
@@ -250,7 +250,7 @@ INSTANCE DIA_VLK_6_LOCATION(C_INFO)
 	condition	= DIA_VLK_6_LOCATION_Condition;
 	information	= DIA_VLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "What is the best way to orientate myself in the city?";
+	description = "How do I go about orienting myself in this city?";
 };                       
 
 FUNC INT DIA_VLK_6_LOCATION_Condition()

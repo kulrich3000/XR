@@ -19,7 +19,7 @@ FUNC VOID Info_Mod_Maleth_Hi_Info()
 
 	Info_ClearChoices	(Info_Mod_Maleth_Hi);
 
-	Info_AddChoice	(Info_Mod_Maleth_Hi, "None of your business.", Info_Mod_Maleth_Hi_B);
+	Info_AddChoice	(Info_Mod_Maleth_Hi, "That's none of your business.", Info_Mod_Maleth_Hi_B);
 	Info_AddChoice	(Info_Mod_Maleth_Hi, "Yes, exactly.", Info_Mod_Maleth_Hi_A);
 };
 

@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Francis_Entertrupp (C_INFO)
 	information	= Info_Mod_Francis_Entertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to join your posse.";
+	description	= "I want to join your raiding troop.";
 };
 
 FUNC INT Info_Mod_Francis_Entertrupp_Condition()
@@ -105,7 +105,7 @@ INSTANCE Info_Mod_Francis_InEntertrupp (C_INFO)
 	information	= Info_Mod_Francis_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to join your posse.";
+	description	= "I want to join your raiding troop.";
 };
 
 FUNC INT Info_Mod_Francis_InEntertrupp_Condition()

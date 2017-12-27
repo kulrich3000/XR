@@ -332,7 +332,7 @@ INSTANCE Info_Mod_Wendel_Nagelnachschub (C_INFO)
 	information	= Info_Mod_Wendel_Nagelnachschub_Info;
 	permanent	= 0;
 	important	= 0;
-	description 	= "I have a letter here for you.";
+	description 	= "Here, I've got a letter for you.";
 };                       
 
 FUNC INT Info_Mod_Wendel_Nagelnachschub_Condition()

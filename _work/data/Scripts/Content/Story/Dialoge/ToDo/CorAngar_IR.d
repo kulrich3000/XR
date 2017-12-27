@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Angar_IR_Hi (C_INFO)
 	information	= Info_Mod_Angar_IR_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Well, what do you say?";
+	description	= "So, what do you say?";
 };
 
 FUNC INT Info_Mod_Angar_IR_Hi_Condition()
@@ -224,7 +224,7 @@ INSTANCE Info_Mod_Angar_IR_Staerke (C_INFO)
 	information	= Info_Mod_Angar_IR_Staerke_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to be stronger.";
+	description	= "I want to get stronger.";
 };
 
 FUNC INT Info_Mod_Angar_IR_Staerke_Condition()

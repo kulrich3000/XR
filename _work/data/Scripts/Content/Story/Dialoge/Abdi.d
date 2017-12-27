@@ -111,7 +111,7 @@ INSTANCE Info_Mod_Abdi_Belagerung (C_INFO)
 	information	= Info_Mod_Abdi_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You need some help?";
+	description	= "Do you need help?";
 };
 
 FUNC INT Info_Mod_Abdi_Belagerung_Condition()

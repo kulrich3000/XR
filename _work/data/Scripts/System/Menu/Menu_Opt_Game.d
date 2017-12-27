@@ -304,7 +304,7 @@ INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Blood Details";
-	text[1]		= 	"Degree of display of blood effects."; // Kommentar
+	text[1]		= 	"Representation of blood effects."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*7;
 	dimx		=	4000;	dimy		=	750;
@@ -318,7 +318,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"no|few|several|many|many";
+	text[0]		= 	"none|little|more|much";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*7 + MENU_CHOICE_YPLUS;

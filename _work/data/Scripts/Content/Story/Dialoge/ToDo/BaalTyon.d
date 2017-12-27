@@ -34,7 +34,7 @@ INSTANCE Info_Mod_Tyon_Woher (C_INFO)
 	information	= Info_Mod_Tyon_Woher_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Where are you from?";
+	description	= "Where do you come from?";
 };
 
 FUNC INT Info_Mod_Tyon_Woher_Condition()
@@ -92,7 +92,7 @@ INSTANCE Info_Mod_Tyon_Lernen (C_INFO)
 	information	= Info_Mod_Tyon_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to increase my magical powers.";
+	description	= "I want to increase my magic powers.";
 };
 
 FUNC INT Info_Mod_Tyon_Lernen_Condition()

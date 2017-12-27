@@ -467,7 +467,7 @@ instance Info_Mod_Hyglas_Runen	(C_INFO)
 	information	= Info_Mod_Hyglas_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me (create runes)";
+	description	= "Instruct me (create runes)";
 };
 
 func int Info_Mod_Hyglas_Runen_Condition ()
@@ -518,7 +518,7 @@ func void Info_Mod_Hyglas_Runen_Info ()
 		};
 		if (PLAYER_TALENT_RUNES [SPL_Pyrokinesis_g1] == FALSE)
 		{
-			Info_AddChoice	(Info_Mod_Hyglas_Runen, B_BuildLearnString ("pyrokinesis", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Hyglas_Runen_Pyrokinesis_g1);
+			Info_AddChoice	(Info_Mod_Hyglas_Runen, B_BuildLearnString ("Pyrokinesis", B_GetLearnCostTalent (hero, NPC_TALENT_RUNES, SPL_Pyrokinesis_g1)), Info_Mod_Hyglas_Runen_Pyrokinesis_g1);
 			abletolearn = (abletolearn +1);
 		};
 		if (PLAYER_TALENT_RUNES [SPL_FullHeal] == FALSE)

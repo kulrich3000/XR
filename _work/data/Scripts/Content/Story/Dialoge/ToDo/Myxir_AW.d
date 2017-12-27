@@ -37,7 +37,7 @@ INSTANCE Info_Mod_Myxir_AW_WhatNow (C_INFO)
 	information	= Info_Mod_Myxir_AW_WhatNow_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What do you want me to do?";
+	description	= "What should I do?";
 };
 
 FUNC INT Info_Mod_Myxir_AW_WhatNow_Condition()

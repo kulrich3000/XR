@@ -81,7 +81,7 @@ INSTANCE Info_Mod_Bones_Befreiung (C_INFO)
 	information	= Info_Mod_Bones_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What's the news?";
+	description	= "What's new?";
 };
 
 FUNC INT Info_Mod_Bones_Befreiung_Condition()

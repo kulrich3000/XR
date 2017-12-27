@@ -23,7 +23,7 @@ FUNC VOID Info_Mod_Leprechaun_Hi_Info()
 	Info_ClearChoices	(Info_Mod_Leprechaun_Hi);
 
 	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Why me?", Info_Mod_Leprechaun_Hi_B);
-	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Who is your master?", Info_Mod_Leprechaun_Hi_A);
+	Info_AddChoice	(Info_Mod_Leprechaun_Hi, "Who's your master?", Info_Mod_Leprechaun_Hi_A);
 };
 
 FUNC VOID Info_Mod_Leprechaun_Hi_C()

@@ -925,7 +925,7 @@ INSTANCE Info_Mod_Alissandro_Flucht (C_INFO)
 	information	= Info_Mod_Alissandro_Flucht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What now?";
+	description	= "What next?";
 };
 
 FUNC INT Info_Mod_Alissandro_Flucht_Condition()

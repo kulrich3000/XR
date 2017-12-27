@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_HofstaatWeiberheld_Hi_Info()
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 2)
 	{
-		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Bought.", Info_Mod_HofstaatWeiberheld_Hi_A);
+		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Done.", Info_Mod_HofstaatWeiberheld_Hi_A);
 	};
 };
 
@@ -76,7 +76,7 @@ FUNC VOID Info_Mod_HofstaatWeiberheld_Hi_B()
 		Info_ClearChoices	(Info_Mod_HofstaatWeiberheld_Hi);
 
 		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Still too much...", Info_Mod_HofstaatWeiberheld_Hi_F);
-		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Bought.", Info_Mod_HofstaatWeiberheld_Hi_E);
+		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Done.", Info_Mod_HofstaatWeiberheld_Hi_E);
 	}
 	else
 	{
@@ -84,7 +84,7 @@ FUNC VOID Info_Mod_HofstaatWeiberheld_Hi_B()
 
 		Info_ClearChoices	(Info_Mod_HofstaatWeiberheld_Hi);
 
-		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Bought.", Info_Mod_HofstaatWeiberheld_Hi_E);
+		Info_AddChoice	(Info_Mod_HofstaatWeiberheld_Hi, "Done.", Info_Mod_HofstaatWeiberheld_Hi_E);
 	};
 };
 

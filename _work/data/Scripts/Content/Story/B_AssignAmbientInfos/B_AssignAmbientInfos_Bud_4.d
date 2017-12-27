@@ -125,7 +125,7 @@ INSTANCE Info_Bud_4_DieLage(C_INFO) // E1
 	condition	= Info_Bud_4_DieLage_Condition;
 	information	= Info_Bud_4_DieLage_Info;
 	permanent	= 1;
-	description = "You all right?";
+	description = "Everything all right?";
 };                       
 
 FUNC INT Info_Bud_4_DieLage_Condition()

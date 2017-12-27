@@ -184,7 +184,7 @@ INSTANCE Info_Mod_Straschiduo_WhatToDo (C_INFO)
 	information	= Info_Mod_Straschiduo_WhatToDo_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What am I supposed to do?";
+	description	= "So what should I do?";
 };
 
 FUNC INT Info_Mod_Straschiduo_WhatToDo_Condition()

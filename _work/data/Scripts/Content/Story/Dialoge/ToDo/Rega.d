@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Rega_Unheil (C_INFO)
 	information	= Info_Mod_Rega_Unheil_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Hello, beautiful child.";
+	description	= "Hello, pretty girl.";
 };
 
 FUNC INT Info_Mod_Rega_Unheil_Condition()

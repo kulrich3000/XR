@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Eduard_Belagerung (C_INFO)
 	information	= Info_Mod_Eduard_Belagerung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Everything okay with you?";
+	description	= "Everything all right with you?";
 };
 
 FUNC INT Info_Mod_Eduard_Belagerung_Condition()
@@ -723,7 +723,7 @@ instance Info_Mod_Eduard_TeachCOMMON (C_INFO)
 	condition	= Info_Mod_Eduard_TeachCOMMON_Condition;
 	information	= Info_Mod_Eduard_TeachCOMMON_Info;
 	permanent	= TRUE;
-	description	= B_BuildLearnString("Learning to forge", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
+	description	= B_BuildLearnString("Learn to forge", B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common));
 };
 
 func int Info_Mod_Eduard_TeachCOMMON_Condition ()

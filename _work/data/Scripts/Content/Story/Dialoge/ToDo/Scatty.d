@@ -517,7 +517,7 @@ FUNC VOID Info_Mod_Scatty_Kap4_Info()
 	Info_ClearChoices	(Info_Mod_Scatty_Kap4);
 
 	Info_AddChoice	(Info_Mod_Scatty_Kap4, "At least the hairdo fits now.", Info_Mod_Scatty_Kap4_B);
-	Info_AddChoice	(Info_Mod_Scatty_Kap4, "You'll be all right.", Info_Mod_Scatty_Kap4_A);
+	Info_AddChoice	(Info_Mod_Scatty_Kap4, "It'll be all right.", Info_Mod_Scatty_Kap4_A);
 };
 
 FUNC VOID Info_Mod_Scatty_Kap4_B()

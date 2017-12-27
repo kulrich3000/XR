@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Edda_SuppeKochenLernen_Info()
 
 	Info_ClearChoices	(Info_Mod_Edda_SuppeKochenLernen);
 
-	Info_AddChoice	(Info_Mod_Edda_SuppeKochenLernen, "Later, maybe.", Info_Mod_Edda_SuppeKochenLernen_B);
+	Info_AddChoice	(Info_Mod_Edda_SuppeKochenLernen, "Maybe later.", Info_Mod_Edda_SuppeKochenLernen_B);
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{

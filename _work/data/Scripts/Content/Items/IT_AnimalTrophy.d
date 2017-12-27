@@ -192,7 +192,7 @@ INSTANCE ItAt_SheepFur_Feuer (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ZiegenFur (C_Item)
 {
-	name 				=	"goatskin";
+	name 				=	"Goatskin";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;

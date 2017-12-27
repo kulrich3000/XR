@@ -166,7 +166,7 @@ INSTANCE DIA_Pal_213_Schiffswache_GoOnBoard   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_GoOnBoard_Condition;
 	information = DIA_Pal_213_Schiffswache_GoOnBoard_Info;
 	permanent   = FALSE;
-	description = "I want to get on the ship.";
+	description = "I want to get aboard the ship.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_GoOnBoard_Condition()
@@ -193,7 +193,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF_Info;
 	permanent   = FALSE;
-	description = "You question the wish of a magician of fire?";
+	description = "You question the wish of a Fire Magician?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF2   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF2_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF2_Info;
 	permanent   = FALSE;
-	description = "What happens when I board?";
+	description = "What happens if I go aboard?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF2_Condition()
@@ -253,7 +253,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF3   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF3_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF3_Info;
 	permanent   = FALSE;
-	description = "You would attack a magician of fire?";
+	description = "You would attack a Fire Magician?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF3_Condition()
@@ -284,7 +284,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF4   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF4_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF4_Info;
 	permanent   = FALSE;
-	description = "I'm going to go on board now.";
+	description = "I will go aboard now.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF4_Condition()
@@ -313,7 +313,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF5   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF5_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF5_Info;
 	permanent   = FALSE;
-	description = "Lord Hagen's orders include me?";
+	description = "Do Lord Hagen's orders include me, too?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF5_Condition()
@@ -344,7 +344,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF6   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF6_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF6_Info;
 	permanent   = FALSE;
-	description = "For the last time, let me on the ship!";
+	description = "For the last time: Let me board the ship!";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF6_Condition()
@@ -374,7 +374,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL_Info;
 	permanent   = FALSE;
-	description = "Do you mistrust me, knight?";
+	description = "Do you not trust me, knight?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL_Condition()
@@ -403,7 +403,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL2   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL2_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL2_Info;
 	permanent   = FALSE;
-	description = "Then you should know who's higher-ranking here.";
+	description = "Then you shall know which of us has the higher rank.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL2_Condition()
@@ -432,7 +432,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL3   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL3_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL3_Info;
 	permanent   = FALSE;
-	description = "I hereby order you to grant me access to the ship.";
+	description = "I hereby command you to grant me access to this ship.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL3_Condition()
@@ -462,7 +462,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmDJG   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmDJG_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmDJG_Info;
 	permanent   = FALSE;
-	description = "Isn't there anything you can do?";
+	description = "Is there nothing to be done about that?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmDJG_Condition()
@@ -520,7 +520,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmDJG3   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmDJG3_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmDJG3_Info;
 	permanent   = FALSE;
-	description = "I have an authorization letter.";
+	description = "I have a written authorization.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmDJG3_Condition()

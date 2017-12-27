@@ -121,7 +121,7 @@ INSTANCE Info_Bud_3_DieLage(C_INFO) // E1
 	condition	= Info_Bud_3_DieLage_Condition;
 	information	= Info_Bud_3_DieLage_Info;
 	permanent	= 1;
-	description = "What's the score?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_Bud_3_DieLage_Condition()

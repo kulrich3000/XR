@@ -303,7 +303,7 @@ FUNC VOID Info_Mod_Per_Pruefung2_A()
 	Info_ClearChoices	(Info_Mod_Per_Pruefung2);
 
 	Info_AddChoice	(Info_Mod_Per_Pruefung2, "No, I won't go along with that.", Info_Mod_Per_Pruefung2_D);
-	Info_AddChoice	(Info_Mod_Per_Pruefung2, "What am I supposed to do?", Info_Mod_Per_Pruefung2_C);
+	Info_AddChoice	(Info_Mod_Per_Pruefung2, "So what should I do?", Info_Mod_Per_Pruefung2_C);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung2_E()
@@ -624,7 +624,7 @@ FUNC VOID Info_Mod_Per_Pruefung4_C()
 	Info_ClearChoices	(Info_Mod_Per_Pruefung4);
 
 	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Of course not, of course.", Info_Mod_Per_Pruefung4_G);
-	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Of course it is.", Info_Mod_Per_Pruefung4_F);
+	Info_AddChoice	(Info_Mod_Per_Pruefung4, "Of course.", Info_Mod_Per_Pruefung4_F);
 };
 
 FUNC VOID Info_Mod_Per_Pruefung4_B()

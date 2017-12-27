@@ -120,7 +120,7 @@ INSTANCE Info_Mod_Riordian_TempelDicht2 (C_INFO)
 	information	= Info_Mod_Riordian_TempelDicht2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What's happening?";
+	description	= "What happened?";
 };
 
 FUNC INT Info_Mod_Riordian_TempelDicht2_Condition()

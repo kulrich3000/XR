@@ -94,7 +94,7 @@ FUNC VOID Use_Bookstand_Innos_01_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Page 1"					);
-					Doc_PrintLine	( nDocID,  0, "The teachings of Inno"	);
+					Doc_PrintLine	( nDocID,  0, "Teachings of Innos"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -130,7 +130,7 @@ FUNC VOID Use_Bookstand_Innos_02_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Page 1"					);
-					Doc_PrintLine	( nDocID,  0, "The Commandments of Inno"	);
+					Doc_PrintLine	( nDocID,  0, "Commandments of Innos"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -168,12 +168,12 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  0, "THE FIRST CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "The runes of the first circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 1st Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Light");
-					Doc_PrintLine	( nDocID,  0, "gold coin");
+					Doc_PrintLine	( nDocID,  0, "Gold Coin");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Feuerpfeil");
@@ -188,11 +188,11 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -218,7 +218,7 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  0, "THE SECOND CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "The runes of the second circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 2nd Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -230,11 +230,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -261,7 +261,7 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "THE THIRD CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "The runes of the third circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 3rd Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
@@ -275,11 +275,11 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "Schwefel");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -306,7 +306,7 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "THE FOURTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "The runes of the fourth circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 4th Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -327,11 +327,11 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -358,7 +358,7 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "THE FIFTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "The runes of the fifth circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 5th Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -376,11 +376,11 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -407,7 +407,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "THE SIXTH CIRCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "The runes of the sixth circle and the ingredients needed to make them ");
+					Doc_PrintLines	( nDocID,  0, "The runes of the 6th Circle and the ingredients required to create them. ");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -430,11 +430,11 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "For the production of a rune, ONE of the listed ingredients is required."					);
+					Doc_PrintLines	( nDocID,  1, "To create a rune you always require ONE of the ingredients listed."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The user must be familiar with the spell formula and must have a naked rune stone and a spell role of the spell."					);
+					Doc_PrintLines	( nDocID,  1, "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he or she get to work at the rune table."					);
+					Doc_PrintLines	( nDocID,  1, "Only when these prerequisites are fulfilled can he set to work on the rune table."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -459,7 +459,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Page 1"					);
-					Doc_PrintLine	( nDocID,  0, "rules"	);
+					Doc_PrintLine	( nDocID,  0, "Rules"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");

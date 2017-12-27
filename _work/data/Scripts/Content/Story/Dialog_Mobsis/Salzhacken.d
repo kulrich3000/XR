@@ -37,7 +37,7 @@ INSTANCE PC_Salzhacken_Hacken (C_INFO)
 	information	= PC_Salzhacken_Hacken_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Just chop it.";
+	description	= "Just chop a little.";
 };
 
 FUNC INT PC_Salzhacken_Hacken_Condition()
@@ -106,7 +106,7 @@ FUNC VOID PC_Salzhacken_Hacken_Info()
 	}
 	else
 	{
-		PrintScreen ("There's nothing left to get here.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("There's nothing else to be had here.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
@@ -118,7 +118,7 @@ INSTANCE PC_Salzhacken_Chance (C_Info)
 	condition		= PC_Salzhacken_Chance_Condition;
 	information		= PC_Salzhacken_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Check own ability)"; 
+	description		= "(assess own ability)"; 
 };
 
 FUNC INT PC_Salzhacken_Chance_Condition ()
@@ -135,31 +135,31 @@ FUNC VOID PC_Salzhacken_Chance_Info()
 	
 	if (ErzHackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("absolute beginner (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A beginner scraper (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("quite reasonable prospector (" , IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An adequate scraper (" , IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("experienced prospector (", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An experienced scraper (", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("genuine Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A competent scraper ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("damn good digger ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("An accomplished scraper ( ", IntToString (ErzHackChance));
 	}
 	else if (ErzHackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("Master Buddler ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A master scraper ( ", IntToString (ErzHackChance));
 	}
 	else
 	{
-		ConcatText = ConcatStrings ("Buddler Guru ( ", IntToString (ErzHackChance));
+		ConcatText = ConcatStrings ("A guru scraper ( ", IntToString (ErzHackChance));
 	};
 	
 	ConcatText = ConcatStrings (concatText, " percent)");

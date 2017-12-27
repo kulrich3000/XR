@@ -62,7 +62,7 @@ FUNC VOID Info_Mod_Torwache_AL_01_Halt_B()
 
 	Info_ClearChoices	(Info_Mod_Torwache_AL_01_Halt);
 
-	Info_AddChoice	(Info_Mod_Torwache_AL_01_Halt, "None of your business.", Info_Mod_Torwache_AL_01_Halt_F);
+	Info_AddChoice	(Info_Mod_Torwache_AL_01_Halt, "That's none of your business.", Info_Mod_Torwache_AL_01_Halt_F);
 	Info_AddChoice	(Info_Mod_Torwache_AL_01_Halt, "I don't know about that.", Info_Mod_Torwache_AL_01_Halt_E);
 };
 

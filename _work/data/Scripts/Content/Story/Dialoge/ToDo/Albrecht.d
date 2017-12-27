@@ -75,7 +75,7 @@ func void Info_Mod_Albrecht_CanTeach_Info()
 		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_00"); //If you get yourself worthy, I will give you the magical runes of the paladins.
 		AI_Output (self, other, "Info_Mod_Albrecht_CanTeach_03_01"); //Besides, I can teach you how to increase your magic power.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_MOD_LEHRER_STADT, "Paladin Albrecht can help me to increase my magical power.");
+		B_LogEntry (TOPIC_MOD_LEHRER_STADT, "The paladin Albrecht can help me increase my magic powers.");
 	}
 	else
 	{	
@@ -91,7 +91,7 @@ instance Info_Mod_Albrecht_TEACHPalRunes (C_INFO)
 	information	= Info_Mod_Albrecht_TEACHPalRunes_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Am I worthy to receive a rune?";
+	description	= "Am I worthy of receiving a rune?";
 };
 
 func int Info_Mod_Albrecht_TEACHPalRunes_Condition()
@@ -126,7 +126,7 @@ func void Info_Mod_Albrecht_TEACHPalRunes_Info()
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"I choose the path of healing.",Info_Mod_Albrecht_TEACHPalRunes_Heal);
-		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"I choose the path of struggle.",Info_Mod_Albrecht_TEACHPalRunes_Combat);
+		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,"I choose the path of combat.",Info_Mod_Albrecht_TEACHPalRunes_Combat);
 	};	
 };
 
@@ -186,7 +186,7 @@ FUNC VOID Info_Mod_Albrecht_TEACHPalRunes_Combat()
 	{
 		Info_ClearChoices   (Info_Mod_Albrecht_TEACHPalRunes);
 		Info_AddChoice (Info_Mod_Albrecht_TEACHPalRunes,DIALOG_BACK,Info_Mod_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("cast out evil", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalRepelEvil);
+		Info_AddChoice	(Info_Mod_Albrecht_TEACHPalRunes, B_BuildLearnString ("Expel evil", CostForPalSpells) ,Info_Mod_Albrecht_TEACHPalRunes_PalRepelEvil);
 	}
 	else if (PLAYER_TALENT_RUNES [SPL_PalDestroyEvil] == FALSE)
 	&&	(Kapitel >= 6)

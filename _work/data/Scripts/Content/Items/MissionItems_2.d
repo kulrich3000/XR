@@ -277,7 +277,7 @@ func void UseItwr_Silvestro ()
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLine	( nDocID,  0, "Long live the King");
 				Doc_PrintLine	( nDocID,  0, "");
-				Doc_PrintLine	( nDocID,  0, "silvestro");
+				Doc_PrintLine	( nDocID,  0, "Silvestro");
 				Doc_Show		( nDocID );
 				
 };

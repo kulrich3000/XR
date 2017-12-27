@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Lukas_Lernen (C_INFO)
 	information	= Info_Mod_Lukas_Lernen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can I learn from you?";
+	description	= "Can you teach me?";
 };
 
 FUNC INT Info_Mod_Lukas_Lernen_Condition()
@@ -165,7 +165,7 @@ INSTANCE Info_Mod_Lukas_NochWasZuTun (C_INFO)
 	information	= Info_Mod_Lukas_NochWasZuTun_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Do you have anything else to do for me?";
+	description	= "Have you got anything else for me to do?";
 };
 
 FUNC INT Info_Mod_Lukas_NochWasZuTun_Condition()

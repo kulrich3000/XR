@@ -237,7 +237,7 @@ FUNC VOID Info_Mod_Leitwolf_Hi_N()
 
 	if (Mod_WM_IsWarg == 1)
 	{
-		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Forget about it.", Info_Mod_Leitwolf_Hi_P);
+		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "Forget it.", Info_Mod_Leitwolf_Hi_P);
 		Info_AddChoice	(Info_Mod_Leitwolf_Hi, "I will, what do you want?", Info_Mod_Leitwolf_Hi_O);
 	}
 	else

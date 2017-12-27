@@ -246,7 +246,7 @@ FUNC VOID Info_Mod_Petunia_Pruefung_D()
 	Info_ClearChoices	(Info_Mod_Petunia_Pruefung);
 
 	Info_AddChoice	(Info_Mod_Petunia_Pruefung, "You've caused a lot of trouble for the change magicians, and thus for me, too.", Info_Mod_Petunia_Pruefung_J);
-	Info_AddChoice	(Info_Mod_Petunia_Pruefung, "What are you going to do now?", Info_Mod_Petunia_Pruefung_I);
+	Info_AddChoice	(Info_Mod_Petunia_Pruefung, "What are you planning to do now?", Info_Mod_Petunia_Pruefung_I);
 };
 
 FUNC VOID Info_Mod_Petunia_Pruefung_G()
@@ -277,7 +277,7 @@ FUNC VOID Info_Mod_Petunia_Pruefung_J()
 
 	Info_ClearChoices	(Info_Mod_Petunia_Pruefung);
 
-	Info_AddChoice	(Info_Mod_Petunia_Pruefung, "What are you going to do now?", Info_Mod_Petunia_Pruefung_I);
+	Info_AddChoice	(Info_Mod_Petunia_Pruefung, "What are you planning to do now?", Info_Mod_Petunia_Pruefung_I);
 };
 
 FUNC VOID Info_Mod_Petunia_Pruefung_I()

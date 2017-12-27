@@ -57,7 +57,7 @@ FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 	
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "No.", Info_Stt_10_EinerVonEuchWerden_Nein);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "Yeah.", Info_Stt_10_EinerVonEuchWerden_Ja);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden, "Yes.", Info_Stt_10_EinerVonEuchWerden_Ja);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()

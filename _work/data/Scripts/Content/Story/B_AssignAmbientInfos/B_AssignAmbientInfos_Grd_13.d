@@ -89,7 +89,7 @@ INSTANCE Info_grd_13_DasLager(C_INFO)
 	condition	= Info_grd_13_DasLager_Condition;
 	information	= Info_grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "How do I get to the castle?";
+	description = "How can I get into the castle?";
 };                       
 
 FUNC INT Info_grd_13_DasLager_Condition()

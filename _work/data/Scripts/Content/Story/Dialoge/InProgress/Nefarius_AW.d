@@ -157,7 +157,7 @@ INSTANCE Info_Mod_Nefarius_AW_Runen (C_INFO)
 	information	= Info_Mod_Nefarius_AW_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me (create runes)";
+	description	= "Instruct me (create runes)";
 };
 
 FUNC INT Info_Mod_Nefarius_AW_Runen_Condition ()

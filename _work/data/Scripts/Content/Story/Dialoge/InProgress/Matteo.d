@@ -100,7 +100,7 @@ FUNC VOID Info_Mod_Matteo_ThorbenLehrling_B()
 		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Another little bonus for the seriously ill master?", Info_Mod_Matteo_ThorbenLehrling_D);
 	};
 
-	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Deal.", Info_Mod_Matteo_ThorbenLehrling_C);
+	Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "It's a deal.", Info_Mod_Matteo_ThorbenLehrling_C);
 };
 
 FUNC VOID Info_Mod_Matteo_ThorbenLehrling_A()
@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Matteo_ThorbenLehrling_D()
 
 		Info_ClearChoices	(Info_Mod_Matteo_ThorbenLehrling);
 
-		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "Deal.", Info_Mod_Matteo_ThorbenLehrling_C);
+		Info_AddChoice	(Info_Mod_Matteo_ThorbenLehrling, "It's a deal.", Info_Mod_Matteo_ThorbenLehrling_C);
 	};
 };
 
@@ -932,7 +932,7 @@ INSTANCE Info_Mod_Matteo_LehrlingQuest8 (C_INFO)
 	information	= Info_Mod_Matteo_LehrlingQuest8_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How are things going with you?";
+	description	= "How's it going with you?";
 };
 
 FUNC INT Info_Mod_Matteo_LehrlingQuest8_Condition()

@@ -454,7 +454,7 @@ INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Lateral left";
+	text[0]			=	"sideways left";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -465,7 +465,7 @@ INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Sideways right";
+	text[0]			=	"sideways right";
 	text[1]			=   "press DEL key to empty slot and RETURN to define"; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 

@@ -62,7 +62,7 @@ INSTANCE Info_Mod_Costa_Buddler2 (C_INFO)
 	information	= Info_Mod_Costa_Buddler2_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Here's the book.";
+	description	= "Here is the book.";
 };
 
 FUNC INT Info_Mod_Costa_Buddler2_Condition()

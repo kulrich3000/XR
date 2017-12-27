@@ -33,15 +33,15 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Potions of magical power");
-					Doc_PrintLine	( nDocID,  0, "and its ingredients"						);
+					Doc_PrintLine	( nDocID,  0, "Potions of Magic Power");
+					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mana Essence"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fire nettles"						);
+					Doc_PrintLine	( nDocID,  0, "2 fire nettles"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mana Extract"						);
-					Doc_PrintLine	( nDocID,  0, "2 fire herbs"						);
+					Doc_PrintLine	( nDocID,  0, "2 fireweeds"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mana Elixir"						);
 					Doc_PrintLine	( nDocID,  0, "2 fire roots"						);
@@ -52,12 +52,12 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Any work on the alchemy table requires a laboratory water bottle that is consumed during the process."	); 
+					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "For the brewing of potions of healing or the strengthening of magical power, the user always needs a plant in addition to the special ingredient:"			);
+					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a special ingredient and a plant:"			);
 					Doc_PrintLine	( nDocID,  1, "Feldknöterich"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "For the brewing of potions that cause permanent changes in the body or mind, the user always needs a plant: "						);
+					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant: "						);
 					Doc_PrintLines	( nDocID,  1, "King's Sorrel"		);
 					Doc_Show		( nDocID );
 					
@@ -90,15 +90,15 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Drinking Healing Power");
-					Doc_PrintLine	( nDocID,  0, "and its ingredients"						);
+					Doc_PrintLine	( nDocID,  0, "Healing Potions");
+					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Essence of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 medicinal plants"						);
+					Doc_PrintLine	( nDocID,  0, "2 healing plants"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Extract of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 medicinal herbs"						);
+					Doc_PrintLine	( nDocID,  0, "2 healing herbs"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elixir of Healing"						);
 					Doc_PrintLine	( nDocID,  0, "2 healing roots"						);
@@ -109,12 +109,12 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Any work on the alchemy table requires a laboratory water bottle that is consumed during the process."	); 
+					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "For the brewing of potions of healing or the strengthening of magical power, the user always needs a plant in addition to the special ingredient:"			);
+					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a special ingredient and a plant:"			);
 					Doc_PrintLine	( nDocID,  1, "Feldknöterich"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "For the brewing of potions that cause permanent changes in the body or mind, the user always needs a plant: "						);
+					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant: "						);
 					Doc_PrintLines	( nDocID,  1, "King's Sorrel"		);
 					Doc_Show		( nDocID );
 					
@@ -146,8 +146,8 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Drinking trough of permanent changes");
-					Doc_PrintLine	( nDocID,  0, "and its ingredients"						);
+					Doc_PrintLines	( nDocID,  0, "Potions for Permanent Changes");
+					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -158,10 +158,10 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_PrintLines	( nDocID,  0, "1 Snapperkraut - this potion does not need a Kronstöckl, but fieldknotsweed"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elixir of Strength"						);
-					Doc_PrintLine	( nDocID,  0, "1 Dragon root"						);
+					Doc_PrintLine	( nDocID,  0, "1 dragonroot"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Elixir of Life"						);
-					Doc_PrintLine	( nDocID,  0, "1 Healing Root"						);
+					Doc_PrintLine	( nDocID,  0, "1 healing root"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Elixir of Spirit"						);
 					Doc_PrintLine	( nDocID,  0, "1 fire root"						);
@@ -169,9 +169,9 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Brewing these recipes is the art of alchemy. They all have their own way of demanding a Kronstöckl as an ingredient."); 
+					Doc_PrintLines	( nDocID,  1, "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel as an ingredient in common."); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "The potion of speed is much easier to make, partly because you don't need a Kronstöckl. "						);
+					Doc_PrintLines	( nDocID,  1, "The potion of speed is much simpler to create which is also due to the fact that you do not need king's sorrel. "						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

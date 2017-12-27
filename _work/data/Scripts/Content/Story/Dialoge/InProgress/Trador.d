@@ -267,7 +267,7 @@ FUNC VOID Info_Mod_Trador_Hi_P()
 
 	Info_ClearChoices	(Info_Mod_Trador_Hi);
 
-	Info_AddChoice	(Info_Mod_Trador_Hi, "I don't believe you.", Info_Mod_Trador_Hi_Q);
+	Info_AddChoice	(Info_Mod_Trador_Hi, "I don't believe a word you're saying.", Info_Mod_Trador_Hi_Q);
 	Info_AddChoice	(Info_Mod_Trador_Hi, "I bring Genn poisonous plants that grow here.", Info_Mod_Trador_Hi_G);
 };
 

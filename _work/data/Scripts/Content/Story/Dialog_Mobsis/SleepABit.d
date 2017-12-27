@@ -27,11 +27,11 @@ func void PC_Sleep (var int t)
 
 	if (BissDerFaeulnis_Time > 0)
 	{
-		BissDerFaeulnis_Time += 300;
+		BissDerFaeulnis_Time += 600;
 	};
 	if (HauchDerPestilenz_Time > 0)
 	{
-		HauchDerPestilenz_Time += 300;
+		HauchDerPestilenz_Time += 600;
 	};
 
 	B_HealGift	(0, 60);
@@ -216,7 +216,7 @@ INSTANCE PC_SleepTime_Morning (C_INFO)
 	information		= PC_SleepTime_Morning_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sleep till the next morning";
+	description		= "Sleep till next morning";
 };
 
 FUNC INT PC_SleepTime_Morning_Condition()
@@ -227,7 +227,7 @@ FUNC INT PC_SleepTime_Morning_Condition()
 	}
 	else
 	{
-		PC_SleepTime_Morning.description = "Sleep till the next morning";
+		PC_SleepTime_Morning.description = "Sleep till next morning";
 	};
 
 	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_SLEEPABIT)
@@ -252,7 +252,7 @@ INSTANCE PC_SleepTime_Noon (C_INFO)
 	information		= PC_SleepTime_Noon_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sleep till noon";
+	description		= "Sleep till midday";
 };
 
 FUNC INT PC_SleepTime_Noon_Condition()
@@ -279,7 +279,7 @@ INSTANCE PC_SleepTime_Evening (C_INFO)
 	information		= PC_SleepTime_Evening_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Sleep till the next night";
+	description		= "Sleep till next evening";
 };
 
 FUNC INT PC_SleepTime_Evening_Condition()
@@ -290,7 +290,7 @@ FUNC INT PC_SleepTime_Evening_Condition()
 	}
 	else
 	{
-		PC_SleepTime_Evening.description = "Sleep till the next night";
+		PC_SleepTime_Evening.description = "Sleep till next evening";
 	};
 
 	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_SLEEPABIT)

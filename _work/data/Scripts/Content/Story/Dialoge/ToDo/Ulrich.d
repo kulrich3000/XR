@@ -95,7 +95,7 @@ FUNC VOID Info_Mod_Ulrich_ZuVerhandlung_Info()
 	
 	Info_ClearChoices	(Info_Mod_Ulrich_ZuVerhandlung);
 
-	Info_AddChoice	(Info_Mod_Ulrich_ZuVerhandlung, "One moment, please.", Info_Mod_Ulrich_ZuVerhandlung_B);
+	Info_AddChoice	(Info_Mod_Ulrich_ZuVerhandlung, "One more minute.", Info_Mod_Ulrich_ZuVerhandlung_B);
 	Info_AddChoice	(Info_Mod_Ulrich_ZuVerhandlung, "Then let's go.", Info_Mod_Ulrich_ZuVerhandlung_A);
 };
 

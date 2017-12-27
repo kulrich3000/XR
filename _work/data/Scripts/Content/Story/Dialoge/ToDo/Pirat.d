@@ -66,7 +66,7 @@ FUNC VOID Info_Mod_Pirat_Hi_B()
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
 		Info_AddChoice	(Info_Mod_Pirat_Hi, "You can hardly ask that much!", Info_Mod_Pirat_Hi_D);
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "All clear.", Info_Mod_Pirat_Hi_C);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "All right.", Info_Mod_Pirat_Hi_C);
 	}
 	else
 	{
@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Pirat_Hi_D()
 
 		Info_ClearChoices	(Info_Mod_Pirat_Hi);
 
-		Info_AddChoice	(Info_Mod_Pirat_Hi, "All clear.", Info_Mod_Pirat_Hi_C);
+		Info_AddChoice	(Info_Mod_Pirat_Hi, "All right.", Info_Mod_Pirat_Hi_C);
 	};
 };
 

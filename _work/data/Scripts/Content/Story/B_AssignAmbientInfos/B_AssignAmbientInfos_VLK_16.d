@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_16_JOIN(C_INFO)
 	condition	= DIA_VLK_16_JOIN_Condition;
 	information	= DIA_VLK_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "I want to be a citizen of this town!";
+	description = "I want to become a citizen of this town!";
 };                       
 
 FUNC INT DIA_VLK_16_JOIN_Condition()
@@ -57,7 +57,7 @@ INSTANCE DIA_VLK_16_PEOPLE(C_INFO)
 	condition	= DIA_VLK_16_PEOPLE_Condition;
 	information	= DIA_VLK_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Who are the important personalities of this city?";
+	description = "Who are the important figures in this town?";
 };                       
 
 FUNC INT DIA_VLK_16_PEOPLE_Condition()
@@ -152,7 +152,7 @@ INSTANCE DIA_VLK_16_LOCATION(C_INFO)
 	condition	= DIA_VLK_16_LOCATION_Condition;
 	information	= DIA_VLK_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "What is there to see here?";
+	description = "What interesting things are there to see here?";
 };                       
 
 FUNC INT DIA_VLK_16_LOCATION_Condition()

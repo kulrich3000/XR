@@ -705,11 +705,11 @@ FUNC VOID Info_Mod_Angar_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Angar_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Angar_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Angar_PMSchulden,"I don't have enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Angar_PMSchulden,"How much was it again?",Info_Mod_Angar_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Angar_PMSchulden,"I haven't got enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Angar_PMSchulden,"How much was that again?",Info_Mod_Angar_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Angar_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Angar_PMSchulden,"I want to pay the fine.",Info_Mod_Angar_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Angar_PMSchulden,"I want to pay the penalty!",Info_Mod_Angar_PETZMASTER_PayNow);
 		};
 	};
 };
@@ -721,11 +721,11 @@ func void Info_Mod_Angar_PMSchulden_HowMuchAgain()
 
 	Info_ClearChoices  	(Info_Mod_Angar_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Angar_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Angar_PMSchulden,"I don't have enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Angar_PMSchulden,"How much was it again?",Info_Mod_Angar_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Angar_PMSchulden,"I haven't got enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Angar_PMSchulden,"How much was that again?",Info_Mod_Angar_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Angar_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Angar_PMSchulden,"I want to pay the fine.",Info_Mod_Angar_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Angar_PMSchulden,"I want to pay the penalty!",Info_Mod_Angar_PETZMASTER_PayNow);
 	};
 };
 
@@ -818,10 +818,10 @@ FUNC VOID Info_Mod_Angar_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Angar_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Angar_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Angar_PETZMASTER,"I don't have enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Angar_PETZMASTER,"I haven't got enough gold!",Info_Mod_Angar_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Angar_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Angar_PETZMASTER,"I want to pay the fine.",Info_Mod_Angar_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Angar_PETZMASTER,"I want to pay the penalty!",Info_Mod_Angar_PETZMASTER_PayNow);
 	};
 };
 

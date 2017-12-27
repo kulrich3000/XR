@@ -127,7 +127,7 @@ INSTANCE Info_Tpl_29_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_29_DieLage_Condition;
 	information	= Info_Tpl_29_DieLage_Info;
 	permanent	= 1;
-	description = "How's it looking?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_Tpl_29_DieLage_Condition()

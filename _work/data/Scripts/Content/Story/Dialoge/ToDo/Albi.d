@@ -861,7 +861,7 @@ INSTANCE Info_Mod_Albi_Geheimnis4 (C_INFO)
 	information	= Info_Mod_Albi_Geheimnis4_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I'm ready.";
+	description	= "I am ready!";
 };
 
 FUNC INT Info_Mod_Albi_Geheimnis4_Condition()

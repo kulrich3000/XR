@@ -2846,7 +2846,7 @@ INSTANCE ItRu_Pyrokinesis_g1 (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_YELLOW";
 
-	description			=	"pyrokinesis";
+	description			=	"Pyrokinesis";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;			
 	COUNT	[0]			=	mag_circle;		

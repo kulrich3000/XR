@@ -128,7 +128,7 @@ INSTANCE Info_Mod_Mortis_Lehrer (C_INFO)
 	information	= Info_Mod_Mortis_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can you train me?";
+	description	= "Could you train me?";
 };
 
 FUNC INT Info_Mod_Mortis_Lehrer_Condition()

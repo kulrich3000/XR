@@ -91,7 +91,7 @@ INSTANCE Info_Mod_SMK_OM_13_DieLage(C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_13_DieLage_Condition;
 	information	= Info_Mod_SMK_OM_13_DieLage_Info;
 	permanent	= 1;
-	description = "How's it going?";
+	description = "What's up?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_13_DieLage_Condition()

@@ -385,7 +385,7 @@ FUNC VOID Use_Seamap_Irdorath ()
 	{
 		Log_CreateTopic (TOPIC_SHIP, LOG_MISSION);                                                                   
 	    B_SetTopicStatus(TOPIC_SHIP, LOG_RUNNING);                                                                 
-	    B_LogEntry (TOPIC_SHIP,"Looks like I have to reach this strange island of the enemy. But first of all I need a ship, a crew and a captain.");
+	    B_LogEntry (TOPIC_SHIP,"It appears I must reach the enemy's strange island. But for that I need a ship, a crew and a captain.");
 	};
 
 	MIS_SCKnowsWayToIrdorath  = TRUE;
@@ -431,9 +431,9 @@ func void UseITWr_ForgedShipLetter_MIS ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, " This document entitles the"					);
-					Doc_PrintLine	(nDocID,  0, " the owner, to remain indefinitely on the"		);
-					Doc_PrintLine	(nDocID,  0, " Royal War Gallery of Lord Hagen"		);
-					Doc_PrintLine	(nDocID,  0, " or to lead the ship."			);
+					Doc_PrintLine	(nDocID,  0, " bearer to move freely on Lord Hagen's"		);
+					Doc_PrintLine	(nDocID,  0, " royal war galley from Lord Hagen"		);
+					Doc_PrintLine	(nDocID,  0, " to move freely or steer the ship"			);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -498,7 +498,7 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 
 	description		= 	"The Tears of Innos";
 	
-	TEXT[1]			= 	"The magicians of fire give this potion undreamt-of powers.";
+	TEXT[1]			= 	"The potion give Fire Mages unimaginable powers.";
 	Text[2]			=   "Everyone else will find death.";
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -592,7 +592,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
 	description		= 	"The Tears of Innos";
-	TEXT[1]			= 	"The magicians of fire give this potion undreamt-of powers.";
+	TEXT[1]			= 	"The potion give Fire Mages unimaginable powers.";
 	Text[2]			=   "Everyone else will find death.";
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -625,8 +625,8 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 
 	description		= "The divine aura of Innos.";
 	
-	TEXT[2]			= "This amulet lends the wearer ";
-	TEXT[3]			= "Protection from any damage.";
+	TEXT[2]			= "This amulet gives the bearer ";
+	TEXT[3]			= "protect from all forms of damage.";
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
 	

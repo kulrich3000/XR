@@ -178,7 +178,7 @@ FUNC VOID Info_Mod_Thys_Scroll_Info()
 	Info_ClearChoices	(Info_Mod_Thys_Scroll);
 
 	Info_AddChoice	(Info_Mod_Thys_Scroll, "Okay.", Info_Mod_Thys_Scroll_B);
-	Info_AddChoice	(Info_Mod_Thys_Scroll, "Forget about it.", Info_Mod_Thys_Scroll_A);
+	Info_AddChoice	(Info_Mod_Thys_Scroll, "Forget it.", Info_Mod_Thys_Scroll_A);
 };
 
 FUNC VOID Info_Mod_Thys_Scroll_B()

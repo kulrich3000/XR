@@ -9,7 +9,7 @@ func void B_AddCityGuideChoices()
 	
 	if (!C_IsQuarterNearest(self, Q_UNTERSTADT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "To the lower town.", DIA_CITYGUIDE_UNTERSTADT);
+		Info_AddChoice (DIA_CITYGUIDE, "To the lower quarter of town.", DIA_CITYGUIDE_UNTERSTADT);
 	};
 	if (!C_IsQuarterNearest(self, Q_OBERSTADT))
 	{
@@ -45,7 +45,7 @@ INSTANCE DIA_CITYGUIDE (C_INFO)
 	condition	= DIA_CITYGUIDE_Condition;
 	information	= DIA_CITYGUIDE_Info;
 	permanent	= TRUE;
-	description = "Can you help me find my way around here?";
+	description = "Can you help me find my way from here?";
 };                       
 
 FUNC INT DIA_CITYGUIDE_Condition()
@@ -94,13 +94,13 @@ FUNC VOID DIA_CITYGUIDE_Info()
 
 func void DIA_CITYGUIDE_BACK()
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Thank you - that's all I wanted to know!
+	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Thanks - that was all I wanted to know!
 	Info_ClearChoices (DIA_CITYGUIDE);
 };
 	
 func void DIA_CITYGUIDE_UNTERSTADT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //How do I get to the lower town?
+	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //How do I get to the lower part of the city?
 	
 	if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
@@ -212,7 +212,7 @@ func void DIA_CITYGUIDE_TEMPEL()
 	
 func void DIA_CITYGUIDE_MARKT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Where's the marketplace?
+	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Where is the marketplace?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -286,7 +286,7 @@ func void DIA_CITYGUIDE_GALGEN()
 	
 func void DIA_CITYGUIDE_KASERNE()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Where's the barracks?
+	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Where are the barracks?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -327,7 +327,7 @@ func void DIA_CITYGUIDE_KASERNE()
 	
 func void DIA_CITYGUIDE_HAFEN()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Where's the waterfront?
+	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Where is the harbour?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{

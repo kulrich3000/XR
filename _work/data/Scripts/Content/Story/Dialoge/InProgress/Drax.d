@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Drax_Hi (C_INFO)
 	information	= Info_Mod_Drax_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can you teach me about hunting?";
+	description	= "Can you teach me something about hunting?";
 };
 
 FUNC INT Info_Mod_Drax_Hi_Condition()
@@ -49,7 +49,7 @@ INSTANCE Info_Mod_Drax_Fokus (C_INFO)
 	information	= Info_Mod_Drax_Fokus_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How are you feeling?";
+	description	= "How are you holding up?";
 };
 
 FUNC INT Info_Mod_Drax_Fokus_Condition()

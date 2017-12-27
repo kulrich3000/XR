@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Rengaru_Dieb (C_INFO)
 	information	= Info_Mod_Rengaru_Dieb_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "(Show thief sign)";
+	description	= "(Show thieves' signal)";
 };
 
 FUNC INT Info_Mod_Rengaru_Dieb_Condition()

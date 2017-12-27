@@ -23,7 +23,7 @@ FUNC VOID Info_Mod_Mika_Hi_Info()
 	Info_ClearChoices	(Info_Mod_Mika_Hi);
 
 	Info_AddChoice	(Info_Mod_Mika_Hi, "What events are you talking about?", Info_Mod_Mika_Hi_B);
-	Info_AddChoice	(Info_Mod_Mika_Hi, "I'm not interested.", Info_Mod_Mika_Hi_A);
+	Info_AddChoice	(Info_Mod_Mika_Hi, "That doesn't concern me.", Info_Mod_Mika_Hi_A);
 };
 
 FUNC VOID Info_Mod_Mika_Hi_B()
@@ -330,7 +330,7 @@ FUNC VOID Info_Mod_Mika_Dokumente_Info()
 
 	if (Npc_HasItems(hero, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice	(Info_Mod_Mika_Dokumente, "Deal.", Info_Mod_Mika_Dokumente_A);
+		Info_AddChoice	(Info_Mod_Mika_Dokumente, "It's a deal.", Info_Mod_Mika_Dokumente_A);
 	};
 };
 

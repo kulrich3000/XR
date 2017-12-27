@@ -25,7 +25,7 @@ FUNC INT Info_Mod_Ehnim_Hi_Condition()
 
 FUNC VOID Info_Mod_Ehnim_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Ehnim_Hi_15_00"); //Here, take the healing potion.
+	AI_Output(hero, self, "Info_Mod_Ehnim_Hi_15_00"); //Hear, take this healing potion.
 
 	Info_ClearChoices	(Info_Mod_Ehnim_Hi);
 

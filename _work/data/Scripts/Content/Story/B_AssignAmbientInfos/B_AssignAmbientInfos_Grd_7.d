@@ -161,7 +161,7 @@ INSTANCE Info_grd_7_DieLage(C_INFO) // E1
 	condition	= Info_grd_7_DieLage_Condition;
 	information	= Info_grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "What's the score?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_grd_7_DieLage_Condition()

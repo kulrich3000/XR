@@ -353,7 +353,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARMHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "RÜSTUNGSSCHUTZ";
+	text[0]		= "ARMOR PROTECTION";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -362,7 +362,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*0;
-	text[0]		= "before weapons";
+	text[0]		= "from weapons";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };

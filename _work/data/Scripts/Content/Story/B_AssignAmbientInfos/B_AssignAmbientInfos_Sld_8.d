@@ -122,7 +122,7 @@ INSTANCE Info_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Sld_8_DieLage_Condition;
 	information	= Info_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "How's it looking?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_Sld_8_DieLage_Condition()

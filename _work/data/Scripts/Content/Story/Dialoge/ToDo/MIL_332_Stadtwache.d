@@ -31,7 +31,7 @@ instance DIA_Mil_332_Stadtwache_PERM (C_INFO)
 	condition	= DIA_Mil_332_Stadtwache_PERM_Condition;
 	information	= DIA_Mil_332_Stadtwache_PERM_Info;
 	permanent 	= TRUE;
-	description	= "What's the score?";
+	description	= "How's it going?";
 };
 
 func int DIA_Mil_332_Stadtwache_PERM_Condition ()

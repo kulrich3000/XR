@@ -126,7 +126,7 @@ FUNC VOID Info_Mod_Nick_Kopf_Info()
 	
 	Info_ClearChoices	(Info_Mod_Nick_Kopf);
 
-	Info_AddChoice	(Info_Mod_Nick_Kopf, "What do I get for it?", Info_Mod_Nick_Kopf_B);
+	Info_AddChoice	(Info_Mod_Nick_Kopf, "What's in it for me?", Info_Mod_Nick_Kopf_B);
 	Info_AddChoice	(Info_Mod_Nick_Kopf, "Of course it is. Here you have him.", Info_Mod_Nick_Kopf_A);
 };
 

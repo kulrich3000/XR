@@ -476,7 +476,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Here's 100 pieces of gold. Let me in!";
+	description	= "Here's 100 gold pieces. Let me pass!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()

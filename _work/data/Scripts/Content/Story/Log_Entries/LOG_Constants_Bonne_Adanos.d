@@ -1,5 +1,5 @@
 const string TOPIC_MOD_WASSERMAGIER	=	"Absorption ring of water";
-const string TOPIC_MOD_VERMISSTE	=	"The Missing Persons";
+const string TOPIC_MOD_VERMISSTE	=	"The missing people";
 const string TOPIC_MOD_ADANOS_BOEDEN	=	"Cleaning the floors";
 const string TOPIC_MOD_ADANOS_NOVIZE	=	"The Cursed Novice";
 const string TOPIC_MOD_ADANOS_UNHEIL	=	"Great disaster";

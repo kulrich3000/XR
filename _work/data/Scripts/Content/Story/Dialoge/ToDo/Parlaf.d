@@ -186,7 +186,7 @@ FUNC VOID Info_Mod_Parlaf_Hi_Info()
 	{
 		Info_AddChoice	(Info_Mod_Parlaf_Hi, "I'll do whatever I want.", Info_Mod_Parlaf_Hi_B);
 	};
-	Info_AddChoice	(Info_Mod_Parlaf_Hi, "Of course it is.", Info_Mod_Parlaf_Hi_A);
+	Info_AddChoice	(Info_Mod_Parlaf_Hi, "Of course.", Info_Mod_Parlaf_Hi_A);
 };
 
 FUNC VOID Info_Mod_Parlaf_Hi_B()
@@ -483,7 +483,7 @@ INSTANCE Info_Mod_Parlaf_Bribe (C_INFO)
 	condition	= Info_Mod_Parlaf_Bribe_Condition;
 	information	= Info_Mod_Parlaf_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Here's 100 pieces of gold. Let me in!";
+	description	= "Here's 100 gold pieces. Let me pass!";
 };                       
 
 FUNC INT Info_Mod_Parlaf_Bribe_Condition()

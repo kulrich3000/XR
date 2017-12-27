@@ -783,7 +783,7 @@ FUNC VOID Use_Astronomy()
 					Doc_SetMargins	( nDocID,  -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "What this means is shown to us by the wars of the past, when the link between the worlds was still strong. The henchmen of Evil brought death and destruction to the world, and only with the help of Innos and the Chosen One it was possible to prevent harm from mankind "	);
-					Doc_PrintLines	( nDocID,  1, "If it ever happens again, Innos may protect us, because there hasn't been an elected Innos for more than a hundred years."					);
+					Doc_PrintLines	( nDocID,  1, "If such a threat should arise again, then may Innos protect us, for there has not been another Chosen of Innos for over a hundred years."					);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "");
 					Doc_Show		( nDocID );
@@ -962,11 +962,11 @@ func void Use_DiegosLetter_Mis ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "Gerbrandt, ");
-					Doc_PrintLines	( nDocID,  0, "you should have killed me first. ");
-					Doc_PrintLines	( nDocID,  0, "I'm back in town and on my way to you. If I find you, I'll cut your fat belly open. You've known me long enough to know that I won't let myself be taken in with impunity."); 
-					Doc_PrintLines	( nDocID,  0, "When you had me thrown into the barrier back then, you probably thought I was gone forever. You were mistaken. ");
-					Doc_PrintLines	( nDocID,  0, "I'm getting to get what's rightfully mine. ");
-					Doc_PrintLines	( nDocID,  0, "Your only chance to stay alive is to get the fuck out of your house and leave your business to me. Then we're even.");				
+					Doc_PrintLines	( nDocID,  0, "you should have killed me when you could ");
+					Doc_PrintLines	( nDocID,  0, "I'm back in town and I am looking for you. When I find you, I gonna slice your fat belly open. You've known me long enough to be sure I won't let anyone fool me without punishment."); 
+					Doc_PrintLines	( nDocID,  0, "When you had me thrown into the Barrier, you probably thought I would be gone forever. Well, you were wrong. ");
+					Doc_PrintLines	( nDocID,  0, "I've come to get what's rightfully mine ");
+					Doc_PrintLines	( nDocID,  0, "Your only chance to stay alive is to beat it and leave your business to me. That'd make us even");				
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Diego");
 					Doc_Show		( nDocID );
@@ -1069,14 +1069,14 @@ func void Use_MinenAnteil_Mis ()
 					Doc_SetPage		(nDocID,  0, "letters.TGA", 0);
 					Doc_SetFont		(nDocID,  0, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
-					Doc_PrintLine	(nDocID,  0, "proportion of ore mines"									);
+					Doc_PrintLine	(nDocID,  0, "Ore Mine Stake"									);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, "The owner of this letter is permitted, according to the Royal Decree on the Acquisition of Property from Reichsgrund, to act as a prospector on royal property.");
 					Doc_PrintLines	(nDocID,  0, "His prospecting activities must be limited to the area of a royal parcel of land.");
-					Doc_PrintLines	(nDocID,  0, "Reichsklein parcels are defined by the decree on the size of prospecting ground on an area of 16 legal steps, in the flat, and no more than 3 steps in the increasing extension.");
+					Doc_PrintLines	(nDocID,  0, "According to the decree of Scrapeland Size, small royal land parcels measure 16 paces in horizontal and 3 paces in vertical extension.");
 					Doc_PrintLines	(nDocID,  0, "The Prospector of the Realm is unbound by any duties of free access and protection of scraping cells.");
-					Doc_PrintLines	(nDocID,  0, "If it is not possible for the tenant to pay the due levies on time, all rights to land and property are returned to the Reich.");
+					Doc_PrintLines	(nDocID,  0, "If the tenant is unable to pay the rent in time, all rights to the land are returned to the Realm.");
 					Doc_PrintLine	(nDocID,  0, "     Signed"									);
 					Doc_PrintLine	(nDocID,  0, "     Prospector of the King"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -1087,7 +1087,7 @@ func void Use_MinenAnteil_Mis ()
 
 	if (ItWr_MinenAnteil_Mis_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_MinenAnteile,"The guy who sold the mine shares to the dealers is called Salandril. I will certainly find him in the upper part of Khorinis, if he is not already on the run from the law."); 
+		B_LogEntry (TOPIC_MinenAnteile,"The guy who sold the mine shares to the merchants is called Salandril. I'll probably find him in the upper quarter of Khorinis, unless he's already running away from justice."); 
 	
 		
 		ItWr_MinenAnteil_Mis_OneTime = TRUE;
@@ -1119,7 +1119,7 @@ INSTANCE  ItAm_Prot_BlackEye_Mis (C_Item)
 	
 	TEXT[2]			= "";
 	
-	TEXT[3] 		= "Protects against the black eye";
+	TEXT[3] 		= "Protects from the Black gaze";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -1187,10 +1187,10 @@ func void Use_RichterKomproBrief ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Morgahard, you bum! Do what I tell you to do, or I will wind up other sides and you will all be arrested.");
+					Doc_PrintLines	( nDocID,  0, "Morgahard, you good-for-nothing wretch. Carry out my orders, or I'll have to change tunes and arrest the whole lot of you.");
 					Doc_PrintLines	( nDocID,  0, "It's gotta happen tomorrow night. Larius is getting suspicious. ");
 					Doc_PrintLines	( nDocID,  0, "If we don't drag the money out of his pockets now, it may be too late. I'll make sure you meet him on the marketplace this evening. ");
-					Doc_PrintLines	( nDocID,  0, "Don't make a fuss, or the militia will beat you before you know what's going on.");
+					Doc_PrintLines	( nDocID,  0, "But don't attract attention, or you'll have the militia down on you before you know what's happening.");
 					Doc_PrintLines	( nDocID,  0, "By the way: If he happens to peg out in the process, that's fine by me."									);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "          Chief Judge and "		);
@@ -1233,8 +1233,8 @@ func void Use_MorgahardTip ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, ""													);
 					Doc_PrintLines	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "I went ahead of you once before. I hope we'll all see each other in a bit more quiet times.");
-					Doc_PrintLines	(nDocID,  0, "Don't worry, boys. If all the strings are broken, I'll ask Onar to take care of it for us.");
+					Doc_PrintLines	(nDocID,  0, "I've gone on ahead. I hope we'll all meet again when things have calmed down a little.");
+					Doc_PrintLines	(nDocID,  0, "Don't worry, boys. If everything fails, I'll ask Onar to deal with it.");
 					Doc_PrintLines	(nDocID,  0, "It'll be all right."					);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -1323,15 +1323,15 @@ INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "The power of the grapes"	);
+					Doc_PrintLines	( nDocID,  0, "The power of the Grape"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "... I have already tried a lot, but this fruit, which I received from overseas last week, surpasses my boldest expectations...."					);
+					Doc_PrintLines	( nDocID,  0, "...I've tried a lot in my time, but this fruit that was brought to me from abroad last week has exceeded all my expectations..."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "... the juice of this grape is as fruity as no other grape found in this part of the country..."					);
+					Doc_PrintLines	( nDocID,  0, "...the juice of this grape is fruitier than any you'll find in this part of the country..."					);
 					Doc_PrintLines	( nDocID,  0, "");
 
 					//2.Seite
@@ -1339,10 +1339,10 @@ INSTANCE ItWr_VinosKellergeister_Mis (C_ITEM)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "... so far so good. But I still can't suppress the thought of being caught here in my secret distillery. I don't know what they will do to me if the militia discover me here, I'm afraid I'll be thrown into the barrier most likely...."	);
+					Doc_PrintLines	( nDocID,  1, "...so far so good. But it still makes me nervous to think what might happen if I'm caught in my secret still. I've no idea what the militia will do to me if they find me here. I fear they will throw me into the barrier..."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "... they got suspicious. I'm going to leave everything here until the waves have calmed down and I'm not going to resume my work until I can be sure that they won't follow me any more....");
+					Doc_PrintLines	( nDocID,  1, "...They've gotten suspicious. I'm going to go and leave all this until things have calmed down a bit and get back to work when I can be sure they're not onto me any more ...");
 					Doc_Show		( nDocID );
 };
 

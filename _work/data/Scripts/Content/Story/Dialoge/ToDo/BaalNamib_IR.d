@@ -85,7 +85,7 @@ INSTANCE Info_Mod_Namib_IR_Lernen (C_INFO)
 	information	= Info_Mod_Namib_IR_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to increase my magical powers.";
+	description	= "I want to increase my magic powers.";
 };
 
 FUNC INT Info_Mod_Namib_IR_Lernen_Condition()

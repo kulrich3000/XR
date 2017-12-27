@@ -30,7 +30,7 @@ INSTANCE Info_Mod_Metzger_Schaf (C_INFO)
 	information	= Info_Mod_Metzger_Schaf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can I help you with something?";
+	description	= "Is there any way I can help you?";
 };
 
 FUNC INT Info_Mod_Metzger_Schaf_Condition()

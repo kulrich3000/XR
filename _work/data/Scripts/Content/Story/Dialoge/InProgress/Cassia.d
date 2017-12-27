@@ -712,7 +712,7 @@ INSTANCE Info_Mod_Cassia_Lernen   (C_INFO)
 	information 	= Info_Mod_Cassia_Lernen_Info;
 	permanent   	= 1;
 	important	= 0;
-	description 	= "Show me the pickpocketing. (10 LP)";
+	description 	= "Show me how to pick pockets. (10 LP)";
 };
 
 FUNC INT Info_Mod_Cassia_Lernen_Condition()

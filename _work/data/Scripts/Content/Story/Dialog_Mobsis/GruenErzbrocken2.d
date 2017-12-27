@@ -25,7 +25,7 @@ INSTANCE PC_GruenErzbrocken2_Addon_Hour (C_Info)
 	condition		= PC_GruenErzbrocken2_Addon_Hour_Condition;
 	information		= PC_GruenErzbrocken2_Addon_Hour_Info;
 	permanent		= 0;
-	description		= "Just chop it. "; 
+	description		= "Just chop a little. "; 
 };
 
 FUNC INT PC_GruenErzbrocken2_Addon_Hour_Condition ()

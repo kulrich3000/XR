@@ -24,7 +24,7 @@ FUNC VOID Info_Mod_Dalton_Hi_Info()
 
 	Info_ClearChoices	(Info_Mod_Dalton_Hi);
 
-	Info_AddChoice	(Info_Mod_Dalton_Hi, "Not interested.", Info_Mod_Dalton_Hi_B);
+	Info_AddChoice	(Info_Mod_Dalton_Hi, "Sorry, not interested.", Info_Mod_Dalton_Hi_B);
 	Info_AddChoice	(Info_Mod_Dalton_Hi, "What's in it for me?", Info_Mod_Dalton_Hi_A);
 };
 

@@ -93,7 +93,7 @@ INSTANCE Info_Mod_Fisk_Hilfe (C_INFO)
 	information	= Info_Mod_Fisk_Hilfe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Deal.";
+	description	= "It's a deal.";
 };
 
 FUNC INT Info_Mod_Fisk_Hilfe_Condition()

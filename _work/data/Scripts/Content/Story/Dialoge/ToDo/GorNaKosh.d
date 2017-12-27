@@ -6,7 +6,7 @@ INSTANCE Info_Mod_GorNaKosh_Follow (C_INFO)
 	information	= Info_Mod_GorNaKosh_Follow_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Come with me.";
+	description	= "Come along.";
 };
 
 FUNC INT Info_Mod_GorNaKosh_Follow_Condition()

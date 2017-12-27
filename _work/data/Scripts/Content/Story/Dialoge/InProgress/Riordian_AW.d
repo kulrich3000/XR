@@ -399,7 +399,7 @@ instance Info_Mod_Riordian_AW_Irrlicht		(C_INFO)
 	information	= Info_Mod_Riordian_AW_Irrlicht_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Show me how to teach my will-o' -the-wisp.";
+	description	= "Show me how to train my will-o'-the-wisp.";
 };
 
 var int Info_Mod_Riordian_AW_Irrlicht_NoPerm;
@@ -549,7 +549,7 @@ INSTANCE Info_Mod_Riordian_AW_Lehrer (C_INFO)
 	information	= Info_Mod_Riordian_AW_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Can I study with you?";
+	description	= "Can I learn from you?";
 };
 
 FUNC INT Info_Mod_Riordian_AW_Lehrer_Condition()

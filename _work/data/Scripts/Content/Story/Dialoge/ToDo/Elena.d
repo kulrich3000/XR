@@ -56,7 +56,7 @@ FUNC VOID Info_Mod_Elena_Hexenparty_01_Info()
 	Info_ClearChoices	(Info_Mod_Elena_Hexenparty_01);
 
 	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "I want to join your sisterhood.", Info_Mod_Elena_Hexenparty_01_C);
-	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "I just wanted to take a look around.", Info_Mod_Elena_Hexenparty_01_B);
+	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "I only wanted to have a look around.", Info_Mod_Elena_Hexenparty_01_B);
 	Info_AddChoice	(Info_Mod_Elena_Hexenparty_01, "I'm here to destroy you.", Info_Mod_Elena_Hexenparty_01_A);
 };
 

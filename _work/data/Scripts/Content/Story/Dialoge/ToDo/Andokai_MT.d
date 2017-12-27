@@ -112,6 +112,10 @@ FUNC VOID Info_Mod_Andokai_Hammer_Info()
 	B_Göttergefallen(3, 1);
 
 	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Behind the big gate on the square of the Beliaran Fortress there is a maze that leads to a library. And I have to find the way.");
+	
+	if (!Npc_KnowsInfo(hero, Info_Mod_Gorax_Andokai)) {
+		B_SetTopicStatus(TOPIC_MOD_ANDOKAI_WEIN, LOG_FAILED);
+	};
 };
 
 INSTANCE Info_Mod_Andokai_WarInBib (C_INFO)
@@ -549,7 +553,7 @@ instance Info_Mod_Andokai_Runen	(C_INFO)
 	information	= Info_Mod_Andokai_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me (create runes)";
+	description	= "Instruct me (create runes)";
 };
 
 func int Info_Mod_Andokai_Runen_Condition ()

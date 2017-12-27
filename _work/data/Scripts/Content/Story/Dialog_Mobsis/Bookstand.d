@@ -21,7 +21,7 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			B_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"As a novice, I have the right to demand the examination of fire. Each of the three magicians from the High Council will examine me. If I pass, I'll be admitted to the circle of fire.");
+			B_LogEntry (TOPIC_FireContest,"As a novice, I have a right to demand the Test of Fire. This entails each of the three magicians from the High Council setting me a test. If I pass these trials, I will be accepted into the Circle of Fire.");
 		};
 	
 		var int nDocID;
@@ -35,12 +35,12 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Fire test"					);
+					Doc_PrintLine	( nDocID,  0, "The Test of Fire"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Such a novice is not chosen, it may be that he nevertheless feels the willingness to submit to the examination of magic. If he has carefully considered this decision and insists on it, he is allowed to take the test and no magician may refuse it. But it is not only the testing of magic that is imposed on him, but he is also to find his enlightenment through fire. If he insists on it before the High Council, he should be granted the FIRE EXAMINATION.");
+					Doc_PrintLines	( nDocID,  0, "Though a novice may feel ready to submit to the Test of Magic, he may not necessarily be chosen. If, however, he has given his decision ample consideration and if he insists, he is accorded the right to demand the Test and no magician may deny it to him. But not only must he pass the Test of Magic, he must also find enlightenment through the fire. If he insists before the High Council, he shall be submitted to the TEST OF FIRE.");
 			
 					
 					
@@ -48,10 +48,10 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "In this examination, the prudence, strength and skill of the novice should be equally required. So he shall perform three trials, each received by one of the magicians of the High Council, before he swears the oath of the flame and can make the covenant with the fire. "); 
+					Doc_PrintLines	( nDocID,  1, "The Test should challenge the wisdom, strength and dexterity of the novice. Therefore he must pass three trials, each of which is set before him by a magician of the High Council, before taking the Oath of the Fire to join the pact with the fire. "); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "This is what Inno's will and this is how it shall be done. "					);
+					Doc_PrintLines	( nDocID,  1, "Such is the will of Innos and so it shall be done. "					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "The High Council"					);
@@ -264,7 +264,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "... I hope that the dome will be able to protect the ore from Beliar's access. The King is simple enough to believe that we are building the dome to protect us from eruptions, but as long as we continue to reach our higher line with these advice, it is all right with us. I hope there will be enough time to prepare for the fight. As soon as the dome around the Minental is created, I will try to intervene in the upcoming battle with all my power. ");
+						Doc_PrintLines	( nDocID,  0, "... I hope the dome may protect the ore from the menace of Beliar. The King is naive enough to believe that we built the dome as protection against breakouts. Well, as long as such ruses enable us to fulfill our higher goals, let it be so. I can only hope we have enough time left to prepare for the fight. As soon as the dome around the Valley of Mines has been erected, I will use all the power at my disposal to intervene in the impeding fight. ");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -274,15 +274,15 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 		{	
 			PlayerGetsAmulettOfDeath = TRUE;
 			PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE; 
-			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune? holy bullet?: 1 consecrated water, but no spell roll");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune 'Holy Missile': 1 holy water, no spell scroll");
 			
 			
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "... I have, according to the instructions, simply drizzled Inno's consecrated water onto a rune blank and brought it together at the rune table. The rune stone is destroyed, I think this saying is really only accessible to the One."); 
-						Doc_PrintLines	( nDocID,  1, "I have given Saint Aura Innos to the monastic schtz. From now on, it will be kept by the head of the monastery until the day when the One reveals himself."	);
-						Doc_PrintLines	( nDocID,  1, "May Inno's tears play a role in the upcoming battle. But it's probably too dangerous to keep them open. I'll leave them here in the library."	);
+						Doc_PrintLines	( nDocID,  1, "... I followed the instructions and simply poured Innos' holy water over a blank runestone on a rune table. The runestone was destroyed. I suspect this spell really is accessible only to the One."); 
+						Doc_PrintLines	( nDocID,  1, "I have left the holy aura of Innos in the protection of the monastery. The abbot will take care of it until the One reveals himself."	);
+						Doc_PrintLines	( nDocID,  1, "The Tears of Innos may have a vital part to play in the fight ahead. But it's too dangerous to keep them where all can see. I'd better leave them here in the library."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -294,17 +294,17 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen	(PRINT_LearnPalTeleportSecret, -1, -1, FONT_Screen, 2);
 			
 			Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentRunes,"To create a rune, I need different ingredients for each rune. With these ingredients and a rune blank I can create the desired rune at the rune table.");
-			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the Rune - Geheimer Teleport: 1 Consecrated Water");
+			B_LogEntry (TOPIC_TalentRunes,"To create a rune, I need the scroll of the wanted spell and the required special ingredients for each. Using those and a blank rune I can create the desired rune at a rune table.");
+			B_LogEntry (TOPIC_TalentRunes,"Ingredients for the rune 'Secret teleport': 1 holy water");
 			
 			
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "To get to the secret place you have to build a teleportrune. You will need a rune blank and a small bottle of consecrated water. With the created runes you can teleporteir yourself into the room."); 
+						Doc_PrintLines	( nDocID,  1, "You have to create a teleportation rune to reach the secret place. For that you need a blank runestone and a small bottle of holy water. You can use the rune to teleport into the room."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "I am now very sure that it was with the tears of Inno's tears that the paladins from the early days, the long forgotten high consecration of the sword, held. So it should be possible to give a consecrated weapon extra power with the bottle I discovered."	);
+						Doc_PrintLines	( nDocID,  1, "I am now reasonably certain that the Tears of Innos are what the paladins of old used in the long forgotten ritual Consecration of the Sword. That means I should be able to use the little bottle I found to give additional strength to a consecrated weapon."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -316,7 +316,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"To forge a gun, I need a piece of crude steel first. I have to heat the steel at a forge and then take it to the desired shape on an anvil. For higher quality weapons you often need substances that give the weapon special properties.");
+			B_LogEntry (TOPIC_TalentSmith,"To forge a weapon, first of all I need a piece of raw steel. This I must heat up in the fire of a smithy until it glows red-hot and then shape it on an anvil. Special weapons often require the use of certain substances that give them special characteristics.");
 			B_LogEntry (TOPIC_TalentSmith,"If I add 4 ore and 5 dragon's blood, I can forge a?ERZ-DRACHENTÖTER? for myself.");
 			B_LogEntry (TOPIC_TalentSmith,"If I add 5 ore and 5 dragon's blood, I can forge a? LARGE ERZ DRAGON KILLER? for myself.");
 			PlayerGetsFinalDJGArmor = TRUE;
@@ -324,12 +324,12 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "From the dragonfly's weapons."); 
-						Doc_PrintLines	( nDocID,  1, "In order to give a shell made of dragon scales the highest hardness, the scales can be lined with the ore extracted in the valley of the island of Karynis."					);
+						Doc_PrintLines	( nDocID,  1, "From: Weapons of the dragon lord."); 
+						Doc_PrintLines	( nDocID,  1, "To make an armor of dragon scales as hard as possible, the scales may be coated with the ore mined in the valley on the isle of Karynis."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "To obtain a blade worthy of the Dragon Lord, you must soak the blade in dragon's blood. The addition of just 5 small vials gives the steel a hardness and sharpness that cannot be opposed."					);
+						Doc_PrintLines	( nDocID,  1, "To make a blade worthy of a dragon lord, the blade should be steeped in dragon blood. Even 5 phials of the blood can give the steel unequalled sharpness and strength."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Note: Karynis is the khorinis of today.");
+						Doc_PrintLines	( nDocID,  1, "Note: 'Karynis' probably refers to what is now known as Khorinis.");
 						Doc_Show		( nDocID );
 		};
 		

@@ -1,5 +1,5 @@
 const string TOPIC_MOD_FERCO_SCHATTI	=	"The transforming mages";
-const string TOPIC_MOD_FERCO_WANZE	=	"metamorphosis meat bug";
+const string TOPIC_MOD_FERCO_WANZE	=	"Transform into Meatbug";
 const string TOPIC_MOD_FERCO_GOBLIN	=	"goblin plague";
 const string TOPIC_MOD_FAICE_HARPIE	=	"harpies";
 const string TOPIC_MOD_FERCO_MUD	=	"Mud";

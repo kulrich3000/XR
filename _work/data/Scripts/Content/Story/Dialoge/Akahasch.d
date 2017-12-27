@@ -29,7 +29,7 @@ FUNC VOID Info_Mod_Akahasch_Hi_Info()
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
 	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Crazies, my ass. It's probably more like people where you're standing in the chalk...", Info_Mod_Akahasch_Hi_D);
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Not interested.", Info_Mod_Akahasch_Hi_B);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Sorry, not interested.", Info_Mod_Akahasch_Hi_B);
 	Info_AddChoice	(Info_Mod_Akahasch_Hi, "What's this about?", Info_Mod_Akahasch_Hi_A);
 };
 
@@ -73,7 +73,7 @@ FUNC VOID Info_Mod_Akahasch_Hi_A()
 
 	Info_ClearChoices	(Info_Mod_Akahasch_Hi);
 
-	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Not interested.", Info_Mod_Akahasch_Hi_B);
+	Info_AddChoice	(Info_Mod_Akahasch_Hi, "Sorry, not interested.", Info_Mod_Akahasch_Hi_B);
 	Info_AddChoice	(Info_Mod_Akahasch_Hi, "All right, follow me.", Info_Mod_Akahasch_Hi_C);
 };
 
@@ -122,7 +122,8 @@ INSTANCE Info_Mod_Akahasch_AtKloster (C_INFO)
 FUNC INT Info_Mod_Akahasch_AtKloster_Condition()
 {
 	if (Mod_Akahasch_Guiding == 1)
-	&& (Npc_GetDistToWP(hero, "NW_MONASTERY_ENTRY_01") < 500)
+	&& ((Npc_GetDistToWP(hero, "NW_MONASTERY_ENTRY_01") < 500)
+	|| (Npc_KnowsInfo(hero, Info_Mod_Daron_Akahasch2)))
 	{
 		return 1;
 	};

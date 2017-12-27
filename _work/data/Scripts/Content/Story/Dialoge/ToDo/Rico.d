@@ -31,7 +31,7 @@ FUNC VOID Info_Mod_Rico_Hi_B()
 	Info_ClearChoices	(Info_Mod_Rico_Hi);
 
 	Info_AddChoice	(Info_Mod_Rico_Hi, "What's this about?", Info_Mod_Rico_Hi_D);
-	Info_AddChoice	(Info_Mod_Rico_Hi, "Of course it is.", Info_Mod_Rico_Hi_C);
+	Info_AddChoice	(Info_Mod_Rico_Hi, "Of course.", Info_Mod_Rico_Hi_C);
 };
 
 FUNC VOID Info_Mod_Rico_Hi_A()
@@ -69,7 +69,7 @@ FUNC VOID Info_Mod_Rico_Hi_D()
 	Info_ClearChoices	(Info_Mod_Rico_Hi);
 
 	Info_AddChoice	(Info_Mod_Rico_Hi, "This is not for me.", Info_Mod_Rico_Hi_E);
-	Info_AddChoice	(Info_Mod_Rico_Hi, "Of course it is.", Info_Mod_Rico_Hi_C);
+	Info_AddChoice	(Info_Mod_Rico_Hi, "Of course.", Info_Mod_Rico_Hi_C);
 };
 
 FUNC VOID Info_Mod_Rico_Hi_E()

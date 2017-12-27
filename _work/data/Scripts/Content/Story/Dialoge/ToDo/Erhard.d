@@ -33,7 +33,7 @@ INSTANCE Info_Mod_Erhard_Arbeit (C_INFO)
 	information	= Info_Mod_Erhard_Arbeit_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Do you have a job for me?";
+	description	= "Have you got work for me?";
 };
 
 FUNC INT Info_Mod_Erhard_Arbeit_Condition()

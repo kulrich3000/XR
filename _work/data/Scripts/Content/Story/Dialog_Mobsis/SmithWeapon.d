@@ -55,7 +55,7 @@ INSTANCE PC_Common (C_INFO)
 	condition		= PC_Common_Condition;
 	information		= PC_Common_Info;
 	permanent		= TRUE;
-	description		= "Usual weapons forge";
+	description		= "Forge regular weapons";
 };
 
 FUNC INT PC_Common_Condition()
@@ -699,7 +699,7 @@ INSTANCE PC_Ore (C_INFO)
 	condition		= PC_Ore_Condition;
 	information		= PC_Ore_Info;
 	permanent		= TRUE;
-	description		= "ore weapons forge";
+	description		= "Forge ore weapons";
 };
 
 FUNC INT PC_Ore_Condition()

@@ -433,7 +433,7 @@ INSTANCE Info_Mod_Skip_Befreiung (C_INFO)
 	information	= Info_Mod_Skip_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Are you all right?";
+	description	= "Everything all right?";
 };
 
 FUNC INT Info_Mod_Skip_Befreiung_Condition()

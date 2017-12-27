@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Jesse_Costa_Info()
 	Info_ClearChoices	(Info_Mod_Jesse_Costa);
 
 	Info_AddChoice	(Info_Mod_Jesse_Costa, "No.", Info_Mod_Jesse_Costa_B);
-	Info_AddChoice	(Info_Mod_Jesse_Costa, "Yeah.", Info_Mod_Jesse_Costa_A);
+	Info_AddChoice	(Info_Mod_Jesse_Costa, "Yes.", Info_Mod_Jesse_Costa_A);
 };
 
 FUNC VOID Info_Mod_Jesse_Costa_B()

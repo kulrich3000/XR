@@ -2843,7 +2843,7 @@ FUNC VOID Info_Mod_Xardas_NW_Aufnahme_Info()
 				Info_ClearChoices	(Info_Mod_Xardas_NW_Aufnahme);
 
 				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Why don't you give me some time?", Info_Mod_Xardas_NW_Aufnahme_Nein);
-				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Yeah.", Info_Mod_Xardas_NW_Aufnahme_Ja);
+				Info_AddChoice	(Info_Mod_Xardas_NW_Aufnahme, "Yes.", Info_Mod_Xardas_NW_Aufnahme_Ja);
 			};
 		}
 		else
@@ -3206,11 +3206,11 @@ FUNC VOID Info_Mod_Xardas_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"I don't have enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"How much was it again?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"I haven't got enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"How much was that again?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"I want to pay the fine.",Info_Mod_Xardas_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"I want to pay the penalty!",Info_Mod_Xardas_PETZMASTER_PayNow);
 		};
 	};
 };
@@ -3222,11 +3222,11 @@ func void Info_Mod_Xardas_PMSchulden_HowMuchAgain()
 
 	Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"I don't have enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"How much was it again?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"I haven't got enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Xardas_PMSchulden,"How much was that again?",Info_Mod_Xardas_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"I want to pay the fine.",Info_Mod_Xardas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Xardas_PMSchulden,"I want to pay the penalty!",Info_Mod_Xardas_PETZMASTER_PayNow);
 	};
 };
 
@@ -3320,10 +3320,10 @@ FUNC VOID Info_Mod_Xardas_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Xardas_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Xardas_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Xardas_PETZMASTER,"I don't have enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Xardas_PETZMASTER,"I haven't got enough gold!",Info_Mod_Xardas_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Xardas_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Xardas_PETZMASTER,"I want to pay the fine.",Info_Mod_Xardas_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Xardas_PETZMASTER,"I want to pay the penalty!",Info_Mod_Xardas_PETZMASTER_PayNow);
 	};
 };
 
@@ -3363,7 +3363,7 @@ INSTANCE Info_Mod_Xardas_NW_Lernen_MANA (C_INFO)
 	information	= Info_Mod_Xardas_NW_Lernen_MANA_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to increase my magical powers.";
+	description	= "I want to increase my magic powers.";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Lernen_MANA_Condition()
@@ -3427,7 +3427,7 @@ INSTANCE Info_Mod_Xardas_NW_Lehrer (C_INFO)
 	information	= Info_Mod_Xardas_NW_Lehrer_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Can I study with you?";
+	description	= "Can I learn from you?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_Lehrer_Condition()

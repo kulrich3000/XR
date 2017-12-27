@@ -113,7 +113,7 @@ INSTANCE Info_Mod_Dever_Lernen (C_INFO)
 	information	= Info_Mod_Dever_Lernen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to be stronger!";
+	description	= "I want to become stronger!";
 };
 
 FUNC INT Info_Mod_Dever_Lernen_Condition()

@@ -80,7 +80,7 @@ INSTANCE Info_Mod_Edgor_Aufgabe (C_INFO)
 	information	= Info_Mod_Edgor_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What am I supposed to do for you?";
+	description	= "What do you want me to do for you?";
 };
 
 FUNC INT Info_Mod_Edgor_Aufgabe_Condition()

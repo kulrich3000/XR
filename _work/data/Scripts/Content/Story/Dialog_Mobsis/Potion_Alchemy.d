@@ -259,7 +259,7 @@ INSTANCE PC_PotionAlchemy_Health (C_Info)
 	condition		= PC_PotionAlchemy_Health_Condition;
 	information		= PC_PotionAlchemy_Health_Info;
 	permanent		= TRUE;
-	description		= "brew healing potions"; 
+	description		= "Brew healing potions"; 
 };
 
 FUNC INT PC_PotionAlchemy_Health_Condition ()
@@ -284,19 +284,19 @@ FUNC VOID PC_PotionAlchemy_Health_Info()
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_04] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Health, "Healing potion (max. quantity)", PC_PotionAlchemy_Health_04_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Healing potion (3 essences of healing, 1 knotweed)", PC_PotionAlchemy_Health_04);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Healing potions (3 essences of healing, 1 meadow knotweed)", PC_PotionAlchemy_Health_04);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Health, "Elixir of Healing (max. quantity)", PC_PotionAlchemy_Health_03_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Elixir of Healing (2 healing roots, 1 knotweed)", PC_PotionAlchemy_Health_03);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Elixir of healing (2 healing roots, 1 meadow knotweed)", PC_PotionAlchemy_Health_03);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Health, "Healing extract (max. quantity)", PC_PotionAlchemy_Health_02_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Healing extract (2 medicinal herbs, 1 knotweed)", PC_PotionAlchemy_Health_02);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Extract of healing (2 healing herbs, 1 meadow knotweed)", PC_PotionAlchemy_Health_02);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
@@ -307,7 +307,7 @@ FUNC VOID PC_PotionAlchemy_Health_Info()
 		{
 			Info_AddChoice	(PC_PotionAlchemy_Health, "Essence of Healing (max. quantity)", PC_PotionAlchemy_Health_01_Alle);
 		};
-		Info_AddChoice	(PC_PotionAlchemy_Health, "Essence of Healing (2 healing plants, 1 knotweed)", PC_PotionAlchemy_Health_01);
+		Info_AddChoice	(PC_PotionAlchemy_Health, "Essence of healing (2 healing plants, 1 meadow knotweed)", PC_PotionAlchemy_Health_01);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_07] == TRUE)
@@ -1056,19 +1056,19 @@ FUNC VOID PC_PotionAlchemy_Mana_Info()
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_04] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana drink (max. quantity)", PC_PotionAlchemy_Mana_04_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Manatrunk (3 mana essences, 1 knotweed)", PC_PotionAlchemy_Mana_04);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana potion (3 Mana essences, 1 meadow knotweed)", PC_PotionAlchemy_Mana_04);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixir (max. quantity)", PC_PotionAlchemy_Mana_03_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Elixir (2 fire roots, 1 knotweed)", PC_PotionAlchemy_Mana_03);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana elixir (2 fire roots, 1 meadow knotweed)", PC_PotionAlchemy_Mana_03);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
 		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana extract (max. quantity)", PC_PotionAlchemy_Mana_02_Alle);
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana extract (2 fireweed, 1 knotweed)", PC_PotionAlchemy_Mana_02);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana extract (2 fireweeds, 1 meadow knotweed)", PC_PotionAlchemy_Mana_02);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)
@@ -1079,7 +1079,7 @@ FUNC VOID PC_PotionAlchemy_Mana_Info()
 		{
 			Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essence (max. quantity)", PC_PotionAlchemy_Mana_01_Alle);
 		};
-		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana Essence (2 nettles, 1 knotweed)", PC_PotionAlchemy_Mana_01);
+		Info_AddChoice	(PC_PotionAlchemy_Mana, "Mana essence (2 fire nettles, 1 meadow knotweed)", PC_PotionAlchemy_Mana_01);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_06] == TRUE)
@@ -1712,7 +1712,7 @@ INSTANCE PC_PotionAlchemy_Special (C_Info)
 	condition		= PC_PotionAlchemy_Special_Condition;
 	information		= PC_PotionAlchemy_Special_Info;
 	permanent		= TRUE;
-	description		= "Special potions brew"; 
+	description		= "Brew special potions"; 
 };
 
 FUNC INT PC_PotionAlchemy_Special_Condition ()
@@ -1753,7 +1753,7 @@ FUNC VOID PC_PotionAlchemy_Special_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Drink of speed (1 Snapperkraut, 1 knotweed)", PC_PotionAlchemy_Special_Speed);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Potion of speed (1 snapperweed, 1 meadow knotweed)", PC_PotionAlchemy_Special_Speed);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Genesung] == TRUE)
@@ -1763,12 +1763,12 @@ FUNC VOID PC_PotionAlchemy_Special_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Drink of Strength (1 Dragon Root, 1 Crown Cane)", PC_PotionAlchemy_Special_Str);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Potion of strength (1 dragonroot, 1 king's sorrel)", PC_PotionAlchemy_Special_Str);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Drink of Skill (1 Goblin Berry, 1 Kronstöckl)", PC_PotionAlchemy_Special_Dex);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Potion of dexterity (1 goblin berry, 1 king's sorrel)", PC_PotionAlchemy_Special_Dex);
 	};
 
 	if (FolgsamkeitSnapper == TRUE)
@@ -1793,12 +1793,12 @@ FUNC VOID PC_PotionAlchemy_Special_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixir of the Spirit (1 Fire Root, 1 Crown Cane)", PC_PotionAlchemy_Special_PermMana);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixier of spirit (1 fire root, 1 king's sorrel)", PC_PotionAlchemy_Special_PermMana);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixir of Life (1 Healing Root, 1 Crown)", PC_PotionAlchemy_Special_PermHealth);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Elixir of life (1 healing root, 1 king's sorrel)", PC_PotionAlchemy_Special_PermHealth);
 	};
 
 	if (Knows_MCELIXIER == TRUE)
@@ -1813,7 +1813,7 @@ FUNC VOID PC_PotionAlchemy_Special_Info()
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_MegaDrink] == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Special, "Dracheneitrunk (10 dragon eggs, 1 black pearl, 1 sulphur)", PC_PotionAlchemy_Special_MegaDrink);
+		Info_AddChoice	(PC_PotionAlchemy_Special, "Dragon egg potion (10 dragon eggs, 1 black pearl, 1 sulfur)", PC_PotionAlchemy_Special_MegaDrink);
 	};
 
 	if (PLAYER_TALENT_ALCHEMY[POTION_AdanosWohltat] == TRUE)
@@ -2743,7 +2743,7 @@ INSTANCE PC_PotionAlchemy_Booze (C_Info)
 	condition		= PC_PotionAlchemy_Booze_Condition;
 	information		= PC_PotionAlchemy_Booze_Info;
 	permanent		= TRUE;
-	description		= "schnapps burning"; 
+	description		= "Distill booze"; 
 };
 
 FUNC INT PC_PotionAlchemy_Booze_Condition ()
@@ -3288,11 +3288,11 @@ FUNC VOID PC_PotionAlchemy_Tabak_Info()
 	};
 	if (Npc_HasItems(hero, ItPl_SwampHerb) >= 1)
 	{
-		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... with bogweed",PC_PotionAlchemy_Tabak_Swampherb);
+		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... with swampweed",PC_PotionAlchemy_Tabak_Swampherb);
 	};
 	if (Npc_HasItems(hero, ItPl_Mushroom_01) >= 1)
 	{
-		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... with dark mushroom",PC_PotionAlchemy_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_PotionAlchemy_Tabak,"... with murky mushroom",PC_PotionAlchemy_Tabak_Mushroom_01);
 	};
 };
 

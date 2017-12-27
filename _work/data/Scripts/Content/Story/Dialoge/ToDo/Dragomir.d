@@ -542,7 +542,7 @@ INSTANCE Info_Mod_Dragomir_WhoAreYou (C_INFO)
 	information	= Info_Mod_Dragomir_WhoAreYou_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Who are you people?";
+	description	= "Who are you?";
 };
 
 FUNC INT Info_Mod_Dragomir_WhoAreYou_Condition()

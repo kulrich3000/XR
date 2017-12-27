@@ -40,7 +40,7 @@ FUNC VOID Info_Mod_Rupert_Hi_C()
 	Info_ClearChoices	(Info_Mod_Rupert_Hi);
 
 	Info_AddChoice	(Info_Mod_Rupert_Hi, "You asked for it!", Info_Mod_Rupert_Hi_E);
-	Info_AddChoice	(Info_Mod_Rupert_Hi, "I'll talk to you later.", Info_Mod_Rupert_Hi_D);
+	Info_AddChoice	(Info_Mod_Rupert_Hi, "We'll talk again.", Info_Mod_Rupert_Hi_D);
 };
 
 FUNC VOID Info_Mod_Rupert_Hi_B()

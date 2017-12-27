@@ -341,7 +341,7 @@ INSTANCE Info_Mod_Ferco_Crazy (C_INFO)
 	information	= Info_Mod_Ferco_Crazy_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Are you kidding me?";
+	description	= "Are you trying to pull my leg?";
 };
 
 FUNC INT Info_Mod_Ferco_Crazy_Condition()

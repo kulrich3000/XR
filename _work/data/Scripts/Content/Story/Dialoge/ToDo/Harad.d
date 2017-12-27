@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Harad_Waffenverkauf (C_INFO)
 	information	= Info_Mod_Harad_Waffenverkauf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Do you sell guns?";
+	description	= "Do you sell weapons, too?";
 };
 
 FUNC INT Info_Mod_Harad_Waffenverkauf_Condition()
@@ -1645,7 +1645,7 @@ INSTANCE Info_Mod_Harad_Staerke (C_INFO)
 	information	= Info_Mod_Harad_Staerke_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to be stronger.";
+	description	= "I want to get stronger.";
 };
 
 FUNC INT Info_Mod_Harad_Staerke_Condition()
@@ -1747,7 +1747,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Info()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1789,7 +1789,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Common()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1825,7 +1825,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Harad01()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1861,7 +1861,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Harad02()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1897,7 +1897,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Harad03()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1933,7 +1933,7 @@ FUNC VOID Info_Mod_Harad_Schmieden_Harad04()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learning to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
+		Info_AddChoice		(Info_Mod_Harad_Schmieden, B_BuildLearnString("Learn to forge "	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,Info_Mod_Harad_Schmieden_Common);
 	};
 };
 
@@ -1945,7 +1945,7 @@ INSTANCE Info_Mod_Harad_Verkaufen (C_INFO)
 	information	= Info_Mod_Harad_Verkaufen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to sell my forged weapons.";
+	description	= "I want to sell the weapons I forged.";
 };
 
 FUNC INT Info_Mod_Harad_Verkaufen_Condition()

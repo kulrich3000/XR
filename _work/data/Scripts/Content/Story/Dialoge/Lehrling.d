@@ -35,7 +35,7 @@ FUNC VOID Info_Mod_Lehrling_Hi_A()
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Not interested.", Info_Mod_Lehrling_Hi_D);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Sorry, not interested.", Info_Mod_Lehrling_Hi_D);
 	Info_AddChoice	(Info_Mod_Lehrling_Hi, "What do you want?", Info_Mod_Lehrling_Hi_C);
 };
 
@@ -60,7 +60,7 @@ FUNC VOID Info_Mod_Lehrling_Hi_C()
 
 	Info_ClearChoices	(Info_Mod_Lehrling_Hi);
 
-	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Not interested.", Info_Mod_Lehrling_Hi_D);
+	Info_AddChoice	(Info_Mod_Lehrling_Hi, "Sorry, not interested.", Info_Mod_Lehrling_Hi_D);
 	Info_AddChoice	(Info_Mod_Lehrling_Hi, "I'll take a look around.", Info_Mod_Lehrling_Hi_E);
 };
 

@@ -154,7 +154,7 @@ INSTANCE Info_Mod_Garond_News (C_INFO)
 	information	= Info_Mod_Garond_News_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Is there any news?";
+	description	= "Any news?";
 };
 
 FUNC INT Info_Mod_Garond_News_Condition()

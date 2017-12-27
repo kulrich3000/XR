@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Morpheus_Hi (C_INFO)
 	information	= Info_Mod_Morpheus_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Everything okay with you?";
+	description	= "Everything all right with you?";
 };
 
 FUNC INT Info_Mod_Morpheus_Hi_Condition()

@@ -27,7 +27,7 @@ FUNC VOID Info_Mod_Torwache_Sekte_01_GardistenInfos_Info()
 	Info_ClearChoices	(Info_Mod_Torwache_Sekte_01_GardistenInfos);
 	
 	Info_AddChoice	(Info_Mod_Torwache_Sekte_01_GardistenInfos, "I met a few guardsmen (.... )", Info_Mod_Torwache_Sekte_01_GardistenInfos_D);
-	Info_AddChoice	(Info_Mod_Torwache_Sekte_01_GardistenInfos, "None of your business.", Info_Mod_Torwache_Sekte_01_GardistenInfos_C);
+	Info_AddChoice	(Info_Mod_Torwache_Sekte_01_GardistenInfos, "That's none of your business.", Info_Mod_Torwache_Sekte_01_GardistenInfos_C);
 	Info_AddChoice	(Info_Mod_Torwache_Sekte_01_GardistenInfos, "Some guards attacked me on the way over here.", Info_Mod_Torwache_Sekte_01_GardistenInfos_B);
 	Info_AddChoice	(Info_Mod_Torwache_Sekte_01_GardistenInfos, "The Rangers had had some problems with them.", Info_Mod_Torwache_Sekte_01_GardistenInfos_A);
 };

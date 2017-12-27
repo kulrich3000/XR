@@ -28,7 +28,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"How are you doing?";
+	description	 = 	"So how are things?";
 };
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 {	

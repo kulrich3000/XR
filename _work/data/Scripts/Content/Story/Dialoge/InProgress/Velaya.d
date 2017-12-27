@@ -162,7 +162,7 @@ FUNC VOID Info_Mod_Velaya_Unterwegs_Info()
 	Info_ClearChoices	(Info_Mod_Velaya_Unterwegs);
 
 	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "I've changed my mind.", Info_Mod_Velaya_Unterwegs_B);
-	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "Let's keep going.", Info_Mod_Velaya_Unterwegs_A);
+	Info_AddChoice	(Info_Mod_Velaya_Unterwegs, "Let's go on.", Info_Mod_Velaya_Unterwegs_A);
 };
 
 FUNC VOID Info_Mod_Velaya_Unterwegs_B()

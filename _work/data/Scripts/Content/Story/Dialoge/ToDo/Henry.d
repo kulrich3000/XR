@@ -314,7 +314,7 @@ INSTANCE Info_Mod_Henry_InEntertrupp (C_INFO)
 	information	= Info_Mod_Henry_InEntertrupp_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to join your posse.";
+	description	= "I want to join your raiding troop.";
 };
 
 FUNC INT Info_Mod_Henry_InEntertrupp_Condition()
@@ -361,7 +361,7 @@ INSTANCE Info_Mod_Henry_Befreiung (C_INFO)
 	information	= Info_Mod_Henry_Befreiung_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You all right?";
+	description	= "Everything all right?";
 };
 
 FUNC INT Info_Mod_Henry_Befreiung_Condition()

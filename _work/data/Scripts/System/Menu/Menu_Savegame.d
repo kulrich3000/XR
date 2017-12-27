@@ -174,7 +174,7 @@ instance MENUITEM_LOADSAVE_LEVELNAME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_DATETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "is saved:";
+	text[0]		= "saved:";
 	posx		= SAVEGAME_X2;
 	posy		= 4900;
 	fontName	= MENU_FONT_SMALL;
@@ -203,7 +203,7 @@ instance MENUITEM_LOADSAVE_DATETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Playtime:";
+	text[0]		= "playing time:";
 	posx		= SAVEGAME_X2;
 	posy		= 6200;
 	fontName	= MENU_FONT_SMALL;
@@ -247,7 +247,7 @@ instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 {
 	text[0]		=	"Back";
-	text[1]		=	"mess";
+	text[1]		=	"back";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 21*SAVEGAME_DY;
 };

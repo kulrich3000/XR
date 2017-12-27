@@ -55,7 +55,7 @@ INSTANCE DIA_MIL_6_PEOPLE(C_INFO)
 	condition	= DIA_MIL_6_PEOPLE_Condition;
 	information	= DIA_MIL_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Tell me about the paladin.";
+	description = "Tell me about these paladins.";
 };                       
 
 FUNC INT DIA_MIL_6_PEOPLE_Condition()
@@ -83,7 +83,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "What's there to know about this town?";
+	description = "What is there to know about this town?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()

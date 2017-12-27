@@ -48,7 +48,7 @@ FUNC VOID Info_Mod_Lucy_Sumpfkraut_Info()
 
 	Info_ClearChoices	(Info_Mod_Lucy_Sumpfkraut);
 
-	Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Forget about it.", Info_Mod_Lucy_Sumpfkraut_B);
+	Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Forget it.", Info_Mod_Lucy_Sumpfkraut_B);
 	if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
 		Info_AddChoice	(Info_Mod_Lucy_Sumpfkraut, "Here you have the gold (50 gold give)", Info_Mod_Lucy_Sumpfkraut_A);

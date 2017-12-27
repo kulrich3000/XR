@@ -29,7 +29,7 @@ INSTANCE Info_Mod_Regis_Paladine (C_INFO)
 	information	= Info_Mod_Regis_Paladine_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What do you know about the Paladins?";
+	description	= "What do you know about the paladins?";
 };
 
 FUNC INT Info_Mod_Regis_Paladine_Condition()

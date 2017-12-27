@@ -44,7 +44,7 @@ FUNC VOID Info_Mod_Brad_Hi_H()
 
 	Info_ClearChoices	(Info_Mod_Brad_Hi);
 
-	Info_AddChoice	(Info_Mod_Brad_Hi, "Forget about it.", Info_Mod_Brad_Hi_O);
+	Info_AddChoice	(Info_Mod_Brad_Hi, "Forget it.", Info_Mod_Brad_Hi_O);
 	Info_AddChoice	(Info_Mod_Brad_Hi, "I'll get you the skins.", Info_Mod_Brad_Hi_N);
 };
 

@@ -161,7 +161,7 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss3_B()
 	Info_ClearChoices	(Info_Mod_Ivan_Hasenfuss3);
 
 	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "Not a chance.", Info_Mod_Ivan_Hasenfuss3_D);
-	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "All right, all right.", Info_Mod_Ivan_Hasenfuss3_C);
+	Info_AddChoice	(Info_Mod_Ivan_Hasenfuss3, "All right.", Info_Mod_Ivan_Hasenfuss3_C);
 };
 
 FUNC VOID Info_Mod_Ivan_Hasenfuss3_A()
@@ -250,7 +250,7 @@ FUNC VOID Info_Mod_Ivan_Hasenfuss4_B()
 
 	if (Npc_HasItems(hero, ItPl_Health_Herb_01) >= 5)
 	{
-		Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Here you have them.", Info_Mod_Ivan_Hasenfuss4_C);
+		Info_AddChoice	(Info_Mod_Ivan_Hasenfuss4, "Here you are.", Info_Mod_Ivan_Hasenfuss4_C);
 	};
 };
 

@@ -41,7 +41,7 @@ INSTANCE Info_Mod_Merdarion_AW_Nefarius (C_INFO)
 	information	= Info_Mod_Merdarion_AW_Nefarius_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Satan sent me.";
+	description	= "Saturas sent me.";
 };
 
 FUNC INT Info_Mod_Merdarion_AW_Nefarius_Condition()

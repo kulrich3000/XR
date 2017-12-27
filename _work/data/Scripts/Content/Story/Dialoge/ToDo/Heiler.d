@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Heiler_Hi (C_INFO)
 	information	= Info_Mod_Heiler_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can you cure me?";
+	description	= "Can you heal me?";
 };
 
 FUNC INT Info_Mod_Heiler_Hi_Condition()
@@ -278,7 +278,7 @@ INSTANCE Info_Mod_Heiler_WasGeht (C_INFO)
 	information	= Info_Mod_Heiler_WasGeht_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's it going?";
+	description	= "What's up?";
 };
 
 FUNC INT Info_Mod_Heiler_WasGeht_Condition()

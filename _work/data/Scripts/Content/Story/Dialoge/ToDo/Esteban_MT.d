@@ -273,7 +273,7 @@ FUNC VOID Info_Mod_Esteban_AtVM5_Info()
 	Info_ClearChoices	(Info_Mod_Esteban_AtVM5);
 
 	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "I think I'd rather keep the crates to myself.", Info_Mod_Esteban_AtVM5_B);
-	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Here you have them.", Info_Mod_Esteban_AtVM5_A);
+	Info_AddChoice	(Info_Mod_Esteban_AtVM5, "Here you are.", Info_Mod_Esteban_AtVM5_A);
 };
 
 FUNC VOID Info_Mod_Esteban_AtVM5_B()

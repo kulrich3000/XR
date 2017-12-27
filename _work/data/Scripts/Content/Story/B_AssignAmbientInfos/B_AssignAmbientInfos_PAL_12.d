@@ -31,7 +31,7 @@ INSTANCE DIA_PAL_12_JOIN(C_INFO)
 	condition	= DIA_PAL_12_JOIN_Condition;
 	information	= DIA_PAL_12_JOIN_Info;
 	permanent	= TRUE;
-	description = "I want to be a Paladin!";
+	description = "I want to become a paladin!";
 };                       
 
 FUNC INT DIA_PAL_12_JOIN_Condition()
@@ -86,7 +86,7 @@ INSTANCE DIA_PAL_12_LOCATION(C_INFO)
 	condition	= DIA_PAL_12_LOCATION_Condition;
 	information	= DIA_PAL_12_LOCATION_Info;
 	permanent	= TRUE;
-	description = "What are you paladins doing here in khorinis?";
+	description = "What are you paladins doing here in Khorinis?";
 };                       
 
 FUNC INT DIA_PAL_12_LOCATION_Condition()

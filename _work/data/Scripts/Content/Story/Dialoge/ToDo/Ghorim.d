@@ -46,7 +46,7 @@ FUNC VOID Info_Mod_Ghorim_Sumpfmensch_Info()
 	Info_ClearChoices	(Info_Mod_Ghorim_Sumpfmensch);
 
 	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "No.", Info_Mod_Ghorim_Sumpfmensch_B);
-	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Yeah.", Info_Mod_Ghorim_Sumpfmensch_A);
+	Info_AddChoice	(Info_Mod_Ghorim_Sumpfmensch, "Yes.", Info_Mod_Ghorim_Sumpfmensch_A);
 };
 
 FUNC VOID Info_Mod_Ghorim_Sumpfmensch_B()

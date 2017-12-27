@@ -256,7 +256,7 @@ FUNC VOID Info_Mod_Constantino_Aufnahme_Info()
 	Info_ClearChoices	(Info_Mod_Constantino_Aufnahme);
 
 	Info_AddChoice	(Info_Mod_Constantino_Aufnahme, "No.", Info_Mod_Constantino_Aufnahme_B);
-	Info_AddChoice	(Info_Mod_Constantino_Aufnahme, "Yeah.", Info_Mod_Constantino_Aufnahme_A);
+	Info_AddChoice	(Info_Mod_Constantino_Aufnahme, "Yes.", Info_Mod_Constantino_Aufnahme_A);
 };
 
 FUNC VOID Info_Mod_Constantino_Aufnahme_B()

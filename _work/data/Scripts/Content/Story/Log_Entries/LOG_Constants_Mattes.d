@@ -10,25 +10,25 @@
 //-------Banditen----------------
 const string Topic_Addon_Logan		= "swamp shark hunting";	
 const string Topic_Addon_Stoneplate	= "The stone tablet in the swamp";
-const string Topic_Addon_Franco		= "Inside (into the bandit camp)";
+const string Topic_Addon_Franco		= "Forward (into the bandit camp)";
 
-const string Topic_Addon_Senyan		= "A disastrous situation";
-const string Topic_Addon_Esteban	= "The assassination attempt";
-const string Topic_Addon_Huno		= "Huno's Steel";
-const string Topic_Addon_Fisk		= "A package full of dashes";
-const string Topic_Addon_Buddler	= "Three stones - three Buddler";
+const string Topic_Addon_Senyan		= "A fatal situation";
+const string Topic_Addon_Esteban	= "Attempted murder";
+const string Topic_Addon_Huno		= "Huno's steel";
+const string Topic_Addon_Fisk		= "A package of lock picks";
+const string Topic_Addon_Buddler	= "Three stones - three diggers";
 const string Topic_Addon_Tempel		= "Access to the temple";
 
-const string Topic_Addon_Fortuno	= "Mental aberrations";
-const string Topic_Addon_Hammer		= "Hammer Schnapps";	
+const string Topic_Addon_Fortuno	= "Mental meanders";
+const string Topic_Addon_Hammer		= "Hammer booze";	
 
 
 
-const string Topic_Addon_BDT_Trader  = "Dealers in the Bandit camp";	
-const string Topic_Addon_BDT_Teacher = "Teachers in the Bandit Camp";	
+const string Topic_Addon_BDT_Trader  = "Trading with the bandits";	
+const string Topic_Addon_BDT_Teacher = "Learning from the bandits";	
 
 // ------ Kapitel 1 ------
-CONST string 	Topic_Bandits				=	"Profiles and Bandits"; 
+CONST string 	Topic_Bandits				=	"Wanted Notes and Bandits"; 
 
 // ------ Der Rübenbauer ------
 const string	TOPIC_Kleidung				=	"Lobart's workers' clothing.";
@@ -36,7 +36,7 @@ const string	TOPIC_Rueben				=	"Pull the turnips.";
 const string	TOPIC_Ruebenbringen			=	"Take the turnips to Hilda.";
 const string	TOPIC_Vino					=	"For a bottle of wine.";
 const string	TOPIC_Maleth				=	"The bandits at Lobart's farm. ";
-const string	TOPIC_Hilda					=	"A pan for Hilda.";
+const string	TOPIC_Hilda					=	"A Pan for Hilda";
 
 //-----Der Weg in die Stadt-------------
 const string	TOPIC_City					=	"Access to the town of Khorinis.";
@@ -56,37 +56,37 @@ const string	TOPIC_ConstantinoPlants		=   "Plants for Constantino.";
 
 //-------------Händler und Diebe---------------------------
 const string	TOPIC_Canthar				=	"Canthar's favor.";
-const string	TOPIC_HakonBanditen			=   "bandit attack";
+const string	TOPIC_HakonBanditen			=   "Bandit Raids";
 const string	TOPIC_Jora					=	"The dealer's gold.";
 const string	TOPIC_JoraDieb				=	"A brazen thief.";
-const string	TOPIC_Nagur					=	"The Wrong Messenger";
+const string	TOPIC_Nagur					=	"The False Messenger";
 const string	TOPIC_Baltram				=	"Baltram's delivery.";
 
 const string 	Topic_CassiaRing			= 	"Constantino's ring.";
-const string 	Topic_CassiaKelche			= 	"The cups of blood";
-const string 	Topic_RamirezSextant		= 	"A sextant";
+const string 	Topic_CassiaKelche			= 	"The Blood Chalices";
+const string 	Topic_RamirezSextant		= 	"A Sextant";
 
 //------------Hafenviertel und Sonstiges------------------
-const string 	TOPIC_Alwin					= 	"The Crazy Fellan";
-const string 	TOPIC_Ignaz					= 	"The experiment";
+const string 	TOPIC_Alwin					= 	"Mad Fellan";
+const string 	TOPIC_Ignaz					= 	"The Experiment";
 const string 	TOPIC_AlrikSchwert			= 	"Alrik's sword.";
 const string 	TOPIC_Garvell				= 	"Information for Garvell.";
 
 
 
 //---------Milizaufträge-------------------------------
-const string	TOPIC_Peck					= 	"Where's Peck?";
-const string	TOPIC_Warehouse				= 	"A packet of cabbage";
-const string	TOPIC_Redlight				= 	"The herb - trade";
-const string	TOPIC_Feldraeuber			= 	"Problems at Lobart's farm";
+const string	TOPIC_Peck					= 	"Where is Peck?";
+const string	TOPIC_Warehouse				= 	"A Package full of Weed";
+const string	TOPIC_Redlight				= 	"The Weed Deal";
+const string	TOPIC_Feldraeuber			= 	"Problems at Lobart's Farm";
 
 
 
 //---------Kloster-----------------------------
-const string	TOPIC_BecomeKdF				=	"Appointment as fire magician"; 
+const string	TOPIC_BecomeKdF				=	"Magician of Fire"; 
 
 const string	Topic_Kloster				=	"Access to the Innos Monastery.";
-const string    Topic_Gemeinschaft			=	"Working for the community";
+const string    Topic_Gemeinschaft			=	"Serve the Community";
 
 //---------Arbeiten für die Gemeinschaft-----------------------------
 const string    Topic_Neorasrezept  		=	"The lost recipe.";
@@ -103,7 +103,7 @@ const string	Topic_BaboTrain				=	"Combat training for Babo.";
 const string	Topic_KarrasCharm			=	"A walk into town.";
 
 //---------Prüfung des Feuers---------------------
-const string	TOPIC_FireContest			=	"Fire test";
+const string	TOPIC_FireContest			=	"The Test of Fire";
 const string	TOPIC_Golem					=	"The living rock.";
 const string	TOPIC_Rune					=	"The rune of fire.";
 const string	TOPIC_Schnitzeljagd			=	"The path of the faithful."; 

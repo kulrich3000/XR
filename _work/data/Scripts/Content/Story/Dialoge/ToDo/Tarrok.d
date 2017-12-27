@@ -85,7 +85,7 @@ FUNC VOID Info_Mod_Tarrok_Fokussuche_Info()
 	Info_ClearChoices	(Info_Mod_Tarrok_Fokussuche);
 
 	Info_AddChoice	(Info_Mod_Tarrok_Fokussuche, "No.", Info_Mod_Tarrok_Fokussuche_Nein);
-	Info_AddChoice	(Info_Mod_Tarrok_Fokussuche, "Yeah.", Info_Mod_Tarrok_Fokussuche_Ja);
+	Info_AddChoice	(Info_Mod_Tarrok_Fokussuche, "Yes.", Info_Mod_Tarrok_Fokussuche_Ja);
 };
 
 FUNC VOID Info_Mod_Tarrok_Fokussuche_Nein()
@@ -244,7 +244,7 @@ INSTANCE Info_Mod_Tarrok_Hilfe (C_INFO)
 	information	= Info_Mod_Tarrok_Hilfe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You need some help?";
+	description	= "Do you need help?";
 };
 
 FUNC INT Info_Mod_Tarrok_Hilfe_Condition()

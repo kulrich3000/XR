@@ -1007,7 +1007,7 @@ INSTANCE Info_Mod_Vatras_Kreis1	(C_INFO)
 	information	= Info_Mod_Vatras_Kreis1_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me the first circle of magic.";
+	description	= "Teach me the first Circle of Magic.";
 };
 FUNC INT Info_Mod_Vatras_Kreis1_Condition()
 {	
@@ -1045,7 +1045,7 @@ INSTANCE Info_Mod_Vatras_Kreis2		(C_INFO)
 	information	= Info_Mod_Vatras_Kreis2_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me the second circle of magic.";
+	description	= "Teach me the second Circle of Magic.";
 };
 FUNC INT Info_Mod_Vatras_Kreis2_Condition ()
 {	
@@ -1088,7 +1088,7 @@ INSTANCE Info_Mod_Vatras_Kreis3		(C_INFO)
 	information	= Info_Mod_Vatras_Kreis3_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me the third circle of magic.";
+	description	= "Teach me the third Circle of Magic.";
 };
 FUNC INT Info_Mod_Vatras_Kreis3_Condition ()
 {	
@@ -1126,7 +1126,7 @@ INSTANCE Info_Mod_Vatras_Kreis4 (C_INFO)
 	information	= Info_Mod_Vatras_Kreis4_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to learn the fourth circle of magic.";
+	description	= "I want to learn the fourth Circle of Magic.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis4_Condition()
@@ -1165,7 +1165,7 @@ INSTANCE Info_Mod_Vatras_Kreis5 (C_INFO)
 	information	= Info_Mod_Vatras_Kreis5_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "I want to learn the fifth circle of magic.";
+	description	= "I want to learn the fifth Circle of Magic.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis5_Condition()
@@ -1204,7 +1204,7 @@ INSTANCE Info_Mod_Vatras_Kreis6	(C_INFO)
 	information	= Info_Mod_Vatras_Kreis6_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me the last circle of magic.";
+	description	= "Teach me the last Circle of Magic.";
 };
 
 FUNC INT Info_Mod_Vatras_Kreis6_Condition()

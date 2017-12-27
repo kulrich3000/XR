@@ -91,7 +91,7 @@ INSTANCE Info_Mod_Brian_KeinLehrlingMehr01 (C_INFO)
 	information	= Info_Mod_Brian_KeinLehrlingMehr01_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's work?";
+	description	= "How's your work?";
 };
 
 FUNC INT Info_Mod_Brian_KeinLehrlingMehr01_Condition()

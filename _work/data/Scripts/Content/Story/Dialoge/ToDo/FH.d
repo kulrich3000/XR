@@ -24,14 +24,14 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS faces don't exist!!!!!!!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
 
 	var string printText;
 
-	PrintScreen	("SkinTexture:" 		, -1, 10, "FONT_OLD_10_WHITE.TGA", 4 );
+	PrintScreen	("Skin texture:" 		, -1, 10, "FONT_OLD_10_WHITE.TGA", 4 );
 	
 	printText = IntToString	(FH_SkinTexture);
 	PrintScreen	(printText		, -1, 12, "FONT_OLD_10_WHITE.TGA", 2 );
@@ -200,7 +200,7 @@ INSTANCE DIA_FH_WomanFace (C_INFO)
 	condition		= DIA_FH_WomanFace_Condition;
 	information		= DIA_FH_WomanFace_Info;
 	permanent		= 1;
-	description		= "Goto Women Faces";
+	description		= "Go to Women's Faces";
 };                       
 
 FUNC INT DIA_FH_WomanFace_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_FH_Repeat (C_INFO)
 	condition		= DIA_FH_Repeat_Condition;
 	information		= DIA_FH_Repeat_Info;
 	permanent		= 1;
-	description		= "? ----Screen Repeat display--------";
+	description		= "Repeat Output";
 };                       
 
 FUNC INT DIA_FH_Repeat_Condition()
@@ -247,7 +247,7 @@ INSTANCE DIA_FH_Sex (C_INFO)
 	condition		= DIA_FH_Sex_Condition;
 	information		= DIA_FH_Sex_Info;
 	permanent		= 1;
-	description		= "sexual";
+	description		= "Sex";
 };                       
 
 FUNC INT DIA_FH_Sex_Condition()

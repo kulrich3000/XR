@@ -86,7 +86,7 @@ INSTANCE DIA_SLD_6_LOCATION(C_INFO)
 	condition	= DIA_SLD_6_LOCATION_Condition;
 	information	= DIA_SLD_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Do you guard the peasants?";
+	description = "Are you guarding the farmers?";
 };                       
 
 FUNC INT DIA_SLD_6_LOCATION_Condition()

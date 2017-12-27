@@ -3595,7 +3595,7 @@ INSTANCE DIA_CH_Misc_Animal_other (C_INFO)
 	condition	= DIA_CH_Misc_Animal_other_Condition;
 	information	= DIA_CH_Misc_Animal_other_Info;
 	permanent	= TRUE;
-	description = "Blood, dandruff, horns, tongue";
+	description = "blood, scales, horns, tongue";
 };                       
 
 FUNC INT DIA_CH_Misc_Animal_other_Condition()
@@ -3625,11 +3625,11 @@ FUNC VOID DIA_CH_Misc_Animal_other_Info()
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Dragon scales pull",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  CH_Training_TROPHYS_DragonScale);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("detach dragon scales",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  CH_Training_TROPHYS_DragonScale);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("Dragon blood cone",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  CH_Training_TROPHYS_DragonBlood);
+		Info_AddChoice	(DIA_CH_Misc_Animal_other, B_BuildLearnString ("draw dragonblood",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  CH_Training_TROPHYS_DragonBlood);
 	};
 };
 //--------------------------------------------
@@ -3723,7 +3723,7 @@ INSTANCE DIA_CH_Misc_PalHeal (C_INFO)
 	condition	= DIA_CH_Misc_PalHeal_Condition;
 	information	= DIA_CH_Misc_PalHeal_Info;
 	permanent	= TRUE;
-	description = "Light and Healing sayings";
+	description = "light and healing spells";
 };                       
 
 FUNC INT DIA_CH_Misc_PalHeal_Condition()
@@ -3787,7 +3787,7 @@ INSTANCE DIA_CH_Misc_PalKampf (C_INFO)
 	condition	= DIA_CH_Misc_PalKampf_Condition;
 	information	= DIA_CH_Misc_PalKampf_Info;
 	permanent	= TRUE;
-	description = "mottoes";
+	description = "combat spells";
 };                       
 
 FUNC INT DIA_CH_Misc_PalKampf_Condition()

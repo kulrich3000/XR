@@ -88,7 +88,7 @@ INSTANCE Info_Mod_Ingmar_Lehrer (C_INFO)
 	information	= Info_Mod_Ingmar_Lehrer_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can you train me too?";
+	description	= "Can you train me, too?";
 };
 
 FUNC INT Info_Mod_Ingmar_Lehrer_Condition()

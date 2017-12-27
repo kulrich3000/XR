@@ -54,7 +54,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_Info()
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
 	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "It's not enough for me.", Info_Mod_Alberto_Crawlerzangen_B);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_A);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Done.", Info_Mod_Alberto_Crawlerzangen_A);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_Gekauft()
@@ -75,7 +75,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_B()
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
 	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Still not enough.", Info_Mod_Alberto_Crawlerzangen_D);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_C);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Done.", Info_Mod_Alberto_Crawlerzangen_C);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_D()
@@ -86,7 +86,7 @@ FUNC VOID Info_Mod_Alberto_Crawlerzangen_D()
 	Info_ClearChoices	(Info_Mod_Alberto_Crawlerzangen);
 
 	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "I want more.", Info_Mod_Alberto_Crawlerzangen_F);
-	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Bought.", Info_Mod_Alberto_Crawlerzangen_E);
+	Info_AddChoice	(Info_Mod_Alberto_Crawlerzangen, "Done.", Info_Mod_Alberto_Crawlerzangen_E);
 };
 
 FUNC VOID Info_Mod_Alberto_Crawlerzangen_F()

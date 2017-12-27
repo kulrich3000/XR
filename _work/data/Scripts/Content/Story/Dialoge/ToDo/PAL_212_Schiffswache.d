@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"Who are you people?";
+	description	 = 	"Who are you?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -56,7 +56,7 @@ instance DIA_Pal_212_Schiffswache_WASMACHSTDU2		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info;
 
-	description	 = 	"What are you guys doing here?";
+	description	 = 	"What are you doing here?";
 };
 
 func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()

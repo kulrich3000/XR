@@ -120,7 +120,7 @@ INSTANCE Info_PsiNov_5_DieLage(C_INFO) // E1
 	condition	= Info_PsiNov_5_DieLage_Condition;
 	information	= Info_PsiNov_5_DieLage_Info;
 	permanent	= 1;
-	description = "How's it looking?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_PsiNov_5_DieLage_Condition()

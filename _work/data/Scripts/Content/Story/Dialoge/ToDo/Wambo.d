@@ -260,7 +260,7 @@ FUNC VOID Info_Mod_Wambo_Lehrer_Info()
 	Info_ClearChoices	(Info_Mod_Wambo_Lehrer);
 
 	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "No. I'm just new here.", Info_Mod_Wambo_Lehrer_B);
-	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Yeah.", Info_Mod_Wambo_Lehrer_A);
+	Info_AddChoice	(Info_Mod_Wambo_Lehrer, "Yes.", Info_Mod_Wambo_Lehrer_A);
 };
 
 FUNC VOID Info_Mod_Wambo_Lehrer_B()

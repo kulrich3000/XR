@@ -53,7 +53,7 @@ INSTANCE PC_Circle_01 (C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 1"; 
+	description		= "Create 1st Circle runes"; 
 };
 
 FUNC INT PC_Circle_01_Condition ()
@@ -116,7 +116,7 @@ INSTANCE PC_Circle_02 (C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 2"; 
+	description		= "Create 2nd Circle runes"; 
 };
 FUNC INT PC_Circle_02_Condition ()
 {
@@ -177,7 +177,7 @@ INSTANCE PC_Circle_03 (C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 3"; 
+	description		= "Create 3rd Circle runes"; 
 };
 FUNC INT PC_Circle_03_Condition ()
 {	
@@ -254,7 +254,7 @@ INSTANCE PC_Circle_04 (C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 4"; 
+	description		= "Create 4th Circle runes"; 
 };
 FUNC INT PC_Circle_04_Condition ()
 {	
@@ -321,7 +321,7 @@ INSTANCE PC_Circle_05 (C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 5"; 
+	description		= "Create 5th Circle runes"; 
 };
 FUNC INT PC_Circle_05_Condition ()
 {
@@ -360,7 +360,7 @@ FUNC VOID PC_Circle_05_Info()
 	};
 	if (PLAYER_TALENT_RUNES[SPL_Pyrokinesis_g1] == TRUE)
 	{
-		Info_AddChoice 	  (PC_Circle_05,"pyrokinesis",PC_ItRu_Pyrokinesis_g1_Info);
+		Info_AddChoice 	  (PC_Circle_05,"Pyrokinesis",PC_ItRu_Pyrokinesis_g1_Info);
 	};
 	if (PLAYER_TALENT_RUNES[SPL_IceWave] == TRUE)
 	{
@@ -379,7 +379,7 @@ INSTANCE PC_Circle_06 (C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Create Runic Circle 6"; 
+	description		= "Create 6th Circle runes"; 
 };
 FUNC INT PC_Circle_06_Condition ()
 {	
@@ -2935,7 +2935,7 @@ FUNC VOID PC_Verbessern_Obelisk_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPsicamp) >= 1)
 	&& (Mod_TeleportPsicamp == FALSE)
 	{
-		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the marsh camp", PC_Verbessern_Obelisk_Psicamp);
+		Info_AddChoice 	  (PC_Verbessern_Obelisk, "Teleport to the Swamp Camp", PC_Verbessern_Obelisk_Psicamp);
 	};
 	if (Npc_HasItems(hero, ItRu_TeleportSonnenkreis) >= 1)
 	&& (Mod_TeleportSonnenkreis == FALSE)

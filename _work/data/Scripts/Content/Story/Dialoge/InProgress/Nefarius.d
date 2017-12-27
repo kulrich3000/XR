@@ -356,7 +356,7 @@ instance Info_Mod_Nefarius_Runen	(C_INFO)
 	information	= Info_Mod_Nefarius_Runen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Teach me (create runes)";
+	description	= "Instruct me (create runes)";
 };
 
 func int Info_Mod_Nefarius_Runen_Condition ()

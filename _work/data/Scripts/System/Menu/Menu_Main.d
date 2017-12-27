@@ -58,7 +58,7 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Load Game";
-	text[1]		=	"Load a saved score.";  // Kommentar
+	text[1]		=	"Load a saved game.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;

@@ -137,7 +137,7 @@ INSTANCE Info_Mod_Dexter_Job (C_INFO)
 	information	= Info_Mod_Dexter_Job_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "You got something to do for me?";
+	description	= "Have you got something for me to do?";
 };
 
 FUNC INT Info_Mod_Dexter_Job_Condition()
@@ -1239,11 +1239,11 @@ FUNC VOID Info_Mod_Dexter_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 		Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"I don't have enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
-		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"How much was it again?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"I haven't got enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
+		Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"How much was that again?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 		{
-			Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"I want to pay the fine.",Info_Mod_Dexter_PETZMASTER_PayNow);
+			Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"I want to pay the penalty!",Info_Mod_Dexter_PETZMASTER_PayNow);
 		};
 	};
 };
@@ -1255,11 +1255,11 @@ func void Info_Mod_Dexter_PMSchulden_HowMuchAgain()
 
 	Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"I don't have enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
-	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"How much was it again?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"I haven't got enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Dexter_PMSchulden,"How much was that again?",Info_Mod_Dexter_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"I want to pay the fine.",Info_Mod_Dexter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Dexter_PMSchulden,"I want to pay the penalty!",Info_Mod_Dexter_PETZMASTER_PayNow);
 	};
 };
 
@@ -1353,10 +1353,10 @@ FUNC VOID Info_Mod_Dexter_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(Info_Mod_Dexter_PMSchulden);
 	Info_ClearChoices  	(Info_Mod_Dexter_PETZMASTER);
-	Info_AddChoice		(Info_Mod_Dexter_PETZMASTER,"I don't have enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
+	Info_AddChoice		(Info_Mod_Dexter_PETZMASTER,"I haven't got enough gold!",Info_Mod_Dexter_PETZMASTER_PayLater);
 	if (Npc_HasItems(hero, itmi_gold) >= Dexter_Schulden)
 	{
-		Info_AddChoice 	(Info_Mod_Dexter_PETZMASTER,"I want to pay the fine.",Info_Mod_Dexter_PETZMASTER_PayNow);
+		Info_AddChoice 	(Info_Mod_Dexter_PETZMASTER,"I want to pay the penalty!",Info_Mod_Dexter_PETZMASTER_PayNow);
 	};
 };
 

@@ -92,7 +92,7 @@ INSTANCE DIA_REL_Buerger_19_PEOPLE(C_INFO)
 	condition	= DIA_REL_Buerger_19_PEOPLE_Condition;
 	information	= DIA_REL_Buerger_19_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Who are the important personalities here?";
+	description = "Who are the important figures around here?";
 };                       
 
 FUNC INT DIA_REL_Buerger_19_PEOPLE_Condition()

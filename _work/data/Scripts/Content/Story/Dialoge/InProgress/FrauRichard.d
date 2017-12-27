@@ -83,7 +83,7 @@ INSTANCE Info_Mod_FrauRichard_InDorf (C_INFO)
 	information	= Info_Mod_FrauRichard_InDorf_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Will you be all right?";
+	description	= "Are you doing all right?";
 };
 
 FUNC INT Info_Mod_FrauRichard_InDorf_Condition()

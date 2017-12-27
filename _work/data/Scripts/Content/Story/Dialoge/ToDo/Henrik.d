@@ -6,7 +6,7 @@ INSTANCE Info_Mod_Henrik_Hi (C_INFO)
 	information	= Info_Mod_Henrik_Hi_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "How's work going?";
+	description	= "How's work?";
 };
 
 FUNC INT Info_Mod_Henrik_Hi_Condition()

@@ -116,7 +116,7 @@ INSTANCE Info_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Sld_11_DieLage_Condition;
 	information	= Info_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Everything okay with you?";
+	description = "Everything all right with you?";
 };                       
 
 FUNC INT Info_Sld_11_DieLage_Condition()
