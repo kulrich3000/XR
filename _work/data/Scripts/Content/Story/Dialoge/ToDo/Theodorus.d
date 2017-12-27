@@ -39,7 +39,7 @@ FUNC VOID Info_Mod_Theodorus_Hi_A()
 	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_00"); //Niebezpieczenstwa jakiego rodzaju?
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_01"); //Z pewnoscia wiesz! A moze dlaczego chcesz tam pojechac? Oczywiscie wiesz o dawcy radosci!
 	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_02"); //Co jest w tym niebezpieczne?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //(nachäffend) Co jest w tym niebezpieczne? Es macht aus starken Männern sabbernde Spirituelle. DAS ist daran gefährlich.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //Co jest w tym niebezpieczne? To sprawia, ze mocni mezczyzni staja sie opadajacymi duchami. To niebezpieczne.
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_04"); //Slyszalem o religii monoteistycznej opartej wylacznie na stosowaniu tego narkotyku.
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_05"); //Czy chcesz równiez obrazac bogów w ten sposób? (Pauza) Móglbym ci wiele powiedziec o tym, co przyzwoici mezczyzni zrobili pod wplywem radosnych darczynców....
 	

@@ -191,7 +191,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_1000()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 1.000 zlotych monet. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //Zaczeliscie mnie oszukiwac. Nie masz 1000 zlotych monet. Cóz, poczekaj.
 
 		MerkLebenspunkteBartok	=	self.attribute[ATR_HITPOINTS];
 		MerkLebenspunkteHeldBartok	=	hero.attribute[ATR_HITPOINTS];
@@ -220,7 +220,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_500()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 500 zlotych monet. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //Zaczeliscie mnie oszukiwac. Nie masz 500 zlotych monet. Cóz, poczekaj.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -246,7 +246,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_200()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 200 zlotych monet. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //Zaczeliscie mnie oszukiwac. Nie masz 200 zlotych monet. Cóz, poczekaj.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -283,7 +283,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_100()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //Du willst mich wohl verarschen. Du hast keine 100 zlotych monet. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //Zaczeliscie mnie oszukiwac. Nie masz 100 zlotych monet. Cóz, poczekaj.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);

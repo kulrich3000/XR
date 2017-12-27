@@ -61,7 +61,7 @@ FUNC VOID Info_Mod_HFFrau_Heiraten_02_Info()
 	B_UseItem	(self, ItFo_Trunken);
 
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Teraz, gdy jestes samotny, chcialbys mnie poslubic?
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_06"); //Heiraten? Tak..... aber ich heirate nur noch jemanden der seinen eigenen Grund besitzt ... Tust du das?
+	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_06"); //Ozenic sie? Tak..... ale zenie sie tylko za kogos, kto ma wlasny powód.... Czy to robisz?
 };
 
 INSTANCE Info_Mod_HFFrau_Heiraten_03 (C_INFO)

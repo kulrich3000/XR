@@ -346,12 +346,12 @@ INSTANCE Info_Mod_Cavalorn_Lernen_Schleichen (C_INFO)
 	information	= Info_Mod_Cavalorn_Lernen_Schleichen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("bijatyka", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("Skradanie siê", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Cavalorn_Lernen_Schleichen_Condition()
 {
-	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("bijatyka", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
+	Info_Mod_Cavalorn_Lernen_Schleichen.description = B_BuildLearnString("Skradanie siê", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Cavalorn_Lehrer))
 	&& (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)

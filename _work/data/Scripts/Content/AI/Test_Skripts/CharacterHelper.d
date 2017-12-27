@@ -606,7 +606,7 @@ INSTANCE CH_Lernpunkte (C_INFO)
 	nr 				=  5;
 	condition		= CH_Lernpunkte_Condition;
 	information		= CH_Lernpunkte_Info;
-	description		= "uczenie sie"; 
+	description		= "Punkty nauki"; 
 	permanent		=  TRUE;
 };
 
@@ -2762,7 +2762,7 @@ INSTANCE DIA_CH_Dieb_Schleichen (C_INFO)
 	condition	= DIA_CH_Dieb_Schleichen_Condition;
 	information	= DIA_CH_Dieb_Schleichen_Info;
 	permanent	= TRUE;
-	description = "bijatyka";
+	description = "Skradanie siê";
 };                       
 
 FUNC INT DIA_CH_Dieb_Schleichen_Condition()
@@ -2777,7 +2777,7 @@ FUNC VOID DIA_CH_Dieb_Schleichen_Info()
 	Info_ClearChoices  	(DIA_CH_Dieb_Schleichen);
 	Info_AddChoice 		(DIA_CH_Dieb_Schleichen,DIALOG_BACK,DIA_CH_Dieb_Schleichen_BACK);
 	
-	Info_AddChoice		(DIA_CH_Dieb_Schleichen, B_BuildLearnString("bijatyka"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,CH_Training_Thief_Sneak);
+	Info_AddChoice		(DIA_CH_Dieb_Schleichen, B_BuildLearnString("Skradanie siê"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,CH_Training_Thief_Sneak);
 };
 //*********************************************
 //Dieb Schlösser öffnen

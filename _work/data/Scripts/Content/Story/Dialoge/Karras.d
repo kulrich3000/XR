@@ -199,7 +199,7 @@ FUNC VOID Info_Mod_Karras_Namib_Info()
 		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_22"); //Wiec, po pierwsze, nie kradna go, ale dostajesz nasza prawowita wlasnosc z powrotem, a po drugie, tak.
 		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_23"); //Wszystkie sluszne, wszystkie sluszne. Gdzie moge znalezc ksiazke?
 		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_24"); //Prawdopodobnie w jej bibliotece.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //Und nimm diesen Knüppel. Oczarowany. Jesli kogos z tym uderzysz, on zemdli i nic nie zapamieta, kiedy sie obudzi.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //I wez ten kij. Oczarowany. Jesli kogos z tym uderzysz, on zemdli i nic nie zapamieta, kiedy sie obudzi.
 
 		B_GiveInvItems	(self, hero, ItMw_UnconsciousKnueppel, 1);
 

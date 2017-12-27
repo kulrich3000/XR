@@ -1911,7 +1911,7 @@ FUNC VOID NEBENQUESTS()
 			};
 			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //Theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //teatry
 			};
 			if (Mod_REL_TheodorusS_Counter == 41)
 			{

@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Penner_Infos_Choices()
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Kto odpowiada glównie za zaopatrzenie w wode? (50 Zloto)", Info_Mod_Penner_Infos_D);
-		//Info_AddChoice	(Info_Mod_Penner_Infos, "Ile stoisk posiada targowisko Khorata? (50 Gold)", Info_Mod_Penner_Infos_C);
+		//Info_AddChoice	(Info_Mod_Penner_Infos, "Wie viele Stände hat der Marktplatz von Khorata? (50 Gold)", Info_Mod_Penner_Infos_C);
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Jaka byla nazwa straznika trzech szczurów? (50 Zloto)", Info_Mod_Penner_Infos_B);
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Gdzie moge znalezc aborcje? (50 Zloto)", Info_Mod_Penner_Infos_A);
 	};

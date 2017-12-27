@@ -11,8 +11,6 @@ INSTANCE Info_Mod_Nagur_Hi (C_INFO)
 FUNC INT Info_Mod_Nagur_Hi_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Daron_HabTrank))
-	|| (Mod_IstLehrling > 0)
-	|| (Npc_KnowsInfo(hero, Info_Mod_Ulf_WieGehts))
 	{
 		return 1;
 	};
@@ -27,10 +25,7 @@ FUNC VOID Info_Mod_Nagur_Hi_Info()
 	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_04"); //Gdyby cos sie z nim stalo, szczodrze wynagrodzilbym osobe, która przynosi mi zawartosc kieszeni.
 	AI_Output(self, hero, "Info_Mod_Nagur_Hi_37_05"); //To byloby ostrzezeniem dla innych, aby splacili swoje dlugi w czasie.
 
-	if (Npc_KnowsInfo(hero, Info_Mod_Daron_HabTrank))
-	{
-		B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Prawdopodobnie Akahasch jest w kierunku latarni morskiej. Wydaje sie, ze ma dlug. Nagur zyczy smierci i oferuje nagrode za zawartosc torebek.");
-	};
+	B_LogEntry	(TOPIC_MOD_ASS_AUFNAHME, "Prawdopodobnie Akahasch jest w kierunku latarni morskiej. Wydaje sie, ze ma dlug. Nagur zyczy smierci i oferuje nagrode za zawartosc torebek.");
 
 	Wld_InsertNpc	(Mod_4016_NOV_Akahasch_NW, "LIGHTHOUSE");
 };

@@ -93,7 +93,7 @@ FUNC VOID Info_Mod_Roscoe_Lernen_Info()
 	};
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_SNEAK) == FALSE)
 	{
-		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("bijatyka", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Roscoe_Lernen_Sneak);
+		Info_AddChoice		(Info_Mod_Roscoe_Lernen, B_BuildLearnString("Skradanie siê", B_GetLearnCostTalent(hero, NPC_TALENT_SNEAK, 1)), Info_Mod_Roscoe_Lernen_Sneak);
 	};
 };
 

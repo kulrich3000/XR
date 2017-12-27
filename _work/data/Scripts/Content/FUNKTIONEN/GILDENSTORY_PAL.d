@@ -767,7 +767,7 @@ FUNC VOID GILDENSTORY_PAL()
 
 			if (FI_Rede == 117)
 			{
-				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_21"); //Aber Wujek! Du hast gesagt du willst den Tod meines Vaters, deines Bruders rächen und uns den Schläfer wiedergeben!
+				AI_Output(Gidan_FI, NULL, "Info_Mod_FI_Rede_13_21"); //Ale wujek! Powiedziales, ze chcesz pomscic smierc mojego ojca, smierc twojego brata i oddac nam z powrotem spiacego!
 			};
 
 			if (FI_Rede == 122)

@@ -364,7 +364,7 @@ FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF6_Info()
 };
 
 //**********************************************************
-//sc ist PA -Czy nie ufasz mi, rycerzowi?
+//sc ist PA -Misstraust du mir, Ritter?
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmPAL   (C_INFO)
@@ -452,7 +452,7 @@ FUNC VOID DIA_Pal_213_Schiffswache_IAmPAL3_Info()
 };
 
 //**********************************************************
-//sc ist DJG -Czy nie istnieje cos, co mozesz zrobic?
+//sc ist DJG -Kann man da nichts machen?
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmDJG   (C_INFO)

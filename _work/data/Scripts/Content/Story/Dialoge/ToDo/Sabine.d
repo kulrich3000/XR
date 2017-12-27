@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_Sabine_Hi_Info()
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_03"); //Sprzedawca przypraw Royal!
 	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_04"); //I jakie przyprawy sa sprzedawane?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_05"); //Brak.
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Wieso heiﬂt du dann Handlarz Spice?
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Dlaczego wiec twoje nazwisko jest sprzedawca przypraw?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_07"); //Sprzedawca przypraw Royal!
 	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_08"); //... na gut. Warum heiﬂt du dann "rojalny sprzedawca przypraw korzennych"?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_09"); //Dzialam. I lubie przyprawy korzenne.

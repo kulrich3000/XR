@@ -112,6 +112,10 @@ FUNC VOID Info_Mod_Andokai_Hammer_Info()
 	B_Göttergefallen(3, 1);
 
 	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Za duza brama na placu Twierdzy Beliaran znajduje sie labirynt, który prowadzi do biblioteki. I musze znalezc droge.");
+	
+	if (!Npc_KnowsInfo(hero, Info_Mod_Gorax_Andokai)) {
+		B_SetTopicStatus(TOPIC_MOD_ANDOKAI_WEIN, LOG_FAILED);
+	};
 };
 
 INSTANCE Info_Mod_Andokai_WarInBib (C_INFO)

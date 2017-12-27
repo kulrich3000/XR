@@ -362,7 +362,6 @@ func void UseOTGeheimkammer01 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem czesc notatki, w której Cor Kalom zdaje sie pisac, jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebuje jeszcze dwóch czesci.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer02		(C_Item)
@@ -412,7 +411,6 @@ func void UseOTGeheimkammer02 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem czesc notatki, w której Cor Kalom zdaje sie pisac, jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebuje jeszcze dwóch czesci.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer03		(C_Item)
@@ -458,6 +456,7 @@ func void UseOTGeheimkammer03 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "... dwa razy, trzy razy wlasciwe. Potem lewy raz, prawy dwa razy, lewy dwa razy. I wreszcie wlasciwe (nieczytelne) oznaczenie. W przeciwleglym pokoju otwiera sie otwór, który teraz szybko uderzyles."					);
 					
 					Doc_Show		( nDocID );
@@ -470,7 +469,6 @@ func void UseOTGeheimkammer03 ()
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
 		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem czesc notatki, w której Cor Kalom zdaje sie pisac, jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebuje jeszcze dwóch czesci.");
 	};
-
 };
 
 INSTANCE ItWr_OTGeheimkammer04		(C_Item)
@@ -506,7 +504,195 @@ func void UseOTGeheimkammer04 ()
 					Doc_PrintLines	( nDocID,  0, "Bylem szybszy! Gez. M. A. D."					);
 					
 					Doc_Show		( nDocID );
+};
 
+INSTANCE ItWr_OTGeheimkammer05		(C_Item)
+{
+	name 				=	"Zettelteil 1 und 2";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer05;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Informacja o sekretnej izbie";
+	TEXT[1]				=	"Obere zwei Drittel";
+};
+
+func void UseOTGeheimkammer05 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_obenmitte.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, "Poniewaz skrecona kombinacja dwóch przelaczników nie wchodzi do twojej glowy, zapisalem ja tutaj. Nie zastanawiaj sie nawet nad tym, by nie przenosic calej nuty razem z Toba! Orkiestry nie musza wiedziec, gdzie przechowujemy nasze skarby. Podziel go na trzy czesci i tylko te, która trzymasz przy sobie - reszte, która ukryjesz i wyjdz z niej tylko wtedy, gdy jej potrzebujesz, czy rozumiesz?"					);
+					Doc_PrintLines	( nDocID,  0, "Otwierasz komore z dwoma przelacznikami ozdobionymi czaszkami. Znajdziesz je w prawym korytarzu dwóch korytarzy, które opuszczaja pokój z duza figura sypialni. Musisz uzyc dwóch przelaczników w kombinacji prawej: Najpierw lewy raz, nastepnie prawy raz, a nastepnie lewy raz...."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer06		(C_Item)
+{
+	name 				=	"Zettelteil 1 und 3";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer06;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Informacja o sekretnej izbie";
+	TEXT[1]				=	"Oberes und unteres Drittel";
+};
+
+func void UseOTGeheimkammer06 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_obenunten.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, "Poniewaz skrecona kombinacja dwóch przelaczników nie wchodzi do twojej glowy, zapisalem ja tutaj. Nie zastanawiaj sie nawet nad tym, by nie przenosic calej nuty razem z Toba! Orkiestry nie musza wiedziec, gdzie przechowujemy nasze skarby. Podziel go na trzy czesci i tylko te, która trzymasz przy sobie - reszte, która ukryjesz i wyjdz z niej tylko wtedy, gdy jej potrzebujesz, czy rozumiesz?"					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "... dwa razy, trzy razy wlasciwe. Potem lewy raz, prawy dwa razy, lewy dwa razy. I wreszcie wlasciwe (nieczytelne) oznaczenie. W przeciwleglym pokoju otwiera sie otwór, który teraz szybko uderzyles."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer07		(C_Item)
+{
+	name 				=	"Zettelteil 2 und 3";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer07;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Informacja o sekretnej izbie";
+	TEXT[1]				=	"Untere zwei Drittel";
+};
+
+func void UseOTGeheimkammer07 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_mitteunten.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLines	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "Otwierasz komore z dwoma przelacznikami ozdobionymi czaszkami. Znajdziesz je w prawym korytarzu dwóch korytarzy, które opuszczaja pokój z duza figura sypialni. Musisz uzyc dwóch przelaczników w kombinacji prawej: Najpierw lewy raz, nastepnie prawy raz, a nastepnie lewy raz...."					);
+					Doc_PrintLines	( nDocID,  0, "... dwa razy, trzy razy wlasciwe. Potem lewy raz, prawy dwa razy, lewy dwa razy. I wreszcie wlasciwe (nieczytelne) oznaczenie. W przeciwleglym pokoju otwiera sie otwór, który teraz szybko uderzyles."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+	};
+};
+
+INSTANCE ItWr_OTGeheimkammer08		(C_Item)
+{
+	name 				=	"chit";
+
+	mainflag 			=	ITEM_KAT_DOCS;
+	flags 				=	ITEM_MISSION|ITEM_SHOW;
+
+	value 				=	0;
+
+	visual 				=	"ItWr_Scroll_01.3DS";	//VARIATIONEN: ItWr_Scroll_01.3DS, ItWr_Scroll_02.3DS
+	material 			=	MAT_LEATHER;
+	on_state[0]			=   UseOTGeheimkammer08;
+	scemeName			=	"MAP";
+	description			= 	name;
+	TEXT[0]				=	"Informacja o sekretnej izbie";
+	TEXT[1]				=	"Komplett zusammengesetzt";
+};
+
+func void UseOTGeheimkammer08 ()
+{
+		var int nDocID;
+
+		nDocID = 	Doc_Create		()			  ;							// DocManager
+					Doc_SetPages	( nDocID,  1 	);                         //wieviel Pages
+					Doc_SetPage 	( nDocID,  0, "letters_complete.TGA"  , 0 		);
+					Doc_SetMargins	( nDocID, -1, 50, 20, 50, 50, 1   		);  //  0 -> margins are in pixels
+					Doc_SetFont 	( nDocID,  0, FONT_Handschrift		); 	// -1 -> all pages
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLines	( nDocID,  0, "Poniewaz skrecona kombinacja dwóch przelaczników nie wchodzi do twojej glowy, zapisalem ja tutaj. Nie zastanawiaj sie nawet nad tym, by nie przenosic calej nuty razem z Toba! Orkiestry nie musza wiedziec, gdzie przechowujemy nasze skarby. Podziel go na trzy czesci i tylko te, która trzymasz przy sobie - reszte, która ukryjesz i wyjdz z niej tylko wtedy, gdy jej potrzebujesz, czy rozumiesz?"					);
+					Doc_PrintLines	( nDocID,  0, "Otwierasz komore z dwoma przelacznikami ozdobionymi czaszkami. Znajdziesz je w prawym korytarzu dwóch korytarzy, które opuszczaja pokój z duza figura sypialni. Musisz uzyc dwóch przelaczników w kombinacji prawej: Najpierw lewy raz, nastepnie prawy raz, a nastepnie lewy raz...."					);
+					Doc_PrintLines	( nDocID,  0, "... dwa razy, trzy razy wlasciwe. Potem lewy raz, prawy dwa razy, lewy dwa razy. I wreszcie wlasciwe (nieczytelne) oznaczenie. W przeciwleglym pokoju otwiera sie otwór, który teraz szybko uderzyles."					);
+					
+					Doc_Show		( nDocID );
+
+	if (Mod_OT_Geheimkammer == 0)
+	{
+		Mod_OT_Geheimkammer = 1;
+
+		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
+		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe eine Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt.");
+	};
 };
 
 INSTANCE ItWr_Akahasch		(C_Item)

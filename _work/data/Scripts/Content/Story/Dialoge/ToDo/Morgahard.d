@@ -260,7 +260,7 @@ INSTANCE Info_Mod_Morgahard_Lernen_Schleichen (C_INFO)
 	information	= Info_Mod_Morgahard_Lernen_Schleichen_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= B_BuildLearnString("bijatyka", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString("Skradanie siê", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };
 
 FUNC INT Info_Mod_Morgahard_Lernen_Schleichen_Condition()

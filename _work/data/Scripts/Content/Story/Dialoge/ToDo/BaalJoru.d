@@ -134,7 +134,7 @@ FUNC VOID Info_Mod_Joru_Sumpfmensch3_Info()
 
 	TRIA_Next(Joru);
 	
-	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_07"); //Soso... Fakt ist, das Ding hat einen Namen, es heißt .... das heißt, ich kann nicht mehr Monster zu ihm sagen... Roger zu töten wäre eine bodenlose Gemeinheit... da gibt es nur ein Problem...
+	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_07"); //Sooso.... Faktem jest, ze ta rzecz ma nazwe, nazywa sie Roger.... co oznacza, ze nie moge juz go nazywac potworami...... Zabijanie Rogera byloby oczywistym znaczeniem.... jest tylko jeden problem.......
 	AI_Output(hero, self, "Info_Mod_Joru_Sumpfmensch3_15_08"); //Który z nich?
 	AI_Output(self, hero, "Info_Mod_Joru_Sumpfmensch3_07_09"); //Nie sadze, bysmy mieli próbe jego wielkosci.
 	

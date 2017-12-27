@@ -658,7 +658,7 @@ FUNC VOID Info_Mod_Eremit_ScrollJG_B()
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_02"); //Dostalismy tez czesc.
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_03"); //Mówi sie tutaj: Ralgnatiru chrenid.....
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_04"); //Przy okazji:"Wezcie te role, bryle rudy nieczystej, eliksir szybkosci, czesc zwierzecia lub agaryke muchowa, miazsz nieumarlych i dwie kosci szkieletowe.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_05"); //
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_05"); //Das füge man in der Opferschale zusammen. Sodann erscheint ein Gegenstand, der dir in Zeiten höchster Bedrängnis helfen wird."
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_06"); //Tarcza. Wywoluje to wiecej pytan niz odpowiedzi.
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_07"); //Przepraszam za to. Nie mozemy Ci tez pomóc.
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_08"); //Postawie na Ciebie. Tak wiec jestesmy nawet?

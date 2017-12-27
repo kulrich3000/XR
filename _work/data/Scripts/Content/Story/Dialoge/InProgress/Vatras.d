@@ -958,7 +958,7 @@ FUNC VOID Info_Mod_Vatras_BosperLehrling_Info()
 	{
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_04"); //Nie sadzisz, ze pomóglbym pomóc takiemu diabelskiemu wisiorkowi jak ty?
 		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_05"); //Nie jest to kwestia wiary. Bospalarnia jest przedmiotem wyrzutów sumienia.
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_06"); //(zweifelnd) Na ja, Tkaniny nie sa moja specjalnoscia.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_06"); //No cóz, nalewki nie sa moja specjalnoscia.
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_07"); //Móglbym ci sprzedac zaklecie zwrotne, w którym musialbys miec alchemika rozbijajacego sie na jego czesci skladowe.
 		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_08"); //Ile chcesz?
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_09"); //300 sztuk zlota. I nie ma negocjacji.

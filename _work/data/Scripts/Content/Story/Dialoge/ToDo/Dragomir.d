@@ -1038,7 +1038,7 @@ FUNC VOID Info_Mod_Dragomir_Leichengase_Info()
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Warum nicht gleich so? Dzieki.
+		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Dlaczego tak nie jest? Dzieki.
 		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_12"); //Co to jest ten gówno?
 		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_13"); //Dziekuje, ze nie moge sie pic w tawernie, zeby zapomniec o rozmowie, która wlasnie odbylismy.
 

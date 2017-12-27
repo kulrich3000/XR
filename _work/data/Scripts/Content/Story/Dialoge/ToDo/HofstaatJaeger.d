@@ -42,7 +42,7 @@ FUNC VOID Info_Mod_HofstaatJaeger_Hi_Info()
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_18"); //...
 	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_19"); //(humbing)
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_20"); //Co masz na mysli?
-	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_21"); //Er hat unbefristeten Wakacje.
+	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_21"); //Jest na urlopie stalym.
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_22"); //Potem zostal wypuszczony na wolnosc?
 	AI_Output(self, hero, "Info_Mod_HofstaatJaeger_Hi_09_23"); //Gdyby zostal zwolniony, trudno by mu bylo miec urlop.
 	AI_Output(hero, self, "Info_Mod_HofstaatJaeger_Hi_15_24"); //Och, zapomnij o tym.

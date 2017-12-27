@@ -598,7 +598,7 @@ FUNC VOID Info_Mod_Per_Pruefung4_E()
 		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_02"); //Niestety, nie udalo sie pan w tym najwazniejszym zadaniu, podobnie jak w przypadku dwóch poprzednich zadan.
 		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_03"); //Nigdy nie bedziesz prawdziwym magiem do szybkiej wymiany. Bardzo mi przykro, bo przeciez zrobiles dla nas, ale tak wlasnie mówia tradycje.
 		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_04"); //Nie mozna byc powaznym. Czyz nie ma innego sposobu, w jaki moge tu byc?
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Dieses Mal nicht. Es tut mir wirklich Leid. Idz do Genn, on bedzie teleportuje Cie z powrotem do Minental.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Nie tym razem. Bardzo mi przykro. Idz do Genn, on bedzie teleportuje Cie z powrotem do Minental.
 	}
 	else
 	{

@@ -303,8 +303,8 @@ FUNC VOID Info_Mod_Botschek_Ritualdolch3_Info()
 
 	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_03"); //Te znaki..... przypomina mi o pismach budowniczych...... tak.
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_04"); //Co? Mozna rozszyfrowac hieroglify?
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "którzy osmielaja sie wskoczyc do serca torfowiska."
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "którzy osmielaja sie wskoczyc do serca torfowiska."Ja ... einzelne Passagen. Da steht ... "dem Übermütigen, der es wagt, ins Herz des Moores vorzustoßen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //Die Klingen, die das Blut vergossen, um ewige Verdammnis über ..."
 	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_07"); //Dann kann ich nichts mehr entziffern ... aber doch, hier: "Musi jednak pokonac sluge tortur i smierci."
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_08"); //Amazing. Wszystko to jednak brzmi bardzo tajemniczo i mylaco.
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_09"); //Wyglada na to, ze zawiera ona wskazówki dotyczace przeszlych wydarzen.... o artefaktach i miejscu pobytu.

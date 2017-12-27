@@ -317,7 +317,7 @@ FUNC VOID Info_Mod_Dexter_AmulettBack_Info()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_28_05"); //Erstaunlich! Dir ist es wirklich gelungen. Damit hast du unserem Lager einen groﬂen Dienst erwiesen. Wykorzystaj to jako nagrode.
+		AI_Output(self, hero, "Info_Mod_Dexter_AmulettBack_28_05"); //Niesamowity! Naprawde sie udalo. Zrobiles wspaniala przysluge dla naszego obozu. Wykorzystaj to jako nagrode.
 
 		CreateInvItems	(hero, ItMi_Gold, 500);
 		CreateInvItems	(hero, ItMi_Nugget, 20);

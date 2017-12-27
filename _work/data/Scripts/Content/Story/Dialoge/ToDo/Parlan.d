@@ -52,8 +52,6 @@ FUNC VOID Info_Mod_Parlan_Aufgabe_Info()
 	
 	AI_Output(self, hero, "Info_Mod_Parlan_Aufgabe_05_03"); //Tak wlasnie jest. Wystarczy dla mnie, jesli zwiekszysz swoja magiczna moc o 30.
 
-	ParlanBisMana	=	hero.attribute[ATR_MANA_MAX];
-
 	B_LogEntry	(TOPIC_MOD_PARLAN_MANA, "Dla Parlana mam zwiekszyc moja mane o 30.");
 };
 
@@ -71,7 +69,7 @@ INSTANCE Info_Mod_Parlan_Aufgabe_Fertig (C_INFO)
 FUNC INT Info_Mod_Parlan_Aufgabe_Fertig_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Parlan_Aufgabe))
-	&& (hero.attribute[ATR_MANA_MAX] - ParlanBisMana >= 30)
+	&& (Mod_RealMana >= 40) // 30 learned mana + 10 base mana
 	{
 		return 1;
 	};

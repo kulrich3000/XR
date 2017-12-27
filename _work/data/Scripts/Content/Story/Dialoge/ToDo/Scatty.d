@@ -503,8 +503,8 @@ FUNC VOID Info_Mod_Scatty_Kap4_Info()
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_09"); //Tam próbowalem otworzyc brame z straza, a jednoczesnie trzeba bylo bronic sie przed niektórymi zielonymi dzbanami.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_10"); //Ostatnim wysilkiem udalo mi sie to.... ale pozostali dwaj chlopcy jednak ugryzli kurz.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_11"); //Kiedy biegalem na zewnatrz, zastanawialem sie, dokad pójsc.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hej, chlopaki z bagiennych skrybów zawsze pokazywali, z czego sa zrobione na arenie."
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hej, chlopaki z bagiennych skrybów zawsze pokazywali, z czego sa zrobione na arenie."Ich dachte mir: "Hey, die Jungs von den Sumpffritzen haben doch immer in der Arena gezeigt, aus welchem Holz sie geschnitzt sind.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //So einen wie mich können die bei den Templern bestimmt gut gebrauchen."
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_14"); //No cóz, co teraz? Moge czuwac nad nowicjuszami podczas zniwa.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_15"); //Naprawde nie wiem, co tu robie.....
 
