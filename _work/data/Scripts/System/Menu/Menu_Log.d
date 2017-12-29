@@ -39,7 +39,7 @@ const int LOG_ITEM_LIST_WIDTH	= 4500;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Aktuelle\nMissionen";
+	text[0]		=	"Bie¿¹ce\nMisje";
 	posx		=	LOG_ITEM_X1;
 	posy		=   	1500;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -53,7 +53,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Erfüllte\nMissionen";
+	text[0]		=	"Zakoñczone\nMisje";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	2500;
@@ -69,7 +69,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Gescheiterte\nMissionen";
+	text[0]		=	"Niezaliczone\nMisje";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	3500;
@@ -85,7 +85,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Allgemeine\nInfos";
+	text[0]		=	"Informacje\nOgólne";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	4500;
@@ -106,7 +106,7 @@ INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"Misje dzialania";
+	text[0]		= 	"Bie¿¹ce misje";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -146,7 +146,7 @@ instance MENU_ITEM_LIST_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"Stare misje";
+	text[0]		= 	"Niezaliczone misje";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -166,7 +166,7 @@ instance MENU_ITEM_LIST_MISSIONS_OLD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"protokól";
+	text[0]		= 	"Dziennik";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -189,7 +189,7 @@ instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"nie zawiera";
+	text[0]		=	"brak zawartoœci";
 	
 	posx		=	0;
 	posy		=   0;	
@@ -208,7 +208,7 @@ INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"doba";
+	text[0]		= 	"Dzieñ";
 	posx 		= 	1800; // see dimx of MENU_ITEM_DAY!!
 	posy		= 	6000;
 	fontName	=	LOG_FONT_DATETIME;
