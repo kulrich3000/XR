@@ -137,26 +137,26 @@ func void GFA_InitFeatureFreeAiming() {
     // Read INI Settings
     MEM_Info("Initializing entries in Gothic.ini.");
 
-    if (!MEM_GothOptExists("GFA", "freeAimingEnablSzczególy")) {
+    if (!MEM_GothOptExists("GFA", "freeAimingEnabled")) {
         // Add INI-entry, if not set
         MEM_SetGothOpt("GFA", "freeAimingEnabled", "1");
     };
 
-    if (!MEM_GothOptExists("GFA", "Uaktualnienia OSWIADCZEN OCENY")) {
+    if (!MEM_GothOptExists("GFA", "focusUpdateIntervalMS")) {
         // Add INI-entry, if not set (set to instantaneous=0ms by default)
         MEM_SetGothOpt("GFA", "focusUpdateIntervalMS", "0");
     };
 
     if (GOTHIC_BASE_VERSION == 2) {
         if (GFA_Flags & GFA_RANGED) {
-            if (!MEM_GothOptExists("GFA", "nadpisywanieZastapienieKontrolaSchemeRangAmeryka")) {
+            if (!MEM_GothOptExists("GFA", "overwriteControlSchemeRanged")) {
                 // Add INI-entry, if not set (disable override by default)
                 MEM_SetGothOpt("GFA", "overwriteControlSchemeRanged", "0");
             };
         };
 
         if (GFA_Flags & GFA_SPELLS) {
-            if (!MEM_GothOptExists("GFA", "overriteControlSchemeSchemeSells")) {
+            if (!MEM_GothOptExists("GFA", "overwriteControlSchemeSpells")) {
                 // Add INI-entry, if not set (disable override by default)
                 MEM_SetGothOpt("GFA", "overwriteControlSchemeSpells", "0");
             };
@@ -245,7 +245,7 @@ func int GFA_InitOnce() {
 
     // Copyright notice in zSpy
     var int s; s = SB_New();
-    SB("     "); SB(GFA_VERSION); SB("prawo autorskie "); SBc(169 /* (C) */); SB(" 2016-2017 @szapp)");
+    SB("     "); SB(GFA_VERSION); SB(", Copyright "); SBc(169 /* (C) */); SB(" 2016-2017  mud-freak (@szapp)");
     MEM_Info("");
     MEM_Info(SB_ToString()); SB_Destroy();
     MEM_Info("     <http://github.com/szapp/GothicFreeAim>");
@@ -254,8 +254,8 @@ func int GFA_InitOnce() {
     MEM_Info("");
 
     // Add emergency-lock, in case a mod-project is released with a critical bug related to GFA
-    if (MEM_ModOptExists("OVERRIDES", "GFA. blokada awaryjna")) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA Zamek awaryjny aktywny");
+    if (MEM_ModOptExists("OVERRIDES", "GFA.emergencyLock")) {
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA emergency lock active");
         MEM_Info("Remove GFA.emergencyLock override in Mod-INI to enable GFA.");
         return FALSE;
     };
@@ -282,17 +282,17 @@ func int GFA_InitOnce() {
 
     // Register console commands
     MEM_Info("Initializing console commands.");
-    CC_Register(GFA_GetVersion, "Wersja GFA", "w wersji drukowanej GFA wersja GFA");
-    CC_Register(GFA_GetLicense, "Licencja GFA", "drukowana licencja GFA");
-    CC_Register(GFA_GetInfo, "FFA.", "drukowac GFA konfigurowac informacje");
-    CC_Register(GFA_GetShootingStats, "Statystyki GFA", "statystyki fotografowania wydruków");
-    CC_Register(GFA_ResetShootingStats, "Resetowanie statystyk GFA", "resetowanie statystyk fotografowania");
+    CC_Register(GFA_GetVersion, "GFA version", "print GFA version info");
+    CC_Register(GFA_GetLicense, "GFA license", "print GFA license info");
+    CC_Register(GFA_GetInfo, "GFA info", "print GFA config info");
+    CC_Register(GFA_GetShootingStats, "GFA stats", "print shooting statistics");
+    CC_Register(GFA_ResetShootingStats, "GFA stats reset", "reset shooting statistics");
     if (GFA_DEBUG_CONSOLE) {
         // Enable console commands for debugging
-        CC_Register(GFA_DebugPrint, "debug zFA zSpyPy", "wlaczenie informacji o debugowaniu GFA w zSpy");
-        CC_Register(GFA_DebugTraceRay, "debug GFA znacznik GFA", "wlaczanie/wylaczanie debugowania wizyjnego");
-        CC_Register(GFA_DebugTrajectory, "debugowanie trajektorii GFA", "wlaczanie/wylaczanie debugowania wizyjnego");
-        CC_Register(GFA_DebugBone, "odkostniajac kosci ONB", "wlaczanie/wylaczanie debugowania wizyjnego");
+        CC_Register(GFA_DebugPrint, "debug GFA zSpy", "turn on GFA debug information in zSpy");
+        CC_Register(GFA_DebugTraceRay, "debug GFA traceray", "turn debug visualization on/off");
+        CC_Register(GFA_DebugTrajectory, "debug GFA trajectory", "turn debug visualization on/off");
+        CC_Register(GFA_DebugBone, "debug GFA bone", "turn debug visualization on/off");
     };
 
     // Successfully initialized

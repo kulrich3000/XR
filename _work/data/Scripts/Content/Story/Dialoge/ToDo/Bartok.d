@@ -443,7 +443,7 @@ FUNC VOID Info_Mod_Bartok_Stimme_B()
 	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_01"); //Po prostu powiedz Haradowi, zeby sie tym zajac.
 	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_02"); //Oto moje oszczednosci. Chce, zeby pomyslal o czyms przyzwoitym.
 
-	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
+	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
 	Log_CreateTopic	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_RUNNING);

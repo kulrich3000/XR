@@ -508,7 +508,7 @@ func void UseOTGeheimkammer04 ()
 
 INSTANCE ItWr_OTGeheimkammer05		(C_Item)
 {
-	name 				=	"Zettelteil 1 und 2";
+	name 				=	"";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -521,7 +521,7 @@ INSTANCE ItWr_OTGeheimkammer05		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"Obere zwei Drittel";
+	TEXT[1]				=	"";
 };
 
 func void UseOTGeheimkammer05 ()
@@ -544,13 +544,13 @@ func void UseOTGeheimkammer05 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
 	};
 };
 
 INSTANCE ItWr_OTGeheimkammer06		(C_Item)
 {
-	name 				=	"Zettelteil 1 und 3";
+	name 				=	"";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -563,7 +563,7 @@ INSTANCE ItWr_OTGeheimkammer06		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"Oberes und unteres Drittel";
+	TEXT[1]				=	"";
 };
 
 func void UseOTGeheimkammer06 ()
@@ -595,13 +595,13 @@ func void UseOTGeheimkammer06 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
 	};
 };
 
 INSTANCE ItWr_OTGeheimkammer07		(C_Item)
 {
-	name 				=	"Zettelteil 2 und 3";
+	name 				=	"";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -614,7 +614,7 @@ INSTANCE ItWr_OTGeheimkammer07		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"Untere zwei Drittel";
+	TEXT[1]				=	"";
 };
 
 func void UseOTGeheimkammer07 ()
@@ -647,7 +647,7 @@ func void UseOTGeheimkammer07 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe Teile einer Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt. Allerdings fehlt mir noch ein weiteres Teil, um das Rätsel lösen zu können.");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
 	};
 };
 
@@ -666,7 +666,7 @@ INSTANCE ItWr_OTGeheimkammer08		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"Komplett zusammengesetzt";
+	TEXT[1]				=	"";
 };
 
 func void UseOTGeheimkammer08 ()
@@ -691,7 +691,7 @@ func void UseOTGeheimkammer08 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Ich habe eine Notiz gefunden, auf der Cor Kalom anscheinend aufgeschrieben hat, wie man in eine versteckte Kammer gelangt.");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
 	};
 };
 

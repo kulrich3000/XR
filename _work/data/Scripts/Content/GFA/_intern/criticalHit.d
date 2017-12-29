@@ -55,7 +55,7 @@ func void GFA_CH_GetCriticalHit_(var C_Npc target, var int dmgMsgPtr) {
 
     // Verify damage behavior
     if (damage.behavior < DMG_NO_CHANGE) || (damage.behavior > DMG_BEHAVIOR_MAX) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_CH_GetCriticalHit_: Nieprawidlowe zachowanie podczas niszczenia!");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_GetCriticalHit_: Invalid damage behavior!");
         damage.behavior = DMG_NO_CHANGE;
     };
 
@@ -94,7 +94,7 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
     var zCVob npc; npc = _^(npcPtr);
     var int model; model = npc.visual;
     if (!objCheckInheritance(model, zCModel__classDef)) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: NPC visual nie jest modelem.");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: NPC visual is not a model");
         return;
     };
 
@@ -108,7 +108,7 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
         };
     end;
     if (nodeIdx == nodes.numInArray) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Wezel nie znaleziony w modelu NPC");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node not found in NPC model");
         return;
     };
 
@@ -134,7 +134,7 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
     // Check model for soft skin list
     var zCArray skins; skins = _^(model+zCModel_meshSoftSkinList_offset); // zCArray<zCMeshSoftSkin*>
     if (skins.numInArray <= 0) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Brak skóry miekkiej w modelu NPC");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: No soft skins in NPC model");
         return;
     };
 
@@ -155,14 +155,14 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
         };
     end;
     if (i == skins.numInArray) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Nie znaleziono wskaznika wezla w modelu skóra miekka.");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node index was not found in model soft skin");
         return;
     };
 
     // Obtain matching oriented bounding box from oriented bounding box list
     var zCArray nodeObbList; nodeObbList = _^(skin+zCMeshSoftSkin_nodeObbList_offset); // zCArray<zCOBBox3D*>
     if (nodeObbList.numInArray <= nodeIdxS) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Wskaznik wezla przewyzsza wskaznik miekkiej skóry skóry z lista OBBox.");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node index exceeds soft skin OBBox list");
         return;
     };
     var int obboxPtr; obboxPtr = MEM_ReadIntArray(nodeObbList.array, nodeIdxS);
@@ -249,7 +249,7 @@ func void GFA_CH_DetectCriticalHit() {
     // Adjust damage for damage behavior
     var string damageBehaviorStr; // Debug output on zSpy
     if (damage.behavior) && (protection == /*IMMUNE*/ -1) { // Gothic 2 only
-        damageBehaviorStr = "Odpornosc na uszkodzenia: Nie stosuje sie zachowania szkodliwego.";
+        damageBehaviorStr = "Target immune: Damage behavior not applied";
     } else if (damage.behavior) {
         var int baseDamage; baseDamage = roundf(damage.value);
 
@@ -270,20 +270,20 @@ func void GFA_CH_DetectCriticalHit() {
         // Manipulate final damage
         var int newFinalDamage; newFinalDamage = finalDamage;
         if (damage.behavior == DMG_DO_NOT_KNOCKOUT) {
-            damageBehaviorStr = "Normalne uszkodzenia, zapobiec wybijaniu (HP! = 1)";
+            damageBehaviorStr = "Normal damage, prevent knockout (HP != 1)";
             if (finalDamage == targetNpc.attribute[ATR_HITPOINTS]-1) {
                 newFinalDamage = targetNpc.attribute[ATR_HITPOINTS]; // Never 1 HP
             };
         } else if (damage.behavior == DMG_DO_NOT_KILL) {
-            damageBehaviorStr = "Normalne uszkodzenia, zapobiec zabiciu (HP > 0)";
+            damageBehaviorStr = "Normal damage, prevent kill (HP > 0)";
             if (finalDamage >= targetNpc.attribute[ATR_HITPOINTS]) {
                 newFinalDamage = targetNpc.attribute[ATR_HITPOINTS]-1; // Never 0 HP
             };
         } else if (damage.behavior == DMG_INSTANT_KNOCKOUT) {
-            damageBehaviorStr = "Natychmiastowe wyciecie (1 HP)";
+            damageBehaviorStr = "Instant knockout (1 HP)";
             newFinalDamage = targetNpc.attribute[ATR_HITPOINTS]-1; // 1 HP
         } else if (damage.behavior == DMG_INSTANT_KILL) {
-            damageBehaviorStr = "Natychmiastowe zabicie (0 HP)";
+            damageBehaviorStr = "Instant kill (0 HP)";
             newFinalDamage = targetNpc.attribute[ATR_HITPOINTS]; // 0 HP
         };
 
@@ -335,21 +335,21 @@ func void GFA_CH_DetectCriticalHit() {
         var int s; s = SB_New();
 
         if (damage.behavior) {
-            SB("   zachowania szkodliwego:   ");
+            SB("   damage behavior:   ");
             SB(damageBehaviorStr);
             MEM_Info(SB_ToString());
             SB_Clear();
         };
 
         var int newDamageInt; newDamageInt = roundf(damage.value);
-        SB("   uszkodzenie podstawy (n/nie): ");
+        SB("   base damage (n/o): ");
         SBi(newDamageInt);
         SB("/");
         SBi(roundf(MEM_ReadInt(damagePtr)));
         MEM_Info(SB_ToString());
         SB_Clear();
 
-        SB("   obrazenia ciala na celu:  ");
+        SB("   damage on target:  ");
         // Calculate damage by formula (incl. protection of target, etc.)
         if (GOTHIC_BASE_VERSION == 1) {
             SB("(");
@@ -363,7 +363,7 @@ func void GFA_CH_DetectCriticalHit() {
             };
             SBi(newDamageInt);
         } else {
-            SB("maks.");
+            SB("max[ (");
             SBi(newDamageInt);
             SB(" + ");
             SBi(hero.attribute[ATR_DEXTERITY]);
@@ -383,7 +383,7 @@ func void GFA_CH_DetectCriticalHit() {
         MEM_Info(SB_ToString());
         SB_Clear();
 
-        SB("   ");
+        SB("   hit model bone:    '");
         SB(GFA_HitModelNode);
         SB("'");
         MEM_Info(SB_ToString());

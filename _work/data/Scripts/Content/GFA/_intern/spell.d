@@ -212,8 +212,8 @@ func void GFA_SpellLockMovement() {
 
         var int spellInUse; spellInUse = GFA_InvestingOrCasting(hero);
         var int castKeyDownLastFrame; castKeyDownLastFrame = castKeyDown;
-        var int castKeyDown; castKeyDown = (MEM_KeyPressed(MEM_GetKey("klucz")))
-                                        || (MEM_KeyPressed(MEM_GetSecondaryKey("klucz")));
+        var int castKeyDown; castKeyDown = (MEM_KeyPressed(MEM_GetKey("keyAction")))
+                                        || (MEM_KeyPressed(MEM_GetSecondaryKey("keyAction")));
 
         // At aiming onset stop running/walking/sneaking animation
         if (castKeyDown) && (!castKeyDownLastFrame) && (!spellInUse) {

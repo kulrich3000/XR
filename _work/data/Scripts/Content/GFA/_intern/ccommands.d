@@ -28,9 +28,9 @@
 func string GFA_DebugPrint(var string _) {
     GFA_DEBUG_PRINT = !GFA_DEBUG_PRINT;
     if (GFA_DEBUG_PRINT) {
-        return "Wl.";
+        return "Debug outputs on.";
     } else {
-        return "Wyjscia debugowe wylaczone.";
+        return "Debug outputs off.";
     };
 };
 
@@ -59,12 +59,12 @@ func string GFA_DebugTraceRay(var string _) {
         ShowBBox(GFA_DebugTRTrj);
         ShowBBox(GFA_DebugTRBBox);
         ShowBBox(GFA_DebugTRBBoxVob);
-        return "Usun promienie sladowe.";
+        return "Debug trace ray on.";
     } else {
         HideBBox(GFA_DebugTRTrj);
         HideBBox(GFA_DebugTRBBox);
         HideBBox(GFA_DebugTRBBoxVob);
-        return "Odsysac promienie sladowe.";
+        return "Debug trace ray off.";
     };
 };
 
@@ -81,9 +81,9 @@ func string GFA_DebugTrajectory(var string _) {
     };
 
     if (LineVisible(GFA_DebugCollTrj)) {
-        return "Trajektoria obalania pocisków.";
+        return "Debug projectile trajectory on.";
     } else {
-        return "Wylaczyc trajektorie lotu.";
+        return "Debug projectile trajectory off.";
     };
 };
 
@@ -109,11 +109,11 @@ func string GFA_DebugBone(var string _) {
         if (!LineVisible(GFA_DebugCollTrj)) {
             var string s; s = GFA_DebugTrajectory("");
         };
-        return "Wizualizacja kosci.";
+        return "Bone visualization on.";
     } else {
         HideBBox(GFA_DebugBoneBBox);
         HideOBBox(GFA_DebugBoneOBBox);
-        return "Wizualizacja kosci.";
+        return "Bone visualization off.";
     };
 };
 
@@ -124,7 +124,7 @@ func string GFA_DebugBone(var string _) {
  */
 func string GFA_GetShootingStats(var string args) {
     if (!GFA_ACTIVE) || (!(GFA_Flags & GFA_RANGED)) {
-        return "Statystyki dotyczace wykonywania zdjec niedostepne. (Wymaga swobodnego celowania dla broni zakresowej)";
+        return "Shooting statistics not available. (Requires free aiming for ranged weapons)";
     };
 
     // Prevent execution if 'reset' command is called
@@ -133,15 +133,15 @@ func string GFA_GetShootingStats(var string args) {
     };
 
     var int s; s = SB_New();
-    SB("Calkowite wykonane zdjecia: ");
+    SB("Total shots taken: ");
     SBi(GFA_StatsShots);
     SBc(13); SBc(10);
 
-    SB("Strzaly na cel: ");
+    SB("Shots on target: ");
     SBi(GFA_StatsHits);
     SBc(13); SBc(10);
 
-    SB("Osobista dokladnosc: ");
+    SB("Personal accuracy: ");
     var int pAccuracy;
     if (!GFA_StatsShots) {
         // Division by zero
@@ -166,7 +166,7 @@ func string GFA_GetShootingStats(var string args) {
 func string GFA_ResetShootingStats(var string _) {
     GFA_StatsShots = 0;
     GFA_StatsHits = 0;
-    return "Resetowanie statystyk strzelan.";
+    return "Shooting statistics reset.";
 };
 
 
@@ -186,18 +186,18 @@ func string GFA_GetVersion(var string _) {
 func string GFA_GetLicense(var string _) {
     var int s; s = SB_New();
     SB(GFA_VERSION);
-    SB("prawo autorskie ");
+    SB(", Copyright ");
     SBc(169 /* (C) */);
-    SB(" 2016-2017 @szapp)");
+    SB(" 2016-2017  mud-freak (@szapp)");
     SBc(13); SBc(10);
 
-    SB("<http://github. com/szapp/GothFreeAim>>");
+    SB("<http://github.com/szapp/GothicFreeAim>");
     SBc(13); SBc(10);
 
-    SB("Wydane na podstawie Licencji MIT.");
+    SB("Released under the MIT License.");
     SBc(13); SBc(10);
 
-    SB("Wiecej informacji na stronie <http://opensource. org/licenses/MIT>.");
+    SB("For more details see <http://opensource.org/licenses/MIT>.");
 
     var string ret; ret = SB_ToString();
     SB_Destroy();
@@ -217,35 +217,35 @@ func string GFA_GetInfo(var string _) {
     SB(GFA_VERSION);
     SBc(13); SBc(10);
 
-    SB("Swobodne celowanie: ");
+    SB("Free aiming: ");
     SB(MEM_ReadStatStringArr(onOff, GFA_ACTIVE > 0));
     if (GFA_ACTIVE) {
-        SB(" przez");
+        SB(" for");
         if (GFA_Flags & GFA_RANGED) {
-            SB(" (zasieg)");
+            SB(" (ranged)");
         };
         if (GFA_Flags & GFA_SPELLS) {
-            SB(" zaklecia");
+            SB(" (spells)");
         };
 
-        SB(". Kraweznik: ");
+        SB(". Strafing: ");
         SB(MEM_ReadStatStringArr(onOff, GFA_STRAFING > 0));
 
-        SB(". Coroczna aktualizacja ostrosci ");
+        SB(". Focus update every ");
         SBi(GFA_AimRayInterval);
-        SB(" m");
+        SB(" ms");
     };
     SBc(13); SBc(10);
 
-    SB("pociski wielokrotnego uzytku: ");
+    SB("Reusable projectiles: ");
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_REUSE_PROJECTILES) > 0));
     SBc(13); SBc(10);
 
-    SB("Indywidualne zachowania podczas kolizji: ");
+    SB("Custom collision behaviors: ");
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_CUSTOM_COLLISIONS) > 0));
     SBc(13); SBc(10);
 
-    SB("Wykrywanie trafien krytycznych: ");
+    SB("Criticial hit detection: ");
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_CRITICALHITS) > 0));
 
     var string ret; ret = SB_ToString();

@@ -431,32 +431,32 @@ func void GFA_SetupProjectile() {
         MEM_Info("GFA_SetupProjectile:");
         var int s; s = SB_New();
 
-        SB("   odleglosc ustawienia:   ");
+        SB("   aiming distance:   ");
         SB(STR_Prefix(toStringf(divf(distPlayer, FLOAT1C)), 4));
         SB("m");
         MEM_Info(SB_ToString());
         SB_Clear();
 
-        SB("   sila naciagania:        ");
+        SB("   draw force:        ");
         SBi(drawForce);
         SB("%");
         MEM_Info(SB_ToString());
         SB_Clear();
 
         if (GFA_TRUE_HITCHANCE) {
-            SB("   dokladnosc:          ");
+            SB("   accuracy:          ");
             SBi(accuracy);
             SB("%");
             MEM_Info(SB_ToString());
             SB_Clear();
 
-            SB("   rozpraszanie:");
+            SB("   scatter:           (");
             SB(STR_Prefix(toStringf(angleX), 5));
             SBc(176 /* deg */);
             SB(", ");
             SB(STR_Prefix(toStringf(angleY), 5));
             SBc(176 /* deg */);
-            SB(") katy wzrokowe");
+            SB(") visual angles");
             MEM_Info(SB_ToString());
             SB_Clear();
         } else {
@@ -468,24 +468,24 @@ func void GFA_SetupProjectile() {
                 // In Gothic 2, the hit chance is the learned skill value (talent)
                 GFA_GetWeaponAndTalent(hero, 0, _@(hitchance));
             };
-            SB("   trafic szanse:        ");
+            SB("   hit chance:        ");
             SBi(hitchance);
-            SB("% (przypadek standardowego trafienia, wylaczenie rozpraszania)");
+            SB("% (standard hit chance, scattering disabled)");
             MEM_Info(SB_ToString());
             SB_Clear();
         };
 
-        SB("   przewracac:            ");
+        SB("   recoil:            ");
         SBi(recoil);
         SB("%");
         MEM_Info(SB_ToString());
         SB_Clear();
 
-        SB("   uszkodzenie podstawy:       ");
+        SB("   base damage:       ");
         SBi(newBaseDamage);
-        SB(" w ");
+        SB(" (of ");
         SBi(baseDamage);
-        SB(" normalne uszkodzenie podstawy)");
+        SB(" normal base damage)");
         MEM_Info(SB_ToString());
         SB_Destroy();
     };

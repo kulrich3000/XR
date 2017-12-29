@@ -58,7 +58,7 @@ func void GFA_TurnPlayerModel() {
     var oCNpc her; her = getPlayerInst();
     if (GFA_ACTIVE_CTRL_SCHEME == 2) {
         // Enabled turning when action key is down
-        if (!MEM_KeyPressed(MEM_GetKey("klucz"))) && (!MEM_KeyPressed(MEM_GetSecondaryKey("klucz"))) {
+        if (!MEM_KeyPressed(MEM_GetKey("keyAction"))) && (!MEM_KeyPressed(MEM_GetSecondaryKey("keyAction"))) {
             // Additional special case for spell combat: if action button already up, but spell is still being cast
             if (her.fmode == FMODE_MAGIC) {
                 if (!GFA_InvestingOrCasting(hero)) && (GFA_SpellPostCastDelay <= MEM_Timer.totalTime) {

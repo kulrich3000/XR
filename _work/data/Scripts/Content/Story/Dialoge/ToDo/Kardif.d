@@ -639,12 +639,12 @@ FUNC VOID Info_Mod_Kardif_NagurFrei3_Info()
 
 		AI_Output(self, hero, "Info_Mod_Kardif_NagurFrei3_14_16"); //... znalezc cos milego.
 
-		Mob_CreateItems	("CARDIFINITE", ItMi_Joint, r_max(9));
-		Mob_CreateItems	("CARDIFINITE", ItFo_Booze, r_max(9));
-		Mob_CreateItems	("CARDIFINITE", ItFo_Wine, r_max(9));
-		Mob_CreateItems	("CARDIFINITE", ItFo_Beer, r_max(9));
-		Mob_CreateItems	("CARDIFINITE", ItPo_Tiergift, r_max(3));
-		Mob_CreateItems	("CARDIFINITE", ItPo_Pflanzengift, r_max(3));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItMi_Joint, r_max(9));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Booze, r_max(9));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Wine, r_max(9));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItFo_Beer, r_max(9));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItPo_Tiergift, r_max(3));
+		Mob_CreateItems	("KARDIFINFOTRUHE", ItPo_Pflanzengift, r_max(3));
 
 		VobPositionUpdated(ptr);
 

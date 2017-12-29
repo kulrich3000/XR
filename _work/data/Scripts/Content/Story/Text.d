@@ -194,7 +194,7 @@ CONST STRING MOBNAME_Trinkfass		= "beczka";
 CONST STRING MOBNAME_SANTINOSTRUHE	= "Skrzynia Santino";
 CONST STRING MOBNAME_SOJA	= "soja";
 CONST STRING MOBNAME_PRISMA	= "graniastoslup";
-CONST STRING MOBNAME_NAGURVERSTECK	= "Nagurs Versteck";
+CONST STRING MOBNAME_NAGURVERSTECK	= "Kryjówka Nagura";
 
 // XR - Ladenschilder
 
@@ -1253,7 +1253,7 @@ const string DIALOG_ADDON_ATTENTAT_CONTRA 			= "Szukam tych facetów, którzy pode
 const string DIALOG_ADDON_MINE_DESCRIPTION			= "Jestes potrzebny w kopalni. (podac czerwony kamien czerwony)";
 const string DIALOG_ADDON_GOLD_DESCRIPTION			= "Co musze wiedziec o hakerstwie na zloto?";
 const string PRINT_ADDON_KNOWSBF					= "Wiedza na temat zadla trucizny nauczyla sie";	
-const string PRINT_ADDON_HACKCHANCE					= "Wieksza znajomosc zlota! (+ ";		
+const string PRINT_ADDON_HACKCHANCE					= " ";		
 const string PRINT_ADDON_STUNTBONUS					= "Bonus Stunt";
 const string PRINT_ADDON_EXPLOITBONUS				= "Wykorzystanie Malus";	
 	

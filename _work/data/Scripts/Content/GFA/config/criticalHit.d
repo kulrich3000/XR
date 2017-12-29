@@ -84,7 +84,7 @@ func void GFA_GetCriticalHit(var C_Npc target, var string bone, var C_Item weapo
             // Gothic 1: Only allow critical hit, if the total damage would still not cause damage:
             // (damage * 2 < protection of target)
             if (roundf(damage.value)*2 < damage.protection) {
-                damage.info = "Krytyczne trafienie nie przekroczyloby poziomu ochrony"; // Debugging info for zSpy
+                damage.info = "Critical hit would not exceed protection"; // Debugging info for zSpy
                 return;
             };
 
@@ -96,11 +96,11 @@ func void GFA_GetCriticalHit(var C_Npc target, var string bone, var C_Item weapo
             if (GOTHIC_BASE_VERSION == 1) {
                 if (!talent) {
                     // With no learned skill level, there are no critical hits (just like in the original Gothic 1)
-                    damage.info = "Nieznane jeszcze trafienia krytyczne, szansa na trafienie krytyczne = 0% (patrz menu znaków)";
+                    damage.info = "Critical hits not yet learned, critical hit chance = 0% (see character menu)";
                     return;
                 } else if (talent < 25) {
                     // Stage 1: Only 50% of the positive hits are in fact critical
-                    damage.info = "Zdarzenie krytycznego trafienia pierwszego stopnia (menu znaków), ustawione na 50-50-krotne trafienie.";
+                    damage.info = "First level critical hit chance (character menu), adjusted to 50-50 chance";
                     if (Hlp_Random(100) < 50) { // Approx. 50-50 chance
                         return;
                     };
@@ -116,7 +116,7 @@ func void GFA_GetCriticalHit(var C_Npc target, var string bone, var C_Item weapo
             // (damage + dexterity > point protection of target), Gothic 2 always takes point damage for projectiles!
             if (roundf(damage.value)+hero.attribute[ATR_DEXTERITY] < damage.protection)
             || (damage.protection == /*IMMUNE*/ -1) {
-                damage.info = "Uszkodzenia nie przekraczaja poziomu ochrony";
+                damage.info = "Damage does not exceed protection";
                 return;
             };
 
@@ -125,7 +125,7 @@ func void GFA_GetCriticalHit(var C_Npc target, var string bone, var C_Item weapo
                 var C_Item armor; armor = Npc_GetEquippedArmor(target);
                 if (armor.material == MAT_METAL)    // Armor is made out of metal
                 && (!Npc_CanSeeNpc(target, hero)) { // Target is not facing the player (helmets do not cover the face)
-                    damage.info = "Cel NPC chroniony helmem";
+                    damage.info = "Target NPC protected by helmet";
                     return;
                 };
             };

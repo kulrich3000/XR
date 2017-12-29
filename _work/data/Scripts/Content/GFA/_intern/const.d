@@ -29,7 +29,7 @@
 
 /* Initialization */
 
-const string GFA_VERSION            = "Gotycki Cel Wolny 1. 0. O-beta. 22";
+const string GFA_VERSION            = "Gothic Free Aim v1.0.0-beta.22";
 const int    GFA_LEGO_FLAGS         = LeGo_HookEngine       // For initializing all hooks
                                     | LeGo_FrameFunctions   // For projectile gravity
                                     | LeGo_ConsoleCommands  // For console commands and debugging
@@ -72,7 +72,7 @@ const int    GFA_RETICLE_MAX_SIZE   = 64;                   // Biggest reticle s
 var   int    GFA_ReticleHndl;                               // Handle of the reticle
 var   int    GFA_AimVobHasFX;                               // For performance: check whether FX needs to be removed
 
-const string GFA_CAMERA             = "CamododGFA";          // CCamSys_Def script instance
+const string GFA_CAMERA             = "CamModGFA";          // CCamSys_Def script instance
 
 const float  GFA_FOCUS_FAR_NPC      = 15.0;                 // NPC azimuth for ranged focus for free aiming
 const float  GFA_FOCUS_SPL_NPC      = 15.0;                 // NPC azimuth for spell focus for free aiming

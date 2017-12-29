@@ -179,9 +179,9 @@ func void GFA_IsActive() {
     // Set aiming key depending on control scheme to either action or blocking key
     var String keyAiming;
     if (GFA_ACTIVE_CTRL_SCHEME == 1) {
-        keyAiming = "klucz";
+        keyAiming = "keyAction";
     } else {
-        keyAiming = "keyParada";
+        keyAiming = "keyParade";
     };
 
     // Check if aiming buttons are held

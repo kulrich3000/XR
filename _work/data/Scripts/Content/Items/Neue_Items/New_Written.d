@@ -969,6 +969,8 @@ INSTANCE Mod_ConstantinosZutatenliste (C_ITEM)
 	TEXT[2]		=	"Skladniki te sa potrzebne do nowego napoju";
 };
 
+var int ConstantinoZutatenInLog;
+
 FUNC VOID Use_ConstantinosZutatenliste()
 {
 	var int nDocID;
@@ -986,9 +988,11 @@ FUNC VOID Use_ConstantinosZutatenliste()
 		Doc_PrintLine	( nDocID, 0, "Kregoslup krwi (1x)");
 		Doc_Show	( nDocID );
 
-	if (Mod_MinecrawlerEi	==	0)
-	{
-		Mod_MinecrawlerEi	=	1;
+	if (!ConstantinoZutatenInLog && !Npc_KnowsInfo(hero, Info_Mod_Constantino_Stimme)) {
+		if (Mod_MinecrawlerEi == 0) {
+			Mod_MinecrawlerEi	=	1;
+		};
+		ConstantinoZutatenInLog = TRUE;
 
 		B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Konstantino potrzebuje: 2x silny minecrawler-secret, 1x podwójny kregoslup, 4x ziele bagna i 1x krwi mucha kregoslupa.");
 	};

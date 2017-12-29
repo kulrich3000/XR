@@ -62,7 +62,7 @@ FUNC VOID Info_Mod_Esteban_NW_Gerbrandt_Info()
 
 	B_LogEntry	(TOPIC_MOD_AL_MORGAHARD, "Esteban powiedzial, ze Diego moze mi pomóc.");
 
-	Mob_CreateItems	("WOODCHIP", ItWr_AL_GebrandtDokumente, 1);
+	Mob_CreateItems	("GERBRANDTSTRUHE", ItWr_AL_GebrandtDokumente, 1);
 };
 
 INSTANCE Info_Mod_Esteban_NW_MorgahardDarfWieder (C_INFO)

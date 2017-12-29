@@ -973,7 +973,7 @@ FUNC VOID Info_Mod_Constantino_PaketZauberwasser_Nein()
 
 	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Odmawialem zaplaty za zloto. Musze znalezc inny sposób, aby dostac magiczna wode.");
 
-	Mob_CreateItems("DORMANCY", ItMi_Zauberwasser, 1);
+	Mob_CreateItems("CONSTANTINOSTRUHE", ItMi_Zauberwasser, 1);
 
 	Mod_ConstantinoZauberwasser = 2;
 
@@ -1022,7 +1022,7 @@ FUNC VOID Info_Mod_Constantino_PaketZauberwasser_NotEnough()
 
 	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "Odmawialem zaplaty za zloto. Musze znalezc inny sposób, aby dostac magiczna wode.");
 
-	Mob_CreateItems("DORMANCY", ItMi_Zauberwasser, 1);
+	Mob_CreateItems("CONSTANTINOSTRUHE", ItMi_Zauberwasser, 1);
 
 	Mod_ConstantinoZauberwasser = 2;
 

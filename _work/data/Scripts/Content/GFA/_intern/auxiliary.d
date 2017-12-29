@@ -145,7 +145,7 @@ func int GFA_InvestingOrCasting(var C_Npc npc) {
     // Casting or failing (check by active animations)
     var int model; model = npcOC._zCVob_visual;
     if (!objCheckInheritance(model, zCModel__classDef)) {
-        MEM_Warn("GFA_InvestingOrCasting: NPC nie posiada zadnego modelu wizualnego.");
+        MEM_Warn("GFA_InvestingOrCasting: NPC has no model visual.");
         return FALSE;
     };
 
@@ -240,7 +240,7 @@ func int GFA_GetWeaponAndTalent(var C_Npc slf, var int weaponPtr, var int talent
     } else if (Npc_HasEquippedRangedWeapon(slf)) {
         weapon = Npc_GetEquippedRangedWeapon(slf);
     } else {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_GetWeaponAndTalent: Brak waznej broni wyposazonej/czytanej!");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_GetWeaponAndTalent: No valid weapon equipped/readied!");
         weapon = MEM_NullToInst();
         error = 1;
     };
@@ -257,7 +257,7 @@ func int GFA_GetWeaponAndTalent(var C_Npc slf, var int weaponPtr, var int talent
             } else if (weapon.flags & ITEM_CROSSBOW) {
                 talent = NPC_TALENT_CROSSBOW;
             } else {
-                MEM_SendToSpy(zERR_TYPE_WARN, "GFA_GetWeaponAndTalent: Brak waznej broni wyposazonej/czytanej!");
+                MEM_SendToSpy(zERR_TYPE_WARN, "GFA_GetWeaponAndTalent: No valid weapon equipped/readied!");
                 error = 1;
             };
 
