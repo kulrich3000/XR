@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I'd like to join the shadow.";
+	description = "I'd like to join the Shadows.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -69,7 +69,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Who's the boss here?";
+	description = "Who's the boss round here?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -93,7 +93,7 @@ INSTANCE Info_Stt_12_DasLager(C_INFO)
 	condition	= Info_Stt_12_DasLager_Condition;
 	information	= Info_Stt_12_DasLager_Info;
 	permanent	= 1;
-	description = "I want to know what's available here at the camp.";
+	description = "I want to know what this camp has to offer.";
 };                       
 
 FUNC INT Info_Stt_12_DasLager_Condition()
@@ -117,7 +117,7 @@ INSTANCE Info_Stt_12_DieLage(C_INFO) // E1
 	condition	= Info_Stt_12_DieLage_Condition;
 	information	= Info_Stt_12_DieLage_Info;
 	permanent	= 1;
-	description = "What's the score?";
+	description = "Well, how's it going?";
 };                       
 
 FUNC INT Info_Stt_12_DieLage_Condition()

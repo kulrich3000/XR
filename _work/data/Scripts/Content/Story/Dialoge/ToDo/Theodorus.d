@@ -39,7 +39,7 @@ FUNC VOID Info_Mod_Theodorus_Hi_A()
 	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_00"); //Dangers of what kind?
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_01"); //You'll know that for sure! Or why do you want to go there? Of course you know about giver of joy!
 	AI_Output(hero, self, "Info_Mod_Theodorus_Hi_A_15_02"); //What's so dangerous about that?
-	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //(nachäffend) What's so dangerous about that? Es macht aus starken Männern sabbernde Spirituelle. DAS ist daran gefährlich.
+	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_03"); //What's so dangerous about that? It turns strong men into drooling spirits. That's dangerous.
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_04"); //I have heard of a monotheistic religion based solely on the use of this drug.
 	AI_Output(self, hero, "Info_Mod_Theodorus_Hi_A_09_05"); //Do you also want to insult the gods in this way? (Pause) I could tell you a lot about what decent men have done under the influence of joyful donors...
 	

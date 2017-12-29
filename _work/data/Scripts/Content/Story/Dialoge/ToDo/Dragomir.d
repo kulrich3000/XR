@@ -1038,7 +1038,7 @@ FUNC VOID Info_Mod_Dragomir_Leichengase_Info()
 	}
 	else
 	{
-		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Warum nicht gleich so? Thanks.
+		AI_Output(hero, self, "Info_Mod_Dragomir_Leichengase_15_11"); //Why not just like that? Thanks.
 		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_12"); //What the fuck is this shit?
 		AI_Output(self, hero, "Info_Mod_Dragomir_Leichengase_12_13"); //With a thank you, I can't get drunk in the tavern to forget the conversation we just had.
 

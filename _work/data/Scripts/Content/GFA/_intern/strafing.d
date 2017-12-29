@@ -246,8 +246,8 @@ func void GFA_Strafe() {
 
     mFront = FALSE; // Only set for Gothic 2 controls, see below
     mBack  = (MEM_KeyPressed(MEM_GetKey("keyDown")))        || (MEM_KeyPressed(MEM_GetSecondaryKey("keyDown")));
-    mLeft  = (MEM_KeyPressed(MEM_GetKey("keyPunishment")))  || (MEM_KeyPressed(MEM_GetSecondaryKey("keyPunishment")));
-    mRight = (MEM_KeyPressed(MEM_GetKey("keyPunishmentRight"))) || (MEM_KeyPressed(MEM_GetSecondaryKey("keyPunishmentRight")));
+    mLeft  = (MEM_KeyPressed(MEM_GetKey("keyStrafeLeft")))  || (MEM_KeyPressed(MEM_GetSecondaryKey("keyStrafeLeft")));
+    mRight = (MEM_KeyPressed(MEM_GetKey("keyStrafeRight"))) || (MEM_KeyPressed(MEM_GetSecondaryKey("keyStrafeRight")));
 
     // Allow forward movement only when using Gothic 2 controls while investing or casting a spell (or ranged combat)
     if (GFA_ACTIVE_CTRL_SCHEME == 2) {
@@ -283,7 +283,7 @@ func void GFA_Strafe() {
         } else if (her.fmode == FMODE_FAR+1) {
             modifier = "CBOW";
         } else {
-            MEM_Warn("GFA_Strafe: Spieler nicht im gültigen Zielkampfmodus.");
+            MEM_Warn("GFA_Strafe: Player not in valid aiming fight mode.");
             movement = 0;
             modifier = "";
         };

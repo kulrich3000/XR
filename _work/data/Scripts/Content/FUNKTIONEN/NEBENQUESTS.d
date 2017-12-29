@@ -1855,7 +1855,7 @@ FUNC VOID NEBENQUESTS()
 		{
 			if (Npc_KnowsInfo(hero, Info_Mod_Wendel_Unruhen2))
 			&& (Npc_KnowsInfo(hero, Info_Mod_Lukas_Unruhen3))
-			&& (Npc_KnowsInfo(hero, Info_Mod_theodorus_Unruhen3))
+			&& (Npc_KnowsInfo(hero, Info_Mod_Theodorus_Unruhen3))
 			{
 				Mod_REL_Kandidat = 1;
 
@@ -1863,12 +1863,12 @@ FUNC VOID NEBENQUESTS()
 			};
 		};
 
-		if (Mod_REL_theodorusS == 0)
+		if (Mod_REL_TheodorusS == 0)
 		&& (Npc_GetDistToWP(hero, "REL_CITY_107") < 500)
 		&& (Mod_REL_Stadthalter == 1)
-		&& (Npc_HasItems(hero, ItWr_theodorusBotschaft) == 1)
+		&& (Npc_HasItems(hero, ItWr_TheodorusBotschaft) == 1)
 		{
-			Mod_REL_theodorusS = 1;
+			Mod_REL_TheodorusS = 1;
 
 			AI_GotoWP	(hero, "REL_CITY_107");
 
@@ -1879,43 +1879,43 @@ FUNC VOID NEBENQUESTS()
 			CutsceneAn = TRUE;
 		};
 
-		if (Mod_REL_theodorusS == 1)
+		if (Mod_REL_TheodorusS == 1)
 		{
-			if (Mod_REL_theodorusS_Counter == 1)
+			if (Mod_REL_TheodorusS_Counter == 1)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_00"); //Announcement in the name of theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_00"); //Announcement in the name of Theodorus
 			};
-			if (Mod_REL_theodorusS_Counter == 6)
+			if (Mod_REL_TheodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_01"); //Citizens of Khoratas, I, the new governor, hereby inform you of any changes in the miners' strike that will take effect immediately.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_01"); //Citizens of Khoratas, I, the new governor, hereby inform you of any changes in the miners' strike that will take effect immediately.
 			};
-			if (Mod_REL_theodorusS_Counter == 11)
+			if (Mod_REL_TheodorusS_Counter == 11)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_02"); //The complaints they have rightly made are subject to detailed examination;
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_02"); //The complaints they have rightly made are subject to detailed examination;
 			};
-			if (Mod_REL_theodorusS_Counter == 16)
+			if (Mod_REL_TheodorusS_Counter == 16)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_03"); //only then will I decide whether to resume work in the mine under new conditions.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_03"); //only then will I decide whether to resume work in the mine under new conditions.
 			};
-			if (Mod_REL_theodorusS_Counter == 21)
+			if (Mod_REL_TheodorusS_Counter == 21)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_04"); //The deaths to date are tragic, but I will find a way to compensate the families affected.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_04"); //The deaths to date are tragic, but I will find a way to compensate the families affected.
 			};
-			if (Mod_REL_theodorusS_Counter == 26)
+			if (Mod_REL_TheodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_05"); //I implore you not to let the miners feel your possibly pent-up anger.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_05"); //I implore you not to let the miners feel your possibly pent-up anger.
 			};
-			if (Mod_REL_theodorusS_Counter == 31)
+			if (Mod_REL_TheodorusS_Counter == 31)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_06"); //Respectfully,
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_06"); //Respectfully,
 			};
-			if (Mod_REL_theodorusS_Counter == 36)
+			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusBotschaft_15_07"); //theodorus
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusBotschaft_15_07"); //theodorus
 			};
-			if (Mod_REL_theodorusS_Counter == 41)
+			if (Mod_REL_TheodorusS_Counter == 41)
 			{
-				Mod_REL_theodorusS = 2;
+				Mod_REL_TheodorusS = 2;
 
 				CutsceneAn = FALSE;
 
@@ -1927,7 +1927,7 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7516_OUT_Lukas_REL,	"THEODORUS");
 				AI_Teleport	(Mod_7516_OUT_Lukas_REL,	"REL_CITY_106");
 
-				// theodorus' Versammlung vor Stadttor
+				// Theodorus' Versammlung vor Stadttor
 
 				B_StartOtherRoutine	(Mod_7620_OUT_Wache_REL, "THEODORUS");
 				B_StartOtherRoutine	(Mod_7621_OUT_Wache_REL, "THEODORUS");
@@ -1942,13 +1942,13 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine	(Mod_7619_OUT_Frazer_REL, "THEODORUS");
 			};
 
-			Mod_REL_theodorusS_Counter += 1;
+			Mod_REL_TheodorusS_Counter += 1;
 		};
 
-		if (Mod_REL_theodorusS == 2)
+		if (Mod_REL_TheodorusS == 2)
 		&& (Npc_GetDistToWP(hero, "REL_CITY_398") < 500)
 		{
-			Mod_REL_theodorusS = 3;
+			Mod_REL_TheodorusS = 3;
 
 			CutsceneAn = TRUE;
 
@@ -1956,68 +1956,68 @@ FUNC VOID NEBENQUESTS()
 
 			Wld_SendTrigger	("EVT_CAMERA_THEODORUS_TORFIGHT");
 
-			Mod_REL_theodorusS_Counter = 0;
+			Mod_REL_TheodorusS_Counter = 0;
 		};
 
-		if (Mod_REL_theodorusS == 3)
+		if (Mod_REL_TheodorusS == 3)
 		{
-			if (Mod_REL_theodorusS_Counter == 1)
+			if (Mod_REL_TheodorusS_Counter == 1)
 			{
-				AI_TurnToNpc	(Mod_7382_OUT_theodorus_REL, hero);
+				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, hero);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, hero);
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
-				AI_TurnToNpc	(hero, Mod_7382_OUT_theodorus_REL);
+				AI_TurnToNpc	(hero, Mod_7382_OUT_Theodorus_REL);
 
-				AI_Output(Mod_7382_OUT_theodorus_REL, NULL, "Info_Mod_Hero_theodorusTor_09_00"); //Do you have one last time? We're here about a little problem.
+				AI_Output(Mod_7382_OUT_Theodorus_REL, NULL, "Info_Mod_Hero_TheodorusTor_09_00"); //Do you have one last time? We're here about a little problem.
 			};
-			if (Mod_REL_theodorusS_Counter == 6)
+			if (Mod_REL_TheodorusS_Counter == 6)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusTor_15_01"); //What's this about?
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_01"); //What's this about?
 			};
-			if (Mod_REL_theodorusS_Counter == 11)
+			if (Mod_REL_TheodorusS_Counter == 11)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_theodorusTor_13_02"); //(mumbles) Anselm still seems to live in the brains of certain people...
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_02"); //(mumbles) Anselm still seems to live in the brains of certain people...
 			};
-			if (Mod_REL_theodorusS_Counter == 16)
+			if (Mod_REL_TheodorusS_Counter == 16)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, Mod_7385_OUT_August_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_03"); //Shut up! Shut up!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_03"); //Shut up! Shut up!
 			};
-			if (Mod_REL_theodorusS_Counter == 21)
+			if (Mod_REL_TheodorusS_Counter == 21)
 			{
 				AI_TurnToNpc	(Mod_7620_OUT_Wache_REL, hero);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_04"); //I'm warning you, don't interfere.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_04"); //I'm warning you, don't interfere.
 			};
-			if (Mod_REL_theodorusS_Counter == 26)
+			if (Mod_REL_TheodorusS_Counter == 26)
 			{
-				AI_Output(hero, NULL, "Info_Mod_Hero_theodorusTor_15_05"); //It almost sounds like an invitation.
+				AI_Output(hero, NULL, "Info_Mod_Hero_TheodorusTor_15_05"); //It almost sounds like an invitation.
 			};
-			if (Mod_REL_theodorusS_Counter == 31)
+			if (Mod_REL_TheodorusS_Counter == 31)
 			{
 				AI_ReadyMeleeWeapon	(Mod_7620_OUT_Wache_REL);
-				AI_TurnToNpc	(Mod_7382_OUT_theodorus_REL, Mod_7620_OUT_Wache_REL);
+				AI_TurnToNpc	(Mod_7382_OUT_Theodorus_REL, Mod_7620_OUT_Wache_REL);
 				AI_TurnToNpc	(Mod_7385_OUT_August_REL, Mod_7620_OUT_Wache_REL);
 
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_06"); //You don't want to understand, do you? Get the fuck out of our town, you wimps, or I'll throw you in the mouth.
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_06"); //You don't want to understand, do you? Get the fuck out of our town, you wimps, or I'll throw you in the mouth.
 			};
-			if (Mod_REL_theodorusS_Counter == 36)
+			if (Mod_REL_TheodorusS_Counter == 36)
 			{
-				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_theodorusTor_13_07"); //You're hopelessly outnumbered.
+				AI_Output(Mod_7385_OUT_August_REL, NULL, "Info_Mod_Hero_TheodorusTor_13_07"); //You're hopelessly outnumbered.
 			};
-			if (Mod_REL_theodorusS_Counter == 41)
+			if (Mod_REL_TheodorusS_Counter == 41)
 			{
-				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_theodorusTor_07_08"); //(laughs gloatingly) That's what we want to see. Let's show the traitors who's master of the house!
+				AI_Output(Mod_7620_OUT_Wache_REL, NULL, "Info_Mod_Hero_TheodorusTor_07_08"); //(laughs gloatingly) That's what we want to see. Let's show the traitors who's master of the house!
 
 				B_StartOtherRoutine	(Mod_7375_OUT_Gerichtswache_02, "STADTTOR");
 				AI_Teleport	(Mod_7375_OUT_Gerichtswache_02, Mod_7375_OUT_Gerichtswache_02.wp);
 				B_StartOtherRoutine	(Mod_7374_OUT_Gerichtswache_01, "STADTTOR");
 				AI_Teleport	(Mod_7374_OUT_Gerichtswache_01, Mod_7374_OUT_Gerichtswache_01.wp);
 			};
-			if (Mod_REL_theodorusS_Counter == 46)
+			if (Mod_REL_TheodorusS_Counter == 46)
 			{
-				Mod_REL_theodorusS = 4;
+				Mod_REL_TheodorusS = 4;
 
 				CutsceneAn = FALSE;
 
@@ -2032,7 +2032,7 @@ FUNC VOID NEBENQUESTS()
 				Npc_SetTrueGuild	(Mod_7375_OUT_Gerichtswache_02, GIL_STRF);
 			};
 
-			Mod_REL_theodorusS_Counter += 1;
+			Mod_REL_TheodorusS_Counter += 1;
 		};
 
 		if (Mod_REL_WendelS == 2)

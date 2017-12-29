@@ -97,7 +97,7 @@ INSTANCE Info_grd_7_DasLager(C_INFO)
 	condition	= Info_grd_7_DasLager_Condition;
 	information	= Info_grd_7_DasLager_Info;
 	permanent	= 1;
-	description = "Do all the people here work for the ore barons?";
+	description = "Do all the people here work for Gomez?";
 };                       
 
 FUNC INT Info_grd_7_DasLager_Condition()
@@ -116,9 +116,9 @@ FUNC VOID Info_grd_7_DasLager_Info()
 	AI_Output(self,hero,"Info_grd_7_DasLager_07_02"); //Only we guardsmen and the shadows are Thorus' people.
 	Info_ClearChoices(Info_grd_7_DasLager);
 	Info_AddChoice(Info_grd_7_DasLager, "BACK", Info_grd_7_DasLager_Zurueck);
-	Info_AddChoice(Info_grd_7_DasLager, "What are the guards doing?", Info_grd_7_DasLager_Gardisten);
-	Info_AddChoice(Info_grd_7_DasLager, "What is the task of the shadows?", Info_grd_7_DasLager_Schatten);
-	Info_AddChoice(Info_grd_7_DasLager, "What are the Buddlers for?", Info_grd_7_DasLager_Buddler);
+	Info_AddChoice(Info_grd_7_DasLager, "What do the guards do?", Info_grd_7_DasLager_Gardisten);
+	Info_AddChoice(Info_grd_7_DasLager, "What do the Shadows do?", Info_grd_7_DasLager_Schatten);
+	Info_AddChoice(Info_grd_7_DasLager, "What do the diggers do?", Info_grd_7_DasLager_Buddler);
 };
 
 FUNC VOID Info_grd_7_DasLager_ZURUECK()

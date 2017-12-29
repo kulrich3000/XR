@@ -973,7 +973,7 @@ FUNC VOID Info_Mod_Constantino_PaketZauberwasser_Nein()
 
 	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I refused to pay for the gold. I have to find another way to get the magic water.");
 
-	Mob_CreateItems("DORMANCY", ItMi_Zauberwasser, 1);
+	Mob_CreateItems("CONSTANTINOSTRUHE", ItMi_Zauberwasser, 1);
 
 	Mod_ConstantinoZauberwasser = 2;
 
@@ -1022,7 +1022,7 @@ FUNC VOID Info_Mod_Constantino_PaketZauberwasser_NotEnough()
 
 	B_LogEntry	(TOPIC_MOD_SEKTE_AUFNAHME, "I refused to pay for the gold. I have to find another way to get the magic water.");
 
-	Mob_CreateItems("DORMANCY", ItMi_Zauberwasser, 1);
+	Mob_CreateItems("CONSTANTINOSTRUHE", ItMi_Zauberwasser, 1);
 
 	Mod_ConstantinoZauberwasser = 2;
 
@@ -1608,7 +1608,7 @@ FUNC VOID Info_Mod_Constantino_Lehrer_Info()
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Constantino_Lehrer, B_BuildLearnString ("Drink of fast healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Constantino_Lehrer_Health_05);
+		Info_AddChoice	  (Info_Mod_Constantino_Lehrer, B_BuildLearnString ("Potion of Quick Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Constantino_Lehrer_Health_05);
 	};
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)

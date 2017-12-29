@@ -275,7 +275,7 @@ FUNC VOID Info_Mod_Zelar_Heiltrank_Info()
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) >= 1)
 	{
-		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Drink of fast healing", Info_Mod_Zelar_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Zelar_Heiltrank, "Potion of Quick Healing", Info_Mod_Zelar_Heiltrank_Health_05);
 	};
 };
 

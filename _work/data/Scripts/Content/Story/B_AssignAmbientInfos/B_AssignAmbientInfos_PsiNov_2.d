@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_2_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I want to join you guys.";
+	description = "I want to join you.";
 };                       
 
 FUNC INT Info_PsiNov_2_EinerVonEuchWerden_Condition()
@@ -94,7 +94,7 @@ INSTANCE Info_PsiNov_2_DasLager(C_INFO)
 	condition	= Info_PsiNov_2_DasLager_Condition;
 	information	= Info_PsiNov_2_DasLager_Info;
 	permanent	= 1;
-	description = "What's important to know about this place?";
+	description = "What should I know about this place?";
 };                       
 
 FUNC INT Info_PsiNov_2_DasLager_Condition()

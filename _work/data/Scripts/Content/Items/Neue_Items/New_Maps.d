@@ -14,12 +14,12 @@ INSTANCE ItWrFocimap(C_Item)
 	on_state[0]				=	UseFocimap;
 
 	description				= name;
-	TEXT[0]					= "The peaks of the pentagram mark the ";
-	TEXT[1]					= "Locations of all five focus stones that were found at that time at";
-	TEXT[2]					= "the creation of the magic barrier";
-	TEXT[3]					= "were used. The map is old and the";
-	TEXT[4]					= "Stones could meanwhile be";
-	TEXT[5]					= "lie elsewhere";
+	TEXT[0]					= "The tips of the pentagram ";
+	TEXT[1]					= "reveal the locations of all five";
+	TEXT[2]					= "focus stones which were used to create";
+	TEXT[3]					= "the Magic Barrier. The map is old";
+	TEXT[4]					= "and the stones might have been moved to";
+	TEXT[5]					= "other places since.";
 };
 
 FUNC VOID UseFocimap()
@@ -51,7 +51,7 @@ INSTANCE ItWrTemplemap(C_Item)
 	scemeName			=	"MAP";
 	on_state[0]			=	UseTemplemap;
 
-	description			= "Sketch of the temple";
+	description			= "Sketch of the Temple";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
@@ -86,8 +86,8 @@ INSTANCE ItWrWorldmap(C_Item)
 	on_state[0]				=	UseWorldmap;
 
 	description				= name;
-	TEXT[0]					= "Unfortunately, there is no large area on it.";
-	TEXT[1]					= "in the southwest.";
+	TEXT[0]					= "Unfortunately, a big territory in the";
+	TEXT[1]					= "southwest is missing.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -198,7 +198,7 @@ INSTANCE ItWrOCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOCmap;
 
-	description				= "Overview Old warehouse";
+	description				= "Overview Old Camp";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -233,7 +233,7 @@ INSTANCE ItWrNCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseNCmap;
 
-	description				= "Overview New warehouse";
+	description				= "Overview New Camp";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -303,9 +303,9 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseWorldmap_Orc;
 
-	description				= "Map of the colony (added)";
-	TEXT[0]					= "The original shak of the Orc Shaman has the";
-	TEXT[1]					= "Orcish area marked!";
+	description				= "Map of the Colony (supplemented)";
+	TEXT[0]					= "Ur-Shak, the Orc shaman, has sketched in";
+	TEXT[1]					= "the Orc territory!";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };

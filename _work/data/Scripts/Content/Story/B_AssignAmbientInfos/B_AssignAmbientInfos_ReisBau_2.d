@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_2_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_2_WichtigePersonen_Condition;
 	information	= Info_ReisBau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Are you volunteering on the rice fields?";
+	description = "Are you working in the rice fields voluntarily?";
 };                       
 
 FUNC INT Info_ReisBau_2_WichtigePersonen_Condition()

@@ -35,7 +35,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportSeaport) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportSeaport, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportSeaport, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportSeaport, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -43,7 +43,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportMonastery) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportMonastery, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportMonastery, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportMonastery, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -51,7 +51,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPatBack) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPatBack, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPatBack, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPatBack, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -59,7 +59,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -67,7 +67,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_01) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat_01, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat_01, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat_01, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -75,7 +75,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_Pat_02) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_Pat_02, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_Pat_02, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_Pat_02, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -83,7 +83,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportFarm) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportFarm, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportFarm, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportFarm, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -91,7 +91,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportXardas) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportXardas, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportXardas, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportXardas, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -99,7 +99,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPassNW) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPassNW, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPassNW, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPassNW, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -107,7 +107,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPassOW) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPassOW, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPassOW, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPassOW, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -115,7 +115,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOC) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOC, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOC, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOC, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -123,7 +123,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOWDemonTower) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOWDemonTower, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOWDemonTower, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOWDemonTower, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -131,7 +131,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportTaverne) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportTaverne, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportTaverne, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportTaverne, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportDemonTower) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportDemonTower, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportDemonTower, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportDemonTower, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -147,7 +147,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportPsicamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportPsicamp, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportPsicamp, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportPsicamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -155,7 +155,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportOldcamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportOldcamp, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportOldcamp, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportOldcamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};
@@ -163,7 +163,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_TeleportNewcamp) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_TeleportNewcamp, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_TeleportNewcamp, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportNewcamp, 1);
 
 		Mod_HeroHasRune += 1;
 	};

@@ -127,7 +127,7 @@ INSTANCE Info_SFB_5_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_5_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "What if I want to get involved?";
+	description = "What if I want to join you?";
 };                       
 
 FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
@@ -180,7 +180,7 @@ INSTANCE Info_SFB_5_DasLager(C_INFO)
 	condition	= Info_SFB_5_DasLager_Condition;
 	information	= Info_SFB_5_DasLager_Info;
 	permanent	= 1;
-	description = "What's in the camp?";
+	description = "What does the Camp have to offer?";
 };                       
 
 FUNC INT Info_SFB_5_DasLager_Condition()
@@ -204,7 +204,7 @@ INSTANCE Info_SFB_5_DieLage(C_INFO)
 	condition	= Info_SFB_5_DieLage_Condition;
 	information	= Info_SFB_5_DieLage_Info;
 	permanent	= 1;
-	description = "How's life here?";
+	description = "What's life like here?";
 };                       
 
 FUNC INT Info_SFB_5_DieLage_Condition()

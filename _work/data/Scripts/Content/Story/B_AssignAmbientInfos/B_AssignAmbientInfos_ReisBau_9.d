@@ -37,7 +37,7 @@ INSTANCE Info_ReisBau_9_WichtigePersonen(C_INFO)
 	condition	= Info_ReisBau_9_WichtigePersonen_Condition;
 	information	= Info_ReisBau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Who's going to make sure everything goes smoothly in the fields?";
+	description = "Whose job is it to make sure everything goes according to plan in the fields?";
 };                       
 
 FUNC INT Info_ReisBau_9_WichtigePersonen_Condition()

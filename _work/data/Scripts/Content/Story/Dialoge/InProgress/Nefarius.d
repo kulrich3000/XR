@@ -132,7 +132,7 @@ FUNC VOID Info_Mod_Nefarius_VierErbauer_Info()
 
 	Wld_InsertItem	(ItMi_Ornament_Totenwaechter,	"FP_ITEM_ORNAMENT_TOTENWAECHTER");
 
-	Mob_CreateItems	("ONAR CREAM CHEST", ItMi_Ornament_Krieger, 1);
+	Mob_CreateItems	("ONARSAHNENTRUHE", ItMi_Ornament_Krieger, 1);
 
 	B_StartOtherRoutine	(Mod_763_NONE_Gaan_NW, "ORNAMENT");
 };

@@ -37,7 +37,7 @@ INSTANCE Info_FM_SFB_10_EinerVonEuchWerden (C_INFO)
 	condition	= Info_FM_SFB_10_EinerVonEuchWerden_Condition;
 	information	= Info_FM_SFB_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "How can I join the Association of prospectors?";
+	description = "How do I join the league of scrapers?";
 };                       
 
 FUNC INT Info_FM_SFB_10_EinerVonEuchWerden_Condition()
@@ -87,7 +87,7 @@ INSTANCE Info_FM_SFB_10_DasLager(C_INFO)
 	condition	= Info_FM_SFB_10_DasLager_Condition;
 	information	= Info_FM_SFB_10_DasLager_Info;
 	permanent	= 1;
-	description = "What is this place?";
+	description = "What is this?";
 };                       
 
 FUNC INT Info_FM_SFB_10_DasLager_Condition()

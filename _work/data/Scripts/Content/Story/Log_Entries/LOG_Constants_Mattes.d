@@ -98,7 +98,7 @@ const string    Topic_GoraxWein 			=	"The wine delivery.";
 const string    Topic_MardukBeten 			=	"A prayer for the paladin.";
 
 //---------Sonstiges -----------------------------
-const string	Topic_OpolosRezept			=	"Opolos and the recipe";
+const string	Topic_OpolosRezept			=	"Opolos and the Recipe";
 const string	Topic_BaboTrain				=	"Combat training for Babo.";
 const string	Topic_KarrasCharm			=	"A walk into town.";
 
@@ -120,22 +120,22 @@ const string	Topic_KlosterTeacher		=	"Teacher in the monastery.";
 
 //---------Söldner----------------------------------
 const string	TOPIC_BecomeSLD				=	"Recording with the mercenaries."; 
-const string	TOPIC_TorlofPacht			=	"collect rent";
-const string	TOPIC_TorlofMiliz			=	"distribute militia";
+const string	TOPIC_TorlofPacht			=	"Collect the Rent";
+const string	TOPIC_TorlofMiliz			=	"Drive away the Militia";
 const string	TOPIC_SLDRespekt			=	"Respect for mercenaries.";  
  
 const string 	TOPIC_JarvisSLDKo			=	"Yours sincerely.";  
 const string 	TOPIC_CordProve				=	"Kampfkunst";   
 const string 	Topic_CipherHerb			=	"For a few stems of cabbage.";    
-const string 	Topic_CipherPaket			=	"The herb package";    
-const string 	Topic_RodWette				=	"Rod's sword";    
-const string 	TOPIC_FesterRauber			=	"The Field Robbers";   
+const string 	Topic_CipherPaket			=	"The Weed Package";    
+const string 	Topic_RodWette				=	"Rod's Sword";    
+const string 	TOPIC_FesterRauber			=	"The Field Raiders";   
 const string 	TOPIC_TheklaEintopf			=	"Eintopf";    
-const string 	TOPIC_SagittaHerb			=	"The Sonnenaloe";    
+const string 	TOPIC_SagittaHerb			=	"The Sun Aloe";    
 const string 	TOPIC_PepeWolves			=	"Four wolves for Pepe.";    
 const string 	TOPIC_KickBullco			=	"On the mouth"; 
  
-const string 	TOPIC_Frieden				=	"The peace offering";  
+const string 	TOPIC_Frieden				=	"An Offer of Peace";  
  
 //const string 	TOPIC_WolfJob				=	"Wolf";  
 
@@ -145,12 +145,12 @@ const string 	TOPIC_Frieden				=	"The peace offering";
 
 //-------------------------------------------------------------------------------------
 
-const string	TOPIC_MISOLDWORLD			=	"proof";
-const string	TOPIC_ScoutMine				=	"Diggers and ore";
+const string	TOPIC_MISOLDWORLD			=	"Evidence";
+const string	TOPIC_ScoutMine				=	"Diggers and Ore";
 
 const string	Topic_MarcosJungs			=	"Support for Marcos.";
 const string	TOPIC_RescueGorn			=	"The liberation of Gorn.";
-const string	TOPIC_FajethKillSnapper		=	"snapper hunt";
+const string	TOPIC_FajethKillSnapper		=	"Snapper Hunt";
 const string	TOPIC_BringMeat				=	"Meat.";
 const string	TopicBrutusKasse			=	"Gold for Brutus.";
 
@@ -159,8 +159,8 @@ const string	Topic_OricBruder			=	"Bad news.";
 
 const string	TOPIC_BilgotEscort			=	"Bilgot? s getaway.";
 
-const string	TOPIC_Botschaft				=	"The message";
-const string	TOPIC_Lutero				=	"snapper claws";
+const string	TOPIC_Botschaft				=	"The Message";
+const string	TOPIC_Lutero				=	"Snappers' Claws";
 const string	TOPIC_Fernando				=	"Fernando's business.";
 
 //-------------------------------------------------------------------------------------
@@ -168,6 +168,6 @@ const string	TOPIC_PyrokarClearDemonTower	 = "Return to the tower.";
 const string	TOPIC_HyglasBringBook			 = "Power of the stars.";
 
 const string	Topic_BabosDocs		 			 = "Documents.";
-const string	TOPIC_Wolf_BringCrawlerPlates	 = "The crawler armor";
+const string	TOPIC_Wolf_BringCrawlerPlates	 = "The Crawler Armor";
 const string	TOPIC_HelpDiegoNW		 		 = "Diego's gold.";
 const string	TOPIC_DiegosResidence		 	 = "Diego's business.";

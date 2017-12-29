@@ -13,8 +13,8 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	description				=	name;
 	TEXT[0]					=	"These eggs have been harvested";
 	TEXT[1]					=	"Minecrawler queen.";
-	TEXT[2]					=	"They contain a much stronger secretion";
-	TEXT[3]					=	"than the pliers of normal minecrawlers.";
+	TEXT[2]					=	"They contain a far stronger secretion than";
+	TEXT[3]					=	"a normal minecrawler's mandibles.";
 	TEXT[4]					=	"The secretion can be bottled at alchemy tables.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };

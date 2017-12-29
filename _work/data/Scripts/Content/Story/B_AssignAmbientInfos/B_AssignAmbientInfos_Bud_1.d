@@ -37,7 +37,7 @@ INSTANCE Info_Bud_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_1_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "How will I be accepted in this camp?";
+	description = "How can I join this camp?";
 };                       
 
 FUNC INT Info_Bud_1_EinerVonEuchWerden_Condition()
@@ -90,7 +90,7 @@ INSTANCE Info_Bud_1_DasLager(C_INFO)
 	condition	= Info_Bud_1_DasLager_Condition;
 	information	= Info_Bud_1_DasLager_Info;
 	permanent	= 1;
-	description = "Is there anything more interesting than huts?";
+	description = "Is there anything more interesting than huts to see?";
 };                       
 
 FUNC INT Info_Bud_1_DasLager_Condition()

@@ -94,7 +94,7 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
     var zCVob npc; npc = _^(npcPtr);
     var int model; model = npc.visual;
     if (!objCheckInheritance(model, zCModel__classDef)) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: NPC Visual ist kein Modell");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: NPC visual is not a model");
         return;
     };
 
@@ -108,7 +108,7 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
         };
     end;
     if (nodeIdx == nodes.numInArray) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Knoten im NPC-Modell nicht gefunden");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node not found in NPC model");
         return;
     };
 
@@ -155,14 +155,14 @@ func void GFA_CH_VisualizeModelNode(var int npcPtr, var string nodeName) {
         };
     end;
     if (i == skins.numInArray) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Knotenindex wurde in der Modell-Soft-Skin nicht gefunden.");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node index was not found in model soft skin");
         return;
     };
 
     // Obtain matching oriented bounding box from oriented bounding box list
     var zCArray nodeObbList; nodeObbList = _^(skin+zCMeshSoftSkin_nodeObbList_offset); // zCArray<zCOBBox3D*>
     if (nodeObbList.numInArray <= nodeIdxS) {
-        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Knotenindex überschreitet Soft Skin OBBox-Liste");
+        MEM_SendToSpy(zERR_TYPE_WARN, "GFA_CH_VisualizeModelNode: Node index exceeds soft skin OBBox list");
         return;
     };
     var int obboxPtr; obboxPtr = MEM_ReadIntArray(nodeObbList.array, nodeIdxS);
@@ -249,7 +249,7 @@ func void GFA_CH_DetectCriticalHit() {
     // Adjust damage for damage behavior
     var string damageBehaviorStr; // Debug output on zSpy
     if (damage.behavior) && (protection == /*IMMUNE*/ -1) { // Gothic 2 only
-        damageBehaviorStr = "Zielimmunität: Schadensverhalten nicht angewandt";
+        damageBehaviorStr = "Target immune: Damage behavior not applied";
     } else if (damage.behavior) {
         var int baseDamage; baseDamage = roundf(damage.value);
 
@@ -270,7 +270,7 @@ func void GFA_CH_DetectCriticalHit() {
         // Manipulate final damage
         var int newFinalDamage; newFinalDamage = finalDamage;
         if (damage.behavior == DMG_DO_NOT_KNOCKOUT) {
-            damageBehaviorStr = "Normal damage, prevent knockout (HP! = 1)";
+            damageBehaviorStr = "Normal damage, prevent knockout (HP != 1)";
             if (finalDamage == targetNpc.attribute[ATR_HITPOINTS]-1) {
                 newFinalDamage = targetNpc.attribute[ATR_HITPOINTS]; // Never 1 HP
             };
@@ -383,7 +383,7 @@ func void GFA_CH_DetectCriticalHit() {
         MEM_Info(SB_ToString());
         SB_Clear();
 
-        SB("   ");
+        SB("   hit model bone:    '");
         SB(GFA_HitModelNode);
         SB("'");
         MEM_Info(SB_ToString());

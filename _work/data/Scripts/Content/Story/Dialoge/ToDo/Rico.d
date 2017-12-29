@@ -79,7 +79,7 @@ FUNC VOID Info_Mod_Rico_Hi_E()
 
 	Info_ClearChoices	(Info_Mod_Rico_Hi);
 
-	Info_AddChoice	(Info_Mod_Rico_Hi, "What's this about?", Info_Mod_Rico_Hi_G);
+	Info_AddChoice	(Info_Mod_Rico_Hi, "What's up?", Info_Mod_Rico_Hi_G);
 	Info_AddChoice	(Info_Mod_Rico_Hi, "I'd rather not.", Info_Mod_Rico_Hi_F);
 };
 

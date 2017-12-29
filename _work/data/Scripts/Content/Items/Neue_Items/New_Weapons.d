@@ -21,11 +21,11 @@ INSTANCE Weltenspalter (C_Item)
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
 	TEXT[0]				=	"This was the sword of the undead";
-	TEXT[1]				=	"Orc-Priest Varrag Hashor.";
-	TEXT[2]				=	"The weapon has been used over the years";
-	TEXT[3]				=	"become useless!";
-	TEXT[4]				=	"Perhaps the sword is still open";
-	TEXT[5]				=	"in another way.";
+	TEXT[1]				=	"Orc priest Varrag-Hashor.";
+	TEXT[2]				=	"The weapon has become useless in";
+	TEXT[3]				=	"the course of time!";
+	TEXT[4]				=	"Maybe the sword can be used";
+	TEXT[5]				=	"in some other way.";
 };
 
 //---------------------------------------------------------------------
@@ -49,11 +49,11 @@ INSTANCE Lichtbringer (C_Item)
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
 	TEXT[0]				=	"This was the sword of the undead";
-	TEXT[1]				=	"Orc-Priest Varrag-Kasorg.";
-	TEXT[2]				=	"The weapon has been used over the years";
-	TEXT[3]				=	"become useless!";
-	TEXT[4]				=	"Perhaps the sword is still open";
-	TEXT[5]				=	"in another way.";
+	TEXT[1]				=	"Orc priest Varrag-Kasorg.";
+	TEXT[2]				=	"The weapon has become useless in";
+	TEXT[3]				=	"the course of time!";
+	TEXT[4]				=	"Maybe the sword can be used";
+	TEXT[5]				=	"in some other way.";
 };
 
 //---------------------------------------------------------------------
@@ -81,11 +81,11 @@ INSTANCE Zeitenklinge (C_Item)
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
 	TEXT[0]				=	"This was the sword of the undead";
-	TEXT[1]				=	"Orc-Priest Varrag-Unhilqt.";
-	TEXT[2]				=	"The weapon has been used over the years";
-	TEXT[3]				=	"become useless!";
-	TEXT[4]				=	"Perhaps the sword is still open";
-	TEXT[5]				=	"in another way.";
+	TEXT[1]				=	"Orc priest Varrag-Unhilqt.";
+	TEXT[2]				=	"The weapon has become useless in";
+	TEXT[3]				=	"the course of time!";
+	TEXT[4]				=	"Maybe the sword can be used";
+	TEXT[5]				=	"in some other way.";
 };
 
 func void Equip_Zeitenklinge()
@@ -120,11 +120,11 @@ INSTANCE Daemonenstreich (C_Item)
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
 	TEXT[0]				=	"This was the sword of the undead";
-	TEXT[1]				=	"Orc-Priest Varrag-Ruuushk.";
-	TEXT[2]				=	"The weapon has been used over the years";
-	TEXT[3]				=	"become useless!";
-	TEXT[4]				=	"Perhaps the sword is still open";
-	TEXT[5]				=	"in another way.";
+	TEXT[1]				=	"Orc priest Varrag-Ruuushk.";
+	TEXT[2]				=	"The weapon has become useless in";
+	TEXT[3]				=	"the course of time!";
+	TEXT[4]				=	"Maybe the sword can be used";
+	TEXT[5]				=	"in some other way.";
 };
 
 //---------------------------------------------------------------------
@@ -148,11 +148,11 @@ INSTANCE Bannklinge (C_Item)
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
 	TEXT[0]				=	"This was the sword of the undead";
-	TEXT[1]				=	"Orc High Priest Grash Varrag Arushat.";
-	TEXT[2]				=	"The weapon has been used over the years";
-	TEXT[3]				=	"become useless!";
-	TEXT[4]				=	"Perhaps the sword is still open";
-	TEXT[5]				=	"in another way.";
+	TEXT[1]				=	"high Orc priest Grash-Varrag-Arushat.";
+	TEXT[2]				=	"The weapon has become useless in";
+	TEXT[3]				=	"the course of time!";
+	TEXT[4]				=	"Maybe the sword can be used";
+	TEXT[5]				=	"in some other way.";
 };
 
 INSTANCE ItMw_Ritualdolch_Versengen (C_Item)

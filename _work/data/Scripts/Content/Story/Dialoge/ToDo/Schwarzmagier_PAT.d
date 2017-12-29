@@ -98,7 +98,7 @@ FUNC VOID Info_Mod_Schwarzmagier_PAT_Heiltrank_Info()
 
 	{
 
-		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Drink of fast healing", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_05);
+		Info_AddChoice	(Info_Mod_Schwarzmagier_PAT_Heiltrank, "Potion of Quick Healing", Info_Mod_Schwarzmagier_PAT_Heiltrank_Health_05);
 
 	};
 

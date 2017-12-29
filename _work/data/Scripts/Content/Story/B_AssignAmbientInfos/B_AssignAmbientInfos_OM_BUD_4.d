@@ -62,7 +62,7 @@ INSTANCE Info_OM_BUD_4_WichtigePersonen(C_INFO)
 	condition	= Info_OM_BUD_4_WichtigePersonen_Condition;
 	information	= Info_OM_BUD_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Who's got a say in this?";
+	description = "Who's in charge here?";
 };                       
 
 FUNC INT Info_OM_BUD_4_WichtigePersonen_Condition()

@@ -303,7 +303,7 @@ INSTANCE Info_Mod_Brahim_PortSuchenWo (C_INFO)
 	information	= Info_Mod_Brahim_PortSuchenWo_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Where should I look?";
+	description	= "Where shall I begin to search?";
 };
 
 FUNC INT Info_Mod_Brahim_PortSuchenWo_Condition()

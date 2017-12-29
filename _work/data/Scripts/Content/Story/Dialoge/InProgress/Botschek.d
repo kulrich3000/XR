@@ -303,8 +303,8 @@ FUNC VOID Info_Mod_Botschek_Ritualdolch3_Info()
 
 	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_03"); //These characters.... reminds me of the writings of the builders.... yes.
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_04"); //What?! You can decipher the hieroglyphs?
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "who dares to venture into the heart of the moor."
-	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_05"); //Ja ... einzelne Passagen. Da steht ... "who dares to venture into the heart of the moor."Ja ... einzelne Passagen. Da steht ... "dem Übermütigen, der es wagt, ins Herz des Moores vorzustoßen.
+	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_06"); //Die Klingen, die das Blut vergossen, um ewige Verdammnis über ..."
 	AI_Output(hero, self, "Info_Mod_Botschek_Ritualdolch3_15_07"); //Dann kann ich nichts mehr entziffern ... aber doch, hier: "However, he must overcome the servant of torture and death."
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_08"); //Amazing. However, all this sounds very mysterious and confusing.
 	AI_Output(self, hero, "Info_Mod_Botschek_Ritualdolch3_16_09"); //It seems to contain hints about past events... about artifacts and whereabouts.

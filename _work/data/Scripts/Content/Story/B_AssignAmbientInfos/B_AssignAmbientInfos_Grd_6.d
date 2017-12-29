@@ -37,7 +37,7 @@ INSTANCE Info_Grd_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Grd_6_EinerVonEuchWerden_Condition;
 	information	= Info_Grd_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I want to be a guardsman.";
+	description = "I want to join the guards.";
 };                       
 
 FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
@@ -91,7 +91,7 @@ INSTANCE Info_Grd_6_DasLager(C_INFO)
 	condition	= Info_Grd_6_DasLager_Condition;
 	information	= Info_Grd_6_DasLager_Info;
 	permanent	= 1;
-	description = "I'm new here. What's going on?";
+	description = "I'm new here. How's things?";
 };                       
 
 FUNC INT Info_Grd_6_DasLager_Condition()
@@ -111,7 +111,7 @@ FUNC VOID Info_Grd_6_DasLager_Info()
 	AI_Output(self,hero,"Info_Grd_6_DasLager_06_03"); //Whoever's in trouble is gonna get a beating.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 	Info_AddChoice(Info_Grd_6_DasLager, "I see.", Info_Grd_6_DasLager_Verstehe);
-	Info_AddChoice(Info_Grd_6_DasLager, "What do you mean, trouble?", Info_Grd_6_DasLager_WasIstAerger);
+	Info_AddChoice(Info_Grd_6_DasLager, "What do you call trouble?", Info_Grd_6_DasLager_WasIstAerger);
 };
 
 FUNC VOID Info_Grd_6_DasLager_Verstehe()

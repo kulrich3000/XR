@@ -450,7 +450,7 @@ func void GFA_SetupProjectile() {
             MEM_Info(SB_ToString());
             SB_Clear();
 
-            SB("   scatter:");
+            SB("   scatter:           (");
             SB(STR_Prefix(toStringf(angleX), 5));
             SBc(176 /* deg */);
             SB(", ");
@@ -470,7 +470,7 @@ func void GFA_SetupProjectile() {
             };
             SB("   hit chance:        ");
             SBi(hitchance);
-            SB("% (Standardtrefferchance, Streuung deaktiviert)");
+            SB("% (standard hit chance, scattering disabled)");
             MEM_Info(SB_ToString());
             SB_Clear();
         };
@@ -483,7 +483,7 @@ func void GFA_SetupProjectile() {
 
         SB("   base damage:       ");
         SBi(newBaseDamage);
-        SB(" in the ");
+        SB(" (of ");
         SBi(baseDamage);
         SB(" normal base damage)");
         MEM_Info(SB_ToString());

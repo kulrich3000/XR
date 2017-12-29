@@ -89,7 +89,7 @@ FUNC VOID Info_Mod_Albi_Hi_I()
 	Info_ClearChoices	(Info_Mod_Albi_Hi);
 
 	Info_AddChoice	(Info_Mod_Albi_Hi, "What makes you think I'm gonna help you?", Info_Mod_Albi_Hi_K);
-	Info_AddChoice	(Info_Mod_Albi_Hi, "What's this about?", Info_Mod_Albi_Hi_J);
+	Info_AddChoice	(Info_Mod_Albi_Hi, "What's up?", Info_Mod_Albi_Hi_J);
 };
 
 FUNC VOID Info_Mod_Albi_Hi_H()
@@ -603,7 +603,7 @@ FUNC VOID Info_Mod_Albi_Mutantengolem_Info()
 	Info_ClearChoices	(Info_Mod_Albi_Mutantengolem);
 
 	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "What's it got to do with you white lizards and the golems?", Info_Mod_Albi_Mutantengolem_C);
-	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Anything I can do for you?", Info_Mod_Albi_Mutantengolem_B);
+	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Can I do anything for you?", Info_Mod_Albi_Mutantengolem_B);
 	Info_AddChoice	(Info_Mod_Albi_Mutantengolem, "Anyway, I'm going to the temple.", Info_Mod_Albi_Mutantengolem_A);
 };
 

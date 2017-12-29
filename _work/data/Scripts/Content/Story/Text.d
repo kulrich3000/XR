@@ -194,7 +194,7 @@ CONST STRING MOBNAME_Trinkfass		= "cask";
 CONST STRING MOBNAME_SANTINOSTRUHE	= "Santino's chest";
 CONST STRING MOBNAME_SOJA	= "soybean plant";
 CONST STRING MOBNAME_PRISMA	= "prism";
-CONST STRING MOBNAME_NAGURVERSTECK	= "Nagurs Versteck";
+CONST STRING MOBNAME_NAGURVERSTECK	= "Nagur's hideout";
 
 // XR - Ladenschilder
 

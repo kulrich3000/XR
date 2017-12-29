@@ -710,7 +710,7 @@ instance SVM_0 (C_SVM)
 	EnemyKilled					=	"SVM_0_EnemyKilled"					;//So much for you, lowlife!
 	MonsterKilled				=	"SVM_0_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_0_ThiefDown"					;//Never try to steal from me again!
-	Berzerk						=	"SVM_0_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_0_Berzerk"						;//UUAAARRGGGHHH!!!
 	rumfummlerDown				=	"SVM_0_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_0_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_0_KillMurderer"				;//Die, murderer!
@@ -1084,7 +1084,7 @@ instance SVM_1 (C_SVM)
 	EnemyKilled					=	"SVM_1_EnemyKilled"					;//So much for you, lowlife!
 	MonsterKilled				=	"SVM_1_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_1_ThiefDown"					;//Never try to steal from me again!
-	Berzerk						=	"SVM_1_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_1_Berzerk"						;//UUAAARRGGGHHH!!!
 	rumfummlerDown				=	"SVM_1_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_1_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_1_KillMurderer"				;//Die, murderer!
@@ -1458,7 +1458,7 @@ INSTANCE SVM_2	(C_SVM)
 	EnemyKilled					=	"SVM_2_EnemyKilled"					;//So much for you, lowlife!
 	MonsterKilled				=	"SVM_2_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_2_ThiefDown"					;//Never try to steal from me again!
-	Berzerk						=	"SVM_2_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_2_Berzerk"						;//UUAAARRGGGHHH!!!
 	rumfummlerDown				=	"SVM_2_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_2_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_2_KillMurderer"				;//Die, murderer!
@@ -1842,7 +1842,7 @@ instance SVM_3 (C_SVM)
 	NeverEnterRoomAgain			=	"SVM_3_NeverEnterRoomAgain"		;//And never let me catch you in there again!
 	ThereIsNoFightingHere		=	"SVM_3_ThereIsNoFightingHere"		;//No fighting here, do you understand? Let that be a lesson to you!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	Berzerk						=	"SVM_3_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_3_Berzerk"						;//UUAAARRGGGHHH!!!
 	RunAway						= 	"SVM_3_RunAway"					;//Oh, shit!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_3_Alarm"					;//ALARM!
@@ -2201,7 +2201,7 @@ instance SVM_4 (C_SVM)
 	WhatDidYouDoInThere			=	"SVM_4_WhatDidYouDoInThere"			;//What did you want in there, huh!?
 	WillYouStopFighting			=	"SVM_4_WillYouStopFighting"			;//Will you stop it already!
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
-	Berzerk						=	"SVM_4_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_4_Berzerk"						;//UUAAARRGGGHHH!!!
 	KillEnemy					= 	"SVM_4_KillEnemy"					;//Die!
 	EnemyKilled					=	"SVM_4_EnemyKilled"					;//What a silly bastard...
 	MonsterKilled				=	"SVM_4_MonsterKilled"				;//All right, so much for you, filthy beast!
@@ -2580,7 +2580,7 @@ instance SVM_5 (C_SVM)
 	MonsterKilled				=	"SVM_5_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_5_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_5_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_5_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_5_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_5_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_5_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_5_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -2950,7 +2950,7 @@ instance SVM_6 (C_SVM)
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
 	KillEnemy					= 	"SVM_6_KillEnemy"					;//I'm going to run you through, you bastard!
 	EnemyKilled					=	"SVM_6_EnemyKilled"				;//So much for you ...
-	Berzerk						=	"SVM_6_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_6_Berzerk"						;//UUAAARRGGGHHH!!!
 	MonsterKilled				=	"SVM_6_MonsterKilled"				;//Hey, I've still got it!
 	ThiefDown					=	"SVM_6_ThiefDown"					;//I'm warning you! Don't try that again, you filthy thief!
 	rumfummlerDown				=	"SVM_6_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
@@ -3335,7 +3335,7 @@ instance SVM_7 (C_SVM)
 	NeverEnterRoomAgain			=	"SVM_7_NeverEnterRoomAgain"			;//I never want to see you in there again - understood?
 	ThereIsNoFightingHere		=	"SVM_7_ThereIsNoFightingHere"		;//I'm the one who does the bashing around here, understood?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	Berzerk						=	"SVM_7_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_7_Berzerk"						;//UUAAARRGGGHHH!!!
 		RunAway						= 	"SVM_7_RunAway"						;//Shit! I'm outta here!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_7_Alarm"					;//ALARM!
@@ -3701,7 +3701,7 @@ instance SVM_8 (C_SVM)
 	ThiefDown					=	"SVM_8_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_8_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_8_SheepAttackerDown"			;//Never do that again! Those are our sheep!
-	Berzerk						=	"SVM_8_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_8_Berzerk"						;//UUAAARRGGGHHH!!!
 	KillMurderer				=	"SVM_8_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_8_StupidBeastKilled"			;//What a bloody stupid beast!
 	NeverHitMeAgain				=	"SVM_8_NeverHitMeAgain"			;//Never pick a fight with me again!
@@ -4061,7 +4061,7 @@ instance SVM_9 (C_SVM)
 	DirtyThief					=	"SVM_9_DirtyThief"					;//Filthy thief! Just you wait!
 	HandsOff					=	"SVM_9_HandsOff"					;//Take your paws off that!
 	SheepKiller					=	"SVM_9_SheepKiller"				;//Leave our sheep alone!
-	Berzerk						=	"SVM_9_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_9_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepKillerMonster			=	"SVM_9_SheepKillerMonster"			;//Get away from our sheep, you brute!
 	YouMurderer					=	"SVM_9_YouMurderer"				;//Murderer!
 	DieStupidBeast				=	"SVM_9_DieStupidBeast"				;//No beasts in here!
@@ -4349,7 +4349,7 @@ instance SVM_10 (C_SVM)
 	YesGoOutOfHere				= 	"SVM_10_YesGoOutOfHere"			;//Yeah, beat it!
 	// ------ ZS_ObservePlayer ---------------------------------------------------------------------------------------------
 	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"	;//What are you creeping around there for?
-	Berzerk						=	"SVM_10_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_10_Berzerk"						;//UUAAARRGGGHHH!!!
 	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"	;//(wakes up) Wassup?
 	// ------ ZS_RansackBody -----------------------------------------------------------------------------------------------
 	ITookYourGold				=	"SVM_10_ITookYourGold"			;//Thanks for the gold, you hero!
@@ -4700,7 +4700,7 @@ instance SVM_11 (C_SVM)
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
 	KillEnemy					= 	"SVM_11_KillEnemy"					;//Die, bastard!
 	EnemyKilled					=	"SVM_11_EnemyKilled"					;//So much for you, lowlife!
-	Berzerk						=	"SVM_11_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_11_Berzerk"						;//UUAAARRGGGHHH!!!
 	MonsterKilled				=	"SVM_11_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_11_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_11_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
@@ -5067,7 +5067,7 @@ instance SVM_12 (C_SVM)
 	DirtyThief					=	"SVM_12_DirtyThief"					;//Filthy thief! Just you wait!
 	HandsOff					=	"SVM_12_HandsOff"					;//Take your paws off that!
 	SheepKiller					=	"SVM_12_SheepKiller"				;//Leave our sheep alone!
-	Berzerk						=	"SVM_12_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_12_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepKillerMonster			=	"SVM_12_SheepKillerMonster"			;//Get away from our sheep, you brute!
 	YouMurderer					=	"SVM_12_YouMurderer"				;//Murderer!
 	DieStupidBeast				=	"SVM_12_DieStupidBeast"				;//No beasts in here!
@@ -5467,7 +5467,7 @@ instance SVM_13 (C_SVM)
 	RunAway						= 	"SVM_13_RunAway"					;//Oh, shit!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_13_Alarm"					;//ALARM!
-	Berzerk						=	"SVM_13_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_13_Berzerk"						;//UUAAARRGGGHHH!!!
 	Guards						=	"SVM_13_Guards"					;//GUARDS!
 	Help						=	"SVM_13_Help"					;//Help!
 	// ------ B_AssessMurder -----------------------------------------------------------------------------------------------
@@ -5815,7 +5815,7 @@ instance SVM_14 (C_SVM)
 	HandsOff					=	"SVM_14_HandsOff"					;//Take your paws off that!
 	SheepKiller					=	"SVM_14_SheepKiller"					;//That piece of shit is slaughtering our sheep!
 	SheepKillerMonster			=	"SVM_14_SheepKillerMonster"			;//That blasted monster is gobbling up our sheep!
-	Berzerk						=	"SVM_14_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_14_Berzerk"						;//UUAAARRGGGHHH!!!
 	YouMurderer					=	"SVM_14_YouMurderer"					;//Murderer!
 	DieStupidBeast				=	"SVM_14_DieStupidBeast"				;//No beasts in here!
 	YouDareHitMe				=	"SVM_14_YouDareHitMe"				;//Just you wait, you sumbitch!
@@ -6364,7 +6364,7 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 	// Ambis der Schwarzen Novizen
 
 	AMBISNOV01	=	"SVM_15_AMBISNOV01";	//Who's in charge here?
-	AMBISNOV03	=	"SVM_15_AMBISNOV03";	//What are the places of interest?
+	AMBISNOV03	=	"SVM_15_AMBISNOV03";	//Is there anywhere important here where I should go?
 	AMBISNOV04	=	"SVM_15_AMBISNOV04";	//Has anything interesting happened lately?
 
 	// Gespräch mit Schürfern wegen "Ärger im Kessel"
@@ -6397,8 +6397,8 @@ INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 
 	// Schlösser knacken
 
-	PICKLOCKFAILURE	=	"SVM_15_PICKLOCKFAILURE";	//Shit, it broke off....
-	PICKLOCKBROKEN	=	"SVM_15_PICKLOCKBROKEN";	//f--- from the beginning.
+	PICKLOCKFAILURE	=	"SVM_15_PICKLOCKFAILURE";	//f--- from the beginning.
+	PICKLOCKBROKEN	=	"SVM_15_PICKLOCKBROKEN";	//Shit, it broke off....
 
 	// Bücher nicht lesen können
 
@@ -7466,7 +7466,7 @@ instance SVM_20 (C_SVM)
 	MonsterKilled				=	"SVM_20_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_20_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_20_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_20_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_20_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_20_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_20_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_20_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -8194,7 +8194,7 @@ instance SVM_23 (C_SVM)
 	MonsterKilled				=	"SVM_23_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_23_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_23_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_23_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_23_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_23_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_23_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_23_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -8566,7 +8566,7 @@ instance SVM_24 (C_SVM)
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
 	KillEnemy					= 	"SVM_24_KillEnemy"					;//Die, bastard!
 	EnemyKilled					=	"SVM_24_EnemyKilled"					;//So much for you, lowlife!
-	Berzerk						=	"SVM_24_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_24_Berzerk"						;//UUAAARRGGGHHH!!!
 	MonsterKilled				=	"SVM_24_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_24_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_24_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
@@ -8944,7 +8944,7 @@ instance SVM_25 (C_SVM)
 	ThiefDown					=	"SVM_25_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_25_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_25_SheepAttackerDown"			;//Never do that again! Those are our sheep!
-	Berzerk						=	"SVM_25_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_25_Berzerk"						;//UUAAARRGGGHHH!!!
 	KillMurderer				=	"SVM_25_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_25_StupidBeastKilled"			;//What a bloody stupid beast!
 	NeverHitMeAgain				=	"SVM_25_NeverHitMeAgain"			;//Never pick a fight with me again!
@@ -9046,7 +9046,7 @@ instance SVM_26 (C_SVM)
 	EnemyKilled					=	"SVM_26_EnemyKilled"					;//So much for you, lowlife!
 	MonsterKilled				=	"SVM_26_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_26_ThiefDown"					;//Never try to steal from me again!
-	Berzerk						=	"SVM_26_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_26_Berzerk"						;//UUAAARRGGGHHH!!!
 	rumfummlerDown				=	"SVM_26_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_26_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_26_KillMurderer"				;//Die, murderer!
@@ -9426,7 +9426,7 @@ instance SVM_27 (C_SVM)
 	NeverEnterRoomAgain			=	"SVM_27_NeverEnterRoomAgain"			;//I never want to see you in there again - understood?
 	ThereIsNoFightingHere		=	"SVM_27_ThereIsNoFightingHere"		;//I'm the one who does the bashing around here, understood?
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	Berzerk						=	"SVM_27_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_27_Berzerk"						;//UUAAARRGGGHHH!!!
 		RunAway						= 	"SVM_27_RunAway"						;//Shit! I'm outta here!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_27_Alarm"					;//ALARM!
@@ -9584,7 +9584,7 @@ instance SVM_28 (C_SVM)
 	NeverEnterRoomAgain			=	"SVM_28_NeverEnterRoomAgain"		;//And never let me catch you in there again!
 	ThereIsNoFightingHere		=	"SVM_28_ThereIsNoFightingHere"		;//No fighting here, do you understand? Let that be a lesson to you!
 	// ------ C_WantToFlee -------------------------------------------------------------------------------------------------
-	Berzerk						=	"SVM_28_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_28_Berzerk"						;//UUAAARRGGGHHH!!!
 	RunAway						= 	"SVM_28_RunAway"					;//Oh, shit!
 	// ------ C_WantToCallGuardsToFight --------------------------------------------------------------------------------------
 	Alarm						=	"SVM_28_Alarm"					;//ALARM!
@@ -9716,7 +9716,7 @@ instance SVM_29 (C_SVM)
 	MonsterKilled				=	"SVM_29_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_29_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_29_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_29_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_29_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_29_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_29_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_29_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -9856,7 +9856,7 @@ instance SVM_30 (C_SVM)
 	// ------ B_Say_AttackEND ---------------------------------------------------------------------------------------------
 	KillEnemy					= 	"SVM_30_KillEnemy"					;//Die, bastard!
 	EnemyKilled					=	"SVM_30_EnemyKilled"					;//So much for you, lowlife!
-	Berzerk						=	"SVM_30_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_30_Berzerk"						;//UUAAARRGGGHHH!!!
 	MonsterKilled				=	"SVM_30_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_30_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_30_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
@@ -10237,7 +10237,7 @@ instance SVM_31 (C_SVM)
 	MonsterKilled				=	"SVM_31_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_31_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_31_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_31_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_31_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_31_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_31_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_31_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -10610,7 +10610,7 @@ instance SVM_32 (C_SVM)
 	MonsterKilled				=	"SVM_32_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_32_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_32_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_32_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_32_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_32_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_32_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_32_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -10970,7 +10970,7 @@ instance SVM_34 (C_SVM)
 	HandsOff					=	"SVM_34_HandsOff"					;//Take your paws off that!
 	SheepKiller					=	"SVM_34_SheepKiller"					;//That piece of shit is slaughtering our sheep!
 	SheepKillerMonster			=	"SVM_34_SheepKillerMonster"			;//That blasted monster is gobbling up our sheep!
-	Berzerk						=	"SVM_34_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_34_Berzerk"						;//UUAAARRGGGHHH!!!
 	YouMurderer					=	"SVM_34_YouMurderer"					;//Murderer!
 	DieStupidBeast				=	"SVM_34_DieStupidBeast"				;//No beasts in here!
 	YouDareHitMe				=	"SVM_34_YouDareHitMe"				;//Just you wait, you sumbitch!
@@ -11691,7 +11691,7 @@ instance SVM_36 (C_SVM)
 	EnemyKilled					=	"SVM_36_EnemyKilled"					;//So much for you, lowlife!
 	MonsterKilled				=	"SVM_36_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_36_ThiefDown"					;//Never try to steal from me again!
-	Berzerk						=	"SVM_36_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_36_Berzerk"						;//UUAAARRGGGHHH!!!
 	rumfummlerDown				=	"SVM_36_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
 	SheepAttackerDown			=	"SVM_36_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_36_KillMurderer"				;//Die, murderer!
@@ -12066,7 +12066,7 @@ instance SVM_37 (C_SVM)
 	MonsterKilled				=	"SVM_37_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_37_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_37_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_37_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_37_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_37_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_37_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_37_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -12439,7 +12439,7 @@ instance SVM_38 (C_SVM)
 	MonsterKilled				=	"SVM_38_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_38_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_38_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_38_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_38_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_38_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_38_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_38_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -13148,7 +13148,7 @@ instance SVM_40 (C_SVM)
 	MonsterKilled				=	"SVM_40_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_40_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_40_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_40_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_40_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_40_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_40_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_40_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -13521,7 +13521,7 @@ instance SVM_41 (C_SVM)
 	MonsterKilled				=	"SVM_41_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_41_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_41_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_41_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_41_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_41_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_41_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_41_StupidBeastKilled"			;//What a bloody stupid beast!
@@ -13894,7 +13894,7 @@ instance SVM_42 (C_SVM)
 	MonsterKilled				=	"SVM_42_MonsterKilled"				;//One less monster around!
 	ThiefDown					=	"SVM_42_ThiefDown"					;//Never try to steal from me again!
 	rumfummlerDown				=	"SVM_42_rumfummlerDown"				;//From now on, keep your paws off stuff that isn't yours!
-	Berzerk						=	"SVM_42_Berzerk"						;//UUAAARRGGGHHHH!!!!
+	Berzerk						=	"SVM_42_Berzerk"						;//UUAAARRGGGHHH!!!
 	SheepAttackerDown			=	"SVM_42_SheepAttackerDown"			;//Never do that again! Those are our sheep!
 	KillMurderer				=	"SVM_42_KillMurderer"				;//Die, murderer!
 	StupidBeastKilled			=	"SVM_42_StupidBeastKilled"			;//What a bloody stupid beast!

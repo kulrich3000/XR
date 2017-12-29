@@ -132,7 +132,7 @@ INSTANCE Info_FM_SFB_14_DieLage(C_INFO)
 	condition	= Info_FM_SFB_14_DieLage_Condition;
 	information	= Info_FM_SFB_14_DieLage_Info;
 	permanent	= 1;
-	description = "How's life here?";
+	description = "What's life like here?";
 };                       
 
 FUNC INT Info_FM_SFB_14_DieLage_Condition()

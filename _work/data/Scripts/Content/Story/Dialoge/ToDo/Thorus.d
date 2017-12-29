@@ -204,7 +204,7 @@ INSTANCE Info_Mod_Thorus_Aufnahme (C_INFO)
 	information	= Info_Mod_Thorus_Aufnahme_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "I want to be a guardsman.";
+	description	= "I want to join the guards.";
 };
 
 FUNC INT Info_Mod_Thorus_Aufnahme_Condition()

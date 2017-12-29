@@ -356,7 +356,7 @@ FUNC VOID Info_Mod_Genn_Soeren_Info()
 	
 	Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
-	Info_AddChoice	(Info_Mod_Genn_Soeren, "How about a reward?", Info_Mod_Genn_Soeren_B);
+	Info_AddChoice	(Info_Mod_Genn_Soeren, "What about my payment?", Info_Mod_Genn_Soeren_B);
 	Info_AddChoice	(Info_Mod_Genn_Soeren, "What are you going to do now?", Info_Mod_Genn_Soeren_A);
 };
 
@@ -407,7 +407,7 @@ FUNC VOID Info_Mod_Genn_Soeren_A()
 	{
 		Info_ClearChoices	(Info_Mod_Genn_Soeren);
 
-		Info_AddChoice	(Info_Mod_Genn_Soeren, "How about a reward?", Info_Mod_Genn_Soeren_B);
+		Info_AddChoice	(Info_Mod_Genn_Soeren, "What about my payment?", Info_Mod_Genn_Soeren_B);
 		Info_AddChoice	(Info_Mod_Genn_Soeren, "I'll go back to the Minental, if you don't mind.", Info_Mod_Genn_Soeren_E);
 	}
 	else

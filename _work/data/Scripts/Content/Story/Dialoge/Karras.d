@@ -199,7 +199,7 @@ FUNC VOID Info_Mod_Karras_Namib_Info()
 		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_22"); //So, first of all, you don't steal it, but you get our rightful property back, and secondly, yes.
 		AI_Output(hero, self, "Info_Mod_Karras_Namib_15_23"); //All right, all right. Where can I find the book?
 		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_24"); //Probably in her library.
-		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //Und nimm diesen Knüppel. He's enchanted. If you hit someone with it, he'll faint and he won't remember anything when he wakes up.
+		AI_Output(self, hero, "Info_Mod_Karras_Namib_36_25"); //And take this stick. He's enchanted. If you hit someone with it, he'll faint and he won't remember anything when he wakes up.
 
 		B_GiveInvItems	(self, hero, ItMw_UnconsciousKnueppel, 1);
 

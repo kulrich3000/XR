@@ -5,7 +5,7 @@ INSTANCE Info_Mod_Mud_ShutUp (C_INFO)
 	condition	= Info_Mod_Mud_ShutUp_Condition;
 	information	= Info_Mod_Mud_ShutUp_Info;
 	permanent	= 1;
-	description	= "Can you shut up for a second, please?";
+	description	= "Could you PLEASE keep quiet for a minute?";
 };
 
 FUNC INT Info_Mod_Mud_ShutUp_Condition()
@@ -32,7 +32,7 @@ INSTANCE Info_Mod_Mud_GetLost (C_INFO)
 	condition	= Info_Mod_Mud_GetLost_Condition;
 	information	= Info_Mod_Mud_GetLost_Info;
 	permanent	= 1;
-	description	= "Get the fuck out of here!";
+	description	= "Get lost!";
 };                       
 
 FUNC INT Info_Mod_Mud_GetLost_Condition()
@@ -325,8 +325,8 @@ FUNC VOID Info_Mod_Mud_FirstEXIT_Info()
 	AI_Output(self, hero, "Info_Mod_Mud_FirstEXIT_03_01"); //But now you're back, it'll be nice with us, just like before.
 
 	Info_ClearChoices(Info_Mod_Mud_FirstEXIT);
-	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Get the fuck out of here!"			,Info_Mod_Mud_FirstEXIT_Verpiss);
-	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Why not - come with me!"	,Info_Mod_Mud_FirstEXIT_Komm);
+	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Get lost!"			,Info_Mod_Mud_FirstEXIT_Verpiss);
+	Info_AddChoice	 (Info_Mod_Mud_FirstEXIT, "Why not - come along!"	,Info_Mod_Mud_FirstEXIT_Komm);
 };
 
 func void Info_Mod_Mud_FirstEXIT_Verpiss()
@@ -809,7 +809,7 @@ func void Info_Mod_Mud_VMG_B()
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
 	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's not true at all.", Info_Mod_Mud_VMG_M);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's exactly right.", Info_Mod_Mud_VMG_L);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's right.", Info_Mod_Mud_VMG_L);
 };
 
 func void Info_Mod_Mud_VMG_B2()
@@ -820,7 +820,7 @@ func void Info_Mod_Mud_VMG_B2()
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
 	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's not true at all.", Info_Mod_Mud_VMG_M2);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's exactly right.", Info_Mod_Mud_VMG_L2);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's right.", Info_Mod_Mud_VMG_L2);
 };
 
 func void Info_Mod_Mud_VMG_B3()
@@ -831,7 +831,7 @@ func void Info_Mod_Mud_VMG_B3()
 	Info_ClearChoices(Info_Mod_Mud_VMG);
 
 	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's not true at all.", Info_Mod_Mud_VMG_M3);
-	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's exactly right.", Info_Mod_Mud_VMG_L3);
+	Info_AddChoice	 (Info_Mod_Mud_VMG, "That's right.", Info_Mod_Mud_VMG_L3);
 };
 
 func void Info_Mod_Mud_VMG_M()

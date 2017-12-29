@@ -969,6 +969,8 @@ INSTANCE Mod_ConstantinosZutatenliste (C_ITEM)
 	TEXT[2]		=	"These ingredients are needed for a new drink";
 };
 
+var int ConstantinoZutatenInLog;
+
 FUNC VOID Use_ConstantinosZutatenliste()
 {
 	var int nDocID;
@@ -986,9 +988,11 @@ FUNC VOID Use_ConstantinosZutatenliste()
 		Doc_PrintLine	( nDocID, 0, "Blood fly spine (1x)");
 		Doc_Show	( nDocID );
 
-	if (Mod_MinecrawlerEi	==	0)
-	{
-		Mod_MinecrawlerEi	=	1;
+	if (!ConstantinoZutatenInLog && !Npc_KnowsInfo(hero, Info_Mod_Constantino_Stimme)) {
+		if (Mod_MinecrawlerEi == 0) {
+			Mod_MinecrawlerEi	=	1;
+		};
+		ConstantinoZutatenInLog = TRUE;
 
 		B_LogEntry	(TOPIC_MOD_CONSTANTINOSZUTATEN, "Constantino needs: 2x strong minecrawler-secret, 1x twin spine, 4x swamp herb and 1x blood fly spine.");
 	};
@@ -1068,7 +1072,7 @@ INSTANCE theriddle1(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "chromanin";
+	description			= "Chromanin";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1088,11 +1092,11 @@ INSTANCE theriddle1(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "He who is willing to renounce all earthly vices and walk on the paths of the righteous shall know where the source of my power lies hidden. May he use it to break the chains of this world and prove himself worthy to receive chromanin.");
+					Doc_PrintLines	( nDocID,  0, "He who is willing to renounce all depravity and wanders on the path of righteousness, shall know where the source of my power lies hidden. So that he might use it to break the chains of this world and prove worthy to receive Chromanin.");
 					
 				
 
@@ -1161,11 +1165,11 @@ INSTANCE theriddle2(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Carried by the tides, Chromanin's visions of the future have opened my eyes. No price is high enough to give up believing in it. It moved me too much.");
+					Doc_PrintLines	( nDocID,  0, "Carried from the tides of time, Chromanin's visions have opened my eyes. No price could be high enough to ever renounce my faith in them, for it touched my heart too intensely.");
 					
 				
 
@@ -1229,7 +1233,7 @@ INSTANCE theriddle3(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -1310,11 +1314,11 @@ INSTANCE theriddle4(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "I don't dare to hope one day to experience chromanin for myself. Gone are the days of waste and sound. This is how easy it will be to achieve complete perfection. I'm not far from it.");
+					Doc_PrintLines	( nDocID,  0, "I dare not hope to be in the presence of Chromanin one day. Gone are the days of wasting and wailing. So easy it will be to acheive absolute perfection. I'm not far from it!");
 					
 				
 
@@ -1329,7 +1333,7 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Forgotten are the deeds of those who were once on board.");
+					Doc_PrintLines	( nDocID,  1, "Long forgotten are the deeds of those who once were aboard.");
 					Doc_Show		( nDocID );
 					
 
@@ -1338,7 +1342,7 @@ INSTANCE theriddle4(C_Item)
 						if (CurrentLevel == MINENTAL_ZEN)
 						{				
 							B_GivePlayerXP (700);
-							B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Number four. I'm starting to wonder why I let this guy give me the runaround..... Forgotten are the deeds of those who were once on board..."); 
+							B_LogEntry			(TOPIC_MOD_THERIDDLE,		"Number four. I am beginning to ask myself if I am fooled around by this guy! ...Long forgotten are the deeds of those who once were aboard..."); 
 							Snd_Play 		("FoundRiddlersBook");					
 							//Wld_InsertItem			(theriddle5,"FP_ITEM_THERIDDLE_05");
 
@@ -1388,11 +1392,11 @@ INSTANCE theriddle5(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "But I should not go down this road alone. This honour may be granted to me. I must submit and share the power that resides in me with the worthy ones who will come to find me. Hopefully they'll come soon....");
+					Doc_PrintLines	( nDocID,  0, "But I shall not walk this path alone. This honor is mine. I must accept to share the power within myself with the worthy ones who are to come and find me. I hope they're coming soon...");
 					
 				
 
@@ -1461,7 +1465,7 @@ INSTANCE theriddle6(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "chromanin"			);
+					Doc_PrintLine	( nDocID,  0, "Chromanin"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -1487,7 +1491,7 @@ INSTANCE theriddle6(C_Item)
 					if (riddle6 == FALSE)
 					{
 						B_GivePlayerXP (1000);
-						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"The mysterious stranger is dead. These demons killed him. Something seems to have connected him to these creatures of hell. Otherwise he wouldn't have returned to this godforsaken place. He took the secret he wanted to share with me to his grave."); 
+						B_LogEntry			(TOPIC_MOD_THERIDDLE,		"The mysterious stranger is dead. Those demons have killed him. There seemed to be some kind of bond between him an those creatures from hell. Otherwise, he wouldn't have come back to this place. He's taken the secret he apparently wanted tho share to the grave."); 
 						B_SetTopicStatus	(TOPIC_MOD_THERIDDLE,		LOG_SUCCESS);
 						Snd_Play 		("FoundRiddler");
 						

@@ -139,7 +139,7 @@ FUNC VOID Info_Mod_Senyan_TomKraut_Info()
 	B_SetTopicStatus	(TOPIC_MOD_TOM_KRAUT, LOG_RUNNING);
 	B_LogEntry	(TOPIC_MOD_TOM_KRAUT, "Senyan told me that Tom was caught with marsh plants and is probably in prison.");
 
-	Mob_CreateItems	("SAFE ROOM", ItPl_SwampHerb, 3);
+	Mob_CreateItems	("ASSERVATENTRUHE", ItPl_SwampHerb, 3);
 };
 
 INSTANCE Info_Mod_Senyan_Pickpocket (C_INFO)

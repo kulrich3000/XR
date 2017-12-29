@@ -26,7 +26,7 @@ FUNC VOID Info_Mod_Sabine_Hi_Info()
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_03"); //Royal spice dealer!
 	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_04"); //And what kind of spices are you trading?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_05"); //None.
-	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Wieso heiﬂt du dann Spice merchant?
+	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_06"); //Then why is your name a spice dealer?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_07"); //Royal spice dealer!
 	AI_Output(hero, self, "Info_Mod_Sabine_Hi_15_08"); //... na gut. Warum heiﬂt du dann "royal spice dealer"?
 	AI_Output(self, hero, "Info_Mod_Sabine_Hi_17_09"); //I act. And I like spices.

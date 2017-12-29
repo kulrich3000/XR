@@ -430,7 +430,7 @@ INSTANCE ItPo_Health_05(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Drink of fast healing";
+	description		= 	"Potion of Quick Healing";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_05;

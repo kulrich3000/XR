@@ -156,7 +156,7 @@ INSTANCE Info_Mod_Franco_AtEdgor (C_INFO)
 	information	= Info_Mod_Franco_AtEdgor_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "What are you doing this way?";
+	description	= "What do you do round here?";
 };
 
 FUNC INT Info_Mod_Franco_AtEdgor_Condition()

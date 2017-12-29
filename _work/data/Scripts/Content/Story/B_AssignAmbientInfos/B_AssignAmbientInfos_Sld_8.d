@@ -39,7 +39,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Can you guys use another good man?";
+	description = "Do you need another good man?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()

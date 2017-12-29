@@ -66,7 +66,7 @@ INSTANCE Info_Bud_3_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_3_WichtigePersonen_Condition;
 	information	= Info_Bud_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Who's the boss here?";
+	description = "Who's the boss round here?";
 };                       
 
 FUNC INT Info_Bud_3_WichtigePersonen_Condition()
@@ -96,7 +96,7 @@ INSTANCE Info_Bud_3_DasLager(C_INFO)
 	condition	= Info_Bud_3_DasLager_Condition;
 	information	= Info_Bud_3_DasLager_Info;
 	permanent	= 1;
-	description = "What are the places of interest?";
+	description = "Is there anywhere important here where I should go?";
 };                       
 
 FUNC INT Info_Bud_3_DasLager_Condition()

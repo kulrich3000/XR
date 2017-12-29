@@ -598,7 +598,7 @@ FUNC VOID Info_Mod_Per_Pruefung4_E()
 		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_02"); //Unfortunately, you have failed in this most important task, just as you failed in the two previous tasks.
 		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_03"); //You'll never be a real quick-change mage. I'm really very sorry for you, after all you've done for us, but that's what the traditions say.
 		AI_Output(hero, self, "Info_Mod_Per_Pruefung4_E_15_04"); //You can't be serious. Isn't there any other way I can still be here?
-		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Dieses Mal nicht. Es tut mir wirklich Leid. Go to Genn, he'll teleport you back to the Minental.
+		AI_Output(self, hero, "Info_Mod_Per_Pruefung4_E_13_05"); //Not this time. I'm really sorry. Go to Genn, he'll teleport you back to the Minental.
 	}
 	else
 	{

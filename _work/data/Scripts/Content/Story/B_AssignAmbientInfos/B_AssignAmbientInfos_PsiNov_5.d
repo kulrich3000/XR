@@ -37,7 +37,7 @@ INSTANCE Info_PsiNov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_PsiNov_5_EinerVonEuchWerden_Condition;
 	information	= Info_PsiNov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "How will I be accepted in this camp?";
+	description = "How can I join this camp?";
 };                       
 
 FUNC INT Info_PsiNov_5_EinerVonEuchWerden_Condition()

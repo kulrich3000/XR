@@ -200,7 +200,7 @@ INSTANCE Info_SFB_2_DieLage(C_INFO)
 	condition	= Info_SFB_2_DieLage_Condition;
 	information	= Info_SFB_2_DieLage_Info;
 	permanent	= 1;
-	description = "How's life here?";
+	description = "What's life like here?";
 };                       
 
 FUNC INT Info_SFB_2_DieLage_Condition()

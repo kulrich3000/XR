@@ -31,16 +31,16 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		Doc_PrintLine	( nDocID,  0, "=====================");
 		Doc_PrintLines	( nDocID,  0, "(Magic of the Golems)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Only those who have ever encountered one of these creatures created from the elements will really understand the respect these magical creatures can instill in an adventurous wanderer.");
+		Doc_PrintLines	( nDocID,  0, "Only who has been confronted with these creatures that came from the elements can truly understand how much respect these magical beings will teach an adventurous wanderer.");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "Steingolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "These stone colossuses are almost invulnerable in battle. Swords, axes and bows seem to have no effect on these monsters.");
+		Doc_PrintLines	( nDocID,  1, "These colossuses of stone are nearly invulnerable in battle. Swords, axes and bows do not seem to do any damage to these monsters.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1, "The only credible account of the defeat of such a Leviathan comes from a mercenary. He wrote about how the blunt impact of his warhammer drove cracks into the Golem until it finally burst apart.");
+		Doc_PrintLines	( nDocID,  1, "The only plausible report of a battle against such a leviathan was written by a mercenary. He reported how the blunt hit of a war hammer caused cracks in the golem, until it finally burst apart.");
 
 		Doc_Show		( nDocID );
 	};
@@ -80,16 +80,16 @@ INSTANCE ItWr_GolemBook2(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0, "Eisgolem");
 		Doc_PrintLine	( nDocID,  0, "---------");
-		Doc_PrintLines	( nDocID,  0, "The ice olems are related to the stone olems, but their physical substance seems to consist entirely of frozen water. Any weapon we know of seems to slip on the smooth surface of these icy creatures.");
-		Doc_PrintLines	( nDocID,  0, "The adventurous wanderer should also be warned against the ice breath of this creature, as it instantly traps every unsuspecting person in a column of ice.");
+		Doc_PrintLines	( nDocID,  0, "The ice golems are somehow related to the stone golems, though their physical substance seems to consist of water. Any familiar weapon seems to slide off the surface of this icy being.");
+		Doc_PrintLines	( nDocID,  0, "Adventurous wanderers be warned of this creature's icy breath as well, because it surrounds the unsuspecting with a pillar of ice.");
 
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1, "Once upon a time, a fire magician reported the encounter with such a creature, but he did not seem to have recognized any serious threat in it.");
+		Doc_PrintLines	( nDocID,  1, "A Magician of Fire reported an encounter with such a creature, but apparently he didn't see much of a threat in it.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "Feuergolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "According to reports, these fiery creatures can turn their victims into a sea of flames with just one touch.");
+		Doc_PrintLines	( nDocID,  1, "According to reports, these fiery beings can convert their victims into a sea of flames with only one touch.");
 		Doc_PrintLines	( nDocID,  1, "Only last year, a hunting group in the highlands encountered such a heap of embers. The outcome is unclear, but ice is said to have stopped the infernal creature.");
 		Doc_Show		( nDocID );
 	};

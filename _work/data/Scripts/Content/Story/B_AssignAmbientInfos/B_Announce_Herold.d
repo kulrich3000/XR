@@ -63,8 +63,8 @@ func void B_Announce_Herold ()
 		AI_Output (self,self,"Info_Mod_Herold_Announce_04_13"); //Only he himself passed the recent product test financed by Matteo with distinction.
 		AI_Output (self,self,"Info_Mod_Herold_Announce_04_14"); //All other traders had above all deficits in fruit.
 		AI_Output (self,self,"Info_Mod_Herold_Announce_04_15"); //Asked how he interpreted the result, Matteo said:
-		AI_Output (self,self,"Info_Mod_Herold_Announce_04_16"); //"There's nothing to interpret. Whoever sells lazy apples cannot continue to be supported."
-		AI_Output (self,self,"Info_Mod_Herold_Announce_04_17"); //
+		AI_Output (self,self,"Info_Mod_Herold_Announce_04_16"); //"There's nothing to interpret. Whoever sells lazy apples cannot continue to be supported.""Das gibt es nichts zu interpretieren. Wer faule Äpfel verkauft, darf nicht weiter unterstützt werden.
+		AI_Output (self,self,"Info_Mod_Herold_Announce_04_17"); //Ich dagegen habe jahrelang in Qualität investiert. Das konnten die Prüfer eindrucksvoll belegen."
 		AI_Output (self,self,"Info_Mod_Herold_Announce_04_18"); //Matteo reports a new sales record for the last few days.
 	}
 	else if (Npc_KnowsInfo(hero, Info_Mod_Hagen_Hi))
@@ -215,8 +215,8 @@ func void B_Announce_Herold ()
 			AI_Output (self,self,"Info_Mod_Herold_Announce_04_53"); //Instead, there are disturbing reports from the Minental that an ancient creature has been resurrected.
 			AI_Output (self,self,"Info_Mod_Herold_Announce_04_54"); //But this is no reason to panic, Lord Andre said. In the event of an invasion by Beliars Brut, the city guard is well prepared.
 			AI_Output (self,self,"Info_Mod_Herold_Announce_04_55"); //Serpentes was concerned about the disappearance of the water magicians. He said literally:
-			AI_Output (self,self,"Info_Mod_Herold_Announce_04_56"); //"Of course, the death of all water magicians would be a grave loss for all of us. I will include them in my prayers."
-			AI_Output (self,self,"Info_Mod_Herold_Announce_04_57"); //
+			AI_Output (self,self,"Info_Mod_Herold_Announce_04_56"); //"Of course, the death of all water magicians would be a grave loss for all of us. I will include them in my prayers.""Natürlich wäre der Tod aller Wassermagier ein schwerer Verlust für uns alle. Ich werde sie in meine Gebete einschließen.
+			AI_Output (self,self,"Info_Mod_Herold_Announce_04_57"); //Dieses Unglück sollte allen Rechtgläubigen nur wieder zeigen, dass ungezügelter Forscherdrang und Wissensdurst immer in einer Katastrophe enden."
 		}
 		else
 		{

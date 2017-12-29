@@ -37,7 +37,7 @@ INSTANCE Info_Mod_SMK_OM_13_Mine (C_INFO) // E1
 	condition	= Info_Mod_SMK_OM_13_Mine_Condition;
 	information	= Info_Mod_SMK_OM_13_Mine_Info;
 	permanent	= 1;
-	description = "What's going on in the mine?";
+	description = "What goes on in the mine?";
 };                       
 
 FUNC INT Info_Mod_SMK_OM_13_Mine_Condition()

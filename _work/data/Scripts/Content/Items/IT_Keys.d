@@ -736,8 +736,8 @@ INSTANCE DungeonKey(C_Item)
 	material 				=	MAT_METAL;
 
 	description			= name;
-	TEXT[0]				= "opens the dungeon";
-	TEXT[0]				= "of the Old Camp.";
+	TEXT[0]				= "of the old camp.";
+	TEXT[0]				= "of the old camp.";
 };
 
 

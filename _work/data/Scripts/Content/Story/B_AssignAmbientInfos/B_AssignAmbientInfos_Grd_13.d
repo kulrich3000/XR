@@ -37,7 +37,7 @@ INSTANCE Info_grd_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_13_EinerVonEuchWerden_Condition;
 	information	= Info_grd_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I want to be a guardsman.";
+	description = "I want to join the guards.";
 };                       
 
 FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()

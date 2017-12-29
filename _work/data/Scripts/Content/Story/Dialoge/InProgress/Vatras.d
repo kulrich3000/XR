@@ -958,7 +958,7 @@ FUNC VOID Info_Mod_Vatras_BosperLehrling_Info()
 	{
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_04"); //You don't seriously think I'd help a devil pendant like you?
 		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_05"); //This is not a question of faith. Bosper is being pursued by remorse.
-		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_06"); //(zweifelnd) Na ja, Tinctures are not my specialty.
+		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_06"); //Well, tinctures aren't my specialty.
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_07"); //I could sell you a reversionary spell that you'd have to have an alchemist break down into its constituent parts.
 		AI_Output(hero, self, "Info_Mod_Vatras_BosperLehrling_15_08"); //How much do you want?
 		AI_Output(self, hero, "Info_Mod_Vatras_BosperLehrling_16_09"); //300 gold pieces. And no negotiations.

@@ -21,7 +21,7 @@ FUNC VOID B_Göttergefallen (var int GefallenArt, var int GefallenCounter)
 	{
 		Adanos_Gefallen += GefallenCounter;
 
-		GefallenMeldung = ConcatStrings(GefallenMeldung, "adanos");
+		GefallenMeldung = ConcatStrings(GefallenMeldung, "Adanos");
 	}
 	else if (GefallenArt == 3)
 	{

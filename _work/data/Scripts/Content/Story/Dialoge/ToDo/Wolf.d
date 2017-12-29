@@ -578,7 +578,7 @@ INSTANCE Info_Mod_Wolf_PlattenNehmen (C_INFO)
 
 FUNC INT Info_Mod_Wolf_PlattenNehmen_Condition()
 {
-	Info_Mod_Wolf_PlattenNehmen.description = B_BuildLearnString("How do I get these plates from the beasts?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
+	Info_Mod_Wolf_PlattenNehmen.description = B_BuildLearnString("How can I remove the plates from those beasts?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Wolf_Hi))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_CrawlerPlate] == FALSE)

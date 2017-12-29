@@ -28,7 +28,7 @@ INSTANCE Info_Mod_Parlan_Aufgabe (C_INFO)
 	information	= Info_Mod_Parlan_Aufgabe_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Is there anything I can do for you?";
+	description	= "Can I do anything for you?!";
 };
 
 FUNC INT Info_Mod_Parlan_Aufgabe_Condition()

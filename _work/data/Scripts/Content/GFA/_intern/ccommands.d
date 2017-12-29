@@ -124,7 +124,7 @@ func string GFA_DebugBone(var string _) {
  */
 func string GFA_GetShootingStats(var string args) {
     if (!GFA_ACTIVE) || (!(GFA_Flags & GFA_RANGED)) {
-        return "Schießstatistiken nicht verfügbar. (Benötigt freies Zielen für Fernkampfwaffen)";
+        return "Shooting statistics not available. (Requires free aiming for ranged weapons)";
     };
 
     // Prevent execution if 'reset' command is called
@@ -186,18 +186,18 @@ func string GFA_GetVersion(var string _) {
 func string GFA_GetLicense(var string _) {
     var int s; s = SB_New();
     SB(GFA_VERSION);
-    SB("copyright ");
+    SB(", Copyright ");
     SBc(169 /* (C) */);
     SB(" 2016-2017  mud-freak (@szapp)");
     SBc(13); SBc(10);
 
-    SB("<http://github. com/szapp/GothicFreeAim>");
+    SB("<http://github.com/szapp/GothicFreeAim>");
     SBc(13); SBc(10);
 
-    SB("Veröffentlicht unter der MIT-Lizenz.");
+    SB("Released under the MIT License.");
     SBc(13); SBc(10);
 
-    SB("Weitere Details finden Sie unter <http://opensource. org/Lizenzen/MIT>.");
+    SB("For more details see <http://opensource.org/licenses/MIT>.");
 
     var string ret; ret = SB_ToString();
     SB_Destroy();
@@ -220,7 +220,7 @@ func string GFA_GetInfo(var string _) {
     SB("Free aiming: ");
     SB(MEM_ReadStatStringArr(onOff, GFA_ACTIVE > 0));
     if (GFA_ACTIVE) {
-        SB(" by");
+        SB(" for");
         if (GFA_Flags & GFA_RANGED) {
             SB(" (ranged)");
         };
@@ -241,11 +241,11 @@ func string GFA_GetInfo(var string _) {
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_REUSE_PROJECTILES) > 0));
     SBc(13); SBc(10);
 
-    SB("Benutzerdefinierte Kollisionsverhalten: ");
+    SB("Custom collision behaviors: ");
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_CUSTOM_COLLISIONS) > 0));
     SBc(13); SBc(10);
 
-    SB("Critical hit detection: ");
+    SB("Criticial hit detection: ");
     SB(MEM_ReadStatStringArr(onOff, (GFA_Flags & GFA_CRITICALHITS) > 0));
 
     var string ret; ret = SB_ToString();

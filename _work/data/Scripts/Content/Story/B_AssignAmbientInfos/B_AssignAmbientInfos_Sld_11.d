@@ -92,7 +92,7 @@ INSTANCE Info_Sld_11_DasLager(C_INFO)
 	condition	= Info_Sld_11_DasLager_Condition;
 	information	= Info_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Is there a problem here in the camp?";
+	description = "Is there any trouble in this camp?";
 };                       
 
 FUNC INT Info_Sld_11_DasLager_Condition()

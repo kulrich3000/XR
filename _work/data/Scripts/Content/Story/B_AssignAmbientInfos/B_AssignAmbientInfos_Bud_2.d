@@ -37,7 +37,7 @@ INSTANCE Info_Bud_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_2_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I want to join you guys.";
+	description = "I want to join you.";
 };                       
 
 FUNC INT Info_Bud_2_EinerVonEuchWerden_Condition()
@@ -115,7 +115,7 @@ INSTANCE Info_Bud_2_DieLage(C_INFO) // E1
 	condition	= Info_Bud_2_DieLage_Condition;
 	information	= Info_Bud_2_DieLage_Info;
 	permanent	= 1;
-	description = "How's life here?";
+	description = "What's life like here?";
 };                       
 
 FUNC INT Info_Bud_2_DieLage_Condition()

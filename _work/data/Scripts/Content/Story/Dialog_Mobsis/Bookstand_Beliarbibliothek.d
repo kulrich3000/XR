@@ -38,9 +38,9 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_01_S1()
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 		Doc_PrintLine	( nDocID,  0, " "			);
 		Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "The gift of the gods");
+		Doc_PrintLine	( nDocID,  0, "A Gift from the Gods");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "For centuries people have been trying to understand the essence and origin of magic. But where to look? How can they be described? It is the most contradictory force we know. She can kill and heal at the same time, she can shape and destroy.");
+		Doc_PrintLines	( nDocID,  0, "Man has been trying to fathom the nature and origins of magic for centuries. But where should the search begin? How does one describe magic? It is the most conflicting power that has ever been known. It can kill and it can heal, it can create and it can destroy.");
 					
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -48,9 +48,9 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_01_S1()
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1, "What does such a force look like? Where can you find this invisible and yet so powerful force? Magic is what it is. The most glorious and powerful gift of the gods. The user and caster of this power is thus also given a divine gift. A sacred power that only a select few are able to control.");	
+		Doc_PrintLines	( nDocID,  1, "What does such power look like? Where can a man find this invisible, yet incredibly powerful force? Magic is what it is. It is the most marvelous and the most powerful gift the gods have ever given us. It is the divine gift presented to users and  weavers of magic. A healing power that only a few chosen ones are able to control.");	
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLine	( nDocID,  1, "Barthos from Laran");
+		Doc_PrintLine	( nDocID,  1, "Barthos of Laran");
 		Doc_Show		( nDocID );
 					
 		if (BeliarBibliothek_01 == FALSE)
@@ -85,7 +85,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_02_S1()
 		Doc_PrintLine	( nDocID,  0, "Secrets of Sorcery");
 					
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "The magus himself does not have any magic, he is rather able to make use of it. He himself has only the ability to influence and direct magic. The adept initiated in the High Art of Magic must be able to use his or her mind as a tool.");
+		Doc_PrintLines	( nDocID,  0, "The magic is not inherent in the magus himself, he is far more able to work it. The only skill he possesses is the ability to influence and guide magic. A disciple of the art of magic must be able to use his spirit as a tool.");
 					
 		//2.Seite
 		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -93,10 +93,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_02_S1()
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1, "It is his spirit that collects, shapes and bundles the all-environmental Arcane power and finally releases it into the world that is accessible to us. During this time of highest concentration, the magus succeeds with his spirit in penetrating our sphere and looking to the other side, from there comes the power, the magus himself is only leader and former of this power.");
+		Doc_PrintLines	( nDocID,  1, "His spirit serves as a vessel for the all-encompassing arcane power ... to shape it, focus it and finally release it into the world we know. During these moments of total concentration, the magus' spirit rises above our sphere and gazes upon the Other Side, the home of power. The magus himself is but a conductor and shaper of that power.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLine	( nDocID,  1, "Barthos from Laran");
+		Doc_PrintLine	( nDocID,  1, "Barthos of Laran");
 		Doc_Show		( nDocID );
 					
 		if (BeliarBibliothek_02 == FALSE)
@@ -132,10 +132,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "A work for the consecrated of Arcanic Art");
+					Doc_PrintLines	( nDocID,  0, "A Work for Those Instructed in the Arcane Art");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "The ability to channel divine power grows in the magician. At first, it germinates like a small sprout on the field and must be cared for so that it does not atrophy. But once this offspring has grown, it unfolds its full splendour.");
+					Doc_PrintLines	( nDocID,  0, "A magician's ability to control the divine power grows. At first, it appears like a small seed in a field. It must be tended or it will wither. But once the seed begins to grow, its splendor unfolds.");
 					
 					
 					//2.Seite
@@ -144,7 +144,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_03_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "It grows and grows and becomes stronger with every day. This is what happens to the docile magus. Its initially very small forces grow and prosper and, over time, develop a power that is not foreseeable in its completion. To lead this power to its highest perfection is the sacred duty of every magus, for this sprout seeded by the gods themselves is the greatest gift a mortal can receive.");
+					Doc_PrintLines	( nDocID,  1, "It continues to grow with each passing day. The same applies to a receptive magus. His powers may be weak to begin with, but given time they will wax and thrive, unfolding a power whose limits are unforeseeable. To guide this power to the point of perfection is the sacred duty of every magus, for the seed sown by the gods is the greatest gift a mortal can receive.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_03 == FALSE)
@@ -181,10 +181,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_04_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Classification of magic in the structure of the earthly");
+					Doc_PrintLines	( nDocID,  0, "The Place of Magic in the Order of the Worldly");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Much has been researched about magic and its position on the elements. It is fair to say that magic can be regarded as the absolute element. It has the power to change and shape all elements and is thus visibly transferred to them.");
+					Doc_PrintLines	( nDocID,  0, "Much research has taken place on magic and its relation to the elements. It is just to claim that magic represents the perfect element. It has the power to transform all the elements and to shape them, which means it is superior to them.");
 					
 					
 					//2.Seite
@@ -194,7 +194,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_04_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "A combination of element and magic reveals every element in its purest form, so there are only a few natural occurrences of such compounds and they are in great demand. Also the abilities of a magus element seemingly to be created from nothing are proof that the magical power is the purest and highest good that exists.");
+					Doc_PrintLines	( nDocID,  1, "Each element, when viewed in its purest form, unearths a connection to magic. Natural connections of this kind can only be found in very few places, and they are highly sought-after. A magus' ability to conjure up the elements, seemingly from nothing, proves that the power of magic is the purest, greatest good in existence.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_04 == FALSE)
@@ -231,10 +231,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_05_S1()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "The sacred duty of the expert");
+					Doc_PrintLines	( nDocID,  0, "The Sacred Duty of the Skillful");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "It is his power that separates the magus from ordinary people. He, endowed with the ability to influence divine power, is a being to whom the normal limits of mortal power do not apply. ");
+					Doc_PrintLines	( nDocID,  0, "It is power that distinguishes a magus from his fellow men. Equipped with the ability to influence the divine power, he is a being independent of the laws of nature which apply to mortal man. ");
 					
 					
 					//2.Seite
@@ -245,7 +245,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_05_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Once the magus has reached a degree that allows him to transcend the limits of his existence, he can place himself on a level above that of the normal mortal. He can penetrate the limits of space and time, even the end of all being, death, is not an obstacle on his way.");
+					Doc_PrintLines	( nDocID,  1, "Once a magus has reached a stage which enables him to rise above the limits of his existence, he can place himself on a higher plane than that in which mortal man lives. He can break through the boundaries of time and space, and not even death, the eve of existence, can stop him.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_05 == FALSE)
@@ -276,18 +276,18 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_06_S1()
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "From ore");
+					Doc_PrintLine	( nDocID,  0, "Magic Ore");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "The best ore for forging weapons can undoubtedly be found in the ore mines near Khorinis. It is of elemental purity and imbued with magic. It is of incomparable hardness and yet so soft that it does not break. A weapon forged from the steel obtained from the deep mines at an unimaginably high cost is not comparable to a blade, even if it is made from the best steel.");
+					Doc_PrintLines	( nDocID,  0, "The best ore for use when forging weapons is doubtless found in the ore mines of Khorinis. It is of fundamental purity and suffused with magic. It is of incomparable strength, yet so soft that it cannot break. A weapon forged from this steel, which is mined far below the ground at an inexpressible cost of effort, is a match for any blade, albeit made of the strongest steel.");
 					
 					
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
-					Doc_PrintLines	( nDocID,  1, ". No shield she can't break, no armour she can't pierce. Kings and heroes from days gone by wore weapons made of the best khorini steel, and in Myrtana the best prices are still achieved for such weapons today. However, a high price is also charged for this ore. It is as if the ore does not want to escape from the earth's depths.");
+					Doc_PrintLines	( nDocID,  1, "It will break any shield and pierce any armor. Kings and heroes of old wielded weapons forged from the finest steel of Khorinis, and high prices are still paid for such weapons throughout Myrtana. But the ore itself demands a high price. Much effort is required to break it from the rock. It is almost as though the ore were fighting to remain within the womb of the earth.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_06 == FALSE)
@@ -319,15 +319,15 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_07_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "... but Commander Rhobar chose the attack. He gathered his army and pushed forward with concentrated force against the badly covered right flank of the enemy. He did not stay long with the skirmishes, but pushed himself like a sword into the side of the enemy army and cut them up like paper. He kept pushing his men forward, always further towards the border of Varant. He knew that if he wanted to win this battle, he had to be able to share the enemy lord and prevent Gellon and Lukkor from joining forces. ");
+					Doc_PrintLines	( nDocID,  0, "... but Rhobar, the strategist, chose to attack. He assembled his troops and had them storm the enemy's weak right flank. He did not waste his time on long skirmishes, but thrust into the enemy army like a sword and cut down the defenses as though they were made of paper. On and on he drove his troops, advancing on the boarders of Varant. He knew that to win this fight, he would have to disperse the enemy army and prevent Gellon and Lukkor ");
 					
 					//2.Seite
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "  and give him the devastating blow. He had to be able to disrupt her supplies, then he couldn't take the victory any more..."	);
+					Doc_PrintLines	( nDocID,  1, "  uniting and dealing him a crushing blow. He would have to sever their supply lines to secure the victory ..."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "... Gellon was dead, his army defeated, his now leaderless men on the run. But Rhobar was not willing to give the enemy a chance to gather up and ordered them to leave immediately to destroy the enemy. Lukkor, however, decides to take advantage of the hour and take the blow out of King Rhobar's exhausted troops....");
+					Doc_PrintLines	( nDocID,  1, "... Gellon was dead, his army beaten, his leaderless troops on the run. But Rhobar was not willing to give the enemy a chance to regroup, and commanded his army to destroy the remainder of the enemy forces. Meanwhile, Lukkor took advantage of the moment and struck a decisive blow at King Rhobar's exhausted troops ...");
 					
 					Doc_Show		( nDocID );
 					
@@ -360,13 +360,13 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_08_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "The war was decided. Varant robbed his seaports, so important for the supply of troops. King Rhobar has not been on the battlefields of Varant for a long time, but has left it to his generals to wipe out the last enemy troops. Varant possessed only a larger army, led by Lukkor, the most capable warlord of the Varant army, more than once he had been able to transform an impending defeat into a victory.");
+					Doc_PrintLines	( nDocID,  0, "The war had been decided. Varant had lost its seaports, vital to army supplies. King Rhobar had not lingered on the battle fields for a long time, but left his generals to deal with the few remaining enemy troops. Varant had only one large force left, commanded by Lukkor, the most capable warlord of the Varant army, who had more than once turned defeat into victory.");
 					
 					//2.Seite
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, ". But now his army was trapped. Numerically superior to the enemy's army, but in a hopeless position. Lee, the war hero of Myrtana had lured him into a trap. His heavy cavalry couldn't fight on the deep, swampy ground of the narrow valley and the hills around him were occupied by Lee's soldiers, who kept pounding over and over again and thus decimated his master man by man. The desperate failures of his men had been beaten back bloody. He was defeated.");
+					Doc_PrintLines	( nDocID,  1, "But now his army was trapped. The situation was hopeless, even though his army greatly outnumbered the enemy. Lee, a war hero from Myrtana, had lured him into this trap. The heavy cavalry had been unable to fight on the thick, swamped ground of the narrow valley. Lee's soldiers had occupied the range of hills surrounding the swamp, and they had struck repeatedly, decimating the army. The desperate sallies his troops had launched had been cut short in pools of blood. He was beaten.");
 					
 					Doc_Show		( nDocID );
 					
@@ -402,9 +402,9 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_09_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "    The song of the");
+					Doc_PrintLine	( nDocID,  0, "    The Song of");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "		  regret");
+					Doc_PrintLine	( nDocID,  0, "		  Repentance");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -421,21 +421,21 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_09_S1()
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "In the beginning there was power, pure and pure,");				
+					Doc_PrintLines	( nDocID,  1, "In the beginning was the power, pure and white,");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "only the echo of the old oath remains.");				
+					Doc_PrintLines	( nDocID,  1, "Now only echoes of the vow sound through the night.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "The times of unity are long gone,");				
+					Doc_PrintLines	( nDocID,  1, "They tell of days of unity, long since past,");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "after possessions is now our purpose.");				
+					Doc_PrintLines	( nDocID,  1, "'Tis having and taking for which we now thirst.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "What is now divided is what was once together.");				
+					Doc_PrintLines	( nDocID,  1, "All unity was torn apart and burst.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Damn the spirit that took us.");				
+					Doc_PrintLines	( nDocID,  1, "Cursed the spirit which did not last.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Our songs are full of longing.");				
+					Doc_PrintLines	( nDocID,  1, "Of desire doth now tell our song.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Unity never comes again.");				
+					Doc_PrintLines	( nDocID,  1, "For unity is forever gone.");				
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_Show		( nDocID );
 					
@@ -468,18 +468,18 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_10_S1()
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Listen to the words of the gods, for it is their will that they be heard. Follow the teachings of the gods, for it is their will that they be obeyed. Respect the priests of the gods, for they are chosen."	);
+					Doc_PrintLines	( nDocID,  0, "Hear the words of the gods, for it is their will that you shall hear them. Heed the teachings of the gods, for it is their will that you shall heed them. Honor the priests of the gods, for they are the chosen ones."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "The words of Innos:'And if ye do not understand, do not doubt the words of the priests; their deeds are righteous and wise. For I am the rising sun, the light and life. And all that there against the sun is against me, and shall be banished forever and ever in the shadows.");
+					Doc_PrintLines	( nDocID,  0, "The word of Innos: And if it shall happen that you do not understand, do not despair at the words of the priests, for they are just and wise. For I am the rising sun, the light, and the life. And all that is contrary to the sun is contrary to me, and shall be banished to the shadows forever more.");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The words of Adanos:'Work and live, for the day is made for man to work. Look for learning and knowledge so that you can pass it on, because that's how you were created. But whoever is idle and lazy shall be banished to the shadows forever and ever."	);
+					Doc_PrintLines	( nDocID,  1, "The word of Adanos: Work and live, for the day was created so that man may work. Seek learning and knowledge so that you may pass it on, for it is for that purpose that you were created. But whosoever shall be listless and idle, he shall be banished to the shadows forever more."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Beliar's words:'But whosoever acts wrongly and against the will of the gods, I will punish him, the body with pain, suffering and death, but I will take the spirit to myself forever and ever in the shadows. "					);
+					Doc_PrintLines	( nDocID,  1, "The word of Beliar: But whosoever shall do wrong and go against the will of the gods, him I will punish. I will plague his body with pain, suffering and death, but his spirit shall join me in the shadows forever more. "					);
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_10 == FALSE)
@@ -511,13 +511,13 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_11_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "From the beginning of time: There was no day or night and no being moved over the world. Then appeared the world Inno's world and his light illuminated everything. And Innos gave life to the world. But since no being can live in the light of the Inno, he created the sun. But the light was still too strong. Then Innos divided and created Beliar. Beliar brought the night. Now the people could be. Then Innos divided again and created Adanos. Adanos gave people versatility, knowledge, curiosity and courage. Innos was very satisfied with himself and his work.");
+					Doc_PrintLines	( nDocID,  0, "Of the beginning of time: There was no night and no day, and no living thing moved across the land. Then Innos appeared and his light shone upon the world. And Innos gave unto the world the gift of life. But no creature could live in the light of Innos, so he created the sun. But still the light was too bright. So Innos divided himself and thus created Beliar. Beliar created the night. Now man could be. So Innos divided himself again and created Adanos. Adanos brought man versatility, knowledge, curiosity and courage. Innos was satisfied with what he had done.");
 					
 					//2.Seite
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "And he decided to leave the people of Adano entirely to rest. But Beliar was devoured with envy, for men did not pray to him and rested at night. Then he got angry and formed a man. A man who should worship only him. But man became like all other people. Beliar was so full of anger that he killed the man and said:'If they do not worship me, let them fear me. And he created death and took men's lives."	);
+					Doc_PrintLines	( nDocID,  1, "And he decided to leave mankind in the care of Adanos, and he rested. But Beliar was consumed by envy, for the people did not pray to him, but slept at night. He grew angry and created a man. A man to pray to him alone. But the man he created was like all other men. Beliar became so furious that he killed the man and spoke: If they will not worship me, then at least they shall fear me. And he created death and ended the lives of men."	);
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_11 == FALSE)
@@ -549,12 +549,12 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_12_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
    					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
    					Doc_PrintLine	( nDocID,  0, ""					);			
-					Doc_PrintLines	( nDocID,  0, "Innos gave the people the power to hear him and speak to him. He gave them the power to perform great miracles. And he called it magic. With this power, people could freely shape the world according to their will. There were no boundaries that Innos showed them. And so men were part of the divine creative power. But men were all alike and they didn't like it. So he took away the strength of those who were dissatisfied. The few who were grateful put Innos above all others"	);
+					Doc_PrintLines	( nDocID,  0, "Innos gave mankind the power to hear him and speak to him. He gave mankind the power to perform great miracles, and he called them magic. With this power, the people were able to design the world after their will. Innos gave them no limits. And thus man received a portion of the divine power of creation. But not all the people were equal, and this dissatisfied them. So he took the power from the discontented. Innos raised the few who had shown him gratitude above the others."	);
 					
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
  					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "These people were soon worshipped and feared and were called priests. But even among them there were many who were soon dissatisfied. And so it happened that they prayed to Adanos and forgot their origins. The priests were divided. Wars were unleashed and the belief in divine omnipotence soon became a myth. So the priests divided. Those who followed the Adanos were now called magicians of the water, but the consecrated of the Inno were called the magicians of fire."	);
+					Doc_PrintLines	( nDocID,  1, "These few were soon revered and feared, and the people  called them priests. But among them were many who soon became dissatisfied. And so it happened that they prayed to Adanos and forgot their origins. The league of priests was divided. Wars ensued and the faith in divine omnipotence soon became a myth. And so the priests were separated. Those who followed Adanos were called Magicians of the Circle of Water, while the priests of Innos became known as the Magicians of the Circle of Fire."	);
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_12 == FALSE)
@@ -586,13 +586,13 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_13_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "His writing has survived the times and his advice is regarded as a textbook of hunting. After the great battles in the north, each fellow countryman is now familiar with how to handle the bow. However, there are a few rules to follow when hunting, which go beyond the easy handling of the weapon! The game is shy and unpredictable.");
+					Doc_PrintLines	( nDocID,  0, "His writings have outlasted the ages and his advice is considered a book on the art of hunting. Following the heavy battles in the north, every countryman now knows how to use a bow and arrows. Yet there are some rules to be followed when hunting which exceed the simple knowledge of how to use the weapon! Game is both timid and unpredictable.");
 					
 					//2.Seite
 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "The art of bow hunting has not only the oldest tradition, but is also the most common of all conceivable types of hunting. The technique of this kind of traditional hunting has hardly changed in the course of thousands of years and will probably not change in the future. What circumstances really determine the course of hunting with the bow? Recognizing these laws is the true art of bow hunting."	);
+					Doc_PrintLines	( nDocID,  1, "The art of hunting with a bow is not merely ancient tradition, but the most common form of hunting. The techniques employed in this traditional method of hunting have hardly altered in the course of the millennia, and it is unlikely that they will change in the future. What circumstances really determine a hunt with a bow and arrow? To recognize these laws is the true art of bow hunting."	);
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_13 == FALSE)
@@ -626,20 +626,20 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_14_S1()
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
-					Doc_PrintLines	( nDocID,  0, "For 2000 years, these teachings of the Master were the pillars in the development of martial arts.  "	);
+					Doc_PrintLines	( nDocID,  0, "For 2000 years, the teachings of this expert have determined the development of the art of fighting.  "	);
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
-   					Doc_PrintLines	( nDocID,  0, "It trains the mobility of the body, rest and speed, observation and reaction. The movements must be well coordinated and the posture must be correct in order to achieve the best development of your strength."	);			
+   					Doc_PrintLines	( nDocID,  0, "Dexterity, composure, speed, observation and reactions are the skills which must be trained. Your movements must be well-coordinated and your posture correct if you want your powers to blossom."	);			
 					
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "The core of the Master's spiritual and physical teachings has survived many years.  "	);
+					Doc_PrintLines	( nDocID,  1, "The essence of the master's spiritual and physical teachings has survived many years.  "	);
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
- 					Doc_PrintLines	( nDocID,  1, "His unique success has influenced generations. Thousands of years in which the world has often changed its appearance, but in which one thing will last forever: the harmony of inner forces with the targeted external movement of the body."					);					
+ 					Doc_PrintLines	( nDocID,  1, "His unique success has influenced generations. For millennia, the face of the world has shifted and changed, but the harmony of inner powers with movements of the body has survived."					);					
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_14 == FALSE)
@@ -671,18 +671,18 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_15_S1()
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "In the centre is the Morgrad with its four elements earth, water, fire and air, the space of the transient, in its interior the unspeakable darkness of the Beliar. Above everything is the sphere of heaven."	);
+					Doc_PrintLines	( nDocID,  0, "In the center lies the Morgrad, containing the four elements earth, water, fire and air. It is the place of transience, the heart of the inexpressible darkness of Beliar. Above all this towers the sphere of the heavens."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "In the hierarchy of the cosmos, man occupies the position of the receiver. Through his soul he is part of the supreme being, the divine spirit, whereas his transient body is made up of substances of the Morgrad. As a small image of the whole world.");
+					Doc_PrintLines	( nDocID,  0, "In the hierarchy of the universe, man is a receiver. His soul allows him to take part in the highest plane of existence, the divine spirit. Yet man's body is made from the substance of the Morgrad. He is a reflection of the world itself.");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "The synodic orbit of the planets, i. e.. the period of time between two similar positions in relation to the mortuary degree of our world differs by a few degrees every century, so that we can expect to find ourselves in a constant movement with the rest of the cosmos."	);
+					Doc_PrintLines	( nDocID,  1, "The synodic orbit of the planets, that is the course they take between two identical positions in relation to the Morgrad of our world, varies by just a few degrees every century. We therefore conclude that we are constantly moving with the rest of the universe."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "When we set up a calendar, we referred to the moon's course at the beginning, in order to maintain the connection to the actual length of the solar year.");
+					Doc_PrintLines	( nDocID,  1, "When we created the first calendar, we observed the course of the moon to determine the length of the solar year.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_15 == FALSE)
@@ -714,10 +714,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_16_S1()
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "The balm of sight:"	);
+					Doc_PrintLines	( nDocID,  0, "The Balm of Vision:"	);
 					Doc_PrintLine	( nDocID,  0, "----------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);		
-					Doc_PrintLines	( nDocID,  0, "To do this, he's got bile painted on his eyes. Bile is bitter in taste. If this bitterness is taken to the eye, i. e. if we look at the bitterness, wisdom is born of it. We will see! Bitterness and wisdom are mutually exclusive. They're antipoles!");
+					Doc_PrintLines	( nDocID,  0, "Cover the patient's eyes with bile. This secretion has a bitter taste. Placing this bitterness on the eye forces the patient to regard it, which makes him wise. He learns to see! Bitterness and wisdom are mutually exclusive opposites. They are each other's counterparts!");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -725,7 +725,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_16_S1()
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Tears, sorrow and disappointment are bitter, but wisdom is the comforter in every spiritual pain. Bitterness and wisdom are an alternative. Wherever bitterness, there is no wisdom, and where wisdom, there is no bitterness.");
+					Doc_PrintLines	( nDocID,  1, "Tears, suffering and disappointment are bitter, but wisdom is the consoling influence of every kind of pain. Bitterness and wisdom are alternatives. Where there is bitterness, there is no room for wisdom, and where there is wisdom, there is no bitterness.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_16 == FALSE)
@@ -757,10 +757,10 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_17_S1()
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "The wine of forgetting"	);
+					Doc_PrintLines	( nDocID,  0, "The Wine of Oblivion"	);
 					Doc_PrintLine	( nDocID,  0, "--------------------"					);
 						Doc_PrintLine	( nDocID,  0, ""					);			
-					Doc_PrintLines	( nDocID,  0, "High up on the slopes of Archolo, there are the best grapes that can be found for this wine. The art of ripening this wine to its perfection is not to leave it in motion under any circumstances. The grapes are mixed with the common Syos cabbage in front of the winery. ");
+					Doc_PrintLines	( nDocID,  0, "The best grapes for this wine are found high up on the slopes of Archolos. The art of allowing this wine to ripen to perfection lies in not disturbing it through any kind of movement. The grapes are blended with the common syos herb in front of the wine cellars. ");
 
 					//2.Seite
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
@@ -769,7 +769,7 @@ FUNC VOID BOOKSTAND_BELIARBIBLIOTHEK_17_S1()
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Behold and be amazed when the Magister transforms clearest well water into excellent wine. All pay homage to him and feed on his gift. The Magister puts his lazy apprentices in bottles to punishment, fires are miraculously ignited and black snakes grow up.");
+					Doc_PrintLines	( nDocID,  1, "Observe and marvel as the master turns the clear water of the well to wine. The people pay tribute to him and feast on his gift. The master punishes his lazy disciples by locking them in bottles. A fire is kindled and black snakes arise.");
 					Doc_Show		( nDocID );
 					
 					if (BeliarBibliothek_17 == FALSE)

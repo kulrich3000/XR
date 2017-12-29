@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_29_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_29_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_29_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Can you guys use another good man?";
+	description = "Do you need another good man?";
 };                       
 
 FUNC INT Info_Tpl_29_EinerVonEuchWerden_Condition()

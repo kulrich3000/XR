@@ -238,7 +238,7 @@ INSTANCE Info_Mod_GorNaDrak_CrawlerZangen (C_INFO)
 
 FUNC INT Info_Mod_GorNaDrak_CrawlerZangen_Condition()
 {
-	Info_Mod_GorNaDrak_CrawlerZangen.description = B_BuildLearnString("Can you tell me how to get to the secretary of a minecrawler?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles));
+	Info_Mod_GorNaDrak_CrawlerZangen.description = B_BuildLearnString("Can you tell me how to get the secretion of a minecrawler?", B_GetLearnCostTalent(hero, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles));
 
 	if (Npc_KnowsInfo(hero, Info_Mod_GorNaDrak_Lehrer))
 	&& (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] == FALSE)

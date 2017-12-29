@@ -84,7 +84,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Which of these people should I know?";
+	description = "What people should I know round here?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -108,7 +108,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "What can you tell me about the camp?";
+	description = "What can you tell me about the Camp?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()

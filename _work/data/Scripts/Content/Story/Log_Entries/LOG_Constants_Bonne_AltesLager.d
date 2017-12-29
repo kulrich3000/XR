@@ -1,5 +1,5 @@
 const string TOPIC_MOD_ALTESLAGER	=	"Old warehouse";
-const string TOPIC_MOD_PDV	=	"Verification of trust";
+const string TOPIC_MOD_PDV	=	"Test of Faith";
 const string TOPIC_MOD_AL_ARENA	=	"The Arena";
 const string TOPIC_MOD_AL_ORIK	=	"Abduction from the New Camp";
 const string TOPIC_MOD_AL_SCHMUGGLER	=	"The Smugglers";

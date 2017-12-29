@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_13_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "I want to be a Templar, like you.";
+	description = "I want to become a templar like you.";
 };                       
 
 FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()

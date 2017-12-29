@@ -658,7 +658,7 @@ FUNC VOID Info_Mod_Eremit_ScrollJG_B()
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_02"); //We got the part too.
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_03"); //It says here: Ralgnatiru chrenid....
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_04"); //By the way:"Take this role, a lump of impure ore, a potion of speed, part of an animal or a fly agaric, the flesh of an undead and two skeletal bones.
-	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_05"); //
+	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_05"); //Das füge man in der Opferschale zusammen. Sodann erscheint ein Gegenstand, der dir in Zeiten höchster Bedrängnis helfen wird."
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_06"); //Whew. That raises more questions than there are answers.
 	AI_Output(self, hero, "Info_Mod_Eremit_ScrollJG_B_20_07"); //Sorry about that. We can't help you there either.
 	AI_Output(hero, self, "Info_Mod_Eremit_ScrollJG_B_15_08"); //I'll bet you do. So, we're even?

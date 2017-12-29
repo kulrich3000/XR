@@ -245,7 +245,7 @@ func int GFA_InitOnce() {
 
     // Copyright notice in zSpy
     var int s; s = SB_New();
-    SB("     "); SB(GFA_VERSION); SB("copyright "); SBc(169 /* (C) */); SB(" 2016-2017  mud-freak (@szapp)");
+    SB("     "); SB(GFA_VERSION); SB(", Copyright "); SBc(169 /* (C) */); SB(" 2016-2017  mud-freak (@szapp)");
     MEM_Info("");
     MEM_Info(SB_ToString()); SB_Destroy();
     MEM_Info("     <http://github.com/szapp/GothicFreeAim>");
@@ -254,7 +254,7 @@ func int GFA_InitOnce() {
     MEM_Info("");
 
     // Add emergency-lock, in case a mod-project is released with a critical bug related to GFA
-    if (MEM_ModOptExists("OVERRIDES", "GFA. emergency lock")) {
+    if (MEM_ModOptExists("OVERRIDES", "GFA.emergencyLock")) {
         MEM_SendToSpy(zERR_TYPE_WARN, "GFA emergency lock active");
         MEM_Info("Remove GFA.emergencyLock override in Mod-INI to enable GFA.");
         return FALSE;
@@ -284,7 +284,7 @@ func int GFA_InitOnce() {
     MEM_Info("Initializing console commands.");
     CC_Register(GFA_GetVersion, "GFA version", "print GFA version info");
     CC_Register(GFA_GetLicense, "GFA license", "print GFA license info");
-    CC_Register(GFA_GetInfo, "FFA info", "print GFA config info");
+    CC_Register(GFA_GetInfo, "GFA info", "print GFA config info");
     CC_Register(GFA_GetShootingStats, "GFA stats", "print shooting statistics");
     CC_Register(GFA_ResetShootingStats, "GFA stats reset", "reset shooting statistics");
     if (GFA_DEBUG_CONSOLE) {

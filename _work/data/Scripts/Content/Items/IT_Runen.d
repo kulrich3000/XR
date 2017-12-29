@@ -381,7 +381,7 @@ INSTANCE ItRu_TrfMolerat (C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER_WHITE";
 
-	description			=	"Metamorphosis of Molerat";
+	description			=	"Transform into Molerat";
 	
 	TEXT	[1]			=	NAME_Manakosten;		
 	COUNT	[1]			=	SPL_Cost_Scroll;

@@ -312,7 +312,7 @@ FUNC VOID Info_Mod_Kamal_Lernen_Info()
 		
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_05] == FALSE)
 	{
-		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Drink of fast healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Kamal_Lernen_Health_05);
+		Info_AddChoice	  (Info_Mod_Kamal_Lernen, B_BuildLearnString ("Potion of Quick Healing", B_GetLearnCostTalent (hero, NPC_TALENT_ALCHEMY, POTION_Health_05)), Info_Mod_Kamal_Lernen_Health_05);
 	};	
 	
 		

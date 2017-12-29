@@ -110,7 +110,7 @@ FUNC VOID Info_Mod_Penner_Infos_Choices()
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 50)
 	{
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Who is mainly responsible for the water supply? (50 Gold)", Info_Mod_Penner_Infos_D);
-		//Info_AddChoice	(Info_Mod_Penner_Infos, "How many stalls does the market place of Khorata have? (50 Gold)", Info_Mod_Penner_Infos_C);
+		//Info_AddChoice	(Info_Mod_Penner_Infos, "Wie viele Stände hat der Marktplatz von Khorata? (50 Gold)", Info_Mod_Penner_Infos_C);
 		Info_AddChoice	(Info_Mod_Penner_Infos, "What was the keeper's name of the three rats? (50 Gold)", Info_Mod_Penner_Infos_B);
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Where can I find an abortion? (50 Gold)", Info_Mod_Penner_Infos_A);
 	};

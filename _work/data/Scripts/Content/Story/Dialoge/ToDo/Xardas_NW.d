@@ -2416,7 +2416,7 @@ INSTANCE Info_Mod_Xardas_NW_VonWemKannIchLernen (C_INFO)
 	information	= Info_Mod_Xardas_NW_VonWemKannIchLernen_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Who can teach me what?";
+	description	= "Who can teach me?";
 };
 
 FUNC INT Info_Mod_Xardas_NW_VonWemKannIchLernen_Condition()

@@ -62,7 +62,7 @@ INSTANCE Info_ReisBau_4_DasLager(C_INFO)
 	condition	= Info_ReisBau_4_DasLager_Condition;
 	information	= Info_ReisBau_4_DasLager_Info;
 	permanent	= 1;
-	description = "What do I need to know about this place?";
+	description = "Is there anything I should know about this place?";
 };                       
 
 FUNC INT Info_ReisBau_4_DasLager_Condition()
@@ -86,7 +86,7 @@ INSTANCE Info_ReisBau_4_DieLage(C_INFO) // E1
 	condition	= Info_ReisBau_4_DieLage_Condition;
 	information	= Info_ReisBau_4_DieLage_Info;
 	permanent	= 1;
-	description = "How's everything going?";
+	description = "How's it going?";
 };                       
 
 FUNC INT Info_ReisBau_4_DieLage_Condition()

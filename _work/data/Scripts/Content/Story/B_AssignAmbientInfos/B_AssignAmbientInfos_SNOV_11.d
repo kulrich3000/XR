@@ -27,7 +27,7 @@ INSTANCE Info_Mod_SNOV_11_Beliarkloster (C_INFO)
 	information	= Info_Mod_SNOV_11_Beliarkloster_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "What are the places of interest?";
+	description	= "Is there anywhere important here where I should go?";
 };
 
 FUNC INT Info_Mod_SNOV_11_Beliarkloster_Condition()

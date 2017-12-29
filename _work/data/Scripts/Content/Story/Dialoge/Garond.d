@@ -351,7 +351,7 @@ FUNC VOID Info_Mod_Garond_Mario3_Info()
 
 	Info_ClearChoices	(Info_Mod_Garond_Mario3);
 
-	Info_AddChoice	(Info_Mod_Garond_Mario3, "I'll talk to you later!", Info_Mod_Garond_Mario3_B);
+	Info_AddChoice	(Info_Mod_Garond_Mario3, "I'll be seeing you!", Info_Mod_Garond_Mario3_B);
 	Info_AddChoice	(Info_Mod_Garond_Mario3, "I call you to a duel, too!", Info_Mod_Garond_Mario3_A);
 };
 

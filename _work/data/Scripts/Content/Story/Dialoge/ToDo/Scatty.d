@@ -503,8 +503,8 @@ FUNC VOID Info_Mod_Scatty_Kap4_Info()
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_09"); //There I tried to open the gate with the guards, while at the same time we had to defend ourselves against some of the green bastards.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_10"); //With the last effort I managed it... but the other two boys did bite the dust, though.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_11"); //When I was running around outside, I thought about where to go.
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hey, the guys from the swamp scribbles always showed what they're made of in the arena."
-	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_12"); //Ich dachte mir: "Hey, the guys from the swamp scribbles always showed what they're made of in the arena."Ich dachte mir: "Hey, die Jungs von den Sumpffritzen haben doch immer in der Arena gezeigt, aus welchem Holz sie geschnitzt sind.
+	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_13"); //So einen wie mich können die bei den Templern bestimmt gut gebrauchen."
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_14"); //Well, what now? I can watch out for the novices at the harvest.
 	AI_Output(self, hero, "Info_Mod_Scatty_Kap4_01_15"); //I really don't know what I'm doing here....
 

@@ -191,7 +191,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_1000()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 1,000 gold coins. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_1000_04_03"); //You gotta be kidding me. You don't have 1,000 gold coins. Well, wait.
 
 		MerkLebenspunkteBartok	=	self.attribute[ATR_HITPOINTS];
 		MerkLebenspunkteHeldBartok	=	hero.attribute[ATR_HITPOINTS];
@@ -220,7 +220,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_500()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 500 gold coins. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_500_04_03"); //You gotta be kidding me. You don't have 500 gold coins. Well, wait.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -246,7 +246,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_200()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //Du willst mich wohl verarschen. Du hast gar keine 200 gold coins. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_200_04_03"); //You gotta be kidding me. You don't have 200 gold coins. Well, wait.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -283,7 +283,7 @@ FUNC VOID Info_Mod_Bartok_Arbeite_Geld_100()
 	}
 	else
 	{
-		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //Du willst mich wohl verarschen. Du hast keine 100 gold coins. Na warte.
+		AI_Output(self, hero, "Info_Mod_Bartok_Arbeite_Geld_100_04_06"); //You gotta be kidding me. You don't have 100 gold coins. Well, wait.
 
 		AI_StopProcessInfos	(self);
 		B_Attack	(self, hero, AR_NONE, 1);
@@ -443,7 +443,7 @@ FUNC VOID Info_Mod_Bartok_Stimme_B()
 	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_01"); //Just tell Harad to take care of it.
 	AI_Output(self, hero, "Info_Mod_Bartok_Stimme_B_04_02"); //Here's my savings. I want him to think of something decent.
 
-	B_GiveInvItems	(hero, self, ItMi_Gold, 1000);
+	B_GiveInvItems	(self, hero, ItMi_Gold, 1000);
 
 	Log_CreateTopic	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BARTOK_SUMPFKRAUTRUESTUNG, LOG_RUNNING);

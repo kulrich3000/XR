@@ -39,7 +39,7 @@ INSTANCE Info_Bud_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Bud_4_EinerVonEuchWerden_Condition;
 	information	= Info_Bud_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "What do I have to do to get into this camp?";
+	description = "What do I have to do to join this camp?";
 };                       
 
 FUNC INT Info_Bud_4_EinerVonEuchWerden_Condition()
@@ -70,7 +70,7 @@ INSTANCE Info_Bud_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bud_4_WichtigePersonen_Condition;
 	information	= Info_Bud_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Are there any people here I should know?";
+	description = "Is there anyone special here I should know?";
 };                       
 
 FUNC INT Info_Bud_4_WichtigePersonen_Condition()
@@ -95,7 +95,7 @@ INSTANCE Info_Bud_4_DasLager(C_INFO)
 	condition	= Info_Bud_4_DasLager_Condition;
 	information	= Info_Bud_4_DasLager_Info;
 	permanent	= 1;
-	description = "What are the places of interest?";
+	description = "Is there anywhere important here where I should go?";
 };                       
 
 FUNC INT Info_Bud_4_DasLager_Condition()

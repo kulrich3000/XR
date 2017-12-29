@@ -56,7 +56,7 @@ INSTANCE Info_Mod_Owen_Auftrag (C_INFO)
 	information	= Info_Mod_Owen_Auftrag_Info;
 	permanent	= 0;
 	important	= 0;
-	description	= "Can I help you?";
+	description	= "Is there anything I can do to help?";
 };
 
 FUNC INT Info_Mod_Owen_Auftrag_Condition()

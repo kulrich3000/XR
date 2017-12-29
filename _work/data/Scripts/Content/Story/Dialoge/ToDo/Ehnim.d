@@ -51,7 +51,7 @@ FUNC VOID Info_Mod_Ehnim_Hi_Info()
 	};
 	if (Npc_HasItems(hero, ItPo_Health_05) > 0)
 	{
-		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Drink of fast healing", Info_Mod_Ehnim_Hi_A);
+		Info_AddChoice	(Info_Mod_Ehnim_Hi, "Potion of Quick Healing", Info_Mod_Ehnim_Hi_A);
 	};
 };
 
