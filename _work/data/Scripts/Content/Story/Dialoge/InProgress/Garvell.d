@@ -236,7 +236,7 @@ FUNC VOID Info_Mod_Garvell_Fenia2_Info()
 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "");
+	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "Teraz powinienem uzyc zaklecia w samym Garvell.....");
 };
 
 INSTANCE Info_Mod_Garvell_Fenia3 (C_INFO)

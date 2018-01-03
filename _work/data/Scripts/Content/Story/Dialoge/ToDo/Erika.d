@@ -159,7 +159,7 @@ FUNC VOID Info_Mod_Erika_Nagelnachschub2_Info()
 
 	B_GivePlayerXP	(50);
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "");
+	B_LogEntry	(TOPIC_MOD_KHORATA_NAGELNACHSCHUB, "Erika dala mi paznokcie.");
 };
 
 INSTANCE Info_Mod_Erika_Kissen (C_INFO)

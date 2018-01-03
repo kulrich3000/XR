@@ -508,7 +508,7 @@ func void UseOTGeheimkammer04 ()
 
 INSTANCE ItWr_OTGeheimkammer05		(C_Item)
 {
-	name 				=	"";
+	name 				=	"Kawalek papieru 1 i 2";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -521,7 +521,7 @@ INSTANCE ItWr_OTGeheimkammer05		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"";
+	TEXT[1]				=	"Górne dwie trzecie";
 };
 
 func void UseOTGeheimkammer05 ()
@@ -544,13 +544,13 @@ func void UseOTGeheimkammer05 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem fragmenty notatki, gdzie Kor Kalom zdaje sie pisac jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebny jest mi jeszcze inny kawalek.");
 	};
 };
 
 INSTANCE ItWr_OTGeheimkammer06		(C_Item)
 {
-	name 				=	"";
+	name 				=	"Kawalek papieru 1 i 3";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -563,7 +563,7 @@ INSTANCE ItWr_OTGeheimkammer06		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"";
+	TEXT[1]				=	"Górna i dolna trzecia trzecia";
 };
 
 func void UseOTGeheimkammer06 ()
@@ -595,13 +595,13 @@ func void UseOTGeheimkammer06 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem fragmenty notatki, gdzie Kor Kalom zdaje sie pisac jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebny jest mi jeszcze inny kawalek.");
 	};
 };
 
 INSTANCE ItWr_OTGeheimkammer07		(C_Item)
 {
-	name 				=	"";
+	name 				=	"Kawalek papieru 2 i 3";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION|ITEM_SHOW;
@@ -614,7 +614,7 @@ INSTANCE ItWr_OTGeheimkammer07		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"";
+	TEXT[1]				=	"Nizsze dwie trzecie";
 };
 
 func void UseOTGeheimkammer07 ()
@@ -647,7 +647,7 @@ func void UseOTGeheimkammer07 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem fragmenty notatki, gdzie Kor Kalom zdaje sie pisac jak dostac sie do ukrytego pokoju. Jednak do rozwiazania zagadki potrzebny jest mi jeszcze inny kawalek.");
 	};
 };
 
@@ -666,7 +666,7 @@ INSTANCE ItWr_OTGeheimkammer08		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[0]				=	"Informacja o sekretnej izbie";
-	TEXT[1]				=	"";
+	TEXT[1]				=	"Kompletny montaz";
 };
 
 func void UseOTGeheimkammer08 ()
@@ -691,7 +691,7 @@ func void UseOTGeheimkammer08 ()
 
 		Log_CreateTopic	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_MISSION);
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_RUNNING);
-		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "");
+		B_LogEntry	(TOPIC_MOD_OT_GEHEIMKAMMER, "Znalazlem notatke, w której Cor Kalom zdaje sie pisac, jak dostac sie do ukrytego pokoju.");
 	};
 };
 

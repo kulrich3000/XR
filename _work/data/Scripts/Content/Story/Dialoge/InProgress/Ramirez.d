@@ -226,7 +226,7 @@ FUNC VOID Info_Mod_Ramirez_WelcomeBack_Info()
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 5000);
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez i Attila sa wolne. Ale ja jeszcze bede pladrowal klatke piersiowa Pana Andre' a.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez i Attila sa wolne. Ale mam jeszcze grabic klatke piersiowa Pana Andresa.");
 
 	AI_StopProcessInfos	(self);
 
