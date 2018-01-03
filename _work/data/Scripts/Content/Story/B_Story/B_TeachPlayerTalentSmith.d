@@ -48,7 +48,7 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"For a simple sword I don't need any other ingredients.");};
+	B_LogEntry (TOPIC_TalentSmith,"I don't need any more ingredients for the ususal sword.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"I need 1 ore lump to forge an ´ORE-LONGSWORD´.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
@@ -78,7 +78,7 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"I can now even forge a ruby blade."); };
 	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;
-	B_LogEntry (TOPIC_TalentSmith,"Harad taught me to forge' El Bastardo' - one of the best one-handed weapons there is!"); };
+	B_LogEntry (TOPIC_TalentSmith,"Harad teached me to forge 'El Bastardo' - one of the best one-handed weapons that exist!"); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

@@ -291,13 +291,13 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("Two pieces of gold, chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("2 gold nuggets mined! ...", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("1 lump of gold, chopped! ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("1 gold nugget mined! ...", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;

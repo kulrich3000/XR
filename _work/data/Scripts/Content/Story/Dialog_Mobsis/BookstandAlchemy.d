@@ -155,7 +155,7 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, "1 goblin berry"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Speed Potion"						);
-					Doc_PrintLines	( nDocID,  0, "1 Snapperkraut - this potion does not need a Kronstöckl, but fieldknotsweed"						);
+					Doc_PrintLines	( nDocID,  0, "1 snapperweed - This potion requires no king's sorrel, but meadow knotweed."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elixir of Strength"						);
 					Doc_PrintLine	( nDocID,  0, "1 dragonroot"						);

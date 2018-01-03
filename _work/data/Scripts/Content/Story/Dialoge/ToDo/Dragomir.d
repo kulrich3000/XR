@@ -1048,7 +1048,7 @@ FUNC VOID Info_Mod_Dragomir_Leichengase_Info()
 		{
 			Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "Here's 50 pieces of gold.", Info_Mod_Dragomir_Leichengase_B);
 		};
-		Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "", Info_Mod_Dragomir_Leichengase_A);
+		Info_AddChoice	(Info_Mod_Dragomir_Leichengase, "I need your help.", Info_Mod_Dragomir_Leichengase_A);
 	};
 
 	B_GivePlayerXP	(150);

@@ -30,7 +30,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Ice Lance");
-					Doc_PrintLine	( nDocID,  0, "glacier quartz");
+					Doc_PrintLine	( nDocID,  0, "Glacier Quartz");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Geyser");
@@ -38,7 +38,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Storm");
-					Doc_PrintLine	( nDocID,  0, "glacier quartz");
+					Doc_PrintLine	( nDocID,  0, "Glacier Quartz");
 					Doc_PrintLine	( nDocID,  0, "Wings of a bloodfly");
 					Doc_PrintLine	( nDocID,  0, "");
 					

@@ -1072,8 +1072,8 @@ func void Use_MinenAnteil_Mis ()
 					Doc_PrintLine	(nDocID,  0, "Ore Mine Stake"									);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLines	(nDocID,  0, "The owner of this letter is permitted, according to the Royal Decree on the Acquisition of Property from Reichsgrund, to act as a prospector on royal property.");
-					Doc_PrintLines	(nDocID,  0, "His prospecting activities must be limited to the area of a royal parcel of land.");
+					Doc_PrintLines	(nDocID,  0, "The owner of this writing is granted prospecting rights, according to the King's decree, to make profit from royal Land.");
+					Doc_PrintLines	(nDocID,  0, "He must limit his scraping to the area of one small royal parcel of land.");
 					Doc_PrintLines	(nDocID,  0, "According to the decree of Scrapeland Size, small royal land parcels measure 16 paces in horizontal and 3 paces in vertical extension.");
 					Doc_PrintLines	(nDocID,  0, "The Prospector of the Realm is unbound by any duties of free access and protection of scraping cells.");
 					Doc_PrintLines	(nDocID,  0, "If the tenant is unable to pay the rent in time, all rights to the land are returned to the Realm.");

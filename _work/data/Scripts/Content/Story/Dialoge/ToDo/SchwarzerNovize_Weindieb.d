@@ -52,7 +52,7 @@ FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_C()
 
 	B_StartOtherRoutine	(self, "TOT");
 	
-	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "");
+	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "I let the wine and the thief go. That should do Serpentes.");
 };
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_B()
@@ -66,7 +66,7 @@ FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_B()
 
 	B_StartOtherRoutine	(self, "FLUCHT");
 	
-	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "");
+	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "The wine thief tries to get out of the dust. I'll kill him!");
 };
 
 FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_A()
@@ -80,7 +80,7 @@ FUNC VOID Info_Mod_SchwarzerNovize_Weindieb_Hi_A()
 
 	B_StartOtherRoutine	(self, "FLUCHT");
 	
-	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "");
+	B_LogEntry	(TOPIC_MOD_SERPENTES_WEINDIEBE, "The wine thief tries to get out of the dust. I'll kill him!");
 };
 
 INSTANCE Info_Mod_SchwarzerNovize_Weindieb_EXIT (C_INFO)

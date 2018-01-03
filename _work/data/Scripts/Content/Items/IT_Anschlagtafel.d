@@ -441,7 +441,7 @@ func void UseItWr_Anschlagtafel_Ignaz ()
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Quartz > 0)
 		{
-			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz), " glacier quartz"));
+			Doc_PrintLine	(nDocID,  0, ConcatStrings(IntToString(Mod_Anschlagtafel_Khorinis_Ignaz_Quartz), " Glacier Quartz"));
 		};		
 		if (Mod_Anschlagtafel_Khorinis_Ignaz_Bergkristall > 0)
 		{

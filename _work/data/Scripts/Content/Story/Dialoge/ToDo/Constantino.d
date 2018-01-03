@@ -380,10 +380,10 @@ INSTANCE Info_Mod_Constantino_LehrlingQuest (C_INFO)
 FUNC INT Info_Mod_Constantino_LehrlingQuest_Condition()
 {
 	if (Mod_LehrlingBei == 1)
-	&& (Npc_HasItems(hero, ItPo_Health_01) >= 5)
-	&& (Npc_HasItems(hero, ItPo_Mana_01) >= 5)
-	&& (Mod_Count_Health_01 >= 5)
-	&& (Mod_Count_Mana_01 >= 5)
+	&& (Npc_HasItems(hero, ItPo_Health_01) >= 2)
+	&& (Npc_HasItems(hero, ItPo_Mana_01) >= 2)
+	&& (Mod_Count_Health_01 >= 2)
+	&& (Mod_Count_Mana_01 >= 2)
 	{
 		return 1;
 	};

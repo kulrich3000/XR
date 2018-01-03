@@ -85,6 +85,7 @@ FUNC INT Info_Mod_Penner_Infos_Condition()
 };
 
 var int Mod_Penner_HeardAboutJuliana;
+var int Mod_Penner_ElviraGoodInfo;
 
 FUNC VOID Info_Mod_Penner_Infos_Choices()
 {
@@ -95,6 +96,7 @@ FUNC VOID Info_Mod_Penner_Infos_Choices()
 	if (Npc_KnowsInfo(hero, Info_Mod_Cassia_Elvira))
 	&& (Npc_HasItems(Mod_7499_KDF_Elvira_REL, ItKe_RELMagier) == 1)
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 50)
+	&& (!Mod_Penner_ElviraGoodInfo)
 	{
 		Info_AddChoice	(Info_Mod_Penner_Infos, "Can you tell me something about Elvira? (50 Gold)", Info_Mod_Penner_Infos_F);
 	};
@@ -141,6 +143,10 @@ FUNC VOID Info_Mod_Penner_Infos_F()
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_05"); //The innkeeper made one of his own and offered her a monastery wine.
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_06"); //And her? First I was hesitant and then asked for the alcohol-free monastery wine, huhä.
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_07"); //She's probably going to be different with alcohol, if you know what I mean, haha.
+	
+	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Der Penner hat erzählt, dass Elvira in der Kneipe nach einem alkoholfreien Klosterwein gefragt hat. Er mutmaßt, dass ihr bei Alkohol ganz anders wird... Das könnte helfen.");
+	
+	Mod_Penner_ElviraGoodInfo = TRUE;
 
 	Info_Mod_Penner_Infos_Choices();
 };

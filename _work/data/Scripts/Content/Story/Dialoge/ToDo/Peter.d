@@ -57,6 +57,8 @@ FUNC VOID Info_Mod_Peter_Elvira_Info()
 	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_06"); //I offered her a glass of my best monastery wine and she.... refuses and instead asks if I would have it non-alcoholic.
 	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_07"); //Well, I don't want to gossip, but the one about women and alcohol... who knows.
 	AI_Output(self, hero, "Info_Mod_Peter_Elvira_14_08"); //But, hey, I didn't say anything.
+	
+	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Peter hat erzählt, dass Elvira den Wein, den er ihr angeboten hatte, abgelehnt hat. Stattdessen wollte sie etwas alkoholfreies trinken.");
 };
 
 INSTANCE Info_Mod_Peter_Freudenspender (C_INFO)

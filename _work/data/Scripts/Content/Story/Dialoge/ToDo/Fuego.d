@@ -171,13 +171,15 @@ FUNC VOID Info_Mod_Fuego_Blutkelch_Info()
 	AI_Output(hero, self, "Info_Mod_Fuego_Blutkelch_15_03"); //All right, all right. See you around.
 };
 
+var int Mod_Fuego_ElviraGoodInfo;
+
 INSTANCE Info_Mod_Fuego_ElviraKey (C_INFO)
 {
 	npc		= Mod_7425_KDF_Fuego_REL;
 	nr		= 1;
 	condition	= Info_Mod_Fuego_ElviraKey_Condition;
 	information	= Info_Mod_Fuego_ElviraKey_Info;
-	permanent	= 0;
+	permanent	= 1;
 	important	= 0;
 	description	= "Can you tell me something about Elvira?";
 };                       
@@ -186,6 +188,7 @@ FUNC INT Info_Mod_Fuego_ElviraKey_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Cassia_Elvira))
 	&& (Npc_HasItems(Mod_7499_KDF_Elvira_REL, ItKe_RELMagier) == 1)
+	&& (!Mod_Fuego_ElviraGoodInfo)
 	{
 		return TRUE;
 	};
@@ -204,6 +207,10 @@ FUNC VOID Info_Mod_Fuego_ElviraKey_Info()
 		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_05"); //She always drinks the monastery wine alcohol-free. Extra bottle of it in her trunk.
 		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_06"); //Of course, this is not really reprehensible, but rather a habit that makes people smile.
 		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_07"); //But I've already talked too much. Innos accompany you on your way.
+		
+		B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Hm, Fuego meint, dass Elvira nur alkoholfreien Klosterwein trinkt, den sie extra in ihrer Truhe aufbewahrt. Ob da nicht eine kleine Verwechslung helfen könnte...");
+		
+		Mod_Fuego_ElviraGoodInfo = TRUE;
 	}
 	else
 	{

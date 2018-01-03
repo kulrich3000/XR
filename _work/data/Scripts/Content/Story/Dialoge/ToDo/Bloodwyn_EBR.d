@@ -171,7 +171,7 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 	if (Npc_HasItems(hero, ItRu_Teleport_3) == 1)
 	{
 		Npc_RemoveInvItems	(hero, Itru_Teleport_3, 1);
-		Mob_CreateItems	("TELEPORT RUN CHEST", ItRu_Teleport_3, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_Teleport_3, 1);
 
 		Mod_HeroHasRune += 1;
 	};

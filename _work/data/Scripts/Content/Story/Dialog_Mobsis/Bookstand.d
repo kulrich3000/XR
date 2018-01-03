@@ -317,8 +317,8 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
 			B_LogEntry (TOPIC_TalentSmith,"To forge a weapon, first of all I need a piece of raw steel. This I must heat up in the fire of a smithy until it glows red-hot and then shape it on an anvil. Special weapons often require the use of certain substances that give them special characteristics.");
-			B_LogEntry (TOPIC_TalentSmith,"If I add 4 ore and 5 dragon's blood, I can forge a?ERZ-DRACHENTÖTER? for myself.");
-			B_LogEntry (TOPIC_TalentSmith,"If I add 5 ore and 5 dragon's blood, I can forge a? LARGE ERZ DRAGON KILLER? for myself.");
+			B_LogEntry (TOPIC_TalentSmith,"If I add 4 lumps of ore and 5 of dragon blood, I can forge an ´ORE DRAGON SLAYER´.");
+			B_LogEntry (TOPIC_TalentSmith,"If I add 5 lumps of ore and 5 of dragon blood, I can forge a ´LARGE ORE DRAGON SLAYER´.");
 			PlayerGetsFinalDJGArmor = TRUE;
 		
 						

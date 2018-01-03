@@ -167,7 +167,7 @@ FUNC VOID Info_Mod_Friedel_Wettstreit2_Info()
 
 		Mod_REL_Wettstreit = 3;
 		
-		B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "");
+		B_LogEntry	(TOPIC_MOD_KHORATA_WETTSTREIT, "I picked up my reward. Then I guess I can go back to lucas now.");
 	}
 	else
 	{

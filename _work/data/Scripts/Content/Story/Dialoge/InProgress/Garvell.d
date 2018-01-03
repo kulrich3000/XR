@@ -236,7 +236,7 @@ FUNC VOID Info_Mod_Garvell_Fenia2_Info()
 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "");
+	B_LogEntry	(TOPIC_MOD_GARVELL_FENIA, "Now I should use the spell roll at Garvell himself....");
 };
 
 INSTANCE Info_Mod_Garvell_Fenia3 (C_INFO)

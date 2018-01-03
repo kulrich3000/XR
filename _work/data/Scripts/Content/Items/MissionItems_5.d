@@ -499,7 +499,7 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 	description		= 	"The Tears of Innos";
 	
 	TEXT[1]			= 	"The potion give Fire Mages unimaginable powers.";
-	Text[2]			=   "Everyone else will find death.";
+	Text[2]			=   "Any other will find death.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -593,7 +593,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 
 	description		= 	"The Tears of Innos";
 	TEXT[1]			= 	"The potion give Fire Mages unimaginable powers.";
-	Text[2]			=   "Everyone else will find death.";
+	Text[2]			=   "Any other will find death.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;

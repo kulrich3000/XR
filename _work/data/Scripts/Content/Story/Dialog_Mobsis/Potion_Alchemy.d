@@ -2762,7 +2762,7 @@ FUNC VOID PC_PotionAlchemy_Booze_Info()
 
 	if (Knows_SchnellerHering == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Mix the fast herring.", PC_PotionAlchemy_Booze_SchnellerHering);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Mix a Hasty Herring.", PC_PotionAlchemy_Booze_SchnellerHering);
 	};
 
 	if (Rezept_Rumtopf == TRUE)
@@ -2772,7 +2772,7 @@ FUNC VOID PC_PotionAlchemy_Booze_Info()
 
 	if (Knows_Schlafhammer == TRUE)
 	{
-		Info_AddChoice	(PC_PotionAlchemy_Booze, "Lou's hammer with double the rum.", PC_PotionAlchemy_Booze_Schlaf);
+		Info_AddChoice	(PC_PotionAlchemy_Booze, "Lou's Hammer with twice the rum.", PC_PotionAlchemy_Booze_Schlaf);
 	};
 
 	if (Knows_LousHammer == TRUE)
