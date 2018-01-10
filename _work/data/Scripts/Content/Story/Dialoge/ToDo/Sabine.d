@@ -225,7 +225,7 @@ FUNC INT Info_Mod_Sabine_FreudenspenderVerkauft_Condition()
 
 FUNC VOID Info_Mod_Sabine_FreudenspenderVerkauft_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_00"); //Gdzie nagle zdarzyl sie pan nagle?
+	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_00"); //Gdzie nagle byles/as?
 	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_01"); //Musialem wyjsc.
 	AI_Output(hero, self, "Info_Mod_Sabine_FreudenspenderVerkauft_15_02"); //Ktos inny?
 	AI_Output(self, hero, "Info_Mod_Sabine_FreudenspenderVerkauft_17_03"); //Tak, nie ma. Wazne rzeczy i rzeczy.

@@ -30,8 +30,8 @@ FUNC VOID Info_Mod_Spielleiter_Online_Spielstart_Info() {
 };
 
 FUNC VOID Info_Mod_Spielleiter_Online_SuchAbbruch_Info() {
-	AI_Output(hero, self, "Info_Mod_Spielleiter_Online_Spielstart_15_00"); //Zlikwidujmy szukanie teraz.
-	AI_Output(self, hero, "Info_Mod_Spielleiter_Online_Spielstart_01_01"); //Cokolwiek mówisz. Wróc do domu za kazdym razem, gdy tylko zmienisz zdanie.
+	AI_Output(hero, self, "Info_Mod_Spielleiter_Online_SuchAbbruch_15_00"); //Zlikwidujmy szukanie teraz.
+	AI_Output(self, hero, "Info_Mod_Spielleiter_Online_SuchAbbruch_01_01"); //Cokolwiek mówisz. Wróc do domu za kazdym razem, gdy tylko zmienisz zdanie.
 	
 	MG_WaitingForMatch = FALSE;
 	

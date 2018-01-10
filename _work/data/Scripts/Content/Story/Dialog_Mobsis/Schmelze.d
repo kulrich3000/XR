@@ -32,6 +32,35 @@ FUNC INT PC_Schmelze_Rohstahl_Condition()
 
 FUNC VOID PC_Schmelze_Rohstahl_Info()
 {
+	CreateInvItems	(hero, ItMiSwordRawHot, 1);
+	
+	Print ("Stal surowa podgrzewana");
+
+	Npc_RemoveInvItems	(hero, ItMiSwordRaw, 1);
+};
+
+INSTANCE PC_Schmelze_Rohstahl_Alle (C_INFO)
+{
+	npc		= PC_Hero;
+	nr		= 1;
+	condition	= PC_Schmelze_Rohstahl_Alle_Condition;
+	information	= PC_Schmelze_Rohstahl_Alle_Info;
+	permanent	= 1;
+	important	= 0;
+	description	= "Ogrzewac cala surowa stal.";
+};
+
+FUNC INT PC_Schmelze_Rohstahl_Alle_Condition()
+{
+	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_Schmelze)
+	&& (Npc_HasItems(hero, ItMiSwordRaw) > 0)
+	{
+		return 1;
+	};
+};
+
+FUNC VOID PC_Schmelze_Rohstahl_Alle_Info()
+{
 	CreateInvItems	(hero, ItMiSwordRawHot, Npc_HasItems(hero, ItMiSwordRaw)+1);
 	
 	Print (ConcatStrings(IntToString(Npc_HasItems(hero, ItMiSwordRaw) + 1), " Stal surowa podgrzewana"));

@@ -537,7 +537,7 @@ FUNC VOID Info_Mod_Griselda_Pruefung8_Info()
 	else
 	{
 		AI_Output(self, hero, "Info_Mod_Griselda_Pruefung8_26_03"); //Niesamowity, nawet oddech dzumy, o której wiedziales dzieki umiejetnemu wyborowi, aby stawic opór.
-		AI_Output(hero, self, "Info_Mod_Griselda_Pruefung8_15_04"); //W ten sposób powinna wzrastac wasza odpornosc na choroby.
+		AI_Output(self, hero, "Info_Mod_Griselda_Pruefung8_26_04"); //W ten sposób powinna wzrastac wasza odpornosc na choroby.
 
 		if (Krankheit < 4)
 		{

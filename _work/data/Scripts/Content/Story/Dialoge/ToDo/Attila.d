@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Attila_Hi_Condition()
 
 FUNC VOID Info_Mod_Attila_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //I ciesz sie, ze opusciles loch?
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //Ciesz sie wiec, ze opusciles loch?
 	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_01"); //Nie sadze, aby pytanie to wymagalo odpowiedzi, syna sprytnego.
 	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_02"); //Odegral pan swoja role w moim wyzwoleniu i dziekuje za to.
 	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_03"); //Co zamierzasz teraz zrobic?

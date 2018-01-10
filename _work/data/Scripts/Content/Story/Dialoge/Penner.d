@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Penner_Infos_F()
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_06"); //A ona ja? Najpierw wahalem sie i poprosilem o bezalkoholowe wino klasztorne huhä.
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_07"); //Prawdopodobnie bedzie inaczej z alkoholem, jesli wiesz co mam na mysli, haha.
 	
-	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Der Penner hat erzählt, dass Elvira in der Kneipe nach einem alkoholfreien Klosterwein gefragt hat. Er mutmaßt, dass ihr bei Alkohol ganz anders wird... Das könnte helfen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Bum powiedzial mi, ze Elvira poprosila w pubie o bezalkoholowe wino klasztorne. Podejrzewa, ze alkohol sprawia, ze wyglada zupelnie inaczej.... To moze pomóc.");
 	
 	Mod_Penner_ElviraGoodInfo = TRUE;
 

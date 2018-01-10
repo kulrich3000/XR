@@ -58,8 +58,6 @@ FUNC VOID Info_Mod_Xardas_NW_Hallo_Info()
 	if (Mod_OT_Geheimkammer == 1) {
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_FAILED);
 	};
-
-	Mod_BeliarStatue_Krieger_Dabei = 1;
 };
 
 INSTANCE Info_Mod_Xardas_NW_WasJetzt (C_INFO)
@@ -1780,7 +1778,7 @@ FUNC VOID Info_Mod_Xardas_NW_Argibast_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Wydaje sie, ze straz Innos szuka poteznego miecza Innos. Musze znalezc przed nimi miecz. Jednak Xardas nie wie nawet, gdzie go znalezc, ale sa wskazówki na temat Jharkendend.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "Wydaje sie, ze straz Innos szuka poteznego miecza Innos. Musze znalezc przed nimi miecz. Jednak Xardas nie wie nawet, gdzie go znalezc, ale sa wskazówki na temat Jharkendend. Mialem objechac wykopalisko. Tam wlasnie musza przejsc straznicy, aby dostac sie do Jharkendend.");
 
 	Wld_InsertNpc	(Mod_4085_HoherUntoterMagier_NW,	"TAVERNE");
 	Wld_InsertNpc	(Mod_4084_UntoterEliteNovize_NW,	"TAVERNE");
@@ -1874,7 +1872,7 @@ FUNC VOID Info_Mod_Xardas_NW_Randolph_B()
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_02"); //I nawet jesli iskra jego pierwotnego bytu nadal istnieje w nim, trudno byloby przekonac go do wziecia eliksiru Pyrokara.
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_03"); //W zwiazku z tym bedziecie musieli zniszczyc te istote - nawet jesli wciaz pozostaje mu reszta ludzkosci - poniewaz nie macie srodków, by wybiórczo od niego wyrzucic demona.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randoplha lub to, czym on sie stal. Jesli nie ma innej drogi.....");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randolpha, albo to, czym on sie stal. Jesli nie ma innej drogi.....");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
@@ -1883,7 +1881,7 @@ FUNC VOID Info_Mod_Xardas_NW_Randolph_A()
 {
 	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_A_15_00"); //Dobrze, zrobie to.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randoplha lub to, czym on sie stal. Jesli nie ma innej drogi.....");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas uwaza, ze powinienem zniszczyc Randolpha, albo to, czym on sie stal. Jesli nie ma innej drogi.....");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
@@ -2406,6 +2404,8 @@ FUNC VOID Info_Mod_Xardas_NW_WoSindAndere_Info()
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_06"); //Moja swiatynia jest do tej pory zwiazana tylko z twierdza. Nie mozna tego przegapic.
 
 	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "Do twierdzy przyczep Beliaranu docieram do twierdzy Beliar przez swiatynie Beliar w wiezy Xardas, która pelni równiez funkcje teleportera.");
+
+	Mod_BeliarStatue_Krieger_Dabei = 1;
 };
 
 INSTANCE Info_Mod_Xardas_NW_VonWemKannIchLernen (C_INFO)

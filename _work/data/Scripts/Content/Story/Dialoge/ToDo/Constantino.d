@@ -288,7 +288,7 @@ FUNC VOID Info_Mod_Constantino_Aufnahme_A()
 	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_12"); //W przeciwnym razie otrzymasz smaczna, ale nieskuteczna herbate.
 	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_13"); //Nastepnie podgrzac rosól, az zagotuje sie nad plomieniem i napelnic go.
 	AI_Output(hero, self, "Info_Mod_Constantino_Aufnahme_A_15_14"); //Mysle, ze ja dostalem.
-	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_15"); //Przyjrzyjmy sie temu. Wiec dostajesz skladniki i warzysz piec esencji uzdrawiania i piec esencji maniku. Porozmawiamy jeszcze raz.
+	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_15"); //Przyjrzyjmy sie temu. Wiec otrzymasz skladniki i warzysz po dwie lecznicze esencje i po dwie mana esencje. Porozmawiamy jeszcze raz.
 
 	Mod_IstLehrling	= 1;
 
@@ -299,11 +299,11 @@ FUNC VOID Info_Mod_Constantino_Aufnahme_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Konstantyn, alchemik, przyjal mnie jako swojego ucznia. To czyni mnie teraz obywatelem miasta.", "Konstantyn dal mi zadanie wykonania pieciu manekinów i esencji leczniczych. Najpierw musze zebrac niezbedne skladniki, a nastepnie umiescic je w odpowiedniej kolejnosci przy stole alchemicznym. Hmm, co to znów bylo?", "Poniewaz Konstantyn przyjal mnie jako swojego ucznia, teraz moge wejsc do wyzszej kwatery.");
+		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Konstantyn, alchemik, przyjal mnie jako swojego ucznia. To czyni mnie teraz obywatelem miasta.", "Konstantyn dal mi zadanie wykonania dwóch mana i dwóch esencji leczniczych. Najpierw musze zebrac niezbedne skladniki, a nastepnie umiescic je w odpowiedniej kolejnosci przy stole alchemicznym. Hmm, co to znów bylo?", "Poniewaz Konstantyn przyjal mnie jako swojego ucznia, teraz moge wejsc do wyzszej kwatery.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, "Konstantyn, alchemik, przyjal mnie jako swojego ucznia. To czyni mnie teraz obywatelem miasta.", "Konstantyn dal mi zadanie wykonania pieciu manekinów i esencji leczniczych. Najpierw musze zebrac niezbedne skladniki, a nastepnie umiescic je w odpowiedniej kolejnosci przy stole alchemicznym. Hmm, co to znów bylo?");
+		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, "Konstantyn, alchemik, przyjal mnie jako swojego ucznia. To czyni mnie teraz obywatelem miasta.", "Konstantyn dal mi zadanie wykonania dwóch mana i dwóch esencji leczniczych. Najpierw musze zebrac niezbedne skladniki, a nastepnie umiescic je w odpowiedniej kolejnosci przy stole alchemicznym. Hmm, co to znów bylo?");
 	};
 
 	PLAYER_TALENT_ALCHEMY[POTION_Health_01] = TRUE;
@@ -393,11 +393,11 @@ FUNC VOID Info_Mod_Constantino_LehrlingQuest_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Constantino_LehrlingQuest_15_00"); //Zaparzylem wszystkie Twoje eliksiry.
 
-	B_ShowGivenThings	("5 esencje lecznicze i 5 esencje mana wydane");
+	B_ShowGivenThings	("2 esencje uzdrawiania i 2 esencje manifikacji wydane");
 
 	AI_Output(self, hero, "Info_Mod_Constantino_LehrlingQuest_10_01"); //Zapachy) Naprawde brakuje Ci poczucia umiejetnosci. Ale przynajmniej one pomoga wiecej niz tylko zaszkodzic.
 
-	B_ShowGivenThings	("5 Substancje lecznicze i 5 Uzyskane esencje mana");
+	B_ShowGivenThings	("2 Substancje lecznicze i 2 Otrzymane esencje mana");
 
 	AI_Output(hero, self, "Info_Mod_Constantino_LehrlingQuest_15_02"); //Nie chcesz zachowac eliksirów?
 	AI_Output(self, hero, "Info_Mod_Constantino_LehrlingQuest_10_03"); //Lepiej warzylem w ciagu dwóch minut. Co mam z tym zrobic?

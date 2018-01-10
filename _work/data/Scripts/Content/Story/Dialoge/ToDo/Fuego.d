@@ -208,7 +208,7 @@ FUNC VOID Info_Mod_Fuego_ElviraKey_Info()
 		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_06"); //Oczywiscie nie jest to naganne, ale raczej przyzwyczajenie, które sprawia, ze ludzie sie usmiechaja.
 		AI_Output(self, hero, "Info_Mod_Fuego_ElviraKey_32_07"); //Ale juz za duzo mówilem. Innos towarzysza Ci po drodze.
 		
-		B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Hm, Fuego meint, dass Elvira nur alkoholfreien Klosterwein trinkt, den sie extra in ihrer Truhe aufbewahrt. Ob da nicht eine kleine Verwechslung helfen könnte...");
+		B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Hm, Fuego mówi, ze Elvira pije tylko klasztorne wino bezalkoholowe, które trzyma w klatce piersiowej. Niewielkie wymieszanie moze pomóc.....");
 		
 		Mod_Fuego_ElviraGoodInfo = TRUE;
 	}

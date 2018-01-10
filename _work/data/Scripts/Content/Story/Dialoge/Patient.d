@@ -23,7 +23,9 @@ FUNC VOID Info_Mod_Patient_Endres_Info()
 	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_01"); //Nie moge powiedziec na pewno. Tego dnia zasnalem w poludnie i tylko obudzilem sie wieczorem.
 	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_02"); //Lecz uzdrowiciel byl tam zanim zasnalem i po obudzeniu sie obudzilem.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Pacjent przeszedl przez wiekszosc dnia dosc dziwnie. Wiec alibi uzdrowiciela jest kiepski.");
+	if (!Npc_KnowsInfo(hero, Info_Mod_Richter_Endres02)) {
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "Pacjent przeszedl przez wiekszosc dnia dosc dziwnie. Wiec alibi uzdrowiciela jest kiepski.");
+	};
 };
 
 INSTANCE Info_Mod_Patient_WasFehlt (C_INFO)
