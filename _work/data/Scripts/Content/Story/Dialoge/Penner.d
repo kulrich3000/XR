@@ -144,7 +144,7 @@ FUNC VOID Info_Mod_Penner_Infos_F()
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_06"); //And her? First I was hesitant and then asked for the alcohol-free monastery wine, huhä.
 	AI_Output(self, hero, "Info_Mod_Penner_Infos_F_27_07"); //She's probably going to be different with alcohol, if you know what I mean, haha.
 	
-	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "Der Penner hat erzählt, dass Elvira in der Kneipe nach einem alkoholfreien Klosterwein gefragt hat. Er mutmaßt, dass ihr bei Alkohol ganz anders wird... Das könnte helfen.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ELVIRA, "The bum told me that Elvira asked for a non-alcoholic monastery wine in the pub. He suspects that alcohol makes her look quite different... That might help.");
 	
 	Mod_Penner_ElviraGoodInfo = TRUE;
 

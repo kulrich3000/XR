@@ -37,7 +37,7 @@ func void INIT_GLOBAL()
 	
 	LeGo_Init(LeGo_PrintS | LeGo_HookEngine | LeGo_AI_Function | LeGo_Trialoge | LeGo_FrameFunctions | LeGo_Cursor | LeGo_Random | LeGo_Bloodsplats | LeGo_Saves | LeGo_PermMem | LeGo_Anim8 | LeGo_View | LeGo_Interface | LeGo_Bars | LeGo_Buttons | LeGo_Timer | GFA_LEGO_FLAGS);
 	
-	Spine_Init(SPINE_MODULE_GETCURRENTUSERNAME | SPINE_MODULE_ACHIEVEMENTS | SPINE_MODULE_SCORES | SPINE_MODULE_MULTIPLAYER | SPINE_MODULE_OVERALLSAVE | SPINE_MODULE_GAMEPAD | SPINE_MODULE_STATISTICS);
+	Spine_Init(SPINE_MODULE_GETCURRENTUSERNAME | SPINE_MODULE_ACHIEVEMENTS | SPINE_MODULE_SCORES | SPINE_MODULE_MULTIPLAYER | SPINE_MODULE_OVERALLSAVE | SPINE_MODULE_STATISTICS);
 	
 	GFA_Init(GFA_ALL);
 
@@ -6537,16 +6537,18 @@ FUNC VOID INIT_Minental ()
 	loopStart = MEM_StackPos.position;
 	if (true) {
 		npcPtr = liste.data;
-		MEM_AssignInst (temp, npcPtr);
+		if (npcPtr) {
+			MEM_AssignInst (temp, npcPtr);
 
-		if (Hlp_IsValidNpc(temp)) {
-			MEM_INFO(ConcatStrings("LIST: Checking ", temp.name));
-			if (Hlp_StrCmp(temp.wp, "PALTOBURGKNAST_4"))
-			&& (temp.guild > GIL_SEPERATOR_HUM)
-			{
-				MEM_INFO("LIST: Removing");
-				temp.wp = "TOT";
-				B_RemoveNpc(temp);
+			if (Hlp_IsValidNpc(temp)) {
+				MEM_INFO(ConcatStrings("LIST: Checking ", temp.name));
+				if (Hlp_StrCmp(temp.wp, "PALTOBURGKNAST_4"))
+				&& (temp.guild > GIL_SEPERATOR_HUM)
+				{
+					MEM_INFO("LIST: Removing");
+					temp.wp = "TOT";
+					B_RemoveNpc(temp);
+				};
 			};
 		};
 
@@ -6554,6 +6556,32 @@ FUNC VOID INIT_Minental ()
 
 		if (liste.next != 0)
 		{
+			MEM_StackPos.position = loopStart;
+		};
+	};
+	
+	
+	// fix condition func of soja plants
+	// TODO: remove for 1.1 release
+	MEM_AssignInst(liste, MEM_World.voblist);
+	var int sojaPtr;
+	var oCMobInter sojaMob;
+	loopStart = MEM_StackPos.position;
+	if (true) {
+		sojaPtr = liste.data;
+		if (sojaPtr) {
+			var zCVob sojaVob;
+			MEM_AssignInst (sojaVob, sojaPtr);
+			
+			if (Hlp_StrCmp(sojaVob._zCObject_objectName, "MOBNAME_SOJA") == TRUE) {
+				MEM_AssignInst (sojaMob, sojaPtr);
+				sojaMob.conditionFunc = "COLLECTSOJA";
+			};
+		};
+
+		MEM_AssignInst (liste, liste.next);
+
+		if (liste.next != 0) {
 			MEM_StackPos.position = loopStart;
 		};
 	};
@@ -9018,6 +9046,16 @@ FUNC VOID INIT_Relendel()
 		B_RemoveNpc	(Mod_7241_OUT_Anselm_REL);
 
 		Mod_Enter_Relendel_03 = TRUE;
+		
+		if (Mod_Kneipe_Ditmar >= 1)
+		&& (!Npc_KnowsInfo(hero, Info_Mod_Anselm_DickeLuft2)) {
+			B_SetTopicStatus(TOPIC_MOD_DITMAR_DICKELUFT, LOG_FAILED);
+		};
+		
+		if (Mod_REL_Hasenfuss >= 1)
+		&& (!Npc_KnowsInfo(hero, Info_Mod_Dalton_Hasenfuss)) {
+			B_SetTopicStatus(TOPIC_MOD_KHORATA_HASENFUSS, LOG_FAILED);
+		};
 	};
 
 	if (Kapitel >= 5)

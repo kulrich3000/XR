@@ -1,3 +1,5 @@
+var int Mod_Mario_WachenWeg;
+
 FUNC VOID NEBENQUESTS()
 {
 	var zCListSort liste;
@@ -898,7 +900,13 @@ FUNC VOID NEBENQUESTS()
 		&& (Mod_DiegoHoltKristall_Fertig == FALSE)
 		{
 			B_StartOtherRoutine	(Mod_538_RDW_Diego_NW, "START");
-			B_StartOtherRoutine	(Mod_588_WNOV_Joe_NW, "START");
+			
+			if (Npc_KnowsInfo(hero, Info_Mod_Joe_Wassersnapper))
+			&& (!Npc_KnowsInfo(hero, Info_Mod_Joe_Wassersnapper2)) {
+				B_StartOtherRoutine	(Mod_588_WNOV_Joe_NW, "SNAPPER");
+			} else {
+				B_StartOtherRoutine	(Mod_588_WNOV_Joe_NW, "START");
+			};
 
 			Mod_DiegoHoltKristall_Fertig = TRUE;
 		};
@@ -989,11 +997,12 @@ FUNC VOID NEBENQUESTS()
 			B_StartOtherRoutine	(Mod_595_MIL_Mario_NW, "PATROUILLE");
 		};
 
-		if (Mod_Mario == 8)
+		if (Mod_Mario == 9)
 		&& (Npc_KnowsInfo(hero, Info_Mod_Mil_333_Mario))
 		&& (!Npc_IsInState(Mil_333_Stadtwache, ZS_Talk))
+		&& (!Mod_Mario_WachenWeg)
 		{
-			Mod_Mario = 10;
+			Mod_Mario_WachenWeg = TRUE;
 
 			B_StartOtherRoutine	(Mil_332_Stadtwache, "MAUER");
 			B_StartOtherRoutine	(Mil_333_Stadtwache, "MAUER");
@@ -3112,6 +3121,7 @@ FUNC VOID NEBENQUESTS()
 			&& (Npc_HasItems(hero, ItAt_WargFur) >= 2)
 			&& (Npc_HasItems(hero, ItAt_ShadowFur) >= 2)
 			&& (Npc_HasItems(hero, ItAt_TrollFur) >= 1)
+			&& (Npc_KnowsInfo(hero, Info_Mod_Thofeistos_Urs))
 			{
 				Mod_Urs_Hund = 1;
 
@@ -3364,8 +3374,8 @@ FUNC VOID NEBENQUESTS()
 		};
 
 		if (Mod_Sly_Arena == 4)
-		&& (Npc_GetDistToWP(Mod_801_STT_Sly_MT, "OCR_ARENABATTLE") < 500)
-		&& (Npc_GetDistToWP(Mod_1871_TPL_GorKaranto_MT, "OCR_ARENABATTLE") < 500)
+		&& (Npc_GetDistToWP(Mod_801_STT_Sly_MT, "OCR_ARENABATTLE") < 1000)
+		&& (Npc_GetDistToWP(Mod_1871_TPL_GorKaranto_MT, "OCR_ARENABATTLE") < 1000)
 		{
 			SlyKaranto_KampfScene();
 		};

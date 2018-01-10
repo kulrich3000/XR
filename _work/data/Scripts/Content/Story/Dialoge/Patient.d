@@ -23,7 +23,9 @@ FUNC VOID Info_Mod_Patient_Endres_Info()
 	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_01"); //I can't say for sure. On that day I fell asleep at noon and only woke up in the evening.
 	AI_Output(self, hero, "Info_Mod_Patient_Endres_01_02"); //But the healer was there before I fell asleep and after I woke up.
 
-	B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "The patient overslept most of the day strangely enough. So the healer's alibi is lame.");
+	if (!Npc_KnowsInfo(hero, Info_Mod_Richter_Endres02)) {
+		B_LogEntry	(TOPIC_MOD_KHORATA_ENDRES, "The patient overslept most of the day strangely enough. So the healer's alibi is lame.");
+	};
 };
 
 INSTANCE Info_Mod_Patient_WasFehlt (C_INFO)

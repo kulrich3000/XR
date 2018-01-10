@@ -298,7 +298,7 @@ FUNC VOID Info_Mod_Hyglas_FeuerGegenEis7_Info()
 	B_StartOtherRoutine	(Mod_552_KDF_Serpentes_NW, "ATBETT");
 	B_StartOtherRoutine	(Mod_553_KDF_Ulthar_NW, "ATBETT");
 
-	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "Ich soll durch das Portal zurück nach Khorinis gehen, während Hyglas hier die Quelle der magischen Energie vernichten will.");
+	B_LogEntry	(TOPIC_MOD_FM_FEUEREIS, "I'm supposed to go back to Khorinis through the portal, while Hyglas wants to destroy the source of the magical energy here.");
 };
 
 INSTANCE Info_Mod_Hyglas_BackInKhorinis (C_INFO)

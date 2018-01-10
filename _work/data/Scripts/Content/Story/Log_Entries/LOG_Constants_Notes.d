@@ -11,13 +11,13 @@ const string	Topic_SoldierTrader			=	"Trade on Onar's farm.";
 
 
 // ------ Lehrer ------
-const string	TOPIC_Teacher				=	"tutor";
+const string	TOPIC_Teacher				=	"Teacher";
 const string	TOPIC_Teacher_OC			=   "Teacher in the castle";
-const string	Topic_SoldierTeacher		=	"Teacher on Onar's farm.";
-const string	Topic_OutTeacher			=	"outside world teacher";
+const string	Topic_SoldierTeacher		=	"Teacher at Onar's farm.";
+const string	Topic_OutTeacher			=	"Teacher in the outer world.";
 const string	TOPIC_CityTeacher			=	"Teacher in Khorinis.";
 //ADDON
-const string	TOPIC_Addon_KDWTeacher		=	"Teachers of Water Magicians";
+const string	TOPIC_Addon_KDWTeacher		=	"Teacher at the Water Mages";
 
 // ------ Micro - Talente ------
 const string	TOPIC_TalentSmith			=	"Forging";

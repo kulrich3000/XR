@@ -288,7 +288,7 @@ FUNC VOID Info_Mod_Constantino_Aufnahme_A()
 	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_12"); //Otherwise you will get tasty but ineffective tea.
 	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_13"); //Then heat the broth until it boils over the flame and fill it.
 	AI_Output(hero, self, "Info_Mod_Constantino_Aufnahme_A_15_14"); //I think I got it.
-	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_15"); //Let's see about that. So you get the ingredients and brew five essences of healing and five essences of mana. Then we'll talk again.
+	AI_Output(self, hero, "Info_Mod_Constantino_Aufnahme_A_10_15"); //Let's see about that. So you get the ingredients and brew two healing essences and two mana essences each. Then we'll talk again.
 
 	Mod_IstLehrling	= 1;
 
@@ -299,11 +299,11 @@ FUNC VOID Info_Mod_Constantino_Aufnahme_A()
 
 	if (Npc_KnowsInfo(hero, Info_Mod_Torlof_Auftrag))
 	{
-		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Constantino, the alchemist, accepted me as his apprentice. That makes me a citizen of the city now.", "Constantino gave me the task of making five mana and healing essences. First I have to collect the necessary ingredients and then put them together at the alchemy table in the right order. Hmm, what was that again?", "Since Constantino accepted me as his apprentice it is now possible for me to enter the upper quarter.");
+		B_LogEntry_NMore	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, TOPIC_MOD_TORLOFSPIONAGE, "Constantino, the alchemist, accepted me as his apprentice. That makes me a citizen of the city now.", "Constantino gave me the task of making two mana and healing essences. First I have to collect the necessary ingredients and then put them together at the alchemy table in the right order. Hmm, what was that again?", "Since Constantino accepted me as his apprentice it is now possible for me to enter the upper quarter.");
 	}
 	else
 	{
-		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, "Constantino, the alchemist, accepted me as his apprentice. That makes me a citizen of the city now.", "Constantino gave me the task of making five mana and healing essences. First I have to collect the necessary ingredients and then put them together at the alchemy table in the right order. Hmm, what was that again?");
+		B_LogEntry_More	(TOPIC_MOD_BÜRGER, TOPIC_MOD_LEHRLING_CONSTANTINO_ONE, "Constantino, the alchemist, accepted me as his apprentice. That makes me a citizen of the city now.", "Constantino gave me the task of making two mana and healing essences. First I have to collect the necessary ingredients and then put them together at the alchemy table in the right order. Hmm, what was that again?");
 	};
 
 	PLAYER_TALENT_ALCHEMY[POTION_Health_01] = TRUE;
@@ -393,11 +393,11 @@ FUNC VOID Info_Mod_Constantino_LehrlingQuest_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Constantino_LehrlingQuest_15_00"); //I've brewed all your potions.
 
-	B_ShowGivenThings	("5 Essences of Healing and 5 Mana essences given");
+	B_ShowGivenThings	("2 essences of healing and 2 mana essences given");
 
 	AI_Output(self, hero, "Info_Mod_Constantino_LehrlingQuest_10_01"); //(smells) You really lack the feeling of skill. But at least they will help more than harm.
 
-	B_ShowGivenThings	("5 Healing Essences and 5 Mana essences obtained");
+	B_ShowGivenThings	("2 Healing Essences and 2 Mana essences obtained");
 
 	AI_Output(hero, self, "Info_Mod_Constantino_LehrlingQuest_15_02"); //Don't you want to keep the potions?
 	AI_Output(self, hero, "Info_Mod_Constantino_LehrlingQuest_10_03"); //I brewed better in two minutes. So what am I supposed to do with this?

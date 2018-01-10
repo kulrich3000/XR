@@ -48,12 +48,12 @@ const string Log_Text_Addon_SamuelTrade	=	"Samuel is the moonshiner. He sells al
 
 //	Sprüche
 
-const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredients for the Rune' whirlwind?: 1 wing";
-const string Log_Text_Addon_TalentRune_Icelance		="Ingredients for the rune' Eislanze': 1 Gletscherquartz";
-const string Log_Text_Addon_TalentRune_Geyser		="Ingredients for the rune' Geysir': 1 Aquamarine";
+const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredients for rune 'Whirlwind': 1 Blood Fly Wing";
+const string Log_Text_Addon_TalentRune_Icelance		="Ingredients for rune 'Ice Lance': 1 Glacier Quartz";
+const string Log_Text_Addon_TalentRune_Geyser		="Ingredients for rune 'Geyser': 1 Aquamarine";
 const string Log_Text_Addon_TalentRune_Zerfleischen		="Ingredients for the rune' Zerfleischen': 1 bad luck";
-const string Log_Text_Addon_TalentRune_Waterfist	="Ingredients for the rune' Wasserfaust': 1 aquamarine and 1 rock crystal";
-const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredients for the rune' Storm': 1 glacier quartz and 1 wing";
+const string Log_Text_Addon_TalentRune_Waterfist	="Ingredients for rune 'Water Fist': 1 Aquamarine, 1 Rock Crystal";
+const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredients for rune 'Storm': 1 Glacier Quartz, 1 Blood Fly Wing";
 
 //##########################################
 //		Gothic 2

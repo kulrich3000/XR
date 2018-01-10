@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_ARMOR_1(C_MENU_ITEM_DEF)
 instance MENU_ITEM_ARMOR_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*1;	
-	text[0]		= "in bullets";
+	text[0]		= "from projectiles";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -394,7 +394,7 @@ INSTANCE MENU_ITEM_ARMOR_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*2;
-	text[0]		= "before dragon fire";
+	text[0]		= "from dragon fire";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -410,7 +410,7 @@ INSTANCE MENU_ITEM_ARMOR_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*3;
-	text[0]		= "before magic";
+	text[0]		= "from magic";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };

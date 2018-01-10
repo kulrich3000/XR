@@ -18,7 +18,7 @@ INSTANCE PC_Schmelze_Rohstahl (C_INFO)
 	information	= PC_Schmelze_Rohstahl_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Heating crude steel";
+	description	= "Heating a crude steel";
 };
 
 FUNC INT PC_Schmelze_Rohstahl_Condition()
@@ -31,6 +31,35 @@ FUNC INT PC_Schmelze_Rohstahl_Condition()
 };
 
 FUNC VOID PC_Schmelze_Rohstahl_Info()
+{
+	CreateInvItems	(hero, ItMiSwordRawHot, 1);
+	
+	Print ("Crude steel heated");
+
+	Npc_RemoveInvItems	(hero, ItMiSwordRaw, 1);
+};
+
+INSTANCE PC_Schmelze_Rohstahl_Alle (C_INFO)
+{
+	npc		= PC_Hero;
+	nr		= 1;
+	condition	= PC_Schmelze_Rohstahl_Alle_Condition;
+	information	= PC_Schmelze_Rohstahl_Alle_Info;
+	permanent	= 1;
+	important	= 0;
+	description	= "Heat all crude steel";
+};
+
+FUNC INT PC_Schmelze_Rohstahl_Alle_Condition()
+{
+	if (PLAYER_MOBSI_PRODUCTION	==	MOBSI_Schmelze)
+	&& (Npc_HasItems(hero, ItMiSwordRaw) > 0)
+	{
+		return 1;
+	};
+};
+
+FUNC VOID PC_Schmelze_Rohstahl_Alle_Info()
 {
 	CreateInvItems	(hero, ItMiSwordRawHot, Npc_HasItems(hero, ItMiSwordRaw)+1);
 	

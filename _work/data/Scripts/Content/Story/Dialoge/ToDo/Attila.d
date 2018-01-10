@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Attila_Hi_Condition()
 
 FUNC VOID Info_Mod_Attila_Hi_Info()
 {
-	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //And glad you're out of the dungeon?
+	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_00"); //So glad you're out of the dungeon?
 	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_01"); //I don't think the question needs an answer, son of cunning.
 	AI_Output(self, hero, "Info_Mod_Attila_Hi_09_02"); //You played your part in my liberation, and I thank you for that.
 	AI_Output(hero, self, "Info_Mod_Attila_Hi_15_03"); //What are you going to do now?

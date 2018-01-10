@@ -230,7 +230,6 @@ INSTANCE Info_Mod_Andokai_Moorhexe (C_INFO)
 FUNC INT Info_Mod_Andokai_Moorhexe_Condition()
 {
 	if (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Moorhexe))
-	&& (Knows_MagicSecretsBand6 == 1)
 	{
 		return 1;
 	};
@@ -251,8 +250,6 @@ FUNC VOID Info_Mod_Andokai_Moorhexe_Info()
 	Log_CreateTopic	(TOPIC_MOD_NL_STAB, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_NL_STAB, LOG_RUNNING);
 	B_LogEntry	(TOPIC_MOD_NL_STAB, "Andokai only wanted to leave me with the condition of transformational roles when I got him the' staff Pyrmans'. He was stolen from the monastery of fire magicians during the raid.");
-
-	B_StartOtherRoutine	(Kobold_11010_NW, "TOT");
 };
 
 INSTANCE Info_Mod_Andokai_PyrmansStab (C_INFO)

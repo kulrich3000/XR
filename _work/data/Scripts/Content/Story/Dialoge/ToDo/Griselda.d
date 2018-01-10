@@ -537,7 +537,7 @@ FUNC VOID Info_Mod_Griselda_Pruefung8_Info()
 	else
 	{
 		AI_Output(self, hero, "Info_Mod_Griselda_Pruefung8_26_03"); //Amazing, even the breath of the plague you knew by skillful choice to resist.
-		AI_Output(hero, self, "Info_Mod_Griselda_Pruefung8_15_04"); //This is how your resistance to diseases should grow.
+		AI_Output(self, hero, "Info_Mod_Griselda_Pruefung8_26_04"); //This is how your resistance to diseases should grow.
 
 		if (Krankheit < 4)
 		{

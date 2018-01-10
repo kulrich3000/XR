@@ -58,8 +58,6 @@ FUNC VOID Info_Mod_Xardas_NW_Hallo_Info()
 	if (Mod_OT_Geheimkammer == 1) {
 		B_SetTopicStatus	(TOPIC_MOD_OT_GEHEIMKAMMER, LOG_FAILED);
 	};
-
-	Mod_BeliarStatue_Krieger_Dabei = 1;
 };
 
 INSTANCE Info_Mod_Xardas_NW_WasJetzt (C_INFO)
@@ -1780,7 +1778,7 @@ FUNC VOID Info_Mod_Xardas_NW_Argibast_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_BEL_INNOSSCHWERT, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "It seems that the Innos Guard is looking for the mighty Innos sword. I must find the sword in front of them. However, Xardas doesn't even know where to find it, but there are hints about Jharkendar.");
+	B_LogEntry	(TOPIC_MOD_BEL_INNOSSCHWERT, "It seems that the Innos Guard is looking for the mighty Innos sword. I must find the sword in front of them. However, Xardas doesn't even know where to find it, but there are hints about Jharkendar. I was supposed to make a detour to the excavation site. That's where the guards must pass to get to Jharkendar.");
 
 	Wld_InsertNpc	(Mod_4085_HoherUntoterMagier_NW,	"TAVERNE");
 	Wld_InsertNpc	(Mod_4084_UntoterEliteNovize_NW,	"TAVERNE");
@@ -1874,7 +1872,7 @@ FUNC VOID Info_Mod_Xardas_NW_Randolph_B()
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_02"); //And even if a spark of his original being still exists in him, you would hardly be able to persuade him to take Pyrokar's potion.
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_Randolph_B_14_03"); //Consequently, you will have to destroy this being - even if there is still a remnant of humanity to him - because you do not have the means to selectively banish the demonic from him.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas thinks I should destroy Randoplh, or what he has become. If there's no other way...");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas thinks I should destroy Randolph, or what he's become. If there's no other way...");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
@@ -1883,7 +1881,7 @@ FUNC VOID Info_Mod_Xardas_NW_Randolph_A()
 {
 	AI_Output(hero, self, "Info_Mod_Xardas_NW_Randolph_A_15_00"); //Okay, I'll do that.
 
-	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas thinks I should destroy Randoplh, or what he has become. If there's no other way...");
+	B_LogEntry	(TOPIC_MOD_AKIL_RANDOLPH, "Xardas thinks I should destroy Randolph, or what he's become. If there's no other way...");
 
 	Info_ClearChoices	(Info_Mod_Xardas_NW_Randolph);
 };
@@ -2406,6 +2404,8 @@ FUNC VOID Info_Mod_Xardas_NW_WoSindAndere_Info()
 	AI_Output(self, hero, "Info_Mod_Xardas_NW_WoSindAndere_14_06"); //My shrine's only connected to the fortress so far. So you can't miss it.
 
 	B_LogEntry	(TOPIC_MOD_DAEMONENBESCHWOERER, "I reach the fortress of the Beliaran trailers via the Beliar shrine in Xardas' tower, which also functions as a teleporter.");
+
+	Mod_BeliarStatue_Krieger_Dabei = 1;
 };
 
 INSTANCE Info_Mod_Xardas_NW_VonWemKannIchLernen (C_INFO)

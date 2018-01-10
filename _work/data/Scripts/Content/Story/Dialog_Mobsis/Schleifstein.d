@@ -3589,7 +3589,7 @@ INSTANCE PC_Herd_Sharp_ItMw_Milizschwert (C_INFO)
 	information	= PC_Herd_Sharp_ItMw_Milizschwert_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "Schwert der Miliz schärfen";
+	description	= "Sharpen militia sword";
 };
 
 FUNC INT PC_Herd_Sharp_ItMw_Milizschwert_Condition()

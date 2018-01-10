@@ -232,7 +232,7 @@ INSTANCE MENUITEM_CREDITS_06_SILVESTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CREDITS_06_SUMPFKRAUTJUNKIE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Marsh herb junkie";
+	text[0]		= "Swampweed Junkie";
 	text[1]		= "for its beam and the swampy bladder";  // Kommentar
 
 	// Position und Dimension
