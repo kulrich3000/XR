@@ -1,4 +1,6 @@
 var int Mod_Mario_WachenWeg;
+var int Mod_UnschuldigeTeleport;
+var int Mod_MalfamaCast;
 
 FUNC VOID NEBENQUESTS()
 {
@@ -931,8 +933,13 @@ FUNC VOID NEBENQUESTS()
 
 		if (Mod_Mario == 3)
 		&& (Wld_GetDay() > Mod_Mario_Day)
+		&& (((Mod_AnzahlNebengilden == 4 && Assassinen_Dabei == FALSE)
+		|| (Npc_KnowsInfo(hero, Info_Mod_Yussuf_Blutkelch6)))
+		|| (hero.guild == GIL_PAL))
 		{
 			Mod_Mario = 4;
+			
+			Mod_Mario_Day = Wld_GetDay() - 1;
 
 			AI_UnequipArmor	(Mod_595_MIL_Mario_NW);
 
@@ -1070,6 +1077,7 @@ FUNC VOID NEBENQUESTS()
 			if (Npc_KnowsInfo(hero, Info_Mod_Senyan_HabSchwert))
 			&& (Npc_KnowsInfo(hero, Info_Mod_Xardas_NW_Daemonisch3))
 			&& (Wld_GetDay()-1 > Mod_SenyanTom_Kraut_Tag)
+			&& (!Npc_IsDead(Mod_598_MIL_Mika_NW))
 			{
 				Mod_SenyanTom_Kraut = 1;
 
@@ -1324,7 +1332,7 @@ FUNC VOID NEBENQUESTS()
 			B_LogEntry	(TOPIC_MOD_NAGUR_GESCHAEFT, "I can now report to Nagur that his competitors have been eliminated.");
 		};
 
-		if (Mod_Nagur_Geschaeft == 6)
+		if (Mod_Nagur_Geschaeft == 4)
 		&& (Npc_KnowsInfo(hero, Info_Mod_Nagur_Geschaeft2))
 		&& (Wld_GetDay()-2 >= Mod_Nagur_Geschaeft_Tag)
 		{
@@ -1415,6 +1423,17 @@ FUNC VOID NEBENQUESTS()
 				B_StartOtherRoutine(Mod_557_PSINOV_Lester_NW, "TOT");
 			} else {
 				B_StartOtherRoutine(Mod_557_PSINOV_Lester_NW, "START");
+			};
+		};
+		
+		// Apprentice Quests
+		
+		if (Mod_LehrlingsStimmen < 4) {
+			if (Npc_KnowsInfo(hero, Info_Mod_Harad_Stimme))
+			&& (Npc_KnowsInfo(hero, Info_Mod_Constantino_Stimme))
+			&& (Npc_KnowsInfo(hero, Info_Mod_Matteo_Flugblaetter))
+			&& (Npc_KnowsInfo(hero, Info_Mod_Thorben_Stimme)) {
+				Mod_LehrlingsStimmen = 4;
 			};
 		};
 	};
@@ -2755,6 +2774,14 @@ FUNC VOID NEBENQUESTS()
 
 			Wld_SendTrigger	("EVT_MESSAGE_ALVARKRISTALL");
 		};
+		
+		if (Npc_KnowsInfo(hero, Info_Mod_Knatus_AlvarKristall))
+		&& (Mod_UnschuldigeTeleport == FALSE)
+		&& (!Npc_IsInState(Mod_7564_OUT_Knatus_EIS, ZS_Talk)) {
+			Mod_UnschuldigeTeleport = TRUE;
+
+			AI_Teleport	(hero, "EIS_40");
+		};
 
 		// Wenn man in der Höhle den Kristall aufnimmt
 
@@ -2822,12 +2849,24 @@ FUNC VOID NEBENQUESTS()
 				Mod_AlvarKristall = 8;
 
 				Mod_7561_OUT_Alvar_EIS.name = "stranger";
+				
+				Wld_SendUnTrigger	("EVT_TRAENENKRISTALL");
 			};
 
 			Mod_Traenenkristall_Sequenz += 1;
 		};
 
 		// Nach der Erkenntnis von Malfama, wenn die zwei ihren Zauber machen wollen
+
+		if (!Npc_IsInState(Mod_7560_OUT_Malfama_EIS, ZS_Talk))
+		&& (Mod_MalfamaCast == FALSE)
+		&& (Npc_KnowsInfo(hero, Info_Mod_Malfama_Traenenkristall))
+		{
+			Mod_MalfamaCast = TRUE;
+
+			B_StartOtherRoutine	(Mod_7560_OUT_Malfama_EIS, "HEXENMAGIE");
+			B_StartOtherRoutine	(Mod_7559_OUT_Serra_EIS, "HEXENMAGIE");
+		};
 
 		if (Npc_IsInState(Mod_7560_OUT_Malfama_EIS, ZS_Hexenmagie))
 		&& (Npc_IsInState(Mod_7559_OUT_Serra_EIS, ZS_Hexenmagie))

@@ -46,7 +46,7 @@ FUNC INT Info_Mod_Bartholo_Laber_Condition()
 
 FUNC VOID Info_Mod_Bartholo_Laber_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Bartholo_Laber_03_00"); //Get out of here!
+	AI_Output(self, hero, "Info_Mod_Bartholo_Laber_03_00"); //Beat it!
 	
 	AI_StopProcessInfos	(self);
 };

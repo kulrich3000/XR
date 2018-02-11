@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_43_JOIN_15_00"); //I want to know more about the mercenaries!
-	AI_Output (self, hero, "DIA_BAU_43_JOIN_43_01"); //They hang around the yard all day long, get in a fight every now and then and find it funny.
+	AI_Output (hero, self, "DIA_BAU_43_JOIN_15_00"); //Tell me more about those mercenaries!
+	AI_Output (self, hero, "DIA_BAU_43_JOIN_43_01"); //They're loitering around the farm all day, beat each other up on occasion, and think it's a hoot.
 };
 
 // *************************************************************************
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_43_LOCATION_15_00"); //What can you tell me about this neighborhood?
-	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
-	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
+	AI_Output (hero, self, "DIA_BAU_43_LOCATION_15_00"); //What can you tell me about this area?
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_01"); //There are three farms here. Onar's to the east and Sekob's at the north end of the valley.
+	AI_Output (self, hero, "DIA_BAU_43_LOCATION_43_02"); //There's a path up to the high plain in the southwest. That's where Bengar's farm is.
 };
 
 INSTANCE Info_Mod_BAU_16_Pickpocket (C_INFO)

@@ -2,6 +2,8 @@ var int Mod_SaveOther;
 var C_Npc Mod_SaveNpc;
 var int Mod_LastStatsChapter;
 
+instance platzhaltermover(zCMover);
+
 FUNC VOID DAUERFUNC_01()
 {
 	var int concatTextInt;
@@ -537,6 +539,7 @@ FUNC VOID DAUERFUNC_01()
 				B_StartOtherRoutine	(Mod_7603_GRD_Gardist_NW,	"ZURIS");
 
 				B_StartOtherRoutine	(Mod_757_NONE_Zuris_NW,	"UEBERFALL");
+				CreateInvItems(Mod_757_NONE_Zuris_NW, ItPo_Health_Addon_04, 1);
 			};
 
 			Mod_Zuris_Ueberfall = 1;
@@ -1473,6 +1476,8 @@ FUNC VOID DAUERFUNC_01()
 			};
 		};
 	};
+	
+	var int ptr;
 
 	// Loren zurücksetzen
 
@@ -1505,6 +1510,13 @@ FUNC VOID DAUERFUNC_01()
 		{
 			LoreEisgebietMine01 = 0;
 
+			ptr = MEM_SearchVobByName("EVT_LORENFAHRT_MINE");
+
+			if (ptr > 0) {
+				MEM_AssignInst(platzhaltermover, ptr);
+				platzhaltermover.moveSpeed = mkf(100);
+				platzhaltermover._zCVob_bitfield[0] = platzhaltermover._zCVob_bitfield[0] & ~zCVob_bitfield0_collDetectionDynamic;
+			};
 			Wld_SendTrigger	("EVT_LORENFAHRT_MINE");
 		};
 
@@ -1513,6 +1525,13 @@ FUNC VOID DAUERFUNC_01()
 		{
 			LoreEisgebietMine01 = 3;
 
+			ptr = MEM_SearchVobByName("EVT_LORENFAHRT_MINE");
+
+			if (ptr > 0) {
+				MEM_AssignInst(platzhaltermover, ptr);
+				platzhaltermover.moveSpeed = mkf(100);
+				platzhaltermover._zCVob_bitfield[0] = platzhaltermover._zCVob_bitfield[0] & ~zCVob_bitfield0_collDetectionDynamic;
+			};
 			Wld_SendTrigger	("EVT_LORENFAHRT_MINE");
 		};
 
@@ -1567,6 +1586,14 @@ FUNC VOID DAUERFUNC_01()
 		{
 			LoreEisgebietSW01 = 0;
 
+			ptr = MEM_SearchVobByName("EVT_LORENFAHRT_SW");
+
+			if (ptr > 0) {
+				MEM_AssignInst(platzhaltermover, ptr);
+				platzhaltermover.moveSpeed = mkf(100);
+				platzhaltermover._zCVob_bitfield[0] = platzhaltermover._zCVob_bitfield[0] & ~zCVob_bitfield0_collDetectionDynamic;
+			};
+
 			Wld_SendTrigger	("EVT_LORENFAHRT_SW");
 		};
 
@@ -1574,6 +1601,14 @@ FUNC VOID DAUERFUNC_01()
 		&& (LoreEisgebietSW01 == 0)
 		{
 			LoreEisgebietSW01 = 3;
+
+			ptr = MEM_SearchVobByName("EVT_LORENFAHRT_SW");
+
+			if (ptr > 0) {
+				MEM_AssignInst(platzhaltermover, ptr);
+				platzhaltermover.moveSpeed = mkf(100);
+				platzhaltermover._zCVob_bitfield[0] = platzhaltermover._zCVob_bitfield[0] & ~zCVob_bitfield0_collDetectionDynamic;
+			};
 
 			Wld_SendTrigger	("EVT_LORENFAHRT_SW");
 		};
@@ -1806,6 +1841,17 @@ FUNC VOID DAUERFUNC_01()
 		Mod_LastStatsChapter = Kapitel;
 		
 		Spine_UpdateChapterStatistics(hero, Kapitel);
+	};
+	
+	if (Pickaxe_Fix) {
+		if (PLAYER_MOBSI_PRODUCTION == MOBSI_NONE)
+		&& (!C_BodyStateContains (hero, BS_MOBINTERACT)) {
+			Pickaxe_Fix = FALSE;
+			
+			if (Pickaxe_Count > Npc_HasItems(hero, ItMw_2H_Axe_L_01)) {
+				CreateInvItems(hero, ItMw_2H_Axe_L_01, Pickaxe_Count - Npc_HasItems(hero, ItMw_2H_Axe_L_01));
+			};
+		};
 	};
 
 	Wld_SendTrigger	("DAUERTRIGGER");

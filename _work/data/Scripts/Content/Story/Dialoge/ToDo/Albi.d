@@ -353,6 +353,10 @@ FUNC VOID Info_Mod_Albi_FokusEinsetzen_Info()
 	Log_CreateTopic	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_RUNNING);
 	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "To get to the upper city of lizards, I need to win their trust. Tomorrow, the lizards who have a job for me will give me a note. If I've done enough work, Albi will be expecting me.");
+	
+	if (Npc_HasItems(hero, ItMi_Focus_Kloster) == 0) {
+		B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "I shouldn't forget to get my stuff out of the trunk. Especially the focus stone I need....");
+	};
 
 	Mod_Albi_VertrauensTag = Wld_GetDay();
 

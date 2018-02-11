@@ -125,7 +125,7 @@ FUNC VOID Info_Mod_Skip_Francis_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_SKIP_PADDEL, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_SKIP_PADDEL, LOG_RUNNING);
-	B_LogEntry_More	(TOPIC_MOD_FRANCIS_ENTERTRUPP, TOPIC_MOD_SKIP_PADDEL, "I'm supposed to deliver some things for Skip: a package of rum for the landlord in the harbour district of Khorinis, a package full of grog for one of the mercenaries on Onar's farm and a package of all kinds of stuff for Lehmar, the money lender.", "I'm supposed to get Skip new paddles. Hm... who could have that? Someone in the harbour...");
+	B_LogEntry_More	(TOPIC_MOD_FRANCIS_ENTERTRUPP, TOPIC_MOD_SKIP_PADDEL, "I'm supposed to deliver some things for Skip: a package of rum for the landlord in the harbour district of Khorinis, a package full of grog for one of the mercenaries on Onar's farm and a package of all kinds of stuff for Lehmar, the money lender.", "I'm supposed to get Skip new paddles. Hm... who could have that? Someone in the harbour... Oh, and 1500 gold too.");
 };
 
 INSTANCE Info_Mod_Skip_Geld (C_INFO)
@@ -144,7 +144,6 @@ FUNC INT Info_Mod_Skip_Geld_Condition()
 	if (Npc_KnowsInfo(hero, Info_Mod_Skip_Francis))
 	&& (Npc_HasItems(hero, ItMi_Gold) >= 1500)
 	&& (Npc_HasItems(hero, ItMi_Paddel) >= 2)
-	&& (Mod_InEntertrupp == 0)
 	{
 		return 1;
 	};

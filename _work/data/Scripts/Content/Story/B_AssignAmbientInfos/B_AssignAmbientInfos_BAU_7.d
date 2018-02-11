@@ -69,7 +69,7 @@ FUNC INT DIA_BAU_7_PEOPLE_Condition()
 FUNC VOID DIA_BAU_7_PEOPLE_Info()
 {	
 	AI_Output (hero, self, "DIA_BAU_7_PEOPLE_15_00"); //Who's in charge here?
-	AI_Output (self, hero, "DIA_BAU_7_PEOPLE_07_01"); //The big yard belongs to Onar. So are the small farms nearby. But he rented it.
+	AI_Output (self, hero, "DIA_BAU_7_PEOPLE_07_01"); //The big farm belongs to Onar. The small farms around here, too. But he leases them out.
 };
 
 // *************************************************************************
@@ -94,9 +94,9 @@ FUNC INT DIA_BAU_7_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_7_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_7_LOCATION_15_00"); //Tell me more about the neighborhood.
-	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_01"); //The large courtyard here in the east of the valley is that of Onar, the courtyard of Sekob is located in the north.
-	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_02"); //And Bengar's farm is located on the plateau in the southwest. You can reach it from the valley - there is a large stone staircase leading to it.
+	AI_Output (hero, self, "DIA_BAU_7_LOCATION_15_00"); //Tell me more about the area.
+	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_01"); //The big farm here in the east of the valley is Onar's. Sekob's farm lies to the north.
+	AI_Output (self, hero, "DIA_BAU_7_LOCATION_07_02"); //And Bengar's farm is on the high plain to the southwest. You can get there from the valley - there's a big stone stairway that leads there.
 };
 
 INSTANCE Info_Mod_BAU_7_Pickpocket (C_INFO)

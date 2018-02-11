@@ -455,7 +455,7 @@ FUNC VOID Info_Mod_Angar_Hueterklinge3_Info()
 	else
 	{
 		AI_Output(hero, self, "Info_Mod_Angar_Hueterklinge3_15_05"); //I'm looking for an older Templar. you wouldn't happen to know who's in question?
-		AI_Output(self, hero, "Info_Mod_Angar_Hueterklinge3_34_06"); //You're trying to take me for a fool? Get your own guardian kings!
+		AI_Output(self, hero, "Info_Mod_Angar_Hueterklinge3_34_06"); //You're trying to take me for a fool? Get your own guardian blade!
 	};
 };
 

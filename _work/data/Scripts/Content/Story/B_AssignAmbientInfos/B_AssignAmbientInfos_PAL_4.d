@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_4_JOIN_Condition()
 
 FUNC VOID DIA_PAL_4_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_4_JOIN_15_00"); //How do I become Paladin?
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_01"); //If you're really serious, you should put yourself at the service of the paladins.
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_02"); //Go to the barracks and talk to Lord Andre. Get enlisted in the militia.
-	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_03"); //Maybe you'll get a chance to prove yourself worthy.
+	AI_Output (hero, self, "DIA_PAL_4_JOIN_15_00"); //How do I become a paladin?
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_01"); //If you are truly serious about it, then you should place yourself in the service of the paladins.
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_02"); //Go to the barracks and talk to Lord Andre. Get yourself admitted to the militia.
+	AI_Output (self, hero, "DIA_PAL_4_JOIN_04_03"); //Perhaps you will get a chance then to prove yourself worthy.
 };
 
 // *************************************************************************
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_4_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_4_LOCATION_15_00"); //What are you paladins doing here in khorinis?
-	AI_Output (self, hero, "DIA_PAL_4_LOCATION_04_01"); //I'm not authorized to tell you that.
+	AI_Output (hero, self, "DIA_PAL_4_LOCATION_15_00"); //What are you paladins doing here in Khorinis?
+	AI_Output (self, hero, "DIA_PAL_4_LOCATION_04_01"); //I am not authorized to tell you that.
 };
 
 INSTANCE Info_Mod_PAL_4_Pickpocket (C_INFO)

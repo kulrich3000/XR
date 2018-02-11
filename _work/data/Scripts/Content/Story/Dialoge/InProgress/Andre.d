@@ -2506,7 +2506,7 @@ FUNC VOID Info_Mod_Andre_HaradLehrling3_Info()
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_40_04"); //I hereby commission you to make seven noble swords, five noble longsabers and three ruby blades.
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_40_05"); //You can bring the guns to me as soon as they're ready.
 
-	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_SUCCESS);
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Lord Andre instructed me to forge seven noble swords, five noble longsabers and three ruby blades. Get to work!");
 };
 
 INSTANCE Info_Mod_Andre_HaradLehrling4 (C_INFO)
@@ -2642,7 +2642,7 @@ FUNC VOID Info_Mod_Andre_HaradLehrling4_Info()
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_40_03"); //Not right now. If anything should come up, I'll let you know again.
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_40_04"); //Thanks again for your cooperation.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Lord Andre instructed me to forge seven noble swords, five noble longsabers and three ruby blades. Get to work!");
+	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_SUCCESS);
 
 	B_GivePlayerXP	(1000);
 

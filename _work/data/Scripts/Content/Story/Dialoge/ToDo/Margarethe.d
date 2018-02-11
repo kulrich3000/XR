@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_Margarethe_Hi_D()
 	
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Maria's sister Anna has been called a witch by the inhabitants of Khorata and has been confiscated for this reason. Mary asked me to tell her brother Ulrich, who lives near Anna, about it and to find a way to help Anna.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Margaret's sister Anna has been called a witch by the inhabitants of Khorata and has been confiscated for this reason. Margarethe asked me to tell her brother Ulrich, who lives near Anna, about it and to find a way to help Anna.");
 
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 

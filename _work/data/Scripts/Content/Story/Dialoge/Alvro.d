@@ -19,7 +19,7 @@ FUNC INT Info_Mod_Alvro_Hi_Condition()
 
 FUNC VOID Info_Mod_Alvro_Hi_Info()
 {
-	AI_Output(self, hero, "Info_Mod_Alvro_Hi_01_00"); //Get out of here!
+	AI_Output(self, hero, "Info_Mod_Alvro_Hi_01_00"); //Beat it!
 
 	AI_StopProcessInfos	(self);
 };

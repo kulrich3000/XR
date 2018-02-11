@@ -574,6 +574,10 @@ FUNC VOID GILDENSTORY_FM()
 
 			B_LogEntry	(TOPIC_MOD_FM_FOKI, "Two demons for one man. That should have been virtue courage.");
 		};
+		
+		// Stop Mangel Quest
+		
+		B_StopMangel();
 	};
 
 	if (CurrentLevel == NEWWORLD_ZEN)

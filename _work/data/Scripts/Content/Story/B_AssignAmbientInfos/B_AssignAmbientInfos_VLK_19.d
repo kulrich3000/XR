@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_19_JOIN_Condition()
 
 FUNC VOID DIA_VLK_19_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_19_JOIN_15_00"); //How can I become a citizen of this city?
-	AI_Output (self, hero, "DIA_VLK_19_JOIN_19_01"); //Get yourself a decent job! Anyone who has a permanent job here in Khorinis is a citizen of the city.
+	AI_Output (hero, self, "DIA_VLK_19_JOIN_15_00"); //How can I become a citizen of this town?
+	AI_Output (self, hero, "DIA_VLK_19_JOIN_19_01"); //Go look for a decent job! Everyone who has a set occupation in Khorinis counts as a citizen of the town.
 };
 
 INSTANCE DIA_VLK_19_Skinner(C_INFO)
@@ -261,9 +261,9 @@ FUNC INT DIA_VLK_19_LOCATION_Condition()
 FUNC VOID DIA_VLK_19_LOCATION_Info()
 {	
 	AI_Output (hero, self, "DIA_VLK_19_LOCATION_15_00"); //What's interesting in this town?
-	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_01"); //Here you can buy almost everything you can imagine. Either from the merchants on the market square or in the lower town.
-	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_02"); //But almost everything you can buy here costs a little something.
-	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_03"); //If you don't have a lot of money, maybe Lehmar, the money lender, can help you. His house is at the beginning of the port district when you come from the lower town.
+	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_01"); //You can buy almost everything you can imagine here. Either from the merchants in the marketplace, or in the lower part of the city.
+	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_02"); //But almost everything that you can buy also costs a bit.
+	AI_Output (self, hero, "DIA_VLK_19_LOCATION_19_03"); //If you don't have enough money, then maybe Lehmar the moneylender can help you. His house is at the beginning of the harbor district as you come from the lower part of town.
 };
 
 INSTANCE Info_Mod_VLK_19_Pickpocket (C_INFO)

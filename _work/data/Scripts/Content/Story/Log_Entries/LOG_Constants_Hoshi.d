@@ -26,7 +26,7 @@ const string TOPIC_Addon_MalcomsStunt	=	"Malcom";
 const string Topic_Addon_PIR_Trader  = "Trading with the pirates";	
 
 //-------- Addon Lehrer ------------
-const string Topic_Addon_PIR_Teacher = "Teachers of pirates";
+const string Topic_Addon_PIR_Teacher = "Teacher at the pirates";
 
 
 
@@ -64,9 +64,9 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Ingredients for rune 'Stor
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Bennet's in jail.";
+const string TOPIC_RescueBennet		=	"Bennet is in jail";
 const string Topic_Ship				=	"I need a ship";
-const string Topic_Crew				=	"No trip without crew"; 
+const string Topic_Crew				=	"No traveling without a crew"; 
 const string Topic_Captain			=	"Who will be my captain?"; 	
 
 // ------ Kapitel 4 ------

@@ -44,9 +44,9 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_9_JOIN_15_00"); //How can I become Paladin?
-	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_01"); //Those who prove themselves worthy in the service of Inno or the king are chosen!
-	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_02"); //In other words, only the best are taken. But you're still a long way from that, son!
+	AI_Output (hero, self, "DIA_PAL_9_JOIN_15_00"); //How can I become a paladin?
+	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_01"); //Those who prove themselves worthy in the service of Innos or the king will be chosen!
+	AI_Output (self, hero, "DIA_PAL_9_JOIN_09_02"); //Put simply: Only the best will be chosen. But YOU are a long way from that, my boy!
 };
 
 // *************************************************************************
@@ -74,7 +74,7 @@ FUNC VOID DIA_PAL_9_PEOPLE_Info()
 	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_00"); //Who's in command here?
 	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
 	AI_Output (hero, self, "DIA_PAL_9_PEOPLE_15_02"); //And?
-	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_03"); //And no one else. Lord Hagen is the commander in chief of the entire island.
+	AI_Output (self, hero, "DIA_PAL_9_PEOPLE_09_03"); //And no one else. Lord Hagen is the supreme commander over the entire island.
 };
 
 // *************************************************************************
@@ -99,8 +99,8 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_9_LOCATION_15_00"); //Why did you come Paladins to Khorinis?
-	AI_Output (self, hero, "DIA_PAL_9_LOCATION_09_01"); //None of your business, lad! It must be enough for you to know that we are serving Innos and the King!
+	AI_Output (hero, self, "DIA_PAL_9_LOCATION_15_00"); //Why have you paladins come to Khorinis?
+	AI_Output (self, hero, "DIA_PAL_9_LOCATION_09_01"); //That's none of your business, pal! It's enough for you to know that we are in the service of Innos and the King!
 };
 
 INSTANCE Info_Mod_PAL_9_Pickpocket (C_INFO)

@@ -11,8 +11,8 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"These eggs have been harvested";
-	TEXT[1]					=	"Minecrawler queen.";
+	TEXT[0]					=	"These eggs were laid by a";
+	TEXT[1]					=	"minecrawler queen.";
 	TEXT[2]					=	"They contain a far stronger secretion than";
 	TEXT[3]					=	"a normal minecrawler's mandibles.";
 	TEXT[4]					=	"The secretion can be bottled at alchemy tables.";

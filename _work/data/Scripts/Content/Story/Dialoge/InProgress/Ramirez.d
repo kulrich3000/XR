@@ -226,7 +226,7 @@ FUNC VOID Info_Mod_Ramirez_WelcomeBack_Info()
 
 	Npc_RemoveInvItems	(hero, ItMi_Gold, 5000);
 
-	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez and Attila are free. But I'm still to plunder Lord Andre's chest.");
+	B_LogEntry	(TOPIC_MOD_DIEB_ATTILA, "Ramirez and Attila are free. But I'm still to plunder Lord Andres' chest.");
 
 	AI_StopProcessInfos	(self);
 

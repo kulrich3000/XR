@@ -97,9 +97,9 @@ FUNC INT DIA_BAU_13_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_13_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_BAU_13_LOCATION_15_00"); //What can you tell me about this neighborhood?
-	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_01"); //There are three farms here. Onars in the east and Sekobs in the north of the valley.
-	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_02"); //In the southwest there is a staircase to the plateau. There lies Bengar's farm.
+	AI_Output (hero, self, "DIA_BAU_13_LOCATION_15_00"); //What can you tell me about this area?
+	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_01"); //There are three farms here. Onar's to the east and Sekob's at the north end of the valley.
+	AI_Output (self, hero, "DIA_BAU_13_LOCATION_13_02"); //There's a path up to the high plain in the southwest. That's where Bengar's farm is.
 };
 
 INSTANCE Info_Mod_BAU_13_Pickpocket (C_INFO)

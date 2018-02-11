@@ -56,7 +56,7 @@ const string	TOPIC_Addon_VatrasAbloesung		=	"Relief for Vatras";
 
 // ******** Texte, die in alte Topics gepackt werden müssen *************
 
-const string	LogText_Addon_SCKnowsMisspeapl 		=	"Many citizens of Khorinis are missing. No one seems to know what happened to them.";
+const string	LogText_Addon_SCKnowsMisspeapl 		=	"Many citizens of Khorinis are missing. Nobody seems to know what happened to them.";
 const string	LogText_Addon_WilliamLeiche	 		=	"The body of a fisherman lies in the ruins east of the Water Mages' camp.";
 const string	LogText_Addon_RavensGoldmine	 	=	"Raven has a mine and is making the slaves dig for gold there.";
 const string	LogText_Addon_KDWRight			 	=	"Only a Water Mage has the right to admit somebody to the 'Ring of Water'.";
@@ -150,7 +150,7 @@ const string	TOPIC_MinenAnteile				=	"Forged Mine Shares";
 var int 		TOPIC_END_MinenAnteile;
 const string	TOPIC_RichterLakai				=	"The Judge's Lackey";
 const string	TOPIC_KillTrollBlack			=	"Black Hide";
-const string	TOPIC_Torlof_Dmt				=	"Torlof's fear of a black man.";
+const string	TOPIC_Torlof_Dmt				=	"Torlof's Fear of the Dark Man.";
 const string	TOPIC_KillHoshPak				=	"Hosh-Pak";
 const string	TOPIC_Urshak					=	"Ur-Shak";
 
@@ -183,7 +183,7 @@ var int   		TOPIC_END_KerolothsGeldbeutel;
 // ------ Kapitel 5 ------
 const string	TOPIC_BuchHallenVonIrdorath		=	"The Master of Dragons";			
 const string	TOPIC_RosisFlucht				=	"Rosi's Flight";			
-const string	TOPIC_bringRosiBackToSekob		=	"Sekob misses his wife";			
+const string	TOPIC_bringRosiBackToSekob		=	"Sekob misses his Wife";			
 const string	TOPIC_HealRandolph				=	"Deprivation";
 const string	TOPIC_GeroldGiveFood			=	"Hunger";
 

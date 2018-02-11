@@ -42,10 +42,10 @@ FUNC INT DIA_NOV_3_JOIN_Condition()
 
 FUNC VOID DIA_NOV_3_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_NOV_3_JOIN_15_00"); //I want to be a magician!
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_01"); //That is what many novices want. But only very few are destined to get the chance to be accepted into the circle of fire as chosen ones.
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_02"); //Being a magician from the circle of fire is the highest honor that can be bestowed upon you in our order.
-	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_03"); //You're gonna have to work hard to get your chance.
+	AI_Output (hero, self, "DIA_NOV_3_JOIN_15_00"); //I want to become a mage!
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_01"); //That's what many of the novices want. But only a very few are ordained as Chosen and get the chance to be accepted into the Circle of Fire.
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_02"); //To be a magician of the Circle of Fire is the highest honor which can be granted to you in our order.
+	AI_Output (self, hero, "DIA_NOV_3_JOIN_03_03"); //You will have to work hard in order to get your chance.
 };
 
 // *************************************************************************
@@ -92,9 +92,9 @@ FUNC INT DIA_NOV_3_LOCATION_Condition()
 FUNC VOID DIA_NOV_3_LOCATION_Info()
 {	
 	AI_Output (hero, self, "DIA_NOV_3_LOCATION_15_00"); //What can you tell me about this monastery?
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_01"); //We grow our own humble catering here. We raise sheep and make wine.
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_02"); //There is a library, but its use is reserved for magicians and novices.
-	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_03"); //We other novices are primarily concerned with ensuring that the magicians from the circle of fire lack nothing.
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_01"); //We grow our modest provisions here ourselves. We raise sheep and make wine.
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_02"); //There is a library, but its use is limited to the magicians and the chosen novices.
+	AI_Output (self, hero, "DIA_NOV_3_LOCATION_03_03"); //We other novices mainly see to it that the magicians of the Circle of Fire want for nothing.
 };
 
 INSTANCE Info_Mod_NOV_3_Pickpocket (C_INFO)

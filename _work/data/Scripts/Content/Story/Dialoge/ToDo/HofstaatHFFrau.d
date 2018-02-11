@@ -50,17 +50,17 @@ FUNC INT Info_Mod_HFFrau_Heiraten_02_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_00"); //You're the wife of the dog food?
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_00"); //You're the wife of the dog food?
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_01"); //Yes...
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_02"); //... which means it was me.
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_03"); //I'm terribly sorry for your loss. You want a little joy to comfort you.
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_03"); //I'm terribly sorry for your loss. You want a little joy to comfort you.
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_04"); //Yes... gerne.
 
 	B_GiveInvItems	(hero, self, ItFo_Trunken, 1);
 
 	B_UseItem	(self, ItFo_Trunken);
 
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Now that you're single, would you like to marry me?
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Now that you're single, would you like to marry me?
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_06"); //Get married? Yes... but I'm only marrying someone who has his own reason... Do you do that?
 };
 
@@ -91,7 +91,7 @@ FUNC INT Info_Mod_HFFrau_Heiraten_03_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_15_00"); //I have a house.
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_03_15_00"); //I have a house.
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_43_01"); //Great, then let's get married!
 
 	AI_StopProcessInfos	(self);

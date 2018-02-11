@@ -230,8 +230,8 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_PEOPLE_15_00"); //Who are the most important citizens of this city?
-	AI_Output (self, hero, "DIA_VLK_8_PEOPLE_08_01"); //Except for the paladins... the master craftsmen from the lower town. They are all highly regarded.
+	AI_Output (hero, self, "DIA_VLK_8_PEOPLE_15_00"); //Who are the most important citizens in this town?
+	AI_Output (self, hero, "DIA_VLK_8_PEOPLE_08_01"); //Besides the paladins ... the master craftsmen in the lower part of town. They are all very important.
 };
 
 // *************************************************************************
@@ -253,10 +253,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_8_LOCATION_15_00"); //What is there to see here?
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_01"); //The big ship with which the paladins arrived is at the harbour. It's a giant barge! You need to take a look at this one.
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_02"); //I can't imagine they'd leave you on it, though. The paladins guard the ship like the apple of their eyes.
-	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_03"); //No wonder. It is the only seaworthy barge that is anchored here far and wide.
+	AI_Output (hero, self, "DIA_VLK_8_LOCATION_15_00"); //What interesting things are there to see here?
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_01"); //The big ship that the paladins came in is in the harbor. It's an enormous boat! You have to take a look at it.
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_02"); //But I can't imagine that they'll let you on board. The paladins guard the ship like the crown jewels.
+	AI_Output (self, hero, "DIA_VLK_8_LOCATION_08_03"); //No wonder. It's also the only sea-worthy vessel anchored anywhere far and wide.
 };
 
 INSTANCE Info_Mod_VLK_8_Pickpocket (C_INFO)

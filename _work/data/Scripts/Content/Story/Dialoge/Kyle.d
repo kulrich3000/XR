@@ -105,7 +105,7 @@ FUNC VOID Info_Mod_Kyle_Lagermusik_Info()
 	AI_Output(hero, self, "Info_Mod_Kyle_Lagermusik_15_05"); //I don't think so. He wants to switch to making music now.
 	AI_Output(self, hero, "Info_Mod_Kyle_Lagermusik_01_06"); //Yes? That would be fantastic. Hopefully, far away from me.
 
-	if (!Npc_KnowsInfo(hero, Info_Mod_Kyle_SchatzImSchlammsee))	{
+	if (!Npc_KnowsInfo(hero, Info_Mod_Gravo_Schatz)) {
 		B_GivePlayerXP	(100);
 
 		B_SetTopicStatus	(TOPIC_MOD_GRAVO_SCHATZ, LOG_SUCCESS);

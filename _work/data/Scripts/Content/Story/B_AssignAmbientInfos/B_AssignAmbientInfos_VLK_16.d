@@ -43,9 +43,9 @@ FUNC INT DIA_VLK_16_JOIN_Condition()
 
 FUNC VOID DIA_VLK_16_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_43_JOIN_15_00"); //I want to be a citizen of this town!
-	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_01"); //You want to help us defend the city against the orcs?
-	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_02"); //If you are a citizen of Khorinis, you can join the militia - you should talk to one of the city guards.
+	AI_Output (hero, self, "DIA_VLK_43_JOIN_15_00"); //I want to become a citizen of this town!
+	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_01"); //Will you help us defend the city against the orcs?
+	AI_Output (self, hero, "DIA_VLK_43_JOIN_43_02"); //If you're a citizen of Khorinis, you can join the militia - you should talk to one of the city guards.
 };
 
 // *************************************************************************
@@ -162,8 +162,8 @@ FUNC INT DIA_VLK_16_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_16_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_43_LOCATION_15_00"); //What is there to see here?
-	AI_Output (self, hero, "DIA_VLK_43_LOCATION_43_01"); //In the marketplace you can see all kinds of goods.
+	AI_Output (hero, self, "DIA_VLK_43_LOCATION_15_00"); //What interesting things are there to see here?
+	AI_Output (self, hero, "DIA_VLK_43_LOCATION_43_01"); //There are all kinds of goods on display in the marketplace.
 };
 
 INSTANCE Info_Mod_VLK_16_Pickpocket (C_INFO)

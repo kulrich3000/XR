@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_21_JOIN_Condition()
 
 FUNC VOID DIA_VLK_21_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_21_JOIN_15_00"); //What do I have to do to become a citizen of this city?
-	AI_Output (self, hero, "DIA_VLK_21_JOIN_21_01"); //The master craftsmen in the lower town have great influence here in Khorinis. You should talk to one of them.
+	AI_Output (hero, self, "DIA_VLK_21_JOIN_15_00"); //What do I have to do to become a citizen of this town?
+	AI_Output (self, hero, "DIA_VLK_21_JOIN_21_01"); //The master craftsmen in the lower part of town have great influence here in Khorinis. You should go talk to one of them.
 };
 
 // *************************************************************************
@@ -163,8 +163,8 @@ FUNC INT DIA_VLK_21_LOCATION_Condition()
 FUNC VOID DIA_VLK_21_LOCATION_Info()
 {	
 	AI_Output (hero, self, "DIA_VLK_21_LOCATION_15_00"); //What are the most interesting places here in Khorinis?
-	AI_Output (self, hero, "DIA_VLK_21_LOCATION_21_01"); //(laughs) Maybe you'd better ask a man that. If you're looking for entertainment, you should check the harbour.
-	AI_Output (self, hero, "DIA_VLK_21_LOCATION_21_02"); //But if you want to buy something, go to the market square at the East Gate or the lower town.
+	AI_Output (self, hero, "DIA_VLK_21_LOCATION_21_01"); //(laughs) Maybe you had better ask that of a man. If it's entertainment you want, try the harbor.
+	AI_Output (self, hero, "DIA_VLK_21_LOCATION_21_02"); //But if you want to buy something, go to the marketplace at the east gate, or to the lower part of town.
 };
 
 INSTANCE Info_Mod_VLK_21_Pickpocket (C_INFO)

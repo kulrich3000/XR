@@ -44,10 +44,10 @@ FUNC INT DIA_PAL_12_JOIN_Condition()
 
 FUNC VOID DIA_PAL_12_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_12_JOIN_15_00"); //I want to be a Paladin!
+	AI_Output (hero, self, "DIA_PAL_12_JOIN_15_00"); //I want to become a paladin!
 	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_01"); //You? Don't make me laugh! You're not even a member of the city guard.
-	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_02"); //If I didn't see what a stupid boy you are, I'd assume you were insulting me.
-	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_03"); //Only the best of the best are accepted as paladins among the faithful of the King and our Lord Innos.
+	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_02"); //If I couldn't plainly see what a dense yokel you are, I'd think you were trying to insult me.
+	AI_Output (self, hero, "DIA_PAL_12_JOIN_12_03"); //Only the best of the best among the faithful followers of the king and our Lord Innos are accepted as paladins.
 };
 
 // *************************************************************************
@@ -73,8 +73,8 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
 	AI_Output (hero, self, "DIA_PAL_12_PEOPLE_15_00"); //Who's in command here?
-	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_01"); //This is the Honorable Lord Hagen. But Lord Andre is responsible for all matters of the common people.
-	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_02"); //You'll find him in the barracks. Maybe you're lucky, and he'll dedicate a few minutes of his precious time to you.
+	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_01"); //The honorable Lord Hagen. But Lord Andre is responsible for all the matters concerning the simple folk.
+	AI_Output (self, hero, "DIA_PAL_12_PEOPLE_12_02"); //You'll find him in the barracks. Maybe you'll get lucky and he'll devote a few minutes of his valuable time to you.
 };
 
 // *************************************************************************
@@ -99,10 +99,10 @@ FUNC INT DIA_PAL_12_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_PAL_12_LOCATION_15_00"); //What are you paladins doing here in khorinis?
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_01"); //Those who ask such questions end up on the gallows rather quickly.
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_02"); //If Lord Hagen can't afford ONE thing, this is to drop the knowledge of our mission into the hands of spies.
-	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_03"); //So you better watch what you ask.
+	AI_Output (hero, self, "DIA_PAL_12_LOCATION_15_00"); //What are you paladins doing here in Khorinis?
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_01"); //People who ask questions like that wind up on the gallows before they know it.
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_02"); //If there's ONE thing Lord Andre cannot afford, it's having knowledge of our mission falling into the hands of spies.
+	AI_Output (self, hero, "DIA_PAL_12_LOCATION_12_03"); //So, you'd better watch out what you ask.
 };
 
 INSTANCE Info_Mod_PAL_12_Pickpocket (C_INFO)

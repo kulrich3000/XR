@@ -672,11 +672,15 @@ FUNC VOID Info_Mod_Cyrco_Drachental_Info()
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_07"); //Before you ask: Only a few people are allowed to enter this area.
 		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_08"); //Very well. And how does this stuff work?
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_09"); //Similar to swamp weed. Only much more intense. And you get addicted to it.
+
+		B_GivePlayerXP(250);
 	}
 	else
 	{
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_10"); //Unfortunately, no.
 		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_11"); //Hmm... very sad.
+
+		B_GivePlayerXP(150);
 	};
 
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_12"); //But is that all you want to know?
@@ -696,7 +700,8 @@ FUNC VOID Info_Mod_Cyrco_Drachental_Info()
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_26"); //Well, hopefully.
 	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_27"); //Good luck, runners!
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_28"); //Thank you, master.
-
+	
+	B_SetTopicStatus	(TOPIC_MOD_JG_RELENDEL, LOG_SUCCESS);
 	B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Reported to Cyrco. He appoints me head ranger when I bring him Khorgor's head. And he reminded me of that weird cuboid rune. Let's see now.");
 };
 

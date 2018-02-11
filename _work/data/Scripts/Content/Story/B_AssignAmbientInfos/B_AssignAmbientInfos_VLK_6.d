@@ -43,10 +43,10 @@ FUNC INT DIA_VLK_6_JOIN_Condition()
 
 FUNC VOID DIA_VLK_6_JOIN_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_00"); //How do I become a citizen of this city?
-	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_01"); //You want to settle here? Now? Where there's all the signs of doom and gloom?
-	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_02"); //I didn't mean to stay forever.
-	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_03"); //Well, I'd advise you to stay here while you still can, but if you're up for it, you should talk to one of the influential citizens here.
+	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_00"); //How do I go about becoming a citizen of this town?
+	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_01"); //You want to settle here? Now? When all the signs are pointing towards the end of the world?
+	AI_Output (hero, self, "DIA_VLK_6_JOIN_15_02"); //I wasn't planning on staying forever.
+	AI_Output (self, hero, "DIA_VLK_6_JOIN_06_03"); //Well, if you want my advice, you should hotfoot it out of here as long as you still can. But if you insist, you should talk to one of the influential citizens here.
 };
 
 INSTANCE DIA_VLK_6_Skinner(C_INFO)
@@ -237,8 +237,8 @@ FUNC INT DIA_VLK_6_PEOPLE_Condition()
 FUNC VOID DIA_VLK_6_PEOPLE_Info()
 {	
 	AI_Output (hero, self, "DIA_VLK_6_PEOPLE_15_00"); //Who are the influential citizens of Khorinis?
-	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_01"); //Try the blacksmith or the carpenter in the lower town. There are also a few other distinguished masters there.
-	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_02"); //If anyone here has anything to say apart from the city guard and the paladins, it's these men.
+	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_01"); //Try the blacksmith or the carpenter in the lower part of town. You'll find a few other well-respected masters there, too.
+	AI_Output (self, hero, "DIA_VLK_6_PEOPLE_06_02"); //If anyone here besides the city guards and the paladins has anything to say, then it's these men.
 };
 
 // *************************************************************************
@@ -260,10 +260,10 @@ FUNC INT DIA_VLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_6_LOCATION_Info()
 {	
-	AI_Output (hero, self, "DIA_VLK_6_LOCATION_15_00"); //What is the best way to orientate myself in the city?
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_01"); //It's not that easy to find your way around here, is it? Even the signposts don't always help.
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_02"); //If you have a bad sense of direction, it will be best if you go to the harbour - you will probably still find it - and look for the house of the cartographer.
-	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_03"); //It's right next to the pub, by the dock wall. Brahim must have a map of the city for you.
+	AI_Output (hero, self, "DIA_VLK_6_LOCATION_15_00"); //How do I go about orienting myself in this city?
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_01"); //It's not that easy finding your way around here, is it? Even the signposts don't always help.
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_02"); //If you have a bad sense of direction, you had better go down to the harbor - assuming you can find your way there - and look for the cartographer's house.
+	AI_Output (self, hero, "DIA_VLK_6_LOCATION_06_03"); //It's right next to the pub, at the quay. Brahim will certainly have a map of the city for you.
 };
 
 INSTANCE Info_Mod_VLK_6_Pickpocket (C_INFO)
