@@ -455,7 +455,7 @@ FUNC VOID Info_Mod_Angar_Hueterklinge3_Info()
 	else
 	{
 		AI_Output(hero, self, "Info_Mod_Angar_Hueterklinge3_15_05"); //Szukam starszego templariusza. nie wiesz, kto jest pytany?
-		AI_Output(self, hero, "Info_Mod_Angar_Hueterklinge3_34_06"); //Próbujesz mnie zabrac za glupca? Zdobadz wlasnego opiekuna królów!
+		AI_Output(self, hero, "Info_Mod_Angar_Hueterklinge3_34_06"); //Próbujesz mnie zabrac za glupca? Zdobadz wlasne ostrze straznika!
 	};
 };
 

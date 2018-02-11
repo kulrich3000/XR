@@ -1,7 +1,7 @@
 instance Mod_7402_OUT_Fed_OM (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "pióro";
+	name 		= "denerwowac sie";
 	guild 		= GIL_OUT;
 	id 			= 7402;
 	voice		= 0;

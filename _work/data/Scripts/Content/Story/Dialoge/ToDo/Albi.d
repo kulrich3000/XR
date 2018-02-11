@@ -353,6 +353,10 @@ FUNC VOID Info_Mod_Albi_FokusEinsetzen_Info()
 	Log_CreateTopic	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_ECHSEN_VERTRAUEN, LOG_RUNNING);
 	B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Aby dostac sie do górnego miasta jaszczurek, musze zdobyc ich zaufanie. Jutro jaszczurki, które maja dla mnie prace, dadza mi notatke. Jesli wykonalem juz wystarczajaco duzo pracy, Albi bedzie mnie oczekiwal.");
+	
+	if (Npc_HasItems(hero, ItMi_Focus_Kloster) == 0) {
+		B_LogEntry	(TOPIC_MOD_ECHSEN_VERTRAUEN, "Nie powinienem zapomniec o wyciagnieciu z tulowia rzeczy. Szczególnie kamien ogniskowy, którego potrzebuje.....");
+	};
 
 	Mod_Albi_VertrauensTag = Wld_GetDay();
 

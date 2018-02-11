@@ -58,7 +58,7 @@ FUNC VOID Info_Mod_Margarethe_Hi_D()
 	
 	Log_CreateTopic	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_KHORATA_HEXENWAHN, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Siostra Marii Anna zostala nazwana czarownica przez mieszkanców Khoraty i z tego powodu zostala skonfiskowana. Maryja poprosila mnie, abym opowiedziala o tym swojemu bratu Ulrichowi, który mieszka w poblizu Anny, i znalazla sposób, aby pomóc Annie.");
+	B_LogEntry	(TOPIC_MOD_KHORATA_HEXENWAHN, "Siostra Anna Margaret zostala nazwana czarownica przez mieszkanców Khoraty i z tego powodu zostala skonfiskowana. Margarethe poprosila mnie, abym opowiedziala o tym swojemu bratu Ulrichowi, który mieszka w poblizu Anny, i znalazla sposób na udzielenie jej pomocy.");
 
 	Info_ClearChoices	(Info_Mod_Margarethe_Hi);
 

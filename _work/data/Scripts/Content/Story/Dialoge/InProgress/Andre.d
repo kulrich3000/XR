@@ -2506,7 +2506,7 @@ FUNC VOID Info_Mod_Andre_HaradLehrling3_Info()
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_40_04"); //Niniejszym powierzam Panu wykonanie siedmiu szlachetnych mieczy, pieciu szlachetnych szlachetnych dlugopisów i trzech rubinowych ostrzy.
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling3_40_05"); //Mozesz przywiezc mi bron zaraz po jej przygotowaniu.
 
-	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_SUCCESS);
+	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Pan Andre polecil mi, abym wykul siedem szlachetnych mieczy, piec szlachetnych lingwistów i trzy rubinowe ostrza. Do pracy!");
 };
 
 INSTANCE Info_Mod_Andre_HaradLehrling4 (C_INFO)
@@ -2642,7 +2642,7 @@ FUNC VOID Info_Mod_Andre_HaradLehrling4_Info()
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_40_03"); //Nie teraz. Jesli cos sie pojawi, to powiem ci jeszcze raz.
 	AI_Output(self, hero, "Info_Mod_Andre_HaradLehrling4_40_04"); //Jeszcze raz dziekuje za wspólprace.
 
-	B_LogEntry	(TOPIC_MOD_LEHRLING_HARAD_FOUR, "Pan Andre polecil mi, abym wykul siedem szlachetnych mieczy, piec szlachetnych lingwistów i trzy rubinowe ostrza. Do pracy!");
+	B_SetTopicStatus	(TOPIC_MOD_LEHRLING_HARAD_FOUR, LOG_SUCCESS);
 
 	B_GivePlayerXP	(1000);
 

@@ -672,11 +672,15 @@ FUNC VOID Info_Mod_Cyrco_Drachental_Info()
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_07"); //Zanim zapytasz: Tylko nieliczni moga wejsc do tego obszaru.
 		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_08"); //Bardzo dobrze. Jak to dziala?
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_09"); //Podobnie jak chwast bagienny. Tylko o wiele bardziej intensywne. I uzalezniasz sie od niej.
+
+		B_GivePlayerXP(250);
 	}
 	else
 	{
 		AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_10"); //Niestety, nie.
 		AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_11"); //Hmm..... bardzo smutny
+
+		B_GivePlayerXP(150);
 	};
 
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_12"); //Ale czy to wszystko, czego chcesz wiedziec?
@@ -696,7 +700,8 @@ FUNC VOID Info_Mod_Cyrco_Drachental_Info()
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_26"); //Mam nadzieje, ze dobrze.
 	AI_Output(self, hero, "Info_Mod_Cyrco_Drachental_38_27"); //Powodzenia, biegacze!
 	AI_Output(hero, self, "Info_Mod_Cyrco_Drachental_15_28"); //Dziekuje panu, panie posle.
-
+	
+	B_SetTopicStatus	(TOPIC_MOD_JG_RELENDEL, LOG_SUCCESS);
 	B_LogEntry	(TOPIC_MOD_JG_DRACHENTAL, "Zgloszony do Cyrco. Mnie powoluje glowe na lesniczego, kiedy przynosze mu glowe Khorgora. I przypomnial mi o tej dziwnej prostopadlej runie. Zobaczmy teraz.");
 };
 

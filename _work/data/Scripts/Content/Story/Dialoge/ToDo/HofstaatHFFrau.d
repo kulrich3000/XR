@@ -50,17 +50,17 @@ FUNC INT Info_Mod_HFFrau_Heiraten_02_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_02_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_00"); //Jestes zona karmy dla psów?
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_00"); //Jestes zona karmy dla psów?
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_01"); //Tak.....
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_02"); //... to wlasnie ja.
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_03"); //Przykro mi, ze strasznie zaluje Twojej straty. Chcesz troche radosci pocieszyc.
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_03"); //Przykro mi, ze strasznie zaluje Twojej straty. Chcesz troche radosci pocieszyc.
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_04"); //Tak..... gerne.
 
 	B_GiveInvItems	(hero, self, ItFo_Trunken, 1);
 
 	B_UseItem	(self, ItFo_Trunken);
 
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Teraz, gdy jestes samotny, chcialbys mnie poslubic?
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_02_15_05"); //Teraz, gdy jestes samotny, chcialbys mnie poslubic?
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_02_43_06"); //Ozenic sie? Tak..... ale zenie sie tylko za kogos, kto ma wlasny powód.... Czy to robisz?
 };
 
@@ -91,7 +91,7 @@ FUNC INT Info_Mod_HFFrau_Heiraten_03_Condition()
 
 FUNC VOID Info_Mod_HFFrau_Heiraten_03_Info()
 {
-	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_15_00"); //Mam dom.
+	AI_Output(hero, self, "Info_Mod_HFFrau_Heiraten_03_15_00"); //Mam dom.
 	AI_Output(self, hero, "Info_Mod_HFFrau_Heiraten_03_43_01"); //Wspaniale, slubujmy sie!
 
 	AI_StopProcessInfos	(self);

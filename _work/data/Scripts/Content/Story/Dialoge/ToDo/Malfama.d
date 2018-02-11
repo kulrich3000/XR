@@ -51,9 +51,6 @@ FUNC VOID Info_Mod_Malfama_Traenenkristall_Info()
 	AI_Output(self, hero, "Info_Mod_Malfama_Traenenkristall_43_00"); //(do Serry) Co zrobiles/as? Tak, oczywiscie krysztal. Chce, zebyscie wszyscy zalowali tego smierci!
 
 	AI_StopProcessInfos	(self);
-
-	B_StartOtherRoutine	(self, "HEXENMAGIE");
-	B_StartOtherRoutine	(Mod_7559_OUT_Serra_EIS, "HEXENMAGIE");
 };
 
 INSTANCE Info_Mod_Malfama_EXIT (C_INFO)

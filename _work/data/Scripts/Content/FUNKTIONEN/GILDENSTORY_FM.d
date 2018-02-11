@@ -574,6 +574,10 @@ FUNC VOID GILDENSTORY_FM()
 
 			B_LogEntry	(TOPIC_MOD_FM_FOKI, "Dwa demony dla jednego czlowieka. To powinna byc odwaga cnoty.");
 		};
+		
+		// Stop Mangel Quest
+		
+		B_StopMangel();
 	};
 
 	if (CurrentLevel == NEWWORLD_ZEN)

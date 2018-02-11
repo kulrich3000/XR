@@ -31,9 +31,9 @@ INSTANCE Info_Mod_Ferco_WerBistDu (C_INFO)
 
 FUNC INT Info_Mod_Ferco_WerBistDu_Condition()
 {
-	if ((Npc_KnowsInfo(hero, Info_Mod_Ferco_Hi))
-	&& (!Npc_KnowsInfo(hero, Info_Mod_Ferco_Einnehmen)))
-	|| (Npc_KnowsInfo(hero, Info_Mod_Ferco_Loser))
+	if (Npc_KnowsInfo(hero, Info_Mod_Ferco_Hi))
+	&& ((!Npc_KnowsInfo(hero, Info_Mod_Ferco_Einnehmen))
+	|| (Npc_KnowsInfo(hero, Info_Mod_Ferco_Loser)))
 	{
 		return 1;
 	};
@@ -374,6 +374,7 @@ FUNC VOID Info_Mod_Ferco_Crazy_C()
 	VMG_Second = 1;
 
 	Info_ClearChoices	(Info_Mod_Ferco_Crazy);
+	Info_ClearChoices	(Info_Mod_Ferco_CrazyTwo);
 };
 
 FUNC VOID Info_Mod_Ferco_Crazy_B()
@@ -400,6 +401,7 @@ FUNC VOID Info_Mod_Ferco_Crazy_A()
 	B_LogEntry_More	(TOPIC_MOD_VMG_AUFNAHME, TOPIC_MOD_FERCO_WANZE, "Hm, powinienem znalezc zakleta role metamorfoz miesnych. Zobaczmy, jak Ken moze mi w tym pomóc.", "Ferco kazal mi porozmawiac z Kenem, aby dowiedziec sie, gdzie jest Gelato, aby uratowac zaklecie metamorfozy Meat Bug.");
 
 	Info_ClearChoices	(Info_Mod_Ferco_Crazy);
+	Info_ClearChoices	(Info_Mod_Ferco_CrazyTwo);
 };
 
 INSTANCE Info_Mod_Ferco_CrazyTwo (C_INFO)
