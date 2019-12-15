@@ -85,11 +85,17 @@ func void B_MM_AssessEnemy ()
 		return;
 	};
 
-	if (CurrentLevel == MINENTAL_ZEN)
-	{
+	if (CurrentLevel == MINENTAL_ZEN) {
 		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Monster_11058_Demon_MT))
-		&& (!Npc_KnowsInfo(hero, Info_Mod_DemonChromanin_Hi))
-		{
+		&& (!Npc_KnowsInfo(hero, Info_Mod_DemonChromanin_Hi)) {
+			return;
+		};
+		
+		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_1106_EBR_Bartholo_MT))
+		&& (Npc_IsPlayer(other))
+		&& (playerIsTransformed)
+		&& ((Mod_IsFleischwanze == 1)
+		|| (Mod_IsRabbit == 1)) {
 			return;
 		};
 	};
@@ -224,6 +230,24 @@ func void B_MM_AssessEnemy ()
 		|| (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_7265_GUR_BaalTavor_OGY)))
 		&& (Mod_NL_BarriereAttack == 0)
 		{
+			return;
+		};
+	};
+	
+	if (CurrentLevel == ADDONWORLD_ZEN) {		
+		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_7315_BK_Bshydal_AW))
+		&& ((Hlp_GetInstanceID(other) == Hlp_GetInstanceID(Blutgolem_02))
+		|| (Hlp_GetInstanceID(other) == Hlp_GetInstanceID(Blutgolem_03))) {
+			return;
+		};
+		
+		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_7315_BK_Bshydal_AW))
+		&& (Hlp_GetInstanceID(other) == Hlp_GetInstanceID(Blutgolem_02)) {
+			return;
+		};
+		
+		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(Mod_7315_BK_Bshydal_AW))
+		&& (Hlp_GetInstanceID(other) == Hlp_GetInstanceID(Blutgolem_03)) {
 			return;
 		};
 	};

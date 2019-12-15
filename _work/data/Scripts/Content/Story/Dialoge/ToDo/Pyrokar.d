@@ -1227,9 +1227,9 @@ func void Info_Mod_Pyrokar_PETZMASTER_PayNow()
 
 func void Info_Mod_Pyrokar_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_01"); //Then see that you get the gold as soon as possible.
-	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
+	AI_Output (hero, self, "Info_Mod_Pyrokar_PETZMASTER_PayLater_15_00"); //I don't have enough gold.
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_01"); //Then see to it that you acquire the gold as quickly as possible
+	AI_Output (self, hero, "Info_Mod_Pyrokar_PETZMASTER_PayLater_11_02"); //And I'm warning you: if you add to your guilt, things will get worse for you.
 	
 	Pyrokar_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Pyrokar_LastPetzCrime		= B_GetGreatestPetzCrime(self);

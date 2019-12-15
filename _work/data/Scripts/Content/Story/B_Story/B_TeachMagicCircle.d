@@ -168,7 +168,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		if (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"The sayings of the 5. Circles are: scream of the dead, summon demon and heal heavy wounds.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 8)
@@ -191,7 +191,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 		if (Mod_Gilde == 14)
 		{
 			PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-			B_LogEntry (TOPIC_TalentMagicCircle,"The sayings of the 6. Circles are: Breath of Death and Army of Darkness.");
+			B_LogEntry (TOPIC_TalentMagicCircle,"");
 			return TRUE;
 		}
 		else if (Mod_Gilde == 8)

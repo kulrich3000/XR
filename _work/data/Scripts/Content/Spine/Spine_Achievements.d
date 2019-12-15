@@ -10,6 +10,10 @@ var int Spine_UpdateAchievementProgressFunc;
 var int Spine_GetAchievementProgressFunc;
 var int Spine_GetAchievementMaxProgressFunc;
 var int Spine_GetShowAchievementsFunc;
+var int Spine_IsAchievementOfOtherModUnlockedFunc;
+
+var int SPINE_ACHIEVEMENTS_LOCAL_UNLOCKED[MAX_ACHIEVEMENTS];
+var int SPINE_ACHIEVEMENTS_LOCAL_PROGRESS[MAX_ACHIEVEMENTS];
 
 // return TRUE or FALSE whether the achievement for the given id is already unlocked or not
 func int Spine_IsAchievementUnlocked(var int identifier) {
@@ -17,6 +21,8 @@ func int Spine_IsAchievementUnlocked(var int identifier) {
 		CALL_IntParam(identifier);
 		CALL__cdecl(Spine_IsAchievementUnlockedFunc);
 		return CALL_RetValAsInt();
+	} else if (Spine_Initialized && Spine_StartedWithoutSpine) {
+		return MEM_ReadStatArr(SPINE_ACHIEVEMENTS_LOCAL_UNLOCKED, identifier);
 	};
 	return TRUE;
 };
@@ -43,7 +49,7 @@ func void Spine_ShowAchievementView(var int identifier) {
 		startPosY = screen.psizey - SPINE_ACHIEVEMENT_HEIGHT;
 	};
 	Spine_AchievementView = View_CreatePxl(startPosX, startPosY, startPosX + SPINE_ACHIEVEMENT_WIDTH, startPosY + SPINE_ACHIEVEMENT_HEIGHT);
-	View_SetTexture(Spine_AchievementView, "ACHIEVEMENT_BACKGROUND.TGA");
+	View_SetTexture(Spine_AchievementView, SPINE_ACHIEVEMENT_BACKGROUND);
 	View_Open(Spine_AchievementView);
 	
 	var int imageStartPosX;
@@ -108,6 +114,9 @@ func void Spine_ShowAchievementView(var int identifier) {
 // unless it is disabled via setting SPINE_SHOWACHIEVEMENTS = FALSE
 // place on the screen can be changed setting SPINE_ACHIEVEMENTORIENTATION
 func void Spine_UnlockAchievement(var int identifier) {
+	var int i;
+	var int pos;
+	var int hndl;
 	if (Spine_Initialized && Spine_UnlockAchievementFunc) {
 		if (!Spine_IsAchievementUnlocked(identifier)) {
 			CALL_IntParam(identifier);
@@ -116,10 +125,33 @@ func void Spine_UnlockAchievement(var int identifier) {
 			if (Spine_AchievementView == 0) {
 				Spine_ShowAchievementView(identifier);
 			} else {
-				var int i; i = 0;
-				var int pos; pos = MEM_StackPos.position;
+				i = 0;
+				pos = MEM_StackPos.position;
 	
-				var int hndl; hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
+				hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
+				
+				if (hndl == -1) {
+					MEM_WriteStatArr(SPINE_ACHIEVEMENTSQUEUE, i, identifier);
+				} else {
+					i += 1;
+					if (i < 10) {
+						MEM_StackPos.position = pos;
+					};
+				};
+			};
+		};
+	} else if (Spine_Initialized && Spine_StartedWithoutSpine) {
+		if (!Spine_IsAchievementUnlocked(identifier)) {
+			MEM_WriteStatArr(SPINE_ACHIEVEMENTS_LOCAL_UNLOCKED, identifier, TRUE);
+			MEM_SetGothOpt("SPINE", ConcatStrings(ConcatStrings(SPINE_MODNAME, "_achievement_"), IntToString(identifier)), "1");
+			
+			if (Spine_AchievementView == 0) {
+				Spine_ShowAchievementView(identifier);
+			} else {
+				i = 0;
+				pos = MEM_StackPos.position;
+	
+				hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
 				
 				if (hndl == -1) {
 					MEM_WriteStatArr(SPINE_ACHIEVEMENTSQUEUE, i, identifier);
@@ -137,18 +169,27 @@ func void Spine_UnlockAchievement(var int identifier) {
 // updates achievement progress
 // in case maximum achievement progress is reached, the achievement is displayed as unlocked automatically
 func void Spine_UpdateAchievementProgress(var int identifier, var int progress) {
+	var int i;
+	var int ret;
+	var int pos;
+	var int hndl;
+	var int maxProgress;
+	var string maxProgressString;
+	
 	if (Spine_Initialized && Spine_UpdateAchievementProgressFunc) {
 		if (!Spine_IsAchievementUnlocked(identifier)) {
 			CALL_IntParam(progress);
 			CALL_IntParam(identifier);
 			CALL__cdecl(Spine_UpdateAchievementProgressFunc);
-			var int ret; ret = CALL_RetValAsInt();
+			ret = CALL_RetValAsInt();
 			
 			if (Spine_GetTestMode()) {
-				var string maxProgressString; maxProgressString = MEM_ReadStatStringArr(SPINE_ACHIEVEMENT_PROGRESS, identifier);
-				var int maxProgress; maxProgress = STR_ToInt(maxProgressString);
+				maxProgressString = MEM_ReadStatStringArr(SPINE_ACHIEVEMENT_PROGRESS, identifier);
+				maxProgress = STR_ToInt(maxProgressString);
 				if (maxProgress <= progress) {
 					ret = TRUE;
+					
+					Spine_UnlockAchievement(identifier);
 				};
 			};
 			
@@ -156,10 +197,10 @@ func void Spine_UpdateAchievementProgress(var int identifier, var int progress) 
 				if (Spine_AchievementView == 0) {
 					Spine_ShowAchievementView(identifier);
 				} else {
-					var int i; i = 0;
-					var int pos; pos = MEM_StackPos.position;
+					i = 0;
+					pos = MEM_StackPos.position;
 		
-					var int hndl; hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
+					hndl = MEM_ReadStatArr(SPINE_ACHIEVEMENTSQUEUE, i);
 					
 					if (hndl == -1) {
 						MEM_WriteStatArr(SPINE_ACHIEVEMENTSQUEUE, i, identifier);
@@ -172,6 +213,22 @@ func void Spine_UpdateAchievementProgress(var int identifier, var int progress) 
 				};
 			};
 		};
+	} else if (Spine_Initialized && Spine_StartedWithoutSpine) {
+		if (!Spine_IsAchievementUnlocked(identifier)) {
+			MEM_WriteStatArr(SPINE_ACHIEVEMENTS_LOCAL_PROGRESS, identifier, progress);
+			
+			if (Spine_GetTestMode() || Spine_StartedWithoutSpine) {
+				maxProgressString = MEM_ReadStatStringArr(SPINE_ACHIEVEMENT_PROGRESS, identifier);
+				maxProgress = STR_ToInt(maxProgressString);
+				if (maxProgress <= progress) {
+					ret = TRUE;
+				};
+			};
+			
+			if (ret) {
+				Spine_UnlockAchievement(identifier);
+			};
+		};
 	};
 };
 
@@ -181,14 +238,16 @@ func int Spine_GetAchievementProgress(var int identifier) {
 		CALL_IntParam(identifier);
 		CALL__cdecl(Spine_GetAchievementProgressFunc);
 		return CALL_RetValAsInt();
+	} else if (Spine_Initialized && Spine_StartedWithoutSpine) {
+		return MEM_ReadStatArr(SPINE_ACHIEVEMENTS_LOCAL_PROGRESS, identifier);
 	};
 	return FALSE;
 };
 
 // returns the maximum progress to reach of an achievement or 0 in case it is an achievement without progress
 func int Spine_GetAchievementMaxProgress(var int identifier) {
-	if (Spine_Initialized && Spine_GetAchievementMaxProgressFunc) {
-		if (Spine_GetTestMode()) {
+	if (Spine_Initialized && (Spine_GetAchievementMaxProgressFunc || Spine_StartedWithoutSpine)) {
+		if (Spine_GetTestMode() || Spine_StartedWithoutSpine) {
 			var string maxProgressString; maxProgressString = MEM_ReadStatStringArr(SPINE_ACHIEVEMENT_PROGRESS, identifier);
 			var int maxProgress; maxProgress = STR_ToInt(maxProgressString);
 			return maxProgress;
@@ -199,6 +258,25 @@ func int Spine_GetAchievementMaxProgress(var int identifier) {
 		};
 	};
 	return FALSE;
+};
+
+// increased achievement progress by one
+// in case maximum achievement progress is reached, the achievement is displayed as unlocked automatically
+func void Spine_IncrementAchievementProgress(var int identifier) {
+	var int currentProgress; currentProgress = Spine_GetAchievementProgress(identifier);
+	Spine_UpdateAchievementProgress(identifier, currentProgress + 1);
+};
+
+// return TRUE or FALSE whether the achievement for the given id of another modification is already unlocked or not
+// this function shouldn't be called frequently in the game loop as it is slow
+func int Spine_IsAchievementOfOtherModUnlocked(var int modID, var int identifier) {
+	if (Spine_Initialized && Spine_IsAchievementOfOtherModUnlockedFunc) {
+		CALL_IntParam(identifier);
+		CALL_IntParam(modID);
+		CALL__cdecl(Spine_IsAchievementOfOtherModUnlockedFunc);
+		return CALL_RetValAsInt();
+	};
+	return TRUE;
 };
 
 // private, don't call from outside

@@ -249,7 +249,7 @@ func void DIA_CITYGUIDE_MARKT()
 	
 func void DIA_CITYGUIDE_GALGEN()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_GALGEN_15_00"); //How do I get to the gallows site?
+	AI_Output (other, self, "DIA_CITYGUIDE_GALGEN_15_00"); //How do I get to the gallows square?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{

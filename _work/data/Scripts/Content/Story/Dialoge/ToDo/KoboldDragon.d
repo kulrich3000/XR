@@ -46,6 +46,8 @@ FUNC VOID Info_Mod_KoboldDragon_Stab_Info()
 {
 	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_00"); //Phew, all the treasures don't weigh so little...
 	AI_Output(self, hero, "Info_Mod_KoboldDragon_Stab_20_01"); //What?! You here, man?! What do you want?
+	
+	self.flags = 0;
 
 	Info_ClearChoices	(Info_Mod_KoboldDragon_Stab);
 

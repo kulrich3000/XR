@@ -2786,7 +2786,7 @@ FUNC VOID INIT_NewWorld()
 		B_Kapitelwechsel	(6, NEWWORLD_ZEN);
 	};
 
-	if (Kapitel == 4)
+	if (Kapitel >= 4)
 	&& (Mod_MoeDontTalk == FALSE)
 	&& (Npc_KnowsInfo(hero, Info_Mod_Moe_AllievoTot))
 	{
@@ -8904,7 +8904,7 @@ FUNC VOID INIT_Relendel()
 	};
 
 	if (Mod_WM_UnheilFertig == 1)
-	{
+	&& (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_KhorataPlage_01)) {
 		Mod_WM_UnheilFertig = 2;
 
 		Wld_InsertNpc	(Rabbit, "REL_SURFACE_107");

@@ -399,6 +399,13 @@ FUNC VOID Info_Mod_Angar_Hueterklinge_B()
 	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "For a two-handed guardian's blade I need 8 lumps of magic ore, 6 rice lord herbs, a dagger that drank the blood of 4 kings and the flesh of a scavenger that didn't hatch from an egg. I have to take these things all to Darrion. In order to find out how to get the things, I should ask the other templars.");
 
 	Mod_TPL_Hueterklinge_Art = 2;
+	
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_11");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_25");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_13");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_2_NC_14");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_17");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_2_NC_16");
 
 	Info_Mod_Angar_Hueterklinge_C();
 };
@@ -843,9 +850,9 @@ func void Info_Mod_Angar_PETZMASTER_PayNow()
 
 func void Info_Mod_Angar_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Angar_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
-	AI_Output (self, hero, "Info_Mod_Angar_PETZMASTER_PayLater_34_01"); //Then see that you get the gold as soon as possible.
-	AI_Output (self, hero, "Info_Mod_Angar_PETZMASTER_PayLater_34_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
+	AI_Output (hero, self, "Info_Mod_Angar_PETZMASTER_PayLater_15_00"); //I don't have enough gold.
+	AI_Output (self, hero, "Info_Mod_Angar_PETZMASTER_PayLater_34_01"); //Then see to it that you acquire the gold as quickly as possible
+	AI_Output (self, hero, "Info_Mod_Angar_PETZMASTER_PayLater_34_02"); //And I'm warning you: if you add to your guilt, things will get worse for you.
 	
 	Angar_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Angar_LastPetzCrime		= B_GetGreatestPetzCrime(self);

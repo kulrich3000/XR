@@ -323,7 +323,6 @@ FUNC VOID GILDENSTORY_ADANOS()
 		// Groﬂes Unheil
 
 		if (Mod_WM_Boeden == 9)
-		&& (CurrentLevel == NEWWORLD_ZEN)
 		&& (Npc_KnowsInfo(hero, Info_Mod_Saturas_AW_Kap3))
 		{
 			Wld_SetTime(23,00);
@@ -784,6 +783,23 @@ FUNC VOID GILDENSTORY_ADANOS()
 		&& (!Npc_KnowsInfo(hero, Info_Mod_Cronos_Angriff_01))
 		{
 			Mod_WM_CronosAttack = 4;
+
+			B_StartOtherRoutine	(Mod_1538_WKR_Wasserkrieger_NW, "START");
+			B_StartOtherRoutine	(Mod_1530_WKR_Everaldo_NW, "START");
+			B_StartOtherRoutine	(Mod_1539_WKR_Wasserkrieger_NW, "START");
+			B_StartOtherRoutine	(Mod_1533_WKR_Salvador_NW, "START");
+			B_StartOtherRoutine	(Mod_1537_WKR_Vanas_NW, "START");
+			B_StartOtherRoutine	(Mod_1536_WKR_Roka_NW, "START");
+			B_StartOtherRoutine	(Mod_1535_WKR_Wasserkrieger_NW, "START");
+			B_StartOtherRoutine	(Mod_1534_WKR_Wasserkrieger_NW, "START");
+			B_StartOtherRoutine	(Mod_1532_HTR_Ethan_NW, "START");
+			
+			if (Npc_KnowsInfo(hero, Info_Mod_Joe_Wassersnapper))
+			&& (!Npc_KnowsInfo(hero, Info_Mod_Joe_Wassersnapper2)) {
+				B_StartOtherRoutine	(Mod_588_WNOV_Joe_NW, "SNAPPER");
+			} else {
+				B_StartOtherRoutine	(Mod_588_WNOV_Joe_NW, "START");
+			};
 		};
 
 		if (Npc_KnowsInfo(hero, Info_Mod_Cronos_Angriff_01))
@@ -1036,6 +1052,14 @@ FUNC VOID GILDENSTORY_ADANOS()
 			Mod_7588_OUT_Wilderer_NW.aivar[AIV_Partymember] = FALSE;
 			Mod_7587_OUT_Wilderer_NW.aivar[AIV_Partymember] = FALSE;
 		};
+		
+		if (Npc_KnowsInfo(hero, Info_Mod_Saturas_NW_Rasend02))
+		&& (!Npc_IsInState(Mod_774_KDW_Saturas_NW, ZS_Talk))
+		&& (!Mod_SaturasAtRat) {
+			Mod_SaturasAtRat = TRUE;
+			
+			B_StartOtherRoutine	(Mod_774_KDW_Saturas_NW, "RAT");
+		};
 	};
 
 	// Aura des Berserkers - Wirkung
@@ -1181,14 +1205,6 @@ FUNC VOID GILDENSTORY_ADANOS()
 			Mod_HeroDemonCounter = 0;
 
 			Wld_StopEffect	("INFERNALFIRE");
-		};
-		
-		if (Npc_KnowsInfo(hero, Info_Mod_Saturas_NW_Rasend02))
-		&& (!Npc_IsInState(Mod_774_KDW_Saturas_NW, ZS_Talk))
-		&& (!Mod_SaturasAtRat) {
-			Mod_SaturasAtRat = TRUE;
-			
-			B_StartOtherRoutine	(Mod_774_KDW_Saturas_NW, "RAT");
 		};
 	};
 

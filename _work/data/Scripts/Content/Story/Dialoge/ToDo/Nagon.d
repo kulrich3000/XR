@@ -71,6 +71,7 @@ FUNC INT Info_Mod_Nagon_HabFoki_Condition()
 {
 	if (Npc_HasItems(hero, ItMi_Focus_Pat) == 5)
 	&& (Mod_FM_Foki >= 2)
+	&& (Npc_KnowsInfo(hero, Info_Mod_Nagon_Gizar))
 	{
 		return 1;
 	};
@@ -432,9 +433,9 @@ func void Info_Mod_Nagon_PETZMASTER_PayNow()
 
 func void Info_Mod_Nagon_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
-	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_01"); //Then see that you get the gold as soon as possible.
-	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
+	AI_Output (hero, self, "Info_Mod_Nagon_PETZMASTER_PayLater_15_00"); //I don't have enough gold.
+	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_01"); //Then see to it that you acquire the gold as quickly as possible
+	AI_Output (self, hero, "Info_Mod_Nagon_PETZMASTER_PayLater_10_02"); //And I'm warning you: if you add to your guilt, things will get worse for you.
 	
 	Nagon_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Nagon_LastPetzCrime		= B_GetGreatestPetzCrime(self);

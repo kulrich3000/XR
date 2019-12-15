@@ -200,9 +200,9 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Claws))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_00"); //Animals don't like to give their claws away. You have to hit the exact spot where you're going with your knife.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_01"); //The posture of your hand should be slightly entangled. With a strong jolt you cut off the claw.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_02"); //Claws are always a sought-after means of payment for a trader.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_00"); //Animals don't like to give up their claws. You have to place your knife very precisely.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_01"); //Your hands should be slightly crossed. Then you separate the claw with a powerful tug.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Claws_28_02"); //Merchants are always eager to be paid in claws.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);
@@ -224,8 +224,8 @@ FUNC VOID Info_Mod_Drax_Jagdtalente_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, hero, TROPHY_Fur))
 	{
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_28_00"); //The best way to remove fur is to make a deep cut on the animal's hind legs.
-		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_28_01"); //Then you can always pull the fur from the front to the back very easily.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_28_00"); //The best way to remove the pelt is by making a deep cut along the hind legs.
+		AI_Output			(self, hero, "Info_Mod_Drax_Jagdtalente_Fur_28_01"); //After that, it should be a cinch to pull off the skin from the front to the back.
 	};
 
 	Info_ClearChoices	(Info_Mod_Drax_Jagdtalente);

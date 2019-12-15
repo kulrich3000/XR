@@ -22,16 +22,12 @@ FUNC VOID Info_Mod_Dexter_Hi_Info()
 	AI_Output(hero, self, "Info_Mod_Dexter_Hi_15_01"); //I've come to join you.
 
 	if (Gardist_Dabei == TRUE)
-	|| (Mod_AnzahlNebengilden >= MaxNebengilden)
-	{
+	|| (Mod_AnzahlNebengilden >= MaxNebengilden) {
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_02"); //Okay, you have our password.
 
-		if (Gardist_Dabei == TRUE)
-		{
+		if (Gardist_Dabei == TRUE) {
 			AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_03"); //But I have heard that you are already part of the Old Camp.
-		}
-		else
-		{
+		} else {
 			AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_04"); //But I have heard that you are already part of many other camps.
 		};
 
@@ -40,9 +36,7 @@ FUNC VOID Info_Mod_Dexter_Hi_Info()
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_07"); //Don't make any trouble, okay?
 
 		B_SetTopicStatus	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_FAILED);
-	}
-	else
-	{
+	} else {
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_08"); //It seems that you have already convinced a few of us, or else you wouldn't have come in here alive.
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_09"); //So if you want, you can become one of us now.
 
@@ -1378,9 +1372,9 @@ func void Info_Mod_Dexter_PETZMASTER_PayNow()
 
 func void Info_Mod_Dexter_PETZMASTER_PayLater()
 {
-	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayLater_15_00"); //I don't have enough gold!
-	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_28_01"); //Then see that you get the gold as soon as possible.
-	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_28_02"); //And I'm warning you, if you owe yourself anything, it's going to get worse for you.
+	AI_Output (hero, self, "Info_Mod_Dexter_PETZMASTER_PayLater_15_00"); //I don't have enough gold.
+	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_28_01"); //Then see to it that you acquire the gold as quickly as possible
+	AI_Output (self, hero, "Info_Mod_Dexter_PETZMASTER_PayLater_28_02"); //And I'm warning you: if you add to your guilt, things will get worse for you.
 	
 	Dexter_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Dexter_LastPetzCrime		= B_GetGreatestPetzCrime(self);

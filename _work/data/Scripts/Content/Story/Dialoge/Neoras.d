@@ -118,7 +118,7 @@ FUNC VOID Info_Mod_Neoras_Mitgift_Info()
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_06"); //Exactly. So you understand its purpose, so far so well.
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_07"); //But lately there have been more and more deaths from severe poisoning in Khorini.
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_08"); //However, these were not caused by animals or plants, but by weapons created by man... Swords and arrows.
-	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_09"); //
+	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_09"); //There seem to be hired killers who brush their blades and tips with it to bring their victims to merciless death.
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_10"); //They seem to use particularly concentrated toxins for this purpose.
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_11"); //I would now like to ask you to get me a bottle of animal and plant poison so that I can intensify my research in this field.
 	AI_Output(self, hero, "Info_Mod_Neoras_Mitgift_04_12"); //The best way to do this is to visit alchemists or herbalists. You could find it there if you had any luck.

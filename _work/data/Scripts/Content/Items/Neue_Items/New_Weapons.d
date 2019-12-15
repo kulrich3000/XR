@@ -1269,7 +1269,7 @@ INSTANCE ItMw_Klauenschwert_Geschaerft (C_Item)
 
 INSTANCE ItMw_Schuetterschwert (C_Item)
 {
-	name 				=	"";
+	name 				=	"Shoulder sword";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -1328,7 +1328,7 @@ INSTANCE ItMW_AxtDesUntergangs (C_Item)
 
 	value 				=	1000;
 
-	damageTotal  		= 	(AxtDamage - 10) / 4 + 10;
+	damageTotal  		= 	(AxtDamage - 10) / 16 + 10;
 	damagetype 			=	DAM_EDGE;
 	range    			=  	125;		
 	

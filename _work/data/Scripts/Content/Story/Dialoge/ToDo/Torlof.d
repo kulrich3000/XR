@@ -88,7 +88,6 @@ FUNC VOID Info_Mod_Torlof_Kristall_Info()
 	
 	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_01"); //A magic crystal. I have to discuss this with Lares first. Come back in a few hours.
 
-
 	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "I learned from Gorn that Paladin Lothar has a weakness for alcohol and a big mouth in the upper quarter.");
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_SUCCESS);
 	

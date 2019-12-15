@@ -176,9 +176,19 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 		Mod_HeroHasRune += 1;
 	};
 
+	if (Npc_HasItems(hero, ItRu_TeleportObelisk) == 1)
+	{
+		Npc_RemoveInvItems	(hero, ItRu_TeleportObelisk, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportObelisk, 1);
+
+		Mod_HeroHasRune += 1;
+	};
+
 	if (Mod_HeroHasRune > 0)
 	{
 		AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_13"); //I see you have teleportruns. I guess you don't mind if I take her.
+		
+		B_LogEntry	(TOPIC_MOD_AL_BOTSCHAFTER, "");
 	};
 
 	Wld_InsertNpc	(Mod_1879_GRD_Gardist_MT, "LOCATION_11_01");

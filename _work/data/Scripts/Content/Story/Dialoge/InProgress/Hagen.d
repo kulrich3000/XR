@@ -1334,7 +1334,7 @@ FUNC VOID Info_Mod_Hagen_AndreVermaechtnis6_Info()
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_06_04"); //With a surprise attack we should hopefully be able to take the gang of thieves by surprise.
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_06_05"); //So you know what to do? Good luck.
 
-	B_GiveInvItems	(self, hero, ItKe_Hotel, 1);
+	B_GiveInvItems	(self, hero, ItKe_ThiefGuildKey_Hotel_MIS, 1);
 
 	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "From Hanna's hostel, a path leads down into the sewerage system that I am to take.");
 

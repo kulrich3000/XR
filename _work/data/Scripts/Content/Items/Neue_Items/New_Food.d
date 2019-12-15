@@ -1,6 +1,6 @@
 INSTANCE ItFo_wineberrys_01(C_Item)
 {	
-	name 				=	"grapes";
+	name 				=	"Grapes";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
