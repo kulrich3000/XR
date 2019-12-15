@@ -88,7 +88,6 @@ FUNC VOID Info_Mod_Torlof_Kristall_Info()
 	
 	AI_Output(self, hero, "Info_Mod_Torlof_Kristall_01_01"); //Magiczny krysztal. Najpierw musze to omówic z Laresem. Wróc za kilka godzin.
 
-
 	B_LogEntry	(TOPIC_MOD_TORLOFSPIONAGE, "Dowiedzialem sie od Gorna, ze Paladin Lothar ma slabosc na alkohol i duze usta w górnej cwiartce.");
 	B_SetTopicStatus	(TOPIC_MOD_TORLOFSPIONAGE, LOG_SUCCESS);
 	

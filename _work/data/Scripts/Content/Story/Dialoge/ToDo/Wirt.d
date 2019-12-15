@@ -141,7 +141,7 @@ FUNC VOID Info_Mod_Wirt_Wilfried_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_00"); //A co z Wilfriedem?
 	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_01"); //Codziennie slysze o nim opowiesci.
-	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_02"); //
+	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_02"); //Mysle, ze w Khorinis nie ma nikogo, kto by jeszcze nie oszukal.
 	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_03"); //To prawda, ze teraz gotuje sam w swoim domku w dzielnicy portowej!
 	AI_Output(hero, self, "Info_Mod_Wirt_Wilfried_15_04"); //Pamietam to.
 	AI_Output(self, hero, "Info_Mod_Wirt_Wilfried_29_05"); //Och, prawie zapomnialem wspomniec o przemówieniu miasta, upadku Minny, lodzi rybackiej z Myrtany!

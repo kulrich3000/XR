@@ -31,7 +31,7 @@ FUNC VOID Info_Mod_Garond_Hi_Info()
 
 	Log_CreateTopic	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_MISSION);
 	B_SetTopicStatus	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, LOG_RUNNING);
-	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "");
+	B_LogEntry	(TOPIC_MOD_MONTY_KONKURRENZKAMPF, "Monty na terenie portu twierdzi, ze pokonal spiacego. Mysle, ze bede musial zabrac ja na klatke piersiowa.");
 };
 
 INSTANCE Info_Mod_Garond_Argez (C_INFO)

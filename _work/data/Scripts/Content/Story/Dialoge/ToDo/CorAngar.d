@@ -399,6 +399,13 @@ FUNC VOID Info_Mod_Angar_Hueterklinge_B()
 	B_LogEntry	(TOPIC_MOD_SL_SCHMIEDEFEUERN, "Do ostrza opiekuna dwurecznego potrzebuje 8 bryl magicznej rudy, 6 ziól ryzowych, sztylet, który wypil krew 4 królów i cialo padlinozercy, który nie wylegal sie z jajka. Wszystko to musze zabrac do Darrion. Aby dowiedziec sie, jak to zrobic, powinienem zapytac pozostale szablony.");
 
 	Mod_TPL_Hueterklinge_Art = 2;
+	
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_11");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_25");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_13");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_2_NC_14");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_3_NC_17");
+	Wld_InsertItem(ItPl_Health_Herb_01_Reisfresser, "FP_PICKRICE_2_NC_16");
 
 	Info_Mod_Angar_Hueterklinge_C();
 };

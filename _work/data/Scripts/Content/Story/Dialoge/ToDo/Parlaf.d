@@ -427,7 +427,7 @@ FUNC INT Info_Mod_Parlaf_SecondWarn_Condition()
 
 func void Info_Mod_Parlaf_SecondWarn_Info()
 {
-	AI_Output (self, other,"Info_Mod_Parlaf_SecondWarn_06_00"); //
+	AI_Output (self, other,"Info_Mod_Parlaf_SecondWarn_06_00"); //Nie smieszaj sie. Jeszcze jeden krok, a ja cie na kawalki!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_309_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	

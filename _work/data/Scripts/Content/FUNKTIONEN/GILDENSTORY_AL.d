@@ -95,6 +95,8 @@ FUNC VOID GILDENSTORY_AL()
 			Wld_SendTrigger	("EVT_KERKERGATE_01");
 
 			B_LogEntry	(TOPIC_MOD_AL_SCHMUGGLER, "Smierc noza. Powinienem o tym powiedziec Thorusowi.");
+			
+			Wld_InsertItem(ItSc_TrfRabbit, "FP_ITEM_TRFSCROLL_CUTTER");
 
 			Mod_TemplerBeiThorus = 2;
 		};
@@ -136,7 +138,7 @@ FUNC VOID GILDENSTORY_AL()
 
 				Npc_ClearAIQueue (hero);
 
-				AI_Teleport	(PC_Hero, "OCC_MERCS_RIGHT_ROOM_BACK");
+				AI_Teleport	(hero, "OCC_MERCS_RIGHT_ROOM_BACK");
 
 				hero.attribute[ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 

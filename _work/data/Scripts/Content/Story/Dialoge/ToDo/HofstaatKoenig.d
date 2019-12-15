@@ -227,7 +227,7 @@ FUNC VOID Info_Mod_HofstaatKoenig_Fluffy_Info()
 {
 	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_00"); //! Wróccie do mnie, moje ulubieniec!
 	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_01"); //Gramy równiez w gre lapiac drzewo i mozna siegnac po wieze zamkowa..... Przepustowosc......
-	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_02"); //
+	AI_Output(self, hero, "Info_Mod_HofstaatKoenig_Fluffy_06_02"); //PUSZYSTY!
 
 	B_LogEntry	(TOPIC_MOD_SL_FLUFFY, "Fluffy's gone i the królewiatko smutek o ono.");
 

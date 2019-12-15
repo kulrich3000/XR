@@ -45,6 +45,8 @@ FUNC VOID Info_Mod_Naim_Hi_Info()
 		B_ShowGivenThings	("Otrzymana szata zabójcy");
 
 		AI_Output(self, hero, "Info_Mod_Naim_Hi_13_06"); //Teraz zglos sie do Kais. Mysle, ze ma klopoty.
+
+		B_SetTopicStatus	(TOPIC_MOD_ASS_MAGIER, LOG_SUCCESS);
 	};
 
 	B_SetTopicStatus	(TOPIC_MOD_ASS_BLUTKELCH, LOG_SUCCESS);

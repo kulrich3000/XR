@@ -20,7 +20,7 @@ const string TOPIC_MOD_NL_DRAGON	=	"Popros Smoka o rozmowe";
 const string TOPIC_MOD_NL_MOORHEXE	=	"Co nie jest ujawniane wszystkim.....";
 const string TOPIC_MOD_NL_STAB	=	"RODZAJ w stosunku do jalowców jalowych";
 const string TOPIC_MOD_NL_GORN	=	"Przygoda z Gorniem w ciemnym lesie.";
-const string TOPIC_MOD_NL_ERZKISTE	=	"";
+const string TOPIC_MOD_NL_ERZKISTE	=	"Skrzynka na rude dla Thofeistos..........................................................................................................................................................................................";
 const string TOPIC_MOD_NL_KRISTALL	=	"Wyslannik krysztalu";
 const string TOPIC_MOD_NL_PLAGE	=	"bagna i kraby";
 

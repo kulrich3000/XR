@@ -1334,7 +1334,7 @@ FUNC VOID Info_Mod_Hagen_AndreVermaechtnis6_Info()
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_06_04"); //Miejmy nadzieje, ze atakiem zaskoczeniem powinnismy byc w stanie zaskoczyc zlodziei.
 	AI_Output(self, hero, "Info_Mod_Hagen_AndreVermaechtnis6_06_05"); //Wiec wiesz co robic? Powodzenia.
 
-	B_GiveInvItems	(self, hero, ItKe_Hotel, 1);
+	B_GiveInvItems	(self, hero, ItKe_ThiefGuildKey_Hotel_MIS, 1);
 
 	B_LogEntry	(TOPIC_MOD_MILIZ_DIEBESGILDE, "Z hostelu Hanny prowadzi sciezka prowadzaca do kanalizacji, która mam zamiar zabrac.");
 

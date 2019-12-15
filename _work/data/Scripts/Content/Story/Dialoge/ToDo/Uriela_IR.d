@@ -17,7 +17,7 @@ FUNC INT Info_Mod_Uriela_IR_Hi_Condition()
 FUNC VOID Info_Mod_Uriela_IR_Hi_Info()
 {
 	AI_Output(hero, self, "Info_Mod_Uriela_IR_Hi_15_00"); //Jaka jest wiec sytuacja?
-	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_01"); //
+	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_01"); //Cóz, wyczuwam okropne sily demoniczne otaczajace i twierdzace te wyspe.
 	AI_Output(self, hero, "Info_Mod_Uriela_IR_Hi_17_02"); //Bardzo podobne do wladzy, która zniszczyla nasza ojczyzne.
 };
 

@@ -22,16 +22,12 @@ FUNC VOID Info_Mod_Dexter_Hi_Info()
 	AI_Output(hero, self, "Info_Mod_Dexter_Hi_15_01"); //Przyszedlem do Ciebie dolaczyc.
 
 	if (Gardist_Dabei == TRUE)
-	|| (Mod_AnzahlNebengilden >= MaxNebengilden)
-	{
+	|| (Mod_AnzahlNebengilden >= MaxNebengilden) {
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_02"); //Dobrze, masz nasze haslo.
 
-		if (Gardist_Dabei == TRUE)
-		{
+		if (Gardist_Dabei == TRUE) {
 			AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_03"); //Slyszalem jednak, ze jestescie juz czescia Starego Obozu.
-		}
-		else
-		{
+		} else {
 			AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_04"); //Slyszalem jednak, ze jestescie juz czescia wielu innych obozów.
 		};
 
@@ -40,9 +36,7 @@ FUNC VOID Info_Mod_Dexter_Hi_Info()
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_07"); //Nie sprawiaj zadnych klopotów, dobrze?
 
 		B_SetTopicStatus	(TOPIC_MOD_AUFNAHME_BANDITEN, LOG_FAILED);
-	}
-	else
-	{
+	} else {
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_08"); //Wyglada na to, ze przekonales juz kilku z nas, bo inaczej nie przyszedlbys tu zywy.
 		AI_Output(self, hero, "Info_Mod_Dexter_Hi_28_09"); //Tak wiec, jesli chcecie, mozecie stac sie jednym z nas teraz.
 

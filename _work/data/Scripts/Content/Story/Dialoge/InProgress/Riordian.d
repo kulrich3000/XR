@@ -45,7 +45,7 @@ FUNC VOID Info_Mod_Riordian_IrrlichtBekommen_Info()
 
 	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_23_01"); //Wyglada na to, ze mozna zadzwonic do will-o' -tych-wispów, którzy szukaja produktu.
 	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_23_02"); //Jestem pewien, ze jest to dla Ciebie bardziej przydatne niz dla mnie.
-	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_23_03"); //
+	AI_Output(self, hero, "Info_Mod_Riordian_IrrlichtBekommen_23_03"); //Postaram sie dowiedziec nieco wiecej na ten temat, byc moze Wisp mozna rozszerzyc tak, aby mógl znalezc wiecej przedmiotów, a nawet walczyc o ciebie.
 };
 
 INSTANCE Info_Mod_Riordian_PortalOeffnen (C_INFO)

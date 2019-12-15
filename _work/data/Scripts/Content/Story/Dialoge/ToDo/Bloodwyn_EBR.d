@@ -176,6 +176,14 @@ FUNC VOID Info_Mod_Bloodwyn_EBR_Belagerung_Info()
 		Mod_HeroHasRune += 1;
 	};
 
+	if (Npc_HasItems(hero, ItRu_TeleportObelisk) == 1)
+	{
+		Npc_RemoveInvItems	(hero, ItRu_TeleportObelisk, 1);
+		Mob_CreateItems	("TELEPORTRUNENTRUHE", ItRu_TeleportObelisk, 1);
+
+		Mod_HeroHasRune += 1;
+	};
+
 	if (Mod_HeroHasRune > 0)
 	{
 		AI_Output(self, hero, "Info_Mod_Bloodwyn_EBR_Belagerung_04_13"); //Widze, ze macie teleportrunki. Wydaje mi sie, ze nie przeszkadza ci, jesli ja zabiore.
